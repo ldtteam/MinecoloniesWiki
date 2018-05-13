@@ -1,0 +1,17 @@
+subnav:
+  - title : Installation
+    subitems:
+      - page: Name
+        url: /url.html
+  - title: Tutorials
+    subitems:
+      - page: Name
+        url: /url.html
+  - title: Workers
+    subitems:
+      - page: Name
+        url: /url.html
+  - title: Buildings
+    subitems:
+      - page: Name
+        url: /url.html
