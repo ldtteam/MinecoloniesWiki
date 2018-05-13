@@ -112,6 +112,15 @@ body {
 	cursor: pointer;
 }
 
+.ribbon {
+	background: url(#{$mcurl}/img/Ribbon.png) center/100% 100% no-repeat;
+	width: 99%;
+	text-align: center;
+	height: 28px;
+	margin: auto;
+	color: #fff;
+}
+
 .dropdown-menu {
 	background-color: #FDF6E5!important;
 	border: 3px solid #E0D2AE;
@@ -123,4 +132,8 @@ body {
 
 .content {
 	padding-top: 10px;
+}
+
+footer {
+	padding-bottom: 40px;
 }
