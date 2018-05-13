@@ -2,3 +2,37 @@
 ---
 
 @import "{{ site.theme }}";
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+/* FONTS */
+@font-face {
+	font-family: 'Comic Book';
+	src: url("../fonts/Comic Book.otf");
+}
+
+@font-face {
+	font-family: 'Colonial Dame';
+	src: url("../fonts/Colonial Dame.ttf");
+}
+
+/* STYLES */
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+}
+
+h1.header {
+	font-family: "Colonial Dame", sans-serif;
+    font-size: 8rem;
+    line-height: 100px;
+    padding: 50px 2px 10px 2px;
+    margin: 2px;
+    background: #EEE;
+    color: transparent;
+    text-shadow: -2px -2px 3px rgba(255,255,255,.5),
+        -3px -2px 2px #EEE,
+        -3px -2px 0 #000,
+        0 1px 0 #000;
+    -webkit-background-clip: text;
+	text-align: center;
+}
