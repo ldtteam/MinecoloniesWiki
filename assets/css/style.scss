@@ -37,6 +37,7 @@ $mcurl: 'https://minecolonies.com';
 }
 
 body {
+	background: transparent;
 	margin: 0;
 	font-family: Roboto, sans-serif;
 }
@@ -121,6 +122,6 @@ body {
 	color: #000!important;
 }
 
-.dropdown-item .fa {
-    padding-right: 10px;
+.content {
+	padding-top: 10px;
 }
