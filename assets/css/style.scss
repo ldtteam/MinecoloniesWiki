@@ -58,7 +58,7 @@ body {
 
 .navbar.main {
     font-family: "Comic Book", sans-serif;
-	background: url($mcurl/img/NavbarRibbon.png) center/100% 100% no-repeat;
+	background: url("$mcurl/img/NavbarRibbon.png") center/100% 100% no-repeat;
 	width: 99%;
 	height: 68px;
 	color: white;
@@ -68,7 +68,7 @@ body {
 
 @media (max-width: 991px) {
 	.navbar.main {
-		background: url($mcurl/img/navbarribbon_small.png) center/100% 100% no-repeat;
+		background: url("$mcurl/img/navbarribbon_small.png") center/100% 100% no-repeat;
 	}
 }
 
@@ -90,7 +90,7 @@ body {
 
 .navbar.secondary {
     font-family: "Comic Book", Roboto, sans-serif;
-	background: url($mcurl/img/Ribbon.png) center/100% 100% no-repeat;
+	background: url("$mcurl/img/Ribbon.png") center/100% 100% no-repeat;
 	width: 99%;
 	height: 28px;
 	color: white;
