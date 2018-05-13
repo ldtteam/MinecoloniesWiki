@@ -19,59 +19,62 @@
   </head>
 
   <body>
+    <div class="bg">
+      <div class="bgscroll">
+        <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+          <header class="container">
+            <h1 class="header">MineColonies Wiki</h1>
+          </header>
+        </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header class="container">
-        <h1 class="header">MineColonies Wiki</h1>
-      </header>
-    </div>
+        <!-- NAVBAR PRIMARY -->
+        <nav class="navbar navbar-expand-lg navbar-default main">
+          <div class="container">
+            <button class="navbar-toggler" type="button" id="navbarSideButton" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="https://minecolonies.com" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://forum.minecolonies.com" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.php" class="nav-link">About The Mod</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="https://wiki.minecolonies.com/" class="nav-link">Wiki</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="nav-link">Bug Reports</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
 
-    <!-- NAVBAR PRIMARY -->
-    <nav class="navbar navbar-expand-lg navbar-default main">
-      <div class="container">
-        <button class="navbar-toggler" type="button" id="navbarSideButton" aria-expanded="false" aria-label="Toggle Navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="https://minecolonies.com" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://forum.minecolonies.com" class="nav-link">Forums</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.php" class="nav-link">About The Mod</a>
-            </li>
-            <li class="nav-item active">
-              <a href="https://wiki.minecolonies.com/" class="nav-link">Wiki</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="nav-link">Bug Reports</a>
-            </li>
-          </ul>
-          
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+          <section id="main_content" class="inner">
+            {{ content }}
+          </section>
+        </div>
+
+        <!-- FOOTER  -->
+        <div id="footer_wrap" class="outer">
+          <footer class="inner">
+            {% if site.github.is_project_page %}
+            <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+            {% endif %}
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+          </footer>
         </div>
       </div>
-    </nav>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
 
     <!-- Jquery -->
