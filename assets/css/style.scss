@@ -25,14 +25,14 @@ $mcurl: 'https://minecolonies.com';
 
 .bgscroll {
 	background:
-		url($mcurl/img/bg_corner_top_left.jpg) top left no-repeat,
-		url("$mcurl/img/bg_corner_top_right.jpg") top right no-repeat,
-		url("$mcurl/img/bg_corner_bottom_left.jpg") bottom left no-repeat,
-		url("$mcurl/img/bg_corner_bottom_right.jpg") bottom right no-repeat,
-		url("$mcurl/img/bg_middle_left.jpg") left center repeat-y,
-		url("$mcurl/img/bg_middle_right.jpg") right center repeat-y,
-		url("$mcurl/img/bg_top.jpg") top center repeat-x,
-		url("$mcurl/img/bg_middle_bottom.jpg") bottom center repeat-x;
+		url(#{$mcurl}/img/bg_corner_top_left.jpg) top left no-repeat,
+		url(#{$mcurl}/img/bg_corner_top_right.jpg) top right no-repeat,
+		url(#{$mcurl}/img/bg_corner_bottom_left.jpg) bottom left no-repeat,
+		url(#{$mcurl}/img/bg_corner_bottom_right.jpg) bottom right no-repeat,
+		url(#{$mcurl}/img/bg_middle_left.jpg) left center repeat-y,
+		url(#{$mcurl}/img/bg_middle_right.jpg) right center repeat-y,
+		url(#{$mcurl}/img/bg_top.jpg) top center repeat-x,
+		url(#{$mcurl}/img/bg_middle_bottom.jpg) bottom center repeat-x;
 	width: 100%;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .navbar.main {
     font-family: "Comic Book", sans-serif;
-	background: url("$mcurl/img/NavbarRibbon.png") center/100% 100% no-repeat;
+	background: url(#{$mcurl}/img/NavbarRibbon.png) center/100% 100% no-repeat;
 	width: 99%;
 	height: 68px;
 	color: white;
@@ -68,7 +68,7 @@ body {
 
 @media (max-width: 991px) {
 	.navbar.main {
-		background: url("$mcurl/img/navbarribbon_small.png") center/100% 100% no-repeat;
+		background: url(#{$mcurl}/img/navbarribbon_small.png) center/100% 100% no-repeat;
 	}
 }
 
@@ -90,7 +90,7 @@ body {
 
 .navbar.secondary {
     font-family: "Comic Book", Roboto, sans-serif;
-	background: url("$mcurl/img/Ribbon.png") center/100% 100% no-repeat;
+	background: url(#{$mcurl}/img/Ribbon.png) center/100% 100% no-repeat;
 	width: 99%;
 	height: 28px;
 	color: white;
