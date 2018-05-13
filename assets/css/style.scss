@@ -35,3 +35,72 @@ body {
         0 1px 0 #000;
 	text-align: center;
 }
+
+.navbar.main {
+    font-family: "Comic Book", sans-serif;
+	background: url("https://minecolonies.com/img/NavbarRibbon.png") center/100% 100% no-repeat;
+	width: 99%;
+	height: 68px;
+	color: white;
+	font-size: 12pt;
+	margin: auto;
+}
+
+@media (max-width: 991px) {
+	.navbar.main {
+		background: url("https://minecolonies.com/img/navbarribbon_small.png") center/100% 100% no-repeat;
+	}
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar.main a:link,
+.navbar.main a:visited {
+    color: #fff;
+}
+
+.active,
+.navbar.main a:hover,
+.navbar.main a:focus {
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.navbar.secondary {
+    font-family: "Comic Book", Roboto, sans-serif;
+	background: url("https://minecolonies.com/img/Ribbon.png") center/100% 100% no-repeat;
+	width: 99%;
+	height: 28px;
+	color: white;
+	font-size: 12pt;
+	margin: 10px auto 0;
+}
+
+@media (max-width: 991px) {
+    .navbar.secondary {
+        display: none;
+    }
+}
+
+.navbar .nav:nth-child(1) {
+	padding-bottom: 6px;
+}
+
+.dropdown {
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	background-color: #FDF6E5!important;
+	border: 3px solid #E0D2AE;
+}
+
+.dropdown-item {
+	color: #000!important;
+}
+
+.dropdown-item .fa {
+    padding-right: 10px;
+}
