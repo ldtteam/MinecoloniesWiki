@@ -25,7 +25,7 @@ $mcurl: "https://minecolonies.com";
 
 .bgscroll {
 	background:
-		url($mcurl/img/bg_corner_top_left.jpg) top left no-repeat,
+		url("$mcurl/img/bg_corner_top_left.jpg") top left no-repeat,
 		url($mcurl/img/bg_corner_top_right.jpg) top right no-repeat,
 		url($mcurl/img/bg_corner_bottom_left.jpg) bottom left no-repeat,
 		url($mcurl/img/bg_corner_bottom_right.jpg) bottom right no-repeat,
