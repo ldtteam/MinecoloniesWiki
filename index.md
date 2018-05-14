@@ -1,3 +1,4 @@
-# Welcome to the Minecolonies Wiki!
+Welcome to the Minecolonies Wiki!
+======
 
 This is some temp content
