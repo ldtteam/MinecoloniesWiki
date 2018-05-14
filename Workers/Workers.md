@@ -26,31 +26,11 @@
 \\
 <p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Now you can access the Builder’s Hut block (right click on it) and you will see a GUI with different options:</span></p>
 \\
-<table width="1106" height="23">
-<tbody>
-<tr>
-<td style="width: 500px;">
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp; The Worker assigned and his Skill Level. (you level him up by assigning more build/upgrade/repair tasks. The higher the level the faster and more efficient he/she will be). And the buttons: </span></p>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Fire/Hire Worker.</span>- If you think you have a better Citizen for the job with better skills or "Traits"</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Recall Worker.-</span> If the builder gets stuck somewhere, or you just want to see what the builder has or give the builder something directly.</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Build/Upgrade Building.-</span> to create the build/upgrade work order for this building.</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Repair Building.-</span> So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Inventory.-</span> This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).</span></li>
-</ul>
-</td><td style="width: 20px;"></td>
-<td>{{/Tutorial/Builder_Gui.png|}}</td>
-</tr>
-</tbody>
-</table>
+
+| Description | GUI |
+| ----------- | --- |
+| The Worker assigned and his Skill Level. (you level him up by assigning more build/upgrade/repair tasks. The higher the level the faster and more efficient he/she will be). And the buttons:<br><ul><li> **Fire/Hire Worker:** If you think you have a better Citizen for the job with better skills or "Traits"</li><li> **Recall Worker:** If the builder gets stuck somewhere, or you just want to see what the builder has or give the builder something directly.</li><li> **Build/Upgrade Building:** to create the build/upgrade work order for this building.</li><li> **Repair Building:** So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</li><li> **Inventory:** This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).</li></ul> | Tutorial/Builder_Gui.png |
+
 \\
 <p style="text-align: center;"><span style="font-family: 'Times New Roman',serif; font-size: 24.0pt; color: #0070c0;">_____________________________________</span></p>
 \\
