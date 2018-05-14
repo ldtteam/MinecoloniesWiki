@@ -6,9 +6,9 @@ This is where you can find specific information about Buildings that do not have
 There are several buildings that do not require a Worker for it, as in the case of the "Town Hall", the "Supply Ship", the "Supply Camp",  the "Citizen's Hut" and the "Warehouse", for now. There are other buildings that are being worked on that will have some Citizen and Player interaction in the future, like the Marketplace, the Tavern/Inn, and more to come.
 
 
-![alt text](../assets/images/Buildings/Ship.png )
+![alt text](../assets/images/Buildings/Ship.png alt= width="100" height="80" )
 ![alt text](../assets/images/Buildings/Camp.png )
-![alt text](../assets/images/Buildings/Town Hall.png "")
+![alt text](../assets/images/Buildings/Town Hall.png )
 ![alt text](../assets/images/Buildings/Warehouse.png )
 ![alt text](../assets/images/Buildings/Citizen Hut.png )
 
