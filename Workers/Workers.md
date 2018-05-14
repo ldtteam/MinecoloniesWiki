@@ -26,42 +26,33 @@
 
 <p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Now you can access the Builder’s Hut block (right click on it) and you will see a GUI with different options:</span></p>
 
-| Description | GUI |
-| ----------- | --- |
-| The Worker assigned and his Skill Level. (you level him up by assigning more build/upgrade/repair tasks. The higher the level the faster and more efficient he/she will be). And the buttons:<br>{::nomarkdown}<ul><li>{:/} **Fire/Hire Worker:** If you think you have a better Citizen for the job with better skills or "Traits"{::nomarkdown}</li><li>{:/} **Recall Worker:** If the builder gets stuck somewhere, or you just want to see what the builder has or give the builder something directly.{::nomarkdown}</li><li>{:/} **Build/Upgrade Building:** to create the build/upgrade work order for this building.{::nomarkdown}</li><li>{:/} **Repair Building:** So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.{::nomarkdown}</li><li>{:/} **Inventory:** This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).{::nomarkdown}</li></ul>{:/} | ![Builder GUI](../assets/images/gui/buildergui.png) |
-
-<p style="text-align: center;"><span style="font-family: 'Times New Roman',serif; font-size: 24.0pt; color: #0070c0;">_____________________________________</span></p>
-
-<table width="1000" height="23">
-<tbody>
-<tr>
-<td style="width: 500px;">
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;<span style="font-family: times new roman,times; font-size: 16pt;">&nbsp; This is "page 2" of the GUI. It shows the "Required Resources" that the Builder will need for the Build/Upgrade he is currently working on. This amount will change as he places the material and will show ONLY waht material he still needs to place.</span></span></p>
-
-<p><span style="font-size: 16pt; font-family: times new roman,times;"><span style="font-family: times new roman,times; font-size: 16pt;"> And the button: </span></span></p>
-<p></p>
-
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<br /><br /><br /><br /><br /><br /><br /><br />
-<p><span style="font-size: 16pt; font-family: times new roman,times;"></span></p>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Inventory.-</span> This is the most important button. Here you can access the buildings storage from where the &ldquo;worker&rdquo; takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</span></li>
-</ul>
-</td>
-<td style="width: 20px;"></td>
-<td>{{/Workers/Builder/Builder_Gui2.png|}}</td>
-</tr>
-</tbody>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 50%;"><img src="../assets/images/gui/buildergui.png" alt="Builder GUI"></td>
+      <td style="width: 50%;">
+        <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
+        <ul>
+          <li><strong>Fire/Hire Worker</strong> If you think you have a better citizen for the job with better skills or traits.</li>
+          <li><strong>Recall Worker:</strong> If the worker gets stuck somewhere, or you just want to see what the worker has or give them something directly.</li>
+          <li><strong>Build/Upgrade Building:</strong> To create the build/upgrade work order for this building.</li>
+          <li><strong>Repair Building:</strong> So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.</li>
+          <li><strong>List of Recipes:</strong> Lists the recipes that you have taught to this worker&#39;s hut.</li>
+          <li><strong>Teach Recipe:</strong> Opens a 2x2 crafting grid which allows you to teach this hut recipes, which the currently assigned worker will use to craft items that they <strong>require</strong>.</li>
+          <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50.0000%;"><img src="../assets/images/gui/buildergui2.png" alt="Builder GUI 2"></td>
+      <td style="width: 50.0000%;">By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:
+        <ul>
+          <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade they are currently working on. This amount will change as they place the materials and will show <strong>only</strong> what materials they still need to place.</li>
+          <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 <p style="text-align: center;"><span style="font-family: 'Times New Roman',serif; font-size: 24.0pt; color: #0070c0;">_____________________________________</span></p>
