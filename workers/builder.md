@@ -1,4 +1,5 @@
-<p align="center"><span style="font-family: times new roman,times;"><strong><span style="font-size: 24pt; color: #3366ff;">Welcome to the Builder's Information Site.</span></strong></span></p>
+# Welcome to the Builder's Information Site.
+<hr>
 
 <p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;;">&nbsp;&nbsp;&nbsp;&nbsp;The Builder is one of the most important workers for your Colony. As long as you provide the builder with all the resources he/she asks for, the builder will build and upgrade all of your Town buildings.</span></p>
 
