@@ -138,7 +138,7 @@ h1 {
 	text-align: center;
 }
 
-h1:after h1:not(.header) {
+h1:after h1:not(.header):after {
 	content: " ";
 	display: block;
 	height: 1px;
