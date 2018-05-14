@@ -1,3 +1,6 @@
+---
+title: Minecolonies Wiki
+---
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
@@ -55,6 +58,27 @@
             </div>
           </div>
         </nav>
+
+        <!-- NAVBAR SECONDARY -->
+        <nav class="navbar navbar-expand-lg navbar-default secondary">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarsec">
+            <ul class="navbar-nav mr-auto">
+              {% for item in site.data.subnav.subnav %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+                  <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
+                    {% for entry in item.subitems %}
+                      <a class="dropdown-item" href="{{ entry.url }}">{{ entry.page }}</a>
+                    {% endfor %}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /NAVBAR SECONDARY -->
 
         <!-- MAIN CONTENT -->
         <div class="container content">
