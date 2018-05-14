@@ -137,10 +137,14 @@ body {
 h1 {
 	text-align: center;
 	:after {
-		border: 0;
+		content: " ";
+		display: block;
 		height: 1px;
-		background: #333;
-		background-image: linear-gradient(to right, #ccc, #333, #ccc);
+		margin: 6px 0px 6px 0px;
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	}
 
 	.header:after {
