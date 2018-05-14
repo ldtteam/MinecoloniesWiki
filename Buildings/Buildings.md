@@ -7,10 +7,10 @@ There are several buildings that do not require a Worker for it, as in the case 
 
 
 ![alt text](https://raw.githubusercontent.com/Minecolonies/MinecoloniesWiki/master/assets/images/Buildings/Ship.png )
-File:Camp.png|[[Supply Camp]]
-File:Town Hall.png|[[Town Hall]]
-File:Citizen Hut.png|[[Citizen Hut]]
-File:Warehouse.png|[[Warehouse]]
+![alt text](https://raw.githubusercontent.com/Minecolonies/MinecoloniesWiki/master/assets/images/Buildings/Camp.png )
+![alt text](https://raw.githubusercontent.com/Minecolonies/MinecoloniesWiki/master/assets/images/Buildings/Town Hall.png )
+![alt text](https://raw.githubusercontent.com/Minecolonies/MinecoloniesWiki/master/assets/images/Buildings/Warehouse.png )
+![alt text](https://raw.githubusercontent.com/Minecolonies/MinecoloniesWiki/master/assets/images/Buildings/Citizen Hut.png )
 
 
 {| class="wikitable" style="width: 90%;margin: auto;"
