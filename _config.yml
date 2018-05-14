@@ -1,3 +1,3 @@
-theme: jekyll-theme-slate
+remote-theme: jekyll/minima
 gems:
   - jekyll-last-modified-at
