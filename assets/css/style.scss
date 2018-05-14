@@ -153,17 +153,6 @@ h1 {
 	text-align: center;
 }
 
-h1:after h1:not(.header):after {
-	content: " ";
-	display: block;
-	height: 1px;
-	margin: 6px 0px 6px 0px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-}
-
 .footer {
 	padding-bottom: 40px;
 }
