@@ -108,6 +108,16 @@ body {
 	padding-bottom: 6px;
 }
 
+.navbar.secondary {
+    font-family: "Comic Book", Roboto, sans-serif;
+	background: url("../img/Ribbon.png") center/100% 100% no-repeat;
+	width: 99%;
+	height: 28px;
+	color: white;
+	font-size: 12pt;
+	margin: 10px auto 0;
+}
+
 .dropdown {
 	cursor: pointer;
 }
