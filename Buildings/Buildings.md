@@ -8,10 +8,10 @@ There are several buildings that do not require a Worker for it, as in the case 
 
 <img src="../assets/images/Buildings/Ship.png" alt= width="100" height="80" />
 ![alt text](../assets/images/Buildings/Ship.png)
-![alt text](../assets/images/Buildings/Camp.png )
-![alt text](../assets/images/Buildings/Town Hall.png )
-![alt text](../assets/images/Buildings/Warehouse.png )
-![alt text](../assets/images/Buildings/Citizen Hut.png )
+![alt text](../assets/images/Buildings/Camp.png)
+![alt text](../assets/images/Buildings/Town Hall.png)
+![alt text](../assets/images/Buildings/Warehouse.png)
+![alt text](../assets/images/Buildings/Citizen Hut.png)
 
 
 {| class="wikitable" style="width: 90%;margin: auto;"

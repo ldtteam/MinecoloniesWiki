@@ -33,7 +33,7 @@
       <td style="width: 50%;">
         <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
         <ul>
-          <li><strong>Fire/Hire Worker</strong> If you think you have a better citizen for the job with better skills or traits.</li>
+          <li><strong>Fire/Hire Worker:</strong> If you think you have a better citizen for the job with better skills or traits.</li>
           <li><strong>Recall Worker:</strong> If the worker gets stuck somewhere, or you just want to see what the worker has or give them something directly.</li>
           <li><strong>Build/Upgrade Building:</strong> To create the build/upgrade work order for this building.</li>
           <li><strong>Repair Building:</strong> So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.</li>
