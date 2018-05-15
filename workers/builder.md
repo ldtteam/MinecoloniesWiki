@@ -24,7 +24,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 <table style="width: 100%;">
   <tbody>
     <tr>
-      <td style="width: 50%;"><img src="../assets/images/gui/buildergui.png" alt="Builder GUI"></td>
+      <td style="width: 50%;"><img src="../assets/images/gui/buildergui.png" class="img-fluid" alt="Builder GUI"></td>
       <td style="width: 50%;">
         <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
         <ul>
@@ -39,7 +39,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
       </td>
     </tr>
     <tr>
-      <td style="width: 50%;"><img src="../assets/images/gui/buildergui2.png" alt="Builder GUI 2"></td>
+      <td style="width: 50%;"><img src="../assets/images/gui/buildergui2.png" class="img-fluid" alt="Builder GUI 2"></td>
       <td style="width: 50%;">By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:
         <ul>
           <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade they are currently working on. This amount will change as they place the materials and will show <strong>only</strong> what materials they still need to place.</li>
