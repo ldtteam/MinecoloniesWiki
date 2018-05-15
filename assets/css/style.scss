@@ -43,7 +43,7 @@ body {
 }
 
 .header {
-	font-family: "Colonial Dame", sans-serif, ti;
+	font-family: "Colonial Dame", Roboto, sans-serif;
     font-size: 8rem;
     line-height: 100px;
     padding: 50px 2px 10px 2px;
@@ -156,5 +156,6 @@ hr {
 }
 
 .footer {
+	padding-top: 10px;
 	padding-bottom: 40px;
 }
