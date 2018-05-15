@@ -62,7 +62,3 @@ You can go to the Town Hall and click on the Work Orders tab and cancel the curr
 Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading they will keep in their inventory until their inventory becomes full, or they may dump unnecessary items at the end of a build/upgrade.
 
 In order for the builder to upgrade any building, the Builder's Hut MUST be upgraded first. Then they will be able to upgrade any other building(s).
-<hr>
-If changes are needed or I missed a new patch, let me know, so I can update this page.
-
-You can also post bug reports [[http://www.minecolonies.com/publicforum/m/18051739/viewforum/6723571 HERE]]- Wissi
