@@ -11,9 +11,7 @@ Best Traits are: Intelligence and Strength.
 <table>
 <tr>
 <td>{{/Workers/Builder/Builder_Crop.png|}}</td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td>{{/Workers/Builder/Builder_HutCrop.png|}}</td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td>{{/Workers/Builder/Builder_Crop2.png|}}</td>
 </tr>
 </table>
