@@ -10,9 +10,9 @@ Best Traits are: Intelligence and Strength.
 <center>
 <table>
 <tr>
-<td>{{/Workers/Builder/Builder_Crop.png|}}</td>
-<td>{{/Workers/Builder/Builder_HutCrop.png|}}</td>
-<td>{{/Workers/Builder/Builder_Crop2.png|}}</td>
+<td>/Workers/Builder/Builder_Crop.png</td>
+<td>/Workers/Builder/Builder_HutCrop.png</td>
+<td>/Workers/Builder/Builder_Crop2.png</td>
 </tr>
 </table>
 </center>
