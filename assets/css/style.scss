@@ -42,6 +42,19 @@ body {
 	font-family: 'Times New Roman', Roboto, sans-serif;
 }
 
+@media (min-width: 1500px) {
+	.container {
+		max-width: 1450px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
 .header {
 	font-family: "Colonial Dame", sans-serif, ti;
     font-size: 8rem;
@@ -54,6 +67,18 @@ body {
         -3px -2px 0 #000,
         0 1px 0 #000;
 	text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        font-size: 4rem;
+    }
 }
 
 .navbar.main {
