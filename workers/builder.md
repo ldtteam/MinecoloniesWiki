@@ -3,7 +3,7 @@
 
 The Builder is one of the most important workers for your Colony. As long as you provide the builder with all the resources he/she asks for, the builder will build and upgrade all of your Town buildings.
 
-Before any building can be built, you have to craft the “Builder’s Hut” block in the crafting table and use your “[[https://www.youtube.com/watch?v=Gz1I7hhMd5Y| Building Tool]]” to place th building. Once you “commit” to the placement of the builder’s hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits| Traits]]" for builder if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]]).
+Before any building can be built, you have to craft the “Builder’s Hut” block in the crafting table and use your “[[https://www.youtube.com/watch?v=Gz1I7hhMd5Y Building Tool]]” to place th building. Once you “commit” to the placement of the builder’s hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits Traits]]" for builder if you changed this in the setting tab in the [[Town Hall #THGUI Town Hall's GUI]]).
 
 Best Traits are: Intelligence and Strength.
 
