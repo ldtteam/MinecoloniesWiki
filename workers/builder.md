@@ -1,31 +1,25 @@
 # Welcome to the Builder's Information Site.
 <hr>
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;;">&nbsp;&nbsp;&nbsp;&nbsp;The Builder is one of the most important workers for your Colony. As long as you provide the builder with all the resources he/she asks for, the builder will build and upgrade all of your Town buildings.</span></p>
+The builder is one of the most important workers for your colony. As long as you provide the builder with all the resources they ask for, the builder will build and upgrade all of your town buildings.
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Before any building can be built, you have to craft the “Builder’s Hut” block in the crafting table and use your “[[https://www.youtube.com/watch?v=Gz1I7hhMd5Y| Building Tool]]” to place th building. Once you “commit” to the placement of the builder’s hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits| Traits]]" for builder if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]]).</span></p>
+Before any building can be built, you have to craft their [[Builder’s Hut]] block and place it with your [[Building Tool]]. Once the hut is placed, the builder will be automatically assigned (or you can manually assign one with the best [[Traits]] for a builder if you changed this in the settings tab in the [[Town Hall's GUI]]).
 
-<p align="center"><span style="font-family: times new roman,times;"><strong><span style="font-size: 16pt;">Best Traits are: Intelligence and Strength.</span></strong></span></p>
+Best Traits are: Intelligence and Strength.
 
-<center>
-<table>
-<tr>
-<td>{{/Workers/Builder/Builder_Crop.png|}}</td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-<td>{{/Workers/Builder/Builder_HutCrop.png|}}</td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-<td>{{/Workers/Builder/Builder_Crop2.png|}}</td>
-</tr>
-</table>
-</center>
+[[File:Builder_New.png]]
 
-<p style="text-align: center;"><span style="color: #0000ff; font-size: 18pt; font-family: times new roman,times;"><strong><span style="text-decoration: underline;">You now officially have a &ldquo;Builder!&rdquo; CONGRATULATIONS!</span></strong></span></p>
+[[File:Builder_HutCrop.png]]
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Now you will have to issue the builder the “Build” assignment so he/she can build his own Hut first. Without the builder’s hut being built, the builder cannot build any other buildings. The builder will be asking for the materials he/she needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.</span></p>
+[[File:Builder_Crop2.png]]
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><strong>Hint:</strong> If you see the builder has not finished a work order and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what he/she needs. you can also go to page 2 of the hut's block GUI and see there any materials that are required and he might be missing, they will be in red.</span></p>
+You now officially have a builder, CONGRATULATIONS!
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Now you can access the Builder’s Hut block (right click on it) and you will see a GUI with different options:</span></p>
+Now you will have to issue the builder the build assignment so they can build their own hut first. Without the builder’s hut being built, the builder cannot build any other buildings.
+
+## Hut GUI
+<hr>
+When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
 <table style="width: 100%;">
   <tbody>
@@ -56,23 +50,19 @@
   </tbody>
 </table>
 
-<p style="text-align: center;"><span style="font-family: 'Times New Roman',serif; font-size: 24.0pt; color: #0070c0;">_____________________________________</span></p>
+## A few things to consider
+<hr>
 
-<p><span style="font-size: 16pt; font-family: times new roman,times;">A few things to consider:
+The placement of the Builders Hut. You could consider having the hut in the middle of where you plan to have the rest of your buildings so that the builder has less of a distance to walk between the hut and the build site.
 
-*<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">The placement of the “Builders Hut”. You could consider having the builders hut in the middle of where you plan to have the rest of your buildings so that the builder has less of a distance to walk between the chest and the build site.</span><p>
+The builder will not start another build assignment until they have finished the current one.
 
-*<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">The builder will not start another build assignment until he/she has finished the current one.
-Hint: You can go to the Town Hall and click on the “Work Orders” tab and cancel the current build as well as arrange the priorities of the following build orders. If you cancel a work order, when you assign the build again, the builder will continue where he/she left off.</span><p>
+You can go to the Town Hall and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the following build orders. If you cancel a work order, when you assign the build again, the builder will continue where they left off.
 
-*<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading he/she will keep it in his/her inventory or the builder might place it in the Builders hut chest.</span><p>
+Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading they will keep in their inventory until their inventory becomes full, or they may dump unnecessary items at the end of a build/upgrade.
 
-*<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">In order for the builder to “upgrade” any building, the Builders Hut MUST be upgraded first. Then he/she will be able to upgrade any other building(s).</span><p>
+In order for the builder to upgrade any building, the Builder's Hut MUST be upgraded first. Then they will be able to upgrade any other building(s).
+<hr>
+If changes are needed or I missed a new patch, let me know, so I can update this page.
 
-<p style="text-align: center;"><span style="font-family: 'Times New Roman',serif; font-size: 24.0pt; color: #0070c0;">_____________________________________</span></p>
-
-<p style="text-align: center;"><span style="font-size: 16pt; font-family: times new roman,times;">If changes are needed or I missed a new patch, let me know, so I can update this page.</span><p>
-
-<p style="text-align: center;"><span style="font-size: 16pt; font-family: times new roman,times;">You can also post bug reports [[http://www.minecolonies.com/publicforum/m/18051739/viewforum/6723571|HERE]]- Wissi</span><p>
-
-<p style="text-align: center;"><span style="font-size: 16pt; font-family: times new roman,times;">[[Workers Info|Back Workers Page]]</span><p>
+You can also post bug reports [[http://www.minecolonies.com/publicforum/m/18051739/viewforum/6723571 HERE]]- Wissi
