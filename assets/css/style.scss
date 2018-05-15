@@ -1,7 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
 @import "https://fonts.googleapis.com/css?family=Roboto";
 
 /* VARIABLES */
@@ -39,12 +38,25 @@ $mcurl: 'https://minecolonies.com';
 body {
 	background: transparent;
 	margin: 0;
-	font-family: Roboto, sans-serif;
+	font-family: 'Times New Roman', Roboto, sans-serif;
+}
+
+@media (min-width: 1500px) {
+	.container {
+		max-width: 1450px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 
 .header {
-	font-family: "Colonial Dame", sans-serif;
-    font-size: 8rem;
+	font-family: "Colonial Dame", Roboto, sans-serif;
+	font-size: 8rem;
     line-height: 100px;
     padding: 50px 2px 10px 2px;
     margin: 2px;
@@ -54,6 +66,18 @@ body {
         -3px -2px 0 #000,
         0 1px 0 #000;
 	text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        font-size: 4rem;
+    }
 }
 
 .navbar.main {
@@ -144,26 +168,22 @@ body {
 	padding-top: 10px;
 }
 
-img {
-	vertical-align: middle;
-	border-style: none;
-}
-
 h1 {
 	text-align: center;
 }
 
-h1:after h1:not(.header):after {
-	content: " ";
-	display: block;
-	height: 1px;
-	margin: 6px 0px 6px 0px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.footnote {
+	text-align: center;
 }
 
 .footer {
+	padding-top: 10px;
 	padding-bottom: 40px;
 }

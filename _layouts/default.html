@@ -69,7 +69,7 @@ title: Minecolonies Wiki
                   <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
                   <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
                     {% for entry in item.subitems %}
-                      <a class="dropdown-item" href="{{ entry.url }}">{{ entry.page }}</a>
+                      <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
                     {% endfor %}
                   </div>
                 </li>
@@ -83,8 +83,11 @@ title: Minecolonies Wiki
         <!-- MAIN CONTENT -->
         <div class="container content">
             {{ content }}
+            <hr>
+            <div class="footnote">
+              <p>If changes are needed, or you feel there is content missing, please feel free to edit this page, or submit an issue for us to make any edits. - Minecolonies Wiki Team</p>
+            </div>
         </div>
-
         <!-- FOOTER  -->
         <div class="footer">
           <footer class="ribbon">

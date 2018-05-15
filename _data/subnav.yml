@@ -5,13 +5,13 @@ subnav:
         url: /url.html
   - title: Tutorials
     subitems:
-      - page: Name
-        url: /url.html
+      - page: Tutorial
+        url: tutorials/tutorial.html
   - title: Workers
     subitems:
-      - page: Name
-        url: /url.html
+      - page: Builder
+        url: workers/builder.html
   - title: Buildings
     subitems:
-      - page: Name
-        url: /url.html
+      - page: Buildings
+        url: buildings/buildings.html
