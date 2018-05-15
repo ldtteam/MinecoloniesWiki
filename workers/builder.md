@@ -1,11 +1,11 @@
 # Welcome to the Builder's Information Site.
 <hr>
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;;">&nbsp;&nbsp;&nbsp;&nbsp;The Builder is one of the most important workers for your Colony. As long as you provide the builder with all the resources he/she asks for, the builder will build and upgrade all of your Town buildings.</span></p>
+The Builder is one of the most important workers for your Colony. As long as you provide the builder with all the resources he/she asks for, the builder will build and upgrade all of your Town buildings.
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Before any building can be built, you have to craft the “Builder’s Hut” block in the crafting table and use your “[[https://www.youtube.com/watch?v=Gz1I7hhMd5Y| Building Tool]]” to place th building. Once you “commit” to the placement of the builder’s hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits| Traits]]" for builder if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]]).</span></p>
+Before any building can be built, you have to craft the “Builder’s Hut” block in the crafting table and use your “[[https://www.youtube.com/watch?v=Gz1I7hhMd5Y| Building Tool]]” to place th building. Once you “commit” to the placement of the builder’s hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits| Traits]]" for builder if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]]).
 
-<p align="center"><span style="font-family: times new roman,times;"><strong><span style="font-size: 16pt;">Best Traits are: Intelligence and Strength.</span></strong></span></p>
+Best Traits are: Intelligence and Strength.
 
 <center>
 <table>
@@ -19,13 +19,13 @@
 </table>
 </center>
 
-<p style="text-align: center;"><span style="color: #0000ff; font-size: 18pt; font-family: times new roman,times;"><strong><span style="text-decoration: underline;">You now officially have a &ldquo;Builder!&rdquo; CONGRATULATIONS!</span></strong></span></p>
+You now officially have a &ldquo;Builder!&rdquo; CONGRATULATIONS!
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Now you will have to issue the builder the “Build” assignment so he/she can build his own Hut first. Without the builder’s hut being built, the builder cannot build any other buildings. The builder will be asking for the materials he/she needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.</span></p>
+Now you will have to issue the builder the “Build” assignment so he/she can build his own Hut first. Without the builder’s hut being built, the builder cannot build any other buildings. The builder will be asking for the materials he/she needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><strong>Hint:</strong> If you see the builder has not finished a work order and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what he/she needs. you can also go to page 2 of the hut's block GUI and see there any materials that are required and he might be missing, they will be in red.</span></p>
+**Hint:** If you see the builder has not finished a work order and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what he/she needs. you can also go to page 2 of the hut's block GUI and see there any materials that are required and he might be missing, they will be in red.
 
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp;Now you can access the Builder’s Hut block (right click on it) and you will see a GUI with different options:</span></p>
+Now you can access the Builder’s Hut block (right click on it) and you will see a GUI with different options:
 
 <table style="width: 100%;">
   <tbody>
