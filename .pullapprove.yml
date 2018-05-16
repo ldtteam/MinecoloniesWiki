@@ -1,4 +1,7 @@
 version: 2	
+requirements:
+  signed_off_by:
+    required: false
 group_defaults:	
   approve_by_comment:	
     approve_regex: '^(Approved|:shipit:|:\+1:|LGTM)'	
