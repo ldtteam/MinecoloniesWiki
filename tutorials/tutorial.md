@@ -37,7 +37,6 @@ If you're here, **CONGRATULATIONS!** You have already [[installed]] Minecolonies
 So, the first thing you want to do is find the perfect spot to settle down. But, before you do that, there are two things you have to consider. The following comments are the most important you should read and consider to ensure a successful Town and avoid frustration. Please read all considerations first, before placing your [[Supply Ship]], [[Supply Camp]], or even starting to play:
 
 ### Placement of the [[Supply Ship]] or [[Supply Camp]] 
-<hr>
 
  When you place the [[Supply Ship]] it will spawn a chest that will contain the Town Hall block and the Building Tool. To place the Supply Ship, you need to have a large enough body of water. The Supply Ship is 32 x 11 blocks in length and width. So the recommended body of water must be at least (32 x 20). When you place the Supply Chest a chest will appear on the exact block you right clicked. The Chest will be directly in front of the ladder to board the supply ship (8 blocks from the boarding ladder) and the ladder is not in the middle of the Supply Ship. But please take into account the Town Hall placement as well before you place your Supply Ship. '''Once the Supply Ship is placed, you can't place another Ship or Camp in this World anymore.'''
 (Hint: if you're not able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block).
@@ -48,7 +47,6 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 (Hint: if you're not able to place the Supply Camp, try it block by block: one to the right, left, closer or further from the area you cleared. It can not contain any holes or have any flowers, grass, fens, etc. It must be completely flat and clear.
 
 ### Town Hall
-<hr>
 
  The protected area of your Colony (once the Town Hall has been placed) will be a 180 block radius, measured from where you placed your Town Hall block the first time (on the official Minecolonies Server). Therefore, plan carefully where you want to place your Town Hall. 180 blocks in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
