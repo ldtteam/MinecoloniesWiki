@@ -1,9 +1,14 @@
+# MultiMC Installation
+<hr>
+
 Installation via MultiMC is very easy, and works on Windows, Mac and Linux.
 
 Below lists the steps you will need to take in to install the Minecolonies Official Modpack to play on the Minecolonies official server, or for Singleplayer.
-*'''Note:''' the Minecolonies Official Server uses Minecraft v. 1.12.2
+- **Note:** the Minecolonies Official Server uses Minecraft v. 1.12.2
 
-== Getting MultiMC ==
+## Getting MultiMC
+<hr>
+
 MultiMC can be downloaded here: [https://multimc.org/#Download MultiMC.org]. Simply choose the version for your operating system and install.
 
 This guide assumes that you have the latest version of MultiMC (v. 0.6.0), and will probably not work for older versions. If you already have an older version installed, please update it!
@@ -12,17 +17,21 @@ It will also assume that you're using Minecraft 1.12.2, but will work for any ve
 
 [[File:MultiMc-Download.png|center]]
 
-*'''Important Note:''' Please '' '''do not''' '' download and install a copy of MultiMC from any other source besides MultiMC.org or their official [https://github.com/MultiMC/MultiMC5/ GitHub]! MultiMC is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
+- **Important Note:** Please ***do not*** download and install a copy of MultiMC from any other source besides MultiMC.org or their official [https://github.com/MultiMC/MultiMC5/ GitHub]! MultiMC is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
 
-== Setting Up MultiMC ==
+## Setting Up MultiMC
+<hr>
+
 Setting up MultiMC is pretty quick, depending on your download speed. You do not need an existing Minecraft install, but you will need to log in with your Mojang account.
 
-=== Account ===
+### Account
+
 [[File:MultiMc-Account.png|center]]
 
 Click the highlighted button, select "Manage Accounts", and on the window the appears, fill in your Mojang account details.
 
-=== Create an Instance ===
+### Create an Instance
+
 Once your account details are squared away, you'll be able to create an 'instance' - instances are MultiMC's way of separating each version of Minecraft you wish to install. You can even create multiple instances for every version of Minecraft, which makes managing mods-per-world easy! Nice, right? Onwards...
 
 [[File:MultiMc-Instance1.png|center]]
@@ -74,7 +83,8 @@ You can filter for your version in the dropdown located on the right side of the
 
 [[File:MultiMc-Curse.png|center]]
 
-=== Installing the Modpack ===
+### Installing the Modpack
+
 If you followed along with the "Setting up MultiMC", you should remember creating an instance. Installing a modpack is almost *exactly* the same, which one change in the steps: on the "Add Instance" screen, what we want is this:
 
 [[File:MultiMc-Modpack1.png|center]]
