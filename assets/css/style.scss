@@ -179,6 +179,16 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+hr::after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #fffaee;
+}
+
 table {
     width: 100%;
     max-width: 100%;
