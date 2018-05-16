@@ -10,4 +10,5 @@ groups:
     required: 1	
     reset_on_push:	
       enabled: false	
-    users: all
+    teams:	
+      - approved-editors 
