@@ -1,1 +1,4 @@
+title: Minecolonies Wiki
+description: >- # this means to ignore newlines until "remote-theme"
+  This is a temporary description.
 remote-theme: jekyll/minima
