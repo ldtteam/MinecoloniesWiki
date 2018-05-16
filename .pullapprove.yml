@@ -5,7 +5,7 @@ requirements:
 group_defaults:	
   approve_by_comment:	
     approve_regex: '^(Approved|:shipit:|:\+1:|LGTM)'	
-      enabled: true	
+    enabled: true	
 groups:	
   approved-editors:	
     github_reviews:	
