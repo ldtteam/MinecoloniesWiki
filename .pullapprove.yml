@@ -1,17 +1,27 @@
-version: 2	
+version: 2
 requirements:
   signed_off_by:
     required: false
-group_defaults:	
-  approve_by_comment:	
-    approve_regex: '^(Approved|:shipit:|:\+1:|LGTM)'	
-    enabled: true	
-groups:	
-  approved-editors:	
-    github_reviews:	
-      enabled: true	
-    required: 1	
-    reset_on_push:	
-      enabled: false	
-    teams:	
-      - approved-editors 
+group_defaults:
+  always_pending:
+    explanation: This PR is a work in progress...
+    labels:
+    - In Progress
+    title_regex: (WIP|wip)
+  always_rejected:
+    explanation: This PR is not ready for code review...
+    labels:
+    - Not Ready
+  approve_by_comment:
+    approve_regex: (Approved|:shipit:|:\+1:|LGTM)
+    enabled: true
+  reset_on_push:
+    enabled: false
+groups:
+  approved-editors:
+    github_reviews:
+      enabled: true
+    reject_value: -999
+    required: 1
+    teams:
+      - approved-editors
