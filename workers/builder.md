@@ -1,4 +1,4 @@
-# Welcome to the Builder's Information Site.
+# Builder
 <hr>
 
 The builder is one of the most important workers for your colony. As long as you provide the builder with all the resources they ask for, the builder will build and upgrade all of your town buildings.
