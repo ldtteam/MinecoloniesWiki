@@ -142,6 +142,92 @@ body {
 	margin: 10px auto 0;
 }
 
+/* SIDEBAR */
+.navbar-side {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    border-right: 3px solid #E0D2AE;
+    background-color: #FDF6E5;
+    overflow-y: scroll;
+    z-index: 1000;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.sidenav-title {
+	margin: 20px 0 0;
+	font-family: "Colonial Dame", Roboto, sans-serif;
+	color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-side {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-side {
+        width: 50%;
+    }
+}
+
+.reveal {
+    -webkit-transform: translateX(-0%);
+    -ms-transform: translateX(-0%);
+    transform: translateX(-0%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.navbar-side {
+	hr::after {
+		color: #000;
+		font-family: 'Times New Roman', Times, serif;
+		background: #FDF6E5;
+	}
+}
+
+.navbar-side-item {
+    padding: .2rem 0;
+    margin: 0;
+}
+
+.navbar-side-item .dropdown-menu {
+    position: static;
+    float: none;
+}
+
+.side-link {
+    padding-left: 1rem;
+    color: #000000!important;
+}
+
+.side-link .fa {
+    padding-right: 10px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
+    z-index: 990;
+}
+
 .dropdown {
 	cursor: pointer;
 }
@@ -181,7 +267,7 @@ hr {
 }
 
 hr::after {
-    content: "§";
+	content: "§";
     display: inline-block;
     position: relative;
     top: -0.7em;
