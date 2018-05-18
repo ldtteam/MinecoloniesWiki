@@ -28,9 +28,9 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
-      <% for items in site.data.gui.global %>
+      {% for items in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong>{{ item.content }}</li>
-      <% endfor %>
+      {% endfor %}
     </ul>
   </div>
 </div>
