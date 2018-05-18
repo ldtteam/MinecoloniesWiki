@@ -1,4 +1,4 @@
-<p style="text-align: center;"><span style="font-family: times new roman,times; font-size: 24pt;"><strong><span style="color: blue;">This is where you can find specific information about Buildings<br/> that do not have a Worker associated to it.</span></strong></span></p>
+<p style="text-align: center;"><span style="font-family: times new roman,times; font-size: 24pt;"><strong><span style="color: blue;">This is where you can find specific information about Buildings<br/> that do not have a Worker associated to them.</span></strong></span></p>
 <p style="text-align: justify;"><span style="font-family: times new roman,times;"><strong><span style="font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;There are several buildings that do not require a Worker for it, as in the case of the "Town Hall", the "Supply Ship", the "Supply Camp",  the "Citizen's Hut" and the "Warehouse" for now. There are other buildings that are being worked on that will have some Citizen and Player interaction in the Future, like the Marketplace, the Tavern/Inn, and more to come.</span></strong></span></p>
 \\<center>
 <table>
