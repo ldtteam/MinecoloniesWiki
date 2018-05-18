@@ -1,0 +1,22 @@
+global:
+  - button: Fire/Hire Worker
+  hire:
+    - content:  If you think you have a better citizen for the job with better skills or traits.
+  - button: Recall Worker
+  recall:
+    - content:  If the worker gets stuck somewhere, or you just want to see what the worker has or give them something directly.
+  - button: Build/Upgrade Building
+  build:
+    - content:  To create the build/upgrade work order for this building.
+  - button: Repair Building
+  repair:
+    - content:  So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.
+  - button: List of Recipes
+  listrec:
+    - content:  Lists the recipes that you have taught to this worker's hut.
+  - button: Teach Recipe
+  techrec:
+    - content:  Opens a 2x2 crafting grid which allows you to teach this hut recipes, which the currently assigned worker will use to craft items that they <strong>require</strong>.
+  - button: Inventory
+  inv:
+    - content:  This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).
