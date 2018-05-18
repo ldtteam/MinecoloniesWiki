@@ -4,7 +4,7 @@ global:
   - button: Recall Worker
     content: If the worker gets stuck somewhere, or you just want to see what the worker has or give them something directly.
   - button: Build/Upgrade Building
-    content: To create the build/upgrade work order for this building.
+    content: To create the build/upgrade/relocation work order for this building.
   - button: Repair Building
     content: So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.
   - button: List of Recipes
