@@ -21,34 +21,35 @@ Now you will have to issue the builder the build assignment so they can build th
 <hr>
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
-<table style="width: 100%;">
-  <tbody>
-    <tr>
-      <td style="width: 50%;"><img src="../assets/images/gui/buildergui.png" class="img-fluid" alt="Builder GUI"></td>
-      <td style="width: 50%;">
-        <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
-        <ul>
-          <li><strong>Fire/Hire Worker:</strong> If you think you have a better citizen for the job with better skills or traits.</li>
-          <li><strong>Recall Worker:</strong> If the worker gets stuck somewhere, or you just want to see what the worker has or give them something directly.</li>
-          <li><strong>Build/Upgrade Building:</strong> To create the build/upgrade work order for this building.</li>
-          <li><strong>Repair Building:</strong> So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.</li>
-          <li><strong>List of Recipes:</strong> Lists the recipes that you have taught to this worker&#39;s hut.</li>
-          <li><strong>Teach Recipe:</strong> Opens a 2x2 crafting grid which allows you to teach this hut recipes, which the currently assigned worker will use to craft items that they <strong>require</strong>.</li>
-          <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 50%;"><img src="../assets/images/gui/buildergui2.png" class="img-fluid" alt="Builder GUI 2"></td>
-      <td style="width: 50%;">By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:
-        <ul>
-          <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade they are currently working on. This amount will change as they place the materials and will show <strong>only</strong> what materials they still need to place.</li>
-          <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
+    <ul>
+      <li><strong>Fire/Hire Worker:</strong> If you think you have a better citizen for the job with better skills or traits.</li>
+      <li><strong>Recall Worker:</strong> If the worker gets stuck somewhere, or you just want to see what the worker has or give them something directly.</li>
+      <li><strong>Build/Upgrade Building:</strong> To create the build/upgrade work order for this building.</li>
+      <li><strong>Repair Building:</strong> So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.</li>
+      <li><strong>List of Recipes:</strong> Lists the recipes that you have taught to this worker&#39;s hut.</li>
+      <li><strong>Teach Recipe:</strong> Opens a 2x2 crafting grid which allows you to teach this hut recipes, which the currently assigned worker will use to craft items that they <strong>require</strong>.</li>
+      <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
+    <ul>
+      <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade they are currently working on. This amount will change as they place the materials and will show <strong>only</strong> what materials they still need to place.</li>
+      <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
+    </ul>
+  </div>
+</div>
 
 ## A few things to consider
 <hr>
