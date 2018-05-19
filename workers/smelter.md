@@ -1,4 +1,7 @@
-The Smelter is an essential worker to add after your town is established. <p><i>For example, once you have a warehouse, and your miner is happily digging ores and coal below the surface.</i>
+<h1>Smelter</H1>
+<h>
+
+The Smelter is an essential worker to add after your town is established.<br><i>For example, once you have a warehouse, and your miner is happily digging ores and coal below the surface.</i>
 
 
 Once completed, the smelter worker will take any smeltable ores; such as Iron, Gold, Coal, (or even Tinker's Ores!), as well as a fuel source and happily smelt them into ingots for you!</p>
