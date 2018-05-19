@@ -15,7 +15,7 @@ Ideal Worker Characteristics: Primary & Secondary
 
 
 
-<hr>
+
 **Ideal placement:** 
 Anywhere within the colony. 
 
