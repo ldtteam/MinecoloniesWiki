@@ -9,8 +9,24 @@ subnav:
         url: tutorials/tutorial.html
   - title: Workers
     subitems:
+      - page: Baker
+        url: workers/baker.html
       - page: Builder
         url: workers/builder.html
+      - page: Deliveryman
+        url: workers/deliveryman.html
+      - page: Farmer
+        url: workers/farmer.html
+      - page: Fisherman
+        url: workers/fisherman.html
+      - page: Guard
+        url: workers/guard.html
+      - page: Lumberjack
+        url: workers/lumberjack.html
+      - page: Miner
+        url: workers/miner.html
+      - page: Smelter
+        url: workers/smelter.html 
   - title: Buildings
     subitems:
       - page: Buildings
