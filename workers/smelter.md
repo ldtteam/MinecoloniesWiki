@@ -2,6 +2,7 @@
 
 
 The Smelter is an essential worker to add after your town is established.
+
 *For example, once you have a warehouse, and your miner is happily digging ores and coal below the surface.*
 
 
