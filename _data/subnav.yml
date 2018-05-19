@@ -13,7 +13,7 @@ subnav:
         url: workers/baker.html
       - page: Builder
         url: workers/builder.html
-      - page:Deliveryman
+      - page: Deliveryman
         url: workers/deliveryman.html
       - page: Farmer
         url: workers/farmer.html
