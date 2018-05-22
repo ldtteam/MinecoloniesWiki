@@ -1,15 +1,3 @@
-LIST_CITIZENS("com.minecolonies.coremod.ListCitizens", DefaultPermissionLevel.ALL, "Can ListCitizens...."),
-KILL_CITIZEN("com.minecolonies.coremod.KillCitizen", DefaultPermissionLevel.ALL, "Can KillCitizen...."),
-RESPAWN_CITIZEN("com.minecolonies.coremod.RespawnCitizen", DefaultPermissionLevel.ALL, "Can RespawnCitizen...."),
-CITIZEN_INFO("com.minecolonies.coremod.CitizenInfo", DefaultPermissionLevel.ALL, "Can view detailed citizen info."),
-CHANGE_COLONY_OWNER("com.minecolonies.coremod.ChangeColonyOwner", DefaultPermissionLevel.OP, "Can change owner of a colony."),
-COLONY_TELEPORT("com.minecolonies.coremod.ColonyTeleport", DefaultPermissionLevel.OP, "Can ColonyTeleport...."),
-MAKE_NOT_AUTO_DELETABLE("com.minecolonies.coremod.MakeNotAutoDeletable", DefaultPermissionLevel.OP, "Can MakeNotAutoDeletable...."),
-DO_RAID_NOW("com.minecolonies.coremod.DoRaidNow", DefaultPermissionLevel.OP, "Can DoRaidNow...."),
-DO_RAID_TONIGHT("com.minecolonies.coremod.DoRaidTonight", DefaultPermissionLevel.OP, "Can DoRaidTonight...."),
-REQUEST_SYSTEM_RESET("com.minecolonies.coremod.RSReset", DefaultPermissionLevel.OP, "Can RSReset...."),
-CLAIM("com.minecolonies.coremod.Claim", DefaultPermissionLevel.OP, "Can claim structures.")
-
 <table>
   <tr>
     <th>Command</th>
@@ -18,7 +6,7 @@ CLAIM("com.minecolonies.coremod.Claim", DefaultPermissionLevel.OP, "Can claim st
     <th>Default Permission Level</th>
   </tr>
   <tr>
-    <td>/minecolonies &lt;colonies|kill|colony|citizens|rs|rtp|backup|home|raid-tonight|raid-now|check|whoami|whereami|scan&gt; (/mc)</td>
+    <td>/minecolonies &lt;colonies | kill | colony | citizens | rs | rtp | backup | home | raid-tonight | raid-now | check | whoami | whereami | scan&gt; (/mc)</td>
     <td colspan="3">Base command for all other Minecolonies commands</td>
   </tr>
   <tr>
@@ -80,7 +68,7 @@ CLAIM("com.minecolonies.coremod.Claim", DefaultPermissionLevel.OP, "Can claim st
     <td colspan="3">Base command for all colonies commands</td>
   </tr>
   <tr>
-    <td>list</td>
+    <td>list [page: page number]</td>
     <td>Lists all colonies</td>
     <td>com.minecolonies.coremod.ListColonies</td>
     <td>OP</td>
@@ -92,7 +80,7 @@ CLAIM("com.minecolonies.coremod.Claim", DefaultPermissionLevel.OP, "Can claim st
     <td>OP</td>
   </tr>
   <tr>
-    <td>/minecolonies kill &lt;barbarians|animals|mob|chicken|cow|pig|sheep</td>
+    <td>/minecolonies kill &lt;barbarians | animals | mob | chicken | cow | pig | sheep</td>
     <td colspan="3">Base command for all kill commands</td>
   </tr>
   <tr>
@@ -138,7 +126,7 @@ CLAIM("com.minecolonies.coremod.Claim", DefaultPermissionLevel.OP, "Can claim st
     <td>OP</td>
   </tr>
   <tr>
-    <td>/minecolonies colony &lt;info|delete|barbarians|addOfficer|refresh|ownerchange|teleport|deletable|raid|raid-tonight|claim&gt;</td>
+    <td>/minecolonies colony &lt;info | delete | barbarians | addOfficer | refresh | ownerchange | teleport | deletable | raid | raid-tonight | claim&gt;</td>
     <td colspan="3">Base command for all colony commands</td>
   </tr>
   <tr>
@@ -166,21 +154,83 @@ CLAIM("com.minecolonies.coremod.Claim", DefaultPermissionLevel.OP, "Can claim st
     <td>OP</td>
   </tr>
   <tr>
-    <td>refresh &lt;colony: colony id&gt;</td>
+    <td>refresh [player: online player] [colony: colony id]</td>
     <td>Refreshes a colony</td>
     <td>com.minecolonies.coremod.RefreshColony</td>
     <td>OP</td>
   </tr>
   <tr>
     <td>ownerchange &lt;colony: colony id&gt; &lt;player: online-player&gt;</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Changes the owner of a colony</td>
+    <td>com.minecolonies.coremod.ChangeColonyOwner</td>
+    <td>OP</td>
   </tr>
   <tr>
     <td>teleport &lt;colony: colony id&gt;</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Teleports you to the specified colony</td>
+    <td>com.minecolonies.coremod.ColonyTeleport</td>
+    <td>OP</td>
+  </tr>
+  <tr>
+    <td>deletable &lt;colony: colony id&gt; &lt;canBeDeleted: true/false&gt;</td>
+    <td>Sets whether a colony can be marked for auto-deletion or not</td>
+    <td>com.minecolonies.coremod.MakeNotAutoDeletable</td>
+    <td>OP</td>
+  </tr>
+  <tr>
+    <td>raid &lt;colony: colony id&gt;</td>
+    <td>Schedules a barbarian raid for the specified colony to start right now</td>
+    <td>com.minecolonies.coremod.DoRaidNow</td>
+    <td>OP</td>
+  </tr>
+  <tr>
+    <td>raid-tonight &lt;colony: colony id&gt;</td>
+    <td>Schedules a barbarian raid for the specified colony to start the coming night</td>
+    <td>com.minecolonies.coremod.DoRaidTonight</td>
+    <td>OP</td>
+  </tr>
+  <tr>
+    <td>claim [colony: colony id] [range: number in chunks] [add: true/false]</td>
+    <td>Claims chunks a specified number of chunks from your location</td>
+    <td>com.minecolonies.coremod.Claim</td>
+    <td>OP</td>
+  </tr>
+  <tr>
+    <td>/minecolonies citizens &lt;list | kill | respawn | info&gt;</td>
+    <td colspan="3">Base command for all citizens commands</td>
+  </tr>
+  <tr>
+    <td>list &lt;colony: colony id&gt; [page: page number]</td>
+    <td>Lists all citizens in a colony</td>
+    <td>com.minecolonies.coremod.ListCitizens</td>
+    <td>ALL</td>
+  </tr>
+  <tr>
+    <td>kill &lt;colony: colony id&gt; &lt;citizen: citizen id/full name&gt;</td>
+    <td>Kills a specified citizen in a colony</td>
+    <td>com.minecolonies.coremod.KillCitizen</td>
+    <td>ALL</td>
+  </tr>
+  <tr>
+    <td>respawn &lt;colony: colony id&gt; &lt;citizen: citizen id/full name&gt;</td>
+    <td>Respawns the specified citizen in a colony</td>
+    <td>com.minecolonies.coremod.RespawnCitizen</td>
+    <td>ALL</td>
+  </tr>
+  <tr>
+    <td>info &lt;colony: colony id&gt; &lt;citizen: citizen id/full name&gt;</td>
+    <td>Gives basic information about a specified citizen in a colony</td>
+    <td>com.minecolonies.coremod.CitizenInfo</td>
+    <td>ALL</td>
+  </tr>
+  <tr>
+    <td>/minecolonies rs &lt;reset&gt;</td>
+    <td colspan="3">Base command for all request system commands</td>
+  </tr>
+  <tr>
+    <td>reset &lt;colony: colony id&gt;</td>
+    <td>Resets the request system for a colony</td>
+    <td>com.minecolonies.coremod.RSReset</td>
+    <td>OP</td>
   </tr>
 </table>
