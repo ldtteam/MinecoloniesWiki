@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Page Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+{% seo %}
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="bgscroll">
+        <!-- HEADER -->
+        <header class="container">
+          <h1 class="header">MineColonies Wiki</h1>
+        </header>
+
+        <!-- NAVBAR PRIMARY -->
+        <nav class="navbar navbar-expand-lg navbar-default main">
+          <div class="container">
+            <button class="navbar-toggler" type="button" id="navbarSideButton" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="https://minecolonies.com" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://forum.minecolonies.com" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://minecolonies.com/about.php" class="nav-link">About The Mod</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="https://wiki.minecolonies.com/" class="nav-link">Wiki</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="nav-link">Bug Reports</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}" class="nav-link">Edit this page <i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+
+          <ul class="navbar-side" id="navbarSide">
+            <div class="sidenav-title">
+              <h1 class="text-center">Minecolonies Wiki</h1>
+            </div>
+            <hr />
+            <li class="navbar-side-item">
+              <a href="https://minecolonies.com" class="side-link">Home</a>
+            </li>
+            <li class="navbar-side-item">
+              <a href="https://forum.minecolonies.com" class="side-link">Forums</a>
+            </li>
+            <li class="navbar-side-item">
+              <a href="https://minecolonies.com/about.php" class="side-link">About The Mod</a>
+            </li>
+            <li class="navbar-side-item">
+              <a href="https://wiki.minecolonies.com/" class="side-link active">Wiki</a>
+            </li>
+            <li class="navbar-side-item">
+              <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="side-link">Bug Reports</a>
+            </li>
+    
+            <hr />
+            {% for item in site.data.subnav.subnav %}
+              <li class="navbar-side-item dropdown">
+                <a class="side-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+                <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
+                  {% for entry in item.subitems %}
+                    <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                  {% endfor %}
+                </div>
+              </li>
+            {% endfor %}
+        </ul>
+        <div class="overlay"></div>
+        </nav>
+
+        <!-- NAVBAR SECONDARY -->
+        <nav class="navbar navbar-expand-lg navbar-default secondary">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarsec">
+            <ul class="navbar-nav mr-auto">
+              {% for item in site.data.subnav.subnav %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+                  <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
+                    {% for entry in item.subitems %}
+                      <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                    {% endfor %}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /NAVBAR SECONDARY -->
+
+        <!-- MAIN CONTENT -->
+        <div class="container content">
+            {{ content }}
+            <hr>
+            <div class="footnote">
+              <p>If changes are needed, or you feel there is content missing, please feel free to edit this page, or submit an issue for us to make any edits. - Minecolonies Wiki Team</p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <div class="footer">
+          <footer class="ribbon">
+            <div class="container">
+              <p class="float-right">This page was last modified on {{ page.last_modified_at }}</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script>
+    $( document ).ready(function() {
+        // Open navbarSide when button is clicked
+        $("#navbarSideButton").on("click", function() {
+            $("#navbarSide").addClass("reveal");
+            $(".overlay").show();
+        });
+
+        // Close navbarSide when the outside of menu is clicked
+        $(".overlay").on("click", function(){
+            $("#navbarSide").removeClass("reveal");
+            $(".overlay").hide();
+        });
+
+        $("div.slides").each(function()
+        {
+            var slideshow = $(this);
+            var selectedImage = 0;
+            var maxSelectedImage = slideshow.find("img").length - 1;
+
+            slideshow.css("position", "relative");
+
+            slideshow.find("img")
+                .hide();
+
+            slideshow.find("img:eq("+selectedImage+")").show();
+
+            var advanceSlideshow = function()
+            {
+            var newSelectedImage = selectedImage + 1;
+            if(newSelectedImage > maxSelectedImage)
+                newSelectedImage = 0;
+
+                slideshow.find("img:eq("+selectedImage+")").fadeOut(100);
+                slideshow.find("img:eq("+newSelectedImage+")").fadeIn(100);
+
+                selectedImage = newSelectedImage;
+
+                setTimeout(advanceSlideshow, 1500);
+            };
+            setTimeout(advanceSlideshow, 1500);
+        });
+    });
+    </script>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
+</html>
