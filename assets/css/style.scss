@@ -302,3 +302,131 @@ table td, table th {
 	padding-top: 10px;
 	padding-bottom: 40px;
 }
+
+/* CRAFTING TABLE CSS */
+.invslot {
+    position:relative;
+    display:inline-block;
+    background:#8B8B8B no-repeat center center / 32px 32px;
+    border:2px solid;
+    border-color:#373737 #FFF #FFF #373737;
+    width:32px;
+    height:32px;
+    font-size:16px;
+    line-height:1;
+    text-align:left;
+    vertical-align:bottom
+}
+
+.invslot::before,.invslot::after {
+    content:"";
+    position:absolute;
+    background-color:#8B8B8B;
+    height:2px;
+    width:2px;
+}
+
+.invslot::before {
+    bottom:-2px;
+    left:-2px
+}
+
+.invslot::after {
+    top:-2px;
+    right:-2px
+}
+
+.invslot-large {
+    padding:8px
+}
+
+.invslot-item,.invslot-item > a:first-child {
+    position:relative;
+    display:block;
+    margin:-2px;
+    padding:2px
+}
+
+.crafting-table {
+    display:inline-block;
+    position:relative;
+    background-color:#C6C6C6;
+    border:2px solid;
+    border-color:#DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+    padding:6px;
+    text-align:left;
+    white-space:nowrap;
+    vertical-align:bottom;
+}
+.crafting-table > * {
+    display:inline-block;
+    vertical-align:top;
+}
+
+.crafting-table, .crafting-table * {
+    box-sizing: initial;
+}
+
+.crafting-table .ct-row {
+    display:block
+}
+
+.crafting-table > .ct-arrow {
+    background:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png) no-repeat;
+    width:32px;
+    height:26px;
+    margin:40px 4px 0
+}
+
+.crafting-table > .ct-output {
+    margin-top:28px
+}
+
+.crafting-table > .ct-icons {
+    position:absolute;
+    top:6px;
+    right:6px
+}
+
+.crafting-table .ct-shapeless,.crafting-table .ct-fixed {
+    display:inline-block;
+    background-repeat:no-repeat;
+    width:19px;
+    height:15px;
+    cursor:help
+}
+
+.crafting-table .ct-shapeless {
+    background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/a/a9/Grid_layout_Shapeless.png)
+}
+
+.crafting-table .ct-fixed {
+    background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/b/b8/Grid_layout_Fixed.png)
+}
+
+.sprite {
+    display: inline-block;
+    vertical-align: text-top;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+.inv-sprite {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.slides {
+    position: relative;
+    padding: 0;
+}
+
+.slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
