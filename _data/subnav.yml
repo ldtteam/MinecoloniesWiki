@@ -7,6 +7,10 @@ subnav:
     subitems:
       - page: Tutorial
         url: tutorials/tutorial
+      - page: Commands
+        url: tutorials/commands
+      - page: Recipes
+        url: tutorials/recipes
   - title: Workers
     subitems:
       - page: Baker
