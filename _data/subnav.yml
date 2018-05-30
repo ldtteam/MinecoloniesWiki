@@ -2,32 +2,32 @@ subnav:
   - title : Installation
     subitems:
       - page: Name
-        url: /url.html
+        url: /url
   - title: Tutorials
     subitems:
       - page: Tutorial
-        url: tutorials/tutorial.html
+        url: tutorials/tutorial
   - title: Workers
     subitems:
       - page: Baker
-        url: workers/baker.html
+        url: workers/baker
       - page: Builder
-        url: workers/builder.html
+        url: workers/builder
       - page: Deliveryman
-        url: workers/deliveryman.html
+        url: workers/deliveryman
       - page: Farmer
-        url: workers/farmer.html
+        url: workers/farmer
       - page: Fisherman
-        url: workers/fisherman.html
+        url: workers/fisherman
       - page: Guard
-        url: workers/guard.html
+        url: workers/guard
       - page: Lumberjack
-        url: workers/lumberjack.html
+        url: workers/lumberjack
       - page: Miner
-        url: workers/miner.html
+        url: workers/miner
       - page: Smelter
-        url: workers/smelter.html 
+        url: workers/smelter 
   - title: Buildings
     subitems:
       - page: Buildings
-        url: buildings/buildings.html
+        url: buildings/buildings
