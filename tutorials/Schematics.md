@@ -1,6 +1,8 @@
 - [x] Copy from live site.
-- [x] Change format to github format
+- [x] Change format to github format.
 - [ ] Get recipe thing working.
+- [ ] Upload pics for step 2 through 5.
+
 # Schematics Tutorial
 Welcome to the schematics information page.
 # Getting Started
