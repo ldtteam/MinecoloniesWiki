@@ -22,7 +22,7 @@ The first step is to make a Scan Tool like so:
         <br>
       </div>
       <div class="invslot slides">
-        <img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecraft/iron_ingot.png" title="Supplychest" class="inv-sprite">
+        <img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecraft/iron_ingot.png" title="Iron Ingot" class="inv-sprite">
       </div>
     </div>
     <div class="ct-row">
@@ -30,7 +30,7 @@ The first step is to make a Scan Tool like so:
         <br>
       </div>
       <div class="invslot slides">
-          <img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecraft/stick.png" title="Supplychest" class="inv-sprite">
+          <img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecraft/stick.png" title="Stick" class="inv-sprite">
       </div>
       <div class="invslot">
         <br>
@@ -38,7 +38,7 @@ The first step is to make a Scan Tool like so:
     </div>
     <div class="ct-row">
       <div class="invslot slides">
-        <img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecraft/stick.png" title="Supplychest" class="inv-sprite">
+        <img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecraft/stick.png" title="Stick" class="inv-sprite">
       </div>
       <div class="invslot">
         <br>
@@ -53,7 +53,7 @@ The first step is to make a Scan Tool like so:
   </div>
   <div class="ct-output">
     <div class="invslot invslot-large">
-      <div class="invslot-item"><img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecolonies/sceptersteel.png" title="Supplychest" class="inv-sprite"></div>
+      <div class="invslot-item"><img data-placement="top" data-toggle="tooltip" src="./assets/images/icons/minecolonies/sceptersteel.png" title="Scan Tool" class="inv-sprite"></div>
     </div>
   </div>
 </div>
