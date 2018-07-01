@@ -39,11 +39,11 @@ The level of their building is what will put a limit on the "Tool Level" the wor
 
 ## Workers Traits
 
-Next to the Worker are the best "Traits" for each worker to have in order for him/her to work faster,<br /> more efficiently and also they will "level Up" at a faster rate.
+Next to the Worker are the best "Traits" for each worker to have in order for him/her to work faster, more efficiently and also they will "level Up" at a faster rate.
 When you click on the "Hire" button, you will see a list of the available workers and the best "Traits" for the specific worker you are hiring will be in green (primary) and yellow (secondary) to help you decide which is the best worker for hire.
 /Workers/Traits.png
 There is a Formula for this: Primary Trait*2 + Secondary Trait*1 = Rate of Level Up.
-For example; If Intelligence is Primary (green colored) and Endurance Secondary (yellow colored) and the worker assigned has Intelligence "2" and Endurance "4" that is (2x2)+(4x1) = 8<br />
+For example; If Intelligence is Primary (green colored) and Endurance Secondary (yellow colored) and the worker assigned has Intelligence "2" and Endurance "4" that is (2x2)+(4x1) = 8
 That means that this worker will be able to level up 8 times faster.
 
 Choose a worker to view more information about him
