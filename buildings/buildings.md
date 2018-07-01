@@ -1,56 +1,23 @@
-<p style="text-align: center;"><span style="font-family: times new roman,times; font-size: 24pt;"><strong><span style="color: blue;">This is where you can find specific information about Buildings<br/> that do not have a Worker associated to them.</span></strong></span></p>
-<p style="text-align: justify;"><span style="font-family: times new roman,times;"><strong><span style="font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;There are several buildings that do not require a Worker for it, as in the case of the "Town Hall", the "Supply Ship", the "Supply Camp",  the "Citizen's Hut" and the "Warehouse" for now. There are other buildings that are being worked on that will have some Citizen and Player interaction in the Future, like the Marketplace, the Tavern/Inn, and more to come.</span></strong></span></p>
-\\<center>
-<table>
-<tr>
-<td><center></center></td>
-<td><center>{{/Buildings/Ship.png|}}</center></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><center>{{/Buildings/Camp.png|}}</center></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-</tr>
-</table>
-<table>
-<tr>
-<td><center></center></td>
-<td><span style="text-align: left; font-family: times new roman,times; font-size: 24pt;">[[Supply Ship| Supply Ship]]</span></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><span style="font-family: times new roman,times; font-size: 24pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Supply Camp|Supply Camp]]</span></td>
-</tr>
-</table>
-<table>
-<tr>
-<td><center></center></td>
-<td><center>{{/Buildings/Town Hall.png|}}</center></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><center>{{/Buildings/Citizen Hut.png|}}</center></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><center>{{/Buildings/Warehouse.png|}}</center></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-</tr>
-</table>
-<table>
-<tr>
-<td><center></center></td>
-<td><span style="text-align: left; font-family: times new roman,times; font-size: 24pt;">[[Town Hall| Town Hall]]</span></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><span style="font-family: times new roman,times; font-size: 24pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Citizen Hut| Citizen Hut]]</span></td>
-<td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></td>
-<td><span style="font-family: times new roman,times; font-size: 24pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Warehouse| Warehouse]]</span></td>
-</tr>
-</table>
-</center>
-<p style="text-align: center;"><span style="font-family: 'Times New Roman',serif; font-size: 24.0pt; color: #0070c0;">_____________________________________</span></p>
-<p style="text-align: center;"><span style="font-size: 16pt; font-family: times new roman,times;">If changes are needed or I missed a new patch, let me know, so I can update this page.</span><p>
-<p style="text-align: center;"><span style="font-size: 16pt; font-family: times new roman,times;">You can also post bug reports [[http://www.minecolonies.com/publicforum/m/18051739/viewforum/6723571|HERE]]- Wissi</span><p>
-<p style="text-align: center;"><span style="font-size: 16pt; font-family: times new roman,times;">[[Welcome to the MineColonies Wiki|Back to Welcome Page]]</span><p>
-![alt text](../assets/images/Buildings/Ship.png)
-![alt text](../assets/images/Buildings/Camp.png)
-![alt text](../assets/images/Buildings/TownHall.png)
-![alt text](../assets/images/Buildings/Warehouse.png)
-![alt text](../assets/images/Buildings/CitizenHut.png)
+# Buildings
 
+This is where you can find specific information about Buildings that do not have a Worker associated to them.
+
+There are several buildings that do not require a Worker for it, as in the case of the "Town Hall", the "Supply Ship", the "Supply Camp",  the "Citizen's Hut" and the "Warehouse" for now. There are other buildings that are being worked on that will have some Citizen and Player interaction in the Future, like the Marketplace, the Tavern/Inn, and more to come.
+
+/Buildings/Ship.png
+[[Supply Ship]]
+
+/Buildings/Camp.png
+[[Supply Camp]]
+
+/Buildings/Town Hall.png
+[[Town Hall]]
+
+/Buildings/Citizen Hut.png
+[[Citizen Hut]]
+
+/Buildings/Warehouse.png
+[[Warehouse]]
 
 {| class="wikitable" style="width: 90%;margin: auto;"
 ! colspan="4" |'''Building Schematic Details'''
