@@ -1,5 +1,4 @@
 # MultiMC Installation
-<hr>
 
 Installation via MultiMC is very easy, and works on Windows, Mac and Linux.
 
@@ -7,7 +6,6 @@ Below lists the steps you will need to take in to install the Minecolonies Offic
 - **Note:** the Minecolonies Official Server uses Minecraft v. 1.12.2
 
 ## Getting MultiMC
-<hr>
 
 MultiMC can be downloaded here: [https://multimc.org/#Download MultiMC.org]. Simply choose the version for your operating system and install.
 
@@ -20,7 +18,6 @@ It will also assume that you're using Minecraft 1.12.2, but will work for any ve
 - **Important Note:** Please ***do not*** download and install a copy of MultiMC from any other source besides MultiMC.org or their official [https://github.com/MultiMC/MultiMC5/ GitHub]! MultiMC is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
 
 ## Setting Up MultiMC
-<hr>
 
 Setting up MultiMC is pretty quick, depending on your download speed. You do not need an existing Minecraft install, but you will need to log in with your Mojang account.
 

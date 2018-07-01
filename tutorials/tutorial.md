@@ -1,12 +1,10 @@
 # Tutorial
-<hr>
 
 **Hello and welcome all new and old players!**
 
 <p class="alert alert-warning">If you are looking for how to install, look [[here]].</p>
 
 ## Basic Walkthrough
-<hr>
 
 When you are done installing this, congratulations! You have successfully installed MineColonies and you are on your way to having your own thriving colony!
 
@@ -28,7 +26,6 @@ Currently there are 5 more Worker Huts that can be built and placed. They are: t
 View all the recipes [[here]].
 
 ## Detailed Walkthrough
-<hr>
 
 If you're here, **CONGRATULATIONS!** You have already [[installed]] Minecolonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame Minecolonies Achievements).
             
@@ -72,21 +69,20 @@ So, what's the minimum distance from a Town to safely place your Town hall? In t
 
 '''Now, after you have explored, thought carefully, planned and found the perfect spot to start your own colony, let&rsquo;s take a look at the required steps to get your Colony running.'''
 
-### Setting Up Your Colony
-<hr>
+## Setting Up Your Colony
 
-#### Step 1
+### Step 1
 
 Get enough materials and craft your Supply Chest in a crafting table. Now use it by right clicking a block with it, in order to place your Supply Ship (which you can use as shelter, warehouse or even as materials to give to your builder). It will also give you a chest with your Town Hall block and the Building Tool after the placement. (You can watch this video from our youtube channel about how to use the Building Tool to position all your buildings).
 
 
 * '''Hint:''' Meanwhile, gather as many materials as possible to be able to give them to your builder when he starts building. He will be asking you for all kinds of materials he will need for each building or upgrade. Mainly oak wood, cobblestone and torches for the starter builds. Further upgrades will require more elaborate materials.
 
-#### Step 2
+### Step 2
 
 After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your [https://www.youtube.com/watch?v=Gz1I7hhMd5Y Building Tool] to place the Town Hall block, once you &ldquo;commit&rdquo; to the placement of the Town Hall, the Town hall block will be set and your Citizens will automagically appear. You can right click the Town Hall block to look at its graphical user interface.
 
-#### Town Hall GUI
+### Town Hall GUI
 
 You may use the tabs on the left side to switch between different categories:
 * '''Information.-'''This will give you some statistics about your citizens and workers.
@@ -118,7 +114,7 @@ You may use the tabs on the left side to switch between different categories:
 
 [[File:TH_WorkOrdersGUI.png]]
 
-#### Step 3
+### Step 3
 
 Before any building can be built, you have to craft the &ldquo;builder&rsquo;s hut&rdquo; block in the crafting table and use your Building Tool to place his building. Once you &ldquo;commit&rdquo; to the placement of the builder's hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "traits" for builder if you changed this in the setting tab in the Town Hall's GUI).
 You now officially have a [[Builder]]! CONGRATULATIONS!
@@ -136,14 +132,13 @@ Now you can access the Builder&rsquo;s block (right click on it) and you will se
 You will have to issue the builder the &ldquo;Build&rdquo; assignment so he can build his own Hut first. Without the builder&rsquo;s hut being built, the builder cannot build any other buildings. He will be asking for the materials he/she needs. Make sure to check the &ldquo;chat&rdquo; regularly to see what materials the builder is requesting for any build/upgrade.
 Hint: If you see he/she has not finished a work order and you don&rsquo;t see the builder asking for any materials, go to the builder&rsquo;s hut and &ldquo;recall&rdquo; the builder and wait a bit to see what he/she needs.
 
-#### Step 4
+### Step 4
 
 Once the builder has finished his Hut, you're ready to start building ANY other building you want. Just craft the desired block and use your building tool to place the desired building and go into the GUI for that new block you just placed, right click on it and click on the "Build" button. That simple!
 
 * '''Hint:''' Consider &ldquo;Upgrading&rdquo; the Builder&rsquo;s hut to level 2 as soon as you can so he may be able to upgrade any other building.
 
-### Final Notes
-<hr>
+## Final Notes
 
 You have now completed the most important steps completed to start and create your Colony.
 

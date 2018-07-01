@@ -1,5 +1,4 @@
 # Smelter
-<hr>
 
 The Smelter is an essential worker to add after your town is established.
 

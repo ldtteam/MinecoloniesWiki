@@ -1,5 +1,5 @@
 # Workers
-<hr>
+
 This is where you can find specific information about each worker.
 
 /Workers/Attention.gif
@@ -11,7 +11,7 @@ This is where you can find specific information about each worker.
 /Workers/Sleep.png
 
 ## Worker Levels
-<hr>
+
 There is a system in place for how the workers "Level Up". The level of their building is what will put a limit on the "Worker Level" he/she can achieve. Every time you level up their building, the worker's max level limit will be DOUBLE the previous limit! Currently there is NO limit on the Workers "Skill Level" (once you have made his building level 5, of course).
 
 | Building Level | Max Worker Level |
@@ -24,7 +24,7 @@ There is a system in place for how the workers "Level Up". The level of their bu
 |              5 | Unlimited        |
 
 ## Tool Levels
-<hr>
+
 There is also a system in place for the type of tools the workers can use depending on the level of their building.
 The level of their building is what will put a limit on the "Tool Level" the worker will be able to use. Every time you level up their building, the level of the tool the worker can use will increase.
 
@@ -38,7 +38,7 @@ The level of their building is what will put a limit on the "Tool Level" the wor
 |              5 | All Tools              | Any mining level         |
 
 ## Workers Traits
-<hr>
+
 Next to the Worker are the best "Traits" for each worker to have in order for him/her to work faster,<br /> more efficiently and also they will "level Up" at a faster rate.
 When you click on the "Hire" button, you will see a list of the available workers and the best "Traits" for the specific worker you are hiring will be in green (primary) and yellow (secondary) to help you decide which is the best worker for hire.
 /Workers/Traits.png

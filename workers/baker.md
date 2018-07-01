@@ -1,5 +1,4 @@
 # Baker
-<hr>
 
 The Baker is another part of the your town's bloodline. They will craft bread and cake to provide for all your workers' needs. They will be crafting bread in the furnace, provided that the Deliveryman (or yourself) give them all the wheat to do it. The Baker will also craft a cake if you provide them with the appropriate items required (currently the Deliveryman will not deliver the items required for crafting cakes, has to be provided by the player). 
 
@@ -16,7 +15,6 @@ You now officially have a Baker, CONGRATULATIONS!
 Now that you have a Baker they can start crafting bread and cakes right away.
 
 ## Hut GUI
-<hr>
 
 When accessing the Baker's Hut block (right clicking on it) you will see a GUI with different options:
 

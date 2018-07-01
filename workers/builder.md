@@ -1,5 +1,4 @@
 # Builder
-<hr>
 
 The builder is one of the most important workers for your colony. As long as you provide the builder with all the resources they ask for, the builder will build and upgrade all of your town buildings.
 
@@ -18,7 +17,7 @@ You now officially have a builder, CONGRATULATIONS!
 Now you will have to issue the builder the build assignment so they can build their own hut first. Without the builder’s hut being built, the builder cannot build any other buildings.
 
 ## Hut GUI
-<hr>
+
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
 <div class="row">
@@ -48,7 +47,6 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 </div>
 
 ## A few things to consider
-<hr>
 
 The placement of the Builders Hut. You could consider having the hut in the middle of where you plan to have the rest of your buildings so that the builder has less of a distance to walk between the hut and the build site.
 
