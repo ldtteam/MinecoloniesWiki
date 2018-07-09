@@ -2,6 +2,7 @@
 ---
 
 @import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://minecolonies.com/css/global.css";
 
 /* VARIABLES */
 $mcurl: 'https://minecolonies.com';
@@ -18,54 +19,12 @@ $mcurl: 'https://minecolonies.com';
 }
 
 /* STYLES */
-.bg {
-	background-color: #fffaee;
-}
 
-.bgscroll {
-	background:
-		url(#{$mcurl}/img/bg_corner_top_left.jpg) top left no-repeat,
-		url(#{$mcurl}/img/bg_corner_top_right.jpg) top right no-repeat,
-		url(#{$mcurl}/img/bg_corner_bottom_left.jpg) bottom left no-repeat,
-		url(#{$mcurl}/img/bg_corner_bottom_right.jpg) bottom right no-repeat,
-		url(#{$mcurl}/img/bg_middle_left.jpg) left center repeat-y,
-		url(#{$mcurl}/img/bg_middle_right.jpg) right center repeat-y,
-		url(#{$mcurl}/img/bg_top.jpg) top center repeat-x,
-		url(#{$mcurl}/img/bg_middle_bottom.jpg) bottom center repeat-x;
-	width: 100%;
-}
 
 body {
 	background: transparent;
 	margin: 0;
 	font-family: 'Times New Roman', Roboto, sans-serif;
-}
-
-@media (min-width: 1500px) {
-	.container {
-		max-width: 1450px;
-	}
-}
-
-@media (max-width: 576px) {
-	.container {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-}
-
-.header {
-	font-family: "Colonial Dame", Roboto, sans-serif;
-	font-size: 8rem;
-    line-height: 100px;
-    padding: 50px 2px 10px 2px;
-    margin: 2px;
-    color: transparent;
-    text-shadow: -2px -2px 3px rgba(255,255,255,.5),
-        -3px -2px 2px #EEE,
-        -3px -2px 0 #000,
-        0 1px 0 #000;
-	text-align: center;
 }
 
 @media screen and (max-width: 991px) {
