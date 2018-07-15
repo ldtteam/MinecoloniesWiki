@@ -146,6 +146,7 @@ class JSONReader {
           if(value.text() == recipeName)
           {
             value.before(output);
+            value.remove();
           }
         });
       }
