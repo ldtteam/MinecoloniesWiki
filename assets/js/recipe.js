@@ -14,24 +14,14 @@ class JSONReader {
       return $(this).text();
     })
     .get();
-    //$("blockquote").remove();
-    console.log(recipes);
 
     let recipe = this;
     $.each(recipes, function(index, value)
     {
-      //recipe.getNameAndReadData(value)
       recipe.readData(value);
-      console.log(index + ":" + value);
     });
-
-    //for (let i=0; i<recipes.length; i++) {
-        //this.getNameAndReadData(recipes[i]);
-        //console.log(recipes[i]);
-      //}
   }
 
-  //We read the data from the JSON specified and add it to the document
   readData(recipeName)
   {
     if(this.contains(recipeName))
@@ -43,10 +33,8 @@ class JSONReader {
     //JQuery to read from a JSON file
     $.getJSON(fileName, function(data)
     {
-      //For each recipe defined in the JSON file, we add it to our output
       for (var i in data.recipes) 
       {
-        //We empty the previous loaded data
         let output = "";
         output += `
         <div class="crafting-table">
@@ -156,9 +144,7 @@ class JSONReader {
   
   getNameAndReadData(recipename)
   {
-  //We get the value on the text box, add the .json termination and call the method readData with that as parameter
     this.readData("../assets/data/recipes/" + recipename + ".json");
-  //console.log(recipename);
   }
   
   contains(recipeName)
@@ -177,5 +163,4 @@ class JSONReader {
   }
 }
 
-//We create our reader to be accessed from the document
 var reader = new JSONReader();
