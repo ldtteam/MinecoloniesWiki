@@ -16,7 +16,7 @@
     <!-- Page Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
@@ -147,49 +147,53 @@
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+    <script src="../assets/js/recipe.js"></script>
+
     <script>
-    $( document ).ready(function() {
+      $( document ).ready(function() {
         // Open navbarSide when button is clicked
         $("#navbarSideButton").on("click", function() {
-            $("#navbarSide").addClass("reveal");
-            $(".overlay").show();
+          $("#navbarSide").addClass("reveal");
+          $(".overlay").show();
         });
 
         // Close navbarSide when the outside of menu is clicked
         $(".overlay").on("click", function(){
-            $("#navbarSide").removeClass("reveal");
-            $(".overlay").hide();
+          $("#navbarSide").removeClass("reveal");
+          $(".overlay").hide();
         });
 
         $("div.slides").each(function()
         {
-            var slideshow = $(this);
-            var selectedImage = 0;
-            var maxSelectedImage = slideshow.find("img").length - 1;
+          var slideshow = $(this);
+          var selectedImage = 0;
+          var maxSelectedImage = slideshow.find("img").length - 1;
 
-            slideshow.css("position", "relative");
+          slideshow.css("position", "relative");
 
-            slideshow.find("img")
-                .hide();
+          slideshow.find("img")
+              .hide();
 
-            slideshow.find("img:eq("+selectedImage+")").show();
+          slideshow.find("img:eq("+selectedImage+")").show();
 
-            var advanceSlideshow = function()
-            {
-            var newSelectedImage = selectedImage + 1;
-            if(newSelectedImage > maxSelectedImage)
-                newSelectedImage = 0;
+          var advanceSlideshow = function()
+          {
+          var newSelectedImage = selectedImage + 1;
+          if(newSelectedImage > maxSelectedImage)
+            newSelectedImage = 0;
 
-                slideshow.find("img:eq("+selectedImage+")").fadeOut(100);
-                slideshow.find("img:eq("+newSelectedImage+")").fadeIn(100);
+            slideshow.find("img:eq("+selectedImage+")").fadeOut(100);
+            slideshow.find("img:eq("+newSelectedImage+")").fadeIn(100);
 
-                selectedImage = newSelectedImage;
+            selectedImage = newSelectedImage;
 
-                setTimeout(advanceSlideshow, 1500);
-            };
             setTimeout(advanceSlideshow, 1500);
+          };
+          setTimeout(advanceSlideshow, 1500);
         });
-    });
+
+        reader.findRecipes();
+      });
     </script>
 
     {% if site.google_analytics %}
