@@ -1,0 +1,23 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "minecraft/planks_oak",
+      "secondItem": "minecolonies/sceptergold",
+      "thirdItem": "minecraft/planks_oak"
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/planks_oak",
+      "secondItem": "minecraft/chest",
+      "thirdItem": "minecraft/planks_oak"
+    },
+    "thirdRow":
+    {
+      "firstItem": "minecraft/planks_oak",
+      "secondItem": "minecraft/planks_oak",
+      "thirdItem": "minecraft/planks_oak"
+    },
+    "product": "minecolonies/blockhutbank"
+  }
+]}

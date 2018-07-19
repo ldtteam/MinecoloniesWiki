@@ -1,0 +1,23 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/oak_boat",
+      "secondItem": "",
+      "thirdItem": "minecraft/oak_boat"
+    },
+    "thirdRow":
+    {
+      "firstItem": "minecraft/oak_boat",
+      "secondItem": "minecraft/oak_boat",
+      "thirdItem": "minecraft/oak_boat"
+    },
+    "product": "minecolonies/supplychest"
+  }
+]}
