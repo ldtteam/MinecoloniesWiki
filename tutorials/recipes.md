@@ -1,5 +1,6 @@
 ---
 layout: recipes
+template: recipetemplate.html
 ---
 
 # Recipes

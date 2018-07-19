@@ -2,6 +2,7 @@
 ---
 
 @import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://minecolonies.com/css/global.css";
 
 /* VARIABLES */
 $mcurl: 'https://minecolonies.com';
@@ -18,174 +19,16 @@ $mcurl: 'https://minecolonies.com';
 }
 
 /* STYLES */
-.bg {
-	background-color: #fffaee;
-}
-
-.bgscroll {
-	background:
-		url(#{$mcurl}/img/bg_corner_top_left.jpg) top left no-repeat,
-		url(#{$mcurl}/img/bg_corner_top_right.jpg) top right no-repeat,
-		url(#{$mcurl}/img/bg_corner_bottom_left.jpg) bottom left no-repeat,
-		url(#{$mcurl}/img/bg_corner_bottom_right.jpg) bottom right no-repeat,
-		url(#{$mcurl}/img/bg_middle_left.jpg) left center repeat-y,
-		url(#{$mcurl}/img/bg_middle_right.jpg) right center repeat-y,
-		url(#{$mcurl}/img/bg_top.jpg) top center repeat-x,
-		url(#{$mcurl}/img/bg_middle_bottom.jpg) bottom center repeat-x;
-	width: 100%;
-}
-
 body {
 	background: transparent;
 	margin: 0;
 	font-family: 'Times New Roman', Roboto, sans-serif;
 }
-
-@media (min-width: 1500px) {
-	.container {
-		max-width: 1450px;
-	}
-}
-
-@media (max-width: 576px) {
-	.container {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-}
-
-.header {
-	font-family: "Colonial Dame", Roboto, sans-serif;
-	font-size: 8rem;
-    line-height: 100px;
-    padding: 50px 2px 10px 2px;
-    margin: 2px;
-    color: transparent;
-    text-shadow: -2px -2px 3px rgba(255,255,255,.5),
-        -3px -2px 2px #EEE,
-        -3px -2px 0 #000,
-        0 1px 0 #000;
-	text-align: center;
-}
-
-@media screen and (max-width: 991px) {
-	.header {
-		font-size: 5rem;
-	}
-}
-
-@media screen and (max-width: 576px) {
-    .header {
-        font-size: 4rem;
-    }
-}
-
-.navbar.main {
-    font-family: "Comic Book", sans-serif;
-	background: url(#{$mcurl}/img/NavbarRibbon.png) center/100% 100% no-repeat;
-	width: 99%;
-	height: 68px;
-	color: white;
-	font-size: 12pt;
-	margin: auto;
-}
-
-@media (max-width: 991px) {
-	.navbar.main {
-		background: url(#{$mcurl}/img/navbarribbon_small.png) center/100% 100% no-repeat;
-	}
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar.main a:link,
-.navbar.main a:visited {
-    color: #fff;
-}
-
-.active,
-.navbar.main a:hover,
-.navbar.main a:focus {
-    text-decoration: none;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-}
-
-.navbar.secondary {
-    font-family: "Comic Book", Roboto, sans-serif;
-	background: url(#{$mcurl}/img/Ribbon.png) center/100% 100% no-repeat;
-	width: 99%;
-	height: 28px;
-	color: white;
-	font-size: 12pt;
-	margin: 10px auto 0;
-}
-
-@media (max-width: 991px) {
-    .navbar.secondary {
-        display: none;
-    }
-}
-
-.navbar .nav:nth-child(1) {
-	padding-bottom: 6px;
-}
-
-.navbar.secondary {
-    font-family: "Comic Book", Roboto, sans-serif;
-	background: url(#{$mcurl}/img/Ribbon.png) center/100% 100% no-repeat;
-	width: 99%;
-	height: 28px;
-	color: white;
-	font-size: 12pt;
-	margin: 10px auto 0;
-}
-
 /* SIDEBAR */
-.navbar-side {
-    height: 100%;
-    width: 25%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0;
-    list-style: none;
-    border-right: 3px solid #E0D2AE;
-    background-color: #FDF6E5;
-    overflow-y: scroll;
-    z-index: 1000;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
-}
-
 .sidenav-title {
 	margin: 20px 0 0;
 	font-family: "Colonial Dame", Roboto, sans-serif;
 	color: #000;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-side {
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .navbar-side {
-        width: 50%;
-    }
-}
-
-.reveal {
-    -webkit-transform: translateX(-0%);
-    -ms-transform: translateX(-0%);
-    transform: translateX(-0%);
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
 }
 
 .navbar-side {
@@ -196,84 +39,12 @@ body {
 	}
 }
 
-.navbar-side-item {
-    padding: .2rem 0;
-    margin: 0;
-}
-
-.navbar-side-item .dropdown-menu {
-    position: static;
-    float: none;
-}
-
-.side-link {
-    padding-left: 1rem;
-    color: #000000!important;
-}
-
-.side-link .fa {
-    padding-right: 10px;
-}
-
-.overlay {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.8);
-    opacity: 0.6;
-    z-index: 990;
-}
-
-.dropdown {
-	cursor: pointer;
-}
-
-.ribbon {
-	background: url(#{$mcurl}/img/Ribbon.png) center/100% 100% no-repeat;
-	width: 99%;
-	text-align: center;
-	height: 28px;
-	margin: auto;
-	color: #fff;
-}
-
-.dropdown-menu {
-	background-color: #FDF6E5!important;
-	border: 3px solid #E0D2AE;
-}
-
-.dropdown-item {
-	color: #000!important;
-}
-
 .content {
 	padding-top: 10px;
 }
 
 h1 {
 	text-align: center;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-	background-image: linear-gradient(to right, #ccc, #333, #ccc);
-	text-align: center;
-}
-
-hr::after {
-	content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: #fffaee;
 }
 
 table {
