@@ -9,7 +9,7 @@ class JSONReader {
   
   findRecipes()
   {
-    let recipes = $("code").map(function()
+    let recipes = $("blockquote p").map(function()
     {
       return $(this).text();
     })
@@ -123,7 +123,7 @@ class JSONReader {
           </div>
         </div>`;
             
-        let recipes = $("code").map(function()
+        let recipes = $("blockquote p").map(function()
         {
           return $(this);
         })
