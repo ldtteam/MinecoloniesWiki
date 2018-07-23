@@ -149,50 +149,29 @@
 
     <script src="../assets/js/recipe.js"></script>
 
+    <script src="../assets/js/unslider.js"></script>
+
     <script>
-      $( document ).ready(function() {
+      $( document ).ready(function() 
+      {
         // Open navbarSide when button is clicked
-        $("#navbarSideButton").on("click", function() {
+        $("#navbarSideButton").on("click", function() 
+        {
           $("#navbarSide").addClass("reveal");
           $(".overlay").show();
         });
 
         // Close navbarSide when the outside of menu is clicked
-        $(".overlay").on("click", function(){
+        $(".overlay").on("click", function()
+        {
           $("#navbarSide").removeClass("reveal");
           $(".overlay").hide();
         });
 
-        $("div.slides").each(function()
-        {
-          var slideshow = $(this);
-          var selectedImage = 0;
-          var maxSelectedImage = slideshow.find("img").length - 1;
-
-          slideshow.css("position", "relative");
-
-          slideshow.find("img")
-              .hide();
-
-          slideshow.find("img:eq("+selectedImage+")").show();
-
-          var advanceSlideshow = function()
-          {
-          var newSelectedImage = selectedImage + 1;
-          if(newSelectedImage > maxSelectedImage)
-            newSelectedImage = 0;
-
-            slideshow.find("img:eq("+selectedImage+")").fadeOut(100);
-            slideshow.find("img:eq("+newSelectedImage+")").fadeIn(100);
-
-            selectedImage = newSelectedImage;
-
-            setTimeout(advanceSlideshow, 1500);
-          };
-          setTimeout(advanceSlideshow, 1500);
-        });
-
         reader.findRecipes();
+
+        setTimeout(reader.convertToSlideshow, 2000);
+
       });
     </script>
 
