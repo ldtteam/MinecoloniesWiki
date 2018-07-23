@@ -20,7 +20,6 @@ class JSONReader {
     {
       recipe.readData(value);
     });
-    
   }
 
   readData(recipeName)
@@ -41,90 +40,72 @@ class JSONReader {
         <div class="crafting-table">
           <div class="ct-input">
             <div class="ct-row">
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].firstRow.firstItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].firstRow.firstItem + ".png\" alt=" + data.recipes[i].firstRow.firstItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].firstRow.firstItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].firstRow.firstItem + ".png\" alt=" + data.recipes[i].firstRow.firstItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].firstRow.secondItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].firstRow.secondItem + ".png\" alt=" + data.recipes[i].firstRow.secondItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].firstRow.secondItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].firstRow.secondItem + ".png\" alt=" + data.recipes[i].firstRow.secondItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].firstRow.thirdItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].firstRow.thirdItem + ".png\" alt=" + data.recipes[i].firstRow.thirdItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].firstRow.thirdItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].firstRow.thirdItem + ".png\" alt=" + data.recipes[i].firstRow.thirdItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
             </div>
             <div class="ct-row">
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].secondRow.firstItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].secondRow.firstItem + ".png\" alt=" + data.recipes[i].secondRow.firstItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+              if (data.recipes[i].secondRow.firstItem !== "")
+              {
+                  output += "<img src=\"../assets/images/icons/" + data.recipes[i].secondRow.firstItem + ".png\" alt=" + data.recipes[i].secondRow.firstItem + " class=\"inv-sprite\">";
+              }
+              output += `
               </div>
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].secondRow.secondItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].secondRow.secondItem + ".png\" alt=" + data.recipes[i].secondRow.secondItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].secondRow.secondItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].secondRow.secondItem + ".png\" alt=" + data.recipes[i].secondRow.secondItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].secondRow.thirdItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].secondRow.thirdItem + ".png\" alt=" + data.recipes[i].secondRow.thirdItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].secondRow.thirdItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].secondRow.thirdItem + ".png\" alt=" + data.recipes[i].secondRow.thirdItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
             </div>
             <div class="ct-row">
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].thirdRow.firstItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].thirdRow.firstItem + ".png\" alt=" + data.recipes[i].thirdRow.firstItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].thirdRow.firstItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].thirdRow.firstItem + ".png\" alt=" + data.recipes[i].thirdRow.firstItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].thirdRow.secondItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].thirdRow.secondItem + ".png\" alt=" + data.recipes[i].thirdRow.secondItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].thirdRow.secondItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].thirdRow.secondItem + ".png\" alt=" + data.recipes[i].thirdRow.secondItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
-              <div class="invslot">
-                <div class="invslot-item">`;
-                  if (data.recipes[i].thirdRow.thirdItem !== "")
-                  {
-                      output += "<img src=\"../assets/images/icons/" + data.recipes[i].thirdRow.thirdItem + ".png\" alt=" + data.recipes[i].thirdRow.thirdItem + " class=\"inv-sprite\">";
-                  }
-                output += `
-                </div>
+              <div class="invslot">`;
+                if (data.recipes[i].thirdRow.thirdItem !== "")
+                {
+                    output += "<img src=\"../assets/images/icons/" + data.recipes[i].thirdRow.thirdItem + ".png\" alt=" + data.recipes[i].thirdRow.thirdItem + " class=\"inv-sprite\">";
+                }
+              output += `
               </div>
             </div>
           </div>
@@ -147,7 +128,7 @@ class JSONReader {
           return $(this);
         })
         .get();
-
+        
         $.each(recipes, function(index, value)
         {
           if(value.text() == recipeName)
@@ -179,14 +160,6 @@ class JSONReader {
   add(recipeName)
   {
     this.constructedRecipes.push(recipeName);
-  }
-
-  convertToSlideshow()
-  {
-    $("img[src*='planks']").attr("src", "../assets/images/icons/minecraft/planks_any.gif");
-    $("img[src*='boat']").attr("src", "../assets/images/icons/minecraft/any_boat.gif");
-    $("img[src*='oak_frame']").attr("src", "../assets/images/icons/minecolonies/frames_input.gif");
-    $("img[src*='oak_doublecrossed']").attr("src", "../assets/images/icons/minecolonies/frames_output.gif");
   }
 }
 
