@@ -1,0 +1,23 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "minecraft/hay",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/stick",
+      "secondItem": "minecraft/wheat",
+      "thirdItem": "minecraft/stick"
+    },
+    "thirdRow":
+    {
+      "firstItem": "",
+      "secondItem": "minecraft/stick",
+      "thirdItem": ""
+    },
+    "product": "minecolonies/scarecrow"
+  }
+]}
