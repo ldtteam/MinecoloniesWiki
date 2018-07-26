@@ -12,11 +12,12 @@ The building tool used in any of these recipes will not be consumed in the recip
 
 ## Tools/Utilities
 
-| Name                  | Recipe         | Name              | Recipe     |
-|-----------------------|----------------|-------------------|------------|
-| [Building Tool](temp) | `buildingtool` | [Scan Tool](temp) | `scantool` |
-|                       |                |                   |            |
-|                       |                |                   |            |
+| Name                             | Recipe          | Name                       | Recipe     |
+|----------------------------------|-----------------|----------------------------|------------|
+| [Building Tool](temp)            | `buildingtool`  | [Scan Tool](temp)          | `scantool` |
+| [Clipboard](Temp)                | `clipboard`     | [Field](temp)              | `field`    |
+| [Solid Substitution Block](temp) | `solidsubblock` | [Substitution Block](temp) | `subblock` |
+| [Waypoint](temp)                 | `waypoint`      |                            |            |
 
 ## Hut Blocks
 
