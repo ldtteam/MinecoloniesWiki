@@ -2,21 +2,21 @@
   {
     "firstRow":
     {
-      "firstItem": "minecraft/planks_oak",
+      "firstItem": "minecraft/stick",
       "secondItem": "minecolonies/sceptergold",
-      "thirdItem": "minecraft/planks_oak"
+      "thirdItem": "minecraft/stick"
     },
     "secondRow":
     {
-      "firstItem": "minecraft/planks_oak",
+      "firstItem": "minecraft/stick",
       "secondItem": "minecraft/leather",
-      "thirdItem": "minecraft/planks_oak"
+      "thirdItem": "minecraft/stick"
     },
     "thirdRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/planks_oak",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": "minecraft/stick",
+      "secondItem": "minecraft/stick",
+      "thirdItem": "minecraft/stick"
     },
     "product": "minecolonies/clipboard"
   }

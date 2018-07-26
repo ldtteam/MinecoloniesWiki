@@ -2,22 +2,22 @@
   {
     "firstRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecolonies/sceptergold",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": "minecraft/log_oak",
+      "secondItem": "minecraft/log_oak",
+      "thirdItem": "minecraft/log_oak"
     },
     "secondRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/wheat",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": "minecraft/log_oak",
+      "secondItem": "minecolonies/sceptergold",
+      "thirdItem": "minecraft/log_oak"
     },
     "thirdRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/planks_oak",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": "minecraft/log_oak",
+      "secondItem": "minecraft/log_oak",
+      "thirdItem": "minecraft/log_oak"
     },
-    "product": "minecolonies/blockhutbaker"
+    "product": "minecolonies/blocksolidsubstitution"
   }
 ]}
