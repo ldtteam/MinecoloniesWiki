@@ -184,6 +184,7 @@ class JSONReader {
   convertToSlideshow()
   {
     $("img[src*='planks']").attr("src", "../assets/images/icons/minecraft/planks_any.gif");
+    $("img[src*='log']").attr("src", "../assets/images/icons/minecraft/log_any.gif");
     $("img[src*='boat']").attr("src", "../assets/images/icons/minecraft/any_boat.gif");
     $("img[src*='oak_frame']").attr("src", "../assets/images/icons/minecolonies/frames_input.gif");
     $("img[src*='oak_doublecrossed']").attr("src", "../assets/images/icons/minecolonies/frames_output.gif");
