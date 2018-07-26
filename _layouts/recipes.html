@@ -131,7 +131,7 @@
         <div class="footer">
           <footer class="ribbon">
             <div class="container">
-              <p class="float-right">This page was last modified on {{ page.last_modified_at }}</p>
+              <p class="float-left">© MineColonies 2018</p>
             </div>
           </footer>
         </div>
@@ -169,30 +169,7 @@
           var selectedImage = 0;
           var maxSelectedImage = slideshow.find("img").length - 1;
 
-          slideshow.css("position", "relative");
-
-          slideshow.find("img")
-              .hide();
-
-          slideshow.find("img:eq("+selectedImage+")").show();
-
-          var advanceSlideshow = function()
-          {
-          var newSelectedImage = selectedImage + 1;
-          if(newSelectedImage > maxSelectedImage)
-            newSelectedImage = 0;
-
-            slideshow.find("img:eq("+selectedImage+")").fadeOut(100);
-            slideshow.find("img:eq("+newSelectedImage+")").fadeIn(100);
-
-            selectedImage = newSelectedImage;
-
-            setTimeout(advanceSlideshow, 1500);
-          };
-          setTimeout(advanceSlideshow, 1500);
-        });
-
-        reader.findRecipes();
+        setTimeout(reader.convertToSlideshow, 2000);
       });
     </script>
 
