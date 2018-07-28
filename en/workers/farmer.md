@@ -4,7 +4,7 @@ Welcome to the Farmer's Information Site.
 
 The Farmer is the backbone of your food production. The farmer will cultivate the crops you assign him/her through the "Field" block (Scarecrow).
 
-To begin with you have to craft the "Farmer's Hut" block in the crafting table and use your [[https://www.youtube.com/watch?v=Gz1I7hhMd5Y| Buiding Tool]] to place the building. Once you "commit" to the placement of the farmer's hut, the block will be placed and the farmer will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits| Traits]]" for farmer if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]].
+To begin with you have to craft the "Farmer's Hut" block in the crafting table and use your [[https://www.youtube.com/watch?v=Gz1I7hhMd5Y| Buiding Tool]] to place the building. Once you "commit" to the placement of the farmer's hut, the block will be placed and the farmer will be automatically assigned (or you can manually assign one with the best  "[[Workers Info #Traits| Traits]]" for farmer if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]].
 
 Best Traits are: Endurance and Charisma.
 
@@ -47,9 +47,9 @@ Hint: If you see the builder has not finished building/upgrading your farmer's h
 Now you can access the Farmer's Hut block (right click on it) and you will see a GUI with different options:
 
 <table width="1106" height="23">
-  <tr>
-    <td style="width: 480px;">
-      
+<tbody>
+<tr>
+<td style="width: 480px;">
 <p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp; The Worker assigned and his Skill Level. (he/she levels up by working, so assigning more farm plots to cultivate means more work, faster leveling up. The higher the level the faster and more efficient he/she will be). And the buttons: </span></p>
 <ul style="list-style-type: square;">
 <li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Fire/Hire Worker.</span>- If you think you have a better Citizen for the job with better skills or "Traits"</span></li>
@@ -66,18 +66,19 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
 <ul style="list-style-type: square;">
 <li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Inventory.-</span> This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).</span></li>
 </ul>
-    </td>
+</td>
 <td style="width: 20px;"></td>
 <td>{{/Workers/Farmer_Gui1.png|}}</td>
-  </tr>
+</tr>
+</tbody>
 </table>
 
-* * *
+---
 
 <table width="1000" height="23">
-  <tr>
-    <td style="width: 500px;">
-      
+<tbody>
+<tr>
+<td style="width: 500px;">
 <p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;<span style="font-family: times new roman,times; font-size: 16pt;">&nbsp; This the "page 2" of the GUI. It show the "Fields" that are avaialble (recognizable with a "Field" block placed and crop in his GUI) and and they can be assigned to this specific farmer</span></span></p>
 
 <p><span style="font-size: 16pt; font-family: times new roman,times;"><span style="font-family: times new roman,times; font-size: 16pt;"> And the button: </span></span></p>
@@ -86,9 +87,11 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
 <li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Automatic.</span>- By default. Here you can define if you want to "manually" assign the "Fields" to this farmer.<br /></span></li>
 </ul>
 
-Inventory.-</span> This is the most important button. Here you can access the buildings storage from where the &ldquo;worker&rdquo; takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</span></li> </ul>
-    </td>
+Inventory.-</span> This is the most important button. Here you can access the buildings storage from where the &ldquo;worker&rdquo; takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</span></li>
+</ul>
+</td>
 <td style="width: 20px;"></td>
 <td>{{/Workers/Farmer_Gui_2.png|}}</td>
-  </tr>
+</tr>
+</tbody>
 </table>

@@ -33,7 +33,6 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
     </ul>
   </div>
 </div>
-
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">

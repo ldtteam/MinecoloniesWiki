@@ -1,12 +1,17 @@
 The Miner is the strongest part of your Town. The Miner will dig and create mineshafts, collect; cobblestone, granite, diorite, andesite, dirt, sand, sandstone, etc. as well as all the ORES the miner comes across. Important for all the Towns' building needs and crafting tools and weapons for your workers. Any additional modded ore will also be picked up by the miner.
 
-To begin with you have to craft the "Miner's Hut" block in the crafting table and use your [https://www.youtube.com/watch?v=Hwpv_c6Pbvg Building Tool] to place the building. Once you "commit" to the placement of the Miner's hut, the block will be placed and the Miner will be automatically assigned (or you can manually assign one with the best "[[Workers| Traits]]" for Miner if you changed this in the setting tab in the [[Town Hall| Town Hall's GUI]].
+To begin with you have to craft the "Miner's Hut" block in the crafting table and use your [https://www.youtube.com/watch?v=Hwpv_c6Pbvg Building Tool] to place the building. Once you "commit" to the placement of the Miner's hut, the block will be placed and the Miner will be automatically assigned (or you can manually assign one with the best  "[[Workers| Traits]]" for Miner if you changed this in the setting tab in the [[Town Hall| Town Hall's GUI]].
 
 ''Best Traits are:'' Strength and Endurance.
 
-<gallery style="float:none;width:50%;margin:0 auto;"> File:Miner_New.png File:Miner_Block.png File:Miner.png </gallery>
+<gallery style="float:none;width:50%;margin:0 auto;">
+File:Miner_New.png
+File:Miner_Block.png
+File:Miner.png
+</gallery>
 
 You now officially have a "Miner!" ''CONGRATULATIONS!''
+
 
 Now you will have to issue the builder the "Build" assignment so he can build the "Miner's Hut". He will be asking for the materials he/she needs. Make sure to check the "chat" regularly to see what materials the builder is requesting for any build/upgrade.
 
@@ -20,10 +25,21 @@ Once the builder is done you will have to give the Miner a pickaxe, a shovel, la
 
 Now you can access the Miner's Hut block (right click on it) and you will see a GUI with different options:
 
-{| class="wikitable" |- |The Worker assigned and his Skill Level. (he/she levels up by working. The higher the level the faster and more efficient he/she will be). And the buttons: *''Fire/Hire Worker:'' If you think you have a better Citizen for the job with better skills or "Traits" *''Recall Worker:'' If the Miner gets stuck somewhere, or you just want to see what the Miner has or give the Miner something directly. *''Build/Upgrade Building:'' to create the build/upgrade work order for this building. *''Repair Building:'' So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building. *''Inventory:'' This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.). 
 
-| [[File:MinersGUI.png]]                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| This the "page 2" of the GUI. It show the "levels" that are avaialble (according to the level of the Miner's Hut, the more levels) and that can be assigned to this specific miner. |
+{| class="wikitable"
+|-
+|The Worker assigned and his Skill Level. (he/she levels up by working. The higher the level the faster and more efficient he/she will be). And the buttons:
+*''Fire/Hire Worker:'' If you think you have a better Citizen for the job with better skills or "Traits"
+*''Recall Worker:'' If the Miner gets stuck somewhere, or you just want to see what the Miner has or give the Miner something directly.
+*''Build/Upgrade Building:'' to create the build/upgrade work order for this building.
+*''Repair Building:'' So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.
+*''Inventory:'' This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).
+|[[File:MinersGUI.png]]
+|-
+|This the "page 2" of the GUI. It show the "levels" that are avaialble (according to the level of the Miner's Hut, the more levels) and that can be assigned to this specific miner.
 
-And the button: *''Mine Level:'' Here you can assign what "level" of the mine the miner should be working in, creating his mineshafts. *''Inventory::'' This is the most important button. Here you can access the buildings storage from where the "worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.). |[[File:MinersGUI2.png]] |}
+And the button:
+*''Mine Level:'' Here you can assign what "level" of the mine the miner should be working in, creating his mineshafts.
+*''Inventory::'' This is the most important button. Here you can access the buildings storage from where the "worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).
+|[[File:MinersGUI2.png]]
+|}

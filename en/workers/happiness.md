@@ -4,7 +4,8 @@ Welcome to the Saturation and Happiness Information Site.
 
 The Saturation and Happiness system for the Citizens are locked in one to the other. Which means that the Citizens require food (just like the player does) to be able to Work. The Citizens however will NOT die if their saturation goes down to 0, they will simply stop leveling anymore and will also request food in chat regularly as well as have slowness slowness effect. The Workers will stop working. This will also affect the overall happiness of each Citizen a well as the entire Town.
 
-There is an overall colony happiness + individual worker happiness: Overall colony happiness is between 1-10 (initially set to 5)
+There is an overall colony happiness + individual worker happiness:
+Overall colony happiness is  between 1-10 (initially set to 5)
 
 Happiness depends on several factors; security, housing and saturation.
 
@@ -20,9 +21,11 @@ If 1 guard level exists for each worker level (worker level 5 needs guard level 
 
 Each time a citizen is killed by a player it will decerease by -9 (Reset to lowest level = 1)
 
-Each natural death of a citizen it will decrease by -1. Currently, their skills have NO level cap at all.
+Each natural death of a citizen it will decrease by -1.
+Currently, their skills have NO level cap at all.
 
-The Citizen Hunger System: The Citizen hunger system is between 0-10.
+The Citizen Hunger System:
+The Citizen hunger system is between 0-10.
 
 On 0 = no leveling anymore + he requests food in chat regularly + slowness effect. Workere stops working.
 

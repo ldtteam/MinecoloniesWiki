@@ -1,8 +1,7 @@
 # Guard
+<hr>
 
-<hr />
-
-The Guard is the protector of your Town. As long as you provide the Guard with a bow and/or a sword (depending on what the Guard asked for), the Guard will patrol your Town day and night. Your Guard will also take and use any armour you place in the Tower's chest or in the Guards own inventory.
+The Guard is the protector of your Town. As long as you provide the Guard with a bow and/or a sword (depending on what the Guard asked for), the Guard will patrol your Town day and night. Your Guard will also take and use any armour you place in the Tower&#39;s chest or in the Guards own inventory.
 
 Before you choose a place to build his Tower, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc.
 
@@ -18,13 +17,13 @@ File:Guard.png
 
 You now officially have a Guard, CONGRATULATIONS!
 
-Now you will have to issue the builder the "Build" assignment so he can build the "Guard's Hut". He will be asking for the materials he/she needs. Make sure to check the "chat" regularly to see what materials the builder is requesting for any build/upgrade.
+Now you will have to issue the builder the &quot;Build&quot; assignment so he can build the &quot;Guard&#39;s Hut&quot;. He will be asking for the materials he/she needs. Make sure to check the &quot;chat&quot; regularly to see what materials the builder is requesting for any build/upgrade.
 
-**Hint:** If you see the builder has not finished building/upgrading your farmer's hut and you don't see the builder asking for any materials, go to the builder's hut and "recall" the builder and wait a bit to see what the builder needs. Watch the Minecraft "chat" section. Also you can go to page 2 of the builder's hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+**Hint:** If you see the builder has not finished building/upgrading your farmer&#39;s hut and you don&#39;t see the builder asking for any materials, go to the builder&#39;s hut and &quot;recall&quot; the builder and wait a bit to see what the builder needs. Watch the Minecraft &quot;chat&quot; section. Also you can go to page 2 of the builder&#39;s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
-Once the builder is done you can now give the Guard a bow and a sword (depending on what he/she asks for) and the Guard will start to patrol your Town, visiting all your nearby worker huts. The level of the Guard's Tower will dictate how far he/she will patrol, so if you want a longer range, be sure to upgrade the Guard's Tower.
+Once the builder is done you can now give the Guard a bow and a sword (depending on what he/she asks for) and the Guard will start to patrol your Town, visiting all your nearby worker huts. The level of the Guard&#39;s Tower will dictate how far he/she will patrol, so if you want a longer range, be sure to upgrade the Guard&#39;s Tower.
 
-Now you can access the Guard's Hut block (right click on it) and you will see a GUI with different options:
+Now you can access the Guard&#39;s Hut block (right click on it) and you will see a GUI with different options:
 
 <table style="width: 100%;">
   <tbody>
@@ -77,4 +76,4 @@ Now you can access the Guard's Hut block (right click on it) and you will see a 
   </tbody>
 </table>
 
-**Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor as well and reap the benefits of the protection he/she'll be able to provide and the drops the Guard will be picking up along the way.
+**Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor as well and reap the benefits of the protection he/she&#39;ll be able to provide and the drops the Guard will be picking up along the way.

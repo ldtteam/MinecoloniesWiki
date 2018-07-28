@@ -10,7 +10,7 @@ When you are done installing this, congratulations! You have successfully instal
 
 But one of the first questions you should ask yourself is: "*Where should I put my town?*". When starting a new world, just play Minecraft how you normally would. Find a nice area where you could start your wonderful new town and start collecting some wood and stone.
 
-To start your colony you need to craft either a [[Supply Ship]] or a [[Supply Camp]] first. By default, only a single colony can be started per player per world. Note that creating an additional [[Supply Ship]] or [[Supply Camp]] will not allow you to create another colony. Place this item by right clicking the ground and a chest will spawn exactly where you clicked on the ground. Within this chest will be a Town Hall block and a Building Tool. This is the only way to obtain the Town Hall, it can't be crafted.
+To start your colony you need to craft either a [[Supply Ship]] or a [[Supply Camp]] first.  By default, only a single colony can be started per player per world.  Note that creating an additional [[Supply Ship]] or [[Supply Camp]] will not allow you to create another colony.  Place this item by right clicking the ground and a chest will spawn exactly where you clicked on the ground. Within this chest will be a Town Hall block and a Building Tool. This is the only way to obtain the Town Hall, it can't be crafted.
 
 - **Tip**: [[Supply Camps]] need an area of 16 x 12 x 17 to place down.
 - **Tip**: [[Supply Ships]] must be placed in a large pool of water, otherwise it will not be built. This also can not be a river because it is too small; an area of 17 x 30 x 32 is required to place it.
@@ -33,17 +33,18 @@ If you're here, **CONGRATULATIONS!** You have already [[installed]] Minecolonies
 
 So, the first thing you want to do is find the perfect spot to settle down. But, before you do that, there are two things you have to consider. The following comments are the most important you should read and consider to ensure a successful Town and avoid frustration. Please read all considerations first, before placing your [[Supply Ship]], [[Supply Camp]], or even starting to play:
 
-### Placement of the [[Supply Ship]] or [[Supply Camp]]
+### Placement of the [[Supply Ship]] or [[Supply Camp]] 
 
-When you place the [[Supply Ship]] it will spawn a chest that will contain the Town Hall block and the Building Tool. To place the Supply Ship, you need to have a large enough body of water. The Supply Ship is 32 x 11 blocks in length and width. So the recommended body of water must be at least (32 x 20). When you place the Supply Chest a chest will appear on the exact block you right clicked. The Chest will be directly in front of the ladder to board the supply ship (8 blocks from the boarding ladder) and the ladder is not in the middle of the Supply Ship. But please take into account the Town Hall placement as well before you place your Supply Ship. '''Once the Supply Ship is placed, you can't place another Ship or Camp in this World anymore.''' (Hint: if you're not able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block).
+ When you place the [[Supply Ship]] it will spawn a chest that will contain the Town Hall block and the Building Tool. To place the Supply Ship, you need to have a large enough body of water. The Supply Ship is 32 x 11 blocks in length and width. So the recommended body of water must be at least (32 x 20). When you place the Supply Chest a chest will appear on the exact block you right clicked. The Chest will be directly in front of the ladder to board the supply ship (8 blocks from the boarding ladder) and the ladder is not in the middle of the Supply Ship. But please take into account the Town Hall placement as well before you place your Supply Ship. '''Once the Supply Ship is placed, you can't place another Ship or Camp in this World anymore.'''
+(Hint: if you're not able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block).
 
-When you placed the [[Supply Camp]] it will spawn a chest that will contain the Town Hall block and the [https://www.youtube.com/watch?v=Hwpv_c6Pbvg Buiding Tool]. To place the Supply Camp, you need to have a large enough flat, clear piece of land. The recommended flat piece of land must be at least 16 x 17 blocks in size. When you place the Supply Camp a chest will appear on the exact block you right clicked. But please take into account the Town Hall placement as well before you place your Supply Camp. '''Once the Supply camp is placed, you can't place another Camp or Ship in this World anymore.'''
+ When you placed the [[Supply Camp]] it will spawn a chest that will contain the Town Hall block and the [https://www.youtube.com/watch?v=Hwpv_c6Pbvg Buiding Tool]. To place the Supply Camp, you need to have a large enough flat, clear piece of land. The recommended flat piece of land must be at least 16 x 17 blocks in size. When you place the Supply Camp a chest will appear on the exact block you right clicked. But please take into account the Town Hall placement as well before you place your Supply Camp. '''Once the Supply camp is placed, you can't place another Camp or Ship in this World anymore.'''
 
 (Hint: if you're not able to place the Supply Camp, try it block by block: one to the right, left, closer or further from the area you cleared. It can not contain any holes or have any flowers, grass, fens, etc. It must be completely flat and clear.
 
 ### Town Hall
 
-The protected area of your Colony (once the Town Hall has been placed) will be a 180 block radius, measured from where you placed your Town Hall block the first time (on the official Minecolonies Server). Therefore, plan carefully where you want to place your Town Hall. 180 blocks in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
+ The protected area of your Colony (once the Town Hall has been placed) will be a 180 block radius, measured from where you placed your Town Hall block the first time (on the official Minecolonies Server). Therefore, plan carefully where you want to place your Town Hall. 180 blocks in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
 - **Note**: You can configure your own Town area radius in the minecolonies.cfg file inside the "../minecraft/config/" folder of your own world. (see minecolonies.cfg file section for details)
 
@@ -82,7 +83,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 You may use the tabs on the left side to switch between different categories:
 
 - '''Information.-'''This will give you some statistics about your citizens and workers.
-
+  
 [[File:TH_InformationGUI.png]]
 
 - '''Actions.-'''This is the most important tab. You are able to see your Towns name and various Buttons here:
@@ -112,15 +113,22 @@ You may use the tabs on the left side to switch between different categories:
 
 ### Step 3
 
-Before any building can be built, you have to craft the &ldquo;builder&rsquo;s hut&rdquo; block in the crafting table and use your Building Tool to place his building. Once you &ldquo;commit&rdquo; to the placement of the builder's hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "traits" for builder if you changed this in the setting tab in the Town Hall's GUI). You now officially have a [[Builder]]! CONGRATULATIONS! Now you can access the Builder&rsquo;s block (right click on it) and you will see a similar GUI with different options:
+Before any building can be built, you have to craft the &ldquo;builder&rsquo;s hut&rdquo; block in the crafting table and use your Building Tool to place his building. Once you &ldquo;commit&rdquo; to the placement of the builder's hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "traits" for builder if you changed this in the setting tab in the Town Hall's GUI).
+You now officially have a [[Builder]]! CONGRATULATIONS!
+Now you can access the Builder&rsquo;s block (right click on it) and you will see a similar GUI with different options:
 
 - The Worker assigned and his Skill Level. (you level him up by assigning more build/upgrade/repair tasks. The higher the level the faster and more efficient he/she will be). And the buttons:
 
-** Fire Worker.- If you think you know a better Citizen for the job. ** Recall Worker.- If the builder gets stuck somewhere, or you just want to see what the builder has or give the builder something directly. ** Build/Upgrade Building.- to create the build/upgrade work order for this building. ** Repair Building.- So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building. ** Inventory.- This is the most important button. Here you can access the buildings storage from where the &ldquo;worker&rdquo; takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a &ldquo;drop&rdquo;; saplings, seeds, rotten flesh, bones, arrows, etc.).
+** Fire Worker.- If you think you know a better Citizen for the job.
+** Recall Worker.- If the builder gets stuck somewhere, or you just want to see what the builder has or give the builder something directly.
+** Build/Upgrade Building.- to create the build/upgrade work order for this building.
+** Repair Building.- So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.
+** Inventory.- This is the most important button. Here you can access the buildings storage from where the &ldquo;worker&rdquo; takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a &ldquo;drop&rdquo;; saplings, seeds, rotten flesh, bones, arrows, etc.).
 
 [[File:Builder_Gui.png]]
 
-You will have to issue the builder the &ldquo;Build&rdquo; assignment so he can build his own Hut first. Without the builder&rsquo;s hut being built, the builder cannot build any other buildings. He will be asking for the materials he/she needs. Make sure to check the &ldquo;chat&rdquo; regularly to see what materials the builder is requesting for any build/upgrade. Hint: If you see he/she has not finished a work order and you don&rsquo;t see the builder asking for any materials, go to the builder&rsquo;s hut and &ldquo;recall&rdquo; the builder and wait a bit to see what he/she needs.
+You will have to issue the builder the &ldquo;Build&rdquo; assignment so he can build his own Hut first. Without the builder&rsquo;s hut being built, the builder cannot build any other buildings. He will be asking for the materials he/she needs. Make sure to check the &ldquo;chat&rdquo; regularly to see what materials the builder is requesting for any build/upgrade.
+Hint: If you see he/she has not finished a work order and you don&rsquo;t see the builder asking for any materials, go to the builder&rsquo;s hut and &ldquo;recall&rdquo; the builder and wait a bit to see what he/she needs.
 
 ### Step 4
 

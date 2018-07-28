@@ -29,9 +29,9 @@ Once the builder is done, you can think about upgrading the Fisherman's hut to e
 Now you can access the Fisherman's Hut block (right click on it) and you will see a GUI with different options:
 
 <table width="1106" height="23">
-  <tr>
-    <td style="width: 500px;">
-      
+<tbody>
+<tr>
+<td style="width: 500px;">
 <p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp; The Worker assigned and his/her Level. (the Worker levels up in time by doing his/her work. The higher the level the faster and more efficient he/she will be). And the buttons: <br /></span></p>
 <ul style="list-style-type: square;">
 <li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Fire/Hire Worker.</span>- If you think you have a better Citizen for the job with better skills or "Traits"</span></li>
@@ -48,10 +48,11 @@ Now you can access the Fisherman's Hut block (right click on it) and you will se
 <ul style="list-style-type: square;">
 <li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Inventory.-</span> This is the most important button. Here you can access the buildings storage from where the "Worker" takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).</span></li>
 </ul>
-    </td>
+</td>
 <td style="width: 20px;"></td>
 <td>{{/Workers/Fisherman/GUI.png|}}</td>
-  </tr>
+</tr>
+</tbody>
 </table>
 
 Hint: You can give the Fisherman an enchanted fishing rod an reap the benefits of the treasures he/she will be catching for you. Also, the higher the level of the "Fisherman's Hut" is, the higher the level of "loot" he will be fishing out.
