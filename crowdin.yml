@@ -1,3 +1,3 @@
 files:
-  - source: en/*.md
+  - source: en/*/*.md
     translation: '%original_path%/%original_file_name%'
