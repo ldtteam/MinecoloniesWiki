@@ -22,7 +22,7 @@ _We cannot offer support on the installation of Minecraft Forge. This guide is m
 
 * Run the downloaded recommended version and make sure it's on "Install Client". Installation path is preset according to Minecraft's standard installation path. If you have it installed in a different directory change the installation directory. When it's done you will see a "Complete" message.
 
-| [[File:Forge.png]] | [[File:Forge_1.png]] | 
+| [[File:forge_1.png]] | [[File:forge_2.png]] | 
 |---|---|
 
 ### Step 3
@@ -45,6 +45,6 @@ _We cannot offer support on the installation of Minecraft Forge. This guide is m
 
 * Run your Original Minecraft launcher and make sure you have the **forge** profile loaded and hit Play
 
-[[File:launcher.png]]
+[[File:forge_3.png]]
 
 That's it. If you followed these steps you are ready to play MineColonies!
