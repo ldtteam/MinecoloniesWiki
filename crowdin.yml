@@ -6,3 +6,7 @@ files:
     languages_mapping:
       two_letters_code:
         pt-BR: pt-br
+        es-ES: es-es
+        zh-CN: zh-cn
+        zh-TW: zh-tw
+        sv-SE: sv-se
