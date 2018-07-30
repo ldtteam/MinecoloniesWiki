@@ -4,9 +4,6 @@ template: recipetemplate.html
 ---
 # Recipes
 
-<<<<<<< Updated upstream:tutorials/recipes.md
-> supplyship
-=======
 Listed in this page are the current crafting recipes available in this mod. This will be updated as any craftable blocks are added and made public in the mod.
 
 **Notes**  
@@ -43,11 +40,10 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 
 ## Decorative Blocks
 
-| Name           | Recipe  | Name         | Recipe |
-|----------------|---------|--------------|--------|
-| [Racks](temp)  | `racks` |              |        |
-| **Shingles**   |         |              |        |
-| [Normal](temp) |         | [Slab](temp) |        |
+| Name           | Recipe          | Name                | Recipe        |
+|----------------|-----------------|---------------------|---------------|
+| [Racks](temp)  | `racks`         | [Paper Walls](temp) | `paperwall`   |
+| **Shingles**   |                 |                     |               |
+| [Normal](temp) | `normalshingle` | [Slab](temp)        | `slabshingle` |
 
 `framesconvert`
->>>>>>> Stashed changes:en/tutorials/recipes.md
