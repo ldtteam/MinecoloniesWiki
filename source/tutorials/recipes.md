@@ -1,6 +1,5 @@
 ---
 layout: recipes
-template: recipetemplate.html
 ---
 # Recipes
 
@@ -12,7 +11,7 @@ The building tool used in any of these recipes will not be consumed in the recip
 ## Tools/Utilities
 
 | Name                             | Recipe          | Name                       | Recipe     |
-|----------------------------------|-----------------|----------------------------|------------|
+| -------------------------------- | --------------- | -------------------------- | ---------- |
 | [Building Tool](temp)            | `buildingtool`  | [Scan Tool](temp)          | `scantool` |
 | [Clipboard](Temp)                | `clipboard`     | [Field](temp)              | `field`    |
 | [Solid Substitution Block](temp) | `solidsubblock` | [Substitution Block](temp) | `subblock` |
@@ -24,7 +23,7 @@ The building tool used in any of these recipes will not be consumed in the recip
 The town hall is not listed here as it does not have a crafting recipe, this is intentional as it is given in a chest that spawns with the Supply Ship/Camp.
 
 | Name                                      | Recipe          | Name                                     | Recipe        |
-|-------------------------------------------|-----------------|------------------------------------------|---------------|
+| ----------------------------------------- | --------------- | ---------------------------------------- | ------------- |
 | [Baker's Hut](/workers/baker)             | `baker`         | [Barracks](temp)                         | `barracks`    |
 | [Builder's Hut](/workers/builder)         | `builder`       | [Citizen's Hut](temp)                    | `citizen`     |
 | [Deliveryman's Hut](/workers/deliveryman) | `deliveryman`   | [Cook's Hut (Restaurant)](/workers/cook) | `cook`        |
@@ -40,9 +39,12 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 
 ## Decorative Blocks
 
-| Name                         | Recipe          | Name                               | Recipe          |
-|------------------------------|-----------------|------------------------------------|-----------------|
-| [Racks](temp)                | `racks`         | [Paper Walls](temp)                | `paperwall`     |
-| **Shingles**                 |                 |                                    |                 |
-| [Normal](temp)               | `normalshingle` | [Slab](temp)                       | `slabshingle`   |
-| [Timber Framed Blocks](temp) | `temp`          | [Other Timber Framed Blocks](temp) | `framesconvert` |
+| Name                         | Recipe             | Name                               | Recipe          |
+| ---------------------------- | ------------------ | ---------------------------------- | --------------- |
+| [Racks](temp)                | `racks`            | [Paper Walls](temp)                | `paperwall`     |
+| **Shingles**                 |                    |                                    |                 |
+| [Normal](temp)               | `normalshingle`    | [Slab](temp)                       | `slabshingle`   |
+|                              |                    |                                    |                 |
+| [Timber Framed Blocks](temp) | `temp`             | [Other Timber Framed Blocks](temp) | `framesconvert` |
+| [Construction Tape](temp)    | `constructiontape` |                                    |                 |
+
