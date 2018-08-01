@@ -40,10 +40,9 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 
 ## Decorative Blocks
 
-| Name           | Recipe          | Name                | Recipe        |
-|----------------|-----------------|---------------------|---------------|
-| [Racks](temp)  | `racks`         | [Paper Walls](temp) | `paperwall`   |
-| **Shingles**   |                 |                     |               |
-| [Normal](temp) | `normalshingle` | [Slab](temp)        | `slabshingle` |
-
-`framesconvert`
+| Name                         | Recipe          | Name                               | Recipe          |
+|------------------------------|-----------------|------------------------------------|-----------------|
+| [Racks](temp)                | `racks`         | [Paper Walls](temp)                | `paperwall`     |
+| **Shingles**                 |                 |                                    |                 |
+| [Normal](temp)               | `normalshingle` | [Slab](temp)                       | `slabshingle`   |
+| [Timber Framed Blocks](temp) | `temp`          | [Other Timber Framed Blocks](temp) | `framesconvert` |
