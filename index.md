@@ -3,11 +3,11 @@ Welcome to the Minecolonies Wiki!
 
 ### About our Mod
 
-Minecolonies is an interactive Town building mod that allows you to create your own thriving Town within Minecraft. It lets you use your imagination and skills by providing you with many options to build your own Town and enhance your gaming experience. Featuring NPC workers such as: Builder, Farmer, Fisherman, LumberJack, Guards, Barracks, Miner, Smeltery, Baker, Cook/Restuarant, Deliveryman, four types of Animal Herders, Composter and many more are being developed and added as the mod grows. As well as specialized buildings such as: Warehouse, Citizen Huts, Townhall and a Library. Minecolonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different Colony every time, adapt it to any biome and terrain, build inside a bountain, on top of it, under the ocean in the Sky the limit is your imagination!
+Minecolonies is an interactive Town building mod that allows you to create your own thriving Town within Minecraft. It lets you use your imagination and skills by providing you with many options to build your own Town and enhance your gaming experience. Featuring NPC workers such as: Builder, Farmer, Fisherman, LumberJack, Guard, Miner, Smeltery, Baker, Cook/Restuarant, Deliveryman, four types of Animal Herders, Composter and many more are being developed and added as the mod grows. Also specialized buildings such as: Warehouse, Citizen Huts, Townhall, Barrack and a Library. Minecolonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different Colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the Sky. The limit is your imagination!
 
 ### It's Your Way Always
 
-You have full control of how you build your Town. You determine waht type of workers you want or need, how many, where they will live, and hire or fire them as you see fit. Create a Town at your own pace. You design the Town and develop it how ever you like. You are the architect, the administrator, the boss the ruler of your Town!
+You have full control of how you build your Town. You determine what type of workers you want or need, how many, where they will live, and hire or fire them as you see fit. Create a Town at your own pace. You design the Town and develop it how ever you like. You are the architect, the administrator, the boss... the ruler of your Town!
 
 ### Security and Food Chain
 
