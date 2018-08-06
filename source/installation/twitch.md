@@ -15,8 +15,6 @@ _Sign up to Twitch if you haven't yet, or convert your old Curse account to a Tw
 
 ![Twitch Login](../../assets/images/installation/twitch_0.png)
 
----
-
 ## Installation of the Modpack through the Twitch Client
 
 ### Step 1
@@ -92,8 +90,6 @@ Finally click on Minecolonies Official 1.12.2! The server info will be pre set u
 ![Join the Official Server](../../assets/images/installation/twitch_10.png)
 
 THAT'S ALL !!! Simple... Good Luck, Have Fun. See you in game.
-
----
 
 ## Feedback
 
