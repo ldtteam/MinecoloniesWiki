@@ -24,20 +24,6 @@ body {
 	margin: 0;
 	font-family: 'Times New Roman', Roboto, sans-serif;
 }
-/* SIDEBAR */
-.sidenav-title {
-	margin: 20px 0 0;
-	font-family: "Colonial Dame", Roboto, sans-serif;
-	color: #000;
-}
-
-.navbar-side {
-	hr::after {
-		color: #000;
-		font-family: 'Times New Roman', Times, serif;
-		background: #FDF6E5;
-	}
-}
 
 .content {
 	padding-top: 10px;
@@ -86,7 +72,7 @@ table td, table th {
     font-size:16px;
     line-height:1;
     text-align:left;
-    vertical-align:bottom
+    vertical-align:bottom;
 }
 
 .invslot::before,.invslot::after {
@@ -99,23 +85,23 @@ table td, table th {
 
 .invslot::before {
     bottom:-2px;
-    left:-2px
+    left:-2px;
 }
 
 .invslot::after {
     top:-2px;
-    right:-2px
+    right:-2px;
 }
 
 .invslot-large {
-    padding:8px
+    padding:8px;
 }
 
 .invslot-item,.invslot-item > a:first-child {
     position:relative;
     display:block;
     margin:-2px;
-    padding:2px
+    padding:2px;
 }
 
 .crafting-table {
@@ -139,24 +125,24 @@ table td, table th {
 }
 
 .crafting-table .ct-row {
-    display:block
+    display:block;
 }
 
 .crafting-table > .ct-arrow {
     background:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png) no-repeat;
     width:32px;
     height:26px;
-    margin:40px 4px 0
+    margin:40px 4px 0;
 }
 
 .crafting-table > .ct-output {
-    margin-top:28px
+    margin-top:28px;
 }
 
 .crafting-table > .ct-icons {
     position:absolute;
-    top:6px;
-    right:6px
+    top:37px;
+    right:82px;
 }
 
 .crafting-table .ct-shapeless,.crafting-table .ct-fixed {
@@ -164,15 +150,15 @@ table td, table th {
     background-repeat:no-repeat;
     width:19px;
     height:15px;
-    cursor:help
+    cursor:help;
 }
 
 .crafting-table .ct-shapeless {
-    background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/a/a9/Grid_layout_Shapeless.png)
+    background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/a/a9/Grid_layout_Shapeless.png);
 }
 
 .crafting-table .ct-fixed {
-    background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/b/b8/Grid_layout_Fixed.png)
+    background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/b/b8/Grid_layout_Fixed.png);
 }
 
 .sprite {
