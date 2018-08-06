@@ -8,7 +8,7 @@
 * For connecting to the Official Server, install the Twitch Client or visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods used on Server. If all these additional mods are downloaded and installed as well, you will be able to connect to the official Server. 
 
 ### The Official Minecolonies Server Address is:
-![alt text](../../assets/images/installation/Server.png)
+![Server address](../../assets/images/installation/Server.png)
 
 * Installation of the MineColonies mod is very simple. It does require Minecraft Forge to be able to integrate mods into the Minecraft game.
 
@@ -24,7 +24,7 @@ _We cannot offer support on the installation of Minecraft Forge. This guide is m
 
 * Run the downloaded recommended version and make sure it's on "Install Client". Installation path is preset according to Minecraft's standard installation path. If you have it installed in a different directory change the installation directory. When it's done you will see a "Complete" message.
 
-| ![alt text](../../assets/images/installation/forge_1.png) | ![alt text](../../assets/images/installation/forge_2.png) | 
+| ![Forge installer](../../assets/images/installation/forge_1.png) | ![Forge installed](../../assets/images/installation/forge_2.png) | 
 |---|---|
 
 ### Step 3
@@ -47,6 +47,6 @@ _We cannot offer support on the installation of Minecraft Forge. This guide is m
 
 * Run your Original Minecraft launcher and make sure you have the **forge** profile loaded and hit Play
 
-![alt text](../../assets/images/installation/forge_3.png)
+![Minecraft Launcher](../../assets/images/installation/forge_3.png)
 
 That's it. If you followed these steps you are ready to play MineColonies!
