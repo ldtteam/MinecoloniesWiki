@@ -3,17 +3,17 @@
 * If you want to play on the **Minecolonies Official 1.12.2** Server we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.
 
 
-* Click on the Twitch Download button to download the Twitch Client. On this page, select download for PC or MAC and begin your download.
+* Click on the text below Twitch Logo to download the Twitch Client. On that page, select download for PC or MAC and begin your download.
 
+![alt text](../../assets/images/installation/twitch_logo.png "Click the link below!")
 
-[![Download the Twitch Client here!]([[File:twitch_logo.png]])](https://app.twitch.tv/)
-
+[Download the Twitch client here!](https://app.twitch.tv/ "Twitch App")
 
 * Once you have downloaded the Twitch Client, run the Installation and Login to the Twitch Client.
 
 _Sign up to Twitch if you haven't yet, or convert your old Curse account to a Twitch account._
 
-[[File:twitch_0.png]]
+![alt text](../../assets/images/installation/twitch_0.png)
 
 ---
 
@@ -23,73 +23,73 @@ _Sign up to Twitch if you haven't yet, or convert your old Curse account to a Tw
 
 On the top bar of the Launcher look for the tab called Mods, Click on it and then select Minecraft
 
-[[File:twitch_1.png]]
+![alt text](../../assets/images/installation/twitch_1.png)
 
 ### Step 2
 
 The Twitch client will prompt you to "Enable Minecraft", which will restart the launcher.
 
-[[File:twitch_2.png]]
+![alt text](../../assets/images/installation/twitch_2.png)
 
 ### Step 3
 
 click on the Install Button ( Use the "advanced" option if you want to select another location for the installation folder. Default Folder is: C:/Users/(your user)/Documents/Curse/Minecraft )
 
-[[File:twitch_3.png]]
+![alt text](../../assets/images/installation/twitch_3.png)
 
 ### Step 4
 
 After the "Install" is done select "Browse all ModPacks".
 
-[[File:twitch_4.png]]
+![alt text](../../assets/images/installation/twitch_4.png)
 
 ### Step 5
 
 Type in the search bar: Minecolonies and once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
 
-[[File:twitch_5.png]]
+![alt text](../../assets/images/installation/twitch_5.png)
 
 ### Step 6
 
 Once the install is finished downloading all the mods, it will now say: "PLAY" click on it.
 
-[[File:twitch_6.png]]
+![alt text](../../assets/images/installation/twitch_6.png)
 
 ### Step 7
 
 Login to your Minecraft account.
 
-[[File:twitch_7.png]]
+![alt text](../../assets/images/installation/twitch_7.png)
 
 ### Step 8
 
 Click the green play button if it's already set to "MineColonies Official". If not, then a couple substeps are needed.
 
-[[File:twitch_8.png]]
+![alt text](../../assets/images/installation/twitch_8.png)
 
 #### Step 8A
 
 Click the green arrow pointing up for profile selection
 
-[[File:twitch_8a.png]]
+![alt text](../../assets/images/installation/twitch_8a.png)
 
 #### Step 8B
 
 Click the "MineColonies Official" profile. Then you are good to go to Step 8 again!
 
-[[File:twitch_8b.png]]
+![alt text](../../assets/images/installation/twitch_8b.png)
 
 ### Step 9
 
 When Minecraft have loaded up, Click on the Multiplayer button.
 
-[[File:twitch_9.png]]
+![alt text](../../assets/images/installation/twitch_9.png)
 
 ### Step 10
 
 Finally click on Minecolonies Official 1.12.2! The server info will be pre set up there already for you.
 
-[[File:twitch_10.png]]
+![alt text](../../assets/images/installation/twitch_10.png)
 
 THAT'S ALL !!! Simple... Good Luck, Have Fun. See you in game.
 
