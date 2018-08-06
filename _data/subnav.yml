@@ -1,36 +1,40 @@
 subnav:
   - title : Installation
     subitems:
-      - page: Name
-        url: /url
+      - page: Twitch
+        url: source/installation/twitch
+      - page: Manual
+        url: source/installation/java
+      - page: MultiMC
+        url: source/installation/multimc
   - title: Tutorials
     subitems:
       - page: Tutorial
-        url: tutorials/tutorial
+        url: source/tutorials/tutorial
       - page: Commands
-        url: tutorials/commands
+        url: source/tutorials/commands
       - page: Recipes
-        url: tutorials/recipes
+        url: source/tutorials/recipes
   - title: Workers
     subitems:
       - page: Baker
-        url: workers/baker
+        url: source/workers/baker
       - page: Builder
-        url: workers/builder
+        url: source/workers/builder
       - page: Deliveryman
-        url: workers/deliveryman
+        url: source/workers/deliveryman
       - page: Farmer
-        url: workers/farmer
+        url: source/workers/farmer
       - page: Fisherman
-        url: workers/fisherman
+        url: source/workers/fisherman
       - page: Guard
-        url: workers/guard
+        url: source/workers/guard
       - page: Lumberjack
-        url: workers/lumberjack
+        url: source/workers/lumberjack
       - page: Miner
-        url: workers/miner
+        url: source/workers/miner
       - page: Smelter
-        url: workers/smelter 
+        url: source/ workers/smelter 
   - title: Buildings
     subitems:
       - page: Buildings
