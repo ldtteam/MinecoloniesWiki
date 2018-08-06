@@ -22,7 +22,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
+    <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
@@ -35,7 +35,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 </div>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
+    <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
