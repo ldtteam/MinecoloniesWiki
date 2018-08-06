@@ -97,27 +97,28 @@
         </ul>
         <div class="overlay"></div>
         </nav>
+        <!-- /NAVBAR PRIMARY -->
 
         <!-- NAVBAR SECONDARY -->
         <nav class="navbar navbar-expand-lg navbar-default secondary">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarsec">
-            <ul class="navbar-nav mr-auto">
-              {% for item in site.data.subnav.subnav %}
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
-                  <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
-                    {% for entry in item.subitems %}
-                      <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-                    {% endfor %}
-                  </div>
-                </li>
-              {% endfor %}
-            </ul>
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarsec">
+              <ul class="navbar-nav mr-auto">
+                {% for item in site.data.subnav.subnav %}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+                    <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
+                      {% for entry in item.subitems %}
+                        <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                      {% endfor %}
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <!-- /NAVBAR SECONDARY -->
+        </nav>
+        <!-- /NAVBAR SECONDARY -->
 
         <!-- MAIN CONTENT -->
         <div class="container content">
@@ -127,6 +128,8 @@
               <p>If changes are needed, or you feel there is content missing, please feel free to edit this page, or submit an issue for us to make any edits. - Minecolonies Wiki Team</p>
             </div>
         </div>
+        <!-- /MAIN CONTENT -->
+
         <!-- FOOTER  -->
         <div class="footer">
           <footer class="ribbon">
@@ -135,6 +138,7 @@
             </div>
           </footer>
         </div>
+        <!-- /FOOTER -->
       </div>
     </div>
 
@@ -147,29 +151,41 @@
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-    <script src="../assets/js/recipe.js"></script>
+    <script src="../../assets/js/recipe.js"></script>
 
     <script>
-      $( document ).ready(function() {
+      $( document ).ready(function() 
+      {
         // Open navbarSide when button is clicked
-        $("#navbarSideButton").on("click", function() {
+        $("#navbarSideButton").on("click", function() 
+        {
           $("#navbarSide").addClass("reveal");
           $(".overlay").show();
         });
 
         // Close navbarSide when the outside of menu is clicked
-        $(".overlay").on("click", function(){
+        $(".overlay").on("click", function()
+        {
           $("#navbarSide").removeClass("reveal");
           $(".overlay").hide();
         });
 
-        $("div.slides").each(function()
-        {
-          var slideshow = $(this);
-          var selectedImage = 0;
-          var maxSelectedImage = slideshow.find("img").length - 1;
+        reader.findRecipes();
 
         setTimeout(reader.convertToSlideshow, 2000);
+        
+        //   var url = document.URL;
+        //   var arr = url.split("/")
+        //   console.log(arr);
+
+        //   var client = new XMLHttpRequest();
+        //   client.open("HEAD", "../../../tutorials/recipes.md", true);
+        //   client.onreadystatechange = function() {
+        //     if(this.readyState == 2) {
+        //       console.log(client.getResponseHeader("Last-Modified"));
+        //     }
+        //   }
+        //   client.send();
       });
     </script>
 
