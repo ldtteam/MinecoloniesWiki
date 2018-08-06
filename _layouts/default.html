@@ -92,7 +92,7 @@ title: Minecolonies Wiki
                 <a class="side-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
                 <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
                   {% for entry in item.subitems %}
-                    <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                    <a class="dropdown-item" href="/source{{ entry.url | relative_url }}">{{ entry.page }}</a>
                   {% endfor %}
                 </div>
               </li>
@@ -111,7 +111,7 @@ title: Minecolonies Wiki
                   <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
                   <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
                     {% for entry in item.subitems %}
-                      <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                      <a class="dropdown-item" href="/source{{ entry.url | relative_url }}">{{ entry.page }}</a>
                     {% endfor %}
                   </div>
                 </li>
