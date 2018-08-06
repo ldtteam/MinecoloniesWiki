@@ -8,7 +8,7 @@
 * For connecting to the Official Server, install the Twitch Client or visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods used on Server. If all these additional mods are downloaded and installed as well, you will be able to connect to the official Server. 
 
 ### The Official Minecolonies Server Address is:
-![alt text](../../assets/images/installation/server.png)
+![alt text](../../assets/images/installation/Server.png)
 
 * Installation of the MineColonies mod is very simple. It does require Minecraft Forge to be able to integrate mods into the Minecraft game.
 
