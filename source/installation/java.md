@@ -14,6 +14,8 @@
 
 _We cannot offer support on the installation of Minecraft Forge. This guide is meant as a general guide for the original Minecraft launcher only for current version 1.12.2 (as of the writing of this post)._
 
+---
+
 ### Step 1
 
 * Go to the [Minecraft Forge Download page](http://files.minecraftforge.net/?forums) and Download the "Recommended" Version.
