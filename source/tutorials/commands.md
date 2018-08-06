@@ -1,236 +1,88 @@
-<table>
-  <tr>
-    <th>Command</th>
-    <th>Command Description</th>
-    <th>Permission Node (Servers)</th>
-    <th>Default Permission Level</th>
-  </tr>
-  <tr>
-    <td>/minecolonies &lt;colonies | kill | colony | citizens | rs | rtp | backup | home | raid-tonight | raid-now | check | whoami | whereami | scan&gt; (/mc)</td>
-    <td colspan="3">Base command for all other Minecolonies commands</td>
-  </tr>
-  <tr>
-    <td>rtp</td>
-    <td>Allows random teleporting around the world</td>
-    <td>com.minecolonies.coremod.RandomTeleport</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>backup</td>
-    <td>Makes a backup of your colony data</td>
-    <td>com.minecolonies.coremod.Backup</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>home</td>
-    <td>Teleports you back to the Town Hall in your colony</td>
-    <td>com.minecolonies.coremod.HomeTeleport</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>raid-tonight</td>
-    <td>Schedule a barbarian raid for every colony, to start the coming night</td>
-    <td>com.minecolonies.coremod.RaidAllTonight</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>raid-now</td>
-    <td>Schedule a barbarian raid for every colony to start right now</td>
-    <td>com.minecolonies.coremod.RaidAllNow</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>check</td>
-    <td>Checks all colonies for ones where the owner hasn't played in a set amount of time, giving the option to delete them</td>
-    <td>com.minecolonies.coremod.CheckForAutoDeletes</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>whoami</td>
-    <td>Outputs your name, the name of your colony and the coordinates for the center</td>
-    <td>com.minecolonies.coremod.WhoAmI</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>whereami</td>
-    <td>Outputs how far you are from a colony, if you are near one, or that there is none nearby</td>
-    <td>com.minecolonies.coremod.WhereAmI</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>scan [player: online player] &lt;x1: x coord&gt; &lt;y1: y coord&gt; &lt;z1: z coord&gt; &lt;x2: x coord&gt; &lt;y2: y coord&gt; &lt;z2: z coord&gt; [name: name]</td>
-    <td>Scans an area and saves it as a schematic</td>
-    <td>com.minecolonies.coremod.Scan</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>/minecolonies colonies &lt;list|rsResetAll&gt;</td>
-    <td colspan="3">Base command for all colonies commands</td>
-  </tr>
-  <tr>
-    <td>list [page: page number]</td>
-    <td>Lists all colonies</td>
-    <td>com.minecolonies.coremod.ListColonies</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>rsresetall</td>
-    <td>Resets the request system for all colonies</td>
-    <td>com.minecolonies.coremod.RequestSystemResetAll</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>/minecolonies kill &lt;barbarians | animals | mob | chicken | cow | pig | sheep</td>
-    <td colspan="3">Base command for all kill commands</td>
-  </tr>
-  <tr>
-    <td>barbarians</td>
-    <td>Kills all barbarians inside all colonies</td>
-    <td>com.minecolonies.coremod.BarbarianKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>animals</td>
-    <td>Kills all animals inside all colonies</td>
-    <td>com.minecolonies.coremod.AnimalKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>mob</td>
-    <td>Kills all mobs inside all colonies</td>
-    <td>com.minecolonies.coremod.MobKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>chicken</td>
-    <td>Kills all chickens inside all colonies</td>
-    <td>com.minecolonies.coremod.ChickenKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>cow</td>
-    <td>Kills all cows inside all colonies</td>
-    <td>com.minecolonies.coremod.CowKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>pig</td>
-    <td>Kills all pig inside all colonies</td>
-    <td>com.minecolonies.coremod.PigKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>sheep</td>
-    <td>Kills all sheep inside all colonies</td>
-    <td>com.minecolonies.coremod.SheepKill</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>/minecolonies colony &lt;info | delete | barbarians | addOfficer | refresh | ownerchange | teleport | deletable | raid | raid-tonight | claim&gt;</td>
-    <td colspan="3">Base command for all colony commands</td>
-  </tr>
-  <tr>
-    <td>info [player: online player] [colony: colony id]</td>
-    <td>Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted or not)</td>
-    <td>com.minecolonies.coremod.ShowColonyInfo</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>delete &lt;colony: colony id&gt; [canDestroy: true/false] [confirmDelete: true/false]</td>
-    <td>Deletes a colony and all Minecolonies buildings (as long as the hut is still placed)</td>
-    <td>com.minecolonies.coremod.DeleteColony</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>barbarians &lt;colony: colony id&gt; &lt;disableSpawns: true/false&gt;</td>
-    <td>Disables or Enables spawning of barbarians in a colony</td>
-    <td>com.minecolonies.coremod.DisableBarbarianSpawns</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>addOfficer &lt;colony: colony id&gt; &lt;player: online player&gt;</td>
-    <td>Adds an officer to a colony</td>
-    <td>com.minecolonies.coremod.AddOfficer</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>refresh [player: online player] [colony: colony id]</td>
-    <td>Refreshes a colony</td>
-    <td>com.minecolonies.coremod.RefreshColony</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>ownerchange &lt;colony: colony id&gt; &lt;player: online-player&gt;</td>
-    <td>Changes the owner of a colony</td>
-    <td>com.minecolonies.coremod.ChangeColonyOwner</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>teleport &lt;colony: colony id&gt;</td>
-    <td>Teleports you to the specified colony</td>
-    <td>com.minecolonies.coremod.ColonyTeleport</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>deletable &lt;colony: colony id&gt; &lt;canBeDeleted: true/false&gt;</td>
-    <td>Sets whether a colony can be marked for auto-deletion or not</td>
-    <td>com.minecolonies.coremod.MakeNotAutoDeletable</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>raid &lt;colony: colony id&gt;</td>
-    <td>Schedules a barbarian raid for the specified colony to start right now</td>
-    <td>com.minecolonies.coremod.DoRaidNow</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>raid-tonight &lt;colony: colony id&gt;</td>
-    <td>Schedules a barbarian raid for the specified colony to start the coming night</td>
-    <td>com.minecolonies.coremod.DoRaidTonight</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>claim [colony: colony id] [range: number in chunks] [add: true/false]</td>
-    <td>Claims chunks a specified number of chunks from your location</td>
-    <td>com.minecolonies.coremod.Claim</td>
-    <td>OP</td>
-  </tr>
-  <tr>
-    <td>/minecolonies citizens &lt;list | kill | respawn | info&gt;</td>
-    <td colspan="3">Base command for all citizens commands</td>
-  </tr>
-  <tr>
-    <td>list &lt;colony: colony id&gt; [page: page number]</td>
-    <td>Lists all citizens in a colony</td>
-    <td>com.minecolonies.coremod.ListCitizens</td>
-    <td>ALL</td>
-  </tr>
-  <tr>
-    <td>kill &lt;colony: colony id&gt; &lt;citizen: citizen id/full name&gt;</td>
-    <td>Kills a specified citizen in a colony</td>
-    <td>com.minecolonies.coremod.KillCitizen</td>
-    <td>ALL</td>
-  </tr>
-  <tr>
-    <td>respawn &lt;colony: colony id&gt; &lt;citizen: citizen id/full name&gt;</td>
-    <td>Respawns the specified citizen in a colony</td>
-    <td>com.minecolonies.coremod.RespawnCitizen</td>
-    <td>ALL</td>
-  </tr>
-  <tr>
-    <td>info &lt;colony: colony id&gt; &lt;citizen: citizen id/full name&gt;</td>
-    <td>Gives basic information about a specified citizen in a colony</td>
-    <td>com.minecolonies.coremod.CitizenInfo</td>
-    <td>ALL</td>
-  </tr>
-  <tr>
-    <td>/minecolonies rs &lt;reset&gt;</td>
-    <td colspan="3">Base command for all request system commands</td>
-  </tr>
-  <tr>
-    <td>reset &lt;colony: colony id&gt;</td>
-    <td>Resets the request system for a colony</td>
-    <td>com.minecolonies.coremod.RSReset</td>
-    <td>OP</td>
-  </tr>
-</table>
+# Commands
+
+These are the in game commands currently available, most require that a user have operator privileges to work, or require that a single player world has cheats enabled. If you would like to make use of Permission nodes you require a server API such as SpongeForge along with a permissions system such as LuckPerms
+
+**Command Syntax**
+
+| If you see this...     | Then                              |
+| :------------------:   | :-------------------------------: |
+| plaintext              | Enter this exactly as shown       |
+| `<angle brackets>`     | This is a **required** argument   |
+| [square brackets]      | This is an **optional** argument  |
+| `x | y | z`            | Pick one of these options         |
+
+## Base Command
+
+/minecolonies `<colonies | kill | colony | citizens | rs | rtp | backup | home | raid-tonight | raid-now | check | whoami | whereami | scan>` (/mc)
+
+| Command | Command Description | Permission Node (Servers) | Default Permission Level |
+|---------|---------------------|---------------------------|--------------------------|
+| rtp     | Allows random teleporting around the world | com.minecolonies.coremod.RandomTeleport | OP |
+| backup  | Makes a backup of your colony data | com.minecolonies.coremod.Backup | OP |
+| home    | Teleports you back to the Town Hall in your colony | com.minecolonies.coremod.HomeTeleport | OP |
+| raid-tonight | Schedule a barbarian raid for every colony, to start the coming night | com.minecolonies.coremod.RaidAllTonight | OP |
+| raid-now | Schedule a barbarian raid for every colony to start right now | com.minecolonies.coremod.RaidAllNow | OP |
+| check | Checks all colonies for ones where the owner hasn't played in a set amount of time, giving the option to delete them | com.minecolonies.coremod.CheckForAutoDeletes | OP |
+| whoami | Outputs your name, the name of your colony and the coordinates for the center | com.minecolonies.coremod.WhoAmI | OP |
+| whereami | Outputs how far you are from a colony, if you are near one, or that there is none nearby | com.minecolonies.coremod.WhereAmI | OP |
+| scan [player: online player] <x1: x coord> <y1: y coord> <z1: z coord> <x2: x coord> <y2: y coord> <z2: z coord> [name: name] | Scans an area and saves it as a schematic | com.minecolonies.coremod.Scan | OP |
+
+## Colonies Commands
+
+/minecolonies colonies `<list | rsResetAll>`
+
+| Command                  | Command Description                        | Permission Node (Servers)                      | Default Permission Level |
+| ------------------------ | ------------------------------------------ | ---------------------------------------------- | ------------------------ |
+| list [page: page number] | Lists all colonies                         | com.minecolonies.coremod.ListColonies          | OP                       |
+| rsresetall               | Resets the request system for all colonies | com.minecolonies.coremod.RequestSystemResetAll | OP                       |
+
+## Kill Commands
+
+/minecolonies kill `<barbarians | animals | mob | chicken | cow | pig | sheep>`
+
+| Command | Command Description | Permission Node (Servers) | Default Permission Level |
+|---------|---------------------|---------------------------|--------------------------|
+| barbarians | Kills all barbarians inside all colonies | com.minecolonies.coremod.BarbarianKill | OP |
+| animals | Kills all animals inside all colonies | com.minecolonies.coremod.AnimalKill | OP |
+| mob | Kills all mobs inside all colonies | com.minecolonies.coremod.MobKill | OP |
+| chicken | Kills all chickens inside all colonies | com.minecolonies.coremod.ChickenKill | OP |
+| cow | Kills all cows inside all colonies | com.minecolonies.coremod.CowKill | OP |
+| pig | Kills all pig inside all colonies | com.minecolonies.coremod.PigKill | OP |
+| sheep | Kills all sheep inside all colonies | com.minecolonies.coremod.SheepKill | OP |
+
+## Colony Commands
+
+/minecolonies colony `<info | delete | barbarians | addOfficer | refresh | ownerchange | teleport | deletable | raid | raid-tonight | claim>`
+
+| Command | Command Description | Permission Node (Servers) | Default Permission Level |
+|---------|---------------------|---------------------------|--------------------------|
+| info [player: online player] [colony: colony id] | Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted   or not) | com.minecolonies.coremod.ShowColonyInfo | OP |
+| delete <colony: colony id> [canDestroy: true/false] [confirmDelete: true/false] | Deletes a colony and all Minecolonies buildings (as long as the hut is still placed) | com.minecolonies.coremod.DeleteColony | OP |
+| barbarians <colony: colony id> <disableSpawns: true/false> | Disables or Enables spawning of barbarians in a colony | com.minecolonies.coremod.DisableBarbarianSpawns | OP |
+| addOfficer <colony: colony id> <player: online player> | Adds an officer to a colony | com.minecolonies.coremod.AddOfficer | OP |
+| refresh [player: online player] [colony: colony id] | Refreshes a colony | com.minecolonies.coremod.RefreshColony | OP |
+| ownerchange <colony: colony id> <player: online-player> | Changes the owner of a colony | com.minecolonies.coremod.ChangeColonyOwner | OP |
+| teleport <colony: colony id> | Teleports you to the specified colony | com.minecolonies.coremod.ColonyTeleport | OP |
+| deletable <colony: colony id> <canBeDeleted: true/false> | Sets whether a colony can be marked for auto-deletion or not | com.minecolonies.coremod.MakeNotAutoDeletable | OP |
+| raid <colony: colony id> | Schedules a barbarian raid for the specified colony to start right now | com.minecolonies.coremod.DoRaidNow | OP |
+| raid-tonight <colony: colony id> | Schedules a barbarian raid for the specified colony to start the coming night | com.minecolonies.coremod.DoRaidTonight | OP |
+| claim [colony: colony id] [range: number in chunks] [add: true/false] | Claims chunks a specified number of chunks from your location | com.minecolonies.coremod.Claim | OP |
+
+## Citizens Commands
+
+/minecolonies citizens `<list | kill | respawn | info>`
+
+| Command                                                     | Command Description                                           | Permission Node (Servers)               | Default Permission Level |
+| ----------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------- | ------------------------ |
+| list <colony: colony id> [page: page number]                | Lists all citizens in a colony                                | com.minecolonies.coremod.ListCitizens   | ALL                      |
+| kill <colony: colony id> <citizen: citizen id/full name>    | Kills a specified citizen in a colony                         | com.minecolonies.coremod.KillCitizen    | ALL                      |
+| respawn <colony: colony id> <citizen: citizen id/full name> | Respawns the specified citizen in a colony                    | com.minecolonies.coremod.RespawnCitizen | ALL                      |
+| info <colony: colony id> <citizen: citizen id/full name>    | Gives basic information about a specified citizen in a colony | com.minecolonies.coremod.CitizenInfo    | ALL                      |
+
+## RS Commands
+
+/minecolonies rs `<reset>`
+
+| Command                   | Command Description                    | Permission Node (Servers)        | Default Permission Level |
+| ------------------------- | -------------------------------------- | -------------------------------- | ------------------------ |
+| reset <colony: colony id> | Resets the request system for a colony | com.minecolonies.coremod.RSReset | OP                       |
