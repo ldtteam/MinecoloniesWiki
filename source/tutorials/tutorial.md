@@ -12,16 +12,16 @@ But one of the first questions you should ask yourself is: "*Where should I put 
 
 **Hint:** The most important tool you will need for the entire mod is the Build Tool. Craft the Build Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot. 
 
-### [Build Tool Video.]
+<p style="text-align:center; font-size:20pt;"><b>Build Tool Video.</b></p>
 
-<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/DVGGDUXbTOY" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
+<a name="build_tool"><p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/DVGGDUXbTOY" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p></a>
 
 To start your colony you need to craft either a [Supply Ship] or a [Supply Camp] first (only one of these can be placed per player per world).  By default, only one colony can be started per player per world. Place the Supply Ship/Camp block using hte build tool for the best placement or by right clicking the ground and a chest will spawn exactly where you clicked on the ground. Within this chest will be a Town Hall block and a Building Tool. **This is the only way to obtain the Town Hall block, it can't be crafted.**
 
 - **Tip**: [Supply Camp] needs an area of 16 x 12 x 17 to place down.
 - **Tip**: [Supply Ship] must be placed in a large pool of water, otherwise it will not be built. This also can not be a river because it is too small; an area of 17 x 30 x 32 is required to place it.
 
-Your first step to start your town is placing the [Town Hall] Chest. While it can be placed manually, it is far better to place the Town Hall using the [Building Tool](build-tool-video.) you obtained from your supply chest. The Buiding Tool will help you place your buildings, and using it will show you a 3D ghost outline of what the building will look like.
+Your first step to start your town is placing the [Town Hall] Chest. While it can be placed manually, it is far better to place the Town Hall using the <a href="build_tool">Building Tool</a> you obtained from your supply chest. The Buiding Tool will help you place your buildings, and using it will show you a 3D ghost outline of what the building will look like.
 
 The next thing you should do is craft a "[Builders Hut](http://)". Once again, use the [Building Tool](https://www.youtube.com/watch?v=DVGGDUXbTOY) to place the hut so you can position the hut exactly how you want it. The builders hut will let you hire a builder and, as you may guess, the builder will build and upgrade buildings. Once built, upgrading the builder hut will enable your builder to upgrade the other buildings. In the configuration options of the mod or in the config folder of your Minecraft game you can toggle if your builder builds for free (infinite resources) or whether you have to deliver him the resources.
 
