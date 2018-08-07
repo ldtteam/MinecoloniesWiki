@@ -24,7 +24,7 @@ Setting up MultiMC is pretty quick, depending on your download speed. You ***do 
 
 ### Account
 
-<p style="text-align:center;"><img src="../assets/images/installation/MultiMc-Account.png" alt="MultiMc Account"></p>
+<p style="text-align:center;"><img src="../../assets/images/installation/MultiMc-Account.png" alt="MultiMc Account"></p>
 
 Click the highlighted button, select "Manage Accounts", and on the window the appears, fill in your Mojang account details.
 
