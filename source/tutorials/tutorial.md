@@ -122,7 +122,7 @@ You may use the tabs on the left side to switch between different categories:
 ### Step 3
 
 Before any building can be built, you have to craft the "Builder's hut" block in the crafting table and use your Building Tool to place his building. Once you "commit" to the placement of the builder's hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "traits" for builder if you changed this in the setting tab in the Town Hall's GUI).
-You now officially have a [Builder]! CONGRATULATIONS!
+You now officially have a [Builder](/workers/builder)! CONGRATULATIONS!
 Now you can access the Builder's block (right click on it) and you will see a similar GUI with different options:
 
 - The Worker assigned and his Skill Level. (you level him up by assigning more build/upgrade/repair tasks. The higher the level the faster and more efficient he/she will be). And the buttons:
