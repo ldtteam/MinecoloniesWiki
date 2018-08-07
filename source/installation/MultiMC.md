@@ -8,7 +8,7 @@ Below lists the steps you will need to take in to install the Minecolonies Offic
 
 ## Getting MultiMC
 
-MultiMC can be downloaded here: [MultiMC.org](https://multimc.org/#Download MultiMC.org). Simply choose the version for your operating system and install.
+MultiMC can be downloaded here: [MultiMC.org](https://multimc.org/#Download). Simply choose the version for your operating system and install.
 
 This guide assumes that you have the latest version of MultiMC (v. 0.6.0), and will probably not work for older versions. If you already have an older version installed, please update it!
 
@@ -16,7 +16,7 @@ It will also assume that you're using Minecraft 1.12.2, but will work for any ve
 
 <p style="text-align:center;"><img src="../../assets/images/installation/MultiMc-Download.png alt="MultiMc Download"></p>
 
-- **Important Note:** Please ***do not*** download and install a copy of MultiMC from any other source other than MultiMC.org because the [Official MultiMC](https://github.com/MultiMC/MultiMC5/ GitHub) is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
+- **Important Note:** Please ***do not*** download and install a copy of MultiMC from any other source other than MultiMC.org because the [Official MultiMC](https://github.com/MultiMC/MultiMC5) is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
 
 ## Setting Up MultiMC
 
@@ -24,7 +24,7 @@ Setting up MultiMC is pretty quick, depending on your download speed. You ***do 
 
 ### Account
 
-<p style="text-align:center;"><img src="../../assets/images/installation/MultiMc-Account.png alt="MultiMc Account"></p>
+<p style="text-align:center;"><img src="../assets/images/installation/MultiMc-Account.png alt="MultiMc Account"></p>
 
 Click the highlighted button, select "Manage Accounts", and on the window the appears, fill in your Mojang account details.
 
