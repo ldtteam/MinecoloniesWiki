@@ -12,7 +12,7 @@ But one of the first questions you should ask yourself is: "*Where should I put 
 
 **Hint:** The most important tool you will need for the entire mod is the Build Tool. Craft the Build Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot. Check out our Build tool video.
 
-<p style="text-align:center;"><a href="http://www.youtube.com/watch?feature=player_embedded&v=DVGGDUXbTOY" target="_blank"><img src="http://img.youtube.com/vi/DVGGDUXbTOY/0.jpg" alt="Minecolonies Build Tool GUI" width="480" height="360" border="10"  /></a></p>
+<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/DVGGDUXbTOY" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
 
 To start your colony you need to craft either a [Supply Ship] or a [Supply Camp] first (only one of these can be placed per player per world).  By default, only one colony can be started per player per world. Place the Supply Ship/Camp block using hte build tool for the best placement or by right clicking the ground and a chest will spawn exactly where you clicked on the ground. Within this chest will be a Town Hall block and a Building Tool. **This is the only way to obtain the Town Hall block, it can't be crafted.**
 
@@ -37,7 +37,7 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
 **Hint:** The most important tool you will need for the entire mod is the Build Tool. Craft the Build Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot. Check out our Build tool video:
 
-<p style="text-align:center;"><a href="http://www.youtube.com/watch?feature=player_embedded&v=DVGGDUXbTOY" target="_blank"><img src="http://img.youtube.com/vi/DVGGDUXbTOY/0.jpg" alt="Minecolonies Build Tool GUI" width="480" height="360" border="10"  /></a></p>
+<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/DVGGDUXbTOY" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
 
 ### Placement of the [Supply Ship] or [Supply Camp] 
 
