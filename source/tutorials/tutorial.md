@@ -61,11 +61,11 @@ If there is another Colony too close to your current position you won't be able 
 
 If you want to know whether there is a colony too close to your current position we included some information in the debug screen (Displayed when you press the F3 button) which contains a real time tracker showing you the distance to the next colony, the colony you're currently in, or if there is no colony close at all plus - if there is a colony close to your current position - the required distance to place your Town Hall.
 
-![alt text](../../assets/images/tutorial/Next_Colony_1.png)
+![Next Colony](../../assets/images/tutorial/next_colony.png)
 
-![alt text](../../assets/images/tutorial/Players_Colony_1.png)
+![Player's Colony](../../assets/images/tutorial/players_colony.png)
 
-![alt text](../../assets/images/tutorial/No_Colony_1.png)
+![No Colony](../../assets/images/tutorial/no_colony.png)
 
 For example, in the official Minecolonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where TownHall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a Colony)."
 
