@@ -25,7 +25,7 @@ The next thing you should do is craft a "[Builders Hut](http://)". Once again, u
 
 Currently there are 10 more Worker Huts that can be placed and built. They are: Miners Hut, Lumberjack's Hut, Fisherman's Hut, Farmer's Hut, Baker's Hut, Cook/Restaurant Hut, Herder's Hut, Smelter's Hut, Composter's Hut and the Guard's Tower (or barracks). All of these huts lets the workers gather resources if you give them the proper tools. The Lumberjack requires an axe so he can start chopping down trees and getting logs. The miner will need the first level of his building built and he needs a shovel, pickaxe, cobblestone, torches, ladders, fences, planks and slabs (all oak wood type), the Fisherman will require his hut be built first and then a fishing rod, the farmer needs his hut be built as well as for you to create the plot and place the Field (Scarecrow block) and the Guards will need the Guard Tower built first then a bow and/or a sword. Depending on the type of tools given to the workers, they will collect what that tool will allow them. Even use enchanted tools!
 
-View all the recipes [here](.../source/tutorials/recipes).
+View all the recipes [here](source/tutorials/recipes).
 
 
 ## Detailed Walkthrough
