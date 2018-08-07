@@ -34,7 +34,7 @@ View all the recipes [here](recipes).
 
 If you're here, **CONGRATULATIONS!** You have already <a href="#install">installed</a> Minecolonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame Minecolonies Achievements).
 
-<p style="text-align:center;"><img src="../assets/images/tutorial/achievements.png" alt="Achievements"></p>
+<p style="text-align:center;"><img src="../../assets/images/tutorial/achievements.png" alt="Achievements"></p>
 
 So, the first thing you want to do is find the perfect spot to settle down. But, before you do that, there are two things you have to consider. The following comments are the most important you should read and consider to ensure a successful Town and avoid frustration. Please read all considerations first, before placing your [Supply Ship] or [Supply Camp]. Even before starting to play:
 
