@@ -2,7 +2,7 @@
 
 <p style="text-align:center; font-size:20pt;"><b>Hello and welcome all new and old players!</b></p>
 
-If you'd like instructions on how to install our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) we have two options; instructions for the Twitch Launcher click [here](../installation/twitch) (Previously Curse launcher) or for MultiMC click [here](../installation/multimc). If you just want to install our Mod in the original Minecraft Launcher click [here](../installation/java).
+If you'd like instructions on how to <a name="install">install</a> our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) we have two options; instructions for the Twitch Launcher click [here](../installation/twitch) (Previously Curse launcher) or for MultiMC click [here](../installation/multimc). If you just want to install our Mod in the original Minecraft Launcher click [here](../installation/java).
 
 ## Basic Walkthrough
 
@@ -32,13 +32,13 @@ View all the recipes [here](recipes).
 
 ## Detailed Walkthrough
 
-If you're here, **CONGRATULATIONS!** You have already [installed](http://) Minecolonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame Minecolonies Achievements).
+If you're here, **CONGRATULATIONS!** You have already <a href="#install">installed</a> Minecolonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame Minecolonies Achievements).
 
-[Achievements](http://Achievments.png)
+<p style="text-align:center;">![Achievements](../../assets/images/tutorial/achievements.png)</p>
 
 So, the first thing you want to do is find the perfect spot to settle down. But, before you do that, there are two things you have to consider. The following comments are the most important you should read and consider to ensure a successful Town and avoid frustration. Please read all considerations first, before placing your [Supply Ship] or [Supply Camp]. Even before starting to play:
 
-**Hint:** The most important tool you will need for the entire mod is the Build Tool. Craft the Build Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot.
+- **Hint:** The most important tool you will need for the entire mod is the Build Tool. Craft the Build Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot.
 
 <p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Build Tool Video.</a></b></p>
 
@@ -140,7 +140,8 @@ Now you can access the Builder's block (right click on it) and you will see a si
 [File:Builder_Gui.png]
 
 You will have to issue the builder the "Build" assignment so he can build his own Hut first. Without the builder's hut being built, the builder cannot build any other buildings. He will be asking for the materials he/she needs. Make sure to check the chat regularly to see what materials the builder is requesting for any build/upgrade.
-**Hint:** If you see he/she has not finished a work order and you don't see the builder asking for any materials, go to the builder's hut and recall the builder and wait a bit to see what he/she needs.
+
+- **Hint:** If you see he/she has not finished a work order and you don't see the builder asking for any materials, go to the builder's hut and recall the builder and wait a bit to see what he/she needs. Also check Pg. 2 of the Builder's Hut GUI and see what resources are in red color, those are missing resources.
 
 ### Step 4
 
@@ -148,7 +149,7 @@ Once the builder has finished his Hut, you're ready to start building ANY other 
 
 - **Hint:** Consider Upgrading the Builder's hut to level 2 as soon as you can so he may be able to upgrade any other building.
 
-## Final Notes
+### Final Notes
 
 You have now completed the most important steps completed to start and create your Colony.
 
