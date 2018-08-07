@@ -19,7 +19,7 @@ Your Town also deserves the best security you can imagine. Strategically add Gua
 Minecolonies has it's own complete multiplayer system. Our permission system sets every Town placed as prtoected from blasts and unwanted access from other players. It allows for collaborative team play in multiplayer where you can assign different roles in a Town such as; Officer, Friend, Neutral or even as Hostile! With individual permissions for each group that can be changed in the Townhall to better suit your needs. You can have individual competing colonies at the same time, all with a strong protection system for server management and Anti-Griefing!
     Or... go all out war against other Towns, pick a team color and declare war on other Towns, take your guards and PVP against other Towns. (configurable server side as well). Fun for all! 
 
-<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/EUfgNMKw-MU&t=1s" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
+<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/EUfgNMKw-MU" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
 
 ---
 
