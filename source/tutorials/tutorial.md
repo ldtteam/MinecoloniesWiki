@@ -1,6 +1,6 @@
 # Tutorial
 
-<p style="text-align:center;" "font-size: 260%;"><b>Hello and welcome all new and old players!</b></p>
+<p style="text-align:center; font-size:20pt;"><b>Hello and welcome all new and old players!</b></p>
 
 If you'd like instructions on how to install our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) we have two options; instructions for the Twitch Launcher click [here](../installation/twitch) (Previously Curse launcher) or for MultiMC click [here](../installation/multimc). If you just want to install our Mod in the original Minecraft Launcher click [here](../installation/java).
 
