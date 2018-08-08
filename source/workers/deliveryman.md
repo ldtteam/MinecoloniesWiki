@@ -20,44 +20,13 @@ Once the builder is done you can now hire the Deliveryman and the Deliveryman wi
 
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 
-<table>
-<tr>
-<td></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span style="text-decoration: underline;">Building Level</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span style="text-decoration: underline;">Max Stacks of Materials </span></strong></span></p></td>
-</tr>
-<tr>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span></strong></span><p></td>
-</tr>
-<tr>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</span></strong></span><p></td>
-</tr>
-<tr>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</span></strong></span><p></td>
-</tr>
-<tr>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</span></strong></span><p></td>
-</tr>
-<tr>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;</span></strong></span></p></td>
-<td><p><span style="font-family: times new roman,times; font-size: 16pt;"><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unlimited</span></strong></span><p></td>
-</tr>
-</table>
+| Building Level |   | Max Stacks of Materials |
+| :------------: |:-:| :----------------------:|
+| 1 |  | 1 |
+| 2 |  | 2 |
+| 3 |  | 4 |
+| 4 |  | 5 |
+| 5 |  | unlimited |
 
 
 ## Hut GUI
