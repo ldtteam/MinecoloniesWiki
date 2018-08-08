@@ -2,25 +2,21 @@
 
 Welcome to the Deliveryman's Information Site.
 
-The Deliveryman is the bloodline of your Town. He/she will be running (YES!!! Running) from worker's hut to [[Warehouse|Warehouse]] to worker's hut. Visiting all your workers and delivering the tools and materials they need as well as taking the spoils of their works from their chests to the Warehouse and keeps everything centralized. Just make sure to have the tools and materials the workers need inside the warehouse chests for the deliveryman to deliver.
+The Deliveryman is the bloodline of your Town. He/she will be running (YES!!! Running) from worker's hut to [Warehouse](../../) to worker's hut. Visiting all your workers and delivering the tools and materials they need as well as taking the spoils of their works from their chests to the Warehouse and keeps everything centralized. Just make sure to have the tools and materials the workers need inside the warehouse chests for the deliveryman to deliver.
 
-Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut you have to craft the Deliveryman's Hut block in the crafting table and use your [[https://www.youtube.com/watch?v=Hwpv_c6Pbvg| Buiding Tool]] to place the building. Once you "commit" to the placement of the Deliveryman's Hut, the block will be placed and the deliveryman will be automatically assigned (or you can manually assign one with the best "[[Workers Info #Traits| Traits]]" for deliveryman if you changed this in the setting tab in the [[Town Hall #THGUI| Town Hall's GUI]].
-\\
-Best Traits are: Intelligence and Endurance.
+Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Deliveryman's Hut block in the crafting table and use your [Building Tool](../../) to place the building. Once you "commit" to the placement of the Deliveryman's Hut, the block will be placed and the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../../)" for deliveryman if you changed this in the setting tab in the [Town Hall's GUI](../../).
 
-/Recipes/D-Man_New.png
+Best Traits are: **Intelligence** and **Endurance.**
 
-/Workers/Delivery man/D-Man_Chest.png
+<img src="../../assets/images/.../deliveryman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/.../deliveryman_chest.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/DeliveryMan.png" alt="Deliveryman">
 
-/Workers/Delivery man/D-Man1.png
-
-You now officially have a "Deliveryman!" CONGRATULATIONS!
+You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
 Now you will have to issue the builder the "Build" assignment so he can build the "Deliveryman's Hut". He will be asking for the materials he/she needs. Make sure to check the "chat" regularly to see what materials the builder is requesting for any build/upgrade.
 
 Hint: If you see the builder has not finished building/upgrading your Deliveryman's hut and you don't see the builder asking for any materials, go to the builder's hut and "recall" the builder and wait a bit to see what the builder needs. Watch the Minecraft "chat" section. Also you can go to page 2 of the builder's hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
-Once the builder is done you can now hire the Deliveryman and the Deliveryman will start to run back and forth from the Warehouse to all the workers huts in your Town. The level of the Deliveryman's Hut will dictate how much materials/tools he/she will will carry to/from Huts - Warehouse - Huts, so if you want him/her to carry more materials/tools, be sure to upgrade the Deliveryman's Hut.
+Once the builder is done you can now hire the Deliveryman and the Deliveryman will start to run back and forth from the Warehouse to all the workers huts in your Town. The level of the Deliveryman's Hut will dictate how much materials/tools it will carry to/from Huts - Warehouse - Huts, so if you want it to carry more materials/tools, be sure to upgrade the Deliveryman's Hut.
 
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 
@@ -65,35 +61,26 @@ Also, the higher the level of the hut, the Deliveryman will move faster and fast
 </table>
 
 ---
+## Hut GUI
 
 Now you can access the Deliveryman's Hut block (right click on it) and you will see a GUI with different options:
 
-<table width="1106" height="23">
-<tbody>
-<tr>
-<td style="width: 500px;">
-<p style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;">&nbsp;&nbsp;&nbsp;&nbsp; The Worker assigned and his/her Level. (the Worker levels up in time by doing his/her work. The higher the level the faster and more efficient he/she will be). And the buttons: <br /></span></p>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Fire/Hire Worker.</span>- If you think you have a better Citizen for the job with better skills or "Traits"</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Recall Worker.-</span> If the builder gets stuck somewhere, or you just want to see what the builder has or give the builder something directly.</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Build/Upgrade Building.-</span> to create the build/upgrade work order for this building.</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Repair Building.-</span> So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</span></li>
-</ul>
-<ul style="list-style-type: square;">
-<li style="text-align: justify;"><span style="font-size: 16pt; font-family: times new roman,times;"><span style="text-decoration: underline;">Inventory.-</span> Here you can access the buildings storage from where the "Worker" deposits anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; saplings, seeds, rotten flesh, bones, arrows, etc.).</span></li>
-</ul>
-</td>
-<td>{{/Workers/Delivery man/Deliveryman_Gui.png|}}</td>
-</tr>
-</tbody>
-</table>
 
----
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/bakergui.png" class="img-fluid mx-auto" alt="Baker GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <br>
+    <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
+    <ul>
+      {% for item in site.data.gui.global %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
-Hint: You MUST build the [[Warehouse|Warehouse]] to at least level 1 so the Deliveryman can do his work. Deliveryman will visit 1 worker's hut per trip then back to Warehouse. So, level up the Warehouse and build more Deliveryman huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
+
+Hint: You MUST build the [Warehouse](../../) to at least level 1 so the Deliveryman can do his work. Deliveryman will visit 1 worker's hut per trip then back to Warehouse. So, level up the Warehouse and build more Deliveryman huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
