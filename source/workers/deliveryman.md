@@ -20,7 +20,6 @@ Once the builder is done you can now hire the Deliveryman and the Deliveryman wi
 
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 
-<center>
 <table>
 <tr>
 <td></td>
@@ -60,7 +59,7 @@ Also, the higher the level of the hut, the Deliveryman will move faster and fast
 </tr>
 </table>
 
----
+
 ## Hut GUI
 
 Now you can access the Deliveryman's Hut block (right click on it) and you will see a GUI with different options:
