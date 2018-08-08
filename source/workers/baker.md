@@ -21,6 +21,8 @@ When accessing the Baker's Hut block (right clicking on it) you will see a GUI w
     <img src="../../assets/images/gui/bakergui.png" class="img-fluid mx-auto" alt="Baker GUI">
   </div>
   <div class="col-sm-12 col-md">
+    <br>
+    <br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
