@@ -1,37 +1,67 @@
 subnav:
   - title : Installation
     subitems:
-      - page: Name
-        url: /url
+      - page: Twitch
+        url: source/installation/twitch
+      - page: Manual
+        url: source/installation/java
+      - page: MultiMC
+        url: source/installation/multimc
   - title: Tutorials
     subitems:
       - page: Tutorial
-        url: tutorials/tutorial
+        url: source/tutorials/tutorial
       - page: Commands
-        url: tutorials/commands
+        url: source/tutorials/commands
       - page: Recipes
-        url: tutorials/recipes
+        url: source/tutorials/recipes
+      - page: Happiness System
+        url: source/tutorials/happiness
+      - page: Worker Info (Traits, Tool/Skill Level)
+        url: source/tutorials/worker_info
+      - page: Schematics
+        url: source/tutorials/schematics
+      - page: Scan Tool
+        url: source/tutorials/scan_tool
+      - page: Server Info
+        url: source/tutorials/server_info
   - title: Workers
     subitems:
       - page: Baker
-        url: workers/baker
+        url: source/workers/baker
       - page: Builder
-        url: workers/builder
+        url: source/workers/builder
+      - page: Composter
+        url: source/workers/composter
       - page: Deliveryman
-        url: workers/deliveryman
+        url: source/workers/deliveryman
       - page: Farmer
-        url: workers/farmer
+        url: source/workers/farmer
       - page: Fisherman
-        url: workers/fisherman
+        url: source/workers/fisherman
       - page: Guard
-        url: workers/guard
+        url: source/workers/guard
+      - page: Herder
+        url: source/workers/herder
       - page: Lumberjack
-        url: workers/lumberjack
+        url: source/workers/lumberjack
       - page: Miner
-        url: workers/miner
-      - page: Smelter
-        url: workers/smelter 
+        url: source/workers/miner
+      - page: Restaurant
+        url: source/workers/restaurant
+      - page: Smeltery
+        url: source/workers/smelter 
   - title: Buildings
     subitems:
       - page: Buildings
-        url: buildings/buildings
+        url: source/buildings/buildings
+      - page: Supply Ship
+        url: source/buildings/supply_ship
+      - page: Supply Camp
+        url: source/buildings/supply_camp
+      - page: Town Hall
+        url: source/buildings/townhall
+      - page: Citizen Hut
+        url: source/buildings/citizen_hut
+      - page: Warehouse
+        url: source/buildings/warehouse

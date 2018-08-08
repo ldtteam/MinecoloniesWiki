@@ -1,0 +1,23 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "minecraft/log_oak",
+      "secondItem": "minecraft/log_oak",
+      "thirdItem": "minecraft/log_oak"
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/log_oak",
+      "secondItem": "minecolonies/sceptergold",
+      "thirdItem": "minecraft/log_oak"
+    },
+    "thirdRow":
+    {
+      "firstItem": "minecraft/log_oak",
+      "secondItem": "minecraft/log_oak",
+      "thirdItem": "minecraft/log_oak"
+    },
+    "product": "minecolonies/blocksolidsubstitution"
+  }
+]}
