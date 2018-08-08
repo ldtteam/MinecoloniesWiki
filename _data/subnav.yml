@@ -54,14 +54,14 @@ subnav:
   - title: Buildings
     subitems:
       - page: Buildings
-        url: buildings/buildings
+        url: source/buildings/buildings
       - page: Supply Ship
-        url: buildings/supply_ship
+        url: source/buildings/supply_ship
       - page: Supply Camp
-        url: buildings/supply_camp
+        url: source/buildings/supply_camp
       - page: Town Hall
-        url: buildings/townhall
+        url: source/buildings/townhall
       - page: Citizen Hut
-        url: buildings/citizen_hut
+        url: source/buildings/citizen_hut
       - page: Warehouse
-        url: buildings/warehouse
+        url: source/buildings/warehouse
