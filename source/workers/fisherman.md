@@ -8,7 +8,7 @@ Before you choose a place to build his hut, take into account that he has to be 
 
 Best Traits are: **Intelligence** and **Dexterity**.
 
-<img src="../../assets/images/.../fisherman_recipe.png" alt="Fisherman Recipe"> <img src="../../assets/images/.../fisherman_chest.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman">
+<img src="../../assets/images/.../fisherman_recipe.png" alt="Fisherman Recipe"> <img src="../../assets/images/Workers/fisherman_block.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman">
 
 You now officially have a "Fisherman!" CONGRATULATIONS!
 
@@ -24,11 +24,14 @@ Once the builder is done, you can think about upgrading the Fisherman's hut to e
 
 Now you can access the Fisherman's Hut block (right click on it) and you will see a GUI with different options:
 
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/fishermangui.png" class="img-fluid mx-auto" alt="Fisherman GUI">
 </div>
   <div class="col-sm-12 col-md">
+    <br>
+    <br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The 
 higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
@@ -39,4 +42,5 @@ higher the level the faster and more efficient they will be). And the buttons:</
   </div>
 </div>
 
-Hint: You can give the Fisherman an enchanted fishing rod an reap the benefits of the treasures he/she will be catching for you. Also, the higher the level of the "Fisherman's Hut" is, the higher the level of "loot" he will be fishing out.
+
+**Hint**: You can give the Fisherman an enchanted fishing rod an reap the benefits of the treasures he/she will be catching for you. Also, the higher the level of the "Fisherman's Hut" is, the higher the level of "loot" he will be fishing out.
