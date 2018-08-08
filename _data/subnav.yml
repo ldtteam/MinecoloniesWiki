@@ -15,12 +15,24 @@ subnav:
         url: source/tutorials/commands
       - page: Recipes
         url: source/tutorials/recipes
+      - page: Happiness System
+        url: source/tutorials/happiness
+      - page: Worker Info (Traits, Tool/Skill Level)
+        url: source/tutorials/worker_info
+      - page: Schematics
+        url: source/tutorials/schematics
+      - page: Scan Tool
+        url: source/tutorials/scan_tool
+      - page: Server Info
+        url: source/tutorials/server_info
   - title: Workers
     subitems:
       - page: Baker
         url: source/workers/baker
       - page: Builder
         url: source/workers/builder
+      - page: Composter
+        url: source/workers/composter
       - page: Deliveryman
         url: source/workers/deliveryman
       - page: Farmer
@@ -29,13 +41,27 @@ subnav:
         url: source/workers/fisherman
       - page: Guard
         url: source/workers/guard
+      - page: Herder
+        url: source/workers/herder
       - page: Lumberjack
         url: source/workers/lumberjack
       - page: Miner
         url: source/workers/miner
-      - page: Smelter
-        url: source/ workers/smelter 
+      - page: Restaurant
+        url: source/workers/restaurant
+      - page: Smeltery
+        url: source/workers/smelter 
   - title: Buildings
     subitems:
       - page: Buildings
         url: buildings/buildings
+      - page: Supply Ship
+        url: buildings/supply_ship
+      - page: Supply Camp
+        url: buildings/supply_camp
+      - page: Town Hall
+        url: buildings/townhall
+      - page: Citizen Hut
+        url: buildings/citizen_hut
+      - page: Warehouse
+        url: buildings/warehouse
