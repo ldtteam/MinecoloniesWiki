@@ -12,10 +12,10 @@ When you place the Supply Camp it will spawn a chest that will contain the [Town
 
 - **Hint:** if you’re not able to place the Supply Camp, try it block by block: one to the right, left, closer of further from the area you cleared. It can not contain any holes or have any flowers, grass, ferns, etc. It must be completely flat and clear. If it's not dirt, then either dig a 17 x 17 x 1 hole so it can be placed at ground level or place it 1 block above ground.
 
-<p><img src="../../assets/images/Buildings/Camp2.png" alt="Supply Camp Area">     <img src="../../assets/images/Buildings/Camp1.png" alt="Supply Camp Top"></p>
+<p style="text-align:center;"><img src="../../assets/images/Buildings/Camp2.png" alt="Supply Camp Area">       <img src="../../assets/images/Buildings/Camp1.png" alt="Supply Camp Top"></p>
 
 **Here are some screenshots for your viewing pleasure:**
 
-<p><img src="../../assets/images/Buildings/Camp4.png" alt="Supply Camp"><br><br>
+<p style="text-align:center;"><img src="../../assets/images/Buildings/Camp4.png" alt="Supply Camp"><br><br>
 <img src="../../assets/images/Buildings/Camp5.png" alt="Supply Camp"><br><br>
 <img src="../../assets/images/Buildings/Camp6.png" alt="Supply Camp"></p>
