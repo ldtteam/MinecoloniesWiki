@@ -2,7 +2,7 @@
 
 The Supply Camp is one of the two options to to start playing Minecolonies. The first step is to craft the Supply Camp block. 
 
-<img src="../../assets/images/Buildings/camp_recipe.png" alt="Supply Camp Recipe">
+<p style="text-align:center;"><img src="../../assets/images/Buildings/camp_recipe.png" alt="Supply Camp Recipe"></p>
 
 The Suppy Camp is one of the *ONLY* two ways to obtain the Town Hall block. It is a great Supply of materials for you to start as well as a very illuminated place to live while you get your Town started. You have many chests, bed, bookshelves, torches, wool, etc etc. What else could the Camp contain... hhmmmm maybe some treasure as well? 
 
