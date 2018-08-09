@@ -1,6 +1,8 @@
 # Schematics
 
-**Welcome to the schematics information page**
+<p style="text-align:center; font-size:20pt;"><b>Scan Tool Video</b></p>
+
+<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/mFIC3752o1c" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
 
 ## Getting Started
 
@@ -14,27 +16,40 @@ The first step is to make a Scan Tool like so:
 
 ### Step Two
 
-Then, all you have to do is right click the lower front corner (left or right makes no difference) at ground level of the structure.
+Then, all you have to do is left click the lower front corner (left or right makes no difference) at ground level of the structure.
 
 <img src="../../assets/images/tutorial/point1.png" alt="Point 1">
 
 ### Step Three
 
-Click on the top opposite corner of the structure. Leaving the entire structure inside this imaginary square. You will get a message to right click again to "save the schematic".
+Right click on the top opposite corner of the structure. Leaving the entire structure inside this imaginary square. 
 
 <img src="../../assets/images/tutorial/point2.png" alt="Point 2">
 
 ### Step Four
 
-Once you right click again you will get a confirmation message: "Scan successfully saved as...". That's it! Simple, fast.
+At this point you will have two options: 
+1. you can shift + right click to directly "save the schematic".
+
+<img src="../../assets/images/tutorial/shift_click.png" alt="Shift + Right Click">
+
+2. or you can right click in the air again to get the scan tool GUI.
+
+<img src="../../assets/images/tutorial/scan_tool_gui.png" alt="Scan Tool GUI">
+
+<p>Here you will be able to see the coords for the scan you just did.<br>
+Also you will be able to give your scan a "name".<br>
+Green arrow is if you are ready to save it or Red X to cancel the GUI and rescan again.<br>
+You can click on the "Show Resources" Button to see all the blocks that are in the scan you just did.<br>
+Finally you can scroll through all the blocks that are in the scan and you even have two options there:</p>
+
+* Remove.  To remove any of the blocks you se in your scan that you don't want in there. Some blocks can only be removed.
+* Replace. To replace that block with any other block or type you prefer for that scan. AWESOME! Right?
 
 
-<img src="../../assets/images/tutorial/point3.png" alt="Point 3">
+### Finishing Up - Placing a Schematic.
 
-### Finishing Up
-
-Once you have scanned a structure, you can use the build tool to have your builder "build it" for you. Once you right click with the Build Tool you will have to select "My Schematics" (in the left drop down menu) and on the right side drop down menu you will see the scans that you have made.There is also a "Rename" button where you can change the name that was originally assigned to the scan (for example: SCAN_1494289342924-) to whatever you like.You can also "delete" any of your saved scans.
-
+Once you have scanned a structure, you can use the build tool to have your builder "build it" for you. Once you right click with the Build Tool you will have to select "My Schematics" (in the left drop down menu) and on the right side drop down menu you will see the scans that you have made.There is also a "Rename" button where you can change the name that was originally assigned to the scan (for example: SCAN_1533778290135) to whatever you like. You can also "delete" any of your saved scans.
 
 <img src="../../assets/images/tutorial/schematic.png" alt="Schematic">
 
@@ -76,11 +91,11 @@ When playing on a server, the server needs to send the schematics to the players
 
 To create new schematics for existing huts, there are some guidelines that you must follow: The scans MUST have the same footprint for the same style/Hut's type; The scans must contain the hut's chest i.e. builder's chest for the builder's hut, Citizen's chest for the Citizen's hut and so on. The hut chest need to be exactly at the same place and have the same rotation for each level; The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.nbt. For example, for the builder's huts with the MyOwn style, we would have:
 
-*MyOwn/Builder1.nbt
-*MyOwn/Builder2.nbt
-*MyOwn/Builder3.nbt
-*MyOwn/Builder4.nbt
-*MyOwn/Builder5.nbt
+*MyOwn/Builder1.nbt*
+*MyOwn/Builder2.nbt*
+*MyOwn/Builder3.nbt*
+*MyOwn/Builder4.nbt*
+*MyOwn/Builder5.nbt*
 
 - **Note:** in the build tool, the extension is hidden. HutName can be Builder, Citizen, Deliveryman, Farmer, Fisherman, GuardTower, Lumberjack, Miner, TownHall and WareHouse. The maximum level is 5.
 
