@@ -49,9 +49,9 @@ subnav:
         url: source/workers/lumberjack
       - page: Miner
         url: source/workers/miner
-      - page: Restaurant
+      - page: Restaurant/Cook
         url: source/workers/restaurant
-      - page: Smeltery
+      - page: Smelter
         url: source/workers/smelter 
   - title: Buildings
     subitems:
