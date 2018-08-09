@@ -93,4 +93,4 @@ THAT'S ALL !!! Simple... Good Luck, Have Fun. See you in game.
 
 ## Feedback
 
-Visit the [Minecraft Forum Modpage](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2736767-minecolonies-colony-simulator-now-in-playable-beta) and tell us what you think!
+Visit the [Minecraft Forum Modpage](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2736767-minecolonies-colony-simulator-now-in-playable-beta) or visit our [Minecolonies Mod Forum](https://forum.minecolonies.com/) and tell us what you think!
