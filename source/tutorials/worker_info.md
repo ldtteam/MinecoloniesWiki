@@ -52,6 +52,8 @@ For example; if Intelligence is Primary (green colored) and Endurance Secondary 
 
 That means that this worker will be able to *level up* **8 times faster**. 
 
+<p><br><br></p>
+
 ## Workers
 
 Choose a worker to view more information about them:
