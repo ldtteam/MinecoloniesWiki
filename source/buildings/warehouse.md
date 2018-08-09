@@ -9,6 +9,7 @@ The building will hold ALL the materials and tools that are made/mined/harvested
 
 The level of the Warehouse will determine how many Deliverymen will be able to use the warehouse at the same time. Level up the Warehouse to increase the amount of [Deliverymen](../../source/workers/deliveryman) that will work in your Warehouse.
 <br><br>
+
 | Building Level | Max Deliverymen |
 | ----- | ----- |
 | 1 | 1 |
