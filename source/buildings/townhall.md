@@ -4,6 +4,20 @@
 
 **Note:** The Town Hall block can **not** be crafted, this is intentional. It can however be obtained either by crafting and placing the supply ship *OR* the supply camp (only 1 of these two options can be placed in the World by each player). If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../tutorials/commands) page).
 
+**Perks! - Perks! - Perks!**
+
+For each level of the Town Hall you build you will spawn 1 additional Citizen! So: 
+
+| Building Level | New Citizens |
+| ----- | ----- |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+
+<br><br>
+
 The Town Hall is the central part of your Town. once you have placed the "Town Hall block" the area of your Town will be established and the entire area will be protected. The protection system includes blocking any player from placing/breaking or interacting with blocks of *any* kind, setting lava, water or TNT, explosions won't damage your blocks. Once established it will also show in the "informational screen" (pressing F3 - bottom left). Be sure to use your [Building Tool](../tutorials/building_tool) to place the building. 
 
 The protected area of your Colony (once the Town Hall has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
