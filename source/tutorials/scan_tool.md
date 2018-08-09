@@ -32,11 +32,11 @@ Right click on the top opposite corner of the structure, you can use a "Placehol
 ### Step Four
 
 At this point you will have two options: 
-- **1. you can shift + right click to directly "save the schematic".**
+**1. you can shift + right click to directly "save the schematic".**
 
 <img src="../../assets/images/tutorial/shift_click.png" alt="Shift + Right Click">
 
-- **2. or you can right click in the air again to get the scan tool GUI.**
+**2. or you can right click in the air again to get the scan tool GUI.**
 
 <img src="../../assets/images/tutorial/scan_tool_gui.png" alt="Scan Tool GUI">
 
