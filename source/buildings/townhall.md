@@ -6,7 +6,7 @@
 
 The Town Hall is the central part of your Town. once you have placed the "Town Hall block" the area of your Town will be established and the entire area will be protected. The protection system includes blocking any player from placing/breaking or interacting with blocks of *any* kind, setting lava, water or TNT, explosions won't damage your blocks. Once established it will also show in the "informational screen" (pressing F3 - bottom left). Be sure to use your [Building Tool](../tutorials/building_tool) to place the building. 
 
-The protected area of your Colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
+The protected area of your Colony (once the Town Hall has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
 - **Note**: You can configure your own Town area radius in the configuration options of the mod or the the minecolonies.cfg file inside the ```../minecraft/config/``` folder of your own world. (see minecolonies config server section for details)
 
