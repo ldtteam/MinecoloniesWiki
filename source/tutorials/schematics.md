@@ -14,6 +14,10 @@ The first step is to make a Scan Tool like so:
 
 <img src="../../assets/images/tutorial/scan_tool.png" alt="Scan Tool">
 
+- **Hint:** There are two blocks in minecolonies mod that are made specifically for the helping players to make schematics.
+* Placeholderblock. This block will not be scanned and will use the block it is substituting. F.e. air, grass, cobblestone, etc.
+* Solid-Placeholderblock This block will guarantee the block placed will be solid according to the biome it's being build on. 
+
 ### Step Two
 
 Then, all you have to do is left click the lower front corner (left or right makes no difference) at ground level of the structure.
@@ -22,7 +26,7 @@ Then, all you have to do is left click the lower front corner (left or right mak
 
 ### Step Three
 
-Right click on the top opposite corner of the structure. Leaving the entire structure inside this imaginary square. 
+Right click on the top opposite corner of the structure, you can use a "Placeholder" block for this. Leaving the entire structure inside this imaginary square.
 
 <img src="../../assets/images/tutorial/point2.png" alt="Point 2">
 
