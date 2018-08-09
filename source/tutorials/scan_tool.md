@@ -1,6 +1,6 @@
 # Scan Tool
 
-Welcome to the Scan Tool page. Crafting the scan tool is simple and it is a very very usefull tool. With the scan tool you can scan any structure you like and Have the builder build it for you. So find if you a building, house, walls, bridges, towers, shops or any structure that you want in your Town, you can build it in creative or paste it with world edit (f.e.) and then scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a schematic file that you can then use the build tool to place and have your Builder build it for you. The possibilitites are endless. Watch a short video of how it works here:
+Welcome to the Scan Tool page. Crafting the scan tool is simple and it is a very very usefull tool. With the scan tool you can scan any structure you like and Have the builder build it for you. So find if you a building, house, walls, bridges, towers, shops or any structure that you want in your Town, you can build it in creative or paste it with world edit (f.e.) and then scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a schematic file that you can then use the build tool to place and have your Builder build it for you ([Schematics](../tutorial/schematics) Page for more info). The possibilitites are endless. Watch a short video of how it works here:
 
 <p style="text-align:center; font-size:20pt;"><b>Scan Tool Video</b></p>
 
