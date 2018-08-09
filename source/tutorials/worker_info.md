@@ -4,14 +4,11 @@
 
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/tutorial/Sleep.png" alt="Sleep"><b>Rainy weather will make your citizens stop Working!!!</b><img src="../../assets/images/tutorial/Sleep.png" alt="Sleep"></p>
 
-
-
+<p><br><br><br></p>
 
 ## Workers' Skill Level
 
 There is a system in place for how the workers skill "Level Up". The level of their building is what will put a limit on the "Worker Skill Level" he/she can achieve. Every time you level up their building, the worker's max level limit will be DOUBLE the previous limit! Currently there is NO limit on the Workers' "Skill Level" (once you have made his building level 5, of course). 
-
-
 
 ### Buildings
 
@@ -24,7 +21,7 @@ There is a system in place for how the workers skill "Level Up". The level of th
 | 4 | 32 |
 | 5 | Unlimited |
 
-
+<p><br><br></p>
 
 ## Tool Level
 
@@ -39,7 +36,7 @@ There is also a system in place for the type of tools the workers can use depend
 | 4 | Tinkers w/Mining level Cobalt |
 | 5 | Any Tool w/any Mining level and Enchants |
 
-
+<p><br><br></p>
 
 ## Traits
 
@@ -55,11 +52,9 @@ For example; if Intelligence is Primary (green colored) and Endurance Secondary 
 
 That means that this worker will be able to *level up* **8 times faster**. 
 
-
 ## Workers
 
 Choose a worker to view more information about them:
-
 
 | Job Description | Primary Traits |
 | ------ |------ |
