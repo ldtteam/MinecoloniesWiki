@@ -15,8 +15,8 @@ subnav:
         url: source/tutorials/commands
       - page: Recipes
         url: source/tutorials/recipes
-      - page: Build Tool
-        url: source/tutorials/build_tool
+      - page: Building Tool
+        url: source/tutorials/building_tool
       - page: Happiness System
         url: source/tutorials/happiness
       - page: Worker Info (Traits, Tool/Skill Level)
