@@ -25,7 +25,7 @@ Now you can access the Guard's Hut block (right click on it) and you will see a 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farmergui.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/guardgui.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -42,10 +42,8 @@ Now you can access the Guard's Hut block (right click on it) and you will see a 
 
 The Guard has 2 Guard modes you can choose from: **Knight** or **Ranger**. BUT... before you can choose any of these two modes you *MUST* change the "Assign the guard to job:" mode from *Automatically* to **Manually**. 
 
-<br>
 <p style="color:Blue;">When the Guard is set to <b>Knight</b> mode; the guard will hold a sword.
 When the Guard is set to <b>Ranger</b> mode; the guard will use a bow.</p>
-<br>
 
 This is "page 2" of the GUI. It shows the guard actions you can select: Knight or Ranger (FIRST you have to change the "Assign the guard to the job: to Manually to be able to change the guard actions). Also here you will be able to set (if "Find patrol target: Manually") the way the guard will work: Patrol / Follow / Guard. 
 
@@ -53,7 +51,7 @@ This is "page 2" of the GUI. It shows the guard actions you can select: Knight o
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farmergui.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/guardgui2.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
