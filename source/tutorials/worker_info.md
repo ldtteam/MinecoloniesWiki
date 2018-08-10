@@ -61,14 +61,14 @@ Choose a worker to view more information about them:
 | Job Description | Primary Traits |
 | ------ |------ |
 | [Baker](../../source/workers/baker) | Intelligence & Dexterity |
-| [Builder](../../source/workers/builder) | Intelligence & Strength |
-| [Composter](../../source/workers/composter) | Intelligence & Dexterity |
+| [Builder](../../source/workers/builder) | Strength & Endurance |
+| [Composter](../../source/workers/composter) | Dexterity & Strength |
 | [Deliveryman](../../source/workers/deliveryman) | Intelligence & Endurance |
 | [Farmer](../../source/workers/farmer) |  Endurance & Charisma |
 | [Fisherman](../../source/workers/fisherman) | Intelligence & Dexterity |
 | [Guard](../../source/workers/guard) | Intelligence & Strength |
-| [Herder](../../source/workers/herder) | Intelligence & Strength |
+| [Herder](../../source/workers/herder) | Dexterity & Strength |
 | [Lumberjack](../../source/workers/lumberjack) | Strength & Charisma |
 | [Miner](../../source/workers/miner) | Strength & Endurance |
-| [Restaurant/Cook](../../source/workers/restaurant) | Intelligence & Strength |
-| [Smelter](../../source/workers/smelter) | Intelligence & Strength |
+| [Restaurant/Cook](../../source/workers/restaurant) | Charisma & Intelligence |
+| [Smelter](../../source/workers/smelter) | Strength & Intelligence |
