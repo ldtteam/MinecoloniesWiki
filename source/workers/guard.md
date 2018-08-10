@@ -28,10 +28,8 @@ Now you can access the Guard's Hut block (right click on it) and you will see a 
     <img src="../../assets/images/gui/guardgui.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
-    <ul><br>
+    <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
@@ -47,16 +45,12 @@ When the Guard is set to <b>Ranger</b> mode; the guard will use a bow.</p>
 
 This is "page 2" of the GUI. It shows the guard actions you can select: Knight or Ranger (FIRST you have to change the "Assign the guard to the job: to Manually to be able to change the guard actions). Also here you will be able to set (if "Find patrol target: Manually") the way the guard will work: Patrol / Follow / Guard. 
 
-
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/guardgui2.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
-    <p>This is "page 2" of the GUI. It shows the guard actions you can select: Knight or Ranger (FIRST you have to change the "Assign the guard to the job: to Manually to be able to change the guard actions). Also here you will be able to set (if "Find patrol target: Manually") the way the guard will work: Patrol / Follow / Guard.  And the buttons:</p>
+  <p>This is "page 2" of the GUI. It shows the guard actions you can select: Knight or Ranger (FIRST you have to change the "Assign the guard to the job: to Manually to be able to change the guard actions). Also here you will be able to set (if "Find patrol target: Manually") the way the guard will work: Patrol / Follow / Guard.  And the buttons:</p>
     <ul>
       <li><strong>Patrol</strong> When you select this mode you have two options: </li>
       <ul>
