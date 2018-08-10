@@ -8,7 +8,7 @@ Before you choose a place to build his Hut, take into account the distances amon
 
 Best Traits are: **Intelligence** and **Endurance.**
 
-<img src="../../assets/images/.../deliveryman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/.../deliveryman_chest.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/DeliveryMan.png" alt="Deliveryman">
+<p style="text-align:center;"><img src="../../assets/images/.../deliveryman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/.../deliveryman_chest.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/DeliveryMan.png" alt="Deliveryman"></p>
 
 You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
@@ -39,7 +39,6 @@ Now you can access the Deliveryman's Hut block (right click on it) and you will 
     <img src="../../assets/images/gui/bakergui.png" class="img-fluid mx-auto" alt="Baker GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
     <br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
