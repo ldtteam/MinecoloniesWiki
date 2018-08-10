@@ -55,8 +55,8 @@ subnav:
         url: source/workers/smelter 
   - title: Buildings
     subitems:
-      - page: Buildings
-        url: source/buildings/buildings
+      - page: Library
+        url: source/buildings/library
       - page: Supply Ship
         url: source/buildings/supply_ship
       - page: Supply Camp
@@ -67,3 +67,5 @@ subnav:
         url: source/buildings/citizen_hut
       - page: Warehouse
         url: source/buildings/warehouse
+      - page: Barracks
+        url: source/buildings/barracks
