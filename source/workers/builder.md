@@ -6,7 +6,7 @@ Before any building can be built, you have to craft the Builder’s Hut block an
 
 Best Traits are: **Strength** and **Endurance**.
 
-<img src="../../assets/images/recipe/builder.png" alt="Builder Recipe">    <img src="../../assets/images/gui/buildergui.png" alt="Builder Hut Block">    <img src="../../assets/images/Workers/Builder.jpg" alt="Builder">
+<p style="text-align:center;"><img src="../../assets/images/recipe/builder.png" alt="Builder Recipe">    <img src="../../assets/images/icons/minecolonies/blockhutbuilder.png" alt="Builder Hut Block">    <img src="../../assets/images/Workers/Builder.jpg" alt="Builder"></p>
 
 You now officially have a builder, **CONGRATULATIONS!**
 
