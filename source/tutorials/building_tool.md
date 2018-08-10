@@ -52,8 +52,9 @@ To place a Worker hut or a Building (from the mod) you have to have the Hut bloc
 
 <br>
 
-<p style="color:Blue;"><b>Hint:<b> Once you have the GUI open you can press the "ESC" button on your keyboard so that the 3D image will remain and you can move around and take a better look at it from all sides to make sure it's the way you want it!<br>
+<p style="color:Blue;"><b>Hint:</b> Once you have the GUI open you can press the "ESC" button on your keyboard so that the 3D image will remain and you can move around and take a better look at it from all sides to make sure it's the way you want it!<br>
      Then you can right click with the building tool again towards the 3D image (on a block or even in the air) to go back to the GUI so you can "nudge" your structure to the best place and orientation that you want. You can repeat this process as many times as you want before clicking the green check mark to "commit" to the placement of the structure.</p>
+
 <br>
   
 ### Step Three
