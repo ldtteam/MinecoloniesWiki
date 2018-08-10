@@ -8,7 +8,8 @@ Before you choose a place to build his hut, take into account that he has to be 
 
 Best Traits are: **Intelligence** and **Dexterity**.
 
-<img src="../../assets/images/.../fisherman_recipe.png" alt="Fisherman Recipe"> <img src="../../assets/images/Workers/fisherman_block.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman">
+<p style="text-align:center;"><img src="../../assets/images/Workers/fisherman_recipe.png" alt="Fisherman Recipe"> <img src="../../assets/images/Workers/fisherman_block.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman"></p>
+<br>
 
 You now officially have a "Fisherman!" CONGRATULATIONS!
 
@@ -18,7 +19,7 @@ Now you can give the Fisherman a fishing rod and it will start to fish. Also, yo
 
 **Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
 
-<img src="../../assets/images/Workers/pond.png" alt="Pond">
+<p style="text-align:center;"><img src="../../assets/images/Workers/pond.png" alt="Pond"></p>
 
 Once the builder is done, you can think about upgrading the Fisherman's hut to expand the range at which it can fish as well as having a higher cap level.
 
@@ -30,7 +31,6 @@ Now you can access the Fisherman's Hut block (right click on it) and you will se
     <img src="../../assets/images/gui/fishermangui.png" class="img-fluid mx-auto" alt="Fisherman GUI">
 </div>
   <div class="col-sm-12 col-md">
-    <br>
     <br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The 
 higher the level the faster and more efficient they will be). And the buttons:</p>
