@@ -42,7 +42,6 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <br><br><br>
     <img src="../../assets/images/gui/lumberjackgui2.png" class="img-fluid mx-auto" alt="Lumberjack2 GUI">
   </div>
   <div class="col-sm-12 col-md">
@@ -54,4 +53,4 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
 </div>
 <br>
 
-**Hint:** You can give the Lumberjack an enchanted axe and reap the benefits of the speed he will be chopping down trees for your Town's needs. Also you can remove any trees/saplings and replant any type of sapling in any pattern or shape you need to create your perfect grove, for easier access and less walking around, which means more chop chop... ;p
+**Hint:** You can give the Lumberjack an enchanted axe and reap the benefits of the speed that it will be chopping down trees for your Town's needs. Also you can remove any trees/saplings and replant any type of sapling in any pattern or shape you need to create your perfect grove, for easier access and less walking around, which means more chop chop... ;p
