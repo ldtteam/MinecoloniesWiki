@@ -8,13 +8,13 @@ Before you choose a place to build his Hut, take into account the distances amon
 
 Best Traits are: **Intelligence** and **Endurance.**
 
-<p style="text-align:center;"><img src="../../assets/images/.../deliveryman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/.../deliveryman_chest.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/DeliveryMan.png" alt="Deliveryman"></p>
+<p style="text-align:center;"><img src="../../assets/images/Workers/dman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/Workers/dman_hut.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/DeliveryMan.png" alt="Deliveryman"></p>
 
 You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
 Now you will have to issue the builder the "Build" assignment so he can build the "Deliveryman's Hut". He will be asking for the materials he/she needs. Make sure to check the "chat" regularly to see what materials the builder is requesting for any build/upgrade.
 
-Hint: If you see the builder has not finished building/upgrading your Deliveryman's hut and you don't see the builder asking for any materials, go to the builder's hut and "recall" the builder and wait a bit to see what the builder needs. Watch the Minecraft "chat" section. Also you can go to page 2 of the builder's hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+**Hint:** If you see the builder has not finished building/upgrading your Deliveryman's hut and you don't see the builder asking for any materials, go to the builder's hut and "recall" the builder and wait a bit to see what the builder needs. Watch the Minecraft "chat" section. Also you can go to page 2 of the builder's hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
 Once the builder is done you can now hire the Deliveryman and the Deliveryman will start to run back and forth from the Warehouse to all the workers huts in your Town. The level of the Deliveryman's Hut will dictate how much materials/tools it will carry to/from Huts - Warehouse - Huts, so if you want it to carry more materials/tools, be sure to upgrade the Deliveryman's Hut.
 
