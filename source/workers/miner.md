@@ -28,7 +28,7 @@ When accessing the Miner's Hut block (right clicking on it), you will see a GUI 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Miner GUI">
+    <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Miner GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
@@ -46,7 +46,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../assets/images/gui/minergui2.png" class="img-fluid mx-auto" alt="Miner GUI 2">
+    <img src="../../assets/images/gui/minergui2.png" class="img-fluid mx-auto" alt="Miner GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br>
