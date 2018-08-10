@@ -6,7 +6,7 @@ Before you choose a place to build the Baker's hut, take into account the locati
 
 Best Traits are: **Intelligence** and **Dexterity**.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/baker_recipe.png" alt="Baker Recipe"> <img src="../../assets/images/Workers/baker_hut.png" alt="Baker Hut Block"> <img src="../../assets/images/Workers/Baker.png" alt="Baker"></p>
+<p style="text-align:center;"><img src="../../assets/images/Workers/baker_recipe.png" alt="Baker Recipe"> <img src="../../assets/images/Workers/baker_hut.png" alt="Baker Hut Block">    <img src="../../assets/images/Workers/baker.png" alt="Baker"></p>
 
 You now officially have a Baker, **CONGRATULATIONS!**
 
