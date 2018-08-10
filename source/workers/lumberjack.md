@@ -28,8 +28,6 @@ Now you can access the Lumberjack's Hut block (right click on it) and you will s
   </div>
   <div 
 class="col-sm-12 col-md">
-    <br>
-    <br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -40,31 +38,17 @@ class="col-sm-12 col-md">
 </div>
 <br>
 
+This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplings it can work with. Here you can turn *ON* or *OFF* which type of trees the Lumberjack will chop down and replant. You can then have 1 lumberjack for 2 types of trees (for example). And the buttons:
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <br><br><br>
     <img src="../../assets/images/gui/lumberjackgui2.png" class="img-fluid mx-auto" alt="Lumberjack2 GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <ul>
-      <li><strong>Patrol</strong> When you select this mode you have two options: </li>
-      <ul>
-        <li>If you set "Find patrol target: Automatically", the Guard will patrol from hut to hut and back to his Tower.</li>
-        <li>If you set "Find patrol target: Manually", you can set the patrol route when you click on "Set patrol positions". Doing so will spawn a "Guard-scepter" in your inventory. </li>
-      </ul>
-    </ul>
-You can right click using the Guard-scepter to set a single or multiple patrol positions for the Guard to patrol back and forth.
-    <ul>
-      <li><strong>Follow:</strong> When you select this mode the guard will follow you around wherever you go, as your personal Guard fighting along side you or defending you. If you leave the guard tower more than 40* GuardTower level blocks the guard will automatically return to his tower.</li>
-      <li><strong>Guard:</strong> When you select this mode you will receive a "Guard-scepter". You can right click on a block to set it as a guard spot, the guard will stay in that area until his health is low or he has to restock, then he will go the Tower and resupply/regen health and will go back to your designated the guard spot again.</li>
-      <li><strong>Knight:</strong> (By default) Here you can define if you want the guard to be a Knight or Ranger.</li>
-      <ul>
-        <li>Automatically By default. Here you can define if you want the guard to be assigned to Knight or Ranger automatically or Manually.</li>
-      </ul>
-      <li><strong>Automatically:</strong> (By default) Here you can define if you want the guard to be assigned the patrol target automatically or manually if you want to designate the target(s) for him to patrol.</li>
-      <li><strong>Off: </strong> (By default) Here you can define if you want the guard to come back to the Tower on low health to recover his health.</li>
-      <li><strong>Patrol / Follow / Guard.-</strong>here you can define how the guard will work.</li>
-      <li><strong>Inventory:</strong>This is the most important button. Here you can access the buildings storage from where the “worker” takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</li>
+    <ul><br><br>
+      <li><strong>Tasklist</strong> Where you can individually select the saplings (tree type) that you want the Lumberjack to work with.</li><br><br><br>
+      <li><strong>Toggle all: </strong>A button so you can just turn <i>ALL</i> saplings (tree types) "On" or "Off" for easier management.</li>
     </ul>
   </div>
 </div>
