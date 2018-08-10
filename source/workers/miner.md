@@ -18,7 +18,7 @@ Once the builder is done, you will have to determine where your farm plot(s) wil
 
 **Hint:** If you see the Miner is not Working and stands by it's hut's block. Check to make sure it has all the materials it needs, specially: cobblestone, pickaxe, shovel and torches. If it's still making hte shaft down then make sure it also has; planks, slabs and fences. it might need lots and lots of cobblestone to fill in caves/water/lava/sand/gravel that it finds along the way while making the shaft and/or mining.
 
-**Note:** The miner will only mine blocks according to the level of it's pickaxe. And will only be able to use a tool according to the level of it's hut (check the [Workers|Tool Level](../../source/tutorials/worker_info) system). Therefore the miner can only mine Diamonds with an Iron or better pickaxe. When the miner finds water or lava, it will try and block it up and work it's way around it. This could take him some time to do. Mining is a very dangerous profession and the miner might die from lava or being suffocated by Gravel or Sand. The miner will try it's best to be safe. The miner can on occasion get confused and lost. It may start new tunnels and shaft to try and find where he needs to be. Use the Recall Citizen button in the Worker hut GUI to instantly recall the miner to the Miner's Hut block if it gets lost or seems to not bring anything to the Hut block's inventory.
+**Note:** The miner will only mine blocks according to the level of it's pickaxe. And will only be able to use a tool according to the level of it's hut (check the [Worker's Tool Level](../../source/tutorials/worker_info) system). Therefore the miner can only mine Diamonds with an Iron or better pickaxe. When the miner finds water or lava, it will try and block it up and work it's way around it. This could take him some time to do. Mining is a very dangerous profession and the miner might die from lava or being suffocated by Gravel or Sand. The miner will try it's best to be safe. The miner can on occasion get confused and lost. It may start new tunnels and shaft to try and find where he needs to be. Use the Recall Citizen button in the Worker hut GUI to instantly recall the miner to the Miner's Hut block if it gets lost or seems to not bring anything to the Hut block's inventory.
 
 **Hint:** If you see the builder has not finished building/upgrading your Farmer’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
@@ -50,8 +50,11 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br>
-      <li><strong>Mine Level:</strong> Here you can assign what "level" of the mine the miner should be working in, creating his mineshafts.</li><br><br><br>
-      <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
+      <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li><br><br><br>
+      <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
   </div>
 </div>
+<br>
+
+**Hint:** The shaft the miner creates downwwards will go to a specific depth depending on the level of the Miner's Hut. So if you want it to go deeper and get to the good ores, you will have to upgrade the Hut. Level 5 hut will get to Bedrock (if you placed it at Y=64 or above).
