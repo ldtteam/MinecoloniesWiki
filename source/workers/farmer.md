@@ -8,7 +8,7 @@ To begin with you have to craft the "Farmer's Hut" block in the crafting table a
 
 Best Traits are: **Endurance** and **Charisma**.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/farmer_recipe.png" alt="Farmer Recipe">    <img src="../../assets/images/Workers/minecolonies/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/Farmer.png" alt="Farmer"></p>
+<p style="text-align:center;"><img src="../../assets/images/Workers/farmer_recipe.png" alt="Farmer Recipe">    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/Farmer.png" alt="Farmer"></p>
 
 You now officially have a "Farmer!" **CONGRATULATIONS!**
 
@@ -26,9 +26,9 @@ Once the builder is done, you will have to determine where your farm plot(s) wil
 
 If you decide later to change the type of crop you want cultivated in that specific farm plot, just go into the "Field's" GUI and switch the crop there. Remember that for the dirt to be tillable and hold crops, it must have a water source to keep it tilled and crops stay planted (Minecraft limits the water source to permeate up to 4 blocks from it's placement).
 
-IMPORTANT: The farmer will take care of up to 5 "Fields", depending on the level of the "Farmer's Hut". The level of hut is the number of fields it can take care of. If the Hut is only level 1 = 1 Field, Level 2 = 2 Fields, Level 3 = 3 Fields, Level 4 = 4 Fields and Level 5 = 5 Fields
+**IMPORTANT:** The farmer will take care of up to 5 "Fields", depending on the level of the "Farmer's Hut". The level of hut is the number of fields it can take care of. If the Hut is only level 1 = 1 Field, Level 2 = 2 Fields, Level 3 = 3 Fields, Level 4 = 4 Fields and Level 5 = 5 Fields
 
-These are just some examples of what a farm plot can be like. you can be creative and make them any shape you like following the rule of only up to 5 blocks from the "Field" block (Scarecrow) and delimiting by non tillable blocks.
+These are just some examples of what a farm plot can be like. you can be creative and make them any shape you like following the rule of only up to 5 blocks from the "Field" block (Scarecrow) and delimited by non tillable blocks.
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/Workers/plot_max.png" alt="Field Max Size">    <img src="../../assets/images/Workers/plot_half.png" alt="Field Size Half">    <img src="../../assets/images/Workers/plot_quater.png" alt="Field Size Quarter"></p>
