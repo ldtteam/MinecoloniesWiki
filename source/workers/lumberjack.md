@@ -46,7 +46,7 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br>
-      <li><strong>Tasklist</strong> Where you can individually select the saplings (tree type) that you want the Lumberjack to work with.</li><br><br><br>
+      <li><strong>Tasklist</strong> Where you can individually select the saplings (tree types) that you want the Lumberjack to work with.</li><br><br><br>
       <li><strong>Toggle all: </strong>A button so you can just turn <i>ALL</i> saplings (tree types) "On" or "Off" for easier management.</li>
     </ul>
   </div>
