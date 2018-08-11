@@ -92,20 +92,68 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 ### Town Hall GUI
 
-You may use the tabs on the left side to switch between different categories:
+*You may use the tabs on the left side to switch between different categories:*
 
-- **Information.-** This will give you some statistics about your citizens and workers.
-  
-[File:TH_InformationGUI.png]
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_information.png" class="img-fluid mx-auto" alt="TH GUI Information Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <br>
+    <p>This is the Information section.</p>
+    <ul>
+     <li>On page 1 you will see some statistics on your Citizens: The number of Citizens you have and a listing of the unemployed and workers. It will show you haow many of wach type you have.</li>
+     <li>On page 2 you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
+    </ul>
+  </div>
+</div>
+<br><br>
 
-- **Actions.-** This is the most important tab. You are able to see your Towns name and various Buttons here:
-    Build Town Hall (also upgrades it),
-    Repair Town Hall (in case it gets "accidentally" modified),
-    Recall Citizens (not implemented yet)
-    Toggle Specialization (future use)
-    and Rename Colony (in case you don't want it to have the player's name or coop playing and decide on a colony name).
+<p><strong>Actions: </strong>This is the most important tab. You are able to see your Towns name and various Buttons here:. And the buttons:</p>
 
-[File:TH_ActionsGUI.png]
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_actions.png" class="img-fluid mx-auto" alt="TH GUI Actions Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <br>
+    <p><strong>Page 1: </strong> you will have the Colony name and the buttons:</p>
+    <ul>
+     <li><strong>Build Town Hall/Switch Style.- </strong> The button will say; "Build Building" when no level has been built yet, then it will say; "Switch Style", so you can change the style (at same level you have currently) or also to "upgrade" to next level.</li>
+     <li><strong>Repair Building.- </strong>So the builder can "restore" the building to it's original schematic, when alterations have changes something.</li>
+     <li><strong>Recall Citizens.- </strong>So you can make <i>ALL</i> citizens (wokers or unemployed) to gather at the Town Hall block location, they will be teleported there. .</li>
+     <li><strong>Toggle Specialization.- </strong>For future use, has no purpose at the moment.</li>
+     <li><strong>Rename Colony.- </strong>To change the name of the Colony (from player's name) to anything you want, f.e. in coop playing and everyone decides on a name.</li>
+    </ul>
+   <br><br>
+   <p><strong>Page 2: </strong> This is for the PVP part of the mod, here you have:</p>
+    <ul>
+     <li><strong>Allies.- </strong> Other Colonies that you have added as "Allies" and they have confirmed your Colony as ally as well.</li>
+     <li><strong>Feuds.- </strong> Other Colonies that you have added as "Feud" and they have confirmed your Colony as feud as well.</li>
+    </ul>
+  </div>
+</div>
+<br><br>
+
+<p></p>
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_information.png" class="img-fluid mx-auto" alt="TH GUI Information Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <br>
+    <p>This is the Information section.</p>
+    <ul>
+     <li>On page 1 you will see some statistics on your Citizens: The number of Citizens you have and a listing of the unemployed and workers. It will show you haow many of wach type you have.</li>
+     <li>On page 2 you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
+    </ul>
+  </div>
+</div>
+<br><br>
 
 - **Permissions.-** It will show the Owner(s) and other players invited to your Town to collaborate. You can add a player and give him a status in your Town. Each status will have certain privileges in the protection system.
 
