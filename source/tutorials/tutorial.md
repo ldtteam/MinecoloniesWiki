@@ -94,70 +94,94 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 *You may use the tabs on the left side to switch between different categories:*
 
+<br><br>
+<p><strong>Information: </strong>In this section of the section of the Town hall GUI</p>
+   
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/th_information.png" class="img-fluid mx-auto" alt="TH GUI Information Tab">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
-    <p>This is the Information section.</p>
+    <br><br>
     <ul>
-     <li>On page 1 you will see some statistics on your Citizens: The number of Citizens you have and a listing of the unemployed and workers. It will show you haow many of wach type you have.</li>
-     <li>On page 2 you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
+     <li><strong>Page 1: </strong>you will see some statistics on your Citizens: The number of Citizens you have and a listing of the unemployed and workers. It will show you how many and what type you have.</li>
+     <li><strong>Page 2: </strong>you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
     </ul>
   </div>
 </div>
 <br><br>
 
-<p><strong>Actions: </strong>This is the most important tab. You are able to see your Towns name and various Buttons here:. And the buttons:</p>
+<p><strong>Actions: </strong>This is the most important section. You are able to see your Towns name and various Buttons here:</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/th_actions.png" class="img-fluid mx-auto" alt="TH GUI Actions Tab">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
-    <p><strong>Page 1: </strong> you will have the Colony name and the buttons:</p>
+    <p><strong>Page 1: </strong>Here you will see the name of your Colony and the buttons:</p>
     <ul>
-     <li><strong>Build Town Hall/Switch Style.- </strong> The button will say; "Build Building" when no level has been built yet, then it will say; "Switch Style", so you can change the style (at same level you have currently) or also to "upgrade" to next level.</li>
+     <li><strong>Build Building/Switch Style.- </strong> The button will say; "Build Building" when no level has been built yet, then it will say; "Switch Style", so you can change the style (at same level you have currently) or also to "upgrade" to next level.</li>
      <li><strong>Repair Building.- </strong>So the builder can "restore" the building to it's original schematic, when alterations have changes something.</li>
      <li><strong>Recall Citizens.- </strong>So you can make <i>ALL</i> citizens (wokers or unemployed) to gather at the Town Hall block location, they will be teleported there. .</li>
      <li><strong>Toggle Specialization.- </strong>For future use, has no purpose at the moment.</li>
      <li><strong>Rename Colony.- </strong>To change the name of the Colony (from player's name) to anything you want, f.e. in coop playing and everyone decides on a name.</li>
     </ul>
-   <br><br>
-   <p><strong>Page 2: </strong> This is for the PVP part of the mod, here you have:</p>
+   <br>
+   <p><strong>Page 2: </strong>This is for the PVP part of the mod, here you have:</p>
     <ul>
-     <li><strong>Allies.- </strong> Other Colonies that you have added as "Allies" and they have confirmed your Colony as ally as well.</li>
-     <li><strong>Feuds.- </strong> Other Colonies that you have added as "Feud" and they have confirmed your Colony as feud as well.</li>
+     <li><strong>Allies.- </strong>Other Colonies that you have added as "Allies" and they have confirmed your Colony as ally as well.</li>
+     <li><strong>Feuds.- </strong>Other Colonies that you have added as "Feud" and they have confirmed your Colony as feud as well.</li>
     </ul>
   </div>
 </div>
 <br><br>
 
-<p></p>
+<p><strong>Permissions: </strong>Here you can invite other players to your Town to collaborate. You can add a player and give him a status in your Town. Each status will have certain privileges in the protection system that you can configure. Also you can set individual playera as "Hostile".</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/th_information.png" class="img-fluid mx-auto" alt="TH GUI Information Tab">
+    <img src="../../assets/images/gui/th_permissions.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
-    <p>This is the Information section.</p>
     <ul>
-     <li>On page 1 you will see some statistics on your Citizens: The number of Citizens you have and a listing of the unemployed and workers. It will show you haow many of wach type you have.</li>
-     <li>On page 2 you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
+     <li><strong>Page 1: </strong>Here you can type the name of the player you want to add to your list and grant them certain permissions.</li>
+     <li><strong>Page 2: </strong>It shows you the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them more rank or less rank.</li>
     </ul>
   </div>
 </div>
 <br><br>
 
-- **Permissions.-** It will show the Owner(s) and other players invited to your Town to collaborate. You can add a player and give him a status in your Town. Each status will have certain privileges in the protection system.
+<p><strong>Permissions Pg. 3 & 4: </strong>Here you check and manage the individual permissions for each Rank.</p>
 
-[File:TH_Permissions.png]
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_permissions2.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab Pg.2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+     <li><strong>Page 3: </strong>Here are the buttons for you to select each "Rank" that you would like to view and manage the individual permissions for.</li>
+     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) tha you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission <b>you</b> want.</li>
+    </ul>
+  </div>
+</div>
+<br><br>
+
+<p><strong>Permissions Pg. 5 & 6: </strong>In this section you can add a certain block at a certain position that will bypass the protection system for "interaction". Any player will be able to interact with that block regardless of having a rank or not in your Colony.</p>
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_permissions3.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab Pg.2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+     <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make "Free for interaction".</li>
+     <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction.</li>
+    </ul>
+  </div>
+</div>
+<br><br>
+
+
 
 - **Citizens.-** Just the names of the Citizens. Your npc citizens, not players.
 
