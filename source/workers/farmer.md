@@ -8,7 +8,7 @@ To begin with you have to craft the "Farmer's Hut" block in the crafting table a
 
 Best Traits are: **Endurance** and **Charisma**.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/farmer_recipe.png" alt="Farmer Recipe">    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/Farmer.png" alt="Farmer"></p>
+<p style="text-align:center;"><img src="../../assets/images/Workers/farmer_recipe.png" alt="Farmer Recipe">    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/farmer.png" alt="Farmer"></p>
 
 You now officially have a "Farmer!" **CONGRATULATIONS!**
 
