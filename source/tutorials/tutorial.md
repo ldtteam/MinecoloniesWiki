@@ -248,7 +248,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/th_workorders.png" class="img-fluid mx-auto" alt="TH GUI Work Orders Tab">
+    <img src="../../assets/images/gui/th_happiness.png" class="img-fluid mx-auto" alt="TH GUI Work Orders Tab">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
