@@ -25,102 +25,8 @@ title: Minecolonies Wiki
   <body>
     <div class="bg">
       <div class="bgscroll">
-        <!-- HEADER -->
-        <header class="container">
-          <h1 class="header">MineColonies Wiki</h1>
-        </header>
-
-        <!-- NAVBAR PRIMARY -->
-        <nav class="navbar navbar-expand-lg navbar-default main">
-          <div class="container">
-            <button class="navbar-toggler" type="button" id="navbarSideButton" aria-expanded="false" aria-label="Toggle Navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
         
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a href="https://minecolonies.com" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://forum.minecolonies.com" class="nav-link">Forums</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://minecolonies.com/about.php" class="nav-link">About The Mod</a>
-                </li>
-                <li class="nav-item active">
-                  <a href="https://wiki.minecolonies.com/" class="nav-link">Wiki</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="nav-link">Bug Reports</a>
-                </li>
-              </ul>
-
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}" class="nav-link">Edit this page <i class="fa fa-github"></i></a>
-                </li>
-              </ul>
-              
-            </div>
-          </div>
-
-          <ul class="navbar-side" id="navbarSide">
-            <div class="sidenav-title">
-              <h1 class="text-center">Minecolonies Wiki</h1>
-            </div>
-            <hr />
-            <li class="navbar-side-item">
-              <a href="https://minecolonies.com" class="side-link">Home</a>
-            </li>
-            <li class="navbar-side-item">
-              <a href="https://forum.minecolonies.com" class="side-link">Forums</a>
-            </li>
-            <li class="navbar-side-item">
-              <a href="https://minecolonies.com/about.php" class="side-link">About The Mod</a>
-            </li>
-            <li class="navbar-side-item">
-              <a href="https://wiki.minecolonies.com/" class="side-link active">Wiki</a>
-            </li>
-            <li class="navbar-side-item">
-              <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="side-link">Bug Reports</a>
-            </li>
-    
-            <hr />
-            {% for item in site.data.subnav.subnav %}
-              <li class="navbar-side-item dropdown">
-                <a class="side-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
-                <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
-                  {% for entry in item.subitems %}
-                    <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-                  {% endfor %}
-                </div>
-              </li>
-            {% endfor %}
-        </ul>
-        <div class="overlay"></div>
-        </nav>
-
-        <!-- NAVBAR SECONDARY -->
-        <nav class="navbar navbar-expand-lg navbar-default secondary">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarsec">
-            <ul class="navbar-nav mr-auto">
-              {% for item in site.data.subnav.subnav %}
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
-                  <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
-                    {% for entry in item.subitems %}
-                      <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-                    {% endfor %}
-                  </div>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- /NAVBAR SECONDARY -->
+        {% include header.html %}
 
         <!-- MAIN CONTENT -->
         <div class="container content">
@@ -130,25 +36,22 @@ title: Minecolonies Wiki
               <p>If changes are needed, or you feel there is content missing, please feel free to edit this page, or submit an issue for us to make any edits. - Minecolonies Wiki Team</p>
             </div>
         </div>
-        <!-- FOOTER  -->
-        <div class="footer">
-          <footer class="ribbon">
-            <div class="container">
-              <p class="float-right">This page was last modified on {{ last_modified_at_time }}</p>
-            </div>
-          </footer>
-        </div>
+        
+        {% include footer.html %}
+
       </div>
     </div>
 
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
     <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src="../../assets/js/recipe.js"></script>
 
     <script>
     $( document ).ready(function() {
@@ -164,6 +67,10 @@ title: Minecolonies Wiki
             $("#navbarSide").removeClass("reveal");
             $(".overlay").hide();
         });
+
+        reader.findRecipes();
+
+        setTimeout(reader.convertToSlideshow, 2000);
 
         $('h1, h2').not('.header, div.sidenav-title > h1').after('<hr/>');
 
