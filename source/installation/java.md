@@ -5,10 +5,7 @@
 
 * This process is for installing only the Minecolonies mod in your original Minecraft launcher. You will _not_ be able to connect to the **Minecolonies Official 1.12.2 Server** due to the server having a balanced variety of other mods as well.
 
-* For connecting to the Official Server, install the Twitch Client or visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods used on Server. If all these additional mods are downloaded and installed as well, you will be able to connect to the official Server. 
-
-### The Official Minecolonies Server Address is:
-![Server address](../../assets/images/installation/Server.png)
+* For connecting to the Official Server, install the [Twitch Client](../installation/twitch) or use [MultiMC](../installation/multimc). You can visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods and the versions we are currently using on the Official Server, as well as all the appropriate configs, scripts and the server.dat file for our modpack Official Test Server. If all these additional mods, configs, scripts and the server.dat are downloaded and installed manually, you will be able to connect to our Official Test Server. 
 
 * Installation of the MineColonies mod is very simple. It does require Minecraft Forge to be able to integrate mods into the Minecraft game.
 
