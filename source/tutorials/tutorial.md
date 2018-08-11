@@ -210,11 +210,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 <div class="row">
   <div class="col-sm-12 col-md">
+   <br><br>
     <img src="../../assets/images/gui/th_settings.png" class="img-fluid mx-auto" alt="TH GUI Settings Tab">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <br><br>
      <li><strong>Page 1: </strong>There are two buttons here:</li>
        <ul>
         <li><strong>Worker hiring mode: </strong>Clicking on this button you can switch between automatic or manual. If it's in automatic mode, you can't fire or hire any Citizen from any Worker's hut and the best "unemployed" citizen will be hired for you. In manual mode you will be able to <i>Hire</i> and <i>Fire</i> which ever citizen you want at any time.</li>
@@ -231,7 +231,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/ 	th_workorders.png" class="img-fluid mx-auto" alt="TH GUI Work Orders Tab">
+    <img src="../../assets/images/gui/th_workorders.png" class="img-fluid mx-auto" alt="TH GUI Work Orders Tab">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
