@@ -9,7 +9,7 @@ class JSONReader {
   
   findRecipes()
   {
-    let recipes = $("code").map(function()
+    let recipes = $("recipe").map(function()
     {
       return $(this).text();
     })
@@ -151,7 +151,7 @@ class JSONReader {
         output += `
         </div>`;
             
-        let recipes = $("code").map(function()
+        let recipes = $("recipe").map(function()
         {
           return $(this);
         })
