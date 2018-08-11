@@ -94,8 +94,8 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 *You may use the tabs on the left side to switch between different categories:*
 
-<br><br>
-<p><strong>Information: </strong>In this section of the section of the Town hall GUI</p>
+<br>
+<p><strong>Information: </strong>This is the overall information section of the Town hall GUI</p>
    
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -105,16 +105,18 @@ After you have carefully decided where you want to place your Town Hall (Remembe
     <br><br>
     <ul>
      <li><strong>Page 1: </strong>you will see some statistics on your Citizens: The number of Citizens you have and a listing of the unemployed and workers. It will show you how many and what type you have.</li>
+     <br><br>
      <li><strong>Page 2: </strong>you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
-<p><strong>Actions: </strong>This is the most important section. You are able to see your Towns name and various Buttons here:</p>
+<p><strong>Actions: </strong>This is the most important section. Here you will see your Town's name and the Buttons:</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
+   <br><br><br>
     <img src="../../assets/images/gui/th_actions.png" class="img-fluid mx-auto" alt="TH GUI Actions Tab">
   </div>
   <div class="col-sm-12 col-md">
@@ -134,9 +136,9 @@ After you have carefully decided where you want to place your Town Hall (Remembe
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
-<p><strong>Permissions: </strong>Here you can invite other players to your Town to collaborate. You can add a player and give him a status in your Town. Each status will have certain privileges in the protection system that you can configure. Also you can set individual playera as "Hostile".</p>
+<p><strong>Permissions: </strong>Here you can invite other players to your Town to collaborate. You can add a player and give him a <i>Rank</i> in your Town. Each Rank will have certain privileges in the protection system that you can configure. Also you can set individual players as "Hostile".</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -144,12 +146,14 @@ After you have carefully decided where you want to place your Town Hall (Remembe
   </div>
   <div class="col-sm-12 col-md">
     <ul>
+     <br><br>
      <li><strong>Page 1: </strong>Here you can type the name of the player you want to add to your list and grant them certain permissions.</li>
+     <br><br>
      <li><strong>Page 2: </strong>It shows you the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them more rank or less rank.</li>
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
 <p><strong>Permissions Pg. 3 & 4: </strong>Here you check and manage the individual permissions for each Rank.</p>
 
@@ -159,41 +163,86 @@ After you have carefully decided where you want to place your Town Hall (Remembe
   </div>
   <div class="col-sm-12 col-md">
     <ul>
+     <br><br>
      <li><strong>Page 3: </strong>Here are the buttons for you to select each "Rank" that you would like to view and manage the individual permissions for.</li>
+     <br><br>
      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) tha you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission <b>you</b> want.</li>
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
-<p><strong>Permissions Pg. 5 & 6: </strong>In this section you can add a certain block at a certain position that will bypass the protection system for "interaction". Any player will be able to interact with that block regardless of having a rank or not in your Colony.</p>
+<p><strong>Permissions Pg. 5 & 6: </strong>In this section you can add a certain block's position that will bypass the protection system for "interaction". Any player will be able to interact with that block regardless of having a rank or not in your Colony.</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/th_permissions3.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab Pg.2">
+    <img src="../../assets/images/gui/th_permissions3.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab Pg.3">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
+     <br><br>
      <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make "Free for interaction".</li>
+     <br><br>
      <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction.</li>
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
+<p><strong>Citizens: </strong>This section just displays the names of the citizens in your Colony.</p>
 
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_citizens.png" class="img-fluid mx-auto" alt="TH GUI Citizens Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+     <br><br>
+     <li><strong>Page 1: </strong>Blank page except for the header (future use).</li>
+     <br><br>
+     <li><strong>Page 2: </strong>Here you will see the list of names of the citizens in your Colony.</li>
+    </ul>
+  </div>
+</div>
+<br>
 
-- **Citizens.-** Just the names of the Citizens. Your npc citizens, not players.
+<p><strong>Settings: </strong>This section is where you can control how your Citizens will be hired and assigned housing in your Colony.</p>
 
-[File:TH_CitizensGUI.png]
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_settings.png" class="img-fluid mx-auto" alt="TH GUI Settings Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+     <br><br>
+     <li><strong>Page 1: </strong>There are two buttons here:</li>
+       <ul>
+        <li><strong>Worker hiring mode: </strong>Clicking on this button you can switch between automatic or manual. If it's in automatic mode, you can't fire or hire any Citizen from any Worker's hut and the best "unemployed" citizen will be hired for you. In manual mode you will be able to <i>Hire</i> and <i>Fire</i> which ever citizen you want at any time.</li>
+        <li><strong>Housing assignment mode:</strong>Clicking on this button you can switch between automatic or manual. if it's in automatic mode the citizens will be assigned as soon as they are spawned and housing is available. In manual mode, you can select which Citizen will be housed at in each Citizen Hut (this is specially better if you have a large Colony and many workers spread out in a large area, so they are housed as close as possible to the workplace).</li>
+       </ul>
+     <br>
+     <li><strong>Page 2: </strong>Pick team Color: What ever color you pick from here, your guards will have a "glow", of this color, around them when you place them in "follow" mode. this is for the PVP system, so you know which are your guards when you are fighting. </li>
+    </ul>
+  </div>
+</div>
+<br>
 
-- **Settings.-** You may set it automatic hiring mode or Manual mode. Every time a building is finished and you have an unemployed citizen, he may be automatically assigned or you can manually assign him according to his "Traits".
+<p><strong>Work Orders: </strong>Here you will see the work orders the [Builder](../../source/workers/builder) has in the order they have been assigned. The builder will not start another order until he has successfully completed the top one.</p>
 
-[File:TH_SettingsGUI.png]
-
-- **Work Orders.-** Here you will see the work orders the [Builder](../../source/workers/builder) has in the order they have been assigned. The builder will not start another order until he has successfully completed the top one. Here you can delete any build order he has or change their priorities. When you delete a work order which is currently being built the builder will stop building and only continue when you assign him to this building again.
-
-[File:TH_WorkOrdersGUI.png]
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/ 	th_workorders.png" class="img-fluid mx-auto" alt="TH GUI Work Orders Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+     <br><br>
+     <li><strong>Page 1: </strong>Blank page except for the header (future use).</li>
+     <br><br>
+     <li><strong>Page 2: </strong>Here are all the <i>Build</i> orders listed, that have been created by you (including decorations and your own schematics as well as the mod's buildings). The builder will complete the builds in that order, from top to bottom. Here you can <i>Manage</i> the priority of the builds and even delete work orders. When you delete a work order which is currently being built the builder will stop building and will continue where he left off when you create the build/upgrade order again.</li>
+    </ul>
+  </div>
+</div>
+<br>
 
 ### Step 3
 
