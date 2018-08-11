@@ -2,7 +2,9 @@
 
 The Warehouse is the central place to hold and retrieve ALL of your materials and tools that are made and gathered by all of your workers. It is the central storage from where the [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers need. After you have crafted the Warehouse block, use your [Buiding Tool](../../source/tutorials/building_tool) to place the building.
 
-<br><p style="text-align:center;"><img src="../../assets/images/Buildings/warehouse_recipe.png" alt="Warehouse Recipe"></p><br>
+<br>
+<p style="text-align:center;"><img src="../../assets/images/Buildings/warehouse_recipe.png" alt="Warehouse Recipe"></p>
+<br>
 
 The building will hold ALL the materials and tools that are made/mined/harvested by all your workers. Level up the Warehouse to increase the storage capacity.
 
