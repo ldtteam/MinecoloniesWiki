@@ -244,6 +244,23 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 </div>
 <br>
 
+<p><strong>Happiness: </strong>This is the section for the global happiness of your Town, so you can see what area needs more attention to raise the happiness level.</p>
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_workorders.png" class="img-fluid mx-auto" alt="TH GUI Work Orders Tab">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+     <br><br>
+     <li><strong>Page 1: </strong>The happiness indices. You can keep track of the 3 main areas that will lower or raise the happiness of yout Town. There are 3 colors; Green (everything is fine), Orange (needs attention it's below optimal level), Red (Immediate attention is needed - it's in critically low level).</li>
+     <br><br>
+     <li><strong>Page 2: </strong>Intentionally blank for now.</li>
+    </ul>
+  </div>
+</div>
+<br>
+
 ### Step 3
 
 Before any building can be built, you have to craft the "[Builder's hut](../../source/workers/builder)" block in the crafting table and use your <a href="#build_tool">Build Tool</a> to place his building. Once you "commit" to the placement of the builder's hut, the block will be placed and the builder will be automatically assigned (or you can manually assign one with the best "traits" for builder if you changed this in the setting tab in the Town Hall's GUI).
