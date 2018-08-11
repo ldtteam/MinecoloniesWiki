@@ -8,7 +8,7 @@ Before you choose a place to build his Hut, take into account the distances amon
 
 Best Traits are: **Intelligence** and **Endurance.**
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/dman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/Workers/dman_hut.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/DeliveryMan.png" alt="Deliveryman"></p>
+<p style="text-align:center;"><img src="../../assets/images/Workers/dman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/Workers/dman_hut.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/deliveryman.png" alt="Deliveryman"></p>
 
 You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
