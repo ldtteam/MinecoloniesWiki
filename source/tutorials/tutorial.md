@@ -95,7 +95,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 *You may use the tabs on the left side to switch between different categories:*
 
 <br>
-<p><strong>Information: </strong>This is the overall information section of the Town hall GUI</p>
+<p><strong>Information: </strong>This is the overall information section of the Town Hall GUI</p>
    
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -126,7 +126,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Repair Building.- </strong>So the builder can "restore" the building to it's original schematic, when alterations have changes something.</li>
      <li><strong>Recall Citizens.- </strong>So you can make <i>ALL</i> citizens (wokers or unemployed) to gather at the Town Hall block location, they will be teleported there. .</li>
      <li><strong>Toggle Specialization.- </strong>For future use, has no purpose at the moment.</li>
-     <li><strong>Rename Colony.- </strong>To change the name of the Colony (from player's name) to anything you want, f.e. in coop playing and everyone decides on a name.</li>
+     <li><strong>Rename Colony.- </strong>To change the name of the Colony (from player's name) to anything you want, f.e. in coop play and everyone decides on a name.</li>
     </ul>
    <br>
    <p><strong>Page 2: </strong>This is for the PVP part of the mod, here you have:</p>
@@ -218,7 +218,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Page 1: </strong>There are two buttons here:</li>
        <ul>
         <li><strong>Worker hiring mode: </strong>Clicking on this button you can switch between automatic or manual. If it's in automatic mode, you can't fire or hire any Citizen from any Worker's hut and the best "unemployed" citizen will be hired for you. In manual mode you will be able to <i>Hire</i> and <i>Fire</i> which ever citizen you want at any time.</li>
-        <li><strong>Housing assignment mode:</strong>Clicking on this button you can switch between automatic or manual. if it's in automatic mode the citizens will be assigned as soon as they are spawned and housing is available. In manual mode, you can select which Citizen will be housed at in each Citizen Hut (this is specially better if you have a large Colony and many workers spread out in a large area, so they are housed as close as possible to the workplace).</li>
+        <li><strong>Housing assignment mode: </strong>Clicking on this button you can switch between automatic or manual. if it's in automatic mode the citizens will be assigned as soon as they are spawned and housing is available. In manual mode, you can select which Citizen will be housed at in each Citizen Hut (this is specially better if you have a large Colony and many workers spread out in a large area, so they are housed as close as possible to the workplace).</li>
        </ul>
      <br>
      <li><strong>Page 2: </strong>Pick team Color: What ever color you pick from here, your guards will have a "glow", of this color, around them when you place them in "follow" mode. this is for the PVP system, so you know which are your guards when you are fighting. </li>
@@ -253,7 +253,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
   <div class="col-sm-12 col-md">
     <ul>
      <br><br>
-     <li><strong>Page 1: </strong>The happiness indices. You can keep track of the 3 main areas that will lower or raise the happiness of yout Town. There are 3 colors; Green (everything is fine), Orange (needs attention it's below optimal level), Red (Immediate attention is needed - it's in critically low level).</li>
+     <li><strong>Page 1: </strong>The happiness indices. You can keep track of the 3 main areas that will lower or raise the happiness of your Town. There are 3 colors; Green (everything is fine), Orange (needs attention it's below optimal level), Red (Immediate attention is needed - it's in critically low level).</li>
      <br><br>
      <li><strong>Page 2: </strong>Intentionally blank for now.</li>
     </ul>
