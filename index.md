@@ -1,5 +1,4 @@
-Welcome to the Minecolonies Wiki!
-=
+# Welcome to the Minecolonies Wiki!
 
 ### About our Mod
 
