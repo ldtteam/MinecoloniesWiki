@@ -1,14 +1,11 @@
 
 # Minecraft Java Edition
 
-## Installing Miecolonies Mod on your original Minecraft Launcher. No Twitch Client, no other mods.
+## Installing Minecolonies Mod on your original Minecraft Launcher. No Twitch Client, no other mods.
 
-* This process is for installing only the Minecolonies mod in your original Minecraft launcher. You will _not_ be able to connect to the **Minecolonies Official 1.12.2 Server** due to the server having a balanced variety of other mods as well.
+* This process is for installing only the Minecolonies mod in your original Minecraft launcher. You will _not_ be able to connect to the **Minecolonies Official 1.12.2 Test Server** due to the server having a balanced variety of other mods as well.
 
-* For connecting to the Official Server, install the Twitch Client or visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods used on Server. If all these additional mods are downloaded and installed as well, you will be able to connect to the official Server. 
-
-### The Official Minecolonies Server Address is:
-![Server address](../../assets/images/installation/Server.png)
+* For connecting to the Official Test Server, install the [Twitch Client](../installation/twitch) or use [MultiMC](../installation/multimc). You can visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods and the versions we are currently using on the Official Test Server, as well as all the appropriate configs, scripts and the server.dat file for our modpack Official Test Server. If all these additional mods, configs, scripts and the server.dat are downloaded and installed manually, you will be able to connect to our Official Test Server. 
 
 * Installation of the MineColonies mod is very simple. It does require Minecraft Forge to be able to integrate mods into the Minecraft game.
 
@@ -24,8 +21,7 @@ _We cannot offer support on the installation of Minecraft Forge. This guide is m
 
 * Run the downloaded recommended version and make sure it's on "Install Client". Installation path is preset according to Minecraft's standard installation path. If you have it installed in a different directory change the installation directory. When it's done you will see a "Complete" message.
 
-| ![Forge installer](../../assets/images/installation/forge_1.png) | ![Forge installed](../../assets/images/installation/forge_2.png) | 
-|---|---|
+| ![Forge installer](../../assets/images/installation/forge_1.png) | ![Forge installed](../../assets/images/installation/forge_2.png) |
 
 ### Step 3
 
