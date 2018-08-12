@@ -6,7 +6,7 @@ The Library is the *ONLY* way for you to raise your Citizen's Skills. When a Cit
 <p style="text-align:center;"><img src="../../assets/images/Buildings/library_recipe.png" alt="Library Recipe"></p>
 <br><br>
 
-You can aasign Citizens to the library from it's GUI, but only 2 citizens per Lilbrary level can be assigned. So we have: 
+You can aasign Citizens to the library from it's GUI, but only 2 citizens can be assigned per Library level. So we have: 
 
 | Building Level | Citizens "Educated" |
 | ----- | ----- |
@@ -42,3 +42,5 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
     </ul>
   </div>
 </div>
+
+**Note** The unemployed citizens will be the only ones available to *HIRE* in the Library. You will only be able to see available citizens to hire if there is room in the Library (according to it's level). So for example, if you have a Library level 1, you can only hire 2 citizens. If it already has 2 citizens assigned, it will only show you those two citizens currently assigned, with the "fire" button and will not list anymore to hire, until there is space availabe.
