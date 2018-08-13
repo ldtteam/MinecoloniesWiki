@@ -23,9 +23,9 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 When accessing the Composter's Hut block (right clicking on it), you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <br>
     <img src="../../assets/images/gui/composter_gui.png" class="img-fluid mx-auto" alt="Composter GUI">
   </div>
   <div class="col-sm-12 col-md">
