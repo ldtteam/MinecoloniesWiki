@@ -26,7 +26,7 @@ Once the builder is done, you will have to capture and bring in 2 of the appropr
 
 The herder will currently work with these 4 type of animals, but might work with some "modded" animals (from other mods), as long as they are *coded* as cow, sheep, pig or chicken and as long as they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the herder will collect these as well.
 
-**Note:** The Herder will only keep in alive 2 of every kiind of animal per hut level, so at level 5 they will have 10 animals in their holding pens alive to breed and butcher. this means they will have *MORE* and faster production and collection of meats, drops and by products. So:
+**Note:** The Herder will only keep alive 2 of every kind of animal per hut level, so at level 5 they will have 10 animals in their holding pens alive to breed and butcher. this means they will have *MORE* and faster production and collection of meats, drops and by products. So:
 
 
 | Building Level | Animals "Housed" |
@@ -44,7 +44,7 @@ Now you can access the Herder's Hut block (right click on it) and you will see a
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/herdergui.png" class="img-fluid mx-auto" alt="Herder GUI">
+    <img src="../../assets/images/gui/cowboy_gui.png" class="img-fluid mx-auto" alt="Herder GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -64,7 +64,7 @@ The **Cowboy** is the *ONLY* type of Herder that has a pg.2 in the Hut GUI. With
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/cowboygui2.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/cowboy_gui2.png" class="img-fluid mx-auto" alt="Cowboy GUI pg.2">
   </div>
   <div class="col-sm-12 col-md">
     <br>
