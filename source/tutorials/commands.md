@@ -26,6 +26,7 @@ These are the in game commands currently available, most require that a user hav
 | whoami | Outputs your name, the name of your colony and the coordinates for the center | com.minecolonies.coremod.WhoAmI | OP |
 | whereami | Outputs how far you are from a colony, if you are near one, or that there is none nearby | com.minecolonies.coremod.WhereAmI | OP |
 | scan [player: online player] <x1: x coord> <y1: y coord> <z1: z coord> <x2: x coord> <y2: y coord> <z2: z coord> [name: name] | Scans an area and saves it as a schematic | com.minecolonies.coremod.Scan | OP |
+{: .table .table-responsive}
 
 ## Colonies Commands
 
@@ -35,6 +36,7 @@ These are the in game commands currently available, most require that a user hav
 | ------------------------ | ------------------------------------------ | ---------------------------------------------- | ------------------------ |
 | list [page: page number] | Lists all colonies                         | com.minecolonies.coremod.ListColonies          | OP                       |
 | rsresetall               | Resets the request system for all colonies | com.minecolonies.coremod.RequestSystemResetAll | OP                       |
+{: .table .table-responsive}
 
 ## Kill Commands
 
@@ -49,6 +51,7 @@ These are the in game commands currently available, most require that a user hav
 | cow | Kills all cows inside all colonies | com.minecolonies.coremod.CowKill | OP |
 | pig | Kills all pig inside all colonies | com.minecolonies.coremod.PigKill | OP |
 | sheep | Kills all sheep inside all colonies | com.minecolonies.coremod.SheepKill | OP |
+{: .table .table-responsive}
 
 ## Colony Commands
 
@@ -67,6 +70,7 @@ These are the in game commands currently available, most require that a user hav
 | raid <colony: colony id> | Schedules a barbarian raid for the specified colony to start right now | com.minecolonies.coremod.DoRaidNow | OP |
 | raid-tonight <colony: colony id> | Schedules a barbarian raid for the specified colony to start the coming night | com.minecolonies.coremod.DoRaidTonight | OP |
 | claim [colony: colony id] [range: number in chunks] [add: true/false] | Claims chunks a specified number of chunks from your location | com.minecolonies.coremod.Claim | OP |
+{: .table .table-responsive}
 
 ## Citizens Commands
 
@@ -78,6 +82,7 @@ These are the in game commands currently available, most require that a user hav
 | kill <colony: colony id> <citizen: citizen id/full name>    | Kills a specified citizen in a colony                         | com.minecolonies.coremod.KillCitizen    | ALL                      |
 | respawn <colony: colony id> <citizen: citizen id/full name> | Respawns the specified citizen in a colony                    | com.minecolonies.coremod.RespawnCitizen | ALL                      |
 | info <colony: colony id> <citizen: citizen id/full name>    | Gives basic information about a specified citizen in a colony | com.minecolonies.coremod.CitizenInfo    | ALL                      |
+{: .table .table-responsive}
 
 ## RS Commands
 
@@ -86,3 +91,4 @@ These are the in game commands currently available, most require that a user hav
 | Command                   | Command Description                    | Permission Node (Servers)        | Default Permission Level |
 | ------------------------- | -------------------------------------- | -------------------------------- | ------------------------ |
 | reset <colony: colony id> | Resets the request system for a colony | com.minecolonies.coremod.RSReset | OP                       |
+{: .table .table-responsive}
