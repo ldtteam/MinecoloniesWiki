@@ -34,8 +34,6 @@ h1 {
 }
 
 table {
-    width: 100%;
-    max-width: 100%;
     margin-bottom: 1rem;
 	background-color: transparent;
 }
@@ -109,6 +107,18 @@ img {
     padding:2px;
 }
 
+.invslot-stacksize {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: Minecraft,sans-serif !important;
+    font-weight: normal !important;
+    color: #FFF !important;
+    text-shadow: 2px 2px 0 #3F3F3F;
+    filter: dropshadow(color=#3F3F3F,offx=2,offy=2);
+    z-index: 2;
+}
+
 .crafting-table {
     display:inline-block;
     position:relative;
@@ -146,8 +156,8 @@ img {
 
 .crafting-table > .ct-icons {
     position:absolute;
-    top:37px;
-    right:82px;
+    top:5px;
+    right:5px;
 }
 
 .crafting-table .ct-shapeless,.crafting-table .ct-fixed {
