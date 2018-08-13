@@ -51,7 +51,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder build confirm">
+    <img src="../../assets/images/gui/builder_build.png" class="img-fluid mx-auto" alt="Builder Build confirm">
   </div>
   <div class="col-sm-12 col-md">
     <p>After pressing the Build button on page 1 you now have a few options to consider:</p>
