@@ -2,3 +2,4 @@ title: Minecolonies Wiki
 description: >- # this means to ignore newlines until "remote-theme"
   Welcome to the Minecolonies Wiki!
 remote-theme: jekyll/minima
+markdown: kramdown
