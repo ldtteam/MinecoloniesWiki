@@ -10,13 +10,11 @@ Best Traits are: **Dexterity** and **Strength**.
 
 Ther are 4 type of Herders you can craft and use:
 
-| **Cow Herder (Cowboy)** | **Sheep Herder (shepherd)** | **Pig Herder (Swine Herder)** | **Chicken Herder (Chicken Herder)** |
+| **Cow Herder (Cowboy)** | **Sheep Herder (Shepherd)** | **Pig Herder (Swine Herder)** | **Chicken Herder (Chicken Herder)** |
 |:-:|:-:|:-:|:-:|
 | <recipe>cowboy</recipe> | <recipe>shepherd</recipe> | <recipe>swineherder</recipe> | <recipe>chickenherder</recipe> |
-
-<br>
-<p style="text-align:center;"><img src="../../assets/images/Workers/farmer_recipe.png" alt="Farmer Recipe">    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/farmer.png" alt="Farmer"></p>
-<br>
+| <img src="../../assets/images/Workers/cowboy_hutblock.png" alt="Cowboy Hut Block"> | <img src="../../assets/images/Workers/shepherd_hutblock.png" alt="Shepherd Hut Block"> | <img src="../../assets/images/Workers/swine_hutblock.png" alt="Swine Hut Block"> | <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block"> |
+| <img src="../../assets/images/Workers/Cowboy.png" alt="Cowboy"> | <img src="../../assets/images/Workers/Shepherd.png" alt="Shepherd"> | <img src="../../assets/images/Workers/swineherder.png" alt="Swine"> | <img src="../../assets/images/Workers/Chickenherder.png" alt="Chicken"> |
 
 You now officially have a "Herder!" **CONGRATULATIONS!**
 
