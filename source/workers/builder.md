@@ -53,15 +53,12 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder build confirm">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br>
+  <div class="col-sm-12 col-md">
     <p>After pressing the Build button on page 1 you now have a few options to consider:</p>
     <ul>
       <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
-      <br>
       <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
-      <>br
       <li><strong>Cancel Button</strong> To cancel this view screen and go back to the Builder's Hut GUI page 1.</li>
-      <br>
       <li><strong>Build Building Button</strong> When you are ready to "commit" to the build of this selected schematic style.</li>
     </ul>
   </div>
@@ -75,7 +72,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder Upgrade confirm">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br>
+  <div class="col-sm-12 col-md">
     <p>After pressing the Upgrade button on page 1 you now have a few options to consider:</p>
     <ul>
       <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
