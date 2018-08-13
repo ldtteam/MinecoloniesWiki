@@ -47,8 +47,6 @@ Now you can access the Herder's Hut block (right click on it) and you will see a
     <img src="../../assets/images/gui/cowboy_gui.png" class="img-fluid mx-auto" alt="Herder GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul><br>
       {% for item in site.data.gui.global %}
@@ -67,11 +65,11 @@ The **Cowboy** is the *ONLY* type of Herder that has a pg.2 in the Hut GUI. With
     <img src="../../assets/images/gui/cowboy_gui2.png" class="img-fluid mx-auto" alt="Cowboy GUI pg.2">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
+    <br><br><br>
     <p>This is "page 2" of the GUI. It shows one <br>buttons:</p>
     <ul>
       <li><b>Collecting Milk:</b> By default. In this mode you will have to provide the herder as many empty buckets as you like and in return he will milk the cows and give you back buckets of milk along with the meat and drops.</li>
+      <br>
       <li><b>Not Collecting Milk::</b> In this mode, the Herder will not be asking or waiting for buckets, it will jsut breed and butcher the cows and will not collect milk.</li>
     </ul>
   </div>
