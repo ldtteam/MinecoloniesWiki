@@ -21,6 +21,7 @@ Minecolonies has it's own complete multiplayer system. Our permission system set
 <div class="embed-responsive embed-responsive-16by9 center">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EUfgNMKw-MU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
+<br />
 
 ---
 
