@@ -16,6 +16,7 @@ Now you will have to issue the builder the build assignment so they can build th
 
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
@@ -29,6 +30,8 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
     </ul>
   </div>
 </div>
+
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
@@ -40,7 +43,46 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
       <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
     </ul>
   </div>
-</div><br><br>
+</div>
+<br>
+
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Build</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option you <i>HAVE To CONFIRM</i> the Build by pressing the Build button so the build order is created.</p>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/builder_build.png" class="img-fluid mx-auto" alt="Builder Build confirm">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p>After pressing the Build button on page 1 you now have a few options to consider:</p>
+    <ul>
+      <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
+      <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
+      <li><strong>Cancel Button</strong> To cancel this view screen and go back to the Builder's Hut GUI page 1.</li>
+      <li><strong>Build Building Button</strong> When you are ready to "commit" to the build of this selected schematic style.</li>
+    </ul>
+  </div>
+</div>
+<br>
+
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Upgrade</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option you <i>HAVE To CONFIRM</i> the Build by pressing the Upgrade Building button so the build order is created.</p>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder Upgrade confirm">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p>After pressing the Upgrade button on page 1 you now have a few options to consider:</p>
+    <ul>
+      <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
+      <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
+      <li><strong>Cancel Button</strong> To cancel this view screen and go back to the Builder's Hut GUI page 1.</li>
+      <li><strong>Upgrade Building Button</strong> When you are ready to "commit" to the build of this selected schematic style.</li>
+      <li><strong>Reposition Button</strong> To Move the building from it's current location. After pressing this button you will be taken to the 3D view of the building tool GUI so you can move it to where you want it.</li>
+    </ul>
+  </div>
+</div>
 
 ## A few things to consider
 

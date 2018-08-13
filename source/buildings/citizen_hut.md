@@ -2,8 +2,9 @@
 
 The Citizen Hut is the *BEST* way for you to get more Citizen's for your Town. After you have crafted the Citizen Hut block, use your [Building Tool](../../source/tutorials/building_tool) to place the building. 
 
-<p style="text-align:center;"><img src="../../assets/images/Buildings/citizen_recipe.png" alt="Citizen Hut Recipe"></p>
-<br><br>
+<br>
+<p style="text-align:center;"><recipe>citizen</recipe></p>
+<br>
 
 The building will virtually house your Citizens. Each level of the Citizen Hut will "house" 1 Citizen. So: 
 
