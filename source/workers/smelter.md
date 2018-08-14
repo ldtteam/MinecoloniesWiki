@@ -20,7 +20,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 
 | Building Level | Normal Output | % of Doubling Output | % of Tripling Output | Furnace(s) |
-| ----- | ----- | ----- | ----- | ----- |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
 | 1 | 100% | Worker Level Chance | --- | 1 |
 | 2 | 100% | 2 x Worker Level Chance | --- | 2 |
 | 3 | --- | 100% | --- | 3 |
