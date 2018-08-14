@@ -14,7 +14,19 @@ You now officially have a Composter! **CONGRATULATIONS!**
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Composter’s Hut”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
-**Hint:** Once the builder is done you will have to go to page 2 of the hut GUI and "define a list of items to be composted". All recognized items (even modded items) will be listed there. You will have to select from that list waht you want the composter to use to make compost.
+**Note:** Once the builder is done you will have to go to page 2 of the hut GUI and "define a list of items to be composted". All recognized items (even modded items) will be listed there. You will have to select from that list waht you want the composter to use to make compost.
+
+**Hint:** Once the builder is done you will want to upgrade the Composter to get all the awesome perks it has to offer for higher levels. The higher the level of the Hut the more Barrels the Composter will be able to use. So:
+
+
+| Building Level | Barrel(s) |
+| :-----: | :-----: |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+
 
 
 **Hint:** If you see the builder has not finished building/upgrading your Composter’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
