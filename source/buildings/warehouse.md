@@ -23,11 +23,11 @@ The level of the Warehouse will determine how many Deliverymen will be able to u
 
 ## Hut GUI
 
-When accessing the Citizen's Hut block (right clicking on it) you will see a GUI with different options:
+When accessing the Warehouse's Hut block (right clicking on it) you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/citizenhutgui.png" class="img-fluid mx-auto" alt="Citizen Hut GUI">
+    <img src="../../assets/images/gui/warehousegui.png" class="img-fluid mx-auto" alt="Warehouse Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -42,6 +42,24 @@ When accessing the Citizen's Hut block (right clicking on it) you will see a GUI
     </ul>
   </div>
 </div>
+
 <br><br>
 <p style="text-align:center;"><img src="../../assets/images/Buildings/warehouse.png" alt="Warehouse"></p>
 <br><br>
+
+By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find:
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/warehousegui2.png" class="img-fluid mx-auto" alt="Warehouse GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul><br><br>
+      <li><strong>Block of Emerald:</strong> You can upgrade the amount of storage the Warehouse has to <i>Double</i> it's capacity by pressing this button and giving it 1 block of emerald. This can <b>ONLY</b> be done when the warehouse is at Level 5 build.</li>
+    </ul>
+  </div>
+</div>
+<br>
+
+
