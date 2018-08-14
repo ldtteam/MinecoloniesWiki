@@ -42,10 +42,7 @@ When accessing the Warehouse's Hut block (right clicking on it) you will see a G
     </ul>
   </div>
 </div>
-
-<br><br>
-<p style="text-align:center;"><img src="../../assets/images/Buildings/warehouse.png" alt="Warehouse"></p>
-<br><br>
+<br>
 
 By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find:
 
@@ -60,6 +57,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
     </ul>
   </div>
 </div>
+
 <br>
-
-
+<p style="text-align:center;"><img src="../../assets/images/Buildings/warehouse.png" alt="Warehouse"></p>
+<br>
