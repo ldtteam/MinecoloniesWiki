@@ -16,7 +16,17 @@ You now officially have a Smeltery! **CONGRATULATIONS!**
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Smeltery’s Hut”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
-**Hint:** Once the builder is done you will want to upgrade the Smeltery to get all the awesome perks it has to offer for higher levels. The higher the level of the Hut the higher chance it has to double and even triple the ingot output per block of ore.
+**Hint:** Once the builder is done you will want to upgrade the Smeltery to get all the awesome perks it has to offer for higher levels. The higher the level of the Hut the more furnaces the Smelter will be able to use and it has a higher chance to double and even triple the ingot output per block of ore. The way it works is that the *Worker level* determines the "Chance" is has to either Double or Triple the ingot output of the ores, according to the Hut level. So:
+
+
+| Building Level | Normal Output | % of Doubling Output | % of Tripling Output | Furnace(s) |
+| ----- | ----- | ----- | ----- | ----- |
+| 1 | 100% | Worker Level Chance | --- | 1 |
+| 2 | 100% | 2 x Worker Level Chance | --- | 2 |
+| 3 | --- | 100% | --- | 3 |
+| 4 | --- | 100% | Worker Level Chance | 4 |
+| 5 | --- | 100% | Worker Level Chance | 5 |
+
 
 **Hint:** If you see the builder has not finished building/upgrading your Smeltery’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
