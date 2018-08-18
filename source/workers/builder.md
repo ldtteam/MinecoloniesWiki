@@ -21,6 +21,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
+  <br>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
@@ -36,7 +37,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br>
+  <div class="col-sm-12 col-md"><br><br><br><br>
     <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
     <ul>
       <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade they are currently working on. This amount will change as they place the materials and will show <strong>only</strong> what materials they still need to place. The blocks in Red color are the ones neither you nor the builder has in it's inventory</li><br><br>
@@ -53,10 +54,10 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_build.png" class="img-fluid mx-auto" alt="Builder Build confirm">
   </div>
-  <div class="col-sm-12 col-md">
+  <div class="col-sm-12 col-md"><br><br><br><br>
     <p>After pressing the Build button on page 1 you now have a few options to consider:</p>
     <ul>
-      <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
+      <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position. Since each schematic is different.</li>
       <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
       <li><strong>Cancel Button</strong> To cancel this view screen and go back to the Builder's Hut GUI page 1.</li>
       <li><strong>Build Building Button</strong> When you are ready to "commit" to the build of this selected schematic style.</li>
@@ -72,7 +73,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder Upgrade confirm">
   </div>
-  <div class="col-sm-12 col-md">
+  <div class="col-sm-12 col-md"><br><br><br>
     <p>After pressing the Upgrade button on page 1 you now have a few options to consider:</p>
     <ul>
       <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
