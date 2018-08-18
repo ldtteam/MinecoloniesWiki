@@ -1,6 +1,6 @@
 # Barracks
 
-The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Guard](../../source/workers/guard) Towers within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will spawn 1 new citizen for every level built! So if you have a full level 5 Barracks with all 4 Towers level 5 as well, you will have 20 additional citizens to employ as you like! Awesome, right? After they have spawned you will have to "Hire" them as guards in your Towers or any other worker type you want.
+The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Guard Towers](../../source/workers/guard) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will spawn 1 new citizen for every level built! So if you have a full level 5 Barracks with all 4 Towers level 5 as well, you will have 20 additional citizens to employ as you like! Awesome, right? After they have spawned you will have to "Hire" them as guards in your Towers or any other worker type you want.
 
 Before you choose a place to build the Barracks, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc.
 
@@ -14,11 +14,12 @@ You now officially have a Barracks, **CONGRATULATIONS!**
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Barracks”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
-**Hint:** If you see the builder has not finished building/upgrading your Barracks and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+**Hint:** If you see the [builder](../../source/workers/builder) has not finished building/upgrading your Barracks and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
-Once the builder is done you will have to create the build order for the Guard Tower and build these up individually as well. The level of the Guard's Tower will dictate how far it can patrol, so if you want a longer patrol range, be sure to upgrade each Guard's Tower. Also there is a limit to the amount of Guard Towers a Barrack can have built and also at what level the Guard Tower can be built. They both depend on the level of the Barracks. Here you can see in more detail:
+<p style="color:Blue;"><b>Note:</b> Once the builder is done you will have to create the build order for each Guard Tower and build these up individually as well. The level of the Guard's Tower will dictate how far it can patrol, so if you want a longer patrol range, be sure to upgrade each Guard's Tower. Also there is a limit to the amount of Guard Towers a Barrack can have built and also at what level the Guard Tower can be built. They both depend on the level of the Barracks. Here you can see in more detail:</p>
 
 <br>
+
 | Barracks Level | Amount of Guard Towers | Level of Guard Towers |
 | :----: | :----: | :----: |
 | 1 | 1 | 1 |
@@ -26,6 +27,7 @@ Once the builder is done you will have to create the build order for the Guard T
 | 3 | 3 | 3 |
 | 4 | 4 | 4 |
 | 5 | 4 | 5 |
+
 <br>
 
 Now you can access the Barracks block (right click on it) and you will see a GUI with different options:
@@ -33,7 +35,7 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/barracksgui.png" class="img-fluid mx-auto" alt="Barracks GUI">
+    <img src="../../assets/images/Buildings/barracksgui.png" class="img-fluid mx-auto" alt="Barracks GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Barracks and it's current Level. Will also keep track of and display the "Last Barbarian Spawns:". And the buttons:</p>
@@ -48,7 +50,7 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
+    <img src="../../assets/images/Buildings/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
   </div>
   <div class="col-sm-12 col-md"><br><br><br>
     <p>After pressing the Swithc Style button you now have a few options to consider:</p>
@@ -63,4 +65,4 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 </div>
 <br><br>
 
-**Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor as well and reap the benefits of the protection he/she'll be able to provide and the drops the Guard will be picking up along the way.
+
