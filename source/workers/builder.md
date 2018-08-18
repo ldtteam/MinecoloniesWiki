@@ -16,13 +16,12 @@ Now you will have to issue the builder the build assignment so they can build th
 
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
   <br>
-  <div class="col-sm-12 col-md">
+  <div class="col-sm-12 col-md"><br><br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
