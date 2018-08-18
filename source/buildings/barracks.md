@@ -20,7 +20,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 <br>
 
-| Barracks Level | Max # of Guard Towers | Max Level of Guard Towers |
+| Barracks Level | Max # of Guard Towers | Max Level of Guard Tower |
 | :----: | :----: | :----: |
 | 1 | 1 | 1 |
 | 2 | 2 | 2 |
