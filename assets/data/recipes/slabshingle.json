@@ -18,6 +18,7 @@
       "secondItem": "minecraft/stick",
       "thirdItem": "minecraft/stick"
     },
-    "product": "minecolonies/blockshingleslab"
+    "product": "minecolonies/blockshingleslab",
+    "amount": "8"
   }
 ]}

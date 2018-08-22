@@ -18,6 +18,7 @@
       "secondItem": "minecraft/stick",
       "thirdItem": "minecraft/brick"
     },
-    "product": "minecolonies/blockshingle_oak"
+    "product": "minecolonies/blockshingle_oak",
+    "amount": "8"
   }
 ]}

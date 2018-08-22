@@ -8,9 +8,9 @@
     },
     "secondRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecolonies/sceptersteel",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": "minecraft/paper",
+      "secondItem": "minecraft/paper",
+      "thirdItem": "minecraft/paper"
     },
     "thirdRow":
     {
@@ -18,7 +18,7 @@
       "secondItem": "minecraft/planks_oak",
       "thirdItem": "minecraft/planks_oak"
     },
-    "product": "minecolonies/blocksubstitution",
-    "amount": "16"
+    "product": "minecolonies/blockwaypoint",
+    "amount": "8"
   }
 ]}

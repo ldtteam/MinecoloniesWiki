@@ -18,6 +18,7 @@
       "secondItem": "minecraft/planks_oak",
       "thirdItem": "minecraft/planks_oak"
     },
-    "product": "minecolonies/blockwaypoint"
+    "product": "minecolonies/blockwaypoint",
+    "amount": "16"
   }
 ]}
