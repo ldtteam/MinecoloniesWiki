@@ -16,12 +16,12 @@ Now you will have to issue the builder the build assignment so they can build th
 
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
-  <div class="col-sm-12 col-md">
+  <br>
+  <div class="col-sm-12 col-md"><br><br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -36,7 +36,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br>
+  <div class="col-sm-12 col-md"><br><br><br><br>
     <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
     <ul>
       <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade they are currently working on. This amount will change as they place the materials and will show <strong>only</strong> what materials they still need to place. The blocks in Red color are the ones neither you nor the builder has in it's inventory</li><br><br>
@@ -46,17 +46,17 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 </div>
 <br>
 
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Build</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option you <i>HAVE To CONFIRM</i> the Build by pressing the Build button so the build order is created.</p>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Build</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Build Building</b> button so the build order is created.</p>
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_build.png" class="img-fluid mx-auto" alt="Builder Build confirm">
   </div>
-  <div class="col-sm-12 col-md">
+  <div class="col-sm-12 col-md"><br><br><br><br>
     <p>After pressing the Build button on page 1 you now have a few options to consider:</p>
     <ul>
-      <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
+      <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position. Since each schematic is different.</li>
       <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
       <li><strong>Cancel Button</strong> To cancel this view screen and go back to the Builder's Hut GUI page 1.</li>
       <li><strong>Build Building Button</strong> When you are ready to "commit" to the build of this selected schematic style.</li>
@@ -65,14 +65,14 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 </div>
 <br>
 
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Upgrade</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option you <i>HAVE To CONFIRM</i> the Build by pressing the Upgrade Building button so the build order is created.</p>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Upgrade</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder Upgrade confirm">
   </div>
-  <div class="col-sm-12 col-md">
+  <div class="col-sm-12 col-md"><br><br><br>
     <p>After pressing the Upgrade button on page 1 you now have a few options to consider:</p>
     <ul>
       <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
@@ -83,6 +83,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
     </ul>
   </div>
 </div>
+<br><br>
 
 ## A few things to consider
 
