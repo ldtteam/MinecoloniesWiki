@@ -136,6 +136,11 @@ class JSONReader {
                 {
                   output += "<img src=\"../../assets/images/icons/" + data.recipes[i].product + ".png\" alt=" + data.recipes[i].product + " class=\"inv-sprite\">";
                 }
+
+                if (data.recipes[i].amount >= 1 && data.recipes[i].amount <= 64)
+                {
+                  output += "<div class=\"invslot-stacksize\">" + data.recipes[i].amount + "</div>"
+                }
               output += `
               </div>
             </div>
@@ -193,7 +198,7 @@ class JSONReader {
   convertToSlideshow()
   {
     $("img[src*='planks']").attr("src", "../../assets/images/icons/minecraft/planks_any.gif");
-    $("img[src*='log']").attr("src", "../../assets/images/icons/minecraft/log_any.gif");
+    $("img[src*='log_oak']").attr("src", "../../assets/images/icons/minecraft/log_any.gif");
     $("img[src*='boat']").attr("src", "../../assets/images/icons/minecraft/any_boat.gif");
     $("img[src*='oak_frame']").attr("src", "../../assets/images/icons/minecolonies/frames_input.gif");
     $("img[src*='oak_doublecrossed']").attr("src", "../../assets/images/icons/minecolonies/frames_output.gif");
