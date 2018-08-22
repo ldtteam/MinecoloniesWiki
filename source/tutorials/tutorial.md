@@ -14,7 +14,10 @@ But one of the first questions you should ask yourself is: "*Where should I put 
 
 <p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Building Tool Video.</a></b></p>
 
-<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/DVGGDUXbTOY" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
+<div class="embed-responsive embed-responsive-16by9 center">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<br />
 
 To start your colony you need to craft either a [Supply Ship](../../source/buildings/supply_ship) or a [Supply Camp](../../source/buildings/supply_camp) first (only one of these can be placed per player per world).  By default, only one colony can be started per player per world. Place the Supply Ship/Camp block using the building tool for the best placement or by right clicking the ground and a chest will spawn exactly where you clicked on the ground. Within this chest will be a Town Hall block and a Building Tool. **This is the only way to obtain the Town Hall block, it can't be crafted.**
 
@@ -42,7 +45,10 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
 <p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Build Tool Video.</a></b></p>
 
-<p style="text-align:center;"><embed width="854" height="480" src="https://www.youtube.com/embed/DVGGDUXbTOY" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
+<div class="embed-responsive embed-responsive-16by9 center">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<br />
 
 ### Placement of the Supply Ship or Supply Camp 
 
