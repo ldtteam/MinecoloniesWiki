@@ -25,7 +25,7 @@ These are the in game commands currently available, most require that a user hav
 | check | Checks all colonies for ones where the owner hasn't played in a set amount of time, giving the option to delete them | com.minecolonies.coremod.CheckForAutoDeletes | OP |
 | whoami | Outputs your name, the name of your colony and the coordinates for the center | com.minecolonies.coremod.WhoAmI | OP |
 | whereami | Outputs how far you are from a colony, if you are near one, or that there is none nearby | com.minecolonies.coremod.WhereAmI | OP |
-| scan [player: online player] <x1: x coord> <y1: y coord> <z1: z coord> <x2: x coord> <y2: y coord> <z2: z coord> [name: name] | Scans an area and saves it as a schematic | com.minecolonies.coremod.Scan | OP |
+| scan [player: online player] `<x1: x coord> <y1: y coord> <z1: z coord> <x2: x coord> <y2: y coord> <z2: z coord>` [name: name] | Scans an area and saves it as a schematic | com.minecolonies.coremod.Scan | OP |
 {: .table .table-responsive}
 
 ## Colonies Commands
