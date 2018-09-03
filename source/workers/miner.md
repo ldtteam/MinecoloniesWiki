@@ -1,16 +1,20 @@
 # Miner
 
+Welcome to the Miner’s Information Site.
+
 The Miner is the strongest part of your Town. The Miner will dig and create mineshafts, collect; cobblestone, granite, diorite, andesite, dirt, sand, sandstone, etc. as well as all the *ORES* the miner comes across. Important for all the Towns' building needs and crafting tools and weapons for your workers. Any additional modded ore should also be picked up by the miner.
 
-To begin with you have to craft the Miner's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Miner's hut, the block will be placed and the Miner will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Miner if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. 
+
+After you have selected a place for the Hut, you have to craft the Miner's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Miner's hut, the block will be placed and the Miner will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Miner if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Best Traits are: **Strength** and **Endurance**.
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/Workers/miner_recipe.png" alt="Miner Recipe">    <img src="../../assets/images/Workers/miner_hut.png" alt="Miner Hut Block">    <img src="../../assets/images/Workers/miner.png" alt="Miner"></p>
+<p style="text-align:center;"><recipe>miner</recipe>     <img src="../../assets/images/Workers/miner_hut.png" alt="Miner Hut Block">    <img src="../../assets/images/Workers/miner.png" alt="Miner"></p>
 <br>
 
-You now officially have a miner! **CONGRATULATIONS!**
+You now officially have a Miner! **CONGRATULATIONS!**
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Farmer’s Hut”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
@@ -30,7 +34,7 @@ When accessing the Miner's Hut block (right clicking on it), you will see a GUI 
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Miner GUI">
   </div>
-  <div class="col-sm-12 col-md">
+  <div class="col-sm-12 col-md"><br><br>
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -49,7 +53,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
     <img src="../../assets/images/gui/minergui2.png" class="img-fluid mx-auto" alt="Miner GUI 2">
   </div>
   <div class="col-sm-12 col-md">
-    <ul><br><br>
+    <ul><br><br><br>
       <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li><br><br><br>
       <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
