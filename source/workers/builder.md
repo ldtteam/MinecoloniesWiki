@@ -1,16 +1,26 @@
 # Builder
 
+Welcome to the Builder’s Information Site.
+
 The builder is the *most* important workers for your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your schematics. 
 
-Before any building can be built, you have to craft the Builder’s Hut block and place it with your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the builder will be automatically be assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+**Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other buildings.**
+
+Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the builder will be automatically be assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Best Traits are: **Strength** and **Endurance**.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/builder_recipe.png" alt="Builder Recipe">    <img src="../../assets/images/Workers/builder_hut.png" alt="Builder Hut Block">    <img src="../../assets/images/Workers/builder.png" alt="Builder"></p>
+<p style="text-align:center;"><recipe>builder</recipe>    <img src="../../assets/images/Workers/builder_hut.png" alt="Builder Hut Block">    <img src="../../assets/images/Workers/builder.png" alt="Builder"></p>
 
 You now officially have a builder, **CONGRATULATIONS!**
 
-Now you will have to issue the builder the build assignment so they can build their own hut first. Without the builder’s hut being built, the builder cannot build any other buildings.
+Now you will have to issue the builder the “Build” assignment so he can build their own hut first. He will be asking for the materials he/she needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
+
+Hint: If you see the builder has not finished building/upgrading your Builder’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+
+Once the builder is done you can now hire the Builder and it will start to build anything you order him to build for you; Worker huts, buildings, decorations or your own schematics for your Town.
+
+- **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then they will be able to upgrade any other building(s).
 
 ## Hut GUI
 
@@ -94,5 +104,3 @@ The builder will not start another build assignment until they have finished the
 You can go to the [Town Hall](../../source/buildings/townhall) and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the following build orders. If you cancel a work order, when you assign the build again, the builder will continue where they left off.
 
 Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading they will keep in their inventory until their inventory becomes full, or they may dump unnecessary items at the end of a build/upgrade.
-
-- **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then they will be able to upgrade any other building(s).
