@@ -8,7 +8,7 @@ Before you choose a place to build his hut, take into account that he has to be 
 
 Best Traits are: **Intelligence** and **Dexterity**.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/fisherman_recipe.png" alt="Fisherman Recipe"> <img src="../../assets/images/Workers/fisherman_block.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman"></p>
+<p style="text-align:center;"><recipe>fisher</recipe> <img src="../../assets/images/Workers/fisherman_block.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman"></p>
 <br>
 
 You now officially have a "Fisherman!" CONGRATULATIONS!
