@@ -4,7 +4,9 @@ Welcome to the Herder's Information Site.
 
 The Herder is a crucial part of your Town's needs, not only the food production, but also provides you with all drops and by products like; leather, feathers, eggs, wool, etc. The Herder will breed and Butcher the animals according to the type of Hut you have placed, for now there are 4 types; the Cowboy (cows), Shepherd (sheep), Swine herder (pigs) and Chicken herder (chickens).
 
-To begin with you have to craft the "Herder Hut" block (of the type of animal you want) in the crafting table and use your [Buiding Tool](../../source/tutorials/building_tool) to place the building. Once you "commit" to the placement of the Herder's hut, the block will be placed and the Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../../source/tutorials/worker_info)" for Herder if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. 
+
+After you have selected a place for the Hut, you have to craft the "Herder Hut" block (of the type of animal you want) in the crafting table and use your [Buiding Tool](../../source/tutorials/building_tool) to place the building. Once you "commit" to the placement of the Herder's hut, the block will be placed and the Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../../source/tutorials/worker_info)" for Herder if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Best Traits are: **Dexterity** and **Strength**.
 
