@@ -8,7 +8,7 @@ To begin with you have to craft the "Farmer's Hut" block in the crafting table a
 
 Best Traits are: **Endurance** and **Charisma**.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/farmer_recipe.png" alt="Farmer Recipe">    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/farmer.png" alt="Farmer"></p>
+<p style="text-align:center;"><recipe>farmer</recipe>    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/farmer.png" alt="Farmer"></p>
 
 You now officially have a "Farmer!" **CONGRATULATIONS!**
 
@@ -19,14 +19,23 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 Once the builder is done, you will have to determine where your farm plot(s) will be located. Before the farmer can start, you will have to give the farmer a hoe, the crop you want to cultivate so the farmer can plant, and craft the "Field" block (Scarecrow). Place the "Field" block in the plot of farm land you want the farmer to work on and right click on it to acces it's GUI. Here you will place the crop you want for this specific field to be cultivated. The crops he currently cultivates are: Wheat, carrots, potatoes, beets, melons, pumpkins and most "modded" crops (from other mods) as long as they have normal growth behaviour (Minecraft sugarcanes are being worked on at the moment).
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/Workers/field_recipe.png" alt="Field Recipe">    <img src="../../assets/images/Workers/field.png" alt="Field">    <img src="../../assets/images/Workers/field_gui.png" alt="Field GUI Empty">    <img src="../../assets/images/Workers/field_gui1.png" alt="Field GUI Full"></p>
+<p style="text-align:center;"><recipe>field</recipe></p>
+<p style="text-align:center;"><img src="../../assets/images/Workers/field.png" alt="Field">    <img src="../../assets/images/Workers/field_gui.png" alt="Field GUI Empty">    <img src="../../assets/images/Workers/field_gui1.png" alt="Field GUI Full"></p>
 <br>
 
 **Note:** The farmer will only till and cultivate crops that are (up to) 5 blocks from the field block. The farm land can be delimited by placing solid blocks (non tillable; sand, cobblestone, wood, etc) or air blocks in the ground next to the tillable blocks. This will cause the farmer to stop cultivating the land at this point, even if there is still tilled and/or tillable land after that solid/air block. Plan accordingly and create your plot(s) any shape and form you want taking into account that for each farm plot, the farmer will only work up to 5 blocks from the field block.
 
 If you decide later to change the type of crop you want cultivated in that specific farm plot, just go into the "Field's" GUI and switch the crop there. Remember that for the dirt to be tillable and hold crops, it must have a water source to keep it tilled and crops stay planted (Minecraft limits the water source to permeate up to 4 blocks from it's placement).
 
-**IMPORTANT:** The farmer will take care of up to 5 "Fields", depending on the level of the "Farmer's Hut". The level of hut is the number of fields it can take care of. If the Hut is only level 1 = 1 Field, Level 2 = 2 Fields, Level 3 = 3 Fields, Level 4 = 4 Fields and Level 5 = 5 Fields
+**IMPORTANT:** The farmer will take care of up to 5 "Fields", depending on the level of the "Farmer's Hut". The level of hut is the number of fields it can take care of.
+
+| Hut Level | Fields |
+| :-----: |  :-----: | 
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
 
 These are just some examples of what a farm plot can be like. you can be creative and make them any shape you like following the rule of only up to 5 blocks from the "Field" block (Scarecrow) and delimited by non tillable blocks.
 
