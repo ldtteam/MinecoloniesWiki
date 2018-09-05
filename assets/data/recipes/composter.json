@@ -10,15 +10,15 @@
     "secondRow":
     {
       "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/dirt",
+      "secondItem": "minecolonies/barrel_block",
       "thirdItem": "minecraft/planks_oak"
     },
     "thirdRow":
     {
       "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/iron_ingot",
+      "secondItem": "minecraft/planks_oak",
       "thirdItem": "minecraft/planks_oak"
     },
-    "product": "minecolonies/blockbarrel"
+    "product": "minecolonies/blockhutcomposter"
   }
 ]}
