@@ -9,7 +9,7 @@ Before you choose a place to build his Hut, take into account the distances amon
 Best Traits are: **Dexterity** and **Strength**.
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/Workers/composter_recipe.png" alt="Composter Recipe">    <img src="../../assets/images/Workers/composter_hut.png" alt="Composter Hut Block">    <img src="../../assets/images/Workers/composter.png" alt="Composter"></p>
+<p style="text-align:center;"><recipe>composter</recipe>    <img src="../../assets/images/Workers/composter_hut.png" alt="Composter Hut Block">    <img src="../../assets/images/Workers/composter.png" alt="Composter"></p>
 <br>
 
 You now officially have a Composter! **CONGRATULATIONS!**
