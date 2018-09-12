@@ -8,10 +8,6 @@
 $mcurl: 'https://minecolonies.com';
 
 /* FONTS */
-@font-face {
-	font-family: 'Comic Book';
-	src: url("../fonts/Comic Book.otf");
-}
 
 @font-face {
 	font-family: 'Colonial Dame';
@@ -22,7 +18,7 @@ $mcurl: 'https://minecolonies.com';
 body {
 	background: transparent;
 	margin: 0;
-	font-family: 'Times New Roman', Roboto, sans-serif;
+	font-family: Fondamento, Roboto, sans-serif;
 }
 
 .content {
@@ -63,6 +59,30 @@ img {
 	padding-bottom: 40px;
 }
 
+.infobox {
+    float: right;
+    padding: 1.1em;
+    margin: .2em;
+    width: 300px;
+}
+
+.infobox .section-header {
+    border-style: solid;
+    border-color: black;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.infobox img {
+    padding-bottom: .2em;
+}
+
+.infobox .section-text {
+    padding-top: 1rem;
+}
+
 /* CRAFTING TABLE CSS */
 .invslot {
     position:relative;
@@ -78,7 +98,7 @@ img {
     vertical-align:bottom;
 }
 
-.invslot::before,.invslot::after {
+.invslot::before, .invslot::after {
     content:"";
     position:absolute;
     background-color:#8B8B8B;
