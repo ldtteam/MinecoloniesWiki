@@ -1,15 +1,30 @@
 # Baker
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/baker.png" alt="Baker" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Intelligence</p>
+      <p>Dexterity</p>
+      <p><a href="../buildings/farm.md">Farm</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Baker’s Information Site.
 
 The Baker is another part of the your town's bloodline. The baker will craft bread, cake and make cookies to provide for all your workers' needs. The baker will be making bread in the furnace, provided that the [Deliveryman](../workers/deliveryman) (or yourself) give it all the wheat to do it. The Baker will also craft a cake or cookies if you provide it with the appropriate ingredients (currently the Deliveryman will not deliver the items required for crafting cakes or cookies, these have to be provided by the player). 
 
 Before you choose a place to build the Baker's hut, take into account the location from the Warehouse and/or Farmer(s). After you have selected a place for the hut you have to craft the Baker's Hut and place it with the [Building Tool](../../source/tutorials/building_tool).  Once you "commit" to the placement of the Baker's Hut, the block will be placed and the Baker will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Baker if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-Best Traits are: **Intelligence** and **Dexterity**.
-
 <br>
-<p style="text-align:center;"><recipe>baker</recipe>    <img src="../../assets/images/Workers/baker_hut.png" alt="Baker Hut Block">    <img src="../../assets/images/Workers/baker.png" alt="Baker"></p>
+<img src="../../assets/images/workers/baker_hut.png" alt="Baker Hut Block">
 <br>
 
 You now officially have a Baker, **CONGRATULATIONS!**
