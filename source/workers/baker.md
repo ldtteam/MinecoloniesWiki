@@ -23,10 +23,6 @@ The Baker is another part of the your town's bloodline. The baker will craft bre
 
 Before you choose a place to build the Baker's hut, take into account the location from the Warehouse and/or Farmer(s). After you have selected a place for the hut you have to craft the Baker's Hut and place it with the [Building Tool](../../source/tutorials/building_tool).  Once you "commit" to the placement of the Baker's Hut, the block will be placed and the Baker will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Baker if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-<br>
-<img src="../../assets/images/workers/baker_hut.png" alt="Baker Hut Block">
-<br>
-
 You now officially have a Baker, **CONGRATULATIONS!**
 
 Now you will have to issue the builder the “Build” assignment so he can build the “Baker’s Hut”. He will be asking for the materials he/she needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
