@@ -2,6 +2,20 @@
 
 <p style="text-align:center; font-size:20pt;"><b>Hello and welcome all new and old players!</b></p>
 
+- [Tutorial](#tutorial)
+  - [Basic Walkthrough](#basic-walkthrough)
+  - [Detailed Walkthrough](#detailed-walkthrough)
+    - [Placement of the Supply Ship or Supply Camp](#placement-of-the-supply-ship-or-supply-camp)
+    - [Town Hall](#town-hall)
+  - [Setting Up Your Colony](#setting-up-your-colony)
+    - [Step 1](#step-1)
+    - [Step 2](#step-2)
+    - [Town Hall GUI](#town-hall-gui)
+    - [Step 3](#step-3)
+    - [Step 4](#step-4)
+    - [Final Notes](#final-notes)
+{: .box .py-3 .pr-4 }   
+
 If you'd like instructions on how to <a name="install">install</a> our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) we have two options; instructions for the Twitch Launcher click [here](../installation/twitch) (Previously Curse launcher) or for MultiMC click [here](../installation/multimc). If you just want to install our Mod in the original Minecraft Launcher click [here](../installation/java).
 
 ## Basic Walkthrough
