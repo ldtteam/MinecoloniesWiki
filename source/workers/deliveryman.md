@@ -1,14 +1,27 @@
 # Deliveryman
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/deliveryman.png" alt="Deliveryman" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Intelligence</p>
+      <p>Endurance</p>
+      <p><a href="../buildings/deliveryman.md">Deliveryman's Hut</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Deliveryman's Information Site.
 
 The Deliveryman is the bloodline of your Town. He/she will be running (YES!!! Running) from worker's hut to [Warehouse](../../source/buildings/warehouse) to worker's hut. Visiting all your workers and delivering the tools and materials they need as well as taking the spoils of their works from their chests to the Warehouse and keeps everything centralized. Just make sure to have the tools and materials the workers need inside the warehouse chests for the deliveryman to deliver.
 
 Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Deliveryman's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you "commit" to the placement of the Deliveryman's Hut, the block will be placed and the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../../source/tutorials/worker_info)" for deliveryman if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Best Traits are: **Intelligence** and **Endurance.**
-
-<p style="text-align:center;"><img src="../../assets/images/Workers/dman_recipe.png" alt="Deliveryman Recipe"> <img src="../../assets/images/Workers/dman_hut.png" alt="Deliveryman Hut Block"> <img src="../../assets/images/Workers/deliveryman.png" alt="Deliveryman"></p>
 
 You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
@@ -20,13 +33,13 @@ Once the builder is done you can now hire the Deliveryman and the Deliveryman wi
 
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 
-| Building Level |   | Max Stacks of Materials |
-| :------------: |:-:| :----------------------:|
-| 1 |  | 1 |
-| 2 |  | 2 |
-| 3 |  | 4 |
-| 4 |  | 5 |
-| 5 |  | unlimited |
+| Building Level | Max Stacks of Materials |
+| :------------: | :---------------------: |
+| 1              | 1                       |
+| 2              | 2                       |
+| 3              | 4                       |
+| 4              | 5                       |
+| 5              | unlimited               |
 
 
 ## Hut GUI

@@ -1,5 +1,22 @@
 # Builder
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/builder.png" alt="Builder" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Strength</p>
+      <p>Endurance</p>
+      <p><a href="../buildings/builder.md">Builder's Hut</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Builder’s Information Site.
 
 The builder is the *most* important workers for your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your schematics. 
@@ -7,10 +24,6 @@ The builder is the *most* important workers for your colony. As long as you prov
 **Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other buildings.**
 
 Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the builder will be automatically be assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Best Traits are: **Strength** and **Endurance**.
-
-<p style="text-align:center;"><recipe>builder</recipe>    <img src="../../assets/images/Workers/builder_hut.png" alt="Builder Hut Block">    <img src="../../assets/images/Workers/builder.png" alt="Builder"></p>
 
 You now officially have a builder, **CONGRATULATIONS!**
 

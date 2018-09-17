@@ -1,16 +1,27 @@
 # Composter
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/composter.png" alt="Composter" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Dexterity</p>
+      <p>Strength</p>
+      <p><a href="../buildings/composter.md">Composter's Hut</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Composter’s Information Site.
 
 The Composter is an addition to help your Farmer(s) get more crops faster. The Composter will turn a lot of items into *compost* using the mod's barrel. So the Deliveryman will give the composter items like: Seeds (all types), saplings (all types), flowers, wheat, carrots, potatoes, beets, etc. Page 2 of the Composter's Hut GUI will show you all the items recognized by the mod that can be used to create compost (including modded materials). Then the composter will use the barrel(s) in it's hut and over some time, turn it into compost that the Deliveryman will then take to the Farmer. The farmer will use the compost just like bonemeal.
 
 Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Composter's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Composter's hut, the block will be placed and the Composter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Composter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Best Traits are: **Dexterity** and **Strength**.
-
-<br>
-<p style="text-align:center;"><recipe>composter</recipe>    <img src="../../assets/images/Workers/composter_hut.png" alt="Composter Hut Block">    <img src="../../assets/images/Workers/composter.png" alt="Composter"></p>
-<br>
 
 You now officially have a Composter! **CONGRATULATIONS!**
 

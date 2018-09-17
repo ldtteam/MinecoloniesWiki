@@ -1,5 +1,22 @@
 # Guard
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/guard.png" alt="Guard" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Intelligence</p>
+      <p>Strength</p>
+      <p><a href="../buildings/guardtower.md">Guard Tower</a> / <a href="../buildings/barracks.md">Barracks</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Guard’s Information Site.
 
 The Guard is the protecting force for your Town. As long as you provide the Guard with a bow and/or a sword (depending on what mode you have set it to), the Guard will protect your Town day and night. Your Guard will also take and use armour you place in the Tower's Hut inventory or in the Guards own inventory.
@@ -7,12 +24,6 @@ The Guard is the protecting force for your Town. As long as you provide the Guar
 Before you choose a place to build the Tower, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc.
 
 After you have selected a place for the Tower you have to craft the Guard Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Guard's Hut, the block will be placed and the Guard will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for Guard if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Best Traits are: **Intelligence** and **Strength**.
-
-<br>
-<p style="text-align:center;"><recipe>guardtower</recipe>    <img src="../../assets/images/Workers/guard_hut.png" alt="Guard Hut Block">    <img src="../../assets/images/Workers/guard.png" alt="Guard"></p>
-<br>
 
 You now officially have a Guard, **CONGRATULATIONS!**
 

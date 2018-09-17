@@ -1,14 +1,27 @@
 # Farmer
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/farmer.png" alt="Farmer" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Endurance</p>
+      <p>Charisma</p>
+      <p><a href="../buildings/farm.md">Farm</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Farmer's Information Site.
 
 The Farmer is the backbone of your food production. The farmer will cultivate the crops you assign it through the "Field" block (Scarecrow).
 
 To begin with you have to craft the "Farmer's Hut" block in the crafting table and use your [Buiding Tool](../../source/tutorials/building_tool) to place the building. Once you "commit" to the placement of the farmer's hut, the block will be placed and the farmer will be automatically assigned (or you can manually assign one with the best  "[Traits](../../source/tutorials/worker_info)" for farmer if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Best Traits are: **Endurance** and **Charisma**.
-
-<p style="text-align:center;"><recipe>farmer</recipe>    <img src="../../assets/images/Workers/farmers_hutblock.png" alt="Farmer Hut Block">    <img src="../../assets/images/Workers/farmer.png" alt="Farmer"></p>
 
 You now officially have a "Farmer!" **CONGRATULATIONS!**
 
@@ -20,7 +33,7 @@ Once the builder is done, you will have to determine where your farm plot(s) wil
 
 <br>
 <p style="text-align:center;"><recipe>field</recipe></p>
-<p style="text-align:center;"><img src="../../assets/images/Workers/field.png" alt="Field">    <img src="../../assets/images/Workers/field_gui.png" alt="Field GUI Empty">    <img src="../../assets/images/Workers/field_gui1.png" alt="Field GUI Full"></p>
+<p style="text-align:center;"><img src="../../assets/images/workers/field.png" alt="Field">    <img src="../../assets/images/workers/field_gui.png" alt="Field GUI Empty">    <img src="../../assets/images/workers/field_gui1.png" alt="Field GUI Full"></p>
 <br>
 
 **Note:** The farmer will only till and cultivate crops that are (up to) 5 blocks from the field block. The farm land can be delimited by placing solid blocks (non tillable; sand, cobblestone, wood, etc) or air blocks in the ground next to the tillable blocks. This will cause the farmer to stop cultivating the land at this point, even if there is still tilled and/or tillable land after that solid/air block. Plan accordingly and create your plot(s) any shape and form you want taking into account that for each farm plot, the farmer will only work up to 5 blocks from the field block.
@@ -40,7 +53,7 @@ If you decide later to change the type of crop you want cultivated in that speci
 These are just some examples of what a farm plot can be like. you can be creative and make them any shape you like following the rule of only up to 5 blocks from the "Field" block (Scarecrow) and delimited by non tillable blocks.
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/Workers/plot_max.png" alt="Field Max Size">    <img src="../../assets/images/Workers/plot_half.png" alt="Field Size Half">    <img src="../../assets/images/Workers/plot_quater.png" alt="Field Size Quarter"></p>
+<p style="text-align:center;"><img src="../../assets/images/workers/plot_max.png" alt="Field Max Size">    <img src="../../assets/images/workers/plot_half.png" alt="Field Size Half">    <img src="../../assets/images/workers/plot_quater.png" alt="Field Size Quarter"></p>
 <br>
 
 **Hint:** If you see the builder has not finished building/upgrading your Deliveryman’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.

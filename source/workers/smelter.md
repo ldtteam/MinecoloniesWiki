@@ -1,18 +1,29 @@
-# Smeltery
+# Smelter
 
-Welcome to the Smeltery’s Information Site.
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/smelter.png" alt="Smelter" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Strength</p>
+      <p>Intelligence</p>
+      <p><a href="../buildings/smeltery.md">Smeltery</a></p>
+    </div>
+  </div>
+</div>
+
+Welcome to the Smelter’s Information Site.
 
 The Smeltery is a very important addition to help automate your Town. The Smeltery will have a worker called the Smelter, which will essentially turn the ores that the Miner gets and smelt them into ingots for your Towns needs. The Smelter will require fuel to use in the furnace(s).
 
 Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. 
 
 After you have selected a place for the Hut, you have to craft the Smeltery's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Smeltery's hut, the block will be placed and the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Smelter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Best Traits are: **Strength** and **Intelligence**.
-
-<br>
-<p style="text-align:center;"><recipe>smelter</recipe>     <img src="../../assets/images/Workers/composter_hut.png" alt="Smeltery Hut Block">    <img src="../../assets/images/Workers/composter.png" alt="Smelter"></p>
-<br>
 
 You now officially have a Smeltery! **CONGRATULATIONS!**
 

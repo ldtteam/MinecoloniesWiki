@@ -12,7 +12,7 @@
     <div class="col">
       <p>Intelligence</p>
       <p>Dexterity</p>
-      <p><a href="../buildings/farm.md">Farm</a></p>
+      <p><a href="../buildings/bakery.md">Bakery</a></p>
     </div>
   </div>
 </div>

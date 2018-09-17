@@ -1,16 +1,27 @@
 # Lumberjack
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/lumberjack.png" alt="Lumberjack" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Strength</p>
+      <p>Charisma</p>
+      <p><a href="../buildings/sawmill.md">Sawmill</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Lumberjack’s Information Site.
 
 The Lumberjack is a very essential worker. Will harvest trees to provide the wood for all your Town needs. Will look for nearby trees and chop them down. Will also plant a sapling in it's place again of the same variety he just chopped down (provided that the tree dropped saplings and/or you provide the Lumberjack with the appropriate saplings). The lumberjack will only plant a sapling AFTER chopping down a tree, if there are no trees nearby, he will NOT plant any saplings to create a tree.
  
 Before you choose a place to build the hut, take into account that it has to be near trees or that you personally will have to plant trees close to the hut so the lumberjack can work. After you have selected a place for the hut you have to craft the Lumberjack's Hut block in the crafting table and use your [Buiding Tool](../../source/tutorials/building_tool) to place the building. Once you "commit" to the placement of the Lumberjack's Hut, the block will be placed and the Lumberjack will be automatically assigned (or you can manually assign one with the best "[Traits](../../source/tutorials/worker_info)" for Lumberjack if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall). 
-
-Best Traits are: **Strength** and **Charisma**.
-
-<br>
-<p style="text-align:center;"><recipe>lumberjack</recipe>     <img src="../../assets/images/Workers/lumberjack_hut.png" alt="Lumberjack Hut Block">    <img src="../../assets/images/Workers/lumberjack.png" alt="Lumberjack"></p>
-<br>
 
 You now officially have a "Lumberjack!" **CONGRATULATIONS!**
 

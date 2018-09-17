@@ -1,15 +1,27 @@
 # Fisherman
 
+<div class="infobox box text-center">
+<img src="../../assets/images/workers/fisherman.png" alt="Fisherman" />
+<hr />
+  <div class="row section-text text-left">
+    <div class="col">
+      <p><strong>Primary Trait:</strong></p>
+      <p><strong>Secondary Trait:</strong></p>
+      <p><strong>Building:</strong></p>
+    </div>
+    <div class="col">
+      <p>Intelligence</p>
+      <p>Dexterity</p>
+      <p><a href="../buildings/fisher.md">Fisher's Hut</a></p>
+    </div>
+  </div>
+</div>
+
 Welcome to the Fisherman's Information Site.
 
 The Fisherman is an important worker for your Colony. As long as you provide the Fisherman with a fishing rod, the Fisherman will provide your Town with everything that can be caught; fish, salmon, pufferfish, clownfish as well as junk and even TREASURE!
 
 Before you choose a place to build his hut, take into account that he has to be near water or that you personally will have to build him a pond close to his hut so he can fish. After you have selected a place for the hut you have to craft the Fisherman's Hut block in the crafting table and use your [Building Tool](../../) to place the building. Once you "commit" to the placement of the Fisherman's Hut, the block will be placed and the Fisherman will be automatically assigned (or you can manually assign one with the best "[Traits](../../)" for Fisherman if you changed this in the setting tab in the [Town Hall's GUI](../../).
-
-Best Traits are: **Intelligence** and **Dexterity**.
-
-<p style="text-align:center;"><recipe>fisher</recipe> <img src="../../assets/images/Workers/fisherman_block.png" alt="Fisherman Hut Block"> <img src="../../assets/images/Workers/fisherman.png" alt="Fisherman"></p>
-<br>
 
 You now officially have a "Fisherman!" CONGRATULATIONS!
 
@@ -19,7 +31,7 @@ Now you can give the Fisherman a fishing rod and it will start to fish. Also, yo
 
 **Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
 
-<p style="text-align:center;"><img src="../../assets/images/Workers/pond.png" alt="Pond"></p>
+<p style="text-align:center;"><img src="../../assets/images/workers/pond.png" alt="Pond"></p>
 
 Once the builder is done, you can think about upgrading the Fisherman's hut to expand the range at which it can fish as well as having a higher cap level.
 
