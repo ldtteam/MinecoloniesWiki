@@ -43,8 +43,14 @@ subnav:
         url: source/workers/baker
       - page: Builder
         url: source/workers/builder
+      - page: Chicken Herder
+        url: source/workers/chickenherder
       - page: Composter
         url: source/workers/composter
+      - page: Cook
+        url: source/workers/cook
+      - page: Cowboy
+        url: source/workers/cowboy
       - page: Deliveryman
         url: source/workers/deliveryman
       - page: Farmer
@@ -59,10 +65,12 @@ subnav:
         url: source/workers/lumberjack
       - page: Miner
         url: source/workers/miner
-      - page: Restaurant/Cook
-        url: source/workers/restaurant
+      - page: Shepherd
+        url: source/workers/shepherd
       - page: Smelter
         url: source/workers/smelter 
+      - page: Swine Herder
+        url: source/workers/swineherder
   - title: Buildings
     subitems:
       - page: Barracks
