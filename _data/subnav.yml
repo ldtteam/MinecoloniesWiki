@@ -11,22 +11,32 @@ subnav:
     subitems:
       - page: Tutorial
         url: source/tutorials/tutorial
-      - page: Commands
-        url: source/tutorials/commands
-      - page: Recipes
-        url: source/tutorials/recipes
-      - page: Building Tool
-        url: source/tutorials/building_tool
-      - page: Happiness System
-        url: source/tutorials/happiness
-      - page: Worker Info (Traits, Tool/Skill Level)
-        url: source/tutorials/worker_info
       - page: Schematics
         url: source/tutorials/schematics
-      - page: Scan Tool
-        url: source/tutorials/scan_tool
       - page: Server Info
-        url: source/tutorials/server_info
+        url: source/tutorials/serverinfo
+  - title: Items
+    subitems:
+      - page: Building Tool
+        url: source/items/buildingtool
+      - page: Caliper (WIP)
+        url: source/items/caliper
+      - page: Multi-block
+        url: source/items/multiblock
+      - page: Scan Tool
+        url: source/items/scantool
+      - page: Supply Camp
+        url: source/items/supplycamp
+      - page: Supply Ship
+        url: source/items/supplyship
+  - title: Systems
+    subitems:
+      - page: Command System
+        url: source/systems/commands
+      - page: Happiness System
+        url: source/systems/happiness
+      - page: Worker System
+        url: source/systems/workerinfo
   - title: Workers
     subitems:
       - page: Baker
@@ -55,17 +65,17 @@ subnav:
         url: source/workers/smelter 
   - title: Buildings
     subitems:
-      - page: Library
-        url: source/buildings/library
-      - page: Supply Ship
-        url: source/buildings/supply_ship
-      - page: Supply Camp
-        url: source/buildings/supply_camp
-      - page: Town Hall
-        url: source/buildings/townhall
-      - page: Citizen Hut
-        url: source/buildings/citizen_hut
-      - page: Warehouse
-        url: source/buildings/warehouse
       - page: Barracks
         url: source/buildings/barracks
+      - page: Citizen Hut
+        url: source/buildings/citizenhut
+      - page: Library
+        url: source/buildings/library
+      - page: Town Hall
+        url: source/buildings/townhall
+      - page: Warehouse
+        url: source/buildings/warehouse
+  - title: Misc
+    subitems:
+      - page: Recipes
+        url: source/misc/recipes
