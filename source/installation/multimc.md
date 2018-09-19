@@ -6,6 +6,17 @@ Below lists the steps you will need to take in order to install the Minecolonies
 
 - **Note:** the Minecolonies Official Server uses Minecraft 1.12.2
 
+- [MultiMC Installation](#multimc-installation)
+    - [Getting MultiMC](#getting-multimc)
+    - [Setting Up MultiMC](#setting-up-multimc)
+        - [Account](#account)
+        - [Create an Instance](#create-an-instance)
+    - [Installing Minecolonies Mod Only](#installing-minecolonies-mod-only)
+    - [Installing Minecolonies Official Modpacks](#installing-minecolonies-official-modpacks)
+        - [Getting the Modpack](#getting-the-modpack)
+        - [Installing the Modpack](#installing-the-modpack)
+{: .box .py-3 .pr-4 }
+
 ## Getting MultiMC
 
 MultiMC can be downloaded here: [MultiMC.org](https://multimc.org/#Download). Simply choose the version for your operating system and install.
