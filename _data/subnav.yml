@@ -73,10 +73,18 @@ subnav:
         url: source/workers/swineherder
   - title: Buildings
     subitems:
+      - page: Bakery
+        url: source/buildings/bakery
       - page: Barracks
         url: source/buildings/barracks
+      - page: Builder's Hut
+        url: source/buildings/builder
+      - page: Chicken Herder's Hut
+        url: source/buildings/chickenherder
       - page: Citizen Hut
         url: source/buildings/citizenhut
+      - page: Composter
+        url: source/buildings/composter
       - page: Library
         url: source/buildings/library
       - page: Town Hall
