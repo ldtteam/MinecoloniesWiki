@@ -1,14 +1,25 @@
 # Barracks
 
+<div class="infobox box text-center">
+    <img src="../../assets/images/buildings/barracks.png" alt="Barracks" />
+    <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Worker:</strong></p>
+        </div>
+        <div class="col">
+        <p><a href="../workers/guard.md">Guard</a></p>
+        </div>
+    </div>
+    <hr />
+    <recipe>barracks</recipe>
+</div>
+
 The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Guard Towers](../../source/workers/guard) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will spawn 1 new citizen for every level built! So if you have a full level 5 Barracks with all 4 Towers level 5 as well, you will have 20 additional citizens to employ as you like! Awesome, right? After they have spawned you will have to "Hire" them as guards in your Towers or any other worker type you want.
 
 Before you choose a place to build the Barracks, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc.
 
 After you have selected a place for the Barracks you have to craft the Barracks block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Barracks, the block will be placed.
-
-<br>
-<p style="text-align:center;"><recipe>barracks</recipe></p>
-<br>
 
 You now officially have a Barracks, **CONGRATULATIONS!**
 
