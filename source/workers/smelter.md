@@ -12,7 +12,7 @@
     <div class="col">
       <p>Strength</p>
       <p>Intelligence</p>
-      <p><a href="../buildings/smeltery.md">Smeltery</a></p>
+      <p><a href="../buildings/smeltery">Smeltery</a></p>
     </div>
   </div>
 </div>

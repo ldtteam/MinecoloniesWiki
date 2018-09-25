@@ -8,7 +8,7 @@
         <p><strong>Requires:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../buildings/deliveryman.md">Deliveryman's Hut</a></p>
+        <p><a href="../buildings/deliveryman">Deliveryman's Hut</a></p>
         </div>
     </div>
     <hr />

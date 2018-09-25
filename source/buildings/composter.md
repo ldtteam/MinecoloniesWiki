@@ -8,7 +8,7 @@
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/composter.md">Composter</a></p>
+        <p><a href="../workers/composter">Composter</a></p>
         </div>
     </div>
     <hr />

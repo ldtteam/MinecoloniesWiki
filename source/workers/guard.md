@@ -12,7 +12,7 @@
     <div class="col">
       <p>Intelligence</p>
       <p>Strength</p>
-      <p><a href="../buildings/guardtower.md">Guard Tower</a> / <a href="../buildings/barracks.md">Barracks</a></p>
+      <p><a href="../buildings/guardtower">Guard Tower</a> / <a href="../buildings/barracks">Barracks</a></p>
     </div>
   </div>
 </div>

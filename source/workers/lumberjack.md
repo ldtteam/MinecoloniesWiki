@@ -12,7 +12,7 @@
     <div class="col">
       <p>Strength</p>
       <p>Charisma</p>
-      <p><a href="../buildings/sawmill.md">Sawmill</a></p>
+      <p><a href="../buildings/sawmill">Sawmill</a></p>
     </div>
   </div>
 </div>

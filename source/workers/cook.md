@@ -12,7 +12,7 @@
     <div class="col">
       <p>Charisma</p>
       <p>Intelligence</p>
-      <p><a href="../buildings/restaurant.md">Restaurant</a></p>
+      <p><a href="../buildings/restaurant">Restaurant</a></p>
     </div>
   </div>
 </div>

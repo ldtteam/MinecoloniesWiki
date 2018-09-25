@@ -12,7 +12,7 @@
     <div class="col">
       <p>Dexterity</p>
       <p>Strength</p>
-      <p><a href="../buildings/shepherd.md">Shepherd's Hut</a></p>
+      <p><a href="../buildings/shepherd">Shepherd's Hut</a></p>
     </div>
   </div>
 </div>

@@ -8,7 +8,7 @@
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/cook.md">Unemployed Citizens</a></p>
+        <p>Unemployed Citizens</p>
         </div>
     </div>
     <hr />
@@ -20,12 +20,12 @@ The Library is the *ONLY* way for you to raise your Citizen's Skills. When a Cit
 You can aasign Citizens to the library from it's GUI, but only 2 citizens can be assigned per Library level. So we have: 
 
 | Building Level | Citizens "Educated" |
-| ----- | ----- |
-| 1 | 2 |
-| 2 | 4 |
-| 3 | 6 |
-| 4 | 8 |
-| 5 | 10 |
+| -------------- | ------------------- |
+| 1              | 2                   |
+| 2              | 4                   |
+| 3              | 6                   |
+| 4              | 8                   |
+| 5              | 10                  |
 
 <br><br>
 - **Note:** The Citizen will be *RANDOMLY* leveling up their skills as long as it's assigned to the Library. Once you are satisfied with the level of skills it has reached, you have to *FIRE* it from the Library so it can be unemployed again and you can now *HIRE* it in any other worker hut, guard, etc. Awesome, right?

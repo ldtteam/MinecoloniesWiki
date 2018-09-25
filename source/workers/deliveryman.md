@@ -12,7 +12,7 @@
     <div class="col">
       <p>Intelligence</p>
       <p>Endurance</p>
-      <p><a href="../buildings/deliveryman.md">Deliveryman's Hut</a></p>
+      <p><a href="../buildings/deliveryman">Deliveryman's Hut</a></p>
     </div>
   </div>
 </div>

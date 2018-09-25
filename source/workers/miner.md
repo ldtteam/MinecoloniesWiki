@@ -12,7 +12,7 @@
     <div class="col">
       <p>Strength</p>
       <p>Endurance</p>
-      <p><a href="../buildings/mine.md">Mine</a></p>
+      <p><a href="../buildings/mine">Mine</a></p>
     </div>
   </div>
 </div>

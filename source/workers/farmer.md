@@ -12,7 +12,7 @@
     <div class="col">
       <p>Endurance</p>
       <p>Charisma</p>
-      <p><a href="../buildings/farm.md">Farm</a></p>
+      <p><a href="../buildings/farm">Farm</a></p>
     </div>
   </div>
 </div>
