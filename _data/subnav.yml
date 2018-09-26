@@ -85,8 +85,30 @@ subnav:
         url: source/buildings/citizenhut
       - page: Composter
         url: source/buildings/composter
+      - page: Cowboy's Hut
+        url: source/buildings/cowboy
+      - page: Deliveryman's Hut
+        url: source/buildings/deliveryman
+      - page: Farm
+        url: source/buildings/farm
+      - page: Fisherman's Hut
+        url: source/buildings/fisherman
+      - page: Guard Tower
+        url: source/buildings/guard
       - page: Library
         url: source/buildings/library
+      - page: Mine
+        url: source/buildings/mine
+      - page: Restaurant
+        url: source/buildings/restaurant
+      - page: Sawmill
+        url: source/buildings/sawmill
+      - page: Shepherd's Hut
+        url: source/buildings/shepherd
+      - page: Smeltery
+        url: source/buildings/smeltery
+      - page: Swine Herder's Hut
+        url: source/buildings/swineherder
       - page: Town Hall
         url: source/buildings/townhall
       - page: Warehouse
