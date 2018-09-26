@@ -26,16 +26,17 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | ----------------------------------------- | ------------------------------ | ---------------------------------------- | ---------------------------- |
 | [Baker's Hut](/workers/baker)             | <recipe>baker</recipe>         | [Barracks](temp)                         | <recipe>barracks</recipe>    |
 | [Builder's Hut](/workers/builder)         | <recipe>builder</recipe>       | [Citizen's Hut](temp)                    | <recipe>citizen</recipe>     |
-| [Deliveryman's Hut](/workers/deliveryman) | <recipe>deliveryman</recipe>   | [Cook's Hut (Restaurant)](/workers/cook) | <recipe>cook</recipe>        |
+| [Deliveryman's Hut](/workers/deliveryman) | <recipe>deliveryman</recipe>   | [Cook's Hut (Restaurant)](/workers/cook) | <recipe>restaurant</recipe>  |
 | [Farmer's Hut](/workers/farmer)           | <recipe>farmer</recipe>        | [Fisher's Hut](/workers/fisherman)       | <recipe>fisher</recipe>      |
 | [Guard Tower](/workers/guard)             | <recipe>guardtower</recipe>    |                                          |                              |
 | **Herders**                               |                                |                                          |                              |
 | [Chicken](temp)                           | <recipe>chickenherder</recipe> | [Cow](temp)                              | <recipe>cowboy</recipe>      |
 | [Sheep](temp)                             | <recipe>shepherd</recipe>      | [Pig](temp)                              | <recipe>swineherder</recipe> |
 |                                           |                                |                                          |                              |
-| [Lumberjack's Hut](/workers/lumberjack)   | <recipe>lumberjack</recipe>    | [Miner's Hut](/workers/miner)            | <recipe>miner</recipe>       |
-| [Smelter's Hut](/workers/smelter)         | <recipe>smelter</recipe>       | [Supply Camp](temp)                      | <recipe>supplycamp</recipe>  |
-| [Supply Ship](temp)                       | <recipe>supplyship</recipe>    | [Warehouse](temp)                        | <recipe>warehouse</recipe>   |
+| [Library](/buildings/library)             | <recipe>library</recipe>       | [Lumberjack's Hut](/workers/lumberjack)  | <recipe>lumberjack</recipe>  |
+| [Miner's Hut](/workers/miner)             | <recipe>miner</recipe>         | [Smelter's Hut](/workers/smelter)        | <recipe>smelter</recipe>     |
+| [Supply Camp](temp)                       | <recipe>supplycamp</recipe>    | [Supply Ship](temp)                      | <recipe>supplyship</recipe>  |
+| [Warehouse](temp)                         | <recipe>warehouse</recipe>     |                                          |                              |
 
 ## Decorative Blocks
 
