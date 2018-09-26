@@ -12,7 +12,7 @@
     <div class="col">
       <p>Intelligence</p>
       <p>Dexterity</p>
-      <p><a href="../buildings/fisher">Fisher's Hut</a></p>
+      <p><a href="../buildings/fisher">Fisherman's Hut</a></p>
     </div>
   </div>
 </div>

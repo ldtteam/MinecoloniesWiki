@@ -1,5 +1,9 @@
 # Town Hall
 
+<div class="infobox box text-center">
+    <img src="../../assets/images/buildings/townhall.png" alt="Town Hall" />
+</div>
+
 ### Basics
 
 **Note:** The Town Hall block can **not** be crafted, this is intentional. It can however be obtained either by crafting and placing the supply ship *OR* the supply camp (only 1 of these two options can be placed in the World by each player). If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../tutorials/commands) page).
