@@ -19,7 +19,7 @@
 
 Welcome to the Cook’s Information Site.
 
-The Cook is another important part of the your town's bloodline. The Cook will make steak, pork chops, baked potatoes, cooked fish, etc. to provide for all your workers' needs. The Cook will be making all of it in the furnace, provided that the [Deliveryman](../workers/deliveryman) (or yourself) give it all the raw ingredients to do it. You can "teach" the cook simple 2 x 2 recipes as well. The Cook will also require ``fuel`` for the furnace, so the deliveryman will provide it with anything that it finds in the warehouse that is considered as a fuel item by minecraft, such as; coal, charcoal, wood, planks, slabs, doors, etc.
+The Cook is another important part of the your town's bloodline. The Cook will make steak, pork chops, baked potatoes, cooked fish, etc. to provide for all your workers' needs. The Cook will be making all of it in the furnace, provided that the [Deliveryman](../workers/deliveryman) (or yourself) give it all the raw ingredients to do it. You can "teach" the cook simple 2 x 2 recipes as well. The Cook will also require **_fuel_** for the furnace, so the deliveryman will provide it with anything that it finds in the warehouse that is considered as a fuel item by minecraft, such as; coal, charcoal, wood, planks, slabs, doors, etc.
 
 Click here for full information about the [Restaurant Hut](../buildings/restaurant) block and using your [Building Tool](../../source/tutorials/building_tool). Once the hut block is placed and the Cook will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Cook if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
