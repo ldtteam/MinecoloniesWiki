@@ -19,11 +19,11 @@
 
 Welcome to the Builder’s Information Site.
 
-The builder is the *most* important worker for your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your personal schematics. 
+The builder is the *most* important worker of your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your personal schematics. 
 
 **Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other building.**
 
-For full information about the Builder’s Hut block and place it with your [Builder's hut](../../source/buildings/builder). Once the hut is placed, the builder will be automatically be assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Builder's hut](../../source/buildings/builder) block and using your your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the builder will be automatically be assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a builder, **CONGRATULATIONS!**
 
@@ -35,6 +35,6 @@ You now officially have a builder, **CONGRATULATIONS!**
 
 The builder will not start another build assignment until they have finished the current one.
 
-You can go to the [Town Hall](../../source/buildings/townhall) and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the following build orders. If you cancel a work order, when you assign the build again, the builder will continue where they left off.
+You can go to the [Town Hall](../../source/buildings/townhall) and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the other build orders you have there. If you cancel a work order, (and it was being built already) when you assign the build again, the builder will continue where they left off.
 
 Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading they will keep in their inventory until their inventory becomes full, or they may dump unnecessary items at the end of a build/upgrade.
