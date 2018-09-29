@@ -21,7 +21,7 @@ Welcome to the Deliveryman's Information Site.
 
 The Deliveryman is the bloodline of your Town. It will be running (YES!!! Running) from worker's hut to [Warehouse](../../source/buildings/warehouse) to worker's hut. Visiting all your workers and delivering the tools and materials they need as well as taking the spoils of their works from their chests to the Warehouse and keeps everything centralized. Just make sure to have the tools and materials the workers need inside the warehouse chests for the deliveryman to deliver.
 
-Clikc here for full information about the [Deliveryman's Hut](../buildings/deliveryman) block and using your [Building Tool](../../source/tutorials/building_tool). Once the Hut is placed, and the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../../source/tutorials/worker_info)" for deliveryman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Deliveryman's Hut](../buildings/deliveryman) block and using your [Building Tool](../../source/tutorials/building_tool). Once the Hut is placed, and the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../../source/tutorials/worker_info)" for deliveryman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
@@ -31,4 +31,4 @@ Once the builder is done the Deliveryman will start to run back and forth from t
 
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 
-**Hint**: You MUST build the [Warehouse](../../source/buildings/warehouse) to at least level 1 so the Deliveryman can do his work. Deliveryman will visit 1 worker's hut per trip, then back to Warehouse. So, level up the Warehouse and build more Deliveryman huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
+**Hint**: You MUST build the [Warehouse](../../source/buildings/warehouse) to at least level 1 so the Deliveryman can do it's work. The deliveryman will visit 1 worker's hut per trip, then back to Warehouse. So, level up the Warehouse and build more Deliverymen huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
