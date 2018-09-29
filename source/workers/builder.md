@@ -17,6 +17,8 @@
   </div>
 </div>
 
+<br><br><br><br><br><br>
+
 Welcome to the Builder’s Information Site.
 
 The builder is the *most* important worker for your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your personal schematics. 
