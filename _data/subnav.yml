@@ -89,7 +89,7 @@ subnav:
         url: source/buildings/cowboy
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
-      - page: Farm
+      - page: Farm & Field
         url: source/buildings/farm
       - page: Fisherman's Hut
         url: source/buildings/fisherman
