@@ -21,6 +21,8 @@ Before you choose a place to build the Bakery Hut, take into account the locatio
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Baker’s Hut”. Once the builder is done you can now hire the Baker and the Baker can start crafting bread, cakes and cookies right away.
 
+**Hint"** Once the build is done, you should think about upgrading the baker’s hut so that the worker can craft more bread, cakes and cookies at a faster pace.
+
 <br><br>
 
 ## Hut GUI
