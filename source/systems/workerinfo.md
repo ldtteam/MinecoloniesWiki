@@ -53,6 +53,7 @@ Choose a worker to view more information about them:
 | [Baker](../workers/baker)                | Intelligence & Dexterity |
 | [Builder](../workers/builder)            | Strength & Endurance     |
 | [Composter](../workers/composter)        | Dexterity & Strength     |
+| [Cook](../workers/cook)                  | Charisma & Intelligence  |
 | [Deliveryman](../workers/deliveryman)    | Intelligence & Endurance |
 | [Farmer](../workers/farmer)              | Endurance & Charisma     |
 | [Fisherman](../workers/fisherman)        | Intelligence & Dexterity |
