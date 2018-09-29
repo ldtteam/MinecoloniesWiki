@@ -13,7 +13,7 @@ Welcome to the Scan Tool page. Crafting the scan tool is simple and it is a very
 
 The first step is to make a Scan Tool like so:
 
-![Scan Tool](../../assets/images/tutorial/scan_tool.png)
+<recipe>scantool</recipe>
 
 - **Hint:** There are two blocks in minecolonies mod that are made specifically for the helping players to make schematics.
 * Placeholderblock. This block will not be scanned and will use the block it is substituting. F.e. air, grass, cobblestone, etc.
