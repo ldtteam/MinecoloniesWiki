@@ -99,7 +99,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
 ## A few things to consider
 
