@@ -44,7 +44,7 @@ When accessing the Composter's Hut block (right clicking on it), you will see a 
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/composter_gui.png" class="img-fluid mx-auto" alt="Composter GUI">
   </div>
-  <div class="col-sm-12 col-md"><br><br>
+  <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by working. The higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -63,7 +63,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
     <img src="../../assets/images/gui/composter_gui2.png" class="img-fluid mx-auto" alt="Composter GUI 2">
   </div>
   <div class="col-sm-12 col-md">
-    <ul><br><br>
+    <ul><br><br><br><br>
       <li><strong>Items:</strong> Here you will see a list of all the items that were recognized by the mod for the composter to use. Including modded items. All items are "deselected" (off) by default. You can then select which items you want the composter to use. </li>
     </ul>
   </div>
