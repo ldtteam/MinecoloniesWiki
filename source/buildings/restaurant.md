@@ -23,7 +23,7 @@ Now you will have to issue the builder the “Build” assignment so he can buil
 
 **Hint:** Once the build is done, you should think about upgrading the Restaurant so that the worker can make more steak, pork chops, baked potatoes, cooked fish, etc at a faster pace.
 
-
+<br><br>
 
 ## Hut GUI
 
