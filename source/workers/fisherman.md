@@ -1,7 +1,7 @@
 # Fisherman
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Fisherman_M.png" alt="Fisherman Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Fisherman_F.png" alt="Fisherman Female" />
+<img src="../../assets/images/workers/Fisherman_Male.png" alt="Fisherman Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Fisherman_F.png" alt="Fisherman Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
