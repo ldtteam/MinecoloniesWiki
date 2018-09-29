@@ -10,8 +10,8 @@
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p>Strength</p>
-      <p>Endurance</p>
+      <p style="color:rgb(0, 200, 0);">Strength</p>
+      <p style="color:rgb(255, 255, 0);">Endurance</p>
       <p><a href="../buildings/builder">Builder's Hut</a></p>
     </div>
   </div>
