@@ -29,7 +29,7 @@ You now officially have a builder, **CONGRATULATIONS!**
 
 - **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then they will be able to upgrade any other building(s).
 
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 
 ## A few things to consider
 
