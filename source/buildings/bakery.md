@@ -21,6 +21,8 @@ Before you choose a place to build the Bakery Hut, take into account the locatio
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Baker’s Hut”. Once the builder is done you can now hire the Baker and the Baker can start crafting bread, cakes and cookies right away.
 
+<br><br>
+
 ## Hut GUI
 
 When accessing the Baker's Hut block (right clicking on it) you will see a GUI with different options:
