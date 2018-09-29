@@ -27,12 +27,12 @@ Once the builder is done, you can think about upgrading the Fisherman's hut to e
 
 Now you can access the Fisherman's Hut block (right click on it) and you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/fishermangui.png" class="img-fluid mx-auto" alt="Fisherman GUI">
 </div>
   <div class="col-sm-12 col-md">
-    <br>
     <p>The Worker assigned and it's Level. (The worker levels up in time by working. The 
 higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
