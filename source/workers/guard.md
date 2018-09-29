@@ -1,7 +1,7 @@
 # Guard
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Guard_Knight.png" alt="Guard Knight" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Guard_Ranger.png" alt="Guard Ranger" />
+<img src="../../assets/images/workers/guard_knight.png" alt="Guard Knight" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Guard_Ranger.png" alt="Guard Ranger" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
