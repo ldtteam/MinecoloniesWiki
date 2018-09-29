@@ -17,8 +17,6 @@
   </div>
 </div>
 
-<br><br><br><br><br><br>
-
 Welcome to the Builder’s Information Site.
 
 The builder is the *most* important worker for your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your personal schematics. 
@@ -31,6 +29,7 @@ You now officially have a builder, **CONGRATULATIONS!**
 
 - **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then they will be able to upgrade any other building(s).
 
+<br><br><br><br><br><br>
 
 ## A few things to consider
 
