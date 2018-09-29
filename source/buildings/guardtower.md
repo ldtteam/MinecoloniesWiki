@@ -32,7 +32,7 @@ Now you can access the Guard's Hut block (right click on it) and you will see a 
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/guardgui.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
-  <div class="col-sm-12 col-md"><br><br>
+  <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -78,6 +78,6 @@ You can right click using the Guard-scepter to set a single or multiple patrol p
     </ul>
   </div>
 </div>
-<br><br>
+<br>
 
 **Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor **_(only when Tower is level 5)_** as well and reap the benefits of the protection thye'll be able to provide and the drops the Guard will be picking up along the way.
