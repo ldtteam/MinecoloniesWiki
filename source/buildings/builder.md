@@ -23,8 +23,6 @@ Before you choose a place to build his Hut, take into account the distances amon
 
 Now you will have to issue the “Build” assignment so it can build it's own hut first. The builder will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
-**Hint:** If you see the builder has not finished building/upgrading the Builder’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
-
 Once the builder is done you can now start to build anything you want; Worker huts, buildings, decorations or your own schematics.
 
 - **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then it will be able to upgrade any other building(s).
@@ -33,12 +31,13 @@ Once the builder is done you can now start to build anything you want; Worker hu
 
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
   <br>
-  <div class="col-sm-12 col-md"><br><br>
+  <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -70,7 +69,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_build.png" class="img-fluid mx-auto" alt="Builder Build confirm">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br><br>
+  <div class="col-sm-12 col-md">
     <p>After pressing the Build button on page 1 you now have a few options to consider:</p>
     <ul>
       <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position. Since each schematic is different.</li>
@@ -89,7 +88,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/builder_upgrade.png" class="img-fluid mx-auto" alt="Builder Upgrade confirm">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br>
+  <div class="col-sm-12 col-md">
     <p>After pressing the Upgrade button on page 1 you now have a few options to consider:</p>
     <ul>
       <li><strong>Schematic Style:</strong> (Wooden in this image) Here you can verify the "style' of schematics you have selected from the build tool GUI on placement. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position.</li>
