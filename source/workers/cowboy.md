@@ -1,7 +1,7 @@
 # Cowboy
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/cowboy.png" alt="Cowboy" />
+<img src="../../assets/images/workers/cowboy_m.png" alt="Cowboy Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/cowboy_f.png" alt="Cowboy Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
