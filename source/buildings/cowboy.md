@@ -70,3 +70,4 @@ The **Cowboy** is the *ONLY* type of Herder that has a pg.2 in the Hut GUI. With
     </ul>
   </div>
 </div>
+<br><br>
