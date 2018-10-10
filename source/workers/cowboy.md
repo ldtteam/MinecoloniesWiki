@@ -31,7 +31,7 @@ Once the builder is done, you will have to capture and bring in 2 cows to the he
 
 The herder will currently work with minecraft cows, but might work with some "modded" cows (from other mods), as long as they are *coded* as cow and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the herder will collect these as well.
 
-**Note:** The Herder will only keep alive 2 of every kind of animal per hut level, so at level 5 they will have 10 animals in their holding pens alive to breed and butcher. this means they will have *MORE* and faster production and collection of meats, drops and by products. So:
+**Note:** The Herder will only keep alive 2 of every kind of animal per hut level, so at level 5 they will have 10 animals in their holding pens alive to breed and butcher. this means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
 
 
 | Building Level | Animals "Housed" |
