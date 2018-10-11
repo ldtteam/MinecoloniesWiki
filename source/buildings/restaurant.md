@@ -31,7 +31,7 @@ When accessing the Restaurant's Hut block (right clicking on it) you will see a 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui.png" class="img-fluid mx-auto" alt="Restaurant GUI">
+    <img src="../../assets/images/gui/restaurant_gui.png" class="img-fluid mx-auto" alt="Restaurant GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
