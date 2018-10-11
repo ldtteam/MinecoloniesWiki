@@ -33,7 +33,7 @@ When accessing the Sawmill's Hut block (right clicking on it), you will see a GU
     <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Sawmill GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
+    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
