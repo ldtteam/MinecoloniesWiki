@@ -1,4 +1,4 @@
-# Chicken Herder
+# Shepherd
 
 <div class="infobox box text-center">
 <img src="../../assets/images/workers/herder_m.png" alt="Shepherd Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/herder_f.png" alt="shepherd Female" />
