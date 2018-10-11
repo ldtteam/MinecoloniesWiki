@@ -29,13 +29,12 @@ Now you will have to issue the builder the “Build” assignment so he can buil
 
 When accessing the Restaurant's Hut block (right clicking on it) you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/restaurant_gui.png" class="img-fluid mx-auto" alt="Restaurant GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
     <p>The Worker assigned and it's Level. (The worker levels up in time by working. The higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
