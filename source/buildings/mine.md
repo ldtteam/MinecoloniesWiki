@@ -27,11 +27,12 @@ Now you will have to issue the “Build” assignment so it can build the Sawmil
 
 When accessing the Sawmill's Hut block (right clicking on it), you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Sawmill GUI">
   </div>
-  <div class="col-sm-12 col-md"><br><br>
+  <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
@@ -57,4 +58,3 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
 </div>
 <br>
-
