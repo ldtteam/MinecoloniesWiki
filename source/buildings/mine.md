@@ -14,3 +14,47 @@
     <hr />
     <recipe>miner</recipe>
 </div>
+
+Welcome to the Mine Hut Information Site.
+
+Before you choose a place to build the Mine Hut, take into account the location from Smeltery, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Mine Hut block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Mine Hut is placed, the Miner will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Miner if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+
+Now you will have to issue the “Build” assignment so it can build the Mine Hut”. Once the builder is done you can now hire the Miner.
+
+**Hint:** The shaft the miner creates downwards will go to a specific depth depending on the level of the Miner's Hut. So if you want it to go deeper and get to the good ores, you will have to upgrade the Hut. Level 5 hut will get to Bedrock (if you placed it at Y=64 or above).
+
+## Hut GUI
+
+When accessing the Miner's Hut block (right clicking on it), you will see a GUI with different options:
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Miner GUI">
+  </div>
+  <div class="col-sm-12 col-md"><br><br>
+    <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
+    <ul>
+      {% for item in site.data.gui.global %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<br>
+
+By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/minergui2.png" class="img-fluid mx-auto" alt="Miner GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul><br><br><br>
+      <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li><br><br><br>
+      <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
+    </ul>
+  </div>
+</div>
+<br>
+
