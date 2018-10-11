@@ -1,7 +1,7 @@
 # Smelter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/smelter.png" alt="Smelter" />
+<img src="../../assets/images/workers/smelter_m.png" alt="Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Smelter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -10,8 +10,8 @@
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p>Strength</p>
-      <p>Intelligence</p>
+      <p style="background-color:rgb(100, 100, 100); color:rgb(0, 255, 0);">Strength</p>
+      <p style="background-color:rgb(100, 100, 100); color:rgb(255, 255, 0);">Intelligence</p>
       <p><a href="../buildings/smeltery">Smeltery</a></p>
     </div>
   </div>
@@ -21,48 +21,11 @@ Welcome to the Smelter’s Information Site.
 
 The Smeltery is a very important addition to help automate your Town. The Smeltery will have a worker called the Smelter, which will essentially turn the ores that the Miner gets and smelt them into ingots for your Towns needs. The Smelter will require fuel to use in the furnace(s).
 
-Before you choose a place to build his Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. 
+Click here for full informationa about the [Smeltery's Hut](../../source/buildings/smeltery) block and using your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-After you have selected a place for the Hut, you have to craft the Smeltery's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once you commit to the placement of the Smeltery's hut, the block will be placed and the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Smelter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+You now officially have a Smelter! **CONGRATULATIONS!**
 
-You now officially have a Smeltery! **CONGRATULATIONS!**
-
-Now you will have to issue the builder the “Build” assignment so it can build the “Smeltery’s Hut”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
-
-**Hint:** If you see the builder has not finished building/upgrading your Smeltery’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+Now you will have to issue the builder the “Build” assignment so it can build the “Smeltery’s Hut”. 
 
 Once the builder is done you can now hire the Smelter and it will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
 
-**Hint:** Once the builder is done you will want to upgrade the Smeltery to get all the awesome perks it has to offer for higher levels. The higher the level of the Hut the more furnaces the Smelter will be able to use and it has a higher chance to double and even triple the ingot output per block of ore. The way it works is that the *Worker level* determines the "Chance" is has to either Double or Triple the ingot output of the ores, according to the Hut level. So:
-
-
-| Building Level | Normal Output | % of Doubling Output | % of Tripling Output | Furnace(s) |
-| :-----: | :-----: | :-----: | :-----: | :-----: |
-| 1 | 100% | Worker Level Chance | --- | 1 |
-| 2 | 100% | 2 x Worker Level Chance | --- | 2 |
-| 3 | --- | 100% | --- | 3 |
-| 4 | --- | 100% | Worker Level Chance | 4 |
-| 5 | --- | 100% | Worker Level Chance | 5 |
-
-
-**Hint:** If you see the builder has not finished building/upgrading your Smeltery’s hut and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
-
-## Hut GUI
-
-When accessing the Smeltery's Hut block (right clicking on it), you will see a GUI with different options:
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/Smeltery_gui.png" class="img-fluid mx-auto" alt="Smeltery GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<br>
