@@ -12,7 +12,7 @@
     <div class="col">
       <p style="background-color:rgb(100, 100, 100); color:rgb(0, 255, 0);">Dexterity</p>
       <p style="background-color:rgb(100, 100, 100); color:rgb(255, 255, 0);">Strength</p>
-      <p><a href="../buildings/chickenherder">Chicken Herder's Hut</a></p>
+      <p><a href="../buildings/shepherd">Shepherd's Hut</a></p>
     </div>
   </div>
 </div>
