@@ -1,7 +1,7 @@
 # Citizen Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/citizenhut_block.png" alt="Citizen Hut" />
+    <img src="../../assets/images/buildings/citizenhut_block.png" alt="Citizen Hut" />
     <hr />
     <recipe>citizen</recipe>
 </div>
