@@ -1,7 +1,7 @@
 # Barracks
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/barracks_block.png" alt="Barracks" />
+    <img src="../../assets/images/buildings/barracks_block.png" alt="Barracks" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
