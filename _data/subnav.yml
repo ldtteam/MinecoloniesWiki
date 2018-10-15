@@ -59,8 +59,6 @@ subnav:
         url: source/workers/fisherman
       - page: Guard
         url: source/workers/guard
-      - page: Herder
-        url: source/workers/herder
       - page: Lumberjack
         url: source/workers/lumberjack
       - page: Miner
@@ -94,7 +92,7 @@ subnav:
       - page: Fisherman's Hut
         url: source/buildings/fisherman
       - page: Guard Tower
-        url: source/buildings/guard
+        url: source/buildings/guardtower
       - page: Library
         url: source/buildings/library
       - page: Mine
