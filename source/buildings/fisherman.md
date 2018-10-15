@@ -1,7 +1,7 @@
 # Fisherman's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/fisherman.png" alt="Fisherman's Hut" />
+    <img src="../../assets/images/Buildings/fisherman_block.png" alt="Fisherman's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
