@@ -28,3 +28,4 @@ You now officially have a Composter! **CONGRATULATIONS!**
 Now you will have to issue the builder the “Build” assignment so it can build the “Composter’s Hut”.
 
 **Note:** Once the builder is done you will have to go to page 2 of the hut GUI and "define a list of items to be composted". All recognized items (even modded items) will be listed there. You will have to select from that list waht you want the composter to use to make compost.
+<br><br>
