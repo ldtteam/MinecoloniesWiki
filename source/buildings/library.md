@@ -36,6 +36,7 @@ You can aasign Citizens to the library from it's GUI, but only 2 citizens can be
 
 When accessing the Library's Hut block (right clicking on it) you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/librarygui.png" class="img-fluid mx-auto" alt="Library GUI">
