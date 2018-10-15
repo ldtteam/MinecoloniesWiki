@@ -51,7 +51,7 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farmergui.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/farm_gui.png" class="img-fluid mx-auto" alt="Farmer GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -68,7 +68,7 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farmergui.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/farm_gui2.png" class="img-fluid mx-auto" alt="Farmer GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -80,3 +80,4 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
     </ul>
   </div>
 </div>
+<br><br>
