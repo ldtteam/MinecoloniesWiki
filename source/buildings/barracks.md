@@ -66,7 +66,7 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/Buildings/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
   </div>
-  <div class="col-sm-12 col-md"><br><br>
+  <div class="col-sm-12 col-md">
     <ul>
       <li><strong>Schematic Style:</strong> (Birch in this image) Here you can verify the "style' of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position. Since each schematic is different.</li>
       <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
