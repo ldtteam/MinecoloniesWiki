@@ -1,7 +1,7 @@
 # Composter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/composter_M.png" alt="Composter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/composter_F.png" alt="Composter Female" />
+<img src="../../assets/images/workers/composter_M.png" alt="Composter Male" />&nbsp;&nbsp;<img src="../../assets/images/workers/composter_F.png" alt="Composter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
