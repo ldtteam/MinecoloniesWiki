@@ -1,7 +1,7 @@
 # Smeltery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/smeltery_block.png" alt="Smeltery" />
+    <img src="../../assets/images/buildings/smeltery_block.png" alt="Smeltery" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
