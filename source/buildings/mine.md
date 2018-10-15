@@ -1,7 +1,7 @@
 # Mine
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/miner_block.png" alt="Sawmill" />
+    <img src="../../assets/images/buildings/miner_block.png" alt="Sawmill" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
