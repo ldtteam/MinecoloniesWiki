@@ -1,7 +1,7 @@
 # Swine Herder
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/herder_m.png" alt="Swine Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/herder_f.png" alt="Swine Herder Female" />
+<img src="../../assets/images/workers/Farmer_M.png" alt="Swine Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Farmer_F.png" alt="Swine Herder Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
