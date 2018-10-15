@@ -23,7 +23,10 @@ Now you will have to issue the “Build” assignment so it can build the Sawmil
 
 **Note:** Once the Sawmill block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.
 
+<br><br>
+
 ## Hut GUI
+
 
 Now you can access the Sawmill's Hut block (right click on it) and you will see a GUI with different options:
 
