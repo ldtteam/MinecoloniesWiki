@@ -29,3 +29,4 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 Once the builder is done you can now hire the Smelter and it will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
 
+<br><br><br><br>
