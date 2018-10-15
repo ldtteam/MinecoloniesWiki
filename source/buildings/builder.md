@@ -1,7 +1,7 @@
 # Builder's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/builder_block.png" alt="Builder's Hut" />
+    <img src="../../assets/images/buildings/builder_block.png" alt="Builder's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
