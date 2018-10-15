@@ -54,8 +54,6 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
     <img src="../../assets/images/gui/farm_gui.png" class="img-fluid mx-auto" alt="Farmer GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-    <br>
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul><br>
       {% for item in site.data.gui.global %}
@@ -65,6 +63,7 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
   </div>
 </div>
 <br><br>
+This is "page 2" of the GUI. It show the "Fields" that are avaialble (recognizable with a "Field" block placed and crop in his GUI) and they can be assigned to this specific farmer.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -73,7 +72,7 @@ Now you can access the Farmer's Hut block (right click on it) and you will see a
   <div class="col-sm-12 col-md">
     <br>
     <br>
-    <p>This is "page 2" of the GUI. It show the "Fields" that are avaialble (recognizable with a "Field" block placed and crop in his GUI) and they can be assigned to this specific farmer.<br>And the buttons:</p>
+    <p>And the buttons:</p>
     <ul>
       <li><b>Automatic:</b> By default. Here you can define if you prefer to "manually" assign the "Fields" for this farmer.</li>
       <li><b>Inventory:</b> This is the most important button. Here you can access the buildings storage from where the “worker” takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</li>
