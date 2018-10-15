@@ -1,7 +1,7 @@
 # Cook
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Farmer_M.png" alt="Cook Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Farmer_F.png" alt="Cook Female" />
+<img src="../../assets/images/workers/Baker_M.png" alt="Cook Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Baker_F.png" alt="Cook Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
