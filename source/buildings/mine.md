@@ -1,7 +1,7 @@
-# Sawmill
+# Mine
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/mine.png" alt="Sawmill" />
+    <img src="../../assets/images/Buildings/miner_block.png" alt="Sawmill" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -15,22 +15,22 @@
     <recipe>miner</recipe>
 </div>
 
-Welcome to the Sawmill Hut Information Site.
+Welcome to the Mine Hut Information Site.
 
-Before you choose a place to build the Sawmill, take into account the location from Smeltery, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Sawmill block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Sawmill is placed, the Miner will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Miner if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Mine, take into account the location from Smeltery, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Mine block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Mine Hut is placed, the Miner will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Miner if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-Now you will have to issue the “Build” assignment so it can build the Sawmill Hut”. Once the builder is done you can now hire the Miner.
+Now you will have to issue the “Build” assignment so it can build the Mine Hut. Once the builder is done you can now hire the Miner.
 
-**Hint:** The shaft the miner creates downwards will go to a specific depth depending on the level of the Sawmill's Hut. So if you want it to go deeper and get to the good ores, you will have to upgrade the Hut. Level 5 hut will get to Bedrock (if you placed it at Y=64 or above).
+**Hint:** The shaft the miner creates downwards will go to a specific depth depending on the level of the Mine's Hut. So if you want it to go deeper and get to the good ores, you will have to upgrade the Hut. Level 5 hut will get to Bedrock (if you placed it at Y=64 or above).
 
 ## Hut GUI
 
-When accessing the Sawmill's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Mine's Hut block (right clicking on it), you will see a GUI with different options:
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Sawmill GUI">
+    <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Miner GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
@@ -57,4 +57,4 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
     </ul>
   </div>
 </div>
-<br>
+<br><br>
