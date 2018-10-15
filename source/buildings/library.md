@@ -30,7 +30,7 @@ You can aasign Citizens to the library from it's GUI, but only 2 citizens can be
 <br><br>
 - **Note:** The Citizen will be *RANDOMLY* leveling up their skills as long as it's assigned to the Library. Once you are satisfied with the level of skills it has reached, you have to *FIRE* it from the Library so it can be unemployed again and you can now *HIRE* it in any other worker hut, guard, etc. Awesome, right?
 
-<br><br>
+<br>
 
 ## Hut GUI
 
@@ -60,6 +60,7 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
     <img src="../../assets/images/gui/library_gui2.png" class="img-fluid mx-auto" alt="Library Hired">
   </div>
   <div class="col-sm-12 col-md">
+    <br><br>
     <p> So for example, if you have a Library level 1, you can only hire 2 citizens. If it already has 2 citizens assigned, it will only show you those two citizens currently assigned, with the "fire" button and will not list anymore to hire, until there is space availabe.</p>
   </div>
 </div>
