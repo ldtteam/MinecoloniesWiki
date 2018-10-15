@@ -1,7 +1,7 @@
 # Guard Tower
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/tower_block.png" alt="Guard Tower" />
+    <img src="../../assets/images/buildings/tower_block.png" alt="Guard Tower" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
