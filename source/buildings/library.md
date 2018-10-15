@@ -74,7 +74,7 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
     <img src="../../assets/images/gui/library_gui3.png" class="img-fluid mx-auto" alt="Library Hired">
   </div>
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/library_gui4.png" class="img-fluid mx-auto" alt="Library Hired">
+    <img src="../../assets/images/gui/librarygui4.png" class="img-fluid mx-auto" alt="Library Hired">
   </div>
 </div>
 <br><br>
