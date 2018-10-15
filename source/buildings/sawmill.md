@@ -1,7 +1,7 @@
 # Sawmill
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/lumberjack_block.png" alt="Sawmill" />
+    <img src="../../assets/images/buildings/lumberjack_block.png" alt="Sawmill" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
