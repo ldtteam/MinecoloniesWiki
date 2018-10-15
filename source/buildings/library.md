@@ -1,7 +1,7 @@
 # Library
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/Buildings/library_block.png" alt="Library" />
+    <img src="../../assets/images/buildings/library_block.png" alt="Library" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
