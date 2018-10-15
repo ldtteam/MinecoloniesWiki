@@ -1,7 +1,7 @@
 # Town Hall
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/townhall.png" alt="Town Hall" />
+    <img src="../../assets/images/Buildings/townhall_block.png" alt="Town Hall" />
 </div>
 
 ### Basics
