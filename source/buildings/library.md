@@ -52,5 +52,29 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
 </div>
 <br>
 
-**Note:** The unemployed citizens will be the only ones available to *HIRE* in the Library. You will only be able to see available citizens to hire if there is room in the Library (according to it's level). So for example, if you have a Library level 1, you can only hire 2 citizens. If it already has 2 citizens assigned, it will only show you those two citizens currently assigned, with the "fire" button and will not list anymore to hire, until there is space availabe.
+**Note:** The unemployed citizens will be the only ones available to *HIRE* in the Library. You will only be able to see available citizens to hire if there is room in the Library (according to it's level).
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/library_gui2.png" class="img-fluid mx-auto" alt="Library Hired">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p> So for example, if you have a Library level 1, you can only hire 2 citizens. If it already has 2 citizens assigned, it will only show you those two citizens currently assigned, with the "fire" button and will not list anymore to hire, until there is space availabe.</p>
+  </div>
+</div>
+<br>
+
+**Hint:** As soon as a Citizen is assigned to the Library, you will be able to help it level up faster by giving it *Paper*. Click on a Citizen assigned to the Library, then Click on the *Requests* button and you will be able to give it paper to help level it up faster.
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/library_gui3.png" class="img-fluid mx-auto" alt="Library Hired">
+  </div>
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/library_gui4.png" class="img-fluid mx-auto" alt="Library Hired">
+  </div>
+</div>
 <br><br>
+
