@@ -37,12 +37,12 @@ After you have created enough space for your 4 initial Citizens, then the next l
 
 When accessing the Citizen's Hut block (right clicking on it) you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/citizenhutgui.png" class="img-fluid mx-auto" alt="Citizen Hut GUI">
+    <img src="../../assets/images/gui/citizenhut_gui.png" class="img-fluid mx-auto" alt="Citizen Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
     <br>
     <p> This is the GUI for the Citizen's Hut. It shows the build "level" of the Hut. And the buttons:</p>
     <br>
@@ -54,3 +54,4 @@ When accessing the Citizen's Hut block (right clicking on it) you will see a GUI
     </ul>
   </div>
 </div>
+<br><br>
