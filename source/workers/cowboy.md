@@ -1,7 +1,7 @@
 # Cowboy
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/herder_m.png" alt="Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/herder_f.png" alt="Herder Female" />
+<img src="../../assets/images/workers/Farmer_M.png" alt="Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Farmer_F.png" alt="Herder Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
