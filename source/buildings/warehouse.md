@@ -36,16 +36,15 @@ The level of the Warehouse will determine how many Deliverymen will be able to u
 
 When accessing the Warehouse's Hut block (right clicking on it) you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui.png" class="img-fluid mx-auto" alt="Warehouse Hut GUI">
+    <img src="../../assets/images/gui/warehouse_gui.png" class="img-fluid mx-auto" alt="Warehouse Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <br>
     <p> This the GUI for the Citizen's Hut. It show the build "level" of the Hut. And the buttons:</p>
-    <br>
-    <br>
+    <br><br>
     <ul>
       <li><strong>Build/Upgrade Building.- </strong>to create the build/upgrade work order for this building.</li>
       <li><strong>Repair Building.- </strong> So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</li>
@@ -60,7 +59,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui2.png" class="img-fluid mx-auto" alt="Warehouse GUI 2">
+    <img src="../../assets/images/gui/warehouse_gui2.png" class="img-fluid mx-auto" alt="Warehouse GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br>
@@ -71,4 +70,4 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/Buildings/warehouse.png" alt="Warehouse"></p>
-<br>
+<br><br>
