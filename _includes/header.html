@@ -60,6 +60,9 @@
     </li>
 
     <hr />
+    <li class="navbar-side-item">
+      <a href="/" class="nav-link">Wiki Home</a>
+    </li>
     {% for item in site.data.subnav.subnav %}
       <li class="navbar-side-item dropdown">
         <a class="side-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
@@ -79,6 +82,9 @@
   <div class="container">
     <div class="collapse navbar-collapse" id="navbarsec">
       <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Wiki Home</a>
+        </li>
         {% for item in site.data.subnav.subnav %}
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
