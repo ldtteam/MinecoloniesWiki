@@ -18,11 +18,12 @@ $mcurl: 'https://minecolonies.com';
 body {
 	background: transparent;
 	margin: 0;
-	font-family: Fondamento, Roboto, sans-serif;
+    font-family: Fondamento, Roboto, sans-serif;
 }
 
 .content {
-	padding-top: 10px;
+    padding-top: 10px;
+    min-height: 700px;
 }
 
 h1 {
@@ -65,9 +66,17 @@ img {
 
 .infobox {
     float: right;
+    clear: right;
     padding: 1.1em;
-    margin: .2em;
+    margin: .5em 0 .5em 0em;
     width: 400px;
+}
+
+@media screen and (max-width: 576px) {
+    .infobox {
+        float: none;
+        text-align: center;
+    }
 }
 
 .infobox .section-header {
@@ -83,8 +92,8 @@ img {
     padding-bottom: .2em;
 }
 
-.infobox .section-text {
-    padding-top: 1rem;
+.infobox .section-text p:last-child {
+    margin-bottom: 0px;
 }
 
 /* CRAFTING TABLE CSS */
