@@ -1,12 +1,10 @@
 # Worker Traits and Leveling up System
 
-<p style="text-align:center;"><img src="../../assets/images/tutorial/Attention.gif" alt="Attention"></p>
-
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/tutorial/Sleep.png" alt="Sleep"><b>Rainy weather will make your citizens stop Working!!!</b><img src="../../assets/images/tutorial/Sleep.png" alt="Sleep"></p>
 
 ## Workers' Skill Level
 
-There is a system in place for how the workers skills "Level Up". The level of their building is what will put a limit on the "Worker Skill Level" they can achieve. Every time you level up their building, the worker's max level limit will be DOUBLE the previous limit! Currently there is NO limit on the Workers' "Skill Level" (once you have made his building level 5, of course). 
+There is a system in place for how the workers skills "Level Up". The level of their building is what will put a limit on the "Worker Skill Level" they can achieve. Every time you level up their building, the worker's max level limit will be DOUBLE the previous limit! Currently the limit on the Workers' "Skill Level" is 100 (once you have made his building level 5, of course). 
 
 | Building Level | Max Worker Level |
 | -------------- | ---------------- |
@@ -15,20 +13,48 @@ There is a system in place for how the workers skills "Level Up". The level of t
 | 2              | 8                |
 | 3              | 16               |
 | 4              | 32               |
-| 5              | Unlimited        |
+| 5              | 100              |
 
-## Tool Levels
+## Tool/Sword Levels
 
-There is also a system in place for the type of tools the workers can use depending on the level of their building. The level of their building is what will put a limit on the "Tool Level" the worker will be able to use. Every time you level up their building, the level of the tool the worker can use will increase. 
+There is also a system in place for the type of tools and swords the workers can use depending on the level of their building. The level of their building is what will put a limit on the "Tool/Sword Level" the worker will be able to use. Every time you level up their building, the level of the tool/sword the worker can use will increase. 
 
-| Building Level | Max Tool Level Vanilla | Max Tool Level Tinkers   |
+| Building Level | Max Tool/Sword Level Vanilla | Max Tool/Sword Level Tinkers   |
 | -------------- | ---------------------- | ------------------------ |
-| 0              | Wood                   | Mining level of Stone    |
-| 1              | Stone or Gold          | Mining level of Iron     |
-| 2              | Iron                   | Mining level of Diamond  |
-| 3              | Diamond                | Mining level of Obsidian |
-| 4              | All Tools              | Mining level of Cobalt   |
-| 5              | All Tools              | Any mining level         |
+| 0              | Wood  or Gold (+ 0 enchant)    | Mining level of Stone    |
+| 1              | Stone + 0 enchant (OR wood/gold + 1 enchant)  | Mining level of Iron     |
+| 2              | Iron + 0 enchant  (OR wood/gold + 2 enchanst OR stone + 1 enchant)  | Mining level of Diamond  |
+| 3              | Diamond + 0 enchant (OR wood/gold + 3 enchants OR stone + 2 enchants OR Iron + 1 enchant)  | Mining level of Obsidian |
+| 4              | All Tools + 0 enchant (OR wood/gold + 4 enchants OR Stone + 3 enchants OR Iron + 2 enchants OR diamond + 1 enchant)  | Mining level of Cobalt   |
+| 5              | All Tools + unlimited enchants  | Any mining level   |
+
+
+## Bow/Fishing Rod Levels
+
+There is also a system in place for the type of bows and Fishing Rods the workers can use depending on the level of their building. The level of their building is what will put a limit on the "Bow/Fishing Rod Level" the worker will be able to use. Every time you level up their building, the level of the Bow/Fishing Rod the worker can use will increase. 
+
+| Building Level | Max Bow/Fishing Rod Level Vanilla | Enchants  |
+| -------------- | ---------------------- | -------------------- |
+| 0              | Wood                   | + 0 enchant   |
+| 1              | Stone or Gold          | + 0 enchant   |
+| 2              | Iron                   | + 1 enchant   |
+| 3              | Diamond                | + 2 enchant   |
+| 4              | All Tools              | + 3 enchant   |
+| 5              | All Tools              | + unlimited   |
+
+
+## Guard Armor use Table
+
+There is also a system in place for the type of Armor the guards can use depending on the level of their Tower AND the skill level of the guard. Every time you level up their building AND the guard levels up, the level of the Armor the guard can use will increase. 
+
+| Type Armor | Guard Level | Tower Level |
+| ---------- | ----------- | ----------- |
+| Leather    | 0 - 20      | 1 - 3       |
+| Gold       | 0 - 20      | 1 - 4       |
+| Chain      | 0 - 20      | 2 - 5       |
+| Iron       | 5 - 30      | 3 - 5       |
+| Diamond    | 15 - 99     | 4 - 5       |
+
 
 ## Traits
 
