@@ -12,10 +12,10 @@ The building tool used in any of these recipes will not be consumed in the recip
 
 | Name                             | Recipe                         | Name                       | Recipe                    |
 | -------------------------------- | ------------------------------ | -------------------------- | ------------------------- |
-| [Building Tool](temp)            | <recipe>buildingtool</recipe>  | [Scan Tool](temp)          | <recipe>scantool</recipe> |
-| [Clipboard](Temp)                | <recipe>clipboard</recipe>     | [Field](temp)              | <recipe>field</recipe>    |
-| [Solid Substitution Block](temp) | <recipe>solidsubblock</recipe> | [Substitution Block](temp) | <recipe>subblock</recipe> |
-| [Waypoint](temp)                 | <recipe>waypoint</recipe>      |                            |                           |
+| [Building Tool](../source/items/buildingtool) | <recipe>buildingtool</recipe> | [Scan Tool](../source/items/scantool) | <recipe>scantool</recipe> |
+| [Clipboard](../)        | <recipe>clipboard</recipe>     | [Field](../source/buildings/farm)    | <recipe>field</recipe>    |
+| [Solid Substitution Block](../source/items/scantool) | <recipe>solidsubblock</recipe> | [Substitution Block](../source/items/scantool) | <recipe>subblock</recipe> |
+| [Waypoint](../)         | <recipe>waypoint</recipe>      |                            |                           |
 
 ## Hut Blocks
 
@@ -24,19 +24,19 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 
 | Name                                      | Recipe                         | Name                                     | Recipe                       |
 | ----------------------------------------- | ------------------------------ | ---------------------------------------- | ---------------------------- |
-| [Baker's Hut](/workers/baker)             | <recipe>baker</recipe>         | [Barracks](temp)                         | <recipe>barracks</recipe>    |
-| [Builder's Hut](/workers/builder)         | <recipe>builder</recipe>       | [Citizen's Hut](temp)                    | <recipe>citizen</recipe>     |
-| [Deliveryman's Hut](/workers/deliveryman) | <recipe>deliveryman</recipe>   | [Cook's Hut (Restaurant)](/workers/cook) | <recipe>restaurant</recipe>  |
-| [Farmer's Hut](/workers/farmer)           | <recipe>farmer</recipe>        | [Fisher's Hut](/workers/fisherman)       | <recipe>fisher</recipe>      |
-| [Guard Tower](/workers/guard)             | <recipe>guardtower</recipe>    |                                          |                              |
+| [Baker's Hut](../source/buildings/bakery) | <recipe>baker</recipe>         | [Barracks](../source/buildings/barracks)                         | <recipe>barracks</recipe>    |
+| [Builder's Hut](../source/buildings/builder) | <recipe>builder</recipe>    | [Citizen's Hut](../source/buildings/citizenhut)                    | <recipe>citizen</recipe>     |
+| [Deliveryman's Hut](../source/buildings/deliveryman) | <recipe>deliveryman</recipe>   | [Cook's Hut (Restaurant)](../source/buildings/restaurant) | <recipe>restaurant</recipe>  |
+| [Farmer's Hut](../source/buildings/farm)  | <recipe>farmer</recipe>        | [Fisher's Hut](../source/buildings/fisherman)       | <recipe>fisher</recipe>      |
+| [Guard Tower](../source/buildings/guardtower)             | <recipe>guardtower</recipe>    |                                          |                              |
 | **Herders**                               |                                |                                          |                              |
-| [Chicken](temp)                           | <recipe>chickenherder</recipe> | [Cow](temp)                              | <recipe>cowboy</recipe>      |
-| [Sheep](temp)                             | <recipe>shepherd</recipe>      | [Pig](temp)                              | <recipe>swineherder</recipe> |
+| [Chicken](../source/buildings/chickenherder) | <recipe>chickenherder</recipe> | [Cow](../source/buildings/cowboy)     | <recipe>cowboy</recipe>      |
+| [Sheep](../source/buildings/shepherd)     | <recipe>shepherd</recipe>      | [Pig](../source/buildings/swineherder)   | <recipe>swineherder</recipe> |
 |                                           |                                |                                          |                              |
-| [Library](/buildings/library)             | <recipe>library</recipe>       | [Lumberjack's Hut](/workers/lumberjack)  | <recipe>lumberjack</recipe>  |
-| [Miner's Hut](/workers/miner)             | <recipe>miner</recipe>         | [Smelter's Hut](/workers/smelter)        | <recipe>smelter</recipe>     |
-| [Supply Camp](temp)                       | <recipe>supplycamp</recipe>    | [Supply Ship](temp)                      | <recipe>supplyship</recipe>  |
-| [Warehouse](temp)                         | <recipe>warehouse</recipe>     |                                          |                              |
+| [Library](../source/buildings/library)    | <recipe>library</recipe>       | [Lumberjack's Hut](../source/buildings/sawmill)  | <recipe>lumberjack</recipe>  |
+| [Miner's Hut](source/buildings/mine)      | <recipe>miner</recipe>         | [Smelter's Hut](../source/buildings/smeltery)        | <recipe>smelter</recipe>     |
+| [Supply Camp](../source/items/supplycamp) | <recipe>supplycamp</recipe>    | [Supply Ship](../)                       | <recipe>supplyship</recipe>  |
+| [Warehouse](../source/items/supplyship)   | <recipe>warehouse</recipe>     |                                          |                              |
 
 ## Decorative Blocks
 
