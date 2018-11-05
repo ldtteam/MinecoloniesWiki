@@ -1,7 +1,7 @@
 # Farm & Field
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/farm.png" alt="Farm" />
+    <img src="../../assets/images/buildings/farmer_block.png" alt="Farm" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
