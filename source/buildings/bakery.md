@@ -1,7 +1,7 @@
 # Bakery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/bakery.png" alt="Bakery" />
+    <img src="../../assets/images/buildings/bakery_block.png" alt="Bakery" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -17,11 +17,11 @@
 
 Welcome to the Bakery’s Information Site.
 
-Before you choose a place to build the Bakery Hut, take into account the location from the Warehouse and/or Farmer(s). After you have selected a place for the hut you have to craft the Bakery Hut block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Bakery Hut is placed, the Baker will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Baker if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Bakery, take into account the location from the Warehouse and/or Farmer(s). After you have selected a place for the hut you have to craft the Bakery Hut block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Bakery Hut is placed, the Baker will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Baker if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Baker’s Hut”. Once the builder is done you can now hire the Baker and the Baker can start crafting bread, cakes and cookies right away.
 
-**Hint"** Once the build is done, you should think about upgrading the baker’s hut so that the worker can craft more bread, cakes and cookies at a faster pace.
+**Hint:** Once the build is done, you should think about upgrading the baker’s hut so that the worker can craft more bread, cakes and cookies at a faster pace.
 
 <br><br>
 
