@@ -1,16 +1,9 @@
 # Supply Camp
 
 <div class="infobox box text-center">
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Starting Option:</strong></p>
-        </div>
-        <div class="col">
-        <p>Supply Camp</p>
-        </div>
-    </div>
     <hr />
     <recipe>supplycamp</recipe>
+    <hr />
 </div>
 
 The Supply Camp is one of the two options to to start playing Minecolonies. The first step is to craft the Supply Camp block. 
