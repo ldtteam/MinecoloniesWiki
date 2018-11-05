@@ -4,10 +4,8 @@ Welcome to the Scan Tool page. Crafting the scan tool is simple and it is a very
 
 **Scan Tool Video**
 
-<div class="embed-responsive embed-responsive-16by9 center">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mFIC3752o1c" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<br />
+<p style="text-align:center;"><embed width="560" height="340" src="https://www.youtube.com/embed/mFIC3752o1c" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></p>
+<br>
 
 ### Step One
 
