@@ -1,6 +1,6 @@
 # Schematics
 
-Schematics are files containing block and entity information of a certain area a player scanned with the [Scan Tool](../tutorials/scan_tool) in-game. You can use the scan tool and scan ANY building or structure you like in SSP or even SMP and then have your builder "Build it" for you (provided that you give him all the materials needed of course).
+Schematics are files containing block and entity information of a certain area a player scanned with the [Scan Tool](../items/scantool) in-game. You can use the scan tool and scan ANY building or structure you like in SSP or even SMP and then have your builder "Build it" for you (provided that you give him all the materials needed of course).
 
 - [Schematics](#schematics)
   - [Placing a Schematic.](#placing-a-schematic)
@@ -20,7 +20,7 @@ Schematics are files containing block and entity information of a certain area a
 
 Once you have scanned a structure, you can use the build tool to have your builder "build it" for you. Once you right click with the Build Tool you will have to select "My Schematics" (in the left drop down menu) and on the right side drop down menu you will see the scans that you have made.There is also a "Rename" button where you can change the name that was originally assigned to the scan (for example: SCAN_1533778290135) to whatever you like. You can also "delete" any of your saved scans.
 
-![Schematic](../../assets/imgaes/tutorial/schematic.ong)
+![Schematic](../../assets/images/tutorial/schematic.png)
 
 ## FAQ
 

@@ -1,7 +1,7 @@
 # Restaurant
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/restaurant.png" alt="Restaurant" />
+    <img src="../../assets/images/buildings/restaurant_block.png" alt="Restaurant" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">

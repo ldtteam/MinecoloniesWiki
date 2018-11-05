@@ -1,7 +1,7 @@
 # Composter's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/composter.png" alt="Composter's Hut" />
+    <img src="../../assets/images/buildings/composter_block.png" alt="Composter's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
