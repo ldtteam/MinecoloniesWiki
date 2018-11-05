@@ -1,7 +1,7 @@
 # Chicken Herder's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/chickenherder.png" alt="Chicken Herder's Hut" />
+    <img src="../../assets/images/buildings/chicken_herder_block.png" alt="Chicken Herder's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
