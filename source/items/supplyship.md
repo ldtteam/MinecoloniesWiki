@@ -1,4 +1,11 @@
 # Supply Ship
+
+<div class="infobox box text-center">
+    <hr />
+    <recipe>supplyship</recipe>
+    <hr />
+</div>
+
 <br>
 The Supply Ship is one of the two options to to start playing Minecolonies. The first step is to craft the Supply Ship block.
 <br>
