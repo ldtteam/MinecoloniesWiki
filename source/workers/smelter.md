@@ -21,7 +21,7 @@ Welcome to the Smelter’s Information Site.
 
 The Smeltery is a very important addition to help automate your Town. The Smeltery will have a worker called the Smelter, which will essentially turn the ores that the Miner gets and smelt them into ingots for your Towns needs. The Smelter will require fuel to use in the furnace(s).
 
-Click here for full informationa about the [Smeltery's Hut](../../source/buildings/smeltery) block and using your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full informationa about the [Smeltery's Hut](../buildings/smeltery) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a Smelter! **CONGRATULATIONS!**
 
