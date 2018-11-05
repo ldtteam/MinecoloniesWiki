@@ -17,7 +17,7 @@
 
 Welcome to the Smeltery Information Site.
 
-Before you choose a place to build the Smeltery, take into account the location from Mine, Warehouse and/or other Worker(s). After you have selected a place for the Hut, you have to craft the Smeltery's Hut block and place it with your [Building Tool](../../source/tutorials/building_tool). Once the hut block is placed, the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Smeltery, take into account the location from Mine, Warehouse and/or other Worker(s). After you have selected a place for the Hut, you have to craft the Smeltery's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut block is placed, the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Smeltery’s Hut”. Once the builder is done you can now hire the Smelter and it will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
 
