@@ -17,7 +17,7 @@
 
 Welcome to the Restaurant’s Information Site.
 
-Before you choose a place to build the Restaurant, take into account the location from the farmer(s), Warehouse and/or Herder(s). After you have selected a place for the Restaurant you have to craft the Restaurant Hut block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Restaurant hut block is placed, the Cook will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Cook if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Restaurant, take into account the location from the farmer(s), Warehouse and/or Herder(s). After you have selected a place for the Restaurant you have to craft the Restaurant Hut block and place it with the [Building Tool](../items/buildingtool). Once the Restaurant hut block is placed, the Cook will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Cook if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the builder the “Build” assignment so he can build the “Restaurant’s Hut”. Once the builder is done the Cook will start making steak, pork chops, baked potatoes, cooked fish and more right away.
 
