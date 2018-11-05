@@ -21,7 +21,7 @@ Welcome to the Herder's Information Site.
 
 The Cowboy is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; leather and milk. The Cowboy will breed and Butcher the cows for you as long as you provide it with wheat, an axe and a bucket for gathering milk as well.
 
-Click here for full information about the [Cowboy's hut](../../source/buildings/cowboy) block and using your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../../source/tutorials/worker_info)" for a Herder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Cowboy's hut](../../source/buildings/cowboy) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Herder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a "Cow Herder!" **CONGRATULATIONS!**
 
