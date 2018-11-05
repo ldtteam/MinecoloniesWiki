@@ -6,7 +6,7 @@
 
 ### Basics
 
-**Note:** The Town Hall block can **not** be crafted, this is intentional. It can however be obtained either by crafting and placing the supply ship *OR* the supply camp (only 1 of these two options can be placed in the World by each player). If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../tutorials/commands) page).
+**Note:** The Town Hall block can **not** be crafted, this is intentional. It can however be obtained either by crafting and placing the supply ship *OR* the supply camp (only 1 of these two options can be placed in the World by each player). If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../systems/commands) page).
 
 **Perks! - Perks! - Perks!**
 
@@ -22,7 +22,7 @@ For each level of the Town Hall you build you will spawn 1 additional Citizen! S
 
 <br><br>
 
-The Town Hall is the central part of your Town. once you have placed the "Town Hall block" the area of your Town will be established and the entire area will be protected. The protection system includes blocking any player from placing/breaking or interacting with blocks of *any* kind, setting lava, water or TNT, explosions won't damage your blocks. Once established it will also show in the "informational screen" (pressing F3 - bottom left). Be sure to use your [Building Tool](../tutorials/building_tool) to place the building. 
+The Town Hall is the central part of your Town. once you have placed the "Town Hall block" the area of your Town will be established and the entire area will be protected. The protection system includes blocking any player from placing/breaking or interacting with blocks of *any* kind, setting lava, water or TNT, explosions won't damage your blocks. Once established it will also show in the "informational screen" (pressing F3 - bottom left). Be sure to use your [Building Tool](../items/buildingtool) to place the building. 
 
 The protected area of your Colony (once the Town Hall has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
@@ -42,9 +42,9 @@ If you want to know whether there is a colony too close to your current position
 
 For example, in the official Minecolonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where TownHall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a Colony)."
 
-After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your <a href="#build_tool">Build Tool</a> to place the Town Hall block, once you "commit" to the placement of the Town Hall, the Town hall block will be set and your Citizens will automagically appear. You can right click the Town Hall block to look at its graphical user interface.
+After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your [Building Tool] (../items/buildingtool) to place the Town Hall block, once you "commit" to the placement of the Town Hall, the Town hall block will be set and your Citizens will automagically appear. You can right click the Town Hall block to look at its graphical user interface.
 
-**Note:** Once you place your Town Hall block this will set the CENTER of your Town's protected radius. If you decide that your actual Town Hall building be "Built" in a different location (within your now set Town's protected radius) you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the Protected area of your Town so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your Town through [commands](../tutorials/commands). 
+**Note:** Once you place your Town Hall block this will set the CENTER of your Town's protected radius. If you decide that your actual Town Hall building be "Built" in a different location (within your now set Town's protected radius) you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the Protected area of your Town so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your Town through [Commands](../systems/commands). 
 
 
 ### Town Hall GUI
