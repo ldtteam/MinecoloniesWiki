@@ -1,7 +1,7 @@
 # Swine Herder's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/swineherder.png" alt="Swine Herder's Hut" />
+    <img src="../../assets/images/buildings/swineherder_block.png" alt="Swine Herder's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
