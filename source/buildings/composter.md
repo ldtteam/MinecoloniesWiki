@@ -17,7 +17,7 @@
 
 Welcome to the Composter’s Information Site.
 
-Before you choose a place to build it's Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Composter's Hut block and place it with your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the Composter will be automatically assigned (or you can manually assign one with the best  [Traits](../../source/tutorials/worker_info) for Composter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build it's Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Composter's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the Composter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Composter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the “Build” assignment so it can build the "composter Hut".  Once the builder is done you can now hire the Composter.
 

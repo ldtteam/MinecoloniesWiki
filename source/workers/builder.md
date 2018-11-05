@@ -23,7 +23,7 @@ The builder is the *most* important worker in your colony. As long as you provid
 
 **Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other building.**
 
-Click here for full information about the [Builder's hut](../../source/buildings/builder) block and using your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the builder will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Builder's hut](../../source/buildings/builder) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a builder, **CONGRATULATIONS!**
 

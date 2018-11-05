@@ -17,7 +17,7 @@
 
 Welcome to the Deliveryman's Information Site.
 
-Before you choose a place to build the Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Deliveryman's Hut block in the crafting table and use your [Building Tool](../../source/tutorials/building_tool) to place the building. Once the Hut is placed, the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../../source/tutorials/worker_info)" for deliveryman if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Deliveryman's Hut block in the crafting table and use your [Building Tool](../items/buildingtool) to place the building. Once the Hut is placed, the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../systems/workerinfo)" for deliveryman if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the builder the "Build" assignment so he can build the "Deliveryman's Hut".
 

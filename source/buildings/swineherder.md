@@ -17,7 +17,7 @@
 
 Welcome to the Swine Herder's Information Site.
 
-Before you choose a place to build the Swine herder's Hut, take into account the location from the Restaurant, Warehouse and/or other Herder(s). After you have selected a place for the hut you have to craft the Swine Hut block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Swine Hut is placed, the Herder will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Herder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Swine herder's Hut, take into account the location from the Restaurant, Warehouse and/or other Herder(s). After you have selected a place for the hut you have to craft the Swine Hut block and place it with the [Building Tool](../items/buildingtool). Once the Swine Hut is placed, the Herder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Herder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Swine Herder’s Hut”. Once the builder is done, you will have to capture and bring in 2 Pigs to the herder's hut. The herder will not catch and bring in any Pigs, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial Pigs.
 

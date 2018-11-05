@@ -21,7 +21,7 @@ Welcome to the Guard’s Information Site.
 
 The Guard is the protecting force for your Town. As long as you provide the Guard with a bow and/or a sword (depending on what mode you have set it to), the Guard will protect your Town day and night. Your Guard will also take and use armour you place in the Tower's Hut inventory or in the Guards own inventory.
 
-Click here for full information about the [Guard Tower](../buildings/guardtower) block and using your [Building Tool](../../source/tutorials/building_tool). Once the Hut is placed, the Guard will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for Guard if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Guard Tower](../buildings/guardtower) or [Barracks](../buildings/barracks) block and using your [Building Tool](../items/buildingtool). Once the Hut is placed, the Guard will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for Guard if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a Guard, **CONGRATULATIONS!**
 

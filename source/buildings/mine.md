@@ -17,7 +17,7 @@
 
 Welcome to the Mine Hut Information Site.
 
-Before you choose a place to build the Mine, take into account the location from Smeltery, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Mine block and place it with the [Building Tool](../../source/tutorials/building_tool). Once the Mine Hut is placed, the Miner will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a Miner if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Mine, take into account the location from Smeltery, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Mine block and place it with the [Building Tool](../items/buildingtool). Once the Mine Hut is placed, the Miner will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Miner if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the “Build” assignment so it can build the Mine Hut. Once the builder is done you can now hire the Miner.
 

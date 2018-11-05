@@ -19,7 +19,7 @@ Welcome to the Guard’s Information Site.
 
 Before you choose a place to build the Tower, take into account the distances among the other buildings and obstacles like rivers, lakes, ponds, trees, caves, mountains, lava sources, etc.
 
-After you have selected a place for the Tower you have to craft the Guard Hut block in the crafting table and place it with your [Building Tool](../../source/tutorials/building_tool). Once the Hut is placed, the Guard will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for Guard if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+After you have selected a place for the Tower you have to craft the Guard Hut block in the crafting table and place it with your [Building Tool](../items/buildingtool). Once the Hut is placed, the Guard will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for Guard if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the builder the “Build” assignment so it can build the Guard Tower. 
 

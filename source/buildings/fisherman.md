@@ -17,7 +17,7 @@
 
 Welcome to the Fisherman's Information Site.
 
-Before you choose a place to build his hut, take into account that he has to be near water or that you personally will have to build him a pond close to his hut so he can fish.After you have selected a place for the hut you have to craft the Fisherman's Hut block and place it with your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the Fisherman will be automatically assigned (or you can manually assign one with the best [Traits](../../source/tutorials/worker_info) for a fisherman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build his hut, take into account that he has to be near water or that you personally will have to build him a pond close to his hut so he can fish.After you have selected a place for the hut you have to craft the Fisherman's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the Fisherman will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a fisherman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 **Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
 

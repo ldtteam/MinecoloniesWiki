@@ -31,16 +31,16 @@ There is also a system in place for the type of tools and swords the workers can
 
 ## Bow/Fishing Rod Levels
 
-There is also a system in place for the type of bows and Fishing Rods the workers can use depending on the level of their building. The level of their building is what will put a limit on the "Bow/Fishing Rod Level" the worker will be able to use. Every time you level up their building, the level of the Bow/Fishing Rod the worker can use will increase. 
+There is also a system in place for the type of bows and Fishing Rods the workers can use depending on the level of their building. The level of their building is what will put a limit on the enchantments that the "Bow/Fishing Rod" can have so the worker will be able to use. Every time you level up their building, the amount of enchantments that the Bow/Fishing Rod can have for the worker to use will increase. 
 
-| Building Level | Max Bow/Fishing Rod Level Vanilla | Enchants  |
-| -------------- | ---------------------- | -------------------- |
-| 0              | Wood                   | + 0 enchant   |
-| 1              | Stone or Gold          | + 0 enchant   |
-| 2              | Iron                   | + 1 enchant   |
-| 3              | Diamond                | + 2 enchant   |
-| 4              | All Tools              | + 3 enchant   |
-| 5              | All Tools              | + unlimited   |
+| Building Level | Enchants  |
+| -------------- | ------------- |
+| 0              | + 0 enchant   |
+| 1              | + 0 enchant   |
+| 2              | + 1 enchant   |
+| 3              | + 2 enchant   |
+| 4              | + 3 enchant   |
+| 5              | + unlimited   |
 
 
 ## Guard Armor use Table
@@ -84,8 +84,10 @@ Choose a worker to view more information about them:
 | [Farmer](../workers/farmer)              | Endurance & Charisma     |
 | [Fisherman](../workers/fisherman)        | Intelligence & Dexterity |
 | [Guard](../workers/guard)                | Intelligence & Strength  |
-| [Herder](../workers/herder)              | Dexterity & Strength     |
+| [Chicken Herder](../workers/chickenherder) | Dexterity & Strength   |
+| [Cowboy](../workers/cowboy)              | Dexterity & Strength     |
+| [Shepherd](../workers/shepherd)          | Dexterity & Strength     |
+| [Swine Herder](../workers/swineherder)   | Dexterity & Strength     |
 | [Lumberjack](../workers/lumberjack)      | Strength & Charisma      |
 | [Miner](../workers/miner)                | Strength & Endurance     |
-| [Restaurant/Cook](../workers/restaurant) | Charisma & Intelligence  |
 | [Smelter](../workers/smelter)            | Strength & Intelligence  |

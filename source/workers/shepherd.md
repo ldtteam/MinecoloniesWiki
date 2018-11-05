@@ -21,7 +21,7 @@ Welcome to the Shepherd's Information Site.
 
 The Shepherd is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; wool. The Shepherd will breed and butcher the sheep for you as long as you provide it with Wheat and an axe.
 
-Click here for full information about the [Shepherd's hut](../../source/buildings/shepherd) block and using your [Building Tool](../../source/tutorials/building_tool). Once the hut is placed, the Shepherd will be automatically assigned (or you can manually assign one with the best  "[Traits](../../source/tutorials/worker_info)" for a Shepherd if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Shepherd's hut](../buildings/shepherd) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Shepherd will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Shepherd if you changed this in the settings tab in the [Town Hall's GUI](../buildings/townhall).
 
 You now officially have a "Shepherd!" **CONGRATULATIONS!**
 
