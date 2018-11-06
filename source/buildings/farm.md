@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>farmer</recipe>
+    <recipe>farm</recipe>
 </div>
 
 Welcome to the Farm & Field Information Site.

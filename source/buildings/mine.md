@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>miner</recipe>
+    <recipe>mine</recipe>
 </div>
 
 Welcome to the Mine Hut Information Site.

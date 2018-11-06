@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>lumberjack</recipe>
+    <recipe>sawmill</recipe>
 </div>
 
 Welcome to the Sawmill Hut Information Site.

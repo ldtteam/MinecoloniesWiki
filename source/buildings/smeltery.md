@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>smelter</recipe>
+    <recipe>smeltery</recipe>
 </div>
 
 Welcome to the Smeltery Information Site.
