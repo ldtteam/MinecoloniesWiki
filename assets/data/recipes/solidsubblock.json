@@ -2,21 +2,21 @@
   {
     "firstRow":
     {
-      "firstItem": "minecraft/log_oak",
-      "secondItem": "minecraft/log_oak",
-      "thirdItem": "minecraft/log_oak"
+      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "secondItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"]
     },
     "secondRow":
     {
-      "firstItem": "minecraft/log_oak",
+      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
       "secondItem": "minecolonies/sceptersteel",
-      "thirdItem": "minecraft/log_oak"
+      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"]
     },
     "thirdRow":
     {
-      "firstItem": "minecraft/log_oak",
-      "secondItem": "minecraft/log_oak",
-      "thirdItem": "minecraft/log_oak"
+      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "secondItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"]
     },
     "product": "minecolonies/blocksolidsubstitution",
     "amount": "16"

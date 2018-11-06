@@ -2,9 +2,9 @@
   {
     "firstRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/planks_oak",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
+      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
+      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
     },
     "secondRow":
     {
@@ -14,11 +14,11 @@
     },
     "thirdRow":
     {
-      "firstItem": "minecraft/planks_oak",
-      "secondItem": "minecraft/planks_oak",
-      "thirdItem": "minecraft/planks_oak"
+      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
+      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
+      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
     },
-    "product": "minecolonies/blockwaypoint",
+    "product": "minecolonies/blockpaperwall_oak",
     "amount": "8"
   }
 ]}

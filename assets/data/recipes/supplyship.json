@@ -8,7 +8,7 @@
     },
     "secondRow":
     {
-      "firstItem": "minecraft/oak_boat",
+      "firstItem": ["minecraft/oak_boat","minecraft/spruce_boat","minecraft/birch_boat","minecraft/jungle_boat","minecraft/acacia_boat","minecraft/dark_oak_boat"],
       "secondItem": "",
       "thirdItem": "minecraft/oak_boat"
     },

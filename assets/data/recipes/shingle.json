@@ -14,7 +14,7 @@
     },
     "thirdRow":
     {
-      "firstItem": "minecraft/planks_oak",
+      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
       "secondItem": "minecraft/stick",
       "thirdItem": "minecraft/brick"
     },
