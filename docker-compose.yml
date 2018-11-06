@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  wiki:
+    container_name: minecolonies_wiki
+    image: docker.minecolonies.com/wiki:latest
+    expose:
+      - 4000
+    environment:
+      - VIRTUAL_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com
+      - VIRTUAL_PROTO=http
+      - VIRTUAL_PORT=4000
+      - LETSENCRYPT_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com
+      - LETSENCRYPT_EMAIL=marcf1@hotmail.com
