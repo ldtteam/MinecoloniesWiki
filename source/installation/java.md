@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 
 # Minecraft Java Edition
 

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Barracks
 
 <div class="infobox box text-center">

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Sawmill
 
 <div class="infobox box text-center">

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Smeltery
 
 <div class="infobox box text-center">

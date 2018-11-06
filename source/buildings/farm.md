@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Farm & Field
 
 <div class="infobox box text-center">

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Worker Traits and Leveling up System
 
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/tutorial/Sleep.png" alt="Sleep"><b>Rainy weather will make your citizens stop Working!!!</b><img src="../../assets/images/tutorial/Sleep.png" alt="Sleep"></p>

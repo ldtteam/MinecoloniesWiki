@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Chicken Herder
 
 <div class="infobox box text-center">
