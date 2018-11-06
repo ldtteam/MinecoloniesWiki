@@ -1,5 +1,6 @@
 ---
-
+title: Minecolonies Wiki
+layout: default
 ---
 # Twitch Client
 
