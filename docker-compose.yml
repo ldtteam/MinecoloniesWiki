@@ -7,10 +7,10 @@ services:
     expose:
       - 4000
     environment:
-      - VIRTUAL_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com
+      - VIRTUAL_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com, minecolonieswiki.orionminecraft.com, www.minecolonieswiki.orionminecraft.com
       - VIRTUAL_PROTO=http
       - VIRTUAL_PORT=4000
-      - LETSENCRYPT_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com
+      - LETSENCRYPT_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com, minecolonieswiki.orionminecraft.com, www.minecolonieswiki.orionminecraft.com
       - LETSENCRYPT_EMAIL=marcf1@hotmail.com
 
 networks:
