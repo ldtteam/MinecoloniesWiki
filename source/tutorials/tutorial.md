@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Tutorial
 
 <p style="text-align:center; font-size:20pt;"><b>Hello and welcome all new and old players!</b></p>

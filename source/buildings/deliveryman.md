@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Deliveryman's Hut
 
 <div class="infobox box text-center">

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Welcome to the Minecolonies Wiki!
 
 ### About our Mod

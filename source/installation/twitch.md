@@ -1,3 +1,6 @@
+---
+
+---
 # Twitch Client
 
 If you want to play on the **Minecolonies Official 1.12.2** Server we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.

@@ -1,4 +1,5 @@
 ---
+title: Minecolonies Wiki
 layout: recipes
 ---
 # Recipes

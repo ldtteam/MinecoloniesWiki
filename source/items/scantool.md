@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Scan Tool
 <div class="infobox box text-center">
     <hr />

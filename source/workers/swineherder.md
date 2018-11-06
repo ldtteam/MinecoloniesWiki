@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Swine Herder
 
 <div class="infobox box text-center">

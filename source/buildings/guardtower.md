@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Guard Tower
 
 <div class="infobox box text-center">

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Saturation and Happiness
 
 The Saturation and Happiness system for the Citizens are locked in one to the other. Which means that the Citizens require food (just like the player does) to be able to Work.

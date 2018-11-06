@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Supply Ship
 <div class="infobox box text-center">
     <hr />

@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # MultiMC Installation
 
 Installation via MultiMC is very easy, and works on Windows, Mac and Linux.

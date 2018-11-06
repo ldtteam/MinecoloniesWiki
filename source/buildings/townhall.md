@@ -1,3 +1,7 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
 # Town Hall
 
 <div class="infobox box text-center">
