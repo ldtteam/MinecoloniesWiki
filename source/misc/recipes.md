@@ -9,44 +9,55 @@ Listed in this page are the current crafting recipes available in this mod. This
 **Notes**  
 The building tool used in any of these recipes will not be consumed in the recipe, it is simply to separate our recipes from possible conflicting recipes in other mods.
 
-## Tools/Utilities
+## Items / Functional Blocks
 
-| Name                             | Recipe                         | Name                       | Recipe                    |
-| -------------------------------- | ------------------------------ | -------------------------- | ------------------------- |
-| [Building Tool](../items/buildingtool) | <recipe>buildingtool</recipe> | [Scan Tool](../items/scantool) | <recipe>scantool</recipe> |
-| [Clipboard](../)        | <recipe>clipboard</recipe>     | [Field](../buildings/farm)    | <recipe>field</recipe>    |
-| [Solid Substitution Block](../items/scantool) | <recipe>solidsubblock</recipe> | [Substitution Block](../items/scantool) | <recipe>subblock</recipe> |
-| [Waypoint](../)         | <recipe>waypoint</recipe>      |                            |                           |
+| Name                                          | Ingredients                              | Recipe                         |
+| --------------------------------------------- | ---------------------------------------- | ------------------------------ |
+| [Building Tool](../items/buildingtool)        | Cobblestone + Stick                      | <recipe>buildingtool</recipe>  |
+| Clipboard                                     | Stick + Building Tool + Leather          | <recipe>clipboard</recipe>     |
+| [Field](../buildings/farm)                    | Hay Block **OR** Pumpkin + Stick + Wheat | <recipe>field</recipe>         |
+| [Scan Tool](../items/scantool)                | Iron Ingot + Stick                       | <recipe>scantool</recipe>      |
+| [Solid Substitution Block](../items/scantool) | **Any** Logs + Scan Tool                 | <recipe>solidsubblock</recipe> |
+| [Substitution Block](../items/scantool)       | **Any** Planks + Scan Tool               | <recipe>subblock</recipe>      |
+| [Supply Camp](../items/supplycamp)            | Chest                                    | <recipe>supplycamp</recipe>    |
+| [Supply Ship](../items/supplyship)            | **Any** Boat                             | <recipe>supplyship</recipe>    |
+| Waypoint                                      | **Any** Planks + Building Tool           | <recipe>waypoint</recipe>      |
 
 ## Hut Blocks
 
 **Notes**  
 The town hall is not listed here as it does not have a crafting recipe, this is intentional as it is given in a chest that spawns with the Supply Ship/Camp.
 
-| Name                                      | Recipe                         | Name                                     | Recipe                       |
-| ----------------------------------------- | ------------------------------ | ---------------------------------------- | ---------------------------- |
-| [Baker's Hut](../buildings/bakery) | <recipe>baker</recipe>         | [Barracks](../buildings/barracks)               | <recipe>barracks</recipe>    |
-| [Builder's Hut](../buildings/builder) | <recipe>builder</recipe>    | [Citizen's Hut](../buildings/citizenhut)                    | <recipe>citizen</recipe>     |
-| [Deliveryman's Hut](../buildings/deliveryman) | <recipe>deliveryman</recipe>   | [Cook's Hut (Restaurant)](../buildings/restaurant) | <recipe>restaurant</recipe>  |
-| [Farmer's Hut](../buildings/farm)  | <recipe>farmer</recipe>        | [Fisher's Hut](../buildings/fisherman)       | <recipe>fisher</recipe>      |
-| [Guard Tower](../buildings/guardtower)             | <recipe>guardtower</recipe>    |                                 |                              |
-| **Herders**                               |                                |                                          |                              |
-| [Chicken](../buildings/chickenherder) | <recipe>chickenherder</recipe> | [Cow](..//buildings/cowboy)     | <recipe>cowboy</recipe>      |
-| [Sheep](../buildings/shepherd)     | <recipe>shepherd</recipe>      | [Pig](../buildings/swineherder)   | <recipe>swineherder</recipe> |
-|                                           |                                |                                          |                              |
-| [Library](../buildings/library)    | <recipe>library</recipe>       | [Lumberjack's Hut](../buildings/sawmill)  | <recipe>lumberjack</recipe>  |
-| [Miner's Hut](../buildings/mine)      | <recipe>miner</recipe>         | [Smelter's Hut](../buildings/smeltery)        | <recipe>smelter</recipe>     |
-| [Supply Camp](../items/supplycamp) | <recipe>supplycamp</recipe>    | [Supply Ship](../)                       | <recipe>supplyship</recipe>  |
-| [Warehouse](../items/supplyship)   | <recipe>warehouse</recipe>     |                                          |                              |
+| Name                                               | Ingredients                                          | Recipe                         |
+| -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
+| [Baker's Hut](../buildings/bakery)                 | **Any** Planks + Building Tool + Wheat               | <recipe>baker</recipe>         |
+| [Barracks](../buildings/barracks)                  | **Any** Planks + Building Tool + Iron Block          | <recipe>barracks</recipe>      |
+| [Builder's Hut](../buildings/builder)              | **Any** Planks + Building Tool + **Any** Wooden Door | <recipe>builder</recipe>       |
+| [Chicken Herder's Hut](../buildings/chickenherder) | **Any** Planks + Building Tool + Egg                 | <recipe>chickenherder</recipe> |
+| [Citizen's Hut](../buildings/citizenhut)           | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
+| [Composter's Hut](../buildings/composter)          | **Any** Planks + Building Tool + Barrel              | <recipe>composter</recipe>     |
+| [Cowboy's Hut](../buildings/cowboy)                | **Any** Planks + Building Tool + Raw Beef            | <recipe>cowboy</recipe>        |
+| [Deliveryman's Hut](../buildings/deliveryman)      | **Any** Planks + Building Tool + Leather Boots       | <recipe>deliveryman</recipe>   |
+| [Farm](../buildings/farm)                          | **Any** Planks + Building Tool + Wooden Hoe          | <recipe>farm</recipe>          |
+| [Fisher's Hut](../buildings/fisherman)             | **Any** Planks + Building Tool + Fishing Rod         | <recipe>fisher</recipe>        |
+| [Guard Tower](../buildings/guardtower)             | **Any** Planks + Building Tool + Bow                 | <recipe>guardtower</recipe>    |
+| [Library](../buildings/library)                    | **Any** Planks + Building Tool + Bookshelf           | <recipe>library</recipe>       |
+| [Mine](../buildings/mine)                          | **Any** Planks + Building Tool + Wooden Pickaxe      | <recipe>mine</recipe>          |
+| [Restaurant](../buildings/restaurant)              | **Any** Planks + Building Tool + Apple               | <recipe>restaurant</recipe>    |
+| [Sawmill](../buildings/sawmill)                    | **Any** Planks + Building Tool + Wooden Axe          | <recipe>sawmill</recipe>       |
+| [Shepherd's Hut](../buildings/shepherd)            | **Any** Planks + Building Tool + Shears              | <recipe>shepherd</recipe>      |
+| [Smelter's Hut](../buildings/smeltery)             | **Any** Planks + Building Tool + Iron Ingot          | <recipe>smeltery</recipe>      |
+| [Swine Herder's Hut](../buildings/swineherder)     | **Any** Planks + Building Tool + Raw Porkchop        | <recipe>swineherder</recipe>   |
+| [Warehouse](../buildings/warehouse)                | **Any** Planks + Building Tool + Chest               | <recipe>warehouse</recipe>     |
 
 ## Decorative Blocks
 
-| Name                         | Recipe                            | Name                               | Recipe                         |
-| ---------------------------- | --------------------------------- | ---------------------------------- | ------------------------------ |
-| [Racks](temp)                | <recipe>racks</recipe>            | [Paper Walls](temp)                | <recipe>paperwall</recipe>     |
-| **Shingles**                 |                                   |                                    |                                |
-| [Normal](temp)               | <recipe>normalshingle</recipe>    | [Slab](temp)                       | <recipe>slabshingle</recipe>   |
-|                              |                                   |                                    |                                |
-| [Timber Framed Blocks](temp) | <recipe>temp</recipe>             | [Other Timber Framed Blocks](temp) | <recipe>framesconvert</recipe> |
-| [Construction Tape](temp)    | <recipe>constructiontape</recipe> |                                    |                                |
-
+| Name                       | Ingredients                         | Recipe                            |
+| -------------------------- | ----------------------------------- | --------------------------------- |
+| Construction Tape          | Sticks + White Wool                 | <recipe>constructiontape</recipe> |
+| Paper Walls                | **Matching** Planks + Paper         | <recipe>paperwall</recipe>        |
+| Rack                       | **Any** Planks + Iron Bars          | <recipe>rack</recipe>             |
+| Shingles                   | Brick + Stick + **Matching** Planks | <recipe>shingle</recipe>          |
+| Shingles Slab              | Brick + Stick                       | <recipe>slabshingle</recipe>      |
+| Timber Framed Blocks       | **Matching** Planks + Building Tool | <recipe>timberframe</recipe>      |
+| Other Timber Framed Blocks | Timber Frame                        | <recipe>framesconvert</recipe>    |
