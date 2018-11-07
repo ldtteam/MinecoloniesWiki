@@ -345,20 +345,18 @@ class JSONReader {
 
   animateRecipes()
   {
-    $("div.animate").each(function()
+    setInterval(function()
     {
-      let currentSS = $(this);
-
-      setInterval(function()
+      $("div.animate").each(function()
       {
-        currentSS.find(".switch:first")
+        $(this).find(".switch:first")
         .toggle()
         .next()
         .toggle()
         .end()
-        .appendTo(currentSS);
+        .appendTo(this);
+      });
       }, 2000)
-    });
   }
 }
 
