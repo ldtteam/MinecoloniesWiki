@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p style="background-color:rgb(100, 100, 100); color:rgb(0, 255, 0);">Intelligence</p>
-      <p style="background-color:rgb(100, 100, 100); color:rgb(255, 255, 0);">Dexterity</p>
+      <p class="traitp">Intelligence</p>
+      <p class="traits">Dexterity</p>
       <p><a href="../buildings/fisherman">Fisherman's Hut</a></p>
     </div>
   </div>

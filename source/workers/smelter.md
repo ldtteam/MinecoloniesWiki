@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p style="background-color:rgb(100, 100, 100); color:rgb(0, 255, 0);">Strength</p>
-      <p style="background-color:rgb(100, 100, 100); color:rgb(255, 255, 0);">Intelligence</p>
+      <p class="traitp">Strength</p>
+      <p class="traits">Intelligence</p>
       <p><a href="../buildings/smeltery">Smeltery</a></p>
     </div>
   </div>

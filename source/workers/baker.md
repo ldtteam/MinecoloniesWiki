@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p style="color:rgb(0, 255, 0);" class="traitp">Intelligence</p>
-      <p style="color:rgb(255, 255, 0);" class="traits">Dexterity</p>
+      <p class="traitp">Intelligence</p>
+      <p class="traits">Dexterity</p>
       <p><a href="../buildings/bakery">Bakery</a></p>
     </div>
   </div>
