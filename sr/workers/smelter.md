@@ -1,13 +1,57 @@
+* * *
+
+title: Minecolonies Wiki layout: default
+
+* * *
+
 # Smelter
 
-The Smelter is an essential worker to add after your town is established.
+<div class="infobox box text-center">
+  <img src="../../assets/images/workers/miner_m.png" alt="Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/miner_f.png" alt="Smelter Female" /> 
+  
+  <hr />
+  
+  <div class="row section-text text-left">
+    <div class="col">
+      <p>
+        <strong>Primary Trait:</strong>
+      </p>
+      
+      <p>
+        <strong>Secondary Trait:</strong>
+      </p>
+      
+      <p>
+        <strong>Building:</strong>
+      </p>
+    </div>
+    
+    <div class="col">
+      <p class="traitp">
+        Strength
+      </p>
+      
+      <p class="traits">
+        Intelligence
+      </p>
+      
+      <p>
+        <a href="../buildings/smeltery">Smeltery</a>
+      </p>
+    </div>
+  </div>
+</div>
 
-*For example, once you have a warehouse, and your miner is happily digging ores and coal below the surface.*
+Welcome to the Smelter’s Information Site.
 
-Once completed, the smelter worker will take any smeltable ores; such as Iron, Gold, Coal, (or even Tinker's Ores!), as well as a fuel source and happily smelt them into ingots for you!
+The Smeltery is a very important addition to help automate your Town. The Smeltery will have a worker called the Smelter, which will essentially turn the ores that the Miner gets and smelt them into ingots for your Towns needs. The Smelter will require fuel to use in the furnace(s).
 
-Ideal Worker Characteristics: Primary & Secondary
+Click here for full informationa about the [Smeltery's Hut](../buildings/smeltery) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Smelter will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-**Ideal placement:** Anywhere within the colony.
+You now officially have a Smelter! **CONGRATULATIONS!**
 
-The Deliveryman, or the player, will deliver ore and fuel to the smeltery worker. *As a side note, at this point in time, the workers who use furnaces will use **ANY** burnable item which can be used as a fuel.
+Now you will have to issue the builder the “Build” assignment so it can build the “Smeltery’s Hut”.
+
+Once the builder is done you can now hire the Smelter and it will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
+
+<br />
