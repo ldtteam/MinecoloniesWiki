@@ -12,6 +12,7 @@ services:
       - VIRTUAL_PORT=4000
       - LETSENCRYPT_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com, minecolonieswiki.orionminecraft.com, www.minecolonieswiki.orionminecraft.com
       - LETSENCRYPT_EMAIL=marcf1@hotmail.com
+      - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
 
 networks:
   default:
