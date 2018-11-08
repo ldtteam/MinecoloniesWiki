@@ -1,3 +1,9 @@
+* * *
+
+title: Minecolonies Wiki layout: default
+
+* * *
+
 # Buildings
 
 This is where you can find specific information about Buildings that do not have a Worker associated to them.
