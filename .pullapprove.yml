@@ -24,4 +24,4 @@ groups:
     reject_value: -999
     required: 1
     teams:
-      - approved-editors
+      - wiki-admin
