@@ -18,7 +18,7 @@ layout: default
     - [Step 3](#step-3)
     - [Step 4](#step-4)
     - [Final Notes](#final-notes)
-{: .box .py-3 .pr-4 }   
+{: .box .py-3 .pr-4 }
 
 If you'd like instructions on how to <a name="install">install</a> our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) we have two options; instructions for the Twitch Launcher click [here](../installation/twitch) (Previously Curse launcher) or for MultiMC click [here](../installation/multimc). If you just want to install our Mod in the original Minecraft Launcher click [here](../installation/java).
 
@@ -32,7 +32,7 @@ But one of the first questions you should ask yourself is: "*Where should I put 
 
 <p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Building Tool Video.</a></b></p>
 
-<div class="embed-responsive embed-responsive-16by9 center">
+<div class="embed-responsive embed-responsive-16by9 mx-auto">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <br />
@@ -63,7 +63,7 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
 <p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Build Tool Video.</a></b></p>
 
-<div class="embed-responsive embed-responsive-16by9 center">
+<div class="embed-responsive embed-responsive-16by9 mx-auto">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <br />
