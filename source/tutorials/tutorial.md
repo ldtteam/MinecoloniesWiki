@@ -30,7 +30,7 @@ But one of the first questions you should ask yourself is: "*Where should I put 
 
 **Hint:** The most important tool you will need for the entire mod is the Building Tool (check out our [Building Tool](../items/buildingtool) page). Craft the Building Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot. 
 
-<p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Building Tool Video.</a></b></p>
+<p class="h4 mx-auto"><b><a name="build_tool">Building Tool Video.</a></b></p>
 
 <div class="embed-responsive embed-responsive-16by9 mx-auto">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -61,7 +61,7 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
 **Hint:** The most important tool you will need for the entire mod is the Building Tool (check out our [Building Tool](../items/buildingtool) page). Craft the Building Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot.
 
-<p style="text-align:center; font-size:20pt;"><b><a name="build_tool">Build Tool Video.</a></b></p>
+<p class="h4 mx-auto"><b><a name="build_tool">Build Tool Video.</a></b></p>
 
 <div class="embed-responsive embed-responsive-16by9 mx-auto">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
