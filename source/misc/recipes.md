@@ -22,6 +22,7 @@ The building tool used in any of these recipes will not be consumed in the recip
 | [Supply Camp](../items/supplycamp)            | Chest                                    | <recipe>supplycamp</recipe>    |
 | [Supply Ship](../items/supplyship)            | **Any** Boat                             | <recipe>supplyship</recipe>    |
 | Waypoint                                      | **Any** Planks + Building Tool           | <recipe>waypoint</recipe>      |
+{: .table-responsive }
 
 ## Hut Blocks
 
@@ -49,6 +50,7 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | [Smelter's Hut](../buildings/smeltery)             | **Any** Planks + Building Tool + Iron Ingot          | <recipe>smeltery</recipe>      |
 | [Swine Herder's Hut](../buildings/swineherder)     | **Any** Planks + Building Tool + Raw Porkchop        | <recipe>swineherder</recipe>   |
 | [Warehouse](../buildings/warehouse)                | **Any** Planks + Building Tool + Chest               | <recipe>warehouse</recipe>     |
+{: .table-responsive }
 
 ## Decorative Blocks
 
@@ -61,3 +63,4 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | Shingles Slab              | Brick + Stick                       | <recipe>slabshingle</recipe>      |
 | Timber Framed Blocks       | **Matching** Planks + Building Tool | <recipe>timberframe</recipe>      |
 | Other Timber Framed Blocks | Timber Frame                        | <recipe>framesconvert</recipe>    |
+{: .table-responsive }
