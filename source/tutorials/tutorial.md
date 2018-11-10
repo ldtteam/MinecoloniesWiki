@@ -4,7 +4,7 @@ layout: default
 ---
 # Tutorial
 
-<p style="text-align:center; font-size:20pt;"><b>Hello and welcome all new and old players!</b></p>
+<p class="h4 text-center"><b>Hello and welcome all new and old players!</b></p>
 
 - [Tutorial](#tutorial)
   - [Basic Walkthrough](#basic-walkthrough)
@@ -90,11 +90,11 @@ If there is another Colony too close to your current position you won't be able 
 
 If you want to know whether there is a colony too close to your current position we included some information in the debug screen (Displayed when you press the F3 button) which contains a real time tracker showing you the distance to the next colony, the colony you're currently in, or if there is no colony close at all plus - if there is a colony close to your current position - the required distance to place your Town Hall.
 
-<p style="text-align:center;"><img src="../../assets/images/tutorial/next_colony.png" alt="Next Colony"></p>
+<p class="text-center"><img src="../../assets/images/tutorial/next_colony.png" alt="Next Colony"></p>
 
-<p style="text-align:center;"><img src="../../assets/images/tutorial/players_colony.png" alt="Player's Colony"></p>
+<p class="text-center"><img src="../../assets/images/tutorial/players_colony.png" alt="Player's Colony"></p>
 
-<p style="text-align:center;"><img src="../../assets/images/tutorial/no_colony.png" alt="No Colony"></p>
+<p class="text-center"><img src="../../assets/images/tutorial/no_colony.png" alt="No Colony"></p>
 
 For example, in the official Minecolonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where TownHall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a Colony)."
 
@@ -323,7 +323,7 @@ From this point on, you should be able to place, build, upgrade and manage all y
 
 Your questions from this point on are probably what to build next? The [Town Hall](../../source/buildings/townhall), [Mine](../buildings/mine), [Sawmill](../buildings/sawmill), [Farm](../buildings/farm), [Fisherman](../buildings/fisherman), [Guard Tower](../buildings/guardtower), [Deliveryman](../buildings/deliveryman), [Bakery](../buildings/bakery), etc.? Well, there are many answers, but you start with only 4 citizens! Now what? Well the next step after your 4 Citizens are employed and are working hard, is to plan and place the "[Citizen Hut](../buildings/citizenhut)". This will give you additional Citizens for each level of a [Citizen Hut](../buildings/citizenhut) you build in your Town! That's crazy, right? Now what do you do with so many Citizens? You cannot assign more than 1 worker per building. Therefore, consider building additional buildings (more miners, lumberjacks, builders, farmers, fishermen... and more to come!). Check the [Citizen Hut](../buildings/citizenhut) section for more detailed info.
 
-_**There are other buildings taht will also "spawn" more citizens for you as well:**_
+_**There are other buildings that will also "spawn" more citizens for you as well:**_
 - The [Town Hall](../../source/buildings/townhall) will spawn and house 1 Citizen per level built.
 - The [Barracks](../buildings/barracks) will spawn and house 1 Citizen per level of each of it's Towers' level built.
 
