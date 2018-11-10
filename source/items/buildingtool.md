@@ -10,7 +10,7 @@ layout: default
 Welcome to the Building Tool page. Crafting the building tool is simple and it is *THE* most important tool you will need for the entire mod. With the building tool you can place the Supply Ship or Supply Camp, all the buildings, worker huts and even even any structure scanned by you (see [Schematics](../tutorials/schematics)) in the perfect way. The possibilitites are endless! Watch a short video of how it works here:
 <br><br>
 
-<p class="h4"><a name="build_tool">Building Tool Video.</a></p>
+<p class="h4"><a id="build_tool">Building Tool Video.</a></p>
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
