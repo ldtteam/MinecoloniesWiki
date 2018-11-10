@@ -8,7 +8,7 @@ Installation via MultiMC is very easy, and works on Windows, Mac and Linux.
 
 Below lists the steps you will need to take in order to install the Minecolonies Official Modpack to play on the Minecolonies official server, or for Singleplayer.
 
-- **Note:** the Minecolonies Official Server uses Minecraft 1.12.2
+**Note:** the Minecolonies Official Server uses Minecraft 1.12.2
 
 - [MultiMC Installation](#multimc-installation)
     - [Getting MultiMC](#getting-multimc)
