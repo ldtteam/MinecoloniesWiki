@@ -32,7 +32,7 @@
     </li>
     {% for item in site.data.subnav.subnav %}
       <li class="sidenav-item dropdown">
-        <a class="sidenav-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+        <a class="sidenav-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">{{ item.title }}</a>
         <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
           {% for entry in item.subitems %}
             <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
