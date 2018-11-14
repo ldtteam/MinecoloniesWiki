@@ -1,7 +1,48 @@
 <!-- HEADER -->
-<header class="container">
-  <h1 class="header">MineColonies Wiki</h1>
-</header>
+<div class="container">
+  <p class="header">MineColonies Wiki</p>
+</div>
+
+<nav class="sidenav" id="navbarSide">
+  <div class="sidenav-title">
+    <p class="text-center">Minecolonies Wiki</p>
+  </div>
+  <hr />
+  <ul class="sidenav-nav">
+    <li class="sidenav-item">
+      <a href="https://minecolonies.com" class="sidenav-link">Home</a>
+    </li>
+    <li class="sidenav-item">
+      <a href="https://forum.minecolonies.com" class="sidenav-link">Forums</a>
+    </li>
+    <li class="sidenav-item">
+      <a href="https://minecolonies.com/about.php" class="sidenav-link">About The Mod</a>
+    </li>
+    <li class="sidenav-item">
+      <a href="https://wiki.minecolonies.com/" class="sidenav-link active">Wiki</a>
+    </li>
+    <li class="sidenav-item">
+      <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="sidenav-link">Bug Reports</a>
+    </li>
+  </ul>
+  <hr />
+  <ul class="sidenav-nav">
+    <li class="sidenav-item">
+      <a href="{{ site.baseurl }}" class="sidenav-link">Wiki Home</a>
+    </li>
+    {% for item in site.data.subnav.subnav %}
+      <li class="sidenav-item dropdown">
+        <a class="sidenav-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+        <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
+          {% for entry in item.subitems %}
+            <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+<div class="overlay"></div>
 
 <!-- NAVBAR PRIMARY -->
 <nav class="navbar navbar-expand-lg navbar-default main">
@@ -37,45 +78,7 @@
       
     </div>
   </div>
-
-  <ul class="navbar-side" id="navbarSide">
-    <div class="sidenav-title">
-      <h1 class="text-center">Minecolonies Wiki</h1>
-    </div>
-    <hr />
-    <li class="navbar-side-item">
-      <a href="https://minecolonies.com" class="side-link">Home</a>
-    </li>
-    <li class="navbar-side-item">
-      <a href="https://forum.minecolonies.com" class="side-link">Forums</a>
-    </li>
-    <li class="navbar-side-item">
-      <a href="https://minecolonies.com/about.php" class="side-link">About The Mod</a>
-    </li>
-    <li class="navbar-side-item">
-      <a href="https://wiki.minecolonies.com/" class="side-link active">Wiki</a>
-    </li>
-    <li class="navbar-side-item">
-      <a href="https://github.com/Minecolonies/minecolonies/issues/new" class="side-link">Bug Reports</a>
-    </li>
-
-    <hr />
-    <li class="navbar-side-item">
-      <a href="{{ site.baseurl }}" class="nav-link">Wiki Home</a>
-    </li>
-    {% for item in site.data.subnav.subnav %}
-      <li class="navbar-side-item dropdown">
-        <a class="side-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
-        <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
-          {% for entry in item.subitems %}
-            <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-          {% endfor %}
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-  <div class="overlay"></div>
-  </nav>
+</nav>
 
   <!-- NAVBAR SECONDARY -->
   <nav class="navbar navbar-expand-lg navbar-default secondary">
