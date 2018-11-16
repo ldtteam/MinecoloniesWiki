@@ -11,18 +11,18 @@ The building tool used in any of these recipes will not be consumed in the recip
 
 ## Items / Functional Blocks
 
-| Name                                          | Ingredients                              | Recipe                          |
-| --------------------------------------------- | ---------------------------------------- | ------------------------------- |
-| [Building Tool](../items/buildingtool)        | Cobblestone + Stick                      | <recipe>buildingtool</recipe>   |
-| Clipboard                                     | Stick + Building Tool + Leather          | <recipe>clipboard</recipe>      |
-| [Field](../buildings/farm)                    | Hay Block **OR** Pumpkin + Stick + Wheat | <recipe>field</recipe>          |
-| Resource Scroll                               | Stick + Building Tool + Leather          | <recipe>resourcescroll</recipe> |
-| [Scan Tool](../items/scantool)                | Iron Ingot + Stick                       | <recipe>scantool</recipe>       |
-| [Solid Substitution Block](../items/scantool) | **Any** Logs + Scan Tool                 | <recipe>solidsubblock</recipe>  |
-| [Substitution Block](../items/scantool)       | **Any** Planks + Scan Tool               | <recipe>subblock</recipe>       |
-| [Supply Camp](../items/supplycamp)            | Chest                                    | <recipe>supplycamp</recipe>     |
-| [Supply Ship](../items/supplyship)            | **Any** Boat                             | <recipe>supplyship</recipe>     |
-| Waypoint                                      | **Any** Planks + Building Tool           | <recipe>waypoint</recipe>       |
+| Name                                          | Ingredients                                | Recipe                          |
+| --------------------------------------------- | ------------------------------------------ | ------------------------------- |
+| [Building Tool](../items/buildingtool)        | Cobblestone + Stick                        | <recipe>buildingtool</recipe>   |
+| Clipboard                                     | Stick + Building Tool + Leather            | <recipe>clipboard</recipe>      |
+| [Field](../buildings/farm)                    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
+| Resource Scroll                               | Stick + Building Tool + Leather            | <recipe>resourcescroll</recipe> |
+| [Scan Tool](../items/scantool)                | Iron Ingot + Stick                         | <recipe>scantool</recipe>       |
+| [Solid Substitution Block](../items/scantool) | **Any** Logs + Scan Tool                   | <recipe>solidsubblock</recipe>  |
+| [Substitution Block](../items/scantool)       | **Any** Planks + Scan Tool                 | <recipe>subblock</recipe>       |
+| [Supply Camp](../items/supplycamp)            | Chest                                      | <recipe>supplycamp</recipe>     |
+| [Supply Ship](../items/supplyship)            | **Any** Boat                               | <recipe>supplyship</recipe>     |
+| Waypoint                                      | **Any** Planks + Building Tool             | <recipe>waypoint</recipe>       |
 {: .table-responsive }
 
 ## Hut Blocks
