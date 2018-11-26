@@ -67,4 +67,4 @@ To place a Worker hut or a Building (from the mod) you have to have the Hut bloc
 
 Now that you have the structure ready to place click on the green check mark and voilá... it will be sent as a buld order to the builder if it's a decoration or schematic. But if it's a Hut or building from the mod you might have to go into the Hut block's GUI and press on the "Build" button to have the build order sent to the builder.
 
-You can check in the [Townhall](../../source/buildings/townhall) GUI under the *Work Orders* tab to see the queue of all buld requests you have for the builder.
+You can check in the [Townhall](../../source/buildings/townhall) GUI under the *Work Orders* tab to see the queue of all build requests you have for the builder.
