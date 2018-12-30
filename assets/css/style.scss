@@ -51,6 +51,20 @@ img {
     height: auto;
 }
 
+@media screen and (max-width: 768px) {
+    tr {
+        border-top: 1px solid #dee2e6;
+    }
+
+    td {
+        border-top: none!important;
+    }
+
+    .perm {
+        font-size: 0.9rem;
+    }
+}
+
 .embed-responsive {
     max-width: 800px;
 }
