@@ -2,10 +2,10 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Sawmill
+# Lumberjack's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/lumberjack_block.png" alt="Sawmill" />
+    <img src="../../assets/images/buildings/lumberjack_block.png" alt="LumberjackHut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,12 +16,12 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>sawmill</recipe>
+    <recipe>Lumberjack's Hut</recipe>
 </div>
 
-Welcome to the Sawmill Hut Information Site.
+Welcome to the Lumberjack's Hut Information Site.
 
-Before you choose a place to build the Sawmill Hut, take into account the location from Trees, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Sawmill Hut block and place it with the [Building Tool](../items/buildingtool). Once the Sawmill Hut is placed, the lumberjack will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Lumberjack if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Lumberjack's Hut, take into account the location from Trees, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Lumberjack's Hut block and place it with the [Building Tool](../items/buildingtool). Once the Lumberjack's Hut is placed, the lumberjack will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Lumberjack if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 Now you will have to issue the “Build” assignment so it can build the Sawmill Hut”.
 
