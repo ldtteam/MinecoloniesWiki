@@ -25,7 +25,7 @@ Before you choose a place to build it's Hut, take into account the distances amo
 
 Now you will have to issue the “Build” assignment so it can build the "composter Hut".  Once the builder is done you can now hire the Composter.
 
-**Note:** Once the builder is done you will have to go to page 2 of the hut GUI and "define a list of items to be composted". All recognized items (even modded items) will be listed there. You will have to select from that list what you want the composter to use to make compost.
+**Note:** Once the builder is done you will have to go to page 2 of the hut GUI and "define a list of items to be composted". All recognized items (even modded items) will be listed there. You will have to select from that list what you want the composter to use to make compost or dirt.
 
 **Hint:** You will want to upgrade the Composter to get all the awesome perks it has to offer for higher levels. The higher the level of the Hut the more Barrels the Composter will be able to use. So:
 
@@ -68,7 +68,8 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br><br><br>
-      <li><strong>Items:</strong> Here you will see a list of all the items that were recognized by the mod for the composter to use. Including modded items. All items are "deselected" (off) by default. You can then select which items you want the composter to use. </li>
+      <li><strong>Items to compost:</strong> Here you will see a list of all the items that were recognized by the mod for the composter to use. Including modded items. All items are "deselected" (off) by default. You can then select which items you want the composter to use. </li><br><br><br><br>
+     <li><strong>Compost/Dirt:</strong> You can select which items you want the composter to make; Compost or Dirt. </li>
     </ul>
   </div>
 </div>
