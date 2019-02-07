@@ -2,10 +2,10 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Sawmill
+# Lumberjack
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/lumberjack_block.png" alt="Sawmill" />
+    <img src="../../assets/images/buildings/Lumberjack_Block.png" alt="LumberJack" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,23 +16,23 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>sawmill</recipe>
+    <recipe>Lumberjack</recipe>
 </div>
 
-Welcome to the Sawmill Hut Information Site.
+Welcome to the Lumberjack Hut Information Site.
 
-Before you choose a place to build the Sawmill Hut, take into account the location from Trees, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Sawmill Hut block and place it with the [Building Tool](../items/buildingtool). Once the Sawmill Hut is placed, the lumberjack will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Lumberjack if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Lumberjack Hut, take into account the location from Trees, Warehouse and/or other Worker(s). After you have selected a place for the hut you have to craft the Lumberjack Hut block and place it with the [Building Tool](../items/buildingtool). Once the Lumberjack Hut is placed, the lumberjack will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Lumberjack if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-Now you will have to issue the “Build” assignment so it can build the Sawmill Hut”.
+Now you will have to issue the “Build” assignment so it can build the Lumberjack Hut”.
 
-**Note:** Once the Sawmill block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.
+**Note:** Once the Lumberjack block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.
 
 <br><br>
 
 ## Hut GUI
 
 
-Now you can access the Sawmill's Hut block (right click on it) and you will see a GUI with different options:
+Now you can access the Lumberjack's Hut block (right click on it) and you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -49,7 +49,7 @@ Now you can access the Sawmill's Hut block (right click on it) and you will see 
 </div>
 <br>
 
-This is “page 2” of the Sawmill GUI. It shows a list of recognized saplings it can work with. Here you can turn *ON* or *OFF* which type of trees the Lumberjack will chop down and replant. You can then have 1 lumberjack for 2 types of trees (for example). And the buttons:
+This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplings it can work with. Here you can turn *ON* or *OFF* which type of trees the Lumberjack will chop down and replant. You can then have 1 lumberjack for 2 types of trees (for example). And the buttons:
 
 <div class="row">
   <div class="col-sm-12 col-md">
