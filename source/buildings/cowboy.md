@@ -5,7 +5,7 @@ layout: default
 # Cowboy's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/cowboy_block.png" alt="Cowboy's Hut" />
+    <img src="../../assets/images/buildings/Cowboy_Block.png" alt="Cowboy's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
