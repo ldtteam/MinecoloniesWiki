@@ -27,7 +27,7 @@ Now you will have to issue the “Build” assignment so it can build the Lumber
 
 **Note:** Once the Lumberjack block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.
 
-<br><br>
+<br><br><br><br><br><br>
 
 ## Hut GUI
 
