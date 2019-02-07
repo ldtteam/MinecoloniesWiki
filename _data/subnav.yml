@@ -91,6 +91,8 @@ subnav:
         url: source/buildings/farm
       - page: Fisherman's Hut
         url: source/buildings/fisherman
+      - page: Lumberjack Tower
+        url: source/buildings/lumberjack
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Library
