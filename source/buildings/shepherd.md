@@ -5,7 +5,7 @@ layout: default
 # Shepherd's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/shepherd_block.png" alt="Shepherd's Hut" />
+    <img src="../../assets/images/buildings/Shepherd_Block.png" alt="Shepherd's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
