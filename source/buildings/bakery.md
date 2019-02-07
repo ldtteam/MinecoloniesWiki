@@ -5,7 +5,7 @@ layout: default
 # Bakery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/bakery_block.png" alt="Bakery" />
+    <img src="../../assets/images/buildings/Bakery_Block.png" alt="Bakery" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
