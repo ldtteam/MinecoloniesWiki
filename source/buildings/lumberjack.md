@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>Lumberjack</recipe>
+    <recipe>lumberjack</recipe>
 </div>
 
 Welcome to the Lumberjack Hut Information Site.
