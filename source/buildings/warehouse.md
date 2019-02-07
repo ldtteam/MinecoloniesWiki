@@ -5,7 +5,7 @@ layout: default
 # Warehouse
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/warehouse_block.png" alt="Warehouse" />
+    <img src="../../assets/images/buildings/Warehouse_Block.png" alt="Warehouse" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
