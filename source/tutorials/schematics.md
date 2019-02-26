@@ -85,6 +85,7 @@ Here is a full list, up-to-date as of 26 February 2019, of the building names. *
 | Composter1     | Composter2     | Composter3     | Composter4     | Composter5     |
 | Cook1          | Cook2          | Cook3          | Cook4          | Cook5          |
 | Cowboy1        | Cowboy2        | Cowboy3        | Cowboy4        | Cowboy5        |
+| Crusher1       | Crusher2       | Crusher3       | Crusher4       | Crusher5       |
 | Deliveryman1   | Deliveryman2   | Deliveryman3   | Deliveryman4   | Deliveryman5   |
 | Farmer1        | Farmer2        | Farmer3        | Farmer4        | Farmer5        |
 | Fisherman1     | Fisherman2     | Fisherman3     | Fisherman4     | Fisherman5     |
