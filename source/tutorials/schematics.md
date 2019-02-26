@@ -32,24 +32,24 @@ This is a FAQ section to answer most questions regarding schematics in Minecolon
 
 #### What and Where is the scans folder?
 
-The scans folder is where the schematics are saved after performing a scan using the scan tool in Minecolonies. This is a client side only directory which is located in Minecraft's folder under: `*/minecolonies/scans/`. Freshly scanned schematics can be found in `*/minecolonies/scans/new/` unless they have been renamed in game. This directory is shared between all your Single Player games and Multi Player games.
+The scans folder is where the schematics are saved after performing a scan using the scan tool in Minecolonies. This is a client side only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in game. This directory is shared between all your Single Player games and Multi Player games.
 
 #### Where is the schematic folder?
 
-Custom schematics need to be copied inside the schematic folder: `*\minecolonies\schematics\` (or `*\minecolonies\schematics\` for Mac and Linux).
+Custom schematics need to be copied inside the schematic folder: `*\structurize\schematics\` (or `*\structurize\schematics\` for Mac and Linux).
 
 The location of this folder depends of the type of game:
 
 - For a Single Player game, there are 2 possible locations:
-  * In the world folder: `*/minecraft/saves/(World Name)/minecolonies/schematics/`
+  * In the world folder: `*/minecraft/saves/(World Name)/structurize/schematics/`
     + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), minecolonies will completely ignore the other directory.
-  * In the Minecraft's folder: `*/minecraft/minecolonies/schematics/`
+  * In the Minecraft's folder: `*/minecraft/structurize/schematics/`
     + **Note:** Use this folder when you want to have the same custom schematics across multiple worlds.
 - For a Multiplayer game, the schematics are always loaded from the world's directory under: `*/minecolonies/schematics/` directory.
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
 
-When playing on a server, the server needs to send the schematics to the players so that the build tool's preview works. Those schematics are saved in Minecraft's directory under `*/minecolonies/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
+When playing on a server, the server needs to send the schematics to the players so that the build tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
 
 #### How to create custom huts?
 
@@ -69,29 +69,38 @@ Once ready, move the MyOwn folder into the schematics folder and start your game
 
 Custom Hut Filenames
 
-Here is a full list, up-to-date as of 13 February 2018, of the building names. **Please note**, *capitalization matters*.
+Here is a full list, up-to-date as of 26 February 2019, of the building names. **Please note**, *capitalization matters*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
+| Archery1       | Archery2       | Archery3       | Archery4       | Archery5       |
 | Baker1         | Baker2         | Baker3         | Baker4         | Baker5         |
 | Barracks1      | Barracks2      | Barracks3      | Barracks4      | Barracks5      |
 | BarracksTower1 | BarracksTower2 | BarracksTower3 | BarracksTower4 | BarracksTower5 |
+| Blacksmith1    | Blacksmith2    | Blacksmith3    | Blacksmith4    | Blacksmith5    |
 | Builder1       | Builder2       | Builder3       | Builder4       | Builder5       |
 | ChickenHerder1 | ChickenHerder2 | ChickenHerder3 | ChickenHerder4 | ChickenHerder5 |
 | Citizen1       | Citizen2       | Citizen3       | Citizen4       | Citizen5       |
+| CombatAcademy1 | CombatAcademy2 | CombatAcademy3 | CombatAcademy4 | CombatAcademy5 |
+| Composter1     | Composter2     | Composter3     | Composter4     | Composter5     |
 | Cook1          | Cook2          | Cook3          | Cook4          | Cook5          |
 | Cowboy1        | Cowboy2        | Cowboy3        | Cowboy4        | Cowboy5        |
 | Deliveryman1   | Deliveryman2   | Deliveryman3   | Deliveryman4   | Deliveryman5   |
 | Farmer1        | Farmer2        | Farmer3        | Farmer4        | Farmer5        |
 | Fisherman1     | Fisherman2     | Fisherman3     | Fisherman4     | Fisherman5     |
 | GuardTower1    | GuardTower2    | GuardTower3    | GuardTower4    | GuardTower5    |
+| Library1       | Library2       | Library3       | Library4       | Library5       |
 | Lumberjack1    | Lumberjack2    | Lumberjack3    | Lumberjack4    | Lumberjack5    |
 | Miner1         | Miner2         | Miner3         | Miner4         | Miner5         |
+| Sawmill1       | Sawmill2       | Sawmill3       | Sawmill4       | Sawmill5       |
 | Shepherd1      | Shepherd2      | Shepherd3      | Shepherd4      | Shepherd5      |
 | Smeltery1      | Smeltery2      | Smeltery3      | Smeltery4      | Smeltery5      |
+| Stonemason1    | Stonemason2    | Stonemason3    | Stonemason4    | Stonemason5    |
+| StoneSmeltery1 | StoneSmeltery2 | StoneSmeltery3 | StoneSmeltery4 | StoneSmeltery5 |
 | SwineHerder1   | SwineHerder2   | SwineHerder3   | SwineHerder4   | SwineHerder5   |
 | TownHall1      | TownHall2      | TownHall3      | TownHall4      | TownHall5      |
 | WareHouse1     | WareHouse2     | WareHouse3     | WareHouse4     | WareHouse5     |
+
 
 #### How to override some built-in schematics?
 
