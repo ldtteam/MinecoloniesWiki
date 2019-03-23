@@ -36,3 +36,5 @@ Once the builder is done the Deliveryman will start to run back and forth from t
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 
 **Hint**: You MUST build the [Warehouse](../../source/buildings/warehouse) to at least level 1 so the Deliveryman can do it's work. The deliveryman will visit 1 worker's hut per trip, then back to Warehouse. So, level up the Warehouse and build more Deliverymen huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
+
+You can only have 5 deliverymen max per warehouse, and it is defaulted to only allow 1 warehouse per colony.
