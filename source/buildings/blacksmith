@@ -27,7 +27,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords (No bows or redstone items). The Blacksmith will work when they receive a request for any of those items for all of your Colony's needs.
 
-**Hint:** Once the builder is done you will want to upgrade the Smeltery to get all the awesome perks it has to offer for higher levels. The higher the level of the Hut the more furnaces the Smelter will be able to use and it will have a higher chance to double and even triple the ingot output per block of ore. The way it works is that the *Worker level* determines the "Chance" is has to either Double or Triple the ingot output of the ores, according to the Hut level. So:
+**Hint:** Once the builder is done you will want to upgrade the Blacksmith to get all the awesome perks it has to offer for higher levels. So:
 
 
 | Building Level | Number of Recipes |
