@@ -55,17 +55,13 @@ Now you can access the Archery block (right click on it) and you will see a GUI 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/Buildings/archerygui.png" class="img-fluid mx-auto" alt="Archery GUI">
-  </div>
-  <div class="col-sm-12 col-md"><br><br>
-    <p>The Archery and it's current Level. And the buttons:</p>
+   </div>
+  <div class="col-sm-12 col-md">
+    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
-      <li><strong>Manage Workers: </strong> This is where you assign student Archers to the building. 
-      <li><strong>Recall Worker: </strong> This is where you recall the studen Archers to the hut building.
-      <li><strong>Build Options: </strong> This is where you can upgrade the building, change the schematic "style' you currently have built. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position. As well as reposition the building, or Repair the building, so the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building.</li>
-      <li><strong>Delivery Priority: </strong> You have two options, Automatic (the mod will change this depending on the level of the building) or Static, where you can choose the priority level. 1/10 is the lowest priority, 10/10 is the highest priority.</li>
-      <li><strong>List Recipes:</strong> This is where any recipes that the students know are kept.</li>
-      <li><strong>Teach Recipes:</strong> This is where you can teach the students any recipe that can be created in a 2x2 crafting grid. </li>
-      <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
+      {% for item in site.data.gui.global %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
     </ul>
   </div>
 </div>
