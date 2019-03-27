@@ -49,7 +49,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | Dirt |	wheat seeds
 | Gravel |	coal
 | Gravel |	diamond
-| Gravel |	dye: Cocoa Bean
+| Gravel |	dye: Lapis Luzuli
 | Gravel |	emerald
 | Gravel |	flint
 | Gravel |	gold ingot
@@ -57,7 +57,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | Gravel |	iron nugget
 | Gravel |	redstone
 | Sand |	cactus
-| Sand |	dye: Cactus Green
+| Sand |	dye: Cocoa Bean
 | Sand |	gold nugget
 | Sand |	reeds
 | Soul Sand |	blaze powder
@@ -65,7 +65,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | Soul Sand |	magma cream
 | Soul Sand |	nether wart
 | Soul Sand |	quartz
-| Soul Sand |	skull: Wither
+| Soul Sand |	skull: Human
 
 
 ## Hut GUI
