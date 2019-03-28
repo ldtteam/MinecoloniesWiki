@@ -50,7 +50,7 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/Buildings/barracksgui.png" class="img-fluid mx-auto" alt="Barracks GUI">
+    <img src="../../assets/images/Buildings/barracks_gui.png" class="img-fluid mx-auto" alt="Barracks GUI">
   </div>
   <div class="col-sm-12 col-md"><br><br>
     <p>The Barracks and it's current Level. Will also keep track of and display the "Last Barbarian Spawns:". And the buttons:</p>
