@@ -39,7 +39,7 @@ To Convert NBT to .Blueprint
 3. Create a folder under updater called "input"
 4. Move NBT files to the sturcturize\updater\input folder
 5. Enter an SP world in that instance 
-6. Type in the command /updateschematics
+6. Type in the command /structurize updateschematics
 7. When it comes back, go to the updater folder and you will see an output folder, there are your new .blueprint files, 
 8. Move those to your sturcturize\schematics folder.
 9. Use your new schematics.
