@@ -44,7 +44,7 @@ When accessing the Stone Smeltery's Hut block (right clicking on it), you will s
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/stonesmelterygui.png" class="img-fluid mx-auto" alt="Stone Smeltery GUI">
+    <img src="../../assets/images/buildings/stonesmelterygui.png" class="img-fluid mx-auto" alt="Stone Smeltery GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
