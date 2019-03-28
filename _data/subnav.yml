@@ -68,7 +68,7 @@ subnav:
       - page: Miner
         url: source/workers/miner
       - page: Miller
-        url: source/workers/Miller
+        url: source/workers/miller
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
