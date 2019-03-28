@@ -5,7 +5,7 @@ layout: default
 # Chicken Herder
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Farmer_M.png" alt="Chicken Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Farmer_F.png" alt="Chicken Herder Female" />
+<img src="../../assets/images/workers/ChickenHerder_M.png" alt="Chicken Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/ChickenHerder_F.png" alt="Chicken Herder Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -25,7 +25,7 @@ Welcome to the Chicken Herder's Information Site.
 
 The chicken herder is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; eggs and feathers. The Chicken Herder will breed and butcher the chickens for you as long as you provide it with seeds and an axe.
 
-Click here for full information about the [Chicken Herder's hut](../../source/buildings/chickenherder) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Herder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Chicken Herder's hut](../../source/buildings/chickenherder) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the ChickenHerder will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a ChickenHerder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a "Chicken Herder!" **CONGRATULATIONS!**
 
