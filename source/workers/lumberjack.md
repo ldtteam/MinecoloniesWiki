@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Strength</p>
       <p class="traits">Charisma</p>
-      <p><a href="../buildings/sawmill">Sawmill</a></p>
+      <p><a href="../buildings/lumberjack">Lumberjack</a></p>
     </div>
   </div>
 </div>
