@@ -8,6 +8,7 @@ Schematics are files containing block and entity information of a certain area a
 
 - [Schematics](#schematics)
   - [Placing a Schematic.](#placing-a-schematic)
+  - [Converting files from the older NBT system to the new BLUEPRINT system.](#converting-files)
   - [FAQ](#faq)
       - [What and Where is the scans folder?](#what-and-where-is-the-scans-folder)
       - [Where is the schematic folder?](#where-is-the-schematic-folder)
@@ -25,6 +26,25 @@ Schematics are files containing block and entity information of a certain area a
 Once you have scanned a structure, you can use the build tool to have your builder "build it" for you. Once you right click with the Build Tool you will have to select "My Schematics" (in the left drop down menu) and on the right side drop down menu you will see the scans that you have made.There is also a "Rename" button where you can change the name that was originally assigned to the scan (for example: SCAN_1533778290135) to whatever you like. You can also "delete" any of your saved scans.
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
+
+
+## Converting Files
+
+If you have old schematics that have the .nbt file name, you can automatically convert them to the new .blueprint name without rescanning the. The newer updates will not allow .nbt files to be used so you have to convert them first.
+
+To Convert NBT to .Blueprint
+
+1. Open up your structurize folder eg: C:\Users\YourName\Documents\Curse\Minecraft\Instances\Myserver\structurize
+2. Create a folder called "updater"
+3. Create a folder under updater called "input"
+4. Move NBT files to the sturcturize\updater\input folder
+5. Enter an SP world in that instance 
+6. Type in the command /structurize updateschematics
+7. When it comes back, go to the updater folder and you will see an output folder, there are your new .blueprint files, 
+8. Move those to your sturcturize\schematics folder.
+9. Use your new schematics.
+
+New scans will automatically save as .blueprint
 
 ## FAQ
 
@@ -53,23 +73,23 @@ When playing on a server, the server needs to send the schematics to the players
 
 #### How to create custom huts?
 
-To create new schematics for existing huts, there are some guidelines that you must follow: The scans MUST have the same footprint for the same style/Hut's type; The scans must contain the hut's chest i.e. builder's chest for the builder's hut, Citizen's chest for the Citizen's hut and so on. The hut chest need to be exactly at the same place and have the same rotation for each level; The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.nbt. For example, for the builder's huts with the MyOwn style, we would have:
+To create new schematics for existing huts, there are some guidelines that you must follow: The scans MUST have the same footprint for the same style/Hut's type; The scans must contain the hut's chest i.e. builder's chest for the builder's hut, Citizen's chest for the Citizen's hut and so on. The hut chest need to be exactly at the same place and have the same rotation for each level; The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the builder's huts with the MyOwn style, we would have:
 
-*MyOwn/Builder1.nbt*
-*MyOwn/Builder2.nbt*
-*MyOwn/Builder3.nbt*
-*MyOwn/Builder4.nbt*
-*MyOwn/Builder5.nbt*
+*MyOwn/Builder1.blueprint*
+*MyOwn/Builder2.blueprint*
+*MyOwn/Builder3.blueprint*
+*MyOwn/Builder4.blueprint*
+*MyOwn/Builder5.blueprint*
 
-- **Note:** in the build tool, the extension is hidden. HutName can be Builder, Citizen, Deliveryman, Farmer, Fisherman, GuardTower, Lumberjack, Miner, TownHall and WareHouse. The maximum level is 5.
+- **Note:** in the build tool, the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5.
 
 Once ready, move the MyOwn folder into the schematics folder and start your game. You should be able to see it with the the build tool.
 
-- **Note:** Remember that you need the appropriate chest in your inventory to be able to see the schematics in the build tool.
+- **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 Custom Hut Filenames
 
-Here is a full list, up-to-date as of 26 February 2019, of the building names. **Please note**, *capitalization matters*.
+Here is a full list, up-to-date as of 22 March 2019, of the building names. **Please note**, *capitalization matters*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -95,6 +115,7 @@ Here is a full list, up-to-date as of 26 February 2019, of the building names. *
 | Miner1         | Miner2         | Miner3         | Miner4         | Miner5         |
 | Sawmill1       | Sawmill2       | Sawmill3       | Sawmill4       | Sawmill5       |
 | Shepherd1      | Shepherd2      | Shepherd3      | Shepherd4      | Shepherd5      |
+| Sifter1        | Sifter2        | Sifter3        | Sifter4        | Sifter5        |
 | Smeltery1      | Smeltery2      | Smeltery3      | Smeltery4      | Smeltery5      |
 | Stonemason1    | Stonemason2    | Stonemason3    | Stonemason4    | Stonemason5    |
 | StoneSmeltery1 | StoneSmeltery2 | StoneSmeltery3 | StoneSmeltery4 | StoneSmeltery5 |
@@ -105,7 +126,7 @@ Here is a full list, up-to-date as of 26 February 2019, of the building names. *
 
 #### How to override some built-in schematics?
 
-Simply create a schematic file with the same style/name. For instance to override the Builder's hut level 1 in wooden, create a schematic file name called wooden/Builder1.nbt.
+Simply create a schematic file with the same style/name. For instance to override the Builder's hut level 1 in wooden, create a schematic file name called wooden/Builder1.blueprint.
 
 #### How to use custom huts?
 
