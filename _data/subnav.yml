@@ -97,6 +97,8 @@ subnav:
         url: source/buildings/chickenherder
       - page: Citizen Hut
         url: source/buildings/citizenhut
+      - page: Combat Academy
+        url: source/buildings/combatacademy
       - page: Composter
         url: source/buildings/composter
       - page: Cowboy's Hut
