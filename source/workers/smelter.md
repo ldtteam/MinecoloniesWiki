@@ -5,7 +5,7 @@ layout: default
 # Smelter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/miner_m.png" alt="Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/miner_f.png" alt="Smelter Female" />
+<img src="../../assets/images/workers/Smelter_M.png" alt="Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Smelter_F.png" alt="Smelter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
