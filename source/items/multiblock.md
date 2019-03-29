@@ -33,24 +33,13 @@ You will see 4 blue arrows, a + and a - with Range: and Speed: in the center. Th
 
 You will need to left click on one of the arrows or +, or - and it will turn green. This shows the directions the blocks will move when activating the redstone. Then right click on another arrow or + or - for the direction the blocks will move when the redstone signal is off. (this is typically the location of where the blocks are currently in the build.)
 
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/multiblocksetup.png" alt="Multiblock Setup"></p>
-<br>
-
-In this setup, we are facing north, the blocks are to the east and we want them to go west. There are 11 blocks in the row, but only 10 will be moved. And they will move at the highest speed. The lever is currently in the off state, but if we click on it, 10 blocks will move west.
-
 **Note:** All blocks must be the same in order to work.
-
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/multiblocksetupmove.png" alt="Multiblock Setup after Activation"></p>
-<br>
 
 **Note:** There must be enough room for all the blocks to move or it will stop.
 
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/multiblockroom.png" alt="Multiblock Setup Wrong"></p>
-<br>
+<p class="h4"><a id="multiblock">Multiblock Video.</a></p>
 
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/multiblockblock.png" alt="Multiblock Setup Without Enough Room"></p>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <br>
