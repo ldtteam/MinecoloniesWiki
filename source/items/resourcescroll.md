@@ -45,10 +45,3 @@ Now, when you right click any where, any time, you will see all the requests on 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/resourcescrolluse.png" alt="Resource Scroll Use"></p>
 <br>
-
-<p class="h4"><a id="Resource Scroll">Resource Scroll Video.</a></p>
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<br>
