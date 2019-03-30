@@ -41,10 +41,3 @@ To use the calipers, to measure a square, right click on the front bottom corner
 <p style="text-align:center;"><img src="../../assets/images/items/calipercube.png" alt="Measuring a Cube"></p>
 <br>
 
-
-<p class="h4"><a id="multiblock">Caliper Video.</a></p>
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<br>
