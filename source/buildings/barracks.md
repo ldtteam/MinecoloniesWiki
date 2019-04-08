@@ -71,12 +71,11 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Schematic Style:</strong> (Birch in this image) Here you can verify the "style' of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position. Since each schematic is different.</li>
-        <li><strong> Builder:</strong> Here is where you can choose what builder you want on the project. If it is out of a builders range, this is where you can manually assign one.</strong></li>   
-      <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
-      <li><strong>Repair</strong> This is to repair a building back to it's current level according to the schematic. This will remove any changes that a player has made to the current building.</li>
-      <li><strong>Upgrade</strong> When you are ready to upgrade to the next level.</li>
-      <li><strong>Reposition Button</strong> To Move the building from it's current location. After pressing this button you will be taken to the 3D view of the building tool GUI so you can move it to where you want it.</li>
+       <ul>
+      {% for item in site.data.gui.build %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
+    </ul>
     </ul>
   </div>
 </div>
