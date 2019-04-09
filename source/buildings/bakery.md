@@ -47,6 +47,13 @@ When accessing the Baker's Hut block (right clicking on it) you will see a GUI w
   </div>
 </div>
 
-On page two of the GUI, you will see a list of recipes that the baker is able to make, just change the ones you want the baker to make to a yes and they will begin making those items as long as they recieve the required ingredients.
- <img src="../../assets/images/gui/bakerygui2.png" alt="Baker GUI Page 2" />
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/bakerygui2.png" class="img-fluid mx-auto" alt="Baker GUI Page 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p>On page two of the GUI, you will see a list of recipes that the baker is able to make, just change the ones you want the baker to make to a yes and they will begin making those items as long as they recieve the required ingredients.</p>
+  </div>
+</div>
+
 
