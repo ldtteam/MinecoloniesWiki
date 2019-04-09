@@ -5,7 +5,7 @@ layout: default
 # Archery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/archery_block.png" alt="Archery" />
+    <img src="../../assets/images/buildings/Archery_Block.png" alt="Archery" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -54,7 +54,7 @@ Now you can access the Archery block (right click on it) and you will see a GUI 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/Buildings/archerygui.png" class="img-fluid mx-auto" alt="Archery GUI">
+    <img src="../../assets/images/gui/archerygui.png" class="img-fluid mx-auto" alt="Archery GUI">
    </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
