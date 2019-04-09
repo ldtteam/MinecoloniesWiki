@@ -35,7 +35,7 @@ When accessing the Baker's Hut block (right clicking on it) you will see a GUI w
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/bakergui.png" class="img-fluid mx-auto" alt="Baker GUI">
+    <img src="../../assets/images/gui/bakerygui.png" class="img-fluid mx-auto" alt="Baker GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by working. The higher the level the faster and more efficient it will be). And the buttons:</p>
@@ -46,3 +46,7 @@ When accessing the Baker's Hut block (right clicking on it) you will see a GUI w
     </ul>
   </div>
 </div>
+
+On page two of the GUI, you will see a list of recipes that the baker is able to make, just change the ones you want the baker to make to a yes and they will begin making those items as long as they recieve the required ingredients.
+ <img src="../../assets/images/gui/bakerygui2.png" alt="Baker GUI Page 2" />
+
