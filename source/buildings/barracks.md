@@ -16,10 +16,10 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>barracks</recipe>
+    <recipe>Barracks</recipe>
 </div>
 
-The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Guard Towers](../buildings/guardtower) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will spawn 1 new citizen for every level built! So if you have a full level 5 Barracks with all 4 Towers level 5 as well, you will have 20 additional citizens to employ as you like! Awesome, right? After they have spawned you will have to "Hire" them as guards in your Towers or any other worker type you want.
+The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Barracks Towers](../buildings/barrackstower) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will employ and house 1 citizen for every level built! Each new guard will need a bed in a house in order to spawn, however, once they are hired at the barracks that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit) to spawn. Each Barracks Towers will house and employ 5 guards, for a total of 20 guards for your colony.
 
 Before you choose a place to build the Barracks, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc.
 
@@ -50,33 +50,32 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/Buildings/barracksgui.png" class="img-fluid mx-auto" alt="Barracks GUI">
+    <img src="../../assets/images/gui/barracksgui.png" class="img-fluid mx-auto" alt="Barracks GUI">
   </div>
   <div class="col-sm-12 col-md"><br><br>
     <p>The Barracks and it's current Level. Will also keep track of and display the "Last Barbarian Spawns:". And the buttons:</p>
     <ul>
-      <li><strong>Switch Style:</strong> This is so you can change the schematic "style' you currently have built. You can change the style to see the list of items required for other styles, but it's not recommended that you build a different style from here since it will most likely be in a different position. As well as reposition the building, but other the Towers will most likely not be moved as this would move hte barracks only.</li>
-      <li><strong>Repair Building:</strong> So the builder can recreate the original building (at the current level) and fix any broken, missing or unwanted addons to the original building..</li>
+      <li><strong>Build Options:</strong> This is the only option listed when clicking on the barracks hut, however, once you click on this, you will have the options to change the building (see next image)</li>
       <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
   </div>
 </div>
 <br>
 
-<p>After pressing the <b>Switch Style</b> button you now have a few options to consider:</p>
+<p>After pressing the <b>Build Options</b> button you now have a few options to consider:</p>
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/Buildings/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
+    <img src="../../assets/images/gui/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Schematic Style:</strong> (Birch in this image) Here you can verify the "style' of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position. Since each schematic is different.</li>
-      <li>This is the list of resources that the Builder will need for the schematic style selected.</li>
-      <li><strong>Cancel Button</strong> To cancel this view screen and go back to the Barracks GUI page 1.</li>
-      <li><strong>Switch Style Button</strong> When you are ready to "commit" to the build of this selected schematic style.</li>
-      <li><strong>Reposition Button</strong> To Move the building from it's current location. After pressing this button you will be taken to the 3D view of the building tool GUI so you can move it to where you want it.</li>
+       <ul>
+      {% for item in site.data.gui.build %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
+    </ul>
     </ul>
   </div>
 </div>

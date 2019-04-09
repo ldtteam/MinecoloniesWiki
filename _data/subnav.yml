@@ -41,6 +41,8 @@ subnav:
     subitems:
       - page: Baker
         url: source/workers/baker
+      - page: Blacksmith
+        url: source/workers/blacksmith
       - page: Builder
         url: source/workers/builder
       - page: Chicken Herder
@@ -51,6 +53,8 @@ subnav:
         url: source/workers/cook
       - page: Cowboy
         url: source/workers/cowboy
+      - page: Crusher
+        url: source/workers/crusher
       - page: Deliveryman
         url: source/workers/deliveryman
       - page: Farmer
@@ -63,40 +67,56 @@ subnav:
         url: source/workers/lumberjack
       - page: Miner
         url: source/workers/miner
+      - page: Miller
+        url: source/workers/miller
       - page: Shepherd
         url: source/workers/shepherd
+      - page: Sifter
+        url: source/workers/sifter
       - page: Smelter
-        url: source/workers/smelter 
+        url: source/workers/smelter
+      - page: Stonemason
+        url: source/workers/stonemason
+      - page: Stone Smelter
+        url: source/workers/stonesmelter
       - page: Swine Herder
         url: source/workers/swineherder
   - title: Buildings
     subitems:
+      - page: Archery
+        url: source/buildings/archery
       - page: Bakery
         url: source/buildings/bakery
       - page: Barracks
         url: source/buildings/barracks
+      - page: Blacksmith
+        url: source/buildings/blacksmith
       - page: Builder's Hut
         url: source/buildings/builder
       - page: Chicken Herder's Hut
         url: source/buildings/chickenherder
       - page: Citizen Hut
         url: source/buildings/citizenhut
+      - page: Combat Academy
+        url: source/buildings/combatacademy
       - page: Composter
         url: source/buildings/composter
       - page: Cowboy's Hut
         url: source/buildings/cowboy
+      - page: Crusher
+        url: source/buildings/crusher
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
       - page: Farm & Field
         url: source/buildings/farm
       - page: Fisherman's Hut
         url: source/buildings/fisherman
-      - page: Lumberjack
-        url: source/buildings/lumberjack
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Library
-        url: source/buildings/library
+        url: source/buildings/library  
+      - page: Lumberjack
+        url: source/buildings/lumberjack
       - page: Mine
         url: source/buildings/mine
       - page: Restaurant
@@ -105,8 +125,14 @@ subnav:
         url: source/buildings/sawmill
       - page: Shepherd's Hut
         url: source/buildings/shepherd
+      - page: Sifter
+        url: source/buildings/sifter
       - page: Smeltery
         url: source/buildings/smeltery
+      - page: Stonemason
+        url: source/buildings/stonemason
+      - page: Stone Smeltery
+        url: source/buildings/stonesmeltery        
       - page: Swine Herder's Hut
         url: source/buildings/swineherder
       - page: Town Hall
