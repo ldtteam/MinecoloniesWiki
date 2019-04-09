@@ -46,6 +46,7 @@ When accessing the Baker's Hut block (right clicking on it) you will see a GUI w
     </ul>
   </div>
 </div>
+<br> <br>
 
 <div class="row">
   <div class="col-sm-12 col-md">
