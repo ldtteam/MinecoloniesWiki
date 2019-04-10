@@ -143,3 +143,7 @@ subnav:
     subitems:
       - page: Recipes
         url: source/misc/recipes
+  - title: Troubleshooting
+    subitems:
+      - page: Troubleshooting
+        url: source/troubleshooting/troubleshooting
