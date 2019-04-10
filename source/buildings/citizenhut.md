@@ -44,7 +44,7 @@ When accessing the Citizen's Hut block (right clicking on it) you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/citizenhut_gui.png" class="img-fluid mx-auto" alt="Citizen Hut GUI">
+    <img src="../../assets/images/gui/citizen_gui.png" class="img-fluid mx-auto" alt="Citizen Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
