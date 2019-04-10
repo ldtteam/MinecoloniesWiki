@@ -62,23 +62,5 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 </div>
 <br>
 
-<p>After pressing the <b>Build Options</b> button you now have a few options to consider:</p>
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-       <ul>
-      {% for item in site.data.gui.build %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-    </ul>
-  </div>
-</div>
-<br><br>
-
+**To see build options please see the [Builder](../../source/workers/builder) Page**
 
