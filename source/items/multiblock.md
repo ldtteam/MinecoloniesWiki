@@ -14,7 +14,7 @@ Welcome to the Multiblock/Multipiston page.
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/multiblock.png" alt="Multiblock"></p>
-<br
+<br>
 
 ### The Block
 <br>
@@ -37,9 +37,4 @@ You will need to left click on one of the arrows or +, or - and it will turn gre
 
 **Note:** There must be enough room for all the blocks to move or it will stop.
 
-<p class="h4"><a id="multiblock">Multiblock Video.</a></p>
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<br>

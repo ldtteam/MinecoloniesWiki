@@ -196,7 +196,7 @@ These are the in game commands currently available, most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony: colony id&gt; &lt;dimension: dimension id&gt; [range: number in chunks] [add: true | false]</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.Claim</span><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Claims chunks (or removes claimed chunks) a specified number of chunks from the player's location for a colony<br><br>Examples:<br><code>/mc colony teleport colony: 1</code></td>
+      <td class="d-block d-md-table-cell">Claims chunks (or removes claimed chunks) a specified number of chunks from the player's location for a colony<br><br>Examples:<br><code>/mc colony claim colony: 1 dimension: 0 range: 8 add: true</code></td>
     </tr>
   </tbody>
 </table>
