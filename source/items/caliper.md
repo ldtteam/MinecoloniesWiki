@@ -14,7 +14,7 @@ Welcome to the Caliper page.
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/Caliper.png" alt="Caliper"></p>
-<br
+<br>
 
 ### The Item
 <br>
