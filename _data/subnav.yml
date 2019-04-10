@@ -19,16 +19,26 @@ subnav:
     subitems:
       - page: Building Tool
         url: source/items/buildingtool
-      - page: Caliper (WIP)
+      - page: Caliper
         url: source/items/caliper
+      - page: Clipboard
+        url: source/items/clipboard
       - page: Multi-block
         url: source/items/multiblock
+      - page: Postbox
+        url: source/items/postbox
+      - page: Resource Scroll
+        url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
+      - page: Substitution Blocks
+        url: source/items/substitutionblocks
       - page: Supply Camp
         url: source/items/supplycamp
       - page: Supply Ship
         url: source/items/supplyship
+      - page: Waypoints
+        url: source/items/Waypoints
   - title: Systems
     subitems:
       - page: Command System
@@ -143,3 +153,7 @@ subnav:
     subitems:
       - page: Recipes
         url: source/misc/recipes
+  - title: Troubleshooting
+    subitems:
+      - page: Troubleshooting
+        url: source/troubleshooting/troubleshooting

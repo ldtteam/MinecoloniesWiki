@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the StoneMason’s Information Site.
 
-The StoneMason is another part of your Town’s bloodline. Stonemason can learn 3x3 recipes made entirely out of cobble, stone, andesite, diorite, granite, sandstones, or materials oreDictionaried with stone. No quartz, purpure, or endstone.
+The StoneMason is another part of your Town’s crafting line. Stonemason can learn <strong>3x3</strong> recipes made entirely out of cobble, stone, andesite, diorite, granite, sandstones, or materials oreDictionaried with stone. No quartz, purpure, or endstone.
 
 
 Click here for full information about the [StoneMason's hut](../buildings/stonemason) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the StoneMason will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a StoneMason if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
