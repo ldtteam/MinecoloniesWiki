@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Baker’s Information Site.
 
-The Baker is another part of the your Town's bloodline. The baker will craft bread, cake and make cookies to provide for all your workers' needs. The baker will be making bread in the furnace, provided that the [Deliveryman](../workers/deliveryman) (or yourself) give it all the wheat to do it. The Baker will also craft a cake or cookies if you provide it with the appropriate ingredients. 
+The Baker is a part of the your Town's food production line. The baker will craft bread, cake, pies and make cookies to provide your workers' with baked goods. The baker will be making bread in the furnace, provided that the [Deliveryman](../workers/deliveryman) (or yourself) give it all the wheat to do it. The Baker will also craft a cake or cookies if you provide it with the appropriate ingredients. 
 
 Click here for full information about the [Baker's hut](../buildings/bakery) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Baker will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Baker if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
