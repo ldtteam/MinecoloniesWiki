@@ -5,7 +5,7 @@ layout: default
 # Combat Academy
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/combatacademy_block.png" alt="Combat Academy" />
+    <img src="../../assets/images/buildings/CombatAcademy_Block.png" alt="Combat Academy" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -66,3 +66,5 @@ Now you can access the Combat Academy block (right click on it) and you will see
   </div>
 </div>
 <br>
+
+**To see build options please see the [Builder](../../source/workers/builder) Page**
