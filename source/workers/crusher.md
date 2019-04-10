@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Crusher's Information Site.
 
-The Crusher is another part of your Town’s bloodline. The Crusher will crush materials into other materials. 
+The Crusher is another part of your Town’s production line. The Crusher will crush materials into other materials. 
 
 The default configuration is:
 Cobblestone into Gravel

@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Sifter's Information Site.
 
-The Sifter is another part of your Town’s bloodline. The Sifter will sift materials to find hidden ores, seed and other useful items and ingredientss. 
+The Sifter is another part of your Town’s production line. The Sifter will sift materials to find hidden ores, seed and other useful items and ingredients. 
 
 The default configuration is:
         Dirt
