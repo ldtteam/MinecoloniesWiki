@@ -44,3 +44,23 @@ You can go to the [Town Hall's GUI](../../source/buildings/townhall) and click o
 Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading it will keep it in it's inventory until the inventory becomes full, or it may dump any unnecessary items at the end of a build/upgrade into the Builder's Hut Inventory.
 
 **Hint:** If you see the builder has not finished building/upgrading any build order and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+
+## Hut's Build Options
+<p>After pressing the <b>Build Options</b> button you have a few options to consider:</p>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+       <ul>
+      {% for item in site.data.gui.build %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
+    </ul>
+    </ul>
+  </div>
+</div>
+<br><br>
