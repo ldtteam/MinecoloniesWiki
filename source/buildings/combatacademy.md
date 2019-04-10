@@ -54,7 +54,7 @@ Now you can access the Combat Academy block (right click on it) and you will see
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/Buildings/combatacademygui.png" class="img-fluid mx-auto" alt="Combat Academy GUI">
+    <img src="../../assets/images/gui/combatacademygui.png" class="img-fluid mx-auto" alt="Combat Academy GUI">
    </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
