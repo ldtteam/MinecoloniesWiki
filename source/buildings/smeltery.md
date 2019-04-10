@@ -56,3 +56,5 @@ When accessing the Smeltery's Hut block (right clicking on it), you will see a G
   </div>
 </div>
 <br>
+
+**To see build options please see the [Builder](../../source/workers/builder) Page**
