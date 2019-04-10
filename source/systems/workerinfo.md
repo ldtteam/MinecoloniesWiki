@@ -81,17 +81,23 @@ Choose a worker to view more information about them:
 | Job Description                          | Primary Traits           |
 | ---------------------------------------- | ------------------------ |
 | [Baker](../workers/baker)                | Intelligence & Dexterity |
+| [Blacksmith](../workers/blacksmith)      | Dexterity & Strength     |
 | [Builder](../workers/builder)            | Strength & Endurance     |
+| [Chicken Herder](../workers/chickenherder) | Dexterity & Strength   |
 | [Composter](../workers/composter)        | Dexterity & Strength     |
 | [Cook](../workers/cook)                  | Charisma & Intelligence  |
+| [Cowboy](../workers/cowboy)              | Dexterity & Strength     |
+| [Crusher](../worker/crusher)             | Strength & Endurance     |
 | [Deliveryman](../workers/deliveryman)    | Intelligence & Endurance |
 | [Farmer](../workers/farmer)              | Endurance & Charisma     |
 | [Fisherman](../workers/fisherman)        | Intelligence & Dexterity |
 | [Guard](../workers/guard)                | Intelligence & Strength  |
-| [Chicken Herder](../workers/chickenherder) | Dexterity & Strength   |
-| [Cowboy](../workers/cowboy)              | Dexterity & Strength     |
-| [Shepherd](../workers/shepherd)          | Dexterity & Strength     |
-| [Swine Herder](../workers/swineherder)   | Dexterity & Strength     |
 | [Lumberjack](../workers/lumberjack)      | Strength & Charisma      |
 | [Miner](../workers/miner)                | Strength & Endurance     |
+| [Miller](../workers/miller)              | Intelligence & Endurance |
+| [Shepherd](../workers/shepherd)          | Dexterity & Strength     |
+| [Sifter](../workers/sifter)              | Strength & Endurance     |
 | [Smelter](../workers/smelter)            | Strength & Intelligence  |
+| [Stonemason](../workers/stonemason)      | Intelligence & Endurance |
+| [Stone Smelter](../workers/stonesmelter) | Dexterity & Endurance    |
+| [Swine Herder](../workers/swineherder)   | Dexterity & Strength     |
