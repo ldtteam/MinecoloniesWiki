@@ -63,3 +63,4 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
