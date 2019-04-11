@@ -62,3 +62,4 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
 </div>
 <br><br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
