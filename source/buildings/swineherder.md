@@ -55,3 +55,4 @@ Now you can access the Swine Herder's Hut block (right click on it) and you will
   </div>
 </div>
 <br><br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
