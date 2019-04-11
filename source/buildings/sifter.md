@@ -75,7 +75,7 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/siftergui.png" class="img-fluid mx-auto" alt="Sifter GUI">
+    <img src="../../assets/images/gui/sifter_gui.png" class="img-fluid mx-auto" alt="Sifter GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
@@ -87,3 +87,4 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**

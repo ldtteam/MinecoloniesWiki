@@ -10,19 +10,8 @@ layout: default
 
 ### Basics
 
-**Note:** The Town Hall block can **not** be crafted, this is intentional. It can however be obtained either by crafting and placing the supply ship *OR* the supply camp (only 1 of these two options can be placed in the World by each player). If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../systems/commands) page).
+**Note:** The Town Hall block can **not** be crafted, this is intentional. It can however be obtained either by crafting and placing the supply ship *OR* the supply camp (only 1 of these two options can be placed in the World by each player). If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../systems/commands) page). Also, once you have already placed a Townhall and have a colony, if you break the townhall block and lose it, it can be crafted again.
 
-**Perks! - Perks! - Perks!**
-
-For each level of the Town Hall you build you will spawn 1 additional Citizen! So: 
-
-| Building Level | New Citizens |
-| :-----: | :-----: |
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 3 |
-| 4 | 4 |
-| 5 | 5 |
 
 <br><br>
 
@@ -221,3 +210,4 @@ After you have carefully decided where you want to place your Town Hall (Remembe
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
