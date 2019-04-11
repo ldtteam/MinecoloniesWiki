@@ -5,7 +5,7 @@ layout: default
 # Crusher
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/crusher_block.png" alt="Crusher" />
+    <img src="../../assets/images/buildings/Crusher_Block.png" alt="Crusher" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -60,3 +60,4 @@ When accessing the Crusher's Hut block (right clicking on it), you will see a GU
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**

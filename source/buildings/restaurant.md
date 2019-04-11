@@ -47,3 +47,4 @@ When accessing the Restaurant's Hut block (right clicking on it) you will see a 
     </ul>
   </div>
 </div>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
