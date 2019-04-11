@@ -5,7 +5,7 @@ layout: default
 # Sawmill
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/sawmill_block.png" alt="Sawmill" />
+    <img src="../../assets/images/buildings/Sawmill_Block.png" alt="Sawmill" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -58,3 +58,4 @@ When accessing the Sawmill's Hut block (right clicking on it), you will see a GU
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**

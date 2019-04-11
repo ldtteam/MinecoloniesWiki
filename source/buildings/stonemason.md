@@ -5,7 +5,7 @@ layout: default
 # Stonemason
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/stonemason_block.png" alt="Stonemason" />
+    <img src="../../assets/images/buildings/Stonemason_Block.png" alt="Stonemason" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -58,3 +58,4 @@ When accessing the Stonemason's Hut block (right clicking on it), you will see a
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
