@@ -75,3 +75,4 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
 <br>
 <p style="text-align:center;"><img src="../../assets/images/buildings/warehouse.png" alt="Warehouse"></p>
 <br><br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**

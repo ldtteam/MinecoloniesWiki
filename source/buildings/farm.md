@@ -84,3 +84,4 @@ This is "page 2" of the GUI. It show the "Fields" that are avaialble (recognizab
   </div>
 </div>
 <br><br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
