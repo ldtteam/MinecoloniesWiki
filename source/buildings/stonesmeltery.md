@@ -5,7 +5,7 @@ layout: default
 # StoneSmeltery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/stonesmeltery_block.png" alt="Stone Smeltery" />
+    <img src="../../assets/images/buildings/StoneSmeltery_Block.png" alt="Stone Smeltery" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -56,3 +56,4 @@ When accessing the Stone Smeltery's Hut block (right clicking on it), you will s
   </div>
 </div>
 <br>
+**To see build options please see the [Builder](../../source/workers/builder) Page**
