@@ -62,5 +62,5 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
 </div>
 <br>
 
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+## **To see build options please see the [Builder](../../source/workers/builder) Page**
 
