@@ -58,4 +58,5 @@ When accessing the Blacksmith's Hut block (right clicking on it), you will see a
   </div>
 </div>
 <br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+
+## **To see build options please see the [Builder](../../source/workers/builder) Page**
