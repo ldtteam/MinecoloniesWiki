@@ -59,6 +59,9 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
       <li><strong>Toggle all: </strong>A button so you can just turn <i>ALL</i> saplings (tree types) "On" or "Off" for easier management.</li>
     </ul>
   </div>
-</div>
+</div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
