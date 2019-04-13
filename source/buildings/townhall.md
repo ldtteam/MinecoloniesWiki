@@ -206,5 +206,10 @@ After you have carefully decided where you want to place your Town Hall (Remembe
   </div>
 </div>  
 
----
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+---  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
+
