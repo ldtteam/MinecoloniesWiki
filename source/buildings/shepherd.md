@@ -64,4 +64,7 @@ Now you can access the Sheep's Hut block (right click on it) and you will see a 
   </div>
 </div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
