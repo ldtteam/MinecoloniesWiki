@@ -55,5 +55,9 @@ When accessing the Restaurant's Hut block (right clicking on it) you will see a 
       <ul><strong> Fuel: </strong> Listed are items that can be used by the cook as fuel in the furnaces. Simply turn on any that you want your cook to use, and the deliveryman will deliver those items to the cook when they need fuel.
       </ul>
     </div>  
-      
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
+
