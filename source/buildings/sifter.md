@@ -101,4 +101,7 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
   </div>
 </div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
