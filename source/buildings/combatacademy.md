@@ -57,6 +57,7 @@ Now you can access the Combat Academy block (right click on it) and you will see
       {% endfor %}
     </ul>
   </div>
-</div>
+</div>  
+  <br>
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
