@@ -28,10 +28,10 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | Hut Level | Mesh Available | Max Amount
 | ----- | ----- | -----|
 | 1         | String         | 16 |
-| 2         | Flint          | 32 |
-| 3         | Iron           | 64 |
-| 4         | Diamond        | 128 |
-| 5         | Any            | 999 |
+| 2         | Flint          | 64 |
+| 3         | Iron           | 144 |
+| 4         | Diamond        | 256 |
+| 5         | Any            | 999 |  
 
 
 | Sifted Block| Chance for |
