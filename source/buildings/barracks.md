@@ -59,8 +59,8 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
       <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
   </div>
-</div>
-<br>
-
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
