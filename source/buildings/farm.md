@@ -82,6 +82,7 @@ This is "page 2" of the GUI. It show the "Fields" that are avaialble (recognizab
       <li><b>Field:</b> This is the list of recognized fields. If the field shows an X that means it is already assigned to a farmer and will list the farmers name who takes care of that field, as well as show what seed is in the field "scarecrow". If that X is red and the button is not grayed out, that field belongs to the current farmer and you can unassign it. If the field has a Green check, then that field can be assigned to the farmer. If the button is grayed out, with a check that means that no one is assigned to that field but the current farmer can not accept any more fields. rows, etc.).</li>
     </ul>
   </div>
-</div>
+</div>  
+  <br>
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
