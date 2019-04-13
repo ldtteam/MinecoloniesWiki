@@ -74,6 +74,8 @@ The **Cowboy** has a pg.2 in the Hut GUI. With an option:
   </div>
 </div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
 
