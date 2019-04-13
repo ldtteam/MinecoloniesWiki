@@ -56,6 +56,9 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
       <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li>
     </ul>
   </div>
-</div>
+</div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
