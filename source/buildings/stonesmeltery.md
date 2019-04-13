@@ -65,6 +65,9 @@ When accessing the Stone Smeltery's Hut block (right clicking on it), you will s
       </ul>
     </ul>
   </div>
-</div>    
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
