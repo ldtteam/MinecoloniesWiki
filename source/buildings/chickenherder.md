@@ -52,7 +52,7 @@ Now you can access the Chicken's Hut block (right click on it) and you will see 
       {% endfor %}
     </ul>
   </div>
-</div>
-<br><br>  
-
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
