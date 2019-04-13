@@ -55,6 +55,9 @@ When accessing the Sawmill's Hut block (right clicking on it), you will see a GU
       {% endfor %}
     </ul>
   </div>
-</div>
+</div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
