@@ -55,6 +55,7 @@ When accessing the Baker's Hut block (right clicking on it) you will see a GUI w
   <div class="col-sm-12 col-md">
     On page two of the GUI, you will see a list of recipes that the baker is able to make, just change the ones you want the baker to make to a ON and they will begin making those items as long as they recieve the required ingredients.
   </div>
-</div>
-
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
