@@ -85,5 +85,8 @@ You can right click using the Guard-scepter to set a single or multiple patrol p
 
 **Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor **_(only when Tower is level 5)_** as well and reap the benefits of the protection thye'll be able to provide and the drops the Guard will be picking up along the way.
   
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
