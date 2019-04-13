@@ -11,8 +11,12 @@ layout: default
 Welcome to the Substitution Blocks page. 
 <br>
 
+Substitution Block
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Substitution Block"></p>
+<br>
+Solid Substitution Block
+<br>
 <p style="text-align:center;"><img src="../../assets/images/items/solidsubstitutionblock.png" alt="SolidSubstitution Block"></p>
 <br>
 
