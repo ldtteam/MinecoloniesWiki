@@ -34,9 +34,8 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | 2 | 4 |
 | 3 | 6 |
 | 4 | 8 |
-| 5 | 10 |
+| 5 | 10 |  
 
-<br>
 
 Now you can access the Chicken's Hut block (right click on it) and you will see a GUI with different options:
 
@@ -54,6 +53,6 @@ Now you can access the Chicken's Hut block (right click on it) and you will see 
     </ul>
   </div>
 </div>
-<br><br>
+<br><br>  
 
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+## **To see build options please see the [Builder](../../source/workers/builder) Page**
