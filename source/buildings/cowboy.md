@@ -72,6 +72,10 @@ The **Cowboy** has a pg.2 in the Hut GUI. With an option:
       <li><b>Not Collecting Milk::</b> In this mode, the Herder will not be asking or waiting for buckets, it will jsut breed and butcher the cows and will not collect milk.</li>
     </ul>
   </div>
-</div>
+</div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
+
