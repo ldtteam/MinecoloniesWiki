@@ -34,8 +34,10 @@ The building will virtually house your Citizens. Each level of the Citizen Hut w
 
 You can build/upgrade as you like, as long as the total building level equals 4. That will "house" your initial 4 Citizens, in any combination you want. Awesome, right?
 
-After you have created enough space for your 4 initial Citizens, then the next level of a Citizen Hut you upgrade (or next Citizen Hut you build) will spawn the next Citizen. And so on.. build/upgrade as much as you like and every new build or upgrade level afterwards will "spawn" another Citizen for your Town. 
-<br><br>
+After you have created enough space for your 4 initial Citizens, to get a new citizen to spawn 1 of 2 things must happen. 
+  * Option 1: Children - To get children to spawn, a male and female must be housed in 1 hut and there must be a free bed in the colony. It doesn't have to be in the same house as the male and female. If the free bed is in the same house as the "parents" the child will take the surname of the "mother". If the free bed is in the hut where someone else lives, they will take the surname of the person already housed in that citizen hut. If the free bed is in a house where no one lives, then they will get a random surname. 
+  * Option 2: Recruitment - You can recruit new citizens through the [TownHall](../source/buildings/townhall), On the Actions page.  
+  
 
 ## Hut GUI
 
@@ -49,14 +51,13 @@ When accessing the Citizen's Hut block (right clicking on it) you will see a GUI
   <div class="col-sm-12 col-md">
     <br>
     <p> This is the GUI for the Citizen's Hut. It shows the build "level" of the Hut. And the buttons:</p>
-    <br>
-    <br>
-    <ul>
-      <li><strong>Build/Upgrade Building.- </strong>to create the build/upgrade work order for this building.</li>
-      <li><strong>Repair Building.- </strong> So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</li>
-      <li><strong>Inventory.- </strong>This is just an Inventory space where you can store anything you like. Here you can access the buildings storage.</li>
+   <ul>
+      {% for item in site.data.gui.citizen %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
     </ul>
   </div>
-</div>
-<br><br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
