@@ -59,5 +59,19 @@ When accessing the Crusher's Hut block (right clicking on it), you will see a GU
     </ul>
   </div>
 </div>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/crushergui2.png" class="img-fluid mx-auto" alt="Crusher GUI Page 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p>Page 2 of the Gui :</p>
+    <ul>
+        <li><strong>Item to be crushed:</strong>Amount to crush</li>
+    </ul>
+  </div>
+</div>  
   
-## **To see build options please see the [Builder](../../source/workers/builder) Page**
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
