@@ -73,8 +73,9 @@ After you have carefully decided where you want to place your Town Hall (Remembe
     </ul>
    <p><strong>Page 2: </strong>This is for the PVP part of the mod, here you have:</p>
     <ul>
-     <li><strong>Allies.- </strong>Other Colonies that you have added as "Allies" and they have confirmed your Colony as ally as well.</li>
-     <li><strong>Feuds.- </strong>Other Colonies that you have added as "Feud" and they have confirmed your Colony as feud as well.</li>
+     <li><strong>Allies.- </strong>Other Colonies that you have added as "Allies" and they have confirmed your Colony as ally as well.<strong> To do this both colonies must have the player added as an Officer in each other's colonies under the permissions section.</strong></li>
+     <li><strong>Feuds.- </strong>Other Colonies that you have added as "Feud" and they have confirmed your Colony as feud as well. <strong> To do this both colonies must have the player added as Hostile in each other's colonies under the permissions section.</strong></li>
+        <strong> ** NOTE ** If you are both allies, then after the townhall is upgraded to Level 3 you will be able to teleport to the other persons Townhall</strong>
     </ul>
   </div>
 </div>  
