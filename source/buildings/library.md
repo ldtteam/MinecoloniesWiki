@@ -31,16 +31,13 @@ You can aasign Citizens to the library from it's GUI, but only 2 citizens can be
 | 4              | 8                   |
 | 5              | 10                  |
 
-<br><br>
-- **Note:** The Citizen will be *RANDOMLY* leveling up their skills as long as it's assigned to the Library. Once you are satisfied with the level of skills it has reached, you have to *FIRE* it from the Library so it can be unemployed again and you can now *HIRE* it in any other worker hut, guard, etc. Awesome, right?
-
-<br>
+  
+- **Note:** The Citizen will be *RANDOMLY* leveling up their skills as long as it's assigned to the Library. Once you are satisfied with the level of skills it has reached, you have to *FIRE* it from the Library so it can be unemployed again and you can now *HIRE* it in any other worker hut, guard, etc. Awesome, right?  
 
 ## Hut GUI
 
-When accessing the Library's Hut block (right clicking on it) you will see a GUI with different options:
+When accessing the Library's Hut block (right clicking on it) you will see a GUI with different options:  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/library_gui.png" class="img-fluid mx-auto" alt="Library GUI">
@@ -53,12 +50,10 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
       {% endfor %}
     </ul>
   </div>
-</div>
-<br>
+</div>  
 
-**Note:** The unemployed citizens will be the only ones available to *HIRE* in the Library. You will only be able to see available citizens to hire if there is room in the Library (according to it's level).
+**Note:** The unemployed citizens will be the only ones available to *HIRE* in the Library. You will only be able to see available citizens to hire if there is room in the Library (according to it's level).  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/library_gui2.png" class="img-fluid mx-auto" alt="Library Hired">
@@ -67,12 +62,10 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
     <br><br>
     <p> So for example, if you have a Library level 1, you can only hire 2 citizens. If it already has 2 citizens assigned, it will only show you those two citizens currently assigned, with the "fire" button and will not list anymore to hire, until there is space availabe.</p>
   </div>
-</div>
-<br>
+</div>  
 
-**Hint:** As soon as a Citizen is assigned to the Library, you will be able to help it level up faster by giving it *Paper*. Click on a Citizen assigned to the Library, then Click on the *Requests* button and you will be able to give it paper to help level it up faster.
+**Hint:** As soon as a Citizen is assigned to the Library, you will be able to help it level up faster by giving it *Paper*. Click on a Citizen assigned to the Library, then Click on the *Requests* button and you will be able to give it paper to help level it up faster.  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/library_gui3.png" class="img-fluid mx-auto" alt="Library Hired">
@@ -80,7 +73,9 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/librarygui4.png" class="img-fluid mx-auto" alt="Library Hired">
   </div>
-</div>
-<br><br>
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
-**To see build options please see the [Builder](../../source/workers/builder) Page**

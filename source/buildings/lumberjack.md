@@ -25,9 +25,8 @@ Before you choose a place to build the Lumberjack Hut, take into account the loc
 
 Now you will have to issue the “Build” assignment so it can build the Lumberjack Hut”.
 
-**Note:** Once the Lumberjack block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.
+**Note:** Once the Lumberjack block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.  
 
-<br><br><br><br><br><br>
 
 ## Hut GUI
 
@@ -46,8 +45,7 @@ Now you can access the Lumberjack's Hut block (right click on it) and you will s
       {% endfor %}
     </ul>
   </div>
-</div>
-<br>
+</div>  
 
 This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplings it can work with. Here you can turn *ON* or *OFF* which type of trees the Lumberjack will chop down and replant. You can then have 1 lumberjack for 2 types of trees (for example). And the buttons:
 
@@ -61,6 +59,9 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
       <li><strong>Toggle all: </strong>A button so you can just turn <i>ALL</i> saplings (tree types) "On" or "Off" for easier management.</li>
     </ul>
   </div>
-</div>
-<br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+

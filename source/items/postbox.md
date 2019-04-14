@@ -12,7 +12,7 @@ Welcome to the Postbox page.
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox"></p>
-<br
+<br>
 
 ### The Block
 <br>
