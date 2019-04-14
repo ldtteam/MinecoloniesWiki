@@ -73,7 +73,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
  <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
+    <img src="../../assets/images/gui/newbuild.png" class="img-fluid mx-auto" alt="New Building">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
