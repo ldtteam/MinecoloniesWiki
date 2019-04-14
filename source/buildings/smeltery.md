@@ -39,9 +39,8 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 ## Hut GUI
 
-When accessing the Smeltery's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Smeltery's Hut block (right clicking on it), you will see a GUI with different options:  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/smelterygui.png" class="img-fluid mx-auto" alt="Smeltery GUI">
@@ -55,6 +54,19 @@ When accessing the Smeltery's Hut block (right clicking on it), you will see a G
     </ul>
   </div>
 </div>
-<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/smelterygui2.png" class="img-fluid mx-auto" alt="Smeltery GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+      <ul><strong> Fuel: </strong> Listed are items that can be used by the cook as fuel in the furnaces. Simply turn on any that you want your cook to use, and the deliveryman will deliver those items to the cook when they need fuel.
+      </ul>
+    </ul>
+  </div>
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
-**To see build options please see the [Builder](../../source/workers/builder) Page**
