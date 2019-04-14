@@ -38,7 +38,7 @@ subnav:
       - page: Supply Ship
         url: source/items/supplyship
       - page: Waypoints
-        url: source/items/Waypoints
+        url: source/items/waypoint
   - title: Systems
     subitems:
       - page: Command System
