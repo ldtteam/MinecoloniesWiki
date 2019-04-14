@@ -41,9 +41,8 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 ## Hut GUI
 
-When accessing the Sawmill's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Sawmill's Hut block (right clicking on it), you will see a GUI with different options:  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/sawmillgui.png" class="img-fluid mx-auto" alt="Sawmill GUI">
@@ -56,6 +55,9 @@ When accessing the Sawmill's Hut block (right clicking on it), you will see a GU
       {% endfor %}
     </ul>
   </div>
-</div>
-<br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
