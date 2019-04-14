@@ -4,11 +4,6 @@ layout: default
 ---
 # Calipers
 
-<div class="infobox box text-center">
-    <recipe>caliper</recipe>
-</div>
-<br>
-
 Welcome to the Caliper page. 
 <br><br>
 

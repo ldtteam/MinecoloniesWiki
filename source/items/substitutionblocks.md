@@ -4,8 +4,8 @@ layout: default
 ---
 # Substitution Blocks
 <div class="infobox box text-center">
-    <recipe>substitutionblock</recipe>
-    <recipe>solidsubstitutionblock</recipe>
+    <recipe>subblock</recipe>
+    <recipe>solidsubblock</recipe>
 </div>
 <br>
 Welcome to the Substitution Blocks page. 
