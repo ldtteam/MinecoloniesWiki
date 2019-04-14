@@ -41,17 +41,10 @@ You now officially have a Combat Academy Hut, **CONGRATULATIONS!**
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Combat Academy”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
 
-**Hint:** If you see the [Builder](../../source/workers/builder) has not finished building/upgrading your Combat Academy and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
+**Hint:** If you see the [Builder](../../source/workers/builder) has not finished building/upgrading your Combat Academy and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.  
 
-<br>
+Now you can access the Combat Academy block (right click on it) and you will see a GUI with different options:  
 
-
-
-<br>
-
-Now you can access the Combat Academy block (right click on it) and you will see a GUI with different options:
-
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/combatacademygui.png" class="img-fluid mx-auto" alt="Combat Academy GUI">
@@ -64,7 +57,7 @@ Now you can access the Combat Academy block (right click on it) and you will see
       {% endfor %}
     </ul>
   </div>
-</div>
-<br>
-
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
