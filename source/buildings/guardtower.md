@@ -78,13 +78,15 @@ You can right click using the Guard-scepter to set a single or multiple patrol p
       <li><strong>Automatically:</strong> (By default) Here you can define if you want the guard to be assigned the patrol target automatically or manually if you want to designate the target(s) for him to patrol.</li>
       <li><strong>Off: </strong> (By default) Here you can define if you want the guard to come back to the Tower on low health to recover his health.</li>
       <li><strong>Patrol / Follow / Guard.-</strong>here you can define how the guard will work.</li>
-      <li><strong>Inventory:</strong>This is the most important button. Here you can access the buildings storage from where the “worker” takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
   </div>
 </div>
 <br>
 
 **Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor **_(only when Tower is level 5)_** as well and reap the benefits of the protection thye'll be able to provide and the drops the Guard will be picking up along the way.
-<br><br>
+  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
-**To see build options please see the [Builder](../../source/workers/builder) Page**

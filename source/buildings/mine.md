@@ -29,9 +29,8 @@ Now you will have to issue the “Build” assignment so it can build the Mine H
 
 ## Hut GUI
 
-When accessing the Mine's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Mine's Hut block (right clicking on it), you will see a GUI with different options:  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/minergui.png" class="img-fluid mx-auto" alt="Miner GUI">
@@ -44,22 +43,22 @@ When accessing the Mine's Hut block (right clicking on it), you will see a GUI w
       {% endfor %}
     </ul>
   </div>
-</div>
-<br>
+</div>  
 
-By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:
+By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/minergui2.png" class="img-fluid mx-auto" alt="Miner GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br><br>
-      <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li><br><br><br>
-      <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
+      <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li>
     </ul>
   </div>
-</div>
-<br><br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
