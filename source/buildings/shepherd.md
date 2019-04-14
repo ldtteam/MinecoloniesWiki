@@ -59,7 +59,6 @@ Now you can access the Sheep's Hut block (right click on it) and you will see a 
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
     <ul>
         <li><strong>Random Sheep Dying</strong> Press <strong>On</strong> if you want the shepherd to randomly dye sheep or <strong>Off</strong> to keep their original colors.</li>
-      {% endfor %}
     </ul>
   </div>
 </div>  
