@@ -41,9 +41,8 @@ Stonemason can learn 3x3 recipes made entirely out of cobble, stone, andesite, d
 
 ## Hut GUI
 
-When accessing the Stonemason's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Stonemason's Hut block (right clicking on it), you will see a GUI with different options:  
 
-<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/stonemasongui.png" class="img-fluid mx-auto" alt="Stonemason GUI">
@@ -56,6 +55,9 @@ When accessing the Stonemason's Hut block (right clicking on it), you will see a
       {% endfor %}
     </ul>
   </div>
-</div>
-<br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
