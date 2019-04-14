@@ -79,9 +79,10 @@ This is "page 2" of the GUI. It show the "Fields" that are avaialble (recognizab
     <p>And the buttons:</p>
     <ul>
       <li><b>Automatic/Manual:</b> By default. Here you can define if you prefer to "manually" assign the "Fields" for this farmer.</li>
-      <li><b>Inventory:</b> This is the most important button. Here you can access the buildings storage from where the “worker” takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</li>
+      <li><b>Field:</b> This is the list of recognized fields. If the field shows an X that means it is already assigned to a farmer and will list the farmers name who takes care of that field, as well as show what seed is in the field "scarecrow". If that X is red and the button is not grayed out, that field belongs to the current farmer and you can unassign it. If the field has a Green check, then that field can be assigned to the farmer. If the button is grayed out, with a check that means that no one is assigned to that field but the current farmer can not accept any more fields. rows, etc.).</li>
     </ul>
   </div>
-</div>
-<br><br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
