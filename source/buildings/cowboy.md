@@ -35,13 +35,12 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | 2 | 4 |
 | 3 | 6 |
 | 4 | 8 |
-| 5 | 10 |
+| 5 | 10 |  
 
-<br>
 
-Now you can access the Cowboy's Hut block (right click on it) and you will see a GUI with different options:
+Now you can access the Cowboy's Hut block (right click on it) and you will see a GUI with different options:  
 
-<br>
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/cowboy_gui.png" class="img-fluid mx-auto" alt="Herder GUI">
@@ -57,7 +56,7 @@ Now you can access the Cowboy's Hut block (right click on it) and you will see a
 </div>
 <br><br>
 
-The **Cowboy** is the *ONLY* type of Herder that has a pg.2 in the Hut GUI. With an option:
+The **Cowboy** has a pg.2 in the Hut GUI. With an option:
 
 <br>
 <div class="row">
@@ -73,6 +72,10 @@ The **Cowboy** is the *ONLY* type of Herder that has a pg.2 in the Hut GUI. With
       <li><b>Not Collecting Milk::</b> In this mode, the Herder will not be asking or waiting for buckets, it will jsut breed and butcher the cows and will not collect milk.</li>
     </ul>
   </div>
-</div>
-<br><br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
+
