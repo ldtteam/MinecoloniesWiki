@@ -68,10 +68,12 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br><br><br>
-      <li><strong>Items to compost:</strong> Here you will see a list of all the items that were recognized by the mod for the composter to use. Including modded items. All items are "deselected" (off) by default. You can then select which items you want the composter to use. </li><br><br><br><br>
+      <li><strong>Items to compost:</strong> Here you will see a list of all the items that were recognized by the mod for the composter to use. Including modded items. All items are "deselected" (off) by default. You can then select which items you want the composter to use. </li><br>
      <li><strong>Compost/Dirt:</strong> You can select which items you want the composter to make; Compost or Dirt. </li>
     </ul>
   </div>
 </div>
-<br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+<br>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
