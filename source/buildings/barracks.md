@@ -31,11 +31,11 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 **Hint:** If you see the [Builder](../../source/workers/builder) has not finished building/upgrading your Barracks and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
 
-<p style="color:Blue;"><b>Note:</b> Once the builder is done you will have to create the build order for each Guard Tower and build these up individually as well. The level of the Guard's Tower will dictate how far it can patrol, so if you want a longer patrol range, be sure to upgrade each Guard's Tower. Also there is a limit to the amount of Guard Towers a Barrack can have built and also at what level the Guard Tower can be built. They both depend on the level of the Barracks. Here you can see in more detail:</p>
+<p style="color:Blue;"><b>Note:</b> Once the builder is done you will have to create the build order for each Barracks Tower and build these up individually as well. The level of the Barracks Towers will dictate how far it can patrol, so if you want a longer patrol range, be sure to upgrade each Barracks Towers. Also there is a limit to the amount of Barracks Towers a Barrack can have built and also at what level the Barracks Tower can be built. They both depend on the level of the Barracks. Here you can see in more detail:</p>
 
 <br>
 
-| Barracks Level | Max # of Guard Towers | Max Level of Guard Tower |
+| Barracks Level | Max # of Barracks Towers | Max Level of Barracks Tower |
 | :----: | :----: | :----: |
 | 1 | 1 | 1 |
 | 2 | 2 | 2 |
@@ -59,8 +59,8 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
       <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
   </div>
-</div>
-<br>
-
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+</div>  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
 
