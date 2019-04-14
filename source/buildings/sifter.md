@@ -25,12 +25,13 @@ Before you choose a place to build the Sifter, take into account the location fr
 
 Now you will have to issue the builder the “Build” assignment so it can build the “Sifter’s Hut”. Once the builder is done you can now hire the Sifter and and select what item you want them to sift. Options for this are setup in the configuration file.
 
-| Hut Level | Mesh Available | 
-| ----- | ----- | 
-| 1         | String         | 
-| 2         | Flint          | 
-| 3         | Iron           | 
-| 4         | Diamond        | 
+| Hut Level | Mesh Available | Max Amount
+| ----- | ----- | -----|
+| 1         | String         | 16 |
+| 2         | Flint          | 64 |
+| 3         | Iron           | 144 |
+| 4         | Diamond        | 256 |
+| 5         | Any            | 999 |  
 
 
 | Sifted Block| Chance for |
@@ -86,5 +87,21 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
     </ul>
   </div>
 </div>
-<br>
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/sifter_gui2.png" class="img-fluid mx-auto" alt="Sifter GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+    <p><strong>Daily Limit</strong>:</p>
+    <ul>
+     <li><strong>Item: </strong> You will have a list of Items to choose from, default is Dirt, Gravel, Sand, and Soul Sand, however you may see other options if the config file has been changed.</li>
+     <li><strong>Amount</strong> You can choose how many of an item is sifted, this is based on the level of the hut. </li>
+     <li><strong>Mesh Settings: </strong> If you have String, Flint, Iron Ingots, and/or Diamonds in your inventory, you will see the buy option beside the mesh type that you can purchase to change mesh types.</li>
+    </ul>
+  </div>
+</div>  
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+
