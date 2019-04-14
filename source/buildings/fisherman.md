@@ -48,5 +48,7 @@ higher the level the faster and more efficient it will be). And the buttons:</p>
 </div>
 
 **Hint**: You can give the Fisherman an enchanted fishing rod **_(only when the Hut is level 5)_** and reap the benefits of the treasures he/she will be catching for you. Also, the higher the level of the "Fisherman's Hut" is, the higher the level of "loot" he will be fishing out.
-
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+  
+  <br>
+  
+### **To see build options please see the [Builder](../../source/workers/builder) Page**  
