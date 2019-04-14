@@ -60,5 +60,5 @@ Now you can access the Deliveryman's Hut block (right click on it) and you will 
 
 
 **Hint**: You MUST build the [Warehouse](../../source/buildings/warehouse) to at least level 1 so the Deliveryman can do it's work. The deliveryman will visit 1 worker's hut per trip then back to Warehouse. So, level up the Warehouse and build more Deliverymen huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
-
-**To see build options please see the [Builder](../../source/workers/builder) Page**
+  
+## **To see build options please see the [Builder](../../source/workers/builder) Page**
