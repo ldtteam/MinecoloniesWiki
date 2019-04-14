@@ -16,6 +16,8 @@ global:
 citizen:
   - button: Assign Citizen
     content: Enables designation, or eviction, of specific residents in the hut 
+  - button: Build Options
+    content: This will bring up the build gui.
   - button: Inventory 
     content: Access hut inventory block. (has no viable use at this time other than extra storage)
 build:
