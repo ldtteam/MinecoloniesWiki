@@ -4,6 +4,7 @@ services:
   wiki:
     container_name: minecolonies_wiki
     image: docker.minecolonies.com/wiki:latest
+    restart: unless-stopped
     expose:
       - 4000
     environment:
