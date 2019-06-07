@@ -26,17 +26,17 @@ This claim method is a much more complex form and requires a lot of attention to
 
 Let's begin by explaining the basics of this system:
 
-1- The claim is set upon building placement and
+**1-** The claim is set upon building placement and
 
-2- It is expandable upon upgrading the building.
+**2-** It is expandable upon upgrading the building.
 
-3- Newly placed/upgraded huts can expand the existing claim by claiming more unclaimed chunks up to the configuration limit from the center of the town (default 320 blocks).
+**3-** Newly placed/upgraded huts can expand the existing claim by claiming more unclaimed chunks up to the configuration limit from the center of the town (default 320 blocks).
 
-4- Whenever you break a hut block, the claim it had will be "removed/deleted".
+**4-** Whenever you break a hut block, the claim it had will be "removed/deleted".
 
-5- Placement of new huts can only be within the existing claims. As long as the Hut block is inside the existing claim, it will place successfully (even if the building itself is partially outside of the claim when viewing with building tool).
+**5-** Placement of new huts can only be within the existing claims. As long as the Hut block is inside the existing claim, it will place successfully (even if the building itself is partially outside of the claim when viewing with building tool).
 
-6- Breaking the TownHall block and placing it elsewhere will also remove it's claim and any building outside of it's new claim will not work.
+**6-** Breaking the TownHall block and placing it elsewhere will also remove it's claim and any building outside of it's new claim will not work.
 
 **Note:** An interesting feature is that in dynamic claim mode, when placing the Townhall there is NO warning of being too close to another Town. Townhalls CAN be close to each other (outside each other's claim of course) thus allowing very close Town collaborations.
 
@@ -56,11 +56,11 @@ Level     |     Additional Chunks       |   Total Area
 
 Level     |     Additional Chunks       |   Total Area
 ----  | ----  | ----
-x:1 |     initial chunk                 |   Total: 1x1 
-x:2 |    +1 chunk radius                |   Total: 3x3 
-x:3 |    +1 chunk radius                |   Total: 5x5 
-x:4 |    +1 chunk radius                |   Total: 7x7 
-x:5 |    +1 chunk radius                |   Total: 9x9 
+x ≥ 1 |     initial chunk                 |   Total: 1x1 
+x ≥ 2 |    +1 chunk radius                |   Total: 3x3 
+x ≥ 3 |    +1 chunk radius                |   Total: 5x5 
+x ≥ 4 |    +1 chunk radius                |   Total: 7x7 
+x ≥ 5 |    +1 chunk radius                |   Total: 9x9 
 
 **Guard Tower:**
 
@@ -84,29 +84,29 @@ Level     |     Additional Chunks       |   Total Area
 
 This can be toggled in the Minecolonies.cfg file (The Static mode is set by default):
 
-```javascript
+```
 # Should the colony have a fixed radius or should it be dynamic
 B:enableDynamicColonySizes=false
 ```
 
 You can also set some other options related to both systems, depending on which one you have selected to use (Static or Dynamic).
 
-```yaml
+```
 # The minimum distances between town halls for dynamic colony sizes (used as default initial claim too).
 I:minTownHallPadding=4
 ```
 
-```yaml
+```
 # Max distance a colony can claim a chunk from the center, 0 if disable maximum
 I:workingRangeTownHall=320
 ```
 
-```yaml
+```
 # Colony size (radius in chunks around central colony chunk). Only for the static mode.
 I:workingRangeTownHallChunks=8
 ```
         
-```yaml
+```
 # Should the min/max distance from spawn also affect colony placement?
 B:restrictColonyPlacement=false
 ```
