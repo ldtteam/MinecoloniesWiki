@@ -6,6 +6,8 @@ layout: default
 
 ### The Claim System has two modes; Static and Dynamic.
 
+---
+
 #### Static Claim Mode:
 
 This claim method is the basic form and the one that is set by default. It is very simple and is set as soon as the Townhall is placed. It will set the claim and protection area for the Town according to the value in the config file (default set to 8 chunk radius).
@@ -72,7 +74,7 @@ Level     |     Additional Chunks       |   Total Area
 4   |    +1 chunk radius                |   Total: 7x7 
 5   |    +1 chunk radius                |   Total: 9x9 
 
-**All other Hut buildings** (not decorations):
+**All other Worker Hut Buildings** (non decoration):
 
 Level     |     Additional Chunks       |   Total Area
 ----  | ----  | ----
@@ -101,21 +103,21 @@ I:minTownHallPadding=4
 I:workingRangeTownHall=320
 ```
 
-```
+`
 # Colony size (radius in chunks around central colony chunk). Only for the static mode.
 I:workingRangeTownHallChunks=8
-```
         
-```
 # Should the min/max distance from spawn also affect colony placement?
-B:restrictColonyPlacement=false
-```
+B:restrictColonyPlacement=false`
+
 
 Or in-game through the "mod Options" button; 
 
-1- Select minecolonies and pressing the Config button.
-2- Next screen select Minecolonies button.
-3- Next screen select gameplay button.
+**1-** Select minecolonies and pressing the Config button.
+
+**2-** Next screen select Minecolonies button.
+
+**3-** Next screen select gameplay button.
 
 There you will find the options you can change:
 
