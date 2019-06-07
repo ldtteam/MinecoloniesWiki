@@ -1,3 +1,8 @@
+---
+title: Minecolonies Wiki
+layout: default
+---
+
 #Town Claim Modes
 
 ##The Claim System has two modes; Static and Dynamic.
