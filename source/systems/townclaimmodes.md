@@ -4,9 +4,9 @@ layout: default
 ---
 # Town Claim Modes
 
-## The Claim System has two modes; Static and Dynamic.
+### The Claim System has two modes; Static and Dynamic.
 
-### Static Claim Mode:
+#### Static Claim Mode:
 
 This claim method is the basic form and the one that is set by default. It is very simple and is set as soon as the Townhall is placed. It will set the claim and protection area for the Town according to the value in the config file (default set to 8 chunk radius).
 
@@ -20,24 +20,29 @@ Make sure to stand in the center of your Town claim area and then run the comman
 
 Also, once the TownHall is placed, since the claim and protection area is permanent, you can break the Townhall block and place anywhere else within the claimed area to build it.
 
-### Dynamic Claim Mode:
+#### Dynamic Claim Mode:
 
 This claim method is a much more complex form and requires a lot of attention to detail, from it's placement to it's expansion possibilities.
 
 Let's begin by explaining the basics of this system:
 
 1- The claim is set upon building placement and
+
 2- It is expandable upon upgrading the building.
+
 3- Newly placed/upgraded huts can expand the existing claim by claiming more unclaimed chunks up to the configuration limit from the center of the town (default 320 blocks).
+
 4- Whenever you break a hut block, the claim it had will be "removed/deleted".
+
 5- Placement of new huts can only be within the existing claims. As long as the Hut block is inside the existing claim, it will place successfully (even if the building itself is partially outside of the claim when viewing with building tool).
+
 6- Breaking the TownHall block and placing it elsewhere will also remove it's claim and any building outside of it's new claim will not work.
 
 **Note:** An interesting feature is that in dynamic claim mode, when placing the Townhall there is NO warning of being too close to another Town. Townhalls CAN be close to each other (outside each other's claim of course) thus allowing very close Town collaborations.
 
 Since there is NO warning of "too close to another Town" to place TownHall tho (like in the static claim mode) it is up to the players to always check their surrounding areas for existing Towns and for players that might not be paying attention and trying to establish a Town or getting too close to an existing Town.
 
-### Worker Hut Claim Areas:
+#### Worker Hut Claim Areas:
 
 **TownHall:**
 
@@ -75,7 +80,7 @@ Level     |     Additional Chunks       |   Total Area
 2   |    +1 chunk radius                |   Total: 3x3 
 3   |    +1 chunk radius                |   Total: 5x5 
 
-### Configuration Options:
+#### Configuration Options:
 
 This can be toggled in the Minecolonies.cfg file (The Static mode is set by default):
 
@@ -86,22 +91,22 @@ B:enableDynamicColonySizes=false
 
 You can also set some other options related to both systems, depending on which one you have selected to use (Static or Dynamic).
 
-```javascript
+```yaml
 # The minimum distances between town halls for dynamic colony sizes (used as default initial claim too).
 I:minTownHallPadding=4
 ```
 
-```javascript
+```yaml
 # Max distance a colony can claim a chunk from the center, 0 if disable maximum
 I:workingRangeTownHall=320
 ```
 
-```javascript
+```yaml
 # Colony size (radius in chunks around central colony chunk). Only for the static mode.
 I:workingRangeTownHallChunks=8
 ```
         
-```javascript
+```yaml
 # Should the min/max distance from spawn also affect colony placement?
 B:restrictColonyPlacement=false
 ```
