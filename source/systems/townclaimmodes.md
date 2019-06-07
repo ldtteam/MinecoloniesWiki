@@ -103,13 +103,15 @@ I:minTownHallPadding=4
 I:workingRangeTownHall=320
 ```
 
-`
+```
 # Colony size (radius in chunks around central colony chunk). Only for the static mode.
 I:workingRangeTownHallChunks=8
-        
-# Should the min/max distance from spawn also affect colony placement?
-B:restrictColonyPlacement=false`
+```
 
+```
+# Should the min/max distance from spawn also affect colony placement?
+B:restrictColonyPlacement=false
+```
 
 Or in-game through the "mod Options" button; 
 
