@@ -10,13 +10,13 @@ layout: default
 
 This claim method is the basic form and the one that is set by default. It is very simple and is set as soon as the Townhall is placed. It will set the claim and protection area for the Town according to the value in the config file (default set to 8 chunk radius).
 
-Which means once the Townhall is placed it will automatically claim 8 chunks in a square area; 8 chunks to the North, South, East and West. So the entire claimed chunks will be 17 x 17 chunks (8 + 8 + 1 [chunk where the Townhall is placed] = 17 in the x and z coords).
+Which means once the Townhall is placed it will automatically claim 8 chunks in a square area; 8 chunks to the North, South, East and West. So the entire claimed chunks will be 17 x 17 chunks `(8 + 8 + 1 [chunk where the Townhall is placed] = 17 in the x and z coords)`.
 
 This method is static and will not grow or shrink with the Town development and it's permanent, can't be removed changed or modified, except by commands.
 
 If you have already placed a TownHall and want to change the size of the Town claim, you will have to change value in the config AND manually run the "claim" command to add more chunks to the already set claimed area.
 
-Make sure to stand in the center of your Town claim area and then run the command: "/mc colony claim <colony: colony id> <dimension: dimension id> [range: number in chunks] [add: true | false]" to add more chunks to an already placed TownHall.
+Make sure to stand in the center of your Town claim area and then run the command: `/mc colony claim <colony: colony id> <dimension: dimension id> [range: number in chunks] [add: true | false]` to add more chunks to an already placed TownHall.
 
 Also, once the TownHall is placed, since the claim and protection area is permanent, you can break the Townhall block and place anywhere else within the claimed area to build it.
 
@@ -27,18 +27,14 @@ This claim method is a much more complex form and requires a lot of attention to
 Let's begin by explaining the basics of this system:
 
 1- The claim is set upon building placement and
-
 2- It is expandable upon upgrading the building.
-
 3- Newly placed/upgraded huts can expand the existing claim by claiming more unclaimed chunks up to the configuration limit from the center of the town (default 320 blocks).
-
 4- Whenever you break a hut block, the claim it had will be "removed/deleted".
-
 5- Placement of new huts can only be within the existing claims. As long as the Hut block is inside the existing claim, it will place successfully (even if the building itself is partially outside of the claim when viewing with building tool).
-
 6- Breaking the TownHall block and placing it elsewhere will also remove it's claim and any building outside of it's new claim will not work.
 
 **Note:** An interesting feature is that in dynamic claim mode, when placing the Townhall there is NO warning of being too close to another Town. Townhalls CAN be close to each other (outside each other's claim of course) thus allowing very close Town collaborations.
+
 Since there is NO warning of "too close to another Town" to place TownHall tho (like in the static claim mode) it is up to the players to always check their surrounding areas for existing Towns and for players that might not be paying attention and trying to establish a Town or getting too close to an existing Town.
 
 ### Worker Hut Claim Areas:
@@ -83,39 +79,43 @@ Level     |     Additional Chunks       |   Total Area
 
 This can be toggled in the Minecolonies.cfg file (The Static mode is set by default):
 
-```# Should the colony have a fixed radius or should it be dynamic
-B:enableDynamicColonySizes=false```
+```javascript
+# Should the colony have a fixed radius or should it be dynamic
+B:enableDynamicColonySizes=false
+```
 
 You can also set some other options related to both systems, depending on which one you have selected to use (Static or Dynamic).
 
-```# The minimum distances between town halls for dynamic colony sizes (used as default initial claim too).
-I:minTownHallPadding=4```
+```javascript
+# The minimum distances between town halls for dynamic colony sizes (used as default initial claim too).
+I:minTownHallPadding=4
+```
 
-```# Max distance a colony can claim a chunk from the center, 0 if disable maximum
-I:workingRangeTownHall=320```
+```javascript
+# Max distance a colony can claim a chunk from the center, 0 if disable maximum
+I:workingRangeTownHall=320
+```
 
-```# Colony size (radius in chunks around central colony chunk). Only for the static mode.
-I:workingRangeTownHallChunks=8```
+```javascript
+# Colony size (radius in chunks around central colony chunk). Only for the static mode.
+I:workingRangeTownHallChunks=8
+```
         
-```# Should the min/max distance from spawn also affect colony placement?
-B:restrictColonyPlacement=false```
+```javascript
+# Should the min/max distance from spawn also affect colony placement?
+B:restrictColonyPlacement=false
+```
 
 Or in-game through the "mod Options" button; 
 
 1- Select minecolonies and pressing the Config button.
-
 2- Next screen select Minecolonies button.
-
 3- Next screen select gameplay button.
 
 There you will find the options you can change:
 
-"enableDynamicColonySizes" = "false" (default value)
-
-"minTownHallPadding" = 4" (default value)
-
-"townHallPaddingChunk" = "1" (default value)
-
-"workingRangeTownHall" = "320" (default value)
-
-"restrictColonyPlacement" = false"  (default value)
+* `enableDynamicColonySizes = false` (default value)
+* `minTownHallPadding = 4` (default value)
+* `townHallPaddingChunk = 1` (default value)
+* `workingRangeTownHall = 320` (default value)
+* `restrictColonyPlacement = false`  (default value)
