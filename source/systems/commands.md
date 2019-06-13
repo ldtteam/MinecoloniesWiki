@@ -101,7 +101,7 @@ These are the in game commands currently available, most require that a user hav
 
 ## Kill Commands
 
-/minecolonies kill `<barbarians | animals | mob | chicken | cow | pig | sheep>`
+/minecolonies kill `<raiders | animals | mob | chicken | cow | pig | sheep>`
 
 <table class="table">
   <thead>
@@ -112,8 +112,8 @@ These are the in game commands currently available, most require that a user hav
   </thead>
   <tbody>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc kill barbarians</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.BarbarianKill</span><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all barbarians inside all colonies</td>
+      <td class="d-block d-md-table-cell"><code>/mc kill raiders</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.BarbarianKill</span><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell">Kills all raiders (barbarians or Pirates) inside all colonies</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill animals</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.AnimalKill</span><br>Default permission level: OP</td>
