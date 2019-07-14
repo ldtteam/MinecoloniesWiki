@@ -84,8 +84,8 @@ Level     |     Additional Chunks       |   Total Area
 Level     |     Additional Chunks       |   Total Area
 ----  | ----  | ----
 1   |     initial chunk                 |   Total: 1x1 
-2   |    +1 chunk radius                |   Total: 3x3 
-3   |    +1 chunk radius                |   Total: 5x5 
+3   |    +1 chunk radius                |   Total: 3x3 
+5   |    +1 chunk radius                |   Total: 5x5 
 
 
 #### Configuration Options:
