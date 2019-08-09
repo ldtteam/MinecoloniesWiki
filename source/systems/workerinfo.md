@@ -8,7 +8,7 @@ layout: default
 
 ## Workers' Skill Level
 
-There is a system in place for how the workers skills "Level Up". The level of their building is what will put a limit on the "Worker Skill Level" they can achieve. Every time you level up their building, the worker's max level limit will be DOUBLE the previous limit! Currently the limit on the Workers' "Skill Level" is 100 (once you have made his building level 5, of course). 
+There is a system in place for how the workers skills "Level Up". The level of their HOME is what will put a limit on the "Worker Skill Level" they can achieve. Every time you level up their HOME, the worker's max level limit will be DOUBLE the previous limit! Currently the limit on the Workers' "Skill Level" is 100 (once you have made his building level 5, of course). The level of their WORK building determines the speed at which they level up.
 
 | Building Level | Max Worker Level |
 | -------------- | ---------------- |
@@ -21,7 +21,7 @@ There is a system in place for how the workers skills "Level Up". The level of t
 
 ## Tool/Sword Levels
 
-There is also a system in place for the type of tools and swords the workers can use depending on the level of their building. The level of their building is what will put a limit on the "Tool/Sword Level" the worker will be able to use. Every time you level up their building, the level of the tool/sword the worker can use will increase. 
+There is also a system in place for the type of tools and swords the workers can use depending on the level of their WORK building. The level of their building is what will put a limit on the "Tool/Sword Level" the worker will be able to use. Every time you level up their building, the level of the tool/sword the worker can use will increase. 
 
 | Building Level | Max Tool/Sword Level Vanilla | Max Tool/Sword Level Tinkers   |
 | -------------- | ---------------------- | ------------------------ |
