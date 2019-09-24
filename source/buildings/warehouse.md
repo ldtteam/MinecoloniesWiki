@@ -25,13 +25,13 @@ The building will hold ALL the materials and tools that are made/mined/harvested
 
 The level of the Warehouse will determine how many Deliverymen will be able to use the warehouse at the same time. Level up the Warehouse to increase the amount of [Deliverymen](../../source/workers/deliveryman) that will work in your Warehouse.  
 
-| Building Level | Max Deliverymen |
-| ----- | ----- |
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 3 |
-| 4 | 4 |
-| 5 | 5 |  
+| Building Level | Max Deliverymen | Unblock options |
+| ----- | ----- | ----- |
+| 1 | 1 | - |
+| 2 | 2 | - |
+| 3 | 3 | Sort items |
+| 4 | 4 | - |
+| 5 | 5 | Use emerald block to double capacity |  
 
 
 ## Hut GUI
