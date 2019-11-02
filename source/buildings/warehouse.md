@@ -60,6 +60,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
   <div class="col-sm-12 col-md">
     <ul><br><br>
+      <li><strong>Sortbutton</strong> You can sort all the items in your warehouse by pressing this button. This button <b>only</b> shows up when the warehouse is at <b>level 3</b> or higher.</li>
       <li><strong>Block of Emerald:</strong> You can upgrade the amount of storage the Warehouse has to <i>Double</i> it's capacity by pressing this button and giving it 1 block of emerald. This can <b>ONLY</b> be done when the warehouse is at <b>Level 5</b> build.</li>
     </ul>
   </div>
