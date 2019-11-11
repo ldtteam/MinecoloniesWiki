@@ -72,11 +72,11 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
  When you place the [Supply Ship](../items/supplyship) it will spawn a chest that will contain the Town Hall block and the Building Tool. To place the Supply Ship, you need to have a large enough body of water. The Supply Ship is 32 x 11 blocks in length and width. So the recommended body of water must be at least (32 x 20). Use the Building Tool to see where the pShip will be placed and when you place the Supply Chest a chest will appear on the exact block you right clicked. The Chest will be directly in front of the ladder to board the supply ship (8 blocks from the boarding ladder) and the ladder is not in the middle of the Supply Ship. But please take into account the Town Hall placement as well before you place your Supply Ship. **Once the Supply Ship is placed, you can't place another Ship or Camp in this World anymore.**
  
-(Hint: if you're not using hte Building Tool and aren't able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block).
+(Hint: if you're not using the Building Tool and aren't able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block).
 
  When you placed the [Supply Camp](../items/supplycamp) it will spawn a chest that will contain the Town Hall block and the Buiding Tool. To place the Supply Camp, you need to have a large enough flat, clear piece of land. The recommended flat piece of land must be at least 16 x 17 blocks in size. When you place the Supply Camp a chest will appear on the exact block you right clicked. But please take into account the Town Hall placement as well before you place your Supply Camp. **Once the Supply camp is placed, you can't place another Camp or Ship in this World anymore.**
 
-(Hint: if you're not using hte Building Tool and aren't able to place the Supply Camp, try it block by block: one to the right, left, closer or further from the area you cleared. It can not contain any holes or have any flowers, grass, fens, etc. It must be completely flat and clear.
+(Hint: if you're not using the Building Tool and aren't able to place the Supply Camp, try it block by block: one to the right, left, closer or further from the area you cleared. It can not contain any holes or have any flowers, grass, fens, etc. It must be completely flat and clear.
 
 ### Town Hall
 
