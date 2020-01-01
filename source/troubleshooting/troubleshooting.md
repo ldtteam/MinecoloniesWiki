@@ -54,6 +54,5 @@ layout: default
   9. Empty out worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
   10. Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
   11. Punch them with empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire.
-  12. Use the /mc rs reset [Command](../../source/system/commands)
   13. Repair their workhut. Some buildings will stop working if required elements are not present. Only the BuilderNPC can place beds, crafting tables, furnaces, chests, racks, compost bins. If you broke any of those, break all of them and let the BuilderNPC repair the building.
   14. Fire worker, wait a few minutes, hire a different worker (You will lose advantage of the experience the first worker had accumulated at this career).
