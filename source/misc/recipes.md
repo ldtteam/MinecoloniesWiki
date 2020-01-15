@@ -52,7 +52,7 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | [Lumberjack](../buildings/lumberjack)              | **Any** Planks + Building Tool + Wooden Axe          | <recipe>mine</recipe>          |
 | [Mine](../buildings/mine)                          | **Any** Planks + Building Tool + Wooden Pickaxe      | <recipe>mine</recipe>          |
 | [Restaurant](../buildings/restaurant)              | **Any** Planks + Building Tool + Apple               | <recipe>restaurant</recipe>    |
-| [Sawmill](../buildings/sawmill)                    | **Any** Planks + Building Tool + Wooden Axe          | <recipe>sawmill</recipe>       |
+| [Sawmill](../buildings/sawmill)                    | **Any** Planks + Building Tool + 3 Wooden Axe          | <recipe>sawmill</recipe>       |
 | [Shepherd's Hut](../buildings/shepherd)            | **Any** Planks + Building Tool + Shears              | <recipe>shepherd</recipe>      |
 | [Sifter's Hut](../buildings/sifter)                | **Any** Planks + Building Tool + 3 String            | <recipe>sifter</recipe>         |
 | [Smelter's Hut](../buildings/smeltery)             | **Any** Planks + Building Tool + Iron Ingot          | <recipe>smeltery</recipe>      |
