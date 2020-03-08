@@ -5,7 +5,7 @@ layout: default
 # Shepherd
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Shepherd_M.png" alt="Shepherd Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Shepherd_F.png" alt="shepherd Female" />
+<img src="../../assets/images/workers/shepherd_m.png" alt="Shepherd Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/shepherd_f.png" alt="shepherd Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,9 +29,7 @@ Click here for full information about the [Shepherd's hut](../buildings/shepherd
 
 You now officially have a "Shepherd!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Shepherd’s Hut”.
-
-Once the builder is done, you will have to capture and bring in 2 sheep to the Shepherd's hut. The Shepherd will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial sheep.
+You will have to capture and bring in 2 sheep to the Shepherd's hut. The Shepherd will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial sheep.
 
 The Shepherd will currently work with minecraft sheep, but might work with some "modded" sheep (from other mods), as long as they are *coded* as sheep and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the Shepherd will collect these as well.
 
@@ -45,5 +43,3 @@ The Shepherd will currently work with minecraft sheep, but might work with some 
 | 3 | 6 |
 | 4 | 8 |
 | 5 | 10 |
-
-<br>

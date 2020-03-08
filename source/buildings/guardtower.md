@@ -5,21 +5,25 @@ layout: default
 # Guard Tower
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/tower_block.png" alt="Guard Tower" />
+    <img src="../../assets/images/buildings/guardtower.png" alt="Guard Tower" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/guard">Guard</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/guard">Guard</a></p>
         </div>
     </div>
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
     <recipe>guardtower</recipe>
+    
 </div>
+<hr />
 
-Welcome to the Guard’s Information Site.
+# About the Building
 
 Before you choose a place to build the Tower, take into account the distances among the other buildings and obstacles like rivers, lakes, ponds, trees, caves, mountains, lava sources, etc.
 
@@ -31,10 +35,11 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 Now you can access the Guard's Hut block (right click on it) and you will see a GUI with different options:
 
+# Guard Tower GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/guardgui.png" class="img-fluid mx-auto" alt="Guard GUI">
+    <img src="../../assets/images/gui/guardtowergui1.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
@@ -57,7 +62,7 @@ This is "page 2" of the GUI. It shows the guard actions you can select: Knight o
 <div class="row">
   <div class="col-sm-12 col-md">
     <br><br><br>
-    <img src="../../assets/images/gui/guardgui2.png" class="img-fluid mx-auto" alt="Guard GUI">
+    <img src="../../assets/images/gui/guardtowergui2.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
@@ -86,3 +91,11 @@ You can right click using the Guard-scepter to set a single or multiple patrol p
 
 **Hint:** You can give the Guard an enchanted bow, enchanted sword and enchanted armor **_(only when Tower is level 5)_** as well and reap the benefits of the protection thye'll be able to provide and the drops the Guard will be picking up along the way.
 <br><br>
+On the third page of the GUI you can tell the guard who to attack and who to ignore
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <br>
+    <img src="../../assets/images/gui/barrackstowergui3.png" class="img-fluid mx-auto" alt="Guard GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+</div>

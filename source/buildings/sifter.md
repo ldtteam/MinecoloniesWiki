@@ -5,25 +5,27 @@ layout: default
 # Sifter
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/sifter_block.png" alt="Sifter" />
+    <img src="../../assets/images/buildings/sifter.png" alt="Sifter's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/sifter">Sifter</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/sifter">Sifter</a></p>
         </div>
     </div>
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
     <recipe>sifter</recipe>
+    
 </div>
+<hr />
 
-Welcome to the Sifter Information Site.
+# About the Building
 
-Before you choose a place to build the Sifter, take into account the location from Mine, Crusher, Warehouse and/or other Worker(s). After you have selected a place for the Hut, you have to craft the Sifter's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut block is placed, the Sifter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Sifter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-Now you will have to issue the builder the “Build” assignment so it can build the “Sifter’s Hut”. Once the builder is done you can now hire the Sifter and and select what item you want them to sift. Options for this are setup in the configuration file.
+Once the builder is done you can now hire the Sifter and and select what item you want them to sift. Options for this are setup in the configuration file.
 
 | Hut Level | Mesh Available | 
 | ----- | ----- | 
@@ -68,14 +70,14 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | Soul Sand |	skull: Human
 
 
-## Hut GUI
+# Sifter Hut GUI
 
 When accessing the Sifter's Hut block (right clicking on it), you will see a GUI with different options:
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/siftergui.png" class="img-fluid mx-auto" alt="Sifter GUI">
+    <img src="../../assets/images/gui/siftergui1.png" class="img-fluid mx-auto" alt="Sifter GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
@@ -87,3 +89,11 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
   </div>
 </div>
 <br>
+
+Page 2 of the GUI allows you to choose which block to sift, how many daily, and which mesh you want to use.
+
+You must buy a mesh everytime you want to change it.
+
+<div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/siftergui2.png" class="img-fluid mx-auto" alt="Sifter GUI">
+  </div>

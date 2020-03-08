@@ -4,19 +4,20 @@ layout: default
 ---
 # Resource Scroll 
 
-<div class="infobox box text-center">
-    <recipe>clipboard</recipe>
-</div>
+
 <br>
 Welcome to the Resource Scroll page. 
 <br><br>
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/clipboard.png" alt="Resource Scroll"></p>
-<br
+<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Resource Scroll"></p>
+    <hr />
+<div class="infobox box text-center">
+    <recipe>resourcescroll</recipe>
+</div>
 
 ### The Item
-<br>
+
 The Resource Scroll  is easy to craft, simply 2 leather, the build tool, and sticks.  
 <br>
 
@@ -31,7 +32,7 @@ When you first make the Resource Scroll , and right click anywhere you will get 
 Now, you will go to the TownHall block and Shift + Right Click on it and the registered message will appear.
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/clipboardregister.png" alt="Resource Scroll Registered Message"></p>
+<p style="text-align:center;"><img src="../../assets/images/items/clipboardregistered.png" alt="Resource Scroll Registered Message"></p>
 <br>
 
 Now, if you right click anywhere you will get a message to shift + right click on a builder hut to register the Resource Scroll. 

@@ -1,0 +1,23 @@
+{"recipes":[
+    {
+      "firstRow":
+      {
+        "firstItem": "minecraft_stone",
+        "secondItem": "minecraft_stone",
+        "thirdItem": "minecraft_stone"
+      },
+      "secondRow":
+      {
+        "firstItem": "minecraft/redstonblock",
+        "secondItem": "minecolonies/sceptergold",
+        "thirdItem": "minecraft/redstonblock"
+      },
+      "thirdRow":
+      {
+        "firstItem": "minecraft/piston",
+        "secondItem": "minecraft/piston",
+        "thirdItem": "minecraft/piston"
+      },
+      "product": "minecolonies/multipiston"
+    }
+  ]}

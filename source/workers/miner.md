@@ -29,9 +29,7 @@ Click here for full information about the [Miner's Hut](../buildings/mine) block
 
 You now officially have a Miner! **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Farmer’s Hut”.
-
-Once the builder is done you will have to give the Miner a pickaxe, a shovel, ladders, oak planks, oak wood slabs, oak fences, torches and cobblestone. So he can start to build the shaft down to the mining level. 
+You will have to give the Miner a pickaxe, a shovel, ladders, planks, slabs, fences/walls, signs, torches and cobblestone. So he can start to build the shaft down to the mining level. 
 
 The level of the Miner's Hut will dictate how deep he will create the mine, so if you want the best resources, be sure to upgrade the Miner's Hut. The miner works by digging a shaft down to the depth of the level of his hut, once there he will build a network of random mineshafts branching out from the main shaft looking for the ores. When he finds any ore, he will try and mine out the whole vein, not just what happens to be on his path.
 

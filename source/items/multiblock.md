@@ -3,22 +3,20 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Multiblock/Multipiston
+
+## Welcome to the Multiblock/Multipiston page. 
 <div class="infobox box text-center">
     <recipe>multiblock</recipe>
 </div>
 <br>
-Welcome to the Multiblock/Multipiston page. 
-<br><br>
+<p style="text-align:center;"><img src="../../assets/images/items/multipiston.png" alt="Multiblock"></p>
+    <hr/>
 
-<p class="h4"><a id="build_tool">Building Tool Video.</a></p>
-
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/multiblock.png" alt="Multiblock"></p>
-<br
 
 ### The Block
-<br>
+
 The multiblock looks like a smooth andesite block, with a hole in each face. Crafting the multiblock requires 3 stone, 2 blocks of redstone, 3 pistons, and the build tool. 
+
 <br>
 
 ### The GUI
@@ -37,9 +35,9 @@ You will need to left click on one of the arrows or +, or - and it will turn gre
 
 **Note:** There must be enough room for all the blocks to move or it will stop.
 
-<p class="h4"><a id="multiblock">Multiblock Video.</a></p>
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+<p style="text-align:center;"><img src="../../assets/images/items/multiblockroom.png" alt="Multiblock GUI"></p>
+
+
+<p style="text-align:center;"><img src="../../assets/images/items/multiblockblock.png" alt="Multiblock GUI"></p>
 <br>

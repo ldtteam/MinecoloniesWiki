@@ -5,7 +5,7 @@ layout: default
 # Smelter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Smelter_M.png" alt="Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Smelter_F.png" alt="Smelter Female" />
+<img src="../../assets/images/workers/smelter_m.png" alt="Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Smelter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,8 +29,5 @@ Click here for full informationa about the [Smeltery's Hut](../buildings/smelter
 
 You now officially have a Smelter! **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Smeltery’s Hut”. 
+The Smelter will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
 
-Once the builder is done you can now hire the Smelter and it will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
-
-<br><br><br><br>

@@ -16,19 +16,50 @@ subnav:
       - page: Server Info
         url: source/tutorials/serverinfo
   - title: Items
-    subitems:
+    subitems: Tools
+      - page: Ancient Tome
+        url: source/items/ancient_tome
+      - page: Barrel
+        url: source/items/barrel
       - page: Building Tool
         url: source/items/buildingtool
       - page: Caliper (WIP)
         url: source/items/caliper
+      - page: Clipboard
+        url: source/items/clipboard
+      - page: Compost
+        url: source/items/compost
+      - page: Field
+        url: source/items/field
       - page: Multi-block
         url: source/items/multiblock
+      - page: Postbox
+        url: source/items/postbox
+      - page: Resource Scroll
+        url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
+      - page: Scan Tool
+        url: source/items/scantool
+      - page: Substitution Blocks
+        url: source/items/substitutionblocks
       - page: Supply Camp
         url: source/items/supplycamp
       - page: Supply Ship
         url: source/items/supplyship
+      - page: Waypoint
+        url: source/items/waypoint
+    subitems: Decoration Blocks
+      - page: Construction Tape
+        url: source/decoblocks/constructiontape
+      - page: Paper Walls
+        url: source/decoblocks/paperwalls
+      - page: Rack
+        url: source/decoblocks/racks
+      - page: Shingles
+        url: source/decoblocks/shingles
+      - page: Timber Framed Blocks
+        url: source/decoblocks/timberframebase
   - title: Systems
     subitems:
       - page: Command System
@@ -57,18 +88,26 @@ subnav:
         url: source/workers/crusher
       - page: Deliveryman
         url: source/workers/deliveryman
+      - page: Enchanter
+	      url: source/workers/enchanter
       - page: Farmer
         url: source/workers/farmer
       - page: Fisherman
         url: source/workers/fisherman
+      - page: Florist
+	      url: source/workers/florist
       - page: Guard
         url: source/workers/guard
+      - page: Library Student
+	      url: source/workers/librarystudent
       - page: Lumberjack
         url: source/workers/lumberjack
-      - page: Miner
-        url: source/workers/miner
       - page: Miller
         url: source/workers/miller
+      - page: Miner
+        url: source/workers/miner
+      - page: Ranger
+	      url: source/workers/ranger
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -81,6 +120,8 @@ subnav:
         url: source/workers/stonesmelter
       - page: Swine Herder
         url: source/workers/swineherder
+      - page: University Student
+	      url: source/workers/researcher
   - title: Buildings
     subitems:
       - page: Archery
@@ -89,7 +130,9 @@ subnav:
         url: source/buildings/bakery
       - page: Barracks
         url: source/buildings/barracks
-      - page: Blacksmith
+      - page: Barracks Tower
+        url: source/buildings/barrackstower  
+      - page: Blacksmith's Hut
         url: source/buildings/blacksmith
       - page: Builder's Hut
         url: source/buildings/builder
@@ -99,23 +142,27 @@ subnav:
         url: source/buildings/citizenhut
       - page: Combat Academy
         url: source/buildings/combatacademy
-      - page: Composter
+      - page: Composter's Hut
         url: source/buildings/composter
       - page: Cowboy's Hut
         url: source/buildings/cowboy
-      - page: Crusher
+      - page: Crusher's Hut
         url: source/buildings/crusher
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
+      - page: Enchanter's Tower
+	      url: source/buildings/enchantertower
       - page: Farm & Field
         url: source/buildings/farm
       - page: Fisherman's Hut
         url: source/buildings/fisherman
+      - page: Flower Shop
+	      url: source/buildings/flowershop
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Library
         url: source/buildings/library  
-      - page: Lumberjack
+      - page: Lumberjack's Hut
         url: source/buildings/lumberjack
       - page: Mine
         url: source/buildings/mine
@@ -132,11 +179,13 @@ subnav:
       - page: Stonemason
         url: source/buildings/stonemason
       - page: Stone Smeltery
-        url: source/buildings/stonesmeltery        
+        url: source/buildings/stonesmeltery
       - page: Swine Herder's Hut
         url: source/buildings/swineherder
       - page: Town Hall
         url: source/buildings/townhall
+      - page: University
+	      url: source/buildings/university
       - page: Warehouse
         url: source/buildings/warehouse
   - title: Misc

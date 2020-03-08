@@ -3,31 +3,34 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Fisherman's Hut
-
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/fisherman_block.png" alt="Fisherman's Hut" />
+    <img src="../../assets/images/buildings/fisherman.png" alt="Fisherman's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/fisherman">Fisherman</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/fisherman">Fisherman</a></p>
         </div>
     </div>
     <hr />
-    <recipe>fisher</recipe>
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
+    <recipe>fisherman</recipe>
+    
 </div>
+<hr />
 
-Welcome to the Fisherman's Information Site.
-
-Before you choose a place to build his hut, take into account that he has to be near water or that you personally will have to build him a pond close to his hut so he can fish.After you have selected a place for the hut you have to craft the Fisherman's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the Fisherman will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a fisherman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+# About the Building
 
 **Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
 
-<p style="text-align:center;"><img src="../../assets/images/workers/pond.png" alt="Pond"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/pond.png" alt="Pond"></p>
 
-Once the builder is done, you can think about upgrading the Fisherman's hut to expand the range at which it can fish as well as having a higher cap to the level it can reach.
+Once the building is built, you can think about upgrading the Fisherman's hut to expand the range at which it can fish as well as having a higher cap to the level it can reach.
+
+# Fisherman's GUI
 
 Now you can access the Fisherman's Hut block (right click on it) and you will see a GUI with different options:
 

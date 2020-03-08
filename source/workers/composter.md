@@ -5,7 +5,7 @@ layout: default
 # Composter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/composter_M.png" alt="Composter Male" />&nbsp;&nbsp;<img src="../../assets/images/workers/composter_F.png" alt="Composter Female" />
+<img src="../../assets/images/workers/composter_m.png" alt="Composter Male" />&nbsp;&nbsp;<img src="../../assets/images/workers/composter_f.png" alt="Composter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,7 +29,4 @@ Click here for full information about the [Composter's Hut](../../source/buildin
 
 You now officially have a Composter! **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Composter’s Hut”.
 
-**Note:** Once the builder is done you will have to go to page 2 of the hut GUI and "define a list of items to be composted". All recognized items (even modded items) will be listed there. You will have to select from that list waht you want the composter to use to make compost.
-<br><br>

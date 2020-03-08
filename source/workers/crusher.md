@@ -5,7 +5,7 @@ layout: default
 # Crusher
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Crusher_M.png" alt="Crusher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Crusher_F.png" alt="Crusher Female" />
+<img src="../../assets/images/workers/crusher_m.png" alt="Crusher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/crusher_f.png" alt="Crusher Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Crusher's Information Site.
 
-The Crusher is another part of your Town’s bloodline. The Crusher will crush materials into other materials. 
+The Crusher is another part of your Colony's production line. The Crusher will crush materials into other materials. 
 
 The default configuration is:
 Cobblestone into Gravel
@@ -36,9 +36,7 @@ Click here for full information about the [Crusher's hut](../../source/buildings
 
 You now officially have a "Crusher!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Crusher’s Hut”.
-
-Once the builder is done, you will need to tell the crusher what you want them to crush.
+**NOTE:** You will need to tell the crusher what you want them to crush.
 
 | Building Level | Daily Max |
 | ----- | ----- |
@@ -49,5 +47,3 @@ Once the builder is done, you will need to tell the crusher what you want them t
 | 5 | 999 |
 
 The Crusher works on a 2:1 Ratio, so for example it takes 2 cobblestone to get 1 gravel.
-
-<br>

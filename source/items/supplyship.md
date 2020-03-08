@@ -3,10 +3,12 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Supply Ship
+
+<p style="text-align:center;"><img src="../../assets/images/items/supplyship1.png" alt="Supplyship"></p>
+    <hr/>
+
 <div class="infobox box text-center">
-    <hr />
     <recipe>supplyship</recipe>
-    <hr />
 </div>
 <br>
 The Supply Ship is one of the two options to to start playing Minecolonies. The first step is to craft the Supply Ship block.
@@ -21,4 +23,4 @@ When you place the Supply Ship it will spawn a chest that will contain the [Town
 - **Hint:** If you are not using the building tool and are placing the supply ship block manually (right clicking the floor with it) and it won't place you will have to move left/right and even make a walkway into the water. Try 1 block at a time until you an successfully place it.
 <br><br>
 
-<p style="text-align:center;"><img src="../../assets/images/Buildings/supplyship.png" alt="Supply Ship"></p>
+<p style="text-align:center;"><img src="../../assets/images/items/supplyship.png" alt="Supply Ship"></p>

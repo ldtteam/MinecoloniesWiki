@@ -5,7 +5,7 @@ layout: default
 # Cowboy
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Cowboy_M.png" alt="Cowboy Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Cowboy_F.png" alt="Cowboy Female" />
+<img src="../../assets/images/workers/cowboy_m.png" alt="Cowboy Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/cowboy_f.png" alt="Cowboy Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,9 +29,7 @@ Click here for full information about the [Cowboy's hut](../../source/buildings/
 
 You now officially have a "Cowboy!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Cowboy’s Hut”.
-
-Once the builder is done, you will have to capture and bring in 2 cows to the cowboy's hut. The cowboy will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial cows.
+**NOTE:** The cowboy will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial cows.
 
 The cowboy will currently work with minecraft cows, but might work with some "modded" cows (from other mods), as long as they are *coded* as cow and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the herder will collect these as well.
 

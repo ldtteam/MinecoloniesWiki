@@ -5,35 +5,26 @@ layout: default
 # Barracks
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/barracks_block.png" alt="Barracks" />
+    <img src="../../assets/images/buildings/barracks.png" alt="Barracks" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/guard">Guard</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/guard">Guard</a></p>
         </div>
     </div>
     <hr />
-    <recipe>Barracks</recipe>
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
+    <recipe>barracks</recipe>
+    
 </div>
+<hr />
 
-The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Barracks Towers](../buildings/barrackstower) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will employ and house 1 citizen for every level built! Each new guard will need a bed in a house in order to spawn, however, once they are hired at the barracks that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit) to spawn. Each Barracks Towers will house and employ 5 guards, for a total of 20 guards for your colony.
-
-Before you choose a place to build the Barracks, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc.
-
-After you have selected a place for the Barracks you have to craft the Barracks block in the crafting table and use your [Building Tool](../items/buildingtool) to place the building. Once you commit to the placement of the Barracks, the block will be placed.
-
-You now officially have a Barracks, **CONGRATULATIONS!**
-
-Now you will have to issue the builder the “Build” assignment so it can build the “Barracks”. It will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
-
-**Hint:** If you see the [Builder](../../source/workers/builder) has not finished building/upgrading your Barracks and you don’t see the builder asking for any materials, go to the builder’s hut and “recall” the builder and wait a bit to see what the builder needs. Watch the Minecraft “chat” section. Also you can go to page 2 of the builder’s hut GUI and check the list of materials required, any material in the list that is still missing will be in red colored letters.
-
-<p style="color:Blue;"><b>Note:</b> Once the builder is done you will have to create the build order for each Guard Tower and build these up individually as well. The level of the Guard's Tower will dictate how far it can patrol, so if you want a longer patrol range, be sure to upgrade each Guard's Tower. Also there is a limit to the amount of Guard Towers a Barrack can have built and also at what level the Guard Tower can be built. They both depend on the level of the Barracks. Here you can see in more detail:</p>
-
-<br>
+# About the Building
+The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Barracks Towers](../buildings/barrackstower) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will employ and house 1 citizen for every level built! Each new guard will need a bed in a house in order to spawn, however, once they are hired at the barracks that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit). Each Barracks Towers will house and employ 5 guards, for a total of 20 guards for your colony.
 
 | Barracks Level | Max # of Guard Towers | Max Level of Guard Tower |
 | :----: | :----: | :----: |
@@ -45,7 +36,9 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 <br>
 
-Now you can access the Barracks block (right click on it) and you will see a GUI with different options:
+# Barracks Gui
+
+Once the building is built, you can access the Barracks block (right click on it) and you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -61,24 +54,3 @@ Now you can access the Barracks block (right click on it) and you will see a GUI
   </div>
 </div>
 <br>
-
-<p>After pressing the <b>Build Options</b> button you now have a few options to consider:</p>
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/barracks_upgrade.png" class="img-fluid mx-auto" alt="Barracks Upgrade confirm">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-       <ul>
-      {% for item in site.data.gui.build %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-    </ul>
-  </div>
-</div>
-<br><br>
-
-

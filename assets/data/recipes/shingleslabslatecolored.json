@@ -1,0 +1,23 @@
+{"recipes":[
+    {
+      "firstRow":
+      {
+        "firstItem": ["dye_powder_blue","dye_powder_green","dye_powder_purple"],
+        "secondItem": "minecolonies/shingleslab_slate",
+        "thirdItem": ""
+      },
+      "secondRow":
+      {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "thirdRow":
+      {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "product": ["minecolonies/blockshingleslab_slate_blue","minecolonies/blockshingleslab_slate_green","minecolonies/blockshingleslab_purple"]
+    }
+  ]}

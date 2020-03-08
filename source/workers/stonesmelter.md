@@ -5,7 +5,7 @@ layout: default
 # Stone Smelter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/StoneSmelter_M.png" alt="Stone Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/StoneSmelter_F.png" alt="Stone Smelter Female" />
+<img src="../../assets/images/workers/stonesmelter_m.png" alt="Stone Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/stonesmelter_f.png" alt="Stone Smelter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,8 +29,5 @@ Click here for full informationa about the [Stone Smeltery's Hut](../buildings/s
 
 You now officially have a Stone Smelter! **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Stone Smeltery’s Hut”. 
+The Stone Smelter will start to stone blocks for all your Towns needs upon request.
 
-Once the builder is done you can now hire the Stone Smelter and it will start to stone blocks for all your Towns needs upon request.
-
-<br><br><br><br>
