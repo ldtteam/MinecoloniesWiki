@@ -5,7 +5,7 @@ layout: default
 # StoneMason
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/StoneMason_M.png" alt="StoneMason Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/StoneMason_F.png" alt="StoneMason Female" />
+<img src="../../assets/images/workers/stonemason_m.png" alt="StoneMason Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/stonemason_f.png" alt="StoneMason Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -30,9 +30,7 @@ Click here for full information about the [StoneMason's hut](../buildings/stonem
 
 You now officially have a StoneMason, **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “StoneMason’s Hut”.
-
-Once the builder is done the StoneMason can start crafting tools, stairs, slabs and any other items that are made of stone, once you teach them the necessary recipes. You should think about upgrading the StoneMason’s hut so that the worker can craft more items.  
+The StoneMason can start crafting tools, stairs, slabs and any other items that are made of stone, once you teach them the necessary recipes. You should think about upgrading the StoneMason’s hut so that the worker can craft more items.  
 
 **Note:** The StoneMason can only learn a set number of recipes based on the Hut level. So:
 

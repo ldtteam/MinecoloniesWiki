@@ -6,9 +6,18 @@ layout: default
 
 ### About our Mod
 
-Minecolonies is an interactive Town building mod that allows you to create your own thriving Town within Minecraft. It lets you use your imagination and skills by providing you with many options to build your own Town and enhance your gaming experience. Featuring NPC workers such as: Builder, Farmer, Fisherman, LumberJack, Guard, Miner, Smeltery, Baker, Cook/Restaurant, Deliveryman, four types of Animal Herders, Composter and many more are being developed and added as the mod grows. Also specialized buildings such as: Warehouse, Citizen Huts, Townhall, Barrack and a Library. Minecolonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different Colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the Sky. The limit is your imagination!
+Minecolonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It gives you the tools to let your leadership skills soar by providing you with everything you need to build your own personal kingdom. 
+
+Featuring NPC workers such as: Builder, Farmer, Fisherman, LumberJack, Guard, Miner, Smeltery, Baker, Cook, Deliveryman, four types of Animal Herders, Composter and many more. With even more being developed and added as the mod grows. 
+
+We also include specialized buildings such as: Warehouse, Citizen Huts, Townhall, Barracks, Library and even a University. 
+
+Minecolonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different Colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the Sky. 
+
+The limit is your imagination!
 
 ---
+
 
 <div class="row">
 {% for item in site.data.subnav.subnav %}
@@ -20,6 +29,21 @@ Minecolonies is an interactive Town building mod that allows you to create your 
     </div>
 {% endfor %}
 </div>
+
+
+## Our Mods
+
+[Minecolonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies)
+
+[Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize)
+
+[Multi-Piston](https://www.curseforge.com/minecraft/mc-mods/multi-piston)
+
+[NoPhantomNoCry](https://www.curseforge.com/minecraft/mc-mods/nophantomnocry) 
+
+[Performant](https://www.curseforge.com/minecraft/mc-mods/performant)
+
+[Vanilla+ Tools](https://www.curseforge.com/minecraft/mc-mods/vanilla-tools)
 
 ---
 

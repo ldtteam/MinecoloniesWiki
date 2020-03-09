@@ -1,0 +1,23 @@
+{"recipes":[
+    {
+      "firstRow":
+      {
+        "firstItem": "minecraft/dirt",
+        "secondItem": "minecraft/dirt",
+        "thirdItem": "minecraft/dirt"
+      },
+      "secondRow":
+      {
+        "firstItem": "minecraft/dirt",
+        "secondItem": "minecolonies/compost",
+        "thirdItem": "minecraft/dirt"
+      },
+      "thirdRow":
+      {
+        "firstItem": "minecraft/dirt",
+        "secondItem": "minecraft/dirt",
+        "thirdItem": "minecraft/dirt"
+      },
+      "product": "minecolonies/compostblock"
+    }
+  ]}

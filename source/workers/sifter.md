@@ -5,7 +5,7 @@ layout: default
 # Sifter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Sifter_M.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Sifter_F.png" alt="Sifter Female" />
+<img src="../../assets/images/workers/sifter_m.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/sifter_f.png" alt="Sifter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -37,9 +37,7 @@ Click here for full information about the [Sifter's hut](../../source/buildings/
 
 You now officially have a "Sifter!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Sifter’s Hut”.
-
-Once the builder is done, you will need to tell the Sifter what you want them to sift.
+You will need to tell the Sifter what you want them to sift.
 
 | Building Level | Daily Max |
 | ----- | ----- |
@@ -50,5 +48,3 @@ Once the builder is done, you will need to tell the Sifter what you want them to
 | 5 | 999 |
 
 The Sifter can use 4 different meshs, the String is the default option however if you want to use the flint, iron or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingot or diamonds in your inventory.
-
-<br>

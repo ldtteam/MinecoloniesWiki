@@ -1,0 +1,24 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/cobblestone",
+      "secondItem": "minecraft/cobblestone",
+      "thirdItem": "minecraft/cobblestone"
+    },
+    "thirdRow":
+    {
+      "firstItem": "minecraft/stick",
+      "secondItem": "minecraft/stick",
+      "thirdItem": "minecraft/stick"
+    },
+    "product": "minecolonies/blockshingleslabslate",
+    "amount": "8"
+  }
+]}

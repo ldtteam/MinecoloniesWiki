@@ -2,34 +2,32 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Postbox
+# Postbox 
+
+## Welcome to the Postbox page. 
+<br><br>
+
+<br>
+<p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox" />
+    <hr />
+
 <div class="infobox box text-center">
     <recipe>postbox</recipe>
 </div>
 <br>
-Welcome to the Postbox page. 
-<br><br>
+
+### The Item
+
+The postbox is used for the player to request items from the warehouse and a deliveryman will deliver them to the postbox. 
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox"></p>
-<br>
 
-### The Block
-<br>
-Crafting the postbox requires 5 planks (any wood), 3 chests, and the build tool. 
-<br>
+### Using the Postbox
 
-### The GUI
+To use the postbox, right click on it to bring up the GUI.
 
-In the postbox gui, you can request items to be delivered from the warehouse by the deliverymen. 
-
-<br>
 <p style="text-align:center;"><img src="../../assets/images/items/postboxgui.png" alt="Postbox GUI"></p>
-<br>
 
-When you enter in the amount you need, and press request, the requests will be displayed on the right side.
 
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/postboxgui2.png" alt="Postbox GUI"></p>
-<br>
+You can search for the item you want in the top box. When you find the item enter in the field beside it how many you want. Then press request. The requested items will show on the right side of the screen. Once the deliveryman fulfils the request
 

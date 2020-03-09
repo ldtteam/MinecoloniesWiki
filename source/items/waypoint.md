@@ -3,22 +3,25 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Waypoint
+
+## Welcome to the Waypoint page.
+
+<br>
+<p style="text-align:center;"><img src="../../assets/images/items/waypoint.png" alt="Waypoint"></p>
+<hr/>
+
 <div class="infobox box text-center">
     <recipe>waypoint</recipe>
-</div>  
-
-Welcome to the Waypoint page.  
-
-<p style="text-align:center;"><img src="../../assets/images/items/waypoint.png" alt="Waypoint"></p>  
-
-### The Block  
-
-The waypoint block can be found in the Minecolonies tab in creative. It is used by builders to set waypoints within schematics. In the schematics they are solid blocks. Waypoints can be crafted in survival in order to create a new build. Placing the build tool in the center and surrounding it by any type of planks. This will give you 16 waypoint placeholders.
-
-However, you can place the invisable, but usable waypoints for citizens to use by using the build tool. The waypoint is listed under infrastructure.
-
-Waypoints are only seen when actively using the build tool, either to place a building, decoration or other item.
-
-To remove waypoints, simply place any block in the place they are, for 30 - 60 seconds. When you remove those blocks, the waypoint will be removed.
+</div>
 
 
+### The Item
+
+The Waypoint is an item that can be crafted, however as a crafted item it is only used in schematics. However, using the Build Tool, you can place a waypoint for the builder to "build" and it tells the workers where to walk.  
+<br>
+
+### Using the Waypoints
+
+In schematics, you can place the waypoint block to denote where workers should walk. When travelling from place to place, they will walk through the waypoints along the way. They are in fact "points along the way". They are mostly used in Road schematics but can be used in any schematic. However, they should be used sparingly.
+
+In a colony, placed by the builder, there are no restrictions on where they can be placed, however when a citizen is nearby they will go to it or try so make sure they are placed in appropriate and accessible locations. 

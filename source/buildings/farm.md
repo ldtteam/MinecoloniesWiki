@@ -5,29 +5,32 @@ layout: default
 # Farm & Field
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/Farmer_Block.png" alt="Farm" />
+    <img src="../../assets/images/buildings/farm.png" alt="Farm" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/farmer">Farmer</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/farmer">Farmer</a></p>
         </div>
     </div>
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
     <recipe>farm</recipe>
+    <recipe>field</recipe>
 </div>
+<hr />
 
-Welcome to the Farm & Field Information Site.
+# About the Building
 
-Before you choose a place to build the Farm Hut, take into account the location from the Warehouse, Composter and Field(s). After you have selected a place for the hut you have to craft the "Farmer's Hut" block and place it with your [Buiding Tool](../items/buildingtool). Once the Farmer's Hut is placed, the Farmer will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for Farmer if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+The farm is where you grow crops for your colony. The crops the farmer currently cultivates are: Wheat, carrots, potatoes, beets, melons, pumpkins and most "modded" crops (from other mods) as long as they have normal growth behaviour. Before the farmer can start, you will have to give the farmer a hoe, the crop you want to cultivate so the farmer can plant. 
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Farmer’s Hut”. Once the builder is done, you will have to determine where your farm plot(s) will be located. Before the farmer can start, you will have to give the farmer a hoe, the crop you want to cultivate so the farmer can plant, and craft the "Field" block (Scarecrow). Place the "Field" block in the plot of farm land you want the farmer to work on and right click on it to acces it's GUI. Here you will place the crop you want for this specific field to be cultivated. The crops he currently cultivates are: Wheat, carrots, potatoes, beets, melons, pumpkins and most "modded" crops (from other mods) as long as they have normal growth behaviour (Minecraft sugarcanes are being worked on at the moment).
+In order to to start, you will also need to place fields. Place the "Field" block in the plot of farm land you want the farmer to work on and right click on it to acces it's GUI. Here you will place the crop you want for this specific field to be cultivated. 
 
 <br>
-<p style="text-align:center;"><recipe>field</recipe></p>
-<p style="text-align:center;"><img src="../../assets/images/workers/field.png" alt="Field">    <img src="../../assets/images/workers/field_gui.png" alt="Field GUI Empty">    <img src="../../assets/images/workers/field_gui1.png" alt="Field GUI Full"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/field.png" alt="Field">    <img src="../../assets/images/gui/fieldgui1.png" alt="Field GUI Empty">    <img src="../../assets/images/gui/fieldgui2.png" alt="Field GUI Full"></p>
 <br>
 
 **Note:** The farmer will only till and cultivate crops that are (up to) 5 blocks from the field block. The farm land can be delimited by placing solid blocks (non tillable; sand, cobblestone, wood, etc) or air blocks in the ground next to the tillable blocks. This will cause the farmer to stop cultivating the land at this point, even if there is still tilled and/or tillable land after that solid/air block. Plan accordingly and create your plot(s) any shape and form you want taking into account that for each farm plot, the farmer will only work up to 5 blocks from the field block.
@@ -47,15 +50,17 @@ If you decide later to change the type of crop you want cultivated in that speci
 These are just some examples of what a farm plot can be like. you can be creative and make them any shape you like following the rule of only up to 5 blocks from the "Field" block (Scarecrow) and delimited by non tillable blocks.
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/workers/plot_max.png" alt="Field Max Size">    <img src="../../assets/images/workers/plot_half.png" alt="Field Size Half">    <img src="../../assets/images/workers/plot_quater.png" alt="Field Size Quarter"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/plot_max.png" alt="Field Max Size">    <img src="../../assets/images/gui/plot_half.png" alt="Field Size Half">    <img src="../../assets/images/gui/plot_quater.png" alt="Field Size Quarter"></p>
 <br>
+
+# Farmers GUI
 
 Now you can access the Farmer's Hut block (right click on it) and you will see a GUI with different options:
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farm_gui.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/farmgui1.png" class="img-fluid mx-auto" alt="Farmer GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
@@ -72,10 +77,10 @@ This is "page 2" of the GUI. It show the "Fields" that are avaialble (recognizab
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farm_gui2.png" class="img-fluid mx-auto" alt="Farmer GUI">
+    <img src="../../assets/images/gui/farmgui2.png" class="img-fluid mx-auto" alt="Farmer GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <br><br><br>
+    <br>
     <p>And the buttons:</p>
     <ul>
       <li><b>Automatic/Manual:</b> By default. Here you can define if you prefer to "manually" assign the "Fields" for this farmer.</li>

@@ -3,42 +3,45 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Builder's Hut
-
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/builder_block.png" alt="Builder's Hut" />
+    <img src="../../assets/images/buildings/builder.png" alt="Builder's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/builder">Builder</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/builder">Builder</a></p>
         </div>
     </div>
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
     <recipe>builder</recipe>
+    
 </div>
+<hr />
 
-Welcome to the Builder’s Hut Information Site.
+# About the Building
 
-**Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other building.**
+## Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other building.**
 
-Before you choose a place to build it's Hut, take into account the distances among the other buildings and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build it's Hut, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-Now you will have to issue the “Build” assignment so it can build it's own hut first. The builder will be asking for the materials it needs. Make sure to check the “chat” regularly to see what materials the builder is requesting for any build/upgrade.
+Now you will have to issue the “Build” assignment so it can build it's own hut first. The builder will be asking for the materials it needs. Make sure to check the [Resource Scroll](../../source/items/resourcescroll) or the second page of the [Builder's Hut](../../source/buildings/builder) regularly to see what materials the builder is requesting for any build/upgrade. Any material in the list that is still missing will be in red colored letters.
 
 Once the builder is done you can now start to build anything you want; Worker huts, buildings, decorations or your own schematics.
 
 - **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then it will be able to upgrade any other building(s).
 
-## Hut GUI
+# Builder's Hut GUI
 
 When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
+    <img src="../../assets/images/gui/buildergui1.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
   <br>
   <div class="col-sm-12 col-md">
@@ -50,27 +53,28 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
     </ul>
   </div>
 </div>
-
+ <div class="col-sm-12 col-md"><br>
+    <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
+    <ul>
+      <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade it is currently working on. This amount will change as it places the blocks and will show <strong>only</strong> what blocks it still needs to place. The blocks in Red color are the ones neither you nor the builder has in it's inventory</li>
+      <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
+    </ul>
+  </div>
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
-  <div class="col-sm-12 col-md"><br><br><br><br>
-    <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
-    <ul>
-      <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade it is currently working on. This amount will change as it places the blocks and will show <strong>only</strong> what blocks it still needs to place. The blocks in Red color are the ones neither you nor the builder has in it's inventory</li><br><br>
-      <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
-    </ul>
-  </div>
+ 
 </div>
-<br>
 
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <i>Build Options</i> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Build Building</b> button so the build order is created.</p>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <p style="color:Red;"><b><i>BUILD</i></b> <p style="color:Blue;">button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Build Building</b> button so the build order is created.</p>
 
 <p>After pressing the <b>Build Options</b> button you have a few options to consider:</p>
 
- <br>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <p style="color:Red;"><b><i>UPGRADE</i></b> <p style="color:Blue;">button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
+
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/newbuild.png" class="img-fluid mx-auto" alt="New Building">
