@@ -94,17 +94,17 @@ subnav:
       - page: Deliveryman
         url: source/workers/deliveryman
       - page: Enchanter
-	      url: source/workers/enchanter
+	url: source/workers/enchanter
       - page: Farmer
         url: source/workers/farmer
       - page: Fisherman
         url: source/workers/fisherman
       - page: Florist
-	      url: source/workers/florist
+	url: source/workers/florist
       - page: Guard
         url: source/workers/guard
       - page: Library Student
-	      url: source/workers/librarystudent
+	url: source/workers/librarystudent
       - page: Lumberjack
         url: source/workers/lumberjack
       - page: Miller
@@ -112,7 +112,7 @@ subnav:
       - page: Miner
         url: source/workers/miner
       - page: Ranger
-	      url: source/workers/ranger
+	url: source/workers/ranger
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -126,7 +126,7 @@ subnav:
       - page: Swine Herder
         url: source/workers/swineherder
       - page: University Student
-	      url: source/workers/researcher
+	url: source/workers/researcher
   - title: Buildings
     subitems:
       - page: Archery
@@ -156,13 +156,13 @@ subnav:
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
       - page: Enchanter's Tower
-	      url: source/buildings/enchantertower
+	url: source/buildings/enchantertower
       - page: Farm & Field
         url: source/buildings/farm
       - page: Fisherman's Hut
         url: source/buildings/fisherman
       - page: Flower Shop
-	      url: source/buildings/flowershop
+	url: source/buildings/flowershop
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Library
@@ -190,7 +190,7 @@ subnav:
       - page: Town Hall
         url: source/buildings/townhall
       - page: University
-	      url: source/buildings/university
+	url: source/buildings/university
       - page: Warehouse
         url: source/buildings/warehouse
   - title: Misc
