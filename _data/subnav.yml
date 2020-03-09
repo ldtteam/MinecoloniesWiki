@@ -1,14 +1,17 @@
 subnav:
-  - title : Installation
+  - title : Getting Started
     subitems:
-      - page: Twitch
-        url: source/installation/twitch
-      - page: Manual
-        url: source/installation/java
-      - page: MultiMC
-        url: source/installation/multimc
-  - title: Tutorials
-    subitems:
+    - page: Installation
+        subsubfolderitems:
+          - page: Twitch
+            url: source/installation/twitch
+          - page: Manual
+            url: source/installation/java
+          - page: MultiMC
+            url: source/installation/multimc
+    subitems: 
+    - page: Tutorials
+        subsubfolderitems:
       - page: Tutorial
         url: source/tutorials/tutorial
       - page: Schematics
@@ -49,18 +52,19 @@ subnav:
         url: source/items/supplyship
       - page: Waypoint
         url: source/items/waypoint
-  - title: Decorations
-    subitems: 
-      - page: Construction Tape
-        url: source/decoblocks/constructiontape
-      - page: Paper Walls
-        url: source/decoblocks/paperwalls
-      - page: Rack
-        url: source/decoblocks/racks
-      - page: Shingles
-        url: source/decoblocks/shingles
-      - page: Timber Framed Blocks
-        url: source/decoblocks/timberframebase
+      subitems: 
+      - page: Decorations
+        subsubfolderitems:
+        - page: Construction Tape
+          url: source/decoblocks/constructiontape
+        - page: Paper Walls
+          url: source/decoblocks/paperwalls
+        - page: Rack
+          url: source/decoblocks/racks
+        - page: Shingles
+          url: source/decoblocks/shingles
+        - page: Timber Framed Blocks
+          url: source/decoblocks/timberframebase
   - title: Systems
     subitems:
       - page: Command System
@@ -201,7 +205,5 @@ subnav:
     subitems:
       - page: Recipes
         url: source/misc/recipes
-  - title: Troubleshooting
-    subitems:
       - page: Troubleshooting
         url: source/troubleshooting/troubleshooting
