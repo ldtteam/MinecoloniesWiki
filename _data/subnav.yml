@@ -10,7 +10,6 @@ subnav:
             url: source/installation/java
           - page: MultiMC
             url: source/installation/multimc
-    subitems: 
     - page: Tutorials
       url: source/tutorials
         subsubfolderitems:
@@ -54,7 +53,6 @@ subnav:
         url: source/items/supplyship
       - page: Waypoint
         url: source/items/waypoint
-      subitems: 
       - page: Decorations
         url: source/decorations
         subsubfolderitems:
