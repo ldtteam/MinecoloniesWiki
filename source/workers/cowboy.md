@@ -23,11 +23,11 @@ layout: default
 
 Welcome to the Cowboys's Information Site.
 
-The Cowboy is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; leather and milk. The Cowboy will breed and Butcher the cows for you as long as you provide it with wheat, an axe and a bucket for gathering milk as well.
+The Cowboy is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; leather and milk. The Cowboy will breed and butcher the cows for you as long as you provide it with wheat, an axe and a bucket for gathering milk as well.
 
 Click here for full information about the [Cowboy's hut](../../source/buildings/cowboy) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Cowboy if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-You now officially have a "Cowboy!" **CONGRATULATIONS!**
+You now officially have a "Cowboy!" **CONGRATULATIONS!** butcher
 
 **NOTE:** The cowboy will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial cows.
 
