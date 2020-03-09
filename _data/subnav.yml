@@ -1,24 +1,21 @@
 subnav:
   - title: Getting Started
-    subitems:
-      - page: Installation
-        url: source/installation
-        subsubitems:
-          - page: Twitch
-            url: source/installation/twitch
-          - page: Manual
-            url: source/installation/java
-          - page: MultiMC
-            url: source/installation/multimc
-      - page: Tutorials
-        url: source/tutorials
-        subsubitems:
-          - page: Tutorial
-            url: source/tutorials/tutorial
-          - page: Schematics
-            url: source/tutorials/schematics
-          - page: Server Info
-            url: source/tutorials/serverinfo
+    - subtitle: Installation
+      subsubitems:
+        - page: Twitch
+          url: source/installation/twitch
+        - page: Manual
+          url: source/installation/java
+        - page: MultiMC
+          url: source/installation/multimc
+    - subtitle: Tutorials
+      subsubitems:
+        - page: Tutorial
+          url: source/tutorials/tutorial
+        - page: Schematics
+          url: source/tutorials/schematics
+        - page: Server Info
+          url: source/tutorials/serverinfo
   - title: Items
     subitems:
       - page: Ancient Tome
