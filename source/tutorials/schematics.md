@@ -24,17 +24,17 @@ Schematics are files containing block and entity information of a certain area a
 
 Once you build or have a structure or area you want to scan to have your builder build later in game, you need to determine the exact "cube" area you need. 
 
-<img src="../assets/images/tutorial/testbuilding.png" alt="Test Building"/>
-[Test Building](../../assets/images/tutorial/testbuilding.png)
+![TestBuilding](../../assets/images/tutorial/testbuilding.png)
 
 Take your [Scan Tool](../items/scantool) and Left click the lowest left block of the area and then place a block in the top right corner and Right click on it.
 
-<img src="../assets/images/tutorial/scan1.png" alt="Scan Point 1"/>
-<img src="../assets/images/tutorial/scan2.png" alt="Scan Point 2"/>
+![ScanPoint1](../../assets/images/tutorial/scan1.png)
+
+![ScanPoint2](../../assets/images/tutorial/scan2.png)
 
 Then click in the air to see the entire structure.
 
-<img src="../assets/images/tutorial/scan3.png" alt="Full Scan"/>
+![ScanFull](../../assets/images/tutorial/scan3.png)
 
 Once you have the full area set, you can press esc and the white outline of the scan area will stay in place. Go around it to double check that everything you want is in the scan area. When you are ready, you can click in the air again to get the GUI to display again where you can enter your scan name. Then press the green check to save the scan.
 
