@@ -1,6 +1,6 @@
 subnav:
   - title : Getting Started
-    subitems:
+    subfolderitems:
     - page: Installation
       url: source/installation
         subsubfolderitems:
@@ -20,7 +20,7 @@ subnav:
           - page: Server Info
             url: source/tutorials/serverinfo
   - title: Items
-    subitems:
+    subfolderitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
       - page: Barrel
