@@ -19,7 +19,6 @@ layout: default
         </div>
     </div>
     <recipe>hospital</recipe>
-    
 </div>
 <hr />
 
