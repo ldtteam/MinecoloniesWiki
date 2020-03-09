@@ -14,12 +14,12 @@ subnav:
     - page: Tutorials
       url: source/tutorials
         subsubfolderitems:
-      - page: Tutorial
-        url: source/tutorials/tutorial
-      - page: Schematics
-        url: source/tutorials/schematics
-      - page: Server Info
-        url: source/tutorials/serverinfo
+          - page: Tutorial
+            url: source/tutorials/tutorial
+          - page: Schematics
+            url: source/tutorials/schematics
+          - page: Server Info
+            url: source/tutorials/serverinfo
   - title: Items
     subitems:
       - page: Ancient Tome
@@ -56,6 +56,7 @@ subnav:
         url: source/items/waypoint
       subitems: 
       - page: Decorations
+        url: source/decorations
         subsubfolderitems:
         - page: Construction Tape
           url: source/decoblocks/constructiontape
