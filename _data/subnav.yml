@@ -49,7 +49,7 @@ subnav:
         url: source/items/supplyship
       - page: Waypoint
         url: source/items/waypoint
-  - title: Decoration Blocks
+  - title: Decorations
     subitems: 
       - page: Construction Tape
         url: source/decoblocks/constructiontape
@@ -103,6 +103,8 @@ subnav:
         url: source/workers/florist
       - page: Guard
         url: source/workers/guard
+      - page: Healer
+        url: source/workers/healer
       - page: Library Student
         url: source/workers/librarystudent
       - page: Lumberjack
@@ -165,6 +167,8 @@ subnav:
         url: source/buildings/flowershop
       - page: Guard Tower
         url: source/buildings/guardtower
+      - page: Hospital
+        url: source/buildings/hospital
       - page: Library
         url: source/buildings/library  
       - page: Lumberjack's Hut
