@@ -3,22 +3,22 @@ subnav:
     subfolderitems:
       - page: Installation
         url: source/installation
-          subsubfolderitems:
-            - page: Twitch
-              url: source/installation/twitch
-            - page: Manual
-              url: source/installation/java
-            - page: MultiMC
-              url: source/installation/multimc
+        subsubfolderitems:
+          - page: Twitch
+            url: source/installation/twitch
+          - page: Manual
+            url: source/installation/java
+          - page: MultiMC
+            url: source/installation/multimc
       - page: Tutorials
         url: source/tutorials
-          subsubfolderitems:
-            - page: Tutorial
-              url: source/tutorials/tutorial
-            - page: Schematics
-              url: source/tutorials/schematics
-            - page: Server Info
-              url: source/tutorials/serverinfo
+        subsubfolderitems:
+          - page: Tutorial
+            url: source/tutorials/tutorial
+          - page: Schematics
+            url: source/tutorials/schematics
+          - page: Server Info
+            url: source/tutorials/serverinfo
   - title: Items
     subfolderitems:
       - page: Ancient Tome
