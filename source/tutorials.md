@@ -14,6 +14,6 @@ Instructions on installing Minecolonies with Native Java Launcher
 Instructions on installing Minecolonies with MultiMC
 <br>
 
-## [Servers](../tutorials/Servers) 
+## [Servers](../tutorials/serverinfo) 
 <br>
 Instructions on installing Minecolonies with Twitch
