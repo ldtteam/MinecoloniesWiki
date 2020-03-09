@@ -1,21 +1,10 @@
 subnav:
   - title: Getting Started
-    - subtitle: Installation
-      subitems:
-        - page: Twitch
-          url: source/installation/twitch
-        - page: Manual
-          url: source/installation/java
-        - page: MultiMC
-          url: source/installation/multimc
-    - subtitle: Tutorials
-      subitems:
-        - page: Tutorial
-          url: source/tutorials/tutorial
-        - page: Schematics
-          url: source/tutorials/schematics
-        - page: Server Info
-          url: source/tutorials/serverinfo
+    - subitems: 
+      - page: Installation
+        url: source/installation
+      - page: Tutorial
+        url: source/tutorials/
   - title: Items
     subitems:
       - page: Ancient Tome
@@ -50,19 +39,17 @@ subnav:
         url: source/items/supplyship
       - page: Waypoint
         url: source/items/waypoint
-      - page: Decorations
-        url: source/decorations
-        subsubitems:
-          - page: Construction Tape
-            url: source/decoblocks/constructiontape
-          - page: Paper Walls
-            url: source/decoblocks/paperwalls
-          - page: Rack
-            url: source/decoblocks/racks
-          - page: Shingles
-            url: source/decoblocks/shingles
-          - page: Timber Framed Blocks
-            url: source/decoblocks/timberframebase
+      
+      - page: Construction Tape
+        url: source/decoblocks/constructiontape
+      - page: Paper Walls
+        url: source/decoblocks/paperwalls
+      - page: Rack
+        url: source/decoblocks/racks
+      - page: Shingles
+        url: source/decoblocks/shingles
+      - page: Timber Framed Blocks
+        url: source/decoblocks/timberframebase
   - title: Systems
     subitems:
       - page: Command System
