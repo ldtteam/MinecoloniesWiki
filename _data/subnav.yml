@@ -1,24 +1,24 @@
 subnav:
   - title : Getting Started
     subfolderitems:
-    - page: Installation
-      url: source/installation
-        subsubfolderitems:
-          - page: Twitch
-            url: source/installation/twitch
-          - page: Manual
-            url: source/installation/java
-          - page: MultiMC
-            url: source/installation/multimc
-    - page: Tutorials
-      url: source/tutorials
-        subsubfolderitems:
-          - page: Tutorial
-            url: source/tutorials/tutorial
-          - page: Schematics
-            url: source/tutorials/schematics
-          - page: Server Info
-            url: source/tutorials/serverinfo
+      - page: Installation
+        url: source/installation
+          subsubfolderitems:
+            - page: Twitch
+              url: source/installation/twitch
+            - page: Manual
+              url: source/installation/java
+            - page: MultiMC
+              url: source/installation/multimc
+      - page: Tutorials
+        url: source/tutorials
+          subsubfolderitems:
+            - page: Tutorial
+              url: source/tutorials/tutorial
+            - page: Schematics
+              url: source/tutorials/schematics
+            - page: Server Info
+              url: source/tutorials/serverinfo
   - title: Items
     subfolderitems:
       - page: Ancient Tome
@@ -56,18 +56,18 @@ subnav:
       - page: Decorations
         url: source/decorations
         subsubfolderitems:
-        - page: Construction Tape
-          url: source/decoblocks/constructiontape
-        - page: Paper Walls
-          url: source/decoblocks/paperwalls
-        - page: Rack
-          url: source/decoblocks/racks
-        - page: Shingles
-          url: source/decoblocks/shingles
-        - page: Timber Framed Blocks
-          url: source/decoblocks/timberframebase
+          - page: Construction Tape
+            url: source/decoblocks/constructiontape
+          - page: Paper Walls
+            url: source/decoblocks/paperwalls
+          - page: Rack
+            url: source/decoblocks/racks
+          - page: Shingles
+            url: source/decoblocks/shingles
+          - page: Timber Framed Blocks
+            url: source/decoblocks/timberframebase
   - title: Systems
-    subitems:
+    subfolderitems:
       - page: Command System
         url: source/systems/commands
       - page: Happiness System
@@ -79,7 +79,7 @@ subnav:
       - page: Protection System
         url: source/systems/protection
   - title: Workers
-    subitems:
+    subfolderitems:
       - page: Baker
         url: source/workers/baker
       - page: Blacksmith
@@ -135,7 +135,7 @@ subnav:
       - page: University Student
         url: source/workers/researcher
   - title: Buildings
-    subitems:
+    subfolderitems:
       - page: Archery
         url: source/buildings/archery
       - page: Bakery
@@ -203,7 +203,7 @@ subnav:
       - page: Warehouse
         url: source/buildings/warehouse
   - title: Misc
-    subitems:
+    subfolderitems:
       - page: Recipes
         url: source/misc/recipes
       - page: Troubleshooting
