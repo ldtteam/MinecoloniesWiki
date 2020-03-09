@@ -156,13 +156,13 @@ subnav:
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
       - page: Enchanter's Tower
-	url: source/buildings/enchantertower
+        url: source/buildings/enchantertower
       - page: Farm & Field
         url: source/buildings/farm
       - page: Fisherman's Hut
         url: source/buildings/fisherman
       - page: Flower Shop
-	url: source/buildings/flowershop
+        url: source/buildings/flowershop
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Library
@@ -190,7 +190,7 @@ subnav:
       - page: Town Hall
         url: source/buildings/townhall
       - page: University
-	url: source/buildings/university
+        url: source/buildings/university
       - page: Warehouse
         url: source/buildings/warehouse
   - title: Misc
