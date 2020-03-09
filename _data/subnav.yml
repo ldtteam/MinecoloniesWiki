@@ -1,6 +1,6 @@
 subnav:
   - title: Getting Started
-    - subitems: 
+    subitems: 
       - page: Installation
         url: source/installation
       - page: Tutorial
