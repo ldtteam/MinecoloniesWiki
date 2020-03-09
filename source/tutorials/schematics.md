@@ -7,8 +7,8 @@ layout: default
 Schematics are files containing block and entity information of a certain area a player scanned with the [Scan Tool](../items/scantool) in-game. You can use the scan tool and scan ANY building or structure you like in SSP or even SMP and then have your builder "Build it" for you (provided that you give him all the materials needed of course).
 
 - [Schematics](#schematics)
+  - [Scanning a New Structure](#scanning-a-new-structure)
   - [Placing a Schematic.](#placing-a-schematic)
-  - [Converting files from the older NBT system to the new BLUEPRINT system.](#converting-files)
   - [FAQ](#faq)
       - [What and Where is the scans folder?](#what-and-where-is-the-scans-folder)
       - [Where is the schematic folder?](#where-is-the-schematic-folder)
@@ -19,32 +19,34 @@ Schematics are files containing block and entity information of a certain area a
       - [How to allow my players to use their own huts' schematics on my server?](#how-to-allow-my-players-to-use-their-own-huts-schematics-on-my-server)
       - [How to allow my players to use their scanned schematics on my server?](#how-to-allow-my-players-to-use-their-scanned-schematics-on-my-server)
       - [How to disable built-in schematics completely?](#how-to-disable-built-in-schematics-completely)
-{: .box .py-3 .pr-4 }
+
+## Scanning a New Structure
+
+Once you build or have a structure or area you want to scan to have your builder build later in game, you need to determine the exact "cube" area you need. 
+
+<img src="../assets/images/tutorial/testbuilding.png" alt="Test Building"/>
+[Test Building](../../assets/images/tutorial/testbuilding.png)
+
+Take your [Scan Tool](../items/scantool) and Left click the lowest left block of the area and then place a block in the top right corner and Right click on it.
+
+<img src="../assets/images/tutorial/scan1.png" alt="Scan Point 1"/>
+<img src="../assets/images/tutorial/scan2.png" alt="Scan Point 2"/>
+
+Then click in the air to see the entire structure.
+
+<img src="../assets/images/tutorial/scan3.png" alt="Full Scan"/>
+
+Once you have the full area set, you can press esc and the white outline of the scan area will stay in place. Go around it to double check that everything you want is in the scan area. When you are ready, you can click in the air again to get the GUI to display again where you can enter your scan name. Then press the green check to save the scan.
+
+Scans are saved in `../minecolonies/scan/new/...`
+
+Once the scans are save, they need moved to the `../structurize/schematics/(folder)/file`
 
 ## Placing a Schematic.
 
 Once you have scanned a structure, you can use the build tool to have your builder "build it" for you. Once you right click with the Build Tool you will have to select "My Schematics" (in the left drop down menu) and on the right side drop down menu you will see the scans that you have made.There is also a "Rename" button where you can change the name that was originally assigned to the scan (for example: SCAN_1533778290135) to whatever you like. You can also "delete" any of your saved scans.
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
-
-
-## Converting Files
-
-If you have old schematics that have the .nbt file name, you can automatically convert them to the new .blueprint name without rescanning the. The newer updates will not allow .nbt files to be used so you have to convert them first.
-
-To Convert NBT to .Blueprint
-
-1. Open up your structurize folder eg: C:\Users\YourName\Documents\Curse\Minecraft\Instances\Myserver\structurize
-2. Create a folder called "updater"
-3. Create a folder under updater called "input"
-4. Move NBT files to the sturcturize\updater\input folder
-5. Enter an SP world in that instance 
-6. Type in the command /structurize updateschematics
-7. When it comes back, go to the updater folder and you will see an output folder, there are your new .blueprint files, 
-8. Move those to your sturcturize\schematics folder.
-9. Use your new schematics.
-
-New scans will automatically save as .blueprint
 
 ## FAQ
 
@@ -75,58 +77,61 @@ When playing on a server, the server needs to send the schematics to the players
 
 To create new schematics for existing huts, there are some guidelines that you must follow: The scans MUST have the same footprint for the same style/Hut's type; The scans must contain the hut's chest i.e. builder's chest for the builder's hut, Citizen's chest for the Citizen's hut and so on. The hut chest need to be exactly at the same place and have the same rotation for each level; The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the builder's huts with the MyOwn style, we would have:
 
-*MyOwn/Builder1.blueprint*
-*MyOwn/Builder2.blueprint*
-*MyOwn/Builder3.blueprint*
-*MyOwn/Builder4.blueprint*
-*MyOwn/Builder5.blueprint*
+*myown/builder1.blueprint*
+*myown/builder2.blueprint*
+*myown/builder3.blueprint*
+*myown/builder4.blueprint*
+*myown/builder5.blueprint*
 
 - **Note:** in the build tool, the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5.
 
-Once ready, move the MyOwn folder into the schematics folder and start your game. You should be able to see it with the the build tool.
+Once ready, move the myown folder into the schematics folder and start your game. You should be able to see it with the the build tool.
 
 - **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 Custom Hut Filenames
 
-Here is a full list, up-to-date as of 22 March 2019, of the building names. **Please note**, *capitalization matters*.
+Here is a full list, up-to-date as of 9 February 2020, of the building names. **Please note**, *capitalization matters*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
-| Archery1       | Archery2       | Archery3       | Archery4       | Archery5       |
-| Baker1         | Baker2         | Baker3         | Baker4         | Baker5         |
-| Barracks1      | Barracks2      | Barracks3      | Barracks4      | Barracks5      |
-| BarracksTower1 | BarracksTower2 | BarracksTower3 | BarracksTower4 | BarracksTower5 |
-| Blacksmith1    | Blacksmith2    | Blacksmith3    | Blacksmith4    | Blacksmith5    |
-| Builder1       | Builder2       | Builder3       | Builder4       | Builder5       |
-| ChickenHerder1 | ChickenHerder2 | ChickenHerder3 | ChickenHerder4 | ChickenHerder5 |
-| Citizen1       | Citizen2       | Citizen3       | Citizen4       | Citizen5       |
-| CombatAcademy1 | CombatAcademy2 | CombatAcademy3 | CombatAcademy4 | CombatAcademy5 |
-| Composter1     | Composter2     | Composter3     | Composter4     | Composter5     |
-| Cook1          | Cook2          | Cook3          | Cook4          | Cook5          |
-| Cowboy1        | Cowboy2        | Cowboy3        | Cowboy4        | Cowboy5        |
-| Crusher1       | Crusher2       | Crusher3       | Crusher4       | Crusher5       |
-| Deliveryman1   | Deliveryman2   | Deliveryman3   | Deliveryman4   | Deliveryman5   |
-| Farmer1        | Farmer2        | Farmer3        | Farmer4        | Farmer5        |
-| Fisherman1     | Fisherman2     | Fisherman3     | Fisherman4     | Fisherman5     |
-| GuardTower1    | GuardTower2    | GuardTower3    | GuardTower4    | GuardTower5    |
-| Library1       | Library2       | Library3       | Library4       | Library5       |
-| Lumberjack1    | Lumberjack2    | Lumberjack3    | Lumberjack4    | Lumberjack5    |
-| Miner1         | Miner2         | Miner3         | Miner4         | Miner5         |
-| Sawmill1       | Sawmill2       | Sawmill3       | Sawmill4       | Sawmill5       |
-| Shepherd1      | Shepherd2      | Shepherd3      | Shepherd4      | Shepherd5      |
-| Sifter1        | Sifter2        | Sifter3        | Sifter4        | Sifter5        |
-| Smeltery1      | Smeltery2      | Smeltery3      | Smeltery4      | Smeltery5      |
-| Stonemason1    | Stonemason2    | Stonemason3    | Stonemason4    | Stonemason5    |
-| StoneSmeltery1 | StoneSmeltery2 | StoneSmeltery3 | StoneSmeltery4 | StoneSmeltery5 |
-| SwineHerder1   | SwineHerder2   | SwineHerder3   | SwineHerder4   | SwineHerder5   |
-| TownHall1      | TownHall2      | TownHall3      | TownHall4      | TownHall5      |
-| WareHouse1     | WareHouse2     | WareHouse3     | WareHouse4     | WareHouse5     |
+| archery1       | archery2       | archery3       | archery4       | archery5       |
+| baker1         | baker2         | baker3         | baker4         | baker5         |
+| barracks1      | barracks2      | barracks3      | barracks4      | barracks5      |
+| barrackstower1 | barrackstower2 | barrackstower3 | barrackstower4 | barrackstower5 |
+| blacksmith1    | blacksmith2    | blacksmith3    | blacksmith4    | blacksmith5    |
+| builder1       | builder2       | builder3       | builder4       | builder5       |
+| chickenherder1 | chickenherder2 | chickenherder3 | chickenherder4 | chickenherder5 |
+| citizen1       | citizen2       | citizen3       | citizen4       | citizen5       |
+| combatacademy1 | combatacademy2 | combatacademy3 | combatacademy4 | combatacademy5 |
+| composter1     | composter2     | composter3     | composter4     | composter5     |
+| cook1          | cook2          | cook3          | cook4          | cook5          |
+| cowboy1        | cowboy2        | cowboy3        | cowboy4        | cowboy5        |
+| crusher1       | crusher2       | crusher3       | crusher4       | crusher5       |
+| deliveryman1   | deliveryman2   | deliveryman3   | deliveryman4   | deliveryman5   |
+| enchanter1     | enchanter2     | enchanter3     | enchanter4     | enchanter5     |
+| farmer1        | farmer2        | farmer3        | farmer4        | farmer5        |
+| fisherman1     | fisherman2     | fisherman3     | fisherman4     | fisherman5     |
+| florist1       | florist2       | florist3       | florist4       | florist5       |
+| guardtower1    | guardtower2    | guardtower3    | guardtower4    | guardtower5    |
+| library1       | library2       | library3       | library4       | library5       |
+| lumberjack1    | lumberjack2    | lumberjack3    | lumberjack4    | lumberjack5    |
+| miner1         | miner2         | miner3         | miner4         | miner5         |
+| sawmill1       | sawmill2       | sawmill3       | sawmill4       | sawmill5       |
+| shepherd1      | shepherd2      | shepherd3      | shepherd4      | shepherd5      |
+| sifter1        | sifter2        | sifter3        | sifter4        | sifter5        |
+| smeltery1      | smeltery2      | smeltery3      | smeltery4      | smeltery5      |
+| stonemason1    | stonemason2    | stonemason3    | stonemason4    | stonemason5    |
+| stonesmeltery1 | stonesmeltery2 | stonesmeltery3 | stonesmeltery4 | stonesmeltery5 |
+| swineherder1   | swineherder2   | swineherder3   | swineherder4   | swineherder5   |
+| townhall1      | townhall2      | townhall3      | townhall4      | townhall5      |
+| university1    | university2    | university3    | university4    | university5    |
+| warehouse1     | warehouse2     | warehouse3     | warehouse4     | warehouse5     |
 
 
 #### How to override some built-in schematics?
 
-Simply create a schematic file with the same style/name. For instance to override the Builder's hut level 1 in wooden, create a schematic file name called wooden/Builder1.blueprint.
+Simply create a schematic file with the same style/name. For instance to override the Builder's hut level 1 in wooden, create a schematic file name called wooden/builder1.blueprint.
 
 #### How to use custom huts?
 
@@ -138,7 +143,7 @@ You will have to copy them yourself in the schematics folder on the server and r
 
 #### How to allow my players to use their scanned schematics on my server?
 
-Edit the configuration file and set allowPlayerSchematics to true. This allow the player to use its own decorations. It is not possible for the player to use is own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reacher, the server will start deleting unused schematics.
+Edit the configuration file and set allowPlayerSchematics to true. This allow the player to use its own decorations. It is not possible for the player to use is own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reached, the server will start deleting unused schematics.
 
 #### How to disable built-in schematics completely?
 
