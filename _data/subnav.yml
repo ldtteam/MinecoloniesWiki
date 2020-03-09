@@ -104,7 +104,7 @@ subnav:
       - page: Guard
         url: source/workers/guard
       - page: Library Student
-      	url: source/workers/librarystudent
+        url: source/workers/librarystudent
       - page: Lumberjack
         url: source/workers/lumberjack
       - page: Miller
@@ -112,7 +112,7 @@ subnav:
       - page: Miner
         url: source/workers/miner
       - page: Ranger
-      	url: source/workers/ranger
+        url: source/workers/ranger
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -126,7 +126,7 @@ subnav:
       - page: Swine Herder
         url: source/workers/swineherder
       - page: University Student
-      	url: source/workers/researcher
+        url: source/workers/researcher
   - title: Buildings
     subitems:
       - page: Archery
