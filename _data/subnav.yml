@@ -1,7 +1,7 @@
 subnav:
   - title: Getting Started
     - subtitle: Installation
-      subsubitems:
+      subitems:
         - page: Twitch
           url: source/installation/twitch
         - page: Manual
@@ -9,7 +9,7 @@ subnav:
         - page: MultiMC
           url: source/installation/multimc
     - subtitle: Tutorials
-      subsubitems:
+      subitems:
         - page: Tutorial
           url: source/tutorials/tutorial
         - page: Schematics
