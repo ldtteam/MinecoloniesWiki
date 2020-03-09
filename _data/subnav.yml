@@ -1,5 +1,5 @@
 subnav:
-  - title : Getting Started
+  - title: Getting Started
     subfolderitems:
       - page: Installation
         url: source/installation
