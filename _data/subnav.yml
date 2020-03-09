@@ -94,7 +94,7 @@ subnav:
       - page: Deliveryman
         url: source/workers/deliveryman
       - page: Enchanter
-      	url: source/workers/enchanter
+        url: source/workers/enchanter
       - page: Farmer
         url: source/workers/farmer
       - page: Fisherman
