@@ -1,9 +1,9 @@
 subnav:
   - title: Getting Started
-    subfolderitems:
+    subitems:
       - page: Installation
         url: source/installation
-        subsubfolderitems:
+        subsubitems:
           - page: Twitch
             url: source/installation/twitch
           - page: Manual
@@ -12,7 +12,7 @@ subnav:
             url: source/installation/multimc
       - page: Tutorials
         url: source/tutorials
-        subsubfolderitems:
+        subsubitems:
           - page: Tutorial
             url: source/tutorials/tutorial
           - page: Schematics
@@ -20,7 +20,7 @@ subnav:
           - page: Server Info
             url: source/tutorials/serverinfo
   - title: Items
-    subfolderitems:
+    subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
       - page: Barrel
@@ -55,7 +55,7 @@ subnav:
         url: source/items/waypoint
       - page: Decorations
         url: source/decorations
-        subsubfolderitems:
+        subsubitems:
           - page: Construction Tape
             url: source/decoblocks/constructiontape
           - page: Paper Walls
@@ -67,7 +67,7 @@ subnav:
           - page: Timber Framed Blocks
             url: source/decoblocks/timberframebase
   - title: Systems
-    subfolderitems:
+    subitems:
       - page: Command System
         url: source/systems/commands
       - page: Happiness System
@@ -79,7 +79,7 @@ subnav:
       - page: Protection System
         url: source/systems/protection
   - title: Workers
-    subfolderitems:
+    subitems:
       - page: Baker
         url: source/workers/baker
       - page: Blacksmith
@@ -135,7 +135,7 @@ subnav:
       - page: University Student
         url: source/workers/researcher
   - title: Buildings
-    subfolderitems:
+    subitems:
       - page: Archery
         url: source/buildings/archery
       - page: Bakery
@@ -203,7 +203,7 @@ subnav:
       - page: Warehouse
         url: source/buildings/warehouse
   - title: Misc
-    subfolderitems:
+    subitems:
       - page: Recipes
         url: source/misc/recipes
       - page: Troubleshooting
