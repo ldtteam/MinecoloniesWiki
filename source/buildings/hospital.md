@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Enchanter
+# Hospital
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/hospital.png" alt="Hospital" />
