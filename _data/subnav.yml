@@ -16,7 +16,7 @@ subnav:
       - page: Server Info
         url: source/tutorials/serverinfo
   - title: Items
-    subitems: Tools
+    subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
       - page: Barrel
@@ -49,7 +49,8 @@ subnav:
         url: source/items/supplyship
       - page: Waypoint
         url: source/items/waypoint
-    subitems: Decoration Blocks
+  - title: Decoration Blocks
+    subitems: 
       - page: Construction Tape
         url: source/decoblocks/constructiontape
       - page: Paper Walls
