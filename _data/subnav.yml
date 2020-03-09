@@ -2,6 +2,7 @@ subnav:
   - title : Getting Started
     subitems:
     - page: Installation
+      url: source/installation
         subsubfolderitems:
           - page: Twitch
             url: source/installation/twitch
@@ -11,6 +12,7 @@ subnav:
             url: source/installation/multimc
     subitems: 
     - page: Tutorials
+      url: source/tutorials
         subsubfolderitems:
       - page: Tutorial
         url: source/tutorials/tutorial
