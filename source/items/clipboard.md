@@ -4,17 +4,21 @@ layout: default
 ---
 # Clipboard 
 
-<div class="infobox box text-center">
-    <recipe>clipboard</recipe>
-</div>
+Welcome to the Clipboard page. 
+<br><br>
 
 Welcome to the Clipboard page.
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/clipboard.png" alt="Clipboard"></p>
+<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Clipboard"></p>
+    <hr/>
 <br>
 
-### The Item  
+<div class="infobox box text-center">
+    <recipe>clipboard</recipe>
+</div>
+
+### The Item
 
 The Clipboard is easy to craft, simply a leather, the build tool, and sticks.  
 

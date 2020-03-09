@@ -8,9 +8,9 @@
     },
     "secondRow":
     {
-      "firstItem": "minecraft/stonebrick",
-      "secondItem": "minecraft/stonebrick",
-      "thirdItem": "minecraft/stonebrick",
+      "firstItem": "minecraft/stone_bricks",
+      "secondItem": "minecraft/stone_bricks",
+      "thirdItem": "minecraft/stone_bricks"
     },
     "thirdRow":
     {

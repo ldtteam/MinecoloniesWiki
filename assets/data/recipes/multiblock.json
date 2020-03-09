@@ -1,23 +1,23 @@
 {"recipes":[
-  {
-    "firstRow":
     {
-      "firstItem": "minecraft/stone",
-      "secondItem": "minecraft/stone",
-      "thirdItem": "minecraft/stone"
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/redstone_block",
-      "secondItem": "minecolonies/sceptergold",
-      "thirdItem": "minecraft/redstone_block"
-    },
-    "thirdRow":
-    {
-      "firstItem": "minecraft/piston",
-      "secondItem": "minecraft/piston",
-      "thirdItem": "minecraft/piston"
-    },
-    "product": "minecolonies/multiblock"
-  }
-]}
+      "firstRow":
+      {
+        "firstItem": "minecraft_stone",
+        "secondItem": "minecraft_stone",
+        "thirdItem": "minecraft_stone"
+      },
+      "secondRow":
+      {
+        "firstItem": "minecraft/redstonblock",
+        "secondItem": "minecolonies/sceptergold",
+        "thirdItem": "minecraft/redstonblock"
+      },
+      "thirdRow":
+      {
+        "firstItem": "minecraft/piston",
+        "secondItem": "minecraft/piston",
+        "thirdItem": "minecraft/piston"
+      },
+      "product": "minecolonies/multipiston"
+    }
+  ]}

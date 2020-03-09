@@ -5,27 +5,29 @@ layout: default
 # Sawmill
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/Sawmill_Block.png" alt="Sawmill" />
+    <img src="../../assets/images/buildings/sawmill.png" alt="Sawmill's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/miller">Miller</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/miller">Miller</a></p>
         </div>
     </div>
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
     <recipe>sawmill</recipe>
+    
 </div>
+<hr />
 
-Welcome to the Sawmill Information Site.
+# About the Building
 
-Before you choose a place to build the Sawmill, take into account the location from Lumberjack, Warehouse and/or other Worker(s). After you have selected a place for the Hut, you have to craft the Sawmill's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut block is placed, the Sawmill will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Sawmill if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+ Once the building is built, the Miller and begin teaching them the recipes you would like them to create. 
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Sawmill’s Hut”. Once the builder is done you can now hire the Miller and begin teaching them the recipes you would like them to create. 
-
-%The Sawmill is a 3x3 crafter and can make any vanilla tools, armor and items (No bows or redstone items) made at least 75% out of wood. The Sawmill will work when they receive a request for any of those items for all of your Colony's needs.
+The Sawmill is a 3x3 crafter and can make any vanilla tools, armor and items (No bows or redstone items) made at least 75% out of wood. The Sawmill will work when they receive a request for any of those items for all of your Colony's needs.
 
 **Hint:** Once the builder is done you will want to upgrade the Sawmill to get all the awesome perks it has to offer for higher levels. So:
 
@@ -39,7 +41,7 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 | 5 | 160 | 
 
 
-## Hut GUI
+# Sawmill Hut GUI
 
 When accessing the Sawmill's Hut block (right clicking on it), you will see a GUI with different options:  
 

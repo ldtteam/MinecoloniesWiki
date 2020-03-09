@@ -5,7 +5,7 @@ layout: default
 # Chicken Herder
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/ChickenHerder_M.png" alt="Chicken Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/ChickenHerder_F.png" alt="Chicken Herder Female" />
+<img src="../../assets/images/workers/chickenherder_m.png" alt="Chicken Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/chickenherder_f.png" alt="Chicken Herder Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -23,15 +23,13 @@ layout: default
 
 Welcome to the Chicken Herder's Information Site.
 
-The chicken herder is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; eggs and feathers. The Chicken Herder will breed and butcher the chickens for you as long as you provide it with seeds and an axe.
+The chicken herder is a crucial part of your Town's food production needs, not only part of the food production, but also provides you with all drops and by products like; eggs and feathers. The Chicken Herder will breed and butcher the chickens for you as long as you provide it with seeds and an axe.
 
 Click here for full information about the [Chicken Herder's hut](../../source/buildings/chickenherder) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the ChickenHerder will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a ChickenHerder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a "Chicken Herder!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Chicken Herder’s Hut”.
-
-Once the builder is done, you will have to capture and bring in 2 chickens to the herder's hut. The herder will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial chickens.
+**NOTE:** The herder will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial chickens.
 
 The herder will currently work with minecraft chickens, but might work with some "modded" chickens (from other mods), as long as they are *coded* as chickens and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the herder will collect these as well.
 

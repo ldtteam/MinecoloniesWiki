@@ -5,7 +5,7 @@ layout: default
 # Deliveryman
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/D-man_M.png" alt="Deliveryman Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/D-man_F.png" alt="Deliveryman Female" />
+<img src="../../assets/images/workers/deliveryman_m.png" alt="Deliveryman Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/deliveryman_f.png" alt="Deliveryman Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -23,15 +23,13 @@ layout: default
 
 Welcome to the Deliveryman's Information Site.
 
-The Deliveryman is the bloodline of your Town. It will be running (YES!!! Running) from worker's hut to [Warehouse](../../source/buildings/warehouse) to worker's hut. Visiting all your workers and delivering the tools and materials they need as well as taking the spoils of their works from their chests to the Warehouse and keeps everything centralized. Just make sure to have the tools and materials the workers need inside the warehouse chests for the deliveryman to deliver.
+The Deliveryman is a critial part the bloodline of your Town. It will be running (YES!!! Running) from worker's hut to [Warehouse](../../source/buildings/warehouse) to worker's hut. Visiting all your workers and delivering the tools and materials they need as well as taking the spoils of their works from their chests to the Warehouse and keeps everything centralized. Just make sure to have the tools and materials the workers need inside the warehouse chests for the deliveryman to deliver.
 
 Click here for full information about the [Deliveryman's Hut](../buildings/deliveryman) block and using your [Building Tool](../items/buildingtool). Once the Hut is placed, and the deliveryman will be automatically assigned (or you can manually assign one with the best "[Traits](../systems/workerinfo)" for deliveryman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a "Deliveryman!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the "Build" assignment so he can build the "Deliveryman's Hut".
-
-Once the builder is done the Deliveryman will start to run back and forth from the Warehouse to all the workers huts in your Town. The level of the Deliveryman's Hut will dictate how much materials/tools it will carry to/from Huts - Warehouse - Huts, so if you want it to carry more materials/tools, be sure to upgrade the [Deliveryman's Hut](../buildings/deliveryman).
+**NOTE:** The level of the Deliveryman's Hut will dictate how much materials/tools it will carry to/from Huts - Warehouse - Huts, so if you want it to carry more materials/tools, be sure to upgrade the [Deliveryman's Hut](../buildings/deliveryman).
 
 Also, the higher the level of the hut, the Deliveryman will move faster and faster back and forth (nice leveling perk, right?).
 

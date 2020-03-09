@@ -1,0 +1,24 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "minecraft/mossy_cobblestone",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/stick",
+      "secondItem": "minecraft/mossy_cobblestone",
+      "thirdItem": ""
+    },
+    "thirdRow":
+    {
+      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks", "minecolonies/cactus_planks"],
+      "secondItem": "minecraft/stick",
+      "thirdItem": "minecraft/mossy_cobblestone"
+    },
+    "product": "minecolonies/blockshingle_moss",
+    "amount": "8"
+  }
+]}

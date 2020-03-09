@@ -4,19 +4,20 @@ layout: default
 ---
 # Resource Scroll 
 
-<div class="infobox box text-center">
-    <recipe>clipboard</recipe>
-</div>
+
 <br>
 Welcome to the Resource Scroll page. 
 <br>
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/clipboard.png" alt="Resource Scroll"></p>
-<br>
+<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Resource Scroll"></p>
+    <hr />
+<div class="infobox box text-center">
+    <recipe>resourcescroll</recipe>
+</div>
 
 ### The Item
-<br>
+
 The Resource Scroll  is easy to craft, simply 2 leather, the build tool, and sticks.  
 <br>
 

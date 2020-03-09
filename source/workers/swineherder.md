@@ -5,7 +5,7 @@ layout: default
 # Swine Herder
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Farmer_M.png" alt="Swine Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Farmer_F.png" alt="Swine Herder Female" />
+<img src="../../assets/images/workers/swineherder_m.png" alt="Swine Herder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/swineherder_f.png" alt="Swine Herder Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,9 +29,7 @@ Click here for full information about the [Swine's hut](../buildings/swineherder
 
 You now officially have a "Swine Herder!" **CONGRATULATIONS!**
 
-Now you will have to issue the builder the “Build” assignment so it can build the "Swine Herder’s Hut”.
-
-Once the builder is done, you will have to capture and bring in 2 pigs to the Swine Herder's hut. The Herder will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial pig.
+You will have to capture and bring in 2 pigs to the Swine Herder's hut. The Herder will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial pig.
 
 The Swine Herder will currently work with minecraft pigs, but might work with some "modded" pigs (from other mods), as long as they are *coded* as pig and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the Swine Herder will collect these as well.
 

@@ -3,31 +3,29 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Blacksmith
-
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/Blacksmith_Block.png" alt="Blacksmith" />
+    <img src="../../assets/images/buildings/blacksmith.png" alt="Blacksmith" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/blacksmith">Blacksmith</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/blacksmith">Blacksmith</a></p>
         </div>
     </div>
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Recipe:</strong> 
+        </div>
+    </div>
     <recipe>blacksmith</recipe>
 </div>
+<hr />
 
-Welcome to the Blacksmith Information Site.
+# About the Building
 
-Before you choose a place to build the Blacksmith, take into account the location from Mine, Warehouse and/or other Worker(s). After you have selected a place for the Hut, you have to craft the Blacksmith's Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut block is placed, the Blacksmith will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Blacksmith if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords, and shields (No bows or redstone items). The Blacksmith will work when they receive a request for any of those items for all of your Colony's needs. 
 
-Now you will have to issue the builder the “Build” assignment so it can build the “Blacksmith’s Hut”. Once the builder is done you can now hire the Blacksmith and begin teaching them the recipes you would like them to create. 
-
-The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords (No bows or redstone items). The Blacksmith will work when they receive a request for any of those items for all of your Colony's needs.
-
-**Hint:** Once the builder is done you will want to upgrade the Blacksmith to get all the awesome perks it has to offer for higher levels. So:
+**Note:** You will need to teach the Blacksmith the recipes of the items you want them to create. The number of items the blacksmith can learn are listed below.
 
 
 | Building Level | Number of Recipes |
@@ -39,9 +37,9 @@ The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords
 | 5 | 160 | 
 
 
-## Hut GUI
+# Blacksmith's Hut GUI
 
-When accessing the Blacksmith's Hut block (right clicking on it), you will see a GUI with different options:
+After the building is built, you can access the Blacksmith's Hut block (right clicking on it), you will see a GUI with different options:
 
 <br>
 <div class="row">

@@ -5,7 +5,7 @@ layout: default
 # Fisherman
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/Fisherman_Male.png" alt="Fisherman Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Fisherman_F.png" alt="Fisherman Female" />
+<img src="../../assets/images/workers/fisherman_m.png" alt="Fisherman Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/fisherman_f.png" alt="Fisherman Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -29,7 +29,7 @@ Before you choose a place to build his hut, take into account that he has to be 
 
 You now officially have a "Fisherman!" CONGRATULATIONS!
 
-Now you can give the Fisherman a fishing rod and it will start to fish. Also, you will have to issue the builder the "Build" assignment so he can build the "Fisherman's Hut". Once the builder is done, you can think about upgrading the Fisherman's hut to expand the range at which it can fish as well as having a higher cap level.
+Now you can give the Fisherman a fishing rod and it will start to fish. 
 
 **Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
 
