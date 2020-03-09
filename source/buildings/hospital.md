@@ -25,7 +25,7 @@ layout: default
 
 # About the Building
 
-The Hospital will be where injured or ill citizens go when the need healing. enchanter will "collect" xp from other workers in order to use it to create enchanted books. The Enchanter needs an [Ancient Tome](../../source/item/ancient_tome) to create the enchanted book.  
+The Hospital will be where injured or ill citizens go when the need healing.  
 
 The higher the level of the Hut the more people the Hospital can handle. So:
 
