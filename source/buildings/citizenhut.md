@@ -12,7 +12,6 @@ layout: default
         </div>
     </div>
     <recipe>citizen</recipe>
-    
 </div>
 <hr />
 
