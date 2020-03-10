@@ -20,7 +20,6 @@ layout: default
         </div>
     </div>
     <recipe>university</recipe>
-    
 </div>
 <hr />
 
