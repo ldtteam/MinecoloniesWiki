@@ -18,7 +18,6 @@ layout: default
         </div>
     </div>
     <recipe>combatacademy</recipe>
-    
 </div>
 <hr />
 
