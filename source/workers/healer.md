@@ -27,4 +27,4 @@ The Healer is another specialist of the your Colony. The Healer will heal your c
 
 Click here for full information about the [Hospital](../buildings/hospital) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the healer will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a healer if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-You now officially have a Florist, **CONGRATULATIONS!**
+You now officially have a Healer, **CONGRATULATIONS!**
