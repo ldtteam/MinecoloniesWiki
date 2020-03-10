@@ -19,7 +19,6 @@ layout: default
         </div>
     </div>
     <recipe>fisherman</recipe>
-    
 </div>
 <hr />
 
