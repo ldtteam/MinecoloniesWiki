@@ -6,7 +6,7 @@ layout: default
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/archery.png" alt="Archery"/>
-    <hr />
+    <hr/>
     <div class="row section-text text-left">
         <div class="col">
         <p><strong>Worker:</strong> <a href="../workers/ranger">Ranger in Training</a></p>
@@ -20,6 +20,7 @@ layout: default
     </div>
     <recipe>archery</recipe>
 </div>
+
 <hr/>
 
 # About the Building
