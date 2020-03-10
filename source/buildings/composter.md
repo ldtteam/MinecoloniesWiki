@@ -18,7 +18,6 @@ layout: default
         </div>
     </div>
     <recipe>composter</recipe>
-    
 </div>
 <hr />
 
