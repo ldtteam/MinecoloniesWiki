@@ -19,7 +19,6 @@ layout: default
         </div>
     </div>
     <recipe>mine</recipe>
-    
 </div>
 <hr />
 
