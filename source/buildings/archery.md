@@ -19,7 +19,6 @@ layout: default
         </div>
     </div>
     <recipe>archery</recipe>
-    
 </div>
 <hr />
 
