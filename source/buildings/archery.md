@@ -5,14 +5,14 @@ layout: default
 # Archery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/archery.png" alt="Archery" />
+    <img src="../../assets/images/buildings/archery.png" alt="Archery"/>
     <hr />
     <div class="row section-text text-left">
         <div class="col">
         <p><strong>Worker:</strong> <a href="../workers/ranger">Ranger in Training</a></p>
         </div>
     </div>
-    <hr />
+    <hr/>
     <div class="row section-text text-left">
         <div class="col">
         <p><strong>Recipe:</strong> 
@@ -20,7 +20,7 @@ layout: default
     </div>
     <recipe>archery</recipe>
 </div>
-<hr />
+<hr/>
 
 # About the Building
 The Archery building is where your [Rangers in Training](../../source/workers/ranger) become [Rangers Guards](../../source/workers/guard). This also allows them to level up without risk of dying to mobs. The number of students depend on the level of the building. 
