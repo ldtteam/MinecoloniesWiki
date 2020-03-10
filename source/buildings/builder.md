@@ -18,7 +18,6 @@ layout: default
         </div>
     </div>
     <recipe>builder</recipe>
-    
 </div>
 <hr />
 
