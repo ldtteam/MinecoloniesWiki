@@ -18,7 +18,6 @@ layout: default
         </div>
     </div>
     <recipe>cowboy</recipe>
-    
 </div>
 <hr />
 
