@@ -44,7 +44,7 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/library_gui.png" class="img-fluid mx-auto" alt="Library GUI">
+    <img src="../../assets/images/gui/librarygui.png" class="img-fluid mx-auto" alt="Library GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p> This is the GUI for the Library's Hut. It shows the build "level" of the Hut. And the buttons:</p>
