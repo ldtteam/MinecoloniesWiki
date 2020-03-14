@@ -3,23 +3,21 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Combat Academy
+
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/combatacademy.png" alt="Combat Academy" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong> <a href="../workers/knight">Knight in Training</a></p>
+        <p><strong>Worker:</strong></p>
+        </div>
+        <div class="col">
+        <p><a href="../workers/knight">Knight in Training</a></p>
         </div>
     </div>
     <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Recipe:</strong> 
-        </div>
-    </div>
     <recipe>combatacademy</recipe>
 </div>
-<hr />
 
 # About the Building
 
