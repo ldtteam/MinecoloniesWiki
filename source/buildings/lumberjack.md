@@ -5,11 +5,11 @@ layout: default
 # Lumberjack
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/fisherman.png" alt="Fisherman's Hut" />
+    <img src="../../assets/images/buildings/lumberjack.png" alt="Fisherman's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong> <a href="../workers/fisherman">Fisherman</a></p>
+        <p><strong>Worker:</strong> <a href="../workers/lumberjack">Lumberjack</a></p>
         </div>
     </div>
     <hr />
@@ -18,7 +18,7 @@ layout: default
         <p><strong>Recipe:</strong> 
         </div>
     </div>
-    <recipe>fisherman</recipe>
+    <recipe>lumberjack</recipe>
 </div>
 <hr />
 
