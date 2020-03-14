@@ -18,7 +18,7 @@ layout: default
         <p><strong>Recipe:</strong> 
         </div>
     </div>
-    <recipe>bakery</recipe>
+    <recipe>baker</recipe>
 </div>
 <hr />
 
