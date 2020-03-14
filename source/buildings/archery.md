@@ -21,6 +21,7 @@ layout: default
 
 
 # About the Building
+
 The Archery building is where your [Rangers in Training](../../source/workers/ranger) become [Rangers Guards](../../source/workers/guard). This also allows them to level up without risk of dying to mobs. The number of students depend on the level of the building. 
 
 | Archery Level | Max # of Students |
