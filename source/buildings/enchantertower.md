@@ -9,18 +9,15 @@ layout: default
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong> <a href="../workers/enchanter">Enchanter</a></p>
+        <p><strong>Worker:</strong></p>
+        </div>
+        <div class="col">
+        <p><a href="../workers/enchanter">Enchanter</a></p>
         </div>
     </div>
     <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Recipe:</strong> 
-        </div>
-    </div>
     <recipe>enchanter</recipe>
 </div>
-<hr />
 
 # About the Building
 
