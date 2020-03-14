@@ -12,7 +12,6 @@ layout: default
         <p><strong>Worker:</strong> <a href="../workers/guard">Guard</a></p>
         </div>
     </div>
-    <hr />
  </div>
 
 
@@ -34,6 +33,7 @@ The Barracks Tower locations are predetermined by the Barracks that you choose. 
 <br>
 
 # Barracks Tower GUI
+
 Once the building is built, you can access the Barracks Tower block (right click on it) and you will see a GUI with different options:
 
 <br>
