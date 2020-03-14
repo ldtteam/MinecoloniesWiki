@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>bakery</recipe>
+    <recipe>baker</recipe>
 </div>
 
 # About the Building
