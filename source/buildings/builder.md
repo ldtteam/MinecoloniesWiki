@@ -65,11 +65,11 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
  
 </div>
 
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <color:Red><b><i>BUILD</i></b> <color:Blue>button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Build Building</b> button so the build order is created.</p>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <b><i>BUILD</i></b> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Build Building</b> button so the build order is created.</p>
 
 <p>After pressing the <b>Build Options</b> button you have a few options to consider:</p>
 
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <p style="color:Red;"><b><i>UPGRADE</i></b> <p style="color:Blue;">button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <b><i>UPGRADE</i></b> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
 
 <br>
 <div class="row">
