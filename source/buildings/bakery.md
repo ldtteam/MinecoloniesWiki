@@ -12,7 +12,6 @@ layout: default
         <p><strong>Worker:</strong> <a href="../workers/baker">Baker</a></p>
         </div>
     </div>
-    <hr />
     <div class="row section-text text-left">
         <div class="col">
         <p><strong>Recipe:</strong> 
