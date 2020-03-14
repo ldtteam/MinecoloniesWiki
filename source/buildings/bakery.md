@@ -5,7 +5,7 @@ layout: default
 # Bakery
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/baker.png" alt="Bakery" />
+    <img src="../../assets/images/buildings/bakery.png" alt="Bakery" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>baker</recipe>
+    <recipe>bakery</recipe>
 </div>
 
 # About the Building
