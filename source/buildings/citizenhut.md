@@ -3,17 +3,18 @@ title: Minecolonies Wiki
 layout: default
 ---
 # Citizen Hut
+
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/citizen.png" alt="Citizen Hut" />
     <hr />
-        <div class="row section-text text-left">
+    <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Recipe:</strong> 
+        <p><strong>Worker:</strong></p>
         </div>
     </div>
+    <hr />
     <recipe>citizen</recipe>
 </div>
-<hr />
 
 # About the Building
 
