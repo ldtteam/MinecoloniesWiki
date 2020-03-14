@@ -9,11 +9,13 @@ layout: default
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong> <a href="../workers/guard">Guard</a></p>
+        <p><strong>Worker:</strong></p>
+        </div>
+        <div class="col">
+        <p><a href="../workers/guard">Guard</a></p>
         </div>
     </div>
- </div>
-
+</div>
 
 # About the Building
 
