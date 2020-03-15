@@ -62,11 +62,8 @@ Once you click on a Research Branch, you will see the options for each research 
 
 <br>
 
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
-  </div>
-  <div class="col-sm-12 col-md">
+<div class="col-sm-12 col-md">
+  <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
 </div>
 
 <br>
