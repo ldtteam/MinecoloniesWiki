@@ -48,6 +48,7 @@ When accessing the University's Hut block (right clicking on it), you will see a
 Page 2 of the GUI will show you the options for each research tree:
 
 <br>
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/universitygui2.png" class="img-fluid mx-auto" alt="University GUI Page 2">
@@ -60,11 +61,14 @@ Page 2 of the GUI will show you the options for each research tree:
 Once you click on a Research Branch, you will see the options for each research tree:
 
 <br>
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
   </div>
   <div class="col-sm-12 col-md">
 </div>
+
+<br>
 
 Each option will tell you the requirements and tell you how long it takes to research that option. (Time is in real world time spent in game.)
