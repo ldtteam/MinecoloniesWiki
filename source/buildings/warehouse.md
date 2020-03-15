@@ -19,25 +19,6 @@ layout: default
     <recipe>warehouse</recipe>
 </div>
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/warehouse.png" alt="Warehouse's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong> <a href="../workers/deliveryman">Deliveryman
-        </a></p>
-        </div>
-    </div>
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Recipe:</strong> 
-        </div>
-    </div>
-    <recipe>warehouse</recipe>
-</div>
-<hr />
-
 # About the Building
 
 The Warehouse is the central place to hold and retrieve ALL of your materials and tools that are made and gathered by all of your workers. It is the central storage from where the [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft or need.
