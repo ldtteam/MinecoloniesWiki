@@ -53,6 +53,7 @@ When accessing the Stone Smeltery's Hut block (right clicking on it), you will s
     </ul>
   </div>
 </div>
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/stonesmelterygui2.png" class="img-fluid mx-auto" alt="Smeltery GUI">
