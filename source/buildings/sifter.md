@@ -84,6 +84,7 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
     </ul>
   </div>
 </div>
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/sifter_gui2.png" class="img-fluid mx-auto" alt="Sifter GUI">
