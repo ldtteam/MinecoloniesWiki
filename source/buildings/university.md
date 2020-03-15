@@ -45,7 +45,7 @@ When accessing the University's Hut block (right clicking on it), you will see a
 </div>
 <br>
 
-Page 2 of the GUI will show you the options for each research tree:
+
 
 <br>
 
@@ -53,7 +53,7 @@ Page 2 of the GUI will show you the options for each research tree:
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/universitygui2.png" class="img-fluid mx-auto" alt="University GUI Page 2">
   </div>
-  <div class="col-sm-12 col-md">
+    <p> Page 2 of the GUI will show you the options for each research tree: </p>
 </div>
     
 <br>
