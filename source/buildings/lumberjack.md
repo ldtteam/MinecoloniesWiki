@@ -9,18 +9,15 @@ layout: default
     <hr />
     <div class="row section-text text-left">
         <div class="col">
-        <p><strong>Worker:</strong> <a href="../workers/lumberjack">Lumberjack</a></p>
+        <p><strong>Worker:</strong></p>
+        </div>
+        <div class="col">
+        <p><a href="../workers/lumberjack">Lumberjack</a></p>
         </div>
     </div>
     <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Recipe:</strong> 
-        </div>
-    </div>
     <recipe>lumberjack</recipe>
 </div>
-<hr />
 
 # About the Building
 
@@ -31,7 +28,6 @@ Once the building is built, you can hire a lumberjack to begin cutting down tree
 <br>
 
 ## Lumberjack Hut GUI
-
 
 Now you can access the Lumberjack's Hut block (right click on it) and you will see a GUI with different options:
 
