@@ -54,13 +54,15 @@ Page 2 of the GUI will show you the options for each research tree:
   </div>
   <div class="col-sm-12 col-md">
 </div>
-
+    
+<br>
+    
 Once you click on a Research Branch, you will see the options for each research tree:
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 2">
+    <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
   </div>
   <div class="col-sm-12 col-md">
 </div>
