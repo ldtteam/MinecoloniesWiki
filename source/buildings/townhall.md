@@ -7,6 +7,13 @@ layout: default
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/townhall.png" alt="Town Hall's Hut" />
     <hr />
+    <div class="row section-text text-left">
+        <div class="col">
+        <p><strong>Worker:</strong></p>
+        </div>
+    </div>
+    <hr />
+    <recipe>townhall</recipe>
 </div>
 
 # About the Building
