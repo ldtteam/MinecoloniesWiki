@@ -62,10 +62,11 @@ Once you click on a Research Branch, you will see the options for each research 
 
 <br>
 
-<div class="col-sm-12 col-md">
-  <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
-</div>
-
+<div class="infobox box text-center">
+    <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
+    <hr />
+ </div>
+ 
 <br>
 
 Each option will tell you the requirements and tell you how long it takes to research that option. (Time is in real world time spent in game.)
