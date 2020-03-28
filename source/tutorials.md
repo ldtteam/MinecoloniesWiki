@@ -6,14 +6,14 @@ layout: default
 
 ## [Tutorial](../tutorials/tutorial) 
 <br>
-Instructions on installing Minecolonies with Native Java Launcher
+Quick Walkthrough and Detailed Walkthrough
 <br>
 
 ## [Schematics](../tutorials/schematics) 
 <br>
-Instructions on installing Minecolonies with MultiMC
+Instructions on Creating, Scanning and Pasting Schematics
 <br>
 
 ## [Servers](../tutorials/serverinfo) 
 <br>
-Instructions on installing Minecolonies with Twitch
+Instructions on Working with Servers
