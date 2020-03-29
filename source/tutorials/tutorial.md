@@ -7,6 +7,13 @@ layout: default
 <p class="h4 text-center"><b>Hello and welcome all new and old players!</b></p>
 
 - [Quick Walkthrough](#quick-walkthrough)
+  - [Step 1 Supply Camp / Supply Ship](step-1-supply-camp-/-supply-ship)
+  - [Step 2 Townhall](step-2-townhall)
+  - [Step 3 Builder](step-3-builder)
+  - [Step 4 Lumberjack](step-4-lumberjack)
+  - [Step 5 Miner](step-5-miner]
+  - [Step 6 Food](step-6-food)
+  - [Step 7 Rest of the Colony](step-7-rest-of-the-colony)
 - [Detailed Walkthrough](#detailed-walkthrough)
   - [Placement of the Supply Ship or Supply Camp](#placement-of-the-supply-ship-or-supply-camp)
   - [Town Hall](#town-hall)
