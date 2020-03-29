@@ -6,51 +6,51 @@ layout: default
 
 <p class="h4 text-center"><b>Hello and welcome all new and old players!</b></p>
 
-- [Tutorial](#tutorial)
-  - [Basic Walkthrough](#basic-walkthrough)
-  - [Detailed Walkthrough](#detailed-walkthrough)
-    - [Placement of the Supply Ship or Supply Camp](#placement-of-the-supply-ship-or-supply-camp)
-    - [Town Hall](#town-hall)
-  - [Setting Up Your Colony](#setting-up-your-colony)
-    - [Step 1](#step-1)
-    - [Step 2](#step-2)
-    - [Town Hall GUI](#town-hall-gui)
-    - [Step 3](#step-3)
-    - [Step 4](#step-4)
-    - [Final Notes](#final-notes)
-{: .box .py-3 .pr-4 }
+- [Quick Walkthrough](#quick-walkthrough)
+- [Detailed Walkthrough](#detailed-walkthrough)
+  - [Placement of the Supply Ship or Supply Camp](#placement-of-the-supply-ship-or-supply-camp)
+  - [Town Hall](#town-hall)
+- [Setting Up Your Colony](#setting-up-your-colony)
+  - [Step 1](#step-1)
+  - [Step 2](#step-2)
+  - [Town Hall GUI](#town-hall-gui)
+  - [Step 3](#step-3)
+  - [Step 4](#step-4)
+  - [Final Notes](#final-notes)
 
-If you'd like instructions on how to <a id="install">install</a> our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) we have two options; instructions for the Twitch Launcher click [here](../installation/twitch) (Previously Curse launcher) or for MultiMC click [here](../installation/multimc). If you just want to install our Mod in the original Minecraft Launcher click [here](../installation/java).
+This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Mod Pack](https://minecraft.curseforge.com/projects/minecolonies) you can find instructions for [here](../installation) 
 
-## Basic Walkthrough
+## Quick Walkthrough
 
-If you have done the installation, congratulations! You are on your way to having your own thriving colony!
+  Before you get started on your new colony you should find your perfect location. You need a large enough area for a full city. 
+  
+  You should also gather as many resources as you can. Once you figure out which style you want, you should start gathering enough wood for that style, as well as cobble, coal, iron, and even flowers, and some saplings for other trees not in your style as they are often used as decoration items. 
+  
+  You should also gather enough food to feed yourself and your initial citizens until you can get workers who gather and cook food. 
+ <br> 
+  # Step 1 - Supply Camp / Supply Ship
+    Once you have your location determined, you must place a supply camp or supply ship, you can only place one of these, and only place it once. The supply camp and ship have the townhall block you need to officially start your colony, it also has some other supplies you may need during your building of the colony. Once you have the townhall block and the build tool, the remaining camp or ship is just decoration. You can leave it if you wish, or tear it down and use the blocks.
+<br>    
+  # Step 2 - Townhall
+    The Townhall building what what actually creates the colony. This is where you start using the build tool to place buildings. Using the build tool ensures you can see exactly where the building will be, which direction it will face and if it is at the right level, some buildings need raised to the correct level. 
 
-But one of the first questions you should ask yourself is: "*Where should I put my town?*". When starting a new world, just play Minecraft how you normally would. Find a nice area where you could start your wonderful new town and start collecting some resources like wood, dirt, sand, gravel and cobblestone.
-
-**Hint:** The most important tool you will need for the entire mod is the Building Tool (check out our [Building Tool](../items/buildingtool) page). Craft the Building Tool so you can place all the buildings, worker huts and even the Supply Ship or Supply Camp in the perfect spot. 
-
-<p class="h4 text-center"><b><a id="build_tool">Building Tool Video.</a></b></p>
-
-<div class="embed-responsive embed-responsive-16by9 mx-auto">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<br />
-
-To start your colony you need to craft either a [Supply Ship](../items/supplyship) or a [Supply Camp](../items/supplycamp) first (only one of these can be placed per player per world).  By default, only one colony can be started per player per world. Place the Supply Ship/Camp block using the building tool for the best placement or by right clicking the ground and a chest will spawn exactly where you clicked on the ground. Within this chest will be a Town Hall block and a Building Tool. **This is the only way to obtain the Town Hall block, it can't be crafted.**
-
-- **Tip**: [Supply Camp](../items/supplycamp) needs an area of 16 x 12 x 17 to place down.
-- **Tip**: [Supply Ship](../items/supplyship) must be placed in a large pool of water, otherwise it will not be built. This also can not be a river because it is too small; an area of 17 x 30 x 32 is required to place it.
-
-Your first step to start your town is placing the [Town Hall](../../source/buildings/townhall) Chest. While it can be placed manually, it is far better to place the Town Hall using the Building Tool you obtained from your supply chest. The Building Tool will help you place your buildings, and using it will show you a 3D ghost outline of what the building will look like.
-
-The next thing you should do is craft a "[Builders Hut](../../source/workers/builder)". Once again, use the [Building Tool](../items/buildingtool) to place the hut so you can position the hut exactly how you want it. The builders hut will let you hire a builder and, as you may guess, the builder will build and upgrade buildings. Once built, upgrading the builder hut will enable your builder to upgrade the other buildings. In the configuration options of the mod or in the config folder of your Minecraft game you can toggle if your builder builds for free (infinite resources) or whether you have to deliver him the resources.
-
-Currently there are 10 more Worker Huts that can be placed and built. They are: Miners Hut, Lumberjack's Hut, Fisherman's Hut, Farmer's Hut, Baker's Hut, Cook/Restaurant Hut, Herder's Hut, Smelter's Hut, Composter's Hut and the Guard's Tower (or barracks). All of these huts lets the workers gather resources if you give them the proper tools. The Lumberjack requires an axe so he can start chopping down trees and getting logs. The miner will need the first level of his building built and he needs a shovel, pickaxe, cobblestone, torches, ladders, fences, planks and slabs (all oak wood type), the Fisherman will require his hut be built first and then a fishing rod, the farmer needs his hut be built as well as for you to create the plot and place the Field (Scarecrow block) and the Guards will need the Guard Tower built first then a bow and/or a sword. Depending on the type of tools given to the workers, they will collect what that tool will allow them. Even use enchanted tools!
-
-View all the recipes [here](../misc/recipes).
-
-
+    Once the Townhall block is placed, you will start receiving the first 4 citizens. 
+<br>
+  # Step 3 - Builder
+    Before anything can be built, you need a builder. The builder must build his own hut before building any other huts. He also can not build a hut that will be a higher level than his own hut level. 
+<br>
+  # Step 4 - Lumberjack
+    If your style is wood, it's recommended to build a lumberjack next. That way they can start gathering wood for your next builds. 
+<br>
+  # Step 5 - Miner
+    Stone is another major need for any colony, so a mine is the next logical step. 
+<br>
+  # Step 6 - Food
+    The next major thing you need for your colony is food, the fastest way to get food is to get a fisherman. You could do a farmer or one of the herders but a fisherman is faster. 
+<br>
+  # Step 7 --> ?
+    This is where you need to decide what you need next, based on how you play and what your colony needs. But you have several things to look at. Once you get five citizens you can get attacked by barbarians, or you may get a sick citizen and need to build a hospital, or you may decide you want a sawmill to make the needed items for your miner or builder. Or you may just want to have a specific worker, or you found a great place for a certain hut. From here on out, you decide how your colony will grow.
+<br><br>
 ## Detailed Walkthrough
 
 If you're here, **CONGRATULATIONS!** You have already <a href="#install">installed</a> Minecolonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame Minecolonies Achievements).
