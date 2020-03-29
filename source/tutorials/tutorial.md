@@ -31,28 +31,28 @@ You should also gather enough food to feed yourself and your initial citizens un
  
 ### Step 1 Supply Camp / Supply Ship
   
-  Once you have your location determined, you must place a supply camp or supply ship, you can only place one of these, and only place it once. The supply camp and ship have the townhall block you need to officially start your colony, it also has some other supplies you may need during your building of the colony. Once you have the townhall block and the build tool, the remaining camp or ship is just decoration. You can leave it if you wish, or tear it down and use the blocks.
+  Once you have your location determined, you must place a [Supply Ship](../items/supplyship) or [Supply Camp](../items/supplycamp), you can only place one of these, and only place it once. The supply camp and ship have the townhall block you need to officially start your colony, it also has some other supplies you may need during your building of the colony. Once you have the townhall block and the build tool, the remaining camp or ship is just decoration. You can leave it if you wish, or tear it down and use the blocks.
   
 ### Step 2 Townhall
   
-  The Townhall building what what actually creates the colony. This is where you start using the build tool to place buildings. Using the build tool ensures you can see exactly where the building will be, which direction it will face and if it is at the right level, some buildings need raised to the correct level.
+  The [Townhall](../buildings/townhall) building what what actually creates the colony. This is where you start using the build tool to place buildings. Using the build tool ensures you can see exactly where the building will be, which direction it will face and if it is at the right level, some buildings need raised to the correct level.
   Once the Townhall block is placed, you will start receiving the first 4 citizens.
   
 ### Step 3 Builder
   
-  Before anything can be built, you need a builder. The builder must build his own hut before building any other huts. He also can not build a hut that will be a higher level than his own hut level.
+  Before anything can be built, you need a [Builder](../workers/builder). The builder must build his own [Builders Hut](../buildings/builder) before building any other huts. He also can not build a hut that will be a higher level than his own hut level.
   
 ### Step 4 Lumberjack
   
-  If your style is wood, it's recommended to build a lumberjack next. That way they can start gathering wood for your next builds.
+  If your style is wood, it's recommended to build a [Lumberjack](../buildings/lumberjack) next. That way they can start gathering wood for your next builds.
   
 ### Step 5 Miner
   
-  Stone is another major need for any colony, so a mine is the next logical step.
+  Stone is another major need for any colony, so a [Mine](../buildings/mine) is the next logical step.
   
 ### Step 6 Food
   
-  The next major thing you need for your colony is food, the fastest way to get food is to get a fisherman. You could do a farmer or one of the herders but a fisherman is faster.
+  The next major thing you need for your colony is food, the fastest way to get food is to get a [Fisherman](../buildings/fisherman). You could do a farmer or one of the herders but a fisherman is faster.
   
 ### Step 7 Rest of the Colony
   
