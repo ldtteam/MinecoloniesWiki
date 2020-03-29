@@ -303,7 +303,7 @@ Now you can access the Builder's block (right click on it) and you will see a si
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/buildergui.png" class="img-fluid mx-auto" alt="Builder GUI">
+    <img src="../../assets/images/gui/buildergui1.png" class="img-fluid mx-auto" alt="Builder GUI">
   </div>
   <div class="col-sm-12 col-md">
     <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
