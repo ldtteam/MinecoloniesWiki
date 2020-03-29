@@ -11,7 +11,7 @@ layout: default
   - [Step 2 Townhall](step-2-townhall)
   - [Step 3 Builder](step-3-builder)
   - [Step 4 Lumberjack](step-4-lumberjack)
-  - [Step 5 Miner](step-5-miner]
+  - [Step 5 Miner](step-5-miner)
   - [Step 6 Food](step-6-food)
   - [Step 7 Rest of the Colony](step-7-rest-of-the-colony)
 - [Detailed Walkthrough](#detailed-walkthrough)
