@@ -7,7 +7,6 @@ layout: default
 ## Welcome to the Supply Camp page. 
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplycamp.png" alt="Supply Camp"></p>
-    <hr/>
 
 
 <div class="infobox box text-center">
