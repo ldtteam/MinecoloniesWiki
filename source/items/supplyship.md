@@ -30,8 +30,7 @@ You can use the placement GUI, to get the placement just right. There are also, 
 
 **Here are some screenshots for your viewing pleasure:**
 
-<p style="text-align:center;"><img src="../../assets/images/items/supplyship.png" alt="Supply Ship"></p><br><br>
 <p style="text-align:center;"><img src="../../assets/images/items/ship1.png" alt="Supply Ship"><br><br>
-<img src="../../assets/images/items/ship2.png" alt="Supply Ship"><br><br>
-<img src="../../assets/images/items/ship3.png" alt="Supply Ship"><br>
+<p style="text-align:center;"><img src="../../assets/images/items/ship2.png" alt="Supply Ship"><br><br>
+<p style="text-align:center;"><img src="../../assets/images/items/ship3.png" alt="Supply Ship"><br>
 
