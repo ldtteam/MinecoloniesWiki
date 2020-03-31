@@ -6,13 +6,12 @@ layout: default
 
 ## Welcome to the Scan Tool page.
 
-<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptersteel.png" alt="Scantool"></p>
-    <hr />
-
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptersteel.png" alt="Scantool"></p>
     <recipe>scantool</recipe>
 </div>
 <br>
+
  Crafting the scan tool is simple and it is a very useful tool. With the scan tool you can scan any structure you like and have the builder build it for you. So find if you a building, house, walls, bridges, towers, shops or any structure that you want in your Town, you can build it in creative or paste it with world edit (f.e.) and then scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a schematic file that you can then use the build tool to place and have your Builder build it for you ([Schematics](../tutorials/schematics) Page for more info). Want your builder to clear an area for you (and level up while working.. of course) then scan an area of "air" and place it with the building tool over what you want the builder to clear and watch him clear that area away leaving only "air" in it's place! The possibilities are endless! Watch a short video of how it works here:
 
 <p class="h4">Scan Tool Video</p>
