@@ -29,8 +29,6 @@ subnav:
         url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
-      - page: Scan Tool
-        url: source/items/scantool
       - page: Substitution Blocks
         url: source/items/substitutionblocks
       - page: Supply Camp
