@@ -7,9 +7,9 @@ layout: default
 ## Welcome to the Ancient Tome page. 
 
 <br>
-
+<hr>
 <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancienttome.png" alt="Ancient Tome"></p>
-    <hr />
+<hr/>
 <br>
 
 <div class="infobox box text-center">
