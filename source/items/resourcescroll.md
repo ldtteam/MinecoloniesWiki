@@ -4,15 +4,10 @@ layout: default
 ---
 # Resource Scroll 
 
+## Welcome to the Resource Scroll page. 
 
-<br>
-Welcome to the Resource Scroll page. 
-<br>
-
-<br>
-<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Resource Scroll"></p>
-    <hr />
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Resource Scroll"></p>
     <recipe>resourcescroll</recipe>
 </div>
 
