@@ -8,7 +8,7 @@ layout: default
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/compost.png" alt="Compost"></p>
-    <recipe>compost</recipe>
+    <recipe>compostblock</recipe>
 </div>
 <br>
 
