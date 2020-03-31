@@ -6,11 +6,8 @@ layout: default
 
 ## Welcome to the Waypoint page.
 
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/waypoint.png" alt="Waypoint"></p>
-<hr/>
-
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/waypoint.png" alt="Waypoint"></p>
     <recipe>waypoint</recipe>
 </div>
 
