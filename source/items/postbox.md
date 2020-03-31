@@ -7,7 +7,7 @@ layout: default
 ## Welcome to the Postbox page. 
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox" />
+    <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox"></p>
     <recipe>postbox</recipe>
 </div>
 <br>
