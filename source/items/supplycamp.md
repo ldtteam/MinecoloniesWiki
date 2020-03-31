@@ -29,4 +29,3 @@ When you place the Supply Camp it will spawn a chest that will contain the [Town
 
 <p style="text-align:center;"><img src="../../assets/images/items/camp4.png" alt="Supply Camp"><br><br>
 <img src="../../assets/images/items/camp5.png" alt="Supply Camp"><br><br>
-<img src="../../assets/images/items/camp6.png" alt="Supply Camp"></p>
