@@ -37,7 +37,6 @@ subnav:
         url: source/items/supplyship
       - page: Waypoint
         url: source/items/waypoint
-      
       - page: Construction Tape
         url: source/decoblocks/constructiontape
       - page: Paper Walls
