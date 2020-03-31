@@ -18,7 +18,7 @@
       "secondItem": "minecraft/stick",
       "thirdItem": "minecraft/wheat"
     },
-    "product": ["minecolonies/blockshingle_oak","minecolonies/blockshingle_spruce","minecolonies/blockshingle_birch","minecolonies/blockshingle_jungle","minecolonies/blockshingle_acacia","minecolonies/blockshingle_dark_oak","minecolonies/blockshingle_cactus"],
+    "product": "minecolonies/blockshingle_thatched",
     "amount": "8"
   }
 ]}
