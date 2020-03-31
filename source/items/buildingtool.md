@@ -6,10 +6,8 @@ layout: default
 
 ## Welcome to the Building Tool page.
 
-<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptergold.png" alt="Build Tool"></p>
-    <hr />
-
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptergold.png" alt="Build Tool"></p>
     <recipe>buildingtool</recipe>
 </div>
 
