@@ -4,10 +4,8 @@ layout: default
 ---
 # Shingles
 
-<div class="infobox box text-left">
+<div class="infobox box text-center">
     <img src="../../assets/images/deco/shingles.png" alt="Shingle Woods"/>
-</div>
-<div class="infobox box text-right">
     <p><strong>Recipe: </strong>
     <recipe>shingleclay</recipe>
     <p><strong>Recipe: </strong>
@@ -29,7 +27,6 @@ layout: default
     <p><strong>Recipe: </strong>
     <recipe>shingleslabcolors</recipe>
 </div>
-<br>
 
 ## The Item
 The Shingles are decorative shingles for the tops of buildings. Shingles come in all wood types, including Cactus Planks added by Structurize, and come in many colors. 
