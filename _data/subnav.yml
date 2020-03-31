@@ -42,7 +42,7 @@ subnav:
       - page: Paper Walls
         url: source/decoblocks/paperwalls
       - page: Rack
-        url: source/decoblocks/racks
+        url: source/decoblocks/rack
       - page: Shingles
         url: source/decoblocks/shingles
       - page: Timber Framed Blocks
