@@ -5,13 +5,9 @@ layout: default
 # Postbox 
 
 ## Welcome to the Postbox page. 
-<br><br>
-
-<br>
-<p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox" />
-    <hr />
 
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox" />
     <recipe>postbox</recipe>
 </div>
 <br>
