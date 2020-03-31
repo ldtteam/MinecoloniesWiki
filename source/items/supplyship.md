@@ -5,7 +5,6 @@ layout: default
 # Supply Ship
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplyship1.png" alt="Supplyship"></p>
-    <hr/>
 
 <div class="infobox box text-center">
     <recipe>supplyship</recipe>
