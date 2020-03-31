@@ -21,7 +21,13 @@ The Suppy Camp is one of the *ONLY* two ways to obtain the Town Hall block so yo
 
 When you place the Supply Camp it will spawn a chest that will contain the [Town Hall](../buildings/townhall) block and the [Building Tool](../items/buildingtool). To place the Supply Camp, you need to have a large enough flat, clear piece of land. The recommended flat piece of land must be at least 17 x 17 blocks in size. You can make and use the Building Tool to place the Supply Camp so you can see a 3D image and you can move it around to the exact place and orientation you want it. But please take into account the Town Hall placement as well before you place your Supply Camp. *Once the Supply camp is placed, you can't place another Camp or Ship in this World anymore.*
 
-- **Hint:** if you’re not able to place the Supply Camp, try it block by block: one to the right, or the left, closer of further from the area you cleared. It can not contain any holes or have any flowers, grass, ferns, etc. It must be completely flat and clear. If it's not dirt, then either dig at least a 17 x 17 x 1 hole so it can be placed at ground level or place it 1 block above ground.
+<p style="text-align:center;"><img src="../../assets/images/gui/campgui.png" alt="Supply Camp GUI">
+    
+You can use the placement GUI, to get the placement just right. There are also, a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. 
+
+You can use the arrow buttons in the center to change the location, the curved arrows to rotate the camp. 
+    
+- **Hint:** if you’re not able to place the Supply Camp, try it block by block: one to the right, or the left, closer of further from the area you cleared. It can not contain any holes or have any flowers, grass, ferns, etc. It must be completely flat and clear. If you can not place the camp, enlarge the area outside the outline of the camp by one or two blocks around the parameter. 
 
 <p style="text-align:center;"><img src="../../assets/images/items/camp2.png" alt="Supply Camp Area">       <img src="../../assets/images/items/camp1.png" alt="Supply Camp Top"></p>
 
