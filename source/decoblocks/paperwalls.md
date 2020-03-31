@@ -5,7 +5,7 @@ layout: default
 # Paper Walls
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/deco/paperwall.png" alt="Paper Walls" />
+    <img src="../../assets/images/deco/paperwall.png" alt="Paper Walls"/><br>
     <recipe>paperwall</recipe>
 </div>
 <br>
