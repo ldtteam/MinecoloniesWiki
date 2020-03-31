@@ -6,12 +6,13 @@ layout: default
 
 ## Welcome to the Substitution Blocks page. 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Substitution Block">
-<img src="../../assets/images/items/solidsubstitutionblock.png" alt="SolidSubstitution Block"></p>
+
     <hr/>
 
 <div class="infobox box text-center">
-    <recipe>solidsubstitutionblock</recipe>
+    <p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Substitution Block">
+    <img src="../../assets/images/items/solidsubstitutionblock.png" alt="SolidSubstitution Block"></p>
+    <recipe>substitutionblock</recipe><recipe>solidsubstitutionblock</recipe>
 </div>
 
 ### The Blocks
