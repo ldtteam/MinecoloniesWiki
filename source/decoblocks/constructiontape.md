@@ -11,7 +11,7 @@ layout: default
 <br>
 
 ## The Item
-<br>
+
 Construction tape is a unique item in that it automatically generates when a building is placed. It is placed one block outside of the building's footprint. This means the block the construction tape is on, is not in the build zone. 
 <br>
 
