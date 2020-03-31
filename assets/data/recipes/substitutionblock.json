@@ -1,0 +1,24 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "thirdRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "product": "minecolonies/blocksubstitution",
+    "amount": "32"
+  }
+]}
