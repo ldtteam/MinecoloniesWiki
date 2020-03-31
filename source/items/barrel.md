@@ -6,13 +6,8 @@ layout: default
 
 ## Welcome to the Barrel page. 
 
-<br>
-
-<p style="text-align:center;"><img src="../../assets/images/items/barrel.png" alt="Barrel"></p>
-    <hr />
-<br>
-
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/barrel.png" alt="Barrel"></p>
     <recipe>barrel</recipe>
 </div>
 <br>
