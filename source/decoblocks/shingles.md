@@ -5,8 +5,8 @@ layout: default
 # Shingles
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/deco/shingles_back.png" alt="Shingle Woods" />
-    <img src="../../assets/images/deco/shingles_colors.png" alt="Shingle colors" />
+    <img src="../../assets/images/deco/shingles.png" alt="Shingle Woods" />
+    <p><strong>Recipe:</strong>
     <recipe>shingleclay</recipe>
     <p><strong>Recipe:</strong>
     <recipe>shinglemoss</recipe>
