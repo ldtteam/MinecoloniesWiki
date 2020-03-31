@@ -11,7 +11,7 @@ layout: default
     <recipe>shingleclay</recipe>
     <p><strong>Recipe: </strong>
     <recipe>shinglemoss</recipe>
-    <p><strong>Recipe: </strong> 
+    <p><strong>Recipe: </strong>
     <recipe>shingleslate</recipe>
     <p><strong>Recipe: </strong>
     <recipe>shinglethatched</recipe>
@@ -28,15 +28,17 @@ layout: default
     <p><strong>Recipe: </strong>
     <recipe>shingleslabcolors</recipe>
 </div>
+
 <br>
 
-
 ## The Item
+
 The Shingles are decorative shingles for the tops of buildings. Shingles come in all wood types, including Cactus Planks added by Structurize, and come in many colors. 
 
 There is even a shingle half slab for crown of the roof that comes in all the colors as well.   
 <br>
 
 ## Using the Shingles
+
 Use the shingles like you would use stairs to create roofs for buildings.
  
