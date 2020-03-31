@@ -1,3 +1,4 @@
+---
 title: Minecolonies Wiki
 layout: default
 ---
@@ -5,13 +6,8 @@ layout: default
 
 ## Welcome to the Field page. 
 
-<br>
-
-<p style="text-align:center;"><img src="../../assets/images/items/field.png" alt="Field"></p>
-    <hr />
-<br>
-
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/field.png" alt="Field"></p>
     <recipe>field</recipe>
 </div>
 <br>
