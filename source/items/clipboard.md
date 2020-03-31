@@ -5,16 +5,9 @@ layout: default
 # Clipboard 
 
 Welcome to the Clipboard page. 
-<br><br>
-
-Welcome to the Clipboard page.
-
-<br>
-<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Clipboard"></p>
-    <hr/>
-<br>
 
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Clipboard"></p>
     <recipe>clipboard</recipe>
 </div>
 
