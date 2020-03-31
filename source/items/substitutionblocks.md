@@ -9,7 +9,7 @@ layout: default
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Substitution Block">
     <img src="../../assets/images/items/solidsubstitutionblock.png" alt="SolidSubstitution Block"></p>
-    <recipe>substitutionblock</recipe><recipe>solidsubstitutionblock</recipe>
+    <recipe>substitutionblock</recipe> - <recipe>solidsubstitutionblock</recipe>
 </div>
 
 ### The Blocks
