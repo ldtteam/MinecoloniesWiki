@@ -5,7 +5,7 @@ layout: default
 # Construction Tape
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/deco/constructiontape.png" alt="Construction Tape"/>
+    <img src="../../assets/images/deco/constructiontape.png" alt="Construction Tape"/><br>
     <recipe>constructiontape</recipe>
 </div>
 <br>
