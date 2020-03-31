@@ -1,3 +1,4 @@
+---
 title: Minecolonies Wiki
 layout: default
 ---
