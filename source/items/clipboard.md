@@ -4,7 +4,7 @@ layout: default
 ---
 # Clipboard 
 
-Welcome to the Clipboard page. 
+## Welcome to the Clipboard page. 
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Clipboard"></p>
