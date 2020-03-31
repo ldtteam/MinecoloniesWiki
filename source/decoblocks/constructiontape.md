@@ -4,10 +4,8 @@ layout: default
 ---
 # Construction Tape
 
-<img src="../../assets/images/deco/constructiontape.png" alt="Construction Tape" />
-    <hr />
-
 <div class="infobox box text-center">
+    <img src="../../assets/images/deco/constructiontape.png" alt="Construction Tape" />
 <p><strong>Recipe:</strong> 
     <recipe>constructiontape</recipe>
 </div>
