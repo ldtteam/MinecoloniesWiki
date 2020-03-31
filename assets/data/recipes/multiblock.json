@@ -2,9 +2,9 @@
     {
       "firstRow":
       {
-        "firstItem": "minecraft_stone",
-        "secondItem": "minecraft_stone",
-        "thirdItem": "minecraft_stone"
+        "firstItem": "minecraft/stone",
+        "secondItem": "minecraft/stone",
+        "thirdItem": "minecraft/stone"
       },
       "secondRow":
       {
