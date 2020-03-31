@@ -6,10 +6,8 @@ layout: default
 
 ## Welcome to the Ancient Tome page. 
 
-<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancienttome.png" alt="Ancient Tome"></p>
-<br>
-
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancienttome.png" alt="Ancient Tome"></p>
     There is no recipe for the Ancient Tome, it must be obtained in game.
 </div>
 <br>
