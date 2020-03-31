@@ -5,9 +5,6 @@ layout: default
 # Substitution Blocks
 
 ## Welcome to the Substitution Blocks page. 
-<br>
-
-    <hr/>
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Substitution Block">
