@@ -16,5 +16,5 @@ Paperwalls are a block that acts like glass, but is surrounded by wooden frames.
 
 <img src="../../assets/images/deco/paperwalls.png" alt="Paper Walls" />
 
-## Using the Construction Tape
+## Using the Paper Walls
 Use paper walls in buildings to replace glass for a different look.
