@@ -5,13 +5,9 @@ layout: default
 # Calipers
 
 ## Welcome to the Caliper page. 
-<br>
-
-<p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/caliper.png" alt="Caliper"></p>
-    <hr/>
-<br>
 
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/caliper.png" alt="Caliper"></p>
     <recipe>caliper</recipe>
 </div>
 <br>
