@@ -34,5 +34,5 @@ You can use the arrow buttons in the center to change the location, the curved a
 **Here are some screenshots for your viewing pleasure:**
 
 <p style="text-align:center;"><img src="../../assets/images/items/camp4.png" alt="Supply Camp"><br><br>
-<img src="../../assets/images/items/camp5.png" alt="Supply Camp"><br>
-    <img src="../../assets/images/items/camp6.png" alt="Supply Camp"><br>
+<img src="../../assets/images/items/camp5.png" alt="Supply Camp"><br><br>
+<img src="../../assets/images/items/camp6.png" alt="Supply Camp"><br>
