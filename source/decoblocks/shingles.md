@@ -28,6 +28,8 @@ layout: default
     <recipe>shingleslabcolors</recipe>
 </div>
 
+</hr>
+
 <br>
 
 ## The Item
