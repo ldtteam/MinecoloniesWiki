@@ -1,0 +1,24 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "minecraft/wheat",
+      "secondItem": "minecraft/wheat",
+      "thirdItem": "minecraft/wheat"
+    },
+    "thirdRow":
+    {
+      "firstItem": "minecraft/stick",
+      "secondItem": "minecraft/stick",
+      "thirdItem": "minecraft/stick"
+    },
+    "product": "minecolonies/blockshingleslab_thatched",
+    "amount": "8"
+  }
+]}
