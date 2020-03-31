@@ -5,13 +5,12 @@ layout: default
 # Multiblock/Multipiston
 
 ## Welcome to the Multiblock/Multipiston page. 
+
 <div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/multipiston.png" alt="Multiblock"></p>
     <recipe>multiblock</recipe>
 </div>
 <br>
-<p style="text-align:center;"><img src="../../assets/images/items/multipiston.png" alt="Multiblock"></p>
-    <hr/>
-
 
 ### The Block
 
