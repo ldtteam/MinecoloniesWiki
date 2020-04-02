@@ -142,8 +142,12 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | cook           | 1 furnace per level                   |                 |
 | florist        | 4 compost plots per level             |                 |
 | guard tower    |                                       | 1 bed per level |
+| hospital       | 1 bed per level                       |                 |
+| library        | bookshelves                           |                 |
 | smeltery       | 1 furnace per level                   |                 |
 | stonesmeltery  | 1 furnace per level                   |                 |
+| university     | bookshelves                           |                 |
+
 
 
 #### How to override some built-in schematics?
