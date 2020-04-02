@@ -128,6 +128,23 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | university1    | university2    | university3    | university4    | university5    |
 | warehouse1     | warehouse2     | warehouse3     | warehouse4     | warehouse5     |
 
+### Requirements
+
+| Building       | Requirements                          | Suggested       | 
+| :------------- | :-------------                        | :-------------  | 
+| archery        | 1 archery dummy per level             |                 | 
+| baker          | 1 furnace per level                   |                 | 
+| barracks       | 1 barracks tower per level (to lvl 4) |                 |
+| barracks tower |                                       | 1 bed per level |
+| citzens        |                                       | 1 bed per level |
+| combat academy | 1 combat dummy per level              |                 |
+| composter      | 1 composter barrel per level          |                 |
+| cook           | 1 furnace per level                   |                 |
+| florist        | 4 compost plots per level             |                 |
+| guard tower    |                                       | 1 bed per level |
+| smeltery       | 1 furnace per level                   |                 |
+| stonesmeltery  | 1 furnace per level                   |                 |
+
 
 #### How to override some built-in schematics?
 
