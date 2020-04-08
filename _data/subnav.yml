@@ -46,7 +46,7 @@ subnav:
       - page: Shingles
         url: source/decoblocks/shingles
       - page: Timber Framed Blocks
-        url: source/decoblocks/timberframebase
+        url: source/decoblocks/timberframes
   - title: Systems
     subitems:
       - page: Command System
