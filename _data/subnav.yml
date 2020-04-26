@@ -19,34 +19,34 @@ subnav:
         url: source/items/clipboard
       - page: Compost
         url: source/items/compost
+      - page: Construction Tape
+        url: source/decoblocks/constructiontape
       - page: Field
         url: source/items/field
       - page: Multi-block
         url: source/items/multiblock
+      - page: Paper Walls
+        url: source/decoblocks/paperwalls
       - page: Postbox
         url: source/items/postbox
+      - page: Rack
+        url: source/decoblocks/rack
       - page: Resource Scroll
         url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
+      - page: Shingles
+        url: source/decoblocks/shingles
       - page: Substitution Blocks
         url: source/items/substitutionblocks
       - page: Supply Camp
         url: source/items/supplycamp
       - page: Supply Ship
         url: source/items/supplyship
-      - page: Waypoint
-        url: source/items/waypoint
-      - page: Construction Tape
-        url: source/decoblocks/constructiontape
-      - page: Paper Walls
-        url: source/decoblocks/paperwalls
-      - page: Rack
-        url: source/decoblocks/rack
-      - page: Shingles
-        url: source/decoblocks/shingles
       - page: Timber Framed Blocks
         url: source/decoblocks/timberframes
+      - page: Waypoint
+        url: source/items/waypoint
   - title: Systems
     subitems:
       - page: Command System
