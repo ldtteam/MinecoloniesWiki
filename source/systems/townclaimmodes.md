@@ -2,12 +2,61 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Town Claim Modes
-
-### The Claim System has two modes; Static and Dynamic.
+# Claim system
 
 ---
 
+Colonies have an area of claimed chunks around them. Upon colony creation a colony claims chunks(16x16 block areas) in a square around it, the radius is set with the config setting *initialColonySize*. 
+
+Those claims normally are protected from modification through other players, see Systems#Protection.
+
+Extending your claim area can be done with buildings. Buildings do claim a square area around them after beeing built, expanding to all sides from the chunk the hutblock is located in. How much they claim depends on the building. They do not claim over the max range, set with the config setting *maxColonySize*.
+
+Removing a building does remove the chunks it claimed, the colonies initial claim radius is excluded.
+
+#### Building Claim Areas:
+
+**TownHall:**
+
+Level     |     Additional Chunks     
+----  | ----
+1   |  1 Chunk radius
+3   |  2 Chunk radius                
+4   |  3 Chunk radius                 
+5   |  5 Chunk radius
+
+**Normal Buildings** (non decoration):
+
+Level     |     Additional Chunks
+----  | ----
+1 | 1 Chunk radius
+2 | 1 Chunk radius
+3 | 1 Chunk radius
+4 | 2 Chunk radius
+5 | 2 Chunk radius
+
+**Guard Tower:**
+
+Level     |     Additional Chunks
+----  | ----
+1   |    2 Chunk radius          
+2   |    3 Chunk radius         
+3   |    3 Chunk radius         
+4   |    4 Chunk radius        
+5   |    5 Chunk radius    
+
+**Barracks**
+
+Level     |     Additional Chunks
+----  | ----
+X |     average of Barrackstower level, up to 5 
+
+     
+
+
+
+
+# Old claims: 1.12 & 1.14
 #### Static Claim Mode:
 
 This claim method is the basic form and the one that is set by default. It is very simple and is set as soon as the Townhall is placed. It will set the claim and protection area for the Town according to the value in the config file (default set to 8 chunk radius).
