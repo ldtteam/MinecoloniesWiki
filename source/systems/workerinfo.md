@@ -21,7 +21,7 @@ There is a system in place for how the workers skills "Level Up". The level of t
 
 ## Tool/Sword Levels
 
-There is also a system in place for the type of tools and swords the workers can use depending on the level of their WORK building. The level of their building is what will put a limit on the "Tool/Sword Level" the worker will be able to use. Every time you level up their building, the level of the tool/sword the worker can use will increase. 
+There is also a system in place for the type of tools and swords the workers can use depending on the level of their WORK building. The level of their building is what will put a limit on the "Tool/Sword Level" the worker will be able to use. Every time you level up their building, the level of the tool/sword the worker can use will increase.
 
 | Building Level | Max Tool/Sword Level Vanilla | Max Tool/Sword Level Tinkers   |
 | -------------- | ---------------------- | ------------------------ |
@@ -35,7 +35,7 @@ There is also a system in place for the type of tools and swords the workers can
 
 ## Bow/Fishing Rod Levels
 
-There is also a system in place for the type of bows and Fishing Rods the workers can use depending on the level of their building. The level of their building is what will put a limit on the enchantments that the "Bow/Fishing Rod" can have so the worker will be able to use. Every time you level up their building, the amount of enchantments that the Bow/Fishing Rod can have for the worker to use will increase. 
+There is also a system in place for the type of bows and Fishing Rods the workers can use depending on the level of their building. The level of their building is what will put a limit on the enchantments that the "Bow/Fishing Rod" can have so the worker will be able to use. Every time you level up their building, the amount of enchantments that the Bow/Fishing Rod can have for the worker to use will increase.
 
 | Building Level | Enchants  |
 | -------------- | ------------- |
@@ -49,7 +49,7 @@ There is also a system in place for the type of bows and Fishing Rods the worker
 
 ## Guard Armor use Table
 
-There is also a system in place for the type of Armor the guards can use depending on the level of their Tower AND the skill level of the guard. Every time you level up their building AND the guard levels up, the level of the Armor the guard can use will increase. 
+There is also a system in place for the type of Armor the guards can use depending on the level of their Tower AND the skill level of the guard. Every time you level up their building AND the guard levels up, the level of the Armor the guard can use will increase.
 
 | Type Armor | Guard Level | Tower Level |
 | ---------- | ----------- | ----------- |
@@ -62,17 +62,17 @@ There is also a system in place for the type of Armor the guards can use dependi
 
 ## Traits
 
-Next to the Worker are the best "Traits" for each worker to have in order for him/her to "level Up" at a faster rate. 
+Next to the Worker are the best "Traits" for each worker to have in order for him/her to "level Up" at a faster rate.
 
-When you click on the "Hire" button, you will see a list of the available workers and the best "Traits" for the specific worker you are hiring will be in green (primary) and yellow (secondary) to help you decide which is the best worker for hire. 
+When you click on the "Hire" button, you will see a list of the available workers and the best "Traits" for the specific worker you are hiring will be in green (primary) and yellow (secondary) to help you decide which is the best worker for hire.
 
 ![Traits](../../assets/images/tutorial/traits.png)
 
 There is a Formula for this: Primary Trait * 2 + Secondary Trait * 1 = Rate of Level Up.
 
-For example; if Intelligence is Primary (green colored) and Endurance Secondary (yellow colored) and the worker assigned has Intelligence "2" and Endurance "4" that is (2x2)+(4x1) = 8 
+For example; if Intelligence is Primary (green colored) and Endurance Secondary (yellow colored) and the worker assigned has Intelligence "2" and Endurance "4" that is (2x2)+(4x1) = 8
 
-That means that this worker will be able to *level up* **8 times faster**. 
+That means that this worker will be able to *level up* **8 times faster**.
 
 ## Workers
 
@@ -91,6 +91,7 @@ Choose a worker to view more information about them:
 | [Deliveryman](../workers/deliveryman)    | Intelligence & Endurance |
 | [Farmer](../workers/farmer)              | Endurance & Charisma     |
 | [Fisherman](../workers/fisherman)        | Intelligence & Dexterity |
+| [Florist](../workers)/florist)           | Intelligence & Charisma  |
 | [Guard](../workers/guard)                | Intelligence & Strength  |
 | [Lumberjack](../workers/lumberjack)      | Strength & Charisma      |
 | [Miner](../workers/miner)                | Strength & Endurance     |
