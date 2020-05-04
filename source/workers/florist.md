@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Intelligence</p>
-      <p class="traits">Charisma</p>
+      <p class="traitp">Dexterity</p>
+      <p class="traits">Agility</p>
       <p><a href="../buildings/flowershop">Flower Shop</a></p>
     </div>
   </div>
@@ -28,4 +28,3 @@ The Florist is another specialist of the your Colony's production. The Florist w
 Click here for full information about the [Flowershop's hut](../buildings/flowershop) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Florist will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Florist if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a Florist, **CONGRATULATIONS!**
-

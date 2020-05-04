@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Intelligence</p>
-      <p class="traits">Endurance</p>
+      <p class="traitp">Creativity</p>
+      <p class="traits">Dexterity</p>
       <p><a href="../buildings/stonemason">StoneMason</a></p>
     </div>
   </div>

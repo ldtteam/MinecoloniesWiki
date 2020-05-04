@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Endurance</p>
+      <p class="traitp">Stamina</p>
+      <p class="traits">Strength</p>
       <p><a href="../buildings/crusher">Crusher's Hut</a></p>
     </div>
   </div>
@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Crusher's Information Site.
 
-The Crusher is another part of your Colony's production line. The Crusher will crush materials into other materials. 
+The Crusher is another part of your Colony's production line. The Crusher will crush materials into other materials.
 
 The default configuration is:
 Cobblestone into Gravel

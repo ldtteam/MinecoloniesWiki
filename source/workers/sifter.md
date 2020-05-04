@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Endurance</p>
+      <p class="traitp">Focus</p>
+      <p class="traits">Strength</p>
       <p><a href="../buildings/sifter">Sifter's Hut</a></p>
     </div>
   </div>
@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Sifter's Information Site.
 
-The Sifter is another part of your Town’s production line. The Sifter will sift materials to find hidden ores, seed and other useful items and ingredients. 
+The Sifter is another part of your Town’s production line. The Sifter will sift materials to find hidden ores, seed and other useful items and ingredients.
 
 The default configuration is:
         Dirt

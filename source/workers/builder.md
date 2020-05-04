@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Endurance</p>
+      <p class="traitp">Adaptability</p>
+      <p class="traits">Athletics</p>
       <p><a href="../buildings/builder">Builder's Hut</a></p>
     </div>
   </div>
@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Builder’s Information Site.
 
-The builder is the **MOST** important worker in your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your personal schematics. 
+The builder is the **MOST** important worker in your colony. As long as you provide the builder with all the resources it asks for, the builder will build and upgrade all of your town buildings, workers' huts, decorations and your personal schematics.
 
 **Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other building.**
 

@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Charisma</p>
-      <p class="traits">Intelligence</p>
+      <p class="traitp">Adaptability</p>
+      <p class="traits">Knowledge</p>
       <p><a href="../buildings/restaurant">Restaurant</a></p>
     </div>
   </div>

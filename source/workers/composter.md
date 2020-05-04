@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Dexterity</p>
-      <p class="traits">Strength</p>
+      <p class="traitp">Stamina</p>
+      <p class="traits">Athletics</p>
       <p><a href="../buildings/composter">Composter's Hut</a></p>
     </div>
   </div>
@@ -28,5 +28,3 @@ The Composter is an addition to help your Farmer(s) get more crops faster and yo
 Click here for full information about the [Composter's Hut](../../source/buildings/composter) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Composter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Composter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a Composter! **CONGRATULATIONS!**
-
-

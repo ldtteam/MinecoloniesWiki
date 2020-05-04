@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Endurance</p>
-      <p class="traits">Charisma</p>
+      <p class="traitp">Stamina</p>
+      <p class="traits">Athletics</p>
       <p><a href="../buildings/farm">Farm</a></p>
     </div>
   </div>

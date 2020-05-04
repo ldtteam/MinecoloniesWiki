@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Dexterity</p>
-      <p class="traits">Strength</p>
+      <p class="traitp">Strength</p>
+      <p class="traits">Athletics</p>
       <p><a href="../buildings/swineherder">Swine Herder's Hut</a></p>
     </div>
   </div>
