@@ -2,7 +2,7 @@
   {
     "firstRow":
     {
-      "firstItem": ["dye_powder_blue","dye_powder_green","dye_powder_purple"],
+      "firstItem": ["minecraft/dye_powder_blue","minecraft/dye_powder_green","minecraft/dye_powder_purple"],
       "secondItem": "minecolonies/blockshingle_slate",
       "thirdItem": ""
     },
