@@ -80,25 +80,31 @@ Choose a worker to view more information about them:
 
 | Job Description                          | Primary Traits           |
 | ---------------------------------------- | ------------------------ |
-| [Baker](../workers/baker)                | Intelligence & Dexterity |
-| [Blacksmith](../workers/blacksmith)      | Dexterity & Strength     |
-| [Builder](../workers/builder)            | Strength & Endurance     |
-| [Chicken Herder](../workers/chickenherder) | Dexterity & Strength   |
-| [Composter](../workers/composter)        | Dexterity & Strength     |
-| [Cook](../workers/cook)                  | Charisma & Intelligence  |
-| [Cowboy](../workers/cowboy)              | Dexterity & Strength     |
-| [Crusher](../worker/crusher)             | Strength & Endurance     |
-| [Deliveryman](../workers/deliveryman)    | Intelligence & Endurance |
-| [Farmer](../workers/farmer)              | Endurance & Charisma     |
-| [Fisherman](../workers/fisherman)        | Intelligence & Dexterity |
-| [Florist](../workers)/florist)           | Intelligence & Charisma  |
-| [Guard](../workers/guard)                | Intelligence & Strength  |
-| [Lumberjack](../workers/lumberjack)      | Strength & Charisma      |
-| [Miner](../workers/miner)                | Strength & Endurance     |
-| [Miller](../workers/miller)              | Intelligence & Endurance |
-| [Shepherd](../workers/shepherd)          | Dexterity & Strength     |
-| [Sifter](../workers/sifter)              | Strength & Endurance     |
-| [Smelter](../workers/smelter)            | Strength & Intelligence  |
-| [Stonemason](../workers/stonemason)      | Intelligence & Endurance |
-| [Stone Smelter](../workers/stonesmelter) | Dexterity & Endurance    |
-| [Swine Herder](../workers/swineherder)   | Dexterity & Strength     |
+| [Baker](../workers/baker)                | Knowledge & Dexterity    |
+| [Blacksmith](../workers/blacksmith)      | Strength & Focus         |
+| [Builder](../workers/builder)            | Adaptability & Athletics |
+| [Chicken Herder](../workers/chickenherder) | Adaptability & Agility |
+| [Composter](../workers/composter)        | Stamina & Athletics      |
+| [Cook](../workers/cook)                  | Adaptability & Knowledge |
+| [Cowboy](../workers/cowboy)              | Athletics & Stamina      |
+| [Crusher](../worker/crusher)             | Stamina & Strength       |
+| [Deliveryman](../workers/deliveryman)    | Agility & Adaptability   |
+| [Enchanter](../workers/enchanter)        | Mana & Knowledge         |
+| [Farmer](../workers/farmer)              | Stamina & Athletics      |
+| [Fisherman](../workers/fisherman)        | Focus & Agility          |
+| [Florist](../workers)/florist)           | Dexterity & Agility      |
+| [Guard](../workers/guard)                | Adaptability & Stamina   |
+| [Healer](../workers/healer)              | Mana & Knowledge         |
+| [Knight](../workers/knight)              | Adaptability & Stamina   |
+| [Library Student](../worker/librarystudent) | Intelligence          |
+| [Lumberjack](../workers/lumberjack)      | Strength & Focus         |
+| [Miner](../workers/miner)                | Strength & Stamina       |
+| [Miller](../workers/miller)              | Knowledge & Dexterity    |
+| [Ranger](../workers/ranger)              | Agility & Adaptability   |
+| [Researcher](../workers/researcher)      | Knowledge & Mana         |
+| [Shepherd](../workers/shepherd)          | Focus & Strength         |
+| [Sifter](../workers/sifter)              | Focus & Strength         |
+| [Smelter](../workers/smelter)            | Athletics & Strength     |
+| [Stonemason](../workers/stonemason)      | Creativity & Dexterity   |
+| [Stone Smelter](../workers/stonesmelter) | Athletics & Dexterity    |
+| [Swine Herder](../workers/swineherder)   | Strength & Athletics     |
