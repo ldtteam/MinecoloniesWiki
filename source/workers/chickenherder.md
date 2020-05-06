@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Dexterity</p>
-      <p class="traits">Strength</p>
+      <p class="traitp">Adaptability</p>
+      <p class="traits">Agility</p>
       <p><a href="../buildings/chickenherder">Chicken Herder's Hut</a></p>
     </div>
   </div>

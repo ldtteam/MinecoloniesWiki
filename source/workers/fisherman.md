@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Intelligence</p>
-      <p class="traits">Dexterity</p>
+      <p class="traitp">Focus</p>
+      <p class="traits">Agility</p>
       <p><a href="../buildings/fisherman">Fisherman's Hut</a></p>
     </div>
   </div>
@@ -29,7 +29,7 @@ Before you choose a place to build his hut, take into account that he has to be 
 
 You now officially have a "Fisherman!" CONGRATULATIONS!
 
-Now you can give the Fisherman a fishing rod and it will start to fish. 
+Now you can give the Fisherman a fishing rod and it will start to fish.
 
 **Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
 

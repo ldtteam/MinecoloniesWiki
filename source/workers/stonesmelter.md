@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Dexterity</p>
-      <p class="traits">Endurance</p>
+      <p class="traitp">Athletics</p>
+      <p class="traits">Dexterity</p>
       <p><a href="../buildings/stonesmeltery">Stone Smeltery</a></p>
     </div>
   </div>
@@ -30,4 +30,3 @@ Click here for full informationa about the [Stone Smeltery's Hut](../buildings/s
 You now officially have a Stone Smelter! **CONGRATULATIONS!**
 
 The Stone Smelter will start to stone blocks for all your Towns needs upon request.
-

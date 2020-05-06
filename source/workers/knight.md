@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Intelligence</p>
-      <p class="traits">Strength</p>
+      <p class="traitp">Adaptability</p>
+      <p class="traits">Stamina</p>
       <p><a href="../buildings/guardtower">Guard Tower</a><b> / </b><a href="../buildings/barracks">Barracks</a></p>
     </div>
   </div>

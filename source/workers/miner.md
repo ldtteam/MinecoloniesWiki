@@ -15,7 +15,7 @@ layout: default
     </div>
     <div class="col">
       <p class="traitp">Strength</p>
-      <p class="traits">Endurance</p>
+      <p class="traits">Stamina</p>
       <p><a href="../buildings/mine">Mine</a></p>
     </div>
   </div>
@@ -29,7 +29,7 @@ Click here for full information about the [Miner's Hut](../buildings/mine) block
 
 You now officially have a Miner! **CONGRATULATIONS!**
 
-You will have to give the Miner a pickaxe, a shovel, ladders, planks, slabs, fences/walls, signs, torches and cobblestone. So he can start to build the shaft down to the mining level. 
+You will have to give the Miner a pickaxe, a shovel, ladders, planks, slabs, fences/walls, signs, torches and cobblestone. So he can start to build the shaft down to the mining level.
 
 The level of the Miner's Hut will dictate how deep he will create the mine, so if you want the best resources, be sure to upgrade the Miner's Hut. The miner works by digging a shaft down to the depth of the level of his hut, once there he will build a network of random mineshafts branching out from the main shaft looking for the ores. When he finds any ore, he will try and mine out the whole vein, not just what happens to be on his path.
 
@@ -38,5 +38,4 @@ The level of the Miner's Hut will dictate how deep he will create the mine, so i
 **Note:** The miner will only mine blocks according to the level of it's pickaxe. And will only be able to use a tool according to the level of it's hut (check the [Worker's Tool Level](../systems/workerinfo) system). Therefore the miner can only mine Diamonds with an Iron or better pickaxe. When the miner finds water or lava, it will try and block it up and work it's way around it. This could take him some time to do. Mining is a very dangerous profession and the miner might die from lava or being suffocated by Gravel or Sand. The miner will try it's best to be safe. The miner can on occasion get confused and lost. It may start new tunnels and shaft to try and find where he needs to be. Use the Recall Citizen button in the Worker hut GUI to instantly recall the miner to the Miner's Hut block if it gets lost or seems to not bring anything to the Hut block's inventory.
 
 Bonus: The miner also has a chance to get lucky in finding ores when digging out cobblestone or stone.
-This is the default setting in the coniguration file. 
-
+This is the default setting in the coniguration file.

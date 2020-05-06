@@ -14,7 +14,7 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Dexterity</p>
+      <p class="traitp">Focus</p>
       <p class="traits">Strength</p>
       <p><a href="../buildings/shepherd">Shepherd's Hut</a></p>
     </div>

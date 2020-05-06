@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Dexterity</p>
-      <p class="traits">Strength</p>
+      <p class="traitp">Athletics</p>
+      <p class="traits">Stamina</p>
       <p><a href="../buildings/cowboy">Cowboy's Hut</a></p>
     </div>
   </div>

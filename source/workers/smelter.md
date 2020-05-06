@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Intelligence</p>
+      <p class="traitp">Athletics</p>
+      <p class="traits">Strength</p>
       <p><a href="../buildings/smeltery">Smeltery</a></p>
     </div>
   </div>
@@ -30,4 +30,3 @@ Click here for full informationa about the [Smeltery's Hut](../buildings/smelter
 You now officially have a Smelter! **CONGRATULATIONS!**
 
 The Smelter will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
-
