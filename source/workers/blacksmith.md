@@ -14,8 +14,8 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Endurance</p>
+      <p class="traitp">Dexterity</p>
+      <p class="traits">Strength</p>
       <p><a href="../buildings/blacksmith">Blacksmith</a></p>
     </div>
   </div>
@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Blacksmith’s Information Site.
 
-The Blacksmith is a part of your Colony's production line. The blacksmith will craft tools, swords and armor to supply workers, knights, and rangers with tools and weapons. (However, they do not craft bows or fishing poles.) The delivery man, or the player must provide the necessary supplies to make these items.
+The Blacksmith is a part of your Colony's production line. The blacksmith will craft tools, swords and armor to supply workers, knights, and rangers with tools and weapons. (However, they do not craft bows or fishing poles.) A deliveryman or the player must provide the necessary supplies to make these items.
 
 Blacksmith can learn 3x3 recipes for all tools and weapons without string or redstone, and all armour! The blacksmith will only make items when they have been taught the recipes and receive a request for a tool, armor or sword.
 
