@@ -71,7 +71,7 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | Name                       | Ingredients                         | Recipe                            |
 | -------------------------- | ----------------------------------- | --------------------------------- |
 | [Construction Tape](../../source/decoblocks/constructiontape)          | Sticks + White Wool                 | <recipe>constructiontape</recipe> |
-| [Paper Walls](../../source/decoblocks/paperwall)                | **Matching** Planks + Paper         | <recipe>paperwall</recipe>        |
+| [Paper Walls](../../source/decoblocks/paperwalls)                | **Matching** Planks + Paper         | <recipe>paperwall</recipe>        |
 | [Rack](../../source/decoblocks/rack)                       | **Any** Planks + Iron Bars          | <recipe>rack</recipe>             |
 | [Shingles](../../source/decoblocks/shingles)                   | Brick + Stick + **Matching** Planks | <recipe>shingleclay</recipe>          |
 | [Shingles Slab](../../source/decoblocks/shinglesslab)              | Brick + Stick                       | <recipe>shingleslab</recipe>      |
