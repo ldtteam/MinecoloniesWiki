@@ -92,7 +92,7 @@ Choose a worker to view more information about them:
 | [Enchanter](../workers/enchanter)        | Mana & Knowledge         |
 | [Farmer](../workers/farmer)              | Stamina & Athletics      |
 | [Fisherman](../workers/fisherman)        | Focus & Agility          |
-| [Florist](../workers)/florist)           | Dexterity & Agility      |
+| [Florist](../workers/florist)            | Dexterity & Agility      |
 | [Guard](../workers/guard)                | Adaptability & Stamina   |
 | [Healer](../workers/healer)              | Mana & Knowledge         |
 | [Knight](../workers/knight)              | Adaptability & Stamina   |
