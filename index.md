@@ -16,7 +16,7 @@ Minecolonies gives you the flexibility to create a colony as rich and unique as 
 
 The limit is your imagination!
 
-###Please note that the Wiki is always referring to the latest version of Minecolonies!
+### Please note that the Wiki is always referring to the latest version of Minecolonies!
 
 ---
 
