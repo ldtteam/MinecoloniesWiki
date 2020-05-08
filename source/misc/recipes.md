@@ -73,7 +73,7 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | [Construction Tape](../../source/decoblocks/constructiontape)          | Sticks + White Wool                 | <recipe>constructiontape</recipe> |
 | [Paper Walls](../../source/decoblocks/paperwall)                | **Matching** Planks + Paper         | <recipe>paperwall</recipe>        |
 | [Rack](../../source/decoblocks/rack)                       | **Any** Planks + Iron Bars          | <recipe>rack</recipe>             |
-| [Shingles](../../source/decoblocks/shingle)                   | Brick + Stick + **Matching** Planks | <recipe>shingle</recipe>          |
+| [Shingles](../../source/decoblocks/shingles)                   | Brick + Stick + **Matching** Planks | <recipe>shingleclay</recipe>          |
 | [Shingles Slab](../../source/decoblocks/shinglesslab)              | Brick + Stick                       | <recipe>shingleslab</recipe>      |
 | [Timber Framed Blocks](../../source/decoblocks/timberframebase)       | **Primary** Plank + **Secondary** Plank/Block + Building Tool | <recipe>timberframebase</recipe>      |
 | [Other Timber Framed Blocks](../../source/decoblocks/timberframealt) | Timber Frame                        | <recipe>timberframealt</recipe>    |
