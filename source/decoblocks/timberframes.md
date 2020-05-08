@@ -11,7 +11,7 @@ layout: default
 
 <div class="infobox box text-center">
 <p><strong>Recipe:</strong> 
-    <recipe>plaintimberframe</recipe> **Note:** Top is the outside frame, Middle is the inside.
+    <recipe>timberframeplain</recipe> **Note:** Top is the outside frame, Middle is the inside.
     <p><strong>Recipe:</strong> 
     <recipe>doublecrossed</recipe>
     <p><strong>Recipe:</strong> 
@@ -31,7 +31,7 @@ layout: default
     <p><strong>Recipe:</strong> 
     <recipe>horizontal_side_framed</recipe>
     <p><strong>Recipe:</strong> 
-    <recipe>plaintimberframealt</recipe>
+    <recipe>timberframealtoak</recipe>
 </div>
 <br>
 

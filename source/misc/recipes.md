@@ -75,6 +75,6 @@ The town hall is not listed here as it does not have a crafting recipe, this is 
 | [Rack](../../source/decoblocks/rack)                       | **Any** Planks + Iron Bars          | <recipe>rack</recipe>             |
 | [Shingles](../../source/decoblocks/shingles)                   | Brick + Stick + **Matching** Planks | <recipe>shingleclay</recipe>          |
 | [Shingles Slab](../../source/decoblocks/shingles)              | Brick + Stick                       | <recipe>shingleslab</recipe>      |
-| [Timber Framed Blocks](../../source/decoblocks/timberframebase)       | **Primary** Plank + **Secondary** Plank/Block + Building Tool | <recipe>timberframebase</recipe>      |
-| [Other Timber Framed Blocks](../../source/decoblocks/timberframealt) | Timber Frame                        | <recipe>timberframealt</recipe>    |
+| [Timber Framed Blocks](../../source/decoblocks/timberframes)       | **Primary** Plank + **Secondary** Plank/Block + Building Tool | <recipe>timberframeplain</recipe>      |
+| [Other Timber Framed Blocks](../../source/decoblocks/timberframes) | Timber Frame                        | <recipe>timberframealt</recipe>    |
 {: .table-responsive }
