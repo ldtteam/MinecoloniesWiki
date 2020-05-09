@@ -21,7 +21,7 @@ layout: default
 
 # About the Composter's Hut
 
-The Composter's Hut is where the Composter will turn extra organic materials into [compost](../../source/items/compost), which can be used by the [Farmer](../../source/worker/farmer) or [Florist](../../source/worker/florist) to fertilize food or flowers. They can also create dirt if you have the setting enabled, which the [Builder](../../source/worker/builder) can use in buildings. The Composter uses [barrels](../../source/items/barrel) to make compost or dirt.
+The Composter's Hut is where the Composter will turn organic materials into [compost](../../source/items/compost), which can be used by the [Farmer](../../source/worker/farmer) or [Florist](../../source/worker/florist) to fertilize food or flowers. They can also create dirt if you have the setting enabled, which the [Builder](../../source/worker/builder) can use in buildings. The Composter uses [barrels](../../source/items/barrel) to make compost or dirt.
 
 **Hint:** The higher the level of the Composter's Hut, the more barrels the Composter will be able to use. So:
 
