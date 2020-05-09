@@ -37,7 +37,7 @@ The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords
 
 # Blacksmith's Hut GUI
 
-When accessing the Blacksmith's Hut block by right clicking on it, you will see a GUI with different options:
+When accessing the Blacksmith's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
