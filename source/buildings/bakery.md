@@ -31,7 +31,7 @@ The Bakery is where the Baker will bake bread, cakes, cookies, and pumpkin pies.
 
 # Bakery GUI
 
-When accessing the Bakery block by right clicking on it, you will see a GUI with different options:
+When accessing the Bakery block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
