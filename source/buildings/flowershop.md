@@ -35,7 +35,7 @@ The Flower Shop is where your Florist will grow flowers for your Colony, if give
 
 # Flower Shop GUI
 
-When accessing the Flower Shop's hut block by right clicking on it, you will see a GUI with different options:
+When accessing the Flower Shop's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
