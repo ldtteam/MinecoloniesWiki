@@ -21,7 +21,7 @@ layout: default
 
 # About the Cowboy's Hut
 
-The Cowboy's Hut is where the Cowboy will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowboy's hut, as the Cowboy will not catch and bring in any cows.
+The Cowboy's Hut is where the Cowboy will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowboy's Hut, as the Cowboy will not catch and bring in any cows.
 
 **Note:** The Cowboy will only keep alive two cows per hut level, so at level 5 they will have ten cows in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and leather. So:
 
