@@ -21,7 +21,7 @@ layout: default
 
 # About the Chicken Herder's Hut
 
- The Chicken Herder's Hut is where the Chicken Herder will raise chickens, collect eggs, and butcher chickens for food. You will have to capture and bring in two chickens to the Chicken Herder's Hut, as the herder will not catch and bring in any chickens.
+ The Chicken Herder's Hut is where the Chicken Herder will raise chickens, collect eggs, and butcher chickens for food. You will have to capture and bring in two chickens to the Chicken Herder's Hut, as the Chicken Herder will not catch and bring in any chickens.
 
 **Note:** The Chicken Herder will only keep alive two chickens per hut level, so at level 5 they will have ten chickens in their holding pens to breed and butcher. This means they will be faster at producing and collecting meats, drops, and other byproducts, like eggs. So:
 
