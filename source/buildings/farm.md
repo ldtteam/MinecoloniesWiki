@@ -25,17 +25,15 @@ layout: default
 
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods as long as they have normal growth behavior. Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
 
-For the Farmer to start, you will also need to place fields. Place the Field block (it looks like a scarecrow) in the plot of farmland you want the Farmer to work on and right-click on it to access its GUI. Here you will place the crop you want for this specific field to be cultivated. 
+For the Farmer to start, you will also need to place fields. Place the Field block (it looks like a scarecrow) in the plot of farmland you want the Farmer to work on and right-click on it to access its GUI. Here you will place the crop you want this specific field to cultivate. If you decide later to change the type of crop you want cultivated in that farmland, just go into the Field's GUI and switch the crop there. 
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/gui/field.png" alt="Field">    <img src="../../assets/images/gui/fieldgui1.png" alt="Field GUI Empty">    <img src="../../assets/images/gui/fieldgui2.png" alt="Field GUI Full"></p>
 <br>
 
-**Note:** The Farmer will only till and cultivate crops that are up to 5 blocks from the field block. The farmland can be delimited by placing solid blocks (non-tillable: sand, cobblestone, wood, etc) or air blocks in the ground next to the tillable blocks. This will cause the Farmer to stop cultivating the land at this point, even if there is still tilled and/or tillable land after that solid/air block. Plan accordingly and create your plot(s) in any shape and form you want, taking into account that for each field, the Farmer will only work up to 5 blocks from the field block.
+**Note:** The Farmer will only till and cultivate crops that are up to five blocks from the field block. The farmland can be delimited by placing solid blocks (non-tillable: sand, cobblestone, wood, etc) or air blocks in the ground next to the tillable blocks. This will cause the Farmer to stop cultivating the land at this point, even if there is still tilled and/or tillable land after that solid/air block. Plan accordingly and create your plot(s) in any shape and form you want, taking into account that for each field, the Farmer will only work up to 5 blocks from the field block. Remember that for the dirt to be tillable and hold crops, it must have a water source to keep it tilled. Minecraft limits the water source to permeate up to 4 blocks from its placement.
 
-If you decide later to change the type of crop you want cultivated in that specific farm plot, just go into the Field's GUI and switch the crop there. Remember that for the dirt to be tillable and hold crops, it must have a water source to keep it tilled and crops stay planted (Minecraft limits the water source to permeate up to 4 blocks from its placement).
-
-**IMPORTANT:** The Farmer will farm up to 5 Fields, depending on the level of the Farm. The level of the Farm is the number of fields they can take care of:
+**IMPORTANT:** The Farmer will farm up to five Fields, depending on the level of the Farm. The level of the Farm is the number of Fields the Farmer can cultivate:
 
 | Farm Level | Fields |
 | :-----: |  :-----: | 
