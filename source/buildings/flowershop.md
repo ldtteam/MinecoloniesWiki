@@ -23,7 +23,7 @@ layout: default
 
 The Flower Shop is where your Florist will grow flowers for your Colony, if given Compost and an axe.
 
-**Hint:** The higher the level of the Hut, the more daily output the florist can handle. So:
+**Hint:** The higher the level of the Flower Shop, the more daily output the florist can handle. So:
 
 | Building Level | Number of Plants |
 | ----- | ----- |
