@@ -19,14 +19,14 @@ layout: default
     <recipe>shepherd</recipe>
 </div>
 
-# About the Building
+# About the Shepherd's Hut
 
-Once the building is built, you will have to capture and bring in 2 Sheep to the herder's hut. The herder will not catch and bring in any Sheep, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial Sheep.
+The Shepherd's Hut is where the Shepherd will breed and butcher cows for food and wool. You will have to capture and bring in two sheep to the Shepherd's Hut, as the Shepherd will not catch and bring in any sheep.
 
-**Note:** The Herder will only keep alive 2 Sheep per hut level, so at level 5 they will have 10 Sheep in their holding pens alive to breed and butcher. This means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
+**Note:** The Shepherd will only keep alive two sheep per hut level, so at level 5 they will have ten sheep in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and wool. So:
 
 
-| Building Level | Sheep "Housed" |
+| Building Level | Sheep Housed |
 | ----- | ----- |
 | 1 | 2 |
 | 2 | 4 |
@@ -34,11 +34,9 @@ Once the building is built, you will have to capture and bring in 2 Sheep to the
 | 4 | 8 |
 | 5 | 10 |  
 
-Now you can access the Sheep's Hut block (right click on it) and you will see a GUI with different options:  
+# Shepherd's Hut GUI
 
-# Shepherd Hut GUI
-
-Now you can access the Sheep's Hut block (right click on it) and you will see a GUI with different options:
+When accessing the Shepherd's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
