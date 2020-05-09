@@ -25,7 +25,7 @@ layout: default
 
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods as long as they have normal growth behavior. Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
 
-In order to to start, you will also need to place fields. Place the Field block in the plot of farmland you want the Farmer to work on and right-click on it to access its GUI. Here you will place the crop you want for this specific field to be cultivated. 
+For the Farmer to start, you will also need to place fields. Place the Field block (it looks like a scarecrow) in the plot of farmland you want the Farmer to work on and right-click on it to access its GUI. Here you will place the crop you want for this specific field to be cultivated. 
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/gui/field.png" alt="Field">    <img src="../../assets/images/gui/fieldgui1.png" alt="Field GUI Empty">    <img src="../../assets/images/gui/fieldgui2.png" alt="Field GUI Full"></p>
