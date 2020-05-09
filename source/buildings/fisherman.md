@@ -19,17 +19,17 @@ layout: default
     <recipe>fisherman</recipe>
 </div>
 
-# About the Building
+# About the Fisherman's Hut
 
-**Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
+The Fisherman's Hut is where the Fisherman will catch fish. The Fisherman requires a fishing rod and a body of water of a minimum of 7 x 7 x 1 blocks to be able to work, and the water must be near his hut.
 
 <p style="text-align:center;"><img src="../../assets/images/gui/pond.png" alt="Pond"></p>
 
-Once the building is built, you can think about upgrading the Fisherman's hut to expand the range at which it can fish as well as having a higher cap to the level it can reach.
+Upgrading the Fisherman's Hut will expand the range at which the Fisherman can fish, and the higher the level of the Fisherman's Hut, the more loot the Fisherman will be fishing out (instead of fish). You can also give the Fisherman an enchanted fishing rod when their hut is level 5 and reap the benefits of the treasures they will be catching for you.
 
-# Fisherman's GUI
+# Fisherman's Hut GUI
 
-Now you can access the Fisherman's Hut block (right click on it) and you will see a GUI with different options:
+When accessing the Fisherman's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -37,18 +37,18 @@ Now you can access the Fisherman's Hut block (right click on it) and you will se
     <img src="../../assets/images/gui/fishermangui.png" class="img-fluid mx-auto" alt="Fisherman GUI">
 </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by working. The 
-higher the level the faster and more efficient it will be). And the buttons:</p>
+   <br>
     <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
+      <li><strong>Fisherman's Hut 5:</strong> This tells you the building you have selected is a Fisherman's Hut with build level 5.</li>
+      <li><strong>Worker Assigned:</strong> Tells you the worker assigned to the Fisherman's Hut and their worker level. The worker levels up in time by working. The higher the level, the faster and more efficient they will be.</li>
+          <li><strong>Manage Workers:</strong> Lets you change which worker is assigned to be the Fisherman. There can only be one Fisherman at each Fisherman's Hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be hired automatically.</li>
+      <li><strong>Recall Worker:</strong> Recalls the Fisherman to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.</li>
+      <li><strong>Build Options:</strong> Lets you create a build, upgrade, reposition, or repair build order for the Fisherman's Hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li>
+      <li><strong>Delivery Priority:</strong> You can set the priority that a [deliveryman](../../source/workers/deliveryman) will deliver fishing rods and take fish and loot to the [warehouse](../../source/buildings/warehouse) (ten is the highest, one is the lowest). You can also set whether it is automatic, meaning it changes automatically, or static, meaning it stays to what you set it no matter what.</li>
+      <li><strong>List of Recipes and Teach Recipe:</strong> When clicking the list of recipes button, you see all the recipes you have taught this Fisherman's Hut and can remove them. When clicking teach recipe, it opens a 3x3 crafting grid which allows you to teach this hut recipes (not the worker). <b>Note:</b> you don't need to teach the Fisherman's Hut any recipes for the Fisherman to do their job.</li>
+      <li><strong>Inventory:</strong> Here you can access the hut block's storage, where the Fisherman takes their fishing rods and deposits their fish and loot. They will also use any [racks](../../source/decoblocks/rack) or chests in the hut, so be sure to check those as well!</li>
     </ul>
   </div>
 </div>
-
-**Hint**: You can give the Fisherman an enchanted fishing rod **_(only when the Hut is level 5)_** and reap the benefits of the treasures he/she will be catching for you. Also, the higher the level of the "Fisherman's Hut" is, the higher the level of "loot" he will be fishing out.
+<br>
   
-  <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
