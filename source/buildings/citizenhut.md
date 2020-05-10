@@ -44,7 +44,7 @@ When accessing the Citizen's Hut block by right-clicking on it, you will see a G
       <li><strong>Citizen's Hut 5:</strong> This tells you the building you have selected is a Citizen's Hut with build level 5.</li>
       <li><strong>Assign Citizens:</strong> This lets you change which citizens are assigned to this hut. If it says Assign 0 Citizens, that means you've run out of room in this hut to house citizens and will have to remove some (the button underneath their name) to add more. <b>Note: </b>this only works if you have turned the housing assignment mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be housed automatically.</li>
       <li><strong>Build Options:</strong> This lets you create a build, upgrade, reposition, or repair build order for the Citizen Hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li>
-      <li><strong>Inventory:</strong> This opens an inventory space where you can store anything you like.</li>
+      <li><strong>Inventory:</strong> This opens an inventory space where you can store anything you like, as the citizens staying in the Citizen Hut don't use it. Please note that a [Deliveryman](../../source/workers/deliveryman) <b>will</b> take things from it and carry them to the [Warehouse](../../source/buildings/warehouse), though!</li>
     </ul>
   </div>
 </div>  
