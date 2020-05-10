@@ -23,7 +23,7 @@ layout: default
 
 The Deliveryman runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. The Deliveryman will visit one worker's hut per trip, then go back to the Warehouse.
 
-**Hint:** You must build the Warehouse to at least level 1. Otherwise, the Deliveryman won't be able to do their job.
+**Note:** You must build the Warehouse to at least level 1, otherwise, the Deliveryman won't be able to do their job.
 
 The level of the Deliveryman's Hut will dictate how much materials/tools it will carry to/from Huts - Warehouse - Huts, so if you want it to carry more materials/tools, be sure to upgrade the Deliveryman's Hut. Also, the higher the level of the hut, the faster the Deliveryman will move.
 
@@ -55,7 +55,7 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
       <li><strong>Build Options:</strong> Lets you create a build, upgrade, reposition, or repair build order for the Deliveryman's Hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li>
       <li><strong>Delivery Priority:</strong> You can set the priority that a [deliveryman](../../source/workers/deliveryman) will visit this hut (ten is the highest, one is the lowest). You can also set whether it is automatic, meaning it changes automatically, or static, meaning it stays to what you set it no matter what.</li>
       <li><strong>List of Recipes and Teach Recipe:</strong> When clicking the list of recipes button, you see all the recipes you have taught this Deliveryman's Hut and can remove them. When clicking teach recipe, it opens a 3x3 crafting grid which allows you to teach this hut recipes (not the worker). <b>Note:</b> you don't need to teach the Deliveryman's Hut any recipes for the Deliveryman to do their job.</li>
-      <li><strong>Inventory:</strong> This is an inventory space where you can store anything you like (the Deliveryman doesn't use it).</li>
+      <li><strong>Inventory:</strong> This is an inventory space where you can store anything you like, as the Deliveryman doesn't use it. Please note that they <b>will</b> take things from it and carry them to the Warehouse, though!</li>
     </ul>
   </div>
 </div>
