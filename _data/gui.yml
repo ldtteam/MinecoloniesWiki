@@ -1,6 +1,8 @@
 global:
+  - button: Hut 5
+  - content: Tells you the type of hut and the build level of the building you have selected.
   - button: Worker Assigned
-    content: Tells you the worker assigned to the this building and their worker level. The worker levels up in time by working. The higher their level, the faster and more efficient they will be.
+  - content: Tells you the worker assigned to the this building and their worker level. The worker levels up in time by working. The higher their level, the faster and more efficient they will be.
   - button: Manage Workers
     content: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be hired automatically.
   - button: Recall Worker
