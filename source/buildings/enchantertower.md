@@ -43,7 +43,6 @@ After the building is built, access the Enchanter's Hut block (right clicking on
     <img src="../../assets/images/gui/enchantergui1.png" class="img-fluid mx-auto" alt="Enchanter's GUI Page 1">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
