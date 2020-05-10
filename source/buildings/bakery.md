@@ -40,10 +40,9 @@ When accessing the Bakery block by right-clicking on it, you will see a GUI with
   <div class="col-sm-12 col-md">
     <br>
     <ul>
-{% for item in site.data.gui.global %}
-{{ item.button }}: {{ item.content }}
-
-{% endfor %}
+      {% for item in site.data.gui.global %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
     </ul>
   </div>
 </div>
