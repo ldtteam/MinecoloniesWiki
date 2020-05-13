@@ -12,6 +12,8 @@ layout: default
 <p><strong>Recipe:</strong> 
     <recipe>timberframeplain</recipe> **Note:** Top is the outside frame, Middle is the inside.
     <p><strong>Recipe:</strong> 
+    <recipe>timberframealtoak</recipe>
+    <p><strong>Recipe:</strong> 
     <recipe>timberframealtacacia</recipe>
     <p><strong>Recipe:</strong> 
     <recipe>timberframealtbirch</recipe>
@@ -23,8 +25,6 @@ layout: default
     <recipe>timberframealtdarkoak</recipe>
     <p><strong>Recipe:</strong> 
     <recipe>timberframealtcactus</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtoak</recipe>
 </div>
 <br>
 
