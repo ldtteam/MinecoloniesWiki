@@ -1,5 +1,5 @@
 global:
-  - button: Hut 5
+  - button: Hut Level
   - content: Tells you the type of hut and the build level of the building you have selected.
   - button: Worker Assigned
   - content: Tells you the worker assigned to the this building and their worker level. The worker levels up in time by working. The higher their level, the faster and more efficient they will be.
