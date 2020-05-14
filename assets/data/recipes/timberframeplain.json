@@ -9,7 +9,7 @@
       "secondRow":
       {
         "firstItem": "",
-        "secondItem": ["minecraft/oak_planks","minecraft/acacia_planks", "minecraft/birch_planks","minecraft/jungle_planks","minecraft/spruce_planks","minecraft/dark_oak_planks", "minecolonies/cactusplank"],
+        "secondItem": ["minecraft/paper","minecraft/paper", "minecraft/paper","minecraft/paper","minecraft/paper","minecraft/paper", "minecolonies/paper"],
         "thirdItem": ""
       },
       "thirdRow":
@@ -18,6 +18,6 @@
         "secondItem": "minecolonies/sceptergold",
         "thirdItem": ""
       },
-      "product": ["minecolonies/blocktimberframe_oak_frame","minecolonies/blocktimberframe_acacia_frame","minecolonies/blocktimberframe_birch_frame","minecolonies/blocktimberframe_jungle_frame","minecolonies/blocktimberframe_spruce_frame","minecolonies/blocktimberframe_dark_oak_frame","minecolonies/blocktimberframe_spruce_frame"]
+      "product": ["minecolonies/blocktimberframe_oak_plain","minecolonies/blocktimberframe_acacia_plain","minecolonies/blocktimberframe_birch_plain","minecolonies/blocktimberframe_jungle_plain","minecolonies/blocktimberframe_spruce_plain","minecolonies/blocktimberframe_darkoak_plain","minecolonies/blocktimberframe_spruce_plain"]
     }
   ]}
