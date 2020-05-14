@@ -2,9 +2,9 @@
   {
     "firstRow":
     {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
+      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
+      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
+      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"]
     },
     "secondRow":
     {
@@ -14,11 +14,11 @@
     },
     "thirdRow":
     {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
+      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
+      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
+      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"]
     },
-    "product": ["minecolonies/oakpaperwall","minecolonies/sprucepaperwall","minecolonies/birchpaperwall","minecolonies/acaciapaperwall"],
+    "product": ["minecolonies/oakpaperwall","minecolonies/sprucepaperwall","minecolonies/birchpaperwall", "minecolonies/junglepaperwall"],
     "amount": "8"
   }
 ]}

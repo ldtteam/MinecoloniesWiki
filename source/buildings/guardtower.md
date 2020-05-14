@@ -29,6 +29,8 @@ Now you will have to issue the builder the “Build” assignment so it can buil
 
 **Hint:** The level of the Guard’s Tower will dictate how far it can patrol, so if you want a longer patrol range, be sure to upgrade the Guard’s Tower.
 
+The Guard’s Tower also offers a home to the assigned citizens so you don't need to supply a bed in a [Citizens Hut](../../source/buildings/citizenhut) for them.
+
 Now you can access the Guard's Hut block (right click on it) and you will see a GUI with different options:
 
 # Guard Tower GUI

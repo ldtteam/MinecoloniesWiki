@@ -1,0 +1,23 @@
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "",
+      "secondItem": ["minecolonies/blocktimberframe_acacia_plain","minecolonies/blocktimberframe_acacia_doublecrossed","minecolonies/blocktimberframe_acacia_framed","minecolonies/blocktimberframe_acacia_sideframed","minecolonies/blocktimberframe_acacia_upgateframed","minecolonies/blocktimberframe_acacia_downgateframed","minecolonies/blocktimberframe_acacia_lrcrossed","minecolonies/blocktimberframe_acacia_rlcrossed","minecolonies/blocktimberframe_acacia_plainhorizontal","minecolonies/blocktimberframe_acacia_sideframedhorizontal"],
+      "thirdItem": ""
+    },
+    "thirdRow":
+    {
+      "firstItem": "",
+      "secondItem": "",
+      "thirdItem": ""
+    },
+    "product": ["minecolonies/blocktimberframe_acacia_doublecrossed","minecolonies/blocktimberframe_acacia_framed","minecolonies/blocktimberframe_acacia_sideframed","minecolonies/blocktimberframe_acacia_upgateframed","minecolonies/blocktimberframe_acacia_downgateframed","minecolonies/blocktimberframe_acacia_lrcrossed","minecolonies/blocktimberframe_acacia_rlcrossed","minecolonies/blocktimberframe_acacia_plainhorizontal","minecolonies/blocktimberframe_acacia_sideframedhorizontal","minecolonies/blocktimberframe_acacia_plain"]
+  }
+]}

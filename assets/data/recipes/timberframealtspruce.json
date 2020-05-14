@@ -1,0 +1,23 @@
+{"recipes":[
+    {
+      "firstRow":
+      {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow":
+      {
+        "firstItem": "",
+        "secondItem": ["minecolonies/blocktimberframe_spruce_plain","minecolonies/blocktimberframe_spruce_doublecrossed","minecolonies/blocktimberframe_spruce_framed","minecolonies/blocktimberframe_spruce_sideframed","minecolonies/blocktimberframe_spruce_upgateframed","minecolonies/blocktimberframe_spruce_downgateframed","minecolonies/blocktimberframe_spruce_lrcrossed","minecolonies/blocktimberframe_spruce_rlcrossed","minecolonies/blocktimberframe_spruce_plainhorizontal","minecolonies/blocktimberframe_spruce_sideframedhorizontal"],
+        "thirdItem": ""
+      },
+      "thirdRow":
+      {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "product": ["minecolonies/blocktimberframe_spruce_doublecrossed","minecolonies/blocktimberframe_spruce_framed","minecolonies/blocktimberframe_spruce_sideframed","minecolonies/blocktimberframe_spruce_upgateframed","minecolonies/blocktimberframe_spruce_downgateframed","minecolonies/blocktimberframe_spruce_lrcrossed","minecolonies/blocktimberframe_spruce_rlcrossed","minecolonies/blocktimberframe_spruce_plainhorizontal","minecolonies/blocktimberframe_spruce_sideframedhorizontal","minecolonies/blocktimberframe_spruce_plain"]
+    }
+  ]}
