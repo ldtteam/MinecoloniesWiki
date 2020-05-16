@@ -90,7 +90,9 @@ subnav:
       - page: Guard
         url: source/workers/guard
       - page: Healer
-        url: source/workers/healer
+        url: source/workers/healer      
+      - page: Knight
+        url: source/workers/knight
       - page: Library Student
         url: source/workers/librarystudent
       - page: Lumberjack
