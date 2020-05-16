@@ -59,16 +59,11 @@ When accessing the Farm block by right-clicking on it, you will see a GUI with d
     <img src="../../assets/images/gui/farmgui1.png" class="img-fluid mx-auto" alt="Farmer GUI">
   </div>
   <div class="col-sm-12 col-md">
-   <br>
+    <br>
     <ul>
-      <li><strong>Farm 5:</strong> This tells you the building you have selected is a Farm with build level 5.</li>
-      <li><strong>Worker Assigned:</strong> Tells you the worker assigned to the Farm and their worker level. The worker levels up in time by working. The higher the level, the faster and more efficient they will be.</li>
-          <li><strong>Manage Workers:</strong> Lets you change which worker is assigned to be the Farmer. There can only be one Farmer at each Farm. <b>Note:</b> this only works if you have turned the worker hiring mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be hired automatically.</li>
-      <li><strong>Recall Worker:</strong> Recalls the Farmer to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.</li>
-      <li><strong>Build Options:</strong> Lets you create a build, upgrade, reposition, or repair build order for the Farm. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li>
-      <li><strong>Delivery Priority:</strong> You can set the priority that a [deliveryman](../../source/workers/deliveryman) will visit this hut (ten is the highest, one is the lowest). You can also set whether it is automatic, meaning it changes automatically, or static, meaning it stays to what you set it no matter what.</li>
-      <li><strong>List of Recipes and Teach Recipe:</strong> When clicking the list of recipes button, you see all the recipes you have taught this Farm and can remove them. When clicking teach recipe, it opens a 3x3 crafting grid which allows you to teach this hut recipes (not the worker). <b>Note:</b> you don't need to teach the Farm any recipes for the Farmer to do their job.</li>
-      <li><strong>Inventory:</strong> Here you can access the hut block's storage, where the Farmer takes their materials and deposits their crops. They will also use any [racks](../../source/decoblocks/rack) or chests in the hut, so be sure to check those as well!</li>
+      {% for item in site.data.gui.global %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
     </ul>
   </div>
 </div>
