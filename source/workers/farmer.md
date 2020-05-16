@@ -25,7 +25,7 @@ Welcome to the Farmer's Information Site.
 
 The Farmer is the backbone of your food production. The farmer will cultivate the crops you assign it through the "Field" block (Scarecrow).
 
-Click here for full information about the [Farmer's Hut](../buildings/farm) block, the [Field](../buildings/farm) block and using your [Buiding Tool](../items/buildingtool). Once the hut is placed, the farmer will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for farmer if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Click here for full information about the [Farmer's Hut](../buildings/farm&field) block, the [Field](../buildings/farm&field) block and using your [Buiding Tool](../items/buildingtool). Once the hut is placed, the farmer will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for farmer if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
 You now officially have a "Farmer!" **CONGRATULATIONS!**
 
