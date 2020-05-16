@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Stamina</p>
       <p class="traits">Athletics</p>
-      <p><a href="../buildings/farm">Farm</a></p>
+      <p><a href="../buildings/farm&field">Farm</a></p>
     </div>
   </div>
 </div>
