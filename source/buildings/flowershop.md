@@ -43,7 +43,7 @@ When accessing the Flower Shop's hut block by right-clicking on it, you will see
     <img src="../../assets/images/gui/flowershopgui1.png" class="img-fluid mx-auto" alt="Crusher GUI">
   </div>
   <div class="col-sm-12 col-md">
-  <br>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
