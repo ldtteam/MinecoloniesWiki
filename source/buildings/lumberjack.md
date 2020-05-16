@@ -2,10 +2,10 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Lumberjack
+# Lumberjack's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/lumberjack.png" alt="Fisherman's Hut" />
+    <img src="../../assets/images/buildings/lumberjack.png" alt="Lumberjack's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -19,24 +19,22 @@ layout: default
     <recipe>lumberjack</recipe>
 </div>
 
-# About the Building
+# About the Lumberjack's Hut
 
-Once the building is built, you can hire a lumberjack to begin cutting down trees. The lumberjack will cut down any tree in an approximate 50 block area that is not in a hut schematic or doesn't have cobblestone placed beneath it.
-
-**Note:** Once the Lumberjack block is placed you can go to page 2 of the hut GUI and “define the sapling(s)” you want the Lumberjack to work with. All recognized saplings (even modded items, if coded correctly) will be listed there.
+The Lumberjack's Hut is where the Lumberjack will go in between chopping down trees. The lumberjack will cut down any tree in an approximate 50 block area from their hut that is not in a hut schematic and doesn't have cobblestone placed beneath it.
 
 <br>
 
-## Lumberjack Hut GUI
+## Lumberjack's Hut GUI
 
-Now you can access the Lumberjack's Hut block (right click on it) and you will see a GUI with different options:
+When accessing the Lumberjack's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/lumberjackgui1.png" class="img-fluid mx-auto" alt="Sawmill GUI">
+    <img src="../../assets/images/gui/lumberjackgui1.png" class="img-fluid mx-auto" alt="Lumberjack's Hut GUI">
   </div>
   <div class="col-sm-12 col-md"><br>
-    <p>The Worker assigned and their Level. (The worker levels up in time by doing their work. The higher the level the faster and more efficient they will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -44,8 +42,9 @@ Now you can access the Lumberjack's Hut block (right click on it) and you will s
     </ul>
   </div>
 </div>  
+<br> <br>
 
-This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplings it can work with. Here you can turn *ON* or *OFF* which type of trees the Lumberjack will chop down and replant. You can then have 1 lumberjack for 2 types of trees (for example). And the buttons:
+This is page two of the Lumberjack's Hut GUI. It shows a list of recognized saplings the Lumberjack can work with, even modded ones (if coded correctly). Here you can turn on or off which type of trees the Lumberjack will chop down. (The black box at the top is to search for saplings.)
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -53,13 +52,12 @@ This is “page 2” of the Lumberjack GUI. It shows a list of recognized saplin
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Tasklist</strong> Where you can individually select the saplings (tree types) that you want the Lumberjack to work with.</li><br>
-      <li><strong>Toggle all: </strong>A button so you can just turn <i>ALL</i> saplings (tree types) "On" or "Off" for easier management.</li>
+      <li><strong>Tasklist:</strong> Where you can select the saplings that you want the Lumberjack to work with. Click on a sapling to turn it on or off.</li><br>
     </ul>
   </div>
 </div>
 <br>
-This is “page 3” of the Lumberjack GUI. 
+This is page three of the Lumberjack's Hut GUI. 
 <br><br>
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -67,9 +65,9 @@ This is “page 3” of the Lumberjack GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Replant:</strong> Where you can select if you want the lumberjack to replant trees that are chopped down.</li><br>
-      <li><strong>Restiction: </strong>...........</li><br>
-      <li><strong>give tool: </strong>This will give the player the "define area" tool to select a specific area for the lumberjack to work.</li>
+      <li><strong>Replant:</strong> Where you can select if you want the lumberjack to replant trees that are chopped down. They will only do this if they have the enough saplings.</li><br>
+      <li><strong>Restriction:</strong> This lets you turn on or off if you want the Lumberjack to be restricted to a certain area when chopping trees. To choose the area, use the Give Tool button.</li><br>
+      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the lumberjack to work.</li>
     </ul>
   </div>
 </div>
