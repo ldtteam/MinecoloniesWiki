@@ -19,22 +19,22 @@ layout: default
     <recipe>mine</recipe>
 </div>
 
-# About the Building
+# About the Mine
 
-Once the Mine is built, you can hire a miner. 
+The Mine is where the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 
-**Hint:** The shaft the miner creates downwards will go to a specific depth depending on the level of the Mine's Hut. So if you want it to go deeper and get to the good ores, you will have to upgrade the Hut. Level 5 hut will get to Bedrock (if you placed it at Y=64 or above).
+**Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine. So if you want them to go deeper and get to the good ores, you will have to upgrade the Mine.
 
 ## Mine GUI
 
-When accessing the Mine's Hut block (right clicking on it), you will see a GUI with different options:  
+When accessing the Mine's hut block by right-clicking on it, you will see a GUI with different options:  
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/minegui1.png" class="img-fluid mx-auto" alt="Miner GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -43,7 +43,7 @@ When accessing the Mine's Hut block (right clicking on it), you will see a GUI w
   </div>
 </div>  
 
-By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:  
+Page two of the Mine's GUI:  
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -51,13 +51,9 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Mine Level:</strong> The <i>Node</i> refers to the platorms he is placing every 3 blocks down. Here you can assign what "Node" of the mine the miner should be branching out and working in, creating his mineshafts.</li><br>
-      <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
+      <li><strong>Levels:</strong> The level refers to the platforms the Miner will place every 3 blocks down. Here you can assign what level of the Mine the Miner will create their mineshafts (nodes). If a level has a red number next to it, that means the Miner is currently mining that level.</li><br>
     </ul>
   </div>
 </div>  
   
   <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
