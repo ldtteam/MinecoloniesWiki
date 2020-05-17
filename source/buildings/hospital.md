@@ -19,11 +19,11 @@ layout: default
     <recipe>hospital</recipe>
 </div>
 
-# About the Building
+# About the Hospital
 
-The Hospital will be where injured or ill citizens go when the need healing.  
+The Hospital is where injured or ill citizens go when they need healing. The Healer heals them with various items.
 
-The higher the level of the Hut the more people the Hospital can handle. So:
+The higher the level of the Hospital, the more people it can heal at a time. So:
 
 | Building Level | Number of Beds |
 | ----- | ----- |
@@ -35,7 +35,7 @@ The higher the level of the Hut the more people the Hospital can handle. So:
 
 # Hospital's Hut GUI
 
-After the building is built, access the Hospital's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Hospital's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -43,7 +43,7 @@ After the building is built, access the Hospital's Hut block (right clicking on 
     <img src="../../assets/images/gui/hospitalgui.png" class="img-fluid mx-auto" alt="Hospital's GUI Page">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
