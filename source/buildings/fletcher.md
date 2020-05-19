@@ -23,6 +23,16 @@ layout: default
 
 The Fletcher Hut is where the Fletcher will craft items that use string or wool, such as bows, fishing poles and paintings. 
 
+**Hint:** The number of recipes you can teach the Fletcher doubles per building level. So:
+
+
+| Fletcher Level | Number of Recipes |
+| :-----: | :-----: |
+| 1 | 20 | 
+| 2 | 40 |
+| 3 | 80 |
+| 4 | 160 | 
+| 5 | 320 | 
 
 <br>
 
