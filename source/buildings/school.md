@@ -14,10 +14,6 @@ layout: default
         <div class="col">
         <p><a href="../workers/teacher">Teacher</a></p>
         </div>
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
         <div class="col">
         <p><a href="../workers/pupil">Pupil</a></p>
         </div>
