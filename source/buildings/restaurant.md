@@ -19,16 +19,13 @@ layout: default
     <recipe>restaurant</recipe>
 </div>
 
-# About the Building
+# About the Restaurant
 
-Once the building is built, Cook will start making steak, pork chops, baked potatoes, cooked fish and more right away.
+The Restaurant is where the Cook will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the Restaurant and the Cook will give them some food.
 
-**Hint:** Once the build is done, you should think about upgrading the Restaurant so that the worker can make more steak, pork chops, baked potatoes, cooked fish, etc at a faster pace.
+# Restaurant GUI
 
-
-# Restaurant Hut GUI
-
-When accessing the Restaurant's Hut block (right clicking on it) you will see a GUI with different options:
+When accessing the Restaurant's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -36,7 +33,7 @@ When accessing the Restaurant's Hut block (right clicking on it) you will see a 
     <img src="../../assets/images/gui/restaurantgui1.png" class="img-fluid mx-auto" alt="Restaurant GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by working. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -44,17 +41,17 @@ When accessing the Restaurant's Hut block (right clicking on it) you will see a 
     </ul>
   </div>
 </div>
+<br> <br>
+
+This is page two of the Restaurant GUI.
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/restaurantgui2.png" class="img-fluid mx-auto" alt="Restaurant GUI">
   </div>
   <div class="col-sm-12 col-md">
-      Page 2
-      <ul><strong> Fuel: </strong> Listed are items that can be used by the cook as fuel in the furnaces. Simply turn on any that you want your cook to use, and the deliveryman will deliver those items to the cook when they need fuel.
+      <ul>
+      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the Deliveryman will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)
       </ul>
     </div>  
-  
   <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-

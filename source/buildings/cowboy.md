@@ -19,14 +19,14 @@ layout: default
     <recipe>cowboy</recipe>
 </div>
 
-# About the Building
+# About the Cowboy's Hut
 
-The Cowboy Hut is where the Cowboy will raise, breed and butcher cows, for food and leather. You will have to capture and bring in 2 Cows to the herder's hut. The herder will not catch and bring in any Cows.
+The Cowboy's Hut is where the Cowboy will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowboy's Hut, as the Cowboy will not catch and bring in any cows.
 
-**Note:** The Herder will only keep alive 2 Cows per hut level, so at level 5 they will have 10 Cows in their holding pens alive to breed and butcher. This means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
+**Note:** The Cowboy will only keep alive two cows per hut level, so at level 5 they will have ten cows in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and leather. So:
 
 
-| Building Level | Cows "Housed" |
+| Building Level | Cows Housed |
 | ----- | ----- |
 | 1 | 2 |
 | 2 | 4 |
@@ -35,9 +35,9 @@ The Cowboy Hut is where the Cowboy will raise, breed and butcher cows, for food 
 | 5 | 10 |  
 
 
-# Cowboy Hut GUI
+# Cowboy's Hut GUI
 
-After the building is built, you can access the Cowboy's Hut block (right click on it) and you will see a GUI with different options:
+When accessing the Cowboy's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -45,8 +45,8 @@ After the building is built, you can access the Cowboy's Hut block (right click 
     <img src="../../assets/images/gui/cowboygui1.png" class="img-fluid mx-auto" alt="Herder GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
-    <ul><br>
+    <br>
+    <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
@@ -55,8 +55,6 @@ After the building is built, you can access the Cowboy's Hut block (right click 
 </div>
 <br>
 
-The **Cowboy** has a pg.2 in the Hut GUI. With an option:
-
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -64,17 +62,11 @@ The **Cowboy** has a pg.2 in the Hut GUI. With an option:
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p>This is "page 2" of the GUI. It shows one <br>buttons:</p>
+    <p>This is page two of the GUI. It shows one <br>button:</p>
     <ul>
-      <li><b>Collecting Milk:</b> By default. In this mode you will have to provide the herder as many empty buckets as you like and in return he will milk the cows and give you back buckets of milk along with the meat and drops.</li>
-      <br>
-      <li><b>Not Collecting Milk::</b> In this mode, the Herder will not be asking or waiting for buckets, it will jsut breed and butcher the cows and will not collect milk.</li>
+      <li><b>Collecting Milk:</b> On by default. In this mode you provide the Cowboy with as many empty buckets as you like and in return he will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowboy will only breed and butcher the cows, not milk them.</li>
     </ul>
   </div>
 </div>  
   
   <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
-

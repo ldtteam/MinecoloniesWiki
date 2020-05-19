@@ -19,13 +19,13 @@ layout: default
     <recipe>library</recipe>
 </div>
 
-# About the Building
+# About the Library
 
-The Library is the *ONLY* way for you to raise your Citizen's Skills. When a Citizen Spawns, it will spawn with random skills, but the level of the skills also depend on the [happiness](../systems/happiness) level of the Town. So if the happiness level is low then the new citizens will spawn with low skill stats. In any case, if your citizen's have low skill stats, then it's time to get your citizens educated! For that purpose we have the Library. After you have crafted the Library block, use your [Building Tool](../items/buildingtool) to place the building.
+The Library is the only way for you to raise your citizens' skills. If your citizens have low-level stats, then it's time to get your citizens educated! For that purpose we have the Library. A citizen will randomly level up their skills as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
 
-You can aasign Citizens to the library from it's GUI, but only 2 citizens can be assigned per Library level. So we have: 
+Two citizens can study at a time per Library level. So: 
 
-| Building Level | Citizens "Educated" |
+| Building Level | Citizens Educated   |
 | -------------- | ------------------- |
 | 1              | 2                   |
 | 2              | 4                   |
@@ -33,21 +33,20 @@ You can aasign Citizens to the library from it's GUI, but only 2 citizens can be
 | 4              | 8                   |
 | 5              | 10                  |
 
+**Hint:** Paper helps Library Students increase their skills faster.
+
 <br>
 
-**Note:** The Citizen will be *RANDOMLY* leveling up their skills as long as it's assigned to the Library. Once you are satisfied with the level of skills it has reached, you have to *FIRE* it from the Library so it can be unemployed again and you can now *HIRE* it in any other worker hut, guard, etc. Awesome, right?
+## Library GUI
 
-
-## Library Hut GUI
-
-When accessing the Library's Hut block (right clicking on it) you will see a GUI with different options:
+When accessing the Library's hut block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/librarygui.png" class="img-fluid mx-auto" alt="Library GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p> This is the GUI for the Library's Hut. It shows the build "level" of the Hut. And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -55,20 +54,3 @@ When accessing the Library's Hut block (right clicking on it) you will see a GUI
     </ul>
   </div>
 </div>  
-
-**Note:** The unemployed citizens will be the only ones available to *HIRE* in the Library. You will only be able to see available citizens to hire if there is room in the Library (according to it's level).  
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/libraryhires.png" class="img-fluid mx-auto" alt="Library Hired">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br><br>
-    <p> So for example, if you have a Library level 1, you can only hire 2 citizens. If it already has 2 citizens assigned, it will only show you those two citizens currently assigned, with the "fire" button and will not list anymore to hire, until there is space availabe.</p>
-  </div>
-</div>  
-
-**Hint:** As soon as a Citizen is assigned to the Library, you will be able to help it level up faster by giving it *Paper*. Click on a Citizen assigned to the Library, then Click on the *Requests* button and you will be able to give it paper to help level it up faster.  
-
-
-
