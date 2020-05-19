@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Crusher
+# Crusher's Hut
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/crusher.png" alt="Crusher" />
@@ -19,9 +19,9 @@ layout: default
     <recipe>crusher</recipe>
 </div>
 
-# About the Building
+# About the Crusher's Hut
 
-The Crusher Hut is where the Crusher will take items and "crush" them into other blocks according to the configuration but the defaults are: 
+The Crusher's Hut is where the Crusher will take items and crush them into other blocks. The defaults are: 
 
 | Starting Item | Created Item | Ratio |
 | ----- | ----- | ----- |
@@ -29,7 +29,7 @@ The Crusher Hut is where the Crusher will take items and "crush" them into other
 | Gravel        | Sand         | 2:1   |
 | Sand          | Clay         | 2:1   |
 
-The higher the level of the Hut the more daily output the crusher can handle. So:
+The higher the level of the Crusher's Hut, the more daily output the Crusher can handle. So:
 
 | Building Level | Daily Max |
 | ----- | ----- |
@@ -39,9 +39,9 @@ The higher the level of the Hut the more daily output the crusher can handle. So
 | 4 | 256 |
 | 5 | 999 |
 
-# Crusher Hut GUI
+# Crusher's Hut GUI
 
-After the building is built, access the Crusher's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Crusher's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -49,7 +49,7 @@ After the building is built, access the Crusher's Hut block (right clicking on i
     <img src="../../assets/images/gui/crushergui1.png" class="img-fluid mx-auto" alt="Crusher GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -57,7 +57,9 @@ After the building is built, access the Crusher's Hut block (right clicking on i
     </ul>
   </div>
 </div>
-On page two of the GUI, you will see what you want the Crusher to Crush and how many per day. (See the above lists). Be sure to click save at the bottom to save any changes made.
+
+On page two of the GUI, you can set what you want the Crusher to crush and how many blocks per day. (See the above lists). Be sure to click save at the bottom after you make changes.
+
 <br>
 <img src="../../assets/images/gui/crushergui2.png" alt="Crusher GUI Page 2" />
 

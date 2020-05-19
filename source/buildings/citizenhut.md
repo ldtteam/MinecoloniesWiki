@@ -2,28 +2,21 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Citizen Hut
+# Citizen's Hut
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/citizen.png" alt="Citizen Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-    </div>
-    <hr />
     <recipe>citizen</recipe>
 </div>
 
-# About the Building
+# About the Citizen's Hut
 
-The Citizen Hut is the *ONLY* way for you to get more Citizen's for your Town. 
+The Citizen's Hut is a house for your citizens. They will go to the Citizen's Hut they are assigned to at night to sleep. It's also the only way to get more citizens for your colony.
 
-The building will virtually house your Citizens. Each level of the Citizen Hut will "house" 1 Citizen. So: 
+Each level of the Citizen's Hut will house one citizen. So: 
 
 
-| Building Level | Citizens "Housed" |
+| Building Level | Citizens Housed |
 | ----- | ----- |
 | 1 | 1 |
 | 2 | 2 |
@@ -33,22 +26,12 @@ The building will virtually house your Citizens. Each level of the Citizen Hut w
 
 <br>
 
-**Note:** For additional Citizens to spawn, you first have to have enough space in your Citizen Hut(s) to "house" your first 4 Citizens.
-
-- **For example:** 
-<p>1 Citizen Hut level 4 = 4 Citizens... or<br>
-2 Citizen Huts level 2 = 4 Citizens... or<br>
-1 Citizen Hut level 1 and 1 Citizen Hut level 3 = 4 Citizens... or even<br>
-4 Citizen Huts all level 1 = 4 Citizens.</p>
-
-You can build/upgrade as you like, as long as the total building level equals 4. That will "house" your initial 4 Citizens, in any combination you want. Awesome, right?
-
-After you have created enough space for your 4 initial Citizens, you have two options in order for your colony to grow. You either need to have at least one hut at level 2 that houses a male and a female citizen. This will allow a child to be born in the colony when there is free bed. Or, build or upgrade a citizen hut and go to the [Townhall](../../source/buildings/townhall) and use the **Recruitment** option to "hire" a new citizen who will show up immediately.  
+For additional citizens to spawn, you first have to have enough space in your Citizen's Hut(s) to house your first four citizens. After you have created enough space for your initial four citizens, you have two options for your colony to grow. The first way is to have at least one Citizen's Hut at least level 2 that houses a male and a female citizen, which will allow a child to be born in the colony when there is room. You can also make space for a new citizen, go to the [Town Hall](../../source/buildings/townhall), and then use the Recruitment option to hire a new citizen who will show up immediately.  
 <br>
 
-# Citizen Hut GUI
+# Citizen's Hut GUI
 
-When accessing the Citizen's Hut block (right clicking on it) you will see a GUI with different options:
+When accessing the Citizen's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -57,14 +40,12 @@ When accessing the Citizen's Hut block (right clicking on it) you will see a GUI
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p> This is the GUI for the Citizen's Hut. It shows the build "level" of the Hut. And the buttons:</p>
     <ul>
-      <li><strong>Build/Upgrade Building.- </strong>to create the build/upgrade work order for this building.</li>
-      <li><strong>Repair Building.- </strong> So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</li>
-      <li><strong>Inventory.- </strong>This is just an Inventory space where you can store anything you like. Here you can access the buildings storage.</li>
+      {% for item in site.data.gui.citizen %}
+        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+      {% endfor %}
     </ul>
   </div>
 </div>  
   <br>
   
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  

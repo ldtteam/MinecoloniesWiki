@@ -19,14 +19,14 @@ layout: default
     <recipe>swineherder</recipe>
 </div>
 
-# About the Building
+# About the Swine Herder's Hut
 
-Once the building is built, you will have to capture and bring in 2 Pigs to the herder's hut. The herder will not catch and bring in any Pigs, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial Pigs.
+The Swine Herder's Hut is where the Swine Herder will breed and butcher pigs for food. You will have to capture and bring in two pigs to the Swine Herder's Hut, as the Swine Herder will not catch and bring in any pigs.
 
-**Note:** The Herder will only keep alive 2 Pigs per hut level, so at level 5 they will have 10 Pigs in their holding pens alive to breed and butcher. This means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
+**Note:** The Swine Herder will only keep alive two pigs per hut level, so at level 5 they will have ten pigs in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat. So:
 
 
-| Building Level | Pigs "Housed" |
+| Building Level | Pigs Housed |
 | ----- | ----- |
 | 1 | 2 |
 | 2 | 4 |
@@ -36,25 +36,21 @@ Once the building is built, you will have to capture and bring in 2 Pigs to the 
 
   
 
-# Swine Herder Hut GUI
+# Swine Herder's Hut GUI
 
-Now you can access the Swine Herder's Hut block (right click on it) and you will see a GUI with different options:
+When accessing the Swine Herder's Hut block by right-clicking on it,  you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/swineherdergui.png" class="img-fluid mx-auto" alt="Herder GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
-    <ul><br>
+     <br>
+     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
     </ul>
   </div>
-</div>  
-  
+</div>
   <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-

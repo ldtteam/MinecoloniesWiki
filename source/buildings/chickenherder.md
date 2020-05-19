@@ -19,14 +19,14 @@ layout: default
     <recipe>chickenherder</recipe>
 </div>
 
-# About the Building
+# About the Chicken Herder's Hut
 
- The ChickenHerder Hut is where the chickenherder will raise chickens, collect eggs, and butcher chickens for food. You will have to capture and bring in 2 Chickens to the herder's hut. The herder will not catch and bring in any Chickens.
+ The Chicken Herder's Hut is where the Chicken Herder will raise chickens, collect eggs, and butcher chickens for food. You will have to capture and bring in two chickens to the Chicken Herder's Hut, as the Chicken Herder will not catch and bring in any chickens.
 
-**Note:** The Herder will only keep alive 2 Chickens per hut level, so at level 5 they will have 10 Chickens in their holding pens alive to breed and butcher. This means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
+**Note:** The Chicken Herder will only keep alive two chickens per hut level, so at level 5 they will have ten chickens in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat, drops, and other byproducts, like eggs. So:
 
 
-| Building Level | Chickens "Housed" |
+| Building Level | Chickens Housed |
 | ----- | ----- |
 | 1 | 2 |
 | 2 | 4 |
@@ -35,9 +35,9 @@ layout: default
 | 5 | 10 |  
 
 
-# ChickenHerder's Hut GUI
+# Chicken Herder's Hut GUI
 
-Now you can access the Chicken's Hut block (right click on it) and you will see a GUI with different options:
+When accessing the Chicken Herder's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -45,8 +45,8 @@ Now you can access the Chicken's Hut block (right click on it) and you will see 
     <img src="../../assets/images/gui/chickenherdergui.png" class="img-fluid mx-auto" alt="Herder GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient they will be). And the buttons:</p>
-    <ul><br>
+    <br>
+    <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
@@ -54,5 +54,3 @@ Now you can access the Chicken's Hut block (right click on it) and you will see 
   </div>
 </div>  
   <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
