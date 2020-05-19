@@ -21,9 +21,19 @@ layout: default
 
 # About the Dyer
 
-The Dyer Hut is where the Dyer will craft dyes for use by himself or other workers.
+The Dyer Hut is where the Dyer will craft dyes and dyes other items except for concrete. The Dyer automatically knows how to make green dye from cactus, but must be taught the other dye recipes and dyed items.
 
+**Hint:** The number of recipes you can teach the Dyer doubles per building level. So:
 
+<br>
+
+| Dyer Level | Number of Recipes |
+| :-----: | :-----: |
+| 1 | 20 | 
+| 2 | 40 |
+| 3 | 80 |
+| 4 | 160 | 
+| 5 | 320 | 
 <br>
 
 # Dyer GUI
