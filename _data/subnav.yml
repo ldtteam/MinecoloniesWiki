@@ -148,7 +148,7 @@ subnav:
       - page: Enchanter's Tower
         url: source/buildings/enchantertower
       - page: Farm & Field
-        url: source/buildings/farm
+        url: source/buildings/farm&field
       - page: Fisherman's Hut
         url: source/buildings/fisherman
       - page: Flower Shop
