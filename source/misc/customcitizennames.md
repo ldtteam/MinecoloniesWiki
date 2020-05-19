@@ -43,5 +43,5 @@ These are the links we provide you for making your life a little bit easier:
 
 
 <br>
-**Don't forget it:** The file must have the name _minecolonies-server.toml_.
+**Don't forget:** The file must have the name _minecolonies-server.toml_.
         
