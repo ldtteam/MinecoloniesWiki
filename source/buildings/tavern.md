@@ -22,16 +22,15 @@ When accessing the Tavern block by right-clicking on it, you will see a GUI with
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/taverngui.png" class="img-fluid mx-auto" alt="Tavern GUI">
+    <img src="../../assets/images/gui/taverngui.png" class="img-fluid mx-auto" alt="Tavern Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
     <ul>
-      {% for item in site.data.gui.global %}
+      {% for item in site.data.gui.citizen %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
     </ul>
   </div>
-</div>
-<br> <br>
-
+</div>  
+  
