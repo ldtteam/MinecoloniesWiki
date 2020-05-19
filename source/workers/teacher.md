@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Teacher’s Information Site.
 
-The Teacher is an important part of the leveling part of the your Colony. The Teacher will teach the [Pupil](../workers/pupil) (children) of the colony. While they can teach with not supplies, providing paper will increase the speed that the Pupils level. 
+The Teacher is an important part of the leveling part of the your Colony. The Teacher will teach the [Pupils](../workers/pupil) (children) of the colony. While they can teach with not supplies, providing paper will increase the speed that the Pupils level. 
 
 Click here for full information about the [School's hut](../buildings/school) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Teacher will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Teacher if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
