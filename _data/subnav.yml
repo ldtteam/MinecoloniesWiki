@@ -169,7 +169,7 @@ subnav:
         url: source/buildings/sawmill
       - page: Shepherd's Hut
         url: source/buildings/shepherd
-      - page: Sifter
+      - page: Sifter's Hut
         url: source/buildings/sifter
       - page: Smeltery
         url: source/buildings/smeltery
