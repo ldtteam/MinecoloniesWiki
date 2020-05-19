@@ -25,8 +25,6 @@ The Dyer Hut is where the Dyer will craft dyes and dyes other items except for c
 
 **Hint:** The number of recipes you can teach the Dyer doubles per building level. So:
 
-<br>
-
 | Dyer Level | Number of Recipes |
 | :-----: | :-----: |
 | 1 | 20 | 
@@ -34,6 +32,7 @@ The Dyer Hut is where the Dyer will craft dyes and dyes other items except for c
 | 3 | 80 |
 | 4 | 160 | 
 | 5 | 320 | 
+
 <br>
 
 # Dyer GUI
