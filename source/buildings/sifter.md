@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Sifter
+# Sifter's Hut
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/sifter.png" alt="Sifter's Hut" />
@@ -19,9 +19,11 @@ layout: default
     <recipe>sifter</recipe>
 </div>
 
-# About the Building
+# About the Sifter's Hut
 
-Once the builder is done you can now hire the Sifter and and select what item you want them to sift. Options for this are setup in the configuration file.
+The Sifter's Hut is where the Sifter will sift through dirt, gravel, sand, or soul sand to find loot. Doing this will make the block the Sifter is sifting disappear. 
+
+You can choose between four meshes. The higher the level of the mesh, the higher the likelihood that the Sifter will find loot.
 
 | Hut Level | Mesh Available | 
 | ----- | ----- | 
