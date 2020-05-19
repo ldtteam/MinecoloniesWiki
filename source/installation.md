@@ -4,17 +4,16 @@ layout: default
 ---
 # Installation
 
-## [Native Launcher](../installation/java) 
-<br>
+## [Native Launcher](../source/installation/java) 
 Instructions on installing Minecolonies with Native Java Launcher
 <br>
-
-## [MultiMC](../installation/multimc) 
 <br>
+
+## [MultiMC](../source/installation/multimc) 
 Instructions on installing Minecolonies with MultiMC
 <br>
-
-## [Twitch](../installation/twitch) 
 <br>
+
+## [Twitch](../source/installation/twitch) 
 Instructions on installing Minecolonies with Twitch
 
