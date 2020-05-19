@@ -16,8 +16,8 @@ global:
   - button: Inventory
     content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](../../source/decoblocks/rack) or chests in the hut, so be sure to check those as well!
 citizen:
-  - button: Citizen's Hut Level
-    content: This tells you the building you have selected is a Citizen Hut with build level X.
+  - button: Hut's Level
+    content: This tells you the Level of the hut you have selected.
   - button: Assign Citizens
     content: This lets you change which citizens are assigned to this hut. If it says Assign 0 Citizens, that means you've run out of room in this hut to house citizens and will have to remove some (the button underneath their name) to add more. <b>Note- </b>this only works if you have turned the housing assignment mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be housed automatically.
   - button: Build Options
