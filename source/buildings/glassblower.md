@@ -23,6 +23,16 @@ layout: default
 
 The Glassblower Hut is where the Glassblower will smelt sand into glass, and make glass panes from glass blocks. 
 
+**Hint:** The number of recipes you can teach the Glassblower doubles per building level. So:
+
+
+| Glassblower Level | Number of Recipes |
+| :-----: | :-----: |
+| 1 | 20 | 
+| 2 | 40 |
+| 3 | 80 |
+| 4 | 160 | 
+| 5 | 320 | 
 
 <br>
 
