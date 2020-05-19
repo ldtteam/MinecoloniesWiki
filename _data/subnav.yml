@@ -187,5 +187,7 @@ subnav:
     subitems:
       - page: Recipes
         url: source/misc/recipes
+      - page: Custom citizen names
+        url: source/misc/customcitizennames
       - page: Troubleshooting
         url: source/troubleshooting/troubleshooting
