@@ -4,24 +4,24 @@ global:
   - button: Worker Assigned
     content: Tells you the worker assigned to the this building and their worker level. The worker levels up in time by working. The higher their level, the faster and more efficient they will be.
   - button: Manage Workers
-    content: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be hired automatically.
+    content: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the [Town Hall](source/buildings/townhall) block to manual, otherwise your citizens will be hired automatically.
   - button: Recall Worker
     content: Recalls the worker at this building to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.
   - button: Build Options
-    content: Lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
+    content: Lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the [Builder](source/workers/builder) page.
   - button: Delivery Priority
-    content: You can set the priority that a [deliveryman](../../source/workers/deliveryman) will visit this hut (ten is the highest, one is the lowest). You can also set whether it is automatic, meaning it changes automatically; static, meaning it stays to what you set it no matter what; or never, meaning the deliveryman will never visit this hut. (If you choose the last option, you can't set the priority.)
+    content: You can set the priority that a [deliveryman](/source/workers/deliveryman) will visit this hut (ten is the highest, one is the lowest). You can also set whether it is automatic, meaning it changes automatically; static, meaning it stays to what you set it no matter what; or never, meaning the deliveryman will never visit this hut. (If you choose the last option, you can't set the priority.)
   - button: List of Recipes and Teach Recipe
     content: When clicking the list of recipes button, you see all the recipes you have taught this hut and can remove them. When clicking teach recipe, it opens a 3x3 crafting grid which allows you to teach this hut recipes (not the worker). 
   - button: Inventory
-    content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](../../source/decoblocks/rack) or chests in the hut, so be sure to check those as well!
+    content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](source/decoblocks/rack) or chests in the hut, so be sure to check those as well!
 citizen:
   - button: Hut's Level
     content: This tells you the Level of the hut you have selected.
   - button: Assign Citizens
-    content: This lets you change which citizens are assigned to this hut. If it says Assign 0 Citizens, that means you've run out of room in this hut to house citizens and will have to remove some (the button underneath their name) to add more. <b>Note-</b>this only works if you have turned the housing assignment mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be housed automatically.
+    content: This lets you change which citizens are assigned to this hut. If it says Assign 0 Citizens, that means you've run out of room in this hut to house citizens and will have to remove some (the button underneath their name) to add more. <b>Note-</b>this only works if you have turned the housing assignment mode in the [Town Hall](/source/buildings/townhall) block to manual, otherwise your citizens will be housed automatically.
   - button: Build Options
-    content: This lets you create a build, upgrade, reposition, or repair build order for the Citizen's Hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
+    content: This lets you create a build, upgrade, reposition, or repair build order for the Citizen's Hut. To learn more about the building system, please visit the [Builder](/source/workers/builder) page.
   - button: Inventory 
     content: This opens an inventory space where you can store anything you like, as the citizens staying in the Citizen's Hut don't use it.
 build:
