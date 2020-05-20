@@ -21,19 +21,19 @@ layout: default
 
 # About the Building
 
-## Before you build *any* building, you need to build the Builder's Hut. Without the builder’s hut being built, the builder cannot build any other building.**
+## Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build any other building.
 
-Before you choose a place to build it's Hut, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the Hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+Before you choose a place to build the Builder's Hut, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the Builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
-Now you will have to issue the “Build” assignment so it can build it's own hut first. The builder will be asking for the materials it needs. Make sure to check the [Resource Scroll](../../source/items/resourcescroll) or the second page of the [Builder's Hut](../../source/buildings/builder) regularly to see what materials the builder is requesting for any build/upgrade. Any material in the list that is still missing will be in red colored letters.
+Now you will have to issue the build assignment so the Builder can build their own hut first. The Builder will ask for the materials they need. Make sure to check the [Resource Scroll](../../source/items/resourcescroll) or the second page of the [Builder's Hut](../../source/buildings/builder) to see what materials the Builder is requesting for any build/upgrade. Any material in the list that is still missing will be in red letters.
 
-Once the builder is done you can now start to build anything you want; Worker huts, buildings, decorations or your own schematics.
+Once the Builder's Hut is built you can now build anything you want, like worker huts, buildings, decorations, or your own schematics.
 
-- **Note:** The Builder may *ONLY* build or upgrade any other Worker's hut up to the level of it's own hut. So, in order for the builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then it will be able to upgrade any other building(s).
+- **Note:** The Builder can only build or upgrade any other hut up to the level of their own hut. So, in order for the Builder to upgrade any building, the Builder's Hut must be upgraded first. Then the Builder will be able to upgrade any other building(s).
 
 # Builder's Hut GUI
 
-When accessing the Builder’s Hut block (right clicking on it) you will see a GUI with different options:
+When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -42,7 +42,7 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
   </div>
   <br>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by working. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -52,10 +52,6 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 </div>
  <div class="col-sm-12 col-md"><br>
     <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
-    <ul>
-      <li><strong>Required Resources:</strong> These are the resource that the Builder will need for the Build/Upgrade it is currently working on. This amount will change as it places the blocks and will show <strong>only</strong> what blocks it still needs to place. The blocks in Red color are the ones neither you nor the builder has in it's inventory</li>
-      <li><strong>Inventory:</strong> Same as above, allows you to view the huts storage.</li>
-    </ul>
   </div>
 <br>
 <div class="row">
@@ -63,14 +59,16 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
 </div>
-
+    <ul>
+      <li><strong>Required Resources:</strong> These are the resources that the Builder will need for the build order they are currently working on. This amount will change as they place blocks and will show <strong>only</strong> what blocks the Builder still needs to place. The blocks in red are the ones neither you nor the Builder has in their inventory.</li>
+    </ul>
 <br>
 
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <b><i>BUILD</i></b> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Build Building</b> button so the build order is created.</p>
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <b>BUILD</b> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>MUST CONFIRM</i> the build by pressing the <b>Build Building</b> button so the build order is created.</p>
+
+<p style="color:Blue;"><b>Important Note:</b> After pressing the <b>UPGRADE</b> button you will see a new list of all the items required for that build. There are some options here, but again, the most important option is that you <i>MUST CONFIRM</i> the upgrade by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
 
 <p>After pressing the <b>Build Options</b> button you have a few options to consider:</p>
-
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <b><i>UPGRADE</i></b> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>HAVE To CONFIRM</i> the Build by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
 
 <br>
 <div class="row">
@@ -91,11 +89,11 @@ When accessing the Builder’s Hut block (right clicking on it) you will see a G
 
 ## A few things to consider
 
-For the placement of the Builder's Hut, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the builder has less of a distance to walk between it's hut and the build sites.
+For the placement of the Builder's Hut, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the Builder has less of a distance to walk between their hut and the build sites.
 
-The builder will not start another build assignment until it has finished the current one.
+The Builder will not start another build assignment until they have finished the current one.
 
-You can go to the [Town Hall's GUI](../../source/buildings/townhall) and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the other build orders you have there. If you cancel a work order, (and it was being built already) when you assign the build order again, the builder will continue where it left off.
+You can go to the [Town Hall's GUI](../../source/buildings/townhall) and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, when you assign the build order again, the Builder will continue where they left off.
 
-Any block the builder removes (dirt, wood, planks, glass, etc.) while building and/or upgrading it will keep it in it's inventory until the inventory becomes full, or it may dump any unnecessary items at the end of a build/upgrade into the Builder's Hut Inventory.
+If the Builder removes a block (dirt, wood, planks, glass, etc.) while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
 <br><br>
