@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# StoneSmeltery
+# Stone Smeltery
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/stonesmeltery.png" alt="Stone Smeltery's Hut" />
@@ -19,14 +19,14 @@ layout: default
     <recipe>stonesmeltery</recipe>
 </div>
 
-# About the Building
+# About the Stone Smeltery
 
-Once the building is built, the Stone Smelter will, upon request, turn cobblestone to stone, stone bricks to cracked stone bricks, clay balls to brick, and clay blocks to terracotta for all your Towns needs.
+The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into brick, and clay blocks into terracotta. The Stone Smelter will only do this if they receive a request and they have the needed materials/fuel.
 
-**Hint:** The higher the level of the Hut the more furnaces the Smelter will be able to use. So:
+**Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will be able to use. So:
 
 
-| Building Level |  Furnace(s) |
+| Building Level |  Furnaces |
 | :-----: | :-----: | 
 | 1 |  1 |
 | 2 |  2 |
@@ -35,9 +35,9 @@ Once the building is built, the Stone Smelter will, upon request, turn cobblesto
 | 5 |  5 |
 
 
-## Hut GUI
+## Stone Smeltery GUI
 
-When accessing the Stone Smeltery's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Stone Smeltery's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -45,7 +45,7 @@ When accessing the Stone Smeltery's Hut block (right clicking on it), you will s
     <img src="../../assets/images/gui/stonesmelterygui1.png" class="img-fluid mx-auto" alt="Stone Smeltery GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -60,19 +60,10 @@ When accessing the Stone Smeltery's Hut block (right clicking on it), you will s
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <ul><strong> Fuel: </strong> Listed are items that can be used by the cook as fuel in the furnaces. Simply turn on any that you want your cook to use, and the deliveryman will deliver those items to the cook when they need fuel.
+      <li><strong>Fuel: </strong>Listed here are items that can be used by the Stone Smelter as fuel in their furnaces. Turn on any that you want your Stone Smelter to use, and Deliverymen will deliver those items to the Stone Smelter when they need fuel. (The black box at the top is to search for items.)
       </ul>
     </ul>
   </div>
 </div>  
   
   <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
-Page 2 is where you can tell the cook what items to use as fuel.
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/stonesmelterygui2.png" class="img-fluid mx-auto" alt="Restaurant GUI">
-  </div>
