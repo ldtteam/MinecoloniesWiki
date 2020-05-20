@@ -5,7 +5,7 @@ layout: recipes
 ---
 # Custom citizen names
 
-Would you like having citizen names in your own language? This is your page!<br>
+Would you like to have citizen names in your own language? Then this is your page!<br>
 Everything you have to change is just one file.
 <br>
 
