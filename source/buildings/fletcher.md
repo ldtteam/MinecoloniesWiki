@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Fletcher Hut
+# Fletcher's Hut
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/fletcher.png" alt="Fletcher" />
@@ -19,14 +19,14 @@ layout: default
     <recipe>fletcher</recipe>
 </div>
 
-# About the Bakery
+# About the Fletcher's Hut
 
-The Fletcher Hut is where the Fletcher will craft items that use string or wool, such as bows, fishing poles and paintings. 
+The Fletcher's Hut is where the Fletcher will craft items that use string or wool, such as bows, fishing poles and paintings. For the Fletcher to work, they must receive a request from another worker and have the necessary materials. The Fletcher's Hut must also have been taught the crafting recipes for all the items you want the Fletcher to be able to craft.
 
-**Hint:** The number of recipes you can teach the Fletcher doubles per building level. So:
+**Hint:** The number of recipes you can teach the Fletcher's Hut doubles per building level. So:
 
 
-| Fletcher Level | Number of Recipes |
+| Fletcher's Hut Level | Number of Recipes |
 | :-----: | :-----: |
 | 1 | 20 | 
 | 2 | 40 |
@@ -36,9 +36,9 @@ The Fletcher Hut is where the Fletcher will craft items that use string or wool,
 
 <br>
 
-# Bakery GUI
+# Fletcher's Hut GUI
 
-When accessing the Fletcher block by right-clicking on it, you will see a GUI with different options:
+When accessing the Fletcher's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -54,4 +54,3 @@ When accessing the Fletcher block by right-clicking on it, you will see a GUI wi
   </div>
 </div>
 <br> <br>
-
