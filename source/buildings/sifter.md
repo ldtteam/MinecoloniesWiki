@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Sifter
+# Sifter's Hut
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/sifter.png" alt="Sifter's Hut" />
@@ -19,9 +19,48 @@ layout: default
     <recipe>sifter</recipe>
 </div>
 
-# About the Building
+# About the Sifter's Hut
 
-Once the builder is done you can now hire the Sifter and and select what item you want them to sift. Options for this are setup in the configuration file.
+The Sifter's Hut is where the Sifter will sift through dirt, gravel, sand, or soul sand to find loot. Doing this will make the block the Sifter is sifting disappear. 
+
+
+| Sifted Block| Chance for |
+| ----- | ----- |
+| Dirt |	Beetroot seeds
+| Dirt |	Carrots
+| Dirt |	Melon seeds
+| Dirt |	Potatoes
+| Dirt |	Pumpkin seeds
+| Dirt |	Oak saplings
+| Dirt |	Spruce saplings
+| Dirt |	Birch saplings
+| Dirt |	Jungle saplings
+| Dirt |	Acacia saplings
+| Dirt |	Dark oak saplings
+| Dirt |	Wheat seeds
+| Gravel |	Coal
+| Gravel |	Diamonds
+| Gravel |	Lapis lazuli
+| Gravel |	Emeralds
+| Gravel |	Flint
+| Gravel |	Gold ingots
+| Gravel |	Iron ingots
+| Gravel |	Iron nuggets
+| Gravel |	Redstone
+| Sand |	Cacti
+| Sand |	Cocoa beans
+| Sand |	Gold nuggets
+| Sand |	Sugarcane
+| Soul Sand |	Blaze powder
+| Soul Sand |	Glowstone dust
+| Soul Sand |	Magma cream
+| Soul Sand |	Nether wart
+| Soul Sand |	Quartz
+| Soul Sand |	Human skulls
+
+
+You can choose between four meshes. The higher the level of the mesh, the higher the likelihood that the Sifter will find loot.
+
 
 | Hut Level | Mesh Available | 
 | ----- | ----- | 
@@ -31,44 +70,9 @@ Once the builder is done you can now hire the Sifter and and select what item yo
 | 4         | Diamond        | 
 
 
-| Sifted Block| Chance for |
-| ----- | ----- |
-| Dirt |	beetroot seeds
-| Dirt |	carrot
-| Dirt |	melon seed
-| Dirt |	potato
-| Dirt |	pumpkin seeds
-| Dirt |	sapling: Oak
-| Dirt |	sapling: Spruce
-| Dirt |	sapling: Birch
-| Dirt |	sapling: Jungle
-| Dirt |	sapling: Acacia
-| Dirt |	sapling: Dark Oak
-| Dirt |	wheat seeds
-| Gravel |	coal
-| Gravel |	diamond
-| Gravel |	dye: Lapis Luzuli
-| Gravel |	emerald
-| Gravel |	flint
-| Gravel |	gold ingot
-| Gravel |	iron ingot
-| Gravel |	iron nugget
-| Gravel |	redstone
-| Sand |	cactus
-| Sand |	dye: Cocoa Bean
-| Sand |	gold nugget
-| Sand |	reeds
-| Soul Sand |	blaze powder
-| Soul Sand |	glowstone dust
-| Soul Sand |	magma cream
-| Soul Sand |	nether wart
-| Soul Sand |	quartz
-| Soul Sand |	skull: Human
-
-
 # Sifter Hut GUI
 
-When accessing the Sifter's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the Sifter's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -76,7 +80,7 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
     <img src="../../assets/images/gui/siftergui1.png" class="img-fluid mx-auto" alt="Sifter GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -84,29 +88,18 @@ When accessing the Sifter's Hut block (right clicking on it), you will see a GUI
     </ul>
   </div>
 </div>
+<br> <br>
+This is page two of the Sifter's Hut GUI.
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/sifter_gui2.png" class="img-fluid mx-auto" alt="Sifter GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p><strong>Daily Limit</strong>:</p>
     <ul>
-     <li><strong>Item: </strong> You will have a list of Items to choose from, default is Dirt, Gravel, Sand, and Soul Sand, however you may see other options if the config file has been changed.</li>
-     <li><strong>Amount</strong> You can choose how many of an item is sifted, this is based on the level of the hut. </li>
-     <li><strong>Mesh Settings: </strong> If you have String, Flint, Iron Ingots, and/or Diamonds in your inventory, you will see the buy option beside the mesh type that you can purchase to change mesh types.</li>
+     <li><strong>Block: </strong>You can choose what block you want the Sifter to sift by clicking on the button. The blocks to choose from are dirt, gravel, sand, and soul sand, however you can change this in the config file. If you change this, you must click save.</li>
+     <li><strong>Amount: </strong>You can choose how many blocks are sifted daily. The max number is based on the level of the Sifter's Hut. If you change this, you must click save.</li>
+     <li><strong>Meshes: </strong>You can purchase different levels of meshes, and each level has a higher likelihood of getting loot. If you have string, flint, iron ingots, or diamonds in your inventory, you will see the buy option beside the mesh type. If a mesh is in green, like string is in this picture, it means that mesh is the one the Sifter will use. You can only use one mesh at a time.</li>
     </ul>
   </div>
 </div>  
-  
-  <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
-Page 2 of the GUI allows you to choose which block to sift, how many daily, and which mesh you want to use.
-
-You must buy a mesh everytime you want to change it.
-
-<div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/siftergui2.png" class="img-fluid mx-auto" alt="Sifter GUI">
-  </div>

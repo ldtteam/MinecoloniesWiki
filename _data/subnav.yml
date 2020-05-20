@@ -160,19 +160,19 @@ subnav:
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
       - page: Dyer's Hut
-        url: source/workers/dyer
+        url: source/buildings/dyer
       - page: Enchanter's Tower
         url: source/buildings/enchantertower
       - page: Farm & Field
-        url: source/buildings/farm
+        url: source/buildings/farm&field
       - page: Fisherman's Hut
         url: source/buildings/fisherman
       - page: Fletcher's Hut
-        url: source/workers/fletcher
+        url: source/buildings/fletcher
       - page: Flower Shop
         url: source/buildings/flowershop
       - page: Glassblower's Hut
-        url: source/workers/glassblower
+        url: source/buildings/glassblower
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Hospital
@@ -182,20 +182,20 @@ subnav:
       - page: Lumberjack's Hut
         url: source/buildings/lumberjack
       - page: Mechanic's Hut
-        url: source/workers/mechanic
+        url: source/buildings/mechanic
       - page: Mine
         url: source/buildings/mine
       - page: Plantation
-        url: source/workers/plantation
+        url: source/buildings/plantation
       - page: Restaurant
         url: source/buildings/restaurant
       - page: Sawmill
         url: source/buildings/sawmill
       - page: School
-        url: source/workers/school
+        url: source/buildings/school
       - page: Shepherd's Hut
         url: source/buildings/shepherd
-      - page: Sifter
+      - page: Sifter's Hut
         url: source/buildings/sifter
       - page: Smeltery
         url: source/buildings/smeltery
@@ -206,7 +206,7 @@ subnav:
       - page: Swine Herder's Hut
         url: source/buildings/swineherder
       - page: Tavern
-        url: source/workers/tavern
+        url: source/buildings/tavern
       - page: Town Hall
         url: source/buildings/townhall
       - page: University
