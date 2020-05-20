@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# School Hut
+# School
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/school.png" alt="School" />
@@ -22,13 +22,13 @@ layout: default
     <recipe>school</recipe>
 </div>
 
-# About the School Hut
+# About the School
 
-The School is where the Teacher will level up the Pupils (children) of the colony. Paper will increase the leveling speed. 
+The School is where the Teacher will level up the Pupils' (children) skills. Paper will increase the leveling speed of the Pupils. 
 
-The level of the hut determines how many pupils can be taught.
+The level of the School determines how many Pupils can be taught at a time.
 
-| Building Level | Pupils Taught |
+| Pupil Level | Pupils Taught |
 | ----- | ----- |
 | 1 | 2 |
 | 2 | 4 |
@@ -40,7 +40,7 @@ The level of the hut determines how many pupils can be taught.
 
 # School GUI
 
-When accessing the School block by right-clicking on it, you will see a GUI with different options:
+When accessing the School's hut block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -56,4 +56,3 @@ When accessing the School block by right-clicking on it, you will see a GUI with
   </div>
 </div>
 <br> <br>
-
