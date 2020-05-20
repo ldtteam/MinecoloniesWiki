@@ -19,14 +19,14 @@ layout: default
     <recipe>smeltery</recipe>
 </div>
 
-# About the Building
+# About the Smeltery
 
-Once the building is built, the Smelter will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
+The Smeltery is where the Smelter will smelt ores into ingots.
 
-**Hint:** The higher the level of the Hut the more furnaces the Smelter will be able to use and it will have a higher chance to double and even triple the ingot output per block of ore. The way it works is that the *Worker level* determines the "Chance" is has to either Double or Triple the ingot output of the ores, according to the Hut level. So:
+**Hint:** The higher the level of the Smeltery, the more furnaces the Smelter will be able to use. A higher level will also have a higher chance to double and even triple the ingot output per block of ore. The Smelter's worker level will sometimes determine the chance to double or triple the ingot output of ores, according to the Smeltery level. So:
 
 
-| Building Level | Normal Output | % of Doubling Output | % of Tripling Output | Furnace(s) |
+| Building Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output | Furnaces |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | 1 | 100% | Worker Level Chance | --- | 1 |
 | 2 | 100% | 2 x Worker Level Chance | --- | 2 |
@@ -35,16 +35,16 @@ Once the building is built, the Smelter will start to process all the block ores
 | 5 | --- | 100% | Worker Level Chance | 5 |
 
 
-# Smeltery Hut GUI
+# Smeltery GUI
 
-When accessing the Smeltery's Hut block (right clicking on it), you will see a GUI with different options:  
+When accessing the Smeltery's hut block by right-clicking on it, you will see a GUI with different options:  
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/smelterygui1.png" class="img-fluid mx-auto" alt="Smeltery GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -59,7 +59,7 @@ When accessing the Smeltery's Hut block (right clicking on it), you will see a G
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <ul><strong> Fuel: </strong> Listed are items that can be used by the cook as fuel in the furnaces. Simply turn on any that you want your cook to use, and the deliveryman will deliver those items to the cook when they need fuel.
+      <li><strong>Fuel: </strong>Listed here are items that can be used by the Smelter as fuel in their furnaces. Turn on any that you want your Smelter to use, and a Deliveryman will deliver those items to the Smelter when they need fuel. (The black box at the top is to search for items.)
       </ul>
     </ul>
   </div>
@@ -67,11 +67,3 @@ When accessing the Smeltery's Hut block (right clicking on it), you will see a G
   
   <br>
   
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
-Page 2 is where you can tell the cook what items to use as fuel.
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/smelterygui2.png" class="img-fluid mx-auto" alt="Restaurant GUI">
-  </div>
