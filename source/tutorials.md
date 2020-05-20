@@ -4,16 +4,16 @@ layout: default
 ---
 # Tutorials
 
-## [Tutorial](../source/tutorials/tutorial) 
+## [Tutorial](../tutorials/tutorial) 
 Quick Walkthrough and Detailed Walkthrough
 <br>
 <br>
 
-## [Schematics](../source/tutorials/schematics) 
+## [Schematics](../tutorials/schematics) 
 Instructions on Creating, Scanning and Pasting Schematics
 <br>
 <br>
 
-## [Servers](../source/tutorials/serverinfo) 
+## [Servers](../tutorials/serverinfo) 
 Instructions on Working with Servers
 <br>
