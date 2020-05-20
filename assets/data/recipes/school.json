@@ -9,15 +9,15 @@
     "secondRow":
     {
       "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": "minecolonies/barrel_vertical",
+      "secondItem": "minecraft/feather",
       "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
     },
     "thirdRow":
     {
       "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
+      "secondItem": "minecraft/feather",
       "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
     },
-    "product": "minecolonies/blockhuttavern"
+    "product": "minecolonies/blockhutschool"
   }
 ]}
