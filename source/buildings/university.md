@@ -21,7 +21,7 @@ layout: default
 
 # About the University
 
-## Note: The Research tree is still being worked on so the images may change.
+## Note: The Research tree is still being worked on, so the images may change.
 
 The University is where a researcher will research various upgrades to your colony. 
 
