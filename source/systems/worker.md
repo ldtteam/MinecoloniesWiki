@@ -89,17 +89,23 @@ Choose a worker to view more information about them:
 | [Cowboy](../workers/cowboy)              | Athletics & Stamina      |
 | [Crusher](../worker/crusher)             | Stamina & Strength       |
 | [Deliveryman](../workers/deliveryman)    | Agility & Adaptability   |
+| [Dyer](../workers/dyer)                  | Creativity & Dexterity   |
 | [Enchanter](../workers/enchanter)        | Mana & Knowledge         |
 | [Farmer](../workers/farmer)              | Stamina & Athletics      |
 | [Fisherman](../workers/fisherman)        | Focus & Agility          |
+| [Fletcher](../workers/fletcher)          | Dexterity & Creativity   |
 | [Florist](../workers/florist)            | Dexterity & Agility      |
+| [Glassblower](../workers/glassblower)    | Creativity & Focus       |
 | [Guard](../workers/guard)                | Adaptability & Stamina   |
 | [Healer](../workers/healer)              | Mana & Knowledge         |
 | [Knight](../workers/knight)              | Adaptability & Stamina   |
 | [Library Student](../worker/librarystudent) | Intelligence          |
 | [Lumberjack](../workers/lumberjack)      | Strength & Focus         |
+| [Mechanic](../workers/mechanic)          | Knowledge & Agility      |
 | [Miner](../workers/miner)                | Strength & Stamina       |
 | [Miller](../workers/miller)              | Knowledge & Dexterity    |
+| [Planter](../workers/planter)            | Agility & Dexterity      |
+| [Pupil](../workers/pupil)                | Intelligence & Knowledge, Mana |
 | [Ranger](../workers/ranger)              | Agility & Adaptability   |
 | [Researcher](../workers/researcher)      | Knowledge & Mana         |
 | [Shepherd](../workers/shepherd)          | Focus & Strength         |
@@ -108,3 +114,4 @@ Choose a worker to view more information about them:
 | [Stonemason](../workers/stonemason)      | Creativity & Dexterity   |
 | [Stone Smelter](../workers/stonesmelter) | Athletics & Dexterity    |
 | [Swine Herder](../workers/swineherder)   | Strength & Athletics     |
+| [Teacher](../workers/teacher)            | Intelligence & Knowledge, Mana |
