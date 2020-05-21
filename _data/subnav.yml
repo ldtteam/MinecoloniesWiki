@@ -21,8 +21,6 @@ subnav:
         url: source/items/compost
       - page: Construction Tape
         url: source/items/constructiontape
-      - page: Field
-        url: source/items/field
       - page: Multi-block
         url: source/items/multiblock
       - page: Paper Walls
@@ -39,10 +37,8 @@ subnav:
         url: source/items/shingles
       - page: Substitution Blocks
         url: source/items/substitutionblocks
-      - page: Supply Camp
-        url: source/items/supplycamp
-      - page: Supply Ship
-        url: source/items/supplyship
+      - page: Supply Camp and Supply Ship
+        url: source/items/supplycampandship
       - page: Timber Framed Blocks
         url: source/items/timberframes
       - page: Waypoint
