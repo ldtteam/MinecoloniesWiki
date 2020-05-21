@@ -37,7 +37,7 @@ These are the links we provide you for making your life a little bit easier:
 
 ### Spanish
 
-[Download spanish template file](https://github.com/ldtteam/MinecoloniesWiki/blob/master/source/misc/languageNameTemplates/spanishTemplate.toml)
+[Download spanish template file](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
 
 <br>
