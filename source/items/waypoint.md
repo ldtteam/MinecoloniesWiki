@@ -14,11 +14,9 @@ layout: default
 
 ### The Item
 
-The Waypoint is an item that can be crafted, however as a crafted item it is only used in schematics. However, using the Build Tool, you can place a waypoint for the builder to "build" and it tells the workers where to walk.  
+The waypoint tells your citizens where to walk. For example, you might put one on a road so your citizens will walk on it.
 <br>
 
-### Using the Waypoints
+### Using the Waypoint
 
-In schematics, you can place the waypoint block to denote where workers should walk. When travelling from place to place, they will walk through the waypoints along the way. They are in fact "points along the way". They are mostly used in Road schematics but can be used in any schematic. However, they should be used sparingly.
-
-In a colony, placed by the builder, there are no restrictions on where they can be placed, however when a citizen is nearby they will go to it or try so make sure they are placed in appropriate and accessible locations. 
+In schematics, you can place the waypoint block to denote where workers should walk. When traveling from place to place, your citizens will walk through the waypoints along the way. They are mostly used in road schematics but can be used in any schematic. However, they should be used sparingly. There are no restrictions on where they can be placed, but when a citizen is nearby they will go to it or try to, so make sure they are placed in appropriate and accessible locations. 
