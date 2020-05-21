@@ -22,8 +22,8 @@ The scan tool is a very useful tool. With the scan tool, you can scan any struct
 <br>
 
 **Hint:** There are two blocks in Minecolonies that are made specifically for helping players make schematics.
-<li> Placeholder Block: This block will not be scanned and will use the block that is already there, like air, grass, cobblestone, etc.
-<li> Solid Placeholder Block: This block will guarantee the block placed will be solid according to the biome it's being built on. 
+1. [Placeholder Block](../../source/items/substitutionblocks): This block will not be scanned and will use the block that is already there, like air, grass, cobblestone, etc.
+2. [Solid Placeholder Block](../../source/items/substitutionblocks): This block will guarantee the block placed will be solid according to the biome it's being built on. 
 
 ### Step One
 
