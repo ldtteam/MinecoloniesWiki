@@ -14,13 +14,15 @@ layout: default
 
 ### The Blocks
 
-The Substitution Blocks are tan and brown. The tan block is the substitution block, and the brown is the solid substitution block.  Each servers its own function. 
+The Substitution Blocks (also called Placeholder Blocks) are tan and brown. The tan block is the substitution block, and the brown is the solid substitution block. Each serves its own function. 
 
-The substitution block, tells the mod, to leave any blocks, that are currently in that spot, alone. It will not remove or change anything that already exists in that spot.
+### Using the Substitution Blocks
 
-The solid substitution block, tells the mod, to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (dirt, sandstone, redsandstone, white terracotta. 
+The substitution block tells the mod to leave any blocks that are currently in that spot alone. It will not remove or change anything that already exists in that spot.
 
-You can make and use these blocks in survival, but they are used for builders to scan schematics.
+The solid substitution block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (dirt, sandstone, red sandstone, white terracotta). 
+
+You can make and use these blocks in survival, but they are mainly used to scan schematics.
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/sampleschematic.png" alt="Sample Schematic"></p>
 <br>
