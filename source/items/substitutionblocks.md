@@ -23,6 +23,8 @@ The substitution block tells the mod to leave any blocks that are currently in t
 The solid substitution block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (dirt, sandstone, red sandstone, white terracotta). 
 
 You can make and use these blocks in survival, but they are mainly used to scan schematics.
+
+Here's an example:
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/sampleschematic.png" alt="Sample Schematic"></p>
 <br>
