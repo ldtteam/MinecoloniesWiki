@@ -17,7 +17,7 @@ Everything you have to change is just one file.
 
 	For local worlds:<br>
 
-		(minecrafFolder)/saves/(nameOfYourWorld)/serverconfig/minecolonies-server.toml
+		(minecraftFolder)/saves/(nameOfYourWorld)/serverconfig/minecolonies-server.toml
         
 
 2. Edit
