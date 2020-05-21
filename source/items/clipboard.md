@@ -28,7 +28,7 @@ After you register the clipboard, this message will appear:
 <p style="text-align:center;"><img src="../../assets/images/items/clipboardregistered.png" alt="Clipboard Registered Message"></p>
 <br>
 
-Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman)!
+Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman))!
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/clipboarduse.png" alt="Clipboard Use"></p>
