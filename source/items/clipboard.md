@@ -13,23 +13,22 @@ layout: default
 
 ### The Item
 
-The Clipboard is easy to craft, simply a leather, the build tool, and sticks.  
+The clipboard is an easy way to see all the requests your workers have (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman).
 
-### The Use  
+### Using the Clipboard 
 
-When you first make the clipboard, and right click anywhere you will get a message to shift + right click on the townhall to register the clipboard.
+When you first make the clipboard and right-click anywhere, you will get a message to shift + right-click on the [Town Hall](../../source/buildings/townhall) to register the clipboard.
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/clipboardinitmessage.png" alt="Clipboard Initial Message"></p>
 <br>
 
-Now, you will go to the TownHall block and Shift + Right Click on it and the registered message will appear.
-
+After you register the clipboard, this message will appear:
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/clipboardregistered.png" alt="Clipboard Registered Message"></p>
 <br>
 
-Now, when you right click any where, any time, you will see all the citizen requests on the clipboard.
+Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman)!
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/items/clipboarduse.png" alt="Clipboard Use"></p>
