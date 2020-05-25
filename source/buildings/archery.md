@@ -32,7 +32,7 @@ The Archery building is where your [Rangers in Training](../../source/workers/ra
 | 4 | 4 |
 | 5 | 5 |
 
-The Rangers in Training require a bow to practice. They will stand on or near the glowstone in the floor/ground and shoot at the targets, a bale of hay on a fence post. 
+The Rangers in Training require a bow to practice. They will stand on or near the glowstone in the floor/ground and shoot at the targets, a bail of hay on a fence post. 
 
 The Rangers in Training are not actual guards even though they will be dressed as guards, in the usual Ranger clothes. They will go to their own house at night to sleep. 
 
