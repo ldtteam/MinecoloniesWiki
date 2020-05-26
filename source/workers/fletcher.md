@@ -23,7 +23,7 @@ layout: default
 
 Welcome to the Fletcher’s Information Site.
 
-The Baker is an important part of the supply production of the your Colony. The fletcher will craft bows, fishing poles, wool, paintings and anything else that uses wool or string. 
+The Fletcher is an important part of the supply production of the your Colony. The fletcher will craft bows, fishing poles, wool, paintings and anything else that uses wool or string. 
 
 Click here for full information about the [Fletcher's hut](../buildings/fletcher) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Fletcher will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Fletcher if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
