@@ -36,5 +36,5 @@ build:
   - button: Upgrade
     content: When you are ready to upgrade to the next level.
   - button: Reposition
-    content: To move the building from it's current location. After pressing this button you will be taken to the 3D view of the building tool GUI so you can move it to where you want it.
+    content: To move the building from it's current location. After pressing this button, you will be taken to the 3D view of the building tool GUI so you can move it to where you want it.
     
