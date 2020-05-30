@@ -13,7 +13,7 @@ layout: default
 
 ### The Item
 
-The clipboard is an easy way to see all the requests your workers have (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman).
+The clipboard is an easy way to see all the requests your workers have (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman)).
 
 ### Using the Clipboard 
 
