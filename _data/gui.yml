@@ -14,7 +14,7 @@ global:
   - button: List of Recipes and Teach Recipe
     content: When clicking the list of recipes button, you see all the recipes you have taught this hut and can remove them. When clicking teach recipe, it opens a 3x3 crafting grid which allows you to teach this hut recipes (not the worker). 
   - button: Inventory
-    content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](../../source/decoblocks/rack) or chests in the hut, so be sure to check those as well!
+    content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](../../source/items/rack) or chests in the hut, so be sure to check those as well!
 citizen:
   - button: Hut's Level
     content: This tells you the Level of the hut you have selected.
@@ -26,15 +26,15 @@ citizen:
     content: This opens an inventory space where you can store anything you like, as the citizens staying in the hut don't use it.
 build:
   - button: Schematic Style
-    content: Here you can verify the style of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position.
+    content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
   - button: Builder
-    content: Here is where you can choose what builder you want on the project. If it is out of a builders range, this is where you can manually assign one.
+    content: Here is where you can choose what builder you want on the project. If the hut is out of your builders' range, this is where you can manually assign one.
   - button: List
     content: This is the list of resources that the Builder will need for the schematic style selected.
   - button: Repair
-    content: This is to repair a building according to it's schematic. This will remove any changes that a player has made to the current building.
+    content: This is to repair a building according to its schematic. This will remove any changes that a player has made to the current building.
   - button: Upgrade
-    content: When you are ready to upgrade to the next level.
+    content: When you are ready to upgrade to the next level. Upgrading will come with benefits, like more furnaces for a Smelter to use (for example).
   - button: Reposition
-    content: To move the building from it's current location. After pressing this button you will be taken to the 3D view of the building tool GUI so you can move it to where you want it.
+    content: To move the building from its current location. After pressing this button, you will be taken to the building tool GUI so you can move the hut where you want it.
     
