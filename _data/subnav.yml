@@ -125,7 +125,7 @@ subnav:
         url: source/workers/swineherder
       - page: Teacher
         url: source/workers/teacher
-      - page: University Student
+      - page: University Researcher
         url: source/workers/researcher
   - title: Buildings
     subitems:
@@ -195,7 +195,7 @@ subnav:
         url: source/buildings/sifter
       - page: Smeltery
         url: source/buildings/smeltery
-      - page: Stonemason
+      - page: Stonemason's Hut
         url: source/buildings/stonemason
       - page: Stone Smeltery
         url: source/buildings/stonesmeltery
@@ -213,7 +213,7 @@ subnav:
     subitems:
       - page: Recipes
         url: source/misc/recipes
-      - page: Custom citizen names
+      - page: Custom Citizen Names
         url: source/misc/customcitizennames
       - page: Troubleshooting
         url: source/troubleshooting/troubleshooting
