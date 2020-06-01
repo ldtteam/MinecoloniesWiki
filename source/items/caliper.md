@@ -4,8 +4,6 @@ layout: default
 ---
 # Calipers
 
-## Welcome to the Caliper page. 
-
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/caliper.png" alt="Caliper"></p>
     <recipe>The calipers cannot be crafted.</recipe>
