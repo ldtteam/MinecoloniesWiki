@@ -21,7 +21,7 @@ layout: default
 
 # About the Hospital
 
-The Hospital is where injured or ill citizens go when they need healing. The Healer heals them with various items.
+The Hospital is where injured or ill citizens go when they need healing. The Healer will heal them with various items.
 
 The higher the level of the Hospital, the more people it can heal at a time. So:
 
