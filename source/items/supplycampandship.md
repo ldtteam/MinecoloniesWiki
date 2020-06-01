@@ -4,8 +4,6 @@ layout: default
 ---
 # Supply Camp and Supply Ship
 
-## Welcome to the Supply Camp and Supply Ship page. 
-
 <p style="text-align:center;"><img src="../../assets/images/items/supplycamp.png" alt="Supply Camp"></p>
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplyship1.png" alt="Supplyship"></p>
