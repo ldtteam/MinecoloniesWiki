@@ -21,7 +21,7 @@ subnav:
         url: source/items/compost
       - page: Construction Tape
         url: source/items/constructiontape
-      - page: Multi-block
+      - page: Multiblock
         url: source/items/multiblock
       - page: Paper Walls
         url: source/items/paperwalls
