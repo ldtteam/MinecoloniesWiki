@@ -97,8 +97,8 @@ subnav:
         url: source/workers/guard
       - page: Healer
         url: source/workers/healer      
-      - page: Knight
-        url: source/workers/knight
+      - page: Knight in Training
+        url: source/workers/knightintraining
       - page: Library Student
         url: source/workers/librarystudent
       - page: Lumberjack
@@ -113,8 +113,8 @@ subnav:
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
-      - page: Ranger
-        url: source/workers/ranger
+      - page: Ranger in Training
+        url: source/workers/rangerintraining
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
