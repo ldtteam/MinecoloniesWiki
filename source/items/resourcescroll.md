@@ -13,7 +13,7 @@ layout: default
 
 ### The Item
 
-The resource scroll is an easy way to tell what one of your builders needs. It's like the portable second page of the Builder's Hut!
+The resource scroll is an easy way to tell what one of your Builders needs. It's like the portable second page of the Builder's Hut!
 
 ### Using the Resource Scroll
 
