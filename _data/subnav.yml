@@ -13,8 +13,8 @@ subnav:
         url: source/items/barrel
       - page: Building Tool
         url: source/items/buildingtool
-      - page: Caliper
-        url: source/items/caliper
+      - page: Calipers
+        url: source/items/calipers
       - page: Clipboard
         url: source/items/clipboard
       - page: Compost
