@@ -3,7 +3,7 @@ subnav:
     subitems: 
       - page: Installation
         url: source/installation
-      - page: Tutorial
+      - page: Tutorials
         url: source/tutorials
   - title: Items
     subitems:
