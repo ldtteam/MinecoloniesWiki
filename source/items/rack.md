@@ -18,4 +18,4 @@ The rack is the Minecolonies version of a chest. It can be combined with another
 
 ## Using the Rack
 
-Use the rack like you would with a chest. 
+Use the rack like you would use a chest. 
