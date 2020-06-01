@@ -9,20 +9,33 @@ Listed in this page are the current crafting recipes available in this mod. This
 **Notes**  
 The building tool used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
 
-## Items / Functional Blocks
+## Items and Blocks
+
+**Notes**
+The [Ancient Tome](../../source/items/ancient_tome) is not on here as it cannot be crafted and must be obtained in game. 
+The [Calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 
 | Name                                          | Ingredients                                | Recipe                          |
 | --------------------------------------------- | ------------------------------------------ | ------------------------------- |
+| [Barrel](../../source/items/barrel)           | **Any** Planks + Building Tool + Dirt + Iron Ingot | <recipe>barrel</recipe> |
 | [Building Tool](../../source/items/buildingtool) | Cobblestone + Stick                     | <recipe>buildingtool</recipe>   |
 | [Clipboard](../../source/items/clipboard)     | Stick + Building Tool + Leather            | <recipe>clipboard</recipe>      |
+| [Compost Block](../../source/items/compost)   | Dirt + Compost                             | <recipe>compost</recipe>        |
+| [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
+| [Multiblock](../../source/buildings/multiblock) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multiblock</recipe> |
+| [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwalls</recipe>     |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
+| [Rack](../../source/items/rack)               | **Any** Planks + Iron Bars                 | <recipe>rack</recipe>           |
 | [Resource Scroll](../../source/items/resourcescroll) | Stick + Building Tool + Leather     | <recipe>resourcescroll</recipe> |
 | [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | <recipe>scantool</recipe>       |
-| [Solid Substitution Block](../../source/items/substitutionblocks) | **Any** Logs + Scan Tool | <recipe>solidsubblock</recipe>  |
+| [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | <recipe>shingleclay</recipe>    |
+| [Shingles Slab](../../source/items/shingles)  | Brick + Stick                              | <recipe>shingleslab</recipe>    |
+| [Solid Substitution Block](../../source/items/substitutionblocks) | **Any** Logs + Scan Tool | <recipe>solidsubblock</recipe> |
 | [Substitution Block](../../source/items/substitutionblocks) | **Any** Planks + Scan Tool   | <recipe>subblock</recipe>       |
-| [Supply Camp](../items/supplycampandship)     | Chest                                      | <recipe>supplycamp</recipe>     |
-| [Supply Ship](../items/supplycampandship)     | **Any** Boat                               | <recipe>supplyship</recipe>     |
+| [Supply Camp](../items/supplycampandship)     | Chests                                     | <recipe>supplycamp</recipe>     |
+| [Supply Ship](../items/supplycampandship)     | **Any** Boats                              | <recipe>supplyship</recipe>     |
+| [Timber Framed Blocks](../../source/items/timberframes) | **Primary** Plank + **Secondary** Plank + Building Tool | <recipe>timberframeplain</recipe>      |
 | [Waypoint](../../source/items/waypoint)       | **Any** Planks + Building Tool             | <recipe>waypoint</recipe>       |
 {: .table-responsive }
 
@@ -73,16 +86,4 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Town Hall](../../source/buildings/townhall)       | **Any** Planks + 2 Building Tools                    | <recipe>townhall</recipe>          |
 | [University](../../source/buildings/university)    | **Any** Planks + Building Tool + Books               | <recipe>university</recipe>   |
 | [Warehouse](../../source/buildings/warehouse)      | **Any** Planks + Building Tool + Chest               | <recipe>warehouse</recipe>     |
-{: .table-responsive }
-
-## Decorative Blocks
-
-| Name                       | Ingredients                         | Recipe                            |
-| -------------------------- | ----------------------------------- | --------------------------------- |
-| [Construction Tape](../../source/items/constructiontape)         | Sticks + White Wool               | <recipe>constructiontape</recipe> |
-| [Paper Walls](../../source/items/paperwalls)                     | **Matching** Planks + Paper       | <recipe>paperwall</recipe>        |
-| [Rack](../../source/items/rack)                                  | **Any** Planks + Iron Bars        | <recipe>rack</recipe>             |
-| [Shingles](../../source/items/shingles)                          | Brick + Stick + **Matching** Planks | <recipe>shingleclay</recipe>          |
-| [Shingles Slab](../../source/items/shingles)                     | Brick + Stick                     | <recipe>shingleslab</recipe>      |
-| [Timber Framed Blocks](../../source/items/timberframes)          | **Primary** Plank + **Secondary** Plank/Block + Building Tool | <recipe>timberframeplain</recipe>      |
 {: .table-responsive }
