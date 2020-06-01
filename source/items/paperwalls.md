@@ -11,7 +11,7 @@ layout: default
 <br>
 
 ## The Item
-Paper Walls are a block that acts like glass, but it is surrounded by a wooden frame. The paper portion has a low opacity but can be seen through.
+Paper Walls are a block that acts like glass, but it is surrounded by a wooden frame. The paper portion has a low transparency but can be seen through.
 <br>
 
 <img src="../../assets/images/deco/paperwalls.png" alt="Paper Walls" />
