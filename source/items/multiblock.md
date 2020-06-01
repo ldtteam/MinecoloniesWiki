@@ -4,8 +4,6 @@ layout: default
 ---
 # Multiblock
 
-## Welcome to the Multiblock page. 
-
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/multipiston.png" alt="Multiblock"></p>
     <recipe>multiblock</recipe>
