@@ -216,4 +216,4 @@ subnav:
       - page: Custom Citizen Names
         url: source/misc/customcitizennames
       - page: Troubleshooting
-        url: source/troubleshooting/troubleshooting
+        url: source/misc/troubleshooting
