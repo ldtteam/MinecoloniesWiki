@@ -55,7 +55,7 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/smelterygui2.png" class="img-fluid mx-auto" alt="Smeltery GUI">
+    <img src="../../assets/images/gui/smelterygui2.png" class="img-fluid mx-auto" alt="Smeltery GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
@@ -64,6 +64,19 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
     </ul>
   </div>
 </div>  
-  
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/smelterygui3.png" class="img-fluid mx-auto" alt="Smeltery GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+      <li><strong>Smeltable Ore: </strong>Listed here are ores that can be smelted by the smelter. This is autopopulated with all coded ores, even if they come from other mods. If you have ores that are not on the list. They can be added to the config file. 
+      </ul>
+    </ul>
+  </div>
+</div>
+
   <br>
   
