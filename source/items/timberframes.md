@@ -25,6 +25,7 @@ layout: default
     <recipe>timberframealtdarkoak</recipe>
     <p><strong>Recipe:</strong> 
     <recipe>timberframealtcactus</recipe>
+
 </div>
 
 <br>
@@ -34,7 +35,11 @@ layout: default
 <br>
 The Timber Framed Blocks are new blocks added with Structurize. The Timber Framed Blocks come in various wood frames, as seen in the first recipe, surrounding not only wood centers but also cactus, cobblestone, stone, paper and bricks. (The outside frames are only in wood and cactus.) 
 
+<br>
+
 For the rest of the variants you just have to put a version of the Timberframe into the crafting table until you get the version you want. The crafting starts with the plain version and at the end becomes the plain version again, so if you have the wrong kind of Timber Framed Block you can easily start over again until you get the one you want. (Shown above in the recipes below the first with every kind of wooden frame.)
+
+<br>
 
 ### Note: We use paper as a solid block in the example, you can do the same with every other above mentioned block.
 
