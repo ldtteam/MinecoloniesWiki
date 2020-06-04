@@ -9,13 +9,13 @@ layout: default
 
 
 <div class="infobox box text-center">
-    <recipe>timberframeplain</recipe><br>
+    <recipe>timberframeplain</recipe>
     <recipe>timberframealtoak</recipe><br>
-    <recipe>timberframealtacacia</recipe><br>
+    <recipe>timberframealtacacia</recipe>
     <recipe>timberframealtbirch</recipe><br>
-    <recipe>timberframealtjungle</recipe><br>
+    <recipe>timberframealtjungle</recipe>
     <recipe>timberframealtspruce</recipe><br>
-    <recipe>timberframealtdarkoak</recipe><br>
+    <recipe>timberframealtdarkoak</recipe>
     <recipe>timberframealtcactus</recipe><br>
 </div>
 <br>
