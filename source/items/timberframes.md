@@ -9,7 +9,7 @@ layout: default
 
 
 <div class="infobox box text-center">
-<p><strong>Recipe:</strong> 
+    <p><strong>Recipe:</strong> 
     <recipe>timberframeplain</recipe>
     <p><strong>Recipe:</strong> 
     <recipe>timberframealtoak</recipe>
