@@ -65,7 +65,7 @@ This is page two of the GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong></strong> When you select this mode you have two options: </li>
+      <li>When you select this mode you have two options: </li>
     </ul>
   </div>
 </div>
