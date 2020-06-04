@@ -1,4 +1,3 @@
- 
 ---
 title: Minecolonies Wiki
 layout: recipes
@@ -17,10 +16,9 @@ Everything you have to change is just one file.
 		(minecraftServerFolder)/world/serverconfig/minecolonies-server.toml
 
 	For local worlds:<br>
-    
-    	(minecrafFolder)/saves/(nameOfYourWorld)/serverconfig/minecolonies-server.toml
+
+		(minecraftFolder)/saves/(nameOfYourWorld)/serverconfig/minecolonies-server.toml
         
-<br>
 
 2. Edit
 	
@@ -39,7 +37,7 @@ These are the links we provide you for making your life a little bit easier:
 
 ### Spanish
 
-[Download spanish template file](../source/misc/languageNameTemplates/spanishTemplate.toml)
+[Download spanish template file](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
 
 <br>
