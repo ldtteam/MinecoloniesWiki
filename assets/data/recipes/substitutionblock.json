@@ -18,7 +18,7 @@
       "secondItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
       "thirdItem": "minecraft/stick"
     },
-    "product": "minecolonies/blocksolidsubstitution",
+    "product": "minecolonies/blocksubstitution",
     "amount": "32"
   }
 ]}
