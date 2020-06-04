@@ -25,8 +25,8 @@ layout: default
     <recipe>timberframealtdarkoak</recipe>
     <p><strong>Recipe:</strong> 
     <recipe>timberframealtcactus</recipe>
-
 </div>
+
 <br>
 
 
