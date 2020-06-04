@@ -9,22 +9,14 @@ layout: default
 
 
 <div class="infobox box text-center">
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframeplain</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtoak</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtacacia</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtbirch</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtjungle</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtspruce</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtdarkoak</recipe>
-    <p><strong>Recipe:</strong> 
-    <recipe>timberframealtcactus</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframeplain</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtoak</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtacacia</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtbirch</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtjungle</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtspruce</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtdarkoak</recipe>
+    <p><strong>Recipe:</strong> <recipe>timberframealtcactus</recipe>
 </div>
 <br>
 
