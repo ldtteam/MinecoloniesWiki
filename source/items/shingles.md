@@ -6,29 +6,18 @@ layout: default
 
 <img src="../../assets/images/deco/shingles.png" alt="Shingle Woods"/>
 <div class="infobox box text-center">
-    <p><strong>Recipe: </strong>
     <recipe>shingleclay</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shinglemoss</recipe>
-    <p><strong>Recipe: </strong>
+    <recipe>shinglemoss</recipe><br>
     <recipe>shingleslate</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shinglethatched</recipe>
-    <p><strong>Recipe: </strong>
+    <recipe>shinglethatched</recipe><br>
     <recipe>shingleslab</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslabslate</recipe>
-    <p><strong>Recipe: </strong>
+    <recipe>shingleslabslate</recipe><br>
     <recipe>shingleslabthatched</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleclaycolors</recipe>
-    <p><strong>Recipe: </strong>
+    <recipe>shingleclaycolors</recipe><br>
     <recipe>shingleslatecolors</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslabcolors</recipe>
-
-<br>
+    <recipe>shingleslabcolors</recipe><br>
 </div>
+<br>
 
 ## The Item
 
