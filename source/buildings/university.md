@@ -19,15 +19,15 @@ layout: default
     <recipe>university</recipe>
 </div>
 
-# About the Building
+# About the University
 
-## Note: The Research tree is still being worked on so the images may change.
+## Note: The Research tree is still being worked on, so the images may change.
 
-Once the building is built, the researcher can now begin researching various upgrades. 
+The University is where a researcher will research various upgrades to your colony. 
 
-# University Hut GUI
+# University GUI
 
-When accessing the University's Hut block (right clicking on it), you will see a GUI with different options:
+When accessing the University's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -35,7 +35,7 @@ When accessing the University's Hut block (right clicking on it), you will see a
     <img src="../../assets/images/gui/universitygui1.png" class="img-fluid mx-auto" alt="University GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -49,16 +49,17 @@ When accessing the University's Hut block (right clicking on it), you will see a
 
 <br>
 
+Page 2 of the GUI will show you the options for each research branch.
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/universitygui2.png" class="img-fluid mx-auto" alt="University GUI Page 2">
   </div>
-    <p> Page 2 of the GUI will show you the options for each research tree: </p>
 </div>
     
 <br>
     
-Once you click on a Research Branch, you will see the options for each research tree:
+Once you click on a research branch, you will see the options for each research tree:
 
 <br>
 
@@ -66,7 +67,7 @@ Once you click on a Research Branch, you will see the options for each research 
   <div class="col-sm-12 col-md">  
     <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
     </div>
-    <p> Each option will tell you the requirements and tell you how long it takes to research that option. (Time is in real world time spent in game.)</p>
+    <p> Each option will tell you the requirements and how long it takes to research that option. (Time is real world time spent in-game.)</p>
  </div>
  
 <br>

@@ -10,15 +10,15 @@ layout: default
     <recipe>tavern</recipe>
 </div>
 
-# About the Tavern Hut
+# About the Tavern
 
-The Tavern currently only temporarily houses four citizens, but additional functionality will be added at a later date
+The Tavern is like a [Citizen's Hut](../../source/buildings/citizenhut) in that it houses citizens, however, the Tavern houses four instead of two and can't be upgraded to house more. Additional functionality will be added at a later date.
 
 <br>
 
 # Tavern GUI
 
-When accessing the Tavern block by right-clicking on it, you will see a GUI with different options:
+When accessing the Tavern's hut block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">

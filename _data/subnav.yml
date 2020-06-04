@@ -3,7 +3,7 @@ subnav:
     subitems: 
       - page: Installation
         url: source/installation
-      - page: Tutorial
+      - page: Tutorials
         url: source/tutorials
   - title: Items
     subitems:
@@ -13,38 +13,34 @@ subnav:
         url: source/items/barrel
       - page: Building Tool
         url: source/items/buildingtool
-      - page: Caliper
-        url: source/items/caliper
+      - page: Calipers
+        url: source/items/calipers
       - page: Clipboard
         url: source/items/clipboard
       - page: Compost
         url: source/items/compost
       - page: Construction Tape
-        url: source/decoblocks/constructiontape
-      - page: Field
-        url: source/items/field
-      - page: Multi-block
+        url: source/items/constructiontape
+      - page: Multiblock
         url: source/items/multiblock
       - page: Paper Walls
-        url: source/decoblocks/paperwalls
+        url: source/items/paperwalls
       - page: Postbox
         url: source/items/postbox
       - page: Rack
-        url: source/decoblocks/rack
+        url: source/items/rack
       - page: Resource Scroll
         url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
       - page: Shingles
-        url: source/decoblocks/shingles
+        url: source/items/shingles
       - page: Substitution Blocks
         url: source/items/substitutionblocks
-      - page: Supply Camp
-        url: source/items/supplycamp
-      - page: Supply Ship
-        url: source/items/supplyship
+      - page: Supply Camp and Supply Ship
+        url: source/items/supplycampandship
       - page: Timber Framed Blocks
-        url: source/decoblocks/timberframes
+        url: source/items/timberframes
       - page: Waypoint
         url: source/items/waypoint
   - title: Systems
@@ -97,8 +93,8 @@ subnav:
         url: source/workers/guard
       - page: Healer
         url: source/workers/healer      
-      - page: Knight
-        url: source/workers/knight
+      - page: Knight in Training
+        url: source/workers/knightintraining
       - page: Library Student
         url: source/workers/librarystudent
       - page: Lumberjack
@@ -113,8 +109,8 @@ subnav:
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
-      - page: Ranger
-        url: source/workers/ranger
+      - page: Ranger in Training
+        url: source/workers/rangerintraining
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -129,7 +125,7 @@ subnav:
         url: source/workers/swineherder
       - page: Teacher
         url: source/workers/teacher
-      - page: University Student
+      - page: University Researcher
         url: source/workers/researcher
   - title: Buildings
     subitems:
@@ -199,7 +195,7 @@ subnav:
         url: source/buildings/sifter
       - page: Smeltery
         url: source/buildings/smeltery
-      - page: Stonemason
+      - page: Stonemason's Hut
         url: source/buildings/stonemason
       - page: Stone Smeltery
         url: source/buildings/stonesmeltery
@@ -217,7 +213,7 @@ subnav:
     subitems:
       - page: Recipes
         url: source/misc/recipes
-      - page: Custom citizen names
+      - page: Custom Citizen Names
         url: source/misc/customcitizennames
       - page: Troubleshooting
-        url: source/troubleshooting/troubleshooting
+        url: source/misc/troubleshooting

@@ -26,17 +26,15 @@ layout: default
     <recipe>shingleslatecolors</recipe>
     <p><strong>Recipe: </strong>
     <recipe>shingleslabcolors</recipe>
-</div>
-
-</hr>
 
 <br>
+</div>
 
 ## The Item
 
-The Shingles are decorative shingles for the tops of buildings. Shingles come in all wood types, including Cactus Planks added by Structurize, and come in many colors. 
+Shingles are decorative roofing tiles for the tops of buildings. Shingles come in all wood types, including cactus planks, and many different colors. 
 
-There is even a shingle half slab for crown of the roof that comes in all the colors as well.   
+There is even a shingle half slab for the crown of the roof that comes in all the colors as well.
 <br>
 
 ## Using the Shingles

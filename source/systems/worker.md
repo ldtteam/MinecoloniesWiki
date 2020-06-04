@@ -98,7 +98,7 @@ Choose a worker to view more information about them:
 | [Glassblower](../workers/glassblower)    | Creativity & Focus       |
 | [Guard](../workers/guard)                | Adaptability & Stamina   |
 | [Healer](../workers/healer)              | Mana & Knowledge         |
-| [Knight](../workers/knight)              | Adaptability & Stamina   |
+| [Knight in Training](../workers/knightintraining) | Adaptability & Stamina   |
 | [Library Student](../worker/librarystudent) | Intelligence          |
 | [Lumberjack](../workers/lumberjack)      | Strength & Focus         |
 | [Mechanic](../workers/mechanic)          | Knowledge & Agility      |
@@ -106,7 +106,7 @@ Choose a worker to view more information about them:
 | [Miller](../workers/miller)              | Knowledge & Dexterity    |
 | [Planter](../workers/planter)            | Agility & Dexterity      |
 | [Pupil](../workers/pupil)                | Intelligence & Knowledge, Mana |
-| [Ranger](../workers/ranger)              | Agility & Adaptability   |
+| [Ranger in Training](../workers/rangerintraining) | Agility & Adaptability   |
 | [Researcher](../workers/researcher)      | Knowledge & Mana         |
 | [Shepherd](../workers/shepherd)          | Focus & Strength         |
 | [Sifter](../workers/sifter)              | Focus & Strength         |

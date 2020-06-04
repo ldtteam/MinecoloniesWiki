@@ -19,13 +19,11 @@ layout: default
     <recipe>warehouse</recipe>
 </div>
 
-# About the Building
+# About the Warehouse
 
-The Warehouse is the central place to hold and retrieve ALL of your materials and tools that are made and gathered by all of your workers. It is the central storage from where the [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft or need.
+The Warehouse is the central storage from where a [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft or need.
 
-The building will hold ALL the materials and tools that are made/mined/harvested by all your workers. Level up the Warehouse to increase the storage capacity.
-
-The level of the Warehouse will determine how many Deliverymen will be able to use the warehouse at the same time. Level up the Warehouse to increase the amount of [Deliverymen](../../source/workers/deliveryman) that will work in your Warehouse.  
+The level of the Warehouse will determine how many Deliverymen will be able to use the Warehouse at the same time. Level up the Warehouse to increase the amount of Deliverymen that can work in your Warehouse. Leveling up the Warehouse will also increase its storage capacity.
 
 | Building Level | Max Deliverymen |
 | ----- | ----- |
@@ -35,27 +33,27 @@ The level of the Warehouse will determine how many Deliverymen will be able to u
 | 4 | 4 |
 | 5 | 5 |  
 
-<br>
 
-# Warehouse Hut GUI
+<strong>Note: </strong>You can only have one Warehouse per colony, unless you change this in the config files.
 
-When accessing the Warehouse's Hut block (right clicking on it) you will see a GUI with different options:  
+# Warehouse GUI
+
+When accessing the Warehouse's hut block by right-clicking on it, you will see a GUI with different options:  
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/warehousegui1.png" class="img-fluid mx-auto" alt="Warehouse Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
-    <p> This the GUI for the Citizen's Hut. It show the build "level" of the Hut. And the buttons:</p>
+    <br>
     <ul>
-      <li><strong>Build/Upgrade Building.- </strong>to create the build/upgrade work order for this building.</li><br>
-      <li><strong>Repair Building.- </strong> So the builder can recreate the original building (at the current level) and fix any broken, missing, unwanted addons to the original building.</li><br>
-      <li><strong>Inventory.- </strong>This is just an Inventory space where you can store anything you like. Here you can access the buildings storage.</li>
+      <li><strong>Build Options: </strong>Lets you create a build, upgrade, reposition, or repair build order for the Warehouse. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li><br>
+      <li><strong>Inventory: </strong>This is an inventory space where you can store anything you like. The Deliverymen don't deposit things here (they use the [racks](../../source/decoblocks/rack) in the Warehouse instead).</li>
     </ul>
   </div>
 </div>  
 
-By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find:  
+By pressing the arrow button in the top right corner of the GUI, you will be taken to page two of the GUI:  
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -63,13 +61,6 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div><br>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Block of Emerald:</strong> You can upgrade the amount of storage the Warehouse has to <i>Double</i> it's capacity by pressing this button and giving it 1 block of emerald. This can <b>ONLY</b> be done when the warehouse is at <b>Level 5</b> build.</li><br>
-      <li><strong>Sort: </strong> The sort option is available at level 4.
-    </ul>
-  </div>
-</div>  
-  
-  <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
+      <li><strong>Block of Emerald: </strong>You can double the Warehouse's capacity by pressing this button when you have one block of emerald. This can only be done when the warehouse is at level 5.</li><br>
+      <li><strong>Sort: </strong>The sort option is available when the Warehouse reaches level 4. It sorts and stacks all the items in the racks.
+    

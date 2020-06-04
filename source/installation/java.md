@@ -40,7 +40,7 @@ Run the downloaded recommended version and make sure it's on "Install Client". I
 
 ### Download Minecolonies
 
-Go to the [MineColonies CurseForge Download page](https://minecraft.curseforge.com/projects/minecolonies/files) site and download the latest 1.12.2 version of MineColonies.
+Go to the [MineColonies CurseForge Download page](https://curseforge.com/minecraft/mc-mods/minecolonies/files/all) site and download the latest 1.12.2 version of MineColonies.
 
 ### Navigate to Mods Folder
 

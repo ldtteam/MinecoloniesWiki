@@ -13,9 +13,9 @@ layout: default
 
 ## The Item
 
-The Rack is Minecolonies version of a chest. It can be combined with another one to make a double Rack, like a double chest. Racks are used almost exclusively in the mod schematics.  
+The rack is the Minecolonies version of a chest. It can be combined with another rack to make a double rack, like a double chest. Racks are used almost exclusively in the mod schematics.  
 <br>
 
 ## Using the Rack
 
-Use the rack just as you would with a chest. 
+Use the rack like you would use a chest. 

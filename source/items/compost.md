@@ -14,9 +14,9 @@ layout: default
 
 ### The Item
 
-There are actually two types of Compost, There is the Compost Block which is used in the Florist Schematics, and there is the Compost Item which is used by the Florist and the Farmer to like bonemeal. 
+There are two types of compost. There is the compost block which is used in the [Flower Shop](../../source/buildings/flowershop) schematics, and there is the compost item which is used by the [Florist](../../source/workers/florist) and the [Farmer](../../source/workers/farmer) like bonemeal.
 <br>
 
-### Using the Compost
+### Using Compost
 
-The composter uses the Barrel to create compost, the item. It works like bonemeal to increase the speed of plant growth. The florist has to have compost in order to grow flowers. The farmer does not need compost or bonemeal to work.  
+The [Composter](../../source/workers/composter) uses a [barrel](../../source/items/barrel) to create compost (the item). It works like bonemeal to increase the speed of plant growth. The Florist must have compost to grow flowers. The Farmer does not need compost or bonemeal to work, but prefers it.

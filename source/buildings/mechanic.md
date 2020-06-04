@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Mechanic Hut
+# Mechanic's Hut
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/mechanic.png" alt="Mechanic" />
@@ -19,14 +19,14 @@ layout: default
     <recipe>mechanic</recipe>
 </div>
 
-# About the Mechanic Hut
+# About the Mechanic's Hut
 
-The Mechanic's Hut is where the Mechanic will create redstone items, rail items, clocks, compass', and other items not made by other crafters. 
+The Mechanic's Hut is where the Mechanic will create redstone items, rail items, clocks, compasses, and other items not made by other crafters. For the Mechanic to work, they must receive a request from another worker and have the necessary materials. The Mechanic's Hut must also have been taught the crafting recipes for all the items you want the Mechanic to be able to craft.
 
-**Hint:** The number of recipes you can teach the Mechanic doubles per building level. So:
+**Hint:** The number of recipes you can teach the Mechanic's Hut doubles per building level. So:
 
 
-| Mechanic Level | Number of Recipes |
+| Mechanic's Hut Level | Number of Recipes |
 | :-----: | :-----: |
 | 1 | 20 | 
 | 2 | 40 |
@@ -36,9 +36,9 @@ The Mechanic's Hut is where the Mechanic will create redstone items, rail items,
 
 <br>
 
-# Mechanic GUI
+# Mechanic's Hut GUI
 
-When accessing the Mechanic block by right-clicking on it, you will see a GUI with different options:
+When accessing the Mechanic's Hut block by right-clicking on it, you will see a GUI with different options:
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -54,4 +54,3 @@ When accessing the Mechanic block by right-clicking on it, you will see a GUI wi
   </div>
 </div>
 <br> <br>
-
