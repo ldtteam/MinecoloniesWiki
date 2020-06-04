@@ -20,9 +20,9 @@ layout: default
 </div>
 
 
-# About the Building
+# About the Archery
 
-The Archery building is where your [Rangers in Training](../../source/workers/ranger) become [Rangers Guards](../../source/workers/guard). This also allows them to level up without risk of dying to mobs. The number of students depend on the level of the building. 
+The Archery is where your [Rangers in Training](../../source/workers/ranger) will train to become [Ranger Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the building. 
 
 | Archery Level | Max # of Students |
 | :----: | :----: |
@@ -32,15 +32,14 @@ The Archery building is where your [Rangers in Training](../../source/workers/ra
 | 4 | 4 |
 | 5 | 5 |
 
-The Rangers in Training require a bow to practice. They will stand on or near the glowstone in the floor/ground and shoot at the targets, a bail of hay on a fence post. 
+The Rangers in Training require a bow to practice. They will stand on or near the glowstone in the floor/ground and shoot at the targets, a bale of hay on a fence post. 
 
-The Rangers in Training are not actual guards even though they will be dressed as guards, in the usual Ranger clothes. They will go to their own house at night to sleep. 
-
+The Rangers in Training are not actual Guards even though they will be dressed as Ranger Guards. They will go to their own house at night to sleep. 
 
 
 # Archery GUI
 
-Once the building is built, you can access the Archery block (right click on it) and you will see a GUI with different options:
+When accessing the Archery's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -48,7 +47,7 @@ Once the building is built, you can access the Archery block (right click on it)
     <img src="../../assets/images/gui/archerygui.png" class="img-fluid mx-auto" alt="Archery GUI">
    </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global%}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -58,5 +57,3 @@ Once the building is built, you can access the Archery block (right click on it)
 </div>  
   <br>
   
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
-
