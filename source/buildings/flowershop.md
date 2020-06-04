@@ -26,12 +26,12 @@ The Flower Shop is where your Florist will grow flowers for your Colony, if give
 **Hint:** The higher the level of the Flower Shop, the more daily output the florist can handle. So:
 
 | Building Level | Number of Plants |
-| ----- | ----- |
-| 1 | 4  |
-| 2 | 8  |
-| 3 | 12 |
-| 4 | 16 |
-| 5 | 20 |
+| -------------- | ---------------- |
+| 1              | 4                |
+| 2              | 8                |
+| 3              | 12               |
+| 4              | 16               |
+| 5              | 20               |
 
 # Flower Shop GUI
 
@@ -57,6 +57,6 @@ The second page shows a list of items the Florist can plant. You can turn the pl
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/flowershopgui2.png" class="img-fluid mx-auto" alt="Crusher GUI">
+    <img src="../../assets/images/gui/flowershopgui2.png" class="img-fluid mx-auto" alt="Florist GUI">
   </div>
 </div>

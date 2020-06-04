@@ -4,31 +4,20 @@ layout: default
 ---
 # Shingles
 
-<img src="../../assets/images/deco/shingles.png" alt="Shingle Woods"/>
-<div class="infobox box text-center">
-    <p><strong>Recipe: </strong>
-    <recipe>shingleclay</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shinglemoss</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslate</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shinglethatched</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslab</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslabslate</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslabthatched</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleclaycolors</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslatecolors</recipe>
-    <p><strong>Recipe: </strong>
-    <recipe>shingleslabcolors</recipe>
 
-<br>
+<div class="infobox box text-center">
+    <recipe>shingleclay</recipe>
+    <recipe>shinglemoss</recipe><br>
+    <recipe>shingleslate</recipe>
+    <recipe>shinglethatched</recipe><br>
+    <recipe>shingleslab</recipe>
+    <recipe>shingleslabslate</recipe><br>
+    <recipe>shingleslabthatched</recipe>
+    <recipe>shingleclaycolors</recipe><br>
+    <recipe>shingleslatecolors</recipe>
+    <recipe>shingleslabcolors</recipe><br>
 </div>
+<br>
 
 ## The Item
 
@@ -40,4 +29,6 @@ There is even a shingle half slab for the crown of the roof that comes in all th
 ## Using the Shingles
 
 Use the shingles like you would use stairs to create roofs for buildings.
+
+<img src="../../assets/images/deco/shingles.png" alt="Shingle Woods"/>
  

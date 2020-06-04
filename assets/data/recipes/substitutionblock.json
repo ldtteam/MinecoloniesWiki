@@ -2,21 +2,21 @@
   {
     "firstRow":
     {
-      "firstItem": "",
-      "secondItem": "",
+      "firstItem": "minecraft/stick",
+      "secondItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
       "thirdItem": ""
     },
     "secondRow":
     {
-      "firstItem": "",
-      "secondItem": "",
-      "thirdItem": ""
+      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "secondItem": "minecraft/iron_ingot",
+      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"]
     },
     "thirdRow":
     {
       "firstItem": "",
-      "secondItem": "",
-      "thirdItem": ""
+      "secondItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "thirdItem": "minecraft/stick"
     },
     "product": "minecolonies/blocksubstitution",
     "amount": "32"

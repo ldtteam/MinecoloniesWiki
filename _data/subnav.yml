@@ -50,7 +50,7 @@ subnav:
       - page: Happiness System
         url: source/systems/happiness
       - page: Worker System
-        url: source/systems/workerinfo
+        url: source/systems/worker
       - page: Town Claim Modes
         url: source/systems/townclaimmodes
       - page: Protection System
