@@ -26,7 +26,6 @@ layout: default
     <p><strong>Recipe:</strong> 
     <recipe>timberframealtcactus</recipe>
 </div>
-
 <br>
 
 
