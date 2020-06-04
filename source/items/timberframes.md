@@ -36,4 +36,4 @@ For the rest of the variants you just have to put a version of the Timberframe i
 To use the Timber Framed Blocks simply put them where you want them, however, they are directional, meaning they change orientation depending on how you place them. 
 
 <img src="../../assets/images/deco/plain_timberframes.png" alt="Plain Timberframes" />
-<img src="../../assets/images/deco/plain_timberframes_alts_static.png" alt="Shingle colors" />
+<img src="../../assets/images/deco/TimberedFrames.png" alt="Timbered Frames" />
