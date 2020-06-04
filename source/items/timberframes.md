@@ -4,10 +4,6 @@ layout: default
 ---
 # Timber Frames
 
-<img src="../../assets/images/deco/plain_timberframes.png" alt="Plain Timberframes" />
-<img src="../../assets/images/deco/plain_timberframes_alts_static.png" alt="Shingle colors" />
-
-
 <div class="infobox box text-center">
     <recipe>timberframeplain</recipe>
     <recipe>timberframealtoak</recipe><br>
@@ -38,3 +34,6 @@ For the rest of the variants you just have to put a version of the Timberframe i
 ## Using the Timberframes
 
 To use the Timber Framed Blocks simply put them where you want them, however, they are directional, meaning they change orientation depending on how you place them. 
+
+<img src="../../assets/images/deco/plain_timberframes.png" alt="Plain Timberframes" />
+<img src="../../assets/images/deco/plain_timberframes_alts_static.png" alt="Shingle colors" />
