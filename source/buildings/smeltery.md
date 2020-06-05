@@ -72,7 +72,7 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Smeltable Ore: </strong>Listed here are ores that can be smelted by the smelter. This is autopopulated with all coded ores, even if they come from other mods. If you have ores that are not on the list. They can be added to the config file. 
+      <li><strong>Smeltable Ore: </strong>Listed here are ores that can be smelted by the smelter. You can click to turn each one on or off. All coded ores (even if they come from other mods) are automatically added to this list. If you have ores that are not on the list, they can be added to the config file. 
       </ul>
     </ul>
   </div>
