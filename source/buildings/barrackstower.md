@@ -65,13 +65,26 @@ This is page two of the GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li>When you select this mode you have two options: </li>
+        <li><strong>Knight or Ranger:</strong> This is where you can choose if you want the Guard to be a Knight or a Ranger-just click to change the setting. The difference between the two is that Knights use swords, while Rangers use bows. <b>Note:</b> You can only change this if you have turned <strong>Assign the Guard to the Job</strong> to manually, otherwise the Guard will be a Knight by default.</li>
+        <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard to patrol, follow, or guard.</li>      
+        <ul>
+        <li>If you set it to Guard, you can set one area for the Guard to stay in. You can set the area by clicking Set Guarding Target, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
+        <li>If you set it to Follow, the Guard will follow you around as your personal bodyguard protecting you or fighting alongside you. However, if you are more than 40*Barracks Tower level blocks away from the Barracks Tower, the Guard will automatically return to their tower.</li>
+        <li>If you set it to Patrol, you have a couple different options. </li>
+        <ul>
+        <li>If you set Find Patrol Target to automatically, the Guard will patrol from hut to hut and back to their tower.</li>
+        <li>If you set Find Patrol Target to manually, you can set the patrol route when you click on Set Patrol Positions. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard to patrol between.</li>
+      </ul>
+    </ul>
+      </ul>
+    </ul>
+      </ul>
     </ul>
   </div>
 </div>
 <br>
 
-On the third page of the GUI you can tell the Guard who to attack and who to ignore. You can also choose the priority of each mob by moving them up or down in the list.
+On the third page of the GUI you can tell the Guard which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list.
 
 <div class="row">
   <div class="col-sm-12 col-md">
