@@ -32,7 +32,7 @@ Everything you have to change is just one file.
 <br><br>
 
 ## Official language templates
-For download the file click the _raw_ button on top of the page and then right-click -> save as...<br>
+
 These are the links we provide you for making your life a little bit easier:
 
 ### Spanish
