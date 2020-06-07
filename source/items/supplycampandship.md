@@ -38,6 +38,7 @@ There are also a variety of camps to choose from, based on the style you want. Y
 *Once the Supply Camp or Ship is placed, you can't place another Camp or Ship in this colony anymore. Unless you find one in a treasure chest.*
 
 - **Hint:** If you’re not able to place the Supply Camp or Ship, try it block by block: one to the right, or the left, closer of further from the area you cleared. It can not contain any holes or have any flowers, grass, ferns, seaweed, etc. It must be completely flat and clear. If you can not place the camp, enlarge the area outside the outline of the camp by one or two blocks around the parameter. 
+<br>
 
 **Here are some screenshots:**
 
