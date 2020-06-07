@@ -63,8 +63,6 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <ul>
-        <li><strong>List of any deliveries the Deliveryman is making.</li>
-    </ul>
-  </div>
+       <strong>List of any deliveries the Deliveryman is making.
+   </div>
 </div>
