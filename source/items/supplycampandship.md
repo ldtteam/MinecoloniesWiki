@@ -32,8 +32,9 @@ To place either Camp or Ship, simply right click on a block and the 3D preivew o
     
 <img src="../../assets/images/gui/shipgui.png" alt="Supply Ship GUI">
 <br>
+<br>
     
-There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the Green Check, and the Camp or Ship will be placed. 
+<p style="text-align:left;">There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the Green Check, and the Camp or Ship will be placed. 
 
 *Once the Supply Camp or Ship is placed, you can't place another Camp or Ship in this colony anymore. Unless you find one in a treasure chest.*
 
