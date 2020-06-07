@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Barrel 
+# Horizontal Barrel 
 
 ## Welcome to the Horizontal Barrel page. 
 
