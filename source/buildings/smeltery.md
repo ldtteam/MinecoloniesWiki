@@ -53,6 +53,7 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
   </div>
 </div>
 <br>
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/smelterygui2.png" class="img-fluid mx-auto" alt="Smeltery GUI 2">
@@ -78,6 +79,5 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
     </ul>
   </div>
 </div>
-
-  <br>
+<br>
   
