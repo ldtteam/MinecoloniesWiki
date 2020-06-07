@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Agility</p>
       <p class="traits">Adaptability</p>
-      <p><a href="../buildings/archery">Archery</a><b></p>
+      <p><a href="../buildings/archery">Archery</a></p>
     </div>
   </div>
 </div>
