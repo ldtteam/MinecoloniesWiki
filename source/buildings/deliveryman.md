@@ -62,6 +62,10 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
     <img src="../../assets/images/gui/deliverymangui2.png" class="img-fluid mx-auto" alt="Deliveries">
   </div>
   <div class="col-sm-12 col-md">
-    <br>
-       <strong>List of any deliveries the Deliveryman is making.
+    <ul>
+      <li><strong>Deliveries:</strong> List of any deliveries the Deliveryman is making.</li><br>
+    </ul>
+  </div>
+</div>
+<br>
 
