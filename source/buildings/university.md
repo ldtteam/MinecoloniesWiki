@@ -21,11 +21,9 @@ layout: default
 
 # About the University
 
-## Note: The Research tree is still being worked on, so the images may change.
-
 The University is where a researcher will research various upgrades to your colony. 
 
-# University GUI
+## University GUI
 
 When accessing the University's hut block by right-clicking on it, you will see a GUI with different options:
 
