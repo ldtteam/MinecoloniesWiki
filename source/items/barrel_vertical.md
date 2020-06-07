@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Barrel 
+# Vertical Barrel 
 
 ## Welcome to the Vertical Barrel page. 
 
