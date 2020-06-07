@@ -31,6 +31,7 @@ To place either Camp or Ship, simply right click on a block and the 3D preivew o
 <p style="text-align:center;"><img src="../../assets/images/gui/campgui.png" alt="Supply Camp GUI">
     
 <img src="../../assets/images/gui/shipgui.png" alt="Supply Ship GUI">
+<br>
     
 There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the Green Check, and the Camp or Ship will be placed. 
 
