@@ -5,7 +5,7 @@ layout: default
 # Supply Camp and Supply Ship
 
 <div class="infobox box text-center">
-    <recipe>supplycamp</recipe>
+    <recipe>supplycamp</recipe><br>
     <recipe>supplyship</recipe>
 </div>
 <br>
