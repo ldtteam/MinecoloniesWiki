@@ -11,6 +11,10 @@ subnav:
         url: source/items/ancient_tome
       - page: Barrel
         url: source/items/barrel
+      - page: Horizontal Barrel
+        url: source/items/barrel_horizontal
+      - page: Vertical Barrel
+        url: source/items/barrel_vertical
       - page: Building Tool
         url: source/items/buildingtool
       - page: Calipers
