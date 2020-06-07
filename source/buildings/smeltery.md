@@ -61,7 +61,7 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
   <div class="col-sm-12 col-md">
     <ul>
       <li><strong>Fuel: </strong>Listed here are items that can be used by the Smelter as fuel in their furnaces. Turn on any that you want your Smelter to use, and a Deliveryman will deliver those items to the Smelter when they need fuel. (The black box at the top is to search for items.)
-      </ul>
+      </li>
     </ul>
   </div>
 </div>  
