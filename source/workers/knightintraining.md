@@ -25,6 +25,7 @@ layout: default
     </div>
   </div>
 </div>
+<br>
 
 
 The Knight in Training will train at the Combat Academy to become a [Guard](../../source/workers/guard). They will hit a practice dummy with a sword to increase their level without a risk of dying to mobs.
