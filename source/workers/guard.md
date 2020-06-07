@@ -5,7 +5,10 @@ layout: default
 # Guard
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/guard_knight.png" alt="Guard Knight" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/Guard_Ranger.png" alt="Guard Ranger" />
+  <img src="../../assets/images/workers/knight_m.png" alt="Guard Knight Male" />&nbsp;&nbsp;&nbsp;
+  <img src="../../assets/images/workers/knight_f.png" alt="Guard Knight Female" />&nbsp;&nbsp;&nbsp;<br>
+  <img src="../../assets/images/workers/ranger_m.png" alt="Guard Ranger Male" />&nbsp;&nbsp;&nbsp;
+  <img src="../../assets/images/workers/ranger_f.png" alt="Guard Ranger Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
