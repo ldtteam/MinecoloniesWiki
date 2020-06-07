@@ -59,7 +59,7 @@ When accessing the Builder’s Hut block by right-clicking on it, you will see a
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
 </div>
-    <ul>
+  
       <li><strong>Required Resources:</strong> These are the resources that the Builder will need for the build order they are currently working on. This amount will change as they place blocks and will show <strong>only</strong> what blocks the Builder still needs to place. The blocks in red are the ones neither you nor the Builder has in their inventory.</li>
     </ul>
 <br>
