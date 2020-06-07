@@ -17,7 +17,7 @@ layout: default
     <div class="col">
       <p class="traitp">Adaptability</p>
       <p class="traits">Stamina</p>
-      <p><a href="../buildings/combatacademy">Combat Academy</a><b></p>
+      <p><a href="../buildings/combatacademy">Combat Academy</a></p>
     </div>
   </div>
 </div>
