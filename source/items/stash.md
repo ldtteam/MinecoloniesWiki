@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-## The Item
+## The Block
 
 The Stash lets the player deposit items that they want to be picked up by a [Deliveryman](../../source/workers/deliveryman) to take to the [Warehouse](../../source/buildings/warehouse).
 
