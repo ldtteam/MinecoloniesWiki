@@ -12,11 +12,9 @@ layout: default
 
 # About the Building
 
-## Basics
+The Town Hall is the central part of your colony.
 
 **Note:** The Town Hall block **cannot** be crafted until **after** you have already placed the Town Hall you get from the [Supply Ship/Camp](../../source/items/supplycampandship). If needed, it can also be obtained in Creative like any other block or by commands (check our [Commands](../systems/commands) page).
-
-The Town Hall is the central part of your colony.
 
 ## Starting a New Colony
 
