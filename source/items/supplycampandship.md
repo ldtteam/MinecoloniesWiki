@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The Supply Camp or the Supply Ship is how you start the Minecolonies Mod. 
+The Supply Camp or the Supply Ship is how you begin a colony. 
 
 The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so you can start building your colony. Each option gives you a great supply of materials for you to get started as well as a very illuminated and safe place to live while you get your Town started. There are a variety of items, and they may change diepending on the style you choose to use. Many also may have some treasure hidden in them. 
 
