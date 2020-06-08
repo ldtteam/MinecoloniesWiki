@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Stashbox 
+# Stash
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/stashbox.png" alt="Stashbox"></p>
