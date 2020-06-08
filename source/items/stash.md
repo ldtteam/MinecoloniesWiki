@@ -18,4 +18,4 @@ The Stash lets the player deposit items that they want to be picked up by a [Del
 
 ## The Use
 
-To use the Stash, right-click on it to bring up the inventory, which works just like a chest. Just put items in the Stash and a Deliveryman will pick them up.
+To use the Stash, right-click on it to bring up the inventory, which works just like a chest. Put items in the Stash and a Deliveryman will pick them up.
