@@ -10,7 +10,7 @@
     "secondRow":
     {
       "firstItem": "",
-      "secondItem": "minecraft/carpet_white",
+      "secondItem": ["minecraft/carpet_black","minecraft/carpet_blue","minecraft/carpet_brown","minecraft/carpet_cyan","minecraft/carpet_gray","minecraft/carpet_green","minecraft/carpet_lightblue","minecraft/carpet_lightgray","minecraft/carpet_limegreen","minecraft/carpet_magenta","minecraft/carpet_orange","minecraft/carpet_pink","minecraft/carpet_purple","minecraft/carpet_red","minecraft/carpet_yellow"],
       "thirdItem": ""
     },
     "thirdRow":
