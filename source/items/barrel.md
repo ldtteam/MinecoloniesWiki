@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-## The Item
+## The Block
 
 The barrel is used by the [Composter](../../source/workers/composter) to make [compost](../../source/items/compost).
 <br>
