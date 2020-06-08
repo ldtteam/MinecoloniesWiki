@@ -18,5 +18,5 @@ The Stashbox is for the player to drop items to be picked up by the [Deliveryman
 
 ### Using the Stashbox
 
-To use the postbox, right click on it to bring up the inventory. It works just like a chest, move items into the Stashbox. The Deliveryman will pick it up.
+To use the Stashbox, right click on it to bring up the inventory. It works just like a chest, move items into the Stashbox. The Deliveryman will pick it up.
 
