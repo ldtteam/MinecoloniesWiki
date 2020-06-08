@@ -10,13 +10,12 @@ layout: default
 </div>
 <br>
 
-### The Item
+## The Item
 
-The Stashbox is for the player to drop items to be picked up by the [Deliveryman](../../source/workers/deliveryman) to take to the [Warehouse](../../source/buildings/warehouse). 
+The Stash lets the player deposit items that they want to be picked up by a [Deliveryman](../../source/workers/deliveryman) to take to the [Warehouse](../../source/buildings/warehouse).
 
 <br>
 
-### Using the Stashbox
+## The Use
 
-To use the Stashbox, right click on it to bring up the inventory. It works just like a chest, move items into the Stashbox. The Deliveryman will pick it up.
-
+To use the Stash, right-click on it to bring up the inventory, which works just like a chest. Just put items in the Stash and a Deliveryman will pick them up.
