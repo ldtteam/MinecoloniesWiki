@@ -43,7 +43,7 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/deliverymangui.png" class="img-fluid mx-auto" alt="Deliveryman's GUI">
+    <img src="../../assets/images/gui/deliverymangui1.png" class="img-fluid mx-auto" alt="Deliveryman's GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -54,3 +54,18 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
     </ul>
   </div>
 </div>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/deliverymangui2.png" class="img-fluid mx-auto" alt="Deliveries">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+      <li><strong>Deliveries:</strong> List of any deliveries the Deliveryman is making.</li><br>
+    </ul>
+  </div>
+</div>
+<br>
+

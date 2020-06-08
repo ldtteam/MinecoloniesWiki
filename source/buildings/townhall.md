@@ -12,36 +12,47 @@ layout: default
 
 # About the Building
 
-### Basics
+## Basics
 
-**Note:** The Town Hall block can **not** be crafted, until after you have already placed the TownHall you get from the supply ship/camp. If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../systems/commands) page).
+**Note:** The Townhall block can **not** be crafted, until **after** you have already placed the Townhall you get from the supply ship/camp. If needed it can also be obtained in Creative like any other block or by commands. (check our [Commands](../systems/commands) page).
 
-If you try to place another TownHall, you will get a message <br> <img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second TownHall" />
+The Town Hall is the central part of your Town. 
 
-The Town Hall is the central part of your Town. once you have placed the "Town Hall block" the area of your Town will be established and the entire area will be protected. The protection system includes blocking any player from placing/breaking or interacting with blocks of *any* kind, setting lava, water or TNT, explosions won't damage your blocks. Once established it will also show in the "informational screen" (pressing F3 - bottom left). Be sure to use your [Building Tool](../items/buildingtool) to place the building. 
+## Starting a New Colony
 
-The protected area of your Colony (once the Town Hall has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
+### Scouting the Area
 
-- **Note**: You can configure your own Town area radius in the configuration options of the mod or the the minecolonies.cfg file inside the ```../minecraft/config/``` folder of your own world. (see minecolonies config server section for details)
+Make sure you scout your area carefully before you decide where you want to place your Townhall. You Colony will start with a 4 chunk radius (4 chunks in each direction) from the townhall block. Make sure this is where you want your colony to be.
+
+### Placing your Townhall
+
+After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your [Building Tool] (../items/buildingtool) to place the Town Hall block, once you "commit" to the placement of the Town Hall, the Town hall block will be set.
+
+Right click the ground in the area you want to place the Townhall. The building GUI will display showing the 3D preview of the building. You will be able to use the arrow buttons to move the building to the location you desire. 
+
+**Note:** Make sure you use the + and - options in the GUI to make sure you have the ground level of the hut where you want the ground level to be. Not all hut blocks sit on the ground.
+
+### Creating you Colony
+
+Once you have placed the "Town Hall block" you will need to right click on the Hut block and select Create New Colony.<img src="../../assets/images/gui/th_colonycreationGUI.png" alt="Creating New Colony" />
+
+A new colony will be created, the area of your Town will be established and the entire area will be protected. The protection system includes blocking any player from placing/breaking or interacting with blocks of *any* kind, setting lava, water or TNT, explosions won't damage your blocks. Once established it will also show in the "informational screen".
+
+### Protection Area
+
+When you start a colony, the area that is initially set also has protections added to it
+
+The protected area of your Colony (once the Town Hall has been placed) will dependent on the configuration, but will typically be 4 chunks radius by default, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. Your protected Town area includes mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
 Due to the protected area of each Town, you have to scout carefully your surroundings to make sure you are clear of any other Towns nearby preventing you from placing your Town hall or limit your Town area in that direction.
 
-If there is another Colony too close to your current position you won't be able to place a Town Hall.
-
-If you want to know whether there is a colony too close to your current position we included some information in the debug screen (Displayed when you press the F3 button) which contains a real time tracker showing you the distance to the next colony, the colony you're currently in, or if there is no colony close at all plus - if there is a colony close to your current position - the required distance to place your Town Hall.
-
-<p style="text-align:center;"><img src="../../assets/images/tutorial/next_colony.png" alt="Next Colony"></p>
-
-<p style="text-align:center;"><img src="../../assets/images/tutorial/players_colony.png" alt="Player's Colony"></p>
-
-<p style="text-align:center;"><img src="../../assets/images/tutorial/no_colony.png" alt="No Colony"></p>
-
-For example, in the official Minecolonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where TownHall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a Colony)."
-
-After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your [Building Tool] (../items/buildingtool) to place the Town Hall block, once you "commit" to the placement of the Town Hall, the Town hall block will be set and your Citizens will automagically appear. You can right click the Town Hall block to look at its graphical user interface.
-
 **Note:** Once you place your Town Hall block this will set the CENTER of your Town's protected radius. If you decide that your actual Town Hall building be "Built" in a different location (within your now set Town's protected radius) you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the Protected area of your Town so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your Town through [Commands](../systems/commands). 
 
+- **Note**: You can configure your own Town area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../config/``` folder of your own world. (see minecolonies config server section for details)
+
+If there is another Colony too close to your current position you won't be able to place a Town Hall.
+
+If you try to place another TownHall, outside of your protection area, you will get a message <br> <img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second TownHall" />
 
 # Town Hall GUI
 
@@ -49,7 +60,7 @@ After you have carefully decided where you want to place your Town Hall (Remembe
 
 <br>
 
-### <strong>Information:</strong> This is the overall information section of the Town Hall GUI
+## <strong>Information:</strong> This is the overall information section of the Town Hall GUI
    
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -62,9 +73,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Page 2: </strong>you will see the overall happiness of the Town's Citizens as well as any "Events" that the Town is having (future use atm).</li>
     </ul>
   </div>
-</div>  
+</div>
+<br>
+<br>
 
-### <strong>Actions:</strong> This is the most important section. Here you will see your Town's name and the Buttons:
+## <strong>Actions:</strong> This is the most important section. Here you will see your Town's name and the Buttons:
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -85,9 +98,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Feuds.- </strong>Other Colonies that you have added as "Feud" and they have confirmed your Colony as feud as well.</li>
     </ul>
   </div>
-</div>  
+</div>
+<br>
+<br>
 
-### <strong>Permissions:</strong> Here you can invite other players to your Town to collaborate. 
+## <strong>Permissions:</strong> Here you can invite other players to your Town to collaborate. 
 
 <p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give him a <i>Rank</i> in your Town. Each Rank will have certain privileges in the protection system that you can configure. Also you can set individual players as "Hostile".</p>
 
@@ -131,9 +146,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction.</li>
     </ul>
   </div>
-</div>  
+</div>
+<br>
+<br>
 
-### <strong>Citizens: </strong>This section just displays the names of the citizens in your Colony.
+## <strong>Citizens: </strong>This section just displays the names of the citizens in your Colony.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -146,9 +163,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Page 2: </strong>Here you will see the list of names of the citizens in your Colony.</li>
     </ul>
   </div>
-</div>  
+</div>
+<br>
+<br>
 
-### <strong>Settings: </strong>This section is where you can control how your Citizens will be hired and assigned housing in your Colony.
+## <strong>Settings: </strong>This section is where you can control how your Citizens will be hired and assigned housing in your Colony.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -166,9 +185,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Page 2: </strong>Pick team Color: What ever color you pick from here, your guards will have a "glow", of this color, around them when you place them in "follow" mode. this is for the PVP system, so you know which are your guards when you are fighting. </li>
     </ul>
   </div>
-</div>  
+</div>
+<br>
+<br>
 
-### <strong>Work Orders: </strong>Here you will see the work orders the [Builder](../../source/workers/builder) has in the order they have been assigned. The builder will not start another order until he has successfully completed the top one.
+## <strong>Work Orders: </strong>Here you will see the work orders the [Builder](../../source/workers/builder) has in the order they have been assigned. The builder will not start another order until he has successfully completed the top one.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -181,9 +202,11 @@ After you have carefully decided where you want to place your Town Hall (Remembe
      <li><strong>Page 2: </strong>Here are all the <i>Build</i> orders listed, that have been created by you (including decorations and your own schematics as well as the mod's buildings). The builder will complete the builds in that order, from top to bottom. Here you can <i>Manage</i> the priority of the builds and even delete work orders. When you delete a work order which is currently being built the builder will stop building and will continue where he left off when you create the build/upgrade order again.</li>
     </ul>
   </div>
-</div>  
+</div>
+<br>
+<br>
 
-### <strong>Happiness: </strong>This is the section for the global happiness of your Town, so you can see what area needs more attention to raise the happiness level.
+## <strong>Happiness: </strong>This is the section for the global happiness of your Town, so you can see what area needs more attention to raise the happiness level.
 
 <div class="row">
   <div class="col-sm-12 col-md">

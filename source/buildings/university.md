@@ -21,11 +21,9 @@ layout: default
 
 # About the University
 
-## Note: The Research tree is still being worked on, so the images may change.
-
 The University is where a researcher will research various upgrades to your colony. 
 
-# University GUI
+## University GUI
 
 When accessing the University's hut block by right-clicking on it, you will see a GUI with different options:
 
@@ -59,15 +57,19 @@ Page 2 of the GUI will show you the options for each research branch.
     
 <br>
     
-Once you click on a research branch, you will see the options for each research tree:
+Once you click on a research branch, you will see the options for each research tree: Each option will tell you the requirements and how long it takes to research that option. (Time is real world time spent in-game.)
 
 <br>
 
-<div class="row">
-  <div class="col-sm-12 col-md">  
-    <img src="../../assets/images/gui/universitygui3.png" class="img-fluid mx-auto" alt="University GUI Page 3">
-    </div>
-    <p> Each option will tell you the requirements and how long it takes to research that option. (Time is real world time spent in-game.)</p>
- </div>
+<img src="../../assets/images/gui/universitycombat.png" class="img-fluid mx-auto" alt="University Combat GUI Page">
+
+<br>
+
+<img src="../../assets/images/gui/universitycivilian.png" class="img-fluid mx-auto" alt="University Civilian GUI Page">
+
+ <br>
  
-<br>
+ <img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
+ 
+ <br>
+ 

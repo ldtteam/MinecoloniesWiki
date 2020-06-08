@@ -5,7 +5,7 @@ layout: default
 # StoneMason
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/stonemason_m.png" alt="StoneMason Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/stonemason_f.png" alt="StoneMason Female" />
+<img src="../../assets/images/workers/stonemason_m.png" alt="StoneMason Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/stonemason_F.png" alt="StoneMason Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">

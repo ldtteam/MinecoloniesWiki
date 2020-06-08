@@ -18,6 +18,6 @@
       "secondItem": ["minecraft/oak_boat","minecraft/spruce_boat","minecraft/birch_boat","minecraft/jungle_boat","minecraft/acacia_boat","minecraft/dark_oak_boat"],
       "thirdItem": ["minecraft/oak_boat","minecraft/spruce_boat","minecraft/birch_boat","minecraft/jungle_boat","minecraft/acacia_boat","minecraft/dark_oak_boat"]
     },
-    "product": "minecolonies/supplychest"
+    "product": "minecolonies/supplyship"
   }
 ]}
