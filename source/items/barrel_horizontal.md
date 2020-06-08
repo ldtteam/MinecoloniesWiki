@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-## The Item
+## The Block
 
 The horizontal barrel is a decoration.
 <br>
