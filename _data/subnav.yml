@@ -5,7 +5,7 @@ subnav:
         url: source/installation
       - page: Tutorials
         url: source/tutorials
-  - title: Items
+  - title: Items/Blocks
     subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
