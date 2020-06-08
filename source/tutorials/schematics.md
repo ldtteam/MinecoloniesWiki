@@ -89,7 +89,7 @@ Once ready, move the myown folder into the schematics folder and start your game
 
 - **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
-Custom Hut Filenames
+## Custom Hut Filenames
 
 Here is a full list, up-to-date as of 9 February 2020, of the building names. **Please note**, *capitalization matters*.
 
@@ -128,7 +128,7 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | university1    | university2    | university3    | university4    | university5    |
 | warehouse1     | warehouse2     | warehouse3     | warehouse4     | warehouse5     |
 
-### Hut Requirements
+## Hut Requirements
 
 | Building       | Requirements                                                         | Suggested           | 
 | :------------- | :-------------                                                       | :-------------      | 
@@ -156,7 +156,7 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | university     | bookshelves                                                          |                     |
 | warehouse      | racks                                                                |                     |
 
-### Level Requirements
+## Level Requirements
 
 | Level          | Requirements          | 
 | :------------- | :-------------        | 
@@ -166,9 +166,9 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | Level 4        | Difficult - Ocean     |
 | Level 5        | Very Difficult - End  | 
 
-### Tips on Building
+## Tips on Building
 
-# Do
+### Do
 <li> Do not change someone elses style unless specifically asked to do so.
 All levels must have the same footprint x, y & z
 Hut Block must be in the same location with the same rotation
@@ -177,14 +177,15 @@ Use Solid placeholders at or below ground level
 Use Light placeholders where you want to keep any existing block (including from level to level) IE Barracks Towers in the Barracks schematic
 Use only vanilla blocks or structurize blocks</li>
 
-# Watch
+### Watch
 <li>Books and Quills if books are blank
 If building upgradable deco, add the deco controller with the name of your deco item, I will fix the pathing that goes in it to match where I put it in the files</li>
 
-# Don't 
+### Don't 
 <li>No Player Heads
 Don't use unobtainable items in builds, no command blocks, petrified wood, or infested blocks</li>
 
+## Additional Information
 
 #### How to override some built-in schematics?
 
