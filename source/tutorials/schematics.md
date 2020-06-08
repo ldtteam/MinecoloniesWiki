@@ -128,26 +128,62 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | university1    | university2    | university3    | university4    | university5    |
 | warehouse1     | warehouse2     | warehouse3     | warehouse4     | warehouse5     |
 
-### Requirements
+### Hut Requirements
 
-| Building       | Requirements                          | Suggested       | 
-| :------------- | :-------------                        | :-------------  | 
-| archery        | 1 archery dummy per level             |                 | 
-| baker          | 1 furnace per level                   |                 | 
-| barracks       | 1 barracks tower per level (to lvl 4) |                 |
-| barracks tower |                                       | 1 bed per level |
-| citzens        |                                       | 1 bed per level |
-| combat academy | 1 combat dummy per level              |                 |
-| composter      | 1 composter barrel per level          |                 |
-| cook           | 1 furnace per level                   |                 |
-| florist        | 4 compost plots per level             |                 |
-| guard tower    |                                       | 1 bed per level |
-| hospital       | 1 bed per level                       |                 |
-| library        | bookshelves                           |                 |
-| smeltery       | 1 furnace per level                   |                 |
-| stonesmeltery  | 1 furnace per level                   |                 |
-| university     | bookshelves                           |                 |
+| Building       | Requirements                                                         | Suggested           | 
+| :------------- | :-------------                                                       | :-------------      | 
+| archery        | 1 archery dummy per level                                            |                     | 
+| bakery         | 1 furnace                                                            |                     | 
+| barracks       | 1 barracks tower per level (to lvl 4)                                |                     |
+| barracks tower |                                                                      | 1 bed per level     |
+| builder        |                                                                      | 1 rack per level    |
+| citzens        | 1 bed per level                                                      |                     |
+| combat academy | 1 combat dummy per level                                             |                     |
+| composter      | 1 composter barrel per level                                         |                     |
+| cook           | 1 furnace per level                                                  |                     |
+| dyer           | 1 furnace                                                            |                     |
+| florist        | 4 compost plots per level                                            |                     |
+| glassblower    | 1 furnace per level                                                  |                     |
+| guard tower    |                                                                      | 1 bed per level     |
+| hospital       | 1 bed per level                                                      |                     |
+| library        | bookshelves                                                          |                     |
+| miner          | mineshaft                                                            |                     |
+| school         | 2 carpets per level                                                  | 4 carpets per level |
+| smeltery       | 1 furnace per level                                                  |                     |
+| stonesmeltery  | 1 furnace per level                                                  |                     |
+| plantation     | 4 per level, brick under sand, cobble under sand, sand next to water |                     |
+| tavern         | 4 beds, barrels, dining room                                         |                     |
+| university     | bookshelves                                                          |                     |
+| warehouse      | racks                                                                |                     |
 
+### Level Requirements
+
+| Level          | Requirements          | 
+| :------------- | :-------------        | 
+| Level 1        | Very Easy - Wooden    | 
+| Level 2        | Easy - Iron           | 
+| Level 3        | Medium - Nether       | 
+| Level 4        | Difficult - Ocean     |
+| Level 5        | Very Difficult - End  | 
+
+### Tips on Building
+
+# Do
+<li> Do not change someone elses style unless specifically asked to do so.
+All levels must have the same footprint x, y & z
+Hut Block must be in the same location with the same rotation
+All Chests must remain in the same location through all additional levels
+Use Solid placeholders at or below ground level
+Use Light placeholders where you want to keep any existing block (including from level to level) IE Barracks Towers in the Barracks schematic
+Use only vanilla blocks or structurize blocks</li>
+
+# Watch
+<li>Books and Quills if books are blank
+If building upgradable deco, add the deco controller with the name of your deco item, I will fix the pathing that goes in it to match where I put it in the files</li>
+
+# Don't 
+<li>No Player Heads
+Don't use unobtainable items in builds, no command blocks, petrified wood, or infested blocks</li>
 
 
 #### How to override some built-in schematics?
