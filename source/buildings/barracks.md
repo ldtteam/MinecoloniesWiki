@@ -45,11 +45,15 @@ Once the building is built, you can access the Barracks block (right click on it
   <div class="col-sm-12 col-md"><br><br>
     <p>The Barracks and it's current Level. Will also keep track of and display the "Last Barbarian Spawns:". And the buttons:</p>
     <ul>
-      <li><strong>Build Options:</strong> This is the only option listed when clicking on the barracks hut, however, once you click on this, you will have the options to change the building (see next image)</li>
+      <li><strong>Build Options:</strong> This option will allow you to upgrade, or repair the building</li>
+      <li><strong>Hire Spies:</strong> This option is only available after the hut is level 3, Here you can hire spies during raids.</li>  
       <li><strong>Inventory:</strong> This is the most important button. Here you can access the buildings storage from where the worker takes and deposits materials, tools and anything they find along the way (citizens will pickup anything in their path that is considered a drop; saplings, seeds, rotten flesh, bones, arrows, etc.).</li>
     </ul>
   </div>
 </div>  
   <br>
+  <br>
+  
+  <img src="../../assets/images/gui/hiringspies.png" class="img-fluid mx-auto" alt="Hiring Spies">
   
 ### **To see build options please see the [Builder](../../source/workers/builder) Page** 

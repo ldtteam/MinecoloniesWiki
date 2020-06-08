@@ -5,7 +5,8 @@ layout: default
 # Knight in Training
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/knight_m.png" alt="Guard Knight Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/knight_f.png" alt="Guard Knight Female" />
+  <img src="../../assets/images/workers/knight_m.png" alt="Guard Knight Male" />&nbsp;&nbsp;&nbsp;
+  <img src="../../assets/images/workers/knight_f.png" alt="Guard Knight Female" />&nbsp;&nbsp;&nbsp;
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -16,7 +17,7 @@ layout: default
     <div class="col">
       <p class="traitp">Adaptability</p>
       <p class="traits">Stamina</p>
-      <p><a href="../buildings/combatacademy">Combat Academy</a><b></p>
+      <p><a href="../buildings/combatacademy">Combat Academy</a></p>
     </div>
   </div>
 </div>
