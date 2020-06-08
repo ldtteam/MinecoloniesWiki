@@ -12,7 +12,7 @@ layout: default
 
 The Supply Camp or the Supply Ship is how you begin a colony. 
 
-The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so you can start building your colony. Each option gives you a great supply of materials for you to get started as well as a very illuminated and safe place to live while you get your Town started. There are a variety of items, and they may change diepending on the style you choose to use. Many also may have some treasure hidden in them. 
+The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so you can start building your colony. Each option gives you a great supply of materials for you to get started as well as a very illuminated and safe place to live while you get your colony started. There are a variety of items, and they may change depending on the style you choose to use. Many also may have some treasure hidden in them. 
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplycamp.png" alt="Supply Camp"></p>
 
@@ -20,13 +20,13 @@ The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so
 
 ## Crafting the Supply Camp or Supply Ship
 
-You can craft the Supply Camp or Supply Ship using the recipes above. They can also be found in chest throughout the game. 
+You can craft the Supply Camp or Supply Ship using the recipes above. They can also be found in chests throughout the game. 
 
 ## Placement of the Supply Camp or Supply Ship
 
-Before you place the Supply Camp you need to have a large enough flat, clear piece of land that is as large as the camp area. Not all Camps or Ships are the same size. For the Supply Ship, you need an area of water at least 1 (one) block larger than the build area. 
+Before you place the Supply Camp, you need to have a large enough flat, clear piece of land that is as large as the camp area. For the Supply Ship, you need an area of water at least one block larger than the build area. Not all Camps or Ships are the same size.
 
-To place either Camp or Ship, simply right click on a block and the 3D preivew of the Camp and Ship will be displayed, with the GUI to move it around. You will see a white outline of the entire build, which is the area needed cleared. If you need to look around the area before accepting the build, press ESC to exit the GUI, (this will leave the preview up so you can still see it). To re-enter the GUI simply click the Camp or Ship on the ground again to bring it up.
+To place either Camp or Ship, simply right-click on a block and the 3D preivew of the Camp and Ship will be displayed, with the GUI to move it around. You will see a white outline of the entire build, which is the area that needs to be cleared. If you need to look around the area before accepting the build, press ESC to exit the GUI. This will leave the preview up so you can still see it. To re-enter the GUI, simply click the Camp or Ship on the ground again to bring it up.
 
 <p style="text-align:center;"><img src="../../assets/images/gui/campgui.png" alt="Supply Camp GUI">
     
@@ -34,11 +34,11 @@ To place either Camp or Ship, simply right click on a block and the 3D preivew o
 <br>
 <br>
     
-<p style="text-align:left;">There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the Green Check, and the Camp or Ship will be placed. 
+<p style="text-align:left;">There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the green check, and the Camp or Ship will be placed. 
 
-*Once the Supply Camp or Ship is placed, you can't place another Camp or Ship in this colony anymore. Unless you find one in a treasure chest.*
+*Once the Supply Camp or Ship is placed, you can't place another Camp or Ship in this colony any more, unless you find one in a treasure chest.*
 
-- **Hint:** If you’re not able to place the Supply Camp or Ship, try it block by block: one to the right, or the left, closer of further from the area you cleared. It can not contain any holes or have any flowers, grass, ferns, seaweed, etc. It must be completely flat and clear. If you can not place the camp, enlarge the area outside the outline of the camp by one or two blocks around the parameter. 
+- **Hint:** If you’re not able to place the Supply Camp or Ship, try it block by block: one to the right, or the left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, seaweed, etc. It must be completely flat and clear. If you can not place the camp, enlarge the area outside the outline of the camp by one or two blocks around the parameter. 
 <br>
 <br>
 
