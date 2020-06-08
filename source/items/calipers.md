@@ -10,12 +10,12 @@ layout: default
 </div>
 <br>
 
-### The Item
+## The Item
 
 The calipers cannot be crafted and are only available in creative mode. They are for measuring the size of lines, squares, and rectangular prisms.
 <br>
 
-### Using the Calipers
+## The Use
 
 To use the calipers to measure a line, right-click on the last block on each end of the line. (Note: as of right now the white lines will not be displayed.)  
 

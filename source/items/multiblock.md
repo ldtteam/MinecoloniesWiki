@@ -10,13 +10,13 @@ layout: default
 </div>
 <br>
 
-### The Block
+## The Block
 
 The multiblock looks like a smooth andesite block with a hole in each face. It lets you move multiple blocks at a time.
 
 <br>
 
-### The GUI
+## The GUI
 
 Place the multiblock beside, above, or below the blocks you want to move, then right click it to open the GUI. 
 
