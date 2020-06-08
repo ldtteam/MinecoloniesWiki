@@ -7,8 +7,8 @@ layout: default
 ## Welcome to the Floating Carpet page. 
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/items/floating_carpet.png" alt="Floating Carpet"></p>
-    <recipe>floatincarpet</recipe>
+    <p style="text-align:center;"><img src="../../assets/images/items/floatingcarpet.png" alt="Floating Carpet"></p>
+    <recipe>floatingcarpet</recipe>
 </div>
 <br>
 
