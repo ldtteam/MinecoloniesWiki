@@ -1,0 +1,24 @@
+
+{"recipes":[
+  {
+    "firstRow":
+    {
+      "firstItem": "",
+      "secondItem": "minecolonies/sceptergold",
+      "thirdItem": ""
+    },
+    "secondRow":
+    {
+      "firstItem": "",
+      "secondItem": "minecraft/carpet_white",
+      "thirdItem": ""
+    },
+    "thirdRow":
+    {
+      "firstItem": "",
+      "secondItem": "minecraft/string",
+      "thirdItem": ""
+      },
+    "product": "minecolonies/blockfloatingcarpet"
+  }
+]}
