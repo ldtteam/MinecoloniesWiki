@@ -57,7 +57,7 @@ Page 2 of the GUI will show you the options for each research branch.
     
 <br>
     
-Once you click on a research branch, you will see the options for each research tree: Each option will tell you the requirements and how long it takes to research that option. (Time is real world time spent in-game.)
+Once you click on a research branch, you will see the options for each research tree. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game.)
 
 <br>
 

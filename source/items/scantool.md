@@ -4,13 +4,13 @@ layout: default
 ---
 # Scan Tool
 
-## Welcome to the Scan Tool page.
-
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptersteel.png" alt="Scantool"></p>
     <recipe>scantool</recipe>
 </div>
 <br>
+
+## The Item
 
 The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your Builder build it for you! So if you build a  house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a [schematic](../tutorials/schematics) file that you can then use the build tool to place and have your Builder build it for you. Want your Builder to clear an area for you (and level up while working)? Then scan an area of air and place it with the building tool over what you want the Builder to clear! They'll clear that area away leaving only air! Watch a short video of how it works here:
 

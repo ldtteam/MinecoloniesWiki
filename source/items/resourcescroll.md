@@ -4,18 +4,16 @@ layout: default
 ---
 # Resource Scroll 
 
-## Welcome to the Resource Scroll page. 
-
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Resource Scroll"></p>
     <recipe>resourcescroll</recipe>
 </div>
 
-### The Item
+## The Item
 
 The resource scroll is an easy way to tell what one of your Builders needs. It's like the portable second page of the Builder's Hut!
 
-### Using the Resource Scroll
+## The Use
 
 When you first make the resource scroll, if you right-click anywhere you will get a message to shift + right click on a Builder's Hut to register the resource scroll. 
 
