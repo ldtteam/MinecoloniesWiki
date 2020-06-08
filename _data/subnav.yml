@@ -5,7 +5,7 @@ subnav:
         url: source/installation
       - page: Tutorials
         url: source/tutorials
-  - title: Items
+  - title: Items/Blocks
     subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
@@ -41,8 +41,8 @@ subnav:
         url: source/items/scantool
       - page: Shingles
         url: source/items/shingles
-      - page: Stashbox
-        url: source/items/stashbox
+      - page: Stash
+        url: source/items/stash
       - page: Substitution Blocks
         url: source/items/substitutionblocks
       - page: Supply Camp and Supply Ship

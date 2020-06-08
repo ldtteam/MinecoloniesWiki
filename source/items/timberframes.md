@@ -17,7 +17,7 @@ layout: default
 <br>
 
 
-## The Item
+## The Blocks
 <br>
 The Timber Framed Blocks are new blocks added with Structurize. The Timber Framed Blocks come in various wood frames, as seen in the first recipe, surrounding not only wood centers but also cactus, cobblestone, stone, paper and bricks. (The outside frames are only in wood and cactus.) 
 
@@ -31,7 +31,7 @@ For the rest of the variants you just have to put a version of the Timberframe i
 
 <br>
 
-## Using the Timberframes
+## The Use
 
 To use the Timber Framed Blocks simply put them where you want them, however, they are directional, meaning they change orientation depending on how you place them. 
 
