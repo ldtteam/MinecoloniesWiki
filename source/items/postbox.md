@@ -10,13 +10,13 @@ layout: default
 </div>
 <br>
 
-### The Item
+## The Block
 
 The postbox is for the player to request items from the [Warehouse](../../source/buildings/warehouse). A [Deliveryman](../../source/workers/deliveryman) will deliver them to the postbox. 
 
 <br>
 
-### Using the Postbox
+## The Use
 
 To use the postbox, right click on it to bring up the GUI.
 
