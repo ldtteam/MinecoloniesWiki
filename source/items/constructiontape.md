@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-## The Item
+## The Block
 
 Construction tape is a unique item that automatically generates when a building is placed. It can also be used as decoration.
 <br>
