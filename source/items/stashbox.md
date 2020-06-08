@@ -12,7 +12,7 @@ layout: default
 
 ### The Item
 
-The Stashbox is for the player to drop items to be picked up by the deliveryman to take to the [Warehouse](../../source/buildings/warehouse). A [Deliveryman](../../source/workers/deliveryman) will deliver them to the postbox. 
+The Stashbox is for the player to drop items to be picked up by the [Deliveryman](../../source/workers/deliveryman) to take to the [Warehouse](../../source/buildings/warehouse). 
 
 <br>
 
