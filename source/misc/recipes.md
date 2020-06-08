@@ -18,11 +18,14 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | Name                                          | Ingredients                                | Recipe                          |
 | --------------------------------------------- | ------------------------------------------ | ------------------------------- |
 | [Barrel](../../source/items/barrel)           | **Any** Planks + Building Tool + Dirt + Iron Ingot | <recipe>barrel</recipe> |
+| [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks        | <recipe>barrel_horizontal</recipe> |
+| [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks            | <recipe>barrel_vertical</recipe> |
 | [Building Tool](../../source/items/buildingtool) | Cobblestone + Stick                     | <recipe>buildingtool</recipe>   |
 | [Clipboard](../../source/items/clipboard)     | Stick + Building Tool + Leather            | <recipe>clipboard</recipe>      |
 | [Compost Block](../../source/items/compost)   | Dirt + Compost                             | <recipe>compost</recipe>        |
 | [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
+| [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Building Tool + String | <recipe>floatingcarpet</recipe> |
 | [Multiblock](../../source/buildings/multiblock) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multiblock</recipe> |
 | [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwalls</recipe>     |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
@@ -31,6 +34,7 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | <recipe>scantool</recipe>       |
 | [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | <recipe>shingleclay</recipe>    |
 | [Shingles Slab](../../source/items/shingles)  | Brick + Stick                              | <recipe>shingleslab</recipe>    |
+| [Stash](../../source/items/stash)             | **Any** Planks + Building Tool + Chests    | <recipe>stash</recipe>          |
 | [Solid Substitution Block](../../source/items/substitutionblocks) | **Any** Logs + Scan Tool | <recipe>solidsubblock</recipe> |
 | [Substitution Block](../../source/items/substitutionblocks) | **Any** Planks + Scan Tool   | <recipe>subblock</recipe>       |
 | [Supply Camp](../items/supplycampandship)     | Chests                                     | <recipe>supplycamp</recipe>     |
