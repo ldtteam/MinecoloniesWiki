@@ -19,14 +19,14 @@ layout: default
 </div>
 <br>
 
-## The Item
+## The Block
 
 Shingles are decorative roofing tiles for the tops of buildings. Shingles come in all wood types, including cactus planks, and many different colors. 
 
 There is even a shingle half slab for the crown of the roof that comes in all the colors as well.
 <br>
 
-## Using the Shingles
+## The Use
 
 Use the shingles like you would use stairs to create roofs for buildings.
 
