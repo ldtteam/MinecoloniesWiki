@@ -166,6 +166,9 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | Level 4        | Difficult - Ocean     |
 | Level 5        | Very Difficult - End  | 
 
+<br>
+<br>
+
 ## Tips on Building
 
 ### Do
