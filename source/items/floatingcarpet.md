@@ -10,11 +10,11 @@ layout: default
 </div>
 <br>
 
-## The Item
+## The Block
 
 Floating carpet is a decoration. It allows you to place carpet in the air without using string to hold it up. Other than that, it's the exact same as vanilla Minecraft carpet.
 <br>
 
-## Using Floating Carpet
+## The Use
 
 Use floating carpet for awnings or other builds.
