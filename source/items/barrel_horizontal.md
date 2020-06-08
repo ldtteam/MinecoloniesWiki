@@ -2,9 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Horizontal Barrel 
-
-## Welcome to the Horizontal Barrel page. 
+# Horizontal Barrel  
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/barrel_horizontal.png" alt="Horizontal Barrel"></p>
@@ -12,8 +10,11 @@ layout: default
 </div>
 <br>
 
-### The Item
+## The Item
 
-The Horizontal Barrel is used as decorations They have no usable function.
+The horizontal barrel is a decoration.
 <br>
 
+## The Use
+
+Horizontal barrels are decorations and have no purpose. They are used in the Tavern schematics.
