@@ -2,20 +2,18 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Clipboard 
-
-## Welcome to the Clipboard page. 
+# Clipboard  
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Clipboard"></p>
     <recipe>clipboard</recipe>
 </div>
 
-### The Item
+## The Item
 
 The clipboard is an easy way to see all the requests your workers have (that are not being fulfilled by a [Deliveryman](../../source/workers/deliveryman)).
 
-### Using the Clipboard 
+## The Use
 
 When you first make the clipboard and right-click anywhere, you will get a message to shift + right-click on the [Town Hall](../../source/buildings/townhall) to register the clipboard.
 

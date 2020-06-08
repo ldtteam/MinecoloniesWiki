@@ -4,19 +4,17 @@ layout: default
 ---
 # Waypoint
 
-## Welcome to the Waypoint page.
-
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/waypoint.png" alt="Waypoint"></p>
     <recipe>waypoint</recipe>
 </div>
 
 
-### The Item
+## The Block
 
 The waypoint tells your citizens where to walk. For example, you might put one on a road so your citizens will walk on it.
 <br>
 
-### Using the Waypoint
+## The Use
 
 In schematics, you can place the waypoint block to denote where workers should walk. When traveling from place to place, your citizens will walk through the waypoints along the way. They are mostly used in road schematics but can be used in any schematic. However, they should be used sparingly. There are no restrictions on where they can be placed, but when a citizen is nearby they will go to it or try to, so make sure they are placed in appropriate and accessible locations. 

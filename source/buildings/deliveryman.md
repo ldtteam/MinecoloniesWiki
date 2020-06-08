@@ -25,15 +25,15 @@ The Deliveryman runs back and forth from the [Warehouse](../../source/buildings/
 
 **Note:** You must build the Warehouse to at least level 1, otherwise, the Deliveryman won't be able to do their job.
 
-The level of the Deliveryman's Hut will dictate how much materials/tools it will carry to/from Huts - Warehouse - Huts, so if you want it to carry more materials/tools, be sure to upgrade the Deliveryman's Hut. Also, the higher the level of the hut, the faster the Deliveryman will move.
+The level of the Deliveryman's Hut will dictate how many items/blocks the Deliveryman can carry to/from Huts-Warehouse-Huts, so if you want them to carry more, be sure to upgrade the Deliveryman's Hut. Also, the higher the level of the hut, the faster the Deliveryman will move between huts and the Warehouse.
 
-| Building Level | Max Stacks of Materials |
-| :------------: | :---------------------: |
-| 1              | 1                       |
-| 2              | 2                       |
-| 3              | 4                       |
-| 4              | 5                       |
-| 5              | unlimited               |
+| Deliveryman's Hut Level | Max Stacks Carried |
+| :---------------------: | :----------------: |
+| 1                       | 1                  |
+| 2                       | 2                  |
+| 3                       | 4                  |
+| 4                       | 5                  |
+| 5                       | unlimited          |
 
 <br>
 
@@ -63,7 +63,7 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Deliveries:</strong> List of any deliveries the Deliveryman is making.</li><br>
+      <li><strong>Deliveries:</strong> This shows a list of all the deliveries the Deliveryman at this hut has. It also shows the priority of each delivery and who requested it.</li><br>
     </ul>
   </div>
 </div>
