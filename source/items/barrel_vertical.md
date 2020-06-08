@@ -2,9 +2,7 @@
 title: Minecolonies Wiki
 layout: default
 ---
-# Vertical Barrel 
-
-## Welcome to the Vertical Barrel page. 
+# Vertical Barrel
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/barrel_vertical.png" alt="Vertical Barrel"></p>
@@ -12,7 +10,11 @@ layout: default
 </div>
 <br>
 
-### The Item
+## The Item
 
-The Vertical Barrel is used as decorations They have no usable function.
+The vertical barrel is a decoration. 
 <br>
+
+## The Use
+
+Vertical barrels are decorations and have no purpose. They are used in the Tavern schematics.
