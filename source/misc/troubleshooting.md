@@ -8,10 +8,10 @@ layout: default
 
 ## Before we start:
   Please always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and upgrade to the latest alpha if you are not running the latest.
-  (Please note, that "alpha" does not mean, it's unstable, just a minor release.)
+  (Please note that alpha does not mean it's unstable, it just means it's a minor release.)
   
 
-## CHECKLIST: Identifying why a Citizen is not working
+## CHECKLIST: Identifying why a citizen is not working
 
   1. Is it daytime? Citizens do not work after sunset.
   2. Is it raining? Citizens do not work in the rain.
@@ -29,17 +29,17 @@ layout: default
 
 ## CHECKLIST: Troubleshooting a Citizen not working by Career
   1. [Builder](../../source/workers/builder): Remember to click the Build Building button inside the hut block you want to be built, then wait for the Builder to announce they have begun building.
-  2. [Lumberjack](../../source/workers/lumberjack): Set which type of tree they are allowed to cut, and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
+  2. [Lumberjack](../../source/workers/lumberjack): Set which type of tree they are allowed to cut and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
   3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level.
   4. [Cook](../../source/workers/cook): Set which fuel you want them to use.
-  5. [Baker](../../source/workers/baker): Set which fuel you want them to use, and which recipe you want them to make.
+  5. [Baker](../../source/workers/baker): Set which fuel you want them to use and which recipe you want them to bake.
   6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use.
-  7. [Farmer](../../source/workers/farmer): Make sure each scarecrow has a seed set. Make sure all tilled soil is hydrated.
+  7. [Farmer](../../source/workers/farmer): Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
   8. [Composter](../../source/workers/composter): Set which items you want them to convert into compost.
   9. Crafter: The request for materials must be made after the crafter is hired and the colony must have a Delivery person. Cancel the request at the original NPC to generate a new request, or make a new request from the PostBox.
   10. Crafter: Teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
   11. [Blacksmith](../../source/workers/blacksmith): Set which fuel you want them to use.
-  12. [StoneSmelter](../../source/workers/stonesmelter): Set which fuel you want them to use. They know their recipes already.  
+  12. [Stone Smelter](../../source/workers/stonesmelter): Set which fuel you want them to use. (They know their recipes already.)  
 
 ## CHECKLIST: Troubleshooting a Citizen not working for unknown reason
   1. Log out of the game. Open the (your game location)/config/minecolonies-common.toml file.
@@ -67,5 +67,5 @@ layout: default
   If you experience missing textures for hut blocks and your previews are messed up, check if you have Optifine installed as the current version is not stable.
   As there is nothing that we can do, you can either live with missing graphics, or you will have to deactivate Optifine.
 
-## Crashes when placing structures
-  If your game crashes placing a structure (e.g. a supply camp) your minecolonies and structurize are propably incompatible. Update both to the latest versions.
+## Crashes when Placing Structures
+  If your game crashes placing a structure (e.g. a supply camp), your Minecolonies and Structurize versions are probably incompatible. Update both to the latest alphas.
