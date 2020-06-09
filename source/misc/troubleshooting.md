@@ -23,7 +23,7 @@ layout: default
   8. Do they have any open requests? They might need a tool or other material to continue their work.
   9. Does their workhut have any open requests? They might be waiting for materials to continue their work.
   10. Do they have tools of the correct [level](../../source/systems/worker)? 
-  11. Is their inventory or their workhut inventory full? They will get stuck if they have no room to move things in or out.
+  11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
   
 **Note**  If none of these apply, go on to the next Troubleshooting checklists.  
 
