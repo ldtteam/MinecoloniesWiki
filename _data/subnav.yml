@@ -1,10 +1,20 @@
 subnav:
-  - title: Getting Started
+  - title: Installation
     subitems: 
-      - page: Installation
-        url: source/installation
-      - page: Tutorials
-        url: source/tutorials
+      - page: Java (Forge)
+        url: source/installation/java
+      - page: MultiMC
+        url: source/installation/multimc
+      - page: Twitch
+        url: source/installation/twitch
+  - title: Tutorials
+    subitems: 
+      - page: Walkthroughs
+        url: source/tutorials/tutorial
+      - page: Schematics
+        url: source/tutorials/schematics
+      - page: Servers
+        url: source/tutorials/serverinfo
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome
