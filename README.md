@@ -1,4 +1,4 @@
-# Minecolonies Wiki
+# MineColonies Wiki
 
-Here is where all content will be stored for our new wiki.\
+Here is where all content will be stored for our new wiki:\
 https://wiki.minecolonies.com
