@@ -22,7 +22,7 @@ layout: default
 
 # About the Archery
 
-The Archery is where your [Rangers in Training](../../source/workers/ranger) will train to become [Ranger Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the building. 
+The Archery is where your [Rangers in Training](../../source/workers/ranger) will train to become [Ranger Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Archery. 
 
 | Archery Level | Max # of Students |
 | :----: | :----: |
