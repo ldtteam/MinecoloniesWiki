@@ -6,7 +6,12 @@ layout: default
 
 # Troubleshooting
 
-## CHECKLIST: Identifying why a Citizen is not working
+## Before we start:
+  Please always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and upgrade to the latest alpha if you are not running the latest.
+  (Please note that alpha does not mean it's unstable, it just means it's a minor release.)
+  
+
+## CHECKLIST: Identifying why a citizen is not working
 
   1. Is it daytime? Citizens do not work after sunset.
   2. Is it raining? Citizens do not work in the rain.
@@ -17,30 +22,30 @@ layout: default
   7. Is their hunger level low? Citizens won't work while hungry. Give them food and if you have a Restaurant check that it is stocked. If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
   8. Do they have any open requests? They might need a tool or other material to continue their work.
   9. Does their workhut have any open requests? They might be waiting for materials to continue their work.
-  10. Do they have tools of the correct [level](../../source/system/workerinfo)? 
-  11. Is their inventory or their workhut inventory full? They will get stuck if they have no room to move things in or out.
+  10. Do they have tools of the correct [level](../../source/systems/worker)? 
+  11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
   
 **Note**  If none of these apply, go on to the next Troubleshooting checklists.  
 
 ## CHECKLIST: Troubleshooting a Citizen not working by Career
-  1. Builder: Remember to click the "Build Building" button inside the hut block you want to be built. Then wait for the BuilderNPC to announce they have begun building.
-  2. Woodcutter: Set which type of tree they are allowed to cut, and if they should replant them.
-  3. Miner: Is there an ore they cannot mine in their way? Break it for them.
-  4. Restaurant: Set which fuel you want them to use.
-  5. Bakery: Set which fuel you want them to use, and which recipe you want them to make.
-  6. Smelter: Set which fuel you want them to use.
-  7. Farmer: Make sure each scarecrow has a seed set. Make sure all tilled soil is hydrated.
-  8. Composter: Set which items you want them to convert into compost.
+  1. [Builder](../../source/workers/builder): Remember to click the Build Building button inside the hut block you want to be built, then wait for the Builder to announce they have begun building.
+  2. [Lumberjack](../../source/workers/lumberjack): Set which type of tree they are allowed to cut and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
+  3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level.
+  4. [Cook](../../source/workers/cook): Set which fuel you want them to use.
+  5. [Baker](../../source/workers/baker): Set which fuel you want them to use and which recipe you want them to bake.
+  6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use.
+  7. [Farmer](../../source/workers/farmer): Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
+  8. [Composter](../../source/workers/composter): Set which items you want them to convert into compost.
   9. Crafter: The request for materials must be made after the crafter is hired and the colony must have a Delivery person. Cancel the request at the original NPC to generate a new request, or make a new request from the PostBox.
   10. Crafter: Teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
-  11. Crafter - Blacksmith: Set which fuel you want them to use.
-  12. Crafter - StoneSmelter: Set which fuel you want them to use. They know their recipes already.  
+  11. [Blacksmith](../../source/workers/blacksmith): Set which fuel you want them to use.
+  12. [Stone Smelter](../../source/workers/stonesmelter): Set which fuel you want them to use. (They know their recipes already.)  
 
 ## CHECKLIST: Troubleshooting a Citizen not working for unknown reason
-  1. Log out of the game. Open the (your game location)/config/minecolonies.cfg file.
+  1. Log out of the game. Open the (your game location)/config/minecolonies-common.toml file.
       * Go to the line<br> 
-      `# Should in development features be enabled (might be buggy)`<br>
-      `B:enableInDevelopmentFeatures=false`
+      `#Should in development features be enabled (might be buggy). [Default: false]`<br>
+      `enableInDevelopmentFeatures=false`
       * Change the false to true
       * Restart your game
       * Watch the name area above the workers head, the information at the end will be important for devs to troubleshoot issues or assist you on the discord #help channel
@@ -57,3 +62,10 @@ layout: default
   12. Use the /mc rs reset [Command](../../source/systems/commands)
   13. Repair their workhut. Some buildings will stop working if required elements are not present. Only the BuilderNPC can place beds, crafting tables, furnaces, chests, racks, compost bins. If you broke any of those, break all of them and let the BuilderNPC repair the building.
   14. Fire worker, wait a few minutes, hire a different worker (You will lose advantage of the experience the first worker had accumulated at this career).
+
+## Missing Graphics and issues with Build Tool Preview
+  If you experience missing textures for hut blocks and your previews are messed up, check if you have Optifine installed as the current version is not stable.
+  As there is nothing that we can do, you can either live with missing graphics, or you will have to deactivate Optifine.
+
+## Crashes when Placing Structures
+  If your game crashes placing a structure (e.g. a supply camp), your Minecolonies and Structurize versions are probably incompatible. Update both to the latest alphas.
