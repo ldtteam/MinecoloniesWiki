@@ -44,7 +44,7 @@ When accessing the Barracks' hut block by right-clicking on it, you will see a G
   </div>
   <div class="col-sm-12 col-md"><br><br>
       <ul>
-      <li><strong>Barracks Level:</strong> This tells you the type of hut and the build level of the building you have selected.</li>         <li><strong>Current Barbarian Position and Last Barbarian Spawn:</strong> A tracker system for Barbarians. <strong>Note: </strong>you can only see the current barbarian position if you have <b>hired spies</b> (see below) during a raid.</li>
+      <li><strong>Barracks Level:</strong> This tells you the type of hut and the build level of the building you have selected.</li>         <li><strong>Current Barbarian Position and Last Barbarian Spawn:</strong> A tracker system for Barbarians. <strong>Note: </strong>you can only see the current barbarian position if you have <b>hired spies</b> (see below) during a current raid.</li>
       <li><strong>Build Options:</strong> Lets you create a build, upgrade, reposition, or repair build order for the Barracks. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li>
       <li><strong>Hire Spies:</strong> This option is only available after the hut is level 3. Here you can hire spies during raids: </li>  
       <br>
