@@ -19,7 +19,17 @@ layout: default
 
 # About the Barracks Tower
 
-The Barracks Towers will employ and house 1 [Guard](../../source/workers/guard) for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each Barracks Tower will house and employ 5 Guards at the highest level. Each new Guard will need a bed in a house in order to spawn, however, once they are hired at the Barracks Tower that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
+The Barracks Towers will employ and house 1 [Guard](../../source/workers/guard) for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn, however, once they are hired at the Barracks Tower that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
+
+
+| Barracks Tower Level | Max # of Guards |
+| :----: | :----: |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+
 
 The Barracks Tower locations are predetermined by the [Barracks](../../source/buildings/barracks) that you choose. They are placed in specific locations to fit within the Barracks. 
 
@@ -65,26 +75,24 @@ This is page two of the GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-        <li><strong>Knight or Ranger:</strong> This is where you can choose if you want the Guard to be a Knight or a Ranger-just click to change the setting. The difference between the two is that Knights use swords, while Rangers use bows. <b>Note:</b> You can only change this if you have turned <strong>Assign the Guard to the Job</strong> to manually, otherwise the Guard will be a Knight by default.</li>
-        <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard to patrol, follow, or guard.</li>      
+        <li><strong>Knight or Ranger:</strong> This is where you can choose if you want the Guard(s) to be a Knight or a Ranger-just click to change the setting. The difference between the two is that Knights use swords, while Rangers use bows. <b>Note:</b> You can only change this if you have turned the <strong>Assign the Guard to the Job</strong> setting to manually, otherwise the Guard(s) will be a Knight by default.</li>
+        <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard(s) to patrol, follow, or guard.</li>      
         <ul>
-        <li>If you set it to Guard, you can set one area for the Guard to stay in. You can set the area by clicking Set Guarding Target, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
-        <li>If you set it to Follow, the Guard will follow you around as your personal bodyguard protecting you or fighting alongside you. However, if you are more than 40*Barracks Tower level blocks away from the Barracks Tower, the Guard will automatically return to their tower.</li>
+        <li>If you set it to Guard, you can set one area for the Guard(s) to stay in. You can set the area by clicking <b>Set Guarding Target</b>, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
+        <li>If you set it to Follow, the Guard(s) will follow you around as your personal bodyguard protecting you or fighting alongside you. However, if you are more than 40*Barracks Tower level blocks away from the Barracks Tower, the Guard(s) will automatically return to their tower. If you choose <b>Loose Grouping</b>, the Guard(s) will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.</li>
         <li>If you set it to Patrol, you have a couple different options. </li>
         <ul>
-        <li>If you set Find Patrol Target to automatically, the Guard will patrol from hut to hut and back to their tower.</li>
-        <li>If you set Find Patrol Target to manually, you can set the patrol route when you click on Set Patrol Positions. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard to patrol between.</li>
+            <li>If you set <strong>Find Patrol Target</strong> to automatically, the Guard(s) will patrol from hut to hut and back to their tower.</li>
+            <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard(s) to patrol between.</li>
       </ul>
     </ul>
+        <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard(s) will retreat when they have low health, if possible. You can choose from Off or On.  
       </ul>
-    </ul>
-      </ul>
-    </ul>
   </div>
 </div>
 <br>
 
-On the third page of the GUI you can tell the Guard which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
+On the third page of the GUI you can tell the Guard(s) which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
 
 <div class="row">
   <div class="col-sm-12 col-md">
