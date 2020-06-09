@@ -30,7 +30,7 @@ layout: default
 ## CHECKLIST: Troubleshooting a Citizen not working by Career
   1. [Builder](../../source/workers/builder): Remember to click the "Build Building" button inside the hut block you want to be built. Then wait for the BuilderNPC to announce they have begun building.
   2. [Lumberjack](../../source/workers/lumberjack): Set which type of tree they are allowed to cut, and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
-  3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or asign him to a new mining level.
+  3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level.
   4. [Cook](../../source/workers/cook): Set which fuel you want them to use.
   5. [Baker](../../source/workers/baker): Set which fuel you want them to use, and which recipe you want them to make.
   6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use.
