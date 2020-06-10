@@ -44,6 +44,10 @@ The Barracks Tower locations are predetermined by the [Barracks](../../source/bu
 
 <br>
 
+<strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will expand.
+
+<br>
+
 # Barracks Tower GUI
 
 When accessing the Barracks Tower's hut block by right-clicking on it, you will see a GUI with different options:
