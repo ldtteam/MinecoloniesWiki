@@ -32,7 +32,7 @@ Everything you have to change is just one file.
     
 3. Run Minecraft client/server and enjoy.
 
-<br><br>
+<br>
 
 ## Official Language Templates
 
