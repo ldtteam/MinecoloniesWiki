@@ -41,5 +41,5 @@ Everything you have to change is just one file.
 [Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
 
-<br>
+
 ## Don't forget that the file must have the name _minecolonies-server.toml_!
