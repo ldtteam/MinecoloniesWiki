@@ -21,7 +21,7 @@ layout: default
 
 # About the Library
 
-The Library is the only way for you to raise your  adult citizens' skills (the [School](../../source/buildings/school) is only for kids). A citizen will randomly level up their skills as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
+The Library is a way for you to raise your adult citizens' skills (the [School](../../source/buildings/school) will increase kids' skills). A citizen will randomly level up their skills as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
 
 Two citizens can study at a time per Library level. So: 
 
