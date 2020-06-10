@@ -42,4 +42,4 @@ Everything you have to change is just one file.
 
 
 <br>
-## Don't forget: <strong>The file must have the name _minecolonies-server.toml_!</strong>
+## Don't forget that the file must have the name _minecolonies-server.toml_!
