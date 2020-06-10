@@ -2,7 +2,7 @@
 title: Minecolonies Wiki
 layout: recipes
 ---
-# Custom citizen names
+# Custom Citizen Names
 
 Would you like to have citizen names in your own language? Then this is your page!<br>
 Everything you have to change is just one file.
@@ -22,24 +22,24 @@ Everything you have to change is just one file.
 
 2. Edit
 	
-	You can use the official language templates we provide here or you can edit at your own risk. If so, don't forget to make a copy of the file first and follow the structure.
-    <br>Edit with a text editor.
-    <br>The file must have the same name.
+	You can use the official language templates we provide here or you can edit at your own risk. If you decide to edit, don't forget to make a copy of the file first and follow the current structure.
+    <br>
+    <ul>
+	<li>Edit with a text editor, like Notepad.</li>
+	<li>The file must have the same name.</li>
+	</ul>
     <br><br>
     
-3. Run minecraft client/server and enjoy.
+3. Run Minecraft client/server and enjoy.
 
 <br><br>
 
-## Official language templates
+## Official Language Templates
 
-These are the links we provide you for making your life a little bit easier:
+#### Spanish
 
-### Spanish
-
-[Download spanish template file](../../source/misc/languageNameTemplates/spanishTemplate.toml)
+[Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
 
 <br>
-**Don't forget:** The file must have the name _minecolonies-server.toml_.
-        
+**Don't forget:** The file must have the name _minecolonies-server.toml_
