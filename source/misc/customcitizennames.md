@@ -28,7 +28,7 @@ Everything you have to change is just one file.
 	<li>Edit with a text editor, like Notepad.</li>
 	<li>The file must have the same name.</li>
 	</ul>
-    <br><br>
+    <br>
     
 3. Run Minecraft client/server and enjoy.
 
