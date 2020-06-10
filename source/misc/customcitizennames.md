@@ -36,10 +36,10 @@ Everything you have to change is just one file.
 
 ## Official Language Templates
 
-#### Spanish
+### Spanish
 
 [Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
 
 <br>
-**Don't forget:** The file must have the name _minecolonies-server.toml_
+## Don't forget: <strong>The file must have the name _minecolonies-server.toml_!</strong>
