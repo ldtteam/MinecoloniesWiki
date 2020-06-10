@@ -6,8 +6,8 @@ layout: default
 
 # Troubleshooting
 
-## Before we start:
-  Please always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and upgrade to the latest alpha if you are not running the latest.
+## Before you start:
+  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and upgrade to the latest alpha if you are not running the latest.
   (Please note that alpha does not mean it's unstable, it just means it's a minor release.)
   
 
@@ -17,26 +17,26 @@ layout: default
   2. Is it raining? Citizens do not work in the rain.
   3. Did a citizen die yesterday? Citizens will mourn the next day and not work if one of them died the day before.
   4. Are there Barbarians or Pirates still around? Citizens will hide during raids until all attackers are killed.
-  5. Is their workhut of low level? Does worker have low XP at their career? Then they will often idle in between actually working until their personal XP improves and /or their workhut is upgraded.
+  5. Is their work hut of low level? Does worker have low XP at their career? Then they will often idle in between actually working until their personal XP improves and/or their work hut is upgraded.
   6. Is their hut PAUSED? Work huts now have a pause button. Sometimes players forget to unpause.
-  7. Is their hunger level low? Citizens won't work while hungry. Give them food and if you have a Restaurant check that it is stocked. If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
+  7. Is their hunger level low? Citizens won't work while hungry. Give them food, and if you have a Restaurant, check that it is stocked. If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
   8. Do they have any open requests? They might need a tool or other material to continue their work.
   9. Does their workhut have any open requests? They might be waiting for materials to continue their work.
   10. Do they have tools of the correct [level](../../source/systems/worker)? 
   11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
   
-**Note**  If none of these apply, go on to the next Troubleshooting checklists.  
+If none of these apply, go on to the next troubleshooting checklists.  
 
-## CHECKLIST: Troubleshooting a Citizen not working by Career
+## CHECKLIST: Troubleshooting a citizen not working by career
   1. [Builder](../../source/workers/builder): Remember to click the Build Building button inside the hut block you want to be built, then wait for the Builder to announce they have begun building.
   2. [Lumberjack](../../source/workers/lumberjack): Set which type of tree they are allowed to cut and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
-  3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level.
+  3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level. Do they have cobblestone, torches, a pickaxe, a shovel, slabs, and fencing (for the mineshaft)?
   4. [Cook](../../source/workers/cook): Set which fuel you want them to use.
   5. [Baker](../../source/workers/baker): Set which fuel you want them to use and which recipe you want them to bake.
   6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use.
-  7. [Farmer](../../source/workers/farmer): Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
+  7. [Farmer](../../source/workers/farmer): Assign the farmer to a field. Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
   8. [Composter](../../source/workers/composter): Set which items you want them to convert into compost.
-  9. Crafter: The request for materials must be made after the crafter is hired and the colony must have a Delivery person. Cancel the request at the original NPC to generate a new request, or make a new request from the PostBox.
+  9. Crafter (Miller, Blacksmith, Mechanic, etc): The request for materials must be made after the crafter is hired and the colony must have a [Deliveryman](../../source/workers/deliveryman). Cancel the request at the original NPC to generate a new request, or make a new request from the [Postbox](../../source/items/postbox).
   10. Crafter: Teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
   11. [Blacksmith](../../source/workers/blacksmith): Set which fuel you want them to use.
   12. [Stone Smelter](../../source/workers/stonesmelter): Set which fuel you want them to use. (They know their recipes already.)  
