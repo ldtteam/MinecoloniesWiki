@@ -58,7 +58,9 @@ When accessing the Crusher's Hut block by right-clicking on it, you will see a G
   </div>
 </div>
 
-On page two of the GUI, you can set what you want the Crusher to crush and how many blocks per day. (See the above lists). Be sure to click save at the bottom after you make changes.
+<br>
+
+On page two of the GUI, you can set what you want the Crusher to crush and how many blocks per day. (See the above lists.) Be sure to click save at the bottom after you make changes.
 
 <br>
 <img src="../../assets/images/gui/crushergui2.png" alt="Crusher GUI Page 2" />
