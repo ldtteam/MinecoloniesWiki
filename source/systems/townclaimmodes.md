@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Claim system
@@ -170,9 +170,9 @@ B:restrictColonyPlacement=false
 
 **_Or in-game through the "mod Options" button;_**
 
-**1-** Select minecolonies and pressing the Config button.
+**1-** Select MineColonies and pressing the Config button.
 
-**2-** Next screen select Minecolonies button.
+**2-** Next screen select MineColonies button.
 
 **3-** Next screen select gameplay button.
 
