@@ -19,7 +19,7 @@ layout: default
     <recipe>mechanic</recipe>
 </div>
 
-# About the Mechanic's Hut
+## About the Mechanic's Hut
 
 The Mechanic's Hut is where the Mechanic will create redstone items, rail items, clocks, compasses, and other items not made by other crafters. For the Mechanic to work, they must receive a request from another worker and have the necessary materials. The Mechanic's Hut must also have been taught the crafting recipes for all the items you want the Mechanic to be able to craft.
 
@@ -36,7 +36,7 @@ The Mechanic's Hut is where the Mechanic will create redstone items, rail items,
 
 <br>
 
-# Mechanic's Hut GUI
+## Mechanic's Hut GUI
 
 When accessing the Mechanic's Hut block by right-clicking on it, you will see a GUI with different options:
 
