@@ -19,7 +19,7 @@ layout: default
     <recipe>barracks</recipe>
 </div>
 
-# About the Building
+## About the Building
 
 The Barracks building is the ultimate protection for your Town. The barracks will hold 4 (*YES* 4! ) [Barracks Towers](../buildings/barrackstower) within it's structure. Also, the Barracks Towers (unlike the normal Guard Towers) will employ and house 1 citizen for every level built! Each new guard will need a bed in a house in order to spawn, however, once they are hired at the barracks that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit). Each Barracks Towers will house and employ 5 guards, for a total of 20 guards for your colony.
 
@@ -33,7 +33,7 @@ The Barracks building is the ultimate protection for your Town. The barracks wil
 
 <br>
 
-# Barracks Gui
+## Barracks Gui
 
 Once the building is built, you can access the Barracks block (right click on it) and you will see a GUI with different options:
 
