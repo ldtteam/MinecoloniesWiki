@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 
@@ -68,4 +68,4 @@ layout: default
   As there is nothing that we can do, you can either live with missing graphics, or you will have to deactivate Optifine.
 
 ## Crashes when Placing Structures
-  If your game crashes placing a structure (e.g. a supply camp), your Minecolonies and Structurize versions are probably incompatible. Update both to the latest alphas.
+  If your game crashes placing a structure (e.g. a supply camp), your MineColonies and Structurize versions are probably incompatible. Update both to the latest alphas.
