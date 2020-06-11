@@ -46,7 +46,7 @@ If none of these apply, go on to the next troubleshooting checklists.
       `enableInDevelopmentFeatures=false`
       * Change the false to true
       * Restart your game
-      * Watch the name area above the worker's head, the information at the end will be important for devs to troubleshoot issues or assist you on the Discord help channel
+      * Watch the name area above the worker's head. The information at the end will be important for devs to troubleshoot issues or assist you on the [Discord](discord.minecolonies.com) help channel.
   2. Nudge worker by walking into them, off the block they are standing on or out a door.
   3. Recall worker to their workhut.
   4. Make sure the path to their worksite is clear of obstructions.
