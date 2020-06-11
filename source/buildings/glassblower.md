@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Glassblower's Hut
@@ -26,7 +26,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 **Hint:** The number of recipes you can teach the Glassblower's Hut doubles per building level. So:
 
 
-| Glassblower Level | Number of Recipes |
+| Glassblower's Hut Level | Number of Recipes |
 | :-----: | :-----: |
 | 1 | 20 | 
 | 2 | 40 |
