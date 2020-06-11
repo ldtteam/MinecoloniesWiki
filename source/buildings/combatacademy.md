@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Minecolonies Wiki
 layout: default
 ---
 # Combat Academy
@@ -19,7 +19,7 @@ layout: default
     <recipe>combatacademy</recipe>
 </div>
 
-## About the Building
+# About the Building
 
 The Combat Academy building is where your [Knights in Training](../../source/workers/knight) become [Knight Guards](../../source/workers/guard). This also allows them to level up without risk of dying to mobs. The number of students depend on the level of the building. 
 
@@ -35,7 +35,7 @@ The Knights in Training require a sword and shield to practice. They will stand 
 
 The Knights in Training are not actual guards even though they will be dressed as guards, in the usual Knights clothes. They will go to their own house at night to sleep.  
 
-## Combat Academy's GUI
+# Combat Academy's GUI
 
 Now you can access the Combat Academy block (right click on it) and you will see a GUI with different options:
 
