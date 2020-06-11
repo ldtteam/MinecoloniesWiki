@@ -19,7 +19,7 @@ layout: default
     <recipe>warehouse</recipe>
 </div>
 
-# About the Warehouse
+## About the Warehouse
 
 The Warehouse is the central storage from where a [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft or need.
 
@@ -36,7 +36,7 @@ The level of the Warehouse will determine how many Deliverymen will be able to u
 
 <strong>Note: </strong>You can only have one Warehouse per colony, unless you change this in the config files.
 
-# Warehouse GUI
+## Warehouse GUI
 
 When accessing the Warehouse's hut block by right-clicking on it, you will see a GUI with different options:  
 
