@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Chicken Herder's Hut
@@ -19,7 +19,7 @@ layout: default
     <recipe>chickenherder</recipe>
 </div>
 
-# About the Chicken Herder's Hut
+## About the Chicken Herder's Hut
 
  The Chicken Herder's Hut is where the Chicken Herder will raise chickens, collect eggs, and butcher chickens for food. You will have to capture and bring in two chickens to the Chicken Herder's Hut, as the Chicken Herder will not catch and bring in any chickens.
 
@@ -35,7 +35,7 @@ layout: default
 | 5 | 10 |  
 
 
-# Chicken Herder's Hut GUI
+## Chicken Herder's Hut GUI
 
 When accessing the Chicken Herder's Hut block by right-clicking on it, you will see a GUI with different options:
 

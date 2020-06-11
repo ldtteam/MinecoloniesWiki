@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Commands
@@ -160,7 +160,7 @@ These are the in game commands currently available, most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony: colony id&gt; [canDestroy: true | false] [confirmDelete: true | false]</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.DeleteColony</span><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Deletes a colony and all Minecolonies buildings (as long as the hut is still placed)<br><code>candestroy</code> will set whether the buildings should be deleted with the claim<br><code>candelete</code> will set whether the colony is instantly deleted when the command is run, without asking for confirmation in chat<br><br>Examples:<br><code>/mc colony delete colony: 1</code><br><code>/mc colony delete colony: 1 candestroy: false</code><br><code>/mc colony delete colony: 1 confirmdelete: true</code></td>
+      <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut is still placed)<br><code>candestroy</code> will set whether the buildings should be deleted with the claim<br><code>candelete</code> will set whether the colony is instantly deleted when the command is run, without asking for confirmation in chat<br><br>Examples:<br><code>/mc colony delete colony: 1</code><br><code>/mc colony delete colony: 1 candestroy: false</code><br><code>/mc colony delete colony: 1 confirmdelete: true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony barbarians &lt;colony: colony id&gt; &lt;disableSpawns: true | false&gt;</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.DisableBarbarianSpawns</span><br>Default permission level: OP</td>

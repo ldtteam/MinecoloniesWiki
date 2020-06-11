@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Swine Herder's Hut
@@ -19,7 +19,7 @@ layout: default
     <recipe>swineherder</recipe>
 </div>
 
-# About the Swine Herder's Hut
+## About the Swine Herder's Hut
 
 The Swine Herder's Hut is where the Swine Herder will breed and butcher pigs for food. You will have to capture and bring in two pigs to the Swine Herder's Hut, as the Swine Herder will not catch and bring in any pigs.
 
@@ -36,7 +36,7 @@ The Swine Herder's Hut is where the Swine Herder will breed and butcher pigs for
 
   
 
-# Swine Herder's Hut GUI
+## Swine Herder's Hut GUI
 
 When accessing the Swine Herder's Hut block by right-clicking on it,  you will see a GUI with different options:
 

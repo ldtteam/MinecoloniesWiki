@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Flower Shop
@@ -19,7 +19,7 @@ layout: default
     <recipe>flowershop</recipe>
 </div>
 
-# About the Flower Shop
+## About the Flower Shop
 
 The Flower Shop is where your Florist will grow flowers for your Colony, if given Compost and an axe.
 
@@ -33,7 +33,7 @@ The Flower Shop is where your Florist will grow flowers for your Colony, if give
 | 4              | 16               |
 | 5              | 20               |
 
-# Flower Shop GUI
+## Flower Shop GUI
 
 When accessing the Flower Shop's hut block by right-clicking on it, you will see a GUI with different options:
 

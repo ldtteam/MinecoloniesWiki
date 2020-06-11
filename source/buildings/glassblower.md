@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Glassblower's Hut
@@ -19,14 +19,14 @@ layout: default
     <recipe>glassblower</recipe>
 </div>
 
-# About the Glassblower's Hut
+## About the Glassblower's Hut
 
 The Glassblower's Hut is where the Glassblower will smelt sand into glass and make glass panes from glass blocks. For the Glassblower to work, they must receive a request from another worker and have the necessary materials, including fuel if they're smelting sand into glass. The Glassblower's Hut must also have been taught the crafting recipe for glass panes.
 
 **Hint:** The number of recipes you can teach the Glassblower's Hut doubles per building level. So:
 
 
-| Glassblower Level | Number of Recipes |
+| Glassblower's Hut Level | Number of Recipes |
 | :-----: | :-----: |
 | 1 | 20 | 
 | 2 | 40 |
@@ -36,7 +36,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 
 <br>
 
-# Glassblower's Hut GUI
+## Glassblower's Hut GUI
 
 When accessing the Glassblower's Hut block by right-clicking on it, you will see a GUI with different options:
 

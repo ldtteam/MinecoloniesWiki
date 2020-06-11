@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Guard Tower
@@ -19,13 +19,13 @@ layout: default
     <recipe>guardtower</recipe>
 </div>
 
-# About the Guard Tower
+## About the Guard Tower
 
 The Guard Tower will employ and house 1 [Guard](../../source/workers/guard) to protect your colony. The new Guard will need a bed in a house in order to spawn, however, once they are hired at the Guard Tower that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 <strong>Note:</strong> If you place Guard Towers near your colony border and level them up, your border will expand.
 
-# Guard Tower GUI
+## Guard Tower GUI
 
 When accessing the Guard Tower hut block by right-clicking on it, you will see a GUI with different options:
 
@@ -66,12 +66,10 @@ This is page 2 of the GUI.
       </ul>
     </ul>
         <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard will retreat when they have low health, if possible. You can choose from Off or On.  
-      </ul>
-  </div>
-</div>
 <br>
 
-<br><br>
+<br><br><br><br><br><br><br>
+
 On the third page of the GUI you can tell the Guard which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
 <div class="row">
   <div class="col-sm-12 col-md">

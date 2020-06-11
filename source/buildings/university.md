@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # University
@@ -19,7 +19,7 @@ layout: default
     <recipe>university</recipe>
 </div>
 
-# About the University
+## About the University
 
 The University is where a researcher will research various upgrades to your colony. 
 

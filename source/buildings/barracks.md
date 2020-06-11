@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Barracks
@@ -19,7 +19,7 @@ layout: default
     <recipe>barracks</recipe>
 </div>
 
-# About the Barracks
+## About the Barracks
 
 The Barracks is the ultimate protection for your colony. The Barracks will hold 4 [Barracks Towers](../buildings/barrackstower) within its structure. The Barracks Towers (unlike the normal [Guard Towers](../../source/buildings/guardtower)) will employ *and* house 1 [Guard](../../source/workers/guard) for every level built! Each new Guard will need a bed in a house in order to spawn, however, once they are hired at the Barracks Tower that becomes their new residence and the bed in the house will open up for another new citizen. Each Barracks Tower can house and employ 5 Guards for a total of 20 Guards for your colony.
 
@@ -37,7 +37,7 @@ The Barracks is the ultimate protection for your colony. The Barracks will hold 
 
 <br>
 
-# Barracks GUI
+## Barracks GUI
 
 When accessing the Barracks' hut block by right-clicking on it, you will see a GUI with different options:
 

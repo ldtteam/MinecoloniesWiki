@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Hospital
@@ -19,9 +19,9 @@ layout: default
     <recipe>hospital</recipe>
 </div>
 
-# About the Hospital
+## About the Hospital
 
-The Hospital is where injured or ill citizens go when they need healing. The Healer will heal them with various items.
+The Hospital is where injured or sick citizens go when they need healing. The Healer will heal them with various items.
 
 The higher the level of the Hospital, the more people can be healed at a time. So:
 
@@ -33,7 +33,7 @@ The higher the level of the Hospital, the more people can be healed at a time. S
 | 4 | 4 |
 | 5 | 5 |
 
-# Hospital's Hut GUI
+## Hospital's Hut GUI
 
 When accessing the Hospital's hut block by right-clicking on it, you will see a GUI with different options:
 

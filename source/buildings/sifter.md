@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Sifter's Hut
@@ -19,7 +19,7 @@ layout: default
     <recipe>sifter</recipe>
 </div>
 
-# About the Sifter's Hut
+## About the Sifter's Hut
 
 The Sifter's Hut is where the Sifter will sift through dirt, gravel, sand, or soul sand to find loot. Doing this will make the block the Sifter is sifting disappear. 
 
@@ -70,7 +70,7 @@ You can choose between four meshes. The higher the level of the mesh, the higher
 | 4         | Diamond        | 
 
 
-# Sifter Hut GUI
+## Sifter Hut GUI
 
 When accessing the Sifter's Hut block by right-clicking on it, you will see a GUI with different options:
 

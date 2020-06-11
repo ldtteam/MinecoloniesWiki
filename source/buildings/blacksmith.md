@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Blacksmith's Hut
@@ -19,7 +19,7 @@ layout: default
     <recipe>blacksmith</recipe>
 </div>
 
-# About the Blacksmith's Hut
+## About the Blacksmith's Hut
 
 The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords, and shields (no bows or redstone items). The Blacksmith will work when they receive a request for any of those items from another worker. 
 
@@ -35,7 +35,7 @@ The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords
 | 5 | 160 | 
 
 
-# Blacksmith's Hut GUI
+## Blacksmith's Hut GUI
 
 When accessing the Blacksmith's Hut block by right-clicking on it, you will see a GUI with different options:
 

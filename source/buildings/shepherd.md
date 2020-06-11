@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Shepherd's Hut
@@ -19,7 +19,7 @@ layout: default
     <recipe>shepherd</recipe>
 </div>
 
-# About the Shepherd's Hut
+## About the Shepherd's Hut
 
 The Shepherd's Hut is where the Shepherd will breed and butcher cows for food and wool. You will have to capture and bring in two sheep to the Shepherd's Hut, as the Shepherd will not catch and bring in any sheep.
 
@@ -34,7 +34,7 @@ The Shepherd's Hut is where the Shepherd will breed and butcher cows for food an
 | 4 | 8 |
 | 5 | 10 |  
 
-# Shepherd's Hut GUI
+## Shepherd's Hut GUI
 
 When accessing the Shepherd's Hut block by right-clicking on it, you will see a GUI with different options:
 

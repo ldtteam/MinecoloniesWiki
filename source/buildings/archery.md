@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Archery
@@ -20,7 +20,7 @@ layout: default
 </div>
 
 
-# About the Archery
+## About the Archery
 
 The Archery is where your [Rangers in Training](../../source/workers/ranger) will train to become [Ranger Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Archery. 
 
@@ -37,7 +37,7 @@ The Rangers in Training require a bow to practice. They will shoot at targets, a
 The Rangers in Training are not actual Guards even though they will be dressed as Ranger Guards. They will go to their own house at night to sleep. 
 
 
-# Archery GUI
+## Archery GUI
 
 When accessing the Archery's hut block by right-clicking on it, you will see a GUI with different options:
 

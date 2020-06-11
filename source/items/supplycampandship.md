@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Supply Camp and Supply Ship
@@ -17,10 +17,6 @@ The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so
 <p style="text-align:center;"><img src="../../assets/images/items/supplycamp.png" alt="Supply Camp"></p>
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplyship1.png" alt="Supplyship"></p>
-
-## Crafting the Supply Camp or Supply Ship
-
-You can craft the Supply Camp or Supply Ship using the recipes above. They can also be found in chests throughout the game. 
 
 ## Placement of the Supply Camp or Supply Ship
 

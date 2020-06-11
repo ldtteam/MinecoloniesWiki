@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Lumberjack
@@ -33,4 +33,4 @@ Now you can give the Lumberjack an axe and it will start to look for trees to ch
 
 **Note:** Upgrading the Lumberjack’s hut to expand the range at which it looks for trees.
 
-**Hint:** You can give the Lumberjack an enchanted axe and reap the benefits of the speed that it will be chopping down trees for your Town's needs. Also you can remove any trees/saplings and replant any type of sapling in any pattern or shape you need to create your perfect grove, for easier access and less walking around, which means more chop chop... ;p
+**Hint:** You can give the Lumberjack an enchanted axe and reap the benefits of the speed that it will be chopping down trees for your Town's needs. Also you can remove any trees/saplings and replant any type of sapling in any pattern or shape you need to create your perfect grove, for easier access and less walking around, which means more chopping.

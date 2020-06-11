@@ -1,17 +1,17 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: recipes
 ---
 # Recipes
 
 Listed in this page are the current crafting recipes available in this mod. This will be updated as any craftables are added and made public in the mod.
 
-**Notes**  
+**Notes:**  
 The building tool used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
 
 ## Items and Blocks
 
-**Notes**
+**Notes:**
 The [Ancient Tome](../../source/items/ancient_tome) is not on here as it cannot be crafted and must be obtained in game. 
 The [Calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 

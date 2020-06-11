@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Plantation
@@ -19,7 +19,7 @@ layout: default
     <recipe>plantation</recipe>
 </div>
 
-# About the Plantation
+## About the Plantation
 
 The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus.
 
@@ -35,7 +35,7 @@ The Plantation's level determines how many crops the Planter can plant at a time
 
 <br>
 
-# Plantation GUI
+## Plantation GUI
 
 When accessing the Plantation's hut block by right-clicking on it, you will see a GUI with different options:
 
@@ -54,6 +54,6 @@ When accessing the Plantation's hut block by right-clicking on it, you will see 
 </div>
 <br> <br>
 
-On page two of the GUI, you can select the plant you want the Planter to grow. Just click on the button to cycle through sugar cane, bamboo, or cactus.
+On page two of the GUI, you can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.
 
  <img src="../../assets/images/gui/plantationgui2.png" alt="Plantation GUI Page 2" />

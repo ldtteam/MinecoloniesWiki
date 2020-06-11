@@ -1,10 +1,10 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Twitch Client
 
-If you want to play on the **Minecolonies Official 1.12.2** Server we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.
+If you want to play on the **MineColonies Official 1.12.2** Server we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.
 
 - [Twitch Client](#twitch-client)
     - [Installation of the Modpack through the Twitch Client](#installation-of-the-modpack-through-the-twitch-client)
@@ -12,12 +12,12 @@ If you want to play on the **Minecolonies Official 1.12.2** Server we highly rec
         - [Enable Minecraft](#enable-minecraft)
         - [Install Minecraft](#install-minecraft)
         - [Browse Modpacks](#browse-modpacks)
-        - [Search for Minecolonies Pack](#search-for-minecolonies-pack)
+        - [Search for MineColonies Pack](#search-for-minecolonies-pack)
         - [Launch Profile](#launch-profile)
         - [Login](#login)
         - [Click Play in Minecraft Launcher](#click-play-in-minecraft-launcher)
             - [Open Profiles List](#open-profiles-list)
-            - [Select Minecolonies](#select-minecolonies)
+            - [Select MineColonies](#select-minecolonies)
         - [Select Multiplayer](#select-multiplayer)
         - [Select our Server](#select-our-server)
 {: .box .py-3 .pr-4 }
@@ -60,9 +60,9 @@ After the "Install" is done select "Browse all ModPacks".
 
 ![Browse Modpacks](../../assets/images/installation/twitch_4.png)
 
-### Search for Minecolonies Pack
+### Search for MineColonies Pack
 
-Type in the search bar: Minecolonies and once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
+Type in the search bar: MineColonies and once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
 
 ![Selecting the Modpack](../../assets/images/installation/twitch_5.png)
 
@@ -90,9 +90,9 @@ Click the green arrow pointing up for profile selection
 
 ![Select Profile](../../assets/images/installation/twitch_8a.png)
 
-#### Select Minecolonies
+#### Select MineColonies
 
-Click the "Mineolonies Official" profile. Then you are good to go to Step 8 again!
+Click the "MineColonies Official" profile. Then you are good to go to Step 8 again!
 
 ![Select Profile 2](../../assets/images/installation/twitch_8b.png)
 
@@ -104,7 +104,7 @@ When Minecraft have loaded up, Click on the Multiplayer button.
 
 ### Select our Server
 
-Finally click on Minecolonies Official 1.12.2! The server info will be pre set up there already for you.
+Finally click on MineColonies Official 1.12.2! The server info will be pre set up there already for you.
 
 ![Join the Official Server](../../assets/images/installation/twitch_10.png)
 

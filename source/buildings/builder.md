@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Builder's Hut
@@ -19,9 +19,9 @@ layout: default
     <recipe>builder</recipe>
 </div>
 
-# About the Building
+## About the Building
 
-## Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build any other building.
+### Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build any other building.
 
 Before you choose a place to build the Builder's Hut, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the Builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
@@ -31,7 +31,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
 
 - **Note:** The Builder can only build or upgrade any other hut up to the level of their own hut. So, in order for the Builder to upgrade any building, the Builder's Hut must be upgraded first. Then the Builder will be able to upgrade any other building(s).
 
-# Builder's Hut GUI
+## Builder's Hut GUI
 
 When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options:
 
@@ -88,7 +88,7 @@ When accessing the Builder’s Hut block by right-clicking on it, you will see a
 </div>
 <br><br>
 
-## A few things to consider
+### A few things to consider
 
 For the placement of the Builder's Hut, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the Builder has less of a distance to walk between their hut and the build sites.
 
