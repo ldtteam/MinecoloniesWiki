@@ -6,7 +6,7 @@ layout: default
 
 # Troubleshooting
 
-## Before we start:
+## Before you start:
   Please always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and upgrade to the latest alpha if you are not running the latest.
   (Please note that alpha does not mean it's unstable, it just means it's a minor release.)
   

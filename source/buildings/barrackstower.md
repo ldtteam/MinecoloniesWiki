@@ -17,14 +17,24 @@ layout: default
     </div>
 </div>
 
-# About the Building
+# About the Barracks Tower
 
-The Barracks Tower buildings house your Barracks Guards. The Barracks Towers (unlike the normal Guard Towers) will employ and house 1 citizen for every level built! Each new guard will need a bed in a house in order to spawn, however, once they are hired at the barracks that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit). Each Barracks Towers will house and employ 5 guards, for a total of 20 guards for your colony.
-
-The Barracks Tower locations are predetermined by the Barracks that you choose. They are placed in specific locations to fit within the Barracks Hut Building. 
+The Barracks Towers will employ and house 1 [Guard](../../source/workers/guard) for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn, however, once they are hired at the Barracks Tower that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 
-| Barracks Level | Max # of Guard Towers | Max Level of Guard Tower |
+| Barracks Tower Level | Max # of Guards |
+| :----: | :----: |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+
+
+The Barracks Tower locations are predetermined by the [Barracks](../../source/buildings/barracks) that you choose. They are placed in specific locations to fit within the Barracks. 
+
+
+| Barracks Level | Max # of Barracks Towers | Max Level of Barracks Towers |
 | :----: | :----: | :----: |
 | 1 | 1 | 1 |
 | 2 | 2 | 2 |
@@ -34,9 +44,13 @@ The Barracks Tower locations are predetermined by the Barracks that you choose. 
 
 <br>
 
+<strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will expand.
+
+<br>
+
 # Barracks Tower GUI
 
-Once the building is built, you can access the Barracks Tower block (right click on it) and you will see a GUI with different options:
+When accessing the Barracks Tower's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -44,8 +58,8 @@ Once the building is built, you can access the Barracks Tower block (right click
     <img src="../../assets/images/gui/barrackstowergui1.png" class="img-fluid mx-auto" alt="Barracks Tower GUI">
   </div>
   <div class="col-sm-12 col-md"><br><br>
-    <p>The Barracks Tower and it's current Level. And the buttons:</p>
-  <ul>
+    <br>
+    <ul>
       {% for item in site.data.gui.global%}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
@@ -54,14 +68,9 @@ Once the building is built, you can access the Barracks Tower block (right click
 </div>
 <br>
 
-
-This is "page 2" of the GUI. It shows the guard actions you can select: Knight or Ranger The Guard has 2 Guard modes you can choose from: **Knight** or **Ranger**. BUT... before you can choose any of these two modes you *MUST* change the "Assign the guard to job:" mode from **Automatically** to **Manually**. 
-
-<p style="color:Blue;">When the Guard is set to <b>Knight</b> mode; the guard will use a sword.
-When the Guard is set to <b>Ranger</b> mode; the guard will use a bow.</p>
+This is page two of the GUI.
 
 <br>
-Also here you will be able to set (if "Find patrol target: Manually") the way the guard will work: Patrol / Follow / Guard.  And the buttons:
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -70,30 +79,25 @@ Also here you will be able to set (if "Find patrol target: Manually") the way th
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Patrol</strong> When you select this mode you have two options: </li>
-      <ul>
-        <li>If you set "Find patrol target: Automatically", the Guard will patrol from hut to hut and back to his Tower.</li>
-        <li>If you set "Find patrol target: Manually", you can set the patrol route when you click on "Set patrol positions". Doing so will spawn a "Guard-scepter" in your inventory. </li>
+        <li><strong>Knight or Ranger:</strong> This is where you can choose if you want the Guard(s) to be a Knight or a Ranger-just click to change the setting. The difference between the two is that Knights use swords, while Rangers use bows. <b>Note:</b> You can only change this if you have turned the <strong>Assign the Guard to the Job</strong> setting to manually, otherwise the Guard(s) will be a Knight by default.</li>
+        <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard(s) to patrol, follow, or guard.</li>      
+        <ul>
+        <li>If you set it to Guard, you can set one area for the Guard(s) to stay in. You can set the area by clicking <b>Set Guarding Target</b>, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
+        <li>If you set it to Follow, the Guard(s) will follow you around as your personal bodyguard protecting you or fighting alongside you. However, if you are more than 40*Barracks Tower level blocks away from the Barracks Tower, the Guard(s) will automatically return to their tower. If you choose <b>Loose Grouping</b>, the Guard(s) will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.</li>
+        <li>If you set it to Patrol, you have a couple different options. </li>
+        <ul>
+            <li>If you set <strong>Find Patrol Target</strong> to automatically, the Guard(s) will patrol from hut to hut and back to their tower.</li>
+            <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard(s) to patrol between.</li>
       </ul>
     </ul>
-You can right click using the Guard-scepter to set a single or multiple patrol positions for the Guard to patrol back and forth.
-    <ul>
-      <li><strong>Follow:</strong> When you select this mode the guard will follow you around wherever you go, as your personal Guard fighting along side you or defending you. If you leave the guard tower more than "40 * GuardTower level" blocks the guard will automatically return to his tower.</li>
-      <li><strong>Guard:</strong> When you select this mode you will receive a "Guard-scepter". You can right click on a block to set it as a guard spot, the guard will stay in that area until his health is low or he has to restock, then he will go the Tower and resupply/regen health and will go back to your designated the guard spot again.</li>
-      <li><strong>Knight:</strong> (By default) Here you can define if you want the guard to be a Knight or Ranger.</li>
-      <ul>
-        <li>Automatically By default. Here you can define if you want the guard to be assigned to Knight or Ranger automatically or Manually.</li>
+        <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard(s) will retreat when they have low health, if possible. You can choose from Off or On.  
       </ul>
-      <li><strong>Automatically:</strong> (By default) Here you can define if you want the guard to be assigned the patrol target automatically or manually if you want to designate the target(s) for him to patrol.</li>
-      <li><strong>Off: </strong> (By default) Here you can define if you want the guard to come back to the Tower on low health to recover his health.</li>
-      <li><strong>Patrol / Follow / Guard.-</strong>here you can define how the guard will work.</li>
-      <li><strong>Inventory:</strong>This is the most important button. Here you can access the buildings storage from where the “worker” takes and deposits materials, tools and anything he/she finds along the way (citizens will pickup anything in their path that is considered a "drop"; sapling, seeds, rotten flesh, bones, arrows, etc.).</li>
-    </ul>
   </div>
 </div>
 <br>
 
-On the third page of the GUI you can tell the guard who to attack and who to ignore
+On the third page of the GUI you can tell the Guard(s) which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
+
 <div class="row">
   <div class="col-sm-12 col-md">
     <br>
