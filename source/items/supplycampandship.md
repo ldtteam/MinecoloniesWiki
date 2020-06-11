@@ -18,10 +18,6 @@ The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplyship1.png" alt="Supplyship"></p>
 
-## Crafting the Supply Camp or Supply Ship
-
-You can craft the Supply Camp or Supply Ship using the recipes above. They can also be found in chests throughout the game. 
-
 ## Placement of the Supply Camp or Supply Ship
 
 Before you place the Supply Camp, you need to have a large enough flat, clear piece of land that is as large as the camp area. For the Supply Ship, you need an area of water at least one block larger than the build area. Not all Camps or Ships are the same size.
