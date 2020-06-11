@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Tavern
@@ -13,6 +13,8 @@ layout: default
 # About the Tavern
 
 The Tavern is like a [Citizen's Hut](../../source/buildings/citizenhut) in that it houses citizens, however, the Tavern houses four instead of two and can't be upgraded to house more. Additional functionality will be added at a later date.
+
+<strong>Note:</strong> The Tavern can only be upgraded to level 3, not level 5.
 
 <br>
 
