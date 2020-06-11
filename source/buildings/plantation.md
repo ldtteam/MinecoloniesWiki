@@ -19,7 +19,7 @@ layout: default
     <recipe>plantation</recipe>
 </div>
 
-# About the Plantation
+## About the Plantation
 
 The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus.
 
@@ -35,7 +35,7 @@ The Plantation's level determines how many crops the Planter can plant at a time
 
 <br>
 
-# Plantation GUI
+## Plantation GUI
 
 When accessing the Plantation's hut block by right-clicking on it, you will see a GUI with different options:
 
