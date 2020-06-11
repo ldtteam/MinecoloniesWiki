@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Plantation
@@ -54,6 +54,6 @@ When accessing the Plantation's hut block by right-clicking on it, you will see 
 </div>
 <br> <br>
 
-On page two of the GUI, you can select the plant you want the Planter to grow. Just click on the button to cycle through sugar cane, bamboo, or cactus.
+On page two of the GUI, you can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.
 
  <img src="../../assets/images/gui/plantationgui2.png" alt="Plantation GUI Page 2" />
