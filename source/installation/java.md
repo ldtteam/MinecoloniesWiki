@@ -6,19 +6,19 @@ layout: default
 # Minecraft Java Edition
 
 - [Minecraft Java Edition](#minecraft-java-edition)
-    - [Installing Minecolonies Mod on your original Minecraft Launcher.](#installing-minecolonies-mod-on-your-original-minecraft-launcher)
+    - [Installing MineColonies Mod on your original Minecraft Launcher.](#installing-minecolonies-mod-on-your-original-minecraft-launcher)
         - [Download Forge](#download-forge)
         - [Run Forge Installer](#run-forge-installer)
-        - [Download Minecolonies](#download-minecolonies)
+        - [Download MineColonies](#download-minecolonies)
         - [Navigate to Mods Folder](#navigate-to-mods-folder)
-        - [Copy Minecolonies to Mods](#copy-minecolonies-to-mods)
+        - [Copy MineColonies to Mods](#copy-minecolonies-to-mods)
             - [If Adding Pack, Extract it](#if-adding-pack-extract-it)
         - [Run Minecraft and Select Profile](#run-minecraft-and-select-profile)
 {: .box .py-3 .pr-4 }
 
-## Installing Minecolonies Mod on your original Minecraft Launcher.
+## Installing MineColonies Mod on your original Minecraft Launcher.
 
-- This process is for installing only the Minecolonies mod in your original Minecraft launcher. You will *not* be able to connect to the **Minecolonies Official 1.12.2 Test Server** due to the server having a balanced variety of other mods as well.
+- This process is for installing only the MineColonies mod in your original Minecraft launcher. You will *not* be able to connect to the **MineColonies Official 1.12.2 Test Server** due to the server having a balanced variety of other mods as well.
 
 - For connecting to the Official Test Server, install the [Twitch Client](../installation/twitch) or use [MultiMC](../installation/multimc). You can visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods and the versions we are currently using on the Official Test Server, as well as all the appropriate configs, scripts and the server.dat file for our modpack Official Test Server. If all these additional mods, configs, scripts and the server.dat are downloaded and installed manually, you will be able to connect to our Official Test Server. 
 
@@ -38,7 +38,7 @@ Run the downloaded recommended version and make sure it's on "Install Client". I
 
 | ![Forge installer](../../assets/images/installation/forge_1.png) | ![Forge installed](../../assets/images/installation/forge_2.png) |
 
-### Download Minecolonies
+### Download MineColonies
 
 Go to the [MineColonies CurseForge Download page](https://curseforge.com/minecraft/mc-mods/minecolonies/files/all) site and download the latest 1.12.2 version of MineColonies.
 
@@ -46,7 +46,7 @@ Go to the [MineColonies CurseForge Download page](https://curseforge.com/minecra
 
 On your computer go to the **.minecraft/mods** folder. To be able to find this folder, just click on the start button and in the search box type: *%appdata%* and hit "search". It will open the folder where you can find the **.minecraft** folder. Open this folder and inside you will find the **mods** folder.
 
-### Copy Minecolonies to Mods
+### Copy MineColonies to Mods
 
 Once you are in the **.minecraft/mods** folder, copy the downloaded MineColonies file you downloaded in Step 1 and paste it here. NOTE: DO NOT extract the file if the option appears. Just put the .jar file in here without extracting it's contents.
 
