@@ -19,11 +19,11 @@ layout: default
     <recipe>restaurant</recipe>
 </div>
 
-# About the Restaurant
+## About the Restaurant
 
 The Restaurant is where the Cook will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the Restaurant and the Cook will give them food.
 
-# Restaurant GUI
+## Restaurant GUI
 
 When accessing the Restaurant's hut block by right-clicking on it, you will see a GUI with different options:
 
