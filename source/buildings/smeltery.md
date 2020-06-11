@@ -19,7 +19,7 @@ layout: default
     <recipe>smeltery</recipe>
 </div>
 
-# About the Smeltery
+## About the Smeltery
 
 The Smeltery is where the Smelter will smelt ores into ingots.
 
@@ -35,7 +35,7 @@ The Smeltery is where the Smelter will smelt ores into ingots.
 | 5 | --- | 100% | Worker Level Chance | 5 |
 
 
-# Smeltery GUI
+## Smeltery GUI
 
 When accessing the Smeltery's hut block by right-clicking on it, you will see a GUI with different options:  
 
