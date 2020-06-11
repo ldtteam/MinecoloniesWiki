@@ -26,12 +26,12 @@ The Warehouse is the central storage from where a [Deliveryman](../../source/wor
 The level of the Warehouse will determine how many Deliverymen will be able to use the Warehouse at the same time. Level up the Warehouse to increase the amount of Deliverymen that can work in your Warehouse. Leveling up the Warehouse will also increase its storage capacity.
 
 | Building Level | Max Deliverymen |
-| ----- | ----- |
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 3 |
-| 4 | 4 |
-| 5 | 5 |  
+| -----  | ------ |
+| 1 | 2  |
+| 2 | 4  |
+| 3 | 6  |
+| 4 | 8  |
+| 5 | 10 |  
 
 
 <strong>Note: </strong>You can only have one Warehouse per colony, unless you change this in the config files.
