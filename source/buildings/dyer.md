@@ -19,7 +19,7 @@ layout: default
     <recipe>dyer</recipe>
 </div>
 
-# About the Dyer's Hut
+## About the Dyer's Hut
 
 The Dyer's Hut is where the Dyer will craft dyes and dye other items (except for concrete). The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows the recipe to make green dye from cactus, but you must teach it the recipes for the other dyes and the dyed items.
 
@@ -35,7 +35,7 @@ The Dyer's Hut is where the Dyer will craft dyes and dye other items (except for
 
 <br>
 
-# Dyer's Hut GUI
+## Dyer's Hut GUI
 
 When accessing the Dyer's Hut block by right-clicking on it, you will see a GUI with different options:
 
