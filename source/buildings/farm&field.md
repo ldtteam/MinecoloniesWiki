@@ -21,7 +21,7 @@ layout: default
     <recipe>field</recipe>
 </div>
 
-# About the Farm & Field
+## About the Farm & Field
 
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods as long as they have normal growth behavior. Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
 
@@ -49,7 +49,7 @@ These are just some examples of what a field can be like. You can be creative an
 <p style="text-align:center;"><img src="../../assets/images/gui/plot_max.png" alt="Field Max Size">    <img src="../../assets/images/gui/plot_half.png" alt="Field Size Half">    <img src="../../assets/images/gui/plot_quater.png" alt="Field Size Quarter"></p>
 <br>
 
-# Farm GUI
+## Farm GUI
 
 When accessing the Farm block by right-clicking on it, you will see a GUI with different options:
 
