@@ -6,9 +6,9 @@ layout: default
 
 # Troubleshooting
 
-## Before you start:
-  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and upgrade to the latest alpha if you are not running the latest.
-  (Please note that alpha does not mean it's unstable, it just means it's a minor release.)
+## Before you start troubleshooting:
+
+  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. (Note that alpha does not mean it's unstable, it just means it's a minor release.)
   
 
 ## CHECKLIST: Identifying why a citizen is not working
@@ -46,24 +46,24 @@ If none of these apply, go on to the next troubleshooting checklists.
       `enableInDevelopmentFeatures=false`
       * Change the false to true
       * Restart your game
-      * Watch the name area above the workers head, the information at the end will be important for devs to troubleshoot issues or assist you on the discord #help channel
+      * Watch the name area above the worker's head, the information at the end will be important for devs to troubleshoot issues or assist you on the Discord help channel
   2. Nudge worker by walking into them, off the block they are standing on or out a door.
   3. Recall worker to their workhut.
-  4. Is the path to the worksite clear of obstructions? Recall worker to their workhut then follow them to see where they stop.
-  5. Bug: They will get stuck if walking over a slab in the "top" position without another slab underneath. Check your slabs.
-  6. Recall all Citizens to the TownHall.
-  7. Pause the problem workhut, wait a few minutes, unpause the workhut and recall the worker.
-  8. Fire worker, wait a few minutes, hire the same worker.
-  9. Empty out worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
+  4. Make sure the path to their worksite is clear of obstructions.
+  5. Bug: They will get stuck if walking over a slab in the top position without another slab underneath. Check your slabs.
+  6. Recall all citizens to the [Town Hall](../../source/buildings/townhall).
+  7. Pause the problematic workhut, wait a few minutes, unpause the workhut and recall the worker.
+  8. Fire worker, wait a few minutes, then hire the same worker.
+  9. Empty out the worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
   10. Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
-  11. Punch them with empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire.
-  12. Use the /mc rs reset [Command](../../source/systems/commands)
-  13. Repair their workhut. Some buildings will stop working if required elements are not present. Only the BuilderNPC can place beds, crafting tables, furnaces, chests, racks, compost bins. If you broke any of those, break all of them and let the BuilderNPC repair the building.
-  14. Fire worker, wait a few minutes, hire a different worker (You will lose advantage of the experience the first worker had accumulated at this career).
+  11. Punch them with empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire them.
+  12. Use the /mc rs reset [command](../../source/systems/commands)
+  13. Repair their workhut. Some buildings will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, racks, and compost bins. If you broke any of those, create a repair work order for the building.
+  14. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
 
-## Missing Graphics and issues with Build Tool Preview
+## Missing Graphics and Issues with Build Tool Preview
   If you experience missing textures for hut blocks and your previews are messed up, check if you have Optifine installed as the current version is not stable.
   As there is nothing that we can do, you can either live with missing graphics, or you will have to deactivate Optifine.
 
 ## Crashes when Placing Structures
-  If your game crashes placing a structure (e.g. a supply camp), your Minecolonies and Structurize versions are probably incompatible. Update both to the latest alphas.
+  If your game crashes placing a structure (e.g. a supply camp), your MineColonies and Structurize versions are probably incompatible. Update both to the latest alphas.
