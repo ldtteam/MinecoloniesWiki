@@ -35,4 +35,4 @@ Also, the higher the level of the hut, the Deliveryman will move faster and fast
 
 **Hint**: You MUST build the [Warehouse](../../source/buildings/warehouse) to at least level 1 so the Deliveryman can do it's work. The deliveryman will visit 1 worker's hut per trip, then back to Warehouse. So, level up the Warehouse and build more Deliverymen huts to take care of more worker's huts at the same time and grow grow grow... faster faster faster!
 
-**Note** You can have up to 5 deliverymen per warehouse. The default configuration only allows for 1 warehouse but this can be changed to accommodate more than 1 warehouse. However, the deliverymen assigned to subsequent warehouses will only see the warehouse and the items in the warehouse that they are assigned to.
+**Note** You can have up to 10 deliverymen per warehouse. The default configuration only allows for 1 warehouse but this can be changed to accommodate more than 1 warehouse. However, the deliverymen assigned to subsequent warehouses will only see the warehouse and the items in the warehouse that they are assigned to.
