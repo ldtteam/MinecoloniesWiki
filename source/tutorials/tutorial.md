@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Tutorial
@@ -63,7 +63,7 @@ You should also gather enough food to feed yourself and your initial citizens un
 ## Detailed Walkthrough
 <br>
 
-If you're here, **CONGRATULATIONS!** You have already <a href="#install">installed</a> Minecolonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame Minecolonies Achievements).
+If you're here, **CONGRATULATIONS!** You have already <a href="#install">installed</a> MineColonies and are ready to embark on an adventure to explore, conquer and establish your own Settlement. Work hard and turn it into a thriving Town. Hone your Leader skills and grow grow grow into a City. Lastly, can you be a grand leader and finally achieve a Metropolis??? (Check your ingame MineColonies Achievements).
 
 <p style="text-align:center;"><img src="../../assets/images/tutorial/achievements.png" alt="Achievements"></p>
 
@@ -92,7 +92,7 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
  The protected area of your Colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
-- **Note**: You can configure your own Town area radius in the configuration options of the mod or the the minecolonies.cfg file inside the ```../minecraft/config/``` folder of your own world. (see minecolonies config server section for details)
+- **Note**: You can configure your own Town area radius in the configuration options of the mod or the the minecolonies.cfg file inside the ```../minecraft/config/``` folder of your own world. (see MineColonies config server section for details)
 
 Due to the protected area of each Town, you have to scout carefully your surroundings to make sure you are clear of any other Towns nearby preventing you from placing your Town hall or limit your Town area in that direction.
 
@@ -106,7 +106,7 @@ If you want to know whether there is a colony too close to your current position
 
 <p class="text-center"><img src="../../assets/images/tutorial/no_colony.png" alt="No Colony"></p>
 
-For example, in the official Minecolonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where TownHall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a Colony)."
+For example, in the official MineColonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where TownHall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a Colony)."
 
 
 
@@ -334,7 +334,6 @@ From this point on, you should be able to place, build, upgrade and manage all y
 Your questions from this point on are probably what to build next? The [Town Hall](../../source/buildings/townhall), [Mine](../buildings/mine), [Sawmill](../buildings/sawmill), [Farm](../buildings/farm), [Fisherman](../buildings/fisherman), [Guard Tower](../buildings/guardtower), [Deliveryman](../buildings/deliveryman), [Bakery](../buildings/bakery), etc.? Well, there are many answers, but you start with only 4 citizens! Now what? Well the next step after your 4 Citizens are employed and are working hard, is to plan and place the "[Citizen Hut](../buildings/citizenhut)". This will give you additional Citizens for each level of a [Citizen Hut](../buildings/citizenhut) you build in your Town! That's crazy, right? Now what do you do with so many Citizens? You cannot assign more than 1 worker per building. Therefore, consider building additional buildings (more miners, lumberjacks, builders, farmers, fishermen... and more to come!). Check the [Citizen Hut](../buildings/citizenhut) section for more detailed info.
 
 _**There are other buildings that will also "spawn" more citizens for you as well:**_
-- The [Town Hall](../../source/buildings/townhall) will spawn and house 1 Citizen per level built.
 - The [Barracks](../buildings/barracks) will spawn and house 1 Citizen per level of each of it's Towers' level built.
 
 - **Hint:** Upgrade your buildings to the highest level each one has to unlock achievements (and in the future enable your worker to do more stuff).
