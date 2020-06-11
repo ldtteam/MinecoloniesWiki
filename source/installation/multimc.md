@@ -6,17 +6,17 @@ layout: default
 
 Installation via MultiMC is very easy, and works on Windows, Mac and Linux.
 
-Below lists the steps you will need to take in order to install the Minecolonies Official Modpack to play on the Minecolonies official server, or for Singleplayer.
+Below lists the steps you will need to take in order to install the MineColonies Official Modpack to play on the MineColonies official server, or for Singleplayer.
 
-**Note:** the Minecolonies Official Server uses Minecraft 1.12.2
+**Note:** the MineColonies Official Server uses Minecraft 1.12.2.
 
 - [MultiMC Installation](#multimc-installation)
     - [Getting MultiMC](#getting-multimc)
     - [Setting Up MultiMC](#setting-up-multimc)
         - [Account](#account)
         - [Create an Instance](#create-an-instance)
-    - [Installing Minecolonies Mod Only](#installing-minecolonies-mod-only)
-    - [Installing Minecolonies Official Modpacks](#installing-minecolonies-official-modpacks)
+    - [Installing MineColonies Mod Only](#installing-minecolonies-mod-only)
+    - [Installing MineColonies Official Modpacks](#installing-minecolonies-official-modpacks)
         - [Getting the Modpack](#getting-the-modpack)
         - [Installing the Modpack](#installing-the-modpack)
 {: .box .py-3 .pr-4 }
@@ -64,11 +64,11 @@ When you're done filling things in, click "Ok". You'll have something like this:
 
 ![Instance Added](../../assets/images/installation/multimc-instance4.png)
 
-## Installing Minecolonies Mod Only
+## Installing MineColonies Mod Only
 
-Next up, we'll walk you through setting up your instance to play Minecolonies (or any other mod that uses Forge, the steps are the same).
+Next up, we'll walk you through setting up your instance to play MineColonies (or any other mod that uses Forge, the steps are the same).
 
-Before we get started, download Minecolonies from [this](https://minecraft.curseforge.com/projects/minecolonies) page, selecting the appropriate version.
+Before we get started, download MineColonies from [this](https://minecraft.curseforge.com/projects/minecolonies) page, selecting the appropriate version.
 
 Then, switch back over to MultiMC and click "Edit Instance". The button we are looking for is located here:
 
@@ -82,17 +82,17 @@ On the right side, click the button labeled "Forge". Select the appropriate vers
 
 On the left side, select "Loader mods". This switches the window to one that allows you to install mods to the instance you're in.
 
-On the left is a button that says "Add", click it and navigate to the location you downloaded the Minecolonies mod to, then click "Open". You'll have something that looks like this:
+On the left is a button that says "Add", click it and navigate to the location you downloaded the MineColonies mod to, then click "Open". You'll have something that looks like this:
 
 ![Edit Instance Add](../../assets/images/installation/multimc-edit3.png)
 
-Thats it! You're done! Minecolonies is now installed! Hooray!
+Thats it! You're done! MineColonies is now installed! Hooray!
 
 To play it, all you need to do is click "Launch", which can be done from either the "Edit Instance" screen, or the right-side menu on MultiMC's main window.
 
-## Installing Minecolonies Official Modpacks ##
+## Installing MineColonies Official Modpacks 
 
-### Getting the Modpack ###
+### Getting the Modpack 
 
 Head over to [this page](https://minecraft.curseforge.com/projects/minecolonies-testpack/files) on CurseForge and download the zip file for the version of Minecraft you intend to play. Save the zip file somewhere easy to find.
 
