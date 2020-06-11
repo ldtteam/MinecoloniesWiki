@@ -90,14 +90,12 @@ This is page two of the GUI.
             <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard(s) to patrol between.</li>
       </ul>
     </ul>
-        <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard(s) will retreat when they have low health, if possible. You can choose from Off or On.  
-      </ul>
-  </div>
-</div>
+        <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard will retreat when they have low health, if possible. You can choose from Off or On.  
 <br>
 
-On the third page of the GUI you can tell the Guard(s) which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
+<br><br><br><br><br><br><br>
 
+On the third page of the GUI you can tell the Guard which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
 <div class="row">
   <div class="col-sm-12 col-md">
     <br>
