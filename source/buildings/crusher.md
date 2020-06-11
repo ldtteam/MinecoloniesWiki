@@ -19,7 +19,7 @@ layout: default
     <recipe>crusher</recipe>
 </div>
 
-# About the Crusher's Hut
+## About the Crusher's Hut
 
 The Crusher's Hut is where the Crusher will take items and crush them into other blocks. The defaults are: 
 
@@ -39,7 +39,7 @@ The higher the level of the Crusher's Hut, the more daily output the Crusher can
 | 4 | 256 |
 | 5 | 999 |
 
-# Crusher's Hut GUI
+## Crusher's Hut GUI
 
 When accessing the Crusher's Hut block by right-clicking on it, you will see a GUI with different options:
 
