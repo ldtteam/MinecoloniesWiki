@@ -19,7 +19,7 @@ layout: default
     <recipe>enchanter</recipe>
 </div>
 
-# About the Enchanter's Tower
+## About the Enchanter's Tower
 
 The Enchanter's Tower is where the Enchanter will create enchanted books, as long as they have [Ancient Tomes](../../source/items/ancient_tome). The Enchanter will collect XP from other workers to create the enchanted books. They will *not* apply the enchanted books to tools and armor, you must do that yourself.
 
@@ -33,7 +33,7 @@ The higher the level of the Enchanter's Tower, the higher the level of the encha
 | 4 | 4 | 5 |
 | 5 | 5 | 1 |
 
-# Enchanter's Hut GUI
+## Enchanter's Hut GUI
 
 When accessing the Enchanter's Hut block by right-clicking on it, you will see a GUI with different options:
 
