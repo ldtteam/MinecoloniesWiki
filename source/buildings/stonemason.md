@@ -19,7 +19,7 @@ layout: default
     <recipe>stonemason</recipe>
 </div>
 
-# About the Stonemason's Hut
+## About the Stonemason's Hut
 
 The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirely out of cobblestone, stone, andesite, diorite, granite, sandstones, or materials ore (no quartz, purpur, or endstone). You will need to teach the Stonemason's Hut the recipes you want the Stonemason to craft. The Stonemason will only work when they receive a request and they have the needed materials.
 
