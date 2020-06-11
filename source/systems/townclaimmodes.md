@@ -170,7 +170,7 @@ B:restrictColonyPlacement=false
 
 **_Or in-game through the "mod Options" button;_**
 
-**1-** Select MineColonies and pressing the Config button.
+**1-** Select MineColonies and press the Config button.
 
 **2-** Next screen select MineColonies button.
 
