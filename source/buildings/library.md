@@ -19,7 +19,7 @@ layout: default
     <recipe>library</recipe>
 </div>
 
-# About the Library
+## About the Library
 
 The Library is the only way for you to raise your citizens' skills. If your citizens have low-level stats, then it's time to get your citizens educated! For that purpose we have the Library. A citizen will randomly level up their skills as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
 
