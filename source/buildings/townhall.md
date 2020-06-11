@@ -54,13 +54,13 @@ If there is another colony too close to your current position you won't be able 
 If you try to place another Town Hall outside of your protected area, you will get a message: <br> 
 <img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second TownHall" />
 
-# Town Hall GUI
+## Town Hall GUI
 
 <li><i>You can use the tabs on the left side to switch between different categories.</i></li>
 
 <br>
 
-## <strong>Information:</strong> This is the overall information section of the Town Hall GUI.
+### <strong>Information:</strong> This is the overall information section of the Town Hall GUI.
    
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -77,7 +77,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-## <strong>Actions:</strong> This is the most important section.
+### <strong>Actions:</strong> This is the most important section.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -101,7 +101,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-## <strong>Permissions:</strong> Here you can invite other players to your colony to collaborate. 
+### <strong>Permissions:</strong> Here you can invite other players to your colony to collaborate. 
 
 <p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give him a <i>rank</i> in your Town. Each rank will have certain privileges in the protection system that you can configure.</p>
 
@@ -149,7 +149,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-## <strong>Citizens: </strong>This section displays the names and skill levels of the citizens in your Colony.
+### <strong>Citizens: </strong>This section displays the names and skill levels of the citizens in your Colony.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -166,7 +166,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-## <strong>Settings: </strong>This section is where you can control how your citizens will be hired and assigned housing in your colony, among other things.
+### <strong>Settings: </strong>This section is where you can control how your citizens will be hired and assigned housing in your colony, among other things.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -188,7 +188,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-## <strong>Work Orders: </strong>Here you will see the work orders your [Builders](../../source/workers/builder) have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
+### <strong>Work Orders: </strong>Here you will see the work orders your [Builders](../../source/workers/builder) have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -205,7 +205,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-## <strong>Happiness: </strong>This is the section for the global happiness of your colony so you can see what area needs more attention to raise the happiness level.
+### <strong>Happiness: </strong>This is the section for the global happiness of your colony so you can see what area needs more attention to raise the happiness level.
 
 <div class="row">
   <div class="col-sm-12 col-md">
