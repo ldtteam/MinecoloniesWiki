@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Schematics
@@ -50,11 +50,11 @@ Once you have scanned a structure, you can use the build tool to have your build
 
 ## FAQ
 
-This is a FAQ section to answer most questions regarding schematics in Minecolonies.
+This is a FAQ section to answer most questions regarding schematics in MineColonies.
 
 #### What and Where is the scans folder?
 
-The scans folder is where the schematics are saved after performing a scan using the scan tool in Minecolonies. This is a client side only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in game. This directory is shared between all your Single Player games and Multi Player games.
+The scans folder is where the schematics are saved after performing a scan using the scan tool in MineColonies. This is a client side only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in game. This directory is shared between all your Single Player games and Multi Player games.
 
 #### Where is the schematic folder?
 
@@ -64,7 +64,7 @@ The location of this folder depends of the type of game:
 
 - For a Single Player game, there are 2 possible locations:
   * In the world folder: `*/minecraft/saves/(World Name)/structurize/schematics/`
-    + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), minecolonies will completely ignore the other directory.
+    + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), MineColonies will completely ignore the other directory.
   * In the Minecraft's folder: `*/minecraft/structurize/schematics/`
     + **Note:** Use this folder when you want to have the same custom schematics across multiple worlds.
 - For a Multiplayer game, the schematics are always loaded from the world's directory under: `*/minecolonies/schematics/` directory.
