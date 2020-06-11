@@ -17,7 +17,7 @@ layout: default
     </div>
 </div>
 
-# About the Building
+## About the Building
 
 The Barracks Tower buildings house your Barracks Guards. The Barracks Towers (unlike the normal Guard Towers) will employ and house 1 citizen for every level built! Each new guard will need a bed in a house in order to spawn, however, once they are hired at the barracks that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit). Each Barracks Towers will house and employ 5 guards, for a total of 20 guards for your colony.
 
@@ -34,7 +34,7 @@ The Barracks Tower locations are predetermined by the Barracks that you choose. 
 
 <br>
 
-# Barracks Tower GUI
+## Barracks Tower GUI
 
 Once the building is built, you can access the Barracks Tower block (right click on it) and you will see a GUI with different options:
 
