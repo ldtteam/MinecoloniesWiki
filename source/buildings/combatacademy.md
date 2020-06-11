@@ -19,9 +19,9 @@ layout: default
     <recipe>combatacademy</recipe>
 </div>
 
-# About the Building
+# About the Combat Academy
 
-The Combat Academy building is where your [Knights in Training](../../source/workers/knight) become [Knight Guards](../../source/workers/guard). This also allows them to level up without risk of dying to mobs. The number of students depend on the level of the building. 
+The Combat Academy is where your [Knights in Training](../../source/workers/knight) will train to become [Knight Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Academy. 
 
 | Combat Academy Level | Max # of Students |
 | :----: | :----: |
@@ -31,13 +31,13 @@ The Combat Academy building is where your [Knights in Training](../../source/wor
 | 4 | 4 |
 | 5 | 5 |
 
-The Knights in Training require a sword and shield to practice. They will stand near the practice dummy, a pumpkin ontop of a bail of hay. 
+The Knights in Training require a sword and shield to practice. They will stand near the practice dummy, a pumpkin on top of a bail of hay. 
 
-The Knights in Training are not actual guards even though they will be dressed as guards, in the usual Knights clothes. They will go to their own house at night to sleep.  
+The Knights in Training are not actual Guards even though they will be dressed as Knight Guards. They will go to their own house at night to sleep.
 
-# Combat Academy's GUI
+# Combat Academy GUI
 
-Now you can access the Combat Academy block (right click on it) and you will see a GUI with different options:
+When accessing the Combat Academy's hut block by right-clicking on it, you will see a GUI with different options:
 
 <br>
 <div class="row">
@@ -45,7 +45,7 @@ Now you can access the Combat Academy block (right click on it) and you will see
     <img src="../../assets/images/gui/combatacademygui.png" class="img-fluid mx-auto" alt="Combat Academy GUI">
    </div>
   <div class="col-sm-12 col-md">
-    <p>The Worker assigned and it's Level. (The worker levels up in time by doing it's work. The higher the level the faster and more efficient it will be). And the buttons:</p>
+    <br>
     <ul>
       {% for item in site.data.gui.global %}
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
@@ -53,6 +53,4 @@ Now you can access the Combat Academy block (right click on it) and you will see
     </ul>
   </div>
 </div>  
-  <br>
-  
-### **To see build options please see the [Builder](../../source/workers/builder) Page**  
+  <br> 
