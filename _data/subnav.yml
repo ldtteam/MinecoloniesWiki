@@ -15,6 +15,18 @@ subnav:
         url: source/tutorials/schematics
       - page: Servers
         url: source/tutorials/serverinfo
+  - title: Systems
+    subitems:
+      - page: Command System
+        url: source/systems/commands
+      - page: Happiness System
+        url: source/systems/happiness
+      - page: Worker System
+        url: source/systems/worker
+      - page: Town Claim Modes
+        url: source/systems/townclaimmodes
+      - page: Protection System
+        url: source/systems/protection
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome
@@ -61,18 +73,6 @@ subnav:
         url: source/items/timberframes
       - page: Waypoint
         url: source/items/waypoint
-  - title: Systems
-    subitems:
-      - page: Command System
-        url: source/systems/commands
-      - page: Happiness System
-        url: source/systems/happiness
-      - page: Worker System
-        url: source/systems/worker
-      - page: Town Claim Modes
-        url: source/systems/townclaimmodes
-      - page: Protection System
-        url: source/systems/protection
   - title: Workers
     subitems:
       - page: Baker
