@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Minecolonies Wiki
 layout: default
 ---
 # Archery
@@ -20,7 +20,7 @@ layout: default
 </div>
 
 
-## About the Building
+# About the Building
 
 The Archery building is where your [Rangers in Training](../../source/workers/ranger) become [Rangers Guards](../../source/workers/guard). This also allows them to level up without risk of dying to mobs. The number of students depend on the level of the building. 
 
@@ -38,7 +38,7 @@ The Rangers in Training are not actual guards even though they will be dressed a
 
 
 
-## Archery GUI
+# Archery GUI
 
 Once the building is built, you can access the Archery block (right click on it) and you will see a GUI with different options:
 
