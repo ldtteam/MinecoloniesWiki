@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Barracks Tower
@@ -17,7 +17,7 @@ layout: default
     </div>
 </div>
 
-# About the Barracks Tower
+## About the Barracks Tower
 
 The Barracks Towers will employ and house 1 [Guard](../../source/workers/guard) for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn, however, once they are hired at the Barracks Tower that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
@@ -48,7 +48,7 @@ The Barracks Tower locations are predetermined by the [Barracks](../../source/bu
 
 <br>
 
-# Barracks Tower GUI
+## Barracks Tower GUI
 
 When accessing the Barracks Tower's hut block by right-clicking on it, you will see a GUI with different options:
 
