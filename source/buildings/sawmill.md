@@ -19,7 +19,7 @@ layout: default
     <recipe>sawmill</recipe>
 </div>
 
-# About the Sawmill
+## About the Sawmill
 
 The Sawmill is where the Miller will craft any items made of at least 75% wood (no bows or redstone items). For them to do this, you must teach the Sawmill the recipes and the Miller must receive a request for an item from another worker.
 
@@ -35,7 +35,7 @@ The Sawmill is where the Miller will craft any items made of at least 75% wood (
 | 5 | 320 | 
 
 
-# Sawmill GUI
+## Sawmill GUI
 
 When accessing the Sawmill's hut block by right-clicking on it, you will see a GUI with different options:  
 
