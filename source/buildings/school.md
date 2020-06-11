@@ -22,7 +22,7 @@ layout: default
     <recipe>school</recipe>
 </div>
 
-# About the School
+## About the School
 
 The School is where the Teacher will level up the Pupils' (children) skills. Paper will increase the leveling speed of the Pupils. 
 
@@ -38,7 +38,7 @@ The level of the School determines how many Pupils can be taught at a time.
 
 <br>
 
-# School GUI
+## School GUI
 
 When accessing the School's hut block by right-clicking on it, you will see a GUI with different options:
 
