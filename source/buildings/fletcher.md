@@ -19,7 +19,7 @@ layout: default
     <recipe>fletcher</recipe>
 </div>
 
-# About the Fletcher's Hut
+## About the Fletcher's Hut
 
 The Fletcher's Hut is where the Fletcher will craft items that use string or wool, such as bows, fishing poles and paintings. For the Fletcher to work, they must receive a request from another worker and have the necessary materials. The Fletcher's Hut must also have been taught the crafting recipes for all the items you want the Fletcher to be able to craft.
 
@@ -36,7 +36,7 @@ The Fletcher's Hut is where the Fletcher will craft items that use string or woo
 
 <br>
 
-# Fletcher's Hut GUI
+## Fletcher's Hut GUI
 
 When accessing the Fletcher's Hut block by right-clicking on it, you will see a GUI with different options:
 
