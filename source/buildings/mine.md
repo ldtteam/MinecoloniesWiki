@@ -19,7 +19,7 @@ layout: default
     <recipe>mine</recipe>
 </div>
 
-# About the Mine
+## About the Mine
 
 The Mine is where the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 
@@ -43,7 +43,7 @@ When accessing the Mine's hut block by right-clicking on it, you will see a GUI 
   </div>
 </div>  
 
-Page two of the Mine's GUI:  
+This is page two of the Mine's GUI.  
 
 <div class="row">
   <div class="col-sm-12 col-md">
