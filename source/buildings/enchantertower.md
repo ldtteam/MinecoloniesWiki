@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 # Enchanter's Tower
@@ -21,7 +21,7 @@ layout: default
 
 # About the Enchanter's Tower
 
-The Enchanter's Tower is where the Enchanter will create enchanted books, as long as they have [Ancient Tomes.](../../source/items/ancient_tome) The Enchanter will collect XP from other workers to create enchanted books. They will *not* apply the enchanted books to tools and armor, you must do that yourself.
+The Enchanter's Tower is where the Enchanter will create enchanted books, as long as they have [Ancient Tomes](../../source/items/ancient_tome). The Enchanter will collect XP from other workers to create the enchanted books. They will *not* apply the enchanted books to tools and armor, you must do that yourself.
 
 The higher the level of the Enchanter's Tower, the higher the level of the enchanted books the Enchanter will produce. So:
 
