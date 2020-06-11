@@ -19,7 +19,7 @@ layout: default
     <recipe>guardtower</recipe>
 </div>
 
-# About the Building
+## About the Building
 
 Before you choose a place to build the Tower, take into account the distances among the other buildings and obstacles like rivers, lakes, ponds, trees, caves, mountains, lava sources, etc.
 
@@ -33,7 +33,7 @@ The Guard’s Tower also offers a home to the assigned citizens so you don't nee
 
 Now you can access the Guard's Hut block (right click on it) and you will see a GUI with different options:
 
-# Guard Tower GUI
+## Guard Tower GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
