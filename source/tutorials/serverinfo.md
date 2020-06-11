@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: MineColonies Wiki
 layout: default
 ---
 Content coming soon!
