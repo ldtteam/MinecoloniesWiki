@@ -17,16 +17,16 @@ These are the in game commands currently available, most require that a user hav
 
 **Command Syntax**
 
-| If you see this...   | Then                              |
-| :------------------: | :-------------------------------: |
-| `plaintext`          | Enter this exactly as shown       |
-| `<angle brackets>`   | This is a **required** argument   |
-| `[square brackets]`  | This is an **optional** argument  |
-| `x | y | z`          | Pick one of these options         |
+| If you see this...  |               Then               |
+| :-----------------: | :------------------------------: |
+|     `plaintext`     |   Enter this exactly as shown    |
+| `<angle brackets>`  | This is a **required** argument  |
+| `[square brackets]` | This is an **optional** argument |
+|     `x | y | z`     |    Pick one of these options     |
 
 ## Base Command
 
-/minecolonies `<colonies | kill | colony | citizens | rs | rtp | backup | home | raid-tonight | raid-now | check | whoami | whereami | scan>` (/mc)
+/minecolonies `<colonies | kill | colony | citizens | rs | rtp | backup | home | raid-tonight | raid-now | check | whoami | whereami | scan | help>` (/mc)
 
 <table class="table">
   <thead>
@@ -72,6 +72,10 @@ These are the in game commands currently available, most require that a user hav
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc scan [player: online player] &lt;x1: x coord&gt; &lt;y1: y coord&gt; &lt;z1: z coord&gt; &lt;x2: x coord&gt; &lt;y2: y coord&gt; &lt;z2: z coord&gt; [name: name of schematic]</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.Scan</span><br>Default Permission Level: OP</td>
       <td class="d-block d-lg-table-cell">Scans an area and saves it as a schematic (Command version of what the scan tool can be used for)<br><br>Examples:<br><code>/mc scan x1: 1 y1: 1 z1: 1 x2: 5 y2: 5 z2: 5</code><br><code>/mc scan player: Steve x1: 1 y1: 1 z1: 1 x2: 5 y2: 5 z2: 5</code><br><code>/mc scan x1: 1 y1: 1 z1: 1 x2: 5 y2: 5 z2: 5 name: MyAwesomeDecoration</code></td>
+    </tr>
+     <tr class="d-block d-lg-table-row">
+      <td class="d-block d-lg-table-cell"><code>/mc help</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.Scan</span><br>Default Permission Level: ALL</td>
+      <td class="d-block d-lg-table-cell">Displays the URL for this wiki as well as the URL for the Discord server.</code></td>
     </tr>
   </tbody>
 </table>
