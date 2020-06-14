@@ -21,9 +21,9 @@ layout: default
 
 ## About the Blacksmith's Hut
 
-The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor and swords, and shields (no bows or redstone items). The Blacksmith will work when they receive a request for any of those items from another worker. 
+The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor, swords, and shields (no bows or redstone items). The Blacksmith will work when they receive a request for any of those items from another worker. 
 
-**Note:** You will need to teach the Blacksmith the recipes of the items you want them to create. The number of items the Blacksmith can learn are listed below.
+**Note:** You will need to teach the Blacksmith the recipes of the items you want them to create. The number of items the Blacksmith can learn are listed below:
 
 
 | Building Level | Number of Recipes |
