@@ -75,7 +75,7 @@ These are the in game commands currently available, most require that a user hav
     </tr>
      <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc help</code><br><br><span class="perm">Permission node: com.minecolonies.coremod.Scan</span><br>Default Permission Level: ALL</td>
-      <td class="d-block d-lg-table-cell">Displays the URL for this wiki as well as the URL for the Discord server.</code></td>
+      <td class="d-block d-lg-table-cell">Displays the URL for the wiki as well as the URL for the Discord server.</code></td>
     </tr>
   </tbody>
 </table>
