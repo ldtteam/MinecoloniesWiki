@@ -56,7 +56,7 @@ These are the in game commands currently available, most require that a user hav
       <td class="d-block d-lg-table-cell">Schedule a barbarian raid for every colony, to start the coming night.</td>
     </tr>
       <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc resetsupplies &lt;online player &gt;</code><br><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell"><code>/mc resetsupplies &lt;online player&gt;</code><br><br>Default Permission Level: OP</td>
       <td class="d-block d-lg-table-cell">Resets the ability to place a supply camp or ship.</td>
     </tr>
       <td class="d-block d-lg-table-cell"><code>/mc rtp</code><br><br>Default Permission Level: All</td>
@@ -102,19 +102,24 @@ These are the in game commands currently available, most require that a user hav
       <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt; [delete Buildings]</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut is still placed)<br><br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
     </tr>
+    <tr class="d-block d-md-table-row">
     <td class="d-block d-md-table-cell"><code>/mc colony home</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Teleports a colony owner back to the Town Hall of their colony.<br><br>Examples:<br><code>/mc colony home</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br><br>Default permission level: All</td>
+    <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted or not)<br><br>Examples:<br><code>/mc colony info 1</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony list &lt;[startpage]&gt;</code><br><br>Default permission level: All</td>
+    <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/mc colony list &lt;[startpage]&gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Shows a list of all the colonies  (ID, Name, Coordinates)<br><br>Examples:<br><code>/mc colony list</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony loadAllColoniesFromBackup</code><br><br>Default permission level: OP</td>
+    <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/mc colony loadAllColoniesFromBackup</code><br><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Loads all colonies from backup<br><br>Examples:<br><code>/mc colony loadAllColoniesFromBackup</td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony loadBackup &lt;[colony id]&gt;</code><br><br>Default permission level: OP</td>
+    <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/mc colony loadBackup &lt;[colony id]&gt;</code><br><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Loads an individual colony from backup<br><br>Examples:<br><code>/mc colony loadBackup 1</code><br></td>
     </tr>
     <tr class="d-block d-md-table-row">
