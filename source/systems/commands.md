@@ -4,7 +4,7 @@ layout: default
 ---
 # Commands
 
-These are the in game commands currently available, most require that a user have operator privileges to work, or require that a single player world has cheats enabled. If you would like to make use of Permission nodes you require a server API such as SpongeForge along with a permissions system such as LuckPerms
+These are the in game commands currently available, most require that a user have operator privileges to work, or require that a single player world has cheats enabled. 
 
 - [Commands](#commands)
   - [Base Commands](#base-command)
