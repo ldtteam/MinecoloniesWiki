@@ -1,21 +1,36 @@
-version: '3'
+version: '3.8'
 
 services:
-  wiki:
-    container_name: minecolonies_wiki
-    image: docker.minecolonies.com/wiki:latest
-    restart: unless-stopped
-    expose:
-      - 4000
+  jekyll-host:
+    image: container.ldtteam.com/wiki:latest
     environment:
-      - VIRTUAL_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com, minecolonieswiki.orionminecraft.com, www.minecolonieswiki.orionminecraft.com
-      - VIRTUAL_PROTO=http
-      - VIRTUAL_PORT=4000
-      - LETSENCRYPT_HOST=wiki.minecolonies.com, www.wiki.minecolonies.com, minecolonieswiki.orionminecraft.com, www.minecolonieswiki.orionminecraft.com
-      - LETSENCRYPT_EMAIL=marcf1@hotmail.com
       - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
+    deploy:
+      mode: replicated
+      replicas: 2
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - node.labels.system==production
+          - node.labels.type==worker
+          - node.labels.web
+      labels:
+        - traefik.enable=true
+        - traefik.constraint-label=traefik-public
+        - traefik.docker.network=traefik-public
+        - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+        - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+        - traefik.http.routers.wiki-minecolonies-http.rule=Host(`wiki.minecolonies.ldtteam.com`)
+        - traefik.http.routers.wiki-minecolonies-http.entrypoints=http
+        - traefik.http.routers.wiki-minecolonies-http.middlewares=https-redirect
+        - traefik.http.routers.wiki-minecolonies-https.rule=Host(`wiki.minecolonies.ldtteam.com`)
+        - traefik.http.routers.wiki-minecolonies-https.entrypoints=https
+        - traefik.http.routers.wiki-minecolonies-https.tls=true
+        - traefik.http.routers.wiki-minecolonies-https.service=wiki-minecolonies
+        - traefik.http.routers.wiki-minecolonies-https.tls.certresolver=le
+        - traefik.http.services.wiki-minecolonies.loadbalancer.server.port=4000
+
 
 networks:
-  default:
-    external:
-      name: webproxy
+  traefik-public:
+    external: true
