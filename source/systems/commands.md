@@ -87,28 +87,28 @@ These are the in game commands currently available, most require that a user hav
   <tbody>
     <tr class="d-block d-md-table-row">
       <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony addOfficer &lt;colony id &gt; &lt;online player&gt;</code><br><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony addOfficer &lt;colony id&gt; &lt;online player&gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Adds an officer to a colony<br><br>Examples:<br><code>/mc colony addofficer 1 Steve</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony canSpawnRaiders &lt;colony id &gt; &lt;canSpawn&gt;</code><br><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony canSpawnRaiders &lt;colony id&gt; &lt;canSpawn&gt;</code><br><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Adds or removes the ability to spawn raiders.<br><br>Examples:<br><code>/mc colony canSpawnRaiders 1 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id &gt; &lt;[number in chunks] [true | false]</code><br><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id&gt; &lt;[number in chunks] [true | false]</code><br><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Claims chunks (or removes claimed chunks) a specified number of chunks from the player's location for a colony<br><br>Examples:<br><code>/mc colony claim 1 8 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id &gt; [delete Buildings]</code><br><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt; [delete Buildings]</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut is still placed)<br><br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
     </tr>
     <td class="d-block d-md-table-cell"><code>/mc colony home</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Teleports a colony owner back to the Town Hall of their colony.<br><br>Examples:<br><code>/mc colony home</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id] &gt;</code><br><br>Default permission level: All</td>
+    <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted or not)<br><br>Examples:<br><code>/mc colony info 1</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony list &lt;[startpage] &gt;</code><br><br>Default permission level: All</td>
+    <td class="d-block d-md-table-cell"><code>/mc colony list &lt;[startpage]&gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Shows a list of all the colonies  (ID, Name, Coordinates)<br><br>Examples:<br><code>/mc colony list</code><br></td>
     </tr>
     <td class="d-block d-md-table-cell"><code>/mc colony loadAllColoniesFromBackup</code><br><br>Default permission level: OP</td>
@@ -142,7 +142,7 @@ These are the in game commands currently available, most require that a user hav
       <td class="d-block d-md-table-cell">Sets whether a colony can be marked for auto-deletion or not<br><br>Examples:<br><code>/mc colony setDeletable 1 false</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony setowner &lt;colony id &gt; &lt;online-player&gt;</code><br><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony setowner &lt;colony id&gt; &lt;online-player&gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Changes the owner of a colony<br><br>Examples:<br><code>/mc colony setowner 1 Steve</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
@@ -165,7 +165,7 @@ These are the in game commands currently available, most require that a user hav
   </thead>
   <tbody>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc citizens info &lt;colony id&gt; &lt;citizen id &gt;</code><br><br>Default permission level: ALL</td>
+      <td class="d-block d-md-table-cell"><code>/mc citizens info &lt;colony id&gt; &lt;citizen id&gt;</code><br><br>Default permission level: ALL</td>
       <td class="d-block d-md-table-cell">Gives basic information about a specified citizen in a colony such as their ID and name<br><br>Examples:<br><code>/mc citizens info 1 1</code><br></td>
     </tr>
     <tr class="d-block d-md-table-row">
@@ -185,10 +185,10 @@ These are the in game commands currently available, most require that a user hav
       <td class="d-block d-md-table-cell">Spawns a new citizen in a colony<br><br>Examples:<br><code>/mc citizens spawnNew 1</code><br></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc citizens teleport &lt;colony id &gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br><br>Default permission level: ALL</td>
+      <td class="d-block d-md-table-cell"><code>/mc citizens teleport &lt;colony id&gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br><br>Default permission level: ALL</td>
       <td class="d-block d-md-table-cell">Teleports a specific citizen to a given location<br><br>Examples:<br><code>/mc citizens teleport 1 1 -50 62 128</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc citizens walk &lt;colony id &gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br><br>Default permission level: ALL</td>
+    <td class="d-block d-md-table-cell"><code>/mc citizens walk &lt;colony id&gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br><br>Default permission level: ALL</td>
       <td class="d-block d-md-table-cell">Tells a specific citizen to walk to a given location<br><br>Examples:<br><code>/mc citizens walk 1 1 -50 62 128</code><br></td>
     </tr>
   </tbody>
