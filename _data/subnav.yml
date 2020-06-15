@@ -49,8 +49,8 @@ subnav:
         url: source/items/constructiontape
       - page: Floating Carpet
         url: source/items/floatingcarpet
-      - page: Multiblock
-        url: source/items/multiblock
+      - page: Multipiston
+        url: source/items/multipiston
       - page: Paper Walls
         url: source/items/paperwalls
       - page: Postbox
