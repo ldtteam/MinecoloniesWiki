@@ -106,9 +106,9 @@ These are the in game commands currently available, most require that a user hav
       <td class="d-block d-md-table-cell">Teleports a colony owner back to the Town Hall of their colony.<br><br>Examples:<br><code>/mc colony home</code><br></td>
     </tr>
     <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id] &gt;</code><br><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted or not)<br><br>Examples:<br><code>/mc colony info 1</code></td>
+      <td class="d-block d-md-table-cell">Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted or not)<br><br>Examples:<br><code>/mc colony info 1</code><br></td>
     </tr>
-    <td class="d-block d-md-table-cell"><code>/mc colony list&lt;[startpage]&gt;</code><br><br>Default permission level: All</td>
+    <td class="d-block d-md-table-cell"><code>/mc colony list &lt;[startpage] &gt;</code><br><br>Default permission level: All</td>
       <td class="d-block d-md-table-cell">Shows a list of all the colonies  (ID, Name, Coordinates)<br><br>Examples:<br><code>/mc colony list</code><br></td>
     </tr>
     <td class="d-block d-md-table-cell"><code>/mc colony loadAllColoniesFromBackup</code><br><br>Default permission level: OP</td>
