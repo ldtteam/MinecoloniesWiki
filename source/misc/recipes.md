@@ -13,6 +13,7 @@ The building tool used in any of these recipes will not be consumed in the recip
 
 **Notes:**
 The [Ancient Tome](../../source/items/ancient_tome) is not on here as it cannot be crafted and must be obtained in game. 
+
 The [Calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 
 | Name                                          | Ingredients                                | Recipe                          |
@@ -26,7 +27,7 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
 | [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Building Tool + String | <recipe>floatingcarpet</recipe> |
-| [Multiblock](../../source/buildings/multiblock) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multiblock</recipe> |
+| [Multi-piston](../../source/buildings/multipiston) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multiblock</recipe> |
 | [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwalls</recipe>     |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
 | [Rack](../../source/items/rack)               | **Any** Planks + Iron Bars                 | <recipe>rack</recipe>           |
