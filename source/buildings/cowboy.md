@@ -23,7 +23,7 @@ layout: default
 
 The Cowboy's Hut is where the Cowboy will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowboy's Hut, as the Cowboy will not catch and bring in any cows.
 
-**Note:** The Cowboy will only keep alive two cows per hut level, so at level 5 they will have ten cows in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and leather. So:
+**Note:** The Cowboy will only keep two cows alive per hut level, so at level 5 they will have ten cows in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and leather. So:
 
 
 | Building Level | Cows Housed |
@@ -64,7 +64,7 @@ When accessing the Cowboy's Hut block by right-clicking on it, you will see a GU
     <br>
     <p>This is page two of the GUI. It shows one <br>button:</p>
     <ul>
-      <li><b>Collecting Milk:</b> On by default. In this mode you provide the Cowboy with as many empty buckets as you like and in return they will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowboy will only breed and butcher the cows, not milk them.</li>
+      <li><b>Collecting Milk:</b> On by default. In this mode, you provide the Cowboy with as many empty buckets as you like, and in return, they will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowboy will only breed and butcher the cows, not milk them.</li>
     </ul>
   </div>
 </div>  
