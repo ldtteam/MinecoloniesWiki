@@ -34,7 +34,7 @@ Go to the [Minecraft Forge Download page](http://files.minecraftforge.net/?forum
 
 ### Run Forge Installer
 
-Run the downloaded recommended version and make sure it's on "Install Client". Installation path is preset according to Minecraft's standard installation path. If you have it installed in a different directory change the installation directory. When it's done you will see a "Complete" message.
+Run the downloaded recommended version and make sure it's on "Install Client". Installation path is preset according to Minecraft's standard installation path. If you have it installed in a different directory, change the installation directory. When it's done you will see a "Complete" message.
 
 | ![Forge installer](../../assets/images/installation/forge_1.png) | ![Forge installed](../../assets/images/installation/forge_2.png) |
 
@@ -48,7 +48,7 @@ On your computer go to the **.minecraft/mods** folder. To be able to find this f
 
 ### Copy MineColonies to Mods
 
-Once you are in the **.minecraft/mods** folder, copy the downloaded MineColonies file you downloaded in Step 1 and paste it here. NOTE: DO NOT extract the file if the option appears. Just put the .jar file in here without extracting it's contents.
+Once you are in the **.minecraft/mods** folder, copy the downloaded MineColonies file you downloaded in Step 1 and paste it here. NOTE: DO NOT extract the file if the option appears. Just put the .jar file in here without extracting its contents.
 
 #### If Adding Pack, Extract it
 
