@@ -23,7 +23,7 @@ layout: default
 
 The Swine Herder's Hut is where the Swine Herder will breed and butcher pigs for food. You will have to capture and bring in two pigs to the Swine Herder's Hut, as the Swine Herder will not catch and bring in any pigs.
 
-**Note:** The Swine Herder will only keep alive two pigs per hut level, so at level 5 they will have ten pigs in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat. So:
+**Note:** The Swine Herder will only keep two pigs alive per hut level, so at level 5 they will have ten pigs in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat. So:
 
 
 | Building Level | Pigs Housed |
