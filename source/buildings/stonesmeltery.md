@@ -21,7 +21,7 @@ layout: default
 
 ## About the Stone Smeltery
 
-The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into brick, and clay blocks into terracotta. The Stone Smelter will only do this if they receive a request from another worker and they have the needed materials/fuel.
+The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, and clay blocks into terracotta. The Stone Smelter will only do this if they receive a request from another worker and they have the needed materials/fuel.
 
 **Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will be able to use. So:
 
