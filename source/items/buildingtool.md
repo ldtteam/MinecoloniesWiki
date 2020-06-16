@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <br>
-You will get a building tool in the Supply Camp or Ship. It is in the same rack as the townhall. However, you can craft the building tool if you need another one as the recipe is simple. The building tool is *THE* most important tool you will need for the entire mod! With the building tool you can place all the buildings, worker huts and even even any structure scanned by you (see [Schematics](../tutorials/schematics)) perfectly. The possibilitites are endless! Watch a short video of how it works here:
+You will get a building tool in the Supply Camp or Ship. It is in the same rack as the townhall. However, you can craft the building tool if you need another one, as the recipe is simple. The building tool is *THE* most important tool you will need for the entire mod! With the building tool you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
 <br><br>
 
 <p class="h4"><a id="build_tool">Building Tool Video.</a></p>
@@ -59,15 +59,15 @@ To place a worker hut or a building from the mod, you first need to have the hut
 - The green check mark is for when you are done and want to commit to placing it.
 - The red X is to cancel the whole process.
 
-- **Note:** When in creative mode you will also see in the lower right the *Copy* and *Paste* options.
+- **Note:** When in creative mode you will also see in the lower right, the *Copy* and *Paste* options.
 
 <br>
 
-<p style="color:Blue;"><b>Hint:</b> Once you have the GUI open you can press the ESC button on your keyboard so that the 3D image will remain and you can move around and take a better look at it from all sides to make sure it's the way you want it! Then you can right click with the building tool again towards the 3D image (on a block or even in the air) to go back to the GUI so you can "nudge" your structure to the best place and orientation that you want. You can repeat this process as many times as you want before clicking the green check mark to commit to the placement of the structure.</p>
+<p style="color:Blue;"><b>Hint:</b> Once you have the GUI open, you can press the ESC button on your keyboard so that the 3D image will remain and you can move around and take a better look at it from all sides to make sure it's the way you want it! Then you can right click with the building tool again towards the 3D image (on a block or even in the air) to go back to the GUI so you can "nudge" your structure to the best place and orientation that you want. You can repeat this process as many times as you want before clicking the green check mark to commit to the placement of the structure.</p>
 
 <br>
 ### Step Three
 
-Now that you have the structure ready to place, click on the green check mark and voilá... it will be sent as a buld order to the Builder if it's a decoration or schematic! But if it's a Hut, you might have to go into the Hut block's GUI and press on the build button to have the build order sent to the Builder.
+Now that you have the structure ready to place, click on the green check mark and voilá... it will be sent as a build order to the Builder if it's a decoration or schematic! But if it's a Hut, you might have to go into the Hut block's GUI and press on the build button to have the build order sent to the Builder.
 
 You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders tab to see the queue of all build requests you have for the Builder.
