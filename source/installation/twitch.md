@@ -4,7 +4,7 @@ layout: default
 ---
 # Twitch Client
 
-If you want to play on the **MineColonies Official 1.12.2** Server we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.
+If you want to play on the **MineColonies Official 1.12.2** Server, we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.
 
 - [Twitch Client](#twitch-client)
     - [Installation of the Modpack through the Twitch Client](#installation-of-the-modpack-through-the-twitch-client)
@@ -38,7 +38,7 @@ If you want to play on the **MineColonies Official 1.12.2** Server we highly rec
 
 ### Navigate to Mods
 
-On the top bar of the Launcher look for the tab called Mods, Click on it and then select Minecraft
+On the top bar of the Launcher, look for the tab called Mods, Click on it and then select Minecraft
 
 ![Launcher Mods](../../assets/images/installation/twitch_1.png)
 
@@ -62,7 +62,7 @@ After the "Install" is done select "Browse all ModPacks".
 
 ### Search for MineColonies Pack
 
-Type in the search bar: MineColonies and once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
+Type in the search bar: "MineColonies", and once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
 
 ![Selecting the Modpack](../../assets/images/installation/twitch_5.png)
 
@@ -98,13 +98,13 @@ Click the "MineColonies Official" profile. Then you are good to go to Step 8 aga
 
 ### Select Multiplayer
 
-When Minecraft have loaded up, Click on the Multiplayer button.
+When Minecraft has loaded up, Click on the Multiplayer button.
 
 ![Loaded Minecraft](../../assets/images/installation/twitch_9.png)
 
 ### Select our Server
 
-Finally click on MineColonies Official 1.12.2! The server info will be pre set up there already for you.
+Finally, click on MineColonies Official 1.12.2! The server info will be pre set up there already for you.
 
 ![Join the Official Server](../../assets/images/installation/twitch_10.png)
 
