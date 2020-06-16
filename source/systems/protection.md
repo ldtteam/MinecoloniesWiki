@@ -8,7 +8,7 @@ Our Custom Protection System (once a Townhall is placed) can be toggled in the c
 
 The custom protection includes turning explosions off (by default), to have creepers, TNT and any modded blocks not destroy your area.
 
-It also covers from Y = 0 to y = 256, so you don't have to worry about any griefing from bedrock to sky limit.
+It also covers from Y = 0 to Y = 256, so you don't have to worry about any griefing from bedrock to sky limit.
 
 **Note:** The Protection system depends on the claim system. Only areas that are "claimed" will have the protection system. See Town Claim Modes for complete information.
 
