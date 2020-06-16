@@ -21,7 +21,7 @@ layout: default
 
 ## About the Lumberjack's Hut
 
-The Lumberjack's Hut is where the Lumberjack will go in between chopping down trees. The lumberjack will cut down any tree in an approximate 50 block area from their hut that is not in a hut schematic and doesn't have cobblestone placed beneath it.
+The Lumberjack's Hut is where the Lumberjack will go in between chopping down trees. The Lumberjack will cut down any tree in an approximate 50 block area from their hut that is not in a hut schematic and doesn't have cobblestone placed beneath it.
 
 <br>
 
@@ -65,9 +65,9 @@ This is page three of the Lumberjack's Hut GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Replant:</strong> Where you can select if you want the lumberjack to replant trees that are chopped down. They will only do this if they have the enough saplings.</li><br>
+      <li><strong>Replant:</strong> Where you can select if you want the Lumberjack to replant trees that are chopped down. They will only do this if they have enough saplings.</li><br>
       <li><strong>Restriction:</strong> This lets you turn on or off if you want the Lumberjack to be restricted to a certain area when chopping trees. To choose the area, use the Give Tool button.</li><br>
-      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the lumberjack to work.</li>
+      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the Lumberjack to work.</li>
     </ul>
   </div>
 </div>
