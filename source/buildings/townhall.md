@@ -49,7 +49,7 @@ Due to the protected area of each colony, you have to carefully scout your surro
 
 - **Note**: You can configure your own colony area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../config/``` folder of your own world. (see Minecolonies config server section for details)
 
-If there is another colony too close to your current position you won't be able to place a Town Hall.
+If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
 If you try to place another Town Hall outside of your protected area, you will get a message: <br> 
 <img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second TownHall" />
@@ -127,13 +127,13 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
      <li><strong>Page 3: </strong>Here you can select each rank that you would like to manage.</li><br>
-     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) tha you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission <b>you</b> want.</li>
+     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission <b>you</b> want.</li>
     </ul>
   </div>
 </div>  
 
 ---
-<p><strong>Permissions Pg. 5 & 6: </strong>In this section you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block regardless of their rank in your colony.</p>
+<p><strong>Permissions Pg. 5 & 6: </strong>In this section, you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block regardless of their rank in your colony.</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -198,7 +198,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
      <br>
      <li><strong>Page 1: </strong>Blank page except for the header (future use).</li><br>
-     <li><strong>Page 2: </strong>Here are all the build orders listed that have been created by you (including decorations and your own schematics as well as the mod's huts). Your Builders will complete the builds from top to bottom. Here you can  the priority of the builds and delete work orders. When you delete a work order which is currently being built, the Builder will stop building and will continue where he left off if you create the work order again.</li>
+     <li><strong>Page 2: </strong>Here are all the build orders listed that have been created by you (including decorations and your own schematics as well as the mod's huts). Your Builders will complete the builds from top to bottom. Here you can change the priority of the builds and delete work orders. When you delete a work order which is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
     </ul>
   </div>
 </div>
