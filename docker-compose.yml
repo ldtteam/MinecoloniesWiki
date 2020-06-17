@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jekyll-host:
-    image: container.ldtteam.com/wiki:latest
+    image: container.ldtteam.com/ldtteam/minecolonies/wiki:latest
     environment:
       - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
     deploy:
