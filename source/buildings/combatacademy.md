@@ -21,6 +21,9 @@ layout: default
 
 ## About the Combat Academy
 
+### Note: The Combat Academy can not be built until you have a Level 3 Barracks and finish the research in the [University](../../source/buildings/university) 
+<br> 
+
 The Combat Academy is where your [Knights in Training](../../source/workers/knight) will train to become [Knight Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Academy. 
 
 | Combat Academy Level | Max # of Students |
