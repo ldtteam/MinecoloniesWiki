@@ -93,7 +93,7 @@ Let's begin by explaining the basics of this system:
 
 **Note:** An interesting feature is that in dynamic claim mode, when placing the Town Hall, there is NO warning of being too close to another Town. Town Halls CAN be close to each other (outside each other's claim of course) thus allowing very close Town collaborations.
 
-Since there is NO warning of "too close to another Town" to place Townhall tho (like in the static claim mode) it is up to the players to always check their surrounding areas for existing Towns and for players that might not be paying attention and trying to establish a Town or getting too close to an existing Town.
+Since there is NO warning of "too close to another Town" to place a Town Hall though (like in the static claim mode) it is up to the players to always check their surrounding areas for existing Towns and for players that might not be paying attention and trying to establish a Town or getting too close to an existing Town.
 
 #### Worker Hut Claim Areas:
 
