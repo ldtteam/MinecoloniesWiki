@@ -21,7 +21,7 @@ layout: default
 
 ## About the Library
 
-### Note: The Library can not be built until you finish the research in the [University](../../source/buildings/university)
+### Note: The Library cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>
 
 The Library is a way for you to raise your adult citizens' Intelligence skill, which influences all other skill increases (at other jobs). A citizen will randomly level up their Intelligence as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
