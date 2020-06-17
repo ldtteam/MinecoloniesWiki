@@ -87,7 +87,7 @@ Let's begin by explaining the basics of this system:
 
 **5-** Placement of new huts can only be within the existing claims. As long as the Hut block is inside the existing claim, it will place successfully (even if the building itself is partially outside of the claim when viewing with building tool).
 
-**6-** Breaking the TownHall block and placing it elsewhere will also remove its claim and any building outside of its new claim will not work.
+**6-** Breaking the Town Hall block and placing it elsewhere will also remove its claim and any building outside of its new claim will not work.
 
 **7-** If for some reason two players are too close and the claim seems to "overlap", the player that placed his claim first will keep the claim, the other player will simply **not** expand into an existing claim. Unless the existing claim removes the claim (by removing a building), then the new "overlapping" claim will take effect as there would be **no** claim in that space.
 
