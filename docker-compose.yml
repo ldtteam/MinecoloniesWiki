@@ -5,6 +5,8 @@ services:
     image: container.ldtteam.com/ldtteam/minecolonies/wiki:latest
     environment:
       - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
+    networks:
+      - traefik-public
     deploy:
       mode: replicated
       replicas: 2
