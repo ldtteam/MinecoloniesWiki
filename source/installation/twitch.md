@@ -98,7 +98,7 @@ Click the "MineColonies Official" profile. Then you are good to go to Step 8 aga
 
 ### Select Multiplayer
 
-When Minecraft has loaded up, Click on the Multiplayer button.
+When Minecraft has loaded up, click on the Multiplayer button.
 
 ![Loaded Minecraft](../../assets/images/installation/twitch_9.png)
 
