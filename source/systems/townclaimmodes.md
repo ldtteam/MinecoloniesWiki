@@ -61,7 +61,7 @@ X |     average of Barrackstower level, up to 5
 
 This claim method is the basic form and the one that is set by default. It is very simple and is set as soon as the Townhall is placed. It will set the claim and protection area for the Town according to the value in the config file (default set to 8 chunk radius).
 
-Which means once the Townhall is placed, it will automatically claim 8 chunks in a square area; 8 chunks to the North, South, East and West. So the entire claimed chunks will be 17 x 17 chunks `(8 + 8 + 1 [chunk where the Townhall is placed] = 17 in the x and z coords)`.
+This means that once the Town Hall is placed, it will automatically claim 8 chunks in a square area: 8 chunks to the North, South, East, and West. So the entire claimed chunks will be 17 x 17 chunks `(8 + 8 + 1 [chunk where the Townhall is placed] = 17 in the x and z coordinates)`.
 
 This method is static and will _not_ grow or shrink with the Town development and it's **permanent**, can't be removed, changed or modified, except by commands.
 
