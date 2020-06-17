@@ -2,9 +2,11 @@ version: '3.8'
 
 services:
   jekyll-host:
-    image: container.ldtteam.com/wiki:latest
+    image: container.ldtteam.com/ldtteam/minecolonies/wiki:latest
     environment:
       - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
+    networks:
+      - traefik-public
     deploy:
       mode: replicated
       replicas: 2
@@ -13,7 +15,7 @@ services:
         constraints:
           - node.labels.system==production
           - node.labels.type==worker
-          - node.labels.web
+          - node.labels.web==true
       labels:
         - traefik.enable=true
         - traefik.constraint-label=traefik-public
