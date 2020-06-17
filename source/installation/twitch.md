@@ -38,7 +38,7 @@ If you want to play on the **MineColonies Official 1.12.2** Server, we highly re
 
 ### Navigate to Mods
 
-On the top bar of the Launcher, look for the tab called Mods, Click on it and then select Minecraft
+On the top bar of the Launcher, look for the tab called Mods, click on it and then select Minecraft.
 
 ![Launcher Mods](../../assets/images/installation/twitch_1.png)
 
