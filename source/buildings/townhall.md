@@ -200,7 +200,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
      <br>
      <li><strong>Page 1: </strong>Blank page except for the header (future use).</li><br>
-     <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up and down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
+     <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up or down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
     </ul>
   </div>
 </div>
