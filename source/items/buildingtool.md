@@ -59,7 +59,7 @@ To place a worker hut or a building from the mod, you first need to have the hut
 - The green check mark is for when you are done and want to commit to placing it.
 - The red X is to cancel the whole process.
 
-- **Note:** When in creative mode you will also see in the lower right, the *Copy* and *Paste* options.
+- **Note:** When in Creative Mode you will also see in the lower right the *Copy* and *Paste* options.
 
 <br>
 
