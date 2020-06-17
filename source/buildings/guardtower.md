@@ -21,7 +21,7 @@ layout: default
 
 ## About the Guard Tower
 
-The Guard Tower will employ and house 1 [Guard](../../source/workers/guard) to protect your colony. The new Guard will need a bed in a house in order to spawn. However, once they are hired at the Guard Tower, that becomes their new residence, and the bed in the house will open up for another new citizen (child or recruit).
+The Guard Tower will employ and house 1 [Guard](../../source/workers/guard) to protect your colony. The new Guard will need a bed in a house in order to spawn. However, once they are hired at the Guard Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 <strong>Note:</strong> If you place Guard Towers near your colony border and level them up, your border will expand.
 
