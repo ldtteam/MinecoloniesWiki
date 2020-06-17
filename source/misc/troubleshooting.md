@@ -33,7 +33,7 @@ If none of these apply, go on to the next troubleshooting checklists.
   3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level. Do they have cobblestone, torches, a pickaxe, a shovel, slabs, and fencing (for the mineshaft)?
   4. [Cook](../../source/workers/cook): Set which fuel you want them to use.
   5. [Baker](../../source/workers/baker): Set which fuel you want them to use and which recipe you want them to bake.
-  6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use.
+  6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use and which ore you want them to smelt.
   7. [Farmer](../../source/workers/farmer): Assign the farmer to a field. Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
   8. [Composter](../../source/workers/composter): Set which items you want them to convert into compost.
   9. Crafter (Miller, Blacksmith, Mechanic, etc): The request for materials must be made after the crafter is hired and the colony must have a [Deliveryman](../../source/workers/deliveryman). Cancel the request at the original NPC to generate a new request, or make a new request from the [Postbox](../../source/items/postbox). Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
