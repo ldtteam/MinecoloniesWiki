@@ -104,7 +104,7 @@ When Minecraft has loaded up, click on the Multiplayer button.
 
 ### Select our Server
 
-Finally, click on MineColonies Official 1.12.2! The server info will be pre set up there already for you.
+Finally, click on MineColonies Official 1.12.2! The server info will be set up already.
 
 ![Join the Official Server](../../assets/images/installation/twitch_10.png)
 
