@@ -21,7 +21,7 @@ layout: default
 
 ## About the Composter's Hut
 
-### Note: The Composter can not be built until you have a Level 3 Farmer and finish the research in the [University](../../source/buildings/university) 
+### Note: The Composter's Hut cannot be built until you have a level 3 [Farm](../../source/buildings/farm) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br> 
 
 The Composter's Hut is where the Composter will turn organic materials into [compost](../../source/items/compost), which can be used by the [Farmer](../../source/worker/farmer) or [Florist](../../source/worker/florist) to fertilize food or flowers. They can also create dirt if you have the setting enabled, which the [Builder](../../source/worker/builder) can use in buildings. The Composter uses [barrels](../../source/items/barrel) to make compost or dirt.
