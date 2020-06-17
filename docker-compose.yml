@@ -13,7 +13,7 @@ services:
         constraints:
           - node.labels.system==production
           - node.labels.type==worker
-          - node.labels.web
+          - node.labels.web==true
       labels:
         - traefik.enable=true
         - traefik.constraint-label=traefik-public
