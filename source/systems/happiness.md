@@ -14,7 +14,7 @@ There is an **overall** colony happiness + **individual** worker happiness:
 
 Overall colony happiness is between 1-10 (initially set to 5) Happiness depends on several factors; security, housing and saturation. Every night there is a recalculation of the happiness based on the following: If average colonist saturation is greater than 5 (+0.1 per level) if it's less than 5 (-0.1 per level). If average colonist housing is greater than 1 (+0.1 per level) If 1 guard level exists for each worker level (worker level 5 needs guard level 5 (hut)) + 0.1 for each average level more -0.1 for each average worker less.
 
-Each time a citizen is killed by a player it will decerease by -9 (Reset to lowest level = 1) Each natural death of a citizen it will decrease by -1.
+Each time a citizen is killed by a player it will decrease by -9 (Reset to lowest level = 1) Each natural death of a citizen it will decrease by -1.
 
 Currently, their skills have NO level cap at all. (Unless capped by Minecraft itself to 50)
 

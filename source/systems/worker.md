@@ -8,7 +8,7 @@ layout: default
 
 ## Workers' Skill Level
 
-There is a system in place for how the workers skills "Level Up". The higher the worker's level, the faster and more efficient they will be. The level of their HOME is what will put a limit on the "Worker Skill Level" they can achieve. Every time you level up their HOME, the worker's max level limit will be DOUBLE the previous limit! Currently the limit on the Workers' "Skill Level" is 100 (once you have made his building level 5, of course). The level of their WORK building determines the speed at which they level up.
+There is a system in place for how the workers' skills "Level Up". The level of their HOME is what will put a limit on the "Worker Skill Level" they can achieve. Every time you level up their HOME, the worker's max level limit will be DOUBLE the previous limit! Currently the limit on the Workers' "Skill Level" is 100 (once you have made his building level 5, of course). The level of their WORK building determines the speed at which they level up.
 
 | Building Level | Max Worker Level |
 | -------------- | ---------------- |
@@ -62,7 +62,7 @@ There is also a system in place for the type of Armor the guards can use dependi
 
 ## Traits
 
-Next to the Worker are the best "Traits" for each worker to have in order for him/her to "level Up" at a faster rate.
+Next to the Worker are the best "Traits" for each worker to have in order for him/her to "Level Up" at a faster rate.
 
 When you click on the "Hire" button, you will see a list of the available workers and the best "Traits" for the specific worker you are hiring will be in green (primary) and yellow (secondary) to help you decide which is the best worker for hire.
 

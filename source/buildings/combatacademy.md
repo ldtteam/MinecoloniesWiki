@@ -31,7 +31,7 @@ The Combat Academy is where your [Knights in Training](../../source/workers/knig
 | 4 | 4 |
 | 5 | 5 |
 
-The Knights in Training require a sword and shield to practice. They will stand near the practice dummy, a pumpkin on top of a bail of hay. 
+The Knights in Training require a sword and shield to practice. They will stand near the practice dummy, a pumpkin on top of a bale of hay. 
 
 The Knights in Training are not actual Guards even though they will be dressed as Knight Guards. They will go to their own house at night to sleep.
 
