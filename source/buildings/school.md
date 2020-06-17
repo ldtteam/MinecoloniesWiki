@@ -24,6 +24,9 @@ layout: default
 
 ## About the School
 
+### Note: The Hospital can not be built until you finish the research in the [University](../../source/buildings/university)
+<br>
+
 The School is where the Teacher will level up the Pupils' (children) skills. Paper will increase the leveling speed of the Pupils. 
 
 The level of the School determines how many Pupils can be taught at a time.

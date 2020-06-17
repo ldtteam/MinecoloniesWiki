@@ -21,6 +21,9 @@ layout: default
 
 ## About the Smeltery
 
+### Note: The Smeltery can not be built until you have a Level 2 Miner and finish the research in the [University](../../source/buildings/university)
+<br>
+
 The Smeltery is where the Smelter will smelt ores into ingots.
 
 **Hint:** The higher the level of the Smeltery, the more furnaces the Smelter will be able to use. A higher level will also have a higher chance to double and even triple the ingot output per block of ore. The Smelter's worker level will sometimes determine the chance to double or triple the ingot output of ores, according to the Smeltery level. So:
