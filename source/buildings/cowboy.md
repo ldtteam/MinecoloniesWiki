@@ -64,7 +64,7 @@ When accessing the Cowboy's Hut block by right-clicking on it, you will see a GU
     <br>
     <p>This is page two of the GUI. It shows one <br>button:</p>
     <ul>
-      <li><b>Collecting Milk:</b> On by default. In this mode, you provide the Cowboy with as many empty buckets as you like, and in return, they will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowboy will only breed and butcher the cows, not milk them.</li>
+      <li><b>Collecting Milk:</b> On by default. In this mode, you provide the Cowboy with as many empty buckets as you like. In return, they will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowboy will only breed and butcher the cows, not milk them.</li>
     </ul>
   </div>
 </div>  
