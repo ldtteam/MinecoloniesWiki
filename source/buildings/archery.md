@@ -22,7 +22,7 @@ layout: default
 
 ## About the Archery
 
-###  Note: The Archery can not be built until you have a Level 3 Barracks and finish the research in the [University](../..source/buildings/university)
+### Note: The Archery cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../..source/buildings/university).
 <br>
 
 The Archery is where your [Rangers in Training](../../source/workers/ranger) will train to become [Ranger Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Archery. 
