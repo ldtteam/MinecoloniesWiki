@@ -21,7 +21,7 @@ layout: default
 
 ## About the University
 
-The University is where a researcher will research various upgrades to your colony. 
+The University is where a Researcher will research various upgrades to your colony. 
 
 ## University GUI
 

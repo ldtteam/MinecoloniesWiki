@@ -6,13 +6,13 @@ layout: default
 
 ---
 
-Colonies have an area of claimed chunks around them. Upon colony creation a colony claims chunks(16x16 block areas) in a square around it, the radius is set with the config setting *initialColonySize*. 
+Colonies have an area of claimed chunks around them. Upon colony creation, a colony claims chunks (16x16 block areas) in a square around it, the radius is set with the config setting *initialColonySize*. 
 
 Those claims normally are protected from modification through other players, see Systems#Protection.
 
 Extending your claim area can be done with buildings. Buildings do claim a square area around them after beeing built, expanding to all sides from the chunk the hutblock is located in. How much they claim depends on the building. They do not claim over the max range, set with the config setting *maxColonySize*.
 
-Removing a building does remove the chunks it claimed, the colonies initial claim radius is excluded.
+Removing a building does remove the chunks it claimed, the colony's initial claim radius is excluded.
 
 #### Building Claim Areas:
 
@@ -61,19 +61,19 @@ X |     average of Barrackstower level, up to 5
 
 This claim method is the basic form and the one that is set by default. It is very simple and is set as soon as the Townhall is placed. It will set the claim and protection area for the Town according to the value in the config file (default set to 8 chunk radius).
 
-Which means once the Townhall is placed it will automatically claim 8 chunks in a square area; 8 chunks to the North, South, East and West. So the entire claimed chunks will be 17 x 17 chunks `(8 + 8 + 1 [chunk where the Townhall is placed] = 17 in the x and z coords)`.
+This means that once the Town Hall is placed, it will automatically claim 8 chunks in a square area: 8 chunks to the North, South, East, and West. So the entire claimed chunks will be 17 x 17 chunks `(8 + 8 + 1 [chunk where the Townhall is placed] = 17 in the x and z coordinates)`.
 
-This method is static and will _not_ grow or shrink with the Town development and it's **permanent**, can't be removed changed or modified, except by commands.
+This method is static and will _not_ grow or shrink with the Town development and it's **permanent**, can't be removed, changed or modified, except by commands.
 
-If you have already placed a TownHall and want to change the size of the Town claim, you will have to change value in the config AND manually run the "claim" command to add more chunks to the already set claimed area.
+If you have already placed a Town Hall and want to change the size of the Town claim, you will have to change the value in the config AND manually run the "claim" command to add more chunks to the already set claimed area.
 
-Make sure to stand in the center of your Town claim area and then run the command: `/mc colony claim <colony: colony id> <dimension: dimension id> [range: number in chunks] [add: true | false]` to add more chunks to an already placed TownHall.
+Make sure to stand in the center of your Town claim area and then run the command: `/mc colony claim <colony: colony id> <dimension: dimension id> [range: number in chunks] [add: true | false]` to add more chunks to an already-placed Town Hall.
 
-Also, once the TownHall is placed, since the claim and protection area is permanent, you can break the Townhall block and place anywhere else within the claimed area to build it.
+Also, once the Town Hall is placed, since the claim and protection area is permanent, you can break the Town Hall block and place anywhere else within the claimed area to build it.
 
 #### Dynamic Claim Mode:
 
-**_This claim method is a much more complex form and requires a lot of attention to detail, from it's placement to it's expansion possibilities._**
+**_This claim method is a much more complex form and requires a lot of attention to detail, from its placement to its expansion possibilities._**
 
 Let's begin by explaining the basics of this system:
 
@@ -87,13 +87,13 @@ Let's begin by explaining the basics of this system:
 
 **5-** Placement of new huts can only be within the existing claims. As long as the Hut block is inside the existing claim, it will place successfully (even if the building itself is partially outside of the claim when viewing with building tool).
 
-**6-** Breaking the TownHall block and placing it elsewhere will also remove it's claim and any building outside of it's new claim will not work.
+**6-** Breaking the Town Hall block and placing it elsewhere will also remove its claim and any building outside of its new claim will not work.
 
-**7-** If for some reason two players are too close and the claim seems to "overlap", the player that placed his claim first will keep the claim, the other player will simply **not** expand into an existing claim. Unless the existing claim removes the claim (by removing a building), then the new "overlapping claim will take effect as ther ewould be **no** claim in that space.
+**7-** If for some reason two players are too close and the claim seems to "overlap", the player that placed his claim first will keep the claim, the other player will simply **not** expand into an existing claim. Unless the existing claim removes the claim (by removing a building), then the new "overlapping" claim will take effect as there would be **no** claim in that space.
 
-**Note:** An interesting feature is that in dynamic claim mode, when placing the Townhall there is NO warning of being too close to another Town. Townhalls CAN be close to each other (outside each other's claim of course) thus allowing very close Town collaborations.
+**Note:** An interesting feature is that in dynamic claim mode, when placing the Town Hall, there is NO warning of being too close to another Town. Town Halls CAN be close to each other (outside each other's claim of course) thus allowing very close Town collaborations.
 
-Since there is NO warning of "too close to another Town" to place TownHall tho (like in the static claim mode) it is up to the players to always check their surrounding areas for existing Towns and for players that might not be paying attention and trying to establish a Town or getting too close to an existing Town.
+Since there is NO warning of "too close to another Town" to place a Town Hall though (like in the static claim mode) it is up to the players to always check their surrounding areas for existing Towns and for players that might not be paying attention and trying to establish a Town or getting too close to an existing Town.
 
 #### Worker Hut Claim Areas:
 

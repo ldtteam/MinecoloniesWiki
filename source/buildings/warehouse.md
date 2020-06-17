@@ -21,9 +21,9 @@ layout: default
 
 ## About the Warehouse
 
-The Warehouse is the central storage from where a [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft or need.
+The Warehouse is the central storage from where a [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft, or need.
 
-The level of the Warehouse will determine how many Deliverymen will be able to use the Warehouse at the same time. Level up the Warehouse to increase the amount of Deliverymen that can work in your Warehouse. Leveling up the Warehouse will also increase its storage capacity.
+The level of the Warehouse will determine how many Deliverymen will be able to use it at the same time. Level up the Warehouse to increase the amount of Deliverymen that can work in it. Leveling up the Warehouse will also increase its storage capacity.
 
 | Building Level | Max Deliverymen |
 | -----  | ------ |

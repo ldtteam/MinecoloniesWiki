@@ -12,7 +12,7 @@ The building tool used in any of these recipes will not be consumed in the recip
 ## Items and Blocks
 
 **Notes:**
-The [Ancient Tome](../../source/items/ancient_tome) is not on here as it cannot be crafted and must be obtained in game. 
+The [Ancient Tome](../../source/items/ancient_tome) is not on here as it cannot be crafted and must be obtained as a drop. 
 
 The [Calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 

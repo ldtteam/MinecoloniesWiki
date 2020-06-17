@@ -31,7 +31,7 @@ It will also assume that you're using Minecraft 1.12.2, but will work for any ve
 
 ![MultiMc Download](../../assets/images/installation/multimc-download.png)
 
-- **Important Note:** Please ***do not*** download and install a copy of MultiMC from any other source besides [MultiMc.org](https://multimc.org) or their official [GitHub page](https://github.com/MultiMC/MultiMC5/)! MultiMC is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
+- **Important Note:** Please ***do not*** download and install a copy of MultiMC from any other source besides [MultiMC.org](https://multimc.org) or their official [GitHub page](https://github.com/MultiMC/MultiMC5/)! MultiMC is free and open source, so copies obtained elsewhere may come bundled with malware, or may come bundled with extra code that can hijack your Mojang account!
 
 
 ## Setting Up MultiMC
@@ -86,7 +86,7 @@ On the left is a button that says "Add", click it and navigate to the location y
 
 ![Edit Instance Add](../../assets/images/installation/multimc-edit3.png)
 
-Thats it! You're done! MineColonies is now installed! Hooray!
+That's it! You're done! MineColonies is now installed! Hooray!
 
 To play it, all you need to do is click "Launch", which can be done from either the "Edit Instance" screen, or the right-side menu on MultiMC's main window.
 
@@ -102,7 +102,7 @@ You can filter for your version in the dropdown located on the right side of the
 
 ### Installing the Modpack ###
 
-If you followed along with the "Setting up MultiMC", you should remember creating an instance. Installing a modpack is almost *exactly* the same, which one change in the steps: on the "Add Instance" screen, what we want is this:
+If you followed along with the "Setting up MultiMC" section, you should remember creating an instance. Installing a modpack is almost *exactly* the same, which one change in the steps: on the "Add Instance" screen, what we want is this:
 
 ![Instance Info Modpack](../../assets/images/installation/multimc-modpack1.png)
 
@@ -112,4 +112,4 @@ And... you're done!
 
 ![Modpack Instance Added](../../assets/images/installation/multimc-modpack2.png)
 
-No, really. Thats it. When the download window goes away... MultiMC has installed the correct version of Forge, added all of the config changes noted in the modpack, added in all of the script changes (if any) the modpack uses... simple, right?
+No, really. That's it. When the download window goes away... MultiMC has installed the correct version of Forge, added all of the config changes noted in the modpack, added in all of the script changes (if any) the modpack uses... simple, right?

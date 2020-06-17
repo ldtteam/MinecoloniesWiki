@@ -21,9 +21,9 @@ layout: default
 
 ## About the Shepherd's Hut
 
-The Shepherd's Hut is where the Shepherd will breed and butcher cows for food and wool. You will have to capture and bring in two sheep to the Shepherd's Hut, as the Shepherd will not catch and bring in any sheep.
+The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food and wool. You will have to capture and bring in two sheep to the Shepherd's Hut, as the Shepherd will not catch and bring in any sheep.
 
-**Note:** The Shepherd will only keep alive two sheep per hut level, so at level 5 they will have ten sheep in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and wool. So:
+**Note:** The Shepherd will only keep two sheep alive per hut level, so at level 5 they will have ten sheep in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and wool. So:
 
 
 | Building Level | Sheep Housed |
@@ -54,7 +54,7 @@ When accessing the Shepherd's Hut block by right-clicking on it, you will see a 
 </div>
 <br>
 
-Page 2 of the GUI is where you can tell the shepherd whether or not to dye their sheep. If this is turned on, the shepherd will randomly choose a color to dye their sheep.
+Page 2 of the GUI is where you can tell the Shepherd whether or not to dye their sheep. If this is turned on, the Shepherd will randomly choose a color to dye their sheep.
 
 <div class="row">
   <div class="col-sm-12 col-md">
