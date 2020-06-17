@@ -19,9 +19,7 @@ layout: default
     <recipe>barracks</recipe>
 </div>
 
-## About the Barracks
-
-**Note:** The Barracks cannot be built until you have a level 3 [Guard Tower](../../source/buildings/guardtower) (or three level 1 Guard Towers, or another equivalent) and have finished the research in the [University](../../source/buildings/university). 
+## About the Barracks 
 
 The Barracks is the ultimate protection for your colony. The Barracks will hold 4 [Barracks Towers](../buildings/barrackstower) within its structure. The Barracks Towers (unlike the normal [Guard Towers](../../source/buildings/guardtower)) will employ *and* house 1 [Guard](../../source/workers/guard) for every level built! Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen. Each Barracks Tower can house and employ 5 Guards for a total of 20 Guards for your colony.
 
