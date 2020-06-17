@@ -62,7 +62,7 @@ After the "Install" is done select "Browse all ModPacks".
 
 ### Search for MineColonies Pack
 
-Type in the search bar: "MineColonies", and once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
+Type in the search bar "MineColonies." Once you see "MineColonies Official" (_by Kostronor, H3lay, 1_Wissi_1. Asherslab81358, D3miurge_), click on "Install".
 
 ![Selecting the Modpack](../../assets/images/installation/twitch_5.png)
 
