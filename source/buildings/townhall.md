@@ -87,10 +87,11 @@ If you try to place another Town Hall outside of your protected area, you will g
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li><br>
-     <li><strong>Citizen Recruitment-</strong>Lets you recruit adult citizens to live at your colony (only if you have room in a house). Citizens' stats increase per recruitment package: </li><br>
+     <li><strong>Citizen Recruitment-</strong>Lets you recruit adult citizens to live at your colony (only if you have room in a house). Citizens' stats increase per recruitment package from Hay Bale --> Book --> Emerald --> Diamond. After you recruit a citizen, the price of recruiting more rises.</li><br>
      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li>
+     <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
     </ul>
    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
     <ul>
@@ -128,7 +129,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
      <li><strong>Page 3: </strong>Here you can select each rank that you would like to manage.</li><br>
-     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission <b>you</b> want.</li>
+     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li>
     </ul>
   </div>
 </div>  
@@ -150,7 +151,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-### <strong>Citizens: </strong>This section displays the names and skill levels of the citizens in your Colony.
+### <strong>Citizens: </strong>This section displays the names and skill levels of the citizens in your colony.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -159,7 +160,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
      <br>
-     <li><strong>Page 1: </strong>When you select a citizen, their stats will appear here.</li><br>
+     <li><strong>Page 1: </strong>When you select a citizen, their stats will appear here. You can also recall them to the Town Hall block on this page.</li><br>
      <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skill levels.</li>
     </ul>
   </div>
@@ -180,9 +181,9 @@ If you try to place another Town Hall outside of your protected area, you will g
        <ul>
        <br>
         <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li><br>
-        <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each [Citizen's Hut](../../source/buildings/citizenhut). This is better if you have a large colony and many workers spread out in a large area, so you can house your citizens as close as possible to their workplace.</li>
+        <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each [Citizen's Hut](../../source/buildings/citizenhut) or [Tavern](../../source/buildings/tavern). This is better if you have a large colony and many workers spread out in a large area, so you can house your citizens as close as possible to their workplace.</li>
        </ul>
-     <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your guards will have a glow of this color around them when you put them in follow mode at their [Guard Tower](../../source/buildings/guardtower). This is for the PVP system so you know which guards are yours when you are fighting. Your citizens' names will also be in this color when looking at them.</li>
+     <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your guards will have a glow of this color around them when you put them in follow mode at their [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower). This is for the PVP system, so you know which guards are yours when you are fighting. Your citizens' names will also be in this color when looking at them.</li>
     </ul>
   </div>
 </div>
@@ -199,7 +200,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
      <br>
      <li><strong>Page 1: </strong>Blank page except for the header (future use).</li><br>
-     <li><strong>Page 2: </strong>Here are all the build orders listed that have been created by you (including decorations and your own schematics as well as the mod's huts). Your Builders will complete the builds from top to bottom. Here you can change the priority of the builds and delete work orders. When you delete a work order which is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
+     <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up and down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
     </ul>
   </div>
 </div>
@@ -216,7 +217,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
      <br>
      <li><strong>Page 1: </strong>The happiness indices. You can keep track of the 3 main areas that will lower or raise the happiness of your colony here. There are 3 colors: Green (everything is fine), Orange (needs attention as it's below optimal level), Red (immediate attention is needed-it's at a critically low level).</li><br>
-     <li><strong>Page 2: </strong>Intentionally blank for now (future use).</li>
+     <li><strong>Page 2: </strong>Blank for now (future use).</li>
     </ul>
   </div>
 </div>  
