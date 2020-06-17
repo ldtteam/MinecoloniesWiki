@@ -65,7 +65,7 @@ This means that once the Town Hall is placed, it will automatically claim 8 chun
 
 This method is static and will _not_ grow or shrink with the Town development and it's **permanent**, can't be removed, changed or modified, except by commands.
 
-If you have already placed a Townhall and want to change the size of the Town claim, you will have to change value in the config AND manually run the "claim" command to add more chunks to the already set claimed area.
+If you have already placed a Town Hall and want to change the size of the Town claim, you will have to change the value in the config AND manually run the "claim" command to add more chunks to the already set claimed area.
 
 Make sure to stand in the center of your Town claim area and then run the command: `/mc colony claim <colony: colony id> <dimension: dimension id> [range: number in chunks] [add: true | false]` to add more chunks to an already-placed Town Hall.
 
