@@ -69,7 +69,7 @@ If you have already placed a Townhall and want to change the size of the Town cl
 
 Make sure to stand in the center of your Town claim area and then run the command: `/mc colony claim <colony: colony id> <dimension: dimension id> [range: number in chunks] [add: true | false]` to add more chunks to an already-placed Town Hall.
 
-Also, once the Townhall is placed, since the claim and protection area is permanent, you can break the Townhall block and place anywhere else within the claimed area to build it.
+Also, once the Town Hall is placed, since the claim and protection area is permanent, you can break the Town Hall block and place anywhere else within the claimed area to build it.
 
 #### Dynamic Claim Mode:
 
