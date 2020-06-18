@@ -145,27 +145,18 @@ subnav:
         url: source/workers/teacher
       - page: University Researcher
         url: source/workers/researcher
-  - title: Buildings
-    subitems: 
-      Management:
-      - page: Deliveryman's Hut
-        url: source/buildings/deliveryman
-    Production:
-      - page: Lumberjack's Hut
-        url: source/buildings/lumberjack
-     Food:
-      - page: Bakery
-        url: source/buildings/bakery
-      - page: Farm & Field
-        url: source/buildings/farm&field
-    Military:
-      - page: Archery
+  title: Buildings
+    subitems:
+      - subtitle: Colony Management
+        - page: Archery
         url: source/buildings/archery
+      - subtitle: Production
+        - page: Bakery
+          url: source/buildings/bakery
       - page: Barracks
         url: source/buildings/barracks
       - page: Barracks Tower
         url: source/buildings/barrackstower  
-    Crafting:
       - page: Blacksmith's Hut
         url: source/buildings/blacksmith
       - page: Builder's Hut
@@ -182,10 +173,14 @@ subnav:
         url: source/buildings/cowboy
       - page: Crusher's Hut
         url: source/buildings/crusher
+      - page: Deliveryman's Hut
+        url: source/buildings/deliveryman
       - page: Dyer's Hut
         url: source/buildings/dyer
       - page: Enchanter's Tower
         url: source/buildings/enchantertower
+      - page: Farm & Field
+        url: source/buildings/farm&field
       - page: Fisherman's Hut
         url: source/buildings/fisherman
       - page: Fletcher's Hut
