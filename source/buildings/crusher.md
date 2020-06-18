@@ -21,7 +21,7 @@ layout: default
 
 ## About the Crusher's Hut
 
-### Note: The Crusher's Hut cannot be built until you have a Level 1 [Stonemason's Hut](../../source/buildings/stonemason) and have finished the research in the [University](../../source/buildings/university).
+### Note: The Crusher's Hut cannot be built until you have a level 1 [Stonemason's Hut](../../source/buildings/stonemason) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Crusher's Hut is where the Crusher will take items and crush them into other blocks. The defaults are: 
