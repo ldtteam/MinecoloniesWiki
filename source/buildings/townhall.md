@@ -216,7 +216,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
      <br>
-     <li><strong>Page 1: </strong>The happiness indices. You can keep track of the 3 main areas that will lower or raise the happiness of your colony here. There are 3 colors: Green (everything is fine), Orange (needs attention as it's below optimal level), Red (immediate attention is needed-it's at a critically low level).</li><br>
+     <li><strong>Page 1: </strong>The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (super happy), blue (happy), yellow (not happy), and red (big problem here-your citizens are definitely not happy). There's also black, which will show up if something went wrong.</li><br>
      <li><strong>Page 2: </strong>Blank for now (future use).</li>
     </ul>
   </div>
