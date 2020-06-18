@@ -4,17 +4,17 @@ layout: default
 ---
 # Commands
 
-These are the in game commands currently available, most require that a user have operator privileges to work, or require that a single player world has cheats enabled. 
+These are the in-game commands currently available. Most require that a user have operator privileges to work or require that a singleplayer world has cheats enabled. 
 
 - [Commands](#commands)
-  - [Base Commands](#base-command)
+  - [Base Commands](#base-commands)
   - [Colony Commands](#colony-commands)
   - [Citizens Commands](#citizens-commands)
   - [Kill Commands](#kill-commands)
 
 **Command Syntax**
 
-| If you see this...   | Then                              |
+| If you see this...   | Then...                           |
 | :------------------: | :-------------------------------: |
 | `plaintext`          | Enter this exactly as shown       |
 | `<angle brackets>`   | This is a **required** argument   |
@@ -23,7 +23,7 @@ These are the in game commands currently available, most require that a user hav
 
 ## Base Commands
 
-/minecolonies `<backup | help | home | raid-All-now | raid-All-tonight | resetsupplies | rtp | wheremai | whoami | citizens | colony | kill>` (/mc)
+/minecolonies (or /mc)  `<backup | help | home | raid-all-now | raid-all-tonight | resetsupplies | rtp | wheremai | whoami | citizens | colony | kill>`
 
 <table class="table">
   <thead>
@@ -39,42 +39,42 @@ These are the in game commands currently available, most require that a user hav
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc help</code><br>Default Permission Level: All<br></td>
-      <td class="d-block d-lg-table-cell">Lists the Wiki and the Discord channel in game.</td>
+      <td class="d-block d-lg-table-cell">Lists the wiki and the [Discord](discord.minecolonies.com) links in chat.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc home</code><br>Default Permission Level: All</td>
-      <td class="d-block d-lg-table-cell">Teleports a colony owner back to the Town Hall of their colony.</td>
+      <td class="d-block d-lg-table-cell">Teleports a colony owner back to the [Town Hall](../../source/buildings/townhall) of their colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc raid-All-now</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Schedule a barbarian raid for every colony to start right now.</td>
+      <td class="d-block d-lg-table-cell"><code>/mc raid-all-now</code><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell">Schedule a raid for every colony to start right now.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc raid-All-tonight</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Schedule a barbarian raid for every colony, to start the coming night.</td>
+      <td class="d-block d-lg-table-cell"><code>/mc raid-all-tonight</code><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell">Schedule a raid for every colony to start the coming night.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc resetsupplies &lt;online player&gt;</code><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell"><code>/mc resetsupplies &lt;online player's username&gt;</code><br>Default Permission Level: OP</td>
       <td class="d-block d-lg-table-cell">Resets the ability to place a supply camp or ship.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc rtp</code><br>Default Permission Level: All</td>
-      <td class="d-block d-lg-table-cell">Allows random teleporting around the world, will place the player outside the range of someone else's colony.</td>
+      <td class="d-block d-lg-table-cell">Random teleports you. Will place your character outside the range of someone else's colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc whereami</code><br>Default Permission Level: All</td>
-      <td class="d-block d-lg-table-cell">Outputs how far the player is from a colony, if they are near one, or that there is none nearby</td>
+      <td class="d-block d-lg-table-cell">Outputs how far away the player is from a colony (if they are near one) or that there are no colonies nearby.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc whoami</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Outputs the player's name, the name of their colony and the coordinates for the center</td>
+      <td class="d-block d-lg-table-cell">Outputs your name, the name of your colony, and the coordinates for the center of your colony.</td>
     </tr>
   </tbody>
 </table>
 
 ## Colony Commands
 
-/minecolonies colony `<addOfficer | canSpawnRaiders | claim | delete | home | info | list | loadAllColoniesFromBackup | loadBackup | raid-now | raid-tonight | requestsystem-reset | requestsystem-reset-all | setAbandoned | setDeleteable | setowner | teleport>`
+/minecolonies (or /mc) colony  `<addOfficer | canSpawnRaiders | claim | delete | home | info | list | loadAllColoniesFromBackup | loadBackup | raid-now | raid-tonight | requestsystem-reset | requestsystem-reset-all | setAbandoned | setDeleteable | setowner | teleport>`
 
 <table class="table">
   <thead>
@@ -85,16 +85,16 @@ These are the in game commands currently available, most require that a user hav
   </thead>
   <tbody>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony addOfficer &lt;colony id&gt; &lt;online player&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Adds an officer to a colony<br>Examples:<br><code>/mc colony addofficer 1 Steve</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc colony addOfficer &lt;colony id&gt; &lt;online player's username&gt;</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Adds an officer to a colony. For more information on officers, visit the [Town Hall](../../source/buildings/townhall) page and look at the Permissions section of the GUI.<br>Example:<br><code>/mc colony addofficer 1 Steve</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony canSpawnRaiders &lt;colony id&gt; &lt;canSpawn&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Adds or removes the ability to spawn raiders.<br>Examples:<br><code>/mc colony canSpawnRaiders 1 true</code></td>
+      <td class="d-block d-md-table-cell">Adds or removes the ability to spawn raiders in a colony.<br>Example:<br><code>/mc colony canSpawnRaiders 1 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id&gt; &lt;[number in chunks] [true | false]</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Claims chunks (or removes claimed chunks) a specified number of chunks from the player's location for a colony<br>Examples:<br><code>/mc colony claim 1 8 true</code></td>
+      <td class="d-block d-md-table-cell">Claims a specified number of chunks for a colony (or removes claimed chunks) based off the player's location.<br>Example:<br><code>/mc colony claim 1 8 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt; [delete Buildings]</code><br>Default permission level: All</td>
