@@ -146,25 +146,26 @@ subnav:
       - page: University Researcher
         url: source/workers/researcher
   - title: Buildings
-    subitems: Management
+    subitems: 
+      Management:
       - page: Deliveryman's Hut
         url: source/buildings/deliveryman
-    subitems: Production
+    Production:
       - page: Lumberjack's Hut
         url: source/buildings/lumberjack
-    subitems: Food
+     Food:
       - page: Bakery
         url: source/buildings/bakery
       - page: Farm & Field
         url: source/buildings/farm&field
-    subitems: Military
+    Military:
       - page: Archery
         url: source/buildings/archery
       - page: Barracks
         url: source/buildings/barracks
       - page: Barracks Tower
         url: source/buildings/barrackstower  
-    subitems: Crafting
+    Crafting:
       - page: Blacksmith's Hut
         url: source/buildings/blacksmith
       - page: Builder's Hut
