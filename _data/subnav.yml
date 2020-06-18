@@ -145,14 +145,12 @@ subnav:
         url: source/workers/teacher
       - page: University Researcher
         url: source/workers/researcher
-  title: Buildings
+  - title: Buildings
     subitems:
-      - subtitle: Colony Management
-        - page: Archery
+      - page: Archery
         url: source/buildings/archery
-      - subtitle: Production
-        - page: Bakery
-          url: source/buildings/bakery
+      - page: Bakery
+        url: source/buildings/bakery
       - page: Barracks
         url: source/buildings/barracks
       - page: Barracks Tower
