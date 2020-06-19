@@ -181,7 +181,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens reload &lt;colony id&gt; &lt;citizen id&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Reloads a specified citizen in a colony.<br>Example:<br><code>/mc citizens relaod 1 1</code></td>
+      <td class="d-block d-md-table-cell">Reloads a specified citizen in a colony.<br>Example:<br><code>/mc citizens reload 1 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens spawnNew &lt;colony id&gt;</code><br>Default permission level: ALL</td>
