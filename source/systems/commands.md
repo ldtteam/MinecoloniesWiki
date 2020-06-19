@@ -98,66 +98,66 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt; [delete Buildings]</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut is still placed)<br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
+      <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut block is still placed).<br>Examples:<br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony home</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Teleports a colony owner back to the Town Hall of their colony.<br>Examples:<br><code>/mc colony home</code></td>
+      <td class="d-block d-md-table-cell">Teleports a colony owner back to the Town Hall of their colony.<br>Example:<br><code>/mc colony home</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Shows some basic information about the colony specified (ID, Name, Mayor, Citizens, Coordinates, Last contact with owner, If the colony can be deleted or not)<br>Examples:<br><code>/mc colony info 1</code></td>
+      <td class="d-block d-md-table-cell">Shows some basic information about the colony specified (ID, name, mayor, citizens, coordinates, last contact with mayor, and if the colony can be deleted or not).<br>Example:<br><code>/mc colony info 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony list &lt;[startpage]&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Shows a list of all the colonies  (ID, Name, Coordinates)<br>Examples:<br><code>/mc colony list</code></td>
+      <td class="d-block d-md-table-cell">Shows a list of all the colonies in this world and their ID, name, and coordinates.<br>Example:<br><code>/mc colony list</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony loadAllColoniesFromBackup</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Loads all colonies from backup<br>Examples:<br><code>/mc colony loadAllColoniesFromBackup</code></td>
+      <td class="d-block d-md-table-cell">Loads all colonies from a backup.<br>Example:<br><code>/mc colony loadAllColoniesFromBackup</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony loadBackup &lt;[colony id]&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Loads an individual colony from backup<br>Examples:<br><code>/mc colony loadBackup 1</code></td>
+      <td class="d-block d-md-table-cell">Loads an individual colony from a backup.<br>Example:<br><code>/mc colony loadBackup 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony raid-now &lt;colony id&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Schedules a barbarian raid for the specified colony to start right now<br>Examples:<br><code>/mc colony raid-now 1</code></td>
+      <td class="d-block d-md-table-cell">Schedules a barbarian raid for the specified colony to start right now.<br>Example:<br><code>/mc colony raid-now 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony raid-tonight &lt;colony id&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Schedules a barbarian raid for the specified colony to start the coming night<br>Examples:<br><code>/mc colony raid-tonight 1</code></td>
+      <td class="d-block d-md-table-cell">Schedules a barbarian raid for the specified colony to start the coming night.<br>Example:<br><code>/mc colony raid-tonight 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony requestsystem-reset &lt;[colony id]&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Refreshes a specific colony<br>Examples:<br><code>/mc colony requestsystem-reset 1</code></td>
+      <td class="d-block d-md-table-cell">Refreshes a specific colony's request system, making all workers resubmit requests.<br>Example:<br><code>/mc colony requestsystem-reset 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony requestsystem-reset-all</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Refreshes all colonies<br>Examples:<br><code>/mc colony requestsystem-reset-all 1</code></td>
+      <td class="d-block d-md-table-cell">Refreshes all colonies' request systems, making all workers in all colonies resubmit requests.<br>Example:<br><code>/mc colony requestsystem-reset-all 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony setAbandoned &lt;colony id&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Sets a colony to abandoned. <br>Examples:<br><code>/mc colony setAbandoned 1</code></td>
+      <td class="d-block d-md-table-cell">Sets a colony to abandoned and without a mayor.<br>Example:<br><code>/mc colony setAbandoned 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony setDeletable &lt;colony id&gt; &lt;deleteable&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Sets whether a colony can be marked for auto-deletion or not<br>Examples:<br><code>/mc colony setDeletable 1 false</code></td>
+      <td class="d-block d-md-table-cell">Sets whether a colony can be marked for auto-deletion or not.<br>Example:<br><code>/mc colony setDeletable 1 false</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony setowner &lt;colony id&gt; &lt;online-player&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Changes the owner of a colony<br>Examples:<br><code>/mc colony setowner 1 Steve</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc colony setowner &lt;colony id&gt; &lt;online-player's username&gt;</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Changes the owner of a colony.<br>Example:<br><code>/mc colony setowner 1 Steve</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony teleport &lt;colony id&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Teleports the player to the specified colony<br>Examples:<br><code>/mc colony teleport 1</code></td>
+      <td class="d-block d-md-table-cell">Teleports the player to the specified colony.<br>Example:<br><code>/mc colony teleport 1</code></td>
     </tr>
   </tbody>
 </table>
 
 ## Citizens Commands
 
-/minecolonies citizens `<info | kill | list | reload | spawnNew | teleport | walk>`
+/minecolonies (or /mc) citizens `<info | kill | list | reload | spawnNew | teleport | walk>`
 
 <table class="table">
   <thead>
@@ -169,31 +169,31 @@ These are the in-game commands currently available. Most require that a user hav
   <tbody>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens info &lt;colony id&gt; &lt;citizen id&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Gives basic information about a specified citizen in a colony such as their ID and name<br>Examples:<br><code>/mc citizens info 1 1</code></td>
+      <td class="d-block d-md-table-cell">Gives basic information about a specified citizen in a colony such as their ID and name.<br>Example:<br><code>/mc citizens info 1 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens kill &lt;colony id&gt; &lt;citizen id&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Kills a specified citizen in a colony<br>Examples:<br><code>/mc citizens kill 1 1</code></td>
+      <td class="d-block d-md-table-cell">Kills a specified citizen in a colony.<br>Example:<br><code>/mc citizens kill 1 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens list &lt;colony id&gt; [page number]</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Lists all citizens in a colony with each citizen's ID and name (9 results per page)<br>Examples:<br><code>/mc citizens list 1</code><br><code>/mc citizens list 1 3</code></td>
+      <td class="d-block d-md-table-cell">Lists all citizens in a colony with each citizen's ID and name (9 results per page).<br>Examples:<br><code>/mc citizens list 1</code><br><code>/mc citizens list 1 3</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc citizens relaod &lt;colony id&gt; &lt;citizen id&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Relaods a specified citizen in a colony<br>Examples:<br><code>/mc citizens relaod 1 1</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc citizens reload &lt;colony id&gt; &lt;citizen id&gt;</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Reloads a specified citizen in a colony.<br>Example:<br><code>/mc citizens relaod 1 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens spawnNew &lt;colony id&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Spawns a new citizen in a colony<br>Examples:<br><code>/mc citizens spawnNew 1</code></td>
+      <td class="d-block d-md-table-cell">Spawns a new citizen in a colony.<br>Example:<br><code>/mc citizens spawnNew 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens teleport &lt;colony id&gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Teleports a specific citizen to a given location<br>Examples:<br><code>/mc citizens teleport 1 1 -50 62 128</code></td>
+      <td class="d-block d-md-table-cell">Teleports a specific citizen to a given location.<br>Example:<br><code>/mc citizens teleport 1 1 -50 62 128</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens walk &lt;colony id&gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Tells a specific citizen to walk to a given location<br>Examples:<br><code>/mc citizens walk 1 1 -50 62 128</code></td>
+      <td class="d-block d-md-table-cell">Tells a specific citizen to walk to a given location.<br>Example:<br><code>/mc citizens walk 1 1 -50 62 128</code></td>
     </tr>
   </tbody>
 </table>
@@ -212,31 +212,31 @@ These are the in-game commands currently available. Most require that a user hav
   <tbody>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill raiders</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all raiders (barbarians or Pirates) inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all raiders (barbarians, pirates, vikings, or egyptian raiders) inside all colonies.</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill animals</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all animals inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all animals inside all colonies.</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill monster</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all monsters inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all monsters inside all colonies.</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill chicken</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all chickens inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all chickens inside all colonies.</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill cow</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all cows inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all cows inside all colonies.</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill pig</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all pig inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all pigs inside all colonies.</td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill sheep</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all sheep inside all colonies</td>
+      <td class="d-block d-md-table-cell">Kills all sheep inside all colonies.</td>
     </tr>
   </tbody>
 </table>
