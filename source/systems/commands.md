@@ -4,7 +4,7 @@ layout: default
 ---
 # Commands
 
-These are the in-game commands currently available. Most require that a user have operator privileges to work or require that a singleplayer world has cheats enabled. 
+These are the in-game commands currently available. Most require that a user have operator privileges to work and require that a singleplayer world has cheats enabled. 
 
 - [Commands](#commands)
   - [Base Commands](#base-commands)
@@ -212,31 +212,31 @@ These are the in-game commands currently available. Most require that a user hav
   <tbody>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill raiders</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all raiders (barbarians, pirates, vikings, or egyptian raiders) inside all colonies.</td>
+      <td class="d-block d-md-table-cell">Kills all raiders (barbarians, pirates, vikings, or egyptian raiders) inside all colonies.<br>Example:<br><code>/mc kill raiders</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc kill animals</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all animals inside all colonies.</td>
+      <td class="d-block d-md-table-cell"><code>/mc kill animal</code><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell">Kills all animals (peaceful mobs) inside all colonies.<br>Example:<br><code>/mc kill animal</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill monster</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all monsters inside all colonies.</td>
+      <td class="d-block d-md-table-cell">Kills all monsters (hostile mobs) inside all colonies.<br>Example:<br><code>/mc kill monster</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill chicken</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all chickens inside all colonies.</td>
+      <td class="d-block d-md-table-cell">Kills all chickens inside all colonies.<br>Example:<br><code>/mc kill chicken</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill cow</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all cows inside all colonies.</td>
+      <td class="d-block d-md-table-cell">Kills all cows inside all colonies.<br>Example:<br><code>/mc kill cow</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill pig</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all pigs inside all colonies.</td>
+      <td class="d-block d-md-table-cell">Kills all pigs inside all colonies.<br>Example:<br><code>/mc kill pig</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill sheep</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all sheep inside all colonies.</td>
+      <td class="d-block d-md-table-cell">Kills all sheep inside all colonies.<br>Example:<br><code>/mc kill sheep</code></td>
     </tr>
   </tbody>
 </table>
