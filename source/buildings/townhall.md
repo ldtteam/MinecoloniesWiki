@@ -144,7 +144,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul><br>
      <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make free for interaction.</li><br>
-     <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction.</li>
+     <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction and can remove them.</li>
     </ul>
   </div>
 </div>
