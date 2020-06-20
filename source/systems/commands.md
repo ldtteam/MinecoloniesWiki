@@ -200,7 +200,7 @@ These are the in-game commands currently available. Most require that a user hav
 
 ## Kill Commands
 
-/minecolonies kill `<raiders | animals | monster | chicken | cow | pig | sheep>`
+/minecolonies kill `<raider | animals | monster | chicken | cow | pig | sheep>`
 
 <table class="table">
   <thead>
@@ -211,12 +211,12 @@ These are the in-game commands currently available. Most require that a user hav
   </thead>
   <tbody>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc kill raiders</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all raiders (barbarians, pirates, vikings, or egyptian raiders) inside all colonies.<br>Example:<br><code>/mc kill raiders</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc kill raider</code><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell">Kills all raiders (barbarians, pirates, vikings, or egyptian raiders) inside all colonies.<br>Example:<br><code>/mc kill raider</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc kill animal</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Kills all animals (peaceful mobs) inside all colonies.<br>Example:<br><code>/mc kill animal</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc kill animals</code><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell">Kills all animals (peaceful mobs) inside all colonies.<br>Example:<br><code>/mc kill animals</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill monster</code><br>Default permission level: OP</td>
