@@ -21,7 +21,7 @@ layout: default
 
 ## About the Mechanic's Hut
 
-### Note: The Mechanic can not be built until you have a Level 3 Blacksmith and finish the research in the [University](../../source/buildings/university)
+### Note: The Mechanic's Hut cannot be built until you have a level 3 [Blacksmith's Hut](../../source/buildings/blacksmith) (or three level 1 Blacksmith's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Mechanic's Hut is where the Mechanic will create redstone items, rail items, clocks, compasses, and other items not made by other crafters. For the Mechanic to work, they must receive a request from another worker and have the necessary materials. The Mechanic's Hut must also have been taught the crafting recipes for all the items you want the Mechanic to be able to craft.

@@ -21,7 +21,7 @@ layout: default
 
 ## About the Sawmill
 
-### Note: The Sawmill can not be built until you have a Level 3 Lumberjack and finish the research in the [University](../../source/buildings/university)
+### Note: The Sawmill cannot be built until you have a level 3 [Lumberjack's Hut](../../source/buildings/lumberjack) (or three level 1 Lumberjack's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Sawmill is where the Miller will craft any items made of at least 75% wood (no bows or redstone items). For them to do this, you must teach the Sawmill the recipes and the Miller must receive a request for an item from another worker.

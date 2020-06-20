@@ -21,12 +21,12 @@ layout: default
 
 ## About the Flower Shop
 
-### Note: The Flower Shop can not be built until you have a Level 3 Composter and finish the research in the [University](../../source/buildings/university)
+### Note: The Flower Shop cannot be built until you have a level 3 [Composter's Hut](../../source/buildings/composter) (or three level 1 Composter's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Flower Shop is where your Florist will grow flowers for your Colony, if given Compost and an axe.
+The Flower Shop is where your Florist will grow flowers for your colony, if given [compost](../../source/items/compost) and an axe.
 
-**Hint:** The higher the level of the Flower Shop, the more daily output the florist can handle. So:
+**Hint:** The higher the level of the Flower Shop, the more daily output the Florist can handle. So:
 
 | Building Level | Number of Plants |
 | -------------- | ---------------- |

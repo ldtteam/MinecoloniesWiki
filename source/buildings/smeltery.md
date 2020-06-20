@@ -21,7 +21,7 @@ layout: default
 
 ## About the Smeltery
 
-### Note: The Smeltery can not be built until you have a Level 2 Miner and finish the research in the [University](../../source/buildings/university)
+### Note: The Smeltery cannot be built until you have a level 2 [Mine](../../source/buildings/mine) (or two level 1 Mines) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Smeltery is where the Smelter will smelt ores into ingots.

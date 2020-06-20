@@ -21,7 +21,7 @@ layout: default
 
 ## About the Fletcher's Hut
 
-### Note: The Fletcher can not be built until you have a Level 1 Sawmill and finish the research in the [University](../../source/buildings/university)
+### Note: The Fletcher's Hut cannot be built until you have a level 1 [Sawmill](../../source/buildings/sawmill) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Fletcher's Hut is where the Fletcher will craft items that use string or wool, such as bows, fishing poles and paintings. For the Fletcher to work, they must receive a request from another worker and have the necessary materials. The Fletcher's Hut must also have been taught the crafting recipes for all the items you want the Fletcher to be able to craft.

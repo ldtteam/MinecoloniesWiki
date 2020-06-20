@@ -21,7 +21,7 @@ layout: default
 
 ## About the Plantation
 
-### Note: The Plantation can not be built until you have a Level 3 Farmer and finish the research in the [University](../../source/buildings/university)
+### Note: The Plantation cannot be built until you have a level 3 [Farm](../../source/buildings/farm&field) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus.

@@ -21,7 +21,7 @@ layout: default
 
 ## About the Hospital
 
-### Note: The Hospital can not be built until you finish the research in the [University](../../source/buildings/university)
+### Note: The Hospital cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>
 
 The Hospital is where injured or sick citizens go when they need healing. The Healer will heal them with various items.
