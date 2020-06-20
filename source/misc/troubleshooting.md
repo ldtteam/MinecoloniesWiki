@@ -8,7 +8,7 @@ layout: default
 
 ## Before you start troubleshooting:
 
-  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. (Note that alpha does not mean it's unstable, it just means it's a minor release.)
+  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. Note that .958 or later of MineColonies requires Forge 31.2.8 or later. (Alpha does not mean it's unstable, it just means it's a relatively small release.)
   
 
 ## CHECKLIST: Identifying why a citizen is not working
