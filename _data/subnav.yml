@@ -19,7 +19,7 @@ subnav:
     subitems:
       - page: Command System
         url: source/systems/commands
-      - page: Happiness and Saturation System
+      - page: Happiness and Saturation Systems
         url: source/systems/happinessandsaturation
       - page: Worker System
         url: source/systems/worker
