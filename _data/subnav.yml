@@ -19,8 +19,8 @@ subnav:
     subitems:
       - page: Command System
         url: source/systems/commands
-      - page: Happiness System
-        url: source/systems/happiness
+      - page: Happiness and Saturation Systems
+        url: source/systems/happinessandsaturation
       - page: Worker System
         url: source/systems/worker
       - page: Town Claim Modes
