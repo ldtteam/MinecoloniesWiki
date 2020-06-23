@@ -107,7 +107,6 @@ Choose a worker to view more information about them:
 | [Planter](../workers/planter)            | Agility & Dexterity      |
 | [Pupil](../workers/pupil)                | Intelligence & Knowledge, Mana |
 | [Ranger in Training](../workers/rangerintraining) | Agility & Adaptability   |
-| [Researcher](../workers/researcher)      | Knowledge & Mana         |
 | [Shepherd](../workers/shepherd)          | Focus & Strength         |
 | [Sifter](../workers/sifter)              | Focus & Strength         |
 | [Smelter](../workers/smelter)            | Athletics & Strength     |
@@ -115,3 +114,6 @@ Choose a worker to view more information about them:
 | [Stone Smelter](../workers/stonesmelter) | Athletics & Dexterity    |
 | [Swine Herder](../workers/swineherder)   | Strength & Athletics     |
 | [Teacher](../workers/teacher)            | Intelligence & Knowledge, Mana |
+| [University Researcher](../workers/researcher) | Knowledge & Mana   |
+
+For a downloadable chart of all the workers and their skills, click [here](../../assets/images/gui/jobsandskills.png).
