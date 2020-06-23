@@ -18,7 +18,7 @@ The postbox is for the player to request items from the [Warehouse](../../source
 
 ## The Use
 
-To use the postbox, right click on it to bring up the GUI.
+To use the postbox, right-click on it to bring up the GUI.
 
 <p style="text-align:center;"><img src="../../assets/images/items/postboxgui.png" alt="Postbox GUI"></p>
 
