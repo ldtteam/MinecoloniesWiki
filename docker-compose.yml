@@ -31,6 +31,10 @@ services:
         - traefik.http.routers.wiki-minecolonies-https.service=wiki-minecolonies
         - traefik.http.routers.wiki-minecolonies-https.tls.certresolver=le
         - traefik.http.services.wiki-minecolonies.loadbalancer.server.port=4000
+        - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.name=ldtteam-routing_minecolonies-wiki
+        - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.secure=true
+        - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.httpOnly=true
+        - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.sameSite=none
 
 
 networks:
