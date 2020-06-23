@@ -122,7 +122,7 @@ Get enough materials and craft your Supply ship/Camp in a crafting table. Now pl
 
 ### Step 2
 
-After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your <a href="#build_tool">Build Tool</a> to place the Town Hall block, once you "commit" to the placement of the Town Hall, the Town hall block will be set and your Citizens will automagically appear. You can right click the Town Hall block to look at its graphical user interface.
+After you have carefully decided where you want to place your Town Hall (Remember, the position where you placed the Town Hall block will be the center of your Town's protected area. Once placed, the area will be set and cannot be changed). Use your <a href="#build_tool">Build Tool</a> to place the Town Hall block, once you "commit" to the placement of the Town Hall, the Town Hall block will be set and your citizens will automatically appear. You can right click the Town Hall block to look at its graphical user interface.
 
 ### Town Hall GUI
 
@@ -327,10 +327,8 @@ Once the builder has finished his Hut, you're ready to start building ANY other 
 
 You have now completed the most important steps completed to start and create your Colony.
 
-From this point on, you should be able to place, build, upgrade and manage all your buildings and Citizens.
+From this point on, you should be able to place, build, upgrade and manage all your buildings and citizens.
 
-Your questions from this point on are probably what to build next? The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisherman](../../source/buildings/fisherman), [Guard Tower](../../source/buildings/guardtower), [Deliveryman](../../source/buildings/deliveryman), [Bakery](../../source/buildings/bakery), etc.? Well, there are many answers, but you start with only 4 citizens! Now what? Well the next step after your 4 Citizens are employed and are working hard, is to plan and place the "[Citizen Hut](../../source/buildings/citizenhut)". This will give you additional Citizens for each level of a Citizen Hut you build in your Town! That's crazy, right? Now what do you do with so many Citizens? You cannot assign more than 1 worker per building. Therefore, consider building additional buildings (more miners, lumberjacks, builders, farmers, fishermen... and more to come!). 
-
-_**There are other buildings that will also "spawn" more citizens for you as well, like the [Tavern](../../source/buildings/tavern):**_
+Your questions from this point on are probably what to build next? The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisherman](../../source/buildings/fisherman), [Guard Tower](../../source/buildings/guardtower), [Deliveryman](../../source/buildings/deliveryman), [Bakery](../../source/buildings/bakery), etc.? Well, there are many answers, but you start with only 4 citizens! Now what? Well the next step after your 4 citizens are employed and are working hard, is to plan and place the "[Citizen's Hut](../../source/buildings/citizenhut)". This will give you additional citizens for each level of a Citizen's Hut you build in your Town! Now, what do you do with so many citizens? You cannot assign more than 1 worker per building. Therefore, consider building additional buildings (more miners, lumberjacks, builders, farmers, fishermen... and more to come!). 
 
 - **Hint:** Upgrade your buildings to the highest level each one has to unlock achievements (and enable your worker to do more stuff).
