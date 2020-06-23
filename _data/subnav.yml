@@ -161,7 +161,7 @@ subnav:
         url: source/buildings/builder
       - page: Chicken Herder's Hut
         url: source/buildings/chickenherder
-      - page: Citizen Hut
+      - page: Citizen's Hut
         url: source/buildings/citizenhut
       - page: Combat Academy
         url: source/buildings/combatacademy
