@@ -116,4 +116,4 @@ Choose a worker to view more information about them:
 | [Teacher](../workers/teacher)            | Intelligence & Knowledge, Mana |
 | [University Researcher](../workers/researcher) | Knowledge & Mana   |
 
-For a chart of all the workers and their skills, click [here](../../assets/images/gui/jobsandskills.png). (Green means it's the primary skill and yellow means it's the secondary skill.)
+For a chart of all the workers and their skills, click [here](../../assets/images/gui/jobsandskills.png). (Green means it's the job's primary skill and yellow means it's the job's secondary skill.)
