@@ -116,4 +116,4 @@ Choose a worker to view more information about them:
 | [Teacher](../workers/teacher)            | Intelligence & Knowledge, Mana |
 | [University Researcher](../workers/researcher) | Knowledge & Mana   |
 
-For a downloadable chart of all the workers and their skills, click [here](../../assets/images/gui/jobsandskills.png).
+For a chart of all the workers and their skills, click [here](../../assets/images/gui/jobsandskills.png).
