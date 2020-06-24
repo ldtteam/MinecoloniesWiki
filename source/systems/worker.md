@@ -115,7 +115,9 @@ Choose a worker to view more information about them:
 | [Swine Herder](../workers/swineherder)   | Strength & Athletics     |
 | [Teacher](../workers/teacher)            | Intelligence & Knowledge, Mana |
 | [University Researcher](../workers/researcher) | Knowledge & Mana   |
-
-Here's a chart of all the workers and their skills, from sikri(#2346) on [Discord](discord.minecolonies.com). (Green means it's the job's primary skill and yellow means it's the job's secondary skill.)
+<br>
+<br>
+Here's a chart of all the workers and their skills, from sikri(#2346) on [Discord](https://discord.minecolonies.com). (Green means it's the job's primary skill and yellow means it's the job's secondary skill.)
+<br>
 <br>
 <img src="../../assets/images/gui/jobsandskills.png" alt="Jobs and Skills" />
