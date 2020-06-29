@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: Items
 layout: default
 ---
 # Items

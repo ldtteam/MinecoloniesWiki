@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: University Researcher
 layout: default
 ---
 # University Researcher
@@ -21,14 +21,8 @@ layout: default
   </div>
 </div>
 
-Welcome to the Researcher's Information Site.
+The Researcher works at the University and researches various upgrades for your colony. There are 3 main focuses: Combat, Civilian and Technology. Each focus has its own subcategories.
 
-The Researcher works at the University and researches various upgrades for the Colony. There are 3 main focus': Combat, Civilian and Technology. Each focus' has it's own subcategories.
-
-Each new research has it's own requirements. Certain buildings need to be at a specific level or higher, they cost items to research and take time to research. Each item will state what is needed and how long it takes to research. The time is in real world time.
+Each new research has its own requirements. Certain buildings need to be at a specific level or higher, certain items are needed, and researches take time. Each research will state what is needed and how long it takes to research. The time is real-world time spent in-game.
 
 The Researcher will not learn new things on their own, you must tell them what to research.
-
-Click here for full information about the [University's hut](../buildings/university) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Researcher will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Researcher if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a University Researcher, **CONGRATULATIONS!**

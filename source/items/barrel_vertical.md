@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Vertical Barrel
 layout: default
 ---
 # Vertical Barrel
@@ -10,11 +10,9 @@ layout: default
 </div>
 <br>
 
-## The Block
-
 The vertical barrel is a decoration. 
 <br>
 
-## The Use
+## Using the Vertical Barrel
 
 Vertical barrels are decorations and have no purpose. They are used in the Tavern schematics.

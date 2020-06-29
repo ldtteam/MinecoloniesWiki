@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Planter
 layout: default
 ---
 # Planter
@@ -21,10 +21,16 @@ layout: default
   </div>
 </div>
 
-Welcome to the Planter’s Information Site.
+The Planter is part of the supply production of your colony. The Planter will plant and harvest sugar cane, bamboo, or cactus.
 
-The Planter is an important part of the supply production of the your Colony. The Planter will plant and harvest sugar cane, bamboo, and cactus. 
+The Planter can also learn the recipes for paper, books, and sugar. The Planter will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
-Click here for full information about the [Plantation's hut](../buildings/plantation) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Planter will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Planter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
+**Note:** The Planter can only learn a set number of recipes based on their hut level. So:
 
-You now officially have a Planter, **CONGRATULATIONS!**
+| Hut Level | Recipes |
+| --------- | ------- |
+| 1         | 10      |
+| 2         | 20      |
+| 3         | 40      |
+| 4         | 80      |
+| 5         | 160     |

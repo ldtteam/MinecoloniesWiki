@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Library
 layout: default
 ---
 # Library
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>library</recipe>
 </div>
-
-## About the Library
 
 ### Note: The Library cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>

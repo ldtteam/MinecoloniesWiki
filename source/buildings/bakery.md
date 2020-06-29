@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Bakery
 layout: default
 ---
 # Bakery
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>baker</recipe>
 </div>
-
-## About the Bakery
 
 The Bakery is where the Baker will bake bread, cakes, cookies, and pumpkin pies.
 <img src="../../assets/images/icons/minecraft/bread.png" class="img-fluid mx-auto" alt="Bread">

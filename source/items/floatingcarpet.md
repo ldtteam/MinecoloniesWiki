@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Floating Carpet
 layout: default
 ---
 # Floating Carpet 
@@ -10,11 +10,9 @@ layout: default
 </div>
 <br>
 
-## The Block
-
 Floating carpet is a decoration. It allows you to place carpet in the air without using string to hold it up. Other than that, it's the exact same as vanilla Minecraft carpet.
 <br>
 
-## The Use
+## Using Floating Carpet
 
-Use floating carpet for awnings or other builds.
+Use floating carpet for awnings or other builds where you would use carpet with string.

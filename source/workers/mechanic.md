@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Mechanic
 layout: default
 ---
 # Mechanic
@@ -21,10 +21,14 @@ layout: default
   </div>
 </div>
 
-Welcome to the Mechanic’s Information Site.
+The Mechanic is part of the supply production of your colony. The Mechanic will craft redstone items, rails, minecarts, and many other items that no other crafters can make. The Mechanic will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
-The Mechanic is an important part of the supply production of the your Colony. The Mechanic will craft redstone, rails and rail carts, and many other items that no other crafters can make. 
+**Note:** The Mechanic can only learn a set number of recipes based on their hut level. So:
 
-Click here for full information about the [Mechanic's hut](../buildings/mechanic) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Mechanic will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Mechanic if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Mechanic, **CONGRATULATIONS!**
+| Hut Level | Recipes |
+| --------- | ------- |
+| 1         | 10      |
+| 2         | 20      |
+| 3         | 40      |
+| 4         | 80      |
+| 5         | 160     |

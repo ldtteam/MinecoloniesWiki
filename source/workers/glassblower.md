@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Glassblower
 layout: default
 ---
 # Glassblower
@@ -21,10 +21,14 @@ layout: default
   </div>
 </div>
 
-Welcome to the Glassblower’s Information Site.
+The Glassblower is a part of the supply production of your colony. The Glassblower will smelt sand into glass blocks and create glass panes for your colony's needs. The Glassblower will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
-The Glassblower is an important part of the supply line of the your Colony. The Glassblower will smelt sand into glassblocks and create glass panes for your builder's needs. 
+**Note:** The Glassblower can only learn a set number of recipes based on their hut level. So:
 
-Click here for full information about the [Glassblower's hut](../buildings/glassblower) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Glassblower will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Glassblower if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Glassblower, **CONGRATULATIONS!**
+| Hut Level | Recipes |
+| --------- | ------- |
+| 1         | 10      |
+| 2         | 20      |
+| 3         | 40      |
+| 4         | 80      |
+| 5         | 160     |

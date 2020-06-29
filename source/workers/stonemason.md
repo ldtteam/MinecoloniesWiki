@@ -1,8 +1,8 @@
 ---
-title: MineColonies Wiki
+title: Stonemason
 layout: default
 ---
-# StoneMason
+# Stonemason
 
 <div class="infobox box text-center">
 <img src="../../assets/images/workers/stonemason_m.png" alt="StoneMason Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/stonemason_F.png" alt="StoneMason Female" />
@@ -21,26 +21,16 @@ layout: default
   </div>
 </div>
 
-Welcome to the StoneMason’s Information Site.
+The Stonemason is part of your colony’s crafting line. The Stonemason can craft items and blocks made entirely out of cobblestone, stone, andesite, diorite, granite, sandstones, and/or ores (no quartz, purpur, endstone, or ingots). The Stonemason will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
-The StoneMason is another part of your Town’s crafting line. Stonemason can learn <strong>3x3</strong> recipes made entirely out of cobble, stone, andesite, diorite, granite, sandstones, or materials oreDictionaried with stone. No quartz, purpure, or endstone.
+**Note:** The Stonemason can only learn a set number of recipes based on their hut level. So:
 
-
-Click here for full information about the [StoneMason's hut](../buildings/stonemason) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the StoneMason will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a StoneMason if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a StoneMason, **CONGRATULATIONS!**
-
-The StoneMason can start crafting tools, stairs, slabs and any other items that are made of stone, once you teach them the necessary recipes. You should think about upgrading the StoneMason’s hut so that the worker can craft more items.  
-
-**Note:** The StoneMason can only learn a set number of recipes based on the Hut level. So:
-
-
-| Building Level | Recipes |
-| ----- | ----- |
-| 1 | 10  |
-| 2 | 20  |
-| 3 | 40  |
-| 4 | 80  |
-| 5 | 160 |
+| Hut Level | Recipes |
+| --------- | ------- |
+| 1         | 10      |
+| 2         | 20      |
+| 3         | 40      |
+| 4         | 80      |
+| 5         | 160     |
 
 <br>

@@ -1,20 +1,18 @@
 ---
-title: MineColonies Wiki
+title: Homepage
 layout: default
 ---
 # Welcome to the MineColonies Wiki!
 
-### About our Mod
+## About our Mod
 
-MineColonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It gives you the tools to let your leadership skills soar by providing you with everything you need to build your own personal kingdom.
-
-Featuring NPC workers such as Builders, Farmers, Fishermen, Lumberjacks, Guards, Miners, Smelters, Bakers, Cooks, Deliverymen, four types of animal herders, Composters, and many more, with even more being developed and added as the mod grows.
-
-We also include specialized buildings such as the Warehouse, Citizen Hut, Town Hall, Barracks, Library, University, and even a School.
-
-MineColonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the sky.
+MineColonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It gives you the tools to let your leadership skills soar by providing you with everything you need to build your own personal kingdom. MineColonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the sky.
 
 The limit is your imagination!
+
+Featuring NPC workers such as [Builders](../../source/workers/builder), [Farmers](../../source/workers/farmer), [Fishermen](../../source/workers/fisherman), [Lumberjacks](../../source/workers/lumberjack), [Guards](../../source/workers/guard), [Miners](../../source/workers/miner), [Smelters](../../source/workers/smelter), [Bakers](../../source/workers/baker), [Cooks](../../source/workers/cook), [Deliverymen](../../source/workers/deliveryman), four types of animal herders, [Composters](../../source/workers/composter), and many more, with even more being developed and added as the mod grows.
+
+We also include specialized buildings such as the [Warehouse](../../source/buildings/warehouse), [Citizen's Hut](../../source/buildings/citizenhut), [Town Hall](../../source/buildings/townhall), [Barracks](../../source/buildings/barracks), [Library](../../source/buildings/library), [University](../../source/buildings/university), and even the [School](../../source/buildings/school).
 
 ### Please note that the wiki is always referring to the latest 1.15.2 alpha version of MineColonies!
 

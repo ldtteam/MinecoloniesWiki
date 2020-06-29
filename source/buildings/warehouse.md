@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Warehouse
 layout: default
 ---
 # Warehouse
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>warehouse</recipe>
 </div>
-
-## About the Warehouse
 
 The Warehouse is the central storage from where a [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft, or need.
 

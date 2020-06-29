@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Smeltery
 layout: default
 ---
 # Smeltery
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>smeltery</recipe>
 </div>
-
-## About the Smeltery
 
 ### Note: The Smeltery cannot be built until you have a level 2 [Mine](../../source/buildings/mine) (or two level 1 Mines) and have finished the research in the [University](../../source/buildings/university).
 <br>

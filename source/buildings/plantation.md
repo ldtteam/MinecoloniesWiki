@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Plantation
 layout: default
 ---
 # Plantation
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>plantation</recipe>
 </div>
-
-## About the Plantation
 
 ### Note: The Plantation cannot be built until you have a level 3 [Farm](../../source/buildings/farm&field) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
@@ -58,5 +56,7 @@ When accessing the Plantation's hut block by right-clicking on it, you will see 
 <br> <br>
 
 On page two of the GUI, you can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.
+
+**Note:** If you have completed the Double Trouble research in the [University](../../source/buildings/university) (which lets the Planter plant two crops at a time), this button will choose what will *NOT* be planted.
 
  <img src="../../assets/images/gui/plantationgui2.png" alt="Plantation GUI Page 2" />

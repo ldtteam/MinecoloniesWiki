@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Shepherd
 layout: default
 ---
 # Shepherd
@@ -21,25 +21,20 @@ layout: default
   </div>
 </div>
 
-Welcome to the Shepherd's Information Site.
+The Shepherd is a crucial part of your colony's food production needs. They will also provide you with all drops and byproducts like wool. The Shepherd will breed and butcher sheep for you as long as you provide them with wheat and an axe. 
 
-The Shepherd is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products like; wool. The Shepherd will breed and butcher the sheep for you as long as you provide it with Wheat and an axe. On page two of the hut's GUI you can also choose if the shepherd will automatically dye the sheeps wool different colors.
+**NOTE:** The Shepherd will not catch and bring in any sheep, only breed and butcher the ones in their hut area, so make sure you provide them with at least 2 initial sheep.
 
-Click here for full information about the [Shepherd's hut](../buildings/shepherd) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Shepherd will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Shepherd if you changed this in the settings tab in the [Town Hall's GUI](../buildings/townhall).
+The Shepherd will work with vanilla Minecraft sheep, but might work with some sheep from other mods as long as they are *coded* as sheep and have normal breeding behavior. They will collect anything that is modified by another mod as well, so if another mod changes the drops (for example) to include bones or another type of meat, the Shepherd will collect these as well.
 
-You now officially have a "Shepherd!" **CONGRATULATIONS!**
+On page two of the Shepherd Hut's GUI, you can choose if the Shepherd will randomly dye their sheeps' wool different colors. This doesn't use up dye.
 
-You will have to capture and bring in 2 sheep to the Shepherd's hut. The Shepherd will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial sheep.
+**Note:** The Shepherd will only keep alive 2 sheep per hut level, so when their hut is level 5 they will have 10 sheep in their holding pens to breed and butcher. This means they will produce meats and byproducts faster.
 
-The Shepherd will currently work with minecraft sheep, but might work with some "modded" sheep (from other mods), as long as they are *coded* as sheep and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the Shepherd will collect these as well.
-
-**Note:** The Shepherd will only keep alive 2 of every kind of animal per hut level, so at level 5 they will have 10 animals in their holding pens alive to breed and butcher. this means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
-
-
-| Building Level | Animals "Housed" |
-| ----- | ----- |
-| 1 | 2 |
-| 2 | 4 |
-| 3 | 6 |
-| 4 | 8 |
-| 5 | 10 |
+| Hut Level | Sheep Housed |
+| --------- | ------------ |
+| 1         | 2            |
+| 2         | 4            |
+| 3         | 6            |
+| 4         | 8            |
+| 5         | 10           |

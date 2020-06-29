@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Mine
 layout: default
 ---
 # Mine
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>mine</recipe>
 </div>
-
-## About the Mine
 
 The Mine is where the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 

@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Barracks
 layout: default
 ---
 # Barracks
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>barracks</recipe>
 </div>
-
-## About the Barracks
 
 ### Note: The Barracks cannot be built until you have a level 3 [Guard Tower](../../source/buildings/guardtower) (or three level 1 Guard Towers, or another equivalent) and have finished the research in the [University](../../source/buildings/university). 
 <br> 

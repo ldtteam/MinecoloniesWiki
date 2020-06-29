@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Fisherman
 layout: default
 ---
 # Fisherman
@@ -21,16 +21,6 @@ layout: default
   </div>
 </div>
 
-Welcome to the Fisherman's Information Site.
+The Fisherman is an important worker for your colony. As long as you provide the Fisherman with a fishing rod, the Fisherman will provide your colony with everything that can be caught: cod, salmon, pufferfish, tropical fish, junk, and sometimes even TREASURE!
 
-The Fisherman is an important worker for your Colony. As long as you provide the Fisherman with a fishing rod, the Fisherman will provide your Town with everything that can be caught; fish, salmon, pufferfish, clownfish as well as junk and even TREASURE!
-
-Before you choose a place to build his hut, take into account that he has to be near water or that you personally will have to build him a pond close to his hut so he can fish. Click here for full information about the [Fisherman's Hut](../buildings/fisherman) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Fisherman will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a fisherman if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a "Fisherman!" CONGRATULATIONS!
-
-Now you can give the Fisherman a fishing rod and it will start to fish.
-
-**Note**: The Fisherman will require a body of water of a minimum of 7 x 7 x 1 block deep for the Fisherman to be able to work. And it must be near his hut.
-
-**Hint**: You can give the Fisherman an enchanted fishing rod **_(only when the Hut is level 5)_** and reap the benefits of the treasures he/she will be catching for you. Also, the higher the level of the "Fisherman's Hut" is, the higher the level of "loot" he will be fishing out.
+### Note: The Fisherman will require a body of water a minimum of 7 x 7 x 1 blocks for them to be able to work, and it must be near their hut.

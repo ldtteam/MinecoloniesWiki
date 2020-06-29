@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Fletcher
 layout: default
 ---
 # Fletcher
@@ -21,10 +21,14 @@ layout: default
   </div>
 </div>
 
-Welcome to the Fletcher’s Information Site.
+The Fletcher is part of the supply production of your colony. The Fletcher will craft bows, fishing poles, wool, paintings, and anything else that uses wool or string. They will only do this if you teach them the recipes, they receive a request from another worker, and they have the needed materials.
 
-The Fletcher is an important part of the supply production of the your Colony. The fletcher will craft bows, fishing poles, wool, paintings and anything else that uses wool or string. 
+**Note:** The Fletcher can only learn a set number of recipes based on their hut level. So:
 
-Click here for full information about the [Fletcher's hut](../buildings/fletcher) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Fletcher will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Fletcher if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Fletcher, **CONGRATULATIONS!**
+| Hut Level | Recipes |
+| --------- | ------- |
+| 1         | 10      |
+| 2         | 20      |
+| 3         | 40      |
+| 4         | 80      |
+| 5         | 160     |

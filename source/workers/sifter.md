@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Sifter
 layout: default
 ---
 # Sifter
@@ -21,30 +21,26 @@ layout: default
   </div>
 </div>
 
-Welcome to the Sifter's Information Site.
+The Sifter is a part of your colony's production line. The Sifter will sift through materials to find hidden ores, seeds, and other useful items and ingredients. When they do this, the materials they are sifting will disappear.
 
-The Sifter is another part of your Town’s production line. The Sifter will sift materials to find hidden ores, seed and other useful items and ingredients.
+The default materials that can be sifted are:
+<ul>
+  <li>Dirt</li>
+  <li>Sand</li>
+  <li>Gravel</li>
+  <li>Soul Sand</li>
+</ul>
 
-The default configuration is:
-        Dirt
-        Sand
-        Gravel
-        Soul Sand
+However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
-However you can change this in the configuration file. This also works with modded items. Anything can be added here, it is up to the player and the server owner.
+The Sifter can only sift a certain amount of materials per day, depending on their hut level.
 
-Click here for full information about the [Sifter's hut](../../source/buildings/sifter) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Sifter will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Sifter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+| Hut Level | Daily Max |
+| --------- | --------- |
+| 1         | 16        |
+| 2         | 64        |
+| 3         | 144       |
+| 4         | 256       |
+| 5         | 999       |
 
-You now officially have a "Sifter!" **CONGRATULATIONS!**
-
-You will need to tell the Sifter what you want them to sift.
-
-| Building Level | Daily Max |
-| ----- | ----- |
-| 1 | 16  |
-| 2 | 64  |
-| 3 | 144 |
-| 4 | 256 |
-| 5 | 999 |
-
-The Sifter can use 4 different meshs, the String is the default option however if you want to use the flint, iron or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingot or diamonds in your inventory.
+The Sifter can use 4 different meshs. The higher levels of meshes will find more items. The string mesh is the default option, however, if you want to use the flint, iron, or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingots, or diamonds in your inventory or if you are in Creative Mode.

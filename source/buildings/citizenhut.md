@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Citizen's Hut
 layout: default
 ---
 # Citizen's Hut
@@ -8,8 +8,6 @@ layout: default
     <img src="../../assets/images/buildings/citizen.png" alt="Citizen Hut" />
     <recipe>citizen</recipe>
 </div>
-
-## About the Citizen's Hut
 
 The Citizen's Hut is a house for your citizens. They will go to the Citizen's Hut they are assigned to at night to sleep. It's also the only way to get more citizens for your colony.
 

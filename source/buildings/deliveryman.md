@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Deliveryman's Hut
 layout: default
 ---
 # Deliveryman's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>deliveryman</recipe>
 </div>
-
-## About the Deliveryman's Hut
 
 The Deliveryman runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. The Deliveryman will visit one worker's hut per trip, then go back to the Warehouse.
 

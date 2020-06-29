@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Baker
 layout: default
 ---
 # Baker

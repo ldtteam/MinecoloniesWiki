@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Ancient Tome
 layout: default
 ---
 # Ancient Tome 
@@ -10,11 +10,9 @@ layout: default
 </div>
 <br>
 
-## The Item
-
-The Ancient Tome is a glowing book that can be dropped by the Barbarians during raids. They are a fairly rare drop though, so don't expect one to drop during every raid. The Ancient Tome cannot be crafted and is only available as a drop. 
+The Ancient Tome is a glowing book that can be dropped by raiders (barbarians, pirates, vikings, egyptian raiders, etc) during raids. They are a fairly rare drop though, so don't expect one to drop during every raid. The Ancient Tome cannot be crafted and is only available as a drop. 
 <br>
 
-## The Use
+## Using the Ancient Tome
 
 There are two uses for the Ancient Tome, one use for the player and one for the [Enchanter](../../source/workers/enchanter). The player's use is that if you have the Ancient Tome in your inventory, it will glow when there is going to be a raid that night. The Enchanter's use is to use the experience they collect from other workers to turn the Ancient Tome into a Book of Enchantment. When they do this, it will use up the Ancient Tome.

@@ -1,8 +1,8 @@
 ---
-title: MineColonies Wiki
+title: Command System
 layout: default
 ---
-# Commands
+# Command System
 
 These are the in-game commands currently available. Most require that a user have operator privileges to work and require that a singleplayer world has cheats enabled. 
 
@@ -134,7 +134,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony requestsystem-reset-all</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Refreshes all colonies' request systems, making all workers in all colonies resubmit requests.<br>Example:<br><code>/mc colony requestsystem-reset-all 1</code></td>
+      <td class="d-block d-md-table-cell">Refreshes all colonies' request systems, making all workers in all colonies resubmit requests.<br>Example:<br><code>/mc colony requestsystem-reset-all</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony setAbandoned &lt;colony id&gt;</code><br>Default permission level: All</td>

@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Shepherd's Hut
 layout: default
 ---
 # Shepherd's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>shepherd</recipe>
 </div>
-
-## About the Shepherd's Hut
 
 The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food and wool. You will have to capture and bring in two sheep to the Shepherd's Hut, as the Shepherd will not catch and bring in any sheep.
 

@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Lumberjack's Hut
 layout: default
 ---
 # Lumberjack's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>lumberjack</recipe>
 </div>
-
-## About the Lumberjack's Hut
 
 The Lumberjack's Hut is where the Lumberjack will go in between chopping down trees. The Lumberjack will cut down any tree in an approximate 150 block area from their hut that is not in a hut schematic and doesn't have cobblestone placed beneath it.
 

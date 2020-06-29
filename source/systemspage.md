@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: Systems
 layout: default
 ---
 # Systems

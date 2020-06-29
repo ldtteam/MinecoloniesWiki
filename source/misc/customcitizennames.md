@@ -1,14 +1,14 @@
 ---
-title: MineColonies Wiki
+title: Custom Citizen Names
 layout: recipes
 ---
 # Custom Citizen Names
 
 Would you like to have citizen names in your own language? Then this is your page!<br>
-Everything you have to change is in just one file.
+Everything you have to change is in one file.
 <br>
 
-### Procedure
+## Procedure
 1. Locate the file _minecolonies-server.toml_.<br>
  
 	For servers:<br>
@@ -27,10 +27,10 @@ Everything you have to change is in just one file.
     <ul>
 	<li>Edit with a text editor, like Notepad.</li>
 	<li>The file must have the same name.</li>
-	</ul>
+    </ul>
     
     
-3. Run Minecraft client/server and enjoy.
+3. Run Minecraft client/server and enjoy!
 
 <br>
 
@@ -40,8 +40,6 @@ Everything you have to change is in just one file.
 
 [Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
-
-
-
+<br>
 
 ## Don't forget that the file must have the name _minecolonies-server.toml_!

@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Town Hall
 layout: default
 ---
 # Town Hall
@@ -12,7 +12,7 @@ layout: default
 
 The Town Hall is the central part of your colony.
 
-**Note:** The Town Hall block **cannot** be crafted until **after** you have already placed the Town Hall you get from the [Supply Ship/Camp](../../source/items/supplycampandship). If needed, it can also be obtained in Creative like any other block or by commands.
+**Note:** The Town Hall block **cannot** be crafted until **after** you have already placed the Town Hall you get from the [Supply Ship/Camp](../../source/items/supplycampandship). If needed, it can also be obtained in creative mode like any other block or by commands.
 
 ## Starting a New Colony
 
@@ -45,18 +45,18 @@ The protected area of your colony (once the Town Hall has been placed) will depe
 
 Due to the protected area of each colony, you have to carefully scout your surroundings to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction.
 
-**Note:** Once you place your Town Hall block this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your colony through [Commands](../systems/commands). 
+**Note:** Once you place your Town Hall block this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your colony through [Commands](../systems/command). 
 
 - **Note**: You can configure your own colony area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../config/``` folder of your own world. (see Minecolonies config server section for details)
 
 If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
 If you try to place another Town Hall outside of your protected area, you will get a message: <br> 
-<img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second TownHall" />
+<img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second Town Hall" />
 
 ## Town Hall GUI
 
-<li><i>You can use the tabs on the left side to switch between different categories.</i></li>
+<i>You can use the tabs on the left side to switch between different categories.</i>
 
 <br>
 
@@ -87,7 +87,9 @@ If you try to place another Town Hall outside of your protected area, you will g
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li><br>
-     <li><strong>Citizen Recruitment-</strong>Lets you recruit adult citizens to live at your colony (only if you have room in a house). Citizens' stats increase per recruitment package from Hay Bale --> Book --> Emerald --> Diamond. After you recruit a citizen, the price of recruiting more rises.</li><br>
+     <li><strong>Citizen Recruitment-</strong>Lets you recruit adult citizens to live at your colony (only if you have room in a house). Citizens' stats increase per recruitment package from Hay Bale --> Book --> Emerald --> Diamond. After you recruit a citizen, the price of recruiting more rises. 
+         <br>
+         <img src="../../assets/images/gui/citizenrecruitmentgui.png" class="img-fluid mx-auto" alt="Citizen Recruitment"></li><br>
      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li>

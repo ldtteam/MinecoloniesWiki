@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: Blocks
 layout: default
 ---
 # Blocks
@@ -19,4 +19,3 @@ layout: default
 ## [Substitution Blocks](../../source/items/substitutionblocks)
 
 ## [Timber Framed Blocks](../../source/items/timberframes)
-

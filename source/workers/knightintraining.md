@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Knight in Training
 layout: default
 ---
 # Knight in Training
