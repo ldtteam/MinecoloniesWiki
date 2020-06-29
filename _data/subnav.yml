@@ -9,7 +9,7 @@ subnav:
         url: source/installation/twitch
   - title: Tutorials
     subitems: 
-      - page: Walkthroughs
+      - page: Tutorial
         url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
