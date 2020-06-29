@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <br>
-You will get a build tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It is in the same rack as the townhall. However, you can craft the build tool if you need another one, as the recipe is simple. The build tool is *THE* most important tool you will need for the entire mod! With the build tool, you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
+You will get a build tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It is in the same rack as the [Town Hall](../../source/buildings/townhall). However, you can craft the build tool if you need another one, as the recipe is simple. The build tool is *THE* most important tool you will need for the entire mod! With the build tool, you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
 <br><br>
 
 <p class="h4"><a id="build_tool">Build Tool Video.</a></p>
