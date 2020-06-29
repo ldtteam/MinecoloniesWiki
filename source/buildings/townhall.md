@@ -68,7 +68,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what type of workers they are.</li>
+     <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what job they have.</li>
      <br>
      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
     </ul>
