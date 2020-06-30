@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Stone Smelter
 layout: default
 ---
 # Stone Smelter
@@ -21,12 +21,6 @@ layout: default
   </div>
 </div>
 
-Welcome to the Stone Smelter’s Information Site.
+The Stone Smelter is a very important addition to help automate your colony. The Stone Smelter will use their furnace(s) to smelt cobblestone into stone, clay into terracotta, and other smelts when they receive a request from another worker. 
 
-The Stone Smelter is a very important addition to help automate your Town. The Stone Smeltery will have a worker called the Stone Smelter, which will essentially use the furnace to cook stone for your Towns needs. The Smelter will require fuel to use in the furnace(s).
-
-Click here for full informationa about the [Stone Smeltery's Hut](../buildings/stonesmeltery) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Stone Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Stone Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Stone Smelter! **CONGRATULATIONS!**
-
-The Stone Smelter will start to stone blocks for all your Towns needs upon request.
+The Stone Smelter will require fuel to use in their furnace(s).

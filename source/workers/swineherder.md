@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Swine Herder
 layout: default
 ---
 # Swine Herder
@@ -21,27 +21,20 @@ layout: default
   </div>
 </div>
 
-Welcome to the Swine Herder's Information Site.
+The Swine Herder is a crucial part of your colony's food production needs. The Swine Herder will breed and butcher pigs for you as long as you provide them with carrots and an axe.
 
-The Swine Herder is a crucial part of your Town's needs, not only part of the food production, but also provides you with all drops and by products. The Swine Herder will breed and butcher the pigs for you as long as you provide it with Carrots and an axe.
+**NOTE:** The Swine Herder will not catch and bring in any pigs, only breed and butcher the ones in their hut area, so make sure you provide them with at least 2 initial pigs.
 
-Click here for full information about the [Swine's hut](../buildings/swineherder) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Swine Herder will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Swine Herder if you changed this in the settings tab in the [Town Hall's GUI](../buildings/townhall).
+The Swine Herder will work with vanilla Minecraft pigs, but might work with some pigs from other mods as long as they are *coded* as pigs and have normal breeding behavior. They will collect anything that is modified by another mod as well, so if another mod changes the drops (for example) to include bones or another type of meat, the Swine Herder will collect these as well.
 
-You now officially have a "Swine Herder!" **CONGRATULATIONS!**
+**Note:** The Swine Herder will only keep alive 2 pigs per hut level, so when their hut is level 5 they will have 10 pigs in their holding pens to breed and butcher. This means they will produce meat faster.
 
-You will have to capture and bring in 2 pigs to the Swine Herder's hut. The Herder will not catch and bring in any animal, only breed and butcher the ones in his hut area, so make sure you provide it with 2 initial pig.
-
-The Swine Herder will currently work with minecraft pigs, but might work with some "modded" pigs (from other mods), as long as they are *coded* as pig and they have normal breeding behaviour. They will drop anything that is modified by another mod as well, so if another mod changes the drops (f.e.) to include bones or other type of meat the Swine Herder will collect these as well.
-
-**Note:** The Swine Herder will only keep alive 2 of every kind of animal per hut level, so at level 5 they will have 10 animals in their holding pens alive to breed and butcher. this means they will keep *MORE* and have faster production and collection of meats, drops and by products. So:
-
-
-| Building Level | Animals "Housed" |
-| ----- | ----- |
-| 1 | 2 |
-| 2 | 4 |
-| 3 | 6 |
-| 4 | 8 |
-| 5 | 10 |
+| Hut Level | Pigs Housed |
+| --------- | ----------- |
+| 1         | 2           |
+| 2         | 4           |
+| 3         | 6           |
+| 4         | 8           |
+| 5         | 10          |
 
 <br>

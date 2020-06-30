@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Dyer's Hut
 layout: default
 ---
 # Dyer's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>dyer</recipe>
 </div>
-
-## About the Dyer's Hut
 
 ### Note: The Dyer cannot be built until you have a level 3 [Flower Shop](../../source/buildings/flowershop) (or three level 1 Flower Shops, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

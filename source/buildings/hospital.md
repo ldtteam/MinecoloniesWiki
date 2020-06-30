@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Hospital
 layout: default
 ---
 # Hospital
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>hospital</recipe>
 </div>
-
-## About the Hospital
 
 ### Note: The Hospital cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>

@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Cowboy's Hut
 layout: default
 ---
 # Cowboy's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>cowboy</recipe>
 </div>
-
-## About the Cowboy's Hut
 
 The Cowboy's Hut is where the Cowboy will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowboy's Hut, as the Cowboy will not catch and bring in any cows.
 

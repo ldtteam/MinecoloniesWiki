@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Server Info
 layout: default
 ---
 Content coming soon!

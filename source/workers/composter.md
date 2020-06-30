@@ -1,11 +1,11 @@
 ---
-title: MineColonies Wiki
+title: Composter
 layout: default
 ---
 # Composter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/composter_m.png" alt="Composter Male" />&nbsp;&nbsp;<img src="../../assets/images/workers/composter_f.png" alt="Composter Female" />
+<img src="../../assets/images/workers/composter_M.png" alt="Composter Male" />&nbsp;&nbsp;<img src="../../assets/images/workers/composter_F.png" alt="Composter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -21,10 +21,8 @@ layout: default
   </div>
 </div>
 
-Welcome to the Composter’s Information Site.
+The Composter will help your [Farmer](../../source/workers/farmer) get crops faster. The Composter will turn items into [compost](../../source/items/compost) using the [barrel](../../source/items/barrel). The Farmer will use the compost as fertilizer (like vanilla bonemeal).
 
-The Composter is an addition to help your Farmer(s) get more crops faster and your builder. The Composter will turn a lot of items into *compost* using the mod's barrel. So the Deliveryman will give the composter items like: Seeds (all types), saplings (all types), flowers, wheat, carrots, potatoes, beets, etc. Page 2 of the Composter's Hut GUI will show you all the items recognized by the mod that can be used to create compost (including modded materials). Then the composter will use the barrel(s) in it's hut and over some time, turn it into compost that the Deliveryman will then take to the Farmer. The farmer will use the compost just like bonemeal. The composter can also make dirt in the barrel as well, this is especially useful if you are in an area without dirt.
+Compost is also used to create compost blocks, which are used in the [Flower Shop](../../source/buildings/flowershop) schematics.
 
-Click here for full information about the [Composter's Hut](../../source/buildings/composter) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Composter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Composter if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Composter! **CONGRATULATIONS!**
+The Composter can also make dirt in their barrels as well, which is especially useful if you are in a biome without dirt.

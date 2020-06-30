@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Crusher
 layout: default
 ---
 # Crusher
@@ -21,29 +21,25 @@ layout: default
   </div>
 </div>
 
-Welcome to the Crusher's Information Site.
+The Crusher is a part of your colony's production line. The Crusher will crush materials into other materials.
 
-The Crusher is another part of your Colony's production line. The Crusher will crush materials into other materials.
+The defaults are:
+<ul>
+  <li>Cobblestone into Gravel</li>
+  <li>Gravel into Sand</li>
+  <li>Sand into Clay</li>
+</ul>
 
-The default configuration is:
-Cobblestone into Gravel
-Gravel into Sand
-And Sand into Clay
+However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
-However you can change this in the configuration file. This also works with modded items. Anything can be added here, it is up to the player and the server owner.
+The Crusher works on a 2:1 Ratio, so, for example, it takes 2 cobblestone to get 1 gravel.
 
-Click here for full information about the [Crusher's hut](../../source/buildings/crusher) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Crusher will be automatically assigned (or you can manually assign one with the best  "[Traits](../systems/workerinfo)" for a Crusher if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
+The Crusher can only crush a certain amount of materials per day, depending on their hut level.
 
-You now officially have a "Crusher!" **CONGRATULATIONS!**
-
-**NOTE:** You will need to tell the crusher what you want them to crush.
-
-| Building Level | Daily Max |
-| ----- | ----- |
-| 1 | 16  |
-| 2 | 64  |
-| 3 | 144 |
-| 4 | 256 |
-| 5 | 999 |
-
-The Crusher works on a 2:1 Ratio, so for example it takes 2 cobblestone to get 1 gravel.
+| Hut Level | Daily Max |
+| --------- | --------- |
+| 1         | 16        |
+| 2         | 64        |
+| 3         | 144       |
+| 4         | 256       |
+| 5         | 999       |

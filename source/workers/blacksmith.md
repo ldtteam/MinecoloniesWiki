@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Blacksmith
 layout: default
 ---
 # Blacksmith
@@ -21,25 +21,18 @@ layout: default
   </div>
 </div>
 
-Welcome to the Blacksmith’s Information Site.
+The Blacksmith is a part of your colony's production line. The Blacksmith will craft tools, swords, and armor to supply workers, knights, and rangers with items. (However, they do not craft bows or fishing poles.) A [Deliveryman](../../source/workers/deliveryman) or the player must provide the necessary supplies to make these items.
 
-The Blacksmith is a part of your Colony's production line. The blacksmith will craft tools, swords and armor to supply workers, knights, and rangers with tools and weapons. (However, they do not craft bows or fishing poles.) A deliveryman or the player must provide the necessary supplies to make these items.
+The Blacksmith can learn 3x3 recipes for all tools, weapons, and armour (no string or redstone items)! The Blacksmith will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
-Blacksmith can learn 3x3 recipes for all tools and weapons without string or redstone, and all armour! The blacksmith will only make items when they have been taught the recipes and receive a request for a tool, armor or sword.
+**Note:** The Blacksmith can only learn a set number of recipes based on their hut level. So:
 
-Click here for full information about the [Blacksmith's hut](../buildings/blacksmith) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Blacksmith will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Blacksmith if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Blacksmith, **CONGRATULATIONS!**
-
-**Note:** The Blacksmith can only learn a set number of recipes based on the Hut level. So:
-
-
-| Building Level | Recipes |
-| ----- | ----- |
-| 1 | 10  |
-| 2 | 20  |
-| 3 | 40  |
-| 4 | 80  |
-| 5 | 160 |
+| Hut Level | Recipes |
+| --------- | ------- |
+| 1         | 10      |
+| 2         | 20      |
+| 3         | 40      |
+| 4         | 80      |
+| 5         | 160     |
 
 <br>

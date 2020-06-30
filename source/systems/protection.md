@@ -1,47 +1,30 @@
 ---
-title: MineColonies Wiki
+title: Colony Protection System
 layout: default
 ---
-# Town Protection
+# Colony Protection System
 
-Our Custom Protection System (once a Townhall is placed) can be toggled in the config (file or in-game menu).
+Our Colony Protection System (once a [Town Hall](../../source/buildings/townhall) is placed) can be toggled in the config file.
 
-The custom protection includes turning explosions off (by default), to have creepers, TNT and any modded blocks not destroy your area.
+The protection includes turning explosions off (by default), so creepers, TNT, and any modded blocks won't destroy your colony. By default, only the colony owner can break or place blocks within a colony, but you can add other players in the permissions section of the Town Hall GUI.
 
-It also covers from Y = 0 to Y = 256, so you don't have to worry about any griefing from bedrock to sky limit.
+It also covers from Y = 0 to Y = 256, so you don't have to worry about griefing from bedrock to the sky limit.
 
-**Note:** The Protection system depends on the claim system. Only areas that are "claimed" will have the protection system. See Town Claim Modes for complete information.
+**Note:** The protection system depends on the border system. Only areas that are within the colony's border will be protected. See [Colony Border System](../../source/systems/border) for more information.
 
-#### Configuration Options:
-
-
-**_Config file values:_**
+### Config File Options
 
 ```
-# Should the colony protection be enabled?
+# Should colony protection be enabled?
 B:enableColonyProtection=true
 ```
 
 ```
-# Independent from the colony protection, should explosions be turned off?
+# Independent from the colony protection setting (above), should explosions be turned off inside colonies?
 B:turnOffExplosionsInColonies=true
 ```
 
 ```
-# Should players be allowed to build their colonies over existing villages?
+# Should players be allowed to build their colonies over existing (vanilla) villages?
 B:protectVillages=true
 ```
-
-**_Or in-game through the "mod Options" button;_**
-
-**1-** Select MineColonies and press the Config button.
-
-**2-** Next screen select MineColonies button.
-
-**3-** Next screen select gameplay button.
-
-**_There you will find the options you can change:_**
-
-* `enableColonyProtection = true` (default value)
-* `turnOffExplosionsInColonies = true` (default value)
-* `protectVillages = true` (default value)

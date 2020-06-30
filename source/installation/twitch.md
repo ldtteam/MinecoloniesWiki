@@ -1,10 +1,10 @@
 ---
-title: MineColonies Wiki
+title: Twitch Installation
 layout: default
 ---
-# Twitch Client
+# Twitch Installation
 
-If you want to play on the **MineColonies Official 1.12.2** Server, we highly recommend using the Twitch Client to always be up to date with all the mods we use in our Official Server.
+If you want to play on the **MineColonies Official 1.14.4** Server, we highly recommend using Twitch to always be up to date with all the mods we use in our official server.
 
 - [Twitch Client](#twitch-client)
     - [Installation of the Modpack through the Twitch Client](#installation-of-the-modpack-through-the-twitch-client)
@@ -22,13 +22,13 @@ If you want to play on the **MineColonies Official 1.12.2** Server, we highly re
         - [Select our Server](#select-our-server)
 {: .box .py-3 .pr-4 }
 
-- Click on the text below Twitch Logo to download the Twitch Client. On that page, select download for PC or MAC and begin your download.
+- Click on the text below the Twitch logo to download the Twitch client. On that page, select download for PC or MAC and begin your download.
 
 ![Twitch Logo](../../assets/images/installation/twitch_logo.png "Click the link below!")
 
 [Download the Twitch client here!](https://app.twitch.tv/ "Twitch App")
 
-- Once you have downloaded the Twitch Client, run the Installation and Login to the Twitch Client.
+- Once you have downloaded the Twitch client, run the installation and login to the Twitch client.
 
 *Sign up to Twitch if you haven't yet, or convert your old Curse account to a Twitch account.*
 
@@ -38,7 +38,7 @@ If you want to play on the **MineColonies Official 1.12.2** Server, we highly re
 
 ### Navigate to Mods
 
-On the top bar of the Launcher, look for the tab called Mods, click on it and then select Minecraft.
+On the top bar of the Launcher, look for the tab called Mods. Click on it and then select Minecraft.
 
 ![Launcher Mods](../../assets/images/installation/twitch_1.png)
 
@@ -50,13 +50,13 @@ The Twitch client will prompt you to "Enable Minecraft", which will restart the 
 
 ### Install Minecraft
 
-click on the Install Button ( Use the "advanced" option if you want to select another location for the installation folder. Default Folder is: C:/Users/(your user)/Documents/Curse/Minecraft )
+Click on the Install button. Use the Advanced option if you want to select another location for the installation folder. The default folder is C:/Users/(your user)/Documents/Curse/Minecraft.
 
 ![Install Minecraft](../../assets/images/installation/twitch_3.png)
 
 ### Browse Modpacks
 
-After the "Install" is done select "Browse all ModPacks".
+After the installation is done, select Browse all Modpacks.
 
 ![Browse Modpacks](../../assets/images/installation/twitch_4.png)
 
@@ -68,7 +68,7 @@ Type in the search bar "MineColonies." Once you see "MineColonies Official" (_by
 
 ### Launch Profile
 
-Once the install is finished downloading all the mods, it will now say: "PLAY" click on it.
+Once the installation is finished downloading all the mods, click on PLAY.
 
 ![Play the Modpack](../../assets/images/installation/twitch_6.png)
 
@@ -86,13 +86,13 @@ Click the green play button if it's already set to "MineColonies Official". If n
 
 #### Open Profiles List
 
-Click the green arrow pointing up for profile selection
+Click the green arrow (pointing up) to select your profile.
 
 ![Select Profile](../../assets/images/installation/twitch_8a.png)
 
 #### Select MineColonies
 
-Click the "MineColonies Official" profile. Then you are good to go to Step 8 again!
+Click the "MineColonies Official" profile. Then you're ready to click Play!
 
 ![Select Profile 2](../../assets/images/installation/twitch_8b.png)
 
@@ -104,8 +104,8 @@ When Minecraft has loaded up, click on the Multiplayer button.
 
 ### Select our Server
 
-Finally, click on MineColonies Official 1.12.2! The server info will be set up already.
+Finally, click on MineColonies Official 1.14.4! The server info will be set up already.
 
 ![Join the Official Server](../../assets/images/installation/twitch_10.png)
 
-THAT'S ALL !!! Simple... Good Luck, Have Fun. See you in game.
+That's it! Good luck, have fun. See you in the server.

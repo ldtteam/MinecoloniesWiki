@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Smelter
 layout: default
 ---
 # Smelter
@@ -21,12 +21,4 @@ layout: default
   </div>
 </div>
 
-Welcome to the Smelter’s Information Site.
-
-The Smeltery is a very important addition to help automate your Town. The Smeltery will have a worker called the Smelter, which will essentially turn the ores that the Miner gets and smelt them into ingots for your Towns needs. The Smelter will require fuel to use in the furnace(s).
-
-Click here for full informationa about the [Smeltery's Hut](../buildings/smeltery) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Smelter will be automatically assigned (or you can manually assign one with the best  [Traits](../systems/workerinfo) for Smelter if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Smelter! **CONGRATULATIONS!**
-
-The Smelter will start to process all the block ores that your Miner(s) are mining and turn them into ingots or blocks for all your Towns needs.
+The Smelter is a very important addition to help automate your colony. The Smelter will smelt the ores that the Miner mines into ingots for your colony's needs. The Smelter will require fuel to use in their furnace(s).

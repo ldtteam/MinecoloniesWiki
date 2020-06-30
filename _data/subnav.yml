@@ -9,7 +9,7 @@ subnav:
         url: source/installation/twitch
   - title: Tutorials
     subitems: 
-      - page: Walkthroughs
+      - page: Tutorial
         url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
@@ -17,16 +17,16 @@ subnav:
         url: source/tutorials/serverinfo
   - title: Systems
     subitems:
+      - page: Colony Border System
+        url: source/systems/border
+      - page: Colony Protection System
+        url: source/systems/protection
       - page: Command System
-        url: source/systems/commands
+        url: source/systems/command
       - page: Happiness and Saturation Systems
         url: source/systems/happinessandsaturation
       - page: Worker System
         url: source/systems/worker
-      - page: Town Claim Modes
-        url: source/systems/townclaimmodes
-      - page: Protection System
-        url: source/systems/protection
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome

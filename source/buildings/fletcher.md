@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Fletcher's Hut
 layout: default
 ---
 # Fletcher's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>fletcher</recipe>
 </div>
-
-## About the Fletcher's Hut
 
 ### Note: The Fletcher's Hut cannot be built until you have a level 1 [Sawmill](../../source/buildings/sawmill) and have finished the research in the [University](../../source/buildings/university).
 <br>

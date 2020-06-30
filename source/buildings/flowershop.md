@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Flower Shop
 layout: default
 ---
 # Flower Shop
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>flowershop</recipe>
 </div>
-
-## About the Flower Shop
 
 ### Note: The Flower Shop cannot be built until you have a level 3 [Composter's Hut](../../source/buildings/composter) (or three level 1 Composter's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

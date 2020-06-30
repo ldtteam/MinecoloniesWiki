@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: University
 layout: default
 ---
 # University
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>university</recipe>
 </div>
-
-## About the University
 
 The University is where a Researcher will research various upgrades to your colony. 
 
@@ -43,11 +41,9 @@ When accessing the University's hut block by right-clicking on it, you will see 
 </div>
 <br>
 
-
-
 <br>
 
-Page 2 of the GUI will show you the options for each research branch.
+Page 2 of the GUI will show you the options for each research tree.
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -57,7 +53,7 @@ Page 2 of the GUI will show you the options for each research branch.
     
 <br>
     
-Once you click on a research branch, you will see the options for each research tree. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game.)
+Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game.)
 
 <br>
 
@@ -73,3 +69,13 @@ Once you click on a research branch, you will see the options for each research 
  
  <br>
  
+**Note:** Each column of a research branch is also the level the University needs to be to begin a research from that column. So:
+
+| Research Branch Column | Minimum University Level |
+| ---------------------- | ------------------------ |
+| 1                      | 1                        |
+| 2                      | 2                        |
+| 3                      | 3                        |
+| 4                      | 4                        |
+| 5                      | 5                        |
+| 6 and higher           | 5                        |

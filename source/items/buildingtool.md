@@ -1,19 +1,19 @@
 ---
-title: MineColonies Wiki
+title: Building Tool
 layout: default
 ---
 # Building Tool
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptergold.png" alt="Build Tool"></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptergold.png" alt="Building Tool"></p>
     <recipe>buildingtool</recipe>
 </div>
 
 <br>
-You will get a building tool in the Supply Camp or Ship. It is in the same rack as the townhall. However, you can craft the building tool if you need another one, as the recipe is simple. The building tool is *THE* most important tool you will need for the entire mod! With the building tool you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
+You will get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It is in the same rack as the [Town Hall](../../source/buildings/townhall). However, you can craft the building tool if you need another one, as the recipe is simple. The building tool is *THE* most important tool you will need for the entire mod! With the building tool, you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
 <br><br>
 
-<p class="h4"><a id="build_tool">Building Tool Video.</a></p>
+<p class="h4"><a id="build_tool">Building Tool Video</a></p>
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -22,15 +22,15 @@ You will get a building tool in the Supply Camp or Ship. It is in the same rack 
 
 ### Step One
 
-The first step is to craft the Building Tool.
+The first step is to craft the Building Tool (or get one from a Supply Camp or Ship).
 <br>
 
 ### Step Two
 
-To place a worker hut or a building from the mod, you first need to have the hut block for the building you want in your inventory. Then, using the build tool, you can right click on the block where you want to place it. The GUI will pop up where you have many options:
+To place a worker hut or a building from the mod, you first need to have the hut block for the building you want in your inventory. Then, using the building tool, you can right click on the block where you want to place it. The GUI will pop up where you have many options:
 
 
-<p style="text-align:center;"><img src="../../assets/images/tutorial/buildtool1.png" alt="Building Tool GUI"></p>
+<p style="text-align:center;"><img src="../../assets/images/misc/buildtool1.png" alt="Building Tool GUI"></p>
 <br>
 
 **Left Drop Down:** Here you will see 3 general categories: My Schematics, Decorations and Hut Blocks/Building Blocks.
@@ -59,7 +59,7 @@ To place a worker hut or a building from the mod, you first need to have the hut
 - The green check mark is for when you are done and want to commit to placing it.
 - The red X is to cancel the whole process.
 
-- **Note:** When in Creative Mode you will also see in the lower right the *Copy* and *Paste* options.
+- **Note:** When in Creative Mode, you will also see in the lower right the Paste options. If you click one of these, the structure will be instantly pasted into the world without your [Builder](../../source/workers/builder) needing to build it.
 
 <br>
 
@@ -68,6 +68,6 @@ To place a worker hut or a building from the mod, you first need to have the hut
 <br>
 ### Step Three
 
-Now that you have the structure ready to place, click on the green check mark and voilá... it will be sent as a build order to the Builder if it's a decoration or schematic! But if it's a Hut, you might have to go into the Hut block's GUI and press on the build button to have the build order sent to the Builder.
+Now that you have the structure ready to place, click on the green check mark and voilá... it will be sent as a build order to the [Builder](../../source/workers/builder) if it's a decoration or schematic! But if it's a hut, you might have to go into the hut block's GUI and press on the build button to have the build order sent to the Builder.
 
 You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders tab to see the queue of all build requests you have for the Builder.

@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Substitution Blocks
 layout: default
 ---
 # Substitution Blocks
@@ -10,15 +10,13 @@ layout: default
     <recipe>substitutionblock</recipe> - <recipe>solidsubblock</recipe>
 </div>
 
-## The Blocks
-
 The substitution blocks (also called placeholder blocks) are tan and brown. The tan block is the substitution block, and the brown is the solid substitution block. Each serves its own function. 
 
-## The Use
+## Using the Substitution Blocks
 
 The substitution block tells the mod to leave any blocks that are currently in that spot alone. It will not remove or change anything that already exists in that spot.
 
-The solid substitution block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (dirt, sandstone, red sandstone, white terracotta, etc). 
+The solid substitution block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (grass, sandstone, red sandstone, white terracotta, etc). 
 
 You can make and use these blocks in survival, but they are mainly used to scan schematics.
 

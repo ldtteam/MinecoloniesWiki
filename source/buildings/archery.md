@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Archery
 layout: default
 ---
 # Archery
@@ -18,9 +18,6 @@ layout: default
     <hr />
     <recipe>archery</recipe>
 </div>
-
-
-## About the Archery
 
 ### Note: The Archery cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../..source/buildings/university).
 <br>

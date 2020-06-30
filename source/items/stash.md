@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Stash
 layout: default
 ---
 # Stash
@@ -10,12 +10,10 @@ layout: default
 </div>
 <br>
 
-## The Block
-
-The Stash lets the player deposit items that they want to be picked up by a [Deliveryman](../../source/workers/deliveryman) to take to the [Warehouse](../../source/buildings/warehouse).
+The stash lets a player deposit items that they want to be picked up by a [Deliveryman](../../source/workers/deliveryman) to take to the [Warehouse](../../source/buildings/warehouse).
 
 <br>
 
-## The Use
+## Using the Stash
 
-To use the Stash, right-click on it to bring up the inventory, which works just like a chest. Put items in the Stash and a Deliveryman will pick them up.
+To use the stash, right-click on it to bring up the inventory, which works like a chest. Put items in the stash and a Deliveryman will pick them up.

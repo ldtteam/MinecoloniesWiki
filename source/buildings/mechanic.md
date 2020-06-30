@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Mechanic's Hut
 layout: default
 ---
 # Mechanic's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>mechanic</recipe>
 </div>
-
-## About the Mechanic's Hut
 
 ### Note: The Mechanic's Hut cannot be built until you have a level 3 [Blacksmith's Hut](../../source/buildings/blacksmith) (or three level 1 Blacksmith's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

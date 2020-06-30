@@ -1,10 +1,10 @@
 ---
-title: MineColonies Wiki
+title: Schematics
 layout: default
 ---
 # Schematics
 
-Schematics are files containing block and entity information of a certain area a player scanned with the [Scan Tool](../items/scantool) in-game. You can use the scan tool and scan ANY building or structure you like in SSP or even SMP and then have your builder "Build it" for you (provided that you give him all the materials needed of course).
+Schematics are files containing block and entity information of a certain area a player scanned with the [Scan Tool](../items/scantool) in-game. You can use the scan tool and scan ANY building or structure you like in singleplayer or multiplayer and then have your [Builder](../../source/workers/builder) build it for you (provided that you give them all the materials needed, of course).
 
 - [Schematics](#schematics)
   - [Scanning a New Structure](#scanning-a-new-structure)
@@ -22,11 +22,11 @@ Schematics are files containing block and entity information of a certain area a
 
 ## Scanning a New Structure
 
-Once you build or have a structure or area you want to scan to have your builder build later in game, you need to determine the exact "cube" area you need. 
+Once you have a structure or area you want to scan to have your Builder build, you need to determine the exact area that needs to be scanned. 
 
 ![TestBuilding](../../assets/images/tutorial/testbuilding.png)
 
-Take your [Scan Tool](../items/scantool) and Left click the lowest left block of the area and then place a block in the top right corner and Right click on it.
+Take your [Scan Tool](../items/scantool) and left-click the lowest left block of the area and then place a block (it can be a [placeholder block](../../source/items/substitutionblocks) in the top right corner and right-click on it.
 
 ![ScanPoint1](../../assets/images/tutorial/scan1.png)
 
@@ -36,15 +36,15 @@ Then click in the air to see the entire structure.
 
 ![ScanFull](../../assets/images/tutorial/scan3.png)
 
-Once you have the full area set, you can press esc and the white outline of the scan area will stay in place. Go around it to double check that everything you want is in the scan area. When you are ready, you can click in the air again to get the GUI to display again where you can enter your scan name. Then press the green check to save the scan.
+Once you have the full area set, you can press Escape and the white outline of the scan area will stay in place. Go around it to double-check that everything you want is in the scan area. When you are ready, you can right-click in the air again to get the GUI to display where you can enter your scan name. Then press the green checkmark to save the scan.
 
 Scans are saved in `../minecolonies/scan/new/...`
 
-Once the scans are save, they need moved to the `../structurize/schematics/(folder)/file`
+Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a <a href="#customhuts">custom hut</a>.
 
 ## Placing a Schematic.
 
-Once you have scanned a structure, you can use the build tool to have your builder "build it" for you. Once you right click with the Build Tool you will have to select "My Schematics" (in the left drop down menu) and on the right side drop down menu you will see the scans that you have made.There is also a "Rename" button where you can change the name that was originally assigned to the scan (for example: SCAN_1533778290135) to whatever you like. You can also "delete" any of your saved scans.
+Once you have scanned a structure, you can use the [building tool](../../source/items/buildingtool) to have your [Builder](../../source/workers/builder) build it for you. Once you right-click with the building tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
 
@@ -52,30 +52,30 @@ Once you have scanned a structure, you can use the build tool to have your build
 
 This is a FAQ section to answer most questions regarding schematics in MineColonies.
 
-#### What and Where is the scans folder?
+#### What and where is the scans folder?
 
-The scans folder is where the schematics are saved after performing a scan using the scan tool in MineColonies. This is a client side only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in game. This directory is shared between all your Single Player games and Multi Player games.
+The scans folder is where the schematics are saved after performing a scan using the scan tool in MineColonies. This is a client side only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in game. This directory is shared between all your singleplayer games and multiplayer games.
 
 #### Where is the schematic folder?
 
-Custom schematics need to be copied inside the schematic folder: `*\structurize\schematics\` (or `*\structurize\schematics\` for Mac and Linux).
+Custom schematics need to be copied inside the schematic folder: `*\structurize\schematics\`.
 
 The location of this folder depends of the type of game:
 
-- For a Single Player game, there are 2 possible locations:
+- For a singleplayer game, there are 2 possible locations:
   * In the world folder: `*/minecraft/saves/(World Name)/structurize/schematics/`
     + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), MineColonies will completely ignore the other directory.
-  * In the Minecraft's folder: `*/minecraft/structurize/schematics/`
+  * In the Minecraft folder: `*/minecraft/structurize/schematics/`
     + **Note:** Use this folder when you want to have the same custom schematics across multiple worlds.
-- For a Multiplayer game, the schematics are always loaded from the world's directory under: `*/minecolonies/schematics/` directory.
+- For a multiplayer game, the schematics are always loaded from the world's directory under: `*/minecolonies/schematics/` directory.
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
 
-When playing on a server, the server needs to send the schematics to the players so that the build tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
+When playing on a server, the server needs to send the schematics to the players so that the building tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
 
-#### How to create custom huts?
+#### How to create <a id="customhuts">custom huts</a>?
 
-To create new schematics for existing huts, there are some guidelines that you must follow: The scans MUST have the same footprint for the same style/Hut's type; The scans must contain the hut's chest i.e. builder's chest for the builder's hut, Citizen's chest for the Citizen's hut and so on. The hut chest need to be exactly at the same place and have the same rotation for each level; The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the builder's huts with the MyOwn style, we would have:
+To create new schematics for existing huts, there are some guidelines that you must follow: the scans MUST have the same footprint for the same style/hut's type; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level; the scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the Builder's Huts with the MyOwn style, we would have:
 
 *myown/builder1.blueprint*
 *myown/builder2.blueprint*
@@ -83,15 +83,15 @@ To create new schematics for existing huts, there are some guidelines that you m
 *myown/builder4.blueprint*
 *myown/builder5.blueprint*
 
-- **Note:** in the build tool, the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5.
+- **Note:** In the [building tool](../../source/items/buildingtool), the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5.
 
-Once ready, move the myown folder into the schematics folder and start your game. You should be able to see it with the the build tool.
+Once ready, move the myown folder into the schematics folder and start your game. You should be able to see it with the the building tool.
 
-- **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
+- **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the building tool.
 
 ## Custom Hut Filenames
 
-Here is a full list, up-to-date as of 9 February 2020, of the building names. **Please note**, *capitalization matters*.
+Here is a full list, up-to-date as of 9 February 2020, of the building names. **Please note** that *capitalization matters*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -130,36 +130,36 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 
 ## Hut Requirements
 
-| Building       | Requirements                                                         | Suggested           | 
-| :------------- | :-------------                                                       | :-------------      | 
-| archery        | 1 archery dummy per level                                            |                     | 
-| bakery         | 1 furnace                                                            |                     | 
-| barracks       | 1 barracks tower per level (to lvl 4)                                |                     |
-| barracks tower |                                                                      | 1 bed per level     |
-| builder        |                                                                      | 1 rack per level    |
-| citzens        | 1 bed per level                                                      |                     |
-| combat academy | 1 combat dummy per level                                             |                     |
-| composter      | 1 composter barrel per level                                         |                     |
-| cook           | 1 furnace per level                                                  |                     |
-| dyer           | 1 furnace                                                            |                     |
-| florist        | 4 compost plots per level                                            |                     |
-| glassblower    | 1 furnace per level                                                  |                     |
-| guard tower    |                                                                      | 1 bed per level     |
-| hospital       | 1 bed per level                                                      |                     |
-| library        | bookshelves                                                          |                     |
-| miner          | mineshaft                                                            |                     |
-| school         | 2 carpets per level                                                  | 4 carpets per level |
-| smeltery       | 1 furnace per level                                                  |                     |
-| stonesmeltery  | 1 furnace per level                                                  |                     |
-| plantation     | 4 per level, brick under sand, cobble under sand, sand next to water |                     |
-| tavern         | 4 beds, barrels, dining room                                         |                     |
-| university     | bookshelves                                                          |                     |
-| warehouse      | racks                                                                |                     |
+| Building                                                | Requirements                                                         | Suggested           | 
+| :-----------------------------------------------------: | :------------------------------------------------------------------: | :-----------------: | 
+| [Archery](../../source/buildings/archery)               | 1 archery dummy per level (a hay bale with a button on it)           |                     | 
+| [Bakery](../../source/buildings/bakery)                 | 1 furnace                                                            |                     | 
+| [Barracks](../../source/buildings/barracks)             | 1 barracks tower per level (up to lvl 4)                             |                     |
+| [Barracks Tower](../../source/buildings/barrackstower)  |                                                                      | 1 bed per level     |
+| [Builder's Hut](../../source/buildings/builder)         |                                                                      | 1 rack per level    |
+| [Citzen's Hut](../../source/buildings/citizen)          | 1 bed per level                                                      |                     |
+| [Combat Academy](../../source/buildings/combatacademy)  | 1 combat dummy per level (a pumpkin on top of a bale of hay)         |                     |
+| [Composter's Hut](../../source/buildings/composter)     | 1 [barrel](../../source/items/barrel) per level                      |                     |
+| [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
+| [Dyer's Hut](../../source/buildings/dyer)               | 1 furnace                                                            |                     |
+| [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
+| [Glassblower's Hut](../../source/buildings/glassblower) | 1 furnace per level                                                  |                     |
+| [Guard Tower](../../source/buildings/guardtower)        |                                                                      | 1 bed per level     |
+| [Hospital](../../source/buildings/hospital)             | 1 bed per level                                                      |                     |
+| [Library](../../source/buildings/library)               | Bookshelves                                                          |                     |
+| [Mine](../../source/buildings/mine)                     | A mineshaft                                                          |                     |
+| [School](../../source/buildings/school)                 | 2 carpets per level                                                  | 4 carpets per level |
+| [Smeltery](../../source/buildings/school)               | 1 furnace per level                                                  |                     |
+| [Stone Smeltery](../../source/buildings/stonesmeltery)  | 1 furnace per level                                                  |                     |
+| [Plantation](../../source/buildings/plantation)         | 4 per level: brick under sand, cobble under sand, sand next to water |                     |
+| [Tavern](../../source/buildings/tavern)                 | 4 beds, [horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical), a dining room |                     |
+| [University](../../source/buildings/university)         | Bookshelves                                                          |                     |
+| [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/racks) (more each level)                  |                     |
 
 ## Level Requirements
 
 | Level          | Requirements          | 
-| :------------- | :-------------        | 
+| :------------: | :-------------------: | 
 | Level 1        | Very Easy - Wooden    | 
 | Level 2        | Easy - Iron           | 
 | Level 3        | Medium - Nether       | 
@@ -172,39 +172,39 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 ## Tips on Building
 
 ### Do
-<li> Do not change someone elses style unless specifically asked to do so.
-All levels must have the same footprint x, y & z
-Hut Block must be in the same location with the same rotation
-All Chests must remain in the same location through all additional levels
-Use Solid placeholders at or below ground level
-Use Light placeholders where you want to keep any existing block (including from level to level) IE Barracks Towers in the Barracks schematic
-Use only vanilla blocks or structurize blocks</li>
-
-### Watch
-<li>Books and Quills if books are blank
-If building upgradable deco, add the deco controller with the name of your deco item, I will fix the pathing that goes in it to match where I put it in the files</li>
+<ul>
+  <li>Make all levels of a hut have the same footprint for x, y, and z</li>
+  <li>Place the hut block in the same location with the same rotation</li>
+  <li>Make sure all chests and [racks](../../source/items/rack) are in the same location through all levels</li>
+  <li>Use [solid placeholders](../../source/items/substitution blocks) at or below ground level</li>
+  <li>Use [light placeholders](../../source/items/substitution blocks) where you want to keep any existing block (including from level to level), like the [Barracks Towers](../../source/buildings/barrackstower) in the [Barracks](../../source/buildings/barracks) schematic</li>
+  <li>Use only vanilla blocks or Structurize blocks (officially)</li>
+  <li>Use Books and Quills instead of blank books</li>
+  <li>If building upgradable deco, add the deco controller with the name of your deco item, LunaDragonStar (the schematics admin) will fix the pathing that goes in it to match where she puts it in the files</li>
+</ul>
 
 ### Don't 
-<li>No Player Heads
-Don't use unobtainable items in builds, no command blocks, petrified wood, or infested blocks</li>
+<ul>
+  <li>Use unobtainable items in builds (no command blocks, petrified wood, infested blocks, or mob heads (including player heads))</li>
+  <li>Change someone else's style (officially) unless specifically asked to do so</li>
 
 ## Additional Information
 
 #### How to override some built-in schematics?
 
-Simply create a schematic file with the same style/name. For instance to override the Builder's hut level 1 in wooden, create a schematic file name called wooden/builder1.blueprint.
+Simply create a schematic file with the same style/name. For instance, to override the [Builder's Hut](../../source/buildings/builder) wooden level 1, create a schematic file name called wooden/builder1.blueprint.
 
 #### How to use custom huts?
 
-The custom huts need to be copied in the schematics folder. Once copied, you may start your single player or your multiplayer game as usual, you should see them in the build tool.
+The custom huts need to be copied in the schematics folder. Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [building tool](../../source/items/buildingtool) (if holding the hut block).
 
 #### How to allow my players to use their own huts' schematics on my server?
 
 You will have to copy them yourself in the schematics folder on the server and restart it.
 
-#### How to allow my players to use their scanned schematics on my server?
+#### How to allow my players to use their scanned decoration schematics on my server?
 
-Edit the configuration file and set allowPlayerSchematics to true. This allow the player to use its own decorations. It is not possible for the player to use is own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reached, the server will start deleting unused schematics.
+Edit the configuration file and set allowPlayerSchematics to true. This allows the player to use their own decorations. It is not possible for the player to use their own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reached, the server will start deleting unused schematics.
 
 #### How to disable built-in schematics completely?
 

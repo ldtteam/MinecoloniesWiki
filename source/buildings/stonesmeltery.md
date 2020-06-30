@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Stone Smeltery
 layout: default
 ---
 # Stone Smeltery
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>stonesmeltery</recipe>
 </div>
-
-## About the Stone Smeltery
 
 ### Note: The Stone Smeltery cannot be built until you have a level 3 [Smeltery](../../source/buildings/smeltery) (or three level 1 Smelteries, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

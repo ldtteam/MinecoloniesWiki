@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: School
 layout: default
 ---
 # School
@@ -22,8 +22,6 @@ layout: default
     <recipe>school</recipe>
 </div>
 
-## About the School
-
 ### Note: The School cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>
 
@@ -31,7 +29,7 @@ The School is where the Teacher will level up the Pupils' (children) skills. Pap
 
 The level of the School determines how many Pupils can be taught at a time.
 
-| Pupil Level | Pupils Taught |
+| School Level | Pupils Taught |
 | ----- | ----- |
 | 1 | 2 |
 | 2 | 4 |

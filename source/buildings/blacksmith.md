@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Blacksmith's Hut
 layout: default
 ---
 # Blacksmith's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>blacksmith</recipe>
 </div>
-
-## About the Blacksmith's Hut
 
 ### Note: The Blacksmith's Hut cannot be built until you have a level 3 [Mine](../../source/buildings/mine) (or three level 1 Mines, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

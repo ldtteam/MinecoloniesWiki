@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Builder's Hut
 layout: default
 ---
 # Builder's Hut
@@ -19,9 +19,7 @@ layout: default
     <recipe>builder</recipe>
 </div>
 
-## About the Building
-
-### Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build any other building.
+### Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build other buildings.
 
 Before you choose a place to build the Builder's Hut, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the Builder’s Hut block and place it with your [Building Tool](../items/buildingtool). Once the hut is placed, the Builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Builder if you changed this in the settings tab in the [Town Hall's GUI](../../source/buildings/townhall).
 
@@ -74,7 +72,7 @@ When accessing the Builder’s Hut block by right-clicking on it, you will see a
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/newbuild.png" class="img-fluid mx-auto" alt="New Building">
+    <img src="../../assets/images/gui/upgradebuild.png" class="img-fluid mx-auto" alt="Upgrade Building GUI">
   </div>
   <div class="col-sm-12 col-md">
     <ul>

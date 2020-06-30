@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Dyer
 layout: default
 ---
 # Dyer
@@ -21,10 +21,4 @@ layout: default
   </div>
 </div>
 
-Welcome to the Dyer’s Information Site.
-
-The Dyer is an important part of the supply production part of the your Colony. The dyer will craft dyes and dyed items.
-
-Click here for full information about the [Dyer's hut](../buildings/dyer) block and using your [Building Tool](../items/buildingtool). Once the hut is placed, the Dyer will be automatically assigned (or you can manually assign one with the best [Traits](../systems/workerinfo) for a Dyer if you changed this in the setting tab in the [Town Hall's GUI](../../source/buildings/townhall).
-
-You now officially have a Dyer, **CONGRATULATIONS!**
+The Dyer is part of the production of the your colony. The Dyer will craft dyes and dyed items.

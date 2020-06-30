@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: Tutorials
 layout: default
 ---
 # Tutorials
@@ -9,4 +9,3 @@ layout: default
 ## [Server Info](../../source/tutorials/serverinfo)
 
 ## [Tutorial](../../source/tutorials/tutorial)
-

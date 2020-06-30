@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Scan Tool
 layout: default
 ---
 # Scan Tool
@@ -10,9 +10,7 @@ layout: default
 </div>
 <br>
 
-## The Item
-
-The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your Builder build it for you! So if you build a house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a [schematic](../tutorials/schematics) file that you can then use the build tool to place and have your Builder build it for you. Want your Builder to clear an area for you (and level up while working)? Then scan an area of air and place it with the building tool over what you want the Builder to clear-they'll clear that area away, leaving only air! Watch a short video of how it works here:
+The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your [Builder](../../source/workers/builder) build it for you! So if you build a house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a [schematic](../../source/tutorials/schematics) file that you can then use the build tool to place and have your Builder build it for you. Want your Builder to clear an area for you (and level up while working)? Then scan an area of air and place it with the building tool over what you want the Builder to clear-they'll clear that area away, leaving only air! Watch a short video of how it works here:
 
 <p class="h4">Scan Tool Video</p>
 
@@ -34,13 +32,13 @@ The first step is to craft a scan tool.
 
 Then left-click a lower front corner (left or right makes no difference) at ground level of the structure.
 
-![Point 1](../../assets/images/tutorial/point1.png)
+![Point 1](../../assets/images/tutorial/scan1.png)
 
 ### Step Three
 
 Right-click on the top opposite corner of the structure (you can use a Placeholder Block for this), leaving the entire structure inside this imaginary box.
 
-![Point 2](../../assets/images/tutorial/point2.png)
+![Point 2](../../assets/images/tutorial/scan2.png)
 
 ### Step Four
 
@@ -48,11 +46,11 @@ At this point you will have two options:
 
 **1. You can shift + right-click to directly save the schematic.**
 
-![Shift + Right Click](../../assets/images/tutorial/shift_click.png)
+![Shift + Right Click](../../assets/images/misc/shift_click.png)
 
 **2. You can right-click in the air again to get the scan tool GUI.**
 
-![Scan Tool GUI](../../assets/images/tutorial/scan_tool_gui.png)
+![Scan Tool GUI](../../assets/images/gui/scan_tool_gui.png)
 
 Here you will be able to see the coordinates for the scan you just did and can change them. You will also be able to give your scan a name. Use the green arrow if you are ready to save your scan or the red X to cancel the GUI and start over.  
 

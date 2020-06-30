@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Ranger in Training
 layout: default
 ---
 # Ranger in Training

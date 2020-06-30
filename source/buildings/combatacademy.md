@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Combat Academy
 layout: default
 ---
 # Combat Academy
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>combatacademy</recipe>
 </div>
-
-## About the Combat Academy
 
 ### Note: The Combat Academy cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../../source/buildings/university) .
 <br> 

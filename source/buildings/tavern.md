@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Tavern
 layout: default
 ---
 # Tavern
@@ -9,8 +9,6 @@ layout: default
     <hr />
     <recipe>tavern</recipe>
 </div>
-
-## About the Tavern
 
 The Tavern is like a [Citizen's Hut](../../source/buildings/citizenhut) in that it houses citizens, however, the Tavern houses four instead of one and can't be upgraded to house more. Additional functionality will be added at a later date.
 

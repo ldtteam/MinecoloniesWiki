@@ -1,5 +1,5 @@
 ---
-title: Minecolonies Wiki
+title: Workers
 layout: default
 ---
 # Workers
@@ -61,4 +61,3 @@ layout: default
 #### [Mechanic](../../source/workers/mechanic)
 #### [Dyer](../../source/workers/dyer)
 #### [Enchanter](../../source/workers/enchanter)
-

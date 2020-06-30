@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Glassblower's Hut
 layout: default
 ---
 # Glassblower's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>glassblower</recipe>
 </div>
-
-## About the Glassblower's Hut
 
 ### Note: The Glassblower's Hut cannot be built until you have a level 3 [Smeltery](../../source/buildings/smeltery) (or three level 1 Smelteries, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

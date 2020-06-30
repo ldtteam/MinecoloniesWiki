@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Sawmill
 layout: default
 ---
 # Sawmill
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>sawmill</recipe>
 </div>
-
-## About the Sawmill
 
 ### Note: The Sawmill cannot be built until you have a level 3 [Lumberjack's Hut](../../source/buildings/lumberjack) (or three level 1 Lumberjack's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

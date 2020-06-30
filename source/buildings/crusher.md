@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Crusher's Hut
 layout: default
 ---
 # Crusher's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>crusher</recipe>
 </div>
-
-## About the Crusher's Hut
 
 ### Note: The Crusher's Hut cannot be built until you have a level 1 [Stonemason's Hut](../../source/buildings/stonemason) and have finished the research in the [University](../../source/buildings/university).
 <br>

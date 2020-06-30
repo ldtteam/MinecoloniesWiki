@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Horizontal Barrel
 layout: default
 ---
 # Horizontal Barrel  
@@ -10,11 +10,9 @@ layout: default
 </div>
 <br>
 
-## The Block
-
 The horizontal barrel is a decoration.
 <br>
 
-## The Use
+## Using the Horizontal Barrel
 
 Horizontal barrels are decorations and have no purpose. They are used in the Tavern schematics.

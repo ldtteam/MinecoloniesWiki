@@ -1,5 +1,5 @@
 ---
-title: MineColonies Wiki
+title: Sifter's Hut
 layout: default
 ---
 # Sifter's Hut
@@ -18,8 +18,6 @@ layout: default
     <hr />
     <recipe>sifter</recipe>
 </div>
-
-## About the Sifter's Hut
 
 ### Note: The Sifter's Hut cannot be built until you have a level 3 [Fisherman's Hut](../../source/buildings/fisherman) (or three level 1 Fisherman's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>

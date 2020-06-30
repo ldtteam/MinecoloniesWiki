@@ -1,8 +1,8 @@
 ---
-title: MineColonies Wiki
+title: Timber Framed Blocks
 layout: default
 ---
-# Timber Frames
+# Timber Framed Blocks
 
 <div class="infobox box text-center">
     <recipe>timberframeplain</recipe>
@@ -16,14 +16,11 @@ layout: default
 </div>
 <br>
 
-
-## The Blocks
-<br>
-The Timber Framed Blocks are new blocks added with Structurize. The Timber Framed Blocks come in various wood frames, as seen in the first recipe, surrounding not only wood centers but also cactus, cobblestone, stone, paper and bricks. (The outside frames are only in wood and cactus.) 
+Timber framed blocks are blocks added with Structurize. Timber framed blocks come in various wood frames, as seen in the first recipe, surrounding not only wood centers but also cactus, cobblestone, stone, paper and bricks. (The outside frames are only in wood and cactus.) 
 
 <br>
 
-For the rest of the variants you just have to put a version of the Timberframe into the crafting table until you get the version you want. The crafting starts with the plain version and at the end becomes the plain version again, so if you have the wrong kind of Timber Framed Block you can easily start over again until you get the one you want. (Shown above in the recipes below the first with every kind of wooden frame.)
+For the rest of the variants you need to put a timber framed block into the crafting table until you get the version you want. The crafting starts with the plain version and at the end becomes the plain version again, so if you have the wrong kind of timber framed block you can easily start over again until you get the one you want. (Shown above in the recipes below the first with every kind of wooden frame.)
 
 <br>
 
@@ -31,9 +28,9 @@ For the rest of the variants you just have to put a version of the Timberframe i
 
 <br>
 
-## The Use
+## Using Timber Framed Blocks
 
-To use the Timber Framed Blocks simply put them where you want them, however, they are directional, meaning they change orientation depending on how you place them. 
+Timber framed blocks are a decoration. Simply put them where you want them, however, they are directional, meaning they change orientation depending on how you place them. 
 
-<img src="../../assets/images/deco/plain_timberframes.png" alt="Plain Timberframes" />
-<img src="../../assets/images/deco/TimberedFrames.png" alt="Timbered Frames" />
+<img src="../../assets/images/items/plain_timberframes.png" alt="Plain Timberframes" />
+<img src="../../assets/images/items/TimberedFrames.png" alt="Timbered Frames" />
