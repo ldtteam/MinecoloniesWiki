@@ -22,4 +22,4 @@ The citizen saturation system is between 0-10. If it's 0, the citizen won't leve
 
 Every time a citizen goes to sleep (starts the walk back to their [Citizen's Hut](../../source/buildings/citizenhut) or [Tavern](../../source/buildings/tavern)), they will decrease their saturation by 0.2 times their worker hut level. They will also decrease their saturation while working.
 
-- **Note:** When a citizen's hunger level gets to 0, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in chat that you build them a Restaurant or provide them with food manually.
+**Note:** When a citizen's hunger level gets to 0, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in chat that you build them a Restaurant or provide them with food manually.

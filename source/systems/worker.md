@@ -4,7 +4,7 @@ layout: default
 ---
 # Worker System
 
-<p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b>Rain, snow, nighttime, or if a citizen died yesterday (in-game time) will make your citizens stop working!</b><img src="../../assets/images/misc/Sleep.png" alt="Sleep"></p>
+<p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b>Rain, snow, nighttime, or if a citizen died yesterday (in-game time) will make your citizens stop working!</b></p>
 
 ## Workers' Skill Levels
 
