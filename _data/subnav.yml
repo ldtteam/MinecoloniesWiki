@@ -37,8 +37,8 @@ subnav:
         url: source/items/barrel_horizontal
       - page: Vertical Barrel
         url: source/items/barrel_vertical
-      - page: Build Tool
-        url: source/items/buildtool
+      - page: Building Tool
+        url: source/items/buildingtool
       - page: Calipers
         url: source/items/calipers
       - page: Clipboard

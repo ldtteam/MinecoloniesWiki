@@ -36,5 +36,5 @@ build:
   - button: Upgrade
     content: When you are ready to upgrade to the next level. Upgrading will come with benefits, like more furnaces for a Smelter to use (for example).
   - button: Deconstruct
-    content: To deconstruct the building. After the Builder is done breaking the building, you will get the building's hut block, which will keep its current level. This is so you can place it somewhere else using the [build tool](../../source/items/buildtool).
+    content: To deconstruct the building. After the Builder is done breaking the building, you will get the building's hut block, which will keep its current level. This is so you can place it somewhere else using the [building tool](../../source/items/buildingtool).
     
