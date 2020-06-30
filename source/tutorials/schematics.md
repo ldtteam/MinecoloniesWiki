@@ -188,6 +188,8 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
   <li>Use unobtainable items in builds (no command blocks, petrified wood, infested blocks, or mob heads (including player heads))</li>
   <li>Change someone else's style (officially) unless specifically asked to do so</li>
 
+<br>
+
 ## Additional Information
 
 #### How to override some built-in schematics?
