@@ -13,7 +13,7 @@ subnav:
         url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
-      - page: Servers
+      - page: Server Information
         url: source/tutorials/serverinfo
   - title: Systems
     subitems:
