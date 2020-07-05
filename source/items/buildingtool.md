@@ -59,7 +59,7 @@ To place a worker hut or a building from the mod, you first need to have the hut
 - The green check mark is for when you are done and want to commit to placing it.
 - The red X is to cancel the whole process.
 
-- **Note:** When in Creative Mode, you will also see in the lower right the Paste options. If you click one of these, the structure will be instantly pasted into the world without your [Builder](../../source/workers/builder) needing to build it.
+- **Note:** When in Creative Mode, you will also see in the lower right the Paste options. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/substitutionblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it.
 
 <br>
 
