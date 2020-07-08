@@ -19,9 +19,13 @@ layout: default
     <div class="col">
       <p class="traitp">Adaptability</p>
       <p class="traits">Stamina</p>
-      <p><a href="../buildings/guardtower">Guard Tower</a><b> / </b><a href="../buildings/barracks">Barracks</a></p>
+      <p><a href="../buildings/guardtower">Guard Tower</a><b> / </b><a href="../buildings/barrackstower">Barracks Tower</a></p>
     </div>
   </div>
 </div>
 
-The Guard is the protecting force for your colony. As long as you provide the Guard with a bow or a sword (depending on what mode you set them to), the Guard will protect your colony day and night. Guards also use armor.
+Guards are the protecting force for your colony. As long as you provide a Guard with a weapon, they will protect your colony day and night. 
+
+There are two types of Guards: Knights and Rangers. Knights use swords, while Rangers use bows. (Rangers don't require arrows to shoot.) You can set the type of Guard in the [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower) GUI.
+
+Guards will use armor when provided with some, and (if they're a Knight) will use a shield as well.
