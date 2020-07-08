@@ -10,7 +10,7 @@ layout: default
     <recipe>substitutionblock</recipe> - <recipe>solidsubblock</recipe>
 </div>
 
-The placeholder blocks (also called substiution blocks) are tan and brown. The tan block is the placeholder block, and the brown is the solid placeholder block. Each serves its own function. 
+The placeholder blocks (also called substitution blocks) are tan and brown. The tan block is the placeholder block, and the brown is the solid placeholder block. Each serves its own function. 
 
 ## Using the Placeholder Blocks
 
