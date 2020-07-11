@@ -22,7 +22,13 @@ layout: default
 ### Note: The Hospital cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>
 
-The Hospital is where injured or sick citizens go when they need healing. The Healer will heal them with various items.
+The Hospital is where injured or sick citizens go. The Healer will heal them with various items. The possible diseases can be changed in the config file, however, these are the defaults:
+
+| Disease | Items Needed to Cure |
+| ------- | -------------------- |
+| Influenza (the flu) | Carrot and Potato |
+| Measles | Dandelion, Kelp, and Poppy |
+| Smallpox | Honeycomb and Golden Apple |
 
 The higher the level of the Hospital, the more people can be healed at a time. So:
 
