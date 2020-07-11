@@ -21,4 +21,10 @@ layout: default
   </div>
 </div>
 
-The Healer is a specialist of your colony. The Healer will heal your citizens when they become ill or injured. The Healer will use various items to heal citizens, like carrots and potatoes; golden apples and honeycombs; or kelp, dandelions, and poppies.
+The Healer is a specialist of your colony. The Healer will heal your citizens when they become ill or injured and will use various items. The possible diseases can be changed in the config file, however, these are the defaults:
+
+| Disease | Items Needed to Cure |
+| ------- | -------------------- |
+| Influenza (the flu) | Carrot and Potato |
+| Measles | Dandelion, Kelp, and Poppy |
+| Smallpox | Honeycomb and Golden Apple |
