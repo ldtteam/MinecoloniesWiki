@@ -21,6 +21,6 @@ layout: default
   </div>
 </div>
 
-The Stone Smelter is a very important addition to help automate your colony. The Stone Smelter will use their furnace(s) to smelt cobblestone into stone, clay into terracotta, and other smelts when they receive a request from another worker. 
+The Stone Smelter is a very important addition to help automate your colony. The Stone Smelter will use their furnace(s) to smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, and sandstone into smooth sandstone when they receive a request from another worker and have the needed materials.
 
 The Stone Smelter will require fuel to use in their furnace(s).
