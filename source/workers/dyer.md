@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Dyer is part of the production of the your colony. The Dyer will craft dyes and dyed items. The Dyer will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials. (The Dyer automatically knows the recipe to make green dye from cacti, however.)
+The Dyer is part of the production of the your colony. The Dyer will craft dyes and dyed items, as well as red nether bricks. The Dyer will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials. (The Dyer automatically knows the recipe to make green dye from cacti, however.)
 
 **Note:** The Dyer can only learn a set number of recipes based on their hut level. So:
 
