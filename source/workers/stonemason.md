@@ -16,12 +16,12 @@ layout: default
     <div class="col">
       <p class="traitp">Creativity</p>
       <p class="traits">Dexterity</p>
-      <p><a href="../buildings/stonemason">StoneMason</a></p>
+      <p><a href="../buildings/stonemason">Stonemason's Hut</a></p>
     </div>
   </div>
 </div>
 
-The Stonemason is part of your colony’s crafting line. The Stonemason can craft items and blocks made entirely out of cobblestone, stone, andesite, diorite, granite, sandstones, and/or ores (no quartz, purpur, endstone, or ingots). The Stonemason will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Stonemason is part of your colony’s crafting line. The Stonemason can craft items and blocks made entirely out of cobblestone, stone, andesite, diorite, granite, prismarine, sandstones, and/or ores (no quartz, purpur, endstone, or ingots). The Stonemason will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
 **Note:** The Stonemason can only learn a set number of recipes based on their hut level. So:
 
