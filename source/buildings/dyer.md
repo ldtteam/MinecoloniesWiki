@@ -24,8 +24,6 @@ layout: default
 
 The Dyer's Hut is where the Dyer will craft dyes and dye other items (except for concrete). The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows the recipe to make green dye from cacti and red sand from sand and cobblestone, but you must teach it the recipes for the other dyes and almost all dyed items except for colored concrete powder.
 
-Additionally, the dyer can make red nether brick. 
-
 
 **Hint:** The number of recipes you can teach the Dyer's Hut doubles per building level. So:
 
