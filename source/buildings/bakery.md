@@ -48,7 +48,7 @@ When accessing the Bakery block by right-clicking on it, you will see a GUI with
 
 On page two of the GUI, you will see a list of recipes that the Baker is able to make. Just click to change the ones you want the Baker to bake to on and they will begin making those items as long as they receive the required ingredients. (The black box at the top is to search for recipes.) The bakery already knows the recipes for bread, cakes, cookies, and pumpkin pies without you having to teach them. 
 
-You can still teach the baker those recipes, to enable them to be made on demand, such as when the builder needs Cake for a decoration. 
+You can still teach the Baker those recipes to enable them to be made on demand, such as when the [Builder](../../source/workers/builder) needs cake as a decoration. 
 
 **Note:** If you have a mod that changes the vanilla recipes, this won't affect the Baker, as the recipes are hard-coded.
  
