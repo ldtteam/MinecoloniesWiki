@@ -29,6 +29,6 @@ We also include specialized buildings such as the [Warehouse](../../Minecolonies
 
 ---
 
-MineColonies is a free and open source mod developed by Let's Dev Together (LDT), a non-profit community. The source code is available on [GitHub](https://github.com/ldtteam/minecolonies). Our developers are a hard-working, well-integrated coding team, continuously working to add more content to our mod and make the MineColonies experience even greater! We are always looking for more people to contribute to our mod, however, whether as a coder, builder, artist, or simply supporting us on [Patreon](https://www.patreon.com/minecolonies)!
+MineColonies is a free and open source mod developed by Let's Dev Together (LDT), a non-profit community. The source code is available on [GitHub](https://github.com/ldtteam/minecolonies). Our developers are a hard-working, well-integrated coding team, continuously working to add more content to our mod and make the MineColonies experience even greater. We are always looking for more people to contribute to our mod, however, whether as a coder, builder, artist, or simply supporting us on [Patreon](https://www.patreon.com/minecolonies)!
 
-Found any bugs? Report it as an [issue](https://github.com/ldtteam/minecolonies/issues/new) to help us give you the best gaming experience. If you require any help, or just want to join in the conversation, check us out on [Discord](https://discord.com/minecolonies)!
+Found any bugs? Report it as an [issue](https://github.com/ldtteam/minecolonies/issues/new) to help us give you the best gaming experience. If you require any help, or just want to join in the conversation, check us out on [Discord](https://discord.minecolonies.com)!
