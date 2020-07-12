@@ -22,7 +22,7 @@ layout: default
 ### Note: The Plantation cannot be built until you have a level 3 [Farm](../../source/buildings/farm&field) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus. The planter will also craft paper, books and sugar. 
+The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus.
 
 The Plantation's level determines how many crops the Planter can plant at a time.
 
