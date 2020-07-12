@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Mechanic is part of the supply production of your colony. The Mechanic will craft redstone items, rails, minecarts, sea lanterns, compasses, clocks, and many other items that no other crafters can make. The Mechanic will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Mechanic is part of the supply production of your colony. The Mechanic will craft redstone items, rails, minecarts, sea lanterns, torches, compasses, clocks, and many other items that no other crafters can make. The Mechanic will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
 **Note:** The Mechanic can only learn a set number of recipes based on their hut level. So:
 
