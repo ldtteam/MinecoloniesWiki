@@ -22,7 +22,7 @@ layout: default
 ### Note: The Stone Smeltery cannot be built until you have a level 3 [Smeltery](../../source/buildings/smeltery) (or three level 1 Smelteries, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, and clay blocks into terracotta. The Stone Smelter will only do this if they receive a request from another worker and they have the needed materials/fuel.
+The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, and clay blocks into terracotta. The stone smelter can also process all the smooth stone smelting, and recently learned how to pop chorus fruit for the stonemason. The Stone Smelter will only do this if they receive a request from another worker and they have the needed materials/fuel.
 
 **Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will be able to use. So:
 
