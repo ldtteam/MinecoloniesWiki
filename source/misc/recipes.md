@@ -47,8 +47,8 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 ## Hut Blocks
 
 **Notes**  
-The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after you have placed the Supply Ship/Camp.
-The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the Barracks instead.
+The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after you have placed the [Supply Ship/Camp](../../source/items/supplycampandship).
+The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the [Barracks](../../source/buildings/barracks) instead.
 
 | Name                                               | Ingredients                                          | Recipe                         |
 | -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
