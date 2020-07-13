@@ -22,7 +22,7 @@ layout: default
 ### Note: The Dyer cannot be built until you have a level 3 [Flower Shop](../../source/buildings/flowershop) (or three level 1 Flower Shops, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Dyer's Hut is where the Dyer will craft dyes and dye other items (except for concrete). The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows the recipe to make green dye from cacti, but you must teach it the recipes for the other dyes and the dyed items.
+The Dyer's Hut is where the Dyer will craft dyes and dye other items, including red nether bricks. They won't dye concrete or concrete powder, though. The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows the recipes to make green dye and red sand, but you must teach it the recipes for the other dyes and the dyed items.
 
 **Hint:** The number of recipes you can teach the Dyer's Hut doubles per building level. So:
 

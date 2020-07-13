@@ -34,6 +34,18 @@ The Plantation's level determines how many crops the Planter can plant at a time
 | 4 | 16 |
 | 5 | 20 |
 
+The Planter can also craft paper, books, and sugar. The Planter will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+
+**Note:** The Planter can only learn a certain amount of recipes per their hut level. 
+
+| Building Level | Number of Recipes |
+| :-----: | :-----: |
+| 1 | 10 | 
+| 2 | 20 |
+| 3 | 40 |
+| 4 | 80 | 
+| 5 | 160 | 
+
 <br>
 
 ## Plantation GUI

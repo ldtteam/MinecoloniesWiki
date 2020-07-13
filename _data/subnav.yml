@@ -13,7 +13,7 @@ subnav:
         url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
-      - page: Servers
+      - page: Server Information
         url: source/tutorials/serverinfo
   - title: Systems
     subitems:
@@ -53,6 +53,8 @@ subnav:
         url: source/items/multipiston
       - page: Paper Walls
         url: source/items/paperwalls
+      - page: Placeholder Blocks
+        url: source/items/placeholderblocks
       - page: Postbox
         url: source/items/postbox
       - page: Rack
@@ -65,8 +67,6 @@ subnav:
         url: source/items/shingles
       - page: Stash
         url: source/items/stash
-      - page: Substitution Blocks
-        url: source/items/substitutionblocks
       - page: Supply Camp and Supply Ship
         url: source/items/supplycampandship
       - page: Timber Framed Blocks

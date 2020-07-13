@@ -26,7 +26,7 @@ Once you have a structure or area you want to scan to have your Builder build, y
 
 ![TestBuilding](../../assets/images/tutorial/testbuilding.png)
 
-Take your [Scan Tool](../items/scantool) and left-click the lowest left block of the area and then place a block (it can be a [placeholder block](../../source/items/substitutionblocks) in the top right corner and right-click on it.
+Take your [Scan Tool](../items/scantool) and left-click the lowest left block of the area and then place a block (it can be a [placeholder block](../../source/items/placeholderblocks) in the top right corner and right-click on it.
 
 ![ScanPoint1](../../assets/images/tutorial/scan1.png)
 
@@ -176,8 +176,8 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
   <li>Make all levels of a hut have the same footprint for x, y, and z</li>
   <li>Place the hut block in the same location with the same rotation</li>
   <li>Make sure all chests and [racks](../../source/items/rack) are in the same location through all levels</li>
-  <li>Use [solid placeholders](../../source/items/substitution blocks) at or below ground level</li>
-  <li>Use [light placeholders](../../source/items/substitution blocks) where you want to keep any existing block (including from level to level), like the [Barracks Towers](../../source/buildings/barrackstower) in the [Barracks](../../source/buildings/barracks) schematic</li>
+  <li>Use [solid placeholder blocks](../../source/items/placeholderblocks) at or below ground level</li>
+  <li>Use [light placeholder blocks](../../source/items/placeholderblocks) where you want to keep any existing block (including from level to level), like the [Barracks Towers](../../source/buildings/barrackstower) in the [Barracks](../../source/buildings/barracks) schematic</li>
   <li>Use only vanilla blocks or Structurize blocks (officially)</li>
   <li>Use Books and Quills instead of blank books</li>
   <li>If building upgradable deco, add the deco controller with the name of your deco item, LunaDragonStar (the schematics admin) will fix the pathing that goes in it to match where she puts it in the files</li>
@@ -187,8 +187,7 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 <ul>
   <li>Use unobtainable items in builds (no command blocks, petrified wood, infested blocks, or mob heads (including player heads))</li>
   <li>Change someone else's style (officially) unless specifically asked to do so</li>
-
-<br>
+</ul>
 
 ## Additional Information
 

@@ -23,7 +23,7 @@ layout: default
 
 The Planter is part of the supply production of your colony. The Planter will plant and harvest sugar cane, bamboo, or cactus.
 
-The Planter can also learn the recipes for paper, books, and sugar. The Planter will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Planter can also craft paper, books, and sugar. The Planter will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
 **Note:** The Planter can only learn a set number of recipes based on their hut level. So:
 
