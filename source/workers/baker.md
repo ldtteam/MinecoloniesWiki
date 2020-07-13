@@ -22,3 +22,5 @@ layout: default
 </div>
 
 The Baker is an important part of the food production of your colony. The Baker will craft bread, cakes, pies, and/or cookies to provide for your workers, if they have the needed ingredients. The Baker will bake bread in the furnace and will bake cakes, pies, and cookies in a crafting table.
+
+You may want to teach the Baker those recipes to enable them to be made on demand, like if the [Builder](../../source/workers/builder) needs cake as a decoration. 
