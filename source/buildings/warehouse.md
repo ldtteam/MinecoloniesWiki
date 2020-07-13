@@ -59,7 +59,7 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
   </div><br>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Block of Emerald: </strong>You can increase the max amount of stacks in each rack by pressing this button when you have one block of emerald in your inventory. This can only be done when the warehouse is at level 5.</li><br>
+      <li><strong>Block of Emerald: </strong>You can increase the max amount of stacks in each rack by pressing this button. This can only be done when the Warehouse is at level 5 and you have at least one block of emerald in your inventory.</li><br>
       <li><strong>Sort: </strong>The sort option is available when the Warehouse reaches level 3. It sorts and stacks all the items in the racks.
     </ul>
     
