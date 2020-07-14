@@ -65,7 +65,7 @@ When hiring a worker, you will see the best traits for the worker to have in ord
 
 There is a formula for this: Primary Trait * 2 + Secondary Trait * 1 = Rate of Leveling Up.
 
-For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29x2)+(16x1) = 74.
+For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29x2)+(16x1)=74.
 
 That means that this worker will be able to level up *74* times faster!
 
