@@ -6,8 +6,8 @@ layout: recipes
 
 Listed in this page are the current crafting recipes available in MineColonies/Structurize. This will be updated as any craftables are added and made public.
 
-**Notes:**  
-The building tool used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
+**Note:**  
+The [building tool](../../source/items/buildingtool) used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
 
 ## Items and Blocks
 
