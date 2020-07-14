@@ -5,9 +5,9 @@ layout: default
 
 # Troubleshooting
 
-### Before you start troubleshooting:
+### <a id="alphas">Before</a> you start troubleshooting:
 
-  Always check if <a id="alphas">updates</a> for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. Note that MineColonies-1.15.2-0.11.958-universal or later requires Forge 31.2.8 or later. (Alpha does not mean it's unstable, it just means it's a relatively small release.)
+  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. Note that MineColonies-1.15.2-0.11.958-universal or later requires Forge 31.2.8 or later. (Alpha does not mean it's unstable, it just means it's a relatively small release.)
   
 ## CHECKLIST: Identifying why a citizen is not working
 
@@ -17,7 +17,7 @@ layout: default
   4. Are there raiders (barbarians, pirates, vikings, egyptian raiders) still around? Citizens will hide during raids until all attackers are killed.
   5. Does their work hut have a low building level? Does the worker have low XP? Then they will often idle in between actually working until their personal XP improves and/or their workh ut is upgraded.
   6. Is their hut PAUSED? Work huts now have a pause button. Sometimes players forget to unpause.
-  7. Is their hunger level low? Citizens won't work while hungry. Give them food, and if you have a [Restaurant](../../source/buildings/restaurant), check that it is stocked. If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
+  7. Is their hunger level low? Citizens won't work while hungry. Give them food, and if you have a [Restaurant](../../source/buildings/restaurant), check that it is stocked and you have hired a [cook](../../source/workers/cook). If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
   8. Do they have any open requests? They might need a tool or other item to continue their work.
   10. Do they have tools of the correct [level](../../source/systems/worker)? 
   11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
@@ -32,7 +32,7 @@ If none of these apply, go on to the next troubleshooting checklists.
   5. [Baker](../../source/workers/baker): Set which fuel you want them to use and which recipe you want them to bake.
   6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use and which ore you want them to smelt.
   7. [Farmer](../../source/workers/farmer): Assign the farmer to a field. Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
-  8. [Composter](../../source/workers/composter): Set which items you want them to convert into compost.
+  8. [Composter](../../source/workers/composter): Set which items you want them to convert into [compost](../../source/items/compost).
   9. Crafter ([Miller](../../source/workers/miller), [Blacksmith](../../source/workers/blacksmith), [Mechanic](../../source/workers/mechanic), etc): The request for items must be made after the crafter is hired and the colony must have a [Deliveryman](../../source/workers/deliveryman). Cancel the request at the original NPC to generate a new request, or make a new request from the [Postbox](../../source/items/postbox). Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
   10. [Stone Smelter](../../source/workers/stonesmelter): Set which fuel you want them to use. (They know their recipes already.)  
 
@@ -43,7 +43,7 @@ If none of these apply, go on to the next troubleshooting checklists.
       `enableInDevelopmentFeatures=false`
       * Change the false to true
       * Restart your game
-      * Watch the name area above the worker's head. The information at the end will be important for devs to troubleshoot issues or assist you on the [Discord](discord.minecolonies.com) help channel.
+      * Watch the name area above the worker's head. The information at the end will be important for devs/support staff to troubleshoot issues or assist you on the [Discord](discord.minecolonies.com) help channels.
   2. Nudge worker by walking into them, off the block they are standing on or out a door.
   3. Recall worker to their work hut.
   4. Make sure the path to their worksite is clear of obstructions.
@@ -55,8 +55,8 @@ If none of these apply, go on to the next troubleshooting checklists.
   10. Empty out the worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
   11. Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
   12. Punch them with an empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire them.
-  13. Use the /mc colony requestsystem-reset [command](../../source/systems/command)
-  14. Repair their work hut. Some workers will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, racks, and compost [barrels](../../source/items/barrel). If you broke any of those, create a repair build order for the building.
+  13. Use the /mc colony requestsystem-reset [command](../../source/systems/command).
+  14. Repair their work hut. Some workers will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, [racks](../../source/items/rack), and [barrels](../../source/items/barrel). If you broke any of those, create a repair build order for the building.
   15. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
 
 ## Missing Graphics and Issues with Build Tool Preview
@@ -64,4 +64,4 @@ If none of these apply, go on to the next troubleshooting checklists.
   As there is nothing that we can do, you can either live with missing graphics, or you will have to deactivate OptiFine.
 
 ## Crashes when Placing Structures
-  If your game crashes placing a structure (e.g. a supply camp), your MineColonies and Structurize versions are probably incompatible. Update both to the latest <a href="#alphas">alphas</a>.
+  If your game crashes placing a structure (e.g. a [supply camp or ship](../../source/items/supplycampandship)), your MineColonies and Structurize versions are probably incompatible. Update both to the latest <a href="#alphas">alphas</a>.
