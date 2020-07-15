@@ -13,8 +13,6 @@ subnav:
         url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
-      - page: Server Information
-        url: source/tutorials/serverinfo
   - title: Systems
     subitems:
       - page: Colony Border System

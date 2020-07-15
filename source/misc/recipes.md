@@ -6,8 +6,8 @@ layout: recipes
 
 Listed in this page are the current crafting recipes available in MineColonies/Structurize. This will be updated as any craftables are added and made public.
 
-**Notes:**  
-The building tool used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
+**Note:**  
+The [building tool](../../source/items/buildingtool) used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
 
 ## Items and Blocks
 
@@ -23,21 +23,21 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks            | <recipe>barrel_vertical</recipe> |
 | [Building Tool](../../source/items/buildingtool) | Cobblestone + Stick                     | <recipe>buildingtool</recipe>   |
 | [Clipboard](../../source/items/clipboard)     | Stick + Building Tool + Leather            | <recipe>clipboard</recipe>      |
-| [Compost Block](../../source/items/compost)   | Dirt + Compost                             | <recipe>compost</recipe>        |
+| [Compost Block](../../source/items/compost)   | Dirt + Compost                             | <recipe>compostblock</recipe>   |
 | [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
 | [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Building Tool + String | <recipe>floatingcarpet</recipe> |
 | [Multi-piston](../../source/buildings/multipiston) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multiblock</recipe> |
-| [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwalls</recipe>     |
+| [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwall</recipe>      |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
 | [Rack](../../source/items/rack)               | **Any** Planks + Iron Bars                 | <recipe>rack</recipe>           |
 | [Resource Scroll](../../source/items/resourcescroll) | Stick + Building Tool + Leather     | <recipe>resourcescroll</recipe> |
 | [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | <recipe>scantool</recipe>       |
 | [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | <recipe>shingleclay</recipe>    |
 | [Shingles Slab](../../source/items/shingles)  | Brick + Stick                              | <recipe>shingleslab</recipe>    |
-| [Stash](../../source/items/stash)             | **Any** Planks + Building Tool + Chests    | <recipe>stash</recipe>          |
-| [Solid Substitution Block](../../source/items/substitutionblocks) | **Any** Logs + Scan Tool | <recipe>solidsubblock</recipe> |
-| [Substitution Block](../../source/items/substitutionblocks) | **Any** Planks + Scan Tool   | <recipe>subblock</recipe>       |
+| [Stash](../../source/items/stash)             | **Any** Planks + Building Tool + Chests    | <recipe>stashbox</recipe>       |
+| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool     | <recipe>substitutionblock</recipe> |
+| [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | <recipe>solidsubblock</recipe> |
 | [Supply Camp](../items/supplycampandship)     | Chests                                     | <recipe>supplycamp</recipe>     |
 | [Supply Ship](../items/supplycampandship)     | **Any** Boats                              | <recipe>supplyship</recipe>     |
 | [Timber Framed Blocks](../../source/items/timberframes) | **Primary** Plank + **Secondary** Plank + Building Tool | <recipe>timberframeplain</recipe>      |
@@ -47,8 +47,8 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 ## Hut Blocks
 
 **Notes**  
-The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after you have placed the Supply Ship/Camp.
-The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the Barracks instead.
+The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after you have placed the [Supply Ship/Camp](../../source/items/supplycampandship).
+The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the [Barracks](../../source/buildings/barracks) instead.
 
 | Name                                               | Ingredients                                          | Recipe                         |
 | -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
