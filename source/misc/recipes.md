@@ -29,6 +29,8 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Building Tool + String | <recipe>floatingcarpet</recipe> |
 | [Multi-Piston](../../source/buildings/multipiston) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multipiston</recipe> |
 | [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwall</recipe>      |
+| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool     | <recipe>placeholderblock</recipe> |
+| [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | <recipe>solidplaceholderblock</recipe> |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
 | [Rack](../../source/items/rack)               | **Any** Planks + Iron Bars                 | <recipe>rack</recipe>           |
 | [Resource Scroll](../../source/items/resourcescroll) | Stick + Building Tool + Leather     | <recipe>resourcescroll</recipe> |
@@ -36,8 +38,6 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | <recipe>shingleclay</recipe>    |
 | [Shingle Slabs](../../source/items/shingles)  | Brick + Stick                              | <recipe>shingleslab</recipe>    |
 | [Stash](../../source/items/stash)             | **Any** Planks + Building Tool + Chests    | <recipe>stash</recipe>          |
-| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool     | <recipe>placeholderblock</recipe> |
-| [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | <recipe>solidplaceholderblock</recipe> |
 | [Supply Camp](../items/supplycampandship)     | Chests                                     | <recipe>supplycamp</recipe>     |
 | [Supply Ship](../items/supplycampandship)     | **Any** Boats                              | <recipe>supplyship</recipe>     |
 | [Timber Framed Blocks](../../source/items/timberframes) | **Primary** Plank + **Secondary** Plank + Building Tool | <recipe>timberframeplain</recipe> |
