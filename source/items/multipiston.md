@@ -6,7 +6,7 @@ layout: default
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/multipiston.png" alt="Multi-Piston"></p>
-    <recipe>multiblock</recipe>
+    <recipe>multipiston</recipe>
 </div>
 <br>
 

@@ -6,7 +6,7 @@ layout: default
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/stashbox.png" alt="Stashbox"></p>
-    <recipe>stashbox</recipe>
+    <recipe>stash</recipe>
 </div>
 <br>
 

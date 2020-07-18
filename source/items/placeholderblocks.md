@@ -7,7 +7,7 @@ layout: default
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Placeholder Block">
     <img src="../../assets/images/items/solidsubstitutionblock.png" alt="Solid Placeholder Block"></p>
-    <recipe>substitutionblock</recipe> - <recipe>solidsubblock</recipe>
+    <recipe>placeholderblock</recipe> - <recipe>solidplaceholderblock</recipe>
 </div>
 
 The placeholder blocks (also called substitution blocks) are tan and brown. The tan block is the placeholder block, and the brown is the solid placeholder block. Each serves its own function. 
