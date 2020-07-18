@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The Ancient Tome is a glowing book that can be dropped by raiders (barbarians, pirates, vikings, egyptian raiders, etc) during raids. They are a fairly rare drop though, so don't expect one to drop during every raid. The Ancient Tome cannot be crafted and is only available as a drop. 
+The Ancient Tome is a glowing book that can be dropped by raiders (barbarians, pirates, vikings, egyptian raiders, etc) during raids.  The Ancient Tome cannot be crafted and is only available as a drop. 
 <br>
 
 ## Using the Ancient Tome
