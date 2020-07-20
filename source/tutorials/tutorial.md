@@ -155,6 +155,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li><br>
+     <li><strong>Citizen Recruitment-</strong>Has no purpose (recruiting has been moved to the [tavern](../../source/buildings/tavern)).<br>
      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li>
