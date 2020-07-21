@@ -21,7 +21,7 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Barrel](../../source/items/barrel)           | **Any** Planks + Building Tool + Dirt + Iron Ingot | <recipe>barrel</recipe> |
 | [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks        | <recipe>barrel_horizontal</recipe> |
 | [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks            | <recipe>barrel_vertical</recipe> |
-| [Building Tool](../../source/items/buildingtool) | Cobblestone + Stick                     | <recipe>buildingtool</recipe>   |
+| [Build Tool](../../source/items/buildtool)    | Cobblestone + Stick                        | <recipe>buildtool</recipe>      |
 | [Clipboard](../../source/items/clipboard)     | Stick + Building Tool + Leather            | <recipe>clipboard</recipe>      |
 | [Compost Block](../../source/items/compost)   | Dirt + Compost                             | <recipe>compostblock</recipe>   |
 | [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
