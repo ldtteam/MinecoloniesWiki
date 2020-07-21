@@ -35,8 +35,8 @@ subnav:
         url: source/items/barrel_horizontal
       - page: Vertical Barrel
         url: source/items/barrel_vertical
-      - page: Building Tool
-        url: source/items/buildingtool
+      - page: Build Tool
+        url: source/items/buildtool
       - page: Calipers
         url: source/items/calipers
       - page: Clipboard
@@ -159,7 +159,7 @@ subnav:
         url: source/buildings/builder
       - page: Chicken Herder's Hut
         url: source/buildings/chickenherder
-      - page: Citizen's Hut
+      - page: Citizen Hut
         url: source/buildings/citizenhut
       - page: Combat Academy
         url: source/buildings/combatacademy
