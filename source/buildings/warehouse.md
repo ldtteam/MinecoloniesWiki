@@ -32,7 +32,7 @@ The level of the Warehouse will determine how many Deliverymen will be able to u
 | 5 | 10 |  
 
 
-<strong>Note: </strong>You can only have one Warehouse per colony, unless you change this in the config file.
+### Note: You can only have one Warehouse per colony, unless you change this in the config file.
 
 ## Warehouse GUI
 

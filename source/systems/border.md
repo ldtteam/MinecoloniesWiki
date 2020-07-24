@@ -4,7 +4,7 @@ layout: default
 ---
 # Colony Border System
 
-Colonies have an area of claimed chunks (16x16 block areas) around them. Upon colony creation, a colony claims chunks in a square around it. The radius is set with the config setting *initialColonySize*. 
+Colonies have an area of claimed chunks (16x16 block areas) around them. Upon colony creation, a colony claims chunks in a square around it. The radius is set with the config setting *initialColonySize* (default 4x4 chunks). 
 
 Those claims are protected from modification through other players. See the [Colony Protection System](../../source/systems/protection) page for more information.
 

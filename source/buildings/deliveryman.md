@@ -19,7 +19,7 @@ layout: default
     <recipe>deliveryman</recipe>
 </div>
 
-The Deliveryman runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. The Deliveryman will visit one worker's hut per trip, then go back to the Warehouse.
+The Deliveryman runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse.
 
 **Note:** You must build the Warehouse to at least level 1, otherwise, the Deliveryman won't be able to do their job.
 
@@ -66,4 +66,3 @@ When accessing the Deliveryman's Hut block by right-clicking on it, you will see
   </div>
 </div>
 <br>
-
