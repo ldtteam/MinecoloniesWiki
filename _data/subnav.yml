@@ -227,9 +227,9 @@ subnav:
         url: source/buildings/warehouse
   - title: Misc
     subitems:
-      - page: Recipes
-        url: source/misc/recipes
       - page: Custom Citizen Names
         url: source/misc/customcitizennames
+      - page: Recipes
+        url: source/misc/recipes
       - page: Troubleshooting
         url: source/misc/troubleshooting

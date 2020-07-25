@@ -56,7 +56,7 @@ This is page 2 of the GUI.
         <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard to patrol, follow, or guard.</li>      
         <ul>
         <li>If you set it to Guard, you can set one area for the Guard to stay in. You can set the area by clicking <b>Set Guarding Target</b>, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
-        <li>If you set it to Follow, the Guard will follow you around as your personal bodyguard protecting you or fighting alongside you. However, if you are more than 40*Barracks Tower level blocks away from the Barracks Tower, the Guard will automatically return to their tower. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.</li>
+        <li>If you set it to Follow, the Guard will follow you around as your personal bodyguard protecting you or fighting alongside you. They will even go outside the colony when following! If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.</li>
         <li>If you set it to Patrol, you have a couple different options. </li>
         <ul>
             <li>If you set <strong>Find Patrol Target</strong> to automatically, the Guard will patrol from hut to hut and back to their tower.</li>
