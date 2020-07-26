@@ -190,7 +190,7 @@ If you try to place another Town Hall outside of your protected area, you will g
           <br>
           <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
-          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned *on* for first-time players.</li>
+          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
           <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether travelers will spawn at your <a href="../../source/buildings/tavern"> Tavern</a> (if you have one) and whether new kids will be born in your colony.</li>
           <br>
