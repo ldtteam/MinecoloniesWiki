@@ -100,6 +100,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     </ul>
   </div>
 </div>
+
 <br>
 <br>
 
