@@ -63,3 +63,15 @@ By pressing the arrow button in the top right corner of the GUI, you will be tak
       <li><strong>Sort: </strong>The sort option is available when the Warehouse reaches level 3. It sorts and stacks all the items in the racks.
     </ul>
     
+This is page three of the Warehouse GUI.
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/warehousegui3.png" class="img-fluid mx-auto" alt="Warehouse GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+      <ul>
+      <li><strong> Minimum Stock: </strong> Use this button to force the warehouse to keep a minimum stock on hand at all times. Set items will be displayed above the button.
+      </ul>
+    </div>  
+  <br>
