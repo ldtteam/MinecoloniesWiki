@@ -56,15 +56,15 @@ Page 2 of the GUI will show you the options for each research tree.
 Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game.)
 
 <br>
-
+Combat
 <img src="../../assets/images/gui/universitycombat.png" class="img-fluid mx-auto" alt="University Combat GUI Page">
 
 <br>
-
+Civilian
 <img src="../../assets/images/gui/universitycivilian.png" class="img-fluid mx-auto" alt="University Civilian GUI Page">
 
  <br>
- 
+ Technology
  <img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
  
  <br>
