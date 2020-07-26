@@ -130,7 +130,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony requestsystem-reset &lt;[colony id]&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Refreshes a specific colony's request system, making all workers resubmit requests.<br>Example:<br><code>/mc colony requestsystem-reset 1</code></td>
+      <td class="d-block d-md-table-cell">Refreshes a specified colony's request system, making all workers resubmit requests.<br>Example:<br><code>/mc colony requestsystem-reset 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony requestsystem-reset-all</code><br>Default permission level: OP</td>
@@ -189,11 +189,11 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens teleport &lt;colony id&gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Teleports a specific citizen to a given location.<br>Example:<br><code>/mc citizens teleport 1 1 -50 62 128</code></td>
+      <td class="d-block d-md-table-cell">Teleports a specified citizen to a given location.<br>Example:<br><code>/mc citizens teleport 1 1 -50 62 128</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc citizens walk &lt;colony id&gt; &lt;citizen id&gt;&lt;location (x y z)&gt;</code><br>Default permission level: ALL</td>
-      <td class="d-block d-md-table-cell">Tells a specific citizen to walk to a given location.<br>Example:<br><code>/mc citizens walk 1 1 -50 62 128</code></td>
+      <td class="d-block d-md-table-cell">Tells a specified citizen to walk to a given location.<br>Example:<br><code>/mc citizens walk 1 1 -50 62 128</code></td>
     </tr>
   </tbody>
 </table>
