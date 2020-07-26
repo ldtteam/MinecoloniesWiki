@@ -62,7 +62,7 @@ This is page three of the Restaurant GUI.
   </div>
   <div class="col-sm-12 col-md">
       <ul>
-      <li><strong> Minimum Stock: </strong> Use this button to force the Restaurant to keep a minimum stock on hand at all times. Set items will be displayed above the button.
+      <li><strong> Minimum Stock: </strong> Use this button to tell the Restaurant to request a minimum stock to keep on hand. The Cook will still give out items that are set as the minimum stock, but will request more if they no longer have enough. Set items will be displayed above the button.
       </ul>
     </div>  
   <br>
