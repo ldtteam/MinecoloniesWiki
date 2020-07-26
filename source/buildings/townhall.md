@@ -97,6 +97,7 @@ If you try to place another Town Hall outside of your protected area, you will g
       <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li>
       <br>
       <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens.</li>
+      <br>
     </ul>
     <br>  
     <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
