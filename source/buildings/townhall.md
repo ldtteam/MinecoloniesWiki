@@ -47,12 +47,12 @@ Due to the protected area of each colony, you have to carefully scout your surro
 
 **Note:** Once you place your Town Hall block this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your colony through [Commands](../systems/command). 
 
-- **Note**: You can configure your own colony area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../config/``` folder of your own world. (see Minecolonies config server section for details)
+**Note**: You can configure your own colony area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../config/``` folder of your own world. (see Minecolonies config server section for details)
 
 If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
 If you try to place another Town Hall outside of your protected area, you will get a message: <br> 
-<img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second Town Hall" />
+<img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second Town Hall"/>
 
 ## Town Hall GUI
 
@@ -68,9 +68,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what job they have.</li>
-     <br>
-     <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
+      <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what job they have.</li>
+      <br>
+      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
     </ul>
   </div>
 </div>
@@ -86,22 +86,22 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
-     <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> Page.</li><br>
-     <li><strong>Citizen Recruitment-</strong>Has no purpose. Recruiting has been moved to the <a href="../../source/buildings/tavern"> Tavern</a>.<br>
-     <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
-     <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
-     <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li>
-     <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
+      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> Page.</li><br>
+      <li><strong>Citizen Recruitment-</strong>Has no purpose. Recruiting has been moved to the <a href="../../source/buildings/tavern"> Tavern</a>.<br>
+      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
+      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
+      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li>
+      <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
     </ul>
-      
-   <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
+    <br>  
+    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
     <ul>
-     <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li><br>
-     <li><strong>Feuds-</strong>Other colonies that you have added as a feud and that have confirmed your colony as a feud as well.</li>
+      <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li>
+      <br>
+      <li><strong>Feuds-</strong>Other colonies that you have added as a feud and that have confirmed your colony as a feud as well.</li>
     </ul>
   </div>
 </div>
-
 <br>
 <br>
 
@@ -115,8 +115,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 1: </strong>Here you can type the name of the player you want to add and decide which rank you want them to be. You can choose from Officer, Friend, Neutral, or Hostile.</li><br>
-     <li><strong>Page 2: </strong>Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or a lower rank.</li>
+      <li><strong>Page 1: </strong>Here you can type the name of the player you want to add and decide which rank you want them to be. You can choose from Officer, Friend, Neutral, or Hostile.</li>
+      <br>
+      <li><strong>Page 2: </strong>Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or a lower rank.</li>
     </ul>
   </div>
 </div>  
@@ -130,8 +131,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 3: </strong>Here you can select each rank that you would like to manage.</li><br>
-     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li>
+      <li><strong>Page 3: </strong>Here you can select each rank that you would like to manage.</li>
+      <br>
+      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li> 
     </ul>
   </div>
 </div>  
@@ -145,8 +147,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul><br>
-     <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make free for interaction.</li><br>
-     <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction and can remove them.</li>
+      <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make free for interaction.</li>
+      <br>
+      <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction and can remove them.</li>
     </ul>
   </div>
 </div>
@@ -162,8 +165,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
      <br>
-     <li><strong>Page 1: </strong>When you select a citizen, their stats will appear here. You can also recall them to the Town Hall block on this page.</li><br>
-     <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skill levels.</li>
+      <li><strong>Page 1: </strong>When you select a citizen, their stats will appear here. You can also recall them to the Town Hall block on this page.</li>
+      <br>
+      <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skill levels.</li>
     </ul>
   </div>
 </div>
@@ -179,13 +183,14 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
     <br>
-     <li><strong>Page 1: </strong>There are two buttons here:</li>
-       <ul>
-       <br>
-        <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li><br>
-        <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area, so you can house your citizens as close as possible to their workplace.</li>
-       </ul>
-     <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which guards are yours when you are fighting. Your citizens' names will also be in this color when looking at them.</li>
+      <li><strong>Page 1: </strong>There are two buttons here:</li>
+        <ul>
+        <br>
+          <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
+          <br>
+          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area, so you can house your citizens as close as possible to their workplace.</li>
+        </ul>
+      <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which guards are yours when you are fighting. Your citizens' names will also be in this color when looking at them.</li>
     </ul>
   </div>
 </div>
@@ -200,9 +205,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <br>
-     <li><strong>Page 1: </strong>Blank page except for the header (future use).</li><br>
-     <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up or down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
+      <li><strong>Page 1: </strong>Blank page except for the header (future use).</li>
+      <br>
+      <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up or down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
     </ul>
   </div>
 </div>
@@ -217,14 +222,11 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <br>
-     <li><strong>Page 1: </strong>The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (super happy), blue (happy), yellow (not happy), and red (big problem here-your citizens are definitely not happy). There's also black, which will show up if something went wrong.</li><br>
-     <li><strong>Page 2: </strong>Blank for now (future use).</li>
+      <br>
+      <li><strong>Page 1: </strong>The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (super happy), blue (happy), yellow (not happy), and red (big problem here-your citizens are definitely not happy). There's also black, which will show up if something went wrong.</li>
+      <br>
+      <li><strong>Page 2: </strong>Blank for now (future use).</li>
     </ul>
   </div>
 </div>  
-
----  
-  
-  <br>
-  
+<br>
