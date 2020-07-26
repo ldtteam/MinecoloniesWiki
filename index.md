@@ -4,7 +4,7 @@ layout: default
 ---
 # Welcome to the MineColonies Wiki!
 
-MineColonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It gives you the tools to let your leadership skills soar by providing you with everything you need to build your own personal kingdom. MineColonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the sky.
+MineColonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It allows your leadership skills to soar by providing you with everything you need to build your own personal kingdom. MineColonies gives you the flexibility to create a colony as rich and unique as every player. With so many options you'll build a different colony every time, adapt it to any biome and terrain, build inside a mountain, on top of it, under the ocean or in the sky.
 
 The limit is your imagination!
 

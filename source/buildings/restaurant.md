@@ -53,3 +53,16 @@ This is page two of the Restaurant GUI.
       </ul>
     </div>  
   <br>
+
+This is page three of the Restaurant GUI.
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/restaurantgui3.png" class="img-fluid mx-auto" alt="Restaurant GUI">
+  </div>
+  <div class="col-sm-12 col-md">
+      <ul>
+      <li><strong> Minimum Stock: </strong> Use this button to force the restaurant to keep a minimum stock on hand at all times. Set items will be displayed above the button.
+      </ul>
+    </div>  
+  <br>
