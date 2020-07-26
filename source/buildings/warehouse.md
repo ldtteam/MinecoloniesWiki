@@ -45,8 +45,8 @@ When accessing the Warehouse's hut block by right-clicking on it, you will see a
   <div class="col-sm-12 col-md">
     <br>
     <ul>
-      <li><strong>Build Options: </strong>Lets you create a build, upgrade, reposition, or repair build order for the Warehouse. To learn more about the building system, visit the [Builder](../../source/workers/builder) page.</li><br>
-      <li><strong>Inventory: </strong>This is an inventory space where you can store anything you like. The Deliverymen don't deposit things here (they use the [racks](../../source/items/rack) in the Warehouse instead).</li>
+      <li><strong>Build Options: </strong>Lets you create a build, upgrade, reposition, or repair build order for the Warehouse. To learn more about the building system, visit the <a href="../../source/workers/builder">Builder</a> page.</li><br>
+      <li><strong>Inventory: </strong>This is an inventory space where you can store anything you like. The Deliverymen don't deposit things here (they use the <a href="../../source/items/rack">racks</a> in the Warehouse instead).</li>
     </ul>
   </div>
 </div>  
