@@ -50,7 +50,7 @@ subnav:
       - page: Multi-Piston
         url: source/items/multipiston
       - page: Paper Wall
-        url: source/items/paperwalls
+        url: source/items/paperwall
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
       - page: Postbox
