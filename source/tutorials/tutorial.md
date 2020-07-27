@@ -16,7 +16,7 @@ layout: default
   - [Step 4](#step-4)
   - [Final Notes](#final-notes)
 
-This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://minecraft.curseforge.com/projects/minecolonies), you can find instructions for doing that on Twitch [here](../../source/installation/twitch), on MultiMMC [here](../../source/installation/multimmc), and on Java (Forge) [here](../../source/installation/java). 
+This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://www.curseforge.com/minecraft/modpacks/minecolonies-testpack), you can find instructions for doing that on Twitch [here](../../source/installation/twitch), on MultiMMC [here](../../source/installation/multimmc), and on Java (Forge) [here](../../source/installation/java). 
 
 ## Quick Walkthrough 
 
@@ -50,7 +50,7 @@ You should also gather enough food to feed yourself and your initial citizens un
   
 ### Step 6 Food
   
-  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisherman's Hut](../../source/buildings/fisherman). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisherman is faster.
+  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisher's Hut](../../source/buildings/fisher). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisher is faster.
   
 ### Step 7 Rest of the Colony
   
@@ -90,7 +90,7 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
  The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
-- **Note**: You can configure your own town area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../minecraft/config/``` folder of your own world.
+**Note**: You can configure your own town area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../minecraft/config/``` folder of your own world.
 
 Due to the protected area of each colony, you have to scout carefully your surroundings to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction.
 
@@ -337,8 +337,8 @@ Once the Builder has finished their hut, you're ready to start building any othe
 
 You have now completed the most important steps completed to start and create your colony!
 
-Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisherman](../../source/buildings/fisherman), [Guard Tower](../../source/buildings/guardtower), [Deliveryman](../../source/buildings/deliveryman), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant) and more are probably good places to start. 
+Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant) and more are probably good places to start. 
 
-But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [Citizen Hut](../../source/buildings/citizenhut). This will give you additional citizens for each level of a Citizen Hut you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Lumberjacks, Builders, Farmers, Fishermen, and many more! 
+But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [Citizen Hut](../../source/buildings/citizenhut). This will give you additional citizens for each level of a Citizen Hut you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Lumberjacks, Builders, Farmers, Fishers, and many more! 
 
-- **Hint:** Upgrade your buildings to the highest level possible (level 5 for almost all of them) to get achievements (and increase the speed at which the worker [levels](../../source/systems/worker)).
+**Hint:** Upgrade your buildings to the highest level possible (level 5 for almost all of them) to get achievements (and increase the speed at which the worker [levels](../../source/systems/worker)).
