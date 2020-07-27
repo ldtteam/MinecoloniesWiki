@@ -4,7 +4,7 @@ layout: default
 ---
 # Command System
 
-These are the in-game commands currently available. Most require that a user have operator privileges to work and require that a singleplayer world has cheats enabled. 
+These are the in-game commands currently available. Most require that a user have operator privileges to work and that a singleplayer world has cheats enabled. 
 
 - [Commands](#commands)
   - [Base Commands](#base-commands)
@@ -39,19 +39,19 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc help</code><br>Default Permission Level: All<br></td>
-      <td class="d-block d-lg-table-cell">Lists the wiki and the [Discord](discord.minecolonies.com) links in chat.</td>
+      <td class="d-block d-lg-table-cell">Lists the wiki and the <a href="https://discord.minecolonies.com">Discord</a> links in chat.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc home</code><br>Default Permission Level: All</td>
-      <td class="d-block d-lg-table-cell">Teleports a colony owner back to the [Town Hall](../../source/buildings/townhall) of their colony.</td>
+      <td class="d-block d-lg-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc raid-all-now</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Schedule a raid for every colony to start right now.</td>
+      <td class="d-block d-lg-table-cell">Schedules a raid for every colony to start right now.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc raid-all-tonight</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Schedule a raid for every colony to start the coming night.</td>
+      <td class="d-block d-lg-table-cell">Schedules a raid for every colony to start the coming night.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc resetsupplies &lt;online player's username&gt;</code><br>Default Permission Level: OP</td>
@@ -59,7 +59,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc rtp</code><br>Default Permission Level: All</td>
-      <td class="d-block d-lg-table-cell">Random teleports you. Will place your character outside the range of someone else's colony.</td>
+      <td class="d-block d-lg-table-cell">Randomly teleports you. Will place your character outside the range of someone else's colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc whereami</code><br>Default Permission Level: All</td>
@@ -86,7 +86,7 @@ These are the in-game commands currently available. Most require that a user hav
   <tbody>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony addOfficer &lt;colony id&gt; &lt;online player's username&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Adds an officer to a colony. For more information on officers, visit the [Town Hall](../../source/buildings/townhall) page and look at the Permissions section of the GUI.<br>Example:<br><code>/mc colony addofficer 1 Steve</code></td>
+      <td class="d-block d-md-table-cell">Adds an officer to a colony. For more information on officers, visit the <a href="../../source/buildings/townhall">Town Hall</a> page and look at the Permissions section of the GUI.<br>Example:<br><code>/mc colony addofficer 1 Steve</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony canSpawnRaiders &lt;colony id&gt; &lt;canSpawn&gt;</code><br>Default permission level: OP</td>
@@ -102,7 +102,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony home</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Teleports a colony owner back to the Town Hall of their colony.<br>Example:<br><code>/mc colony home</code></td>
+      <td class="d-block d-md-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.<br>Example:<br><code>/mc colony home</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br>Default permission level: All</td>
