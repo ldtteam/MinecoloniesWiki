@@ -49,7 +49,7 @@ subnav:
         url: source/items/floatingcarpet
       - page: Multi-Piston
         url: source/items/multipiston
-      - page: Paper Walls
+      - page: Paper Wall
         url: source/items/paperwalls
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
@@ -79,26 +79,26 @@ subnav:
         url: source/workers/blacksmith
       - page: Builder
         url: source/workers/builder
-      - page: Chicken Herder
-        url: source/workers/chickenherder
+      - page: Chicken Farmer
+        url: source/workers/chickenfarmer
       - page: Composter
         url: source/workers/composter
       - page: Cook
         url: source/workers/cook
-      - page: Cowboy
-        url: source/workers/cowboy
+      - page: Cowhand
+        url: source/workers/cowhand
       - page: Crusher
         url: source/workers/crusher
-      - page: Deliveryman
-        url: source/workers/deliveryman
+      - page: Courier
+        url: source/workers/courier
       - page: Dyer
         url: source/workers/dyer
       - page: Enchanter
         url: source/workers/enchanter
       - page: Farmer
         url: source/workers/farmer
-      - page: Fisherman
-        url: source/workers/fisherman
+      - page: Fisher
+        url: source/workers/fisher
       - page: Fletcher
         url: source/workers/fletcher
       - page: Florist
@@ -125,8 +125,8 @@ subnav:
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
-      - page: Ranger in Training
-        url: source/workers/rangerintraining
+      - page: Archer in Training
+        url: source/workers/archerintraining
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -137,7 +137,7 @@ subnav:
         url: source/workers/stonemason
       - page: Stone Smelter
         url: source/workers/stonesmelter
-      - page: Swine Herder
+      - page: Swineherd
         url: source/workers/swineherder
       - page: Teacher
         url: source/workers/teacher
@@ -157,28 +157,28 @@ subnav:
         url: source/buildings/blacksmith
       - page: Builder's Hut
         url: source/buildings/builder
-      - page: Chicken Herder's Hut
-        url: source/buildings/chickenherder
+      - page: Chicken Farmer's Hut
+        url: source/buildings/chickenfarmer
       - page: Citizen Hut
         url: source/buildings/citizenhut
       - page: Combat Academy
         url: source/buildings/combatacademy
       - page: Composter's Hut
         url: source/buildings/composter
-      - page: Cowboy's Hut
-        url: source/buildings/cowboy
+      - page: Cowhand's Hut
+        url: source/buildings/cowhand
       - page: Crusher's Hut
         url: source/buildings/crusher
-      - page: Deliveryman's Hut
-        url: source/buildings/deliveryman
+      - page: Courier's Hut
+        url: source/buildings/courier
       - page: Dyer's Hut
         url: source/buildings/dyer
       - page: Enchanter's Tower
         url: source/buildings/enchantertower
       - page: Farm & Field
         url: source/buildings/farm&field
-      - page: Fisherman's Hut
-        url: source/buildings/fisherman
+      - page: Fisher's Hut
+        url: source/buildings/fisher
       - page: Fletcher's Hut
         url: source/buildings/fletcher
       - page: Flower Shop
@@ -215,8 +215,8 @@ subnav:
         url: source/buildings/stonemason
       - page: Stone Smeltery
         url: source/buildings/stonesmeltery
-      - page: Swine Herder's Hut
-        url: source/buildings/swineherder
+      - page: Swineherd's Hut
+        url: source/buildings/swineherd
       - page: Tavern
         url: source/buildings/tavern
       - page: Town Hall
