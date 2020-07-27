@@ -138,7 +138,7 @@ subnav:
       - page: Stone Smelter
         url: source/workers/stonesmelter
       - page: Swineherd
-        url: source/workers/swineherder
+        url: source/workers/swineherd
       - page: Teacher
         url: source/workers/teacher
       - page: University Researcher
