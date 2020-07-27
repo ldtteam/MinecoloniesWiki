@@ -35,7 +35,35 @@ services:
         - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.secure=true
         - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.httpOnly=true
         - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.sameSite=none
-
+        
+  redirect:
+    image: morbz/docker-web-redirect
+    networks:
+      - traefik-public
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - node.labels.system==production
+          - node.labels.type==worker
+          - node.labels.web==true
+      labels:
+        - traefik.enable=true
+        - traefik.constraint-label=traefik-public
+        - traefik.docker.network=traefik-public
+        - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+        - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+        - traefik.http.routers.wiki-minecolonies-redirect-http.rule=Host(`wiki.minecolonies.com`)
+        - traefik.http.routers.wiki-minecolonies-redirect-http.entrypoints=http
+        - traefik.http.routers.wiki-minecolonies-redirect-http.middlewares=https-redirect
+        - traefik.http.routers.wiki-minecolonies-redirect-https.rule=Host(`wiki.minecolonies.com`)
+        - traefik.http.routers.wiki-minecolonies-redirect-https.entrypoints=https
+        - traefik.http.routers.wiki-minecolonies-redirect-https.tls=true
+        - traefik.http.routers.wiki-minecolonies-redirect-https.tls.certresolver=le
+    environment:
+      - REDIRECT_TARGET=wiki.minecolonies.ldtteam.com
 
 networks:
   traefik-public:
