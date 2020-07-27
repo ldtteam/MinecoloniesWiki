@@ -67,11 +67,11 @@ This is page three of the Warehouse GUI.
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui3.png" class="img-fluid mx-auto" alt="Warehouse GUI">
+    <img src="../../assets/images/gui/warehousegui3.png" class="img-fluid mx-auto" alt="Warehouse GUI 3">
   </div>
   <div class="col-sm-12 col-md">
       <ul>
-      <li><strong> Minimum Stock: </strong> Use this button to force the warehouse to keep a minimum stock on hand at all times. Set items will be displayed above the button.
+      <li><strong> Minimum Stock: </strong> Use this button to tell the Warehouse to request a minimum stock to keep on hand. If a worker requests an item that is set as the minimum stock, the minimum stock will be given to them but the Warehouse will request more if it no longer has enough. Set items will be displayed above the button.
       </ul>
     </div>  
   <br>

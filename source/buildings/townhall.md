@@ -47,7 +47,7 @@ Due to the protected area of each colony, you have to carefully scout your surro
 
 **Note:** Once you place your Town Hall block this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your build tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your colony through [Commands](../systems/command). 
 
-**Note**: You can configure your own colony area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../config/``` folder of your own world. (see Minecolonies config server section for details)
+**Note**: You can configure your own colony area radius in the minecolonies-common.toml file inside the ```../config/``` folder of your own world/server.
 
 If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
@@ -86,11 +86,11 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
-      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> Page.</li> <br>
+      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.</li><br>
       <li><strong>Citizen Recruitment-</strong>Has no purpose. Recruiting has been moved to the <a href="../../source/buildings/tavern"> Tavern</a>.</li><br>
-      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li> <br>
-      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li> <br>
-      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li> <br>
+      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
+      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
+      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li><br>
       <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens.</li>
     </ul>
     <br>  
@@ -107,7 +107,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 
 ### <strong>Permissions:</strong> Here you can invite other players to your colony to collaborate. 
 
-<p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give him a <i>rank</i> in your Town. Each rank will have certain privileges in the protection system that you can configure.</p>
+<p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give them a rank in your colony. Each rank will have certain privileges in the changeable protection system.</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -115,9 +115,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Page 1: </strong>Here you can type the name of the player you want to add and decide which rank you want them to be. You can choose from Officer, Friend, Neutral, or Hostile.</li>
+      <li><strong>Page 1: </strong>Here you type the name of the player you want to add.</li>
       <br>
-      <li><strong>Page 2: </strong>Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or a lower rank.</li>
+      <li><strong>Page 2: </strong>Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or lower rank.</li>
     </ul>
   </div>
 </div>  
@@ -131,7 +131,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Page 3: </strong>Here you can select each rank that you would like to manage.</li>
+      <li><strong>Page 3: </strong>Here you can select the rank that you would like to manage.</li>
       <br>
       <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li> 
     </ul>
@@ -139,7 +139,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 </div>  
 
 ---
-<p><strong>Permissions Pg. 5 & 6: </strong>In this section, you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block regardless of their rank in your colony.</p>
+<p><strong>Permissions Pg. 5 & 6: </strong>In this section, you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block as long as their rank includes the permission 'Access Free-Blocks.'</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -147,7 +147,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   </div>
   <div class="col-sm-12 col-md">
     <ul><br>
-      <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make free for interaction.</li>
+      <li><strong>Page 5: </strong>Where you enter the position (X, Y, Z) of the block that you want to make free for interaction.</li>
       <br>
       <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction and can remove them.</li>
     </ul>
@@ -165,9 +165,9 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
      <br>
-      <li><strong>Page 1: </strong>When you select a citizen, their stats will appear here. You can also recall them to the Town Hall block on this page.</li>
+      <li><strong>Page 1: </strong>When you select a citizen, their stats and job will appear here. You can also recall them to the Town Hall block on this page.</li>
       <br>
-      <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skill levels.</li>
+      <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skills.</li>
     </ul>
   </div>
 </div>
@@ -183,14 +183,18 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
     <br>
-      <li><strong>Page 1: </strong>There are two buttons here:</li>
+      <li><strong>Page 1: </strong>There are four buttons here:</li>
         <ul>
         <br>
           <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
           <br>
-          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area, so you can house your citizens as close as possible to their workplace.</li>
-        </ul>
-      <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which guards are yours when you are fighting. Your citizens' names will also be in this color when looking at them.</li>
+          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
+          <br>
+          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
+          <br>
+          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether travelers will spawn at your <a href="../../source/buildings/tavern"> Tavern</a> (if you have one) and whether new kids will be born in your colony.</li>
+          <br>
+          <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
     </ul>
   </div>
 </div>
