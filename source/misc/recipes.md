@@ -53,12 +53,12 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | Name                                               | Ingredients                                          | Recipe                         |
 | -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
 | [Archery](../../source/buildings/archery)          | **Any** Planks + Building Tool + 3 Bows              | <recipe>archery</recipe>       |
-| [Bakery](../../source/buildings/baker)             | **Any** Planks + Building Tool + Wheat               | <recipe>baker</recipe>         |
+| [Bakery](../../source/buildings/bakery)            | **Any** Planks + Building Tool + Wheat               | <recipe>baker</recipe>         |
 | [Barracks](../../source/buildings/barracks)        | **Any** Planks + Building Tool + Iron Block          | <recipe>barracks</recipe>      |
 | [Blacksmith's Hut](../../source/buildings/blacksmith) | **Any** Planks + Building Tool + 3 Iron Ingots    | <recipe>blacksmith</recipe>    |
 | [Builder's Hut](../../source/buildings/builder)    | **Any** Planks + Building Tool + **Any** Wooden Door | <recipe>builder</recipe>       |
 | [Chickenherder's Hut](../../source/buildings/chickenherder) | **Any** Planks + Building Tool + Egg        | <recipe>chickenherder</recipe> |
-| [Citizen's Hut](../../source/buildings/citizen)    | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
+| [Citizen's Hut](../../source/buildings/citizenhut) | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Building Tool + 3 Iron Swords   | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Building Tool + Barrel             | <recipe>composter</recipe>     |
 | [Cowboy's Hut](../../source/buildings/cowboy)      | **Any** Planks + Building Tool + Raw Beef            | <recipe>cowboy</recipe>        |
