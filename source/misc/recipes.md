@@ -4,7 +4,7 @@ layout: recipes
 ---
 # Recipes
 
-Listed in this page are the current crafting recipes available in MineColonies/Structurize. This will be updated as any craftables are added and made public.
+Listed on this page are the current crafting recipes available in MineColonies/Structurize. This page will be updated as any craftables are added and made public.
 
 **Note:**  
 The [building tool](../../source/items/buildingtool) used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
@@ -47,7 +47,7 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 ## Hut Blocks
 
 **Notes**  
-The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after you have placed the [Supply Ship/Camp](../../source/items/supplycampandship).
+The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after placing the [Supply Ship/Camp](../../source/items/supplycampandship).
 The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the [Barracks](../../source/buildings/barracks) instead.
 
 | Name                                               | Ingredients                                          | Recipe                         |
