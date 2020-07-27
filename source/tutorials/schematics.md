@@ -137,7 +137,7 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | [Barracks](../../source/buildings/barracks)             | 1 barracks tower per level (up to lvl 4)                             |                     |
 | [Barracks Tower](../../source/buildings/barrackstower)  |                                                                      | 1 bed per level     |
 | [Builder's Hut](../../source/buildings/builder)         |                                                                      | 1 rack per level    |
-| [Citzen's Hut](../../source/buildings/citizen)          | 1 bed per level                                                      |                     |
+| [Citzen Hut](../../source/buildings/citizenhut)         | 1 bed per level                                                      |                     |
 | [Combat Academy](../../source/buildings/combatacademy)  | 1 combat dummy per level (a pumpkin on top of a bale of hay)         |                     |
 | [Composter's Hut](../../source/buildings/composter)     | 1 [barrel](../../source/items/barrel) per level                      |                     |
 | [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
@@ -197,7 +197,7 @@ Simply create a schematic file with the same style/name. For instance, to overri
 
 #### How to use custom huts?
 
-The custom huts need to be copied in the schematics folder. Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [build tool](../../source/items/buildingtool) (if holding the hut block).
+The custom huts need to be copied in the schematics folder. Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [build tool](../../source/items/buildtool) (if holding the hut block).
 
 #### How to allow my players to use their own huts' schematics on my server?
 
