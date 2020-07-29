@@ -27,8 +27,8 @@ The level of the Courier's Hut will dictate how many items/blocks the Courier ca
 
 | Courier's Hut Level | Max Stacks Carried |
 | :-----------------: | :----------------: |
-| 1                   | 1                  |
-| 2                   | 2                  |
+| 1                   | 2                  |
+| 2                   | 3                  |
 | 3                   | 4                  |
 | 4                   | 5                  |
 | 5                   | unlimited          |
