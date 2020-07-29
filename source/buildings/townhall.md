@@ -22,7 +22,7 @@ Make sure you scout your area carefully before you decide where you want to plac
 
 ### Placing your Town Hall
 
-After you have carefully decided where you want to place your Town Hall (remember, the position where you placed the Town Hall block will be the center of your colony's protected area. Once placed, the area will be set and cannot be changed), use your [Building Tool] (../items/buildingtool) to place the Town Hall block.
+After you have carefully decided where you want to place your Town Hall (remember, the position where you placed the Town Hall block will be the center of your colony's protected area. Once placed, the area will be set and cannot be changed), use your [build tool] (../items/buildtool) to place the Town Hall block.
 
 Right-click the ground in the area you want to place the Town Hall. The building GUI will display showing the 3D preview of the building. You will be able to use the arrow buttons to move the building to the location you desire. 
 
@@ -45,7 +45,7 @@ The protected area of your colony (once the Town Hall has been placed) will depe
 
 Due to the protected area of each colony, you have to carefully scout your surroundings to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction.
 
-**Note:** Once you place your Town Hall block this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your Building Tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with /op or /admin permission deleting your colony through [Commands](../systems/command). 
+**Note:** Once you place your Town Hall block, this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your build tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with OP or admin permission deleting your colony through [commands](../systems/command). 
 
 **Note**: You can configure your own colony area radius in the minecolonies-common.toml file inside the ```../config/``` folder of your own world/server.
 
@@ -188,7 +188,7 @@ If you try to place another Town Hall outside of your protected area, you will g
         <br>
           <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
           <br>
-          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
+          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
