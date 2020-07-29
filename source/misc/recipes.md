@@ -28,7 +28,7 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
 | [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Building Tool + String | <recipe>floatingcarpet</recipe> |
 | [Multi-Piston](../../source/buildings/multipiston) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multipiston</recipe> |
-| [Paper Wall](../../source/buildings/paperwall) | **Any** Planks + Paper                    | <recipe>paperwall</recipe>      |
+| [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwall</recipe>      |
 | [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool     | <recipe>placeholderblock</recipe> |
 | [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | <recipe>solidplaceholderblock</recipe> |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
