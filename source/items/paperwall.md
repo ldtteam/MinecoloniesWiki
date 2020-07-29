@@ -1,8 +1,8 @@
 ---
-title: Paper Walls
+title: Paper Wall
 layout: default
 ---
-# Paper Walls
+# Paper Wall
 
 <div class="infobox box text-center">
     <img src="../../assets/images/items/paperwall.png" alt="Paper Wall"/><br>

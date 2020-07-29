@@ -16,7 +16,7 @@ layout: default
   - [Step 4](#step-4)
   - [Final Notes](#final-notes)
 
-This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://minecraft.curseforge.com/projects/minecolonies), you can find instructions for doing that on Twitch [here](../../source/installation/twitch), on MultiMMC [here](../../source/installation/multimmc), and on Java (Forge) [here](../../source/installation/java). 
+This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://www.curseforge.com/minecraft/modpacks/minecolonies-testpack), you can find instructions for doing that on Twitch [here](../../source/installation/twitch), on MultiMMC [here](../../source/installation/multimmc), and on Java (Forge) [here](../../source/installation/java). 
 
 ## Quick Walkthrough 
 
@@ -28,11 +28,11 @@ You should also gather enough food to feed yourself and your initial citizens un
 
 ### Step 1: Supply Camp/Supply Ship
   
-  Once you have your location determined, you must place a [Supply Ship](../../source/items/supplycampandship) or [Supply Camp](../../source/items/supplycampandship). You can only place one of these. The Supply Camp and Ship have the Town Hall block you need to officially start your colony. They also have some other supplies you may need during the building of your colony. Once you have the Town Hall block and the [building tool](../../source/items/buildingtool), the remaining camp or ship is just decoration. You can leave it if you wish or tear it down.
+  Once you have your location determined, you must place a [Supply Ship](../../source/items/supplycampandship) or [Supply Camp](../../source/items/supplycampandship). You can only place one of these. The Supply Camp and Ship have the Town Hall block you need to officially start your colony. They also have some other supplies you may need during the building of your colony. Once you have the Town Hall block and the [build tool](../../source/items/buildtool), the remaining camp or ship is just decoration. You can leave it if you wish or tear it down.
   
 ### Step 2 Town Hall
   
-  The [Town Hall](../../source/buildings/townhall) block is what actually creates the colony. This is where you start using the building tool to place buildings. Using the building tool ensures you can see exactly where the building will be, which direction it will face, and if it is at the right y level (some buildings need to be raised to the correct y level).
+  The [Town Hall](../../source/buildings/townhall) block is what actually creates the colony. This is where you start using the build tool to place buildings. Using the build tool ensures you can see exactly where the building will be, which direction it will face, and if it is at the right y level (some buildings need to be raised to the correct y level).
   
   Once the Town Hall block is placed, you will start receiving your initial 4 citizens.
   
@@ -50,7 +50,7 @@ You should also gather enough food to feed yourself and your initial citizens un
   
 ### Step 6 Food
   
-  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisherman's Hut](../../source/buildings/fisherman). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisherman is faster.
+  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisher's Hut](../../source/buildings/fisher). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisher is faster.
   
 ### Step 7 Rest of the Colony
   
@@ -67,9 +67,9 @@ If you're here, **CONGRATULATIONS!** You have already <a href="#install">install
 
 So, the first thing you want to do is find the perfect spot to settle down. But, before you do that, there are two things you have to consider. The following comments are the most important you should read and consider to ensure a successful Town and avoid frustration. Please read all considerations first, before placing your [Supply Ship](../items/supplycampandship) or [Supply Camp](../items/supplycampandship). Even before starting to play:
 
-**Hint:** The most important tool you will need for the entire mod is the building tool (check our [building tool](../items/buildingtool) page). Craft the building tool so you can place all the huts and the Supply Ship or Supply Camp in the perfect spot.
+**Hint:** The most important tool you will need for the entire mod is the build tool (check our [build tool](../items/buildtool) page). Craft the build tool so you can place all the huts and the Supply Ship or Supply Camp in the perfect spot.
 
-<p class="h4 text-center"><b>Building Tool Video.</b></p>
+<p class="h4 text-center"><b>Build Tool Video.</b></p>
 
 <div class="embed-responsive embed-responsive-16by9 mx-auto">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -78,19 +78,19 @@ So, the first thing you want to do is find the perfect spot to settle down. But,
 
 ### Placement of the Supply Ship or Supply Camp 
 
- When you place the [Supply Ship](../items/supplycampandship), it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [building tool](../../source/items/buildingtool). To place the Supply Ship, you need to have a large enough body of water. The Supply Ship is 32 x 11 blocks in length and width. So the recommended body of water is at least 32 x 20. Use the building tool to see where the ship will be placed. **Once the Supply Ship is placed, you can't place another Ship or Camp in this world anymore.**
+ When you place the [Supply Ship](../items/supplycampandship), it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [build tool](../../source/items/buildtool). To place the Supply Ship, you need to have a large enough body of water. The Supply Ship is 32 x 11 blocks in length and width. So the recommended body of water is at least 32 x 20. Use the build tool to see where the ship will be placed. **Once the Supply Ship is placed, you can't place another Ship or Camp in this world anymore.**
  
-**Hint:** If you're not using the building tool and aren't able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block. The area cannot have any seaweed, coral, etc.
+**Hint:** If you're not using the build tool and aren't able to place the Supply Ship, try it block by block: one to the right, left, closer or further from the water - or even directly over the water creating a walkway block by block. The area cannot have any seaweed, coral, etc.
 
- When you place the [Supply Camp](../items/supplycampandship), it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [building tool](../../source/items/buildingtool). To place the Supply Camp, you need to have a large enough flat, clear piece of land. The recommended size must be at least 16 x 17 blocks. **Once the Supply Camp is placed, you can't place another Camp or Ship in this world anymore.**
+ When you place the [Supply Camp](../items/supplycampandship), it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [build tool](../../source/items/buildtool). To place the Supply Camp, you need to have a large enough flat, clear piece of land. The recommended size must be at least 16 x 17 blocks. **Once the Supply Camp is placed, you can't place another Camp or Ship in this world anymore.**
 
-**Hint:** If you're not using the building tool and aren't able to place the Supply Camp, try it block by block: one to the right, left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, etc.
+**Hint:** If you're not using the build tool and aren't able to place the Supply Camp, try it block by block: one to the right, left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, etc.
 
 ### Town Hall
 
  The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a 8 chunks radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
-- **Note**: You can configure your own town area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../minecraft/config/``` folder of your own world.
+**Note**: You can configure your own town area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../minecraft/config/``` folder of your own world.
 
 Due to the protected area of each colony, you have to scout carefully your surroundings to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction.
 
@@ -112,13 +112,13 @@ For example, in the official MineColonies server it will be the default 8 chunk 
 
 ### Step 1
 
-Get enough materials and craft your Supply Ship/Camp. Now place it with the <a href="#build_tool">building tool</a> or by right-clicking a block with it to place your Supply Ship/Camp. There will be a chest inside the placed Ship/Camp with a Town Hall block and a building tool.
+Get enough materials and craft your Supply Ship/Camp. Now place it with the <a href="#build_tool">build tool</a> or by right-clicking a block with it to place your Supply Ship/Camp. There will be a chest inside the placed Ship/Camp with a Town Hall block and a build tool.
 
 - **Hint:** Gather as many materials as possible to be able to give them to your [Builder](../../source/workers/builder) when they start building. They will ask you for all kinds of materials they will need for each building or upgrade, depending on the style of building you have chosen. The materials needed for most styles will be mainly wood, cobblestone, and torches for the lower levels. Further upgrades will require more elaborate materials.
 
 ### Step 2
 
-After you have carefully decided where you want to place your [Town Hall](../../source/buildings/townhall) (remember, the position where you placed the Town Hall block at first will be the center of your colony's protected area. Once placed, the area will be set and cannot be changed), use your <a href="#build_tool">building tool</a> to place the Town Hall. Once you commit to the placement of the Town Hall (the green checkmark), the Town Hall block will be placed. To officially start a colony, you need to right-click on the block, then select Create New Colony. Once you've done this, your initial four citizens will start appearing! 
+After you have carefully decided where you want to place your [Town Hall](../../source/buildings/townhall) (remember, the position where you placed the Town Hall block at first will be the center of your colony's protected area. Once placed, the area will be set and cannot be changed), use your <a href="#build_tool">build tool</a> to place the Town Hall. Once you commit to the placement of the Town Hall (the green checkmark), the Town Hall block will be placed. To officially start a colony, you need to right-click on the block, then select Create New Colony. Once you've done this, your initial four citizens will start appearing! 
 
 You can now right-click the Town Hall block again to look at its graphical user interface, or GUI for short:
 
@@ -256,7 +256,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
         <br>
           <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
           <br>
-          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
+          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
@@ -305,7 +305,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
 
 ### Step 3
 
-Before any other building can be built, you must craft the [Builder's hut](../../source/buildings/builder) block and use your <a href="#build_tool">building tool</a> to place his building. Once you commit to the placement of the Builder's Hut (the green checkmark), the block will be placed and a Builder will be automatically assigned (or you can manually assign one with the best [traits](../../source/systems/worker) for a Builder if you changed this in the setting tab in the Town Hall's GUI).
+Before any other building can be built, you must craft the [Builder's hut](../../source/buildings/builder) block and use your <a href="#build_tool">build tool</a> to place his building. Once you commit to the placement of the Builder's Hut (the green checkmark), the block will be placed and a Builder will be automatically assigned (or you can manually assign one with the best [traits](../../source/systems/worker) for a Builder if you changed this in the setting tab in the Town Hall's GUI).
 You now officially have a [Builder](../../source/workers/builder)! CONGRATULATIONS!
 When accessing the Builder's Hut block by right-clicking on it, you will see a GUI with different options:
 
@@ -341,7 +341,7 @@ The Builder will ask for the materials they need. Right-click on them when they 
 
 ### Step 4
 
-Once the Builder has finished their hut, you're ready to start building any other building you want! Just craft the desired block and use your [building tool](../../source/items/buildingtool) to place the building. Once it's placed, go into the GUI for the new block, click Build Options, and then click Build Building. It's that simple!
+Once the Builder has finished their hut, you're ready to start building any other building you want! Just craft the desired block and use your [build tool](../../source/items/buildtool) to place the building. Once it's placed, go into the GUI for the new block, click Build Options, and then click Build Building. It's that simple!
 
 - **Hint:** Consider upgrading the Builder's Hut to level 2 as soon as you can so the Builder can upgrade other buildings.
 
@@ -349,8 +349,8 @@ Once the Builder has finished their hut, you're ready to start building any othe
 
 You have now completed the most important steps completed to start and create your colony!
 
-Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisherman](../../source/buildings/fisherman), [Guard Tower](../../source/buildings/guardtower), [Deliveryman](../../source/buildings/deliveryman), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant) and more are probably good places to start. 
+Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant) and more are probably good places to start. 
 
-But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [Citizen's Hut](../../source/buildings/citizenhut). This will give you additional citizens for each level of a Citizen's Hut you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Lumberjacks, Builders, Farmers, Fishermen, and many more! 
+But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [Citizen Hut](../../source/buildings/citizenhut). This will give you additional citizens for each level of a Citizen Hut you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Lumberjacks, Builders, Farmers, Fishers, and many more! 
 
-- **Hint:** Upgrade your buildings to the highest level possible (level 5 for almost all of them) to get achievements (and increase the speed at which the worker [levels](../../source/systems/worker)).
+**Hint:** Upgrade your buildings to the highest level possible (level 5 for almost all of them) to get achievements (and increase the speed at which the worker [levels](../../source/systems/worker)).

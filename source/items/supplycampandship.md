@@ -12,7 +12,7 @@ layout: default
 
 The Supply Camp or the Supply Ship is how you begin a colony. 
 
-The Suppy Camp or Supply Ship is the *ONLY* way to obtain the Town Hall block so you can start building your colony. Each option gives you a great supply of materials for you to get started as well as a very illuminated and safe place to live while you get your colony started. There are a variety of items, and they may change depending on the style you choose to use. Many also may have some treasure hidden in them. 
+The Suppy Camp or Supply Ship is the *ONLY* way to obtain the [Town Hall](../../source/buildings/townhall) block so you can start building your colony. Each option gives you a great supply of materials for you to get started as well as a very illuminated and safe place to live while you get your colony started. There are a variety of items, and they may change depending on the style you choose to use. Many also may have some treasure hidden in them. 
 
 <p style="text-align:center;"><img src="../../assets/images/items/supplycamp.png" alt="Supply Camp"></p>
 
@@ -38,7 +38,6 @@ To place either Camp or Ship, simply right-click on a block and the 3D preview o
 <br>
 <br>
 
-
 **Here are some screenshots:**
 
 <p style="text-align:center;"><img src="../../assets/images/misc/camp4.png" alt="Supply Camp"><br><br>
@@ -49,4 +48,3 @@ To place either Camp or Ship, simply right-click on a block and the 3D preview o
 <p style="text-align:center;"><img src="../../assets/images/misc/ship1.png" alt="Supply Ship"><br><br>
 <img src="../../assets/images/misc/ship2.png" alt="Supply Ship"><br><br>
 <img src="../../assets/images/misc/ship3.png" alt="Supply Ship"><br>
-

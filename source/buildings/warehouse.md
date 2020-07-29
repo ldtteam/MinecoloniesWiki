@@ -12,18 +12,18 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/deliveryman">Deliveryman</a></p>
+        <p><a href="../workers/courier">Courier</a></p>
         </div>
     </div>
     <hr />
     <recipe>warehouse</recipe>
 </div>
 
-The Warehouse is the central storage from where a [Deliveryman](../../source/workers/deliveryman) will store and retrieve everything your workers harvest, craft, or need. Items will be stored in [racks](../../source/items/rack).
+The Warehouse is the central storage from where a [Courier](../../source/workers/courier) will store and retrieve everything your workers harvest, craft, or need. Items will be stored in [racks](../../source/items/rack).
 
-The level of the Warehouse will determine how many Deliverymen will be able to use it at the same time. Level up the Warehouse to increase the amount of Deliverymen that can work in it. Leveling up the Warehouse will also increase its storage capacity.
+The level of the Warehouse will determine how many Couriers will be able to use it at the same time. Level up the Warehouse to increase the amount of Couriers that can work in it. Leveling up the Warehouse will also increase its storage capacity.
 
-| Building Level | Max Deliverymen |
+| Building Level | Max Couriers |
 | -----  | ------ |
 | 1 | 2  |
 | 2 | 4  |
@@ -46,7 +46,7 @@ When accessing the Warehouse's hut block by right-clicking on it, you will see a
     <br>
     <ul>
       <li><strong>Build Options: </strong>Lets you create a build, upgrade, reposition, or repair build order for the Warehouse. To learn more about the building system, visit the <a href="../../source/workers/builder">Builder</a> page.</li><br>
-      <li><strong>Inventory: </strong>This is an inventory space where you can store anything you like. The Deliverymen don't deposit things here (they use the <a href="../../source/items/rack">racks</a> in the Warehouse instead).</li>
+      <li><strong>Inventory: </strong>This is an inventory space where you can store anything you like. The Couriers don't deposit things here (they use the <a href="../../source/items/rack">racks</a> in the Warehouse instead).</li>
     </ul>
   </div>
 </div>  
