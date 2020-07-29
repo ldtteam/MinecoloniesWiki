@@ -9,10 +9,10 @@ subnav:
         url: source/installation/twitch
   - title: Tutorials
     subitems: 
-      - page: Tutorial
-        url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
+      - page: Tutorial
+        url: source/tutorials/tutorial
   - title: Systems
     subitems:
       - page: Colony Border System
@@ -87,12 +87,12 @@ subnav:
         url: source/workers/composter
       - page: Cook
         url: source/workers/cook
+      - page: Courier
+        url: source/workers/courier
       - page: Cowherd
         url: source/workers/cowherd
       - page: Crusher
         url: source/workers/crusher
-      - page: Courier
-        url: source/workers/courier
       - page: Dyer
         url: source/workers/dyer
       - page: Enchanter
@@ -165,12 +165,12 @@ subnav:
         url: source/buildings/combatacademy
       - page: Composter's Hut
         url: source/buildings/composter
+      - page: Courier's Hut
+        url: source/buildings/courier
       - page: Cowherd's Hut
         url: source/buildings/cowherd
       - page: Crusher's Hut
         url: source/buildings/crusher
-      - page: Courier's Hut
-        url: source/buildings/courier
       - page: Dyer's Hut
         url: source/buildings/dyer
       - page: Enchanter's Tower
