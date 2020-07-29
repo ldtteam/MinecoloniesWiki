@@ -52,7 +52,7 @@ This is page 2 of the GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-        <li><strong>Knight or Ranger:</strong> This is where you can choose if you want the Guard to be a Knight or a Ranger-just click to change the setting. The difference between the two is that Knights use swords, while Rangers use bows. <b>Note:</b> You can only change this if you have turned the <strong>Assign the Guard to the Job</strong> setting to manually.</li>
+        <li><strong>Knight or Archer:</strong> This is where you can choose if you want the Guard to be a Knight or a Archer-just click to change the setting. The difference between the two is that Knights use swords, while Archers use bows. <b>Note:</b> You can only change this if you have turned the <strong>Assign the Guard to the Job</strong> setting to manually.</li>
         <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard to patrol, follow, or guard.</li>      
         <ul>
         <li>If you set it to Guard, you can set one area for the Guard to stay in. You can set the area by clicking <b>Set Guarding Target</b>, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
