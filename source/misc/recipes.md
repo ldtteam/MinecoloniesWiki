@@ -57,7 +57,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Barracks](../../source/buildings/barracks)        | **Any** Planks + Building Tool + Iron Block          | <recipe>barracks</recipe>      |
 | [Blacksmith's Hut](../../source/buildings/blacksmith) | **Any** Planks + Building Tool + 3 Iron Ingots    | <recipe>blacksmith</recipe>    |
 | [Builder's Hut](../../source/buildings/builder)    | **Any** Planks + Building Tool + **Any** Wooden Door | <recipe>builder</recipe>       |
-| [Chicken Farmer's Hut](../../source/buildings/chickenfarmer) | **Any** Planks + Building Tool + Egg       | <recipe>chickenherder</recipe> |
+| [Chicken Herder's Hut](../../source/buildings/chickenherder) | **Any** Planks + Building Tool + Egg       | <recipe>chickenherder</recipe> |
 | [Citizen's Hut](../../source/buildings/citizen)    | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Building Tool + 3 Iron Swords   | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Building Tool + Barrel             | <recipe>composter</recipe>     |
