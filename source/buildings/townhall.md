@@ -192,7 +192,7 @@ If you try to place another Town Hall outside of your protected area, you will g
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
-          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether travelers will spawn at your <a href="../../source/buildings/tavern"> Tavern</a> (if you have one) and whether new kids will be born in your colony.</li>
+          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
           <br>
           <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
     </ul>
