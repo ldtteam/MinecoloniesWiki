@@ -40,7 +40,7 @@ If none of these apply, go on to the next troubleshooting checklists.
   6. [Smelter](../../source/workers/smelter): Set which fuel you want them to use and which ore you want them to smelt.
   7. [Farmer](../../source/workers/farmer): Assign the farmer to a field. Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
   8. [Composter](../../source/workers/composter): Set which items you want them to convert into [compost](../../source/items/compost).
-  9. Crafter ([Miller](../../source/workers/miller), [Blacksmith](../../source/workers/blacksmith), [Mechanic](../../source/workers/mechanic), etc): The request for items must be made after the crafter is hired and the colony must have a [Courier](../../source/workers/courier). Cancel the request at the original NPC to generate a new request, or make a new request from the [Postbox](../../source/items/postbox). Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
+  9. Crafter ([Carpenter](../../source/workers/carpenter), [Blacksmith](../../source/workers/blacksmith), [Mechanic](../../source/workers/mechanic), etc): The request for items must be made after the crafter is hired and the colony must have a [Courier](../../source/workers/courier). Cancel the request at the original NPC to generate a new request, or make a new request from the [Postbox](../../source/items/postbox). Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
   10. [Stone Smelter](../../source/workers/stonesmelter): Set which fuel you want them to use. (They know their recipes already.)  
 
 ### CHECKLIST: Troubleshooting a Citizen not working for unknown reason
