@@ -81,6 +81,8 @@ subnav:
         url: source/workers/blacksmith
       - page: Builder
         url: source/workers/builder
+      - page: Carpenter
+        url: source/workers/carpenter
       - page: Chicken Farmer
         url: source/workers/chickenfarmer
       - page: Composter
@@ -119,8 +121,6 @@ subnav:
         url: source/workers/lumberjack
       - page: Mechanic
         url: source/workers/mechanic
-      - page: Miller
-        url: source/workers/miller
       - page: Miner
         url: source/workers/miner
       - page: Planter
