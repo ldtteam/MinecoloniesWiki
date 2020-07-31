@@ -94,7 +94,7 @@ If you try to place another Town Hall outside of your protected area, you will g
       <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens.</li>
     </ul>
     <br>  
-    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
+    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the config file. Here you have:</p>
     <ul>
       <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li>
       <br>
