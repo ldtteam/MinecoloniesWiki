@@ -4,11 +4,10 @@ layout: default
 ---
 # Worker System
 
-<p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b>Rain, snow, nighttime, or if a citizen died yesterday (in-game time) will make your citizens stop working!</b></p>
+<p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b> If it is raining, snowing, nighttime, or a citizen died yesterday (in-game time), your citizens will stop working!</b></p>
 
 ## Workers' Skill Levels
-
-There is a system in place for how workers level up. The higher a worker's level, the faster and more efficient they will be. The level of a worker's home is what will put a limit on the worker level they can achieve. The level of a worker's work hut determines the speed at which they level up, but their Intelligence skill is also a factor.
+Worker's skills will level up with each task they undertake.The higher a worker's level, the faster and more efficient they will be. Their level is limited by the level of the worker's home. The level of a worker's work hut and their Intelligence affect their work speed.
 
 | Home Level | Max Worker Level |
 | ---------- | ---------------- |
@@ -21,7 +20,7 @@ There is a system in place for how workers level up. The higher a worker's level
 
 ## Tool/Sword Levels
 
-There is also a system in place for the type of tools/swords the workers can use. This depends on the level of a worker's work hut.
+The of tools/swords the workers can use depends on the level of a worker's work hut.
 
 | Work Hut Level | Max (Vanilla) Tool/Sword Level                                                                                           | Max (Tinker's Construct) Tool/Sword Level |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
@@ -58,20 +57,17 @@ There is also a system in place for the type of armor [Guards](../../source/work
 | Diamond       | 15 - 99     | 4 - 5       |
 
 ## Traits
-
-When hiring a worker, you will see the best traits for the worker to have in order for them to level up at a faster rate. The best traits for the job you are hiring for will be in green (primary) and yellow (secondary) to help you decide which is the best worker for that job.
+When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green**, and the secondary trait in **yellow**, to help you decide which citizen is the best worker for the job.
 
 ![Traits](../../assets/images/misc/traits.png)
 
-There is a formula for this: Primary Trait * 2 + Secondary Trait * 1 = Rate of Leveling Up.
+These skills affect how fast the worker levels up. The formula is Primary Trait * 2 + Secondary Trait * 1 = Rate of Leveling Up.
 
-For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29x2)+(16x1)=74.
-
-That means that this worker will be able to level up *74* times faster!
+For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29x2)+(16x1)=74.That means that this worker will be able to level up *74* times faster!
 
 <br>
 
-Here's a chart of all the jobs and their traits, from sikri(#2346) on [Discord](https://discord.minecolonies.com).
+A chart of all the jobs and their traits, from sikri(#2346) on [Discord](https://discord.minecolonies.com).
 <br>
 <br>
 <img src="../../assets/images/misc/jobsandskills.png" alt="Jobs and Skills" />
