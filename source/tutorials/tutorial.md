@@ -22,7 +22,7 @@ This tutorial assumes you have already installed the mod or modpack. If you'd li
 
 Before you get started on your new colony, you should find your perfect location. You need a large enough area for a full city-at least 8x8 chunks, and decently flat.
 
-You should also gather as many resources as you can - wood, as well as cobble, coal, iron, flowers, string, leather, wool and some saplings. 
+You should also gather as many resources as you can-wood, as well as cobble, coal, iron, flowers, string, leather, wool, saplings, and food. 
 
 ### Step 1: Supply Camp/Supply Ship
   
