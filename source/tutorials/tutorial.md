@@ -44,7 +44,7 @@ You should also gather as many resources as you can - wood, as well as cobble, c
 
 ### Step 5: Food
   
-  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisherman's Hut](../../source/buildings/fisherman). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisherman is faster. Building a [Restaurant](../../source/buildings/restaurant) may also be advisable if you don't want to feed your colonists by hand.
+  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisherman's Hut](../../source/buildings/fisherman). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisherman is faster. Building a [Restaurant](../../source/buildings/restaurant) may also be advisable if you don't want to feed your colonists (or cook their food) by hand.
 
 ### Step 6: Lumberjack
   
