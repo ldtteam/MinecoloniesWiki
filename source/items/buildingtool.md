@@ -67,6 +67,6 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 <br>
 ### Step Three
 
-Now that you have the structure ready to place, click on the green check mark and voilá... a construction site will appear and a build request will be created! It will be sent automatically to a builder if a decoration or custom schematic, but if it's a hut, go into the hut block's GUI and press on the build button to have the build order sent to the Builder.
+Now that you have the structure ready to place, click on the green check mark and voilá...construction tape will appear and a build request will be created! It will automatically create a build request if it's a decoration or custom schematic, but if it's a hut, go into the hut block's GUI and click the Build Options button, then Build Building, to create the build request.
 
 You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders ("!" symbol) tab to see the queue of all build requests you have for the Builder.
