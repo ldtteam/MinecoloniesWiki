@@ -26,7 +26,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
 
 ### Step 1: Supply Camp/Supply Ship
   
-  Once you have chosen a location for your colony, you must place a [Supply Ship](../../source/items/supplycampandship) or [Supply Camp](../../source/items/supplycampandship). You can only place one of these. The Supply Camp/Ship gives you the Town Hall block you need to officially start your colony. They also have some other supplies you may need during the building of your colony. Once you have the Town Hall block and the [building tool](../../source/items/buildingtool), the remaining camp/ship is just decoration. You can leave it if you wish or tear it down.
+  Once you have chosen a location for your colony, you must place a [Supply Ship](../../source/items/supplycampandship) or [Supply Camp](../../source/items/supplycampandship). You can only place one of these per world. The Supply Camp/Ship gives you the Town Hall block you need to officially start your colony. They also have some other supplies you may need during the building of your colony. Once you have the Town Hall block and the [building tool](../../source/items/buildingtool), the remaining camp/ship is just decoration. You can leave it or tear it down.
   
 ### Step 2: Town Hall
   
