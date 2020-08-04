@@ -27,7 +27,7 @@ The first step is to craft the building tool. You can also get a building tool i
 
 ### Step Two: Designating A Building Location
 
-To place a worker hut or building from the mod, you'll firt need to craft the specific block for that building (see [Recipes](../../source/misc/recipes) Then right-click with the Building Tool on a solid block where you want to place that building. The GUI will pop up:
+To place a worker hut or building from the mod, you'll first need to craft the specific block for that building (see [Recipes](../../source/misc/recipes). Then, right-click with the building tool on a solid block where you want to place that building. The GUI will pop up:
 
 
 <p style="text-align:center;"><img src="../../assets/images/misc/buildtool1.png" alt="Building Tool GUI"></p>
