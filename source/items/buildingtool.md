@@ -39,7 +39,7 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 - Decorations- In here are several structures considered decorations that you can use, and any of your own scans in this folder (to organize them as decorations).
 - My Schematics- In this category, you will see all the scans you have made with the <a href="../../source/items/scantool">scan tool</a>. If you haven't made any, this category will not show up.
 
-**Middle Drop Down:** This is where you will see the different designs and styles of the buildings available (ranging from dwarven to asian, dark oak to spacewars).
+**Middle Drop Down:** This is where you will see the different designs and styles of the buildings available (ranging from dwarven to asian, dark oak, and spacewars, and everything in between).
 
 
 **Right Drop Down:** Here you will be able to see the individual schematics, depending on what you chose:
