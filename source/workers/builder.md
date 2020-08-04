@@ -25,7 +25,7 @@ The Builder is the **MOST** important worker in your colony. As long as you prov
 
 ## Building A Hut/Schematic
 **Before you build *any* building, you need to build the Builder's Hut. If the Builder’s Hut isn't built, the Builder cannot build any other building.**
-Buildings are constructed after the hut block/schematic is placed using the Building Tool, and the green check mark clicked. If it is a hut, you must right-click on the structure block, click Build Options, and then click Build. Only then will a build request be created (indicated in chat). An available builder will accept the request (also noted in chat), and head off to clear the land and start building. They will stop building if they run out of materials, and will head back to their hut and request more.
+Buildings are constructed after the hut block/schematic is placed using the Building Tool and the green checkmark clicked. If it is a hut, you must right-click on the hut block, click Build Options, and then click Build. Only then will a build request be created (indicated in chat). An available builder will accept the request (also noted in chat), and head off to clear the land and start building. They will stop building if they run out of materials and will then head back to their hut and request more.
 
 ## Notes
 - The Builder will not start another build assignment until they have finished the current one.
