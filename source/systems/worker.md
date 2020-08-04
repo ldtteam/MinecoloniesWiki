@@ -7,7 +7,7 @@ layout: default
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b> If it is raining, snowing, nighttime, or a citizen died yesterday (in-game time), your citizens will stop working!</b></p>
 
 ## Workers' Skill Levels
-Worker's skills will level up with each task they undertake.The higher a worker's level, the faster and more efficient they will be. Their level is limited by the level of the worker's home. The level of a worker's work hut and their Intelligence affect their work speed.
+Workers' skills level up as they work. The higher a worker's level, the faster and more efficient they will be. Their level is limited by the level of the worker's home. The level of a worker's work hut and their Intelligence skill level affect the speed that they level up.
 
 | Home Level | Max Worker Level |
 | ---------- | ---------------- |
