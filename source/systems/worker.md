@@ -20,7 +20,7 @@ Workers' skills level up as they work. The higher a worker's level, the faster a
 
 ## Tool/Sword Levels
 
-The of tools/swords the workers can use depends on the level of a worker's work hut.
+The type of tools/swords workers can use depends on the level of a worker's work hut.
 
 | Work Hut Level | Max (Vanilla) Tool/Sword Level                                                                                           | Max (Tinker's Construct) Tool/Sword Level |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
