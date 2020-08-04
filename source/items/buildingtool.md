@@ -36,7 +36,7 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 **Left Drop Down:** Here you will see 3 general categories: My Schematics, Decorations and Hut Blocks/Building Blocks.
 
 - Hut Blocks/Building Blocks- When you have a Hut/Building block in your inventory it will apear in this list for you to place and view.
-- Decorations- In here are several structures considered decorations that you can use, and any of your own scans in this folder (to organize them as decorations).
+- Decorations- Here are several structures considered decorations that you can use and any of your own scans in this folder.
 - My Schematics- In this category, you will see all the scans you have made with the <a href="../../source/items/scantool">scan tool</a>. If you haven't made any, this category will not show up.
 
 **Middle Drop Down:** This is where you will see the different designs and styles of the buildings available (ranging from dwarven to asian, dark oak, and spacewars, and everything in between).
