@@ -40,7 +40,7 @@ You should also gather as many resources as you can - wood, as well as cobble, c
   
 ### Step 4: Tavern
 
-  Your colonists will need a place to sleep, so it is reccomended to build a [Tavern](../../source/buildings/tavern), or else they will complain about their lack of sleep. The tavern also allows visitors to come to your colony.
+  Your colonists will need a place to sleep and a house, so it is recommended to build a [Tavern](../../source/buildings/tavern) next. The Tavern also allows visitors to come to your colony, and you can recruit them to stay as citizens.
 
 ### Step 5: Food
   
