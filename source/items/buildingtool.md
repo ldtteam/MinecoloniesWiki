@@ -25,7 +25,7 @@ The building tool is *THE* most important tool in the entire mod! With it, you c
 The first step is to craft the building tool. You can also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship) in the same rack as the [Town Hall](../../source/buildings/townhall).
 <br>
 
-### Step Two: Designating A Building Location
+### Step Two: Designating a Building Location
 
 To place a worker hut or building from the mod, you'll first need to craft the specific block for that building (see [Recipes](../../source/misc/recipes). Then, right-click with the building tool on a solid block where you want to place that building. The GUI will pop up:
 
