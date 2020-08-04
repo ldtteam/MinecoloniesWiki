@@ -112,7 +112,7 @@ For example, in the official MineColonies server it will be the default 8 chunk 
 
 ### Step 1
 
-Get enough materials and craft your Supply Ship/Camp, then place it with the <a href="#build_tool">building tool</a> or by right-clicking a block with it.. There will be a chest inside the placed Ship/Camp with a Town Hall block and a building tool.
+Get enough materials and craft your Supply Ship/Camp, then place it with the <a href="#build_tool">building tool</a> or by right-clicking a block with it. There will be a chest (or <a href="../../source/items/rack">rack</a>) inside the placed Ship/Camp with a Town Hall block and a building tool.
 
 - **Hint:** Gather as many materials as possible to give to your [Builder](../../source/workers/builder) when they start building. They will ask you for all kinds of materials for each building or upgrade, depending on the style of building you have chosen. The materials needed for most styles will be mainly wood, cobblestone, and torches for the lower levels. Further upgrades will require more elaborate materials.
 
