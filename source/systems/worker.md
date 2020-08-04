@@ -57,7 +57,7 @@ There is also a system in place for the type of armor [Guards](../../source/work
 | Diamond       | 15 - 99     | 4 - 5       |
 
 ## Traits
-When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green**, and the secondary trait in **yellow**, to help you decide which citizen is the best worker for the job.
+When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job.
 
 ![Traits](../../assets/images/misc/traits.png)
 
