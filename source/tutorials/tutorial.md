@@ -158,7 +158,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
      <li><strong>Citizen Recruitment-</strong>Has no purpose (recruiting has been moved to the [tavern](../../source/buildings/tavern)).<br>
      <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
-     <li><strong>Rename Colony-</strong>To change the name of your colony (from "[your username's] Colony", which is the default) to anything you want.</li><br>
+     <li><strong>Rename Colony-</strong>To change the name of your colony (from "[your username]'s Colony", which is the default) to anything you want.</li><br>
      <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
     
    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
