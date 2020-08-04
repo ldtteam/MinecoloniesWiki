@@ -30,7 +30,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
   
 ### Step 2: Town Hall
   
-  The [Town Hall](../../source/buildings/townhall) block is what actually creates the colony, and functions as the center of it. This is where you start using the building tool to place buildings. Using the building tool ensures you can see exactly where the building will be, which direction it will face, and if it is at the right y level (some buildings need to be raised to the correct y level).
+  The [Town Hall](../../source/buildings/townhall) block is what actually creates the colony. It also functions as the center of it. This is where you start using the building tool to place buildings. Using the building tool ensures you can see exactly where the building will be, which direction it will face, and if it is at the right Y level (some buildings need to be raised to the correct Y level).
   
   Once the Town Hall block is placed, you will start receiving your initial 4 citizens.
   
