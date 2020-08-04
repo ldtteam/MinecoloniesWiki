@@ -290,7 +290,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
 
 ### Step 3
 
-Before any other building can be built, you must craft the [Builder's hut](../../source/buildings/builder) block and use your <a href="#build_tool">building tool</a> to place this building. Once you commit to the placement of the Builder's Hut (the green checkmark), the block will be placed and a Builder will be automatically assigned (or you can manually assign one with the best [traits](../../source/systems/worker) for a Builder if you changed this in the setting tab in the Town Hall's GUI).
+Before any other building can be built, you must craft the [Builder's Hut](../../source/buildings/builder) block and use your <a href="#build_tool">building tool</a> to place it. Once you commit to the placement of the Builder's Hut (the green checkmark), the block will be placed and a Builder will be automatically assigned (or you can manually assign one with the best [traits](../../source/systems/worker) for a Builder if you changed this in the setting tab in the Town Hall's GUI).
 You now officially have a [Builder](../../source/workers/builder)! CONGRATULATIONS!
 When accessing the Builder's Hut block by right-clicking on it, you will see a GUI with different options:
 
