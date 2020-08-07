@@ -58,7 +58,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Blacksmith's Hut](../../source/buildings/blacksmith) | **Any** Planks + Building Tool + 3 Iron Ingots    | <recipe>blacksmith</recipe>    |
 | [Builder's Hut](../../source/buildings/builder)    | **Any** Planks + Building Tool + **Any** Wooden Door | <recipe>builder</recipe>       |
 | [Chicken Farmer's Hut](../../source/buildings/chickenfarmer) | **Any** Planks + Building Tool + Egg       | <recipe>chickenherder</recipe> |
-| [Citizen Hut](../../source/buildings/citizenhut)   | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
+| [House](../../source/buildings/house)              | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Building Tool + 3 Iron Swords   | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Building Tool + Barrel             | <recipe>composter</recipe>     |
 | [Cowherd's Hut](../../source/buildings/cowherd)    | **Any** Planks + Building Tool + Raw Beef            | <recipe>cowboy</recipe>        |
@@ -74,7 +74,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Guard Tower](../../source/buildings/guardtower)   | **Any** Planks + Building Tool + Bow                 | <recipe>guardtower</recipe>    |
 | [Hospital](../../source/buildings/hospital)        | **Any** Planks + Building Tool + Carrot              | <recipe>hospital</recipe>      |
 | [Library](../../source/buildings/library)          | **Any** Planks + Building Tool + Bookshelf           | <recipe>library</recipe>       |
-| [Lumberjack's Hut](../../source/buildings/lumberjack) | **Any** Planks + Building Tool + Wooden Axe       | <recipe>lumberjack</recipe>    |
+| [Logger's Hut](../../source/buildings/logger)      | **Any** Planks + Building Tool + Wooden Axe          | <recipe>lumberjack</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Building Tool + Redstone Block      | <recipe>mechanic</recipe>      |
 | [Mine](../../source/buildings/mine)                | **Any** Planks + Building Tool + Wooden Pickaxe      | <recipe>mine</recipe>          |
 | [Plantation](../../source/buildings/plantation)    | **Any** Planks + Building Tool + Cactus              | <recipe>plantation</recipe>    |
