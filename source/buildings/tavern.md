@@ -10,7 +10,7 @@ layout: default
     <recipe>tavern</recipe>
 </div>
 
-The Tavern is like a [Citizen Hut](../../source/buildings/citizenhut) in that it houses citizens, however, the Tavern houses four instead of one and can't be upgraded to house more.
+The Tavern is like a [House](../../source/buildings/house) in that it houses citizens, however, the Tavern houses four instead of one and can't be upgraded to house more.
 
 Every so often, travelers will come to the Tavern. You can recruit these travelers (with items) to live and work in your colony. This function used to be part of the [Town Hall](../../source/buildings/townhall) but has been moved here. 
 
