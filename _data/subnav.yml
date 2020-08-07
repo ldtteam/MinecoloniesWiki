@@ -117,8 +117,8 @@ subnav:
         url: source/workers/knightintraining
       - page: Library Student
         url: source/workers/librarystudent
-      - page: Lumberjack
-        url: source/workers/lumberjack
+      - page: Logger
+        url: source/workers/logger
       - page: Mechanic
         url: source/workers/mechanic
       - page: Miner
@@ -159,8 +159,6 @@ subnav:
         url: source/buildings/builder
       - page: Chicken Farmer's Hut
         url: source/buildings/chickenfarmer
-      - page: Citizen Hut
-        url: source/buildings/citizenhut
       - page: Combat Academy
         url: source/buildings/combatacademy
       - page: Composter's Hut
@@ -189,10 +187,12 @@ subnav:
         url: source/buildings/guardtower
       - page: Hospital
         url: source/buildings/hospital
+      - page: House
+        url: source/buildings/house
       - page: Library
         url: source/buildings/library  
-      - page: Lumberjack's Hut
-        url: source/buildings/lumberjack
+      - page: Logger's Hut
+        url: source/buildings/logger
       - page: Mechanic's Hut
         url: source/buildings/mechanic
       - page: Mine
