@@ -40,9 +40,9 @@ You should also gather enough food to feed yourself and your initial citizens un
   
   Before anything can be built, you need a [Builder](../../source/workers/builder). The Builder must build their own [Builder's Hut](../../source/buildings/builder) before building any other huts, as they cannot build or upgrade a hut to a higher level than their own hut level.
   
-### Step 4 Lumberjack
+### Step 4 Logger
   
-  If your style is wood, it's recommended to build a [Lumberjack's Hut](../../source/buildings/lumberjack) next. That way your new [Lumberjack](../../source/workers/lumberjack) can start gathering wood for your next builds and for tools and other items.
+  If your style is wood, it's recommended to build a [Logger's Hut](../../source/buildings/logger) next. That way your new [Logger](../../source/workers/logger) can start gathering wood for your next builds and for tools and other items.
   
 ### Step 5 Miner
   
@@ -256,7 +256,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
         <br>
           <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
           <br>
-          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
+          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/house"> House</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
@@ -351,6 +351,6 @@ You have now completed the most important steps completed to start and create yo
 
 Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Sawmill](../../source/buildings/sawmill), [Farm](../../source/buildings/farm&field), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant), and more are probably good places to start. 
 
-But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [Citizen Hut](../../source/buildings/citizenhut). This will give you additional citizens for each level of a Citizen Hut you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Lumberjacks, Builders, Farmers, Fishers, and many more! 
+But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [House](../../source/buildings/house). This will give you additional citizens for each level of a House you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Loggers, Builders, Farmers, Fishers, and many more! 
 
 **Hint:** Upgrade your huts to the highest level possible (level 5 for all of them except the [Tavern](../../source/buildings/tavern)) to get achievements (and increase the speed at which the worker [levels](../../source/systems/worker)).
