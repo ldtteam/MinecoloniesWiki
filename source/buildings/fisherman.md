@@ -23,7 +23,7 @@ The Fisherman's Hut is where the Fisherman will catch fish. The Fisherman requir
 
 <p style="text-align:center;"><img src="../../assets/images/misc/pond.png" alt="Pond"></p>
 
-Upgrading the Fisherman's Hut will expand the range at which the Fisherman can fish, and the higher the level of the Fisherman's Hut, the more loot the Fisherman will be fishing out (instead of fish). You can also give the Fisherman an enchanted fishing rod when their hut is level 5 and reap the benefits of the treasures they will be catching for you.
+Upgrading the Fisherman's Hut will expand the range at which the Fisherman can fish, and the higher the level of the Fisherman's Hut, the more loot the Fisherman will be fishing out (instead of fish). This includes prismarine and sponges!
 
 ## Fisherman's Hut GUI
 
