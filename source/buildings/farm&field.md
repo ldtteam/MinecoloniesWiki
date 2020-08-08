@@ -23,7 +23,7 @@ layout: default
 
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods (as long as they have normal growth behavior). Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
 
-The Farmer will also craft seeds, carved pumpkins, and hay bales. They will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Farmer will also craft seeds, carved pumpkins, hay bales, and netherwart blocks. They will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
 **Note:** The Farmer can only learn a set number of recipes based on their hut level. So:
 
