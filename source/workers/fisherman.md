@@ -21,6 +21,6 @@ layout: default
   </div>
 </div>
 
-The Fisherman is an important worker for your colony. As long as you provide the Fisherman with a fishing rod, the Fisherman will provide your colony with everything that can be caught: cod, salmon, pufferfish, tropical fish, junk, and sometimes even TREASURE!
+The Fisherman is an important worker for your colony. As long as you provide the Fisherman with a fishing rod, the Fisherman will provide your colony with everything that can be caught: cod, salmon, pufferfish, tropical fish, junk, and sometimes even TREASURE (like prismarine and sponges)!
 
 ### Note: The Fisherman will require a body of water a minimum of 7 x 7 x 1 blocks for them to be able to work, and it must be near their hut.
