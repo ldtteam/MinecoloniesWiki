@@ -37,6 +37,20 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 
 <br>
 
+**Hint:** The higher the level of the Glassblower's Hut, the more furnaces the Glassblower will have available. The number of furnaces they *use* depends on their Creativity level. So:
+
+
+| Building Level |  Furnaces |
+| :-----: | :-----: | 
+| 1 |  1 |
+| 2 |  2 |
+| 3 |  3 |
+| 4 |  4 |
+| 5 |  5 |
+
+
+**Hint:** The higher the Glassblower's Focus level, the faster things will smelt. At high levels, they can go *much* faster than the player!
+
 ## Glassblower's Hut GUI
 
 When accessing the Glassblower's Hut block by right-clicking on it, you will see a GUI with different options:

@@ -23,23 +23,23 @@ layout: default
 
 The Builder is the **MOST** important worker in your colony. As long as you provide the Builder with all the resources they ask for, they will build and upgrade all of your town buildings, workers' huts, decorations, and your personal schematics.
 
+## Building A Hut/Schematic
 **Before you build *any* building, you need to build the Builder's Hut. If the Builder’s Hut isn't built, the Builder cannot build any other building.**
+Buildings are constructed after the hut block/schematic is placed using the Building Tool and the green checkmark clicked. If it is a hut, you must right-click on the hut block, click Build Options, and then click Build. Only then will a build request be created (indicated in chat). An available builder will accept the request (also noted in chat), and head off to clear the land and start building. They will stop building if they run out of materials and will then head back to their hut and request more.
 
-- **Note:** The Builder can *ONLY* build or upgrade any other hut up to the level of their own hut. So, for the Builder to upgrade any building, the Builder's Hut *MUST* be upgraded first. Then they will be able to upgrade any other building(s).  
+## Notes
+- The Builder will not start another build assignment until they have finished the current one.
+- The Builder can *ONLY* upgrade other huts to the level of their Builder’s Hut. Upgrade the Builder’s Hut to further upgrade other buildings.
+- You can rearrange the priority and cancel the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI under the Work Orders symbol (!).
+- The Builder will collect any blocks they remove and deposit them in their hut inventory and any <a href="../../source/items/rack">racks</a>/chests in their hut. Items are never lost or destroyed.
 
-## A few things to consider
+If you see the Builder has not finished building/upgrading any build order and they aren't asking for any materials, go to the Builder’s Hut and recall the Builder and wait a bit to see what they need. You can also go to page 2 of the Builder’s Hut GUI and check the list of materials required. Any material in the list that is missing will be in red.
 
-The Builder will not start another build assignment until they have finished the current one.
+If a Build Request is created but no Builder starts building, the building may be out of their range. Cancel the build order, then go to Build Options of the hut you want to be built and manually assign a Builder (top right).
+ 
 
-You can go to the [Town Hall's](../../source/buildings/townhall) GUI and click on the Work Orders tab to cancel the current build as well as arrange the priorities of the other build orders you have there. If you cancel a work order that was being built, if you assign the build order again, the Builder will continue where they left off.
-
-Any block the Builder removes while building and/or upgrading will be kept in their inventory, then dumped into the Builder's Hut inventory.
-
-**Hint:** If you see the Builder has not finished building/upgrading any build order and they aren't asking for any materials, go to the Builder’s Hut and recall the Builder and wait a bit to see what they need. You can also go to page 2 of the Builder’s Hut GUI and check the list of materials required. Any material in the list that is missing will be in red.  
-
-<p>After pressing the <b>Build Options</b> button you have a few options:</p>  
-
-## Hut's Build Options Before Hut is Built  
+## Build Options Details
+### Before Hut is Built
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -47,16 +47,15 @@ Any block the Builder removes while building and/or upgrading will be kept in th
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <ul><strong>Schematic Style: </strong> Here you can verify the style of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position (since each schematic is different).</ul>
+      <ul><strong>Style (top left): </strong> Here you can verify the style of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position (since each schematic is different).</ul>
       <ul><strong>Builder: </strong> Here is where you can choose what Builder you want on the project. If it is out of your Builders' range, this is where you can manually assign one.</ul>
-      <ul><strong>List: </strong>This is the list of resources that the Builder will need for the schematic style selected.
-       <ul><strong>Repair: </strong>This is to repair a building (at its current level). This will remove any changes that a player has made to the building. This is not needed when the building hasn't been built yet.</ul>
+      <ul><strong>List: </strong>This is the list of resources that the Builder will need for the schematic style selected.</ul>
+       <ul><strong>Repair: </strong> Not needed, as the building hasn't been built yet.</ul>
       <ul><strong>Build Building: </strong>This is where you tell the Builder to build the building with the style selected.</ul>
     </ul>
-  </div>
-</div>  
 
-## Hut's Build Options After Hut is Built  
+
+### After Hut is Built
 
 <div class="row">
   <div class="col-sm-12 col-md">
