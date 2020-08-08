@@ -22,7 +22,7 @@ The building tool is *THE* most important tool you will need for the entire mod!
 
 ### Step One
 
-The first step is to craft the build tool. You will also get a build tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It will be in the same [rack](../../source/items/rack) as the [Town Hall](../../source/buildings/townhall).
+The first step is to craft the building tool. You will also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It will be in the same [rack](../../source/items/rack) as the [Town Hall](../../source/buildings/townhall).
 <br>
 
 ### Step Two
