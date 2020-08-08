@@ -25,4 +25,4 @@ The Lumberjack is one of the most essential workers in your colony. They will ch
 
 **Hint:** You can remove any trees/saplings and replant any type of sapling in any pattern or shape you need to create your perfect grove for easier access and less walking around, which means more efficient chopping.
 
-**Note:** In 1.16+ Lumberjacks also require hoes (for breaking leaves).
+**Note:** In Minecraft 1.16+ Lumberjacks require hoes (for breaking leaves).
