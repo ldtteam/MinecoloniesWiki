@@ -4,7 +4,7 @@ layout: recipes
 ---
 # Recipes
 
-Listed in this page are the current crafting recipes available in MineColonies/Structurize. This will be updated as any craftables are added and made public.
+Listed on this page are the current crafting recipes available in MineColonies/Structurize. This page will be updated as any craftables are added and made public.
 
 **Note:**  
 The [building tool](../../source/items/buildingtool) used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
@@ -27,8 +27,8 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 | [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
 | [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Building Tool + String | <recipe>floatingcarpet</recipe> |
-| [Multi-Piston](../../source/buildings/multipiston) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multipiston</recipe> |
-| [Paper Walls](../../source/buildings/paperwalls) | **Any** Planks + Paper                  | <recipe>paperwall</recipe>      |
+| [Multi-Piston](../../source/items/multipiston) | Stone + Redstone Blocks + Building Tool + Pistons | <recipe>multipiston</recipe> |
+| [Paper Walls](../../source/items/paperwalls)  | **Any** Planks + Paper                     | <recipe>paperwall</recipe>      |
 | [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool     | <recipe>placeholderblock</recipe> |
 | [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | <recipe>solidplaceholderblock</recipe> |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Building Tool + 3 Chests  | <recipe>postbox</recipe>        |
@@ -47,18 +47,18 @@ The [Calipers](../../source/items/calipers) are not on here as they cannot be cr
 ## Hut Blocks
 
 **Notes**  
-The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after you have placed the [Supply Ship/Camp](../../source/items/supplycampandship).
+The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after placing the [Supply Ship/Camp](../../source/items/supplycampandship).
 The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the [Barracks](../../source/buildings/barracks) instead.
 
 | Name                                               | Ingredients                                          | Recipe                         |
 | -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
 | [Archery](../../source/buildings/archery)          | **Any** Planks + Building Tool + 3 Bows              | <recipe>archery</recipe>       |
-| [Bakery](../../source/buildings/baker)             | **Any** Planks + Building Tool + Wheat               | <recipe>baker</recipe>         |
+| [Bakery](../../source/buildings/bakery)            | **Any** Planks + Building Tool + Wheat               | <recipe>baker</recipe>         |
 | [Barracks](../../source/buildings/barracks)        | **Any** Planks + Building Tool + Iron Block          | <recipe>barracks</recipe>      |
 | [Blacksmith's Hut](../../source/buildings/blacksmith) | **Any** Planks + Building Tool + 3 Iron Ingots    | <recipe>blacksmith</recipe>    |
 | [Builder's Hut](../../source/buildings/builder)    | **Any** Planks + Building Tool + **Any** Wooden Door | <recipe>builder</recipe>       |
 | [Chickenherder's Hut](../../source/buildings/chickenherder) | **Any** Planks + Building Tool + Egg        | <recipe>chickenherder</recipe> |
-| [Citizen's Hut](../../source/buildings/citizen)    | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
+| [Citizen's Hut](../../source/buildings/citizenhut) | **Any** Planks + Building Tool + Torch               | <recipe>citizen</recipe>       |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Building Tool + 3 Iron Swords   | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Building Tool + Barrel             | <recipe>composter</recipe>     |
 | [Cowboy's Hut](../../source/buildings/cowboy)      | **Any** Planks + Building Tool + Raw Beef            | <recipe>cowboy</recipe>        |
