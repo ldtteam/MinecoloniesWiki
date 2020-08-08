@@ -94,7 +94,7 @@ If you try to place another Town Hall outside of your protected area, you will g
       <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens.</li>
     </ul>
     <br>  
-    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
+    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the config file. Here you have:</p>
     <ul>
       <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li>
       <br>
@@ -192,7 +192,7 @@ If you try to place another Town Hall outside of your protected area, you will g
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
-          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether travelers will spawn at your <a href="../../source/buildings/tavern"> Tavern</a> (if you have one) and whether new kids will be born in your colony.</li>
+          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
           <br>
           <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
     </ul>

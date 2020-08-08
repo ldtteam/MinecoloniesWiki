@@ -136,9 +136,9 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what type of workers they are.</li>
-     <br>
-     <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
+      <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what job they have.</li>
+      <br>
+      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
     </ul>
   </div>
 </div>
@@ -160,8 +160,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
      <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
      <li><strong>Rename Colony-</strong>To change the name of your colony (from "[your username]'s Colony", which is the default) to anything you want.</li><br>
      <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
-    
-   <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
+    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
      <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li><br>
      <li><strong>Feuds-</strong>Other colonies that you have added as a feud and that have confirmed your colony as a feud as well.</li>
     </ul>
@@ -171,7 +170,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
 
 #### <strong>Permissions:</strong> Here you can invite other players to your colony to collaborate. 
 
-<p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give him a <i>rank</i> in your Town. Each rank will have certain privileges in the protection system that you can configure.</p>
+<p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give them a rank in your colony. Each rank will have certain privileges in the changeable protection system.</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -179,8 +178,9 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 1: </strong>Here you can type the name of the player you want to add and decide which rank you want them to be. You can choose from Officer, Friend, Neutral, or Hostile.</li><br>
-     <li><strong>Page 2: </strong>Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or a lower rank.</li>
+      <li><strong>Page 1: </strong>Here you type the name of the player you want to add.</li>
+      <br>
+      <li><strong>Page 2: </strong>Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or lower rank.</li>
     </ul>
   </div>
 </div>  
@@ -193,13 +193,16 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Page 3: </strong>Here you can select each rank that you would like to manage.</li><br>
-     <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li>
+      <li><strong>Page 3: </strong>Here you can select the rank that you would like to manage.</li>
+      <br>
+      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li> 
     </ul>
   </div>
 </div>  
 
+
 <p><strong>Permissions Pg. 5 & 6: </strong>In this section, you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block regardless of their rank in your colony.</p>
+
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -207,8 +210,9 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
   <div class="col-sm-12 col-md">
     <ul><br>
-     <li><strong>Page 5: </strong>The field where you can enter the position (X, Y, Z) of the block that you want to make free for interaction.</li><br>
-     <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction and can remove them.</li>
+      <li><strong>Page 5: </strong>Where you enter the position (X, Y, Z) of the block that you want to make free for interaction.</li>
+      <br>
+      <li><strong>Page 6: </strong>Here you will see the list of block positions that you have added as free for interaction and can remove them.</li>
     </ul>
   </div>
 </div>
@@ -224,8 +228,9 @@ You can now right-click the Town Hall block again to look at its graphical user 
   <div class="col-sm-12 col-md">
     <ul>
      <br>
-     <li><strong>Page 1: </strong>When you select a citizen, their stats will appear here. You can also recall them to the Town Hall block on this page.</li><br>
-     <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skill levels.</li>
+      <li><strong>Page 1: </strong>When you select a citizen, their stats and job will appear here. You can also recall them to the Town Hall block on this page.</li>
+      <br>
+      <li><strong>Page 2: </strong>Here you will see a list of the citizens in your colony. Select a citizen to see their skills.</li>
     </ul>
   </div>
 </div>
@@ -241,13 +246,18 @@ You can now right-click the Town Hall block again to look at its graphical user 
   <div class="col-sm-12 col-md">
     <ul>
     <br>
-     <li><strong>Page 1: </strong>There are two buttons here:</li>
-       <ul>
-       <br>
-        <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li><br>
-        <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each [Citizen's Hut](../../source/buildings/citizenhut) or [Tavern](../../source/buildings/tavern). This is better if you have a large colony and many workers spread out in a large area, so you can house your citizens as close as possible to their workplace.</li>
-       </ul>
-     <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your guards will have a glow of this color around them when you put them in follow mode at their [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower). This is for the PVP system, so you know which guards are yours when you are fighting. Your citizens' names will also be in this color when looking at them.</li>
+      <li><strong>Page 1: </strong>There are four buttons here:</li>
+        <ul>
+        <br>
+          <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
+          <br>
+          <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/citizenhut"> Citizen's Hut</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
+          <br>
+          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
+          <br>
+          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
+          <br>
+          <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
     </ul>
   </div>
 </div>
@@ -262,9 +272,9 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <br>
-     <li><strong>Page 1: </strong>Blank page except for the header (future use).</li><br>
-     <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up or down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
+      <li><strong>Page 1: </strong>Blank page except for the header (future use).</li>
+      <br>
+      <li><strong>Page 2: </strong>Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your Builders will complete the builds from top to bottom, and you can change the priority of the builds by moving them up or down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again.</li>
     </ul>
   </div>
 </div>
