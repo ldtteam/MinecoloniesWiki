@@ -22,12 +22,12 @@ The building tool is *THE* most important tool you will need for the entire mod!
 
 ### Step One
 
-The first step is to craft the building tool. You will also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It will be in the same [rack](../../source/items/rack) as the [Town Hall](../../source/buildings/townhall).
+The first step is to craft the building tool. You will also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It is in the same rack as the [Town Hall](../../source/buildings/townhall).
 <br>
 
 ### Step Two
 
-To place a worker hut or a schematic from the mod, you first need to have the hut block for the building you want in your inventory. Then, using the build tool, you can right click on the block where you want to place it. The GUI will pop up where you have many options:
+To place a worker hut or a building from the mod, you first need to have the hut block for the building you want in your inventory. Then, using the building tool, you can right click on the block where you want to place it. The GUI will pop up where you have many options:
 
 
 <p style="text-align:center;"><img src="../../assets/images/misc/buildtool1.png" alt="Build Tool GUI"></p>
@@ -40,7 +40,7 @@ To place a worker hut or a schematic from the mod, you first need to have the hu
 - Huts- When you have a hut block in your inventory, it will appear in this list for you to place and view.
 
 
-**Middle Drop Down:** This is where you will see the different styles (according to what you have chosen in the left drop down).
+**Middle Drop Down:** This is where you will see the different styles (according to what you have chosen in left drop down).
 
 
 **Right Drop Down:** Here you will be able to see the individual schematics, depending on what you chose:
