@@ -21,7 +21,9 @@ layout: default
   </div>
 </div>
 
-The Dyer is part of the production of the your colony. The Dyer will craft dyes and dyed items, as well as red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials. (The Dyer automatically knows the recipes to make green dye and red sand, however.)
+The Dyer is part of the production of the your colony. The Dyer will craft dyes and dyed items, as well as red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials. (The Dyer automatically knows how to make green dye and red sand, however.)
+
+The Dyer will require fuel to use in their furnace(s).
 
 **Note:** The Dyer can only learn a set number of recipes based on their hut level. So:
 

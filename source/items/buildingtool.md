@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <br>
-The building tool is *THE* most important tool you will need for the entire mod! With the building tool, you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
+The building tool is *THE* most important tool in the entire mod! With it, you can place all the buildings, worker huts, and even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
 <br><br>
 
 <p class="h4"><a id="build_tool">Building Tool Video</a></p>
@@ -20,14 +20,14 @@ The building tool is *THE* most important tool you will need for the entire mod!
 </div>
 <br>
 
-### Step One
+### Step One: Crafting
 
-The first step is to craft the building tool. You will also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship). It is in the same rack as the [Town Hall](../../source/buildings/townhall).
+The first step is to craft the building tool. You can also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship) in the same rack as the [Town Hall](../../source/buildings/townhall).
 <br>
 
-### Step Two
+### Step Two: Designating a Building Location
 
-To place a worker hut or a building from the mod, you first need to have the hut block for the building you want in your inventory. Then, using the building tool, you can right click on the block where you want to place it. The GUI will pop up where you have many options:
+To place a worker hut or building from the mod, you'll first need to craft the specific block for that building (see [Recipes](../../source/misc/recipes). Then, right-click with the building tool on a solid block where you want to place that building. The GUI will pop up:
 
 
 <p style="text-align:center;"><img src="../../assets/images/misc/buildtool1.png" alt="Building Tool GUI"></p>
@@ -35,12 +35,11 @@ To place a worker hut or a building from the mod, you first need to have the hut
 
 **Left Drop Down:** Here you will see 3 general categories: My Schematics, Decorations and Hut Blocks/Building Blocks.
 
-- My Schematics- In this category you will see all the scans you have made with the [scan tool](../../source/items/scantool). If you haven't made any, this category will not show up.
-- Decorations- In here are several structures considered decorations that you can use, and any of your own scans in this folder (to organize them as decorations).
 - Hut Blocks/Building Blocks- When you have a Hut/Building block in your inventory it will apear in this list for you to place and view.
+- Decorations- Here are several structures considered decorations that you can use and any of your own scans in this folder.
+- My Schematics- In this category, you will see all the scans you have made with the <a href="../../source/items/scantool">scan tool</a>. If you haven't made any, this category will not show up.
 
-
-**Middle Drop Down:** This is where you will see the different styles (according to what you have chosen in left drop down).
+**Middle Drop Down:** This is where you will see the different designs and styles of the buildings available (ranging from dwarven to asian, dark oak, and spacewars, and everything in between).
 
 
 **Right Drop Down:** Here you will be able to see the individual schematics, depending on what you chose:
@@ -53,13 +52,13 @@ To place a worker hut or a building from the mod, you first need to have the hut
 **In the middle of the screen** are the controls to adjust the structure you are about to place.
 
 - The blue arrows are so you can move the 3D structure you are viewing (front - back - right - left).
-- The orange minus and plus signs are to raise or lower the structure. 
+- The orange minus and plus signs are to raise or lower the structure on the Y axis. 
 - The orange curved arrows are to rotate the structure left or right.
 - The orange triangles in the middle are to mirror the image (to change right to left and left to right).
 - The green check mark is for when you are done and want to commit to placing it.
-- The red X is to cancel the whole process.
+- The red X is to cancel the whole process and turn off the ghost image of the building.
 
-- **Note:** When in Creative Mode, you will also see in the lower right the Paste options. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/placeholderblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it.
+- **Note:** When in Creative Mode, you will also see options in the lower right. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/placeholderblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it (without placeholder blocks).
 
 <br>
 
@@ -68,6 +67,6 @@ To place a worker hut or a building from the mod, you first need to have the hut
 <br>
 ### Step Three
 
-Now that you have the structure ready to place, click on the green check mark and voilá... it will be sent as a build order to the [Builder](../../source/workers/builder) if it's a decoration or schematic! But if it's a hut, you might have to go into the hut block's GUI and press on the build button to have the build order sent to the Builder.
+Now that you have the structure ready to place, click on the green check mark and voilá...construction tape will appear and a build request will be created! It will automatically create a build request if it's a decoration or custom schematic, but if it's a hut, go into the hut block's GUI and click the Build Options button, then Build Building, to create the build request.
 
-You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders tab to see the queue of all build requests you have for the Builder.
+You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders (! symbol) tab to see the queue of all build requests you have for the Builders in your colony.

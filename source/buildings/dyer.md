@@ -22,7 +22,7 @@ layout: default
 ### Note: The Dyer cannot be built until you have a level 3 [Flower Shop](../../source/buildings/flowershop) (or three level 1 Flower Shops, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Dyer's Hut is where the Dyer will craft dyes and dye other items, including red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows the recipes to make green dye and red sand, but you must teach it the recipes for the other dyes and the dyed items.
+The Dyer's Hut is where the Dyer will craft dyes and dye other items, including red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows how to make green dye and red sand, but you must teach it the recipes for the other dyes and the dyed items.
 
 **Hint:** The number of recipes you can teach the Dyer's Hut doubles per building level. So:
 
@@ -35,6 +35,18 @@ The Dyer's Hut is where the Dyer will craft dyes and dye other items, including 
 | 5 | 320 | 
 
 <br>
+
+**Hint:** The higher the level of the Dyer's Hut, the more furnaces the Dyer will have available. The number of furnaces they *use* depends on their Creativity level. So:
+
+| Dyer's Hut Level |  Furnaces |
+| :-----: | :-----: | 
+| 1 |  1 |
+| 2 |  2 |
+| 3 |  3 |
+| 4 |  4 |
+| 5 |  5 |
+
+**Hint:** The higher the Dyer's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
 
 ## Dyer's Hut GUI
 
