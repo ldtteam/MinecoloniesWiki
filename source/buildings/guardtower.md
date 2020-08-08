@@ -60,7 +60,7 @@ This is page 2 of the GUI.
         <li>If you set it to Patrol, you have a couple different options. </li>
         <ul>
             <li>If you set <strong>Find Patrol Target</strong> to automatically, the Guard will patrol from hut to hut and back to their tower.</li>
-            <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard to patrol between.</li>
+            <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard-scepter and click a new patrol position. The old ones should disappear.</li>
       </ul>
     </ul>
         <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard will retreat when they have low health, if possible. You can choose from Off or On.  
