@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <br>
-The build tool is *THE* most important tool you will need for the entire mod! With the build tool, you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
+The building tool is *THE* most important tool you will need for the entire mod! With the building tool, you can place all the buildings, worker huts, and even even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
 <br><br>
 
 <p class="h4"><a id="build_tool">Build Tool Video</a></p>
