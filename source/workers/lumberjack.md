@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Strength</p>
       <p class="traits">Focus</p>
-      <p><a href="../buildings/lumberjack">Lumberjack</a></p>
+      <p><a href="../buildings/lumberjack">Lumberjack's Hut</a></p>
     </div>
   </div>
 </div>
@@ -24,3 +24,5 @@ layout: default
 The Lumberjack is one of the most essential workers in your colony. They will chop trees to provide the wood for all your colony's needs. The Lumberjack will also plant a sapling in the tree's place of the same variety they just chopped down (provided that the tree dropped saplings and the setting is on in the Lumberjack's Hut block GUI). The Lumberjack will only plant a sapling AFTER chopping down a tree. If there are no trees nearby, they will NOT plant any saplings to create a tree.
 
 **Hint:** You can remove any trees/saplings and replant any type of sapling in any pattern or shape you need to create your perfect grove for easier access and less walking around, which means more efficient chopping.
+
+**Note:** In Minecraft 1.16+ Lumberjacks require hoes (for breaking leaves).

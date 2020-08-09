@@ -21,6 +21,8 @@ layout: default
 
 The Lumberjack's Hut is where the Lumberjack will go in between chopping down trees. The Lumberjack will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it.
 
+**Note:** In Minecraft 1.16+ Lumberjacks require hoes (for breaking leaves).
+
 <br>
 
 ## Lumberjack's Hut GUI
