@@ -23,7 +23,7 @@ The Fisher's Hut is where the Fisher will catch fish. The Fisher requires a fish
 
 <p style="text-align:center;"><img src="../../assets/images/misc/pond.png" alt="Pond"></p>
 
-Upgrading the Fisher's Hut will expand the range at which the Fisher can fish, and the higher the level of the Fisher's Hut, the more loot the Fisher will be fishing out (instead of fish). You can also give the Fisher an enchanted fishing rod when their hut is level 5 and reap the benefits of the treasures they will be catching for you.
+Upgrading the Fisher's Hut will expand the range at which the Fisher can fish, and the higher the level of the Fisher's Hut, the more loot the Fisher will be fishing out (instead of fish). This includes prismarine and sponges!
 
 ## Fisher's Hut GUI
 
