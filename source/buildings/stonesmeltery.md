@@ -24,7 +24,7 @@ layout: default
 
 The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, terracotta into glazed terracotta, all types of stone into all types of smooth stone, and logs into charcoal. They can also pop chorus fruits! The Stone Smelter will only work when they receive a request from another worker and have the needed materials. 
 
-**Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will be able to use. So:
+**Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will have available. The number of furnaces they *use* depends on their Athletics level. So:
 
 
 | Building Level |  Furnaces |
@@ -35,6 +35,8 @@ The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone,
 | 4 |  4 |
 | 5 |  5 |
 
+
+**Hint:** The higher the Stone Smelter's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
 
 ## Stone Smeltery GUI
 

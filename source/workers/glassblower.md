@@ -21,7 +21,9 @@ layout: default
   </div>
 </div>
 
-The Glassblower is a part of the supply production of your colony. The Glassblower will smelt sand into glass blocks and create glass panes for your colony's needs. The Glassblower will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Glassblower is part of the supply production of your colony. The Glassblower will smelt sand into glass blocks and create glass panes for your colony's needs. The Glassblower will only make these items when they have been taught the recipes (they already know how to smelt sand), receive a request for an item, and have the needed materials.
+
+The Glassblower will require fuel to use in their furnace(s).
 
 **Note:** The Glassblower can only learn a set number of recipes based on their hut level. So:
 
