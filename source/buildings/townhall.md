@@ -5,7 +5,7 @@ layout: default
 # Town Hall
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/townhall.png" alt="Town Hall's Hut" />
+    <img src="../../assets/images/buildings/townhall.png" alt="Town Hall's Block" />
     <hr />
     <recipe>townhall</recipe>
 </div>
@@ -87,11 +87,10 @@ If you try to place another Town Hall outside of your protected area, you will g
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
       <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.</li><br>
-      <li><strong>Citizen Recruitment-</strong>Has no purpose. Recruiting has been moved to the <a href="../../source/buildings/tavern"> Tavern</a>.</li><br>
       <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
       <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
       <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li><br>
-      <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens.</li>
+      <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
     </ul>
     <br>  
     <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the config file. Here you have:</p>
