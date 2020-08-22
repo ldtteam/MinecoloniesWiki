@@ -46,9 +46,9 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
   
   The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisher's Hut](../../source/buildings/fisher). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisher is faster. Building a [Restaurant](../../source/buildings/restaurant) may also be advisable if you don't want to feed your colonists (or cook their food) by hand.
 
-### Step 6: Logger
+### Step 6: Forester
   
-  If your style is wood, it's recommended to build a [Logger's Hut](../../source/buildings/logger) next. That way your new [Logger](../../source/workers/logger) can start gathering wood for your next builds and for tools and other items.
+  If your style is wood, it's recommended to build a [Forester's Hut](../../source/buildings/forester) next. That way your new [Forester](../../source/workers/forester) can start gathering wood for your next builds and for tools and other items.
   
 ### Step 7: Miner
   
