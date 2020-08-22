@@ -74,7 +74,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Guard Tower](../../source/buildings/guardtower)   | **Any** Planks + Building Tool + Bow                 | <recipe>guardtower</recipe>    |
 | [Hospital](../../source/buildings/hospital)        | **Any** Planks + Building Tool + Carrot              | <recipe>hospital</recipe>      |
 | [Library](../../source/buildings/library)          | **Any** Planks + Building Tool + Bookshelf           | <recipe>library</recipe>       |
-| [Logger's Hut](../../source/buildings/logger)      | **Any** Planks + Building Tool + Wooden Axe          | <recipe>lumberjack</recipe>    |
+| [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Building Tool + Wooden Axe          | <recipe>lumberjack</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Building Tool + Redstone Block      | <recipe>mechanic</recipe>      |
 | [Mine](../../source/buildings/mine)                | **Any** Planks + Building Tool + Wooden Pickaxe      | <recipe>mine</recipe>          |
 | [Plantation](../../source/buildings/plantation)    | **Any** Planks + Building Tool + Cactus              | <recipe>plantation</recipe>    |
