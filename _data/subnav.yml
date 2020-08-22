@@ -107,6 +107,8 @@ subnav:
         url: source/workers/fletcher
       - page: Florist
         url: source/workers/florist
+      - page: Forester
+        url: source/workers/forester
       - page: Glassblower
         url: source/workers/glassblower
       - page: Guard
@@ -117,8 +119,6 @@ subnav:
         url: source/workers/knightintraining
       - page: Library Student
         url: source/workers/librarystudent
-      - page: Logger
-        url: source/workers/logger
       - page: Mechanic
         url: source/workers/mechanic
       - page: Miner
@@ -181,6 +181,8 @@ subnav:
         url: source/buildings/fletcher
       - page: Flower Shop
         url: source/buildings/flowershop
+      - page: Forester's Hut
+        url: source/buildings/forester
       - page: Glassblower's Hut
         url: source/buildings/glassblower
       - page: Guard Tower
@@ -191,8 +193,6 @@ subnav:
         url: source/buildings/house
       - page: Library
         url: source/buildings/library  
-      - page: Logger's Hut
-        url: source/buildings/logger
       - page: Mechanic's Hut
         url: source/buildings/mechanic
       - page: Mine
