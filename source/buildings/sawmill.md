@@ -5,14 +5,14 @@ layout: default
 # Sawmill
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/sawmill.png" alt="Sawmill's Hut" />
+    <img src="../../assets/images/buildings/sawmill.png" alt="Sawmill" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/miller">Miller</a></p>
+        <p><a href="../workers/carpenter">Carpenter</a></p>
         </div>
     </div>
     <hr />
@@ -22,7 +22,7 @@ layout: default
 ### Note: The Sawmill cannot be built until you have a level 3 [Lumberjack's Hut](../../source/buildings/lumberjack) (or three level 1 Lumberjack's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Sawmill is where the Miller will craft any items made of at least 75% wood (no bows or redstone items). The Miller will also craft a few other items, including cactus planks, [shingles](../../source/items/shingles), [timber frames](../../source/items/timberframes), and [barrels](../../source/items/barrel). For them to do this, you must teach the Sawmill the recipes and the Miller must receive a request for an item from another worker.
+The Sawmill is where the Carpenter will craft any items made of at least 75% wood (no bows or redstone items). The Carpenter will also craft a few other items, including cactus planks, [shingles](../../source/items/shingles), [timber frames](../../source/items/timberframes), and [barrels](../../source/items/barrel). For them to do this, you must teach the Sawmill the recipes and the Carpenter must receive a request for an item from another worker.
 
 **Hint:** The number of recipes you can teach the Sawmill doubles per building level. So:
 

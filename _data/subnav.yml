@@ -9,10 +9,10 @@ subnav:
         url: source/installation/twitch
   - title: Tutorials
     subitems: 
-      - page: Tutorial
-        url: source/tutorials/tutorial
       - page: Schematics
         url: source/tutorials/schematics
+      - page: Tutorial
+        url: source/tutorials/tutorial
   - title: Systems
     subitems:
       - page: Colony Border System
@@ -35,8 +35,8 @@ subnav:
         url: source/items/barrel_horizontal
       - page: Vertical Barrel
         url: source/items/barrel_vertical
-      - page: Building Tool
-        url: source/items/buildingtool
+      - page: Build Tool
+        url: source/items/buildtool
       - page: Calipers
         url: source/items/calipers
       - page: Clipboard
@@ -49,8 +49,8 @@ subnav:
         url: source/items/floatingcarpet
       - page: Multi-Piston
         url: source/items/multipiston
-      - page: Paper Walls
-        url: source/items/paperwalls
+      - page: Paper Wall
+        url: source/items/paperwall
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
       - page: Postbox
@@ -73,36 +73,42 @@ subnav:
         url: source/items/waypoint
   - title: Workers
     subitems:
+      - page: Archer in Training
+        url: source/workers/archerintraining
       - page: Baker
         url: source/workers/baker
       - page: Blacksmith
         url: source/workers/blacksmith
       - page: Builder
         url: source/workers/builder
-      - page: Chicken Herder
-        url: source/workers/chickenherder
+      - page: Carpenter
+        url: source/workers/carpenter
+      - page: Chicken Farmer
+        url: source/workers/chickenfarmer
       - page: Composter
         url: source/workers/composter
       - page: Cook
         url: source/workers/cook
-      - page: Cowboy
-        url: source/workers/cowboy
+      - page: Courier
+        url: source/workers/courier
+      - page: Cowherd
+        url: source/workers/cowherd
       - page: Crusher
         url: source/workers/crusher
-      - page: Deliveryman
-        url: source/workers/deliveryman
       - page: Dyer
         url: source/workers/dyer
       - page: Enchanter
         url: source/workers/enchanter
       - page: Farmer
         url: source/workers/farmer
-      - page: Fisherman
-        url: source/workers/fisherman
+      - page: Fisher
+        url: source/workers/fisher
       - page: Fletcher
         url: source/workers/fletcher
       - page: Florist
         url: source/workers/florist
+      - page: Forester
+        url: source/workers/forester
       - page: Glassblower
         url: source/workers/glassblower
       - page: Guard
@@ -113,20 +119,14 @@ subnav:
         url: source/workers/knightintraining
       - page: Library Student
         url: source/workers/librarystudent
-      - page: Lumberjack
-        url: source/workers/lumberjack
       - page: Mechanic
         url: source/workers/mechanic
-      - page: Miller
-        url: source/workers/miller
       - page: Miner
         url: source/workers/miner
       - page: Planter
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
-      - page: Ranger in Training
-        url: source/workers/rangerintraining
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -137,8 +137,8 @@ subnav:
         url: source/workers/stonemason
       - page: Stone Smelter
         url: source/workers/stonesmelter
-      - page: Swine Herder
-        url: source/workers/swineherder
+      - page: Swineherd
+        url: source/workers/swineherd
       - page: Teacher
         url: source/workers/teacher
       - page: University Researcher
@@ -157,42 +157,42 @@ subnav:
         url: source/buildings/blacksmith
       - page: Builder's Hut
         url: source/buildings/builder
-      - page: Chicken Herder's Hut
-        url: source/buildings/chickenherder
-      - page: Citizen's Hut
-        url: source/buildings/citizenhut
+      - page: Chicken Farmer's Hut
+        url: source/buildings/chickenfarmer
       - page: Combat Academy
         url: source/buildings/combatacademy
       - page: Composter's Hut
         url: source/buildings/composter
-      - page: Cowboy's Hut
-        url: source/buildings/cowboy
+      - page: Courier's Hut
+        url: source/buildings/courier
+      - page: Cowherd's Hut
+        url: source/buildings/cowherd
       - page: Crusher's Hut
         url: source/buildings/crusher
-      - page: Deliveryman's Hut
-        url: source/buildings/deliveryman
       - page: Dyer's Hut
         url: source/buildings/dyer
       - page: Enchanter's Tower
         url: source/buildings/enchantertower
       - page: Farm & Field
         url: source/buildings/farm&field
-      - page: Fisherman's Hut
-        url: source/buildings/fisherman
+      - page: Fisher's Hut
+        url: source/buildings/fisher
       - page: Fletcher's Hut
         url: source/buildings/fletcher
       - page: Flower Shop
         url: source/buildings/flowershop
+      - page: Forester's Hut
+        url: source/buildings/forester
       - page: Glassblower's Hut
         url: source/buildings/glassblower
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Hospital
         url: source/buildings/hospital
+      - page: House
+        url: source/buildings/house
       - page: Library
         url: source/buildings/library  
-      - page: Lumberjack's Hut
-        url: source/buildings/lumberjack
       - page: Mechanic's Hut
         url: source/buildings/mechanic
       - page: Mine
@@ -215,8 +215,8 @@ subnav:
         url: source/buildings/stonemason
       - page: Stone Smeltery
         url: source/buildings/stonesmeltery
-      - page: Swine Herder's Hut
-        url: source/buildings/swineherder
+      - page: Swineherd's Hut
+        url: source/buildings/swineherd
       - page: Tavern
         url: source/buildings/tavern
       - page: Town Hall

@@ -44,7 +44,7 @@ Once the scans are saved, they need to be moved to the `../structurize/schematic
 
 ## Placing a Schematic.
 
-Once you have scanned a structure, you can use the [building tool](../../source/items/buildingtool) to have your [Builder](../../source/workers/builder) build it for you. Once you right-click with the building tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
+Once you have scanned a structure, you can use the [build tool](../../source/items/buildtool) to have your [Builder](../../source/workers/builder) build it for you. Once you right-click with the build tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
 
@@ -71,7 +71,7 @@ The location of this folder depends of the type of game:
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
 
-When playing on a server, the server needs to send the schematics to the players so that the building tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
+When playing on a server, the server needs to send the schematics to the players so that the build tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
 
 #### How to create <a id="customhuts">custom huts</a>?
 
@@ -83,11 +83,11 @@ To create new schematics for existing huts, there are some guidelines that you m
 *myown/builder4.blueprint*
 *myown/builder5.blueprint*
 
-- **Note:** In the [building tool](../../source/items/buildingtool), the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5.
+- **Note:** In the [build tool](../../source/items/buildtool), the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5.
 
-Once ready, move the myown folder into the schematics folder and start your game. You should be able to see it with the the building tool.
+Once ready, move the myown folder into the schematics folder and start your game. You should be able to see it with the the build tool.
 
-- **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the building tool.
+- **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 ## Custom Hut Filenames
 
@@ -197,7 +197,7 @@ Simply create a schematic file with the same style/name. For instance, to overri
 
 #### How to use custom huts?
 
-The custom huts need to be copied in the schematics folder. Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [building tool](../../source/items/buildingtool) (if holding the hut block).
+The custom huts need to be copied in the schematics folder. Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [build tool](../../source/items/buildtool) (if you have the hut block in your inventory).
 
 #### How to allow my players to use their own huts' schematics on my server?
 
