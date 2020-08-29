@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/ranger">Ranger in Training</a></p>
+        <p><a href="../workers/archer">Archer in Training</a></p>
         </div>
     </div>
     <hr />
@@ -22,7 +22,7 @@ layout: default
 ### Note: The Archery cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../..source/buildings/university).
 <br>
 
-The Archery is where your [Rangers in Training](../../source/workers/ranger) will train to become [Ranger Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Archery. 
+The Archery is where your Archers in Training will train to become [Archer Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Archery. 
 
 | Archery Level | Max # of Students |
 | :----: | :----: |
@@ -32,9 +32,9 @@ The Archery is where your [Rangers in Training](../../source/workers/ranger) wil
 | 4 | 4 |
 | 5 | 5 |
 
-The Rangers in Training require a bow to practice. They will shoot at targets, a bale of hay on a fence post. 
+The Archers in Training require a bow to practice. They will shoot at targets, a bale of hay on a fence post. 
 
-The Rangers in Training are not actual Guards even though they will be dressed as Ranger Guards. They will go to their own house at night to sleep. 
+The Archers in Training are not actual Guards even though they will be dressed as Archer Guards. They will not help protect the colony and will go to their own house at night to sleep.
 
 
 ## Archery GUI

@@ -66,9 +66,9 @@ You can choose between four meshes. The higher the level of the mesh, the higher
 | Hut Level | Mesh Available | 
 | ----- | ----- | 
 | 1         | String         | 
-| 2         | Flint          | 
-| 3         | Iron           | 
-| 4         | Diamond        | 
+| 3         | Flint          | 
+| 4         | Iron           | 
+| 5         | Diamond        | 
 
 
 ## Sifter Hut GUI
