@@ -7,11 +7,11 @@ layout: default
 
 ## <a id="alphas">Before</a> you start troubleshooting:
 
-  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. Note that MineColonies-1.15.2-0.11.958-universal or later requires Forge 31.2.8 or later. (Alpha does not mean it's unstable, it just means it's a relatively small release.)
+  Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. (Alpha does not mean it's unstable, it just means it's a relatively small release.)
   
-## Missing Graphics and Issues with the [Build Tool](../../source/items/buildtool) Preview
-  If you experience missing textures for hut blocks and/or your previews are messed up, check if you have OptiFine installed as the current version is not stable.
-  As there is nothing that we can do, you can either live with missing graphics, or you will have to deactivate OptiFine.
+## Missing Graphics, Issues with the [Build Tool](../../source/items/buildtool) Preview, And/Or Citizen GUIs Not Opening
+  If you experience missing textures for hut blocks, your build tool previews are messed up, and/or the citizen GUIs aren't opening when you right-click them, check if you have OptiFine installed as the current version is very buggy.
+  As there is nothing we can do, you can either live with these issues, or you will have to remove OptiFine.
 
 ## Crashes when Placing Structures
   If your game crashes placing a structure (e.g. a [supply camp or ship](../../source/items/supplycampandship)), your MineColonies and Structurize versions are probably incompatible. Update both to the latest <a href="#alphas">alphas</a>.
