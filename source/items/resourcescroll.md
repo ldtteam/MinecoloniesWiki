@@ -13,7 +13,7 @@ The resource scroll is an easy way to tell what one of your Builders needs. It's
 
 ## Using the Resource Scroll
 
-When you first make the resource scroll, if you right-click anywhere you will get a message to shift + right click on a Builder's Hut to register the resource scroll. 
+When you first make the resource scroll, if you right-click anywhere you will get a message to sneak + right click on a Builder's Hut to register the resource scroll. 
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/misc/resourcebuilderinitmessage.png" alt="Resource Scroll Initial Message"></p>
