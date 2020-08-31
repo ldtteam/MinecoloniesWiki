@@ -56,7 +56,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
   
 ### Step 8: Warehouse and courier
 
-  At this point you might be tired of bringing all of the resources to the builder and taking them from the fisher, forester and miner. You might also want to storage items in one place. [Warehouse](../../source/buildings/warehouse) and [Courier’s Hut](../../source/buildings/courier) are the solution you are looking for. [Courier](../../source/workers/courier) will be transporting items between the Warehouse and all of the workplaces.
+  At this point, you might be tired of bringing all of the resources to the Builder and taking them from the Fisher, Forester, Miner, etc. You also might want to store items in one place. Well, the [Warehouse](../../source/buildings/warehouse) and [Courier’s Hut](../../source/buildings/courier) are the solution you are looking for! [Couriers](../../source/workers/courier) transport items between the Warehouse and all of the workplaces.
   
 ### Step 9: Rest of the Colony
   
