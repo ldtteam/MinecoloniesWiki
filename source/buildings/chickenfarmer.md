@@ -52,3 +52,19 @@ When accessing the Chicken Farmer's Hut block by right-clicking on it, you will 
   </div>
 </div>  
   <br>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/chickenherdergui2.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>This is page two of the GUI. It has one button:</p>
+    <ul>
+        <li><b>Breeding:</b> On by default. Here you can choose if the Chicken Farmer will breed (and consequently kill) chickens or just collect eggs.</li>
+    </ul>
+  </div>
+</div>  
+  
+  <br>
