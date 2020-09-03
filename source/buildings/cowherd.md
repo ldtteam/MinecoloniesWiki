@@ -60,8 +60,9 @@ When accessing the Cowherd's Hut block by right-clicking on it, you will see a G
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p>This is page two of the GUI. It shows one <br>button:</p>
+    <p>This is page two of the GUI. It has two buttons:</p>
     <ul>
+        <li><b>Breeding:</b> On by default. Here you can choose if the Cowherd will breed cows or just collect milk (or do nothing, depending on the setting below).</li>
       <li><b>Collecting Milk:</b> On by default. In this mode, you provide the Cowherd with as many empty buckets as you like. In return, they will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowherd will only breed and butcher the cows, not milk them.</li>
     </ul>
   </div>
