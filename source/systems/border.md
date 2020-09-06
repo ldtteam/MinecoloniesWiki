@@ -10,7 +10,7 @@ Those claims are protected from modification through other players. See the [Col
 
 Extending your claim area can be done by building huts. Huts claim a square area around them after they are built, expanding all sides from the chunk the hutblock is located in. How much they claim depends on the building. They won't claim over the max range, set with the config setting *maxColonySize* (default 20x20 chunks).
 
-Removing a building removes the chunks it claimed. The colony's initial claim radius is excluded from this.
+Deconstructing a building does *not* remove the chunks it claimed.
 
 ### Building Claim Areas:
 
