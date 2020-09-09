@@ -33,7 +33,7 @@ The Smeltery is where the Smelter will smelt ores into ingots.
 | 2 | 100% | 2 x Worker Level Chance | --- | 2 |
 | 3 | --- | 100% | --- | 3 |
 | 4 | --- | 100% | Worker Level Chance | 4 |
-| 5 | --- | 100% | Worker Level Chance | 5 |
+| 5 | --- | 100% | 2 x Worker Level Chance | 5 |
 
 
 ## Smeltery GUI

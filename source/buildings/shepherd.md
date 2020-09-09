@@ -52,9 +52,19 @@ When accessing the Shepherd's Hut block by right-clicking on it, you will see a 
 </div>
 <br>
 
-Page 2 of the GUI is where you can tell the Shepherd whether or not to dye their sheep. If this is turned on, the Shepherd will randomly choose a color to dye their sheep.
-
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/shepherdgui2.png" class="img-fluid mx-auto" alt="Shepherd GUI 2">
+    <img src="../../assets/images/gui/shepherdgui2.png" class="img-fluid mx-auto" alt="Shepherd's Hut GUI 2">
   </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>This is page two of the GUI. It has two buttons:</p>
+    <ul>
+        <li><b>Breeding:</b> On by default. Here you can choose if the Shepherd will breed (and consequently kill) sheep or just shear them.</li>
+      <li><b>Random Sheep Dying:</b> Off by default. Here you choose if the Shepherd will dye sheep random colors to get differently colored wool. (They do not require dye to do this.)</li>
+    </ul>
+  </div>
+</div>  
+  
+  <br>

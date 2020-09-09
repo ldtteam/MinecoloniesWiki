@@ -42,7 +42,7 @@ The Barracks Tower locations are predetermined by the [Barracks](../../source/bu
 
 <br>
 
-<strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will expand.
+<strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
 
 <br>
 
