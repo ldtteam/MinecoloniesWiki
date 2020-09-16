@@ -54,7 +54,11 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
   
   Stone and ores are another major need for any colony, so a [Mine](../../source/buildings/mine) is the next logical step.
   
-### Step 8: Rest of the Colony
+### Step 8: Warehouse and courier
+
+  At this point, you might be tired of bringing all of the resources to the Builder and taking them from the Fisher, Forester, Miner, etc. You also might want to store items in one place. Well, the [Warehouse](../../source/buildings/warehouse) and [Courier’s Hut](../../source/buildings/courier) are the solution you are looking for! [Couriers](../../source/workers/courier) transport items between the Warehouse and all of the workplaces.
+  
+### Step 9: Rest of the Colony
   
   This is where you need to decide what you need next, based on how you play and what your colony needs. But you have several things to look at. Once you get seven citizens you can get attacked by raiders and you may want to build a [Guard Tower](../../source/buildings/guardtower), or you may get a sick citizen and want to build a [Hospital](../../source/buildings/hospital), or you may decide you want a [Sawmill](../../source/buildings/sawmill) to make the needed items for a worker. Or you may just want to have a specific worker, or you found a great place for a certain hut. You decide how your colony will grow!
   
