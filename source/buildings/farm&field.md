@@ -90,7 +90,7 @@ This is page two of the Farm GUI. It shows the Fields that are available (recogn
   </div>
 </div>  
   <br><br>
-  This is page three of the Farm GUI. It lets you choose whether the Farmer will request fertilizer ([compost](../../source/items/compost)).
+  This is page three of the Farm GUI. It lets you choose whether the Farmer will request fertilizer ([compost](../../source/items/compost) or bone meal).
 
 <br>
 <div class="row">
