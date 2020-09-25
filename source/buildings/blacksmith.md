@@ -43,7 +43,7 @@ When accessing the Blacksmith's Hut block by right-clicking on it, you will see 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/blacksmithgui.png" class="img-fluid mx-auto" alt="Blacksmith GUI">
+    <img src="../../assets/images/gui/blacksmithgui.png" class="img-fluid mx-auto" alt="Blacksmith's Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -56,3 +56,13 @@ When accessing the Blacksmith's Hut block by right-clicking on it, you will see 
 </div>  
   <br>
   
+The 2nd page of the GUI shows what crafting task(s) the Blacksmith currently has.
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Blacksmith's Hut GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+  </div>
+</div>
+<br> <br>
