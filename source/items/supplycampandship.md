@@ -32,9 +32,11 @@ To place either Camp or Ship, simply right-click on a block and the 3D preview o
     
 <p style="text-align:left;">There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the green check, and the Camp or Ship will be placed. 
 
-*Once the Supply Camp or Ship is placed, you can't place another Camp or Ship in this colony anymore, unless you find one in a treasure chest.*
+*Once the Supply Camp or Ship is placed, you can't place another Camp or Ship in this world anymore, unless you find one in a treasure chest.*
 
-- **Hint:** If you’re not able to place the Supply Camp or Ship, try it block by block: one to the right, or the left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, seaweed, etc. It must be completely flat and clear. If you can not place the camp, enlarge the area outside the outline of the camp by one or two blocks around the perimeter. 
+**Hint:** If you’re not able to place the Supply Camp or Ship, try it block by block: one to the right, or the left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, seaweed, etc. It must be completely flat and clear. If you can not place the camp, enlarge the area outside the outline of the camp by one or two blocks around the perimeter. 
+
+**Note:** You can place Camps and Ships in the Nether, but placing a Ship there requires lava instead of water.
 <br>
 <br>
 
