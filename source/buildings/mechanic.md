@@ -43,7 +43,7 @@ When accessing the Mechanic's Hut block by right-clicking on it, you will see a 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/mechanicgui.png" class="img-fluid mx-auto" alt="Mechanic GUI">
+    <img src="../../assets/images/gui/mechanicgui.png" class="img-fluid mx-auto" alt="Mechanic's Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -52,6 +52,17 @@ When accessing the Mechanic's Hut block by right-clicking on it, you will see a 
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
     </ul>
+  </div>
+</div>
+<br> <br>
+
+The 2nd page of the GUI shows what crafting task(s) the Mechanic currently has.
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Mechanic's Hut GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
   </div>
 </div>
 <br> <br>
