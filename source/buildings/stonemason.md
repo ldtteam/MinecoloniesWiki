@@ -41,7 +41,7 @@ When accessing the Stonemason's Hut block by right-clicking on it, you will see 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/stonemasongui.png" class="img-fluid mx-auto" alt="Stonemason's Hut GUI">
+    <img src="../../assets/images/gui/stonemasongui.png" class="img-fluid mx-auto" alt="Stonemason's Hut GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
