@@ -42,7 +42,7 @@ When accessing the Sawmill's hut block by right-clicking on it, you will see a G
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/sawmillgui.png" class="img-fluid mx-auto" alt="Sawmill GUI">
+    <img src="../../assets/images/gui/sawmillgui.png" class="img-fluid mx-auto" alt="Sawmill GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -55,3 +55,13 @@ When accessing the Sawmill's hut block by right-clicking on it, you will see a G
 </div>  
 <br> <br>
   
+The 2nd page of the GUI shows what crafting task(s) the Carpenter currently has.
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Sawmill GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+  </div>
+</div>
+<br> <br>

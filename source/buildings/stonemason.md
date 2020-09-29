@@ -41,7 +41,7 @@ When accessing the Stonemason's Hut block by right-clicking on it, you will see 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/stonemasongui.png" class="img-fluid mx-auto" alt="Stonemason GUI">
+    <img src="../../assets/images/gui/stonemasongui.png" class="img-fluid mx-auto" alt="Stonemason's Hut GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -52,6 +52,15 @@ When accessing the Stonemason's Hut block by right-clicking on it, you will see 
     </ul>
   </div>
 </div>  
-  
-  <br>
-  
+<br><br>
+
+The 2nd page of the GUI shows what crafting task(s) the Stonemason currently has.
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Stonemason's Hut GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+  </div>
+</div>
+<br> <br>

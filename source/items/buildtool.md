@@ -58,11 +58,13 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 - The green check mark is for when you are done and want to commit to placing it.
 - The red X is to cancel the whole process and turn off the ghost image of the building.
 
-- **Note:** When in Creative Mode, you will also see options in the lower right. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/placeholderblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it (without placeholder blocks).
-
 <br>
 
 <p style="color:Blue;"><b>Hint:</b> Once you have the GUI open, you can press the ESC button on your keyboard so that the 3D image will remain. Then, you can move around and take a better look at it from all sides to make sure it's the way you want it! Right-click with the build tool again towards the 3D image (on a block or in the air) to go back to the GUI so you can "nudge" your structure to the place and orientation that you want. You can repeat this process as many times as you want before clicking the green check mark to commit to the placement of the structure.</p>
+
+**Note:** When in Creative Mode, you will also see options in the lower right. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/placeholderblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it (without placeholder blocks).
+
+**Note:** When placing a building or decoration, you will see nearby huts as if they were level 5. You will also see their outlines in blue. This is to help with planning so huts don't overlap.
 
 <br>
 ### Step Three

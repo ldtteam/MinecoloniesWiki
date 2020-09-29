@@ -22,7 +22,7 @@ layout: default
 ### Note: The Mechanic's Hut cannot be built until you have a level 3 [Blacksmith's Hut](../../source/buildings/blacksmith) (or three level 1 Blacksmith's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Mechanic's Hut is where the Mechanic will create redstone items, rails, minecarts, clocks, compasses, sea lanterns, torches, lanterns, jack-o-lanterns, storage blocks (like blocks of iron, coal, quartz, etc), blue ice, packed ice, enchantment tables, tripwire hooks, sticky pistons, anything made with blaze rods, and other items that no other crafter can make. For the Mechanic to work, they must receive a request from another worker and have the necessary materials. The Mechanic's Hut must also have been taught the crafting recipes for all the items you want the Mechanic to be able to craft.
+The Mechanic's Hut is where the Mechanic will craft redstone items, rails, minecarts, clocks, compasses, sea lanterns, torches, lanterns, jack-o-lanterns, storage blocks (like blocks of iron, coal, quartz, etc), blue ice, packed ice, enchantment tables, ender chests, tripwire hooks, sticky pistons, anything made with blaze rods, and many other items that no other crafter can make. For the Mechanic to work, they must receive a request from another worker and have the necessary materials. The Mechanic's Hut must also have been taught the crafting recipes for all the items you want the Mechanic to be able to craft.
 
 **Hint:** The number of recipes you can teach the Mechanic's Hut doubles per building level. So:
 
@@ -43,7 +43,7 @@ When accessing the Mechanic's Hut block by right-clicking on it, you will see a 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/mechanicgui.png" class="img-fluid mx-auto" alt="Mechanic GUI">
+    <img src="../../assets/images/gui/mechanicgui.png" class="img-fluid mx-auto" alt="Mechanic's Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -52,6 +52,17 @@ When accessing the Mechanic's Hut block by right-clicking on it, you will see a 
         <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
       {% endfor %}
     </ul>
+  </div>
+</div>
+<br> <br>
+
+The 2nd page of the GUI shows what crafting task(s) the Mechanic currently has.
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Mechanic's Hut GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
   </div>
 </div>
 <br> <br>
