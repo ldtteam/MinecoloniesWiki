@@ -18,7 +18,7 @@ The [calipers](../../source/items/calipers) are not on here as they cannot be cr
 
 | Name                                          | Ingredients                                | Recipe                          |
 | --------------------------------------------- | ------------------------------------------ | ------------------------------- |
-| [Barrel](../../source/items/barrel)           | **Any** Planks + Build Tool + Dirt + Iron Ingot | <recipe>barrel</recipe> |
+| [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | <recipe>barrel</recipe> |
 | [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks        | <recipe>barrel_horizontal</recipe> |
 | [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks            | <recipe>barrel_vertical</recipe> |
 | [Build Tool](../../source/items/buildtool) | Cobblestone + Stick                           | <recipe>buildingtool</recipe>   |

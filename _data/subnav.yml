@@ -29,8 +29,8 @@ subnav:
     subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
-      - page: Barrel
-        url: source/items/barrel
+      - page: Compost Barrel
+        url: source/items/compostbarrel
       - page: Horizontal Barrel
         url: source/items/barrel_horizontal
       - page: Vertical Barrel
