@@ -6,8 +6,16 @@ layout: default
 
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b> If it is raining, snowing, nighttime, or a citizen died yesterday (in-game time), your citizens will stop working!</b></p>
 
-## Workers' Skill Levels
-Workers' skills level up as they work. The higher a worker's level, the faster and more efficient they will be. Their level is limited by the level of the worker's home. The level of a worker's work hut and their Intelligence skill level affect the speed that they level up.
+## Traits
+When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job. The higher a worker's level, the faster and more efficient they will be.
+
+![Traits](../../assets/images/misc/traits.png)
+
+These skills make up the worker's level. The formula is (Primary Trait + Secondary Trait)/4 = Level (rounded down).
+
+For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29+16)/4=11.25.That means that this worker's level will be 11!
+
+Workers' skills/levels increase as they work. Their level is limited by the level of the worker's home. The level of a worker's work hut and their Intelligence skill level affect the speed that they level up.
 
 | Home Level | Max Worker Level |
 | ---------- | ---------------- |
@@ -17,6 +25,13 @@ Workers' skills level up as they work. The higher a worker's level, the faster a
 | 3          | 16               |
 | 4          | 32               |
 | 5          | 100              |
+
+<br>
+
+A chart of all the jobs and their traits, from sikri(#2346) on [Discord](https://discord.minecolonies.com):
+<br>
+<br>
+<img src="../../assets/images/misc/jobsandskills.png" alt="Jobs and Skills" />
 
 ## Tool/Sword Levels
 
@@ -55,19 +70,3 @@ There is also a system in place for the type of armor [Guards](../../source/work
 | Chain         | 0 - 20      | 2 - 5       |
 | Iron          | 5 - 30      | 3 - 5       |
 | Diamond       | 15 - 99     | 4 - 5       |
-
-## Traits
-When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job.
-
-![Traits](../../assets/images/misc/traits.png)
-
-These skills affect how fast the worker levels up. The formula is Primary Trait * 2 + Secondary Trait * 1 = Rate of Leveling Up.
-
-For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29x2)+(16x1)=74.That means that this worker will be able to level up *74* times faster!
-
-<br>
-
-A chart of all the jobs and their traits, from sikri(#2346) on [Discord](https://discord.minecolonies.com).
-<br>
-<br>
-<img src="../../assets/images/misc/jobsandskills.png" alt="Jobs and Skills" />
