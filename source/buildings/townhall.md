@@ -70,7 +70,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
       <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what job they have.</li>
       <br>
-      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
+      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens and any events that happened within the colony (the newest events are at the bottom). You can click the button to switch to a permission log, which will show any illegal actions that happened in the colony (like if a player tried to break a block when they aren't allowed to). Clicking the plus next to an illegal action will change it to a legal action if the player tries to do it again. For more information, see the <a href="../../source/systems/protection"> Protection system</a> and the Permission tab of the Town Hall GUI.</li>
     </ul>
   </div>
 </div>
