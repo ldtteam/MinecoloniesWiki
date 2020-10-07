@@ -78,6 +78,8 @@ This is page two of the GUI.
   <div class="col-sm-12 col-md">
     <ul>
         <li><strong>Knight or Archer:</strong> This is where you can choose if you want the Guard(s) to be a Knight or an Archer-just click to change the setting. The difference between the two is that Knights use swords, while Archers use bows. <b>Note:</b> You can only change this if you have turned the <strong>Assign the Guard to the Job</strong> setting to manually.</li>
+        <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard will retreat when they have low health, if possible. You can choose from Off or On.
+        <li><strong>Try to hire from training facility:</strong> If there is a vacancy at this tower, here is where you can choose if you want a Guard to be hired from the respective training facility (<a href="../../source/buildings/archer">Archery</a> for Archers and <a href="../../source/buildings/combatacademy"> Combat Academy</a> for knights) instead of an unemployed colonist. (This setting only matters if Assign Colonists to Jobs is turned to Automatic in the <a href="../../source/buildings/townhall"> Town Hall</a> GUI.)
         <li><strong>Patrol, Follow, or Guard:</strong> This is where you can choose if you want the Guard(s) to patrol, follow, or guard.</li>      
         <ul>
         <li>If you set it to Guard, you can set one area for the Guard(s) to stay in. You can set the area by clicking <b>Set Guarding Target</b>, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
@@ -88,17 +90,7 @@ This is page two of the GUI.
             <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard(s) to patrol between. To delete patrol positions, simply get a new Guard-scepter and click a new patrol position. The old ones should disappear.</li>
       </ul>
     </ul>
-        <li><strong>Try to Retreat on Low Health:</strong> Here you can choose if the Guard will retreat when they have low health, if possible. You can choose from Off or On.  
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
 On the third page of the GUI you can tell the Guard which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
