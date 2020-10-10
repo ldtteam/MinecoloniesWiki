@@ -42,6 +42,16 @@ The Barracks Tower locations are predetermined by the [Barracks](../../source/bu
 
 <br>
 
+Guard(s) will patrol a set distance around their tower, which is based on their tower's level.
+
+| Tower Level | Max Patrol Distance |
+| ----------- | ------------------- |
+| 1 | 80 blocks |
+| 2 | 110 blocks |
+| 3 | 140 blocks |
+| 4 | 170 blocks |
+| 5 | 200 blocks |
+
 <strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
 
 <br>
