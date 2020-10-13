@@ -22,6 +22,8 @@ citizen:
     content: This lets you change which citizens are assigned to this hut. If it says Assign 0 Citizens, that means you've run out of room in this hut to house citizens and will have to remove some (the button underneath their name) to add more. <b>Note-</b>this only works if you have turned the housing assignment mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual, otherwise your citizens will be housed automatically.
   - button: Build Options
     content: This lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+  - button: Recall Citizens
+    content: Teleports all the citizens living here to the hut block.
   - button: Inventory 
     content: This opens an inventory space where you can store anything you like, as the citizens staying in the hut don't use it.
 build:
