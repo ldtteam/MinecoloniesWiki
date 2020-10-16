@@ -199,8 +199,6 @@ If you try to place another Town Hall outside of your protected area, you will g
             <li>Edit Colony Flag: Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.
                 <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
-            <br>
-        </ul>
   </div>
     </ul>
   </div>
