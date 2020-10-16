@@ -168,7 +168,8 @@ You can now right-click the Town Hall block again to look at its graphical user 
      <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li><br>
      <li><strong>Feuds-</strong>Other colonies that you have added as a feud and that have confirmed your colony as a feud as well.</li>
     </ul>
-
+  </div>
+</div>  
 <br>
 <br>
 
