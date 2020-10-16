@@ -271,6 +271,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
             <li>Edit Colony Flag: Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.
                 <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
+                  <br>
   </div>
     </ul>
   </div>
