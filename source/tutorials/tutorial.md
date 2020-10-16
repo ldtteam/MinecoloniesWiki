@@ -175,13 +175,12 @@ You can now right-click the Town Hall block again to look at its graphical user 
 
 #### <strong>Permissions:</strong> Here you can invite other players to your colony to collaborate. 
 
-<p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give them a rank in your colony. Each rank will have certain privileges in the changeable protection system.</p>
-
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/th_permissions.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab">
   </div>
   <div class="col-sm-12 col-md">
+    <p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give them a rank in your colony. Each rank will have certain privileges in the changeable protection system.</p>
     <ul>
       <li><strong>Page 1: </strong>Here you type the name of the player you want to add.</li>
       <br>
