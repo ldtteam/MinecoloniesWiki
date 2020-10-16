@@ -142,7 +142,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
     <ul>
       <li><strong>Page 1: </strong>Here you will see some statistics on your citizens, like the number of citizens you have and if they are unemployed or workers. If they are workers, you will see what job they have.</li>
       <br>
-      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens as well as any events that the colony is having (future use).</li>
+      <li><strong>Page 2: </strong>Here you will see the overall happiness of the colony's citizens and any events that happened within the colony (the newest events are at the bottom). You can click the button to switch to a permission log, which will show any illegal actions that happened in the colony (like if a player tried to break a block when they aren't allowed to). Clicking the plus next to an illegal action will change it to a legal action if the player tries to do it again. For more information, see the <a href="../../source/systems/protection"> Protection system</a> and the Permission tab of the Town Hall GUI.</li>
     </ul>
   </div>
 </div>
@@ -158,29 +158,31 @@ You can now right-click the Town Hall block again to look at its graphical user 
   <div class="col-sm-12 col-md">
     <p><strong>Page 1: </strong>Here you will see the name of your colony as well as the building level of the Town Hall. And the buttons:</p>
     <ul>
-     <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.</li><br>
-     <li><strong>Citizen Recruitment-</strong>Has no purpose (recruiting has been moved to the [tavern](../../source/buildings/tavern)).<br>
-     <li><strong>Recall Citizens-</strong>So you can make <i>ALL</i> citizens (workers or unemployed) teleport to the Town Hall block.</li><br>
-     <li><strong>Toggle Specialization-</strong>For future use, has no purpose at the moment.</li><br>
-     <li><strong>Rename Colony-</strong>To change the name of your colony (from "[your username]'s Colony", which is the default) to anything you want.</li><br>
-     <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
-    <p><strong>Page 2: </strong>This is for the PVP part of the mod. Here you have:</p>
-     <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li><br>
-     <li><strong>Feuds-</strong>Other colonies that you have added as a feud and that have confirmed your colony as a feud as well.</li>
+      <li><strong>Build Options-</strong>Lets you create a build, upgrade, reposition, or repair build order for the Town Hall. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.</li><br>
+      <li><strong>Rename Colony-</strong>To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.</li><br>
+      <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
+    </ul>
+    <br>  
+    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the config file. Here you have:</p>
+    <ul>
+      <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li>
+      <br>
+      <li><strong>Feuds-</strong>Other colonies that you have added as a feud and that have confirmed your colony as a feud as well.</li>
     </ul>
   </div>
-</div>  
+</div>
 <br>
 <br>
 
 #### <strong>Permissions:</strong> Here you can invite other players to your colony to collaborate. 
+
+<p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give them a rank in your colony. Each rank will have certain privileges in the changeable protection system.</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/th_permissions.png" class="img-fluid mx-auto" alt="TH GUI Permissions Tab">
   </div>
   <div class="col-sm-12 col-md">
-    <p><strong>Permissions Pg. 1 & 2: </strong>You can add a player and give them a rank in your colony. Each rank will have certain privileges in the changeable protection system.</p>
     <ul>
       <li><strong>Page 1: </strong>Here you type the name of the player you want to add.</li>
       <br>
@@ -189,6 +191,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
 </div>  
 
+---
 <p><strong>Permissions Pg. 3 & 4: </strong>Here you can manage the permissions for each rank.</p>
 
 <div class="row">
@@ -204,9 +207,8 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
 </div>  
 
-
-<p><strong>Permissions Pg. 5 & 6: </strong>In this section, you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block regardless of their rank in your colony.</p>
-
+---
+<p><strong>Permissions Pg. 5 & 6: </strong>In this section, you can add a certain block's position that will bypass the protection system for interaction. Any player will be able to interact with that block as long as their rank includes the permission 'Access Free-Blocks.'</p>
 
 <div class="row">
   <div class="col-sm-12 col-md">
@@ -259,9 +261,17 @@ You can now right-click the Town Hall block again to look at its graphical user 
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
-          <li><strong>Citizens can move in: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
+          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
           <br>
-          <li><strong>Page 2: </strong>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
+        </ul>
+            <li><strong>Page 2: </strong>There are two buttons here:</li>
+        <ul>
+            <br>
+            <li>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
+            <li>Edit Colony Flag: Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.
+                <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
+  </div>
     </ul>
   </div>
 </div>
@@ -293,9 +303,10 @@ You can now right-click the Town Hall block again to look at its graphical user 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <br>
-     <li><strong>Page 1: </strong>The happiness indicators. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (super happy), blue (happy), yellow (not happy), and red (big problem here-your citizens are definitely not happy). There's also black, which will show up if something went wrong.</li><br>
-     <li><strong>Page 2: </strong>Blank for now (future use).</li>
+      <br>
+      <li><strong>Page 1: </strong>The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (super happy), blue (happy), yellow (not happy), and red (big problem here-your citizens are definitely not happy). There's also black, which will show up if something went wrong.</li>
+      <br>
+      <li><strong>Page 2: </strong>Blank for now (future use).</li>
     </ul>
   </div>
 </div>  
