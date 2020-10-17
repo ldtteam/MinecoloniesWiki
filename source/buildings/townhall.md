@@ -203,7 +203,7 @@ If you try to place another Town Hall outside of your protected area, you will g
 <br>
 <br>
 
-### <strong>Work Orders: </strong>Here you will see the work orders your <a href="../../source/workers/builder"> Builder</a> have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
+### <strong>Work Orders: </strong>Here you will see the work orders your <a href="../../source/workers/builder"> Builders</a> have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
 
 <div class="row">
   <div class="col-sm-12 col-md">
