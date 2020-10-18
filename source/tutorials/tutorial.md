@@ -250,36 +250,32 @@ You can now right-click the Town Hall block again to look at its graphical user 
     <img src="../../assets/images/gui/th_settings.png" class="img-fluid mx-auto" alt="TH GUI Settings Tab">
   </div>
   <div class="col-sm-12 col-md">
-    <ul>
-    <br>
-      <li><strong>Page 1: </strong>There are four buttons here:</li>
+      <p><strong>Page 1: </strong>There are four buttons here:</p>
         <ul>
-        <br>
           <li><strong>Worker hiring mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, you can't fire or hire any citizen from any worker hut and the best unemployed citizen will be hired for you. In manual mode you will be able to <i>hire</i> and <i>fire</i> whichever citizen you want at any time.</li>
           <br>
           <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/house"> House</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
-          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
-          <br>
+          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>p
         </ul>
-            <li><strong>Page 2: </strong>There are two buttons here:</li>
+		<br>
+            <p><strong>Page 2: </strong>There are two buttons here:</p>
         <ul>
-            <br>
-            <li>Pick Team Color: Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
-            <li>Edit Colony Flag: Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.
-                <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
-                  <br>
-  </div>
-    </ul>
+            <li><strong>Pick Team Color: </strong>Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
+			<br>
+            <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
+            <div class="col-sm-12 col-md">
+			<img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
+			</div>
+		</ul>
   </div>
 </div>
 <br>
 <br>
 
-#### <strong>Work Orders: </strong>Here you will see the work orders your [Builders](../../source/workers/builder) have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
+#### <strong>Work Orders: </strong>Here you will see the work orders your <a href="../../source/workers/builder"> Builders</a> have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
 
 <div class="row">
   <div class="col-sm-12 col-md">
