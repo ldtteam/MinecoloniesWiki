@@ -10,7 +10,7 @@ global:
   - button: Build Options
     content: Lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
   - button: Delivery Priority
-    content: You can set the priority that a <a href="../../source/workers/deliveryman"> Deliveryman</a> will visit this hut and pick up items (when the worker at this hut issues a request), or you can tell Deliverymen to <i>never</i> visit this hut to pick up items. You can also tell a Deliveryman to do a pickup now using the Request Pickup Now button. (For the pickup priority, 10 is the highest.)
+    content: You can set the priority that a <a href="../../source/workers/courier"> Courier</a> will visit this hut and pick up items (when the worker at this hut issues a request), or you can tell Deliverymen to <i>never</i> visit this hut to pick up items. You can also tell a Deliveryman to do a pickup now using the Request Pickup Now button. (For the pickup priority, 10 is the highest.)
   - button: List of Recipes and Teach Recipe
     content: When clicking the list of recipes button, you see all the recipes you have taught this hut and can remove them. When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker). 
   - button: Inventory
