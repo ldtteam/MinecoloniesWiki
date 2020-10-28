@@ -49,7 +49,7 @@ This is page two of the Restaurant GUI.
   </div>
   <div class="col-sm-12 col-md">
       <ul>
-      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the Deliveryman will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)
+      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the <a href="https://wiki.minecolonies.ldtteam.com/source/workers/courier">Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
       </ul>
     </div>  
   <br>
@@ -62,7 +62,7 @@ This is page three of the Restaurant GUI.
   </div>
   <div class="col-sm-12 col-md">
       <ul>
-      <li><strong> Minimum Stock: </strong> Use this button to tell the Restaurant to request a minimum stock to keep on hand. The Cook will still give out items that are set as the minimum stock, but will request more if they no longer have enough. Set items will be displayed above the button.
+      <li><strong> Minimum Stock: </strong> Use this button to tell the Restaurant to request a minimum stock to keep on hand. The Cook will still give out items that are set as the minimum stock, but will request more if they no longer have enough. Set items will be displayed above the button.</li>
       </ul>
     </div>  
   <br>
