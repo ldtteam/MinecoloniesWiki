@@ -52,7 +52,7 @@ This is page two of the Restaurant GUI.
       <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
       </ul>
     </div>  
-  <br>
+  <br><br>
 
 This is page three of the Restaurant GUI.
 
