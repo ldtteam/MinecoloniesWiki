@@ -49,7 +49,7 @@ This is page two of the Restaurant GUI.
   </div>
   <div class="col-sm-12 col-md">
       <ul>
-      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the <a href="https://wiki.minecolonies.ldtteam.com/source/workers/courier">Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
+      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
       </ul>
     </div>  
   <br>
@@ -58,7 +58,7 @@ This is page three of the Restaurant GUI.
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui3.png" class="img-fluid mx-auto" alt="Restaurant GUI 3">
+    <img src="../../assets/images/gui/restaurantgui3.jpg" class="img-fluid mx-auto" alt="Restaurant GUI 3">
   </div>
   <div class="col-sm-12 col-md">
       <ul>
