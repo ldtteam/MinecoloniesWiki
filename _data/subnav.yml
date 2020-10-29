@@ -91,8 +91,8 @@ subnav:
         url: source/workers/cook
       - page: Courier
         url: source/workers/courier
-      - page: Cowherd
-        url: source/workers/cowherd
+      - page: Cowhand
+        url: source/workers/cowhand
       - page: Crusher
         url: source/workers/crusher
       - page: Dyer
@@ -165,8 +165,8 @@ subnav:
         url: source/buildings/composter
       - page: Courier's Hut
         url: source/buildings/courier
-      - page: Cowherd's Hut
-        url: source/buildings/cowherd
+      - page: Cowhand's Hut
+        url: source/buildings/cowhand
       - page: Crusher's Hut
         url: source/buildings/crusher
       - page: Dyer's Hut
