@@ -53,6 +53,8 @@ If a Build Request is created but no Builder starts building, the building may b
        <ul><strong>Repair: </strong> Not needed, as the building hasn't been built yet.</ul>
       <ul><strong>Build Building: </strong>This is where you tell the Builder to build the building with the style selected.</ul>
     </ul>
+  </div>
+ </div>
 
 
 ### After Hut is Built
