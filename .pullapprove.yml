@@ -18,7 +18,7 @@ group_defaults:
   reset_on_push:
     enabled: false
 groups:
-  approved-editors:
+  wiki-admin:
     github_reviews:
       enabled: true
     reject_value: -999
