@@ -54,6 +54,4 @@ Everything you have to change is in one file.
 
 *Credit to Kasilyn*
 
-<br>
-
-## Don't forget that the file must have the name _minecolonies-server.toml_!
+## Don't forget that the file must have the name minecolonies-server.toml!
