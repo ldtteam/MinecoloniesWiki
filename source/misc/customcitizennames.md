@@ -42,4 +42,16 @@ Everything you have to change is in one file.
 
 <br>
 
+### French
+
+[Download French Template File](../../source/misc/languageNameTemplates/frenchTemplate.toml)
+
+<br>
+
+### Japanese
+
+[Download Japanese Template File](../../source/misc/languageNameTemplates/japaneseTemplate.toml)
+
+<br>
+
 ## Don't forget that the file must have the name _minecolonies-server.toml_!
