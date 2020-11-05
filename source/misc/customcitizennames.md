@@ -40,17 +40,19 @@ Everything you have to change is in one file.
 
 [Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
 
-<br>
+*Credit to Ampaex*
 
 ### French
 
 [Download French Template File](../../source/misc/languageNameTemplates/frenchTemplate.toml)
 
-<br>
+*Credit to Kasilyn*
 
 ### Japanese
 
 [Download Japanese Template File](../../source/misc/languageNameTemplates/japaneseTemplate.toml)
+
+*Credit to Kasilyn*
 
 <br>
 
