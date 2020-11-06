@@ -22,7 +22,9 @@ layout: default
 ### Note: The Combat Academy cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../../source/buildings/university) .
 <br> 
 
-The Combat Academy is where your [Knights in Training](../../source/workers/knight) will train to become [Knight Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. The number of students that can be trained at a time depends on the level of the Academy. 
+The Combat Academy is where your [Knights in Training](../../source/workers/knight) will train to become [Knight Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. A new Knight in Training will need a bed in a house in order to spawn. However, once they are hired at the Combat Academy, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
+
+The number of students that can be trained at a time depends on the level of the Academy. 
 
 | Combat Academy Level | Max # of Students |
 | :----: | :----: |
