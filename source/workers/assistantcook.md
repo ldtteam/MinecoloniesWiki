@@ -2,7 +2,7 @@
 title: Assistant Cook
 layout: default
 ---
-# AssistantCook
+# Assistant Cook
 
 <div class="infobox box text-center">
 <img src="../../assets/images/workers/cook_m.png" alt="Cook Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/cook_f.png" alt="Cook Female" />
