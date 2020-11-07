@@ -12,14 +12,16 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/cook">Cook</a></p>
+        <p><a href="../workers/cook">Cook</a> <a href="../workers/assistantcook">Assistant Cook</a></p>
         </div>
     </div>
     <hr />
     <recipe>restaurant</recipe>
 </div>
 
-The Restaurant is where the Cook will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the Restaurant and the Cook will give them food.
+The Restaurant is where the Cook will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the Restaurant and the Cook will give them food. The Assistant Cook also works at the Restaurant. They craft needed food to help supply the colony.
+
+**Note:** You can only hire an Assistant Cook when the Restaurant is level 3 or higher.
 
 ## Restaurant GUI
 
@@ -49,7 +51,7 @@ This is page two of the Restaurant GUI.
   </div>
   <div class="col-sm-12 col-md">
       <ul>
-      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and the <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
+      <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
       </ul>
     </div>  
   <br><br>
