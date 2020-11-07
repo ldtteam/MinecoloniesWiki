@@ -21,4 +21,4 @@ layout: default
   </div>
 </div>
 
-The Cook is the most important part of the your colony's food production. The Cook will make steak, pork chops, baked potatoes, cooked fish, etc. to provide for all your citizens' food needs. If a citizen is hungry, they will come to the Restaurant and the Cook will give them some food. The Cook will make everything in their furnace(s), provided that a [Deliveryman](../workers/deliveryman) (or a player) gives them all the raw ingredients and fuel to do it. You can teach the Cook simple 2 x 2 recipes as well. 
+The Cook is the most important part of your colony's food production. The Cook will make steak, cooked pork, baked potatoes, cooked salmon, and other cooked food items to provide for all your citizens' food needs. If a citizen is hungry, they will come to the Restaurant and the Cook will give them some food.
