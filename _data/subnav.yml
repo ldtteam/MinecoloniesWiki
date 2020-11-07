@@ -89,6 +89,8 @@ subnav:
         url: source/workers/composter
       - page: Cook
         url: source/workers/cook
+      - page: Assistant Cook
+        url: source/workers/assistantcook
       - page: Courier
         url: source/workers/courier
       - page: Cowhand

@@ -1,8 +1,8 @@
 ---
-title: Cook
+title: Assistant Cook
 layout: default
 ---
-# Cook
+# Assistant Cook
 
 <div class="infobox box text-center">
 <img src="../../assets/images/workers/cook_m.png" alt="Cook Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/cook_f.png" alt="Cook Female" />
@@ -21,4 +21,6 @@ layout: default
   </div>
 </div>
 
-The Cook is the most important part of your colony's food production. The Cook will make steak, cooked pork, baked potatoes, cooked salmon, and other cooked food items to provide for all your citizens' food needs. If a citizen is hungry, they will come to the Restaurant and the Cook will give them some food.
+The Assistant Cook is an important part of your colony's food production. The Assistant Cook will craft any food-related recipes you have taught the Restaurant if the [Cook](../../source/workers/cook) requests food. They will also craft any craftable foods you requested from the [postbox](../../source/items/postbox). 
+
+**Note:** You can only hire an Assistant Cook when the Restaurant is at least level 3.
