@@ -19,21 +19,25 @@ layout: default
     <recipe>baker</recipe>
 </div>
 
-The Bakery is where the Baker will bake bread, cakes, cookies, and pumpkin pies.
-<img src="../../assets/images/icons/minecraft/bread.png" class="img-fluid mx-auto" alt="Bread">
-<img src="../../assets/images/icons/minecraft/cake.png" class="img-fluid mx-auto" alt="Cake">
-<img src="../../assets/images/icons/minecraft/cookie.png" class="img-fluid mx-auto" alt="Cookie">
-<img src="../../assets/images/icons/minecraft/pumpkin_pie.png" class="img-fluid mx-auto" alt="Bread">
+The Baker will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the [Cook](../../source/workers/cook), the [postbox](../../source/items/postbox), or as a minimum stock in the [Warehouse](../../source/buildings/warehouse).
+
+The Baker can also craft some non-vanilla breads:
+
+- Sweet bread, made from wheat and a honey bottle. Available at Bakery level 3. Has slightly higher saturation than normal bread, also gives you a speed boost and removes poison.
+- Milk-infused bread, made from wheat and a milk bucket. Available at Bakery level 4. Removes all potion effects (like milk buckets do).
+- Golden bread, made from wheat and a gold ingot. Available at Bakery level 5. Instantly heals 2 hearts.
+- Chorus bread, made from wheat and a chorus fruit. Available after completing the Know the End research in the [University](../../source/buildings/university). Has higher saturation than normal bread and teleports you to the surface after eating it.
 
 <br>
 
 ## Bakery GUI
 
-When accessing the Bakery block by right-clicking on it, you will see a GUI with different options:
+When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/bakerygui1.png" class="img-fluid mx-auto" alt="Baker GUI">
+    <img src="../../assets/images/gui/restaurantgui1.png" class="img-fluid mx-auto" alt="Bakery GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -46,10 +50,28 @@ When accessing the Bakery block by right-clicking on it, you will see a GUI with
 </div>
 <br> <br>
 
-On page two of the GUI, you will see a list of recipes that the Baker is able to make. Just click to change the ones you want the Baker to bake to on and they will begin making those items as long as they receive the required ingredients. (The black box at the top is to search for recipes.) The bakery already knows the recipes for bread, cakes, cookies, and pumpkin pies without you having to teach them. 
+This is page two of the Bakery GUI.
 
-You can still teach the Bakery those recipes to enable them to be made on demand, like if the [Builder](../../source/workers/builder) needs cake as a decoration. 
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/restaurantgui2.png" class="img-fluid mx-auto" alt="Bakery GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+      <ul>
+      <li><strong> Fuel: </strong> Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</li>
+      </ul>
+    </div>  
+  <br><br>
 
-**Note:** If you have a mod that changes the vanilla recipes, this won't affect the Baker, as the recipes are hard-coded.
- 
- <img src="../../assets/images/gui/bakerygui2.png" alt="Baker GUI Page 2" />
+This is page three of the Bakery GUI.
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/restaurantgui3.jpg" class="img-fluid mx-auto" alt="Bakery GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+      <ul>
+      <li><strong> Minimum Stock: </strong> Use this button to tell the Bakery to keep a minimum stock on hand. Set items will be displayed above the button. (It can be useful to set a minimum stock of dough, so the Baker can quickly bake items without needing to craft the dough first.)</li>
+      </ul>
+    </div>  
+  <br>
