@@ -118,15 +118,43 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Cleave | Power Attack | Guard Towers adding up to at least level 10; 8 blocks of iron | Increases Knights' damage by half a heart (cumulative) |
-| Piercing Shot | Penetrating Shot |
+| Piercing Shot | Penetrating Shot | Guard Towers adding up to at least level 10; 64 flint | Increases Archers' damage by half a heart (cumulative) |
 | Knight Training | Squire Training | Combat Academy at least level 4; 8 shields | Increases the chance for Knights to block attacks by 10% |
 | Multi Shot | Tick Shot | Archery at least level 4; 9 bows | 10% chance for Archers to shoot 2 arrows at the same time |
 | Duelist | Repost | Smeltery at least level 3; 64 iron ingots | Increases Knights' armor by 25% |
-| Evasion | Improved Dodge | 
+| Evasion | Improved Dodge | Smeltery at least level 3; 64 leather | Increases Archers' armor by 25% |
 | Iron Armor | Iron Skin | Town Hall at least level 4; 32 iron ingots | Increases Guards' armor's durability by 40% |
 | Fear | Feint | Guard Towers adding up to at least level 8; 16 emeralds |
-| Evade | Avoid |
-| Unlock Whirlwind Ability for Knights | Arrow Piercing | Barracks at least level 4; 64 redstone dust, 64 gold ingots, 28 lapis lazuli | 
+| Evade | Avoid | Guard Towers adding up to at least level 8; 16 emeralds |
+| Unlock Whirlwind Ability for Knights | Arrow Piercing | Barracks at least level 4; 64 redstone dust, 64 gold ingots, 128 lapis lazuli | 
+
+### Fifth Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| Mightly Cleave | Cleave | Barracks level 5; 16 blocks of iron | Increases Knights' damage by half a heart (cumulative) |
+| Wounding Shot | Piercing Shot | Barracks level 5; 128 flint | Increases Archers' damage by half a heart (cumulative) |
+| Captain Training | Knight Training | Combat Academy level 5; 16 shields | Increases the chance for Knights to block attacks by 25% |
+| Rapid Shot | Multi Shot | Archery level 5; 18 bows | 25% chance for Archers to shoot 2 arrows at the same time |
+| Provost | Duelist | Combat Academy level 5; 16 diamonds | Increases Knights' armor by 50% |
+| Improved Evasion | Evasion | Archery level 5; 16 diamonds | Increases Archers' armor by 50% |
+| Steel Armor | Iron Armor | Town Hall level 5; 64 iron ingots | Increases Guards' armor's durability by 50% |
+| Retreat | Fear | Guard Towers adding up to at least level 12; 32 emeralds | 
+| Flee | Evade | Guard Towers adding up to at least level 12; 32 emeralds | 
+
+### Sixth Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| Whirlwind | Mightly Cleave | 32 blocks of iron | Increases Knights' damage by 2 hearts (cumulative) |
+| Deadly Aim | Wounding Shot | 256 flint | Increases Archers' damage by 2 hearts (cumulative) |
+| Captain of the Guard | Captain Training | 27 shields | Increases the chance for Knights to block attacks by 50% |
+| Master Bowman | Rapid Shot | 27 bows | 50% chance for Archers to shoot 2 arrows at the same time |
+| Master Swordsman | Provost | 64 diamonds | Increases Knights' armor by 100% |
+| Agile Archer | Improved Evasion | 64 diamonds | Increases Archers' armor by 100% |
+| Diamond Skin | Steel Armor | 64 diamonds | Increases Guards' armor's durability by 100% |
+| Full Retreat | Retreat | 64 emeralds |
+| Hotfoot | Flee | 64 emeralds |
 
 ## Civilian
 <br>
