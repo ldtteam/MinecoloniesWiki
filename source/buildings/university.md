@@ -109,8 +109,8 @@ Once you click on a research tree, you will see the options for each research br
 | Repost | Parry | Combat Academy at least level 1; 32 iron ingots | Increases Knights' armor by 10% |
 | Improved Dodge | Dodge | Archery at least level 1; 32 leather | Increases Archers' armor by 10% |
 | Iron Skin | Boiled Leather | Town Hall at least level 3; 16 iron ingots | Increases Guards' armor's durability by 30% |
-| Feint | Regeneration | Guard Tower at least level 4; 8 emeralds | 
-| Avoid | Regeneration | Guard Tower at least level 4; 8 emeralds | Increases the fleeing speed of Guards by 
+| Feint | Regeneration | Guard Tower at least level 4; 8 emeralds | When Guards are fleeing, the damage they take is reduced by 20% |
+| Avoid | Regeneration | Guard Tower at least level 4; 8 emeralds | Increases the fleeing speed of Guards by 10% |
 | Arrow Piercing | Arrow Usage | Archery at least level 1; 64 arrows, 64 redstone dust | Archers' arrows can pierce through multiple enemies and cannot hit Knights |
 
 ### Fourth Column
@@ -124,9 +124,9 @@ Once you click on a research tree, you will see the options for each research br
 | Duelist | Repost | Smeltery at least level 3; 64 iron ingots | Increases Knights' armor by 25% |
 | Evasion | Improved Dodge | Smeltery at least level 3; 64 leather | Increases Archers' armor by 25% |
 | Iron Armor | Iron Skin | Town Hall at least level 4; 32 iron ingots | Increases Guards' armor's durability by 40% |
-| Fear | Feint | Guard Towers adding up to at least level 8; 16 emeralds |
-| Evade | Avoid | Guard Towers adding up to at least level 8; 16 emeralds |
-| Unlock Whirlwind Ability for Knights | Arrow Piercing | Barracks at least level 4; 64 redstone dust, 64 gold ingots, 128 lapis lazuli | 
+| Fear | Feint | Guard Towers adding up to at least level 8; 16 emeralds | When Guards are fleeing, the damage they take is reduced by 30% |
+| Evade | Avoid | Guard Towers adding up to at least level 8; 16 emeralds | Increases the fleeing speed of Guards by 20% |
+| Unlock Whirlwind Ability for Knights | Arrow Piercing | Barracks at least level 4; 64 redstone dust, 64 gold ingots, 128 lapis lazuli | Knights have a chance to do a special Whirlwind attack, which damages and knocks back all the enemies near them |
 
 ### Fifth Column
 
@@ -139,8 +139,8 @@ Once you click on a research tree, you will see the options for each research br
 | Provost | Duelist | Combat Academy level 5; 16 diamonds | Increases Knights' armor by 50% |
 | Improved Evasion | Evasion | Archery level 5; 16 diamonds | Increases Archers' armor by 50% |
 | Steel Armor | Iron Armor | Town Hall level 5; 64 iron ingots | Increases Guards' armor's durability by 50% |
-| Retreat | Fear | Guard Towers adding up to at least level 12; 32 emeralds | 
-| Flee | Evade | Guard Towers adding up to at least level 12; 32 emeralds | 
+| Retreat | Fear | Guard Towers adding up to at least level 12; 32 emeralds | When Guards are fleeing, the damage they take is reduced by 40% |
+| Flee | Evade | Guard Towers adding up to at least level 12; 32 emeralds | Increases the fleeing speed of Guards by 30% |
 
 ### Sixth Column
 
@@ -153,8 +153,8 @@ Once you click on a research tree, you will see the options for each research br
 | Master Swordsman | Provost | 64 diamonds | Increases Knights' armor by 100% |
 | Agile Archer | Improved Evasion | 64 diamonds | Increases Archers' armor by 100% |
 | Diamond Skin | Steel Armor | 64 diamonds | Increases Guards' armor's durability by 100% |
-| Full Retreat | Retreat | 64 emeralds |
-| Hotfoot | Flee | 64 emeralds |
+| Full Retreat | Retreat | 64 emeralds | When Guards are fleeing, the damage they take is reduced by 100% |
+| Hotfoot | Flee | 64 emeralds | Increases the fleeing speed of Guards by 50% |
 
 ## Civilian
 <br>
