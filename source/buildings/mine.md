@@ -49,7 +49,7 @@ This is page two of the Mine's GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Levels:</strong> The level refers to the platforms the Miner will place every 3 blocks down. Here you can assign what level of the Mine the Miner will create their mineshafts (nodes). If a level has a red number next to it, that means the Miner is currently mining that level.</li><br>
+      <li><strong>Levels:</strong> The level refers to the platforms the Miner will place every 3 blocks down. Here you can assign what level of the Mine the Miner will create their mineshafts (nodes). If a level has a red number next to it, that means the Miner is currently mining that level. The miner will ignore orders to mine at specified levels until the entire mine shaft is completed to the maximum depth their level allows.</li><br>
     </ul>
   </div>
 </div>  
