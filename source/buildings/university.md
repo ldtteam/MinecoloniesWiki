@@ -221,7 +221,30 @@ Once you click on a research tree, you will see the options for each research br
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Compress | Bandages | Library level 5; 
+| Compress | Bandages | Library level 5; 32 golden carrots | Every tick that a colonist is healing, they heal by 100% more |
+| Fortitude | Vitality | Restaurant level 5; 32 golden apples | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have 2 shanks less |
+| City | Village | Town Hall level 5; 512 steak | Lets you have over 175 colonists, up to the max in the config file |
+| Reflective | Scholarly | Library level 5; 48 books | Increases the rate colonists level up by 50% |
+| Swift | Agile | Town Hall level 5; 32 rabbit feet | Increases colonists' speed by 15% |
+| Guardian Angel | Lifesaver II | Town Hall level 5; 128 hay bales | Increases colonists' health by 5 hearts |
+| Opera | Spectacle | Restaurant level 5; 27 cakes | Increases colonists' happiness by 20% |
+| Epicure | Stuffer | Restaurant level 5; 256 cookies | The saturation of every food colonists eat goes up by 100% |
+| Master | Bachelor | Library level 5; 32 bookshelves | Increases the effectiveness of Teachers by 50% |
+| Growth | Puberty | Library level 5; 256 cooked chicken | Decreases the time it takes children to grow up by 50% |
+
+### Sixth Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| Cast | Compress | 64 golden carrots | Every tick that a colonist is healing, they heal by 200% more |
+| Indefatigability | Fortitude | 64 golden apples | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have 5 shanks less |
+| Academic | Reflective | 128 books | Increases the rate colonists level up by 100% |
+| Athlete | Swift | 64 rabbit feet | Increases colonists' speed by 25% |
+| Guardian Angel II | Guardian Angel | 256 hay bales | Increases colonists' health by 10 hearts |
+| Theater | Opera | 16 enchanted golden apples | Increases colonists' happiness by 50% |
+| Glutton | Epicure | 512 cookies | The saturation of every food colonists eat goes up by 200% |
+| PhD | Master | 64 bookshelves | Increases the effectiveness of Teachers by 100% |
+| Beanstalk | Growth | 512 cooked chicken | Decreases the time it takes children to grow up by 100% |
 
 ## Technology
 <br>
