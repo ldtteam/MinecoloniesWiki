@@ -23,4 +23,4 @@ layout: default
 
 Archers in Training will train at the Archery to become a [Guard](../../source/workers/guard). They will use a bow to shoot practice dummies and will level up without a risk of dying to mobs.
 
-Archers in Training are not actual Guards even though they are dressed in the usual Guard clothes. They will *not* help defend your colony, only Guards will do that. Archers in Training will also go to their own house at night to sleep.
+Archers in Training are not actual Guards even though they are dressed in the usual Guard clothes. They will *not* help defend your colony, only Guards will do that.
