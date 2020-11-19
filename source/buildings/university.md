@@ -266,7 +266,7 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Flower power | Biodegradable | Composter's Hut at least level 3; 64 compost | Unlocks the [Flower Shop](../../source/buildings/flowershop) |
-| Let it grow | Biodegradable | Farm at least level 3; 16 compost | Unlocks the [Plantation](../../source/buildings/plantation) |
+| Let it Grow | Biodegradable | Farm at least level 3; 16 compost | Unlocks the [Plantation](../../source/buildings/plantation) |
 | Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/worker/farmer) output by 10% |
 | Rocking Roll | Stone Cake | Stonemason's Hut at least level 1; 64 stone | Unlocks the [Crusher's Hut](../../source/buildings/crusher) |
 | Stringwork | Woodwork | Sawmill at least level 1; 16 string | Unlocks the [Fletcher's Hut](../../source/buildings/fletcher) |
@@ -284,4 +284,16 @@ Once you click on a research tree, you will see the options for each research br
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
+| Rainbow Heaven | Flower power | Flower Shop at least level 3; 64 poppies | Unlocks the [Dyer's Hut](../../source/buildings/dyer) |
+| Double Trouble | Let it Grow | Plantation at least level 3; 64 bamboo, 64 sugar cane, 64 cacti | Lets the [Planter](../../source/workers/planter) plant 2 out of 3 crops at the same time (with this research, whichever crop you choose on the 2nd page of the Plantation GUI is the one that will *not* be planted) |
+| Dung | Bonemeal | Mine at least level 4; 128 wheat seeds | Increases Farmers' output by 25% |
+| Gilded Hammer | Rocking Roll | Crusher's Hut at least level 3; 64 gravel, 64 sand, 64 clay blocks | Lets [Crushers](../../source/workers/crusher) crush based on a 1-1 ratio instead of 2-1 |
+| Pave the Road | Rocking Roll | Crusher's Hut at least level 1; 32 white concrete | Unlocks the [Concrete Mixer's Hut](../../source/buildings/concretemixer) |
+| Hot Boots | Stringwork | Fletcher's Hut at least level 1; 32 leather, 16 iron ingots | Gives the Miner fire resistance for those annoying lava lakes |
+| Space | Sieving | Mine at least level 3; 16 racks | Increases the number of items you can set as a minimum stock in the [Warehouse](../../source/buildings/warehouse), [Restaurant](../../source/buildings/restaurant), and [Bakery](../../source/buildings/bakery) GUIs |
+| Cheat Sheet | Memory Aid | Sawmill at least level 3; 64 paper | Increases the max amount of recipes stored in each hut by 50% |
+| Redstone powered | Is this Redstone? | 256 redstone dust | Increases colonists' block breaking speed by 25% |
+| Know the End? | The Flintstones | Bakery at least level 3; 64 chorus fruit | Lets the [Baker](../../source/workers/baker) craft chorus bread and lets the [Stonemason](../../source/workers/stonemason) craft end stone (for more information, go to the Baker and Stonemason pages) |
+| Hardened | Strong | Blacksmith's Hut at least level 2; 16 diamonds | ncreases colonists' tools' durability by 10% |
+| Skills | Ability | Mine at least level 2; 128 iron ingots | Increases colonists' block placing speed by 25% |
 | 
