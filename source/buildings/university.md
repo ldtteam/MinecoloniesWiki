@@ -290,10 +290,25 @@ Once you click on a research tree, you will see the options for each research br
 | Gilded Hammer | Rocking Roll | Crusher's Hut at least level 3; 64 gravel, 64 sand, 64 clay blocks | Lets [Crushers](../../source/workers/crusher) crush based on a 1-1 ratio instead of 2-1 |
 | Pave the Road | Rocking Roll | Crusher's Hut at least level 1; 32 white concrete | Unlocks the [Concrete Mixer's Hut](../../source/buildings/concretemixer) |
 | Hot Boots | Stringwork | Fletcher's Hut at least level 1; 32 leather, 16 iron ingots | Gives the Miner fire resistance for those annoying lava lakes |
-| Space | Sieving | Mine at least level 3; 16 racks | Increases the number of items you can set as a minimum stock in the [Warehouse](../../source/buildings/warehouse), [Restaurant](../../source/buildings/restaurant), and [Bakery](../../source/buildings/bakery) GUIs |
+| Space | Sieving | Mine at least level 3; 16 [racks](../../source/items/rack) | Increases the number of items you can set as a minimum stock in the [Warehouse](../../source/buildings/warehouse), [Restaurant](../../source/buildings/restaurant), and [Bakery](../../source/buildings/bakery) GUIs by 50% |
 | Cheat Sheet | Memory Aid | Sawmill at least level 3; 64 paper | Increases the max amount of recipes stored in each hut by 50% |
 | Redstone powered | Is this Redstone? | 256 redstone dust | Increases colonists' block breaking speed by 25% |
 | Know the End? | The Flintstones | Bakery at least level 3; 64 chorus fruit | Lets the [Baker](../../source/workers/baker) craft chorus bread and lets the [Stonemason](../../source/workers/stonemason) craft end stone (for more information, go to the Baker and Stonemason pages) |
-| Hardened | Strong | Blacksmith's Hut at least level 2; 16 diamonds | ncreases colonists' tools' durability by 10% |
+| Hardened | Strong | Blacksmith's Hut at least level 2; 16 diamonds | Increases colonists' tools' durability by 10% |
 | Skills | Ability | Mine at least level 2; 128 iron ingots | Increases colonists' block placing speed by 25% |
-| 
+| Good Veins | Veinminer | Mine at least level 2; 64 iron ore | Increases the number of ores the Miner produces by 25% |
+| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 [ancient tomes](../../source/items/ancient_tome), 5 blocks of iron | Increases the time raiders spend breaking gates by  seconds |
+
+### Fourth Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| Compost | Dung | Mine level 5; 256 wheat seeds | Increases Farmers' output by 50% |
+| Capacity | Space | Mine at least level 4; 32 racks | Increases the number of items you can set as a minimum stock in the Warehouse, Restaurant, and Bakery GUIs by 100% |
+| Recipe book | Cheat Sheet | Sawmill at least level 3; 128 paper | Increases the max amount of recipes stored in each hut by 100% |
+| Deep Pockets | Cheat Sheet | Library at least level 4; 256 emeralds | Adds 9 slots to colonists' inventories |
+| Heavy Machinery | Redstone powered | 256 redstone dust | Increases colonists' block breaking speed by 50% |
+| Reinforced | Hardened | Blacksmith's Hut at least level 3; 32 diamonds | Increases colonists' tools' durability by 25% |
+| Tools | Skills | Blacksmith's Hut at least level 4; 256 iron ingots | Increases colonists' block placing speed by 50% |
+| Rich Veins | Good Veins | Blacksmith's Hut at least level 4; 32 gold ore | Increases the number of ores the Miner produces by 50% |
+| Enhanced Gates II | Enhanced Gates I | 64 iron [gates](../../source/items/gates), 2 ancient tomes, 32 obsidian | Increases the time raiders spend breaking gates by  seconds |
