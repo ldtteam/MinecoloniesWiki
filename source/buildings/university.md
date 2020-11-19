@@ -250,3 +250,38 @@ Once you click on a research tree, you will see the options for each research br
 <br>
 <img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
 <br>
+
+### First Column
+
+| Name | Requirements | Effects |
+| ---- | ------------ | ------- |
+| Biodegradable | [Farm](../../source/buildings/farm&field) at least level 3; 64 bone meal | Unlocks the [Composter's Hut](../../source/buildings/composter) |
+| Stone Cake | [Mine](../../source/buildings/mine) at least level 3; 64 chiseled stone bricks | Unlocks the [Stonemason's Hut](../../source/buildings/stonemason) |
+| Woodwork | [Forester's Hut](../../source/buildings/forester) at least level 3; 64 oak planks | Unlocks the [Sawmill](../../source/buildings/sawmill) |
+| Hot! | Mine at least level 2; 4 lava buckets | Unlocks the [Smeltery](../../source/buildings/smeltery) |
+| Hitting Iron! | Mine at least level 3; an anvil | Unlocks the [Blacksmith's Hut](../../source/buildings/blacksmith) |
+
+### Second Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| Flower power | Biodegradable | Composter's Hut at least level 3; 64 compost | Unlocks the [Flower Shop](../../source/buildings/flowershop) |
+| Let it grow | Biodegradable | Farm at least level 3; 16 compost | Unlocks the [Plantation](../../source/buildings/plantation) |
+| Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/worker/farmer) output by 10% |
+| Rocking Roll | Stone Cake | Stonemason's Hut at least level 1; 64 stone | Unlocks the [Crusher's Hut](../../source/buildings/crusher) |
+| Stringwork | Woodwork | Sawmill at least level 1; 16 string | Unlocks the [Fletcher's Hut](../../source/buildings/fletcher) |
+| Sieving | Woodwork | [Fisher's Hut](../../source/buildings/fisher) at least level 3; 64 string | Unlocks the [Sifter's Hut](../../source/buildings/sifter) |
+| Memory Aid | Woodwork | Sawmill at least level 1; 32 paper | Increases the max amount of recipes stored in each hut by 25% |
+| Is this Redstone? | Hot! | 128 redstone dust | Increases colonists' block breaking speed by 10% |
+| The Flintstones | Hot! | Smeltery at least level 3; 64 stone bricks | Unlocks the [Stone Smeltery](../../source/buildings/stonesmeltery) |
+| Those lungs! | Hot! | Smeltery at least level 3; 64 glass | Unlocks the [Glassblower's Hut](../../source/buildings/glassblower) |
+| Strong | Hitting Iron | Blacksmith's Hut at least level 1; 8 diamonds | Increases colonists' tools' durability by 5% |
+| Ability | Hitting Iron | Mine at least level 1; 64 iron ingots | Increases colonists' block placing speed by 10% |
+| Veinminer | Hitting Iron | Mine at least level 1; 32 iron ore | Increases the number of ores the [Miner](../../source/workers/miner) produces by 10% |
+| What ya Need? | Hitting Iron | Blacksmith's Hut at least level 3; 64 redstone dust | Unlocks the [Mechanic's Hut](../../source/buildings/mechanic) |
+
+### Third Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| 
