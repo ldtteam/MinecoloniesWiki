@@ -9,10 +9,10 @@ subnav:
         url: source/installation/twitch
   - title: Tutorials
     subitems: 
-      - page: Schematics
-        url: source/tutorials/schematics
       - page: Tutorial
         url: source/tutorials/tutorial
+      - page: Schematics
+        url: source/tutorials/schematics
   - title: Systems
     subitems:
       - page: Colony Border System

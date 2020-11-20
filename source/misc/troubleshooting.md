@@ -54,14 +54,13 @@ If none of these apply, go on to the next troubleshooting checklists.
   2. Nudge worker by walking into them, off the block they are standing on or out a door.
   3. Recall worker to their work hut.
   4. Make sure the path to their worksite is clear of obstructions.
-  5. Bug: They will get stuck if walking over a slab in the top position without another slab underneath. Check your slabs.
-  6. Recall all citizens to the [Town Hall](../../source/buildings/townhall).
-  7. Pause the problematic work hut, wait a few minutes, unpause the work hut and recall the worker.
-  8. Pause the work hut, then click 'Restart.' This will restart the worker.
-  9. Fire worker, wait a few minutes, then hire the same worker.
-  10. Empty out the worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
-  11. Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
-  12. Punch them with an empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire them.
-  13. Use the /mc colony requestsystem-reset [command](../../source/systems/command).
-  14. Repair their work hut. Some workers will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, [racks](../../source/items/rack), and [barrels](../../source/items/barrel). If you broke any of those, create a repair build order for the building.
-  15. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
+  5. Recall all citizens to the [Town Hall](../../source/buildings/townhall).
+  6. Pause the problematic work hut, wait a few minutes, unpause the work hut and recall the worker.
+  7. Pause the work hut, then click 'Restart.' This will restart the worker.
+  8. Fire worker, wait a few minutes, then hire the same worker.
+  9. Empty out the worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
+  10. Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
+  11. Punch them with an empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire them.
+  12. Use the /mc colony requestsystem-reset [command](../../source/systems/command).
+  13. Repair their work hut. Some workers will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, [racks](../../source/items/rack), and [barrels](../../source/items/barrel). If you broke any of those, create a repair build order for the building.
+  14. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
