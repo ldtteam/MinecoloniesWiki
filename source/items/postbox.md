@@ -10,7 +10,9 @@ layout: default
 </div>
 <br>
 
-The postbox is for the player to request items from the [Warehouse](../../source/buildings/warehouse). A [Deliveryman](../../source/workers/deliveryman) will deliver them to the postbox. 
+The postbox is for the player to request items from the [Warehouse](../../source/buildings/warehouse). A [Courier](../../source/workers/courier) will deliver them to the postbox.
+
+The postbox can be crafted at the [Sawmill](../../source/buildings/sawmill) or by the player.
 
 <br>
 

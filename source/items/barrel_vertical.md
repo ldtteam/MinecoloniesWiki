@@ -10,9 +10,9 @@ layout: default
 </div>
 <br>
 
-The vertical barrel is a decoration. 
+The vertical barrel is a decoration. It can be crafted at the [Sawmill](../../source/buildings/sawmill).
 <br>
 
 ## Using the Vertical Barrel
 
-Vertical barrels are decorations and have no purpose. They are used in the Tavern schematics.
+Vertical barrels are decorations and have no purpose. They are often used in the [Tavern](../../source/buildings/tavern) schematics.
