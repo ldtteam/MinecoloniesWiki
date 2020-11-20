@@ -12,6 +12,8 @@ layout: default
 
 The placeholder blocks (also called substitution blocks) are tan and brown. The tan block is the placeholder block, and the brown is the solid placeholder block. Each serves its own function. 
 
+Both kinds of placeholder blocks can be crafted at the [Sawmill](../../source/buildings/sawmill).
+
 ## Using the Placeholder Blocks
 
 The placeholder block tells the mod to leave any blocks that are currently in that spot alone. It will not remove or change anything that already exists in that spot.
