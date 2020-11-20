@@ -297,7 +297,7 @@ Once you click on a research tree, you will see the options for each research br
 | Hardened | Strong | Blacksmith's Hut at least level 2; 16 diamonds | Increases colonists' tools' durability by 10% |
 | Skills | Ability | Mine at least level 2; 128 iron ingots | Increases colonists' block placing speed by 25% |
 | Good Veins | Veinminer | Mine at least level 2; 64 iron ore | Increases the number of ores the Miner produces by 25% |
-| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 [ancient tomes](../../source/items/ancient_tome), 5 blocks of iron | Increases the time raiders spend breaking gates by  seconds |
+| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 [ancient tomes](../../source/items/ancient_tome), 5 blocks of iron | This has a bit of a complex formula, but suffice it to say it makes gates more durable |
 
 ### Fourth Column
 
@@ -311,4 +311,10 @@ Once you click on a research tree, you will see the options for each research br
 | Reinforced | Hardened | Blacksmith's Hut at least level 3; 32 diamonds | Increases colonists' tools' durability by 25% |
 | Tools | Skills | Blacksmith's Hut at least level 4; 256 iron ingots | Increases colonists' block placing speed by 50% |
 | Rich Veins | Good Veins | Blacksmith's Hut at least level 4; 32 gold ore | Increases the number of ores the Miner produces by 50% |
-| Enhanced Gates II | Enhanced Gates I | 64 iron [gates](../../source/items/gates), 2 ancient tomes, 32 obsidian | Increases the time raiders spend breaking gates by  seconds |
+| Enhanced Gates II | Enhanced Gates I | 64 iron [gates](../../source/items/gates), 2 ancient tomes, 32 obsidian | Even more durable gates! |
+
+### Fifth Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+
