@@ -22,7 +22,7 @@ For the rest of the variants you need to put a timber framed block into the craf
 
 Timber framed blocks can be crafted at the [Sawmill](../../source/buildings/sawmill). In fact, if you teach the Sawmill the recipe for one version of a timber framed block, it'll automatically have the recipes for every other variant!
 
-**Note:** We use paper as a solid block in the example, but you can do the same with every other above mentioned block.
+**Note:** Paper is used as a solid block in the example, but you can do the same with every other above mentioned block.
 
 <br>
 
