@@ -12,6 +12,8 @@ layout: default
 
 The multi-piston looks like a smooth andesite block with a hole in each face. It lets you move multiple blocks at a time.
 
+The multi-piston can be crafted at the [Mechanic's Hut](../../source/buildings/mechanic).
+
 <br>
 
 ## The Multi-Piston's GUI
