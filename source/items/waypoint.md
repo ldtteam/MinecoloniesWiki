@@ -14,4 +14,6 @@ Waypoints tell your citizens where to walk. For example, you might put one on a 
 
 ## Using the Waypoint
 
-In schematics, you can place a waypoint to denote where workers should walk. When traveling from place to place, your citizens will walk through the waypoints along the way. They are mostly used in road schematics but can be used in any schematic. However, they should be used sparingly. There are no restrictions on where they can be placed, but when a citizen is nearby they will go to it or try to, so make sure they are placed in appropriate and accessible locations. 
+In schematics, you can place a waypoint to denote where workers should walk. When traveling from place to place, your citizens will walk through the waypoints along the way. They are mostly used in road schematics but can be used in any schematic. However, they should be used sparingly. There are no restrictions on where they can be placed, but when a citizen is nearby they will go to it or try to, so make sure they are placed in appropriate and accessible locations.
+
+When placing a waypoint, do **not** craft one and place it on the ground. Instead, open the [build tool](../../source/items/buildtool) GUI, then go to Decorations -> Infrastructure -> Waypoint, and tell the [Builder](../../source/workers/builder) to place the waypoint where you want it. If you did it right, the waypoint should be invisible.

@@ -10,9 +10,9 @@ layout: default
 </div>
 <br>
 
-The horizontal barrel is a decoration.
+The horizontal barrel is a decoration. It can be crafted at the [Sawmill](../../source/buildings/sawmill).
 <br>
 
 ## Using the Horizontal Barrel
 
-Horizontal barrels are decorations and have no purpose. They are used in the Tavern schematics.
+Horizontal barrels are decorations and have no purpose. They are often used in the [Tavern](../../source/buildings/tavern) schematics.
