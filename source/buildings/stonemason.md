@@ -22,7 +22,7 @@ layout: default
 ### Note: The Stonemason's Hut cannot be built until you have a level 1 [Blacksmith's Hut](../../source/buildings/blacksmith) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirely out of cobblestone, stone, andesite, diorite, granite, quartz, purpur, nether bricks, prismarine, sandstones, and/or ores (no ingots). They can also craft end stone from cobblestone and an ender pearl, but only if you have researched the Know the End research in the [University](../../source/buildings/university). The Stonemason will only work when they receive a request from another worker and have the needed materials. You will also need to teach the Stonemason's Hut the recipes you want the Stonemason to craft.
+The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirely out of cobblestone, stone, andesite, diorite, granite, quartz, purpur, nether bricks, prismarine, sandstones, and/or ores (no ingots). They can also craft end stone, but only if you have researched the Know the End research in the [University](../../source/buildings/university). The Stonemason will only work when they receive a request from another worker and have the needed materials. You will also need to teach the Stonemason's Hut the recipes you want the Stonemason to craft.
 
 **Hint:** Upgrading the Stonemason's Hut lets you teach it more recipes. So:
 
