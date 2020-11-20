@@ -16,32 +16,32 @@ The [ancient tome](../../source/items/ancient_tome) is not on here as it cannot 
 
 The [calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 
-| Name                                          | Ingredients                                | Recipe                          |
-| --------------------------------------------- | ------------------------------------------ | ------------------------------- |
-| [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | <recipe>barrel</recipe> |
-| [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks        | <recipe>barrel_horizontal</recipe> |
-| [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks            | <recipe>barrel_vertical</recipe> |
-| [Build Tool](../../source/items/buildtool) | Cobblestone + Stick                           | <recipe>buildingtool</recipe>   |
-| [Clipboard](../../source/items/clipboard)     | Stick + Build Tool + Leather               | <recipe>clipboard</recipe>      |
-| [Composted Dirt](../../source/items/compost)  | Dirt + Compost                             | <recipe>compostblock</recipe>   |
-| [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks             | <recipe>constructiontape</recipe> |
-| [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | <recipe>field</recipe>          |
-| [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Build Tool + String | <recipe>floatingcarpet</recipe> |
-| [Multi-Piston](../../source/items/multipiston) | Stone + Redstone Blocks + Build Tool + Pistons | <recipe>multipiston</recipe> |
-| [Paper Wall](../../source/items/paperwall)     | **Any** Planks + Paper                    | <recipe>paperwall</recipe>      |
-| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool     | <recipe>placeholderblock</recipe> |
-| [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | <recipe>solidplaceholderblock</recipe> |
-| [Postbox](../../source/items/postbox)         | **Any** Planks + Build Tool + 3 Chests     | <recipe>postbox</recipe>        |
-| [Rack](../../source/items/rack)               | **Any** Planks + Iron Bars                 | <recipe>rack</recipe>           |
-| [Resource Scroll](../../source/items/resourcescroll) | Stick + Build Tool + Leather        | <recipe>resourcescroll</recipe> |
-| [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | <recipe>scantool</recipe>       |
-| [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | <recipe>shingleclay</recipe>    |
-| [Shingle Slabs](../../source/items/shingles)  | Brick + Stick                              | <recipe>shingleslab</recipe>    |
-| [Stash](../../source/items/stash)             | **Any** Planks + Build Tool + Chests       | <recipe>stash</recipe>          |
-| [Supply Camp](../items/supplycampandship)     | Chests                                     | <recipe>supplycamp</recipe>     |
-| [Supply Ship](../items/supplycampandship)     | **Any** Boats                              | <recipe>supplyship</recipe>     |
-| [Timber Framed Blocks](../../source/items/timberframes) | **Primary** Plank + **Secondary** Plank + Build Tool | <recipe>timberframeplain</recipe> |
-| [Waypoint](../../source/items/waypoint)       | **Any** Planks + Build Tool                | <recipe>waypoint</recipe>       |
+| Name | Ingredients | Crafted At | Recipe |
+| ---- | ----------- | ---------- | ------ |
+| [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel</recipe> |
+| [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel_horizontal</recipe> |
+| [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel_vertical</recipe> |
+| [Build Tool](../../source/items/buildtool) | Cobblestone + Sticks | N/A | <recipe>buildingtool</recipe> |
+| [Clipboard](../../source/items/clipboard)     | Sticks + Build Tool + Leather | N/A | <recipe>clipboard</recipe> |
+| [Composted Dirt](../../source/items/compost)  | Dirt + Compost  | [Farm](../../source/buildings/farm&field) | <recipe>compostblock</recipe>   |
+| [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>constructiontape</recipe> |
+| [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | N/A | <recipe>field</recipe>          |
+| [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Build Tool + String | [Fletcher's Hut](../../source/buildings/fletcher) | <recipe>floatingcarpet</recipe> |
+| [Multi-Piston](../../source/items/multipiston) | Stone + Redstone Blocks + Build Tool + Pistons | [Mechanic's Hut](../../source/buildings/mechanic) | <recipe>multipiston</recipe> |
+| [Paper Wall](../../source/items/paperwall)     | **Any** Planks + Paper | [Sawmill](../../source/buildings/sawmill) | <recipe>paperwall</recipe>      |
+| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool | [Sawmill](../../source/buildings/sawmill) | <recipe>placeholderblock</recipe> |
+| [Solid Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | [Sawmill](../../source/buildings/sawmill) | <recipe>solidplaceholderblock</recipe> |
+| [Postbox](../../source/items/postbox)         | **Any** Planks + Build Tool + 3 Chests | [Sawmill](../../source/buildings/sawmill) | <recipe>postbox</recipe>        |
+| [Rack](../../source/items/rack)               | **Any** Planks + Build Tool + Iron Nuggets | [Sawmill](../../source/buildings/sawmill) | <recipe>rack</recipe>           |
+| [Resource Scroll](../../source/items/resourcescroll) | Stick + Build Tool + Leather        | N/A | <recipe>resourcescroll</recipe> |
+| [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | N/A | <recipe>scantool</recipe>       |
+| [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | [Sawmill](../../source/buildings/sawmill) | <recipe>shingleclay</recipe>    |
+| [Shingle Slabs](../../source/items/shingles)  | Brick + Stick                              | [Sawmill](../../source/buildings/sawmill) | <recipe>shingleslab</recipe>    |
+| [Stash](../../source/items/stash)             | **Any** Planks + Build Tool + Chests       | [Sawmill](../../source/buildings/sawmill) | <recipe>stash</recipe>          |
+| [Supply Camp](../items/supplycampandship)     | Chests                                     | N/A | <recipe>supplycamp</recipe>     |
+| [Supply Ship](../items/supplycampandship)     | **Any** Boats                              | N/A | <recipe>supplyship</recipe>     |
+| [Timber Framed Blocks](../../source/items/timberframes) | **Primary** Plank + **Secondary** Plank + Build Tool | [Sawmill](../../source/buildings/sawmill) | <recipe>timberframeplain</recipe> |
+| [Waypoint](../../source/items/waypoint)       | **Any** Planks + Build Tool                | N/A | <recipe>waypoint</recipe>       |
 {: .table-responsive }
 
 ## Hut Blocks
