@@ -15,4 +15,4 @@ The horizontal barrel is a decoration. It can be crafted at the [Sawmill](../../
 
 ## Using the Horizontal Barrel
 
-Horizontal barrels are decorations and have no purpose. They are used in the Tavern schematics.
+Horizontal barrels are decorations and have no purpose. They are often used in the [Tavern](../../source/buildings/tavern) schematics.
