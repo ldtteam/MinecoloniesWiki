@@ -21,7 +21,9 @@ layout: default
 
 Shingles are decorative roofing tiles for the tops of buildings. Shingles come in all wood types, including cactus planks, and many different colors. 
 
-There is even a shingle half slab for the crown of the roof that comes in all the colors as well.
+There is even a shingle half slab for the crown of the roof that comes in all the colors as well!
+
+Shingles can be crafted at the [Sawmill](../../source/buildings/sawmill) and dyed at the [Dyer's Hut](../../source/buildings/dyer).
 <br>
 
 ## Using Shingles
