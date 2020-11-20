@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The vertical barrel is a decoration. 
+The vertical barrel is a decoration. It can be crafted at the [Sawmill](../../source/buildings/sawmill).
 <br>
 
 ## Using the Vertical Barrel
