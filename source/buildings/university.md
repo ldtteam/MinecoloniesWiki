@@ -67,6 +67,8 @@ Once you click on a research tree, you will see the options for each research br
 
 **Note:** You can only choose one column 6 research in each of the Combat, Civilian, and Technology trees.
 
+**Note:** In the descriptions below, researches are *not* cumulative unless stated otherwise.
+
 <br>
 
 ## Combat
@@ -317,4 +319,23 @@ Once you click on a research tree, you will see the options for each research br
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
+| Fertilizer | Compost | Smeltery at least level 3; 512 wheat seeds | Increases Farmers' output by 75% |
+| Full Stock | Capacity | Mine level 5; 64 racks | Increases the number of items you can set as a minimum stock in the Warehouse, Restaurant, and Bakery GUIs by 200% |
+| RTM (Read the Manual) | Recipe book | Sawmill at least level 4; 256 paper | Increases the max amount of recipes stored in each hut by 200% |
+| Loaded | Deep Pockets | Library level 5; 64 emeralds | Adds 18 slots to colonists' inventories |
+| What is this speed? | Heavy Machinery | 1024 redstone dust | Increases colonists' block breaking speed by 100% |
+| Steel Bracing | Reinforced | Blacksmith's Hut level 5; 64 diamonds | Increases colonists' tools' durability by 50% |
+| Seems automatic | Tools | Blacksmith's Hut level 5; 512 iron ingots | Increases colonists' block placing speed by 100% |
+| Amazing Veins | Rich Veins | Blacksmith's Hut level 5; 64 gold ore | Increases the number of ores the Miner produces by 100% |
 
+### Sixth Column
+
+| Name | Prerequisites | Requirements | Effects |
+| ---- | ------------- | ------------ | ------- |
+| Magic Compost | Fertilizer | 2048 wheat seeds | Increases Farmers' output by 200% |
+| Rainman | RTM | 27 buckets of salmon | Workers work during rain and storms |
+| Heavily Loaded | Loaded | 128 emeralds | Adds 27 slots to colonists' inventories |
+| Lightning | What is this speed? | 2048 redstone dust | Increases colonists' block breaking speed by 200% |
+| Diamond Coated | Steel Bracing | 128 diamonds | Increases colonists' tools' durabilty by 90% |
+| Madness! | Seems automatic | 1024 iron ingots | Increases colonists' block placing speed by 200% |
+| Motherlode | Amazing Veins | 64 diamond ore | Increases the number of ores the Miner produces by 200% |
