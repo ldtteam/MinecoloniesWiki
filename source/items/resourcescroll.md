@@ -9,7 +9,7 @@ layout: default
     <recipe>resourcescroll</recipe>
 </div>
 
-The resource scroll is an easy way to tell what one of your Builders needs. It's like the portable second page of the Builder's Hut!
+The resource scroll is an easy way to tell what one of your Builders needs. It's like a portable second page of the Builder's Hut!
 
 ## Using the Resource Scroll
 
