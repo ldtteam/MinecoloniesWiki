@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Stonemason is part of your colony’s crafting line. The Stonemason can craft items and blocks made entirely out of cobblestone, stone, andesite, diorite, granite, quartz, nether bricks, purpur, prismarine, sandstones, and/or ores (no ingots). They can also craft end stone from cobblestone and an ender pearl, but only if you have researched the Know the End research in the [University](../../source/buildings/university). The Stonemason will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Stonemason is part of your colony’s crafting line. The Stonemason can craft items and blocks made entirely out of cobblestone, stone, andesite, diorite, granite, quartz, nether bricks, purpur, prismarine, sandstones, and/or ores (no ingots). They can also craft end stone, but only if you have researched the Know the End research in the [University](../../source/buildings/university). The Stonemason will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
 **Note:** The Stonemason can only learn a set number of recipes based on their hut level. So:
 
