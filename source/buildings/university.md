@@ -224,7 +224,7 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Compress | Bandages | Library level 5; 32 golden carrots | Every tick that a colonist is healing, they heal by 100% more |
-| Fortitude | Vitality | Restaurant level 5; 32 golden apples | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have 2 shanks less |
+| Fortitude | Vitality | Restaurant level 5; 32 golden apples | Colonists can heal with only 80% saturation |
 | City | Village | Town Hall level 5; 512 steak | Lets you have over 175 colonists, up to the max in the config file |
 | Reflective | Scholarly | Library level 5; 48 books | Increases the rate colonists level up by 50% |
 | Swift | Agile | Town Hall level 5; 32 rabbit feet | Increases colonists' speed by 15% |
