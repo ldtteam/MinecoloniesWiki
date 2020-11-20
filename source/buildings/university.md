@@ -146,6 +146,8 @@ Once you click on a research tree, you will see the options for each research br
 
 ### Sixth Column
 
+You can only choose one of these!
+
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Whirlwind | Mightly Cleave | 32 blocks of iron | Increases Knights' damage by 2 hearts (cumulative) |
@@ -177,13 +179,13 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Band Aid | Stamina | Library at least level 2; 1 golden carrot | Every tick that a colonist is healing, they heal by 10% more |
-| Resistance | Stamina | [Restaurant](../../source/buildings/restaurant) at least level 2; 1 golden apple | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have half a shank less |
+| Resistance | Stamina | [Restaurant](../../source/buildings/restaurant) at least level 2; 1 golden apple | Colonists can heal with only 95% saturation |
 | Outpost | Keen | House at least level 4; 64 steak | Lets you have over 25 colonists |
 | Diligent | Keen | Library at least level 2; 6 books | Increases the rate colonists level up by 5% |
 | Rails | Keen | [Courier's Hut](../../source/buildings/courier) at least level 3; 64 rails | Lets colonists use rails to get around. You don't need to provide them with minecarts, as they automagically create their own for each trip |
 | First Aid II | First Aid | Town Hall at least level 2; 16 hay bales | Increases colonists' health by 2 hearts |
 | Circus | First Aid | Restaurant at least level 2; 1 cake | Increases colonists' happiness by 5% |
-| Gourmand | First Aid | Restaurant at least level 2; 32 cookies | The saturation of every food colonists eat goes up by 10% |
+| Gourmand | First Aid | Restaurant at least level 2; 32 cookies | Colonists' saturation is increased by 10% |
 | More Books | Higher Learning | School at least level 1; 6 books | Increases the effectiveness of [Teachers](../../source/workers/teacher) by 5% |
 | Nurture | Higher Learning | School at least level 1; 32 cooked chicken | Decreases the time it takes children to grow up by 5% |
 
@@ -192,14 +194,14 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Healing Cream | Band Aid | Library at least level 3; 8 golden carrots | Every tick that a colonist is healing, they heal by 25% more |
-| Resilience | Resistance | Restaurant at least level 3; 8 golden apples | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have a shank less |
+| Resilience | Resistance | Restaurant at least level 3; 8 golden apples | Colonists can heal with only 90% saturation |
 | Hamlet | Outpost | House at least level 5; 128 steak | Lets you have over 50 colonists |
 | Studious | Diligent | Library at least level 3; 12 books | Increases the rate colonists level up by 10% |
 | Nimble | Rails | Town Hall at least level 3; 1 rabbit foot | Increases colonists' speed by 5% |
 | Lifesaver | First Aid II | Town Hall at least level 3; 32 hay bales | Increases colonists' health by 3 hearts |
 | Festival | Circus | Restaurant at least level 3; 9 cakes | Increases colonists' happiness by 10% |
 | Nightowl | Circus | Town Hall at least level 3; 25 golden carrots | Colonists' bedtime is pushed back by 1 in-game hour |
-| Gorger | Gourmand | Restaurant at least level 3; 64 cookies | The saturation of every food colonists eat goes up by 25% |
+| Gorger | Gourmand | Restaurant at least level 3; 64 cookies | Colonists' saturation is increased by 25% |
 | Bookworm | More Books | School at least level 3; 6 bookshelves | Increases the effectiveness of Teachers by 10% |
 | Hormones | Nurture | School at least level 3; 64 cooked chicken | Decreases the time it takes children to grow up by 10% |
 
@@ -208,14 +210,14 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Bandages | Healing Cream | Library at least level 4; 16 golden carrots | Every tick that a colonist is healing, they heal by 50% more |
-| Vitality | Resilience | Restaurant at least level 4; 16 golden apples | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have a shank and a half less |
+| Vitality | Resilience | Restaurant at least level 4; 16 golden apples | Colonists can heal with only 85% saturation |
 | Village | Hamlet | Town Hall at least level 4; 256 steak | Lets you have over 75 colonists |
 | Scholarly | Studious | Library at least level 4; 24 books | Increases the rate colonists level up by 25% |
 | Agile | Nimble | Town Hall at least level 4; 10 rabbit feet | Increases colonists' speed by 10% |
 | Lifesaver II | Lifesaver | Town Hall at least level 4; 64 hay bales | Increases colonists' health by 4 hearts |
 | Spectacle | Festival | Restaurant at least level 4; 18 cakes | Increases colonists' happiness by 15% |
 | Nightowl II | Festival | 75 golden carrots | Colonists' bedtime is pushed back by 2 in-game hours (3 hours total if you've also researched Nightowl) |
-| Stuffer | Gorger | Restaurant at least level 4; 128 cookies | The saturation of every food colonists eat goes up by 50% |
+| Stuffer | Gorger | Restaurant at least level 4; 128 cookies | Colonists' saturation is increased by 50% |
 | Bachelor | Bookworm | Library at least level 3; 12 bookshelves | Increases the effectiveness of Teachers by 25% |
 | Puberty | Hormones | Library at least level 3; 128 cooked chicken | Decreases the time it takes children to grow up by 25% |
 
@@ -230,21 +232,23 @@ Once you click on a research tree, you will see the options for each research br
 | Swift | Agile | Town Hall level 5; 32 rabbit feet | Increases colonists' speed by 15% |
 | Guardian Angel | Lifesaver II | Town Hall level 5; 128 hay bales | Increases colonists' health by 5 hearts |
 | Opera | Spectacle | Restaurant level 5; 27 cakes | Increases colonists' happiness by 20% |
-| Epicure | Stuffer | Restaurant level 5; 256 cookies | The saturation of every food colonists eat goes up by 100% |
+| Epicure | Stuffer | Restaurant level 5; 256 cookies | Colonists' saturation is increased by 100% |
 | Master | Bachelor | Library level 5; 32 bookshelves | Increases the effectiveness of Teachers by 50% |
 | Growth | Puberty | Library level 5; 256 cooked chicken | Decreases the time it takes children to grow up by 50% |
 
-### Sixth Column
+### Sixth Column 
+
+You can only choose one of these!
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Cast | Compress | 64 golden carrots | Every tick that a colonist is healing, they heal by 200% more |
-| Indefatigability | Fortitude | 64 golden apples | Normally colonists can only heal if they have full saturation. With this research, they can heal if they have 5 shanks less |
+| Indefatigability | Fortitude | 64 golden apples | Colonists can heal with only 50% saturation |
 | Academic | Reflective | 128 books | Increases the rate colonists level up by 100% |
 | Athlete | Swift | 64 rabbit feet | Increases colonists' speed by 25% |
 | Guardian Angel II | Guardian Angel | 256 hay bales | Increases colonists' health by 10 hearts |
 | Theater | Opera | 16 enchanted golden apples | Increases colonists' happiness by 50% |
-| Glutton | Epicure | 512 cookies | The saturation of every food colonists eat goes up by 200% |
+| Glutton | Epicure | 512 cookies | Colonists' saturation is increased by 200% |
 | PhD | Master | 64 bookshelves | Increases the effectiveness of Teachers by 100% |
 | Beanstalk | Growth | 512 cooked chicken | Decreases the time it takes children to grow up by 100% |
 
@@ -287,7 +291,7 @@ Once you click on a research tree, you will see the options for each research br
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Rainbow Heaven | Flower power | Flower Shop at least level 3; 64 poppies | Unlocks the [Dyer's Hut](../../source/buildings/dyer) |
-| Double Trouble | Let it Grow | Plantation at least level 3; 64 bamboo, 64 sugar cane, 64 cacti | Lets the [Planter](../../source/workers/planter) plant 2 out of 3 crops at the same time (with this research, whichever crop you choose on the 2nd page of the Plantation GUI is the one that will *not* be planted) |
+| Double Trouble | Let it Grow | Plantation at least level 3; 64 bamboo, 64 sugar cane, 64 cacti | Lets the [Planter](../../source/workers/planter) plant 2 out of 3 crops at the same time |
 | Dung | Bonemeal | Mine at least level 4; 128 wheat seeds | Increases Farmers' output by 25% |
 | Gilded Hammer | Rocking Roll | Crusher's Hut at least level 3; 64 gravel, 64 sand, 64 clay blocks | Lets [Crushers](../../source/workers/crusher) crush based on a 1-1 ratio instead of 2-1 |
 | Pave the Road | Rocking Roll | Crusher's Hut at least level 1; 32 white concrete | Unlocks the [Concrete Mixer's Hut](../../source/buildings/concretemixer) |
@@ -329,6 +333,8 @@ Once you click on a research tree, you will see the options for each research br
 | Amazing Veins | Rich Veins | Blacksmith's Hut level 5; 64 gold ore | Increases the number of ores the Miner produces by 100% |
 
 ### Sixth Column
+
+You can only choose one of these!
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
