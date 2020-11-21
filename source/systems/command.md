@@ -46,11 +46,11 @@ These are the in-game commands currently available. Most require that a user hav
       <td class="d-block d-lg-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc raid-all-now</code><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell"><code>/mc raid-All-now</code><br>Default Permission Level: OP</td>
       <td class="d-block d-lg-table-cell">Schedules a raid for every colony to start right now.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc raid-all-tonight</code><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell"><code>/mc raid-All-tonight</code><br>Default Permission Level: OP</td>
       <td class="d-block d-lg-table-cell">Schedules a raid for every colony to start the coming night.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
