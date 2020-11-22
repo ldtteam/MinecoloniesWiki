@@ -67,7 +67,7 @@ Once you click on a research tree, you will see the options for each research br
 
 **Note:** You can only choose one column 6 research in each of the Combat, Civilian, and Technology trees.
 
-**Note:** In the descriptions below, researches are *not* cumulative unless stated otherwise.
+**Note:** Researches below are *not* cumulative unless stated otherwise.
 
 <br>
 
@@ -104,8 +104,8 @@ Once you click on a research tree, you will see the options for each research br
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Power Attack | Quick Draw | Combat Academy at least level 3; 4 blocks of iron | Increases Knights' damage by half a heart (cumulative) |
-| Penetrating Shot | Precise Shot | Archery at least level 3; 32 flint | Increases Archers' damage by half a heart (cumulative) |
+| Power Attack | Quick Draw | Combat Academy at least level 3; 4 blocks of iron | Increases Knights' damage by a heart |
+| Penetrating Shot | Precise Shot | Archery at least level 3; 32 flint | Increases Archers' damage by a heart |
 | Squire Training | Improved Swords | Combat Academy at least level 3; 4 shields | Increases the chance for Knights to block attacks by 5% |
 | Tick Shot | Improved Bows | Archery at least level 3; 5 bows | 5% chance for Archers to shoot 2 arrows at the same time |
 | Repost | Parry | Combat Academy at least level 1; 32 iron ingots | Increases Knights' armor by 10% |
@@ -119,8 +119,8 @@ Once you click on a research tree, you will see the options for each research br
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Cleave | Power Attack | Guard Towers adding up to at least level 10; 8 blocks of iron | Increases Knights' damage by half a heart (cumulative) |
-| Piercing Shot | Penetrating Shot | Guard Towers adding up to at least level 10; 64 flint | Increases Archers' damage by half a heart (cumulative) |
+| Cleave | Power Attack | Guard Towers adding up to at least level 10; 8 blocks of iron | Increases Knights' damage by one and a half hearts |
+| Piercing Shot | Penetrating Shot | Guard Towers adding up to at least level 10; 64 flint | Increases Archers' damage by one and a half hearts |
 | Knight Training | Squire Training | Combat Academy at least level 4; 8 shields | Increases the chance for Knights to block attacks by 10% |
 | Multi Shot | Tick Shot | Archery at least level 4; 9 bows | 10% chance for Archers to shoot 2 arrows at the same time |
 | Duelist | Repost | Smeltery at least level 3; 64 iron ingots | Increases Knights' armor by 25% |
@@ -134,8 +134,8 @@ Once you click on a research tree, you will see the options for each research br
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Mightly Cleave | Cleave | Barracks level 5; 16 blocks of iron | Increases Knights' damage by half a heart (cumulative) |
-| Wounding Shot | Piercing Shot | Barracks level 5; 128 flint | Increases Archers' damage by half a heart (cumulative) |
+| Mightly Cleave | Cleave | Barracks level 5; 16 blocks of iron | Increases Knights' damage by two hearts |
+| Wounding Shot | Piercing Shot | Barracks level 5; 128 flint | Increases Archers' damage by two hearts |
 | Captain Training | Knight Training | Combat Academy level 5; 16 shields | Increases the chance for Knights to block attacks by 25% |
 | Rapid Shot | Multi Shot | Archery level 5; 18 bows | 25% chance for Archers to shoot 2 arrows at the same time |
 | Provost | Duelist | Combat Academy level 5; 16 diamonds | Increases Knights' armor by 50% |
@@ -150,8 +150,8 @@ You can only choose one of these!
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Whirlwind | Mightly Cleave | 32 blocks of iron | Increases Knights' damage by 2 hearts (cumulative) |
-| Deadly Aim | Wounding Shot | 256 flint | Increases Archers' damage by 2 hearts (cumulative) |
+| Whirlwind | Mightly Cleave | 32 blocks of iron | Increases Knights' damage by 4 hearts |
+| Deadly Aim | Wounding Shot | 256 flint | Increases Archers' damage by 4 hearts |
 | Captain of the Guard | Captain Training | 27 shields | Increases the chance for Knights to block attacks by 50% |
 | Master Bowman | Rapid Shot | 27 bows | 50% chance for Archers to shoot 2 arrows at the same time |
 | Master Swordsman | Provost | 64 diamonds | Increases Knights' armor by 100% |
@@ -216,7 +216,7 @@ You can only choose one of these!
 | Agile | Nimble | Town Hall at least level 4; 10 rabbit feet | Increases colonists' speed by 10% |
 | Lifesaver II | Lifesaver | Town Hall at least level 4; 64 hay bales | Increases colonists' health by 4 hearts |
 | Spectacle | Festival | Restaurant at least level 4; 18 cakes | Increases colonists' happiness by 15% |
-| Nightowl II | Festival | 75 golden carrots | Colonists' bedtime is pushed back by 2 in-game hours (3 hours total if you've also researched Nightowl) |
+| Nightowl II | Festival | 75 golden carrots | Colonists' bedtime is pushed back by 2 in-game hours (cumulative with Nightowl) |
 | Stuffer | Gorger | Restaurant at least level 4; 128 cookies | Colonists' saturation is increased by 50% |
 | Bachelor | Bookworm | Library at least level 3; 12 bookshelves | Increases the effectiveness of Teachers by 25% |
 | Puberty | Hormones | Library at least level 3; 128 cooked chicken | Decreases the time it takes children to grow up by 25% |
