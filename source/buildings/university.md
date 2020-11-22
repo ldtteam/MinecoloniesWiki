@@ -185,7 +185,7 @@ You can only choose one of these!
 | Rails | Keen | [Courier's Hut](../../source/buildings/courier) at least level 3; 64 rails | Lets colonists use rails to get around. You don't need to provide them with minecarts, as they automagically create their own for each trip |
 | First Aid II | First Aid | Town Hall at least level 2; 16 hay bales | Increases colonists' health by 2 hearts |
 | Circus | First Aid | Restaurant at least level 2; 1 cake | Increases colonists' happiness by 5% |
-| Gourmand | First Aid | Restaurant at least level 2; 32 cookies | Colonists' saturation is increased by 10% |
+| Gourmand | First Aid | Restaurant at least level 2; 32 cookies | Food is 10% more effective at restoring colonists' saturation |
 | More Books | Higher Learning | School at least level 1; 6 books | Increases the effectiveness of [Teachers](../../source/workers/teacher) by 5% |
 | Nurture | Higher Learning | School at least level 1; 32 cooked chicken | Decreases the time it takes children to grow up by 5% |
 
@@ -201,7 +201,7 @@ You can only choose one of these!
 | Lifesaver | First Aid II | Town Hall at least level 3; 32 hay bales | Increases colonists' health by 3 hearts |
 | Festival | Circus | Restaurant at least level 3; 9 cakes | Increases colonists' happiness by 10% |
 | Nightowl | Circus | Town Hall at least level 3; 25 golden carrots | Colonists' bedtime is pushed back by 1 in-game hour |
-| Gorger | Gourmand | Restaurant at least level 3; 64 cookies | Colonists' saturation is increased by 25% |
+| Gorger | Gourmand | Restaurant at least level 3; 64 cookies | Food is 25% more effective at restoring colonists' saturation |
 | Bookworm | More Books | School at least level 3; 6 bookshelves | Increases the effectiveness of Teachers by 10% |
 | Hormones | Nurture | School at least level 3; 64 cooked chicken | Decreases the time it takes children to grow up by 10% |
 
@@ -217,7 +217,7 @@ You can only choose one of these!
 | Lifesaver II | Lifesaver | Town Hall at least level 4; 64 hay bales | Increases colonists' health by 4 hearts |
 | Spectacle | Festival | Restaurant at least level 4; 18 cakes | Increases colonists' happiness by 15% |
 | Nightowl II | Festival | 75 golden carrots | Colonists' bedtime is pushed back by 2 in-game hours (cumulative with Nightowl) |
-| Stuffer | Gorger | Restaurant at least level 4; 128 cookies | Colonists' saturation is increased by 50% |
+| Stuffer | Gorger | Restaurant at least level 4; 128 cookies | Food is 50% more effective at restoring colonists' saturation |
 | Bachelor | Bookworm | Library at least level 3; 12 bookshelves | Increases the effectiveness of Teachers by 25% |
 | Puberty | Hormones | Library at least level 3; 128 cooked chicken | Decreases the time it takes children to grow up by 25% |
 
@@ -232,7 +232,7 @@ You can only choose one of these!
 | Swift | Agile | Town Hall level 5; 32 rabbit feet | Increases colonists' speed by 15% |
 | Guardian Angel | Lifesaver II | Town Hall level 5; 128 hay bales | Increases colonists' health by 5 hearts |
 | Opera | Spectacle | Restaurant level 5; 27 cakes | Increases colonists' happiness by 20% |
-| Epicure | Stuffer | Restaurant level 5; 256 cookies | Colonists' saturation is increased by 100% |
+| Epicure | Stuffer | Restaurant level 5; 256 cookies | Food is 100% more effective at restoring colonists' saturation |
 | Master | Bachelor | Library level 5; 32 bookshelves | Increases the effectiveness of Teachers by 50% |
 | Growth | Puberty | Library level 5; 256 cooked chicken | Decreases the time it takes children to grow up by 50% |
 
@@ -248,7 +248,7 @@ You can only choose one of these!
 | Athlete | Swift | 64 rabbit feet | Increases colonists' speed by 25% |
 | Guardian Angel II | Guardian Angel | 256 hay bales | Increases colonists' health by 10 hearts |
 | Theater | Opera | 16 enchanted golden apples | Increases colonists' happiness by 50% |
-| Glutton | Epicure | 512 cookies | Colonists' saturation is increased by 200% |
+| Glutton | Epicure | 512 cookies | Food is 200% more effective at restoring colonists' saturation |
 | PhD | Master | 64 bookshelves | Increases the effectiveness of Teachers by 100% |
 | Beanstalk | Growth | 512 cooked chicken | Decreases the time it takes children to grow up by 100% |
 
