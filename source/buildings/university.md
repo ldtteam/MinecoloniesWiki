@@ -200,7 +200,7 @@ You can only choose one of these!
 | Nimble | Rails | Town Hall at least level 3; 1 rabbit foot | Increases colonists' speed by 5% |
 | Lifesaver | First Aid II | Town Hall at least level 3; 32 hay bales | Increases colonists' health by 3 hearts |
 | Festival | Circus | Restaurant at least level 3; 9 cakes | Increases colonists' happiness by 10% |
-| Nightowl | Circus | Town Hall at least level 3; 25 golden carrots | Colonists' bedtime is pushed back by 1 in-game hour |
+| Nightowl | Circus | Library at least level 2; 25 golden carrots | Colonists' bedtime is pushed back by 1 in-game hour |
 | Gorger | Gourmand | Restaurant at least level 3; 64 cookies | Food is 25% more effective at restoring colonists' saturation |
 | Bookworm | More Books | School at least level 3; 6 bookshelves | Increases the effectiveness of Teachers by 10% |
 | Hormones | Nurture | School at least level 3; 64 cooked chicken | Decreases the time it takes children to grow up by 10% |
@@ -216,7 +216,7 @@ You can only choose one of these!
 | Agile | Nimble | Town Hall at least level 4; 10 rabbit feet | Increases colonists' speed by 10% |
 | Lifesaver II | Lifesaver | Town Hall at least level 4; 64 hay bales | Increases colonists' health by 4 hearts |
 | Spectacle | Festival | Restaurant at least level 4; 18 cakes | Increases colonists' happiness by 15% |
-| Nightowl II | Festival | 75 golden carrots | Colonists' bedtime is pushed back by 2 in-game hours (cumulative with Nightowl) |
+| Nightowl II | Festival | Town Hall at least level 3; 75 golden carrots | Colonists' bedtime is pushed back by 2 in-game hours (cumulative with Nightowl) |
 | Stuffer | Gorger | Restaurant at least level 4; 128 cookies | Food is 50% more effective at restoring colonists' saturation |
 | Bachelor | Bookworm | Library at least level 3; 12 bookshelves | Increases the effectiveness of Teachers by 25% |
 | Puberty | Hormones | Library at least level 3; 128 cooked chicken | Decreases the time it takes children to grow up by 25% |
