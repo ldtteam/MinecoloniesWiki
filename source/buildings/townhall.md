@@ -229,7 +229,7 @@ If you try to place another Town Hall outside of your protected area, you will g
   <div class="col-sm-12 col-md">
     <ul>
       <br>
-      <li><strong>Page 1: </strong>The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (super happy), blue (happy), yellow (not happy), and red (big problem here-your citizens are definitely not happy). There's also black, which will show up if something went wrong.</li>
+      <li><strong>Page 1: </strong>The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are: green (positive), blue (neutral), yellow (slightly negative), and red (negative). There's also black, which will show up if something went wrong.</li>
       <br>
       <li><strong>Page 2: </strong>Blank for now (future use).</li>
     </ul>
