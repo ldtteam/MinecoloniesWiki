@@ -29,11 +29,11 @@ The Fletcher's Hut is where the Fletcher will craft items that use string or woo
 
 | Fletcher's Hut Level | Number of Recipes |
 | :-----: | :-----: |
-| 1 | 20 | 
-| 2 | 40 |
-| 3 | 80 |
-| 4 | 160 | 
-| 5 | 320 | 
+| 1 | 10 | 
+| 2 | 20 |
+| 3 | 40 |
+| 4 | 80 | 
+| 5 | 160 | 
 
 <br>
 
