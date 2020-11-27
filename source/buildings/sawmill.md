@@ -29,11 +29,11 @@ The Sawmill is where the Carpenter will craft any items made of at least 75% woo
 
 | Sawmill Level | Number of Recipes |
 | :-----: | :-----: |
-| 1 | 20 | 
-| 2 | 40 |
-| 3 | 80 |
-| 4 | 160 | 
-| 5 | 320 | 
+| 1 | 10 | 
+| 2 | 20 |
+| 3 | 40 |
+| 4 | 80 | 
+| 5 | 160 | 
 
 
 ## Sawmill GUI
