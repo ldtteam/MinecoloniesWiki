@@ -1,5 +1,5 @@
 ---
-title: Colony Border System
+title: Research System
 layout: default
 ---
 
