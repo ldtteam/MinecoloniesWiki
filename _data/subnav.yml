@@ -23,6 +23,8 @@ subnav:
         url: source/systems/command
       - page: Happiness and Saturation Systems
         url: source/systems/happinessandsaturation
+      - page: Research System
+        url: source/systems/research
       - page: Worker System
         url: source/systems/worker
   - title: Items/Blocks
