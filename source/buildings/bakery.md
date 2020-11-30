@@ -37,7 +37,7 @@ When accessing the Bakery's hut block by right-clicking on it, you will see a GU
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui1.png" class="img-fluid mx-auto" alt="Bakery GUI 1">
+    <img src="../../assets/images/gui/bakerygui1.png" class="img-fluid mx-auto" alt="Bakery GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
