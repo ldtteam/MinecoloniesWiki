@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Mana</p>
       <p class="traits">Knowledge</p>
-      <p><a href="../buildings/enchanter">Enchanter</a></p>
+      <p><a href="../buildings/enchantertower">Enchanter's Tower</a></p>
     </div>
   </div>
 </div>
