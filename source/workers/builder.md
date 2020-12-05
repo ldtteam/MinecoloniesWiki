@@ -35,8 +35,9 @@ Buildings are constructed after the hut block/schematic is placed using the Buil
 
 If you see the Builder has not finished building/upgrading any build order and they aren't asking for any materials, go to the Builder’s Hut and recall the Builder and wait a bit to see what they need. You can also go to page 2 of the Builder’s Hut GUI and check the list of materials required. Any material in the list that is missing will be in red.
 
-If a Build Request is created but no Builder starts building, the building may be out of their range (which is 100 blocks). Cancel the build order, then go to Build Options of the hut you want to be built and manually assign a Builder (top right).
- 
+If a build request is created but no Builder starts building, the building may be out of their range (which is 100 blocks from their hut). Cancel the build order, then go to Build Options of the hut you want to be built and manually assign a Builder (top right).
+
+If the build order is within their range and they still aren't building it, check if you've set them to Manual on the third page of their hut GUI. If you have, you'll need to choose build orders for them yourself (also in the third page of the hut GUI).
 
 ## Build Options Details
 ### Before Hut is Built
