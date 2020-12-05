@@ -25,7 +25,7 @@ The Builder is the **MOST** important worker in your colony. As long as you prov
 
 ## Building A Hut/Schematic
 **Before you build *any* building, you need to build the Builder's Hut. If the Builder’s Hut isn't built, the Builder cannot build any other building.**
-Buildings are constructed after the hut block/schematic is placed using the Building Tool and the green checkmark clicked. If it is a hut, you must right-click on the hut block, click Build Options, and then click Build. Only then will a build request be created (indicated in chat). An available builder will accept the request (also noted in chat), and head off to clear the land and start building. They will stop building if they run out of materials and will then head back to their hut and request more.
+Buildings are constructed after the hut block/schematic is placed using the Building Tool and the green checkmark clicked. If it is a hut, you must right-click on the hut block, click Build Options, and then click Build Building. Only then will a build request be created (indicated in chat). An available Builder will accept the request (also noted in chat), and head off to clear the land and start building. They will stop building if they run out of materials and will then head back to their hut and request more.
 
 ## Notes
 - The Builder will not start another build assignment until they have finished the current one.
@@ -35,8 +35,9 @@ Buildings are constructed after the hut block/schematic is placed using the Buil
 
 If you see the Builder has not finished building/upgrading any build order and they aren't asking for any materials, go to the Builder’s Hut and recall the Builder and wait a bit to see what they need. You can also go to page 2 of the Builder’s Hut GUI and check the list of materials required. Any material in the list that is missing will be in red.
 
-If a Build Request is created but no Builder starts building, the building may be out of their range (which is 100 blocks). Cancel the build order, then go to Build Options of the hut you want to be built and manually assign a Builder (top right).
- 
+If a build request is created but no Builder starts building, the building may be out of their range (which is 100 blocks from their hut). Cancel the build order, then go to Build Options of the hut you want to be built and manually assign a Builder (top right).
+
+If the build order is within their range and they still aren't building it, check if you've set them to Manual on the third page of their hut GUI. If you have, you'll need to choose build orders for them yourself (also in the third page of the hut GUI).
 
 ## Build Options Details
 ### Before Hut is Built

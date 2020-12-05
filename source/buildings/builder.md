@@ -56,35 +56,22 @@ When accessing the Builder’s Hut block by right-clicking on it, you will see a
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
   </div>
-</div>
 <br>
-
 <li><strong>Required Resources:</strong> These are the resources that the Builder will need for the build order they are currently working on. This amount will change as they place blocks and will show <strong>only</strong> what blocks the Builder still needs to place. The blocks in red are the ones neither you nor the Builder has in their inventory.</li>
- 
-<br>
-
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <b>BUILD</b> button you will see a new list of all the items required for that build. There are some options here, but the most important option is that you <i>MUST CONFIRM</i> the build by pressing the <b>Build Building</b> button so the build order is created.</p>
-
-<p style="color:Blue;"><b>Important Note:</b> After pressing the <b>UPGRADE</b> button you will see a new list of all the items required for that build. There are some options here, but again, the most important option is that you <i>MUST CONFIRM</i> the upgrade by pressing the <b>Upgrade Building</b> button so the build order is created.</p>
-
-<p>After pressing the <b>Build Options</b> button you have a few options to consider:</p>
-
+</div>
+ <div class="col-sm-12 col-md"><br>
+    <p>Page 3 of the GUI:</p>
+  </div>
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/upgradebuild.png" class="img-fluid mx-auto" alt="Upgrade Building GUI">
+    <img src="../../assets/images/gui/buildergui3.png" class="img-fluid mx-auto" alt="Builder GUI 3">
   </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-       <ul>
-      {% for item in site.data.gui.build %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-    </ul>
-  </div>
+<br>
+    <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the Town Hall GUI's ! tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
 </div>
-<br><br>
+ 
+<br>
 
 ### A few things to consider
 
@@ -92,7 +79,7 @@ For the placement of the Builder's Hut, you should consider having the hut in th
 
 The Builder will not start another build assignment until they have finished the current one.
 
-You can go to the [Town Hall's GUI](../../source/buildings/townhall) and click on the Work Orders tab and cancel the current build as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, when you assign the build order again, the Builder will continue where they left off.
+You can go into the [Town Hall](../../source/buildings/townhall)'s GUI and click on the Work Orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the Builder will continue where they left off.
 
-If the Builder removes a block (dirt, wood, planks, glass, etc.) while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
+If the Builder removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
 <br><br>
