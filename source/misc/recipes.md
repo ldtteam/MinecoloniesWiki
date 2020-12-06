@@ -16,6 +16,8 @@ The [ancient tome](../../source/items/ancient_tome) is not on here as it cannot 
 
 The [calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 
+None of the [scrolls](../../source/items/scrolls) are on here as they cannot be crafted by the player, only by the [Enchanter](../../source/workers/enchanter).
+
 | Name | Ingredients | Crafted At | Recipe |
 | ---- | ----------- | ---------- | ------ |
 | [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel</recipe> |
