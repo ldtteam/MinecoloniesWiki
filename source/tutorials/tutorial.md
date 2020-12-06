@@ -16,7 +16,7 @@ layout: default
   - [Step 4](#step-4)
   - [Final Notes](#final-notes)
 
-This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://www.curseforge.com/minecraft/modpacks/minecolonies-testpack), you can find instructions for doing that on Twitch [here](../../source/installation/twitch), on MultiMMC [here](../../source/installation/multimmc), and on Java (Forge) [here](../../source/installation/java). 
+This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://www.curseforge.com/minecraft/modpacks/minecolonies-testpack), you can find instructions for doing that on MultiMMC [here](../../source/installation/multimmc) and on Java (Forge) [here](../../source/installation/java). 
 
 ## Quick Walkthrough 
 

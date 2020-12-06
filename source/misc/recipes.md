@@ -61,7 +61,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>citizen</recipe>       |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Build Tool + 3 Iron Swords      | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Build Tool + Barrel                | <recipe>composter</recipe>     |
-| [Cowherd's Hut](../../source/buildings/cowherd)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
+| [Cowhand's Hut](../../source/buildings/cowhand)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
 | [Crusher's Hut](../../source/buildings/crusher)    | **Any** Planks + Build Tool + 2 Cobblestone + 1 Iron Ingot | <recipe>crusher</recipe> |
 | [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>deliveryman</recipe>   |
 | [Dyer's Hut](../../source/buildings/dyer)          | **Any** Planks + Build Tool + **Any** Dye            | <recipe>dyer</recipe>   |
