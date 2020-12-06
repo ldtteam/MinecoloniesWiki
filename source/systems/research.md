@@ -214,7 +214,7 @@ You can only choose one of these!
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
 | Biodegradable | [Farm](../../source/buildings/farm&field) at least level 3; 64 bone meal | Unlocks the [Composter's Hut](../../source/buildings/composter) |
-| More Scrolls | [Enchanter's Tower](../../source/buildings/enchantertower) at least level 3; 64 paper, 1 [ancient tome](../../source/items/ancient_tome), 64 lapis lazuli | Lets the [Enchanter](../../source/workers/enchanter) craft the [Reinforcements Scroll](../../source/items/scrolls) and the [Worker Locator Scroll](../../source/items/scrolls) |
+| More Scrolls | [Enchanter's Tower](../../source/buildings/enchantertower) at least level 3; 64 paper, 1 [ancient tome](../../source/items/ancient_tome), 64 lapis lazuli | Lets the [Enchanter](../../source/workers/enchanter) craft the [Spatial guard reinforcement scroll](../../source/items/scrolls) and the [Worker-where-are-you scroll](../../source/items/scrolls) |
 | Stone Cake | [Mine](../../source/buildings/mine) at least level 3; 64 chiseled stone bricks | Unlocks the [Stonemason's Hut](../../source/buildings/stonemason) |
 | Woodwork | [Forester's Hut](../../source/buildings/forester) at least level 3; 64 oak planks | Unlocks the [Sawmill](../../source/buildings/sawmill) |
 | Hot! | Mine at least level 2; 4 lava buckets | Unlocks the [Smeltery](../../source/buildings/smeltery) |
