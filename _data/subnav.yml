@@ -5,8 +5,6 @@ subnav:
         url: source/installation/java
       - page: MultiMC
         url: source/installation/multimc
-      - page: Twitch
-        url: source/installation/twitch
   - title: Tutorials
     subitems: 
       - page: Tutorial
