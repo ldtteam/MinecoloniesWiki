@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Enchanter is a specialist part of your colony. The Enchanter will steal XP from other workers to create Enchanted Books that can be used on tools, weapons, and armor for your workers (or yourself). To do this, the Enchanter will also need an [ancient tome](../../source/items/ancient_tome), obtained from raiders. The ancient tome will be used up during this process.
+The Enchanter is a specialist part of your colony. The Enchanter will steal XP from other workers to create enchanted books that can be used on tools, weapons, and armor for your workers (or yourself). To do this, the Enchanter will also need an [ancient tome](../../source/items/ancient_tome), obtained from raiders. The ancient tome will be used up during this process.
 
 The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) upon request:
 
