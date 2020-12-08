@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <br>
-The building tool is *THE* most important tool in the entire mod! With it, you can place all the buildings, worker huts, and even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
+The build tool is *THE* most important tool in the entire mod! With it, you can place all the buildings, worker huts, and even any structure scanned by you (see [Schematics](../../source/tutorials/schematics)) perfectly. The possibilities are endless! Watch a short video of how it works here:
 <br><br>
 
 <p class="h4"><a id="build_tool">Build Tool Video</a></p>
@@ -22,12 +22,12 @@ The building tool is *THE* most important tool in the entire mod! With it, you c
 
 ### Step One: Crafting
 
-The first step is to craft the building tool. You can also get a building tool in the [Supply Camp or Ship](../../source/items/supplycampandship) in the same rack as the [Town Hall](../../source/buildings/townhall).
+The first step is to craft the build tool. You can also get a build tool in the [Supply Camp or Ship](../../source/items/supplycampandship) in the same rack as the [Town Hall](../../source/buildings/townhall).
 <br>
 
 ### Step Two: Designating a Building Location
 
-To place a worker hut or building from the mod, you'll first need to craft the specific block for that building (see [Recipes](../../source/misc/recipes). Then, right-click with the building tool on a solid block where you want to place that building. The GUI will pop up:
+To place a worker hut or building from the mod, you'll first need to craft the specific block for that building (see [Recipes](../../source/misc/recipes). Then, right-click with the build tool on a solid block where you want to place that building. The GUI will pop up:
 
 
 <p style="text-align:center;"><img src="../../assets/images/misc/buildtool1.png" alt="Build Tool GUI"></p>
