@@ -15,6 +15,10 @@ global:
     content: When clicking the list of recipes button, you see all the recipes you have taught this hut and can remove them. When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker). 
   - button: Inventory
     content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any <a href="../../source/items/rack"> Racks</a> or chests in the hut, so be sure to check those as well!
+  - button: "?"
+    content: Some huts have an in-game guide. Press the ? button to access it.
+  - button: A chest icon
+    content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks/chests in the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 citizen:
   - button: Hut Level
     content: This tells you the level of the hut you have selected.
@@ -26,6 +30,10 @@ citizen:
     content: Teleports all the citizens living here to the hut block.
   - button: Inventory 
     content: This opens an inventory space where you can store anything you like, as the citizens staying in the hut don't use it.
+  - button: "?"
+    content: Some huts have an in-game guide. Press the ? button to access it.
+  - button: A chest icon
+    content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks/chests in the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 build:
   - button: Schematic Style
     content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
