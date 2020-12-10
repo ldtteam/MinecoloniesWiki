@@ -7,8 +7,8 @@ subnav:
         url: source/installation/multimc
   - title: Tutorials
     subitems: 
-      - page: Tutorial
-        url: source/tutorials/tutorial
+      - page: Getting Started
+        url: source/tutorials/getting-started
       - page: Schematics
         url: source/tutorials/schematics
   - title: Systems
@@ -61,6 +61,8 @@ subnav:
         url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
+      - page: Scrolls
+        url: source/items/scrolls
       - page: Shingles
         url: source/items/shingles
       - page: Stash

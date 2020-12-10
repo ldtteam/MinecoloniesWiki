@@ -206,7 +206,9 @@ You can only choose one of these!
 
 ### Technology
 <br>
-<img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
+<img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page Part One">
+<br>
+<img src="../../assets/images/gui/universitytechnology2.png" class="img-fluid mx-auto" alt="University Technology GUI Page Part Two">
 <br>
 
 #### First Column
@@ -214,6 +216,7 @@ You can only choose one of these!
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
 | Biodegradable | [Farm](../../source/buildings/farm&field) at least level 3; 64 bone meal | Unlocks the [Composter's Hut](../../source/buildings/composter) |
+| More Scrolls | [Enchanter's Tower](../../source/buildings/enchantertower) at least level 3; 64 paper, 1 [ancient tome](../../source/items/ancient_tome), 64 lapis lazuli | Lets the [Enchanter](../../source/workers/enchanter) craft the [Spatial guard reinforcement scroll](../../source/items/scrolls) and the [Worker-where-are-you scroll](../../source/items/scrolls) |
 | Stone Cake | [Mine](../../source/buildings/mine) at least level 3; 64 chiseled stone bricks | Unlocks the [Stonemason's Hut](../../source/buildings/stonemason) |
 | Woodwork | [Forester's Hut](../../source/buildings/forester) at least level 3; 64 oak planks | Unlocks the [Sawmill](../../source/buildings/sawmill) |
 | Hot! | Mine at least level 2; 4 lava buckets | Unlocks the [Smeltery](../../source/buildings/smeltery) |
@@ -255,7 +258,7 @@ You can only choose one of these!
 | Hardened | Strong | Blacksmith's Hut at least level 2; 16 diamonds | Increases colonists' tools' durability by 10% |
 | Skills | Ability | Mine at least level 2; 128 iron ingots | Increases colonists' block placing speed by 25% |
 | Good Veins | Veinminer | Mine at least level 2; 64 iron ore | Increases the number of ores the Miner produces by 25% |
-| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 [ancient tomes](../../source/items/ancient_tome), 5 blocks of iron | This has a bit of a complex formula, but suffice it to say it makes gates more durable |
+| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 ancient tomes, 5 blocks of iron | This has a bit of a complex formula, but suffice it to say it makes gates more durable |
 
 #### Fourth Column
 

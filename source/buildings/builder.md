@@ -68,7 +68,7 @@ When accessing the Builder’s Hut block by right-clicking on it, you will see a
     <img src="../../assets/images/gui/buildergui3.png" class="img-fluid mx-auto" alt="Builder GUI 3">
   </div>
 <br>
-    <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the Town Hall GUI's ! tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
+    <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
 </div>
  
 <br>
@@ -79,7 +79,7 @@ For the placement of the Builder's Hut, you should consider having the hut in th
 
 The Builder will not start another build assignment until they have finished the current one.
 
-You can go into the [Town Hall](../../source/buildings/townhall)'s GUI and click on the Work Orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the Builder will continue where they left off.
+<a id="workorders">You</a> can go into the Town Hall's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the Builder will continue where they left off.
 
 If the Builder removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
 <br><br>
