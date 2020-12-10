@@ -206,7 +206,9 @@ You can only choose one of these!
 
 ### Technology
 <br>
-<img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
+<img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page Part One">
+<br>
+<img src="../../assets/images/gui/universitytechnology2.png" class="img-fluid mx-auto" alt="University Technology GUI Page Part Two">
 <br>
 
 #### First Column
