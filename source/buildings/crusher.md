@@ -24,11 +24,13 @@ layout: default
 
 The Crusher's Hut is where the Crusher will take items and crush them into other blocks. The defaults are: 
 
-| Starting Item | Created Item | Ratio |
-| ----- | ----- | ----- |
-| Cobblestone   | Gravel       | 2:1   |
-| Gravel        | Sand         | 2:1   |
-| Sand          | Clay         | 2:1   |
+| Starting Item | Created Item |
+| ----- | ----- |
+| Cobblestone   | Gravel (chance to get flint) |
+| Gravel        | Sand         |
+| Sand          | Clay         |
+
+Note: By default the Crusher's ratio is 2:1, but there is a [research](../../source/systems/research) in the [University](../../source/building/university) to make them work on a 1:1 ratio.
 
 The higher the level of the Crusher's Hut, the more daily output the Crusher can handle. So:
 
