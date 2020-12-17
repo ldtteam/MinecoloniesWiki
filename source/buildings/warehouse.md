@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/Courier">Courier</a></p>
+        <p><a href="../workers/courier">Courier</a></p>
         </div>
     </div>
     <hr />
