@@ -27,5 +27,5 @@ The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) 
 
 - The Ultrasafe colony teleport scroll, crafted with 3 paper, a compass, and the <a href="../items/buildtool">build tool</a>. (Outputs 3 scrolls.)
 - The Ultrasafe colony group-teleport scroll, crafted with 3 Ultrasafe colony teleport scrolls. The Enchanter's Tower must be at least level 2 for the Enchanter to craft this scroll.
-- The Spatial guard reinforcement scroll, crafted with 1 Ultrasafe colony teleport scroll, 5 lapis lazuli, 1 ender pearl, and 1 paper. (Outputs 2 scrolls.) The More Scrolls <a href="../systems/research">research</a> in the <a href="../building/university">University</a> must be completed for the Enchanter to craft this scroll.
+- The Spatial guard reinforcement scroll, crafted with 1 Ultrasafe colony teleport scroll, 5 lapis lazuli, 1 ender pearl, and 1 paper. (Outputs 2 scrolls.) The More Scrolls <a href="../systems/research">research</a> in the <a href="../buildings/university">University</a> must be completed for the Enchanter to craft this scroll.
 - The Worker-where-are-you scroll, crafted with 1 Ultrasafe colony teleport scroll, 6 glowstone dust, and 2 paper. (Outputs 5 scrolls.) The More Scrolls research in the University must be completed for the Enchanter to craft this scroll.

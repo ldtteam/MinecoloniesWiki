@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Blacksmith is a part of your colony's production line. The Blacksmith will craft tools, swords, and armor to supply workers, knights, and rangers with items. (However, they do not craft bows or fishing poles.) A [Deliveryman](../../source/workers/deliveryman) or the player must provide the necessary supplies to make these items.
+The Blacksmith is a part of your colony's production line. The Blacksmith will craft tools, swords, and armor to supply workers, knights, and rangers with items. (However, they do not craft bows or fishing poles.) A [Courier](../../source/workers/courier) or the player must provide the necessary supplies to make these items.
 
 The Blacksmith can learn 3x3 recipes for all tools, weapons, and armour (no string or redstone items)! The Blacksmith will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
