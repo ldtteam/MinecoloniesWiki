@@ -32,7 +32,7 @@ The defaults are:
 
 However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
-The Crusher works on a 2:1 ratio, so, for example, it takes 2 cobblestone to get 1 gravel. However, there is a [research](../../source/systems/research) in the [University](../../source/building/university) to make them work on a 1:1 ratio.
+The Crusher works on a 2:1 ratio, so, for example, it takes 2 cobblestone to get 1 gravel. However, there is a [research](../../source/systems/research) in the [University](../../source/buildings/university) to make them work on a 1:1 ratio.
 
 The Crusher can only crush a certain amount of materials per day, depending on their hut level.
 
