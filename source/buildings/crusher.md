@@ -30,7 +30,7 @@ The Crusher's Hut is where the Crusher will take items and crush them into other
 | Gravel        | Sand         |
 | Sand          | Clay         |
 
-Note: By default the Crusher's ratio is 2:1, but there is a [research](../../source/systems/research) in the [University](../../source/building/university) to make them work on a 1:1 ratio.
+Note: By default the Crusher's ratio is 2:1, but there is a [research](../../source/systems/research) in the [University](../../source/buildings/university) to make them work on a 1:1 ratio.
 
 The higher the level of the Crusher's Hut, the more daily output the Crusher can handle. So:
 
