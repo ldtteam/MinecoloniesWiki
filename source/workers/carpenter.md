@@ -32,3 +32,8 @@ The Carpenter is a part of your colony's production line. The Carpenter can lear
 | 3         | 40      |
 | 4         | 80      |
 | 5         | 160     |
+
+
+All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Carpenter's Knowledge level is, the greater their chance to decrease the amount of materials needed.
+
+The higher a Carpenter's Dexterity level is, the faster they'll craft.
