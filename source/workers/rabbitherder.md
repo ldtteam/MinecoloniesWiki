@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Rabbit Herder is a crucial part of your colony's food production needs. The Rabbit Herder will breed and butcher rabbits for you as long as you provide them with carrots and an axe.
+The Rabbit Herder is a part of your colony's food production needs. The Rabbit Herder will breed and butcher rabbits for you as long as you provide them with carrots and an axe.
 
 **Note:** The Rabbit Herder will not catch and bring in any rabbits, only breed and butcher the ones in their hut area, so make sure you provide them with at least 2 initial rabbits.
 
