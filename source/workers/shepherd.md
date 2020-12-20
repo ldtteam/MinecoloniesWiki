@@ -38,3 +38,5 @@ On page two of the Shepherd Hut's GUI, you can choose if the Shepherd will rando
 | 3         | 6            |
 | 4         | 8            |
 | 5         | 10           |
+
+The higher a Shepherd's Focus level, the more wool they'll collect. The higher their Strength level is, the more damage they'll do per attack.
