@@ -5,7 +5,7 @@ layout: default
 # Rabbit Hutch
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/rabbitherder.png" alt="Rabbit Hutch" />
+    <img src="../../assets/images/buildings/rabbithutch.png" alt="Rabbit Hutch" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
