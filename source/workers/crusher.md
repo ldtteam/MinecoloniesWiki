@@ -43,3 +43,6 @@ The Crusher can only crush a certain amount of materials per day, depending on t
 | 3         | 144       |
 | 4         | 256       |
 | 5         | 999       |
+
+
+The higher a Crusher's Stamina level, the less of a chance they have to get sick. The higher their Strength level, the faster they'll work.
