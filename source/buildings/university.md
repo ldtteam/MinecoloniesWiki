@@ -53,6 +53,6 @@ Page 2 of the GUI will show you the options for each research tree.
     
 <br>
     
-Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game.)
+Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game. However, Researchers will sometimes use offline time to work on researches. Researchers' Knowledge skill affects the max amount of offline time they can use, and their Mana skill affects the amount of research hours they get from one hour of offline time.)
 
 To see a description of each of the researches, please visit the [Research System](../../source/systems/research) page.
