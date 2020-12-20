@@ -79,6 +79,8 @@ subnav:
         url: source/workers/archerintraining
       - page: Baker
         url: source/workers/baker
+      - page: Beekeeper
+        url: source/workers/beekeeper
       - page: Blacksmith
         url: source/workers/blacksmith
       - page: Builder
@@ -89,6 +91,8 @@ subnav:
         url: source/workers/chickenfarmer
       - page: Composter
         url: source/workers/composter
+      - page: Concrete Mixer
+        url: source/workers/concretemixer
       - page: Cook
         url: source/workers/cook
       - page: Assistant Cook
@@ -131,6 +135,8 @@ subnav:
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
+      - page: Rabbit Herder
+        url: source/workers/rabbitherder
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -149,6 +155,8 @@ subnav:
         url: source/workers/researcher
   - title: Buildings
     subitems:
+      - page: Apiary
+        url: source/buildings/apiary
       - page: Archery
         url: source/buildings/archery
       - page: Bakery
@@ -167,6 +175,8 @@ subnav:
         url: source/buildings/combatacademy
       - page: Composter's Hut
         url: source/buildings/composter
+      - page: Concrete Mixer's Hut
+        url: source/buildings/concretemixer
       - page: Courier's Hut
         url: source/buildings/courier
       - page: Cowhand's Hut
@@ -203,6 +213,8 @@ subnav:
         url: source/buildings/mine
       - page: Plantation
         url: source/buildings/plantation
+      - page: Rabbit Hutch
+        url: source/buildings/rabbithutch
       - page: Restaurant
         url: source/buildings/restaurant
       - page: Sawmill
