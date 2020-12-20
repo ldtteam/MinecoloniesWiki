@@ -21,9 +21,9 @@ layout: default
   </div>
 </div>
 
-The Blacksmith is a part of your colony's production line. The Blacksmith will craft tools, swords, and armor to supply workers, knights, and rangers with items. (However, they do not craft bows or fishing poles.) A [Courier](../../source/workers/courier) or the player must provide the necessary supplies to make these items.
+The Blacksmith is a part of your colony's production line. The Blacksmith will craft tools, swords, and armor to supply workers with items. (However, they do not craft bows or fishing poles.)
 
-The Blacksmith can learn 3x3 recipes for all tools, weapons, and armour (no string or redstone items)! The Blacksmith will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+The Blacksmith will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
 
 **Note:** The Blacksmith can only learn a set number of recipes based on their hut level. So:
 
@@ -35,4 +35,7 @@ The Blacksmith can learn 3x3 recipes for all tools, weapons, and armour (no stri
 | 4         | 80      |
 | 5         | 160     |
 
-<br>
+
+The higher a Blacksmith's Strength level, the faster they'll craft. 
+
+All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Blacksmith's Focus level, the greater their chance to decrease the amount of materials needed.
