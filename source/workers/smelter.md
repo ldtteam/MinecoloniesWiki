@@ -25,7 +25,7 @@ The Smelter is a very important addition to help automate your colony. The Smelt
 
 Smelters have a chance to double and even triple ores, depending on the Smeltery's level and the Smelter's Strength skill:
 
-| Building Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output |
+| Smeltery Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output |
 | :-----: | :-----: | :-----: | :-----: |
 | 1 | 100% | Strength Level | --- |
 | 2 | 100% | 2 x Strength Level | --- |
