@@ -63,7 +63,7 @@ When accessing the Apiary block by right-clicking on it, you will see a GUI with
     <p>This is page two of the GUI. It has two buttons:</p>
     <ul>
         <li><b>Honeycombs or Honey:</b> Here you choose if the Beekeeper will collect honeycombs or honey bottles. Click to change the setting.</li>
-      <li><b>Get hive tool:</b> Click this button to get the hive tool, which is how you select which hives the Beekeeper will take care of. To select a hive, right-click on it with the hive tool.</li>
+      <li><b>Get hive tool:</b> Click this button to get the hive tool, which is how you select which hives the Beekeeper will take care of. To select a hive, right-click on it with the hive tool. Rigth-click on a hive again to remove it.</li>
     </ul>
   </div>
 </div>  
