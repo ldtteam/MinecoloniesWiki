@@ -9,7 +9,7 @@
     "secondRow":
     {
       "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": "minecraft/rabbit",
+      "secondItem": "minecraft/rabbit_raw",
       "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
     },
     "thirdRow":
