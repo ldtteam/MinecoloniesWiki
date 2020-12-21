@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Strength</p>
       <p class="traits">Focus</p>
-      <p><a href="../buildings/blacksmith">Blacksmith</a></p>
+      <p><a href="../buildings/blacksmith">Blacksmith's Hut</a></p>
     </div>
   </div>
 </div>
