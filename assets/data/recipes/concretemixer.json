@@ -10,7 +10,7 @@
     {
       "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
       "secondItem": "minecraft/white_concrete_powder",
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
+      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
     },
     "thirdRow":
     {
