@@ -9,7 +9,7 @@
       "secondRow":
       {
         "firstItem": "",
-        "secondItem": ["minecraft/paper","minecraft/paper", "minecraft/paper","minecraft/paper","minecraft/paper","minecraft/paper", "minecolonies/paper"],
+        "secondItem": "minecraft/paper",
         "thirdItem": ""
       },
       "thirdRow":
