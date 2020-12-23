@@ -21,7 +21,7 @@ layout: default
 
 The Courier runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse.
 
-The level of the Courier's Hut will dictate how many items the Courier can carry to/from Huts - Warehouse - Huts, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
+The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 
 | Courier's Hut Level | Max Stacks Carried |
 | :-----------------: | :----------------: |
