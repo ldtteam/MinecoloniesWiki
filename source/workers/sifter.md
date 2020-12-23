@@ -43,6 +43,6 @@ The Sifter can only sift a certain amount of materials per day, depending on the
 | 4         | 256       |
 | 5         | 999       |
 
-The Sifter can use 4 different meshs. The higher levels of meshes will find more and better items. (The Sifter's Focus level also affects the quality and amount of items found.) The string mesh is the default option, however, if you want to use the flint, iron, or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingots, or diamonds in your inventory or if you are in Creative Mode.
+The Sifter can use 4 different meshes. The higher levels of meshes will find more items of better quality, as will a higher Focus level of the Sifter. The string mesh is the default option, however, if you want to use the flint, iron, or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingots, or diamonds in your inventory or if you are in Creative Mode.
 
 The higher the Sifter's Strength level, the faster they'll sift.
