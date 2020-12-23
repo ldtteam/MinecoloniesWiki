@@ -35,4 +35,4 @@ The Miner can on occasion get confused and lost. They may start new tunnels and 
 
 The Miner has a chance to get lucky in finding ores when digging out cobblestone or stone! This is the default setting in the configuration file, but you can change this.
 
-The Miner's Strength level affects their block placing speed. So, if they have a higher Strength speed, they'll place supports and other blocks faster. Similarly, their Stamina skill affects their block breaking speed.
+The Miner's Strength level affects their block breaking speed. Similarly, their Stamina skill affects their block placing speed, so if they have a higher Stamina skill they'll place supports and other blocks faster. 
