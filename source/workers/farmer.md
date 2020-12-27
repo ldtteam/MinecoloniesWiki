@@ -36,3 +36,5 @@ The Farmer will also craft seeds, carved pumpkins, hay bales, [composted dirt](.
 | 3         | 40      |
 | 4         | 80      |
 | 5         | 160     |
+
+The higher a Farmer's Stamina level, the less time they will take between cycles of planting and harvesting. The higher their Athletics level, the less time they will take to plant/harvest each crop.

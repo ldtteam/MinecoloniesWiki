@@ -37,4 +37,4 @@ The Rabbit Herder will work with vanilla Minecraft rabbits, but might work with 
 | 4         | 8           |
 | 5         | 10          |
 
-<br>
+The greater a Rabbit Herder's Agility level, the higher their chance to successfully hit a rabbit (if they miss, they'll keep trying until the rabbit dies). The greater their Athletics level, the faster rabbits will grow up.

@@ -32,3 +32,7 @@ The Mechanic is part of the supply production of your colony. The Mechanic will 
 | 3         | 40      |
 | 4         | 80      |
 | 5         | 160     |
+
+All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Mechanic's Knowledge level, the greater their chance to decrease the amount of materials needed.
+
+Mechanics' crafting speed increases as their Agility skill increases.

@@ -24,16 +24,16 @@ layout: default
 
 The Smeltery is where the Smelter will smelt ores into ingots.
 
-**Hint:** The higher the level of the Smeltery, the more furnaces the Smelter will be able to use. A higher level will also have a higher chance to double and even triple the ingot output per block of ore. The Smelter's worker level will sometimes determine the chance to double or triple the ingot output of ores, according to the Smeltery level. So:
+**Hint:** The higher the level of the Smeltery, the more furnaces the Smelter will be able to use. A higher level will also have a higher chance to double and even triple the ingot output per block of ore. The Smelter's Strength level will sometimes determine the chance to double or triple the ingot output of ores, according to the Smeltery level. So:
 
 
 | Building Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output | Furnaces |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
-| 1 | 100% | Worker Level Chance | --- | 1 |
-| 2 | 100% | 2 x Worker Level Chance | --- | 2 |
+| 1 | 100% | Strength Level | --- | 1 |
+| 2 | 100% | 2 x Strength Level | --- | 2 |
 | 3 | --- | 100% | --- | 3 |
-| 4 | --- | 100% | Worker Level Chance | 4 |
-| 5 | --- | 100% | 2 x Worker Level Chance | 5 |
+| 4 | --- | 100% | Strength Level | 4 |
+| 5 | --- | 100% | 2 x Strength Level | 5 |
 
 
 ## Smeltery GUI

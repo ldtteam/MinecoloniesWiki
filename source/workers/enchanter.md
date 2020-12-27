@@ -21,7 +21,17 @@ layout: default
   </div>
 </div>
 
-The Enchanter is a specialist part of your colony. The Enchanter will steal XP from other workers to create enchanted books that can be used on tools, weapons, and armor for your workers (or yourself). To do this, the Enchanter will also need an [ancient tome](../../source/items/ancient_tome), obtained from raiders. The ancient tome will be used up during this process.
+The Enchanter is a specialist part of your colony. The Enchanter will steal XP from other workers to create enchanted books that can be used on tools, weapons, and armor for your workers (or yourself). (The higher their Mana level, the more XP they'll collect per trip.) To do this, the Enchanter will also need an [ancient tome](../../source/items/ancient_tome), obtained from raiders. The ancient tome will be used up during this process.
+
+The higher the level of the Enchanter's Tower, the higher the level of the enchanted books the Enchanter will produce (the Enchanter's Knowledge level also contributes to this). So:
+
+| Building Level | Enchantment Level | Odds |
+| ----- | ----- | ----- |
+| 1 | 1 | 50 |
+| 2 | 2 | 25 |
+| 3 | 3 | 15 |
+| 4 | 4 | 5 |
+| 5 | 5 | 1 |
 
 The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) upon request:
 
