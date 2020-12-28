@@ -16,6 +16,8 @@ The [ancient tome](../../source/items/ancient_tome) is not on here as it cannot 
 
 The [calipers](../../source/items/calipers) are not on here as they cannot be crafted and can only be obtained in creative mode.
 
+None of the [scrolls](../../source/items/scrolls) are on here as they cannot be crafted by the player, only by the [Enchanter](../../source/workers/enchanter).
+
 | Name | Ingredients | Crafted At | Recipe |
 | ---- | ----------- | ---------- | ------ |
 | [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel</recipe> |
@@ -52,20 +54,21 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 
 | Name                                               | Ingredients                                          | Recipe                         |
 | -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
+| [Apiary](../../source/buildings/apiary)            | **Any** Planks + Build Tool + Beehive                | <recipe>apiary</recipe>        |
 | [Archery](../../source/buildings/archery)          | **Any** Planks + Build Tool + 3 Bows                 | <recipe>archery</recipe>       |
 | [Bakery](../../source/buildings/bakery)            | **Any** Planks + Build Tool + Wheat                  | <recipe>baker</recipe>         |
 | [Barracks](../../source/buildings/barracks)        | **Any** Planks + Build Tool + Iron Block             | <recipe>barracks</recipe>      |
 | [Blacksmith's Hut](../../source/buildings/blacksmith) | **Any** Planks + Build Tool + 3 Iron Ingots       | <recipe>blacksmith</recipe>    |
 | [Builder's Hut](../../source/buildings/builder)    | **Any** Planks + Build Tool + **Any** Wooden Door    | <recipe>builder</recipe>       |
 | [Chicken Farmer's Hut](../../source/buildings/chickenfarmer) | **Any** Planks + Build Tool + Egg          | <recipe>chickenherder</recipe> |
-| [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>citizen</recipe>       |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Build Tool + 3 Iron Swords      | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Build Tool + Barrel                | <recipe>composter</recipe>     |
-| [Cowherd's Hut](../../source/buildings/cowherd)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
+| [Concrete Mixer's Hut](../../source/buildings/concretemixer) | **Any** Planks + Build Tool + White Concrete Powder | <recipe>concretemixer</recipe> |
+| [Cowhand's Hut](../../source/buildings/cowhand)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
 | [Crusher's Hut](../../source/buildings/crusher)    | **Any** Planks + Build Tool + 2 Cobblestone + 1 Iron Ingot | <recipe>crusher</recipe> |
 | [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>deliveryman</recipe>   |
-| [Dyer's Hut](../../source/buildings/dyer)          | **Any** Planks + Build Tool + **Any** Dye            | <recipe>dyer</recipe>   |
-| [Enchanter's Tower](../../source/buildings/enchantertower) | **Any** Planks + Build Tool + Enchanting Table | <recipe>enchanter</recipe> |
+| [Dyer's Hut](../../source/buildings/dyer)          | **Any** Planks + Build Tool + **Any** Dye            | <recipe>dyer</recipe>          |
+| [Enchanter's Tower](../../source/buildings/enchantertower) | **Any** Planks + Build Tool + Enchanting Table | <recipe>enchanter</recipe>   |
 | [Farm](../../source/buildings/farm&field)          | **Any** Planks + Build Tool + Wooden Hoe             | <recipe>farm</recipe>          |
 | [Fisher's Hut](../../source/buildings/fisher)      | **Any** Planks + Build Tool + Fishing Rod            | <recipe>fisherman</recipe>     |
 | [Fletcher's Hut](../../source/buildings/fletcher)  | **Any** Planks + Build Tool + String                 | <recipe>fletcher</recipe>      |
@@ -73,11 +76,13 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Glassblower's Hut](../../source/buildings/glassblower) | **Any** Planks + Build Tool + Glass Block       | <recipe>glassblower</recipe>   |
 | [Guard Tower](../../source/buildings/guardtower)   | **Any** Planks + Build Tool + Bow                    | <recipe>guardtower</recipe>    |
 | [Hospital](../../source/buildings/hospital)        | **Any** Planks + Build Tool + Carrot                 | <recipe>hospital</recipe>      |
+| [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>citizen</recipe>       |
 | [Library](../../source/buildings/library)          | **Any** Planks + Build Tool + Bookshelf              | <recipe>library</recipe>       |
 | [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Build Tool + Wooden Axe             | <recipe>lumberjack</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Build Tool + Redstone Block         | <recipe>mechanic</recipe>      |
 | [Mine](../../source/buildings/mine)                | **Any** Planks + Build Tool + Wooden Pickaxe         | <recipe>mine</recipe>          |
 | [Plantation](../../source/buildings/plantation)    | **Any** Planks + Build Tool + Cactus                 | <recipe>plantation</recipe>    |
+| [Rabbit Hutch](../../source/buildings/rabbithutch) | **Any** Planks + Build Tool + Raw Rabbit             | <recipe>rabbithutch</recipe>   |
 | [Restaurant](../../source/buildings/restaurant)    | **Any** Planks + Build Tool + Apple                  | <recipe>restaurant</recipe>    |
 | [Sawmill](../../source/buildings/sawmill)          | **Any** Planks + Build Tool + Wooden Axe             | <recipe>sawmill</recipe>       |
 | [School](../../source/buildings/school)            | **Any** Planks + Build Tool + 2 Feathers             | <recipe>school</recipe>        |

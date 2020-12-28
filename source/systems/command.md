@@ -23,7 +23,7 @@ These are the in-game commands currently available. Most require that a user hav
 
 ## Base Commands
 
-/minecolonies (or /mc)  `<backup | help | home | raid-all-now | raid-all-tonight | resetsupplies | rtp | wheremai | whoami | citizens | colony | kill>`
+/minecolonies (or /mc)  `<backup | help | home | raid-all-now | raid-all-tonight | resetsupplies | rtp | whereami | whoami | citizens | colony | kill>`
 
 <table class="table">
   <thead>

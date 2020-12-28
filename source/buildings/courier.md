@@ -21,9 +21,7 @@ layout: default
 
 The Courier runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse.
 
-**Note:** You *must* build the Warehouse to at least level 1, otherwise, the Courier won't be able to do their job.
-
-The level of the Courier's Hut will dictate how many items/blocks the Courier can carry to/from Huts-Warehouse-Huts, so if you want them to carry more, be sure to upgrade the Courier's Hut. Also, the higher the level of the hut, the faster the Courier will move between huts and the Warehouse.
+The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 
 | Courier's Hut Level | Max Stacks Carried |
 | :-----------------: | :----------------: |
@@ -33,7 +31,12 @@ The level of the Courier's Hut will dictate how many items/blocks the Courier ca
 | 4                   | 5                  |
 | 5                   | unlimited          |
 
-<br>
+
+The greater a Courier's Agility skill, the faster they'll run. The greater their Adaptability skill, the more huts they can visit before going back to the Warehouse.
+
+**Note:** You MUST build the Warehouse to at least level 1 so the Courier can do their work.
+
+**Note:** You can have up to 10 Couriers per Warehouse, depending on the Warehouse's level. The default configuration only allows for 1 Warehouse, but this can be changed. However, Couriers assigned to subsequent Warehouses will only see the items in the Warehouse they are assigned to.
 
 ## Courier's Hut GUI
 

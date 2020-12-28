@@ -25,14 +25,14 @@ The Crusher is a part of your colony's production line. The Crusher will crush m
 
 The defaults are:
 <ul>
-  <li>Cobblestone into Gravel</li>
+  <li>Cobblestone into Gravel (chance to get flint)</li>
   <li>Gravel into Sand</li>
   <li>Sand into Clay</li>
 </ul>
 
 However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
-The Crusher works on a 2:1 Ratio, so, for example, it takes 2 cobblestone to get 1 gravel.
+The Crusher works on a 2:1 ratio, so, for example, it takes 2 cobblestone to get 1 gravel. However, there is a [research](../../source/systems/research) in the [University](../../source/buildings/university) to make them work on a 1:1 ratio.
 
 The Crusher can only crush a certain amount of materials per day, depending on their hut level.
 
@@ -43,3 +43,6 @@ The Crusher can only crush a certain amount of materials per day, depending on t
 | 3         | 144       |
 | 4         | 256       |
 | 5         | 999       |
+
+
+The higher a Crusher's Stamina level, the less of a chance they have to get sick. The higher their Strength level, the faster they'll work.

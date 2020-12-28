@@ -12,14 +12,14 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/archer">Archer in Training</a></p>
+        <p><a href="../workers/archerintraining">Archer in Training</a></p>
         </div>
     </div>
     <hr />
     <recipe>archery</recipe>
 </div>
 
-### Note: The Archery cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../..source/buildings/university).
+### Note: The Archery cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Archery is where your Archers in Training will train to become [Archer Guards](../../source/workers/guard). This also allows them to level up without a risk of dying to mobs. A new Archer in Training will need a bed in a house in order to spawn. However, once they are hired at the Archery, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).

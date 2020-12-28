@@ -137,9 +137,9 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | [Barracks](../../source/buildings/barracks)             | 1 barracks tower per level (up to lvl 4)                             |                     |
 | [Barracks Tower](../../source/buildings/barrackstower)  |                                                                      | 1 bed per level     |
 | [Builder's Hut](../../source/buildings/builder)         |                                                                      | 1 rack per level    |
-| [Citzen's Hut](../../source/buildings/citizen)          | 1 bed per level                                                      |                     |
+| [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
 | [Combat Academy](../../source/buildings/combatacademy)  | 1 combat dummy per level (a pumpkin on top of a bale of hay)         |                     |
-| [Composter's Hut](../../source/buildings/composter)     | 1 [barrel](../../source/items/barrel) per level                      |                     |
+| [Composter's Hut](../../source/buildings/composter)     | 1 [compost barrel](../../source/items/compostbarrel) per level       |                     |
 | [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
 | [Dyer's Hut](../../source/buildings/dyer)               | 1 furnace                                                            |                     |
 | [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
@@ -154,7 +154,7 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
 | [Plantation](../../source/buildings/plantation)         | 4 per level: brick under sand, cobble under sand, sand next to water |                     |
 | [Tavern](../../source/buildings/tavern)                 | 4 beds, [horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical), a dining room |                     |
 | [University](../../source/buildings/university)         | Bookshelves                                                          |                     |
-| [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/racks) (more each level)                  |                     |
+| [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/rack) (more each level)                   |                     |
 
 ## Level Requirements
 
@@ -178,7 +178,7 @@ Here is a full list, up-to-date as of 9 February 2020, of the building names. **
   <li>Make sure all chests and [racks](../../source/items/rack) are in the same location through all levels</li>
   <li>Use [solid placeholder blocks](../../source/items/placeholderblocks) at or below ground level</li>
   <li>Use [light placeholder blocks](../../source/items/placeholderblocks) where you want to keep any existing block (including from level to level), like the [Barracks Towers](../../source/buildings/barrackstower) in the [Barracks](../../source/buildings/barracks) schematic</li>
-  <li>Use only vanilla blocks or Structurize blocks (officially)</li>
+  <li>Use only vanilla blocks or Structurize blocks (for official styles)</li>
   <li>Use Books and Quills instead of blank books</li>
   <li>If building upgradable deco, add the deco controller with the name of your deco item, LunaDragonStar (the schematics admin) will fix the pathing that goes in it to match where she puts it in the files</li>
 </ul>

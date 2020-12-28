@@ -35,8 +35,8 @@ You can only choose one column 6 research in each of the Combat, Civilian, and T
 | Accuracy | [Guard Tower](../../source/buildings/guardtower) at least level 1; 16 iron ingots | Reduces the time [Guards](../../source/workers/guard) sleep by 50% |
 | Tactic Training | Guard Tower at least level 3; 3 blocks of iron | Unlocks the [Barracks](../../source/buildings/barracks) |
 | Avoidance | Guard Tower at least level 3; 3 blocks of iron | Lets Knights use shields |
-| Improved Leather | [Town Hall](../../source/buildings/townhall) at leat level 1; 32 leather | Increases Guards' armor's durabilty by 10% |
-| Taunt | Guard Tower at leat level 1; 8 rotten flesh, 8 bones, 8 spider eyes | After a Guard attacks a mob, the mob targets the Guard instead of citizens or the player |
+| Improved Leather | [Town Hall](../../source/buildings/townhall) at least level 1; 32 leather | Increases Guards' armor's durabilty by 10% |
+| Taunt | Guard Tower at least level 1; 8 rotten flesh, 8 bones, 8 spider eyes | After a Guard attacks a mob, the mob targets the Guard instead of citizens or the player |
 
 #### Second Column
 
@@ -206,7 +206,9 @@ You can only choose one of these!
 
 ### Technology
 <br>
-<img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
+<img src="../../assets/images/gui/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page Part One">
+<br>
+<img src="../../assets/images/gui/universitytechnology2.png" class="img-fluid mx-auto" alt="University Technology GUI Page Part Two">
 <br>
 
 #### First Column
@@ -214,6 +216,7 @@ You can only choose one of these!
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
 | Biodegradable | [Farm](../../source/buildings/farm&field) at least level 3; 64 bone meal | Unlocks the [Composter's Hut](../../source/buildings/composter) |
+| More Scrolls | [Enchanter's Tower](../../source/buildings/enchantertower) at least level 3; 64 paper, 1 [ancient tome](../../source/items/ancient_tome), 64 lapis lazuli | Lets the [Enchanter](../../source/workers/enchanter) craft the [Spatial guard reinforcement scroll](../../source/items/scrolls) and the [Worker-where-are-you scroll](../../source/items/scrolls) |
 | Stone Cake | [Mine](../../source/buildings/mine) at least level 3; 64 chiseled stone bricks | Unlocks the [Stonemason's Hut](../../source/buildings/stonemason) |
 | Woodwork | [Forester's Hut](../../source/buildings/forester) at least level 3; 64 oak planks | Unlocks the [Sawmill](../../source/buildings/sawmill) |
 | Hot! | Mine at least level 2; 4 lava buckets | Unlocks the [Smeltery](../../source/buildings/smeltery) |
@@ -225,7 +228,7 @@ You can only choose one of these!
 | ---- | ------------- | ------------ | ------- |
 | Flower Power | Biodegradable | Composter's Hut at least level 3; 64 compost | Unlocks the [Flower Shop](../../source/buildings/flowershop) |
 | Let it Grow | Biodegradable | Farm at least level 3; 16 compost | Unlocks the [Plantation](../../source/buildings/plantation) |
-| Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/worker/farmer) output by 10% |
+| Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/workers/farmer) output by 10% |
 | Rocking Roll | Stone Cake | Stonemason's Hut at least level 1; 64 stone | Unlocks the [Crusher's Hut](../../source/buildings/crusher) |
 | Stringwork | Woodwork | Sawmill at least level 1; 16 string | Unlocks the [Fletcher's Hut](../../source/buildings/fletcher) |
 | Sieving | Woodwork | [Fisher's Hut](../../source/buildings/fisher) at least level 3; 64 string | Unlocks the [Sifter's Hut](../../source/buildings/sifter) |
@@ -255,7 +258,7 @@ You can only choose one of these!
 | Hardened | Strong | Blacksmith's Hut at least level 2; 16 diamonds | Increases colonists' tools' durability by 10% |
 | Skills | Ability | Mine at least level 2; 128 iron ingots | Increases colonists' block placing speed by 25% |
 | Good Veins | Veinminer | Mine at least level 2; 64 iron ore | Increases the number of ores the Miner produces by 25% |
-| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 [ancient tomes](../../source/items/ancient_tome), 5 blocks of iron | This has a bit of a complex formula, but suffice it to say it makes gates more durable |
+| Enhanced Gates I | What ya Need? | 64 wooden [gates](../../source/items/gates), 2 ancient tomes, 5 blocks of iron | This has a bit of a complex formula, but suffice it to say it makes gates more durable |
 
 #### Fourth Column
 
