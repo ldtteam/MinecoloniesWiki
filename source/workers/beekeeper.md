@@ -31,8 +31,8 @@ The level of the Apiary determines the max number of hives they can take care of
 | ------------ | ------------------- |
 | 1 | 1 |
 | 2 | 2 |
-| 3 | 3 |
-| 4 | 4 |
-| 5 | 5 |
+| 3 | 4 |
+| 4 | 8 |
+| 5 | 16 |
 
 **Note:** If the Beekeeper is asking for hives but there are some nearby, make sure you've set the hives for them to take care of with the hive tool. This tool is accessed from the second page of the Apiary GUI.
