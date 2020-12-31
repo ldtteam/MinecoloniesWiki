@@ -66,7 +66,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Concrete Mixer's Hut](../../source/buildings/concretemixer) | **Any** Planks + Build Tool + White Concrete Powder | <recipe>concretemixer</recipe> |
 | [Cowhand's Hut](../../source/buildings/cowhand)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
 | [Crusher's Hut](../../source/buildings/crusher)    | **Any** Planks + Build Tool + 2 Cobblestone + 1 Iron Ingot | <recipe>crusher</recipe> |
-| [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>deliveryman</recipe>   |
+| [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>courier</recipe>       |
 | [Dyer's Hut](../../source/buildings/dyer)          | **Any** Planks + Build Tool + **Any** Dye            | <recipe>dyer</recipe>          |
 | [Enchanter's Tower](../../source/buildings/enchantertower) | **Any** Planks + Build Tool + Enchanting Table | <recipe>enchanter</recipe>   |
 | [Farm](../../source/buildings/farm&field)          | **Any** Planks + Build Tool + Wooden Hoe             | <recipe>farm</recipe>          |
