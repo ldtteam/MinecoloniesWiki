@@ -66,7 +66,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Concrete Mixer's Hut](../../source/buildings/concretemixer) | **Any** Planks + Build Tool + White Concrete Powder | <recipe>concretemixer</recipe> |
 | [Cowhand's Hut](../../source/buildings/cowhand)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
 | [Crusher's Hut](../../source/buildings/crusher)    | **Any** Planks + Build Tool + 2 Cobblestone + 1 Iron Ingot | <recipe>crusher</recipe> |
-| [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>deliveryman</recipe>   |
+| [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>courier</recipe>       |
 | [Dyer's Hut](../../source/buildings/dyer)          | **Any** Planks + Build Tool + **Any** Dye            | <recipe>dyer</recipe>          |
 | [Enchanter's Tower](../../source/buildings/enchantertower) | **Any** Planks + Build Tool + Enchanting Table | <recipe>enchanter</recipe>   |
 | [Farm](../../source/buildings/farm&field)          | **Any** Planks + Build Tool + Wooden Hoe             | <recipe>farm</recipe>          |
@@ -76,7 +76,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Glassblower's Hut](../../source/buildings/glassblower) | **Any** Planks + Build Tool + Glass Block       | <recipe>glassblower</recipe>   |
 | [Guard Tower](../../source/buildings/guardtower)   | **Any** Planks + Build Tool + Bow                    | <recipe>guardtower</recipe>    |
 | [Hospital](../../source/buildings/hospital)        | **Any** Planks + Build Tool + Carrot                 | <recipe>hospital</recipe>      |
-| [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>citizen</recipe>       |
+| [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>house</recipe>         |
 | [Library](../../source/buildings/library)          | **Any** Planks + Build Tool + Bookshelf              | <recipe>library</recipe>       |
 | [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Build Tool + Wooden Axe             | <recipe>lumberjack</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Build Tool + Redstone Block         | <recipe>mechanic</recipe>      |

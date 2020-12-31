@@ -6,7 +6,7 @@ layout: default
 
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/citizen.png" alt="House" />
-    <recipe>citizen</recipe>
+    <recipe>house</recipe>
 </div>
 
 Citizens will go to the House they are assigned to at night to sleep. The House is also a way to get more citizens for your colony.
