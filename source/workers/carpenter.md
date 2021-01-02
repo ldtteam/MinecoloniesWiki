@@ -5,7 +5,7 @@ layout: default
 # Carpenter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/miller_m.png" alt="Carpenter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/miller_f.png" alt="Carpenter Female" />
+<img src="../../assets/images/workers/carpenter_m.png" alt="Carpenter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/carpenter_f.png" alt="Carpenter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
