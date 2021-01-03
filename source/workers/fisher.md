@@ -5,7 +5,7 @@ layout: default
 # Fisher
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/fisherman_m.png" alt="Fisher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/fisherman_f.png" alt="Fisher Female" />
+<img src="../../assets/images/workers/fisher_m.png" alt="Fisher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/fisher_f.png" alt="Fisher Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
