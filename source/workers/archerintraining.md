@@ -5,7 +5,7 @@ layout: default
 # Archer in Training
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/ranger_m.png" alt="Guard Archer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/ranger_f.png" alt="Guard Archer Female" />
+<img src="../../assets/images/workers/archer_m.png" alt="Guard Archer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/archer_f.png" alt="Guard Archer Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
