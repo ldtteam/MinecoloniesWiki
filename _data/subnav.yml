@@ -245,6 +245,8 @@ subnav:
     subitems:
       - page: Custom Citizen Names
         url: source/misc/customcitizennames
+      - page: Multilingual Sources
+        url: source/misc/multilingual
       - page: Recipes
         url: source/misc/recipes
       - page: Troubleshooting
