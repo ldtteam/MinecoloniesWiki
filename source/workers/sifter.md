@@ -5,7 +5,7 @@ layout: default
 # Sifter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/sifter_m.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/sifter_f.png" alt="Sifter Female" />
+<img src="../../assets/images/workers/smelter_m.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Sifter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
