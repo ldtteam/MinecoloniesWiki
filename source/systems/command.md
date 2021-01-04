@@ -19,11 +19,11 @@ These are the in-game commands currently available. Most require that a user hav
 | `plaintext`          | Enter this exactly as shown       |
 | `<angle brackets>`   | This is a **required** argument   |
 | `[square brackets]`  | This is an **optional** argument  |
-| `x | y | z`          | Pick one of these options         |
+| `x \| y \| z`        | Pick one of these options (can be optional or required) |
 
 ## Base Commands
 
-/minecolonies (or /mc)  `<backup | help | home | raid-all-now | raid-all-tonight | resetsupplies | rtp | whereami | whoami | citizens | colony | kill>`
+`/minecolonies (or /mc)  <backup | help | home | raid-all-now | raid-all-tonight | resetsupplies | rtp | whereami | whoami | citizens | colony | kill>`
 
 <table class="table">
   <thead>
@@ -46,12 +46,8 @@ These are the in-game commands currently available. Most require that a user hav
       <td class="d-block d-lg-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc raid-All-now</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Schedules a raid for every colony to start right now.</td>
-    </tr>
-    <tr class="d-block d-lg-table-row">
-      <td class="d-block d-lg-table-cell"><code>/mc raid-All-tonight</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Schedules a raid for every colony to start the coming night.</td>
+      <td class="d-block d-lg-table-cell"><code>/mc raid-All &lt;now | tonight&gt; &lt;amazon_raid | barbarian_raid | egyptian_raid | norsemen_raid | pirate_raid&gt;</code><br>Default Permission Level: OP</td>
+      <td class="d-block d-lg-table-cell">Schedules a raid for every colony. You can choose if it starts now or the next Minecraft night, as well as its type.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc resetsupplies &lt;online player's username&gt;</code><br>Default Permission Level: OP</td>
@@ -74,7 +70,7 @@ These are the in-game commands currently available. Most require that a user hav
 
 ## Colony Commands
 
-/minecolonies (or /mc) colony  `<addOfficer | canSpawnRaiders | claim | delete | home | info | list | loadAllColoniesFromBackup | loadBackup | raid-now | raid-tonight | requestsystem-reset | requestsystem-reset-all | setAbandoned | setDeleteable | setowner | teleport>`
+`/minecolonies (or /mc) colony  <addOfficer | canSpawnRaiders | claim | delete | home | info | list | loadAllColoniesFromBackup | loadBackup | raid-now | raid-tonight | requestsystem-reset | requestsystem-reset-all | setAbandoned | setDeleteable | setowner | teleport>`
 
 <table class="table">
   <thead>
@@ -93,7 +89,7 @@ These are the in-game commands currently available. Most require that a user hav
       <td class="d-block d-md-table-cell">Adds or removes the ability to spawn raiders in a colony.<br>Example:<br><code>/mc colony canSpawnRaiders 1 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id&gt; &lt;[number in chunks] [true | false]</code><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id&gt; [number in chunks] [true | false]</code><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Claims a specified number of chunks for a colony (or removes claimed chunks) based off the player's location.<br>Example:<br><code>/mc colony claim 1 8 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
@@ -121,12 +117,8 @@ These are the in-game commands currently available. Most require that a user hav
       <td class="d-block d-md-table-cell">Loads an individual colony from a backup.<br>Example:<br><code>/mc colony loadBackup 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony raid-now &lt;colony id&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Schedules a barbarian raid for the specified colony to start right now.<br>Example:<br><code>/mc colony raid-now 1</code></td>
-    </tr>
-    <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony raid-tonight &lt;colony id&gt;</code><br>Default permission level: OP</td>
-      <td class="d-block d-md-table-cell">Schedules a barbarian raid for the specified colony to start the coming night.<br>Example:<br><code>/mc colony raid-tonight 1</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc colony raid &lt;now | tonight&gt; &lt;[colony id]&gt; &lt;amazon_raid | barbarian_raid | egyptian_raid | norsemen_raid | pirate_raid&gt;</code><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell">Schedules a raid for the specified colony. You can choose if it starts now or the next Minecraft night, as well as its type.<br>Example:<br><code>/mc colony raid-now 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony requestsystem-reset &lt;[colony id]&gt;</code><br>Default permission level: All</td>
@@ -157,7 +149,7 @@ These are the in-game commands currently available. Most require that a user hav
 
 ## Citizens Commands
 
-/minecolonies (or /mc) citizens `<info | kill | list | reload | spawnNew | teleport | walk>`
+`/minecolonies (or /mc) citizens <info | kill | list | reload | spawnNew | teleport | walk>`
 
 <table class="table">
   <thead>
@@ -200,7 +192,7 @@ These are the in-game commands currently available. Most require that a user hav
 
 ## Kill Commands
 
-/minecolonies kill `<raider | animals | monster | chicken | cow | pig | sheep>`
+`/minecolonies kill <raider | animals | monster | chicken | cow | pig | sheep>`
 
 <table class="table">
   <thead>
