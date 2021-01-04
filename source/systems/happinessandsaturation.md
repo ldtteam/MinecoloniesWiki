@@ -18,7 +18,7 @@ Every night the overall colony happiness is recalculated based on the following:
 
 - If the average colonist saturation is greater than 5 it adds 0.1 per level, and if it's less than 5 it subtracts 0.1 per level.
 - If the average colonist housing is greater than 1, it adds 0.1 per level.
-- If 1 [Guard](../../source/workers/guard) level exists for each worker level (worker level 5 needs a Guard level 5, for example), 0.1 is added for each average level more and 0.1 is subtracted for each average level less.
+- If 1 [Guard](../../source/workers/guard) level exists for each worker level (a Guard level 8 can keep a level 2 worker and a level 6 worker happy, for example), 0.1 is added for each average level more and 0.1 is subtracted for each average level less.
 
 Each time a citizen is killed by a player, the overall happiness will decrease by 9 but won't go lower than 1. Each time a citizen dies otherwise (from a mob, falling, getting burned, etc) it will decrease by 1 (and won't go lower than 1).
 
