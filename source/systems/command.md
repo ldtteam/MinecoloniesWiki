@@ -19,7 +19,7 @@ These are the in-game commands currently available. Most require that a user hav
 | `plaintext`          | Enter this exactly as shown       |
 | `<angle brackets>`   | This is a **required** argument   |
 | `[square brackets]`  | This is an **optional** argument  |
-| `x | y | z`          | Pick one of these options         |
+| `x \| y \| z`        | Pick one of these options (can be optional or required) |
 
 ## Base Commands
 
@@ -89,7 +89,7 @@ These are the in-game commands currently available. Most require that a user hav
       <td class="d-block d-md-table-cell">Adds or removes the ability to spawn raiders in a colony.<br>Example:<br><code>/mc colony canSpawnRaiders 1 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id&gt; &lt;[number in chunks] [true | false]</code><br>Default permission level: OP</td>
+      <td class="d-block d-md-table-cell"><code>/mc colony claim &lt;colony id&gt; [number in chunks] [true | false]</code><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Claims a specified number of chunks for a colony (or removes claimed chunks) based off the player's location.<br>Example:<br><code>/mc colony claim 1 8 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
