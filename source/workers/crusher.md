@@ -5,7 +5,7 @@ layout: default
 # Crusher
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/crusher_m.png" alt="Crusher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/crusher_f.png" alt="Crusher Female" />
+<img src="../../assets/images/workers/smelter_m.png" alt="Crusher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Crusher Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
