@@ -1,6 +1,6 @@
 ---
 title: Custom Citizen Names
-layout: recipes
+layout: default
 ---
 # Custom Citizen Names
 
