@@ -5,8 +5,8 @@ layout: default
 # Gates
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/gatewooden.png" alt="Wooden Gate"></p>
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/gateiron.png" alt="Iron Gate"></p>
+    <p style="text-align:center;"><img src="../../assets/images/items/gatewooden.png" alt="Wooden Gate"></p>
+    <p style="text-align:center;"><img src="../../assets/images/items/gateiron.png" alt="Iron Gate"></p>
     Only the <a href="../../source/workers/mechanic">Mechanic</a> can craft gates.
 </div>
 <br>
