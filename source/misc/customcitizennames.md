@@ -36,6 +36,12 @@ Everything you have to change is in one file.
 
 ## Official Language Templates
 
+### Chinese
+
+[Download Chinese Template File](../../source/misc/languageNameTemplates/chineseTemplate.toml)
+
+*Credit to HJ-zhtw*
+
 ### French
 
 [Download French Template File](../../source/misc/languageNameTemplates/frenchTemplate.toml)
