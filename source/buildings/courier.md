@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>deliveryman</recipe>
+    <recipe>courier</recipe>
 </div>
 
 The Courier runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse.

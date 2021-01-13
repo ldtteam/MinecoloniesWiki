@@ -5,7 +5,7 @@ layout: default
 # Courier
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/deliveryman_m.png" alt="Courier Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/deliveryman_f.png" alt="Courier Female" />
+<img src="../../assets/images/workers/courier_m.png" alt="Courier Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/courier_f.png" alt="Courier Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">

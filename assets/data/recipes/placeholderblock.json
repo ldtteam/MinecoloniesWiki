@@ -2,7 +2,7 @@
   {
     "firstRow":
     {
-      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"],
+      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log","minecraft/crimson_stem","minecraft/warped_stem"],
       "secondItem": "minecraft/stick",
       "thirdItem": ""
     },
@@ -16,7 +16,7 @@
     {
       "firstItem": "",
       "secondItem": "minecraft/stick",
-      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log"]
+      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log","minecraft/crimson_stem","minecraft/warped_stem"]
     },
     "product": "minecolonies/blocksubstitution",
     "amount": "32"

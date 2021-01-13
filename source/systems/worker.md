@@ -37,14 +37,14 @@ A chart of all the jobs and their traits, from sikri(#2346) on [Discord](https:/
 
 The type of tools/swords workers can use depends on the level of a worker's work hut.
 
-| Work Hut Level | Max (Vanilla) Tool/Sword Level                                                                                           | Max (Tinker's Construct) Tool/Sword Level |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
-| 0              | Wood or Gold (+ 0 enchantments)                                                                                          | Mining level of Stone                     |
-| 1              | Stone + 0 enchantments (OR wood/gold + 1 enchantment)                                                                    | Mining level of Iron                      |
-| 2              | Iron + 0 enchantments (OR wood/gold + 2 enchantment OR stone + 1 enchantment)                                            | Mining level of Diamond                   |
-| 3              | Diamond + 0 enchantments (OR wood/gold + 3 enchantments OR stone + 2 enchantments OR Iron + 1 enchantment)               | Mining level of Obsidian                  |
-| 4              | All Tools + 0 enchantments (OR wood/gold + 4 enchants OR Stone + 3 enchants OR Iron + 2 enchants OR diamond + 1 enchant) | Mining level of Cobalt                    |
-| 5              | All Tools + unlimited enchantments                                                                                       | Any mining level                          |
+| Work Hut Level | Max Tool/Sword Level                                                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| 0              | Wood or Gold + 0 enchantments                                                                                            |
+| 1              | Stone + 0 enchantments (OR wood/gold + 1 enchantment)                                                                    |
+| 2              | Iron + 0 enchantments (OR wood/gold + 2 enchantment OR stone + 1 enchantment)                                            |
+| 3              | Diamond + 0 enchantments (OR wood/gold + 3 enchantments OR stone + 2 enchantments OR Iron + 1 enchantment)               |
+| 4              | Netherite + 0 enchantments (OR wood/gold + 4 enchants OR Stone + 3 enchants OR Iron + 2 enchants OR diamond + 1 enchant) |
+| 5              | All Tools + unlimited enchantments                                                                                       |
 
 ## Bow/Fishing Rod Levels
 
@@ -70,3 +70,4 @@ There is also a system in place for the type of armor [Guards](../../source/work
 | Chain         | 0 - 20      | 2 - 5       |
 | Iron          | 5 - 30      | 3 - 5       |
 | Diamond       | 15 - 99     | 4 - 5       |
+| Netherite     | 15 - 99     | 4 - 5       |
