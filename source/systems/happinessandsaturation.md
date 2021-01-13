@@ -14,15 +14,15 @@ There is an **overall** colony happiness and an **individual** citizen happiness
 
 Overall colony happiness is 1-10 (initially set to 5). Happiness depends on three basic factors: **security, housing, and saturation**.
 
-If a colonist's saturation above 7 shanks, they will be more happy.
-If the colonist's home (or for [guards](../../source/workers/guard), or [trainees](../../source/workers/archerintraining), workplace) is above level 2, the colonist will be more happy.
+If a colonist's saturation is above 7 shanks, they will be more happy.
+If the colonist's home (or for [guards](../../source/workers/guard) or trainees, workplace) is above level 2, the colonist will be more happy.
 If at least two Guards are available for every three workers, the colonists will be happier.
 
 These basic factors benefit from partial completion. Citizens will be happier with 5 shanks of saturation than 1, with 1 Guard for every 4 workers than 1 Guard for every 10, and enjoy a level 2 house more than a level 1 house. Colonists also become happier as these values increase further, such as from upgrading a house to level 4 or 5 or having completely full saturation.
 
 Each time a citizen (other than a Guard) dies, other citizens will mourn the next day and be less happy for the next three days. All citizens become slightly less happy for the next day when injured.
 
-Every night, colonists will also become less happy if they are sick, homeless, unemployed, or have nothing to do at their job, and will become increasingly unhappy the longer the problem persists. Injuries will reduce colonist happiness, as will Guards who are unable to sleep. Colonists will also become less happy if fellow colonists become sick, starving, homeless, or unemployed (the Social Factor in the [Town Hall](../../source/buildings/townhall)'s happiness page).
+Every night, colonists will also become less happy if they are sick, homeless, unemployed, or have nothing to do at their job, and will become increasingly unhappy the longer the problem persists. Citizens (other than guards) unable to make it to their bed at night to sleep will become unhappy. Fellow colonists' livelihood also matters for happiness (the Social Factor in the [Town Hall](../../source/buildings/townhall)'s happiness page).
 
 Surviving a raid without losing any colonists provides a colony-wide happiness boost.
 
