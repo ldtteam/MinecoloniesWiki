@@ -5,7 +5,7 @@ layout: default
 # Stone Smelter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/stonesmelter_m.png" alt="Stone Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/stonesmelter_f.png" alt="Stone Smelter Female" />
+<img src="../../assets/images/workers/crafter_m.png" alt="Stone Smelter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/crafter_f.png" alt="Stone Smelter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">

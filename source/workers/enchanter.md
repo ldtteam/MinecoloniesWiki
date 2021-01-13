@@ -5,7 +5,7 @@ layout: default
 # Enchanter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/enchanter_m.png" alt="Enchanter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/enchanter_f.png" alt="Enchanter Female" />
+<img src="../../assets/images/workers/student_m.png" alt="Enchanter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/student_f.png" alt="Enchanter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">

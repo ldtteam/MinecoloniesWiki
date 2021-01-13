@@ -5,7 +5,7 @@ layout: default
 # Florist
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/florist_m.png" alt="Florist Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/florist_f.png" alt="Florist Female" />
+<img src="../../assets/images/workers/composter_m.png" alt="Florist Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/composter_f.png" alt="Florist Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
