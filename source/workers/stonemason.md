@@ -33,4 +33,6 @@ The Stonemason is part of your colony’s crafting line. The Stonemason can craf
 | 4         | 80      |
 | 5         | 160     |
 
-<br>
+All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Stonemason's Creativity level, the greater their chance to decrease the amount of materials needed.
+
+The Stonemason will craft faster with a higher Dexterity level.

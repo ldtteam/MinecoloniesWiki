@@ -7,7 +7,7 @@ layout: default
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b> If it is raining, snowing, nighttime, or a citizen died yesterday (in-game time), your citizens will stop working!</b></p>
 
 ## Traits
-When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job. The higher a worker's level, the faster and more efficient they will be.
+When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job. The higher a worker's level, the faster and more efficient they will be. Each trait also has a specific bonus for the job. To see these bonuses, please visit the worker pages.
 
 ![Traits](../../assets/images/misc/traits.png)
 

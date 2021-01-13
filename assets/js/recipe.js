@@ -351,10 +351,10 @@ class JSONReader {
       {
         $(this).find(".switch:first")
         .toggle()
-        .next()
-        .toggle()
-        .end()
         .appendTo(this);
+
+        $(this).find(".switch:first")
+        .toggle()
       });
       }, 2000)
   }

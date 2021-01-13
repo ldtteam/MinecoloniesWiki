@@ -37,4 +37,5 @@ The Chicken Farmer will work with vanilla Minecraft chickens, but might work wit
 | 4         | 8               |
 | 5         | 10              |
 
-<br>
+
+The higher a Chicken Farmer's Adaptability level is, the greater their chance to pick up eggs/meat/feathers. Similarly, the greater their Agility level, the higher their chance to successfully hit a chicken (if they miss, they'll keep trying until the chicken dies).

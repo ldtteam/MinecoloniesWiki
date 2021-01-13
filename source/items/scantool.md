@@ -20,8 +20,8 @@ The scan tool is a very useful tool. With the scan tool, you can scan any struct
 <br>
 
 **Hint:** There are two blocks in Minecolonies that are made specifically for helping players make schematics.
-1. [Placeholder Block](../../source/items/substitutionblocks): This block will not be scanned and will use the block that is already there, like air, grass, cobblestone, etc.
-2. [Solid Placeholder Block](../../source/items/substitutionblocks): This block will guarantee the block placed will be solid according to the biome it's being built on. 
+1. [Placeholder Block](../../source/items/placeholderblocks): This block will not be scanned and will use the block that is already there, like air, grass, cobblestone, etc.
+2. [Solid Placeholder Block](../../source/items/placeholderblocks): This block will guarantee the block placed will be solid according to the biome it's being built on. 
 
 ### Step One
 
@@ -36,7 +36,7 @@ Then left-click a lower front corner (left or right makes no difference) at grou
 
 ### Step Three
 
-Right-click on the top opposite corner of the structure (you can use a [Placeholder Block](../../source/items/placeholderblock) for this), leaving the entire structure inside this imaginary box.
+Right-click on the top opposite corner of the structure (you can use a [Placeholder Block](../../source/items/placeholderblocks) for this), leaving the entire structure inside this imaginary box.
 
 ![Point 2](../../assets/images/tutorial/scan2.png)
 
@@ -53,4 +53,4 @@ You can click on the Show Resources button to see all the blocks that are in you
 * Remove, to remove any of the blocks you see in your scan that you don't want in there.
 * Replace, to replace that block with any other block you prefer for that scan.
 
-You can also shift + right-click on a block to set the anchor position. (You can set it to a block outside of the scan, but that won't work for obvious reasons.) The anchor position is where the scan will rotate around when placing it with the [build tool](../../source/items/buildtool). When using the build tool, you can tell which block the anchor position is by its red outline. By default (if you don't shift + right-click), the anchor position will be the hut block (for huts) or the center block of the schematic (for decorations). You cannot change the anchor position for huts, it's always the hut block.
+You can also shift + right-click on a block to set the anchor position. (You can set it to a block outside of the scan, but that won't work for obvious reasons.) The anchor position is where the scan will rotate around when placing it with the [build tool](../../source/items/buildtool). When using the build tool, you can tell which block the anchor position is by its red outline. By default (if you don't shift + right-click), the anchor position will be the hut block (for huts) or the center block of the schematic (for decorations).

@@ -18,9 +18,9 @@ layout: default
 
 ## Installing MineColonies Mod on your original Minecraft Launcher.
 
-- This process is for installing only the MineColonies mod in your original Minecraft launcher. You will *not* be able to connect to the **MineColonies Official 1.12.2 Test Server** due to the server having a balanced variety of other mods as well.
+- This process is for installing only the MineColonies mod in your original Minecraft launcher. You will *not* be able to connect to the **MineColonies Official Servers** due to the servers having a balanced variety of other mods as well.
 
-- For connecting to the Official Test Server, install [Twitch](../installation/twitch) or use [MultiMC](../installation/multimc). You can visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods and the versions we are currently using on the Official Test Server, as well as all the appropriate configs, scripts and the server.dat file for our modpack Official Test Server. If all these additional mods, configs, scripts and the server.dat are downloaded and installed manually, you will be able to connect to our Official Test Server. 
+- For connecting to the Official Test Server, install [MultiMC](../installation/multimc) or use GDLauncher (no installation tutorial at this time). You can visit the [CurseForge](https://minecraft.curseforge.com/projects/minecolonies-testpack) site for a zip file containing all mods and the versions we are currently using on the Official Test Server, as well as all the appropriate configs, scripts and the server.dat file for our modpack Official Test Server. If all these additional mods, configs, scripts and the server.dat are downloaded and installed manually, you will be able to connect to our Official Test Server. 
 
 - Installation of the MineColonies mod is very simple. It does require Minecraft Forge to be able to integrate mods into the Minecraft game, though.
 

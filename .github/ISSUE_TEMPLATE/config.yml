@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Mod Issue or Suggestion
+    about: If you have a bug or suggestion for the mod itself (not the wiki)
+    url: https://github.com/ldtteam/minecolonies/issues/new/choose

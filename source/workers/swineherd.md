@@ -37,4 +37,4 @@ The Swineherd will work with vanilla Minecraft pigs, but might work with some pi
 | 4         | 8           |
 | 5         | 10          |
 
-<br>
+The higher a Swineherd's Strength level, the more damage they'll do per attack. Pigs will grow up faster when the Swineherd has a higher Athletics level.

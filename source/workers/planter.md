@@ -34,3 +34,7 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 | 3         | 40      |
 | 4         | 80      |
 | 5         | 160     |
+
+All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Planter's Agility level, the greater their chance to decrease the amount of materials needed.
+
+If a Planter's Dexterity level is higher, they'll craft faster.

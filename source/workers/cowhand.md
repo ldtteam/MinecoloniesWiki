@@ -37,4 +37,5 @@ The Cowhand will work with vanilla Minecraft cows, but might work with some cows
 | 4         | 8           |
 | 5         | 10          |
 
-<br>
+
+The higher a Cowhand's Athletics level, the greater their axe's damage. The higher their Stamina level, the faster baby cows will grow up.

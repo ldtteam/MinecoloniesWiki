@@ -1,8 +1,8 @@
 ---
-title: Tutorial
+title: Getting Started
 layout: default
 ---
-# Tutorial
+# Getting Started
 
 - [Quick Walkthrough](#quick-walkthrough)
 - [Detailed Walkthrough](#detailed-walkthrough)
@@ -16,7 +16,7 @@ layout: default
   - [Step 4](#step-4)
   - [Final Notes](#final-notes)
 
-This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://www.curseforge.com/minecraft/modpacks/minecolonies-testpack), you can find instructions for doing that on Twitch [here](../../source/installation/twitch), on MultiMMC [here](../../source/installation/multimmc), and on Java (Forge) [here](../../source/installation/java). 
+This tutorial assumes you have already installed the mod or modpack. If you'd like instructions on how to <a id="install">install</a> our [Official Modpack](https://www.curseforge.com/minecraft/modpacks/minecolonies-testpack), you can find instructions for doing that on MultiMC [here](../../source/installation/multimc) and on Java (Forge) [here](../../source/installation/java). 
 
 ## Quick Walkthrough 
 
@@ -30,7 +30,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
   
 ### Step 2: Town Hall
   
-  The [Town Hall](../../source/buildings/townhall) block is what actually creates the colony. It also functions as the center of it. This is where you start using the building tool to place buildings. Using the building tool ensures you can see exactly where the building will be, which direction it will face, and if it is at the right Y level (some buildings need to be raised to the correct Y level).
+  The [Town Hall](../../source/buildings/townhall) block is what actually creates the colony. It also functions as the center of it. This is where you start using the build tool to place buildings. Using the build tool ensures you can see exactly where the building will be, which direction it will face, and if it is at the right Y level (some buildings need to be raised to the correct Y level).
   
   Once the Town Hall block is placed, you will start receiving your initial 4 citizens.
   
@@ -79,7 +79,7 @@ To avoid mistakes and frustation, read through this entire guide carefully befor
 To place the [Supply Ship](../items/supplycampandship), you need to have a large enough body of water (at least 32 x 20).
 To place the [Supply Camp](../items/supplycampandship), you need to have a large enough flat, clear piece of land (at least 16x17 blocks).
 
-When you place the Supply Ship/Camp, it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [building tool](../../source/items/buildingtool). **Once the Supply Ship/Camp is placed, you can't place another in the world.**
+When you place the Supply Ship/Camp, it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [build tool](../../source/items/buildtool). **Once the Supply Ship/Camp is placed, you can't place another in the world.**
  
 **Hint:** The most important tool you will need for the entire mod is the build tool (check our [build tool](../items/buildtool) page). Craft the build tool so you can place all the huts and the Supply Ship or Supply Camp in the perfect spot.
 
@@ -116,7 +116,7 @@ For example, in the official MineColonies server it will be the default 8 chunk 
 
 ### Step 1
 
-Get enough materials and craft your Supply Ship/Camp, then place it with the <a href="#build_tool">build tool</a> or by right-clicking a block with it. There will be a chest (or <a href="../../source/items/rack">rack</a>) inside the placed Ship/Camp with a Town Hall block and a building tool.
+Get enough materials and craft your Supply Ship/Camp, then place it with the <a href="#build_tool">build tool</a> or by right-clicking a block with it. There will be a chest (or <a href="../../source/items/rack">rack</a>) inside the placed Ship/Camp with a Town Hall block and a build tool.
 
 **Hint:** Gather as many materials as possible to give to your [Builder](../../source/workers/builder) when they start building. They will ask you for all kinds of materials for each building or upgrade, depending on the style of building you have chosen. The materials needed for most styles will be mainly wood, cobblestone, and torches for the lower levels. Further upgrades will require more elaborate materials.
 
