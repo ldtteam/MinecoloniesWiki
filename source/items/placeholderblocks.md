@@ -10,7 +10,7 @@ layout: default
     <recipe>placeholderblock</recipe> - <recipe>solidplaceholderblock</recipe>
 </div>
 
-The placeholder blocks (also called substitution blocks) are tan and brown. The tan block is the placeholder block, and the brown is the solid placeholder block. Each serves its own function. 
+The placeholder blocks (also called substitution blocks) are tan and brown. The tan block is the placeholder block, and the brown is the solid placeholder. Each serves its own function. 
 
 Both kinds of placeholder blocks can be crafted at the [Sawmill](../../source/buildings/sawmill).
 
@@ -18,7 +18,7 @@ Both kinds of placeholder blocks can be crafted at the [Sawmill](../../source/bu
 
 The placeholder block tells the mod to leave any blocks that are currently in that spot alone. It will not remove or change anything that already exists in that spot.
 
-The solid placeholder block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (grass, sandstone, red sandstone, white terracotta, etc). 
+The solid placeholder tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (grass, sandstone, red sandstone, white terracotta, etc). 
 
 You can make and use these blocks in survival, but they are mainly used to scan schematics.
 
