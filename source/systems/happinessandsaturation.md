@@ -10,17 +10,21 @@ The citizens, however, will NOT die if their saturation goes down to 0, they wil
 
 ## Happiness System
 
-There is an **overall** colony happiness and an **individual** worker happiness.
+There is an **overall** colony happiness and an **individual** citizen happiness. Higher colony happiness increases the initial level and skills of new colonists. Higher citizen happiness increases the rate colonists gain Intelligence when studying at a [Library](../../source/buildings/library).
 
 Overall colony happiness is 1-10 (initially set to 5). Happiness depends on three basic factors: **security, housing, and saturation**.
 
-Every night the overall colony happiness is recalculated based on the following:
+If a colonist's saturation is above 7 shanks, they will be happier.
+If the colonist's home (or for [Guards](../../source/workers/guard) or trainees, their workplace) is above level 2.5, the colonist will be happier.
+If at least two Guards exist for every three citizens, the colonists will be happier.
 
-- If the average colonist saturation is greater than 5 it adds 0.1 per level, and if it's less than 5 it subtracts 0.1 per level.
-- If the average colonist housing is greater than 1, it adds 0.1 per level.
-- If 1 [Guard](../../source/workers/guard) level exists for each worker level (worker level 5 needs a Guard level 5, for example), 0.1 is added for each average level more and 0.1 is subtracted for each average level less.
+These basic factors benefit from partial completion. Citizens will be happier with 5 shanks of saturation than 1, with 1 Guard for every 4 workers than 1 Guard for every 10, and enjoy a level 2 house more than a level 1 house. Colonists also become happier as these values increase further, such as from upgrading a house to level 4 or 5 or having completely full saturation.
 
-Each time a citizen is killed by a player, the overall happiness will decrease by 9 but won't go lower than 1. Each time a citizen dies otherwise (from a mob, falling, getting burned, etc) it will decrease by 1 (and won't go lower than 1).
+Each time a citizen (other than a Guard) dies, other citizens will mourn the next day and be less happy for the next three days. All citizens become slightly less happy for the next day when injured.
+
+Every night, colonists will also become less happy if they are sick, homeless, unemployed, or have nothing to do at their job, and will become increasingly unhappy the longer the problem persists. Citizens (other than Guards) unable to make it to their bed at night to sleep will become unhappy. Fellow colonists' livelihood also matters for happiness (the Social Factor in the [Town Hall](../../source/buildings/townhall)'s happiness page).
+
+Surviving a raid without losing any colonists provides a colony-wide happiness boost.
 
 ## Hunger/Saturation System
 

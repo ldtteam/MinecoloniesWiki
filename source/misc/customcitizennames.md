@@ -36,11 +36,11 @@ Everything you have to change is in one file.
 
 ## Official Language Templates
 
-### Spanish
+### Chinese
 
-[Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
+[Download Chinese Template File](../../source/misc/languageNameTemplates/chineseTemplate.toml)
 
-*Credit to Ampaex*
+*Credit to HJ-zhtw*
 
 ### French
 
@@ -53,6 +53,18 @@ Everything you have to change is in one file.
 [Download Japanese Template File](../../source/misc/languageNameTemplates/japaneseTemplate.toml)
 
 *Credit to Kasilyn*
+
+### Norwegian
+
+[Download Norwegian Template File](../../source/misc/languageNameTemplates/norwegianTemplate.toml)
+
+*Credit to Holmis*
+
+### Spanish
+
+[Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
+
+*Credit to Ampaex*
 
 <br>
 
