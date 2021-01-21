@@ -22,7 +22,7 @@ layout: default
   2. Is it raining or snowing? Citizens do not work in the rain or snow.
   3. Did a citizen die yesterday (in-game time)? Citizens will mourn the next day and not work if one of them died the day before.
   4. Are there raiders (barbarians, pirates, vikings, egyptian raiders) still around? Citizens will hide during raids until all attackers are killed.
-  5. Does their work hut have a low building level? Does the worker have low XP? Then they will often idle in between actually working until their personal XP improves and/or their workh ut is upgraded.
+  5. Does their work hut have a low building level? Does the worker have low XP? Then they will often idle in between actually working until their personal XP improves and/or their work hut is upgraded.
   6. Is their hut PAUSED? Work huts now have a pause button. Sometimes players forget to unpause.
   7. Is their hunger level low? Citizens won't work while hungry. Give them food, and if you have a [Restaurant](../../source/buildings/restaurant), check that it is stocked and you have hired a [Cook](../../source/workers/cook). If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
   8. Do they have any open requests? They might need a tool or other item to continue their work.
