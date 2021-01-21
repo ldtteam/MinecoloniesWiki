@@ -35,7 +35,8 @@ The Blacksmith will only make items when they have been taught the recipes, rece
 | 4         | 80      |
 | 5         | 160     |
 
-
 The higher a Blacksmith's Strength level, the faster they'll craft. 
 
 All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Blacksmith's Focus level, the greater their chance to decrease the amount of materials needed.
+
+When a colonist is requesting a tool from the Blacksmith with multiple accepted levels, the Blacksmith will craft whichever tool type is highest in their list of recipes that they have the materials for (when you teach them a new recipe, it'll go on the bottom).
