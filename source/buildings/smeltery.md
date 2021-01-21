@@ -28,12 +28,12 @@ The Smeltery is where the Smelter will smelt ores into ingots.
 
 
 | Building Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output | Furnaces |
-| :-----: | :-----: | :-----: | :-----: |
-| 1 | 100% | Strength Level / 2 | --- |
-| 2 | 100% | Strength Level | --- |
-| 3 | 100% | Strength Level | --- |
-| 4 | --- | 100% | Strength Level /2 |
-| 5 | --- | 100% | Strength Level |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+| 1 | 100% | Strength Level / 2 | --- | 1 |
+| 2 | 100% | Strength Level | --- | 2 |
+| 3 | 100% | Strength Level | --- | 3 |
+| 4 | --- | 100% | Strength Level / 2 | 4 |
+| 5 | --- | 100% | Strength Level | 5 |
 
 
 ## Smeltery GUI
@@ -61,7 +61,7 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Fuel: </strong>Listed here are items that can be used by the Smelter as fuel in their furnaces. Turn on any that you want your Smelter to use, and a Deliveryman will deliver those items to the Smelter when they need fuel. (The black box at the top is to search for items.)
+      <li><strong>Fuel: </strong>Listed here are items that can be used by the Smelter as fuel in their furnaces. Turn on any that you want your Smelter to use, and a Courier will deliver those items to the Smelter when they need fuel. (The black box at the top is to search for items.)
       </li>
     </ul>
   </div>
