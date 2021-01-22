@@ -28,7 +28,7 @@ The Hospital is where injured or sick citizens go. The Healer will heal them wit
 | ------- | -------------------- |
 | Influenza (the flu) | Carrot and Potato |
 | Measles | Dandelion, Kelp, and Poppy |
-| Smallpox | Honeycomb and Golden Apple |
+| Smallpox | Honey Bottle and Golden Apple |
 
 The higher the level of the Hospital, the more people can be healed at a time. So:
 
