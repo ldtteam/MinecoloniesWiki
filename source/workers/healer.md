@@ -27,6 +27,6 @@ The Healer is a specialist of your colony. The Healer will heal your citizens wh
 | ------- | -------------------- |
 | Influenza (the flu) | Carrot and Potato |
 | Measles | Dandelion, Kelp, and Poppy |
-| Smallpox | Honeycomb and Golden Apple |
+| Smallpox | Honey Bottle and Golden Apple |
 
 The higher a Healer's Mana skill, the faster they can walk between beds. If they have a higher Knowledge level, they'll have a greater chance to heal a citizen without requiring materials.
