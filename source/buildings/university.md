@@ -19,7 +19,17 @@ layout: default
     <recipe>university</recipe>
 </div>
 
-The University is where a Researcher will research various upgrades to your colony. 
+The University is where a Researcher will research various upgrades to your colony.
+
+As you level up the University, you can hire more researchers:
+
+| Max Researchers | University Level |
+| --------------- | ---------------- |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
 
 ## University GUI
 
