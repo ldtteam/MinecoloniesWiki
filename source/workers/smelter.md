@@ -27,10 +27,10 @@ Smelters have a chance to double and even triple ores, depending on the Smeltery
 
 | Smeltery Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output |
 | :-----: | :-----: | :-----: | :-----: |
-| 1 | 100% | Strength Level / 2 | --- |
-| 2 | 100% | Strength Level | --- |
-| 3 | 100% | Strength Level | --- |
-| 4 | --- | 100% | Strength Level / 2 |
-| 5 | --- | 100% | Strength Level |
+| 1 | 100% | Strength Level | --- |
+| 2 | 100% | 2x Strength Level | --- |
+| 3 | --- | 100% | --- |
+| 4 | --- | 100% | Strength Level |
+| 5 | --- | 100% | 2x Strength Level |
 
 The higher a Smelter's Athletics level, the faster their furnaces will smelt.
