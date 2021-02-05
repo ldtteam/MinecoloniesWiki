@@ -52,7 +52,7 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 **In the middle of the screen** are the controls to adjust the structure you are about to place.
 
 - The blue arrows are so you can move the 3D structure you are viewing (front - back - right - left).
-- The orange minus and plus signs are to raise or lower the structure on the Y axis. 
+- The orange minus and plus signs are to raise or lower the structure on the Y axis.
 - The orange curved arrows are to rotate the structure left or right.
 - The orange triangles in the middle are to mirror the image (to change right to left and left to right).
 - The green check mark is for when you are done and want to commit to placing it.

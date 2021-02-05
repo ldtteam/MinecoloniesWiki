@@ -1,23 +1,44 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": "",
-      "secondItem": "",
-      "thirdItem": ""
-    },
-    "secondRow":
-    {
-      "firstItem": "",
-      "secondItem": ["minecolonies/blocktimberframe_darkoak_plain","minecolonies/blocktimberframe_darkoak_doublecrossed","minecolonies/blocktimberframe_darkoak_framed","minecolonies/blocktimberframe_darkoak_sideframed","minecolonies/blocktimberframe_darkoak_upgateframed","minecolonies/blocktimberframe_darkoak_downgateframed","minecolonies/blocktimberframe_darkoak_lrcrossed","minecolonies/blocktimberframe_darkoak_rlcrossed","minecolonies/blocktimberframe_darkoak_plainhorizontal","minecolonies/blocktimberframe_darkoak_sideframedhorizontal"],
-      "thirdItem": ""
-    },
-    "thirdRow":
-    {
-      "firstItem": "",
-      "secondItem": "",
-      "thirdItem": ""
-    },
-    "product": ["minecolonies/blocktimberframe_darkoak_doublecrossed","minecolonies/blocktimberframe_darkoak_framed","minecolonies/blocktimberframe_darkoak_sideframed","minecolonies/blocktimberframe_darkoak_upgateframed","minecolonies/blocktimberframe_darkoak_downgateframed","minecolonies/blocktimberframe_darkoak_lrcrossed","minecolonies/blocktimberframe_darkoak_rlcrossed","minecolonies/blocktimberframe_darkoak_plainhorizontal","minecolonies/blocktimberframe_darkoak_sideframedhorizontal","minecolonies/blocktimberframe_darkoak_plain"]
-  }
-]}
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "",
+        "secondItem": [
+          "minecolonies/blocktimberframe_darkoak_plain",
+          "minecolonies/blocktimberframe_darkoak_doublecrossed",
+          "minecolonies/blocktimberframe_darkoak_framed",
+          "minecolonies/blocktimberframe_darkoak_sideframed",
+          "minecolonies/blocktimberframe_darkoak_upgateframed",
+          "minecolonies/blocktimberframe_darkoak_downgateframed",
+          "minecolonies/blocktimberframe_darkoak_lrcrossed",
+          "minecolonies/blocktimberframe_darkoak_rlcrossed",
+          "minecolonies/blocktimberframe_darkoak_plainhorizontal",
+          "minecolonies/blocktimberframe_darkoak_sideframedhorizontal"
+        ],
+        "thirdItem": ""
+      },
+      "thirdRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "product": [
+        "minecolonies/blocktimberframe_darkoak_doublecrossed",
+        "minecolonies/blocktimberframe_darkoak_framed",
+        "minecolonies/blocktimberframe_darkoak_sideframed",
+        "minecolonies/blocktimberframe_darkoak_upgateframed",
+        "minecolonies/blocktimberframe_darkoak_downgateframed",
+        "minecolonies/blocktimberframe_darkoak_lrcrossed",
+        "minecolonies/blocktimberframe_darkoak_rlcrossed",
+        "minecolonies/blocktimberframe_darkoak_plainhorizontal",
+        "minecolonies/blocktimberframe_darkoak_sideframedhorizontal",
+        "minecolonies/blocktimberframe_darkoak_plain"
+      ]
+    }
+  ]
+}

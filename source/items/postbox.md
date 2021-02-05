@@ -2,7 +2,7 @@
 title: Postbox
 layout: default
 ---
-# Postbox 
+# Postbox
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox"></p>

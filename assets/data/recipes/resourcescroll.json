@@ -1,23 +1,22 @@
-{"recipes":[
+{
+  "recipes": [
     {
-      "firstRow":
-      {
+      "firstRow": {
         "firstItem": "minecraft/stick",
         "secondItem": "minecolonies/sceptergold",
         "thirdItem": "minecraft/stick"
       },
-      "secondRow":
-      {
+      "secondRow": {
         "firstItem": "minecraft/stick",
         "secondItem": "minecraft/leather",
         "thirdItem": "minecraft/stick"
       },
-      "thirdRow":
-      {
+      "thirdRow": {
         "firstItem": "minecraft/stick",
         "secondItem": "minecraft/leather",
         "thirdItem": "minecraft/stick"
       },
       "product": "minecolonies/resourcescroll"
     }
-  ]}
+  ]
+}
