@@ -11,9 +11,32 @@ layout: default
 </div>
 <br>
 
-The Ancient Tome is a glowing book that's dropped by raiders (barbarians, pirates, vikings, egyptian raiders, etc) during raids. The Ancient Tome cannot be crafted and is only available as a drop. 
-<br>
+The Gates are like large doors, but harder for raiders to break. Iron Gates take even longer than Wooden Gates for raiders to break, and there are a couple [researches](../../source/systems/research) at the [university](../../source/buildings/university) to make them take *even longer.*
+
+However, players and citizens can still use them as normal doors by right-clicking. They will also be triggered by redstone signals.
 
 ## Using the Gates
 
-There are two uses for the Ancient Tome, one use for the player and one for the [Enchanter](../../source/workers/enchanter). The player's use is that if you have the Ancient Tome in your inventory, it will glow when there is going to be a raid that night. The Enchanter's use is to use the experience they collect from other workers to turn the Ancient Tome into a Book of Enchantment. When they do this, it will use up the Ancient Tome.
+To place a Gate:
+- Have several stacked in your inventory
+- Right-click the stack where you want it to be placed
+- The entire stack will be placed, filling as much space as it can
+
+**Note:** The maximum size of a Gate is 5x4 blocks.
+
+## Here are a few screenshots:
+
+### Before Placing
+
+<img src="../../assets/images/misc/gate_before_placing_wooden.png" class="img-fluid mx-auto" alt="Wooden Gate Before Placing">
+<img src="../../assets/images/misc/gate_before_placing_iron.png" class="img-fluid mx-auto" alt="Iron Gate Before Placing">
+
+### After Placing (Closed)
+
+<img src="../../assets/images/misc/gate_after_placing_closed_wooden.png" class="img-fluid mx-auto" alt="Closed Wooden Gate After Placing">
+<img src="../../assets/images/misc/gate_after_placing_closed_iron.png" class="img-fluid mx-auto" alt="Closed Iron Gate After Placing">
+
+### After Placing (Open)
+
+<img src="../../assets/images/misc/gate_after_placing_open_wooden.png" class="img-fluid mx-auto" alt="Open Wooden Gate After Placing">
+<img src="../../assets/images/misc/gate_after_placing_open_iron.png" class="img-fluid mx-auto" alt="Open Iron Gate After Placing">
