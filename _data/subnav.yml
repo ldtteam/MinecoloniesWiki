@@ -29,8 +29,6 @@ subnav:
     subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
-      - page: Compost Barrel
-        url: source/items/compostbarrel
       - page: Horizontal Barrel
         url: source/items/barrel_horizontal
       - page: Vertical Barrel
@@ -43,10 +41,14 @@ subnav:
         url: source/items/clipboard
       - page: Compost
         url: source/items/compost
+      - page: Compost Barrel
+        url: source/items/compostbarrel
       - page: Construction Tape
         url: source/items/constructiontape
       - page: Floating Carpet
         url: source/items/floatingcarpet
+      - page: Gates
+        url: source/items/gates
       - page: Multi-Piston
         url: source/items/multipiston
       - page: Paper Wall
