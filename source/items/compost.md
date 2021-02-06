@@ -2,7 +2,7 @@
 title: Compost
 layout: default
 ---
-# Compost 
+# Compost
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/compost.png" alt="Compost"></p>

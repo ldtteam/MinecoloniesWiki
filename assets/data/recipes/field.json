@@ -1,23 +1,25 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": "",
-      "secondItem": ["minecraft/hay_block","minecraft/pumpkin"],
-      "thirdItem": ""
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/leather",
-      "thirdItem": "minecraft/stick"
-    },
-    "thirdRow":
-    {
-      "firstItem": "",
-      "secondItem": "minecraft/stick",
-      "thirdItem": ""
-    },
-    "product": "minecolonies/scarecrow"
-  }
-]}
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": [
+          "minecraft/hay_block",
+          "minecraft/pumpkin"
+        ],
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/leather",
+        "thirdItem": "minecraft/stick"
+      },
+      "thirdRow": {
+        "firstItem": "",
+        "secondItem": "minecraft/stick",
+        "thirdItem": ""
+      },
+      "product": "minecolonies/scarecrow"
+    }
+  ]
+}

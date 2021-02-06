@@ -1,23 +1,44 @@
-{"recipes":[
+{
+  "recipes": [
     {
-      "firstRow":
-      {
+      "firstRow": {
         "firstItem": "",
         "secondItem": "",
         "thirdItem": ""
       },
-      "secondRow":
-      {
+      "secondRow": {
         "firstItem": "",
-        "secondItem": ["minecolonies/blocktimberframe_jungle_plain","minecolonies/blocktimberframe_jungle_doublecrossed","minecolonies/blocktimberframe_jungle_framed","minecolonies/blocktimberframe_jungle_sideframed","minecolonies/blocktimberframe_jungle_upgateframed","minecolonies/blocktimberframe_jungle_downgateframed","minecolonies/blocktimberframe_jungle_lrcrossed","minecolonies/blocktimberframe_jungle_rlcrossed","minecolonies/blocktimberframe_jungle_plainhorizontal","minecolonies/blocktimberframe_jungle_sideframedhorizontal"],
+        "secondItem": [
+          "minecolonies/blocktimberframe_jungle_plain",
+          "minecolonies/blocktimberframe_jungle_doublecrossed",
+          "minecolonies/blocktimberframe_jungle_framed",
+          "minecolonies/blocktimberframe_jungle_sideframed",
+          "minecolonies/blocktimberframe_jungle_upgateframed",
+          "minecolonies/blocktimberframe_jungle_downgateframed",
+          "minecolonies/blocktimberframe_jungle_lrcrossed",
+          "minecolonies/blocktimberframe_jungle_rlcrossed",
+          "minecolonies/blocktimberframe_jungle_plainhorizontal",
+          "minecolonies/blocktimberframe_jungle_sideframedhorizontal"
+        ],
         "thirdItem": ""
       },
-      "thirdRow":
-      {
+      "thirdRow": {
         "firstItem": "",
         "secondItem": "",
         "thirdItem": ""
       },
-      "product": ["minecolonies/blocktimberframe_jungle_doublecrossed","minecolonies/blocktimberframe_jungle_framed","minecolonies/blocktimberframe_jungle_sideframed","minecolonies/blocktimberframe_jungle_upgateframed","minecolonies/blocktimberframe_jungle_downgateframed","minecolonies/blocktimberframe_jungle_lrcrossed","minecolonies/blocktimberframe_jungle_rlcrossed","minecolonies/blocktimberframe_jungle_plainhorizontal","minecolonies/blocktimberframe_jungle_sideframedhorizontal","minecolonies/blocktimberframe_jungle_plain"]
+      "product": [
+        "minecolonies/blocktimberframe_jungle_doublecrossed",
+        "minecolonies/blocktimberframe_jungle_framed",
+        "minecolonies/blocktimberframe_jungle_sideframed",
+        "minecolonies/blocktimberframe_jungle_upgateframed",
+        "minecolonies/blocktimberframe_jungle_downgateframed",
+        "minecolonies/blocktimberframe_jungle_lrcrossed",
+        "minecolonies/blocktimberframe_jungle_rlcrossed",
+        "minecolonies/blocktimberframe_jungle_plainhorizontal",
+        "minecolonies/blocktimberframe_jungle_sideframedhorizontal",
+        "minecolonies/blocktimberframe_jungle_plain"
+      ]
     }
-  ]}
+  ]
+}

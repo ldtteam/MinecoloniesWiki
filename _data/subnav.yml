@@ -1,12 +1,12 @@
 subnav:
   - title: Installation
-    subitems: 
+    subitems:
       - page: Java (Forge)
         url: source/installation/java
       - page: MultiMC
         url: source/installation/multimc
   - title: Tutorials
-    subitems: 
+    subitems:
       - page: Getting Started
         url: source/tutorials/getting-started
       - page: Schematics
@@ -124,7 +124,7 @@ subnav:
       - page: Guard
         url: source/workers/guard
       - page: Healer
-        url: source/workers/healer      
+        url: source/workers/healer
       - page: Knight in Training
         url: source/workers/knightintraining
       - page: Library Student
@@ -166,7 +166,7 @@ subnav:
       - page: Barracks
         url: source/buildings/barracks
       - page: Barracks Tower
-        url: source/buildings/barrackstower  
+        url: source/buildings/barrackstower
       - page: Blacksmith's Hut
         url: source/buildings/blacksmith
       - page: Builder's Hut
@@ -208,7 +208,7 @@ subnav:
       - page: House
         url: source/buildings/house
       - page: Library
-        url: source/buildings/library  
+        url: source/buildings/library
       - page: Mechanic's Hut
         url: source/buildings/mechanic
       - page: Mine

@@ -2,7 +2,7 @@
 title: Clipboard
 layout: default
 ---
-# Clipboard  
+# Clipboard
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/clipboard.png" alt="Clipboard"></p>

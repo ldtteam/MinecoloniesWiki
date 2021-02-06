@@ -1,24 +1,41 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log","minecraft/crimson_stem","minecraft/warped_stem"],
-      "secondItem": "minecraft/stick",
-      "thirdItem": ""
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/iron_ingot",
-      "thirdItem": "minecraft/stick"
-    },
-    "thirdRow":
-    {
-      "firstItem": "",
-      "secondItem": "minecraft/stick",
-      "thirdItem": ["minecraft/oak_log","minecraft/spruce_log","minecraft/birch_log","minecraft/jungle_log","minecraft/acacia_log","minecraft/dark_oak_log","minecraft/crimson_stem","minecraft/warped_stem"]
-    },
-    "product": "minecolonies/blocksubstitution",
-    "amount": "32"
-  }
-]}
+      "firstRow": {
+        "firstItem": [
+          "minecraft/oak_log",
+          "minecraft/spruce_log",
+          "minecraft/birch_log",
+          "minecraft/jungle_log",
+          "minecraft/acacia_log",
+          "minecraft/dark_oak_log",
+          "minecraft/crimson_stem",
+          "minecraft/warped_stem"
+        ],
+        "secondItem": "minecraft/stick",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/iron_ingot",
+        "thirdItem": "minecraft/stick"
+      },
+      "thirdRow": {
+        "firstItem": "",
+        "secondItem": "minecraft/stick",
+        "thirdItem": [
+          "minecraft/oak_log",
+          "minecraft/spruce_log",
+          "minecraft/birch_log",
+          "minecraft/jungle_log",
+          "minecraft/acacia_log",
+          "minecraft/dark_oak_log",
+          "minecraft/crimson_stem",
+          "minecraft/warped_stem"
+        ]
+      },
+      "product": "minecolonies/blocksubstitution",
+      "amount": "32"
+    }
+  ]
+}
