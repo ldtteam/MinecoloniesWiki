@@ -35,9 +35,10 @@ Deconstructing a building *will* remove the chunks it claimed.
 
 #### [Barracks](../../source/buildings/barracks)
 
-| Level | Additional Chunks                                                                 |
-| ----- | --------------------------------------------------------------------------------- |
-| All   | Average of [Barracks Tower](../../source/buildings/barrackstower) levels, up to 5 |
+| Level | Additional Chunks |
+| ----- | ----------------- |
+| All   | 2 Chunk Radius    |
+| 4+ and 4 towers built | 3 Chunk Radius |
 
 #### Other Huts (non-decoration)
 

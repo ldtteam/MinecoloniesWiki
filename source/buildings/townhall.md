@@ -130,7 +130,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
       <li><strong>Page 3: </strong>Here you can select the rank that you would like to manage.</li>
       <br>
-      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li> 
+      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want. <b>Note:</b> the Fight Guards permission causes <a href="../../source/workers/guard"> Guards</a> to treat the player as an enemy and attack them. It is only recommended for Hostile players.</li> 
     </ul>
   </div>
 </div>  
