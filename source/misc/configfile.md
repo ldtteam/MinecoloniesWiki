@@ -72,6 +72,16 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Should players be allowed to use the /mc citizens kill command? - sets whether players can use the /mc citizens kill command.
 - Amount of attempts to find a safe random teleport - when using /mc rtp, MineColonies will try several locations to see if they're safe and not within a colony before teleporting you. This sets the number of locations it will try.
 
-### Mod Compatibility Configuration
+### Claims Configuration
+
+- Maximum claim range for a colony - the max number of chunks that can be within a colony's [border](../../source/systems/border).
+- Minimum distance between colonies - the minimum distance between two Town Halls, measured in chunks.
+- Initial claim size for colonies - the number of chunks (in radius) claimed when starting a new colony.
+- Should the min/max distance from spawn also affect colony placement? - sets whether the below two options have any effect.
+- Max distance from world spawn - sets the maximum distance from spawn a colony can be started at. Only takes effect if the previous option is set to True.
+- Min distance from world spawn - sets the minimum distance from spawn a colony can be started at. Only takes effect if "Should the min/max distance from spawn also affect colony placement?" is set to True.
+- Should officers of a colony receive advancements from that colony? - sets if officers of a colony will receive advancements for things done in that colony. Disabling this means that only the colony owner will receive advancements.
+
+### Combat Configuration
 
 - 
