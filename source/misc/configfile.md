@@ -7,12 +7,14 @@ layout: default
 The configuration file, commonly called the *config file,* is a way to change MineColonies settings. It is found within your Minecraft files:
 
 **1.15 File Path:** <code>(Your Minecraft folder)/config/minecolonies-common.toml</code>
+
 **1.16 Main Config File Path:** <code>(Your Minecraft folder)/saves/(your world's name)/serverconfigs/minecolonies-server.toml</code>
+
 **1.16 Client Config File Path:** <code>(Your Minecraft folder)/config/minecolonies-client.toml</code>
 
-The following will be for the 1.16 config, but most will apply to 1.15 as well.
-
 # Config Options
+
+The following will be for the 1.16 config, but most will apply to 1.15 as well.
 
 ## Client-Side Config
 

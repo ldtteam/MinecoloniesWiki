@@ -245,6 +245,8 @@ subnav:
         url: source/buildings/warehouse
   - title: Misc
     subitems:
+      - page: Configuration File
+        url: source/misc/configfile
       - page: Custom Citizen Names
         url: source/misc/customcitizennames
       - page: Multilingual Sources
