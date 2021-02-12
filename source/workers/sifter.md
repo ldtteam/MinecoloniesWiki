@@ -31,7 +31,7 @@ The default materials that can be sifted are:
   <li>Soul Sand</li>
 </ul>
 
-However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
+However, you can change this in the [config file](../../source/misc/configfile). This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
 The Sifter can only sift a certain amount of materials per day, depending on their hut level.
 

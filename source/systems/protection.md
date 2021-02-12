@@ -4,7 +4,7 @@ layout: default
 ---
 # Colony Protection System
 
-Our Colony Protection System (once a [Town Hall](../../source/buildings/townhall) is placed) can be toggled in the config file.
+Our Colony Protection System (once a [Town Hall](../../source/buildings/townhall) is placed) can be toggled in the [config file](../../source/misc/configfile).
 
 The protection includes turning explosions off (by default), so creepers, TNT, and any modded blocks won't destroy your colony. By default, only the colony owner can break or place blocks within a colony, but you can add other players in the permissions section of the Town Hall GUI.
 

@@ -44,7 +44,7 @@ If none of these apply, go on to the next troubleshooting checklists.
   10. [Stone Smelter](../../source/workers/stonesmelter): Set which fuel you want them to use. (They know their recipes already.)  
 
 ### CHECKLIST: Troubleshooting a Citizen not working for unknown reason
-  1. Log out of the game. Open the (your game location)/config/minecolonies-common.toml file.
+  1. Log out of the game. Open the [config file](../../source/misc/configfile).
       * Go to the line<br> 
       `#Should in development features be enabled (might be buggy). [Default: false]`<br>
       `enableInDevelopmentFeatures=false`

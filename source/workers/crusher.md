@@ -30,7 +30,7 @@ The defaults are:
   <li>Sand into Clay</li>
 </ul>
 
-However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
+However, you can change this in the [config file](../../source/misc/configfile). This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
 The Crusher works on a 2:1 ratio, so, for example, it takes 2 cobblestone to get 1 gravel. However, there is a [research](../../source/systems/research) in the [University](../../source/buildings/university) to make them work on a 1:1 ratio.
 

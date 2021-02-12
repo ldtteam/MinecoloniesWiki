@@ -98,7 +98,7 @@ This is page two of the Sifter's Hut GUI.
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-     <li><strong>Block: </strong>You can choose what block you want the Sifter to sift by clicking on the button. The blocks to choose from are dirt, gravel, sand, and soul sand, however you can change this in the config file. If you change this, you must click save.</li>
+     <li><strong>Block: </strong>You can choose what block you want the Sifter to sift by clicking on the button. The blocks to choose from are dirt, gravel, sand, and soul sand, however you can change this in the <a href="../../source/misc/configfile">config file</a>. If you change this, you must click save.</li>
      <li><strong>Amount: </strong>You can choose how many blocks are sifted daily. The max number is based on the level of the Sifter's Hut. If you change this, you must click save.</li>
      <li><strong>Meshes: </strong>You can purchase different levels of meshes, and each level has a higher likelihood of getting loot. If you have string, flint, iron ingots, or diamonds in your inventory, you will see the buy option beside the mesh type. If a mesh is in green, like string is in this picture, it means that mesh is the one the Sifter will use. You can only use one mesh at a time.</li>
     </ul>

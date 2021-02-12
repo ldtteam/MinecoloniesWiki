@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Healer is a specialist of your colony. The Healer will heal your citizens when they become ill or injured and will use various items. The possible diseases can be changed in the config file, however, these are the defaults:
+The Healer is a specialist of your colony. The Healer will heal your citizens when they become ill or injured and will use various items. The possible diseases can be changed in the [config file](../../source/misc/configfile), however, these are the defaults:
 
 | Disease | Items Needed to Cure |
 | ------- | -------------------- |

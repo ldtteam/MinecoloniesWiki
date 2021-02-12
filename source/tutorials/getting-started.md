@@ -94,9 +94,7 @@ When you place the Supply Ship/Camp, it will spawn a chest that will contain the
 
 ### Town Hall
 
- The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a square 8 chunks in radius, measured from where you placed your Town Hall block the first time (Default config). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to sky limit.
-
-- **Note**: You can configure your own town area radius in the configuration options of the mod or the the minecolonies-common.toml file inside the ```../minecraft/config/``` folder of your own world.
+ The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a square 8 chunks in radius, measured from where you placed your Town Hall block the first time (with the default [config](../../source/misc/configfile)). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to sky limit.
 
 Due to the protected area of each colony, you have to carefully scout your surrounding to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction (in multiplayer, etc.). If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
@@ -163,7 +161,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
       <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
     </ul>
     <br>  
-    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the config file. Here you have:</p>
+    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the <a href="../../source/misc/configfile">config file</a>. Here you have:</p>
     <ul>
       <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li>
       <br>

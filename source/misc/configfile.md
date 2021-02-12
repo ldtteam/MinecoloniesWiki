@@ -2,6 +2,9 @@
 title: Config File
 layout: default
 ---
+
+## This page is still a work-in-progress! Expect it to change!
+
 # Configuration File
 
 The configuration file, commonly called the *config file,* is a way to change MineColonies settings. It is found within your Minecraft files:

@@ -179,7 +179,7 @@ You can only choose one of these!
 | ---- | ------------- | ------------ | ------- |
 | Compress | Bandages | Library level 5; 32 golden carrots | Every tick that a colonist is healing, they heal by 100% more |
 | Fortitude | Vitality | Restaurant level 5; 32 golden apples | Colonists can heal with only 80% saturation |
-| City | Village | Town Hall level 5; 512 steak | Lets you have over 175 colonists, up to the max in the config file |
+| City | Village | Town Hall level 5; 512 steak | Lets you have over 175 colonists, up to the max in the [config file](../../source/misc/configfile) |
 | Reflective | Scholarly | Library level 5; 48 books | Increases the rate colonists level up by 50% |
 | Swift | Agile | Town Hall level 5; 32 rabbit feet | Increases colonists' speed by 15% |
 | Guardian Angel | Lifesaver II | Town Hall level 5; 128 hay bales | Increases colonists' health by 5 hearts |
