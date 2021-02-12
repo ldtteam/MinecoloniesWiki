@@ -3,7 +3,7 @@ title: Config File
 layout: default
 ---
 
-## This page is still a work-in-progress! Expect it to change!
+### This page is still a work-in-progress! Expect it to change!
 
 # Configuration File
 
@@ -15,24 +15,24 @@ The configuration file, commonly called the *config file,* is a way to change Mi
 
 **1.16 Client Config File Path:** <code>(Your Minecraft folder)/config/minecolonies-client.toml</code>
 
-# Config Options
+## Config Options
 
 The following will be for the 1.16 config, but most will apply to 1.15 as well.
 
-## Client-Side Config
+### Client-Side Config
 
 - Disable citizen voices - exactly what it says on the tin. Set to false to turn off citizens talking.
 - Pathfinding debug draw - set to true to show citizens' pathfinding paths in-game (lines on the ground showing where citizens are going).
 
-## Server-Side Config
+### Server-Side Config
 
-### Name Configuration
+#### Name Configuration
 
 - Should citizens have a middle initial? - if this is set to false, citizen names won't have a middle initial. For example, "John Smith" instead of "John D. Smith".
 - Should citizens use the Eastern name order? - if this is set to true, citizen names will have the last name first. For example, "SmithJohn" instead of "John D. Smith" (it's recommended that if you enable this, also change the actual names to Eastern ones).
 - Male first names, female first names, last names - lists of names to be used for colonists. Comes pre-filled with English ones, but you can change it to whatever you like. We have some templates [here](../../source/misc/customcitizennames).
 
-### Gameplay Configuration
+#### Gameplay Configuration
 
 - Amount of initial citizens - the number of citizens you get when you first start your colony. If the number of your citizens ever goes below this, more citizens will spawn until it's at this number again.
 - Should construction tape be placed around in-construction builds? - also exactly what it says on the tin. If this is set to false, no construction tape will be placed.
@@ -65,7 +65,7 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Force load colony - if an owner/officer is inside the colony and this is enabled, the rest of the colony chunks will be kept loaded. Useful for large colonies.
 - Bad visitor chance - sometimes, a [Tavern](../../source/buildings/tavern) visitor will run off with the resources you give them instead of joining your colony. This option sets the chance for them to do that.
 
-### Command Configuration
+#### Command Configuration
 
 - Should players be allowed to use the /mc rtp command? - sets whether players can use the /mc rtp [command](../../source/systems/command).
 - Should players be allowed to use the /mc colony teleport command? - sets whether players can use the /mc colony teleport command.
@@ -75,7 +75,7 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Should players be allowed to use the /mc citizens kill command? - sets whether players can use the /mc citizens kill command.
 - Amount of attempts to find a safe random teleport - when using /mc rtp, MineColonies will try several locations to see if they're safe and not within a colony before teleporting you. This sets the number of locations it will try.
 
-### Claims Configuration
+#### Claims Configuration
 
 - Maximum claim range for a colony - the max number of chunks that can be within a colony's [border](../../source/systems/border).
 - Minimum distance between colonies - the minimum distance between two Town Halls, measured in chunks.
@@ -85,6 +85,6 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Min distance from world spawn - sets the minimum distance from spawn a colony can be started at. Only takes effect if "Should the min/max distance from spawn also affect colony placement?" is set to True.
 - Should officers of a colony receive advancements from that colony? - sets if officers of a colony will receive advancements for things done in that colony. Disabling this means that only the colony owner will receive advancements.
 
-### Combat Configuration
+#### Combat Configuration
 
 - 
