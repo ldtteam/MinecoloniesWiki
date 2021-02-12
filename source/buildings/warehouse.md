@@ -32,7 +32,7 @@ The level of the Warehouse will determine how many Couriers will be able to use 
 | 5 | 10 |  
 
 
-### Note: You can only have one Warehouse per colony, unless you change this in the config file.
+### Note: You can only have one Warehouse per colony, unless you change this in the [config file](../../source/misc/configfile).
 
 ## Warehouse GUI
 

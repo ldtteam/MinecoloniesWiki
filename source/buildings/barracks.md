@@ -34,7 +34,7 @@ The Barracks is the ultimate protection for your colony. The Barracks will hold 
 
 <br>
 
-<strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will expand.
+<strong>Note:</strong> The Barracks has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
 
 <br>
 

@@ -21,7 +21,13 @@ layout: default
 
 The Mine is where the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 
-**Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine. So if you want them to go deeper and get to the good ores, you will have to upgrade the Mine.
+**Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine:
+
+| Mine Level | Shaft Y Level |
+| ---------- | ------------- |
+| 1 | 50 |
+| 2 | 30 |
+| 3+ | Bedrock |
 
 ## Mine GUI
 

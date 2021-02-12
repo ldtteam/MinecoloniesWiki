@@ -41,13 +41,11 @@ A new colony will be created, the area of your colony will be established, and t
 
 When you start a colony, the area that is initially set also has protections added to it. The protection system includes blocking any player from placing/breaking or interacting with blocks of any kind, placing lava or water, and placing/lighting TNT. Once established it will also show in the informational screen.
 
-The protected area of your colony (once the Town Hall has been placed) will depend on the configuration, but will be 4 chunks radius by default, measured from where you placed your Town Hall block the first time. Therefore, plan carefully where you want to place your Town Hall. Your protected colony area includes mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
+The protected area of your colony (once the Town Hall has been placed) will depend on the [configuration](../../source/misc/configfile), but will be 4 chunks radius by default, measured from where you placed your Town Hall block the first time. Therefore, plan carefully where you want to place your Town Hall. Your protected colony area includes mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to the sky limit.
 
 Due to the protected area of each colony, you have to carefully scout your surroundings to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction.
 
-**Note:** Once you place your Town Hall block, this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your build tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with OP or admin permission deleting your colony through [commands](../../source/systems/command). 
-
-**Note**: You can configure your own colony area radius in the minecolonies-common.toml file inside the ```../config/``` folder of your own world/server.
+**Note:** Once you place your Town Hall block, this will be the CENTER of your Town's protected radius. If you decide that you want your actual Town Hall building to be built in a different location (within your currently set protected radius), you can break the block and place it again with your build tool. Removing and replacing the Town Hall block will NOT remove the Protected area of your Town. The only way to remove the protected area of your colony so that you can place a Town Hall somewhere else is by a person with OP or admin permission deleting your colony through [commands](../../source/systems/command).
 
 If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
@@ -91,7 +89,7 @@ If you try to place another Town Hall outside of your protected area, you will g
       <li><strong>Hire Mercenaries-</strong>Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!</li>
     </ul>
     <br>  
-    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the config file. Here you have:</p>
+    <p><strong>Page 2: </strong>This is only enabled if PVP is turned on in the <a href="../../source/misc/configfile">config file</a>. Here you have:</p>
     <ul>
       <li><strong>Allies-</strong>Other colonies that you have added as allies and that have confirmed your colony as an ally as well.</li>
       <br>
@@ -130,7 +128,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
       <li><strong>Page 3: </strong>Here you can select the rank that you would like to manage.</li>
       <br>
-      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want.</li> 
+      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want. <b>Note:</b> the Fight Guards permission causes <a href="../../source/workers/guard"> Guards</a> to treat the player as an enemy and attack them. It is only recommended for Hostile players.</li> 
     </ul>
   </div>
 </div>  
