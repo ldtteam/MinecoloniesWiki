@@ -24,17 +24,17 @@ layout: default
 
 The Library is a way for you to raise your adult citizens' Intelligence skill, which influences all other skill increases (at other jobs). A citizen will randomly level up their Intelligence as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
 
-Two citizens can study at a time per Library level. So: 
+One citizen can study per Library level. So: 
 
 | Building Level | Citizens Educated at a Time |
 | -------------- | --------------------------- |
-| 1              | 2                           |
-| 2              | 4                           |
-| 3              | 6                           |
-| 4              | 8                           |
-| 5              | 10                          |
+| 1              | 1                           |
+| 2              | 2                           |
+| 3              | 3                           |
+| 4              | 4                           |
+| 5              | 5                           |
 
-**Hint:** Paper helps Library Students increase their skills faster.
+**Hint:** Paper and books help Library Students increase their skills faster.
 
 <br>
 
