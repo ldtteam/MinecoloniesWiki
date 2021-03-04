@@ -23,6 +23,7 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 
 - Disable citizen voices - exactly what it says on the tin. Set to false to turn off citizens talking.
 - Pathfinding debug draw - set to true to show citizens' pathfinding paths in-game (lines on the ground showing where citizens are going).
+- Neighboring building rendering - by default, when placing a schematic near other buildings, the already-placed buildings will show as if they were at level 5 and have a blue outline around them. You can disable that by setting this to false.
 
 ### Server-Side Config
 
@@ -62,8 +63,10 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Suggest build tool usage - by default, when trying to place a hut without the [build tool](../../source/items/buildtool), a window will pop up suggesting you use it. Disabling this option will disable that window.
 - Food consumption modifier - the multiplier for when citizens eat food.
 - How common diseases are - changes the chance for citizens to get sick.
-- Force load colony - if an owner/officer is inside the colony and this is enabled, the rest of the colony chunks will be kept loaded. Useful for large colonies.
+- Chunk load colony - if an owner/officer is inside the colony and this is enabled, some of the rest of the colony chunks will be kept loaded. Useful for large colonies. Set how many chunks are loaded with the below option.
+- Colony chunk loading strictness - only takes effect if the above option is enabled. Set this higher to decrease the number of loaded chunks (the innermost chunks will be loaded first). Set to 1 to load all chunks.
 - Bad visitor chance - sometimes, a [Tavern](../../source/buildings/tavern) visitor will run off with the resources you give them instead of joining your colony. This option sets the chance for them to do that.
+- Supply loot - by default, [supply ships and camps](../../source/items/supplyshipandcamp) will generate in loot chests. You can disable that by setting this to false.
 
 #### Command Configuration
 
@@ -87,4 +90,5 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 
 #### Combat Configuration
 
-- 
+- The minimum number of nights between raids - exactly what it says on the tin. Decrease to increase the frequency of raids.
+- Days until pirate ships despawn - 
