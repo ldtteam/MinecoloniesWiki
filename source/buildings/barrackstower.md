@@ -100,7 +100,7 @@ This is page two of the GUI.
             <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard(s) to patrol between. To delete patrol positions, simply get a new Guard-scepter and click a new patrol position. The old ones should disappear.</li>
       </ul>
     </ul>
-</div>
+
 <br>
 
 On the third page of the GUI you can tell the Guard which mobs to attack and which ones to ignore. You can also choose the priority of each mob by moving them up or down in the list. The default order is reverse alphabetically.
@@ -110,5 +110,4 @@ On the third page of the GUI you can tell the Guard which mobs to attack and whi
     <img src="../../assets/images/gui/barrackstowergui3.png" class="img-fluid mx-auto" alt="Guard GUI">
   </div>
   <div class="col-sm-12 col-md">
-</div>
 </div>
