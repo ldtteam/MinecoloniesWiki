@@ -58,16 +58,29 @@ This is page two of the Restaurant GUI.
       </ul>
     </div>  
   <br><br>
-
+  
 This is page three of the Restaurant GUI.
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui3.jpg" class="img-fluid mx-auto" alt="Restaurant GUI 3">
+    <img src="../../assets/images/gui/restaurantgui3.png" class="img-fluid mx-auto" alt="Restaurant GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+      <ul>
+      <li><strong> Food: </strong> Listed here are food items that will be handed out by the Cook. Disable any you don't want to be handed out or produced. However, if a colonist finds a disabled item, they'll still eat it - the Cook just won't hand it out. (The black box at the top is to search for items.)</li>
+      </ul>
+    </div>  
+  <br><br>
+
+This is page four of the Restaurant GUI.
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/restaurantgui4.jpg" class="img-fluid mx-auto" alt="Restaurant GUI 4">
   </div>
   <div class="col-sm-12 col-md">
       <ul>
       <li><strong> Minimum Stock: </strong> Use this button to tell the Restaurant to request a minimum stock to keep on hand. The Cook will still give out items that are set as the minimum stock, but will request more if they no longer have enough. Set items will be displayed above the button.</li>
       </ul>
     </div>  
-  <br>
+  <br> <br>
