@@ -111,3 +111,4 @@ On the third page of the GUI you can tell the Guard which mobs to attack and whi
   </div>
   <div class="col-sm-12 col-md">
 </div>
+</div>
