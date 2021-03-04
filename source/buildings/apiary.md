@@ -19,7 +19,6 @@ layout: default
     <recipe>apiary</recipe>
 </div>
 
-<div>
 The Apiary is where the Beekeeper works. The Beekeeper breeds bees and harvests honeycombs or honey bottles (you can choose which on the second page of the Apiary's GUI).
 
 The level of the Apiary determines the max number of hives the Beekeeper can take care of:
@@ -70,4 +69,4 @@ When accessing the Apiary block by right-clicking on it, you will see a GUI with
 </div>  
   
   <br>
-</div>
+  
