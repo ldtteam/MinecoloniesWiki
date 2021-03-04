@@ -19,7 +19,6 @@ Below are the steps you will need to take in order to install the MineColonies O
     - [Installing MineColonies Official Modpacks](#installing-minecolonies-official-modpacks)
         - [Getting the Modpack](#getting-the-modpack)
         - [Installing the Modpack](#installing-the-modpack)
-{: .box .py-3 .pr-4 }
 
 ## Getting MultiMC
 

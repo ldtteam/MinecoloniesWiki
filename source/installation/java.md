@@ -14,7 +14,6 @@ layout: default
         - [Copy MineColonies to Mods](#copy-minecolonies-to-mods)
             - [If Adding Pack, Extract it](#if-adding-pack-extract-it)
         - [Run Minecraft and Select Profile](#run-minecraft-and-select-profile)
-{: .box .py-3 .pr-4 }
 
 ## Installing MineColonies Mod on your original Minecraft Launcher.
 
