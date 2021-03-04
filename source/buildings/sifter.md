@@ -94,7 +94,7 @@ This is page two of the Sifter's Hut GUI.
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/sifter_gui2.png" class="img-fluid mx-auto" alt="Sifter GUI">
+    <img src="../../assets/images/gui/siftergui2.png" class="img-fluid mx-auto" alt="Sifter GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <ul>

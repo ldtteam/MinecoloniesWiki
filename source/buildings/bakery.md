@@ -67,7 +67,7 @@ This is page three of the Bakery GUI.
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui3.jpg" class="img-fluid mx-auto" alt="Bakery GUI 3">
+    <img src="../../assets/images/gui/restaurantgui4.jpg" class="img-fluid mx-auto" alt="Bakery GUI 3">
   </div>
   <div class="col-sm-12 col-md">
       <ul>
