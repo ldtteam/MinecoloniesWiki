@@ -57,7 +57,7 @@ This is page two of the Restaurant GUI.
       <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
       </ul>
     </div>  
-  <br><br>
+  <br><br><br><br>
   
 This is page three of the Restaurant GUI.
 
@@ -70,7 +70,7 @@ This is page three of the Restaurant GUI.
       <li><strong> Food: </strong> Listed here are food items that will be handed out by the Cook. Disable any you don't want to be handed out or produced. However, if a colonist finds a disabled item, they'll still eat it - the Cook just won't hand it out. (The black box at the top is to search for items.)</li>
       </ul>
     </div>  
-  <br><br>
+  <br><br><br><br>
 
 This is page four of the Restaurant GUI.
 
