@@ -14,7 +14,7 @@ There is an **overall** colony happiness and an **individual** citizen happiness
 
 Overall colony happiness is 1-10 (initially set to 5). Happiness depends on three basic factors: **security, housing, and saturation**.
 
-If a colonist's saturation is above 7 shanks, they will be happier.
+If a colonist's saturation is above 14 shanks, they will be happier.
 If the colonist's home (or for [Guards](../../source/workers/guard) or trainees, their workplace) is above level 2.5, the colonist will be happier.
 If at least two Guards exist for every three citizens, the colonists will be happier.
 
@@ -28,8 +28,19 @@ Surviving a raid without losing any colonists provides a colony-wide happiness b
 
 ## Hunger/Saturation System
 
-The citizen saturation system is between 0-10. If it's 0, the citizen won't level anymore, won't work anymore, will request food in chat regularly, and will have the slowness effect. If it's less than 3, the citizen won't heal<!-- and will have a -25% leveling speed. If it's between 3 and 5, the citizen will have a -10% leveling speed. If it's between 5 and 7, the citizen will have a +10% leveling speed. If it's between 7 and 10, the citizen will have a +25% leveling speed-->. If it's 10, the citizen will have a double healing speed<!-- and a +25% leveling speed-->. They increase their saturation by eating, just like the player. Saturation is displayed with the saturation bar in each citizen's GUI (it looks like the hunger bar in the player's HUD).
+The citizen saturation system is between 0-20. If it's 0, the citizen won't level anymore, won't work anymore, will request food in chat regularly, and will have the slowness effect. If it's less than 6, the citizen won't heal<!-- and will have a -25% leveling speed. If it's between 6 and 10, the citizen will have a -10% leveling speed. If it's between 10 and 14, the citizen will have a +10% leveling speed. If it's between 14 and 20, the citizen will have a +25% leveling speed-->. If it's 20, the citizen will have a double healing speed<!-- and a +25% leveling speed-->. They increase their saturation by eating, just like the player. Saturation is displayed with the saturation bar in each citizen's GUI (it looks like the hunger bar in the player's HUD).
 
 Every time a citizen goes to sleep (starts the walk back to their [House](../../source/buildings/house) or [Tavern](../../source/buildings/tavern)), they will decrease their saturation by 0.2 times their worker hut level. They will also decrease their saturation while working.
 
-**Note:** When a citizen's hunger level gets to 3 or lower, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in their GUI that you build them a Restaurant or provide them with food manually.
+Citizens will demand higher levels of food based on their workplace level. **They will not eat food that doesn't meet (or exceed) their requirements.**
+
+| Workplace Level | Min Food Level Requested (in shanks) |
+| :----: | :----: |
+| 0 | Any |
+| 1 | 0.5 |
+| 2 | 1 |
+| 3 | 1.5 |
+| 4 | 2 |
+| 5 | 2.5 |
+
+When a citizen's hunger level gets to 6 or lower, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in their GUI that you build them a Restaurant or provide them with food manually.
