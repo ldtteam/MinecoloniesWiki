@@ -42,6 +42,12 @@ Everything you have to change is in one file.
 
 *Credit to Kasilyn*
 
+### German
+
+[Download German Template File](../../source/misc/languageNameTemplates/germanTemplate.toml)
+
+*Credit to Tealk*
+
 ### Japanese
 
 [Download Japanese Template File](../../source/misc/languageNameTemplates/japaneseTemplate.toml)
@@ -61,5 +67,3 @@ Everything you have to change is in one file.
 *Credit to Ampaex*
 
 <br>
-
-## Don't forget that the file must have the name _minecolonies-server.toml_!
