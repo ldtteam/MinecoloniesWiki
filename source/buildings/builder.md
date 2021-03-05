@@ -31,48 +31,58 @@ Once the Builder's Hut is built you can now build anything you want, like worker
 
 ## Builder's Hut GUI
 
-When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options:
-
-<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/buildergui1.png" class="img-fluid mx-auto" alt="Builder GUI">
+  <div class="col">
+    
+  When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options:
+
+  <br>
+  <div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/buildergui1.png" class="img-fluid mx-auto" alt="Builder GUI">
+    </div>
+    <div class="col-sm-12 col-md">
+      <br>
+      <ul>
+        {% for item in site.data.gui.global %}
+          <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
   <br>
-  <div class="col-sm-12 col-md">
-    <br>
+      <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
     <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
+      <li><strong>Required Resources:</strong> These are the resources that the Builder will need for the build order they are currently working on. This amount will change as they place blocks and will show <strong>only</strong> what blocks the Builder still needs to place. The blocks in red are the ones neither you nor the Builder has in their inventory.</li>
+    </ul>
+    </div>
+  </div>
+  <br>
+   <div class="col-sm-12 col-md"><br>
+      <p>Page 3 of the GUI:</p>
+    </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/buildergui3.png" class="img-fluid mx-auto" alt="Builder GUI 3">
+    </div>
+  <br>
+  <div class="col-sm-12 col-md">
+    <ul>
+      <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
     </ul>
   </div>
+  </div>
+   
+  <br>
+  </div>
 </div>
- <div class="col-sm-12 col-md"><br>
-    <p>By pressing the arrow button in the top right corner of the GUI, you will be taken to page 2 of the GUI where you will find the following:</p>
-  </div>
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
-  </div>
-<br>
-<li><strong>Required Resources:</strong> These are the resources that the Builder will need for the build order they are currently working on. This amount will change as they place blocks and will show <strong>only</strong> what blocks the Builder still needs to place. The blocks in red are the ones neither you nor the Builder has in their inventory.</li>
-</div>
- <div class="col-sm-12 col-md"><br>
-    <p>Page 3 of the GUI:</p>
-  </div>
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/buildergui3.png" class="img-fluid mx-auto" alt="Builder GUI 3">
-  </div>
-<br>
-    <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
-</div>
- 
-<br>
-
 ### A few things to consider
 
 For the placement of the Builder's Hut, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the Builder has less of a distance to walk between their hut and the build sites.
@@ -83,3 +93,4 @@ The Builder will not start another build assignment until they have finished the
 
 If the Builder removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
 <br><br>
+
