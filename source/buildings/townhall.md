@@ -32,7 +32,7 @@ Once you commit to the placement of the Town Hall (green checkmark), the Town Ha
 
 ### Creating your Colony
 
-Once you have placed the Town Hall block you will need to right-click on it and select Create New Colony.
+Once you have placed the Town Hall block you will need to right-click on it and select Create New Colony. <br>
 <img src="../../assets/images/gui/th_colonycreationGUI.png" alt="Creating New Colony" />
 
 A new colony will be created, the area of your colony will be established, and the entire area will be protected.
@@ -184,7 +184,7 @@ If you try to place another Town Hall outside of your protected area, you will g
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
-          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>p
+          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
         </ul>
 		<br>
             <p><strong>Page 2: </strong>There are two buttons here:</p>

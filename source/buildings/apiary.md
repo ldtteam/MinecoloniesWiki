@@ -33,6 +33,9 @@ The level of the Apiary determines the max number of hives the Beekeeper can tak
 
 **Note:** If the Beekeeper is asking for hives but there are some nearby, make sure you've set the hives for them to take care of with the hive tool. This tool is accessed from the second page of the Apiary GUI (see below).
 
+<div class="row">
+  
+<div class="col">
 ## Apiary GUI
 
 When accessing the Apiary block by right-clicking on it, you will see a GUI with different options:
@@ -69,4 +72,5 @@ When accessing the Apiary block by right-clicking on it, you will see a GUI with
 </div>  
   
   <br>
-  
+  </div>
+</div>

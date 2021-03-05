@@ -32,46 +32,54 @@ The Baker can also craft some non-vanilla breads:
 
 ## Bakery GUI
 
-When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options:
-
-<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/bakerygui1.png" class="img-fluid mx-auto" alt="Bakery GUI 1">
-  </div>
-  <div class="col-sm-12 col-md">
+  <div class="col">
+    
+    When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options:
+
     <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/bakerygui1.png" class="img-fluid mx-auto" alt="Bakery GUI 1">
+      </div>
+      <div class="col-sm-12 col-md">
+        <br>
+        <ul>
+          {% for item in site.data.gui.global %}
+            <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <br> <br>
+
+    This is page two of the Bakery GUI.
+
+    <div class="row">
+      <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/restaurantgui2.png" class="img-fluid mx-auto" alt="Bakery GUI 2">
+      </div>
+      <div class="col-sm-12 col-md">
+          <ul>
+          <li><strong> Fuel: </strong> Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+
+    This is page three of the Bakery GUI.
+
+    <div class="row">
+      <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/restaurantgui4.jpg" class="img-fluid mx-auto" alt="Bakery GUI 3">
+      </div>
+      <div class="col-sm-12 col-md">
+          <ul>
+          <li><strong> Minimum Stock: </strong> Use this button to tell the Bakery to keep a minimum stock on hand. Set items will be displayed above the button. (It can be useful to set a minimum stock of dough, so the Baker can quickly bake items without needing to craft the dough first.)</li>
+          </ul>
+        </div>
+      </div>
+      <br>
   </div>
 </div>
-<br> <br>
 
-This is page two of the Bakery GUI.
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui2.png" class="img-fluid mx-auto" alt="Bakery GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-      <ul>
-      <li><strong> Fuel: </strong> Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</li>
-      </ul>
-    </div>  
-  <br><br>
-
-This is page three of the Bakery GUI.
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/restaurantgui4.jpg" class="img-fluid mx-auto" alt="Bakery GUI 3">
-  </div>
-  <div class="col-sm-12 col-md">
-      <ul>
-      <li><strong> Minimum Stock: </strong> Use this button to tell the Bakery to keep a minimum stock on hand. Set items will be displayed above the button. (It can be useful to set a minimum stock of dough, so the Baker can quickly bake items without needing to craft the dough first.)</li>
-      </ul>
-    </div>  
-  <br>
