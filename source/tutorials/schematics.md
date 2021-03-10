@@ -87,7 +87,7 @@ To create new schematics for existing huts, there are some guidelines that you m
 
 Once ready, move the `myown` folder into the schematics folder and start your game. You should be able to see it with the the build tool.
 
-- **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
+**Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 ## Custom Hut Filenames
 
@@ -137,6 +137,17 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | townhall1      | townhall2      | townhall3      | townhall4      | townhall5      |
 | university1    | university2    | university3    | university4    | university5    |
 | warehouse1     | warehouse2     | warehouse3     | warehouse4     | warehouse5     |
+
+## Custom Supply Ships and Camps
+
+The process for custom [supply ships and camps](../../source/supplycampandship) is slightly different: 
+
+| Camp or Ship | File Name and Path |
+| :----------: | :----------------: |
+| Camp | myown/supplycamp/myownsupplycamp |
+| Ship | myown/supplyship/myownsupplyship |
+
+So, for example, the path could be `wildwest/builder1` for the Builder's Hut level 1 and `wildwest/supplycamp/wildwestsupplycamp` for the supply camp.
 
 ## Hut Requirements
 
