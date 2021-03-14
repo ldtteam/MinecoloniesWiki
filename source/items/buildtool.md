@@ -64,11 +64,11 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 
 **Note:** When in Creative Mode, you will also see options in the lower right. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/placeholderblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it (without placeholder blocks).
 
-**Note:** To help with planning hut locations, buildings can preview as their level 5 versions and with blue outlines. These only render if their anchor blocks -- usually the hut block -- are close enough to each other. This preview can be turned off in the config settings.
+**Note:** To help with planning hut locations, buildings can preview as their level 5 versions and with blue outlines. These only render if their anchor blocks - usually the hut block - are close enough to each other. This preview can be turned off in the config settings.
 
 <br>
 ### Step Three
 
-Now that you have the structure ready to place, click on the green check mark and voilá: construction tape will appear and the building is planned! Decorations and custom schematics will automatically create a build request, but you will need to create the build request manually for hut blocks. To create a build request for buildings, go into the hut block's GUI and click the Build Options button, then Build Building. Your builders will then pick up a build request and start building the building.
+Now that you have the structure ready to place, click on the green check mark and voilá: construction tape will appear and the building is planned! Decorations and custom schematics will automatically create a build request, but you will need to create the build request manually for hut blocks. To create the build request, go into the hut block's GUI and click the Build Options button, then Build Building. Your Builders will then pick up a build request and start building the building.
 
 You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders (! symbol) tab to see the queue of all build requests you have for the Builders in your colony.
