@@ -41,7 +41,7 @@ For the Farmer to start, you will also need to place fields. Place the Field blo
 <p style="text-align:center;"><img src="../../assets/images/misc/field.png" alt="Field">    <img src="../../assets/images/gui/fieldgui1.png" alt="Field GUI Empty">    <img src="../../assets/images/gui/fieldgui2.png" alt="Field GUI Assigned"></p>
 <br>
 
-You can click on the arrows to change the size of the area the Farmer will farm. The max size is 5 blocks in each direction from the Field block, or 11x11 total.
+You can click on the arrows to increase the size of the area the Farmer will farm. (Right-clicking will decrease the area.) The max size is 5 blocks in each direction from the Field block, or 11x11 total.
 
 **IMPORTANT:** The Farmer will farm up to five Fields, depending on the level of the Farm. The level of the Farm is the number of Fields the Farmer can cultivate:
 
@@ -97,6 +97,4 @@ This is page two of the Farm GUI. It shows the Fields that are available (recogn
   <div class="col-sm-12 col-md">
     <img src="../../assets/images/gui/farmgui3.png" class="img-fluid mx-auto" alt="Farm GUI 3">
   </div>
-  <div class="col-sm-12 col-md">
-    <br>
-
+</div>
