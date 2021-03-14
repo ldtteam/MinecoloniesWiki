@@ -40,7 +40,7 @@ The higher the level of the Hospital, the more people can be healed at a time. S
 | 4 | 4 |
 | 5 | 5 |
 
-## Hospital's Hut GUI
+## Hospital GUI
 
 When accessing the Hospital's hut block by right-clicking on it, you will see a GUI with different options:
 
