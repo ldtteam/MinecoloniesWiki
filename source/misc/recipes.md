@@ -32,8 +32,9 @@ None of the [scrolls](../../source/items/scrolls) are on here as they cannot be 
 | [Floating Carpet](../../source/items/floatingcarpet) | **Any** Carpet + Build Tool + String | [Fletcher's Hut](../../source/buildings/fletcher) | <recipe>floatingcarpet</recipe> |
 | [Multi-Piston](../../source/items/multipiston) | Stone + Redstone Blocks + Build Tool + Pistons | [Mechanic's Hut](../../source/buildings/mechanic) | <recipe>multipiston</recipe> |
 | [Paper Wall](../../source/items/paperwall)     | **Any** Planks + Paper | [Sawmill](../../source/buildings/sawmill) | <recipe>paperwall</recipe>      |
-| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Planks + Scan Tool | [Sawmill](../../source/buildings/sawmill) | <recipe>placeholderblock</recipe> |
-| [Solid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Scan Tool | [Sawmill](../../source/buildings/sawmill) | <recipe>solidplaceholderblock</recipe> |
+| [Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>placeholderblock</recipe> |
+| [Fluid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Bucket | [Sawmill](../../source/buildings/sawmill) | <recipe>fluidplaceholderblock</recipe> |
+| [Solid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>solidplaceholderblock</recipe> |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Build Tool + 3 Chests | [Sawmill](../../source/buildings/sawmill) | <recipe>postbox</recipe>        |
 | [Rack](../../source/items/rack)               | **Any** Planks + Build Tool + Iron Nuggets | [Sawmill](../../source/buildings/sawmill) | <recipe>rack</recipe>           |
 | [Resource Scroll](../../source/items/resourcescroll) | Stick + Build Tool + Leather        | N/A | <recipe>resourcescroll</recipe> |
