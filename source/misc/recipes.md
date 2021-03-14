@@ -83,6 +83,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Build Tool + Wooden Axe             | <recipe>lumberjack</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Build Tool + Redstone Block         | <recipe>mechanic</recipe>      |
 | [Mine](../../source/buildings/mine)                | **Any** Planks + Build Tool + Wooden Pickaxe         | <recipe>mine</recipe>          |
+| [Mystical Site](../../source/buildings/mysticalsite) | **Any** Planks + Build Tool + Diamond              | <recipe>mysticalsite</recipe>  |
 | [Plantation](../../source/buildings/plantation)    | **Any** Planks + Build Tool + Cactus                 | <recipe>plantation</recipe>    |
 | [Rabbit Hutch](../../source/buildings/rabbithutch) | **Any** Planks + Build Tool + Raw Rabbit             | <recipe>rabbithutch</recipe>   |
 | [Restaurant](../../source/buildings/restaurant)    | **Any** Planks + Build Tool + Apple                  | <recipe>restaurant</recipe>    |

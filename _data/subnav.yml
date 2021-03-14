@@ -213,6 +213,8 @@ subnav:
         url: source/buildings/mechanic
       - page: Mine
         url: source/buildings/mine
+      - page: Mystical Site
+        url: source/buildings/mysticalsite
       - page: Plantation
         url: source/buildings/plantation
       - page: Rabbit Hutch
