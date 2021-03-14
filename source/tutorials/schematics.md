@@ -123,6 +123,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | lumberjack1    | lumberjack2    | lumberjack3    | lumberjack4    | lumberjack5    |
 | mechanic1      | mechanic2      | mechanic3      | mechanic4      | mechanic5      |
 | miner1         | miner2         | miner3         | miner4         | miner5         |
+| mysticalsite1  | mysticalsite2  | mysticalsite3  | mysticalsite4  | mysticalsite5  |
 | plantation1    | plantation2    | plantation3    | plantation4    | plantation5    |
 | rabbithutch1   | rabbithutch2   | rabbithutch3   | rabbithutch4   | rabbithutch5   |
 | sawmill1       | sawmill2       | sawmill3       | sawmill4       | sawmill5       |
