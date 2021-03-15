@@ -64,7 +64,7 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 
 **Note:** When in Creative Mode, you will also see options in the lower right. The one on the left will paste it into the world completely, including all the [placeholder blocks](../../source/items/placeholderblocks). This is useful for designing schematics. The button on the right will paste the structure into the world exactly as if a [Builder](../../source/workers/builder) had built it (without placeholder blocks).
 
-**Note:** To help with planning hut locations, buildings can preview as their level 5 versions and with blue outlines. These only render if their anchor blocks — usually the hut block — are close enough to each other. This preview can be turned off in the config settings.
+**Note:** To help with planning hut locations, buildings can preview as their level 5 versions and with blue outlines. These only render if their anchor blocks — usually the hut block — are close enough to each other. This preview can be turned off in the [config](../../source/misc/configfile) settings.
 
 <br>
 ### Step Three
