@@ -36,6 +36,7 @@ None of the [scrolls](../../source/items/scrolls) are on here as they cannot be 
 | [Fluid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Bucket | [Sawmill](../../source/buildings/sawmill) | <recipe>fluidplaceholderblock</recipe> |
 | [Solid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>solidplaceholderblock</recipe> |
 | [Postbox](../../source/items/postbox)         | **Any** Planks + Build Tool + 3 Chests | [Sawmill](../../source/buildings/sawmill) | <recipe>postbox</recipe>        |
+| [Rallying Banner](../../source/items/rallyingbanner) | Iron Swords + [Guard Towers](../../source/buildings/guardtower) + Yellow Banner + Bows | N/A | <recipe>rallyingbanner</recipe> |
 | [Rack](../../source/items/rack)               | **Any** Planks + Build Tool + Iron Nuggets | [Sawmill](../../source/buildings/sawmill) | <recipe>rack</recipe>           |
 | [Resource Scroll](../../source/items/resourcescroll) | Stick + Build Tool + Leather        | N/A | <recipe>resourcescroll</recipe> |
 | [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | N/A | <recipe>scantool</recipe>       |

@@ -59,6 +59,8 @@ subnav:
         url: source/items/postbox
       - page: Rack
         url: source/items/rack
+      - page: Rallying Banner
+        url: source/items/rallyingbanner
       - page: Resource Scroll
         url: source/items/resourcescroll
       - page: Scan Tool
