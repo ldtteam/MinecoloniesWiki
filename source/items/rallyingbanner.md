@@ -5,7 +5,7 @@ layout: default
 # Rallying Banner
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/rallyingbanner.png" alt="Rallying Banner></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/rallyingbanner.png" alt="Rallying Banner"></p>
     <recipe>rallyingbanner</recipe>
 </div>
 
