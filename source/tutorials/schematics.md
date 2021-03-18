@@ -67,7 +67,7 @@ The location of this folder depends of the type of game:
     + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), MineColonies will completely ignore the other directory.
   * In the Minecraft folder: `*/minecraft/structurize/schematics/`
     + **Note:** Use this folder when you want to have the same custom schematics across multiple worlds.
-- For a multiplayer game, the schematics are always loaded from the world's directory under: `*/minecolonies/schematics/` directory.
+- For a multiplayer game, the schematics are always loaded from the world's directory under the `*/structurize/schematics/` directory.
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
 
@@ -237,11 +237,11 @@ You will have to copy them yourself in the schematics folder on the server and r
 
 ### How to allow my players to use their scanned decoration schematics on my server?
 
-Edit the [configuration file](../../source/misc/configfile) and set allowPlayerSchematics to true. This allows the player to use their own decorations. It is not possible for the player to use their own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reached, the server will start deleting unused schematics.
+Edit the Structurize configuration file at `minecraft/config/structurize-common.toml` and set allowPlayerSchematics to true. This allows the player to use their own decorations. It is not possible for the player to use their own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reached, the server will start deleting unused schematics.
 
 ### How to disable built-in schematics completely?
 
-Edit the [configuration file](../../source/misc/configfile) and set ignoreSchematicsFromJar to true. Be aware: things will break if some huts' schematics are missing.
+Edit the Structurize configuration file at `minecraft/config/structurize-common.toml` and set ignoreSchematicsFromJar to true. Be aware: things will break if some huts' schematics are missing.
 
 ### How to create upgradable decoration schematics?
 
