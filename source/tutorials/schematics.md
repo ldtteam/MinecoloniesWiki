@@ -175,7 +175,7 @@ So, for example, the path could be `wildwest/builder1` for the Builder's Hut lev
 | [School](../../source/buildings/school)                 | 2 carpets per level                                                  | 4 carpets per level |
 | [Smeltery](../../source/buildings/school)               | 1 furnace per level                                                  |                     |
 | [Stone Smeltery](../../source/buildings/stonesmeltery)  | 1 furnace per level                                                  |                     |
-| [Tavern](../../source/buildings/tavern)                 | 4 beds, [horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical), a dining room |                     |
+| [Tavern](../../source/buildings/tavern)                 | 4 beds and a dining room                                             | [Horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical) |
 | [University](../../source/buildings/university)         | Bookshelves                                                          |                     |
 | [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/rack) (more each level)                   |                     |
 
