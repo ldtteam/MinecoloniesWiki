@@ -14,11 +14,92 @@ $mcurl: 'https://minecolonies.com';
 	src: url("../fonts/Colonial Dame.ttf");
 }
 
+html[data-theme='dark'] {
+    --bg-dark: #1e2022;
+    --color-light: #bcc2c8;
+
+    .bgscroll {
+        background-color:var(--bg-dark);
+        background-image: none;
+        padding-top:0;
+        color:var(--color-light);
+    }
+
+    body {
+        background-color:var(--bg-dark);
+    }
+
+    .button {
+        background-image:none;
+        border:1px var(--color-light) solid;
+        border-radius: 10%;
+        background-color: var(--dark);
+    }
+
+    .dropdown-menu {
+        background-color: var(--dark) !important;
+        border-color: var(--color-light);
+    }
+
+    .dropdown-item {
+        color: var(--color-light) !important;
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--bg-dark);
+    }
+
+    .mode-button {
+        color: var(--color-light);
+        background-color:var(--dark);
+    }
+
+    .infobox {
+        background-image: none;
+        border-color:var(--color-light);
+        border-radius: 0.25rem;
+    }
+
+    .sidenav {
+        background-color: var(--bg-dark);
+        border-color: var(--color-light);
+    }
+
+    .sidenav-link, .sidenav-title {
+        color: var(--color-light) !important;
+    }
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+      content: "dark";
+    }
+}
+
 /* STYLES */
 body {
 	background: transparent;
 	margin: 0;
     font-family: Fondamento, Roboto, sans-serif;
+}
+
+footer.ribbon {
+    position:relative;
+}
+
+.mode-button {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 1em;
+    color: #212529;
+    padding: 0.25em;
+    background-image:none;
+    background-color:#FDF6E5;
+    border:1px #E0D2AE solid;
+    border-radius:.25rem;
+    margin-left:1em;
 }
 
 .content {
