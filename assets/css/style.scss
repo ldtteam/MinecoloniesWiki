@@ -51,12 +51,22 @@ html[data-theme='dark'] {
 
     .mode-button {
         color: var(--color-light);
+        background-color:var(--dark);
     }
 
     .infobox {
         background-image: none;
-        border: 1px var(--color-light) solid;
+        border-color:var(--color-light);
         border-radius: 0.25rem;
+    }
+
+    .sidenav {
+        background-color: var(--bg-dark);
+        border-color: var(--color-light);
+    }
+
+    .sidenav-link, .sidenav-title {
+        color: var(--color-light) !important;
     }
     
 }
@@ -82,10 +92,14 @@ footer.ribbon {
     position: absolute;
     margin: auto;
     text-align: center;
-    top: 2em;
-    right: 50vw;
+    top: 1em;
     color: #212529;
     padding: 0.25em;
+    background-image:none;
+    background-color:#FDF6E5;
+    border:1px #E0D2AE solid;
+    border-radius:.25rem;
+    margin-left:1em;
 }
 
 .content {
