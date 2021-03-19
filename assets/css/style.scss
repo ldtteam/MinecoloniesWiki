@@ -58,6 +58,9 @@ html[data-theme='dark'] {
         background-image: none;
         border:1px var(--color-light) solid;
         border-radius: 0.25rem;
+        padding:0.5em;
+        margin-left:0.5em;
+        margin-right:0.5em;
     }
 
     .sidenav {
