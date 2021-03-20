@@ -1,6 +1,8 @@
 subnav:
   - title: Installation
     subitems:
+      - page: GDLauncher (Recommended)
+        url: source/installation/gdlauncher
       - page: Java (Forge)
         url: source/installation/java
   - title: Tutorials
