@@ -8,7 +8,7 @@ layout: default
     <p style="text-align:center;"><img src="../../assets/images/items/substitutionblock.png" alt="Placeholder Block">
     <img src="../../assets/images/items/solidsubstitutionblock.png" alt="Solid Placeholder Block">
     <img src="../../assets/images/items/fluidsubstitutionblock.png" alt="Fluid Placeholder Block"></p>
-    <recipe>placeholderblock</recipe> - <recipe>solidplaceholderblock</recipe> - <recipe>fluidplaceholderblock</recipe>
+    <recipe>placeholderblock</recipe> <recipe>solidplaceholderblock</recipe> <recipe>fluidplaceholderblock</recipe>
 </div>
 
 The placeholder blocks (also called substitution blocks) are tan, brown, and blue. The tan block is the placeholder block, the brown is the solid placeholder block, and the blue is the fluid placeholder block. Each serves its own function. 
