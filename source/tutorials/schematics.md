@@ -141,7 +141,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 
 ## Custom Supply Ships and Camps
 
-The process for custom [supply ships and camps](../../source/supplycampandship) is slightly different: 
+The process for custom [supply ships and camps](../../source/items/supplycampandship) is slightly different: 
 
 | Camp or Ship | File Name and Path |
 | :----------: | :----------------: |

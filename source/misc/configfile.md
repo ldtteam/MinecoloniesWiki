@@ -66,7 +66,7 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Chunk load colony - if an owner/officer is inside the colony and this is enabled, some of the rest of the colony chunks will be kept loaded. Useful for large colonies. Set how many chunks are loaded with the below option.
 - Colony chunk loading strictness - only takes effect if the above option is enabled. Set this higher to decrease the number of loaded chunks (the innermost chunks will be loaded first). Set to 1 to load all chunks.
 - Bad visitor chance - sometimes, a [Tavern](../../source/buildings/tavern) visitor will run off with the resources you give them instead of joining your colony. This option sets the chance for them to do that.
-- Supply loot - by default, [supply ships and camps](../../source/items/supplyshipandcamp) will generate in loot chests. You can disable that by setting this to false.
+- Supply loot - by default, [supply ships and camps](../../source/items/supplycampandship) will generate in loot chests. You can disable that by setting this to false.
 
 #### Command Configuration
 
