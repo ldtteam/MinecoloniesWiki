@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The calipers cannot be crafted and are only available in creative mode. They are for measuring the size of lines, squares, and rectangular prisms.
+The calipers are for measuring the size of lines, squares, and rectangular prisms. They cannot be crafted and are only available in creative mode.
 <br>
 
 ## Using the Calipers
