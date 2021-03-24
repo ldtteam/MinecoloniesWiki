@@ -5,7 +5,7 @@ layout: default
 # Cowhand's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/cowboy.png" alt="Cowhand's Hut" />
+    <img src="../../assets/images/buildings/cowhand.png" alt="Cowhand's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>cowboy</recipe>
+    <recipe>cowhand</recipe>
 </div>
 
 The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowhand's Hut, as the Cowhand will not catch and bring in any cows.
@@ -43,7 +43,7 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
     <br>
     <div class="row">
       <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/cowboygui1.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI">
+        <img src="../../assets/images/gui/cowhandgui1.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI">
       </div>
       <div class="col-sm-12 col-md">
         <br>
@@ -59,7 +59,7 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
     <br>
     <div class="row">
       <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/cowboygui2.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 2">
+        <img src="../../assets/images/gui/cowhandgui2.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 2">
       </div>
       <div class="col-sm-12 col-md">
         <br>

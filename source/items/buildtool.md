@@ -5,7 +5,7 @@ layout: default
 # Build Tool
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptergold.png" alt="Build Tool"></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/build_tool.png" alt="Build Tool"></p>
     <recipe>buildingtool</recipe>
 </div>
 
