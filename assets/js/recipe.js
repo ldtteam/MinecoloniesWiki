@@ -67,7 +67,7 @@ class JSONReader {
       {
         output += `
             <div class="ct-icons">
-              <div class="ct-shapeless" title="This recipe is shapeless, the items may be placed anywhere in the crafting grid."></div>
+              <div class="ct-shapeless" title="This recipe is shapeless. The items may be placed anywhere in the crafting grid."></div>
             </div>`;
       }
     }
