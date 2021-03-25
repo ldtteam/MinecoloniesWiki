@@ -8,7 +8,7 @@
       },
       "secondRow": {
         "firstItem": "minecraft/redstoneblock",
-        "secondItem": "minecolonies/sceptergold",
+        "secondItem": "minecolonies/build_tool",
         "thirdItem": "minecraft/redstoneblock"
       },
       "thirdRow": {
@@ -16,7 +16,7 @@
         "secondItem": "minecraft/piston",
         "thirdItem": "minecraft/piston"
       },
-      "product": "minecolonies/multipiston"
+      "product": "minecolonies/multi-piston"
     }
   ]
 }

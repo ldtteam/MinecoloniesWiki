@@ -63,17 +63,17 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Barracks](../../source/buildings/barracks)        | **Any** Planks + Build Tool + Iron Block             | <recipe>barracks</recipe>      |
 | [Blacksmith's Hut](../../source/buildings/blacksmith) | **Any** Planks + Build Tool + 3 Iron Ingots       | <recipe>blacksmith</recipe>    |
 | [Builder's Hut](../../source/buildings/builder)    | **Any** Planks + Build Tool + **Any** Wooden Door    | <recipe>builder</recipe>       |
-| [Chicken Farmer's Hut](../../source/buildings/chickenfarmer) | **Any** Planks + Build Tool + Egg          | <recipe>chickenherder</recipe> |
+| [Chicken Farmer's Hut](../../source/buildings/chickenfarmer) | **Any** Planks + Build Tool + Egg          | <recipe>chickenfarmer</recipe> |
 | [Combat Academy](../../source/buildings/combatacademy) | **Any** Planks + Build Tool + 3 Iron Swords      | <recipe>combatacademy</recipe> |
 | [Composter's Hut](../../source/buildings/composter) | **Any** Planks + Build Tool + Barrel                | <recipe>composter</recipe>     |
 | [Concrete Mixer's Hut](../../source/buildings/concretemixer) | **Any** Planks + Build Tool + White Concrete Powder | <recipe>concretemixer</recipe> |
-| [Cowhand's Hut](../../source/buildings/cowhand)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowboy</recipe>        |
+| [Cowhand's Hut](../../source/buildings/cowhand)    | **Any** Planks + Build Tool + Raw Beef               | <recipe>cowhand</recipe>        |
 | [Crusher's Hut](../../source/buildings/crusher)    | **Any** Planks + Build Tool + 2 Cobblestone + 1 Iron Ingot | <recipe>crusher</recipe> |
 | [Courier's Hut](../../source/buildings/courier)    | **Any** Planks + Build Tool + Leather Boots          | <recipe>courier</recipe>       |
 | [Dyer's Hut](../../source/buildings/dyer)          | **Any** Planks + Build Tool + **Any** Dye            | <recipe>dyer</recipe>          |
 | [Enchanter's Tower](../../source/buildings/enchantertower) | **Any** Planks + Build Tool + Enchanting Table | <recipe>enchanter</recipe>   |
 | [Farm](../../source/buildings/farm&field)          | **Any** Planks + Build Tool + Wooden Hoe             | <recipe>farm</recipe>          |
-| [Fisher's Hut](../../source/buildings/fisher)      | **Any** Planks + Build Tool + Fishing Rod            | <recipe>fisherman</recipe>     |
+| [Fisher's Hut](../../source/buildings/fisher)      | **Any** Planks + Build Tool + Fishing Rod            | <recipe>fisher</recipe>     |
 | [Fletcher's Hut](../../source/buildings/fletcher)  | **Any** Planks + Build Tool + String                 | <recipe>fletcher</recipe>      |
 | [Flower Shop](../../source/buildings/flowershop)   | **Any** Planks + Build Tool + Poppy                  | <recipe>flowershop</recipe>    |
 | [Glassblower's Hut](../../source/buildings/glassblower) | **Any** Planks + Build Tool + Glass Block       | <recipe>glassblower</recipe>   |
@@ -81,7 +81,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Hospital](../../source/buildings/hospital)        | **Any** Planks + Build Tool + Carrot                 | <recipe>hospital</recipe>      |
 | [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>house</recipe>         |
 | [Library](../../source/buildings/library)          | **Any** Planks + Build Tool + Bookshelf              | <recipe>library</recipe>       |
-| [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Build Tool + Wooden Axe             | <recipe>lumberjack</recipe>    |
+| [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Build Tool + Wooden Axe             | <recipe>forester</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Build Tool + Redstone Block         | <recipe>mechanic</recipe>      |
 | [Mine](../../source/buildings/mine)                | **Any** Planks + Build Tool + Wooden Pickaxe         | <recipe>mine</recipe>          |
 | [Mystical Site](../../source/buildings/mysticalsite) | **Any** Planks + Build Tool + Diamond              | <recipe>mysticalsite</recipe>  |
@@ -95,7 +95,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Smeltery](../../source/buildings/smeltery)        | **Any** Planks + Build Tool + Iron Ingot             | <recipe>smeltery</recipe>      |
 | [Stonemason's Hut](../../source/buildings/stonemason) | **Any** Planks + Build Tool + 3 Stone Bricks      | <recipe>stonemason</recipe>    |
 | [Stone Smeltery](../../source/buildings/stonesmeltery) | **Any** Planks + Build Tool + 1 Furnace + 2 Stone Bricks | <recipe>stonesmeltery</recipe> |
-| [Swineherd's Hut](../../source/buildings/swineherd) | **Any** Planks + Build Tool + Raw Porkchop          | <recipe>swineherder</recipe>   |
+| [Swineherd's Hut](../../source/buildings/swineherd) | **Any** Planks + Build Tool + Raw Porkchop          | <recipe>swineherd</recipe>   |
 | [Tavern](../../source/buildings/tavern)            | **Any** Planks + Build Tool + Decorative Barrel      | <recipe>tavern</recipe>        |
 | [Town Hall](../../source/buildings/townhall)       | **Any** Planks + 2 Build Tools                       | <recipe>townhall</recipe>      |
 | [University](../../source/buildings/university)    | **Any** Planks + Build Tool + Books                  | <recipe>university</recipe>    |

@@ -3,7 +3,7 @@
     {
       "firstRow": {
         "firstItem": "minecraft/stick",
-        "secondItem": "minecolonies/sceptergold",
+        "secondItem": "minecolonies/build_tool",
         "thirdItem": "minecraft/stick"
       },
       "secondRow": {
@@ -16,7 +16,7 @@
         "secondItem": "minecraft/leather",
         "thirdItem": "minecraft/stick"
       },
-      "product": "minecolonies/resourcescroll"
+      "product": "minecolonies/resource_scroll"
     }
   ]
 }

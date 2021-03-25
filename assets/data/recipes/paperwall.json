@@ -47,10 +47,10 @@
         ]
       },
       "product": [
-        "minecolonies/oakpaperwall",
-        "minecolonies/sprucepaperwall",
-        "minecolonies/birchpaperwall",
-        "minecolonies/junglepaperwall"
+        "minecolonies/oak_paper_wall",
+        "minecolonies/spruce_paper_wall",
+        "minecolonies/birch_paper_wall",
+        "minecolonies/jungle_paper_wall"
       ],
       "amount": "8"
     }

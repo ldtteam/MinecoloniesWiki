@@ -5,7 +5,7 @@ layout: default
 # Fisher's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/fisherman.png" alt="Fisher's Hut" />
+    <img src="../../assets/images/buildings/fisher.png" alt="Fisher's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>fisherman</recipe>
+    <recipe>fisher</recipe>
 </div>
 
 The Fisher's Hut is where the Fisher will catch fish. The Fisher requires a fishing rod and a body of water of a minimum of 7 blocks wide x 7 blocks long x 1 block tall to be able to work, and the water must be near his hut.
@@ -32,7 +32,7 @@ When accessing the Fisher's Hut block by right-clicking on it, you will see a GU
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/fishermangui.png" class="img-fluid mx-auto" alt="Fisher's Hut GUI">
+    <img src="../../assets/images/gui/fishergui.png" class="img-fluid mx-auto" alt="Fisher's Hut GUI">
 </div>
   <div class="col-sm-12 col-md">
     <br>

@@ -5,7 +5,7 @@ layout: default
 # Cowhand
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/cowboy_m.png" alt="Cowhand Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/cowboy_f.png" alt="Cowhand Female" />
+<img src="../../assets/images/workers/cowhand_m.png" alt="Cowhand Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/cowhand_f.png" alt="Cowhand Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">

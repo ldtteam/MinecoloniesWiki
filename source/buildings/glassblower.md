@@ -70,6 +70,6 @@ When accessing the Glassblower's Hut block by right-clicking on it, you will see
 </div>
 <br> <br>
 
-Listed on page two of the GUI are items that can be used by the Glassblower as fuel in their furnaces. Turn on any that you want your Glassblower to use, and a Deliveryman will deliver those items to the Glassblower when they need fuel. (The black box at the top is to search for items.)
+Listed on page two of the GUI are items that can be used by the Glassblower as fuel in their furnaces. Turn on any that you want your Glassblower to use, and a Courier will deliver those items to the Glassblower when they need fuel. (The black box at the top is to search for items.)
 
  <img src="../../assets/images/gui/glassblowergui2.png" alt="Glassblower GUI Page 2" />

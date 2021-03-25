@@ -63,7 +63,7 @@ When accessing the Stone Smeltery's hut block by right-clicking on it, you will 
   </div>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Fuel: </strong>Listed here are items that can be used by the Stone Smelter as fuel in their furnaces. Turn on any that you want your Stone Smelter to use, and a Deliveryman will deliver those items to the Stone Smelter when they need fuel. (The black box at the top is to search for items.)
+      <li><strong>Fuel: </strong>Listed here are items that can be used by the Stone Smelter as fuel in their furnaces. Turn on any that you want your Stone Smelter to use, and a Courier will deliver those items to the Stone Smelter when they need fuel. (The black box at the top is to search for items.)
       </li>
     </ul>
   </div>
