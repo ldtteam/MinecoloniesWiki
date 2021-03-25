@@ -3,7 +3,7 @@
     {
       "firstRow": {
         "firstItem": "",
-        "secondItem": "minecolonies/sceptergold",
+        "secondItem": "minecolonies/build_tool",
         "thirdItem": ""
       },
       "secondRow": {
@@ -32,7 +32,7 @@
         "secondItem": "minecraft/string",
         "thirdItem": ""
       },
-      "product": "minecolonies/blockfloatingcarpet"
+      "product": "minecolonies/floating_carpet"
     }
   ]
 }

@@ -5,7 +5,7 @@ layout: default
 # House
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/citizen.png" alt="House" />
+    <img src="../../assets/images/buildings/house.png" alt="House" />
     <recipe>house</recipe>
 </div>
 
@@ -36,7 +36,7 @@ When accessing the House's hut block by right-clicking on it, you will see a GUI
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/citizengui.png" class="img-fluid mx-auto" alt="House GUI">
+    <img src="../../assets/images/gui/housegui.png" class="img-fluid mx-auto" alt="House GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>

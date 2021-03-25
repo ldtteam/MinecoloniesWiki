@@ -5,7 +5,7 @@ layout: default
 # Scan Tool
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/sceptersteel.png" alt="Scantool"></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/scan_tool.png" alt="Scantool"></p>
     <recipe>scantool</recipe>
 </div>
 <br>

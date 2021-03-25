@@ -5,7 +5,7 @@ layout: default
 # Courier's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/deliveryman.png" alt="Courier's Hut" />
+    <img src="../../assets/images/buildings/courier.png" alt="Courier's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -44,7 +44,7 @@ When accessing the Courier's Hut block by right-clicking on it, you will see a G
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/deliverymangui1.png" class="img-fluid mx-auto" alt="Courier's Hut GUI">
+    <img src="../../assets/images/gui/couriergui1.png" class="img-fluid mx-auto" alt="Courier's Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -60,7 +60,7 @@ When accessing the Courier's Hut block by right-clicking on it, you will see a G
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/deliverymangui2.png" class="img-fluid mx-auto" alt="Deliveries">
+    <img src="../../assets/images/gui/couriergui2.png" class="img-fluid mx-auto" alt="Deliveries">
   </div>
   <div class="col-sm-12 col-md">
     <ul>

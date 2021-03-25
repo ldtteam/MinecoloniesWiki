@@ -5,7 +5,7 @@ layout: default
 # Ancient Tome 
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancienttome.png" alt="Ancient Tome"></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancient_tome.png" alt="Ancient Tome"></p>
     There is no recipe for the Ancient Tome. It must be obtained as a drop.
 </div>
 <br>

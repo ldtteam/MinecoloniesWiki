@@ -5,7 +5,7 @@ layout: default
 # Chicken Farmer
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/chickenherder_m.png" alt="Chicken Farmer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/chickenherder_f.png" alt="Chicken Farmer Female" />
+<img src="../../assets/images/workers/chickenfarmer_m.png" alt="Chicken Farmer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/chickenfarmer_f.png" alt="Chicken Farmer Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
