@@ -26,7 +26,6 @@ class JSONReader {
   {
     let arr = text.split("/");
     text = arr[1].replace(/\_/g, " ");
-    text = text.replace('sceptergold', 'build tool');
     arr = text.split(" ");
     for (let i = 0; i < arr.length; i++)
     {
