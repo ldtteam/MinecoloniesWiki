@@ -257,5 +257,7 @@ subnav:
         url: source/misc/multilingual
       - page: Recipes
         url: source/misc/recipes
+      - page: Data Packs
+        url: source/misc/datapacks
       - page: Troubleshooting
         url: source/misc/troubleshooting
