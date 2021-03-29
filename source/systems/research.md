@@ -17,15 +17,15 @@ Each column of a research tree is also the level the University needs to be to b
 | 4                    | 4                        |
 | 5 and higher         | 5                        |
 
-You can only have one column 6 research in each of the Combat, Civilian, and Technology trees.  To unlock a different column 6 research for that tree, you must undo the completed one first.
+You can only have one column 6 research in each of the Combat, Civilian, and Technology trees. To unlock a different column 6 research for that tree, you must undo the completed one first.
 
 | Symbol | Description |
 | ------ | ----------- |
-| <img src="../../assets/images/gui/university/university_research_blocked.png" alt="Blocked Research"> | Research can be **Blocked**, either by unfinished prerequisite research, by a completed blocking research, or because the research tree has another column 6 research already active. |
-| <img src="../../assets/images/gui/university/university_research_locked.png" alt="Locked Research"> | **Locked** research requires a building or buildings, or other unrelated research, before it can be started. | 
-| <img src="../../assets/images/gui/university/university_research_unlocked.png" alt="Unlocked Research"> | **Unlocked** research has all colony requirements met, but requires an item or items. **These items must be in the player inventory.** | 
-| <img src="../../assets/images/gui/university/university_research_ready.png" alt="Available Research"> | **Available** research is ready to begin. Clicking the title of the research will consume the items from the player's inventory. |  
-| <img src="../../assets/images/gui/university/university_research_progress.png" alt="Progressing Research"> | **Progressing** research is your Researcher's current focus. This research will show its current progression, and a rough estimate of remaining time to completion.  Progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling research will **not** refund material costs. | 
+| <img src="../../assets/images/gui/university/university_research_blocked.png" alt="Blocked Research"> | A research can be **blocked**, either by an unfinished prerequisite research, by a completed blocking research, or because the research tree has another column 6 research already active. |
+| <img src="../../assets/images/gui/university/university_research_locked.png" alt="Locked Research"> | A **locked** research requires a building or buildings, or other unrelated research, before it can be started. | 
+| <img src="../../assets/images/gui/university/university_research_unlocked.png" alt="Unlocked Research"> | An **unlocked** research has all colony and research requirements met, but requires an item or items. **These items must be in the player's inventory.** | 
+| <img src="../../assets/images/gui/university/university_research_ready.png" alt="Available Research"> | An **available** research is ready to begin. Clicking the title of the research will consume the items from the player's inventory and start the research. |  
+| <img src="../../assets/images/gui/university/university_research_progress.png" alt="Progressing Research"> | **Progressing** research is your Researcher's current focus. This research will show its current progression, and a rough estimate of remaining time to completion. Progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling research will **not** refund material costs. | 
 | <img src="../../assets/images/gui/university/university_research_complete.png" alt="Complete Research"> | **Complete** research has been fully unlocked by your University, and automatically applies its effects to the colony and colonists. | 
 | <img src="../../assets/images/gui/university/university_research_or.png" alt="Exclusive Research"> | Some researches are **Exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one Research from a specific **or** selection may be learned in a colony at a time. | 
 | <img src="../../assets/images/gui/university/university_research_undo.png" alt="Undo Research"> | Completed exclusive researches, or research that depend on exclusives, or tier 6 researches, may be **Undone**. Undoing research does *not* refund the research costs, and consumes the displayed item. | 
@@ -137,7 +137,7 @@ You can only have one sixth column research unlocked at a time!
 | Keen | [House](../../source/buildings/house) at least level 3; 3 books | Unlocks the [Library](../../source/buildings/library) |
 | First Aid | [Town Hall](../../source/buildings/townhall) at least level 1; 8 hay bales | Increases colonists' health by 1 heart |
 | Higher Learning | House at least level 3; 3 books | Unlocks the [School](../../source/buildings/school) |
-| Ambition | 1 Diamond | Unlocks the [Mystic Site](../../source/buildings/mysticsite) |
+| Ambition | 1 Diamond | Unlocks the [Mystical Site](../../source/buildings/mysticalsite) |
 
 #### Second Column
 
@@ -145,7 +145,7 @@ You can only have one sixth column research unlocked at a time!
 | ---- | ------------- | ------------ | ------- |
 | Band Aid | Stamina | Library at least level 2; 1 golden carrot | Every tick that a colonist is healing, they heal by 10% more |
 | Resistance | Stamina | [Restaurant](../../source/buildings/restaurant) at least level 2; 1 golden apple | Colonists can heal with only 95% saturation |
-| Outpost | Keen | House at least level 4; 64 steak | Lets the colony have up to 50 colonists. |
+| Outpost | Keen | House at least level 4; 64 steak | Lets the colony have up to 50 colonists |
 | Diligent | Keen | Library at least level 2; 6 books | Increases the rate colonists level up by 5% |
 | Rails | Keen | [Courier's Hut](../../source/buildings/courier) at least level 3; 64 rails | Lets colonists use rails to get around. You don't need to provide them with minecarts, as they automagically create their own for each trip |
 | First Aid II | First Aid | Town Hall at least level 2; 16 hay bales | Increases colonists' health by 2 hearts |
@@ -192,7 +192,7 @@ You can only have one sixth column research unlocked at a time!
 | ---- | ------------- | ------------ | ------- |
 | Compress | Bandages | Library level 5; 32 golden carrots | Every tick that a colonist is healing, they heal by 100% more |
 | Fortitude | Vitality | Restaurant level 5; 32 golden apples | Colonists can heal with only 80% saturation |
-| City | Village | Town Hall level 5; 512 steak | Lets you have over 175 colonists, up to the max in the config file |
+| City | Village | Town Hall level 5; 512 steak | Lets you have over 175 colonists, up to the max in the [config file](../../source/misc/configfile) |
 | Reflective | Scholarly | Library level 5; 48 books | Increases the rate colonists level up by 50% |
 | Swift | Agile | Town Hall level 5; 32 rabbit feet | Increases colonists' speed by 15% |
 | Guardian Angel | Lifesaver II | Town Hall level 5; 128 hay bales | Increases colonists' health by 5 hearts |
@@ -227,8 +227,8 @@ You can only have one sixth column research unlocked at a time!
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
 | Biodegradable | [Farm](../../source/buildings/farm&field) at least level 3; 64 bone meal | Unlocks the [Composter's Hut](../../source/buildings/composter) |
-| Hitting Iron! | Mine at least level 3; an anvil | Unlocks the [Blacksmith's Hut](../../source/buildings/blacksmith) |
-| More Scrolls | Enchanter at least level 3; 64 Lapis Lazuli, 64 Paper, 1 Ancient Tome | [Enchanter](../../source/buildings/enchanter) Learns Scroll Recipes to Locate Workers and Summon Guards |
+| Hitting Iron! | Mine at least level 3; 1 anvil | Unlocks the [Blacksmith's Hut](../../source/buildings/blacksmith) |
+| More Scrolls |  [Enchanter's Tower](../../source/buildings/enchantertower) at least level 3; 64 paper, 1 [ancient tome](../../source/items/ancient_tome), 64 lapis lazuli | Lets the [Enchanter](../../source/workers/enchanter) craft the [Spatial Guard Reinforcements Scroll](../../source/items/scrolls) and the [Worker-Where-Are-You Scroll](../../source/items/scrolls) |
 | Stone Cake | [Mine](../../source/buildings/mine) at least level 3; 64 chiseled stone bricks | Unlocks the [Stonemason's Hut](../../source/buildings/stonemason) |
 | Woodwork | [Forester's Hut](../../source/buildings/forester) at least level 3; 64 oak planks | Unlocks the [Sawmill](../../source/buildings/sawmill) |
 | Hot! | Mine at least level 2; 4 lava buckets | Unlocks the [Smeltery](../../source/buildings/smeltery) |
@@ -312,6 +312,6 @@ You can only have one sixth column research unlocked at a time!
 | Madness! | Seems Automatic | 1024 iron ingots | Increases colonists' block placing speed by 200% |
 | Motherlode | Amazing Veins | 64 diamond ore | Miner produces 200% more ores |
 | Rainman | RTM | 27 buckets of salmon | Workers work during rain and storms |
-| Heavily Loaded | Loaded | 256 emeralds | Adds 27 slots to colonists' inventories.  **This research can not be undone.** |
+| Heavily Loaded | Loaded | 256 emeralds | Adds 27 slots to colonists' inventories. **This research can not be undone.** |
 | Lightning | What Is This Speed? | 2048 redstone dust | Increases colonists' block breaking speed by 200% |
 
