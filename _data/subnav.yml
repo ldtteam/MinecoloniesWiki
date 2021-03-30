@@ -9,6 +9,8 @@ subnav:
     subitems:
       - page: Getting Started
         url: source/tutorials/getting-started
+      - page: Data Packs
+        url: source/misc/datapacks
       - page: Schematics
         url: source/tutorials/schematics
   - title: Systems
@@ -55,6 +57,8 @@ subnav:
         url: source/items/paperwall
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
+      - page: Plate Armor
+        url: source/items/platearmor
       - page: Postbox
         url: source/items/postbox
       - page: Rack
@@ -69,6 +73,8 @@ subnav:
         url: source/items/scrolls
       - page: Shingles
         url: source/items/shingles
+      - page: Sifter Meshes
+        url: source/items/siftermeshes
       - page: Stash
         url: source/items/stash
       - page: Supply Camp and Supply Ship
@@ -257,7 +263,5 @@ subnav:
         url: source/misc/multilingual
       - page: Recipes
         url: source/misc/recipes
-      - page: Data Packs
-        url: source/misc/datapacks
       - page: Troubleshooting
         url: source/misc/troubleshooting

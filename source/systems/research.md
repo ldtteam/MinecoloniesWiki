@@ -21,22 +21,27 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 
 | Symbol | Description |
 | ------ | ----------- |
-| <img src="../../assets/images/gui/university/university_research_blocked.png" alt="Blocked Research"> | A research can be **blocked**, either by an unfinished prerequisite research, by a completed blocking research, or because the research tree has another column 6 research already active. |
-| <img src="../../assets/images/gui/university/university_research_locked.png" alt="Locked Research"> | A **locked** research requires a building or buildings, or other unrelated research, before it can be started. | 
-| <img src="../../assets/images/gui/university/university_research_unlocked.png" alt="Unlocked Research"> | An **unlocked** research has all colony and research requirements met, but requires an item or items. **These items must be in the player's inventory.** | 
-| <img src="../../assets/images/gui/university/university_research_ready.png" alt="Available Research"> | An **available** research is ready to begin. Clicking the title of the research will consume the items from the player's inventory and start the research. |  
-| <img src="../../assets/images/gui/university/university_research_progress.png" alt="Progressing Research"> | A **progressing** research is being worked on currently. This research will show its current progression and a rough estimate of the remaining time to completion. A progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling a research will **not** refund the material costs. | 
-| <img src="../../assets/images/gui/university/university_research_complete.png" alt="Complete Research"> | A **complete** research has been fully unlocked by your University. Its effects have been applied to the colony and colonists. | 
-| <img src="../../assets/images/gui/university/university_research_or.png" alt="Exclusive Research"> | Some researches are **exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one research from a specific **or** selection may be learned in a colony at a time. | 
-| <img src="../../assets/images/gui/university/university_research_undo.png" alt="Undo Research"> | Completed exclusive researches, researches that depend on exclusives, or tier 6 researches, may be **undone**. Undoing a research does *not* refund the research costs and consumes the displayed item. | 
+| <img src="../../assets/images/gui/university/research_blocked.png" alt="Blocked Research"> | A research can be **blocked**, either by an unfinished prerequisite research, by a completed blocking research, or because the research tree has another column 6 research already active. |
+| <img src="../../assets/images/gui/university/research_locked.png" alt="Locked Research"> | A **locked** research requires a building or buildings, or other unrelated research, before it can be started. | 
+| <img src="../../assets/images/gui/university/research_unlocked.png" alt="Unlocked Research"> | An **unlocked** research has all colony and research requirements met, but requires an item or items. **These items must be in the player's inventory.** | 
+| <img src="../../assets/images/gui/university/research_ready.png" alt="Available Research"> | An **available** research is ready to begin. Clicking the title of the research will consume the items from the player's inventory and start the research. |  
+| <img src="../../assets/images/gui/university/research_progress.png" alt="Progressing Research"> | A **progressing** research is being worked on currently. This research will show its current progression and a rough estimate of the remaining time to completion. A progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling a research will **not** refund the material costs. | 
+| <img src="../../assets/images/gui/university/research_complete.png" alt="Complete Research"> | A **complete** research has been fully unlocked by your University. Its effects have been applied to the colony and colonists. | 
+| <img src="../../assets/images/gui/university/research_or.png" alt="Exclusive Research"> | Some researches are **exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one research from a specific **or** selection may be learned in a colony at a time. | 
+| <img src="../../assets/images/gui/university/research_undo.png" alt="Undo Research"> | Completed exclusive researches, researches that depend on exclusives, or tier 6 researches, may be **undone**. Undoing a research does *not* refund the research costs and consumes the displayed item. | 
 
 ## Below is a description of each of the researches:
 
 **Note:** Researches below are *not* cumulative unless stated otherwise.
 
+- Branches
+  - [Combat](#combat)
+  - [Civilian](#civilian)
+  - [Technology](#technology)
+
 ### Combat
 <br>
-<img src="../../assets/images/gui/university/universitycombat.png" class="img-fluid mx-auto" alt="University Combat GUI Page">
+<img src="../../assets/images/gui/university/combat.png" class="img-fluid mx-auto" alt="University Combat GUI Page">
 <br>
 
 #### First Column
@@ -126,7 +131,7 @@ You can only have one sixth column research unlocked at a time!
 
 ### Civilian
 <br>
-<img src="../../assets/images/gui/university/universitycivilian.png" class="img-fluid mx-auto" alt="University Civilian GUI Page">
+<img src="../../assets/images/gui/university/civilian.png" class="img-fluid mx-auto" alt="University Civilian GUI Page">
 <br>
 
 #### First Column
@@ -219,7 +224,7 @@ You can only have one sixth column research unlocked at a time!
 
 ### Technology
 <br>
-<img src="../../assets/images/gui/university/universitytechnology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
+<img src="../../assets/images/gui/university/technology.png" class="img-fluid mx-auto" alt="University Technology GUI Page">
 <br>
 
 #### First Column
@@ -315,3 +320,33 @@ You can only have one sixth column research unlocked at a time!
 | Heavily Loaded | Loaded | 256 emeralds | Adds 27 slots to colonists' inventories. **This research can not be undone.** |
 | Lightning | What Is This Speed? | 2048 redstone dust | Increases colonists' block breaking speed by 200% |
 
+### Unlockables
+<br>
+<img src="../../assets/images/gui/university/unlockables.png" class="img-fluid mx-auto" alt="University Unlockables GUI Page">
+<br>
+
+Unlockables are a special research tree, consisting of research that other colonists discover as the colony grows and progresses. This branch will only display once at least one research is available, and research on this branch will complete instantly.
+
+#### First Column
+
+| Name         | Requirements             | Effects |
+| ------------ | ------------------------ | ------- |
+| String Mesh  | Sifter at least level 1 | Fletcher learns the String Mesh recipe |
+
+#### Second Column
+
+| Name         | Requirements             | Effects |
+| ------------ | ------------------------ | ------- |
+| Flint Mesh   | Sifter at least level 3 | Stonemason learns the Flint Mesh recipe |
+
+#### Third Column
+
+| Name         | Requirements             | Effects |
+| ------------ | ------------------------ | ------- |
+| Iron Mesh    | Sifter at least level 4 | Blacksmith learns the Iron Mesh recipe |
+
+#### Fourth Column
+
+| Name         | Requirements             | Effects |
+| ------------ | ------------------------ | ------- |
+| Diamond Mesh | Sifter at least level 5 | Mechanic learns the Diamond Mesh recipe |

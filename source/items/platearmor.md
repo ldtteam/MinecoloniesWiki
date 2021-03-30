@@ -4,12 +4,12 @@ layout: default
 ---
 # Plate Armor
 
-<div class="infobox box text-center">
 {% comment %}
+<div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/platearmor.png" alt="Plate Armor"></p>
-{% endcomment %}
 </div>
 <br>
+{% endcomment %}
 
 Plate Armor can be crafted by the [Blacksmith](../../source/workers/blacksmith), after their [workshop](../../source/buildings/blacksmith) has reached level 4, and the Plate Armor research has been completed at the [University](../../source/buildings/university).
 
