@@ -25,10 +25,10 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 | <img src="../../assets/images/gui/university/university_research_locked.png" alt="Locked Research"> | A **locked** research requires a building or buildings, or other unrelated research, before it can be started. | 
 | <img src="../../assets/images/gui/university/university_research_unlocked.png" alt="Unlocked Research"> | An **unlocked** research has all colony and research requirements met, but requires an item or items. **These items must be in the player's inventory.** | 
 | <img src="../../assets/images/gui/university/university_research_ready.png" alt="Available Research"> | An **available** research is ready to begin. Clicking the title of the research will consume the items from the player's inventory and start the research. |  
-| <img src="../../assets/images/gui/university/university_research_progress.png" alt="Progressing Research"> | **Progressing** research is your Researcher's current focus. This research will show its current progression, and a rough estimate of remaining time to completion. Progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling research will **not** refund material costs. | 
-| <img src="../../assets/images/gui/university/university_research_complete.png" alt="Complete Research"> | **Complete** research has been fully unlocked by your University, and automatically applies its effects to the colony and colonists. | 
-| <img src="../../assets/images/gui/university/university_research_or.png" alt="Exclusive Research"> | Some researches are **Exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one Research from a specific **or** selection may be learned in a colony at a time. | 
-| <img src="../../assets/images/gui/university/university_research_undo.png" alt="Undo Research"> | Completed exclusive researches, or research that depend on exclusives, or tier 6 researches, may be **Undone**. Undoing research does *not* refund the research costs, and consumes the displayed item. | 
+| <img src="../../assets/images/gui/university/university_research_progress.png" alt="Progressing Research"> | A **progressing** research is being worked on currently. This research will show its current progression and a rough estimate of the remaining time to completion. A progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling a research will **not** refund the material costs. | 
+| <img src="../../assets/images/gui/university/university_research_complete.png" alt="Complete Research"> | A **complete** research has been fully unlocked by your University. Its effects have been applied to the colony and colonists. | 
+| <img src="../../assets/images/gui/university/university_research_or.png" alt="Exclusive Research"> | Some researches are **exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one research from a specific **or** selection may be learned in a colony at a time. | 
+| <img src="../../assets/images/gui/university/university_research_undo.png" alt="Undo Research"> | Completed exclusive researches, researches that depend on exclusives, or tier 6 researches, may be **undone**. Undoing a research does *not* refund the research costs and consumes the displayed item. | 
 
 ## Below is a description of each of the researches:
 
@@ -104,7 +104,7 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 | Provost | Duelist | Combat Academy level 5; 16 diamonds | Increases Knights' armor by 50% |
 | Improved Evasion | Evasion | Archery level 5; 16 diamonds | Increases Archers' armor by 50% |
 | Steel Armor | Iron Armor | Town Hall level 5; 64 iron ingots | Increases Guards' armor's durability by 50% |
-| Plate Armor | Iron Armor | Blacksmith level 4; 32 iron ingots | Blacksmith Learns Plate Armor Recipes |
+| Plate Armor | Iron Armor | Blacksmith level 4; 32 iron ingots | Blacksmith learns [plate armor](../../source/items/platearmor) |
 | Retreat | Fear | Guard Towers adding up to at least level 12; 32 emeralds | When Guards are fleeing, the damage they take is reduced by 40% |
 | Flee | Evade | Guard Towers adding up to at least level 12; 32 emeralds | Increases the fleeing speed of Guards by 30% |
 
