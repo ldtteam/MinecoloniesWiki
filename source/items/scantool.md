@@ -19,7 +19,7 @@ The scan tool is a very useful tool. With the scan tool, you can scan any struct
 </div>
 <br>
 
-**Hint:** There are three blocks in MineColonies that are made specifically for helping players make schematics.
+**Hint:** There are three blocks in NineColonies that are made specifically for helping players make schematics.
 1. [Placeholder Block](../../source/items/placeholderblocks): This block will not be scanned and will use the block that is already there, like air, grass, cobblestone, etc.
 2. [Solid Placeholder Block](../../source/items/placeholderblocks): This block will guarantee the block placed will be solid according to the biome it's being built on.
 3. [Fluid Placeholder Block](../../source/items/placeholderblocks): This block replaces any non-solid blocks with the biome's preferred fluid (water in the overworld, lava in the Nether). Already-existing solid blocks or fluids will be left alone.

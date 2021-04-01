@@ -1,6 +1,6 @@
-title: MineColonies Wiki
+title: NineColonies Wiki
 description: >- # this means to ignore newlines until "remote-theme"
-  MineColonies Wiki
+  NineColonies Wiki
 remote-theme: jekyll/minima
 markdown: kramdown
 baseurl: /

@@ -50,11 +50,11 @@ Once you have scanned a structure, you can use the [build tool](../../source/ite
 
 ## FAQ
 
-This is a FAQ section to answer common questions regarding schematics in MineColonies.
+This is a FAQ section to answer common questions regarding schematics in NineColonies.
 
 #### What and where is the scans folder?
 
-The scans folder is where the schematics are saved after performing a scan using the scan tool in MineColonies. This is a client-side-only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in-game. (If they aren't there, look in `*/minecolonies/scans/new`.) This directory is shared between all your singleplayer games and multiplayer games.
+The scans folder is where the schematics are saved after performing a scan using the scan tool in NineColonies. This is a client-side-only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in-game. (If they aren't there, look in `*/minecolonies/scans/new`.) This directory is shared between all your singleplayer games and multiplayer games.
 
 #### Where is the schematic folder?
 
@@ -64,7 +64,7 @@ The location of this folder depends of the type of game:
 
 - For a singleplayer game, there are 2 possible locations:
   * In the world folder: `*/minecraft/saves/(World Name)/structurize/schematics/`
-    + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), MineColonies will completely ignore the other directory.
+    + **Note:** Use this directory when you want to use custom schematics restricted to the world. When this directory exists (even empty), NineColonies will completely ignore the other directory.
   * In the Minecraft folder: `*/minecraft/structurize/schematics/`
     + **Note:** Use this folder when you want to have the same custom schematics across multiple worlds.
 - For a multiplayer game, the schematics are always loaded from the world's directory under the `*/structurize/schematics/` directory.
@@ -168,7 +168,7 @@ So, for example, the path could be `wildwest/builder1` for the Builder's Hut lev
 | [Guard Tower](../../source/buildings/guardtower)        |                                                                      | 1 bed per level     |
 | [Hospital](../../source/buildings/hospital)             | 1 bed per level                                                      |                     |
 | [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
-| [Library](../../source/buildings/library)               | Bookshelves                                                          |                     |
+| [Library](../../source/workers/composter)               | Bookshelves                                                          |                     |
 | [Mine](../../source/buildings/mine)                     | A few starting ladders where the shaft's ladders will go             |                     |
 | [Plantation](../../source/buildings/plantation)         | 4 per level: brick under sand, cobble under sand, sand next to water |                     |
 | [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
@@ -177,7 +177,7 @@ So, for example, the path could be `wildwest/builder1` for the Builder's Hut lev
 | [Stone Smeltery](../../source/buildings/stonesmeltery)  | 1 furnace per level                                                  |                     |
 | [Tavern](../../source/buildings/tavern)                 | 4 beds and a dining room                                             | [Horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical) |
 | [University](../../source/buildings/university)         | Bookshelves                                                          |                     |
-| [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/rack) (more each level)                   |                     |
+| [Warehouse](../../source/workers/teacher)           | [Racks](../../source/workers/beekeeper) (more each level)                   |                     |
 
 ## Level Requirements for Overworld Styles
 
@@ -208,7 +208,7 @@ So, for example, the path could be `wildwest/builder1` for the Builder's Hut lev
 <ul>
   <li>Make all levels of a hut have the same footprint for x, y, and z</li>
   <li>Place the hut block in the same location with the same rotation</li>
-  <li>Make sure all chests and <a href="../../source/items/rack">racks</a> are in the same location through all levels</li>
+  <li>Make sure all chests and <a href="../../source/workers/beekeeper">racks</a> are in the same location through all levels</li>
   <li>Use <a href="../../source/items/placeholderblocks">placeholders</a> where you want to keep any existing block (including from level to level), like the <a href="../../source/buildings/barrackstower">Barracks Towers</a> in the <a href="../../source/buildings/barracks">Barracks</a> schematic</li>
   <li>Use <a href="../../source/items/placeholderblocks">solid placeholders</a> at or below ground level</li>
   <li>Use only vanilla blocks or Structurize blocks (for official styles)</li>

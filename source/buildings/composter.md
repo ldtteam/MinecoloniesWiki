@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/composter">Composter</a></p>
+        <p><a href="../buildings/combatacademy">Composter</a></p>
         </div>
     </div>
     <hr />

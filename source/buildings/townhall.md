@@ -128,7 +128,7 @@ If you try to place another Town Hall outside of your protected area, you will g
     <ul>
       <li><strong>Page 3: </strong>Here you can select the rank that you would like to manage.</li>
       <br>
-      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want. <b>Note:</b> the Fight Guards permission causes <a href="../../source/workers/guard"> Guards</a> to treat the player as an enemy and attack them. It is only recommended for Hostile players.</li> 
+      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want. <b>Note:</b> the Fight Guards permission causes <a href="../../source/buildings/blacksmith"> Guards</a> to treat the player as an enemy and attack them. It is only recommended for Hostile players.</li> 
     </ul>
   </div>
 </div>  
@@ -182,7 +182,7 @@ If you try to place another Town Hall outside of your protected area, you will g
           <br>
           <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/house"> House</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
-          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
+          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether NineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
           <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
         </ul>
@@ -191,7 +191,7 @@ If you try to place another Town Hall outside of your protected area, you will g
         <ul>
             <li><strong>Pick Team Color: </strong>Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
 			<br>
-            <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
+            <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/buildings/blacksmith"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
             <div class="col-sm-12 col-md">
 			<img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
 			</div>

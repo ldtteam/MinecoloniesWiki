@@ -5,15 +5,15 @@ layout: default
 
 # GDLauncher Installation
 
-Installing MineColonies via GDLauncher, a custom Minecraft launcher, is the recommended method.
+Installing NineColonies via GDLauncher, a custom Minecraft launcher, is the recommended method.
 
 - [GDLauncher Installation](#gdlauncher-installation)
     - [Getting GDLauncher](#getting-gdlauncher)
     - [Setting Up GDLauncher](#setting-up-gdlauncher)
         - [Account](#account)
         - [Create an Instance](#create-an-instance)
-    - [Installing MineColonies Mod Only](#installing-minecolonies-mod-only)
-    - [Installing MineColonies Official Modpacks](#installing-minecolonies-official-modpacks)
+    - [Installing NineColonies Mod Only](#installing-minecolonies-mod-only)
+    - [Installing NineColonies Official Modpacks](#installing-minecolonies-official-modpacks)
         - [Getting the Modpack](#getting-the-modpack)
         - [Installing the Modpack](#installing-the-modpack)
     
@@ -45,7 +45,7 @@ To create an instance, click the + button in the bottom left.
 
 The steps past this point differ, depending on whether you're installing the mod or the modpack.
 
-## Installing MineColonies Mod Only
+## Installing NineColonies Mod Only
 
 Change the dropdowns to select the latest Forge version for the latest version of Minecraft. (At the time of this writing, the latest Minecraft version is 1.16.5.)
 
@@ -63,15 +63,15 @@ Once you're in the Manage Instance menu, go to the Mods tab and click the Add Mo
 
 ![Mods Tab](../../assets/images/installation/gdlauncher_7.png)
 
-Search for "MineColonies" at the top, then click Install. (You can click elsewhere on the mod's icon to read the description.) GDLauncher will automatically install Structurize, a dependency of MineColonies.
+Search for "NineColonies" at the top, then click Install. (You can click elsewhere on the mod's icon to read the description.) GDLauncher will automatically install Structurize, a dependency of NineColonies.
 
-![MineColonies Search](../../assets/images/installation/gdlauncher_8.png)
+![NineColonies Search](../../assets/images/installation/gdlauncher_8.png)
 
 You're ready to play! To launch Minecraft, close out of the instance manager and left-click on the instance icon (in the main menu).
 
-## Installing MineColonies Official Modpack
+## Installing NineColonies Official Modpack
 
-When creating an instance, change from Vanilla to Twitch at the top. Search for "MineColonies Official".
+When creating an instance, change from Vanilla to Twitch at the top. Search for "NineColonies Official".
 
 ![Searching in Twitch Tab](../../assets/images/installation/gdlauncher_9.png)
 

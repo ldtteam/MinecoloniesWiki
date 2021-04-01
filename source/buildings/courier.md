@@ -12,14 +12,14 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/courier">Courier</a></p>
+        <p><a href="../workers/forester">Courier</a></p>
         </div>
     </div>
     <hr />
     <recipe>courier</recipe>
 </div>
 
-The Courier runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse.
+The Courier runs back and forth from the [Warehouse](../../source/workers/teacher) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse.
 
 The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 

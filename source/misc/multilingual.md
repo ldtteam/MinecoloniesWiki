@@ -4,7 +4,7 @@ layout: default
 ---
 # Multilingual Sources
 
-Here are some links to articles about MineColonies in other languages:
+Here are some links to articles about NineColonies in other languages:
 
 ### French
 

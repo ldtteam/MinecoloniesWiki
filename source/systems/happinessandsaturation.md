@@ -10,19 +10,19 @@ The citizens, however, will NOT die if their saturation goes down to 0, they wil
 
 ## Happiness System
 
-There is an **overall** colony happiness and an **individual** citizen happiness. Higher colony happiness increases the initial level and skills of new colonists. Higher citizen happiness increases the rate colonists gain Intelligence when studying at a [Library](../../source/buildings/library).
+There is an **overall** colony happiness and an **individual** citizen happiness. Higher colony happiness increases the initial level and skills of new colonists. Higher citizen happiness increases the rate colonists gain Intelligence when studying at a [Library](../../source/workers/composter).
 
 Overall colony happiness is 1-10 (initially set to 5). Happiness depends on three basic factors: **security, housing, and saturation**.
 
 If a colonist's saturation is above 14 shanks, they will be happier.
-If the colonist's home (or for [Guards](../../source/workers/guard) or trainees, their workplace) is above level 2.5, the colonist will be happier.
+If the colonist's home (or for [Guards](../../source/buildings/blacksmith) or trainees, their workplace) is above level 2.5, the colonist will be happier.
 If at least two Guards exist for every three citizens, the colonists will be happier.
 
 These basic factors benefit from partial completion. Citizens will be happier with 5 shanks of saturation than 1, with 1 Guard for every 4 workers than 1 Guard for every 10, and enjoy a level 2 house more than a level 1 house. Colonists also become happier as these values increase further, such as from upgrading a house to level 4 or 5 or having completely full saturation.
 
 Each time a citizen (other than a Guard) dies, other citizens will mourn the next day and be less happy for the next three days. All citizens become slightly less happy for the next day when injured.
 
-Every night, colonists will also become less happy if they are sick, homeless, unemployed, or have nothing to do at their job, and will become increasingly unhappy the longer the problem persists. Citizens (other than Guards) unable to make it to their bed at night to sleep will become unhappy. Fellow colonists' livelihood also matters for happiness (the Social Factor in the [Town Hall](../../source/buildings/townhall)'s happiness page).
+Every night, colonists will also become less happy if they are sick, homeless, unemployed, or have nothing to do at their job, and will become increasingly unhappy the longer the problem persists. Citizens (other than Guards) unable to make it to their bed at night to sleep will become unhappy. Fellow colonists' livelihood also matters for happiness (the Social Factor in the [Town Hall](../../source/workers/chickenfarmer)'s happiness page).
 
 Surviving a raid without losing any colonists provides a colony-wide happiness boost.
 
@@ -43,4 +43,4 @@ Citizens will demand higher levels of food based on their workplace level. **The
 | 4 | 2 |
 | 5 | 2.5 |
 
-When a citizen's hunger level gets to 6 or lower, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in their GUI that you build them a Restaurant or provide them with food manually.
+When a citizen's hunger level gets to 6 or lower, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/items/stash). If there is no Cook, they will request in their GUI that you build them a Restaurant or provide them with food manually.

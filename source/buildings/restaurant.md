@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/cook">Cook</a></p>
+        <p><a href="../items/stash">Cook</a></p>
         </div>
         <div class="col">
         <p><a href="../workers/assistantcook">Assistant Cook</a></p>
@@ -57,7 +57,7 @@ The Restaurant is where the Cook will cook food, provided they have the necessar
       </div>
       <div class="col-sm-12 col-md">
           <ul>
-          <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
+          <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and a <a href="../../source/workers/forester"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
           </ul>
         </div>
       </div>

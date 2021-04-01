@@ -9,9 +9,9 @@ layout: default
     <recipe>rallyingbanner</recipe>
 </div>
 
-The rallying banner will summon your [Guards](../../source/workers/guard) to you when used. It's especially useful in raids, as Guards don't automatically know where to find the raiders.
+The rallying banner will summon your [Guards](../../source/buildings/blacksmith) to you when used. It's especially useful in raids, as Guards don't automatically know where to find the raiders.
 
-**Note:** Your Guards will not follow you outside the colony [border](../../source/systems/border). To bring Guards outside the border, set them to Follow you on the second page of their tower GUI.
+**Note:** Your Guards will not follow you outside the colony [border](../../source/buildings/stonesmeltery). To bring Guards outside the border, set them to Follow you on the second page of their tower GUI.
 
 ## Using the Rallying Banner
 

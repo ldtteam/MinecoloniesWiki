@@ -32,10 +32,10 @@ You can only choose one column 6 research in each of the Combat, Civilian, and T
 
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
-| Accuracy | [Guard Tower](../../source/buildings/guardtower) at least level 1; 16 iron ingots | Reduces the time [Guards](../../source/workers/guard) sleep by 50% |
+| Accuracy | [Guard Tower](../../source/buildings/guardtower) at least level 1; 16 iron ingots | Reduces the time [Guards](../../source/buildings/blacksmith) sleep by 50% |
 | Tactic Training | Guard Tower at least level 3; 3 blocks of iron | Unlocks the [Barracks](../../source/buildings/barracks) |
 | Avoidance | Guard Tower at least level 3; 3 blocks of iron | Lets Knights use shields |
-| Improved Leather | [Town Hall](../../source/buildings/townhall) at least level 1; 32 leather | Increases Guards' armor's durabilty by 10% |
+| Improved Leather | [Town Hall](../../source/workers/chickenfarmer) at least level 1; 32 leather | Increases Guards' armor's durabilty by 10% |
 | Taunt | Guard Tower at least level 1; 8 rotten flesh, 8 bones, 8 spider eyes | After a Guard attacks a mob, the mob targets the Guard instead of citizens or the player |
 
 #### Second Column
@@ -122,8 +122,8 @@ You can only choose one of these!
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
 | Stamina | 1 carrot | Unlocks the [Hospital](../../source/buildings/hospital) |
-| Keen | [House](../../source/buildings/house) at least level 3; 3 books | Unlocks the [Library](../../source/buildings/library) |
-| First Aid | [Town Hall](../../source/buildings/townhall) at least level 1; 8 hay bales | Increases colonists' health by 1 heart |
+| Keen | [House](../../source/buildings/house) at least level 3; 3 books | Unlocks the [Library](../../source/workers/composter) |
+| First Aid | [Town Hall](../../source/workers/chickenfarmer) at least level 1; 8 hay bales | Increases colonists' health by 1 heart |
 | Higher Learning | House at least level 3; 3 books | Unlocks the [School](../../source/buildings/school) |
 
 #### Second Column
@@ -251,7 +251,7 @@ You can only choose one of these!
 | Gilded Hammer | Rocking Roll | Crusher's Hut at least level 3; 64 gravel, 64 sand, 64 clay blocks | Lets [Crushers](../../source/workers/crusher) crush based on a 1-1 ratio instead of 2-1 |
 | Pave the Road | Rocking Roll | Crusher's Hut at least level 1; 32 white concrete | Unlocks the [Concrete Mixer's Hut](../../source/buildings/concretemixer) |
 | Hot Boots | Stringwork | Fletcher's Hut at least level 1; 32 leather, 16 iron ingots | Gives the Miner fire resistance for those annoying lava lakes |
-| Space | Sieving | Mine at least level 3; 16 [racks](../../source/items/rack) | Increases the number of items you can set as a minimum stock in the [Warehouse](../../source/buildings/warehouse), [Restaurant](../../source/buildings/restaurant), and [Bakery](../../source/buildings/bakery) GUIs by 50% |
+| Space | Sieving | Mine at least level 3; 16 [racks](../../source/workers/beekeeper) | Increases the number of items you can set as a minimum stock in the [Warehouse](../../source/workers/teacher), [Restaurant](../../source/buildings/restaurant), and [Bakery](../../source/buildings/bakery) GUIs by 50% |
 | Cheat Sheet | Memory Aid | Sawmill at least level 3; 64 paper | Increases the max amount of recipes stored in each hut by 50% |
 | Redstone Powered | Is this Redstone? | 256 redstone dust | Increases colonists' block breaking speed by 25% |
 | Know the End? | The Flintstones | Bakery at least level 3; 64 chorus fruit | Lets the [Baker](../../source/workers/baker) craft chorus bread and lets the [Stonemason](../../source/workers/stonemason) craft end stone (for more information, go to the Baker and Stonemason pages) |

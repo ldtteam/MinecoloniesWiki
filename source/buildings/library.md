@@ -5,7 +5,7 @@ layout: default
 # Library
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/library.png" alt="Library" />
+    <img src="../../assets/images/workers/composter.png" alt="Library" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
