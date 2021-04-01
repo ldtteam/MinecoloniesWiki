@@ -196,7 +196,7 @@ While Item Tags determine the recipes that workers can be taught, colonists can 
 | <code>"not-research-id"</code>         |              | string  | The Resource Location identifier of a research that automatically causes the recipe to be unlearned. Most commonly used to replace a default recipe. |
 | <code>"min-building-level"</code>      |              | integer  | The minimum building level, inclusive, at which the recipe may be automatically learned, if all other requirements are complete. |
 | <code>"max-building-level"</code>      |              | integer  | The building level where the recipe will be automatically unlearned, if the building meets or exceeds it. |
-| <code>"must-have"</code>               |              | boolean | A special requirement. If a recipe matching the output exists, automatically replaces that recipe and adds all <code>"alternative-output"</code> recipes. |
+| <code>"must-exist"</code>               |              | boolean | A special requirement. If a recipe matching the output exists, automatically adds all <code>"alternative-output"</code> as recipes. |
 | <code>"recipe-id-to-remove"</code>     |              | string | A Resource Location of a different crafter recipe to remove, preventing buildings from learning it. Requires <code>"type":"remove"</code>. All other properties are ignored.|
 
 Crafter Recipes already learned by a building will be immediately removed from that building if the recipe requirements are changed to values the building or colony does not meet. This is the preferred way to remove recipes in a data pack applied to a live world; the <code>"remove"</code> and <code>"recipe-id-to-remove"</code> settings will only prevent new buildings from learning the recipe.
