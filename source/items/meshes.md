@@ -1,8 +1,8 @@
 ---
-title: Sifter Meshes
+title: Meshes
 layout: default
 ---
-# Sifter Meshes
+# Meshes
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/string_mesh.png" alt="String Sifter Mesh"></p>
