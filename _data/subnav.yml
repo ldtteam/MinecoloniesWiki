@@ -51,6 +51,8 @@ subnav:
         url: source/items/floatingcarpet
       - page: Gates
         url: source/items/gates
+      - page: Meshes
+        url: source/items/meshes
       - page: Multi-Piston
         url: source/items/multipiston
       - page: Paper Wall
@@ -73,8 +75,6 @@ subnav:
         url: source/items/scrolls
       - page: Shingles
         url: source/items/shingles
-      - page: Sifter Meshes
-        url: source/items/siftermeshes
       - page: Stash
         url: source/items/stash
       - page: Supply Camp and Supply Ship
