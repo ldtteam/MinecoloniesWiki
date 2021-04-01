@@ -1,8 +1,8 @@
 ---
-title: Data Packs Customization
+title: Data Packs
 layout: default
 ---
-# Data Pack Customization
+# Data Pack
 
 - [Concepts](#concepts)
   - [Terminology](#terminology)
@@ -21,32 +21,32 @@ layout: default
   - [MineColonies Research Effects](#minecolonies-research-effects)
   - [MineColonies Building Unlocks](#minecolonies-building-unlocks)
 
-MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on MineCraft Data Packs, [see the official wiki](<https://minecraft.fandom.com/wiki/Data_Pack>).
+MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the official wiki](<https://Minecraft.fandom.com/wiki/Data_Pack>).
 
-Data Packs exist as part of a world, and they must be [installed](https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack) on each world.
+Data packs exist as part of a world, and they must be [installed](https://Minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack) on each world.
 
 ## Concepts
 
-Data Packs are one or more files in the JSON format, stored within a folder or a zip file. Despite their names, these are text files, and can be opened with text editors. Note that Windows will, by default, hide the extension of known files, and this [should be changed](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01) to avoid accidentally appending .txt to the file name. Avoid using a rich text editor like WordPad or Microsoft Word, which may insert additional formatting into the file. On Windows, simple text editors like Notepad, NotePad++, or WattPad are more useful for making small numbers of these files, and development environments like IntelliJ may be worth installing if creating many JSONs.
+Data packs are one or more files in the JSON format, stored within a folder or a zip file. Despite their names, these are text files, and can be opened with text editors. Note that Windows will, by default, hide the extension of known files, and this [should be changed](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01) to avoid accidentally appending .txt to the file name. Avoid using a rich text editor like WordPad or Microsoft Word, which may insert additional formatting into the file. On Windows, simple text editors like Notepad, NotePad++, or WattPad are more useful for making small numbers of these files, and development environments like IntelliJ may be worth installing if creating many JSONs.
 
-The JSON format is both generous and fastiduous. It does not particularly care if you add extra fields, but it will choke on a missing comma or brace. MineCraft will report the file and location of a JSON error in the error log, but it may also be useful to check files in a JSON validator tool, colloqually known as a [linter](https://jsonlint.com/), as you create them. The JSON format will accept most characters, though the double-quotes (<code>"</code>) and backslash (<code>\</code>) characters must first be 'escaped' by prefixing them with a backslash (such that <code>"</code> becomes <code>\"</code> and <code>\\</code> becomes <code>\\</code>).
+The JSON format is both generous and fastidious. It does not particularly care if you add extra fields, but it will choke on a missing comma or brace. Minecraft will report the file and location of a JSON error in the error log, but it may also be useful to check files in a JSON validator tool, colloqually known as a [linter](https://jsonlint.com/), as you create them. The JSON format will accept most characters, though the double-quotes (<code>"</code>) and backslash (<code>\</code>) characters must first be 'escaped' by prefixing them with a backslash (such that <code>"</code> becomes <code>\"</code> and <code>\\</code> becomes <code>\\</code>).
 
-For most users, looking at other similar JSONs will be the fastest way to get started. For those interested in the specific rules of the format, [see here](<https://www.json.org/json-en.html>).
+For most users, looking at other similar JSONs will be the fastest way to get started. For those interested in the specific rules of the format, [see here](https://www.json.org/json-en.html).
 
-The Data Pack folder or zip file can be any valid file name, and will be used to determine the name of the Data Pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](<https://minecraft.gamepedia.com/Data_Pack#pack.mcmeta>). It is strongly encouraged to provide a distinct name and description for your Data Pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a Data Pack, this should also contain a "data" directory.
+The data pack folder or zip file can be any valid file name, and will be used to determine the name of the data pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](<https://Minecraft.gamepedia.com/Data_Pack#pack.mcmeta>). It is strongly encouraged to provide a distinct name and description for your data pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a data pack, this should also contain a "data" directory.
 
-Each folder within that "data" directory acts as a different **namespace**. Most mods have their own specific namespaces: for Minecolonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (_), dashs (-), and dots (.). Any other characters, including uppercase letters, will cause MineCraft to fail to load the Data Pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
+Each folder within that "data" directory acts as a different **namespace**. Most mods have their own specific namespaces: for MineColonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (_), dashes (-), and dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
 
-<p style="font-size:12pt;text-align:center"><b>Data Packs are very picky. A single misplaced comma or missing quotation mark or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
+<p style="font-size:12pt;text-align:center"><b>Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
 
-Files that exactly match the namespace, directory, and name of a file from vanilla MineCraft, a mod, or another Data Pack will either completely override or merge with that other JSON, depending on type. A Data Pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another Data Pack. It's encouraged to add to the <code>forge</code> and <code>minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
+Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the <code>forge</code> and <code>Minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
 
 ### Terminology
 
-| Resource Location   | The common word for Mojang's [Namespaced IDs](https://minecraft.fandom.com/wiki/Namespaced_ID#Namespace). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of MineCraft to uniquely identify nearly everything. |
-| Namespace | The first half of a Resource Location, before the colon (:). In <code>minecraft:cobblestone</code>, "minecraft" is the namespace. Commonly used namespaces are "minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace, to avoid potential conflicts. In Data Packs, namespaces are derived from the names of the folders at the top level within the "data" directory. |
-| Data Location | The internal location within namespaces that MineCraft and mods examine for specific uses, such as <code>tags/blocks</code> for Block Tags, or <code>crafterrecipes</code> for Crafter Recipes. Only JSONs within a known data location are applied by MineCraft or MineCraft mods, and Data Locations control how these JSONs apply and what format is expected. Relevant Data Locations are described in more detail throughout this document. |
-| Path      | The second half of a Resource Location, after the colon (:). In <code>minecraft:cobblestone</code>, "cobblestone" is the path. In Data Packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/minecraft/tags/items/cobblestone.json</code> will have a namespace of "minecraft", a Data Location of "tag/items", a path of "cobblestone". |
+| Resource Location   | The common word for Mojang's [Namespaced IDs](https://Minecraft.fandom.com/wiki/Namespaced_ID#Namespace). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of Minecraft to uniquely identify nearly everything. |
+| Namespace | The first half of a Resource Location, before the colon (:). In <code>Minecraft:cobblestone</code>, "Minecraft" is the namespace. Commonly used namespaces are "Minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace, to avoid potential conflicts. In data packs, namespaces are derived from the names of the folders at the top level within the "data" directory. |
+| Data Location | The internal location within namespaces that Minecraft and mods examine for specific uses, such as <code>tags/blocks</code> for Block Tags, or <code>crafterrecipes</code> for Crafter Recipes. Only JSONs within a known data location are applied by Minecraft or Minecraft mods, and Data Locations control how these JSONs apply and what format is expected. Relevant Data Locations are described in more detail throughout this document. |
+| Path      | The second half of a Resource Location, after the colon (:). In <code>Minecraft:cobblestone</code>, "cobblestone" is the path. In data packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/Minecraft/tags/items/cobblestone.json</code> will have a namespace of "Minecraft", a Data Location of "tag/items", a path of "cobblestone". |
 | Type      | The supported format for a specific context. Includes Objects, Arrays, Strings, Booleans, Integers, and Doubles. |
 | Object    | In the context of the JSON standard, a group of key-value pairs held together by a pair of curly brackets (<code>{ }</code>). All JSON files must be a JSON Object, and name-value pairs may use an Object as a value. |
 | Array     | In the context of the JSON standard, a group of value types held together by a pair of square brackets(<code>[ ]</code>). JSON Arrays may contain multiple Values, or multiple Objects, but not name-value pairs directly. |
@@ -57,7 +57,7 @@ Files that exactly match the namespace, directory, and name of a file from vanil
 | Name-Value Pair | In the context of the JSON standard, a string key and an matching value, usually in the format <code>"name": value</code>. Name-value pairs that are not the last name-value pair in an Object must be separated by a comma (<code>,</code>). |
 | Name      | In the context of the JSON standard, the left half of a name-value pair. Must be a String. Only one occurance of a name will be read in a single object's top level, usually the first, though sibling in an array or descendants in objects may hold the same Name. |
 | Value     | In the context of the JSON standard, the right half of a name-value pair. May be any type that matches the context. Values within quotation marks (<code>" "</code>) are treated as Strings. |
-| Translation Key | A specially formatted string, which will attempt to be processed through the MineCraft translation file. If the client language file contains a matching Name, substitutes the corresponding Value, otherwise, presents the key to the user directly. |
+| Translation Key | A specially formatted string, which will attempt to be processed through the Minecraft translation file. If the client language file contains a matching Name, substitutes the corresponding Value, otherwise, presents the key to the user directly. |
 
 ### Example Folder Layout
 
@@ -65,9 +65,9 @@ A complex data pack can have many files across many types in many namespaces, as
 
 <img src="../../assets/images/misc/datapack_example.png" class="img-fluid mx-auto" alt="Example Complex Data Pack Layout">
 
-<p style="font-size:12pt;text-align:center"><b>The pack.mcmeta file is mandatory, and MineCraft will not load a data pack without one, or with an improperly formatted one.</b></p>
+<p style="font-size:12pt;text-align:center"><b>The pack.mcmeta file is mandatory, and Minecraft will not load a data pack without one, or with an improperly formatted one.</b></p>
 
-For MineCraft 1.16, a typical pack.mcmeta file looks like : 
+For Minecraft 1.16, a typical pack.mcmeta file looks like this: 
 
 <pre><code>{
   "pack": {
@@ -81,19 +81,19 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
 
 ## Tags
   
- **Tags** are a vanilla MineCraft feature, used to give properties to specific items (if within the <code>tags\items</code> directory) or blocks (if within <code>tags\blocks</code> directory). Item tags also used for Ore Dictionary behaviors. Tags apply a property based on the file name: <code>\data\minecolonies\tags\blocks\concrete.json</code> applies a <code>#minecolonies:concrete</code> tag to all blocks matching the Resource Locations contained within it or within Block Tags matching that Resource Location, and that <code>#minecolonies:concrete</code> block tag determines what materials a [Concrete Mixer](../../workers/concretemixer) can mine.
+ **Tags** are a vanilla Minecraft feature, used to give properties to specific items (if within the <code>tags\items</code> directory) or blocks (if within <code>tags\blocks</code> directory). Item tags also used for Ore Dictionary behaviors. Tags apply a property based on the file name: <code>\data\minecolonies\tags\blocks\concrete.json</code> applies a <code>#minecolonies:concrete</code> tag to all blocks matching the Resource Locations contained within it or within Block Tags matching that Resource Location, and that <code>#minecolonies:concrete</code> block tag determines what materials a [Concrete Mixer](../../workers/concretemixer) can mine.
  
  All Tag JSONs operate in **merge** mod by default. They can instead override, removing any other blocks or items from JSONs matching that name that were loaded first. To use override mode, you must explicitly set <code>"replace" : true</code> in addition to the <code>"values" : </code> name-value pair. This <code>"replace"</code> name is not mandatory for merge mode, but for ease of readability, it's strongly encouraged to use <code>"replace" : false </code> if intentionally adding to existing Tags.
  
- The only other supported name-value pair for a Tag JSON is the <code>"value":</code> Name. This accepts an Array of identifiers or tags as individual Resource Location strings. These string must contain the namespace and an item identifier in resource location format, matching either a single object of that tag's type, or another Tag prefixed by the # symbol. Missing or mistyped targets may cause the file to be ignored, or for MineCraft to throw an error on world load. Use the Advanced Tooltip functionality (F3 + H) in Minecraft to turn on display of Resource Locations in item tooltips for help finding specific strings.
+ The only other supported name-value pair for a Tag JSON is the <code>"value":</code> Name. This accepts an Array of identifiers or tags as individual Resource Location strings. These string must contain the namespace and an item identifier in resource location format, matching either a single object of that tag's type, or another Tag prefixed by the # symbol. Missing or mistyped targets may cause the file to be ignored, or for Minecraft to throw an error on world load. Use the Advanced Tooltip functionality (F3 + H) in Minecraft to turn on display of Resource Locations in item tooltips for help finding specific strings.
  
  A typical tag file to add cobblestone and every type of vanilla anvil to a Tag would thus look like : 
  
  <pre><code>{
     "replace": false,
     "values": [
-      "minecraft:cobblestone",
-      "#minecraft:anvil"
+      "Minecraft:cobblestone",
+      "#Minecraft:anvil"
     ]
 }</code></pre>
 
@@ -101,7 +101,7 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
  
  {% comment %}
  <TODO: The required:false properties act very unpredictably with tags. Need to get a better grasp on this before I can publish it.>
- In 1.16, Forge also supports Optional tags. If a Data Pack lists a block or item that isn't available, such as if it's from a mod that is not loaded, or if the block or item has been disabled. Optional tags are separate JSON objects, containing an id:string and a "required":false value.
+ In 1.16, Forge also supports Optional tags. If a data pack lists a block or item that isn't available, such as if it's from a mod that is not loaded, or if the block or item has been disabled. Optional tags are separate JSON objects, containing an id:string and a "required":false value.
 
  <pre><code>{"id": "waystones:sandy_waystone", "required": false}</code></pre>
  {% endcomment %}
@@ -119,12 +119,12 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
 | <code>minecolonies</code>    | <code>pathblocks</code>             | Colonists walk faster on and preferentially follow roads made of these blocks. |
 | <code>minecolonies</code>    | <code>protectionexception</code>    | Blocks that can be used, or alt-clicked, within a [colony's protection range](../../systems/protection), even by neutral or enemy players. |
 | <code>forge</code>           | <code>dirt</code>                   | Blocks that can be used as farmland by farmers. |
-| <code>minecraft</code>       | <code>beds</code>                   | Blocks that can be used by colonists to rest, if included in a schematic. |
-| <code>minecraft</code>       | <code>doors</code>                  | Used for pathfinding. |
-| <code>minecraft</code>       | <code>leaves</code>                 | Used to determine eligible trees for the Forester. |
-| <code>minecraft</code>       | <code>logs</code>                   | Used to determine eligible trees for the Forester. |
-| <code>minecraft</code>       | <code>shroomlight</code>            | Used to determine eligible trees for the Forester. |
-| <code>minecraft</code>       | <code>wart_blocks</code>            | Used to determine eligible trees for the Forester. |
+| <code>Minecraft</code>       | <code>beds</code>                   | Blocks that can be used by colonists to rest, if included in a schematic. |
+| <code>Minecraft</code>       | <code>doors</code>                  | Used for pathfinding. |
+| <code>Minecraft</code>       | <code>leaves</code>                 | Used to determine eligible trees for the Forester. |
+| <code>Minecraft</code>       | <code>logs</code>                   | Used to determine eligible trees for the Forester. |
+| <code>Minecraft</code>       | <code>shroomlight</code>            | Used to determine eligible trees for the Forester. |
+| <code>Minecraft</code>       | <code>wart_blocks</code>            | Used to determine eligible trees for the Forester. |
  
 ### Item Tags
 
@@ -146,17 +146,17 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
 | <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and if processable in a furnace, can be processed in the smeltery. |
 | <code>forge</code>          | <code>sand</code>                      | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower. |
 | <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a farmer. |
-| <code>minecraft</code>       | <code>flowers</code>                   | Used by the Beekeeper to breed bees. |
-| <code>minecraft</code>       | <code>fishes</code>                    | Used by the Fisherman to render fish on bandolier. |
-| <code>minecraft</code>       | <code>leaves</code>                    | Items that Builders will place 'for free', without having in their inventory. |
-| <code>minecraft</code>       | <code>logs</code>                      | Recipes consisting of 75% or more this tag and #minecraft:planks can be taught to the Sawmill. |
-| <code>minecraft</code>       | <code>planks</code>                    | Recipes consisting of 75% or more this tag and #minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner. |
-| <code>minecraft</code>       | <code>saplings</code>                  | Used by the Forester to grow trees.
-| <code>minecraft</code>       | <code>slabs</code>                     | A stack is stored by the Miner. |
-| <code>minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 [Florist](../../workers/florist), if they have a valid block form, and are in #minecolonies:florist_flowers. |
-| <code>minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
+| <code>Minecraft</code>       | <code>flowers</code>                   | Used by the Beekeeper to breed bees. |
+| <code>Minecraft</code>       | <code>fishes</code>                    | Used by the Fisherman to render fish on bandolier. |
+| <code>Minecraft</code>       | <code>leaves</code>                    | Items that Builders will place 'for free', without having in their inventory. |
+| <code>Minecraft</code>       | <code>logs</code>                      | Recipes consisting of 75% or more this tag and #Minecraft:planks can be taught to the Sawmill. |
+| <code>Minecraft</code>       | <code>planks</code>                    | Recipes consisting of 75% or more this tag and #Minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner. |
+| <code>Minecraft</code>       | <code>saplings</code>                  | Used by the Forester to grow trees.
+| <code>Minecraft</code>       | <code>slabs</code>                     | A stack is stored by the Miner. |
+| <code>Minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 [Florist](../../workers/florist), if they have a valid block form, and are in #minecolonies:florist_flowers. |
+| <code>Minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
 
-<p style="font-size:12pt;text-align:center"><b>Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://minecraft.fandom.com/wiki/Tag#List_of_tags) for MineCraft behaviors.</b></p>
+<p style="font-size:12pt;text-align:center"><b>Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://Minecraft.fandom.com/wiki/Tag#List_of_tags) for Minecraft behaviors.</b></p>
 
 ### Crafter Item Tags
 
@@ -184,7 +184,7 @@ While Item Tags determine the recipes that workers can be taught, colonists can 
 |                                        | <code>"count"</code>      | integer | The number of that item consumed by default. If not present, defaults to 1. |
 | <code>"result"</code>                  |              | string  | The Resource Location identifier of the item the recipe produces. |
 | <code>"count"</code>                   |              | integer | The count of <code>"result"</code> items that should be returned. If not present, defaults to 1. |
-| <code>"loot-table"</code>              |              | string  | The Resource Location of a [loot table](https://minecraft.fandom.com/wiki/Loot_table), used for outputs that require some randomization. |
+| <code>"loot-table"</code>              |              | string  | The Resource Location of a [loot table](https://Minecraft.fandom.com/wiki/Loot_table), used for outputs that require some randomization. |
 | <code>"additional-output"</code>       |              | Object | The <code>"item"</code> and <code>"count"</code> of a single additional output item.|
 |                                        | <code>"item"</code>       | string  | The Resource Location identifier of an item consumed by the recipe. |
 |                                        | <code>"count"</code>      | integer | The number of that item consumed by default. If not present, defaults to 1. |
@@ -205,15 +205,15 @@ For example crafter recipes, and their canonical names, see GitHub [here](https:
 
 ## Player Recipes
 
-**Player Recipes** can be added by data packs using vanilla features, by adding to the <code>recipes</code> Data Location. See the [Official Wiki](https://minecraft.fandom.com/wiki/Recipe) for details, and the [GitHub for MineColonies default recipes](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/recipes).
+**Player Recipes** can be added by data packs using vanilla features, by adding to the <code>recipes</code> Data Location. See the [Official Wiki](https://Minecraft.fandom.com/wiki/Recipe) for details, and the [GitHub for MineColonies default recipes](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/recipes).
 
 ## Loot Tables
 
-**Loot Tables** control a variety of item drop behaviors, and can be used to add randomized chance to Crafter Recipes. They are loaded from <code>loot_tables</code>. See the [Official Wiki](https://minecraft.fandom.com/wiki/Loot_table) for technical details, and the [GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/loot_tables) for [some](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/loot_tables) MineColonies default loot tables.
+**Loot Tables** control a variety of item drop behaviors, and can be used to add randomized chance to Crafter Recipes. They are loaded from <code>loot_tables</code>. See the [Official Wiki](https://Minecraft.fandom.com/wiki/Loot_table) for technical details, and the [GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/loot_tables) for [some](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/loot_tables) MineColonies default loot tables.
 
 ## Research Customization
 
-The Research System can be lightly tweaked or heavily modified through the use of Data Packs in MineColonies versions 0.14.x. For the default research data and example files, see [the GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/researches). Researches consist of three components: the branch that contains the research, the research itself, and the research effect.
+The Research System can be lightly tweaked or heavily modified through the use of data packs in MineColonies versions 0.14.0 or higher. For the default research data and example files, see [the GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/researches). Researches consist of three components: the branch that contains the research, the research itself, and the research effect.
 
 ### Branches
 
@@ -227,7 +227,7 @@ Branches are the groups of research, such as "Civilian" or "Combat". Branch file
 | <code>"base-time"</code>     | double     | A numeric multiplier applied to research time for all researches on the branch. Larger numbers take more time; lower numbers take less time. Very low values may make time estimates in-accurate. Defaults to 1.0; numbers below 0.0 or above 10 may behave poorly. |
 | <code>"sortOrder"</code>     | integer    | Controls the vertical position of the branch on the University GUI. Lower numbers are placed first on the list, while higher numbers are placed closer to the bottom of the list. Optional. |
 | <code>"hidden"</code>        | boolean    | If true, and if all primary researches on the branch are hidden, prevents access to the branch from the University window. If <code>"branch-type"</code> is set to <code>"unlockables"</code>, also prevents display of the branch; otherwise, provides a tooltip describing how unlock the branch's primary researches. Optional, defaults to false. |
-| <code>"remove"</code>        | boolean or string or Array of Strings  | Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world. If a string, removes all research with a branch of the Resource Location in that string. If an array of strings, removes all researches for all researches with branches matching any of the Resource Locations. If boolean and true, removes all Researches with branches matching the Resource Location of the JSON itself; this form is discouraged for cases where other Data Packs may apply, as it may be conflicted by those other data packs. |
+| <code>"remove"</code>        | boolean or string or Array of Strings  | Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world. If a string, removes all research with a branch of the Resource Location in that string. If an array of strings, removes all researches for all researches with branches matching any of the Resource Locations. If boolean and true, removes all Researches with branches matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs. |
 
 ### Research
 
@@ -257,7 +257,7 @@ Researches are the individual components of a branch. Branches must have at leas
 |                                | <code>"research"</code> | string  | A specific Research by Resource Location that must be completed to unlock this research. Unlike, <code>parentResearch</code>, can be on another branch, or of any research level. |
 | <code>"effects"</code>         |       | Array Of Objects | Contains all of the effects of the research. Can be empty, either for research with no effects or for research that only unlocks crafterrecipes, or contain one or more Objects. |
 |                   | <code>"string": integer</code>        | Name-Value Pair | The Research Effect Identifier as a Resource Location, followed by the level of the effect as an integer. If the level exceeds the maximum level of the effect, defaults to the maximum level. If no matching effect is found, applies a default strength of 6, enough to unlock a building completely. |
-| <code>"remove"</code>        | boolean or string or Array of Strings  | Removes a research, regardless of the source. May cause data loss if applied to an existing world. If a string, removes any research matching the Resource Location in that string. If an array of strings, removes all researches matching any of the Resource Locations. If boolean and true, removes Research matching the Resource Location of the JSON itself; this form is discouraged for cases where other Data Packs may apply, as it may be conflicted by those other data packs. |
+| <code>"remove"</code>        | boolean or string or Array of Strings  | Removes a research, regardless of the source. May cause data loss if applied to an existing world. If a string, removes any research matching the Resource Location in that string. If an array of strings, removes all researches matching any of the Resource Locations. If boolean and true, removes Research matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs. |
 {% comment %}
 | <code>"icon"</code>            |       | string     | An icon displayed over completed research. Must be the Resource Location of an item, or a valid texture. Optional. |
 {% endcomment %}
