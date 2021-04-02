@@ -22,7 +22,7 @@ The build tool is *THE* most important tool in the entire mod! With it, you can 
 
 ### Step One: Crafting
 
-The first step is to craft the build tool. You can also get a build tool in the [Supply Camp or Ship](../../source/items/supplycampandship) in the same rack as the [Town Hall](../../source/workers/chickenfarmer).
+The first step is to craft the build tool. You can also get a build tool in the [Supply Camp or Ship](../../source/items/supplycampandship) in the same rack as the [Town Hall](../../source/buildings/townhall).
 <br>
 
 ### Step Two: Designating a Building Location
@@ -71,4 +71,4 @@ To place a worker hut or building from the mod, you'll first need to craft the s
 
 Now that you have the structure ready to place, click on the green check mark and voilá: construction tape will appear and the building is planned! Decorations and custom schematics will automatically create a build request, but you will need to create the build request manually for hut blocks. To create the build request, go into the hut block's GUI and click the Build Options button, then Build Building. Your Builders will then pick up a build request and start building the building.
 
-You can check in the [Town Hall](../../source/workers/chickenfarmer) GUI under the Work Orders (! symbol) tab to see the queue of all build requests you have for the Builders in your colony.
+You can check in the [Town Hall](../../source/buildings/townhall) GUI under the Work Orders (! symbol) tab to see the queue of all build requests you have for the Builders in your colony.

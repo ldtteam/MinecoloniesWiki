@@ -4,7 +4,7 @@ layout: recipes
 ---
 # Recipes
 
-Listed on this page are the current crafting recipes available in NineColonies/Structurize. This page will be updated as any craftables are added and made public.
+Listed on this page are the current crafting recipes available in MineColonies/Structurize. This page will be updated as any craftables are added and made public.
 
 **Note:** The [build tool](../../source/items/buildtool) used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
 
@@ -35,13 +35,13 @@ None of the [scrolls](../../source/items/scrolls) are on here as they cannot be 
 | [Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>placeholderblock</recipe> |
 | [Fluid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Bucket | [Sawmill](../../source/buildings/sawmill) | <recipe>fluidplaceholderblock</recipe> |
 | [Solid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>solidplaceholderblock</recipe> |
-| [Postbox](../../source/workers/assistantcook)         | **Any** Planks + Build Tool + 3 Chests | [Sawmill](../../source/buildings/sawmill) | <recipe>postbox</recipe>        |
+| [Postbox](../../source/items/postbox)         | **Any** Planks + Build Tool + 3 Chests | [Sawmill](../../source/buildings/sawmill) | <recipe>postbox</recipe>        |
 | [Rallying Banner](../../source/items/rallyingbanner) | Iron Swords + [Guard Towers](../../source/buildings/guardtower) + Yellow Banner + Bows | N/A | <recipe>rallyingbanner</recipe> |
-| [Rack](../../source/workers/beekeeper)               | **Any** Planks + Build Tool + Iron Nuggets | [Sawmill](../../source/buildings/sawmill) | <recipe>rack</recipe>           |
+| [Rack](../../source/items/rack)               | **Any** Planks + Build Tool + Iron Nuggets | [Sawmill](../../source/buildings/sawmill) | <recipe>rack</recipe>           |
 | [Resource Scroll](../../source/items/resourcescroll) | Stick + Build Tool + Leather        | N/A | <recipe>resourcescroll</recipe> |
 | [Scan Tool](../../source/items/scantool)      | Iron Ingot + Stick                         | N/A | <recipe>scantool</recipe>       |
-| [Shingles](../../source/items/compostbarrel)       | Brick + Stick + **Matching** Planks        | [Sawmill](../../source/buildings/sawmill) | <recipe>shingleclay</recipe>    |
-| [Shingle Slabs](../../source/items/compostbarrel)  | Brick + Stick                              | [Sawmill](../../source/buildings/sawmill) | <recipe>shingleslab</recipe>    |
+| [Shingles](../../source/items/shingles)       | Brick + Stick + **Matching** Planks        | [Sawmill](../../source/buildings/sawmill) | <recipe>shingleclay</recipe>    |
+| [Shingle Slabs](../../source/items/shingles)  | Brick + Stick                              | [Sawmill](../../source/buildings/sawmill) | <recipe>shingleslab</recipe>    |
 | [Stash](../../source/items/stash)             | **Any** Planks + Build Tool + Chests       | [Sawmill](../../source/buildings/sawmill) | <recipe>stash</recipe>          |
 | [Supply Camp](../items/supplycampandship)     | Chests                                     | N/A | <recipe>supplycamp</recipe>     |
 | [Supply Ship](../items/supplycampandship)     | **Any** Boats                              | N/A | <recipe>supplyship</recipe>     |
@@ -52,7 +52,7 @@ None of the [scrolls](../../source/items/scrolls) are on here as they cannot be 
 ## Hut Blocks
 
 **Notes**  
-The [Town Hall](../../source/workers/chickenfarmer) is listed here, but you can only craft it after placing the [Supply Ship/Camp](../../source/items/supplycampandship).
+The [Town Hall](../../source/buildings/townhall) is listed here, but you can only craft it after placing the [Supply Ship/Camp](../../source/items/supplycampandship).
 The [Barracks Tower](../../source/buildings/barrackstower) is not listed here because it cannot be crafted. You must craft and place the [Barracks](../../source/buildings/barracks) instead.
 
 | Name                                               | Ingredients                                          | Recipe                         |
@@ -80,7 +80,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Guard Tower](../../source/buildings/guardtower)   | **Any** Planks + Build Tool + Bow                    | <recipe>guardtower</recipe>    |
 | [Hospital](../../source/buildings/hospital)        | **Any** Planks + Build Tool + Carrot                 | <recipe>hospital</recipe>      |
 | [House](../../source/buildings/house)              | **Any** Planks + Build Tool + Torch                  | <recipe>house</recipe>         |
-| [Library](../../source/workers/composter)          | **Any** Planks + Build Tool + Bookshelf              | <recipe>library</recipe>       |
+| [Library](../../source/buildings/library)          | **Any** Planks + Build Tool + Bookshelf              | <recipe>library</recipe>       |
 | [Forester's Hut](../../source/buildings/forester)  | **Any** Planks + Build Tool + Wooden Axe             | <recipe>forester</recipe>    |
 | [Mechanic's Hut](../../source/buildings/mechanic)  | **Any** Planks + Build Tool + Redstone Block         | <recipe>mechanic</recipe>      |
 | [Mine](../../source/buildings/mine)                | **Any** Planks + Build Tool + Wooden Pickaxe         | <recipe>mine</recipe>          |
@@ -97,7 +97,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 | [Stone Smeltery](../../source/buildings/stonesmeltery) | **Any** Planks + Build Tool + 1 Furnace + 2 Stone Bricks | <recipe>stonesmeltery</recipe> |
 | [Swineherd's Hut](../../source/buildings/swineherd) | **Any** Planks + Build Tool + Raw Porkchop          | <recipe>swineherd</recipe>   |
 | [Tavern](../../source/buildings/tavern)            | **Any** Planks + Build Tool + Decorative Barrel      | <recipe>tavern</recipe>        |
-| [Town Hall](../../source/workers/chickenfarmer)       | **Any** Planks + 2 Build Tools                       | <recipe>townhall</recipe>      |
+| [Town Hall](../../source/buildings/townhall)       | **Any** Planks + 2 Build Tools                       | <recipe>townhall</recipe>      |
 | [University](../../source/buildings/university)    | **Any** Planks + Build Tool + Books                  | <recipe>university</recipe>    |
-| [Warehouse](../../source/workers/teacher)      | **Any** Planks + Build Tool + Chest                  | <recipe>warehouse</recipe>     |
+| [Warehouse](../../source/buildings/warehouse)      | **Any** Planks + Build Tool + Chest                  | <recipe>warehouse</recipe>     |
 {: .table-responsive }

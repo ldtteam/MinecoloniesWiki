@@ -21,7 +21,7 @@ layout: default
   </div>
 </div>
 
-The Assistant Cook is an important part of your colony's food production. The Assistant Cook will craft any food-related recipes you have taught the Restaurant if the [Cook](../../source/items/stash) requests food. They will also craft any craftable foods you requested from the [postbox](../../source/workers/assistantcook). 
+The Assistant Cook is an important part of your colony's food production. The Assistant Cook will craft any food-related recipes you have taught the Restaurant if the [Cook](../../source/workers/cook) requests food. They will also craft any craftable foods you requested from the [postbox](../../source/items/postbox). 
 
 The higher an Assistant Cook's Adaptability skill, the faster they'll craft.
 

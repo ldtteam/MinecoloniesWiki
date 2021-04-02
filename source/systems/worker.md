@@ -61,7 +61,7 @@ There is also a system in place for the type of bows and fishing rods workers ca
 
 ## Guard Armor Levels
 
-There is also a system in place for the type of armor [Guards](../../source/buildings/blacksmith) can use. This depends on the level of their Tower and the worker level of the Guard.
+There is also a system in place for the type of armor [Guards](../../source/workers/guard) can use. This depends on the level of their Tower and the worker level of the Guard.
 
 | Type of Armor | Guard Level | Tower Level |
 | ------------- | ----------- | ----------- |

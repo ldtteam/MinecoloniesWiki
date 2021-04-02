@@ -22,6 +22,6 @@ layout: default
   </div>
 </div>
 
-The Knight in Training will train at the Combat Academy to become a [Guard](../../source/buildings/blacksmith). They will hit a practice dummy with a sword to increase their level without a risk of dying to mobs.
+The Knight in Training will train at the Combat Academy to become a [Guard](../../source/workers/guard). They will hit a practice dummy with a sword to increase their level without a risk of dying to mobs.
 
 Knights in Training are not actual Guards even though they are dressed in the usual Guard clothes. They will not help defend your colony, only Guards will do that. 

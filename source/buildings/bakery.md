@@ -19,7 +19,7 @@ layout: default
     <recipe>baker</recipe>
 </div>
 
-The Baker will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the [Cook](../../source/items/stash), the [postbox](../../source/workers/assistantcook), or as a minimum stock in the [Warehouse](../../source/workers/teacher).
+The Baker will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the [Cook](../../source/workers/cook), the [postbox](../../source/items/postbox), or as a minimum stock in the [Warehouse](../../source/buildings/warehouse).
 
 The Baker can also craft some non-vanilla breads:
 
@@ -61,7 +61,7 @@ The Baker can also craft some non-vanilla breads:
       </div>
       <div class="col-sm-12 col-md">
           <ul>
-          <li><strong> Fuel: </strong> Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/forester"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</li>
+          <li><strong> Fuel: </strong> Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</li>
           </ul>
         </div>
       </div>

@@ -43,7 +43,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc home</code><br>Default Permission Level: All</td>
-      <td class="d-block d-lg-table-cell">Teleports a colony owner back to the <a href="../../source/workers/chickenfarmer">Town Hall</a> of their colony.</td>
+      <td class="d-block d-lg-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.</td>
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc raid-All &lt;now | tonight&gt; &lt;amazon_raid | barbarian_raid | egyptian_raid | norsemen_raid | pirate_raid&gt;</code><br>Default Permission Level: OP</td>
@@ -82,7 +82,7 @@ These are the in-game commands currently available. Most require that a user hav
   <tbody>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony addOfficer &lt;colony id&gt; &lt;online player's username&gt;</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Adds an officer to a colony. For more information on officers, visit the <a href="../../source/workers/chickenfarmer">Town Hall</a> page and look at the Permissions section of the GUI.<br>Example:<br><code>/mc colony addofficer 1 Steve</code></td>
+      <td class="d-block d-md-table-cell">Adds an officer to a colony. For more information on officers, visit the <a href="../../source/buildings/townhall">Town Hall</a> page and look at the Permissions section of the GUI.<br>Example:<br><code>/mc colony addofficer 1 Steve</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony canSpawnRaiders &lt;colony id&gt; &lt;canSpawn&gt;</code><br>Default permission level: OP</td>
@@ -94,11 +94,11 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt; [delete Buildings]</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Deletes a colony and all NineColonies buildings (as long as the hut block is still placed).<br>Examples:<br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
+      <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut block is still placed).<br>Examples:<br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony home</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Teleports a colony owner back to the <a href="../../source/workers/chickenfarmer">Town Hall</a> of their colony.<br>Example:<br><code>/mc colony home</code></td>
+      <td class="d-block d-md-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.<br>Example:<br><code>/mc colony home</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br>Default permission level: All</td>

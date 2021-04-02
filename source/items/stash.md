@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The stash lets a player deposit items that they want to be picked up by a [Courier](../../source/workers/forester) to take to the [Warehouse](../../source/workers/teacher).
+The stash lets a player deposit items that they want to be picked up by a [Courier](../../source/workers/courier) to take to the [Warehouse](../../source/buildings/warehouse).
 
 The stash can be crafted at the [Sawmill](../../source/buildings/sawmill) or by the player.
 <br>

@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../buildings/guardtower">Blacksmith</a></p>
+        <p><a href="../workers/blacksmith">Blacksmith</a></p>
         </div>
     </div>
     <hr />

@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../buildings/blacksmith">Guard</a></p>
+        <p><a href="../workers/guard">Guard</a></p>
         </div>
     </div>
     <hr />
@@ -22,7 +22,7 @@ layout: default
 ### Note: The Barracks cannot be built until you have a level 3 [Guard Tower](../../source/buildings/guardtower) (or three level 1 Guard Towers, or another equivalent) and have finished the research in the [University](../../source/buildings/university). 
 <br> 
 
-The Barracks is the ultimate protection for your colony. The Barracks will hold 4 [Barracks Towers](../buildings/barrackstower) within its structure. The Barracks Towers (unlike the normal [Guard Towers](../../source/buildings/guardtower)) will employ *and* house 1 [Guard](../../source/buildings/blacksmith) for every level built! Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen. Each Barracks Tower can house and employ 5 Guards for a total of 20 Guards for your colony.
+The Barracks is the ultimate protection for your colony. The Barracks will hold 4 [Barracks Towers](../buildings/barrackstower) within its structure. The Barracks Towers (unlike the normal [Guard Towers](../../source/buildings/guardtower)) will employ *and* house 1 [Guard](../../source/workers/guard) for every level built! Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen. Each Barracks Tower can house and employ 5 Guards for a total of 20 Guards for your colony.
 
 | Barracks Level | Max # of Barracks Towers | Max Level of Barracks Towers |
 | :----: | :----: | :----: |
@@ -34,7 +34,7 @@ The Barracks is the ultimate protection for your colony. The Barracks will hold 
 
 <br>
 
-<strong>Note:</strong> The Barracks has slightly higher border expansion than other buildings. See the [border system](../../source/buildings/stonesmeltery) page for more information.
+<strong>Note:</strong> The Barracks has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
 
 <br>
 
@@ -56,7 +56,7 @@ When accessing the Barracks's hut block by right-clicking on it, you will see a 
       <br>
   <img src="../../assets/images/gui/hiringspies.png" class="img-fluid mx-auto" alt="Hiring Spies">
       <br>
-      <li><strong>Inventory:</strong> Here you can access the Barracks' storage, where the Guards staying in the Barracks take and deposit materials. They will also use any <a href="../../source/workers/beekeeper">racks</a> or chests in the Barracks, so be sure to check those as well!</li>
+      <li><strong>Inventory:</strong> Here you can access the Barracks' storage, where the Guards staying in the Barracks take and deposit materials. They will also use any <a href="../../source/items/rack">racks</a> or chests in the Barracks, so be sure to check those as well!</li>
     </ul>
   </div>
 </div>  

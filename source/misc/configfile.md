@@ -7,7 +7,7 @@ layout: default
 
 # Configuration File
 
-The configuration file, commonly called the *config file,* is a way to change NineColonies settings. It is found within your Minecraft files:
+The configuration file, commonly called the *config file,* is a way to change MineColonies settings. It is found within your Minecraft files:
 
 **1.15 File Path:** <code>(Your Minecraft folder)/config/minecolonies-common.toml</code>
 
@@ -42,7 +42,7 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Amount of time before a new citizen spawns - change this to change the amount of time before a new citizen spawns, pretty simple. This only applies when a colony is under the initial citizen number, however.
 - Max citizens in one colony - the max limit of citizens that can exist in each colony. If you're below this limit and you can't get more citizens, you probably need to complete the [research](../../source/systems/research) in the [university](../../source/buildings/university).
 - Should the [Builder](../../source/workers/builder) and [Miner](../../source/workers/miner) build without resources? - **DO NOT ENABLE THIS!!** This is a debug tool that, ironically, is very buggy. It *will* break your Builder!
-- Should there be a max of one [Warehouse](../../source/workers/teacher) per colony? - by default, you can only have one Warehouse in each colony. Disabling this lets you have an infinite number of Warehouses in each colony. (Note: Each [Courier](../../source/workers/forester) can only see the items in one Warehouse.)
+- Should there be a max of one [Warehouse](../../source/buildings/warehouse) per colony? - by default, you can only have one Warehouse in each colony. Disabling this lets you have an infinite number of Warehouses in each colony. (Note: Each [Courier](../../source/workers/courier) can only see the items in one Warehouse.)
 - Delay after each block placement - the delay for placing blocks. Applies to Builders, Miners, and other colonists that place blocks.
 - Delay modifier to mine a block - the delay for breaking blocks. Applies to Builders, Miners, and other colonists that mine blocks.
 - Should development features be enabled? - enables some features geared toward developers.
@@ -53,13 +53,13 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Should players be allowed to change citizen names? - sets if players can rename citizens with name tags.
 - Should special holiday content be displayed? - by default, citizens get some special looks around holidays. Turn off this option to disable that.
 - AI update rate - basically how fast citizens think. Increasing it decreases how fast they "think", but improves performance. If you increase it too much, your citizens will take hours to do anything!
-- Quantity of dirt per compost filling - how many dirt blocks the [Composter](../../source/buildings/combatacademy) can get from filling one [compost barrel](../../source/items/compostbarrel).
+- Quantity of dirt per compost filling - how many dirt blocks the [Composter](../../source/workers/composter) can get from filling one [compost barrel](../../source/items/compostbarrel).
 - Lucky block chance - The Miner has a chance to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). Change this to change their chance. This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".)
 - Automatically fix orphaned chunks - enable this to automatically unclaim chunks that are claimed, but don't have a colony any more.
 - Should the Builder be slower when working underground? - by default, the Builder works slower when building underground. Disable this to make them work at the same rate both above and belowground. This can be useful for underground colonies.
 - Chance to get a sponge from the Fisher - by default, the [Fisher](../../source/workers/fisher) has a small chance to get sponges when fishing. You can tweak this chance here.
 - Chance to get a prismarine shard or crystal drop from the Fisher - same as above, but prismarine shards/crystals instead of sponges.
-- The minimum level a Town Hall has to be to allow teleportation to allied colonies - by default, you can teleport to allied colonies from your [Town Hall](../../source/workers/chickenfarmer). However, it requires a certain Town Hall level or higher (default 3). Here, you can change level.
+- The minimum level a Town Hall has to be to allow teleportation to allied colonies - by default, you can teleport to allied colonies from your [Town Hall](../../source/buildings/townhall). However, it requires a certain Town Hall level or higher (default 3). Here, you can change level.
 - Suggest build tool usage - by default, when trying to place a hut without the [build tool](../../source/items/buildtool), a window will pop up suggesting you use it. Disabling this option will disable that window.
 - Food consumption modifier - the multiplier for when citizens eat food.
 - How common diseases are - changes the chance for citizens to get sick.
@@ -76,11 +76,11 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Should players be allowed to use the /mc home command? - sets whether players can use the /mc home command. However, even with this enabled, only owners of the colony can use this command, as you can be an officer in multiple colonies.
 - Should players be allowed to use the /mc colony info command? - sets whether players can use the /mc colony info command.
 - Should players be allowed to use the /mc citizens kill command? - sets whether players can use the /mc citizens kill command.
-- Amount of attempts to find a safe random teleport - when using /mc rtp, NineColonies will try several locations to see if they're safe and not within a colony before teleporting you. This sets the number of locations it will try.
+- Amount of attempts to find a safe random teleport - when using /mc rtp, MineColonies will try several locations to see if they're safe and not within a colony before teleporting you. This sets the number of locations it will try.
 
 #### Claims Configuration
 
-- Maximum claim range for a colony - the max number of chunks that can be within a colony's [border](../../source/buildings/stonesmeltery).
+- Maximum claim range for a colony - the max number of chunks that can be within a colony's [border](../../source/systems/border).
 - Minimum distance between colonies - the minimum distance between two Town Halls, measured in chunks.
 - Initial claim size for colonies - the number of chunks (in radius) claimed when starting a new colony.
 - Should the min/max distance from spawn also affect colony placement? - sets whether the below two options have any effect.

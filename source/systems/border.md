@@ -14,7 +14,7 @@ Deconstructing a building *will* remove the chunks it claimed.
 
 ### Building Claim Areas:
 
-#### [Town Hall](../../source/workers/chickenfarmer)
+#### [Town Hall](../../source/buildings/townhall)
 
 | Level | Additional Chunks |
 | ----  | ----------------- |
