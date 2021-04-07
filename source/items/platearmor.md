@@ -24,4 +24,4 @@ Plate Armor is a type of armor added by MineColonies. It is moderately durable a
 | Legs       | 6 iron ingot, 1 leather, 4 coal |
 | Boots      | 3 iron ingot, 1 leather, 1 coal |
 
-Like many other recipes, the Blacksmith may improve the recipe efficiency over time, reducing these costs. They will always cost at least one iron, one leather, and one coal.
+Like most other recipes, the Blacksmith may improve the recipe efficiency over time, reducing these costs. They will always cost at least one iron, one leather, and one coal.

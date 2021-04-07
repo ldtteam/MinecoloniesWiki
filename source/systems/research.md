@@ -38,6 +38,7 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
   - [Combat](#combat)
   - [Civilian](#civilian)
   - [Technology](#technology)
+  - [Unlockables](#unlockables)
 
 ### Combat
 <br>
@@ -325,28 +326,28 @@ You can only have one sixth column research unlocked at a time!
 <img src="../../assets/images/gui/university/unlockables.png" class="img-fluid mx-auto" alt="University Unlockables GUI Page">
 <br>
 
-Unlockables are a special research tree, consisting of research that other colonists discover as the colony grows and progresses. This branch will only display once at least one research is available, and research on this branch will complete instantly.
+Unlockables are a special research tree, consisting of researches that other colonists discover as the colony grows and progresses. This branch will only display once at least one research is available, and research on this branch will complete instantly.
 
 #### First Column
 
 | Name         | Requirements             | Effects |
 | ------------ | ------------------------ | ------- |
-| String Mesh  | Sifter at least level 1 | Fletcher learns the String Mesh recipe |
+| String Mesh  | Sifter's Hut at least level 1 | [Fletcher](../../source/workers/fletcher) learns the String Mesh recipe |
 
 #### Second Column
 
 | Name         | Requirements             | Effects |
 | ------------ | ------------------------ | ------- |
-| Flint Mesh   | Sifter at least level 3 | Stonemason learns the Flint Mesh recipe |
+| Flint Mesh   | Sifter's Hut at least level 3 | [Stonemason](../../source/workers/stonemason) learns the Flint Mesh recipe |
 
 #### Third Column
 
 | Name         | Requirements             | Effects |
 | ------------ | ------------------------ | ------- |
-| Iron Mesh    | Sifter at least level 4 | Blacksmith learns the Iron Mesh recipe |
+| Iron Mesh    | Sifter's Hut at least level 4 | [Blacksmith](../../source/workers/blacksmith) learns the Iron Mesh recipe |
 
 #### Fourth Column
 
 | Name         | Requirements             | Effects |
 | ------------ | ------------------------ | ------- |
-| Diamond Mesh | Sifter at least level 5 | Mechanic learns the Diamond Mesh recipe |
+| Diamond Mesh | Sifter's Hut at least level 5 | [Mechanic](../../source/workers/mechanic) learns the Diamond Mesh recipe |
