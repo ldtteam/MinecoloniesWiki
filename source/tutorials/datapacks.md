@@ -39,14 +39,14 @@ Each folder within that "data" directory acts as a different **namespace**. Most
 
 <p style="font-size:12pt;text-align:center"><b>Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
 
-Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the <code>forge</code> and <code>Minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
+Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the <code>forge</code> and <code>minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
 
 ### Terminology
 
 | Resource Location   | The common word for Mojang's [Namespaced IDs](https://Minecraft.fandom.com/wiki/Namespaced_ID#Namespace). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of Minecraft to uniquely identify nearly everything. |
-| Namespace | The first half of a Resource Location, before the colon (:). In <code>Minecraft:cobblestone</code>, "Minecraft" is the namespace. Commonly used namespaces are "Minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace, to avoid potential conflicts. In data packs, namespaces are derived from the names of the folders at the top level within the "data" directory. |
+| Namespace | The first half of a Resource Location, before the colon (:). In <code>minecraft:cobblestone</code>, "minecraft" is the namespace. Commonly used namespaces are "minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace, to avoid potential conflicts. In data packs, namespaces are derived from the names of the folders at the top level within the "data" directory. |
 | Data Location | The internal location within namespaces that Minecraft and mods examine for specific uses, such as <code>tags/blocks</code> for Block Tags, or <code>crafterrecipes</code> for Crafter Recipes. Only JSONs within a known data location are applied by Minecraft or Minecraft mods, and Data Locations control how these JSONs apply and what format is expected. Relevant Data Locations are described in more detail throughout this document. |
-| Path      | The second half of a Resource Location, after the colon (:). In <code>Minecraft:cobblestone</code>, "cobblestone" is the path. In data packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/Minecraft/tags/items/cobblestone.json</code> will have a namespace of "Minecraft", a Data Location of "tag/items", a path of "cobblestone". |
+| Path      | The second half of a Resource Location, after the colon (:). In <code>minecraft:cobblestone</code>, "cobblestone" is the path. In data packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/minecraft/tags/items/cobblestone.json</code> will have a namespace of "minecraft", a Data Location of "tag/items", a path of "cobblestone". |
 | Type      | The supported format for a specific context. Includes Objects, Arrays, Strings, Booleans, Integers, and Doubles. |
 | Object    | In the context of the JSON standard, a group of key-value pairs held together by a pair of curly brackets (<code>{ }</code>). All JSON files must be a JSON Object, and name-value pairs may use an Object as a value. |
 | Array     | In the context of the JSON standard, a group of value types held together by a pair of square brackets(<code>[ ]</code>). JSON Arrays may contain multiple Values, or multiple Objects, but not name-value pairs directly. |
@@ -92,8 +92,8 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
  <pre><code>{
     "replace": false,
     "values": [
-      "Minecraft:cobblestone",
-      "#Minecraft:anvil"
+      "minecraft:cobblestone",
+      "#minecraft:anvil"
     ]
 }</code></pre>
 
@@ -119,12 +119,12 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
 | <code>minecolonies</code>    | <code>pathblocks</code>             | Colonists walk faster on and preferentially follow roads made of these blocks. |
 | <code>minecolonies</code>    | <code>protectionexception</code>    | Blocks that can be used, or alt-clicked, within a [colony's protection range](../../systems/protection), even by neutral or enemy players. |
 | <code>forge</code>           | <code>dirt</code>                   | Blocks that can be used as farmland by farmers. |
-| <code>Minecraft</code>       | <code>beds</code>                   | Blocks that can be used by colonists to rest, if included in a schematic. |
-| <code>Minecraft</code>       | <code>doors</code>                  | Used for pathfinding. |
-| <code>Minecraft</code>       | <code>leaves</code>                 | Used to determine eligible trees for the Forester. |
-| <code>Minecraft</code>       | <code>logs</code>                   | Used to determine eligible trees for the Forester. |
-| <code>Minecraft</code>       | <code>shroomlight</code>            | Used to determine eligible trees for the Forester. |
-| <code>Minecraft</code>       | <code>wart_blocks</code>            | Used to determine eligible trees for the Forester. |
+| <code>minecraft</code>       | <code>beds</code>                   | Blocks that can be used by colonists to rest, if included in a schematic. |
+| <code>minecraft</code>       | <code>doors</code>                  | Used for pathfinding. |
+| <code>minecraft</code>       | <code>leaves</code>                 | Used to determine eligible trees for the Forester. |
+| <code>minecraft</code>       | <code>logs</code>                   | Used to determine eligible trees for the Forester. |
+| <code>minecraft</code>       | <code>shroomlight</code>            | Used to determine eligible trees for the Forester. |
+| <code>minecraft</code>       | <code>wart_blocks</code>            | Used to determine eligible trees for the Forester. |
  
 ### Item Tags
 
@@ -146,15 +146,15 @@ The <code>"description"</code>'s value is displayed to the user, so it's best to
 | <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and if processable in a furnace, can be processed in the smeltery. |
 | <code>forge</code>          | <code>sand</code>                      | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower. |
 | <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a farmer. |
-| <code>Minecraft</code>       | <code>flowers</code>                   | Used by the Beekeeper to breed bees. |
-| <code>Minecraft</code>       | <code>fishes</code>                    | Used by the Fisherman to render fish on bandolier. |
-| <code>Minecraft</code>       | <code>leaves</code>                    | Items that Builders will place 'for free', without having in their inventory. |
-| <code>Minecraft</code>       | <code>logs</code>                      | Recipes consisting of 75% or more this tag and #Minecraft:planks can be taught to the Sawmill. |
-| <code>Minecraft</code>       | <code>planks</code>                    | Recipes consisting of 75% or more this tag and #Minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner. |
-| <code>Minecraft</code>       | <code>saplings</code>                  | Used by the Forester to grow trees.
-| <code>Minecraft</code>       | <code>slabs</code>                     | A stack is stored by the Miner. |
-| <code>Minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 [Florist](../../workers/florist), if they have a valid block form, and are in #minecolonies:florist_flowers. |
-| <code>Minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
+| <code>minecraft</code>       | <code>flowers</code>                   | Used by the Beekeeper to breed bees. |
+| <code>minecraft</code>       | <code>fishes</code>                    | Used by the Fisherman to render fish on bandolier. |
+| <code>minecraft</code>       | <code>leaves</code>                    | Items that Builders will place 'for free', without having in their inventory. |
+| <code>minecraft</code>       | <code>logs</code>                      | Recipes consisting of 75% or more this tag and #minecraft:planks can be taught to the Sawmill. |
+| <code>minecraft</code>       | <code>planks</code>                    | Recipes consisting of 75% or more this tag and #minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner. |
+| <code>minecraft</code>       | <code>saplings</code>                  | Used by the Forester to grow trees.
+| <code>minecraft</code>       | <code>slabs</code>                     | A stack is stored by the Miner. |
+| <code>minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 [Florist](../../workers/florist), if they have a valid block form, and are in #minecolonies:florist_flowers. |
+| <code>minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
 
 <p style="font-size:12pt;text-align:center"><b>Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://Minecraft.fandom.com/wiki/Tag#List_of_tags) for Minecraft behaviors.</b></p>
 
