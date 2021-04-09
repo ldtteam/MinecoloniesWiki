@@ -243,7 +243,7 @@ You can only have one sixth column research unlocked at a time!
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Podzol Chance | Biodegradable | Composter's Hut at least level 2; 8 Podzol | [Composter](../../source/buildings/composter) Get +5% more Podzol |
+| Podzol Chance | Biodegradable | Composter's Hut at least level 2; 8 Podzol | The [Composter](../../source/buildings/composter) has a +5% greater chance to get podzol |
 | Flower Power | Biodegradable | Composter's Hut at least level 3; 64 compost | Unlocks the [Flower Shop](../../source/buildings/flowershop) |
 | Let It Grow | Biodegradable | Farm at least level 3; 16 compost | Unlocks the [Plantation](../../source/buildings/plantation) |
 | Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/worker/farmer) output by 10% |
@@ -263,7 +263,7 @@ You can only have one sixth column research unlocked at a time!
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Podzol Chance II | Podzol Chance | Composter's Hut at least level 3; 32 Podzol | [Composter](../../source/buildings/composter) Get +10% more Podzol |
+| Podzol Chance II | Podzol Chance | Composter's Hut at least level 3; 32 Podzol | The [Composter](../../source/buildings/composter) has a +10% greater chance to get podzol |
 | Rainbow Heaven | Flower Power | Flower Shop at least level 3; 64 poppies | Unlocks the [Dyer's Hut](../../source/buildings/dyer) |
 | Double Trouble | Let it Grow | Plantation at least level 3; 64 bamboo, 64 sugar cane, 64 cacti | Lets the [Planter](../../source/workers/planter) plant 2 out of 3 crops at the same time |
 | Dung | Bonemeal | Mine at least level 4; 128 wheat seeds | Increases Farmers' output by 25% |
