@@ -22,7 +22,7 @@ Make sure you scout your area carefully before you decide where you want to plac
 
 ### Placing your Town Hall
 
-After you have carefully decided where you want to place your Town Hall (remember, the position where you placed the Town Hall block will be the center of your colony's protected area. Once placed, the area will be set and cannot be changed), use your [build tool] (../items/buildtool) to place the Town Hall block.
+After you have carefully decided where you want to place your Town Hall (remember, the position where you placed the Town Hall block will be the center of your colony's protected area. Once placed, the area will be set and cannot be changed), use your [build tool](../items/buildtool) to place the Town Hall block.
 
 Right-click the ground in the area you want to place the Town Hall. The building GUI will display showing the 3D preview of the building. You will be able to use the arrow buttons to move the building to the location you desire. 
 
