@@ -13,7 +13,7 @@ layout: default
 </div>
 <br>
 
-MineColonies adds four meshes, used by the [Sifter](../../source/workers/sifter) to sift through items. The Sifter will automatically unlock these recipes for your colony once the requirements are met. String Meshes are the most fragile, followed by Flint Meshes, while Iron is more durable, and Diamond the most resilient. Better meshes can also sift out materials earlier meshes would have missed.
+MineColonies adds four meshes, used by the [Sifter](../../source/workers/sifter) to sift through items. The Sifter will automatically unlock these recipes for your colony once the requirements are met. String meshes are the most fragile, followed by flint meshes, while iron is more durable, and diamond the most resilient. Better meshes can also sift out materials earlier meshes would have missed.
 
 | Mesh    | Requires             | Crafter | Cost |
 | ------- | -------------------- | ------- | ---- |
