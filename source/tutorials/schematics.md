@@ -208,7 +208,7 @@ So, for example, the path could be `wildwest/builder1` for the Builder's Hut lev
 <ul>
   <li>Make all levels of a hut have the same footprint for x, y, and z</li>
   <li>Place the hut block in the same location with the same rotation</li>
-  <li>Make sure all chests and <a href="../../source/items/rack">racks</a> are in the same location through all levels</li>
+  <li>Make sure all <a href="../../source/items/rack">racks</a> and furnaces are in the same location through all levels (to prevent the contents spilling out when they're getting moved)</li>
   <li>Use <a href="../../source/items/placeholderblocks">placeholders</a> where you want to keep any existing block (including from level to level), like the <a href="../../source/buildings/barrackstower">Barracks Towers</a> in the <a href="../../source/buildings/barracks">Barracks</a> schematic</li>
   <li>Use <a href="../../source/items/placeholderblocks">solid placeholders</a> at or below ground level</li>
   <li>Use only vanilla blocks or Structurize blocks (for official styles)</li>
