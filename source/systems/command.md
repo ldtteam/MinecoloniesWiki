@@ -4,7 +4,9 @@ layout: default
 ---
 # Command System
 
-These are the in-game commands currently available. Most require that a user have operator privileges to work and that a singleplayer world has cheats enabled. 
+These are the in-game commands currently available. Most require that a user have operator privileges to work and that a singleplayer world has cheats enabled.
+
+**Warning:** These commands are not intended for normal gameplay use and should only be used when debugging. Some have the potential to delete your colony or break it!
 
 - [Commands](#commands)
   - [Base Commands](#base-commands)
