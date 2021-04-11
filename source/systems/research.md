@@ -246,7 +246,7 @@ You can only have one sixth column research unlocked at a time!
 | Podzol Chance | Biodegradable | Composter's Hut at least level 2; 8 Podzol | The [Composter](../../source/buildings/composter) has a +5% greater chance to get podzol |
 | Flower Power | Biodegradable | Composter's Hut at least level 3; 64 compost | Unlocks the [Flower Shop](../../source/buildings/flowershop) |
 | Let It Grow | Biodegradable | Farm at least level 3; 16 compost | Unlocks the [Plantation](../../source/buildings/plantation) |
-| Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/worker/farmer) output by 10% |
+| Bonemeal | Biodegradable | Mine at least level 3; 64 wheat seeds | Increases [Farmers'](../../source/workers/farmer) output by 10% |
 | Strong | Hitting Iron | Blacksmith's Hut at least level 1; 8 diamonds | Increases colonists' tools' durability by 5% |
 | Veinminer | Hitting Iron | Mine at least level 1; 32 iron ore | [Miner](../../source/workers/miner) produces 10% more bonus ores |
 | Ability | Hitting Iron | Mine at least level 1; 64 iron ingots | Increases colonists' block placing speed by 10% |

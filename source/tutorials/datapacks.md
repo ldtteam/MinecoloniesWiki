@@ -81,7 +81,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 
 ## Tags
   
- **Tags** are a vanilla Minecraft feature, used to give properties to specific items (if within the <code>tags\items</code> directory) or blocks (if within <code>tags\blocks</code> directory). Item tags also used for Ore Dictionary behaviors. Tags apply a property based on the file name: <code>\data\minecolonies\tags\blocks\concrete.json</code> applies a <code>#minecolonies:concrete</code> tag to all blocks matching the Resource Locations contained within it or within Block Tags matching that Resource Location, and that <code>#minecolonies:concrete</code> block tag determines what materials a [Concrete Mixer](../../workers/concretemixer) can mine.
+ **Tags** are a vanilla Minecraft feature, used to give properties to specific items (if within the <code>tags\items</code> directory) or blocks (if within <code>tags\blocks</code> directory). Item tags also used for Ore Dictionary behaviors. Tags apply a property based on the file name: <code>\data\minecolonies\tags\blocks\concrete.json</code> applies a <code>#minecolonies:concrete</code> tag to all blocks matching the Resource Locations contained within it or within Block Tags matching that Resource Location, and that <code>#minecolonies:concrete</code> block tag determines what materials a [Concrete Mixer](../../source/workers/concretemixer) can mine.
  
  All Tag JSONs operate in **merge** mode by default. They can instead override, removing any other blocks or items from JSONs matching that name that were loaded first. To use override mode, you must explicitly set <code>"replace" : true</code> in addition to the <code>"values" : </code> name-value pair. This <code>"replace"</code> name is not mandatory for merge mode, but for ease of readability, it's strongly encouraged to use <code>"replace" : false </code> if intentionally adding to existing Tags.
  
@@ -112,13 +112,13 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
  
 | Namespace               | Block Tag              | Effect                   |
 | ----------------------- | ---------------------- | ------------------------ |
-| <code>minecolonies</code>    | <code>concrete</code>               | Blocks that a [Concrete Mixer](../../workers/concretemixer) can mine. |
+| <code>minecolonies</code>    | <code>concrete</code>               | Blocks that a [Concrete Mixer](../../source/workers/concretemixer) can mine. |
 | <code>minecolonies</code>    | <code>decoblocks</code>             | Blocks that are not replaced by builders during construction phases. |
 | <code>minecolonies</code>    | <code>indestructable</code>         | Blocks that can't be destroyed. Prevents these blocks from being overwritten by Survival Build Tools, and has special considerations for colonist pathfinding. |
-| <code>minecolonies</code>    | <code>orechanceblocks</code>        | Blocks that which will have a low chance of dropping extra ores when mined by a [Miner](../../workers/miner). |
+| <code>minecolonies</code>    | <code>orechanceblocks</code>        | Blocks that which will have a low chance of dropping extra ores when mined by a [Miner](../../source/workers/miner). |
 | <code>minecolonies</code>    | <code>pathblocks</code>             | Colonists walk faster on and preferentially follow roads made of these blocks. |
-| <code>minecolonies</code>    | <code>protectionexception</code>    | Blocks that can be used, or alt-clicked, within a [colony's protection range](../../systems/protection), even by neutral or enemy players. |
-| <code>forge</code>           | <code>dirt</code>                   | Blocks that can be used as farmland by farmers. |
+| <code>minecolonies</code>    | <code>protectionexception</code>    | Blocks that can be used, or alt-clicked, within a [colony's protection range](../../source/systems/protection), even by neutral or enemy players. |
+| <code>forge</code>           | <code>dirt</code>                   | Blocks that can be used as farmland by [Farmers](../../source/workers/farmer). |
 | <code>minecraft</code>       | <code>beds</code>                   | Blocks that can be used by colonists to rest, if included in a schematic. |
 | <code>minecraft</code>       | <code>doors</code>                  | Used for pathfinding. |
 | <code>minecraft</code>       | <code>leaves</code>                 | Used to determine eligible trees for the Forester. |
@@ -135,25 +135,25 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 | <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give moderate compost. |
 | <code>minecolonies</code>    | <code>compostables_poor</code>         | Items that can be placed into a Composter, and give little compost. |
 | <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give a lot of compost. |
-| <code>minecolonies</code>    | <code>concrete_powder</code>           | Crafted and placed by a [Concrete Mixer](../../workers/concretemixer) |
-| <code>minecolonies</code>    | <code>florist_flowers</code>           | Grown by the [Florist](../../workers/florist), if they have a valid block form, at building level 3 or higher. |
-| <code>minecolonies</code>    | <code>fungi</code>                     | Items that can be grown by a [Lumberjack](../../workers/lumberjack) on Warped Nylium or Crimson Nylium. |
-| <code>minecolonies</code>    | <code>meshes</code>                    | Items that can be held as meshes by a [Sifter](../../workers/sifter). This only allows the Sifter to use the tool, it does not add benefits to doing so. See CrafterRecipes for more details. |
+| <code>minecolonies</code>    | <code>concrete_powder</code>           | Crafted and placed by a [Concrete Mixer](../../source/workers/concretemixer) |
+| <code>minecolonies</code>    | <code>florist_flowers</code>           | Grown by the [Florist](../../source/workers/florist), if they have a valid block form, at building level 3 or higher. |
+| <code>minecolonies</code>    | <code>fungi</code>                     | Items that can be grown by a [Forester](../../source/workers/forester) on Warped Nylium or Crimson Nylium. |
+| <code>minecolonies</code>    | <code>meshes</code>                    | Items that can be held as meshes by a [Sifter](../../source/workers/sifter). This only allows the Sifter to use the tool, it does not add benefits to doing so. See CrafterRecipes for more details. |
 | <code>minecolonies</code>    | <code>reducible_ingredient</code>      | Items that may be reduced in cost by one, to a minimum of one, when in a colonist recipe that originally required more than one of the item. |
 | <code>minecolonies</code>    | <code>reducible_product_excluded</code> | Output items that can never have their crafter recipe efficiency improved. Most storage blocks or reversable recipes should be in this tag, to avoid possible infinite item loops. |
 | <code>forge</code>           | <code>crops_wheat</code>               | The Baker can cook any recipe including an in this tag, if the output is a food item. |
 | <code>forge</code>           | <code>glass</code>                     | All items with this tag, if produces in a furnace from an item tagged with #forge:glass, can be made at the Glassblower. |
 | <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and if processable in a furnace, can be processed in the smeltery. |
 | <code>forge</code>          | <code>sand</code>                      | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower. |
-| <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a farmer. |
-| <code>minecraft</code>       | <code>flowers</code>                   | Used by the Beekeeper to breed bees. |
-| <code>minecraft</code>       | <code>fishes</code>                    | Used by the Fisherman to render fish on bandolier. |
+| <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a Farmer. |
+| <code>minecraft</code>       | <code>flowers</code>                   | Used by the [Beekeeper](../../source/workers/beekeeper) to breed bees. |
+| <code>minecraft</code>       | <code>fishes</code>                    | Used by the [Fisher](../../source/workers/fisher) to render fish on bandolier. |
 | <code>minecraft</code>       | <code>leaves</code>                    | Items that Builders will place 'for free', without having in their inventory. |
 | <code>minecraft</code>       | <code>logs</code>                      | Recipes consisting of 75% or more this tag and #minecraft:planks can be taught to the Sawmill. |
 | <code>minecraft</code>       | <code>planks</code>                    | Recipes consisting of 75% or more this tag and #minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner. |
 | <code>minecraft</code>       | <code>saplings</code>                  | Used by the Forester to grow trees.
 | <code>minecraft</code>       | <code>slabs</code>                     | A stack is stored by the Miner. |
-| <code>minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 [Florist](../../workers/florist), if they have a valid block form, and are in #minecolonies:florist_flowers. |
+| <code>minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 [Florist](../../source/workers/florist), if they have a valid block form, and are in #minecolonies:florist_flowers. |
 | <code>minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
 
 <p style="font-size:12pt;text-align:center"><b>Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://Minecraft.fandom.com/wiki/Tag#List_of_tags) for Minecraft behaviors.</b></p>
