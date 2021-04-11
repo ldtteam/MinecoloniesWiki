@@ -1,6 +1,8 @@
 ---
 title: Supply Camp and Ship
 layout: default
+redirect_from:
+- /source/items/supplyshipandcamp
 ---
 # Supply Camp and Ship
 
