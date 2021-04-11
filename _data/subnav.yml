@@ -10,7 +10,7 @@ subnav:
       - page: Getting Started
         url: source/tutorials/getting-started
       - page: Data Packs
-        url: source/misc/datapacks
+        url: source/tutorials/datapacks
       - page: Schematics
         url: source/tutorials/schematics
   - title: Systems
