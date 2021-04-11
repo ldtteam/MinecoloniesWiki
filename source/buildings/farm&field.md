@@ -1,6 +1,8 @@
 ---
 title: Farm & Field
 layout: default
+redirect_from:
+- /source/buildings/farm
 ---
 # Farm & Field
 
