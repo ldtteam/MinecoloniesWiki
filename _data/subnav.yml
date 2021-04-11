@@ -9,6 +9,8 @@ subnav:
     subitems:
       - page: Getting Started
         url: source/tutorials/getting-started
+      - page: Data Packs
+        url: source/misc/datapacks
       - page: Schematics
         url: source/tutorials/schematics
   - title: Systems
@@ -49,12 +51,16 @@ subnav:
         url: source/items/floatingcarpet
       - page: Gates
         url: source/items/gates
+      - page: Meshes
+        url: source/items/meshes
       - page: Multi-Piston
         url: source/items/multipiston
       - page: Paper Wall
         url: source/items/paperwall
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
+      - page: Plate Armor
+        url: source/items/platearmor
       - page: Postbox
         url: source/items/postbox
       - page: Rack
