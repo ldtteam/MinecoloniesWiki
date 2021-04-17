@@ -5,9 +5,8 @@ layout: default
 # Enchantments
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/items/enchantedbook.png" alt="Raider's Bane enchanted book"></p>
-    Scrolls as magical as these can only be crafted by someone well-versed in the art of spellcasting.
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecraft/book_enchanted.png" alt="Raider's Bane enchanted book"></p>
 </div>
 <br>
 
-MineColonies adds one new enchantment, Raider's Bane. It can be applied to weapons (swords and axes) and increases the weapon's damage against raiders. It goes up to level X.
+MineColonies adds one new enchantment, Raider's Bane. It can be applied to weapons (swords and axes) and increases the weapon's damage against MineColonies raiders. It goes up to level 2 and can be obtained from the [Enchanter](../../source/workers/enchanter) when their [tower](../../source/buildings/enchantertower) is level 3+. (For them to obtain a level 2 Raider's Bane enchant, their hut must be level 5.)
