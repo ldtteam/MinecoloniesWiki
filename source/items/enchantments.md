@@ -6,6 +6,7 @@ layout: default
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecraft/book_enchanted.png" alt="Raider's Bane enchanted book"></p>
+    There is no recipe for the Raider's Bane enchant. It must be obtained from the Enchanter.
 </div>
 <br>
 
