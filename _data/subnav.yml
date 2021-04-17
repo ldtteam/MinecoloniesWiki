@@ -47,6 +47,8 @@ subnav:
         url: source/items/compostbarrel
       - page: Construction Tape
         url: source/items/constructiontape
+      - page: Enchantments
+        url: source/items/enchantments
       - page: Floating Carpet
         url: source/items/floatingcarpet
       - page: Gates
