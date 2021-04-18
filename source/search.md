@@ -19,17 +19,17 @@ layout: default
   limit: 100,
   sortMiddleware: function(a, b)
   {
-  	searchstr = document.getElementById('search-input').value.toLowerCase();
+    searchstr = document.getElementById('search-input').value.toLowerCase();
     var astr = String(a.title);
     var bstr = String(b.title);
-  	if (astr.toLowerCase().includes(searchstr))
-  	{
-  		return -1;
+    if (astr.toLowerCase().includes(searchstr))
+    {
+      return -1;
   	}
-  	else if (bstr.toLowerCase().includes(searchstr))
-  	{
-  		return 1;
-  	}
+    else if (bstr.toLowerCase().includes(searchstr))
+    {
+  	  return 1;
+    }
     return astr.localeCompare(bstr)
   }
 })
