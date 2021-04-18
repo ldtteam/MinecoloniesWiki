@@ -1,6 +1,6 @@
 ---
 title: Recipes
-layout: recipes
+layout: default
 ---
 # Recipes
 
