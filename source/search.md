@@ -12,7 +12,7 @@ layout: default
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 
 <script type="text/javascript">
-	var sjs = SimpleJekyllSearch({
+  var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json',
