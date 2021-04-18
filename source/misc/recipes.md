@@ -19,6 +19,8 @@ Neither of the [gates](../../source/items/gates) are on here as they can only be
 
 None of the [scrolls](../../source/items/scrolls) are on here as they cannot be crafted by the player, only by the [Enchanter](../../source/workers/enchanter).
 
+The Raider's Bane [enchant](../../source/items/enchantments) is not on here as it cannot be crafted and must be obtained by the Enchanter.
+
 | Name | Ingredients | Crafted At | Recipe |
 | ---- | ----------- | ---------- | ------ |
 | [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel</recipe> |
