@@ -20,19 +20,16 @@ layout: default
   sortMiddleware: function(a, b)
   {
   	searchstr = document.getElementById('search-input').value.toLowerCase();
-  	console.log(searchstr);
-  	if (a.title.toLowerCase().includes(searchstr))
+    var astr = String(a.title);
+    var bstr = String(b.title);
+  	if (astr.toLowerCase().includes(searchstr))
   	{
   		return -1;
   	}
-  	else if (b.title.toLowerCase().includes(searchstr))
+  	else if (bstr.toLowerCase().includes(searchstr))
   	{
   		return 1;
   	}
-
-
-    var astr = String(a.title);
-    var bstr = String(b.title);
     return astr.localeCompare(bstr)
   }
 })
