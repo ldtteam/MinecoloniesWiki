@@ -15,7 +15,7 @@ layout: default
   var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
+  json: '{{ "search.json" | relative_url }}',
   limit: 100,
   sortMiddleware: function(a, b)
   {
