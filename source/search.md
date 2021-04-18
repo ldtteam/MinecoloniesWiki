@@ -25,10 +25,10 @@ layout: default
     if (astr.toLowerCase().includes(searchstr))
     {
       return -1;
-  	}
+    }
     else if (bstr.toLowerCase().includes(searchstr))
     {
-  	  return 1;
+      return 1;
     }
     return astr.localeCompare(bstr)
   }
