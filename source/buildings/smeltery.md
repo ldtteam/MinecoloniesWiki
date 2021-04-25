@@ -29,11 +29,11 @@ The Smeltery is where the Smelter will smelt ores into ingots.
 
 | Building Level | Normal Output | % Chance of Doubling Output | % Chance of Tripling Output | Furnaces |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
-| 1 | 100% | Strength Level | --- | 1 |
-| 2 | 100% | 2x Strength Level | --- | 2 |
-| 3 | --- | 100% | --- | 3 |
-| 4 | --- | 100% | Strength Level | 4 |
-| 5 | --- | 100% | 2x Strength Level | 5 |
+| 1 | 100% | 1 in (100 - 50% of Strength Level) | ---------------------------------- | 1 |
+| 2 | 100% | 1 in (100 - Strength Level)        | ---------------------------------- | 2 |
+| 3 | ---- | 100%                               | ---------------------------------- | 3 |
+| 4 | ---- | 100%                               | 1 in (100 - 50% of Strength Level) | 4 |
+| 5 | ---- | 100%                               | 1 in (100 - Strength Level)        | 5 |
 
 
 ## Smeltery GUI
