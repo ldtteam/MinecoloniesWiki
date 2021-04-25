@@ -16,6 +16,7 @@ layout: default
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '{{ "search.json" | relative_url }}',
+  exclude: ['404'],
   limit: 100,
   sortMiddleware: function(a, b)
   {
