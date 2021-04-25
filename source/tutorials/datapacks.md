@@ -134,7 +134,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 | --------------- | ------------------------- | ------------------------ | 
 | <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give moderate compost. |
 | <code>minecolonies</code>    | <code>compostables_poor</code>         | Items that can be placed into a Composter, and give little compost. |
-| <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give a lot of compost. |
+| <code>minecolonies</code>    | <code>compostables_rich</code>         | Items that can be placed into a Composter, and give a lot of compost. |
 | <code>minecolonies</code>    | <code>concrete_powder</code>           | Crafted and placed by a [Concrete Mixer](../../source/workers/concretemixer) |
 | <code>minecolonies</code>    | <code>florist_flowers</code>           | Grown by the [Florist](../../source/workers/florist), if they have a valid block form, at building level 3 or higher. |
 | <code>minecolonies</code>    | <code>fungi</code>                     | Items that can be grown by a [Forester](../../source/workers/forester) on Warped Nylium or Crimson Nylium. |
@@ -191,15 +191,16 @@ While Item Tags determine the recipes that workers can be taught, colonists can 
 | <code>"alternative-output"</code>      |                      | Array Of Objects | Contains the <code>"item"</code> and <code>"count"</code> of alternative output items. These consume the same inputs, share the same "loot-table", and return the same "additional-output" as the main recipe, but produce a different result on demand through the Request System. |
 |                                        | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe. |
 |                                        | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1. |
-| <code>"intermediate"</code>            |                      | string           | The Resource Location identifier of an item to display while the recipe is being crafted. |
+| <code>"intermediate"</code>            |                      | string           | The Resource Location identifier of a block required to craft the item, typically a furnace. |
 | <code>"research-id"</code>             |                      | string           | The Resource Location identifier of a research that is automatically learned after the colony has a research completed, if all other requirements are met. |
 | <code>"not-research-id"</code>         |                      | string           | The Resource Location identifier of a research that automatically causes the recipe to be unlearned. Most commonly used to replace a default recipe. |
 | <code>"min-building-level"</code>      |                      | integer          | The minimum building level, inclusive, at which the recipe may be automatically learned, if all other requirements are complete. |
 | <code>"max-building-level"</code>      |                      | integer          | The building level where the recipe will be automatically unlearned, if the building meets or exceeds it. |
 | <code>"must-exist"</code>              |                      | boolean          | A special requirement. If a recipe matching the output exists, automatically adds all <code>"alternative-output"</code> as recipes. |
+| <code>"show-tooltip"</code>            |                      | boolean          | If true, displays the building that can craft the recipe, as well as any requirements to unlock the recipe, as a tooltip for the item. |
 | <code>"recipe-id-to-remove"</code>     |                      | string           | A Resource Location of a different crafter recipe to remove, preventing buildings from learning it. Requires <code>"type":"remove"</code>. All other properties are ignored.|
 
-Crafter Recipes already learned by a building will be immediately removed from that building if the recipe requirements are changed to values the building or colony does not meet. This is the preferred way to remove recipes in a data pack applied to a live world; the <code>"remove"</code> and <code>"recipe-id-to-remove"</code> settings will only prevent new buildings from learning the recipe.
+On existing worlds, removing a Crafter Recipe through data packs will automatically remove it from existed constructed buildings that have learned it.
 
 For example crafter recipes, and their canonical names, see GitHub [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/crafterrecipes) and [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/crafterrecipes).
 
