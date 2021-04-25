@@ -59,15 +59,19 @@ There is also a system in place for the type of bows and fishing rods workers ca
 | 4              | 3 enchantments          |
 | 5              | Unlimited enchantments  |
 
+Modded fishing rods with higher durability may require a higher Work Hut level.
+
 ## Guard Armor Levels
 
-There is also a system in place for the type of armor [Guards](../../source/workers/guard) can use. This depends on the level of their Tower and the worker level of the Guard.
+There is also a system in place for the type of armor [Guards](../../source/workers/guard) can use. This depends on the level of their Tower.
 
-| Type of Armor | Guard Level | Tower Level |
-| ------------- | ----------- | ----------- |
-| Leather       | 0 - 20      | 1 - 3       |
-| Gold          | 0 - 20      | 1 - 4       |
-| Chain         | 0 - 20      | 2 - 5       |
-| Iron          | 5 - 30      | 3 - 5       |
-| Diamond       | 15 - 99     | 4 - 5       |
-| Netherite     | 15 - 99     | 4 - 5       |
+| Tower Level   | Max Armor Damage Reduction |
+| ------------- | -------------------------- |
+| 0             | Leather                    |
+| 1             | Gold                       |
+| 2             | Chain                      |
+| 3             | Iron                       |
+| 4             | Diamond                    |
+| 5             | All (including [Plate](../../source/items/platearmor)      |
+
+Guards can use most modded armor within these rules, though they may not be able to use or benefit from special traits of that armor.
