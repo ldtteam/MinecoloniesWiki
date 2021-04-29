@@ -53,11 +53,11 @@ Once you are in the **.minecraft/mods** folder, copy the downloaded MineColonies
 
 Follow the last three steps, except for Structurize (which MineColonies needs to work). Find the download page for Structurize [here](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all).
 
-MineColonies doesn't always accept the latest version of Structurize. To ensure you have the required version, first click on the MineColonies file name (on the Curseforge website). You'll be taken to the changelog, where it should say the accepted Structurize version at the top. Download that exact version.
+MineColonies doesn't always accept the latest version of Structurize. To ensure you have the required version, first, click on the MineColonies file name (on the Curseforge website). You'll be taken to the changelog, where it should say the accepted Structurize version at the top. Download that exact version.
 
 #### If Adding Pack, Extract It
 
-If you are adding the entire modpack to be able to play on the official server, un-zip the zip file you got from CurseForge containing all the mod files. Copy the mod files to the *mods* folder as you did before.
+If you are adding the entire modpack to be able to play on the official server, unzip the zip file you got from CurseForge containing all the mod files. Copy the mod files to the *mods* folder as you did before.
 
 ### Run Minecraft and Select Profile
 
