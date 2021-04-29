@@ -53,6 +53,8 @@ subnav:
         url: source/items/floatingcarpet
       - page: Gates
         url: source/items/gates
+      - page: Grave
+        url: source/items/grave
       - page: Meshes
         url: source/items/meshes
       - page: Multi-Piston
@@ -163,6 +165,8 @@ subnav:
         url: source/workers/swineherd
       - page: Teacher
         url: source/workers/teacher
+      - page: Undertaker
+        url: source/workers/undertaker
       - page: University Researcher
         url: source/workers/researcher
   - title: Buildings
@@ -211,6 +215,8 @@ subnav:
         url: source/buildings/forester
       - page: Glassblower's Hut
         url: source/buildings/glassblower
+      - page: Graveyard
+        url: source/buildings/graveyard
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Hospital
