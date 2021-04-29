@@ -31,7 +31,7 @@ The first step is to craft a scan tool.
 
 ### Step Two
 
-Then left-click a lower front corner (left or right makes no difference) at ground level of the structure.
+Then left-click a lower front corner (left or right makes no difference) at the ground level of the structure.
 
 ![Point 1](../../assets/images/tutorial/scan1.png)
 
