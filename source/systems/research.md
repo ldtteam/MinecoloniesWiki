@@ -161,7 +161,7 @@ You can only have one sixth column research unlocked at a time!
 | More Books | Higher Learning | School at least level 1; 6 books | Increases the effectiveness of [Teachers](../../source/workers/teacher) by 5% |
 | Nurture | Higher Learning | School at least level 1; 32 cooked chicken | Decreases the time it takes children to grow up by 5% |
 | Resurrection Chance I | Remembrance | Graveyard at least level 3; 1 ghast tear | Increases [Undertakers'](../../source/workers/undertaker) chances of resurrecting citizens by 1% |
-| Grave Decay I | Remembrance | Graveyard at least level 3; 64 rotten flesh | [Graves](../../source/items/graves) take 2 more minutes before decaying |
+| Grave Decay I | Remembrance | Graveyard at least level 3; 64 rotten flesh | Graves take 2 more minutes before decaying |
 | Undertaker Emergency | Remembrance | Graveyard at least level 2; 1 set of iron boots | Undertakers run toward graves instead of walking |
 
 #### Third Column

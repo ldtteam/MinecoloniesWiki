@@ -53,8 +53,6 @@ subnav:
         url: source/items/floatingcarpet
       - page: Gates
         url: source/items/gates
-      - page: Grave
-        url: source/items/grave
       - page: Meshes
         url: source/items/meshes
       - page: Multi-Piston
