@@ -19,42 +19,30 @@ layout: default
     <recipe>graveyard</recipe>
 </div>
 
-### Note: The Graveyard cannot be built until you have a level 3 [Farm](../../source/buildings/farm&field) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
+### Note: The Graveyard cannot be built until you have finished the [research](../../source/systems/research) in the [University](../../source/buildings/university).
 <br>
 
-The Graveyard is where the Undertaker will grow either sugar cane, bamboo, or cactus.
+The Graveyard is where the Undertaker will place graves for your deceased citizens. The graves will have the names of the citizens on them.
+For more information, see the [Undertaker](../../source/workers/undertaker) page.
 
-The Graveyard's level determines how many crops the Undertaker can plant at a time.
+The recommended grave count per Graveyard level is below. This is **not mandatory**, and the actual amount will vary between styles.
 
-| Graveyard Level | Crops Grown |
-| ----- | ----- |
-| 1 | 4 |
-| 2 | 8 |
-| 3 | 12 |
-| 4 | 16 |
-| 5 | 20 |
-
-The Undertaker can also craft paper, books, sugar, and anything made with bamboo. The Undertaker will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
-
-**Note:** The Undertaker can only learn a certain amount of recipes per their hut level. 
-
-| Building Level | Number of Recipes |
-| :-----: | :-----: |
-| 1 | 10 | 
-| 2 | 20 |
-| 3 | 40 |
-| 4 | 80 | 
-| 5 | 160 | 
-
-<br>
+| Graveyard Level | Number of Graves |
+| --------------- | ---------------- |
+| 1 | 14 | 
+| 2 | 18 |
+| 3 | 27 |
+| 4 | 36 |
+| 5 | 50 |
 
 ## Graveyard GUI
 
 When accessing the Graveyard's hut block by right-clicking on it, you will see a GUI with different options:
 
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/graveyardgui1.png" class="img-fluid mx-auto" alt="Graveyard GUI">
+    <img src="../../assets/images/gui/graveyardgui1.png" class="img-fluid mx-auto" alt="Graveyard GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -65,10 +53,21 @@ When accessing the Graveyard's hut block by right-clicking on it, you will see a
     </ul>
   </div>
 </div>
-<br> <br>
+<br><br>
+This is page two of the Graveyard GUI. It has a list of the graves the Undertaker needs to recover.
 
-On page two of the GUI, you can select the plant you want the Undertaker to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/graveyardgui2.png" class="img-fluid mx-auto" alt="Graveyard GUI 2">
+  </div>
+</div>
+  <br><br>
+  This is page three of the Graveyard GUI. It has a list of currently-buried citizens.
 
-**Note:** If you have completed the Double Trouble research in the [University](../../source/buildings/university) (which lets the Undertaker plant two crops at a time), this button will choose what will *NOT* be planted.
-
- <img src="../../assets/images/gui/graveyardgui2.png" alt="Graveyard GUI Page 2" />
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/graveyardgui3.png" class="img-fluid mx-auto" alt="Graveyard GUI 3">
+  </div>
+</div>

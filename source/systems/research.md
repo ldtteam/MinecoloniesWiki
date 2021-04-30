@@ -144,6 +144,7 @@ You can only have one sixth column research unlocked at a time!
 | First Aid | [Town Hall](../../source/buildings/townhall) at least level 1; 8 hay bales | Increases colonists' health by 1 heart |
 | Higher Learning | House at least level 3; 3 books | Unlocks the [School](../../source/buildings/school) |
 | Ambition | 1 Diamond | Unlocks the [Mystical Site](../../source/buildings/mysticalsite) |
+| Remembrance | [Town Hall](../../source/buildings/townhall) at least level 2; 8 bones | Unlocks the [Graveyard](../../source/buildings/graveyard) |
 
 #### Second Column
 
@@ -159,6 +160,9 @@ You can only have one sixth column research unlocked at a time!
 | Gourmand | First Aid | Restaurant at least level 2; 32 cookies | Food is 10% more effective at restoring colonists' saturation |
 | More Books | Higher Learning | School at least level 1; 6 books | Increases the effectiveness of [Teachers](../../source/workers/teacher) by 5% |
 | Nurture | Higher Learning | School at least level 1; 32 cooked chicken | Decreases the time it takes children to grow up by 5% |
+| Resurrection Chance I | Remembrance | Graveyard at least level 3; 1 ghast tear | Increases [Undertakers'](../../source/workers/undertaker) chances of resurrecting citizens by 1% |
+| Grave Decay I | Remembrance | Graveyard at least level 3; 64 rotten flesh | [Graves](../../source/items/graves) take 2 more minutes before decaying |
+| Undertaker Emergency | Remembrance | Graveyard at least level 2; 1 set of iron boots | Undertakers run toward graves instead of walking |
 
 #### Third Column
 
@@ -175,6 +179,8 @@ You can only have one sixth column research unlocked at a time!
 | Gorger | Gourmand | Restaurant at least level 3; 64 cookies | Food is 25% more effective at restoring colonists' saturation |
 | Bookworm | More Books | School at least level 3; 6 bookshelves | Increases the effectiveness of Teachers by 10% |
 | Hormones | Nurture | School at least level 3; 64 cooked chicken | Decreases the time it takes children to grow up by 10% |
+| Resurrection Chance II | Resurrection Chance I | Graveyard level 5; 16 chorus fruit | Increases Undertakers' chances of resurrecting citizens by 2% |
+| Grave Decay II | Grave Decay I | Graveyard level 5; 8 nether wart blocks | Graves take 3 more minutes before decaying |
 
 #### Fourth Column
 
