@@ -5,7 +5,7 @@ layout: default
 # Resource Scroll 
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/resourcescroll.png" alt="Resource Scroll"></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/resource_scroll.png" alt="Resource Scroll"></p>
     <recipe>resourcescroll</recipe>
 </div>
 
