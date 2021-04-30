@@ -22,10 +22,10 @@ layout: default
 ### Note: The Graveyard cannot be built until you have finished the [research](../../source/systems/research) in the [University](../../source/buildings/university).
 <br>
 
-The Graveyard is where the Undertaker will place graves for your deceased citizens. The graves will have the names of the citizens on them.
+The Graveyard is where the Undertaker will bury your deceased citizens.
 For more information, see the [Undertaker](../../source/workers/undertaker) page.
 
-The recommended grave count per Graveyard level is below. This is **not mandatory**, and the actual amount will vary between styles.
+The recommended maximum grave count per Graveyard level is below. This is **not mandatory**, and the actual amount will vary between styles.
 
 | Graveyard Level | Number of Graves |
 | --------------- | ---------------- |
