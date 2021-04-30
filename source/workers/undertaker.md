@@ -14,27 +14,29 @@ layout: default
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
-      <p class="traitp">Agility</p>
-      <p class="traits">Dexterity</p>
+      <p class="traitp">Strength</p>
+      <p class="traits">Mana</p>
       <p><a href="../buildings/graveyard">Graveyard</a></p>
     </div>
   </div>
 </div>
 
-The Undertaker is part of the supply production of your colony. The Undertaker will plant and harvest sugar cane, bamboo, or cactus.
+The Undertaker deals with deceased citizens. When a citizen dies, a grave will spawn at the location of death.
 
-The Undertaker can also craft paper, books, sugar, and anything made with bamboo. The Undertaker will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials.
+![Grave](../../assets/images/items/grave.png)
 
-**Note:** The Undertaker can only learn a set number of recipes based on their hut level. So:
+After a short time, graves will decay and eventually disappear. There are [researches](../../source/systems/research) to increase this time.
 
-| Hut Level | Recipes |
-| --------- | ------- |
-| 1         | 10      |
-| 2         | 20      |
-| 3         | 40      |
-| 4         | 80      |
-| 5         | 160     |
+![Decayed Grave](../../assets/images/items/decayedgrave.png)
 
-All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Undertaker's Agility level, the greater their chance to decrease the amount of materials needed.
+The grave (decayed or not) will hold all the items the citizen had in their inventory at the time of death. The player can right-click the grave to open its inventory and retrieve the items. The Undertaker will walk (run if you've completed the relevant research) toward the grave and retrieve its inventory, then go back to the Graveyard.
 
-If a Undertaker's Dexterity level is higher, they'll craft faster.
+Once the Undertaker gets to the Graveyard, they will attempt to revive the deceased citizen. The chance for them to succeed can be increased by researches, the Undertaker's Mana skill, and the level of the Graveyard. The chance is capped at about 10%.
+
+If the citizen cannot be revived, the Undertaker will bury them in the Graveyard. Another grave will be placed with the citizen's name on it (this grave does not store items). If a citizen is buried, the mourning time for them is a half day instead of the normal full day.
+
+If no citizens have died recently, the Undertaker will visit the [Mystical Site](../../source/buildings/mysticalsite). Doing so will increase their Mana level. They will also visit other citizens to get to know them.
+
+The Undertaker is exempt from mourning so they can complete their job.
+
+The higher an Undertaker's Strength skill, the faster they can dig graves.
