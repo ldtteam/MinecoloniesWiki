@@ -24,7 +24,7 @@ layout: default
 
 The Mystical Site is a simple building to increase a colony's overall [happiness](../../source/systems/happinessandsaturation) level. It has no worker, and increases colonists' happiness just by existing.
 
-The [Undertaker](../../source/workers/undertaker) will visit the Mystical Site. Doing so will increase their chance of resurrecting a killed citizen.
+The [Undertaker](../../source/workers/undertaker) will visit the Mystical Site when there are no colonists to bury. Doing so will increase their Mana skill, and as such, their chance of resurrecting a killed citizen.
 
 ## Mystical Site GUI
 
