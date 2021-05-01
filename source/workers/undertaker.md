@@ -33,9 +33,9 @@ The grave (decayed or not) will hold all the items the citizen had in their inve
 
 Once the Undertaker gets to the Graveyard, they will attempt to revive the deceased citizen. The chance for them to succeed can be increased by researches, the Undertaker's Mana skill, and the level of the Graveyard. The chance is capped at about 10%.
 
-If the citizen cannot be revived, the Undertaker will bury them in the Graveyard. Another grave will be placed with the citizen's name on it (this grave does not store items). If a citizen is buried, the mourning time for them is a half day instead of the normal full day.
+If the citizen cannot be revived, the Undertaker will bury them in the Graveyard. Another grave will be placed with the citizen's name on it (this grave does not store items).
 
-If no citizens have died recently, the Undertaker will visit the [Mystical Site](../../source/buildings/mysticalsite). Doing so will increase their Mana level. They will also visit other citizens to get to know them.
+If no citizens have died recently, the Undertaker will visit the [Mystical Site](../../source/buildings/mysticalsite), the [Enchanter's Tower](../../source/buildings/enchantertower), and citizens' homes. Doing so will increase their Mana level.
 
 The Undertaker is exempt from mourning so they can complete their job.
 
