@@ -111,6 +111,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | fisherman1     | fisherman2     | fisherman3     | fisherman4     | fisherman5     |
 | florist1       | florist2       | florist3       | florist4       | florist5       |
 | glassblower1   | glassblower2   | glassblower3   | glassblower4   | glassblower5   |
+| graveyard1     | graveyard2     | graveyard3     | graveyard4     | graveyard5     |
 | guardtower1    | guardtower2    | guardtower3    | guardtower4    | guardtower5    |
 | hospital1      | hospital2      | hospital3      | hospital4      | hospital5      |
 | library1       | library2       | library3       | library4       | library5       |
@@ -159,6 +160,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | [Dyer's Hut](../../source/buildings/dyer)               | 1 furnace                                                            |                     |
 | [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
 | [Glassblower's Hut](../../source/buildings/glassblower) | 1 furnace per level                                                  |                     |
+| [Graveyard](../../source/buildings/graveyard)           | Named Graves, with the amount increasing per level | 14 named graves at level 1, 18 named graves at level 2, 27 named graves at level 3, 36 named graves at level 4, 50 named graves at level 5 |
 | [Guard Tower](../../source/buildings/guardtower)        |                                                                      | 1 bed per level     |
 | [Hospital](../../source/buildings/hospital)             | 1 bed per level                                                      |                     |
 | [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
