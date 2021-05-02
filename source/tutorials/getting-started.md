@@ -94,7 +94,7 @@ When you place the Supply Ship/Camp, it will spawn a chest that will contain the
 
 ### Town Hall
 
- The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a square 8 chunks in radius, measured from where you placed your Town Hall block the first time (with the default [config](../../source/misc/configfile)). Therefore, plan carefully where you want to place your Town Hall. 128 blocks (8 chunks x 8 chunks) in every direction will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to sky limit.
+ The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a square 4 chunks in radius, measured from the chunk where you placed your Town Hall block the first time (with the default [config](../../source/misc/configfile)). Therefore, plan carefully where you want to place your Town Hall. 64 blocks (4 chunks x 4 chunks) in every direction from that chunk will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to sky limit.
 
 Due to the protected area of each colony, you have to carefully scout your surrounding to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction (in multiplayer, etc.). If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
@@ -106,7 +106,7 @@ Location info of the next closest colony exits in the debug screen (displayed wh
 
 <p class="text-center"><img src="../../assets/images/tutorial/no_colony.png" alt="No Colony"></p>
 
-For example, in the official MineColonies server it will be the default 8 chunk radius (8 + 8 + 1 {center Chunk where Town Hall was placed} = 17 chunks or 272 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a colony)."
+For example, in the official MineColonies server it will be the default 4 chunk radius (4 + 4 + 1 {center Chunk where Town Hall was placed} = 9 chunks or 144 total blocks required). It therefore, will tell you: "Next colony is XXX blocks away. (272 required to place a colony)."
 
 **Now, after you have explored, thought carefully, planned, and found the perfect spot to start your colony, let's take a look at the steps to get your colony running!**
 
