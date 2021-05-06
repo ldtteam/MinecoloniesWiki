@@ -21,7 +21,7 @@ layout: default
 
 The Guard Tower will employ and house 1 [Guard](../../source/workers/guard) to protect your colony. The new Guard will need a bed in a house in order to spawn. However, once they are hired at the Guard Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
-The Guard will patrol a set distance around their tower, which is based on their tower's level.
+The Guard will patrol a set distance around their tower, which is based on their tower's level. Only guard towers can be set to patrol mines.
 
 | Tower Level | Max Patrol Distance |
 | ----------- | ------------------- |
