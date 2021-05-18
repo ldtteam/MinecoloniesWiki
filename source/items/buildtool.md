@@ -16,7 +16,7 @@ The build tool is *THE* most important tool in the entire mod! With it, you can 
 <p class="h4"><a id="build_tool">Build Tool Video</a></p>
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Oz627IutL0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <br>
 

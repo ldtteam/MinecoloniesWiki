@@ -15,7 +15,7 @@ The scan tool is a very useful tool. With the scan tool, you can scan any struct
 <p class="h4">Scan Tool Video</p>
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mFIC3752o1c" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UO4ePh0N4Mc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <br>
 
