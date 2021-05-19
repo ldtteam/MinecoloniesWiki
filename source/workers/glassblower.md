@@ -16,7 +16,7 @@ layout: default
     <div class="col">
       <p class="traitp">Creativity</p>
       <p class="traits">Focus</p>
-      <p><a href="../buildings/bakery">Glassblower</a></p>
+      <p><a href="../buildings/glassblower">Glassblower</a></p>
     </div>
   </div>
 </div>

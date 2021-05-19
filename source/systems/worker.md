@@ -72,6 +72,6 @@ There is also a system in place for the type of armor [Guards](../../source/work
 | 2             | Chain                      |
 | 3             | Iron                       |
 | 4             | Diamond                    |
-| 5             | All (including [Plate](../../source/items/platearmor)      |
+| 5             | All (including [Plate](../../source/items/platearmor)) |
 
 Guards can use most modded armor within these rules, though they may not be able to use or benefit from special traits of that armor.

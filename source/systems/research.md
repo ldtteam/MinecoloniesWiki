@@ -25,10 +25,10 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 | <img src="../../assets/images/gui/university/research_locked.png" alt="Locked Research"> | A **locked** research requires a building or buildings, or other unrelated research, before it can be started. | 
 | <img src="../../assets/images/gui/university/research_unlocked.png" alt="Unlocked Research"> | An **unlocked** research has all colony and research requirements met, but requires an item or items. **These items must be in the player's inventory.** | 
 | <img src="../../assets/images/gui/university/research_ready.png" alt="Available Research"> | An **available** research is ready to begin. Clicking the title of the research will consume the items from the player's inventory and start the research. |  
-| <img src="../../assets/images/gui/university/research_progress.png" alt="Progressing Research"> | A **progressing** research is being worked on currently. This research will show its current progression and a rough estimate of the remaining time to completion. A progressing research can be canceled by clicking the research title and then clicking the Cancel pop up. Cancelling a research will **not** refund the material costs. | 
+| <img src="../../assets/images/gui/university/research_progress.png" alt="Progressing Research"> | A **progressing** research is being worked on currently. This research will show its current progression and a rough estimate of the remaining time to completion. A progressing research can be canceled by clicking the research title and then clicking the Cancel pop-up. Cancelling a research will **not** refund the material costs. | 
 | <img src="../../assets/images/gui/university/research_complete.png" alt="Complete Research"> | A **complete** research has been fully unlocked by your University. Its effects have been applied to the colony and colonists. | 
 | <img src="../../assets/images/gui/university/research_or.png" alt="Exclusive Research"> | Some researches are **exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one research from a specific **or** selection may be learned in a colony at a time. | 
-| <img src="../../assets/images/gui/university/research_undo.png" alt="Undo Research"> | Some completed researches may be **undone** if they block another research in some way, do not have a completed research that depend on them, and are not marked with a redstone torch as irreversible. Undoing a research does *not* refund the research costs and consumes the displayed item. | 
+| <img src="../../assets/images/gui/university/research_undo.png" alt="Undo Research"> | Some completed researches may be **undone** if they block another research in some way, do not have a completed research that depends on them, and are not marked with a redstone torch as irreversible. Undoing a research does *not* refund the research costs and consumes the displayed item. | 
 
 ## Below is a description of each of the researches:
 
@@ -52,7 +52,7 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 | Accuracy | [Guard Tower](../../source/buildings/guardtower) at least level 1; 16 iron ingots | Reduces the time [Guards](../../source/workers/guard) sleep by 50% |
 | Tactic Training | Guard Tower at least level 3; 3 blocks of iron | Unlocks the [Barracks](../../source/buildings/barracks) |
 | Avoidance | Guard Tower at least level 3; 3 blocks of iron | Lets Knights use shields |
-| Improved Leather | [Town Hall](../../source/buildings/townhall) at least level 1; 32 leather | Increases Guards' armor's durabilty by 10% |
+| Improved Leather | [Town Hall](../../source/buildings/townhall) at least level 1; 32 leather | Increases Guards' armor's durability by 10% |
 | Taunt | Guard Tower at least level 1; 8 rotten flesh, 8 bones, 8 spider eyes | After a Guard attacks a mob, the mob targets the Guard instead of citizens or the player |
 
 #### Second Column
@@ -66,7 +66,7 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 | Parry | Avoidance | [Smeltery](../../source/buildings/smeltery) at least level 1; 16 iron ingots | Increases Knights' armor by 5% |
 | Dodge | Avoidance | Smeltery at least level 1; 16 iron ingots | Increases Archers' armor by 5% |
 | Boiled Leather | Improved Leather | Town Hall at least level 2; 64 leather | Increases Guards' armor's durability by 20% |
-| Regeneration | Improved Leather | Guard Tower at least level 2; 1 emerald | Lets Guards run away when they have low health (this can be turned off in the 2nd page of their tower's GUI) |
+| Regeneration | Improved Leather | Guard Tower at least level 2; 1 emerald | Lets Guards run away when they have low health (this can be turned off on the 2nd page of their tower's GUI) |
 | Consume Arrows | Taunt | Guard Tower at least level 2; 64 arrows | Archers will request arrows for their bows, and using them will give the Archers a damage boost of 1 heart. If they run out of arrows, they can still shoot, but without the damage boost |
 
 #### Third Column
@@ -144,6 +144,7 @@ You can only have one sixth column research unlocked at a time!
 | First Aid | [Town Hall](../../source/buildings/townhall) at least level 1; 8 hay bales | Increases colonists' health by 1 heart |
 | Higher Learning | House at least level 3; 3 books | Unlocks the [School](../../source/buildings/school) |
 | Ambition | 1 Diamond | Unlocks the [Mystical Site](../../source/buildings/mysticalsite) |
+| Remembrance | [Town Hall](../../source/buildings/townhall) at least level 2; 8 bones | Unlocks the [Graveyard](../../source/buildings/graveyard) |
 
 #### Second Column
 
@@ -159,6 +160,9 @@ You can only have one sixth column research unlocked at a time!
 | Gourmand | First Aid | Restaurant at least level 2; 32 cookies | Food is 10% more effective at restoring colonists' saturation |
 | More Books | Higher Learning | School at least level 1; 6 books | Increases the effectiveness of [Teachers](../../source/workers/teacher) by 5% |
 | Nurture | Higher Learning | School at least level 1; 32 cooked chicken | Decreases the time it takes children to grow up by 5% |
+| Resurrection Chance I | Remembrance | Graveyard at least level 3; 1 ghast tear | Increases [Undertakers'](../../source/workers/undertaker) chances of resurrecting citizens by 1% |
+| Grave Decay I | Remembrance | Graveyard at least level 3; 64 rotten flesh | Graves take 2 more minutes before decaying |
+| Undertaker Emergency | Remembrance | Graveyard at least level 2; 1 set of iron boots | Undertakers run toward graves instead of walking |
 
 #### Third Column
 
@@ -175,6 +179,8 @@ You can only have one sixth column research unlocked at a time!
 | Gorger | Gourmand | Restaurant at least level 3; 64 cookies | Food is 25% more effective at restoring colonists' saturation |
 | Bookworm | More Books | School at least level 3; 6 bookshelves | Increases the effectiveness of Teachers by 10% |
 | Hormones | Nurture | School at least level 3; 64 cooked chicken | Decreases the time it takes children to grow up by 10% |
+| Resurrection Chance II | Resurrection Chance I | Graveyard level 5; 16 chorus fruit | Increases Undertakers' chances of resurrecting citizens by 2% |
+| Grave Decay II | Grave Decay I | Graveyard level 5; 8 nether wart blocks | Graves take 3 more minutes before decaying |
 
 #### Fourth Column
 
@@ -314,7 +320,7 @@ You can only have one sixth column research unlocked at a time!
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
 | Magic Compost | Fertilizer | 2048 wheat seeds | Increases Farmers' output by 200% |
-| Diamond Coated | Steel Bracing | 128 diamonds | Increases colonists' tools' durabilty by 90% |
+| Diamond Coated | Steel Bracing | 128 diamonds | Increases colonists' tools' durability by 90% |
 | Madness! | Seems Automatic | 1024 iron ingots | Increases colonists' block placing speed by 200% |
 | Motherlode | Amazing Veins | 64 diamond ore | Miner produces 200% more ores |
 | Rainman | RTM | 27 buckets of salmon | Workers work during rain and storms |
