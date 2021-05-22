@@ -22,7 +22,7 @@ layout: default
 ### Note: The Sawmill cannot be built until you have a level 3 [Forester's Hut](../../source/buildings/forester) (or three level 1 Forester's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
-The Sawmill is where the Carpenter will craft any items made of at least 75% wood that do not include ingots, stone, redstone (or produce a redstone signal), or string. The Carpenter will also craft a few other items, including cactus planks, [shingles](../../source/items/shingles), [timber frames](../../source/items/timberframes), [compost barrels](../../source/items/compostbarrel), and [racks](../../source/items/rack). For them to do this, you must teach the Sawmill the recipes and the Carpenter must receive a request for an item from another worker.
+The Sawmill is where the Carpenter will craft any items made of at least 75% wood that do not include ingots, stone, redstone (or produce a redstone signal), or string. The Carpenter will also craft a few other items, including [cactus planks](../../source/items/cactusplanks), [shingles](../../source/items/shingles), [timber frames](../../source/items/timberframes), [compost barrels](../../source/items/compostbarrel), and [racks](../../source/items/rack). For them to do this, you must teach the Sawmill the recipes and the Carpenter must receive a request for an item from another worker.
 
 **Hint:** The number of recipes you can teach the Sawmill doubles per building level. So:
 

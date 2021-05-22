@@ -35,6 +35,13 @@ The Raider's Bane [enchant](../../source/items/enchantments) is not on here as i
 
 | Name | Ingredients | Crafted At | Recipe |
 | ---- | ----------- | ---------- | ------ |
+| [Cactus Planks](../../source/items/cactusplanks) | Cacti | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_planks</recipe> |
+| [Cactus Slab](../../source/items/cactusplanks) | Cactus Planks | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_slab</recipe> |
+| [Cactus Stairs](../../source/items/cactusplanks) | Cactus Planks | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_stairs</recipe> |
+| [Cactus Door](../../source/items/cactusplanks) | Cactus Planks | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_door</recipe> |
+| [Cactus Trapdoor](../../source/items/cactusplanks) | Cactus Planks | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_trapdoor</recipe> |
+| [Cactus Fence](../../source/items/cactusplanks) | Cactus Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_fence</recipe> |
+| [Cactus Fence Gate](../../source/items/cactusplanks) | Cactus Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>cactus_fence_gate</recipe> |
 | [Compost Barrel](../../source/items/compostbarrel) | **Any** Planks + Build Tool + Dirt + Iron Ingot | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel</recipe> |
 | [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel_horizontal</recipe> |
 | [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel_vertical</recipe> |
