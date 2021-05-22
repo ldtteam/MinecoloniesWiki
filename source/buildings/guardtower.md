@@ -61,7 +61,7 @@ The Guard will patrol a set distance around their tower, which is based on their
     <div class="row">
       <div class="col-sm-12 col-md">
         <br><br><br>
-        <img src="../../assets/images/gui/barrackstowergui2.png" class="img-fluid mx-auto" alt="Guard GUI">
+        <img src="../../assets/images/gui/guardtowergui2.png" class="img-fluid mx-auto" alt="Guard GUI">
       </div>
       <div class="col-sm-12 col-md">
         <ul>
@@ -73,12 +73,13 @@ The Guard will patrol a set distance around their tower, which is based on their
             <li>If you set it to Guard, you can set one area for the Guard to stay in. You can set the area by clicking <b>Set Guarding Target</b>, which will spawn a Guard-scepter in your inventory. Right-clicking on a block with the Guard-scepter will set it as the guard spot. </li>
             <li>If you set it to Follow, the Guard will follow you around as your personal bodyguard protecting you or fighting alongside you. They will even go outside the colony when following! If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.</li>
             <li>If you set it to Patrol, you have a couple different options. </li>
-            <ul>
-                <li>If you set <strong>Find Patrol Target</strong> to automatically, the Guard will patrol from hut to hut and back to their tower.</li>
-                <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard-scepter and click a new patrol position. The old ones should disappear.</li>
-          </ul>
+                <ul>
+                    <li>If you set <strong>Find Patrol Target</strong> to automatically, the Guard will patrol from hut to hut and back to their tower.</li>
+                    <li>If you set <strong>Find Patrol Target</strong> to manually, you can set the patrol route when you click on <b>Set Patrol Positions</b>. Clicking on it will spawn a Guard-scepter in your inventory. You can right-click using the Guard-scepter to set patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard-scepter and click a new patrol position. The old ones should disappear.</li>
+                </ul>
+            <li>If you set it to Patrol Mine, the Guard will patrol the level of a <a href="../../source/buildings/mine">Mine</a> the <a href="../../source/workers/miner">Miner</a> is currently mining at. To choose which Mine the Guard will patrol, go to page 3 of the Mine GUI. (This option is not available on Barracks Towers.)</li>
+            </ul>
         </ul>
-      </ul>
     </div>
     </div>
             
