@@ -8,6 +8,18 @@ Listed on this page are the current crafting recipes available in MineColonies/S
 
 **Note:** The [build tool](../../source/items/buildtool) used in any of these recipes will not be consumed in the recipe. It is included to separate our recipes from possible conflicting recipes in other mods.
 
+## Non-MineColonies Items
+
+MineColonies adds recipes for some vanilla items, namely chainmail armor.
+
+| Name | Ingredients | Crafted At | Recipe |
+| ---- | ----------- | ---------- | ------ |
+| Chainmail Boots | Iron Ingots + Iron Nuggets | [Blacksmith's Hut](../../source/buildings/blacksmith) | <recipe>chainmail_boots</recipe> |
+| Chainmail Chestplate | Iron Ingots + Iron Nuggets | [Blacksmith's Hut](../../source/buildings/blacksmith) | <recipe>chainmail_chestplate</recipe> |
+| Chainmail Helmet | Iron Ingots + Iron Nuggets | [Blacksmith's Hut](../../source/buildings/blacksmith) | <recipe>chainmail_helmet</recipe> |
+| Chainmail Leggings | Iron Ingots + Iron Nuggets | [Blacksmith's Hut](../../source/buildings/blacksmith) | <recipe>chainmail_leggings</recipe> |
+{: .table-responsive }
+
 ## Items and Blocks
 
 **Notes:**
