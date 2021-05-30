@@ -26,9 +26,9 @@ The Hospital is where injured or sick citizens go. The Healer will heal them wit
 
 | Disease | Items Needed to Cure |
 | ------- | -------------------- |
-| Influenza (the flu) | Carrot and Potato |
+| Influenza (the flu) | Carrot and Potato (obtained easily from farm hut) |
 | Measles | Dandelion, Kelp, and Poppy |
-| Smallpox | Honey Bottle and Golden Apple |
+| Smallpox | Honey Bottle (easily obtained from the apiary) and Golden Apple |
 
 The higher the level of the Hospital, the more people can be healed at a time. So:
 
