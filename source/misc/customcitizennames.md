@@ -48,6 +48,14 @@ Everything you have to change is in one file.
 
 *Credit to Tealk*
 
+### Hungarian
+
+[Download Hungarian Template File](../../source/misc/languageNameTemplates/hungarianTemplate.toml)
+
+[Download Unaccented Template File](../../source/misc/languageNameTemplates/unaccHungarianTemplate.toml)
+
+*Credit to hron84*
+
 ### Japanese
 
 [Download Japanese Template File](../../source/misc/languageNameTemplates/japaneseTemplate.toml)

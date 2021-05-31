@@ -19,7 +19,7 @@ layout: default
 </div>
 <br>
 
-Shingles are decorative roofing tiles for the tops of buildings. Shingles come in all wood types, including cactus planks, and many different colors. 
+Shingles are decorative roofing tiles for the tops of buildings. Shingles come in all wood types, including [cactus planks](../../source/items/cactusplanks), and many different colors. 
 
 There is even a shingle half slab for the crown of the roof that comes in all the colors as well!
 
