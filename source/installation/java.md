@@ -59,7 +59,7 @@ MineColonies doesn't always accept the latest version of Structurize. To ensure 
 
 If you are adding the entire modpack to be able to play on the official server, you will require an external launcher to download the pack. The [Curseforge launcher](../../source/installation/curseforge) works on Windows or macOS. Other options include [GDlauncher](../../source/installation/gdlauncher) or [MultiMC](https://multimc.org/#Download), both offering Windows, macOS and Linux support. Finally, if you can not or do not wish to 'install' a launcher you can use [CMPDL](https://github.com/Vazkii/CMPDL) that will run a small Java program to download the required modpack. 
 
-Unfortunately manual 'installing' modpacks is no longer an option as Curseforge no longer distributes mods in the downloaded zip files for modpacks due to licensing issues.
+Unfortunately, manually 'installing' modpacks is no longer an option as Curseforge no longer distributes mods in the downloaded zip files for modpacks due to licensing issues.
 
 ### Run Minecraft and Select Profile
 
