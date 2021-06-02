@@ -19,8 +19,8 @@ When a citizen realizes that they need an item, they’ll first look in their in
 But what if you don’t have that item in your warehouse? In that case, your citizens will check who is able to make that item and attempt to ask them to make it. For example, if your builder needs some oak stairs and there aren’t any in the warehouse, your [Carpenter](../../source/workers/carpenter) will check if they know how to make oak stairs. If they do, then they’ll request some oak planks to turn into stairs. If there aren’t any oak planks but the carpenter also knows how to make them from oak logs, then they’ll request oak logs to turn into oak planks to turn into oak stairs. Your citizens will keep making and trying to fulfill requests until they have the items they need or they cannot fulfill a request given their jobs and knowledge. As such, it’s convenient to get as many citizens working different jobs as you can to fulfill as many of their requests as they can automatically!
 
 ## Manual Requests
-
-What if your builder asks for oak stairs but you don’t have a carpenter yet? In that case, the request can’t be filled automatically, and the citizen will wait for you, the mayor, to fulfill the request manually. These citizens will have a red gear over their head (put a picture here!) and, in talking to them, will tell you what they need. Once you have that item they need, you can give it to them directly or put it in the warehouse for your couriers to deliver.
+<!-- Put a picture of the red gear for manual requests here!-->
+What if your builder asks for oak stairs but you don’t have a carpenter yet? In that case, the request can’t be filled automatically, and the citizen will wait for you, the mayor, to fulfill the request manually. These citizens will have a red gear over their head and, in talking to them, will tell you what they need. Once you have that item they need, you can give it to them directly or put it in the warehouse for your couriers to deliver.
 
 ## Clipboard
 
@@ -30,7 +30,8 @@ Some of your citizens will always have constant requests (e.g., the [Smelter](..
 
 ## Stash/Postbox
 
-As your colony grows, so too will the number of items and blocks in your warehouse and that your citizens can produce. Searching the warehouse each time you want something can be tedious. Thankfully, your colony has a [Postbox](../../source/items/postbox), from which you can make requests just like your citizens! Simply place it down somewhere you can easily access and, when you want to request an item from your colony but don’t want to hunt it down, make a request at the postbox (put a picture here!). These can range from held items to placeable blocks to any items your workers can craft.
+As your colony grows, so too will the number of items and blocks in your warehouse and that your citizens can produce. Searching the warehouse each time you want something can be tedious. Thankfully, your colony has a [Postbox](../../source/items/postbox), from which you can make requests just like your citizens! Simply place it down somewhere you can easily access and, when you want to request an item from your colony but don’t want to hunt it down, make a request at the postbox. These can range from held items to placeable blocks to any items your workers can craft.
+<!-- Put a picture of using the postbox here!-->
 
 For convenience, your colony also has a [Stash](../../source/items/stash). The stash behaves like a reverse postbox: couriers will take any items you place in the stash and put them back in the warehouse.
 
