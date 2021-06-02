@@ -20,15 +20,17 @@ But what if you don’t have that item in your warehouse? In that case, your cit
 
 ## Manual Requests
 
-What if your builder asks for oak stairs but you don’t have a carpenter yet? In that case, the request can’t be filled automatically, and the citizen will wait for you, the mayor, to fulfill the request manually. These citizens will have a red gear over their head and, in talking to them, will tell you what they need. Once you have that item they need, you can give it to them directly or put it in the warehouse for your couriers to deliver.
+What if your builder asks for oak stairs but you don’t have a carpenter yet? In that case, the request can’t be filled automatically, and the citizen will wait for you, the mayor, to fulfill the request manually. These citizens will have a red gear over their head (put a picture here!) and, in talking to them, will tell you what they need. Once you have that item they need, you can give it to them directly or put it in the warehouse for your couriers to deliver.
 
 ## Clipboard
 
 Of course, being the busy mayor you are, you’ll want to be able to see all of your citizens’ requests without running to each one. For this, there’s the [Clipboard](../../source/items/clipboard). Simply right-click the air with your clipboard and you can see all of your citizens’ requests, no matter where you are!
 
+Some of your citizens will always have constant requests (e.g., the [Smelter](../../source/workers/smelter) requesting ores). Clicking the "Show important requests only" hides these constant requests so you can focus on the requests that bottleneck your citizens' work.
+
 ## Stash/Postbox
 
-As your colony grows, so too will the number of items and blocks in your warehouse and that your citizens can produce. Searching the warehouse each time you want something can be tedious. Thankfully, your colony has a [Postbox](../../source/items/postbox), from which you can make requests just like your citizens! Simply place it down somewhere you can easily access and, when you want to request an item from your colony but don’t want to hunt it down, make a request at the postbox. These can range from held items to placeable blocks to any items your workers can craft.
+As your colony grows, so too will the number of items and blocks in your warehouse and that your citizens can produce. Searching the warehouse each time you want something can be tedious. Thankfully, your colony has a [Postbox](../../source/items/postbox), from which you can make requests just like your citizens! Simply place it down somewhere you can easily access and, when you want to request an item from your colony but don’t want to hunt it down, make a request at the postbox (put a picture here!). These can range from held items to placeable blocks to any items your workers can craft.
 
 For convenience, your colony also has a [Stash](../../source/items/stash). The stash behaves like a reverse postbox: couriers will take any items you place in the stash and put them back in the warehouse.
 
