@@ -31,7 +31,6 @@ Some of your citizens will always have constant requests (e.g., the [Smelter](..
 ## Stash/Postbox
 
 As your colony grows, so too will the number of items and blocks in your warehouse and that your citizens can produce. Searching the warehouse each time you want something can be tedious. Thankfully, your colony has a [Postbox](../../source/items/postbox), from which you can make requests just like your citizens! Simply place it down somewhere you can easily access and, when you want to request an item from your colony but don’t want to hunt it down, make a request at the postbox. These can range from held items to placeable blocks to any items your workers can craft.
-<!-- Put a picture of using the postbox here!-->
 
 For convenience, your colony also has a [Stash](../../source/items/stash). The stash behaves like a reverse postbox: couriers will take any items you place in the stash and put them back in the warehouse.
 
