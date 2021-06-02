@@ -26,7 +26,7 @@ What if your builder asks for oak stairs but you don’t have a carpenter yet? I
 
 Of course, being the busy mayor you are, you’ll want to be able to see all of your citizens’ requests without running to each one. For this, there’s the [Clipboard](../../source/items/clipboard). Simply right-click the air with your clipboard and you can see all of your citizens’ requests, no matter where you are!
 
-Some of your citizens will always have constant requests (e.g., the [Smelter](../../source/workers/smelter) requesting ores). Clicking the "Show important requests only" hides these constant requests so you can focus on the requests that bottleneck your citizens' work.
+Some of your citizens will always have constant requests (e.g., the [Smelter](../../source/workers/smelter) requesting ores). Clicking the "Show Important Requests Only" hides these constant requests, so you can focus on the requests that bottleneck your citizens' work.
 
 ## Stash/Postbox
 
