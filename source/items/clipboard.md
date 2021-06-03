@@ -24,7 +24,7 @@ After you register the clipboard, this message will appear:
 <p style="text-align:center;"><img src="../../assets/images/misc/clipboardregistered.png" alt="Clipboard Registered Message"></p>
 <br>
 
-Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a [Courier](../../source/workers/courier))!
+Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a [Courier](../../source/workers/courier)) and as long as you are close to your colony!
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui1.png" alt="Clipboard GUI"></p>
