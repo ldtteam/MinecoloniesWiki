@@ -38,7 +38,6 @@ As your colony grows, so too will the number of items and blocks in your Warehou
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox"></p>
-    <recipe>postbox</recipe>
 </div>
 
 If you right-click the postbox, you'll see the GUI.
@@ -48,7 +47,6 @@ For convenience, your colony also has a [Stash](../../source/items/stash). The s
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/items/stashbox.png" alt="Stashbox"></p>
-    <recipe>stash</recipe>
 </div>
 
 ## Priority
