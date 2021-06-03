@@ -12,7 +12,7 @@ Thankfully, there’s the Request System! Citizens will automatically ask for th
 
 The request system is based on two components: the [Warehouse](../../source/buildings/warehouse) — which stores all of your colony’s resources — and the [Couriers](../../source/workers/courier) — who pick up and drop off items between buildings. The Couriers wait in the Warehouse until a request comes in.
 
-When a citizen realizes that they need an item, they’ll first look in their inventory, hut block, and attached hut inventory. If they cannot find the item in these locations, they’ll then make a request automatically. If this item is in the Warehouse, a Courier will then take it from the Warehouse and deliver it to your citizen automatically.
+When a citizen realizes that they need an item, they’ll first look in their inventory, hut block, and [Racks](../../source/items/rack) in their hut. If they cannot find the item in these locations, they’ll then make a request automatically. If this item is in the Warehouse, a Courier will then take it from the Warehouse and deliver it to your citizen automatically.
 
 ## Crafting Requests
 
