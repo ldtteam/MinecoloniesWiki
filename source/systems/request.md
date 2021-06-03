@@ -36,6 +36,6 @@ For convenience, your colony also has a [Stash](../../source/items/stash). The s
 
 ## Priority
 
-Finally, you can adjust the order in which couriers pick up items from each building by changing that building's *priority*. Higher numbers mean higher priority, so buildings with a priority of 10/10 are visited before buildings with a priority of 1/10. This can help ensure the colonists doing urgent jobs are not delayed by those with less urgent jobs.
+Finally, you can adjust the order in which Couriers pick up items from each building by changing that building's *priority*. Higher numbers mean higher priority, so buildings with a priority of 10/10 are visited before buildings with a priority of 1/10. This can help ensure the colonists doing urgent jobs are not delayed by those with less urgent jobs.
 
 Priority only affects pickup, though; deliveries *from* the Warehouse *to* other buildings or the postbox are always high priority.
