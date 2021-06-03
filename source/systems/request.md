@@ -41,6 +41,9 @@ As your colony grows, so too will the number of items and blocks in your Warehou
     <recipe>postbox</recipe>
 </div>
 
+If you right-click the postbox, you'll see the GUI.
+<p style="text-align:center;"><img src="../../assets/images/gui/postboxgui.png" alt="Postbox GUI"></p>
+
 For convenience, your colony also has a [Stash](../../source/items/stash). The stash behaves like a reverse postbox: Couriers will take any items you place in the stash and put them back in the Warehouse.
 
 <div class="infobox box text-center">
