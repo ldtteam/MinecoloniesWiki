@@ -24,7 +24,11 @@ What if your builder asks for oak stairs but you don’t have a carpenter yet? I
 
 ## Clipboard
 
-Of course, being the busy mayor you are, you’ll want to be able to see all of your citizens’ requests without running to each one. For this, there’s the [Clipboard](../../source/items/clipboard). Simply right-click the air with your clipboard and you can see all of your citizens’ requests, no matter where you are!
+Of course, being the busy mayor you are, you’ll want to be able to see all of your citizens’ requests without running to each one. For this, there’s the [Clipboard](../../source/items/clipboard). Simply right-click the air with your clipboard and you can see all of your citizens’ requests, no matter where you are (as long as you're close to your colony)!
+
+<br>
+<p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui1.png" alt="Clipboard GUI"></p>
+<br>
 
 Some of your citizens will always have constant requests (e.g., the [Smelter](../../source/workers/smelter) requesting ores). Clicking the "Show Important Requests Only" hides these constant requests, so you can focus on the requests that bottleneck your citizens' work.
 
@@ -32,7 +36,17 @@ Some of your citizens will always have constant requests (e.g., the [Smelter](..
 
 As your colony grows, so too will the number of items and blocks in your Warehouse and that your citizens can produce. Searching the Warehouse each time you want something can be tedious. Thankfully, your colony has a [Postbox](../../source/items/postbox), from which you can make requests just like your citizens! Simply place it down somewhere you can easily access and, when you want to request an item from your colony but don’t want to hunt it down, make a request at the postbox. These can range from held items to placeable blocks to any items your workers can craft.
 
+<div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/postbox.png" alt="Postbox"></p>
+    <recipe>postbox</recipe>
+</div>
+
 For convenience, your colony also has a [Stash](../../source/items/stash). The stash behaves like a reverse postbox: Couriers will take any items you place in the stash and put them back in the Warehouse.
+
+<div class="infobox box text-center">
+    <p style="text-align:center;"><img src="../../assets/images/items/stashbox.png" alt="Stashbox"></p>
+    <recipe>stash</recipe>
+</div>
 
 ## Priority
 
