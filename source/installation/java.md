@@ -55,9 +55,11 @@ Follow the last three steps, except for Structurize (which MineColonies needs to
 
 MineColonies doesn't always accept the latest version of Structurize. To ensure you have the required version, first, click on the MineColonies file name (on the Curseforge website). You'll be taken to the changelog, where it should say the accepted Structurize version at the top. Download that exact version.
 
-#### If Adding Pack, Extract It
+#### Cannot Add Modpack Without External Installer
 
-If you are adding the entire modpack to be able to play on the official server, unzip the zip file you got from CurseForge containing all the mod files. Copy the mod files to the *mods* folder as you did before.
+If you are adding the entire modpack to be able to play on the official server, you will require an external launcher to download the pack. The [Curseforge launcher](../../source/installation/curseforge) works on Windows or macOS. Other options include [GDlauncher](../../source/installation/gdlauncher) or [MultiMC](https://multimc.org/#Download), both offering Windows, macOS and Linux support. Finally, if you can not or do not wish to 'install' a launcher you can use [CMPDL](https://github.com/Vazkii/CMPDL) that will run a small Java program to download the required modpack. 
+
+Unfortunately, manually 'installing' modpacks is no longer an option as Curseforge no longer distributes mods in the downloaded zip files for modpacks due to licensing issues.
 
 ### Run Minecraft and Select Profile
 
