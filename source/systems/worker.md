@@ -28,10 +28,53 @@ Workers' skills/levels increase as they work. Their level is limited by the leve
 
 <br>
 
-A chart of all the jobs and their traits, from sikri(#2346) on [Discord](https://discord.minecolonies.com):
+A chart of all the jobs and their traits, from hog(#1112) on [Discord](https://discord.minecolonies.com):
 <br>
 <br>
-<img src="../../assets/images/misc/jobsandskills.png" alt="Jobs and Skills" />
+
+| Worker | Primary Skill | Secondary Skill |
+| ------ | ------------- | --------------- |
+| [Archer in Training](../workers/archerintraining) | Agility | Adaptability |
+| [Baker](../workers/baker) | Knowledge | Dexterity |
+| [Beekeeper](../workers/beekeeper) | Dexterity | Adaptability |
+| [Blacksmith](../workers/blacksmith) | Strength | Focus |
+| [Builder](../workers/builder) | Adaptability | Athletics |
+| [Carpenter](../workers/carpenter) | Knowledge | Dexterity |
+| [Chicken Farmer](../workers/chickenfarmer) | Adaptability | Agility |
+| [Composter](../workers/composter) | Stamina | Athletics |
+| [Concrete Mixer](../workers/concretemixer) | Stamina | Dexterity |
+| [Cook](../workers/cook) | Adaptability | Knowledge |
+| [Assistant Cook](../workers/assistantcook) | Adaptability | Knowledge |
+| [Courier](../workers/courier) | Agility | Adaptability |
+| [Cowhand](../workers/cowhand) | Athletics | Stamina |
+| [Crusher](../workers/crusher) | Stamina | Strength |
+| [Dyer](../workers/dyer) | Creativity | Dexterity |
+| [Enchanter](../workers/enchanter) | Mana | Knowledge |
+| [Farmer](../workers/farmer) | Stamina | Athletics |
+| [Fisher](../workers/fisher) | Focus | Agility |
+| [Fletcher](../workers/fletcher) | Dexterity | Creativity |
+| [Florist](../workers/florist) | Dexterity | Agility |
+| [Forester](../workers/forester) | Strength | Focus |
+| [Glassblower](../workers/glassblower) | Creativity | Focus |
+| [Guard (Knight)](../workers/guard) | Adaptability | Stamina |
+| [Guard (Archer)](../workers/guard) | Agility | Adaptability |
+| [Healer](../workers/healer) | Mana | Knowledge |
+| [Knight in Training](../workers/knightintraining) | Adaptability | Stamina |
+| [Library Student](../workers/librarystudent) | Inteligence | No Secondary |
+| [Mechanic](../workers/mechanic) | Knowledge | Agility |
+| [Miner](../workers/miner) | Strength | Stamina |
+| [Planter](../workers/planter) | Agility | Dexterity |
+| [Pupil](../workers/pupil) | Knowledge | Mana |
+| [Rabbit Herder](../workers/rabbitherder) | Agility | Athletics |
+| [Shepherd](../workers/shepherd) | Focus | Strength |
+| [Sifter](../workers/sifter) | Focus | Strength |
+| [Smelter](../workers/smelter) | Athletics | Strength |
+| [Stonemason](../workers/stonemason) | Creativity | Dexterity |
+| [Stone Smelter](../workers/stonesmelter) | Athletics | Desterity |
+| [Swineherd](../workers/swineherd) | Strength | Athletics |
+| [Teacher](../workers/teacher) | Knowledge | Mana |
+| [Undertaker](../workers/undertaker) | Strength | Mana |
+| [University Researcher](../workers/researcher) | Knowledge | Mana |
 
 ## Tool/Sword Levels
 
