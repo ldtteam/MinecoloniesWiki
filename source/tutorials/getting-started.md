@@ -80,8 +80,16 @@ To place the [Supply Ship](../items/supplycampandship), you need to have a large
 To place the [Supply Camp](../items/supplycampandship), you need to have a large enough flat, clear piece of land (at least 16x17 blocks).
 
 When you place the Supply Ship/Camp, it will spawn a chest that will contain the [Town Hall](../../source/buildings/townhall) block and the [build tool](../../source/items/buildtool). **Once the Supply Ship/Camp is placed, you can't place another in the world.**
- 
-**Hint:** The most important tool you will need for the entire mod is the build tool (check our [build tool](../items/buildtool) page). Craft the build tool so you can place all the huts and the Supply Ship or Supply Camp in the perfect spot.
+
+Place the Supply Ship/Camp by right-clicking the item directly on the water/ground -- if you have a build tool already, don't use it for this (you're expected to get the tool from the camp/ship rather than already having one).
+
+**Hint:** If you're not able to place the Supply Camp/Ship, try it block by block: one to the right, left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, seaweed, coral etc.
+
+### Town Hall
+
+ The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a square 4 chunks in radius, measured from the chunk where you placed your Town Hall block the first time (with the default [config](../../source/misc/configfile)). Therefore, plan carefully where you want to place your Town Hall. 64 blocks (4 chunks x 4 chunks) in every direction from that chunk will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to sky limit.
+
+**Hint:** The most important tool you will need for the entire mod is the build tool (check our [build tool](../items/buildtool) page). Obtain one from the Supply Ship/Camp or craft another so you can place all the huts (including the Town Hall) in the perfect spot.
 
 <p class="h4 text-center"><b>Build Tool Video.</b></p>
 
@@ -89,12 +97,6 @@ When you place the Supply Ship/Camp, it will spawn a chest that will contain the
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DVGGDUXbTOY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <br />
-
-**Hint:** If you're not using the build tool and aren't able to place the Supply Camp/Ship, try it block by block: one to the right, left, closer or further from the area you cleared. The area cannot contain any holes or have any flowers, grass, ferns, seaweed, coral etc.
-
-### Town Hall
-
- The protected area of your colony (once the [Town Hall](../../source/buildings/townhall) has been placed) will be a square 4 chunks in radius, measured from the chunk where you placed your Town Hall block the first time (with the default [config](../../source/misc/configfile)). Therefore, plan carefully where you want to place your Town Hall. 64 blocks (4 chunks x 4 chunks) in every direction from that chunk will be your protected Town area including mountains, hills, lakes, oceans, caves, world generated structures, etc. from bedrock to sky limit.
 
 Due to the protected area of each colony, you have to carefully scout your surrounding to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction (in multiplayer, etc.). If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
@@ -114,7 +116,7 @@ For example, in the official MineColonies server it will be the default 4 chunk 
 
 ### Step 1
 
-Get enough materials and craft your Supply Ship/Camp, then place it with the <a href="#build_tool">build tool</a> or by right-clicking a block with it. There will be a chest (or <a href="../../source/items/rack">rack</a>) inside the placed Ship/Camp with a Town Hall block and a build tool.
+Get enough materials and craft your Supply Ship/Camp, then place it by right-clicking a block with it (do not use the build tool, if you happen to already have one). There will be a chest (or <a href="../../source/items/rack">rack</a>) inside the placed Ship/Camp with a Town Hall block and a build tool.
 
 **Hint:** Gather as many materials as possible to give to your [Builder](../../source/workers/builder) when they start building. They will ask you for all kinds of materials for each building or upgrade, depending on the style of building you have chosen. The materials needed for most styles will be mainly wood, cobblestone, and torches for the lower levels. Further upgrades will require more elaborate materials.
 
