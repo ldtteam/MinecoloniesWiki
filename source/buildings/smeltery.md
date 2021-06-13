@@ -81,4 +81,15 @@ When accessing the Smeltery's hut block by right-clicking on it, you will see a 
   </div>
 </div>
 <br>
-  
+
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Smeltery GUI 4">
+  </div>
+  <div class="col-sm-12 col-md">
+    <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Smeltery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+    </ul>
+  </div>
+</div>
+<br>

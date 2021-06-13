@@ -96,3 +96,16 @@ The Guard will patrol a set distance around their tower, which is based on their
     </div>
   </div>
 </div>
+
+Page four has a minimum stock list.
+
+<div class="row">
+    <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Guard Tower GUI 4">
+    </div>
+    <div class="col-sm-12 col-md">
+        <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Guard Tower to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        </ul>
+    </div>
+</div>

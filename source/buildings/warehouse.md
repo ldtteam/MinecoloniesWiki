@@ -70,7 +70,7 @@ This is page three of the Warehouse GUI.
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui3.jpg" class="img-fluid mx-auto" alt="Warehouse GUI 3">
+    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Warehouse GUI 3">
   </div>
   <div class="col-sm-12 col-md">
 	<br>

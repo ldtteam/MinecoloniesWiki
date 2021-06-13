@@ -79,10 +79,27 @@ Once the Builder's Hut is built you can now build anything you want, like worker
     </ul>
   </div>
   </div>
+  <br>
+   <div class="col-sm-12 col-md"><br>
+      <p>Page 4 of the GUI:</p>
+    </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Builder GUI 4">
+    </div>
+  <br>
+  <div class="col-sm-12 col-md">
+    <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Builder's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+    </ul>
+  </div>
+  </div>
    
   <br>
   </div>
 </div>
+
 ### A few things to consider
 
 For the placement of the Builder's Hut, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the Builder has less of a distance to walk between their hut and the build sites.

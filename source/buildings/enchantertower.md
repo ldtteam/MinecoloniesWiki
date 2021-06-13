@@ -59,4 +59,8 @@ When accessing the Enchanter's Hut block by right-clicking on it, you will see a
 <br> <br>
 On page two of the GUI, you can set which workers the Enchanter will collect XP from.
 <br> 
- <img src="../../assets/images/gui/enchantergui2.png" alt="Enchanter GUI Page 2" />
+ <img src="../../assets/images/gui/enchantergui2.png" alt="Enchanter GUI Page 2"/>
+
+Page three has a minimum stock list so you can tell the Enchanter's Tower to keep certain things on hand.
+<br>
+<img src="../../assets/images/gui/minstockgui.png" alt="Enchanter GUI Page 3"/>

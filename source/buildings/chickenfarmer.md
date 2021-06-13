@@ -65,6 +65,19 @@ When accessing the Chicken Farmer's Hut block by right-clicking on it, you will 
         <li><b>Breeding:</b> On by default. Here you can choose if the Chicken Farmer will breed (and consequently kill) chickens or just collect eggs.</li>
     </ul>
   </div>
-</div>  
-  
+</div>
   <br>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>This is page three of the GUI. It has one button:</p>
+    <ul>
+        <li><b> Minimum Stock: </b> Use this button to tell the Archery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+    </ul>
+  </div>
+</div>

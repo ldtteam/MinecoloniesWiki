@@ -75,6 +75,19 @@ The Mine is where the Miner will mine for ores and materials. Once they are hire
         </ul>
       </div>
     </div>  
+
+    This is page four of the Mine's GUI.  
+
+    <div class="row">
+      <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Mine GUI 4">
+      </div>
+      <div class="col-sm-12 col-md">
+        <ul>
+            <li><strong> Minimum Stock: </strong> Use this button to tell the Archery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        </ul>
+      </div>
+    </div>  
       
       <br>
   </div>

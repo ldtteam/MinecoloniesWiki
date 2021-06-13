@@ -114,3 +114,18 @@ When accessing the Barracks Tower's hut block by right-clicking on it, you will 
     <div class="col-sm-12 col-md">
   </div>
 </div>
+
+
+Page four has a minimum stock list.
+
+<div class="row">
+    <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Barracks Tower GUI 4">
+    </div>
+    <div class="col-sm-12 col-md">
+        <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Barracks Tower to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        </ul>
+    </div>
+</div>
+

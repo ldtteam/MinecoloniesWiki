@@ -69,8 +69,20 @@ When accessing the Apiary block by right-clicking on it, you will see a GUI with
       <li><b>Get hive tool:</b> Click this button to get the hive tool, which is how you select which hives the Beekeeper will take care of. To select a hive, right-click on it with the hive tool. Right-click on a hive again to remove it.</li>
     </ul>
   </div>
-</div>  
-  
-  <br>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Apiary GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>This is page three of the GUI. It has one button:</p>
+    <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Archery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+    </ul>
+  </div>
+</div>
   </div>
 </div>

@@ -56,4 +56,17 @@ When accessing the Combat Academy's hut block by right-clicking on it, you will 
     </ul>
   </div>
 </div>  
-  <br> 
+  <br>
+
+This is page two of the Combat Academy GUI.
+
+<div class="row">
+    <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Combat Academy GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
+        <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Combat Academy to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        </ul>
+    </div>
+</div>

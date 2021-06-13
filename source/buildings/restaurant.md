@@ -81,7 +81,7 @@ The Restaurant is where the Cook will cook food, provided they have the necessar
 
     <div class="row">
       <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/restaurantgui4.jpg" class="img-fluid mx-auto" alt="Restaurant GUI 4">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Restaurant GUI 4">
       </div>
       <div class="col-sm-12 col-md">
           <ul>
