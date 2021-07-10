@@ -58,10 +58,7 @@ The scans folder is where the schematics are saved after performing a scan using
 
 #### Where is the schematic folder?
 
-Custom schematics need to be copied inside the schematic folder. The location of this folder depends of the type of game:
-
-- For a singleplayer game, the schematics are loaded from the `*/minecraft/saves/(World Name)/structurize/schematics/` folder.
-- For a multiplayer game, the schematics are always loaded from the world's directory under the `*/structurize/schematics/` directory.
+Custom schematics need to be copied inside the schematic folder. For both singleplayer and multiplayer games, the folder is under `*/structurize/schematics/`.
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
 
