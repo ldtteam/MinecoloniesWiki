@@ -106,6 +106,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | enchanter1     | enchanter2     | enchanter3     | enchanter4     | enchanter5     |
 | farmer1        | farmer2        | farmer3        | farmer4        | farmer5        |
 | fisherman1     | fisherman2     | fisherman3     | fisherman4     | fisherman5     |
+| fletcher1      | fletcher2      | fletcher3      | fletcher4      | fletcher5      |
 | florist1       | florist2       | florist3       | florist4       | florist5       |
 | glassblower1   | glassblower2   | glassblower3   | glassblower4   | glassblower5   |
 | graveyard1     | graveyard2     | graveyard3     | graveyard4     | graveyard5     |
