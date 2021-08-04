@@ -237,7 +237,7 @@ These are the in-game commands currently available. Most require that a user hav
 
 ## Structurize Commands
 
-`/structurize linksystem <create | addplayer>`
+`/structurize linksystem <create | addplayer | acceptinvite>`
 
 <table class="table">
   <thead>
