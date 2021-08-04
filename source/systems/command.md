@@ -13,6 +13,7 @@ These are the in-game commands currently available. Most require that a user hav
   - [Colony Commands](#colony-commands)
   - [Citizens Commands](#citizens-commands)
   - [Kill Commands](#kill-commands)
+  - [Structurize Commands](#structurize-commands)
 
 **Command Syntax**
 
@@ -231,6 +232,33 @@ These are the in-game commands currently available. Most require that a user hav
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc kill sheep</code><br>Default permission level: OP</td>
       <td class="d-block d-md-table-cell">Kills all sheep inside all colonies.<br>Example:<br><code>/mc kill sheep</code></td>
+    </tr>
+  </tbody>
+</table>
+
+## Structurize Commands
+
+`/structurize linksystem <create | addplayer | acceptinvite>`
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="w-50">Command</th>
+      <th class="d-none d-md-table-cell w-50">Command Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/structurize linksession create</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Creates a linksession to which you can invite other players to see build previews.<br>Example:<br><code>/structurize linksession create</code></td>
+    </tr>
+    <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/structurize linksession addplayer &lt;other player's name&gt;</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Invites a player to your link session so they can see your building previews. Make sure you create one first! After being invited, players have to accept the invitation.<br>Example:<br><code>/structurize linksession addplayer Steve</code></td>
+    </tr>
+        <tr class="d-block d-md-table-row">
+      <td class="d-block d-md-table-cell"><code>/structurize linksession acceptinvite</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Accepts an invitation to a link session.<br>Example:<br><code>/structurize linksession acceptinvite</code></td>
     </tr>
   </tbody>
 </table>
