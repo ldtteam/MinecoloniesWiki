@@ -13,6 +13,7 @@ These are the in-game commands currently available. Most require that a user hav
   - [Colony Commands](#colony-commands)
   - [Citizens Commands](#citizens-commands)
   - [Kill Commands](#kill-commands)
+  - [Structurize Commands](#structurize-commands)
 
 **Command Syntax**
 
