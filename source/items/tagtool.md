@@ -21,7 +21,8 @@ The Tag Tool is a creative-only item used to help build custom [schematics](../.
 
 2. While you are holding the tag tool, you will see all existing tags overlaying their blocks in-world, and they will be highlighted with a white border.
 
-3. Right-click the tag tool in the air to open its GUI. This allows you to type in the tag that you want to apply or remove.  Close the GUI afterwards. The GUI also shows a list of all currently tagged blocks.
+3. Right-click the tag tool in the air to open its GUI. This allows you to type in the tag that you want to apply or remove. Close the GUI afterwards. The GUI also shows a list of all currently tagged blocks.
+
 
 4. Left-click on a block to apply the current tag to that block. Left-click again to remove the tag.
 
