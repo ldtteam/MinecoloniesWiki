@@ -173,6 +173,8 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | [University](../../source/buildings/university)         | Bookshelves                                                          |                     |
 | [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/rack) (more each level)                   |                     |
 
+Some buildings may also require tags to be set on certain blocks using the [tag tool](../../source/items/tagtool).
+
 ## Level Requirements for Overworld Styles
 
 | Level          | Requirements          |
@@ -205,6 +207,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
   <li>Make sure all <a href="../../source/items/rack">racks</a> and furnaces are in the same location through all levels (to prevent the contents spilling out when they're getting moved)</li>
   <li>Use <a href="../../source/items/placeholderblocks">placeholders</a> where you want to keep any existing block (including from level to level), like the <a href="../../source/buildings/barrackstower">Barracks Towers</a> in the <a href="../../source/buildings/barracks">Barracks</a> schematic</li>
   <li>Use <a href="../../source/items/placeholderblocks">solid placeholders</a> at or below ground level</li>
+  <li>Place a <a href="../../source/items/tagtool"><code>groundlevel</code> tag</a> at ground level if your hut isn't sitting directly on the ground.</li>
   <li>Use only vanilla blocks or Structurize blocks (for official styles)</li>
   <li>Use Books and Quills instead of blank books</li>
 </ul>
