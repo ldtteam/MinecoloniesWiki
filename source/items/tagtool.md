@@ -49,7 +49,7 @@ The following tags are currently implemented (more may be added from time to tim
 
     This tag is supported by all huts and decorations. It is optional. When included, it should only appear on exactly one block in the schematic that is at the nominal "ground level" of the building -- i.e. any blocks below this should be an underground "basement" area, blocks at the same level should be dirt/grass/other ground blocks (often [solid placeholders](../../source/items/placeholderblocks) are used for this, while underground can be either solid or light placeholders outside of the intended basement area), and blocks above should be the actual building. (If it is specified on more than one block, then only one will take effect. This is harmless if they're all on the same y level but can be confusing if not; hence the recommendation to stick with one at most.)
 
-    When not included, the block immediately below the anchor block is assumed to be the ground level. It is recommended that the `groundlevel` tag be explicitly specified whenever the anchor block is placed above the intended ground level.
+    When not included, the block immediately below the anchor block is assumed to be the ground level. It is recommended that the `groundlevel` tag be explicitly specified whenever the anchor block is placed anywhere other than directly on the intended ground level (or to just always specify it regardless, for safety).
 
     This affects the default alignment of the [build tool](../../source/items/buildtool) -- assuming that the player clicks the build tool on the ground (as is usually the case) it will align the groundlevel of the schematic to this position as well, so that they are less likely to bury the building underground or put the basement above.
 
