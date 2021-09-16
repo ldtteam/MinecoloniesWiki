@@ -85,6 +85,8 @@ subnav:
         url: source/items/stash
       - page: Supply Camp and Supply Ship
         url: source/items/supplycampandship
+      - page: Tag Tool and Tag Anchor
+        url: source/items/tagtool
       - page: Timber Framed Blocks
         url: source/items/timberframes
       - page: Waypoint
