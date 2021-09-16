@@ -13,25 +13,13 @@
       },
       "thirdRow": {
         "firstItem": [
-          "minecraft/oak_planks",
-          "minecraft/spruce_planks",
-          "minecraft/birch_planks",
-          "minecraft/jungle_planks",
-          "minecraft/acacia_planks",
-          "minecraft/dark_oak_planks",
-          "minecolonies/cactus_planks"
+          "minecraft/oak_planks"
         ],
         "secondItem": "minecraft/stick",
         "thirdItem": "minecraft/cobblestone"
       },
       "product": [
-        "minecolonies/blockshingle_oak",
-        "minecolonies/blockshingle_spruce",
-        "minecolonies/blockshingle_birch",
-        "minecolonies/blockshingle_jungle",
-        "minecolonies/blockshingle_acacia",
-        "minecolonies/blockshingle_dark_oak",
-        "minecolonies/blockshingle_cactus"
+        "minecolonies/blockshingle_slate"
       ],
       "amount": "8"
     }
