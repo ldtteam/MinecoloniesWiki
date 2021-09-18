@@ -79,6 +79,8 @@ subnav:
         url: source/items/scantool
       - page: Scrolls
         url: source/items/scrolls
+      - page: Shape Tool
+        url: source/items/shapetool
       - page: Shingles
         url: source/items/shingles
       - page: Stash
