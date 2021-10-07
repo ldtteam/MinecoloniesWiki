@@ -8,6 +8,7 @@ layout: default
     <img src="../../assets/images/buildings/tavern.png" alt="Tavern" />
     <hr />
     <recipe>tavern</recipe>
+    **please note in 1.17 the middle item is a vanilla minecraft barrel
 </div>
 
 The Tavern is like a [House](../../source/buildings/house) in that it houses citizens, however, the Tavern houses four instead of one and can't be upgraded to house more.
