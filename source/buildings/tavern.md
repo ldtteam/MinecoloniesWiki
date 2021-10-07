@@ -7,7 +7,10 @@ layout: default
 <div class="infobox box text-center">
     <img src="../../assets/images/buildings/tavern.png" alt="Tavern" />
     <hr />
+    1.16
     <recipe>tavern</recipe>
+    1.17
+    <recipe>tavern117</recipe>
 </div>
 
 The Tavern is like a [House](../../source/buildings/house) in that it houses citizens, however, the Tavern houses four instead of one and can't be upgraded to house more.
