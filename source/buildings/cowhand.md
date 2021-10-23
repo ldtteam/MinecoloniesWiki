@@ -81,7 +81,7 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
         <br>
         <p>This is page three of the GUI. It has one button:</p>
             <ul>
-                <li><strong> Minimum Stock: </strong> Use this button to tell the Archery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+                <li><strong> Minimum Stock: </strong> Use this button to tell the Cowhand's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
             </ul>
       </div>
     </div>  
