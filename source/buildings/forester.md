@@ -67,7 +67,7 @@ This is page three of the Forester's Hut GUI.
     <ul>
       <li><strong>Replant:</strong> Where you can select if you want the Forester to replant trees that are chopped down. They will only do this if they have enough saplings.</li><br>
       <li><strong>Restriction:</strong> This lets you turn on or off if you want the Forester to be restricted to a certain area when chopping trees. To choose the area, use the Give Tool button.</li><br>
-      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the Forester to work.</li>
+      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the Forester to work. Right click one corner of the area you want, then left click the opposite corner, and this will set a rectangle inside which the Forester will search for trees. Vertical coordinates do not affect this too much; keeping them all around the same y-level can avoid unintentional bugs, though.</li>
     </ul>
   </div>
 </div>
