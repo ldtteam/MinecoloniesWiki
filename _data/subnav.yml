@@ -23,6 +23,8 @@ subnav:
         url: source/systems/command
       - page: Happiness and Saturation Systems
         url: source/systems/happinessandsaturation
+      - page: Pathing System
+        url: source/systems/pathing
       - page: Request System
         url: source/systems/request
       - page: Research System
