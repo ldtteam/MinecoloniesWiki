@@ -5,7 +5,7 @@ layout: default
 # Chicken Farmer's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/chickenherder.png" alt="Chicken Farmer's Hut" />
+    <img src="../../assets/images/buildings/chickenfarmer.png" alt="Chicken Farmer's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>chickenherder</recipe>
+    <recipe>chickenfarmer</recipe>
 </div>
 
  The Chicken Farmer's Hut is where the Chicken Farmer will raise chickens, collect eggs, and butcher chickens for food. You will have to capture and bring in two chickens to the Chicken Farmer's Hut, as the Chicken Farmer will not catch and bring in any chickens.
@@ -40,7 +40,7 @@ When accessing the Chicken Farmer's Hut block by right-clicking on it, you will 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/chickenherdergui.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI">
+    <img src="../../assets/images/gui/chickenfarmergui1.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -56,7 +56,7 @@ When accessing the Chicken Farmer's Hut block by right-clicking on it, you will 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/chickenherdergui2.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI 2">
+    <img src="../../assets/images/gui/chickenfarmergui2.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -65,6 +65,19 @@ When accessing the Chicken Farmer's Hut block by right-clicking on it, you will 
         <li><b>Breeding:</b> On by default. Here you can choose if the Chicken Farmer will breed (and consequently kill) chickens or just collect eggs.</li>
     </ul>
   </div>
-</div>  
-  
+</div>
   <br>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Chicken Farmer's Hut GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>This is page three of the GUI. It has one button:</p>
+    <ul>
+        <li><b> Minimum Stock: </b> Use this button to tell the Archery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+    </ul>
+  </div>
+</div>

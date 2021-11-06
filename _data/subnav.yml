@@ -1,14 +1,16 @@
 subnav:
   - title: Installation
-    subitems: 
+    subitems:
+      - page: GDLauncher (Recommended)
+        url: source/installation/gdlauncher
       - page: Java (Forge)
         url: source/installation/java
-      - page: MultiMC
-        url: source/installation/multimc
   - title: Tutorials
-    subitems: 
-      - page: Tutorial
-        url: source/tutorials/tutorial
+    subitems:
+      - page: Getting Started
+        url: source/tutorials/getting-started
+      - page: Data Packs
+        url: source/tutorials/datapacks
       - page: Schematics
         url: source/tutorials/schematics
   - title: Systems
@@ -21,6 +23,8 @@ subnav:
         url: source/systems/command
       - page: Happiness and Saturation Systems
         url: source/systems/happinessandsaturation
+      - page: Request System
+        url: source/systems/request
       - page: Research System
         url: source/systems/research
       - page: Worker System
@@ -29,44 +33,62 @@ subnav:
     subitems:
       - page: Ancient Tome
         url: source/items/ancient_tome
-      - page: Compost Barrel
-        url: source/items/compostbarrel
       - page: Horizontal Barrel
         url: source/items/barrel_horizontal
       - page: Vertical Barrel
         url: source/items/barrel_vertical
       - page: Build Tool
         url: source/items/buildtool
+      - page: Cactus Planks
+        url: source/items/cactusplanks
       - page: Calipers
         url: source/items/calipers
       - page: Clipboard
         url: source/items/clipboard
       - page: Compost
         url: source/items/compost
+      - page: Compost Barrel
+        url: source/items/compostbarrel
       - page: Construction Tape
         url: source/items/constructiontape
+      - page: Enchantments
+        url: source/items/enchantments
       - page: Floating Carpet
         url: source/items/floatingcarpet
+      - page: Gates
+        url: source/items/gates
+      - page: Meshes
+        url: source/items/meshes
       - page: Multi-Piston
         url: source/items/multipiston
       - page: Paper Wall
         url: source/items/paperwall
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
+      - page: Plate Armor
+        url: source/items/platearmor
       - page: Postbox
         url: source/items/postbox
       - page: Rack
         url: source/items/rack
+      - page: Rallying Banner
+        url: source/items/rallyingbanner
       - page: Resource Scroll
         url: source/items/resourcescroll
       - page: Scan Tool
         url: source/items/scantool
+      - page: Scrolls
+        url: source/items/scrolls
+      - page: Shape Tool
+        url: source/items/shapetool
       - page: Shingles
         url: source/items/shingles
       - page: Stash
         url: source/items/stash
       - page: Supply Camp and Supply Ship
         url: source/items/supplycampandship
+      - page: Tag Tool and Tag Anchor
+        url: source/items/tagtool
       - page: Timber Framed Blocks
         url: source/items/timberframes
       - page: Waypoint
@@ -77,6 +99,8 @@ subnav:
         url: source/workers/archerintraining
       - page: Baker
         url: source/workers/baker
+      - page: Beekeeper
+        url: source/workers/beekeeper
       - page: Blacksmith
         url: source/workers/blacksmith
       - page: Builder
@@ -87,6 +111,8 @@ subnav:
         url: source/workers/chickenfarmer
       - page: Composter
         url: source/workers/composter
+      - page: Concrete Mixer
+        url: source/workers/concretemixer
       - page: Cook
         url: source/workers/cook
       - page: Assistant Cook
@@ -116,7 +142,7 @@ subnav:
       - page: Guard
         url: source/workers/guard
       - page: Healer
-        url: source/workers/healer      
+        url: source/workers/healer
       - page: Knight in Training
         url: source/workers/knightintraining
       - page: Library Student
@@ -129,6 +155,8 @@ subnav:
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
+      - page: Rabbit Herder
+        url: source/workers/rabbitherder
       - page: Shepherd
         url: source/workers/shepherd
       - page: Sifter
@@ -143,10 +171,14 @@ subnav:
         url: source/workers/swineherd
       - page: Teacher
         url: source/workers/teacher
+      - page: Undertaker
+        url: source/workers/undertaker
       - page: University Researcher
         url: source/workers/researcher
   - title: Buildings
     subitems:
+      - page: Apiary
+        url: source/buildings/apiary
       - page: Archery
         url: source/buildings/archery
       - page: Bakery
@@ -154,7 +186,7 @@ subnav:
       - page: Barracks
         url: source/buildings/barracks
       - page: Barracks Tower
-        url: source/buildings/barrackstower  
+        url: source/buildings/barrackstower
       - page: Blacksmith's Hut
         url: source/buildings/blacksmith
       - page: Builder's Hut
@@ -165,6 +197,8 @@ subnav:
         url: source/buildings/combatacademy
       - page: Composter's Hut
         url: source/buildings/composter
+      - page: Concrete Mixer's Hut
+        url: source/buildings/concretemixer
       - page: Courier's Hut
         url: source/buildings/courier
       - page: Cowhand's Hut
@@ -187,6 +221,8 @@ subnav:
         url: source/buildings/forester
       - page: Glassblower's Hut
         url: source/buildings/glassblower
+      - page: Graveyard
+        url: source/buildings/graveyard
       - page: Guard Tower
         url: source/buildings/guardtower
       - page: Hospital
@@ -194,13 +230,17 @@ subnav:
       - page: House
         url: source/buildings/house
       - page: Library
-        url: source/buildings/library  
+        url: source/buildings/library
       - page: Mechanic's Hut
         url: source/buildings/mechanic
       - page: Mine
         url: source/buildings/mine
+      - page: Mystical Site
+        url: source/buildings/mysticalsite
       - page: Plantation
         url: source/buildings/plantation
+      - page: Rabbit Hutch
+        url: source/buildings/rabbithutch
       - page: Restaurant
         url: source/buildings/restaurant
       - page: Sawmill
@@ -229,8 +269,12 @@ subnav:
         url: source/buildings/warehouse
   - title: Misc
     subitems:
+      - page: Configuration File
+        url: source/misc/configfile
       - page: Custom Citizen Names
         url: source/misc/customcitizennames
+      - page: Multilingual Sources
+        url: source/misc/multilingual
       - page: Recipes
         url: source/misc/recipes
       - page: Troubleshooting

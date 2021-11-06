@@ -13,10 +13,7 @@
       <a href="https://minecolonies.com" class="sidenav-link">Home</a>
     </li>
     <li class="sidenav-item">
-      <a href="https://reddit.com/r/minecolonies" class="sidenav-link">Forums</a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://minecolonies.com/about.php" class="sidenav-link">About The Mod</a>
+      <a href="https://minecolonies.com/about.php" class="sidenav-link">About the Mod</a>
     </li>
     <li class="sidenav-item">
       <a href="https://minecolonies.com/team.php" class="sidenav-link">Our Team</a>
@@ -28,7 +25,10 @@
       <a href="https://crowdin.com/project/minecolonies" class="sidenav-link">Translate</a>
     </li>
     <li class="sidenav-item">
-      <a href="https://github.com/ldtteam/minecolonies/issues/new/choose" class="sidenav-link">Open a Bug Report</a>
+      <a href="https://github.com/ldtteam/minecolonies/issues/new/choose" class="sidenav-link">Report a Bug</a>
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" onClick="modeSwitcher()">Toggle dark mode</a>
     </li>
   </ul>
   <hr />
@@ -46,6 +46,9 @@
         </div>
       </li>
     {% endfor %}
+    <li class="sidenav-item">
+      <a href="{{ 'source/search' | relative_url }}" class="sidenav-link">Search</a>
+    </li>
   </ul>
   <hr />
   <ul class="sidenav-nav sidenav-social text-center">
@@ -81,10 +84,7 @@
       <a href="https://minecolonies.com" class="nav-link">Home</a>
     </li>
     <li class="nav-item">
-      <a href="https://reddit.com/r/minecolonies" class="nav-link">Forums</a>
-    </li>
-    <li class="nav-item">
-      <a href="https://minecolonies.com/about.php" class="nav-link">About The Mod</a>
+      <a href="https://minecolonies.com/about.php" class="nav-link">About the Mod</a>
     </li>
     <li class="nav-item">
       <a href="https://minecolonies.com/team.php" class="nav-link">Our Team</a>
@@ -96,7 +96,10 @@
       <a href="https://crowdin.com/project/minecolonies" class="nav-link">Translate</a>
     </li>
     <li class="nav-item">
-      <a href="https://github.com/ldtteam/minecolonies/issues/new/choose" class="nav-link">Open a Bug Report</a>
+      <a href="https://github.com/ldtteam/minecolonies/issues/new/choose" class="nav-link">Report a Bug</a>
+    </li>
+    <li>
+      <div class="mode-button button" id="theme-toggle" onclick="modeSwitcher()"></div>
     </li>
       </ul>
 
@@ -120,7 +123,7 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="https://github.com/ldtteam/MinecoloniesWiki/edit/master/{{ page.path }}" class="nav-link">Edit this Page <i class="fab fa-github"></i></a>
+          <a href="https://github.com/ldtteam/MinecoloniesWiki/edit/main/{{ page.path }}" class="nav-link">Edit this Page <i class="fab fa-github"></i></a>
         </li>
       </ul>
       
@@ -146,6 +149,9 @@
             </div>
           </li>
         {% endfor %}
+        <li class="nav-item">
+          <a href="{{ 'source/search' | relative_url }}" class="nav-link">Search</a>
+        </li>
       </ul>
     </div>
   </div>

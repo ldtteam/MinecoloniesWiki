@@ -1,6 +1,6 @@
 ---
 title: Custom Citizen Names
-layout: recipes
+layout: default
 ---
 # Custom Citizen Names
 
@@ -9,38 +9,32 @@ Everything you have to change is in one file.
 <br>
 
 ## Procedure
-1. Locate the file _minecolonies-server.toml_.<br>
- 
-	For servers:<br>
 
-		(minecraftServerFolder)/world/serverconfig/minecolonies-server.toml
+1. Locate the file _minecolonies-server.toml_. For information on how to find it, see the [config file](../../source/misc/configfile) page.<br>
 
-	For local worlds:<br>
-
-		(minecraftFolder)/saves/(NameOfYourWorld)/serverconfig/minecolonies-server.toml
-        
 
 2. Edit
-	
-	You can use the official language templates we provide here or you can edit at your own risk. If you decide to edit, don't forget to make a copy of the file first and follow the current structure.
-    <br>
+
+   You can use the official language templates we provide here, or you can edit at your own risk. If you decide to edit,
+   don't forget to make a copy of the file first and follow the current structure.
+   <br>
     <ul>
-	<li>Edit with a text editor, like Notepad.</li>
-	<li>The file must have the same name.</li>
+   <li>Edit with a text editor, like Notepad.</li>
+   <li>The file must have the same name.</li>
     </ul>
-    
-    
+
+
 3. Run Minecraft client/server and enjoy!
 
 <br>
 
 ## Official Language Templates
 
-### Spanish
+### Chinese
 
-[Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
+[Download Chinese Template File](../../source/misc/languageNameTemplates/chineseTemplate.toml)
 
-*Credit to Ampaex*
+*Credit to HJ-zhtw*
 
 ### French
 
@@ -48,12 +42,36 @@ Everything you have to change is in one file.
 
 *Credit to Kasilyn*
 
+### German
+
+[Download German Template File](../../source/misc/languageNameTemplates/germanTemplate.toml)
+
+*Credit to Tealk*
+
+### Hungarian
+
+[Download Hungarian Template File](../../source/misc/languageNameTemplates/hungarianTemplate.toml)
+
+[Download Unaccented Template File](../../source/misc/languageNameTemplates/unaccHungarianTemplate.toml)
+
+*Credit to hron84*
+
 ### Japanese
 
 [Download Japanese Template File](../../source/misc/languageNameTemplates/japaneseTemplate.toml)
 
 *Credit to Kasilyn*
 
-<br>
+### Norwegian
 
-## Don't forget that the file must have the name _minecolonies-server.toml_!
+[Download Norwegian Template File](../../source/misc/languageNameTemplates/norwegianTemplate.toml)
+
+*Credit to Holmis*
+
+### Spanish
+
+[Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
+
+*Credit to Ampaex*
+
+<br>

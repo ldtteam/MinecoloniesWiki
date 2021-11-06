@@ -1,24 +1,57 @@
-{"recipes":[
+{
+  "recipes": [
     {
-      "firstRow":
-      {
-        "firstItem": ["minecraft/dye_powder_black","minecraft/dye_powder_blue","minecraft/dye_powder_brown","minecraft/dye_powder_cyan","minecraft/dye_powder_gray","minecraft/dye_powder_green","minecraft/dye_powder_light_blue","minecraft/dye_powder_lime","minecraft/dye_powder_magenta","minecraft/dye_powder_orange","minecraft/dye_powder_pink","minecraft/dye_powder_purple","minecraft/dye_powder_red","minecraft/dye_powder_silver","minecraft/dye_powder_white","minecraft/dye_powder_yellow"],
+      "firstRow": {
+        "firstItem": [
+          "minecraft/dye_powder_black",
+          "minecraft/dye_powder_blue",
+          "minecraft/dye_powder_brown",
+          "minecraft/dye_powder_cyan",
+          "minecraft/dye_powder_gray",
+          "minecraft/dye_powder_green",
+          "minecraft/dye_powder_light_blue",
+          "minecraft/dye_powder_lime",
+          "minecraft/dye_powder_magenta",
+          "minecraft/dye_powder_orange",
+          "minecraft/dye_powder_pink",
+          "minecraft/dye_powder_purple",
+          "minecraft/dye_powder_red",
+          "minecraft/dye_powder_silver",
+          "minecraft/dye_powder_white",
+          "minecraft/dye_powder_yellow"
+        ],
         "secondItem": "minecolonies/blockshingleslab",
         "thirdItem": "minecolonies/blockshingleslab"
       },
-      "secondRow":
-      {
+      "secondRow": {
         "firstItem": "minecolonies/blockshingleslab",
         "secondItem": "minecolonies/blockshingleslab",
         "thirdItem": "minecolonies/blockshingleslab"
       },
-      "thirdRow":
-      {
+      "thirdRow": {
         "firstItem": "minecolonies/blockshingleslab",
         "secondItem": "minecolonies/blockshingleslab",
         "thirdItem": "minecolonies/blockshingleslab"
       },
-      "product": ["minecolonies/blockshingleslab_black","minecolonies/blockshingleslab_blue","minecolonies/blockshingleslab_brown","minecolonies/blockshingleslab_cyan","minecolonies/blockshingleslab_gray","minecolonies/blockshingleslab_green","minecolonies/blockshingleslab_light_blue","minecolonies/blockshingleslab_lime_green","minecolonies/blockshingleslab_magenta","minecolonies/blockshingleslab_orange","minecolonies/blockshingleslab_pink","minecolonies/blockshingleslab_purple","minecolonies/blockshingleslab_red","minecolonies/blockshingleslab_light_gray","minecolonies/blockshingleslab_white","minecolonies/blockshingleslab_yellow"],
+      "product": [
+        "minecolonies/blockshingleslab_black",
+        "minecolonies/blockshingleslab_blue",
+        "minecolonies/blockshingleslab_brown",
+        "minecolonies/blockshingleslab_cyan",
+        "minecolonies/blockshingleslab_gray",
+        "minecolonies/blockshingleslab_green",
+        "minecolonies/blockshingleslab_light_blue",
+        "minecolonies/blockshingleslab_lime_green",
+        "minecolonies/blockshingleslab_magenta",
+        "minecolonies/blockshingleslab_orange",
+        "minecolonies/blockshingleslab_pink",
+        "minecolonies/blockshingleslab_purple",
+        "minecolonies/blockshingleslab_red",
+        "minecolonies/blockshingleslab_light_gray",
+        "minecolonies/blockshingleslab_white",
+        "minecolonies/blockshingleslab_yellow"
+      ],
       "amount": "8"
     }
-  ]}
+  ]
+}

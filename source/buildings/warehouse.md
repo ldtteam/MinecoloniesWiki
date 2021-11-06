@@ -12,7 +12,7 @@ layout: default
         <p><strong>Worker:</strong></p>
         </div>
         <div class="col">
-        <p><a href="../workers/Courier">Courier</a></p>
+        <p><a href="../workers/courier">Courier</a></p>
         </div>
     </div>
     <hr />
@@ -32,7 +32,7 @@ The level of the Warehouse will determine how many Couriers will be able to use 
 | 5 | 10 |  
 
 
-### Note: You can only have one Warehouse per colony, unless you change this in the config file.
+### Note: You can only have one Warehouse per colony, unless you change this in the [config file](../../source/misc/configfile).
 
 ## Warehouse GUI
 
@@ -70,7 +70,7 @@ This is page three of the Warehouse GUI.
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui3.jpg" class="img-fluid mx-auto" alt="Warehouse GUI 3">
+    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Warehouse GUI 3">
   </div>
   <div class="col-sm-12 col-md">
 	<br>

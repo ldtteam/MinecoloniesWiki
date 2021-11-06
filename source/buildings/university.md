@@ -19,7 +19,17 @@ layout: default
     <recipe>university</recipe>
 </div>
 
-The University is where a Researcher will research various upgrades to your colony. 
+The University is where a Researcher will research various upgrades to your colony.
+
+As you level up the University, you can hire more researchers:
+
+| Max Researchers | University Level |
+| --------------- | ---------------- |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
 
 ## University GUI
 
@@ -53,6 +63,6 @@ Page 2 of the GUI will show you the options for each research tree.
     
 <br>
     
-Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. (Time is real-world time spent in-game.)
+Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. The time is real-world time spent in-game. However, Researchers will sometimes use offline time to work on researches. Researchers' Knowledge skill affects the amount of research time they get from the offline time (it's not a 1:1 ratio), and their Mana skill affects the max amount of research time they can get.
 
 To see a description of each of the researches, please visit the [Research System](../../source/systems/research) page.

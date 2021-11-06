@@ -5,7 +5,7 @@ layout: default
 # Sifter
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/sifter_m.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/sifter_f.png" alt="Sifter Female" />
+<img src="../../assets/images/workers/smelter_m.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Sifter Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -31,7 +31,7 @@ The default materials that can be sifted are:
   <li>Soul Sand</li>
 </ul>
 
-However, you can change this in the config file. This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
+However, you can change this in the [config file](../../source/misc/configfile). This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
 The Sifter can only sift a certain amount of materials per day, depending on their hut level.
 
@@ -43,4 +43,6 @@ The Sifter can only sift a certain amount of materials per day, depending on the
 | 4         | 256       |
 | 5         | 999       |
 
-The Sifter can use 4 different meshs. The higher levels of meshes will find more items. The string mesh is the default option, however, if you want to use the flint, iron, or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingots, or diamonds in your inventory or if you are in Creative Mode.
+The Sifter can use 4 different meshes. The higher levels of meshes will find more items of better quality, as will a higher Focus level of the Sifter. The string mesh is the default option, however, if you want to use the flint, iron, or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingots, or diamonds in your inventory or if you are in Creative Mode.
+
+The higher the Sifter's Strength level, the faster they'll sift.

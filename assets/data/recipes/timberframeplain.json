@@ -1,23 +1,38 @@
-{"recipes":[
+{
+  "recipes": [
     {
-      "firstRow":
-      {
+      "firstRow": {
         "firstItem": "",
-        "secondItem": ["minecraft/oak_planks","minecraft/acacia_planks", "minecraft/birch_planks","minecraft/jungle_planks","minecraft/spruce_planks","minecraft/dark_oak_planks", "minecolonies/cactusplank"],
+        "secondItem": [
+          "minecraft/oak_planks",
+          "minecraft/acacia_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/spruce_planks",
+          "minecraft/dark_oak_planks",
+          "minecolonies/cactusplank"
+        ],
         "thirdItem": ""
       },
-      "secondRow":
-      {
+      "secondRow": {
         "firstItem": "",
-        "secondItem": ["minecraft/paper","minecraft/paper", "minecraft/paper","minecraft/paper","minecraft/paper","minecraft/paper", "minecolonies/paper"],
+        "secondItem": "minecraft/paper",
         "thirdItem": ""
       },
-      "thirdRow":
-      {
+      "thirdRow": {
         "firstItem": "",
-        "secondItem": "minecolonies/sceptergold",
+        "secondItem": "minecolonies/build_tool",
         "thirdItem": ""
       },
-      "product": ["minecolonies/blocktimberframe_oak_plain","minecolonies/blocktimberframe_acacia_plain","minecolonies/blocktimberframe_birch_plain","minecolonies/blocktimberframe_jungle_plain","minecolonies/blocktimberframe_spruce_plain","minecolonies/blocktimberframe_darkoak_plain","minecolonies/blocktimberframe_spruce_plain"]
+      "product": [
+        "minecolonies/blocktimberframe_oak_plain",
+        "minecolonies/blocktimberframe_acacia_plain",
+        "minecolonies/blocktimberframe_birch_plain",
+        "minecolonies/blocktimberframe_jungle_plain",
+        "minecolonies/blocktimberframe_spruce_plain",
+        "minecolonies/blocktimberframe_darkoak_plain",
+        "minecolonies/blocktimberframe_spruce_plain"
+      ]
     }
-  ]}
+  ]
+}

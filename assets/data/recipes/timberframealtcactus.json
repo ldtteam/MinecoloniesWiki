@@ -1,23 +1,44 @@
-{"recipes":[
+{
+  "recipes": [
     {
-      "firstRow":
-      {
+      "firstRow": {
         "firstItem": "",
         "secondItem": "",
         "thirdItem": ""
       },
-      "secondRow":
-      {
+      "secondRow": {
         "firstItem": "",
-        "secondItem": ["minecolonies/blocktimberframe_cactus_plain","minecolonies/blocktimberframe_cactus_doublecrossed","minecolonies/blocktimberframe_cactus_framed","minecolonies/blocktimberframe_cactus_sideframed","minecolonies/blocktimberframe_cactus_upgateframed","minecolonies/blocktimberframe_cactus_downgateframed","minecolonies/blocktimberframe_cactus_lrcrossed","minecolonies/blocktimberframe_cactus_rlcrossed","minecolonies/blocktimberframe_cactus_plainhorizontal","minecolonies/blocktimberframe_cactus_sideframedhorizontal"],
+        "secondItem": [
+          "minecolonies/blocktimberframe_cactus_plain",
+          "minecolonies/blocktimberframe_cactus_doublecrossed",
+          "minecolonies/blocktimberframe_cactus_framed",
+          "minecolonies/blocktimberframe_cactus_sideframed",
+          "minecolonies/blocktimberframe_cactus_upgateframed",
+          "minecolonies/blocktimberframe_cactus_downgateframed",
+          "minecolonies/blocktimberframe_cactus_lrcrossed",
+          "minecolonies/blocktimberframe_cactus_rlcrossed",
+          "minecolonies/blocktimberframe_cactus_plainhorizontal",
+          "minecolonies/blocktimberframe_cactus_sideframedhorizontal"
+        ],
         "thirdItem": ""
       },
-      "thirdRow":
-      {
+      "thirdRow": {
         "firstItem": "",
         "secondItem": "",
         "thirdItem": ""
       },
-      "product": ["minecolonies/blocktimberframe_cactus_doublecrossed","minecolonies/blocktimberframe_cactus_framed","minecolonies/blocktimberframe_cactus_sideframed","minecolonies/blocktimberframe_cactus_upgateframed","minecolonies/blocktimberframe_cactus_downgateframed","minecolonies/blocktimberframe_cactus_lrcrossed","minecolonies/blocktimberframe_cactus_rlcrossed","minecolonies/blocktimberframe_cactus_plainhorizontal","minecolonies/blocktimberframe_cactus_sideframedhorizontal","minecolonies/blocktimberframe_cactus_plain"]
+      "product": [
+        "minecolonies/blocktimberframe_cactus_doublecrossed",
+        "minecolonies/blocktimberframe_cactus_framed",
+        "minecolonies/blocktimberframe_cactus_sideframed",
+        "minecolonies/blocktimberframe_cactus_upgateframed",
+        "minecolonies/blocktimberframe_cactus_downgateframed",
+        "minecolonies/blocktimberframe_cactus_lrcrossed",
+        "minecolonies/blocktimberframe_cactus_rlcrossed",
+        "minecolonies/blocktimberframe_cactus_plainhorizontal",
+        "minecolonies/blocktimberframe_cactus_sideframedhorizontal",
+        "minecolonies/blocktimberframe_cactus_plain"
+      ]
     }
-  ]}
+  ]
+}

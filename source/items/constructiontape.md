@@ -19,4 +19,4 @@ Construction tape shows you the borders of buildings to be upgraded, built, repa
 
 Construction tape can also be used as decoration, however, remember that construction tape is not solid and can be walked through. It is also directional, meaning it changes orientation depending on how you place it.
 
-### For more information on the build system, please see the [Builder](../../source/workers/builder) page.
+#### For more information on the build system, please see the [Builder](../../source/workers/builder) page.

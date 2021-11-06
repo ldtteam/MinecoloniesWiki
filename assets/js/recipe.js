@@ -22,6 +22,59 @@ class JSONReader {
     });
   }
 
+  createTooltip(text)
+  {
+    let arr = text.split("/");
+    text = arr[1].replace(/\_/g, " ");
+    arr = text.split(" ");
+    for (let i = 0; i < arr.length; i++)
+    {
+      arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+    }
+    return arr.join(" ");
+  }
+
+  createDiv(element, large = false, stacksize = 0, shapeless = false)
+  {
+    let output = "";
+    let recipe = this;
+    output += `<div `; (Array.isArray(element) ? ( large ? output += `class="invslot invslot-large animate"` : output += `class="invslot animate"`) : (large ? output += `class="invslot invslot-large"`: output +=`class="invslot"`)); output += ` >`;
+    if (element !== "")
+    {
+      if (Array.isArray(element))
+      {
+        element.forEach(item =>
+                  {
+                    output += `
+                    <div class="invslot-item switch"
+                    `; (item !== element[0] ? output +=`style="display: none"` : output +=``); output += `>
+                      <img src="../../assets/images/icons/` + item + `.png" alt="` + item + `" class="inv-sprite" data-toggle="tooltip" title="`+ recipe.createTooltip(item) +`">
+                    </div>`;
+                  });
+      }
+      else
+      {
+        output += `
+                    <div class="invslot-item">
+                      <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite" data-toggle="tooltip" title="` + recipe.createTooltip(element) + `">
+                    </div>`;
+      }
+      if (stacksize >= 1 && stacksize <= 64)
+        {
+          output += "<div class=\"invslot-stacksize\">" + stacksize + "</div>"
+        }
+      if (shapeless == "yes")
+      {
+        output += `
+            <div class="ct-icons">
+              <div class="ct-shapeless" title="This recipe is shapeless. The items may be placed anywhere in the crafting grid."></div>
+            </div>`;
+      }
+    }
+    output += `</div> `;
+    return output;
+  }
+
   readData(recipeName)
   {
     if(this.contains(recipeName))
@@ -30,6 +83,7 @@ class JSONReader {
     }
     this.add(recipeName);
     let fileName = "../../assets/data/recipes/" + recipeName + ".json";
+    let recipe = this;
     //JQuery to read from a JSON file
     $.getJSON(fileName, function(data)
     {
@@ -39,269 +93,26 @@ class JSONReader {
         output += `
         <div class="crafting-table">
           <div class="ct-input">
-            <div class="ct-row">
-              <div `; (Array.isArray(data.recipes[i].firstRow.firstItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].firstRow.firstItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].firstRow.firstItem))
-                  {
-                    data.recipes[i].firstRow.firstItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].firstRow.firstItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].firstRow.firstItem + `.png" alt="` + data.recipes[i].firstRow.firstItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
+            <div class="ct-row">`;
+              output += recipe.createDiv(data.recipes[i].firstRow.firstItem);
+              output += recipe.createDiv(data.recipes[i].firstRow.secondItem);
+              output += recipe.createDiv(data.recipes[i].firstRow.thirdItem);
               output += `
-              </div>
-              <div `; (Array.isArray(data.recipes[i].firstRow.secondItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].firstRow.secondItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].firstRow.secondItem))
-                  {
-                    data.recipes[i].firstRow.secondItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].firstRow.secondItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].firstRow.secondItem + `.png" alt="` + data.recipes[i].firstRow.secondItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-              <div `; (Array.isArray(data.recipes[i].firstRow.thirdItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].firstRow.thirdItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].firstRow.thirdItem))
-                  {
-                    data.recipes[i].firstRow.thirdItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].firstRow.thirdItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].firstRow.thirdItem + `.png" alt="` + data.recipes[i].firstRow.thirdItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
             </div>
-            <div class="ct-row">
-              <div `; (Array.isArray(data.recipes[i].secondRow.firstItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].secondRow.firstItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].secondRow.firstItem))
-                  {
-                    data.recipes[i].secondRow.firstItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].secondRow.firstItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].secondRow.firstItem + `.png" alt="` + data.recipes[i].secondRow.firstItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-              <div `; (Array.isArray(data.recipes[i].secondRow.secondItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].secondRow.secondItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].secondRow.secondItem))
-                  {
-                    data.recipes[i].secondRow.secondItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].secondRow.secondItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].secondRow.secondItem + `.png" alt="` + data.recipes[i].secondRow.secondItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-              <div `; (Array.isArray(data.recipes[i].secondRow.thirdItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].secondRow.thirdItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].secondRow.thirdItem))
-                  {
-                    data.recipes[i].secondRow.thirdItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].secondRow.thirdItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].secondRow.thirdItem + `.png" alt="` + data.recipes[i].secondRow.thirdItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-            </div>
-            <div class="ct-row">
-              <div `; (Array.isArray(data.recipes[i].thirdRow.firstItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].thirdRow.firstItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].thirdRow.firstItem))
-                  {
-                    data.recipes[i].thirdRow.firstItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].thirdRow.firstItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].thirdRow.firstItem + `.png" alt="` + data.recipes[i].thirdRow.firstItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-              <div `; (Array.isArray(data.recipes[i].thirdRow.secondItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].thirdRow.secondItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].thirdRow.secondItem))
-                  {
-                    data.recipes[i].thirdRow.secondItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].thirdRow.secondItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].thirdRow.secondItem + `.png" alt="` + data.recipes[i].thirdRow.secondItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-              <div `; (Array.isArray(data.recipes[i].thirdRow.thirdItem) ? output +=`class="invslot animate"` : output +=`class="invslot"`); output += ` >`;
-                if (data.recipes[i].thirdRow.thirdItem !== "")
-                {
-                  if (Array.isArray(data.recipes[i].thirdRow.thirdItem))
-                  {
-                    data.recipes[i].thirdRow.thirdItem.forEach(element =>
-                    {
-                      output += `
-                      <div class="invslot-item switch"
-                      `; (element !== data.recipes[i].thirdRow.thirdItem[0] ? output +=`style="display: none"` : output +=``); output += `>
-                        <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                      </div>`;
-                    });
-                  }
-                  else
-                  {
-                    output += `
-                    <div class="invslot-item">
-                      <img src="../../assets/images/icons/` + data.recipes[i].thirdRow.thirdItem + `.png" alt="` + data.recipes[i].thirdRow.thirdItem + `" class="inv-sprite">
-                    </div>`;
-                  }
-                }
-              output += `
-              </div>
-            </div>
+            <div class="ct-row">`;
+            output += recipe.createDiv(data.recipes[i].secondRow.firstItem);
+            output += recipe.createDiv(data.recipes[i].secondRow.secondItem);
+            output += recipe.createDiv(data.recipes[i].secondRow.thirdItem);
+            output += `</div> <div class="ct-row">`;
+            output += recipe.createDiv(data.recipes[i].thirdRow.firstItem);
+            output += recipe.createDiv(data.recipes[i].thirdRow.secondItem);
+            output += recipe.createDiv(data.recipes[i].thirdRow.thirdItem);
+            output += `</div>
           </div>
           <div class="ct-arrow"></div>
           <div class="ct-output">
-            <div `; (Array.isArray(data.recipes[i].product) ? output +=`class="invslot invslot-large animate"` : output +=`class="invslot invslot-large"`); output += ` >`;
-              if (data.recipes[i].product !== "")
-              {
-                if (Array.isArray(data.recipes[i].product))
-                {
-                  data.recipes[i].product.forEach(element =>
-                  {
-                    output += `
-                    <div class="invslot-item switch"
-                    `; (element !== data.recipes[i].product[0] ? output +=`style="display: none"` : output +=``); output += `>
-                      <img src="../../assets/images/icons/` + element + `.png" alt="` + element + `" class="inv-sprite">
-                    </div>`;
-                  })
-                }
-                else
-                {
-                  output += `
-                  <div class="invslot-item">
-                    <img src="../../assets/images/icons/` + data.recipes[i].product + `.png" alt="` + data.recipes[i].product + `" class="inv-sprite">
-                  </div>`;
-                }
-              }
-
-              if (data.recipes[i].amount >= 1 && data.recipes[i].amount <= 64)
-              {
-                output += "<div class=\"invslot-stacksize\">" + data.recipes[i].amount + "</div>"
-              }
-            output += `
-            </div>
-          </div>`;
-          if (data.recipes[i].shapeless == "yes")
-          {
-            output += `
-            <div class="ct-icons">
-              <div class="ct-shapeless" title="This recipe is shapeless, the items may be placed anywhere in the crafting grid."></div>
-            </div>
             `;
-          }
+            output += recipe.createDiv(data.recipes[i].product, true, data.recipes[i].amount, data.recipes[i].shapeless);
         output += `
         </div>`;
 
@@ -319,6 +130,10 @@ class JSONReader {
             value.remove();
           }
         });
+
+        $('.inv-sprite').each(function () {
+          $(this).tooltip();
+        })
       }
     })
   }
@@ -351,10 +166,12 @@ class JSONReader {
       {
         $(this).find(".switch:first")
         .toggle()
-        .next()
-        .toggle()
-        .end()
         .appendTo(this);
+
+        $(this).find(".switch:first")
+        .toggle()
+        $(this).find(".switch:last")
+        .find('.inv-sprite').tooltip('hide');
       });
       }, 2000)
   }

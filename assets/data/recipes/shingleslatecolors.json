@@ -1,24 +1,31 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": ["minecraft/dye_powder_blue","minecraft/dye_powder_green","minecraft/dye_powder_purple"],
-      "secondItem": "minecolonies/blockshingle_slate",
-      "thirdItem": "minecolonies/blockshingle_slate"
-    },
-    "secondRow":
-    {
-      "firstItem": "minecolonies/blockshingle_slate",
-      "secondItem": "minecolonies/blockshingle_slate",
-      "thirdItem": "minecolonies/blockshingle_slate"
-    },
-    "thirdRow":
-    {
-      "firstItem": "minecolonies/blockshingle_slate",
-      "secondItem": "minecolonies/blockshingle_slate",
-      "thirdItem": "minecolonies/blockshingle_slate"
-    },
-    "product": ["minecolonies/blockshingle_slate_blue","minecolonies/blockshingle_slate_green","minecolonies/blockshingle_slate_purple"],
-    "amount": "8"
-  }
-]}
+      "firstRow": {
+        "firstItem": [
+          "minecraft/dye_powder_blue",
+          "minecraft/dye_powder_green",
+          "minecraft/dye_powder_purple"
+        ],
+        "secondItem": "minecolonies/blockshingle_slate",
+        "thirdItem": "minecolonies/blockshingle_slate"
+      },
+      "secondRow": {
+        "firstItem": "minecolonies/blockshingle_slate",
+        "secondItem": "minecolonies/blockshingle_slate",
+        "thirdItem": "minecolonies/blockshingle_slate"
+      },
+      "thirdRow": {
+        "firstItem": "minecolonies/blockshingle_slate",
+        "secondItem": "minecolonies/blockshingle_slate",
+        "thirdItem": "minecolonies/blockshingle_slate"
+      },
+      "product": [
+        "minecolonies/blockshingle_slate_blue",
+        "minecolonies/blockshingle_slate_green",
+        "minecolonies/blockshingle_slate_purple"
+      ],
+      "amount": "8"
+    }
+  ]
+}

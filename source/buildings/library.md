@@ -24,7 +24,7 @@ layout: default
 
 The Library is a way for you to raise your adult citizens' Intelligence skill, which influences all other skill increases (at other jobs). A citizen will randomly level up their Intelligence as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
 
-Two citizens can study at a time per Library level. So: 
+Two citizens can study per Library level. So: 
 
 | Building Level | Citizens Educated at a Time |
 | -------------- | --------------------------- |
@@ -34,7 +34,7 @@ Two citizens can study at a time per Library level. So:
 | 4              | 8                           |
 | 5              | 10                          |
 
-**Hint:** Paper helps Library Students increase their skills faster.
+**Hint:** Paper and books help Library Students increase their skills faster.
 
 <br>
 
@@ -55,3 +55,16 @@ When accessing the Library's hut block by right-clicking on it, you will see a G
     </ul>
   </div>
 </div>  
+
+This is page two of the Library GUI.
+
+<div class="row">
+    <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Library GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
+        <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Library to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        </ul>
+    </div>
+</div>

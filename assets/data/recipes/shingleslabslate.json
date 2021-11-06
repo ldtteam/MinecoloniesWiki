@@ -1,24 +1,23 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": "",
-      "secondItem": "",
-      "thirdItem": ""
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/cobblestone",
-      "secondItem": "minecraft/cobblestone",
-      "thirdItem": "minecraft/cobblestone"
-    },
-    "thirdRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/stick",
-      "thirdItem": "minecraft/stick"
-    },
-    "product": "minecolonies/blockshingleslab_slate",
-    "amount": "8"
-  }
-]}
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecraft/cobblestone",
+        "secondItem": "minecraft/cobblestone",
+        "thirdItem": "minecraft/cobblestone"
+      },
+      "thirdRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/stick",
+        "thirdItem": "minecraft/stick"
+      },
+      "product": "minecolonies/blockshingleslab_slate",
+      "amount": "8"
+    }
+  ]
+}

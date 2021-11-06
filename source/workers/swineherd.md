@@ -5,7 +5,7 @@ layout: default
 # Swineherd
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/swineherder_m.png" alt="Swineherd Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/swineherder_f.png" alt="Swineherd Female" />
+<img src="../../assets/images/workers/swineherd_m.png" alt="Swineherd Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/swineherd_f.png" alt="Swineherd Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -37,4 +37,4 @@ The Swineherd will work with vanilla Minecraft pigs, but might work with some pi
 | 4         | 8           |
 | 5         | 10          |
 
-<br>
+The higher a Swineherd's Strength level, the more damage they'll do per attack. Pigs will grow up faster when the Swineherd has a higher Athletics level.

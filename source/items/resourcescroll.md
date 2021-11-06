@@ -5,7 +5,7 @@ layout: default
 # Resource Scroll 
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/resourcescroll.png" alt="Resource Scroll"></p>
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/resource_scroll.png" alt="Resource Scroll"></p>
     <recipe>resourcescroll</recipe>
 </div>
 
@@ -13,7 +13,7 @@ The resource scroll is an easy way to tell what one of your [Builders](../../sou
 
 ## Using the Resource Scroll
 
-When you first make the resource scroll, if you right-click anywhere you will get a message to sneak + right click on a Builder's Hut to register the resource scroll. 
+When you first make the resource scroll, if you right-click anywhere you will get a message to sneak + right-click on a Builder's Hut to register the resource scroll. 
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/misc/resourcebuilderinitmessage.png" alt="Resource Scroll Initial Message"></p>

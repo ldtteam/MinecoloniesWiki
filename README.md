@@ -1,4 +1,3 @@
 # MineColonies Wiki
 
-Here is where all content will be stored for our wiki:\
-https://wiki.minecolonies.ldtteam.com/
+A wiki for the Minecraft mod [MineColonies](https://github.com/ldtteam/minecolonies). Read it [here](https://wiki.minecolonies.ldtteam.com/)!

@@ -1,24 +1,58 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"]
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/paper",
-      "secondItem": "minecraft/paper",
-      "thirdItem": "minecraft/paper"
-    },
-    "thirdRow":
-    {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks"]
-    },
-    "product": ["minecolonies/oakpaperwall","minecolonies/sprucepaperwall","minecolonies/birchpaperwall", "minecolonies/junglepaperwall"],
-    "amount": "8"
-  }
-]}
+      "firstRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks"
+        ],
+        "secondItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks"
+        ],
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks"
+        ]
+      },
+      "secondRow": {
+        "firstItem": "minecraft/paper",
+        "secondItem": "minecraft/paper",
+        "thirdItem": "minecraft/paper"
+      },
+      "thirdRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks"
+        ],
+        "secondItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks"
+        ],
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks"
+        ]
+      },
+      "product": [
+        "minecolonies/oak_paper_wall",
+        "minecolonies/spruce_paper_wall",
+        "minecolonies/birch_paper_wall",
+        "minecolonies/jungle_paper_wall"
+      ],
+      "amount": "8"
+    }
+  ]
+}

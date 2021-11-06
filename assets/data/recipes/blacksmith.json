@@ -1,23 +1,67 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": "minecolonies/sceptergold",
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/iron_ingot",
-      "secondItem": "minecraft/iron_ingot",
-      "thirdItem": "minecraft/iron_ingot"
-    },
-    "thirdRow":
-    {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
-    },
-    "product": "minecolonies/blockhutblacksmith"
-  }
-]}
+      "firstRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "secondItem": "minecolonies/build_tool",
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ]
+      },
+      "secondRow": {
+        "firstItem": "minecraft/iron_ingot",
+        "secondItem": "minecraft/iron_ingot",
+        "thirdItem": "minecraft/iron_ingot"
+      },
+      "thirdRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "secondItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ]
+      },
+      "product": "minecolonies/blockhutblacksmith"
+    }
+  ]
+}

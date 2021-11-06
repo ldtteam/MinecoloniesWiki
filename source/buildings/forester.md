@@ -5,7 +5,7 @@ layout: default
 # Forester's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/lumberjack.png" alt="Forester's Hut" />
+    <img src="../../assets/images/buildings/forester.png" alt="Forester's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>lumberjack</recipe>
+    <recipe>forester</recipe>
 </div>
 
 The Forester's Hut is where the Forester will go in between chopping down trees. The Forester will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it.
@@ -31,7 +31,7 @@ When accessing the Forester's Hut block by right-clicking on it, you will see a 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/lumberjackgui1.png" class="img-fluid mx-auto" alt="Forester's Hut GUI">
+    <img src="../../assets/images/gui/forestergui1.png" class="img-fluid mx-auto" alt="Forester's Hut GUI">
   </div>
   <div class="col-sm-12 col-md"><br>
     <br>
@@ -48,7 +48,7 @@ This is page two of the Forester's Hut GUI. It shows a list of recognized saplin
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/lumberjackgui2.png" class="img-fluid mx-auto" alt="Forester's Hut GUI 2">
+    <img src="../../assets/images/gui/forestergui2.png" class="img-fluid mx-auto" alt="Forester's Hut GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
@@ -61,13 +61,13 @@ This is page three of the Forester's Hut GUI.
 <br><br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/lumberjackgui3.png" class="img-fluid mx-auto" alt="Forester's Hut GUI 3">
+    <img src="../../assets/images/gui/forestergui3.png" class="img-fluid mx-auto" alt="Forester's Hut GUI 3">
   </div>
   <div class="col-sm-12 col-md">
     <ul>
       <li><strong>Replant:</strong> Where you can select if you want the Forester to replant trees that are chopped down. They will only do this if they have enough saplings.</li><br>
       <li><strong>Restriction:</strong> This lets you turn on or off if you want the Forester to be restricted to a certain area when chopping trees. To choose the area, use the Give Tool button.</li><br>
-      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the Forester to work.</li>
+      <li><strong>Give Tool:</strong>This will give you a define area tool so you can select a specific area for the Forester to work. Right click one corner of the area you want, then left click the opposite corner, and this will set a rectangle inside which the Forester will search for trees. Vertical coordinates do not affect this too much; keeping them all around the same y-level can avoid unintentional bugs, though.</li>
     </ul>
   </div>
 </div>

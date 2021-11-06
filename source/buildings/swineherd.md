@@ -5,7 +5,7 @@ layout: default
 # Swineherd's Hut
 
 <div class="infobox box text-center">
-    <img src="../../assets/images/buildings/swineherder.png" alt="Swineherd's Hut" />
+    <img src="../../assets/images/buildings/swineherd.png" alt="Swineherd's Hut" />
     <hr />
     <div class="row section-text text-left">
         <div class="col">
@@ -16,7 +16,7 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>swineherder</recipe>
+    <recipe>swineherd</recipe>
 </div>
 
 The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food. You will have to capture and bring in two pigs to the Swineherd's Hut, as the Swineherd will not catch and bring in any pigs.
@@ -40,7 +40,7 @@ When accessing the Swineherd's Hut block by right-clicking on it,  you will see 
 
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/swineherdergui.png" class="img-fluid mx-auto" alt="Swineherd's Hut GUI">
+    <img src="../../assets/images/gui/swineherdgui.png" class="img-fluid mx-auto" alt="Swineherd's Hut GUI">
   </div>
   <div class="col-sm-12 col-md">
      <br>
@@ -52,3 +52,16 @@ When accessing the Swineherd's Hut block by right-clicking on it,  you will see 
   </div>
 </div>
   <br>
+
+This is page two of the Swineherd's Hut GUI.
+
+<div class="row">
+    <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Swineherd's Hut GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
+        <ul>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Swineherd's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        </ul>
+    </div>
+</div>

@@ -24,13 +24,12 @@ Before you place the Supply Camp, you need to have a large enough flat, clear pi
 
 To place either Camp or Ship, simply right-click on a block and the 3D preview of the Camp and Ship will be displayed, with the GUI to move it around. You will see a white outline of the entire build, which is the area that needs to be cleared. If you need to look around the area before accepting the build, press ESC to exit the GUI. This will leave the preview up so you can still see it. To re-enter the GUI, simply click the Camp or Ship on the ground again to bring it up.
 
-<p style="text-align:center;"><img src="../../assets/images/misc/campgui.png" alt="Supply Camp GUI">
-    
-<img src="../../assets/images/misc/shipgui.png" alt="Supply Ship GUI">
+<p style="text-align:center;"><img src="../../assets/images/misc/campgui.png" alt="Supply Camp GUI"><br><br>
+<img src="../../assets/images/misc/shipgui.png" alt="Supply Ship GUI"></p>
 <br>
 <br>
     
-<p style="text-align:left;">There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the green check, and the Camp or Ship will be placed. 
+<p style="text-align:left;">There are also a variety of camps to choose from, based on the style you want. You can choose the style from the 3rd drop down. You can use the arrow buttons in the center to change the location and the curved arrows to rotate the camp. Once you have it where you want it, press the green check, and the Camp or Ship will be placed. </p>
 
 <br>
 
@@ -56,5 +55,4 @@ To place either Camp or Ship, simply right-click on a block and the 3D preview o
     
 <p style="text-align:center;"><img src="../../assets/images/misc/ship1.png" alt="Supply Ship"><br><br>
 <img src="../../assets/images/misc/ship2.png" alt="Supply Ship"><br><br>
-<img src="../../assets/images/misc/ship3.png" alt="Supply Ship"><br>
-
+<img src="../../assets/images/misc/ship3.png" alt="Supply Ship"><br></p>

@@ -1,23 +1,94 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": "minecolonies/sceptergold",
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
-    },
-    "secondRow":
-    {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": ["minecraft/oak_door","minecraft/spruce_door","minecraft/birch_door","minecraft/jungle_door","minecraft/acacia_door","minecraft/dark_oak_door"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
-    },
-    "thirdRow":
-    {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "secondItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"],
-      "thirdItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks"]
-    },
-    "product": "minecolonies/blockhutbuilder"
-  }
-]}
+      "firstRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "secondItem": "minecolonies/build_tool",
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ]
+      },
+      "secondRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "secondItem": [
+          "minecraft/oak_door",
+          "minecraft/spruce_door",
+          "minecraft/birch_door",
+          "minecraft/jungle_door",
+          "minecraft/acacia_door",
+          "minecraft/dark_oak_door",
+          "minecraft/crimson_door",
+          "minecraft/warped_door"
+        ],
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ]
+      },
+      "thirdRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "secondItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ],
+        "thirdItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecraft/crimson_planks",
+          "minecraft/warped_planks"
+        ]
+      },
+      "product": "minecolonies/blockhutbuilder"
+    }
+  ]
+}

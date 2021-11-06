@@ -5,7 +5,7 @@ layout: default
 # Chicken Farmer
 
 <div class="infobox box text-center">
-<img src="../../assets/images/workers/chickenherder_m.png" alt="Chicken Farmer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/chickenherder_f.png" alt="Chicken Farmer Female" />
+<img src="../../assets/images/workers/chickenfarmer_m.png" alt="Chicken Farmer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/chickenfarmer_f.png" alt="Chicken Farmer Female" />
 <hr />
   <div class="row section-text text-left">
     <div class="col">
@@ -37,4 +37,5 @@ The Chicken Farmer will work with vanilla Minecraft chickens, but might work wit
 | 4         | 8               |
 | 5         | 10              |
 
-<br>
+
+The higher a Chicken Farmer's Adaptability level is, the greater their chance to pick up eggs/meat/feathers. Similarly, the greater their Agility level, the higher their chance to successfully hit a chicken (if they miss, they'll keep trying until the chicken dies).

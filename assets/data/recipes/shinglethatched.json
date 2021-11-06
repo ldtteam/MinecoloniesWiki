@@ -1,24 +1,31 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": "minecraft/wheat",
-      "secondItem": "",
-      "thirdItem": ""
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/wheat",
-      "thirdItem": ""
-    },
-    "thirdRow":
-    {
-      "firstItem": ["minecraft/oak_planks","minecraft/spruce_planks","minecraft/birch_planks","minecraft/jungle_planks","minecraft/acacia_planks","minecraft/dark_oak_planks", "minecolonies/cactus_planks"],
-      "secondItem": "minecraft/stick",
-      "thirdItem": "minecraft/wheat"
-    },
-    "product": "minecolonies/blockshingle_thatched",
-    "amount": "8"
-  }
-]}
+      "firstRow": {
+        "firstItem": "minecraft/wheat",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/wheat",
+        "thirdItem": ""
+      },
+      "thirdRow": {
+        "firstItem": [
+          "minecraft/oak_planks",
+          "minecraft/spruce_planks",
+          "minecraft/birch_planks",
+          "minecraft/jungle_planks",
+          "minecraft/acacia_planks",
+          "minecraft/dark_oak_planks",
+          "minecolonies/cactus_planks"
+        ],
+        "secondItem": "minecraft/stick",
+        "thirdItem": "minecraft/wheat"
+      },
+      "product": "minecolonies/blockshingle_thatched",
+      "amount": "8"
+    }
+  ]
+}

@@ -1,24 +1,23 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": "",
-      "secondItem": "",
-      "thirdItem": ""
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/brick",
-      "secondItem": "minecraft/brick",
-      "thirdItem": "minecraft/brick"
-    },
-    "thirdRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/stick",
-      "thirdItem": "minecraft/stick"
-    },
-    "product": "minecolonies/blockshingleslab",
-    "amount": "8"
-  }
-]}
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecraft/brick",
+        "secondItem": "minecraft/brick",
+        "thirdItem": "minecraft/brick"
+      },
+      "thirdRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/stick",
+        "thirdItem": "minecraft/stick"
+      },
+      "product": "minecolonies/blockshingleslab",
+      "amount": "8"
+    }
+  ]
+}

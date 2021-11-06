@@ -12,7 +12,7 @@ MineColonies features NPC workers such as [Builders](../../source/workers/builde
 
 It also includes specialized buildings such as the [Warehouse](../../source/buildings/warehouse), [House](../../source/buildings/house), [Town Hall](../../source/buildings/townhall), [Barracks](../../source/buildings/barracks), [Library](../../source/buildings/library), [University](../../source/buildings/university), and even the [School](../../source/buildings/school).
 
-### Please note that the wiki is always referring to the latest 1.15.2/1.16.4 alpha version of MineColonies!
+### Please note that the wiki is always referring to the latest 1.16.5 alpha version of MineColonies!
 
 ---
 
@@ -31,4 +31,4 @@ It also includes specialized buildings such as the [Warehouse](../../source/buil
 
 MineColonies is a free and open-source mod developed by Let's Dev Together (LDT), a non-profit community. The source code is available on [GitHub](https://github.com/ldtteam/minecolonies). Our developers are a hard-working, well-integrated coding team, continuously adding more content to make the MineColonies experience even greater. However, we are always looking for more people to contribute to the mod, whether as a coder, builder, artist, voice actor, wiki editor, tester, or simply supporting us on [Patreon](https://www.patreon.com/minecolonies)!
 
-Found any bugs? Report it as an [issue](https://github.com/ldtteam/minecolonies/issues/new/choose) to help us give you the best gaming experience. If you require any help, or just want to join the conversation, check us out on [Discord](https://discord.minecolonies.com)!
+Found a bug? Report it as an [issue](https://github.com/ldtteam/minecolonies/issues/new/choose) to help us give you the best gaming experience. If you require any help or just want to join the conversation, check us out on [Discord](https://discord.minecolonies.com)!

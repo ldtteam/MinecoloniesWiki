@@ -1,23 +1,22 @@
-{"recipes":[
-  {
-    "firstRow":
+{
+  "recipes": [
     {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecolonies/sceptergold",
-      "thirdItem": "minecraft/stick"
-    },
-    "secondRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/leather",
-      "thirdItem": "minecraft/stick"
-    },
-    "thirdRow":
-    {
-      "firstItem": "minecraft/stick",
-      "secondItem": "minecraft/stick",
-      "thirdItem": "minecraft/stick"
-    },
-    "product": "minecolonies/clipboard"
-  }
-]}
+      "firstRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecolonies/build_tool",
+        "thirdItem": "minecraft/stick"
+      },
+      "secondRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/leather",
+        "thirdItem": "minecraft/stick"
+      },
+      "thirdRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": "minecraft/stick",
+        "thirdItem": "minecraft/stick"
+      },
+      "product": "minecolonies/clipboard"
+    }
+  ]
+}
