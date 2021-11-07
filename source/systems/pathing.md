@@ -20,7 +20,7 @@ This does take a while, though, and sometimes can result in unforeseen circumsta
 
 ## Pathblocks
 
-On certain <a href="https://github.com/ldtteam/minecolonies/blob/version/main/src/main/resources/data/minecolonies/tags/blocks/pathblocks.json">pathblocks</a>, your colonists move faster and stick to the paths when pathfinding. Building roads out of these can help keep them on a safe path and get them around the colony faster.
+On certain [pathblocks](https://github.com/ldtteam/minecolonies/blob/version/main/src/main/resources/data/minecolonies/tags/blocks/pathblocks.json), your colonists move faster and stick to the paths when pathfinding. Building roads out of these can help keep them on a safe path and get them around the colony faster.
 
 ## Waypoints and Decorative Paths
 
