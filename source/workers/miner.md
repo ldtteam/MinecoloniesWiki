@@ -44,3 +44,8 @@ The Miner can on occasion get confused and lost. They may start new tunnels and 
 The Miner has a chance to get lucky in finding ores when digging out cobblestone or stone! This is the default setting in the [configuration file](../../source/misc/configfile), but you can change this.
 
 The Miner's Strength level affects their block breaking speed. Similarly, their Stamina skill affects their block placing speed, so if they have a higher Stamina skill they'll place supports and other blocks faster. 
+
+If the Miner encounters a block with a mining level higher than the equipped pickaxe, they will stop mining.
+In this case, it will show an alert with the type of block and coordinates.
+You can mine this block manually or supply the Miner with a pickaxe of the required mining level.
+If you do neither of those, the Miner will refuse to work unless fired and hired again, at which point they will try again at whichever mining level selected in the GUI.
