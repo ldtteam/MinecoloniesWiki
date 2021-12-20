@@ -76,6 +76,8 @@ A chart of all the jobs and their traits, from hog(#1112) on [Discord](https://d
 | [Undertaker](../workers/undertaker) | Strength | Mana |
 | [University Researcher](../workers/researcher) | Knowledge | Mana |
 
+<p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/workerTraitEffects.jpg" alt="Sleep"><b> From Estyria#2729 on [Discord](https://discord.minecolonies.com):</b></p>
+
 ## Tool/Sword Levels
 
 The type of tools/swords workers can use depends on the level of a worker's work hut.
