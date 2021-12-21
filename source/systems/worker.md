@@ -28,53 +28,53 @@ Workers' skills/levels increase as they work. Their level is limited by the leve
 
 <br>
 
-A chart of all the jobs and their traits, from hog(#1112) on [Discord](https://discord.minecolonies.com):
+A chart of all the jobs, their skills, and their skills's effects, from hog#1112 (skills) and Estyria#2729 (effects) on [Discord](https://discord.minecolonies.com):
 <br>
 <br>
 
-| Worker | Primary Skill | Secondary Skill |
-| ------ | ------------- | --------------- |
+| Worker | Primary Skill | Secondary Skill | Primary Skill Effect | Secondary Skill Effect |
+| ------ | ------------- | --------------- | -------------------- | ---------------------- |
 | [Archer in Training](../workers/archerintraining) | Agility | Adaptability |
-| [Baker](../workers/baker) | Knowledge | Dexterity |
-| [Beekeeper](../workers/beekeeper) | Dexterity | Adaptability |
-| [Blacksmith](../workers/blacksmith) | Strength | Focus |
-| [Builder](../workers/builder) | Adaptability | Athletics |
-| [Carpenter](../workers/carpenter) | Knowledge | Dexterity |
-| [Chicken Farmer](../workers/chickenfarmer) | Adaptability | Agility |
-| [Composter](../workers/composter) | Stamina | Athletics |
-| [Concrete Mixer](../workers/concretemixer) | Stamina | Dexterity |
-| [Cook](../workers/cook) | Adaptability | Knowledge |
-| [Assistant Cook](../workers/assistantcook) | Adaptability | Knowledge |
-| [Courier](../workers/courier) | Agility | Adaptability |
-| [Cowhand](../workers/cowhand) | Athletics | Stamina |
-| [Crusher](../workers/crusher) | Stamina | Strength |
-| [Dyer](../workers/dyer) | Creativity | Dexterity |
-| [Enchanter](../workers/enchanter) | Mana | Knowledge |
-| [Farmer](../workers/farmer) | Stamina | Athletics |
-| [Fisher](../workers/fisher) | Focus | Agility |
-| [Fletcher](../workers/fletcher) | Dexterity | Creativity |
-| [Florist](../workers/florist) | Dexterity | Agility |
-| [Forester](../workers/forester) | Strength | Focus |
-| [Glassblower](../workers/glassblower) | Creativity | Focus |
-| [Guard (Knight)](../workers/guard) | Adaptability | Stamina |
-| [Guard (Archer)](../workers/guard) | Agility | Adaptability |
-| [Healer](../workers/healer) | Mana | Knowledge |
+| [Baker](../workers/baker) | Knowledge | Dexterity | Increases chance of decreasing materials needed | Faster crafting and smelting |
+| [Beekeeper](../workers/beekeeper) | Dexterity | Adaptability | Determines chance of *beeing* stung | Affects wait time between checking hives |
+| [Blacksmith](../workers/blacksmith) | Strength | Focus | Faster crafting | Increases chance of decreasing materials needed |
+| [Builder](../workers/builder) | Adaptability | Athletics | Faster block placing | Faster block breaking |
+| [Carpenter](../workers/carpenter) | Knowledge | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
+| [Chicken Farmer](../workers/chickenfarmer) | Adaptability | Agility | Greater chance to pick up eggs/meat/feathers | Greater chance to successfully hit chicken |
+| [Composter](../workers/composter) | Stamina | Athletics | Faster composting | Faster barrel filling |
+| [Concrete Mixer](../workers/concretemixer) | Stamina | Dexterity | Faster concrete harvesting | Faster concrete crafting |
+| [Cook](../workers/cook) | Adaptability | Knowledge | Faster cook time | Increases chance of decreasing materials needed |
+| [Assistant Cook](../workers/assistantcook) | Adaptability | Knowledge | Faster cook time | Increases chance of decreasing materials needed |
+| [Courier](../workers/courier) | Agility | Adaptability | Faster run speed | More huts visited on each trip |
+| [Cowhand](../workers/cowhand) | Athletics | Stamina | More damage per attack | Cows grow up faster |
+| [Crusher](../workers/crusher) | Stamina | Strength | Decreases chance of sickness | Faster work speed |
+| [Dyer](../workers/dyer) | Creativity | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
+| [Enchanter](../workers/enchanter) | Mana | Knowledge | More XP collected per trip | Higher level of enchanted books |
+| [Farmer](../workers/farmer) | Stamina | Athletics | Less time cycling between planting and harvesting | Faster planting and harvesting |
+| [Fisher](../workers/fisher) | Focus | Agility | Less time to catch something | Less time to catch something |
+| [Fletcher](../workers/fletcher) | Dexterity | Creativity | Faster crafting | Increases chance of decreasing materials needed |
+| [Florist](../workers/florist) | Dexterity | Agility | Greater chance to successfully harvest flowers | Decreases flower growth time |
+| [Forester](../workers/forester) | Strength | Focus | Faster log breaking | Faster walking |
+| [Glassblower](../workers/glassblower) | Creativity | Focus | Increases chance of decreasing materials needed | Faster crafting |
+| [Guard (Archer)](../workers/guard) | Agility | Adaptability | More damage | Greater range |
+| [Guard (Knight)](../workers/guard) | Adaptability | Stamina | Faster attack speed | More health |
+| [Healer](../workers/healer) | Mana | Knowledge | Faster walking between beds | Increases chance of decreasing materials needed |
 | [Knight in Training](../workers/knightintraining) | Adaptability | Stamina |
-| [Library Student](../workers/librarystudent) | Inteligence | No Secondary |
-| [Mechanic](../workers/mechanic) | Knowledge | Agility |
-| [Miner](../workers/miner) | Strength | Stamina |
-| [Planter](../workers/planter) | Agility | Dexterity |
+| [Library Student](../workers/librarystudent) | Intelligence | No Secondary | Affects leveling speed of other skills |
+| [Mechanic](../workers/mechanic) | Knowledge | Agility | Increases chance of decreasing materials needed | Faster crafting |
+| [Miner](../workers/miner) | Strength | Stamina | Faster block breaking | Faster block placing |
+| [Planter](../workers/planter) | Agility | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
 | [Pupil](../workers/pupil) | Knowledge | Mana |
-| [Rabbit Herder](../workers/rabbitherder) | Agility | Athletics |
-| [Shepherd](../workers/shepherd) | Focus | Strength |
-| [Sifter](../workers/sifter) | Focus | Strength |
-| [Smelter](../workers/smelter) | Athletics | Strength |
-| [Stonemason](../workers/stonemason) | Creativity | Dexterity |
-| [Stone Smelter](../workers/stonesmelter) | Athletics | Dexterity |
-| [Swineherd](../workers/swineherd) | Strength | Athletics |
-| [Teacher](../workers/teacher) | Knowledge | Mana |
-| [Undertaker](../workers/undertaker) | Strength | Mana |
-| [University Researcher](../workers/researcher) | Knowledge | Mana |
+| [Rabbit Herder](../workers/rabbitherder) | Agility | Athletics | Higher chance to successfully hit a rabbit | Faster rabbit growth |
+| [Shepherd](../workers/shepherd) | Focus | Strength | More wool collected | More damage per attack |
+| [Sifter](../workers/sifter) | Focus | Strength | Better quality items found | Faster sifting |
+| [Smelter](../workers/smelter) | Athletics | Strength | Faster smelting | Increases chance of doubling or tripling ores |
+| [Stonemason](../workers/stonemason) | Creativity | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
+| [Stone Smelter](../workers/stonesmelter) | Athletics | Dexterity | Increases number of furnaces used | Faster smelting |
+| [Swineherd](../workers/swineherd) | Strength | Athletics | More damage per attack | Faster pig growth |
+| [Teacher](../workers/teacher) | Knowledge | Mana | Pupil stats increase faster | Quicker switching between pupils |
+| [Undertaker](../workers/undertaker) | Strength | Mana | Faster grave digging | Increases chance to revive dead citizens |
+| [University Researcher](../workers/researcher) | Knowledge | Mana | Affects research time while offline | Affects max amount of research time they get |
 
 ## Tool/Sword Levels
 
