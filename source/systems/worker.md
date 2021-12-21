@@ -70,7 +70,7 @@ A chart of all the jobs and their traits, from hog(#1112) on [Discord](https://d
 | [Sifter](../workers/sifter) | Focus | Strength |
 | [Smelter](../workers/smelter) | Athletics | Strength |
 | [Stonemason](../workers/stonemason) | Creativity | Dexterity |
-| [Stone Smelter](../workers/stonesmelter) | Athletics | Desterity |
+| [Stone Smelter](../workers/stonesmelter) | Athletics | Dexterity |
 | [Swineherd](../workers/swineherd) | Strength | Athletics |
 | [Teacher](../workers/teacher) | Knowledge | Mana |
 | [Undertaker](../workers/undertaker) | Strength | Mana |
