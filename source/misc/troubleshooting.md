@@ -64,3 +64,11 @@ If none of these apply, go on to the next troubleshooting checklists.
   12. Use the /mc colony requestsystem-reset [command](../../source/systems/command).
   13. Repair their work hut. Some workers will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, [racks](../../source/items/rack), and [compost barrels](../../source/items/compostbarrel). If you broke any of those, create a repair build order for the building.
   14. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
+
+## Upgrading to a newer Minecraft Version
+Colonies won't work properly, as upgrading worlds in between minecraft versions is **not supported at all**. (Mods usually do breaking changes when upgradig to new minecraft versions)  
+Besides, for shingle blocks disappearing, multiple things happen:
+1) From 1.16 to 1.17, the shingles got moved to Domum-Ornamentum, where they used to be in the structurize mod before. That is the reason they disappear, as the world can't find the structurize versions anymore
+2) There is a bug in between 1.17 to 1.18, where all modded block entities get deleted. So even if you have shingles from domum ornamentum, they would either disappear or get reset to a default one.
+The latter issue would probably give problems with all buildings in the colony by the way, that is one of the reasons 1.17- colonies can't get upgraded to 1.18+
+
