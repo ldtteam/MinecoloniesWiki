@@ -258,7 +258,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
           <br>
           <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
-          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>p
+          <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
         </ul>
 		<br>
             <p><strong>Page 2: </strong>There are two buttons here:</p>
