@@ -7,24 +7,20 @@ layout: default
 <p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b> If it is raining, snowing, nighttime, or a citizen died yesterday (in-game time), your citizens will stop working!</b></p>
 
 ## Traits
-When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job. The higher a worker's level, the faster and more efficient they will be. Each trait also has a specific bonus for the job. To see these bonuses, please visit the worker pages.
+When hiring a worker at a hut, the primary trait used in that work will be highlighted in **green** and the secondary trait in **yellow** to help you decide which citizen is the best worker for the job. The higher a worker's skill, the faster and more efficient they will be. Each trait also has a specific bonus for the job. To see these bonuses, please visit the worker pages.
 
 ![Traits](../../assets/images/misc/traits.png)
 
-These skills make up the worker's level. The formula is (Primary Trait + Secondary Trait)/4 = Level (rounded down).
+Workers' skills increase as they work. They are limited by the level of the worker's home. The level of a worker's work hut and their Intelligence skill level affect the speed that they level up.
 
-For example, if Adaptability is the primary trait and Athletics secondary, and the worker assigned has Adaptability 29 and Athletics 16, then (29+16)/4=11.25.That means that this worker's level will be 11!
-
-Workers' skills/levels increase as they work. Their level is limited by the level of the worker's home. The level of a worker's work hut and their Intelligence skill level affect the speed that they level up.
-
-| Home Level | Max Worker Level |
+| Home Level | Max Skill Level  |
 | ---------- | ---------------- |
 | 0          | 1                |
 | 1          | 5                |
 | 2          | 10               |
 | 3          | 15               |
 | 4          | 20               |
-| 5          | 100              |
+| 5          | 99               |
 
 <br>
 
