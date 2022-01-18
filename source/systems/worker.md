@@ -15,11 +15,11 @@ Workers' skills increase as they work. They are limited by the level of the work
 
 | Home Level | Max Skill Level  |
 | ---------- | ---------------- |
-| 0          | 1                |
-| 1          | 5                |
-| 2          | 10               |
-| 3          | 15               |
-| 4          | 20               |
+| 0          | 0                |
+| 1          | 9                |
+| 2          | 19               |
+| 3          | 29               |
+| 4          | 39               |
 | 5          | 99               |
 
 <br>
