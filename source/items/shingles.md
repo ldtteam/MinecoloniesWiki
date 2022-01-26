@@ -5,7 +5,7 @@ layout: default
 # Shingles
 <br>
 
-[For Shingles in 1.17 and higher versions that use Domum Ornamentum click here](#domum_ornamentum_shingles)
+[For Shingles in 1.17 and higher versions that use Domum Ornamentum click here](#domum-ornamentum-shingles)
 
 <br>
 
