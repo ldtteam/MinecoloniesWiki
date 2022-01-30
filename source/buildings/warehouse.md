@@ -59,7 +59,7 @@ This is page two of the Warehouse GUI.
 	<br>
     <ul>
       <li><strong>Assigned Workers: </strong>A list of the <a href="../workers/courier">couriers</a> assigned to this warehouse.</li><br>
-      <li><strong>Manage Workers: </strong>You can choose which courier to hire at the warehouse./li>
+      <li><strong>Manage Workers: </strong>You can choose which courier to hire at the warehouse.</li>
     </ul>
   </div>
 </div>
