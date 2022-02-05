@@ -80,7 +80,7 @@ When accessing the Apiary block by right-clicking on it, you will see a GUI with
     <br>
     <p>This is page three of the GUI. It has one button:</p>
     <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Archery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+        <li><strong> Minimum Stock: </strong> Use this button to tell the Apiary to keep a minimum stock on hand. Set items will be displayed above the button.</li>
     </ul>
   </div>
 </div>
