@@ -104,7 +104,7 @@ Building processors are defined in "<stylename>/placeholder_replacement.json". S
   <li> "structurize:blocksubstitution" is ignored, meaning that existing blocks in the world will remain in place when the structure generates.<li>
 </ul>
 
-#### Decay sample
+#### Decay Example
 
 The rule below replaces oak logs with cobwebs at a 4&#37; probability. That probability may be fine for one style but be too high or too low for another style.
 
