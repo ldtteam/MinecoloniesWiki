@@ -43,13 +43,44 @@ When editing a jigsaw block, there are a few different properties that can be se
 <ul>
   <li> name: the name of this jigsaw block. The name can be unique or generic. For the styles in MineColonies, all buildings have the name "minecolonies:building_entrance" and all roads "minecolonies:street". Some styles will also use "minecolonies:field"; this one is used exclusively to connect a field to a farmer building when the farmer building does not a field as part of the level 1 structure.</li>
   <li> target: When a structure is placed, the target of its jigsaw block determines the next jigsaw block that is added. The target of a placed structure must match the name of the next one to be placed.</li>
-  <li> pool: To restrict the list of applicable structures, use the target pool. MineColonies uses three dedicated pools for each colony style: "<stylename>/roads", "<stylename>/buildings", and "<stylename>/terminators".</li>
+  <li> pool: To restrict the list of applicable structures, use the target pool. MineColonies uses three dedicated pools for each colony style: "&#60;stylename&#62;/roads", "&#60;stylename&#62;/buildings", and "&#60;stylename&#62;/terminators".</li>
 </ul>
 
 Edit the jigsaw block to set the following properties. 
 (Note that the following is an example using the Medieval Oak style. Replace "medieval_oak" with your style's name.)
 
-Temporarily removing something.
+<ul>
+  <li> Buildings
+    <ul>
+      <li> name: "minecolonies:building_entrance"</li>
+      <li> pool: "minecolonies:medieval_oak/roads"</li>
+      <li> target: "minecolonies:building_entrance"</li>
+      <li> turns into: "minecraft:structure_void"</li>
+    </ul>
+  </li>
+  <li> Roads (Connecting to buildings)
+    <ul>
+      <li> name: "minecolonies:street"</li>
+      <li> pool: "minecolonies:medieval_oak/buildings"</li>
+      <li> target: "minecolonies:building_entrance"</li>
+      <li> turns into: "minecraft:structure_void"</li>
+    </ul>
+  </li>
+  <li> Roads (Connecting to roads)
+    <ul>
+      <li> name: "minecolonies:street"</li>
+      <li> pool: "minecolonies:medieval_oak/roads"</li>
+      <li> target: "minecolonies:street"</li>
+      <li> turns into: "minecraft:structure_void"</li>
+    </ul>
+  </li>
+  <li> Terminators (to end roads more decoratively and as fallback structures for roads and buildings)
+    <ul>
+      <li> name: "minecolonies:street"</li>
+      <li> turns into: "minecraft:structure_void"</li>
+    </ul>
+  </li>
+</ul>
 
 ## Processors
 
@@ -58,15 +89,15 @@ Processors are used to alter a structure's blocks during placement. Specifically
 There are three processor files for each style.
 
 ### street.json
-Road processors are defined in "<stylename>/street.json". The main purpose of this processor is to replace porous materials like dirt, dirt paths, and gravel with wooden planks when the road is in water. This will also add minor decay in the form of grass blocks instead of dirt paths.
+Road processors are defined in "&#60;stylename&#62;/street.json". The main purpose of this processor is to replace porous materials like dirt, dirt paths, and gravel with wooden planks when the road is in water. This will also add minor decay in the form of grass blocks instead of dirt paths.
 
 ### decoration.json
 
-Park processors are defined in "<stylename>/decoration.json". This processor adds decay to the parks by turning some stone brick into weathered variants like mossy or cracked stone bricks or replaces some dirt blocks with coarse dirt.
+Park processors are defined in "&#60;stylename&#62;/decoration.json". This processor adds decay to the parks by turning some stone brick into weathered variants like mossy or cracked stone bricks or replaces some dirt blocks with coarse dirt.
 
 ### placeholder_replacement.json
 
-Building processors are defined in "<stylename>/placeholder_replacement.json". Similar to how zombie villages decay, this processor removes various building blocks or replaces them with cobweb. Which blocks and how often depends on the given style. In addition to decay, the placeholder replacement is also responsible for converting the Structurize placeholder blocks into suitable in-game similar to how a builder treats these blocks when constructing a building.
+Building processors are defined in "&#60;stylename&#62;/placeholder_replacement.json". Similar to how zombie villages decay, this processor removes various building blocks or replaces them with cobweb. Which blocks and how often depends on the given style. In addition to decay, the placeholder replacement is also responsible for converting the Structurize placeholder blocks into suitable in-game similar to how a builder treats these blocks when constructing a building.
 
 <ul>
   <li> "structurize:blocksolidsubstitution" turns into dirt, which may be converted to another block by a processor defined later in the same file.</li>
