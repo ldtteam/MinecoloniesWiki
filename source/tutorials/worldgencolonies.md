@@ -101,7 +101,7 @@ Building processors are defined in "<stylename>/placeholder_replacement.json". S
 
 <ul>
   <li> "structurize:blocksolidsubstitution" turns into dirt, which may be converted to another block by a processor defined later in the same file.</li>
-  <li> "structurize:blocksubstitution" is ignored, meaning that existing blocks in the world will remain in place when the structure generates.<li>
+  <li> "structurize:blocksubstitution" is ignored, meaning that existing blocks in the world will remain in place when the structure generates.</li>
 </ul>
 
 #### Decay Example
