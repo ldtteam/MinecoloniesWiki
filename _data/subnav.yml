@@ -13,7 +13,7 @@ subnav:
         url: source/tutorials/datapacks
       - page: Schematics
         url: source/tutorials/schematics
-        -page: World Generation Colonies
+      - page: World Generation Colonies
         url: source/tutorials/worldgencolonies
   - title: Systems
     subitems:
