@@ -49,38 +49,7 @@ When editing a jigsaw block, there are a few different properties that can be se
 Edit the jigsaw block to set the following properties. 
 (Note that the following is an example using the Medieval Oak style. Replace "medieval_oak" with your style's name.)
 
-<ul>
-  <li> Buildings
-    <ul>
-      <li> name: "minecolonies:building_entrance"</li>
-      <li> pool: "minecolonies:medieval_oak/roads"</li>
-      <li> target: "minecolonies:building_entrance"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-  <li> Roads (Connecting to buildings)
-    <ul>
-      <li> name: "minecolonies:street"</li>
-      <li> pool: "minecolonies:medieval_oak/buildings"</li>
-      <li> target: "minecolonies:building_entrance"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-  <li> Roads (Connecting to roads)
-    <ul>
-      <li> name: "minecolonies:street"</li>
-      <li> pool: "minecolonies:medieval_oak/roads"</li>
-      <li> target: "minecolonies:street"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-  <li> Terminators (to end roads more decoratively and as fallback structures for roads and buildings)
-    <ul>
-      <li> name: "minecolonies:street"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-</ul>
+Temporarily removing something.
 
 ## Processors
 
