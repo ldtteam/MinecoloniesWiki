@@ -24,7 +24,7 @@ That's it! You've claimed a colony in the world, and now you can start building 
 
 # Creating Your Own World Generation Colonies Style
 
-First, you need to design and build your own [schematic] (https://wiki.minecolonies.ldtteam.com/source/tutorials/schematics). Once you've built your style, you can add jigsaw block connectors at appropriate places and export the structure as a .nbt file. That way, Minecraft knows how to build an abandoned colony in your style!
+First, you need to design and build your own [schematic](schematics). Once you've built your style, you can add jigsaw block connectors at appropriate places and export the structure as a .nbt file. That way, Minecraft knows how to build an abandoned colony in your style!
 
 ## Tagging and Prepping
 
