@@ -100,7 +100,7 @@ Place the Supply Ship/Camp by right-clicking the item directly on the water/grou
 
 Due to the protected area of each colony, you have to carefully scout your surrounding to make sure you are clear of any other colonies nearby preventing you from placing your Town Hall or limiting your colony area in that direction (in multiplayer, etc.). If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
-Location info of the next closest colony exits in the debug screen (displayed when you press F3). If there is a colony close to your current position, it will also show you the required distance away to place your Town Hall.
+Location info of the next closest colony exists in the debug screen (displayed when you press F3). If there is a colony close to your current position, it will also show you the required distance away to place your Town Hall.
 
 <p class="text-center"><img src="../../assets/images/tutorial/next_colony.png" alt="Next Colony"></p>
 
@@ -256,7 +256,7 @@ You can now right-click the Town Hall block again to look at its graphical user 
           <br>
           <li><strong>Housing assignment mode: </strong>Clicking on this button lets you switch between automatic or manual. If it's in automatic mode, citizens will be assigned a house as soon as they spawn (if housing is available). In manual mode, you can select which citizens will be housed in each <a href="../../source/buildings/house"> House</a> or <a href="../../source/buildings/tavern"> Tavern</a>. This is better if you have a large colony and many workers spread out in a large area so you can house your citizens as close as possible to their workplace.</li>
           <br>
-          <li><strong>Print help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
+          <li><strong>Show help messages: </strong>Clicking on this button lets you choose whether MineColonies help messages will appear in the chat. It is recommended that this be turned on for first-time players.</li>
           <br>
           <li><strong>Kids will be born: </strong>Clicking on this button lets you choose whether new kids will be born in your colony.</li>
         </ul>
@@ -353,7 +353,7 @@ Once the Builder has finished their hut, you're ready to start building any othe
 
 ### Final Notes
 
-You have now completed the most important steps completed to start and create your colony!
+You have now completed the most important steps to start and create your colony!
 
 Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Forester's Hut](../../source/buildings/forester), [Farm](../../source/buildings/farm&field), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant), and more are probably good places to start. 
 
