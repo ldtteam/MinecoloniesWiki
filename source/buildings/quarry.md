@@ -16,105 +16,50 @@ layout: default
         </div>
     </div>
     <hr />
-    <recipe>mine</recipe>
+    <recipe>simplequarry</recipe>
+    <recipe>mediumquarry</recipe>
+    <recipe>largequarry</recipe>
 </div>
 
-The Mine is where you can hire a miner to work the mine, or the quarry. At the mine, the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
+The Quarry is where you can hire a quarrier to dig the quarry. The Quarry will be a pit of varied size (simple quarry is 1 x 1 chunks, medium is 2 x 2) to collect larger amounts of stone type blocks.
 
-**Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine:
-
-| Mine Level | Shaft Y Level |
-| ---------- | ------------- |
-| 1 | 50 |
-| 2 | 30 |
-| 3+ | Bedrock |
-
-## Mine GUI
+## Quarry GUI
 
 <div class="row">
   <div class="col">
     
-    When accessing the Mine's hut block by right-clicking on it, you will see a GUI with different options:  
+    When accessing the Quarry's hut block by right-clicking on it, you will see a GUI with different options:  
 
     <div class="row">
       <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minegui1.png" class="img-fluid mx-auto" alt="Mine GUI">
+        <img src="../../assets/images/gui/quarrygui1.png" class="img-fluid mx-auto" alt="Quarry GUI">
       </div>
       <div class="col-sm-12 col-md">
         <br>
         <ul>
-          {% for item in site.data.gui.global %}
-            <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-          {% endfor %}
+            <li><strong>Hut Level:</strong>Tells you the type of hut and the build level of the building you have selected.</li>
+            <li><strong>Build Options:</strong>Lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.</li>
+            <li><strong>Inventory:</strong>Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any <a href="../../source/items/rack"> racks</a> or chests that were placed in the hut when it was built or upgraded, so be sure to check those as well!</li>
+            <li><strong>A chest icon:</strong>Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks/chests that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.</li>
         </ul>
       </div>
     </div>  
 
-    This is page two of the Mine's GUI.  
+    This is page two of the Quarry's GUI.  
 
     <div class="row">
       <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minegui2.png" class="img-fluid mx-auto" alt="Mine GUI 2">
+        <img src="../../assets/images/gui/quarrygui2.png" class="img-fluid mx-auto" alt="Quarry GUI 2">
       </div>
       <div class="col-sm-12 col-md">
         <ul>
-            <li><strong>List of Recipes:</strong> Simply lists all the recipes you've already taught the Mine. There's also a button to teach another.</li><br>
+            <li><strong>Assigned Workers:</strong>Tells you the worker assigned to this building.</li>
+            <li><strong>Manage Workers:</strong>Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual, otherwise your citizens will be hired automatically.</li>
+            <li><strong>Recall Worker:</strong>Recalls the worker at this building to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.</li>           
         </ul>
       </div>
     </div>
 
-    This is page three of the Mine's GUI.  
-
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Mine GUI 3">
-      </div>
-      <div class="col-sm-12 col-md">
-        <ul>
-            <li><strong>Minimum Stock: </strong> Use this button to tell the Mine to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-        </ul>
-      </div>
-    </div>
-
-    This is page four of the Mine's GUI.  
-
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minegui4.png" class="img-fluid mx-auto" alt="Mine GUI 4">
-      </div>
-      <div class="col-sm-12 col-md">
-        <ul>
-            <li><strong>Required Resources:</strong> Shows the resources needed to build the next shaft area.</li><br>
-        </ul>
-      </div>
-    </div>  
-
-    This is page five of the Mine's GUI.  
-
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minegui5.png" class="img-fluid mx-auto" alt="Mine GUI 5">
-      </div>
-      <div class="col-sm-12 col-md">
-        <ul>
-            <li><strong>Levels:</strong> The level refers to the platforms the Miner will place every 3 blocks down. Here you can assign what level of the Mine the Miner will create their mineshafts (nodes). If a level has a red number next to it, that means the Miner is currently mining that level. The Miner will ignore orders to mine at a specific level until the entire mineshaft is completed to the maximum depth their hut's level allows. You can also click Repair, to tell the Miner to restore that level to its original state. This can be useful if a fire breaks out in the mineshaft.</li><br>
-        </ul>
-      </div>
-    </div>
-
-    This is page six of the Mine's GUI.  
-
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minegui6.png" class="img-fluid mx-auto" alt="Mine GUI 6">
-      </div>
-      <div class="col-sm-12 col-md">
-        <ul>
-            <li><strong>Guards:</strong> Here is where you can assign <a href="../../source/workers/guard">Guards</a> to patrol this Mine. If assigned, they will patrol the level the Miner is currently mining at, to help protect them from hostile mobs. Only Guards set to the Patrol Mine task will show up here; tasks can be set in the <a href="../../source/buildings/guardtower">Guard Tower</a> GUI (<a href="../../source/buildings/barrackstower">Barracks Towers</a> do not have the Patrol Mine task). One Guard can be assigned at Mine levels 1 and 2, two Guards can be assigned at Mine levels 3 and 4, and three Guards can be assigned at Mine level 5.</li><br>
-        </ul>
-      </div>
-    </div>
-      
-      <br>
+    <br>
   </div>
 </div>
