@@ -159,6 +159,8 @@ subnav:
         url: source/workers/planter
       - page: Pupil
         url: source/workers/pupil
+      - page: Quarrier
+        url: source/workers/quarrier  
       - page: Rabbit Herder
         url: source/workers/rabbitherder
       - page: Shepherd
@@ -243,6 +245,8 @@ subnav:
         url: source/buildings/mysticalsite
       - page: Plantation
         url: source/buildings/plantation
+      - page: Quarry
+        url: source/buildings/quarry
       - page: Rabbit Hutch
         url: source/buildings/rabbithutch
       - page: Restaurant

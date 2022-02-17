@@ -19,15 +19,17 @@ layout: default
     <recipe>mine</recipe>
 </div>
 
-The Mine is where the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
+The Mine is where you can hire a miner to work the mine, or a quarrier to work the quarry. At the mine, the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 
 **Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine:
 
-| Mine Level | Shaft Y Level |
-| ---------- | ------------- |
-| 1 | 50 |
-| 2 | 30 |
-| 3+ | Bedrock |
+| Mine Level | Shaft Y Level | Shaft Y Level |
+| ---------- | ------------- | ------------- |
+| | 1.16 | 1.18 |
+| 1 | 50 | 40 |
+| 2 | 30 | 20 |
+| 3 | Bedrock | 0 |
+| 4 | | Bedrock |
 
 ## Mine GUI
 
