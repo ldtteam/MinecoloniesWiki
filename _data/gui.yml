@@ -8,7 +8,7 @@ global:
   - button: Recall Worker
     content: Recalls the worker at this building to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.
   - button: Build Options
-    content: Lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
   - button: Delivery Priority
     content: You can set the priority that a <a href="../../source/workers/courier"> Courier</a> will visit this hut and pick up items (when the worker at this hut issues a request), or you can tell Couriers to <i>never</i> visit this hut to pick up items. You can also tell a Courier to do a pickup now using the Request Pickup Now button. (For the pickup priority, 10 is the highest.)
   - button: List of Recipes and Teach Recipe
