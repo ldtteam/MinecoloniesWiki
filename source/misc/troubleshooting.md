@@ -64,3 +64,13 @@ If none of these apply, go on to the next troubleshooting checklists.
   12. Use the /mc colony requestsystem-reset [command](../../source/systems/command).
   13. Repair their work hut. Some workers will stop working if required elements are not present. Only the [Builder](../../source/workers/builder) can place beds, crafting tables, furnaces, chests, [racks](../../source/items/rack), and [compost barrels](../../source/items/compostbarrel). If you broke any of those, create a repair build order for the building.
   14. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
+
+## Upgrading to a newer Minecraft version
+Minecolonies is _not_ compatible in between major Minecraft versions. Upgrading a 1.16.5 modded world with Minecolonies to 1.18.1 won't work and is not supported at all.
+
+This is because mods tend to make breaking changes in between major Minecraft versions.
+
+An example to what can happen when you try to upgrade a world between major versions, to illustrate why it is a bad idea:
+  1. Shingles and timber frames got moved to Domum Ornamentum. Therefore, shingle and timber frame blocks will be gone from the world during the upgrade.
+  2. There is a bug that prevents modded block entities from retaining their data, which would mean that any hut block would lose the building they are connected to,
+     and any Domum Ornamentum block would fall back to their standard textures, or simply be removed.
