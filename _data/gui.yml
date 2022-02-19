@@ -18,7 +18,7 @@ global:
   - button: "?"
     content: Some huts have an in-game guide. Press the ? button to access it.
   - button: A chest icon
-    content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks/chests that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
+    content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 citizen:
   - button: Hut Level
     content: This tells you the level of the hut you have selected.
