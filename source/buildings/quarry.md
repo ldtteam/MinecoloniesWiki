@@ -40,7 +40,7 @@ The Quarry is where you can hire a quarrier to dig the quarry. The Quarry will b
             <li><strong>Hut Level:</strong>Tells you the type of hut and the build level of the building you have selected.</li>
             <li><strong>Build Options:</strong>Lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.</li>
             <li><strong>Inventory:</strong>Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any <a href="../../source/items/rack"> racks</a> or chests that were placed in the hut when it was built or upgraded, so be sure to check those as well!</li>
-            <li><strong>A chest icon:</strong>Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks/chests that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.</li>
+            <li><strong>A chest icon:</strong>Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.</li>
         </ul>
       </div>
     </div>  
