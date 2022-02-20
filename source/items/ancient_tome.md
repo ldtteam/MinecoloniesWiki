@@ -7,7 +7,10 @@ layout: default
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancient_tome.png" alt="Ancient Tome"></p>
     There is no recipe for the Ancient Tome. It must be obtained as a drop.
+    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/ancient_tome_glowing.png" alt="Glowing Ancient Tome"></p>
+    A glowing ancient tome, indicating a raid happening tonight.
 </div>
+
 <br>
 
 The Ancient Tome is a glowing book that's dropped by raiders (barbarians, pirates, vikings, egyptian raiders, etc) during raids. The Ancient Tome cannot be crafted and is only available as a drop. 
