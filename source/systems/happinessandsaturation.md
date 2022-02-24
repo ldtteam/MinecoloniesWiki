@@ -26,6 +26,8 @@ Every night, colonists will also become less happy if they are sick, homeless, u
 
 Surviving a raid without losing any colonists provides a colony-wide happiness boost.
 
+Colonists also like to have Guards near their homes and work places. Each [Guard Tower](../../source/buildings/guardtower) will provide a feeling of protection to the colonists based on how far it expands your [borders](../../source/systems/border). However, sometimes colonists may not recognize a newly placed Guard Tower until you tell them that their concerns for their safety have to do for now.
+
 ## Hunger/Saturation System
 
 The citizen saturation system is between 0-20. If it's 0, the citizen won't level anymore, won't work anymore, will request food in chat regularly, and will have the slowness effect. If it's less than 6, the citizen won't heal<!-- and will have a -25% leveling speed. If it's between 6 and 10, the citizen will have a -10% leveling speed. If it's between 10 and 14, the citizen will have a +10% leveling speed. If it's between 14 and 20, the citizen will have a +25% leveling speed-->. If it's 20, the citizen will have a double healing speed<!-- and a +25% leveling speed-->. They increase their saturation by eating, just like the player. Saturation is displayed with the saturation bar in each citizen's GUI (it looks like the hunger bar in the player's HUD).
