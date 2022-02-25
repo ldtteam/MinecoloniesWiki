@@ -66,7 +66,7 @@ When playing on a server, the server needs to send the schematics to the players
 
 #### How to create <a id="customhuts">custom huts</a>?
 
-To create new schematics for existing huts, there are some guidelines that you must follow: the scans MUST have the same footprint for the same style/hut's type; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level; the scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the Builder's Huts with the MyOwn style, we would have:
+To create new schematics, there are some guidelines that you must follow: the scans MUST have the same footprint for each level of the hut; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level; the scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the Builder's Huts with the MyOwn style, we would have:
 
 *myown/builder1.blueprint*
 *myown/builder2.blueprint*
