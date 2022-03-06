@@ -61,6 +61,7 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 | [Miner](../workers/miner) | Strength | Stamina | Faster block breaking | Faster block placing |
 | [Planter](../workers/planter) | Agility | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
 | [Pupil](../workers/pupil) | Knowledge | Mana |
+| [Quarrier](../workers/quarrier) | Strength | Stamina | Faster block breaking | Faster block placing |
 | [Rabbit Herder](../workers/rabbitherder) | Agility | Athletics | Higher chance to successfully hit a rabbit | Faster rabbit growth |
 | [Shepherd](../workers/shepherd) | Focus | Strength | More wool collected | More damage per attack |
 | [Sifter](../workers/sifter) | Focus | Strength | Better quality items found | Faster sifting |
