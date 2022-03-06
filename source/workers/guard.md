@@ -30,9 +30,11 @@ layout: default
 
 Guards are the protecting force for your colony. As long as you provide a Guard with a weapon, they will protect your colony day and night. 
 
-There are two types of Guards: Knights and Archers. Knights use swords, while Archers use bows. Archers don't require arrows to shoot, but can optionally use them for extra damage if you’ve completed the Consume Arrows [research](../../source/systems/research) in the [University](../../source/buildings/university). You can set the type of Guard in the [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower) GUI.
+There are three types of Guards: Knights, Archers, and Druids. Knights use swords, Archers use bows, and Druids throw potions to buff your guards and nerf your enemies, but do NOT do any damage by themselves. Archers don't require arrows to shoot, but can optionally use them for extra damage if you’ve completed the Consume Arrows [research](../../source/systems/research) in the [University](../../source/buildings/university). Similarly, Druids can use water bottles and mistletoe to make their potions stronger after the appropriate research. You can set the type of Guard in the [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower) GUI.
 
 Guards will use armor when provided with some, and, if they're a Knight, will use a shield as well (again, only if you've completed a research in the University).
+
+Druids can throw healing, resistance, saturation, or strength potions on you and your guards and negative potions, e.g., weakness and slowness, on enemies. To reiterate, Druids do NOT do any damage by themselves and will die if no other guards are around to protect them.
 
 The higher a Knight's Adaptability level, the faster their attack speed is. The higher their Stamina level, the more health they'll have.
 
