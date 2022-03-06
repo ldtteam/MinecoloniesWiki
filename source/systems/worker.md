@@ -44,7 +44,7 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 | [Courier](../workers/courier) | Agility | Adaptability | Faster run speed | More huts visited on each trip |
 | [Cowhand](../workers/cowhand) | Athletics | Stamina | More damage per attack | Cows grow up faster |
 | [Crusher](../workers/crusher) | Stamina | Strength | Decreases chance of sickness | Faster work speed |
-| [Druid](../workers/guard) | ? | ? | Increases potion quality? | Increases throwing accuracy? |
+| [Druid](../workers/guard) | Mana | Focus | Increases potion duration | Increases throwing accuracy |
 | [Dyer](../workers/dyer) | Creativity | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
 | [Enchanter](../workers/enchanter) | Mana | Knowledge | More XP collected per trip | Higher level of enchanted books |
 | [Farmer](../workers/farmer) | Stamina | Athletics | Less time cycling between planting and harvesting | Faster planting and harvesting |
