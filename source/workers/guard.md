@@ -16,6 +16,8 @@ layout: default
       <p><strong>Secondary Trait (Knight):</strong></p>
       <p><strong>Primary Trait (Archer):</strong></p>
       <p><strong>Secondary Trait (Archer):</strong></p>
+      <p><strong>Primary Trait (Druid):</strong></p>
+      <p><strong>Secondary Trait (Druid):</strong></p>
       <p><strong>Building:</strong></p>
     </div>
     <div class="col">
@@ -23,6 +25,8 @@ layout: default
       <p class="traits">Stamina</p>
       <p class="traitp">Agility</p>
       <p class="traits">Adaptability</p>
+      <p class="traitp">Mana</p>
+      <p class="traits">Focus</p>
       <p><a href="../buildings/guardtower">Guard Tower</a><b> / </b><a href="../buildings/barrackstower">Barracks Tower</a></p>
     </div>
   </div>
@@ -34,8 +38,8 @@ There are three types of Guards: Knights, Archers, and Druids. Knights use sword
 
 Guards will use armor when provided with some, and, if they're a Knight, will use a shield as well (again, only if you've completed a research in the University).
 
-Druids can throw healing, resistance, saturation, or strength potions on you and your guards and negative potions, e.g., weakness and slowness, on enemies. To reiterate, Druids do NOT do any damage by themselves and will die if no other guards are around to protect them.
-
 The higher a Knight's Adaptability level, the faster their attack speed is. The higher their Stamina level, the more health they'll have.
 
 The higher an Archer's Agility level, the more damage they'll do. The higher their Adaptability level, the greater their range will be.
+
+The higher a Druid's Mana, the longer their potions last. The higher their Focus, the more accurately they throw potions. Druids can throw buffing potions — e.g. healing, resistance, saturation, or strength — on you and your guards and negative potions — e.g., weakness and slowness — on enemies. To reiterate, Druids do NOT do any damage by themselves and will die if no other guards are around to protect them. Druids use
