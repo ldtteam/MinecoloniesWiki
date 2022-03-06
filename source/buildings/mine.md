@@ -19,7 +19,7 @@ layout: default
     <recipe>mine</recipe>
 </div>
 
-The Mine is where you can hire a miner to work the mine, or a quarrier to work the quarry. At the mine, the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
+The Mine is where you can hire a [Miner](../../source/workers/miner) to work the mine, or a [Quarrier](../../source/workers/quarrier) to work the [Quarry](../../source/buildings/quarry). At the mine, the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 
 **Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine:
 
