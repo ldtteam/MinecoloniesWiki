@@ -87,6 +87,18 @@ The type of tools/swords workers can use depends on the level of a worker's work
 | 4              | Netherite + 0 enchantments (OR wood/gold + 4 enchants OR Stone + 3 enchants OR Iron + 2 enchants OR diamond + 1 enchant) |
 | 5              | All Tools + unlimited enchantments                                                                                       |
 
+## Armor Levels
+
+The type of armor guards can use depends on the level of a guard's hut.
+
+| Work Hut Level | Max Armor Level                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| 1              | Leather or Gold                                                                                                          |
+| 2              | Chain + 0 enchantments (OR Leather/Gold + 1 enchantment)                                                                 |
+| 3              | Iron + 0 enchantments (OR Leather/Gold + 2 enchantments OR Chain + 1 enchantment)                                        |
+| 4              | Diamond or Plate + 0 enchantments (OR Leather/Gold + 3 enchantments OR Chain + 2 enchantments OR Iron + 1 enchantment)   |
+| 5              | All Armor + unlimited enchantments                                                                                       |
+
 ## Bow/Fishing Rod Levels
 
 There is also a system in place for the type of bows and fishing rods workers can use. This also depends on the level of a worker's work hut.
