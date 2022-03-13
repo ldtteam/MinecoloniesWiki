@@ -5,7 +5,7 @@ layout: default
 # Colony Banner
 
 <div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/colonybanner.png" alt="Colony Banner"></p>
+    <p style="text-align:center;"><img src="../../assets/images/items/colonybanner.png" alt="Colony Banner"></p>
     <recipe>colonybanner</recipe>
 </div>
 
