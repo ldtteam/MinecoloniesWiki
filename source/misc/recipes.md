@@ -47,6 +47,7 @@ The Raider's Bane [enchant](../../source/items/enchantments) is not on here as i
 | [Vertical Barrel](../../source/items/barrel_vertical) | **Any** Planks + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>barrel_vertical</recipe> |
 | [Build Tool](../../source/items/buildtool) | Cobblestone + Sticks | N/A | <recipe>buildingtool</recipe> |
 | [Clipboard](../../source/items/clipboard)     | Sticks + Build Tool + Leather | N/A | <recipe>clipboard</recipe> |
+| [Colony Banner](../../source/items/colonybanner)     | **Any** Wool + Build Tool | [Fletcher](../../source/buildings/fletcher) | <recipe>colonybanner</recipe> |
 | [Composted Dirt](../../source/items/compost)  | Dirt + Compost  | [Farm](../../source/buildings/farm&field) | <recipe>compostblock</recipe>   |
 | [Construction Tape](../../source/items/constructiontape) | White Wool + Sticks | [Sawmill](../../source/buildings/sawmill) | <recipe>constructiontape</recipe> |
 | [Field](../../source/buildings/farm&field)    | Hay Block **OR** Pumpkin + Stick + Leather | N/A | <recipe>field</recipe>          |
