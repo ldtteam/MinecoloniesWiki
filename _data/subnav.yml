@@ -49,6 +49,8 @@ subnav:
         url: source/items/calipers
       - page: Clipboard
         url: source/items/clipboard
+      - page: Colony Banner
+        url: source/items/colonybanner
       - page: Compost
         url: source/items/compost
       - page: Compost Barrel
