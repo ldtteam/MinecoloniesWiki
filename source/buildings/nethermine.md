@@ -1,5 +1,5 @@
 ---
-title: Nether Miner
+title: Nether Mine
 layout: default
 ---
 # Nether Mine
