@@ -165,7 +165,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
 | [Library](../../source/buildings/library)               | Bookshelves                                                          |                     |
 | [Mine](../../source/buildings/mine)                     | A few starting ladders where the shaft's ladders will go             |                     |
-| Nether miner                                            | A nether portal, and an enclosed 1x1x2 room                          |                     |
+| [Nether miner](../../source/buildings/netherminer)      | A nether portal, and an enclosed 1x1x2 room                          |                     |
 | [Plantation](../../source/buildings/plantation)         | 12 per level, 4 for each of sugar cane, cactus and bamboo            |                     |
 | [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
 | [School](../../source/buildings/school)                 | 2 carpets per level                                                  | 4 carpets per level |
