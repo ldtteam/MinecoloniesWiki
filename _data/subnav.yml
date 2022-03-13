@@ -55,6 +55,8 @@ subnav:
         url: source/items/compostbarrel
       - page: Construction Tape
         url: source/items/constructiontape
+      - page: Decoration Controller
+        url: source/items/decocontroller
       - page: Enchantments
         url: source/items/enchantments
       - page: Floating Carpet
