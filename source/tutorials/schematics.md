@@ -117,6 +117,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | mechanic1      | mechanic2      | mechanic3      | mechanic4      | mechanic5      |
 | miner1         | miner2         | miner3         | miner4         | miner5         |
 | mysticalsite1  | mysticalsite2  | mysticalsite3  | mysticalsite4  | mysticalsite5  |
+| netherworker1  | netherworker2  | netherworker3  | netherworker4  | netherworker5  |
 | plantation1    | plantation2    | plantation3    | plantation4    | plantation5    |
 | rabbithutch1   | rabbithutch2   | rabbithutch3   | rabbithutch4   | rabbithutch5   |
 | sawmill1       | sawmill2       | sawmill3       | sawmill4       | sawmill5       |
@@ -164,6 +165,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
 | [Library](../../source/buildings/library)               | Bookshelves                                                          |                     |
 | [Mine](../../source/buildings/mine)                     | A few starting ladders where the shaft's ladders will go             |                     |
+| [Nether Mine](../../source/buildings/nethermine)        | A nether portal, and an enclosed 1x1x2 room                          |                     |
 | [Plantation](../../source/buildings/plantation)         | 12 per level, 4 for each of sugar cane, cactus and bamboo            |                     |
 | [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
 | [School](../../source/buildings/school)                 | 2 carpets per level                                                  | 4 carpets per level |
