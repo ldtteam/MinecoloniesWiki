@@ -38,7 +38,6 @@ The data pack folder or zip file can be any valid file name, and will be used to
 Each folder within that "data" directory acts as a different **namespace**. Most mods have their own namespaces; for MineColonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (_), dashes (-), and/or dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
 
 <p style="font-size:12pt;text-align:center"><b>Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
-
 Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the <code>forge</code> and <code>minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
 
 ### Terminology
@@ -160,7 +159,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 
 ### Crafter Item Tags
 
- Additionally, some **Item Tags** are used to control what recipes can be taught to a worker by a player in-game. Each worker has a different set of tags. For a full list, see [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/tags/items).
+ Additionally, some **Item Tags** are used to control what recipes can be taught to a worker by a player in-game. Each worker has a different set of tags. For a full list, see [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/tags/items).
  
 | Item Tag                           | Effect                   |
 | ---------------------------------- | ------------------------ | 
