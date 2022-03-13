@@ -2,6 +2,6 @@
 title: Nether Miner
 layout: default
 ---
-# Nether Miner
+# Nether Mine
 
 _No information yet_
