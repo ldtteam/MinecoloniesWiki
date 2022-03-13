@@ -69,4 +69,4 @@ The following tags are currently implemented (more may be added from time to tim
     | `cactus` | Plantation | level-based | A block that cactus can be planted on |
     | `sugar`  | Plantation | level-based | A block that sugarcane can be planted on |
     | `portal` | Nether Miner | Always 1 | An obsidian block in the bottom of the nether portal |
-    | `vault`  | Nether Miner | Always 1 | A block in an enclosed room the nether miner can stand on |
+    | `vault`  | Nether Miner | Always 1 | A block in an enclosed room that the nether miner can stand on |
