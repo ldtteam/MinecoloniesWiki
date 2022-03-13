@@ -38,7 +38,6 @@ The data pack folder or zip file can be any valid file name, and will be used to
 Each folder within that "data" directory acts as a different **namespace**. Most mods have their own namespaces; for MineColonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (_), dashes (-), and/or dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
 
 <p style="font-size:12pt;text-align:center"><b>Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
-
 Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the <code>forge</code> and <code>minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
 
 ### Terminology
@@ -132,6 +131,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
  
 | Namespace       | tags\\items               | Effect                   |
 | --------------- | ------------------------- | ------------------------ | 
+| <code>minecolonies</code>    | <code>breakable_ore</code>             | (1.18+ only) Items with this tag are processed by the smelter using fortune |
 | <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give moderate compost. |
 | <code>minecolonies</code>    | <code>compostables_poor</code>         | Items that can be placed into a Composter, and give little compost. |
 | <code>minecolonies</code>    | <code>compostables_rich</code>         | Items that can be placed into a Composter, and give a lot of compost. |
@@ -139,11 +139,12 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 | <code>minecolonies</code>    | <code>florist_flowers</code>           | Grown by the [Florist](../../source/workers/florist), if they have a valid block form, at building level 3 or higher. |
 | <code>minecolonies</code>    | <code>fungi</code>                     | Items that can be grown by a [Forester](../../source/workers/forester) on Warped Nylium or Crimson Nylium. |
 | <code>minecolonies</code>    | <code>meshes</code>                    | Items that can be held as meshes by a [Sifter](../../source/workers/sifter). This only allows the Sifter to use the tool, it does not add benefits to doing so. See CrafterRecipes for more details. |
+| <code>minecolonies</code>    | <code>raw_ore</code>                   | (1.18+ only) Items with this tag, if processable in a furnace, can be processed at the smeltery |
 | <code>minecolonies</code>    | <code>reducible_ingredient</code>      | Items that may be reduced in cost by one, to a minimum of one, when in a colonist recipe that originally required more than one of the item. |
 | <code>minecolonies</code>    | <code>reducible_product_excluded</code> | Output items that can never have their crafter recipe efficiency improved. Most storage blocks or reversable recipes should be in this tag, to avoid possible infinite item loops. |
 | <code>forge</code>           | <code>crops_wheat</code>               | The Baker can cook any recipe including an in this tag, if the output is a food item. |
 | <code>forge</code>           | <code>glass</code>                     | All items with this tag, if produces in a furnace from an item tagged with #forge:glass, can be made at the Glassblower. |
-| <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and if processable in a furnace, can be processed in the smeltery. |
+| <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and in 1.16.5, if processable in a furnace, can be processed in the smeltery. |
 | <code>forge</code>          | <code>sand</code>                      | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower. |
 | <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a Farmer. |
 | <code>minecraft</code>       | <code>flowers</code>                   | Used by the [Beekeeper](../../source/workers/beekeeper) to breed bees. |
@@ -160,7 +161,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 
 ### Crafter Item Tags
 
- Additionally, some **Item Tags** are used to control what recipes can be taught to a worker by a player in-game. Each worker has a different set of tags. For a full list, see [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/tags/items).
+ Additionally, some **Item Tags** are used to control what recipes can be taught to a worker by a player in-game. Each worker has a different set of tags. For a full list, see [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/tags/items).
  
 | Item Tag                           | Effect                   |
 | ---------------------------------- | ------------------------ | 
