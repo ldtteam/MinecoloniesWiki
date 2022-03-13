@@ -10,8 +10,7 @@ layout: default
   Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest alpha if you are not running the latest. (Alpha does not mean it's unstable, it just means it's a relatively small release.)
   
 ## Missing Graphics, Issues with the [Build Tool](../../source/items/buildtool) Preview, And/Or Citizen GUIs Not Opening
-  If you experience missing textures for hut blocks, your build tool previews are messed up, and/or the citizen GUIs aren't opening when you right-click them, check if you have OptiFine installed as the current version is very buggy.
-  As there is nothing we can do, you can either live with these issues, or you will have to remove OptiFine.
+  If you experience missing textures for hut blocks, your build tool previews are messed up, and/or the citizen GUIs aren't opening when you right-click them, try updating MineColonies. As of the writing of this section, 1.16.5 and 1.18.1 versions are compatible, but not 1.18.2 yet.
 
 ## Crashes when Placing Structures
   If your game crashes placing a structure (e.g. a [supply camp or ship](../../source/items/supplycampandship)), your MineColonies and Structurize versions are probably incompatible. Update both to the latest <a href="#alphas">alphas</a>.
