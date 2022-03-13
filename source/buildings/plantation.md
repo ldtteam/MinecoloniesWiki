@@ -69,6 +69,6 @@ When accessing the Plantation's hut block by right-clicking on it, you will see 
 
 On page two of the GUI, you can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.
 
-**Note:** If you have completed the Double Trouble research in the [University](../../source/buildings/university) (which lets the Planter plant two crops at a time), this button will choose what will *NOT* be planted.
+**Note:** If you have completed the Double Trouble research in the [University](../../source/buildings/university) (which lets the Planter plant two crops at a time), this button will show *two* crops.
 
  <img src="../../assets/images/gui/plantationgui2.png" alt="Plantation GUI Page 2" />
