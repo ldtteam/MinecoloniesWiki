@@ -131,6 +131,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
  
 | Namespace       | tags\\items               | Effect                   |
 | --------------- | ------------------------- | ------------------------ | 
+| <code>minecolonies</code>    | <code>breakable_ore</code>             | (1.18+ only) Items with this tag are processed by the smelter using fortune |
 | <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give moderate compost. |
 | <code>minecolonies</code>    | <code>compostables_poor</code>         | Items that can be placed into a Composter, and give little compost. |
 | <code>minecolonies</code>    | <code>compostables_rich</code>         | Items that can be placed into a Composter, and give a lot of compost. |
@@ -138,11 +139,12 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 | <code>minecolonies</code>    | <code>florist_flowers</code>           | Grown by the [Florist](../../source/workers/florist), if they have a valid block form, at building level 3 or higher. |
 | <code>minecolonies</code>    | <code>fungi</code>                     | Items that can be grown by a [Forester](../../source/workers/forester) on Warped Nylium or Crimson Nylium. |
 | <code>minecolonies</code>    | <code>meshes</code>                    | Items that can be held as meshes by a [Sifter](../../source/workers/sifter). This only allows the Sifter to use the tool, it does not add benefits to doing so. See CrafterRecipes for more details. |
+| <code>minecolonies</code>    | <code>raw_ore</code>                   | (1.18+ only) Items with this tag, if processable in a furnace, can be processed at the smeltery |
 | <code>minecolonies</code>    | <code>reducible_ingredient</code>      | Items that may be reduced in cost by one, to a minimum of one, when in a colonist recipe that originally required more than one of the item. |
 | <code>minecolonies</code>    | <code>reducible_product_excluded</code> | Output items that can never have their crafter recipe efficiency improved. Most storage blocks or reversable recipes should be in this tag, to avoid possible infinite item loops. |
 | <code>forge</code>           | <code>crops_wheat</code>               | The Baker can cook any recipe including an in this tag, if the output is a food item. |
 | <code>forge</code>           | <code>glass</code>                     | All items with this tag, if produces in a furnace from an item tagged with #forge:glass, can be made at the Glassblower. |
-| <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and if processable in a furnace, can be processed in the smeltery. |
+| <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and in 1.16.5, if processable in a furnace, can be processed in the smeltery. |
 | <code>forge</code>          | <code>sand</code>                      | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower. |
 | <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a Farmer. |
 | <code>minecraft</code>       | <code>flowers</code>                   | Used by the [Beekeeper](../../source/workers/beekeeper) to breed bees. |
