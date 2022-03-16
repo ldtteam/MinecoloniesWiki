@@ -16,6 +16,8 @@ layout: default
 </div>
 <br>
 
+**Quick Fix: If you're using 1.17+ that has Domum Ornamentum, see the [Shingles](../../source/items/shingles) page for useage of the Architect's Cutter.**
+
 Timber framed blocks are blocks added in Structurize. Timber framed blocks come in various wood frames, as seen in the first recipe, surrounding not only wood centers but also cactus, cobblestone, stone, paper and bricks. (The outside frames only come in wood and cactus.) 
 
 For the rest of the variants you need to put a timber framed block into the crafting table until you get the version you want. The crafting starts with the plain version and at the end becomes the plain version again, so if you have the wrong kind of timber framed block you can easily start over again until you get the one you want. (Shown above in the recipes below the first with every kind of wooden frame.)
