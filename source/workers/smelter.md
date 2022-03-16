@@ -37,4 +37,4 @@ The higher a Smelter's Athletics level, the faster their furnaces will smelt.
 
 ---
 
-In 1.18, the Smelter instead applies Fortune to the ores they smelt - the level of Fortune is 1 less than the level of the smelter.  See the [Minecraft wiki](https://minecraft.fandom.com/wiki/Fortune#Ore) for details on Fortune.  Fortune IV (not on the table) will average 2.67 ores per ore.  This bonus doesn't apply to raw iron, copper, and gold chunks that the colony is given by the player, as it only applies to ores. 
+In 1.18, the Smelter instead applies Fortune to the ores they smelt. The Fortune level they apply is 1 less than the Smeltery's level.  See the [Minecraft wiki](https://minecraft.fandom.com/wiki/Fortune#Ore) for details on Fortune.  Fortune IV (not on the table) will average 2.67 ores per ore.  This bonus doesn't apply to raw iron, copper, and gold chunks that the colony is given by the player, as it only applies to ores. 
