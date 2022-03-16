@@ -159,6 +159,8 @@ subnav:
         url: source/workers/mechanic
       - page: Miner
         url: source/workers/miner
+      - page: Nether Miner
+        url: source/workers/netherminer
       - page: Planter
         url: source/workers/planter
       - page: Pupil
@@ -247,6 +249,8 @@ subnav:
         url: source/buildings/mine
       - page: Mystical Site
         url: source/buildings/mysticalsite
+      - page: Nether Mine
+        url: source/buildings/nethermine
       - page: Plantation
         url: source/buildings/plantation
       - page: Quarry
