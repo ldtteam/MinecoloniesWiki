@@ -31,6 +31,8 @@ As you level up the University, you can hire more researchers:
 | 4 | 4 |
 | 5 | 5 |
 
+Additionally, offline research time is unlocked at University level 3.
+
 ## University GUI
 
 When accessing the University's hut block by right-clicking on it, you will see a GUI with different options:
