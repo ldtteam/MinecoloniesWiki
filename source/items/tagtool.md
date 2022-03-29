@@ -70,3 +70,4 @@ The following tags are currently implemented (more may be added from time to tim
     | `sugar`  | Plantation | level-based | A block that sugarcane can be planted on |
     | `portal` | Nether Mine | Always 1 | An obsidian block in the bottom of the nether portal |
     | `vault`  | Nether Mine | Always 1 | A block in an enclosed room that the nether miner can stand on |
+    | `work`   | Archery     | level-based | The block the archer squire stands on to shoot the targets |
