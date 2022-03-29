@@ -9,15 +9,13 @@ layout: default
 
 The configuration file, commonly called the *config file,* is a way to change MineColonies settings. It is found within your Minecraft files:
 
-**1.15 File Path:** <code>(Your Minecraft folder)/config/minecolonies-common.toml</code>
-
 **1.16 Main Config File Path:** <code>(Your Minecraft folder)/saves/(your world's name)/serverconfigs/minecolonies-server.toml</code>
 
 **1.16 Client Config File Path:** <code>(Your Minecraft folder)/config/minecolonies-client.toml</code>
 
 ## Config Options
 
-The following will be for the 1.16 config, but most will apply to 1.15 as well.
+The following will be for the 1.16 config. Updates for 1.18 versions will be added soon(tm).
 
 ### Client-Side Config
 
@@ -42,7 +40,6 @@ The following will be for the 1.16 config, but most will apply to 1.15 as well.
 - Amount of time before a new citizen spawns - change this to change the amount of time before a new citizen spawns, pretty simple. This only applies when a colony is under the initial citizen number, however.
 - Max citizens in one colony - the max limit of citizens that can exist in each colony. If you're below this limit and you can't get more citizens, you probably need to complete the [research](../../source/systems/research) in the [university](../../source/buildings/university).
 - Should the [Builder](../../source/workers/builder) and [Miner](../../source/workers/miner) build without resources? - **DO NOT ENABLE THIS!!** This is a debug tool that, ironically, is very buggy. It *will* break your Builder!
-- Should there be a max of one [Warehouse](../../source/buildings/warehouse) per colony? - by default, you can only have one Warehouse in each colony. Disabling this lets you have an infinite number of Warehouses in each colony. (Note: Each [Courier](../../source/workers/courier) can only see the items in one Warehouse.)
 - Delay after each block placement - the delay for placing blocks. Applies to Builders, Miners, and other colonists that place blocks.
 - Delay modifier to mine a block - the delay for breaking blocks. Applies to Builders, Miners, and other colonists that mine blocks.
 - Should development features be enabled? - enables some features geared toward developers.
