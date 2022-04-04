@@ -31,6 +31,8 @@ subnav:
         url: source/systems/request
       - page: Research System
         url: source/systems/research
+      - page: Sleep System
+        url: source/systems/sleep
       - page: Worker System
         url: source/systems/worker
   - title: Items/Blocks
