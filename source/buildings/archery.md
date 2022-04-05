@@ -34,7 +34,7 @@ The number of students that can be trained at a time depends on the level of the
 | 4 | 4 |
 | 5 | 5 |
 
-The Archers in Training require a bow to practice. They will shoot at the practice targets, a target block (hay bale in 1.15) on a fence post. 
+The Archers in Training require a bow to practice. They will shoot at the practice targets, a target block (hay bale in 1.15) on a fence post. While shooting, they will try to stand at a place designated either by glowstone or by any block specially tagged as a standing point (tagging any block means that glowstone is ignored).
 
 The Archers in Training are not actual Guards even though they will be dressed as Archer Guards. They will not help defend the colony.
 
