@@ -125,7 +125,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
   <br>
   <div class="col-sm-12 col-md">
     <ul>
-      <li><strong>Current project</strong> The top line tells you what building is being worked on, and it's level.</li>
+      <li><strong>Current project</strong> The top line tells you which building is being worked on and its level.</li>
       <li><strong>Step</strong> What step of the project the builder is on.</li>
       <li><strong>Supplied %/ Used %</strong> How much of the needed resources are in the builder hut inventory, and how many of the resources have been placed.</li>
       <li><strong>Item</strong> Each needed item is displayed, along with how many of that item is in inventory, and how many are needed.  These amounts will change as they place blocks and will show only what blocks the Builder still needs to place. The block in black are in their inventory.  The blocks in red are the ones neither you nor the Builder has in their inventory.  The blocks in green are ones you have in inventory but the builder needs.  Clicking the up arrow next to the item will automatically remove that item from your inventory and place it into the builder's.</li>
