@@ -27,6 +27,8 @@ subnav:
         url: source/systems/happinessandsaturation
       - page: Pathing System
         url: source/systems/pathing
+      - page: Raid System
+        url: source/systems/raid
       - page: Request System
         url: source/systems/request
       - page: Research System
