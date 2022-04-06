@@ -50,7 +50,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
       </ul>
     </div>
   </div>
-
+    
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
@@ -84,7 +84,6 @@ Once the Builder's Hut is built you can now build anything you want, like worker
     <div class="col-sm-12 col-md">
       <img src="../../assets/images/gui/buildergui4.png" class="img-fluid mx-auto" alt="Builder GUI 4">
     </div>
-    <br>
     <div class="col-sm-12 col-md">
       <p><img src="../../assets/images/gui/guitab4.png" class="img-fluid mx-auto" alt="Crafting Recipes"> The fourth tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the recipes you have taught this hut and can remove them.</p>
       <ul>
@@ -98,7 +97,6 @@ Once the Builder's Hut is built you can now build anything you want, like worker
     <div class="col-sm-12 col-md">
       <img src="../../assets/images/gui/buildergui5.png" class="img-fluid mx-auto" alt="Builder GUI 5">
     </div>
-    <br>
     <div class="col-sm-12 col-md">
       <p><img src="../../assets/images/gui/guitab5.png" class="img-fluid mx-auto" alt="Work Orders"> The fifth tab of the GUI is <strong>Work Orders</strong>.  This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here. </p>
     </div>

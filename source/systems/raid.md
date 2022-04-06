@@ -9,7 +9,9 @@ layout: default
 ## Before the Raid
 As your colony develops, you may get raided by hostile forces. These forces can spawn almost anywhere except near your buildings. Generally, this means they'll spawn outside of the colony, but if your buildings are spread out, they could spawn between them!
 
-Raids will only spawn at the start of a night. There will be a chat message giving a general direction of where the raid spawned and a bar at the top of your screen showing your progress in defeating the raiders. (An image of this is coming soon(tm).) Raids spawn randomly, with a minimum number of nights between them and an average number of nights as set in the [config file](../../source/misc/configfile).
+Raids will only spawn at the start of a night. There will be a chat message giving a general direction of where the raid spawned and a bar at the top of your screen showing your progress in defeating the raiders. Raids spawn randomly, with a minimum number of nights between them and an average number of nights as set in the [config file](../../source/misc/configfile).
+
+<img src="../../assets/images/misc/multiRaidBars.png" alt="Multiple barbarian raids in progress">
 
 If you have a [Barracks](../../source/buildings/barracks) at level 3 or higher, you can hire spies to make raiders glow. This can help you find that one pesky raider that got stuck or is hiding and finish the raid.
 
