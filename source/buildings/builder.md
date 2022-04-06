@@ -34,7 +34,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
 <div class="row">
   <div class="col">
     
-  When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options.  You start on the main tab <img src="../../assets/images/gui/guildtab1.png" class="img-fluid mx-auto" alt="Main Tab">:
+  When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options.  You start on the main tab <img src="../../assets/images/gui/guitab1.png" class="img-fluid mx-auto" alt="Main Tab">:
 
   <br>
   <div class="row">
@@ -51,7 +51,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
     </div>
   </div>
   <br>
-      <p>The second tab of the GUI is Minimum Stock <img src="../../assets/images/gui/guildtab2.png" class="img-fluid mx-auto" alt="Minimum Stock">: </p>
+      <p>The second tab of the GUI is Minimum Stock <img src="../../assets/images/gui/guitab2.png" class="img-fluid mx-auto" alt="Minimum Stock">: </p>
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
@@ -65,7 +65,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
   </div>
   <br>
    <div class="col-sm-12 col-md"><br>
-      <p>The third tab of the GUI is Settings <img src="../../assets/images/gui/guildtab3.png" class="img-fluid mx-auto" alt="Settings">: </p>
+      <p>The third tab of the GUI is Settings <img src="../../assets/images/gui/guitab3.png" class="img-fluid mx-auto" alt="Settings">: </p>
     </div>
   <br>
   <div class="row">
@@ -76,14 +76,14 @@ Once the Builder's Hut is built you can now build anything you want, like worker
   <div class="col-sm-12 col-md">
     <ul>
       <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
-      <li><strong>Fill Block:</strong> Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.
+      <li><strong>Fill Block:</strong> Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.</li>
     </ul>
   </div>
   </div>
 
   <br>
    <div class="col-sm-12 col-md"><br>
-      <p>The fourth tab of the GUI is Crafting Recipes <img src="../../assets/images/gui/guildtab4.png" class="img-fluid mx-auto" alt="Crafting Recipes">.  
+      <p>The fourth tab of the GUI is Crafting Recipes <img src="../../assets/images/gui/guitab4.png" class="img-fluid mx-auto" alt="Crafting Recipes">.  
       <br>Here you can see all the recipes you have taught this hut and can remove them: </p>
     </div>
   <br>
@@ -99,7 +99,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
   </div>
   <br>
    <div class="col-sm-12 col-md"><br>
-      <p>The fifth tab of the GUI is Work Orders <img src="../../assets/images/gui/guildtab5.png" class="img-fluid mx-auto" alt="Work Orders">.  
+      <p>The fifth tab of the GUI is Work Orders <img src="../../assets/images/gui/guitab5.png" class="img-fluid mx-auto" alt="Work Orders">.  
       <br>This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here.
       </p>
       </div>
@@ -114,7 +114,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
   </div>
   <br>
    <div class="col-sm-12 col-md"><br>
-      <p>The sixth tab of the GUI is Required Resources <img src="../../assets/images/gui/guildtab6.png" class="img-fluid mx-auto" alt="Required Resources">. 
+      <p>The sixth tab of the GUI is Required Resources <img src="../../assets/images/gui/guitab6.png" class="img-fluid mx-auto" alt="Required Resources">. 
       <br>These are the resources that the Builder will need for the build order they are currently working on. </p>
     </div>
   <br>
