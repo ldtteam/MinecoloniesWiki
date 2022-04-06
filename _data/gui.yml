@@ -1,4 +1,6 @@
 global:
+  - button: Pencil
+    content: Allows you to rename the building.  The level of the building will always be listed after the name.
   - button: Hut Level
     content: Tells you the type of hut and the build level of the building you have selected.
   - button: Worker Assigned

@@ -33,7 +33,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
 
 <div class="row">
   <div class="col">
-    
+
   When accessing the Builder’s Hut block by right-clicking on it, you will see a GUI with different options.  You start on the main tab <img src="../../assets/images/gui/guitab1.png" class="img-fluid mx-auto" alt="Main Tab">:
 
   <br>
@@ -50,73 +50,58 @@ Once the Builder's Hut is built you can now build anything you want, like worker
       </ul>
     </div>
   </div>
-  <br>
-      <p>The second tab of the GUI is Minimum Stock <img src="../../assets/images/gui/guitab2.png" class="img-fluid mx-auto" alt="Minimum Stock">: </p>
+    
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
       <img src="../../assets/images/gui/buildergui2.png" class="img-fluid mx-auto" alt="Builder GUI 2">
     </div>
     <div class="col-sm-12 col-md">
+    <br>
+    <p><img src="../../assets/images/gui/guitab2.png" class="img-fluid mx-auto" alt="Minimum Stock">  The second tab of the GUI is <strong>Minimum Stock</strong>. </p>
     <ul>
         <li><strong> Add: </strong> Use this button to tell the Builder's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
     </ul>
     </div>
   </div>
-  <br>
-   <div class="col-sm-12 col-md"><br>
-      <p>The third tab of the GUI is Settings <img src="../../assets/images/gui/guitab3.png" class="img-fluid mx-auto" alt="Settings">: </p>
-    </div>
+
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
       <img src="../../assets/images/gui/buildergui3.png" class="img-fluid mx-auto" alt="Builder GUI 3">
     </div>
-  <br>
-  <div class="col-sm-12 col-md">
-    <ul>
-      <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
-      <li><strong>Fill Block:</strong> Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.</li>
-    </ul>
-  </div>
+    <div class="col-sm-12 col-md">
+      <p><img src="../../assets/images/gui/guitab3.png" class="img-fluid mx-auto" alt="Settings"> The third tab of the GUI is <strong>Settings</strong>.</p>
+      <ul>
+        <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
+        <li><strong>Fill Block:</strong> Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.</li>
+      </ul>
+    </div>
   </div>
 
-  <br>
-   <div class="col-sm-12 col-md"><br>
-      <p>The fourth tab of the GUI is Crafting Recipes <img src="../../assets/images/gui/guitab4.png" class="img-fluid mx-auto" alt="Crafting Recipes">.  
-      <br>Here you can see all the recipes you have taught this hut and can remove them: </p>
-    </div>
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
       <img src="../../assets/images/gui/buildergui4.png" class="img-fluid mx-auto" alt="Builder GUI 4">
     </div>
-  <br>
-  <div class="col-sm-12 col-md">
-    <ul>
-      <li><strong>Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
-    </ul>
+    <div class="col-sm-12 col-md">
+      <p><img src="../../assets/images/gui/guitab4.png" class="img-fluid mx-auto" alt="Crafting Recipes"> The fourth tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the recipes you have taught this hut and can remove them.</p>
+      <ul>
+        <li><strong>Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
+      </ul>
+    </div>
   </div>
-  <br>
-   <div class="col-sm-12 col-md"><br>
-      <p>The fifth tab of the GUI is Work Orders <img src="../../assets/images/gui/guitab5.png" class="img-fluid mx-auto" alt="Work Orders">.  
-      <br>This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here.
-      </p>
-      </div>
+
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
       <img src="../../assets/images/gui/buildergui5.png" class="img-fluid mx-auto" alt="Builder GUI 5">
     </div>
-  <br>
-  <div class="col-sm-12 col-md">
-  </div>
-  </div>
-  <br>
-   <div class="col-sm-12 col-md"><br>
-      <p>The sixth tab of the GUI is Required Resources <img src="../../assets/images/gui/guitab6.png" class="img-fluid mx-auto" alt="Required Resources">. 
-      <br>These are the resources that the Builder will need for the build order they are currently working on. </p>
+    <div class="col-sm-12 col-md">
+      <p><img src="../../assets/images/gui/guitab5.png" class="img-fluid mx-auto" alt="Work Orders"> The fifth tab of the GUI is <strong>Work Orders</strong>.  This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here. </p>
     </div>
+  </div>
+
   <br>
   <div class="row">
     <div class="col-sm-12 col-md">
@@ -124,6 +109,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
     </div>
   <br>
   <div class="col-sm-12 col-md">
+    <p><img src="../../assets/images/gui/guitab6.png" class="img-fluid mx-auto" alt="Required Resources"> The sixth tab of the GUI is <strong>Required Resources</strong>. These are the resources that the Builder will need for the build order they are currently working on. </p>
     <ul>
       <li><strong>Current project</strong> The top line tells you which building is being worked on and its level.</li>
       <li><strong>Step</strong> What step of the project the builder is on.</li>
@@ -131,7 +117,7 @@ Once the Builder's Hut is built you can now build anything you want, like worker
       <li><strong>Item</strong> Each needed item is displayed, along with how many of that item is in inventory, and how many are needed.  These amounts will change as they place blocks and will show only what blocks the Builder still needs to place. The block in black are in their inventory.  The blocks in red are the ones neither you nor the Builder has in their inventory.  The blocks in green are ones you have in inventory but the builder needs.  Clicking the up arrow next to the item will automatically remove that item from your inventory and place it into the builder's.</li>
     </ul>
   </div>
-   
+
   <br>
   </div>
 </div>
