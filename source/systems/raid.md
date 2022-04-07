@@ -9,7 +9,7 @@ layout: default
 ## Before the Raid
 As your colony develops, you may get raided by hostile forces. These forces can spawn almost anywhere except near your buildings. Generally, this means they'll spawn outside of the colony, but if your buildings are spread out, they could spawn between them!
 
-Raids will only spawn at the start of a night. There will be a chat message giving a general direction of where the raid spawned and a bar at the top of your screen showing your progress in defeating the raiders. Raids spawn randomly, with a minimum number of nights between them and an average number of nights as set in the [config file](../../source/misc/configfile).
+Raids will only spawn at the start of a night. There will be a chat message giving a general direction of where the raid spawned and a bar at the top of your screen showing your progress in defeating the raiders. Raids spawn randomly, with a minimum number of nights between them and an average number of nights as set in the [config file](../../source/misc/configfile). Larger colonies may get multiple waves or groups of raiders from different directions, even of different types. Be careful!
 
 <img src="../../assets/images/misc/multiRaidBars.png" alt="Multiple barbarian raids in progress">
 
@@ -38,6 +38,6 @@ Trying to "cheese" the raiders usually will not work. They are able to path fair
 Raiders have a chance to drop their equipment when you or your [Guards](../../source/workers/guard) defeat them. They may also drop [Ancient Tomes](../../source/items/ancient_tome), which are used in enchanting.
 
 ## After the Raid
-After all of the raiders have been defeated and spawners broken, your colonists will go back to their jobs. If any of your colonists die, then their family will mourn their death for a day and not work that day. However, guards will not be mourned.
+After all of the raiders have been defeated and spawners broken, your colonists will go back to their jobs. If any of your colonists die, then their family will mourn their death and not work that day. However, guards will not be mourned.
 
 As you defeat more raiders and develop your colony, the raids will increase in difficulty. How quickly they increase in difficulty or what affects their difficulty is not publicly known.

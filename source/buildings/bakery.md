@@ -125,9 +125,9 @@ The Baker can also craft some non-vanilla breads:
     <br>
     <p>The seventh tab of the GUI is <strong>Settings</strong>.</p>
     <ul>
-      <li><strong>Recipe Mode:</strong> This is unlocked by researching Warehouse Master in the University. This allows you to change the order the hut chooses when it knows more than one recipe for an item. 
+      <li><strong>Recipe Mode:</strong>  This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item. 
         <ul>
-          <li><strong>Priority:</strong> This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.</li>
+          <li><strong>Priority:</strong>  This is the default setting.  The hut will try to use the recipe that is higher up in their recipe list first.</li>
           <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
         </ul>
      </li>
