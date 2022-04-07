@@ -99,8 +99,8 @@ When accessing the Blacksmith's Hut block by right-clicking on it, you will see 
     <ul>
       <li><strong>Recipe Mode:</strong> This is unlocked by researching Warehouse Master in the [University](../../source/buildings/university).  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
         <ul>
-          <li><strong>Priority</strong>:  This is the default setting.  The hut will try to use the recipe that is higher up in their recipe list first.</li>
-          <li><strong>Warehouse Stock</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
+          <li><strong>Priority:</strong>  This is the default setting.  The hut will try to use the recipe that is higher up in their recipe list first.</li>
+          <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
         </ul>
      </li>
     </ul>
