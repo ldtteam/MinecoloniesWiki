@@ -35,7 +35,7 @@ The Baker can also craft some non-vanilla breads:
 <div class="row">
   <div class="col">
     
-    When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab <img src="../../assets/images/gui/guitab1.png" class="img-fluid mx-auto" alt="Main Tab">:
+    When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
     <br>
     <div class="row">
@@ -59,7 +59,7 @@ The Baker can also craft some non-vanilla breads:
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab4.png" class="img-fluid mx-auto" alt="Crafting Recipes"> The second tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the crafting recipes you have taught this hut and can remove them.</p>
+    <p>The second tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the crafting recipes you have taught this hut and can remove them.</p>
     <ul>
         <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
     </ul>
@@ -73,7 +73,7 @@ The Baker can also craft some non-vanilla breads:
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab7.png" class="img-fluid mx-auto" alt="Smelting Recipes"> The third tab of the GUI is <strong>Smelting Recipes</strong>.  Here you can see all the smelting recipes you have taught this hut and can remove them.</p>
+    <p>The third tab of the GUI is <strong>Smelting Recipes</strong>.  Here you can see all the smelting recipes you have taught this hut and can remove them.</p>
     <ul>
         <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a furnace interface which allows you to teach this hut recipes (not the worker).</li>
     </ul>
@@ -83,11 +83,11 @@ The Baker can also craft some non-vanilla breads:
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Bakery GUI 4">
+        <img src="../../assets/images/gui/bakerygui4.png" class="img-fluid mx-auto" alt="Bakery GUI 4">
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab2.png" class="img-fluid mx-auto" alt="Minimum Stock"> The fourth tab of the GUI is <strong>Minimum Stock</strong>.  It has one button:</p>
+    <p>The fourth tab of the GUI is <strong>Minimum Stock</strong>.  It has one button:</p>
     <ul>
          <li><strong> Add: </strong> Use this button to tell the Bakery to keep a minimum stock on hand. Set items will be displayed above the button. (It can be useful to set a minimum stock of dough, so the Baker can quickly bake items without needing to craft the dough first.)</li>
     </ul>
@@ -101,7 +101,7 @@ The Baker can also craft some non-vanilla breads:
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab8.png" class="img-fluid mx-auto" alt="Fuel"> The fifth tab of the GUI is <strong>Fuel</strong>.  Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</p>
+    <p>The fifth tab of the GUI is <strong>Fuel</strong>.  Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</p>
   </div>
 </div>
 
@@ -112,7 +112,7 @@ The Baker can also craft some non-vanilla breads:
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab5.png" class="img-fluid mx-auto" alt="Tasks"> The sixth tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the baker is working on, and where it is going.</p>
+    <p>The sixth tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the baker is working on, and where it is going.</p>
   </div>
 </div>
 
@@ -123,7 +123,7 @@ The Baker can also craft some non-vanilla breads:
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab3.png" class="img-fluid mx-auto" alt="Settings"> The seventh tab of the GUI is <strong>Settings</strong>.  This is currently not in use for this hut.</p>
+    <p>The seventh tab of the GUI is <strong>Settings</strong>.  This is currently not in use for this hut.</p>
   </div>
 </div>
 
