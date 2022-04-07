@@ -35,7 +35,7 @@ The Baker can also craft some non-vanilla breads:
 <div class="row">
   <div class="col">
     
-    When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options:
+    When accessing the Bakery's hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
     <br>
     <div class="row">
@@ -51,35 +51,82 @@ The Baker can also craft some non-vanilla breads:
         </ul>
       </div>
     </div>
-    <br> <br>
 
-    This is page two of the Bakery GUI.
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/bakerygui2.png" class="img-fluid mx-auto" alt="Bakery GUI 2">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The second tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the crafting recipes you have taught this hut and can remove them.</p>
+    <ul>
+        <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
+    </ul>
+  </div>
+</div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/restaurantgui2.png" class="img-fluid mx-auto" alt="Bakery GUI 2">
-      </div>
-      <div class="col-sm-12 col-md">
-          <ul>
-          <li><strong> Fuel: </strong> Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</li>
-          </ul>
-        </div>
-      </div>
-      <br><br>
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/bakerygui3.png" class="img-fluid mx-auto" alt="Bakery GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The third tab of the GUI is <strong>Smelting Recipes</strong>.  Here you can see all the smelting recipes you have taught this hut and can remove them.</p>
+    <ul>
+        <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a furnace interface which allows you to teach this hut recipes (not the worker).</li>
+    </ul>
+  </div>
+</div>
 
-    This is page three of the Bakery GUI.
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/bakerygui4.png" class="img-fluid mx-auto" alt="Bakery GUI 4">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The fourth tab of the GUI is <strong>Minimum Stock</strong>.  It has one button:</p>
+    <ul>
+         <li><strong> Add: </strong> Use this button to tell the Bakery to keep a minimum stock on hand. Set items will be displayed above the button. (It can be useful to set a minimum stock of dough, so the Baker can quickly bake items without needing to craft the dough first.)</li>
+    </ul>
+  </div>
+</div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Bakery GUI 3">
-      </div>
-      <div class="col-sm-12 col-md">
-          <ul>
-          <li><strong> Minimum Stock: </strong> Use this button to tell the Bakery to keep a minimum stock on hand. Set items will be displayed above the button. (It can be useful to set a minimum stock of dough, so the Baker can quickly bake items without needing to craft the dough first.)</li>
-          </ul>
-        </div>
-      </div>
-      <br>
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/bakerygui5.png" class="img-fluid mx-auto" alt="Bakery GUI 5">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The fifth tab of the GUI is <strong>Fuel</strong>.  Listed here are items that can be used by the Baker as fuel in their furnaces. Simply turn on any that you want your Baker to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Baker when they need fuel. (The black box at the top is to search for items.)</p>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/bakerygui6.png" class="img-fluid mx-auto" alt="Bakery GUI 6">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The sixth tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the baker is working on, and where it is going.</p>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/bakerygui7.png" class="img-fluid mx-auto" alt="Bakery GUI 7">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The seventh tab of the GUI is <strong>Settings</strong>.  This is currently not in use for this hut.</p>
+  </div>
+</div>
+
   </div>
 </div>
 

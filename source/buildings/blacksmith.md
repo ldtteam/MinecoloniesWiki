@@ -41,7 +41,11 @@ When a colonist is requesting a tool from the Blacksmith with multiple accepted 
 
 ## Blacksmith's Hut GUI
 
-When accessing the Blacksmith's Hut block by right-clicking on it, you will see a GUI with different options:
+<div class="row">
+ 
+<div class="col">
+
+When accessing the Blacksmith's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
 
 <br>
 <div class="row">
@@ -57,15 +61,43 @@ When accessing the Blacksmith's Hut block by right-clicking on it, you will see 
     </ul>
   </div>
 </div>  
-  <br>
-  
-The 2nd page of the GUI shows what crafting task(s) the Blacksmith currently has.
+
+<br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Blacksmith's Hut GUI 2">
+    <img src="../../assets/images/gui/blacksmithgui2.png" class="img-fluid mx-auto" alt="Blacksmith GUI 2">
   </div>
   <div class="col-sm-12 col-md">
     <br>
+    <p>The second tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the crafting recipes you have taught this hut and can remove them.</p>
+    <ul>
+        <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
+    </ul>
   </div>
 </div>
-<br> <br>
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+    <img src="../../assets/images/gui/blacksmithgui3.png" class="img-fluid mx-auto" alt="Blacksmith GUI 3">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The third tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the blacksmith is working on, and where it is going.</p>
+  </div>
+</div>
+
+
+<br>
+<div class="row">
+  <div class="col-sm-12 col-md">
+        <img src="../../assets/images/gui/blacksmithgui4.png" class="img-fluid mx-auto" alt="Blacksmith GUI 4">
+  </div>
+  <div class="col-sm-12 col-md">
+    <br>
+    <p>The fourth tab of the GUI is <strong>Settings</strong>.  This is currently not in use for this hut.</p>
+  </div>
+</div>
+
+  </div>
+</div>  

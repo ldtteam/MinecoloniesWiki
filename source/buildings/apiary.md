@@ -39,7 +39,7 @@ The level of the Apiary determines the max number of hives the Beekeeper can tak
  
 <div class="col">
 
-When accessing the Apiary Hut block by right-clicking on it, you will see a GUI with different options:
+When accessing the Apiary Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
 
 <br>
 <div class="row">
@@ -64,7 +64,7 @@ When accessing the Apiary Hut block by right-clicking on it, you will see a GUI 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab2.png" class="img-fluid mx-auto" alt="Minimum Stock"> The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
+    <p>The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
     <ul>
         <li><strong> Minimum Stock: </strong> Use this button to tell the Apiary to keep a minimum stock on hand. Set items will be displayed above the button.</li>
     </ul>
@@ -78,7 +78,7 @@ When accessing the Apiary Hut block by right-clicking on it, you will see a GUI 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab3.png" class="img-fluid mx-auto" alt="Settings"> The third tab of the GUI is <strong>Settings</strong>.  It has two buttons:</p>
+    <p>The third tab of the GUI is <strong>Settings</strong>.  It has two buttons:</p>
     <ul>
       <li><b>Breeding:</b> On by default. Here you can choose if the Beekeeper will breed bees.</li>
       <li><b>Honeycombs or Honey:</b> Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.</li>
@@ -93,7 +93,7 @@ When accessing the Apiary Hut block by right-clicking on it, you will see a GUI 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/apiarygui4tab.png" class="img-fluid mx-auto" alt="Flowers"> The fourth tab of the GUI is <strong>Flowers</strong>.  Here you designate what flowers you want the Beekeeper to request and use during breeding.  By default, all flowers are turned off.</p>
+    <p>The fourth tab of the GUI is <strong>Flowers</strong>.  Here you designate what flowers you want the Beekeeper to request and use during breeding.  By default, all flowers are turned off.</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ When accessing the Apiary Hut block by right-clicking on it, you will see a GUI 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/apiarygui5tab.png" class="img-fluid mx-auto" alt="Tool"> The fifth tab of the GUI is the <strong>Hive Tool</strong>.</p>
+    <p>The fifth tab of the GUI is the <strong>Hive Tool</strong>.</p>
     <ul>
       <li><b>Obtain Tool:</b> Click this button to get the hive tool, which is how you select which hives the Beekeeper will take care of. To select a hive, right-click on it with the hive tool. Right-click on a hive again to remove it.</li>
     </ul>

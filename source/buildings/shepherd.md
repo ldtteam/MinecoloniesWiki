@@ -34,7 +34,7 @@ The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food a
 
 ## Shepherd's Hut GUI
 
-When accessing the Shepherd's Hut block by right-clicking on it, you will see a GUI with different options.  You start on the main tab <img src="../../assets/images/gui/guitab1.png" class="img-fluid mx-auto" alt="Main Tab">
+When accessing the Shepherd's Hut block by right-clicking on it, you will see a GUI with different options.  You start on the main tab:
 
 <br>
 <div class="row">
@@ -58,7 +58,7 @@ When accessing the Shepherd's Hut block by right-clicking on it, you will see a 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab2.png" class="img-fluid mx-auto" alt="Minimum Stock"> The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
+    <p>The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
     <ul>
         <li><strong> Minimum Stock: </strong> Use this button to tell the Shepherd's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
     </ul>
@@ -72,7 +72,7 @@ When accessing the Shepherd's Hut block by right-clicking on it, you will see a 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p><img src="../../assets/images/gui/guitab3.png" class="img-fluid mx-auto" alt="Settings"> This is page three of the GUI. It has two buttons:</p>
+    <p>This is page three of the GUI. It has two buttons:</p>
     <ul>
       <li><b>Breeding:</b> On by default. Here you can choose if the Shepherd will breed (and consequently kill) sheep.</li>
       <li><b>Feeding:</b> On by default. Here you can choose if the Shepherd will feed baby animals, to let them grow up faster.</li>
