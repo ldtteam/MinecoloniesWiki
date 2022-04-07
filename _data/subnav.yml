@@ -71,6 +71,8 @@ subnav:
         url: source/items/gates
       - page: Meshes
         url: source/items/meshes
+      - page: Mistletoe
+        url: source/items/mistletoe
       - page: Multi-Piston
         url: source/items/multipiston
       - page: Paper Wall
