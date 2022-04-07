@@ -104,7 +104,7 @@ When accessing the Blacksmith's Hut block by right-clicking on it, you will see 
         </ul>
      </li>
     </ul>
-    <p>For example: the sawmill has two recipes to make chests, one using 8 oak planks, and one using 8 spruce planks. If the oak planks to chest recipe is higher on the list, the carpenter would always use oak planks to make it (even when there is hardly any oak left). The warehouse stock option could let them select spruce planks, when there is much more spruce planks in the warehouse than oak planks.</p>
+    <p>For example: the sawmill has two recipes to make chests: one using 8 oak planks, and one using 8 spruce planks. In "Priority" mode, if the oak planks recipe is higher on the list, the carpenter would always use oak planks to make chests (even if there are none left). In "Warehouse Stock" mode, the carpenter would check to see that there are more spruce planks than oak planks in the warehouse before deciding to use spruce planks to make chests.</p>
   </div>
 </div>
 
