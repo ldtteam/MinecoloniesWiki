@@ -38,6 +38,6 @@ Trying to "cheese" the raiders usually will not work. They are able to path fair
 Raiders have a chance to drop their equipment when you or your [Guards](../../source/workers/guard) defeat them. They may also drop [Ancient Tomes](../../source/items/ancient_tome), which are used in enchanting.
 
 ## After the Raid
-After all of the raiders have been defeated and spawners broken, your colonists will go back to their jobs. If any of your colonists die, then their family will mourn their death for a day and not work that day. However, guards will not be mourned.
+After all of the raiders have been defeated and spawners broken, your colonists will go back to their jobs. If any of your colonists die, then their family will mourn their death and not work that day. However, guards will not be mourned.
 
 As you defeat more raiders and develop your colony, the raids will increase in difficulty. How quickly they increase in difficulty or what affects their difficulty is not publicly known.
