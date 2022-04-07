@@ -125,14 +125,14 @@ The Baker can also craft some non-vanilla breads:
     <br>
     <p>The seventh tab of the GUI is <strong>Settings</strong>.</p>
     <ul>
-      <li><strong>Recipe Mode:</strong> This is unlocked by researching Warehouse Master in the [University](../../source/buildings/university).  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      <li><strong>Recipe Mode:</strong> This is unlocked by researching Warehouse Master in the [University](../../source/buildings/university).  This allows you to change the priority of recipes the hut chooses when it knows more than one recipe for an item.
         <ul>
           <li><strong>Priority:</strong>  This is the default setting.  The hut will try to use the recipe that is higher up in their recipe list first.</li>
           <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
         </ul>
      </li>
     </ul>
-    <p>For example: the sawmill has two recipes to make chests, one using 8 oak planks, and one using 8 spruce planks. If the oak planks to chest recipe is higher on the list, the carpenter would always use oak planks to make it (even when there is hardly any oak left). The warehouse stock option could let them select spruce planks, when there is much more spruce planks in the warehouse than oak planks.</p>
+    <p>For example: the sawmill has two recipes to make chests: one using 8 oak planks, and one using 8 spruce planks. In "Priority" mode, if the oak planks recipe is higher on the list, the carpenter would always use oak planks to make chests (even if there are none left). In "Warehouse Stock" mode, the carpenter would check to see that there are more spruce planks than oak planks in the warehouse before deciding to use spruce planks to make chests.</p>
   </div>
 </div>
 
