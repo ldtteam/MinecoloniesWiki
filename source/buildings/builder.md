@@ -122,13 +122,13 @@ Once the Builder's Hut is built you can now build anything you want, like worker
   </div>
 </div>
 
-### A few things to consider
+## Hints and Tips
 
 For the placement of the Builder's Hut, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the Builder has less of a distance to walk between their hut and the build sites.
 
 The Builder will not start another build assignment until they have finished the current one.
 
-<a id="workorders">You</a> can go into the Town Hall's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the Builder will continue where they left off.
+You can go into the Town Hall's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the Builder will continue where they left off.
 
 If the Builder removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
 <br><br>
