@@ -38,7 +38,7 @@ The Composter's Hut is where the Composter will turn organic materials into [com
 
 ## Composter's Hut GUI
 
-When accessing the Composter's Hut block by right-clicking on it, you will see a GUI with different options:
+When accessing the Composter's Hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
 <br>
 <div class="row">
@@ -55,20 +55,30 @@ When accessing the Composter's Hut block by right-clicking on it, you will see a
   </div>
 </div>
 
-
-
-By pressing the arrow button in the top right corner of the GUI, you will be taken to page two of the GUI.
-
+<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/compostergui2.png" class="img-fluid mx-auto" alt="Composter GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul><br>
-      <li><strong>Items to compost:</strong> Here you will see a list of all the items that were recognized for the composter to use, including modded items. All items are off by default. You can then select which items you want the composter to use by clicking on the button. (The black box at the top lets you search for items.)</li><br>
-     <li><strong>Compost/Dirt:</strong> You can select which item you want the composter to make, compost or dirt. Just click on the button to change the setting.</li>
-    </ul>
-  </div>
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/compostergui2.png" class="img-fluid mx-auto" alt="Composter GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The second tab of the GUI is <strong>Items to Compost</strong>.</p>
+        <ul>
+          <li><strong>Items to compost:</strong> Here you will see a list of all the items that were recognized for the composter to use, including modded items. All items are off by default. You can then select which items you want the composter to use by clicking on the button. The black box at the top lets you search for items.</li>
+          <li><strong>Reset to Default:</strong> Resets all items to off.</li>
+        </ul>
+    </div>
 </div>
-<br>  
-  <br>
+
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/compostergui3.png" class="img-fluid mx-auto" alt="Composter GUI 3">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The third tab of the GUI is <strong>Settings</strong>.</p>
+        <ul>
+          <li><strong>Produce Dirt:</strong> Turning this on will make dirt instead of compost.  It also occassionally produces podzol.</li>
+          <li><strong>Min Warehouse Stock:</strong> This is the minimum number of an item to be left in the warehouse before the hut will request and compost other items.  The default is 16.</li>
+        </ul>
+    </div>
+</div>
