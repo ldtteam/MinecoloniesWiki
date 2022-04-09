@@ -34,11 +34,8 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
 
 
 ## Cowhand's Hut GUI
-
-<div class="row">
-  <div class="col">
     
-    When accessing the Cowhand's Hut block by right-clicking on it, you will see a GUI with different options:
+When accessing the Cowhand's Hut block by right-clicking on it, you will see a GUI with different options:
 
     <br>
     <div class="row">
@@ -61,31 +58,28 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
       <div class="col-sm-12 col-md">
         <img src="../../assets/images/gui/cowhandgui2.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 2">
       </div>
-      <div class="col-sm-12 col-md">
-        <br>
-        <p>This is page two of the GUI. It has two buttons:</p>
-        <ul>
-            <li><b>Breeding:</b> On by default. Here you can choose if the Cowhand will breed (and consequently kill) cows or just collect milk (or do nothing, depending on the setting below).</li>
-          <li><b>Collecting Milk:</b> On by default. In this mode, you provide the Cowhand with as many empty buckets as you like. In return, they will milk the cows and give you back buckets of milk (along with the meat and leather). You can click the button to turn off this mode, and the Cowhand will only breed and butcher the cows, not milk them.</li>
-        </ul>
-      </div>
+     <div class="col-sm-12 col-md">
+      <br>
+      <p>The second tab of the GUI is <strong>Minimum Stock</strong>. </p>
+      <ul>
+          <li><strong> Add: </strong> Use this button to tell the hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+      </ul>
+     </div>
     </div>
     <br>
 
     <br>
     <div class="row">
       <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 3">
+        <img src="../../assets/images/gui/cowhandgui3.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 3">
       </div>
       <div class="col-sm-12 col-md">
         <br>
-        <p>This is page three of the GUI. It has one button:</p>
-            <ul>
-                <li><strong> Minimum Stock: </strong> Use this button to tell the Cowhand's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-            </ul>
+        <p>The third tab of the GUI is <strong>Settings</strong>. </p>
+        <ul>
+           <li><b>Breeding:</b> On by default. Here you can choose if the Cowhand will breed (and consequently kill) cows.</li>
+           <li><b>Feeding:</b> On by default. Here you can choose if the Cowhand will feed baby animals, to let them grow up faster.</li>
+           <li><b>Milking:</b> Off by default. When on, you provide the Cowhand with as many empty buckets as you like. In return, they will milk the cows and give you back buckets of milk.</li>
+        </ul>
       </div>
     </div>  
-      
-      <br>
-  </div>
-</div>

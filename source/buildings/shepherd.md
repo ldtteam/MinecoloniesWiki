@@ -72,7 +72,7 @@ When accessing the Shepherd's Hut block by right-clicking on it, you will see a 
   </div>
   <div class="col-sm-12 col-md">
     <br>
-    <p>This is page three of the GUI. It has two buttons:</p>
+    <p>The third tab of the GUI is <strong>Settings</strong>.  It has four buttons:</p>
     <ul>
       <li><b>Breeding:</b> On by default. Here you can choose if the Shepherd will breed (and consequently kill) sheep.</li>
       <li><b>Feeding:</b> On by default. Here you can choose if the Shepherd will feed baby animals, to let them grow up faster.</li>

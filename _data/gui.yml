@@ -3,7 +3,7 @@ global:
     content: Allows you to rename the building.  The level of the building will always be listed after the name.
   - button: Hut Level
     content: Tells you the type of hut and the build level of the building you have selected.
-  - button: Worker Assigned
+  - button: Assigned Workers
     content: Tells you the worker assigned to this building.
   - button: Manage Workers
     content: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual, otherwise your citizens will be hired automatically.

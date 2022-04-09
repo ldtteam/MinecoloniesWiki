@@ -74,6 +74,22 @@ Once the Builder's Hut is built you can now build anything you want, like worker
       <p>The third tab of the GUI is <strong>Settings</strong>.</p>
       <ul>
         <li><strong>Builder Mode:</strong> Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.</li>
+        <li><strong>Recipe Mode:</strong> This is unlocked by researching Warehouse Master in the University. This allows you to change the order the hut chooses when it knows more than one recipe for an item. 
+          <ul>
+            <li><strong>Priority:</strong> This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.</li>
+            <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
+          </ul>
+          <p>For example: the sawmill has two recipes to make chests: one using 8 oak planks, and one using 8 spruce planks. In "Priority" mode, if the oak planks recipe is higher on the list, the carpenter would always use oak planks to make chests (even if there are none left). In "Warehouse Stock" mode, the carpenter would check to see that there are more spruce planks than oak planks in the warehouse before deciding to use spruce planks to make chests.</p>
+        </li>
+        <li><strong>Build Method:</strong> This is unlocked by researching Builder Modes in the University.  This allows you to change how the builder builds, reducing pathfinding and speeding up builds (especially large builds).  Any one of these can be set in the structurize config, but once the "Builder Modes" research is done in the university, the one set here takes precedence.
+          <ul>
+            <li><strong>default:</strong> The default row-by-row pattern.</li>
+            <li><strong>inwardcircle:</strong> Blocks are placed like a square spiral from the outside in.</li>
+            <li><strong>inwardcircleheight#:</strong> This will also make spirals from the outside in, but each spiral gets built upward 1 to 4 times, before the builder will start the next square inward.</li>
+            <li><strong>hilbert:</strong> hilbert does <a href="https://en.wikipedia.org/wiki/Hilbert_curve" target="_blank">this pattern</a>, with a little difference to work for rectangular areas.</li>
+            <li><strong>random:</strong> Blocks are placed in an entirely random order. Note that this slows down builds.</li>
+          </ul>
+        </li>
         <li><strong>Fill Block:</strong> Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.</li>
       </ul>
     </div>

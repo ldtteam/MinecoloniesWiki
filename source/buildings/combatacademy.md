@@ -40,7 +40,7 @@ The Knights in Training are not actual Guards even though they will be dressed a
 
 ## Combat Academy GUI
 
-When accessing the Combat Academy's hut block by right-clicking on it, you will see a GUI with different options:
+When accessing the Combat Academy's hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
 <br>
 <div class="row">
@@ -56,15 +56,14 @@ When accessing the Combat Academy's hut block by right-clicking on it, you will 
     </ul>
   </div>
 </div>  
+
   <br>
-
-This is page two of the Combat Academy GUI.
-
 <div class="row">
     <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Combat Academy GUI 2">
+        <img src="../../assets/images/gui/combatacademygui2.png" class="img-fluid mx-auto" alt="Combat Academy GUI 2">
     </div>
     <div class="col-sm-12 col-md">
+    <p>The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
         <ul>
         <li><strong> Minimum Stock: </strong> Use this button to tell the Combat Academy to keep a minimum stock on hand. Set items will be displayed above the button.</li>
         </ul>

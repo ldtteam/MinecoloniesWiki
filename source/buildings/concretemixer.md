@@ -26,7 +26,7 @@ The Concrete Mixer will craft all types of concrete powder and place them in flo
 
 ## Concrete Mixer's Hut GUI
 
-When accessing the Concrete Mixer's Hut by right-clicking on it, you will see a GUI with different options:
+When accessing the Concrete Mixer's Hut by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
 <br>
 <div class="row">
@@ -42,15 +42,39 @@ When accessing the Concrete Mixer's Hut by right-clicking on it, you will see a 
     </ul>
   </div>
 </div>  
-  <br>
   
-The 2nd page of the GUI shows what task(s) the Concrete Mixer currently has.
+<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Concrete Mixer's Hut GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-  </div>
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/concretemixergui2.png" class="img-fluid mx-auto" alt="Concrete Mixer's Hut GUI2">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The second tab of the GUI is <strong>List of Recipes</strong>. Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.</p>
+    </div>
 </div>
-<br> <br>
+  
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/concretemixergui3.png" class="img-fluid mx-auto" alt="Concrete Mixer's Hut GUI3">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The third tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the hut is working on, and where it is going.</p>
+    </div>
+</div>
+  
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/concretemixergui4.png" class="img-fluid mx-auto" alt="Concrete Mixer's Hut GUI4">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The fourth tab of the GUI is <strong>Settings</strong>.</p>
+      <li><strong>Recipe Mode:</strong>  This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item. 
+        <ul>
+          <li><strong>Priority:</strong>  This is the default setting.  The hut will try to use the recipe that is higher up in their recipe list first.</li>
+          <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
+        </ul>
+     </li>
+    </div>
+</div>
