@@ -1,0 +1,13 @@
+<div class="row py-3">
+    {% if include.image | default "" != "" %}
+    <div class="col-sm-12 col-md">
+        <img src="{{ include.image }}" class="img-fluid mx-auto" alt="{{ include.alt | default: 'GUI' | strip }}">
+    </div>
+    {% endif %}
+    <div class="col-sm-12 col-md">
+        {% if include.header | default: "" | strip != "" %}
+        <p>{{ include.header | strip }}</p>
+        {% endif %}
+        <p>{{ include.content | strip }}</p>
+    </div>
+</div>
