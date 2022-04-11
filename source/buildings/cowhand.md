@@ -35,9 +35,9 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
 
 ## Cowhand's Hut GUI
     
-When accessing the Cowhand's Hut block by right-clicking on it, you will see a GUI with different options:
+When accessing the Cowhand's Hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
-    <br>
+  <br>
     <div class="row">
       <div class="col-sm-12 col-md">
         <img src="../../assets/images/gui/cowhandgui1.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI">
@@ -53,7 +53,7 @@ When accessing the Cowhand's Hut block by right-clicking on it, you will see a G
     </div>
     <br>
 
-    <br>
+   <br>
     <div class="row">
       <div class="col-sm-12 col-md">
         <img src="../../assets/images/gui/cowhandgui2.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 2">
@@ -66,9 +66,8 @@ When accessing the Cowhand's Hut block by right-clicking on it, you will see a G
       </ul>
      </div>
     </div>
-    <br>
 
-    <br>
+   <br>
     <div class="row">
       <div class="col-sm-12 col-md">
         <img src="../../assets/images/gui/cowhandgui3.png" class="img-fluid mx-auto" alt="Cowhand's Hut GUI 3">
