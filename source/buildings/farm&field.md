@@ -57,7 +57,7 @@ You can click on the arrows to increase the size of the area the Farmer will far
 
 ## Farm GUI
 
-When accessing the Farm block by right-clicking on it, you will see a GUI with different options:
+When accessing the Farm block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
 <br>
 <div class="row">
@@ -73,28 +73,73 @@ When accessing the Farm block by right-clicking on it, you will see a GUI with d
     </ul>
   </div>
 </div>
-<br><br>
-This is page two of the Farm GUI. It shows the Fields that are available (recognizable by the crop in its GUI and its distance). You can assign them to this Farmer as well.
+
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/farmgui2.png" class="img-fluid mx-auto" alt="Farm GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The second tab of the GUI is <strong>List of Recipes</strong>. Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.</p>
+    <ul>
+        <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
+    </ul>
+    </div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/farmgui3.png" class="img-fluid mx-auto" alt="Farm GUI 3">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The third tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the hut is working on, and where it is going.</p>
+    </div>
+</div>
+  
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/farmgui4.png" class="img-fluid mx-auto" alt="Farm GUI 4">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The fourth tab of the GUI is <strong>Settings</strong>.</p>
+    <ul>
+      <li><strong>Request Fertilizer:</strong>  On by default.  This lets you choose whether the Farmer will request fertilizer. 
+      <li><strong>Recipe Mode:</strong>  This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item. 
+        <ul>
+          <li><strong>Priority:</strong>  This is the default setting.  The hut will try to use the recipe that is higher up in their recipe list first.</li>
+          <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
+        </ul>
+     </li>
+    </ul>
+    </div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/farmgui5.png" class="img-fluid mx-auto" alt="Farm GUI 5">
+    </div>
+    <div class="col-sm-12 col-md">
+      <p>The fifth tab of the GUI is <strong>Fields</strong>.</p>
+      <ul>
+        <li><b>Assign Fields to Farmer:</b> Automatic by default. Here you can define if you prefer to manually assign the Fields for this Farmer.</li>
+        <li><b>Fields:</b>This is the list of recognized fields (recognizable by the crop in its GUI and its distance). If the field shows an X, that means it is already assigned to a Farmer and will list the name of the Farmer who takes care of that field. If the X is red and the button is not grayed out, that field belongs to the current Farmer and you can unassign it. If the field has a green check, then that field can be assigned to the Farmer. If the button is grayed out with a check, that means that no one is assigned to that field but the Farmer can not accept any more fields. </li>
+    </ul>
+    </div>
+</div>
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farmgui2.png" class="img-fluid mx-auto" alt="Farm GUI 2">
+      <img src="../../assets/images/gui/farmgui6.png" class="img-fluid mx-auto" alt="Farm GUI 6">
   </div>
   <div class="col-sm-12 col-md">
     <br>
+    <p>The sixth tab of the GUI is <strong>Minimum Stock</strong>.  It has one button:</p>
     <ul>
-      <li><b>Automatic/Manual:</b> Automatic by default. Here you can define if you prefer to manually assign the Fields for this Farmer.</li>
-      <li><b>Field:</b> This is the list of recognized fields. If the field shows an X, that means it is already assigned to a Farmer and will list the name of the Farmer who takes care of that field. If the X is red and the button is not grayed out, that field belongs to the current Farmer and you can unassign it. If the field has a green check, then that field can be assigned to the Farmer. If the button is grayed out with a check, that means that no one is assigned to that field but the Farmer can not accept any more fields.</li>
+         <li><strong> Add: </strong> Use this button to tell the Farm to keep a minimum stock on hand. Set items will be displayed above the button.</li>
     </ul>
-  </div>
-</div>  
-  <br><br>
-  This is page three of the Farm GUI. It lets you choose whether the Farmer will request fertilizer ([compost](../../source/items/compost) or bone meal).
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/farmgui3.png" class="img-fluid mx-auto" alt="Farm GUI 3">
   </div>
 </div>

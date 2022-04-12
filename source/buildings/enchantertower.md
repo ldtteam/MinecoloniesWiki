@@ -40,12 +40,12 @@ The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) 
 
 ## Enchanter's Hut GUI
 
-When accessing the Enchanter's Hut block by right-clicking on it, you will see a GUI with different options:
+When accessing the Enchanter's Hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
 <br>
 <div class="row">
   <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/enchantergui1.png" class="img-fluid mx-auto" alt="Enchanter's GUI Page 1">
+    <img src="../../assets/images/gui/enchantergui1.png" class="img-fluid mx-auto" alt="Enchanter's GUI 1">
   </div>
   <div class="col-sm-12 col-md">
     <br>
@@ -56,11 +56,36 @@ When accessing the Enchanter's Hut block by right-clicking on it, you will see a
     </ul>
   </div>
 </div>
-<br> <br>
-On page two of the GUI, you can set which workers the Enchanter will collect XP from.
-<br> 
- <img src="../../assets/images/gui/enchantergui2.png" alt="Enchanter GUI Page 2"/>
 
-Page three has a minimum stock list so you can tell the Enchanter's Tower to keep certain things on hand.
 <br>
-<img src="../../assets/images/gui/minstockgui.png" alt="Enchanter GUI Page 3"/>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/enchantergui2.png" class="img-fluid mx-auto" alt="Enchanter's GUI 2">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The second tab of the GUI is <strong>List of Recipes</strong>. Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.</p>
+    </div>
+</div>
+  
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/enchantergui3.png" class="img-fluid mx-auto" alt="Enchanter's GUI 3">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The third tab of the GUI is <strong>Minimum Stock</strong>.  It has one button:</p>
+    <ul>
+         <li><strong> Add: </strong> Use this button to tell the Enchanter Tower to keep a minimum stock on hand. Set items will be displayed above the button.</li>
+    </ul>
+    </div>
+</div>
+  
+<br>
+<div class="row">
+    <div class="col-sm-12 col-md">
+      <img src="../../assets/images/gui/enchantergui4.png" class="img-fluid mx-auto" alt="Enchanter's GUI 4">
+    </div>
+    <div class="col-sm-12 col-md">
+    <p>The fourth tab of the GUI is <strong>Gather Targets</strong>.  Here you can set which workers the Enchanter will collect XP from, and how far that worker is from the tower.</p>
+    </div>
+</div>
