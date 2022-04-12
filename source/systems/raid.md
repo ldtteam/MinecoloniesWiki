@@ -31,13 +31,13 @@ Notably, Pirate raids can spawn on any large body of water, not just the ocean. 
 Mummy raids may include Pharaohs, who may drop their scepter on defeat. These scepters are essentially bows, and as such can be used by your archers.
 
 ## During the Raid
-Raiders will run around the colony breaking down doors and trying to attack your guards and colonists. Generally, raiders will path toward hut blocks in your colony, similar to what guards do on patrol.
+Raiders will run around the colony breaking down doors and trying to attack your Guards(../../source/workers/guard) and colonists. Generally, raiders will path toward hut blocks in your colony, similar to what Guards do on patrol.
 
 Trying to "cheese" the raiders usually will not work. They are able to path fairly well, though if they are unable to find any path to their destination, they will break through any block, place ladders to climb up obstacles, or place blocks to bridge gaps to get to your colony. They can swim straight through moving water and lava, taking no damage from lava. Any attack that hits a raider *too* hard will be reflected back at the attacker. Similarly, turrets (from other mods) generally will not be effective on raiders.
 
-Raiders have a chance to drop their equipment when you or your [Guards](../../source/workers/guard) defeat them. They may also drop [Ancient Tomes](../../source/items/ancient_tome), which are used in enchanting.
+Raiders have a chance to drop their equipment when you or your Guards defeat them. They may also drop [Ancient Tomes](../../source/items/ancient_tome), which are used in enchanting.
 
 ## After the Raid
-After all of the raiders have been defeated and spawners broken, your colonists will go back to their jobs. If any of your colonists die, then their family will mourn their death and not work that day. However, guards will not be mourned.
+After all of the raiders have been defeated and spawners broken, your colonists will go back to their jobs. If any of your colonists die, then their family will mourn their death and not work that day. However, Guards will not be mourned.
 
 As you defeat more raiders and develop your colony, the raids will increase in difficulty. How quickly they increase in difficulty or what affects their difficulty is not publicly known.
