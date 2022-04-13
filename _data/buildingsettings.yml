@@ -3,3 +3,13 @@ apiary:
     description: On by default. Here you can choose if the Beekeeper will breed bees.
   - name: Honeycombs or Honey
     description: Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.
+farm:
+  - name: Request Fertilizer
+    description: On by default.  This lets you choose whether the Farmer will request fertilizer.
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
