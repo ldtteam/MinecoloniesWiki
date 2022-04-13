@@ -63,7 +63,7 @@ When accessing the Farm block by right-clicking on it, you will see a GUI with d
 
 {% include contentblock/main-gui.html image="../../assets/images/gui/farmgui1.png" %}
 
-{% include contentblock/basic.html header="The second tab of the GUI is <strong>List of Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<ul><li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li></ul>" image="../../assets/images/gui/farmgui2.png" %}
+{% include contentblock/basic.html header="The second tab of the GUI is <strong>List of Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/farmgui2.png" %}
 
 {% include contentblock/basic.html header="The third tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/farmgui3.png" %}
   
