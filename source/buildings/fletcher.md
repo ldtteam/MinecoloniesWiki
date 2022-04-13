@@ -39,30 +39,20 @@ The Fletcher's Hut is where the Fletcher will craft arrows and items that use st
 
 ## Fletcher's Hut GUI
 
-When accessing the Fletcher's Hut block by right-clicking on it, you will see a GUI with different options:
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/fletchergui.png" class="img-fluid mx-auto" alt="Fletcher's Hut GUI 1">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<br> <br>
+<div class="col">
 
-The 2nd page of the GUI shows what crafting task(s) the Fletcher currently has.
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/craftertasklist.png" class="img-fluid mx-auto" alt="Fletcher's Hut GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-  </div>
+When accessing the Fletcher's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
+
+    {% include contentblock/main-gui.html image="../../assets/images/gui/fletchergui1.png" %}
+
+    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/fletchergui2.png" %}
+
+    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Custom Recipes</strong>." content="Here you can see all the <a href='../items/shingles'>Architect Cutter</a> recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid for the Architect Cutter.  Input 1 is the top left slot of the cutter, input 2 is the top right, and input 3 the bottom left slot in the cutter. When you have put the items in the slots, you will see various items below the input slots, the sawmill can create ALL of those items from the recipe you have input.</p>" image="../../assets/images/gui/fletchergui3.png" %}
+
+    {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/fletchergui4.png" %}
+  
+    {% include contentblock/settings-gui.html settingskey="fletcher" header="The fifth tab of the GUI is <strong>Settings</strong>. It has one button:" image="../../assets/images/gui/fletchergui5.png" %}
+
 </div>
-<br> <br>
+</div>
