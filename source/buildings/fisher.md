@@ -33,7 +33,7 @@ When accessing the Fisher's Hut block by right-clicking on it, you will see a GU
 
     {% include contentblock/main-gui.html image="../../assets/images/gui/fishergui.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png"%}
+    {% include contentblock/stock-gui.html buildingname="Fisher's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png"%}
 
     </div>
 </div>
