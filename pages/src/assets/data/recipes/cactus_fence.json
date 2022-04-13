@@ -1,0 +1,23 @@
+{
+  "recipes": [
+    {
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecolonies/cactus_planks",
+        "secondItem": "minecraft/stick",
+        "thirdItem": "minecolonies/cactus_planks"
+      },
+      "thirdRow": {
+        "firstItem": "minecolonies/cactus_planks",
+        "secondItem": "minecraft/stick",
+        "thirdItem": "minecolonies/cactus_planks"
+      },
+      "product": "minecolonies/cactus_fence",
+      "amount": "3"
+    }
+  ]
+}
