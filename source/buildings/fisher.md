@@ -27,34 +27,14 @@ Upgrading the Fisher's Hut will expand the range at which the Fisher can fish, a
 
 ## Fisher's Hut GUI
 
-When accessing the Fisher's Hut block by right-clicking on it, you will see a GUI with different options:
-
-<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/fishergui.png" class="img-fluid mx-auto" alt="Fisher's Hut GUI">
-</div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<br>
+<div class="col">
+When accessing the Fisher's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
 
-This is page two of the Fisher's Hut GUI.
+    {% include contentblock/main-gui.html image="../../assets/images/gui/fishergui.png" %}
 
-<div class="row">
-    <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Fisher's Hut GUI 2">
-    </div>
-    <div class="col-sm-12 col-md">
-        <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Fisher's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-        </ul>
+    {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png"%}
+
     </div>
 </div>
 

@@ -56,6 +56,8 @@ You can click on the arrows to increase the size of the area the Farmer will far
 
 
 ## Farm GUI
+<div class="row">
+<div class="col">
 
 When accessing the Farm block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
 
@@ -70,3 +72,5 @@ When accessing the Farm block by right-clicking on it, you will see a GUI with d
 {% include contentblock/basic.html header="The fifth tab of the GUI is <strong>Fields</strong>." content="<ul><li><b>Assign Fields to Farmer:</b> Automatic by default. Here you can define if you prefer to manually assign the Fields for this Farmer.</li><li><b>Fields:</b>This is the list of recognized fields (recognizable by the crop in its GUI and its distance). If the field shows an X, that means it is already assigned to a Farmer and will list the name of the Farmer who takes care of that field. If the X is red and the button is not grayed out, that field belongs to the current Farmer and you can unassign it. If the field has a green check, then that field can be assigned to the Farmer. If the button is grayed out with a check, that means that no one is assigned to that field but the Farmer can not accept any more fields. </li></ul>" image="../../assets/images/gui/farmgui5.png" %}
 
 {% include contentblock/stock-gui.html buildingname="Farm" header="The sixth tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/farmgui6.png"%}
+</div>
+</div>
