@@ -12,14 +12,14 @@
         <ul>
             {% for setting in site.data.buildingsettings[include.settingskey] %}
             <li><strong>{{ setting.name }}:</strong> {{ setting.description }}</li>
-            {% endfor %}
             {% if setting.options | default: [] != [] %}
             <ul>
             {% for option in setting.options %}
             <li><strong>{{ option.name }}:</strong> {{ option.description }}</li>
             {% endfor %}
             </ul>
-           {% endif %}
+            {% endif %}
+            {% endfor %}
         </ul>
     </div>
 </div>
