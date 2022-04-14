@@ -39,7 +39,7 @@ take care of with the hive tool. This tool is accessed from the second page of t
 
     {% include contentblock/main-gui.html image="../../assets/images/gui/apiarygui1.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" %}
+    {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png"%}
 
     {% include contentblock/settings-gui.html settingskey="apiary" header="The third tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/apiarygui3.png" %}
 

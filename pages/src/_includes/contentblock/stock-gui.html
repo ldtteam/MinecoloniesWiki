@@ -1,6 +1,6 @@
 <div class="row py-3">
     <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Minimum stock GUI">
+        <img src="{{ include.image | default: '../../assets/images/gui/minstockgui.png' }}" class="img-fluid mx-auto" alt="{{ include.alt | default: 'Minimum stock GUI' | strip }}">
     </div>
     <div class="col-sm-12 col-md">
         {% if include.header | default: "" | strip != "" %}
