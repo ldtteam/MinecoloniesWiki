@@ -1,5 +1,5 @@
 project_identifier: minecolonies-wiki
 base_path: .
 files:
-  - source: pages/src/source/**/*.md
+  - source: source/**/*.md
     translation: /%two_letters_code%/**/%original_file_name%
