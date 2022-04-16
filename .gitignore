@@ -1,4 +1,2 @@
 .idea/
-
-# Jekyll build folders
-pages/build
+.jekyll-cache
