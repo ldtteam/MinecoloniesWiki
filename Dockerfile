@@ -1,1 +1,2 @@
-FROM starefossen/github-pages:onbuild
+FROM jekyll/jekyll:4
+ENTRYPOINT jekyll serve

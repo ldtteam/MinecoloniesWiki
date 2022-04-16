@@ -3,6 +3,8 @@ version: '3.8'
 services:
   jekyll-host:
     image: container.ldtteam.com/ldtteam/minecolonies/wiki:latest
+    volumes:
+      - .:/srv/jekyll
     environment:
       - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
     networks:
@@ -35,7 +37,7 @@ services:
         - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.secure=true
         - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.httpOnly=true
         - traefik.http.services.wiki-minecolonies.loadBalancer.sticky.cookie.sameSite=none
-        
+
   redirect:
     image: morbz/docker-web-redirect
     networks:
