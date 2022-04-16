@@ -17,4 +17,4 @@ The stash can be crafted at the [Sawmill](../../source/buildings/sawmill) or by 
 
 ## Using the Stash
 
-To use the stash, right-click on it to bring up the inventory, which works like a chest. Put items in the stash and a Courier will pick them up.
+To use the stash, right-click on it to bring up the inventory, which works like a chest. Put items in the stash and a Courier from the nearest Warehouse will pick them up.
