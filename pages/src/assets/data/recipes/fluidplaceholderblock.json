@@ -1,0 +1,59 @@
+{
+  "recipes": [
+    {
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": [
+          "minecraft/oak_log",
+          "minecraft/spruce_log",
+          "minecraft/birch_log",
+          "minecraft/jungle_log",
+          "minecraft/acacia_log",
+          "minecraft/dark_oak_log",
+          "minecraft/crimson_stem",
+          "minecraft/warped_stem"
+        ],
+        "thirdItem": "minecraft/stick"
+      },
+      "secondRow": {
+        "firstItem": [
+          "minecraft/oak_log",
+          "minecraft/spruce_log",
+          "minecraft/birch_log",
+          "minecraft/jungle_log",
+          "minecraft/acacia_log",
+          "minecraft/dark_oak_log",
+          "minecraft/crimson_stem",
+          "minecraft/warped_stem"
+        ],
+        "secondItem": "minecraft/bucket_empty",
+        "thirdItem": [
+          "minecraft/oak_log",
+          "minecraft/spruce_log",
+          "minecraft/birch_log",
+          "minecraft/jungle_log",
+          "minecraft/acacia_log",
+          "minecraft/dark_oak_log",
+          "minecraft/crimson_stem",
+          "minecraft/warped_stem"
+        ]
+      },
+      "thirdRow": {
+        "firstItem": "minecraft/stick",
+        "secondItem": [
+          "minecraft/oak_log",
+          "minecraft/spruce_log",
+          "minecraft/birch_log",
+          "minecraft/jungle_log",
+          "minecraft/acacia_log",
+          "minecraft/dark_oak_log",
+          "minecraft/crimson_stem",
+          "minecraft/warped_stem"
+        ],
+        "thirdItem": ""
+      },
+      "product": "minecolonies/blockfluidsubstitution",
+      "amount": "32"
+    }
+  ]
+}

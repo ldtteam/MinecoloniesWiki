@@ -1,0 +1,23 @@
+{
+  "recipes": [
+    {
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "",
+        "secondItem": "minecraft/cactus",
+        "thirdItem": ""
+      },
+      "thirdRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "product": "minecolonies/cactus_planks",
+      "amount": "4"
+    }
+  ]
+}
