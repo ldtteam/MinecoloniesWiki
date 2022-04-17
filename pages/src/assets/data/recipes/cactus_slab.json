@@ -1,0 +1,23 @@
+{
+  "recipes": [
+    {
+      "firstRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecolonies/cactus_planks",
+        "secondItem": "minecolonies/cactus_planks",
+        "thirdItem": "minecolonies/cactus_planks"
+      },
+      "thirdRow": {
+        "firstItem": "",
+        "secondItem": "",
+        "thirdItem": ""
+      },
+      "product": "minecolonies/cactus_slab",
+      "amount": "6"
+    }
+  ]
+}

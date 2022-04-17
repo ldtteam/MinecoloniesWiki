@@ -1,0 +1,23 @@
+{
+  "recipes": [
+    {
+      "firstRow": {
+        "firstItem": "minecolonies/cactus_planks",
+        "secondItem": "minecolonies/cactus_planks",
+        "thirdItem": ""
+      },
+      "secondRow": {
+        "firstItem": "minecolonies/cactus_planks",
+        "secondItem": "minecolonies/cactus_planks",
+        "thirdItem": ""
+      },
+      "thirdRow": {
+        "firstItem": "minecolonies/cactus_planks",
+        "secondItem": "minecolonies/cactus_planks",
+        "thirdItem": ""
+      },
+      "product": "minecolonies/cactus_door",
+      "amount": "3"
+    }
+  ]
+}
