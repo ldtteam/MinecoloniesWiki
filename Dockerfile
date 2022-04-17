@@ -1,6 +1,7 @@
 FROM jekyll/jekyll:4.2.2 as builder
-ADD --chown=jekyll:jekyll pages /srv/jekyll/
+ADD pages /srv/jekyll/
 ENV BUNDLE_GEMFILE=Gemfile.production
+RUN chown -R jekyll /usr/gem
 RUN bundle install
 RUN bundle exec jekyll build
 
