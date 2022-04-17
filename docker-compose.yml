@@ -3,8 +3,8 @@ version: '3.8'
 services:
   jekyll-host:
     image: container.ldtteam.com/ldtteam/minecolonies/wiki:latest
-    volumes:
-      - .:/srv/jekyll
+    ports:
+      - 4000:80
     environment:
       - JEKYLL_GITHUB_TOKEN=${GITHUB_TOKEN}
     networks:

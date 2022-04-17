@@ -4,8 +4,8 @@ description: >- # this means to ignore newlines until "remote-theme"
 remote-theme: jekyll/minima
 
 baseurl: /
-source: ./pages/src
-destination: ./pages/build
+source: ./src
+destination: ./build
 
 markdown: kramdown
 plugins:
