@@ -21,3 +21,15 @@ fletcher:
         description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
       - name: Warehouse Stock
         description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+forester:
+  - name: Replanting
+    description: Where you can select if you want the Forester to replant trees that are chopped down. They will only do this if they have enough saplings.
+  - name: Zoning Mode
+    description: This lets you turn on or off if you want the Forester to be restricted to a certain area when chopping trees. To choose the area, use the Obtain Tool button on the next tab.
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
