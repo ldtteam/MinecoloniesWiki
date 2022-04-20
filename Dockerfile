@@ -13,4 +13,5 @@ RUN bundle exec jekyll build
 FROM nginx:alpine
 ARG JEKYLL_HOME
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder $JEKYLL_HOME/build /usr/share/nginx/html
