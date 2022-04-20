@@ -4,26 +4,22 @@ layout: default
 ---
 # Forester's Hut
 
-{% capture infobox-content %}
-<div class="col">
-  <p><strong>Worker:</strong></p>
-</div>
-<div class="col">
-  <p><a href="../workers/forester">Forester</a></p>
-</div>
-{% endcapture %}
-{% include infobox.html content=infobox-content recipe="forester" image="../../assets/images/buildings/forester.png" alt="Forester's Hut" %}
-
+{% capture content %}
 The Forester's Hut is where the Forester will go in between chopping down trees. The Forester will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it.
 
 **Note:** In addition to axes for chopping down trees, Foresters require hoes for breaking leaves.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html worker="forester" recipes="forester" image="../../assets/images/buildings/forester.png" alt="Forester's Hut" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
+
 
 ## Forester's Hut GUI
 <div class="row">
-<div class="col">
-When accessing the Forester's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
+  <div class="col">
 
-  {% include contentblock/main-gui.html image="../../assets/images/gui/forestergui1.png" %}
+  {% include contentblock/main-gui.html header="When accessing the Forester's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/forestergui1.png" %}
 
   {% include contentblock/basic.html header="The second tab of the GUI is <strong>Custom Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes." image="../../assets/images/gui/forestergui2.png" %}
 
@@ -36,5 +32,5 @@ When accessing the Forester's Hut block by right-clicking on it, you will see a 
   {% include contentblock/basic.html header="The sixth tab of the GUI is <strong>Tool</strong>." content="This will give you a define area tool so you can select a specific area for the Forester to work. Right click one corner of the area you want, then left click the opposite corner, and this will set a rectangle inside which the Forester will search for trees. Vertical coordinates do not affect this too much; keeping them all around the same y-level can avoid unintentional bugs, though." image="../../assets/images/gui/forestergui6.png" %}
 
   {% include contentblock/stock-gui.html buildingname="Forester's Hut" header="The seventh tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/forestergui7.png"%}
-</div>
+  </div>
 </div>
