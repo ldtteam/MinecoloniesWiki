@@ -1,15 +1,9 @@
-<div class="row py-3">
-    <div class="col-sm-12 col-md">
-        <img src="{{ include.image | default: '../../assets/images/gui/minstockgui.png' }}" class="img-fluid mx-auto" alt="{{ include.alt | default: 'Minimum stock GUI' | strip }}">
-    </div>
-    <div class="col-sm-12 col-md">
-        {% if include.header | default: "" | strip != "" %}
-        <p>{{ include.header | strip }}</p>
-        {% endif %}
-        <ul>
-            <li><strong> Minimum Stock: </strong> Use this button to tell the {{ include.buildingname | default:
-                "building" }} to keep a minimum stock on hand.
-                Set items will be displayed above the button.</li>
-        </ul>
-    </div>
-</div>
+{% capture content %}
+    {% include contentblock/reuse/header.html header=include.header %}
+    Use this button to tell the
+    {{ include.buildingname | default: "building" }}
+    to keep a minimum stock on hand. Set items will be displayed above the button.
+{% endcapture %}
+{% assign img = include.image | default: "../../assets/images/gui/minstockgui.png" %}
+{% assign alt = include.alt | default: "Minimum stock GUI" %}
+{% include contentblock/reuse/core.html content=content image=img alt=alt %}
