@@ -1,0 +1,19 @@
+{% assign img = include.image | default "" %}
+{% if img == "" %}
+    {% assign cols_img = 0 %}
+    {% assign cols_content = 12 %}
+{% else %}
+    {% assign cols_img = 4 %}
+    {% assign cols_content = 8 %}
+{% endif %}
+
+<div class="row py-3">
+    {% if img != "" %}
+        <div class="col-md-{{ cols_img }} col-12">
+            <img src="{{ include.image }}" class="img-fluid mx-auto" alt="{{ include.alt | default: 'Image' | strip }}">
+        </div>
+    {% endif %}
+    <div class="col-md-{{ cols_content }} col-12">
+        <p>{{ include.content | strip }}</p>
+    </div>
+</div>

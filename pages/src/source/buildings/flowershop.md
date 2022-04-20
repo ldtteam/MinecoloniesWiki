@@ -4,16 +4,7 @@ layout: default
 ---
 # Flower Shop
 
-{% capture infobox-content %}
-<div class="col">
-  <p><strong>Worker:</strong></p>
-</div>
-<div class="col">
-  <p><a href="../workers/florist">Florist</a></p>
-</div>
-{% endcapture %}
-{% include infobox.html content=infobox-content recipe="flowershop" image="../../assets/images/buildings/flowershop.png" alt="Flower Shop's Hut" %}
-
+{% capture content %}
 ### Note: The Flower Shop cannot be built until you have a level 3 [Composter's Hut](../../source/buildings/composter) (or three level 1 Composter's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -28,14 +19,17 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 | 3              | 12               |
 | 4              | 16               |
 | 5              | 20               |
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html worker="florist" recipes="flowershop" image="../../assets/images/buildings/flowershop.png" alt="Flower Shop's Hut" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Flower Shop GUI
 
 <div class="row">
 <div class="col">
-When accessing the Flower Shop's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
-
-    {% include contentblock/main-gui.html image="../../assets/images/gui/flowershopgui1.png" %}
+    {% include contentblock/main-gui.html header="When accessing the Flower Shop's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/flowershopgui1.png" %}
 
     {% include contentblock/basic.html header="The second tab of the GUI is <strong>Plantables</strong>." content="This shows a list of items the Florist can plant. You can turn the plantables on or off. (The black box at the top lets you search for plants.) <b>Note: </b>you can only toggle plantables if the Flower Shop is level three or higher." image="../../assets/images/gui/flowershopgui2.png" %}
 

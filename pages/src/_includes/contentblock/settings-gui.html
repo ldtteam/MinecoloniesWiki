@@ -1,25 +1,20 @@
-<div class="row py-3">
-    {% if include.image | default "" != "" %}
-    <div class="col-sm-12 col-md">
-        <img src="{{ include.image }}" class="img-fluid mx-auto" alt="{{ include.alt | default: 'Building settings GUI' | strip
-            }}">
-    </div>
-    {% endif %}
-    <div class="col-sm-12 col-md">
-        {% if include.header | default: "" | strip != "" %}
-        <p>{{ include.header | strip }}</p>
-        {% endif %}
-        <ul>
-            {% for setting in site.data.buildingsettings[include.settingskey] %}
-            <li><strong>{{ setting.name }}:</strong> {{ setting.description }}</li>
+{% capture content %}
+    {% include contentblock/reuse/header.html header=include.header %}
+    <ul>
+        {% for setting in site.data.buildingsettings[include.settingskey] %}
+            <li>
+                <strong>{{ setting.name }}:</strong>
+                {{ setting.description }}</li>
             {% if setting.options | default: [] != [] %}
-            <ul>
-            {% for option in setting.options %}
-            <li><strong>{{ option.name }}:</strong> {{ option.description }}</li>
-            {% endfor %}
-            </ul>
+                <ul>
+                    {% for option in setting.options %}
+                        <li>
+                            <strong>{{ option.name }}:</strong>
+                            {{ option.description }}</li>
+                    {% endfor %}
+                </ul>
             {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-</div>
+        {% endfor %}
+    </ul>
+{% endcapture %}
+{% include contentblock/reuse/core.html content=content image=include.image alt=include.alt %}

@@ -4,16 +4,7 @@ layout: default
 ---
 # Apiary
 
-{% capture infobox-content %}
-<div class="col">
-  <p><strong>Worker:</strong></p>
-</div>
-<div class="col">
-  <p><a href="../workers/beekeeper">Beekeeper</a></p>
-</div>
-{% endcapture %}
-{% include infobox.html content=infobox-content recipe="apiary" image="../../assets/images/buildings/apiary.png" alt="Apiary" %}
-
+{% capture content %}
 The Apiary is where the Beekeeper works. The Beekeeper breeds bees and harvests honeycombs or honey bottles (you can
 choose which on the second page of the Apiary's GUI).
 
@@ -29,17 +20,20 @@ The level of the Apiary determines the max number of hives the Beekeeper can tak
 
 **Note:** If the Beekeeper is asking for hives but there are some nearby, make sure you've set the hives for them to
 take care of with the hive tool. This tool is accessed from the second page of the Apiary GUI (see below).
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html worker="beekeeper" recipes="apiary" image="../../assets/images/buildings/apiary.png" alt="Apiary" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Apiary GUI
 
 <div class="row">
   <div class="col">
-    When accessing the Apiary Hut block by right-clicking on it, you will see a GUI with different options. You start on
-    the main tab:
+    {% include contentblock/main-gui.html header="When accessing the Apiary Hut block by right-clicking on it, you will see a GUI with different options. You start on
+    the main tab:" image="../../assets/images/gui/apiarygui1.png" %}
 
-    {% include contentblock/main-gui.html image="../../assets/images/gui/apiarygui1.png" %}
-
-    {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png"%}
+    {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/apiarygui2.png" %}
 
     {% include contentblock/settings-gui.html settingskey="apiary" header="The third tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/apiarygui3.png" %}
 
