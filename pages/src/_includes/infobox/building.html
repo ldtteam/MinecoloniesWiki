@@ -1,0 +1,29 @@
+{% assign recipes = include.recipes | strip | default "" %}
+{% assign recipes_list = recipes | split: "," %}
+
+{% capture infobox-content %}
+    <div class="row section-text text-left">
+        <div class="col">
+            <p>
+                <strong>Worker:</strong>
+            </p>
+        </div>
+        <div class="col">
+            <p>
+                <a href="../workers/{{ include.worker | downcase }}">{{ include.worker | | capitalize }}</a>
+            </p>
+        </div>
+    </div>
+{% endcapture %}
+{% capture infobox-content-lower %}
+    {% if recipes != "" %}
+        {% for recipe in recipes_list %}
+            <div class="row section-text text-center infobox-recipe-row">
+                <div class="col-12">
+                    <recipe>{{ recipe }}</recipe>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endcapture %}
+{% include infobox/reuse/core.html content=infobox-content lower_content=infobox-content-lower image=include.image alt="Apiary" %}
