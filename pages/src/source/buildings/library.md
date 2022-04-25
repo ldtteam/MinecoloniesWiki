@@ -4,23 +4,8 @@ layout: default
 ---
 # Library
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/library.png" alt="Library" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/librarystudent">Library Student</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>library</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Library cannot be built until you finish the research in the [University](../../source/buildings/university).
-<br>
 
 The Library is a way for you to raise your adult citizens' Intelligence skill, which influences all other skill increases (at other jobs). A citizen will randomly level up their Intelligence as long as they're assigned to the Library. Being a Library Student is their full-time job, so you can't have one citizen work at the Library and another worker hut at the same time.
 
@@ -35,36 +20,18 @@ Two citizens can study per Library level. So:
 | 5              | 10                          |
 
 **Hint:** Paper and books help Library Students increase their skills faster.
-
-<br>
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html worker="librarystudent" recipes="library" image="../../assets/images/buildings/library.png" alt="Library" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Library GUI
 
-When accessing the Library's hut block by right-clicking on it, you will see a GUI with different options:
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/librarygui.png" class="img-fluid mx-auto" alt="Library GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>  
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Library hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/librarygui.png" %}
 
-This is page two of the Library GUI.
-
-<div class="row">
-    <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Library GUI 2">
-    </div>
-    <div class="col-sm-12 col-md">
-        <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Library to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-        </ul>
-    </div>
+    {% include contentblock/stock-gui.html buildingname="Library" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
+  </div>
 </div>
