@@ -1,7 +1,8 @@
 {% capture content %}
     {% include contentblock/reuse/header.html header=include.header %}
+    {% assign data = include.data | default: site.data.gui.global %}
     <ul>
-        {% for item in site.data.gui.global %}
+        {% for item in data %}
             <li>
                 <strong>{{ item.button }}:</strong>
                 {{ item.content }}</li>

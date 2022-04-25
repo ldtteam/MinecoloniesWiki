@@ -8,10 +8,12 @@
             {{ include.upper_content }}
         </div>
     {% endif %}
+    {% if worker != "" %}
     <hr/>
     <div class="infobox-content infobox-content-main">
         {{ include.content }}
     </div>
+    {% endif %}
     {% if include.lower_content %}
         <hr/>
         <div class="infobox-content infobox-content-lower">
