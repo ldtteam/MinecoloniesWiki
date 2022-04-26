@@ -25,11 +25,11 @@ citizen:
   - button: Hut Level
     content: This tells you the level of the hut you have selected.
   - button: Assigned Citizens
-    content: This will show you how many citizens are assigned to this hut, it also displays their name, and occupation if employed.
+    content: This will show you how many citizens are assigned to this hut, it also displays their name, and occupation (if employed).
   - button: Manage Housing
-    content: This lets you change which citizens are assigned to this hut. <b>Note-</b>this only works if you have turned the housing assignment mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual, otherwise your citizens will be housed automatically.
+    content: This lets you change which citizens are assigned to this hut. <b>Note-</b>this only works if you have turned the housing assignment mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual; otherwise your citizens will be housed automatically.
   - button: Build Options
-    content: This lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: This lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
   - button: Recall Citizens
     content: Teleports all the citizens living here to the hut block.
   - button: Inventory
