@@ -10,12 +10,12 @@ The Forester's Hut is where the Forester will go in between chopping down trees.
 **Note:** In addition to axes for chopping down trees, Foresters require hoes for breaking leaves.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="forester" recipes="forester" image="../../assets/images/buildings/forester.png" alt="Forester's Hut" %}
+{% include infobox/building.html key="forester" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
-
 ## Forester's Hut GUI
+
 <div class="row">
   <div class="col">
 
@@ -27,7 +27,7 @@ The Forester's Hut is where the Forester will go in between chopping down trees.
 
   {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/forestergui4.png" %}
 
-  {% include contentblock/settings-gui.html settingskey="forester" header="The fifth tab of the GUI is <strong>Settings</strong>. It has three options:" image="../../assets/images/gui/forestergui5.png" %}
+  {% include contentblock/settings-gui.html key="forester" header="The fifth tab of the GUI is <strong>Settings</strong>. It has three options:" image="../../assets/images/gui/forestergui5.png" %}
 
   {% include contentblock/basic.html header="The sixth tab of the GUI is <strong>Tool</strong>." content="This will give you a define area tool so you can select a specific area for the Forester to work. Right click one corner of the area you want, then left click the opposite corner, and this will set a rectangle inside which the Forester will search for trees. Vertical coordinates do not affect this too much; keeping them all around the same y-level can avoid unintentional bugs, though." image="../../assets/images/gui/forestergui6.png" %}
 

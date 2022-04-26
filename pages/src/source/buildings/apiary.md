@@ -22,7 +22,7 @@ The level of the Apiary determines the max number of hives the Beekeeper can tak
 take care of with the hive tool. This tool is accessed from the second page of the Apiary GUI (see below).
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="beekeeper" recipes="apiary" image="../../assets/images/buildings/apiary.png" alt="Apiary" %}
+{% include infobox/building.html key="apiary" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
@@ -35,7 +35,7 @@ take care of with the hive tool. This tool is accessed from the second page of t
 
     {% include contentblock/stock-gui.html buildingname="Apiary" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/apiarygui2.png" %}
 
-    {% include contentblock/settings-gui.html settingskey="apiary" header="The third tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/apiarygui3.png" %}
+    {% include contentblock/settings-gui.html key="apiary" header="The third tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/apiarygui3.png" %}
 
     {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Flowers</strong>." content="Here you designate what flowers you want the Beekeeper
           to request and use during breeding. By default, all flowers are turned off." image="../../assets/images/gui/apiarygui4.png" %}

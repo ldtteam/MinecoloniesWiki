@@ -1,0 +1,162 @@
+apiary:
+  name: Beekeeper's Hut
+  image: ../../assets/images/buildings/apiary.png
+  workers:
+    - name: Beekeeper
+      value: beekeeper
+  recipes:
+    - apiary
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the Beekeeper will breed bees.
+    - name: Honeycombs or Honey
+      description: Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.
+courier:
+  name: Courier's Hut
+  image: ../../assets/images/buildings/courier.png
+  workers:
+    - name: Courier
+      value: courier
+  recipes:
+    - courier
+farm:
+  name: Farmer's Hut & Field
+  image: ../../assets/images/buildings/farm.png
+  workers:
+    - name: Farmer
+      value: farmer
+  recipes:
+    - farm
+    - field
+  settings:
+    - name: Request Fertilizer
+      description: On by default.  This lets you choose whether the Farmer will request fertilizer.
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+fletcher:
+  name: Fletcher's Hut
+  image: ../../assets/images/buildings/fletcher.png
+  workers:
+    - name: Fletcher
+      value: fletcher
+  recipes:
+    - fletcher
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+flowershop:
+  name: Florist's Hut
+  image: ../../assets/images/buildings/flowershop.png
+  workers:
+    - name: Florist
+      value: florist
+  recipes:
+    - flowershop
+forester:
+  name: Forester's Hut
+  image: ../../assets/images/buildings/forester.png
+  workers:
+    - name: Forester
+      value: forester
+  recipes:
+    - forester
+  settings:
+    - name: Replanting
+      description: Where you can select if you want the Forester to replant trees that are chopped down. They will only do this if they have enough saplings.
+    - name: Zoning Mode
+      description: This lets you turn on or off if you want the Forester to be restricted to a certain area when chopping trees. To choose the area, use the Obtain Tool button on the next tab.
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+glassblower:
+  name: Glassblower's Hut
+  image: ../../assets/images/buildings/glassblower.png
+  workers:
+    - name: Glassblower
+      value: glassblower
+  recipes:
+    - glassblower
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+graveyard:
+  name: Graveyard
+  image: ../../assets/images/buildings/graveyard.png
+  workers:
+    - name: Undertaker
+      value: undertaker
+  recipes:
+    - graveyard
+guardtower:
+  name: Guard tower
+  image: ../../assets/images/buildings/guardtower.png
+  workers:
+    - name: Guard
+      value: guard
+  recipes:
+    - guardtower
+  settings:
+    - name: Task
+      description: This is where you can choose if you want the Guard to patrol, follow, or guard.
+      options:
+        - name: Patrol
+          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>. 
+        - name: Guard
+          description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate the guard location.
+        - name: Follow
+          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>. 
+        - name: Patrol Mine
+          description: The Guard will patrol the level of a <a href="../../source/buildings/mine">Mine</a>. You must also assign that level in the Mine GUI.
+    - name: Retreat on low health
+      description: Here you can choose if the Guard will attempt to retreat when they have low health.
+    - name: Hire Trainee
+      description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility (<a href="../../source/buildings/archery">Archery</a> for Archers and <a href="../../source/buildings/combatacademy"> Combat Academy</a> for knights) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the <a href="../../source/buildings/townhall"> Town Hall</a> GUI.
+    - name: Patrol Mode
+      description: This is where you can choose how you want the Guard to patrol.
+      options:
+        - name: Automatic
+          description: The Guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
+        - name: Manual
+          description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
+    - name: Follow Mode
+      description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
+hospital:
+  name: Hospital
+  image: ../../assets/images/buildings/hospital.png
+  workers:
+    - name: Healer
+      value: healer
+  recipes:
+    - hospital
+house:
+  name: House
+  image: ../../assets/images/buildings/house.png
+  recipes:
+    - house
+library:
+  name: Library
+  image: ../../assets/images/buildings/library.png
+  workers:
+    - name: Library Student
+      value: librarystudent
+  recipes:
+    - library

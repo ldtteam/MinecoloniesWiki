@@ -1,7 +1,7 @@
 {% capture content %}
     {% include contentblock/reuse/header.html header=include.header %}
     <ul>
-        {% for setting in site.data.buildingsettings[include.settingskey] %}
+        {% for setting in site.data.buildinginfo[include.key].settings %}
             <li>
                 <strong>{{ setting.name }}:</strong>
                 {{ setting.description }}</li>

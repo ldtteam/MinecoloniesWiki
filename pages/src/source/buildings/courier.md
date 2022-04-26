@@ -11,11 +11,11 @@ The level of the Courier's Hut will dictate how many items the Courier can deliv
 
 | Courier's Hut Level | Max Stacks Carried |
 | :-----------------: | :----------------: |
-| 1                   | 2                  |
-| 2                   | 3                  |
-| 3                   | 4                  |
-| 4                   | 5                  |
-| 5                   | unlimited          |
+|          1          |         2          |
+|          2          |         3          |
+|          3          |         4          |
+|          4          |         5          |
+|          5          |     unlimited      |
 
 
 The greater a Courier's Agility skill, the faster they'll run. The greater their Adaptability skill, the more huts they can visit before going back to the Warehouse.
@@ -25,7 +25,7 @@ The greater a Courier's Agility skill, the faster they'll run. The greater their
 **Note:** If you have multiple Warehouses, Couriers will only see the items in the Warehouse they are assigned to.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="courier" recipes="courier" image="../../assets/images/buildings/courier.png" alt="Courier's Hut" %}
+{% include infobox/building.html key="courier" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 

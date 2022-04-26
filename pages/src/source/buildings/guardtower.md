@@ -11,16 +11,16 @@ The Guard will patrol a set distance around their tower, which is based on their
 
 | Tower Level | Max Patrol Distance |
 | ----------- | ------------------- |
-| 1 | 80 blocks |
-| 2 | 110 blocks |
-| 3 | 140 blocks |
-| 4 | 170 blocks |
-| 5 | 200 blocks |
+| 1           | 80 blocks           |
+| 2           | 110 blocks          |
+| 3           | 140 blocks          |
+| 4           | 170 blocks          |
+| 5           | 200 blocks          |
 
 <strong>Note:</strong> If you place Guard Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="guard" recipes="guardtower" image="../../assets/images/buildings/guardtower.png" alt="Guard Tower" %}
+{% include infobox/building.html key="guardtower" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
@@ -37,7 +37,7 @@ The Guard will patrol a set distance around their tower, which is based on their
 
     {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Hostiles</strong>." content="You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to on by default." image="../../assets/images/gui/guardtowergui4.png" %}
 
-    {% include contentblock/settings-gui.html settingskey="guardtower" header="The fifth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/guardtowergui5.png" %}
+    {% include contentblock/settings-gui.html key="guardtower" header="The fifth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/guardtowergui5.png" %}
   </div>
 </div>
 
