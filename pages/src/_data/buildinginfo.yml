@@ -11,6 +11,14 @@ apiary:
       description: On by default. Here you can choose if the Beekeeper will breed bees.
     - name: Honeycombs or Honey
       description: Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.
+courier:
+  name: Courier's Hut
+  image: ../../assets/images/buildings/courier.png
+  workers:
+    - name: Courier
+      value: courier
+  recipes:
+    - courier
 farm:
   name: Farmer's Hut & Field
   image: ../../assets/images/buildings/farm.png
@@ -90,6 +98,14 @@ glassblower:
           description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
         - name: Warehouse Stock
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+graveyard:
+  name: Graveyard
+  image: ../../assets/images/buildings/graveyard.png
+  workers:
+    - name: Undertaker
+      value: undertaker
+  recipes:
+    - graveyard
 guardtower:
   name: Guard tower
   image: ../../assets/images/buildings/guardtower.png
@@ -123,3 +139,24 @@ guardtower:
           description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
     - name: Follow Mode
       description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
+hospital:
+  name: Hospital
+  image: ../../assets/images/buildings/hospital.png
+  workers:
+    - name: Healer
+      value: healer
+  recipes:
+    - hospital
+house:
+  name: House
+  image: ../../assets/images/buildings/house.png
+  recipes:
+    - house
+library:
+  name: Library
+  image: ../../assets/images/buildings/library.png
+  workers:
+    - name: Library Student
+      value: librarystudent
+  recipes:
+    - library

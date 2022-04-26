@@ -22,7 +22,7 @@ Two citizens can study per Library level. So:
 **Hint:** Paper and books help Library Students increase their skills faster.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="librarystudent" recipes="library" image="../../assets/images/buildings/library.png" alt="Library" %}
+{% include infobox/building.html key="library" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 

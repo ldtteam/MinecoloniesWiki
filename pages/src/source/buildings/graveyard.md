@@ -14,14 +14,14 @@ The recommended maximum grave count per Graveyard level is below. This is **not 
 
 | Graveyard Level | Number of Graves |
 | --------------- | ---------------- |
-| 1 | 14 | 
-| 2 | 18 |
-| 3 | 27 |
-| 4 | 36 |
-| 5 | 50 |
+| 1               | 14               |
+| 2               | 18               |
+| 3               | 27               |
+| 4               | 36               |
+| 5               | 50               |
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="undertaker" recipes="graveyard" image="../../assets/images/buildings/graveyard.png" alt="Graveyard" %}
+{% include infobox/building.html key="graveyard" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
