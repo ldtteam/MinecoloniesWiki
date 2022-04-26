@@ -20,12 +20,16 @@ global:
   - button: A chest icon
     content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 citizen:
+  - button: Pencil
+    content: Allows you to rename the building.  The level of the building will always be listed after the name.
   - button: Hut Level
     content: This tells you the level of the hut you have selected.
-  - button: Assign Citizens
-    content: This lets you change which citizens are assigned to this hut. If it says Assign 0 Citizens, that means you've run out of room in this hut to house citizens and will have to remove some (the button underneath their name) to add more. <b>Note-</b>this only works if you have turned the housing assignment mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual, otherwise your citizens will be housed automatically.
+  - button: Assigned Citizens
+    content: This will show you how many citizens are assigned to this hut, it also displays their name, and occupation (if employed).
+  - button: Manage Housing
+    content: This lets you change which citizens are assigned to this hut. <b>Note-</b>this only works if you have turned the housing assignment mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual; otherwise your citizens will be housed automatically.
   - button: Build Options
-    content: This lets you create a build, upgrade, reposition, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: This lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
   - button: Recall Citizens
     content: Teleports all the citizens living here to the hut block.
   - button: Inventory

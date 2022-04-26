@@ -1,7 +1,9 @@
 {% assign recipes = include.recipes | strip | default "" %}
 {% assign recipes_list = recipes | split: "," %}
+{% assign worker = include.worker | strip | default "" %}
 
 {% capture infobox-content %}
+ {% if worker != "" %}
     <div class="row section-text text-left">
         <div class="col">
             <p>
@@ -14,6 +16,7 @@
             </p>
         </div>
     </div>
+ {% endif %}
 {% endcapture %}
 {% capture infobox-content-lower %}
     {% if recipes != "" %}
@@ -26,4 +29,4 @@
         {% endfor %}
     {% endif %}
 {% endcapture %}
-{% include infobox/reuse/core.html content=infobox-content lower_content=infobox-content-lower image=include.image alt="Apiary" %}
+{% include infobox/reuse/core.html content=infobox-content lower_content=infobox-content-lower image=include.image alt=include.alt %}
