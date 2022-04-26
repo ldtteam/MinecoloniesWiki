@@ -1,23 +1,14 @@
 <div class="infobox box text-center w-100">
-    <div class="infobox-image">
-        <img src="{{ include.image }}" alt="{{ include.alt }}"/>
-    </div>
-    {% if include.upper_content %}
-        <hr/>
-        <div class="infobox-content infobox-content-upper">
-            {{ include.upper_content }}
+    <h2>{{ include.title }}</h2>
+    {% if include.image | default: "" != "" %}
+        <div class="infobox-image">
+            <img src="{{ include.image }}" alt="{{ include.alt | default: "Infobox image" }}"/>
         </div>
     {% endif %}
-    {% if worker != "" %}
-    <hr/>
-    <div class="infobox-content infobox-content-main">
-        {{ include.content }}
-    </div>
-    {% endif %}
-    {% if include.lower_content %}
+    {% for block in include.blocks %}
         <hr/>
-        <div class="infobox-content infobox-content-lower">
-            {{ include.lower_content }}
+        <div class="infobox-content">
+            {{ block }}
         </div>
-    {% endif %}
+    {% endfor %}
 </div>

@@ -14,30 +14,30 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 
 
 | Glassblower's Hut Level | Number of Recipes |
-| :-----: | :-----: |
-| 1 | 10 | 
-| 2 | 20 |
-| 3 | 40 |
-| 4 | 80 | 
-| 5 | 160 | 
+| :---------------------: | :---------------: |
+|            1            |        10         |
+|            2            |        20         |
+|            3            |        40         |
+|            4            |        80         |
+|            5            |        160        |
 
 
 **Hint:** The higher the level of the Glassblower's Hut, the more furnaces the Glassblower will have available. The number of furnaces they *use* depends on their Creativity level. So:
 
 
-| Building Level |  Furnaces |
-| :-----: | :-----: | 
-| 1 |  1 |
-| 2 |  2 |
-| 3 |  3 |
-| 4 |  4 |
-| 5 |  5 |
+| Building Level | Furnaces |
+| :------------: | :------: |
+|       1        |    1     |
+|       2        |    2     |
+|       3        |    3     |
+|       4        |    4     |
+|       5        |    5     |
 
 
 **Hint:** The higher the Glassblower's Focus level, the faster things will smelt. At high levels, they can go *much* faster than the player!
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="glassblower" recipes="glassblower" image="../../assets/images/buildings/glassblower.png" alt="Glassblower's Hut" %}
+{% include infobox/building.html key="glassblower" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
@@ -57,6 +57,6 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 
   {% include contentblock/basic.html header="The sixth tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/glassblowergui6.png" %}
 
-  {% include contentblock/settings-gui.html settingskey="glassblower" header="The seventh tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/glassblowergui7.png" %}
+  {% include contentblock/settings-gui.html key="glassblower" header="The seventh tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/glassblowergui7.png" %}
   </div>
 </div>

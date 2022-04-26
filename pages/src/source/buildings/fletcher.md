@@ -4,21 +4,7 @@ layout: default
 ---
 # Fletcher's Hut
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/fletcher.png" alt="Fletcher" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/fletcher">Fletcher</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>fletcher</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Fletcher's Hut cannot be built until you have a level 1 [Sawmill](../../source/buildings/sawmill) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -28,14 +14,17 @@ The Fletcher's Hut is where the Fletcher will craft arrows and items that use st
 
 
 | Fletcher's Hut Level | Number of Recipes |
-| :-----: | :-----: |
-| 1 | 10 | 
-| 2 | 20 |
-| 3 | 40 |
-| 4 | 80 | 
-| 5 | 160 | 
-
-<br>
+| :------------------: | :---------------: |
+|          1           |        10         |
+|          2           |        20         |
+|          3           |        40         |
+|          4           |        80         |
+|          5           |        160        |
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="fletcher" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Fletcher's Hut GUI
 
@@ -52,7 +41,7 @@ When accessing the Fletcher's Hut block by right-clicking on it, you will see a 
 
     {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/fletchergui4.png" %}
   
-    {% include contentblock/settings-gui.html settingskey="fletcher" header="The fifth tab of the GUI is <strong>Settings</strong>. It has one button:" image="../../assets/images/gui/fletchergui5.png" %}
+    {% include contentblock/settings-gui.html key="fletcher" header="The fifth tab of the GUI is <strong>Settings</strong>. It has one button:" image="../../assets/images/gui/fletchergui5.png" %}
 
 </div>
 </div>

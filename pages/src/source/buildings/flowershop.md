@@ -21,7 +21,7 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 | 5              | 20               |
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="florist" recipes="flowershop" image="../../assets/images/buildings/flowershop.png" alt="Flower Shop's Hut" %}
+{% include infobox/building.html key="flowershop" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 

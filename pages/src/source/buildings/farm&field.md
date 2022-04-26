@@ -41,7 +41,7 @@ You can click on the arrows to increase the size of the area the Farmer will far
 |     5      |   5    |
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html worker="farmer" recipes="farm,field" image="../../assets/images/buildings/flowershop.png" alt="Flower Shop's Hut" %}
+{% include infobox/building.html key="farm" %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
@@ -54,7 +54,7 @@ You can click on the arrows to increase the size of the area the Farmer will far
 
 {% include contentblock/basic.html header="The third tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/farmgui3.png" %}
   
-{% include contentblock/settings-gui.html settingskey="farm" header="The fourth tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/farmgui4.png" %}
+{% include contentblock/settings-gui.html key="farm" header="The fourth tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/farmgui4.png" %}
 
 {% include contentblock/basic.html header="The fifth tab of the GUI is <strong>Fields</strong>." content="<ul><li><b>Assign Fields to Farmer:</b> Automatic by default. Here you can define if you prefer to manually assign the Fields for this Farmer.</li><li><b>Fields:</b>This is the list of recognized fields (recognizable by the crop in its GUI and its distance). If the field shows an X, that means it is already assigned to a Farmer and will list the name of the Farmer who takes care of that field. If the X is red and the button is not grayed out, that field belongs to the current Farmer and you can unassign it. If the field has a green check, then that field can be assigned to the Farmer. If the button is grayed out with a check, that means that no one is assigned to that field but the Farmer can not accept any more fields. </li></ul>" image="../../assets/images/gui/farmgui5.png" %}
 
