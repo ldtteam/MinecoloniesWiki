@@ -4,21 +4,7 @@ layout: default
 ---
 # Shepherd's Hut
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/shepherd.png" alt="Shepherd's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/shepherd">Shepherd</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>shepherd</recipe>
-</div>
-
+{% capture content %}
 The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food and wool. You will have to capture and bring in two sheep to the Shepherd's Hut, as the Shepherd will not catch and bring in any sheep.
 
 **Note:** The Shepherd will only keep two sheep alive per hut level, so at level 5 they will have ten sheep in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and wool. So:
@@ -31,6 +17,11 @@ The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food a
 | 3 | 6 |
 | 4 | 8 |
 | 5 | 10 |  
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="shepherd" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Shepherd's Hut GUI
 

@@ -4,21 +4,7 @@ layout: default
 ---
 # Mine
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/mine.png" alt="Mine's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/miner">Miner</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>mine</recipe>
-</div>
-
+{% capture content %}
 The Mine is where you can hire a [Miner](../../source/workers/miner) to work the mine, or a [Quarrier](../../source/workers/quarrier) to work the [Quarry](../../source/buildings/quarry). At the mine, the Miner will mine for ores and materials. Once they are hired, the Miner will create a shaft downward and then branch out.
 
 **Hint:** The shaft the Miner creates downwards will go to a specific depth depending on the level of the Mine:
@@ -30,6 +16,11 @@ The Mine is where you can hire a [Miner](../../source/workers/miner) to work the
 | 2 | 30 | 20 |
 | 3 | Bedrock | 0 |
 | 4 | | Bedrock |
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="mine" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Mine GUI
 

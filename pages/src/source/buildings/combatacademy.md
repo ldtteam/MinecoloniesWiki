@@ -4,21 +4,7 @@ layout: default
 ---
 # Combat Academy
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/combatacademy.png" alt="Combat Academy" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/knightintraining">Knight in Training</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>combatacademy</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Combat Academy cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../../source/buildings/university) .
 <br> 
 
@@ -37,35 +23,20 @@ The number of students that can be trained at a time depends on the level of the
 The Knights in Training require a sword and shield to practice. They will attack the practice dummies, a pumpkin on top of a bale of hay. 
 
 The Knights in Training are not actual Guards even though they will be dressed as Knight Guards. They will not help defend the colony.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="combatacademy" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Combat Academy GUI
 
-When accessing the Combat Academy's hut block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:
-
-<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/combatacademygui.png" class="img-fluid mx-auto" alt="Combat Academy GUI">
-   </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Combat Academy hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/combatacademygui.png" %}
+
+    {% include contentblock/stock-gui.html buildingname="Combat Academy" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
+
   </div>
-</div>  
-
-  <br>
-<div class="row">
-    <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/combatacademygui2.png" class="img-fluid mx-auto" alt="Combat Academy GUI 2">
-    </div>
-    <div class="col-sm-12 col-md">
-    <p>The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
-        <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Combat Academy to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-        </ul>
-    </div>
 </div>
+

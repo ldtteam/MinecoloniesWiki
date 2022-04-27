@@ -4,21 +4,7 @@ layout: default
 ---
 # University
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/university.png" alt="University's Hut Block" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/researcher">Researcher</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>university</recipe>
-</div>
-
+{% capture content %}
 The University is where a Researcher will research various upgrades to your colony.
 
 As you level up the University, you can hire more researchers:
@@ -32,6 +18,11 @@ As you level up the University, you can hire more researchers:
 | 5 | 5 |
 
 Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. The time is real-world time spent in-game. However, Researchers will sometimes use offline time to work on researches. Researchers' Knowledge skill affects the amount of research time they get from the offline time (it's not a 1:1 ratio), and their Mana skill affects the max amount of research time they can get. Offline research time is unlocked at University level 3. 
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="university" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## University GUI
 
