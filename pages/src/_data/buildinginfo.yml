@@ -11,6 +11,86 @@ apiary:
       description: On by default. Here you can choose if the Beekeeper will breed bees.
     - name: Honeycombs or Honey
       description: Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.
+archery:
+  name: Archery
+  image: ../../assets/images/buildings/archery.png
+  workers:
+    - name: Archer in Training
+      value: archerintraining
+  recipes:
+    - archery
+bakery:
+  name: Bakery
+  image: ../../assets/images/buildings/bakery.png
+  workers:
+    - name: Baker
+      value: baker
+  recipes:
+    - bakery
+barracks:
+  name: Barracks
+  image: ../../assets/images/buildings/barracks.png
+  workers:
+    - name: Guard
+      value: guard
+  recipes:
+    - barracks
+barrackstower:
+  name: Barracks Tower
+  image: ../../assets/images/buildings/barrackstower.png
+  workers:
+    - name: Guard
+      value: guard
+  recipes:
+    - barrackstower
+blacksmith:
+  name: Blacksmith's Hut
+  image: ../../assets/images/buildings/blacksmith.png
+  workers:
+    - name: Blacksmith
+      value: blacksmith
+  recipes:
+    - blacksmith
+builder:
+  name: Builder's Hut
+  image: ../../assets/images/buildings/builder.png
+  workers:
+    - name: Builder
+      value: builder
+  recipes:
+    - builder
+chickenfarmer:
+  name: Chicken Farmer's Hut
+  image: ../../assets/images/buildings/chickenfarmer.png
+  workers:
+    - name: Chicken Farmer
+      value: chickenfarmer
+  recipes:
+    - chickenfarmer
+combatacademy:
+  name: Combat Academy
+  image: ../../assets/images/buildings/combatacademy.png
+  workers:
+    - name: Knight in Training
+      value:knightintraining 
+  recipes:
+    - combatacademy
+composter:
+  name: Composter's Hut
+  image: ../../assets/images/buildings/composter.png
+  workers:
+    - name: Composter
+      value: composter
+  recipes:
+    - composter
+concretemixer:
+  name: Concrete Mixer's Hut
+  image: ../../assets/images/buildings/concretemixer.png
+  workers:
+    - name: Concrete Mixer
+      value: concretemixer
+  recipes:
+    - concretemixer
 courier:
   name: Courier's Hut
   image: ../../assets/images/buildings/courier.png
@@ -19,6 +99,38 @@ courier:
       value: courier
   recipes:
     - courier
+cowhand:
+  name: Cowhand's Hut
+  image: ../../assets/images/buildings/cowhand.png
+  workers:
+    - name: Cowhand
+      value: cowhand
+  recipes:
+    - cowhand
+crusher:
+  name: Crusher's Hut
+  image: ../../assets/images/buildings/crusher.png
+  workers:
+    - name: Crusher
+      value: crusher 
+  recipes:
+    - crusher
+dyer:
+  name: Dyer's Hut
+  image: ../../assets/images/buildings/dyer.png
+  workers:
+    - name: Dyer
+      value: dyer
+  recipes:
+    - dyer
+enchantertower:
+  name: Enchanter's Tower
+  image: ../../assets/images/buildings/enchantertower.png
+  workers:
+    - name: Enchanter
+      value: enchanter
+  recipes:
+    - enchantertower
 farm:
   name: Farmer's Hut & Field
   image: ../../assets/images/buildings/farm.png
@@ -38,6 +150,14 @@ farm:
           description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
         - name: Warehouse Stock
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+fisher:
+  name: Fisher's Hut
+  image: ../../assets/images/buildings/fisher.png
+  workers:
+    - name: Fisher
+      value: fisher
+  recipes:
+    - fisher
 fletcher:
   name: Fletcher's Hut
   image: ../../assets/images/buildings/fletcher.png
@@ -160,3 +280,167 @@ library:
       value: librarystudent
   recipes:
     - library
+mechanic:
+  name: Mechanic's Hut
+  image: ../../assets/images/buildings/mechanic.png
+  workers:
+    - name: Mechanic
+      value: mechanic
+  recipes:
+    - mechanic
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+mine:
+  name: Mine
+  image: ../../assets/images/buildings/mine.png
+  workers:
+    - name: Miner
+      value: miner
+  recipes:
+    - mine
+mysticalsite:
+  name: Mystical Site
+  image: ../../assets/images/buildings/mysticalsite.png
+  recipes:
+    - mysticalsite
+nethermine:
+  name: Nether Mine
+  image: ../../assets/images/buildings/nethermine.png
+  workers:
+    - name: Nether Miner
+      value: netherminer
+  recipes:
+    - nethermine
+plantation:
+  name: Plantation
+  image: ../../assets/images/buildings/plantation.png
+  workers:
+    - name: Planter
+      value: planter
+  recipes:
+    - plantation
+quarry:
+  name: Quarry
+  image: ../../assets/images/buildings/quarry.png
+  workers:
+    - name: Quarrier
+      value: quarrier
+  recipes:
+    - quarry
+rabbithutch:
+  name: Rabbit Hutch
+  image: ../../assets/images/buildings/rabbithutch.png
+  workers:
+    - name: Rabbit Herder
+      value: rabbitherder
+  recipes:
+    - rabbithutch
+restaurant:
+  name: Restaurant
+  image: ../../assets/images/buildings/restaurant.png
+  workers:
+    - name: Cook
+      value: cook
+    - name: Assistant Cook
+      value: assistantcook
+  recipes:
+    - restaurant
+sawmill:
+  name: Sawmill
+  image: ../../assets/images/buildings/sawmill.png
+  workers:
+    - name: Carpenter
+      value: carpenter
+  recipes:
+    - sawmill
+school:
+  name: School
+  image: ../../assets/images/buildings/school.png
+  workers:
+    - name: Teacher
+      value: teacher
+    - name: Pupil
+      value: pupil
+  recipes:
+    - school
+shepherd:
+  name: Shepherd's Hut
+  image: ../../assets/images/buildings/shepherd.png
+  workers:
+    - name: Shepherd
+      value: shepherd
+  recipes:
+    - shepherd
+sifter:
+  name: Sifter's Hut
+  image: ../../assets/images/buildings/sifter.png
+  workers:
+    - name: Sifter
+      value: sifter
+  recipes:
+    - sifter
+smeltery:
+  name: Smeltery
+  image: ../../assets/images/buildings/smeltery.png
+  workers:
+    - name: Smelter
+      value: smelter
+  recipes:
+    - smeltery
+stonemason:
+  name: Stonemason's Hut
+  image: ../../assets/images/buildings/stonemason.png
+  workers:
+    - name: Stonemason
+      value: stonemason
+  recipes:
+    - stonemason
+stonesmeltery:
+  name: Stone Smeltery
+  image: ../../assets/images/buildings/stonesmeltery.png
+  workers:
+    - name: Stone Smelter
+      value: stonesmelter
+  recipes:
+    - stonesmeltery
+swineherd:
+  name: Swineherd's Hut
+  image: ../../assets/images/buildings/swineherd.png
+  workers:
+    - name: Swineherd
+      value: swineherd
+  recipes:
+    - swineherd
+tavern:
+  name: Tavern
+  image: ../../assets/images/buildings/tavern.png
+  recipes:
+    - tavern
+    - tavern117
+townhall:
+  name: Town Hall
+  image: ../../assets/images/buildings/townhall.png
+  recipes:
+    - townhall
+university:
+  name: University
+  image: ../../assets/images/buildings/university.png
+  workers:
+    - name: Researcher
+      value: researcher
+  recipes:
+    - university
+warehouse:
+  name: Warehouse
+  image: ../../assets/images/buildings/warehouse.png
+  workers:
+    - name: Courier
+      value: courier
+  recipes:
+    - warehouse
