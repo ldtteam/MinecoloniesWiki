@@ -72,7 +72,7 @@ combatacademy:
   image: ../../assets/images/buildings/combatacademy.png
   workers:
     - name: Knight in Training
-      value:knightintraining 
+      value: knightintraining 
   recipes:
     - combatacademy
 composter:
