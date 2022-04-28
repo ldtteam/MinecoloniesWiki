@@ -407,6 +407,11 @@ mine:
       value: miner
   recipes:
     - mine
+  settings:
+    - name: Fill Block
+      description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine.  The default is the cobblestone block.
+    - name: Max Depth
+      description: Here you can overide the default maximum depth of the Mine, if you don't want the Miner to dig as deep as the Mine level allows.  The default is -100 (minus sign is not visible in the window).
 mysticalsite:
   name: Mystical Site
   image: ../../assets/images/buildings/mysticalsite.png
