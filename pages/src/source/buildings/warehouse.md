@@ -4,21 +4,7 @@ layout: default
 ---
 # Warehouse
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/warehouse.png" alt="Warehouse's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/courier">Courier</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>warehouse</recipe>
-</div>
-
+{% capture content %}
 The Warehouse is the central storage from where a Courier will store and retrieve everything your workers harvest, craft, or need. Items will be stored in [racks](../../source/items/rack).
 
 The level of the Warehouse will determine how many Couriers will be able to use it at the same time. Level up the Warehouse to increase the amount of Couriers that can work in it. Leveling up the Warehouse will also increase its storage capacity.
@@ -30,7 +16,11 @@ The level of the Warehouse will determine how many Couriers will be able to use 
 | 3 | 6  |
 | 4 | 8  |
 | 5 | 10 |  
-
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="warehouse" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Warehouse GUI
 

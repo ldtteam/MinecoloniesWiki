@@ -51,4 +51,20 @@ build:
     content: When you are ready to upgrade to the next level. Upgrading will come with benefits, like more furnaces for a Smelter to use (for example).
   - button: Deconstruct
     content: To deconstruct the building. After the Builder is done breaking the building, click the Pick Up button, which will appear where the Deconstruct button was. You will get the building's hut block, which will keep its current level. This is so you can place it somewhere else using the <a href="../../source/items/buildtool"> build tool</a>.
-    
+barracks:
+  - button: Pencil
+    content: Allows you to rename the building.  The level of the building will always be listed after the name.
+  - button: Barracks Level
+    content: This tells you the type of hut and the build level of the building you have selected.
+  - button: Current Barbarian Position and Last Barbarian Spawn
+    content: A tracker system for Barbarians. <strong>Note:</strong> you can only see the current barbarian position if you have <b>hired spies</b> (see below) during the current raid.
+  - button: Build Options
+    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+  - button: Hire Spies
+    content: This option is only available after the hut is level 3. Here you can hire spies during raids. <br><img src="../../assets/images/gui/hiringspies.png" class="img-fluid mx-auto" alt="Hiring Spies"><br>
+  - button: Inventory
+    content: This opens an inventory space where you can store anything you like, as the citizens staying in the hut don't use it.
+  - button: "?"
+    content: Some huts have an in-game guide. Press the ? button to access it.
+  - button: A chest icon
+    content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks/chests in the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.

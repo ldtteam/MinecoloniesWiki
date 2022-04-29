@@ -4,21 +4,7 @@ layout: default
 ---
 # Sifter's Hut
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/sifter.png" alt="Sifter's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/sifter">Sifter</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>sifter</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Sifter's Hut cannot be built until you have a level 3 [Fisher's Hut](../../source/buildings/fisher) (or three level 1 Fisher's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -69,7 +55,11 @@ You can choose between four meshes. The higher the level of the mesh, the higher
 | 3         | Flint          | 
 | 4         | Iron           | 
 | 5         | Diamond        | 
-
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="sifter" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Sifter Hut GUI
 

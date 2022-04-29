@@ -4,21 +4,7 @@ layout: default
 ---
 # Stonemason's Hut
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/stonemason.png" alt="Stonemason's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/stonemason">Stonemason</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>stonemason</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Stonemason's Hut cannot be built until you have a level 1 [Blacksmith's Hut](../../source/buildings/blacksmith) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -33,7 +19,11 @@ The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirel
 | 3 | 40 |
 | 4 | 80 | 
 | 5 | 160 | 
-
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="stonemason" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Stonemason's Hut GUI
 

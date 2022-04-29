@@ -4,21 +4,7 @@ layout: default
 ---
 # Sawmill
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/sawmill.png" alt="Sawmill" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/carpenter">Carpenter</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>sawmill</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Sawmill cannot be built until you have a level 3 [Forester's Hut](../../source/buildings/forester) (or three level 1 Forester's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -34,7 +20,11 @@ The Sawmill is where the Carpenter will craft any items made of at least 75% woo
 | 3 | 40 |
 | 4 | 80 | 
 | 5 | 160 | 
-
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="sawmill" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Sawmill GUI
 

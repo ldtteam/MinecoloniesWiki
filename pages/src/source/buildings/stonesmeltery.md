@@ -4,28 +4,13 @@ layout: default
 ---
 # Stone Smeltery
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/stonesmeltery.png" alt="Stone Smeltery's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/stonesmelter">Stone Smelter</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>stonesmeltery</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Stone Smeltery cannot be built until you have a level 3 [Smeltery](../../source/buildings/smeltery) (or three level 1 Smelteries, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
 The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, terracotta into glazed terracotta, all types of stone into all types of smooth stone, and logs into charcoal. They can also pop chorus fruits! The Stone Smelter will only work when they have been taught the recipe, receive a request from another worker, and have the needed materials. 
 
 **Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will have available. The number of furnaces they *use* depends on their Athletics level. So:
-
 
 | Building Level |  Furnaces |
 | :-----: | :-----: | 
@@ -35,8 +20,12 @@ The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone,
 | 4 |  4 |
 | 5 |  5 |
 
-
 **Hint:** The higher the Stone Smelter's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="stonesmeltery" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Stone Smeltery GUI
 

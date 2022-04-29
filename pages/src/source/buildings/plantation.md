@@ -4,21 +4,7 @@ layout: default
 ---
 # Plantation
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/plantation.png" alt="Plantation" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/planter">Planter</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>plantation</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Plantation cannot be built until you have a level 3 [Farm](../../source/buildings/farm&field) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -45,8 +31,11 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 | 3 | 40 |
 | 4 | 80 | 
 | 5 | 160 | 
-
-<br>
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="plantation" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Plantation GUI
 

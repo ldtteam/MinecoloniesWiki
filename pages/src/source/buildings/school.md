@@ -4,24 +4,7 @@ layout: default
 ---
 # School
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/school.png" alt="School" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/teacher">Teacher</a></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/pupil">Pupil</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>school</recipe>
-</div>
-
+{% capture content %}
 ### Note: The School cannot be built until you finish the research in the [University](../../source/buildings/university).
 <br>
 
@@ -36,8 +19,11 @@ The level of the School determines how many Pupils can be taught at a time.
 | 3 | 6 |
 | 4 | 8 |
 | 5 | 10 |  
-
-<br>
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="school" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## School GUI
 

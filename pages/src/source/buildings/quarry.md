@@ -4,24 +4,13 @@ layout: default
 ---
 # Quarry
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/quarry.png" alt="Quarry Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/quarrier">Quarrier</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>simplequarry</recipe>
-    <br>
-    <recipe>mediumquarry</recipe>
-</div>
-
+{% capture content %}
 The Quarry is where you can hire a quarrier to dig the quarry. The Quarry will be a pit of varied size (simple quarry is 1 x 1 chunks, medium is 2 x 2) to collect larger amounts of stone type blocks.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="quarry" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Quarry GUI
 
