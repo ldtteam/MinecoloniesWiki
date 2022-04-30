@@ -450,6 +450,11 @@ rabbithutch:
       value: rabbitherder
   recipes:
     - rabbithutch
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the Rabbit Herder will breed (and consequently kill) rabbits.
+    - name: Feeding
+      description: On by default. Here you can choose if the Rabbit Herder will feed baby animals, to let them grow up faster.
 restaurant:
   name: Restaurant
   image: ../../assets/images/buildings/restaurant.png
