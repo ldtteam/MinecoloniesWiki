@@ -11,6 +11,166 @@ apiary:
       description: On by default. Here you can choose if the Beekeeper will breed bees.
     - name: Honeycombs or Honey
       description: Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.
+archery:
+  name: Archery
+  image: ../../assets/images/buildings/archery.png
+  workers:
+    - name: Archer in Training
+      value: archerintraining
+  recipes:
+    - archery
+bakery:
+  name: Bakery
+  image: ../../assets/images/buildings/bakery.png
+  workers:
+    - name: Baker
+      value: baker
+  recipes:
+    - bakery
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+barracks:
+  name: Barracks
+  image: ../../assets/images/buildings/barracks.png
+  workers:
+    - name: Guard
+      value: guard
+  recipes:
+    - barracks
+barrackstower:
+  name: Barracks Tower
+  image: ../../assets/images/buildings/barrackstower.png
+  workers:
+    - name: Guard
+      value: guard
+  settings:
+    - name: Task
+      description: This is where you can choose if you want the Guard to patrol, follow, or guard.
+      options:
+        - name: Patrol
+          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>. 
+        - name: Guard
+          description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate the guard location.
+        - name: Follow
+          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>. 
+    - name: Retreat on low health
+      description: Here you can choose if the Guard will attempt to retreat when they have low health.
+    - name: Hire Trainee
+      description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility (<a href="../../source/buildings/archery">Archery</a> for Archers and <a href="../../source/buildings/combatacademy"> Combat Academy</a> for knights) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the <a href="../../source/buildings/townhall"> Town Hall</a> GUI.
+    - name: Patrol Mode
+      description: This is where you can choose how you want the Guard to patrol.
+      options:
+        - name: Automatic
+          description: The Guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
+        - name: Manual
+          description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
+    - name: Follow Mode
+      description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
+blacksmith:
+  name: Blacksmith's Hut
+  image: ../../assets/images/buildings/blacksmith.png
+  workers:
+    - name: Blacksmith
+      value: blacksmith
+  recipes:
+    - blacksmith
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+builder:
+  name: Builder's Hut
+  image: ../../assets/images/buildings/builder.png
+  workers:
+    - name: Builder
+      value: builder
+  recipes:
+    - builder
+  settings:
+    - name: Builder Mode
+      description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+    - name: Build Method
+      description: This is unlocked by researching Builder Modes in the University.  This allows you to change how the builder builds, reducing pathfinding and speeding up builds (especially large builds).  Any one of these can be set in the structurize config, but once the "Builder Modes" research is done in the university, the one set here takes precedence.
+      options:
+        - name: default
+          description: The default row-by-row pattern.
+        - name: inwardcircle
+          description: Blocks are placed like a square spiral from the outside in.
+        - name: inwardcircleheight#
+          description: This will also make spirals from the outside in, but each spiral gets built upward 1 to 4 times, before the builder will start the next square inward.
+        - name: hilbert
+          description: hilbert does <a href="https://en.wikipedia.org/wiki/Hilbert_curve" target="_blank">this pattern</a>, with a little difference to work for rectangular areas.
+        - name: random
+          description: Blocks are placed in an entirely random order. Note that this slows down builds.
+    - name: Fill Block
+      description: Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.
+chickenfarmer:
+  name: Chicken Farmer's Hut
+  image: ../../assets/images/buildings/chickenfarmer.png
+  workers:
+    - name: Chicken Farmer
+      value: chickenfarmer
+  recipes:
+    - chickenfarmer
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the farmer will breed (and consequently kill) chickens.
+    - name: Feeding
+      description: On by default. Here you can choose if the farmer will feed baby animals, to let them grow up faster.
+combatacademy:
+  name: Combat Academy
+  image: ../../assets/images/buildings/combatacademy.png
+  workers:
+    - name: Knight in Training
+      value: knightintraining 
+  recipes:
+    - combatacademy
+composter:
+  name: Composter's Hut
+  image: ../../assets/images/buildings/composter.png
+  workers:
+    - name: Composter
+      value: composter
+  recipes:
+    - composter
+  settings:
+    - name: Produce Dirt
+      description: Turning this on will make dirt instead of compost.  It also occassionally produces podzol.
+    - name: Min Warehouse Stock
+      description: This is the minimum number of an item to be left in the warehouse before the hut will request and compost other items.  The default is 16.
+concretemixer:
+  name: Concrete Mixer's Hut
+  image: ../../assets/images/buildings/concretemixer.png
+  workers:
+    - name: Concrete Mixer
+      value: concretemixer
+  recipes:
+    - concretemixer
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 courier:
   name: Courier's Hut
   image: ../../assets/images/buildings/courier.png
@@ -19,6 +179,61 @@ courier:
       value: courier
   recipes:
     - courier
+cowhand:
+  name: Cowhand's Hut
+  image: ../../assets/images/buildings/cowhand.png
+  workers:
+    - name: Cowhand
+      value: cowhand
+  recipes:
+    - cowhand
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the Cowhand will breed (and consequently kill) cows.
+    - name: Feeding
+      description: On by default. Here you can choose if the Cowhand will feed baby animals, to let them grow up faster.
+    - name: Milking
+      description: Off by default. When on, you provide the Cowhand with as many empty buckets as you like. In return, they will milk the cows and give you back buckets of milk.
+crusher:
+  name: Crusher's Hut
+  image: ../../assets/images/buildings/crusher.png
+  workers:
+    - name: Crusher
+      value: crusher 
+  recipes:
+    - crusher
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+dyer:
+  name: Dyer's Hut
+  image: ../../assets/images/buildings/dyer.png
+  workers:
+    - name: Dyer
+      value: dyer
+  recipes:
+    - dyer
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+enchanter:
+  name: Enchanter's Tower
+  image: ../../assets/images/buildings/enchanter.png
+  workers:
+    - name: Enchanter
+      value: enchanter
+  recipes:
+    - enchanter
 farm:
   name: Farmer's Hut & Field
   image: ../../assets/images/buildings/farm.png
@@ -38,6 +253,14 @@ farm:
           description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
         - name: Warehouse Stock
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+fisher:
+  name: Fisher's Hut
+  image: ../../assets/images/buildings/fisher.png
+  workers:
+    - name: Fisher
+      value: fisher
+  recipes:
+    - fisher
 fletcher:
   name: Fletcher's Hut
   image: ../../assets/images/buildings/fletcher.png
@@ -176,4 +399,167 @@ mechanic:
           description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
         - name: Warehouse Stock
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
- 
+mine:
+  name: Mine
+  image: ../../assets/images/buildings/mine.png
+  workers:
+    - name: Miner
+      value: miner
+  recipes:
+    - mine
+  settings:
+    - name: Fill Block
+      description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine.  The default is the cobblestone block.
+    - name: Max Depth
+      description: Here you can overide the default maximum depth of the Mine, if you don't want the Miner to dig as deep as the Mine level allows.  The default is -100 (minus sign is not visible in the window).
+mysticalsite:
+  name: Mystical Site
+  image: ../../assets/images/buildings/mysticalsite.png
+  recipes:
+    - mysticalsite
+nethermine:
+  name: Nether Mine
+  image: ../../assets/images/buildings/nethermine.png
+  workers:
+    - name: Nether Miner
+      value: netherminer
+  recipes:
+    - nethermine
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+    - name: Close portal on return
+      description: Tells the Nether Miner whether to close the portal or not when they return.  Default is On.
+plantation:
+  name: Plantation
+  image: ../../assets/images/buildings/plantation.png
+  workers:
+    - name: Planter
+      value: planter
+  recipes:
+    - plantation
+quarry:
+  name: Quarry
+  image: ../../assets/images/buildings/quarry.png
+  workers:
+    - name: Quarrier
+      value: quarrier
+  recipes:
+    - simplequarry
+    - mediumquarry
+rabbithutch:
+  name: Rabbit Hutch
+  image: ../../assets/images/buildings/rabbithutch.png
+  workers:
+    - name: Rabbit Herder
+      value: rabbitherder
+  recipes:
+    - rabbithutch
+restaurant:
+  name: Restaurant
+  image: ../../assets/images/buildings/restaurant.png
+  workers:
+    - name: Cook
+      value: cook
+    - name: Assistant Cook
+      value: assistantcook
+  recipes:
+    - restaurant
+sawmill:
+  name: Sawmill
+  image: ../../assets/images/buildings/sawmill.png
+  workers:
+    - name: Carpenter
+      value: carpenter
+  recipes:
+    - sawmill
+school:
+  name: School
+  image: ../../assets/images/buildings/school.png
+  workers:
+    - name: Teacher
+      value: teacher
+    - name: Pupil
+      value: pupil
+  recipes:
+    - school
+shepherd:
+  name: Shepherd's Hut
+  image: ../../assets/images/buildings/shepherd.png
+  workers:
+    - name: Shepherd
+      value: shepherd
+  recipes:
+    - shepherd
+sifter:
+  name: Sifter's Hut
+  image: ../../assets/images/buildings/sifter.png
+  workers:
+    - name: Sifter
+      value: sifter
+  recipes:
+    - sifter
+smeltery:
+  name: Smeltery
+  image: ../../assets/images/buildings/smeltery.png
+  workers:
+    - name: Smelter
+      value: smelter
+  recipes:
+    - smeltery
+stonemason:
+  name: Stonemason's Hut
+  image: ../../assets/images/buildings/stonemason.png
+  workers:
+    - name: Stonemason
+      value: stonemason
+  recipes:
+    - stonemason
+stonesmeltery:
+  name: Stone Smeltery
+  image: ../../assets/images/buildings/stonesmeltery.png
+  workers:
+    - name: Stone Smelter
+      value: stonesmelter
+  recipes:
+    - stonesmeltery
+swineherd:
+  name: Swineherd's Hut
+  image: ../../assets/images/buildings/swineherd.png
+  workers:
+    - name: Swineherd
+      value: swineherd
+  recipes:
+    - swineherd
+tavern:
+  name: Tavern
+  image: ../../assets/images/buildings/tavern.png
+  recipes:
+    - tavern
+    - tavern117
+townhall:
+  name: Town Hall
+  image: ../../assets/images/buildings/townhall.png
+  recipes:
+    - townhall
+university:
+  name: University
+  image: ../../assets/images/buildings/university.png
+  workers:
+    - name: Researcher
+      value: researcher
+  recipes:
+    - university
+warehouse:
+  name: Warehouse
+  image: ../../assets/images/buildings/warehouse.png
+  workers:
+    - name: Courier
+      value: courier
+  recipes:
+    - warehouse
