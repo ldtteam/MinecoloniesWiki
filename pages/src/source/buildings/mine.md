@@ -9,6 +9,8 @@ The Mine is where you can hire a [Miner](../../source/workers/miner) to work the
 
 At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward to a specific depth depending on the level of the Mine.  Once the main shaft is completed, the Miner will then branch out.
 
+**Note:** Placing the Mine hut below the maximum Y level it can mine will cause the Miner not work and complain the hut needs to be upgraded.  It's recommended to always have your hut above Y=54 (1.16) or Y=44 (1.18).
+
 | Mine Level | Shaft Y Level | Shaft Y Level |
 | ---------- | ------------- | ------------- |
 | | 1.16 | 1.18 |
