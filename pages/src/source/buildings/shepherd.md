@@ -25,52 +25,12 @@ The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food a
 
 ## Shepherd's Hut GUI
 
-When accessing the Shepherd's Hut block by right-clicking on it, you will see a GUI with different options.  You start on the main tab:
-
-<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/shepherdgui1.png" class="img-fluid mx-auto" alt="Herder GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Shepherd hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/shepherdgui1.png" %}
+
+    {% include contentblock/stock-gui.html buildingname="Shepherd" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/shepherdgui2.png" %}
+
+    {% include contentblock/settings-gui.html key="shepherd" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/shepherdgui3.png" %}
   </div>
 </div>
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/shepherdgui2.png" class="img-fluid mx-auto" alt="Shepherd's Hut GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <p>The second tab of the GUI is <strong>Minimum Stock</strong>.    It has one button:</p>
-    <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Shepherd's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-    </ul>
-  </div>
-</div>  
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/shepherdgui3.png" class="img-fluid mx-auto" alt="Shepherd's Hut GUI 3">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <p>The third tab of the GUI is <strong>Settings</strong>.  It has four buttons:</p>
-    <ul>
-      <li><b>Breeding:</b> On by default. Here you can choose if the Shepherd will breed (and consequently kill) sheep.</li>
-      <li><b>Feeding:</b> On by default. Here you can choose if the Shepherd will feed baby animals, to let them grow up faster.</li>
-      <li><b>Dying:</b> On by default. Here you choose if the Shepherd will dye sheep random colors to get differently colored wool. (They do not require dye to do this.)</li>
-      <li><b>Shearing:</b> On by default. Here you can choose if the Shepherd will shear the sheep or not.</li>
-    </ul>
-  </div>
-</div>  
-
-
