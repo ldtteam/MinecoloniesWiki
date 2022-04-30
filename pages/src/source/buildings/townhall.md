@@ -4,12 +4,7 @@ layout: default
 ---
 # Town Hall
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/townhall.png" alt="Town Hall's Block" />
-    <hr />
-    <recipe>townhall</recipe>
-</div>
-
+{% capture content %}
 The Town Hall is the central part of your colony.
 
 **Note:** The Town Hall block **cannot** be crafted until **after** you have already placed the Town Hall you get from the [Supply Ship/Camp](../../source/items/supplycampandship). If needed, it can also be obtained in creative mode like any other block or by commands.
@@ -50,7 +45,11 @@ Due to the protected area of each colony, you have to carefully scout your surro
 If there is another colony too close to your current position, you won't be able to place a Town Hall.
 
 If you try to place another Town Hall outside of your protected area, you will get a message: <br> 
-<img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second Town Hall"/>
+<img src="../../assets/images/gui/th_secondplace.png" alt="Placing a Second Town Hall"/>{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="townhall" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Town Hall GUI
 

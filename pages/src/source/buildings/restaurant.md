@@ -4,27 +4,15 @@ layout: default
 ---
 # Restaurant
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/restaurant.png" alt="Restaurant's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/cook">Cook</a></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/assistantcook">Assistant Cook</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>restaurant</recipe>
-</div>
-
+{% capture content %}
 The Restaurant is where the Cook will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the Restaurant and the Cook will give them food. The Assistant Cook also works at the Restaurant. They craft needed food to help supply the colony.
 
 **Note:** You can only hire an Assistant Cook when the Restaurant is level 3 or higher.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="restaurant" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Restaurant GUI
 

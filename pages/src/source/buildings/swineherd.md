@@ -4,25 +4,10 @@ layout: default
 ---
 # Swineherd's Hut
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/swineherd.png" alt="Swineherd's Hut" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/swineherd">Swineherd</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>swineherd</recipe>
-</div>
-
+{% capture content %}
 The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food. You will have to capture and bring in two pigs to the Swineherd's Hut, as the Swineherd will not catch and bring in any pigs.
 
 **Note:** The Swineherd will only keep two pigs alive per hut level, so at level 5 they will have ten pigs in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat. So:
-
 
 | Building Level | Pigs Housed |
 | ----- | ----- |
@@ -31,8 +16,11 @@ The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food.
 | 3 | 6 |
 | 4 | 8 |
 | 5 | 10 |
-
-  
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="swineherd" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Swineherd's Hut GUI
 

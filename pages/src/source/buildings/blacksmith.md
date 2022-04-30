@@ -4,21 +4,7 @@ layout: default
 ---
 # Blacksmith's Hut
 
-<div class="infobox box text-center">
-    <img src="../../assets/images/buildings/blacksmith.png" alt="Blacksmith" />
-    <hr />
-    <div class="row section-text text-left">
-        <div class="col">
-        <p><strong>Worker:</strong></p>
-        </div>
-        <div class="col">
-        <p><a href="../workers/blacksmith">Blacksmith</a></p>
-        </div>
-    </div>
-    <hr />
-    <recipe>blacksmith</recipe>
-</div>
-
+{% capture content %}
 ### Note: The Blacksmith's Hut cannot be built until you have a level 3 [Mine](../../source/buildings/mine) (or three level 1 Mines, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
 <br>
 
@@ -38,75 +24,23 @@ The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor, swords, a
 Additionally, upon reaching level 5, the Blacksmith learns the nine netherite recipes (shovel, hoe, pickaxe, axe, sword, helmet, chestplate, leggings, and boots), which count toward the recipe total above.
 
 When a colonist is requesting a tool from the Blacksmith with multiple accepted levels, the Blacksmith will craft whichever tool type is highest in their list of recipes that they have the materials for (when you teach them a new recipe, it'll go on the bottom).
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/building.html key="blacksmith" %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
+
 
 ## Blacksmith's Hut GUI
 
 <div class="row">
- 
-<div class="col">
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Blacksmith's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/blacksmithgui.png" %}
 
-When accessing the Blacksmith's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:
+    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/blacksmithgui2.png" %}
 
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/blacksmithgui.png" class="img-fluid mx-auto" alt="Blacksmith's Hut GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>  
+    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/blacksmithgui3.png" %}
 
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/blacksmithgui2.png" class="img-fluid mx-auto" alt="Blacksmith GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <p>The second tab of the GUI is <strong>Crafting Recipes</strong>.  Here you can see all the crafting recipes you have taught this hut and can remove them.</p>
-    <ul>
-        <li><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</li>
-    </ul>
+    {% include contentblock/settings-gui.html key="blacksmith" header="The fourth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/blacksmithgui4.png" %}
   </div>
 </div>
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/blacksmithgui3.png" class="img-fluid mx-auto" alt="Blacksmith GUI 3">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <p>The third tab of the GUI is <strong>Tasks</strong>.  This tab shows you any requests the blacksmith is working on, and where it is going.</p>
-  </div>
-</div>
-
-
-<br>
-<div class="row">
-  <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/blacksmithgui4.png" class="img-fluid mx-auto" alt="Blacksmith GUI 4">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <p>The fourth tab of the GUI is <strong>Settings</strong>.</p>
-    <ul>
-      <li><strong>Recipe Mode:</strong> This is unlocked by researching Warehouse Master in the University. This allows you to change the order the hut chooses when it knows more than one recipe for an item. 
-        <ul>
-          <li><strong>Priority:</strong> This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.</li>
-          <li><strong>Warehouse Stock:</strong> The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.</li>
-        </ul>
-     </li>
-    </ul>
-    <p>For example: the sawmill has two recipes to make chests: one using 8 oak planks, and one using 8 spruce planks. In "Priority" mode, if the oak planks recipe is higher on the list, the carpenter would always use oak planks to make chests (even if there are none left). In "Warehouse Stock" mode, the carpenter would check to see that there are more spruce planks than oak planks in the warehouse before deciding to use spruce planks to make chests.</p>
-  </div>
-</div>
-
-  </div>
-</div>  
