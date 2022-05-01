@@ -15,69 +15,21 @@ The Restaurant is where the Cook will cook food, provided they have the necessar
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Restaurant GUI
-
 <div class="row">
   <div class="col">
-    
-    When accessing the Restaurant's hut block by right-clicking on it, you will see a GUI with different options:
+    {% include contentblock/main-gui.html header="When accessing the Restaurant hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/restaurantgui1.png" %}
 
-    <br>
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/restaurantgui1.png" class="img-fluid mx-auto" alt="Restaurant GUI 1">
-      </div>
-      <div class="col-sm-12 col-md">
-        <br>
-        <ul>
-          {% for item in site.data.gui.global %}
-            <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <br> <br>
+    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/restaurantgui2.png" %}
 
-    This is page two of the Restaurant GUI.
+    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Smelting Recipes</strong>." content="Here you can see all the smelting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to remove any recipes you've taught them.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a furnace grid which allows you to teach this hut recipes (not the worker).  Place the item to smelt in the upper slot.</p>" image="../../assets/images/gui/restaurantgui3.png" %}
 
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/restaurantgui2.png" class="img-fluid mx-auto" alt="Restaurant GUI 2">
-      </div>
-      <div class="col-sm-12 col-md">
-          <ul>
-          <li><strong> Fuel: </strong> Listed here are items that can be used by the Cook as fuel in their furnaces. Simply turn on any that you want your Cook to use, and a <a href="../../source/workers/courier"> Courier</a> will deliver those items to the Cook when they need fuel. (The black box at the top is to search for items.)</li>
-          </ul>
-        </div>
-      </div>
-      <br><br><br><br>
-      
-    This is page three of the Restaurant GUI.
+    {% include contentblock/stock-gui.html buildingname="Restaurant" header="The fourth tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/restaurantgui4.png" %}
 
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/restaurantgui3.png" class="img-fluid mx-auto" alt="Restaurant GUI 3">
-      </div>
-      <div class="col-sm-12 col-md">
-          <ul>
-          <li><strong> Food: </strong> Listed here are food items that will be handed out by the Cook. Disable any you don't want to be handed out or produced. However, if a colonist finds a disabled item, they'll still eat it - the Cook just won't hand it out. (The black box at the top is to search for items.)</li>
-          </ul>
-        </div> 
-      </div>  
-      <br><br><br><br>
+    {% include contentblock/basic.html header="The fifth tab of the GUI is <strong>Fuel</strong>." content="Listed here are items that can be used by the Restaurant as fuel in their furnaces. Simply turn on any that you want your Cook to use, and a Courier will deliver those items to the Cook when they need fuel.  All items are off by default.  The black box at the top is to search for items." image="../../assets/images/gui/restaurantgui5.png" %}
 
-    This is page four of the Restaurant GUI.
+    {% include contentblock/basic.html header="The sixth tab of the GUI is <strong>Food</strong>." content="Listed here are food items that will be handed out by the Cook. Disable any you don't want to be handed out or produced. However, if a colonist finds a disabled item, they'll still eat it - the Cook just won't hand it out. (The black box at the top is to search for items.)" image="../../assets/images/gui/restaurantgui6.png" %}
 
-    <div class="row">
-      <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Restaurant GUI 4">
-      </div>
-      <div class="col-sm-12 col-md">
-          <ul>
-          <li><strong> Minimum Stock: </strong> Use this button to tell the Restaurant to request a minimum stock to keep on hand. The Cook will still give out items that are set as the minimum stock, but will request more if they no longer have enough. Set items will be displayed above the button.</li>
-          </ul>
-        </div>
-      </div>
-      <br> <br>
+    {% include contentblock/basic.html header="The seventh tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/restaurantgui7.png" %}
+
   </div>
 </div>
-

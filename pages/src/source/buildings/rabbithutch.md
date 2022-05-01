@@ -24,33 +24,12 @@ layout: default
 
 ## Rabbit Hutch GUI
 
-When accessing the Rabbit Hutch block by right-clicking on it, you will see a GUI with different options:
-
-<br>
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/rabbithutchgui.png" class="img-fluid mx-auto" alt="Rabbit Hutch GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>  
-  <br>
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Rabbit Hutch hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/rabbithutchgui1.png" %}
 
-This is page two of the Rabbit Hutch GUI.
+    {% include contentblock/stock-gui.html buildingname="Rabbit Hutch" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/rabbithutchgui2.png" %}
 
-<div class="row">
-    <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Rabbit Hutch GUI 2">
-    </div>
-    <div class="col-sm-12 col-md">
-        <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Rabbit Hutch to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-        </ul>
-    </div>
+    {% include contentblock/settings-gui.html key="rabbithutch" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/rabbithutchgui3.png" %}
+  </div>
 </div>
