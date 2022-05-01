@@ -17,7 +17,7 @@ As you level up the University, you can hire more researchers:
 | 4 | 4 |
 | 5 | 5 |
 
-<strong>Note:</strong> Research time is real-world time spent in-game. However, Researchers will sometimes use offline time to work on researches. Researchers' Knowledge skill affects the amount of research time they get from the offline time (it's not a 1:1 ratio), and their Mana skill affects the max amount of research time they can get. Offline research time is unlocked at University level 3. 
+**Note:** Research time is real-world time spent in-game. However, Researchers will sometimes use offline time to work on researches. Researchers' Knowledge skill affects the amount of research time they get from the offline time (it's not a 1:1 ratio), and their Mana skill affects the max amount of research time they can get. Offline research time is unlocked at University level 3. 
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html key="university" %}
