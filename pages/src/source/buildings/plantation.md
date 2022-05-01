@@ -39,25 +39,14 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 
 ## Plantation GUI
 
-When accessing the Plantation's hut block by right-clicking on it, you will see a GUI with different options:
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/plantationgui1.png" class="img-fluid mx-auto" alt="Plantation GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Plantation hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/plantationgui1.png" %}
+
+    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/plantationgui2.png" %}
+
+    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/plantationgui3.png" %}
+
+    {% include contentblock/settings-gui.html key="plantation" header="The fourth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/plantationgui4.png" %}
   </div>
 </div>
-<br> <br>
-
-On page two of the GUI, you can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.
-
-**Note:** If you have completed the Double Trouble research in the [University](../../source/buildings/university) (which lets the Planter plant two crops at a time), this button will show *two* crops.
-
- <img src="../../assets/images/gui/plantationgui2.png" alt="Plantation GUI Page 2" />
