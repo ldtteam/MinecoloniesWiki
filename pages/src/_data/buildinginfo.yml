@@ -425,6 +425,16 @@ nethermine:
       value: netherminer
   recipes:
     - nethermine
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+    - name: Close portal on return
+      description: Tells the Nether Miner whether to close the portal or not when they return.  Default is On.
 plantation:
   name: Plantation
   image: ../../assets/images/buildings/plantation.png
@@ -433,6 +443,16 @@ plantation:
       value: planter
   recipes:
     - plantation
+  settings:
+    - name: Crops
+      description: You can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus.  **Note:** If you have completed the Double Trouble research in the University (which lets the Planter plant two crops at a time), this button will also show options for *two* crops.
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 quarry:
   name: Quarry
   image: ../../assets/images/buildings/quarry.png
@@ -450,6 +470,11 @@ rabbithutch:
       value: rabbitherder
   recipes:
     - rabbithutch
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the Rabbit Herder will breed (and consequently kill) rabbits.
+    - name: Feeding
+      description: On by default. Here you can choose if the Rabbit Herder will feed baby animals, to let them grow up faster.
 restaurant:
   name: Restaurant
   image: ../../assets/images/buildings/restaurant.png
