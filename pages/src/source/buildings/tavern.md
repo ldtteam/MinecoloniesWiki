@@ -12,7 +12,7 @@ Upgrading the Tavern will garner more and better visitors.
 
 Recruiting used to be part of the [Town Hall](../../source/buildings/townhall) but has been moved here.
 
-<strong>Note:</strong> The Tavern can only be upgraded to level 3, not level 5. You can also only have 1 Tavern per colony.
+**Note:** The Tavern can only be upgraded to level 3, not level 5. You can also only have 1 Tavern per colony.
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html key="tavern" %}
