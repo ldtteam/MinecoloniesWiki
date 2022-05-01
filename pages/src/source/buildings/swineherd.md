@@ -24,32 +24,12 @@ The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food.
 
 ## Swineherd's Hut GUI
 
-When accessing the Swineherd's Hut block by right-clicking on it,  you will see a GUI with different options:
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/swineherdgui.png" class="img-fluid mx-auto" alt="Swineherd's Hut GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-     <br>
-     <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-  <br>
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Swineherd's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/swineherdgui1.png" %}
 
-This is page two of the Swineherd's Hut GUI.
+    {% include contentblock/stock-gui.html buildingname="Swineherd's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/swineherdgui2.png" %}
 
-<div class="row">
-    <div class="col-sm-12 col-md">
-        <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Swineherd's Hut GUI 2">
-    </div>
-    <div class="col-sm-12 col-md">
-        <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Swineherd's Hut to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-        </ul>
-    </div>
+    {% include contentblock/settings-gui.html key="swineherd" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/swineherdgui3.png" %}
+  </div>
 </div>
