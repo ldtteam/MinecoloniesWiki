@@ -78,6 +78,6 @@ The Sifter's Hut can sift a certain amount of blocks per day:
 
     {% include contentblock/basic.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes." image="../../assets/images/gui/siftergui3.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Sifter's Hut" header="The third tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/siftergui4.png" %}
+    {% include contentblock/stock-gui.html buildingname="Sifter's Hut" header="The third tab of the GUI is <strong>Minimum Stock</strong>. Blocks to be sifted and required meshes must be set here in order for the Sifter to work. It has one button:" image="../../assets/images/gui/siftergui4.png" %}
   </div>
 </div>
