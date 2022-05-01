@@ -26,7 +26,7 @@ bakery:
     - name: Baker
       value: baker
   recipes:
-    - bakery
+    - baker
   settings:
     - name: Recipe Mode
       description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
