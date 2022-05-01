@@ -26,7 +26,7 @@ bakery:
     - name: Baker
       value: baker
   recipes:
-    - bakery
+    - baker
   settings:
     - name: Recipe Mode
       description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
@@ -568,6 +568,14 @@ stonesmeltery:
       value: stonesmelter
   recipes:
     - stonesmeltery
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 swineherd:
   name: Swineherd's Hut
   image: ../../assets/images/buildings/swineherd.png
