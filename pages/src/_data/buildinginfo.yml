@@ -26,7 +26,7 @@ bakery:
     - name: Baker
       value: baker
   recipes:
-    - bakery
+    - baker
   settings:
     - name: Recipe Mode
       description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
@@ -241,8 +241,10 @@ farm:
     - name: Farmer
       value: farmer
   recipes:
-    - farm
-    - field
+    - recipe: farm
+      label: Recipe for Farm
+    - recipe: field
+      label: Recipe for Field
   settings:
     - name: Request Fertilizer
       description: On by default.  This lets you choose whether the Farmer will request fertilizer.
@@ -552,6 +554,14 @@ stonemason:
       value: stonemason
   recipes:
     - stonemason
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 stonesmeltery:
   name: Stone Smeltery
   image: ../../assets/images/buildings/stonesmeltery.png
@@ -560,6 +570,14 @@ stonesmeltery:
       value: stonesmelter
   recipes:
     - stonesmeltery
+  settings:
+    - name: Recipe Mode
+      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      options:
+        - name: Priority
+          description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
+        - name: Warehouse Stock
+          description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 swineherd:
   name: Swineherd's Hut
   image: ../../assets/images/buildings/swineherd.png
@@ -568,12 +586,19 @@ swineherd:
       value: swineherd
   recipes:
     - swineherd
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the Swineherd will breed (and consequently kill) pigs.
+    - name: Feeding
+      description: On by default. Here you can choose if the Swineherd will feed baby animals, to let them grow up faster.
 tavern:
   name: Tavern
   image: ../../assets/images/buildings/tavern.png
   recipes:
-    - tavern
-    - tavern117
+    - recipe: tavern
+      label: Recipe for 1.16
+    - recipe: tavern117
+      label: Recipe for 1.18
 townhall:
   name: Town Hall
   image: ../../assets/images/buildings/townhall.png
