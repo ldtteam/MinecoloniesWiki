@@ -9,6 +9,8 @@ The Mine is where you can hire a [Miner](../../source/workers/miner) to work the
 
 At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward to a specific depth depending on the level of the Mine.  Once the main shaft is completed, the Miner will then branch out.
 
+While mining, sometimes the Miner will get lucky and get an ore block instead of a basic stone block. The chance of getting "Lucky Ores" is set in the [config](../../source/misc/configfile).
+
 **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the Miner not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
 
 | Mine Level | Shaft Y Level | Shaft Y Level |
