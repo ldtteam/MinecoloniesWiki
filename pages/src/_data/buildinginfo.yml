@@ -241,8 +241,10 @@ farm:
     - name: Farmer
       value: farmer
   recipes:
-    - farm
-    - field
+    - recipe: farm
+      label: Recipe for Farm
+    - recipe: field
+      label: Recipe for Field
   settings:
     - name: Request Fertilizer
       description: On by default.  This lets you choose whether the Farmer will request fertilizer.
@@ -572,8 +574,10 @@ tavern:
   name: Tavern
   image: ../../assets/images/buildings/tavern.png
   recipes:
-    - tavern
-    - tavern117
+    - recipe: tavern
+      label: Recipe for 1.16
+    - recipe: tavern117
+      label: Recipe for 1.18
 townhall:
   name: Town Hall
   image: ../../assets/images/buildings/townhall.png
