@@ -568,6 +568,11 @@ swineherd:
       value: swineherd
   recipes:
     - swineherd
+  settings:
+    - name: Breeding
+      description: On by default. Here you can choose if the Swineherd will breed (and consequently kill) pigs.
+    - name: Feeding
+      description: On by default. Here you can choose if the Swineherd will feed baby animals, to let them grow up faster.
 tavern:
   name: Tavern
   image: ../../assets/images/buildings/tavern.png
