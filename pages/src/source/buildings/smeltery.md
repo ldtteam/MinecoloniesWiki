@@ -19,58 +19,16 @@ The Smeltery is where the Smelter will smelt ores into ingots.
 
 ## Smeltery GUI
 
-When accessing the Smeltery's hut block by right-clicking on it, you will see a GUI with different options:  
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/smelterygui1.png" class="img-fluid mx-auto" alt="Smeltery GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.global %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
+  <div class="col">
+    {% include contentblock/main-gui.html header="When accessing the Smeltery hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/smelterygui1.png" %}
+
+    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Custom Recipes</strong>." content="Here you can see all the <a href='../items/shingles'>Architect Cutter</a> recipes this hut knows.   This tab is currently not in use." image="../../assets/images/gui/smelterygui2.png" %}
+
+    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Fuel</strong>." content="Listed here are items that can be used by the Smeltery as fuel in their furnaces. Simply turn on any that you want your Smelter to use, and a Courier will deliver those items to the Smelter when they need fuel.  All items are off by default.  The black box at the top is to search for items." image="../../assets/images/gui/smelterygui3.png" %}
+
+    {% include contentblock/stock-gui.html buildingname="Smeltery" header="The fourth tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/smelterygui4.png" %}
+
+    {% include contentblock/basic.html header="The fifth tab of the GUI is <strong>Smeltable Ore</strong>." content="Listed here are all ore blocks the Smeltery can smelt. All ores are on by default. Turn off any ores you do not want smelted.  All coded ores (even if they come from other mods) are automatically added to this list. If you have ores that are not on the list, they can be added to the <a href='../../source/misc/configfile'>config file</a>.  The black box at the top is to search for items." image="../../assets/images/gui/smelterygui5.png" %}
   </div>
 </div>
-<br>
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/smelterygui2.png" class="img-fluid mx-auto" alt="Smeltery GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-      <li><strong>Fuel: </strong>Listed here are items that can be used by the Smelter as fuel in their furnaces. Turn on any that you want your Smelter to use, and a Courier will deliver those items to the Smelter when they need fuel. (The black box at the top is to search for items.)
-      </li>
-    </ul>
-  </div>
-</div>  
-<br>
-<br>
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/smelterygui3.png" class="img-fluid mx-auto" alt="Smeltery GUI 3">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-      <li><strong>Smeltable Ore: </strong>Listed here are ores that can be smelted by the Smelter. You can click to turn each one on or off. All coded ores (even if they come from other mods) are automatically added to this list. If you have ores that are not on the list, they can be added to the <a href="../../source/misc/configfile">config file</a>. 
-      </li>
-    </ul>
-  </div>
-</div>
-<br>
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/minstockgui.png" class="img-fluid mx-auto" alt="Smeltery GUI 4">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-        <li><strong> Minimum Stock: </strong> Use this button to tell the Smeltery to keep a minimum stock on hand. Set items will be displayed above the button.</li>
-    </ul>
-  </div>
-</div>
-<br>
