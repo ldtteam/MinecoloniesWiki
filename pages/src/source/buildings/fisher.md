@@ -10,6 +10,8 @@ The Fisher's Hut is where the Fisher will catch fish. The Fisher requires a fish
 <p style="text-align:center;"><img src="../../assets/images/misc/pond.png" alt="Pond"></p>
 
 Upgrading the Fisher's Hut will expand the range at which the Fisher can fish, and the higher the level of the Fisher's Hut, the more loot the Fisher will be fishing out (instead of fish). This includes prismarine and sponges!
+
+**Note:** The Fisher will only catch fish and junk in most biomes.  If the Fisher is in an ocean biome, items from treasure category will also be caught.
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html key="fisher" %}
