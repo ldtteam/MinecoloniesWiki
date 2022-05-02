@@ -1,159 +1,193 @@
 <!-- HEADER -->
 <div class="container">
-  <p class="header">MineColonies Wiki</p>
+    <p class="header">MineColonies Wiki</p>
 </div>
 
 <nav class="sidenav" id="navbarSide">
-  <div class="sidenav-title">
-    <p class="text-center">MineColonies Wiki</p>
-  </div>
-  <hr />
-  <ul class="sidenav-nav">
-    <li class="sidenav-item">
-      <a href="https://minecolonies.com" class="sidenav-link">Home</a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://minecolonies.com/about" class="sidenav-link">About the Mod</a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://minecolonies.com/team" class="sidenav-link">Our Team</a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://wiki.minecolonies.ldtteam.com/" class="sidenav-link active">Wiki</a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://crowdin.com/project/minecolonies" class="sidenav-link">Translate</a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://github.com/ldtteam/minecolonies/issues/new/choose" class="sidenav-link">Report a Bug</a>
-    </li>
-    <li class="sidenav-item">
-      <a class="sidenav-link" onClick="modeSwitcher()">Toggle dark mode</a>
-    </li>
-  </ul>
-  <hr />
-  <ul class="sidenav-nav">
-    <li class="sidenav-item">
-      <a href="{{ site.baseurl }}" class="sidenav-link">Wiki Home</a>
-    </li>
-    {% for item in site.data.subnav.subnav %}
-      <li class="sidenav-item dropdown">
-        <a class="sidenav-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">{{ item.title }}</a>
-        <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
-          {% for entry in item.subitems %}
-            <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-          {% endfor %}
-        </div>
-      </li>
-    {% endfor %}
-    <li class="sidenav-item">
-      <a href="{{ 'source/search' | relative_url }}" class="sidenav-link">Search</a>
-    </li>
-  </ul>
-  <hr />
-  <ul class="sidenav-nav sidenav-social text-center">
-    <li class="sidenav-item">
-      <a href="https://www.patreon.com/minecolonies" class="sidenav-link"><i class="fab fa-patreon" style="color: #f96854;"></i></a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://www.youtube.com/user/MrPMardle" class="sidenav-link"><i class="fab fa-youtube" style="color: #ff0000;"></i></a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://discord.minecolonies.com" class="sidenav-link"><i class="fab fa-discord" style="color: #7289da;"></i></a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://twitter.com/minecoloniesmod" class="sidenav-link"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a>
-    </li>
-    <li class="sidenav-item">
-      <a href="https://reddit.com/r/minecolonies" class="sidenav-link"><i class="fab fa-reddit-alien" style="color: #ff4500;"></i></a>
-    </li>
-  </ul>
+    <div class="sidenav-title">
+        <p class="text-center">MineColonies Wiki</p>
+    </div>
+    <hr/>
+    <ul class="sidenav-nav">
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://minecolonies.com">Home</a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://minecolonies.com/about">About the Mod</a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://minecolonies.com/team">Our Team</a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link active" href="https://wiki.minecolonies.ldtteam.com/">Wiki</a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://crowdin.com/project/minecolonies">Translate</a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://github.com/ldtteam/minecolonies/issues/new/choose">Report a Bug</a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" onclick="modeSwitcher()">Toggle dark mode</a>
+        </li>
+    </ul>
+    <hr/>
+    <ul class="sidenav-nav">
+        <li class="sidenav-item">
+            <a href="{{ site.baseurl }}" class="sidenav-link">Wiki Home</a>
+        </li>
+        {% for item in site.data.subnav.subnav %}
+            <li class="sidenav-item dropdown">
+                <a class="sidenav-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">{{ item.title }}</a>
+                <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
+                    {% for entry in item.subitems %}
+                        {% if entry.type == "separator" %}
+                            <div class="dropdown-divider"></div>
+                        {% elsif entry.type == "header" %}
+                            <h6 class="dropdown-header">{{ entry.header }}</h6>
+                        {% else %}
+                            <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </li>
+        {% endfor %}
+        <li class="sidenav-item">
+            <a href="{{ 'source/search' | relative_url }}" class="sidenav-link">Search</a>
+        </li>
+    </ul>
+    <hr/>
+    <ul class="sidenav-nav sidenav-social text-center">
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://www.patreon.com/minecolonies">
+                <i class="fab fa-patreon" style="color: #f96854;"></i>
+            </a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://www.youtube.com/user/MrPMardle">
+                <i class="fab fa-youtube" style="color: #ff0000;"></i>
+            </a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://discord.minecolonies.com">
+                <i class="fab fa-discord" style="color: #7289da;"></i>
+            </a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://twitter.com/minecoloniesmod">
+                <i class="fab fa-twitter" style="color: #1da1f2;"></i>
+            </a>
+        </li>
+        <li class="sidenav-item">
+            <a class="sidenav-link" href="https://reddit.com/r/minecolonies">
+                <i class="fab fa-reddit-alien" style="color: #ff4500;"></i>
+            </a>
+        </li>
+    </ul>
 </nav>
 <div class="overlay"></div>
 
 <!-- NAVBAR PRIMARY -->
 <nav class="navbar navbar-expand-lg navbar-default main">
-  <div class="container">
-    <button class="navbar-toggler" type="button" id="navbarSideButton" aria-expanded="false" aria-label="Toggle Navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+        <button aria-expanded="false" aria-label="Toggle Navigation" class="navbar-toggler" id="navbarSideButton" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a href="https://minecolonies.com" class="nav-link">Home</a>
-    </li>
-    <li class="nav-item">
-      <a href="https://minecolonies.com/about" class="nav-link">About the Mod</a>
-    </li>
-    <li class="nav-item">
-      <a href="https://minecolonies.com/team" class="nav-link">Our Team</a>
-    </li>
-    <li class="nav-item active">
-      <a href="https://wiki.minecolonies.ldtteam.com/" class="nav-link active">Wiki</a>
-    </li>
-    <li class="nav-item">
-      <a href="https://crowdin.com/project/minecolonies" class="nav-link">Translate</a>
-    </li>
-    <li class="nav-item">
-      <a href="https://github.com/ldtteam/minecolonies/issues/new/choose" class="nav-link">Report a Bug</a>
-    </li>
-    <li>
-      <div class="mode-button button" id="theme-toggle" onclick="modeSwitcher()"></div>
-    </li>
-      </ul>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://minecolonies.com">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://minecolonies.com/about">About the Mod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://minecolonies.com/team">Our Team</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="https://wiki.minecolonies.ldtteam.com/">Wiki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://crowdin.com/project/minecolonies">Translate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ldtteam/minecolonies/issues/new/choose">Report a Bug</a>
+                </li>
+                <li>
+                    <div class="mode-button button" id="theme-toggle" onclick="modeSwitcher()"></div>
+                </li>
+            </ul>
 
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="https://www.patreon.com/minecolonies" class="nav-link"><i class="fab fa-patreon" style="color: #f96854;"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.youtube.com/user/MrPMardle" class="nav-link"><i class="fab fa-youtube" style="color: #ff0000;"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://discord.minecolonies.com" class="nav-link"><i class="fab fa-discord" style="color: #7289da;"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://twitter.com/minecoloniesmod" class="nav-link"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://reddit.com/r/minecolonies" class="nav-link"><i class="fab fa-reddit-alien" style="color: #ff4500;"></i></a>
-        </li>
-      </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.patreon.com/minecolonies">
+                        <i class="fab fa-patreon" style="color: #f96854;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/user/MrPMardle">
+                        <i class="fab fa-youtube" style="color: #ff0000;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.minecolonies.com">
+                        <i class="fab fa-discord" style="color: #7289da;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/minecoloniesmod">
+                        <i class="fab fa-twitter" style="color: #1da1f2;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://reddit.com/r/minecolonies">
+                        <i class="fab fa-reddit-alien" style="color: #ff4500;"></i>
+                    </a>
+                </li>
+            </ul>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="https://github.com/ldtteam/MinecoloniesWiki/edit/main/pages/src/{{ page.path }}" class="nav-link">Edit this Page <i class="fab fa-github"></i></a>
-        </li>
-      </ul>
-      
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ldtteam/MinecoloniesWiki/edit/main/pages/src/{{ page.path }}">Edit this Page
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
     </div>
-  </div>
 </nav>
 
-  <!-- NAVBAR SECONDARY -->
-  <nav class="navbar navbar-expand-lg navbar-default secondary">
-  <div class="container">
-    <div class="collapse navbar-collapse" id="navbarsec">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a href="{{ site.baseurl }}" class="nav-link">Wiki Home</a>
-        </li>
-        {% for item in site.data.subnav.subnav %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
-            <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
-              {% for entry in item.subitems %}
-                <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-              {% endfor %}
-            </div>
-          </li>
-        {% endfor %}
-        <li class="nav-item">
-          <a href="{{ 'source/search' | relative_url }}" class="nav-link">Search</a>
-        </li>
-      </ul>
+<!-- NAVBAR SECONDARY -->
+<nav class="navbar navbar-expand-lg navbar-default secondary">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarsec">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="{{ site.baseurl }}" class="nav-link">Wiki Home</a>
+                </li>
+                {% for item in site.data.subnav.subnav %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+                        <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
+                            {% for entry in item.subitems %}
+                                {% if entry.type == "separator" %}
+                                    <div class="dropdown-divider"></div>
+                                {% elsif entry.type == "header" %}
+                                    <h6 class="dropdown-header">{{ entry.header }}</h6>
+                                {% else %}
+                                    <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </li>
+                {% endfor %}
+                <li class="nav-item">
+                    <a href="{{ 'source/search' | relative_url }}" class="nav-link">Search</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 <!-- /NAVBAR SECONDARY -->

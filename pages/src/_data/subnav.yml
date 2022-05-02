@@ -107,10 +107,21 @@ subnav:
         url: source/items/timberframes
       - page: Waypoint
         url: source/items/waypoint
-  - title: Workers
+  - title: Jobs
     subitems:
-      - page: Archer in Training
-        url: source/workers/archerintraining
+      - type: header
+        header: Guards
+      - page: Archer
+        url: source/workers/archer
+      - page: Druid
+        url: source/workers/druid
+      - page: Knight
+        url: source/workers/knight
+      - type: separator
+      - type: header
+        header: Workers
+      - page: Assistant Cook
+        url: source/workers/assistantcook
       - page: Baker
         url: source/workers/baker
       - page: Beekeeper
@@ -129,8 +140,6 @@ subnav:
         url: source/workers/concretemixer
       - page: Cook
         url: source/workers/cook
-      - page: Assistant Cook
-        url: source/workers/assistantcook
       - page: Courier
         url: source/workers/courier
       - page: Cowhand
@@ -153,12 +162,8 @@ subnav:
         url: source/workers/forester
       - page: Glassblower
         url: source/workers/glassblower
-      - page: Guard
-        url: source/workers/guard
       - page: Healer
         url: source/workers/healer
-      - page: Knight in Training
-        url: source/workers/knightintraining
       - page: Library Student
         url: source/workers/librarystudent
       - page: Mechanic

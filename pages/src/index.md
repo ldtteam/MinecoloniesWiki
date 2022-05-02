@@ -8,7 +8,7 @@ MineColonies is an interactive building mod that allows you to create your own t
 
 The limit is your imagination!
 
-MineColonies features NPC workers such as [Builders](../../source/workers/builder), [Farmers](../../source/workers/farmer), [Fishers](../../source/workers/fisher), [Foresters](../../source/workers/forester), [Guards](../../source/workers/guard), [Miners](../../source/workers/miner), [Smelters](../../source/workers/smelter), [Bakers](../../source/workers/baker), [Cooks](../../source/workers/cook), [Couriers](../../source/workers/courier), five types of animal herders, [Composters](../../source/workers/composter), and many more, with even more being developed and added as the mod grows.
+MineColonies features NPC workers such as [Builders](../../source/workers/builder), [Farmers](../../source/workers/farmer), [Fishers](../../source/workers/fisher), [Foresters](../../source/workers/forester), [Miners](../../source/workers/miner), [Smelters](../../source/workers/smelter), [Bakers](../../source/workers/baker), [Cooks](../../source/workers/cook), [Couriers](../../source/workers/courier), five types of animal herders, [Composters](../../source/workers/composter), and many more, with even more being developed and added as the mod grows.
 
 It also includes specialized buildings such as the [Warehouse](../../source/buildings/warehouse), [House](../../source/buildings/house), [Town Hall](../../source/buildings/townhall), [Barracks](../../source/buildings/barracks), [Library](../../source/buildings/library), [University](../../source/buildings/university), and even the [School](../../source/buildings/school).
 

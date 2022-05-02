@@ -49,7 +49,7 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 
 | Name | Requirements | Effects |
 | ---- | ------------ | ------- |
-| Accuracy | [Guard Tower](../../source/buildings/guardtower) at least level 1; 16 iron ingots | Reduces the time [Guards](../../source/workers/guard) sleep by 50% |
+| Accuracy | [Guard Tower](../../source/buildings/guardtower) at least level 1; 16 iron ingots | Reduces the time Guards sleep by 50% |
 | Tactic Training | Total of 3 Guard Tower levels; 3 blocks of iron | Unlocks the [Barracks](../../source/buildings/barracks) |
 | Avoidance | Guard Tower at least level 3; 3 blocks of iron | Lets Knights use shields |
 | Improved Leather | [Town Hall](../../source/buildings/townhall) at least level 1; 32 leather | Increases Guards' armor's durability by 10% |

@@ -1,0 +1,84 @@
+archer:
+  name: Archer
+  images:
+    male: archer_m.png
+    female: archer_f.png
+  traits:
+    primary: Agility
+    secondary: Adaptability
+  buildings:
+    - archery
+    - key: barrackstower
+      name: Barracks Tower
+    - key: guardtower
+      name: Guard Tower
+knight:
+  name: Knight
+  images:
+    male: knight_m.png
+    female: knight_f.png
+  traits:
+    primary: Adaptability
+    secondary: Stamina
+  buildings:
+    - key: combatacademy
+      name: Combat Academy
+    - key: barrackstower
+      name: Barracks Tower
+    - key: guardtower
+      name: Guard Tower
+druid:
+  name: Druid
+  images:
+    male: druid_m.png
+    female: druid_f.png
+  traits:
+    primary: Mana
+    secondary: Focus
+  buildings:
+    - key: barrackstower
+      name: Barracks Tower
+    - key: guardtower
+      name: Guard Tower
+
+assistantcook:
+  name: Assistant Cook
+  images:
+    male: cook_m.png
+    female: cook_f.png
+  traits:
+    primary: Creativity
+    secondary: Knowledge
+  buildings:
+    - restaurant
+baker:
+  name: Baker
+  images:
+    male: baker_m.png
+    female: baker_f.png
+  traits:
+    primary: Knowledge
+    secondary: Dexterity
+  buildings:
+    - baker
+beekeeper:
+  name: Beekeeper
+  images:
+    male: beekeeper_m.png
+    female: beekeeper_f.png
+  traits:
+    primary: Dexterity
+    secondary: Adaptabilty
+  buildings:
+    - apiary
+blacksmith:
+  name: Blacksmith
+  images:
+    male: blacksmith_m.png
+    female: blacksmith_f.png
+  traits:
+    primary: Strength
+    secondary: Focus
+  buildings:
+    - key: blacksmith
+      name: Blacksmith's Hut

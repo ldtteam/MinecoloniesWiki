@@ -9,13 +9,13 @@ layout: default
     <recipe>rallyingbanner</recipe>
 </div>
 
-The rallying banner will summon your [Guards](../../source/workers/guard) to you when used. It's especially useful in raids, as Guards don't automatically know where to find the raiders.
+The rallying banner will summon your Guards to you when used. It's especially useful in raids, as Guards don't automatically know where to find the raiders.
 
 **Note:** Your Guards will not follow you outside the colony [border](../../source/systems/border). To bring Guards outside the border, set them to Follow you on the second page of their tower GUI.
 
 ## Using the Rallying Banner
 
-First, shift + right-click while holding the banner on a [Guard](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower). This assigns the Guards in that tower to the rallying banner. (Shift + right-click on the block again to remove the tower.)
+First, shift + right-click while holding the banner on a [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower). This assigns the Guards in that tower to the rallying banner. (Shift + right-click on the block again to remove the tower.)
 
 Then, shift + right-click on any other block to summon the Guards! (Shift + right-click again to dismiss them.)
 

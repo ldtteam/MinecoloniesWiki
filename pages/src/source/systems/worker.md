@@ -105,7 +105,7 @@ Modded fishing rods with higher durability may require a higher Work Hut level.
 
 ## Guard Armor Levels
 
-There is also a system in place for the type of armor [Guards](../../source/workers/guard) can use. This depends on the level of their Tower.
+There is also a system in place for the type of armor Guards can use. This depends on the level of their Tower.
 
 | Tower Level   | Max Armor Damage Reduction |
 | ------------- | -------------------------- |

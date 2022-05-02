@@ -15,7 +15,7 @@ There is an **overall** colony happiness and an **individual** citizen happiness
 Overall colony happiness is 1-10 (initially set to 5). Happiness depends on three basic factors: **security, housing, and saturation**.
 
 If a colonist's saturation is above 14 shanks, they will be happier.
-If the colonist's home (or for [Guards](../../source/workers/guard) or trainees, their workplace) is above level 2.5, the colonist will be happier.
+If the colonist's home (or for Guards/trainees, their workplace) is above level 2.5, the colonist will be happier.
 If at least two Guards exist for every three citizens, the colonists will be happier.
 
 These basic factors benefit from partial completion. Citizens will be happier with 5 shanks of saturation than 1, with 1 Guard for every 4 workers than 1 Guard for every 10, and enjoy a level 2 house more than a level 1 house. Colonists also become happier as these values increase further, such as from upgrading a house to level 4 or 5 or having completely full saturation.
@@ -37,12 +37,12 @@ Every time a citizen goes to sleep (starts the walk back to their [House](../../
 Citizens will demand higher levels of food based on their workplace level. **They will not eat food that doesn't meet (or exceed) their requirements.**
 
 | Workplace Level | Min Food Level Requested (in shanks) |
-| :----: | :----: |
-| 0 | Any |
-| 1 | 0.5 |
-| 2 | 1 |
-| 3 | 1.5 |
-| 4 | 2 |
-| 5 | 2.5 |
+| :-------------: | :----------------------------------: |
+|        0        |                 Any                  |
+|        1        |                 0.5                  |
+|        2        |                  1                   |
+|        3        |                 1.5                  |
+|        4        |                  2                   |
+|        5        |                 2.5                  |
 
 When a citizen's hunger level gets to 6 or lower, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in their GUI that you build them a Restaurant or provide them with food manually.

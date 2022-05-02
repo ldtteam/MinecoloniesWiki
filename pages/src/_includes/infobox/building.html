@@ -1,7 +1,13 @@
 {% assign key = include.key | strip | default: "" %}
 {% if key != "" %}
     {% assign building = site.data.buildinginfo[key] %}
+    {% assign images = "" | split: "" %}
     {% assign blocks = "" | split: "" %}
+
+    {% capture building_image %}
+        <img src="{{ building.image }}" alt="{{ building.name }}"/>
+    {% endcapture %}
+    {% assign images = images | push: building_image %}
 
     {% if building.workers | size != 0 %}
         {% capture workerblock %}
@@ -31,13 +37,13 @@
                 {% assign recipe_key = recipe %}
                 {% assign recipe_label = "" %}
                 {% if recipe.recipe != null %}
-                {% assign recipe_key = recipe.recipe %}
-                {% assign recipe_label = recipe.label | default: "" %}
+                    {% assign recipe_key = recipe.recipe %}
+                    {% assign recipe_label = recipe.label | default: "" %}
                 {% endif %}
                 <div class="row section-text text-center infobox-recipe-row">
                     <div class="col-12">
                         {% if recipe_label != "" %}
-                        <p class="m-0">{{ recipe_label }}</p>
+                            <p class="m-0">{{ recipe_label }}</p>
                         {% endif %}
                         <recipe>{{ recipe_key }}</recipe>
                     </div>
@@ -47,5 +53,5 @@
         {% assign blocks = blocks | push: recipeblock %}
     {% endif %}
 
-    {% include infobox/reuse/core.html title=building.name image=building.image alt=building.name blocks=blocks %}
+    {% include infobox/reuse/core.html title=building.name images=images blocks=blocks %}
 {% endif %}
