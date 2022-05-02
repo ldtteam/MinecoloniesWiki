@@ -10,11 +10,11 @@ Those claims are protected from modification through other players. See the [Col
 
 Extending your claim area can be done by building huts. Huts claim a square area around them after they are built, expanding all sides from the chunk the hutblock is located in. How much they claim depends on the building. They won't claim over the max range, set with the [config](../../source/misc/configfile) setting *maxColonySize*, which has a default of 20 chunks (not including the chunk the Town Hall is in). 
 
-Deconstructing a building *will* remove the chunks it claimed.
+Deconstructing a building *will* remove the chunks it claimed. If you want to delete the colony, check the [Town Hall](../../source/buildings/townhall) page.
 
 ### Building Claim Areas:
 
-#### [Town Hall](../../source/buildings/townhall)
+#### Town Hall
 
 | Level | Additional Chunks |
 | ----  | ----------------- |

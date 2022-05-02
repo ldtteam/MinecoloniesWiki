@@ -51,6 +51,11 @@ If you try to place another Town Hall outside of your protected area, you will g
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
+### Deleting a Colony
+
+To delete your colony, place a Town Hall outside your current colony border (either by mining or deconstructing your old Town Hall or by crafting a new one). Interacting with the newly placed Town Hall outside of the current borders will prompt you to delete your colony.
+Alternatively, if you have the proper permissions, you can use [commands](../../source/systems/command).
+
 ## Town Hall GUI
 
 <i>You can use the tabs on the left side to switch between different categories.</i>
@@ -193,11 +198,11 @@ If you try to place another Town Hall outside of your protected area, you will g
             <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
             <div class="col-sm-12 col-md">
 			<img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
-			</div>
-		</ul>
+	    </div><br>
+	    <li><strong>Pick Citizen Style:</strong> The option controls how the citizens look. This feature is exclusive for donators.</li>
+	</ul>
   </div>
 </div>
-<br>
 <br>
 
 ### <strong>Work Orders: </strong>Here you will see the work orders your <a href="../../source/workers/builder"> Builders</a> have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
