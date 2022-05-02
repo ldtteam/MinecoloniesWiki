@@ -21,9 +21,9 @@ layout: default
   </div>
 </div>
 
-Being a Nether Miner is a dangerous job!  The Nether Miner travels into the Nether and mines resources found there.  
+Being a Nether Miner is a dangerous job! The Nether Miner travels into the Nether and mines resources found there.  
 
-The Nether Miner requires significant supplies.  They requ)ire the following items, the level of the items based on the level of their hut (check the [worker](../systems/worker) system page). The food they require can be configured in the hut GUI.  
+The Nether Miner requires significant supplies. They require the following items, the level of the items based on the level of their hut (check the [worker](../systems/worker) system page). The food they require can be configured in the hut GUI.  
 
 | Items required | 
 | -------------- | 
@@ -38,7 +38,7 @@ The Nether Miner requires significant supplies.  They requ)ire the following ite
 | 32 torches (gets used up) | 
 | 16 ladders (gets used up)|
 
-Once they have their tools & items, they will activate the nether portal and travel to the nether.  The nether is dangerous!  They will fight mobs they encounter there, and it is possible for them to die on the trip.  Their Adaptability skill will affect their survival chances. If they survive, they will return with loot. What they return with depends on the hut level and their Strength level.  
+Once they have their tools & items, they will activate the nether portal and travel to the nether.  The nether is dangerous! They will fight mobs they encounter there, and it is possible for them to die on the trip. Their Adaptability skill will affect their survival chances. If they survive, they will return with loot. What they return with depends on the hut level and their Strength level.  
 
 The Nether Miner can also craft lava buckets.
 
