@@ -297,7 +297,7 @@ You can only have one sixth column research unlocked at a time!
 
 | Name | Prerequisites | Requirements | Effects |
 | ---- | ------------- | ------------ | ------- |
-| Honey Pot | Rainbow Heaven | Apiary at least level 3; 16 beehive | Beekeepers can harvest honeycomb and bottles at the same time |
+| Honey Pot | Rainbow Heaven | [Apiary](../../source/buildings/apiary) at least level 3; 16 beehive | Beekeepers can harvest honeycomb and bottles at the same time |
 | Compost | Dung | Mine level 5; 256 wheat seeds | Increases Farmers' output by 50% |
 | Capacity | Space | Mine at least level 4; 32 racks | Increases the number of items you can set as a minimum stock in the Warehouse, Restaurant, and Bakery GUIs by 100% |
 | Recipe Book | Cheat Sheet | Sawmill at least level 3; 128 paper | Increases the max amount of recipes stored in each hut by 100% |
