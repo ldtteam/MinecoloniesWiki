@@ -165,7 +165,7 @@ You can only have one sixth column research unlocked at a time!
 | Improved Swords | Tactic Training | Barracks at least level 3; 6 blocks of iron | Unlocks the [Combat Academy](../../source/buildings/combatacademy) |
 | Improved Bows | Tactic Training | Barracks at least level 3; 6 blocks of iron | Unlocks the [Archery](../../source/buildings/archery) |
 | Parry | Avoidance | [Smeltery](../../source/buildings/smeltery) at least level 1; 16 iron ingots | Increases Knights' armor by 5% |
-| Dodge | Avoidance | Smeltery at least level 1; 16 iron ingots | Increases Archers' armor by 5% |
+| Dodge | Avoidance | Smeltery at least level 1; 16 leather | Increases Archers' armor by 5% |
 | Boiled Leather | Improved Leather | Town Hall at least level 2; 64 leather | Increases Guards' armor's durability by 20% |
 | Regeneration | Improved Leather | Guard Tower at least level 2; 1 emerald | Lets Guards run away when they have low health (this can be turned off on the 2nd page of their tower's GUI) |
 | Consume Arrows | Taunt | Guard Tower at least level 2; 64 arrows | Archers will request arrows for their bows, and using them will give the Archers a damage boost of 1 heart. If they run out of arrows, they can still shoot, but without the damage boost |
