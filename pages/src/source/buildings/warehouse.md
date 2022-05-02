@@ -24,62 +24,21 @@ The level of the Warehouse will determine how many Couriers will be able to use 
 
 ## Warehouse GUI
 
-When accessing the Warehouse's hut block by right-clicking on it, you will see a GUI with different options:  
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui1.png" class="img-fluid mx-auto" alt="Warehouse GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      <li><strong>Build Options: </strong>Lets you create a build, upgrade, reposition, or repair build order for the Warehouse. To learn more about the building system, visit the <a href="../../source/workers/builder">Builder</a> page.</li><br>
-      <li><strong>Inventory: </strong>This is an inventory space where you can store anything you like. The Couriers don't deposit things here (they use the <a href="../../source/items/rack">racks</a> in the Warehouse instead).</li>
-    </ul>
-  </div>
-</div>  
+  <div class="col">
+    {% include contentblock/main-gui.html data=site.data.gui.warehouse header="When accessing the Warehouse hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/warehousegui1.png" %}
 
-This is page two of the Warehouse GUI.
+    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Workers</strong>." content="<ul>
+      <li><strong>Assigned Workers: </strong>A list of the <a href='../workers/courier'>Couriers</a> assigned to this Warehouse.</li>
+      <li><strong>Manage Workers: </strong>You can choose which Couriers to hire at the Warehouse. <b>Note:</b> this only works if you have turned the worker hiring mode in the <a href='../../source/buildings/townhall'> Town Hall</a> block to manual, otherwise your citizens will be hired automatically.</li>
+      <li><strong>Recall Workers: </strong>Recalls the Couriers at this Warehouse to the hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.</li>
+    </ul>" image="../../assets/images/gui/warehousegui2.png" %}
 
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui2.png" class="img-fluid mx-auto" alt="Warehouse GUI 2">
-  </div>
-  <div class="col-sm-12 col-md">
-	<br>
-    <ul>
-      <li><strong>Assigned Workers: </strong>A list of the <a href="../workers/courier">couriers</a> assigned to this warehouse.</li><br>
-      <li><strong>Manage Workers: </strong>You can choose which courier to hire at the warehouse.</li>
-    </ul>
+    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Minimum Stock</strong>." content="<strong>Add:</strong> Use this button to tell the Warehouse to request a minimum stock to keep on hand. If a worker requests an item that is set as the minimum stock, the minimum stock will be given to them but the Warehouse will request more if it no longer has enough. Set items will be displayed above the button." image="../../assets/images/gui/warehousegui3.png" %}
+
+    {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Storage</strong>." content="<ul>
+      <li><strong>Block of Emerald: </strong>You can increase the max amount of stacks in each rack by pressing this button. This can only be done when the Warehouse is at level 5 and you have at least one block of emerald in your inventory. The storage can be increased 3 times.</li><br>
+      <li><strong>Sort: </strong>The sort option is available when the Warehouse reaches level 3. It sorts and stacks all the items in the racks.</li>
+    </ul>" image="../../assets/images/gui/warehousegui4.png" %}
   </div>
 </div>
-    
-This is page three of the Warehouse GUI.
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui3.png" class="img-fluid mx-auto" alt="Warehouse GUI 3">
-  </div>
-  <div class="col-sm-12 col-md">
-	<br>
-    <ul>
-      <li><strong> Minimum Stock: </strong> Use this button to tell the Warehouse to request a minimum stock to keep on hand. If a worker requests an item that is set as the minimum stock, the minimum stock will be given to them but the Warehouse will request more if it no longer has enough. Set items will be displayed above the button.</li>
-    </ul>
-    </div>
-</div>	
-
-This is page four of the Warehouse GUI.
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/warehousegui4.png" class="img-fluid mx-auto" alt="Warehouse GUI 4">
-  </div>
-  <div class="col-sm-12 col-md">
-	<br>
-    <ul>
-      <li><strong>Block of Emerald: </strong>You can increase the max amount of stacks in each rack by pressing this button. This can only be done when the Warehouse is at level 5 and you have at least one block of emerald in your inventory. The storage can be increased 5 times.</li><br>
-      <li><strong>Sort: </strong>The sort option is available when the Warehouse reaches level 3. It sorts and stacks all the items in the racks.</li>
-    </ul>
-    </div>
-</div>	
-
