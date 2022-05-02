@@ -51,6 +51,11 @@ If you try to place another Town Hall outside of your protected area, you will g
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
+### Deleting a Colony
+
+To delete your colony, place a Town Hall outside your current colony border (either by mining or deconstructing your old Town Hall or by crafting a new one). Interacting with the newly placed Town Hall outside of the current borders will prompt you to delete your colony.
+Alternatively, if you have the proper permissions, you can use [commands](../../source/systems/command).
+
 ## Town Hall GUI
 
 <i>You can use the tabs on the left side to switch between different categories.</i>
