@@ -302,7 +302,7 @@ You can only have one sixth column research unlocked at a time!
 | Capacity | Space | Mine at least level 4; 32 racks | Increases the number of items you can set as a minimum stock in the Warehouse, Restaurant, and Bakery GUIs by 100% |
 | Recipe Book | Cheat Sheet | Sawmill at least level 3; 128 paper | Increases the max amount of recipes stored in each hut by 100% |
 | Deep Pockets | Cheat Sheet | Library at least level 4; 64 emeralds | Adds 9 slots to colonists' inventories |
-| Heavy Machinery | Redstone Powered | 256 redstone dust | Increases colonists' block breaking speed by 50% |
+| Heavy Machinery | Redstone Powered | 512 redstone dust | Increases colonists' block breaking speed by 50% |
 | Reinforced | Hardened | Blacksmith's Hut at least level 3; 32 diamonds | Increases colonists' tools' durability by 25% |
 | Rich Veins | Good Veins | Blacksmith's Hut at least level 4; 32 gold ore | Miner produces 50% more bonus ores |
 | Tools | Skills | Blacksmith's Hut at least level 4; 256 iron ingots | Increases colonists' block placing speed by 50% |
