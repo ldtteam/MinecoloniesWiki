@@ -33,16 +33,23 @@ The default materials that can be sifted are:
 
 However, you can change this in the [config file](../../source/misc/configfile). This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
-The Sifter can only sift a certain amount of materials per day, depending on their hut level.
+The Sifter can only sift a certain amount of materials per day, depending on their hut level. The higher the Sifter's Strength level, the faster they'll sift.
 
 | Hut Level | Daily Max |
 | --------- | --------- |
-| 1         | 16        |
-| 2         | 64        |
-| 3         | 144       |
-| 4         | 256       |
-| 5         | 999       |
+| 1         | 64        |
+| 2         | 256       |
+| 3         | 576       |
+| 4         | 1024      |
+| 5         | Unlimited |
 
-The Sifter can use 4 different meshes. The higher levels of meshes will find more items of better quality, as will a higher Focus level of the Sifter. The string mesh is the default option, however, if you want to use the flint, iron, or diamond meshes, they need to be purchased. The "buy" option will show up if you have flint, iron ingots, or diamonds in your inventory or if you are in Creative Mode.
+The Sifter can use 4 different meshes. The higher levels of meshes will find more items of better quality, as will a higher Focus level of the Sifter. Meshes are only made by other workers.
 
-The higher the Sifter's Strength level, the faster they'll sift.
+| Mesh    | Worker     |
+| ------- | ---------- |
+| String  | Fletcher   |
+| Flint   | Stonemason |
+| Iron    | Blacksmith |
+| Diamond | Mechanic   |
+
+**Note:** Meshes and blocks to be sifted must be added to the Minimum Stock tab in the Sifter's Hut in order for the Sifter to work.
