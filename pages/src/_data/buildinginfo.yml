@@ -16,7 +16,7 @@ archery:
   image: ../../assets/images/buildings/archery.png
   workers:
     - name: Archer in Training
-      value: archerintraining
+      value: archer
   recipes:
     - archery
 bakery:
@@ -147,7 +147,7 @@ combatacademy:
   image: ../../assets/images/buildings/combatacademy.png
   workers:
     - name: Knight in Training
-      value: knightintraining 
+      value: knight
   recipes:
     - combatacademy
 composter:
