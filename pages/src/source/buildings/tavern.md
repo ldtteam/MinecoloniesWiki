@@ -12,7 +12,7 @@ Upgrading the Tavern will garner more and better visitors.
 
 Recruiting used to be part of the [Town Hall](../../source/buildings/townhall) but has been moved here.
 
-<strong>Note:</strong> The Tavern can only be upgraded to level 3, not level 5. You can also only have 1 Tavern per colony.
+**Note:** The Tavern can only be upgraded to level 3, not level 5. You can also only have 1 Tavern per colony.
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html key="tavern" %}
@@ -21,19 +21,10 @@ Recruiting used to be part of the [Town Hall](../../source/buildings/townhall) b
 
 ## Tavern GUI
 
-When accessing the Tavern's hut block by right-clicking on it, you will see a GUI with different options:
-
 <div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/taverngui.png" class="img-fluid mx-auto" alt="Tavern Hut GUI">
+  <div class="col">
+    {% include contentblock/main-gui.html data=site.data.gui.citizen header="When accessing the Tavern hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/taverngui.png" %}
+
+    {% include contentblock/basic.html header="You reach this screen by clicking <strong>Manage Housing</strong> on the main tab." content="If the Tavern is filled, you will need to <strong>Unassign</strong> a citizen before being able to add new citizens. Each citizen will be listed, starting with the residents of the Tavern. Citizens will show their occupation, the distance from their work hut to the Tavern, and the distance from their work hut to their current house. If the second line is green, the Tavern is closer to their work hut. If it's yellow, it's farther. <br><br><strong>Building Assignment Mode</strong> allows you to override the Townhall's housing setting, for the Tavern only." image="../../assets/images/gui/housegui2.png" %}
   </div>
-  <div class="col-sm-12 col-md">
-    <br>
-    <ul>
-      {% for item in site.data.gui.citizen %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>  
-  
+</div>
