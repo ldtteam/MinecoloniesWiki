@@ -198,11 +198,11 @@ Alternatively, if you have the proper permissions, you can use [commands](../../
             <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
             <div class="col-sm-12 col-md">
 			<img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
-			</div>
-		</ul>
+	    </div><br>
+	    <li><strong>Pick Citizen Style:</strong> The option controls how the citizens look. This feature is exclusive for donators.</li>
+	</ul>
   </div>
 </div>
-<br>
 <br>
 
 ### <strong>Work Orders: </strong>Here you will see the work orders your <a href="../../source/workers/builder"> Builders</a> have in the order they have been assigned. Builders will not start another order until they have successfully completed the top one.
