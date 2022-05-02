@@ -2,7 +2,7 @@
 title: Druid
 layout: default
 ---
-# Druid ([Guard](guard))
+# Druid
 
 {% capture content %}
 Druids are support guards that help their fellow guards. As long as you provide a Druid with potions, they will protect your colony day and night.

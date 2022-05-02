@@ -2,7 +2,7 @@
 title: Archer
 layout: default
 ---
-# Archer ([Guard](guard))
+# Archer
 
 {% capture content %}
 Archers are ranged guards that protect your colony. As long as you provide an Archer with a bow, they will protect your colony day and night. 

@@ -2,7 +2,7 @@
 title: Knight
 layout: default
 ---
-# Knight ([Guard](guard))
+# Knight
 
 {% capture content %}
 Knights are melee guards that protect your colony. As long as you provide a Knight with a sword, they will protect your colony day and night.
