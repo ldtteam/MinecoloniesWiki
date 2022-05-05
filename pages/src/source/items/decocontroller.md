@@ -9,7 +9,7 @@ layout: default
 </div>
 <br>
 
-The decoration controller is used to create custom [Schematics](../../tutorials/schematics). See the Schematics page for how they're used.
+The decoration controller is used to create custom [Schematics](../../tutorials/schematics). See the Schematics page for how it's used.
 
 The decoration controller is only available through creatively giving it to yourself. It cannot be crafted.
 
