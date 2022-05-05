@@ -58,7 +58,7 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 | [Library Student](../workers/librarystudent) | Intelligence | No Secondary | Affects leveling speed of other skills |
 | [Mechanic](../workers/mechanic) | Knowledge | Agility | Increases chance of decreasing materials needed | Faster crafting |
 | [Miner](../workers/miner) | Strength | Stamina | Faster block breaking | Faster block placing |
-| [Nether Miner](../workers/netherminer) | Adaptability | Strength | Chance of getting loot (tentative?) | Survivability (tentative?) |
+| [Nether Miner](../workers/netherminer) | Adaptability | Strength | Survivability | Chance and quality of loot |
 | [Planter](../workers/planter) | Agility | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
 | [Pupil](../workers/pupil) | Knowledge | Mana |
 | [Quarrier](../workers/quarrier) | Strength | Stamina | Faster block breaking | Faster block placing |
