@@ -132,7 +132,7 @@ Alternatively, if you have the proper permissions, you can use [commands](../../
     <ul>
       <li><strong>Page 3: </strong>Here you can select the rank that you would like to manage.</li>
       <br>
-      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want. <b>Note:</b> the Fight Guards permission causes <a href="../../source/workers/guard"> Guards</a> to treat the player as an enemy and attack them. It is only recommended for Hostile players.</li> 
+      <li><strong>Page 4: </strong>Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle <i>ON</i> or <i>OFF</i>, giving each rank the permission you want. <b>Note:</b> the Fight Guards permission causes Guards to treat the player as an enemy and attack them. It is only recommended for Hostile players.</li> 
     </ul>
   </div>
 </div>  
@@ -195,7 +195,7 @@ Alternatively, if you have the proper permissions, you can use [commands](../../
         <ul>
             <li><strong>Pick Team Color: </strong>Whatever color you pick from here, your Guards will have a glow of this color around them when you put them in follow mode at their <a href="../../source/buildings/guardtower"> Guard Tower</a> or <a href="../../source/buildings/barrackstower"> Barracks Tower</a>. This is for the PVP system, so you know which Guards are yours when you are fighting. Your citizens' names will also be in this color.</li>
 			<br>
-            <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/guard"> Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
+            <li><strong>Edit Colony Flag: </strong>Clicking this button will open up a banner designer where you can design your colony banner. Your <a href="../../source/workers/knight">Knights</a> will wear the finished design on their shields, and it is also used in some schematics.</li>
             <div class="col-sm-12 col-md">
 			<img src="../../assets/images/gui/th_colonybannerdesigner.png" class="img-fluid mx-auto" alt="TH GUI Banner Designer">
 	    </div><br>
