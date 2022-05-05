@@ -203,7 +203,7 @@ While Item Tags determine the recipes that workers can be taught, colonists can 
 
 On existing worlds, removing a Crafter Recipe through data packs will automatically remove it from existed constructed buildings that have learned it.
 
-For example crafter recipes, and their canonical names, see GitHub [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/crafterrecipes) and [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/crafterrecipes).
+For example crafter recipes, and their canonical names, see GitHub [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/crafterrecipes) and [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/crafterrecipes).
 
 ## Player Recipes
 
@@ -211,11 +211,11 @@ For example crafter recipes, and their canonical names, see GitHub [here](https:
 
 ## Loot Tables
 
-**Loot Tables** control a variety of item drop behaviors, and can be used to add randomized chance to Crafter Recipes. They are loaded from <code>loot_tables</code>. See the [Official Wiki](https://Minecraft.fandom.com/wiki/Loot_table) for technical details, and the [GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/loot_tables) for [some](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/loot_tables) MineColonies default loot tables.
+**Loot Tables** control a variety of item drop behaviors, and can be used to add randomized chance to Crafter Recipes. They are loaded from <code>loot_tables</code>. See the [Official Wiki](https://Minecraft.fandom.com/wiki/Loot_table) for technical details, and the GitHub for some MineColonies default loot tables [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/loot_tables) and [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/loot_tables).
 
 ## Research Customization
 
-The [Research System](../../source/systems/research) used by the [University](../../source/buildings/university) can be lightly tweaked or heavily modified through the use of data packs in MineColonies versions 0.14.0 or higher. For the default research data and example files, see [the GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/generated/resources/data/minecolonies/researches). Researches consist of three components: the branch that contains the research, the research itself, and the research effect.
+The [Research System](../../source/systems/research) used by the [University](../../source/buildings/university) can be lightly tweaked or heavily modified through the use of data packs in MineColonies versions 0.14.0 or higher. For the default research data and example files, see [the GitHub](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/researches). Researches consist of three components: the branch that contains the research, the research itself, and the research effect.
 
 ### Branches
 
