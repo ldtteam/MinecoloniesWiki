@@ -30,7 +30,7 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 
 | Worker | Primary Skill | Secondary Skill | Primary Skill Effect | Secondary Skill Effect |
 | ------ | ------------- | --------------- | -------------------- | ---------------------- |
-| [Archer in Training](../workers/archerintraining) | Agility | Adaptability |
+| [Archer](../workers/archer) | Agility | Adaptability |
 | [Baker](../workers/baker) | Knowledge | Dexterity | Increases chance of decreasing materials needed | Faster crafting and smelting |
 | [Beekeeper](../workers/beekeeper) | Dexterity | Adaptability | Determines chance of *beeing* stung | Affects wait time between checking hives |
 | [Blacksmith](../workers/blacksmith) | Strength | Focus | Faster crafting | Increases chance of decreasing materials needed |
@@ -44,7 +44,7 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 | [Courier](../workers/courier) | Agility | Adaptability | Faster run speed | More huts visited on each trip |
 | [Cowhand](../workers/cowhand) | Athletics | Stamina | More damage per attack | Cows grow up faster |
 | [Crusher](../workers/crusher) | Stamina | Strength | Decreases chance of sickness | Faster work speed |
-| [Druid](../workers/guard) | Mana | Focus | Increases potion duration | Increases throwing accuracy |
+| [Druid](../workers/druid) | Mana | Focus | Increases potion duration | Increases throwing accuracy |
 | [Dyer](../workers/dyer) | Creativity | Dexterity | Increases chance of decreasing materials needed | Faster crafting |
 | [Enchanter](../workers/enchanter) | Mana | Knowledge | More XP collected per trip | Higher level of enchanted books |
 | [Farmer](../workers/farmer) | Stamina | Athletics | Less time cycling between planting and harvesting | Faster planting and harvesting |
@@ -53,10 +53,8 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 | [Florist](../workers/florist) | Dexterity | Agility | Greater chance to successfully harvest flowers | Decreases flower growth time |
 | [Forester](../workers/forester) | Strength | Focus | Faster log breaking | Faster walking |
 | [Glassblower](../workers/glassblower) | Creativity | Focus | Increases chance of decreasing materials needed | Faster crafting |
-| [Guard (Archer)](../workers/guard) | Agility | Adaptability | More damage | Greater range |
-| [Guard (Knight)](../workers/guard) | Adaptability | Stamina | Faster attack speed | More health |
 | [Healer](../workers/healer) | Mana | Knowledge | Faster walking between beds | Increases chance of decreasing materials needed |
-| [Knight in Training](../workers/knightintraining) | Adaptability | Stamina |
+| [Knight](../workers/knight) | Adaptability | Stamina |
 | [Library Student](../workers/librarystudent) | Intelligence | No Secondary | Affects leveling speed of other skills |
 | [Mechanic](../workers/mechanic) | Knowledge | Agility | Increases chance of decreasing materials needed | Faster crafting |
 | [Miner](../workers/miner) | Strength | Stamina | Faster block breaking | Faster block placing |
@@ -105,7 +103,7 @@ Modded fishing rods with higher durability may require a higher Work Hut level.
 
 ## Guard Armor Levels
 
-There is also a system in place for the type of armor [Guards](../../source/workers/guard) can use. This depends on the level of their Tower.
+There is also a system in place for the type of armor Guards can use. This depends on the level of their Tower.
 
 | Tower Level   | Max Armor Damage Reduction |
 | ------------- | -------------------------- |

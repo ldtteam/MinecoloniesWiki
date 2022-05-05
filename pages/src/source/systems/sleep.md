@@ -18,7 +18,7 @@ Each colony can have only one Tavern by default. The Tavern will provide 4 beds.
 
 Each colony can have as many Houses as you'd like. Each House will provide one bed per level; i.e., a level 4 House will provide 4 beds, and a level 1 House will provide 1 bed. The House level also restricts colonist skill caps.
 
-[Guard Towers](../../source/buildings/guardtower) provide 1 bed for a [Guard](../../source/workers/guard), while [Barracks](../../source/buildings/barracks) provide housing for many Guards. See those pages for more details.
+[Guard Towers](../../source/buildings/guardtower) provide 1 bed for a Guard, while [Barracks](../../source/buildings/barracks) provide housing for many Guards. See those pages for more details.
 
 Colonists don't like to commute too far, whether by rail or by foot. If they're over 100 blocks from their work hut, they'll complain that they're living too far from work. If you see this, have them switch bed with someone else!
 

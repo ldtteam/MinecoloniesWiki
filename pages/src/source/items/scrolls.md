@@ -42,7 +42,7 @@ This scroll applies the regeneration effect to you and any citizens near you. It
 
 ## Spatial Guard Reinforcements Scroll
 
-Calls [Guards](../../source/workers/guard) to you for a limited time. Like the [Rallying Banner](../../source/items/rallyingbanner), but can only summon one tower of Guards at a time and has a finite time period. Must be registered to your Town Hall and to a [Guard](../../source/buildings/guardtower)/[Barracks Tower](../../source/buildings/barrackstower) (register it by shift + right-clicking on the hut block).
+Calls Guards to you for a limited time. Like the [Rallying Banner](../../source/items/rallyingbanner), but can only summon one tower of Guards at a time and has a finite time period. Must be registered to your Town Hall and to a [Guard Tower](../../source/buildings/guardtower)/[Barracks Tower](../../source/buildings/barrackstower) (register it by shift + right-clicking on the hut block).
 
 This scroll is crafted by the Enchanter with 1 Ultrasafe Colony Teleport Scroll, 5 lapis lazuli, 1 ender pearl, and 1 paper. For the Enchanter to unlock this recipe, you must have the More Scrolls [research](../../source/systems/research) completed.
 

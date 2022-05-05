@@ -5,39 +5,39 @@ layout: default
 # Barracks Tower
 
 {% capture content %}
-The Barracks Towers will employ and house 1 [Guard](../../source/workers/guard) for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
+The Barracks Towers will employ and house one Guard for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 
 | Barracks Tower Level | Max # of Guards |
-| :----: | :----: |
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 3 |
-| 4 | 4 |
-| 5 | 5 |
+| :------------------: | :-------------: |
+|          1           |        1        |
+|          2           |        2        |
+|          3           |        3        |
+|          4           |        4        |
+|          5           |        5        |
 
 
 The Barracks Tower locations are predetermined by the [Barracks](../../source/buildings/barracks) that you choose. They are placed in specific locations to fit within the Barracks. 
 
 
 | Barracks Level | Max # of Barracks Towers | Max Level of Barracks Towers |
-| :----: | :----: | :----: |
-| 1 | 1 | 1 |
-| 2 | 2 | 2 |
-| 3 | 3 | 3 |
-| 4 | 4 | 4 |
-| 5 | 4 | 5 |
+| :------------: | :----------------------: | :--------------------------: |
+|       1        |            1             |              1               |
+|       2        |            2             |              2               |
+|       3        |            3             |              3               |
+|       4        |            4             |              4               |
+|       5        |            4             |              5               |
 
 
 Guard(s) will patrol a set distance around their tower, which is based on their tower's level.
 
 | Tower Level | Max Patrol Distance |
 | ----------- | ------------------- |
-| 1 | 80 blocks |
-| 2 | 110 blocks |
-| 3 | 140 blocks |
-| 4 | 170 blocks |
-| 5 | 200 blocks |
+| 1           | 80 blocks           |
+| 2           | 110 blocks          |
+| 3           | 140 blocks          |
+| 4           | 170 blocks          |
+| 5           | 200 blocks          |
 
 <strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
 

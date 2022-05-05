@@ -1,0 +1,64 @@
+{% assign key = include.key | strip | default: "" %}
+{% if key != "" %}
+    {% assign worker = site.data.workerinfo[key] %}
+    {% assign images = "" | split: "" %}
+    {% assign blocks = "" | split: "" %}
+
+    {% capture worker_image_male %}
+        <img src="../../assets/images/workers/{{ worker.images.male }}" alt="{{ worker.name }} Male"/>
+    {% endcapture %}
+    {% capture worker_image_female %}
+        <img src="../../assets/images/workers/{{ worker.images.female }}" alt="{{ worker.name }} Female"/>
+    {% endcapture %}
+    {% assign images = images | push: worker_image_male %}
+    {% assign images = images | push: worker_image_female %}
+
+    {% capture infoblock %}
+        <div class="row text-left">
+            <div class="col">
+                <p>
+                    <strong>Primary Trait:</strong>
+                </p>
+            </div>
+            <div class="col">
+                <p class="traitp">{{ worker.traits.primary }}</p>
+            </div>
+        </div>
+        <div class="row text-left">
+            <div class="col">
+                <p>
+                    <strong>Secondary Trait:</strong>
+                </p>
+            </div>
+            <div class="col">
+                <p class="traits">{{ worker.traits.secondary }}</p>
+            </div>
+        </div>
+        <div class="row text-left">
+            <div class="col">
+                <p>
+                    <strong>Building:</strong>
+                </p>
+            </div>
+            <div class="col">
+                {% for building in worker.buildings %}
+                    {% assign building_key = building %}
+                    {% assign building_name = building | capitalize %}
+                    {% if building.key != null %}
+                        {% assign building_key = building.key %}
+                        {% assign building_name = building.key | capitalize %}
+                    {% endif %}
+                    {% if building.name != null %}
+                        {% assign building_name = building.name %}
+                    {% endif %}
+                    <p class="mb-1">
+                        <a href="../buildings/{{ building_key }}">{{ building_name }}</a>
+                    </p>
+                {% endfor %}
+            </div>
+        </div>
+    {% endcapture %}
+    {% assign blocks = blocks | push: infoblock %}
+
+    {% include infobox/reuse/core.html title=worker.name images=images blocks=blocks %}
+{% endif %}

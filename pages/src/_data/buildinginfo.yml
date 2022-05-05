@@ -16,7 +16,7 @@ archery:
   image: ../../assets/images/buildings/archery.png
   workers:
     - name: Archer in Training
-      value: archerintraining
+      value: archer
   recipes:
     - archery
 bakery:
@@ -39,16 +39,24 @@ barracks:
   name: Barracks
   image: ../../assets/images/buildings/barracks.png
   workers:
-    - name: Guard
-      value: guard
+    - name: Archer
+      value: archer
+    - name: Druid
+      value: druid
+    - name: Knight
+      value: knight
   recipes:
     - barracks
 barrackstower:
   name: Barracks Tower
   image: ../../assets/images/buildings/barrackstower.png
   workers:
-    - name: Guard
-      value: guard
+    - name: Archer
+      value: archer
+    - name: Druid
+      value: druid
+    - name: Knight
+      value: knight
   settings:
     - name: Task
       description: This is where you can choose if you want the Guard to patrol, follow, or guard.
@@ -139,7 +147,7 @@ combatacademy:
   image: ../../assets/images/buildings/combatacademy.png
   workers:
     - name: Knight in Training
-      value: knightintraining 
+      value: knight
   recipes:
     - combatacademy
 composter:
@@ -335,8 +343,12 @@ guardtower:
   name: Guard tower
   image: ../../assets/images/buildings/guardtower.png
   workers:
-    - name: Guard
-      value: guard
+    - name: Archer
+      value: archer
+    - name: Druid
+      value: druid
+    - name: Knight
+      value: knight
   recipes:
     - guardtower
   settings:
