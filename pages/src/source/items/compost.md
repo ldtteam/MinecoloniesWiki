@@ -15,6 +15,6 @@ There are two types of compost. There is composted dirt which is used in the [Fl
 
 ## Using Compost
 
-The [Composter](../../source/workers/composter) uses a [compost barrel](../../source/items/compostbarrel) to create compost (the item). It works like bone meal to increase the speed of plant growth. The Florist must have compost to grow flowers. The Farmer does not need compost or bone meal to work, but prefers it (this is toggleable in the [Farm](../../source/buildings/farm&field) GUI).
+The [Composter](../../source/workers/composter) uses a [compost barrel](../../source/items/compostbarrel) to create compost (the item). It works like bone meal to increase the speed of plant growth. The Florist must have compost to grow flowers. The Farmer does not need compost or bone meal to work, but prefers it (this is toggleable in the [Farm](../../source/buildings/farm) GUI).
 
 Composted dirt can be crafted by the Farmer. It is used in the Flower Shop schematics.

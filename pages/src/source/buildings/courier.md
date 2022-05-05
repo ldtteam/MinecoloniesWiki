@@ -1,9 +1,8 @@
 ---
-title: Courier's Hut
-layout: default
+type: building
+building: courier
+layout: building
 ---
-# Courier's Hut
-
 {% capture content %}
 The Courier runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. Each Courier needs their own hut, and you can have up to 10 Couriers per Warehouse, depending on the Warehouse's level (2 per Warehouse level).
 
@@ -25,18 +24,13 @@ The greater a Courier's Agility skill, the faster they'll run. The greater their
 **Note:** If you have multiple Warehouses, Couriers will only see the items in the Warehouse they are assigned to.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="courier" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
-
 ## Courier's Hut GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html header="When accessing the Courier's Hut block by right-clicking on it, you will see a GUI with different options. You start on
-    the main tab:" image="../../assets/images/gui/couriergui1.png" %}
+{% include contentblock/building/main-gui.html header="When accessing the Courier's Hut block by right-clicking on it, you will see a GUI with different options. You start on
+the main tab:" image="../../assets/images/gui/couriergui1.png" %}
 
-    {% include contentblock/basic.html header="The second tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/couriergui2.png" %}
-  </div>
-</div>
+{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/couriergui2.png" %}

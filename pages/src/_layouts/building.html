@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% capture title %}
+    {% include functions/title.html %}
+{% endcapture %}
+{% assign title = title | strip %}
+{{ "# " | append: title | markdownify }}
+
+{{ content }}

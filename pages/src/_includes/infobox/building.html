@@ -1,11 +1,11 @@
-{% assign key = include.key | strip | default: "" %}
+{% assign key = page.building | strip | default: "" %}
 {% if key != "" %}
     {% assign building = site.data.buildinginfo[key] %}
     {% assign images = "" | split: "" %}
     {% assign blocks = "" | split: "" %}
 
     {% capture building_image %}
-        <img src="{{ building.image }}" alt="{{ building.name }}"/>
+        <img src="../../assets/images/buildings/{{ key }}.png" alt="{{ building.name }}"/>
     {% endcapture %}
     {% assign images = images | push: building_image %}
 
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col">
                         <p>
-                            <a href="../workers/{{ worker.value }}">{{ worker.name }}</a>
+                            <a href="../workers/{{ worker }}">{{ site.data.workerinfo[worker].name }}</a>
                         </p>
                     </div>
                 </div>

@@ -1,26 +1,9 @@
 ---
-title: Sifter
-layout: default
+type: worker
+worker: sifter
+layout: worker
 ---
-# Sifter
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/smelter_m.png" alt="Sifter Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Sifter Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Focus</p>
-      <p class="traits">Strength</p>
-      <p><a href="../buildings/sifter">Sifter's Hut</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Sifter is a part of your colony's production line. The Sifter will sift through materials to find hidden ores, seeds, and other useful items and ingredients. When they do this, the materials they are sifting will disappear.
 
 The default materials that can be sifted are:
@@ -53,3 +36,8 @@ The Sifter can use 4 different meshes. The higher levels of meshes will find mor
 | Diamond | Mechanic   |
 
 **Note:** Meshes and blocks to be sifted must be added to the Minimum Stock tab in the Sifter's Hut in order for the Sifter to work.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

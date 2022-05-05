@@ -1,9 +1,8 @@
 ---
-title: Combat Academy
-layout: default
+type: building
+building: combatacademy
+layout: building
 ---
-# Combat Academy
-
 {% capture content %}
 ### Note: The Combat Academy cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../../source/buildings/university) .
 <br> 
@@ -25,18 +24,12 @@ The Knights in Training require a sword and shield to practice. They will attack
 The Knights in Training are not actual Guards even though they will be dressed as Knight Guards. They will not help defend the colony.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="combatacademy" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Combat Academy GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html header="When accessing the Combat Academy hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/combatacademygui.png" %}
+{% include contentblock/building/main-gui.html header="When accessing the Combat Academy hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/combatacademygui.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Combat Academy" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
-
-  </div>
-</div>
-
+{% include contentblock/building/stock-gui.html buildingname="Combat Academy" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}

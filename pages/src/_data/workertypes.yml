@@ -1,0 +1,4 @@
+guard:
+  name: Guards
+default:
+  name: Workers

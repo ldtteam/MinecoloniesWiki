@@ -14,20 +14,40 @@ It also includes specialized buildings such as the [Warehouse](../../source/buil
 
 ### Please note that the wiki is a work in progress and will usually refer to the latest 1.16.5 and&#47;or 1.18.1 alpha version of MineColonies!
 
----
+<hr />
 
 <div class="row">
 {% for item in site.data.subnav.subnav %}
     <div class="col-lg col-md-3 col-sm-12 text-center">
         <h3 class="button p-1">{{ item.title }}</h3>
-        {% for entry in item.subitems %}
-            <a class="" href="{{ entry.url | relative_url }}">{{ entry.page }}</a><br />
-        {% endfor %}
+        {% case item.type %}
+            {% when "buildings" %}
+                {% for entry in site.data.buildinginfo %}
+                    {% assign key = entry[0] %}
+                    {% include functions/building_url.html key=key %}<br />
+                {% endfor %}
+            {% when "workers" %}
+                {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
+                {% for group in grouped %}
+                    {% unless forloop.first %}
+                        <br/>
+                    {% endunless %}
+                    <span>{{ site.data.workertypes[group.name].name }}</span><br/>
+                    {% for entry in group.items %}
+                        {% assign key = entry[0] %}
+                        {% include functions/worker_url.html key=key %}<br />
+                    {% endfor %}
+                {% endfor %}
+            {% else %}
+                {% for entry in item.subitems %}
+                    <a href="{{ entry.url | relative_url }}">{{ entry.page }}</a><br />
+                {% endfor %}
+        {% endcase %}
     </div>
 {% endfor %}
 </div>
 
----
+<hr />
 
 MineColonies is a free and open-source mod developed by Let's Dev Together (LDT), a non-profit community. The source code is available on [GitHub](https://github.com/ldtteam/minecolonies). Our developers are a hard-working, well-integrated coding team, continuously adding more content to make the MineColonies experience even greater. However, we are always looking for more people to contribute to the mod, whether as a coder, builder, artist, voice actor, wiki editor, tester, or simply supporting us on [Patreon](https://www.patreon.com/minecolonies)!
 

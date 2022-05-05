@@ -1,9 +1,8 @@
 ---
-title: Tavern
-layout: default
+type: building
+building: tavern
+layout: building
 ---
-# Tavern
-
 {% capture content %}
 The Tavern is like a [House](../../source/buildings/house) in that it houses citizens, however, the Tavern houses four instead of one and can't be upgraded to house more.
 
@@ -15,16 +14,12 @@ Recruiting used to be part of the [Town Hall](../../source/buildings/townhall) b
 **Note:** The Tavern can only be upgraded to level 3, not level 5. You can also only have 1 Tavern per colony.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="tavern" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Tavern GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html data=site.data.gui.citizen header="When accessing the Tavern hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/taverngui.png" %}
+{% include contentblock/building/main-gui.html data=site.data.gui.citizen header="When accessing the Tavern hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/taverngui.png" %}
 
-    {% include contentblock/basic.html header="You reach this screen by clicking <strong>Manage Housing</strong> on the main tab." content="If the Tavern is filled, you will need to <strong>Unassign</strong> a citizen before being able to add new citizens. Each citizen will be listed, starting with the residents of the Tavern. Citizens will show their occupation, the distance from their work hut to the Tavern, and the distance from their work hut to their current house. If the second line is green, the Tavern is closer to their work hut. If it's yellow, it's farther. <br><br><strong>Building Assignment Mode</strong> allows you to override the Townhall's housing setting, for the Tavern only." image="../../assets/images/gui/housegui2.png" %}
-  </div>
-</div>
+{% include contentblock/building/other-gui.html header="You reach this screen by clicking <strong>Manage Housing</strong> on the main tab." content="If the Tavern is filled, you will need to <strong>Unassign</strong> a citizen before being able to add new citizens. Each citizen will be listed, starting with the residents of the Tavern. Citizens will show their occupation, the distance from their work hut to the Tavern, and the distance from their work hut to their current house. If the second line is green, the Tavern is closer to their work hut. If it's yellow, it's farther. <br><br><strong>Building Assignment Mode</strong> allows you to override the Townhall's housing setting, for the Tavern only." image="../../assets/images/gui/housegui2.png" %}

@@ -1,9 +1,8 @@
 ---
-title: Blacksmith
-layout: default
+type: worker
+worker: blacksmith
+layout: worker
 ---
-# Blacksmith
-
 {% capture content %}
 The Blacksmith is a part of your colony's production line. The Blacksmith will craft tools, swords, and armor to supply workers with items. (However, they do not craft bows or fishing poles.)
 
@@ -26,6 +25,6 @@ All crafters have a chance to decrease the amount of materials needed for a taug
 When a colonist is requesting a tool from the Blacksmith with multiple accepted levels, the Blacksmith will craft whichever tool type is highest in their list of recipes that they have the materials for (when you teach them a new recipe, it'll go on the bottom).
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="blacksmith" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}

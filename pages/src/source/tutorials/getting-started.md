@@ -44,7 +44,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
 
 ### Step 5: Food
   
-  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisher's Hut](../../source/buildings/fisher). You could build a [Farm](../../source/buildings/farm&field) or one of the animal herders, but a Fisher is faster. Building a [Restaurant](../../source/buildings/restaurant) may also be advisable if you don't want to feed your colonists (or cook their food) by hand.
+  The next major thing you need for your colony is food. The fastest way to get food is to build a [Fisher's Hut](../../source/buildings/fisher). You could build a [Farm](../../source/buildings/farm) or one of the animal herders, but a Fisher is faster. Building a [Restaurant](../../source/buildings/restaurant) may also be advisable if you don't want to feed your colonists (or cook their food) by hand.
 
 ### Step 6: Forester
   
@@ -355,7 +355,7 @@ Once the Builder has finished their hut, you're ready to start building any othe
 
 You have now completed the most important steps to start and create your colony!
 
-Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Forester's Hut](../../source/buildings/forester), [Farm](../../source/buildings/farm&field), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant), and more are probably good places to start. 
+Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Forester's Hut](../../source/buildings/forester), [Farm](../../source/buildings/farm), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant), and more are probably good places to start. 
 
 But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [House](../../source/buildings/house). This will give you additional citizens for each level of a House you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Foresters, Builders, Farmers, Fishers, and many more! 
 

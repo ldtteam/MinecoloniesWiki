@@ -1,26 +1,9 @@
 ---
-title: Builder
-layout: default
+type: worker
+worker: builder
+layout: worker
 ---
-# Builder
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/builder_m.png" alt="Builder Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/builder_f.png" alt="Builder Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Adaptability</p>
-      <p class="traits">Athletics</p>
-      <p><a href="../buildings/builder">Builder's Hut</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Builder is the **MOST** important worker in your colony. As long as you provide the Builder with all the resources they ask for, they will build and upgrade all of your town buildings, workers' huts, decorations, and your personal schematics.
 
 ## Building A Hut/Schematic
@@ -40,40 +23,18 @@ If a build request is created but no Builder starts building, the building may b
 If the build order is within their range and they still aren't building it, check if you've set them to Manual on the third page of their hut GUI. If you have, you'll need to choose build orders for them yourself (also in the third page of their hut GUI).
 
 The higher a Builder's Adaptability skill, the faster they'll place blocks. Similarly, the higher their Athletics skill, the faster they'll break blocks.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Build Options Details
 
-### Before Hut is Built
+### Before Hut is built
 
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/newbuild.png" class="img-fluid mx-auto" alt="New Build GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-      <ul><strong>Style (top left): </strong> Here you can verify the style of schematics you have currently. You can change the style to see the list of items required for other styles, but it's not recommended that you change a different style from here since it will most likely be in a different position (since each schematic is different).</ul>
-      <ul><strong>Builder: </strong> Here is where you can choose what Builder you want on the project. If it is out of your Builders' range, this is where you can manually assign one.</ul>
-      <ul><strong>List: </strong>This is the list of resources that the Builder will need for the schematic style selected.</ul>
-       <ul><strong>Repair: </strong> Not needed, as the building hasn't been built yet.</ul>
-      <ul><strong>Build Building: </strong>This is where you tell the Builder to build the building with the style selected.</ul>
-    </ul>
-  </div>
- </div>
+{% include contentblock/basic-gui-button-list.html items=site.data.gui.build.new image="../../assets/images/gui/newbuild.png" alt="New build GUI" %}
 
+### After Hut is built
 
-### After Hut is Built
-
-<div class="row">
-  <div class="col-sm-12 col-md">
-    <img src="../../assets/images/gui/upgradebuild.png" class="img-fluid mx-auto" alt="Upgrade Building GUI">
-  </div>
-  <div class="col-sm-12 col-md">
-    <ul>
-       <ul>
-      {% for item in site.data.gui.build %}
-        <li><strong>{{ item.button }}:</strong> {{ item.content }}</li>
-      {% endfor %}
-    </ul>
-    </ul>
-  </div>
-</div>
+{% include contentblock/basic-gui-button-list.html items=site.data.gui.build.upgrade image="../../assets/images/gui/upgradebuild.png" alt="Upgrade build GUI" %}
