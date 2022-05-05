@@ -60,7 +60,7 @@ baker:
     primary: Knowledge
     secondary: Dexterity
   buildings:
-    - baker
+    - bakery
 beekeeper:
   name: Beekeeper
   images:
