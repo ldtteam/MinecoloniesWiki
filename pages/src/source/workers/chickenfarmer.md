@@ -4,22 +4,23 @@ worker: chickenfarmer
 layout: worker
 ---
 {% capture content %}
-The Carpenter is a part of your colony's production line. The Carpenter can learn 3x3 recipes made of at least 75% wood that do not include ingots, stone, redstone (or produce a redstone signal), or string. The Carpenter will also craft a few other items, including [cactus planks](../../source/items/cactusplanks), [shingles](../../source/items/shingles), [timber frames](../../source/items/timberframes), [compost barrels](../../source/items/compostbarrel), and [racks](../../source/items/rack). The Carpenter will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials. 
+The Chicken Farmer is a crucial part of your colony's food production needs. They will also provide you with all drops and byproducts like eggs and feathers. The Chicken Farmer will breed and butcher chickens for you as long as you provide them with seeds and an axe.
 
-**Note:** The Carpenter can only learn a set number of recipes based on their hut level. So:
+**NOTE:** The Chicken Farmer will not catch and bring in any chickens, only breed and butcher the ones in their hut area, so make sure you provide them with at least 2 initial chickens.
 
-| Hut Level | Recipes |
-| --------- | ------- |
-| 1         | 10      |
-| 2         | 20      |
-| 3         | 40      |
-| 4         | 80      |
-| 5         | 160     |
+The Chicken Farmer will work with vanilla Minecraft chickens, but might work with some chickens from other mods as long as they are *coded* as chickens and have normal breeding behavior. They will collect anything that is modified by another mod as well, so if another mod changes the drops (for example) to include bones or another type of meat, the Chicken Farmer will collect these as well.
 
+**Note:** The Chicken Farmer will only keep alive 2 chickens per hut level, so when their hut is level 5 they will have 10 chickens in their holding pens to breed and butcher. This means they will produce meats and byproducts faster.
 
-All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Carpenter's Knowledge level is, the greater their chance to decrease the amount of materials needed.
+| Hut Level | Chickens Housed |
+| --------- | --------------- |
+| 1         | 2               |
+| 2         | 4               |
+| 3         | 6               |
+| 4         | 8               |
+| 5         | 10              |
 
-The higher a Carpenter's Dexterity level is, the faster they'll craft.
+The higher a Chicken Farmer's Adaptability level is, the greater their chance to pick up eggs/meat/feathers. Similarly, the greater their Agility level, the higher their chance to successfully hit a chicken (if they miss, they'll keep trying until the chicken dies).
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/worker.html %}
