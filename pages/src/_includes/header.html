@@ -40,15 +40,29 @@
             <li class="sidenav-item dropdown">
                 <a class="sidenav-link dropdown-toggle" id="{{ item.title }}DropdownSidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">{{ item.title }}</a>
                 <div class="dropdown-menu" aria-labelledby="{{ item.title }}DropdownSidenav">
-                    {% for entry in item.subitems %}
-                        {% if entry.type == "separator" %}
-                            <div class="dropdown-divider"></div>
-                        {% elsif entry.type == "header" %}
-                            <h6 class="dropdown-header">{{ entry.header }}</h6>
+                    {% case item.type %}
+                        {% when "buildings" %}
+                            {% for entry in site.data.buildinginfo %}
+                                {% assign key = entry[0] %}
+                                {% include functions/building_url.html key=key class="dropdown-item" %}
+                            {% endfor %}
+                        {% when "workers" %}
+                            {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
+                            {% for group in grouped %}
+                                {% unless forloop.first %}
+                                    <div class="dropdown-divider"></div>
+                                {% endunless %}
+                                <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
+                                {% for entry in group.items %}
+                                    {% assign key = entry[0] %}
+                                    {% include functions/worker_url.html key=key class="dropdown-item" %}
+                                {% endfor %}
+                            {% endfor %}
                         {% else %}
-                            <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-                        {% endif %}
-                    {% endfor %}
+                            {% for entry in item.subitems %}
+                                <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                            {% endfor %}
+                    {% endcase %}
                 </div>
             </li>
         {% endfor %}
@@ -171,15 +185,29 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
                         <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
-                            {% for entry in item.subitems %}
-                                {% if entry.type == "separator" %}
-                                    <div class="dropdown-divider"></div>
-                                {% elsif entry.type == "header" %}
-                                    <h6 class="dropdown-header">{{ entry.header }}</h6>
+                            {% case item.type %}
+                                {% when "buildings" %}
+                                    {% for entry in site.data.buildinginfo %}
+                                        {% assign key = entry[0] %}
+                                        {% include functions/building_url.html key=key class="dropdown-item" %}
+                                    {% endfor %}
+                                {% when "workers" %}
+                                    {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
+                                    {% for group in grouped %}
+                                        {% unless forloop.first %}
+                                            <div class="dropdown-divider"></div>
+                                        {% endunless %}
+                                        <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
+                                        {% for entry in group.items %}
+                                            {% assign key = entry[0] %}
+                                            {% include functions/worker_url.html key=key class="dropdown-item" %}
+                                        {% endfor %}
+                                    {% endfor %}
                                 {% else %}
-                                    <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-                                {% endif %}
-                            {% endfor %}
+                                    {% for entry in item.subitems %}
+                                        <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                                    {% endfor %}
+                            {% endcase %}
                         </div>
                     </li>
                 {% endfor %}

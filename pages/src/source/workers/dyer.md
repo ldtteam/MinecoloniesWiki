@@ -1,26 +1,9 @@
 ---
-title: Dyer
-layout: default
+type: worker
+worker: dyer
+layout: worker
 ---
-# Dyer
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/dyer_m.png" alt="Dyer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/dyer_f.png" alt="Dyer Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Creativity</p>
-      <p class="traits">Dexterity</p>
-      <p><a href="../buildings/dyer">Dyer</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Dyer is part of the production of the your colony. The Dyer will craft dyes and dyed items, as well as red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only make these items when they have been taught the recipes, receive a request for an item, and have the needed materials. (The Dyer automatically knows how to make green dye and red sand, however.)
 
 **Note:** The Dyer can only learn a set number of recipes based on their hut level. So:
@@ -37,3 +20,8 @@ The Dyer is part of the production of the your colony. The Dyer will craft dyes 
 All crafters have a chance to decrease the amount of materials needed for a taught recipe. (If this happens, the new recipe is kept until deleted or improved again.) The higher a Dyer's Creativity level, the greater their chance to decrease the amount of materials needed.
 
 The higher a Dyer's Dexterity level, the faster they'll craft/smelt.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

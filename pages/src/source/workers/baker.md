@@ -1,9 +1,8 @@
 ---
-title: Baker
-layout: default
+type: worker
+worker: baker
+layout: worker
 ---
-# Baker
-
 {% capture content %}
 The Baker is an important part of the food production of your colony. The Baker will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the [Cook](../../source/workers/cook), the [postbox](../../source/items/postbox), or as a minimum stock in the [Warehouse](../../source/buildings/warehouse).
 
@@ -19,6 +18,6 @@ The Baker can also craft some non-vanilla breads:
 - Chorus bread, made from wheat and a chorus fruit. Available after completing the Know the End research in the [University](../../source/buildings/university). Has higher saturation than normal bread and teleports you to the surface after eating it.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="baker" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}

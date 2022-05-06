@@ -1,9 +1,8 @@
 ---
-title: Builder's Hut
-layout: default
+type: building
+building: builder
+layout: building
 ---
-# Builder's Hut
-
 {% capture content %}
 ### Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build other buildings.
 
@@ -26,32 +25,24 @@ You can go into the Town Hall's GUI and click on the work orders tab to cancel b
 If the Builder removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="builder" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
-
 ## Builder's Hut GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html header="When accessing the Builder's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/buildergui1.png" %}
+{% include contentblock/building/main-gui.html header="When accessing the Builder's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/buildergui1.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Builder's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/buildergui2.png" %}
+{% include contentblock/building/stock-gui.html buildingname="Builder's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/buildergui2.png" %}
 
-    {% include contentblock/settings-gui.html key="builder" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/buildergui3.png" %}
+{% include contentblock/building/settings-gui.html key="builder" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/buildergui3.png" %}
 
-    {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/buildergui4.png" %}
+{% include contentblock/building/other-gui.html header="The fourth tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/buildergui4.png" %}
 
-    {% include contentblock/basic.html header="The fifth tab of the GUI is <strong>Work Orders</strong>." content="This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here." image="../../assets/images/gui/buildergui5.png" %}
+{% include contentblock/building/other-gui.html header="The fifth tab of the GUI is <strong>Work Orders</strong>." content="This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here." image="../../assets/images/gui/buildergui5.png" %}
 
-    {% include contentblock/basic.html header="The sixth tab of the GUI is <strong>Required Resources</strong>." content="These are the resources that the Builder will need for the build order they are currently working on.
-    <ul>
-      <li><strong>Current project</strong> The top line tells you which building is being worked on and its level.</li>
-      <li><strong>Step</strong> What step of the project the builder is on.</li>
-      <li><strong>Supplied %/ Used %</strong> How much of the needed resources are in the builder hut inventory, and how many of the resources have been placed.</li>
-      <li><strong>Item</strong> Each needed item is displayed, along with how many of that item is in inventory, and how many are needed.  These amounts will change as they place blocks and will show only what blocks the Builder still needs to place. The block in black are in their inventory.  The blocks in red are the ones neither you nor the Builder has in their inventory.  The blocks in green are ones you have in inventory but the builder needs.  Clicking the up arrow next to the item will automatically remove that item from your inventory and place it into the builder's.</li>
-    </ul>" image="../../assets/images/gui/buildergui6.png" %}
-
-  </div>
-</div>
+{% include contentblock/building/other-gui.html header="The sixth tab of the GUI is <strong>Required Resources</strong>." content="These are the resources that the Builder will need for the build order they are currently working on.
+- **Current project** The top line tells you which building is being worked on and its level.
+- **Step** What step of the project the builder is on.
+- **Supplied % / Used %** How much of the needed resources are in the builder hut inventory, and how many of the resources have been placed.
+- **Item** Each needed item is displayed, along with how many of that item is in inventory, and how many are needed. These amounts will change as they place blocks and will show only what blocks the Builder still needs to place. The block in black are in their inventory. The blocks in red are the ones neither you nor the Builder has in their inventory. The blocks in green are ones you have in inventory but the builder needs.  Clicking the up arrow next to the item will automatically remove that item from your inventory and place it into the builder's." image="../../assets/images/gui/buildergui6.png" %}

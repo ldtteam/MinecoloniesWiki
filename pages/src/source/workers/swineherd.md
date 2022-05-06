@@ -1,26 +1,9 @@
 ---
-title: Swineherd
-layout: default
+type: worker
+worker: swineherd
+layout: worker
 ---
-# Swineherd
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/swineherd_m.png" alt="Swineherd Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/swineherd_f.png" alt="Swineherd Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Athletics</p>
-      <p><a href="../buildings/swineherd">Swineherd's Hut</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Swineherd is a crucial part of your colony's food production needs. The Swineherd will breed and butcher pigs for you as long as you provide them with carrots and an axe.
 
 **NOTE:** The Swineherd will not catch and bring in any pigs, only breed and butcher the ones in their hut area, so make sure you provide them with at least 2 initial pigs.
@@ -38,3 +21,8 @@ The Swineherd will work with vanilla Minecraft pigs, but might work with some pi
 | 5         | 10          |
 
 The higher a Swineherd's Strength level, the more damage they'll do per attack. Pigs will grow up faster when the Swineherd has a higher Athletics level.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

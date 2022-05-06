@@ -1,26 +1,9 @@
 ---
-title: Miner
-layout: default
+type: worker
+worker: miner
+layout: worker
 ---
-# Miner
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/miner_m.png" alt="Miner Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/miner_f.png" alt="Miner Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Stamina</p>
-      <p><a href="../buildings/mine">Mine</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Miner is part of the resource production of your colony. The Miner will create mineshafts to collect cobblestone, granite, diorite, andesite, dirt, sand, sandstone, etc. as well as all the ores they come across. Any additional modded blocks/ores should also be picked up by the Miner if they are properly coded.
 
 The Miner works by digging a shaft down. Once there, they will build a network of random mineshafts branching out from the main shaft. If they find any ore, they will try to mine out the whole vein, not just what happens to be on their path.
@@ -31,11 +14,11 @@ The level of the Mine will dictate how deep the Miner will mine:
 
 | Mine Level | Shaft Y Level | Shaft Y Level |
 | ---------- | ------------- | ------------- |
-| | 1.16 | 1.18 |
-| 1 | 50 | 40 |
-| 2 | 30 | 20 |
-| 3 | Bedrock | 0 |
-| 4 | | Bedrock |
+|            | 1.16          | 1.18          |
+| 1          | 50            | 40            |
+| 2          | 30            | 20            |
+| 3          | Bedrock       | 0             |
+| 4          |               | Bedrock       |
 
 The Miner will only mine blocks according to the level of their pickaxe and will only be able to use a tool according to the level of their hut (check the [worker](../systems/worker) system page).
 
@@ -46,3 +29,8 @@ The Miner can on occasion get confused and lost. They may start new tunnels and 
 The Miner has a chance to get lucky in finding ores when digging out cobblestone or stone! This is the default setting in the [configuration file](../../source/misc/configfile), but you can change this.
 
 The Miner's Strength level affects their block breaking speed. Similarly, their Stamina skill affects their block placing speed, so if they have a higher Stamina skill they'll place supports and other blocks faster. 
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

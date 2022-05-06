@@ -1,9 +1,8 @@
 ---
-title: Archer
-layout: default
+type: worker
+worker: archer
+layout: worker
 ---
-# Archer
-
 {% capture content %}
 Archers are ranged guards that protect your colony. As long as you provide an Archer with a bow, they will protect your colony day and night. 
 
@@ -19,6 +18,6 @@ Archers in Training will train at the [Archery](../buildings/archery) to become 
 Archers in Training are not actual Guards even though they are dressed in the usual Guard clothes. They will not help defend your colony, only Guards will do that.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="archer" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}

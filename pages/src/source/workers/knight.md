@@ -1,9 +1,8 @@
 ---
-title: Knight
-layout: default
+type: worker
+worker: knight
+layout: worker
 ---
-# Knight
-
 {% capture content %}
 Knights are melee guards that protect your colony. As long as you provide a Knight with a sword, they will protect your colony day and night.
 
@@ -17,6 +16,6 @@ Knights in Training will train at the [Combat Academy](../buildings/combatacadem
 Knights in Training are not actual Guards even though they are dressed in the usual Guard clothes. They will not help defend your colony, only Guards will do that. 
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="knight" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}

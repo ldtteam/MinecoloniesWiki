@@ -1,32 +1,20 @@
 ---
-title: Healer
-layout: default
+type: worker
+worker: healer
+layout: worker
 ---
-# Healer
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/healer_m.png" alt="Healer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/healer_f.png" alt="Healer Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Mana</p>
-      <p class="traits">Knowledge</p>
-      <p><a href="../buildings/hospital">Hospital</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Healer is a specialist of your colony. The Healer will heal your citizens when they become ill or injured and will use various items. The possible diseases can be changed in the [config file](../../source/misc/configfile), however, these are the defaults:
 
-| Disease | Items Needed to Cure |
-| ------- | -------------------- |
-| Influenza (the flu) | Carrot and Potato |
-| Measles | Dandelion, Kelp, and Poppy |
-| Smallpox | Honey Bottle and Golden Apple |
+| Disease             | Items Needed to Cure          |
+| ------------------- | ----------------------------- |
+| Influenza (the flu) | Carrot and Potato             |
+| Measles             | Dandelion, Kelp, and Poppy    |
+| Smallpox            | Honey Bottle and Golden Apple |
 
 The higher a Healer's Mana skill, the faster they can walk between beds. If they have a higher Knowledge level, they'll have a greater chance to heal a citizen without requiring materials.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

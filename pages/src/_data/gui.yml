@@ -6,15 +6,15 @@ global:
   - button: Assigned Workers
     content: Tells you the worker assigned to this building.
   - button: Manage Workers
-    content: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. <b>Note:</b> this only works if you have turned the worker hiring mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual, otherwise your citizens will be hired automatically.
+    content: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. **Note:** this only works if you have turned the worker hiring mode in the [Town Hall](../../source/buildings/townhall) block to manual, otherwise your citizens will be hired automatically.
   - button: Recall Worker
     content: Recalls the worker at this building to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.
   - button: Build Options
-    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
   - button: Pickup Priority
-    content: You can set the priority that a <a href="../../source/workers/courier"> Courier</a> will visit this hut and pick up items (when the worker at this hut issues a request), or you can tell Couriers to <i>never</i> visit this hut to pick up items. You can also tell a Courier to do a pickup now using the Request Pickup Now button. (For the pickup priority, 10 is the highest.)
+    content: You can set the priority that a [Courier](../../source/workers/courier) will visit this hut and pick up items (when the worker at this hut issues a request), or you can tell Couriers to *never* visit this hut to pick up items. You can also tell a Courier to do a pickup now using the Request Pickup Now button. (For the pickup priority, 10 is the highest.)
   - button: Inventory
-    content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any <a href="../../source/items/rack"> racks</a> that were placed in the hut when it was built or upgraded, so be sure to check those as well!
+    content: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](../../source/items/rack) that were placed in the hut when it was built or upgraded, so be sure to check those as well!
   - button: "?"
     content: Some huts have an in-game guide. Press the ? button to access it.
   - button: A chest icon
@@ -27,9 +27,9 @@ citizen:
   - button: Assigned Citizens
     content: This will show you how many citizens are assigned to this hut, it also displays their name, and occupation (if employed).
   - button: Manage Housing
-    content: This lets you change which citizens are assigned to this hut. <b>Note-</b>this only works if you have turned the housing assignment mode in the <a href="../../source/buildings/townhall"> Town Hall</a> block to manual; otherwise your citizens will be housed automatically.
+    content: This lets you change which citizens are assigned to this hut. **Note:** this only works if you have turned the housing assignment mode in the [Town Hall](../../source/buildings/townhall) block to manual; otherwise your citizens will be housed automatically.
   - button: Build Options
-    content: This lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: This lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
   - button: Recall Citizens
     content: Teleports all the citizens living here to the hut block.
   - button: Inventory
@@ -39,29 +39,41 @@ citizen:
   - button: A chest icon
     content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks in the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 build:
-  - button: Schematic Style
-    content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
-  - button: Builder
-    content: Here is where you can choose what Builder you want on the project. If the hut is out of your Builders' range, this is where you can manually assign one.
-  - button: List
-    content: This is the list of resources that the Builder will need for the schematic style selected.
-  - button: Repair
-    content: This is to repair a building according to its schematic. This will remove any changes that a player has made to the current building.
-  - button: Upgrade
-    content: When you are ready to upgrade to the next level. Upgrading will come with benefits, like more furnaces for a Smelter to use (for example).
-  - button: Deconstruct
-    content: To deconstruct the building. After the Builder is done breaking the building, click the Pick Up button, which will appear where the Deconstruct button was. You will get the building's hut block, which will keep its current level. This is so you can place it somewhere else using the <a href="../../source/items/buildtool"> build tool</a>.
+  new:
+    - button: Schematic Style
+      content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
+    - button: Builder
+      content: Here is where you can choose what Builder you want on the project. If the hut is out of your Builders' range, this is where you can manually assign one.
+    - button: List
+      content: This is the list of resources that the Builder will need for the schematic style selected.
+    - button: Repair
+      content: Not needed, as the building hasn't been built yet.
+    - button: Build Building
+      content: This is where you tell the Builder to build the building with the style selected.
+  upgrade:
+    - button: Schematic Style
+      content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
+    - button: Builder
+      content: Here is where you can choose what Builder you want on the project. If the hut is out of your Builders' range, this is where you can manually assign one.
+    - button: List
+      content: This is the list of resources that the Builder will need for the schematic style selected.
+    - button: Repair
+      content: This is to repair a building according to its schematic. This will remove any changes that a player has made to the current building.
+    - button: Upgrade
+      content: When you are ready to upgrade to the next level. Upgrading will come with benefits, like more furnaces for a Smelter to use (for example).
+    - button: Deconstruct
+      content: To deconstruct the building. After the Builder is done breaking the building, click the Pick Up button, which will appear where the Deconstruct button was. You will get the building's hut block, which will keep its current level. This is so you can place it somewhere else using the [build tool](../../source/items/buildtool).
 barracks:
   - button: Pencil
     content: Allows you to rename the building.  The level of the building will always be listed after the name.
   - button: Barracks Level
     content: This tells you the type of hut and the build level of the building you have selected.
   - button: Current Barbarian Position and Last Barbarian Spawn
-    content: A tracker system for Barbarians. <strong>Note:</strong> you can only see the current barbarian position if you have <b>hired spies</b> (see below) during the current raid.
+    content: A tracker system for Barbarians. **Note:** you can only see the current barbarian position if you have **hired spies** (see below) during the current raid.
   - button: Build Options
-    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
   - button: Hire Spies
-    content: This option is only available after the hut is level 3. Here you can hire spies during raids. <br><img src="../../assets/images/gui/hiringspies.png" class="img-fluid mx-auto" alt="Hiring Spies"><br>
+    content: This option is only available after the hut is level 3. Here you can hire spies during raids. <br /><img src="../../assets/images/gui/hiringspies.png" class="img-fluid mx-auto" alt="Hiring Spies">
   - button: Inventory
     content: This opens an inventory space where you can store anything you like, as the citizens staying in the hut don't use it.
   - button: "?"
@@ -74,9 +86,9 @@ warehouse:
   - button: Warehouse Level
     content: This tells you the type of hut and the build level of the building you have selected.
   - button: Build Options
-    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder"> Builder</a> page.
+    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
   - button: Inventory
-    content: This is an inventory space where you can store anything you like. The Couriers don't deposit things here (they use the <a href="../../source/items/rack">racks</a> in the Warehouse instead).
+    content: This is an inventory space where you can store anything you like. The Couriers don't deposit things here (they use the [racks](../../source/items/rack) in the Warehouse instead).
   - button: "?"
     content: Some huts have an in-game guide. Press the ? button to access it.
   - button: A chest icon
@@ -87,7 +99,7 @@ mystical:
   - button: Mystical Site Level
     content: Tells you the type of hut and the build level of the building you have selected.
   - button: Build Options
-    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the <a href="../../source/workers/builder">Builder</a> page.
+    content: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
   - button: Inventory
     content: Here you can access the Mystical Site's storage, where you can store anything you like. No citizen uses it.
   - button: A chest icon

@@ -1,26 +1,9 @@
 ---
-title: Undertaker
-layout: default
+type: worker
+worker: undertaker
+layout: worker
 ---
-# Undertaker
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/undertaker_m.png" alt="Undertaker Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/undertaker_f.png" alt="Undertaker Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Strength</p>
-      <p class="traits">Mana</p>
-      <p><a href="../buildings/graveyard">Graveyard</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Undertaker deals with deceased citizens. When a citizen dies, a grave will spawn at the location of death.
 
 ![Grave](../../assets/images/items/grave.png)
@@ -40,3 +23,8 @@ If no citizens have died recently, the Undertaker will visit the [Mystical Site]
 The Undertaker is exempt from mourning so they can complete their job.
 
 The higher an Undertaker's Strength skill, the faster they can dig graves.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

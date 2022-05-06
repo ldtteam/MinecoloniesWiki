@@ -1,34 +1,15 @@
 ---
-title: Crusher
-layout: default
+type: worker
+worker: crusher
+layout: worker
 ---
-# Crusher
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/smelter_m.png" alt="Crusher Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/smelter_f.png" alt="Crusher Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Stamina</p>
-      <p class="traits">Strength</p>
-      <p><a href="../buildings/crusher">Crusher's Hut</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Crusher is a part of your colony's production line. The Crusher will crush materials into other materials.
 
 The defaults are:
-<ul>
-  <li>Cobblestone into Gravel (chance to get flint)</li>
-  <li>Gravel into Sand</li>
-  <li>Sand into Clay</li>
-</ul>
+* Cobblestone into Gravel (chance to get flint)
+* Gravel into Sand
+* Sand into Clay
 
 However, you can change this using [data packs](../../source/tutorials/datapacks). This also works with modded items. Anything can be added this way, it is up to the player (or the server owner).
 
@@ -46,3 +27,8 @@ The Crusher can only crush a certain amount of materials per day, depending on t
 
 
 The higher a Crusher's Stamina level, the less of a chance they have to get sick. The higher their Strength level, the faster they'll work.
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

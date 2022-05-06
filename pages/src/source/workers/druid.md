@@ -1,9 +1,8 @@
 ---
-title: Druid
-layout: default
+type: worker
+worker: druid
+layout: worker
 ---
-# Druid
-
 {% capture content %}
 Druids are support guards that help their fellow guards. As long as you provide a Druid with potions, they will protect your colony day and night.
 
@@ -14,6 +13,6 @@ Druids can throw buffing potions — e.g. healing, resistance, saturation, or st
 The higher a Druid’s Mana, the longer their potions last. The higher their Focus, the more accurately they throw potions.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="druid" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
