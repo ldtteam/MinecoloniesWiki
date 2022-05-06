@@ -1,3 +1,4 @@
-{% if include.header | default: "" | strip != "" %}
-    <p>{{ include.header | strip }}</p>
+{% assign header = include.header | default: "" | strip %}
+{% if header != "" %}
+    <p>{{ include.header | markdownify }}</p>
 {% endif %}

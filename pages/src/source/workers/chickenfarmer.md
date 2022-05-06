@@ -1,26 +1,9 @@
 ---
-title: Chicken Farmer
-layout: default
+type: worker
+worker: chickenfarmer
+layout: worker
 ---
-# Chicken Farmer
-
-<div class="infobox box text-center">
-<img src="../../assets/images/workers/chickenfarmer_m.png" alt="Chicken Farmer Male" />&nbsp;&nbsp;&nbsp;<img src="../../assets/images/workers/chickenfarmer_f.png" alt="Chicken Farmer Female" />
-<hr />
-  <div class="row section-text text-left">
-    <div class="col">
-      <p><strong>Primary Trait:</strong></p>
-      <p><strong>Secondary Trait:</strong></p>
-      <p><strong>Building:</strong></p>
-    </div>
-    <div class="col">
-      <p class="traitp">Adaptability</p>
-      <p class="traits">Agility</p>
-      <p><a href="../buildings/chickenfarmer">Chicken Farmer's Hut</a></p>
-    </div>
-  </div>
-</div>
-
+{% capture content %}
 The Chicken Farmer is a crucial part of your colony's food production needs. They will also provide you with all drops and byproducts like eggs and feathers. The Chicken Farmer will breed and butcher chickens for you as long as you provide them with seeds and an axe.
 
 **NOTE:** The Chicken Farmer will not catch and bring in any chickens, only breed and butcher the ones in their hut area, so make sure you provide them with at least 2 initial chickens.
@@ -37,5 +20,9 @@ The Chicken Farmer will work with vanilla Minecraft chickens, but might work wit
 | 4         | 8               |
 | 5         | 10              |
 
-
 The higher a Chicken Farmer's Adaptability level is, the greater their chance to pick up eggs/meat/feathers. Similarly, the greater their Agility level, the higher their chance to successfully hit a chicken (if they miss, they'll keep trying until the chicken dies).
+{% endcapture %}
+{% capture infobox %}
+{% include infobox/worker.html %}
+{% endcapture %}
+{% include page-infobox-wrapper.html content=content infobox=infobox %}

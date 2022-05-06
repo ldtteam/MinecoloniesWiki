@@ -1,9 +1,8 @@
 ---
-title: Beekeeper
-layout: default
+type: worker
+worker: beekeeper
+layout: worker
 ---
-# Beekeeper
-
 {% capture content %}
 The Beekeeper will breed bees and harvest honeycombs or honey bottles (you can choose which on the settings page of the Apiary's GUI). They will request flowers to breed the bees with.
 
@@ -23,6 +22,6 @@ The level of the Apiary determines the max number of hives they can take care of
 
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="beekeeper" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}

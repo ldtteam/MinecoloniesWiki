@@ -1,9 +1,8 @@
 ---
-title: Assistant Cook
-layout: default
+type: worker
+worker: assistantcook
+layout: worker
 ---
-# Assistant Cook
-
 {% capture content %}
 The Assistant Cook is an important part of your colony's food production. The Assistant Cook will craft any food-related recipes you have taught the Restaurant if the [Cook](../../source/workers/cook) requests food. They will also craft any craftable foods you requested from the [postbox](../../source/items/postbox). 
 
@@ -14,6 +13,6 @@ All crafters have a chance to decrease the amount of materials needed for a taug
 **Note:** You can only hire an Assistant Cook when the Restaurant is at least level 3.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/worker.html key="assistantcook" %}
+{% include infobox/worker.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}

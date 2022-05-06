@@ -1,9 +1,8 @@
 ---
-title: Library
-layout: default
+type: building
+building: library
+layout: building
 ---
-# Library
-
 {% capture content %}
 ### Note: The Library cannot be built until you finish the research in the [University](../../source/buildings/university).
 
@@ -22,16 +21,12 @@ Two citizens can study per Library level. So:
 **Hint:** Paper and books help Library Students increase their skills faster.
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="library" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Library GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html header="When accessing the Library hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/librarygui.png" %}
+{% include contentblock/building/main-gui.html header="When accessing the Library hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/librarygui.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Library" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
-  </div>
-</div>
+{% include contentblock/building/stock-gui.html buildingname="Library" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}

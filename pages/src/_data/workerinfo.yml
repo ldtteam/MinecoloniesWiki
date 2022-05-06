@@ -1,84 +1,424 @@
 archer:
   name: Archer
-  images:
-    male: archer_m.png
-    female: archer_f.png
+  type: guard
   traits:
     primary: Agility
     secondary: Adaptability
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting and smelting
   buildings:
     - archery
-    - key: barrackstower
-      name: Barracks Tower
-    - key: guardtower
-      name: Guard Tower
-knight:
-  name: Knight
-  images:
-    male: knight_m.png
-    female: knight_f.png
-  traits:
-    primary: Adaptability
-    secondary: Stamina
-  buildings:
-    - key: combatacademy
-      name: Combat Academy
-    - key: barrackstower
-      name: Barracks Tower
-    - key: guardtower
-      name: Guard Tower
-druid:
-  name: Druid
-  images:
-    male: druid_m.png
-    female: druid_f.png
-  traits:
-    primary: Mana
-    secondary: Focus
-  buildings:
-    - key: barrackstower
-      name: Barracks Tower
-    - key: guardtower
-      name: Guard Tower
-
+    - barrackstower
+    - guardtower
 assistantcook:
   name: Assistant Cook
-  images:
-    male: cook_m.png
-    female: cook_f.png
   traits:
     primary: Creativity
     secondary: Knowledge
+  effects:
+    primary: Faster cook time
+    secondary: Increases chance of decreasing materials needed
   buildings:
     - restaurant
 baker:
   name: Baker
-  images:
-    male: baker_m.png
-    female: baker_f.png
   traits:
     primary: Knowledge
     secondary: Dexterity
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting and smelting
   buildings:
     - bakery
 beekeeper:
   name: Beekeeper
-  images:
-    male: beekeeper_m.png
-    female: beekeeper_f.png
   traits:
     primary: Dexterity
     secondary: Adaptabilty
+  effects:
+    primary: Determines chance of *beeing* stung
+    secondary: Affects wait time between checking hives
   buildings:
     - apiary
 blacksmith:
   name: Blacksmith
-  images:
-    male: blacksmith_m.png
-    female: blacksmith_f.png
   traits:
     primary: Strength
     secondary: Focus
+  effects:
+    primary: Faster crafting
+    secondary: Increases chance of decreasing materials needed
   buildings:
-    - key: blacksmith
-      name: Blacksmith's Hut
+    - blacksmith
+builder:
+  name: Builder
+  traits:
+    primary: Adaptability
+    secondary: Athletics
+  effects:
+    primary: Faster block placing
+    secondary: Faster block breaking
+  buildings:
+    - builder
+carpenter:
+  name: Carpenter
+  traits:
+    primary: Knowledge
+    secondary: Dexterity
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting
+  buildings:
+    - sawmill
+chickenfarmer:
+  name: Chicken Farmer
+  traits:
+    primary: Adaptability
+    secondary: Agility
+  effects:
+    primary: Greater chance to pick up eggs/meat/feathers
+    secondary: Greater chance to successfully hit chicken
+  buildings:
+    - chickenfarmer
+composter:
+  name: Composter
+  traits:
+    primary: Stamina
+    secondary: Athletics
+  effects:
+    primary: Faster composting
+    secondary: Faster barrel filling
+  buildings:
+    - composter
+concretemixer:
+  name: Concrete Mixer
+  traits:
+    primary: Stamina
+    secondary: Dexterity
+  effects:
+    primary: Faster concrete harvesting
+    secondary: Faster concrete crafting
+  buildings:
+    - concretemixer
+cook:
+  name: Cook
+  traits:
+    primary: Adaptability
+    secondary: Knowledge
+  effects:
+    primary: Faster cook time
+    secondary: Increases chance of decreasing materials needed
+  buildings:
+    - restaurant
+courier:
+  name: Courier
+  traits:
+    primary: Agility
+    secondary: Adaptability
+  effects:
+    primary: Faster run speed
+    secondary: More huts visited on each trip
+  buildings:
+    - courier
+    - warehouse
+cowhand:
+  name: Cowhand
+  traits:
+    primary: Athletics
+    secondary: Stamina
+  effects:
+    primary: More damage per attack
+    secondary: Cows grow up faster
+  buildings:
+    - cowhand
+crusher:
+  name: Crusher
+  traits:
+    primary: Stamina
+    secondary: Strength
+  effects:
+    primary: Decreases chance of sickness
+    secondary: Faster work speed
+  buildings:
+    - crusher
+druid:
+  name: Druid
+  type: guard
+  traits:
+    primary: Mana
+    secondary: Focus
+  effects:
+    primary: Increases potion duration
+    secondary: Increases throwing accuracy
+  buildings:
+    - barrackstower
+    - guardtower
+dyer:
+  name: Dyer
+  traits:
+    primary: Creativity
+    secondary: Dexterity
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting
+  buildings:
+    - dyer
+enchanter:
+  name: Enchanter
+  traits:
+    primary: Mana
+    secondary: Knowledge
+  effects:
+    primary: More XP collected per trip
+    secondary: Higher level of enchanted books
+  buildings:
+    - enchantertower
+farmer:
+  name: Farmer
+  traits:
+    primary: Stamina
+    secondary: Athletics
+  effects:
+    primary: Less time cycling between planting and harvesting
+    secondary: Faster planting and harvesting
+  buildings:
+    - farm
+fisher:
+  name: Fisher
+  traits:
+    primary: Focus
+    secondary: Agility
+  effects:
+    primary: Less time to catch something
+    secondary: Less time to catch something
+  buildings:
+    - fisher
+fletcher:
+  name: Fletcher
+  traits:
+    primary: Dexterity
+    secondary: Creativity
+  effects:
+    primary: Faster crafting
+    secondary: Increases chance of decreasing materials needed
+  buildings:
+    - fletcher
+florist:
+  name: Florist
+  traits:
+    primary: Dexterity
+    secondary: Agility
+  effects:
+    primary: Greater chance to successfully harvest flowers
+    secondary: Decreases flower growth time
+  buildings:
+    - flowershop
+forester:
+  name: Forester
+  traits:
+    primary: Strength
+    secondary: Focus
+  effects:
+    primary: Faster log breaking
+    secondary: Faster walking
+  buildings:
+    - forester
+glassblower:
+  name: Glassblower
+  traits:
+    primary: Creativity
+    secondary: Focus
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting
+  buildings:
+    - glassblower
+healer:
+  name: Healer
+  traits:
+    primary: Mana
+    secondary: Knowledge
+  effects:
+    primary: Faster walking between beds
+    secondary: Increases chance of decreasing materials needed
+  buildings:
+    - hospital
+knight:
+  name: Knight
+  type: guard
+  traits:
+    primary: Adaptability
+    secondary: Stamina
+  effects:
+    primary: Faster attack speed
+    secondary: Increased health
+  buildings:
+    - combatacademy
+    - barrackstower
+    - guardtower
+librarystudent:
+  name: Library Student
+  traits:
+    primary: Intelligence
+  effects:
+    primary: Affects leveling speed of other skills	
+  buildings:
+    - library
+mechanic:
+  name: Mechanic
+  traits:
+    primary: Knowledge
+    secondary: Agility
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting
+  buildings:
+    - mechanic
+miner:
+  name: Miner
+  traits:
+    primary: Strength
+    secondary: Stamina
+  effects:
+    primary: Faster block breaking
+    secondary: Faster block placing
+  buildings:
+    - mine
+netherminer:
+  name: Nether Miner
+  traits:
+    primary: Adaptability
+    secondary: Strength
+  effects:
+    primary: Survivability
+    secondary: Chance and quality of loot
+  buildings:
+    - nethermine
+planter:
+  name: Planter
+  traits:
+    primary: Agility
+    secondary: Dexterity
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting
+  buildings:
+    - plantation
+pupil:
+  name: Pupil
+  traits:
+    primary: Intelligence & Knowledge
+    secondary: Mana
+  buildings:
+    - school
+quarrier:
+  name: Quarrier
+  traits:
+    primary: Strength
+    secondary: Stamina
+  effects:
+    primary: Faster block breaking
+    secondary: Faster block placing
+  buildings:
+    - quarry
+rabbitherder:
+  name: Rabbit Herder
+  traits:
+    primary: Agility
+    secondary: Athletics
+  effects:
+    primary: Higher chance to successfully hit a rabbit
+    secondary: Faster rabbit growth
+  buildings:
+    - rabbithutch
+shepherd:
+  name: Shepherd
+  traits:
+    primary: Focus
+    secondary: Strength
+  effects:
+    primary: More wool collected
+    secondary: More damage per attack
+  buildings:
+    - shepherd
+sifter:
+  name: Sifter
+  traits:
+    primary: Focus
+    secondary: Strength
+  effects:
+    primary: Better quality items found
+    secondary: Faster sifting
+  buildings:
+    - sifter
+smelter:
+  name: Smelter
+  traits:
+    primary: Athletics
+    secondary: Strength
+  effects:
+    primary: Faster smelting
+    secondary: Increases chance of doubling or tripling ores
+  buildings:
+    - smeltery
+stonemason:
+  name: Stonemason
+  traits:
+    primary: Creativity
+    secondary: Dexterity
+  effects:
+    primary: Increases chance of decreasing materials needed
+    secondary: Faster crafting
+  buildings:
+    - stonemason
+stonesmelter:
+  name: Stone Smelter
+  traits:
+    primary: Athletics
+    secondary: Dexterity
+  effects:
+    primary: Increases number of furnaces used
+    secondary: Faster smelting
+  buildings:
+    - stonesmeltery
+swineherd:
+  name: Swineherd
+  traits:
+    primary: Strength
+    secondary: Athletics
+  effects:
+    primary: More damage per attack
+    secondary: Faster pig growth
+  buildings:
+    - swineherd
+teacher:
+  name: Teacher
+  traits:
+    primary: Knowledge
+    secondary: Mana
+  effects:
+    primary: Pupil stats increase faster
+    secondary: Quicker switching between pupils
+  buildings:
+    - school
+undertaker:
+  name: Undertaker
+  traits:
+    primary: Strength
+    secondary: Mana
+  effects:
+    primary: Faster grave digging
+    secondary: Increases chance to revive dead citizens
+  buildings:
+    - graveyard
+researcher:
+  name: University Researcher
+  traits:
+    primary: Knowledge
+    secondary: Mana
+  effects:
+    primary: Affects research time while offline
+    secondary: Affects max amount of research time they get
+  buildings:
+    - university

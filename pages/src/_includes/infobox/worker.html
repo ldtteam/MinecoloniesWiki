@@ -1,14 +1,14 @@
-{% assign key = include.key | strip | default: "" %}
+{% assign key = page.worker | strip | default: "" %}
 {% if key != "" %}
     {% assign worker = site.data.workerinfo[key] %}
     {% assign images = "" | split: "" %}
     {% assign blocks = "" | split: "" %}
 
     {% capture worker_image_male %}
-        <img src="../../assets/images/workers/{{ worker.images.male }}" alt="{{ worker.name }} Male"/>
+        <img src="../../assets/images/workers/{{ key }}_m.png" alt="{{ worker.name }} Male"/>
     {% endcapture %}
     {% capture worker_image_female %}
-        <img src="../../assets/images/workers/{{ worker.images.female }}" alt="{{ worker.name }} Female"/>
+        <img src="../../assets/images/workers/{{ key }}_f.png" alt="{{ worker.name }} Female"/>
     {% endcapture %}
     {% assign images = images | push: worker_image_male %}
     {% assign images = images | push: worker_image_female %}
@@ -21,7 +21,7 @@
                 </p>
             </div>
             <div class="col">
-                <p class="traitp">{{ worker.traits.primary }}</p>
+                <p class="traitp">{{ worker.traits.primary | default: "None" }}</p>
             </div>
         </div>
         <div class="row text-left">
@@ -31,7 +31,7 @@
                 </p>
             </div>
             <div class="col">
-                <p class="traits">{{ worker.traits.secondary }}</p>
+                <p class="traits">{{ worker.traits.secondary | default: "None" }}</p>
             </div>
         </div>
         <div class="row text-left">
@@ -42,17 +42,8 @@
             </div>
             <div class="col">
                 {% for building in worker.buildings %}
-                    {% assign building_key = building %}
-                    {% assign building_name = building | capitalize %}
-                    {% if building.key != null %}
-                        {% assign building_key = building.key %}
-                        {% assign building_name = building.key | capitalize %}
-                    {% endif %}
-                    {% if building.name != null %}
-                        {% assign building_name = building.name %}
-                    {% endif %}
                     <p class="mb-1">
-                        <a href="../buildings/{{ building_key }}">{{ building_name }}</a>
+                        <a href="../buildings/{{ building }}">{{ site.data.buildinginfo[building].name }}</a>
                     </p>
                 {% endfor %}
             </div>

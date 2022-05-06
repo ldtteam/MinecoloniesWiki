@@ -1,9 +1,8 @@
 ---
-title: Barracks
-layout: default
+type: building
+building: barracks
+layout: building
 ---
-# Barracks
-
 {% capture content %}
 ### Note: The Barracks cannot be built until you have a level 3 [Guard Tower](../../source/buildings/guardtower) (or three level 1 Guard Towers, or another equivalent) and have finished the research in the [University](../../source/buildings/university). 
 <br> 
@@ -18,21 +17,16 @@ The Barracks is the ultimate protection for your colony. The Barracks will hold 
 |       4        |            4             |              4               |
 |       5        |            4             |              5               |
 
-<strong>Note:</strong> The Barracks has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
+**Note:** The Barracks has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
 <br>
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="barracks" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
-
 ## Barracks GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html data=site.data.gui.barracks header="When accessing the House's hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/barracksgui.png" %}
+{% include contentblock/building/main-gui.html data=site.data.gui.barracks header="When accessing the House's hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/barracksgui.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Barracks" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
-  </div>
-</div>
+{% include contentblock/building/stock-gui.html buildingname="Barracks" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}

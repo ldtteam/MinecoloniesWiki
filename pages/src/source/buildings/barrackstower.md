@@ -1,12 +1,10 @@
 ---
-title: Barracks Tower
-layout: default
+type: building
+building: barrackstower
+layout: building
 ---
-# Barracks Tower
-
 {% capture content %}
 The Barracks Towers will employ and house one Guard for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
-
 
 | Barracks Tower Level | Max # of Guards |
 | :------------------: | :-------------: |
@@ -16,9 +14,7 @@ The Barracks Towers will employ and house one Guard for every level built (unlik
 |          4           |        4        |
 |          5           |        5        |
 
-
 The Barracks Tower locations are predetermined by the [Barracks](../../source/buildings/barracks) that you choose. They are placed in specific locations to fit within the Barracks. 
-
 
 | Barracks Level | Max # of Barracks Towers | Max Level of Barracks Towers |
 | :------------: | :----------------------: | :--------------------------: |
@@ -27,7 +23,6 @@ The Barracks Tower locations are predetermined by the [Barracks](../../source/bu
 |       3        |            3             |              3               |
 |       4        |            4             |              4               |
 |       5        |            4             |              5               |
-
 
 Guard(s) will patrol a set distance around their tower, which is based on their tower's level.
 
@@ -39,26 +34,21 @@ Guard(s) will patrol a set distance around their tower, which is based on their 
 | 4           | 170 blocks          |
 | 5           | 200 blocks          |
 
-<strong>Note:</strong> If you place Barracks/Barracks Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
-
+**Note:** If you place Barracks/Barracks Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
 {% endcapture %}
 {% capture infobox %}
-{% include infobox/building.html key="barrackstower" %}
+{% include infobox/building.html %}
 {% endcapture %}
 {% include page-infobox-wrapper.html content=content infobox=infobox %}
 
 ## Barracks Tower GUI
 
-<div class="row">
-  <div class="col">
-    {% include contentblock/main-gui.html header="When accessing the Barracks Tower hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/barrackstowergui1.png" %}
+{% include contentblock/building/main-gui.html header="When accessing the Barracks Tower hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/barrackstowergui1.png" %}
 
-    {% include contentblock/stock-gui.html buildingname="Barracks Tower" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/barrackstowergui2.png" %}
+{% include contentblock/building/stock-gui.html buildingname="Barracks Tower" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/barrackstowergui2.png" %}
 
-    {% include contentblock/basic.html header="The third tab of the GUI is <strong>Selection Tools</strong>." content="Click the <strong>Obtain Tools</strong> button to get the Guard Scepter. Right-clicking on a block with the Guard Scepter will set it as a guard spot or a patrol point. " image="../../assets/images/gui/barrackstowergui3.png" %}
+{% include contentblock/building/other-gui.html header="The third tab of the GUI is <strong>Selection Tools</strong>." content="Click the <strong>Obtain Tools</strong> button to get the Guard Scepter. Right-clicking on a block with the Guard Scepter will set it as a guard spot or a patrol point. " image="../../assets/images/gui/barrackstowergui3.png" %}
 
-    {% include contentblock/basic.html header="The fourth tab of the GUI is <strong>Hostiles</strong>." content="You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to on by default." image="../../assets/images/gui/barrackstowergui4.png" %}
+{% include contentblock/building/other-gui.html header="The fourth tab of the GUI is <strong>Hostiles</strong>." content="You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to on by default." image="../../assets/images/gui/barrackstowergui4.png" %}
 
-    {% include contentblock/settings-gui.html key="barrackstower" header="The fifth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/barrackstowergui5.png" %}
-  </div>
-</div>
+{% include contentblock/building/settings-gui.html key="barrackstower" header="The fifth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/barrackstowergui5.png" %}
