@@ -38,4 +38,4 @@ The greater a Courier's Agility skill, the faster they'll run. The greater their
 
 **Note:** You MUST build the Warehouse to at least level 1 so the Courier can do their work.
 
-**Note:** You can have up to 10 Couriers per Warehouse, depending on the Warehouse's level. The default [configuration](../../source/misc/configfile) only allows for 1 Warehouse, but this can be changed. However, Couriers assigned to subsequent Warehouses will only see the items in the Warehouse they are assigned to.
+**Note:** You can have up to 10 Couriers per Warehouse (2 per Warehouse level, up to level 5 Warehouse). Couriers will only see the items in the Warehouse they are assigned to.
