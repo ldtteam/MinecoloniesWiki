@@ -30,7 +30,7 @@ baker:
     primary: Increases chance of decreasing materials needed
     secondary: Faster crafting and smelting
   buildings:
-    - baker
+    - bakery
 beekeeper:
   name: Beekeeper
   traits:

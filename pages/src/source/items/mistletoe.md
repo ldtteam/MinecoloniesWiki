@@ -16,4 +16,4 @@ Mistletoe is an item that [Foresters](../../source/workers/forester) can gather 
 
 ## Using the Mistletoe
 
-Mistletoe is used by [Druids](../../source/workers/guard) to increase the efficacy and duration of their potions.
+Mistletoe is used by [Druids](../../source/workers/druid) to increase the efficacy and duration of their potions.
