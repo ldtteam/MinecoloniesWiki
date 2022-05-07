@@ -1,3 +1,13 @@
+alchemist:
+  name: Alchemist
+  traits:
+    primary: Dexterity?
+    secondary: Mana?
+  effects:
+    primary: Faster brewing
+    secondary: Able to use more brewing stands
+  buildings:
+    - alchemist
 archer:
   name: Archer
   type: guard
