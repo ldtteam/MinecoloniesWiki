@@ -102,7 +102,7 @@ image="../../assets/images/gui/th_permissions2.png" alt="Town hall GUI permissio
 content="**Page 5:** Where you enter the position (X, Y, Z) of the block that you want to make free for interaction.
 
 **Page 6:** Here you will see the list of block positions that you have added as free for interaction and can remove them."
-image="../../assets/images/gui/th_permissions2.png" alt="Town hall GUI permissions third tab" %}
+image="../../assets/images/gui/th_permissions3.png" alt="Town hall GUI permissions third tab" %}
 
 ### **Citizens:** This section displays the names and skill levels of the citizens in your colony.
 
