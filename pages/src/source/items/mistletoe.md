@@ -16,4 +16,4 @@ Mistletoe is an item that [Foresters](../../source/workers/forester) and [Alchem
 
 ## Using the Mistletoe
 
-Mistletoe is used by [Druids](../../source/workers/druid) to increase the efficacy and duration of their potions.
+Mistletoe is used by Alchemists to craft magic potions for [Druids](../../source/workers/druid). These potions increase the strength and duration of Druid potions.
