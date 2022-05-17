@@ -11,7 +11,7 @@ layout: default
 
 <br>
 
-Mistletoe is an item that [Foresters](../../source/workers/forester) can gather randomly.
+Mistletoe is an item that [Foresters](../../source/workers/forester) and [Alchemists](../../source/workers/alchemist) can gather randomly.
 <br>
 
 ## Using the Mistletoe
