@@ -189,6 +189,10 @@ crusher:
           description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
         - name: Warehouse Stock
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+    - name: Item
+      description: Here you can set what item you want the Crusher to make. (See the above lists.)
+    - name: Daily Limit
+      description: This setting allows you to further limit the number of blocks that can be crushed in a day.  The maximum is set by the hut level (see above).
 dyer:
   name: Dyer's Hut
   workers:
