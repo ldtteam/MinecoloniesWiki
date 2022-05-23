@@ -199,7 +199,7 @@ While Item Tags determine the recipes that workers can be taught, colonists can 
 | <code>"max-building-level"</code>      |                      | integer          | The building level where the recipe will be automatically unlearned, if the building meets or exceeds it. |
 | <code>"must-exist"</code>              |                      | boolean          | A special requirement. If a recipe matching the output exists, automatically adds all <code>"alternative-output"</code> as recipes. |
 | <code>"show-tooltip"</code>            |                      | boolean          | If true, displays the building that can craft the recipe, as well as any requirements to unlock the recipe, as a tooltip for the item. |
-| <code>"recipe-id-to-remove"</code>     |                      | string           | A Resource Location of a different crafter recipe to remove, preventing buildings from learning it. Requires <code>"type":"remove"</code>. All other properties are ignored.|
+| <code>"recipe-id-to-remove"</code>     |                      | string           | A Resource Location of a different crafter recipe to remove, preventing buildings from learning it. Requires <code>"type":"remove"</code>. All other properties are ignored. Example: <code>"recipe-id-to-remove": "minecolonies:blacksmith/platearmorchestplate"</code>.|
 
 On existing worlds, removing a Crafter Recipe through data packs will automatically remove it from existed constructed buildings that have learned it.
 
