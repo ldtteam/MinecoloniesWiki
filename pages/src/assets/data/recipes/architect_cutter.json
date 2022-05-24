@@ -18,7 +18,7 @@
           "minecraft/birch_log",
           "minecraft/jungle_log",
           "minecraft/acacia_log",
-          "minecraft/dark_oak_log",
+          "minecraft/dark_oak_log"
         ],
         "secondItem": [
           "minecraft/oak_log",
@@ -26,7 +26,7 @@
           "minecraft/birch_log",
           "minecraft/jungle_log",
           "minecraft/acacia_log",
-          "minecraft/dark_oak_log",
+          "minecraft/dark_oak_log"
         ],
         "thirdItem": [
           "minecraft/oak_log",
@@ -34,7 +34,7 @@
           "minecraft/birch_log",
           "minecraft/jungle_log",
           "minecraft/acacia_log",
-          "minecraft/dark_oak_log",
+          "minecraft/dark_oak_log"
         ]
       },
       "product": "minecolonies/architect_cutter"
