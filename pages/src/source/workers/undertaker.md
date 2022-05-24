@@ -20,7 +20,7 @@ Once the Undertaker gets to the Graveyard, they will attempt to revive the decea
 - the level of the Graveyard (+0.5% per Level)
 - the use of totems unlocked by research (Totem gets used up with a chance of 1%)
 
-By default, the chance of reviving is caped at 2.5%. This cap can be boosted with upgrading the [Mystical Site](../../source/buildings/mysticalsite) (0.5% per Level) and the use of totems (5% for 1 Totem, 7.5% for multiple totems). In total, the maximum chance is 12.5%.
+By default, the chance of reviving is capped at 2.5%. This cap can be boosted by upgrading the [Mystical Site](../../source/buildings/mysticalsite) (0.5% per Level) and the use of totems (5% for 1 Totem, 7.5% for multiple totems). In total, the maximum chance is 12.5%.
 
 If the citizen cannot be revived, the Undertaker will bury them in the Graveyard. Another grave will be placed with the citizen's name on it (this grave does not store items).
 
