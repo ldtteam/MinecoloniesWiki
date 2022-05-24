@@ -37,6 +37,10 @@ subnav:
         url: source/systems/sleep
       - page: Worker System
         url: source/systems/worker
+  - title: Dependencies
+    subitems:
+      - page: Domum Ornamentum (1.17+)
+        url: source/dependencies/domumornamentum
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome
