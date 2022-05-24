@@ -14,7 +14,12 @@ After a short time, graves will decay and eventually disappear. There are [resea
 
 The grave (decayed or not) will hold all the items the citizen had in their inventory at the time of death. The player can right-click the grave to open its inventory and retrieve the items. The Undertaker will walk (run if you've completed the relevant research) toward the grave and retrieve its inventory, then go back to the Graveyard.
 
-Once the Undertaker gets to the Graveyard, they will attempt to revive the deceased citizen. The chance for them to succeed can be increased by researches, the Undertaker's Mana skill, and the level of the Graveyard. The chance is capped at about 10%.
+Once the Undertaker gets to the Graveyard, they will attempt to revive the deceased citizen. The chance for them to succeed can be increased by:
+- researches
+- the Undertaker's Mana skill
+- the level of the Graveyard
+- the use of totems unlocked by research
+The chance is capped at 2.5%. This value can be boosted with upgrading the mystical cite and the use of totems to 10 %.
 
 If the citizen cannot be revived, the Undertaker will bury them in the Graveyard. Another grave will be placed with the citizen's name on it (this grave does not store items).
 
