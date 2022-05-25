@@ -34,13 +34,13 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 
 The type of tools/swords workers can use depends on the level of a worker's work hut.
 Note that each enchantment level counts as 1 enchantment.
-(ex. on level 3, Stone Axe with Efficency 2, or a Stone Axe with Efficency 1 and Unbreaking 1) 
+For example, Unbreaking II counts as 2 enchantments, Efficiency V counts as 5 enchantments, and a tool with both Unbreaking II and Efficiency I counts as having 3 enchantments.
 
 | Work Hut Level | Max Tool/Sword Level                                                                                                                     |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 0              | Wood or Gold + 0 enchantments                                                                                                            |
 | 1              | Stone + 0 enchantments (OR Wood/Gold + 1 enchantment)                                                                                    |
-| 2              | Iron + 0 enchantments (OR Wood/Gold + 2 enchantments OR Stone + 1 enchantment)                                                            |
+| 2              | Iron + 0 enchantments (OR Wood/Gold + 2 enchantments OR Stone + 1 enchantment)                                                           |
 | 3              | Diamond + 0 enchantments (OR Wood/Gold + 3 enchantments OR Stone + 2 enchantments OR Iron + 1 enchantment)                               |
 | 4              | Netherite + 0 enchantments (OR Wood/Gold + 4 enchantments OR Stone + 3 enchantments OR Iron + 2 enchantments OR Diamond + 1 enchantment) |
 | 5              | All Tools + unlimited enchantments                                                                                                       |
