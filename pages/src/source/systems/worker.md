@@ -40,8 +40,8 @@ Note that each enchantment level counts as 1 enchantment.
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 0              | Wood or Gold + 0 enchantments                                                                                                            |
 | 1              | Stone + 0 enchantments (OR Wood/Gold + 1 enchantment)                                                                                    |
-| 2              | Iron + 0 enchantments (OR Wood/Gold + 2 enchantment OR Stone + 1 enchantment)                                                            |
-| 3              | Diamond + 0 enchantments (OR Wood/Gold + 3 enchantment OR Stone + 2 enchantments OR Iron + 1 enchantment)                               |
+| 2              | Iron + 0 enchantments (OR Wood/Gold + 2 enchantments OR Stone + 1 enchantment)                                                            |
+| 3              | Diamond + 0 enchantments (OR Wood/Gold + 3 enchantments OR Stone + 2 enchantments OR Iron + 1 enchantment)                               |
 | 4              | Netherite + 0 enchantments (OR Wood/Gold + 4 enchantments OR Stone + 3 enchantments OR Iron + 2 enchantments OR Diamond + 1 enchantment) |
 | 5              | All Tools + unlimited enchantments                                                                                                       |
 
