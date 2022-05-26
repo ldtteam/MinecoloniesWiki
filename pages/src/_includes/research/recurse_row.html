@@ -4,13 +4,13 @@
     {%- include research/id.html tree=include.tree name=research.name -%}
 {% endcapture %}
 
-<tr id="{{ id }}">
+<tr id="{{ id }}" class="row-scroll-snap">
     <td>
-        <u>{%- include links/research.html tree=include.tree name=research.name class="link-default-color" -%}</u>
+        <u>{%- include links/research.html tree=include.tree name=research.name class="link-default-color" showaffix=false -%}</u>
     </td>
     <td>
         {% if include.prerequisite %}
-            <u>{% include links/research.html tree=include.tree name=include.prerequisite class="link-default-color" %}</u>
+            <u>{% include links/research.html tree=include.tree name=include.prerequisite class="link-default-color" showaffix=false %}</u>
         {% else %}
             -
         {% endif %}

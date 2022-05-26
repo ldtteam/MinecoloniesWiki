@@ -351,7 +351,6 @@ guardtower:
           description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
     - name: Follow Mode
       description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
-  research_requirements_multiple: true
 hospital:
   name: Hospital
   plural: Hospitals
@@ -364,7 +363,6 @@ house:
   plural: Houses
   recipes:
     - house
-  research_requirements_multiple: true
 library:
   name: Library
   plural: Libraries
@@ -562,6 +560,7 @@ swineherd:
 tavern:
   name: Tavern
   plural: Taverns
+  singular: true
   recipes:
     - recipe: tavern
       label: Recipe for 1.16
@@ -570,6 +569,7 @@ tavern:
 townhall:
   name: Town Hall
   plural: Town Halls
+  singular: true
   recipes:
     - townhall
 university:

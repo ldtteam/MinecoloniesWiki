@@ -1332,7 +1332,7 @@
             }
           ],
           "unlocks": [
-            "Reduces the time Guards sleep by <b>50%</b>"
+            "Reduces the time Guards sleep by **50%**"
           ],
           "children": [
             {
@@ -1345,7 +1345,7 @@
                 },
                 {
                   "type": "item",
-                  "item": "Iron blocks",
+                  "item": "Blocks of Iron",
                   "amount": 2
                 }
               ],
@@ -1368,7 +1368,7 @@
                     },
                     {
                       "type": "item",
-                      "item": "Iron blocks",
+                      "item": "Blocks of Iron",
                       "amount": 4
                     }
                   ],
@@ -1391,7 +1391,7 @@
                         },
                         {
                           "type": "item",
-                          "item": "Iron blocks",
+                          "item": "Blocks of Iron",
                           "amount": 8
                         }
                       ],
@@ -1414,7 +1414,7 @@
                             },
                             {
                               "type": "item",
-                              "item": "Iron blocks",
+                              "item": "Blocks of Iron",
                               "amount": 16
                             }
                           ],
@@ -1432,7 +1432,7 @@
                               "requirements": [
                                 {
                                   "type": "item",
-                                  "item": "Iron blocks",
+                                  "item": "Blocks of Iron",
                                   "amount": 32
                                 }
                               ],
@@ -1583,7 +1583,7 @@
             },
             {
               "type": "item",
-              "item": "Iron blocks",
+              "item": "Blocks of Iron",
               "amount": 3
             }
           ],
@@ -1604,7 +1604,7 @@
                 },
                 {
                   "type": "item",
-                  "item": "Iron blocks",
+                  "item": "Blocks of Iron",
                   "amount": 6
                 }
               ],
@@ -1712,7 +1712,7 @@
                 },
                 {
                   "type": "item",
-                  "item": "Iron blocks",
+                  "item": "Blocks of Iron",
                   "amount": 6
                 }
               ],
@@ -1822,7 +1822,7 @@
             },
             {
               "type": "item",
-              "item": "Iron blocks",
+              "item": "Blocks of Iron",
               "amount": 3
             }
           ],
@@ -1833,6 +1833,230 @@
               "worker": "knight",
               "plural": true
             }
+          ],
+          "children": [
+            {
+              "name": "Parry",
+              "requirements": [
+                {
+                  "type": "building",
+                  "building": "smeltery"
+                },
+                {
+                  "type": "item",
+                  "item": "Iron ingots",
+                  "amount": 16
+                }
+              ],
+              "unlocks": [
+                {
+                  "type": "worker:guard:armor",
+                  "worker": "knight",
+                  "percentage": 5
+                }
+              ],
+              "children": [
+                {
+                  "name": "Riposte",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "combatacademy"
+                    },
+                    {
+                      "type": "item",
+                      "item": "Iron ingots",
+                      "amount": 32
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:guard:armor",
+                      "worker": "knight",
+                      "percentage": 10
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Duelist",
+                      "requirements": [
+                        {
+                          "type": "building",
+                          "building": "smeltery",
+                          "level": 3
+                        },
+                        {
+                          "type": "item",
+                          "item": "Iron ingots",
+                          "amount": 64
+                        }
+                      ],
+                      "unlocks": [
+                        {
+                          "type": "worker:guard:armor",
+                          "worker": "knight",
+                          "percentage": 25
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Provost",
+                          "requirements": [
+                            {
+                              "type": "building",
+                              "building": "combatacademy",
+                              "level": 5
+                            },
+                            {
+                              "type": "item",
+                              "item": "Diamonds",
+                              "amount": 16
+                            }
+                          ],
+                          "unlocks": [
+                            {
+                              "type": "worker:guard:armor",
+                              "worker": "knight",
+                              "percentage": 50
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Master Swordsman",
+                              "requirements": [
+                                {
+                                  "type": "item",
+                                  "item": "Diamonds",
+                                  "amount": 64
+                                }
+                              ],
+                              "unlocks": [
+                                {
+                                  "type": "worker:guard:armor",
+                                  "worker": "knight",
+                                  "percentage": 100
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Dodge",
+              "requirements": [
+                {
+                  "type": "building",
+                  "building": "smeltery"
+                },
+                {
+                  "type": "item",
+                  "item": "Leather",
+                  "amount": 16
+                }
+              ],
+              "unlocks": [
+                {
+                  "type": "worker:guard:armor",
+                  "worker": "archer",
+                  "percentage": 5
+                }
+              ],
+              "children": [
+                {
+                  "name": "Improved Dodge",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "archery"
+                    },
+                    {
+                      "type": "item",
+                      "item": "Leather",
+                      "amount": 32
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:guard:armor",
+                      "worker": "archer",
+                      "percentage": 10
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Evasion",
+                      "requirements": [
+                        {
+                          "type": "building",
+                          "building": "smeltery",
+                          "level": 3
+                        },
+                        {
+                          "type": "item",
+                          "item": "Leather",
+                          "amount": 64
+                        }
+                      ],
+                      "unlocks": [
+                        {
+                          "type": "worker:guard:armor",
+                          "worker": "archer",
+                          "percentage": 25
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Improved Evasion",
+                          "requirements": [
+                            {
+                              "type": "building",
+                              "building": "archery",
+                              "level": 5
+                            },
+                            {
+                              "type": "item",
+                              "item": "Diamonds",
+                              "amount": 16
+                            }
+                          ],
+                          "unlocks": [
+                            {
+                              "type": "worker:guard:armor",
+                              "worker": "archer",
+                              "percentage": 50
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Agile Archer",
+                              "requirements": [
+                                {
+                                  "type": "item",
+                                  "item": "Diamonds",
+                                  "amount": 64
+                                }
+                              ],
+                              "unlocks": [
+                                {
+                                  "type": "worker:guard:armor",
+                                  "worker": "archer",
+                                  "percentage": 100
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1840,8 +2064,7 @@
           "requirements": [
             {
               "type": "building",
-              "building": "townhall",
-              "level": 1
+              "building": "townhall"
             },
             {
               "type": "item",
@@ -1851,8 +2074,329 @@
           ],
           "unlocks": [
             {
-              "type": "worker:guard:armor",
+              "type": "worker:guard:armor_durability",
               "percentage": 10
+            }
+          ],
+          "children": [
+            {
+              "name": "Boiled Leather",
+              "requirements": [
+                {
+                  "type": "building",
+                  "building": "townhall",
+                  "level": 2
+                },
+                {
+                  "type": "item",
+                  "item": "Leather",
+                  "amount": 64
+                }
+              ],
+              "unlocks": [
+                {
+                  "type": "worker:guard:armor_durability",
+                  "percentage": 20
+                }
+              ],
+              "children": [
+                {
+                  "name": "Iron Skin",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "townhall",
+                      "level": 3
+                    },
+                    {
+                      "type": "item",
+                      "item": "Iron Ingots",
+                      "amount": 16
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:guard:armor_durability",
+                      "percentage": 30
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Iron Armor",
+                      "requirements": [
+                        {
+                          "type": "building",
+                          "building": "townhall",
+                          "level": 4
+                        },
+                        {
+                          "type": "item",
+                          "item": "Iron Ingots",
+                          "amount": 32
+                        }
+                      ],
+                      "unlocks": [
+                        {
+                          "type": "worker:guard:armor_durability",
+                          "percentage": 40
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Steel Armor",
+                          "requirements": [
+                            {
+                              "type": "building",
+                              "building": "townhall",
+                              "level": 5
+                            },
+                            {
+                              "type": "item",
+                              "item": "Iron Ingots",
+                              "amount": 64
+                            }
+                          ],
+                          "unlocks": [
+                            {
+                              "type": "worker:guard:armor_durability",
+                              "percentage": 50
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Diamond Skin",
+                              "requirements": [
+                                {
+                                  "type": "item",
+                                  "item": "Diamonds",
+                                  "amount": 64
+                                }
+                              ],
+                              "unlocks": [
+                                {
+                                  "type": "worker:guard:armor_durability",
+                                  "percentage": 100
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Plate Armor",
+                          "requirements": [
+                            {
+                              "type": "building",
+                              "building": "blacksmith",
+                              "level": 4
+                            },
+                            {
+                              "type": "item",
+                              "item": "Iron Ingots",
+                              "amount": 32
+                            }
+                          ],
+                          "unlocks": [
+                            {
+                              "type": "worker:custom_template",
+                              "template": "{0} learn [plate armor](/source/items/platearmor) recipes",
+                              "worker": "blacksmith",
+                              "plural": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Regeneration",
+              "requirements": [
+                {
+                  "type": "building",
+                  "building": "guardtower"
+                },
+                {
+                  "type": "item",
+                  "item": "Emerald"
+                }
+              ],
+              "unlocks": [
+                "Lets Guards run away when they have low health"
+              ],
+              "children": [
+                {
+                  "name": "Feint",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "guardtower",
+                      "level": 4
+                    },
+                    {
+                      "type": "item",
+                      "item": "Emeralds",
+                      "amount": 8
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:guard:flee_damage",
+                      "percentage": 20
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Fear",
+                      "requirements": [
+                        {
+                          "type": "building",
+                          "building": "guardtower",
+                          "level": 8
+                        },
+                        {
+                          "type": "item",
+                          "item": "Emeralds",
+                          "amount": 16
+                        }
+                      ],
+                      "unlocks": [
+                        {
+                          "type": "worker:guard:flee_damage",
+                          "percentage": 30
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Retreat",
+                          "requirements": [
+                            {
+                              "type": "building",
+                              "building": "guardtower",
+                              "level": 12
+                            },
+                            {
+                              "type": "item",
+                              "item": "Emeralds",
+                              "amount": 32
+                            }
+                          ],
+                          "unlocks": [
+                            {
+                              "type": "worker:guard:flee_damage",
+                              "percentage": 40
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Full Retreat",
+                              "requirements": [
+                                {
+                                  "type": "item",
+                                  "item": "Emeralds",
+                                  "amount": 64
+                                }
+                              ],
+                              "unlocks": [
+                                {
+                                  "type": "worker:guard:flee_damage",
+                                  "percentage": 100
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Avoid",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "guardtower",
+                      "level": 4
+                    },
+                    {
+                      "type": "item",
+                      "item": "Emeralds",
+                      "amount": 8
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:guard:flee_speed",
+                      "percentage": 10
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Evade",
+                      "requirements": [
+                        {
+                          "type": "building",
+                          "building": "guardtower",
+                          "level": 8
+                        },
+                        {
+                          "type": "item",
+                          "item": "Emeralds",
+                          "amount": 16
+                        }
+                      ],
+                      "unlocks": [
+                        {
+                          "type": "worker:guard:flee_speed",
+                          "percentage": 20
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Flee",
+                          "requirements": [
+                            {
+                              "type": "building",
+                              "building": "guardtower",
+                              "level": 12
+                            },
+                            {
+                              "type": "item",
+                              "item": "Emeralds",
+                              "amount": 32
+                            }
+                          ],
+                          "unlocks": [
+                            {
+                              "type": "worker:guard:flee_speed",
+                              "percentage": 30
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Hotfoot",
+                              "requirements": [
+                                {
+                                  "type": "item",
+                                  "item": "Emeralds",
+                                  "amount": 64
+                                }
+                              ],
+                              "unlocks": [
+                                {
+                                  "type": "worker:guard:flee_speed",
+                                  "percentage": 50
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1881,6 +2425,117 @@
           ],
           "unlocks": [
             "After a Guard attacks a mob, the mob targets the Guard instead of citizens or the player"
+          ],
+          "children": [
+            {
+              "name": "Consume Arrows",
+              "requirements": [
+                {
+                  "type": "building",
+                  "building": "guardtower",
+                  "level": 2
+                },
+                {
+                  "type": "item",
+                  "item": "Arrows",
+                  "amount": 64
+                }
+              ],
+              "unlocks": [
+                {
+                  "type": "worker:custom_template",
+                  "template": "{0} use arrows for +2 damage",
+                  "worker": "archer",
+                  "plural": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "Arrow Piercing",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "archery"
+                    },
+                    {
+                      "type": "item",
+                      "item": "Arrows",
+                      "amount": 64
+                    },
+                    {
+                      "type": "item",
+                      "item": "Redstone Dust",
+                      "amount": 64
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:custom_template",
+                      "template": "{0} gain Piercing II",
+                      "worker": "archer",
+                      "plural": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Whirdwind",
+                      "requirements": [
+                        {
+                          "type": "building",
+                          "building": "archery"
+                        },
+                        {
+                          "type": "item",
+                          "item": "Redstone Dust",
+                          "amount": 64
+                        },
+                        {
+                          "type": "item",
+                          "item": "Gold Ingot",
+                          "amount": 64
+                        },
+                        {
+                          "type": "item",
+                          "item": "Lapis Lazuli",
+                          "amount": 128
+                        }
+                      ],
+                      "unlocks": [
+                        {
+                          "type": "worker:custom_template",
+                          "template": "{0} learn special attack that damages and knocks back nearby enemies",
+                          "worker": "knight",
+                          "plural": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Panoramix",
+                  "requirements": [
+                    {
+                      "type": "building",
+                      "building": "barracks",
+                      "level": 3
+                    },
+                    {
+                      "type": "item",
+                      "item": "Mistletoe",
+                      "amount": 64
+                    }
+                  ],
+                  "unlocks": [
+                    {
+                      "type": "worker:custom_template",
+                      "template": "{0} request magic potions to unlock new abilities",
+                      "worker": "druid",
+                      "plural": true
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]

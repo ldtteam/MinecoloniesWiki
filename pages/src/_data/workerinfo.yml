@@ -465,8 +465,8 @@ undertaker:
   buildings:
     - graveyard
 researcher:
-  name: University Researcher
-  plural: University Researchers
+  name: Researcher
+  plural: Researchers
   traits:
     primary: Knowledge
     secondary: Mana

@@ -30,14 +30,25 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 | <img src="../../assets/images/gui/university/research_or.png" alt="Exclusive Research">         | Some researches are **exclusive**, requiring such extreme focus that they aren't compatible with each other. Only one research from a specific **or** selection may be learned in a colony at a time.                                                                                                                                       |
 | <img src="../../assets/images/gui/university/research_undo.png" alt="Undo Research">            | Some completed researches may be **undone** if they block another research in some way, do not have a completed research that depends on them, and are not marked with a redstone torch as irreversible. Undoing a research does *not* refund the research costs and consumes the displayed item.                                           |
 
+<span id="top-anchor"></span>
+
 ## Below is a description of each of the researches:
 
 **Note:** Researches below are *not* cumulative unless stated otherwise.
 
 {% for research_tree in site.data.research.trees %}
+- [{{ research_tree[1].name }}]({{ "#" | append: research_tree[1].name | downcase }})
+{% endfor %}
+
+<hr/>
+
+{% for research_tree in site.data.research.trees %}
 {% assign research_tree_name = research_tree[1].name %}
 ### {{ research_tree[1].name }}
+[Back to top](#top-anchor)
 
 {% assign chains = research_tree[1].chains %}
 {% include research/recurse.html tree=research_tree_name chains=chains %}
+
+<hr/>
 {% endfor %}

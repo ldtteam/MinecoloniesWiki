@@ -2,4 +2,12 @@
     {%- include research/id.html tree=include.tree name=include.name -%}
 {%- endcapture -%}
 {%- assign href = "/source/systems/research#" | append: id -%}
-<a class="{{- include.class -}}" href="{{- href -}}">{{- include.name | append: " research" -}}</a>
+{%- assign name = include.name -%}
+{%- assign showaffix = include.showaffix -%}
+{%- if showaffix == null -%}
+    {%- assign showaffix = true -%}
+{%- endif -%}
+{%- if showaffix == true -%}
+    {%- assign name = name | append: " research" -%}
+{%- endif -%}
+<a class="{{- include.class -}}" href="{{- href -}}">{{- name -}}</a>

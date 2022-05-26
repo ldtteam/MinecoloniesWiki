@@ -64,8 +64,20 @@
                 {% when "worker:undertaker:grave_despawn" %}
                     {% assign text = "Graves take **" | append: unlock.minutes | append: "** more minutes before decaying" | markdownify %}
 
-                {% when "worker:guard:armor" %}
+                {% when "worker:guard:armor_durability" %}
                     {% assign text = "Increases Guards their armor's durability by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:guard:armor" %}
+                    {% capture worker_link %}
+                        {%- include links/worker.html key=unlock.worker plural=true -%}
+                    {% endcapture %}
+                    {% assign text = "Increases " | append: worker_link | append: " their armor by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:guard:flee_damage" %}
+                    {% assign text = "When Guards are fleeing the damage they take is reduced by by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:guard:flee_speed" %}
+                    {% assign text = "Increases Guards their fleeing speed by **" | append: unlock.percentage | append: "%**" | markdownify %}
 
                 {% when "worker:guard:damage" %}
                     {% assign hearts = "hearts" %}
@@ -102,7 +114,7 @@
                     {% assign text = "Colonists can heal with only **" | append: unlock.saturation | append: "%** saturation" | markdownify %}
 
                 {% else %}
-                    {% assign text = unlock %}
+                    {% assign text = unlock | markdownify %}
 
             {% endcase %}
             <li>{{- text -}}</li>
