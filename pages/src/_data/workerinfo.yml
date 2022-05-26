@@ -1,3 +1,14 @@
+alchemist:
+  name: Alchemist
+  plural: Alchemists
+  traits:
+    primary: Dexterity?
+    secondary: Mana?
+  effects:
+    primary: Faster brewing
+    secondary: Able to use more brewing stands
+  buildings:
+    - alchemist
 archer:
   name: Archer
   plural: Archers
@@ -215,6 +226,7 @@ fisher:
     - fisher
 fletcher:
   name: Fletcher
+  plural: Fletchers
   traits:
     primary: Dexterity
     secondary: Creativity

@@ -30,4 +30,4 @@ Colonists that do not have a home will gather at the Town Hall at night. You sho
 
 ## Ticking Events at Night
 
-Turning off the daylight cycle in-game can affect some events and internal updates unpredictably. Most notably, this includes [raids](../../source/systems/raid), but may include things like [sicknesses](../../source/buildings/hospital) or the growth of children. However, this is not publicly known.
+Turning off the daylight cycle in-game can affect some events and internal updates unpredictably. Most notably, this includes [raids](../../source/systems/raid) and [Nether Miners](../../source/workers/netherminer), but may include things like [sicknesses](../../source/buildings/hospital) or the growth of children. However, this is not publicly known.

@@ -11,9 +11,9 @@ layout: default
 
 <br>
 
-Mistletoe is an item that [Foresters](../../source/workers/forester) can gather randomly.
+Mistletoe is an item that [Foresters](../../source/workers/forester) and [Alchemists](../../source/workers/alchemist) can gather randomly.
 <br>
 
 ## Using the Mistletoe
 
-Mistletoe is used by [Druids](../../source/workers/druid) to increase the efficacy and duration of their potions.
+Mistletoe is used by Alchemists to craft magic potions for [Druids](../../source/workers/druid). These potions increase the strength and duration of Druid potions.
