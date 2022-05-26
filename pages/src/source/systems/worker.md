@@ -32,8 +32,8 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 
 ## Tool/Sword Levels
 
-The type of tools/swords workers can use depends on the level of a worker's work hut.
-Note that each enchantment level counts as 1 enchantment.
+The type of tools/swords workers can use depends on the level of a worker's work hut.<br>
+Note that each enchantment level counts as 1 enchantment.<br>
 For example, Unbreaking II counts as 2 enchantments, Efficiency V counts as 5 enchantments, and a tool with both Unbreaking II and Efficiency I counts as having 3 enchantments.
 
 | Work Hut Level | Max Tool/Sword Level                                                                                                                     |
