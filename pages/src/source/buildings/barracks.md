@@ -23,7 +23,7 @@ The Barracks is the ultimate protection for your colony. The Barracks will hold 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Barracks GUI
 

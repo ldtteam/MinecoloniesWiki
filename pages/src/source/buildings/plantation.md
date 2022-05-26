@@ -34,7 +34,7 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Plantation GUI
 

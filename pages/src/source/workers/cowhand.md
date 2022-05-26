@@ -26,4 +26,4 @@ The higher a Cowhand's Athletics level, the greater their axe's damage. The high
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

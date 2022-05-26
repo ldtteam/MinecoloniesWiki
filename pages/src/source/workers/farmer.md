@@ -25,4 +25,4 @@ The higher a Farmer's Stamina level, the less time they will take between cycles
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

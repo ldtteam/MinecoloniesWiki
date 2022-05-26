@@ -1,0 +1,5 @@
+{%- capture id -%}
+    {%- include research/id.html tree=include.tree name=include.name -%}
+{%- endcapture -%}
+{%- assign href = "/source/systems/research#" | append: id -%}
+<a class="{{- include.class -}}" href="{{- href -}}">{{- include.name -}}</a>

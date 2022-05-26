@@ -23,7 +23,7 @@ take care of with the hive tool. This tool is accessed from the second page of t
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Apiary GUI
 

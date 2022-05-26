@@ -1,0 +1,111 @@
+{% if include.unlocks.size > 0 %}
+    <ul class="list-unstyled">
+        {% for unlock in include.unlocks | sort: "type" %}
+            {% assign type = unlock.type | default: "custom" %}
+            {% case type %}
+                {% when "building" %}
+                    {% capture building_link %}
+                        {%- include links/building.html key=unlock.building -%}
+                    {% endcapture %}
+                    {% assign text = "Unlocks the " | append: building_link %}
+
+                {% when "colonist:amount" %}
+                    {% if unlock.max == true %}
+                        {% assign text = "Increases the colony it's citizen capacity to the maximum amount of citizens in the [config file](/source/misc/configfile)" | markdownify %}
+                    {% else %}
+                        {% assign citizens = "citizens" %}
+                        {% if unlock.citizens == 1 %}
+                            {% assign citizens = "citizen" %}
+                        {% endif %}
+                        {% assign text = "Increases the colony it's citizen capacity to a total of **" | append: unlock.amount | append: "** " | append: citizens | markdownify %}
+                    {% endif %}
+
+                {% when "colonist:level_up" %}
+                    {% assign text = "Increases the rate colonists level up by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "colonist:health" %}
+                    {% assign hearts = "hearts" %}
+                    {% if unlock.hearts == 1 %}
+                        {% assign hearts = "heart" %}
+                    {% endif %}
+                    {% assign text = "Increases colonists their health by **" | append: unlock.hearts | append: "** " | append: hearts | markdownify %}
+
+                {% when "colonist:happiness" %}
+                    {% assign text = "Increases colonists their happiness by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "colonist:saturation" %}
+                    {% assign text = "Food is **" | append: unlock.percentage | append: "%** more effective at restoring colonists their saturation" | markdownify %}
+
+                {% when "colonist:speed" %}
+                    {% assign text = "Increases colonists their speed by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "colonist:bedtime" %}
+                    {% assign cumulative = "" %}
+                    {% if unlock.cumulative == true %}
+                        {% assign cumulative = " (cumulative with prerequisite research)" %}
+                    {% endif %}
+                    {% assign text = "Colonists' bedtime is pushed back by **" | append: unlock.hours | append: "** in-game hour" | append: cumulative | markdownify %}
+
+                {% when "colonist:child:grow_up" %}
+                    {% assign text = "Decreases the time it takes children to grow up by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:teacher:effectiveness" %}
+                    {% capture teachers_link %}
+                        {%- include links/worker.html key="teacher" plural=true -%}
+                    {% endcapture %}
+                    {% assign text = "Increases the effectiveness of " | append: teachers_link | append: " by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:undertaker:resurrect_chance" %}
+                    {% capture undertakers_link %}
+                        {%- include links/worker.html key="undertaker" plural=true -%}
+                    {% endcapture %}
+                    {% assign text = "Increases the " | append: undertakers_link | append: " chances of resurrecting citizens by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:undertaker:grave_despawn" %}
+                    {% assign text = "Graves take **" | append: unlock.minutes | append: "** more minutes before decaying" | markdownify %}
+
+                {% when "worker:guard:armor" %}
+                    {% assign text = "Increases Guards their armor's durability by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:guard:damage" %}
+                    {% assign hearts = "hearts" %}
+                    {% if unlock.hearts == 1 %}
+                        {% assign hearts = "heart" %}
+                    {% endif %}
+                    {% capture worker_link %}
+                        {%- include links/worker.html key=unlock.worker plural=unlock.plural -%}
+                    {% endcapture %}
+                    {% assign text = "Increases " | append: worker_link | append: " damage by **" | append: unlock.hearts | append: "** " | append: hearts | markdownify %}
+
+                {% when "worker:knight:block" %}
+                    {% capture knight_link %}
+                        {%- include links/worker.html key="knight" plural=true -%}
+                    {% endcapture %}
+                    {% assign text = "Increases the chance for " | append: knight_link | append: " to block attacks by **" | append: unlock.percentage | append: "%**" | markdownify %}
+
+                {% when "worker:archer:multishot" %}
+                    {% capture archer_link %}
+                        {%- include links/worker.html key="archer" plural=true -%}
+                    {% endcapture %}
+                    {% assign text = "**" | append: unlock.percentage | append: "%** chance for " | append: archer_link | append: " to shoot 2 arrows at the same time" | markdownify %}
+
+                {% when "worker:custom_template" %}
+                    {% capture worker_link %}
+                        {%- include links/worker.html key=unlock.worker plural=unlock.plural -%}
+                    {% endcapture %}
+                    {% assign text = unlock.template | replace: "{0}", worker_link | markdownify %}
+
+                {% when "healing:percent" %}
+                    {% assign text = "Every tick that a colonist is healing, they heal by **" | append: unlock.percentage | append: "%** more" | markdownify %}
+
+                {% when "healing:saturation" %}
+                    {% assign text = "Colonists can heal with only **" | append: unlock.saturation | append: "%** saturation" | markdownify %}
+
+                {% else %}
+                    {% assign text = unlock %}
+
+            {% endcase %}
+            <li>{{- text -}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

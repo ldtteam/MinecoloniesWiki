@@ -13,7 +13,7 @@
             <tr>
                 <td>
                     {% assign key = entry[0] %}
-                    {% include functions/worker_url.html key=key %}
+                    {% include links/worker.html key=key %}
                 </td>
                 <td>{{ entry[1].traits.primary | default: "***No primary trait***" | markdownify }}</td>
                 <td>{{ entry[1].traits.secondary | default: "***No secondary trait***" | markdownify }}</td>

@@ -12,7 +12,7 @@ The Concrete Mixer will craft all types of concrete powder and place them in flo
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Concrete Mixer's Hut GUI
 

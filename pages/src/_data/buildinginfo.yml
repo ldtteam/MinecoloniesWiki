@@ -1,5 +1,6 @@
 apiary:
   name: Apiary
+  plural: Apiaries
   workers:
     - beekeeper
   recipes:
@@ -11,6 +12,7 @@ apiary:
       description: Here you choose if the Beekeeper will collect honeycombs, honey bottles, or both. They will collect whatever shows on the GUI.
 archery:
   name: Archery
+  plural: Archeries
   workers:
     - archer
   recipes:
@@ -31,6 +33,7 @@ bakery:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 barracks:
   name: Barracks
+  plural: Barracks
   workers:
     - archer
     - druid
@@ -39,6 +42,7 @@ barracks:
     - barracks
 barrackstower:
   name: Barracks Tower
+  plural: Barracks Towers
   workers:
     - archer
     - druid
@@ -48,11 +52,11 @@ barrackstower:
       description: This is where you can choose if you want the Guard to patrol, follow, or guard.
       options:
         - name: Patrol
-          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>. 
+          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>.
         - name: Guard
           description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate the guard location.
         - name: Follow
-          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>. 
+          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>.
     - name: Retreat on low health
       description: Here you can choose if the Guard will attempt to retreat when they have low health.
     - name: Hire Trainee
@@ -68,6 +72,7 @@ barrackstower:
       description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
 blacksmith:
   name: Blacksmith's Hut
+  plural: Blacksmith Huts
   workers:
     - blacksmith
   recipes:
@@ -82,6 +87,7 @@ blacksmith:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 builder:
   name: Builder's Hut
+  plural: Builder Huts
   workers:
     - builder
   recipes:
@@ -113,6 +119,7 @@ builder:
       description: Here you can select what block the builder uses to fill in holes/gaps in the schematic.  The default is the dirt block.
 chickenfarmer:
   name: Chicken Farmer's Hut
+  plural: Chicken Farmer Huts
   workers:
     - chickenfarmer
   recipes:
@@ -124,6 +131,7 @@ chickenfarmer:
       description: On by default. Here you can choose if the farmer will feed baby animals, to let them grow up faster.
 combatacademy:
   name: Combat Academy
+  plural: Combat Academies
   workers:
     - knight
   recipes:
@@ -157,6 +165,7 @@ concretemixer:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 courier:
   name: Courier's Hut
+  plural: Courier Huts
   workers:
     - courier
   recipes:
@@ -177,8 +186,9 @@ cowhand:
       description: Off by default. When on, you provide the Cowhand with as many empty buckets as you like. In return, they will milk the cows and give you back buckets of milk.
 crusher:
   name: Crusher's Hut
+  plural: Crusher Huts
   workers:
-    - crusher 
+    - crusher
   recipes:
     - crusher
   settings:
@@ -191,6 +201,7 @@ crusher:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 dyer:
   name: Dyer's Hut
+  plural: Dyer Huts
   workers:
     - dyer
   recipes:
@@ -205,6 +216,7 @@ dyer:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 enchantertower:
   name: Enchanter's Tower
+  plural: Enchanter Towers
   workers:
     - enchanter
   recipes:
@@ -230,6 +242,7 @@ farm:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 fisher:
   name: Fisher's Hut
+  plural: Fisher Huts
   workers:
     - fisher
   recipes:
@@ -250,6 +263,7 @@ fletcher:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 flowershop:
   name: Florist's Hut
+  plural: Florist Huts
   workers:
     - florist
   recipes:
@@ -274,6 +288,7 @@ forester:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 glassblower:
   name: Glassblower's Hut
+  plural: Glassblower Huts
   workers:
     - glassblower
   recipes:
@@ -288,12 +303,14 @@ glassblower:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 graveyard:
   name: Graveyard
+  plural: Graveyards
   workers:
     - undertaker
   recipes:
     - graveyard
 guardtower:
   name: Guard tower
+  plural: Guard towers
   workers:
     - archer
     - druid
@@ -305,11 +322,11 @@ guardtower:
       description: This is where you can choose if you want the Guard to patrol, follow, or guard.
       options:
         - name: Patrol
-          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>. 
+          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>.
         - name: Guard
           description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate the guard location.
         - name: Follow
-          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>. 
+          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>.
         - name: Patrol Mine
           description: The Guard will patrol the level of a <a href="../../source/buildings/mine">Mine</a>. You must also assign that level in the Mine GUI.
     - name: Retreat on low health
@@ -325,24 +342,30 @@ guardtower:
           description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
     - name: Follow Mode
       description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
+  research_requirements_multiple: true
 hospital:
   name: Hospital
+  plural: Hospitals
   workers:
     - healer
   recipes:
     - hospital
 house:
   name: House
+  plural: Houses
   recipes:
     - house
+  research_requirements_multiple: true
 library:
   name: Library
+  plural: Libraries
   workers:
     - librarystudent
   recipes:
     - library
 mechanic:
   name: Mechanic's Hut
+  plural: Mechanic Huts
   workers:
     - name: Mechanic
       value: mechanic
@@ -358,6 +381,7 @@ mechanic:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 mine:
   name: Mine
+  plural: Mines
   workers:
     - miner
   recipes:
@@ -369,6 +393,7 @@ mine:
       description: Here you can overide the default maximum depth of the Mine, if you don't want the Miner to dig as deep as the Mine level allows.  The default is -100 (minus sign is not visible in the window).
 mysticalsite:
   name: Mystical Site
+  plural: Mystical Sites
   recipes:
     - mysticalsite
 nethermine:
@@ -389,6 +414,7 @@ nethermine:
       description: Tells the Nether Miner whether to close the portal or not when they return.  Default is On.
 plantation:
   name: Plantation
+  plural: Plantations
   workers:
     - planter
   recipes:
@@ -405,6 +431,7 @@ plantation:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 quarry:
   name: Quarry
+  plural: Quarries
   workers:
     - quarrier
   recipes:
@@ -423,6 +450,7 @@ rabbithutch:
       description: On by default. Here you can choose if the Rabbit Herder will feed baby animals, to let them grow up faster.
 restaurant:
   name: Restaurant
+  plural: Restaurants
   workers:
     - cook
     - assistantcook
@@ -444,6 +472,7 @@ sawmill:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 school:
   name: School
+  plural: Schools
   workers:
     - teacher
     - pupil
@@ -466,6 +495,7 @@ shepherd:
       description: On by default. Here you can choose if the Shepherd will shear the sheep or not.
 sifter:
   name: Sifter's Hut
+  plural: Sifter Huts
   workers:
     - sifter
   recipes:
@@ -478,6 +508,7 @@ smeltery:
     - smeltery
 stonemason:
   name: Stonemason's Hut
+  plural: Stonemason Huts
   workers:
     - stonemason
   recipes:
@@ -492,6 +523,7 @@ stonemason:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 stonesmeltery:
   name: Stone Smeltery
+  plural: Stone Smelteries
   workers:
     - stonesmelter
   recipes:
@@ -506,6 +538,7 @@ stonesmeltery:
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 swineherd:
   name: Swineherd's Hut
+  plural: Swineherd Huts
   workers:
     - swineherd
   recipes:
@@ -517,6 +550,7 @@ swineherd:
       description: On by default. Here you can choose if the Swineherd will feed baby animals, to let them grow up faster.
 tavern:
   name: Tavern
+  plural: Taverns
   recipes:
     - recipe: tavern
       label: Recipe for 1.16
@@ -524,16 +558,19 @@ tavern:
       label: Recipe for 1.18
 townhall:
   name: Town Hall
+  plural: Town Halls
   recipes:
     - townhall
 university:
   name: University
+  plural: Universities
   workers:
     - researcher
   recipes:
     - university
 warehouse:
   name: Warehouse
+  plural: Warehouses
   workers:
     - courier
   recipes:

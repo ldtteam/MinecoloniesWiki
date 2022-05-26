@@ -26,7 +26,7 @@ The Archers in Training are not actual Guards even though they will be dressed a
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Archery GUI
 

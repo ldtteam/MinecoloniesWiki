@@ -25,4 +25,4 @@ The greater a Rabbit Herder's Agility level, the higher their chance to successf
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

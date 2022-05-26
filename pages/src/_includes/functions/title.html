@@ -1,12 +1,9 @@
-{% assign title = page.title %}
-{% assign page_type = page.type | default: "default" %}
-
-{% if page_type == "building" %}
-    {% assign title = site.data.buildinginfo[page.building].name %}
-{% endif %}
-
-{% if page_type == "worker" %}
-    {% assign title = site.data.workerinfo[page.worker].name %}
-{% endif %}
-
-{{ title }}
+{%- assign title = page.title -%}
+{%- assign page_type = page.type | default: "default" -%}
+{%- if page_type == "building" -%}
+    {%- assign title = site.data.buildinginfo[page.building].name -%}
+{%- endif -%}
+{%- if page_type == "worker" -%}
+    {%- assign title = site.data.workerinfo[page.worker].name -%}
+{%- endif -%}
+{{- title -}}

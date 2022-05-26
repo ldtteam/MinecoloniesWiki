@@ -11,4 +11,4 @@ A Concrete Mixer's Stamina level affects the amount of time it takes for them to
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

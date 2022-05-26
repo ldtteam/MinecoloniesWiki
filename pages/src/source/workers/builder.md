@@ -27,7 +27,7 @@ The higher a Builder's Adaptability skill, the faster they'll place blocks. Simi
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Build Options Details
 

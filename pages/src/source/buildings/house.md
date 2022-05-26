@@ -23,7 +23,7 @@ For additional citizens to spawn, you first have to have enough space in your Ho
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## House GUI
 

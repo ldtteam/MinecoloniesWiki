@@ -1,0 +1,6 @@
+{%- assign href = "/source/workers/" | append: include.key -%}
+{%- assign name = site.data.workerinfo[include.key].name -%}
+{%- if include.plural | default: false == true -%}
+    {%- assign name = site.data.workerinfo[include.key].plural -%}
+{%- endif -%}
+<a class="{{- include.class -}}" href="{{- href -}}">{{ name }}</a>

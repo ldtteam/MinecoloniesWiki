@@ -19,7 +19,7 @@ The level of the Warehouse will determine how many Couriers will be able to use 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Warehouse GUI
 

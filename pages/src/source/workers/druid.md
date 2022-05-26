@@ -15,4 +15,4 @@ The higher a Druid’s Mana, the longer their potions last. The higher their Foc
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

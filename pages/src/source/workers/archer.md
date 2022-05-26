@@ -20,4 +20,4 @@ Archers in Training are not actual Guards even though they are dressed in the us
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

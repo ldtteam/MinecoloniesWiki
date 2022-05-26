@@ -28,7 +28,7 @@ A chart of all the jobs, their skills, and their skills's effects, from hog#1112
 <br>
 <br>
 
-{% include worker_table.html %}
+{% include workers/overview_table.html %}
 
 ## Tool/Sword Levels
 

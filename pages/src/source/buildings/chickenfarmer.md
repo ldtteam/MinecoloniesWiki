@@ -19,7 +19,7 @@ The Chicken Farmer's Hut is where the Chicken Farmer will raise chickens, collec
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Chicken Farmer's Hut GUI
 

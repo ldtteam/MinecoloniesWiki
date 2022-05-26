@@ -184,7 +184,6 @@ img {
     clear: right;
     padding: 1.5em;
     margin: .5em 0 .5em 0em;
-    min-width: 300px;
 
     .infobox-image {
         padding: 0.5em;
@@ -380,6 +379,10 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.link-default-color {
+    color: var(--color-light);
 }
 
 /* PRE is used for certain example files on the datapack page to make them show in-line */

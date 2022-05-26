@@ -23,4 +23,4 @@ In 1.18, the Smelter instead applies Fortune to the ores they smelt. The Fortune
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

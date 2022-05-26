@@ -33,7 +33,7 @@ The higher the level of the Crusher's Hut, the more daily output the Crusher can
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Crusher's Hut GUI
 

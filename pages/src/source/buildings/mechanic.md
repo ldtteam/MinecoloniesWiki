@@ -21,7 +21,7 @@ The Mechanic's Hut is where the Mechanic will craft redstone items, rails, minec
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Mechanic's Hut GUI
 

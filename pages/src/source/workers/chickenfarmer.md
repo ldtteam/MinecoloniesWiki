@@ -25,4 +25,4 @@ The higher a Chicken Farmer's Adaptability level is, the greater their chance to
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

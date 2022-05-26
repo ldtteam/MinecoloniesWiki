@@ -20,7 +20,7 @@ The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food a
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Shepherd's Hut GUI
 

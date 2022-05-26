@@ -27,4 +27,4 @@ The higher an Undertaker's Strength skill, the faster they can dig graves.
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

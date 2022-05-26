@@ -40,4 +40,4 @@ The Sifter can use 4 different meshes. The higher levels of meshes will find mor
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
