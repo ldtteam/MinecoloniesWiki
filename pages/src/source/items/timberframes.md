@@ -2,7 +2,9 @@
 title: Timber Framed Blocks
 layout: default
 ---
-# Timber Framed Blocks
+# Timber Framed Blocks (1.16.5)
+
+[For 1.17+, click here.](../../source/dependencies/domumornamentum)
 
 <div class="infobox box text-center">
     <recipe>timberframeplain</recipe>
@@ -15,8 +17,6 @@ layout: default
     <recipe>timberframealtcactus</recipe><br>
 </div>
 <br>
-
-**Quick Fix: If you're using 1.17+ that has Domum Ornamentum, see the [Shingles](../../source/items/shingles) page for useage of the Architect's Cutter.**
 
 Timber framed blocks are blocks added in Structurize. Timber framed blocks come in various wood frames, as seen in the first recipe, surrounding not only wood centers but also cactus, cobblestone, stone, paper and bricks. (The outside frames only come in wood and cactus.) 
 

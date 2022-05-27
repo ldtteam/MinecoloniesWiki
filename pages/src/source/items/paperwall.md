@@ -2,7 +2,7 @@
 title: Paper Wall
 layout: default
 ---
-# Paper Wall
+# Paper Wall (1.16.5)
 
 <div class="infobox box text-center">
     <img src="../../assets/images/items/paperwall.png" alt="Paper Wall"/><br>
