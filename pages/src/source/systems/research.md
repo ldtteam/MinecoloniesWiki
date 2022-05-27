@@ -47,6 +47,10 @@ You can only have one column 6 research in each of the Combat, Civilian, and Tec
 ### {{ research_tree[1].name }}
 [Back to top](#top-anchor)
 
+{% if research_tree[1].description != null and research_tree[1].description != "" %}
+{{ research_tree[1].description }}
+{% endif %}
+
 {% assign chains = research_tree[1].chains %}
 {% include research/recurse.html tree=research_tree_name chains=chains %}
 
