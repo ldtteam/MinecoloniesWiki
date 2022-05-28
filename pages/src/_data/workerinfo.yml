@@ -2,8 +2,8 @@ alchemist:
   name: Alchemist
   plural: Alchemists
   traits:
-    primary: Dexterity?
-    secondary: Mana?
+    primary: Dexterity
+    secondary: Mana
   effects:
     primary: Faster brewing
     secondary: Able to use more brewing stands
