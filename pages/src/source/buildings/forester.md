@@ -11,7 +11,7 @@ The Forester's Hut is where the Forester will go in between chopping down trees.
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Forester's Hut GUI
 

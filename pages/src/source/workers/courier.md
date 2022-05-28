@@ -26,4 +26,4 @@ The greater a Courier's Agility skill, the faster they'll run. The greater their
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

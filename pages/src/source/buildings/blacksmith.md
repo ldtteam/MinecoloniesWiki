@@ -26,7 +26,7 @@ When a colonist is requesting a tool from the Blacksmith with multiple accepted 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Blacksmith's Hut GUI
 

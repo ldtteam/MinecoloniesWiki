@@ -23,7 +23,7 @@ While mining, sometimes the Miner will get lucky and get an ore block instead of
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Mine GUI
 

@@ -42,7 +42,7 @@ You can click on the arrows to increase the size of the area the Farmer will far
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Farm GUI
 

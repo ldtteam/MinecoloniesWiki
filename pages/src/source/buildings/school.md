@@ -21,7 +21,7 @@ The level of the School determines how many Pupils can be taught at a time.
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## School GUI
 

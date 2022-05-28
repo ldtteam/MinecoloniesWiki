@@ -11,7 +11,7 @@ The Restaurant is where the Cook will cook food, provided they have the necessar
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Restaurant GUI
 

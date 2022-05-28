@@ -22,7 +22,7 @@ The recommended maximum grave count per Graveyard level is below. This is **not 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Graveyard GUI
 

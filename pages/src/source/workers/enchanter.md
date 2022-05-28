@@ -26,4 +26,4 @@ The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) 
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

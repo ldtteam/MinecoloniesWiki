@@ -1,0 +1,6 @@
+{%- assign href = "/source/buildings/" | append: include.key -%}
+{%- assign name = site.data.buildinginfo[include.key].name -%}
+{%- if include.plural | default: false == true -%}
+    {%- assign name = site.data.buildinginfo[include.key].plural -%}
+{%- endif -%}
+<a class="{{- include.class -}}" href="{{- href -}}">{{- name -}}</a>

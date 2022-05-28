@@ -24,7 +24,7 @@ The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone,
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Stone Smeltery GUI
 

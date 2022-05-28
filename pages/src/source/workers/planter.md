@@ -25,4 +25,4 @@ If a Planter's Dexterity level is higher, they'll craft faster.
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

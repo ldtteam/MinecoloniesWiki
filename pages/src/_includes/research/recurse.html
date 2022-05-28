@@ -1,0 +1,54 @@
+{% assign items_to_check = "" | split: "," %}
+{% assign items_to_check_parents = "" | split: "," %}
+
+{% for research in include.chains %}
+    {% assign items_to_check = items_to_check | push: research %}
+{% endfor %}
+
+<div>
+    {%- for column in site.data.research.columns -%}
+        {% if items_to_check.size > 0 %}
+            <h4>{{ column.title }}</h4>
+            {% if column.terminal == true %}
+                <p>
+                    <b>All of these researches below are mutually exclusive, you can only pick one!</b>
+                </p>
+            {% endif %}
+            <div class="mb-3 overflow-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="col-2">
+                                <b>Name</b>
+                            </td>
+                            <td class="col-2">
+                                <b>Prerequisite</b>
+                            </td>
+                            <td class="col-4">
+                                <b>Requirements</b>
+                            </td>
+                            <td class="col-4">
+                                <b>Effects</b>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% assign next_items_to_check = "" | split: "," %}
+                        {% assign next_items_to_check_parents = "" | split: "," %}
+                        {% for item in items_to_check %}
+                            {% assign prerequisite = items_to_check_parents[forloop.index0] %}
+                            {% include research/recurse_row.html tree=include.tree research=item prerequisite=prerequisite %}
+
+                            {% for child in item.children %}
+                                {% assign next_items_to_check = next_items_to_check | push: child %}
+                                {% assign next_items_to_check_parents = next_items_to_check_parents | push: item.name %}
+                            {% endfor %}
+                        {% endfor %}
+                        {% assign items_to_check = next_items_to_check %}
+                        {% assign items_to_check_parents = next_items_to_check_parents %}
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+    {%- endfor -%}
+</div>

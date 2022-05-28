@@ -36,7 +36,7 @@ The Dyer's Hut is where the Dyer will craft dyes and dye other items, including 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Dyer's Hut GUI
 

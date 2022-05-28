@@ -21,7 +21,7 @@ The Nether Miner can also craft lava buckets.
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Nether Mine GUI
 

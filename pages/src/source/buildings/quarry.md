@@ -11,7 +11,7 @@ The Quarry is where you can hire a [Quarrier](../../source/workers/quarrier) to 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Quarry GUI
 

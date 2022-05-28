@@ -30,4 +30,4 @@ Note: The portal in the Nether Mine will transport players to the Nether. Howeve
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

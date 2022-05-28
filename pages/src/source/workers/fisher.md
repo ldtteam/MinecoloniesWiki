@@ -13,4 +13,4 @@ The higher a Fisher's Focus and Agility levels, the less time it'll take before 
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

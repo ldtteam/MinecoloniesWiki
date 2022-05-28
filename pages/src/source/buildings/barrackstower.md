@@ -39,7 +39,7 @@ Guard(s) will patrol a set distance around their tower, which is based on their 
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Barracks Tower GUI
 

@@ -1,0 +1,5 @@
+{%- assign href = "/source/workers/" | append: include.key -%}
+{%- capture name -%}
+    {%- include workers/name.html key=include.key plural=include.plural -%}
+{%- endcapture -%}
+<a class="{{- include.class -}}" href="{{- href -}}">{{ name }}</a>

@@ -20,7 +20,7 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Cowhand's Hut GUI
 

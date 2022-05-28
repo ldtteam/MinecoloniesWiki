@@ -22,7 +22,7 @@ The Sawmill is where the Carpenter will craft any items made of at least 75% woo
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Sawmill GUI
 

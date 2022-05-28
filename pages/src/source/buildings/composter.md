@@ -23,7 +23,7 @@ The Composter's Hut is where the Composter will turn organic materials into [com
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Composter's Hut GUI
 

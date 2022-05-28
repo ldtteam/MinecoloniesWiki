@@ -27,7 +27,7 @@ If the Builder removes a block while building and/or upgrading, they will keep i
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Builder's Hut GUI
 

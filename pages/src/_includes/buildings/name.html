@@ -1,0 +1,9 @@
+{%- assign key = page.building -%}
+{%- if include.key -%}
+    {%- assign key = include.key -%}
+{%- endif -%}
+{%- assign name = site.data.buildinginfo[key].name -%}
+{%- if include.plural == true -%}
+    {%- assign name = site.data.buildinginfo[key].plural -%}
+{%- endif -%}
+{{- name -}}

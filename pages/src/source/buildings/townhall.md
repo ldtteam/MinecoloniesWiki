@@ -11,7 +11,7 @@ The Town Hall is the central part of your colony.
 {% capture infobox %}
     {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 
 ## Starting a New Colony

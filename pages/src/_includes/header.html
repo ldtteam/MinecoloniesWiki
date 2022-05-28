@@ -44,7 +44,7 @@
                         {% when "buildings" %}
                             {% for entry in site.data.buildinginfo %}
                                 {% assign key = entry[0] %}
-                                {% include functions/building_url.html key=key class="dropdown-item" %}
+                                {% include links/building.html key=key class="dropdown-item" %}
                             {% endfor %}
                         {% when "workers" %}
                             {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
@@ -55,7 +55,7 @@
                                 <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
                                 {% for entry in group.items %}
                                     {% assign key = entry[0] %}
-                                    {% include functions/worker_url.html key=key class="dropdown-item" %}
+                                    {% include links/worker.html key=key class="dropdown-item" %}
                                 {% endfor %}
                             {% endfor %}
                         {% else %}
@@ -189,7 +189,7 @@
                                 {% when "buildings" %}
                                     {% for entry in site.data.buildinginfo %}
                                         {% assign key = entry[0] %}
-                                        {% include functions/building_url.html key=key class="dropdown-item" %}
+                                        {% include links/building.html key=key class="dropdown-item" %}
                                     {% endfor %}
                                 {% when "workers" %}
                                     {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
@@ -200,7 +200,7 @@
                                         <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
                                         {% for entry in group.items %}
                                             {% assign key = entry[0] %}
-                                            {% include functions/worker_url.html key=key class="dropdown-item" %}
+                                            {% include links/worker.html key=key class="dropdown-item" %}
                                         {% endfor %}
                                     {% endfor %}
                                 {% else %}

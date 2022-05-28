@@ -34,7 +34,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Glassblower's Hut GUI
 
