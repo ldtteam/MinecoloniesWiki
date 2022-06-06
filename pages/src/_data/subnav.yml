@@ -41,6 +41,8 @@ subnav:
     subitems:
       - page: Domum Ornamentum (1.17+)
         url: source/dependencies/domumornamentum
+      - page: BlockUI (1.17+)
+        url: source/dependencies/blockui
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome
