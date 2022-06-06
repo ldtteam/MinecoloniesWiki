@@ -45,6 +45,8 @@ subnav:
         url: source/dependencies/domumornamentum
       - page: Multi-Piston (1.17+)
         url: source/dependencies/multipiston
+      - page: Structurize
+        url: source/dependencies/structurize
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome
