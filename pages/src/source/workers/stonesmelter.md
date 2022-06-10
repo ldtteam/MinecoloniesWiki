@@ -13,4 +13,4 @@ The higher the Stone Smelter's Dexterity level, the faster things will smelt. At
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

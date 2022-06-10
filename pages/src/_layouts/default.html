@@ -37,9 +37,9 @@ title: MineColonies Wiki
         <!-- End Google Tag Manager -->
 
         {% capture title %}
-            {% include functions/title.html %}
+            {%- include functions/title.html -%}
         {% endcapture %}
-        <title>{{ title | append: " | " | append: site.title }}</title>
+        <title>{{- title | append: " | " | append: site.title -}}</title>
         {% seo title=false %}
     </head>
 

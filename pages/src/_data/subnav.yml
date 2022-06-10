@@ -39,8 +39,14 @@ subnav:
         url: source/systems/worker
   - title: Dependencies
     subitems:
+      - page: BlockUI (1.17+)
+        url: source/dependencies/blockui
       - page: Domum Ornamentum (1.17+)
         url: source/dependencies/domumornamentum
+      - page: Multi-Piston (1.17+)
+        url: source/dependencies/multipiston
+      - page: Structurize
+        url: source/dependencies/structurize
   - title: Items/Blocks
     subitems:
       - page: Ancient Tome

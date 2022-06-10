@@ -9,4 +9,4 @@ The Library Student is not a production part of your colony, but rather a way to
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

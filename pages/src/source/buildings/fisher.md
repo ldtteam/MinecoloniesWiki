@@ -15,7 +15,7 @@ Upgrading the Fisher's Hut will expand the range at which the Fisher can fish, a
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Fisher's Hut GUI
 

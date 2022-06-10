@@ -15,4 +15,4 @@ The higher a Composter's Stamina level, the faster they will compost. Similarly,
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

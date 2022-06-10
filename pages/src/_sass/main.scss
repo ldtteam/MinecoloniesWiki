@@ -89,6 +89,10 @@ html[data-theme='dark'] {
 }
 
 /* STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: transparent;
     margin: 0;
@@ -184,7 +188,6 @@ img {
     clear: right;
     padding: 1.5em;
     margin: .5em 0 .5em 0em;
-    min-width: 300px;
 
     .infobox-image {
         padding: 0.5em;
@@ -398,6 +401,15 @@ img {
   left: 100%;
   margin-left: .1rem;
   margin-right: .1rem;
+}
+
+.link-default-color {
+    color: var(--color-light);
+}
+
+.row-scroll-snap {
+    // Makes the scroll snap point 5 em above the intended element (to leave a nice gap)
+    scroll-margin-top: 5em;
 }
 
 /* PRE is used for certain example files on the datapack page to make them show in-line */

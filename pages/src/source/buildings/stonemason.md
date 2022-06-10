@@ -22,7 +22,7 @@ The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirel
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Stonemason's Hut GUI
 

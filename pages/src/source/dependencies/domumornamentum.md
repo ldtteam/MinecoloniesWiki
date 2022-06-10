@@ -5,7 +5,7 @@ layout: default
 # Domum Ornamentum
 <br>
 
-Domum Ornamentum, or DO, is a dependency of MineColonies (1.17+ only) that adds combinatorial crafting of ornamental blocks. With it, you can combine almost any 1-3 full blocks to create framed blocks, shingles, pillars, doors, and many more!
+[Domum Ornamentum](https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum), or DO, is a dependency of MineColonies (1.17+ only) that adds combinatorial crafting of ornamental blocks. With it, you can combine almost any 1-3 full blocks to create framed blocks, shingles, pillars, doors, and many more!
 
 One block gives a few options, but you can combine up to three blocks together.
 Given that Minecraft has quite a few blocks, and you do "quite a few" x "quite a few" x "quite a few" x "however many block options for one block" x "however many block options for two blocks" x "however many block options for three blocks".

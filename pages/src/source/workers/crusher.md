@@ -31,4 +31,4 @@ The higher a Crusher's Stamina level, the less of a chance they have to get sick
 {% capture infobox %}
 {% include infobox/worker.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}

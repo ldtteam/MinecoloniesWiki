@@ -1,0 +1,20 @@
+{% assign research = include.research %}
+
+{% capture id %}
+    {%- include research/id.html tree=include.tree name=research.name -%}
+{% endcapture %}
+
+<tr id="{{ id }}" class="row-scroll-snap">
+    <td>
+        <u>{%- include links/research.html tree=include.tree name=research.name class="link-default-color" showaffix=false -%}</u>
+    </td>
+    <td>
+        {% if include.prerequisite %}
+            <u>{% include links/research.html tree=include.tree name=include.prerequisite class="link-default-color" showaffix=false %}</u>
+        {% else %}
+            -
+        {% endif %}
+    </td>
+    <td>{% include research/requirements.html requirements=research.requirements %}</td>
+    <td>{% include research/unlocks.html unlocks=research.unlocks %}</td>
+</tr>

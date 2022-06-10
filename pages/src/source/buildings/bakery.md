@@ -16,7 +16,7 @@ The Baker can also craft some non-vanilla breads:
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Bakery GUI
 

@@ -19,7 +19,7 @@ The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food.
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Swineherd's Hut GUI
 

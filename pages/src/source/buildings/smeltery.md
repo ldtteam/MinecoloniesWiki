@@ -14,7 +14,7 @@ The Smeltery is where the Smelter will smelt ores into ingots.
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Smeltery GUI
 

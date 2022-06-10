@@ -27,7 +27,7 @@ The higher the level of the Hospital, the more people can be healed at a time. S
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
-{% include page-infobox-wrapper.html content=content infobox=infobox %}
+{% include infobox/wrapper.html content=content infobox=infobox %}
 
 ## Hospital GUI
 
