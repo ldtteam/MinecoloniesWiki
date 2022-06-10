@@ -200,7 +200,7 @@
                                             <ul class="dropdown-menu">
                                                 {% for entry in site.data.workerinfo %}
                                                     {% assign key = entry[0] %}
-                                                    {% if entry[1].type == type[0] or entry[1].type contains type[0] %}
+                                                    {% if entry[1].type == type[0] %}
                                                         <li>
                                                             {% include links/worker.html key=key class="dropdown-item" %}
                                                         </li>

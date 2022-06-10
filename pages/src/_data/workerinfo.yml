@@ -221,9 +221,7 @@ enchanter:
 farmer:
   name: Farmer
   plural: Farmers
-  type:
-    - crafter
-    - gatherer
+  type: gatherer
   traits:
     primary: Stamina
     secondary: Athletics
@@ -271,9 +269,7 @@ florist:
 forester:
   name: Forester
   plural: Foresters
-  type:
-    - crafter
-    - gatherer
+  type: gatherer
   traits:
     primary: Strength
     secondary: Focus
@@ -369,9 +365,7 @@ netherminer:
 planter:
   name: Planter
   plural: Planters
-  type:
-    - crafter
-    - gatherer
+  type: gatherer
   traits:
     primary: Agility
     secondary: Dexterity
