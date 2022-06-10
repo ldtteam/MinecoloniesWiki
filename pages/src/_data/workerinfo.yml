@@ -111,7 +111,7 @@ chickenfarmer:
 composter:
   name: Composter
   plural: Composters
-  type: crafter
+  type: gatherer
   traits:
     primary: Stamina
     secondary: Athletics
@@ -259,7 +259,7 @@ fletcher:
 florist:
   name: Florist
   plural: Florists
-  type: crafter
+  type: gatherer
   traits:
     primary: Dexterity
     secondary: Agility
@@ -428,7 +428,7 @@ shepherd:
 sifter:
   name: Sifter
   plural: Sifters
-  type: crafter
+  type: gatherer
   traits:
     primary: Focus
     secondary: Strength
@@ -440,7 +440,7 @@ sifter:
 smelter:
   name: Smelter
   plural: Smelters
-  type: crafter
+  type: gatherer
   traits:
     primary: Athletics
     secondary: Strength
