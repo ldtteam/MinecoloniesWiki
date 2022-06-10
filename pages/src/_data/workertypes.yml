@@ -3,6 +3,6 @@ guard:
 crafter:
   name: Crafter
 resource:
-  name: Resource Getherer
+  name: Resource Gatherer
 default:
   name: Workers
