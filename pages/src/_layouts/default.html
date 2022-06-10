@@ -84,7 +84,7 @@ title: MineColonies Wiki
         <script src="{{ '/assets/js/recipe.js' | relative_url }}"></script>
 
         <script>
-    $( document ).ready(function() {
+    $(document).ready(function() {
 
         // Open navbarSide when button is clicked
         $('#navbarSideButton').on('click', function() {
@@ -104,6 +104,24 @@ title: MineColonies Wiki
 
         $('h1, h2').not('.header, div.sidenav-title > h1').after('<hr/>');
 
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+            console.log(e.target);
+            if (!$(this).next().hasClass("show")) {
+                $(this)
+                    .parents(".dropdown-menu")
+                    .first()
+                    .find(".show")
+                    .removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass("show");
+
+            $(this).parents("li.nav-item.dropdown.show").on("hidden.bs.dropdown", function (e) {
+                $(".dropdown-submenu .show").removeClass("show");
+            });
+
+            return false;
+        });
     });
 
     const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content'); 
