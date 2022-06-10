@@ -1,6 +1,7 @@
 alchemist:
   name: Alchemist
   plural: Alchemists
+  type: crafter
   traits:
     primary: Dexterity
     secondary: Mana
@@ -26,6 +27,7 @@ archer:
 assistantcook:
   name: Assistant Cook
   plural: Assistant Cooks
+  type: crafter
   traits:
     primary: Creativity
     secondary: Knowledge
@@ -37,6 +39,7 @@ assistantcook:
 baker:
   name: Baker
   plural: Bakers
+  type: crafter
   traits:
     primary: Knowledge
     secondary: Dexterity
@@ -48,6 +51,7 @@ baker:
 beekeeper:
   name: Beekeeper
   plural: Beekeepers
+  type: resource
   traits:
     primary: Dexterity
     secondary: Adaptabilty
@@ -59,6 +63,7 @@ beekeeper:
 blacksmith:
   name: Blacksmith
   plural: Blacksmiths
+  type: crafter
   traits:
     primary: Strength
     secondary: Focus
@@ -81,6 +86,7 @@ builder:
 carpenter:
   name: Carpenter
   plural: Carpenters
+  type: crafter
   traits:
     primary: Knowledge
     secondary: Dexterity
@@ -92,6 +98,7 @@ carpenter:
 chickenfarmer:
   name: Chicken Farmer
   plural: Chicken Farmers
+  type: resource
   traits:
     primary: Adaptability
     secondary: Agility
@@ -103,6 +110,7 @@ chickenfarmer:
 composter:
   name: Composter
   plural: Composters
+  type: resource
   traits:
     primary: Stamina
     secondary: Athletics
@@ -114,6 +122,7 @@ composter:
 concretemixer:
   name: Concrete Mixer
   plural: Concrete Mixers
+  type: crafter
   traits:
     primary: Stamina
     secondary: Dexterity
@@ -125,6 +134,7 @@ concretemixer:
 cook:
   name: Cook
   plural: Cooks
+  type: crafter
   traits:
     primary: Adaptability
     secondary: Knowledge
@@ -148,6 +158,7 @@ courier:
 cowhand:
   name: Cowhand
   plural: Cowhands
+  type: resource
   traits:
     primary: Athletics
     secondary: Stamina
@@ -159,6 +170,7 @@ cowhand:
 crusher:
   name: Crusher
   plural: Crushers
+  type: crafter
   traits:
     primary: Stamina
     secondary: Strength
@@ -183,6 +195,7 @@ druid:
 dyer:
   name: Dyer
   plural: Dyers
+  type: crafter
   traits:
     primary: Creativity
     secondary: Dexterity
@@ -194,6 +207,7 @@ dyer:
 enchanter:
   name: Enchanter
   plural: Enchanters
+  type: crafter
   traits:
     primary: Mana
     secondary: Knowledge
@@ -205,6 +219,7 @@ enchanter:
 farmer:
   name: Farmer
   plural: Farmers
+  type: resource
   traits:
     primary: Stamina
     secondary: Athletics
@@ -216,6 +231,7 @@ farmer:
 fisher:
   name: Fisher
   plural: Fishers
+  type: resource
   traits:
     primary: Focus
     secondary: Agility
@@ -227,6 +243,7 @@ fisher:
 fletcher:
   name: Fletcher
   plural: Fletchers
+  type: crafter
   traits:
     primary: Dexterity
     secondary: Creativity
@@ -238,6 +255,7 @@ fletcher:
 florist:
   name: Florist
   plural: Florists
+  type: resource
   traits:
     primary: Dexterity
     secondary: Agility
@@ -249,6 +267,7 @@ florist:
 forester:
   name: Forester
   plural: Foresters
+  type: resource
   traits:
     primary: Strength
     secondary: Focus
@@ -260,6 +279,7 @@ forester:
 glassblower:
   name: Glassblower
   plural: Glassblowers
+  type: crafter
   traits:
     primary: Creativity
     secondary: Focus
@@ -270,7 +290,7 @@ glassblower:
     - glassblower
 healer:
   name: Healer
-  plural: Healers
+  plural: Healer
   traits:
     primary: Mana
     secondary: Knowledge
@@ -305,6 +325,7 @@ librarystudent:
 mechanic:
   name: Mechanic
   plural: Mechanics
+  type: crafter
   traits:
     primary: Knowledge
     secondary: Agility
@@ -316,6 +337,7 @@ mechanic:
 miner:
   name: Miner
   plural: Miners
+  type: resource
   traits:
     primary: Strength
     secondary: Stamina
@@ -327,6 +349,7 @@ miner:
 netherminer:
   name: Nether Miner
   plural: Nether Miners
+  type: resource
   traits:
     primary: Adaptability
     secondary: Strength
@@ -338,6 +361,7 @@ netherminer:
 planter:
   name: Planter
   plural: Planters
+  type: resource
   traits:
     primary: Agility
     secondary: Dexterity
@@ -348,7 +372,7 @@ planter:
     - plantation
 pupil:
   name: Pupil
-  plural: Pupils
+  plural: Pupils  
   traits:
     primary: Intelligence & Knowledge
     secondary: Mana
@@ -357,6 +381,7 @@ pupil:
 quarrier:
   name: Quarrier
   plural: Quarriers
+  type: resource
   traits:
     primary: Strength
     secondary: Stamina
@@ -368,6 +393,7 @@ quarrier:
 rabbitherder:
   name: Rabbit Herder
   plural: Rabbit Herders
+  type: resource
   traits:
     primary: Agility
     secondary: Athletics
@@ -379,6 +405,7 @@ rabbitherder:
 shepherd:
   name: Shepherd
   plural: Shepherds
+  type: resource
   traits:
     primary: Focus
     secondary: Strength
@@ -390,6 +417,7 @@ shepherd:
 sifter:
   name: Sifter
   plural: Sifters
+  type: resource
   traits:
     primary: Focus
     secondary: Strength
@@ -401,6 +429,7 @@ sifter:
 smelter:
   name: Smelter
   plural: Smelters
+  type: crafter
   traits:
     primary: Athletics
     secondary: Strength
@@ -412,6 +441,7 @@ smelter:
 stonemason:
   name: Stonemason
   plural: Stonemasons
+  type: crafter
   traits:
     primary: Creativity
     secondary: Dexterity
@@ -423,6 +453,7 @@ stonemason:
 stonesmelter:
   name: Stone Smelter
   plural: Stone Smelters
+  type: crafter
   traits:
     primary: Athletics
     secondary: Dexterity
@@ -434,6 +465,7 @@ stonesmelter:
 swineherd:
   name: Swineherd
   plural: Swineherds
+  type: resource
   traits:
     primary: Strength
     secondary: Athletics
