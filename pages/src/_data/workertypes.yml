@@ -1,4 +1,8 @@
 guard:
   name: Guards
+crafter:
+  name: Crafter
+resource:
+  name: Resource Getherer
 default:
   name: Workers
