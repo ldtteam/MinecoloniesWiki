@@ -209,7 +209,7 @@ dyer:
 enchanter:
   name: Enchanter
   plural: Enchanters
-  type: crafter
+  type: other
   traits:
     primary: Mana
     secondary: Knowledge
