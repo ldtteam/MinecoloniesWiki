@@ -4,5 +4,7 @@ crafter:
   name: Crafters
 gatherer:
   name: Gatherers
+animals:
+  name: Herders
 other:
   name: Other

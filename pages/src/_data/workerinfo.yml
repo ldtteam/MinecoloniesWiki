@@ -51,7 +51,7 @@ baker:
 beekeeper:
   name: Beekeeper
   plural: Beekeepers
-  type: gatherer
+  type: animals
   traits:
     primary: Dexterity
     secondary: Adaptabilty
@@ -99,7 +99,7 @@ carpenter:
 chickenfarmer:
   name: Chicken Farmer
   plural: Chicken Farmers
-  type: gatherer
+  type: animals
   traits:
     primary: Adaptability
     secondary: Agility
@@ -160,7 +160,7 @@ courier:
 cowhand:
   name: Cowhand
   plural: Cowhands
-  type: gatherer
+  type: animals
   traits:
     primary: Athletics
     secondary: Stamina
@@ -404,7 +404,7 @@ quarrier:
 rabbitherder:
   name: Rabbit Herder
   plural: Rabbit Herders
-  type: gatherer
+  type: animals
   traits:
     primary: Agility
     secondary: Athletics
@@ -416,7 +416,7 @@ rabbitherder:
 shepherd:
   name: Shepherd
   plural: Shepherds
-  type: gatherer
+  type: animals
   traits:
     primary: Focus
     secondary: Strength
@@ -476,7 +476,7 @@ stonesmelter:
 swineherd:
   name: Swineherd
   plural: Swineherds
-  type: gatherer
+  type: animals
   traits:
     primary: Strength
     secondary: Athletics
