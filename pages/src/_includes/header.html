@@ -184,31 +184,39 @@
                 {% for item in site.data.subnav.subnav %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="{{ item.title }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
-                        <div class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
+                        <ul class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
                             {% case item.type %}
                                 {% when "buildings" %}
                                     {% for entry in site.data.buildinginfo %}
                                         {% assign key = entry[0] %}
-                                        {% include functions/building_url.html key=key class="dropdown-item" %}
+                                        <li>
+                                            {% include functions/building_url.html key=key class="dropdown-item" %}
+                                        </li>
                                     {% endfor %}
                                 {% when "workers" %}
-                                    {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
-                                    {% for group in grouped %}
-                                        {% unless forloop.first %}
-                                            <div class="dropdown-divider"></div>
-                                        {% endunless %}
-                                        <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
-                                        {% for entry in group.items %}
-                                            {% assign key = entry[0] %}
-                                            {% include functions/worker_url.html key=key class="dropdown-item" %}
-                                        {% endfor %}
+                                    {% for type in site.data.workertypes %}
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="#">{{ type[1].name }}</a>
+                                            <ul class="dropdown-menu">
+                                                {% for entry in site.data.workerinfo %}
+                                                    {% assign key = entry[0] %}
+                                                    {% if entry[1].type == type[0] or entry[1].type contains type[0] %}
+                                                        <li>
+                                                            {% include functions/worker_url.html key=key class="dropdown-item" %}
+                                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
                                     {% endfor %}
                                 {% else %}
                                     {% for entry in item.subitems %}
-                                        <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                                        <li>
+                                            <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                                        </li>
                                     {% endfor %}
                             {% endcase %}
-                        </div>
+                        </ul>
                     </li>
                 {% endfor %}
                 <li class="nav-item">
@@ -218,4 +226,4 @@
         </div>
     </div>
 </nav>
-<!-- /NAVBAR SECONDARY -->
+<!-- NAVBAR SECONDARY -->

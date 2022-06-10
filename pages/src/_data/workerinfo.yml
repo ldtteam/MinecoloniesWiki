@@ -1,5 +1,6 @@
 alchemist:
   name: Alchemist
+  type: crafter
   traits:
     primary: Dexterity?
     secondary: Mana?
@@ -23,6 +24,7 @@ archer:
     - guardtower
 assistantcook:
   name: Assistant Cook
+  type: crafter
   traits:
     primary: Creativity
     secondary: Knowledge
@@ -33,6 +35,7 @@ assistantcook:
     - restaurant
 baker:
   name: Baker
+  type: crafter
   traits:
     primary: Knowledge
     secondary: Dexterity
@@ -43,6 +46,7 @@ baker:
     - bakery
 beekeeper:
   name: Beekeeper
+  type: gatherer
   traits:
     primary: Dexterity
     secondary: Adaptabilty
@@ -53,6 +57,7 @@ beekeeper:
     - apiary
 blacksmith:
   name: Blacksmith
+  type: crafter
   traits:
     primary: Strength
     secondary: Focus
@@ -63,6 +68,7 @@ blacksmith:
     - blacksmith
 builder:
   name: Builder
+  type: other
   traits:
     primary: Adaptability
     secondary: Athletics
@@ -73,6 +79,7 @@ builder:
     - builder
 carpenter:
   name: Carpenter
+  type: crafter
   traits:
     primary: Knowledge
     secondary: Dexterity
@@ -83,6 +90,7 @@ carpenter:
     - sawmill
 chickenfarmer:
   name: Chicken Farmer
+  type: gatherer
   traits:
     primary: Adaptability
     secondary: Agility
@@ -93,6 +101,7 @@ chickenfarmer:
     - chickenfarmer
 composter:
   name: Composter
+  type: crafter
   traits:
     primary: Stamina
     secondary: Athletics
@@ -103,6 +112,7 @@ composter:
     - composter
 concretemixer:
   name: Concrete Mixer
+  type: crafter
   traits:
     primary: Stamina
     secondary: Dexterity
@@ -113,6 +123,7 @@ concretemixer:
     - concretemixer
 cook:
   name: Cook
+  type: crafter
   traits:
     primary: Adaptability
     secondary: Knowledge
@@ -123,6 +134,7 @@ cook:
     - restaurant
 courier:
   name: Courier
+  type: other
   traits:
     primary: Agility
     secondary: Adaptability
@@ -134,6 +146,7 @@ courier:
     - warehouse
 cowhand:
   name: Cowhand
+  type: gatherer
   traits:
     primary: Athletics
     secondary: Stamina
@@ -144,6 +157,7 @@ cowhand:
     - cowhand
 crusher:
   name: Crusher
+  type: crafter
   traits:
     primary: Stamina
     secondary: Strength
@@ -166,6 +180,7 @@ druid:
     - guardtower
 dyer:
   name: Dyer
+  type: crafter
   traits:
     primary: Creativity
     secondary: Dexterity
@@ -176,6 +191,7 @@ dyer:
     - dyer
 enchanter:
   name: Enchanter
+  type: crafter
   traits:
     primary: Mana
     secondary: Knowledge
@@ -186,6 +202,9 @@ enchanter:
     - enchantertower
 farmer:
   name: Farmer
+  type:
+    - crafter
+    - gatherer
   traits:
     primary: Stamina
     secondary: Athletics
@@ -196,6 +215,7 @@ farmer:
     - farm
 fisher:
   name: Fisher
+  type: gatherer
   traits:
     primary: Focus
     secondary: Agility
@@ -206,6 +226,7 @@ fisher:
     - fisher
 fletcher:
   name: Fletcher
+  type: crafter
   traits:
     primary: Dexterity
     secondary: Creativity
@@ -216,6 +237,7 @@ fletcher:
     - fletcher
 florist:
   name: Florist
+  type: crafter
   traits:
     primary: Dexterity
     secondary: Agility
@@ -226,6 +248,9 @@ florist:
     - flowershop
 forester:
   name: Forester
+  type:
+    - crafter
+    - gatherer
   traits:
     primary: Strength
     secondary: Focus
@@ -236,6 +261,7 @@ forester:
     - forester
 glassblower:
   name: Glassblower
+  type: crafter
   traits:
     primary: Creativity
     secondary: Focus
@@ -246,6 +272,7 @@ glassblower:
     - glassblower
 healer:
   name: Healer
+  type: other
   traits:
     primary: Mana
     secondary: Knowledge
@@ -269,6 +296,7 @@ knight:
     - guardtower
 librarystudent:
   name: Library Student
+  type: other
   traits:
     primary: Intelligence
   effects:
@@ -277,6 +305,7 @@ librarystudent:
     - library
 mechanic:
   name: Mechanic
+  type: crafter
   traits:
     primary: Knowledge
     secondary: Agility
@@ -287,6 +316,7 @@ mechanic:
     - mechanic
 miner:
   name: Miner
+  type: gatherer
   traits:
     primary: Strength
     secondary: Stamina
@@ -297,6 +327,7 @@ miner:
     - mine
 netherminer:
   name: Nether Miner
+  type: gatherer
   traits:
     primary: Adaptability
     secondary: Strength
@@ -307,6 +338,9 @@ netherminer:
     - nethermine
 planter:
   name: Planter
+  type:
+    - crafter
+    - gatherer
   traits:
     primary: Agility
     secondary: Dexterity
@@ -317,6 +351,7 @@ planter:
     - plantation
 pupil:
   name: Pupil
+  type: other
   traits:
     primary: Intelligence & Knowledge
     secondary: Mana
@@ -324,6 +359,7 @@ pupil:
     - school
 quarrier:
   name: Quarrier
+  type: gatherer
   traits:
     primary: Strength
     secondary: Stamina
@@ -334,6 +370,7 @@ quarrier:
     - quarry
 rabbitherder:
   name: Rabbit Herder
+  type: gatherer
   traits:
     primary: Agility
     secondary: Athletics
@@ -344,6 +381,7 @@ rabbitherder:
     - rabbithutch
 shepherd:
   name: Shepherd
+  type: gatherer
   traits:
     primary: Focus
     secondary: Strength
@@ -354,6 +392,7 @@ shepherd:
     - shepherd
 sifter:
   name: Sifter
+  type: crafter
   traits:
     primary: Focus
     secondary: Strength
@@ -364,6 +403,7 @@ sifter:
     - sifter
 smelter:
   name: Smelter
+  type: crafter
   traits:
     primary: Athletics
     secondary: Strength
@@ -374,6 +414,7 @@ smelter:
     - smeltery
 stonemason:
   name: Stonemason
+  type: crafter
   traits:
     primary: Creativity
     secondary: Dexterity
@@ -384,6 +425,7 @@ stonemason:
     - stonemason
 stonesmelter:
   name: Stone Smelter
+  type: crafter
   traits:
     primary: Athletics
     secondary: Dexterity
@@ -394,6 +436,7 @@ stonesmelter:
     - stonesmeltery
 swineherd:
   name: Swineherd
+  type: gatherer
   traits:
     primary: Strength
     secondary: Athletics
@@ -404,6 +447,7 @@ swineherd:
     - swineherd
 teacher:
   name: Teacher
+  type: other
   traits:
     primary: Knowledge
     secondary: Mana
@@ -414,6 +458,7 @@ teacher:
     - school
 undertaker:
   name: Undertaker
+  type: other
   traits:
     primary: Strength
     secondary: Mana
@@ -424,6 +469,7 @@ undertaker:
     - graveyard
 researcher:
   name: University Researcher
+  type: other
   traits:
     primary: Knowledge
     secondary: Mana

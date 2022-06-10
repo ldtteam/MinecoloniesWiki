@@ -1,4 +1,8 @@
 guard:
   name: Guards
-default:
-  name: Workers
+crafter:
+  name: Crafters
+gatherer:
+  name: Gatherers
+other:
+  name: Other
