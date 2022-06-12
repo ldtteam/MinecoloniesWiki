@@ -160,7 +160,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
 | [Glassblower's Hut](../../source/buildings/glassblower) | 1 furnace per level                                                  |                     |
 | [Graveyard](../../source/buildings/graveyard)           | Named Graves, with the amount increasing per level | 14 named graves at level 1, 18 named graves at level 2, 27 named graves at level 3, 36 named graves at level 4, 50 named graves at level 5 |
-| [Guard Tower](../../source/buildings/guardtower)        |                                                                      | 1 bed per level     |
+| [Guard Tower](../../source/buildings/guardtower)        |                                                                      | 1 bed for aesthetics|
 | [Hospital](../../source/buildings/hospital)             | 1 bed per level                                                      |                     |
 | [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
 | [Library](../../source/buildings/library)               | Bookshelves                                                          |                     |
