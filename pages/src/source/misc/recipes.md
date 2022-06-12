@@ -79,6 +79,7 @@ The [Barracks Tower](../../source/buildings/barrackstower) is not listed here be
 
 | Name                                                         | Ingredients                                                | Recipe                         |
 | ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------ |
+| [Alchemist Tower](../../source/buildings/alchemist)          | **Any** Planks + Build Tool + Brewing Stand                | <recipe>alchemist</recipe>        |
 | [Apiary](../../source/buildings/apiary)                      | **Any** Planks + Build Tool + Beehive                      | <recipe>apiary</recipe>        |
 | [Archery](../../source/buildings/archery)                    | **Any** Planks + Build Tool + 3 Bows                       | <recipe>archery</recipe>       |
 | [Bakery](../../source/buildings/bakery)                      | **Any** Planks + Build Tool + Wheat                        | <recipe>baker</recipe>         |
