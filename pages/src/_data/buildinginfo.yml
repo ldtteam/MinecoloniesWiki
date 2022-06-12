@@ -1,3 +1,10 @@
+alchemist:
+  name: Alchemist Tower
+  plural: Alchemist Towers
+  workers:
+    - alchemist
+  recipes:
+    - alchemist
 apiary:
   name: Apiary
   plural: Apiaries
