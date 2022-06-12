@@ -18,8 +18,8 @@ archer:
     primary: Agility
     secondary: Adaptability
   effects:
-    primary: Increases chance of decreasing materials needed
-    secondary: Faster crafting and smelting
+    primary: More damage
+    secondary: Greater range
   buildings:
     - archery
     - barrackstower
