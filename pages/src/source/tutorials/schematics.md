@@ -87,6 +87,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
 | archery1       | archery2       | archery3       | archery4       | archery5       |
+| alchemist1     | alchemist2     | alchemist3     | alchemist4     | alchemist5     |
 | baker1         | baker2         | baker3         | baker4         | baker5         |
 | barracks1      | barracks2      | barracks3      | barracks4      | barracks5      |
 | barrackstower1 | barrackstower2 | barrackstower3 | barrackstower4 | barrackstower5 |
@@ -149,6 +150,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | Building                                                | Requirements                                                         | Suggested           | 
 | :-----------------------------------------------------: | :------------------------------------------------------------------: | :-----------------: | 
 | [Archery](../../source/buildings/archery)               | 1 archery dummy per level (a hay bale with a button on it, or a target block in 1.16) | at least 1 standing position per level (a glowstone block, or any block tagged with `work`) | 
+| [Alchemist](../../source/buildings/alchemist)           | Some leaves and brewing stands? Details incoming                     |                     |
 | [Bakery](../../source/buildings/bakery)                 | 1 furnace                                                            |                     | 
 | [Barracks](../../source/buildings/barracks)             | 1 Barracks Tower per level (up to lvl 4)                             |                     |
 | [Barracks Tower](../../source/buildings/barrackstower)  |                                                                      | 1 bed per level     |
