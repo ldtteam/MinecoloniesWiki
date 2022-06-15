@@ -224,9 +224,11 @@ Some buildings may also require tags to be set on certain blocks using the [tag 
 
 ## Additional Information
 
-### How to override some built-in schematics?
+### How to edit a built-in schematic?
 
-Simply create a schematic file with the same style/name. For instance, to override the [Builder's Hut](../../source/buildings/builder) wooden level 1, create a schematic file name called wooden/builder1.blueprint.
+In creative mode with the build tool and the hut go to place it like you normally would. Rather than clicking the green checkmark there are two blue buttons to the right. One of them says it will place the item in the world with the placeholders (as opposed to replacing them). Choose this option. Make your changes then use the scan tool as before. You can then either save it as a new schematic or override and existing one.
+
+To override, simply create a schematic file with the same style/name. For instance, to override the [Builder's Hut](../../source/buildings/builder) wooden level 1, create a schematic file name called wooden/builder1.blueprint.
 
 ### How to use custom huts?
 
