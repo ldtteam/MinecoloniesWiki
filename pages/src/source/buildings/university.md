@@ -29,8 +29,6 @@ As you level up the University, you can hire more researchers:
   <div class="col">
     {% include contentblock/building/main-gui.html header="When accessing the University hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/universitygui1.png" %}
 
-    {% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Research</strong>." content="Here you can select what research you want to unlock. <strong>Research in Progress</strong> displays how many research projects are currently being worked on, along with the maximum research that can be done. 
-    
-    Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. To see a description of each of the researches, please visit the <a href='../systems/research'>Research System</a> page." image="../../assets/images/gui/universitygui2.png" %}
+    {% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Research</strong>." content="Here you can select what research you want to unlock. <strong>Research in Progress</strong> displays how many research projects are currently being worked on, along with the maximum research that can be done. Once you click on a research tree, you will see the options for each research branch. Each option will tell you the requirements and how long it takes to research that option. To see a description of each of the researches, please visit the <a href='../systems/research'>Research System</a> page." image="../../assets/images/gui/universitygui2.png" %}
   </div>
 </div>
