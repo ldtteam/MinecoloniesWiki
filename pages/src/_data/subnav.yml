@@ -79,6 +79,8 @@ subnav:
         url: source/items/floatingcarpet
       - page: Gates
         url: source/items/gates
+      - page: Magic Potion
+        url: source/items/magicpotion
       - page: Meshes
         url: source/items/meshes
       - page: Mistletoe
