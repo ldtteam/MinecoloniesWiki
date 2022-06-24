@@ -157,7 +157,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | [Builder's Hut](../../source/buildings/builder)         |                                                                      | 1 rack per level    |
 | [Combat Academy](../../source/buildings/combatacademy)  | 1 combat dummy per level (a pumpkin on top of a bale of hay)         |                     |
 | [Composter's Hut](../../source/buildings/composter)     | 1 [compost barrel](../../source/items/compostbarrel) per level       |                     |
-| [Concrete Mixer's Hut](../../source/buildings/concretemixer) | Flowing water with solid blocks below and air blocks above      |                     |
+| [Concrete Mixer's Hut](../../source/buildings/concretemixer) | 3 blocks of Flowing water with solid blocks below and air blocks above      |                     |
 | [Dyer's Hut](../../source/buildings/dyer)               | 1 furnace                                                            |                     |
 | [Fisher's Hut](../../source/buildings/fisher)           | Hut block placed on a block at water level                           | At least 7x7x1 unobstructed body of water if integrating water in the schematic |
 | [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
