@@ -4,7 +4,7 @@ layout: default
 ---
 # Timber Framed Blocks (1.16.5)
 
-[For 1.17+, click here.](../../source/dependencies/domumornamentum)
+### [For Minecraft 1.17+, click here.](../../source/dependencies/domumornamentum)
 
 <div class="infobox box text-center">
     <recipe>timberframeplain</recipe>
