@@ -17,4 +17,4 @@ The stash can be crafted at the [Sawmill](../../source/buildings/sawmill) or by 
 
 ## Using the Stash
 
-To use the stash, right-click on it to bring up the inventory, which works like a chest. Put items in the stash and a Courier from the nearest Warehouse will pick them up.
+To use the stash, right-click on it to bring up the inventory, which works like a chest and can also accept hoppers for automation. Put items in the stash and a Courier from the nearest Warehouse will pick them up and deposit them in the Warehouse for Worker's or your own Requests. This allows for the creation of automated farms outside of Minecolonies and cross compatibility with other mods that automate through machinery giving your Workers access to the materials they need for the recipes you teach them. 
