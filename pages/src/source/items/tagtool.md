@@ -63,11 +63,11 @@ The following tags are currently implemented (more may be added from time to tim
     | :------: | :-----: | :----: | :---------: |
     | `sit`    | Restaurant | 0-many | A "chair" where colonists will sit to eat their food |
     | `sit`    | Tavern | 0-many (~4) | A "chair" where visitors will occasionally sit |
-    | `cobble` | Mine | Always 1 | The cobblestone block behind the top-most ladder at the start of the mineshaft |
+    | `cobble` | Mine | Always 1 | The block behind the top-most ladder at the start of the mineshaft (traditionally cobblestone, but may be something else) |
     | `ladder` | Mine | Always 1 | The top-most ladder at the start of the mineshaft |
     | `bamboo` | Plantation | level-based | A block that bamboo can be planted on |
     | `cactus` | Plantation | level-based | A block that cactus can be planted on |
     | `sugar`  | Plantation | level-based | A block that sugarcane can be planted on |
     | `portal` | Nether Mine | Always 1 | An obsidian block in the bottom of the nether portal |
     | `vault`  | Nether Mine | Always 1 | A block in an enclosed room that the nether miner can stand on |
-    | `work`   | Archery     | level-based | The block the archer squire stands on to shoot the targets |
+    | `work`   | Archery     | level-based | The block the archer squire stands on to shoot at targets (Note: If no tags are used, they look for glowstone.) |
