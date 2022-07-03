@@ -10,11 +10,12 @@ layout: default
 </div>
 <br>
 
-The stash lets a player deposit items that they want to be picked up by a [Courier](../../source/workers/courier) to take to the [Warehouse](../../source/buildings/warehouse).
+The Stash lets a player deposit items that they want to be picked up by a [Courier](../../source/workers/courier) to take to the {% include links/building.html key="warehouse" %}.
 
-The stash can be crafted at the [Sawmill](../../source/buildings/sawmill) or by the player.
+The Stash can be crafted at the {% include links/building.html key="sawmill" %} or by the player.
 <br>
 
 ## Using the Stash
 
-To use the stash, right-click on it to bring up the inventory, which works like a chest. Put items in the stash and a Courier from the nearest Warehouse will pick them up.
+To use the Stash, right-click on it to bring up its inventory, which works like a chest. 
+Put items in the stash and a Courier from the nearest Warehouse will pick them up and deposit them in the Warehouse for workers or your own {% include links/systems.html key="request" %}.
