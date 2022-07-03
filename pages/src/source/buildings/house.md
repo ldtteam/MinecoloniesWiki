@@ -16,7 +16,7 @@ Each level of the House will house one citizen. So:
 | 4              | 4               |
 | 5              | 5               |
 
-For additional citizens to spawn, you first have to have enough space in your House(s) to house your first four citizens. After you have created enough space for your initial four citizens, you have two options for your colony to grow. The first way is to have at least one House at least level 2 that houses two unrelated citizens, which will allow a child to be born in the colony when there is room. You can also make space for a new citizen, go to the [Tavern](../../source/buildings/tavern), wait for a traveler to show up, and then give them the items they request to recruit them.
+For additional citizens to spawn, you first have to have enough space in your House(s) to house your first four citizens. After you have created enough space for your initial four citizens, you have two options for your colony to grow. The first way is to have at least one male and one female unrelated citizens, which will allow a child to be born in the colony when there is room. You can also make space for a new citizen, go to the [Tavern](../../source/buildings/tavern), wait for a traveler to show up, and then give them the items they request to recruit them.
 
 ### Note: To have over 25 citizens, you must first complete the research in the [University](../../source/buildings/university).
 {% endcapture %}
