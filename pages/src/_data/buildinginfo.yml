@@ -147,8 +147,7 @@ composter:
   name: Composter's Hut
   plural: Composter Huts
   workers:
-    - name: Composter
-      value: composter
+    - composter
   recipes:
     - composter
   settings:
@@ -160,8 +159,7 @@ concretemixer:
   name: Concrete Mixer's Hut
   plural: Concrete Mixer Huts
   workers:
-    - name: Concrete Mixer
-      value: concretemixer
+    - concretemixer
   recipes:
     - concretemixer
   settings:
@@ -183,8 +181,7 @@ cowhand:
   name: Cowhand's Hut
   plural: Cowhand Huts
   workers:
-    - name: Cowhand
-      value: cowhand
+    - cowhand
   recipes:
     - cowhand
   settings:
@@ -381,8 +378,7 @@ mechanic:
   name: Mechanic's Hut
   plural: Mechanic Huts
   workers:
-    - name: Mechanic
-      value: mechanic
+    - mechanic
   recipes:
     - mechanic
   settings:
