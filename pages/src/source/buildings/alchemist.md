@@ -6,9 +6,9 @@ layout: building
 {% capture content %}
 The Alchemist Tower is where the Alchemist works. The Alchemist brews potions and harvests netherwart and mistletoe.
 
-**Hint:** The number of recipes you can teach the Sawmill doubles per building level. So:
+**Hint:** The number of recipes you can teach the Alchemist doubles per building level. So:
 
-| Sawmill Level | Number of Recipes |
+| Alchemist Level | Number of Recipes |
 | :-----------: | :---------------: |
 |       1       |        10         |
 |       2       |        20         |
