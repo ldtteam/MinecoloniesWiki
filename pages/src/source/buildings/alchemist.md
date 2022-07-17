@@ -4,11 +4,11 @@ building: alchemist
 layout: building
 ---
 {% capture content %}
-The Alchemist Tower is where the Alchemist works. The Alchemist brews potions and harvests netherwart and mistletoe.
+The {% include buildings/name.html %} is where the {% include workers/name.html key="alchemist" %} works. The {% include workers/name.html key="alchemist" %} brews potions and harvests netherwart and mistletoe.
 
-**Hint:** The number of recipes you can teach the Alchemist doubles per building level. So:
+**Hint:** The number of recipes you can teach the {% buildings/name.html %} doubles per building level. So:
 
-| Alchemist Level | Number of Recipes |
+| {% buildings/name.html %} Level | Number of Recipes |
 | :-----------: | :---------------: |
 |       1       |        10         |
 |       2       |        20         |
