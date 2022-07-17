@@ -27,6 +27,8 @@ When you have that information, you can put the materials in the Architects cutt
 <img src="../../assets/images/misc/do_shingles_cutter.png" alt="The Architects cutter's interface, showing shingles"/>
 
 When you have crafters, e.g. a [Sawmill](../../source/buildings/sawmill), up and running, you can then teach them the recipe by choosing the "custom recipe" tab and putting it in there.
-Input 1 is the top left slot of the cutter, input 2 is the top right, and input 3 the bottom left slot in the cutter. When you have put the items in the slots, you will see various items below the input slots. The crafter can create ALL of those items from the recipe you have input. Make sure you teach the recipe to the appropriate crafter, though! They can only learn a recipe if one of the materials used is appropriate for their profession.
+Input 1 is the top left slot of the cutter, input 2 is the top right, and input 3 the bottom left slot in the cutter. When you have put the items in the slots, you will see various items below the input slots. The crafter can create ALL of those items from the recipe you have input.
+
+However, crafters can only learn these recipes if they correspond to at least one of the materials.  For example, the [Carpenter](../workers/carpenter) can only learn recipes that involve wood, the [Stonemason](../workers/stonemason) can only learn recipes that involve various types of stone, etc.  For recipes involving multiple materials, any of the corresponding crafters work; for example, both the Carpenter and Stonemason can learn this shingles recipe.
 
 <img src="../../assets/images/misc/do_shingles_sawmill.png" alt="Teaching the Sawmill an Architects cutter recipe"/>
