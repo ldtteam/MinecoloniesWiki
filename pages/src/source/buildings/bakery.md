@@ -18,6 +18,8 @@ The Baker can also craft some non-vanilla breads:
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
+**Special Note: The baker only works on request.** If you set a minimum stock of bread at the cook, the baker will begin making bread once they have 3 stacks of wheat. Bread can also be requested at a post box.
+
 ## Bakery GUI
 
 {% include contentblock/building/main-gui.html header="When accessing the Bakery hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/bakerygui1.png" %}
