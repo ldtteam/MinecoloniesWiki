@@ -68,6 +68,12 @@ Everything you have to change is in one file.
 
 *Credit to Holmis*
 
+### Russian
+
+[Download Russian Template File](../../source/misc/languageNameTemplates/russianTemplate.toml)
+
+*Credit to TanLorikk*
+
 ### Spanish
 
 [Download Spanish Template File](../../source/misc/languageNameTemplates/spanishTemplate.toml)
