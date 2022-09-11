@@ -27,6 +27,7 @@ layout: default
   8. Do they have any open requests? They might need a tool or other item to continue their work.
   10. Do they have tools of the correct [level](../../source/systems/worker)? 
   11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
+  12. Do they start working when you get close to them? Maybe Minecraft is not loading enough chunks in your colony. If you are using Optifine then disable the "Smooth World" option. You can also tweak the "forceloadcolony" and "colonyloadstrictness" values in the [Config file](../../source/misc/configfile)
   
 If none of these apply, go on to the next troubleshooting checklists.  
 
