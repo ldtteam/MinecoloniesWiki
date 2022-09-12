@@ -3,7 +3,7 @@ name: Missing Information
 about: If information on the wiki is missing
 title: ''	
 labels: Missing Info	
-assignees:
+assignees: ''
 
 ---	
 
