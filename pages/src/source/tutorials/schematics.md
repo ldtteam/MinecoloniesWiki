@@ -65,6 +65,7 @@ Stylepacks live in the blueprints folder, within your Minecraft folder. This fol
 
 ### The pack.json
 This json file contains metadata describing the style:
+
 | Key Name                               | Type             | Description |
 | -------------------------------------- | ---------------- | ----------- |
 | <code>"version"</code>                 | number           | Pack version, 1 at the moment |
