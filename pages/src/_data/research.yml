@@ -1574,7 +1574,7 @@ trees:
             amount: 64
         unlocks:
           - type: worker:custom_template
-            template: "{0} learns scroll recipes to locate workers and summon guards"
+            template: "{0} learn scroll recipes to locate workers and summon guards"
             worker: enchanter
             plural: true
         children:
