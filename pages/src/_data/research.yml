@@ -1546,7 +1546,7 @@ trees:
                             unlocks:
                               - type: worker:farmer:harvest
                                 percentage: 75
-      - name: Soft shoes
+      - name: Soft Shoes
         requirements:
           - type: building
             building: farm
@@ -1559,11 +1559,11 @@ trees:
             template: "{0} will no longer trample crops"
             worker: farmer
             plural: true
-      - name: Soft shoes
+      - name: More Scrolls
         requirements:
           - type: building
-            building: enchanter
-            level: 2
+            building: enchantertower
+            level: 3
           - type: item
             item: Paper
             amount: 64
