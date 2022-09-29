@@ -17,7 +17,7 @@ It also includes specialized buildings such as the [Warehouse](../../source/buil
 #### Minecolonies is having a competition at the moment! For more details, visit the [competition](source/misc/competition) page
 
 
-### Please note that the wiki is a work in progress and will usually refer to the latest 1.18.2 and&#47;or 1.19.1 alpha version of MineColonies!
+### Please note that the wiki is a work in progress and will usually refer to the latest 1.18.2 and&#47;or 1.19.2 alpha version of MineColonies!
 
 <hr />
 
