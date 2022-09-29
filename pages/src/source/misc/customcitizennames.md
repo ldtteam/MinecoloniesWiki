@@ -70,6 +70,8 @@ Everything you have to change is in one file.
 
 ### Russian
 
+[Download Russian Data Pack](../../source/misc/languageDatapacks/russianDatapack.zip)
+
 [Download Russian Template File](../../source/misc/languageNameTemplates/russianTemplate.toml)
 
 *Credit to TanLorikk*
