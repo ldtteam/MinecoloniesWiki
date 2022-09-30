@@ -14,7 +14,7 @@ First we'll quickly talk about the amazing prizes we got sponsored from Bisect.
 - #1 gets 120$ + A Mug per team member
 - #2 gets 60$ + A Mug per team member
 - #3+#4 get each a 25$ bisect server for a month + A Mug per team member 
-- \+ Small Consolidation Prizes
+- \+ Small Consolation Prizes
 
 You can watch a video on [Youtube](https://www.youtube.com/watch?v=7XomsuBsy9o) explaining the competition
 
