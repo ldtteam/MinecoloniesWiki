@@ -125,6 +125,8 @@ subnav:
     type: buildings
   - title: Misc
     subitems:
+      - page: Competition
+        url: source/misc/competition
       - page: Configuration File
         url: source/misc/configfile
       - page: Custom Citizen Names
