@@ -25,7 +25,7 @@ You paste in an existing style, which can be done with the following command:
 
 `/structurize pasteFolder <x> <y> <z> <style.name> <folder.name> <rotation> <playername(or @p)> <mirror> <prettypaste> 32`<br>
 
-`x`, `y`, `z` are the coordinates you want to start pasting the style, `style.name` is the name of the style, where words are separated by periods. `folder.name` is the name of one folder that could be pasted, with periods instead of slashes or backslashes. `Rotation` is a number from 0 to 3 (inclusive), with the amount of times it needs to be rotated 90 degrees. The `playername` is the name of the one that would be pasting (which could be important for e.g. permissions). `mirror` is either `true` (mirrored) or `false`, and the same holds for `prettypaste`. The 32 denotes the plot size, which needs to be 32 such that every building fits on the plot
+`x`, `y`, `z` are the coordinates you want to start pasting the style, `style.name` is the name of the style, where words are separated by periods. `folder.name` is the name of one folder that could be pasted, with periods instead of slashes or backslashes. `Rotation` is a number from 0 to 3 (inclusive), with the amount of times it needs to be rotated 90 degrees. The `playername` is the name of the one that would be pasting (which could be important for e.g. permissions). `mirror` is either `true` (mirrored) or `false`, and the same holds for `prettypaste`. The 32 denotes the plot size, which needs to be 32 such that every building fits on the plot. (For this style competition you want to use 0 rotation, no mirror, no prettypaste (false)).
 
 e.g. `/structurize pasteFolder x y z Medieval.Oak agriculture.horticulture 0 Dev false false 32` would paste in all plant-based Medieval Oak buildings without rotation or mirror at the specified coordinate for the player "Dev"
 
@@ -46,7 +46,7 @@ You'll then find the schematics in the blueprints folder, which you then bundle 
 You are allowed to join in the competition in a team of up to three people.
 While pre-registration is over you can sign up at [this link](https://forms.gle/791VVJDyAFGdAccp8) and pick up to three mods out of the list below (also linked in the form).
 
-Note: While you can pick up to three mods, keep in mind that the more mods you use, the more mods you add the less compatible your style will be with most modpacks, so make sure you stick to the more popular mods.
+Note: While you can pick up to three mods, keep in mind that the more mods you use, the less compatible your style will be with most modpacks, so make sure you stick to the more popular mods.
 Also keep in mind you can have optional mods, that is, if you use certain deco blocks and the mod is not installed, they will just become air which is also fine.
 
 ## Rules
@@ -56,7 +56,7 @@ Also keep in mind you can have optional mods, that is, if you use certain deco b
 - The competition is in 1.19.2 only.
 - You don't have to hand in a finished style. But we expect as a minimum all buildings in the fundamentals folder + guard tower + barracks
 - Higher completeness results in a better grade.
-- Don't use more than 3 mods aside minecolonies an dependencies (not counting the dependencies of the other mods). Make sure to use more popular mods.
+- Don't use more than 3 mods aside minecolonies and dependencies (not counting the dependencies of the other mods). Make sure to use more popular mods.
 - Make sure that the builder is able to build the blocks from that mod (Might result in disqualification if not).
 - All blocks must be obtainable in survival
 - End of competition is Saturday 15th anywhere in the world (Basically the moment the last country enters Sunday entrance is over)
@@ -73,7 +73,7 @@ Also keep in mind you can have optional mods, that is, if you use certain deco b
 }
 ```
 
-and the list of blueprints.
+and all blueprints.
 
 ## List of mods that may be used
 Up to three mods out of the following list are allowed to be used:
