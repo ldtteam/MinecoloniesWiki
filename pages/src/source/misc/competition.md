@@ -16,16 +16,22 @@ First we'll quickly talk about the amazing prizes we got sponsored from Bisect.
 - #3+#4 get each a 25$ bisect server for a month + A Mug per team member 
 - \+ Small Consolidation Prizes
 
+You can watch a video on [Youtube](https://www.youtube.com/watch?v=7XomsuBsy9o) explaining the competition
+
 ## Overview
 
 ### What has to be done
-You paste in an existing style. Luckily we recently created a tool for this that allows pasting in an entire folder at a time.
+You paste in an existing style, which can be done with the following command:
 
-`<These are the params>`
+`/structurize pasteFolder <x> <y> <z> <style.name> <folder.name> <rotation> <playername(or @p)> <mirror> <prettypaste> 32`<br>
+
+`x`, `y`, `z` are the coordinates you want to start pasting the style, `style.name` is the name of the style, where words are separated by periods. `folder.name` is the name of one folder that could be pasted, with periods instead of slashes or backslashes. `Rotation` is a number from 0 to 3 (inclusive), with the amount of times it needs to be rotated 90 degrees. The `playername` is the name of the one that would be pasting (which could be important for e.g. permissions). `mirror` is either `true` (mirrored) or `false`, and the same holds for `prettypaste`. The 32 denotes the plot size, which needs to be 32 such that every building fits on the plot
+
+e.g. `/structurize pasteFolder x y z Medieval.Oak agriculture.horticulture 0 Dev false false 32` would paste in all plant-based Medieval Oak buildings without rotation or mirror at the specified coordinate for the player "Dev"
+
 
 You can then use the scan tool to mark multiple buildings, replace some of the main blocks. The [scan tool](../../source/items/scantool) page has more information about that.
-Afterwards you should go through and make sure lanterns, doors, etc are still in place.
-
+Afterwards you should go through and make sure lanterns, doors, etc are still in place.<br>
 You are also allowed to do more profound changed than this, but keep in mind you only have 2 weeks to do this.
 
 ### How do you submit
@@ -38,7 +44,7 @@ You'll then find the schematics in the blueprints folder, which you then bundle 
 
 ### How and where to sign up
 You are allowed to join in the competition in a team of up to three people.
-While pre-registration is over you can sign up at `<this link>`: and pick up to three mods out of the list below (also linked in the form).
+While pre-registration is over you can sign up at [this link](https://forms.gle/791VVJDyAFGdAccp8) and pick up to three mods out of the list below (also linked in the form).
 
 Note: While you can pick up to three mods, keep in mind that the more mods you use, the more mods you add the less compatible your style will be with most modpacks, so make sure you stick to the more popular mods.
 Also keep in mind you can have optional mods, that is, if you use certain deco blocks and the mod is not installed, they will just become air which is also fine.
@@ -70,4 +76,25 @@ Also keep in mind you can have optional mods, that is, if you use certain deco b
 and the list of blueprints.
 
 ## List of mods that may be used
-`<To be provided by Ray>`
+Up to three mods out of the following list are allowed to be used:
+
+| Mod name | Version to be used | Link to mod |
+| :------: | :----------------: | :---------: |
+| Biomes O'Plenty   | 1.19.2-17.1.1.152  | <https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty> |
+| Oh the Biomes You'll Go | 1.19.2-2.0.0.11 | <https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go> |
+| Rechiseled  | 1.0.10c for Forge 1.19   | <https://www.curseforge.com/minecraft/mc-mods/rechiseled> |
+| Decorative blocks | 1.19.2-3.0.0 | <https://www.curseforge.com/minecraft/mc-mods/decorative-blocks> |
+| Immersive Engineering   | 1.19.2-9.0.0-153   | <https://www.curseforge.com/minecraft/mc-mods/immersive-engineering> |
+| Engineer's decor  | 1.19.2-forge-1.3.26   | <https://www.curseforge.com/minecraft/mc-mods/engineers-decor> |
+| MrCrayfish Furniture Mod   | 7.0.0-pre34  | <https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod> |
+| Twilight Forest   | 1.19.2 - 4.2.1421  | <https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest> |
+| Create   | 1.19.2 v0.5.0f     | <https://www.curseforge.com/minecraft/mc-mods/create> |
+| Blue Skies  | 1.19.2-v1.3.20  | <https://www.curseforge.com/minecraft/mc-mods/blue-skies> |
+| Quark    | 3.3-371            | <https://www.curseforge.com/minecraft/mc-mods/quark> |
+| Farmers Delight   | 1.2 - 1.19+  | <https://www.curseforge.com/minecraft/mc-mods/farmers-delight> |
+| Supplementaries   | 1.19.2-2.2.4 | <https://www.curseforge.com/minecraft/mc-mods/supplementaries> |
+| Ars Nouveau | 1.19.2-3.4.0    | <https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files> |
+| Epic Knights and Armor  | 1.19.2 6.6v  | <https://www.curseforge.com/minecraft/mc-mods/epic-knights-armor-and-weapons> |
+| Create Crystal Clear | 0.1e 1.19.2  | <https://www.curseforge.com/minecraft/mc-mods/create-crystal-clear> |
+| Biome Makeover | 1.19.2-1.5.12.jar  | <https://www.curseforge.com/minecraft/mc-mods/biome-makeover-forge> |
+| Ecologics   | 2.1.10 (Forge 1.19.2) | <https://www.curseforge.com/minecraft/mc-mods/ecologics> |
