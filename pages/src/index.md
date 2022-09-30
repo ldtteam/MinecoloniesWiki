@@ -12,8 +12,11 @@ MineColonies features NPC workers such as [Builders](../../source/workers/builde
 
 It also includes specialized buildings such as the [Warehouse](../../source/buildings/warehouse), [House](../../source/buildings/house), [Town Hall](../../source/buildings/townhall), [Barracks](../../source/buildings/barracks), [Library](../../source/buildings/library), [University](../../source/buildings/university), and even the [School](../../source/buildings/school).
 
-
-[![Minecolonies competition](assets/images/misc/competitionBanner.png)](source/misc/competition)
+<div style="text-align:center">
+<a href="source/misc/competition">
+<img src="assets/images/misc/competitionBanner.png" alt="competition banner">
+</a>
+</div>
 #### Minecolonies is having a competition at the moment! For more details, visit the [competition](source/misc/competition) page
 
 
