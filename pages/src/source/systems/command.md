@@ -101,7 +101,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony home</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.<br>Example:<br><code>/mc colony home</code></td>
+      <td class="d-block d-md-table-cell">Teleports a colony owner back to the <a href="../../source/buildings/townhall">Town Hall</a> of their colony.(Disabled in the config by default)<br>Example:<br><code>/mc colony home</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony info &lt;[colony id]&gt;</code><br>Default permission level: All</td>
