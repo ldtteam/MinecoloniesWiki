@@ -4,7 +4,7 @@ worker: courier
 layout: worker
 ---
 {% capture content %}
-The Courier is a crutial part of the bloodline of your colony. They will run from worker's hut to [Warehouse](../../source/buildings/warehouse) to worker's hut, visiting all your workers and delivering the tools and materials they need as well as taking their production to the Warehouse.
+The Courier is a crucial part of the bloodline of your colony. They will run from worker's hut to [Warehouse](../../source/buildings/warehouse) to worker's hut, visiting all your workers and delivering the tools and materials they need as well as taking their production to the Warehouse.
 
 The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 
