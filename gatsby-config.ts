@@ -1,39 +1,79 @@
-import type { GatsbyConfig } from "gatsby";
+import { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `MineColonies`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: "MineColonies",
+    siteUrl: "https://minecolonies.com/",
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-sass", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": "GTM-KKZDTMP"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "GTM-KKZDTMP",
+      },
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    `gatsby-plugin-emotion`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Minecolonies",
+        short_name: "Mineco",
+        start_url: "/",
+        background_color: "#ffffff",
+        icon: "src/images/icon.png",
+        display: "standalone",
+      },
     },
-    __key: "pages"
-  }]
-};
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
+        minify: true,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        footnotes: true,
+        gfm: true,
+        plugins: [],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "wiki_buildings",
+        path: "./src/pages/wiki/buildings",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "wiki_workers",
+        path: "./src/pages/wiki/workers",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "./src/pages",
+      },
+    },
+    "gatsby-theme-material-ui",
+  ],
+}
 
-export default config;
+export default config
