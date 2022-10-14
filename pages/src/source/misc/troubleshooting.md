@@ -27,11 +27,12 @@ layout: default
   8. Do they have any open requests? They might need a tool or other item to continue their work.
   10. Do they have tools of the correct [level](../../source/systems/worker)? 
   11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
+  12. Do they start working when you get close to them? Maybe Minecraft is not loading enough chunks in your colony. If you are using Optifine then disable the "Smooth World" option. You can also tweak the "forceloadcolony" and "colonyloadstrictness" values in the [Config file](../../source/misc/configfile)
   
 If none of these apply, go on to the next troubleshooting checklists.  
 
 ### CHECKLIST: Troubleshooting a citizen not working by career
-  1. [Builder](../../source/workers/builder): Remember to click the Build Building button inside the hut block you want to be built, then wait for the Builder to announce they have begun building.
+  1. [Builder](../../source/workers/builder): Remember to click the Build Building button inside the hut block you want to be built, then wait for the {% include links/building.html key="builder" %} to announce they have begun building. If you are upgrading a building, check that the {% include links/worker.html key="builder" %} level is higher than the building you are upgrading.
   2. [Forester](../../source/workers/forester): Set which type of tree they are allowed to cut and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
   3. [Miner](../../source/workers/miner): Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level. Do they have cobblestone, torches, a pickaxe, a shovel, slabs, planks, and fencing (for the mineshaft)?
   4. [Cook](../../source/workers/cook): Set which fuel you want them to use.

@@ -1546,7 +1546,7 @@ trees:
                             unlocks:
                               - type: worker:farmer:harvest
                                 percentage: 75
-      - name: Soft shoes
+      - name: Soft Shoes
         requirements:
           - type: building
             building: farm
@@ -1559,11 +1559,11 @@ trees:
             template: "{0} will no longer trample crops"
             worker: farmer
             plural: true
-      - name: Soft shoes
+      - name: More Scrolls
         requirements:
           - type: building
             building: enchantertower
-            level: 2
+            level: 3
           - type: item
             item: Paper
             amount: 64
@@ -1574,7 +1574,7 @@ trees:
             amount: 64
         unlocks:
           - type: worker:custom_template
-            template: "{0} learns scroll recipes to locate workers and summon guards"
+            template: "{0} learn scroll recipes to locate workers and summon guards"
             worker: enchanter
             plural: true
         children:
@@ -1805,7 +1805,7 @@ trees:
                           - type: worker:recipes
                             percentage: 200
                         children:
-                          - name: Recipe Book
+                          - name: Rainman
                             requirements:
                               - type: item
                                 item: Bucket of Salmon

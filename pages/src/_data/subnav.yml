@@ -57,8 +57,6 @@ subnav:
         url: source/items/barrel_vertical
       - page: Build Tool
         url: source/items/buildtool
-      - page: Cactus Planks
-        url: source/items/cactusplanks
       - page: Calipers
         url: source/items/calipers
       - page: Clipboard
@@ -87,8 +85,6 @@ subnav:
         url: source/items/mistletoe
       - page: Multi-Piston
         url: source/items/multipiston
-      - page: Paper Wall
-        url: source/items/paperwall
       - page: Placeholder Blocks
         url: source/items/placeholderblocks
       - page: Plate Armor
@@ -107,16 +103,12 @@ subnav:
         url: source/items/scrolls
       - page: Shape Tool
         url: source/items/shapetool
-      - page: Shingles
-        url: source/items/shingles
       - page: Stash
         url: source/items/stash
       - page: Supply Camp and Supply Ship
         url: source/items/supplycampandship
       - page: Tag Tool and Tag Anchor
         url: source/items/tagtool
-      - page: Timber Framed Blocks
-        url: source/items/timberframes
       - page: Waypoint
         url: source/items/waypoint
   - title: Jobs
@@ -125,6 +117,8 @@ subnav:
     type: buildings
   - title: Misc
     subitems:
+      - page: Competition
+        url: source/misc/competition
       - page: Configuration File
         url: source/misc/configfile
       - page: Custom Citizen Names

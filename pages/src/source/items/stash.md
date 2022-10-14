@@ -18,4 +18,4 @@ The Stash can be crafted at the {% building sawmill %} or by the player.
 ## Using the Stash
 
 To use the Stash, right-click on it to bring up its inventory, which works like a chest. 
-Put items in the stash and a Courier from the nearest Warehouse will pick them up and deposit them in the Warehouse for workers or your own {% include links/systems.html key="request" %}.
+Put items in the stash and a Courier from the nearest Warehouse will pick them up and deposit them in the Warehouse for workers or your own requests.

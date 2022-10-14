@@ -3,7 +3,7 @@ name: Inaccurate Information
 about: If information on the wiki is wrong
 title: ''	
 labels: Inaccurate Info	
-assignees: ravenbuilder934	
+assignees: ''	
 
 ---	
 

@@ -35,7 +35,7 @@
           "minecraft/crimson_planks",
           "minecraft/warped_planks"
         ],
-        "secondItem": "minecolonies/barrel_vertical",
+        "secondItem": "minecraft/barrel",
         "thirdItem": [
           "minecraft/oak_planks",
           "minecraft/spruce_planks",

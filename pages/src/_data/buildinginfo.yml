@@ -283,6 +283,7 @@ flowershop:
     - flowershop
 forester:
   name: Forester's Hut
+  plural: Forester's Huts
   workers:
     - forester
   recipes:
@@ -566,9 +567,6 @@ tavern:
   singular: true
   recipes:
     - recipe: tavern
-      label: Recipe for 1.16
-    - recipe: tavern117
-      label: Recipe for 1.18
 townhall:
   name: Town Hall
   plural: Town Halls

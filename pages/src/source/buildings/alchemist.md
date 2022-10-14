@@ -6,15 +6,15 @@ layout: building
 {% capture content %}
 The {% building %} is where the {% worker_link alchemist %} works. The {% worker alchemist %} brews potions and harvests netherwart and mistletoe.
 
-**Hint:** The number of recipes you can teach the {% building sawmill %} doubles per building level. So:
+**Hint:** The number of recipes you can teach the {% building %} doubles per building level. So:
 
-| Sawmill Level | Number of Recipes |
-|:-------------:|:-----------------:|
-|       1       |        10         |
-|       2       |        20         |
-|       3       |        40         |
-|       4       |        80         |
-|       5       |        160        |
+| {% include buildings/name.html %} Level | Number of Recipes |
+|:---------------------------------------:|:-----------------:|
+|                    1                    |        10         |
+|                    2                    |        20         |
+|                    3                    |        40         |
+|                    4                    |        80         |
+|                    5                    |        160        |
 
 {% endcapture %}
 {% capture infobox %}
