@@ -103,8 +103,6 @@ subnav:
         url: source/items/scrolls
       - page: Shape Tool
         url: source/items/shapetool
-      - page: Shingles
-        url: source/items/shingles
       - page: Stash
         url: source/items/stash
       - page: Supply Camp and Supply Ship
