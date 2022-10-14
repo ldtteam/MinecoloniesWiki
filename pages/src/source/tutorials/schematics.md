@@ -154,7 +154,7 @@ The schematics are visible in the build tool without the hut block, but you can'
 
 ## [1.18] Custom Hut Filenames
 
-Here is a full list, up-to-date as of 20 January 2021, of the building names. Please note that *capitalization matters*.
+Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note that *capitalization matters*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -167,7 +167,7 @@ Here is a full list, up-to-date as of 20 January 2021, of the building names. Pl
 | blacksmith1    | blacksmith2    | blacksmith3    | blacksmith4    | blacksmith5    |
 | builder1       | builder2       | builder3       | builder4       | builder5       |
 | chickenherder1 | chickenherder2 | chickenherder3 | chickenherder4 | chickenherder5 |
-| citizen1       | citizen2       | citizen3       | citizen4       | citizen5       |
+| residence1     | residence2     | residence3     | residence4     | residence5     |
 | combatacademy1 | combatacademy2 | combatacademy3 | combatacademy4 | combatacademy5 |
 | composter1     | composter2     | composter3     | composter4     | composter5     |
 | concretemixer1 | concretemixer2 | concretemixer3 | concretemixer4 | concretemixer5 |
