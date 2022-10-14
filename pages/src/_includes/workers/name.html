@@ -1,9 +1,0 @@
-{%- assign key = page.worker -%}
-{%- if include.key -%}
-    {%- assign key = include.key -%}
-{%- endif -%}
-{%- assign name = site.data.workerinfo[key].name -%}
-{%- if include.plural == true -%}
-    {%- assign name = site.data.workerinfo[key].plural -%}
-{%- endif -%}
-{{- name -}}

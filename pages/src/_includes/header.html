@@ -43,8 +43,7 @@
                     {% case item.type %}
                         {% when "buildings" %}
                             {% for entry in site.data.buildinginfo %}
-                                {% assign key = entry[0] %}
-                                {% include links/building.html key=key class="dropdown-item" %}
+                                {% building_link entry[0] %}
                             {% endfor %}
                         {% when "workers" %}
                             {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
@@ -54,8 +53,7 @@
                                 {% endunless %}
                                 <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
                                 {% for entry in group.items %}
-                                    {% assign key = entry[0] %}
-                                    {% include links/worker.html key=key class="dropdown-item" %}
+                                    {% worker_link entry[0] %}
                                 {% endfor %}
                             {% endfor %}
                         {% else %}
@@ -188,9 +186,8 @@
                             {% case item.type %}
                                 {% when "buildings" %}
                                     {% for entry in site.data.buildinginfo %}
-                                        {% assign key = entry[0] %}
                                         <li>
-                                            {% include links/building.html key=key class="dropdown-item" %}
+                                            {% building_link entry[0] %}
                                         </li>
                                     {% endfor %}
                                 {% when "workers" %}
@@ -199,10 +196,9 @@
                                             <a class="dropdown-item dropdown-toggle" href="#">{{ type[1].name }}</a>
                                             <ul class="dropdown-menu">
                                                 {% for entry in site.data.workerinfo %}
-                                                    {% assign key = entry[0] %}
                                                     {% if entry[1].type == type[0] %}
                                                         <li>
-                                                            {% include links/worker.html key=key class="dropdown-item" %}
+                                                            {% worker_link entry[0] %}
                                                         </li>
                                                     {% endif %}
                                                 {% endfor %}

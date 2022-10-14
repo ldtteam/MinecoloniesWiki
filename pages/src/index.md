@@ -23,8 +23,7 @@ It also includes specialized buildings such as the [Warehouse](../../source/buil
         {% case item.type %}
             {% when "buildings" %}
                 {% for entry in site.data.buildinginfo %}
-                    {% assign key = entry[0] %}
-                    {% include links/building.html key=key %}<br />
+                    {% building_link entry[0] %}<br />
                 {% endfor %}
             {% when "workers" %}
                 {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
@@ -34,8 +33,7 @@ It also includes specialized buildings such as the [Warehouse](../../source/buil
                     {% endunless %}
                     <span>{{ site.data.workertypes[group.name].name }}</span><br/>
                     {% for entry in group.items %}
-                        {% assign key = entry[0] %}
-                        {% include links/worker.html key=key %}<br />
+                        {% worker_link entry[0] %}<br />
                     {% endfor %}
                 {% endfor %}
             {% else %}

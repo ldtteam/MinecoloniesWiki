@@ -1432,12 +1432,12 @@ trees:
                 amount: 64
             unlocks:
               - type: building
-                building: florist
+                building: flowershop
             children:
               - name: Rainbow Heaven
                 requirements:
                   - type: building
-                    building: florist
+                    building: flowershop
                     level: 3
                   - type: item
                     item: Poppies
@@ -1488,7 +1488,7 @@ trees:
                 unlocks:
                   - type: building:custom_template
                     template: "{0} grow two crops at once"
-                    worker: plantation
+                    building: plantation
                     plural: true
           - name: Bonemeal
             requirements:
@@ -1562,7 +1562,7 @@ trees:
       - name: Soft shoes
         requirements:
           - type: building
-            building: enchanter
+            building: enchantertower
             level: 2
           - type: item
             item: Paper
@@ -1878,7 +1878,7 @@ trees:
             amount: 4
         unlocks:
           - type: building
-            building: smelter
+            building: smeltery
         children:
           - name: Is This Redstone?
             requirements:

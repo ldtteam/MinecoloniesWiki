@@ -10,9 +10,9 @@ layout: default
 </div>
 <br>
 
-The Stash lets a player deposit items that they want to be picked up by a [Courier](../../source/workers/courier) to take to the {% include links/building.html key="warehouse" %}.
+The Stash lets a player deposit items that they want to be picked up by a {% worker courier %} to take to the {% building warehouse %}.
 
-The Stash can be crafted at the {% include links/building.html key="sawmill" %} or by the player.
+The Stash can be crafted at the {% building sawmill %} or by the player.
 <br>
 
 ## Using the Stash

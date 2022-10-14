@@ -12,12 +12,12 @@
                     {% endcapture %}
                     {% if building_singular == true %}
                         {% capture building_link %}
-                            {% include links/building.html key=requirement.building %}
+                            {% building_link requirement.building %}
                         {% endcapture %}
                         {% assign text = a_prefix | append: " " | append: building_link | append: " at least level " | append: building_level %}
                     {% else %}
                         {% capture building_link %}
-                            {% include links/building.html key=requirement.building plural=true %}
+                            {% building_link requirement.building plural=true %}
                         {% endcapture %}
                         {% assign levels = "levels" %}
                         {% if building_level == 1 %}

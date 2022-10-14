@@ -4,12 +4,12 @@ building: alchemist
 layout: building
 ---
 {% capture content %}
-The Alchemist Tower is where the Alchemist works. The Alchemist brews potions and harvests netherwart and mistletoe.
+The {% building %} is where the {% worker_link alchemist %} works. The {% worker alchemist %} brews potions and harvests netherwart and mistletoe.
 
-**Hint:** The number of recipes you can teach the Sawmill doubles per building level. So:
+**Hint:** The number of recipes you can teach the {% building sawmill %} doubles per building level. So:
 
 | Sawmill Level | Number of Recipes |
-| :-----------: | :---------------: |
+|:-------------:|:-----------------:|
 |       1       |        10         |
 |       2       |        20         |
 |       3       |        40         |
@@ -26,7 +26,7 @@ The Alchemist Tower is where the Alchemist works. The Alchemist brews potions an
 
 {% include contentblock/building/main-gui.html header="When accessing the Alchemist Tower by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/alchemistgui1.png" %}
 
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/alchemistgui2.png" %}
+{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows. The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/alchemistgui2.png" %}
 
 {% include contentblock/building/other-gui.html key="alchemist" header="The third tab of the GUI is <strong>Brewing Recipes</strong>. It functions the same as the Crafting Recipe page, but for brewed potions." image="../../assets/images/gui/alchemistgui3.png" %}
 
