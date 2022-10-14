@@ -152,7 +152,7 @@ Alternate designs can just have a different name than the primary one. E.g. if y
 Once ready, you need to make a [style pack](#style-packs) out of them.
 The schematics are visible in the build tool without the hut block, but you can't view them in survival mode (their button is greyed out, with an error message that you need to have the hut block)
 
-## Custom Hut Filenames
+## [1.18] Custom Hut Filenames
 
 Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note that *capitalization matters*.
 
@@ -167,8 +167,7 @@ Here is a full list, up-to-date as of 14 October 2022, of the building names. Pl
 | blacksmith1    | blacksmith2    | blacksmith3    | blacksmith4    | blacksmith5    |
 | builder1       | builder2       | builder3       | builder4       | builder5       |
 | chickenherder1 | chickenherder2 | chickenherder3 | chickenherder4 | chickenherder5 |
-| citizen1 (1.18)| citizen2       | citizen3       | citizen4       | citizen5       | 
-| residence1 (1.19)| residence2     | residence3     | residence4     | residence5     |
+| citizen1       | citizen2       | citizen3       | citizen4       | citizen5       | 
 | combatacademy1 | combatacademy2 | combatacademy3 | combatacademy4 | combatacademy5 |
 | composter1     | composter2     | composter3     | composter4     | composter5     |
 | concretemixer1 | concretemixer2 | concretemixer3 | concretemixer4 | concretemixer5 |
