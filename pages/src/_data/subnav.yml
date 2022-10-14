@@ -115,8 +115,6 @@ subnav:
         url: source/items/supplycampandship
       - page: Tag Tool and Tag Anchor
         url: source/items/tagtool
-      - page: Timber Framed Blocks
-        url: source/items/timberframes
       - page: Waypoint
         url: source/items/waypoint
   - title: Jobs
