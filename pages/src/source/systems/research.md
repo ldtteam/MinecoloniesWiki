@@ -5,12 +5,12 @@ layout: default
 
 # Research System
 
-At the {% include links/building.html key="university" %}, {% include links/worker.html key="researcher" plural=true %} can research various upgrades to your colony. These are split into three trees: Combat, Civilian, and Technology. You access these from the second page of the University GUI.
+At the {% building university %}, {% worker researcher plural=true %} can research various upgrades to your colony. These are split into three trees: Combat, Civilian, and Technology. You access these from the second page of the University GUI.
 
 Each column of a research tree is also the level the University needs to be to begin a research from that column. So:
 
 | Research Tree Column | Minimum University Level |
-| -------------------- | ------------------------ |
+|----------------------|--------------------------|
 | 1                    | 1                        |
 | 2                    | 2                        |
 | 3                    | 3                        |
@@ -20,7 +20,7 @@ Each column of a research tree is also the level the University needs to be to b
 You can only have one column 6 research in each of the Combat, Civilian, and Technology trees. To unlock a different column 6 research for that tree, you must undo the completed one first.
 
 | Symbol                                                                                          | Description                                                                                                                                                                                                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <img src="../../assets/images/gui/university/research_blocked.png" alt="Blocked Research">      | A research can be **blocked**, either by an unfinished prerequisite research, by a completed blocking research, or because the research tree has another column 6 research already active.                                                                                                                                                  |
 | <img src="../../assets/images/gui/university/research_locked.png" alt="Locked Research">        | A **locked** research requires a building or buildings, or other unrelated research, before it can be started.                                                                                                                                                                                                                              |
 | <img src="../../assets/images/gui/university/research_unlocked.png" alt="Unlocked Research">    | An **unlocked** research has all colony and research requirements met, but requires an item or items. **These items must be in the player's inventory.**                                                                                                                                                                                    |
