@@ -55,3 +55,22 @@ You can click on the Show Resources button to see all the blocks that are in you
 * Replace, to replace that block with any other block you prefer for that scan.
 
 You can also shift + left-click on a block to set the anchor position. (You can set it to a block outside of the scan, but that won't work for obvious reasons.) The anchor position is where the scan will rotate around when placing it with the [build tool](../../source/items/buildtool). When using the build tool, you can tell which block the anchor position is by its red outline. By default (if you don't shift + left-click), the anchor position will be the hut block (for huts) or the center block of the schematic (for decorations). If you're making an upgradable decoration, the anchor block will be the [deco controller](../../source/items/decocontroller). **Do not** change the anchor block in this case, as if you do, the decoration won't be upgradable!
+
+# Multiple Scan Slots (1.19+ only)
+
+The scan tool has 10 separate slots that can hold scan coordinates and names. You can use these however you like, but one example is to scan each level of a single building to a separate slot, with some extra slots used for temporary boxes (such as using the replace function).
+
+With the scan tool selected on your hotbar, you can switch slots by using sneak+scrollwheel, or using (sneak+)Pick-Block in air. With the GUI open, you can also press the number keys to switch slots.
+
+To clear a slot, simply overwrite it with another scan, or delete the name in the GUI. Or to reset everything, throw away your scan tool and make another.
+
+# Command Blocks
+
+When doing a lot of scanning, such as when making an entire custom style, it can be useful to use command blocks to automate the scanning process using the [scan command](../../source/systems/command#structurize-commands).
+
+In 1.19+ only, you can click the scan tool on a command block using Pick-Block:
+
+* With pick-block alone, the scan command is copied to the current slot of the scan tool.
+* With shift+pick-block, the current slot of the scan tool is pasted to the command block.
+
+After interacting with a command block in this way at least once, you can press your Scan Tool Teleport keybind (unset by default) to quickly teleport between your command block and the corresponding build.

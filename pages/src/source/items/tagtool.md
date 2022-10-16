@@ -6,6 +6,7 @@ layout: default
 
 <div class="infobox box text-center">
     <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/tag_tool.png" alt="Tag tool"></p>
+    <recipe>tagtool</recipe>
 </div>
 <br>
 
@@ -39,7 +40,9 @@ The Tag Tool is a creative-only item used to help build custom [schematics](../.
 
 The Tag Anchor Block is also a creative-only item, whose sole purpose is to act as the tag-containing anchor for non-upgradeable decorations. There should typically be at most one of these in any given schematic. (It is possible to include more than one, but only one can be the actual anchor, and that's the only one that matters.)
 
-When built by a [Builder](../../source/workers/builder) or pasted normally, the Tag Anchor Block will disappear. As such it is only useful for tags that affect the build itself (but no other tags are interesting for decorations anyway). When pasting the schematic for editing, ensure that the left paste option is used to retain the block (similar to other [placeholder blocks](../../source/items/placeholderblocks)).
+When built by a [Builder](../../source/workers/builder) or pasted normally, the Tag Anchor Block will disappear. As such it is only useful for tags that affect the build itself (but no other tags are interesting for decorations anyway). When pasting the schematic for editing, ensure that the left paste option (or "Schematic Paste", for 1.19) is used to retain the block (similar to other [placeholder blocks](../../source/items/placeholderblocks)).
+
+In 1.19+ only (with Structurize 456+), the Tag Anchor can "absorb" another block by using Pick Block (middle-click by default) on a block with the anchor in hand. After placing this special anchor in the world, scanning, and being built, it will turn into the absorbed block instead of into air. This is primarily intended for cases where you want the anchor position somewhere specific but need a non-air block in that position.
 
 ## Current Tags
 
@@ -55,6 +58,24 @@ The following tags are currently implemented (more may be added from time to tim
 
     As such, this should be used even for "underground" styles -- in this case the ground level means the nominal "floor" of the colony area (where they're clicking the build tool), not necessarily the surface ground level.
 
+* `leisure`
+
+    Supported only by Decoration Controllers, not huts or the tag anchor. It is optional. When included, it must appear directly on the decoration controller itself.
+    
+    Including this tag indicates that this decoration is intended as a "leisure site" for colonists to visit when they're otherwise idle. Leisure sites may optionally include `sit` tags, and colonists will also just wander around.
+    
+    In addition to tagged decorations, colonists will also always treat L3+ Town Hall and L1+ Mystical Site, Library, and Tavern as leisure sites.
+
+* `invisible`
+
+    1.19+ only; supported by all huts and decorations. It is optional. When included, it must appear directly on the anchor block (hut, decoration controller, or tag anchor).
+    
+    When present, this marks the corresponding schematic blueprint as "invisible" to normal players -- it will not be listed in the build tool in survival mode at all. In creative mode, the schematic will be visible but specially marked.
+    
+    This is intended to be placed on buildings or decorations that are not intended to be built on their own, but rather only as children of some other parent building/decoration.
+    
+    The [Barracks Tower](../../source/buildings/barrackstower) is implicitly invisible even if not tagged as such, for backwards compatibility.
+
 * Building-specific tags
 
     The following tags are only used by specific building types:
@@ -63,11 +84,12 @@ The following tags are currently implemented (more may be added from time to tim
     | :------: | :-----: | :----: | :---------: |
     | `sit`    | Restaurant | 0-many | A "chair" where colonists will sit to eat their food |
     | `sit`    | Tavern | 0-many (~4) | A "chair" where visitors will occasionally sit |
+    | `sit`    | (leisure) | 0-many | A "chair" where colonists will occasionally sit |
     | `cobble` | Mine | Always 1 | The block behind the top-most ladder at the start of the mineshaft (traditionally cobblestone, but may be something else) |
     | `ladder` | Mine | Always 1 | The top-most ladder at the start of the mineshaft |
     | `bamboo` | Plantation | level-based | A block that bamboo can be planted on |
     | `cactus` | Plantation | level-based | A block that cactus can be planted on |
     | `sugar`  | Plantation | level-based | A block that sugarcane can be planted on |
-    | `portal` | Nether Mine | Always 1 | An obsidian block in the bottom of the nether portal |
-    | `vault`  | Nether Mine | Always 1 | A block in an enclosed room that the nether miner can stand on |
+    | `portal` | Nether Mine | Always 1 | An obsidian block in the bottom of the nether portal (with air above) |
+    | `vault`  | Nether Mine | 0-1 | A block in an enclosed room that the nether miner can stand on while "away" |
     | `work`   | Archery     | level-based | The block the archer squire stands on to shoot at targets (Note: If no tags are used, they look for glowstone.) |
