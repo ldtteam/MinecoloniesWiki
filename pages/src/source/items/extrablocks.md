@@ -1,5 +1,5 @@
 ---
-title: "Extra" Blocks
+title: '"Extra" Blocks'
 layout: default
 ---
 # "Extra" Blocks  
