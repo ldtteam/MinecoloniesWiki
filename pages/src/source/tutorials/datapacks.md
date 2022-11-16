@@ -20,6 +20,7 @@ layout: default
   - [Research Effects](#research-effects)
   - [MineColonies Research Effects](#minecolonies-research-effects)
   - [MineColonies Building Unlocks](#minecolonies-building-unlocks)
+- [Citizen names](#citizen-names)
 
 MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the official wiki](<https://Minecraft.fandom.com/wiki/Data_Pack>).
 
@@ -35,7 +36,7 @@ For most users, looking at other similar JSONs will be the fastest way to get st
 
 The data pack folder or zip file can be any valid file name, and will be used to determine the name of the data pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](<https://Minecraft.gamepedia.com/Data_Pack#pack.mcmeta>). It is strongly encouraged to provide a distinct name and description for your data pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a data pack, this should also contain a "data" directory.
 
-Each folder within that "data" directory acts as a different **namespace**. Most mods have their own namespaces; for MineColonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (_), dashes (-), and/or dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
+Each folder within that "data" directory acts as a different **namespace**. Most mods have their own namespaces; for MineColonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (`_`), dashes (-), and/or dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
 
 <p style="font-size:12pt;text-align:center"><b>Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
 Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the <code>forge</code> and <code>minecraft</code> namespaces only when adding to or modifying vanilla or forge defaults, to use the <code>minecolonies</code> namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
@@ -338,3 +339,19 @@ Research Effects may also optionally unlock a building. These reserved Resource 
 |blockhutrabbithutch  |blockhutsawmill      |blockhutschool       |blockhutshepherd     |blockhutsifter     |
 |blockhutsmeltery     |blockhutstonemason   |blockhutstonesmeltery|blockhutswineherder  |blockhuttavern     |
 |blockhuttownhall     |blockhutuniversity   |blockhutwarehouse    |                     |                   |
+
+## Citizen names
+
+Citizen names can be changed via a datapack. For the ones already in the mod, you can look it [Github](https://github.com/ldtteam/minecolonies/blob/version/1.19/src/main/resources/data/minecolonies/citizennames) The default.json file is loaded by default, patreons have a button in the town hall to change to any of the other ones in data packs in the `citizennames` data location.
+
+There are also sample data packs on the [citizen names](../../source/misc/customcitizennames) page
+
+The citizen name files have the following components:
+
+| Citizen Name Key Name         | Type       | Description |
+| ----------------------------- | ---------- | ----------- |
+| <code>"parts"</code>          | integer    | `2` or `3`. This determines whether a middle letter is used in the name (if it is 3) |
+| <code>"order"</code>          | string     | `"WESTERN"` or `"EASTERN"`. In case of EASTERN, the surname is shown first |
+| <code>"male_firstname"</code> | Array of Strings | A list of the male first names |
+| <code>"female_firstname"</code> | array of strings | A list of the female first names |
+| <code>"surnames"</code>       | Array of Strings | A list of the surnames for the citizens |

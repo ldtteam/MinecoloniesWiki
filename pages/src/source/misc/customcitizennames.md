@@ -10,25 +10,37 @@ Everything you have to change is in one file.
 
 ## Procedure
 
-1. Locate the file _minecolonies-server.toml_. For information on how to find it, see the [config file](../../source/misc/configfile) page.<br>
+1. You need to have a datapack. You can either download one from the official datapacks below, or create your own. The [datapacks](../../source/tutorials/datapacks) page has more information about how to make one, as well as the Minecraft wiki
 
 
 2. Edit
 
-   You can use the official language templates we provide here, or you can edit at your own risk. If you decide to edit,
-   don't forget to make a copy of the file first and follow the current structure.
+   You need to make a file named "default.json" in the citizennames data location (put it in `data/<somenamespace>/citizennames`)
+   You can use the official language templates we provide here for inspiration,
+   or you can make one yourself at your own risk. In the latter case, make sure that there are enough names in the datapack! Otherwise minecolonies may crash due to it running out of name combinations.
    <br>
     <ul>
    <li>Edit with a text editor, like Notepad.</li>
-   <li>The file must have the same name.</li>
+   <li>Name it default.json, to make sure everyone can use the new names.</li>
     </ul>
 
+3. Install the datapack on the client or server, in the data folder within the world folder.
 
-3. Run Minecraft client/server and enjoy!
+4. Run Minecraft client/server and enjoy!
 
 <br>
 
+## Official Datapacks
+
+### Russian
+
+[Download Russian Data Pack](../../source/misc/languageDatapacks/russianDatapack.zip)
+
+*Credit to TanLorikk*
+
 ## Official Language Templates
+
+Note that the template files are outdated now, but they can be a great source of inspiration, in order to make your own citizen name file!
 
 ### Chinese
 
@@ -69,8 +81,6 @@ Everything you have to change is in one file.
 *Credit to Holmis*
 
 ### Russian
-
-[Download Russian Data Pack](../../source/misc/languageDatapacks/russianDatapack.zip)
 
 [Download Russian Template File](../../source/misc/languageNameTemplates/russianTemplate.toml)
 
