@@ -73,6 +73,8 @@ subnav:
         url: source/items/decocontroller
       - page: Enchantments
         url: source/items/enchantments
+      - page: Extra Blocks
+        url: source/items/extrablocks
       - page: Floating Carpet
         url: source/items/floatingcarpet
       - page: Gates
