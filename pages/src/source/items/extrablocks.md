@@ -20,9 +20,9 @@ layout: default
 
 | Extra Block       | Crafter             |
 | ----------------- | ------------------- |
-| Brick             | Stonemason {% building_link stonemason %}         |
-| Cactus            | Sawmill {% building_link sawmill %} or Stonemason |
-| Cobblestone       | Stonemason                                        |
-| Mossy Cobblestone | Stonemason                                        |
-| Paper             | Plantation {% building_link plantation %}         |
-| Wheat             | Bakery {% building_link bakery %} or Stonemason   |
+| Brick             | {% building_link stonemason %}            |
+| Cactus            | {% building_link sawmill %} or Stonemason |
+| Cobblestone       | Stonemason                                |
+| Mossy Cobblestone | Stonemason                                |
+| Paper             | {% building_link plantation %}            |
+| Wheat             | {% building_link bakery %} or Stonemason  |
