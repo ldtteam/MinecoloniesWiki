@@ -15,13 +15,14 @@ Everything you have to change is in one file.
 
 2. Edit
 
-   You need to make a file named "default.json" in the citizennames data location (put it in `data/<somenamespace>/citizennames`)
+   If you decided you create one yourself, you need to make a file named "default.json" in the citizennames data location (put it in `data/<somenamespace>/citizennames`)
    You can use the official language templates we provide here for inspiration,
    or you can make one yourself at your own risk. In the latter case, make sure that there are enough names in the datapack! Otherwise minecolonies may crash due to it running out of name combinations.
    <br>
     <ul>
    <li>Edit with a text editor, like Notepad.</li>
    <li>Name it default.json, to make sure everyone can use the new names.</li>
+   <li>The <a href="../../source/tutorials/datapacks#citizen-names">datapacks</a> page has an explanation of the format of the file</li>
     </ul>
 
 3. Install the datapack on the client or server, in the data folder within the world folder.

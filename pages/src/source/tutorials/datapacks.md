@@ -348,10 +348,10 @@ There are also sample data packs on the [citizen names](../../source/misc/custom
 
 The citizen name files have the following components:
 
-| Citizen Name Key Name         | Type       | Description |
+| Key Name                      | Type       | Description |
 | ----------------------------- | ---------- | ----------- |
 | <code>"parts"</code>          | integer    | `2` or `3`. This determines whether a middle letter is used in the name (if it is 3) |
 | <code>"order"</code>          | string     | `"WESTERN"` or `"EASTERN"`. In case of EASTERN, the surname is shown first |
 | <code>"male_firstname"</code> | Array of Strings | A list of the male first names |
-| <code>"female_firstname"</code> | array of strings | A list of the female first names |
+| <code>"female_firstname"</code> | Array of Strings | A list of the female first names |
 | <code>"surnames"</code>       | Array of Strings | A list of the surnames for the citizens |
