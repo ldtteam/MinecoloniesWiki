@@ -35,6 +35,9 @@ The Raider's Bane [enchant](../../source/items/enchantments) is not on here as i
 
 | Name                                                      | Ingredients                                                                            | Crafted At                                        | Recipe                                 |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------- |
+| [Brick Extra](../../source/items/extrablocks)             | Bricks                                                                                 | {% building_link stonemason %}                    | <recipe>brickextra</recipe>            |
+| [Cactus Extra](../../source/items/extrablocks)            | Cactus                                                                                 | {% building_link sawmill %} or {% building_link stonemason %} | <recipe>cactusextra</recipe> |
+| [Cobblestone Extra](../../source/items/extrablocks)       | Cobblestone                                                                            | {% building_link stonemason %}                    | <recipe>cobblestoneextra</recipe>      |
 | [Compost Barrel](../../source/items/compostbarrel)        | **Any** Planks + Build Tool + Dirt + Iron Ingot                                        | [Sawmill](../../source/buildings/sawmill)         | <recipe>barrel</recipe>                |
 | [Horizontal Barrel](../../source/items/barrel_horizontal) | **Any** Planks + Sticks                                                                | [Sawmill](../../source/buildings/sawmill)         | <recipe>barrel_horizontal</recipe>     |
 | [Vertical Barrel](../../source/items/barrel_vertical)     | **Any** Planks + Sticks                                                                | [Sawmill](../../source/buildings/sawmill)         | <recipe>barrel_vertical</recipe>       |
@@ -45,7 +48,9 @@ The Raider's Bane [enchant](../../source/items/enchantments) is not on here as i
 | [Construction Tape](../../source/items/constructiontape)  | White Wool + Sticks                                                                    | [Sawmill](../../source/buildings/sawmill)         | <recipe>constructiontape</recipe>      |
 | [Field](../../source/buildings/farm)                      | Hay Block **OR** Pumpkin + Stick + Leather                                             | N/A                                               | <recipe>field</recipe>                 |
 | [Floating Carpet](../../source/items/floatingcarpet)      | **Any** Carpet + Build Tool + String                                                   | [Fletcher's Hut](../../source/buildings/fletcher) | <recipe>floatingcarpet</recipe>        |
+| [Mossy Cobblestone Extra](../../source/items/extrablocks) | Mossy Cobblestone                                                                      | {% building_link stonemason %}                    | <recipe>mossycobblestoneextra</recipe> |
 | [Multi-Piston](../../source/items/multipiston)            | Stone + Redstone Blocks + Build Tool + Pistons                                         | [Mechanic's Hut](../../source/buildings/mechanic) | <recipe>multipiston</recipe>           |
+| [Paper Extra](../../source/items/extrablocks)             | Paper                                                                                  | {% building_link plantation %}                    | <recipe>paperextra</recipe>            |
 | [Placeholder Block](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot                                                     | [Sawmill](../../source/buildings/sawmill)         | <recipe>placeholderblock</recipe>      |
 | [Fluid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Bucket                                                         | [Sawmill](../../source/buildings/sawmill)         | <recipe>fluidplaceholderblock</recipe> |
 | [Solid Placeholder](../../source/items/placeholderblocks) | **Any** Logs + Sticks + Iron Ingot                                                     | [Sawmill](../../source/buildings/sawmill)         | <recipe>solidplaceholderblock</recipe> |
@@ -58,6 +63,7 @@ The Raider's Bane [enchant](../../source/items/enchantments) is not on here as i
 | [Supply Camp](../items/supplycampandship)                 | Chests                                                                                 | N/A                                               | <recipe>supplycamp</recipe>            |
 | [Supply Ship](../items/supplycampandship)                 | **Any** Boats                                                                          | N/A                                               | <recipe>supplyship</recipe>            |
 | [Waypoint](../../source/items/waypoint)                   | **Any** Planks + Build Tool                                                            | N/A                                               | <recipe>waypoint</recipe>              |
+| [Wheat Extra](../../source/items/extrablocks)             | Wheat                                                                                  | {% building_link bakery %} or {% building_link stonemason %} | <recipe>paperextra</recipe> |
 {: .table-responsive }
 
 ## Hut Blocks
