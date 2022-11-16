@@ -8,7 +8,7 @@ ADD pages $JEKYLL_HOME/
 WORKDIR $JEKYLL_HOME
 
 RUN bundle install
-RUN bundle exec jekyll build
+RUN bundle exec jekyll build --trace
 
 FROM nginx:alpine
 ARG JEKYLL_HOME
