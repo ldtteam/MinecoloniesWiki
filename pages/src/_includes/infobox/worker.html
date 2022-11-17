@@ -4,14 +4,29 @@
     {% assign images = "" | split: "" %}
     {% assign blocks = "" | split: "" %}
 
-    {% capture worker_image_male %}
-        <img src="../../assets/images/workers/{{ key }}_m.png" alt="{{ worker.name }} Male"/>
+    {% capture images %}
+    <div>
+        <select id="glide-dropdown-worker-{{ key }}" class="mb-3">
+            {% for style in site.data.workerstyles %}
+            <option value="{{ style[0] }}">{{ style[1].name }}</option>
+            {% endfor %}
+        </select>
+        <div class="glide glide-worker-{{ key }}">
+            {% for style in site.data.workerstyles %}
+            {% assign worker_images = [] | get_worker_images: key, style[0], "d-flex worker-image" %}
+            <div class="glide__track glide-track-worker-style glide-track-worker-style-{{ style[0] }}" style="display: none;">
+                <ul class="glide__slides">
+                    {% for image in worker_images %}
+                    <li class="">
+                        {{ image }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
     {% endcapture %}
-    {% capture worker_image_female %}
-        <img src="../../assets/images/workers/{{ key }}_f.png" alt="{{ worker.name }} Female"/>
-    {% endcapture %}
-    {% assign images = images | push: worker_image_male %}
-    {% assign images = images | push: worker_image_female %}
 
     {% capture infoblock %}
         <div class="row text-left">
@@ -52,4 +67,41 @@
     {% assign blocks = blocks | push: infoblock %}
 
     {% include infobox/reuse/core.html title=worker.name images=images blocks=blocks %}
+
+    <script>
+      function createGlide() {
+        return new Glide('.glide-worker-{{ key }}', {
+            type: "carousel",
+            startAt: 0,
+            autoplay: 3000,
+            hoverpause: true,
+            keyboard: false,
+            swipeThreshold: false,
+            dragThreshold: false
+        });
+      }
+
+      let glide = createGlide();
+
+      function showGlideArray(style) {
+        const allTracks = document.getElementsByClassName("glide-track-worker-style");
+        for (const track of allTracks) {
+            track.style.display = "none";
+            track.setAttribute("data-glide-el", undefined);
+        }
+        const track = document.getElementsByClassName(`glide-track-worker-style-${style}`)[0];
+        track.style.display = "";
+        track.setAttribute("data-glide-el", "track");
+      }
+
+      document.getElementById("glide-dropdown-worker-{{ key }}").onchange = function(event) {
+        glide.destroy();
+        showGlideArray(event.target.value);
+        glide = createGlide();
+        glide.mount();
+      }
+
+      showGlideArray("default");
+      glide.mount();
+    </script>
 {% endif %}

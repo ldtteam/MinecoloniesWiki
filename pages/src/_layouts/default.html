@@ -19,11 +19,20 @@ title: MineColonies Wiki
         <meta content="width=device-width,maximum-scale=2" name="viewport">
         <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 
-        <!-- Bootstrap -->
-        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+        {% assign minified = "" %}
+        {% if jekyll.environment == "production" %}
+          {% assign minified = ".min" %}
+        {% endif %}
 
-        <!-- Font Awesome -->
-        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
+        <!-- Libraries -->
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap{{ minified }}.css" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.core{{ minified }}.css" rel="stylesheet">
+
+        <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1{{ minified }}.js"></script>
+        <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper{{ minified }}.js"></script>
+        <script crossorigin="anonymous" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap{{ minified }}.js"></script>
+        <script crossorigin="anonymous" src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide{{ minified }}.js"></script>
 
         <!-- Page Styles -->
         <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -71,15 +80,6 @@ title: MineColonies Wiki
 
             </div>
         </div>
-
-        <!-- Jquery -->
-        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-        <!-- Popper -->
-        <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-        <!-- Bootstrap -->
-        <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <script src="{{ '/assets/js/recipe.js' | relative_url }}"></script>
 
