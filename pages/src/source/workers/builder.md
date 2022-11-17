@@ -14,7 +14,8 @@ Buildings are constructed after the hut block/schematic is placed using the Buil
 - The Builder will not start another build assignment until they have finished the current one.
 - The Builder can *ONLY* upgrade other huts to the level of their Builder’s Hut. Upgrade the Builder’s Hut to further upgrade other buildings.
 - You can rearrange the priority and cancel the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI under the Work Orders symbol (!).
-- The Builder will collect any blocks they remove and deposit them in their hut inventory and any <a href="../../source/items/rack">racks</a>/chests in their hut. Items are never lost or destroyed.
+- The Builder will collect any blocks they remove and deposit them in their hut inventory and any <a href="../../source/items/rack">racks in their hut. Items are never lost or destroyed. (1.18.2 and below)
+- The Builder will collect any blocks they remove and deposit them in their hut inventory and any <a href="../../source/items/rack">racks in their hut. Ore blocks removed by the builder will be lost and no drops will be obtained from them. (1.19.2 and newer)
 
 If you see the Builder has not finished building/upgrading any build order and they aren't asking for any materials, go to the Builder’s Hut and recall the Builder and wait a bit to see what they need. You can also go to page 2 of the Builder’s Hut GUI and check the list of materials required. Any material in the list that is missing will be in red.
 
