@@ -43,6 +43,8 @@ Then click in the air to see the entire structure.
 
 Once you have the full area set, you can press Escape and the white outline of the scan area will stay in place. Go around it to double-check that everything you want is in the scan area. If the area contains multiple eligible anchor blocks (hut blocks, tag anchors or decoration controllers), you need to shift+left click the correct anchor block (e.g. the barracks hut block in a barracks schematic). When you are ready, you can right-click in the air again to get the GUI to display where you can enter your scan name. Then press the green checkmark to save the scan.
 
+SPECIAL NOTE: Do not rename the file after scanning, it MUST be scanned with the correct name. (1.18.2 and below)
+
 Scans are saved in `../minecolonies/scan/new/...` [1.18] or `*/blueprints/<yourplayername>/scans` [1.19]
 
 [1.18] Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a <a href="#customhuts">custom hut</a>.
