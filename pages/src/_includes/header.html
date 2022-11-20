@@ -43,7 +43,7 @@
                     {% case item.type %}
                         {% when "buildings" %}
                             {% for entry in site.data.buildinginfo %}
-                                {% building_link entry[0] %}
+                                {% building_link entry[0] class="dropdown-item" %}
                             {% endfor %}
                         {% when "workers" %}
                             {% assign grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type | default: 'default'" %}
@@ -53,7 +53,7 @@
                                 {% endunless %}
                                 <h6 class="dropdown-header">{{ site.data.workertypes[group.name].name }}</h6>
                                 {% for entry in group.items %}
-                                    {% worker_link entry[0] %}
+                                    {% worker_link entry[0] class="dropdown-item" %}
                                 {% endfor %}
                             {% endfor %}
                         {% else %}
@@ -187,7 +187,7 @@
                                 {% when "buildings" %}
                                     {% for entry in site.data.buildinginfo %}
                                         <li>
-                                            {% building_link entry[0] %}
+                                            {% building_link entry[0] class="dropdown-item" %}
                                         </li>
                                     {% endfor %}
                                 {% when "workers" %}
@@ -198,7 +198,7 @@
                                                 {% for entry in site.data.workerinfo %}
                                                     {% if entry[1].type == type[0] %}
                                                         <li>
-                                                            {% worker_link entry[0] %}
+                                                            {% worker_link entry[0] class="dropdown-item" %}
                                                         </li>
                                                     {% endif %}
                                                 {% endfor %}
