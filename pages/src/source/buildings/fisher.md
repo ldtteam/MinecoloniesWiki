@@ -4,7 +4,7 @@ building: fisher
 layout: building
 ---
 {% capture content %}
-The Fisher's Hut is where the Fisher will catch fish. The Fisher requires a fishing rod and a body of water of a minimum of 7 blocks wide x 7 blocks long x 1 block tall to be able to work, and the water must be near the hut.
+The Fisher's Hut is where the Fisher will catch fish. The Fisher requires a fishing rod and a body of water of a minimum of 6 blocks wide x 5 blocks long x 1 block tall to be able to work, and the water must be near the hut.
 
 <p style="text-align:center;"><img src="../../assets/images/misc/pond.png" alt="Pond"></p>
 
