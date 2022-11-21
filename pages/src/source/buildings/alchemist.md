@@ -10,17 +10,29 @@ The {% building %} is where the {% worker_link alchemist %} works. The {% worker
 
 | {% building %} Level | Number of Recipes |
 |:--------------------:|:-----------------:|
-| 1                    |        10         |
-| 2                    |        20         |
-| 3                    |        40         |
-| 4                    |        80         |
-| 5                    |        160        |
+|          1           |        10         |
+|          2           |        20         |
+|          3           |        40         |
+|          4           |        80         |
+|          5           |        160        |
 
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
+
+{% version "1.19" after=true %}
+Hello 1.19 and beyond!
+{% endversion %}
+
+{% version "1.18.2" %}
+Hello 1.18.2
+{% endversion %}
+
+{% version "1.18.1" before=true %}
+Hello 1.18.1 and earlier!
+{% endversion %}
 
 ## Alchemist GUI
 
