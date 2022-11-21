@@ -236,7 +236,7 @@ The process for custom [supply ships and camps](../../source/items/supplycampand
 | [Composter's Hut](../../source/buildings/composter)     | 1 [compost barrel](../../source/items/compostbarrel) per level       |                     |
 | [Concrete Mixer's Hut](../../source/buildings/concretemixer) | 3 blocks of flowing water with solid blocks below and air blocks above      |                     |
 | [Dyer's Hut](../../source/buildings/dyer)               | 1 furnace                                                            |                     |
-| [Fisher's Hut](../../source/buildings/fisher)           | Hut block placed on a block at water level                           | At least 7x7x1 unobstructed body of water if integrating fishing location in the schematic |
+| [Fisher's Hut](../../source/buildings/fisher)           | Hut block placed on a block at water level                           | At least 6x5x1 unobstructed body of water if integrating fishing location in the schematic |
 | [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
 | [Glassblower's Hut](../../source/buildings/glassblower) | 1 furnace per level                                                  |                     |
 | [Graveyard](../../source/buildings/graveyard)           | Named Graves, with the amount increasing per level | 14 named graves at level 1, 18 named graves at level 2, 27 named graves at level 3, 36 named graves at level 4, 50 named graves at level 5 |
