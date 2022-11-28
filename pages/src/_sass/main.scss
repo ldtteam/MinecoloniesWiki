@@ -1,10 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
 @import "https://minecolonies.com/css/global.css";
 
-// VARIABLES
+// Variables
 $mcurl: "https://minecolonies.com";
 
-// FONTS
+// Fonts
 @font-face {
   font-family: "Colonial Dame";
   src: url("../fonts/Colonial Dame.ttf");
@@ -16,15 +16,15 @@ $mcurl: "https://minecolonies.com";
   }
 }
 
-// BOOTSTRAP EXTENSION
+// Bootstrap extensions
 @import "bootstrap.scss";
 
-// DARK MODE
+// Dark mode
 html[data-theme="dark"] {
   @import "dark-mode.scss";
 }
 
-// CRAFTING GRID
+// Crafting grid styles
 @import "crafting-grid.scss";
 
 // STYLES

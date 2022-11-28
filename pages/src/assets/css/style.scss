@@ -1,3 +1,14 @@
 ---
---- 
-@import "./main"
+---
+@import "./main";
+
+// Version selectors
+[data-versions] {
+  display: none;
+}
+
+{% for version in site.data.versions %}
+body[data-version='{{ version["order"] }}'] [data-versions*='{{ version["order"] }}'] {
+    display: inherit;
+}
+{% endfor %}

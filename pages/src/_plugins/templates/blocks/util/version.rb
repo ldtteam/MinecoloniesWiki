@@ -1,4 +1,4 @@
-require_relative "base_block"
+require_relative "../base_block"
 
 class VersionBlock < BaseBlock
     def render_block(context, content, arguments)
