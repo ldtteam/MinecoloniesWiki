@@ -1,6 +1,7 @@
 eval_gemfile "Gemfile.common"
 
 group :development do
-    gem "wdm", '>= 0.1.0'
+    gem "wdm", ">= 0.1.0"
     gem "webrick", "~> 1.7"
+    gem "rubocop"
 end
