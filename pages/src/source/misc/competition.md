@@ -1,12 +1,12 @@
 ---
-title: Fall 2022 Competition
+title: Competition 2022
 layout: default
 ---
 
-# Fall 2022 Colony Style Competition
+# Colony Style Competition 2022
 
 <div style="text-align:center">
-<img src="assets/images/misc/competitionBanner.png" alt="Fall 2022 Competition banner">
+<img src="assets/images/misc/competitionBanner.png" alt="Competition 2022 banner">
 </a>
 </div>
 
