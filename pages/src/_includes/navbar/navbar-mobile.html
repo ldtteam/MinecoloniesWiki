@@ -1,0 +1,126 @@
+<nav class="sidenav" id="navbarSide">
+  <div class="sidenav-title">
+    <p class="text-center">MineColonies Wiki</p>
+  </div>
+  <hr />
+  <ul class="sidenav-nav">
+    <li class="sidenav-item">
+      <div class="sidenav-link d-flex">
+        <button
+          class="theme-toggle btn btn-secondary fas"
+          onclick="themeModeSwitch()"
+        ></button>
+      </div>
+    </li>
+  </ul>
+  <hr />
+  <ul class="sidenav-nav">
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://minecolonies.com">Home</a>
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://minecolonies.com/about"
+        >About the Mod</a
+      >
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://minecolonies.com/team">Our Team</a>
+    </li>
+    <li class="sidenav-item">
+      <a
+        class="sidenav-link active"
+        href="https://wiki.minecolonies.ldtteam.com/"
+        >Wiki</a
+      >
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://crowdin.com/project/minecolonies"
+        >Translate</a
+      >
+    </li>
+    <li class="sidenav-item">
+      <a
+        class="sidenav-link"
+        href="https://github.com/ldtteam/minecolonies/issues/new/choose"
+        >Report a Bug</a
+      >
+    </li>
+  </ul>
+  <hr />
+  <ul class="sidenav-nav">
+    <li class="sidenav-item">
+      <a href="{{ site.baseurl }}" class="sidenav-link">Wiki Home</a>
+    </li>
+    {% for item in site.data.subnav.subnav %}
+    <li class="sidenav-item dropdown">
+      <a
+        class="sidenav-link dropdown-toggle"
+        id="{{ item.title }}DropdownSidenav"
+        role="button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        data-display="static"
+        >{{ item.title }}</a
+      >
+      <div
+        class="dropdown-menu"
+        aria-labelledby="{{ item.title }}DropdownSidenav"
+      >
+        {% case item.type %} {% when "buildings" %} {% for entry in
+        site.data.buildinginfo %} {% building_link entry[0]
+        class="dropdown-item" %} {% endfor %} {% when "workers" %} {% assign
+        grouped = site.data.workerinfo | group_by_exp: "item", "item[1].type |
+        default: 'default'" %} {% for group in grouped %} {% unless
+        forloop.first %}
+        <div class="dropdown-divider"></div>
+        {% endunless %}
+        <h6 class="dropdown-header">
+          {{ site.data.workertypes[group.name].name }}
+        </h6>
+        {% for entry in group.items %} {% worker_link entry[0]
+        class="dropdown-item" %} {% endfor %} {% endfor %} {% else %} {% for
+        entry in item.subitems %}
+        <a class="dropdown-item" href="{{ entry.url | relative_url }}"
+          >{{ entry.page }}</a
+        >
+        {% endfor %} {% endcase %}
+      </div>
+    </li>
+    {% endfor %}
+    <li class="sidenav-item">
+      <a href="{{ 'source/search' | relative_url }}" class="sidenav-link"
+        >Search</a
+      >
+    </li>
+  </ul>
+  <hr />
+  <ul class="sidenav-nav sidenav-social text-center">
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://www.patreon.com/minecolonies">
+        <i class="fab fa-patreon" style="color: #f96854"></i>
+      </a>
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://www.youtube.com/user/MrPMardle">
+        <i class="fab fa-youtube" style="color: #ff0000"></i>
+      </a>
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://discord.minecolonies.com">
+        <i class="fab fa-discord" style="color: #7289da"></i>
+      </a>
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://twitter.com/minecoloniesmod">
+        <i class="fab fa-twitter" style="color: #1da1f2"></i>
+      </a>
+    </li>
+    <li class="sidenav-item">
+      <a class="sidenav-link" href="https://reddit.com/r/minecolonies">
+        <i class="fab fa-reddit-alien" style="color: #ff4500"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class="overlay"></div>

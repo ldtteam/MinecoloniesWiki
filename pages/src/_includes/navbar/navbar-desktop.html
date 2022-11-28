@@ -1,0 +1,154 @@
+<nav class="navbar navbar-expand-lg navbar-default main">
+  <div class="container">
+    <button
+      aria-expanded="false"
+      aria-label="Toggle Navigation"
+      class="navbar-toggler"
+      id="navbarSideButton"
+      type="button"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://minecolonies.com">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://minecolonies.com/about"
+            >About the Mod</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://minecolonies.com/team">Our Team</a>
+        </li>
+        <li class="nav-item active">
+          <a
+            class="nav-link active"
+            href="https://wiki.minecolonies.ldtteam.com/"
+            >Wiki</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://crowdin.com/project/minecolonies"
+            >Translate</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://github.com/ldtteam/minecolonies/issues/new/choose"
+            >Report a Bug</a
+          >
+        </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-align mr-3">
+        <li class="nav-item">
+          <button class="btn btn-outline-secondary" onclick="themeModeSwitch()">
+            <i class="theme-toggle fas fa-sun"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <select class="btn btn-outline-secondary" onclick="themeModeSwitch()">
+            {% for version in site.data.versions %}
+            <i class="theme-toggle fas fa-sun"></i>
+          </select>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-align">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://github.com/ldtteam/MinecoloniesWiki/edit/main/pages/src/{{ page.path }}"
+          >
+            <span>Edit this Page</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.patreon.com/minecolonies">
+            <i class="fab fa-patreon" style="color: #f96854"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/user/MrPMardle">
+            <i class="fab fa-youtube" style="color: #ff0000"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.minecolonies.com">
+            <i class="fab fa-discord" style="color: #7289da"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/minecoloniesmod">
+            <i class="fab fa-twitter" style="color: #1da1f2"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://reddit.com/r/minecolonies">
+            <i class="fab fa-reddit-alien" style="color: #ff4500"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-default secondary">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarsec">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="{{ site.baseurl }}" class="nav-link">Wiki Home</a>
+        </li>
+        {% for item in site.data.subnav.subnav %}
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="{{ item.title }}Dropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >{{ item.title }}</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="{{ item.title }}Dropdown">
+            {% case item.type %} {% when "buildings" %} {% for entry in
+            site.data.buildinginfo %}
+            <li>{% building_link entry[0] class="dropdown-item" %}</li>
+            {% endfor %} {% when "workers" %} {% for type in
+            site.data.workertypes %}
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#"
+                >{{ type[1].name }}</a
+              >
+              <ul class="dropdown-menu">
+                {% for entry in site.data.workerinfo %} {% if entry[1].type ==
+                type[0] %}
+                <li>{% worker_link entry[0] class="dropdown-item" %}</li>
+                {% endif %} {% endfor %}
+              </ul>
+            </li>
+            {% endfor %} {% else %} {% for entry in item.subitems %}
+            <li>
+              <a class="dropdown-item" href="{{ entry.url | relative_url }}"
+                >{{ entry.page }}</a
+              >
+            </li>
+            {% endfor %} {% endcase %}
+          </ul>
+        </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a href="{{ 'source/search' | relative_url }}" class="nav-link"
+            >Search</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

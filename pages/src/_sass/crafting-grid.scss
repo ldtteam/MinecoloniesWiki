@@ -1,0 +1,131 @@
+.invslot {
+  position: relative;
+  display: inline-block;
+  background: #8b8b8b no-repeat center center / 32px 32px;
+  border: 2px solid;
+  border-color: #373737 #fff #fff #373737;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.invslot::before,
+.invslot::after {
+  content: "";
+  position: absolute;
+  background-color: #8b8b8b;
+  height: 2px;
+  width: 2px;
+}
+
+.invslot::before {
+  bottom: -2px;
+  left: -2px;
+}
+
+.invslot::after {
+  top: -2px;
+  right: -2px;
+}
+
+.invslot-large {
+  padding: 8px;
+}
+
+.invslot-item,
+.invslot-item > a:first-child {
+  position: relative;
+  display: block;
+  margin: -2px;
+  padding: 2px;
+}
+
+.invslot-stacksize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: Minecraft, sans-serif !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  text-shadow: 2px 2px 0 #3f3f3f;
+  filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+  z-index: 2;
+}
+
+.crafting-table {
+  display: inline-block;
+  position: relative;
+  background-color: #c6c6c6;
+  border: 2px solid;
+  border-color: #dbdbdb #5b5b5b #5b5b5b #dbdbdb;
+  padding: 6px;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.crafting-table > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.crafting-table,
+.crafting-table * {
+  box-sizing: initial;
+}
+
+.crafting-table .ct-row {
+  display: block;
+}
+
+.crafting-table > .ct-arrow {
+  background: url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png)
+    no-repeat;
+  width: 32px;
+  height: 26px;
+  margin: 40px 4px 0;
+}
+
+.crafting-table > .ct-output {
+  margin-top: 28px;
+}
+
+.crafting-table > .ct-icons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.crafting-table .ct-shapeless,
+.crafting-table .ct-fixed {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 15px;
+  cursor: help;
+}
+
+.crafting-table .ct-shapeless {
+  background-image: url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/a/a9/Grid_layout_Shapeless.png);
+}
+
+.crafting-table .ct-fixed {
+  background-image: url(https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/b/b8/Grid_layout_Fixed.png);
+}
+
+.sprite {
+  display: inline-block;
+  vertical-align: text-top;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+
+.inv-sprite {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
