@@ -4,7 +4,7 @@
       "firstRow": {
         "firstItem": "minecraft/mossy_cobblestone",
         "secondItem": "",
-        "thirdItem": "minecraft/mossy_cobblestone",
+        "thirdItem": "minecraft/mossy_cobblestone"
       },
       "secondRow": {
         "firstItem": "",
@@ -14,7 +14,7 @@
       "thirdRow": {
         "firstItem": "minecraft/mossy_cobblestone",
         "secondItem": "",
-        "thirdItem": "minecraft/mossy_cobblestone",
+        "thirdItem": "minecraft/mossy_cobblestone"
       },
       "product": "minecolonies/mossycobblestoneextra"
     }
