@@ -22,18 +22,6 @@ The {% building %} is where the {% worker_link alchemist %} works. The {% worker
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-{% version "1.19" after=true %}
-Hello 1.19 and beyond!
-{% endversion %}
-
-{% version "1.18.2" %}
-Hello 1.18.2
-{% endversion %}
-
-{% version "1.18.1" before=true %}
-Hello 1.18.1 and earlier!
-{% endversion %}
-
 ## Alchemist GUI
 
 {% include contentblock/building/main-gui.html header="When accessing the Alchemist Tower by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/alchemistgui1.png" %}
