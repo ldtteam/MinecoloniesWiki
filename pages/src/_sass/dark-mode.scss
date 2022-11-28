@@ -2,27 +2,24 @@
 $bg-dark: #1e2022;
 $color-light: #bcc2c8;
 
+.active,
+a:focus,
+a:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
 .bgscroll {
   background-color: $bg-dark;
   background-image: none;
-  padding-top: 0;
   color: $color-light;
-}
-
-body {
-  background-color: $bg-dark;
+  padding-top: 0;
 }
 
 .button {
+  background-color: var(--dark);
   background-image: none;
   border: 1px var(--color-light) solid;
   border-radius: 10%;
-  background-color: var(--dark);
-}
-
-.dropdown-menu {
-  background-color: var(--dark) !important;
-  border-color: var(--color-light);
 }
 
 .dropdown-item {
@@ -33,13 +30,18 @@ body {
   background-color: $bg-dark;
 }
 
+.dropdown-menu {
+  background-color: var(--dark) !important;
+  border-color: var(--color-light);
+}
+
 .infobox {
   background-image: none;
   border: 1px var(--color-light) solid;
-  border-radius: 0.25rem;
-  padding: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  border-radius: .25rem;
+  margin-left: .5em;
+  margin-right: .5em;
+  padding: .5em;
 }
 
 .sidenav {
@@ -56,8 +58,6 @@ body {
   color: var(--color-light);
 }
 
-a:hover,
-a:focus,
-.active {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+body {
+  background-color: $bg-dark;
 }

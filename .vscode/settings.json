@@ -1,0 +1,23 @@
+{
+  "liquid.format.enable": true,
+  "liquid.format.endNewLine": true,
+  "files.associations": {
+    "*.html": "liquid",
+    "*.js": "liquid-javascript",
+    "*.css": "liquid-css",
+    "*.scss": "liquid-scss",
+    "**/src/_sass/*.scss": "scss",
+    "Gemfile.common": "gemfile",
+    "Gemfile.production": "gemfile"
+  },
+  "prettier.enable": false,
+  "[html]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "[js]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  }
+}

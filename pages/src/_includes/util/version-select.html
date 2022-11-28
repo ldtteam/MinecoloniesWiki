@@ -1,0 +1,10 @@
+<select class="custom-select version-switch">
+  {% assign versions = site.data.versions | sort: "order" | reverse %}
+  {% for version in versions %}
+    {% if version.supported %}
+      <option class="version-supported" value="{{ version.order }}">{{- version.name -}}</option>
+    {% else %}
+      <option class="version-not-supported" value="{{ version.order }}">{{- version.name -}}</option>
+    {% endif %}
+  {% endfor %}
+</select>

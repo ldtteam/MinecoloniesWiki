@@ -10,7 +10,7 @@ choose which on the second page of the Apiary's GUI).
 The level of the Apiary determines the max number of hives the Beekeeper can take care of:
 
 | Apiary Level | Max Number of Hives |
-| ------------ | ------------------- |
+|--------------|---------------------|
 | 1            | 1                   |
 | 2            | 2                   |
 | 3            | 4                   |

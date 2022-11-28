@@ -13,12 +13,12 @@ The Fletcher's Hut is where the Fletcher will craft arrows and items that use st
 
 
 | Fletcher's Hut Level | Number of Recipes |
-| :------------------: | :---------------: |
-|          1           |        10         |
-|          2           |        20         |
-|          3           |        40         |
-|          4           |        80         |
-|          5           |        160        |
+|----------------------|-------------------|
+| 1                    | 10                |
+| 2                    | 20                |
+| 3                    | 40                |
+| 4                    | 80                |
+| 5                    | 160               |
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}

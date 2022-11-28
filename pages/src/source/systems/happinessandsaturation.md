@@ -37,12 +37,12 @@ Every time a citizen goes to sleep (starts the walk back to their [House](../../
 Citizens will demand higher levels of food based on their workplace level. **They will not eat food that doesn't meet (or exceed) their requirements.**
 
 | Workplace Level | Min Food Level Requested (in shanks) |
-| :-------------: | :----------------------------------: |
-|        0        |                 Any                  |
-|        1        |                 0.5                  |
-|        2        |                  1                   |
-|        3        |                 1.5                  |
-|        4        |                  2                   |
-|        5        |                 2.5                  |
+|-----------------|--------------------------------------|
+| 0               | Any                                  |
+| 1               | 0.5                                  |
+| 2               | 1                                    |
+| 3               | 1.5                                  |
+| 4               | 2                                    |
+| 5               | 2.5                                  |
 
 When a citizen's hunger level gets to 6 or lower, they will head to the [Restaurant](../../source/buildings/restaurant) to get food from the [Cook](../../source/workers/cook). If there is no Cook, they will request in their GUI that you build them a Restaurant or provide them with food manually.

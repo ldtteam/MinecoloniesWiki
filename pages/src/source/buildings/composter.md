@@ -13,12 +13,12 @@ The Composter's Hut is where the Composter will turn organic materials into [com
 
 
 | Building Level | Compost Barrels |
-| :------------: | :-------------: |
-|       1        |        1        |
-|       2        |        2        |
-|       3        |        3        |
-|       4        |        4        |
-|       5        |        5        |
+|----------------|-----------------|
+| 1              | 1               |
+| 2              | 2               |
+| 3              | 3               |
+| 4              | 4               |
+| 5              | 5               |
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}

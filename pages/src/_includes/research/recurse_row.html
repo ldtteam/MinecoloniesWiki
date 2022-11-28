@@ -1,20 +1,21 @@
-{% assign research = include.research %} {% capture id %} {%- include
-research/id.html tree=include.tree name=research.name -%} {% endcapture %}
+{% assign research = include.research %}
+{% capture id %}
+  {%- include
+    research/id.html tree=include.tree name=research.name -%}
+{% endcapture %}
 
-<tr id="{{ id }}" class="research-row">
+<tr class="research-row" id="{{ id }}">
   <td>
-    <u
-      >{%- include links/research.html tree=include.tree name=research.name
-      showaffix=false -%}</u
-    >
+    <u>{%- include links/research.html tree=include.tree name=research.name
+      showaffix=false -%}</u>
   </td>
   <td>
     {% if include.prerequisite %}
-    <u
-      >{% include links/research.html tree=include.tree
-      name=include.prerequisite showaffix=false %}</u
-    >
-    {% else %} - {% endif %}
+      <u>{% include links/research.html tree=include.tree
+      name=include.prerequisite showaffix=false %}</u>
+    {% else %}
+      -
+    {% endif %}
   </td>
   <td>
     {% include research/requirements.html requirements=research.requirements %}

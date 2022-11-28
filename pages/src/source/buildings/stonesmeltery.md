@@ -14,12 +14,12 @@ The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone,
 **Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will have available. The number of furnaces they *use* depends on their Athletics level. So:
 
 | Building Level | Furnaces |
-| :------------: | :------: |
-|       1        |    1     |
-|       2        |    2     |
-|       3        |    3     |
-|       4        |    4     |
-|       5        |    5     |
+|----------------|----------|
+| 1              | 1        |
+| 2              | 2        |
+| 3              | 3        |
+| 4              | 4        |
+| 5              | 5        |
 
 **Hint:** The higher the Stone Smelter's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
 {% endcapture %}

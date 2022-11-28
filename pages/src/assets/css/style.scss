@@ -1,5 +1,7 @@
 ---
+# Main SCSS file 
 ---
+
 @import "./main";
 
 // Version selectors
@@ -8,7 +10,7 @@
 }
 
 {% for version in site.data.versions %}
-body[data-version='{{ version["order"] }}'] [data-versions*='{{ version["order"] }}'] {
+  body[data-version='{{ version["order"] }}'] [data-versions*='{{ version["order"] }}'] {
     display: inherit;
-}
+  }
 {% endfor %}

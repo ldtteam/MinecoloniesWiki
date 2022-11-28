@@ -68,15 +68,15 @@ Stylepacks live in the blueprints folder, within your Minecraft folder. This fol
 ### The pack.json
 This json file contains metadata describing the style:
 
-| Key Name                               | Type             | Description |
-| -------------------------------------- | ---------------- | ----------- |
-| <code>"version"</code>                 | number           | Pack version, 1 at the moment |
-| <code>"pack-format"</code>             | number           | Descriptor for the pack format, needs to be 1 at the moment |
-| <code>"desc"</code>                    | string           | Description of the style. This will be visible in the build tool to explain what your style is about |
-| <code>"authors"</code>                 | array of strings | Names of the authors, in order to credit them. This is visible in the build tool |
-| <code>"mods"</code>                    | array of strings | Names of used mods (ids). The style is not visible if one of those mods is not installed, to prevent broken schematics |
-| <code>"name"</code>                    | string           | The name of the style pack |
-| <code>"icon"</code>                    | string           | The name of the file with an icon which is showed in the style packs selection screen |
+| Key Name                   | Type             | Description                                                                                                            |
+|----------------------------|------------------|------------------------------------------------------------------------------------------------------------------------|
+| <code>"version"</code>     | number           | Pack version, 1 at the moment                                                                                          |
+| <code>"pack-format"</code> | number           | Descriptor for the pack format, needs to be 1 at the moment                                                            |
+| <code>"desc"</code>        | string           | Description of the style. This will be visible in the build tool to explain what your style is about                   |
+| <code>"authors"</code>     | array of strings | Names of the authors, in order to credit them. This is visible in the build tool                                       |
+| <code>"mods"</code>        | array of strings | Names of used mods (ids). The style is not visible if one of those mods is not installed, to prevent broken schematics |
+| <code>"name"</code>        | string           | The name of the style pack                                                                                             |
+| <code>"icon"</code>        | string           | The name of the file with an icon which is showed in the style packs selection screen                                  |
 
 ### The folder structure
 
@@ -159,7 +159,7 @@ The schematics are visible in the build tool without the hut block, but you can'
 Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note that *capitalization matters*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
-| :------------- | :------------- | :------------- | :------------- | :------------- |
+|:---------------|:---------------|:---------------|:---------------|:---------------|
 | archery1       | archery2       | archery3       | archery4       | archery5       |
 | alchemist1     | alchemist2     | alchemist3     | alchemist4     | alchemist5     |
 | baker1         | baker2         | baker3         | baker4         | baker5         |
@@ -169,7 +169,7 @@ Here is a full list, up-to-date as of 14 October 2022, of the building names. Pl
 | blacksmith1    | blacksmith2    | blacksmith3    | blacksmith4    | blacksmith5    |
 | builder1       | builder2       | builder3       | builder4       | builder5       |
 | chickenherder1 | chickenherder2 | chickenherder3 | chickenherder4 | chickenherder5 |
-| citizen1       | citizen2       | citizen3       | citizen4       | citizen5       | 
+| citizen1       | citizen2       | citizen3       | citizen4       | citizen5       |
 | combatacademy1 | combatacademy2 | combatacademy3 | combatacademy4 | combatacademy5 |
 | composter1     | composter2     | composter3     | composter4     | composter5     |
 | concretemixer1 | concretemixer2 | concretemixer3 | concretemixer4 | concretemixer5 |
@@ -212,70 +212,70 @@ Here is a full list, up-to-date as of 14 October 2022, of the building names. Pl
 
 The process for custom [supply ships and camps](../../source/items/supplycampandship) is slightly different: 
 
-| Version | Camp or Ship | File Name and Path |
-| :-----: | :----------: | :----------------: |
-| [1.18]  | Camp | structurize/schematics/supplycamp/myownsupplycamp |
-| [1.18]  | Ship | structurize/schematics/supplyship/myownsupplyship |
-| [1.19]  | Camp | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplycamp |
-| [1.19]  | Ship | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplyship |
+| Version | Camp or Ship | File Name and Path                                            |
+|---------|--------------|---------------------------------------------------------------|
+| [1.18]  | Camp         | structurize/schematics/supplycamp/myownsupplycamp             |
+| [1.18]  | Ship         | structurize/schematics/supplyship/myownsupplyship             |
+| [1.19]  | Camp         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplycamp |
+| [1.19]  | Ship         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplyship |
 
 [1.18] So, for example, the path would be `structurize/schematics/wildwest/builder1` for the Builder's Hut level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
 [1.19] So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decoration/supplies/supplycamp` for the supply camp.
 
 ## Hut Requirements
 
-| Building                                                | Requirements                                                         | Suggested           | 
-| :-----------------------------------------------------: | :------------------------------------------------------------------: | :-----------------: | 
-| [Archery](../../source/buildings/archery)               | 1 archery dummy (a hay bale with a button on it); 1 bed per level | at least 1 standing position per level (a glowstone block, or any block tagged with `work`) | 
-| [Alchemist](../../source/buildings/alchemist)           | 1 brewing stand per level; 2 soul sand per level starting at level 2 (with 4 soul sand); leaves next to logs, i.e. "trees" |                     |
-| [Bakery](../../source/buildings/bakery)                 | 1 furnace                                                            |                     | 
-| [Barracks](../../source/buildings/barracks)             | 1 Barracks Tower per level (up to level 4)                           |                     |
-| [Barracks Tower](../../source/buildings/barrackstower)  |                                                                      | 1 bed per level     |
-| [Builder's Hut](../../source/buildings/builder)         |                                                                      | 1 rack per level    |
-| [Combat Academy](../../source/buildings/combatacademy)  | 1 combat dummy per level (a pumpkin on top of a bale of hay); 1 bed per level        |                     |
-| [Composter's Hut](../../source/buildings/composter)     | 1 [compost barrel](../../source/items/compostbarrel) per level       |                     |
-| [Concrete Mixer's Hut](../../source/buildings/concretemixer) | 3 blocks of flowing water with solid blocks below and air blocks above      |                     |
-| [Dyer's Hut](../../source/buildings/dyer)               | 1 furnace                                                            |                     |
-| [Fisher's Hut](../../source/buildings/fisher)           | Hut block placed on a block at water level                           | At least 6x5x1 unobstructed body of water if integrating fishing location in the schematic |
-| [Flower Shop](../../source/buildings/flowershop)        | 4 [compost blocks](../../source/items/compost) per level             |                     |
-| [Glassblower's Hut](../../source/buildings/glassblower) | 1 furnace per level                                                  |                     |
-| [Graveyard](../../source/buildings/graveyard)           | Named Graves, with the amount increasing per level | 14 named graves at level 1, 18 named graves at level 2, 27 named graves at level 3, 36 named graves at level 4, 50 named graves at level 5 |
-| [Guard Tower](../../source/buildings/guardtower)        |                                                                      | 1 bed for aesthetics|
-| [Hospital](../../source/buildings/hospital)             | 1 bed per level                                                      |                     |
-| [House](../../source/buildings/house)                   | 1 bed per level                                                      |                     |
-| [Library](../../source/buildings/library)               | Bookshelves                                                          |                     |
-| [Mine](../../source/buildings/mine)                     | A few starting ladders where the shaft's ladders will go             |                     |
-| [Nether Mine](../../source/buildings/nethermine)        | A nether portal, and an enclosed 1x1x2 room                          |                     |
-| [Plantation](../../source/buildings/plantation)         | 12 per level, 4 for each of sugar cane, cactus and bamboo            |                     |
-| [Restaurant](../../source/buildings/restaurant)         | 1 furnace per level                                                  |                     |
-| [School](../../source/buildings/school)                 | 2 carpets per level                                                  | 4 carpets per level |
-| [Smeltery](../../source/buildings/school)               | 1 furnace per level                                                  |                     |
-| [Stone Smeltery](../../source/buildings/stonesmeltery)  | 1 furnace per level                                                  |                     |
-| [Tavern](../../source/buildings/tavern)                 | 4 beds and a dining room                                             | [Horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical) |
-| [University](../../source/buildings/university)         | Bookshelves                                                          |                     |
-| [Warehouse](../../source/buildings/warehouse)           | [Racks](../../source/items/rack) (more each level)                   |                     |
+| Building                                                     | Requirements                                                                                                               | Suggested                                                                                                                                  |
+|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| [Archery](../../source/buildings/archery)                    | 1 archery dummy (a hay bale with a button on it); 1 bed per level                                                          | at least 1 standing position per level (a glowstone block, or any block tagged with `work`)                                                |
+| [Alchemist](../../source/buildings/alchemist)                | 1 brewing stand per level; 2 soul sand per level starting at level 2 (with 4 soul sand); leaves next to logs, i.e. "trees" |                                                                                                                                            |
+| [Bakery](../../source/buildings/bakery)                      | 1 furnace                                                                                                                  |                                                                                                                                            |
+| [Barracks](../../source/buildings/barracks)                  | 1 Barracks Tower per level (up to level 4)                                                                                 |                                                                                                                                            |
+| [Barracks Tower](../../source/buildings/barrackstower)       |                                                                                                                            | 1 bed per level                                                                                                                            |
+| [Builder's Hut](../../source/buildings/builder)              |                                                                                                                            | 1 rack per level                                                                                                                           |
+| [Combat Academy](../../source/buildings/combatacademy)       | 1 combat dummy per level (a pumpkin on top of a bale of hay); 1 bed per level                                              |                                                                                                                                            |
+| [Composter's Hut](../../source/buildings/composter)          | 1 [compost barrel](../../source/items/compostbarrel) per level                                                             |                                                                                                                                            |
+| [Concrete Mixer's Hut](../../source/buildings/concretemixer) | 3 blocks of flowing water with solid blocks below and air blocks above                                                     |                                                                                                                                            |
+| [Dyer's Hut](../../source/buildings/dyer)                    | 1 furnace                                                                                                                  |                                                                                                                                            |
+| [Fisher's Hut](../../source/buildings/fisher)                | Hut block placed on a block at water level                                                                                 | At least 6x5x1 unobstructed body of water if integrating fishing location in the schematic                                                 |
+| [Flower Shop](../../source/buildings/flowershop)             | 4 [compost blocks](../../source/items/compost) per level                                                                   |                                                                                                                                            |
+| [Glassblower's Hut](../../source/buildings/glassblower)      | 1 furnace per level                                                                                                        |                                                                                                                                            |
+| [Graveyard](../../source/buildings/graveyard)                | Named Graves, with the amount increasing per level                                                                         | 14 named graves at level 1, 18 named graves at level 2, 27 named graves at level 3, 36 named graves at level 4, 50 named graves at level 5 |
+| [Guard Tower](../../source/buildings/guardtower)             |                                                                                                                            | 1 bed for aesthetics                                                                                                                       |
+| [Hospital](../../source/buildings/hospital)                  | 1 bed per level                                                                                                            |                                                                                                                                            |
+| [House](../../source/buildings/house)                        | 1 bed per level                                                                                                            |                                                                                                                                            |
+| [Library](../../source/buildings/library)                    | Bookshelves                                                                                                                |                                                                                                                                            |
+| [Mine](../../source/buildings/mine)                          | A few starting ladders where the shaft's ladders will go                                                                   |                                                                                                                                            |
+| [Nether Mine](../../source/buildings/nethermine)             | A nether portal, and an enclosed 1x1x2 room                                                                                |                                                                                                                                            |
+| [Plantation](../../source/buildings/plantation)              | 12 per level, 4 for each of sugar cane, cactus and bamboo                                                                  |                                                                                                                                            |
+| [Restaurant](../../source/buildings/restaurant)              | 1 furnace per level                                                                                                        |                                                                                                                                            |
+| [School](../../source/buildings/school)                      | 2 carpets per level                                                                                                        | 4 carpets per level                                                                                                                        |
+| [Smeltery](../../source/buildings/school)                    | 1 furnace per level                                                                                                        |                                                                                                                                            |
+| [Stone Smeltery](../../source/buildings/stonesmeltery)       | 1 furnace per level                                                                                                        |                                                                                                                                            |
+| [Tavern](../../source/buildings/tavern)                      | 4 beds and a dining room                                                                                                   | [Horizontal barrels](../../source/items/barrel_horizontal) and/or [vertical barrels](../../source/items/barrel_vertical)                   |
+| [University](../../source/buildings/university)              | Bookshelves                                                                                                                |                                                                                                                                            |
+| [Warehouse](../../source/buildings/warehouse)                | [Racks](../../source/items/rack) (more each level)                                                                         |                                                                                                                                            |
 
 Some buildings may also require tags to be set on certain blocks using the [tag tool](../../source/items/tagtool).
 
 ## Level Requirements for Overworld Styles
 
-| Level          | Requirements          |
-| :------------: | :-------------------: |
-| Level 1        | Very Easy - Wooden    | 
-| Level 2        | Easy - Iron           | 
-| Level 3        | Medium - Nether       | 
-| Level 4        | Difficult - Ocean     |
-| Level 5        | Very Difficult - End  |
+| Level   | Requirements         |
+|---------|----------------------|
+| Level 1 | Very Easy - Wooden   |
+| Level 2 | Easy - Iron          |
+| Level 3 | Medium - Nether      |
+| Level 4 | Difficult - Ocean    |
+| Level 5 | Very Difficult - End |
 
 ## Level Requirements for Nether Styles
 
-| Level          | Requirements          |
-| :------------: | :-------------------: |
-| Level 1        | Very Easy - Nether    | 
-| Level 2        | Easy - Rarer Nether   | 
-| Level 3        | Medium - Overworld    | 
-| Level 4        | Difficult - Ocean     |
-| Level 5        | Very Difficult - End  |
+| Level   | Requirements         |
+|---------|----------------------|
+| Level 1 | Very Easy - Nether   |
+| Level 2 | Easy - Rarer Nether  |
+| Level 3 | Medium - Overworld   |
+| Level 4 | Difficult - Ocean    |
+| Level 5 | Very Difficult - End |
 
 <br>
 <br>

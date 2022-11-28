@@ -1,39 +1,39 @@
 {% if include.requirements.size > 0 %}
-    <ul class="list-unstyled">
-        {% for requirement in include.requirements | sort: "type" %}
-            {% assign type = requirement.type | default: "custom" %}
-            {% case type %}
-                {% when "building" %}
-                    {% assign building_name = site.data.buildinginfo[requirement.building].name %}
-                    {% assign building_singular = site.data.buildinginfo[requirement.building].singular %}
-                    {% assign building_level = requirement.level | default: 1 %}
-                    {% capture a_prefix %}
-                        {%- include functions/get_a_prefix.html text=building_name -%}
-                    {% endcapture %}
-                    {% if building_singular == true %}
-                        {% capture building_link %}
-                            {% building_link requirement.building %}
-                        {% endcapture %}
-                        {% assign text = a_prefix | append: " " | append: building_link | append: " at least level " | append: building_level %}
-                    {% else %}
-                        {% capture building_link %}
-                            {% building_link requirement.building plural=true %}
-                        {% endcapture %}
-                        {% assign levels = "levels" %}
-                        {% if building_level == 1 %}
-                            {% assign levels = "level" %}
-                        {% endif %}
-                        {% assign text = "One or multiple " | append: building_link | append: " totaling at least " | append: building_level | append: " " | append: levels %}
-                    {% endif %}
+  <ul class="list-unstyled">
+    {% for requirement in include.requirements | sort: "type" %}
+      {% assign type = requirement.type | default: "custom" %}
+      {% case type %}
+        {% when "building" %}
+          {% assign building_name = site.data.buildinginfo[requirement.building].name %}
+          {% assign building_singular = site.data.buildinginfo[requirement.building].singular %}
+          {% assign building_level = requirement.level | default: 1 %}
+          {% capture a_prefix %}
+            {%- include functions/get_a_prefix.html text=building_name -%}
+          {% endcapture %}
+          {% if building_singular == true %}
+            {% capture building_link %}
+              {% building_link requirement.building %}
+            {% endcapture %}
+            {% assign text = a_prefix | append: " " | append: building_link | append: " at least level " | append: building_level %}
+          {% else %}
+            {% capture building_link %}
+              {% building_link requirement.building plural=true %}
+            {% endcapture %}
+            {% assign levels = "levels" %}
+            {% if building_level == 1 %}
+              {% assign levels = "level" %}
+            {% endif %}
+            {% assign text = "One or multiple " | append: building_link | append: " totaling at least " | append: building_level | append: " " | append: levels %}
+          {% endif %}
 
-                {% when "item" %}
-                    {% assign item_amount = requirement.amount | default: 1 %}
-                    {% assign text = item_amount | append: " " | append: requirement.item | downcase  %}
+        {% when "item" %}
+          {% assign item_amount = requirement.amount | default: 1 %}
+          {% assign text = item_amount | append: " " | append: requirement.item | downcase %}
 
-                {% else %}
-                    {% assign text = requirement %}
-            {% endcase %}
-            <li>{{- text -}}</li>
-        {% endfor %}
-    </ul>
+        {% else %}
+          {% assign text = requirement %}
+      {% endcase %}
+      <li>{{- text -}}</li>
+    {% endfor %}
+  </ul>
 {% endif %}

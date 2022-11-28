@@ -12,12 +12,12 @@ The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor, swords, a
 **Note:** You will need to teach the Blacksmith the recipes of the items you want them to create. The number of items the Blacksmith can learn are listed below:
 
 | Building Level | Number of Recipes |
-| :------------: | :---------------: |
-|       1        |        10         |
-|       2        |        20         |
-|       3        |        40         |
-|       4        |        80         |
-|       5        |        160        |
+|----------------|-------------------|
+| 1              | 10                |
+| 2              | 20                |
+| 3              | 40                |
+| 4              | 80                |
+| 5              | 160               |
 
 Additionally, upon reaching level 5, the Blacksmith learns the nine netherite recipes (shovel, hoe, pickaxe, axe, sword, helmet, chestplate, leggings, and boots), which count toward the recipe total above.
 

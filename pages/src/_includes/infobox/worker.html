@@ -1,333 +1,333 @@
-{% assign key = page.worker | strip | default: "" %} {% if key != "" %} {%
-assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: ""
-%} {% assign blocks = "" | split: "" %} {% capture images %}
-<div>
-  <select id="glide-dropdown-worker-{{ key }}" class="mb-3">
-    {% for style in site.data.workerstyles %}
-    <option value="{{ style[0] }}">{{ style[1].name }}</option>
-    {% endfor %}
-  </select>
-  <div class="glide glide-worker-{{ key }}">
-    <div class="glide__track" data-glide-el="track">
-      <ul class="glide__slides">
-        {% assign worker_images = [] | get_worker_images: key, "d-flex
-        worker-image" %} {% for image in worker_images %}
-        <li>{{ image }}</li>
+{% assign key = page.worker | strip | default: "" %}
+{% if key != "" %}
+  {%
+assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: "" 
+%} {% assign blocks = "" | split: "" %}
+  {% capture images %}
+    <div>
+      <select class="mb-3" id="glide-dropdown-worker-{{ key }}">
+        {% for style in site.data.workerstyles %}
+          <option value="{{ style[0] }}">{{- style[1].name -}}</option>
         {% endfor %}
-      </ul>
+      </select>
+      <div class="glide glide-worker-{{ key }}">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            {% assign worker_images = [] | get_worker_images: key, "d-flex
+             worker-image" %}
+            {% for image in worker_images %}
+              <li>{{- image -}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-{% endcapture %} {% capture infoblock %}
-<div class="row text-left">
-  <div class="col">
-    <p>
-      <strong>Primary Trait:</strong>
-    </p>
-  </div>
-  <div class="col">
-    <p class="traitp">{{ worker.traits.primary | default: "None" }}</p>
-  </div>
-</div>
-<div class="row text-left">
-  <div class="col">
-    <p>
-      <strong>Secondary Trait:</strong>
-    </p>
-  </div>
-  <div class="col">
-    <p class="traits">{{ worker.traits.secondary | default: "None" }}</p>
-  </div>
-</div>
-<div class="row text-left">
-  <div class="col">
-    <p>
-      <strong>Building:</strong>
-    </p>
-  </div>
-  <div class="col">
-    {% for building in worker.buildings %}
-    <p class="mb-1">
-      <a href="../buildings/{{ building }}"
-        >{{ site.data.buildinginfo[building].name }}</a
-      >
-    </p>
-    {% endfor %}
-  </div>
-</div>
-{% endcapture %} {% assign blocks = blocks | push: infoblock %} {% include
-infobox/reuse/core.html title=worker.name images=images blocks=blocks %}
+  {% endcapture %}
+  {% capture infoblock %}
+    <div class="row text-left">
+      <div class="col">
+        <p>
+          <strong>Primary Trait:</strong>
+        </p>
+      </div>
+      <div class="col">
+        <p class="traitp">{{- worker.traits.primary | default: "None" -}}</p>
+      </div>
+    </div>
+    <div class="row text-left">
+      <div class="col">
+        <p>
+          <strong>Secondary Trait:</strong>
+        </p>
+      </div>
+      <div class="col">
+        <p class="traits">{{- worker.traits.secondary | default: "None" -}}</p>
+      </div>
+    </div>
+    <div class="row text-left">
+      <div class="col">
+        <p>
+          <strong>Building:</strong>
+        </p>
+      </div>
+      <div class="col">
+        {% for building in worker.buildings %}
+          <p class="mb-1">
+            <a href="../buildings/{{ building }}">{{- site.data.buildinginfo[building].name -}}</a>
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endcapture %}
+  {% assign blocks = blocks | push: infoblock %} {% include
+ infobox/reuse/core.html title=worker.name images=images blocks=blocks %}
 
-<script>
-  let currentStyle = "default";
+  <script>
+    let currentStyle = "default";
 
-  const customRun = function (Glide, Components, Events) {
-    const Run = {
-      mount: function () {
-        this._o = false;
-      },
-      make: function (move) {
-        const _this = this;
+    const customRun = function(Glide, Components, Events) {
+      const Run = {
+        mount: function() {
+          this._o = false;
+        },
+        make: function(move) {
+          const _this = this;
 
-        if (!Glide.disabled) {
-          !Glide.settings.waitForTransition || Glide.disable();
-          this.move = move;
-          Events.emit("run.before", this.move);
-          this.calculate();
-          Events.emit("run", this.move);
-          Components.Transition.after(function () {
-            if (_this.isStart()) {
-              Events.emit("run.start", _this.move);
+          if (! Glide.disabled) {
+            ! Glide.settings.waitForTransition || Glide.disable();
+            this.move = move;
+            Events.emit("run.before", this.move);
+            this.calculate();
+            Events.emit("run", this.move);
+            Components.Transition.after(function() {
+              if (_this.isStart()) {
+                Events.emit("run.start", _this.move);
+              }
+
+              if (_this.isEnd()) {
+                Events.emit("run.end", _this.move);
+              }
+
+              if (_this.isOffset()) {
+                _this._o = false;
+                Events.emit("run.offset", _this.move);
+              }
+
+              Events.emit("run.after", _this.move);
+              Glide.enable();
+            });
+          }
+        },
+        calculate: function calculate() {
+          const move = this.move,
+            length = this.length;
+          const steps = move.steps,
+            direction = move.direction;
+
+          let viewSize = 1;
+
+          if (direction === "=") {
+            if (Glide.settings.bound && parseInt(steps) > length) {
+              setGlideIndex(length);
+              return;
             }
 
-            if (_this.isEnd()) {
-              Events.emit("run.end", _this.move);
-            }
+            setGlideIndex(steps);
+            return;
+          }
 
-            if (_this.isOffset()) {
-              _this._o = false;
-              Events.emit("run.offset", _this.move);
-            }
-
-            Events.emit("run.after", _this.move);
-            Glide.enable();
-          });
-        }
-      },
-      calculate: function calculate() {
-        const move = this.move,
-          length = this.length;
-        const steps = move.steps,
-          direction = move.direction;
-
-        let viewSize = 1;
-
-        if (direction === "=") {
-          if (Glide.settings.bound && parseInt(steps) > length) {
+          if (direction === ">" && steps === ">") {
             setGlideIndex(length);
             return;
           }
 
-          setGlideIndex(steps);
-          return;
-        }
-
-        if (direction === ">" && steps === ">") {
-          setGlideIndex(length);
-          return;
-        }
-
-        if (direction === "<" && steps === "<") {
-          setGlideIndex(0);
-          return;
-        }
-
-        if (direction === "|") {
-          viewSize = Glide.settings.perView || 1;
-        }
-
-        if (direction === ">" || (direction === "|" && steps === ">")) {
-          const index = calculateForwardIndex(viewSize);
-
-          if (index > length) {
-            this._o = true;
+          if (direction === "<" && steps === "<") {
+            setGlideIndex(0);
+            return;
           }
 
-          setGlideIndex(normalizeForwardIndex(index, viewSize));
-          return;
-        }
-
-        if (direction === "<" || (direction === "|" && steps === "<")) {
-          const _index = calculateBackwardIndex(viewSize);
-
-          if (_index < 0) {
-            this._o = true;
+          if (direction === "|") {
+            viewSize = Glide.settings.perView || 1;
           }
 
-          setGlideIndex(normalizeBackwardIndex(_index, viewSize));
-          return;
-        }
+          if (direction === ">" || (direction === "|" && steps === ">")) {
+            const index = calculateForwardIndex(viewSize);
 
-        console.warn(
-          "Invalid direction pattern ["
-            .concat(direction)
-            .concat(steps, "] has been used")
-        );
-      },
-      isStart: function () {
-        return this.currentIndex <= 0;
-      },
-      isEnd: function () {
-        return this.currentIndex >= this.length;
-      },
-      isOffset: function () {
-        const direction =
-          arguments.length > 0 && arguments[0] !== undefined
-            ? arguments[0]
-            : undefined;
+            if (index > length) {
+              this._o = true;
+            }
 
-        if (!direction) {
-          return this._o;
-        }
+            setGlideIndex(normalizeForwardIndex(index, viewSize));
+            return;
+          }
 
-        if (!this._o) {
+          if (direction === "<" || (direction === "|" && steps === "<")) {
+            const _index = calculateBackwardIndex(viewSize);
+
+            if (_index < 0) {
+              this._o = true;
+            }
+
+            setGlideIndex(normalizeBackwardIndex(_index, viewSize));
+            return;
+          }
+
+          console.warn("Invalid direction pattern [".concat(direction).concat(steps, "] has been used"));
+        },
+        isStart: function() {
+          return this.currentIndex <= 0;
+        },
+        isEnd: function() {
+          return this.currentIndex >= this.length;
+        },
+        isOffset: function() {
+          const direction = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
+
+          if (! direction) {
+            return this._o;
+          }
+
+          if (!this._o) {
+            return false;
+          }
+
+          if (direction === "|>") {
+            return this.move.direction === "|" && this.move.steps === ">";
+          }
+
+          if (direction === "|<") {
+            return this.move.direction === "|" && this.move.steps === "<";
+          }
+
+          return this.move.direction === direction;
+        },
+        isBound: function() {
           return false;
         }
+      };
 
-        if (direction === "|>") {
-          return this.move.direction === "|" && this.move.steps === ">";
+      function getSlides() {
+        return Components
+          .Html
+          .slides
+          .map((slide, index) => {
+            const image = slide.querySelector(".worker-image");
+            return {
+              index,
+              style: image.getAttribute("data-style")
+            };
+          })
+          .filter((f) => f.style === currentStyle);
+      }
+
+      function getFirstIndex() {
+        return Math.min(... getSlides().map((m) => m.index));
+      }
+
+      function getCurrentIndex() {
+        return Glide.index - getFirstIndex();
+      }
+
+      function setGlideIndex(index) {
+        const firstIndex = getFirstIndex();
+        Glide.index = firstIndex + parseInt(index);
+      }
+
+      function calculateForwardIndex(viewSize) {
+        const index = getCurrentIndex();
+
+        if (Glide.isType("carousel")) {
+          return index + viewSize;
         }
 
-        if (direction === "|<") {
-          return this.move.direction === "|" && this.move.steps === "<";
+        return index + (viewSize - (index % viewSize));
+      }
+
+      function normalizeForwardIndex(index, viewSize) {
+        const length = Run.length;
+
+        if (index <= length) {
+          return index;
         }
 
-        return this.move.direction === direction;
-      },
-      isBound: function () {
-        return false;
-      },
-    };
-
-    function getSlides() {
-      return Components.Html.slides
-        .map((slide, index) => {
-          const image = slide.querySelector(".worker-image");
-          return {
-            index,
-            style: image.getAttribute("data-style"),
-          };
-        })
-        .filter((f) => f.style === currentStyle);
-    }
-
-    function getFirstIndex() {
-      return Math.min(...getSlides().map((m) => m.index));
-    }
-
-    function getCurrentIndex() {
-      return Glide.index - getFirstIndex();
-    }
-
-    function setGlideIndex(index) {
-      const firstIndex = getFirstIndex();
-      Glide.index = firstIndex + parseInt(index);
-    }
-
-    function calculateForwardIndex(viewSize) {
-      const index = getCurrentIndex();
-
-      if (Glide.isType("carousel")) {
-        return index + viewSize;
-      }
-
-      return index + (viewSize - (index % viewSize));
-    }
-
-    function normalizeForwardIndex(index, viewSize) {
-      const length = Run.length;
-
-      if (index <= length) {
-        return index;
-      }
-
-      if (Glide.isType("carousel")) {
-        return index - (length + 1);
-      }
-
-      if (Glide.settings.rewind) {
-        if (Run.isBound() && !Run.isEnd()) {
-          return length;
+        if (Glide.isType("carousel")) {
+          return index - (length + 1);
         }
 
-        return 0;
-      }
+        if (Glide.settings.rewind) {
+          if (Run.isBound() && ! Run.isEnd()) {
+            return length;
+          }
 
-      if (Run.isBound()) {
-        return length;
-      }
+          return 0;
+        }
 
-      return Math.floor(length / viewSize) * viewSize;
-    }
-
-    function calculateBackwardIndex(viewSize) {
-      const index = getCurrentIndex();
-
-      if (Glide.isType("carousel")) {
-        return index - viewSize;
-      }
-
-      const view = Math.ceil(index / viewSize);
-      return (view - 1) * viewSize;
-    }
-
-    function normalizeBackwardIndex(index, viewSize) {
-      const length = Run.length;
-
-      if (index >= 0) {
-        return index;
-      }
-
-      if (Glide.isType("carousel")) {
-        return index + (length + 1);
-      }
-
-      if (Glide.settings.rewind) {
-        if (Run.isBound() && Run.isStart()) {
+        if (Run.isBound()) {
           return length;
         }
 
         return Math.floor(length / viewSize) * viewSize;
       }
 
-      return 0;
-    }
+      function calculateBackwardIndex(viewSize) {
+        const index = getCurrentIndex();
 
-    Object.defineProperty(Run, "currentIndex", {
-      get: function () {
-        return getCurrentIndex();
-      },
-    });
-    Object.defineProperty(Run, "move", {
-      get: function () {
-        return this._m;
-      },
-      set: function set(value) {
-        const step = value.substr(1);
-        this._m = {
-          direction: value.substr(0, 1),
-          steps: step ? (parseInt(step) ? parseInt(step) : step) : 0,
-        };
-      },
-    });
-    Object.defineProperty(Run, "length", {
-      get: function () {
-        return getSlides().length - 1;
-      },
-    });
-    Object.defineProperty(Run, "offset", {
-      get: function () {
-        return this._o;
-      },
-    });
-    return Run;
-  };
+        if (Glide.isType("carousel")) {
+          return index - viewSize;
+        }
 
-  const glide = new Glide(".glide-worker-{{ key }}", {
-    type: "slider",
-    rewind: true,
-    startAt: 0,
-    autoplay: 3000,
-    keyboard: false,
-    swipeThreshold: false,
-    dragThreshold: false,
-  });
-  glide.mount({ Run: customRun });
+        const view = Math.ceil(index / viewSize);
+        return(view - 1) * viewSize;
+      }
 
-  document.getElementById("glide-dropdown-worker-{{ key }}").onchange =
-    function (event) {
+      function normalizeBackwardIndex(index, viewSize) {
+        const length = Run.length;
+
+        if (index >= 0) {
+          return index;
+        }
+
+        if (Glide.isType("carousel")) {
+          return index + (length + 1);
+        }
+
+        if (Glide.settings.rewind) {
+          if (Run.isBound() && Run.isStart()) {
+            return length;
+          }
+
+          return Math.floor(length / viewSize) * viewSize;
+        }
+
+        return 0;
+      }
+
+      Object.defineProperty(Run, "currentIndex", {
+        get: function() {
+          return getCurrentIndex();
+        }
+      });
+      Object.defineProperty(Run, "move", {
+        get: function() {
+          return this._m;
+        },
+        set: function set(value) {
+          const step = value.substr(1);
+          this._m = {
+            direction: value.substr(0, 1),
+            steps: step ? (parseInt(step) ? parseInt(step) : step) : 0
+          };
+        }
+      });
+      Object.defineProperty(Run, "length", {
+        get: function() {
+          return getSlides().length - 1;
+        }
+      });
+      Object.defineProperty(Run, "offset", {
+        get: function() {
+          return this._o;
+        }
+      });
+      return Run;
+    };
+
+    const glide = new Glide(".glide-worker- {{ key }}", {
+      type: "slider",
+      rewind: true,
+      startAt: 0,
+      autoplay: 3000,
+      keyboard: false,
+      swipeThreshold: false,
+      dragThreshold: false
+    });
+    glide.mount({
+      Run: customRun
+    });
+
+    document.getElementById("glide-dropdown-worker- {{ key }}").onchange = function(event) {
       currentStyle = event.target.value;
       glide.go("=0");
     };
-</script>
+  </script>
 {% endif %}

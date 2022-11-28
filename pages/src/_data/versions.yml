@@ -3,10 +3,10 @@
   supported: false
 - name: "1.18"
   order: 11800
-  supported: false
+  supported: true
 - name: "1.18.1"
   order: 11801
-  supported: false
+  supported: true
 - name: "1.18.2"
   order: 11802
   supported: true
