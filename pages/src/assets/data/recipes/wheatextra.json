@@ -4,7 +4,7 @@
       "firstRow": {
         "firstItem": "minecraft/wheat",
         "secondItem": "",
-        "thirdItem": "minecraft/wheat",
+        "thirdItem": "minecraft/wheat"
       },
       "secondRow": {
         "firstItem": "",
@@ -14,7 +14,7 @@
       "thirdRow": {
         "firstItem": "minecraft/wheat",
         "secondItem": "",
-        "thirdItem": "minecraft/wheat",
+        "thirdItem": "minecraft/wheat"
       },
       "product": "minecolonies/wheatextra"
     }
