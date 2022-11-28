@@ -34,10 +34,10 @@ function updateTheme(theme, persist) {
 function switchTheme() {
   let currentMode = document.documentElement.getAttribute("data-theme");
   if (currentMode === "dark") {
-    themeModeSet("light");
+    updateTheme("light");
   } else if (currentMode === "light") {
-    themeModeSet("dark");
+    updateTheme("dark");
   } else {
-    themeModeSet("light");
+    updateTheme("light");
   }
 }
