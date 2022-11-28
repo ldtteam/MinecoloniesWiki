@@ -4,7 +4,7 @@
       "firstRow": {
         "firstItem": "minecraft/cobblestone",
         "secondItem": "",
-        "thirdItem": "minecraft/cobblestone",
+        "thirdItem": "minecraft/cobblestone"
       },
       "secondRow": {
         "firstItem": "",
@@ -14,7 +14,7 @@
       "thirdRow": {
         "firstItem": "minecraft/cobblestone",
         "secondItem": "",
-        "thirdItem": "minecraft/cobblestone",
+        "thirdItem": "minecraft/cobblestone"
       },
       "product": "minecolonies/cobblestoneextra"
     }
