@@ -5,6 +5,11 @@ layout: default
 
 # Fall 2022 Colony Style Competition
 
+<div style="text-align:center">
+<img src="assets/images/misc/competitionBanner.png" alt="Fall 2022 Competition banner">
+</a>
+</div>
+
 To celebrate reaching 30 million downloads we present you the Colony Style Competition.
 In a nutshell, the idea is to take existing styles and replace their main blocks with alternative blocks.
 With a special focus on using blocks from other mods.
