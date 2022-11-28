@@ -1,9 +1,9 @@
 ---
-title: Competition
+title: Fall 2022 Competition
 layout: default
 ---
 
-# Colony Style Competition
+# Fall 2022 Colony Style Competition
 
 To celebrate reaching 30 million downloads we present you the Colony Style Competition.
 In a nutshell, the idea is to take existing styles and replace their main blocks with alternative blocks.
