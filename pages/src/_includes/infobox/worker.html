@@ -1,8 +1,8 @@
 {% assign key = page.worker | strip | default: "" %}
 {% if key != "" %}
-  {%
-assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: "" 
-%} {% assign blocks = "" | split: "" %}
+  {% assign worker = site.data.workerinfo[key] %}
+  {% assign images = "" | split: "" %}
+  {% assign blocks = "" | split: "" %}
   {% capture images %}
     <div>
       <select class="mb-3" id="glide-dropdown-worker-{{ key }}">
@@ -13,8 +13,7 @@ assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: ""
       <div class="glide glide-worker-{{ key }}">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            {% assign worker_images = [] | get_worker_images: key, "d-flex
-             worker-image" %}
+            {% assign worker_images = [] | get_worker_images: key, "d-flex worker-image" %}
             {% for image in worker_images %}
               <li>{{- image -}}</li>
             {% endfor %}
@@ -59,8 +58,8 @@ assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: ""
       </div>
     </div>
   {% endcapture %}
-  {% assign blocks = blocks | push: infoblock %} {% include
- infobox/reuse/core.html title=worker.name images=images blocks=blocks %}
+  {% assign blocks = blocks | push: infoblock %}
+  {% include infobox/reuse/core.html title=worker.name images=images blocks=blocks %}
 
   <script>
     let currentStyle = "default";
@@ -312,7 +311,7 @@ assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: ""
       return Run;
     };
 
-    const glide = new Glide(".glide-worker- {{ key }}", {
+    const glide = new Glide(`.glide-worker-{{ key }}`, {
       type: "slider",
       rewind: true,
       startAt: 0,
@@ -325,7 +324,7 @@ assign worker = site.data.workerinfo[key] %} {% assign images = "" | split: ""
       Run: customRun
     });
 
-    document.getElementById("glide-dropdown-worker- {{ key }}").onchange = function(event) {
+    document.getElementById(`glide-dropdown-worker-{{ key }}`).onchange = function(event) {
       currentStyle = event.target.value;
       glide.go("=0");
     };
