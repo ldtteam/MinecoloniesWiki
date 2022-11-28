@@ -9,12 +9,12 @@ The {% building %} is where the {% worker_link alchemist %} works. The {% worker
 **Hint:** The number of recipes you can teach the {% building %} doubles per building level. So:
 
 | {% building %} Level | Number of Recipes |
-|:--------------------:|:-----------------:|
-| 1                    |        10         |
-| 2                    |        20         |
-| 3                    |        40         |
-| 4                    |        80         |
-| 5                    |        160        |
+|----------------------|-------------------|
+| 1                    | 10                |
+| 2                    | 20                |
+| 3                    | 40                |
+| 4                    | 80                |
+| 5                    | 160               |
 
 {% endcapture %}
 {% capture infobox %}

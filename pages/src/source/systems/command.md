@@ -17,12 +17,12 @@ These are the in-game commands currently available. Most require that a user hav
 
 **Command Syntax**
 
-| If you see this...   | Then...                           |
-| :------------------: | :-------------------------------: |
-| `plaintext`          | Enter this exactly as shown       |
-| `<angle brackets>`   | This is a **required** argument   |
-| `[square brackets]`  | This is an **optional** argument  |
-| `x | y | z`        | Pick one of these options (can be optional or required) |
+| If you see this...  | Then...                                                 |
+|---------------------|---------------------------------------------------------|
+| `plaintext`         | Enter this exactly as shown                             |
+| `<angle brackets>`  | This is a **required** argument                         |
+| `[square brackets]` | This is an **optional** argument                        |
+| `x | y | z`         | Pick one of these options (can be optional or required) |
 
 ## Base Commands
 

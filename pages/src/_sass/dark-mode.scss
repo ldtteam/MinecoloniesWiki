@@ -1,0 +1,63 @@
+// Include dark mode styles
+$bg-dark: #1e2022;
+$color-light: #bcc2c8;
+
+.active,
+a:focus,
+a:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.bgscroll {
+  background-color: $bg-dark;
+  background-image: none;
+  color: $color-light;
+  padding-top: 0;
+}
+
+.button {
+  background-color: var(--dark);
+  background-image: none;
+  border: 1px var(--color-light) solid;
+  border-radius: 10%;
+}
+
+.dropdown-item {
+  color: var(--color-light) !important;
+}
+
+.dropdown-item:hover {
+  background-color: $bg-dark;
+}
+
+.dropdown-menu {
+  background-color: var(--dark) !important;
+  border-color: var(--color-light);
+}
+
+.infobox {
+  background-image: none;
+  border: 1px var(--color-light) solid;
+  border-radius: .25rem;
+  margin-left: .5em;
+  margin-right: .5em;
+  padding: .5em;
+}
+
+.sidenav {
+  background-color: $bg-dark;
+  border-color: var(--color-light);
+}
+
+.sidenav-link,
+.sidenav-title {
+  color: var(--color-light) !important;
+}
+
+.table {
+  color: var(--color-light);
+}
+
+body {
+  background-color: $bg-dark;
+}

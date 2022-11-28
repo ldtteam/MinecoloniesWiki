@@ -12,12 +12,13 @@ The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirel
 **Hint:** Upgrading the Stonemason's Hut lets you teach it more recipes. So:
 
 | Building Level | Number of Recipes |
-| :------------: | :---------------: |
-|       1        |        10         |
-|       2        |        20         |
-|       3        |        40         |
-|       4        |        80         |
-|       5        |        160        |
+|----------------|-------------------|
+| 1              | 10                |
+| 2              | 20                |
+| 3              | 40                |
+| 4              | 80                |
+| 5              | 160               |
+
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}

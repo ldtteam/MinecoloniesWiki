@@ -1,1 +1,1 @@
-require_relative "workers/worker_images.rb"
+require_relative "workers/worker_images"

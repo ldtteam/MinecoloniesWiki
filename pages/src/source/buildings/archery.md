@@ -12,12 +12,12 @@ The Archery is where your Archers in Training will train to become [Archers](../
 The number of students that can be trained at a time depends on the level of the Archery. 
 
 | Archery Level | Max # of Students |
-| :-----------: | :---------------: |
-|       1       |         1         |
-|       2       |         2         |
-|       3       |         3         |
-|       4       |         4         |
-|       5       |         5         |
+|---------------|-------------------|
+| 1             | 1                 |
+| 2             | 2                 |
+| 3             | 3                 |
+| 4             | 4                 |
+| 5             | 5                 |
 
 The Archers in Training require a bow to practice. They will shoot at the practice targets, a target block (hay bale in 1.15) on a fence post. While shooting, they will try to stand at a place designated either by glowstone or by any block specially tagged as a standing point (tagging any block means that glowstone is ignored).
 

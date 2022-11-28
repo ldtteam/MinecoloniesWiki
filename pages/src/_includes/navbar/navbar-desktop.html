@@ -1,0 +1,121 @@
+<nav class="navbar navbar-expand-lg navbar-default main">
+  <div class="container">
+    <button
+      aria-expanded="false"
+      aria-label="Toggle Navigation"
+      class="navbar-toggler"
+      id="navbarSideButton"
+      type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://minecolonies.com">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://minecolonies.com/about">About the Mod</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://minecolonies.com/team">Our Team</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="https://wiki.minecolonies.ldtteam.com/">Wiki</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://crowdin.com/project/minecolonies">Translate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ldtteam/minecolonies/issues/new/choose">Report a Bug</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-align mr-3">
+        <li class="nav-item mr-2">
+          <button class="btn btn-outline-secondary" onclick="switchTheme()">
+            <i class="theme-toggle fas fa-sun"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          {% include util/version-select.html %}
+        </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-align">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ldtteam/MinecoloniesWiki/edit/main/pages/src/{{ page.path }}">
+            <span>Edit this Page</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        {% for social in site.data.socials %}
+          <li class="nav-item">
+            <a
+              aria-label="{{ social.name }}"
+              class="nav-link"
+              href="{{ social.link }}">
+              <i class="fab fa-{{ social.icon }} social-icon-{{ social.id }}"></i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-default secondary">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarsec">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}">Wiki Home</a>
+        </li>
+        {% for item in site.data.subnav.subnav %}
+          <li class="nav-item dropdown">
+            <a
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              id="{{ item.title }}Dropdown"
+              role="button">{{- item.title -}}</a>
+            <ul aria-labelledby="{{ item.title }}Dropdown" class="dropdown-menu">
+              {% case item.type %}
+                {% when "buildings" %}
+                  {% for entry in
+            site.data.buildinginfo %}
+                    <li>{% building_link entry[0] class="dropdown-item" %}</li>
+                  {% endfor %}
+                {% when "workers" %}
+                  {% for type in
+            site.data.workertypes %}
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">{{- type[1].name -}}</a>
+                      <ul class="dropdown-menu">
+                        {% for entry in site.data.workerinfo %}
+                          {% if entry[1].type ==
+                type[0] %}
+                            <li>{% worker_link entry[0] class="dropdown-item" %}</li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  {% endfor %}
+                {% else %}
+                  {% for entry in item.subitems %}
+                    <li>
+                      <a class="dropdown-item" href="{{ entry.url | relative_url }}">{{- entry.page -}}</a>
+                    </li>
+                  {% endfor %}
+              {% endcase %}
+            </ul>
+          </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ 'source/search' | relative_url }}">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -12,7 +12,7 @@ The Plantation is where the Planter will grow either sugar cane, bamboo, or cact
 The Plantation's level determines how many crops the Planter can plant at a time.
 
 | Plantation Level | Crops Grown |
-| ---------------- | ----------- |
+|------------------|-------------|
 | 1                | 4           |
 | 2                | 8           |
 | 3                | 12          |
@@ -24,12 +24,12 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 **Note:** The Planter can only learn a certain amount of recipes per their hut level. 
 
 | Building Level | Number of Recipes |
-| :------------: | :---------------: |
-|       1        |        10         |
-|       2        |        20         |
-|       3        |        40         |
-|       4        |        80         |
-|       5        |        160        |
+|----------------|-------------------|
+| 1              | 10                |
+| 2              | 20                |
+| 3              | 40                |
+| 4              | 80                |
+| 5              | 160               |
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}

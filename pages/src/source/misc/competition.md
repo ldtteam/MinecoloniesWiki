@@ -78,23 +78,23 @@ and all blueprints.
 ## List of mods that may be used
 Up to three mods out of the following list are allowed to be used:
 
-| Mod name | Version to be used | Link to mod |
-| :------: | :----------------: | :---------: |
-| Biomes O'Plenty   | 1.19.2-17.1.1.152  | <https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty> |
-| Oh the Biomes You'll Go | 1.19.2-2.0.0.11 | <https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go> |
-| Rechiseled  | 1.0.10c for Forge 1.19   | <https://www.curseforge.com/minecraft/mc-mods/rechiseled> |
-| Decorative blocks | 1.19.2-3.0.0 | <https://www.curseforge.com/minecraft/mc-mods/decorative-blocks> |
-| Immersive Engineering   | 1.19.2-9.0.0-153   | <https://www.curseforge.com/minecraft/mc-mods/immersive-engineering> |
-| Engineer's decor  | 1.19.2-forge-1.3.26   | <https://www.curseforge.com/minecraft/mc-mods/engineers-decor> |
-| MrCrayfish Furniture Mod   | 7.0.0-pre34  | <https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod> |
-| Twilight Forest   | 1.19.2 - 4.2.1421  | <https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest> |
-| Create   | 1.19.2 v0.5.0f     | <https://www.curseforge.com/minecraft/mc-mods/create> |
-| Blue Skies  | 1.19.2-v1.3.20  | <https://www.curseforge.com/minecraft/mc-mods/blue-skies> |
-| Quark    | 3.3-371            | <https://www.curseforge.com/minecraft/mc-mods/quark> |
-| Farmers Delight   | 1.2 - 1.19+  | <https://www.curseforge.com/minecraft/mc-mods/farmers-delight> |
-| Supplementaries   | 1.19.2-2.2.4 | <https://www.curseforge.com/minecraft/mc-mods/supplementaries> |
-| Ars Nouveau | 1.19.2-3.4.0    | <https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files> |
-| Epic Knights and Armor  | 1.19.2 6.6v  | <https://www.curseforge.com/minecraft/mc-mods/epic-knights-armor-and-weapons> |
-| Create Crystal Clear | 0.1e 1.19.2  | <https://www.curseforge.com/minecraft/mc-mods/create-crystal-clear> |
-| Biome Makeover | 1.19.2-1.5.12.jar  | <https://www.curseforge.com/minecraft/mc-mods/biome-makeover-forge> |
-| Ecologics   | 2.1.10 (Forge 1.19.2) | <https://www.curseforge.com/minecraft/mc-mods/ecologics> |
+| Mod name                 | Version to be used     | Link to mod                                                                   |
+|--------------------------|------------------------|-------------------------------------------------------------------------------|
+| Biomes O'Plenty          | 1.19.2-17.1.1.152      | <https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty>                |
+| Oh the Biomes You'll Go  | 1.19.2-2.0.0.11        | <https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go>         |
+| Rechiseled               | 1.0.10c for Forge 1.19 | <https://www.curseforge.com/minecraft/mc-mods/rechiseled>                     |
+| Decorative blocks        | 1.19.2-3.0.0           | <https://www.curseforge.com/minecraft/mc-mods/decorative-blocks>              |
+| Immersive Engineering    | 1.19.2-9.0.0-153       | <https://www.curseforge.com/minecraft/mc-mods/immersive-engineering>          |
+| Engineer's decor         | 1.19.2-forge-1.3.26    | <https://www.curseforge.com/minecraft/mc-mods/engineers-decor>                |
+| MrCrayfish Furniture Mod | 7.0.0-pre34            | <https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod>       |
+| Twilight Forest          | 1.19.2 - 4.2.1421      | <https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest>            |
+| Create                   | 1.19.2 v0.5.0f         | <https://www.curseforge.com/minecraft/mc-mods/create>                         |
+| Blue Skies               | 1.19.2-v1.3.20         | <https://www.curseforge.com/minecraft/mc-mods/blue-skies>                     |
+| Quark                    | 3.3-371                | <https://www.curseforge.com/minecraft/mc-mods/quark>                          |
+| Farmers Delight          | 1.2 - 1.19+            | <https://www.curseforge.com/minecraft/mc-mods/farmers-delight>                |
+| Supplementaries          | 1.19.2-2.2.4           | <https://www.curseforge.com/minecraft/mc-mods/supplementaries>                |
+| Ars Nouveau              | 1.19.2-3.4.0           | <https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files>              |
+| Epic Knights and Armor   | 1.19.2 6.6v            | <https://www.curseforge.com/minecraft/mc-mods/epic-knights-armor-and-weapons> |
+| Create Crystal Clear     | 0.1e 1.19.2            | <https://www.curseforge.com/minecraft/mc-mods/create-crystal-clear>           |
+| Biome Makeover           | 1.19.2-1.5.12.jar      | <https://www.curseforge.com/minecraft/mc-mods/biome-makeover-forge>           |
+| Ecologics                | 2.1.10 (Forge 1.19.2)  | <https://www.curseforge.com/minecraft/mc-mods/ecologics>                      |

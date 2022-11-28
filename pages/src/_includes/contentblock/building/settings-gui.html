@@ -1,17 +1,17 @@
 {% assign items = "" | split: "" %}
 {% for setting in site.data.buildinginfo[include.key].settings %}
-    {% capture value %}
-        {{ "**" | append: setting.name | append: ":** " | append: setting.description | markdownify }}
-        {% if setting.options | size > 0 %}
-            <ul>
-                {% for option in setting.options %}
-                    <li>
-                        {{ "**" | append: option.name | append: ":** " | append: option.description | markdownify }}
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endcapture %}
-    {% assign items = items | push: value %}
+  {% capture value %}
+    {{- "**" | append: setting.name | append: ":** " | append: setting.description | markdownify -}}
+    {% if setting.options | size > 0 %}
+      <ul>
+        {% for option in setting.options %}
+          <li>
+            {{- "**" | append: option.name | append: ":** " | append: option.description | markdownify -}}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endcapture %}
+  {% assign items = items | push: value %}
 {% endfor %}
 {% include contentblock/basic-list.html header=include.header items=items image_width=4 image=include.image alt=include.alt %}

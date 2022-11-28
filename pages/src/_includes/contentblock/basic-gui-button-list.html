@@ -1,6 +1,6 @@
 {% assign items = "" | split: "" %}
 {% for item in include.items %}
-    {% assign value = "**" | append: item.button | append: ":** " | append: item.content | markdownify %}
-    {% assign items = items | push: value %}
+  {% assign value = "**" | append: item.button | append: ":** " | append: item.content | markdownify %}
+  {% assign items = items | push: value %}
 {% endfor %}
 {% include contentblock/basic-list.html header=include.header items=items image_width=include.image_width image=include.image alt=include.alt %}

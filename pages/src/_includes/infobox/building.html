@@ -1,57 +1,57 @@
 {% assign key = page.building | strip | default: "" %}
 {% if key != "" %}
-    {% assign building = site.data.buildinginfo[key] %}
-    {% assign images = "" | split: "" %}
-    {% assign blocks = "" | split: "" %}
+  {% assign building = site.data.buildinginfo[key] %}
+  {% assign images = "" | split: "" %}
+  {% assign blocks = "" | split: "" %}
 
-    {% capture building_image %}
-        <img src="../../assets/images/buildings/{{ key }}.png" alt="{{ building.name }}"/>
+  {% capture building_image %}
+    <img alt="{{ building.name }}" src="../../assets/images/buildings/{{ key }}.png" />
+  {% endcapture %}
+  {% assign images = images | push: building_image %}
+
+  {% if building.workers | size != 0 %}
+    {% capture workerblock %}
+      {% for worker in building.workers %}
+        <div class="row section-text text-left">
+          <div class="col">
+            {% if forloop.first %}
+              <p>
+                <strong>Worker:</strong>
+              </p>
+            {% endif %}
+          </div>
+          <div class="col">
+            <p>
+              <a href="../workers/{{ worker }}">{{- site.data.workerinfo[worker].name -}}</a>
+            </p>
+          </div>
+        </div>
+      {% endfor %}
     {% endcapture %}
-    {% assign images = images | push: building_image %}
+    {% assign blocks = blocks | push: workerblock %}
+  {% endif %}
 
-    {% if building.workers | size != 0 %}
-        {% capture workerblock %}
-            {% for worker in building.workers %}
-                <div class="row section-text text-left">
-                    <div class="col">
-                        {% if forloop.first %}
-                            <p>
-                                <strong>Worker:</strong>
-                            </p>
-                        {% endif %}
-                    </div>
-                    <div class="col">
-                        <p>
-                            <a href="../workers/{{ worker }}">{{ site.data.workerinfo[worker].name }}</a>
-                        </p>
-                    </div>
-                </div>
-            {% endfor %}
-        {% endcapture %}
-        {% assign blocks = blocks | push: workerblock %}
-    {% endif %}
+  {% if building.recipes | size != 0 %}
+    {% capture recipeblock %}
+      {% for recipe in building.recipes %}
+        {% assign recipe_key = recipe %}
+        {% assign recipe_label = "" %}
+        {% if recipe.recipe != null %}
+          {% assign recipe_key = recipe.recipe %}
+          {% assign recipe_label = recipe.label | default: "" %}
+        {% endif %}
+        <div class="row section-text text-center infobox-recipe-row">
+          <div class="col-12">
+            {% if recipe_label != "" %}
+              <p class="m-0">{{- recipe_label -}}</p>
+            {% endif %}
+            <recipe>{{- recipe_key -}}</recipe>
+          </div>
+        </div>
+      {% endfor %}
+    {% endcapture %}
+    {% assign blocks = blocks | push: recipeblock %}
+  {% endif %}
 
-    {% if building.recipes | size != 0 %}
-        {% capture recipeblock %}
-            {% for recipe in building.recipes %}
-                {% assign recipe_key = recipe %}
-                {% assign recipe_label = "" %}
-                {% if recipe.recipe != null %}
-                    {% assign recipe_key = recipe.recipe %}
-                    {% assign recipe_label = recipe.label | default: "" %}
-                {% endif %}
-                <div class="row section-text text-center infobox-recipe-row">
-                    <div class="col-12">
-                        {% if recipe_label != "" %}
-                            <p class="m-0">{{ recipe_label }}</p>
-                        {% endif %}
-                        <recipe>{{ recipe_key }}</recipe>
-                    </div>
-                </div>
-            {% endfor %}
-        {% endcapture %}
-        {% assign blocks = blocks | push: recipeblock %}
-    {% endif %}
-
-    {% include infobox/reuse/core.html title=building.name images=images blocks=blocks %}
+  {% include infobox/reuse/core.html title=building.name images=images blocks=blocks %}
 {% endif %}

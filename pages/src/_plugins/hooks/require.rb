@@ -1,1 +1,1 @@
-require_relative "WorkerImageHook.rb"
+require_relative "WorkerImageHook"

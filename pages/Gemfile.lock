@@ -73,6 +73,7 @@ GEM
     rubocop-ast (1.23.0)
       parser (>= 3.1.1.0)
     ruby-progressbar (1.11.0)
+    rufo (0.13.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -91,6 +92,7 @@ DEPENDENCIES
   kramdown-parser-gfm
   mini_magick
   rubocop
+  rufo
   wdm (>= 0.1.0)
   webrick (~> 1.7)
 

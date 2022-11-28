@@ -11,7 +11,7 @@ The Farmer will also craft seeds, carved pumpkins, hay bales, [composted dirt](.
 **Note:** The Farmer can only learn a set number of recipes based on their hut level. So:
 
 | Hut Level | Recipes |
-| --------- | ------- |
+|-----------|---------|
 | 1         | 10      |
 | 2         | 20      |
 | 3         | 40      |
@@ -32,12 +32,12 @@ You can click on the arrows to increase the size of the area the Farmer will far
 **IMPORTANT:** The Farmer will farm up to five Fields, depending on the level of the Farm. The level of the Farm is the number of Fields the Farmer can cultivate:
 
 | Farm Level | Fields |
-| :--------: | :----: |
-|     1      |   1    |
-|     2      |   2    |
-|     3      |   3    |
-|     4      |   4    |
-|     5      |   5    |
+|------------|--------|
+| 1          | 1      |
+| 2          | 2      |
+| 3          | 3      |
+| 4          | 4      |
+| 5          | 5      |
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}

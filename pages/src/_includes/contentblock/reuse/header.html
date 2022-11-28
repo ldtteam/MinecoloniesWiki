@@ -1,4 +1,4 @@
 {% assign header = include.header | default: "" | strip %}
 {% if header != "" %}
-    <p>{{ include.header | markdownify }}</p>
+  <p>{{- include.header | markdownify -}}</p>
 {% endif %}

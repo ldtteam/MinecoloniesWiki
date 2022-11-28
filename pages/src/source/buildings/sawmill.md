@@ -12,12 +12,12 @@ The Sawmill is where the Carpenter will craft any items made of at least 75% woo
 **Hint:** The number of recipes you can teach the Sawmill doubles per building level. So:
 
 | Sawmill Level | Number of Recipes |
-| :-----------: | :---------------: |
-|       1       |        10         |
-|       2       |        20         |
-|       3       |        40         |
-|       4       |        80         |
-|       5       |        160        |
+|---------------|-------------------|
+| 1             | 10                |
+| 2             | 20                |
+| 3             | 40                |
+| 4             | 80                |
+| 5             | 160               |
 {% endcapture %}
 {% capture infobox %}
 {% include infobox/building.html %}
