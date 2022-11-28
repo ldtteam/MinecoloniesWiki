@@ -1,9 +1,14 @@
 ---
-title: Competition
+title: Competition 2022
 layout: default
 ---
 
-# Colony Style Competition
+# Colony Style Competition 2022
+
+<div style="text-align:center">
+<img src="assets/images/misc/competitionBanner.png" alt="Competition 2022 banner">
+</a>
+</div>
 
 To celebrate reaching 30 million downloads we present you the Colony Style Competition.
 In a nutshell, the idea is to take existing styles and replace their main blocks with alternative blocks.
