@@ -4,7 +4,7 @@
       "firstRow": {
         "firstItem": "minecraft/cactus",
         "secondItem": "",
-        "thirdItem": "minecraft/cactus",
+        "thirdItem": "minecraft/cactus"
       },
       "secondRow": {
         "firstItem": "",
@@ -14,7 +14,7 @@
       "thirdRow": {
         "firstItem": "minecraft/cactus",
         "secondItem": "",
-        "thirdItem": "minecraft/cactus",
+        "thirdItem": "minecraft/cactus"
       },
       "product": "minecolonies/cactusextra"
     }
