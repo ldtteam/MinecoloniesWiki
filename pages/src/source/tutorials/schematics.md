@@ -220,6 +220,7 @@ The process for custom [supply ships and camps](../../source/items/supplycampand
 | [1.19]  | Ship         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplyship |
 
 [1.18] So, for example, the path would be `structurize/schematics/wildwest/builder1` for the Builder's Hut level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
+
 [1.19] So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decoration/supplies/supplycamp` for the supply camp.
 
 ## Hut Requirements
