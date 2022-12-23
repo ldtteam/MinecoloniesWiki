@@ -20,13 +20,13 @@
 
         {% when "colonist:amount" %}
           {% if unlock.max == true %}
-            {% assign text = "Increases the colony it"s colonists capacity to the maximum amount of colonists in the [config file](/source/misc/configfile)" | markdownify %}
+            {% assign text = "Increases the colony it's colonists capacity to the maximum amount of colonists in the [config file](/source/misc/configfile)" | markdownify %}
           {% else %}
             {% assign colonists = "colonists" %}
             {% if unlock.colonists == 1 %}
               {% assign colonists = "colonist" %}
             {% endif %}
-            {% assign text = "Increases the colony it"s colonist capacity to a total of **" | append: unlock.colonists | append: "** " | append: colonists | markdownify %}
+            {% assign text = "Increases the colony it's colonist capacity to a total of **" | append: unlock.colonists | append: "** " | append: colonists | markdownify %}
           {% endif %}
 
         {% when "colonist:level_up" %}
@@ -53,19 +53,19 @@
           {% if unlock.cumulative == true %}
             {% assign cumulative = " (cumulative with prerequisite research)" %}
           {% endif %}
-          {% assign text = "Colonists" bedtime is pushed back by **" | append: unlock.hours | append: "** in-game hour" | append: cumulative | markdownify %}
+          {% assign text = "Colonists' bedtime is pushed back by **" | append: unlock.hours | append: "** in-game hour" | append: cumulative | markdownify %}
 
         {% when "colonist:child:grow_up" %}
           {% assign text = "Decreases the time it takes children to grow up by **" | append: unlock.percentage | append: "%**" | markdownify %}
 
         {% when "colonist:build_speed" %}
-          {% assign text = "Colonists" block place speed increased by **" | append: unlock.percentage | append: "%**" | markdownify %}
+          {% assign text = "Colonists' block place speed increased by **" | append: unlock.percentage | append: "%**" | markdownify %}
 
         {% when "colonist:break_speed" %}
-          {% assign text = "Colonists" block break speed increased by **" | append: unlock.percentage | append: "%**" | markdownify %}
+          {% assign text = "Colonists' block break speed increased by **" | append: unlock.percentage | append: "%**" | markdownify %}
 
         {% when "colonist:tool:durability" %}
-          {% assign text = "Colonists" tools durability increased by **" | append: unlock.percentage | append: "%**" | markdownify %}
+          {% assign text = "Colonists' tools durability increased by **" | append: unlock.percentage | append: "%**" | markdownify %}
 
         {% when "worker:recipes" %}
           {% assign text = "Workers can learn **" | append: unlock.percentage | append: "%** more recipes" | markdownify %}
@@ -107,7 +107,7 @@
           {% assign text = miner_link | append: " find **" | append: unlock.percentage | append: "%** more ores" | markdownify %}
 
         {% when "worker:guard:armor_durability" %}
-          {% assign text = "Increases Guards their armor"s durability by **" | append: unlock.percentage | append: "%**" | markdownify %}
+          {% assign text = "Increases Guards their armor's durability by **" | append: unlock.percentage | append: "%**" | markdownify %}
 
         {% when "worker:guard:armor" %}
           {% capture worker_link %}
