@@ -1545,7 +1545,7 @@ trees:
                                 amount: 2048
                             unlocks:
                               - type: worker:farmer:harvest
-                                percentage: 75
+                                percentage: 200
       - name: Soft Shoes
         requirements:
           - type: building
