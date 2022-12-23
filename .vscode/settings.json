@@ -1,5 +1,5 @@
 {
-  "liquid.format.enable": true,
+  "liquid.format.enable": false,
   "liquid.format.endNewLine": true,
   "files.associations": {
     "*.html": "liquid",
