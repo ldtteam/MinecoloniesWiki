@@ -119,7 +119,12 @@ The scans folder is where the schematics are saved after performing a scan using
 
 To create new schematics, there are some guidelines that you must follow: the scans MUST have the same footprint for each level of the hut; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level
 
+[1.19]
+Must enable blueprint mode in server config. If on singleplayer, it's recommended to use a Configured mod or similar to edit this property in game menu. Setting this property is not required in 1.18.
+
 [1.18]
+When placing a hut block, ensure you are not within a colony border. Shift-right-click to place.
+
 The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the Builder's Huts with the MyOwn style, we would have:
 
 *myown/builder1.blueprint*
