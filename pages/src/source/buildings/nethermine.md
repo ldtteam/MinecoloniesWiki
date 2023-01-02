@@ -6,6 +6,8 @@ layout: building
 {% capture content %}
 ### Note: The Nether Mine cannot be built until you have finished the [research](../../source/systems/research) in the [University](../../source/buildings/university).
 
+### Note: Not all colony styles have this building as of version 1.19.2
+
 The Nether Mine is where the [Nether Miner](../workers/netherminer) works. The Nether Miner travels into the Nether and mines resources found there.  The level of the hut determines what items Nether Miner brings back.
 
 - <strong>Level 1:</strong>  blaze rod, ender pearl, ghast tear, gold ingot, gold nugget, gravel, gunpowder, leather, magma cream, nether quartz ore, netherrack, porkchop, rotten flesh, soul sand, soul_soil.
