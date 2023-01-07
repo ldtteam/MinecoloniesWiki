@@ -14,7 +14,7 @@ While mining, sometimes the Miner will get lucky and get an ore block instead of
 
 | Mine Level | Shaft Y Level | Shaft Y Level |
 | ---------- | ------------- | ------------- |
-|            | 1.16          | 1.18          |
+|            | 1.16          | 1.18+         |
 | 1          | 50            | 40            |
 | 2          | 30            | 20            |
 | 3          | Bedrock       | 0             |
