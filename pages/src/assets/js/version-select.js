@@ -6,9 +6,7 @@ function docReady(fn) {
   }
 }
 
-function updateVersion(version, persist) {
-  persist = persist ?? true;
-
+function updateVersion(version, persist = true, addIfNotExist = false) {
   const currentVersion = document.body.getAttribute("data-version");
   if (currentVersion === version.order) {
     return;
@@ -24,6 +22,20 @@ function updateVersion(version, persist) {
       element.classList.remove("version-not-supported");
     } else {
       element.classList.add("version-not-supported");
+    }
+
+    const item = element.children.namedItem(`version-${version.order}`);
+    if (addIfNotExist && item === null) {
+      const newOpt = document.createElement("option");
+      if (version.supported) {
+        newOpt.classList.add("version-supported");
+      } else {
+        newOpt.classList.add("version-not-supported");
+      }
+      newOpt.value = version.order;
+      newOpt.innerText = version.name;
+      element.appendChild(newOpt);
+      element.value = version.order;
     }
   });
 }
@@ -57,10 +69,10 @@ docReady(function() {
   }
 
   if (fixedVersionFound) {
-    updateVersion(fixedVersion, false);
+    updateVersion(fixedVersionFound, false, true);
   } else if (preferredVersionFound) {
-    updateVersion(preferredVersionFound, false);
+    updateVersion(preferredVersionFound, false, !preferredVersionFound.supported);
   } else {
-    updateVersion(latest_version, false);
+    updateVersion(latest_version, false, false);
   }
 });

@@ -3,8 +3,6 @@
   {% for version in versions %}
     {% if version.supported %}
       <option class="version-supported" value="{{ version.order }}">{{- version.name -}}</option>
-    {% else %}
-      <option class="version-not-supported" value="{{ version.order }}">{{- version.name -}}</option>
     {% endif %}
   {% endfor %}
 </select>
