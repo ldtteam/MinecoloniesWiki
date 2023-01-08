@@ -150,6 +150,10 @@ $mcurl: "https://minecolonies.com";
 
 .version-not-supported {
   color: red;
+
+  &:empty {
+    display: none;
+  }
 }
 
 .version-supported {
