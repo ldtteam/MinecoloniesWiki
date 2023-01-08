@@ -18,24 +18,17 @@ function updateVersion(version, persist = true, addIfNotExist = false) {
   document.body.setAttribute("data-version", version.order);
   Array.from(document.getElementsByClassName("version-switch")).forEach((element) => {
     element.value = version.order;
-    if (version.supported) {
-      element.classList.remove("version-not-supported");
-    } else {
-      element.classList.add("version-not-supported");
-    }
 
-    const item = element.children.namedItem(`version-${version.order}`);
-    if (addIfNotExist && item === null) {
-      const newOpt = document.createElement("option");
-      if (version.supported) {
-        newOpt.classList.add("version-supported");
-      } else {
-        newOpt.classList.add("version-not-supported");
+    const notSupportedList = element.querySelector(`.version-not-supported`);
+    if (notSupportedList != null) {
+      const item = notSupportedList.querySelector(`option[value="${version.order}"]`);
+      if (addIfNotExist && item === null) {
+        const newOpt = document.createElement("option");
+        newOpt.value = version.order;
+        newOpt.innerText = version.name;
+        notSupportedList.appendChild(newOpt);
+        element.value = version.order;
       }
-      newOpt.value = version.order;
-      newOpt.innerText = version.name;
-      element.appendChild(newOpt);
-      element.value = version.order;
     }
   });
 }
