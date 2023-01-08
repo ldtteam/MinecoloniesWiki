@@ -48,6 +48,7 @@ SPECIAL NOTE: Do not rename the file after scanning. It MUST be scanned with the
 Scans are saved in `../minecolonies/scan/new/...` [1.18] or `*/blueprints/<yourplayername>/scans` [1.19]
 
 [1.18] Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a <a href="#customhuts">custom hut</a>.
+<br>
 [1.19] Once the scans are saved, they need to be placed in a style pack, preferably in the correct folder. See the [style packs](#style-packs) chapter for more details.
 
 ## Placing a Schematic.
@@ -98,17 +99,20 @@ This is a FAQ section to answer common questions regarding schematics in MineCol
 #### How do I install custom schematics I just downloaded?
 
 [1.18] Those custom schematics go in `*/structurize/schematics`. Unzip the zip you downloaded, and put all subfolders in the schematics folder. That folder should contain folders like &lt;stylename&gt;, decorations, walls, supplycamps etc. (depending on which style you installed)
+<br>
 [1.19] The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints`
 
 #### What and where is the scans folder?
 
 The scans folder is where the schematics are saved after performing a scan using the scan tool in MineColonies.
 [1.18] This is a client-side-only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in-game. (If they aren't there, look in `*/minecolonies/scans/new`.) This directory is shared between all your singleplayer games and multiplayer games.
+<br>
 [1.19] This is located in your own style pack in Minecraft's folder under: `*/blueprints/<yourplayername>/scans/`. This folder is shared between all your singleylayer and multiplayer games.
 
 #### Where is the schematic folder?
 
 [1.18] Custom schematics need to be copied inside the schematic folder. For both singleplayer and multiplayer games, the folder is under `*/structurize/schematics/`.
+<br>
 [1.19] Custom schematics need to be placed in a (custom) [style pack](#style-packs). For more information about that, look there.
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
@@ -118,6 +122,8 @@ The scans folder is where the schematics are saved after performing a scan using
 #### How to create <a id="customhuts">custom huts</a>?
 
 To create new schematics, there are some guidelines that you must follow: the scans MUST have the same footprint for each level of the hut; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level
+
+Ensure you are building your custom hut outside of any colony borders. When placing the hut block inside the custom hut, shift+right click to place it without activating it. Then you can scan and save the schematic.
 
 [1.18]
 The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the Builder's Huts with the MyOwn style, we would have:
@@ -306,6 +312,7 @@ Some buildings may also require tags to be set on certain blocks using the [tag 
 ### How to override some built-in schematics?
 
 [1.18] Simply create a schematic file with the same style/name. For instance, to override the [Builder's Hut](../../source/buildings/builder) wooden level 1, create a schematic file name called wooden/builder1.blueprint.
+<br>
 [1.19] Unfortunately, this is not possible, unless you override the entire style (make a style pack with the same name as an existing style pack, in that case).
 
 ### How to use custom huts?
@@ -327,6 +334,7 @@ Edit the Structurize configuration file at `minecraft/config/structurize-common.
 ### How to create upgradable decoration schematics?
 
 [1.18] Add the [deco controller](../../source/items/decocontroller) somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning - don't include the path in the scan name.
+<br>
 [1.19] Put the [deco controller](../../source/items/decocontroller) somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
 
 ![Upgradable Decos](../../assets/images/tutorial/upgradabledecos.png)
