@@ -56,7 +56,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
   
 ### Step 8: Warehouse and courier
 
-  At this point, you might be tired of bringing all of the resources to the Builder and taking them from the Fisher, Forester, Miner, etc. You also might want to store items in one place. Well, the [Warehouse](../../source/buildings/warehouse) and [Courier’s Hut](../../source/buildings/courier) are the solution you are looking for! [Couriers](../../source/workers/courier) transport items between the Warehouse and all of the workplaces.
+  At this point, you might be tired of bringing all of the resources to the Builder and taking them from the Fisher, Forester, Miner, etc. You also might want to store items in one place. Well, the [Warehouse](../../source/buildings/warehouse) and [Courier’s Hut](../../source/buildings/courier) are the solution you are looking for! [Couriers](../../source/workers/courier) transport items between the Warehouse and all of the workplaces. The [Clipboard](../../source/items/clipboard) and [Resource Scroll](../../source/items/resourcescroll) may be helpful!
   
 ### Step 9: Rest of the Colony
   
@@ -357,6 +357,6 @@ You have now completed the most important steps to start and create your colony!
 
 Your question now is probably, "What to build next?" The [Town Hall](../../source/buildings/townhall), [Mine](../../source/buildings/mine), [Forester's Hut](../../source/buildings/forester), [Farm](../../source/buildings/farm), [Fisher's Hut](../../source/buildings/fisher), [Guard Tower](../../source/buildings/guardtower), [Courier's Hut](../../source/buildings/courier), [Bakery](../../source/buildings/bakery), [Restaurant](../../source/buildings/restaurant), and more are probably good places to start. 
 
-But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [House](../../source/buildings/house). This will give you additional citizens for each level of a House you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Foresters, Builders, Farmers, Fishers, and many more! 
+But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the [House](../../source/buildings/house). This will give you additional citizens for each level of a House you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Foresters, Builders, Farmers, Fishers, and many more! If you struggle with keeping track of what everyone needs, consider making a [Clipboard](../../source/items/clipboard) and [Resource Scroll](../../source/items/resourcescroll). Though you only need one Clipboard, you can make a Resource Scroll for each Builder to keep track of their needs!
 
 **Hint:** Upgrade your huts to the highest level possible (level 5 for all of them except the [Tavern](../../source/buildings/tavern)) to get achievements (and increase the speed at which the worker [levels](../../source/systems/worker)).
