@@ -18,8 +18,12 @@ In schematics, you can place a waypoint to denote where workers should walk. Whe
 
 When placing a waypoint, do **not** craft one and place it on the ground. 
 
-In 1.18.2, open the [build tool](../../source/items/buildtool) GUI, then go to Decorations -> Infrastructure -> Waypoint, and place the build order.
+{% version "1.18.2" before=true %}
+Open the [build tool](../../source/items/buildtool) GUI, then go to Decorations -> Infrastructure -> Waypoint, and place the build order.
+{% endversion %}
 
-In 1.19.2, open the build tool GUI, use the Minecolonies Original pack, then go to Infrastructure -> misc -> Waypoint, and place the build order.
+{% version "1.19.2" after=true %}
+Open the build tool GUI, use the Minecolonies Original pack, then go to Infrastructure -> misc -> Waypoint, and place the build order.
+{% endversion %}
 
 This tells the [Builder](../../source/workers/builder) to place the waypoint where you want it. If you did it right, the waypoint should be invisible.
