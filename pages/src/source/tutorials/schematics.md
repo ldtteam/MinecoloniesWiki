@@ -162,7 +162,7 @@ The schematics are visible in the build tool without the hut block, but you can'
 
 ## [1.18] Custom Hut Filenames
 
-Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note that *capitalization matters*.
+Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note *do not use capital letters in hut names*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
 |:---------------|:---------------|:---------------|:---------------|:---------------|
