@@ -342,7 +342,7 @@ Some buildings may also require tags to be set on certain blocks using the [tag 
 
 {% version "1.18.2" before=true %}
 Simply create a schematic file with the same style/name. For instance, to override the [Builder's Hut](../../source/buildings/builder) wooden level 1, create a schematic file name called wooden/builder1.blueprint.
-{% endversion}
+{% endversion %}
 
 {% version "1.19" after=true %}
 Unfortunately, this is not possible, unless you override the entire style (make a style pack with the same name as an existing style pack, in that case).
