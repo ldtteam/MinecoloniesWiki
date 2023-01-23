@@ -48,7 +48,7 @@ Scans are saved in `../minecolonies/scan/new/...`.
 Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a <a href="#customhuts">custom hut</a>.
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 Scans are saved in `*/blueprints/<yourplayername>/scans`.
 <br>
 Once the scans are saved, they need to be placed in a style pack, preferably in the correct folder. See the [style packs](#style-packs) chapter for more details.
@@ -62,11 +62,11 @@ Once you have scanned a structure, you can use the [build tool](../../source/ite
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 The scanned structure can be found in the [build tool](../../source/items/buildtool) under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the scan tool) -> "scans". 
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 ## Style packs
 Styles are now structured in so-called style packs. This is similar to a resource pack or data pack, in that it has a file with some metadata about the style (the name, a description, optionally a link to an image, etc.), and a folder structure with the actual files.
 
@@ -108,7 +108,7 @@ This is a FAQ section to answer common questions regarding schematics in MineCol
 Those custom schematics go in `*/structurize/schematics`. Unzip the zip you downloaded, and put all subfolders in the schematics folder. That folder should contain folders like &lt;stylename&gt;, decorations, walls, supplycamps etc. (depending on which style you installed)
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints`
 {% endversion %}
 
@@ -119,7 +119,7 @@ The scans folder is where the schematics are saved after performing a scan using
 This is a client-side-only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in-game. (If they aren't there, look in `*/minecolonies/scans/new`.) This directory is shared between all your singleplayer games and multiplayer games.
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 This is located in your own style pack in Minecraft's folder under: `*/blueprints/<yourplayername>/scans/`. This folder is shared between all your singleylayer and multiplayer games.
 {% endversion %}
 
@@ -129,7 +129,7 @@ This is located in your own style pack in Minecraft's folder under: `*/blueprint
 Custom schematics need to be copied inside the schematic folder. For both singleplayer and multiplayer games, the folder is under `*/structurize/schematics/`.
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 Custom schematics need to be placed in a (custom) [style pack](#style-packs). For more information about that, look there.
 {% endversion %}
 
@@ -174,7 +174,7 @@ Once ready, move the `myown` folder into the schematics folder and start your ga
 
 **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 The naming for the buildings is not strict anymore. The only things that are important are that they are named consistently, that their names end with the hut level, and that you do not use capital letters in the hut names.
 Alternate designs can just have a different name than the primary one. E.g. if you named the level 1 builder's hut "builder1", an alternative version could be called "altbuilder1" or "builderalt1" or even something completely different ("constructionworker1").
 
@@ -249,7 +249,7 @@ The process for custom [supply ships and camps](../../source/items/supplycampand
 So, for example, the path would be `structurize/schematics/wildwest/builder1` for the Builder's Hut level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 | Camp or Ship | File Name and Path                                            |
 |--------------|---------------------------------------------------------------|
 | [1.19]  | Camp         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplycamp |
@@ -344,7 +344,7 @@ Some buildings may also require tags to be set on certain blocks using the [tag 
 Simply create a schematic file with the same style/name. For instance, to override the [Builder's Hut](../../source/buildings/builder) wooden level 1, create a schematic file name called wooden/builder1.blueprint.
 {% endversion}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 Unfortunately, this is not possible, unless you override the entire style (make a style pack with the same name as an existing style pack, in that case).
 {% endversion %}
 
@@ -354,7 +354,7 @@ Unfortunately, this is not possible, unless you override the entire style (make 
 The custom huts need to be copied in the schematics folder.
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 The custom huts need to be copied in in a style pack.
 {% endversion %}
 
@@ -378,7 +378,7 @@ Edit the Structurize configuration file at `minecraft/config/structurize-common.
 Add the [deco controller](../../source/items/decocontroller) somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning - don't include the path in the scan name.
 {% endversion %}
 
-{% version "1.19.2" after=true %}
+{% version "1.19" after=true %}
 Put the [deco controller](../../source/items/decocontroller) somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
 {% endversion %}
 
