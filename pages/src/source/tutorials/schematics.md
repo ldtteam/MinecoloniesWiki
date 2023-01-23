@@ -154,7 +154,7 @@ Once ready, move the `myown` folder into the schematics folder and start your ga
 **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 [1.19]
-The naming for the buildings is not strict anymore. The only thing that is important is that they are named consistently, that their names end with the hut level, and you do not use capital letters in the hut names.
+The naming for the buildings is not strict anymore. The only things that are important are that they are named consistently, that their names end with the hut level, and that you do not use capital letters in the hut names.
 Alternate designs can just have a different name than the primary one. E.g. if you named the level 1 builder's hut "builder1", an alternative version could be called "altbuilder1" or "builderalt1" or even something completely different ("constructionworker1").
 
 Once ready, you need to make a [style pack](#style-packs) out of them.
