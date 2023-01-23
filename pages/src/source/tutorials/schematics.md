@@ -62,8 +62,8 @@ Once you have scanned a structure, you can use the [build tool](../../source/ite
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
 
-{% version "1.18.2" before=true %}
-[1.19] The scanned structure can be found in the [build tool](../../source/items/buildtool) under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the scan tool) -> "scans". 
+{% version "1.19.2" after=true %}
+The scanned structure can be found in the [build tool](../../source/items/buildtool) under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the scan tool) -> "scans". 
 {% endversion %}
 
 {% version "1.19.2" after=true %}
@@ -378,7 +378,7 @@ Edit the Structurize configuration file at `minecraft/config/structurize-common.
 Add the [deco controller](../../source/items/decocontroller) somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning - don't include the path in the scan name.
 {% endversion %}
 
-{% version "1.18.2" before=true %}
+{% version "1.19.2" after=true %}
 Put the [deco controller](../../source/items/decocontroller) somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
 {% endversion %}
 
