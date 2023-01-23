@@ -159,17 +159,6 @@ The scans' filenames need to follow the naming convention: {StyleName}/{HutName}
 Alternative designs can be placed under as style name like "myownalternative".
 {% endversion %}
 
-<!-- For the new build tool; uncomment this when it's ready
-If you have alternative designs for the same hut, the alternative huts can go in the same folder as the regular hut. 
-The name is somewhat arbitrary; i.e., both "citizenalt1.blueprint" and "altcitizen1.blueprint" are valid.
-
-If you have alternative huts, though, please prepare the following for each: "oldaltstylename", "folderwherealtis/altfilename"
-Note that supply ships and camps go into "decorations/supplies" and miner schematics into "infrastructure/mineshafts"
-
-![AlternativeHuts1](../../assets/images/tutorial/althutsfolders1.png)
-![AlternativeHuts2](../../assets/images/tutorial/althutsfolders2.png)
--->
-
 Once ready, move the `myown` folder into the schematics folder and start your game. You should be able to see it with the the build tool.
 
 **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
