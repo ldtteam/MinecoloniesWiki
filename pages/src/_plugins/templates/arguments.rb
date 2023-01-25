@@ -1,0 +1,1 @@
+Arguments = Struct.new(:keyed, :unkeyed)

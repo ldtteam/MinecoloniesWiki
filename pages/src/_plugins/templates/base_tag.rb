@@ -1,6 +1,4 @@
-Arguments = Struct.new(:keyed, :unkeyed)
-
-class BaseBlock < Liquid::Block
+class BaseTag < Liquid::Tag
     def initialize(tag_name, args, tokens)
         super
         @arguments = args.strip.split(" ")
@@ -8,12 +6,11 @@ class BaseBlock < Liquid::Block
     end
 
     def render(context)
-        content = super
         arguments = parse_arguments(context)
-        return render_block(context, content, arguments)
+        return render_tag(context, arguments)
     end
 
-    def render_block(context, arguments)
+    def render_tag(context, arguments)
         return ""
     end
 

@@ -1,3 +1,7 @@
+require_relative "arguments"
+require_relative "base_block"
+require_relative "base_tag"
+
 require_relative "blocks/util/version"
 
 require_relative "tags/buildings/building_name"

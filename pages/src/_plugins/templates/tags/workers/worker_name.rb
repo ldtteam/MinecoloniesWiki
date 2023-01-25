@@ -1,6 +1,3 @@
-require_relative "../base_tag"
-require_relative "../../../utils/worker_utils"
-
 class WorkerNameTag < BaseTag
     def render_tag(context, arguments)
         worker_key = arguments.unkeyed[0]

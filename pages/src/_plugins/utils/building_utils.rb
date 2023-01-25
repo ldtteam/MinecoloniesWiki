@@ -1,4 +1,4 @@
-class Utils
+class BuildingUtils
     def self.getBuildingKey(context, input)
         building = nil
 
