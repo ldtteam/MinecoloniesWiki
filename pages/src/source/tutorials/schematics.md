@@ -242,8 +242,8 @@ Here is a full list, up-to-date as of 14 October 2022, of the building names. Pl
 The process for custom [supply ships and camps](../../source/items/supplycampandship) is slightly different: 
 
 {% version "1.18.2" before=true %}
-| Camp or Ship | File Name and Path                                |
-|--------------|---------------------------------------------------|
+| Camp or Ship | File Name and Path                                            |
+|--------------|---------------------------------------------------------------|
 | Camp         | structurize/schematics/supplycamp/myownsupplycamp |
 | Ship         | structurize/schematics/supplyship/myownsupplyship |
 
