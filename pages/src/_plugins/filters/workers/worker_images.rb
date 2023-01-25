@@ -20,7 +20,7 @@ module Jekyll
             end
 
             # Transform the images into the proper HTML string
-            source_images.collect do |worker_image|
+            return source_images.collect do |worker_image|
                 pieces = File.basename(worker_image, '.*').split('-')
                 ext = File.extname(worker_image)
 
