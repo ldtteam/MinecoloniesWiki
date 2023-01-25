@@ -48,7 +48,7 @@ Scans are saved in `../minecolonies/scan/new/...`.
 Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a <a href="#customhuts">custom hut</a>.
 {% endversion %}
 
-{% version "1.19" after=true %}
+{% version "1.19.0" after=true %}
 Scans are saved in `*/blueprints/<yourplayername>/scans`.
 <br>
 Once the scans are saved, they need to be placed in a style pack, preferably in the correct folder. See the [style packs](#style-packs) chapter for more details.
