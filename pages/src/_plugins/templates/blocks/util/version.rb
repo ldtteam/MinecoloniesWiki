@@ -1,5 +1,3 @@
-require_relative "../base_block"
-
 class VersionBlock < BaseBlock
     def render_block(context, content, arguments)
         input_version = arguments.unkeyed[0]
@@ -31,6 +29,6 @@ class VersionBlock < BaseBlock
             end
         end
 
-        return "<div data-versions='#{selected_versions.collect { |k| k["order"] }.join(",")}'>#{content.strip}</div>"
+        return "<div data-versions='#{selected_versions.collect { |k| k["order"] }.join(",")}'>#{convert_content(context, content.strip)}</div>"
     end
 end

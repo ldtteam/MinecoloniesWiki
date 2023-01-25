@@ -1,13 +1,10 @@
-require_relative "../base_tag"
-require_relative "utils"
-
 class BuildingLinkTag < BaseTag
     def render_tag(context, arguments)
         building_key = arguments.unkeyed[0]
         building_plural = arguments.keyed["plural"] ||= false
 
-        building = Utils.getBuildingKey(context, arguments.unkeyed[0])
-        building_info = Utils.getBuildingInfo(context, building)
+        building = BuildingUtils.getBuildingKey(context, arguments.unkeyed[0])
+        building_info = BuildingUtils.getBuildingInfo(context, building)
         building_name = building_info[building_plural ? "plural" : "name"]
 
         if arguments.keyed["class"].nil?

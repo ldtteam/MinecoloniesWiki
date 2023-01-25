@@ -9,18 +9,30 @@ Schematics are files containing block and entity information of a certain area a
 - [Schematics](#schematics)
   - [Scanning a New Structure](#scanning-a-new-structure)
   - [Placing a Schematic.](#placing-a-schematic)
-  - [Style packs](#style-packs) [1.19]
+  - [Style packs](#style-packs)
+    - [The pack.json](#the-packjson)
+    - [The folder structure](#the-folder-structure)
   - [FAQ](#faq)
       - [How do I install custom schematics I just downloaded?](#how-do-i-install-custom-schematics-i-just-downloaded)
-      - [What and Where is the scans folder?](#what-and-where-is-the-scans-folder)
+      - [What and where is the scans folder?](#what-and-where-is-the-scans-folder)
       - [Where is the schematic folder?](#where-is-the-schematic-folder)
-      - [I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?](#i-have-a-%22minecolonies01e6a291-8a01-4763-bcae-f3a8797b1d52cache%22-folder-what-is-that-for)
+      - [I have a "\*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?](#i-have-a-minecolonies01e6a291-8a01-4763-bcae-f3a8797b1d52cache-folder-what-is-that-for)
       - [How to create custom huts?](#how-to-create-custom-huts)
-      - [How to override some built-in schematics?](#how-to-override-some-built-in-schematics)
-      - [How to use custom huts?](#how-to-use-custom-huts)
-      - [How to allow my players to use their own huts' schematics on my server?](#how-to-allow-my-players-to-use-their-own-huts-schematics-on-my-server)
-      - [How to allow my players to use their scanned schematics on my server?](#how-to-allow-my-players-to-use-their-scanned-schematics-on-my-server)
-      - [How to disable built-in schematics completely?](#how-to-disable-built-in-schematics-completely)
+  - [\[1.18\] Custom Hut Filenames](#118-custom-hut-filenames)
+  - [Custom Supply Ships and Camps](#custom-supply-ships-and-camps)
+  - [Hut Requirements](#hut-requirements)
+  - [Level Requirements for Overworld Styles](#level-requirements-for-overworld-styles)
+  - [Level Requirements for Nether Styles](#level-requirements-for-nether-styles)
+  - [Tips on Building](#tips-on-building)
+    - [Do](#do)
+    - [Don't](#dont)
+  - [Additional Information](#additional-information)
+    - [How to override some built-in schematics?](#how-to-override-some-built-in-schematics)
+    - [How to use custom huts?](#how-to-use-custom-huts)
+    - [How to allow my players to use their own huts' schematics on my server?](#how-to-allow-my-players-to-use-their-own-huts-schematics-on-my-server)
+    - [How to allow my players to use their scanned decoration schematics on my server?](#how-to-allow-my-players-to-use-their-scanned-decoration-schematics-on-my-server)
+    - [How to disable built-in schematics completely?](#how-to-disable-built-in-schematics-completely)
+    - [How to create upgradable decoration schematics?](#how-to-create-upgradable-decoration-schematics)
 
 ## Scanning a New Structure
 
@@ -48,7 +60,7 @@ Scans are saved in `../minecolonies/scan/new/...`.
 Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a <a href="#customhuts">custom hut</a>.
 {% endversion %}
 
-{% version "1.19.0" after=true %}
+{% version "1.19" after=true %}
 Scans are saved in `*/blueprints/<yourplayername>/scans`.
 <br>
 Once the scans are saved, they need to be placed in a style pack, preferably in the correct folder. See the [style packs](#style-packs) chapter for more details.
@@ -230,10 +242,10 @@ Here is a full list, up-to-date as of 14 October 2022, of the building names. Pl
 The process for custom [supply ships and camps](../../source/items/supplycampandship) is slightly different: 
 
 {% version "1.18.2" before=true %}
-| Camp or Ship | File Name and Path                                            |
-|--------------|---------------------------------------------------------------|
-| Camp         | structurize/schematics/supplycamp/myownsupplycamp             |
-| Ship         | structurize/schematics/supplyship/myownsupplyship             |
+| Camp or Ship | File Name and Path                                |
+|--------------|---------------------------------------------------|
+| Camp         | structurize/schematics/supplycamp/myownsupplycamp |
+| Ship         | structurize/schematics/supplyship/myownsupplyship |
 <br>
 So, for example, the path would be `structurize/schematics/wildwest/builder1` for the Builder's Hut level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
 {% endversion %}

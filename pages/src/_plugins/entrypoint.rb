@@ -1,3 +1,5 @@
+require_relative "utils/require"
+
 require_relative "filters/require"
 require_relative "hooks/require"
 require_relative "templates/require"
