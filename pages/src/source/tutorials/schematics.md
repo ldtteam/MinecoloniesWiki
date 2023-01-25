@@ -246,7 +246,7 @@ The process for custom [supply ships and camps](../../source/items/supplycampand
 |--------------|---------------------------------------------------|
 | Camp         | structurize/schematics/supplycamp/myownsupplycamp |
 | Ship         | structurize/schematics/supplyship/myownsupplyship |
-<br>
+
 So, for example, the path would be `structurize/schematics/wildwest/builder1` for the Builder's Hut level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
 {% endversion %}
 
