@@ -63,7 +63,7 @@ The Raider's Bane [enchant](../../source/items/enchantments) is not on here as i
 | [Supply Camp](../items/supplycampandship)                 | Chests                                                                                 | N/A                                               | <recipe>supplycamp</recipe>            |
 | [Supply Ship](../items/supplycampandship)                 | **Any** Boats                                                                          | N/A                                               | <recipe>supplyship</recipe>            |
 | [Waypoint](../../source/items/waypoint)                   | **Any** Planks + Build Tool                                                            | N/A                                               | <recipe>waypoint</recipe>              |
-| [Wheat Extra](../../source/items/extrablocks)             | Wheat                                                                                  | {% building_link bakery %} or {% building_link stonemason %} | <recipe>paperextra</recipe> |
+| [Wheat Extra](../../source/items/extrablocks)             | Wheat                                                                                  | {% building_link bakery %} or {% building_link stonemason %} | <recipe>wheatextra</recipe> |
 {: .table-responsive }
 
 ## Hut Blocks
