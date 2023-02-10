@@ -329,6 +329,7 @@ Some buildings may also require tags to be set on certain blocks using the [tag 
   <li>Place a <a href="../../source/items/tagtool"><code>groundlevel</code> tag</a> at ground level if your hut isn't sitting directly on the ground.</li>
   <li>Use only vanilla blocks or Structurize blocks (for official styles)</li>
   <li>Use Books and Quills instead of blank books, or written books on a lectern. (Keep a copy of the original book and quill somewhere, if it turns out you made a mistake!)</li>
+  <li>Rename files after scanning.</li>
 </ul>
 
 ### Don't 
