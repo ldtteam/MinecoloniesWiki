@@ -335,6 +335,7 @@ Some buildings may also require tags to be set on certain blocks using the [tag 
 <ul>
   <li>Use unobtainable items in builds (no command blocks, petrified wood, infested blocks, or mob heads (including player heads))</li>
   <li>Change someone else's style (officially) unless specifically asked to do so</li>
+  <li>Rename schematics after scanning</li>
 </ul>
 
 ## Additional Information
