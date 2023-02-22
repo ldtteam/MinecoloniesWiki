@@ -1,8 +1,6 @@
 {% capture content %}
   {% include contentblock/reuse/header.html header=include.header %}
-  Use this button to tell the 
-  {{- include.buildingname | default: "building" -}}
-   to keep a minimum stock on hand. Set items will be displayed above the button.
+  Use this button to tell the {{- include.buildingname | default: "building" -}} to keep a minimum stock on hand. Set items will be displayed above the button.
 {% endcapture %}
 {% assign img = include.image | default: "../../assets/images/gui/minstockgui.png" %}
 {% assign alt = include.alt | default: "Minimum stock GUI" %}
