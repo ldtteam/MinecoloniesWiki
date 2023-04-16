@@ -151,6 +151,10 @@ Custom schematics need to be placed in a (custom) [style pack](#style-packs). Fo
 When playing on a server, the server needs to send the schematics to the players so that the build tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
 {% endversion %}
 
+{% version "1.19.2" after=true %}
+This was previously used to save schematics from a server and was automatically created as needed. However, this is no longer needed in 1.19.2 and later, so this folder can be removed safely.
+{% endversion %}
+
 #### How to create <a id="customhuts">custom huts</a>?
 
 To create new schematics, there are some guidelines that you must follow: the scans MUST have the same footprint for each level of the hut; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level
@@ -171,7 +175,7 @@ The scans' filenames need to follow the naming convention: {StyleName}/{HutName}
 Alternative designs can be placed under as style name like "myownalternative".
 {% endversion %}
 
-Once ready, move the `myown` folder into the schematics folder and start your game. You should be able to see it with the the build tool.
+Once ready, move the `myown` folder into the blueprints folder and start your game. You should be able to see it with the the build tool.
 
 **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
@@ -364,7 +368,7 @@ Once copied, you can start your singleplayer or multiplayer game as usual. You s
 
 ### How to allow my players to use their own huts' schematics on my server?
 
-You will have to copy them yourself in the schematics folder on the server and restart it.
+You will have to copy them yourself in the blueprints folder on the server and restart it.
 
 ### How to allow my players to use their scanned decoration schematics on my server?
 
