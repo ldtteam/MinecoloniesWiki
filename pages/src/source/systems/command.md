@@ -66,7 +66,7 @@ These are the in-game commands currently available. Most require that a user hav
     </tr>
     <tr class="d-block d-lg-table-row">
       <td class="d-block d-lg-table-cell"><code>/mc whoami</code><br>Default Permission Level: OP</td>
-      <td class="d-block d-lg-table-cell">Outputs your name, the name of your colony, and the coordinates for the center of your colony.</td>
+      <td class="d-block d-lg-table-cell">Outputs your name, the name of your colony, your colony ID number, and the coordinates for the center of your colony.</td>
     </tr>
   </tbody>
 </table>
