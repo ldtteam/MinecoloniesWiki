@@ -27,3 +27,5 @@ Open the build tool GUI, use the Minecolonies Original pack, then go to Infrastr
 {% endversion %}
 
 This tells the [Builder](../../source/workers/builder) to place the waypoint where you want it. If you did it right, the waypoint should be invisible.
+
+To remove a waypoint, hold the build tool in your hand and place ANY solid block on the space where the waypoint is.
