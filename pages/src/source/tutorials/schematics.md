@@ -260,7 +260,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 | Camp         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplycamp |
 | Ship         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplyship |
 
-So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decoration/supplies/supplycamp` for the supply camp.
+So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decorations/supplies/supplycamp` for the supply camp.
 {% endversion %}
 
 ## Hut Requirements
