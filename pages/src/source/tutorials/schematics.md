@@ -285,7 +285,7 @@ So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` f
 | [Hospital](../../source/buildings/hospital)                  | 1 bed per level                                                                                                            |                                                                                                                                            |
 | [House](../../source/buildings/house)                        | 1 bed per level                                                                                                            |                                                                                                                                            |
 | [Library](../../source/buildings/library)                    | Bookshelves                                                                                                                |                                                                                                                                            |
-| [Mine](../../source/buildings/mine)                          | A few starting ladders where the shaft's ladders will go                                                                   |                                                                                                                                            |
+| [Mine](../../source/buildings/mine)                          | A few starting ladders where the shaft's ladders will go with the tags [cobble] and [ladder]                               |                                                                                                                                            |
 | [Nether Mine](../../source/buildings/nethermine)             | A nether portal, and an enclosed 1x1x2 room                                                                                |                                                                                                                                            |
 | [Plantation](../../source/buildings/plantation)              | 12 per level, 4 for each of sugar cane, cactus and bamboo                                                                  |                                                                                                                                            |
 | [Restaurant](../../source/buildings/restaurant)              | 1 furnace per level                                                                                                        |                                                                                                                                            |
@@ -365,6 +365,10 @@ The custom huts need to be copied in in a style pack.
 {% endversion %}
 
 Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [build tool](../../source/items/buildtool) (if you have the hut block in your inventory).
+
+### How to use custom mineshafts in style packs?
+
+The size must be 9 x 4 x 9 blocks. Rotation must match the Mine in the Style Pack. Use an existing style pack as a template along with the [scan tool](../../source/items/scantool) to create the blueprints.
 
 ### How to allow my players to use their own huts' schematics on my server?
 
