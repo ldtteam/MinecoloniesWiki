@@ -89,13 +89,15 @@ This json file contains metadata describing the style:
 
 | Key Name                   | Type             | Description                                                                                                            |
 |----------------------------|------------------|------------------------------------------------------------------------------------------------------------------------|
-| <code>"version"</code>     | number           | Pack version, 1 at the moment                                                                                          |
+| <code>"version"</code>     | number           | Pack version, start at 1, increase it whenever you make a new version of the pack                                      |
 | <code>"pack-format"</code> | number           | Descriptor for the pack format, needs to be 1 at the moment                                                            |
 | <code>"desc"</code>        | string           | Description of the style. This will be visible in the build tool to explain what your style is about                   |
 | <code>"authors"</code>     | array of strings | Names of the authors, in order to credit them. This is visible in the build tool                                       |
 | <code>"mods"</code>        | array of strings | Names of used mods (ids). The style is not visible if one of those mods is not installed, to prevent broken schematics |
 | <code>"name"</code>        | string           | The name of the style pack                                                                                             |
 | <code>"icon"</code>        | string           | The name of the file with an icon which is showed in the style packs selection screen                                  |
+
+You have to increase the version number whenever you release your pack for others to use, or whenever you install a new version onto a server. You don't need to increase it when testing changes purely in single-player.
 
 ### The folder structure
 
@@ -106,9 +108,9 @@ You can download a template folder structure from [github](https://github.com/ld
 That github page also contains examples how different styles are structured.
 An overview with which buildings go into which folders can also be found [here](https://airtable.com/shruNNUKhTNk0saz5).
 
-Decorations are less strict. You can make categories for them as you see fit. E.g. if you have two styles of roads, one for early game and one for later game, you could put them in infrastructure/roads/simple/ and infrastructure/roads/nice/.
+With a few specific exceptions, you don't *have* to strictly follow the standard folder structure -- but it's recommended to stick to it when possible to make it easier for others to find specific buildings and decorations. But you're free to make extra folders to help group separate but related sets together, especially if you don't want them to appear directly as alternate buildings. E.g. if you have two styles of roads, one for early game and one for later game, you could put them in infrastructure/roads/simple/ and infrastructure/roads/nice/.
 
-**Note:** Each folder can only contain folders or files. If there are folders there, files won't be visible in the build tool!
+**Note:** It's strongly recommended to have each folder only contain files or subfolders, but not both. While it is possible to mix them, the build tool doesn't display it as nicely.
 {% endversion %}
 
 ## FAQ
@@ -121,7 +123,7 @@ Those custom schematics go in `*/structurize/schematics`. Unzip the zip you down
 {% endversion %}
 
 {% version "1.19" after=true %}
-The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints`
+The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints` directly, not any subfolder thereof.
 {% endversion %}
 
 #### What and where is the scans folder?
@@ -155,9 +157,21 @@ When playing on a server, the server needs to send the schematics to the players
 This was previously used to save schematics from a server and was automatically created as needed. However, this is no longer needed in 1.19.2 and later, so this folder can be removed safely.
 {% endversion %}
 
+{% version "1.19.2" after=true %}
+#### I have a "*/blueprints/clients/*" folder, what is that for?
+
+On a server, this folder holds a cached copy of the decorations and shapes used by your players -- possibly even including entire style packs that they've installed themselves (though note that for game balance purposes they won't be able to make functional buildings this way; these must be installed "properly" on the server to be usable).
+
+You can delete these folders at any time (though preferably when the player is not logged in); they will be re-created as needed.
+{% endversion %}
+
+#### Can I just build my own buildings and then get the colonists to "move in"?
+
+No. Functional buildings must be constructed by the Builder. You have to either use one of the prefabs provided by existing style packs (either included in the mod or via various addons installed separately), or design your own custom huts as an explicitly separate step (typically in a special creative designing world), before getting the builder to place them in your real colony. MineColonies is more like an RTS than it is like classic Minecraft building.
+
 #### How to create <a id="customhuts">custom huts</a>?
 
-To create new schematics, there are some guidelines that you must follow: the scans MUST have the same footprint for each level of the hut; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level
+To create new schematics, there are some guidelines that you must follow: the scans MUST have the same footprint for each level of the hut; the scans must contain the hut's block, for example the Builder's Hut block for the [Builder's Hut](../../source/buildings/builder); the hut block need to be exactly at the same place and have the same rotation for each level.
 
 Ensure you are building your custom hut outside of any colony borders. When placing the hut block inside the custom hut, shift+right click to place it without activating it. Then you can scan and save the schematic.
 
@@ -172,7 +186,7 @@ The scans' filenames need to follow the naming convention: {StyleName}/{HutName}
 
 - **Note:** In the [build tool](../../source/items/buildtool), the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5 (except for the Tavern; its max level is 3).
 
-Alternative designs can be placed under as style name like "myownalternative".
+Alternative designs can be placed under a style name like "myownalternative", or a subfolder like `myown/alt/*`.
 {% endversion %}
 
 Once ready, move the `myown` folder into the blueprints folder and start your game. You should be able to see it with the the build tool.
@@ -180,8 +194,9 @@ Once ready, move the `myown` folder into the blueprints folder and start your ga
 **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 {% version "1.19" after=true %}
-The naming for the buildings is not strict anymore. The only things that are important are that they are named consistently, that their names end with the hut level, and that you do not use capital letters in the hut names.
+The naming for the buildings is not strict anymore. The only things that are important are that they are named consistently, that their names end with the hut level, and that you only use lowercase letters in the hut names (avoid capitals, spaces, or other punctuation).
 Alternate designs can just have a different name than the primary one. E.g. if you named the level 1 builder's hut "builder1", an alternative version could be called "altbuilder1" or "builderalt1" or even something completely different ("constructionworker1").
+Don't use numbers anywhere in the name except right at the end for the level. E.g. "alt1builder1" won't work as expected.
 
 Once ready, you need to make a [style pack](#style-packs) out of them.
 The schematics are visible in the build tool without the hut block, but you can't view them in survival mode (their button is greyed out, with an error message that you need to have the hut block).
@@ -259,6 +274,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 |--------------|---------------------------------------------------------------|
 | Camp         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplycamp |
 | Ship         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplyship |
+| Nether Ship  | blueprints/&lt;myownstyle&gt;/decorations/supplies/nethership |
 
 So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decorations/supplies/supplycamp` for the supply camp.
 {% endversion %}
@@ -361,15 +377,10 @@ The custom huts need to be copied in the schematics folder.
 {% endversion %}
 
 {% version "1.19" after=true %}
-The custom huts need to be copied in in a style pack.
+The custom huts need to be copied into a style pack.
 {% endversion %}
 
 Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [build tool](../../source/items/buildtool) (if you have the hut block in your inventory).
-
-### How to use custom mineshafts in style packs?
-
-The size must be 9 x 4 x 9 blocks. Rotation must match the Mine in the Style Pack. Use an existing style pack as a template along with the [scan tool](../../source/items/scantool) to create the blueprints.
-
 ### How to allow my players to use their own huts' schematics on my server?
 
 You will have to copy them yourself in the blueprints folder on the server and restart it.
@@ -393,3 +404,79 @@ Put the [deco controller](../../source/items/decocontroller) somewhere in the sc
 {% endversion %}
 
 ![Upgradable Decos](../../assets/images/tutorial/upgradabledecos.png)
+
+
+### How to use custom mineshafts in style packs?
+
+The size must be 9 x 4 x 9 blocks. Rotation must match the Mine in the Style Pack. Use an existing style pack as a template along with the [scan tool](../../source/items/scantool) to create the blueprints.
+
+{% version "1.18.2" before=true %}
+The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
+{% endversion %}
+
+{% version "1.19" after=true %}
+The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/mineshafts/*.
+
+It's recommended that you use the [tag tool and Tag Anchor](../../source/items/tagtool) to make the mineshafts `invisible`.  Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
+{% endversion %}
+
+{% version "1.19" after=true %}
+### How to make custom quarries in style packs?
+The [Quarry](../../source/buildings/quarry) is split into a "top part" and a "bottom part". Both parts only have one level each.
+
+The top part is constructed by the Builder and is the part outside of the quarry pit -- decorative walls, fences, cranes, racks, etc. This contains the actual quarry hut block itself, which should pretty much always be on the second y level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up), although with some caveats this is not absolutely required.
+
+The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a [Tag Anchor](../../source/items/tagtool). The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.
+
+The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. (For reasons, it's currently best to avoid using different names.)
+
+The bottom part can only be `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`, regardless of what or where the top part was. As such, you can only make one of each per style pack.
+
+Importantly: when built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing.
+
+It is permitted for the quarry to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobble or other stone.
+{% endversion %}
+
+### How to create parent/child buildings or decorations?
+
+The Barracks and Barracks Tower always have a parent/child relationship (i.e. the towers are embedded within the barracks, not directly built separately with the build tool). It's also possible to do the same with other buildings -- either putting one or more buildings into a containing decoration (e.g. a "district" of related buildings) or even embedding buildings within other buildings.
+
+Some popular combinations are to embed couriers within the warehouse, and fields within the farmer. Others combinations are possible, depending on your goals for the style -- but don't go too overboard! Some players like combination buildings since they fit nicely together, but others don't like them since they can take away flexibility and creativity when building a colony.
+
+When designing parent/child schematics, the key is the [light placeholder](../../source/items/placeholderblocks). The parent schematic needs to contain the child hut block in the correct position and rotation, along with light placeholders wherever there should be a block from the child, and the parent's own blocks. Similarly, the child schematic needs its own hut block and other blocks, and light placeholders wherever there should be a block from the parent. It can be helpful to make a temporary scan of either the parent or child and overlay them over the other to help line things up, or to build both together and then duplicate it and split apart the designs.
+
+While strictly speaking it's only mandatory to include the child hut at the level that it's introduced into the parent and you *could* put only a placeholder at higher levels, it's strongly recommended to always include the child hut in every higher level of the parent. This works better when someone moves or repairs the parent, or skips levels and pastes it directly at a higher level.
+
+Also remember that the child building can't be upgraded to a higher level than the parent building. This limit doesn't apply if the parent is a non-upgradeable decoration.
+
+Be careful of "research loops" -- if the player needs to a child before they can unlock a parent, that's a problem (unless you also have an alternate standalone of the child).
+
+Since the parent will contain multiple hut blocks, you will always need to explicitly specify the anchor block (the main parent hut block if a building, or a [deco controller](../../source/items/decocontroller) or [tag anchor](../../source/items/tagtool) if it's a decoration) when you [scan](../../source/items/scantool), otherwise you'll get an error that the anchor was ambiguous and it will not work correctly.
+
+{% version "1.18.2" before=true %}
+Since you can only have one version of each building in each folder, combinations should be used very sparingly. The parent and child need to be in the same folder.
+
+To place the child hut in the parent, you can simply shift-click it, just like when placing it in the child itself. Be sure to get the location and rotation correct -- the child hut will be built with the matching orientation relative to that.
+{% endversion %}
+
+{% version "1.19" after=true %}
+The parent and child need to be in the same folder. This doesn't mean that you can't combine buildings that are normally in different folders -- just that the version that's intended to be the child must be in the same folder as the parent. You may still have another version of the child (to be used by itself, not as a child) in the original folder if you like.
+
+It's not supported to have a child contain additional children of its own -- you're limited to just the two layers (though the parent can contain multiple children of either the same or different types).
+
+Regardless of which method you use to build, be sure to get the location and rotation of the child hut correct when placing it in the parent -- the building will be built with the matching orientation relative to that.
+
+If you've used the default folder and filenames for your child, then you can simply shift-click the child hut to place it into the parent, similar to older versions. However this is not the most recommended way to do things any more.
+
+The preferred method is to make another level of your child containing only the hut block, giving it the same folder and name as your actual child, but level 0 (e.g. `craftsmanship/storage/mycourier0`). You can make it the same size as your real child (surrounded by placeholders) if you wish, but scanning a 1x1x1 is fine too. After scanning, you need to move this to its final location in your actual style pack, and then paste it from there (*not* from your scans!) into your parent. It doesn't matter whether you use schematic or constructed paste. Paste the same level 0 into all levels of the parent. After it's pasted, you can delete the level 0 blueprint -- it should not be included in your final released style pack. (Note that when you go to paste it, the build tool labels it as "level 1" of 6. You can confirm you have the right one by checking the tooltip name.)
+
+Another option is called "auto-levelling". This is where instead of making and pasting a level 0 into each level of the parent, you instead paste the actual matching child level (i.e. level 1 child in the level 1 parent, level 2 child in the level 2 parent, etc). Again it doesn't matter whether you use schematic or constructed paste, but either way you'll probably have to fix up some of the overlapping blocks afterward. You do still need to include the child hut's blueprints in your released style pack, and you do still have to paste it from your actual style pack and not your scans folder.
+
+With auto-levelling, the builder will upgrade the child at the same time as upgrading the parent, instead of the player needing to explicitly build or upgrade one after the other. While this may sound simpler, there are some downsides: the biggest is that won't work well for child buildings that have required functional blocks (such as beds, furnaces, racks, etc), although purely decorative ones are fine. You also should not use this where the child is locked behind research, unless you can be absolutely certain that it's already unlocked (e.g. if the parent is unlocked after the child -- though still be careful of loops). The "level 0" method doesn't have these issues.
+
+Since you can have multiple alternates of buildings (in the same or separate folders), it's possible to make a particular building type have both a standalone version as well as a version embedded as a child. It's strongly recommended to use the [tag tool](../../source/items/tagtool) to mark any blueprint intended for use only as a child (in the child schematic itself) as `invisible` so that it doesn't show up for building standalone -- especially as child versions are often simpler or cheaper and may be missing walls or other things intended to be provided by the parent, so won't look good on their own or might break game balance. It's also possible to have each child of a parent be its own unique blueprint -- but that requires even more scans and more care when pasting to use the right alternate.
+{% endversion %}
+
+### What if I have another question?
+
+There's a channel in the [Discord server](https://discord.minecolonies.com/) specifically for asking questions about designing your own schematics.
