@@ -312,7 +312,7 @@ So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` f
 | [University](../../source/buildings/university)              | Bookshelves                                                                                                                |                                                                                                                                            |
 | [Warehouse](../../source/buildings/warehouse)                | [Racks](../../source/items/rack) (more each level)                                                                         |                                                                                                                                            |
 
-Some buildings may also require tags to be set on certain blocks using the [tag tool](../../source/items/tagtool).
+**Some buildings may also require tags to be set on certain blocks using the [tag tool](../../source/items/tagtool).**
 
 ## Level Requirements for Overworld Styles
 
@@ -420,7 +420,6 @@ The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/minesha
 It's recommended that you use the [tag tool and Tag Anchor](../../source/items/tagtool) to make the mineshafts `invisible`.  Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
 {% endversion %}
 
-{% version "1.19" after=true %}
 ### How to make custom quarries in style packs?
 The [Quarry](../../source/buildings/quarry) is split into a "top part" and a "bottom part". Both parts only have one level each.
 
@@ -428,14 +427,19 @@ The top part is constructed by the Builder and is the part outside of the quarry
 
 The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a [Tag Anchor](../../source/items/tagtool). The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.
 
+{% version "1.18.2" before=true %}
+The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresponding bottom parts are `simplequarryshaft1` and `mediumquarryshaft1`.
+{% endversion %}
+
+{% version "1.19" after=true %}
 The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. (For reasons, it's currently best to avoid using different names.)
 
 The bottom part can only be `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`, regardless of what or where the top part was. As such, you can only make one of each per style pack.
+{% endversion %}
 
 Importantly: when built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing.
 
 It is permitted for the quarry to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobble or other stone.
-{% endversion %}
 
 ### How to create parent/child buildings or decorations?
 
@@ -449,7 +453,7 @@ While strictly speaking it's only mandatory to include the child hut at the leve
 
 Also remember that the child building can't be upgraded to a higher level than the parent building. This limit doesn't apply if the parent is a non-upgradeable decoration.
 
-Be careful of "research loops" -- if the player needs to a child before they can unlock a parent, that's a problem (unless you also have an alternate standalone of the child).
+Be careful of "research loops" -- if the player needs to build a child before they can unlock a parent, that's a problem (unless you also have an alternate standalone of the child).
 
 Since the parent will contain multiple hut blocks, you will always need to explicitly specify the anchor block (the main parent hut block if a building, or a [deco controller](../../source/items/decocontroller) or [tag anchor](../../source/items/tagtool) if it's a decoration) when you [scan](../../source/items/scantool), otherwise you'll get an error that the anchor was ambiguous and it will not work correctly.
 
