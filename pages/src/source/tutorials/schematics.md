@@ -381,6 +381,7 @@ The custom huts need to be copied into a style pack.
 {% endversion %}
 
 Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the [build tool](../../source/items/buildtool) (if you have the hut block in your inventory).
+
 ### How to allow my players to use their own huts' schematics on my server?
 
 You will have to copy them yourself in the blueprints folder on the server and restart it.
@@ -408,7 +409,7 @@ Put the [deco controller](../../source/items/decocontroller) somewhere in the sc
 
 ### How to use custom mineshafts in style packs?
 
-The size must be 9 x 4 x 9 blocks. Rotation must match the Mine in the Style Pack. Use an existing style pack as a template along with the [scan tool](../../source/items/scantool) to create the blueprints.
+The size must be 9 x 4 x 9 blocks. They must be named and oriented exactly the same (i.e. do not rotate at all) as in the default style pack (careful: the names aren't entirely consistent with the layout, so make careful note which is which!) Use an existing style pack as a template along with the [scan tool](../../source/items/scantool) to create the blueprints.
 
 {% version "1.18.2" before=true %}
 The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
