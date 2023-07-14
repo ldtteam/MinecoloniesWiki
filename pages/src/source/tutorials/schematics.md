@@ -17,6 +17,7 @@ Schematics are files containing block and entity information of a certain area a
       - [What and where is the scans folder?](#what-and-where-is-the-scans-folder)
       - [Where is the schematic folder?](#where-is-the-schematic-folder)
       - [I have a "\*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?](#i-have-a-minecolonies01e6a291-8a01-4763-bcae-f3a8797b1d52cache-folder-what-is-that-for)
+      - [Can I just build my own buildings and then get the colonists to "move in"?](#can-i-just-build-my-own-buildings-and-then-get-the-colonists-to-move-in)
       - [How to create custom huts?](#how-to-create-custom-huts)
   - [\[1.18\] Custom Hut Filenames](#118-custom-hut-filenames)
   - [Custom Supply Ships and Camps](#custom-supply-ships-and-camps)
@@ -33,6 +34,10 @@ Schematics are files containing block and entity information of a certain area a
     - [How to allow my players to use their scanned decoration schematics on my server?](#how-to-allow-my-players-to-use-their-scanned-decoration-schematics-on-my-server)
     - [How to disable built-in schematics completely?](#how-to-disable-built-in-schematics-completely)
     - [How to create upgradable decoration schematics?](#how-to-create-upgradable-decoration-schematics)
+    - [How to use custom mineshafts in style packs?](#how-to-use-custom-mineshafts-in-style-packs)
+    - [How to make custom quarries in style packs?](#how-to-make-custom-quarries-in-style-packs)
+    - [How to create parent/child buildings or decorations?](#how-to-create-parentchild-buildings-or-decorations)
+  - [What if I have another question?](#what-if-i-have-another-question)
 
 ## Scanning a New Structure
 
@@ -279,6 +284,8 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decorations/supplies/supplycamp` for the supply camp.
 {% endversion %}
 
+You should always apply a [groundlevel tag](../../source/items/tagtool) when making a supply camp/ship. The rules for guessing where the ground level is without the tag change depending whether they're placed by the build tool or the supply item, for legacy reasons.
+
 ## Hut Requirements
 
 | Building                                                     | Requirements                                                                                                               | Suggested                                                                                                                                  |
@@ -482,6 +489,6 @@ With auto-levelling, the builder will upgrade the child at the same time as upgr
 Since you can have multiple alternates of buildings (in the same or separate folders), it's possible to make a particular building type have both a standalone version as well as a version embedded as a child. It's strongly recommended to use the [tag tool](../../source/items/tagtool) to mark any blueprint intended for use only as a child (in the child schematic itself) as `invisible` so that it doesn't show up for building standalone -- especially as child versions are often simpler or cheaper and may be missing walls or other things intended to be provided by the parent, so won't look good on their own or might break game balance. It's also possible to have each child of a parent be its own unique blueprint -- but that requires even more scans and more care when pasting to use the right alternate.
 {% endversion %}
 
-### What if I have another question?
+## What if I have another question?
 
 There's a channel in the [Discord server](https://discord.minecolonies.com/) specifically for asking questions about designing your own schematics.
