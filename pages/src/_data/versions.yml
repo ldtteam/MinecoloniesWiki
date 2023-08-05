@@ -9,7 +9,7 @@
   supported: false
 - name: "1.18.2"
   order: 11802
-  supported: true
+  supported: false
 - name: "1.19"
   order: 11900
   supported: false
@@ -18,4 +18,10 @@
   supported: false
 - name: "1.19.2"
   order: 11902
+  supported: true
+- name: "1.20"
+  order: 12000
+  supported: true
+- name: "1.20.1"
+  order: 12001
   supported: true
