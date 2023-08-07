@@ -374,25 +374,8 @@ A field can have multiple field tags, as many as you want, but not 2 of the same
 | Crimson plants | crimsonp_field  | crimsonp_ground | Unlimited                                 |
 | Warped plants  | warpedp_field   | warpedp_ground  | Unlimited                                 |
 
-Let's go over all the types of fields and their individual requirements.
-
-### Vertically growing plants (upwards and downwards)
-A "vertically growing plant" is a plant that grows in a single line, either up or downwards, for example Sugar Cane. These plants always break fully when their root blocks are broken, the planter will break these at the second block.
-
-Each of these plants have a minimum and sometimes a maximum growth height.
-The planter can only harvest them when they reach the minimum, if plants have a maximum the planter will have an increasingly higher chance to harvest the plant, the taller it gets. So as long as the plant can grow to the minimum height within the bounds of the schematic, you are good to go.
-
-| Plant          | Minimum height | Maximum height |
-|----------------|----------------|----------------|
-| Sugar cane     | 3              | N/A            |
-| Cactus         | 3              | N/A            |
-| Bamboo         | 6              | 16             |
-| Kelp           | 2              | 25             |
-| Glowberries    | 3              | N/A            |
-| Weeping vines  | 2              | 25             |
-| Twisting vines | 2              | 25             |
-
 The planter will always attempt to walk to any adjacent clear (air) block around the planting position, if none of the adjacent positions are clear the planter will attempt to walk to the block itself, this is done to try to prevent the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which standing inside of the plant.
+*Note*: Make sure that the planter can always get within about 4 blocks of the desired position, if not they will go and teleport around in order to reach the position, which may not always work.
 
 |   |   |   |
 |---|---|---|
@@ -423,6 +406,24 @@ P = planting position
 > X = walking position
 
 For downwards growing plants the same rules apply, although they will walk to the top of the stem, so ensure there are some ways for them to get up to the ceiling.
+
+Let's go over all the types of fields and their individual requirements.
+
+### Vertically growing plants (upwards and downwards)
+A "vertically growing plant" is a plant that grows in a single line, either up or downwards, for example Sugar Cane. These plants always break fully when their root blocks are broken, the planter will break these at the second block.
+
+Each of these plants have a minimum and sometimes a maximum growth height.
+The planter can only harvest them when they reach the minimum, if plants have a maximum the planter will have an increasingly higher chance to harvest the plant, the taller it gets. So as long as the plant can grow to the minimum height within the bounds of the schematic, you are good to go.
+
+| Plant          | Minimum height | Maximum height |
+|----------------|----------------|----------------|
+| Sugar cane     | 3              | N/A            |
+| Cactus         | 3              | N/A            |
+| Bamboo         | 6              | 16             |
+| Kelp           | 2              | 25             |
+| Glowberries    | 3              | N/A            |
+| Weeping vines  | 2              | 25             |
+| Twisting vines | 2              | 25             |
 
 ### Treeside plants
 
