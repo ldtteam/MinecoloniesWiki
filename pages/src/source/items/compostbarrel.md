@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The compost barrel is used by the [Composter](../../source/workers/composter) to make [compost](../../source/items/compost). It can be crafted at the [Sawmill](../../source/buildings/sawmill).
+The compost barrel is used by the {% worker_link composter %} to make [compost](../../source/items/compost). It can be crafted at the {% building_link sawmill %}.
 <br>
 
 ## Using the Compost Barrel

@@ -10,7 +10,7 @@ Those claims are protected from modification through other players. See the [Col
 
 Extending your claim area can be done by building huts. Huts claim a square area around them after they are built, expanding all sides from the chunk the hutblock is located in. How much they claim depends on the building. They won't claim over the max range, set with the [config](../../source/misc/configfile) setting *maxColonySize*, which has a default radius of 20 chunks from the chunk the Town Hall is in. 
 
-Deconstructing a building *will* remove the chunks it claimed. If you want to delete the colony, check the [Town Hall](../../source/buildings/townhall) page.
+Deconstructing a building *will* remove the chunks it claimed. If you want to delete the colony, check the {% building_link townhall %} page.
 
 ### Building Claim Areas:
 
@@ -23,7 +23,7 @@ Deconstructing a building *will* remove the chunks it claimed. If you want to de
 | 4     |  3 Chunk Radius   |
 | 5     |  5 Chunk Radius   |
 
-#### [Guard Towers](../../source/buildings/guardtower)
+#### {% building_link guardtower %}
 
 | Level | Additional Chunks |
 | ----- | ----------------- |
@@ -33,14 +33,14 @@ Deconstructing a building *will* remove the chunks it claimed. If you want to de
 | 4     | 4 Chunk Radius    |
 | 5     | 5 Chunk Radius    |
 
-#### [Barracks](../../source/buildings/barracks)
+#### {% building_link barracks %}
 
 | Level | Additional Chunks |
 | ----- | ----------------- |
 | All   | 2 Chunk Radius    |
 | 4+ and 4 towers built | 3 Chunk Radius |
 
-#### Other Huts (non-decoration)
+#### Other buildings
 
 | Level | Additional Chunks |
 | ----- | ----------------- |

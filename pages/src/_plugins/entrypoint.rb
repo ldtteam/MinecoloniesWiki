@@ -13,6 +13,7 @@ Jekyll::Hooks.register :site, :post_write do |*args| Jekyll::WorkerImageHooks.si
 
 # Liquid template blocks
 Liquid::Template.register_tag("version", VersionBlock)
+Liquid::Template.register_tag("content_block", ContentBlock)
 
 # Liquid template tags
 Liquid::Template.register_tag("building_link", BuildingLinkTag)

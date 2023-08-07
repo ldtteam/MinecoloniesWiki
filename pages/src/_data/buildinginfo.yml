@@ -26,6 +26,7 @@ archery:
     - archery
 bakery:
   name: Bakery
+  plural: Bakeries
   workers:
     - baker
   recipes:
@@ -368,6 +369,10 @@ house:
   plural: Houses
   recipes:
     - house
+  overrides:
+    11900:
+      name: Residence
+      plural: Residences
 library:
   name: Library
   plural: Libraries
@@ -471,6 +476,7 @@ restaurant:
     - restaurant
 sawmill:
   name: Sawmill
+  plural: Sawmills
   workers:
     - carpenter
   recipes:
@@ -515,6 +521,7 @@ sifter:
     - sifter
 smeltery:
   name: Smeltery
+  plural: Smelteries
   workers:
     - smelter
   recipes:

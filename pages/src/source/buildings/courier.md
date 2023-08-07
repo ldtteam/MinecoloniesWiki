@@ -4,7 +4,7 @@ building: courier
 layout: building
 ---
 {% capture content %}
-The Courier runs back and forth from the [Warehouse](../../source/buildings/warehouse) to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. Each Courier needs their own hut, and you can have up to 10 Couriers per Warehouse, depending on the Warehouse's level (2 per Warehouse level).
+The Courier runs back and forth from the {% building_link warehouse %} to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. Each Courier needs their own hut, and you can have up to 10 Couriers per Warehouse, depending on the Warehouse's level (2 per Warehouse level).
 
 The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 

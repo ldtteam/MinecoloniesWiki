@@ -34,7 +34,7 @@ The build tool also includes several decorative paths as part of the schematics.
 
 ## Research
 
-There are several researches your [University](../buildings/university) can unlock that increase colonist move speed. Check the [Research System](../../source/systems/research) page for more details.
+There are several researches your {% building_link university %} can unlock that increase colonist move speed. Check the [Research System](../../source/systems/research) page for more details.
 
 One research of note is the Rails research. It allows colonists to use rails to move around the colony. They automagically create their own minecart, so all you need to do is place rails down. The rails don't need to be powered, either! However, the extra boost of powered rails can still help with some of the tougher hills.
 

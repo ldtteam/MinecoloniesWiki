@@ -4,10 +4,10 @@ building: archery
 layout: building
 ---
 {% capture content %}
-### Note: The Archery cannot be built until you have a level 3 [Barracks](../../source/buildings/barracks) (or three level 1 Barracks, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
+### Note: The Archery cannot be built until you have a level 3 {% building_link barracks %} (or three level 1 Barracks, or another equivalent) and have finished the research in the {% building_link university %}.
 <BR>
 
-The Archery is where your Archers in Training will train to become [Archers](../../source/workers/archer). This also allows them to level up without a risk of dying to mobs. A new Archer in Training will need a bed in a house in order to spawn. However, once they are hired at the Archery, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
+The Archery is where your Archers in Training will train to become {% worker_link archer %}. This also allows them to level up without a risk of dying to mobs. A new Archer in Training will need a bed in a house in order to spawn. However, once they are hired at the Archery, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 The number of students that can be trained at a time depends on the level of the Archery. 
 
@@ -28,8 +28,7 @@ The Archers in Training are not actual Guards even though they will be dressed a
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Archery GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Archery hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/archerygui.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Archery" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
+{% include contentblock/building/main-gui.md tab_order="first" %}
+{% include contentblock/building/stock-gui.md tab_order="second" %}

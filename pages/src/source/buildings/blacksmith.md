@@ -4,7 +4,7 @@ building: blacksmith
 layout: building
 ---
 {% capture content %}
-### Note: The Blacksmith's Hut cannot be built until you have a level 3 [Mine](../../source/buildings/mine) (or three level 1 Mines, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
+### Note: The {% building %} cannot be built until you have a level 3 {% building_link mine %} (or three level 1 Mines, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
 The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor, swords, and shields (no bows or redstone items). The Blacksmith will work when they receive a request for any of those items from another worker. 

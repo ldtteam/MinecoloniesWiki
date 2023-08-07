@@ -12,7 +12,7 @@ layout: default
 
 The shape tool is creative-only when using Structurize alone, but can be used in survival with MineColonies as well.
 
-Have you ever wanted to have your [Builder](../../source/workers/builder) just dig out a hole, fill in a hole, flatten terrain, or even construct a basic room or other simple shape for you? Then the shape tool may be for you.
+Have you ever wanted to have your {% worker_link builder %} just dig out a hole, fill in a hole, flatten terrain, or even construct a basic room or other simple shape for you? Then the shape tool may be for you.
 
 ### Step One
 
@@ -53,7 +53,7 @@ You can also press ESC to exit the GUI but keep the shape preview visible, so yo
 
 ### Step Four
 
-Once you have the shape configured and positioned to your satisfaction, you can click the **green tick** to ask your Builder to begin construction. (They will, of course, need to be supplied with all of the necessary materials.) This is a decoration build without a hut block to control it; so if you want to cancel the build in progress, you will need to do so at the [Town Hall](../../source/buildings/townhall).
+Once you have the shape configured and positioned to your satisfaction, you can click the **green tick** to ask your Builder to begin construction. (They will, of course, need to be supplied with all of the necessary materials.) This is a decoration build without a hut block to control it; so if you want to cancel the build in progress, you will need to do so at the {% building_link townhall %}.
 
 If you're in creative mode, you can alternatively click the **blue paste button** to instantly place the shape for free. This is also what happens when clicking the green tick when MineColonies is not installed.
 

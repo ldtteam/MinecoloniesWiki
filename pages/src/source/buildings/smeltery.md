@@ -4,7 +4,7 @@ building: smeltery
 layout: building
 ---
 {% capture content %}
-### Note: The Smeltery cannot be built until you have a level 2 [Mine](../../source/buildings/mine) (or two level 1 Mines) and have finished the research in the [University](../../source/buildings/university).
+### Note: The Smeltery cannot be built until you have a level 2 {% building_link mine %} (or two level 1 Mines) and have finished the research in the {% building_link university %}.
 <br>
 
 The Smeltery is where the Smelter will smelt ores into ingots.

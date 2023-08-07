@@ -4,10 +4,10 @@ building: barracks
 layout: building
 ---
 {% capture content %}
-### Note: The Barracks cannot be built until you have a level 3 [Guard Tower](../../source/buildings/guardtower) (or three level 1 Guard Towers, or another equivalent) and have finished the research in the [University](../../source/buildings/university). 
-<br> 
+### Note: The Barracks cannot be built until you have a level 3 {% building_link guardtower %} (or three level 1 Guard Towers, or another equivalent) and have finished the research in the {% building_link university %}. 
+<br>
 
-The Barracks is the ultimate protection for your colony. The Barracks will hold 4 [Barracks Towers](../buildings/barrackstower) within its structure. The Barracks Towers (unlike the normal [Guard Towers](../../source/buildings/guardtower)) will employ *and* house one Guard for every level built! Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen. Each Barracks Tower can house and employ 5 Guards for a total of 20 Guards for your colony. Colonists like feeling safe, so building Barracks close to colonists' work and homes can improve their [happiness](../../source/systems/happinessandsaturation).
+The Barracks is the ultimate protection for your colony. The Barracks will hold 4 {% building_link barrackstower %} within its structure. The Barracks Towers (unlike the normal {% building_link guardtower %}) will employ *and* house one Guard for every level built! Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen. Each Barracks Tower can house and employ 5 Guards for a total of 20 Guards for your colony. Colonists like feeling safe, so building Barracks close to colonists' work and homes can improve their [happiness](../../source/systems/happinessandsaturation).
 
 | Barracks Level | Max # of Barracks Towers | Max Level of Barracks Towers |
 |----------------|--------------------------|------------------------------|

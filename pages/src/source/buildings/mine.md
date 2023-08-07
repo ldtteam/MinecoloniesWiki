@@ -4,7 +4,7 @@ building: mine
 layout: building
 ---
 {% capture content %}
-The Mine is where you can hire a [Miner](../../source/workers/miner) to work the mine, or a [Quarrier](../../source/workers/quarrier) to work the [Quarry](../../source/buildings/quarry). If you hire a Quarrier, there will be no Miner at this Mine. 
+The Mine is where you can hire a {% worker_link miner %} to work the mine, or a {% worker_link quarrier %} to work the {% building_link quarry %}. If you hire a Quarrier, there will be no Miner at this Mine. 
 
 At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward to a specific depth depending on the level of the Mine.  Once the main shaft is completed, the Miner will then branch out.
 

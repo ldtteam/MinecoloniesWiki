@@ -29,6 +29,6 @@ class VersionBlock < BaseBlock
             end
         end
 
-        return "<div data-versions='#{selected_versions.collect { |k| k["order"] }.join(",")}'>#{convert_content(context, content.strip)}</div>"
+        return VersionRenderer.renderVersionContent(selected_versions.collect { |k| k["order"] }, convert_content(context, content.strip))
     end
 end

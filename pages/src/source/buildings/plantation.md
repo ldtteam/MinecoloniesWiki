@@ -4,7 +4,7 @@ building: plantation
 layout: building
 ---
 {% capture content %}
-### Note: The Plantation cannot be built until you have a level 3 [Farm](../../source/buildings/farm) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
+### Note: The Plantation cannot be built until you have a level 3 {% building_link farm %} (or three level 1 Farms, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
 The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus.

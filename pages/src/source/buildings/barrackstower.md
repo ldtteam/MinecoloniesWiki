@@ -4,7 +4,7 @@ building: barrackstower
 layout: building
 ---
 {% capture content %}
-The Barracks Towers will employ and house one Guard for every level built (unlike the normal [Guard Towers](../../source/buildings/guardtower), which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
+The Barracks Towers will employ and house one Guard for every level built (unlike the normal {% building_link guardtower %}, which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 | Barracks Tower Level | Max # of Guards |
 |----------------------|-----------------|
@@ -14,7 +14,7 @@ The Barracks Towers will employ and house one Guard for every level built (unlik
 | 4                    | 4               |
 | 5                    | 5               |
 
-The Barracks Tower locations are predetermined by the [Barracks](../../source/buildings/barracks) that you choose. They are placed in specific locations to fit within the Barracks. 
+The Barracks Tower locations are predetermined by the {% building_link barracks %} that you choose. They are placed in specific locations to fit within the Barracks. 
 
 | Barracks Level | Max # of Barracks Towers | Max Level of Barracks Towers |
 |----------------|--------------------------|------------------------------|

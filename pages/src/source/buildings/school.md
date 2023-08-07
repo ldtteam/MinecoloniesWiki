@@ -4,7 +4,7 @@ building: school
 layout: building
 ---
 {% capture content %}
-### Note: The School cannot be built until you finish the research in the [University](../../source/buildings/university).
+### Note: The School cannot be built until you finish the research in the {% building_link university %}.
 
 The School is where the Teacher will level up the Pupils' (children) Intelligence skill. Paper will increase the leveling speed of the Pupils. 
 

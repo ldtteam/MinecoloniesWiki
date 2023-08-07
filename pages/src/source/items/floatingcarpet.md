@@ -12,7 +12,7 @@ layout: default
 
 Floating carpet is a decoration. It allows you to place carpet in the air without using string to hold it up. Other than that, it's the exact same as vanilla Minecraft carpet.
 
-Floating carpet can be crafted at the [Fletcher's Hut](../../source/buildings/fletcher).
+Floating carpet can be crafted at the {% building_link fletcher %}.
 <br>
 
 ## Using Floating Carpet

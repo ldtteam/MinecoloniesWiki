@@ -10,7 +10,7 @@ layout: default
 </div>
 <br>
 
-The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your [Builder](../../source/workers/builder) build it for you! So if you build a house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a [schematic](../../source/tutorials/schematics) file that you can then use the build tool to place and have your Builder build it for you. Want your Builder to clear an area for you (and level up while working)? Then scan an area of air and place it with the [build tool](../../source/items/buildtool) over what you want the Builder to clear-they'll clear that area away, leaving only air! Watch a short video of how it works here:
+The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your {% worker_link builder %} build it for you! So if you build a house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a [schematic](../../source/tutorials/schematics) file that you can then use the build tool to place and have your Builder build it for you. Want your Builder to clear an area for you (and level up while working)? Then scan an area of air and place it with the [build tool](../../source/items/buildtool) over what you want the Builder to clear-they'll clear that area away, leaving only air! Watch a short video of how it works here:
 
 <p class="h4">Scan Tool Video</p>
 

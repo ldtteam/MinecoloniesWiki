@@ -18,4 +18,4 @@ The Ancient Tome is a glowing book that's dropped by raiders (barbarians, pirate
 
 ## Using the Ancient Tome
 
-There are two uses for the Ancient Tome, one use for the player and one for the [Enchanter](../../source/workers/enchanter). The player's use is that if you have the Ancient Tome in your inventory, it will glow when there is going to be a raid that night. The Enchanter's use is to use the experience they collect from other workers to turn the Ancient Tome into a Book of Enchantment. When they do this, it will use up the Ancient Tome.
+There are two uses for the Ancient Tome, one use for the player and one for the {% worker_link enchanter %}. The player's use is that if you have the Ancient Tome in your inventory, it will glow when there is going to be a raid that night. The Enchanter's use is to use the experience they collect from other workers to turn the Ancient Tome into a Book of Enchantment. When they do this, it will use up the Ancient Tome.

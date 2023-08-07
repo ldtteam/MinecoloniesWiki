@@ -4,7 +4,7 @@ building: flowershop
 layout: building
 ---
 {% capture content %}
-### Note: The Flower Shop cannot be built until you have a level 3 [Composter's Hut](../../source/buildings/composter) (or three level 1 Composter's Huts, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
+### Note: The Flower Shop cannot be built until you have a level 3 {% building_link composter %} (or three level 1 Composter's Huts, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
 The Flower Shop is where your Florist will grow flowers for your colony, if given [compost](../../source/items/compost) and an axe.

@@ -4,7 +4,8 @@ class BuildingNameTag < BaseTag
         building_plural = arguments.keyed["plural"] ||= false
 
         building = BuildingUtils.getBuildingKey(context, arguments.unkeyed[0])
-        building_info = BuildingUtils.getBuildingInfo(context, building)
-        return building_info[building_plural ? "plural" : "name"]
+        building_names = BuildingUtils.getBuildingNames(context, building, building_plural)
+
+        building_names.collect { |version| VersionRenderer.renderVersionContent(version["versions"], version["name"]) }.join("")
     end
 end

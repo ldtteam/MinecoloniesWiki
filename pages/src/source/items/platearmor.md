@@ -13,7 +13,7 @@ layout: default
 </div>
 <br>
 
-Plate armor is a type of armor added by MineColonies. It is moderately durable and offers excellent protection compared to conventional iron armor, but has poor enchantability. Plate armor is crafted by the [Blacksmith](../../source/workers/blacksmith) after their [workshop](../../source/buildings/blacksmith) has reached level 4 and the Plate Armor [research](../../source/systems/research) has been completed at the [University](../../source/buildings/university).
+Plate armor is a type of armor added by MineColonies. It is moderately durable and offers excellent protection compared to conventional iron armor, but has poor enchantability. Plate armor is crafted by the {% worker_link blacksmith %} after their {% building_link blacksmith %} has reached level 4 and the Plate Armor [research](../../source/systems/research) has been completed at the {% building_link university %} .
 
 ## Material Costs
 

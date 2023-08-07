@@ -6,6 +6,7 @@ remote-theme: jekyll/minima
 baseurl: /
 source: ./src
 destination: ./build
+#incremental: true
 
 markdown: kramdown
 plugins:

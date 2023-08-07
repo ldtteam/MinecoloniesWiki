@@ -11,5 +11,5 @@ layout: default
 
 <br>
 
-The Colony Banner is a banner that uses the design set in the [Town Hall](../../source/buildings/townhall). Your [Knights](../../source/workers/knight) will wear the design on their shields, and it is also used in some schematics.
+The Colony Banner is a banner that uses the design set in the {% building_link townhall %}. Your {% worker_link knight %} will wear the design on their shields, and it is also used in some schematics.
 <br>

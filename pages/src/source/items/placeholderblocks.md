@@ -13,7 +13,7 @@ layout: default
 
 The placeholder blocks (also called substitution blocks) are tan, brown, and blue. The tan block is the placeholder block, the brown is the solid placeholder block, and the blue is the fluid placeholder block. Each serves its own function. 
 
-All kinds of placeholder blocks can be crafted at the [Sawmill](../../source/buildings/sawmill).
+All kinds of placeholder blocks can be crafted at the {% building_link sawmill %}.
 
 ## Using the Placeholder Blocks
 
