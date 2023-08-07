@@ -377,11 +377,25 @@ A field can have multiple field tags, as many as you want, but not 2 of the same
 The planter will always attempt to walk to any adjacent clear (air) block around the planting position, if none of the adjacent positions are clear the planter will attempt to walk to the block itself, this is done to try to prevent the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which standing inside of the plant.
 *Note*: Make sure that the planter can always get within about 4 blocks of the desired position, if not they will go and teleport around in order to reach the position, which may not always work.
 
-|   |   |   |
-|---|---|---|
-|   | X |   |
-| X | P | X |
-|   | X |   |
+<table>
+<tbody>
+<tr>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>P</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 X = walking position
 
@@ -389,21 +403,10 @@ P = planting position
 
 > *Note*: Kelp is an exception to this behaviour, to prevent them from going diving into the water, the planter will actually walk to the first air block above the water, looking up for 26 blocks (1 above the max plant length), if this is not possible they will not be able to harvest this plant, so ensure there is air present above the water.
 > 
->  |   |   |   |
->  |---|---|---|
->  |   | X |   |
->  | W | K | W |
->  | W | K | W |
->  | W | K | W |
->  | D | D | D |
+> ![Kelp field movement explanation](/assets/images/buildings/plantation/planter_kelp_explanation.png)
 >
-> D = ground
-> 
-> W = water
-> 
-> K = kelp
-> 
-> X = walking position
+> - The red cross is the position where the planter will walk to in the example image.
+> - The blue cross is the position where the tag of the block is.
 
 For downwards growing plants the same rules apply, although they will walk to the top of the stem, so ensure there are some ways for them to get up to the ceiling.
 
@@ -441,12 +444,12 @@ The amount of planting positions on these fields are usually unlimited, this is 
 
 This one requires a bit more detail as every plant works slightly different.
 
-| Plant          | Work tag location                                                                                                                                                                       |
-|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Seagrass       | For seagrass, the block below the water line itself should be tagged, the planter is supposed to bonemeal the dirt block itself.                                                        |
-| Sea pickles    | For sea pickles, the block below the water line itself should be tagged, however the planter will initially place the pickles, and then bonemeal the pickles directly to let them grow. |
-| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                 |
-| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                 |
+| Plant          | Work tag location                                                                                                                                                              
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --- |
+| Seagrass       | For seagrass, the block below the water line itself should be tagged, the planter is supposed to bonemeal the dirt block itself. Red crosses are where the planter will attempt to walk. Blue crosses are the blocks that are tagged with the working tag.                                                       | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png) |
+| Sea pickles    | For sea pickles, the block below the water line itself should be tagged, however the planter will initially place the pickles, and then bonemeal the pickles directly to let them grow. Red crosses are where the planter will attempt to walk. Blue crosses are the blocks that are tagged with the working tag.  | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
+| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                 ||
+| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                 ||
 
 ### Percentage based harvesting
 
