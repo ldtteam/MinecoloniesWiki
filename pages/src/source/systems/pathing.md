@@ -24,11 +24,9 @@ On certain pathblocks (in 1.18 [[list]](https://github.com/ldtteam/minecolonies/
 
 ## Waypoints and Decorative Paths
 
-Waypoints are also used to guide your citizens along the right path, but whereas the pathblocks are for local pathing, waypoints are used more for long-distance pathing. Adding a waypoint onto bridges, for example, or in areas that you want citizens to traverse a little more frequently, can help them path across the colony more easily. As such, you don't need very many waypoints: having a couple here and there where the pathing may be more difficult is plenty.
+[Waypoints](../items/waypoint) are also used to guide your citizens along the right path, but whereas the pathblocks are for local pathing, waypoints are used more for long-distance pathing. Adding a waypoint onto bridges, for example, or in areas that you want citizens to traverse a little more frequently, can help them path across the colony more easily. As such, you don't need very many waypoints: having a couple here and there where the pathing may be more difficult is plenty.
 
-The Builder can build waypoints if you request them with the [build tool](../items/buildtool). You can find them in the under the decorative elements of the build tool. 
-
-To remove a waypoint, place a solid block, such as dirt, on the waypoint and wait a few minutes. After a while, you can remove the block, and the waypoint should be removed.
+The Builder can build waypoints if you request them with the [build tool](../items/buildtool).
 
 The build tool also includes several decorative paths as part of the schematics. These paths often include waypoints, so you can see how the professional schematics designers used them.
 

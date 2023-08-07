@@ -12,7 +12,7 @@ MineColonies features NPC workers such as {% worker_link builder plural=true %},
 
 It also includes specialized buildings such as the {% building_link warehouse %}, {% building_link house %}, {% building_link townhall %}, {% building_link barracks %}, {% building_link library %}, {% building_link university %}, and even the {% building_link school %}.
 
-### Please note that the wiki is a work in progress and will usually refer to the latest 1.18.2 and&#47;or 1.19.2 alpha version of MineColonies!
+### Please note that the wiki is a work in progress and will usually refer to the latest 1.19.2 and&#47;or 1.20.1 alpha version of MineColonies!
 
 <hr />
 

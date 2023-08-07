@@ -54,7 +54,7 @@ beekeeper:
   type: animals
   traits:
     primary: Dexterity
-    secondary: Adaptabilty
+    secondary: Adaptability
   effects:
     primary: Determines chance of *beeing* stung
     secondary: Affects wait time between checking hives
