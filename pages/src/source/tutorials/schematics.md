@@ -17,6 +17,7 @@ Schematics are files containing block and entity information of a certain area a
       - [What and where is the scans folder?](#what-and-where-is-the-scans-folder)
       - [Where is the schematic folder?](#where-is-the-schematic-folder)
       - [I have a "\*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?](#i-have-a-minecolonies01e6a291-8a01-4763-bcae-f3a8797b1d52cache-folder-what-is-that-for)
+      - [I have a "*/blueprints/clients/*" folder, what is that for?](#i-have-a-blueprintsclients-folder-what-is-that-for)
       - [Can I just build my own buildings and then get the colonists to "move in"?](#can-i-just-build-my-own-buildings-and-then-get-the-colonists-to-move-in)
       - [How to create custom huts?](#how-to-create-custom-huts)
   - [\[1.18\] Custom Hut Filenames](#118-custom-hut-filenames)
@@ -24,6 +25,11 @@ Schematics are files containing block and entity information of a certain area a
   - [Hut Requirements](#hut-requirements)
   - [Level Requirements for Overworld Styles](#level-requirements-for-overworld-styles)
   - [Level Requirements for Nether Styles](#level-requirements-for-nether-styles)
+  - [Plantation fields](#plantation-fields)
+    - [Vertically growing plants (upwards and downwards)](#vertically-growing-plants-upwards-and-downwards)
+    - [Treeside plants](#treeside-plants)
+    - [Bonemealed fields](#bonemealed-fields)
+    - [Percentage based harvesting](#percentage-based-harvesting)
   - [Tips on Building](#tips-on-building)
     - [Do](#do)
     - [Don't](#dont)
@@ -341,8 +347,115 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | Level 4 | Difficult - Ocean    |
 | Level 5 | Very Difficult - End |
 
-<br>
-<br>
+
+{% version "1.19.2" after=true %}
+## Plantation fields
+
+In 1.19.2 and beyond the plantation has been changed to include fields, just like the farmer, however unlike the farmer these fields can be completely free-form and created by the style designers. However each field has certain requirements that should be carefully looked at so the planter can do their work successfully.
+
+Each plant has 2 separate tags, a field tag and a work tag.
+The field tags are given to the plantation field block, in order to define what plants this field is able to handle, the second one is given based on the implementation of the field (information on this can be found below).
+
+A field can have multiple field tags, as many as you want, but not 2 of the same.
+
+| Plant          | Field tag       | Work tag        | Maximum work tags                         |
+|----------------|-----------------|-----------------|-------------------------------------------|
+| Sugar cane     | sugar_field     | sugar           | 20                                        |
+| Cactus         | cactus_field    | cactus          | 20                                        |
+| Bamboo         | bamboo_field    | bamboo          | 20                                        |
+| Cocoa          | cocoa_field     | cocoa           | 5 (totalling 20 positions, details below) |
+| Vine           | vine_field      | vine            | 20                                        |
+| Kelp           | kelp_field      | kelp            | 20                                        |
+| Seagrass       | seagrass_field  | seagrass        | Unlimited                                 |
+| Sea pickles    | seapickle_field | seapickle       | Unlimited                                 |
+| Glowberries    | glowb_field     | glowb_vine      | 20                                        |
+| Weeping vines  | weepv_field     | weepv_vine      | 20                                        |
+| Twisting vines | twistv_field    | twistv_vine     | 20                                        |
+| Crimson plants | crimsonp_field  | crimsonp_ground | Unlimited                                 |
+| Warped plants  | warpedp_field   | warpedp_ground  | Unlimited                                 |
+
+Let's go over all the types of fields and their individual requirements.
+
+### Vertically growing plants (upwards and downwards)
+A "vertically growing plant" is a plant that grows in a single line, either up or downwards, for example Sugar Cane. These plants always break fully when their root blocks are broken, the planter will break these at the second block.
+
+Each of these plants have a minimum and sometimes a maximum growth height.
+The planter can only harvest them when they reach the minimum, if plants have a maximum the planter will have an increasingly higher chance to harvest the plant, the taller it gets. So as long as the plant can grow to the minimum height within the bounds of the schematic, you are good to go.
+
+| Plant          | Minimum height | Maximum height |
+|----------------|----------------|----------------|
+| Sugar cane     | 3              | N/A            |
+| Cactus         | 3              | N/A            |
+| Bamboo         | 6              | 16             |
+| Kelp           | 2              | 25             |
+| Glowberries    | 3              | N/A            |
+| Weeping vines  | 2              | 25             |
+| Twisting vines | 2              | 25             |
+
+The planter will always attempt to walk to any adjacent clear (air) block around the planting position, if none of the adjacent positions are clear the planter will attempt to walk to the block itself, this is done to try to prevent the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which standing inside of the plant.
+
+|   |   |   |
+|---|---|---|
+|   | X |   |
+| X | P | X |
+|   | X |   |
+
+X = walking position
+
+P = planting position
+
+> *Note*: Kelp is an exception to this behaviour, to prevent them from going diving into the water, the planter will actually walk to the first air block above the water, looking up for 26 blocks (1 above the max plant length), if this is not possible they will not be able to harvest this plant, so ensure there is air present above the water.
+> 
+>  |   |   |   |
+>  |---|---|---|
+>  |   | X |   |
+>  | W | K | W |
+>  | W | K | W |
+>  | W | K | W |
+>  | D | D | D |
+>
+> D = ground
+> 
+> W = water
+> 
+> K = kelp
+> 
+> X = walking position
+
+For downwards growing plants the same rules apply, although they will walk to the top of the stem, so ensure there are some ways for them to get up to the ceiling.
+
+### Treeside plants
+
+Treeside plants speak for themselves, these plants grow on the side of trees. In this case you are supposed to tag the stem of the tree itself, and the working positions will automatically be set to every **horizontally adjacent** block of the tree.
+
+This means that the amount of tags you can actually place is the amount of working positions divided by 4!
+
+Currently this is only used for Cocoa beans.
+
+### Bonemealed fields
+
+Bonemealed fields will tell the planter to use bonemeal somewhere on the ground in order to grow plants as they would naturally if the player used bonemeal.
+
+The amount of planting positions on these fields are usually unlimited, this is because Mojang directly affects how much growth a bonemeal action can already do, although I wouldn't make the fields too big for no reason, if you make patches of at most 7x7 you should be fine.
+
+This one requires a bit more detail as every plant works slightly different.
+
+| Plant          | Work tag location                                                                                                                                                                       |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Seagrass       | For seagrass, the block below the water line itself should be tagged, the planter is supposed to bonemeal the dirt block itself.                                                        |
+| Sea pickles    | For sea pickles, the block below the water line itself should be tagged, however the planter will initially place the pickles, and then bonemeal the pickles directly to let them grow. |
+| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                 |
+| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                 |
+
+### Percentage based harvesting
+
+Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots, those plants should then **naturally spread** to other places, the planter has no involvement in this process, think of something like vines or mushrooms.
+
+| Plant | Tag location                                                                                                    |
+|-------|-----------------------------------------------------------------------------------------------------------------|
+| Vine  | Tag all the positions where the vines themselves can spread to, NOT the blocks where the vines are attached to. |
+
+{% endversion %}
 
 ## Tips on Building
 
