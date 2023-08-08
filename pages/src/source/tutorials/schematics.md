@@ -449,7 +449,7 @@ Every bonemealed plant works slightly differently.
 
 ### Percentage based harvesting
 
-Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants -- such as vines and mushrooms -- should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
+Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants -- such as vines -- should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
 
 | Plant | Tag location                                                                                                    |
 |-------|-----------------------------------------------------------------------------------------------------------------|
