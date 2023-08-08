@@ -351,19 +351,19 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 {% version "1.19.2" after=true %}
 ## Plantation fields
 
-In 1.19.2 and beyond the plantation has been changed to include fields, just like the farmer, however unlike the farmer these fields can be completely free-form and created by the style designers. However each field has certain requirements that should be carefully looked at so the planter can do their work successfully.
+In 1.19.2 and beyond, the plantation has been changed to include fields, just like the farmer. However, unlike the farmer, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the planter to do their work successfully.
 
-Each plant has 2 separate tags, a field tag and a work tag.
-The field tags are given to the plantation field block, in order to define what plants this field is able to handle, the second one is given based on the implementation of the field (information on this can be found below).
+Each plant has 2 separate tags: a field tag and a work tag.
+The field tags are given to the plantation field block to define what plants this field handles. The work tag is given based on the implementation of the field.
 
-A field can have multiple field tags, as many as you want, but not 2 of the same.
+A field can have as many field tags as you want, but not 2 of the same.
 
 | Plant          | Field tag       | Work tag        | Maximum work tags                         |
 |----------------|-----------------|-----------------|-------------------------------------------|
 | Sugar cane     | sugar_field     | sugar           | 20                                        |
 | Cactus         | cactus_field    | cactus          | 20                                        |
 | Bamboo         | bamboo_field    | bamboo          | 20                                        |
-| Cocoa          | cocoa_field     | cocoa           | 5 (totalling 20 positions, details below) |
+| Cocoa          | cocoa_field     | cocoa           | 5 (totalling 20 positions; details below) |
 | Vine           | vine_field      | vine            | 20                                        |
 | Kelp           | kelp_field      | kelp            | 20                                        |
 | Seagrass       | seagrass_field  | seagrass        | Unlimited                                 |
@@ -374,8 +374,8 @@ A field can have multiple field tags, as many as you want, but not 2 of the same
 | Crimson plants | crimsonp_field  | crimsonp_ground | Unlimited                                 |
 | Warped plants  | warpedp_field   | warpedp_ground  | Unlimited                                 |
 
-The planter will always attempt to walk to any adjacent clear (air) block around the planting position, if none of the adjacent positions are clear the planter will attempt to walk to the block itself, this is done to try to prevent the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which standing inside of the plant.
-*Note*: Make sure that the planter can always get within about 4 blocks of the desired position, if not they will go and teleport around in order to reach the position, which may not always work.
+The planter will always attempt to walk to any adjacent air block around the planting position. If none of the adjacent positions are air, the planter will attempt to walk to the block itself. This prevents the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which the planter would be standing inside of the plant.
+*Note*: Make sure that the planter can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
 
 <table>
 <tbody>
@@ -401,22 +401,20 @@ X = walking position
 
 P = planting position
 
-> *Note*: Kelp is an exception to this behaviour, to prevent them from going diving into the water, the planter will actually walk to the first air block above the water, looking up for 26 blocks (1 above the max plant length), if this is not possible they will not be able to harvest this plant, so ensure there is air present above the water.
+> *Note*: Kelp is an exception to this behaviour. To prevent planters from diving into the water, the planter will walk to the first air block above the work tagged block and look up 26 blocks from the work tagged block. If this is not possible, they will not be able to harvest this plant, so ensure there is air above the water above the work tagged block.
 > 
 > ![Kelp field movement explanation](/assets/images/buildings/plantation/planter_kelp_explanation.png)
 >
-> - The red cross is the position where the planter will walk to in the example image.
-> - The blue cross is the position where the tag of the block is.
+> - The red X is the position where the planter will walk to in the example image.
+> - The blue X is the position where the work tag of the block is.
 
-For downwards growing plants the same rules apply, although they will walk to the top of the stem, so ensure there are some ways for them to get up to the ceiling.
-
-Let's go over all the types of fields and their individual requirements.
+For downwards-growing plants, the planter will attempt to stand above the work tagged block and harvest below them. Make sure the planter can reach the top of the stem.
 
 ### Vertically growing plants (upwards and downwards)
-A "vertically growing plant" is a plant that grows in a single line, either up or downwards, for example Sugar Cane. These plants always break fully when their root blocks are broken, the planter will break these at the second block.
+A "vertically growing plant" is a plant that grows in a single line, either upwards or downwards; for example, Sugar Cane is a vertically growing plant that grows upwards. These plants always break fully when their root blocks are broken. The planter will break these at the second block from the root.
 
 Each of these plants have a minimum and sometimes a maximum growth height.
-The planter can only harvest them when they reach the minimum, if plants have a maximum the planter will have an increasingly higher chance to harvest the plant, the taller it gets. So as long as the plant can grow to the minimum height within the bounds of the schematic, you are good to go.
+The planter can only harvest them when they reach the minimum. If plants have a maximum height, the planter will have an increasingly higher chance to harvest the plant the taller it gets. Plants are only required to grow to the minimum height within the bounds of the schematic.
 
 | Plant          | Minimum height | Maximum height |
 |----------------|----------------|----------------|
@@ -430,30 +428,28 @@ The planter can only harvest them when they reach the minimum, if plants have a 
 
 ### Treeside plants
 
-Treeside plants speak for themselves, these plants grow on the side of trees. In this case you are supposed to tag the stem of the tree itself, and the working positions will automatically be set to every **horizontally adjacent** block of the tree.
+Treeside plants grow directly on the sides of trees. For these plants, you only need to tag the tree's stem; the working positions will automatically be set to every horizontally adjacent block of the tagged stem. Currently this is only used for Cocoa beans.
 
-This means that the amount of tags you can actually place is the amount of working positions divided by 4!
-
-Currently this is only used for Cocoa beans.
+Note that this means that the amount of tags you can actually place is the amount of working positions divided by 4!
 
 ### Bonemealed fields
 
-Bonemealed fields will tell the planter to use bonemeal somewhere on the ground in order to grow plants as they would naturally if the player used bonemeal.
+Bonemealed fields will tell the planter to use bonemeal somewhere on the ground to grow plants as if the player had used bonemeal.
 
-The amount of planting positions on these fields are usually unlimited, this is because Mojang directly affects how much growth a bonemeal action can already do, although I wouldn't make the fields too big for no reason, if you make patches of at most 7x7 you should be fine.
+The amount of planting positions on these fields are usually unlimited because bonemealing the ground has a set area of effect. However, it is suggested not to make the fields too big; an area around 7x7 is lightly suggested.
 
-This one requires a bit more detail as every plant works slightly different.
+Every bonemealed plant works slightly differently.
 
 | Plant          | Work tag location                                                                                                                                                                                                                                                                                                 |                                                                                                 |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Seagrass       | For seagrass, the block below the water line itself should be tagged, the planter is supposed to bonemeal the dirt block itself. Red crosses are where the planter will attempt to walk. Blue crosses are the blocks that are tagged with the working tag.                                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)   |
-| Sea pickles    | For sea pickles, the block below the water line itself should be tagged, however the planter will initially place the pickles, and then bonemeal the pickles directly to let them grow. Red crosses are where the planter will attempt to walk. Blue crosses are the blocks that are tagged with the working tag. | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
+| Seagrass       | The block directly below the water should be dirt and tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag (i.e., "seagrass").                                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)   |
+| Sea pickles    | The block directly below the water should be a live coral and tagged. The planter will initially place the pickles, then bonemeal the pickles to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag (i.e., "seapickle"). | ![Sea Pickle explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
 | Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                                                                           |                                                                                                 |
 | Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                                                                           |                                                                                                 |
 
 ### Percentage based harvesting
 
-Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots, those plants should then **naturally spread** to other places, the planter has no involvement in this process, think of something like vines or mushrooms.
+Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants -- such as vines and mushrooms -- should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
 
 | Plant | Tag location                                                                                                    |
 |-------|-----------------------------------------------------------------------------------------------------------------|
