@@ -347,6 +347,26 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | Level 4 | Difficult - Ocean    |
 | Level 5 | Very Difficult - End |
 
+{% version "1.18.2" before=true %}
+## Plantation fields
+These features do not exist before 1.19.2.
+
+### Vertically growing plants (upwards and downwards)
+
+These must be planted manually.
+
+### Treeside plants
+
+These must be planted manually.
+
+### Bonemealed fields
+
+These must be planted manually.
+
+### Percentage based harvesting
+
+These must be planted manually.
+{% endversion %}
 
 {% version "1.19.2" after=true %}
 ## Plantation fields
