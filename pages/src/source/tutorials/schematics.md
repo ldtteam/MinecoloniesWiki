@@ -25,11 +25,11 @@ Schematics are files containing block and entity information of a certain area a
   - [Hut Requirements](#hut-requirements)
   - [Level Requirements for Overworld Styles](#level-requirements-for-overworld-styles)
   - [Level Requirements for Nether Styles](#level-requirements-for-nether-styles)
-  - [Plantation fields](#plantation-fields)
-    - [Vertically growing plants (upwards and downwards)](#vertically-growing-plants-upwards-and-downwards)
-    - [Treeside plants](#treeside-plants)
-    - [Bonemealed fields](#bonemealed-fields)
-    - [Percentage based harvesting](#percentage-based-harvesting)
+  - [Plantation Fields](#plantation-fields)
+    - [Vertically Growing Plants (Upwards and Downwards)](#vertically-growing-plants-upwards-and-downwards)
+    - [Treeside Plants](#treeside-plants)
+    - [Bonemealed Fields](#bonemealed-fields)
+    - [Percentage-based Harvesting](#percentage-based-harvesting)
   - [Tips on Building](#tips-on-building)
     - [Do](#do)
     - [Don't](#dont)
@@ -347,27 +347,6 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | Level 4 | Difficult - Ocean    |
 | Level 5 | Very Difficult - End |
 
-{% version "1.18.2" before=true %}
-## Plantation Fields
-These features do not exist before 1.19.2.
-
-### Vertically Growing Plants (Upwards and Downwards)
-
-These must be planted manually.
-
-### Treeside Plants
-
-These must be planted manually.
-
-### Bonemealed Fields
-
-These must be planted manually.
-
-### Percentage-based Harvesting
-
-These must be planted manually.
-{% endversion %}
-
 {% version "1.19.2" after=true %}
 ## Plantation Fields
 
@@ -460,12 +439,12 @@ The amount of planting positions on these fields are usually unlimited because b
 
 Every bonemealed plant works slightly differently.
 
-| Plant          | Work tag location                                                                                                                                                                                                                                                                                                 |                                                                                                 |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Seagrass       | The block directly below the water should tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag.                                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)   |
+| Plant          | Work tag location                                                                                                                                                                                                                                        |                                                                                                   |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Seagrass       | The block directly below the water should tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag.                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)     |
 | Sea pickles    | The block directly below the water should tagged. The planter will initially place the pickles, then bonemeal the pickles to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag. | ![Sea Pickle explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
-| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                                                                           |                                                                                                 |
-| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                                                                           |                                                                                                 |
+| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
+| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
 
 ### Percentage-based Harvesting
 
