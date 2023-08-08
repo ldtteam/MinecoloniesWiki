@@ -348,28 +348,28 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | Level 5 | Very Difficult - End |
 
 {% version "1.18.2" before=true %}
-## Plantation fields
+## Plantation Fields
 These features do not exist before 1.19.2.
 
-### Vertically growing plants (upwards and downwards)
+### Vertically Growing Plants (Upwards and Downwards)
 
 These must be planted manually.
 
-### Treeside plants
+### Treeside Plants
 
 These must be planted manually.
 
-### Bonemealed fields
+### Bonemealed Fields
 
 These must be planted manually.
 
-### Percentage based harvesting
+### Percentage-based Harvesting
 
 These must be planted manually.
 {% endversion %}
 
 {% version "1.19.2" after=true %}
-## Plantation fields
+## Plantation Fields
 
 In 1.19.2 and beyond, the plantation has been changed to include fields, just like the farmer. However, unlike the farmer, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the planter to do their work successfully.
 
@@ -430,7 +430,7 @@ P = planting position
 
 For downwards-growing plants, the planter will attempt to stand above the work tagged block and harvest below them. Make sure the planter can reach the top of the stem.
 
-### Vertically growing plants (upwards and downwards)
+### Vertically Growing Plants (Upwards and Downwards)
 A "vertically growing plant" is a plant that grows in a single line, either upwards or downwards; for example, Sugar Cane is a vertically growing plant that grows upwards. These plants always break fully when their root blocks are broken. The planter will break these at the second block from the root.
 
 Each of these plants have a minimum and sometimes a maximum growth height.
@@ -446,13 +446,13 @@ The planter can only harvest them when they reach the minimum. If plants have a 
 | Weeping vines  | 2              | 25             |
 | Twisting vines | 2              | 25             |
 
-### Treeside plants
+### Treeside Plants
 
 Treeside plants grow directly on the sides of trees. For these plants, you only need to tag the tree's stem; the working positions will automatically be set to every horizontally adjacent block of the tagged stem. Currently this is only used for Cocoa beans.
 
 Note that this means that the amount of tags you can actually place is the amount of working positions divided by 4!
 
-### Bonemealed fields
+### Bonemealed Fields
 
 Bonemealed fields will tell the planter to use bonemeal somewhere on the ground to grow plants as if the player had used bonemeal.
 
@@ -462,14 +462,14 @@ Every bonemealed plant works slightly differently.
 
 | Plant          | Work tag location                                                                                                                                                                                                                                                                                                 |                                                                                                 |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Seagrass       | The block directly below the water should be dirt and tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag (i.e., "seagrass").                                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)   |
-| Sea pickles    | The block directly below the water should be a live coral and tagged. The planter will initially place the pickles, then bonemeal the pickles to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag (i.e., "seapickle"). | ![Sea Pickle explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
+| Seagrass       | The block directly below the water should be dirt and tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag.                                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)   |
+| Sea pickles    | The block directly below the water should be a live coral and tagged. The planter will initially place the pickles, then bonemeal the pickles to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag. | ![Sea Pickle explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
 | Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                                                                           |                                                                                                 |
 | Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                                                                           |                                                                                                 |
 
-### Percentage based harvesting
+### Percentage-based Harvesting
 
-Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants -- such as vines -- should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
+Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants — such as vines — should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
 
 | Plant | Tag location                                                                                                    |
 |-------|-----------------------------------------------------------------------------------------------------------------|
