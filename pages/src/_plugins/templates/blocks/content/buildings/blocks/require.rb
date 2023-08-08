@@ -1,0 +1,6 @@
+require_relative "brewing-recipes"
+require_relative "crafting-recipes"
+require_relative "custom"
+require_relative "main"
+require_relative "stock"
+require_relative "tasks"

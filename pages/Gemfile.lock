@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://ldtteam.jfrog.io/artifactory/ruby/
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)

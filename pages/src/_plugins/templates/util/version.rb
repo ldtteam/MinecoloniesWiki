@@ -29,6 +29,8 @@ class VersionBlock < BaseBlock
             end
         end
 
-        return VersionRenderer.renderVersionContent(selected_versions.collect { |k| k["order"] }, convert_content(context, content.strip))
+        return VersionRenderer.renderVersionContent(selected_versions.collect { |k| k["order"] }, ContentRenderer.convert_content(context, content.strip))
     end
 end
+
+Liquid::Template.register_tag("version", VersionBlock)
