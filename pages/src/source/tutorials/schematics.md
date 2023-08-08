@@ -242,6 +242,7 @@ Here is a full list, up-to-date as of 14 October 2022, of the building names. Pl
 | fisherman1     | fisherman2     | fisherman3     | fisherman4     | fisherman5     |
 | fletcher1      | fletcher2      | fletcher3      | fletcher4      | fletcher5      |
 | florist1       | florist2       | florist3       | florist4       | florist5       |
+| forister1      | forister2      | forister3      | forister4      | forister5      |
 | glassblower1   | glassblower2   | glassblower3   | glassblower4   | glassblower5   |
 | graveyard1     | graveyard2     | graveyard3     | graveyard4     | graveyard5     |
 | guardtower1    | guardtower2    | guardtower3    | guardtower4    | guardtower5    |
