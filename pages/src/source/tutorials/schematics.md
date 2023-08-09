@@ -365,13 +365,13 @@ A field can have as many field tags as you want, but not 2 of the same.
 | Cocoa          | cocoa_field     | cocoa           | 5 (totalling 20 positions; details below) |
 | Vine           | vine_field      | vine            | 20                                        |
 | Kelp           | kelp_field      | kelp            | 20                                        |
-| Seagrass       | seagrass_field  | seagrass        | Unlimited                                 |
-| Sea pickles    | seapickle_field | seapickle       | Unlimited                                 |
+| Seagrass       | seagrass_field  | seagrass        | 121 (11 x 11 area)                        |
+| Sea pickles    | seapickle_field | seapickle       | 10                                        |
 | Glowberries    | glowb_field     | glowb_vine      | 20                                        |
 | Weeping vines  | weepv_field     | weepv_vine      | 20                                        |
 | Twisting vines | twistv_field    | twistv_vine     | 20                                        |
-| Crimson plants | crimsonp_field  | crimsonp_ground | Unlimited                                 |
-| Warped plants  | warpedp_field   | warpedp_ground  | Unlimited                                 |
+| Crimson plants | crimsonp_field  | crimsonp_ground | 121 (11 x 11 area)                        |
+| Warped plants  | warpedp_field   | warpedp_ground  | 121 (11 x 11 area)                        |
 
 The planter will always attempt to walk to any adjacent air block around the planting position. If none of the adjacent positions are air, the planter will attempt to walk to the block itself. This prevents the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which the planter would be standing inside of the plant.
 *Note*: Make sure that the planter can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
