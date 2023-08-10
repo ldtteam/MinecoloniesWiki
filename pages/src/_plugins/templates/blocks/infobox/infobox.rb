@@ -22,7 +22,6 @@ class InfoBoxBlock < BaseBlock
     def render_block(context, content, arguments)
         header = arguments.keyed["header"] || ""
         images = arguments.keyed["images"] || ""
-        image_alts = arguments.keyed["image_alts"] || ""
         infobox_content = arguments.keyed["content"] || ""
         
         images_parsed = images.split(",").map { |url| { link: url } }
@@ -32,18 +31,18 @@ class InfoBoxBlock < BaseBlock
             end
         end
 
-        InfoBoxBlock.render_info_box(context, header, images_parsed, [infobox_content], content)
+            # for image in images do
+            #     images_content += "<div class=\"col-md col-12\"><img alt=\"%s\" src=\"%s\" /></div>" % [image[:alt], image[:link]]
+            # end
+
+        InfoBoxBlock.render_info_box(context, header, images, [infobox_content], content)
     end
 
     def self.render_info_box(context, header, images, blocks, content)
         images_content = ""
-        if images.length > 0 then
+        unless images.empty? then
             images_content += "<div class=\"infobox-image row\">"
-
-            for image in images do
-                images_content += "<div class=\"col-md col-12\"><img alt=\"%s\" src=\"%s\" /></div>" % [image[:alt], image[:link]]
-            end
-
+            images_content += images
             images_content += "</div>"
         end
 

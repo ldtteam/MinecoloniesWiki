@@ -3,7 +3,7 @@ type: worker
 worker: undertaker
 layout: worker
 ---
-{% capture content %}
+{% infobox_worker %}
 The Undertaker deals with deceased citizens. When a citizen dies, a grave will spawn at the location of death.
 
 ![Grave](../../assets/images/items/grave.png)
@@ -29,8 +29,4 @@ If no citizens have died recently, the Undertaker will visit the {% building_lin
 The Undertaker is exempt from mourning so they can complete their job.
 
 The higher an Undertaker's Strength skill, the faster they can dig graves.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/worker.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_worker %}

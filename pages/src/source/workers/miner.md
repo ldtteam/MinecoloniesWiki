@@ -3,7 +3,7 @@ type: worker
 worker: miner
 layout: worker
 ---
-{% capture content %}
+{% infobox_worker %}
 The Miner is part of the resource production of your colony. The Miner will create mineshafts to collect cobblestone, granite, diorite, andesite, dirt, sand, sandstone, etc. as well as all the ores they come across. Any additional modded blocks/ores should also be picked up by the Miner if they are properly coded.
 
 The Miner works by digging a shaft down. Once there, they will build a network of random mineshafts branching out from the main shaft. If they find any ore, they will try to mine out the whole vein, not just what happens to be on their path.
@@ -13,7 +13,7 @@ If the Miner is not working and just stands by their hut block, check to make su
 The level of the Mine will dictate how deep the Miner will mine:
 
 | Mine Level | Shaft Y Level | Shaft Y Level |
-| ---------- | ------------- | ------------- |
+|------------|---------------|---------------|
 |            | 1.16          | 1.18          |
 | 1          | 50            | 40            |
 | 2          | 30            | 20            |
@@ -29,8 +29,4 @@ The Miner can on occasion get confused and lost. They may start new tunnels and 
 The Miner has a chance to get lucky in finding ores when digging out cobblestone or stone! This is the default setting in the [configuration file](../../source/misc/configfile), but you can change this.
 
 The Miner's Strength level affects their block breaking speed. Similarly, their Stamina skill affects their block placing speed, so if they have a higher Stamina skill they'll place supports and other blocks faster. 
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/worker.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_worker %}

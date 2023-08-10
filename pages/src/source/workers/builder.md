@@ -3,7 +3,7 @@ type: worker
 worker: builder
 layout: worker
 ---
-{% capture content %}
+{% infobox_worker %}
 The Builder is the **MOST** important worker in your colony. As long as you provide the Builder with all the resources they ask for, they will build and upgrade all of your town buildings, workers' huts, decorations, and your personal schematics.
 
 ## Building A Hut/Schematic
@@ -23,11 +23,7 @@ If a build request is created but no Builder starts building, the building may b
 If the build order is within their range and they still aren't building it, check if you've set them to Manual on the third page of their hut GUI. If you have, you'll need to choose build orders for them yourself (also in the third page of their hut GUI).
 
 The higher a Builder's Adaptability skill, the faster they'll place blocks. Similarly, the higher their Athletics skill, the faster they'll break blocks.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/worker.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_worker %}
 
 ## Build Options Details
 

@@ -3,13 +3,13 @@ type: worker
 worker: netherminer
 layout: worker
 ---
-{% capture content %}
+{% infobox_worker %}
 Being a Nether Miner is a dangerous job! The Nether Miner travels into the Nether and mines resources found there.  
 
 The Nether Miner requires significant supplies. They require the following items, the level of the items based on the level of their hut (check the [worker](../systems/worker) system page). The food they require can be configured in the hut GUI.  
 
 | Items required                |
-| ----------------------------- |
+|-------------------------------|
 | armor                         |
 | axe                           |
 | pickaxe                       |
@@ -26,8 +26,4 @@ Once they have their tools & items, they will activate the nether portal and tra
 The Nether Miner can also craft lava buckets.
 
 Note: The portal in the Nether Mine will transport players to the Nether. However, the Nether Miner does not actually travel into the Nether, nor do they actually mine any blocks in the Nether.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/worker.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_worker %}

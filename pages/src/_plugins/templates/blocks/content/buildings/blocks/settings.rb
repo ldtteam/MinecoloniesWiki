@@ -17,7 +17,7 @@ class BuildingGuiContentBlockSettings
 
     def content_template(context, arguments)
         building = context.registers[:page]["building"]
-        settings = context.registers[:site].site_data["buildinginfo"][building]["settings"]
+        settings = context.registers[:site].data["buildinginfo"][building]["settings"]
 
         list_output = ""
         for setting in settings do

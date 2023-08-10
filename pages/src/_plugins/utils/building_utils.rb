@@ -1,12 +1,11 @@
 BuildingNameMapping = Struct.new(:versions, :name)
 
 class BuildingUtils
-    def self.getBuildingKey(context, input)
+    def self.getBuildingKey(page, input)
         building = nil
 
-        page_data = context.registers[:page]
-        if page_data["layout"] == "building"
-            building = page_data["building"]
+        if page["layout"] == "building"
+            building = page["building"]
         end
 
         unless input.nil? || input.empty?
@@ -20,13 +19,27 @@ class BuildingUtils
         return building
     end
 
-    def self.getBuildingNames(context, building, plural = false)
+    def self.getBuildingInfo(site, building)
+        if building.nil? || building.empty?
+            throw "Building key is not defined"
+        end
+
+        buildinginfo = site.data["buildinginfo"][building]
+
+        if buildinginfo.nil?
+            throw "Building info for building '#{building}' does not exist. Please provide a valid building key."
+        end
+
+        return buildinginfo
+    end
+
+    def self.getBuildingNames(site, building, plural = false)
         if building.nil? || building.empty?
             throw "Building key is not defined"
         end
         
-        all_versions = context.registers[:site].data["versions"]
-        building_info = context.registers[:site].data["buildinginfo"][building]
+        all_versions = site.data["versions"]
+        building_info = site.data["buildinginfo"][building]
 
         if building_info.nil?
             throw "Building info for building '#{building}' does not exist. Please provide a valid building key."

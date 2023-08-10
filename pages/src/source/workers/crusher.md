@@ -3,7 +3,7 @@ type: worker
 worker: crusher
 layout: worker
 ---
-{% capture content %}
+{% infobox_worker %}
 The Crusher is a part of your colony's production line. The Crusher will crush materials into other materials.
 
 The defaults are:
@@ -18,7 +18,7 @@ The Crusher works on a 2:1 ratio, so, for example, it takes 2 cobblestone to get
 The Crusher can only crush a certain amount of materials per day, depending on their hut level.
 
 | Hut Level | Daily Max |
-| --------- | --------- |
+|-----------|-----------|
 | 1         | 16        |
 | 2         | 64        |
 | 3         | 144       |
@@ -27,8 +27,4 @@ The Crusher can only crush a certain amount of materials per day, depending on t
 
 
 The higher a Crusher's Stamina level, the less of a chance they have to get sick. The higher their Strength level, the faster they'll work.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/worker.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_worker %}
