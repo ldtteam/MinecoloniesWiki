@@ -1,28 +1,3 @@
-build:
-  new:
-    - button: Schematic Style
-      content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
-    - button: Builder
-      content: Here is where you can choose what Builder you want on the project. If the hut is out of your Builders' range, this is where you can manually assign one.
-    - button: List
-      content: This is the list of resources that the Builder will need for the schematic style selected.
-    - button: Repair
-      content: Not needed, as the building hasn't been built yet.
-    - button: Build Building
-      content: This is where you tell the Builder to build the building with the style selected.
-  upgrade:
-    - button: Schematic Style
-      content: Here you can verify the style of schematics you have currently. You can change the style, but it's not recommended that you change it since it will most likely be in a different position.
-    - button: Builder
-      content: Here is where you can choose what Builder you want on the project. If the hut is out of your Builders' range, this is where you can manually assign one.
-    - button: List
-      content: This is the list of resources that the Builder will need for the schematic style selected.
-    - button: Repair
-      content: This is to repair a building according to its schematic. This will remove any changes that a player has made to the current building.
-    - button: Upgrade
-      content: When you are ready to upgrade to the next level. Upgrading will come with benefits, like more furnaces for a Smelter to use (for example).
-    - button: Deconstruct
-      content: To deconstruct the building. After the Builder is done breaking the building, click the Pick Up button, which will appear where the Deconstruct button was. You will get the building's hut block, which will keep its current level. This is so you can place it somewhere else using the [build tool](../../source/items/buildtool).
 barracks:
   - button: Pencil
     content: Allows you to rename the building.  The level of the building will always be listed after the name.

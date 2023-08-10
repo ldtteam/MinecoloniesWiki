@@ -3,12 +3,6 @@ require_relative "require"
 TAB_INDEXES = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "ninth", "tenth"]
 
 module BuildingGuiContentFunctions
-    def self.number_or_nil(string)
-        Integer(string || '')
-            rescue ArgumentError
-        nil
-    end
-
     def self.call_renderer_method(renderer, name, context)
         if renderer.class.method_defined?(name) then
             return renderer.send(name, context)
@@ -30,11 +24,11 @@ class BuildingGuiContentTag < BaseTag
 
         header = arguments.keyed["header"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "header_name", context) || ""
         description = arguments.keyed["description"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "header_description", context) || ""
-        order = BuildingGuiContentFunctions.number_or_nil(arguments.keyed["order"]) || 1
+        order = NumberUtils.number_or_nil(arguments.keyed["order"]) || 1
 
         image_key = arguments.keyed["image_key"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "image_key", context) || ""
         image_alt_key = arguments.keyed["image_alt"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "image_alt", context) || ""
-        cols = BuildingGuiContentFunctions.number_or_nil(arguments.keyed["cols"]) || 4
+        cols = NumberUtils.number_or_nil(arguments.keyed["cols"]) || 4
 
         header_content = header.empty? ? "" : ContentRenderer.convert_content(context, "The %s tab of the GUI is the **%s**. %s" % [TAB_INDEXES[order - 1], header, description])
         image_url = "../../assets/images/gui/buildings/%s/%s.png" % [context["page"]["building"], image_key]
@@ -53,11 +47,11 @@ class BuildingGuiContentBlock < BaseBlock
 
         header = arguments.keyed["header"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "header_name", context) || ""
         description = arguments.keyed["description"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "header_description", context) || ""
-        order = BuildingGuiContentFunctions.number_or_nil(arguments.keyed["order"]) || 1
+        order = NumberUtils.number_or_nil(arguments.keyed["order"]) || 1
 
         image_key = arguments.keyed["image_key"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "image_key", context) || ""
         image_alt_key = arguments.keyed["image_alt"] || BuildingGuiContentFunctions.call_renderer_method(type[:renderer], "image_alt", context) || ""
-        cols = BuildingGuiContentFunctions.number_or_nil(arguments.keyed["cols"]) || 4
+        cols = NumberUtils.number_or_nil(arguments.keyed["cols"]) || 4
 
         header_content = header.empty? ? "" : ContentRenderer.convert_content(context, "The %s tab of the GUI is the **%s**. %s" % [TAB_INDEXES[order - 1], header, description])
         image_url = "../../assets/images/gui/buildings/%s/%s.png" % [context["page"]["building"], image_key]

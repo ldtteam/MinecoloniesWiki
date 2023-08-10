@@ -1,5 +1,0 @@
-{% capture content %}
-  {% include contentblock/reuse/header.html header=include.header %}
-  <p>{{- include.content | markdownify -}}</p>
-{% endcapture %}
-{% include contentblock/reuse/core.html content=content image_width=4 image=include.image alt=include.alt %}
