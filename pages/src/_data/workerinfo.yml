@@ -277,7 +277,7 @@ forester:
     primary: Faster log breaking
     secondary: Faster walking
   buildings:
-    - forester
+    - lumberjack
 glassblower:
   name: Glassblower
   plural: Glassblowers

@@ -12,7 +12,7 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 **Hint:** The higher the level of the Flower Shop, the more daily output the Florist can handle. So:
 
 | Building Level | Number of Plants |
-| -------------- | ---------------- |
+|----------------|------------------|
 | 1              | 4                |
 | 2              | 8                |
 | 3              | 12               |
@@ -24,10 +24,10 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Flower Shop GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Flower Shop's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/flowershopgui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Plantables</strong>." content="This shows a list of items the Florist can plant. As the Florist is leveled up, your Florist will be able to grow more types of flowers. At level 3 or higher, you can toggle the plantables on or off. The black box at the top lets you search for plants." image="../../assets/images/gui/flowershopgui2.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Flower Shop's Hut" header="The third tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/flowershopgui3.png"%}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_itemlist order=2 header="plantables" image_key="plantables" image_alt="Plantables list" %}
+This shows a list of items the {% worker florist %} can plant. As the {% building %} is leveled up, your {% building %} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
+{% endbuilding_gui_content_block_itemlist %}
+{% building_gui_content_block_stock order=3 %}

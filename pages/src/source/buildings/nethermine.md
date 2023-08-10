@@ -23,16 +23,14 @@ The Nether Miner can also craft lava buckets.
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Nether Mine GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Nether Mine hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/netherminegui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes." image="../../assets/images/gui/netherminegui2.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Nether Mine" header="The third tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/netherminegui3.png" %}
-
-{% include contentblock/building/settings-gui.html key="nethermine" header="The fourth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/netherminegui4.png" %}
-
-{% include contentblock/building/other-gui.html header="The fifth tab of the GUI is <strong>Food</strong>." content="Listed here are items that can be used by the Nether Miner as food while they are traveling in the Nether. Simply turn on any that you want your Nether Miner to eat, and a Courier will deliver those items when they need food.  All items are on by default.  The black box at the top is to search for items." image="../../assets/images/gui/netherminegui5.png" %}
-
-{% include contentblock/building/other-gui.html header="The sixth tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/netherminegui6.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_stock order=3 %}
+{% building_gui_content_block_settings order=4 %}
+{% building_gui_content_block_itemlist order=5 header="food" image_key="food" image_alt="Food list" %}
+Listed here are items that can be used by the {% worker netherminer %} as food while they are traveling in the Nether.
+Simply turn on any that you want your {% worker netherminer %} to eat, and a {% worker_link courier %} will deliver those items when they need food.
+{% endbuilding_gui_content_block_itemlist %}
+{% building_gui_content_block_tasks order=6 %}

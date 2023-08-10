@@ -28,9 +28,7 @@ The greater a Courier's Agility skill, the faster they'll run. The greater their
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Courier's Hut GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Courier's Hut block by right-clicking on it, you will see a GUI with different options. You start on
-the main tab:" image="../../assets/images/gui/couriergui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/couriergui2.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_tasks order=2 %}

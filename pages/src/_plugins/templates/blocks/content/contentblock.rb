@@ -1,7 +1,7 @@
 TEMPLATE_ROOT = "<div class=\"row py-3\">
     %s
     <div class=\"col-md-%s col-12\">
-        <p>%s</p>
+        %s
     </div>
 </div>"
 TEMPLATE_IMAGE = "<div class=\"col-md-%s col-12\">

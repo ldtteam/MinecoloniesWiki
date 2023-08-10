@@ -1,22 +1,3 @@
-citizen:
-  - button: Pencil
-    content: Allows you to rename the building.  The level of the building will always be listed after the name.
-  - button: Hut Level
-    content: This tells you the level of the hut you have selected.
-  - button: Assigned Citizens
-    content: This will show you how many citizens are assigned to this hut, it also displays their name, and occupation (if employed).
-  - button: Manage Housing
-    content: This lets you change which citizens are assigned to this hut. **Note:** this only works if you have turned the housing assignment mode in the [Town Hall](../../source/buildings/townhall) block to manual; otherwise your citizens will be housed automatically.
-  - button: Build Options
-    content: This lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the [Builder](../../source/workers/builder) page.
-  - button: Recall Citizens
-    content: Teleports all the citizens living here to the hut block.
-  - button: Inventory
-    content: This opens an inventory space where you can store anything you like, as the citizens staying in the hut don't use it.
-  - button: "?"
-    content: Some huts have an in-game guide. Press the ? button to access it.
-  - button: A chest icon
-    content: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks in the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 build:
   new:
     - button: Schematic Style

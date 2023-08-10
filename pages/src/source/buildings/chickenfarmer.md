@@ -9,7 +9,7 @@ The Chicken Farmer's Hut is where the Chicken Farmer will raise chickens, collec
 **Note:** The Chicken Farmer will only keep two chickens alive per hut level, so at level 5 they will have ten chickens in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat, drops, and other byproducts, like eggs. So:
 
 | Building Level | Chickens Housed |
-| -------------- | --------------- |
+|----------------|-----------------|
 | 1              | 2               |
 | 2              | 4               |
 | 3              | 6               |
@@ -21,10 +21,8 @@ The Chicken Farmer's Hut is where the Chicken Farmer will raise chickens, collec
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Chicken Farmer's Hut GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Chicken Farmer's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/chickenfarmergui1.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Chicken Farmer's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/chickenfarmergui2.png" %}
-
-{% include contentblock/building/settings-gui.html key="chickenfarmer" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/chickenfarmergui3.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}
+{% building_gui_content_block_settings order=3 %}

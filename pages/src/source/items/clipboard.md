@@ -27,11 +27,11 @@ After you register the clipboard, this message will appear:
 Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a {% worker_link courier %}) as long as you're close to your colony!
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui1.png" alt="Clipboard GUI"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/items/clipboardgui1.png" alt="Clipboard GUI"></p>
 <br>
 
 If you click on the exclamation mark in the top right, you will only see requests for things that workers need *right now.*
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui2.png" alt="Clipboard GUI Important Requests"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/items/clipboardgui2.png" alt="Clipboard GUI Important Requests"></p>
 <br>

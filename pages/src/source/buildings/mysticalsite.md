@@ -16,6 +16,6 @@ The {% worker_link undertaker %} will visit the Mystical Site when there are no 
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Mystical Site GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html data=site.data.gui.mystical header="When accessing the Mystical Site's hut block by right-clicking on it, you will see a GUI with different options." image="../../assets/images/gui/mysticalsitegui.png" %}
+{% building_gui_content_block_main order=1 %}

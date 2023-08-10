@@ -41,14 +41,12 @@ Guard(s) will patrol a set distance around their tower, which is based on their 
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Barracks Tower GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Barracks Tower hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/barrackstowergui1.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Barracks Tower" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/barrackstowergui2.png" %}
-
-{% include contentblock/building/other-gui.html header="The third tab of the GUI is <strong>Selection Tools</strong>." content="Click the <strong>Obtain Tools</strong> button to get the Guard Scepter. Right-clicking on a block with the Guard Scepter will set it as a guard spot or a patrol point. " image="../../assets/images/gui/barrackstowergui3.png" %}
-
-{% include contentblock/building/other-gui.html header="The fourth tab of the GUI is <strong>Hostiles</strong>." content="You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to on by default." image="../../assets/images/gui/barrackstowergui4.png" %}
-
-{% include contentblock/building/settings-gui.html key="barrackstower" header="The fifth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/barrackstowergui5.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}
+{% building_gui_content_block_custom order=3 header="selection tools" image_key="guardtool" image_alt="Guard tool" %}
+Click the <strong>Obtain Tools</strong> button to get the Guard Scepter. Right-clicking on a block with the Guard Scepter will set it as a guard spot or a patrol point.
+{% endbuilding_gui_content_block_custom %}
+{% building_gui_content_block_hostiles order=4 %}
+{% building_gui_content_block_settings order=5 %}

@@ -9,7 +9,7 @@ Citizens will go to the {% building %} they are assigned to at night to sleep. T
 Each level of the {% building %} will house one citizen. So: 
 
 | Building Level | Citizens Housed |
-| -------------- | --------------- |
+|----------------|-----------------|
 | 1              | 1               |
 | 2              | 2               |
 | 3              | 3               |
@@ -27,17 +27,4 @@ For additional citizens to spawn, you first have to have enough space in your {%
 
 ## {% building %} GUI
 
-{% capture mainguicontent %}
-When accessing the {% building %} it's hut block by right-clicking on it, you will see a GUI with different options. You start on
-the main tab: 
-{% endcapture %}
-{% include contentblock/building/main-gui.html data=site.data.gui.citizen header=mainguiheader image="../../assets/images/gui/housegui.png" %}
-
-{% capture otherguicontent %}
-If the building is filled, you will need to <strong>Unassign</strong> a citizen before being able to add new citizens.
-Each citizen will be listed, starting with the residents of this {% building %}. 
-Citizens will show their occupation, the distance from their work hut to <strong>this</strong> {% building %}, and the distance from their work hut to their current {% building %}.
-If the second line is green, this {% building %} is closer to their work hut, if it's yellow, it's farther.
-<br><br><strong>Building Assignment Mode</strong> allows you to override the Townhall's housing setting, for this {% building %} only.
-{% endcapture %}
-{% include contentblock/building/other-gui.html header="You reach this screen by clicking <strong>Manage Housing</strong> on the main tab." content=otherguicontent image="../../assets/images/gui/housegui2.png" %}
+{% building_gui_content_block_mainresidential order=1 %}

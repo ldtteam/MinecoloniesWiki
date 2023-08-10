@@ -10,7 +10,7 @@ The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food a
 
 
 | Building Level | Sheep Housed |
-| -------------- | ------------ |
+|----------------|--------------|
 | 1              | 2            |
 | 2              | 4            |
 | 3              | 6            |
@@ -22,10 +22,8 @@ The Shepherd's Hut is where the Shepherd will breed and butcher sheep for food a
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Shepherd's Hut GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Shepherd hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/shepherdgui1.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Shepherd" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/shepherdgui2.png" %}
-
-{% include contentblock/building/settings-gui.html key="shepherd" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/shepherdgui3.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}
+{% building_gui_content_block_settings order=3 %}

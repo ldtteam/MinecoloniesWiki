@@ -29,20 +29,11 @@ If the Builder removes a block while building and/or upgrading, they will keep i
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Builder's Hut GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Builder's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/buildergui1.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Builder's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/buildergui2.png" %}
-
-{% include contentblock/building/settings-gui.html key="builder" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/buildergui3.png" %}
-
-{% include contentblock/building/other-gui.html header="The fourth tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/buildergui4.png" %}
-
-{% include contentblock/building/other-gui.html header="The fifth tab of the GUI is <strong>Work Orders</strong>." content="This page shows you what buildings have been assigned to this builder, along with the distance away from the builder's hut.  You can cancel the work order here." image="../../assets/images/gui/buildergui5.png" %}
-
-{% include contentblock/building/other-gui.html header="The sixth tab of the GUI is <strong>Required Resources</strong>." content="These are the resources that the Builder will need for the build order they are currently working on.
-- **Current project** The top line tells you which building is being worked on and its level.
-- **Step** What step of the project the builder is on.
-- **Supplied % / Used %** How much of the needed resources are in the builder hut inventory, and how many of the resources have been placed.
-- **Item** Each needed item is displayed, along with how many of that item is in inventory, and how many are needed. These amounts will change as they place blocks and will show only what blocks the Builder still needs to place. The block in black are in their inventory. The blocks in red are the ones neither you nor the Builder has in their inventory. The blocks in green are ones you have in inventory but the builder needs.  Clicking the up arrow next to the item will automatically remove that item from your inventory and place it into the builder's." image="../../assets/images/gui/buildergui6.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}
+{% building_gui_content_block_settings order=3 %}
+{% building_gui_content_block_craftingrecipes order=4 %}
+{% building_gui_content_block_workorders order=5 %}
+{% building_gui_content_block_requiredresources order=6 %}

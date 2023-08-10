@@ -25,8 +25,7 @@ The Barracks is the ultimate protection for your colony. Each Barracks can hold 
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Barracks GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html data=site.data.gui.barracks header="When accessing the House's hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/barracksgui.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Barracks" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}

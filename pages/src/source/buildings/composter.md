@@ -25,14 +25,10 @@ The Composter's Hut is where the Composter will turn organic materials into [com
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Composter's Hut GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Composter's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/compostergui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Items to Compost</strong>." content="
-  <ul>
-    <li><strong>Items to compost:</strong> Here you will see a list of all the items that were recognized for the composter to use, including modded items. All items are off by default. You can then select which items you want the composter to use by clicking on the button. The black box at the top lets you search for items.</li>
-    <li><strong>Reset to Default:</strong> Resets all items to off.</li>
-  </ul>" image="../../assets/images/gui/compostergui2.png" %}
-
-{% include contentblock/building/settings-gui.html key="composter" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/compostergui3.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_itemlist order=2 header="items to compost" image_key="compost" image_alt="Items to compost" %}
+Here you will see a list of all the items that were recognized for the {% building %} to use, including modded items.
+{% endbuilding_gui_content_block_itemlist %}
+{% building_gui_content_block_settings order=3 %}

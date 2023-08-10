@@ -10,7 +10,7 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
 
 
 | Building Level | Cows Housed |
-| -------------- | ----------- |
+|----------------|-------------|
 | 1              | 2           |
 | 2              | 4           |
 | 3              | 6           |
@@ -22,10 +22,8 @@ The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you hav
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Cowhand's Hut GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Cowhand's Hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/cowhandgui1.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Cowhand's Hut" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/cowhandgui2.png" %}
-
-{% include contentblock/building/settings-gui.html key="cowhand" header="The third tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/cowhandgui3.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}
+{% building_gui_content_block_settings order=3 %}

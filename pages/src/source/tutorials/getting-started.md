@@ -48,7 +48,7 @@ You should also gather as many resources as you can-wood, as well as cobble, coa
 
 ### Step 6: Forester
   
-  If your style is wood, it's recommended to build a {% building_link forester %} next. That way your new {% worker_link forester %} can start gathering wood for your next builds and for tools and other items.
+  If your style is wood, it's recommended to build a {% building_link lumberjack %} next. That way your new {% worker_link forester %} can start gathering wood for your next builds and for tools and other items.
   
 ### Step 7: Miner
   
@@ -355,7 +355,7 @@ Once the Builder has finished their hut, you're ready to start building any othe
 
 You have now completed the most important steps to start and create your colony!
 
-Your question now is probably, "What to build next?" The {% building_link townhall %}, {% building_link mine %}, {% building_link forester %}, {% building_link farm %}, {% building_link fisher %}, {% building_link guardtower %}, {% building_link courier %}, {% building_link bakery %}, {% building_link restaurant %}, and more are probably good places to start. 
+Your question now is probably, "What to build next?" The {% building_link townhall %}, {% building_link mine %}, {% building_link lumberjack %}, {% building_link farm %}, {% building_link fisher %}, {% building_link guardtower %}, {% building_link courier %}, {% building_link bakery %}, {% building_link restaurant %}, and more are probably good places to start. 
 
 But you start with only 4 citizens! Now what? Well, the next step after your 4 citizens are employed and are working hard is to plan and place the {% building_link house %}. This will give you additional citizens for each level of a House you build in your colony (after your inital four citizens are housed)! Now, what do you do with so many citizens? You cannot assign more than 1 worker per hut. Therefore, consider building additional huts for more Miners, Foresters, Builders, Farmers, Fishers, and many more! If you struggle with keeping track of what everyone needs, consider making a [Clipboard](../../source/items/clipboard) and [Resource Scroll](../../source/items/resourcescroll). Though you only need one Clipboard, you can make a Resource Scroll for each Builder to keep track of their needs!
 

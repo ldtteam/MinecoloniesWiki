@@ -9,7 +9,7 @@ The Enchanter's Tower is where the Enchanter will create enchanted books, as lon
 The higher the level of the Enchanter's Tower, the higher the level of the enchanted books the Enchanter will produce (the Enchanter's Knowledge level also contributes to this). So:
 
 | Building Level | Enchantment Level | Odds |
-| -------------- | ----------------- | ---- |
+|----------------|-------------------|------|
 | 1              | 1                 | 50   |
 | 2              | 2                 | 25   |
 | 3              | 3                 | 15   |
@@ -28,12 +28,11 @@ The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) 
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Enchanter's Tower GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Enchanter's Tower hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/enchantergui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes." image="../../assets/images/gui/enchantergui2.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Enchanter Tower" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/enchantergui3.png" %}
-
-{% include contentblock/building/other-gui.html header="The fourth tab of the GUI is <strong>Gather Targets</strong>." content="Here you can set which workers the Enchanter will collect XP from, and how far that worker is from the tower." image="../../assets/images/gui/enchantergui4.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_stock order=3 %}
+{% building_gui_content_block_custom order=4 header="gather targets" image_key="targets" image_alt="Gather targets" %}
+Here you can set which workers the Enchanter will collect XP from, and how far that worker is from the tower.
+{% endbuilding_gui_content_block_custom %}

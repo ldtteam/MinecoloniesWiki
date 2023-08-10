@@ -28,8 +28,7 @@ The Knights in Training are not actual Guards even though they will be dressed a
 {% endcapture %}
 {% include infobox/wrapper.html content=content infobox=infobox %}
 
-## Combat Academy GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Combat Academy hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/combatacademygui.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Combat Academy" header="The second tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/minstockgui.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_stock order=2 %}
