@@ -25,6 +25,11 @@ Schematics are files containing block and entity information of a certain area a
   - [Hut Requirements](#hut-requirements)
   - [Level Requirements for Overworld Styles](#level-requirements-for-overworld-styles)
   - [Level Requirements for Nether Styles](#level-requirements-for-nether-styles)
+  - [Plantation Fields](#plantation-fields)
+    - [Vertically Growing Plants (Upwards and Downwards)](#vertically-growing-plants-upwards-and-downwards)
+    - [Treeside Plants](#treeside-plants)
+    - [Bonemealed Fields](#bonemealed-fields)
+    - [Percentage-based Harvesting](#percentage-based-harvesting)
   - [Tips on Building](#tips-on-building)
     - [Do](#do)
     - [Don't](#dont)
@@ -342,8 +347,114 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | Level 4 | Difficult - Ocean    |
 | Level 5 | Very Difficult - End |
 
-<br>
-<br>
+{% version "1.19.2" after=true %}
+## Plantation Fields
+
+In 1.19.2 and beyond, the plantation has been changed to include fields, just like the farmer. However, unlike the farmer, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the planter to do their work successfully.
+
+Each plant has 2 separate tags: a field tag and a work tag.
+The field tags are given to the plantation field block to define what plants this field handles. The work tag is given based on the implementation of the field.
+
+A field can have as many field tags as you want, but not 2 of the same.
+
+| Plant          | Field tag       | Work tag        | Maximum work tags                         |
+|----------------|-----------------|-----------------|-------------------------------------------|
+| Sugar cane     | sugar_field     | sugar           | 20                                        |
+| Cactus         | cactus_field    | cactus          | 20                                        |
+| Bamboo         | bamboo_field    | bamboo          | 20                                        |
+| Cocoa          | cocoa_field     | cocoa           | 5 (totalling 20 positions; details below) |
+| Vine           | vine_field      | vine            | 20                                        |
+| Kelp           | kelp_field      | kelp            | 20                                        |
+| Seagrass       | seagrass_field  | seagrass        | Unlimited                                 |
+| Sea pickles    | seapickle_field | seapickle       | Unlimited                                 |
+| Glowberries    | glowb_field     | glowb_vine      | 20                                        |
+| Weeping vines  | weepv_field     | weepv_vine      | 20                                        |
+| Twisting vines | twistv_field    | twistv_vine     | 20                                        |
+| Crimson plants | crimsonp_field  | crimsonp_ground | Unlimited                                 |
+| Warped plants  | warpedp_field   | warpedp_ground  | Unlimited                                 |
+
+The planter will always attempt to walk to any adjacent air block around the planting position. If none of the adjacent positions are air, the planter will attempt to walk to the block itself. This prevents the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which the planter would be standing inside of the plant.
+*Note*: Make sure that the planter can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
+
+<table>
+<tbody>
+<tr>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>P</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+X = walking position
+
+P = planting position
+
+> *Note*: Kelp is an exception to this behaviour. To prevent planters from diving into the water, the planter will walk to the first air block above the work tagged block and look up 26 blocks from the work tagged block. If this is not possible, they will not be able to harvest this plant, so ensure there is air above the water above the work tagged block.
+> 
+> ![Kelp field movement explanation](/assets/images/buildings/plantation/planter_kelp_explanation.png)
+>
+> - The red X is the position where the planter will walk to in the example image.
+> - The blue X is the position where the work tag of the block is.
+
+For downwards-growing plants, the planter will attempt to stand above the work tagged block and harvest below them. Make sure the planter can reach the top of the stem.
+
+### Vertically Growing Plants (Upwards and Downwards)
+A "vertically growing plant" is a plant that grows in a single line, either upwards or downwards; for example, Sugar Cane is a vertically growing plant that grows upwards. These plants always break fully when their root blocks are broken. The planter will break these at the second block from the root.
+
+Each of these plants have a minimum and sometimes a maximum growth height.
+The planter can only harvest them when they reach the minimum. If plants have a maximum height, the planter will have an increasingly higher chance to harvest the plant the taller it gets. Plants are only required to grow to the minimum height within the bounds of the schematic.
+
+| Plant          | Minimum height | Maximum height |
+|----------------|----------------|----------------|
+| Sugar cane     | 3              | N/A            |
+| Cactus         | 3              | N/A            |
+| Bamboo         | 6              | 16             |
+| Kelp           | 2              | 25             |
+| Glowberries    | 3              | N/A            |
+| Weeping vines  | 2              | 25             |
+| Twisting vines | 2              | 25             |
+
+### Treeside Plants
+
+Treeside plants grow directly on the sides of trees. For these plants, you only need to tag the tree's stem; the working positions will automatically be set to every horizontally adjacent block of the tagged stem. Currently this is only used for Cocoa beans.
+
+Note that this means that the amount of tags you can actually place is the amount of working positions divided by 4!
+
+### Bonemealed Fields
+
+Bonemealed fields will tell the planter to use bonemeal somewhere on the ground to grow plants as if the player had used bonemeal.
+
+The amount of planting positions on these fields are usually unlimited because bonemealing the ground has a set area of effect. However, it is suggested not to make the fields too big; an area around 7x7 is lightly suggested.
+
+Every bonemealed plant works slightly differently.
+
+| Plant          | Work tag location                                                                                                                                                                                                                                        |                                                                                                   |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Seagrass       | The block directly below the water should tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag.                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)     |
+| Sea pickles    | The block directly below the water should tagged. The planter will initially place the pickles, then bonemeal the pickles to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag. | ![Sea Pickle explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
+| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
+| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
+
+### Percentage-based Harvesting
+
+Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants &mdash; such as vines &mdash; should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
+
+| Plant | Tag location                                                                                                    |
+|-------|-----------------------------------------------------------------------------------------------------------------|
+| Vine  | Tag all the positions where the vines themselves can spread to, NOT the blocks where the vines are attached to. |
+
+{% endversion %}
 
 ## Tips on Building
 
