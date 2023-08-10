@@ -3,7 +3,7 @@ type: building
 building: barrackstower
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Barracks Towers will employ and house one Guard for every level built (unlike the normal {% building_link guardtower %}, which can only have 1 Guard at a time). Each new Guard will need a bed in a house in order to spawn. However, once they are hired at the Barracks Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 | Barracks Tower Level | Max # of Guards |
@@ -35,11 +35,7 @@ Guard(s) will patrol a set distance around their tower, which is based on their 
 | 5           | 200 blocks          |
 
 **Note:** If you place Barracks/Barracks Towers near your colony border and level them up, your border will [expand](../../source/systems/border).
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

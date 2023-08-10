@@ -3,7 +3,7 @@ type: building
 building: warehouse
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Warehouse is the central storage from where a Courier will store and retrieve everything your workers harvest, craft, or need. Items will be stored in [racks](../../source/items/rack).
 
 The level of the Warehouse will determine how many Couriers will be able to use it at the same time. Level up the Warehouse to increase the amount of Couriers that can work in it. Leveling up the Warehouse will also increase its storage capacity.
@@ -15,11 +15,7 @@ The level of the Warehouse will determine how many Couriers will be able to use 
 | 3              | 6            |
 | 4              | 8            |
 | 5              | 10           |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

@@ -3,7 +3,7 @@ type: building
 building: sawmill
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Sawmill cannot be built until you have a level 3 {% building_link lumberjack %} (or three level 1 {% building lumberjack plural=true %}, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -18,11 +18,7 @@ The Sawmill is where the Carpenter will craft any items made of at least 75% woo
 | 3             | 40                |
 | 4             | 80                |
 | 5             | 160               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

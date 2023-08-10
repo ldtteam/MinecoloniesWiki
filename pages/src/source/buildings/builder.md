@@ -3,7 +3,7 @@ type: building
 building: builder
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Before you build *any* other building, you must build the Builder's Hut. If the Builder’s Hut is not built, the Builder cannot build other buildings.
 
 Before you choose a place to build the Builder's Hut, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the Builder’s Hut block and place it with your [build tool](../items/buildtool). Once the hut is placed, the Builder will be automatically assigned (or you can manually assign one with the best [Traits](../systems/worker) for a Builder if you changed this in the settings tab in the {% building_link townhall %}).
@@ -23,11 +23,7 @@ The Builder will not start another build assignment until they have finished the
 You can go into the Town Hall's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the Builder will continue where they left off.
 
 If the Builder removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the Builder's Hut inventory.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

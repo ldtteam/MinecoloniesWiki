@@ -3,7 +3,7 @@ type: building
 building: alchemist
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The {% building %} is where the {% worker_link alchemist %} works. The {% worker alchemist %} brews potions and harvests netherwart and mistletoe.
 
 **Hint:** The number of recipes you can teach the {% building %} doubles per building level. So:
@@ -15,12 +15,7 @@ The {% building %} is where the {% worker_link alchemist %} works. The {% worker
 | 3                    | 40                |
 | 4                    | 80                |
 | 5                    | 160               |
-
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

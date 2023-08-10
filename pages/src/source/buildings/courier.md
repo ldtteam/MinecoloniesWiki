@@ -3,7 +3,7 @@ type: building
 building: courier
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Courier runs back and forth from the {% building_link warehouse %} to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. Each Courier needs their own hut, and you can have up to 10 Couriers per Warehouse, depending on the Warehouse's level (2 per Warehouse level).
 
 The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
@@ -22,11 +22,7 @@ The greater a Courier's Agility skill, the faster they'll run. The greater their
 **Note:** You MUST build the Warehouse to at least level 1 so the Courier can do their work.
 
 **Note:** If you have multiple Warehouses, Couriers will only see the items in the Warehouse they are assigned to.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

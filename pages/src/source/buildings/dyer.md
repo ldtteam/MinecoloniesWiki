@@ -3,7 +3,7 @@ type: building
 building: dyer
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Dyer cannot be built until you have a level 3 {% building_link flowershop %} (or three level 1 Flower Shops, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -32,11 +32,7 @@ The Dyer's Hut is where the Dyer will craft dyes and dye other items, including 
 | 5                | 5        |
 
 **Hint:** The higher the Dyer's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

@@ -3,7 +3,7 @@ type: building
 building: nethermine
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Nether Mine cannot be built until you have finished the [research](../../source/systems/research) in the {% building_link university %}.
 
 The Nether Mine is where the {% worker_link netherminer %} works. The Nether Miner travels into the Nether and mines resources found there.  The level of the hut determines what items Nether Miner brings back.
@@ -17,11 +17,7 @@ The Nether Mine is where the {% worker_link netherminer %} works. The Nether Min
 The Nether Miner can also craft lava buckets.
 
 **Note:** The portal in the Nether Mine will transport players to the Nether.  However, the Nether Miner does not actually travel into the Nether, nor do they actually mine any blocks in the Nether.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

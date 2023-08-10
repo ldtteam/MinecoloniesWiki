@@ -3,7 +3,7 @@ type: building
 building: flowershop
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Flower Shop cannot be built until you have a level 3 {% building_link composter %} (or three level 1 Composter's Huts, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -18,11 +18,7 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 | 3              | 12               |
 | 4              | 16               |
 | 5              | 20               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

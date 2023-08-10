@@ -3,7 +3,7 @@ type: building
 building: stonemason
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Stonemason's Hut cannot be built until you have a level 1 {% building_link blacksmith %} and have finished the research in the {% building_link university %}.
 <br>
 
@@ -19,11 +19,7 @@ The Stonemason's Hut is where the Stonemason will craft 3x3 recipes made entirel
 | 4              | 80                |
 | 5              | 160               |
 
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

@@ -3,7 +3,7 @@ type: building
 building: blacksmith
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The {% building %} cannot be built until you have a level 3 {% building_link mine %} (or three level 1 Mines, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -22,11 +22,7 @@ The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor, swords, a
 Additionally, upon reaching level 5, the Blacksmith learns the nine netherite recipes (shovel, hoe, pickaxe, axe, sword, helmet, chestplate, leggings, and boots), which count toward the recipe total above.
 
 When a colonist is requesting a tool from the Blacksmith with multiple accepted levels, the Blacksmith will craft whichever tool type is highest in their list of recipes that they have the materials for (when you teach them a new recipe, it'll go on the bottom).
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

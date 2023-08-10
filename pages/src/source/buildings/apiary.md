@@ -3,7 +3,7 @@ type: building
 building: apiary
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Apiary is where the Beekeeper works. The Beekeeper breeds bees and harvests honeycombs or honey bottles (you can
 choose which on the second page of the Apiary's GUI).
 
@@ -17,13 +17,9 @@ The level of the Apiary determines the max number of hives the Beekeeper can tak
 | 4            | 8                   |
 | 5            | 16                  |
 
-**Note:** If the Beekeeper is asking for hives but there are some nearby, make sure you've set the hives for them to
+**Note:** If the {% worker beekeeper %} is asking for hives but there are some nearby, make sure you've set the hives for them to
 take care of with the hive tool. This tool is accessed from the second page of the Apiary GUI (see below).
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

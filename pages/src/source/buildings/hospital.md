@@ -3,7 +3,7 @@ type: building
 building: hospital
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Hospital cannot be built until you have finished the research in the {% building_link university %}.
 
 The Hospital is where injured or sick citizens go. The Healer will heal them with various items. The possible diseases can be changed in the [config file](../../source/misc/configfile), however, these are the defaults:
@@ -23,11 +23,7 @@ The higher the level of the Hospital, the more people can be healed at a time. S
 | 3              | 3              |
 | 4              | 4              |
 | 5              | 5              |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

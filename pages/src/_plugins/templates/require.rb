@@ -6,6 +6,8 @@ require_relative "util/version"
 
 require_relative "blocks/content/contentblock"
 require_relative "blocks/content/buildings/building_gui_contentblock"
+require_relative "blocks/infobox/infobox"
+require_relative "blocks/infobox/buildings/building_infobox"
 
 require_relative "tags/buildings/building_name"
 require_relative "tags/buildings/building_link"

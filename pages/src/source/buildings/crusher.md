@@ -3,7 +3,7 @@ type: building
 building: crusher
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Crusher's Hut cannot be built until you have a level 1 {% building_link stonemason %} and have finished the research in the {% building_link university %}.
 <br>
 
@@ -29,11 +29,7 @@ The higher the level of the Crusher's Hut, the more daily output the Crusher can
 | 3              | 144       |
 | 4              | 256       |
 | 5              | 999       |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

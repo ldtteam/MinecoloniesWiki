@@ -3,7 +3,7 @@ type: building
 building: archery
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Archery cannot be built until you have a level 3 {% building_link barracks %} (or three level 1 Barracks, or another equivalent) and have finished the research in the {% building_link university %}.
 <BR>
 
@@ -22,11 +22,7 @@ The number of students that can be trained at a time depends on the level of the
 The Archers in Training require a bow to practice. They will shoot at the practice targets, a target block (hay bale in 1.15) on a fence post. While shooting, they will try to stand at a place designated either by glowstone or by any block specially tagged as a standing point (tagging any block means that glowstone is ignored).
 
 The Archers in Training are not actual Guards even though they will be dressed as Archer Guards. They will not help defend the colony.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

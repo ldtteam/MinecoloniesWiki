@@ -3,7 +3,7 @@ type: building
 building: school
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The School cannot be built until you finish the research in the {% building_link university %}.
 
 The School is where the Teacher will level up the Pupils' (children) Intelligence skill. Paper will increase the leveling speed of the Pupils. 
@@ -17,11 +17,7 @@ The level of the School determines how many Pupils can be taught at a time.
 | 3            | 6             |
 | 4            | 8             |
 | 5            | 10            |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

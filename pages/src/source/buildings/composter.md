@@ -3,7 +3,7 @@ type: building
 building: composter
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Composter's Hut cannot be built until you have a level 3 {% building_link farm %} (or three level 1 Farms, or another equivalent) and have finished the research in the {% building_link university %}.
 <br> 
 
@@ -19,11 +19,7 @@ The Composter's Hut is where the Composter will turn organic materials into [com
 | 3              | 3               |
 | 4              | 4               |
 | 5              | 5               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

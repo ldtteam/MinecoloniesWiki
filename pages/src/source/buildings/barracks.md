@@ -3,7 +3,7 @@ type: building
 building: barracks
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Barracks cannot be built until you have a level 3 {% building_link guardtower %} (or three level 1 Guard Towers, or another equivalent) and have finished the research in the {% building_link university %}. 
 <br>
 
@@ -19,11 +19,7 @@ The Barracks is the ultimate protection for your colony. Each Barracks can hold 
 
 **Note:** The Barracks has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
 <br>
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

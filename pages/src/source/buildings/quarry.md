@@ -3,15 +3,11 @@ type: building
 building: quarry
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Quarry is where you can hire a {% worker_link quarrier %} to dig the quarry. The Quarry will be a pit of varied size (simple quarry is 1 x 1 chunks, medium is 2 x 2) to collect larger amounts of stone type blocks.  The Quarry will only produce the blocks it digs out.  It will not produce additional ore blocks like the {% building_link mine %}.
 
 **Note:** You must first hire a Quarrier at a Mine before assigning them to a Quarry.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

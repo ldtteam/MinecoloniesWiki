@@ -3,7 +3,7 @@ type: building
 building: sifter
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Sifter's Hut cannot be built until you have a level 3 {% building_link fisher %} (or three level 1 Fisher's Huts, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -61,11 +61,7 @@ The Sifter's Hut can sift a certain amount of blocks per day:
 | 3         | 576 blocks     |
 | 4         | 1024 blocks    |
 | 5         | Unlimited      |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

@@ -3,7 +3,7 @@ type: building
 building: graveyard
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Graveyard cannot be built until you have finished the [research](../../source/systems/research) in the {% building_link university %}.
 
 The Graveyard is where the Undertaker will bury your deceased citizens.
@@ -18,11 +18,7 @@ The recommended maximum grave count per Graveyard level is below. This is **not 
 | 3               | 27               |
 | 4               | 36               |
 | 5               | 50               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

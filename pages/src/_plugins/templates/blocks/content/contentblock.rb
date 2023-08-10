@@ -1,10 +1,14 @@
-TEMPLATE_ROOT = "<div class=\"row py-3\">
+class ContentBlock < BaseBlock
+    TOTAL_COL_COUNT = 12
+
+    TEMPLATE_ROOT = "<div class=\"row py-3\">
     %s
     <div class=\"col-md-%s col-12\">
         %s
     </div>
 </div>"
-TEMPLATE_IMAGE = "<div class=\"col-md-%s col-12\">
+
+    TEMPLATE_IMAGE = "<div class=\"col-md-%s col-12\">
     <img
         alt=\"%s\"
         class=\"img-fluid mx-auto\"
@@ -12,9 +16,6 @@ TEMPLATE_IMAGE = "<div class=\"col-md-%s col-12\">
     >
 </div>"
 
-TOTAL_COL_COUNT = 12
-
-class ContentBlock < BaseBlock
     def render_block(context, content, arguments)
         image_link = arguments.keyed["image"]
         image_alt = arguments.keyed["image_alt"]

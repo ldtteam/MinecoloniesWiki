@@ -3,16 +3,11 @@ type: building
 building: townhall
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Town Hall is the central part of your colony.
 
 **Note:** The Town Hall block **cannot** be crafted until **after** you have already placed the Town Hall you get from the [Supply Ship/Camp](../../source/items/supplycampandship). If needed, it can also be obtained in creative mode like any other block or by commands.
-{% endcapture %}
-{% capture infobox %}
-    {% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
-
+{% endinfobox_building %}
 
 ## Starting a New Colony
 

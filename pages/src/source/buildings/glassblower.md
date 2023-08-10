@@ -3,7 +3,7 @@ type: building
 building: glassblower
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Glassblower's Hut cannot be built until you have a level 3 {% building_link smeltery %} (or three level 1 Smelteries, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -30,11 +30,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 | 5              | 5        |
 
 **Hint:** The higher the Glassblower's Focus level, the faster things will smelt. At high levels, they can go *much* faster than the player!
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

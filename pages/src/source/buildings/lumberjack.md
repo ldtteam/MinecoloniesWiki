@@ -3,15 +3,11 @@ type: building
 building: lumberjack
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The {% building %} is where the {% worker forester %} will go in between chopping down trees. The {% worker forester %} will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it.
 
 **Note:** In addition to axes for chopping down trees, {% worker forester %} require hoes for breaking leaves.
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

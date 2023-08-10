@@ -3,7 +3,7 @@ type: building
 building: plantation
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Plantation cannot be built until you have a level 3 {% building_link farm %} (or three level 1 Farms, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
@@ -30,11 +30,7 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 | 3              | 40                |
 | 4              | 80                |
 | 5              | 160               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 

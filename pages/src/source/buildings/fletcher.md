@@ -3,7 +3,7 @@ type: building
 building: fletcher
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 ### Note: The Fletcher's Hut cannot be built until you have a level 1 {% building_link sawmill %} and have finished the research in the {% building_link university %}.
 <br>
 
@@ -19,11 +19,7 @@ The Fletcher's Hut is where the Fletcher will craft arrows and items that use st
 | 3                    | 40                |
 | 4                    | 80                |
 | 5                    | 160               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
 ## {% building %} GUI
 
