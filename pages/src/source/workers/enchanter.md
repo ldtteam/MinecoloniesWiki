@@ -4,9 +4,23 @@ worker: enchanter
 layout: worker
 ---
 {% infobox_worker %}
-The Enchanter is a specialist part of your colony. The Enchanter will steal XP from other workers to create enchanted books that can be used on tools, weapons, and armor for your workers (or yourself). (The higher their Mana level, the more XP they'll collect per trip.) To do this, the Enchanter will also need an [ancient tome](../../source/items/ancient_tome), obtained from raiders. The ancient tome will be used up during this process.
 
-The higher the level of the Enchanter's Tower, the higher the level of the enchanted books the Enchanter will produce (the Enchanter's Knowledge level also contributes to this). So:
+The enchanter specializes in crafting enchanted books and magical scrolls with special abilities useful to the administration of colonies. 
+
+## Crafting Enchanted Books
+
+In order to create enchanted books, the enchanter can be configured to observe another worker to generate XP. The enchanter will consume the generated XP and an [ancient tome](../../source/items/ancient_tome) to create an enchanted book.  The ancient tome is dropped by raiders.
+
+### Stats
+
+| Stat      | Effect                                                 |
+|-----------|--------------------------------------------------------|
+| Mana      | Increases the rate of XP generated during observation. |
+| Knowledge | Increases the possible level of the enchantment.       |
+
+### Hut Level
+
+The higher the level of the Enchanter's Tower the higher the level of the enchanted books the enchanter will produce. So:
 
 | Building Level | Enchantment Level | Odds |
 |----------------|-------------------|------|
@@ -16,7 +30,9 @@ The higher the level of the Enchanter's Tower, the higher the level of the encha
 | 4              | 4                 | 5    |
 | 5              | 5                 | 1    |
 
-The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) upon request:
+## Crafting Scrolls
+
+The Enchanter can also craft magical [scrolls](../../source/items/scrolls) upon request:
 
 - The Ultrasafe Colony Teleport Scroll, crafted with 3 paper, a compass, and the <a href="../items/buildtool">build tool</a>. (Outputs 3 scrolls.)
 - The Ultrasafe Colony Group Teleport Scroll, crafted with 3 Ultrasafe Colony Teleport Scrolls. The Enchanter's Tower must be at least level 2 for the Enchanter to craft this scroll.
