@@ -26,6 +26,6 @@ Open the [build tool](../../source/items/buildtool) GUI, then go to Decorations 
 Open the build tool GUI, use the Minecolonies Original pack, then go to Infrastructure -> misc -> Waypoint, and place the build order.
 {% endversion %}
 
-This tells the [Builder](../../source/workers/builder) to place the waypoint where you want it. If you did it right, the waypoint should be invisible.
+This tells the {% worker_link builder %} to place the waypoint where you want it. If you did it right, the waypoint should be invisible.
 
 To remove a waypoint, place a solid block, such as dirt, on the waypoint and wait a few minutes. If you're not sure where the waypoint is, you can hold a build tool to see it. After a while, you can remove the block, and the waypoint should be removed.

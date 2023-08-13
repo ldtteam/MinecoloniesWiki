@@ -8,9 +8,9 @@ MineColonies is an interactive building mod that allows you to create your own t
 
 The limit is your imagination!
 
-MineColonies features NPC workers such as [Builders](../../source/workers/builder), [Farmers](../../source/workers/farmer), [Fishers](../../source/workers/fisher), [Foresters](../../source/workers/forester), [Miners](../../source/workers/miner), [Smelters](../../source/workers/smelter), [Bakers](../../source/workers/baker), [Cooks](../../source/workers/cook), [Couriers](../../source/workers/courier), five types of animal herders, [Composters](../../source/workers/composter), and many more, with even more being developed and added as the mod grows.
+MineColonies features NPC workers such as {% worker_link builder plural=true %}, {% worker_link farmer plural=true %}, {% worker_link fisher plural=true %}, {% worker_link forester plural=true %}, {% worker_link miner plural=true %}, {% worker_link smelter plural=true %}, {% worker_link baker plural=true %}, {% worker_link cook plural=true %}, {% worker_link courier plural=true %}, five types of animal herders, {% worker_link composter plural=true %}, and many more, with even more being developed and added as the mod grows.
 
-It also includes specialized buildings such as the [Warehouse](../../source/buildings/warehouse), [House](../../source/buildings/house), [Town Hall](../../source/buildings/townhall), [Barracks](../../source/buildings/barracks), [Library](../../source/buildings/library), [University](../../source/buildings/university), and even the [School](../../source/buildings/school).
+It also includes specialized buildings such as the {% building_link warehouse %}, {% building_link house %}, {% building_link townhall %}, {% building_link barracks %}, {% building_link library %}, {% building_link university %}, and even the {% building_link school %}.
 
 ### Please note that the wiki is a work in progress and will usually refer to the latest 1.19.2 and&#47;or 1.20.1 alpha version of MineColonies!
 

@@ -3,7 +3,7 @@ type: building
 building: farm
 layout: building
 ---
-{% capture content %}
+{% infobox_building %}
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods (as long as they have normal growth behavior). Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
 
 The Farmer will also craft seeds, carved pumpkins, hay bales, [composted dirt](../../source/items/compost), and coarse dirt. They will only make items when they have been taught the recipes, receive a request for an item, and have the needed materials.
@@ -38,22 +38,13 @@ You can click on the arrows to increase the size of the area the Farmer will far
 | 3          | 3      |
 | 4          | 4      |
 | 5          | 5      |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
-## Farm GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Farm block by right-clicking on it, you will see a GUI with different options.   You start on the main tab:" image="../../assets/images/gui/farmgui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>List of Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/farmgui2.png" %}
-
-{% include contentblock/building/other-gui.html header="The third tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/farmgui3.png" %}
-  
-{% include contentblock/building/settings-gui.html key="farm" header="The fourth tab of the GUI is <strong>Settings</strong>. It has two buttons:" image="../../assets/images/gui/farmgui4.png" %}
-
-{% include contentblock/building/other-gui.html header="The fifth tab of the GUI is <strong>Fields</strong>." content="<ul><li><b>Assign Fields to Farmer:</b> Automatic by default. Here you can define if you prefer to manually assign the Fields for this Farmer.</li><li><b>Fields:</b>This is the list of recognized fields (recognizable by the crop in its GUI and its distance). If the field shows an X, that means it is already assigned to a Farmer and will list the name of the Farmer who takes care of that field. If the X is red and the button is not grayed out, that field belongs to the current Farmer and you can unassign it. If the field has a green check, then that field can be assigned to the Farmer. If the button is grayed out with a check, that means that no one is assigned to that field but the Farmer can not accept any more fields. </li></ul>" image="../../assets/images/gui/farmgui5.png" %}
-
-{% include contentblock/building/stock-gui.html buildingname="Farm" header="The sixth tab of the GUI is <strong>Minimum Stock</strong>. It has one button:" image="../../assets/images/gui/farmgui6.png"%}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_tasks order=3 %}
+{% building_gui_content_block_settings order=4 %}
+{% building_gui_content_block_fields order=5 %}
+{% building_gui_content_block_stock order=6 %}

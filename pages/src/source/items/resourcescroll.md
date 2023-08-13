@@ -9,7 +9,7 @@ layout: default
     <recipe>resourcescroll</recipe>
 </div>
 
-The resource scroll is an easy way to tell what one of your [Builders](../../source/workers/builder) needs. It's like a portable second page of the [Builder's Hut](../../source/buildings/builder)!
+The resource scroll is an easy way to tell what one of your {% worker_link builder %} needs. It's like a portable second page of the {% building_link builder %} !
 
 ## Using the Resource Scroll
 
@@ -25,4 +25,4 @@ Now when you right-click while holding the resource scroll, you will see all the
 <p style="text-align:center;"><img src="../../assets/images/gui/resourcescrollgui.png" alt="Resource Scroll GUI"></p>
 <br>
 
-If you go to a [Warehouse](../../source/buildings/warehouse) and right-click the resource scroll on the Warehouse hut, the resource scroll will show you how many of each item is currently stored in that Warehouse. This will be in green to the far right of each block.
+If you go to a {% building_link warehouse %} and right-click the resource scroll on the Warehouse hut, the resource scroll will show you how many of each item is currently stored in that Warehouse. This will be in green to the far right of each block.

@@ -26,6 +26,7 @@ archery:
     - archery
 bakery:
   name: Bakery
+  plural: Bakeries
   workers:
     - baker
   recipes:
@@ -233,8 +234,8 @@ enchantertower:
   recipes:
     - enchanter
 farm:
-  name: Farmer's Hut & Field
-  plural: Farmer Huts
+  name: Farmer's Hut
+  plural: Farmer's Huts
   workers:
     - farmer
   recipes:
@@ -244,7 +245,7 @@ farm:
       label: Recipe for Field
   settings:
     - name: Request Fertilizer
-      description: On by default.  This lets you choose whether the Farmer will request fertilizer.
+      description: On by default. This lets you choose whether the Farmer will request fertilizer.
     - name: Recipe Mode
       description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
       options:
@@ -275,13 +276,13 @@ fletcher:
         - name: Warehouse Stock
           description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 flowershop:
-  name: Florist's Hut
-  plural: Florist Huts
+  name: Flowershop
+  plural: Flowershops
   workers:
     - florist
   recipes:
     - flowershop
-forester:
+lumberjack:
   name: Forester's Hut
   plural: Forester's Huts
   workers:
@@ -368,6 +369,10 @@ house:
   plural: Houses
   recipes:
     - house
+  overrides:
+    11900:
+      name: Residence
+      plural: Residences
 library:
   name: Library
   plural: Libraries
@@ -384,7 +389,7 @@ mechanic:
     - mechanic
   settings:
     - name: Recipe Mode
-      description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
+      description: This is unlocked by researching Warehouse Master in the University. This allows you to change the order the hut chooses when it knows more than one recipe for an item.
       options:
         - name: Priority
           description: This is the default setting. The hut will try to use the recipe that is higher up in their recipe list first.
@@ -399,7 +404,7 @@ mine:
     - mine
   settings:
     - name: Fill Block
-      description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine.  The default is the cobblestone block.
+      description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine. The default is the cobblestone block.
     - name: Max Depth
       description: Here you can overide the default maximum depth of the Mine, if you don't want the Miner to dig as deep as the Mine level allows.  The default is -100 (minus sign is not visible in the window).
 mysticalsite:
@@ -471,6 +476,7 @@ restaurant:
     - restaurant
 sawmill:
   name: Sawmill
+  plural: Sawmills
   workers:
     - carpenter
   recipes:
@@ -515,6 +521,7 @@ sifter:
     - sifter
 smeltery:
   name: Smeltery
+  plural: Smelteries
   workers:
     - smelter
   recipes:

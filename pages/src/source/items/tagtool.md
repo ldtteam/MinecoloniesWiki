@@ -40,7 +40,7 @@ The Tag Tool is a creative-only item used to help build custom [schematics](../.
 
 The Tag Anchor Block is also a creative-only item, whose sole purpose is to act as the tag-containing anchor for non-upgradeable decorations. There should typically be at most one of these in any given schematic. (It is possible to include more than one, but only one can be the actual anchor, and that's the only one that matters.)
 
-When built by a [Builder](../../source/workers/builder) or pasted normally, the Tag Anchor Block will disappear. As such it is only useful for tags that affect the build itself (but no other tags are interesting for decorations anyway). When pasting the schematic for editing, ensure that the left paste option (or "Schematic Paste", for 1.19) is used to retain the block (similar to other [placeholder blocks](../../source/items/placeholderblocks)).
+When built by a {% worker_link builder %} or pasted normally, the Tag Anchor Block will disappear. As such it is only useful for tags that affect the build itself (but no other tags are interesting for decorations anyway). When pasting the schematic for editing, ensure that the left paste option (or "Schematic Paste", for 1.19) is used to retain the block (similar to other [placeholder blocks](../../source/items/placeholderblocks)).
 
 In 1.19+ only (with Structurize 456+), the Tag Anchor can "absorb" another block by using Pick Block (middle-click by default) on a block with the anchor in hand. After placing this special anchor in the world, scanning, and being built, it will turn into the absorbed block instead of into air. This is primarily intended for cases where you want the anchor position somewhere specific but need a non-air block in that position.
 
@@ -74,7 +74,7 @@ The following tags are currently implemented (more may be added from time to tim
     
     This is intended to be placed on buildings or decorations that are not intended to be built on their own, but rather only as children of some other parent building/decoration.
     
-    The [Barracks Tower](../../source/buildings/barrackstower) is implicitly invisible even if not tagged as such, for backwards compatibility.
+    The {% building_link barrackstower %} is implicitly invisible even if not tagged as such, for backwards compatibility.
 
 * Building-specific tags
 

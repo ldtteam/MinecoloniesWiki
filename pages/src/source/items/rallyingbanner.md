@@ -15,7 +15,7 @@ The rallying banner will summon your Guards to you when used. It's especially us
 
 ## Using the Rallying Banner
 
-First, shift + right-click while holding the banner on a [Guard Tower](../../source/buildings/guardtower) or [Barracks Tower](../../source/buildings/barrackstower). This assigns the Guards in that tower to the rallying banner. (Shift + right-click on the block again to remove the tower.)
+First, shift + right-click while holding the banner on a {% building_link guardtower %} or {% building_link barrackstower %}. This assigns the Guards in that tower to the rallying banner. (Shift + right-click on the block again to remove the tower.)
 
 Then, shift + right-click on any other block to summon the Guards! (Shift + right-click again to dismiss them.)
 

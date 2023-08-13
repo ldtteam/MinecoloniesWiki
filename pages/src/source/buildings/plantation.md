@@ -3,8 +3,8 @@ type: building
 building: plantation
 layout: building
 ---
-{% capture content %}
-### Note: The Plantation cannot be built until you have a level 3 [Farm](../../source/buildings/farm) (or three level 1 Farms, or another equivalent) and have finished the research in the [University](../../source/buildings/university).
+{% infobox_building %}
+### Note: The Plantation cannot be built until you have a level 3 {% building_link farm %} (or three level 1 Farms, or another equivalent) and have finished the research in the {% building_link university %}.
 <br>
 
 The Plantation is where the Planter will grow either sugar cane, bamboo, or cactus.
@@ -30,18 +30,11 @@ The Planter can also craft paper, books, sugar, and anything made with bamboo. T
 | 3              | 40                |
 | 4              | 80                |
 | 5              | 160               |
-{% endcapture %}
-{% capture infobox %}
-{% include infobox/building.html %}
-{% endcapture %}
-{% include infobox/wrapper.html content=content infobox=infobox %}
+{% endinfobox_building %}
 
-## Plantation GUI
+## {% building %} GUI
 
-{% include contentblock/building/main-gui.html header="When accessing the Plantation hut block by right-clicking on it, you will see a GUI with different options. You start on the main tab:" image="../../assets/images/gui/plantationgui1.png" %}
-
-{% include contentblock/building/other-gui.html header="The second tab of the GUI is <strong>Crafting Recipes</strong>." content="Here you can see all the crafting recipes this hut knows.  The arrows allow you to move them up or down in priority.  You are also able to disable specific recipes.<p><strong> Teach Recipe:</strong> When clicking teach recipe, it opens a crafting grid which allows you to teach this hut recipes (not the worker).</p>" image="../../assets/images/gui/plantationgui2.png" %}
-
-{% include contentblock/building/other-gui.html header="The third tab of the GUI is <strong>Tasks</strong>." content="This tab shows you any requests the hut is working on, and where it is going." image="../../assets/images/gui/plantationgui3.png" %}
-
-{% include contentblock/building/settings-gui.html key="plantation" header="The fourth tab of the GUI is <strong>Settings</strong>." image="../../assets/images/gui/plantationgui4.png" %}
+{% building_gui_content_block_main order=1 %}
+{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_tasks order=3 %}
+{% building_gui_content_block_settings order=4 %}

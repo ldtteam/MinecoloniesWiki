@@ -9,11 +9,11 @@ layout: default
     <recipe>clipboard</recipe>
 </div>
 
-The clipboard is an easy way to see all the requests your workers have (that are not being fulfilled by a [Courier](../../source/workers/courier)).
+The clipboard is an easy way to see all the requests your workers have (that are not being fulfilled by a {% worker_link courier %}).
 
 ## Using the Clipboard
 
-When you first make the clipboard and right-click anywhere, you will get a message to sneak + right-click on the [Town Hall](../../source/buildings/townhall) to register the clipboard.
+When you first make the clipboard and right-click anywhere, you will get a message to sneak + right-click on the {% building_link townhall %} to register the clipboard.
 
 <br>
 <p style="text-align:center;"><img src="../../assets/images/misc/clipboardinitmessage.png" alt="Clipboard Initial Message"></p>
@@ -24,14 +24,14 @@ After you register the clipboard, this message will appear:
 <p style="text-align:center;"><img src="../../assets/images/misc/clipboardregistered.png" alt="Clipboard Registered Message"></p>
 <br>
 
-Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a [Courier](../../source/workers/courier)) as long as you're close to your colony!
+Now when you right-click while holding the clipboard, you will see all your citizens' requests on the clipboard (that are not being fulfilled by a {% worker_link courier %}) as long as you're close to your colony!
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui1.png" alt="Clipboard GUI"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/items/clipboardgui1.png" alt="Clipboard GUI"></p>
 <br>
 
 If you click on the exclamation mark in the top right, you will only see requests for things that workers need *right now.*
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui2.png" alt="Clipboard GUI Important Requests"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/items/clipboardgui2.png" alt="Clipboard GUI Important Requests"></p>
 <br>

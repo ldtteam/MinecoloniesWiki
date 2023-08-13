@@ -10,6 +10,9 @@ $mcurl: "https://minecolonies.com";
 // Crafting grid styles
 @import "crafting-grid.scss";
 
+// Infobox styles
+@import "infobox.scss";
+
 .box {
   display: inline-block;
 }
@@ -43,64 +46,6 @@ $mcurl: "https://minecolonies.com";
 
 .footnote {
   text-align: center;
-}
-
-.infobox {
-  clear: right;
-  float: right;
-  margin: .5em 0;
-  padding: 1.5em;
-
-  .infobox-content {
-    padding: .5em;
-  }
-
-  .infobox-image {
-    padding: .5em;
-  }
-
-  .infobox-recipe-row {
-    margin-bottom: .5em;
-
-     &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.infobox .section-header {
-  border-bottom-width: 2px;
-  border-color: black;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-style: solid;
-  border-top-width: 2px;
-}
-
-.infobox .section-text p:last-child {
-  margin-bottom: 0;
-}
-
-.infobox .traitp {
-  background-color: gray;
-  color: #00be00;
-}
-
-.infobox .traits {
-  background-color: gray;
-  color: #fefe3f;
-}
-
-.infobox .worker-image > div {
-  flex: 1;
-
-  & > img {
-    padding: .25em;
-  }
-}
-
-.infobox img {
-  padding-bottom: .2em;
 }
 
 .patreon {

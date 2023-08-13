@@ -26,15 +26,15 @@ To use a scroll, hold down right-click with the scroll in your main hand. Scroll
 
 ## Ultrasafe Colony Teleport Scroll
 
-This scroll will teleport you to your [Town Hall](../../source/buildings/townhall) when used. You must register it to your Town Hall first by shift + right-clicking on the Town Hall hut block.
+This scroll will teleport you to your {% building_link townhall %} when used. You must register it to your Town Hall first by shift + right-clicking on the Town Hall hut block.
 
-It is crafted by the [Enchanter](../../source/workers/enchanter) with 3 paper, 1 compass, and 1 [build tool](../../source/items/buildtool).
+It is crafted by the {% worker_link enchanter %} with 3 paper, 1 compass, and 1 [build tool](../../source/items/buildtool).
 
 ## Ultrasafe Colony Group Teleport Scroll
 
-This scroll will teleport you and any players near you to your [Town Hall](../../source/buildings/townhall) when used. You must register it to your Town Hall first by shift + right-clicking on the Town Hall hut block.
+This scroll will teleport you and any players near you to your {% building_link townhall %} when used. You must register it to your Town Hall first by shift + right-clicking on the Town Hall hut block.
 
-It is crafted by the Enchanter with 3 Ultrasafe Colony Teleport Scrolls. For the Enchanter to unlock this recipe, their [Enchanter's Tower](../../source/buildings/enchantertower) must be at least level 2.
+It is crafted by the Enchanter with 3 Ultrasafe Colony Teleport Scrolls. For the Enchanter to unlock this recipe, their {% building_link enchantertower %} must be at least level 2.
 
 ## Sacred Scroll of Regeneration
 
@@ -42,7 +42,7 @@ This scroll applies the regeneration effect to you and any citizens near you. It
 
 ## Spatial Guard Reinforcements Scroll
 
-Calls Guards to you for a limited time. Like the [Rallying Banner](../../source/items/rallyingbanner), but can only summon one tower of Guards at a time and has a finite time period. Must be registered to your Town Hall and to a [Guard Tower](../../source/buildings/guardtower)/[Barracks Tower](../../source/buildings/barrackstower) (register it by shift + right-clicking on the hut block).
+Calls Guards to you for a limited time. Like the [Rallying Banner](../../source/items/rallyingbanner), but can only summon one tower of Guards at a time and has a finite time period. Must be registered to your Town Hall and to a {% building_link guardtower %}/{% building_link barrackstower %}  (register it by shift + right-clicking on the hut block).
 
 This scroll is crafted by the Enchanter with 1 Ultrasafe Colony Teleport Scroll, 5 lapis lazuli, 1 ender pearl, and 1 paper. For the Enchanter to unlock this recipe, you must have the More Scrolls [research](../../source/systems/research) completed.
 

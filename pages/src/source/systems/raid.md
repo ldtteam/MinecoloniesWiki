@@ -13,7 +13,7 @@ Raids will only spawn at the start of a night. There will be a chat message givi
 
 <img src="../../assets/images/misc/multiRaidBars.png" alt="Multiple barbarian raids in progress">
 
-If you have a [Barracks](../../source/buildings/barracks) at level 3 or higher, you can hire spies to make raiders glow. This can help you find that one pesky raider that got stuck or is hiding and finish the raid.
+If you have a {% building_link barracks %} at level 3 or higher, you can hire spies to make raiders glow. This can help you find that one pesky raider that got stuck or is hiding and finish the raid.
 
 ## Types of Raids
 The type of raiders that can spawn are determined by the biome in which they spawn.

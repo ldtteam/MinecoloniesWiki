@@ -2,15 +2,13 @@ class BuildingLinkTag < BaseTag
     def render_tag(context, arguments)
         building_key = arguments.unkeyed[0]
         building_plural = arguments.keyed["plural"] ||= false
+        building_class = arguments.keyed["class"] ||= ""
 
-        building = BuildingUtils.getBuildingKey(context, arguments.unkeyed[0])
-        building_info = BuildingUtils.getBuildingInfo(context, building)
-        building_name = building_info[building_plural ? "plural" : "name"]
+        building = BuildingUtils.getBuildingKey(context.registers[:page], arguments.unkeyed[0])
+        building_names = BuildingUtils.getBuildingNames(context.registers[:site], building, building_plural)
 
-        if arguments.keyed["class"].nil?
-            return "<a href='/source/buildings/#{building}'>#{building_name}</a>"
-        else
-            return "<a href='/source/buildings/#{building}' class='#{arguments.keyed["class"]}'>#{building_name}</a>"
-        end
+        building_names.collect do |version|
+            VersionRenderer.renderVersionContent(version["versions"], "<a href='/source/buildings/#{building}' class='#{CommonUtils.cn(building_class)}'>" + version["name"] + "</a>")
+        end.join("")
     end
 end

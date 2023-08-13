@@ -2,9 +2,9 @@
 layout: default
 ---
 {% capture title %}
-  {%- include functions/title.html -%}
+  {%- building -%}
 {% endcapture %}
 {% assign title = title | strip %}
-{{- "# " | append: title | markdownify -}}
+<h1>{%- building -%}</h1>
 
 {{- content -}}

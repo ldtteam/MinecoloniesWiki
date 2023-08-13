@@ -10,13 +10,13 @@ Thankfully, there’s the Request System! Citizens will automatically ask for th
 
 ## Getting Started
 
-The request system is based on two components: the [Warehouse](../../source/buildings/warehouse) — which stores all of your colony’s resources — and the [Couriers](../../source/workers/courier) — who pick up and drop off items between buildings. The Couriers wait in the Warehouse until a request comes in.
+The request system is based on two components: the {% building_link warehouse %} — which stores all of your colony’s resources — and the {% worker_link courier %} — who pick up and drop off items between buildings. The Couriers wait in the Warehouse until a request comes in.
 
 When a citizen realizes that they need an item, they’ll first look in their inventory, hut block, and [Racks](../../source/items/rack) in their hut. If they cannot find the item in these locations, they’ll then make a request automatically. If this item is in the Warehouse, a Courier will then take it from the Warehouse and deliver it to your citizen automatically.
 
 ## Crafting Requests
 
-But what if you don’t have that item in your Warehouse? In that case, your citizens will check who is able to make that item and attempt to ask them to make it. For example, if your builder needs some oak stairs and there aren’t any in the Warehouse, your [Carpenter](../../source/workers/carpenter) will check if they know how to make oak stairs. If they do, then they’ll request some oak planks to turn into stairs. If there aren’t any oak planks but the carpenter also knows how to make them from oak logs, then they’ll request oak logs to turn into oak planks to turn into oak stairs. Your citizens will keep making and trying to fulfill requests until they have the items they need or they cannot fulfill a request given their jobs and knowledge. As such, it’s convenient to get as many citizens working different jobs as you can to fulfill as many of their requests as they can automatically!
+But what if you don’t have that item in your Warehouse? In that case, your citizens will check who is able to make that item and attempt to ask them to make it. For example, if your builder needs some oak stairs and there aren’t any in the Warehouse, your {% worker_link carpenter %} will check if they know how to make oak stairs. If they do, then they’ll request some oak planks to turn into stairs. If there aren’t any oak planks but the carpenter also knows how to make them from oak logs, then they’ll request oak logs to turn into oak planks to turn into oak stairs. Your citizens will keep making and trying to fulfill requests until they have the items they need or they cannot fulfill a request given their jobs and knowledge. As such, it’s convenient to get as many citizens working different jobs as you can to fulfill as many of their requests as they can automatically!
 
 ## Manual Requests
 <!-- Put a picture of the red gear for manual requests here!-->
@@ -27,10 +27,10 @@ What if your builder asks for oak stairs but you don’t have a carpenter yet? I
 Of course, being the busy mayor you are, you’ll want to be able to see all of your citizens’ requests without running to each one. For this, there’s the [Clipboard](../../source/items/clipboard). Simply right-click the air with your clipboard and you can see all of your citizens’ requests, no matter where you are (as long as you're close to your colony)!
 
 <br>
-<p style="text-align:center;"><img src="../../assets/images/gui/clipboardgui1.png" alt="Clipboard GUI"></p>
+<p style="text-align:center;"><img src="../../assets/images/gui/items/clipboardgui1.png" alt="Clipboard GUI"></p>
 <br>
 
-Some of your citizens will always have constant requests (e.g., the [Smelter](../../source/workers/smelter) requesting ores). Clicking the "Show Important Requests Only" hides these constant requests, so you can focus on the requests that bottleneck your citizens' work.
+Some of your citizens will always have constant requests (e.g., the {% worker_link smelter %} requesting ores). Clicking the "Show Important Requests Only" hides these constant requests, so you can focus on the requests that bottleneck your citizens' work.
 
 ## Stash/Postbox
 

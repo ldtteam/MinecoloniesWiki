@@ -11,6 +11,6 @@
 
 {% for version in site.data.versions %}
   body[data-version='{{ version["order"] }}'] [data-versions*='{{ version["order"] }}'] {
-    display: inherit;
+    display: inline-block;
   }
 {% endfor %}

@@ -11,9 +11,9 @@ layout: default
 
 <br>
 
-Mistletoe is an item that [Alchemists](../../source/workers/alchemist) can gather randomly with shears.
+Mistletoe is an item that {% worker_link alchemist %} can gather randomly with shears.
 <br>
 
 ## Using the Mistletoe
 
-Mistletoe is used by Alchemists to craft magic potions for [Druids](../../source/workers/druid). These potions increase the strength and duration of Druid potions.
+Mistletoe is used by Alchemists to craft magic potions for {% worker_link druid %}. These potions increase the strength and duration of Druid potions.

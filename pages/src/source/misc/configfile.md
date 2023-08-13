@@ -20,7 +20,7 @@ The following will be for the 1.16.5 and 1.18.2 config files.
 | Setting | Default | Description |
 | enablecitizenvoices | true | Citizens will talk. Set to false to turn off citizens talking. |
 | neighborbuildingrendering | true | By default, when placing a schematic near other buildings, the already-placed buildings will show as if they were at level 5 and have a blue outline around them. You can disable that by setting this to false. |
-| colonyteamborders | true | The colony border will be the same as the colony's team color (set in the [Town Hall](../../source/buildings/townhall)). Setting this to false will set your town border to white, and all other town borders to red. |
+| colonyteamborders | true | The colony border will be the same as the colony's team color (set in the {% building_link townhall %}). Setting this to false will set your town border to white, and all other town borders to red. |
 
 ### Server-Side Config
 
@@ -40,7 +40,7 @@ The following will be for the 1.16.5 and 1.18.2 config files.
 | allowinfinitecolonies | false | Allows players to abandon their colony to start a new one. **Note:** This is buggy! |
 | allowotherdimcolonies | true | This allows you to create colonies in the Nether, the End, and modded dimensions. |
 | citizenrespawninterval | 60 | Changes the amount of time (ticks) before a new citizen spawns. This only applies when a colony is under the initial citizen number, however. | 
-| maxcitizenpercolony | 250 | The maximum limit of citizens that can exist in each colony. If you're below this limit and you can't get more citizens, you probably need to complete the [research](../../source/systems/research) in the [university](../../source/buildings/university). |
+| maxcitizenpercolony | 250 | The maximum limit of citizens that can exist in each colony. If you're below this limit and you can't get more citizens, you probably need to complete the [research](../../source/systems/research) in the {% building_link university %} . |
 | builderbuildblockdelay | 15 | The delay (ticks) for placing blocks. Applies to Builders, Miners, and other colonists that place blocks. |
 | blockminingdelaymodifier | 500 | The delay (ticks) for breaking blocks. Applies to Builders, Miners, and other colonists that mine blocks. |
 | enableindevelopmentfeatures | false | Rnables some features geared toward developers. | 
@@ -50,18 +50,18 @@ The following will be for the 1.16.5 and 1.18.2 config files.
 | allowglobalnamechanges | 1 | Sets if players can rename citizens with name tags. To set which players can change the names, see "Special Permissions Group" below. |
 | holidayfeatures | true | Citizens get some special looks around holidays. Turn off this option to disable that. |
 | updaterate | 1 | Basically, how fast citizens think. Increasing it decreases how fast they "think", but improves performance. If you increase it too much, your citizens will take hours to do anything! |
-| dirtfromcompost | 1 | How many dirt blocks the [Composter](../../source/workers/composter) can get from filling one [compost barrel](../../source/items/compostbarrel). |
+| dirtfromcompost | 1 | How many dirt blocks the {% worker_link composter %} can get from filling one [compost barrel](../../source/items/compostbarrel). |
 | luckyblockchance | 1 | The Miner has a chance to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). Change this to change their chance. This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".) |
 | restrictbuilderunderground | true | By default, the Builder works slower when building underground. Disable this to make them work at the same rate both above and belowground. This can be useful for underground colonies. |
-| minthleveltoteleport | 3 | By default, you can teleport to allied colonies from your [Town Hall](../../source/buildings/townhall). However, it requires a certain Town Hall level or higher (default 3). Here, you can change level. |
+| minthleveltoteleport | 3 | By default, you can teleport to allied colonies from your {% building_link townhall %}. However, it requires a certain Town Hall level or higher (default 3). Here, you can change level. |
 | suggestbuildtoolplacement | true | By default, when trying to place a hut without the [build tool](../../source/items/buildtool), a window will pop up suggesting you use it. Disabling this option will disable that window. |
 | foodmodifier | 1.0 | The multiplier for when citizens eat food.  Increasing this makes the citizens require more food. | 
 | diseasemodifier | 5 | How common diseases are. Increasing this makes citizens get sick less often. | 
 | forceloadcolony | false | If an owner/officer is inside the colony and this is enabled, some of the rest of the colony chunks will be kept loaded. Useful for large colonies. Set how many chunks are loaded with the below option. |
 | colonyloadstrictness | 3 | Only takes effect if the above option is enabled. Set this higher to decrease the number of loaded chunks (the innermost chunks will be loaded first). Set to 1 to load all chunks. |
-| badvisitorchance | 2 | Sometimes, a [Tavern](../../source/buildings/tavern) visitor will run off with the resources you give them instead of joining your colony. This option sets the percentage chance for them to do that. |
+| badvisitorchance | 2 | Sometimes, a {% building_link tavern %} visitor will run off with the resources you give them instead of joining your colony. This option sets the percentage chance for them to do that. |
 | generatesupplyloot | true | By default, [supply ships and camps](../../source/items/supplycampandship) will generate in loot chests. You can disable that by setting this to false. |
-| maxtreesize | 400 | The maximum logs in one tree for the [Forester](../../source/workers/forester) to detect it as a tree. |
+| maxtreesize | 400 | The maximum logs in one tree for the {% worker_link forester %} to detect it as a tree. |
 | nosupplyplacementrestrictions | false | Disables supply camp placing restrictions.  This is intended for skyworlds and similar worldgen. |
 | skyraiders | false | Raiders will spawn in the sky if this is enabled. This is intended for skyworlds and similar worldgen. |
   
@@ -109,8 +109,8 @@ The following will be for the 1.16.5 and 1.18.2 config files.
 | mobattackcitizens | true | By default mobs will attack citizens. |
 | shouldraiderbreakdoors | true | Whether or not raiders can break through doors. |
 | citizencallforhelp | true | By default, citizens will call for nearby guards if attacked |
-| rangerdamagemult | 1.0 | Attack damage multiplier for [Archer](../../source/workers/archer). |
-| knightdamagemult | 1.0 | Attack damage multiplier for [Knights](../../source/workers/knight).  |
+| rangerdamagemult | 1.0 | Attack damage multiplier for {% worker_link archer %}. |
+| knightdamagemult | 1.0 | Attack damage multiplier for {% worker_link knight %}.  |
 | guardhealthmult | 1.0 | Health multiplier for all Guards. |
 | pvp_mode | false | Enabling this option turns on MineColonies PvP mode. Colonies can be destroyed and griefed under certain conditions, which can be set in the Enemies permission settings in the Town Hall.  **Note:** PvP mode has not been fleshed out yet.
 | daysuntilpirateshipsdespawn | 3 | Days until the pirate ships despawn |

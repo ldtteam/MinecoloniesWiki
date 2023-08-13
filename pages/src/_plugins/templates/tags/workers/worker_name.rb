@@ -5,6 +5,7 @@ class WorkerNameTag < BaseTag
 
         worker = WorkerUtils.getWorkerKey(context.registers[:page], arguments.unkeyed[0])
         worker_info = WorkerUtils.getWorkerInfo(context.registers[:site], worker)
-        return worker_info[worker_plural ? "plural" : "name"]
+        
+        worker_info[worker_plural ? "plural" : "name"]
     end
 end

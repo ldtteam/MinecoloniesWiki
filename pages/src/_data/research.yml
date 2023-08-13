@@ -1676,7 +1676,7 @@ trees:
       - name: Woodwork
         requirements:
           - type: building
-            building: forester
+            building: lumberjack
             level: 3
           - type: item
             item: Oak planks
