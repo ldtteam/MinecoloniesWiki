@@ -348,6 +348,7 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | Level 5 | Very Difficult - End |
 
 {% version "1.19.2" after=true %}
+
 ## Plantation Fields
 
 In 1.19.2 and beyond, the plantation has been changed to include fields, just like the farmer. However, unlike the farmer, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the planter to do their work successfully.
