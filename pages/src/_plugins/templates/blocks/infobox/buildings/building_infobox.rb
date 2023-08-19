@@ -56,7 +56,9 @@ class BuildingInfoBoxBlock < BaseBlock
         end.join(""))
 
         recipes_array = building_info["recipes"] || []
-        blocks.push(recipes_array.map.with_index { |recipe, idx| TEMPLATE_RECIPE % [idx == 0 ? recipes_array.length > 1 ? "Recipes:" : "Recipe:" : "", recipe] }.join(""))
+        if recipes_array.length > 0 then
+            blocks.push(recipes_array.map.with_index { |recipe, idx| TEMPLATE_RECIPE % [idx == 0 ? recipes_array.length > 1 ? "Recipes:" : "Recipe:" : "", recipe] }.join(""))
+        end
 
         research, research_tree = ResearchLookup.get_building_unlock(context.registers[:site], building)
         research_text = "No research is required for this building."
