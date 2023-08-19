@@ -1,6 +1,6 @@
 alchemist:
-  name: Alchemist Tower
-  plural: Alchemist Towers
+  name: Alchemist Laboratory
+  plural: Alchemist Laboratories
   workers:
     - alchemist
   recipes:
@@ -60,24 +60,24 @@ barrackstower:
       description: This is where you can choose if you want the Guard to patrol, follow, or guard.
       options:
         - name: Patrol
-          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>.
+          description: The guard will patrol an area you designate in **Patrol Settings**.
         - name: Guard
-          description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate the guard location.
+          description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate the guard location.
         - name: Follow
-          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>.
+          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
     - name: Retreat on low health
       description: Here you can choose if the Guard will attempt to retreat when they have low health.
     - name: Hire Trainee
-      description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility (<a href="../../source/buildings/archery">Archery</a> for Archers and <a href="../../source/buildings/combatacademy"> Combat Academy</a> for knights) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the <a href="../../source/buildings/townhall"> Town Hall</a> GUI.
+      description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility ({% building_link archery %} for {% worker_link archer plural=true %} and {% building_link combatacademy %} for {% worker_link knight plural=true %}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building_link townhall %} GUI.
     - name: Patrol Mode
       description: This is where you can choose how you want the Guard to patrol.
       options:
         - name: Automatic
           description: The Guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
         - name: Manual
-          description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
+          description: You can set the patrol route when you click on **Set Positions**. You will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
     - name: Follow Mode
-      description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
+      description: This is where you can choose how you want the Guard to follow you. Only available when the **Task** is set to **Follow**. If you choose **Loose Grouping**, the Guard will stay close to you, but not as close as if you choose **Tight Grouping**.
 blacksmith:
   name: Blacksmith's Hut
   plural: Blacksmith Huts
@@ -102,7 +102,7 @@ builder:
     - builder
   settings:
     - name: Builder Mode
-      description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the <a href="../../source/buildings/townhall">Town Hall</a> GUI's <a href="#workorders">work orders</a> tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.
+      description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the {% building_link townhall %} GUI's work orders tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.
     - name: Recipe Mode
       description: This is unlocked by researching Warehouse Master in the University.  This allows you to change the order the hut chooses when it knows more than one recipe for an item.
       options:
@@ -113,14 +113,14 @@ builder:
     - name: Build Method
       description: This is unlocked by researching Builder Modes in the University.  This allows you to change how the builder builds, reducing pathfinding and speeding up builds (especially large builds).  Any one of these can be set in the structurize config, but once the "Builder Modes" research is done in the university, the one set here takes precedence.
       options:
-        - name: default
+        - name: Default
           description: The default row-by-row pattern.
         - name: inwardcircle
           description: Blocks are placed like a square spiral from the outside in.
         - name: inwardcircleheight#
           description: This will also make spirals from the outside in, but each spiral gets built upward 1 to 4 times, before the builder will start the next square inward.
         - name: hilbert
-          description: hilbert does <a href="https://en.wikipedia.org/wiki/Hilbert_curve" target="_blank">this pattern</a>, with a little difference to work for rectangular areas.
+          description: hilbert does [this pattern](https://en.wikipedia.org/wiki/Hilbert_curve){:target="_blank"}, with a little difference to work for rectangular areas.
         - name: random
           description: Blocks are placed in an entirely random order. Note that this slows down builds.
     - name: Fill Block
@@ -239,10 +239,8 @@ farm:
   workers:
     - farmer
   recipes:
-    - recipe: farm
-      label: Recipe for Farm
-    - recipe: field
-      label: Recipe for Field
+    - farm
+    - field
   settings:
     - name: Request Fertilizer
       description: On by default. This lets you choose whether the Farmer will request fertilizer.
@@ -337,26 +335,26 @@ guardtower:
       description: This is where you can choose if you want the Guard to patrol, follow, or guard.
       options:
         - name: Patrol
-          description: The guard will patrol an area you designate in <strong>Patrol Settings</strong>.
+          description: The guard will patrol an area you designate in **Patrol Settings**.
         - name: Guard
-          description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate the guard location.
+          description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate the guard location.
         - name: Follow
-          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in <strong>Follow Settings</strong>.
+          description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
         - name: Patrol Mine
-          description: The Guard will patrol the level of a <a href="../../source/buildings/mine">Mine</a>. You must also assign that level in the Mine GUI.
+          description: The Guard will patrol the level of a {% building_link mine %}. You must also assign that level in the Mine GUI.
     - name: Retreat on low health
       description: Here you can choose if the Guard will attempt to retreat when they have low health.
     - name: Hire Trainee
-      description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility (<a href="../../source/buildings/archery">Archery</a> for Archers and <a href="../../source/buildings/combatacademy"> Combat Academy</a> for knights) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the <a href="../../source/buildings/townhall"> Town Hall</a> GUI.
+      description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility ({% building_link archery %} for {% worker_link archer plural=true %} and {% building_link combatacademy %} for {% worker_link knight plural=true %}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building_link townhall %} GUI.
     - name: Patrol Mode
       description: This is where you can choose how you want the Guard to patrol.
       options:
         - name: Automatic
           description: The Guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
         - name: Manual
-          description: You can set the patrol route when you click on <b>Set Positions</b>. You will be taken to the <strong>Selection Tools</strong> tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
+          description: You can set the patrol route when you click on **Set Positions**. You will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
     - name: Follow Mode
-      description: This is where you can choose how you want the Guard to follow you. If you choose <b>Loose Grouping</b>, the Guard will stay close to you, but not as close as if you choose <b>Tight Grouping</b>.
+      description: This is where you can choose how you want the Guard to follow you. If you choose **Loose Grouping**, the Guard will stay close to you, but not as close as if you choose **Tight Grouping**.
 hospital:
   name: Hospital
   plural: Hospitals
@@ -573,7 +571,7 @@ tavern:
   plural: Taverns
   singular: true
   recipes:
-    - recipe: tavern
+    - tavern
 townhall:
   name: Town Hall
   plural: Town Halls

@@ -12,8 +12,8 @@ The {% building %} is where the {% worker forester %} will go in between choppin
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
-{% building_gui_content_block_itemlist order=3 header="saplings" image_key="saplings" image_alt="Saplings list" %}
+{% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
+{% building_gui_content_block_itemlist order=3 header="saplings" image_key="saplings" image_alt="Saplings list" default_on=true %}
 It shows a list of recognized saplings the {% worker forester %} can work with, even modded ones (if coded correctly).
 Here you can turn on or off which type of trees the {% worker forester %} will chop down.
 {% endbuilding_gui_content_block_itemlist %}

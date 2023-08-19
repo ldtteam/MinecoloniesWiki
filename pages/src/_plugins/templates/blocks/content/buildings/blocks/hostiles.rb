@@ -14,11 +14,11 @@ class BuildingGuiContentBlockHostiles
     def content_template(context, arguments)
         "%s
 
-You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to on by default.
+You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to **on** by default.
 
 There are also two controls on the page:
 - The black box at the top is a search field.
-- Reset to default allows you
+- Reset to default allows you to reset everything to **on**.
 
 %s"
     end

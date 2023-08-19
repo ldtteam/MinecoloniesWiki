@@ -9,9 +9,19 @@ class BuildingInfoBoxBlock < BaseBlock
 </div>
 "
 
-    TEMPLATE_RECIPE = "<div class=\"row section-text text-center infobox-recipe-row\">
-    <div class=\"col-12\">
+    TEMPLATE_RECIPE = "<div class=\"row align-items-center text-left section-text infobox-recipe-row\">
+    <div class=\"col\">
+        <p><b>%s</b></p>
+    </div>
+    <div class=\"col\">
         <recipe>%s</recipe>
+    </div>
+</div>
+"
+
+    TEMPLATE_RESEARCH = "<div class=\"row text-left section-text\">
+    <div class=\"col\">
+        <p><b>Research:</b> %s</p>
     </div>
 </div>
 "
@@ -46,7 +56,14 @@ class BuildingInfoBoxBlock < BaseBlock
         end.join(""))
 
         recipes_array = building_info["recipes"] || []
-        blocks.push(recipes_array.map { |recipe| TEMPLATE_RECIPE % recipe }.join(""))
+        blocks.push(recipes_array.map.with_index { |recipe, idx| TEMPLATE_RECIPE % [idx == 0 ? recipes_array.length > 1 ? "Recipes:" : "Recipe:" : "", recipe] }.join(""))
+
+        research, research_tree = ResearchLookup.get_building_unlock(context.registers[:site], building)
+        research_text = "No research is required for this building."
+        unless research.nil? then
+            research_text = "You must research <a href=\"/source/systems/research##{research_tree["name"].gsub(/\s+/, "").downcase}#{research["name"].gsub(/\s+/, "").downcase}\">\"#{research["name"]}\"</a> to unlock this building!"
+        end
+        blocks.push(TEMPLATE_RESEARCH % research_text)
 
         InfoBoxBlock.render_info_box(context, header, images, blocks, content)
     end

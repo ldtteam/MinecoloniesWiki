@@ -16,17 +16,28 @@ The Nether Mine is where the {% worker_link netherminer %} works. The Nether Min
 
 The Nether Miner can also craft lava buckets.
 
-**Note:** The portal in the Nether Mine will transport players to the Nether.  However, the Nether Miner does not actually travel into the Nether, nor do they actually mine any blocks in the Nether.
+**Note:** The portal in the Nether Mine will transport players to the Nether. However, the Nether Miner does not actually travel into the Nether, nor do they actually mine any blocks in the Nether.
 {% endinfobox_building %}
 
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
 {% building_gui_content_block_stock order=3 %}
 {% building_gui_content_block_settings order=4 %}
 {% building_gui_content_block_itemlist order=5 header="food" image_key="food" image_alt="Food list" %}
-Listed here are items that can be used by the {% worker netherminer %} as food while they are traveling in the Nether.
+Listed here are items that can be used by the {% worker netherminer %} as food while they are traveling in the nether.
 Simply turn on any that you want your {% worker netherminer %} to eat, and a {% worker_link courier %} will deliver those items when they need food.
 {% endbuilding_gui_content_block_itemlist %}
 {% building_gui_content_block_tasks order=6 %}
+{% building_gui_content_block_custom order=7 header="expedition log" image_key="expeditions" image_alt="Expeditions log" %}
+Here it will show the current expedition the {% worker netherminer %} is currently on.
+From top to bottom the following is shown:
+- The name of the {% worker netherminer %} going on the expedition.
+- The status of the adventure.
+- The {% worker netherminer %} their current health.
+- The {% worker netherminer %} their current saturation.
+- The {% worker netherminer %} their equipment.
+- All the enemies the {% worker netherminer %} defeated on their expedition.
+- All the resources the {% worker netherminer %} gathered on their expedition.
+{% endbuilding_gui_content_block_custom %}

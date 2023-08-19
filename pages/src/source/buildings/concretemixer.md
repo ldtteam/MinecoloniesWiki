@@ -13,6 +13,6 @@ The Concrete Mixer will craft all types of concrete powder and place them in flo
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
 {% building_gui_content_block_tasks order=3 %}
 {% building_gui_content_block_settings order=4 %}

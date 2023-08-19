@@ -61,14 +61,14 @@ Alternatively, if you have the proper permissions, you can use [commands](../../
 {% building_gui_content_block_custom image_key="th_information" image_alt="Townhall information" cols=6 %}
 **Page 1:** Here you will see some statistics on your citizens, like the number of citizens you have out of your max. Green is less than 90% of your max, orange is above 90%, and red is full. If it's red, hovering over the numbers will show what you need to do to get more citizens. The page also shows how many of each type of worker you have.
 
-**Page 2:** Here you will see the overall happiness of the colony's citizens and any events that happened within the colony (the newest events are at the bottom). You can click the button to switch to a permission log, which will show any illegal actions that happened in the colony (like if a player tried to break a block when they aren't allowed to). Clicking the plus next to an illegal action will change it to a legal action if the player tries to do it again. For more information, see the [Protection system](../../source/systems/protection) and the Permission tab of the {% building %} GUI.
+**Page 2:** Here you will see the overall happiness of the colony's citizens and any events that happened within the colony (the newest events are at the bottom). You can click the button to switch to a permission log, which will show any illegal actions that happened in the colony (like if a player tried to break a block when they aren't allowed to). Clicking the plus next to an illegal action will change it to a legal action if the player tries to do it again. For more information, see the [Protection system](../../source/systems/protection) and the Permission tab of the {% building townhall %} GUI.
 {% endbuilding_gui_content_block_custom %}
 
 ### **Actions:** This is the most important section.
 
 {% building_gui_content_block_custom image_key="th_actions" image_alt="Townhall actions" cols=6 %}
-**Page 1:** Here you will see the name of your colony as well as the building level of the {% building %}. And the buttons:
-- **Build Options:** Lets you create a build, upgrade, reposition, or repair build order for the {% building %}. To learn more about the building system, please visit the {% building_link builder %} page.
+**Page 1:** Here you will see the name of your colony as well as the building level of the {% building townhall %}. And the buttons:
+- **Build Options:** Lets you create a build, upgrade, reposition, or repair build order for the {% building townhall %}. To learn more about the building system, please visit the {% building_link builder %} page.
 - **Rename Colony:** To change the name of your colony (from Your Username's Colony, which is the default) to anything you want.
 - **Hire Mercenaries:** Here you can hire mercenaries to help defend your colony. Be warned, they're mean and will steal from citizens!
 
@@ -79,7 +79,7 @@ Alternatively, if you have the proper permissions, you can use [commands](../../
 
 ### **Permissions:** Here you can invite other players to your colony to collaborate.
 
-{% building_gui_content_block_custom image_key="th_permissions" image_alt="Townhall permissions" cols=6 %}
+{% building_gui_content_block_custom image_key="th_permissions1" image_alt="Townhall permissions" cols=6 %}
 **Page 1:** Here you type the name of the player you want to add.
 
 **Page 2:** Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or lower rank.
@@ -132,9 +132,9 @@ All the work orders in the order they have been assigned. {% worker_link builder
 **Page 2:** Here are all the build orders for this colony (including decorations and your own schematics as well as huts). Your {% worker_link builder plural=true %} will complete the builds from top to bottom, and you can change the priority of the builds by moving them up or down in the list. You can also delete work orders. When you delete a work order that is currently being built, the Builder will stop building and will continue where they left off if you create the work order again."
 {% endbuilding_gui_content_block_custom %}
 
-### **Happiness:** This is the section for the global happiness of your colony so you can see what area needs more attention to raise the happiness level.
+### **Statistics:** This is the section for the global happiness of your colony so you can see what area needs more attention to raise the happiness level.
 
-{% building_gui_content_block_custom image_key="th_happiness" image_alt="Townhall happiness" cols=6 %}
+{% building_gui_content_block_custom image_key="th_statistics" image_alt="Townhall happiness" cols=6 %}
 **Page 1:** The happiness indices. You can keep track of the areas that will lower or raise the happiness of your citizens here. The colors, in order from best to worst, are:
 - Green (positive)
 - Blue (neutral)

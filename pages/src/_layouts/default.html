@@ -20,6 +20,7 @@ title: MineColonies Wiki
     {% if jekyll.environment == "production" %}
       {% assign minified = ".min" %}
     {% endif %}
+    {% assign cache_buster_id = site.time | date: "%s" %}
 
     <!-- Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap{{ minified }}.css" rel="stylesheet" />
@@ -32,7 +33,7 @@ title: MineColonies Wiki
     <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide{{ minified }}.js"></script>
 
     <!-- Page Styles -->
-    <link href="{{ '/assets/css/style.css?v=' | relative_url }}"
+    <link href="{{ '/assets/css/style.css?v=' | append: cache_buster_id | relative_url }}"
       media="screen"
       rel="stylesheet"
       type="text/css" />
@@ -100,9 +101,10 @@ title: MineColonies Wiki
       const all_versions = JSON.parse(`{{ site.data.versions | jsonify | replace: "`", "" }}`);
     </script>
 
-    <script src="{{ '/assets/js/recipe.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/theme-select.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/version-select.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/recipe.js?v=' | append: cache_buster_id | relative_url }}"></script>
+    <script src="{{ '/assets/js/theme-select.js?v=' | append: cache_buster_id | relative_url }}"></script>
+    <script src="{{ '/assets/js/version-select.js?v=' | append: cache_buster_id | relative_url }}"></script>
+    <script src="{{ '/assets/js/tooltip.js?v=' | append: cache_buster_id | relative_url }}"></script>
 
     <script>
       $(document).ready(function() {
