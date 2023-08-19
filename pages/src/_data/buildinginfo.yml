@@ -454,8 +454,6 @@ plantation:
   recipes:
     - plantation
   settings:
-    - name: Crops
-      description: You can select the plant you want the Planter to grow. Just click the button to cycle through sugar cane, bamboo, or cactus. **Note:** If you have completed the Double Trouble research in the University (which lets the Planter plant two crops at a time), this button will also show options for *two* crops.
     - name: Recipe Mode
       description: This is unlocked by researching Warehouse Master in the University. This allows you to change the order the hut chooses when it knows more than one recipe for an item.
       options:
