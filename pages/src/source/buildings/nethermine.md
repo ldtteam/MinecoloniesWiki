@@ -25,7 +25,7 @@ The Nether Miner can also craft lava buckets.
 {% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
 {% building_gui_content_block_stock order=3 %}
 {% building_gui_content_block_settings order=4 %}
-{% building_gui_content_block_itemlist order=5 header="food" image_key="food" image_alt="Food list" %}
+{% building_gui_content_block_itemlist order=5 header="food" image_key="food" image_alt="Food list" default_on=true %}
 Listed here are items that can be used by the {% worker netherminer %} as food while they are traveling in the nether.
 Simply turn on any that you want your {% worker netherminer %} to eat, and a {% worker_link courier %} will deliver those items when they need food.
 {% endbuilding_gui_content_block_itemlist %}
