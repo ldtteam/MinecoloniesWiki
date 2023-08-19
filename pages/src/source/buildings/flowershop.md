@@ -20,7 +20,7 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_itemlist order=2 header="plantables" image_key="plantables" image_alt="Plantables list" %}
+{% building_gui_content_block_itemlist order=2 header="plantables" image_key="plantables" image_alt="Plantables list" default_on=true %}
 This shows a list of items the {% worker florist %} can plant. As the {% building %} is leveled up, your {% building %} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
 {% endbuilding_gui_content_block_itemlist %}
 {% building_gui_content_block_stock order=3 %}
