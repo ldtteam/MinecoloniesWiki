@@ -4,9 +4,6 @@ building: sifter
 layout: building
 ---
 {% infobox_building %}
-### Note: The Sifter's Hut cannot be built until you have a level 3 {% building_link fisher %} (or three level 1 Fisher's Huts, or another equivalent) and have finished the research in the {% building_link university %}.
-<br>
-
 The Sifter's Hut is where the Sifter will sift through dirt, gravel, sand, or soul sand to find loot. Doing this will make the block the Sifter is sifting disappear. 
 
 | Sifted Block | Chance for        |
@@ -66,5 +63,5 @@ The Sifter's Hut can sift a certain amount of blocks per day:
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
 {% building_gui_content_block_stock order=3 %}

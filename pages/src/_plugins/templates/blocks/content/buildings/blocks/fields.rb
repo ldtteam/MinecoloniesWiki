@@ -14,7 +14,7 @@ class BuildingGuiContentBlockFields
     def content_template(context, arguments)
         "%s
 
-- **Assign Fields to Farmer:** Automatic by default. Here you can define if you prefer to manually assign the fields for this {%% building %%}.
+- **Assign fields to worker:** Automatic by default. Here you can define if you prefer to manually assign the fields for this {%% building %%}.
 - **Fields:** This is the list of recognized fields (recognizable by the crop in its GUI and its distance). This button can show in multiple different ways:
     - If the button shows a red X, it means the field is assigned to the {%% building %%}
         - If it's not greyed out, it may be assigned from the building

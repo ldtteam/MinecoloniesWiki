@@ -20,6 +20,5 @@ The {% building %} is where the {% worker_link alchemist %} works. The {% worker
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
-{% building_gui_content_block_brewingrecipes order=3 %}
-{% building_gui_content_block_tasks order=4 %}
+{% building_gui_content_block_brewingrecipes order=2 %}
+{% building_gui_content_block_tasks order=3 %}

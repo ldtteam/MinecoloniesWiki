@@ -27,7 +27,7 @@ The Enchanter can also craft some magical [scrolls](../../source/items/scrolls) 
 ## {% building %} GUI
 
 {% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
+{% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
 {% building_gui_content_block_stock order=3 %}
 {% building_gui_content_block_custom order=4 header="gather targets" image_key="targets" image_alt="Gather targets" %}
 Here you can set which workers the Enchanter will collect XP from, and how far that worker is from the tower.

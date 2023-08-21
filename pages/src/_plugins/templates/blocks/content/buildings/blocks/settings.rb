@@ -24,10 +24,10 @@ class BuildingGuiContentBlockSettings
             options = setting["options"] ||= []
             options_output = ""
             for option in options do
-                options_output += "<li><p><b>%s:</b> %s</p></li>" % [option["name"], option["description"]]
+                options_output += "<li>%s</li>" % ContentRenderer.convert_content(context, "**#{option["name"]}**: #{option["description"]}")
             end
 
-            list_output += "<li><p><b>%s:</b> %s</p>%s</li>" % [setting["name"], setting["description"], options.length() > 0 ? "<ul>%s</ul>" % options_output : ""]
+            list_output += "<li>%s%s</li>" % [ContentRenderer.convert_content(context, "**#{setting["name"]}**: #{setting["description"]}"), options.length() > 0 ? "<ul>%s</ul>" % options_output : ""]
         end
 
         "%s
