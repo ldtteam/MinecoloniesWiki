@@ -95,7 +95,7 @@ class WorkerInfoBoxBlock < BaseBlock
         blocks.push(buildings_array.map.with_index do |building, index|
             building_names = BuildingUtils.getBuildingNames(context.registers[:site], building)
             building_name = building_names.map do |version|
-                VersionRenderer.renderVersionContent(version["versions"], version["name"])
+                VersionRenderer.renderVersionContent(version["versions"], version["name"], true)
             end.join("")
 
             building_header = ""

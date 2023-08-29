@@ -12,5 +12,9 @@
 {% for version in site.data.versions %}
   body[data-version='{{ version["order"] }}'] [data-versions*='{{ version["order"] }}'] {
     display: inline-block;
+
+    &:has(.dropdown-version-item) {
+      display: block;
+    }
   }
 {% endfor %}

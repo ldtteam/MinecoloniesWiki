@@ -18,12 +18,12 @@ a:hover {
 .button {
   background-color: var(--dark);
   background-image: none;
-  border: 1px var(--color-light) solid;
+  border: 1px $color-light solid;
   border-radius: 10%;
 }
 
 .dropdown-item {
-  color: var(--color-light) !important;
+  color: $color-light !important;
 }
 
 .dropdown-item:hover {
@@ -32,12 +32,12 @@ a:hover {
 
 .dropdown-menu {
   background-color: var(--dark) !important;
-  border-color: var(--color-light);
+  border-color: $color-light;
 }
 
 .infobox {
   background-image: none;
-  border: 1px var(--color-light) solid;
+  border: 1px $color-light solid;
   border-radius: .25rem;
   margin-left: .5em;
   margin-right: .5em;
@@ -46,16 +46,16 @@ a:hover {
 
 .sidenav {
   background-color: $bg-dark;
-  border-color: var(--color-light);
+  border-color: $color-light;
 }
 
 .sidenav-link,
 .sidenav-title {
-  color: var(--color-light) !important;
+  color: $color-light !important;
 }
 
 .table {
-  color: var(--color-light);
+  color: $color-light;
 }
 
 body {

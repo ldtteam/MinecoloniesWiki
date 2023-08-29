@@ -85,7 +85,7 @@
                 {% when "buildings" %}
                   {% for entry in
             site.data.buildinginfo %}
-                    <li>{% building_link entry[0] class="dropdown-item" %}</li>
+                    <li>{% building_link entry[0] class="dropdown-item dropdown-version-item" %}</li>
                   {% endfor %}
                 {% when "workers" %}
                   {% for type in
