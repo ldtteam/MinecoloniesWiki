@@ -11,13 +11,6 @@ The enchanter specializes in crafting enchanted books and magical scrolls with s
 
 In order to create enchanted books, the enchanter can be configured to observe another worker to generate XP. The enchanter will consume the generated XP and an [ancient tome](../../source/items/ancient_tome) to create an enchanted book.  The ancient tome is dropped by raiders.
 
-### Stats
-
-| Stat      | Effect                                                 |
-|-----------|--------------------------------------------------------|
-| Mana      | Increases the rate of XP generated during observation. |
-| Knowledge | Increases the possible level of the enchantment.       |
-
 ### Hut Level
 
 The higher the level of the Enchanter's Tower the higher the level of the enchanted books the enchanter will produce. So:
