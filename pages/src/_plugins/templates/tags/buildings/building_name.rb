@@ -6,6 +6,6 @@ class BuildingNameTag < BaseTag
         building = BuildingUtils.getBuildingKey(context.registers[:page], arguments.unkeyed[0])
         building_names = BuildingUtils.getBuildingNames(context.registers[:site], building, building_plural)
 
-        building_names.collect { |version| VersionRenderer.renderVersionContent(version["versions"], version["name"]) }.join("")
+        building_names.collect { |version| VersionRenderer.renderVersionContent(version["versions"], version["name"], true) }.join("")
     end
 end

@@ -19,7 +19,7 @@ class ContentBlock < BaseBlock
     def render_block(context, content, arguments)
         image_link = arguments.keyed["image"]
         image_alt = arguments.keyed["image_alt"]
-        image_cols = NumberUtils.number_or_nil(arguments.keyed["cols"]) || 4
+        image_cols = NumberUtils.number_or_default(arguments.keyed["cols"], 4)
 
         ContentBlock.render_content_block(context, content, image_link, image_alt, image_cols)
     end

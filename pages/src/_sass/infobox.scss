@@ -15,24 +15,11 @@
   .infobox-recipe-row {
     margin-bottom: .5em;
 
-     &:last-child {
+    &:last-child {
       margin-bottom: 0;
     }
   }
 
-  .section-header {
-    border-bottom-width: 2px;
-    border-color: black;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-style: solid;
-    border-top-width: 2px;
-  }
-
-  .section-text p:last-child {
-    margin-bottom: 0;
-  }
-  
   .section-text p:last-child {
     margin-bottom: 0;
   }

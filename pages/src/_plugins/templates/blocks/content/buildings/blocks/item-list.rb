@@ -9,6 +9,7 @@ Each row contains a button to toggle the usage of this item on or off. By defaul
 
 There are also two controls on the page:
 - The black box at the top is a search field.
-- Reset to default allows you"
+- Reset to default allows you to reset everything to **" + (default_on ? "on" : "off") + "**."
+
     end
 end

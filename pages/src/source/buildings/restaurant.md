@@ -16,7 +16,7 @@ The Restaurant is where the Cook will cook food, provided they have the necessar
 {% building_gui_content_block_smeltingrecipes order=3 %}
 {% building_gui_content_block_stock order=4 %}
 {% building_gui_content_block_fuel order=5 %}
-{% building_gui_content_block_itemlist order=6 header="food" image_key="food" image_alt="Food list" %}
+{% building_gui_content_block_itemlist order=6 header="food" image_key="food" image_alt="Food list" default_on=true %}
 Listed here are food items that will be handed out by the {% worker_link cook %}. Disable any you don't want to be handed out or produced.
 However, if a colonist finds a disabled item, they'll still eat it - the {% worker_link cook %} just won't hand it out.
 {% endbuilding_gui_content_block_itemlist %}

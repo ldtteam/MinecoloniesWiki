@@ -4,9 +4,6 @@ building: archery
 layout: building
 ---
 {% infobox_building %}
-### Note: The Archery cannot be built until you have a level 3 {% building_link barracks %} (or three level 1 Barracks, or another equivalent) and have finished the research in the {% building_link university %}.
-<BR>
-
 The Archery is where your Archers in Training will train to become {% worker_link archer %}. This also allows them to level up without a risk of dying to mobs. A new Archer in Training will need a bed in a house in order to spawn. However, once they are hired at the Archery, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).
 
 The number of students that can be trained at a time depends on the level of the Archery. 

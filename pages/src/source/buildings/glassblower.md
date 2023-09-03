@@ -4,9 +4,6 @@ building: glassblower
 layout: building
 ---
 {% infobox_building %}
-### Note: The Glassblower's Hut cannot be built until you have a level 3 {% building_link smeltery %} (or three level 1 Smelteries, or another equivalent) and have finished the research in the {% building_link university %}.
-<br>
-
 The Glassblower's Hut is where the Glassblower will smelt sand into glass and make glass panes from glass blocks. For the Glassblower to work, they must receive a request from another worker and have the necessary materials, including fuel if they're smelting sand into glass. The Glassblower's Hut must also have been taught the crafting recipe for glass panes.
 
 **Hint:** The number of recipes you can teach the Glassblower's Hut doubles per building level. So:

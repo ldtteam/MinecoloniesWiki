@@ -11,7 +11,7 @@ The Quarry is where you can hire a {% worker_link quarrier %} to dig the quarry.
 
 ## {% building %} GUI
 
-{% building_gui_content_block_custom order=1 header="main interface" image="main" image_alt="Main" %}
+{% building_gui_content_block_custom order=1 header="main interface" image_key="main" image_alt="Main" %}
 - Header:
     - **Building Name**: Shows the name of the building, including the level of the building.
     - **Pencil**: Allows you to rename the building. The level of the building will always be listed after the name.
@@ -22,8 +22,7 @@ The Quarry is where you can hire a {% worker_link quarrier %} to dig the quarry.
     - **Inventory**: Here you can access the hut block's storage, where the worker at this hut takes and deposits materials. They will also use any [racks](../../source/items/rack) that were placed in the hut when it was built or upgraded, so be sure to check those as well!
     - **Chest Icon**: Click this button to see all the items in the hut's storage (including the hut block's inventory and any racks that came with the hut). Clicking the ? button next to an item's count will highlight the storage container it's in.
 {% endbuilding_gui_content_block_custom %}
-
-{% building_gui_content_block_custom order=2 header="manage workers" image="workers" image_alt="Manage workers" %}
+{% building_gui_content_block_custom order=2 header="manage workers" image_key="workers" image_alt="Manage workers" %}
 - Header:
     - **Assigned Workers**: Tells you the worker assigned to this building.
 - Controls:

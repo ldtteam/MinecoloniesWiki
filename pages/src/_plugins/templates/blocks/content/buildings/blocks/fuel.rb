@@ -15,11 +15,11 @@ class BuildingGuiContentBlockFuel
         "%s
 
 Listed here are items that can be used by the {%% building %%} as fuel in their furnaces.
-Simply turn on any that you want your {%% worker baker %%} to use, and a {%% worker courier %%} will deliver those items to the {%% worker baker %%} when they need fuel. All items are off by default.
+Simply turn on any that you want your {%% worker baker %%} to use, and a {%% worker courier %%} will deliver those items to the {%% worker baker %%} when they need fuel. All items are **off** by default.
 
 There are also two controls on the page:
 - The black box at the top is a search field.
-- Reset to default allows you
+- Reset to default allows you to reset everything to **off**.
 
 %s"
     end

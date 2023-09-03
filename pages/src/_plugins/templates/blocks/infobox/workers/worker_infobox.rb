@@ -12,15 +12,15 @@ class WorkerInfoBoxBlock < BaseBlock
         <p><strong>Primary Trait:</strong></p>
     </div>
     <div class=\"col\">
-        <p class=\"badge badge-secondary traitp\">%s</p>
+        <p class=\"badge badge-secondary traitp\" data-toggle=\"%s\" title=\"%s\">%s</p>
     </div>
 </div>
-<div class=\"row text-left\">
+<div class=\"row section-text text-left\">
     <div class=\"col\">
         <p><strong>Secondary Trait:</strong></p>
     </div>
     <div class=\"col\">
-        <p class=\"badge badge-secondary traits\">%s</p>
+        <p class=\"badge badge-secondary traits\" data-toggle=\"%s\" title=\"%s\">%s</p>
     </div>
 </div>"
 
@@ -77,13 +77,25 @@ class WorkerInfoBoxBlock < BaseBlock
 
         blocks = []
 
-        blocks.push(TEMPLATE_TRAITS % [worker_info["traits"]["primary"] ||= "None", worker_info["traits"]["secondary"] ||= "None"])
+        primary_trait = worker_info["traits"].nil? ? "None" : worker_info["traits"]["primary"] ||= "None"
+        primary_effect = worker_info["effects"].nil? ? "" : worker_info["effects"]["primary"] ||= ""
+        secondary_trait = worker_info["traits"].nil? ? "None" : worker_info["traits"]["secondary"] ||= "None"
+        secondary_effect = worker_info["effects"].nil? ? "" : worker_info["effects"]["secondary"] ||= ""
+
+        blocks.push(TEMPLATE_TRAITS % [
+            primary_effect.empty? ? "" : "tooltip",
+            primary_effect,
+            primary_trait,
+            secondary_effect.empty? ? "" : "tooltip",
+            secondary_effect,
+            secondary_trait
+        ])
 
         buildings_array = worker_info["buildings"] || []
         blocks.push(buildings_array.map.with_index do |building, index|
             building_names = BuildingUtils.getBuildingNames(context.registers[:site], building)
             building_name = building_names.map do |version|
-                VersionRenderer.renderVersionContent(version["versions"], version["name"])
+                VersionRenderer.renderVersionContent(version["versions"], version["name"], true)
             end.join("")
 
             building_header = ""
