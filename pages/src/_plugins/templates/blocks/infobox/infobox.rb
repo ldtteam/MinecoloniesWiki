@@ -49,12 +49,12 @@ class InfoBoxBlock < BaseBlock
         blocks_content = ""
         if blocks.length > 0 then
             for block in blocks do
-                blocks_content += "<hr/><div class=\"infobox-content\">%s</div>" % ContentRenderer.convert_content(context, block.strip)
+                blocks_content += "<hr/><div class=\"infobox-content\">%s</div>" % ContentRenderer.convert_content(context, block)
             end
         end
 
         infobox_content = TEMPLATE_INFOBOX % [header, images_content, blocks_content]
-        TEMPLATE_ROOT % [ContentRenderer.convert_content(context, content.strip), infobox_content]
+        TEMPLATE_ROOT % [ContentRenderer.convert_content(context, content), infobox_content]
     end
 end
 
