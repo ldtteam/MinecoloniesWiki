@@ -36,7 +36,7 @@ class BuildingInfoBoxBlock < BaseBlock
         building_names = BuildingUtils.getBuildingNames(context.registers[:site], building)
         
         header = building_names.map do |version|
-            VersionRenderer.renderVersionContent(version["versions"], version["name"], false)
+            VersionRenderer.renderVersionContent(version["versions"], version["name"], true)
         end.join("")
 
         images = "<div class=\"col-md col-12\"><img src=\"/assets/images/buildings/#{building}.png\" alt=\"Block icon for the #{building_info["name"]} building\"/></div>"
