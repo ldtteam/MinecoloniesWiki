@@ -3,7 +3,7 @@ class VersionBlock < BaseBlock
         input_version = arguments.unkeyed[0]
         include_before = arguments.keyed["before"]
         include_after = arguments.keyed["after"]
-        block = arguments.keyed["block"] ||= false
+        inline = arguments.keyed["inline"] ||= false
 
         all_versions = context.registers[:site].data["versions"]
         current_versions = all_versions.select { |v| v["name"].strip == input_version.to_s.strip }
@@ -30,7 +30,7 @@ class VersionBlock < BaseBlock
             end
         end
 
-        VersionRenderer.renderVersionContent(selected_versions.collect { |k| k["order"] }, ContentRenderer.convert_content(context, content.strip), !block)
+        VersionRenderer.renderVersionContent(selected_versions.collect { |k| k["order"] }, ContentRenderer.convert_content(context, content), inline)
     end
 end
 
