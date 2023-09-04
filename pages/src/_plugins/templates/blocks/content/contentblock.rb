@@ -32,7 +32,7 @@ class ContentBlock < BaseBlock
             image_content = TEMPLATE_IMAGE % [cols, image_alt, image]
         end
 
-        TEMPLATE_ROOT % [image_content, content_col_count, ContentRenderer.convert_content(context, content.strip)]
+        TEMPLATE_ROOT % [image_content, content_col_count, ContentRenderer.convert_content(context, content)]
     end
 end
 
