@@ -20,6 +20,8 @@ First, shift + right-click while holding the banner on a {% building_link guardt
 Then, shift + right-click on any other block to summon the Guards! (Shift + right-click again to dismiss them.)
 
 At any time, you can right-click while holding the banner to open a GUI, which will show the towers currently added and the number of hired Guards at each one. You can remove the towers from this GUI, and rally/dismiss the Guards as well.
+
+If you have the Standard reserach unlocked, you can "Place" your rallying banner down by right-clicking a Colony Banner.
 <br>
 <p style="text-align:center;"><img src="../../assets/images/gui/rallyingbannergui.png" alt="Rallying Banner GUI"></p>
 <br>
