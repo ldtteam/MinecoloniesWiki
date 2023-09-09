@@ -44,21 +44,23 @@ Files that exactly match the namespace, directory, and name of a file from vanil
 
 ### Terminology
 
-| Resource Location   | The common word for Mojang's [Namespaced IDs](https://Minecraft.fandom.com/wiki/Namespaced_ID#Namespace). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of Minecraft to uniquely identify nearly everything. |
-| Namespace | The first half of a Resource Location, before the colon (:). In <code>minecraft:cobblestone</code>, "minecraft" is the namespace. Commonly used namespaces are "minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace to avoid potential conflicts. In data packs, namespaces are derived from the names of the folders at the top level within the "data" directory. |
-| Data Location | The internal location within namespaces that Minecraft and mods examine for specific uses, such as <code>tags/blocks</code> for Block Tags, or <code>crafterrecipes</code> for Crafter Recipes. Only JSONs within a known data location are applied by Minecraft or Minecraft mods, and Data Locations control how these JSONs apply and what format is expected. Relevant Data Locations are described in more detail throughout this document. |
-| Path      | The second half of a Resource Location, after the colon (:). In <code>minecraft:cobblestone</code>, "cobblestone" is the path. In data packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/minecraft/tags/items/cobblestone.json</code> will have a namespace of "minecraft", a Data Location of "tag/items", a path of "cobblestone". |
-| Type      | The supported format for a specific context. Includes Objects, Arrays, Strings, Booleans, Integers, and Doubles. |
-| Object    | In the context of the JSON standard, a group of key-value pairs held together by a pair of curly brackets (<code>{ }</code>). All JSON files must be a JSON Object, and name-value pairs may use an Object as a value. |
-| Array     | In the context of the JSON standard, a group of value types held together by a pair of square brackets(<code>[ ]</code>). JSON Arrays may contain multiple Values, or multiple Objects, but not name-value pairs directly. |
-| String    | A set of characters. In JSON, strings must always be within quotation marks (<code>" "<code>). |
-| Boolean   | The values <code>true</code> or <code>false</code>, not contained within quotation marks. |
-| Integer   | A whole number. For this document, between positive and negative two billion, not contained within quotation marks. You generally won't use numbers that high. |
-| Double    | A number, including decimal numbers, not contained within quotation marks. |
-| Name-Value Pair | In the context of the JSON standard, a string key and an matching value, usually in the format <code>"name": value</code>. Name-value pairs that are not the last name-value pair in an Object must be separated by a comma (<code>,</code>). |
-| Name      | In the context of the JSON standard, the left half of a name-value pair. Must be a String. Only one occurance of a name will be read in a single object's top level, usually the first, though sibling in an array or descendants in objects may hold the same Name. |
-| Value     | In the context of the JSON standard, the right half of a name-value pair. May be any type that matches the context. Values within quotation marks (<code>" "</code>) are treated as Strings. |
-| Translation Key | A specially formatted string, which will attempt to be processed through the Minecraft translation file. If the client language file contains a matching Name, substitutes the corresponding Value, otherwise, presents the key to the user directly. |
+| Keyword           | Explanation                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Resource Location | The common word for Mojang's [Namespaced IDs](https://Minecraft.fandom.com/wiki/Namespaced_ID#Namespace). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of Minecraft to uniquely identify nearly everything.                                                                                                             |
+| Namespace         | The first half of a Resource Location, before the colon (:). In <code>minecraft:cobblestone</code>, "minecraft" is the namespace. Commonly used namespaces are "minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace to avoid potential conflicts. In data packs, namespaces are derived from the names of the folders at the top level within the "data" directory.                                   |
+| Data Location     | The internal location within namespaces that Minecraft and mods examine for specific uses, such as <code>tags/blocks</code> for Block Tags, or <code>crafterrecipes</code> for Crafter Recipes. Only JSONs within a known data location are applied by Minecraft or Minecraft mods, and Data Locations control how these JSONs apply and what format is expected. Relevant Data Locations are described in more detail throughout this document. |
+| Path              | The second half of a Resource Location, after the colon (:). In <code>minecraft:cobblestone</code>, "cobblestone" is the path. In data packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/minecraft/tags/items/cobblestone.json</code> will have a namespace of "minecraft", a Data Location of "tag/items", a path of "cobblestone".                                                           |
+| Type              | The supported format for a specific context. Includes Objects, Arrays, Strings, Booleans, Integers, and Doubles.                                                                                                                                                                                                                                                                                                                                 |
+| Object            | In the context of the JSON standard, a group of key-value pairs held together by a pair of curly brackets (<code>{ }</code>). All JSON files must be a JSON Object, and name-value pairs may use an Object as a value.                                                                                                                                                                                                                           |
+| Array             | In the context of the JSON standard, a group of value types held together by a pair of square brackets(<code>[ ]</code>). JSON Arrays may contain multiple Values, or multiple Objects, but not name-value pairs directly.                                                                                                                                                                                                                       |
+| String            | A set of characters. In JSON, strings must always be within quotation marks (<code>" "<code>).                                                                                                                                                                                                                                                                                                                                                   |
+| Boolean           | The values <code>true</code> or <code>false</code>, not contained within quotation marks.                                                                                                                                                                                                                                                                                                                                                        |
+| Integer           | A whole number. For this document, between positive and negative two billion, not contained within quotation marks. You generally won't use numbers that high.                                                                                                                                                                                                                                                                                   |
+| Double            | A number, including decimal numbers, not contained within quotation marks.                                                                                                                                                                                                                                                                                                                                                                       |
+| Name-Value Pair   | In the context of the JSON standard, a string key and an matching value, usually in the format <code>"name": value</code>. Name-value pairs that are not the last name-value pair in an Object must be separated by a comma (<code>,</code>).                                                                                                                                                                                                    |
+| Name              | In the context of the JSON standard, the left half of a name-value pair. Must be a String. Only one occurance of a name will be read in a single object's top level, usually the first, though sibling in an array or descendants in objects may hold the same Name.                                                                                                                                                                             |
+| Value             | In the context of the JSON standard, the right half of a name-value pair. May be any type that matches the context. Values within quotation marks (<code>" "</code>) are treated as Strings.                                                                                                                                                                                                                                                     |
+| Translation Key   | A specially formatted string, which will attempt to be processed through the Minecraft translation file. If the client language file contains a matching Name, substitutes the corresponding Value, otherwise, presents the key to the user directly.                                                                                                                                                                                            |
 
 ### Example Folder Layout
 
@@ -70,13 +72,14 @@ A complex data pack can have many files across many types in many namespaces, as
 
 For Minecraft 1.16, a typical pack.mcmeta file looks like this: 
 
-<pre><code>{
+{% highlight json linenos %}
+{
   "pack": {
     "pack_format": 6,
     "description": "Rename To Your Preferences"
   }
 }
-</code></pre>
+{% endhighlight %}
 
 The <code>"description"</code>'s value is displayed to the user as an in-game title for the data pack, so it's best to make it descriptive and unique.
 
@@ -90,23 +93,18 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
  
  A typical tag file to add cobblestone and every type of vanilla anvil to a Tag would thus look like : 
  
- <pre><code>{
+{% highlight json linenos %}
+{
     "replace": false,
     "values": [
       "minecraft:cobblestone",
       "#minecraft:anvil"
     ]
-}</code></pre>
+}
+{% endhighlight %}
 
-<p style="font-size:12pt;text-align:center"><b>While this example works for both Blocks and Items, it's a rare exception. Block Tags and Item Tags are entirely different things, and while some Block Tags have Item Tag equivalents, many do not. Some mods will *only* use Item Tags or Block Tags; some items, even vanilla items, have different Resource Locations when in Item form than in Block form.</b></p>
- 
- {% comment %}
- <TODO: The required:false properties act very unpredictably with tags. Need to get a better grasp on this before I can publish it.>
- In 1.16, Forge also supports Optional tags. If a data pack lists a block or item that isn't available, such as if it's from a mod that is not loaded, or if the block or item has been disabled. Optional tags are separate JSON objects, containing an id:string and a "required":false value.
+**While this example works for both Blocks and Items, it's a rare exception. Block Tags and Item Tags are entirely different things, and while some Block Tags have Item Tag equivalents, many do not. Some mods will *only* use Item Tags or Block Tags; some items, even vanilla items, have different Resource Locations when in Item form than in Block form.**
 
- <pre><code>{"id": "waystones:sandy_waystone", "required": false}</code></pre>
- {% endcomment %}
- 
 ### Block Tags
 
  **Block Tags** are loaded in the <code>tags/blocks</code> directory. MineColonies reads the following Block Tags:
@@ -122,10 +120,10 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 | <code>forge</code>        | <code>dirt</code>                | Blocks that can be used as farmland by {% worker_link farmer %}.                                                                                               |
 | <code>minecraft</code>    | <code>beds</code>                | Blocks that can be used by colonists to rest, if included in a schematic.                                                                                      |
 | <code>minecraft</code>    | <code>doors</code>               | Used for pathfinding.                                                                                                                                          |
-| <code>minecraft</code>    | <code>leaves</code>              | Used to determine eligible trees for the Forester.                                                                                                             |
-| <code>minecraft</code>    | <code>logs</code>                | Used to determine eligible trees for the Forester.                                                                                                             |
-| <code>minecraft</code>    | <code>shroomlight</code>         | Used to determine eligible trees for the Forester.                                                                                                             |
-| <code>minecraft</code>    | <code>wart_blocks</code>         | Used to determine eligible trees for the Forester.                                                                                                             |
+| <code>minecraft</code>    | <code>leaves</code>              | Used to determine eligible trees for the {% worker_link forester %}.                                                                                           |
+| <code>minecraft</code>    | <code>logs</code>                | Used to determine eligible trees for the {% worker_link forester %}.                                                                                           |
+| <code>minecraft</code>    | <code>shroomlight</code>         | Used to determine eligible trees for the {% worker_link forester %}.                                                                                           |
+| <code>minecraft</code>    | <code>wart_blocks</code>         | Used to determine eligible trees for the {% worker_link forester %}.                                                                                           |
  
 ### Item Tags
 

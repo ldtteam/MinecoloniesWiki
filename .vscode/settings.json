@@ -15,7 +15,7 @@
     "editor.defaultFormatter": "sissel.shopify-liquid"
   },
   "[scss]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[js]": {
     "editor.defaultFormatter": "sissel.shopify-liquid"
