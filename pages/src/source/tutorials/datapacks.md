@@ -111,65 +111,65 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 
  **Block Tags** are loaded in the <code>tags/blocks</code> directory. MineColonies reads the following Block Tags:
  
-| Namespace               | Block Tag              | Effect                   |
-| ----------------------- | ---------------------- | ------------------------ |
-| <code>minecolonies</code>    | <code>concrete</code>               | Blocks that a {% worker_link concretemixer %} can mine. |
-| <code>minecolonies</code>    | <code>decoblocks</code>             | Blocks that are not replaced by builders during construction phases. |
-| <code>minecolonies</code>    | <code>indestructable</code>         | Blocks that can't be destroyed. Prevents these blocks from being overwritten by Survival Build Tools, and has special considerations for colonist pathfinding. |
-| <code>minecolonies</code>    | <code>orechanceblocks</code>        | Blocks that which will have a low chance of dropping extra ores when mined by a {% worker_link miner %}. |
-| <code>minecolonies</code>    | <code>pathblocks</code>             | Colonists walk faster on and preferentially follow roads made of these blocks. |
-| <code>minecolonies</code>    | <code>protectionexception</code>    | Blocks that can be used, or alt-clicked, within a [colony's protection range](../../source/systems/protection), even by neutral or enemy players. |
-| <code>forge</code>           | <code>dirt</code>                   | Blocks that can be used as farmland by {% worker_link farmer %}. |
-| <code>minecraft</code>       | <code>beds</code>                   | Blocks that can be used by colonists to rest, if included in a schematic. |
-| <code>minecraft</code>       | <code>doors</code>                  | Used for pathfinding. |
-| <code>minecraft</code>       | <code>leaves</code>                 | Used to determine eligible trees for the Forester. |
-| <code>minecraft</code>       | <code>logs</code>                   | Used to determine eligible trees for the Forester. |
-| <code>minecraft</code>       | <code>shroomlight</code>            | Used to determine eligible trees for the Forester. |
-| <code>minecraft</code>       | <code>wart_blocks</code>            | Used to determine eligible trees for the Forester. |
+| Namespace                 | Block Tag                        | Effect                                                                                                                                                         |
+|---------------------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <code>minecolonies</code> | <code>concrete</code>            | Blocks that a {% worker_link concretemixer %} can mine.                                                                                                        |
+| <code>minecolonies</code> | <code>decoblocks</code>          | Blocks that are not replaced by builders during construction phases.                                                                                           |
+| <code>minecolonies</code> | <code>indestructable</code>      | Blocks that can't be destroyed. Prevents these blocks from being overwritten by Survival Build Tools, and has special considerations for colonist pathfinding. |
+| <code>minecolonies</code> | <code>orechanceblocks</code>     | Blocks that which will have a low chance of dropping extra ores when mined by a {% worker_link miner %}.                                                       |
+| <code>minecolonies</code> | <code>pathblocks</code>          | Colonists walk faster on and preferentially follow roads made of these blocks.                                                                                 |
+| <code>minecolonies</code> | <code>protectionexception</code> | Blocks that can be used, or alt-clicked, within a [colony's protection range](../../source/systems/protection), even by neutral or enemy players.              |
+| <code>forge</code>        | <code>dirt</code>                | Blocks that can be used as farmland by {% worker_link farmer %}.                                                                                               |
+| <code>minecraft</code>    | <code>beds</code>                | Blocks that can be used by colonists to rest, if included in a schematic.                                                                                      |
+| <code>minecraft</code>    | <code>doors</code>               | Used for pathfinding.                                                                                                                                          |
+| <code>minecraft</code>    | <code>leaves</code>              | Used to determine eligible trees for the Forester.                                                                                                             |
+| <code>minecraft</code>    | <code>logs</code>                | Used to determine eligible trees for the Forester.                                                                                                             |
+| <code>minecraft</code>    | <code>shroomlight</code>         | Used to determine eligible trees for the Forester.                                                                                                             |
+| <code>minecraft</code>    | <code>wart_blocks</code>         | Used to determine eligible trees for the Forester.                                                                                                             |
  
 ### Item Tags
 
  Item Tags are loaded in the <code>tags\items</code> directory. MineColonies reads the following Item Tags:
  
-| Namespace       | tags\\items               | Effect                   |
-| --------------- | ------------------------- | ------------------------ | 
-| <code>minecolonies</code>    | <code>breakable_ore</code>             | (1.18+ only) Items with this tag are processed by the smelter using fortune |
-| <code>minecolonies</code>    | <code>compostables</code>              | Items that can be placed into a Composter, and give moderate compost. |
-| <code>minecolonies</code>    | <code>compostables_poor</code>         | Items that can be placed into a Composter, and give little compost. |
-| <code>minecolonies</code>    | <code>compostables_rich</code>         | Items that can be placed into a Composter, and give a lot of compost. |
-| <code>minecolonies</code>    | <code>concrete_powder</code>           | Crafted and placed by a {% worker_link concretemixer %} |
-| <code>minecolonies</code>    | <code>florist_flowers</code>           | Grown by the {% worker_link florist %}, if they have a valid block form, at building level 3 or higher. |
-| <code>minecolonies</code>    | <code>fungi</code>                     | Items that can be grown by a {% worker_link forester %} on Warped Nylium or Crimson Nylium. |
-| <code>minecolonies</code>    | <code>meshes</code>                    | Items that can be held as meshes by a {% worker_link sifter %}. This only allows the Sifter to use the tool, it does not add benefits to doing so. See CrafterRecipes for more details. |
-| <code>minecolonies</code>    | <code>raw_ore</code>                   | (1.18+ only) Items with this tag, if processable in a furnace, can be processed at the smeltery |
-| <code>minecolonies</code>    | <code>reducible_ingredient</code>      | Items that may be reduced in cost by one, to a minimum of one, when in a colonist recipe that originally required more than one of the item. |
-| <code>minecolonies</code>    | <code>reducible_product_excluded</code> | Output items that can never have their crafter recipe efficiency improved. Most storage blocks or reversable recipes should be in this tag, to avoid possible infinite item loops. |
-| <code>forge</code>           | <code>crops_wheat</code>               | The Baker can cook any recipe including an in this tag, if the output is a food item. |
-| <code>forge</code>           | <code>glass</code>                     | All items with this tag, if produces in a furnace from an item tagged with #forge:glass, can be made at the Glassblower. |
-| <code>forge</code>           | <code>ores</code>                      | All items with this tag are treated as ores by the miner, and in 1.16.5, if processable in a furnace, can be processed in the smeltery. |
-| <code>forge</code>          | <code>sand</code>                      | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower. |
-| <code>forge</code>           | <code>seeds</code>                     | Only items with this tag are valid to set in a Scarecrow, and are planted by a Farmer. |
-| <code>minecraft</code>       | <code>flowers</code>                   | Used by the {% worker_link beekeeper %} to breed bees. |
-| <code>minecraft</code>       | <code>fishes</code>                    | Used by the {% worker_link fisher %} to render fish on bandolier. |
-| <code>minecraft</code>       | <code>leaves</code>                    | Items that Builders will place 'for free', without having in their inventory. |
-| <code>minecraft</code>       | <code>logs</code>                      | Recipes consisting of 75% or more this tag and #minecraft:planks can be taught to the Sawmill. |
-| <code>minecraft</code>       | <code>planks</code>                    | Recipes consisting of 75% or more this tag and #minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner. |
+| Namespace                 | tags\\items                             | Effect                                                                                                                                                                                  |
+|---------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <code>minecolonies</code> | <code>breakable_ore</code>              | (1.18+ only) Items with this tag are processed by the smelter using fortune                                                                                                             |
+| <code>minecolonies</code> | <code>compostables</code>               | Items that can be placed into a Composter, and give moderate compost.                                                                                                                   |
+| <code>minecolonies</code> | <code>compostables_poor</code>          | Items that can be placed into a Composter, and give little compost.                                                                                                                     |
+| <code>minecolonies</code> | <code>compostables_rich</code>          | Items that can be placed into a Composter, and give a lot of compost.                                                                                                                   |
+| <code>minecolonies</code> | <code>concrete_powder</code>            | Crafted and placed by a {% worker_link concretemixer %}                                                                                                                                 |
+| <code>minecolonies</code> | <code>florist_flowers</code>            | Grown by the {% worker_link florist %}, if they have a valid block form, at building level 3 or higher.                                                                                 |
+| <code>minecolonies</code> | <code>fungi</code>                      | Items that can be grown by a {% worker_link forester %} on Warped Nylium or Crimson Nylium.                                                                                             |
+| <code>minecolonies</code> | <code>meshes</code>                     | Items that can be held as meshes by a {% worker_link sifter %}. This only allows the Sifter to use the tool, it does not add benefits to doing so. See CrafterRecipes for more details. |
+| <code>minecolonies</code> | <code>raw_ore</code>                    | (1.18+ only) Items with this tag, if processable in a furnace, can be processed at the smeltery                                                                                         |
+| <code>minecolonies</code> | <code>reducible_ingredient</code>       | Items that may be reduced in cost by one, to a minimum of one, when in a colonist recipe that originally required more than one of the item.                                            |
+| <code>minecolonies</code> | <code>reducible_product_excluded</code> | Output items that can never have their crafter recipe efficiency improved. Most storage blocks or reversable recipes should be in this tag, to avoid possible infinite item loops.      |
+| <code>forge</code>        | <code>crops_wheat</code>                | The Baker can cook any recipe including an in this tag, if the output is a food item.                                                                                                   |
+| <code>forge</code>        | <code>glass</code>                      | All items with this tag, if produces in a furnace from an item tagged with #forge:glass, can be made at the Glassblower.                                                                |
+| <code>forge</code>        | <code>ores</code>                       | All items with this tag are treated as ores by the miner, and in 1.16.5, if processable in a furnace, can be processed in the smeltery.                                                 |
+| <code>forge</code>        | <code>sand</code>                       | All items with this tag, if smeltable into an item tagged with #forge:glass, can be made at the Glassblower.                                                                            |
+| <code>forge</code>        | <code>seeds</code>                      | Only items with this tag are valid to set in a Scarecrow, and are planted by a Farmer.                                                                                                  |
+| <code>minecraft</code>    | <code>flowers</code>                    | Used by the {% worker_link beekeeper %} to breed bees.                                                                                                                                  |
+| <code>minecraft</code>    | <code>fishes</code>                     | Used by the {% worker_link fisher %} to render fish on bandolier.                                                                                                                       |
+| <code>minecraft</code>    | <code>leaves</code>                     | Items that Builders will place 'for free', without having in their inventory.                                                                                                           |
+| <code>minecraft</code>    | <code>logs</code>                       | Recipes consisting of 75% or more this tag and #minecraft:planks can be taught to the Sawmill.                                                                                          |
+| <code>minecraft</code>    | <code>planks</code>                     | Recipes consisting of 75% or more this tag and #minecraft:logs can be taught to the Sawmill. A stack is stored by the Miner.                                                            |
 | <code>minecraft</code>       | <code>saplings</code>                  | Used by the Forester to grow trees.
 | <code>minecraft</code>       | <code>slabs</code>                     | A stack is stored by the Miner. |
 | <code>minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 {% worker_link florist %}, if they have a valid block form, and are in #minecolonies:florist_flowers. |
 | <code>minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
 
-<p style="font-size:12pt;text-align:center"><b>Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://Minecraft.fandom.com/wiki/Tag#List_of_tags) for Minecraft behaviors.</b></p>
+**Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://Minecraft.fandom.com/wiki/Tag#List_of_tags) for Minecraft behaviors.**
 
 ### Crafter Item Tags
 
- Additionally, some **Item Tags** are used to control what recipes can be taught to a worker by a player in-game. Each worker has a different set of tags. For a full list, see [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/tags/items).
+Additionally, some **Item Tags** are used to control what recipes can be taught to a worker by a player in-game. Each worker has a different set of tags. For a full list, see [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/tags/items).
  
-| Item Tag                           | Effect                   |
-| ---------------------------------- | ------------------------ | 
-| <code>x_product_excluded</code>    | Items that cannot be made by this worker. Overrides all other crafter Tags. |
-| <code>x_product</code>             | Items that can be made by this worker. |
-| <code>x_ingredient_excluded</code> | Items that cannot be used to craft by this worker, unless the recipe product is in <code>x_product</code>.|
+| Item Tag                           | Effect                                                                                                                                                                  |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <code>x_product_excluded</code>    | Items that cannot be made by this worker. Overrides all other crafter Tags.                                                                                             |
+| <code>x_product</code>             | Items that can be made by this worker.                                                                                                                                  |
+| <code>x_ingredient_excluded</code> | Items that cannot be used to craft by this worker, unless the recipe product is in <code>x_product</code>.                                                              |
 | <code>x_ingredient</code>          | Items that can be used to craft by this worker, unless the ingredient is in <code>x_ingredient_excluded</code>, or the recipe output is in <code>x_product.json</code>. |
 
 A few colonists have other hard-coded rules that are not dependent on tags. The {% worker_link blacksmith %} can make all tools, swords, armor, hoes, and shields. {% worker_link cook %} will always accept recipes for items that have valid foods as results.
@@ -178,30 +178,30 @@ A few colonists have other hard-coded rules that are not dependent on tags. The 
 
 While Item Tags determine the recipes that workers can be taught, colonists can also automatically learn special **Crafter Recipes**. These recipes can be different than those available to the player or even reflect items that can't be made in any other way. Unlike Tags, Crafter Recipes can and must hold a large number of properties, some containing arrays or objects of properties themselves. Supported properties include: 
 
-| Crafter Recipe Key Name                | Object Name          | Type             | Description |
-| -------------------------------------- | -------------------- | ---------------- | ----------- | 
-| <code>"type"</code>                    |                      | string           | <code>"recipe"</code> to add a recipe, and <code>"remove"</code> to disable one. |
-| <code>"crafter"</code>                 |                      | string           | The name of the worker who will learn the recipe. Mandatory. |
-| <code>"inputs"</code>                  |                      | Array Of Objects | The <code>"item"</code>s and <code>"count"</code>s of the required input items that will be consumed for the recipe. |
-|                                        | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe. |
-|                                        | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1. |
-| <code>"result"</code>                  |                      | string           | The Resource Location identifier of the item the recipe produces. |
-| <code>"count"</code>                   |                      | integer          | The count of <code>"result"</code> items that should be returned. If not present, defaults to 1. |
-| <code>"loot-table"</code>              |                      | string           | The Resource Location of a [loot table](https://Minecraft.fandom.com/wiki/Loot_table), used for outputs that require some randomization. |
-| <code>"additional-output"</code>       |                      | Object           | The <code>"item"</code> and <code>"count"</code> of a single additional output item.|
-|                                        | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe. |
-|                                        | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1. |
-| <code>"alternative-output"</code>      |                      | Array Of Objects | Contains the <code>"item"</code> and <code>"count"</code> of alternative output items. These consume the same inputs, share the same "loot-table", and return the same "additional-output" as the main recipe, but produce a different result on demand through the Request System. |
-|                                        | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe. |
-|                                        | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1. |
-| <code>"intermediate"</code>            |                      | string           | The Resource Location identifier of a block required to craft the item, typically a furnace. |
-| <code>"research-id"</code>             |                      | string           | The Resource Location identifier of a research that is automatically learned after the colony has a research completed, if all other requirements are met. |
-| <code>"not-research-id"</code>         |                      | string           | The Resource Location identifier of a research that automatically causes the recipe to be unlearned. Most commonly used to replace a default recipe. |
-| <code>"min-building-level"</code>      |                      | integer          | The minimum building level, inclusive, at which the recipe may be automatically learned, if all other requirements are complete. |
-| <code>"max-building-level"</code>      |                      | integer          | The building level where the recipe will be automatically unlearned, if the building meets or exceeds it. |
-| <code>"must-exist"</code>              |                      | boolean          | A special requirement. If a recipe matching the output exists, automatically adds all <code>"alternative-output"</code> as recipes. |
-| <code>"show-tooltip"</code>            |                      | boolean          | If true, displays the building that can craft the recipe, as well as any requirements to unlock the recipe, as a tooltip for the item. |
-| <code>"recipe-id-to-remove"</code>     |                      | string           | A Resource Location of a different crafter recipe to remove, preventing buildings from learning it. Requires <code>"type":"remove"</code>. All other properties are ignored. Example: <code>"recipe-id-to-remove": "minecolonies:blacksmith/platearmorchestplate"</code>.|
+| Crafter Recipe Key Name            | Object Name          | Type             | Description                                                                                                                                                                                                                                                                         |
+|------------------------------------|----------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <code>"type"</code>                |                      | string           | <code>"recipe"</code> to add a recipe, and <code>"remove"</code> to disable one.                                                                                                                                                                                                    |
+| <code>"crafter"</code>             |                      | string           | The name of the worker who will learn the recipe. Mandatory.                                                                                                                                                                                                                        |
+| <code>"inputs"</code>              |                      | Array Of Objects | The <code>"item"</code>s and <code>"count"</code>s of the required input items that will be consumed for the recipe.                                                                                                                                                                |
+|                                    | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe.                                                                                                                                                                                                                 |
+|                                    | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1.                                                                                                                                                                                                         |
+| <code>"result"</code>              |                      | string           | The Resource Location identifier of the item the recipe produces.                                                                                                                                                                                                                   |
+| <code>"count"</code>               |                      | integer          | The count of <code>"result"</code> items that should be returned. If not present, defaults to 1.                                                                                                                                                                                    |
+| <code>"loot-table"</code>          |                      | string           | The Resource Location of a [loot table](https://Minecraft.fandom.com/wiki/Loot_table), used for outputs that require some randomization.                                                                                                                                            |
+| <code>"additional-output"</code>   |                      | Object           | The <code>"item"</code> and <code>"count"</code> of a single additional output item.                                                                                                                                                                                                |
+|                                    | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe.                                                                                                                                                                                                                 |
+|                                    | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1.                                                                                                                                                                                                         |
+| <code>"alternative-output"</code>  |                      | Array Of Objects | Contains the <code>"item"</code> and <code>"count"</code> of alternative output items. These consume the same inputs, share the same "loot-table", and return the same "additional-output" as the main recipe, but produce a different result on demand through the Request System. |
+|                                    | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe.                                                                                                                                                                                                                 |
+|                                    | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1.                                                                                                                                                                                                         |
+| <code>"intermediate"</code>        |                      | string           | The Resource Location identifier of a block required to craft the item, typically a furnace.                                                                                                                                                                                        |
+| <code>"research-id"</code>         |                      | string           | The Resource Location identifier of a research that is automatically learned after the colony has a research completed, if all other requirements are met.                                                                                                                          |
+| <code>"not-research-id"</code>     |                      | string           | The Resource Location identifier of a research that automatically causes the recipe to be unlearned. Most commonly used to replace a default recipe.                                                                                                                                |
+| <code>"min-building-level"</code>  |                      | integer          | The minimum building level, inclusive, at which the recipe may be automatically learned, if all other requirements are complete.                                                                                                                                                    |
+| <code>"max-building-level"</code>  |                      | integer          | The building level where the recipe will be automatically unlearned, if the building meets or exceeds it.                                                                                                                                                                           |
+| <code>"must-exist"</code>          |                      | boolean          | A special requirement. If a recipe matching the output exists, automatically adds all <code>"alternative-output"</code> as recipes.                                                                                                                                                 |
+| <code>"show-tooltip"</code>        |                      | boolean          | If true, displays the building that can craft the recipe, as well as any requirements to unlock the recipe, as a tooltip for the item.                                                                                                                                              |
+| <code>"recipe-id-to-remove"</code> |                      | string           | A Resource Location of a different crafter recipe to remove, preventing buildings from learning it. Requires <code>"type":"remove"</code>. All other properties are ignored. Example: <code>"recipe-id-to-remove": "minecolonies:blacksmith/platearmorchestplate"</code>.           |
 
 On existing worlds, removing a Crafter Recipe through data packs will automatically remove it from existed constructed buildings that have learned it.
 
@@ -223,15 +223,15 @@ The [Research System](../../source/systems/research) used by the {% building_lin
 
 Branches are the groups of research, such as "Civilian" or "Combat". Branch files must contain one of <code>"branch-name"</code> or <code>"base-time"</code>.
 
-| Branch Key Name              | Type       | Description |
-| ---------------------------- | ---------- | ----------- |
-| <code>"branch-name"</code>   | string     | The displayed name of the branch, presented to the user. May be a Translation Key. If not present, defaults to a Translation Key of the format <code>com.<namespace>.research.<path>.name</code> |
-| <code>"subtitle"</code>      | string     | A subtitle for the branch, displayed on mouseover. May be a Translation Key. Optional. |
-| <code>"branch-type"</code>   | string     | An override for more specialized research branches. For now, <code>"unlockables"</code> disables research level checks. Otherwise, sets to default behavior. Optional. |
-| <code>"base-time"</code>     | double     | A numeric multiplier applied to research time for all researches on the branch. Larger numbers take more time; lower numbers take less time. Very low values may make time estimates in-accurate. Defaults to 1.0; numbers below 0.0 or above 10 may behave poorly. |
-| <code>"sortOrder"</code>     | integer    | Controls the vertical position of the branch on the University GUI. Lower numbers are placed first on the list, while higher numbers are placed closer to the bottom of the list. Optional. |
-| <code>"hidden"</code>        | boolean    | If true, and if all primary researches on the branch are hidden, prevents access to the branch from the University window. If <code>"branch-type"</code> is set to <code>"unlockables"</code>, also prevents display of the branch; otherwise, provides a tooltip describing how unlock the branch's primary researches. Optional, defaults to false. |
-| <code>"remove"</code>        | boolean or string or Array of Strings  | Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world. If a string, removes all research with a branch of the Resource Location in that string. If an array of strings, removes all researches for all researches with branches matching any of the Resource Locations. If boolean and true, removes all Researches with branches matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs. |
+| Branch Key Name            | Type                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|----------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <code>"branch-name"</code> | string                                | The displayed name of the branch, presented to the user. May be a Translation Key. If not present, defaults to a Translation Key of the format <code>com.<namespace>.research.<path>.name</code>                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <code>"subtitle"</code>    | string                                | A subtitle for the branch, displayed on mouseover. May be a Translation Key. Optional.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| <code>"branch-type"</code> | string                                | An override for more specialized research branches. For now, <code>"unlockables"</code> disables research level checks. Otherwise, sets to default behavior. Optional.                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| <code>"base-time"</code>   | double                                | A numeric multiplier applied to research time for all researches on the branch. Larger numbers take more time; lower numbers take less time. Very low values may make time estimates in-accurate. Defaults to 1.0; numbers below 0.0 or above 10 may behave poorly.                                                                                                                                                                                                                                                                                                                              |
+| <code>"sortOrder"</code>   | integer                               | Controls the vertical position of the branch on the University GUI. Lower numbers are placed first on the list, while higher numbers are placed closer to the bottom of the list. Optional.                                                                                                                                                                                                                                                                                                                                                                                                      |
+| <code>"hidden"</code>      | boolean                               | If true, and if all primary researches on the branch are hidden, prevents access to the branch from the University window. If <code>"branch-type"</code> is set to <code>"unlockables"</code>, also prevents display of the branch; otherwise, provides a tooltip describing how unlock the branch's primary researches. Optional, defaults to false.                                                                                                                                                                                                                                            |
+| <code>"remove"</code>      | boolean or string or Array of Strings | Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world. If a string, removes all research with a branch of the Resource Location in that string. If an array of strings, removes all researches for all researches with branches matching any of the Resource Locations. If boolean and true, removes all Researches with branches matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs. |
 
 ### Research
 
@@ -270,62 +270,62 @@ Researches are the individual components of a branch. Branches must have at leas
 
 Research Effects describe the actual impact and strength of that impact on the colony, players, or colonists. All Research Effects have an automatically generated effect strength 0 at level 0. If no other levels are defined, defaults to level one having a strength of 5, enough to unlock all levels of a building.
 
-| Effect Key Name              | Type             | Description |
-| ---------------------------- | ---------------- | ----------- |
-| <code>"effect"</code>        | any              | Required to treat the file as a research effect. |
-| <code>"name"</code>          | string           | The display name of the effect, shown on mouseover. May be a Translation Key. If not present, defaults to <code>com.<namespace>.research.<path>.description</code> |
-| <code>"subtitle"</code>      | string           | The subtitle of the effect, shown on mouseover. May be a Translation Key. Optional. |
-| <code>"levels"</code>        | Array Of Doubles | The effect strengths of the research, by level. If not present, defaults to one level of strength 5. |
+| Effect Key Name         | Type             | Description                                                                                                                                                        |
+|-------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <code>"effect"</code>   | any              | Required to treat the file as a research effect.                                                                                                                   |
+| <code>"name"</code>     | string           | The display name of the effect, shown on mouseover. May be a Translation Key. If not present, defaults to <code>com.<namespace>.research.<path>.description</code> |
+| <code>"subtitle"</code> | string           | The subtitle of the effect, shown on mouseover. May be a Translation Key. Optional.                                                                                |
+| <code>"levels"</code>   | Array Of Doubles | The effect strengths of the research, by level. If not present, defaults to one level of strength 5.                                                               |
 
 #### MineColonies Research Effects
 
 For now, Research Effects must have a corresponding code effect, as listed below. Suggested ranges give guidelines assuming a modpack includes no significant balance reworks.
 
-| Effect Resource Location                            | Suggested Range  |   Description  |
-| --------------------------------------------------- | ---------------- | -------------- |
-|"minecolonies:effects/archerdamageaddition"          |  -2 to 10        | Increases damage by Archer Guards. |
-|"minecolonies:effects/citizeninvslotsaddition"       | 0, 9, 18, and 27 | Increases the number of inventory slots for colonists. |
-|"minecolonies:effects/citizencapaddition"            | -21 to 475       | Increases the total number of colonists that may be active at a time above 25. Does not override serverconfig maximum. |
-|"minecolonies:effects/enhancesgatedurabilityaddition"| -4 to 20         | Increases the durability of MineColonies Gates when attacked by raiders. |
-|"minecolonies:effects/fleeingspeedaddition"          | 0 to 5           | Applies a Speed potion effect to injuried Guards when they flee for ten ticks, of Speed level equal to strength. |
-|"minecolonies:effects/healingsaturationlimitaddition"| 0 to 20          | **Reduces** the required saturation before a colonist gets a bonus to regeneration rate. |
-|"minecolonies:effects/healthaddition"                | -12 to 20        | Increases colonist max health. |
-|"minecolonies:effects/meleedamageaddition"           | -3 to 10         | Increases Knight Guard damage. |
-|"minecolonies:effects/workingdayhaddition"           | -2 to 2          | Increases the working day period for Worker Colonists. |
-|"minecolonies:effects/archerarmormultiplier"         | -0.8 to 2        | Increases Archer Guard armor damage reduction. |
-|"minecolonies:effects/armordurabilitymultiplier"     | 0 to 4           | Increases effective armor durability of all Guards (and other colonists that can wear armor). |
-|"minecolonies:effects/blockattacksmultiplier"        | 0 to 1           | Increases Knight Guard rate of successfully blocking attacks. |
-|"minecolonies:effects/blockbreakspeedmultiplier"     | -0.8 to 5        | Increases the Block Break speed of Miners and Builders. |
-|"minecolonies:effects/blockplacespeedmultiplier"     | -0.8 to 5        | Increases the Block Place speed of Miners and Builders. |
-|"minecolonies:effects/doublearrowsmultiplier"        | 0 to 1           | Applies a chance of Multishot effect on Archer Guards. |
-|"minecolonies:effects/farmingmultiplier"             | 0 to 1           | Applies a chance to get additional crops from farming. |
-|"minecolonies:effects/fleeingdamagemultiplier"       | -3.0 to 3.0      | Reduces damage suffered by low-health colonists when fleeing from attackers. |
-|"minecolonies:effects/growthmultiplier"              | -0.8 to 5        | Increases rate children mature. |
-|"minecolonies:effects/happinessmultiplier"           | -0.5 to 3.0      | Increases colonist Happiness. |
-|"minecolonies:effects/levelingmultiplier"            | -1 to 3.0        | Increases the rate colonists gain experience. |
-|"minecolonies:effects/meleearmormultiplier"          | -0.8 to 2        | Increases Knight Guard armor damage reduction. |
-|"minecolonies:effects/minimumstockmultiplier"        | -0.8 to 5        | Increases the number of minimum stock a building can have simultaneously. |
-|"minecolonies:effects/moreoresmultiplier"            | -0.8 to 5        | Increases chance of Miners finding additional ores when mining blocks with the <code>"#minecolonies:orechanceblocks"</code> Tag. |
-|"minecolonies:effects/podzolchancemultiplier"        | -0.8 to 5        | Increases chance of a Composter producing Podzol when composting for dirt. |
-|"minecolonies:effects/recipesmultiplier"             | -0.8 to 5        | Increases maximum number of recipes a building can contain. |
-|"minecolonies:effects/regenerationmultiplier"        | -0.8 to 3        | Increases colonist regeneration rate, if not starving. |
-|"minecolonies:effects/saturationmultiplier"          | -0.5 to 3        | Increases colonist Saturation from eating foods. |
-|"minecolonies:effects/sleeplessmultiplier"           | -5 to 1          | **Reduces** the rate Guards fall asleep when increased. |
-|"minecolonies:effects/teachingmultiplier"            | -0.8 to 5        | Increases student experience when learning from a Teacher as a child. |
-|"minecolonies:effects/tooldurabilitymultiplier"      | -5 to 10         | Increases effective durability of colonist tools, including weapons. |
-|"minecolonies:effects/walkingmultiplier"             |                  | Increases colonist walk speed. |
-|"minecolonies:effects/crushing11unlock"              |                  | If above 0, allows the Crusher to produce one output item for one input. |
-|"minecolonies:effects/consumearrowsunlock"           |                  | If above 0, allows Archer Guards to use arrows to increase damage. If they run out of arrows, they'll still fire, just for less damage. Don't think about it. |
-|"minecolonies:effects/knighttauntmobsunlock"         |                  | If above 0, allows Knights to Taunt enemies, forcing most to target the Knight. |
-|"minecolonies:effects/minerfireresunlock"            |                  | If above 0, prevents any fire or lava damage to the Miner. |
-|"minecolonies:effects/piercingarrowsunlock"          |                  | If above 0, provides Piercing II to Archer Guards. |
-|"minecolonies:effects/plant2unlock"                  |                  | If above 0, allows the Plantation to have two output materials set at once. |
-|"minecolonies:effects/platearmorunlock"              |                  | If above 0, allows the Blacksmith to make plate armor. |
-|"minecolonies:effects/railsunlock"                   |                  | If above 0, allows Colonists to magically summon carts and ride railways. |
-|"minecolonies:effects/retreatunlock"                 |                  | If above 0, allows Guards to retreat if under 20% HP. |
-|"minecolonies:effects/shieldusageunlock"             |                  | If above 0, allows Knight Guards to use and request Shields. |
-|"minecolonies:effects/whirlwindabilityunlock"        |                  | If above 0, allows Knight Guards to use a Whirlwind Attack. |
-|"minecolonies:effects/workinginrainunlock"           |                  | If above 0, allows all workers and guards to work in rain. Has no effect if the server is set to do that anyway. |
+| Effect Resource Location                              | Suggested Range  | Description                                                                                                                                                   |
+|-------------------------------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "minecolonies:effects/archerdamageaddition"           | -2 to 10         | Increases damage by Archer Guards.                                                                                                                            |
+| "minecolonies:effects/citizeninvslotsaddition"        | 0, 9, 18, and 27 | Increases the number of inventory slots for colonists.                                                                                                        |
+| "minecolonies:effects/citizencapaddition"             | -21 to 475       | Increases the total number of colonists that may be active at a time above 25. Does not override serverconfig maximum.                                        |
+| "minecolonies:effects/enhancesgatedurabilityaddition" | -4 to 20         | Increases the durability of MineColonies Gates when attacked by raiders.                                                                                      |
+| "minecolonies:effects/fleeingspeedaddition"           | 0 to 5           | Applies a Speed potion effect to injuried Guards when they flee for ten ticks, of Speed level equal to strength.                                              |
+| "minecolonies:effects/healingsaturationlimitaddition" | 0 to 20          | **Reduces** the required saturation before a colonist gets a bonus to regeneration rate.                                                                      |
+| "minecolonies:effects/healthaddition"                 | -12 to 20        | Increases colonist max health.                                                                                                                                |
+| "minecolonies:effects/meleedamageaddition"            | -3 to 10         | Increases Knight Guard damage.                                                                                                                                |
+| "minecolonies:effects/workingdayhaddition"            | -2 to 2          | Increases the working day period for Worker Colonists.                                                                                                        |
+| "minecolonies:effects/archerarmormultiplier"          | -0.8 to 2        | Increases Archer Guard armor damage reduction.                                                                                                                |
+| "minecolonies:effects/armordurabilitymultiplier"      | 0 to 4           | Increases effective armor durability of all Guards (and other colonists that can wear armor).                                                                 |
+| "minecolonies:effects/blockattacksmultiplier"         | 0 to 1           | Increases Knight Guard rate of successfully blocking attacks.                                                                                                 |
+| "minecolonies:effects/blockbreakspeedmultiplier"      | -0.8 to 5        | Increases the Block Break speed of Miners and Builders.                                                                                                       |
+| "minecolonies:effects/blockplacespeedmultiplier"      | -0.8 to 5        | Increases the Block Place speed of Miners and Builders.                                                                                                       |
+| "minecolonies:effects/doublearrowsmultiplier"         | 0 to 1           | Applies a chance of Multishot effect on Archer Guards.                                                                                                        |
+| "minecolonies:effects/farmingmultiplier"              | 0 to 1           | Applies a chance to get additional crops from farming.                                                                                                        |
+| "minecolonies:effects/fleeingdamagemultiplier"        | -3.0 to 3.0      | Reduces damage suffered by low-health colonists when fleeing from attackers.                                                                                  |
+| "minecolonies:effects/growthmultiplier"               | -0.8 to 5        | Increases rate children mature.                                                                                                                               |
+| "minecolonies:effects/happinessmultiplier"            | -0.5 to 3.0      | Increases colonist Happiness.                                                                                                                                 |
+| "minecolonies:effects/levelingmultiplier"             | -1 to 3.0        | Increases the rate colonists gain experience.                                                                                                                 |
+| "minecolonies:effects/meleearmormultiplier"           | -0.8 to 2        | Increases Knight Guard armor damage reduction.                                                                                                                |
+| "minecolonies:effects/minimumstockmultiplier"         | -0.8 to 5        | Increases the number of minimum stock a building can have simultaneously.                                                                                     |
+| "minecolonies:effects/moreoresmultiplier"             | -0.8 to 5        | Increases chance of Miners finding additional ores when mining blocks with the <code>"#minecolonies:orechanceblocks"</code> Tag.                              |
+| "minecolonies:effects/podzolchancemultiplier"         | -0.8 to 5        | Increases chance of a Composter producing Podzol when composting for dirt.                                                                                    |
+| "minecolonies:effects/recipesmultiplier"              | -0.8 to 5        | Increases maximum number of recipes a building can contain.                                                                                                   |
+| "minecolonies:effects/regenerationmultiplier"         | -0.8 to 3        | Increases colonist regeneration rate, if not starving.                                                                                                        |
+| "minecolonies:effects/saturationmultiplier"           | -0.5 to 3        | Increases colonist Saturation from eating foods.                                                                                                              |
+| "minecolonies:effects/sleeplessmultiplier"            | -5 to 1          | **Reduces** the rate Guards fall asleep when increased.                                                                                                       |
+| "minecolonies:effects/teachingmultiplier"             | -0.8 to 5        | Increases student experience when learning from a Teacher as a child.                                                                                         |
+| "minecolonies:effects/tooldurabilitymultiplier"       | -5 to 10         | Increases effective durability of colonist tools, including weapons.                                                                                          |
+| "minecolonies:effects/walkingmultiplier"              |                  | Increases colonist walk speed.                                                                                                                                |
+| "minecolonies:effects/crushing11unlock"               |                  | If above 0, allows the Crusher to produce one output item for one input.                                                                                      |
+| "minecolonies:effects/consumearrowsunlock"            |                  | If above 0, allows Archer Guards to use arrows to increase damage. If they run out of arrows, they'll still fire, just for less damage. Don't think about it. |
+| "minecolonies:effects/knighttauntmobsunlock"          |                  | If above 0, allows Knights to Taunt enemies, forcing most to target the Knight.                                                                               |
+| "minecolonies:effects/minerfireresunlock"             |                  | If above 0, prevents any fire or lava damage to the Miner.                                                                                                    |
+| "minecolonies:effects/piercingarrowsunlock"           |                  | If above 0, provides Piercing II to Archer Guards.                                                                                                            |
+| "minecolonies:effects/plant2unlock"                   |                  | If above 0, allows the Plantation to have two output materials set at once.                                                                                   |
+| "minecolonies:effects/platearmorunlock"               |                  | If above 0, allows the Blacksmith to make plate armor.                                                                                                        |
+| "minecolonies:effects/railsunlock"                    |                  | If above 0, allows Colonists to magically summon carts and ride railways.                                                                                     |
+| "minecolonies:effects/retreatunlock"                  |                  | If above 0, allows Guards to retreat if under 20% HP.                                                                                                         |
+| "minecolonies:effects/shieldusageunlock"              |                  | If above 0, allows Knight Guards to use and request Shields.                                                                                                  |
+| "minecolonies:effects/whirlwindabilityunlock"         |                  | If above 0, allows Knight Guards to use a Whirlwind Attack.                                                                                                   |
+| "minecolonies:effects/workinginrainunlock"            |                  | If above 0, allows all workers and guards to work in rain. Has no effect if the server is set to do that anyway.                                              |
 
 ### MineColonies Building Unlocks
 
@@ -349,10 +349,10 @@ There are also sample data packs on the [citizen names](../../source/misc/custom
 
 The citizen name files have the following components:
 
-| Key Name                      | Type       | Description |
-| ----------------------------- | ---------- | ----------- |
-| <code>"parts"</code>          | integer    | `2` or `3`. This determines whether a middle letter is used in the name (if it is 3) |
-| <code>"order"</code>          | string     | `"WESTERN"` or `"EASTERN"`. In case of EASTERN, the surname is shown first |
-| <code>"male_firstname"</code> | Array of Strings | A list of the male first names |
-| <code>"female_firstname"</code> | Array of Strings | A list of the female first names |
-| <code>"surnames"</code>       | Array of Strings | A list of the surnames for the citizens |
+| Key Name                        | Type             | Description                                                                          |
+|---------------------------------|------------------|--------------------------------------------------------------------------------------|
+| <code>"parts"</code>            | integer          | `2` or `3`. This determines whether a middle letter is used in the name (if it is 3) |
+| <code>"order"</code>            | string           | `"WESTERN"` or `"EASTERN"`. In case of EASTERN, the surname is shown first           |
+| <code>"male_firstname"</code>   | Array of Strings | A list of the male first names                                                       |
+| <code>"female_firstname"</code> | Array of Strings | A list of the female first names                                                     |
+| <code>"surnames"</code>         | Array of Strings | A list of the surnames for the citizens                                              |
