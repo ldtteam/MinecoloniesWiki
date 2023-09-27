@@ -23,9 +23,9 @@ layout: default
     - [MineColonies Building Unlocks](#minecolonies-building-unlocks)
   - [Citizen names](#citizen-names)
 
-MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the Minecraft wiki](<https://Minecraft.wiki/w/Data_Pack>).
+MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the Minecraft wiki](<https://minecraft.wiki/w/Data_Pack>).
 
-Data packs exist as part of a world, and they must be [installed](https://Minecraft.wiki/w/Tutorials/Installing_a_data_pack) on each world.
+Data packs exist as part of a world, and they must be [installed](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack) on each world.
 
 ## Concepts
 
@@ -35,7 +35,7 @@ The JSON format is both generous and fastidious. It does not particularly care i
 
 For most users, looking at other similar JSONs will be the fastest way to get started. For those interested in the specific rules of the format, [see here](https://www.json.org/json-en.html).
 
-The data pack folder or zip file can be any valid file name, and will be used to determine the name of the data pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](<https://Minecraft.wiki/w/Data_Pack#pack.mcmeta>). It is strongly encouraged to provide a distinct name and description for your data pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a data pack, this should also contain a "data" directory.
+The data pack folder or zip file can be any valid file name, and will be used to determine the name of the data pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](<https://minecraft.wiki/w/Data_Pack#pack.mcmeta>). It is strongly encouraged to provide a distinct name and description for your data pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a data pack, this should also contain a "data" directory.
 
 Each folder within that "data" directory acts as a different **namespace**. Most mods have their own namespaces; for MineColonies, this is "minecolonies". As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (`_`), dashes (-), and/or dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
 
@@ -46,7 +46,7 @@ Files that exactly match the namespace, directory, and name of a file from vanil
 
 | Keyword           | Explanation                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Resource Location | The common word for Mojang's [Namespaced IDs](https://Minecraft.wiki/w/Namespaced_ID#Namespaces). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of Minecraft to uniquely identify nearly everything.                                                                                                             |
+| Resource Location | The common word for Mojang's [Namespaced IDs](https://minecraft.wiki/w/Namespaced_ID#Namespaces). A string of format <code>namespace:path</code>, with strict limitations on allowed characters, all lower-case, and only one colon (:). Used heavily in newer versions of Minecraft to uniquely identify nearly everything.                                                                                                             |
 | Namespace         | The first half of a Resource Location, before the colon (:). In <code>minecraft:cobblestone</code>, "minecraft" is the namespace. Commonly used namespaces are "minecraft", "forge", and "minecolonies". Modpack makers may want to select their own namespace to avoid potential conflicts. In data packs, namespaces are derived from the names of the folders at the top level within the "data" directory.                                   |
 | Data Location     | The internal location within namespaces that Minecraft and mods examine for specific uses, such as <code>tags/blocks</code> for Block Tags, or <code>crafterrecipes</code> for Crafter Recipes. Only JSONs within a known data location are applied by Minecraft or Minecraft mods, and Data Locations control how these JSONs apply and what format is expected. Relevant Data Locations are described in more detail throughout this document. |
 | Path              | The second half of a Resource Location, after the colon (:). In <code>minecraft:cobblestone</code>, "cobblestone" is the path. In data packs, Paths are derived from the folders and filenames within a specific Data Location. <code>data/minecraft/tags/items/cobblestone.json</code> will have a namespace of "minecraft", a Data Location of "tag/items", a path of "cobblestone".                                                           |
@@ -91,7 +91,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 
  The only other supported name-value pair for a Tag JSON is the <code>"value":</code> Name. This accepts an Array of identifiers or tags as individual Resource Location strings. These string must contain the namespace and an item identifier in resource location format, matching either a single object of that tag's type, or another Tag prefixed by the # symbol. Missing or mistyped targets may cause the file to be ignored, or for Minecraft to throw an error on world load. Use the Advanced Tooltip functionality (F3 + H) in Minecraft to turn on display of Resource Locations in item tooltips for help finding specific strings.
 
- A typical tag file to add cobblestone and every type of vanilla anvil to a Tag would thus look like :
+ A typical tag file to add cobblestone and every type of vanilla anvil to a Tag would thus look like:
 
 {% highlight json linenos %}
 {
@@ -157,7 +157,7 @@ The <code>"description"</code>'s value is displayed to the user as an in-game ti
 | <code>minecraft</code>       | <code>small_flowers</code>             | Grown by a building level 1 or 2 {% worker_link florist %}, if they have a valid block form, and are in #minecolonies:florist_flowers. |
 | <code>minecraft</code>       | <code>wool</code>                      | Used to by the Dyer to produce white wool, if not already White Wool. |
 
-**Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://Minecraft.wiki/w/Tag #List_of_tags) for Minecraft behaviors.**
+**Some Vanilla and Forge Item Tags are very expansive, or are used by some mods in ways that might surprise you. See [list of tags](https://minecraft.wiki/w/Tag#List_of_tags) for Minecraft behaviors.**
 
 ### Crafter Item Tags
 
@@ -185,7 +185,7 @@ While Item Tags determine the recipes that workers can be taught, colonists can 
 |                                    | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1.                                                                                                                                                                                                         |
 | <code>"result"</code>              |                      | string           | The Resource Location identifier of the item the recipe produces.                                                                                                                                                                                                                   |
 | <code>"count"</code>               |                      | integer          | The count of <code>"result"</code> items that should be returned. If not present, defaults to 1.                                                                                                                                                                                    |
-| <code>"loot-table"</code>          |                      | string           | The Resource Location of a [loot table](https://Minecraft.wiki/w/Loot_table), used for outputs that require some randomization.                                                                                                                                            |
+| <code>"loot-table"</code>          |                      | string           | The Resource Location of a [loot table](https://minecraft.wiki/w/Loot_table), used for outputs that require some randomization.                                                                                                                                            |
 | <code>"additional-output"</code>   |                      | Object           | The <code>"item"</code> and <code>"count"</code> of a single additional output item.                                                                                                                                                                                                |
 |                                    | <code>"item"</code>  | string           | The Resource Location identifier of an item consumed by the recipe.                                                                                                                                                                                                                 |
 |                                    | <code>"count"</code> | integer          | The number of that item consumed by default. If not present, defaults to 1.                                                                                                                                                                                                         |
@@ -207,11 +207,11 @@ For example crafter recipes, and their canonical names, see GitHub [here](https:
 
 ## Player Recipes
 
-**Player Recipes** can be added by data packs using vanilla features, by adding to the <code>recipes</code> Data Location. See the [Minecraft wiki](https://Minecraft.wiki/w/Recipe) for details, and the [GitHub for MineColonies default recipes](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/recipes).
+**Player Recipes** can be added by data packs using vanilla features, by adding to the <code>recipes</code> Data Location. See the [Minecraft wiki](https://minecraft.wiki/w/Recipe) for details, and the [GitHub for MineColonies default recipes](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/recipes).
 
 ## Loot Tables
 
-**Loot Tables** control a variety of item drop behaviors, and can be used to add randomized chance to Crafter Recipes. They are loaded from <code>loot_tables</code>. See the [Minecraft wiki](https://Minecraft.wiki/w/Loot_table) for technical details, and the GitHub for some MineColonies default loot tables [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/loot_tables) and [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/loot_tables).
+**Loot Tables** control a variety of item drop behaviors, and can be used to add randomized chance to Crafter Recipes. They are loaded from <code>loot_tables</code>. See the [Minecraft wiki](https://minecraft.wiki/w/Loot_table) for technical details, and the GitHub for some MineColonies default loot tables [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/main/resources/data/minecolonies/loot_tables) and [here](https://github.com/ldtteam/minecolonies/tree/version/main/src/datagen/generated/minecolonies/data/minecolonies/loot_tables).
 
 ## Research Customization
 
