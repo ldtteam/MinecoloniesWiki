@@ -14,7 +14,7 @@ The level of the Mine will dictate how deep the Miner will mine:
 
 | Mine Level | Shaft Y Level | Shaft Y Level |
 |------------|---------------|---------------|
-|            | 1.16          | 1.18          |
+|            | 1.16          | 1.18+         |
 | 1          | 50            | 40            |
 | 2          | 30            | 20            |
 | 3          | Bedrock       | 0             |
