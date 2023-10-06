@@ -99,7 +99,7 @@ Stylepacks live in the blueprints folder, within your Minecraft folder. This fol
 This json file contains metadata describing the style:
 
 | Key Name                   | Type             | Description                                                                                                            |
-|----------------------------|------------------|------------------------------------------------------------------------------------------------------------------------|
+| -------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | <code>"version"</code>     | number           | Pack version, start at 1, increase it whenever you make a new version of the pack                                      |
 | <code>"pack-format"</code> | number           | Descriptor for the pack format, needs to be 1 at the moment                                                            |
 | <code>"desc"</code>        | string           | Description of the style. This will be visible in the build tool to explain what your style is about                   |
@@ -218,7 +218,7 @@ The schematics are visible in the build tool without the hut block, but you can'
 Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note *do not use capital letters in hut names*.
 
 | Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
-|:---------------|:---------------|:---------------|:---------------|:---------------|
+| :------------- | :------------- | :------------- | :------------- | :------------- |
 | archery1       | archery2       | archery3       | archery4       | archery5       |
 | alchemist1     | alchemist2     | alchemist3     | alchemist4     | alchemist5     |
 | baker1         | baker2         | baker3         | baker4         | baker5         |
@@ -273,7 +273,7 @@ The process for custom [supply ships and camps](../../source/items/supplycampand
 
 {% version "1.18.2" before=true %}
 | Camp or Ship | File Name and Path                                |
-|--------------|---------------------------------------------------|
+| ------------ | ------------------------------------------------- |
 | Camp         | structurize/schematics/supplycamp/myownsupplycamp |
 | Ship         | structurize/schematics/supplyship/myownsupplyship |
 
@@ -282,7 +282,7 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 
 {% version "1.19" after=true %}
 | Camp or Ship | File Name and Path                                            |
-|--------------|---------------------------------------------------------------|
+| ------------ | ------------------------------------------------------------- |
 | Camp         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplycamp |
 | Ship         | blueprints/&lt;myownstyle&gt;/decorations/supplies/supplyship |
 | Nether Ship  | blueprints/&lt;myownstyle&gt;/decorations/supplies/nethership |
@@ -295,7 +295,7 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 ## Hut Requirements
 
 | Building                          | Requirements                                                                                                               | Suggested                                                                                                                                  |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | {% building_link archery %}       | 1 archery dummy (a hay bale with a button on it); 1 bed per level                                                          | at least 1 standing position per level (a glowstone block, or any block tagged with `work`)                                                |
 | {% building_link alchemist %}     | 1 brewing stand per level; 2 soul sand per level starting at level 2 (with 4 soul sand); leaves next to logs, i.e. "trees" |                                                                                                                                            |
 | {% building_link bakery %}        | 1 furnace                                                                                                                  |                                                                                                                                            |
@@ -330,7 +330,7 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 ## Level Requirements for Overworld Styles
 
 | Level   | Requirements         |
-|---------|----------------------|
+| ------- | -------------------- |
 | Level 1 | Very Easy - Wooden   |
 | Level 2 | Easy - Iron          |
 | Level 3 | Medium - Nether      |
@@ -340,7 +340,7 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 ## Level Requirements for Nether Styles
 
 | Level   | Requirements         |
-|---------|----------------------|
+| ------- | -------------------- |
 | Level 1 | Very Easy - Nether   |
 | Level 2 | Easy - Rarer Nether  |
 | Level 3 | Medium - Overworld   |
@@ -350,7 +350,7 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 {% version "1.19.2" after=true %}
 ## Plantation Fields
 
-In 1.19.2 and beyond, the plantation has been changed to include fields, just like the farmer. However, unlike the farmer, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the planter to do their work successfully.
+In 1.19.2 and beyond, the plantation has been changed to include fields, just like the {% worker_link farmer %}. However, unlike the {% worker_link farmer %}, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the {% worker_link planter %} to do their work successfully.
 
 Each plant has 2 separate tags: a field tag and a work tag.
 The field tags are given to the plantation field block to define what plants this field handles. The work tag is given based on the implementation of the field.
@@ -358,7 +358,7 @@ The field tags are given to the plantation field block to define what plants thi
 A field can have as many field tags as you want, but not 2 of the same.
 
 | Plant          | Field tag       | Work tag        | Maximum work tags                         |
-|----------------|-----------------|-----------------|-------------------------------------------|
+| -------------- | --------------- | --------------- | ----------------------------------------- |
 | Sugar cane     | sugar_field     | sugar           | 20                                        |
 | Cactus         | cactus_field    | cactus          | 20                                        |
 | Bamboo         | bamboo_field    | bamboo          | 20                                        |
@@ -366,15 +366,15 @@ A field can have as many field tags as you want, but not 2 of the same.
 | Vine           | vine_field      | vine            | 20                                        |
 | Kelp           | kelp_field      | kelp            | 20                                        |
 | Seagrass       | seagrass_field  | seagrass        | 121 (11 x 11 area)                        |
-| Sea pickles    | seapickle_field | seapickle       | 10                                        |
-| Glowberries    | glowb_field     | glowb_vine      | 20                                        |
-| Weeping vines  | weepv_field     | weepv_vine      | 20                                        |
-| Twisting vines | twistv_field    | twistv_vine     | 20                                        |
-| Crimson plants | crimsonp_field  | crimsonp_ground | 121 (11 x 11 area)                        |
-| Warped plants  | warpedp_field   | warpedp_ground  | 121 (11 x 11 area)                        |
+| Sea Pickles    | seapickle_field | seapickle       | 10                                        |
+| Glow Berries   | glowb_field     | glowb_vine      | 20                                        |
+| Weeping Vines  | weepv_field     | weepv_vine      | 20                                        |
+| Twisting Vines | twistv_field    | twistv_vine     | 20                                        |
+| Crimson Plants | crimsonp_field  | crimsonp_ground | 121 (11 x 11 area)                        |
+| Warped Plants  | warpedp_field   | warpedp_ground  | 121 (11 x 11 area)                        |
 
-The planter will always attempt to walk to any adjacent air block around the planting position. If none of the adjacent positions are air, the planter will attempt to walk to the block itself. This prevents the planter from standing on the block itself whilst, for example, placing a block down like cactus, after which the planter would be standing inside of the plant.
-*Note*: Make sure that the planter can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
+The {% worker_link planter %} will always attempt to walk to any adjacent air block around the planting position. If none of the adjacent positions are air, the planter will attempt to walk to the block itself. This prevents the {% worker_link planter %} from standing on the block itself whilst, for example, placing a block down like cactus, after which the {% worker_link planter %} would be standing inside of the plant.
+*Note*: Make sure that the {% worker_link planter %} can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
 
 <table>
 <tbody>
@@ -416,7 +416,7 @@ Each of these plants have a minimum and sometimes a maximum growth height.
 The planter can only harvest them when they reach the minimum. If plants have a maximum height, the planter will have an increasingly higher chance to harvest the plant the taller it gets. Plants are only required to grow to the minimum height within the bounds of the schematic.
 
 | Plant          | Minimum height | Maximum height |
-|----------------|----------------|----------------|
+| -------------- | -------------- | -------------- |
 | Sugar cane     | 3              | N/A            |
 | Cactus         | 3              | N/A            |
 | Bamboo         | 6              | 16             |
@@ -440,7 +440,7 @@ The amount of planting positions on these fields are usually unlimited because b
 Every bonemealed plant works slightly differently.
 
 | Plant          | Work tag location                                                                                                                                                                                                                                        |                                                                                                   |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | Seagrass       | The block directly below the water should tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag.                                        | ![Seagrass explanation](/assets/images/buildings/plantation/planter_seagrass_explanation.png)     |
 | Sea pickles    | The block directly below the water should tagged. The planter will initially place the pickles, then bonemeal the pickles to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks that are tagged with the work tag. | ![Sea Pickle explanation](/assets/images/buildings/plantation/planter_seapickles_explanation.png) |
 | Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
@@ -451,7 +451,7 @@ Every bonemealed plant works slightly differently.
 Percentage based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants &mdash; such as vines &mdash; should then naturally spread to their surroundings without the player's help. The planter has no involvement in this process.
 
 | Plant | Tag location                                                                                                    |
-|-------|-----------------------------------------------------------------------------------------------------------------|
+| ----- | --------------------------------------------------------------------------------------------------------------- |
 | Vine  | Tag all the positions where the vines themselves can spread to, NOT the blocks where the vines are attached to. |
 
 {% endversion %}
