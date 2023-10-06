@@ -34,8 +34,8 @@ The {% building %} is where the {% worker_link planter %} will grow a variety of
 - Crimson Plants ([Crimson Roots](https://minecraft.wiki/w/Roots) and [Crimson Fungus](https://minecraft.wiki/w/Fungus))
 - Warped Plants ([Warped Roots](https://minecraft.wiki/w/Roots) and [Warped Fungus](https://minecraft.wiki/w/Fungus))
 
-This works through the means of fields, these fields are schematics (part of your style pack) that the builder can construct.
-Each of these fields have different requirements which is outlined on the [Schematics](/source/tutorials/schematics#plantation-fields) page in case you want to build your own.
+Each plant is grown on fields, which can be schematics (part of your style pack) that the builder can construct.
+Howevr, these fields have different requirements as outlined on the [Schematics](/source/tutorials/schematics#plantation-fields) page.
 
 > These do **not** work like {% building_link farm %} fields where you only have to place a scarecrow down!
 
