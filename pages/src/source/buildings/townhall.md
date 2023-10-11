@@ -86,9 +86,9 @@ Alternatively, if you have the proper permissions, you can use [commands](../../
 {% endbuilding_gui_content_block_custom %}
 
 {% building_gui_content_block_custom image_key="th_permissions2" image_alt="Townhall permissions" cols=6 %}
-**Page 1:** Here you type the name of the player you want to add.
+**Page 3:** Here you can select the rank that you would like to manage.
 
-**Page 2:** Shows the list of players that have ben added as well as their current rank. You can click on the "-" or "+" to give them a higher rank or lower rank.
+**Page 4:** Here are the individual permissions (for the rank you have selected on the previous page) that you can toggle *ON* or *OFF*, giving each rank the permission you want. **Note:** the Fight Guards permission causes Guards to treat the player as an enemy and attack them. It is only recommended for Hostile players.
 {% endbuilding_gui_content_block_custom %}
 
 {% building_gui_content_block_custom image_key="th_permissions3" image_alt="Townhall permissions" cols=6 %}
