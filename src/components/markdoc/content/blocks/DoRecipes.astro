@@ -1,0 +1,32 @@
+---
+import { getBuildingData, getBuildingName } from '../../../../util/building';
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { CraftingContentBlockProps } from '../types';
+
+type Props = CraftingContentBlockProps;
+
+const { name, noRemove, noTeach } = Astro.props;
+
+const buildingData = await getBuildingData(name);
+
+const content = `Here you can see all the [Domum Ornamentum](../dependencies/domumornamentum) recipes this hut knows. These are crafted just like you were using an Architects cutter.
+The arrows allow you to move them up or down in priority. You are also able to disable ${
+  noRemove ? '' : 'or remove'
+} specific recipes.
+${
+  noTeach
+    ? ''
+    : `- **Teach Recipe:** When clicking teach recipe, it opens a crafting menu for the Architects Cutter. It will show multiple inputs, similar to the amount of inputs in the Architects Cutter. When you have put the items in the slots, you will see various items below the input slots, the ${getBuildingName(
+        buildingData,
+        false
+      )} can create **ALL** of those items from the recipe you have input.`
+}`;
+---
+
+<BuildingContentBlock
+  {...Astro.props}
+  header="crafting recipes"
+  imageKey="crafting-recipes"
+  imageAlt="Crafting recipes"
+  markdownContent={content}
+/>

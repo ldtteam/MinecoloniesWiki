@@ -1,13 +1,13 @@
 ---
 type: building
 building: sifter
-layout: building
 ---
-{% infobox_building %}
+
+{% building_infobox name="sifter" %}
 The Sifter's Hut is where the Sifter will sift through dirt, gravel, sand, or soul sand to find loot. Doing this will make the block the Sifter is sifting disappear. 
 
 | Sifted Block | Chance for        |
-|--------------|-------------------|
+| ------------ | ----------------- |
 | Dirt         | Beetroot seeds    |
 | Dirt         | Carrots           |
 | Dirt         | Melon seeds       |
@@ -43,7 +43,7 @@ The Sifter's Hut is where the Sifter will sift through dirt, gravel, sand, or so
 You can choose between four meshes. The higher the level of the mesh, the higher the likelihood that the Sifter will find loot.
 
 | Hut Level | Mesh Available |
-|-----------|----------------|
+| --------- | -------------- |
 | 1         | String         |
 | 3         | Flint          |
 | 4         | Iron           |
@@ -52,16 +52,16 @@ You can choose between four meshes. The higher the level of the mesh, the higher
 The Sifter's Hut can sift a certain amount of blocks per day:
 
 | Hut Level | Maximum Blocks |
-|-----------|----------------|
+| --------- | -------------- |
 | 1         | 64 blocks      |
 | 2         | 256 blocks     |
 | 3         | 576 blocks     |
 | 4         | 1024 blocks    |
 | 5         | Unlimited      |
-{% endinfobox_building %}
+{% /building_infobox %}
 
-## {% building %} GUI
+## {% building name="sifter" /%} GUI
 
-{% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 noteach=true noremove=true %}
-{% building_gui_content_block_stock order=3 %}
+{% building_gui_content_block_main name="sifter" order=1 /%}
+{% building_gui_content_block_crafting_recipes name="sifter" order=2 noTeach=true noRemove=true /%}
+{% building_gui_content_block_stock name="sifter" order=3 /%}

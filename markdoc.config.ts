@@ -7,7 +7,12 @@ import {
 } from '@astrojs/markdoc/config';
 import shiki from '@astrojs/markdoc/shiki';
 
-import { building, building_infobox, building_link } from './markdoc/buildings';
+import {
+  building,
+  building_infobox,
+  building_link,
+  contentBlocks as buildingContentBlocks
+} from './markdoc/buildings';
 import { research_list, research_trees } from './markdoc/research';
 import { version } from './markdoc/version';
 import { worker, worker_link } from './markdoc/workers';
@@ -56,5 +61,12 @@ export const config: AstroMarkdocConfig = {
     })
   ]
 };
+
+for (const [name, buildingContentBlockTag] of Object.entries(
+  buildingContentBlocks
+)) {
+  config.tags![`building_gui_content_block_${name.toLocaleLowerCase()}`] =
+    buildingContentBlockTag;
+}
 
 export default defineMarkdocConfig(config);

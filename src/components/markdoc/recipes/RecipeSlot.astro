@@ -37,13 +37,15 @@ function getItemName(name: string) {
             idx === 0 && items.length > 1 ? 'active' : ''
           ]}
         >
-          <img
-            src={`/images/icons/${item}.png`}
-            alt={getItemName(item)}
-            class="inv-sprite"
-            data-bs-toggle="tooltip"
-            title={getItemName(item)}
-          />
+          {item !== '' && (
+            <img
+              src={`/images/icons/${item}.png`}
+              alt={getItemName(item)}
+              class="inv-sprite"
+              data-bs-toggle="tooltip"
+              title={getItemName(item)}
+            />
+          )}
           {amount > 1 && (
             <div class="invslot-stacksize">
               <span>{amount}</span>

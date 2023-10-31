@@ -8,4 +8,4 @@ effects:
   primary: More XP collected per trip
   secondary: Higher level of enchanted books
 buildings:
-  - enchantertower
+  - enchanter

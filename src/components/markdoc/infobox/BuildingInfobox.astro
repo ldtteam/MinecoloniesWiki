@@ -1,22 +1,27 @@
 ---
 import Infobox from './Infobox.astro';
-import { getBuildingData } from '../../../util/building';
+import { getBuildingData, getBuildingName } from '../../../util/building';
 import WorkerName from '../WorkerName.astro';
 import { getCollection } from 'astro:content';
 import Recipe from '../recipes/Recipe.astro';
+import { Image } from 'astro:assets';
 
 interface Props {
-  building: string;
+  name: string;
 }
 
-const building = Astro.props.building;
-const buildingData = await getBuildingData(building);
+const { name } = Astro.props;
+const buildingData = await getBuildingData(name);
+
+const importedImage = (
+  await import(`../../../assets/images/wiki/buildings/${name}.png`)
+).default;
 
 const research = (
   await getCollection('research', (filter) =>
     filter.data.effects
       ? Object.keys(filter.data.effects).find(
-          (effect) => effect.replace('blockhut', '') === building
+          (effect) => effect.replace('blockhut', '') === name
         )
       : false
   )
@@ -31,12 +36,13 @@ const recipes = buildingData.data.recipes ?? [];
     <slot />
   </div>
 
-  <Infobox
-    title={buildingData.data.name}
-    image={`/images/buildings/${building}.png`}
-    image_alt={`${buildingData.data.name} block`}
-    class="col-md-auto col-12 infobox-small"
-  >
+  <Infobox title={buildingData.data.name} class="col-md-auto col-12" small>
+    <Image
+      src={importedImage}
+      alt={`${getBuildingName(buildingData, false)} block`}
+      width={250}
+    />
+
     {
       workers.length !== 0 && (
         <>
@@ -50,7 +56,7 @@ const recipes = buildingData.data.recipes ?? [];
             <div class="col">
               {workers.map((worker) => (
                 <p class="m-0">
-                  <WorkerName worker={worker.id} link />
+                  <WorkerName name={worker.id} link />
                 </p>
               ))}
             </div>
@@ -118,9 +124,5 @@ const recipes = buildingData.data.recipes ?? [];
     .infobox-wrapper {
       flex-direction: row;
     }
-  }
-
-  :global(.infobox-small) {
-    width: min-content;
   }
 </style>

@@ -1,26 +1,26 @@
 ---
 type: building
 building: sawmill
-layout: building
 ---
-{% infobox_building %}
+
+{% building_infobox name="sawmill" %}
 The Sawmill is where the Carpenter will craft any items made of at least 75% wood that do not include ingots, stone, redstone (or produce a redstone signal), or string. The Carpenter will also craft a few other items, including [compost barrels](../../source/items/compostbarrel) and [racks](../../source/items/rack), as well as [Domum Ornamentum](../../source/dependencies/domumornamentum) blocks that include wood. For them to do this, you must teach the Sawmill the recipes and the Carpenter must receive a request for an item from another worker.
 
 **Hint:** The number of recipes you can teach the Sawmill doubles per building level. So:
 
 | Sawmill Level | Number of Recipes |
-|---------------|-------------------|
+| ------------- | ----------------- |
 | 1             | 10                |
 | 2             | 20                |
 | 3             | 40                |
 | 4             | 80                |
 | 5             | 160               |
-{% endinfobox_building %}
+{% /building_infobox %}
 
-## {% building %} GUI
+## {% building name="sawmill" /%} GUI
 
-{% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
-{% building_gui_content_block_dorecipes order=3 %}
-{% building_gui_content_block_tasks order=4 %}
-{% building_gui_content_block_settings order=5 %}
+{% building_gui_content_block_main name="baker" order=1 /%}
+{% building_gui_content_block_crafting_recipes name="baker" order=2 /%}
+{% building_gui_content_block_do_recipes name="baker" order=3 /%}
+{% building_gui_content_block_tasks name="baker" order=4 /%}
+{% building_gui_content_block_settings name="baker" order=5 /%}

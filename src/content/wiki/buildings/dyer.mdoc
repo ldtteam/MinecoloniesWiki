@@ -1,27 +1,25 @@
 ---
 type: building
 building: dyer
-layout: building
 ---
-{% infobox_building %}
+
+{% building_infobox name="dyer" %}
 The Dyer's Hut is where the Dyer will craft dyes and dye other items, including red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows how to make green dye and red sand, but you must teach it the recipes for the other dyes and the dyed items.
 
 **Hint:** The number of recipes you can teach the Dyer's Hut doubles per building level. So:
 
 | Dyer's Hut Level | Number of Recipes |
-|------------------|-------------------|
+| ---------------- | ----------------- |
 | 1                | 10                |
 | 2                | 20                |
 | 3                | 40                |
 | 4                | 80                |
 | 5                | 160               |
 
-<br>
-
 **Hint:** The higher the level of the Dyer's Hut, the more furnaces the Dyer will have available. The number of furnaces they *use* depends on their Creativity level. So:
 
 | Dyer's Hut Level | Furnaces |
-|------------------|----------|
+| ---------------- | -------- |
 | 1                | 1        |
 | 2                | 2        |
 | 3                | 3        |
@@ -29,13 +27,13 @@ The Dyer's Hut is where the Dyer will craft dyes and dye other items, including 
 | 5                | 5        |
 
 **Hint:** The higher the Dyer's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
-{% endinfobox_building %}
+{% /building_infobox %}
 
-## {% building %} GUI
+## {% building name="dyer" /%} GUI
 
-{% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
-{% building_gui_content_block_smeltingrecipes order=3 %}
-{% building_gui_content_block_fuel order=4 %}
-{% building_gui_content_block_tasks order=5 %}
-{% building_gui_content_block_settings order=6 %}
+{% building_gui_content_block_main name="dyer" order=1 /%}
+{% building_gui_content_block_crafting_recipes name="dyer" order=2 /%}
+{% building_gui_content_block_smelting_recipes name="dyer" order=3 /%}
+{% building_gui_content_block_fuel name="dyer" order=4 /%}
+{% building_gui_content_block_tasks name="dyer" order=5 /%}
+{% building_gui_content_block_settings name="dyer" order=6 /%}

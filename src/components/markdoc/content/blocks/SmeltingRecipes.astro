@@ -1,0 +1,26 @@
+---
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { CraftingContentBlockProps } from '../types';
+
+type Props = CraftingContentBlockProps;
+
+const { noRemove, noTeach } = Astro.props;
+
+const content = `Here you can see all the smelting recipes this hut knows.
+The arrows allow you to move them up or down in priority. You are also able to disable ${
+  noRemove ? '' : 'or remove'
+} specific recipes.
+${
+  noTeach
+    ? ''
+    : '- **Teach Recipe:** When clicking teach recipe, it opens a furnace grid which allows you to teach this hut smelting recipes (not the worker). Place the item to smelt in the upper slot. You do not need to put anything in the fuel slot. The worker will automatically pick any fuel.'
+}`;
+---
+
+<BuildingContentBlock
+  {...Astro.props}
+  header="smelting recipes"
+  imageKey="smelting-recipes"
+  imageAlt="Smelting recipes"
+  markdownContent={content}
+/>

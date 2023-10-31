@@ -1,0 +1,41 @@
+---
+import { getBuildingData } from '../../../../util/building';
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { BaseContentBlockProps } from '../types';
+
+type Props = BaseContentBlockProps;
+
+const { name } = Astro.props;
+
+const buildingData = await getBuildingData(name);
+---
+
+{
+  buildingData.data.settings && (
+    <BuildingContentBlock
+      {...Astro.props}
+      header="settings"
+      imageKey="settings"
+      imageAlt="Settings"
+    >
+      <ul>
+        {buildingData.data.settings.map((setting) => (
+          <>
+            <li>
+              <b>{setting.name}</b>: {setting.description}
+            </li>
+            {setting.options && (
+              <ul>
+                {setting.options.map((option) => (
+                  <li>
+                    <b>{option.name}</b>: {option.description}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </>
+        ))}
+      </ul>
+    </BuildingContentBlock>
+  )
+}

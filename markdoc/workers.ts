@@ -4,7 +4,7 @@ export const worker = {
   render: component('./src/components/markdoc/WorkerName.astro'),
   selfClosing: true,
   attributes: {
-    worker: {
+    name: {
       type: String,
       required: true
     },
@@ -25,7 +25,7 @@ export const worker_link = {
   render: component('./src/components/markdoc/WorkerName.astro'),
   selfClosing: true,
   attributes: {
-    worker: {
+    name: {
       type: String,
       required: true
     },

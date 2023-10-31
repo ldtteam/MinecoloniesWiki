@@ -3,24 +3,33 @@ type: building
 building: builder
 ---
 
-{% building_infobox building="builder" %}
-### Before you build *any* other building, you must build the {% building building="builder" /%}. If the {% building building="builder" /%} is not built, the {% worker worker="builder" /%} cannot build other buildings.
+{% building_infobox name="builder" %}
+### Before you build *any* other building, you must build the {% building name="builder" /%}. If the {% building name="builder" /%} is not built, the {% worker name="builder" /%} cannot build other buildings.
 
-Before you choose a place to build the {% building building="builder" /%}, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the {% building building="builder" /%} block and place it with your [build tool](../items/buildtool). Once the hut is placed, the {% worker worker="builder" /%} will be automatically assigned (or you can manually assign one with the best [traits](../systems/worker) for a {% worker worker="builder" /%} if you changed this in the settings tab in the {% building_link building="townhall" /%}).
+Before you choose a place to build the {% building name="builder" /%}, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the {% building name="builder" /%} block and place it with your [build tool](../items/buildtool). Once the hut is placed, the {% worker name="builder" /%} will be automatically assigned (or you can manually assign one with the best [traits](../systems/worker) for a {% worker name="builder" /%} if you changed this in the settings tab in the {% building_link name="townhall" /%}).
 
-Now you will have to issue the build assignment so the {% worker worker="builder" /%} can build their own hut first. The {% worker worker="builder" /%} will ask for the materials they need. Make sure to check the [Resource Scroll](../../source/items/resourcescroll) or the Required Resources tab of the {% building building="builder" /%} GUI to see what materials the {% worker worker="builder" /%} is requesting for any build/upgrade. Any material in the list that is still missing will be in red letters.
+Now you will have to issue the build assignment so the {% worker name="builder" /%} can build their own hut first. The {% worker name="builder" /%} will ask for the materials they need. Make sure to check the [Resource Scroll](../../source/items/resourcescroll) or the Required Resources tab of the {% building name="builder" /%} GUI to see what materials the {% worker name="builder" /%} is requesting for any build/upgrade. Any material in the list that is still missing will be in red letters.
 
-Once the {% building building="builder" /%} is built you can now build anything you want, like worker huts, buildings, decorations, or your own schematics.
+Once the {% building name="builder" /%} is built you can now build anything you want, like worker huts, buildings, decorations, or your own schematics.
 
-- **Note:** The {% worker worker="builder" /%} can only build or upgrade any other hut up to the level of their own hut. So, in order for the {% worker worker="builder" /%} to upgrade any building, the {% building building="builder" /%} must be upgraded first. Then the {% worker worker="builder" /%} will be able to upgrade any other building(s).
+- **Note:** The {% worker name="builder" /%} can only build or upgrade any other hut up to the level of their own hut. So, in order for the {% worker name="builder" /%} to upgrade any building, the {% building name="builder" /%} must be upgraded first. Then the {% worker name="builder" /%} will be able to upgrade any other building(s).
 
 ### Hints and Tips
 
-For the placement of the {% building building="builder" /%}, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the {% worker worker="builder" /%} has less of a distance to walk between their hut and the build sites.
+For the placement of the {% building name="builder" /%}, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the {% worker name="builder" /%} has less of a distance to walk between their hut and the build sites.
 
-The {% worker worker="builder" /%} will not start another build assignment until they have finished the current one.
+The {% worker name="builder" /%} will not start another build assignment until they have finished the current one.
 
-You can go into the {% building_link building="townhall" /%} it's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the {% worker worker="builder" /%} will continue where they left off.
+You can go into the {% building_link name="townhall" /%} it's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the {% worker name="builder" /%} will continue where they left off.
 
-If the {% worker worker="builder" /%} removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the {% building building="builder" /%} inventory.
+If the {% worker name="builder" /%} removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the {% building name="builder" /%} inventory.
 {% /building_infobox %}
+
+## {% building name="builder" /%} GUI
+
+{% building_gui_content_block_main name="builder" order=1 /%}
+{% building_gui_content_block_stock name="builder" order=2 /%}
+{% building_gui_content_block_settings name="builder" order=3 /%}
+{% building_gui_content_block_crafting_recipes name="builder" order=4 /%}
+{% building_gui_content_block_work_orders name="builder" order=5 /%}
+{% building_gui_content_block_required_resources name="builder" order=6 /%}

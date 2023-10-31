@@ -24,3 +24,10 @@ export function getBuildingName(
 export function getBuildingLink(building: CollectionEntry<'buildings'>) {
   return `/wiki/buildings/${building.id}`;
 }
+
+export function getBuildingMdLink(
+  building: CollectionEntry<'buildings'>,
+  plural: boolean
+) {
+  return `[${getBuildingName(building, plural)}](${getBuildingLink(building)})`;
+}

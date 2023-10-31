@@ -1,15 +1,15 @@
 ---
 type: building
 building: glassblower
-layout: building
 ---
-{% infobox_building %}
+
+{% building_infobox name="glassblower" %}
 The Glassblower's Hut is where the Glassblower will smelt sand into glass and make glass panes from glass blocks. For the Glassblower to work, they must receive a request from another worker and have the necessary materials, including fuel if they're smelting sand into glass. The Glassblower's Hut must also have been taught the crafting recipe for glass panes.
 
 **Hint:** The number of recipes you can teach the Glassblower's Hut doubles per building level. So:
 
 | Glassblower's Hut Level | Number of Recipes |
-|-------------------------|-------------------|
+| ----------------------- | ----------------- |
 | 1                       | 10                |
 | 2                       | 20                |
 | 3                       | 40                |
@@ -19,7 +19,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 **Hint:** The higher the level of the Glassblower's Hut, the more furnaces the Glassblower will have available. The number of furnaces they *use* depends on their Creativity level. So:
 
 | Building Level | Furnaces |
-|----------------|----------|
+| -------------- | -------- |
 | 1              | 1        |
 | 2              | 2        |
 | 3              | 3        |
@@ -27,14 +27,14 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 | 5              | 5        |
 
 **Hint:** The higher the Glassblower's Focus level, the faster things will smelt. At high levels, they can go *much* faster than the player!
-{% endinfobox_building %}
+{% /building_infobox %}
 
-## {% building %} GUI
+## {% building name="glassblower" /%} GUI
 
-{% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_craftingrecipes order=2 %}
-{% building_gui_content_block_smeltingrecipes order=3 %}
-{% building_gui_content_block_dorecipes order=4 %}
-{% building_gui_content_block_fuel order=5 %}
-{% building_gui_content_block_tasks order=6 %}
-{% building_gui_content_block_settings order=7 %}
+{% building_gui_content_block_main name="glassblower" order=1 /%}
+{% building_gui_content_block_crafting_recipes name="glassblower" order=2 /%}
+{% building_gui_content_block_smelting_recipes name="glassblower" order=3 /%}
+{% building_gui_content_block_do_recipes name="glassblower" order=4 /%}
+{% building_gui_content_block_fuel name="glassblower" order=5 /%}
+{% building_gui_content_block_tasks name="glassblower" order=6 /%}
+{% building_gui_content_block_settings name="glassblower" order=7 /%}

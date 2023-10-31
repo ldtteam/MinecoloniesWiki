@@ -17,7 +17,7 @@ const requirement = Astro.props.requirement;
   requirement.type === 'building' && (
     <li>
       <span>One or multiple&nbsp;</span>
-      <BuildingName building={requirement.building.id} link plural />
+      <BuildingName name={requirement.building.id} link plural />
       <span>&nbsp;totaling at least {requirement.level} levels</span>
     </li>
   )

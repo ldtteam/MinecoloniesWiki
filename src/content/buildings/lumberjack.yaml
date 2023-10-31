@@ -6,11 +6,11 @@ recipes:
   - forester
 settings:
   - name: Replanting
-    description: Where you can select if you want the {% worker forester %} to replant trees that are chopped down. They will only do this if they have enough saplings.
+    description: Where you can select if you want the {% worker name="forester" /%} to replant trees that are chopped down. They will only do this if they have enough saplings.
   - name: Zoning Mode
-    description: This lets you turn on or off if you want the {% worker forester %} to be restricted to a certain area when chopping trees. To choose the area, use the Obtain Tool button on the next tab.
+    description: This lets you turn on or off if you want the {% worker name="forester" /%} to be restricted to a certain area when chopping trees. To choose the area, use the Obtain Tool button on the next tab.
   - name: Break Leaves
-    description: This lets you decide whether you want the {% worker forester %} to also remove all of the leaves of the tree, else he will only cut those which are in their way.
+    description: This lets you decide whether you want the {% worker name="forester" /%} to also remove all of the leaves of the tree, else he will only cut those which are in their way.
   - name: Recipe Mode
     description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
     options:
@@ -19,4 +19,4 @@ settings:
       - name: Warehouse Stock
         description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
   - name: Use Shears
-    description: Whether the {% worker forester %} will use shears or a hoe to cut down the leaves.
+    description: Whether the {% worker name="forester" /%} will use shears or a hoe to cut down the leaves.

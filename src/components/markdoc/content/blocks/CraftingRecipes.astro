@@ -1,0 +1,26 @@
+---
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { CraftingContentBlockProps } from '../types';
+
+type Props = CraftingContentBlockProps;
+
+const { noRemove, noTeach } = Astro.props;
+
+const content = `Here you can see all the crafting recipes this building knows.
+The arrows allow you to move them up or down in priority. You are also able to disable ${
+  noRemove ? '' : 'or remove'
+} specific recipes.
+${
+  noTeach
+    ? ''
+    : '- **Teach Recipe:** When clicking teach recipe, it opens a crafting grid which allows you to teach this hut brewing recipes (not the worker).'
+}`;
+---
+
+<BuildingContentBlock
+  {...Astro.props}
+  header="crafting recipes"
+  imageKey="crafting-recipes"
+  imageAlt="Crafting recipes"
+  markdownContent={content}
+/>

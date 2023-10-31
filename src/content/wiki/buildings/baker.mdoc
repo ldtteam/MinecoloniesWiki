@@ -1,0 +1,25 @@
+---
+type: building
+building: baker
+---
+
+{% building_infobox name="baker" %}
+The {% worker_link name="baker" /%} will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the {% worker_link name="cook" /%}, the [postbox](../../source/items/postbox), or as a minimum stock in the {% building_link name="warehouse" /%}.
+
+The Baker can also craft some non-vanilla breads:
+
+- Sweet bread, made from wheat and a honey bottle. Available at Bakery level 3. Has slightly higher saturation than normal bread, also gives you a speed boost and removes poison.
+- Milk-infused bread, made from wheat and a milk bucket. Available at Bakery level 4. Removes all potion effects (like milk buckets do).
+- Golden bread, made from wheat and a gold ingot. Available at Bakery level 5. Instantly heals 2 hearts.
+- Chorus bread, made from wheat and a chorus fruit. Available after completing the Know the End research in the {% building_link name="university" /%}. Has higher saturation than normal bread and teleports you to the surface after eating it.
+{% /building_infobox %}
+
+## {% building name="baker" /%} GUI
+
+{% building_gui_content_block_main name="baker" order=1 /%}
+{% building_gui_content_block_crafting_recipes name="baker" order=2 /%}
+{% building_gui_content_block_smelting_recipes name="baker" order=3 /%}
+{% building_gui_content_block_stock name="baker" order=4 /%}
+{% building_gui_content_block_fuel name="baker" order=5 /%}
+{% building_gui_content_block_tasks name="baker" order=6 /%}
+{% building_gui_content_block_settings name="baker" order=7 /%}

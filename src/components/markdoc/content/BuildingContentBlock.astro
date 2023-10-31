@@ -1,0 +1,59 @@
+---
+import { getBuildingData } from '../../../util/building';
+import ContentBlock from './ContentBlock.astro';
+import type { BaseContentBlockProps } from './types';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+
+interface Props extends BaseContentBlockProps {
+  header?: string;
+  imageKey: string;
+  imageAlt: string;
+  markdownContent?: string;
+}
+
+const TAB_INDEXES = [
+  'first',
+  'second',
+  'third',
+  'fourth',
+  'fifth',
+  'sixth',
+  'seventh',
+  'eight',
+  'ninth',
+  'tenth'
+];
+
+const {
+  name,
+  order = 1,
+  cols,
+  header,
+  imageKey,
+  imageAlt,
+  markdownContent
+} = Astro.props;
+
+const buildingData = await getBuildingData(name);
+
+const processor = await createMarkdownProcessor();
+const headerContent = header
+  ? await processor.render(
+      `The ${TAB_INDEXES[order - 1]} tab of the GUI is the **${header}**.`
+    )
+  : undefined;
+const content = markdownContent
+  ? await processor.render(markdownContent)
+  : undefined;
+---
+
+<ContentBlock
+  imageUrl={`/images/gui/buildings/${buildingData.id}/${imageKey}.png`}
+  imageAlt={`${imageAlt} tab of the ${buildingData.data.name} it's GUI`}
+  cols={cols}
+>
+  {headerContent && <Fragment set:html={headerContent.code} />}
+  <slot name="before-content" />
+  {content && <Fragment set:html={content.code} />}
+  <slot />
+</ContentBlock>

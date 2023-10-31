@@ -3,31 +3,27 @@ import Card from '../../Card.astro';
 
 interface Props {
   title: string;
-  image?: string;
-  image_alt?: string;
   class?: string;
   small?: boolean;
 }
 
-const { title, image, image_alt, class: cssClass } = Astro.props;
+const { title, class: cssClass, small } = Astro.props;
 ---
 
-<Card class:list={['container', cssClass]} padding={2}>
-  <h2 class="text-center">{title}</h2>
+<div class:list={['infobox', small ? 'infobox-small' : '']}>
+  <Card class:list={['container', cssClass]} padding={2}>
+    <h2 class="text-center">{title}</h2>
+    <hr />
 
-  {
-    image !== undefined && (
-      <>
-        <hr />
-        <img src={image} alt={image_alt} />
-      </>
-    )
-  }
-
-  <slot />
-</Card>
+    <slot />
+  </Card>
+</div>
 
 <style>
+  .infobox {
+    height: min-content;
+  }
+
   .infobox-small {
     width: min-content;
   }

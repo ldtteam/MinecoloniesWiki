@@ -76,4 +76,4 @@ recipes:
         - minecraft/crimson_planks
         - minecraft/warped_planks
     product: minecolonies/waypoint
-    amount: "16"
+    amount: 16

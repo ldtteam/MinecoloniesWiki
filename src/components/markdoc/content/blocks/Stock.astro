@@ -1,0 +1,24 @@
+---
+import { getBuildingData, getBuildingName } from '../../../../util/building';
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { BaseContentBlockProps } from '../types';
+
+type Props = BaseContentBlockProps;
+
+const { name } = Astro.props;
+
+const buildingData = await getBuildingData(name);
+
+const content = `Use this button to tell the ${getBuildingName(
+  buildingData,
+  false
+)} to keep a minimum stock on hand. Set items will be displayed above the button.`;
+---
+
+<BuildingContentBlock
+  {...Astro.props}
+  header="minimum stock"
+  imageKey="stock"
+  imageAlt="Minimum stock"
+  markdownContent={content}
+/>

@@ -1,0 +1,14 @@
+---
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { BaseContentBlockProps } from '../types';
+
+interface Props extends BaseContentBlockProps {
+  header?: string;
+  imageKey: string;
+  imageAlt: string;
+}
+---
+
+<BuildingContentBlock {...Astro.props}>
+  <slot />
+</BuildingContentBlock>

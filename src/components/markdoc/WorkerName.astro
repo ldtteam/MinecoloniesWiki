@@ -1,16 +1,25 @@
 ---
-import { getWorkerData } from '../../util/workers';
+import {
+  getWorkerData,
+  getWorkerLink,
+  getWorkerName
+} from '../../util/workers';
 
 interface Props {
-  worker: string;
+  name: string;
   link?: boolean;
   plural?: boolean;
 }
 
-const { worker, link = false, plural = false } = Astro.props;
+const { name, link = false, plural = false } = Astro.props;
 
-const workerData = await getWorkerData(worker);
-const name = plural ? workerData.data.plural : workerData.data.name;
+const workerData = await getWorkerData(name);
 ---
 
-{link ? <a href={`/wiki/workers/${worker}`}>{name}</a> : <span>{name}</span>}
+{
+  link ? (
+    <a href={getWorkerLink(workerData)}>{getWorkerName(workerData, plural)}</a>
+  ) : (
+    <span>{getWorkerName(workerData, plural)}</span>
+  )
+}

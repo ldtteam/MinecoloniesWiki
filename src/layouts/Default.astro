@@ -39,17 +39,7 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
-    <script>
-      function loadTooltips() {
-        const tooltipList = document.querySelectorAll(
-          '[data-bs-toggle="tooltip"]'
-        );
-        tooltipList.forEach((element) => {
-          new bootstrap.Tooltip(element);
-        });
-      }
-      document.addEventListener('astro:page-load', loadTooltips);
-    </script>
+    <script src="/scripts/bootstrap-init.ts" is:inline></script>
 
     <Meta title={titleFormatted} />
 

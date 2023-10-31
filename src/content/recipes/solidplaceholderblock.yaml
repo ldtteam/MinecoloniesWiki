@@ -44,4 +44,4 @@ recipes:
         - minecraft/warped_stem
       thirdItem: ""
     product: minecolonies/blocksolidsubstitution
-    amount: "32"
+    amount: 32

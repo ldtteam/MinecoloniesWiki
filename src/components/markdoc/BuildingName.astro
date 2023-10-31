@@ -6,13 +6,13 @@ import {
 } from '../../util/building';
 
 interface Props {
-  building: string;
+  name: string;
   link?: boolean;
   plural?: boolean;
 }
 
-const { building, link = false, plural = false } = Astro.props;
-const buildingData = await getBuildingData(building);
+const { name, link = false, plural = false } = Astro.props;
+const buildingData = await getBuildingData(name);
 ---
 
 {

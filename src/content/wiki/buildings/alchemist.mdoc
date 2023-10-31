@@ -1,24 +1,24 @@
 ---
 type: building
 building: alchemist
-layout: building
 ---
-{% infobox_building %}
-The {% building %} is where the {% worker_link alchemist %} works. The {% worker alchemist %} brews potions and harvests netherwart and mistletoe.
 
-**Hint:** The number of recipes you can teach the {% building %} doubles per building level. So:
+{% building_infobox name="alchemist" %}
+The {% building name="alchemist" /%} is where the {% worker_link name="alchemist" /%} works. The {% worker name="alchemist" /%} brews potions and harvests netherwart and mistletoe.
 
-| {% building %} Level | Number of Recipes |
-|----------------------|-------------------|
-| 1                    | 10                |
-| 2                    | 20                |
-| 3                    | 40                |
-| 4                    | 80                |
-| 5                    | 160               |
-{% endinfobox_building %}
+**Hint:** The number of recipes you can teach the {% building name="alchemist" /%} doubles per building level. So:
 
-## {% building %} GUI
+| {% building name="alchemist" /%} Level | Number of Recipes |
+| -------------------------------------- | ----------------- |
+| 1                                      | 10                |
+| 2                                      | 20                |
+| 3                                      | 40                |
+| 4                                      | 80                |
+| 5                                      | 160               |
+{% /building_infobox %}
 
-{% building_gui_content_block_main order=1 %}
-{% building_gui_content_block_brewingrecipes order=2 %}
-{% building_gui_content_block_tasks order=3 %}
+## {% building name="alchemist" /%} GUI
+
+{% building_gui_content_block_main name="alchemist" order=1 /%}
+{% building_gui_content_block_brewing_recipes name="alchemist" order=2 /%}
+{% building_gui_content_block_tasks name="alchemist" order=3 /%}

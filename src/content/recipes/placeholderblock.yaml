@@ -28,4 +28,4 @@ recipes:
         - minecraft/crimson_stem
         - minecraft/warped_stem
     product: minecolonies/blocksubstitution
-    amount: "32"
+    amount: 32

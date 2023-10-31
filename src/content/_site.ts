@@ -23,7 +23,7 @@ export const sponsorCollection = defineCollection({
     z.object({
       link: z.string(),
       image: z.string(),
-      image_alt: z.string()
+      imageAlt: z.string()
     })
   )
 });
