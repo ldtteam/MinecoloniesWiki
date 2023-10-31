@@ -1,0 +1,14 @@
+recipes:
+  - firstRow:
+      firstItem: minecraft/stick
+      secondItem: minecolonies/build_tool
+      thirdItem: minecraft/stick
+    secondRow:
+      firstItem: minecraft/stick
+      secondItem: minecraft/leather
+      thirdItem: minecraft/stick
+    thirdRow:
+      firstItem: minecraft/stick
+      secondItem: minecraft/leather
+      thirdItem: minecraft/stick
+    product: minecolonies/resource_scroll

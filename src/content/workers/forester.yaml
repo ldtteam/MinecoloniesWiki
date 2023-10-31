@@ -1,0 +1,11 @@
+name: Forester
+plural: Foresters
+type: gatherer
+traits:
+  primary: Strength
+  secondary: Focus
+effects:
+  primary: Faster log breaking
+  secondary: Faster walking
+buildings:
+  - lumberjack

@@ -1,0 +1,14 @@
+recipes:
+  - firstRow:
+      firstItem: minecraft/brick
+      secondItem: ""
+      thirdItem: minecraft/brick
+    secondRow:
+      firstItem: ""
+      secondItem: minecraft/brick
+      thirdItem: ""
+    thirdRow:
+      firstItem: minecraft/brick
+      secondItem: ""
+      thirdItem: minecraft/brick
+    product: minecolonies/brickextra

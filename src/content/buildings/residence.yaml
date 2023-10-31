@@ -1,0 +1,8 @@
+name: House
+plural: Houses
+recipes:
+  - house
+overrides:
+  11900:
+    name: Residence
+    plural: Residences

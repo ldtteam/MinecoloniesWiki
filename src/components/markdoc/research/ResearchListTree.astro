@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import ResearchListTreeColumn from './ResearchListTreeColumn.astro';
+
+interface Props {
+  tree: CollectionEntry<'research_tree'>;
+}
+
+const tree = Astro.props.tree;
+---
+
+<h3>{tree.data.name}</h3>
+<p><a href="#research-list">Back to top</a></p>
+
+<ResearchListTreeColumn tree={tree} name="First Column" depth={1} />
+<ResearchListTreeColumn tree={tree} name="Second Column" depth={2} />
+<ResearchListTreeColumn tree={tree} name="Third Column" depth={3} />
+<ResearchListTreeColumn tree={tree} name="Fourth Column" depth={4} />
+<ResearchListTreeColumn tree={tree} name="Fifth Column" depth={5} />
+<ResearchListTreeColumn tree={tree} name="Sixth Column" depth={6} terminal />

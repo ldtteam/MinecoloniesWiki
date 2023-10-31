@@ -1,0 +1,14 @@
+recipes:
+  - firstRow:
+      firstItem: minecraft/wheat
+      secondItem: ""
+      thirdItem: minecraft/wheat
+    secondRow:
+      firstItem: ""
+      secondItem: minecraft/wheat
+      thirdItem: ""
+    thirdRow:
+      firstItem: minecraft/wheat
+      secondItem: ""
+      thirdItem: minecraft/wheat
+    product: minecolonies/wheatextra

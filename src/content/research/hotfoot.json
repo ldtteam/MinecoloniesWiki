@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"flee","name":"Hotfoot","requirements":[{"type":"item","item":"emerald","quantity":64}],"effects":{"fleeingspeedaddition":4},"researchLevel":6}

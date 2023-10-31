@@ -1,0 +1,20 @@
+---
+interface Props {
+  image: string;
+  image_alt?: string;
+  cols?: number;
+}
+
+const totalColCount = 12;
+
+const { image, image_alt = '', cols = 4 } = Astro.props;
+---
+
+<div class="row py-3">
+  <div class={`col-md-${cols} col-12`}>
+    <img src={image} alt={image_alt} class="img-fluid mx-auto" />
+  </div>
+  <div class={`col-md-${totalColCount - cols} col-12`}>
+    <slot />
+  </div>
+</div>

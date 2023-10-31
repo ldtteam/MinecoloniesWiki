@@ -1,0 +1,35 @@
+---
+import { getEntry } from 'astro:content';
+import { getVersionNumbers } from '../../../util/version';
+
+interface Props {
+  name: string;
+  before: boolean;
+  after: boolean;
+  inline: boolean;
+}
+
+const { name, before, after, inline } = Astro.props;
+
+const currentVersion = await getEntry('versions', name);
+if (currentVersion === undefined) {
+  throw Error(
+    `Provided version "${name}" does not exist. Either pick a different version or configure the version in the versions list.`
+  );
+}
+
+const versions = await getVersionNumbers(currentVersion, before, after);
+const versionNumbers = versions.map((version) => version.data.order).join(',');
+---
+
+{
+  inline ? (
+    <span data-versions={versionNumbers}>
+      <slot />
+    </span>
+  ) : (
+    <div data-versions={versionNumbers}>
+      <slot />
+    </div>
+  )
+}

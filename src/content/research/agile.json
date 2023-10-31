@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"nimble","name":"Agile","requirements":[{"type":"building","building":"townhall","level":4},{"type":"item","item":"rabbit foot","quantity":10}],"effects":{"walkingmultiplier":2},"researchLevel":4}

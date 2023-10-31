@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"hot","name":"The Flintstones","requirements":[{"type":"building","building":"smeltery","level":3},{"type":"item","item":"stone bricks","quantity":64}],"effects":{"blockhutstonesmeltery":1},"researchLevel":2}

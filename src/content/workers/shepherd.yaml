@@ -1,0 +1,11 @@
+name: Shepherd
+plural: Shepherds
+type: animals
+traits:
+  primary: Focus
+  secondary: Strength
+effects:
+  primary: More wool collected
+  secondary: More damage per attack
+buildings:
+  - shepherd

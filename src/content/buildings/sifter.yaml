@@ -1,0 +1,6 @@
+name: Sifter's Hut
+plural: Sifter Huts
+workers:
+  - sifter
+recipes:
+  - sifter

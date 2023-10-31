@@ -1,0 +1,6 @@
+name: Enchanter's Tower
+plural: Enchanter Towers
+workers:
+  - enchanter
+recipes:
+  - enchanter

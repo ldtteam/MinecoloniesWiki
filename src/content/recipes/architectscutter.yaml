@@ -1,0 +1,32 @@
+recipes:
+  - firstRow:
+      firstItem: ""
+      secondItem: minecraft/iron_ingot
+      thirdItem: ""
+    secondRow:
+      firstItem: minecraft/stone_slab
+      secondItem: minecraft/stone_slab
+      thirdItem: minecraft/stone_slab
+    thirdRow:
+      firstItem:
+        - minecraft/oak_log
+        - minecraft/spruce_log
+        - minecraft/birch_log
+        - minecraft/jungle_log
+        - minecraft/acacia_log
+        - minecraft/dark_oak_log
+      secondItem:
+        - minecraft/oak_log
+        - minecraft/spruce_log
+        - minecraft/birch_log
+        - minecraft/jungle_log
+        - minecraft/acacia_log
+        - minecraft/dark_oak_log
+      thirdItem:
+        - minecraft/oak_log
+        - minecraft/spruce_log
+        - minecraft/birch_log
+        - minecraft/jungle_log
+        - minecraft/acacia_log
+        - minecraft/dark_oak_log
+    product: minecolonies/architectscutter

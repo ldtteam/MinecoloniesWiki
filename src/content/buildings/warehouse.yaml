@@ -1,0 +1,6 @@
+name: Warehouse
+plural: Warehouses
+workers:
+  - courier
+recipes:
+  - warehouse

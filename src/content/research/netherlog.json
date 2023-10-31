@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"opennether","name":"Gaze into the Pits","requirements":[{"type":"item","item":"ender eye","quantity":16},{"type":"item","item":"ancienttome","quantity":1},{"type":"building","building":"netherworker","level":1}],"effects":{"netherexpeditionlog":1},"researchLevel":3}

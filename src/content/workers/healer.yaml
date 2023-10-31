@@ -1,0 +1,11 @@
+name: Healer
+plural: Healers
+type: other
+traits:
+  primary: Mana
+  secondary: Knowledge
+effects:
+  primary: Faster walking between beds
+  secondary: Increases chance of decreasing materials needed
+buildings:
+  - hospital

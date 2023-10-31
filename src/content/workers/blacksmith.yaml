@@ -1,0 +1,11 @@
+name: Blacksmith
+plural: Blacksmiths
+type: crafter
+traits:
+  primary: Strength
+  secondary: Focus
+effects:
+  primary: Faster crafting
+  secondary: Increases chance of decreasing materials needed
+buildings:
+  - blacksmith

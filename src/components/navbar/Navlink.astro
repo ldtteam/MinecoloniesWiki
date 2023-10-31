@@ -1,0 +1,96 @@
+---
+interface Props {
+  name: string;
+  href?: string;
+  root?: boolean;
+  thin?: boolean;
+  exact?: boolean;
+}
+
+const name = Astro.props.name;
+const href = Astro.props.href;
+const isRootLink = Astro.props.root ?? false;
+const isThin = Astro.props.thin ?? false;
+const exact = Astro.props.exact ?? true;
+
+const pathName = Astro.url.pathname;
+const active = exact
+  ? pathName === href
+  : href
+  ? pathName.startsWith(href)
+  : false;
+
+const dropdownId = `navbarDropdown${name.replaceAll(/\W/g, '_')}`;
+
+const hasChildren = Astro.slots.has('default');
+---
+
+<li
+  class:list={[
+    isRootLink && hasChildren ? 'dropdown' : '',
+    !isRootLink && hasChildren ? 'dropdown-submenu' : ''
+  ]}
+>
+  {
+    hasChildren ? (
+      <>
+        <a
+          class:list={[
+            isRootLink ? 'nav-link' : 'dropdown-item',
+            hasChildren ? 'dropdown-toggle' : '',
+            active ? 'active' : '',
+            isThin ? 'py-0' : ''
+          ]}
+          href="#"
+          id={dropdownId}
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          {name}
+        </a>
+        <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+          <slot />
+        </ul>
+      </>
+    ) : (
+      <a
+        class:list={[
+          isRootLink ? 'nav-link' : 'dropdown-item',
+          active ? 'active' : '',
+          isThin ? 'py-0' : ''
+        ]}
+        href={href}
+      >
+        {name}
+      </a>
+    )
+  }
+</li>
+
+<script>
+  function onLoad() {
+    document
+      .querySelectorAll('ul.dropdown-menu [data-bs-toggle=dropdown]')
+      .forEach((elem) => {
+        elem.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          if (elem.parentElement?.parentElement) {
+            for (const listItem of elem.parentElement.parentElement.children) {
+              listItem.querySelector('a')?.classList.remove('show');
+              listItem
+                .querySelector('.dropdown-menu')
+                ?.classList.remove('show');
+            }
+          }
+
+          elem.classList.add('show');
+          elem.nextElementSibling?.classList.add('show');
+        });
+      });
+  }
+
+  document.addEventListener('astro:page-load', onLoad);
+</script>

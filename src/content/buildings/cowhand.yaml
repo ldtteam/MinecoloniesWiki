@@ -1,0 +1,17 @@
+name: Cowhand's Hut
+plural: Cowhand Huts
+workers:
+  - cowhand
+recipes:
+  - cowhand
+settings:
+  - name: Breeding
+    description: On by default. Here you can choose if the {% worker cowhand %} will breed (and consequently kill) cows.
+  - name: Feeding
+    description: On by default. Here you can choose if the {% worker cowhand %} will feed baby animals, to let them grow up faster.
+  - name: Milk attempts
+    description: How often, per the given amount of days, the {% worker cowhand %} will be allowed to milk cows.
+  - name: Stew attempts
+    description: How often, per the given amount of days, the {% worker cowhand %} will be allowed to milk mooshrooms for mushroom stew.
+  - name: Per days
+    description: Per how many days the above 2 values should reset.

@@ -1,0 +1,11 @@
+name: Glassblower
+plural: Glassblowers
+type: crafter
+traits:
+  primary: Creativity
+  secondary: Focus
+effects:
+  primary: Increases chance of decreasing materials needed
+  secondary: Faster crafting
+buildings:
+  - glassblower

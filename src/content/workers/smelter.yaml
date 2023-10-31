@@ -1,0 +1,11 @@
+name: Smelter
+plural: Smelters
+type: gatherer
+traits:
+  primary: Athletics
+  secondary: Strength
+effects:
+  primary: Faster smelting
+  secondary: Increases chance of doubling or tripling ores
+buildings:
+  - smeltery

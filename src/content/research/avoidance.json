@@ -1,0 +1,1 @@
+{"tree":"combat","name":"Avoidance","requirements":[{"type":"building","building":"guardtower","level":3},{"type":"item","item":"iron block","quantity":3}],"effects":{"shieldusageunlock":1},"researchLevel":1}

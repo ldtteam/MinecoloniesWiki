@@ -1,0 +1,1 @@
+{"tree":"technology","name":"Stone Cake","requirements":[{"type":"building","building":"miner","level":3},{"type":"item","item":"chiseled stone bricks","quantity":64}],"effects":{"blockhutstonemason":1},"researchLevel":1}

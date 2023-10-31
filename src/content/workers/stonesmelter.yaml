@@ -1,0 +1,11 @@
+name: Stone Smelter
+plural: Stone Smelters
+type: crafter
+traits:
+  primary: Athletics
+  secondary: Dexterity
+effects:
+  primary: Increases number of furnaces used
+  secondary: Faster smelting
+buildings:
+  - stonesmeltery

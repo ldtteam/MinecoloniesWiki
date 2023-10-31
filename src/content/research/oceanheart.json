@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"alchemist","name":"Ocean's Heart","requirements":[{"type":"building","building":"fisherman","level":4},{"type":"item","item":"heart of the sea","quantity":1}],"effects":{"fishingtreasure":1},"researchLevel":4}

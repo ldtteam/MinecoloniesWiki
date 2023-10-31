@@ -1,0 +1,92 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../layouts/Default.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout title="Home" header="Welcome to MineColonies!">
+  <p class="description">
+    Minecolonies is a town building mod that allows you to create your own
+    thriving Colony within Minecraft! With features including many NPC workers,
+    buildings, a fantastic building tool and a robust permissions system in
+    multiplayer, you can have the Colony of your dreams!
+  </p>
+  <!-- <DownloadDialog /> -->
+  <Button text="Learn More" class="button-info" />
+  <div class:list={['social', 'pb-3']}>
+    <div class:list={['banner', 'patreon']}>
+      <a href="https://www.patreon.com/bePatron?u=3239371">
+        <Icon name="fa6-brands:patreon" /> Become a Patron
+      </a>
+    </div>
+    <div class:list={['banner', 'discord']}>
+      <a href="https://discord.gg/gA7T6ma">
+        <Icon name="fa6-brands:discord" /> Join Our Discord
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  * {
+    color: var(--color-dark);
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  .content {
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .description {
+    padding-bottom: 20px;
+  }
+
+  .button-info {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .button-info a {
+    display: inline-block;
+    background: url('/images/ButtonInfo.png');
+    width: 226px;
+    height: 84px;
+    padding: 29px 0px 0px 60px;
+    color: #fff !important;
+  }
+
+  .modal-header {
+    background: url('/images/ribbon_68pxh.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+  }
+
+  .close {
+    color: #fff;
+  }
+
+  .btn-close {
+    color: #fff;
+    background-color: #501dab;
+  }
+
+  .social {
+    margin-top: 60px;
+  }
+
+  .social img,
+  .support-btns img {
+    margin-right: 10px;
+  }
+
+  .social a,
+  .support-btns a {
+    color: #fff !important;
+  }
+</style>

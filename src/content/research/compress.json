@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"bandages","name":"Compress","requirements":[{"type":"building","building":"library","level":5},{"type":"item","item":"golden carrot","quantity":32}],"effects":{"regenerationmultiplier":4},"researchLevel":5}

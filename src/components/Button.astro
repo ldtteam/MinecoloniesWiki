@@ -1,0 +1,54 @@
+---
+type Component = 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+interface Props {
+  text: string;
+  class?: string;
+  sewn?: boolean;
+  component?: Component;
+}
+
+const sewn = Astro.props.sewn ?? false;
+const component = Astro.props.component ?? 'p';
+---
+
+<div
+  class:list={[sewn ? 'button-sewn' : 'button', 'p-2', Astro.props.class]}
+  set:html={`<${component} class="m-0">${Astro.props.text}</${component}>`}
+/>
+
+<style>
+  .button {
+    background:
+      url('/images/button/button_left.png') left center/auto 100% no-repeat,
+      url('/images/button/button_right.png') right center/auto 100% no-repeat,
+      url('/images/button/button_middle.png') center center/auto 100% repeat-x;
+    color: var(--color-light);
+  }
+
+  .dark .button {
+    background:
+      url('/images/button/button_dark_left.jpg') left center/auto 100% no-repeat,
+      url('/images/button/button_dark_right.jpg') right center/auto 100%
+        no-repeat,
+      url('/images/button/button_middle.png') center center/auto 100% repeat-x;
+  }
+
+  .button-sewn {
+    background:
+      url('/images/button/button_left_sewn.png') left center/auto 100% no-repeat,
+      url('/images/button/button_right_sewn.png') right center/auto 100%
+        no-repeat,
+      url('/images/button/button_middle.png') center center/auto 100% repeat-x;
+    color: var(--color-light);
+  }
+
+  .dark .button-sewn {
+    background:
+      url('/images/button/button_dark_left_sewn.jpg') left center/auto 100%
+        no-repeat,
+      url('/images/button/button_dark_right_sewn.jpg') right center/auto 100%
+        no-repeat,
+      url('/images/button/button_middle.png') center center/auto 100% repeat-x;
+  }
+</style>

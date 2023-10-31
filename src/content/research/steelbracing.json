@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"reinforced","name":"Steel Bracing","requirements":[{"type":"building","building":"blacksmith","level":5},{"type":"item","item":"diamond","quantity":64}],"effects":{"tooldurabilitymultiplier":4},"researchLevel":5}

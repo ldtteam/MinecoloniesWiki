@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"bachelor","name":"Master","requirements":[{"type":"building","building":"library","level":5},{"type":"item","item":"bookshelf","quantity":32}],"effects":{"teachingmultiplier":4},"researchLevel":5}

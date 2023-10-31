@@ -1,0 +1,6 @@
+name: Graveyard
+plural: Graveyards
+workers:
+  - undertaker
+recipes:
+  - graveyard

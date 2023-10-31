@@ -1,0 +1,5 @@
+name: Tavern
+plural: Taverns
+singular: true
+recipes:
+  - tavern

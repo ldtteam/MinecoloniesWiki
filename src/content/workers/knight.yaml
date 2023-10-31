@@ -1,0 +1,13 @@
+name: Knight
+plural: Knights
+type: guard
+traits:
+  primary: Adaptability
+  secondary: Stamina
+effects:
+  primary: Faster attack speed
+  secondary: Increased health
+buildings:
+  - combatacademy
+  - barrackstower
+  - guardtower

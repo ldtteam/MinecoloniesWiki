@@ -1,22 +1,9 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "strict": true,
-    "skipLibCheck": true
-  },
-  "include": [
-    "./src/**/*",
-    "./content/**/*",
-    "./gatsby-node.ts",
-    "./gatsby-config.ts",
-    "./plugins/**/*"
-  ]
+    "jsxImportSource": "react",
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": true
+  }
 }

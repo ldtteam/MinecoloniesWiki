@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"studious","name":"Scholarly","requirements":[{"type":"building","building":"library","level":4},{"type":"item","item":"book","quantity":24}],"effects":{"levelingmultiplier":3},"researchLevel":4}

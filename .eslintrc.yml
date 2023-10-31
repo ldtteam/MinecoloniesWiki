@@ -1,0 +1,3 @@
+extends: universe/web
+rules:
+  react-hooks/exhaustive-deps: warn

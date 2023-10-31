@@ -1,0 +1,11 @@
+name: Rabbit Herder
+plural: Rabbit Herders
+type: animals
+traits:
+  primary: Agility
+  secondary: Athletics
+effects:
+  primary: Higher chance to successfully hit a rabbit
+  secondary: Faster rabbit growth
+buildings:
+  - rabbithutch

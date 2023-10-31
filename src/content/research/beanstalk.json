@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"growth","name":"Beanstalk","requirements":[{"type":"item","item":"cooked chicken","quantity":512}],"effects":{"growthmultiplier":5},"researchLevel":6}

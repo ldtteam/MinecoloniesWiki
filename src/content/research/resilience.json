@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"resistance","name":"Resilience","requirements":[{"type":"building","building":"cook","level":3},{"type":"item","item":"golden apple","quantity":8}],"effects":{"healingsaturationlimitaddition":2},"researchLevel":3}

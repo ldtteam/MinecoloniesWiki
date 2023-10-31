@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"letitgrow","name":"Taking Diving Lessons","requirements":[{"type":"building","building":"plantation","level":2},{"type":"item","item":"kelp","quantity":16},{"type":"item","item":"seagrass","quantity":16},{"type":"item","item":"sea pickle","quantity":16}],"effects":{"plantationsea":1},"researchLevel":3}

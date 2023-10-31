@@ -1,0 +1,86 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Meta from '../components/Meta.astro';
+import Navigation from '../components/navbar/Navigation.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+import '../css/globals.scss';
+import '@fontsource/fondamento';
+
+interface Props {
+  title: string;
+  titleFormat?: (title: string) => string;
+  header?: string;
+  fluid?: boolean;
+}
+
+const title = Astro.props.title;
+const titleFormatted = Astro.props.titleFormat
+  ? Astro.props.titleFormat(title)
+  : `MineColonies | ${title}`;
+
+const header = Astro.props.header ?? title;
+const fluid = Astro.props.fluid ?? false;
+
+const isHome = Astro.url.pathname === '/';
+const isWikiPage = Astro.url.pathname.startsWith('/wiki');
+---
+
+<!doctype html>
+<html lang="en" transition:persist>
+  <head>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script>
+      function loadTooltips() {
+        const tooltipList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+        );
+        tooltipList.forEach((element) => {
+          new bootstrap.Tooltip(element);
+        });
+      }
+      document.addEventListener('astro:page-load', loadTooltips);
+    </script>
+
+    <Meta title={titleFormatted} />
+
+    <title>{titleFormatted}</title>
+
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class:list={['bgscroll', isHome ? 'bghome' : '']}>
+      <div class="page_root p-5">
+        <Header isWiki={isWikiPage} />
+        <Navigation />
+        <slot name="after-nav" />
+
+        <main
+          transition:animate="fade"
+          class:list={[
+            'page_content',
+            'container',
+            fluid ? 'container-fluid' : ''
+          ]}
+        >
+          <h1 class="page_header text-center">
+            {header}
+          </h1>
+          <hr />
+
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>

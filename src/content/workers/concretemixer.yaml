@@ -1,0 +1,11 @@
+name: Concrete Mixer
+plural: Concrete Mixers
+type: crafter
+traits:
+  primary: Stamina
+  secondary: Dexterity
+effects:
+  primary: Faster concrete harvesting
+  secondary: Faster concrete crafting
+buildings:
+  - concretemixer

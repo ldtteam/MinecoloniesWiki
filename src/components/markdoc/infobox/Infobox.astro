@@ -1,0 +1,34 @@
+---
+import Card from '../../Card.astro';
+
+interface Props {
+  title: string;
+  image?: string;
+  image_alt?: string;
+  class?: string;
+  small?: boolean;
+}
+
+const { title, image, image_alt, class: cssClass } = Astro.props;
+---
+
+<Card class:list={['container', cssClass]} padding={2}>
+  <h2 class="text-center">{title}</h2>
+
+  {
+    image !== undefined && (
+      <>
+        <hr />
+        <img src={image} alt={image_alt} />
+      </>
+    )
+  }
+
+  <slot />
+</Card>
+
+<style>
+  .infobox-small {
+    width: min-content;
+  }
+</style>

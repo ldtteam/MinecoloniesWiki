@@ -1,0 +1,6 @@
+name: Archery
+plural: Archeries
+workers:
+  - archer
+recipes:
+  - archery

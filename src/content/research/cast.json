@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"compress","name":"Cast","requirements":[{"type":"item","item":"golden carrot","quantity":64}],"effects":{"regenerationmultiplier":5},"researchLevel":6}

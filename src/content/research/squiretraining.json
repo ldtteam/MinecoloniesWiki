@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"improvedswords","name":"Squire Training","requirements":[{"type":"building","building":"combatacademy","level":3},{"type":"item","item":"shield","quantity":4}],"effects":{"blockattacksmultiplier":1},"researchLevel":3}

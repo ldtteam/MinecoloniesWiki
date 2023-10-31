@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { ResearchRequirement } from '../../../../plugins/download-research/types';
+import BuildingName from '../BuildingName.astro';
+import { toTitleCase } from '../../../util/string';
+
+interface Props {
+  requirement: NonNullable<
+    CollectionEntry<'research'>['data']['requirements']
+  >[number];
+}
+
+const requirement = Astro.props.requirement;
+---
+
+{
+  requirement.type === 'building' && (
+    <li>
+      <span>One or multiple&nbsp;</span>
+      <BuildingName building={requirement.building.id} link plural />
+      <span>&nbsp;totaling at least {requirement.level} levels</span>
+    </li>
+  )
+}
+
+{
+  requirement.type === 'item' && (
+    <li>
+      <b>{requirement.quantity}</b>x&nbsp;
+      <span>{toTitleCase(requirement.item)}</span>
+    </li>
+  )
+}

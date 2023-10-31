@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"keen","name":"Outpost","requirements":[{"type":"building","building":"residence","level":4},{"type":"item","item":"cooked beef","quantity":64}],"effects":{"citizencapaddition":2},"researchLevel":2}

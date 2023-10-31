@@ -1,0 +1,7 @@
+name: School
+plural: Schools
+workers:
+  - teacher
+  - pupil
+recipes:
+  - school

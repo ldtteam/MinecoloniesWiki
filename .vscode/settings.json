@@ -1,0 +1,9 @@
+{
+    "markdownTablePrettify.extendedLanguages": [
+        "mdoc"
+    ],
+    "files.associations": {
+        "*.mdoc": "markdown"
+    },
+    "markdown.extension.tableFormatter.normalizeIndentation": true
+}

@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"isthisredstone","name":"Redstone Powered","requirements":[{"type":"item","item":"redstone","quantity":256}],"effects":{"blockbreakspeedmultiplier":2},"researchLevel":3}

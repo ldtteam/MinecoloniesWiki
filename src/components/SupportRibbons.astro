@@ -1,0 +1,72 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  class?: string;
+}
+---
+
+<div
+  class:list={[
+    'text-center',
+    'd-flex',
+    'justify-content-center',
+    'gap-3',
+    Astro.props.class
+  ]}
+>
+  <div class="ribbon-patreon">
+    <a href="https://www.patreon.com/bePatron?u=3239371">
+      <Icon name="fa6-brands:patreon" class="me-2" />
+      <span>Become a Patron</span>
+    </a>
+  </div>
+  <div class="ribbon-discord">
+    <a href="https://www.paypal.me/ldtteam">
+      <Icon name="fa6-brands:discord" class="me-2" />
+      <span>Join our Discord</span>
+    </a>
+  </div>
+  <div class="ribbon-twitch">
+    <a href="https://www.twitch.tv/minecoloniesteam">
+      <Icon name="fa6-brands:twitch" class="me-2" />
+      <span>Subscribe on Twitch</span>
+    </a>
+  </div>
+  <div class="ribbon-paypal">
+    <a href="https://www.paypal.me/ldtteam">
+      <Icon name="fa6-brands:paypal" class="me-2" />
+      <span>Donate via PayPal</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .ribbon-patreon {
+    background: url('/images/ribbon/patreon_ribbon.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 0.5em 2em;
+  }
+
+  .ribbon-discord {
+    background: url('/images/ribbon/discord_ribbon.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 0.5em 2em;
+  }
+
+  .ribbon-twitch {
+    background: url('/images/ribbon/twitch_ribbon.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 0.5em 2em;
+  }
+
+  .ribbon-paypal {
+    background: url('/images/ribbon/paypal_ribbon.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 0.5em 2em;
+  }
+
+  a {
+    color: var(--color-dark);
+  }
+</style>

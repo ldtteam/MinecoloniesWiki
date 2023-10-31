@@ -1,0 +1,43 @@
+---
+import Navlink from './Navlink.astro';
+import { getWikiPages } from '../../util/wiki';
+
+const wikiPages = await getWikiPages();
+---
+
+<nav class="navbar navbar-expand-lg navbar-light ribbon ribbon-secondary m-0">
+  <div class="container">
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav">
+        <Navlink href="/wiki" name="Wiki Home" root thin />
+
+        {
+          Object.entries(wikiPages).map(([category, pages]) => (
+            <Navlink name={category} root thin>
+              {pages.map((page) => {
+                if (page.type === 'page') {
+                  return (
+                    <Navlink name={page.name} href={`/wiki/${page.slug}`} />
+                  );
+                } else if (page.type === 'subcategory') {
+                  return (
+                    <Navlink name={page.name}>
+                      {page.pages.map((subPage) => (
+                        <Navlink
+                          name={subPage.name}
+                          href={`/wiki/${subPage.slug}`}
+                        />
+                      ))}
+                    </Navlink>
+                  );
+                }
+
+                return undefined;
+              })}
+            </Navlink>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"enhanced_gates1","name":"Enhanced Gates II","requirements":[{"type":"item","item":"gate iron","quantity":64},{"type":"item","item":"ancienttome","quantity":2},{"type":"item","item":"obsidian","quantity":32}],"effects":{"enhancesgatedurabilityaddition":2},"researchLevel":4}

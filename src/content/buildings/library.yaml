@@ -1,0 +1,6 @@
+name: Library
+plural: Libraries
+workers:
+  - librarystudent
+recipes:
+  - library

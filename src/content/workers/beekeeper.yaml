@@ -1,0 +1,11 @@
+name: Beekeeper
+plural: Beekeepers
+type: animals
+traits:
+  primary: Dexterity
+  secondary: Adaptability
+effects:
+  primary: Determines chance of *beeing* stung
+  secondary: Affects wait time between checking hives
+buildings:
+  - beekeeper

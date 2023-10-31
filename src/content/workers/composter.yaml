@@ -1,0 +1,11 @@
+name: Composter
+plural: Composters
+type: gatherer
+traits:
+  primary: Stamina
+  secondary: Athletics
+effects:
+  primary: Faster composting
+  secondary: Faster barrel filling
+buildings:
+  - composter

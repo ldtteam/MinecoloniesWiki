@@ -1,0 +1,11 @@
+name: Enchanter
+plural: Enchanters
+type: other
+traits:
+  primary: Mana
+  secondary: Knowledge
+effects:
+  primary: More XP collected per trip
+  secondary: Higher level of enchanted books
+buildings:
+  - enchantertower

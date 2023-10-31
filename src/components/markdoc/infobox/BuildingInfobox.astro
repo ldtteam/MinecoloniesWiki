@@ -1,0 +1,126 @@
+---
+import Infobox from './Infobox.astro';
+import { getBuildingData } from '../../../util/building';
+import WorkerName from '../WorkerName.astro';
+import { getCollection } from 'astro:content';
+import Recipe from '../recipes/Recipe.astro';
+
+interface Props {
+  building: string;
+}
+
+const building = Astro.props.building;
+const buildingData = await getBuildingData(building);
+
+const research = (
+  await getCollection('research', (filter) =>
+    filter.data.effects
+      ? Object.keys(filter.data.effects).find(
+          (effect) => effect.replace('blockhut', '') === building
+        )
+      : false
+  )
+).slice(0, 1)[0];
+
+const workers = buildingData.data.workers ?? [];
+const recipes = buildingData.data.recipes ?? [];
+---
+
+<div class="row infobox-wrapper">
+  <div class="col-md col-12">
+    <slot />
+  </div>
+
+  <Infobox
+    title={buildingData.data.name}
+    image={`/images/buildings/${building}.png`}
+    image_alt={`${buildingData.data.name} block`}
+    class="col-md-auto col-12 infobox-small"
+  >
+    {
+      workers.length !== 0 && (
+        <>
+          <hr />
+          <div class="row">
+            <div class="col-auto">
+              <p class="m-0">
+                <b>{workers.length > 1 ? 'Workers:' : 'Worker:'}</b>
+              </p>
+            </div>
+            <div class="col">
+              {workers.map((worker) => (
+                <p class="m-0">
+                  <WorkerName worker={worker.id} link />
+                </p>
+              ))}
+            </div>
+          </div>
+        </>
+      )
+    }
+
+    {
+      recipes.length !== 0 && (
+        <>
+          <hr />
+          <div class="row">
+            <div class="col-auto">
+              <p class="m-0">
+                <b>{recipes.length > 1 ? 'Recipe:' : 'Recipes:'}</b>
+              </p>
+            </div>
+            <div class="col">
+              {recipes.map((recipe) => (
+                <Recipe recipe={recipe} />
+              ))}
+            </div>
+          </div>
+        </>
+      )
+    }
+
+    <hr />
+    <div class="row">
+      <div class="col-12">
+        <p class="m-0">
+          <b>Research:&nbsp;</b>
+          {
+            research !== undefined ? (
+              <>
+                <span>You must research "</span>
+                <a href={`/wiki/systems/research#research_${research.id}`}>
+                  {research.data.name}
+                </a>
+                <span>" to unlock this building!</span>
+              </>
+            ) : (
+              <>No research is required for this building.</>
+            )
+          }
+        </p>
+      </div>
+    </div>
+  </Infobox>
+</div>
+
+<style lang="scss">
+  @import '../../../css/bootstrap-vars.scss';
+
+  .infobox-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .row {
+    flex-wrap: nowrap !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    .infobox-wrapper {
+      flex-direction: row;
+    }
+  }
+
+  :global(.infobox-small) {
+    width: min-content;
+  }
+</style>

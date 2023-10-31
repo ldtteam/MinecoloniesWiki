@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"veinminer","name":"Good Veins","requirements":[{"type":"building","building":"miner","level":2},{"type":"item","item":"iron ore","quantity":64}],"effects":{"moreoresmultiplier":2},"researchLevel":3}

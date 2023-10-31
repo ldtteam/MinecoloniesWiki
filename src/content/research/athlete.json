@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"swift","name":"Athlete","requirements":[{"type":"item","item":"rabbit foot","quantity":64}],"effects":{"walkingmultiplier":4},"researchLevel":6}

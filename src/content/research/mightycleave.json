@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"cleave","name":"Mighty Cleave","requirements":[{"type":"building","building":"barracks","level":5},{"type":"item","item":"iron block","quantity":16}],"effects":{"meleedamageaddition":4},"researchLevel":5}

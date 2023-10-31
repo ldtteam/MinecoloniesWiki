@@ -1,0 +1,1 @@
+{"tree":"combat","name":"Accuracy","requirements":[{"type":"building","building":"guardtower","level":1},{"type":"item","item":"iron ingot","quantity":16}],"effects":{"sleeplessmultiplier":1},"researchLevel":1}

@@ -1,0 +1,7 @@
+name: Quarry
+plural: Quarries
+workers:
+  - quarrier
+recipes:
+  - simplequarry
+  - mediumquarry

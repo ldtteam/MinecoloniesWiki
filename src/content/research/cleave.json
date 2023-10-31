@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"powerattack","name":"Cleave","requirements":[{"type":"building","building":"guardtower","level":10},{"type":"item","item":"iron block","quantity":8}],"effects":{"meleedamageaddition":3},"researchLevel":4}

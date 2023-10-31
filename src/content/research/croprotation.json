@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"letitgrow","name":"Crop Rotation","requirements":[{"type":"building","building":"plantation","level":3},{"type":"item","item":"sugar cane","quantity":32},{"type":"item","item":"cactus","quantity":32}],"effects":{"plantationlarge":1},"researchLevel":3}

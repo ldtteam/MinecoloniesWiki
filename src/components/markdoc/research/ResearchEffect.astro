@@ -1,0 +1,66 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
+import { getBuildingLink, getBuildingName } from '../../../util/building';
+import { formatForgeString, toTitleCase } from '../../../util/string';
+
+interface Props {
+  effects: NonNullable<CollectionEntry<'research'>['data']['effects']>;
+}
+
+async function parseFormatString(
+  format: string,
+  effectStrength: number = 0,
+  absoluteEffectStrength: number = 0
+): Promise<string> {
+  // Forge format specifiers
+  format = formatForgeString(
+    format,
+    effectStrength,
+    absoluteEffectStrength,
+    Math.round(effectStrength * 100),
+    Math.round(absoluteEffectStrength * 100)
+  );
+
+  format = toTitleCase(format);
+
+  // Building format specifiers
+  const buildings = await getCollection('buildings');
+  format = format.replaceAll(/{building:(\w+)}/g, (_match, building) => {
+    const buildingData = buildings.find((f) => f.id === building);
+    if (!buildingData) {
+      return '';
+    }
+    return `<a href="${getBuildingLink(buildingData)}">${getBuildingName(
+      buildingData,
+      false
+    )}</a>`;
+  });
+
+  return format;
+}
+
+const effects = await Promise.all(
+  Object.entries(Astro.props.effects).map(async ([effect, level]) => {
+    const effectData = await getEntry('research_effect', effect);
+    if (effectData === undefined) {
+      return undefined;
+    }
+
+    const format = effectData.data.format;
+    if (effectData.data.levels) {
+      const currentLevel = effectData.data.levels[level - 1];
+      const previousLevel = level === 1 ? 0 : effectData.data.levels[level - 2];
+      const effectStrength = currentLevel - previousLevel;
+      return await parseFormatString(format, effectStrength, currentLevel);
+    }
+
+    return await parseFormatString(format, undefined);
+  })
+);
+
+const effectsSanitized = effects.filter((f): f is string => f !== undefined);
+---
+
+{effectsSanitized.map((effect) => <li set:html={effect} />)}

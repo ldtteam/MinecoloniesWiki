@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"heavymachinery","name":"What Is This Speed?","requirements":[{"type":"item","item":"redstone","quantity":1024}],"effects":{"blockbreakspeedmultiplier":4},"researchLevel":5}

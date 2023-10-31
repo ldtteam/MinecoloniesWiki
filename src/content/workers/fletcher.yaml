@@ -1,0 +1,11 @@
+name: Fletcher
+plural: Fletchers
+type: crafter
+traits:
+  primary: Dexterity
+  secondary: Creativity
+effects:
+  primary: Faster crafting
+  secondary: Increases chance of decreasing materials needed
+buildings:
+  - fletcher

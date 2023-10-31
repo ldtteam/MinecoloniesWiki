@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"rockingroll","name":"Pave the Road","requirements":[{"type":"building","building":"crusher","level":1},{"type":"item","item":"white concrete","quantity":32}],"effects":{"blockhutconcretemixer":1},"researchLevel":3}

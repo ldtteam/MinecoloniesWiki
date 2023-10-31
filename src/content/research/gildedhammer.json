@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"rockingroll","name":"Gilded Hammer","requirements":[{"type":"building","building":"crusher","level":3},{"type":"item","item":"gravel","quantity":64},{"type":"item","item":"sand","quantity":64},{"type":"item","item":"clay","quantity":64}],"effects":{"crushing11unlock":1},"researchLevel":3}

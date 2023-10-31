@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"spectacle","name":"Opera","requirements":[{"type":"building","building":"cook","level":5},{"type":"item","item":"cake","quantity":27}],"effects":{"happinessmultiplier":4},"researchLevel":5}

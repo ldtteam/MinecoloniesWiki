@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"stuffer","name":"Epicure","requirements":[{"type":"building","building":"cook","level":5},{"type":"item","item":"cookie","quantity":256}],"effects":{"saturationmultiplier":4},"researchLevel":5}

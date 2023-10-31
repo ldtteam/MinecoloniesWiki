@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"biodegradable","name":"Podzol Chance","requirements":[{"type":"building","building":"composter","level":2},{"type":"item","item":"podzol","quantity":8}],"effects":{"podzolchancemultiplier":1},"researchLevel":2}

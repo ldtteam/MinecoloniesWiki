@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"knighttraining","name":"Captain Training","requirements":[{"type":"building","building":"combatacademy","level":5},{"type":"item","item":"shield","quantity":16}],"effects":{"blockattacksmultiplier":3},"researchLevel":5}

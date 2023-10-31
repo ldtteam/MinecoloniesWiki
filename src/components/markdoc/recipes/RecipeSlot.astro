@@ -1,0 +1,160 @@
+---
+import { toTitleCase } from '../../../util/string';
+
+interface Props {
+  items: string | string[] | undefined;
+  amount?: number;
+  large?: boolean;
+}
+
+const items = Array.isArray(Astro.props.items)
+  ? Astro.props.items
+  : Astro.props.items !== undefined
+  ? [Astro.props.items]
+  : [];
+const amount = Astro.props.amount ?? 1;
+const isLarge = Astro.props.large ?? false;
+
+function getItemName(name: string) {
+  const [_namespace, itemName] = name.split('/');
+  return itemName.split('_').map(toTitleCase).join(' ');
+}
+---
+
+{
+  items !== undefined ? (
+    <div
+      class:list={[
+        'invslot',
+        isLarge ? 'invslot-large' : '',
+        items.length > 1 ? 'animate' : ''
+      ]}
+    >
+      {items.map((item, idx) => (
+        <div
+          class:list={[
+            'invslot-item',
+            idx === 0 && items.length > 1 ? 'active' : ''
+          ]}
+        >
+          <img
+            src={`/images/icons/${item}.png`}
+            alt={getItemName(item)}
+            class="inv-sprite"
+            data-bs-toggle="tooltip"
+            title={getItemName(item)}
+          />
+          {amount > 1 && (
+            <div class="invslot-stacksize">
+              <span>{amount}</span>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div class="invslot" />
+  )
+}
+
+<script>
+  let currentInterval: NodeJS.Timeout | undefined = undefined;
+
+  function changeSlots() {
+    document.querySelectorAll('.animate').forEach((animatable) => {
+      if (animatable.children.length === 0) {
+        return;
+      }
+
+      const activeSlot = animatable.querySelector('.invslot-item.active');
+      for (const child of animatable.children) {
+        child.classList.remove('active');
+      }
+
+      if (activeSlot === null) {
+        animatable.firstElementChild!.classList.add('active');
+        return;
+      }
+
+      const next = activeSlot.nextElementSibling;
+      if (next === null) {
+        animatable.firstElementChild!.classList.add('active');
+        return;
+      }
+
+      next.classList.add('active');
+    });
+  }
+
+  document.addEventListener('astro:page-load', () => {
+    if (currentInterval) {
+      clearInterval(currentInterval);
+    }
+    currentInterval = setInterval(changeSlots, 2000);
+  });
+</script>
+
+<style>
+  .invslot.animate > .invslot-item {
+    display: none;
+  }
+
+  .invslot.animate > .invslot-item.active {
+    display: initial;
+  }
+
+  .invslot {
+    display: inline-block;
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background: #8b8b8b;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+  }
+
+  .invslot-large {
+    width: 3em;
+    height: 3em;
+  }
+
+  .invslot-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .invslot-stacksize {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff !important;
+    text-shadow: 2px 2px 0 #3f3f3f;
+    filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+  }
+
+  .invslot::after,
+  .invslot::before {
+    background-color: #8b8b8b;
+    content: '';
+    height: 2px;
+    position: absolute;
+    width: 2px;
+  }
+
+  .invslot::after {
+    right: -2px;
+    top: -2px;
+  }
+
+  .invslot::before {
+    bottom: -2px;
+    left: -2px;
+  }
+
+  .inv-sprite {
+    height: calc(2em - 4px);
+    width: calc(2em - 4px);
+  }
+</style>

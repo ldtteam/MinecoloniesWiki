@@ -1,0 +1,26 @@
+---
+import {
+  getBuildingData,
+  getBuildingLink,
+  getBuildingName
+} from '../../util/building';
+
+interface Props {
+  building: string;
+  link?: boolean;
+  plural?: boolean;
+}
+
+const { building, link = false, plural = false } = Astro.props;
+const buildingData = await getBuildingData(building);
+---
+
+{
+  link ? (
+    <a href={getBuildingLink(buildingData)}>
+      {getBuildingName(buildingData, plural)}
+    </a>
+  ) : (
+    <span>{getBuildingName(buildingData, plural)}</span>
+  )
+}

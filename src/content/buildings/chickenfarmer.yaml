@@ -1,0 +1,11 @@
+name: Chicken Farmer's Hut
+plural: Chicken Farmer Huts
+workers:
+  - chickenfarmer
+recipes:
+  - chickenfarmer
+settings:
+  - name: Breeding
+    description: On by default. Here you can choose if the farmer will breed (and consequently kill) chickens.
+  - name: Feeding
+    description: On by default. Here you can choose if the farmer will feed baby animals, to let them grow up faster.

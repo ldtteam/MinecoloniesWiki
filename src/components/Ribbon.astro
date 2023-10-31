@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+  center?: boolean;
+}
+
+const center = Astro.props.center ?? false;
+---
+
+<div class="ribbon ribbon-secondary">
+  <div class="container">
+    <p class:list={[center ? 'text-center' : 'text-start', 'm-0', 'py-1']}>
+      {Astro.props.title}
+    </p>
+  </div>
+</div>

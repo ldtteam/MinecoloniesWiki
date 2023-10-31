@@ -1,0 +1,17 @@
+name: Farmer's Hut
+plural: Farmer's Huts
+workers:
+  - farmer
+recipes:
+  - farm
+  - field
+settings:
+  - name: Request Fertilizer
+    description: On by default. This lets you choose whether the Farmer will request fertilizer.
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.

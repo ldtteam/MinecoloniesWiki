@@ -1,0 +1,6 @@
+name: Courier's Hut
+plural: Courier Huts
+workers:
+  - courier
+recipes:
+  - courier

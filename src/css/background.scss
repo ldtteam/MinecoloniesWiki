@@ -1,0 +1,55 @@
+@use 'sass:string';
+
+$sides:
+  'top' 'left' 'no-repeat',
+  'top' 'right' 'no-repeat',
+  'bottom' 'left' 'no-repeat',
+  'bottom' 'right' 'no-repeat',
+  'left' 'center' 'repeat-y',
+  'right' 'center' 'repeat-y',
+  'top' 'center' 'repeat-x',
+  'bottom' 'center' 'repeat-x';
+
+@mixin sides_bg($dark: false, $include_home: false) {
+  $url_list: ();
+
+  $dark_text: '';
+  @if $dark {
+    $dark_text: '_dark';
+  }
+
+  @each $side_one, $side_two, $repeat in $sides {
+    $side_two_text: #{'_'}#{$side_two};
+    @if $side_two == 'center' {
+      $side_two_text: '';
+    }
+    $url_text: #{'/images/background/bg'}#{$dark_text}#{'_'}#{$side_one}#{$side_two_text}#{'.jpg'};
+    $url_string: url($url_text) #{$side_one} #{$side_two} #{$repeat};
+    $url_list: append($url_list, $url_string, comma);
+  }
+
+  @if $include_home {
+    $url_list: $url_list
+      #{", linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('/images/background/background-home.jpg') center center/cover no-repeat"};
+  }
+
+  background: $url_list;
+}
+
+.bgscroll {
+  @include sides_bg(false, false);
+  width: 100%;
+  min-height: 100vh;
+
+  &.bghome {
+    @include sides_bg(false, true);
+  }
+}
+
+.dark .bgscroll {
+  @include sides_bg(true, false);
+
+  &.bghome {
+    @include sides_bg(true, true);
+  }
+}

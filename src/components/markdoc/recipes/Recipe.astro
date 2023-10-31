@@ -1,0 +1,68 @@
+---
+import { getEntry } from 'astro:content';
+import RecipeSlot from './RecipeSlot.astro';
+interface Props {
+  recipe: string;
+}
+
+const recipes = await getEntry('recipes', Astro.props.recipe);
+if (recipes === undefined) {
+  throw new Error(`Recipe "${Astro.props.recipe}" does not exist.`);
+}
+---
+
+{
+  recipes.data.recipes.map((recipe) => (
+    <div class="crafting-table">
+      <div class="ct-input">
+        <div class="ct-row">
+          <RecipeSlot items={recipe.firstRow.firstItem} />
+          <RecipeSlot items={recipe.firstRow.secondItem} />
+          <RecipeSlot items={recipe.firstRow.thirdItem} />
+        </div>
+        <div class="ct-row">
+          <RecipeSlot items={recipe.secondRow.firstItem} />
+          <RecipeSlot items={recipe.secondRow.secondItem} />
+          <RecipeSlot items={recipe.secondRow.thirdItem} />
+        </div>
+        <div class="ct-row">
+          <RecipeSlot items={recipe.thirdRow.firstItem} />
+          <RecipeSlot items={recipe.thirdRow.secondItem} />
+          <RecipeSlot items={recipe.thirdRow.thirdItem} />
+        </div>
+      </div>
+      <div class="ct-output">
+        <RecipeSlot items={recipe.product} amount={recipe.amount} large />
+      </div>
+    </div>
+  ))
+}
+
+<style>
+  .crafting-table {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: max-content;
+    padding: 0.5em;
+    background-color: #c6c6c6;
+    border: 2px solid;
+    border-color: #dbdbdb #5b5b5b #5b5b5b #dbdbdb;
+  }
+
+  .ct-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ct-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ct-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>

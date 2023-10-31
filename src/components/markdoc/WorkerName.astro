@@ -1,0 +1,16 @@
+---
+import { getWorkerData } from '../../util/workers';
+
+interface Props {
+  worker: string;
+  link?: boolean;
+  plural?: boolean;
+}
+
+const { worker, link = false, plural = false } = Astro.props;
+
+const workerData = await getWorkerData(worker);
+const name = plural ? workerData.data.plural : workerData.data.name;
+---
+
+{link ? <a href={`/wiki/workers/${worker}`}>{name}</a> : <span>{name}</span>}

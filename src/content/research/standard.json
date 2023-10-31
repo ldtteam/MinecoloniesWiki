@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"telescope","name":"Standard","requirements":[{"type":"building","building":"barracks","level":4},{"type":"item","item":"emerald","quantity":32}],"effects":{"standard":1},"researchLevel":5}

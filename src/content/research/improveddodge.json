@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"dodge","name":"Improved Dodge","requirements":[{"type":"building","building":"archery","level":1},{"type":"item","item":"leather","quantity":32}],"effects":{"archerarmormultiplier":2},"researchLevel":3}

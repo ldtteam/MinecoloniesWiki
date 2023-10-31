@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"tactictraining","name":"Improved Bows","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","item":"iron block","quantity":6}],"effects":{"blockhutarchery":1},"researchLevel":2}

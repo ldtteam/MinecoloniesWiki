@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"whatyaneed","name":"Enhanced Gates I","requirements":[{"type":"item","item":"gate wood","quantity":64},{"type":"item","item":"ancienttome","quantity":2},{"type":"item","item":"iron block","quantity":5}],"effects":{"enhancesgatedurabilityaddition":1},"researchLevel":3}

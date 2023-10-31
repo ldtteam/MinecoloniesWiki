@@ -1,0 +1,12 @@
+name: Courier
+plural: Couriers
+type: other
+traits:
+  primary: Agility
+  secondary: Adaptability
+effects:
+  primary: Faster run speed
+  secondary: More huts visited on each trip
+buildings:
+  - deliveryman
+  - warehouse

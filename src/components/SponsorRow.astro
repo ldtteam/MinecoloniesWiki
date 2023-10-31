@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { ArrayElement } from '../types/declarations';
+import Card from './Card.astro';
+
+interface Props {
+  sponsor: ArrayElement<CollectionEntry<'sponsors'>['data']>;
+}
+
+const sponsor = Astro.props.sponsor;
+---
+
+<Card class="d-flex">
+  <a href={sponsor.link} class="m-auto">
+    <img
+      src={sponsor.image}
+      class="m-auto d-block"
+      alt={sponsor.image_alt}
+      style={{ width: '100%' }}
+    />
+  </a>
+</Card>

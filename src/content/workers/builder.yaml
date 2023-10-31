@@ -1,0 +1,11 @@
+name: Builder
+plural: Builders
+type: other
+traits:
+  primary: Adaptability
+  secondary: Athletics
+effects:
+  primary: Faster block placing
+  secondary: Faster block breaking
+buildings:
+  - builder

@@ -1,0 +1,11 @@
+name: Crusher
+plural: Crushers
+type: crafter
+traits:
+  primary: Stamina
+  secondary: Strength
+effects:
+  primary: Decreases chance of sickness
+  secondary: Faster work speed
+buildings:
+  - crusher

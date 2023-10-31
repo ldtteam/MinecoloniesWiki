@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"hittingiron","name":"Veinminer","requirements":[{"type":"building","building":"miner","level":1},{"type":"item","item":"iron ore","quantity":32}],"effects":{"moreoresmultiplier":1},"researchLevel":2}
