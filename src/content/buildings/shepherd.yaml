@@ -3,7 +3,7 @@ plural: Shepherd's Huts
 workers:
   - shepherd
 recipes:
-  - shepherd
+  - blockhutshepherd
 settings:
   - name: Breeding
     description: On by default. Here you can choose if the Shepherd will breed (and consequently kill) sheep.

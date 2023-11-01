@@ -3,4 +3,4 @@ plural: Smelteries
 workers:
   - smelter
 recipes:
-  - smeltery
+  - blockhutsmeltery

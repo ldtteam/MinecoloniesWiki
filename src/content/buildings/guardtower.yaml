@@ -5,7 +5,7 @@ workers:
   - druid
   - knight
 recipes:
-  - guardtower
+  - blockhutguardtower
 settings:
   - name: Task
     description: This is where you can choose if you want the Guard to patrol, follow, or guard.

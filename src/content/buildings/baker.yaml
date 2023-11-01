@@ -3,7 +3,7 @@ plural: Bakeries
 workers:
   - baker
 recipes:
-  - baker
+  - blockhutbaker
 settings:
   - name: Recipe Mode
     description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.

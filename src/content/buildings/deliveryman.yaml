@@ -3,4 +3,4 @@ plural: Courier Huts
 workers:
   - courier
 recipes:
-  - courier
+  - blockhutdeliveryman

@@ -3,7 +3,7 @@ plural: Forester's Huts
 workers:
   - forester
 recipes:
-  - forester
+  - blockhutlumberjack
 settings:
   - name: Replanting
     description: Where you can select if you want the {% worker name="forester" /%} to replant trees that are chopped down. They will only do this if they have enough saplings.

@@ -67,4 +67,4 @@ recipes:
         - minecraft/dark_oak_planks
         - minecraft/crimson_planks
         - minecraft/warped_planks
-    product: minecolonies/blockhutrestaurant
+    product: minecolonies/blockhutcook

@@ -19,7 +19,6 @@ $color-dark: #e0dbd1;
 @import './bootstrap-extends.scss';
 @import './mixins.scss';
 
-@import './background.scss';
 @import './ribbon.scss';
 @import './codeblock.scss';
 
@@ -36,6 +35,10 @@ body {
   font-family: 'Fondamento';
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+img {
+  max-width: 100%;
 }
 
 :target {

@@ -37,11 +37,13 @@ const recipes = buildingData.data.recipes ?? [];
   </div>
 
   <Infobox title={buildingData.data.name} class="col-md-auto col-12" small>
-    <Image
-      src={importedImage}
-      alt={`${getBuildingName(buildingData, false)} block`}
-      width={250}
-    />
+    <div class="w-100 text-center">
+      <Image
+        src={importedImage}
+        alt={`${getBuildingName(buildingData, false)} block`}
+        width={250}
+      />
+    </div>
 
     {
       workers.length !== 0 && (

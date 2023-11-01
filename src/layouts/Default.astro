@@ -7,6 +7,7 @@ import { ViewTransitions } from 'astro:transitions';
 
 import '../css/globals.scss';
 import '@fontsource/fondamento';
+import Background from '../components/PageRoot.astro';
 
 interface Props {
   title: string;
@@ -37,9 +38,6 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <script src="/scripts/bootstrap-init.ts" is:inline></script>
 
     <Meta title={titleFormatted} />
 
@@ -48,7 +46,7 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
     <ViewTransitions />
   </head>
   <body>
-    <div class:list={['bgscroll', isHome ? 'bghome' : '']}>
+    <Background isHome={isHome}>
       <div class="page_root p-5">
         <Header isWiki={isWikiPage} />
         <Navigation />
@@ -71,6 +69,6 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
         </main>
         <Footer />
       </div>
-    </div>
+    </Background>
   </body>
 </html>

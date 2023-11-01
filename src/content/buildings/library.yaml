@@ -3,4 +3,4 @@ plural: Libraries
 workers:
   - librarystudent
 recipes:
-  - library
+  - blockhutlibrary

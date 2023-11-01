@@ -3,4 +3,4 @@ plural: Fisher Huts
 workers:
   - fisher
 recipes:
-  - fisher
+  - blockhutfisherman

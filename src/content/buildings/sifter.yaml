@@ -3,4 +3,4 @@ plural: Sifter Huts
 workers:
   - sifter
 recipes:
-  - sifter
+  - blockhutsifter

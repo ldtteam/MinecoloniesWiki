@@ -4,4 +4,4 @@ workers:
   - cook
   - assistantcook
 recipes:
-  - restaurant
+  - blockhutcook

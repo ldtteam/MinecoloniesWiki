@@ -3,4 +3,4 @@ plural: Combat Academies
 workers:
   - knight
 recipes:
-  - combatacademy
+  - blockhutcombatacademy

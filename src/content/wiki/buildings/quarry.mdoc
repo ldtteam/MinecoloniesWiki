@@ -4,9 +4,9 @@ building: quarry
 ---
 
 {% building_infobox name="quarry" %}
-The Quarry is where you can hire a {% worker_link name="quarrier" /%} to dig the quarry. The Quarry will be a pit of varied size (simple quarry is 1 x 1 chunks, medium is 2 x 2) to collect larger amounts of stone type blocks.  The Quarry will only produce the blocks it digs out.  It will not produce additional ore blocks like the {% building_link name="mine" /%}.
+The Quarry is where you can hire a {% worker_link name="quarrier" /%} to dig the quarry. The Quarry will be a pit of varied size (simple quarry is 1 x 1 chunks, medium is 2 x 2) to collect larger amounts of stone type blocks.  The Quarry will only produce the blocks it digs out.  It will not produce additional ore blocks like the {% building_link name="miner" /%}.
 
-**Note:** You must first hire a Quarrier at a Mine before assigning them to a Quarry.
+**Note:** You must first hire a {% worker_link name="quarrier" /%} at a {% building_link name="miner" /%} before assigning them to a Quarry.
 {% /building_infobox %}
 
 ## {% building name="quarry" /%} GUI
@@ -26,6 +26,6 @@ The Quarry is where you can hire a {% worker_link name="quarrier" /%} to dig the
 - Header:
     - **Assigned Workers**: Tells you the worker assigned to this building.
 - Controls:
-    - **Manage Workers**: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. **Note:** Unlike other buildings, you must first hire a {% worker_link name="quarrier" /%} at the {% building_link name="mine" /%} and then assign that {% worker name="quarrier" /%} to work in this building.
+    - **Manage Workers**: Lets you change which worker is assigned to work at this hut. There can only be one worker at each hut. **Note:** Unlike other buildings, you must first hire a {% worker_link name="quarrier" /%} at the {% building_link name="miner" /%} and then assign that {% worker name="quarrier" /%} to work in this building.
     - **Recall Worker**: Recalls the worker at this building to their hut block. You might use it if they are stuck somewhere, you want to see what they have, or want to give them something directly.
 {% /building_gui_content_block_custom %}

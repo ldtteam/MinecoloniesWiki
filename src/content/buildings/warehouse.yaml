@@ -3,4 +3,4 @@ plural: Warehouses
 workers:
   - courier
 recipes:
-  - warehouse
+  - blockhutwarehouse

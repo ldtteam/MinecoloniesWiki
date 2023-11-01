@@ -3,7 +3,7 @@ plural: Farmer's Huts
 workers:
   - farmer
 recipes:
-  - farm
+  - blockhutfarmer
   - field
 settings:
   - name: Request Fertilizer
