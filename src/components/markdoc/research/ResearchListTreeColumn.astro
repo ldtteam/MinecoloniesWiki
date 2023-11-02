@@ -2,8 +2,9 @@
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
-import ResearchRequirement from './ResearchRequirement.astro';
+
 import ResearchEffect from './ResearchEffect.astro';
+import ResearchRequirement from './ResearchRequirement.astro';
 
 interface Props {
   tree: CollectionEntry<'research_tree'>;
@@ -15,11 +16,7 @@ interface Props {
 const { tree, name, depth, terminal = false } = Astro.props;
 
 const researches = (
-  await getCollection(
-    'research',
-    (filter) =>
-      filter.data.tree.id == tree.id && filter.data.researchLevel === depth
-  )
+  await getCollection('research', (filter) => filter.data.tree.id == tree.id && filter.data.researchLevel === depth)
 ).sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const researchesWithParent = await Promise.all(
@@ -45,10 +42,7 @@ const researchesWithParent = await Promise.all(
       <h4>{name}</h4>
       {terminal && (
         <p>
-          <b>
-            All of these researches below are mutually exclusive, you can only
-            pick one!
-          </b>
+          <b>All of these researches below are mutually exclusive, you can only pick one!</b>
         </p>
       )}
 
@@ -72,9 +66,7 @@ const researchesWithParent = await Promise.all(
               <td>
                 {research.parentResearch !== undefined ? (
                   <u>
-                    <a href={`#research_${research.parentResearch.id}`}>
-                      {research.parentResearch.data.name}
-                    </a>
+                    <a href={`#research_${research.parentResearch.id}`}>{research.parentResearch.data.name}</a>
                   </u>
                 ) : (
                   '-'
@@ -132,9 +124,7 @@ const researchesWithParent = await Promise.all(
 
 <script>
   function updateHighlight() {
-    const activeResearch = document.getElementById(
-      window.location.hash.slice(1)
-    );
+    const activeResearch = document.getElementById(window.location.hash.slice(1));
     if (activeResearch !== null) {
       activeResearch.classList.add('active');
       setTimeout(() => activeResearch.classList.remove('active'), 1000);

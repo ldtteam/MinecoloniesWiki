@@ -57,7 +57,7 @@ export function toTitleCase(text: string) {
  * @param args the list of format arguments.
  * @returns the formatted string.
  */
-export function formatForgeString(format: string, ...args: any[]) {
+export function formatForgeString(format: string, ...args: string[]) {
   let formatIndex = 1;
   return format.replaceAll(
     /%(?:(\d+)\$)?([A-Za-z%]|$)/g,

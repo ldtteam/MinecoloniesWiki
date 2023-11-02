@@ -1,8 +1,8 @@
 ---
-import { getEntry, type CollectionEntry } from 'astro:content';
-import TeamMember from '../components/TeamMember.astro';
-import Layout from '../layouts/Default.astro';
-import Button from '../components/Button.astro';
+import TeamMember from '@components/TeamMember.astro';
+import Button from '@components/ui/Button.astro';
+import Layout from '@layouts/Default.astro';
+import { type CollectionEntry,getEntry } from 'astro:content';
 
 const members = await getEntry('team', 'team');
 

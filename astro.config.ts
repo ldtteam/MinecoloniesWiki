@@ -3,15 +3,11 @@ import react from '@astrojs/react';
 import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
 
-import { downloadResearch } from './plugins/download-research';
+import { downloadResearch } from './integrations/download-research';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    downloadResearch({
-      runOnReload: true,
-      cacheValidityTime: 168
-    }),
     react(),
     icon({
       iconDir: 'src/assets/icons',
@@ -21,7 +17,11 @@ export default defineConfig({
         'fa6-brands': ['*']
       }
     }),
-    markdoc()
+    markdoc(),
+    downloadResearch({
+      runOnReload: true,
+      cacheValidityTime: 168
+    })
   ],
   output: 'static'
 });

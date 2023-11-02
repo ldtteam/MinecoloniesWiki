@@ -4,7 +4,7 @@ interface Props {
   center?: boolean;
 }
 
-const center = Astro.props.center ?? false;
+const { center = false } = Astro.props;
 ---
 
 <div class="ribbon ribbon-secondary">

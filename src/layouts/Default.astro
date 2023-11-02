@@ -1,13 +1,13 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Meta from '../components/Meta.astro';
-import Navigation from '../components/navbar/Navigation.astro';
-import { ViewTransitions } from 'astro:transitions';
-
 import '../css/globals.scss';
 import '@fontsource/fondamento';
-import Background from '../components/PageRoot.astro';
+
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Meta from '@components/Meta.astro';
+import Navigation from '@components/navbar/Navigation.astro';
+import Background from '@components/PageRoot.astro';
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -16,13 +16,8 @@ interface Props {
   fluid?: boolean;
 }
 
-const title = Astro.props.title;
-const titleFormatted = Astro.props.titleFormat
-  ? Astro.props.titleFormat(title)
-  : `MineColonies | ${title}`;
-
-const header = Astro.props.header ?? title;
-const fluid = Astro.props.fluid ?? false;
+const { title, titleFormat, header = title, fluid = false } = Astro.props;
+const titleFormatted = titleFormat ? titleFormat(title) : `MineColonies | ${title}`;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
@@ -52,14 +47,7 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
         <Navigation />
         <slot name="after-nav" />
 
-        <main
-          transition:animate="fade"
-          class:list={[
-            'page_content',
-            'container',
-            fluid ? 'container-fluid' : ''
-          ]}
-        >
+        <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
           <h1 class="page_header text-center">
             {header}
           </h1>

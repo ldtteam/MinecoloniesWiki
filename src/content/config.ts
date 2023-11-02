@@ -1,22 +1,7 @@
-import {
-  researchCollection,
-  researchEffectCollection,
-  researchTreeCollection
-} from './_research';
-import {
-  teamCollection,
-  sponsorCollection,
-  supporterCollection,
-  eventCollection
-} from './_site';
+import { researchCollection, researchEffectCollection, researchTreeCollection } from './_research';
+import { eventCollection, sponsorCollection, supporterCollection, teamCollection } from './_site';
 import { versionsCollection } from './_version';
-import {
-  buildingsCollection,
-  recipesCollection,
-  wikiCategories,
-  wikiCollection,
-  workersCollection
-} from './_wiki';
+import { buildingsCollection, recipesCollection, wikiCategories, wikiCollection, workersCollection } from './_wiki';
 
 export const collections = {
   wiki: wikiCollection,

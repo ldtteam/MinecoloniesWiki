@@ -1,6 +1,7 @@
+import { fileURLToPath } from 'node:url';
+
 import type { CollectionKey } from 'astro:content';
 import * as fs from 'fs/promises';
-import { fileURLToPath } from 'node:url';
 import * as path from 'path';
 
 export async function getCacheBuster(cacheDir: URL): Promise<Date | undefined> {

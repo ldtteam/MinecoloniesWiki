@@ -1,7 +1,7 @@
 ---
+import { EventList } from '@components/EventList';
+import Layout from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Default.astro';
-import { EventList } from '../../components/EventList';
 
 const eventsRaw = await getCollection('events');
 ---

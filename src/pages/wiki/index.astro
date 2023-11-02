@@ -1,14 +1,13 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
-import Layout from '../../layouts/Default.astro';
+import WikiNavigation from '@components/navbar/WikiNavigation.astro';
+import Layout from '@layouts/Default.astro';
+import { getEntry } from 'astro:content';
+
 import { getWikiTitle } from '../../util/wiki';
-import WikiNavigation from '../../components/navbar/WikiNavigation.astro';
 
 const entry = await getEntry('wiki', 'index');
 const title = await getWikiTitle(entry);
 const { Content } = await entry.render();
-
-getCollection('research');
 ---
 
 <Layout

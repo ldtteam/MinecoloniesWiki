@@ -1,13 +1,13 @@
 ---
+import Card from '@components/ui/Card.astro';
+import type { ArrayElement } from '@utils/util';
 import type { CollectionEntry } from 'astro:content';
-import Card from './Card.astro';
-import type { ArrayElement } from '../types/declarations';
 
 interface Props {
   member: ArrayElement<CollectionEntry<'team'>['data']>;
 }
 
-const member = Astro.props.member;
+const { member } = Astro.props;
 ---
 
 <li>
@@ -24,11 +24,7 @@ const member = Astro.props.member;
 
     <h3 class="pt-3">{member.username}</h3>
     <p class={member.joinedYear ? 'mb-0' : ''}>{member.realName}</p>
-    {
-      member.joinedYear !== undefined && (
-        <p class="mb-2">Joined: {member.joinedYear}</p>
-      )
-    }
+    {member.joinedYear !== undefined && <p class="mb-2">Joined: {member.joinedYear}</p>}
     <p style={{ whiteSpace: 'pre' }}>{member.sub.join('\n')}</p>
     <p>
       <em>{member.tagline}</em>

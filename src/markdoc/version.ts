@@ -1,7 +1,7 @@
 import { component } from '@astrojs/markdoc/config';
 
 export const version = {
-  render: component('./src/components/markdoc/version/VersionBlock.astro'),
+  render: component('@components/markdoc/version/VersionBlock.astro'),
   attributes: {
     name: {
       type: String,

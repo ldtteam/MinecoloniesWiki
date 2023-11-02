@@ -1,11 +1,10 @@
 {
   "recommendations": [
     "astro-build.astro-vscode",
-    "aeschli.vscode-css-formatter",
     "stripe.markdoc-language-support",
     "yzhang.markdown-all-in-one",
     "esbenp.prettier-vscode",
-    "rvest.vs-code-prettier-eslint"
+    "dbaeumer.vscode-eslint"
   ],
   "unwantedRecommendations": []
 }

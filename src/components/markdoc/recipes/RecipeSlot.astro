@@ -7,36 +7,21 @@ interface Props {
   large?: boolean;
 }
 
-const items = Array.isArray(Astro.props.items)
-  ? Astro.props.items
-  : Astro.props.items !== undefined
-  ? [Astro.props.items]
-  : [];
-const amount = Astro.props.amount ?? 1;
-const isLarge = Astro.props.large ?? false;
+const { items, amount = 1, large = false } = Astro.props;
+
+const parsedItems = Array.isArray(items) ? items : items !== undefined ? [items] : [];
 
 function getItemName(name: string) {
-  const [_namespace, itemName] = name.split('/');
+  const itemName = name.split('/')[1];
   return itemName.split('_').map(toTitleCase).join(' ');
 }
 ---
 
 {
   items !== undefined ? (
-    <div
-      class:list={[
-        'invslot',
-        isLarge ? 'invslot-large' : '',
-        items.length > 1 ? 'animate' : ''
-      ]}
-    >
-      {items.map((item, idx) => (
-        <div
-          class:list={[
-            'invslot-item',
-            idx === 0 && items.length > 1 ? 'active' : ''
-          ]}
-        >
+    <div class:list={['invslot', large ? 'invslot-large' : '', items.length > 1 ? 'animate' : '']}>
+      {parsedItems.map((item, idx) => (
+        <div class:list={['invslot-item', idx === 0 && items.length > 1 ? 'active' : '']}>
           {item !== '' && (
             <img
               src={`/images/icons/${item}.png`}
@@ -60,7 +45,7 @@ function getItemName(name: string) {
 }
 
 <script>
-  let currentInterval: NodeJS.Timeout | undefined = undefined;
+  let currentInterval: ReturnType<typeof setInterval> | undefined = undefined;
 
   function changeSlots() {
     document.querySelectorAll('.animate').forEach((animatable) => {

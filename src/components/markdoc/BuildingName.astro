@@ -1,9 +1,5 @@
 ---
-import {
-  getBuildingData,
-  getBuildingLink,
-  getBuildingName
-} from '../../util/building';
+import { getBuildingData, getBuildingLink, getBuildingName } from '@utils/building';
 
 interface Props {
   name: string;
@@ -17,9 +13,7 @@ const buildingData = await getBuildingData(name);
 
 {
   link ? (
-    <a href={getBuildingLink(buildingData)}>
-      {getBuildingName(buildingData, plural)}
-    </a>
+    <a href={getBuildingLink(buildingData)}>{getBuildingName(buildingData, plural)}</a>
   ) : (
     <span>{getBuildingName(buildingData, plural)}</span>
   )

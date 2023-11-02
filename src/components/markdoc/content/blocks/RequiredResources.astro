@@ -1,6 +1,7 @@
 ---
-import { getWorkerData, getWorkerMdLink } from '../../../../util/workers';
-import BuildingContentBlock from '../BuildingContentBlock.astro';
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import { getWorkerData, getWorkerMdLink } from '@utils/workers';
+
 import type { BaseContentBlockProps } from '../types';
 
 type Props = BaseContentBlockProps;
@@ -12,10 +13,7 @@ const content = `These are the resources that the ${getWorkerMdLink(
   false
 )} will need for the workorder they are currently working on.
 - **Current project**: The top line tells you which work order is being worked on and its level.
-- **Step**: What step of the project the ${getWorkerMdLink(
-  builderData,
-  false
-)} is on.
+- **Step**: What step of the project the ${getWorkerMdLink(builderData, false)} is on.
 - **Supplied % / Used %**: How much of the needed resources are in the building inventory, and how many of the resources have been placed.
 - **Item**: Each needed item is displayed, along with how many of that item is in inventory, and how many are needed. These amounts will change as they place blocks and will show only what blocks the ${getWorkerMdLink(
   builderData,

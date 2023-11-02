@@ -1,18 +1,21 @@
 ---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
 interface Props {
-  imageUrl: string;
+  image: ImageMetadata;
   imageAlt?: string;
   cols?: number;
 }
 
 const totalColCount = 12;
 
-const { imageUrl, imageAlt = '', cols = 4 } = Astro.props;
+const { image, imageAlt = '', cols = 4 } = Astro.props;
 ---
 
 <div class="row py-3">
   <div class={`col-md-${cols} col-12`}>
-    <img src={imageUrl} alt={imageAlt} class="img-fluid mx-auto" />
+    <Image src={image} alt={imageAlt} class="img-fluid mx-auto" />
   </div>
   <div class={`col-md-${totalColCount - cols} col-12`}>
     <slot />

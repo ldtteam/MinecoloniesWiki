@@ -1,10 +1,4 @@
-import {
-  defineMarkdocConfig,
-  component,
-  nodes,
-  Markdoc,
-  type AstroMarkdocConfig
-} from '@astrojs/markdoc/config';
+import { type AstroMarkdocConfig, component, defineMarkdocConfig, Markdoc, nodes } from '@astrojs/markdoc/config';
 import shiki from '@astrojs/markdoc/shiki';
 
 import {
@@ -12,15 +6,15 @@ import {
   building_infobox,
   building_link,
   contentBlocks as buildingContentBlocks
-} from './markdoc/buildings';
-import { research_list, research_trees } from './markdoc/research';
-import { version } from './markdoc/version';
-import { worker, worker_link } from './markdoc/workers';
+} from './src/markdoc/buildings';
+import { research_list, research_trees } from './src/markdoc/research';
+import { version } from './src/markdoc/version';
+import { worker, worker_link } from './src/markdoc/workers';
 
 export const config: AstroMarkdocConfig = {
   tags: {
     pages_overview: {
-      render: component('./src/components/markdoc/PagesOverview.astro'),
+      render: component('@components/markdoc/PagesOverview.astro'),
       selfClosing: true
     },
     building,
@@ -42,10 +36,7 @@ export const config: AstroMarkdocConfig = {
       transform: (node, config) => {
         const attributes = node.transformAttributes(config);
         const children = node.transformChildren(config);
-        const classes =
-          attributes['class'] !== undefined
-            ? [attributes['class'].split(' ')]
-            : [];
+        const classes = attributes['class'] !== undefined ? [attributes['class'].split(' ')] : [];
         classes.push('table');
         classes.push('table-hover');
         attributes['class'] = classes.join(' ');
@@ -62,11 +53,8 @@ export const config: AstroMarkdocConfig = {
   ]
 };
 
-for (const [name, buildingContentBlockTag] of Object.entries(
-  buildingContentBlocks
-)) {
-  config.tags![`building_gui_content_block_${name.toLocaleLowerCase()}`] =
-    buildingContentBlockTag;
+for (const [name, buildingContentBlockTag] of Object.entries(buildingContentBlocks)) {
+  config.tags![`building_gui_content_block_${name.toLocaleLowerCase()}`] = buildingContentBlockTag;
 }
 
 export default defineMarkdocConfig(config);

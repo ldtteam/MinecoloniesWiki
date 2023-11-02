@@ -43,49 +43,27 @@ export function EventList({ events }: EventListProps) {
         <h1>Active Events</h1>
         <hr />
         {sortedEvents.activeEvents.map((event) => (
-          <EventHeader
-            key={`event_content_${event.slug}`}
-            event={event}
-            now={now}
-            clickable
-          />
+          <EventHeader key={`event_content_${event.slug}`} event={event} now={now} clickable />
         ))}
-        {sortedEvents.activeEvents.length === 0 && (
-          <p>No events are currently running.</p>
-        )}
+        {sortedEvents.activeEvents.length === 0 && <p>No events are currently running.</p>}
       </div>
 
       <div className="container py-3">
         <h1>Upcoming Events</h1>
         <hr />
         {sortedEvents.upcomingEvents.map((event) => (
-          <EventHeader
-            key={`event_content_${event.slug}`}
-            event={event}
-            now={now}
-            relative="start"
-            clickable
-          />
+          <EventHeader key={`event_content_${event.slug}`} event={event} now={now} relative="start" clickable />
         ))}
-        {sortedEvents.upcomingEvents.length === 0 && (
-          <p>No upcoming events are scheduled.</p>
-        )}
+        {sortedEvents.upcomingEvents.length === 0 && <p>No upcoming events are scheduled.</p>}
       </div>
 
       <div className="container py-3">
         <h1>Past Events</h1>
         <hr />
         {sortedEvents.pastEvents.map((event) => (
-          <EventHeader
-            key={`event_content_${event.slug}`}
-            event={event}
-            now={now}
-            clickable
-          />
+          <EventHeader key={`event_content_${event.slug}`} event={event} now={now} clickable />
         ))}
-        {sortedEvents.pastEvents.length === 0 && (
-          <p>No past events are currently known.</p>
-        )}
+        {sortedEvents.pastEvents.length === 0 && <p>No past events are currently known.</p>}
       </div>
     </>
   );

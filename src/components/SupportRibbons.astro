@@ -4,17 +4,11 @@ import { Icon } from 'astro-icon/components';
 interface Props {
   class?: string;
 }
+
+const { class: cssClass = '' } = Astro.props;
 ---
 
-<div
-  class:list={[
-    'text-center',
-    'd-flex',
-    'justify-content-center',
-    'gap-3',
-    Astro.props.class
-  ]}
->
+<div class:list={['text-center', 'd-flex', 'justify-content-center', 'gap-3', cssClass]}>
   <div class="ribbon-patreon">
     <a href="https://www.patreon.com/bePatron?u=3239371">
       <Icon name="fa6-brands:patreon" class="me-2" />

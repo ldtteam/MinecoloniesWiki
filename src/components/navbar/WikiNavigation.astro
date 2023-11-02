@@ -1,6 +1,6 @@
 ---
-import Navlink from './Navlink.astro';
 import { getWikiPages } from '../../util/wiki';
+import Navlink from './Navlink.astro';
 
 const wikiPages = await getWikiPages();
 ---
@@ -16,17 +16,12 @@ const wikiPages = await getWikiPages();
             <Navlink name={category} root thin>
               {pages.map((page) => {
                 if (page.type === 'page') {
-                  return (
-                    <Navlink name={page.name} href={`/wiki/${page.slug}`} />
-                  );
+                  return <Navlink name={page.name} href={`/wiki/${page.slug}`} />;
                 } else if (page.type === 'subcategory') {
                   return (
                     <Navlink name={page.name}>
                       {page.pages.map((subPage) => (
-                        <Navlink
-                          name={subPage.name}
-                          href={`/wiki/${subPage.slug}`}
-                        />
+                        <Navlink name={subPage.name} href={`/wiki/${subPage.slug}`} />
                       ))}
                     </Navlink>
                   );

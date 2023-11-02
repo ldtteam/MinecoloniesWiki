@@ -1,7 +1,7 @@
 import { component } from '@astrojs/markdoc/config';
 
 export const worker = {
-  render: component('./src/components/markdoc/WorkerName.astro'),
+  render: component('@components/markdoc/WorkerName.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -22,7 +22,7 @@ export const worker = {
 };
 
 export const worker_link = {
-  render: component('./src/components/markdoc/WorkerName.astro'),
+  render: component('@components/markdoc/WorkerName.astro'),
   selfClosing: true,
   attributes: {
     name: {

@@ -3,7 +3,7 @@ import { component } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const building: Tag = {
-  render: component('./src/components/markdoc/BuildingName.astro'),
+  render: component('@components/markdoc/BuildingName.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -24,7 +24,7 @@ export const building: Tag = {
 };
 
 export const building_link: Tag = {
-  render: component('./src/components/markdoc/BuildingName.astro'),
+  render: component('@components/markdoc/BuildingName.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -45,7 +45,7 @@ export const building_link: Tag = {
 };
 
 export const building_infobox: Tag = {
-  render: component('./src/components/markdoc/infobox/BuildingInfobox.astro'),
+  render: component('@components/markdoc/infobox/BuildingInfobox.astro'),
   attributes: {
     name: {
       type: String,
@@ -115,47 +115,41 @@ const craftingContentBlockAttributes: Tag['attributes'] = {
 
 export const contentBlocks: Record<string, Tag> = {
   brewing_recipes: {
-    render: component(
-      './src/components/markdoc/content/blocks/BrewingRecipes.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/BrewingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes
   },
   crafting_recipes: {
-    render: component(
-      './src/components/markdoc/content/blocks/CraftingRecipes.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/CraftingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes
   },
   custom: {
-    render: component('./src/components/markdoc/content/blocks/Custom.astro'),
+    render: component('@components/markdoc/content/blocks/Custom.astro'),
     attributes: customContentAttributes
   },
   do_recipes: {
-    render: component(
-      './src/components/markdoc/content/blocks/DoRecipes.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/DoRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes
   },
   fields: {
-    render: component('./src/components/markdoc/content/blocks/Fields.astro'),
+    render: component('@components/markdoc/content/blocks/Fields.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   fuel: {
-    render: component('./src/components/markdoc/content/blocks/Fuel.astro'),
+    render: component('@components/markdoc/content/blocks/Fuel.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   hostiles: {
-    render: component('./src/components/markdoc/content/blocks/Hostiles.astro'),
+    render: component('@components/markdoc/content/blocks/Hostiles.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   item_list: {
-    render: component('./src/components/markdoc/content/blocks/ItemList.astro'),
+    render: component('@components/markdoc/content/blocks/ItemList.astro'),
     attributes: {
       ...customContentAttributes,
       defaultOn: {
@@ -166,50 +160,42 @@ export const contentBlocks: Record<string, Tag> = {
     }
   },
   main: {
-    render: component('./src/components/markdoc/content/blocks/Main.astro'),
+    render: component('@components/markdoc/content/blocks/Main.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   main_residential: {
-    render: component(
-      './src/components/markdoc/content/blocks/MainResidential.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/MainResidential.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   required_resources: {
-    render: component(
-      './src/components/markdoc/content/blocks/RequiredResources.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/RequiredResources.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   settings: {
-    render: component('./src/components/markdoc/content/blocks/Settings.astro'),
+    render: component('@components/markdoc/content/blocks/Settings.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   smelting_recipes: {
-    render: component(
-      './src/components/markdoc/content/blocks/SmeltingRecipes.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/SmeltingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes
   },
   stock: {
-    render: component('./src/components/markdoc/content/blocks/Stock.astro'),
+    render: component('@components/markdoc/content/blocks/Stock.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   tasks: {
-    render: component('./src/components/markdoc/content/blocks/Tasks.astro'),
+    render: component('@components/markdoc/content/blocks/Tasks.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   },
   work_orders: {
-    render: component(
-      './src/components/markdoc/content/blocks/WorkOrders.astro'
-    ),
+    render: component('@components/markdoc/content/blocks/WorkOrders.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes
   }

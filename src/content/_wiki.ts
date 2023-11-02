@@ -1,5 +1,5 @@
 import { z } from 'astro/zod';
-import { reference, defineCollection } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
 
 const regularPage = z.object({
   type: z.literal('page'),

@@ -1,8 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
-import Navlink from './Navlink.astro';
 
-// import { Sidenav } from './Sidenav';
+import Navlink from './Navlink.astro';
 ---
 
 <nav class="navbar navbar-expand-lg navbar-light ribbon ribbon-main">
@@ -20,16 +19,8 @@ import Navlink from './Navlink.astro';
         <Navlink href="/team" name="Team" root />
         <Navlink href="/wiki" name="Wiki" root exact={false} />
         <Navlink href="/support-us" name="Support Us" root />
-        <Navlink
-          href="https://crowdin.com/project/minecolonies"
-          name="Translate"
-          root
-        />
-        <Navlink
-          href="https://github.com/ldtteam/minecolonies/issues/new/choose"
-          name="Report a Bug"
-          root
-        />
+        <Navlink href="https://crowdin.com/project/minecolonies" name="Translate" root />
+        <Navlink href="https://github.com/ldtteam/minecolonies/issues/new/choose" name="Report a Bug" root />
       </ul>
 
       <ul class="ms-auto navbar-nav">
@@ -60,16 +51,8 @@ import Navlink from './Navlink.astro';
         </li>
         <li class="nav-item">
           <button id="themeSwitch" class="mx-2 btn btn-outline-light">
-            <Icon
-              class="select-theme-light"
-              name="fa6-solid:sun"
-              color="yellow"
-            />
-            <Icon
-              class="select-theme-dark"
-              name="fa6-solid:moon"
-              color="yellow"
-            />
+            <Icon class="select-theme-light" name="fa6-solid:sun" color="yellow" />
+            <Icon class="select-theme-dark" name="fa6-solid:moon" color="yellow" />
           </button>
         </li>
       </ul>
@@ -88,10 +71,7 @@ import Navlink from './Navlink.astro';
   }
 
   function updateTheme(value: string) {
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
-      .matches
-      ? 'dark'
-      : 'light';
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     const theme = value === 'system' ? systemTheme : value;
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(theme);

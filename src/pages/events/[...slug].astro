@@ -1,11 +1,8 @@
 ---
+import { EventHeader, type EventHeaderProps } from '@components/EventHeader';
+import Layout from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
 import { fromUnixTime, isBefore } from 'date-fns';
-import {
-  EventHeader,
-  type EventHeaderProps
-} from '../../components/EventHeader';
-import Layout from '../../layouts/Default.astro';
 
 export async function getStaticPaths() {
   const collection = await getCollection('events');

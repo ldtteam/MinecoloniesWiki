@@ -1,6 +1,6 @@
 ---
-import { getWikiPages } from '../../util/wiki';
-import Button from '../Button.astro';
+import Button from '@components/ui/Button.astro';
+import { getWikiPages } from '@utils/wiki';
 
 const wikiPages = await getWikiPages();
 ---

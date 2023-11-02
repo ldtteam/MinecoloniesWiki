@@ -1,7 +1,8 @@
 ---
-import { getBuildingData, getBuildingMdLink } from '../../../../util/building';
-import { getWorkerData, getWorkerMdLink } from '../../../../util/workers';
-import BuildingContentBlock from '../BuildingContentBlock.astro';
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import { getBuildingData, getBuildingMdLink } from '@utils/building';
+import { getWorkerData, getWorkerMdLink } from '@utils/workers';
+
 import type { BaseContentBlockProps } from '../types';
 
 type Props = BaseContentBlockProps;

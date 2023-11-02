@@ -1,9 +1,18 @@
 {
-    "markdownTablePrettify.extendedLanguages": [
-        "mdoc"
-    ],
-    "files.associations": {
-        "*.mdoc": "markdown"
-    },
-    "markdown.extension.tableFormatter.normalizeIndentation": true
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "off"
+  },
+  "files.associations": {
+    "*.mdoc": "markdown"
+  },
+  "markdown.extension.tableFormatter.normalizeIndentation": true
 }

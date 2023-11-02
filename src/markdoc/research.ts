@@ -1,7 +1,7 @@
 import { component } from '@astrojs/markdoc/config';
 
 export const research_trees = {
-  render: component('./src/components/markdoc/research/ResearchTrees.astro'),
+  render: component('@components/markdoc/research/ResearchTrees.astro'),
   selfClosing: true,
   attributes: {
     format: {
@@ -14,6 +14,6 @@ export const research_trees = {
 };
 
 export const research_list = {
-  render: component('./src/components/markdoc/research/ResearchList.astro'),
+  render: component('@components/markdoc/research/ResearchList.astro'),
   selfClosing: true
 };

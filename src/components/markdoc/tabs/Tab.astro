@@ -8,11 +8,7 @@ const isActive = Astro.props.active ?? false;
 ---
 
 <li class="nav-item">
-  <a
-    class:list={['nav-link', isActive ? 'active' : '']}
-    aria-current={isActive ? 'page' : undefined}
-    href="#"
-  >
+  <a class:list={['nav-link', isActive ? 'active' : '']} aria-current={isActive ? 'page' : undefined} href="#">
     {Astro.props.text}
   </a>
 </li>

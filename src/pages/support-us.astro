@@ -1,12 +1,10 @@
 ---
-import '../css/module/SupportUs.scss';
-import Ribbon from '../components/Ribbon.astro';
-import Layout from '../layouts/Default.astro';
-
-import SupporterRow from '../components/SupporterRow.astro';
-import SponsorRow from '../components/SponsorRow.astro';
-import Card from '../components/Card.astro';
-import SupportRibbons from '../components/SupportRibbons.astro';
+import SponsorRow from '@components/SponsorRow.astro';
+import SupporterRow from '@components/SupporterRow.astro';
+import SupportRibbons from '@components/SupportRibbons.astro';
+import Card from '@components/ui/Card.astro';
+import Ribbon from '@components/ui/Ribbon.astro';
+import Layout from '@layouts/Default.astro';
 import { getEntry } from 'astro:content';
 
 const sponsors = await getEntry('sponsors', 'sponsors');
@@ -43,3 +41,35 @@ const supporters = await getEntry('supporters', 'supporters');
     {supporters.data.map((supporter) => <SupporterRow supporter={supporter} />)}
   </div>
 </Layout>
+
+<style lang="scss">
+  @import '../bootstrap-vars.scss';
+
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1em;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .sponsors-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .support-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1em;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .support-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

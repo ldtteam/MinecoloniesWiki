@@ -1,4 +1,4 @@
-@function str-replace($string, $search, $replace: '') {
+@function str-replace($string, $search, $replace: "") {
   $index: str-index($string, $search);
 
   @if $index {
@@ -15,14 +15,14 @@
 
 @mixin ribbon($path) {
   position: relative;
-  background: url(str-replace($path, '{0}', 'center')) center/100% repeat-x;
+  background: url(str-replace($path, "{0}", "center")) center/100% repeat-x;
   background-size: contain;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
-    background: url(str-replace($path, '{0}', 'left')) right/100% no-repeat;
+    background: url(str-replace($path, "{0}", "left")) right/100% no-repeat;
     background-size: contain;
     height: 100%;
     right: 100%;
@@ -31,10 +31,10 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
-    background: url(str-replace($path, '{0}', 'right')) left/100% no-repeat;
+    background: url(str-replace($path, "{0}", "right")) left/100% no-repeat;
     background-size: contain;
     height: 100%;
     left: 100%;

@@ -1,5 +1,6 @@
 ---
-import BuildingContentBlock from '../BuildingContentBlock.astro';
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+
 import type { BaseContentBlockProps } from '../types';
 
 interface Props extends BaseContentBlockProps {
@@ -17,9 +18,7 @@ const content = `Each row contains a button to toggle the usage of this item on 
 
 There are also two controls on the page:
 - The black box at the top is a search field.
-- Reset to default allows you to reset everything to **${
-  defaultOn ? 'on' : 'off'
-}**."`;
+- Reset to default allows you to reset everything to **${defaultOn ? 'on' : 'off'}**."`;
 ---
 
 <BuildingContentBlock {...Astro.props} markdownContent={content}>

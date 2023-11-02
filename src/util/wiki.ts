@@ -1,4 +1,4 @@
-import { getEntry, type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 interface WikiPageEntry {
   type: 'page';

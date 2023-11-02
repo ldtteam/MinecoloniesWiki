@@ -8,12 +8,7 @@ export interface EventHeaderProps {
   relative?: 'start' | 'end';
 }
 
-export function EventHeader({
-  event,
-  now,
-  clickable = false,
-  relative
-}: EventHeaderProps) {
+export function EventHeader({ event, now, clickable = false, relative }: EventHeaderProps) {
   const startDate = fromUnixTime(event.data.start);
   const endDate = fromUnixTime(event.data.end);
 
@@ -35,21 +30,12 @@ export function EventHeader({
       )}
 
       {relative === 'end' && (
-        <p>{`Started at ${format(startDate, 'P')} - Ends ${formatDistance(
-          endDate,
-          now,
-          {
-            addSuffix: true
-          }
-        )}`}</p>
+        <p>{`Started at ${format(startDate, 'P')} - Ends ${formatDistance(endDate, now, {
+          addSuffix: true
+        })}`}</p>
       )}
 
-      {relative === undefined && (
-        <p>{`Started ${format(startDate, 'P')} - Ended ${format(
-          endDate,
-          'P'
-        )}`}</p>
-      )}
+      {relative === undefined && <p>{`Started ${format(startDate, 'P')} - Ended ${format(endDate, 'P')}`}</p>}
     </>
   );
 }

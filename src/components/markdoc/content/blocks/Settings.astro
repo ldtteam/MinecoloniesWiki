@@ -1,6 +1,7 @@
 ---
-import { getBuildingData } from '../../../../util/building';
-import BuildingContentBlock from '../BuildingContentBlock.astro';
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import { getBuildingData } from '@utils/building';
+
 import type { BaseContentBlockProps } from '../types';
 
 type Props = BaseContentBlockProps;
@@ -12,12 +13,7 @@ const buildingData = await getBuildingData(name);
 
 {
   buildingData.data.settings && (
-    <BuildingContentBlock
-      {...Astro.props}
-      header="settings"
-      imageKey="settings"
-      imageAlt="Settings"
-    >
+    <BuildingContentBlock {...Astro.props} header="settings" imageKey="settings" imageAlt="Settings">
       <ul>
         {buildingData.data.settings.map((setting) => (
           <>

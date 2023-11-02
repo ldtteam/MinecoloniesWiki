@@ -3,3 +3,12 @@ jsxSingleQuote: false
 trailingComma: none
 arrowParens: always
 endOfLine: lf
+useTabs: false
+printWidth: 120
+
+plugins:
+  - 'prettier-plugin-astro'
+overrides:
+  - files: '*.astro'
+    options:
+      parser: 'astro'

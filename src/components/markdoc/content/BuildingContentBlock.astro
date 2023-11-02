@@ -1,8 +1,10 @@
 ---
-import { getBuildingData } from '../../../util/building';
-import ContentBlock from './ContentBlock.astro';
-import type { BaseContentBlockProps } from './types';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import ContentBlock from '@components/markdoc/content/ContentBlock.astro';
+import { getBuildingData } from '@utils/building';
+import { loadDynamicImage } from '@utils/util';
+
+import type { BaseContentBlockProps } from './types';
 
 interface Props extends BaseContentBlockProps {
   header?: string;
@@ -11,47 +13,24 @@ interface Props extends BaseContentBlockProps {
   markdownContent?: string;
 }
 
-const TAB_INDEXES = [
-  'first',
-  'second',
-  'third',
-  'fourth',
-  'fifth',
-  'sixth',
-  'seventh',
-  'eight',
-  'ninth',
-  'tenth'
-];
+const TAB_INDEXES = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eight', 'ninth', 'tenth'];
 
-const {
-  name,
-  order = 1,
-  cols,
-  header,
-  imageKey,
-  imageAlt,
-  markdownContent
-} = Astro.props;
+const { name, order = 1, cols, header, imageKey, imageAlt, markdownContent } = Astro.props;
 
 const buildingData = await getBuildingData(name);
 
+const importedImage = await loadDynamicImage(
+  `../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`
+);
+
 const processor = await createMarkdownProcessor();
 const headerContent = header
-  ? await processor.render(
-      `The ${TAB_INDEXES[order - 1]} tab of the GUI is the **${header}**.`
-    )
+  ? await processor.render(`The ${TAB_INDEXES[order - 1]} tab of the GUI is the **${header}**.`)
   : undefined;
-const content = markdownContent
-  ? await processor.render(markdownContent)
-  : undefined;
+const content = markdownContent ? await processor.render(markdownContent) : undefined;
 ---
 
-<ContentBlock
-  imageUrl={`/images/gui/buildings/${buildingData.id}/${imageKey}.png`}
-  imageAlt={`${imageAlt} tab of the ${buildingData.data.name} it's GUI`}
-  cols={cols}
->
+<ContentBlock image={importedImage} imageAlt={`${imageAlt} tab of the ${buildingData.data.name} it's GUI`} cols={cols}>
   {headerContent && <Fragment set:html={headerContent.code} />}
   <slot name="before-content" />
   {content && <Fragment set:html={content.code} />}
