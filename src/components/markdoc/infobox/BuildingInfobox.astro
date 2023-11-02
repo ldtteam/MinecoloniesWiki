@@ -1,6 +1,5 @@
 ---
 import { getBuildingData, getBuildingName } from '@utils/building';
-import { loadDynamicImage } from '@utils/util';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
@@ -15,7 +14,7 @@ interface Props {
 const { name } = Astro.props;
 const buildingData = await getBuildingData(name);
 
-const importedImage = await loadDynamicImage(`../../../assets/images/wiki/buildings/${name}.png`);
+const importedImage = await import(`../../../assets/images/wiki/buildings/${name}.png`).then((f) => f.default);
 
 const research = (
   await getCollection('research', (filter) =>

@@ -5,7 +5,6 @@ import icon from 'astro-icon';
 
 import { downloadResearch } from './integrations/download-research';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     react(),

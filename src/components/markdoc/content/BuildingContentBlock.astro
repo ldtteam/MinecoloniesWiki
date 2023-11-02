@@ -2,7 +2,6 @@
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import ContentBlock from '@components/markdoc/content/ContentBlock.astro';
 import { getBuildingData } from '@utils/building';
-import { loadDynamicImage } from '@utils/util';
 
 import type { BaseContentBlockProps } from './types';
 
@@ -19,8 +18,8 @@ const { name, order = 1, cols, header, imageKey, imageAlt, markdownContent } = A
 
 const buildingData = await getBuildingData(name);
 
-const importedImage = await loadDynamicImage(
-  `../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`
+const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`).then(
+  (f) => f.default
 );
 
 const processor = await createMarkdownProcessor();
