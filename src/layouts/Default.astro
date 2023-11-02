@@ -6,7 +6,8 @@ import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
-import Background from '@components/PageRoot.astro';
+import PageRoot from '@components/PageRoot.astro';
+import { getSortedVersions } from '@utils/version';
 import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
@@ -21,6 +22,8 @@ const titleFormatted = titleFormat ? titleFormat(title) : `MineColonies | ${titl
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
+
+const latestVersions = (await getSortedVersions())[0];
 ---
 
 <!doctype html>
@@ -40,8 +43,8 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
 
     <ViewTransitions />
   </head>
-  <body>
-    <Background isHome={isHome}>
+  <body data-latest-version={latestVersions.data.order}>
+    <PageRoot isHome={isHome}>
       <div class="page_root p-5">
         <Header isWiki={isWikiPage} />
         <Navigation />
@@ -57,6 +60,6 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
         </main>
         <Footer />
       </div>
-    </Background>
+    </PageRoot>
   </body>
 </html>

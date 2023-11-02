@@ -29,12 +29,12 @@ const recipes = buildingData.data.recipes ?? [];
 ---
 
 <div class="row infobox-wrapper">
-  <div class="col-md col-12">
+  <div class="flex-fill">
     <slot />
   </div>
 
-  <Infobox title={buildingData.data.name} class="col-md-auto col-12" small>
-    <div class="w-100 text-center">
+  <Infobox title={buildingData.data.name} class="w-auto flex-shrink-1">
+    <div class="text-center">
       <Image src={importedImage} alt={`${getBuildingName(buildingData, false)} block`} width={250} />
     </div>
 
@@ -106,16 +106,18 @@ const recipes = buildingData.data.recipes ?? [];
   @import '../../../css/bootstrap-vars.scss';
 
   .infobox-wrapper {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: row;
   }
 
   .row {
     flex-wrap: nowrap !important;
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-down(md) {
     .infobox-wrapper {
-      flex-direction: row;
+      flex-direction: column-reverse;
+      align-items: center;
     }
   }
 </style>

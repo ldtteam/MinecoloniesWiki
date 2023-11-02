@@ -59,15 +59,12 @@ export function toTitleCase(text: string) {
  */
 export function formatForgeString(format: string, ...args: string[]) {
   let formatIndex = 1;
-  return format.replaceAll(
-    /%(?:(\d+)\$)?([A-Za-z%]|$)/g,
-    (match, valueId, formatKey) => {
-      if (formatKey === '%' || match === '%' || match === '%%') {
-        return '%';
-      } else {
-        const idx = valueId !== undefined ? Number(valueId) : formatIndex++;
-        return args[idx - 1].toString();
-      }
+  return format.replaceAll(/%(?:(\d+)\$)?([A-Za-z%]|$)/g, (match, valueId, formatKey) => {
+    if (formatKey === '%' || match === '%' || match === '%%') {
+      return '%';
+    } else {
+      const idx = valueId !== undefined ? parseInt(valueId) : formatIndex++;
+      return args[idx - 1].toString();
     }
-  );
+  });
 }

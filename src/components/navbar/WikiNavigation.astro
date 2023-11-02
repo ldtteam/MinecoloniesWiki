@@ -1,4 +1,6 @@
 ---
+import VersionSelector from '@components/version/VersionSelector.astro';
+
 import { getWikiPages } from '../../util/wiki';
 import Navlink from './Navlink.astro';
 
@@ -32,6 +34,9 @@ const wikiPages = await getWikiPages();
             </Navlink>
           ))
         }
+      </ul>
+      <ul class="ms-auto navbar-nav">
+        <VersionSelector />
       </ul>
     </div>
   </div>

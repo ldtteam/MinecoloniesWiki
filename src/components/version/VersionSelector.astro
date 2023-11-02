@@ -1,0 +1,89 @@
+---
+import { getSortedVersions } from '@utils/version';
+
+const versions = await getSortedVersions();
+---
+
+<div class="input-group input-group-sm">
+  <span class="input-group-text">Version</span>
+  <select class="version-switch form-select">
+    <optgroup label="Supported versions">
+      {
+        versions
+          .filter((f) => f.data.supported)
+          .map((version) => <option value={version.data.order}>{version.data.name}</option>)
+      }
+    </optgroup>
+    <optgroup label="Unsupported versions" class="unsupported">
+      {
+        versions
+          .filter((f) => !f.data.supported)
+          .map((version) => (
+            <option class="unsupported" value={version.data.order}>
+              {version.data.name}
+            </option>
+          ))
+      }
+    </optgroup>
+  </select>
+</div>
+
+<style lang="scss">
+  select:has(option:checked.unsupported) {
+    color: red;
+  }
+
+  option,
+  optgroup {
+    color: initial;
+
+    &.unsupported {
+      color: red;
+    }
+  }
+</style>
+
+<script>
+  function updateVersion(version: number, persist = true) {
+    const currentVersion = parseInt(document.body.dataset.version ?? '');
+    if (currentVersion === version) {
+      return;
+    }
+
+    if (persist) {
+      localStorage.setItem('version', version.toString());
+    }
+    document.body.dataset.version = version.toString();
+
+    Array.from(document.getElementsByClassName('version-switch')).forEach((element) => {
+      if (element instanceof HTMLSelectElement) {
+        element.value = version.toString();
+      }
+    });
+  }
+
+  function updateVersionEv(event: Event) {
+    if (event.target instanceof HTMLSelectElement && !isNaN(parseInt(event.target.value))) {
+      updateVersion(parseInt(event.target.value));
+    }
+  }
+
+  function loadVersionSelectors() {
+    Array.from(document.getElementsByClassName('version-switch')).forEach((element) => {
+      if (element instanceof HTMLSelectElement) {
+        element.removeEventListener('change', updateVersionEv);
+        element.addEventListener('change', updateVersionEv);
+      }
+    });
+
+    const preferredVersion = parseInt(localStorage.getItem('version') ?? '');
+
+    if (!isNaN(preferredVersion)) {
+      updateVersion(preferredVersion, false);
+    } else {
+      updateVersion(parseInt(document.body.dataset.latestVersion ?? ''), false);
+    }
+  }
+
+  document.addEventListener('astro:page-load', loadVersionSelectors);
+</script>

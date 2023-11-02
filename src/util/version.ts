@@ -13,12 +13,17 @@ export async function getVersionNumbers(
       allowedVersions.push(nextVersion);
     }
     if (before && version.data.order > nextVersion.data.order) {
-      allowedVersions.push(version);
+      allowedVersions.push(nextVersion);
     }
     if (after && version.data.order < nextVersion.data.order) {
-      allowedVersions.push(version);
+      allowedVersions.push(nextVersion);
     }
   }
 
   return allowedVersions;
+}
+
+export async function getSortedVersions(): Promise<CollectionEntry<'versions'>[]> {
+  const versions = await getCollection('versions');
+  return versions.sort((a, b) => b.data.order - a.data.order);
 }

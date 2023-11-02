@@ -81,15 +81,7 @@ function getItemName(name: string) {
   });
 </script>
 
-<style>
-  .invslot.animate > .invslot-item {
-    display: none;
-  }
-
-  .invslot.animate > .invslot-item.active {
-    display: initial;
-  }
-
+<style style="scss">
   .invslot {
     display: inline-block;
     position: relative;
@@ -98,50 +90,58 @@ function getItemName(name: string) {
     background: #8b8b8b;
     border: 2px solid;
     border-color: #373737 #fff #fff #373737;
-  }
 
-  .invslot-large {
-    width: 3em;
-    height: 3em;
-  }
+    &::before,
+    &::after {
+      background-color: #8b8b8b;
+      content: '';
+      height: 2px;
+      position: absolute;
+      width: 2px;
+    }
 
-  .invslot-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+    &::before {
+      bottom: -2px;
+      left: -2px;
+    }
 
-  .invslot-stacksize {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: #fff !important;
-    text-shadow: 2px 2px 0 #3f3f3f;
-    filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
-  }
+    &::after {
+      right: -2px;
+      top: -2px;
+    }
 
-  .invslot::after,
-  .invslot::before {
-    background-color: #8b8b8b;
-    content: '';
-    height: 2px;
-    position: absolute;
-    width: 2px;
-  }
+    .invslot-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
 
-  .invslot::after {
-    right: -2px;
-    top: -2px;
-  }
+    &.animate > .invslot-item {
+      display: none;
 
-  .invslot::before {
-    bottom: -2px;
-    left: -2px;
-  }
+      &.active {
+        display: flex;
+      }
+    }
 
-  .inv-sprite {
-    height: calc(2em - 4px);
-    width: calc(2em - 4px);
+    &.invslot-large {
+      width: 3em;
+      height: 3em;
+    }
+
+    .invslot-stacksize {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #fff !important;
+      text-shadow: 2px 2px 0 #3f3f3f;
+      filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+    }
+
+    .inv-sprite {
+      height: calc(2em - 4px);
+      width: calc(2em - 4px);
+    }
   }
 </style>

@@ -21,7 +21,7 @@ title: Data Packs
   - [MineColonies Building Unlocks](#minecolonies-building-unlocks)
 - [Citizen names](#citizen-names)
 
-MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the official wiki](<https://Minecraft.fandom.com/wiki/Data_Pack>).
+MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the official wiki](https://Minecraft.fandom.com/wiki/Data_Pack).
 
 Data packs exist as part of a world, and they must be [installed](https://Minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack) on each world.
 
@@ -33,11 +33,11 @@ The JSON format is both generous and fastidious. It does not particularly care i
 
 For most users, looking at other similar JSONs will be the fastest way to get started. For those interested in the specific rules of the format, [see here](https://www.json.org/json-en.html).
 
-The data pack folder or zip file can be any valid file name, and will be used to determine the name of the data pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](<https://Minecraft.gamepedia.com/Data_Pack#pack.mcmeta>). It is strongly encouraged to provide a distinct name and description for your data pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a data pack, this should also contain a "data" directory.
+The data pack folder or zip file can be any valid file name, and will be used to determine the name of the data pack. This folder or zip file must contain in its root level a file named **pack.mcmeta**, [with a specific format](https://Minecraft.gamepedia.com/Data_Pack#pack.mcmeta). It is strongly encouraged to provide a distinct name and description for your data pack: this will show up as a tooltip from the in-game interfaces and /datapack list command. To act as a data pack, this should also contain a "data" directory.
 
 Each folder within that `data` directory acts as a different **namespace**. Most mods have their own namespaces; for MineColonies, this is `minecolonies`. As a rule, all folders and files within a datapack, including the namespace folders, **must** have names consisting solely of lowercase alphanumeric characters, underscores (`_`), dashes (-), and/or dots (.). Any other characters, including uppercase letters, will cause Minecraft to fail to load the data pack, and give a largely unhelpful error. Completely empty names are considered legal and read, but not all mods will support them.
 
-<p style="font-size:12pt;text-align:center"><b>Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.</b></p>
+**Data packs are very picky. A single misplaced comma, missing quotation mark, or invalid file name will give an error. If a file doesn't seem to be applying, or a datapack is giving errors on world load, check your file's formatting first.**
 Files that exactly match the namespace, directory, and name of a file from vanilla Minecraft, a mod, or another data pack will either completely override or merge with that other JSON, depending on the file's type. A data pack can have multiple namespace directories, and the most common approach is to use a mod's namespace when directly overriding an existing JSON from vanilla or a mod, and a unique namespace when adding or modifying content or modifying another data pack. It's encouraged to add to the `forge` and `minecraft` namespaces only when adding to or modifying vanilla or forge defaults, to use the `minecolonies` namespace when modifying existing MineColonies files, and to use your own namespace when adding new types, or completely removing a crafter recipe or research.
 
 ### Terminology
@@ -66,7 +66,7 @@ A complex data pack can have many files across many types in many namespaces, as
 
 ![Example Complex Data Pack Layout](@assets/images/wiki/misc/datapack_example.png)
 
-<p style="font-size:12pt;text-align:center"><b>The pack.mcmeta file is mandatory, and Minecraft will not load a data pack without one, or with an improperly formatted one.</b></p>
+**The pack.mcmeta file is mandatory, and Minecraft will not load a data pack without one, or with an improperly formatted one.**
 
 For Minecraft 1.16, a typical pack.mcmeta file looks like this: 
 
