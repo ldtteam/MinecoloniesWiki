@@ -41,3 +41,13 @@ export const worker_link = {
     }
   }
 };
+
+export const worker_infobox: Tag = {
+  render: component('@components/markdoc/infobox/WorkerInfobox.astro'),
+  attributes: {
+    name: {
+      type: String,
+      required: true
+    }
+  }
+};

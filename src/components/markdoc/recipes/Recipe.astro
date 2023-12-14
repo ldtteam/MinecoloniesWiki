@@ -7,14 +7,16 @@ interface Props {
   recipe: string;
 }
 
-const recipes = await getEntry('recipes', Astro.props.recipe);
-if (recipes === undefined) {
-  throw new Error(`Recipe "${Astro.props.recipe}" does not exist.`);
+const { recipe } = Astro.props;
+
+const recipeData = await getEntry('recipes', recipe);
+if (recipeData === undefined) {
+  throw new Error(`Recipe "${recipe}" does not exist.`);
 }
 ---
 
 {
-  recipes.data.recipes.map((recipe) => (
+  recipeData.data.recipes.map((recipe) => (
     <div class="crafting-table">
       <div class="ct-input">
         <div class="ct-row">

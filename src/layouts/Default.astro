@@ -18,7 +18,7 @@ interface Props {
 }
 
 const { title, titleFormat, header = title, fluid = false } = Astro.props;
-const titleFormatted = titleFormat ? titleFormat(title) : `MineColonies | ${title}`;
+const titleFormatted = titleFormat ? titleFormat(title) : `${title} | MineColonies |`;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
@@ -36,6 +36,8 @@ const latestVersions = (await getSortedVersions())[0];
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <Meta title={titleFormatted} />
 

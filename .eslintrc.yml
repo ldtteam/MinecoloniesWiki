@@ -13,60 +13,61 @@ plugins:
   - simple-import-sort
   - import
 
-parser: '@typescript-eslint/parser'
+parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaVersion: latest
   sourceType: module
 
 settings:
   react:
-    pragma: 'h'
-    version: '18.0'
+    pragma: "h"
+    version: "18.0"
 
 rules:
-  'import/first': 'warn'
-  'simple-import-sort/imports': 'warn'
-  'simple-import-sort/exports': 'warn'
-  '@typescript-eslint/no-unused-vars':
+  "import/first": "warn"
+  "simple-import-sort/imports": "warn"
+  "simple-import-sort/exports": "warn"
+  "no-unused-vars": "off"
+  "@typescript-eslint/no-unused-vars":
     - error
-    - argsIgnorePattern: '^_'
-      destructuredArrayIgnorePattern: '^_'
+    - argsIgnorePattern: "^_"
+      destructuredArrayIgnorePattern: "^_"
 
 overrides:
   - files:
-      - '*.astro'
-    parser: 'astro-eslint-parser'
+      - "*.astro"
+    parser: "astro-eslint-parser"
     parserOptions:
-      parser: '@typescript-eslint/parser'
+      parser: "@typescript-eslint/parser"
       extraFileExtensions:
-        - '.astro'
+        - ".astro"
     rules:
       # Astro cannot deal with imports on the first line because of the first line having to be ---
-      'import/first': off
+      "import/first": off
   - files:
-      - '*.ts'
-    parser: '@typescript-eslint/parser'
+      - "*.ts"
+    parser: "@typescript-eslint/parser"
     extends:
-      - 'plugin:@typescript-eslint/recommended'
+      - "plugin:@typescript-eslint/recommended"
   - files:
-      - '*.d.ts'
+      - "*.d.ts"
     rules:
-      '@typescript-eslint/triple-slash-reference': off
+      "@typescript-eslint/triple-slash-reference": off
   - files:
-      - '*.tsx'
+      - "*.tsx"
     plugins:
-      - 'react'
-      - '@typescript-eslint'
+      - "react"
+      - "@typescript-eslint"
     extends:
-      - 'eslint:recommended'
-      - 'plugin:react/recommended'
-      - 'plugin:react/jsx-runtime'
-      - 'plugin:@typescript-eslint/recommended'
-      - 'plugin:@typescript-eslint/recommended-requiring-type-checking'
-    parser: '@typescript-eslint/parser'
+      - "eslint:recommended"
+      - "plugin:react/recommended"
+      - "plugin:react/jsx-runtime"
+      - "plugin:@typescript-eslint/recommended"
+      - "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    parser: "@typescript-eslint/parser"
     parserOptions:
       project: tsconfig.json
   - files:
-      - '**/*.astro/*.js'
-      - '*.astro/*.js'
-    parser: '@typescript-eslint/parser'
+      - "**/*.astro/*.js"
+      - "*.astro/*.js"
+    parser: "@typescript-eslint/parser"

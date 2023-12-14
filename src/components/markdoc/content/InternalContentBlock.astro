@@ -1,0 +1,18 @@
+---
+interface Props {
+  cols?: number;
+}
+
+const totalColCount = 12;
+
+const { cols = 4 } = Astro.props;
+---
+
+<div class="row py-3">
+  <div class={`col-md-${cols} col-12`}>
+    <slot name="left" />
+  </div>
+  <div class={`col-md-${totalColCount - cols} col-12`}>
+    <slot />
+  </div>
+</div>

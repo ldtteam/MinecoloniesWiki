@@ -88,9 +88,11 @@ const recipes = buildingData.data.recipes ?? [];
           {
             research !== undefined ? (
               <>
-                <span>You must research "</span>
-                <a href={`/wiki/systems/research#research_${research.id}`}>{research.data.name}</a>
-                <span>" to unlock this building!</span>
+                <span />
+                <span>
+                  You must research "<a href={`/wiki/systems/research#research_${research.id}`}>{research.data.name}</a>
+                  " to unlock this building!
+                </span>
               </>
             ) : (
               <>No research is required for this building.</>

@@ -7,9 +7,10 @@ import {
   building_link,
   contentBlocks as buildingContentBlocks
 } from './src/markdoc/buildings';
-import { research_list, research_trees } from './src/markdoc/research';
+import { research_link, research_list, research_trees } from './src/markdoc/research';
+import { content_block } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
-import { worker, worker_link } from './src/markdoc/workers';
+import { worker, worker_infobox, worker_link } from './src/markdoc/workers';
 
 export const config: AstroMarkdocConfig = {
   tags: {
@@ -22,9 +23,12 @@ export const config: AstroMarkdocConfig = {
     building_infobox,
     worker,
     worker_link,
+    worker_infobox,
     research_trees,
     research_list,
-    version
+    research_link,
+    version,
+    content_block
   },
   nodes: {
     document: {

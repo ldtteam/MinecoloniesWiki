@@ -17,3 +17,14 @@ export const research_list = {
   render: component('@components/markdoc/research/ResearchList.astro'),
   selfClosing: true
 };
+
+export const research_link = {
+  render: component('@components/markdoc/research/ResearchLink.astro'),
+  selfClosing: true,
+  attributes: {
+    name: {
+      type: String,
+      required: true,
+    }
+  }
+};

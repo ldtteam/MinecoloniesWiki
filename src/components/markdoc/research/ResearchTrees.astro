@@ -21,7 +21,7 @@ function getTreeJoin() {
     <ul>
       {trees.map((tree) => (
         <li>
-          <a href="">{tree.data.name}</a>
+          <a href={`#${tree.id}`}>{tree.data.name}</a>
         </li>
       ))}
     </ul>

@@ -11,10 +11,10 @@
     "lint:fix": "astro check && eslint --fix ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
-    "@astrojs/markdoc": "^0.7.0",
-    "@astrojs/markdown-remark": "^3.3.0",
-    "@astrojs/react": "^3.0.4",
+    "@astrojs/check": "^0.3.2",
+    "@astrojs/markdoc": "^0.8.0",
+    "@astrojs/markdown-remark": "^4.0.1",
+    "@astrojs/react": "^3.0.7",
     "@fontsource/fondamento": "^5.0.11",
     "@iconify-json/fa6-brands": "^1.1.13",
     "@iconify-json/fa6-regular": "^1.1.13",
@@ -23,7 +23,7 @@
     "@octokit/auth-token": "^4.0.0",
     "@octokit/plugin-throttling": "^8.1.2",
     "@octokit/rest": "^20.0.2",
-    "astro": "^3.5.5",
+    "astro": "^4.0.4",
     "astro-icon": "^1.0.0-next.2",
     "bootstrap": "^5.3.2",
     "date-fns": "^2.30.0",

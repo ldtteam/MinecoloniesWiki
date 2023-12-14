@@ -10,7 +10,7 @@ interface Props {
 const tree = Astro.props.tree;
 ---
 
-<h3>{tree.data.name}</h3>
+<h3 id={tree.id}>{tree.data.name}</h3>
 <p><a href="#research-list">Back to top</a></p>
 
 <ResearchListTreeColumn tree={tree} name="First Column" depth={1} />
