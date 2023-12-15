@@ -1,5 +1,10 @@
 import type { CollectionEntry } from 'astro:content';
 
+export interface MarkdocWorkerComponent {
+  workerId?: string;
+  name: string;
+}
+
 /**
  * Obtain the worker data based on the worker key, if the worker does not exist, throw an error.
  * @param worker the worker key.

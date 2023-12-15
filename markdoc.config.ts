@@ -4,13 +4,12 @@ import shiki from '@astrojs/markdoc/shiki';
 import {
   building,
   building_infobox,
-  building_link,
   contentBlocks as buildingContentBlocks
 } from './src/markdoc/buildings';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import { content_block } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
-import { worker, worker_infobox, worker_link } from './src/markdoc/workers';
+import { worker, worker_infobox } from './src/markdoc/workers';
 
 export const config: AstroMarkdocConfig = {
   tags: {
@@ -19,10 +18,8 @@ export const config: AstroMarkdocConfig = {
       selfClosing: true
     },
     building,
-    building_link,
     building_infobox,
     worker,
-    worker_link,
     worker_infobox,
     research_trees,
     research_list,

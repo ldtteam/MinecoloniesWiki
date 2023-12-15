@@ -3,13 +3,13 @@ type: building
 building: concretemixer
 ---
 
-{% building_infobox name="concretemixer" %}
-The Concrete Mixer will craft all types of concrete powder and place them in flowing water (built in to their hut), then mine the resulting concrete. The Concrete Mixer will only make concrete and concrete powder when they receive a request for a block and have the needed materials. (All their recipes are pretaught.)
+{% building_infobox %}
+The {% building /%} will craft all types of concrete powder and place them in flowing water (built in to their hut), then mine the resulting concrete. The {% building /%} will only make concrete and concrete powder when they receive a request for a block and have the needed materials. (All their recipes are pretaught.)
 {% /building_infobox %}
 
-## {% building name="concretemixer" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="concretemixer" order=1 /%}
-{% building_gui_content_block_crafting_recipes name="concretemixer" order=2 noTeach=true noRemove=true /%}
-{% building_gui_content_block_tasks name="concretemixer" order=3 /%}
-{% building_gui_content_block_settings name="concretemixer" order=4 /%}
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
+{% building_gui_content_block_tasks order=3 /%}
+{% building_gui_content_block_settings order=4 /%}

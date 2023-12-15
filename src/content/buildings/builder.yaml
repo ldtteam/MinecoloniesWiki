@@ -6,7 +6,7 @@ recipes:
   - blockhutbuilder
 settings:
   - name: Builder Mode
-    description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the {% building_link name="townhall" /%} GUI's work orders tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.
+    description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the {% building name="townhall" /%} GUI's work orders tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.
   - name: Recipe Mode
     description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
     options:
@@ -28,6 +28,6 @@ settings:
       - name: random
         description: Blocks are placed in an entirely random order. Note that this slows down builds.
   - name: Use Shears
-    description: Whether the {% worker_link name="builder" /%} will use shears to harvest certain blocks like leaves or grass.
+    description: Whether the {% worker name="builder" /%} will use shears to harvest certain blocks like leaves or grass.
   - name: Fill Block
     description: Here you can select what block the builder uses to fill in holes/gaps in the schematic. The default is the dirt block.

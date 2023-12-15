@@ -3,7 +3,7 @@ type: building
 building: blacksmith
 ---
 
-{% building_infobox name="blacksmith" %}
+{% building_infobox %}
 The Blacksmith is a 3x3 crafter and can make any vanilla tools, armor, swords, and shields (no bows or redstone items). The Blacksmith will work when they receive a request for any of those items from another worker. 
 
 **Note:** You will need to teach the Blacksmith the recipes of the items you want them to create. The number of items the Blacksmith can learn are listed below:
@@ -21,9 +21,9 @@ Additionally, upon reaching level 5, the Blacksmith learns the nine netherite re
 When a colonist is requesting a tool from the Blacksmith with multiple accepted levels, the Blacksmith will craft whichever tool type is highest in their list of recipes that they have the materials for (when you teach them a new recipe, it'll go on the bottom).
 {% /building_infobox %}
 
-## {% building name="blacksmith" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="blacksmith" order=1 /%}
-{% building_gui_content_block_crafting_recipes name="blacksmith" order=2 /%}
-{% building_gui_content_block_tasks name="blacksmith" order=3 /%}
-{% building_gui_content_block_settings name="blacksmith" order=4 /%}
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 /%}
+{% building_gui_content_block_tasks order=3 /%}
+{% building_gui_content_block_settings order=4 /%}

@@ -1,19 +1,17 @@
 ---
-import { getWorkerData, getWorkerLink, getWorkerName } from '@utils/workers';
+import { getWorkerData, getWorkerLink, getWorkerName, type MarkdocWorkerComponent } from '@utils/workers';
 
-interface Props {
-  name: string;
-  link?: boolean;
+interface Props extends MarkdocWorkerComponent {
   plural?: boolean;
 }
 
-const { name, link = false, plural = false } = Astro.props;
+const { workerId, name, plural = false } = Astro.props;
 
 const workerData = await getWorkerData(name);
 ---
 
 {
-  link ? (
+  workerId !== workerData.id ? (
     <a href={getWorkerLink(workerData)}>{getWorkerName(workerData, plural)}</a>
   ) : (
     <span>{getWorkerName(workerData, plural)}</span>

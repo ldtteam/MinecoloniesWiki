@@ -3,9 +3,9 @@ import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlo
 import { getBuildingData, getBuildingMdLink } from '@utils/building';
 import { getWorkerData, getWorkerMdLink } from '@utils/workers';
 
-import type { BaseContentBlockProps } from '../types';
+import type { BaseBuildingContentBlockProps } from '../types';
 
-type Props = BaseContentBlockProps;
+type Props = BaseBuildingContentBlockProps;
 
 const townhallData = await getBuildingData('townhall');
 const builderData = await getWorkerData('builder');

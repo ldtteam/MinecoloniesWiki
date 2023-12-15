@@ -1,10 +1,11 @@
-export interface BaseContentBlockProps {
-  name: string;
+import type { MarkdocBuildingComponent } from "@utils/building";
+
+export interface BaseBuildingContentBlockProps extends MarkdocBuildingComponent {
   order?: number;
   cols?: number;
 }
 
-export interface CraftingContentBlockProps extends BaseContentBlockProps {
+export interface BuildingCraftingContentBlockProps extends BaseBuildingContentBlockProps {
   noTeach: boolean;
   noRemove: boolean;
 }

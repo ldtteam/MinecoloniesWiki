@@ -17,11 +17,11 @@ settings:
       - name: Follow
         description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
       - name: Patrol Mine
-        description: The Guard will patrol the level of a {% building_link name="mine" /%}. You must also assign that level in the Mine GUI.
+        description: The Guard will patrol the level of a {% building name="mine" /%}. You must also assign that level in the Mine GUI.
   - name: Retreat on low health
     description: Here you can choose if the Guard will attempt to retreat when they have low health.
   - name: Hire Trainee
-    description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility ({% building_link name="archery" /%} for {% worker_link name="archer" plural=true /%} and {% building_link name="combatacademy" /%} for {% worker_link name="knight" plural=true /%}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building_link name="townhall" /%} GUI.
+    description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility ({% building name="archery" /%} for {% worker name="archer" plural=true /%} and {% building name="combatacademy" /%} for {% worker name="knight" plural=true /%}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building name="townhall" /%} GUI.
   - name: Patrol Mode
     description: This is where you can choose how you want the Guard to patrol.
     options:

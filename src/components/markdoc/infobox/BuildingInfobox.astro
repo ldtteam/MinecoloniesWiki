@@ -1,5 +1,5 @@
 ---
-import { getBuildingData, getBuildingName } from '@utils/building';
+import { getBuildingData, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
@@ -7,19 +7,17 @@ import Recipe from '../recipes/Recipe.astro';
 import WorkerName from '../WorkerName.astro';
 import Infobox from './Infobox.astro';
 
-interface Props {
-  name: string;
-}
+type Props = MarkdocBuildingComponent;
 
-const { name } = Astro.props;
-const buildingData = await getBuildingData(name);
+const { buildingId } = Astro.props;
+const buildingData = await getBuildingData(buildingId ?? '');
 
-const importedImage = await import(`../../../assets/images/wiki/buildings/${name}.png`).then((f) => f.default);
+const importedImage = await import(`../../../assets/images/wiki/buildings/${buildingId}.png`).then((f) => f.default);
 
 const research = (
   await getCollection('research', (filter) =>
     filter.data.effects
-      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === name)
+      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === buildingId)
       : false
   )
 ).slice(0, 1)[0];
@@ -51,7 +49,7 @@ const recipes = buildingData.data.recipes ?? [];
             <div class="col">
               {workers.map((worker) => (
                 <p class="m-0">
-                  <WorkerName name={worker.id} link />
+                  <WorkerName name={worker.id} />
                 </p>
               ))}
             </div>

@@ -3,35 +3,35 @@ type: building
 building: barracks
 ---
 
-{% building_infobox name="barracks" %}
-The {% building name="barracks" /%} is the ultimate protection for your colony. Each {% building name="barracks" /%} can hold multiple {% building_link name="barrackstower" /%} within its structure. The {% building name="barrackstower" /%} (unlike the normal {% building_link name="guardtower" /%}) will employ *and* house one Guard for every level built, for a total of 5 Guards per {% building name="barrackstower" /%}! Each new Guard will need a bed in a {% building_link name="residence" /%} in order to spawn. However, once they are hired at the {% building name="barrackstower" /%}, that becomes their new residence and the bed in the house will open up for another new citizen. Currently, all official-style {% building name="barracks" /%} contain 4 Barracks Towers for a total of 20 Guards per Barracks for your colony. However, custom styles can have more or fewer than 4 Barracks Towers. Colonists like feeling safe, so building Barracks close to colonists' work and homes can improve their [happiness](../../source/systems/happinessandsaturation).
+{% building_infobox %}
+The {% building /%} is the ultimate protection for your colony. Each {% building /%} can hold multiple {% building name="barrackstower" /%} within its structure. The {% building name="barrackstower" /%} (unlike the normal {% building name="guardtower" /%}) will employ *and* house one Guard for every level built, for a total of 5 Guards per {% building name="barrackstower" /%}! Each new Guard will need a bed in a {% building name="residence" /%} in order to spawn. However, once they are hired at the {% building name="barrackstower" /%}, that becomes their new residence and the bed in the house will open up for another new citizen. Currently, all official-style {% building /%} contain 4 Barracks Towers for a total of 20 Guards per Barracks for your colony. However, custom styles can have more or fewer than 4 Barracks Towers. Colonists like feeling safe, so building Barracks close to colonists' work and homes can improve their [happiness](../../source/systems/happinessandsaturation).
 
-| {% building name="barracks" /%} Level | Max # of {% building name="barrackstower" /%} | Max Level of {% building name="barrackstower" /%} |
-| ------------------------------------- | --------------------------------------------- | ------------------------------------------------- |
-| 1                                     | 1                                             | 1                                                 |
-| 2                                     | 2                                             | 2                                                 |
-| 3                                     | 3                                             | 3                                                 |
-| 4                                     | 4                                             | 4                                                 |
-| 5                                     | 4                                             | 5                                                 |
+| {% building /%} Level | Max # of {% building name="barrackstower" /%} | Max Level of {% building name="barrackstower" /%} |
+| --------------------- | --------------------------------------------- | ------------------------------------------------- |
+| 1                     | 1                                             | 1                                                 |
+| 2                     | 2                                             | 2                                                 |
+| 3                     | 3                                             | 3                                                 |
+| 4                     | 4                                             | 4                                                 |
+| 5                     | 4                                             | 5                                                 |
 
-**Note:** The {% building name="barracks" /%} has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
+**Note:** The {% building /%} has slightly higher border expansion than other buildings. See the [border system](../../source/systems/border) page for more information.
 {% /building_infobox %}
 
-## {% building name="barracks" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_custom name="barracks" order=1 header="main interface" imageKey="main" imageAlt="Main" %}
+{% building_gui_content_block_custom order=1 header="main interface" imageKey="main" imageAlt="Main" %}
 - Header:
     - **Building Name**: Shows the name of the building, including the level of the building.
     - **Pencil**: Allows you to rename the building. The level of the building will always be listed after the name.
     - **Current Barbarian Position and Last Barbarian Spawn**: A tracker system for Barbarians. **Note:** you can only see the current barbarian position if you have **hired spies** (see below) during the current raid.
 - Controls:
-    - **Build Options**: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the {% worker_link name="builder" /%} page.
+    - **Build Options**: Lets you create a build, upgrade, or repair build order for this hut. To learn more about the building system, please visit the {% worker name="builder" /%} page.
     - **Hire Spies**: This option is only available after the hut is level 3. Here you can hire spies during raids.
 - Footer:
     - **Info Button**: Some huts have an in-game guide. Press the ? button to access it.
     - **Inventory**: Here you can access the hut block’s storage, where the worker at this hut takes and deposits materials. They will also use any racks that were placed in the hut when it was built or upgraded, so be sure to check those as well!
     - **Chest Icon**: Click this button to see all the items in the hut’s storage (including the hut block’s inventory and any racks that came with the hut). Clicking the ? button next to an item’s count will highlight the storage container it’s in.
 {% /building_gui_content_block_custom %}
-{% building_gui_content_block_custom name="barracks" order=2 header="hiring spies" imageKey="hiringspies" imageAlt="Hiring spies" %}
+{% building_gui_content_block_custom order=2 header="hiring spies" imageKey="hiringspies" imageAlt="Hiring spies" %}
 Before each raid, you are able to hire spies for 5 gold per raid, these spies will go out into the world and if barbarians are spotted, the spies will tell you exactly where the barbarians are.
 {% /building_gui_content_block_custom %}

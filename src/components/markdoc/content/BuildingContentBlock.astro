@@ -4,9 +4,9 @@ import InternalContentBlock from '@components/markdoc/content/InternalContentBlo
 import { getBuildingData } from '@utils/building';
 import { Image } from 'astro:assets';
 
-import type { BaseContentBlockProps } from './types';
+import type { BaseBuildingContentBlockProps } from './types';
 
-interface Props extends BaseContentBlockProps {
+interface Props extends BaseBuildingContentBlockProps {
   header?: string;
   imageKey: string;
   imageAlt: string;
@@ -15,9 +15,9 @@ interface Props extends BaseContentBlockProps {
 
 const TAB_INDEXES = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eight', 'ninth', 'tenth'];
 
-const { name, order = 1, cols, header, imageKey, imageAlt, markdownContent } = Astro.props;
+const { buildingId, order = 1, cols, header, imageKey, imageAlt, markdownContent } = Astro.props;
 
-const buildingData = await getBuildingData(name);
+const buildingData = await getBuildingData(buildingId ?? '');
 
 const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`).then(
   (f) => f.default

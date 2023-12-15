@@ -3,7 +3,7 @@ type: building
 building: dyer
 ---
 
-{% building_infobox name="dyer" %}
+{% building_infobox %}
 The Dyer's Hut is where the Dyer will craft dyes and dye other items, including red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The Dyer will only do this if they receive a request from another worker and have the necessary materials. The Dyer's Hut automatically knows how to make green dye and red sand, but you must teach it the recipes for the other dyes and the dyed items.
 
 **Hint:** The number of recipes you can teach the Dyer's Hut doubles per building level. So:
@@ -29,11 +29,11 @@ The Dyer's Hut is where the Dyer will craft dyes and dye other items, including 
 **Hint:** The higher the Dyer's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
 {% /building_infobox %}
 
-## {% building name="dyer" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="dyer" order=1 /%}
-{% building_gui_content_block_crafting_recipes name="dyer" order=2 /%}
-{% building_gui_content_block_smelting_recipes name="dyer" order=3 /%}
-{% building_gui_content_block_fuel name="dyer" order=4 /%}
-{% building_gui_content_block_tasks name="dyer" order=5 /%}
-{% building_gui_content_block_settings name="dyer" order=6 /%}
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 /%}
+{% building_gui_content_block_smelting_recipes order=3 /%}
+{% building_gui_content_block_fuel order=4 /%}
+{% building_gui_content_block_tasks order=5 /%}
+{% building_gui_content_block_settings order=6 /%}

@@ -3,7 +3,7 @@ type: building
 building: hospital
 ---
 
-{% building_infobox name="hospital" %}
+{% building_infobox %}
 The Hospital is where injured or sick citizens go. The Healer will heal them with various items. The possible diseases can be changed in the [config file](../../source/misc/configfile), however, these are the defaults:
 
 | Disease             | Items Needed to Cure          |
@@ -23,7 +23,7 @@ The higher the level of the Hospital, the more people can be healed at a time. S
 | 5              | 5              |
 {% /building_infobox %}
 
-## {% building name="hospital" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="hospital" order=1 /%}
-{% building_gui_content_block_stock name="hospital" order=2 /%}
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_stock order=2 /%}

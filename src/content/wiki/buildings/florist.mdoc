@@ -3,7 +3,7 @@ type: building
 building: florist
 ---
 
-{% building_infobox name="florist" %}
+{% building_infobox %}
 The Flower Shop is where your Florist will grow flowers for your colony, if given [compost](../../source/items/compost) and an axe.
 
 **Hint:** The higher the level of the Flower Shop, the more daily output the Florist can handle. So:
@@ -17,10 +17,10 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 | 5              | 20               |
 {% /building_infobox %}
 
-## {% building name="florist" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="florist" order=1 /%}
-{% building_gui_content_block_item_list name="florist" order=2 header="plantables" imageKey="plantables" imageAlt="Plantables list" defaultOn=true %}
-This shows a list of items the {% worker name="florist" /%} can plant. As the {% building name="florist" /%} is leveled up, your {% building name="florist" /%} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_item_list order=2 header="plantables" imageKey="plantables" imageAlt="Plantables list" defaultOn=true %}
+This shows a list of items the {% worker name="florist" /%} can plant. As the {% building /%} is leveled up, your {% building /%} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
 {% /building_gui_content_block_item_list %}
-{% building_gui_content_block_stock name="florist" order=3 /%}
+{% building_gui_content_block_stock order=3 /%}

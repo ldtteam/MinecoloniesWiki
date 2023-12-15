@@ -1,5 +1,10 @@
 import { type CollectionEntry } from 'astro:content';
 
+export interface MarkdocBuildingComponent {
+  buildingId?: string;
+  name: string;
+}
+
 /**
  * Obtain the building data based on the building key, if the building does not exist, throw an error.
  * @param building the building key.

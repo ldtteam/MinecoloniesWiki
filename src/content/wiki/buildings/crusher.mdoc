@@ -3,7 +3,7 @@ type: building
 building: crusher
 ---
 
-{% building_infobox name="crusher" %}
+{% building_infobox %}
 The Crusher's Hut is where the Crusher will take items and crush them into other blocks. The defaults are: 
 
 | Starting Item | Created Item                 |
@@ -15,7 +15,7 @@ The Crusher's Hut is where the Crusher will take items and crush them into other
 | Gravel        | Sand                         |
 | Sand          | Clay                         |
 
-Note: By default the Crusher's ratio is 2:1, but there is a [research](../../source/systems/research) in the {% building_link name="university" /%} to make them work on a 1:1 ratio.
+Note: By default the Crusher's ratio is 2:1, but there is a [research](../../source/systems/research) in the {% building name="university" /%} to make them work on a 1:1 ratio.
 
 The higher the level of the Crusher's Hut, the more daily output the Crusher can handle. So:
 
@@ -28,9 +28,9 @@ The higher the level of the Crusher's Hut, the more daily output the Crusher can
 | 5              | 999       |
 {% /building_infobox %}
 
-## {% building name="crusher" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="crusher" order=1 /%}
-{% building_gui_content_block_crafting_recipes name="crusher" order=2 noTeach=true noRemove=true /%}
-{% building_gui_content_block_tasks name="crusher" order=3 /%}
-{% building_gui_content_block_settings name="crusher" order=4 /%}
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
+{% building_gui_content_block_tasks order=3 /%}
+{% building_gui_content_block_settings order=4 /%}

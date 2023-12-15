@@ -3,8 +3,8 @@ type: building
 building: miner
 ---
 
-{% building_infobox name="miner" %}
-The Mine is where you can hire a {% worker_link name="miner" /%} to work the mine, or a {% worker_link name="quarrier" /%} to work the {% building_link name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
+{% building_infobox %}
+The Mine is where you can hire a {% worker name="miner" /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
 
 At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward to a specific depth depending on the level of the Mine.  Once the main shaft is completed, the Miner will then branch out.
 
@@ -21,24 +21,24 @@ While mining, sometimes the Miner will get lucky and get an ore block instead of
 | 4          |               | Bedrock       |
 {% /building_infobox %}
 
-## {% building name="miner" /%} GUI
+## {% building /%} GUI
 
-{% building_gui_content_block_main name="miner" order=1 /%}
-{% building_gui_content_block_crafting_recipes name="miner" order=2 /%}
-{% building_gui_content_block_stock name="miner" order=3 /%}
-{% building_gui_content_block_required_resources name="miner" order=4 /%}
-{% building_gui_content_block_custom name="miner" order=5 header="levels" imageKey="levels" imageAlt="Levels" %}
-The level refers to the platforms the {% worker name="miner" /%} will place every 3 blocks down. Here you can assign what level of the {% building name="miner" /%} the {% worker name="miner" /%} will create their mineshafts (nodes).
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 /%}
+{% building_gui_content_block_stock order=3 /%}
+{% building_gui_content_block_required_resources order=4 /%}
+{% building_gui_content_block_custom order=5 header="levels" imageKey="levels" imageAlt="Levels" %}
+The level refers to the platforms the {% worker name="miner" /%} will place every 3 blocks down. Here you can assign what level of the {% building /%} the {% worker name="miner" /%} will create their mineshafts (nodes).
 If a level has a red number next to it, that means the {% worker name="miner" /%} is currently mining that level.
 The {% worker name="miner" /%} will ignore orders to mine at a specific level until the entire mineshaft is completed to the maximum depth their hut's level allows.
 You can also click Repair, to tell the {% worker name="miner" /%} to restore that level to its original state. This can be useful if a fire breaks out in the mineshaft.
 {% /building_gui_content_block_custom %}
-{% building_gui_content_block_settings name="miner" order=6 /%}
-{% building_gui_content_block_custom name="miner" order=7 header="guards" imageKey="guards" imageAlt="Guards" %}
-Here is where you can assign guards to patrol this {% building name="miner" /%}. If assigned, they will patrol the level the {% worker name="miner" /%} is currently mining at, to help protect them from hostile mobs.
-Only guards set to the Patrol Mine task will show up here; tasks can be set in the {% building_link name="guardtower" /%} it's GUI ({% building_link name="barrackstower" plural=true /%} do not have the Patrol Mine task).
+{% building_gui_content_block_settings order=6 /%}
+{% building_gui_content_block_custom order=7 header="guards" imageKey="guards" imageAlt="Guards" %}
+Here is where you can assign guards to patrol this {% building /%}. If assigned, they will patrol the level the {% worker name="miner" /%} is currently mining at, to help protect them from hostile mobs.
+Only guards set to the Patrol Mine task will show up here; tasks can be set in the {% building name="guardtower" /%} it's GUI ({% building name="barrackstower" plural=true /%} do not have the Patrol Mine task).
 
-The amount of guards you can assign to the mine changes based on the {% building name="miner" /%} it's level.
+The amount of guards you can assign to the mine changes based on the {% building /%} it's level.
 
 | Mine Level | Amount of guards |
 | ---------- | ---------------- |

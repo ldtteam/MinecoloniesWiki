@@ -1,18 +1,17 @@
 ---
-import { getBuildingData, getBuildingLink, getBuildingName } from '@utils/building';
+import { getBuildingData, getBuildingLink, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
 
-interface Props {
-  name: string;
-  link?: boolean;
+interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
 }
 
-const { name, link = false, plural = false } = Astro.props;
+const { buildingId, name, plural = false } = Astro.props;
+
 const buildingData = await getBuildingData(name);
 ---
 
 {
-  link ? (
+  buildingId !== buildingData.id ? (
     <a href={getBuildingLink(buildingData)}>{getBuildingName(buildingData, plural)}</a>
   ) : (
     <span>{getBuildingName(buildingData, plural)}</span>
