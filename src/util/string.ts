@@ -1,3 +1,8 @@
+interface ParsedResourceLocation {
+  namespace: string;
+  id: string;
+}
+
 const noTitleCaseWords = [
   'a',
   'and',
@@ -67,4 +72,20 @@ export function formatForgeString(format: string, ...args: string[]) {
       return args[idx - 1].toString();
     }
   });
+}
+
+/**
+ * Parsed a minecraft-like resource location, in the format "{namespace}:{id}".
+ * @param str the input string to parse.
+ * @returns the parsed out resource location.
+ */
+export function parseResourceLocation(str: string): ParsedResourceLocation | undefined {
+  if (!str.includes(":")) {
+    return undefined;
+  }
+  const [namespace = "minecraft", id = ""] = str.split(":", 2);
+  return {
+    namespace,
+    id,
+  }
 }

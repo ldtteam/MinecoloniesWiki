@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"puberty","name":"Growth","requirements":[{"type":"building","building":"library","level":5},{"type":"item","item":"cooked chicken","quantity":256}],"effects":{"growthmultiplier":4},"researchLevel":5}
+{"tree":"civilian","parent":"puberty","name":"Growth","requirements":[{"type":"building","building":"library","level":5},{"type":"item","items":["minecraft:cooked_chicken"],"quantity":256}],"effects":{"growthmultiplier":4},"researchLevel":5}

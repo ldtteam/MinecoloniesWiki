@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"tools","name":"Seems Automatic","requirements":[{"type":"building","building":"blacksmith","level":5},{"type":"item","item":"iron ingot","quantity":512}],"effects":{"blockplacespeedmultiplier":4},"researchLevel":5}
+{"tree":"technology","parent":"tools","name":"Seems Automatic","requirements":[{"type":"building","building":"blacksmith","level":5},{"type":"item","items":["minecraft:iron_ingot"],"quantity":512}],"effects":{"blockplacespeedmultiplier":4},"researchLevel":5}

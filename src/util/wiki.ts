@@ -12,7 +12,10 @@ interface WikiSubCategoryEntry {
   pages: WikiPageEntry[];
 }
 
-type WikiPages = Record<string, (WikiSubCategoryEntry | WikiPageEntry)[]>;
+type WikiPages = Record<string, {
+  type: CollectionEntry<"wiki_categories">;
+  pages: (WikiSubCategoryEntry | WikiPageEntry)[];
+}>;
 
 const WorkerPageTypes: Record<
   CollectionEntry<'workers'>['data']['type'],
@@ -67,7 +70,10 @@ export async function getWikiPages(): Promise<WikiPages> {
 
   const distributedPages: WikiPages = {};
   wikiCategories.forEach((category) => {
-    distributedPages[category.data.name] = [];
+    distributedPages[category.id] = {
+      type: category,
+      pages: []
+    };
   });
 
   for (const entry of wikiPages) {
@@ -85,7 +91,7 @@ export async function getWikiPages(): Promise<WikiPages> {
       const workerData = await getEntry('workers', entry.data.worker.id);
       if (workerData !== undefined) {
         const subCategoryName = WorkerPageTypes[workerData.data.type];
-        let subCategory = distributedPages[category.data.name]
+        let subCategory = distributedPages[category.id].pages
           .filter(isSubCategory)
           .find((f) => f.name === subCategoryName);
 
@@ -95,7 +101,7 @@ export async function getWikiPages(): Promise<WikiPages> {
             name: WorkerPageTypes[workerData.data.type],
             pages: []
           };
-          distributedPages[category.data.name].push(subCategory);
+          distributedPages[category.id].pages.push(subCategory);
         }
 
         subCategory.pages.push({
@@ -105,7 +111,7 @@ export async function getWikiPages(): Promise<WikiPages> {
         });
       }
     } else {
-      distributedPages[category.data.name].push({
+      distributedPages[category.id].pages.push({
         type: 'page',
         name: await getWikiTitle(entry),
         slug: entry.slug

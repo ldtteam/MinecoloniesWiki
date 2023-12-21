@@ -21,21 +21,20 @@ const hasChildren = Astro.slots.has('default');
   {
     hasChildren ? (
       <>
-        <a
+        <span
           class:list={[
             root ? 'nav-link' : 'dropdown-item',
             hasChildren ? 'dropdown-toggle' : '',
             active ? 'active' : '',
             thin ? 'py-0' : ''
           ]}
-          href="#"
           id={dropdownId}
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
           {name}
-        </a>
+        </span>
         <ul class="dropdown-menu" aria-labelledby={dropdownId}>
           <slot />
         </ul>

@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"opennether","name":"Magic Potions","requirements":[{"type":"item","item":"nether wart","quantity":16}],"effects":{"blockhutalchemist":1},"researchLevel":3}
+{"tree":"technology","parent":"opennether","name":"Magic Potions","requirements":[{"type":"item","items":["minecraft:nether_wart"],"quantity":16}],"effects":{"blockhutalchemist":1},"researchLevel":3}

@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"cheatsheet","name":"Deep Pockets","requirements":[{"type":"building","building":"library","level":4},{"type":"item","item":"emerald","quantity":64}],"effects":{"citizeninvslotsaddition":1},"researchLevel":4}
+{"tree":"technology","parent":"cheatsheet","name":"Deep Pockets","requirements":[{"type":"building","building":"library","level":4},{"type":"item","items":["minecraft:emerald"],"quantity":64}],"effects":{"citizeninvslotsaddition":1},"researchLevel":4}

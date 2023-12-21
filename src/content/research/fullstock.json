@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"capacity","name":"Full Stock!","requirements":[{"type":"building","building":"miner","level":5},{"type":"item","item":"blockminecoloniesrack","quantity":64}],"effects":{"minimumstockmultiplier":3},"researchLevel":5}
+{"tree":"technology","parent":"capacity","name":"Full Stock!","requirements":[{"type":"building","building":"miner","level":5},{"type":"item","items":["minecolonies:blockminecoloniesrack"],"quantity":64}],"effects":{"minimumstockmultiplier":3},"researchLevel":5}

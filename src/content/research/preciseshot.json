@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"accuracy","name":"Precise Shot","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","item":"flint","quantity":16}],"effects":{"archerdamageaddition":1},"researchLevel":2}
+{"tree":"combat","parent":"accuracy","name":"Precise Shot","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","items":["minecraft:flint"],"quantity":16}],"effects":{"archerdamageaddition":1},"researchLevel":2}

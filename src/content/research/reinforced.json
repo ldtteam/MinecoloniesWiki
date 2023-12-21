@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"hardened","name":"Reinforced","requirements":[{"type":"building","building":"blacksmith","level":3},{"type":"item","item":"diamond","quantity":32}],"effects":{"tooldurabilitymultiplier":3},"researchLevel":4}
+{"tree":"technology","parent":"hardened","name":"Reinforced","requirements":[{"type":"building","building":"blacksmith","level":3},{"type":"item","items":["minecraft:diamond"],"quantity":32}],"effects":{"tooldurabilitymultiplier":3},"researchLevel":4}

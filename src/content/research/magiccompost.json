@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"fertilizer","name":"Magic Compost","requirements":[{"type":"item","item":"wheat seeds","quantity":2048}],"effects":{"farmingmultiplier":5},"researchLevel":6}
+{"tree":"technology","parent":"fertilizer","name":"Magic Compost","requirements":[{"type":"item","items":["minecraft:wheat_seeds"],"quantity":2048}],"effects":{"farmingmultiplier":5},"researchLevel":6}

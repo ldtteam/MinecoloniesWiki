@@ -14,9 +14,9 @@ const wikiPages = await getWikiPages();
         <Navlink href="/wiki" name="Wiki Home" root thin />
 
         {
-          Object.entries(wikiPages).map(([category, pages]) => (
-            <Navlink name={category} root thin>
-              {pages.map((page) => {
+          Object.entries(wikiPages).map(([category, categoryInfo]) => (
+            <Navlink name={categoryInfo.type.data.name} root thin href={`/wiki/${category}`} exact={false}>
+              {categoryInfo.pages.map((page) => {
                 if (page.type === 'page') {
                   return <Navlink name={page.name} href={`/wiki/${page.slug}`} />;
                 } else if (page.type === 'subcategory') {

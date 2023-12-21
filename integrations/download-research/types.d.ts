@@ -8,24 +8,38 @@ export interface ResearchTree {
 }
 
 export interface BuildingRequirement {
+  type: "";
   building: string;
   level: number;
 }
 
 export interface MandatoryBuildingRequirement {
+  type: "";
   'mandatory-building': string;
   level: number;
 }
 
-export interface ItemRequirement {
-  item: string;
+export interface ItemListRequirement {
+  type: "minecolonies:item_list";
+  item: {
+    items: string[];
+  };
+  quantity: number;
+}
+
+export interface ItemTagRequirement {
+  type: "minecolonies:item_tag";
+  item: {
+    tag: string;
+  };
   quantity: number;
 }
 
 export type ResearchRequirement =
   | BuildingRequirement
   | MandatoryBuildingRequirement
-  | ItemRequirement;
+  | ItemListRequirement
+  | ItemTagRequirement;
 
 export type ResearchItem = {
   branch: string;

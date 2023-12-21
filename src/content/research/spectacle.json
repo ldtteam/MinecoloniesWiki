@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"festival","name":"Spectacle","requirements":[{"type":"building","building":"cook","level":4},{"type":"item","item":"cake","quantity":18}],"effects":{"happinessmultiplier":3},"researchLevel":4}
+{"tree":"civilian","parent":"festival","name":"Spectacle","requirements":[{"type":"building","building":"cook","level":4},{"type":"item","items":["minecraft:cake"],"quantity":18}],"effects":{"happinessmultiplier":3},"researchLevel":4}

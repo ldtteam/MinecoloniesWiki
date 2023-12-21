@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"memoryaid","name":"Cheat Sheet","requirements":[{"type":"building","building":"sawmill","level":2},{"type":"item","item":"paper","quantity":64}],"effects":{"recipesmultiplier":2},"researchLevel":3}
+{"tree":"technology","parent":"memoryaid","name":"Cheat Sheet","requirements":[{"type":"building","building":"sawmill","level":2},{"type":"item","items":["minecraft:paper"],"quantity":64}],"effects":{"recipesmultiplier":2},"researchLevel":3}

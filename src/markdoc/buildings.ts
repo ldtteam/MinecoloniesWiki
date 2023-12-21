@@ -1,10 +1,11 @@
 import { component, Markdoc } from '@astrojs/markdoc/config';
+import type { Config } from '@markdoc/markdoc';
 import type { MarkdocBuildingComponent } from '@utils/building';
 
 import type { Tag } from './types';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function getBuildingAttributes(attributes: Record<string, any>, config: Parameters<NonNullable<Tag["transform"]>>[1]): MarkdocBuildingComponent {
+function getBuildingAttributes(attributes: Record<string, any>, config: Config): MarkdocBuildingComponent {
   const buildingId = config.variables?.frontmatter?.building?.id;
   if (Object.keys(attributes).includes("name")) {
     return {
@@ -21,13 +22,10 @@ function getBuildingAttributes(attributes: Record<string, any>, config: Paramete
   }
 }
 
-function buildingTransform(tagName: string): Tag["transform"] {
-  const result: Tag["transform"] = (node, config) => {
-    const attributes = getBuildingAttributes(node.transformAttributes(config), config);
-    const children = node.transformChildren(config);
-    return new Markdoc.Tag(config.tags![tagName].render, attributes, children);
-  }
-  return result;
+const buildingTransform: Tag["transform"] = (node, config) => {
+  const attributes = getBuildingAttributes(node.transformAttributes(config), config);
+  const children = node.transformChildren(config);
+  return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
 }
 
 export const building: Tag = {
@@ -44,12 +42,12 @@ export const building: Tag = {
       required: false
     }
   },
-  transform: buildingTransform("building")
+  transform: buildingTransform
 };
 
 export const building_infobox: Tag = {
   render: component('@components/markdoc/infobox/BuildingInfobox.astro'),
-  transform: buildingTransform("building_infobox")
+  transform: buildingTransform
 };
 
 const defaultContentBlockAttributes: Tag['attributes'] = {
@@ -112,42 +110,42 @@ export const contentBlocks: Record<string, Tag> = {
     render: component('@components/markdoc/content/blocks/BrewingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_brewing_recipes")
+    transform: buildingTransform
   },
   crafting_recipes: {
     render: component('@components/markdoc/content/blocks/CraftingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_crafting_recipes")
+    transform: buildingTransform
   },
   custom: {
     render: component('@components/markdoc/content/blocks/Custom.astro'),
     attributes: customContentAttributes,
-    transform: buildingTransform("building_gui_content_block_custom")
+    transform: buildingTransform
   },
   do_recipes: {
     render: component('@components/markdoc/content/blocks/DoRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_do_recipes")
+    transform: buildingTransform
   },
   fields: {
     render: component('@components/markdoc/content/blocks/Fields.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_fields")
+    transform: buildingTransform
   },
   fuel: {
     render: component('@components/markdoc/content/blocks/Fuel.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_fuel")
+    transform: buildingTransform
   },
   hostiles: {
     render: component('@components/markdoc/content/blocks/Hostiles.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_hostiles")
+    transform: buildingTransform
   },
   item_list: {
     render: component('@components/markdoc/content/blocks/ItemList.astro'),
@@ -159,54 +157,54 @@ export const contentBlocks: Record<string, Tag> = {
         default: false
       }
     },
-    transform: buildingTransform("building_gui_content_block_item_list")
+    transform: buildingTransform
   },
   main: {
     render: component('@components/markdoc/content/blocks/Main.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_main")
+    transform: buildingTransform
   },
   main_residential: {
     render: component('@components/markdoc/content/blocks/MainResidential.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_main_residential")
+    transform: buildingTransform
   },
   required_resources: {
     render: component('@components/markdoc/content/blocks/RequiredResources.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_required_resources")
+    transform: buildingTransform
   },
   settings: {
     render: component('@components/markdoc/content/blocks/Settings.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_settings")
+    transform: buildingTransform
   },
   smelting_recipes: {
     render: component('@components/markdoc/content/blocks/SmeltingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_smelting_recipes")
+    transform: buildingTransform
   },
   stock: {
     render: component('@components/markdoc/content/blocks/Stock.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_stock")
+    transform: buildingTransform
   },
   tasks: {
     render: component('@components/markdoc/content/blocks/Tasks.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_tasks")
+    transform: buildingTransform
   },
   work_orders: {
     render: component('@components/markdoc/content/blocks/WorkOrders.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform("building_gui_content_block_work_orders")
+    transform: buildingTransform
   }
 };

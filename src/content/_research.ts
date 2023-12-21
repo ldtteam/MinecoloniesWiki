@@ -8,7 +8,7 @@ const requirements = z.discriminatedUnion('type', [
   }),
   z.object({
     type: z.literal('item'),
-    item: z.string(),
+    items: z.string().array(),
     quantity: z.number().default(1)
   })
 ]);

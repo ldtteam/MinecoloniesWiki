@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"firstaid","name":"Circus","requirements":[{"type":"building","building":"cook","level":2},{"type":"item","item":"cake","quantity":1}],"effects":{"happinessmultiplier":1},"researchLevel":2}
+{"tree":"civilian","parent":"firstaid","name":"Circus","requirements":[{"type":"building","building":"cook","level":2},{"type":"item","items":["minecraft:cake"],"quantity":1}],"effects":{"happinessmultiplier":1},"researchLevel":2}

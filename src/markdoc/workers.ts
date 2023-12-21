@@ -21,6 +21,12 @@ function getWorkerAttributes(attributes: Record<string, any>, config: Parameters
   }
 }
 
+const workerTransform: Tag["transform"] = (node, config) => {
+  const attributes = getWorkerAttributes(node.transformAttributes(config), config);
+  const children = node.transformChildren(config);
+  return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
+}
+
 export const worker: Tag = {
   render: component('@components/markdoc/WorkerName.astro'),
   selfClosing: true,
@@ -35,22 +41,10 @@ export const worker: Tag = {
       required: false
     }
   },
-  transform: (node, config) => {
-    const attributes = getWorkerAttributes(node.transformAttributes(config), config);
-    const children = node.transformChildren(config);
-    const render = config.tags!.worker.render;
-
-    return new Markdoc.Tag(render, attributes, children);
-  }
+  transform: workerTransform
 };
 
 export const worker_infobox: Tag = {
   render: component('@components/markdoc/infobox/WorkerInfobox.astro'),
-  transform: (node, config) => {
-    const attributes = getWorkerAttributes(node.transformAttributes(config), config);
-    const children = node.transformChildren(config);
-    const render = config.tags!.worker_infobox.render;
-
-    return new Markdoc.Tag(render, attributes, children);
-  }
+  transform: workerTransform
 };

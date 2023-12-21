@@ -12,7 +12,8 @@ import type { ResearchEffect, ResearchItem, ResearchTree } from './types';
 import {
   computeResearchEffectTranslation,
   isBuildingRequirement,
-  isItemRequirement,
+  isItemListRequirement,
+  isItemTagRequirement,
   isMandatoryBuildingRequirement
 } from './util';
 
@@ -79,10 +80,13 @@ export function downloadResearch(
         );
         const contentLoader = new ContentLoader(SECRET_GH_PAT);
 
-        const translations = await contentLoader.getJsonFile(
+        const modTranslations = await contentLoader.getJsonFile(
+          'src/main/resources/assets/minecolonies/lang/manual_en_us.json'
+        );
+        const researchTranslations = await contentLoader.getJsonFile(
           'src/datagen/generated/minecolonies/assets/minecolonies/lang/default.json'
         );
-        if (translations === undefined) {
+        if (modTranslations == undefined || researchTranslations === undefined) {
           logger.warn('Could not load translation data, aborting file update.');
           return;
         }
@@ -97,7 +101,7 @@ export function downloadResearch(
             researchEffect.filename,
             JSON.stringify({
               format: computeResearchEffectTranslation(
-                translations.content,
+                researchTranslations.content,
                 researchEffect.filename.replace('.json', '')
               ),
               levels: researchEffect.content.levels
@@ -110,7 +114,7 @@ export function downloadResearch(
         );
         for (const researchTree of researchTrees) {
           const name =
-            translations.content[researchTree.content['branch-name']];
+            researchTranslations.content[researchTree.content['branch-name']];
           writeContentCollectionFile(
             'research_tree',
             researchTree.filename,
@@ -130,8 +134,8 @@ export function downloadResearch(
             const tree = research.content.branch.split(':').pop();
             const parent = research.content.parentResearch?.split('/').pop();
             const name =
-              translations.content[
-                `com.minecolonies.research.${researchTreeType}.${researchKey}.name`
+              researchTranslations.content[
+              `com.minecolonies.research.${researchTreeType}.${researchKey}.name`
               ];
             const requirements = research.content.requirements
               .map((requirement) => {
@@ -147,10 +151,16 @@ export function downloadResearch(
                     building: requirement['mandatory-building'],
                     level: requirement.level
                   };
-                } else if (isItemRequirement(requirement)) {
+                } else if (isItemListRequirement(requirement)) {
                   return {
                     type: 'item',
-                    item: requirement.item.split(':')[1].replaceAll('_', ' '),
+                    items: requirement.item.items,
+                    quantity: requirement.quantity
+                  };
+                } else if (isItemTagRequirement(requirement)) {
+                  return {
+                    type: 'item',
+                    items: [modTranslations.content[`com.minecolonies.coremod.research.tags.${requirement.item.tag}`]],
                     quantity: requirement.quantity
                   };
                 }

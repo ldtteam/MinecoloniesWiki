@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"multishot","name":"Rapid Shot","requirements":[{"type":"building","building":"archery","level":5},{"type":"item","item":"bow","quantity":18}],"effects":{"doublearrowsmultiplier":3},"researchLevel":5}
+{"tree":"combat","parent":"multishot","name":"Rapid Shot","requirements":[{"type":"building","building":"archery","level":5},{"type":"item","items":["minecraft:bow"],"quantity":18}],"effects":{"doublearrowsmultiplier":3},"researchLevel":5}

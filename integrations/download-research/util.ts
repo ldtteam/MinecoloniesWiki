@@ -1,6 +1,7 @@
 import type {
   BuildingRequirement,
-  ItemRequirement,
+  ItemListRequirement,
+  ItemTagRequirement,
   MandatoryBuildingRequirement,
   ResearchRequirement
 } from './types';
@@ -17,10 +18,16 @@ export function isMandatoryBuildingRequirement(
   return Object.keys(requirement).includes('mandatory-building');
 }
 
-export function isItemRequirement(
+export function isItemListRequirement(
   requirement: ResearchRequirement
-): requirement is ItemRequirement {
-  return Object.keys(requirement).includes('item');
+): requirement is ItemListRequirement {
+  return requirement.type === "minecolonies:item_list";
+}
+
+export function isItemTagRequirement(
+  requirement: ResearchRequirement
+): requirement is ItemTagRequirement {
+  return requirement.type === "minecolonies:item_tag";
 }
 
 export function computeResearchEffectTranslation(

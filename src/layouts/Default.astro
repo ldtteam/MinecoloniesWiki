@@ -52,8 +52,12 @@ const latestVersions = (await getSortedVersions())[0];
         <Navigation />
         <slot name="after-nav" />
 
-        <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
-          <h1 class="page_header text-center">
+        <main
+          data-pagefind-body
+          transition:animate="fade"
+          class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}
+        >
+          <h1 data-pagefind-meta="title" class="page_header text-center">
             {header}
           </h1>
           <hr />

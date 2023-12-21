@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"space","name":"Capacity","requirements":[{"type":"building","building":"miner","level":4},{"type":"item","item":"blockminecoloniesrack","quantity":32}],"effects":{"minimumstockmultiplier":2},"researchLevel":4}
+{"tree":"technology","parent":"space","name":"Capacity","requirements":[{"type":"building","building":"miner","level":4},{"type":"item","items":["minecolonies:blockminecoloniesrack"],"quantity":32}],"effects":{"minimumstockmultiplier":2},"researchLevel":4}

@@ -1,21 +1,47 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
-import { toTitleCase } from '../../../util/string';
+import { parseResourceLocation, toTitleCase } from '../../../util/string';
 import BuildingName from '../BuildingName.astro';
 
 interface Props {
   requirement: NonNullable<CollectionEntry<'research'>['data']['requirements']>[number];
 }
 
-const requirement = Astro.props.requirement;
+const { requirement } = Astro.props;
+
+async function getItemName(item: string) {
+  const parsed = parseResourceLocation(item);
+  if (parsed === undefined) {
+    return item;
+  }
+  if (parsed.namespace !== 'minecraft') {
+    const pageData = await getEntry('wiki', 'items/' + parsed.id);
+    if (pageData && pageData.data.type === 'page') {
+      return pageData.data.title;
+    }
+  }
+  return toTitleCase(parsed.id.replaceAll('_', ' '));
+}
+
+function getItemLink(item: string) {
+  const parsed = parseResourceLocation(item);
+  if (parsed === undefined) {
+    return undefined;
+  }
+  if (parsed.namespace === 'minecraft') {
+    return 'https://minecraft.wiki/w/' + parsed.id;
+  }
+  return '/wiki/items/' + parsed.id;
+}
 ---
 
 {
   requirement.type === 'building' && (
     <li>
       <span>One or multiple&nbsp;</span>
-      <BuildingName name={requirement.building.id} link plural />
+      <BuildingName name={requirement.building.id} plural />
       <span>&nbsp;totaling at least {requirement.level} levels</span>
     </li>
   )
@@ -25,7 +51,16 @@ const requirement = Astro.props.requirement;
   requirement.type === 'item' && (
     <li>
       <b>{requirement.quantity}</b>x&nbsp;
-      <span>{toTitleCase(requirement.item)}</span>
+      <span>
+        {requirement.items.map(async (item) => {
+          const name = await getItemName(item);
+          const link = getItemLink(item);
+          if (link !== undefined) {
+            return <a href={link}>{name}</a>;
+          }
+          return <span>{name}</span>;
+        })}
+      </span>
     </li>
   )
 }

@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"richveins","name":"Amazing Veins","requirements":[{"type":"building","building":"blacksmith","level":5},{"type":"item","item":"gold ore","quantity":64}],"effects":{"moreoresmultiplier":4},"researchLevel":5}
+{"tree":"technology","parent":"richveins","name":"Amazing Veins","requirements":[{"type":"building","building":"blacksmith","level":5},{"type":"item","items":["Any Gold Ore"],"quantity":64}],"effects":{"moreoresmultiplier":4},"researchLevel":5}

@@ -1,5 +1,6 @@
 import { type AstroMarkdocConfig, component, defineMarkdocConfig, Markdoc, nodes } from '@astrojs/markdoc/config';
 import shiki from '@astrojs/markdoc/shiki';
+import type { Tag } from 'src/markdoc/types';
 
 import {
   building,
@@ -10,6 +11,18 @@ import { research_link, research_list, research_trees } from './src/markdoc/rese
 import { content_block } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
 import { worker, worker_infobox } from './src/markdoc/workers';
+
+function extendNodeClasses(...extraClasses: string[]): Tag["transform"] {
+  const result: Tag["transform"] = (node, config) => {
+    const attributes = node.transformAttributes(config);
+    const children = node.transformChildren(config);
+    const classes = attributes['class'] !== undefined ? [attributes['class'].split(' ')] : [];
+    classes.push(...extraClasses);
+    attributes['class'] = classes.join(' ');
+    return new Markdoc.Tag(node.type, attributes, children);
+  }
+  return result;
+}
 
 export const config: AstroMarkdocConfig = {
   tags: {
@@ -34,15 +47,11 @@ export const config: AstroMarkdocConfig = {
     },
     table: {
       ...nodes.table,
-      transform: (node, config) => {
-        const attributes = node.transformAttributes(config);
-        const children = node.transformChildren(config);
-        const classes = attributes['class'] !== undefined ? [attributes['class'].split(' ')] : [];
-        classes.push('table');
-        classes.push('table-hover');
-        attributes['class'] = classes.join(' ');
-        return new Markdoc.Tag('table', attributes, children);
-      }
+      transform: extendNodeClasses("table", "table-hover")
+    },
+    blockquote: {
+      ...nodes.blockquote,
+      transform: extendNodeClasses("blockquote-border")
     }
   },
   extends: [

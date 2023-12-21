@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"epicure","name":"Glutton","requirements":[{"type":"item","item":"cookie","quantity":512}],"effects":{"saturationmultiplier":5},"researchLevel":6}
+{"tree":"civilian","parent":"epicure","name":"Glutton","requirements":[{"type":"item","items":["minecraft:cookie"],"quantity":512}],"effects":{"saturationmultiplier":5},"researchLevel":6}

@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"improvedleather","name":"Regeneration","requirements":[{"type":"building","building":"guardtower","level":2},{"type":"item","item":"emerald","quantity":1}],"effects":{"retreatunlock":1},"researchLevel":2}
+{"tree":"combat","parent":"improvedleather","name":"Regeneration","requirements":[{"type":"building","building":"guardtower","level":2},{"type":"item","items":["minecraft:emerald"],"quantity":1}],"effects":{"retreatunlock":1},"researchLevel":2}

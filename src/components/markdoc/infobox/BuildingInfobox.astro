@@ -26,27 +26,32 @@ const workers = buildingData.data.workers ?? [];
 const recipes = buildingData.data.recipes ?? [];
 ---
 
-<div class="row infobox-wrapper">
+<div class="infobox-wrapper">
   <div class="flex-fill">
     <slot />
   </div>
 
-  <Infobox title={buildingData.data.name} class="w-auto flex-shrink-1">
+  <Infobox title={buildingData.data.name} class="ms-3 mb-3 flex-shrink-1">
     <div class="text-center">
-      <Image src={importedImage} alt={`${getBuildingName(buildingData, false)} block`} width={250} />
+      <Image
+        data-pagefind-meta="image[src], image_alt[alt]"
+        src={importedImage}
+        alt={`${getBuildingName(buildingData, false)} hut block`}
+        width={250}
+      />
     </div>
 
     {
       workers.length !== 0 && (
         <>
           <hr />
-          <div class="row">
-            <div class="col-auto">
+          <div class="grid">
+            <div class="g-col-1">
               <p class="m-0">
                 <b>{workers.length > 1 ? 'Workers:' : 'Worker:'}</b>
               </p>
             </div>
-            <div class="col">
+            <div class="g-col-11">
               {workers.map((worker) => (
                 <p class="m-0">
                   <WorkerName name={worker.id} />
@@ -62,13 +67,13 @@ const recipes = buildingData.data.recipes ?? [];
       recipes.length !== 0 && (
         <>
           <hr />
-          <div class="row">
-            <div class="col-auto">
+          <div class="grid">
+            <div class="g-col-1">
               <p class="m-0">
                 <b>{recipes.length > 1 ? 'Recipe:' : 'Recipes:'}</b>
               </p>
             </div>
-            <div class="col">
+            <div class="g-col-11">
               {recipes.map((recipe) => (
                 <Recipe recipe={recipe} />
               ))}
@@ -79,25 +84,19 @@ const recipes = buildingData.data.recipes ?? [];
     }
 
     <hr />
-    <div class="row">
-      <div class="col-12">
-        <p class="m-0">
-          <b>Research:&nbsp;</b>
-          {
-            research !== undefined ? (
-              <>
-                <span />
-                <span>
-                  You must research "<a href={`/wiki/systems/research#research_${research.id}`}>{research.data.name}</a>
-                  " to unlock this building!
-                </span>
-              </>
-            ) : (
-              <>No research is required for this building.</>
-            )
-          }
-        </p>
-      </div>
+    <div class="grid" style="--bs-columns: 1;">
+      <p class="m-0">
+        <b>Research:&nbsp;</b>
+        {
+          research !== undefined ? (
+            <span
+              set:html={`You must research "<a href="/wiki/systems/research#research_${research.id}">${research.data.name}</a>" to unlock this building!`}
+            />
+          ) : (
+            <>No research is required for this building.</>
+          )
+        }
+      </p>
     </div>
   </Infobox>
 </div>
@@ -108,16 +107,5 @@ const recipes = buildingData.data.recipes ?? [];
   .infobox-wrapper {
     display: flex;
     flex-direction: row;
-  }
-
-  .row {
-    flex-wrap: nowrap !important;
-  }
-
-  @include media-breakpoint-down(md) {
-    .infobox-wrapper {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
   }
 </style>

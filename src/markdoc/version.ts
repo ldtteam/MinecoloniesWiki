@@ -1,6 +1,8 @@
 import { component } from '@astrojs/markdoc/config';
 
-export const version = {
+import type { Tag } from './types';
+
+export const version: Tag = {
   render: component('@components/markdoc/version/VersionBlock.astro'),
   attributes: {
     name: {

@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"avoidance","name":"Parry","requirements":[{"type":"building","building":"smeltery","level":1},{"type":"item","item":"iron ingot","quantity":16}],"effects":{"meleearmormultiplier":1},"researchLevel":2}
+{"tree":"combat","parent":"avoidance","name":"Parry","requirements":[{"type":"building","building":"smeltery","level":1},{"type":"item","items":["minecraft:iron_ingot"],"quantity":16}],"effects":{"meleearmormultiplier":1},"researchLevel":2}

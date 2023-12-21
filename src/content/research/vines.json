@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"keen","name":"Aaaiooooiooo","requirements":[{"type":"building","building":"residence","level":3},{"type":"item","item":"vine","quantity":64}],"effects":{"vinesunlock":1},"researchLevel":2}
+{"tree":"civilian","parent":"keen","name":"Aaaiooooiooo","requirements":[{"type":"building","building":"residence","level":3},{"type":"item","items":["minecraft:vine"],"quantity":64}],"effects":{"vinesunlock":1},"researchLevel":2}

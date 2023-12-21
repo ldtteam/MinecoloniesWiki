@@ -5,12 +5,12 @@ import { getWikiPages } from '@utils/wiki';
 const wikiPages = await getWikiPages();
 ---
 
-<div class="row">
+<div class="grid" style={`--bs-columns: ${Object.entries(wikiPages).length}`}>
   {
-    Object.entries(wikiPages).map(([category, pages]) => (
+    Object.entries(wikiPages).map(([_, categoryInfo]) => (
       <div class="col col-md col-sm-12 text-center d-flex flex-column py-1">
-        <Button text={category} class="text-nowrap mb-2" component="h3" />
-        {pages.map((page, idx) => {
+        <Button text={categoryInfo.type.data.name} class="text-nowrap mb-2" component="h3" />
+        {categoryInfo.pages.map((page, idx) => {
           if (page.type === 'page') {
             return <a href={`/wiki/${page.slug}`}>{page.name}</a>;
           } else if (page.type === 'subcategory') {

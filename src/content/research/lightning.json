@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"whatisthisspeed","name":"Lightning","requirements":[{"type":"item","item":"redstone","quantity":2048}],"effects":{"blockbreakspeedmultiplier":5},"researchLevel":6}
+{"tree":"technology","parent":"whatisthisspeed","name":"Lightning","requirements":[{"type":"item","items":["minecraft:redstone"],"quantity":2048}],"effects":{"blockbreakspeedmultiplier":5},"researchLevel":6}

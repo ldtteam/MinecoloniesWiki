@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"hittingiron","name":"Ability","requirements":[{"type":"building","building":"miner","level":1},{"type":"item","item":"iron ingot","quantity":64}],"effects":{"blockplacespeedmultiplier":1},"researchLevel":2}
+{"tree":"technology","parent":"hittingiron","name":"Ability","requirements":[{"type":"building","building":"miner","level":1},{"type":"item","items":["minecraft:iron_ingot"],"quantity":64}],"effects":{"blockplacespeedmultiplier":1},"researchLevel":2}

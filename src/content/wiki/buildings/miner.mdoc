@@ -12,13 +12,24 @@ While mining, sometimes the Miner will get lucky and get an ore block instead of
 
 **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the Miner not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
 
-| Mine Level | Shaft Y Level | Shaft Y Level |
-| ---------- | ------------- | ------------- |
-|            | 1.16          | 1.18+         |
-| 1          | 50            | 40            |
-| 2          | 30            | 20            |
-| 3          | Bedrock       | 0             |
-| 4          |               | Bedrock       |
+{% version name="1.16.5" before=true %}
+| Building Level | Shaft Y Level |
+| -------------- | ------------- |
+| 1              | 50            |
+| 2              | 30            |
+| 3              | Bedrock       |
+| 4              | "             |
+| 5              | "             |
+{% /version %}
+{% version name="1.17" after=true %}
+| Building Level | Shaft Y Level |
+| -------------- | ------------- |
+| 1              | 40            |
+| 2              | 20            |
+| 3              | 0             |
+| 4              | Bedrock       |
+| 5              | "             |
+{% /version %}
 {% /building_infobox %}
 
 ## {% building /%} GUI

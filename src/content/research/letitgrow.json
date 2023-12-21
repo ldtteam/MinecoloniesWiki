@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"biodegradable","name":"Let It Grow","requirements":[{"type":"building","building":"farmer","level":3},{"type":"item","item":"compost","quantity":16}],"effects":{"blockhutplantation":1},"researchLevel":2}
+{"tree":"technology","parent":"biodegradable","name":"Let It Grow","requirements":[{"type":"building","building":"farmer","level":3},{"type":"item","items":["minecolonies:compost"],"quantity":16}],"effects":{"blockhutplantation":1},"researchLevel":2}

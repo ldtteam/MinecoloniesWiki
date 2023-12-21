@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"rtm","name":"Rainman","requirements":[{"type":"item","item":"salmon bucket","quantity":27}],"effects":{"workinginrainunlock":1},"researchLevel":6}
+{"tree":"technology","parent":"rtm","name":"Rainman","requirements":[{"type":"item","items":["minecraft:salmon_bucket"],"quantity":27}],"effects":{"workinginrainunlock":1},"researchLevel":6}

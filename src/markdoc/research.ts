@@ -1,6 +1,8 @@
 import { component } from '@astrojs/markdoc/config';
 
-export const research_trees = {
+import type { Tag } from './types';
+
+export const research_trees: Tag = {
   render: component('@components/markdoc/research/ResearchTrees.astro'),
   selfClosing: true,
   attributes: {
@@ -13,12 +15,12 @@ export const research_trees = {
   }
 };
 
-export const research_list = {
+export const research_list: Tag = {
   render: component('@components/markdoc/research/ResearchList.astro'),
   selfClosing: true
 };
 
-export const research_link = {
+export const research_link: Tag = {
   render: component('@components/markdoc/research/ResearchLink.astro'),
   selfClosing: true,
   attributes: {

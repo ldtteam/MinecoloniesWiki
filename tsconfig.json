@@ -13,5 +13,7 @@
       "@utils/*": ["src/util/*"]
     },
     "types": ["vite/client"]
-  }
+  },
+  "include": ["src"],
+  "exclude": ["dist", "integrations"]
 }

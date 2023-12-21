@@ -6,23 +6,25 @@ import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
 
-const builderData = await getWorkerData('builder');
+const { name } = Astro.props;
+
+const workerData = await getWorkerData(name);
 
 const content = `These are the resources that the ${getWorkerMdLink(
-  builderData,
+  workerData,
   false
 )} will need for the workorder they are currently working on.
 - **Current project**: The top line tells you which work order is being worked on and its level.
-- **Step**: What step of the project the ${getWorkerMdLink(builderData, false)} is on.
+- **Step**: What step of the project the ${getWorkerMdLink(workerData, false)} is on.
 - **Supplied % / Used %**: How much of the needed resources are in the building inventory, and how many of the resources have been placed.
 - **Item**: Each needed item is displayed, along with how many of that item is in inventory, and how many are needed. These amounts will change as they place blocks and will show only what blocks the ${getWorkerMdLink(
-  builderData,
+  workerData,
   false
 )} still needs to place. The block in black are in their inventory. The blocks in red are the ones neither you nor the ${getWorkerMdLink(
-  builderData,
+  workerData,
   false
 )} has in their inventory. The blocks in green are ones you have in inventory but the builder needs. Clicking the up arrow next to the item will automatically remove that item from your inventory and place it into the ${getWorkerMdLink(
-  builderData,
+  workerData,
   false
 )}.`;
 ---
