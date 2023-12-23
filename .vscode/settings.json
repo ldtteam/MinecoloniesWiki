@@ -1,5 +1,5 @@
 {
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+  "eslint.validate": ["javascript", "astro", "typescript"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
@@ -8,5 +8,8 @@
   "files.associations": {
     "*.mdoc": "markdown"
   },
-  "markdown.extension.tableFormatter.normalizeIndentation": true
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
 }

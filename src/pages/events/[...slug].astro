@@ -1,8 +1,9 @@
 ---
-import { EventHeader, type EventHeaderProps } from '@components/EventHeader';
+import EventHeader from '@components/EventHeader.svelte';
 import Layout from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
 import { fromUnixTime, isBefore } from 'date-fns';
+import type { ComponentProps } from 'svelte';
 
 export async function getStaticPaths() {
   const collection = await getCollection('events');
@@ -19,7 +20,7 @@ const { Content } = await entry.render();
 const startDate = fromUnixTime(entry.data.start);
 const endDate = fromUnixTime(entry.data.end);
 
-let relative: EventHeaderProps['relative'] = undefined;
+let relative: ComponentProps<EventHeader>['relative'] = undefined;
 if (isBefore(now, startDate)) {
   relative = 'start';
 } else if (isBefore(now, endDate)) {
