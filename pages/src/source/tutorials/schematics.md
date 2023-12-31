@@ -505,10 +505,6 @@ Once copied, you can start your singleplayer or multiplayer game as usual. You s
 
 You will have to copy them yourself in the blueprints folder on the server and restart it.
 
-### How to allow my players to use their scanned decoration schematics on my server?
-
-Edit the Structurize configuration file at `minecraft/config/structurize-common.toml` and set allowPlayerSchematics to true. This allows the player to use their own decorations. It is not possible for the player to use their own huts' schematics. You can also limit the number of players' schematics at any given time by editing maxCachedSchematics (default is 100). When the limit is reached, the server will start deleting unused schematics.
-
 ### How to disable built-in schematics completely?
 
 Edit the Structurize configuration file at `minecraft/config/structurize-common.toml` and set ignoreSchematicsFromJar to true. Be aware: things will break if some huts' schematics are missing.
