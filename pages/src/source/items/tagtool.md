@@ -93,3 +93,5 @@ The following tags are currently implemented (more may be added from time to tim
     | `portal` | Nether Mine | Always 1    | An obsidian block in the bottom of the nether portal (with air above)                                                     |
     | `vault`  | Nether Mine | 0-1         | A block in an enclosed room that the nether miner can stand on while "away"                                               |
     | `work`   | Archery     | level-based | The block the archer squire stands on to shoot at targets (Note: If no tags are used, they look for glowstone.)           |
+
+    The tags specified above for the plantation are now considered "legacy" and not recommended for new builds -- you can instead build special [Plantation Fields](../../source/tutorials/schematics.md#plantation-fields), which use a richer set of tags.
