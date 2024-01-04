@@ -1,0 +1,101 @@
+---
+import Infobox from '@components/ui/infobox/Infobox.astro';
+import Wrapper from '@components/ui/infobox/Wrapper.astro';
+import { getBuildingData, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+import Recipe from '../recipes/Recipe.astro';
+import WorkerName from '../WorkerName.astro';
+
+type Props = MarkdocBuildingComponent;
+
+const { buildingId } = Astro.props;
+const buildingData = await getBuildingData(buildingId ?? '');
+
+const importedImage = await import(`../../../assets/images/wiki/buildings/${buildingId}.png`).then((f) => f.default);
+
+const research = (
+  await getCollection('research', (filter) =>
+    filter.data.effects
+      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === buildingId)
+      : false
+  )
+).slice(0, 1)[0];
+
+const workers = buildingData.data.workers ?? [];
+const recipes = buildingData.data.recipes ?? [];
+---
+
+<Wrapper>
+  <slot />
+
+  <Infobox slot="infobox" title={buildingData.data.name} class="ms-3 mb-3 flex-shrink-1">
+    <div class="text-center">
+      <Image
+        data-pagefind-meta="image[src], image_alt[alt]"
+        src={importedImage}
+        alt={`${getBuildingName(buildingData, false)} hut block`}
+        width={250}
+      />
+    </div>
+
+    {
+      workers.length !== 0 && (
+        <>
+          <hr />
+          <div class="grid">
+            <div class="g-col-1">
+              <p class="m-0">
+                <b>{workers.length > 1 ? 'Workers:' : 'Worker:'}</b>
+              </p>
+            </div>
+            <div class="g-col-11">
+              {workers.map((worker) => (
+                <p class="m-0">
+                  <WorkerName name={worker.id} />
+                </p>
+              ))}
+            </div>
+          </div>
+        </>
+      )
+    }
+
+    {
+      recipes.length !== 0 && (
+        <>
+          <hr />
+          <div class="grid">
+            <div class="g-col-1">
+              <p class="m-0">
+                <b>{recipes.length > 1 ? 'Recipe:' : 'Recipes:'}</b>
+              </p>
+            </div>
+            <div class="g-col-11">
+              {recipes.map((recipe) => (
+                <Recipe recipe={recipe} />
+              ))}
+            </div>
+          </div>
+        </>
+      )
+    }
+
+    <hr />
+    <div class="grid" style="--bs-columns: 1;">
+      <p class="m-0">
+        <b>Research:&nbsp;</b>
+        {
+          research !== undefined ? (
+            <span
+              set:html={`You must research "<a href="/wiki/systems/research#research_${research.id}">${research.data.name}</a>" to unlock this building!`}
+            />
+          ) : (
+            <>No research is required for this building.</>
+          )
+        }
+      </p>
+    </div>
+  </Infobox>
+</Wrapper>

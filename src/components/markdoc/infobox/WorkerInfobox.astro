@@ -1,11 +1,12 @@
 ---
+import Wrapper from '@components/ui/infobox/Wrapper.astro';
 import { getWorkerData, type MarkdocWorkerComponent } from '@utils/workers';
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import path from 'path';
 
+import Infobox from '../../ui/infobox/Infobox.astro';
 import BuildingName from '../BuildingName.astro';
-import Infobox from './Infobox.astro';
 
 type Props = MarkdocWorkerComponent;
 
@@ -53,12 +54,10 @@ const filteredImages = await Promise.all(
 const buildings = workerData.data.buildings ?? [];
 ---
 
-<div class="row infobox-wrapper">
-  <div class="flex-fill">
-    <slot />
-  </div>
+<Wrapper>
+  <slot />
 
-  <Infobox title={workerData.data.name} class="w-auto flex-shrink-1">
+  <Infobox slot="infobox" title={workerData.data.name} class="w-auto flex-shrink-1">
     <div class="text-center">
       <swiper-container
         pagination
@@ -111,24 +110,4 @@ const buildings = workerData.data.buildings ?? [];
       )
     }
   </Infobox>
-</div>
-
-<style lang="scss">
-  @import '../../../css/bootstrap-vars.scss';
-
-  .infobox-wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .row {
-    flex-wrap: nowrap !important;
-  }
-
-  @include media-breakpoint-down(md) {
-    .infobox-wrapper {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  }
-</style>
+</Wrapper>

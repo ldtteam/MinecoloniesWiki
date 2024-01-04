@@ -1,11 +1,12 @@
 <script lang="ts">
+  import type { EventRelative } from '@utils/util';
   import type { CollectionEntry } from 'astro:content';
   import { format, formatDistance, fromUnixTime } from 'date-fns';
 
   export let event: CollectionEntry<'events'>;
   export let now: Date;
   export let clickable: boolean = false;
-  export let relative: 'start' | 'end' | undefined = undefined;
+  export let relative: EventRelative = undefined;
 
   const startDate = fromUnixTime(event.data.start);
   const endDate = fromUnixTime(event.data.end);

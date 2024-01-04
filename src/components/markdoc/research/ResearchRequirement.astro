@@ -1,8 +1,8 @@
 ---
+import VersionContent from '@components/version/VersionContent.astro';
+import { getItemData } from '@utils/items';
 import type { CollectionEntry } from 'astro:content';
-import { getEntry } from 'astro:content';
 
-import { parseResourceLocation, toTitleCase } from '../../../util/string';
 import BuildingName from '../BuildingName.astro';
 
 interface Props {
@@ -10,31 +10,6 @@ interface Props {
 }
 
 const { requirement } = Astro.props;
-
-async function getItemName(item: string) {
-  const parsed = parseResourceLocation(item);
-  if (parsed === undefined) {
-    return item;
-  }
-  if (parsed.namespace !== 'minecraft') {
-    const pageData = await getEntry('wiki', 'items/' + parsed.id);
-    if (pageData && pageData.data.type === 'page') {
-      return pageData.data.title;
-    }
-  }
-  return toTitleCase(parsed.id.replaceAll('_', ' '));
-}
-
-function getItemLink(item: string) {
-  const parsed = parseResourceLocation(item);
-  if (parsed === undefined) {
-    return undefined;
-  }
-  if (parsed.namespace === 'minecraft') {
-    return 'https://minecraft.wiki/w/' + parsed.id;
-  }
-  return '/wiki/items/' + parsed.id;
-}
 ---
 
 {
@@ -53,12 +28,17 @@ function getItemLink(item: string) {
       <b>{requirement.quantity}</b>x&nbsp;
       <span>
         {requirement.items.map(async (item) => {
-          const name = await getItemName(item);
-          const link = getItemLink(item);
-          if (link !== undefined) {
-            return <a href={link}>{name}</a>;
+          const names = await getItemData(item);
+
+          if (names === undefined) {
+            return;
           }
-          return <span>{name}</span>;
+
+          return names.map((name) => (
+            <VersionContent versions={name.versions} inline>
+              {name.link ? <a href={name.link}>{name.name}</a> : <span>{name.name}</span>}
+            </VersionContent>
+          ));
         })}
       </span>
     </li>

@@ -1,0 +1,23 @@
+<div class="infobox-wrapper">
+  <div class="flex-fill">
+    <slot />
+  </div>
+
+  <slot name="infobox" />
+</div>
+
+<style lang="scss">
+  @import '../../../css/bootstrap-vars.scss';
+
+  .infobox-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include media-breakpoint-down(md) {
+    .infobox-wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+</style>

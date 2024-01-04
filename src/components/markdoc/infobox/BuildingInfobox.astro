@@ -1,11 +1,12 @@
 ---
+import Infobox from '@components/ui/infobox/Infobox.astro';
+import Wrapper from '@components/ui/infobox/Wrapper.astro';
 import { getBuildingData, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
 import Recipe from '../recipes/Recipe.astro';
 import WorkerName from '../WorkerName.astro';
-import Infobox from './Infobox.astro';
 
 type Props = MarkdocBuildingComponent;
 
@@ -26,12 +27,10 @@ const workers = buildingData.data.workers ?? [];
 const recipes = buildingData.data.recipes ?? [];
 ---
 
-<div class="infobox-wrapper">
-  <div class="flex-fill">
-    <slot />
-  </div>
+<Wrapper>
+  <slot />
 
-  <Infobox title={buildingData.data.name} class="ms-3 mb-3 flex-shrink-1">
+  <Infobox slot="infobox" title={buildingData.data.name} class="ms-3 mb-3 flex-shrink-1">
     <div class="text-center">
       <Image
         data-pagefind-meta="image[src], image_alt[alt]"
@@ -99,13 +98,4 @@ const recipes = buildingData.data.recipes ?? [];
       </p>
     </div>
   </Infobox>
-</div>
-
-<style lang="scss">
-  @import '../../../css/bootstrap-vars.scss';
-
-  .infobox-wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-</style>
+</Wrapper>

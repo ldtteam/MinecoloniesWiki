@@ -1,4 +1,5 @@
 ---
+import VersionContent from '@components/version/VersionContent.astro';
 import { getEntry } from 'astro:content';
 
 import { getVersionNumbers } from '../../../util/version';
@@ -20,17 +21,8 @@ if (currentVersion === undefined) {
 }
 
 const versions = await getVersionNumbers(currentVersion, before, after);
-const versionNumbers = versions.map((version) => version.data.order).join(',');
 ---
 
-{
-  inline ? (
-    <span data-versions={versionNumbers}>
-      <slot />
-    </span>
-  ) : (
-    <div data-versions={versionNumbers}>
-      <slot />
-    </div>
-  )
-}
+<VersionContent versions={versions} inline={inline}>
+  <slot />
+</VersionContent>
