@@ -44,9 +44,9 @@ The {% building %} has a limit of fields, based on it's building level, as well 
 | Building Level | Number of Fields | Number of Fields with "Crop Rotation" Research |
 | -------------- | ---------------- | ---------------------------------------------- |
 | 1              | 1                | 2                                              |
-| 2              | 2                | 3                                              |
+| 2              | 1                | 2                                              |
 | 3              | 2                | 3                                              |
-| 4              | 3                | 4                                              |
+| 4              | 2                | 3                                              |
 | 5              | 3                | 4                                              |
 
 The {% building %} is also limited by the amount of concurrent plants it can work on, so if you were to have a field of Sugar Cane and Cactus, those are two different plants.
@@ -55,9 +55,9 @@ Unlike the field limit, this one does not increase by the research, meaning that
 | Building Level | Number of Concurrent Plants |
 | -------------- | --------------------------- |
 | 1              | 1                           |
-| 2              | 2                           |
+| 2              | 1                           |
 | 3              | 2                           |
-| 4              | 3                           |
+| 4              | 2                           |
 | 5              | 3                           |
 
 {% endversion %}
