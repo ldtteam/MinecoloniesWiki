@@ -43,7 +43,7 @@ The following will be for the 1.16.5 and 1.18.2 config files.
 | maxcitizenpercolony | 250 | The maximum limit of citizens that can exist in each colony. If you're below this limit and you can't get more citizens, you probably need to complete the [research](../../source/systems/research) in the {% building_link university %} . |
 | builderbuildblockdelay | 15 | The delay (ticks) for placing blocks. Applies to Builders, Miners, and other colonists that place blocks. |
 | blockminingdelaymodifier | 500 | The delay (ticks) for breaking blocks. Applies to Builders, Miners, and other colonists that mine blocks. |
-| enableindevelopmentfeatures | false | Rnables some features geared toward developers. | 
+| enableindevelopmentfeatures | false | Enables some features geared toward developers. | 
 | alwaysrendernametag | true | If disabled, citizen names will only show in the citizen GUI and not above their head.
 | workersalwaysworkinrain | false | Workers won't normally work if it's raining. Enabling this option or completing the Rainman [research](../../source/systems/research) causes them to continue working in rain. |
 | sendenteringleavingmessages | true | Players entering or leaving a colony where they don't have the Receive Messages permission in, players will be send a message notifying them that they have entered/left the colony. Players that *do* have the Receive Messages permission in that colony will also be informed of this. If you disable this config option, neither type of player will get that message. This applies to all colonies. | 
