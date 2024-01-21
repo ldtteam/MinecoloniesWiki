@@ -22,6 +22,7 @@ layout: default
       - [MineColonies Research Effects](#minecolonies-research-effects)
     - [MineColonies Building Unlocks](#minecolonies-building-unlocks)
   - [Citizen names](#citizen-names)
+  - [Disable Abandoned Colonies](#disable-abandoned-colonies)
 
 MineColonies allows modifications of many features using data packs, including player and worker recipes, loot tables, and mob drops. This allows broad expansion by players or modpack makers to support other mods, design choices, forms of progression, or styles of play. For general information on Minecraft data packs, [see the Minecraft wiki](<https://minecraft.wiki/w/Data_Pack>).
 
@@ -354,3 +355,23 @@ The citizen name files have the following components:
 | <code>"male_firstname"</code>   | Array of Strings | A list of the male first names                                                       |
 | <code>"female_firstname"</code> | Array of Strings | A list of the female first names                                                     |
 | <code>"surnames"</code>         | Array of Strings | A list of the surnames for the citizens                                              |
+
+## Worldgen
+
+### Disable Abandoned Colonies
+
+Abandoned colonies can be discovered while exploring. If you wish to disable the generation of abandoned colonies, you can do so in your datapack. `<namespace>\data\minecolonies\worldgen\structure_set\empty_colony.json`
+
+Using the following code for your `empty_colony.json` file will disable all abandoned colonies from generating. 
+
+{% highlight json linenos %}
+{
+  "structures": [],
+  "placement": {
+    "salt": 1225566777,
+    "spacing": 50,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}
+{% endhighlight %}
