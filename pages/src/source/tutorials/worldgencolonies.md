@@ -6,7 +6,7 @@ layout: default
 
 As you explore the world, you'll notice that there are some colonies abandoned by the former residents. Moving into one of these abandoned colonies is a way to quickstart your own colony!
 
-(Note: This feature is only available in 1.18+. Vanilla villages will still spawn as normal. If you wish to turn off this feature, you can do so in the [configuration options](../misc/configfile) for your world.)
+(Note: This feature is only available in 1.18+. Vanilla villages will still spawn as normal. If you wish to turn off this feature, you can do so using [datapacks](../../source/tutorials/datapacks) for your world.)
 
 ## Getting Started
 
