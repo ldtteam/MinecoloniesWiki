@@ -7,6 +7,7 @@ layout: default
 Schematics are files containing block and entity information of a certain area a player scanned with the [Scan Tool](../items/scantool) in-game. You can use the scan tool and scan ANY building or structure you like in singleplayer or multiplayer and then have your {% worker_link builder %} build it for you (provided that you give them all the materials needed, of course).
 
 - [Schematics](#schematics)
+  - [A Schematic World](#a-schematic-world)
   - [Scanning a New Structure](#scanning-a-new-structure)
   - [Placing a Schematic.](#placing-a-schematic)
   - [Style packs](#style-packs)
@@ -45,6 +46,16 @@ Schematics are files containing block and entity information of a certain area a
     - [How to create parent/child buildings or decorations?](#how-to-create-parentchild-buildings-or-decorations)
   - [What if I have another question?](#what-if-i-have-another-question)
 
+## A Schematic World
+
+While you can build and scan schematics in any world, it's strongly recommended to create a separate creative world to design and build them, separate from your regular colony worlds. It's also often easier to design and build in single-player, though you can of course do it on a server if you want to collaborate with others. It's also recommended to do your builds outside of any existing colony (typically you would not create any colonies at all in that world) and even to disable mobs/weather/ticks to reduce disturbance of your builds.
+
+If you're designing a full style pack, then on the [Discord server](https://discord.minecolonies.com/) you can find a player-created world download that contains build "pads" for most of the building types, along with a command-block-based auto-scanning system to help speed things up -- though of course you can do things a different way if you prefer.
+
+{% version "1.19" after=true %}
+It's recommended to enable the `blueprintbuildmode` setting in the MineColonies server config file; this makes it a bit easier to do certain things without creating a colony.
+{% endversion %}
+
 ## Scanning a New Structure
 
 Once you have a structure or area you want to scan to have your Builder build, you need to determine the exact area that needs to be scanned. 
@@ -80,10 +91,10 @@ Once the scans are saved, they need to be placed in a style pack, preferably in 
 ## Placing a Schematic.
 
 {% version "1.18.2" before=true %}
-Once you have scanned a structure, you can use the [build tool](../../source/items/buildtool) to have your {% worker_link farmer %} build it for you. Once you right-click with the build tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
-{% endversion %}
+Once you have scanned a structure, you can use the [build tool](../../source/items/buildtool) to have your {% worker_link builder %} build it for you. Once you right-click with the build tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
 
 ![Schematic](../../assets/images/tutorial/schematic.png)
+{% endversion %}
 
 {% version "1.19" after=true %}
 The scanned structure can be found in the [build tool](../../source/items/buildtool) under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the scan tool) -> "scans". 
@@ -134,7 +145,7 @@ Those custom schematics go in `*/structurize/schematics`. Unzip the zip you down
 {% endversion %}
 
 {% version "1.19" after=true %}
-The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints` directly, not any subfolder thereof.
+The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints` directly, not any subfolder thereof -- i.e. you should have "blueprints/onestyle/pack.json", "blueprints/anotherstyle/pack.json", etc.
 {% endversion %}
 
 #### What and where is the scans folder?
@@ -290,6 +301,8 @@ So, for example, the path would be `structurize/schematics/wildwest/builder1` fo
 So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the Builder's Hut level 1 and `blueprints/wildwest/decorations/supplies/supplycamp` for the supply camp.
 {% endversion %}
 
+Because these have a fixed name, you can't have more than one per style and type.
+
 You should always apply a [groundlevel tag](../../source/items/tagtool) when making a supply camp/ship. The rules for guessing where the ground level is without the tag change depending whether they're placed by the build tool or the supply item, for legacy reasons.
 
 ## Hut Requirements
@@ -304,7 +317,7 @@ You should always apply a [groundlevel tag](../../source/items/tagtool) when mak
 | {% building_link builder %}       |                                                                                                                            | 1 rack per level                                                                                                                           |
 | {% building_link combatacademy %} | 1 combat dummy per level (a pumpkin on top of a bale of hay); 1 bed per level                                              |                                                                                                                                            |
 | {% building_link composter %}     | 1 [compost barrel](../../source/items/compostbarrel) per level                                                             |                                                                                                                                            |
-| {% building_link concretemixer %} | 3 blocks of flowing water with solid blocks below and air blocks above                                                     |                                                                                                                                            |
+| {% building_link concretemixer %} | 3 blocks of flowing water with solid blocks below and air blocks above, and the worker can stand next to                   |                                                                                                                                            |
 | {% building_link dyer %}          | 1 furnace                                                                                                                  |                                                                                                                                            |
 | {% building_link fisher %}        | Hut block placed on a block at water level                                                                                 | At least 6x5x1 unobstructed body of water if integrating fishing location in the schematic                                                 |
 | {% building_link flowershop %}    | 4 [compost blocks](../../source/items/compost) per level                                                                   |                                                                                                                                            |
@@ -467,7 +480,8 @@ Percentage based harvesting fields will attempt to place a minimum percentage of
   <li>Use <a href="../../source/items/placeholderblocks">solid placeholders</a> at or below ground level</li>
   <li>Place a <a href="../../source/items/tagtool"><code>groundlevel</code> tag</a> at ground level if your hut isn't sitting directly on the ground.</li>
   <li>Use only vanilla blocks or Structurize blocks (for official styles)</li>
-  <li>Use Books and Quills instead of blank books, or written books on a lectern. (Keep a copy of the original book and quill somewhere, if it turns out you made a mistake!)</li>
+  <li>If you do use blocks from additional mods, and your buildings would look weird if those blocks simply vanished, then list the mod's id in your pack.json.</li>
+  <li>Use a Written Book on a lectern if you want to include some instructions. (Keep a copy of the original book and quill elsewhere, so you can edit it for pack updates!)</li>
 </ul>
 
 ### Don't 
@@ -475,6 +489,10 @@ Percentage based harvesting fields will attempt to place a minimum percentage of
   <li>Use unobtainable items in builds (no command blocks, petrified wood, infested blocks, or mob heads (including player heads))</li>
   <li>Change someone else's style (officially) unless specifically asked to do so</li>
   <li>Rename schematics after scanning</li>
+  <li>Rename, move, or delete existing buildings after a style pack has been released (it will cause problems for existing colonies)</li>
+  <li>Use capital letters or punctuation (or spaces) in your schematic names; all lower-case is preferred.</li>
+  <li>Put a number anywhere in the schematic name except right at the end to indicate level</li>
+  <li>Put a unique item (something with special data, such as a written book or a patterned banner) into an item frame, chest, or other container (lecterns are ok). Also avoid putting complex-dyed armor anywhere; single-dyed is ok but remember that the player will have to figure out and duplicate it.</li>
 </ul>
 
 ## Additional Information
@@ -541,23 +559,23 @@ It's recommended that you use the [tag tool and Tag Anchor](../../source/items/t
 {% endversion %}
 
 ### How to make custom quarries in style packs?
-The {% building_link quarry %} is split into a "top part" and a "bottom part". Both parts only have one level each.
+The {% building_link quarry %} is split into a "top part" and a "bottom part". Both parts only have one level each (but unlike decorations, are expected to still include the level number in the filename).
 
 The top part is constructed by the Builder and is the part outside of the quarry pit -- decorative walls, fences, cranes, racks, etc. This contains the actual quarry hut block itself, which should pretty much always be on the second y level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up), although with some caveats this is not absolutely required.
 
-The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a [Tag Anchor](../../source/items/tagtool). The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.
+The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a [Tag Anchor](../../source/items/tagtool). The anchor should normally be at the very top layer, although with some caveats it can be elsewhere. It's also recommended to tag this as `invisible` to avoid cluttering the build menu -- it usually doesn't make sense to let it be built as a decoration.
 
 {% version "1.18.2" before=true %}
 The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresponding bottom parts are `simplequarryshaft1` and `mediumquarryshaft1`.
 {% endversion %}
 
 {% version "1.19" after=true %}
-The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. (For reasons, it's currently best to avoid using different names.)
+The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`, and this is where players will typically expect to find them.
 
-The bottom part can only be `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`, regardless of what or where the top part was. As such, you can only make one of each per style pack.
+The bottom part must be in the same folder and with the same name, except adding `shaft` before the level -- e.g. `infrastructure/mineshafts/simplequarryshaft1`. Each different quarry top can have its own quarry shaft. There's also a way to have multiple tops use the same shaft, or to put the shaft in another folder or with a different name, but it's usually best to keep them together without specific reason.
 {% endversion %}
 
-Importantly: when built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing.
+Importantly: when built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing. It may be helpful to build them directly on top of each other when designing and simply scan them as two separate parts.
 
 It is permitted for the quarry to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobble or other stone.
 
@@ -565,7 +583,7 @@ It is permitted for the quarry to be a slightly different size from the default 
 
 The Barracks and Barracks Tower always have a parent/child relationship (i.e. the towers are embedded within the barracks, not directly built separately with the build tool). It's also possible to do the same with other buildings -- either putting one or more buildings into a containing decoration (e.g. a "district" of related buildings) or even embedding buildings within other buildings.
 
-Some popular combinations are to embed couriers within the warehouse, and fields within the farmer. Others combinations are possible, depending on your goals for the style -- but don't go too overboard! Some players like combination buildings since they fit nicely together, but others don't like them since they can take away flexibility and creativity when building a colony.
+Some popular combinations are to embed couriers within the warehouse, and fields within the farmer. Other combinations are possible, depending on your goals for the style -- but don't go too overboard! Some players like combination buildings since they fit nicely together, but others don't like them since they can take away flexibility and creativity when building a colony.
 
 When designing parent/child schematics, the key is the [light placeholder](../../source/items/placeholderblocks). The parent schematic needs to contain the child hut block in the correct position and rotation, along with light placeholders wherever there should be a block from the child, and the parent's own blocks. Similarly, the child schematic needs its own hut block and other blocks, and light placeholders wherever there should be a block from the parent. It can be helpful to make a temporary scan of either the parent or child and overlay them over the other to help line things up, or to build both together and then duplicate it and split apart the designs.
 
