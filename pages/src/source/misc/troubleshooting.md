@@ -34,7 +34,7 @@ If none of these apply, go on to the next troubleshooting checklists.
 ### CHECKLIST: Troubleshooting a citizen not working by career
   1. {% worker_link builder %}: Remember to click the Build Building button inside the hut block you want to be built, then wait for the {% building_link builder %} to announce they have begun building. If you are upgrading a building, check that the {% worker_link builder %} level is higher than the building you are upgrading.
   2. {% worker_link forester %}: Set which type of tree they are allowed to cut and if they should replant them. Make sure that your trees are at ground level, or if you place them one block higher, place slabs next to them.
-  3. {% worker_link miner %}: Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level. Do they have cobblestone, torches, a pickaxe, a shovel, slabs, planks, and fencing (for the mineshaft)?
+  3. {% worker_link miner %}: Is there an ore they cannot mine in their way? Break it for them or assign them to a new mining level. Do they have cobblestone, torches, a pickaxe, a shovel, slabs, planks, and fencing (for the mineshaft)? Check for water sources, and waterlogged blocks, including dripstone. Removing them will sometimes resolve related issues.
   4. {% worker_link cook %}: Set which fuel you want them to use.
   5. {% worker_link baker %}: Set which fuel you want them to use and which recipe you want them to bake.
   6. {% worker_link smelter %}: Set which fuel you want them to use and which ore you want them to smelt.
