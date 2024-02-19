@@ -134,7 +134,7 @@ Those custom schematics go in `*/structurize/schematics`. Unzip the zip you down
 {% endversion %}
 
 {% version "1.19" after=true %}
-The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints` directly, not any subfolder thereof.
+The style pack goes in the "blueprints" folder. If that folder doesn't exist, just create it in the root of  your instance folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly in it, depending on how the zip was made). This folder needs to be placed in `*/blueprints` directly, not any subfolder thereof.
 {% endversion %}
 
 #### What and where is the scans folder?
