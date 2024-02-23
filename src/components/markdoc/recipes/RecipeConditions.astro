@@ -15,11 +15,19 @@ const { conditions } = Astro.props;
   conditions.length > 0 &&
     conditions.map(async (condition) => {
       if (condition.type === 'building') {
-        return (
-          <li>
-            Requires <BuildingName name={condition.building.id} /> level {condition.level}
-          </li>
-        );
+        if (condition.level) {
+          return (
+            <li>
+              Requires a <BuildingName name={condition.building.id} /> level {condition.level}
+            </li>
+          );
+        } else {
+          return (
+            <li>
+              Requires a <BuildingName name={condition.building.id} />
+            </li>
+          );
+        }
       }
 
       if (condition.type === 'research') {

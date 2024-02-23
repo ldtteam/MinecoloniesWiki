@@ -1,0 +1,9 @@
+type: custom
+items:
+  - item: minecraft/string
+output: minecolonies/string_mesh
+conditions:
+  - type: building
+    building: fletcher
+  - type: research
+    research: stringmesh

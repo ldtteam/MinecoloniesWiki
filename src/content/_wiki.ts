@@ -96,7 +96,7 @@ export const itemsCollection = defineCollection({
 const buildingCraftingCondition = z.object({
   type: z.literal('building'),
   building: reference('buildings'),
-  level: z.number()
+  level: z.number().optional()
 });
 
 const researchCraftingCondition = z.object({

@@ -1,0 +1,10 @@
+type: custom
+items:
+  - item: minecraft/water_bottle
+  - item: minecolonies/mistletoe
+output: minecolonies/magic_potion
+conditions:
+  - type: building
+    building: alchemist
+  - type: research
+    research: druidpotion

@@ -15,7 +15,11 @@ export const content_block: Tag = {
     },
     cols: {
       type: Number,
-      default: false
+      default: 4
     }
   }
+};
+
+export const image_row: Tag = {
+  render: component('@components/markdoc/util/ImageRow.astro')
 };

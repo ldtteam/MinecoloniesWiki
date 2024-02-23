@@ -1,7 +1,7 @@
 import type { ImageMetadata } from 'astro';
 import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
-import minecraftData from 'minecraft-data';
+import minecraftData, { type Item } from 'minecraft-data';
 
 interface ParsedItemId {
   namespace: string;
@@ -64,14 +64,23 @@ const fromWikiFetcher: ItemFetcher = async (_version, item) => {
   }
 };
 
+const unavailableMcItems: Record<string, Item> = {
+  water_bottle: {
+    id: -1,
+    name: 'water_bottle',
+    displayName: 'Water Bottle',
+    stackSize: 1
+  }
+};
+
 const fetchersByNamespace: Record<string, ItemFetcher> = {
   minecraft: async (version, item) => {
     const data = minecraftData(version.id);
-    if (!data.itemsByName[item.id]) {
+    const itemData = data.itemsByName[item.id] ?? unavailableMcItems[item.id];
+    if (!itemData) {
       return undefined;
     }
 
-    const itemData = data.itemsByName[item.id];
     const parsedItemName = itemData.displayName.replaceAll(' ', '_');
 
     const isStaticImage =

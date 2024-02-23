@@ -63,6 +63,11 @@ export const item_combined_infobox: Tag = {
     items: {
       type: String,
       required: false
+    },
+    cols: {
+      type: Number,
+      required: false,
+      default: 2
     }
   },
   transform: itemCombinedTransform

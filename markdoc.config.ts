@@ -5,7 +5,7 @@ import { building, building_infobox, contentBlocks as buildingContentBlocks } fr
 import { item_combined_infobox, item_infobox } from './src/markdoc/items';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import type { Tag } from './src/markdoc/types';
-import { content_block } from './src/markdoc/util';
+import { content_block, image_row } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
 import { worker, worker_infobox } from './src/markdoc/workers';
 
@@ -37,7 +37,8 @@ export const config: AstroMarkdocConfig = {
     research_list,
     research_link,
     version,
-    content_block
+    content_block,
+    image_row
   },
   nodes: {
     document: {

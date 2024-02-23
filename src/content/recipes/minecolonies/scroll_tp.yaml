@@ -1,0 +1,11 @@
+type: custom
+items:
+  - item: minecraft/paper
+    amount: 3
+  - item: minecraft/compass
+  - item: structurize/build_tool
+output: minecolonies/scroll_tp
+amount: 3
+conditions:
+  - type: building
+    building: enchanter

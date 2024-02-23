@@ -4,24 +4,26 @@ import Wrapper from '@components/ui/infobox/Wrapper.astro';
 
 interface Props {
   items: string[];
+  cols: number;
 }
 
-const { items } = Astro.props;
+const { items, cols } = Astro.props;
 ---
 
 <Wrapper class="mb-3">
   <slot />
 
-  <div class="grid container" slot="infobox">
+  <div class="grid infobox-container" slot="infobox">
     {items.map((item) => <ItemInfoboxInternal item={item} expand />)}
   </div>
 </Wrapper>
 
-<style lang="scss">
-  .container {
-    --bs-columns: 2;
+<style lang="scss" define:vars={{ cols }}>
+  .infobox-container {
+    --bs-columns: var(--cols);
     --bs-gap: 1em;
     direction: rtl;
+    height: min-content;
 
     :global(*) {
       direction: initial;
