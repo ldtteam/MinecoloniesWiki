@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"stamina","name":"Resistance","requirements":[{"type":"building","building":"cook","level":2},{"type":"item","items":["minecraft:golden_apple"],"quantity":1}],"effects":{"healingsaturationlimitaddition":1},"researchLevel":2}
+{"tree":"civilian","parent":"stamina","name":"Resistance","requirements":[{"type":"building","building":"cook","level":2},{"type":"item","items":["minecraft/golden_apple"],"quantity":1}],"effects":{"healingsaturationlimitaddition":1},"researchLevel":2}

@@ -1,0 +1,44 @@
+recipes:
+  - firstRow:
+      firstItem:
+      secondItem:
+      thirdItem:
+    secondRow:
+      firstItem:
+        - minecraft/oak_boat
+        - minecraft/spruce_boat
+        - minecraft/birch_boat
+        - minecraft/jungle_boat
+        - minecraft/acacia_boat
+        - minecraft/dark_oak_boat
+      secondItem:
+      thirdItem:
+        - minecraft/oak_boat
+        - minecraft/spruce_boat
+        - minecraft/birch_boat
+        - minecraft/jungle_boat
+        - minecraft/acacia_boat
+        - minecraft/dark_oak_boat
+    thirdRow:
+      firstItem:
+        - minecraft/oak_boat
+        - minecraft/spruce_boat
+        - minecraft/birch_boat
+        - minecraft/jungle_boat
+        - minecraft/acacia_boat
+        - minecraft/dark_oak_boat
+      secondItem:
+        - minecraft/oak_boat
+        - minecraft/spruce_boat
+        - minecraft/birch_boat
+        - minecraft/jungle_boat
+        - minecraft/acacia_boat
+        - minecraft/dark_oak_boat
+      thirdItem:
+        - minecraft/oak_boat
+        - minecraft/spruce_boat
+        - minecraft/birch_boat
+        - minecraft/jungle_boat
+        - minecraft/acacia_boat
+        - minecraft/dark_oak_boat
+    product: minecolonies/supplyship

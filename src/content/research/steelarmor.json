@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"ironarmor","name":"Steel Armor","requirements":[{"type":"building","building":"townhall","level":5},{"type":"item","items":["minecraft:iron_ingot"],"quantity":64}],"effects":{"armordurabilitymultiplier":5},"researchLevel":5}
+{"tree":"combat","parent":"ironarmor","name":"Steel Armor","requirements":[{"type":"building","building":"townhall","level":5},{"type":"item","items":["minecraft/iron_ingot"],"quantity":64}],"effects":{"armordurabilitymultiplier":5},"researchLevel":5}

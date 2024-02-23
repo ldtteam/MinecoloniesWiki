@@ -1,6 +1,6 @@
 ---
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
-import InternalContentBlock from '@components/markdoc/content/InternalContentBlock.astro';
+import ContentBlock from '@components/ui/content/ContentBlock.astro';
 import { getBuildingData } from '@utils/building';
 import { Image } from 'astro:assets';
 
@@ -30,10 +30,10 @@ const headerContent = header
 const content = markdownContent ? await processor.render(markdownContent) : undefined;
 ---
 
-<InternalContentBlock cols={cols}>
+<ContentBlock cols={cols}>
   <Image slot="left" src={importedImage} alt={`${imageAlt} tab of the ${buildingData.data.name} it's GUI`} />
   {headerContent && <Fragment set:html={headerContent.code} />}
   <slot name="before-content" />
   {content && <Fragment set:html={content.code} />}
   <slot />
-</InternalContentBlock>
+</ContentBlock>

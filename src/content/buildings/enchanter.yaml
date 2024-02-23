@@ -3,4 +3,4 @@ plural: Enchanter Towers
 workers:
   - enchanter
 recipes:
-  - blockhutenchanter
+  - minecolonies/blockhutenchanter

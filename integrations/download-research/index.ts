@@ -2,11 +2,7 @@ import type { AstroIntegration } from 'astro';
 import { addHours } from 'date-fns';
 import { loadEnv } from 'vite';
 
-import {
-  getCacheBuster,
-  writeCacheBuster,
-  writeContentCollectionFile
-} from './file-manager';
+import { getCacheBuster, writeCacheBuster, writeContentCollectionFile } from './file-manager';
 import { ContentLoader } from './load-content';
 import type { ResearchEffect, ResearchItem, ResearchTree } from './types';
 import {
@@ -35,9 +31,7 @@ interface IntegrationOptions {
   cacheValidityTime?: number;
 }
 
-export function downloadResearch(
-  options?: IntegrationOptions
-): AstroIntegration {
+export function downloadResearch(options?: IntegrationOptions): AstroIntegration {
   const runOnStart = options?.runOnStart ?? true;
   const runOnReload = options?.runOnReload ?? false;
   const cacheValidityTime = options?.cacheValidityTime ?? 168;
@@ -49,11 +43,7 @@ export function downloadResearch(
     hooks: {
       'astro:config:setup': async ({ command, isRestart }) => {
         shouldRun = true;
-        if (
-          command !== 'dev' ||
-          (isRestart ? false : !runOnStart) ||
-          (isRestart ? !runOnReload : false)
-        ) {
+        if (command !== 'dev' || (isRestart ? false : !runOnStart) || (isRestart ? !runOnReload : false)) {
           shouldRun = false;
         }
       },
@@ -65,19 +55,13 @@ export function downloadResearch(
         const now = new Date();
         const date = await getCacheBuster(config.cacheDir);
         if (date !== undefined && now <= addHours(date, cacheValidityTime)) {
-          logger.info(
-            'Skipping downloading research info from Minecolonies repo, using previous cached data.'
-          );
+          logger.info('Skipping downloading research info from Minecolonies repo, using previous cached data.');
           return;
         }
 
         logger.info('Downloading research info from Minecolonies repo.');
 
-        const { SECRET_GH_PAT } = loadEnv(
-          process.env.NODE_ENV!,
-          process.cwd(),
-          ''
-        );
+        const { SECRET_GH_PAT } = loadEnv(process.env.NODE_ENV!, process.cwd(), '');
         const contentLoader = new ContentLoader(SECRET_GH_PAT);
 
         const modTranslations = await contentLoader.getJsonFile(
@@ -91,10 +75,9 @@ export function downloadResearch(
           return;
         }
 
-        const researchEffects =
-          await contentLoader.getAllJsonFiles<ResearchEffect>(
-            'src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
-          );
+        const researchEffects = await contentLoader.getAllJsonFiles<ResearchEffect>(
+          'src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
+        );
         for (const researchEffect of researchEffects) {
           writeContentCollectionFile(
             'research_effect',
@@ -113,8 +96,7 @@ export function downloadResearch(
           'src/datagen/generated/minecolonies/data/minecolonies/researches'
         );
         for (const researchTree of researchTrees) {
-          const name =
-            researchTranslations.content[researchTree.content['branch-name']];
+          const name = researchTranslations.content[researchTree.content['branch-name']];
           writeContentCollectionFile(
             'research_tree',
             researchTree.filename,
@@ -124,19 +106,16 @@ export function downloadResearch(
           );
 
           const researchTreeType = researchTree.filename.replace('.json', '');
-          const allResearches =
-            await contentLoader.getAllJsonFiles<ResearchItem>(
-              `src/datagen/generated/minecolonies/data/minecolonies/researches/${researchTreeType}`
-            );
+          const allResearches = await contentLoader.getAllJsonFiles<ResearchItem>(
+            `src/datagen/generated/minecolonies/data/minecolonies/researches/${researchTreeType}`
+          );
 
           for (const research of allResearches) {
             const researchKey = research.filename.replace('.json', '');
             const tree = research.content.branch.split(':').pop();
             const parent = research.content.parentResearch?.split('/').pop();
             const name =
-              researchTranslations.content[
-              `com.minecolonies.research.${researchTreeType}.${researchKey}.name`
-              ];
+              researchTranslations.content[`com.minecolonies.research.${researchTreeType}.${researchKey}.name`];
             const requirements = research.content.requirements
               .map((requirement) => {
                 if (isBuildingRequirement(requirement)) {
@@ -154,7 +133,7 @@ export function downloadResearch(
                 } else if (isItemListRequirement(requirement)) {
                   return {
                     type: 'item',
-                    items: requirement.item.items,
+                    items: requirement.item.items.map((item) => item.replace(':', '/')),
                     quantity: requirement.quantity
                   };
                 } else if (isItemTagRequirement(requirement)) {
@@ -193,14 +172,10 @@ export function downloadResearch(
         }
 
         if (!(await writeCacheBuster(config.cacheDir, new Date()))) {
-          logger.warn(
-            'Failure writing cache buster, next run will attempt to load all info again.'
-          );
+          logger.warn('Failure writing cache buster, next run will attempt to load all info again.');
         }
 
-        logger.info(
-          'Finished downloading research info from Minecolonies repo.'
-        );
+        logger.info('Finished downloading research info from Minecolonies repo.');
       }
     }
   };

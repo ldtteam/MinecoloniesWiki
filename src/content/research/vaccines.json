@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"masks","name":"Vaccines","requirements":[{"type":"building","building":"hospital","level":3},{"type":"item","items":["minecraft:egg"],"quantity":64}],"effects":{"vaccines":1},"researchLevel":4}
+{"tree":"civilian","parent":"masks","name":"Vaccines","requirements":[{"type":"building","building":"hospital","level":3},{"type":"item","items":["minecraft/egg"],"quantity":64}],"effects":{"vaccines":1},"researchLevel":4}

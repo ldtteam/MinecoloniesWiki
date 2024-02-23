@@ -3,4 +3,4 @@ plural: Hospitals
 workers:
   - healer
 recipes:
-  - blockhuthospital
+  - minecolonies/blockhuthospital

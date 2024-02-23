@@ -19,10 +19,7 @@ export async function getWorkerData(worker: string) {
   return workerData;
 }
 
-export function getWorkerName(
-  worker: CollectionEntry<'workers'>,
-  plural: boolean
-) {
+export function getWorkerName(worker: CollectionEntry<'workers'>, plural: boolean) {
   return plural ? worker.data.plural : worker.data.name;
 }
 
@@ -30,9 +27,6 @@ export function getWorkerLink(worker: CollectionEntry<'workers'>) {
   return `/wiki/workers/${worker.id}`;
 }
 
-export function getWorkerMdLink(
-  worker: CollectionEntry<'workers'>,
-  plural: boolean
-) {
+export function getWorkerMdLink(worker: CollectionEntry<'workers'>, plural: boolean) {
   return `[${getWorkerName(worker, plural)}](${getWorkerLink(worker)})`;
 }

@@ -3,4 +3,4 @@ plural: Archeries
 workers:
   - archer
 recipes:
-  - blockhutarchery
+  - minecolonies/blockhutarchery

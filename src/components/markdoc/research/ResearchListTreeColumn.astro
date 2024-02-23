@@ -59,15 +59,13 @@ const researchesWithParent = await Promise.all(
           {researchesWithParent.map((research) => (
             <tr id={`research_${research.id}`}>
               <td>
-                <u>
-                  <a href={`#research_${research.id}`}>{research.data.name}</a>
-                </u>
+                <a class="link-primary" href={`#research_${research.id}`}>
+                  {research.data.name}
+                </a>
               </td>
               <td>
                 {research.parentResearch !== undefined ? (
-                  <u>
-                    <a href={`#research_${research.parentResearch.id}`}>{research.parentResearch.data.name}</a>
-                  </u>
+                  <a href={`#research_${research.parentResearch.id}`}>{research.parentResearch.data.name}</a>
                 ) : (
                   '-'
                 )}

@@ -3,7 +3,7 @@ plural: Cowhand Huts
 workers:
   - cowhand
 recipes:
-  - blockhutcowhand
+  - minecolonies/blockhutcowhand
 settings:
   - name: Breeding
     description: On by default. Here you can choose if the {% worker name="cowhand" /%} will breed (and consequently kill) cows.

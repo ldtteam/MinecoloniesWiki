@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"biodegradable","name":"Podzol Chance","requirements":[{"type":"building","building":"composter","level":2},{"type":"item","items":["minecraft:podzol"],"quantity":8}],"effects":{"podzolchancemultiplier":1},"researchLevel":2}
+{"tree":"technology","parent":"biodegradable","name":"Podzol Chance","requirements":[{"type":"building","building":"composter","level":2},{"type":"item","items":["minecraft/podzol"],"quantity":8}],"effects":{"podzolchancemultiplier":1},"researchLevel":2}

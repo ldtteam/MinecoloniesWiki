@@ -3,4 +3,4 @@ plural: Universities
 workers:
   - researcher
 recipes:
-  - blockhutuniversity
+  - minecolonies/blockhutuniversity

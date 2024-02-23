@@ -1,0 +1,14 @@
+recipes:
+  - firstRow:
+      firstItem:
+      secondItem:
+      thirdItem: minecraft/iron_ingot
+    secondRow:
+      firstItem:
+      secondItem: minecraft/stick
+      thirdItem:
+    thirdRow:
+      firstItem: minecraft/stick
+      secondItem:
+      thirdItem:
+    product: structurize/scan_tool

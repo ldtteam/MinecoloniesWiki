@@ -3,7 +3,7 @@ plural: Nether Mines
 workers:
   - netherminer
 recipes:
-  - blockhutnetherworker
+  - minecolonies/blockhutnetherworker
 settings:
   - name: Recipe Mode
     description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.

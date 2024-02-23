@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"improveddodge","name":"Evasion","requirements":[{"type":"building","building":"smeltery","level":3},{"type":"item","items":["minecraft:leather"],"quantity":64}],"effects":{"archerarmormultiplier":3},"researchLevel":4}
+{"tree":"combat","parent":"improveddodge","name":"Evasion","requirements":[{"type":"building","building":"smeltery","level":3},{"type":"item","items":["minecraft/leather"],"quantity":64}],"effects":{"archerarmormultiplier":3},"researchLevel":4}

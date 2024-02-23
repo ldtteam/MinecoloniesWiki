@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"isthisredstone","name":"Redstone Powered","requirements":[{"type":"item","items":["minecraft:redstone"],"quantity":256}],"effects":{"blockbreakspeedmultiplier":2},"researchLevel":3}
+{"tree":"technology","parent":"isthisredstone","name":"Redstone Powered","requirements":[{"type":"item","items":["minecraft/redstone"],"quantity":256}],"effects":{"blockbreakspeedmultiplier":2},"researchLevel":3}

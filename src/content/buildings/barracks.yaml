@@ -5,4 +5,4 @@ workers:
   - druid
   - knight
 recipes:
-  - blockhutbarracks
+  - minecolonies/blockhutbarracks

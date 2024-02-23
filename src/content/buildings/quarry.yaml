@@ -3,5 +3,5 @@ plural: Quarries
 workers:
   - quarrier
 recipes:
-  - blockhutsimplequarry
-  - blockhutmediumquarry
+  - minecolonies/blockhutsimplequarry
+  - minecolonies/blockhutmediumquarry

@@ -26,7 +26,7 @@ export const research_link: Tag = {
   attributes: {
     name: {
       type: String,
-      required: true,
+      required: true
     }
   }
 };

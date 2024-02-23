@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"biodegradable","name":"Bonemeal","requirements":[{"type":"building","building":"miner","level":3},{"type":"item","items":["minecraft:wheat_seeds"],"quantity":64}],"effects":{"farmingmultiplier":1},"researchLevel":2}
+{"tree":"technology","parent":"biodegradable","name":"Bonemeal","requirements":[{"type":"building","building":"miner","level":3},{"type":"item","items":["minecraft/wheat_seeds"],"quantity":64}],"effects":{"farmingmultiplier":1},"researchLevel":2}

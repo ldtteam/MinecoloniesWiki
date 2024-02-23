@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"improvedleather","name":"Boiled Leather","requirements":[{"type":"building","building":"townhall","level":2},{"type":"item","items":["minecraft:leather"],"quantity":64}],"effects":{"armordurabilitymultiplier":2},"researchLevel":2}
+{"tree":"combat","parent":"improvedleather","name":"Boiled Leather","requirements":[{"type":"building","building":"townhall","level":2},{"type":"item","items":["minecraft/leather"],"quantity":64}],"effects":{"armordurabilitymultiplier":2},"researchLevel":2}

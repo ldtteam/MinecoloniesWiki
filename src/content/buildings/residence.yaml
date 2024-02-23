@@ -1,7 +1,7 @@
 name: House
 plural: Houses
 recipes:
-  - blockhutresidence
+  - minecolonies/blockhutresidence
 overrides:
   11900:
     name: Residence

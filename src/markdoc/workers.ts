@@ -1,12 +1,15 @@
 import { component, Markdoc } from '@astrojs/markdoc/config';
+import type { Node } from '@markdoc/markdoc';
 import type { MarkdocWorkerComponent } from '@utils/workers';
 
 import type { Tag } from './types';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function getWorkerAttributes(attributes: Record<string, any>, config: Parameters<NonNullable<Tag["transform"]>>[1]): MarkdocWorkerComponent {
+function getWorkerAttributes(
+  attributes: ReturnType<Node['transformAttributes']>,
+  config: Parameters<NonNullable<Tag['transform']>>[1]
+): MarkdocWorkerComponent {
   const workerId = config.variables?.frontmatter?.worker?.id;
-  if (Object.keys(attributes).includes("name")) {
+  if (Object.keys(attributes).includes('name')) {
     return {
       ...attributes,
       workerId,
@@ -16,16 +19,16 @@ function getWorkerAttributes(attributes: Record<string, any>, config: Parameters
     return {
       ...attributes,
       workerId,
-      name: workerId ?? ""
-    }
+      name: workerId ?? ''
+    };
   }
 }
 
-const workerTransform: Tag["transform"] = (node, config) => {
+const workerTransform: Tag['transform'] = (node, config) => {
   const attributes = getWorkerAttributes(node.transformAttributes(config), config);
   const children = node.transformChildren(config);
   return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
-}
+};
 
 export const worker: Tag = {
   render: component('@components/markdoc/WorkerName.astro'),

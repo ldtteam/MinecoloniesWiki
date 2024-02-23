@@ -4,4 +4,4 @@ workers:
   - teacher
   - pupil
 recipes:
-  - blockhutschool
+  - minecolonies/blockhutschool

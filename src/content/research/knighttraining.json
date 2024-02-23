@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"squiretraining","name":"Knight Training","requirements":[{"type":"building","building":"combatacademy","level":4},{"type":"item","items":["minecraft:shield"],"quantity":8}],"effects":{"blockattacksmultiplier":2},"researchLevel":4}
+{"tree":"combat","parent":"squiretraining","name":"Knight Training","requirements":[{"type":"building","building":"combatacademy","level":4},{"type":"item","items":["minecraft/shield"],"quantity":8}],"effects":{"blockattacksmultiplier":2},"researchLevel":4}

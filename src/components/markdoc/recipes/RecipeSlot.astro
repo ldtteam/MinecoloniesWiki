@@ -1,95 +1,85 @@
 ---
-import { toTitleCase } from '../../../util/string';
+import VersionContent from '@components/version/VersionContent.astro';
+import { getItemData } from '@utils/items';
+import { Image } from 'astro:assets';
 
 interface Props {
-  items: string | string[] | undefined;
+  items: string | string[] | null | undefined;
   amount?: number;
   large?: boolean;
 }
 
 const { items, amount = 1, large = false } = Astro.props;
 
-const parsedItems = Array.isArray(items) ? items : items !== undefined ? [items] : [];
+const parsedItems = Array.isArray(items) ? items : items !== undefined && items !== null ? [items] : [];
 
-function getItemName(name: string) {
-  const itemName = name.split('/')[1];
-  return itemName.split('_').map(toTitleCase).join(' ');
-}
+const itemResults = await Promise.all(parsedItems.map(getItemData));
 ---
 
 {
-  items !== undefined ? (
-    <div class:list={['invslot', large ? 'invslot-large' : '', items.length > 1 ? 'animate' : '']}>
-      {parsedItems.map((item, idx) => (
-        <div class:list={['invslot-item', idx === 0 && items.length > 1 ? 'active' : '']}>
-          {item !== '' && (
-            <img
-              src={`/images/icons/${item}.png`}
-              alt={getItemName(item)}
-              class="inv-sprite"
-              data-bs-toggle="tooltip"
-              title={getItemName(item)}
-            />
-          )}
-          {amount > 1 && (
-            <div class="invslot-stacksize">
-              <span>{amount}</span>
-            </div>
-          )}
-        </div>
-      ))}
+  (
+    <div class:list={['invslot', large ? 'invslot-large' : '']}>
+      <swiper-container
+        autoplay
+        autoplay-delay="1000"
+        autoplay-disable-on-interaction="false"
+        loop={itemResults.length > 1}
+        slides-per-view="1"
+        slides-per-group="1"
+        no-swiping
+        no-swiping-selector="*"
+        width="2em"
+        class="invslot-item"
+      >
+        {itemResults.map((itemResult) => (
+          <swiper-slide>
+            {itemResult.data.map((item) => (
+              <VersionContent versions={item.versions}>
+                {item.icons.map((icon) => (
+                  <div class="invslot-wrapper">
+                    <Image
+                      src={icon}
+                      alt={item.name}
+                      width={32}
+                      height={32}
+                      class="inv-sprite"
+                      data-bs-toggle="tooltip"
+                      title={item.name}
+                    />
+                  </div>
+                ))}
+              </VersionContent>
+            ))}
+          </swiper-slide>
+        ))}
+        {amount > 1 && (
+          <div class="invslot-stacksize">
+            <span>{amount}</span>
+          </div>
+        )}
+      </swiper-container>
     </div>
-  ) : (
-    <div class="invslot" />
   )
 }
 
-<script>
-  let currentInterval: ReturnType<typeof setInterval> | undefined = undefined;
-
-  function changeSlots() {
-    document.querySelectorAll('.animate').forEach((animatable) => {
-      if (animatable.children.length === 0) {
-        return;
-      }
-
-      const activeSlot = animatable.querySelector('.invslot-item.active');
-      for (const child of animatable.children) {
-        child.classList.remove('active');
-      }
-
-      if (activeSlot === null) {
-        animatable.firstElementChild!.classList.add('active');
-        return;
-      }
-
-      const next = activeSlot.nextElementSibling;
-      if (next === null) {
-        animatable.firstElementChild!.classList.add('active');
-        return;
-      }
-
-      next.classList.add('active');
-    });
+<style style="scss">
+  img {
+    max-width: none;
   }
 
-  document.addEventListener('astro:page-load', () => {
-    if (currentInterval) {
-      clearInterval(currentInterval);
-    }
-    currentInterval = setInterval(changeSlots, 2000);
-  });
-</script>
-
-<style style="scss">
   .invslot {
+    --invslot-size: 2em;
     display: inline-block;
     position: relative;
-    width: 2em;
-    height: 2em;
+    width: var(--invslot-size);
+    height: var(--invslot-size);
     background: #8b8b8b;
     border: 2px solid;
     border-color: #373737 #fff #fff #373737;
+
+    &.invslot-large {
+      --invslot-size: 3em;
+    }
 
     &::before,
     &::after {
@@ -111,23 +101,16 @@ function getItemName(name: string) {
     }
 
     .invslot-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
       height: 100%;
     }
 
-    &.animate > .invslot-item {
-      display: none;
-
-      &.active {
-        display: flex;
-      }
-    }
-
-    &.invslot-large {
-      width: 3em;
-      height: 3em;
+    .invslot-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(var(--invslot-size) - 4px);
+      height: calc(var(--invslot-size) - 4px);
     }
 
     .invslot-stacksize {
@@ -140,8 +123,8 @@ function getItemName(name: string) {
     }
 
     .inv-sprite {
-      height: calc(2em - 4px);
       width: calc(2em - 4px);
+      height: calc(2em - 4px);
     }
   }
 </style>

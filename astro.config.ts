@@ -1,16 +1,20 @@
 import markdoc from '@astrojs/markdoc';
 import sitemap from '@astrojs/sitemap';
-import svelte from "@astrojs/svelte";
+import svelte from '@astrojs/svelte';
 import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
 import { register } from 'swiper/element/bundle';
 
 import { downloadResearch } from './integrations/download-research';
+
 register();
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://minecolonies.com',
+  image: {
+    domains: ['minecraft.wiki']
+  },
   integrations: [
     svelte(),
     icon({

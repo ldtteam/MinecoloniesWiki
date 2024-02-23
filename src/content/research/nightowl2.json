@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"nightowl","name":"Night Owl II","requirements":[{"type":"building","building":"townhall","level":3},{"type":"item","items":["minecraft:golden_carrot"],"quantity":75}],"effects":{"workingdayhaddition":2},"researchLevel":4}
+{"tree":"civilian","parent":"nightowl","name":"Night Owl II","requirements":[{"type":"building","building":"townhall","level":3},{"type":"item","items":["minecraft/golden_carrot"],"quantity":75}],"effects":{"workingdayhaddition":2},"researchLevel":4}

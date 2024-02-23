@@ -1,0 +1,15 @@
+recipes:
+  - firstRow:
+      firstItem: minecraft/paper
+      secondItem:
+      thirdItem: minecraft/paper
+    secondRow:
+      firstItem:
+      secondItem: minecraft/paper
+      thirdItem:
+    thirdRow:
+      firstItem: minecraft/paper
+      secondItem:
+      thirdItem: minecraft/paper
+    product: domum_ornamentum/paper_extra
+    amount: 4

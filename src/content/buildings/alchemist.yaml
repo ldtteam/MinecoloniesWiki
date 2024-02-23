@@ -3,4 +3,4 @@ plural: Alchemist Laboratories
 workers:
   - alchemist
 recipes:
-  - blockhutalchemist
+  - minecolonies/blockhutalchemist

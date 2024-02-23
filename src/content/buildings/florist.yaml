@@ -3,4 +3,4 @@ plural: Flowershops
 workers:
   - florist
 recipes:
-  - blockhutflorist
+  - minecolonies/blockhutflorist

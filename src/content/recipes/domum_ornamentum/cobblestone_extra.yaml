@@ -1,0 +1,15 @@
+recipes:
+  - firstRow:
+      firstItem: minecraft/cobblestone
+      secondItem:
+      thirdItem: minecraft/cobblestone
+    secondRow:
+      firstItem:
+      secondItem: minecraft/cobblestone
+      thirdItem:
+    thirdRow:
+      firstItem: minecraft/cobblestone
+      secondItem:
+      thirdItem: minecraft/cobblestone
+    product: domum_ornamentum/cobblestone_extra
+    amount: 4

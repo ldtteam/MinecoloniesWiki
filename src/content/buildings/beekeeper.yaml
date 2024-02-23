@@ -3,7 +3,7 @@ plural: Apiaries
 workers:
   - beekeeper
 recipes:
-  - blockhutbeekeeper
+  - minecolonies/blockhutbeekeeper
 settings:
   - name: Breeding
     description: On by default. Here you can choose if the Beekeeper will breed bees.

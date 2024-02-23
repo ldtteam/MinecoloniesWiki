@@ -3,7 +3,7 @@ plural: Composter Huts
 workers:
   - composter
 recipes:
-  - blockhutcomposter
+  - minecolonies/blockhutcomposter
 settings:
   - name: Produce Dirt
     description: Turning this on will make dirt instead of compost. It also occassionally produces podzol.

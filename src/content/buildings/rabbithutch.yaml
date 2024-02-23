@@ -3,7 +3,7 @@ plural: Rabbit Hutches
 workers:
   - rabbitherder
 recipes:
-  - blockhutrabbithutch
+  - minecolonies/blockhutrabbithutch
 settings:
   - name: Breeding
     description: On by default. Here you can choose if the Rabbit Herder will breed (and consequently kill) rabbits.

@@ -27,16 +27,16 @@ const workers = buildingData.data.workers ?? [];
 const recipes = buildingData.data.recipes ?? [];
 ---
 
-<Wrapper>
+<Wrapper class="mb-3">
   <slot />
 
-  <Infobox slot="infobox" title={buildingData.data.name} class="ms-3 mb-3 flex-shrink-1">
+  <Infobox slot="infobox" title={buildingData.data.name} class="flex-shrink-1">
     <div class="text-center">
       <Image
         data-pagefind-meta="image[src], image_alt[alt]"
         src={importedImage}
         alt={`${getBuildingName(buildingData, false)} hut block`}
-        width={250}
+        width={300}
       />
     </div>
 
@@ -44,13 +44,11 @@ const recipes = buildingData.data.recipes ?? [];
       workers.length !== 0 && (
         <>
           <hr />
-          <div class="grid">
-            <div class="g-col-1">
-              <p class="m-0">
-                <b>{workers.length > 1 ? 'Workers:' : 'Worker:'}</b>
-              </p>
-            </div>
-            <div class="g-col-11">
+          <div class="grid" style="--bs-columns: 2;">
+            <p class="m-0">
+              <b>{workers.length > 1 ? 'Workers:' : 'Worker:'}</b>
+            </p>
+            <div>
               {workers.map((worker) => (
                 <p class="m-0">
                   <WorkerName name={worker.id} />
@@ -66,13 +64,11 @@ const recipes = buildingData.data.recipes ?? [];
       recipes.length !== 0 && (
         <>
           <hr />
-          <div class="grid">
-            <div class="g-col-1">
-              <p class="m-0">
-                <b>{recipes.length > 1 ? 'Recipe:' : 'Recipes:'}</b>
-              </p>
-            </div>
-            <div class="g-col-11">
+          <div class="grid" style="--bs-columns: 2;">
+            <p class="m-0">
+              <b>{recipes.length > 1 ? 'Recipes:' : 'Recipe:'}</b>
+            </p>
+            <div>
               {recipes.map((recipe) => (
                 <Recipe recipe={recipe} />
               ))}
@@ -83,19 +79,17 @@ const recipes = buildingData.data.recipes ?? [];
     }
 
     <hr />
-    <div class="grid" style="--bs-columns: 1;">
-      <p class="m-0">
-        <b>Research:&nbsp;</b>
-        {
-          research !== undefined ? (
-            <span
-              set:html={`You must research "<a href="/wiki/systems/research#research_${research.id}">${research.data.name}</a>" to unlock this building!`}
-            />
-          ) : (
-            <>No research is required for this building.</>
-          )
-        }
-      </p>
-    </div>
+    <p class="m-0">
+      <b>Research:&nbsp;</b>
+      {
+        research !== undefined ? (
+          <span
+            set:html={`You must research "<a href="/wiki/systems/research#research_${research.id}">${research.data.name}</a>" to unlock this building!`}
+          />
+        ) : (
+          <>No research is required for this building.</>
+        )
+      }
+    </p>
   </Infobox>
 </Wrapper>

@@ -54,7 +54,7 @@ const filteredImages = await Promise.all(
 const buildings = workerData.data.buildings ?? [];
 ---
 
-<Wrapper>
+<Wrapper class="mb-3">
   <slot />
 
   <Infobox slot="infobox" title={workerData.data.name} class="w-auto flex-shrink-1">
@@ -65,6 +65,7 @@ const buildings = workerData.data.buildings ?? [];
         autoplay
         autoplay-delay="2000"
         autoplay-pause-on-mouse-enter
+        autoplay-disable-on-interaction="false"
         loop
         loop-add-blank-slides
         slides-per-view="2"
@@ -92,13 +93,11 @@ const buildings = workerData.data.buildings ?? [];
       buildings.length !== 0 && (
         <>
           <hr />
-          <div class="row">
-            <div class="col-auto">
-              <p class="m-0">
-                <b>{buildings.length > 1 ? 'Buildings:' : 'Building:'}</b>
-              </p>
-            </div>
-            <div class="col">
+          <div class="grid" style="--bs-columns: 2;">
+            <p class="m-0">
+              <b>{buildings.length > 1 ? 'Buildings:' : 'Building:'}</b>
+            </p>
+            <div>
               {buildings.map((building) => (
                 <p class="m-0">
                   <BuildingName name={building.id} />

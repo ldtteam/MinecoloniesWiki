@@ -2,11 +2,11 @@
 
 .nav-link {
   color: inherit !important;
+  text-decoration: none;
 
   &.active,
   &:hover,
   &:focus {
-    text-decoration: none;
     text-shadow: 0 0 0.5em;
   }
 }

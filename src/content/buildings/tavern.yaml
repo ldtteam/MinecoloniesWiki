@@ -2,4 +2,4 @@ name: Tavern
 plural: Taverns
 singular: true
 recipes:
-  - blockhuttavern
+  - minecolonies/blockhuttavern

@@ -3,7 +3,7 @@ plural: Builder Huts
 workers:
   - builder
 recipes:
-  - blockhutbuilder
+  - minecolonies/blockhutbuilder
 settings:
   - name: Builder Mode
     description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the {% building name="townhall" /%} GUI's work orders tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.

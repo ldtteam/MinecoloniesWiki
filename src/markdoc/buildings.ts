@@ -1,13 +1,15 @@
 import { component, Markdoc } from '@astrojs/markdoc/config';
-import type { Config } from '@markdoc/markdoc';
+import type { Config, Node } from '@markdoc/markdoc';
 import type { MarkdocBuildingComponent } from '@utils/building';
 
 import type { Tag } from './types';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function getBuildingAttributes(attributes: Record<string, any>, config: Config): MarkdocBuildingComponent {
+function getBuildingAttributes(
+  attributes: ReturnType<Node['transformAttributes']>,
+  config: Config
+): MarkdocBuildingComponent {
   const buildingId = config.variables?.frontmatter?.building?.id;
-  if (Object.keys(attributes).includes("name")) {
+  if (Object.keys(attributes).includes('name')) {
     return {
       ...attributes,
       buildingId,
@@ -17,16 +19,16 @@ function getBuildingAttributes(attributes: Record<string, any>, config: Config):
     return {
       ...attributes,
       buildingId,
-      name: buildingId ?? ""
-    }
+      name: buildingId ?? ''
+    };
   }
 }
 
-const buildingTransform: Tag["transform"] = (node, config) => {
+const buildingTransform: Tag['transform'] = (node, config) => {
   const attributes = getBuildingAttributes(node.transformAttributes(config), config);
   const children = node.transformChildren(config);
   return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
-}
+};
 
 export const building: Tag = {
   render: component('@components/markdoc/BuildingName.astro'),
@@ -72,7 +74,7 @@ const defaultContentBlockAttributes: Tag['attributes'] = {
       }
       return [];
     }
-  },
+  }
 };
 
 const customContentAttributes: Tag['attributes'] = {

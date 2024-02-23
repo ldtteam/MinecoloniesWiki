@@ -1,1 +1,1 @@
-{"tree":"technology","name":"Hitting Iron!","requirements":[{"type":"building","building":"miner","level":3},{"type":"item","items":["minecraft:anvil"],"quantity":1}],"effects":{"blockhutblacksmith":1},"researchLevel":1}
+{"tree":"technology","name":"Hitting Iron!","requirements":[{"type":"building","building":"miner","level":3},{"type":"item","items":["minecraft/anvil"],"quantity":1}],"effects":{"blockhutblacksmith":1},"researchLevel":1}

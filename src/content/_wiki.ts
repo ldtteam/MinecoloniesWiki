@@ -6,6 +6,17 @@ const regularPage = z.object({
   title: z.string()
 });
 
+const itemPage = z.object({
+  type: z.literal('item'),
+  item: reference('items')
+});
+
+const itemCombinedPage = z.object({
+  type: z.literal('item-combined'),
+  title: z.string(),
+  items: z.array(reference('items'))
+});
+
 const buildingPage = z.object({
   type: z.literal('building'),
   building: reference('buildings')
@@ -18,7 +29,7 @@ const workerPage = z.object({
 
 export const wikiCollection = defineCollection({
   type: 'content',
-  schema: z.discriminatedUnion('type', [regularPage, buildingPage, workerPage])
+  schema: z.discriminatedUnion('type', [regularPage, itemPage, itemCombinedPage, buildingPage, workerPage])
 });
 
 export const wikiCategories = defineCollection({
@@ -73,25 +84,36 @@ export const workersCollection = defineCollection({
   })
 });
 
+export const itemsCollection = defineCollection({
+  type: 'data',
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      icons: z.array(image())
+    })
+});
+
+const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
+
 export const recipesCollection = defineCollection({
   type: 'data',
   schema: z.object({
     recipes: z.array(
       z.object({
         firstRow: z.object({
-          firstItem: z.string().or(z.array(z.string())).optional(),
-          secondItem: z.string().or(z.array(z.string())).optional(),
-          thirdItem: z.string().or(z.array(z.string())).optional()
+          firstItem: itemOrArray,
+          secondItem: itemOrArray,
+          thirdItem: itemOrArray
         }),
         secondRow: z.object({
-          firstItem: z.string().or(z.array(z.string())).optional(),
-          secondItem: z.string().or(z.array(z.string())).optional(),
-          thirdItem: z.string().or(z.array(z.string()).optional())
+          firstItem: itemOrArray,
+          secondItem: itemOrArray,
+          thirdItem: itemOrArray
         }),
         thirdRow: z.object({
-          firstItem: z.string().or(z.array(z.string())).optional(),
-          secondItem: z.string().or(z.array(z.string())).optional(),
-          thirdItem: z.string().or(z.array(z.string())).optional()
+          firstItem: itemOrArray,
+          secondItem: itemOrArray,
+          thirdItem: itemOrArray
         }),
         product: z.string(),
         amount: z.number().default(1)

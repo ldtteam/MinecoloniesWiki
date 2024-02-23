@@ -3,8 +3,8 @@ plural: Farmer's Huts
 workers:
   - farmer
 recipes:
-  - blockhutfarmer
-  - field
+  - minecolonies/blockhutfarmer
+  - minecolonies/field
 settings:
   - name: Request Fertilizer
     description: On by default. This lets you choose whether the Farmer will request fertilizer.

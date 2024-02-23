@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"captaintraining","name":"Captain of the Guard","requirements":[{"type":"item","items":["minecraft:shield"],"quantity":27}],"effects":{"blockattacksmultiplier":4},"researchLevel":6}
+{"tree":"combat","parent":"captaintraining","name":"Captain of the Guard","requirements":[{"type":"item","items":["minecraft/shield"],"quantity":27}],"effects":{"blockattacksmultiplier":4},"researchLevel":6}

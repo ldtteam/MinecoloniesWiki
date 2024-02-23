@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"lifesaver","name":"Lifesaver II","requirements":[{"type":"building","building":"townhall","level":4},{"type":"item","items":["minecraft:hay_block"],"quantity":64}],"effects":{"healthaddition":4},"researchLevel":4}
+{"tree":"civilian","parent":"lifesaver","name":"Lifesaver II","requirements":[{"type":"building","building":"townhall","level":4},{"type":"item","items":["minecraft/hay_block"],"quantity":64}],"effects":{"healthaddition":4},"researchLevel":4}

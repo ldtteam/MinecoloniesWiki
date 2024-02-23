@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"tactictraining","name":"Improved Swords","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","items":["minecraft:iron_block"],"quantity":6}],"effects":{"blockhutcombatacademy":1},"researchLevel":2}
+{"tree":"combat","parent":"tactictraining","name":"Improved Swords","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","items":["minecraft/iron_block"],"quantity":6}],"effects":{"blockhutcombatacademy":1},"researchLevel":2}

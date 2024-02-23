@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"remembrance","name":"Resurrection Chance I","requirements":[{"type":"building","building":"graveyard","level":3},{"type":"item","items":["minecraft:ghast_tear"],"quantity":1}],"effects":{"resurrectchanceaddition":1},"researchLevel":2}
+{"tree":"civilian","parent":"remembrance","name":"Resurrection Chance I","requirements":[{"type":"building","building":"graveyard","level":3},{"type":"item","items":["minecraft/ghast_tear"],"quantity":1}],"effects":{"resurrectchanceaddition":1},"researchLevel":2}

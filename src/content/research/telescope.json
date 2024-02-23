@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"ironskin","name":"Telescope","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","items":["minecraft:emerald"],"quantity":16}],"effects":{"telescope":1},"researchLevel":4}
+{"tree":"combat","parent":"ironskin","name":"Telescope","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","items":["minecraft/emerald"],"quantity":16}],"effects":{"telescope":1},"researchLevel":4}
