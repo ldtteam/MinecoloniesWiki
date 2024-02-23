@@ -18,8 +18,8 @@ All kinds of placeholder blocks can be crafted at the {% building_link sawmill %
 ## Using the Placeholder Blocks
 
 - The placeholder block tells the mod to leave any blocks that are currently in that spot alone. It will not remove or change anything that already exists in that spot.
-- The solid placeholder block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the biome's regular ground block (grass, sandstone, red sandstone, white terracotta, etc).
-- The fluid placeholder block tells the mod to replace any non-solid blocks with the biome's preferred fluid (water in the overworld, lava in the Nether). Already-existing solid blocks or fluids will be left alone.
+- The solid placeholder block tells the mod to replace any non-solid blocks (air, grass, leaves, etc.) with the builder's fill block.
+- The fluid placeholder block tells the mod to replace any non-solid blocks with the builder's fill block. Already-existing solid blocks or fluids will be left alone.
 
 You can make and use these blocks in survival, but they are mainly used to scan schematics.
 
