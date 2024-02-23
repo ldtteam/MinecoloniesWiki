@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/stone
-      secondItem: minecraft/stone
-      thirdItem: minecraft/stone
-    secondRow:
-      firstItem: minecraft/redstoneblock
-      secondItem: structurize/build_tool
-      thirdItem: minecraft/redstoneblock
-    thirdRow:
-      firstItem: minecraft/piston
-      secondItem: minecraft/piston
-      thirdItem: minecraft/piston
-    product: multipiston/multipiston
+type: shaped
+row1:
+  item1: minecraft/stone
+  item2: minecraft/stone
+  item3: minecraft/stone
+row2:
+  item1: minecraft/redstoneblock
+  item2: structurize/build_tool
+  item3: minecraft/redstoneblock
+row3:
+  item1: minecraft/piston
+  item2: minecraft/piston
+  item3: minecraft/piston
+output: multipiston/multipiston

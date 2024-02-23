@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/iron_sword
-      secondItem: minecraft/iron_sword
-      thirdItem: minecraft/iron_sword
-    secondRow:
-      firstItem: minecolonies/blockhutguardtower
-      secondItem: minecraft/yellow_banner
-      thirdItem: minecolonies/blockhutguardtower
-    thirdRow:
-      firstItem: minecraft/bow
-      secondItem: minecraft/bow
-      thirdItem: minecraft/bow
-    product: minecolonies/rallying_banner
+type: shaped
+row1:
+  item1: minecraft/iron_sword
+  item2: minecraft/iron_sword
+  item3: minecraft/iron_sword
+row2:
+  item1: minecolonies/blockhutguardtower
+  item2: minecraft/yellow_banner
+  item3: minecolonies/blockhutguardtower
+row3:
+  item1: minecraft/bow
+  item2: minecraft/bow
+  item3: minecraft/bow
+output: minecolonies/rallying_banner

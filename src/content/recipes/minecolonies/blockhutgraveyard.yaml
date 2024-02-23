@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/stone
-      secondItem: structurize/build_tool
-      thirdItem: minecraft/stone
-    secondRow:
-      firstItem: minecraft/stone
-      secondItem: minecraft/bone
-      thirdItem: minecraft/stone
-    thirdRow:
-      firstItem: minecraft/stone
-      secondItem: minecraft/stone
-      thirdItem: minecraft/stone
-    product: minecolonies/blockhutgraveyard
+type: shaped
+row1:
+  item1: minecraft/stone
+  item2: structurize/build_tool
+  item3: minecraft/stone
+row2:
+  item1: minecraft/stone
+  item2: minecraft/bone
+  item3: minecraft/stone
+row3:
+  item1: minecraft/stone
+  item2: minecraft/stone
+  item3: minecraft/stone
+output: minecolonies/blockhutgraveyard

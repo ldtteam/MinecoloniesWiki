@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/stick
-      secondItem: minecraft/wool
-      thirdItem: minecraft/stick
-    secondRow:
-      firstItem: minecraft/stick
-      secondItem:
-      thirdItem: minecraft/stick
-    thirdRow:
-      firstItem: minecraft/stick
-      secondItem:
-      thirdItem: minecraft/stick
-    product: minecolonies/construction_tape
+type: shaped
+row1:
+  item1: minecraft/stick
+  item2: minecraft/wool
+  item3: minecraft/stick
+row2:
+  item1: minecraft/stick
+  item2:
+  item3: minecraft/stick
+row3:
+  item1: minecraft/stick
+  item2:
+  item3: minecraft/stick
+output: minecolonies/construction_tape

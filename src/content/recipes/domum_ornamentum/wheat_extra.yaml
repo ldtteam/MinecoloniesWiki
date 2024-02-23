@@ -1,15 +1,15 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/wheat
-      secondItem:
-      thirdItem: minecraft/wheat
-    secondRow:
-      firstItem:
-      secondItem: minecraft/wheat
-      thirdItem:
-    thirdRow:
-      firstItem: minecraft/wheat
-      secondItem:
-      thirdItem: minecraft/wheat
-    product: domum_ornamentum/wheat_extra
-    amount: 4
+type: shaped
+row1:
+  item1: minecraft/wheat
+  item2:
+  item3: minecraft/wheat
+row2:
+  item1:
+  item2: minecraft/wheat
+  item3:
+row3:
+  item1: minecraft/wheat
+  item2:
+  item3: minecraft/wheat
+output: domum_ornamentum/wheat_extra
+amount: 4

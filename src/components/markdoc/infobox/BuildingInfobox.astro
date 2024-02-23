@@ -1,11 +1,11 @@
 ---
 import Infobox from '@components/ui/infobox/Infobox.astro';
+import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
 import { getBuildingData, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
-import Recipe from '../recipes/Recipe.astro';
 import WorkerName from '../WorkerName.astro';
 
 type Props = MarkdocBuildingComponent;
@@ -60,23 +60,7 @@ const recipes = buildingData.data.recipes ?? [];
       )
     }
 
-    {
-      recipes.length !== 0 && (
-        <>
-          <hr />
-          <div class="grid" style="--bs-columns: 2;">
-            <p class="m-0">
-              <b>{recipes.length > 1 ? 'Recipes:' : 'Recipe:'}</b>
-            </p>
-            <div>
-              {recipes.map((recipe) => (
-                <Recipe recipe={recipe} />
-              ))}
-            </div>
-          </div>
-        </>
-      )
-    }
+    <RecipeGrid recipes={recipes} />
 
     <hr />
     <p class="m-0">

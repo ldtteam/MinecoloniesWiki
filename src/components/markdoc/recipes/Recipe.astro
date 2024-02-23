@@ -1,7 +1,9 @@
 ---
 import { getEntry } from 'astro:content';
 
-import RecipeSlot from './RecipeSlot.astro';
+import CustomRecipe from './CustomRecipe.astro';
+import RecipeConditions from './RecipeConditions.astro';
+import ShapedRecipe from './ShapedRecipe.astro';
 
 interface Props {
   recipe: string;
@@ -15,58 +17,22 @@ if (recipeData === undefined) {
 }
 ---
 
-{
-  recipeData.data.recipes.map((recipe) => (
-    <div class="crafting-table">
-      <div class="ct-input">
-        <div class="ct-row">
-          <RecipeSlot items={recipe.firstRow.firstItem} />
-          <RecipeSlot items={recipe.firstRow.secondItem} />
-          <RecipeSlot items={recipe.firstRow.thirdItem} />
-        </div>
-        <div class="ct-row">
-          <RecipeSlot items={recipe.secondRow.firstItem} />
-          <RecipeSlot items={recipe.secondRow.secondItem} />
-          <RecipeSlot items={recipe.secondRow.thirdItem} />
-        </div>
-        <div class="ct-row">
-          <RecipeSlot items={recipe.thirdRow.firstItem} />
-          <RecipeSlot items={recipe.thirdRow.secondItem} />
-          <RecipeSlot items={recipe.thirdRow.thirdItem} />
-        </div>
-      </div>
-      <div class="ct-output">
-        <RecipeSlot items={recipe.product} amount={recipe.amount} large />
-      </div>
-    </div>
-  ))
-}
+<div class="recipe-box">
+  {recipeData.data.type === 'shaped' && <ShapedRecipe recipe={recipeData.data} />}
+  {recipeData.data.type === 'custom' && <CustomRecipe recipe={recipeData.data} />}
+</div>
+
+<RecipeConditions conditions={recipeData.data.conditions} />
 
 <style>
-  .crafting-table {
+  .recipe-box {
     display: flex;
     flex-direction: row;
-    gap: 2em;
-    width: max-content;
+    justify-content: center;
+    gap: 1em;
     padding: 0.5em;
     background-color: #c6c6c6;
     border: 2px solid;
     border-color: #dbdbdb #5b5b5b #5b5b5b #dbdbdb;
-  }
-
-  .ct-input {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ct-row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .ct-output {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 </style>

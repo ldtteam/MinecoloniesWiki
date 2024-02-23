@@ -1,11 +1,11 @@
 ---
-import Recipe from '@components/markdoc/recipes/Recipe.astro';
 import VersionContent from '@components/version/VersionContent.astro';
 import { getItemData } from '@utils/items';
 import { Image } from 'astro:assets';
 import { getEntry } from 'astro:content';
 
 import Infobox from './Infobox.astro';
+import RecipeGrid from './RecipeGrid.astro';
 
 interface Props {
   item: string;
@@ -16,7 +16,7 @@ const { item, expand = false } = Astro.props;
 
 const itemData = await getItemData(item);
 
-let recipeData = await getEntry('recipes', item);
+const recipeData = await getEntry('recipes', item);
 ---
 
 <Infobox title={itemData} class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
@@ -46,7 +46,7 @@ let recipeData = await getEntry('recipes', item);
           >
             {item.icons.map((icon) => (
               <swiper-slide>
-                <Image src={icon} alt="" width={item.icons.length > 1 ? 150 : 300} />
+                <Image src={icon} alt="" width={150} />
               </swiper-slide>
             ))}
           </swiper-container>
@@ -55,17 +55,13 @@ let recipeData = await getEntry('recipes', item);
     }
   </div>
 
-  {
-    recipeData !== undefined && (
-      <>
-        <hr />
-        <div class="grid" style="--bs-columns: 2;">
-          <p class="m-0">
-            <b>Recipe:</b>
-          </p>
-          <Recipe recipe={item} />
-        </div>
-      </>
-    )
-  }
+  {recipeData !== undefined && <RecipeGrid recipes={[item]} />}
 </Infobox>
+
+<style>
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: auto max-content;
+    gap: 0.5em;
+  }
+</style>

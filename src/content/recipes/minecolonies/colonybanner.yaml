@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem:
-      secondItem: minecraft/wool
-      thirdItem:
-    secondRow:
-      firstItem:
-      secondItem: minecraft/wool
-      thirdItem:
-    thirdRow:
-      firstItem:
-      secondItem: structurize/build_tool
-      thirdItem:
-    product: minecolonies/colonybanner
+type: shaped
+row1:
+  item1:
+  item2: minecraft/wool
+  item3:
+row2:
+  item1:
+  item2: minecraft/wool
+  item3:
+row3:
+  item1:
+  item2: structurize/build_tool
+  item3:
+output: minecolonies/colonybanner

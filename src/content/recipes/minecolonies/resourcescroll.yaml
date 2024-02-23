@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/stick
-      secondItem: structurize/build_tool
-      thirdItem: minecraft/stick
-    secondRow:
-      firstItem: minecraft/stick
-      secondItem: minecraft/leather
-      thirdItem: minecraft/stick
-    thirdRow:
-      firstItem: minecraft/stick
-      secondItem: minecraft/leather
-      thirdItem: minecraft/stick
-    product: minecolonies/resource_scroll
+type: shaped
+row1:
+  item1: minecraft/stick
+  item2: structurize/build_tool
+  item3: minecraft/stick
+row2:
+  item1: minecraft/stick
+  item2: minecraft/leather
+  item3: minecraft/stick
+row3:
+  item1: minecraft/stick
+  item2: minecraft/leather
+  item3: minecraft/stick
+output: minecolonies/resource_scroll

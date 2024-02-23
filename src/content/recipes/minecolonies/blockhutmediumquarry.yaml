@@ -1,62 +1,62 @@
-recipes:
-  - firstRow:
-      firstItem:
-        - minecraft/oak_planks
-        - minecraft/spruce_planks
-        - minecraft/birch_planks
-        - minecraft/jungle_planks
-        - minecraft/acacia_planks
-        - minecraft/dark_oak_planks
-        - minecraft/crimson_planks
-        - minecraft/warped_planks
-      secondItem: structurize/build_tool
-      thirdItem:
-        - minecraft/oak_planks
-        - minecraft/spruce_planks
-        - minecraft/birch_planks
-        - minecraft/jungle_planks
-        - minecraft/acacia_planks
-        - minecraft/dark_oak_planks
-        - minecraft/crimson_planks
-        - minecraft/warped_planks
-    secondRow:
-      firstItem:
-        - minecraft/oak_planks
-        - minecraft/spruce_planks
-        - minecraft/birch_planks
-        - minecraft/jungle_planks
-        - minecraft/acacia_planks
-        - minecraft/dark_oak_planks
-        - minecraft/crimson_planks
-        - minecraft/warped_planks
-      secondItem: minecraft/diamond_pickaxe
-      thirdItem:
-        - minecraft/oak_planks
-        - minecraft/spruce_planks
-        - minecraft/birch_planks
-        - minecraft/jungle_planks
-        - minecraft/acacia_planks
-        - minecraft/dark_oak_planks
-        - minecraft/crimson_planks
-        - minecraft/warped_planks
-    thirdRow:
-      firstItem:
-        - minecraft/oak_planks
-        - minecraft/spruce_planks
-        - minecraft/birch_planks
-        - minecraft/jungle_planks
-        - minecraft/acacia_planks
-        - minecraft/dark_oak_planks
-        - minecraft/crimson_planks
-        - minecraft/warped_planks
-      secondItem: minecraft/barrel
-      thirdItem:
-        - minecraft/oak_planks
-        - minecraft/spruce_planks
-        - minecraft/birch_planks
-        - minecraft/jungle_planks
-        - minecraft/acacia_planks
-        - minecraft/dark_oak_planks
-        - minecraft/crimson_planks
-        - minecraft/warped_planks
-    product: minecolonies/mediumquarry
+type: shaped
+row1:
+  item1:
+    - minecraft/oak_planks
+    - minecraft/spruce_planks
+    - minecraft/birch_planks
+    - minecraft/jungle_planks
+    - minecraft/acacia_planks
+    - minecraft/dark_oak_planks
+    - minecraft/crimson_planks
+    - minecraft/warped_planks
+  item2: structurize/build_tool
+  item3:
+    - minecraft/oak_planks
+    - minecraft/spruce_planks
+    - minecraft/birch_planks
+    - minecraft/jungle_planks
+    - minecraft/acacia_planks
+    - minecraft/dark_oak_planks
+    - minecraft/crimson_planks
+    - minecraft/warped_planks
+row2:
+  item1:
+    - minecraft/oak_planks
+    - minecraft/spruce_planks
+    - minecraft/birch_planks
+    - minecraft/jungle_planks
+    - minecraft/acacia_planks
+    - minecraft/dark_oak_planks
+    - minecraft/crimson_planks
+    - minecraft/warped_planks
+  item2: minecraft/diamond_pickaxe
+  item3:
+    - minecraft/oak_planks
+    - minecraft/spruce_planks
+    - minecraft/birch_planks
+    - minecraft/jungle_planks
+    - minecraft/acacia_planks
+    - minecraft/dark_oak_planks
+    - minecraft/crimson_planks
+    - minecraft/warped_planks
+row3:
+  item1:
+    - minecraft/oak_planks
+    - minecraft/spruce_planks
+    - minecraft/birch_planks
+    - minecraft/jungle_planks
+    - minecraft/acacia_planks
+    - minecraft/dark_oak_planks
+    - minecraft/crimson_planks
+    - minecraft/warped_planks
+  item2: minecraft/barrel
+  item3:
+    - minecraft/oak_planks
+    - minecraft/spruce_planks
+    - minecraft/birch_planks
+    - minecraft/jungle_planks
+    - minecraft/acacia_planks
+    - minecraft/dark_oak_planks
+    - minecraft/crimson_planks
+    - minecraft/warped_planks
+output: minecolonies/mediumquarry

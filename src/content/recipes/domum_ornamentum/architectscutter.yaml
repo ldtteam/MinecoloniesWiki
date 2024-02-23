@@ -1,32 +1,32 @@
-recipes:
-  - firstRow:
-      firstItem:
-      secondItem: minecraft/iron_ingot
-      thirdItem:
-    secondRow:
-      firstItem: minecraft/stone_slab
-      secondItem: minecraft/stone_slab
-      thirdItem: minecraft/stone_slab
-    thirdRow:
-      firstItem:
-        - minecraft/oak_log
-        - minecraft/spruce_log
-        - minecraft/birch_log
-        - minecraft/jungle_log
-        - minecraft/acacia_log
-        - minecraft/dark_oak_log
-      secondItem:
-        - minecraft/oak_log
-        - minecraft/spruce_log
-        - minecraft/birch_log
-        - minecraft/jungle_log
-        - minecraft/acacia_log
-        - minecraft/dark_oak_log
-      thirdItem:
-        - minecraft/oak_log
-        - minecraft/spruce_log
-        - minecraft/birch_log
-        - minecraft/jungle_log
-        - minecraft/acacia_log
-        - minecraft/dark_oak_log
-    product: domum_ornamentum/architectscutter
+type: shaped
+row1:
+  item1:
+  item2: minecraft/iron_ingot
+  item3:
+row2:
+  item1: minecraft/stone_slab
+  item2: minecraft/stone_slab
+  item3: minecraft/stone_slab
+row3:
+  item1:
+    - minecraft/oak_log
+    - minecraft/spruce_log
+    - minecraft/birch_log
+    - minecraft/jungle_log
+    - minecraft/acacia_log
+    - minecraft/dark_oak_log
+  item2:
+    - minecraft/oak_log
+    - minecraft/spruce_log
+    - minecraft/birch_log
+    - minecraft/jungle_log
+    - minecraft/acacia_log
+    - minecraft/dark_oak_log
+  item3:
+    - minecraft/oak_log
+    - minecraft/spruce_log
+    - minecraft/birch_log
+    - minecraft/jungle_log
+    - minecraft/acacia_log
+    - minecraft/dark_oak_log
+output: domum_ornamentum/architectscutter

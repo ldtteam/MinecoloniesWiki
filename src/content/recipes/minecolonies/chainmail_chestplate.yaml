@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem: minecraft/iron_ingot
-      secondItem:
-      thirdItem: minecraft/iron_ingot
-    secondRow:
-      firstItem: minecraft/iron_nugget
-      secondItem: minecraft/iron_nugget
-      thirdItem: minecraft/iron_nugget
-    thirdRow:
-      firstItem: minecraft/iron_nugget
-      secondItem: minecraft/iron_nugget
-      thirdItem: minecraft/iron_nugget
-    product: minecraft/chainmail_chestplate
+type: shaped
+row1:
+  item1: minecraft/iron_ingot
+  item2:
+  item3: minecraft/iron_ingot
+row2:
+  item1: minecraft/iron_nugget
+  item2: minecraft/iron_nugget
+  item3: minecraft/iron_nugget
+row3:
+  item1: minecraft/iron_nugget
+  item2: minecraft/iron_nugget
+  item3: minecraft/iron_nugget
+output: minecraft/chainmail_chestplate

@@ -1,14 +1,14 @@
-recipes:
-  - firstRow:
-      firstItem:
-      secondItem:
-      thirdItem:
-    secondRow:
-      firstItem: minecraft/iron_ingot
-      secondItem:
-      thirdItem: minecraft/iron_ingot
-    thirdRow:
-      firstItem: minecraft/iron_nugget
-      secondItem:
-      thirdItem: minecraft/iron_nugget
-    product: minecraft/chainmail_boots
+type: shaped
+row1:
+  item1:
+  item2:
+  item3:
+row2:
+  item1: minecraft/iron_ingot
+  item2:
+  item3: minecraft/iron_ingot
+row3:
+  item1: minecraft/iron_nugget
+  item2:
+  item3: minecraft/iron_nugget
+output: minecraft/chainmail_boots

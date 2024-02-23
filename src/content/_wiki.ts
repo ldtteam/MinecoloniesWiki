@@ -93,31 +93,58 @@ export const itemsCollection = defineCollection({
     })
 });
 
+const buildingCraftingCondition = z.object({
+  type: z.literal('building'),
+  building: reference('buildings'),
+  level: z.number()
+});
+
+const researchCraftingCondition = z.object({
+  type: z.literal('research'),
+  research: reference('research')
+});
+
+const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
 const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
 
-export const recipesCollection = defineCollection({
-  type: 'data',
-  schema: z.object({
-    recipes: z.array(
+const shapedRecipe = z.object({
+  type: z.literal('shaped'),
+  row1: z.object({
+    item1: itemOrArray,
+    item2: itemOrArray,
+    item3: itemOrArray
+  }),
+  row2: z.object({
+    item1: itemOrArray,
+    item2: itemOrArray,
+    item3: itemOrArray
+  }),
+  row3: z.object({
+    item1: itemOrArray,
+    item2: itemOrArray,
+    item3: itemOrArray
+  })
+});
+
+const customRecipe = z.object({
+  type: z.literal('custom'),
+  items: z
+    .array(
       z.object({
-        firstRow: z.object({
-          firstItem: itemOrArray,
-          secondItem: itemOrArray,
-          thirdItem: itemOrArray
-        }),
-        secondRow: z.object({
-          firstItem: itemOrArray,
-          secondItem: itemOrArray,
-          thirdItem: itemOrArray
-        }),
-        thirdRow: z.object({
-          firstItem: itemOrArray,
-          secondItem: itemOrArray,
-          thirdItem: itemOrArray
-        }),
-        product: z.string(),
+        item: itemOrArray,
         amount: z.number().default(1)
       })
     )
-  })
+    .max(9)
+});
+
+export const recipesCollection = defineCollection({
+  type: 'data',
+  schema: z.discriminatedUnion('type', [shapedRecipe, customRecipe]).and(
+    z.object({
+      output: z.string(),
+      amount: z.number().default(1),
+      conditions: z.array(craftingConditions).default([])
+    })
+  )
 });
