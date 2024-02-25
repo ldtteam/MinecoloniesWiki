@@ -2,11 +2,7 @@
 type: item
 item: structurize/tag_tool
 ---
-<div class="infobox box text-center">
-    <p style="text-align:center;"><img src="../../assets/images/icons/minecolonies/tag_tool.png" alt="Tag tool"></p>
-    <recipe>tagtool</recipe>
-</div>
-
+{% item_infobox %}
 The Tag Tool is a creative-only item used to help build custom [schematics](../../source/tutorials/schematics). It allows "tags" (specific words or phrases) to be attached to specific blocks in the schematic. Any tag can be attached to any block, but only specific ones will do something. Some building types require specific tags in order to function correctly, while others are optional.
 
 ## Using the Tag Tool
@@ -89,3 +85,4 @@ The following tags are currently implemented (more may be added from time to tim
     | `portal` | Nether Mine | Always 1    | An obsidian block in the bottom of the nether portal (with air above)                                                     |
     | `vault`  | Nether Mine | 0-1         | A block in an enclosed room that the nether miner can stand on while "away"                                               |
     | `work`   | Archery     | level-based | The block the archer squire stands on to shoot at targets (Note: If no tags are used, they look for glowstone.)           |
+{% /item_infobox %}

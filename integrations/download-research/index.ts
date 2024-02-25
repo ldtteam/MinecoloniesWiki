@@ -1,12 +1,12 @@
 import type { AstroIntegration } from 'astro';
 import { addHours } from 'date-fns';
+import { parse } from 'path';
 import { loadEnv } from 'vite';
 
 import { getCacheBuster, writeCacheBuster, writeContentCollectionFile } from './file-manager';
 import { ContentLoader } from './load-content';
 import type { ResearchEffect, ResearchItem, ResearchTree } from './types';
 import {
-  computeResearchEffectTranslation,
   isBuildingRequirement,
   isItemListRequirement,
   isItemTagRequirement,
@@ -79,14 +79,27 @@ export function downloadResearch(options?: IntegrationOptions): AstroIntegration
           'src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
         );
         for (const researchEffect of researchEffects) {
+          const researchEffectKey = parse(researchEffect.filename).name;
+
+          if (researchEffectKey.startsWith('blockhut')) {
+            writeContentCollectionFile(
+              'research_effect',
+              researchEffect.filename,
+              JSON.stringify({
+                type: 'building',
+                building: researchEffectKey.replace('blockhut', '')
+              })
+            );
+            continue;
+          }
+
           writeContentCollectionFile(
             'research_effect',
             researchEffect.filename,
             JSON.stringify({
-              format: computeResearchEffectTranslation(
-                researchTranslations.content,
-                researchEffect.filename.replace('.json', '')
-              ),
+              type: 'regular',
+              format:
+                researchTranslations.content[`com.minecolonies.research.effects.${researchEffectKey}.description`],
               levels: researchEffect.content.levels
             })
           );

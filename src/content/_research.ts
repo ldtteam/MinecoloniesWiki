@@ -20,12 +20,20 @@ export const researchTreeCollection = defineCollection({
   })
 });
 
+const regularResearchEffect = z.object({
+  type: z.literal('regular'),
+  format: z.string(),
+  levels: z.array(z.number()).optional()
+});
+
+const buildingResearchEffect = z.object({
+  type: z.literal('building'),
+  building: reference('buildings')
+});
+
 export const researchEffectCollection = defineCollection({
   type: 'data',
-  schema: z.object({
-    format: z.string(),
-    levels: z.array(z.number()).optional()
-  })
+  schema: z.discriminatedUnion('type', [regularResearchEffect, buildingResearchEffect])
 });
 
 export const researchCollection = defineCollection({

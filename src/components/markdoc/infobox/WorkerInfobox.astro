@@ -7,6 +7,7 @@ import path from 'path';
 
 import Infobox from '../../ui/infobox/Infobox.astro';
 import BuildingName from '../BuildingName.astro';
+import WorkerName from '../WorkerName.astro';
 
 type Props = MarkdocWorkerComponent;
 
@@ -57,7 +58,9 @@ const buildings = workerData.data.buildings ?? [];
 <Wrapper class="mb-3">
   <slot />
 
-  <Infobox slot="infobox" title={workerData.data.name} class="w-auto flex-shrink-1">
+  <Infobox slot="infobox" class="w-auto flex-shrink-1">
+    <WorkerName slot="title" {...Astro.props} />
+
     <div class="text-center">
       <swiper-container
         pagination

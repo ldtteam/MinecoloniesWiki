@@ -84,7 +84,11 @@ const researchesWithParent = await Promise.all(
               <td>
                 {research.data.effects ? (
                   <ul>
-                    <ResearchEffect effects={research.data.effects} />
+                    {Object.entries(research.data.effects).map(([effect, level]) => (
+                      <li>
+                        <ResearchEffect effect={effect} level={level} />
+                      </li>
+                    ))}
                   </ul>
                 ) : (
                   '-'

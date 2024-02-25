@@ -1,20 +1,23 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
 import { getEntry } from 'astro:content';
 
-import { getBuildingLink, getBuildingName } from '../../../util/building';
 import { formatForgeString, toTitleCase } from '../../../util/string';
+import BuildingName from '../BuildingName.astro';
 
 interface Props {
-  effects: NonNullable<CollectionEntry<'research'>['data']['effects']>;
+  effect: string;
+  level: number;
 }
 
-async function parseFormatString(
-  format: string,
-  effectStrength: number = 0,
-  absoluteEffectStrength: number = 0
-): Promise<string> {
+const { effect, level } = Astro.props;
+
+const effectData = await getEntry('research_effect', effect);
+if (effectData === undefined) {
+  throw new Error(`Unknown research effect '${effect}'.`);
+}
+
+function parseFormatString(format: string, effectStrength: number = 0, absoluteEffectStrength: number = 0): string {
   // Forge format specifiers
   format = formatForgeString(
     format,
@@ -24,41 +27,29 @@ async function parseFormatString(
     Math.round(absoluteEffectStrength * 100).toString()
   );
 
-  format = toTitleCase(format);
-
-  // Building format specifiers
-  const buildings = await getCollection('buildings');
-  format = format.replaceAll(/{building:(\w+)}/g, (_match, building) => {
-    const buildingData = buildings.find((f) => f.id === building);
-    if (!buildingData) {
-      return '';
-    }
-    return `<a href="${getBuildingLink(buildingData)}">${getBuildingName(buildingData, false)}</a>`;
-  });
-
-  return format;
+  return toTitleCase(format);
 }
 
-const effects = await Promise.all(
-  Object.entries(Astro.props.effects).map(async ([effect, level]) => {
-    const effectData = await getEntry('research_effect', effect);
-    if (effectData === undefined) {
-      return undefined;
-    }
+function parseRegularEffectFormat(
+  effectData: Extract<CollectionEntry<'research_effect'>['data'], { type: 'regular' }>
+) {
+  const format = effectData.format;
+  if (effectData.levels) {
+    const currentLevel = effectData.levels[level - 1];
+    const previousLevel = level === 1 ? 0 : effectData.levels[level - 2];
+    const effectStrength = currentLevel - previousLevel;
+    return parseFormatString(format, effectStrength, currentLevel);
+  }
 
-    const format = effectData.data.format;
-    if (effectData.data.levels) {
-      const currentLevel = effectData.data.levels[level - 1];
-      const previousLevel = level === 1 ? 0 : effectData.data.levels[level - 2];
-      const effectStrength = currentLevel - previousLevel;
-      return await parseFormatString(format, effectStrength, currentLevel);
-    }
-
-    return await parseFormatString(format, undefined);
-  })
-);
-
-const effectsSanitized = effects.filter((f): f is string => f !== undefined);
+  return parseFormatString(format, undefined);
+}
 ---
 
-{effectsSanitized.map((effect) => <li set:html={effect} />)}
+{effectData.data.type === 'regular' && parseRegularEffectFormat(effectData.data)}
+{
+  effectData.data.type === 'building' && (
+    <span>
+      Unlocks <BuildingName name={effectData.data.building.id} />
+    </span>
+  )
+}

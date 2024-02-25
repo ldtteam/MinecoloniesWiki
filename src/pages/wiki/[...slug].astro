@@ -1,6 +1,6 @@
 ---
 import WikiNavigation from '@components/navbar/WikiNavigation.astro';
-import Layout from '@layouts/Default.astro';
+import Layout, { type TitleVersion } from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
 
 import { getWikiTitle } from '../../util/wiki';
@@ -15,11 +15,18 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { slug } = Astro.params;
-const title = await getWikiTitle(entry);
+
+const versions = await getCollection('versions');
+const titleVersions = await Promise.all<TitleVersion>(
+  versions.map(async (version) => ({
+    version,
+    title: await getWikiTitle(version, entry)
+  }))
+);
 const { Content } = await entry.render();
 ---
 
-<Layout title={title} titleFormat={(title) => `${title} | MineColonies Wiki`}>
+<Layout title={titleVersions} titleAffix="MineColonies Wiki">
   <WikiNavigation slot="after-nav" />
 
   <Content frontmatter={entry.data} />

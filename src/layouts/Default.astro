@@ -7,23 +7,37 @@ import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
-import { getSortedVersions } from '@utils/version';
+import VersionContent from '@components/version/VersionContent.astro';
+import { getNewestVersion } from '@utils/version';
+import type { CollectionEntry } from 'astro:content';
 import { ViewTransitions } from 'astro:transitions';
 
-interface Props {
+export interface TitleVersion {
+  version: CollectionEntry<'versions'>;
   title: string;
-  titleFormat?: (title: string) => string;
+}
+
+interface Props {
+  title: TitleVersion[] | string;
+  titleAffix?: string;
   header?: string;
   fluid?: boolean;
 }
 
-const { title, titleFormat, header = title, fluid = false } = Astro.props;
-const titleFormatted = titleFormat ? titleFormat(title) : `${title} | MineColonies |`;
+const { title, titleAffix = 'MineColonies', header = title, fluid = false } = Astro.props;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
 
-const latestVersions = (await getSortedVersions())[0];
+const newestVersion = await getNewestVersion();
+
+let versionTitleData: Record<string, string> = {};
+if (typeof title === 'object') {
+  versionTitleData = title.reduce<Record<string, string>>((previousValue, currentValue) => {
+    previousValue['data-version-' + currentValue.version.data.order] = currentValue.title;
+    return previousValue;
+  }, {});
+}
 ---
 
 <!doctype html>
@@ -39,30 +53,53 @@ const latestVersions = (await getSortedVersions())[0];
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-    <Meta title={titleFormatted} />
+    <title property="og-title">
+      {typeof title === 'string' ? title : title.find((f) => f.version.id === newestVersion.id)?.title} | {titleAffix}
+    </title>
 
-    <title>{titleFormatted}</title>
+    <Meta />
+
+    <script data-title-affix={titleAffix} {...versionTitleData} is:inline>
+      const titleData = document.currentScript.dataset;
+      const titleAffix = titleData.titleAffix ?? 'Minecolonies';
+
+      const versionObserver = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'data-version') {
+            const newTitle = titleData[`version-${mutation.target.dataset.version}`];
+            document.title = `${newTitle} | ${titleAffix}`;
+          }
+        }
+      });
+
+      function setup() {
+        versionObserver.observe(document.body, { attributes: true });
+      }
+
+      document.addEventListener('astro:after-swap', setup);
+      document.addEventListener('DOMContentLoaded', setup);
+    </script>
 
     <ViewTransitions />
   </head>
-  <body data-latest-version={latestVersions.data.order}>
+  <body data-latest-version={newestVersion.data.order}>
     <PageRoot isHome={isHome}>
       <div class="page_root p-5">
         <Header isWiki={isWikiPage} />
         <Navigation />
         <slot name="after-nav" />
 
-        <main
-          data-pagefind-body
-          transition:animate="fade"
-          class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}
-        >
+        <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
           <h1 data-pagefind-meta="title" class="page_header text-center">
-            {header}
+            {
+              typeof header === 'string'
+                ? header
+                : header.map((version) => <VersionContent versions={[version.version]}>{version.title}</VersionContent>)
+            }
           </h1>
           <hr />
 
-          <slot />
+          <slot data-pagefind-body />
         </main>
         <Footer />
       </div>

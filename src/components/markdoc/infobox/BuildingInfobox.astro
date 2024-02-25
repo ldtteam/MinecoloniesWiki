@@ -3,9 +3,11 @@ import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
 import { getBuildingData, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
+import { getNewestVersion } from '@utils/version';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
+import BuildingName from '../BuildingName.astro';
 import WorkerName from '../WorkerName.astro';
 
 type Props = MarkdocBuildingComponent;
@@ -13,7 +15,8 @@ type Props = MarkdocBuildingComponent;
 const { buildingId } = Astro.props;
 const buildingData = await getBuildingData(buildingId ?? '');
 
-const importedImage = await import(`../../../assets/images/wiki/buildings/${buildingId}.png`).then((f) => f.default);
+const buildingImage = await import(`../../../assets/images/wiki/buildings/${buildingId}.png`).then((f) => f.default);
+const buildingImageAlt = `${await getBuildingName(await getNewestVersion(), buildingData, false)} hut block`;
 
 const research = (
   await getCollection('research', (filter) =>
@@ -30,14 +33,11 @@ const recipes = buildingData.data.recipes ?? [];
 <Wrapper class="mb-3">
   <slot />
 
-  <Infobox slot="infobox" title={buildingData.data.name} class="flex-shrink-1">
+  <Infobox slot="infobox" class="flex-shrink-1">
+    <BuildingName slot="title" {...Astro.props} />
+
     <div class="text-center">
-      <Image
-        data-pagefind-meta="image[src], image_alt[alt]"
-        src={importedImage}
-        alt={`${getBuildingName(buildingData, false)} hut block`}
-        width={300}
-      />
+      <Image data-pagefind-meta="image[src], image_alt[alt]" src={buildingImage} alt={buildingImageAlt} width={300} />
     </div>
 
     {

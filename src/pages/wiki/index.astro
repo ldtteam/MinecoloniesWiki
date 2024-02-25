@@ -3,18 +3,11 @@ import WikiNavigation from '@components/navbar/WikiNavigation.astro';
 import Layout from '@layouts/Default.astro';
 import { getEntry } from 'astro:content';
 
-import { getWikiTitle } from '../../util/wiki';
-
 const entry = await getEntry('wiki', 'index');
-const title = await getWikiTitle(entry);
 const { Content } = await entry.render();
 ---
 
-<Layout
-  title={title}
-  titleFormat={(title) => `${title} | MineColonies Wiki`}
-  header="Welcome to the MineColonies Wiki!"
->
+<Layout title="Wiki Home" titleAffix="MineColonies Wiki" header="Welcome to the MineColonies Wiki!">
   <WikiNavigation slot="after-nav" />
 
   <Content frontmatter={entry.data} />

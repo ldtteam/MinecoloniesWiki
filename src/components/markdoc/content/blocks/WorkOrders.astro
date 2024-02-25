@@ -1,25 +1,15 @@
 ---
+import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import { getBuildingData, getBuildingName } from '@utils/building';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
-
-const { name } = Astro.props;
-
-const buildingData = await getBuildingData(name);
-
-const content = `This page shows you what work orders have been assigned to this ${getBuildingName(
-  buildingData,
-  false
-)}, along with the distance away from the building. You can assign or cancel work orders here.`;
 ---
 
-<BuildingContentBlock
-  {...Astro.props}
-  header="workorders"
-  imageKey="workorders"
-  imageAlt="Work orders"
-  markdownContent={content}
-/>
+<BuildingContentBlock {...Astro.props} header="workorders" imageKey="workorders" imageAlt="Work orders">
+  <p>
+    This page shows you what work orders have been assigned to this <BuildingName {...Astro.props} />, along with the
+    distance away from the building. You can assign or cancel work orders here.
+  </p>
+</BuildingContentBlock>

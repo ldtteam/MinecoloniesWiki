@@ -1,5 +1,7 @@
 ---
+import VersionContent from '@components/version/VersionContent.astro';
 import { getBuildingData, getBuildingLink, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
+import { getCollection } from 'astro:content';
 
 interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
@@ -8,12 +10,21 @@ interface Props extends MarkdocBuildingComponent {
 const { buildingId, name, plural = false } = Astro.props;
 
 const buildingData = await getBuildingData(name);
+const versions = await getCollection('versions');
+
+const link = getBuildingLink(buildingData);
+const versionedContent = await Promise.all(
+  versions.map(async (version) => ({
+    version,
+    name: await getBuildingName(version, buildingData, plural)
+  }))
+);
 ---
 
 {
-  buildingId !== buildingData.id ? (
-    <a href={getBuildingLink(buildingData)}>{getBuildingName(buildingData, plural)}</a>
-  ) : (
-    <span>{getBuildingName(buildingData, plural)}</span>
-  )
+  versionedContent.map(async (version) => (
+    <VersionContent versions={[version.version]} inline>
+      {buildingId !== buildingData.id ? <a href={link}>{version.name}</a> : <span>{version.name}</span>}
+    </VersionContent>
+  ))
 }

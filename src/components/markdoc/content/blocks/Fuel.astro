@@ -1,32 +1,23 @@
 ---
+import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import { getBuildingData, getBuildingName } from '@utils/building';
-import { getWorkerData, getWorkerMdLink } from '@utils/workers';
+import WorkerName from '@components/markdoc/WorkerName.astro';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
-
-const { name } = Astro.props;
-
-const buildingData = await getBuildingData(name);
-const courierData = await getWorkerData('courier');
-
-const content = `Listed here are items that can be used by the ${getBuildingName(
-  buildingData,
-  false
-)} as fuel in their furnaces.
-Simply turn on any that you want your ${getBuildingName(buildingData, false)} to use, and a ${getWorkerMdLink(
-  courierData,
-  false
-)} will deliver those items to the ${getBuildingName(
-  buildingData,
-  false
-)} when they need fuel. All items are **off** by default.
-
-There are also two controls on the page:
-- The black box at the top is a search field.
-- Reset to default allows you to reset everything to **off**.`;
 ---
 
-<BuildingContentBlock {...Astro.props} header="fuel" imageKey="fuel" imageAlt="Fuel list" markdownContent={content} />
+<BuildingContentBlock {...Astro.props} header="fuel" imageKey="fuel" imageAlt="Fuel list">
+  <p>Listed here are items that can be used by the <BuildingName {...Astro.props} /> as fuel in their furnaces.</p>
+  <p>
+    Simply turn on any that you want your <BuildingName {...Astro.props} /> to use, and a <WorkerName name="courier" />
+     will deliver those items to the <BuildingName {...Astro.props} /> when they need fuel. All items are <b>off</b> by
+    default.
+  </p>
+  <p>There are also two controls on the page:</p>
+  <ul>
+    <li>The black box at the top is a search field.</li>
+    <li>Reset to default allows you to reset everything to <b>off</b></li>
+  </ul>
+</BuildingContentBlock>

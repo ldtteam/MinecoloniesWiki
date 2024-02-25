@@ -3,6 +3,6 @@ plural: Houses
 recipes:
   - minecolonies/blockhutresidence
 overrides:
-  11900:
+  - version: "1.19"
     name: Residence
     plural: Residences

@@ -26,7 +26,3 @@ export function getWorkerName(worker: CollectionEntry<'workers'>, plural: boolea
 export function getWorkerLink(worker: CollectionEntry<'workers'>) {
   return `/wiki/workers/${worker.id}`;
 }
-
-export function getWorkerMdLink(worker: CollectionEntry<'workers'>, plural: boolean) {
-  return `[${getWorkerName(worker, plural)}](${getWorkerLink(worker)})`;
-}

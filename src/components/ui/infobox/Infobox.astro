@@ -1,20 +1,23 @@
 ---
 import Card from '@components/ui/Card.astro';
-import VersionedItemName from '@components/version/VersionedItemName.astro';
-import type { ItemData } from '@utils/items';
 
 interface Props {
-  title: string | ItemData;
   expand?: boolean;
   class?: string;
 }
 
-const { title, expand = false, class: cssClass } = Astro.props;
+const { expand = false, class: cssClass } = Astro.props;
 ---
 
 <div class={cssClass}>
   <Card padding={2} class={expand ? 'h-100' : ''}>
-    <h2 class="text-center">{typeof title === 'string' ? title : <VersionedItemName data={title} link={false} />}</h2>
+    {
+      Astro.slots.has('title') && (
+        <h2 class="text-center">
+          <slot name="title" />
+        </h2>
+      )
+    }
 
     <hr />
 

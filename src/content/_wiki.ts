@@ -40,30 +40,44 @@ export const wikiCategories = defineCollection({
   })
 });
 
+const buildingInfo = z.object({
+  name: z.string(),
+  plural: z.string(),
+  workers: reference('workers').array().optional(),
+  recipes: z.array(z.string()).optional(),
+  settings: z
+    .array(
+      z.object({
+        name: z.string(),
+        description: z.string(),
+        options: z
+          .array(
+            z.object({
+              name: z.string(),
+              description: z.string()
+            })
+          )
+          .optional()
+      })
+    )
+    .optional()
+});
+
 export const buildingsCollection = defineCollection({
   type: 'data',
-  schema: z.object({
-    name: z.string(),
-    plural: z.string(),
-    workers: reference('workers').array().optional(),
-    recipes: z.array(z.string()).optional(),
-    settings: z
-      .array(
-        z.object({
-          name: z.string(),
-          description: z.string(),
-          options: z
-            .array(
-              z.object({
-                name: z.string(),
-                description: z.string()
-              })
-            )
-            .optional()
-        })
-      )
-      .optional()
-  })
+  schema: buildingInfo.and(
+    z.object({
+      overrides: z
+        .array(
+          buildingInfo.partial().and(
+            z.object({
+              version: reference('versions')
+            })
+          )
+        )
+        .optional()
+    })
+  )
 });
 
 export const workersCollection = defineCollection({

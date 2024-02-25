@@ -1,5 +1,8 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
+import { getBuildingData, getBuildingName } from './building';
+import { getWorkerData } from './workers';
+
 interface WikiPageEntry {
   type: 'page';
   name: string;
@@ -32,32 +35,24 @@ function isSubCategory(entry: WikiSubCategoryEntry | WikiPageEntry): entry is Wi
   return entry.type === 'subcategory';
 }
 
-export async function getWikiTitle(entry: CollectionEntry<'wiki'>) {
+export async function getWikiTitle(version: CollectionEntry<'versions'>, entry: CollectionEntry<'wiki'>) {
   if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
     return entry.data.title;
   } else if (entry.data.type === 'item') {
     const itemData = await getEntry('items', entry.data.item.id);
     return itemData.data.name;
   } else if (entry.data.type === 'building') {
-    const buildingData = await getEntry('buildings', entry.data.building.id);
-    if (buildingData === undefined) {
-      throw new Error(`Building entry "${entry.data.building}" does not exist.`);
-    }
-
-    return buildingData.data.name;
+    const buildingData = await getBuildingData(entry.data.building.id);
+    return await getBuildingName(version, buildingData);
   } else if (entry.data.type === 'worker') {
-    const workerData = await getEntry('workers', entry.data.worker.id);
-    if (workerData === undefined) {
-      throw new Error(`Worker entry "${entry.data.worker}" does not exist.`);
-    }
-
+    const workerData = await getWorkerData(entry.data.worker.id);
     return workerData.data.name;
   }
 
   return entry.id;
 }
 
-export async function getWikiPages(): Promise<WikiPages> {
+export async function getWikiPages(version: CollectionEntry<'versions'>): Promise<WikiPages> {
   const wikiPages = await getCollection('wiki', (page) => page.slug.indexOf('/') > 0);
   const wikiCategories = (await getCollection('wiki_categories')).sort((a, b) => a.data.order - b.data.order);
 
@@ -106,7 +101,7 @@ export async function getWikiPages(): Promise<WikiPages> {
     } else {
       distributedPages[category.id].pages.push({
         type: 'page',
-        name: await getWikiTitle(entry),
+        name: await getWikiTitle(version, entry),
         slug: entry.slug
       });
     }

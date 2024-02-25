@@ -1,19 +1,14 @@
 ---
+import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import { getBuildingData, getBuildingName } from '@utils/building';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
-
-const { name } = Astro.props;
-
-const buildingData = await getBuildingData(name);
-
-const content = `This tab shows you any requests the ${getBuildingName(
-  buildingData,
-  false
-)} is working on, and where it is going.`;
 ---
 
-<BuildingContentBlock {...Astro.props} header="tasks" imageKey="tasks" imageAlt="Tasks" markdownContent={content} />
+<BuildingContentBlock {...Astro.props} header="tasks" imageKey="tasks" imageAlt="Tasks">
+  <p>
+    This tab shows you any requests the <BuildingName {...Astro.props} /> is working on, and where it is going.
+  </p>
+</BuildingContentBlock>

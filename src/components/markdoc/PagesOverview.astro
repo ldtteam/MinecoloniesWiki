@@ -1,32 +1,44 @@
 ---
 import Button from '@components/ui/Button.astro';
+import VersionContent from '@components/version/VersionContent.astro';
 import { getWikiPages } from '@utils/wiki';
+import { getCollection } from 'astro:content';
 
-const wikiPages = await getWikiPages();
+const versions = await getCollection('versions');
+const wikiPagesPerVersion = await Promise.all(
+  versions.map(async (version) => ({
+    version,
+    wikiPages: await getWikiPages(version)
+  }))
+);
 ---
 
-<div class="grid" style={`--bs-columns: ${Object.entries(wikiPages).length}`}>
-  {
-    Object.entries(wikiPages).map(([_, categoryInfo]) => (
-      <div class="col col-md col-sm-12 text-center d-flex flex-column py-1">
-        <Button text={categoryInfo.type.data.name} class="text-nowrap mb-2" component="h3" />
-        {categoryInfo.pages.map((page, idx) => {
-          if (page.type === 'page') {
-            return <a href={`/wiki/${page.slug}`}>{page.name}</a>;
-          } else if (page.type === 'subcategory') {
-            return (
-              <>
-                <p class:list={['m-0', idx === 0 ? '' : 'mt-3']}>{page.name}</p>
-                {page.pages.map((subPage) => (
-                  <a href={`/wiki/${subPage.slug}`}>{subPage.name}</a>
-                ))}
-              </>
-            );
-          }
+{
+  wikiPagesPerVersion.map(({ version, wikiPages }) => (
+    <VersionContent versions={[version]}>
+      <div class="grid" style={`--bs-columns: ${Object.entries(wikiPages).length}`}>
+        {Object.entries(wikiPages).map(([_, categoryInfo]) => (
+          <div class="col col-md col-sm-12 text-center d-flex flex-column py-1">
+            <Button text={categoryInfo.type.data.name} class="text-nowrap mb-2" component="h3" />
+            {categoryInfo.pages.map((page, idx) => {
+              if (page.type === 'page') {
+                return <a href={`/wiki/${page.slug}`}>{page.name}</a>;
+              } else if (page.type === 'subcategory') {
+                return (
+                  <>
+                    <p class:list={['m-0', idx === 0 ? '' : 'mt-3']}>{page.name}</p>
+                    {page.pages.map((subPage) => (
+                      <a href={`/wiki/${subPage.slug}`}>{subPage.name}</a>
+                    ))}
+                  </>
+                );
+              }
 
-          return undefined;
-        })}
+              return undefined;
+            })}
+          </div>
+        ))}
       </div>
-    ))
-  }
-</div>
+    </VersionContent>
+  ))
+}

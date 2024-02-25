@@ -83,12 +83,17 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
 
     const parsedItemName = itemData.displayName.replaceAll(' ', '_');
 
-    const isStaticImage =
-      (
-        await fetch(`https://minecraft.wiki/images/Invicon_${parsedItemName}.png`, {
-          method: 'HEAD'
-        })
-      ).status === 200;
+    let isStaticImage: boolean;
+    try {
+      isStaticImage =
+        (
+          await fetch(`https://minecraft.wiki/images/Invicon_${parsedItemName}.png`, {
+            method: 'HEAD'
+          })
+        ).status === 200;
+    } catch {
+      isStaticImage = true;
+    }
 
     const image = await getImage({
       src: `https://minecraft.wiki/images/Invicon_${parsedItemName}.${isStaticImage ? 'png' : 'gif'}`,

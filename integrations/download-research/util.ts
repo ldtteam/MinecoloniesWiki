@@ -6,9 +6,7 @@ import type {
   ResearchRequirement
 } from './types';
 
-export function isBuildingRequirement(
-  requirement: ResearchRequirement
-): requirement is BuildingRequirement {
+export function isBuildingRequirement(requirement: ResearchRequirement): requirement is BuildingRequirement {
   return Object.keys(requirement).includes('building');
 }
 
@@ -18,24 +16,10 @@ export function isMandatoryBuildingRequirement(
   return Object.keys(requirement).includes('mandatory-building');
 }
 
-export function isItemListRequirement(
-  requirement: ResearchRequirement
-): requirement is ItemListRequirement {
-  return requirement.type === "minecolonies:item_list";
+export function isItemListRequirement(requirement: ResearchRequirement): requirement is ItemListRequirement {
+  return requirement.type === 'minecolonies:item_list';
 }
 
-export function isItemTagRequirement(
-  requirement: ResearchRequirement
-): requirement is ItemTagRequirement {
-  return requirement.type === "minecolonies:item_tag";
-}
-
-export function computeResearchEffectTranslation(
-  translations: Record<string, string>,
-  key: string
-) {
-  if (key.startsWith('blockhut')) {
-    return `Unlocks {building:${key.replace('blockhut', '')}}`;
-  }
-  return translations[`com.minecolonies.research.effects.${key}.description`];
+export function isItemTagRequirement(requirement: ResearchRequirement): requirement is ItemTagRequirement {
+  return requirement.type === 'minecolonies:item_tag';
 }

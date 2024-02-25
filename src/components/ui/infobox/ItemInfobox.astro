@@ -1,4 +1,5 @@
 ---
+import ItemName from '@components/markdoc/ItemName.astro';
 import VersionContent from '@components/version/VersionContent.astro';
 import { getItemData } from '@utils/items';
 import { Image } from 'astro:assets';
@@ -19,7 +20,9 @@ const itemData = await getItemData(item);
 const recipeData = await getEntry('recipes', item);
 ---
 
-<Infobox title={itemData} class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
+<Infobox class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
+  <ItemName slot="title" data={itemData} />
+
   <div class="text-center">
     {
       itemData.data.map((item) => (

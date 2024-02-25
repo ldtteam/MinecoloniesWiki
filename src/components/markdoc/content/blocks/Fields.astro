@@ -1,31 +1,46 @@
 ---
+import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import { getBuildingData, getBuildingName } from '@utils/building';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
-
-const { name } = Astro.props;
-
-const buildingData = await getBuildingData(name);
-
-const content = `- **Assign fields to worker:** Automatic by default. Here you can define if you prefer to manually assign the fields for this ${getBuildingName(
-  buildingData,
-  false
-)}.
-- **Fields:** This is the list of recognized fields (recognizable by the crop in its GUI and its distance). This button can show in multiple different ways:
-    - If the button shows a red X, it means the field is assigned to the ${getBuildingName(buildingData, false)}
-        - If it's not greyed out, it may be assigned from the building
-        - If it's greyed out, it may not be assigned from the building, that can happen due to multiple reasons
-            - The fields are assigned automatically
-            - The field has a different reason why it may not be assigned, like a limit of fields reached (hover over the button)
-    - If the button shows a green checkmark, it means the field is unassigned to the ${getBuildingName(
-      buildingData,
-      false
-    )}
-        - If it's greyed out, it means it may not be unassigned because the fields are being assigned automatically
-        - If it is not greyed out, it may be assigned`;
 ---
 
-<BuildingContentBlock {...Astro.props} header="fields" imageKey="fields" imageAlt="Fields" markdownContent={content} />
+<BuildingContentBlock {...Astro.props} header="fields" imageKey="fields" imageAlt="Fields">
+  <ul>
+    <li>
+      <b>Assign fields to worker:</b> Automatic by default. Here you can define if you prefer to manually assign the
+      fields for this <BuildingName {...Astro.props} />.
+    </li>
+    <li>
+      <b>Fields:</b> This is the list of recognized fields (recognizable by the crop in its GUI and its distance). This
+      button can show in multiple different ways:
+    </li>
+    <ul>
+      <li>
+        If the button shows a red X, it means the field is assigned to the <BuildingName {...Astro.props} />
+      </li>
+      <ul>
+        <li>If it's not greyed out, it may be assigned from the building</li>
+        <li>If it's greyed out, it may not be assigned from the building, that can happen due to multiple reasons</li>
+        <ul>
+          <li>The fields are assigned automatically</li>
+          <li>
+            The field has a different reason why it may not be assigned, like a limit of fields reached (hover over the
+            button)
+          </li>
+        </ul>
+      </ul>
+      <li>
+        If the button shows a green checkmark, it means the field is unassigned to the <BuildingName {...Astro.props} />
+      </li>
+      <ul>
+        <li>
+          If it's greyed out, it means it may not be unassigned because the fields are being assigned automatically
+        </li>
+        <li>If it is not greyed out, it may be assigned</li>
+      </ul>
+    </ul>
+  </ul>
+</BuildingContentBlock>
