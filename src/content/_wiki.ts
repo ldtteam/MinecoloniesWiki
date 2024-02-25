@@ -80,22 +80,36 @@ export const buildingsCollection = defineCollection({
   )
 });
 
+const workerInfo = z.object({
+  name: z.string(),
+  plural: z.string(),
+  type: z.enum(['animals', 'crafter', 'gatherer', 'guard', 'other']),
+  traits: z.object({
+    primary: z.string().optional(),
+    secondary: z.string().optional()
+  }),
+  effects: z.object({
+    primary: z.string().optional(),
+    secondary: z.string().optional()
+  }),
+  buildings: reference('buildings').array().optional()
+});
+
 export const workersCollection = defineCollection({
   type: 'data',
-  schema: z.object({
-    name: z.string(),
-    plural: z.string(),
-    type: z.enum(['animals', 'crafter', 'gatherer', 'guard', 'other']),
-    traits: z.object({
-      primary: z.string().optional(),
-      secondary: z.string().optional()
-    }),
-    effects: z.object({
-      primary: z.string().optional(),
-      secondary: z.string().optional()
-    }),
-    buildings: reference('buildings').array().optional()
-  })
+  schema: workerInfo.and(
+    z.object({
+      overrides: z
+        .array(
+          workerInfo.partial().and(
+            z.object({
+              version: reference('versions')
+            })
+          )
+        )
+        .optional()
+    })
+  )
 });
 
 export const itemsCollection = defineCollection({

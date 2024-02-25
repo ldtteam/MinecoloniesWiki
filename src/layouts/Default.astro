@@ -38,6 +38,17 @@ if (typeof title === 'object') {
     return previousValue;
   }, {});
 }
+
+const headerText =
+  typeof header === 'string'
+    ? header
+    : header.reduce<Record<string, CollectionEntry<'versions'>[]>>((previousValue, currentValue) => {
+        if (previousValue[currentValue.title] === undefined) {
+          previousValue[currentValue.title] = [];
+        }
+        previousValue[currentValue.title].push(currentValue.version);
+        return previousValue;
+      }, {});
 ---
 
 <!doctype html>
@@ -92,9 +103,11 @@ if (typeof title === 'object') {
         <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
           <h1 data-pagefind-meta="title" class="page_header text-center">
             {
-              typeof header === 'string'
-                ? header
-                : header.map((version) => <VersionContent versions={[version.version]}>{version.title}</VersionContent>)
+              typeof headerText === 'string'
+                ? headerText
+                : Object.entries(headerText).map(([header, versions]) => (
+                    <VersionContent versions={versions}>{header}</VersionContent>
+                  ))
             }
           </h1>
           <hr />

@@ -1,5 +1,7 @@
 import type { CollectionEntry } from 'astro:content';
 
+import { isVersionHigherOrSame } from './version';
+
 export interface MarkdocWorkerComponent {
   workerId?: string;
   name: string;
@@ -19,8 +21,29 @@ export async function getWorkerData(worker: string) {
   return workerData;
 }
 
-export function getWorkerName(worker: CollectionEntry<'workers'>, plural: boolean) {
-  return plural ? worker.data.plural : worker.data.name;
+export async function getWorkerName(
+  version: CollectionEntry<'versions'>,
+  worker: CollectionEntry<'workers'>,
+  plural = false
+) {
+  let name = plural ? worker.data.plural : worker.data.name;
+  if (worker.data.overrides) {
+    for (const versionName of worker.data.overrides) {
+      if (versionName.name || versionName.plural) {
+        if (await isVersionHigherOrSame(version, versionName.version.id)) {
+          if (!plural && versionName.name) {
+            name = versionName.name;
+            break;
+          }
+          if (plural && versionName.plural) {
+            name = versionName.plural;
+            break;
+          }
+        }
+      }
+    }
+  }
+  return name;
 }
 
 export function getWorkerLink(worker: CollectionEntry<'workers'>) {

@@ -1,7 +1,7 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getBuildingData, getBuildingName } from './building';
-import { getWorkerData } from './workers';
+import { getWorkerData, getWorkerName } from './workers';
 
 interface WikiPageEntry {
   type: 'page';
@@ -46,7 +46,7 @@ export async function getWikiTitle(version: CollectionEntry<'versions'>, entry: 
     return await getBuildingName(version, buildingData);
   } else if (entry.data.type === 'worker') {
     const workerData = await getWorkerData(entry.data.worker.id);
-    return workerData.data.name;
+    return await getWorkerName(version, workerData);
   }
 
   return entry.id;
