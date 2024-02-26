@@ -15,6 +15,9 @@ export default defineConfig({
   image: {
     domains: ['minecraft.wiki']
   },
+  redirects: {
+    '/source/[...slug]': '/wiki/[...slug]'
+  },
   integrations: [
     svelte(),
     icon({

@@ -80,3 +80,15 @@
     margin-bottom: 0 !important;
   }
 }
+
+.table {
+  th,
+  td {
+    white-space: nowrap;
+  }
+
+  th:last-child,
+  td:last-child {
+    white-space: initial;
+  }
+}

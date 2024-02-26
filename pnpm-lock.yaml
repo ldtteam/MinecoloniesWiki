@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@astrojs/check':
-    specifier: ^0.5.5
-    version: 0.5.5(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
+    specifier: ^0.5.6
+    version: 0.5.6(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
   '@astrojs/markdoc':
     specifier: ^0.9.0
-    version: 0.9.0(astro@4.4.2)
+    version: 0.9.0(astro@4.4.5)
   '@astrojs/markdown-remark':
     specifier: ^4.2.1
     version: 4.2.1
@@ -18,8 +18,8 @@ dependencies:
     specifier: ^3.1.1
     version: 3.1.1
   '@astrojs/svelte':
-    specifier: ^5.0.3
-    version: 5.0.3(astro@4.4.2)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10)
+    specifier: ^5.1.0
+    version: 5.1.0(astro@4.4.5)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10)
   '@barnabask/astro-minisearch':
     specifier: ^2.1.1
     version: 2.1.1
@@ -51,8 +51,8 @@ dependencies:
     specifier: ^20.0.2
     version: 20.0.2
   astro:
-    specifier: ^4.4.2
-    version: 4.4.2(sass@1.69.5)(typescript@5.2.2)
+    specifier: ^4.4.5
+    version: 4.4.5(sass@1.69.5)(typescript@5.2.2)
   astro-icon:
     specifier: ^1.0.0-next.2
     version: 1.0.0-next.2
@@ -151,13 +151,13 @@ packages:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: false
 
-  /@astrojs/check@0.5.5(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-05LjyUB14Cv2mkLNqY4r2igI2eu0bq/HcKCfFNIoBPLyNW7VUDr9tciD9VJXXT3s0e6JHneIs6bQW5ipjmaRcw==}
+  /@astrojs/check@0.5.6(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-i7j5ogoSg/Bu2NV5zVvwCo9R4kGWXWsJDejxpCu9F7iNNlR333u8EwpP4bpeKASDtjOA1rXKo9ogUTEVlIAHqA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
-      '@astrojs/language-server': 2.7.5(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
+      '@astrojs/language-server': 2.7.6(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       chokidar: 3.5.3
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -191,8 +191,8 @@ packages:
     resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
     dev: false
 
-  /@astrojs/language-server@2.7.5(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-iMfZ3UaqTgIL+z/eUDOppRa1bGUAteWRihbWq5mGAgvr/hu384ZXUKJcqV3BBux0MBsRXwjxzrC2dJu9IpAaoA==}
+  /@astrojs/language-server@2.7.6(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-NhMSmMAuKBMXnvpfn9eYPR7R6zOasAjRb+ta8L+rCHHuKzUc0lBgAF5M6rx01FJqlpGqeqao13eYt4287Ze49g==}
     hasBin: true
     peerDependencies:
       prettier: ^3.0.0
@@ -225,7 +225,7 @@ packages:
       - typescript
     dev: false
 
-  /@astrojs/markdoc@0.9.0(astro@4.4.2):
+  /@astrojs/markdoc@0.9.0(astro@4.4.5):
     resolution: {integrity: sha512-nqB/4jESJ/7703hULrb4wDFN7w8zQpkyzNgLh6hCKAhoM88ofJMmGxn946haBW2BRL0OsN3INNCuo1XxsJKrQg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -234,7 +234,7 @@ packages:
       '@astrojs/internal-helpers': 0.2.1
       '@astrojs/prism': 3.0.0
       '@markdoc/markdoc': 0.3.5
-      astro: 4.4.2(sass@1.69.5)(typescript@5.2.2)
+      astro: 4.4.5(sass@1.69.5)(typescript@5.2.2)
       esbuild: 0.19.10
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -281,15 +281,15 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/svelte@5.0.3(astro@4.4.2)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10):
-    resolution: {integrity: sha512-6TUBRUxmsEczKPBT6oDUAfvzuFCmITuhZfKPT5ZtOOyj9XOVnEnj/Iobd3ajKUbpWNYX7qZVAd1KMkmJc1Nhsg==}
+  /@astrojs/svelte@5.1.0(astro@4.4.5)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10):
+    resolution: {integrity: sha512-1f0wkFkHs+1vcCliaEB1j9SYEU/n5ZYTAASv5Rkq6nvjNFRrnPuXLQCYIYFqdGGqFm6UPdgKpJBFbFFeQlr4yA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       astro: ^4.0.0
-      svelte: ^4.0.0 || ^5.0.0-next.1
+      svelte: ^4.0.0 || ^5.0.0-next.56
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.10)
-      astro: 4.4.2(sass@1.69.5)(typescript@5.2.2)
+      astro: 4.4.5(sass@1.69.5)(typescript@5.2.2)
       svelte: 4.2.8
       svelte2tsx: 0.6.27(svelte@4.2.8)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -2084,8 +2084,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.4.2(sass@1.69.5)(typescript@5.2.2):
-    resolution: {integrity: sha512-r1djG61ABvZ9n73vaTW6nTKnMvWY1LQhPpBtzoA2OI2RAk/ptzsqK9ozkAG1qXO2bW3NLJi6pfMxxpngNAALyQ==}
+  /astro@4.4.5(sass@1.69.5)(typescript@5.2.2):
+    resolution: {integrity: sha512-ccat42P5qr281JExywVsK/BLeKgwSL+oLxJP195s4Wvj3nL32djw+WNJNctuDDTJ5XWgvPdHZjBtSDNO5OgagQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
