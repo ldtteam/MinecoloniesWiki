@@ -1,4 +1,4 @@
-import type { ImageMetadata } from 'astro';
+import { type ImageMetadata, type ImageOutputFormat } from 'astro';
 import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import minecraftData, { type Item } from 'minecraft-data';
@@ -16,7 +16,8 @@ interface ItemFetcherResponse {
 
 type ItemFetcher = (
   version: CollectionEntry<'versions'>,
-  item: ParsedItemId
+  item: ParsedItemId,
+  requireImages: boolean
 ) => Promise<ItemFetcherResponse | undefined>;
 
 interface ItemVersionData extends ParsedItemId {
@@ -31,7 +32,7 @@ export interface ItemData extends ParsedItemId {
   data: ItemVersionData[];
 }
 
-const fromWikiFetcher: ItemFetcher = async (_version, item) => {
+const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
   const itemPath = item.namespace + '/' + item.id;
   const itemPage = await getCollection('wiki', (page) => {
     if (page.data.type === 'item' && page.data.item.id === itemPath) {
@@ -49,7 +50,7 @@ const fromWikiFetcher: ItemFetcher = async (_version, item) => {
       const itemData = await getEntry('items', page.data.item.id);
       return {
         name: itemData.data.name,
-        icons: itemData.data.icons,
+        icons: requireImages ? itemData.data.icons : [],
         link: '/wiki/items/' + item
       };
     } else if (page.data.type === 'item-combined') {
@@ -57,7 +58,7 @@ const fromWikiFetcher: ItemFetcher = async (_version, item) => {
       const itemData = await getEntry('items', item.id);
       return {
         name: itemData.data.name,
-        icons: itemData.data.icons,
+        icons: requireImages ? itemData.data.icons : [],
         link: '/wiki/items/' + item
       };
     }
@@ -73,8 +74,14 @@ const unavailableMcItems: Record<string, Item> = {
   }
 };
 
+const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
+  crimson_stem: 'gif',
+  warped_stem: 'gif',
+  compass: 'gif'
+};
+
 const fetchersByNamespace: Record<string, ItemFetcher> = {
-  minecraft: async (version, item) => {
+  minecraft: async (version, item, requireImages) => {
     const data = minecraftData(version.id);
     const itemData = data.itemsByName[item.id] ?? unavailableMcItems[item.id];
     if (!itemData) {
@@ -83,29 +90,26 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
 
     const parsedItemName = itemData.displayName.replaceAll(' ', '_');
 
-    let isStaticImage: boolean;
-    try {
-      isStaticImage =
-        (
-          await fetch(`https://minecraft.wiki/images/Invicon_${parsedItemName}.png`, {
-            method: 'HEAD'
-          })
-        ).status === 200;
-    } catch {
-      isStaticImage = true;
-    }
+    if (requireImages) {
+      const image = await getImage({
+        src: `https://minecraft.wiki/images/Invicon_${parsedItemName}.${imageExtensionOverrides[item.id] ?? 'png'}`,
+        width: 32,
+        height: 32,
+        format: ''
+      });
 
-    const image = await getImage({
-      src: `https://minecraft.wiki/images/Invicon_${parsedItemName}.${isStaticImage ? 'png' : 'gif'}`,
-      width: 32,
-      height: 32,
-      format: 'png'
-    });
-    return {
-      name: itemData.displayName,
-      icons: [image.options],
-      link: `https://minecraft.wiki/w/${parsedItemName}`
-    };
+      return {
+        name: itemData.displayName,
+        icons: [image.options.src as ImageMetadata],
+        link: `https://minecraft.wiki/w/${parsedItemName}`
+      };
+    } else {
+      return {
+        name: itemData.displayName,
+        icons: [],
+        link: `https://minecraft.wiki/w/${parsedItemName}`
+      };
+    }
   },
   minecolonies: fromWikiFetcher,
   structurize: fromWikiFetcher,
@@ -113,7 +117,7 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
   multipiston: fromWikiFetcher
 };
 
-export async function getItemData(item: string): Promise<ItemData> {
+export async function getItemData(item: string, requireImages = false): Promise<ItemData> {
   const versions = await getCollection('versions');
 
   const [namespace, id] = item.split('/');
@@ -142,7 +146,7 @@ export async function getItemData(item: string): Promise<ItemData> {
         existingResult.versions.push(version);
         versionName = existingResult.name;
       } else {
-        const data = await fetcher(version, { namespace, id });
+        const data = await fetcher(version, { namespace, id }, requireImages);
         if (data === undefined) {
           continue;
         }

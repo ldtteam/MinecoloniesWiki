@@ -1,18 +1,43 @@
 ---
-const desc = 'Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft!';
+import { getImage } from 'astro:assets';
 
-const keywords =
-  'minecolonies,minecraft,minecraft mod,1.12,1.14,1.15,1.16,1.17,1.18,minecraft schematics,schematics minecraft,minecraft buildings,minecraft forge,minecraft server,minecraft mods,town building,minecraft colony,minecraft colonies,colony,colonies';
+interface Props {
+  isWiki: boolean;
+}
+
+const { isWiki } = Astro.props;
+
+const image = await getImage({
+  src: isWiki
+    ? (await import('../assets/images/minecolonies_logo_wiki_medium.png')).default
+    : (await import('../assets/images/minecolonies_logo_medium.png')).default
+});
+
+const desc = 'Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft!';
 ---
 
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+<!-- SEO tags -->
 <meta charset="utf-8" />
 <meta name="description" content={desc} />
-<meta name="keywords" content={keywords} />
+<meta
+  name="keywords"
+  content="minecolonies,minecraft,minecraft mod,1.12,1.14,1.15,1.16,1.17,1.18,minecraft schematics,schematics minecraft,minecraft buildings,minecraft forge,minecraft server,minecraft mods,town building,minecraft colony,minecraft colonies,colony,colonies"
+/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="theme-color" content="#4715A7" />
 <meta name="msapplication-TileColor" content="#da532c" />
 
-<meta name="og:description" content={desc} />
-<meta name="og:type" content="website" />
-<meta name="og:url" content="https://wiki.minecolonies.com" />
-<meta name="og:image" content="https://minecolonies.com/images/icon_townhallbook.png" />
+<!-- Facebook Meta Tags -->
+<meta property="og:description" content={desc} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:image" content={Astro.url.href + image.src} />
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content={Astro.url.host} />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:description" content={desc} />
+<meta property="twitter:image" content={Astro.url.href + image.src} />

@@ -64,11 +64,11 @@ const headerText =
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-    <title property="og-title">
+    <title property="og-title,twitter:title">
       {typeof title === 'string' ? title : title.find((f) => f.version.id === newestVersion.id)?.title} | {titleAffix}
     </title>
 
-    <Meta />
+    <Meta isWiki={isWikiPage} />
 
     <script data-title-affix={titleAffix} {...versionTitleData} is:inline>
       const titleData = document.currentScript.dataset;

@@ -13,7 +13,7 @@ const { items, amount = 1, large = false } = Astro.props;
 
 const parsedItems = Array.isArray(items) ? items : items !== undefined && items !== null ? [items] : [];
 
-const itemResults = await Promise.all(parsedItems.map(getItemData));
+const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item, true)));
 ---
 
 {

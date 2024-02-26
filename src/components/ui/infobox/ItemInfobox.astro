@@ -15,7 +15,7 @@ interface Props {
 
 const { item, expand = false } = Astro.props;
 
-const itemData = await getItemData(item);
+const itemData = await getItemData(item, true);
 
 const recipeData = await getEntry('recipes', item);
 ---

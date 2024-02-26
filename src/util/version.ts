@@ -37,6 +37,7 @@ export async function getSortedVersions(): Promise<CollectionEntry<'versions'>[]
   return versions.sort((a, b) => b.data.order - a.data.order);
 }
 
-export function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
-  return getSortedVersions().then((results) => results[0]);
+export async function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
+  const results = await getSortedVersions();
+  return results[0];
 }
