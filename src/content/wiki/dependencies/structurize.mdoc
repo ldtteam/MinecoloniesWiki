@@ -4,12 +4,21 @@ title: Structurize
 ---
 Mod link: [https://www.curseforge.com/minecraft/mc-mods/structurize](https://www.curseforge.com/minecraft/mc-mods/structurize)
 
-Structurize is a dependency of MineColonies.
+Structurize is a dependency of MineColonies which handles the construction of schematics (blueprints).
 
-This page is a work-in-progress.
-To be included:
+The primary tool to do this is the [build tool](/wiki/items/build_tool), which we go further in depth in the page about the build tool.
 
-- Build tool
-- Scan tool
-- Tag tool
-- Shape tool
+There are 3 other tools that are used in schematic creation:
+- [Scan tool](/wiki/items/scan_tool)
+- [Tag tool](/wiki/items/tag_tool)
+- [Shape tool](/wiki/items/shape_tool)
+
+For more information about creating schematics, please visit [this page](/wiki/tutorials/schematics)
+
+## Commands
+
+| Command                                 | Permissions | Command Description                                                                                                                                                       |
+| --------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/structurize linksession create`       | ALL         | Creates a linksession to which you can invite other players to see build previews.                                                                                        |
+| `/structurize linksession addplayer`    | ALL         | Invites a player to your link session so they can see your building previews. Make sure you create one first! After being invited, players have to accept the invitation. |
+| `/structurize linksession acceptinvite` | ALL         | Accepts an invitation to a link session.                                                                                                                                  |
