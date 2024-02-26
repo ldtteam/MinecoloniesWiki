@@ -31,12 +31,14 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
 
 const newestVersion = await getNewestVersion();
 
-let versionTitleData: Record<string, string> = {};
+let versionTitleData: Record<string, string>;
 if (typeof title === 'object') {
   versionTitleData = title.reduce<Record<string, string>>((previousValue, currentValue) => {
-    previousValue['data-version-' + currentValue.version.data.order] = currentValue.title;
+    previousValue['data-title-version-' + currentValue.version.data.order] = currentValue.title;
     return previousValue;
   }, {});
+} else {
+  versionTitleData = { 'data-title-version-all': title };
 }
 
 const headerText =
@@ -70,30 +72,39 @@ const headerText =
 
     <Meta isWiki={isWikiPage} />
 
-    <script data-title-affix={titleAffix} {...versionTitleData} is:inline>
-      const titleData = document.currentScript.dataset;
-      const titleAffix = titleData.titleAffix ?? 'Minecolonies';
+    <script is:inline data-title-affix={titleAffix}>
+      function updateTitle(version) {
+        let newTitle;
+        if (document.body.dataset.titleVersionAll) {
+          newTitle = document.body.dataset.titleVersionAll;
+        } else {
+          newTitle = document.body.dataset[`titleVersion-${version}`];
+        }
+        document.title = `${newTitle} | ${document.body.dataset.titleAffix ?? 'Minecolonies'}`;
+      }
 
-      const versionObserver = new MutationObserver((mutations) => {
+      function update(mutations) {
         for (const mutation of mutations) {
           if (mutation.type === 'attributes' && mutation.attributeName === 'data-version') {
-            const newTitle = titleData[`version-${mutation.target.dataset.version}`];
-            document.title = `${newTitle} | ${titleAffix}`;
+            updateTitle(mutation.target.dataset.version);
           }
         }
-      });
+      }
+
+      const versionObserver = new MutationObserver(update);
 
       function setup() {
         versionObserver.observe(document.body, { attributes: true });
+        updateTitle(document.body.dataset.version);
       }
 
-      document.addEventListener('astro:after-swap', setup);
+      document.addEventListener('astro:page-load', setup);
       document.addEventListener('DOMContentLoaded', setup);
     </script>
 
     <ViewTransitions />
   </head>
-  <body data-latest-version={newestVersion.data.order}>
+  <body data-latest-version={newestVersion.data.order} {...versionTitleData}>
     <PageRoot isHome={isHome}>
       <div class="page_root p-5">
         <Header isWiki={isWikiPage} />

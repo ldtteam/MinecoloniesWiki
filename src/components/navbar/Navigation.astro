@@ -85,7 +85,7 @@ import Navlink from './Navlink.astro';
     updateTheme(localStorage.getItem('theme') ?? 'system');
   }
 
-  document.addEventListener('astro:after-swap', setup);
+  document.addEventListener('astro:page-load', setup);
   document.addEventListener('DOMContentLoaded', setup);
 </script>
 
