@@ -1,30 +1,28 @@
 ---
+type: page
 title: Raid System
-layout: default
 ---
-# Raid System
-
-<p style="text-align:center; font-size:20pt;"><img src="../../assets/images/misc/Sleep.png" alt="Sleep"><b> If a raid is currently in progress, your colonists will stop working and run home!</b></p>
+![Sleep](@assets/images/wiki/misc/sleep.png) **If a raid is currently in progress, your colonists will stop working and run home!**
 
 ## Before the Raid
 As your colony develops, you may get raided by hostile forces. These forces can spawn almost anywhere except near your buildings. Generally, this means they'll spawn outside of the colony, but if your buildings are spread out, they could spawn between them!
 
 Raids will only spawn at the start of a night. There will be a chat message giving a general direction of where the raid spawned and a bar at the top of your screen showing your progress in defeating the raiders. Raids spawn randomly, with a minimum number of nights between them and an average number of nights as set in the [config file](../../source/misc/configfile). Larger colonies may get multiple waves or groups of raiders from different directions, even of different types. Be careful!
 
-<img src="../../assets/images/misc/multiRaidBars.png" alt="Multiple barbarian raids in progress">
+![Multiple barbarian raids in progress](@assets/images/wiki/misc/multiraidbars.png)
 
-If you have a {% building_link barracks %} at level 3 or higher, you can hire spies to make raiders glow. This can help you find that one pesky raider that got stuck or is hiding and finish the raid.
+If you have a {% building name="barracks" /%} at level 3 or higher, you can hire spies to make raiders glow. This can help you find that one pesky raider that got stuck or is hiding and finish the raid.
 
 ## Types of Raids
 The type of raiders that can spawn are determined by the biome in which they spawn.
 
-| Biome               | Raider type      |
-| ------------------- | ---------------- |
-| Taiga               | Nordic           |
-| Desert              | Mummy            |
-| Large body of water | Pirate           |
-| Jungle              | Amazon           |
-| Other               | Barbarian        |
+| Biome               | Raider type |
+| ------------------- | ----------- |
+| Taiga               | Nordic      |
+| Desert              | Mummy       |
+| Large body of water | Pirate      |
+| Jungle              | Amazon      |
+| Other               | Barbarian   |
 
 Notably, Pirate raids can spawn on any large body of water, not just the ocean. They will spawn with a ship that has spawners that continuously spawn more pirates until you break the spawners. If any of the environment would be clipped by the pirate ship's spawning, the environment will be restored after the ship sails away (in 3 days, by default).
 

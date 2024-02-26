@@ -7,7 +7,7 @@ import { research_link, research_list, research_trees } from './src/markdoc/rese
 import type { Tag } from './src/markdoc/types';
 import { content_block, image_row } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
-import { worker, worker_infobox } from './src/markdoc/workers';
+import { worker, worker_infobox, workers_table } from './src/markdoc/workers';
 
 function extendNodeClasses(...extraClasses: string[]): Tag['transform'] {
   const result: Tag['transform'] = (node, config) => {
@@ -31,6 +31,7 @@ export const config: AstroMarkdocConfig = {
     building_infobox,
     worker,
     worker_infobox,
+    workers_table,
     item_infobox,
     item_combined_infobox,
     research_trees,

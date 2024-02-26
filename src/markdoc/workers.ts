@@ -51,3 +51,7 @@ export const worker_infobox: Tag = {
   render: component('@components/markdoc/infobox/WorkerInfobox.astro'),
   transform: workerTransform
 };
+
+export const workers_table: Tag = {
+  render: component('@components/markdoc/WorkersTable.astro')
+};

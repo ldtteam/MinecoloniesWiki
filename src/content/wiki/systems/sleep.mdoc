@@ -1,8 +1,7 @@
 ---
+type: page
 title: Sleep System
-layout: default
 ---
-# Sleep System
 
 No matter how busy your thriving colony is, your colonists need to sleep. At the end of each day until sunrise the next day, they will go to their homes and sleep in their beds.
 
@@ -12,13 +11,13 @@ Letting your colonists sleep will make them happier. If they're unable to reach 
 
 ## Assigning Beds
 
-{% building_link house %} and {% building_link tavern %} provide most of your colonists with bedspaces to sleep in. If set in the {% building_link townhall %}, you can manually assign colonists to beds in Houses or the Tavern. Else, they'll be randomly assigned to an open bed.
+{% building name="residence" /%} and {% building name="tavern" /%} provide most of your colonists with bedspaces to sleep in. If set in the {% building name="townhall" /%}, you can manually assign colonists to beds in Houses or the Tavern. Else, they'll be randomly assigned to an open bed.
 
 Each colony can have only one Tavern by default. The Tavern will provide 4 beds. Upgrading does not increase the number of beds; however, it does affect skill caps and number and quality of visitors.
 
 Each colony can have as many Houses as you'd like. Each House will provide one bed per level; i.e., a level 4 House will provide 4 beds, and a level 1 House will provide 1 bed. The House level also restricts colonist skill caps.
 
-{% building_link guardtower %} provide 1 bed for a Guard, while {% building_link barracks %} provide housing for many Guards. See those pages for more details.
+{% building name="guardtower" plural=true /%} provide 1 bed for a Guard, while a {% building name="barracks" /%} provides housing for many Guards. See those pages for more details.
 
 Colonists don't like to commute too far, whether by rail or by foot. If they're over 100 blocks from their work hut, they'll complain that they're living too far from work. If you see this, have them switch bed with someone else!
 
@@ -30,4 +29,4 @@ Colonists that do not have a home will gather at the Town Hall at night. You sho
 
 ## Ticking Events at Night
 
-Turning off the daylight cycle in-game can affect some events and internal updates unpredictably. Most notably, this includes [raids](../../source/systems/raid) and {% worker_link farmer %}, but may include things like sicknesses or the growth of children. However, this is not publicly known.
+Turning off the daylight cycle in-game can affect some events and internal updates unpredictably. Most notably, this includes [raids](../../source/systems/raid) and {% worker name="farmer" /%}, but may include things like sicknesses or the growth of children. However, this is not publicly known.
