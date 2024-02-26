@@ -11,7 +11,7 @@ interface ParsedItemId {
 interface ItemFetcherResponse {
   name: string;
   icons: ImageMetadata[];
-  link: string;
+  link: string | undefined;
 }
 
 type ItemFetcher = (
@@ -34,6 +34,11 @@ export interface ItemData extends ParsedItemId {
 
 const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
   const itemPath = item.namespace + '/' + item.id;
+  const itemData = await getEntry('items', itemPath);
+  if (itemData === undefined) {
+    return undefined;
+  }
+
   const itemPage = await getCollection('wiki', (page) => {
     if (page.data.type === 'item' && page.data.item.id === itemPath) {
       return true;
@@ -47,7 +52,6 @@ const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
   if (itemPage.length > 0) {
     const page = itemPage[0];
     if (page.data.type === 'item') {
-      const itemData = await getEntry('items', page.data.item.id);
       return {
         name: itemData.data.name,
         icons: requireImages ? itemData.data.icons : [],
@@ -55,13 +59,18 @@ const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
       };
     } else if (page.data.type === 'item-combined') {
       const item = page.data.items.find((f) => f.id === itemPath)!;
-      const itemData = await getEntry('items', item.id);
       return {
         name: itemData.data.name,
         icons: requireImages ? itemData.data.icons : [],
         link: '/wiki/items/' + item
       };
     }
+  } else {
+    return {
+      name: itemData.data.name,
+      icons: requireImages ? itemData.data.icons : [],
+      link: undefined
+    };
   }
 };
 
