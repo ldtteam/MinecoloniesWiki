@@ -11,5 +11,10 @@ const { isWiki = false } = Astro.props;
 ---
 
 <div class="text-center">
-  <Image src={isWiki ? WikiLogo : RegularLogo} alt="Minecolonies Logo" style={{ maxWidth: '100%', height: 'auto' }} />
+  <Image
+    src={isWiki ? WikiLogo : RegularLogo}
+    alt="Minecolonies Logo"
+    style={{ maxWidth: '100%', height: 'auto' }}
+    loading="eager"
+  />
 </div>

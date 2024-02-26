@@ -21,7 +21,7 @@ const recipeData = await getEntry('recipes', item);
 ---
 
 <Infobox class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
-  <ItemName slot="title" data={itemData} />
+  <ItemName slot="title" data={itemData} link={false} />
 
   <div class="text-center">
     {
