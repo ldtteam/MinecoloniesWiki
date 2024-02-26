@@ -1,12 +1,13 @@
 ---
+type: page
 title: World Generation Colonies
-layout: default
 ---
-# World Generation Colonies
 
 As you explore the world, you'll notice that there are some colonies abandoned by the former residents. Moving into one of these abandoned colonies is a way to quickstart your own colony!
 
-(Note: This feature is only available in 1.18+. Vanilla villages will still spawn as normal. If you wish to turn off this feature, you can do so in the [configuration options](../misc/configfile) for your world.)
+{% version name="1.18" after=true %}
+> **Note:** Vanilla villages will still spawn as normal. If you wish to turn off this feature, you can do so in the configuration options for your world.
+{% /version %}
 
 ## Getting Started
 
@@ -29,10 +30,9 @@ First, you need to design and build your own [schematic](schematics). Once you'v
 ## Tagging and Prepping
 
 The most important thing to ensure that colonies register as abandoned — and can be restored — is to use the tag tool to tag the hut block appropriately.
-<ol>
-  <li> Tag the hut block with its style name (e.g., "medieval_oak" for the Medieval Oak style). The name must match the style's folder name in the MineColonies.jar file or resource pack.</li>
-  <li> Add the tag "abandoned" to the hut block. If you right-click the building with an empty hand, it should now say that the building is abandoned and tell you to seek out the town hall.</li>
-</ol>
+
+1. Tag the hut block with its style name (e.g., "medieval_oak" for the Medieval Oak style). The name must match the style's folder name in the MineColonies.jar file or resource pack.
+2. Add the tag "abandoned" to the hut block. If you right-click the building with an empty hand, it should now say that the building is abandoned and tell you to seek out the town hall.
 
 ## Adding Jigsaw Blocks
 
@@ -40,47 +40,31 @@ Place jigsaw blocks where a structure would naturally connect to a road or — i
 
 When editing a jigsaw block, there are a few different properties that can be set.
 
-<ul>
-  <li> name: the name of this jigsaw block. The name can be unique or generic. For the styles in MineColonies, all buildings have the name "minecolonies:building_entrance" and all roads "minecolonies:street". Some styles will also use "minecolonies:field"; this one is used exclusively to connect a field to a farmer building when the farmer building does not a field as part of the level 1 structure.</li>
-  <li> target: When a structure is placed, the target of its jigsaw block determines the next jigsaw block that is added. The target of a placed structure must match the name of the next one to be placed.</li>
-  <li> pool: To restrict the list of applicable structures, use the target pool. MineColonies uses three dedicated pools for each colony style: "&#60;stylename&#62;/roads", "&#60;stylename&#62;/buildings", and "&#60;stylename&#62;/terminators".</li>
-</ul>
+- `name:` the name of this jigsaw block. The name can be unique or generic. For the styles in MineColonies, all buildings have the name "minecolonies:building_entrance" and all roads "minecolonies:street". Some styles will also use "minecolonies:field"; this one is used exclusively to connect a field to a farmer building when the farmer building does not a field as part of the level 1 structure.
+- `target`: When a structure is placed, the target of its jigsaw block determines the next jigsaw block that is added. The target of a placed structure must match the name of the next one to be placed.
+- `pool`: To restrict the list of applicable structures, use the target pool. MineColonies uses three dedicated pools for each colony style: "&#60;stylename&#62;/roads", "&#60;stylename&#62;/buildings", and "&#60;stylename&#62;/terminators".
 
 Edit the jigsaw block to set the following properties. 
 (Note that the following is an example using the Medieval Oak style. Replace "medieval_oak" with your style's name.)
 
-<ul>
-  <li> Buildings
-    <ul>
-      <li> name: "minecolonies:building_entrance"</li>
-      <li> pool: "minecolonies:medieval_oak/roads"</li>
-      <li> target: "minecolonies:building_entrance"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-  <li> Roads (Connecting to buildings)
-    <ul>
-      <li> name: "minecolonies:street"</li>
-      <li> pool: "minecolonies:medieval_oak/buildings"</li>
-      <li> target: "minecolonies:building_entrance"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-  <li> Roads (Connecting to roads)
-    <ul>
-      <li> name: "minecolonies:street"</li>
-      <li> pool: "minecolonies:medieval_oak/roads"</li>
-      <li> target: "minecolonies:street"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-  <li> Terminators (to end roads more decoratively and as fallback structures for roads and buildings)
-    <ul>
-      <li> name: "minecolonies:street"</li>
-      <li> turns into: "minecraft:structure_void"</li>
-    </ul>
-  </li>
-</ul>
+- Buildings
+    - `name`: "minecolonies:building_entrance"
+    - `pool`: "minecolonies:medieval_oak/roads"
+    - `target`: "minecolonies:building_entrance"
+    - `turns into`: "minecraft:structure_void"
+- Roads (Connecting to buildings)
+    - `name`: "minecolonies:street"
+    - `pool`: "minecolonies:medieval_oak/buildings"
+    - `target`: "minecolonies:building_entrance"
+    - `turns into`: "minecraft:structure_void"
+- Roads (Connecting to roads)
+    - `name`: "minecolonies:street"
+    - `pool`: "minecolonies:medieval_oak/roads"
+    - `target`: "minecolonies:street"
+    - `turns into`: "minecraft:structure_void"
+- Terminators (to end roads more decoratively and as fallback structures for roads and buildings)
+    - `name`: "minecolonies:street"
+    - `turns into`: "minecraft:structure_void"
 
 ## Processors
 
@@ -99,13 +83,25 @@ Park processors are defined in "&#60;stylename&#62;/decoration.json". This proce
 
 Building processors are defined in "&#60;stylename&#62;/placeholder_replacement.json". Similar to how zombie villages decay, this processor removes various building blocks or replaces them with cobweb. Which blocks and how often depends on the given style. In addition to decay, the placeholder replacement is also responsible for converting the Structurize placeholder blocks into suitable in-game similar to how a builder treats these blocks when constructing a building.
 
-<ul>
-  <li> "structurize:blocksolidsubstitution" turns into dirt, which may be converted to another block by a processor defined later in the same file.</li>
-  <li> "structurize:blocksubstitution" is ignored, meaning that existing blocks in the world will remain in place when the structure generates.</li>
-</ul>
+- "structurize:blocksolidsubstitution" turns into dirt, which may be converted to another block by a processor defined later in the same file.
+- "structurize:blocksubstitution" is ignored, meaning that existing blocks in the world will remain in place when the structure generates.
 
 #### Decay Example
 
 The rule below replaces oak logs with cobwebs at a 4&#37; probability. That probability may be fine for one style but be too high or too low for another style.
 
-{ "output_state": { "Name": "minecraft:cobweb" }, "input_predicate": { "block": "minecraft:oak_log", "probability": 0.04, "predicate_type": "minecraft:random_block_match" }, "location_predicate": { "predicate_type": "minecraft:always_true" } },
+```json
+{
+  "output_state": {
+    "Name": "minecraft:cobweb"
+  },
+  "input_predicate": {
+    "block": "minecraft:oak_log",
+    "probability": 0.04,
+    "predicate_type": "minecraft:random_block_match"
+  },
+  "location_predicate": {
+    "predicate_type": "minecraft:always_true"
+  }
+}
+```
