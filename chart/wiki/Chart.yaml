@@ -1,0 +1,7 @@
+apiVersion: v2
+name: website
+description: The helm chart for deploying the minecolonies website.
+
+type: application
+version: 0.1.0
+appVersion: "1.16.0"

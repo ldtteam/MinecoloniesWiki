@@ -7,13 +7,13 @@ title: Troubleshooting
 
 Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest version if you are not running the latest.
 
-## Missing Graphics, Issues with the [Build Tool](../../source/items/buildtool) Preview, And/Or Citizen GUIs Not Opening
+## Missing Graphics, Issues with the {% item name="build_tool" /%} Preview, And/Or Citizen GUIs Not Opening
 
 If you experience missing textures for hut blocks, your build tool previews are messed up, and/or the citizen GUIs aren't opening when you right-click them, try updating MineColonies. As of the writing of this section, 1.16.5 and 1.18.1 versions are compatible, but not 1.18.2 yet.
 
 ## Crashes when Placing Structures
 
-If your game crashes placing a structure (e.g. a [supply camp or ship](../../source/items/supplycampandship)), your MineColonies and Structurize versions are probably incompatible. Update both to the latest versions.
+If your game crashes placing a structure (e.g. a {% item name="supply_camp_and_ship" /%}), your MineColonies and Structurize versions are probably incompatible. Update both to the latest versions.
 
 ### CHECKLIST: Identifying why a citizen is not working
 
@@ -25,9 +25,9 @@ If your game crashes placing a structure (e.g. a [supply camp or ship](../../sou
 6. Is their hut PAUSED? Work huts now have a pause button. Sometimes players forget to unpause.
 7. Is their hunger level low? Citizens won't work while hungry. Give them food, and if you have a {% building name="cook" /%}, check that it is stocked and you have hired a {%worker name="cook" /%}. If they are hungry but won't eat the food they have, fire them until they eat then rehire them.
 8. Do they have any open requests? They might need a tool or other item to continue their work.
-10. Do they have tools of the correct [level](../../source/systems/worker)? 
+10. Do they have tools of the correct [level](/wiki/systems/worker)? 
 11. Is their inventory or their hut inventory full? They will get stuck if they have no room to move things in or out.
-12. Do they start working when you get close to them? Maybe Minecraft is not loading enough chunks in your colony. If you are using Optifine then disable the "Smooth World" option. You can also tweak the "forceloadcolony" and "colonyloadstrictness" values in the [Config file](../../source/misc/configfile)
+12. Do they start working when you get close to them? Maybe Minecraft is not loading enough chunks in your colony. If you are using Optifine then disable the "Smooth World" option. You can also tweak the "forceloadcolony" and "colonyloadstrictness" values in the [Config file](/wiki/misc/configfile)
 
 If none of these apply, go on to the next troubleshooting checklists.  
 
@@ -40,13 +40,13 @@ If none of these apply, go on to the next troubleshooting checklists.
 5. {%worker name="baker" /%}: Set which fuel you want them to use and which recipe you want them to bake.
 6. {%worker name="smelter" /%}: Set which fuel you want them to use and which ore you want them to smelt.
 7. {%worker name="farmer" /%}: Assign the farmer to a field. Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
-8. {%worker name="composter" /%}: Set which items you want them to convert into [compost](../../source/items/compost).
-9. Crafter ({%worker name="carpenter" /%}, {%worker name="blacksmith" /%}, {%worker name="mechanic" /%}, etc): The request for items must be made after the crafter is hired and the colony must have a {%worker name="courier" /%}. Cancel the request at the original NPC to generate a new request, or make a new request from the [Postbox](../../source/items/postbox). Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
+8. {%worker name="composter" /%}: Set which items you want them to convert into {% item name="compost" /%}.
+9. Crafter ({%worker name="carpenter" /%}, {%worker name="blacksmith" /%}, {%worker name="mechanic" /%}, etc): The request for items must be made after the crafter is hired and the colony must have a {%worker name="courier" /%}. Cancel the request at the original NPC to generate a new request, or make a new request from the {% item name="postbox" /%}. Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
 10. {%worker name="stonesmelter" /%}: Set which fuel you want them to use. (They know their recipes already.)  
 
 ### CHECKLIST: Troubleshooting a Citizen not working for unknown reason
 
-1. Log out of the game. Open the [config file](../../source/misc/configfile).
+1. Log out of the game. Open the [config file](/wiki/misc/configfile).
    * Go to the line
       `#Should in development features be enabled (might be buggy). [Default: false]`
       `enableInDevelopmentFeatures=false`
@@ -63,8 +63,8 @@ If none of these apply, go on to the next troubleshooting checklists.
 9. Empty out the worker's personal and workhut inventories, then only give them what they request in the amount requested until they have no more requests.
 10.  Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
 11. Punch them with an empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire them.
-12. Use the /mc colony requestsystem-reset [command](../../source/systems/command).
-13. Repair their work hut. Some workers will stop working if required elements are not present. Only the {%worker name="builder" /%} can place beds, crafting tables, furnaces, chests, [racks](../../source/items/rack), and [compost barrels](../../source/items/compostbarrel). If you broke any of those, create a repair build order for the building.
+12. Use the /mc colony requestsystem-reset [command](/wiki/systems/command).
+13. Repair their work hut. Some workers will stop working if required elements are not present. Only the {%worker name="builder" /%} can place beds, crafting tables, furnaces, chests, {% item name="compost_barrel" /%}. If you broke any of those, create a repair build order for the building.
 14. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
 
 ## Upgrading to a newer Minecraft version

@@ -5,14 +5,18 @@ import type { CollectionEntry } from 'astro:content';
 import type { Tag } from './types';
 
 function getItemAttributes(attributes: ReturnType<Node['transformAttributes']>, config: Config) {
-  if (Object.keys(attributes).includes('item')) {
-    return attributes;
-  }
-
   const frontmatter = config.variables?.frontmatter as CollectionEntry<'wiki'>['data'] | undefined;
   if (frontmatter?.type === 'item') {
+    if (Object.keys(attributes).includes('item')) {
+      return {
+        ...attributes,
+        itemId: frontmatter.item.id
+      };
+    }
+
     return {
       ...attributes,
+      itemId: frontmatter.item.id,
       item: frontmatter.item.id
     };
   }
@@ -44,6 +48,17 @@ const itemCombinedTransform: Tag['transform'] = (node, config) => {
   const attributes = getItemCombinedAttributes(node.transformAttributes(config), config);
   const children = node.transformChildren(config);
   return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
+};
+
+export const item: Tag = {
+  render: component('@components/markdoc/names/Item.astro'),
+  attributes: {
+    name: {
+      type: String,
+      required: false
+    }
+  },
+  transform: itemTransform
 };
 
 export const item_infobox: Tag = {
