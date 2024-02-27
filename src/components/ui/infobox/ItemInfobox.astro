@@ -34,7 +34,7 @@ const recipeData = await getEntry('recipes', item);
             autoplay-delay="2000"
             autoplay-pause-on-mouse-enter
             autoplay-disable-on-interaction="false"
-            loop={item.icons.length > 1 ? 'true' : 'false'}
+            loop={item.icons.length > 1}
             loop-add-blank-slides
             slides-per-view={item.icons.length > 1 ? '2' : '1'}
             slides-per-group={item.icons.length > 1 ? '2' : '1'}

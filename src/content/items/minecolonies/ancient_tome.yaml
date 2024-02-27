@@ -1,4 +1,4 @@
 name: Ancient Tome
 icons:
-  - ../../../assets/images/wiki/items/minecolonies/ancient_tome.png
-  - ../../../assets/images/wiki/items/minecolonies/ancient_tome_glowing.png
+  - "@assets/images/wiki/items/minecolonies/ancient_tome.png"
+  - "@assets/images/wiki/items/minecolonies/ancient_tome_glowing.png"
