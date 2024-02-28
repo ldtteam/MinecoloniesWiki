@@ -12,18 +12,12 @@ export class ContentLoader {
     this.octokit = new MyOctokit({
       auth: token,
       throttle: {
-        onRateLimit: (retryAfter, options, _octokit, retryCount) => {
-          this.octokit.log.warn(`Request quota exhausted for request ${options.method} ${options.url}`);
-
-          if (retryCount < 1) {
-            // only retries once
-            console.log(`Retrying after ${retryAfter} seconds!`);
-            return true;
-          }
+        onRateLimit: (_retryAfter, options, octokit) => {
+          octokit.log.warn(`Request quota exhausted for request ${options.method} ${options.url}`);
+          return false;
         },
-        onSecondaryRateLimit: (_retryAfter, options) => {
-          // does not retry, only logs a warning
-          this.octokit.log.warn(`SecondaryRateLimit detected for request ${options.method} ${options.url}`);
+        onSecondaryRateLimit: (_retryAfter, options, octokit) => {
+          octokit.log.warn(`SecondaryRateLimit detected for request ${options.method} ${options.url}`);
         }
       }
     });

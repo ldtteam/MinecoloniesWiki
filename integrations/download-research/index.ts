@@ -61,134 +61,140 @@ export function downloadResearch(options?: IntegrationOptions): AstroIntegration
 
         logger.info('Downloading research info from Minecolonies repo.');
 
-        const { SECRET_GH_PAT } = loadEnv(process.env.NODE_ENV!, process.cwd(), '');
-        const contentLoader = new ContentLoader(SECRET_GH_PAT);
+        try {
+          const { SECRET_GH_PAT } = loadEnv(process.env.NODE_ENV!, process.cwd(), '');
+          const contentLoader = new ContentLoader(SECRET_GH_PAT);
 
-        const modTranslations = await contentLoader.getJsonFile(
-          'src/main/resources/assets/minecolonies/lang/manual_en_us.json'
-        );
-        const researchTranslations = await contentLoader.getJsonFile(
-          'src/datagen/generated/minecolonies/assets/minecolonies/lang/default.json'
-        );
-        if (modTranslations == undefined || researchTranslations === undefined) {
-          logger.warn('Could not load translation data, aborting file update.');
-          return;
-        }
+          const modTranslations = await contentLoader.getJsonFile(
+            'src/main/resources/assets/minecolonies/lang/manual_en_us.json'
+          );
+          const researchTranslations = await contentLoader.getJsonFile(
+            'src/datagen/generated/minecolonies/assets/minecolonies/lang/default.json'
+          );
+          if (modTranslations == undefined || researchTranslations === undefined) {
+            logger.warn('Could not load translation data, aborting file update.');
+            return;
+          }
 
-        const researchEffects = await contentLoader.getAllJsonFiles<ResearchEffect>(
-          'src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
-        );
-        for (const researchEffect of researchEffects) {
-          const researchEffectKey = parse(researchEffect.filename).name;
+          const researchEffects = await contentLoader.getAllJsonFiles<ResearchEffect>(
+            'src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
+          );
+          for (const researchEffect of researchEffects) {
+            const researchEffectKey = parse(researchEffect.filename).name;
 
-          if (researchEffectKey.startsWith('blockhut')) {
+            if (researchEffectKey.startsWith('blockhut')) {
+              writeContentCollectionFile(
+                'research_effect',
+                researchEffect.filename,
+                JSON.stringify({
+                  type: 'building',
+                  building: researchEffectKey.replace('blockhut', '')
+                })
+              );
+              continue;
+            }
+
             writeContentCollectionFile(
               'research_effect',
               researchEffect.filename,
               JSON.stringify({
-                type: 'building',
-                building: researchEffectKey.replace('blockhut', '')
+                type: 'regular',
+                format:
+                  researchTranslations.content[`com.minecolonies.research.effects.${researchEffectKey}.description`],
+                levels: researchEffect.content.levels
               })
             );
-            continue;
           }
 
-          writeContentCollectionFile(
-            'research_effect',
-            researchEffect.filename,
-            JSON.stringify({
-              type: 'regular',
-              format:
-                researchTranslations.content[`com.minecolonies.research.effects.${researchEffectKey}.description`],
-              levels: researchEffect.content.levels
-            })
+          const researchTrees = await contentLoader.getAllJsonFiles<ResearchTree>(
+            'src/datagen/generated/minecolonies/data/minecolonies/researches'
           );
-        }
-
-        const researchTrees = await contentLoader.getAllJsonFiles<ResearchTree>(
-          'src/datagen/generated/minecolonies/data/minecolonies/researches'
-        );
-        for (const researchTree of researchTrees) {
-          const name = researchTranslations.content[researchTree.content['branch-name']];
-          writeContentCollectionFile(
-            'research_tree',
-            researchTree.filename,
-            JSON.stringify({
-              name
-            })
-          );
-
-          const researchTreeType = researchTree.filename.replace('.json', '');
-          const allResearches = await contentLoader.getAllJsonFiles<ResearchItem>(
-            `src/datagen/generated/minecolonies/data/minecolonies/researches/${researchTreeType}`
-          );
-
-          for (const research of allResearches) {
-            const researchKey = research.filename.replace('.json', '');
-            const tree = research.content.branch.split(':').pop();
-            const parent = research.content.parentResearch?.split('/').pop();
-            const name =
-              researchTranslations.content[`com.minecolonies.research.${researchTreeType}.${researchKey}.name`];
-            const requirements = research.content.requirements
-              .map((requirement) => {
-                if (isBuildingRequirement(requirement)) {
-                  return {
-                    type: 'building',
-                    building: requirement.building,
-                    level: requirement.level
-                  };
-                } else if (isMandatoryBuildingRequirement(requirement)) {
-                  return {
-                    type: 'building',
-                    building: requirement['mandatory-building'],
-                    level: requirement.level
-                  };
-                } else if (isItemListRequirement(requirement)) {
-                  return {
-                    type: 'item',
-                    items: requirement.item.items.map((item) => item.replace(':', '/')),
-                    quantity: requirement.quantity
-                  };
-                } else if (isItemTagRequirement(requirement)) {
-                  return {
-                    type: 'item',
-                    items: [modTranslations.content[`com.minecolonies.coremod.research.tags.${requirement.item.tag}`]],
-                    quantity: requirement.quantity
-                  };
-                }
-                return undefined;
-              })
-              .filter((f) => f !== undefined);
-
-            const effects: Record<string, number> = {};
-            research.content.effects.forEach((effect) => {
-              Object.entries(effect).forEach(([key, value]) => {
-                effects[key.replace('minecolonies:effects/', '')] = value;
-              });
-            });
-
-            const researchLevel = research.content.researchLevel;
-
+          for (const researchTree of researchTrees) {
+            const name = researchTranslations.content[researchTree.content['branch-name']];
             writeContentCollectionFile(
-              'research',
-              research.filename,
+              'research_tree',
+              researchTree.filename,
               JSON.stringify({
-                tree,
-                parent,
-                name,
-                requirements,
-                effects,
-                researchLevel
+                name
               })
             );
+
+            const researchTreeType = researchTree.filename.replace('.json', '');
+            const allResearches = await contentLoader.getAllJsonFiles<ResearchItem>(
+              `src/datagen/generated/minecolonies/data/minecolonies/researches/${researchTreeType}`
+            );
+
+            for (const research of allResearches) {
+              const researchKey = research.filename.replace('.json', '');
+              const tree = research.content.branch.split(':').pop();
+              const parent = research.content.parentResearch?.split('/').pop();
+              const name =
+                researchTranslations.content[`com.minecolonies.research.${researchTreeType}.${researchKey}.name`];
+              const requirements = research.content.requirements
+                .map((requirement) => {
+                  if (isBuildingRequirement(requirement)) {
+                    return {
+                      type: 'building',
+                      building: requirement.building,
+                      level: requirement.level
+                    };
+                  } else if (isMandatoryBuildingRequirement(requirement)) {
+                    return {
+                      type: 'building',
+                      building: requirement['mandatory-building'],
+                      level: requirement.level
+                    };
+                  } else if (isItemListRequirement(requirement)) {
+                    return {
+                      type: 'item',
+                      items: requirement.item.items.map((item) => item.replace(':', '/')),
+                      quantity: requirement.quantity
+                    };
+                  } else if (isItemTagRequirement(requirement)) {
+                    return {
+                      type: 'item',
+                      items: [
+                        modTranslations.content[`com.minecolonies.coremod.research.tags.${requirement.item.tag}`]
+                      ],
+                      quantity: requirement.quantity
+                    };
+                  }
+                  return undefined;
+                })
+                .filter((f) => f !== undefined);
+
+              const effects: Record<string, number> = {};
+              research.content.effects.forEach((effect) => {
+                Object.entries(effect).forEach(([key, value]) => {
+                  effects[key.replace('minecolonies:effects/', '')] = value;
+                });
+              });
+
+              const researchLevel = research.content.researchLevel;
+
+              writeContentCollectionFile(
+                'research',
+                research.filename,
+                JSON.stringify({
+                  tree,
+                  parent,
+                  name,
+                  requirements,
+                  effects,
+                  researchLevel
+                })
+              );
+            }
           }
-        }
 
-        if (!(await writeCacheBuster(config.cacheDir, new Date()))) {
-          logger.warn('Failure writing cache buster, next run will attempt to load all info again.');
-        }
+          if (!(await writeCacheBuster(config.cacheDir, new Date()))) {
+            logger.warn('Failure writing cache buster, next run will attempt to load all info again.');
+          }
 
-        logger.info('Finished downloading research info from Minecolonies repo.');
+          logger.info('Finished downloading research info from Minecolonies repo.');
+        } catch {
+          logger.info('Exited downloading research info, rate limit exceeded.');
+        }
       }
     }
   };
