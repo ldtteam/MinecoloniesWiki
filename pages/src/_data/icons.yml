@@ -1,8 +1,0 @@
-minecraft:
-  - boat: >-
-      <div><img src="../assets/images/icons/minecraft/oak_boat.png" title="Oak Boat" class="inv-sprite"></div>
-      <div><img src="../assets/images/icons/minecraft/birch_boat.png" title="Birch Boat" class="inv-sprite"></div>
-      <div><img src="../assets/images/icons/minecraft/spruce_boat.png" title="Spruce Boat" class="inv-sprite"></div>
-      <div><img src="../assets/images/icons/minecraft/jungle_boat.png" title="Jungle Boat" class="inv-sprite"></div>
-      <div><img src="../assets/images/icons/minecraft/acacia_boat.png" title="Acacia Boat" class="inv-sprite"></div>
-      <div><img src="../assets/images/icons/minecraft/dark_oak_boat.png" title="Dark Oak Boat" class="inv-sprite"></div>
