@@ -1,10 +1,9 @@
 import { AstroIntegration } from 'astro';
-import shelljs from 'shelljs';
 
 import { initSubmodule } from './update-minecolonies';
 
 const name = 'minecolonies';
-const branch = 'version/main';
+const branch = 'version/1.19.2';
 
 const directoriesToPull = ['src/datagen/generated/minecolonies/data/minecolonies/researches'];
 
@@ -13,13 +12,7 @@ export function minecoloniesSubmodule(): AstroIntegration {
     name: 'download-research',
     hooks: {
       'astro:config:setup': async () => {
-        const module = await initSubmodule(name, branch);
-
-        shelljs.cd(module.path());
-        shelljs.exec('git sparse-checkout init --cone --sparse-index');
-        for (const directory of directoriesToPull) {
-          shelljs.exec(`git sparse-checkout set '${directory}'`);
-        }
+        const module = await initSubmodule(name, branch, directoriesToPull);
 
         await module.update(1);
       }
