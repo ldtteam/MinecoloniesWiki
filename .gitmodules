@@ -1,4 +1,5 @@
 [submodule "minecolonies"]
 	path = minecolonies
 	url = https://github.com/ldtteam/minecolonies.git
+	ignore = all
 	branch = version/main
