@@ -1,0 +1,4 @@
+[submodule "minecolonies"]
+	path = minecolonies
+	url = https://github.com/ldtteam/minecolonies.git
+	branch = version/1.19.2
