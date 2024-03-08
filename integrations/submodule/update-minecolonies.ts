@@ -5,11 +5,7 @@ export async function initSubmodule(url: string, name: string): Promise<Nodegit.
 
   const module = await Nodegit.Submodule.lookup(repo, name);
   const subRepo = await module.open();
-  await subRepo.fetchAll({
-    callbacks: {
-      credentials: () => undefined
-    }
-  });
+  await subRepo.fetchAll();
   await subRepo.checkoutBranch('version/main');
   return module;
 }
