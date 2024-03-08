@@ -1,0 +1,3 @@
+[submodule "minecolonies"]
+	path = minecolonies
+	url = https://github.com/ldtteam/minecolonies.git
