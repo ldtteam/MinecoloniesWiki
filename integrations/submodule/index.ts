@@ -11,6 +11,7 @@ export function minecoloniesSubmodule(): AstroIntegration {
       'astro:config:setup': async (config) => {
         shelljs.exec('git submodule init');
 
+        shelljs.mkdir(path.join(process.cwd(), '.git/modules/minecolonies'));
         shelljs.cd(path.join(process.cwd(), '.git/modules/minecolonies'));
         shelljs.exec('git sparse-checkout init --cone --sparse-index');
         for (const directory of directoriesToPull) {
