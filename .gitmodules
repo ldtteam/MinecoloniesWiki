@@ -1,0 +1,4 @@
+[submodule "minecolonies"]
+	path = minecolonies
+	url = git@github.com:ldtteam/minecolonies.git
+	branch = version/main

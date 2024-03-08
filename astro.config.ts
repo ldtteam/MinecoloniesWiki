@@ -6,6 +6,7 @@ import icon from 'astro-icon';
 import { register } from 'swiper/element/bundle';
 
 import { downloadResearch } from './integrations/download-research';
+import { minecoloniesSubmodule } from './integrations/submodule';
 
 register();
 
@@ -30,10 +31,11 @@ export default defineConfig({
     }),
     markdoc(),
     sitemap(),
-    downloadResearch({
-      runOnReload: true,
-      cacheValidityTime: 168
-    })
+    minecoloniesSubmodule()
+    // downloadResearch({
+    //   runOnReload: true,
+    //   cacheValidityTime: 168
+    // })
   ],
   output: 'static'
 });
