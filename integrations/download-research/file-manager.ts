@@ -1,48 +1,32 @@
-import { fileURLToPath } from 'node:url';
+import fs from 'fs/promises';
+import path from 'path';
 
-import type { CollectionKey } from 'astro:content';
-import * as fs from 'fs/promises';
-import * as path from 'path';
-
-export async function getCacheBuster(cacheDir: URL): Promise<Date | undefined> {
-  const fullPath = path.resolve(
-    fileURLToPath(cacheDir),
-    'download-research-cache.json'
-  );
-  try {
-    const json = await fs.readFile(fullPath);
-    return new Date(JSON.parse(json.toString()).date);
-  } catch {
-    return undefined;
-  }
-}
-
-export async function writeCacheBuster(cacheDir: URL, date: Date) {
-  const fullPath = path.resolve(
-    fileURLToPath(cacheDir),
-    'download-research-cache.json'
-  );
-  try {
-    await fs.mkdir(fileURLToPath(cacheDir), {
-      recursive: true
-    });
-    await fs.writeFile(
-      fullPath,
-      JSON.stringify({
-        date: date.getTime()
-      })
-    );
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-export async function writeContentCollectionFile(
-  key: CollectionKey,
-  name: string,
-  content: string
-) {
+export async function writeContentCollectionFile(key: string, name: string, content: string) {
   const fullPath = path.resolve(`src/content/${key}`);
   await fs.writeFile(`${fullPath}${path.sep}${name}`, content);
+}
+
+export async function getJsonFile<T extends object>(file: string): Promise<T> {
+  const content = await fs.readFile(file, 'utf-8');
+  return JSON.parse(content);
+}
+
+export async function getAllJsonFiles<T extends object>(directory: string): Promise<Record<string, T>> {
+  const files = await fs.readdir(directory, {
+    encoding: 'utf-8',
+    recursive: false,
+    withFileTypes: true
+  });
+  const contents = await Promise.all(
+    files
+      .filter((file) => file.isFile())
+      .map(async (file) => ({
+        file,
+        output: await fs.readFile(path.join(directory, file.name), 'utf-8')
+      }))
+  );
+  return contents.reduce<Record<string, T>>((previousValue, currentValue) => {
+    previousValue[currentValue.file.name] = JSON.parse(currentValue.output);
+    return previousValue;
+  }, {});
 }

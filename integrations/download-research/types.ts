@@ -1,3 +1,5 @@
+export type Translations = Record<string, string>;
+
 export interface FileInfo<T> {
   filename: string;
   content: T;
@@ -8,19 +10,19 @@ export interface ResearchTree {
 }
 
 export interface BuildingRequirement {
-  type: "";
+  type: '';
   building: string;
   level: number;
 }
 
 export interface MandatoryBuildingRequirement {
-  type: "";
+  type: '';
   'mandatory-building': string;
   level: number;
 }
 
 export interface ItemListRequirement {
-  type: "minecolonies:item_list";
+  type: 'minecolonies:item_list';
   item: {
     items: string[];
   };
@@ -28,7 +30,7 @@ export interface ItemListRequirement {
 }
 
 export interface ItemTagRequirement {
-  type: "minecolonies:item_tag";
+  type: 'minecolonies:item_tag';
   item: {
     tag: string;
   };

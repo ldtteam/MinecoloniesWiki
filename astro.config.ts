@@ -31,11 +31,8 @@ export default defineConfig({
     }),
     markdoc(),
     sitemap(),
-    minecoloniesSubmodule()
-    // downloadResearch({
-    //   runOnReload: true,
-    //   cacheValidityTime: 168
-    // })
+    minecoloniesSubmodule(),
+    downloadResearch()
   ],
   output: 'static'
 });
