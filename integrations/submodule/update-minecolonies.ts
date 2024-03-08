@@ -9,7 +9,6 @@ export async function initSubmodule(
   const repo = await Nodegit.Repository.open(process.cwd());
 
   const module = await Nodegit.Submodule.lookup(repo, name);
-  Nodegit.Submodule.setBranch(repo, name, branch);
   const subRepo = await module.open();
   await subRepo.fetchAll();
 
@@ -19,6 +18,6 @@ export async function initSubmodule(
     shelljs.exec(`git sparse-checkout set '${directory}'`);
   }
 
-  await subRepo.checkoutBranch(branch);
+  await subRepo.checkoutBranch('refs/remotes/origin/' + branch);
   return module;
 }
