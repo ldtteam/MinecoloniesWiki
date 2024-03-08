@@ -5,7 +5,7 @@ export function minecoloniesSubmodule(): AstroIntegration {
   return {
     name: 'minecolonies-submodule',
     hooks: {
-      'astro:config:setup': async ({ logger }) => {
+      'astro:config:done': async ({ logger }) => {
         logger.info('Updating Minecolonies submodule...');
         const response = shelljs.exec('git submodule update --init minecolonies');
         logger.info('Minecolonies submodule successfully updated');
