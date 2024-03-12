@@ -1,11 +1,11 @@
-import { type AstroMarkdocConfig, component, defineMarkdocConfig, Markdoc, nodes } from '@astrojs/markdoc/config';
+import { type AstroMarkdocConfig, defineMarkdocConfig, Markdoc, nodes } from '@astrojs/markdoc/config';
 import shiki from '@astrojs/markdoc/shiki';
 
 import { building, building_infobox, contentBlocks as buildingContentBlocks } from './src/markdoc/buildings';
 import { item, item_combined_infobox, item_infobox } from './src/markdoc/items';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import type { Tag } from './src/markdoc/types';
-import { content_block, image_row } from './src/markdoc/util';
+import { citizen_name_pack_list, content_block, image_row, pages_overview } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
 import { worker, worker_infobox, workers_table } from './src/markdoc/workers';
 
@@ -23,10 +23,6 @@ function extendNodeClasses(...extraClasses: string[]): Tag['transform'] {
 
 export const config: AstroMarkdocConfig = {
   tags: {
-    pages_overview: {
-      render: component('@components/markdoc/PagesOverview.astro'),
-      selfClosing: true
-    },
     building,
     building_infobox,
     worker,
@@ -39,6 +35,8 @@ export const config: AstroMarkdocConfig = {
     research_list,
     research_link,
     version,
+    pages_overview,
+    citizen_name_pack_list,
     content_block,
     image_row
   },

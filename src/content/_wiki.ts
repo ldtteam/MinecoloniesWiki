@@ -176,3 +176,19 @@ export const recipesCollection = defineCollection({
     })
   )
 });
+
+export const citizenNamesCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    name: z.string(),
+    filename: z.string(),
+    credits: z.string(),
+    data: z.object({
+      parts: z.number().min(1).max(3),
+      order: z.enum(['WESTERN', 'EASTERN']),
+      male_firstname: z.array(z.string()),
+      female_firstname: z.array(z.string()),
+      surnames: z.array(z.string())
+    })
+  })
+});

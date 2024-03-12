@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+
+const citizenNamePacks = await getCollection('citizen_name_packs');
+---
+
+{
+  citizenNamePacks.map((citizenNamePack) => (
+    <>
+      <h4>{citizenNamePack.data.name}</h4>
+      <p>
+        <a href={`/citizen_names/${citizenNamePack.data.filename}.zip`}>
+          Download {citizenNamePack.data.name} Datapack
+        </a>
+      </p>
+      <p>
+        <i>Credits to: {citizenNamePack.data.credits}</i>
+      </p>
+    </>
+  ))
+}

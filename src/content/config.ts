@@ -3,6 +3,7 @@ import { eventCollection, sponsorCollection, supporterCollection, teamCollection
 import { versionsCollection } from './_version';
 import {
   buildingsCollection,
+  citizenNamesCollection,
   itemsCollection,
   recipesCollection,
   wikiCategories,
@@ -21,6 +22,7 @@ export const collections = {
   research_effect: researchEffectCollection,
   research: researchCollection,
   versions: versionsCollection,
+  citizen_name_packs: citizenNamesCollection,
   team: teamCollection,
   sponsors: sponsorCollection,
   supporters: supporterCollection,
