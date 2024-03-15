@@ -5,10 +5,21 @@ import { getJsonFile } from './file-manager';
 import type { Translations } from './types';
 
 export function downloadResearch(): AstroIntegration {
+  let shouldRun = false;
+
   return {
     name: 'download-research',
     hooks: {
+      'astro:config:setup': ({ command }) => {
+        if (command === 'dev') {
+          shouldRun = true;
+        }
+      },
       'astro:config:done': async ({ logger }) => {
+        if (!shouldRun) {
+          return;
+        }
+
         logger.info('Updating research info from Minecolonies submodule...');
 
         try {

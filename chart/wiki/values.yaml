@@ -17,6 +17,8 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-production
     kubernetes.io/ingress.class: nginx
   hosts:
+    - wiki.minecolonies.ldtteam.com
+    - wiki.minecolonies.com
     - minecolonies.ldtteam.com
     - minecolonies.com
 
