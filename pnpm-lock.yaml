@@ -74,12 +74,6 @@ dependencies:
   vite:
     specifier: ^5.0.10
     version: 5.0.10(sass@1.69.5)
-  zip-stream:
-    specifier: ^6.0.1
-    version: 6.0.1
-  zipstream:
-    specifier: ^0.2.1
-    version: 0.2.1
 
 devDependencies:
   '@astrojs/upgrade':
@@ -6931,11 +6925,6 @@ packages:
       archiver-utils: 5.0.2
       compress-commons: 6.0.2
       readable-stream: 4.5.2
-    dev: false
-
-  /zipstream@0.2.1:
-    resolution: {integrity: sha512-ClMljrA2nHpTLCJTlpCVgcmOKfclxlsVDaPfSmNZ+HeSz6ME5oGisSIzf3QFaoe0lFpE4yxUzWEBncEQejDi+A==}
-    engines: {node: '>= 0.6.3'}
     dev: false
 
   /zod-to-json-schema@3.22.4(zod@3.22.4):
