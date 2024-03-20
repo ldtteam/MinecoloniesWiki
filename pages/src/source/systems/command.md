@@ -96,8 +96,8 @@ These are the in-game commands currently available. Most require that a user hav
       <td class="d-block d-md-table-cell">Claims a specified number of chunks for a colony (or removes claimed chunks) based off the player's location.<br>Example:<br><code>/mc colony claim 1 8 true</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
-      <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt; [delete Buildings]</code><br>Default permission level: All</td>
-      <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut block is still placed).<br>Examples:<br><code>/mc colony delete 1 false keep buildings</code><br><code>/mc colony delete 1 true delete buildings</code></td>
+      <td class="d-block d-md-table-cell"><code>/mc colony delete &lt;colony id&gt</code><br>Default permission level: All</td>
+      <td class="d-block d-md-table-cell">Deletes a colony and all MineColonies buildings (as long as the hut block is still placed).<br>Examples:<br><code>/mc colony delete 1</code></td>
     </tr>
     <tr class="d-block d-md-table-row">
       <td class="d-block d-md-table-cell"><code>/mc colony home</code><br>Default permission level: All</td>
