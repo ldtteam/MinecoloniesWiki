@@ -1,0 +1,132 @@
+---
+import '../css/globals.scss';
+import '@fontsource/fondamento';
+
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Meta from '@components/Meta.astro';
+import Navigation from '@components/navbar/Navigation.astro';
+import PageRoot from '@components/PageRoot.astro';
+import VersionContent from '@components/version/VersionContent.astro';
+import { getNewestVersion } from '@utils/version';
+import type { CollectionEntry } from 'astro:content';
+import { ViewTransitions } from 'astro:transitions';
+
+export interface TitleVersion {
+  version: CollectionEntry<'versions'>;
+  title: string;
+}
+
+interface Props {
+  title: TitleVersion[] | string;
+  titleAffix?: string;
+  header?: string;
+  fluid?: boolean;
+}
+
+const { title, titleAffix = 'MineColonies', header = title, fluid = false } = Astro.props;
+
+const isHome = Astro.url.pathname === '/';
+const isWikiPage = Astro.url.pathname.startsWith('/wiki');
+
+const newestVersion = await getNewestVersion();
+
+let versionTitleData: Record<string, string>;
+if (typeof title === 'object') {
+  versionTitleData = title.reduce<Record<string, string>>((previousValue, currentValue) => {
+    previousValue['data-title-version-' + currentValue.version.data.order] = currentValue.title;
+    return previousValue;
+  }, {});
+} else {
+  versionTitleData = { 'data-title-version-all': title };
+}
+
+const headerText =
+  typeof header === 'string'
+    ? header
+    : header.reduce<Record<string, CollectionEntry<'versions'>[]>>((previousValue, currentValue) => {
+        if (previousValue[currentValue.title] === undefined) {
+          previousValue[currentValue.title] = [];
+        }
+        previousValue[currentValue.title].push(currentValue.version);
+        return previousValue;
+      }, {});
+---
+
+<!doctype html>
+<html lang="en" transition:persist>
+  <head>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <title property="og-title,twitter:title">
+      {typeof title === 'string' ? title : title.find((f) => f.version.id === newestVersion.id)?.title} | {titleAffix}
+    </title>
+
+    <Meta isWiki={isWikiPage} />
+
+    <script is:inline>
+      function updateTitle(version) {
+        let newTitle;
+        if (document.body.dataset.titleVersionAll) {
+          newTitle = document.body.dataset.titleVersionAll;
+        } else {
+          newTitle = document.body.dataset[`titleVersion-${version}`];
+        }
+        document.title = `${newTitle} | ${document.body.dataset.titleAffix ?? 'Minecolonies'}`;
+      }
+
+      function update(mutations) {
+        for (const mutation of mutations) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'data-version') {
+            updateTitle(mutation.target.dataset.version);
+          }
+        }
+      }
+
+      const versionObserver = new MutationObserver(update);
+
+      function setup() {
+        versionObserver.observe(document.body, { attributes: true });
+        updateTitle(document.body.dataset.version);
+      }
+
+      document.addEventListener('astro:page-load', setup);
+      document.addEventListener('DOMContentLoaded', setup);
+    </script>
+
+    <ViewTransitions />
+  </head>
+  <body data-latest-version={newestVersion.data.order} {...versionTitleData} data-title-affix={titleAffix}>
+    <PageRoot isHome={isHome}>
+      <div class="page_root p-5">
+        <Header isWiki={isWikiPage} />
+        <Navigation />
+        <slot name="after-nav" />
+
+        <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
+          <h1 data-pagefind-meta="title" class="page_header text-center">
+            {
+              typeof headerText === 'string'
+                ? headerText
+                : Object.entries(headerText).map(([header, versions]) => (
+                    <VersionContent versions={versions}>{header}</VersionContent>
+                  ))
+            }
+          </h1>
+          <hr />
+
+          <slot data-pagefind-body />
+        </main>
+        <Footer />
+      </div>
+    </PageRoot>
+  </body>
+</html>

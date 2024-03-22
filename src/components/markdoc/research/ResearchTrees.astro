@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  format: 'join' | 'list';
+}
+
+const format = Astro.props.format;
+
+const trees = await getCollection('research_tree');
+
+function getTreeJoin() {
+  const names = trees.map((tree) => `<b>${tree.data.name}</b>`);
+  return names.slice(0, -1).join(', ') + ' and ' + names.slice(-1);
+}
+---
+
+{format === 'join' && <span set:html={getTreeJoin()} />}
+{
+  format === 'list' && (
+    <ul>
+      {trees.map((tree) => (
+        <li>
+          <a href={`#${tree.id}`}>{tree.data.name}</a>
+        </li>
+      ))}
+    </ul>
+  )
+}

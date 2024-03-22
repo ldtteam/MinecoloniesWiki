@@ -1,0 +1,6 @@
+name: Flowershop
+plural: Flowershops
+workers:
+  - florist
+recipes:
+  - minecolonies/blockhutflorist

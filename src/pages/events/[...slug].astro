@@ -1,0 +1,34 @@
+---
+import EventHeader from '@components/EventHeader.svelte';
+import Layout from '@layouts/Default.astro';
+import type { EventRelative } from '@utils/util';
+import { getCollection } from 'astro:content';
+import { fromUnixTime, isBefore } from 'date-fns';
+
+export async function getStaticPaths() {
+  const collection = await getCollection('events');
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const entry = Astro.props.entry;
+const now = new Date();
+const { Content } = await entry.render();
+
+const startDate = fromUnixTime(entry.data.start);
+const endDate = fromUnixTime(entry.data.end);
+
+let relative: EventRelative = undefined;
+if (isBefore(now, startDate)) {
+  relative = 'start';
+} else if (isBefore(now, endDate)) {
+  relative = 'end';
+}
+---
+
+<Layout title="Events">
+  <EventHeader event={entry} now={now} relative={relative} />
+  <Content />
+</Layout>

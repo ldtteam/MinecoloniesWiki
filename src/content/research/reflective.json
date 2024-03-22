@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"scholarly","name":"Reflective","requirements":[{"type":"building","building":"library","level":5},{"type":"item","items":["minecraft/book"],"quantity":48}],"effects":{"levelingmultiplier":4},"researchLevel":5}

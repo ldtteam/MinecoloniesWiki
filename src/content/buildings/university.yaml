@@ -1,0 +1,6 @@
+name: University
+plural: Universities
+workers:
+  - researcher
+recipes:
+  - minecolonies/blockhutuniversity

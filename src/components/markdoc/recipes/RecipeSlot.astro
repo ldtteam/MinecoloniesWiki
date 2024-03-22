@@ -1,0 +1,130 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import { getItemData } from '@utils/items';
+import { Image } from 'astro:assets';
+
+interface Props {
+  items: string | string[] | null | undefined;
+  amount?: number;
+  large?: boolean;
+}
+
+const { items, amount = 1, large = false } = Astro.props;
+
+const parsedItems = Array.isArray(items) ? items : items !== undefined && items !== null ? [items] : [];
+
+const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item, true)));
+---
+
+{
+  (
+    <div class:list={['invslot', large ? 'invslot-large' : '']}>
+      <swiper-container
+        autoplay
+        autoplay-delay="1000"
+        autoplay-disable-on-interaction="false"
+        loop={itemResults.length > 1}
+        slides-per-view="1"
+        slides-per-group="1"
+        no-swiping
+        no-swiping-selector="*"
+        width="2em"
+        class="invslot-item"
+      >
+        {itemResults.map((itemResult) => (
+          <swiper-slide>
+            {itemResult.data.map((item) => (
+              <VersionContent versions={item.versions}>
+                {item.icons.map((icon) => (
+                  <div class="invslot-wrapper">
+                    <Image
+                      src={icon}
+                      alt={item.name}
+                      width={32}
+                      height={32}
+                      class="inv-sprite"
+                      data-bs-toggle="tooltip"
+                      title={item.name}
+                    />
+                  </div>
+                ))}
+              </VersionContent>
+            ))}
+          </swiper-slide>
+        ))}
+        {amount > 1 && (
+          <div class="invslot-stacksize">
+            <span>{amount}</span>
+          </div>
+        )}
+      </swiper-container>
+    </div>
+  )
+}
+
+<style style="scss">
+  img {
+    max-width: none;
+  }
+
+  .invslot {
+    --invslot-size: 2em;
+    display: inline-block;
+    position: relative;
+    width: var(--invslot-size);
+    height: var(--invslot-size);
+    background: #8b8b8b;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+
+    &.invslot-large {
+      --invslot-size: 3em;
+    }
+
+    &::before,
+    &::after {
+      background-color: #8b8b8b;
+      content: '';
+      height: 2px;
+      position: absolute;
+      width: 2px;
+    }
+
+    &::before {
+      bottom: -2px;
+      left: -2px;
+    }
+
+    &::after {
+      right: -2px;
+      top: -2px;
+    }
+
+    .invslot-item {
+      width: 100%;
+      height: 100%;
+    }
+
+    .invslot-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(var(--invslot-size) - 4px);
+      height: calc(var(--invslot-size) - 4px);
+    }
+
+    .invslot-stacksize {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #fff !important;
+      text-shadow: 2px 2px 0 #3f3f3f;
+      filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+    }
+
+    .inv-sprite {
+      width: calc(2em - 4px);
+      height: calc(2em - 4px);
+    }
+  }
+</style>

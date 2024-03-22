@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"redstonepowered","name":"Heavy Machinery","requirements":[{"type":"item","items":["minecraft/redstone"],"quantity":512}],"effects":{"blockbreakspeedmultiplier":3},"researchLevel":4}

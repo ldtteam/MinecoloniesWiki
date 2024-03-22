@@ -1,0 +1,11 @@
+name: Nether Miner
+plural: Nether Miners
+type: gatherer
+traits:
+  primary: Adaptability
+  secondary: Strength
+effects:
+  primary: Survivability
+  secondary: Chance and quality of loot
+buildings:
+  - netherworker

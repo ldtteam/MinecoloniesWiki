@@ -1,0 +1,11 @@
+name: Dyer
+plural: Dyers
+type: crafter
+traits:
+  primary: Creativity
+  secondary: Dexterity
+effects:
+  primary: Increases chance of decreasing materials needed
+  secondary: Faster crafting
+buildings:
+  - dyer

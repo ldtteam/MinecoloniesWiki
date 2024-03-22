@@ -1,0 +1,25 @@
+---
+type: building
+building: lumberjack
+---
+
+{% building_infobox %}
+The {% building /%} is where the {% worker name="forester" /%} will go in between chopping down trees. The {% worker name="forester" /%} will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it.
+
+**Note:** In addition to axes for chopping down trees, {% worker name="forester" /%} require hoes for breaking leaves.
+{% /building_infobox %}
+
+## {% building /%} GUI
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
+{% building_gui_content_block_item_list order=3 header="saplings" imageKey="saplings" imageAlt="Saplings list" defaultOn=true %}
+It shows a list of recognized saplings the {% worker name="forester" /%} can work with, even modded ones (if coded correctly).
+Here you can turn on or off which type of trees the {% worker name="forester" /%} will chop down.
+{% /building_gui_content_block_item_list %}
+{% building_gui_content_block_tasks order=4 /%}
+{% building_gui_content_block_settings order=5 /%}
+{% building_gui_content_block_custom order=6 header="zoning tool" imageKey="zonetool" imageAlt="Zoning tool" %}
+This tool will let you define an area for the {% worker name="forester" /%} to work. Right click one corner of the area you want, then left click the opposite corner, and this will set a rectangle inside which the {% worker name="forester" /%} will search for trees. Vertical coordinates do not affect this too much; keeping them all around the same y-level can avoid unintentional bugs, though.
+{% /building_gui_content_block_custom %}
+{% building_gui_content_block_stock order=7 /%}

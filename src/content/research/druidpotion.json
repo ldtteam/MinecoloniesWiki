@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"arrowuse","name":"Panoramix","requirements":[{"type":"building","building":"barracks","level":3},{"type":"item","items":["minecolonies/mistletoe"],"quantity":64}],"effects":{"consumepotions":1},"researchLevel":3}

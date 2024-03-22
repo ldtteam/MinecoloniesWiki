@@ -1,0 +1,6 @@
+name: Hospital
+plural: Hospitals
+workers:
+  - healer
+recipes:
+  - minecolonies/blockhuthospital

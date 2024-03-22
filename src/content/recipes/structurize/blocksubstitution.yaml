@@ -1,0 +1,31 @@
+type: shaped
+row1:
+  item1:
+    - minecraft/oak_log
+    - minecraft/spruce_log
+    - minecraft/birch_log
+    - minecraft/jungle_log
+    - minecraft/acacia_log
+    - minecraft/dark_oak_log
+    - minecraft/crimson_stem
+    - minecraft/warped_stem
+  item2: minecraft/stick
+  item3:
+row2:
+  item1: minecraft/stick
+  item2: minecraft/iron_ingot
+  item3: minecraft/stick
+row3:
+  item1:
+  item2: minecraft/stick
+  item3:
+    - minecraft/oak_log
+    - minecraft/spruce_log
+    - minecraft/birch_log
+    - minecraft/jungle_log
+    - minecraft/acacia_log
+    - minecraft/dark_oak_log
+    - minecraft/crimson_stem
+    - minecraft/warped_stem
+output: structurize/blocksubstitution
+amount: 32

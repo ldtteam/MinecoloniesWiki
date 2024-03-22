@@ -1,0 +1,11 @@
+name: Researcher
+plural: Researchers
+type: other
+traits:
+  primary: Knowledge
+  secondary: Mana
+effects:
+  primary: Affects research time while offline
+  secondary: Affects max amount of research time they get
+buildings:
+  - university

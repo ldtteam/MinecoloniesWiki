@@ -1,0 +1,11 @@
+name: Teacher
+plural: Teachers
+type: other
+traits:
+  primary: Knowledge
+  secondary: Mana
+effects:
+  primary: Pupil stats increase faster
+  secondary: Quicker switching between pupils
+buildings:
+  - school

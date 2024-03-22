@@ -1,0 +1,29 @@
+---
+import ContentBlock from '@components/ui/content/ContentBlock.astro';
+import { getBuildingData } from '@utils/building';
+import { Image } from 'astro:assets';
+
+import type { BaseBuildingContentBlockProps } from './types';
+
+interface Props extends BaseBuildingContentBlockProps {
+  header?: string;
+  imageKey: string;
+  imageAlt: string;
+}
+
+const TAB_INDEXES = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eight', 'ninth', 'tenth'];
+
+const { buildingId, order = 1, cols, header, imageKey, imageAlt } = Astro.props;
+
+const buildingData = await getBuildingData(buildingId ?? '');
+
+const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`).then(
+  (f) => f.default
+);
+---
+
+<ContentBlock cols={cols}>
+  <Image slot="left" src={importedImage} alt={`${imageAlt} tab of the ${buildingData.data.name} it's GUI`} />
+   The {TAB_INDEXES[order - 1]} tab of the GUI is the <b>{header}</b>.
+  <slot />
+</ContentBlock>

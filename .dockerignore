@@ -1,2 +1,3 @@
-pages/src/.jekyll-cache
-pages/build
+node_modules
+dist
+.vscode

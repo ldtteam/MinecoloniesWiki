@@ -1,0 +1,70 @@
+---
+interface Props {
+  name: string;
+  href?: string;
+  root?: boolean;
+  thin?: boolean;
+  exact?: boolean;
+}
+
+const { name, href, root = false, thin = false, exact = true } = Astro.props;
+
+const pathName = Astro.url.pathname;
+const active = exact ? pathName === href : href ? pathName.startsWith(href) : false;
+
+const dropdownId = `navbarDropdown${name.replaceAll(/\W/g, '_')}`;
+
+const hasChildren = Astro.slots.has('default');
+---
+
+<li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
+  {
+    hasChildren ? (
+      <>
+        <span
+          class:list={[
+            root ? 'nav-link' : 'dropdown-item',
+            hasChildren ? 'dropdown-toggle' : '',
+            active ? 'active' : '',
+            thin ? 'py-0' : ''
+          ]}
+          id={dropdownId}
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          {name}
+        </span>
+        <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+          <slot />
+        </ul>
+      </>
+    ) : (
+      <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
+        {name}
+      </a>
+    )
+  }
+</li>
+
+<script>
+  function onLoad() {
+    document.querySelectorAll('ul.dropdown-menu [data-bs-toggle=dropdown]').forEach((elem) => {
+      elem.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (elem.parentElement?.parentElement) {
+          for (const listItem of elem.parentElement.parentElement.children) {
+            listItem.querySelector('a')?.classList.remove('show');
+            listItem.querySelector('.dropdown-menu')?.classList.remove('show');
+          }
+        }
+
+        elem.classList.add('show');
+        elem.nextElementSibling?.classList.add('show');
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', onLoad);
+</script>

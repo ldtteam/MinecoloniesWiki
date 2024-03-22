@@ -1,6 +1,10 @@
 {
   "recommendations": [
-    "sissel.shopify-liquid",
-    "wingrunr21.vscode-ruby"
-  ]
+    "astro-build.astro-vscode",
+    "stripe.markdoc-language-support",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ],
+  "unwantedRecommendations": []
 }

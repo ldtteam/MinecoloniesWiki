@@ -1,0 +1,6 @@
+name: Fisher's Hut
+plural: Fisher Huts
+workers:
+  - fisher
+recipes:
+  - minecolonies/blockhutfisherman

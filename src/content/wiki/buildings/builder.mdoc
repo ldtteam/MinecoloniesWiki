@@ -1,0 +1,35 @@
+---
+type: building
+building: builder
+---
+
+{% building_infobox %}
+### Before you build *any* other building, you must build the {% building /%}. If the {% building /%} is not built, the {% worker name="builder" /%} cannot build other buildings.
+
+Before you choose a place to build the {% building /%}, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the {% building /%} block and place it with your {% item name="build_tool" /%}. Once the hut is placed, the {% worker name="builder" /%} will be automatically assigned (or you can manually assign one with the best [traits](/wiki/systems/worker) for a {% worker name="builder" /%} if you changed this in the settings tab in the {% building name="townhall" /%}).
+
+Now you will have to issue the build assignment so the {% worker name="builder" /%} can build their own hut first. The {% worker name="builder" /%} will ask for the materials they need. Make sure to check the {% item name="resource_scroll" /%} or the Required Resources tab of the {% building /%} GUI to see what materials the {% worker name="builder" /%} is requesting for any build/upgrade. Any material in the list that is still missing will be in red letters.
+
+Once the {% building /%} is built you can now build anything you want, like worker huts, buildings, decorations, or your own schematics.
+
+- **Note:** The {% worker name="builder" /%} can only build or upgrade any other hut up to the level of their own hut. So, in order for the {% worker name="builder" /%} to upgrade any building, the {% building /%} must be upgraded first. Then the {% worker name="builder" /%} will be able to upgrade any other building(s).
+
+### Hints and Tips
+
+For the placement of the {% building /%}, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the {% worker name="builder" /%} has less of a distance to walk between their hut and the build sites.
+
+The {% worker name="builder" /%} will not start another build assignment until they have finished the current one.
+
+You can go into the {% building name="townhall" /%} it's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the {% worker name="builder" /%} will continue where they left off.
+
+If the {% worker name="builder" /%} removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the {% building /%} inventory.
+{% /building_infobox %}
+
+## {% building /%} GUI
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_stock order=2 /%}
+{% building_gui_content_block_settings order=3 /%}
+{% building_gui_content_block_crafting_recipes order=4 /%}
+{% building_gui_content_block_work_orders order=5 /%}
+{% building_gui_content_block_required_resources order=6 /%}

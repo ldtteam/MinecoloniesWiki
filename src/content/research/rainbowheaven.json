@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"flowerpower","name":"Rainbow Heaven","requirements":[{"type":"building","building":"florist","level":3},{"type":"item","items":["minecraft/poppy"],"quantity":64}],"effects":{"blockhutdyer":1},"researchLevel":3}

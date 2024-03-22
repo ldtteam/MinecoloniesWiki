@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"lifesaver2","name":"Guardian Angel","requirements":[{"type":"building","building":"townhall","level":5},{"type":"item","items":["minecraft/hay_block"],"quantity":128}],"effects":{"healthaddition":5},"researchLevel":5}

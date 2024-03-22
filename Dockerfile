@@ -1,17 +1,13 @@
-ARG JEKYLL_HOME=/srv/jekyll
+FROM node:lts AS build
+WORKDIR /app
+RUN npm install -g pnpm
+COPY package*.json ./
+COPY pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+COPY . .
+RUN pnpm run build
 
-FROM ruby:3.1.1-buster as builder
-ARG JEKYLL_HOME
-
-RUN mkdir $JEKYLL_HOME
-ADD pages $JEKYLL_HOME/
-WORKDIR $JEKYLL_HOME
-
-RUN bundle install
-RUN bundle exec jekyll build --trace
-
-FROM nginx:alpine
-ARG JEKYLL_HOME
-
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder $JEKYLL_HOME/build /usr/share/nginx/html
+FROM nginx:alpine AS runtime
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80

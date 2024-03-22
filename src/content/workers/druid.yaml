@@ -1,0 +1,12 @@
+  name: Druid
+  plural: Druids
+  type: guard
+  traits:
+    primary: Mana
+    secondary: Focus
+  effects:
+    primary: Increases potion duration
+    secondary: Increases throwing accuracy
+  buildings:
+    - barrackstower
+    - guardtower

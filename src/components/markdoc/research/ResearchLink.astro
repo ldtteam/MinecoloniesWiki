@@ -1,0 +1,16 @@
+---
+import { getEntry } from 'astro:content';
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const research = await getEntry('research', name);
+if (research === undefined) {
+  throw new Error(`Research with given id "${name}" does not exist.`);
+}
+---
+
+<a href={`/wiki/systems/research#research_${research.id}`}>{research.data.name}</a>

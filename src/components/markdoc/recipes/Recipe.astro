@@ -1,0 +1,38 @@
+---
+import { getEntry } from 'astro:content';
+
+import CustomRecipe from './CustomRecipe.astro';
+import RecipeConditions from './RecipeConditions.astro';
+import ShapedRecipe from './ShapedRecipe.astro';
+
+interface Props {
+  recipe: string;
+}
+
+const { recipe } = Astro.props;
+
+const recipeData = await getEntry('recipes', recipe);
+if (recipeData === undefined) {
+  throw new Error(`Recipe "${recipe}" does not exist.`);
+}
+---
+
+<div class="recipe-box">
+  {recipeData.data.type === 'shaped' && <ShapedRecipe recipe={recipeData.data} />}
+  {recipeData.data.type === 'custom' && <CustomRecipe recipe={recipeData.data} />}
+</div>
+
+<RecipeConditions conditions={recipeData.data.conditions} />
+
+<style>
+  .recipe-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    padding: 0.5em;
+    background-color: #c6c6c6;
+    border: 2px solid;
+    border-color: #dbdbdb #5b5b5b #5b5b5b #dbdbdb;
+  }
+</style>

@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"circus","name":"Festival","requirements":[{"type":"building","building":"cook","level":3},{"type":"item","items":["minecraft/cake"],"quantity":9}],"effects":{"happinessmultiplier":2},"researchLevel":3}

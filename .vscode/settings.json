@@ -1,23 +1,15 @@
 {
-  "liquid.format.enable": false,
-  "liquid.format.endNewLine": true,
+  "eslint.validate": ["javascript", "astro", "typescript"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "off"
+  },
   "files.associations": {
-    "*.html": "liquid",
-    "*.js": "liquid-javascript",
-    "*.css": "liquid-css",
-    "*.scss": "liquid-scss",
-    "**/src/_sass/*.scss": "scss",
-    "Gemfile.common": "gemfile",
-    "Gemfile.production": "gemfile"
+    "*.mdoc": "markdown"
   },
-  "prettier.enable": false,
-  "[html]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "[js]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   }
 }

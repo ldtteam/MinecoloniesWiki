@@ -1,6 +1,6 @@
 apiVersion: v2
-name: wiki
-description: The helm chart for deploying the minecolonies Wik.
+name: website
+description: The helm chart for deploying the minecolonies website.
 
 type: application
 version: 0.1.0

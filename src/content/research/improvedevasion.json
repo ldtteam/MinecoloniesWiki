@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"evasion","name":"Improved Evasion","requirements":[{"type":"building","building":"archery","level":5},{"type":"item","items":["minecraft/diamond"],"quantity":16}],"effects":{"archerarmormultiplier":4},"researchLevel":5}

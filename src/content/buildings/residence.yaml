@@ -1,0 +1,8 @@
+name: House
+plural: Houses
+recipes:
+  - minecolonies/blockhutresidence
+overrides:
+  - version: "1.19"
+    name: Residence
+    plural: Residences

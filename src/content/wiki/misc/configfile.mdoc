@@ -1,0 +1,505 @@
+---
+type: page
+title: Configuration File
+---
+
+The configuration files, commonly called the *config files*, are a way to change MineColonies settings. They are found within your Minecraft files:
+
+**Server Config:** `(Your Minecraft folder)/saves/(your world's name)/serverconfigs/minecolonies-server.toml`
+
+**Client Config:** `(Your Minecraft folder)/config/minecolonies-client.toml`
+
+**Common Config:** `(Your Minecraft folder)/config/minecolonies-common.toml`
+
+{% version name="1.20" after=true %}
+### Client-Side Config
+
+#### Gameplay Configuration
+
+| Setting                     | Default | Values       | Description                                                                                                                                                                                                      |
+| --------------------------- | ------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `enablecitizenvoices`       | true    | true / false | Citizens will talk. Set to false to turn off citizens talking.                                                                                                                                                   |
+| `neighborbuildingrendering` | true    | true / false | By default, when placing a schematic near other buildings, the already-placed buildings will show as if they were at level 5 and have a blue outline around them. You can disable that by setting this to false. |
+| `neighborbuidingrange`      | 4       | [-2 - 16]    | How close a building needs to be to another to be considered a neighbor, in blocks. -1 = intersecting, 0 = touching                                                                                              |
+| `buildgogglerange`          | 50      | [1 - 250]    | How close (in blocks) you need to be to see work orders while wearing the Build Goggles.                                                                                                                         |
+| `colonyteamborders`         | true    | true / false | When true, the colony borders shown when holding the build tool will be in the colony's team color. When false, the colony you're inside will be white and any other colony will be red.                         |
+
+### Server-Side Config
+
+#### Gameplay Configuration
+
+All configuration items related to the core gameplay.
+
+| Setting                         | Default | Values       | Description                                                                                                                                                                                                                     |
+| ------------------------------- | ------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `initialcitizenamount`          | 4       | [1 - 10]     | Amount of initial citizens.                                                                                                                                                                                                     |
+| `allowinfinitesupplychests`     | false   | true / false | Should players be able to place an infinite amount of supply camps/ships?                                                                                                                                                       |
+| `allowinfinitecolonies`         | false   | true / false | Should players be allowed to abandon their colony to create a new one easily? Note: This is buggy!                                                                                                                              |
+| `allowotherdimcolonies`         | true    | true / false | Should colonies in other dimensions be allowed?                                                                                                                                                                                 |
+| `maxcitizenpercolony`           | 250     | [100 - 500]  | Max citizens in one colony.                                                                                                                                                                                                     |
+| `enableindevelopmentfeatures`   | false   | true / false | Should development features be enabled (might be buggy)?                                                                                                                                                                        |
+| `alwaysrendernametag`           | true    | true / false | Should citizen name tags be rendered?                                                                                                                                                                                           |
+| `workersalwaysworkinrain`       | false   | true / false | Should workers work during the rain?                                                                                                                                                                                            |
+| `holidayfeatures`               | true    | true / false | Should special holiday content be displayed?                                                                                                                                                                                    |
+| `luckyblockchance`              | 1       | [0 - 100]    | Chance for the Miner to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".) |
+| `minthleveltoteleport`          | 3       | [0 - 5]      | The minimum level a Town Hall has to be to allow teleportation to allied colonies.                                                                                                                                              |
+| `foodmodifier`                  | 1       | [0.1 - 100]  | Food consumption modifier.                                                                                                                                                                                                      |
+| `diseasemodifier`               | 5       | [1 - 100]    | How common diseases are. 1 = Very common, 100 = extremely rare.                                                                                                                                                                 |
+| `forceloadcolony`               | true    | true / false | If part of the colony is loaded by an owner/officer, should the colony be kept loaded? (Set how many chunks are loaded with the "Colony Chunk Loading Strictness" option.)                                                      |
+| `loadtime`                      | 10      | [1 - 1440]   | Set how long chunks stay loaded after player leaves, does not persist through restarts.                                                                                                                                         |
+| `colonyloadstrictness`          | 3       | [1 - 15]     | This controls how many chunks are loaded with the "Chunk Load Colony" option. The higher this value, the fewer chunks will be loaded. (The innermost chunks will be loaded first.) 1 = load all claimed chunks.                 |
+| `maxtreesize`                   | 400     | [1 - 1000]   | Max log count in one tree for the Forester to check during their tree search.                                                                                                                                                   |
+| `nosupplyplacementrestrictions` | false   | true / false | Disables supply camp placing restrictions, intended for skyworlds and similar.                                                                                                                                                  |
+| `skyraiders`                    | false   | true / false | Raiders will spawn in the sky if this is enabled.                                                                                                                                                                               |
+
+#### Research Configuration
+
+All configurations related to the research system.
+
+| Setting                      | Default                      | Values                  | Description                                                                                                                                                                                      |
+| ---------------------------- | ---------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `researchcreativecompletion` | true                         | true / false            | Allows automatic and (near) instant completion of research for players in creative mode. If false, creative players will still be able to begin researches, but will have normal progress rates. |
+| `researchdebuglog`           | false                        | true / false            | Significantly increases the amount of information related to research datapacks that is logged during the world load.                                                                            |
+| `researchresetcost`          | [minecolonies:ancienttome:1] | List of items + amounts | A list of items to charge players when undoing an already-completed research.                                                                                                                    |
+
+#### Commands Configuration
+
+All configurations related to the MineColonies commands.
+
+| Setting                             | Default | Values       | Description                                                                                                  |
+| ----------------------------------- | ------- | ------------ | ------------------------------------------------------------------------------------------------------------ |
+| `canplayerusertpcommand`            | false   | true / false | Should players be allowed to use the /mc rtp command?                                                        |
+| `canplayerusecolonytpcommand`       | false   | true / false | Should players be allowed to use the /mc colony teleport command?                                            |
+| `canplayeruseallytownhallteleport`  | true    | true / false | Can players teleport to allied colonies?                                                                     |
+| `canplayerusehometpcommand`         | false   | true / false | Should players be allowed to use the /mc home command? Note: Only owners of the colony can use this command. |
+| `canplayeruseshowcolonyinfocommand` | true    | true / false | Should players be allowed to use the /mc colony info command?                                                |
+| `canplayerusekillcitizenscommand`   | false   | true / false | Should players be allowed to use the /mc citizens kill command?                                              |
+| `canplayeruseaddofficercommand`     | true    | true / false | Should players be allowed to use the /mc colony addOfficer command?                                          |
+| `canplayerusedeletecolonycommand`   | false   | true / false | Should players be allowed to use the /mc colony delete command?                                              |
+| `canplayeruseresetcommand`          | false   | true / false | Should players be allowed to use the /mc colony requestsystem-reset command?                                 |
+
+#### Claims Configuration
+
+All configuration related to colony claims.
+
+| Setting                     | Default | Values           | Description                                                               |
+| --------------------------- | ------- | ---------------- | ------------------------------------------------------------------------- |
+| `maxColonySize`             | 20      | [1 - 250]        | Maximum claim range for a colony. This is the radius, measured in chunks. |
+| `minColonyDistance`         | 8       | [1 - 250]        | The minimum distance (in chunks) between colonies.                        |
+| `initialColonySize`         | 4       | [1 - 250]        | Initial claim size for a colony. This is the radius, measured in chunks.  |
+| `maxdistancefromworldspawn` | 30000   | [1000 - &infin;] | Maximum distance (in blocks) from world spawn for a colony.               |
+| `mindistancefromworldspawn` | 0       | [0 - 1000]       | Minimum distance (in blocks) from world spawn for a colony.               |
+
+#### Combat Configuration
+
+All configuration items related to the combat elements of MineColonies.
+
+| Setting                             | Default | Values       | Description                                                                                     |
+| ----------------------------------- | ------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| `dobarbariansspawn`                 | true    | true / false | Should barbarian raids occur?                                                                   |
+| `barbarianhordedifficulty`          | 5       | [0 - 10]     | Difficulty modifier for barbarian raids.                                                        |
+| `maxBarbarianSize`                  | 80      | [6 - 400]    | The maximum amount of barbarians a raid can contain.                                            |
+| `dobarbariansbreakthroughwalls`     | true    | true / false | Should barbarians destroy blocks to get into the colony?                                        |
+| `averagenumberofnightsbetweenraids` | 14      | [1 - 50]     | The average number of nights between raids.                                                     |
+| `minimumnumberofnightsbetweenraids` | 10      | [1 - 30]     | The minimum number of nights between raids.                                                     |
+| `mobattackcitizens`                 | true    | true / false | Should mobs attack citizens?                                                                    |
+| `shouldraiderbreakdoors`            | true    | true / false | Should barbarians destroy doors to get into buildings?                                          |
+| `guardDamageMultiplier`             | 1       | [0.1 - 15]   | Damage multiplier for all guards.                                                               |
+| `guardhealthmult`                   | 1       | [0.1 - 5]    | Health multiplier for all guards.                                                               |
+| `pvp_mode`                          | false   | true / false | Turn on MineColonies PVP mode (colonies can be destroyed and griefed under certain conditions). |
+
+#### Permissions Configuration
+
+All configuration items related to the combat elements of MineColonies.
+
+| Setting                       | Default                 | Values                                           | Description                                                                                                                                                                                                                                                                                                                                                                 |
+| ----------------------------- | ----------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `enablecolonyprotection`      | true                    | true / false                                     | Should colony protection be enabled?                                                                                                                                                                                                                                                                                                                                        |
+| `turnoffexplosionsincolonies` | DAMAGE_ENTITIES         | [*See example*](#example-config-file)            | Independent from the colony protection, should explosions be turned off inside colonies? DAMAGE_NOTHING prevents explosions completely. DAMAGE_PLAYERS, allows explosions to damage players and hostile mobs, but not blocks or neutral or friendly mobs. DAMAGE_ENTITIES allows damage to all entities. DAMAGE_EVERYTHING allows explosions to damage entities and blocks. |
+| `freetointeractblocks`        | [minecraft:dirt, 0,0,0] | A list of blocks or positions written as "x y z" | Blocks players should be able to interact with in any colony (ex: vending machines)                                                                                                                                                                                                                                                                                         |
+
+#### Mod Compatibility Configuration
+
+All configuration related to mod compatibility.
+
+| Setting                      | Default                               | Values                                                      | Description                                                                                                                                |
+| ---------------------------- | ------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `configliststudyitems`       | [*See example*](#example-config-file) | A list of items + chance to improve skill + chance to break | Items consumed by citizens in the Library.                                                                                                 |
+| `configlistrecruitmentitems` | [*See example*](#example-config-file) | A list of items + amount                                    | Items requested by Tavern visitors.                                                                                                        |
+| `luckyores`                  | [*See example*](#example-config-file) | A list of items + rarity                                    | List of ore blocks rarely found magically by Miners (see "Ore Chance"). Includes the block and its chance, separated by exclamation marks. |
+| `diseases`                   | [*See example*](#example-config-file) | A list of disease name, rarity and items to cure            | All diseases citizens can get. The name, how common it is, and all ingredients to cure it.                                                 |
+| `auditcraftingtags`          | false                                 | true / false                                                | When loading recipes, generate audit CSV files to help debug datapacks or extra mods.                                                      |
+| `debuginventories`           | false                                 | true / false                                                | Enable inventory debugging.                                                                                                                |
+| `blueprintbuildmode`         | false                                 | true / false                                                | Turn this on if you're using this world for blueprint building and scanning.                                                               |
+
+#### Pathfinding Configuration
+
+All configurations related to pathfinding.
+
+| Setting                     | Default | Values    | Description                                                   |
+| --------------------------- | ------- | --------- | ------------------------------------------------------------- |
+| `pathfindingdebugverbosity` | 0       | [0 - 10]  | Verbosity of pathfinding debug messages.                      |
+| `minimumrailstopath`        | 8       | [5 - 100] | Minimum number of consecutive rails for citizens to use them. |
+| `pathfindingmaxthreadcount` | 2       | [1 - 10]  | Amount of additional threads to be used for pathfinding.      |
+
+#### Request System Configuration
+
+All configurations related to the request system.
+
+| Setting           | Default | Values       | Description                                                                                                                                                                               |
+| ----------------- | ------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `creativeresolve` | false   | true / false | Should the request system creatively resolve (if possible) when the player is required to resolve a request? This is a debugging tool and can take a very long time to resolve a request. |
+
+### Example config file
+
+`minecolonies-client.toml`:
+```toml
+#All configuration items related to the core gameplay
+[gameplay]
+	#minecolonies.config.enablecitizenvoices.comment [Default: true]
+	enablecitizenvoices = false
+	#By default, when placing a schematic near other buildings, the already-placed buildings will show as if they were at level 5 and have a blue outline around them. You can disable that by setting this to false. [Default: true]
+	neighborbuildingrendering = true
+	#How close a building needs to be to another to be considered a neighbor, in blocks. -1 = intersecting, 0 = touching [Default: 4, min: -2, max: 16]
+	#Range: -2 ~ 16
+	neighborbuildingrange = 4
+	#How close (in blocks) you need to be to see work orders while wearing the Build Goggles. [Default: 50, min: 1, max: 250]
+	#Range: 1 ~ 250
+	buildgogglerange = 50
+	#When true, the colony borders shown when holding the build tool will be in the colony's team color. When false, the colony you're inside will be white and any other colony will be red. [Default: true]
+	colonyteamborders = true
+```
+
+`minecolonies-server.toml`:
+```toml
+#All configuration items related to the core gameplay
+[gameplay]
+	#Amount of initial citizens. [Default: 4, min: 1, max: 10]
+	#Range: 1 ~ 10
+	initialcitizenamount = 4
+	#Should players be able to place an infinite amount of supply camps/ships? [Default: false]
+	allowinfinitesupplychests = false
+	#Should players be allowed to abandon their colony to create a new one easily? Note: This is buggy! [Default: false]
+	allowinfinitecolonies = false
+	#Should colonies in other dimensions be allowed? [Default: true]
+	allowotherdimcolonies = true
+	#Max citizens in one colony. [Default: 250, min: 100, max: 500]
+	#Range: 100 ~ 500
+	maxcitizenpercolony = 250
+	#Should development features be enabled (might be buggy)? [Default: false]
+	enableindevelopmentfeatures = false
+	#Should citizen name tags be rendered? [Default: true]
+	alwaysrendernametag = true
+	#Should workers work during the rain? [Default: false]
+	workersalwaysworkinrain = false
+	#Should special holiday content be displayed? [Default: true]
+	holidayfeatures = true
+	#Chance for the Miner to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".) [Default: 1, min: 0, max: 100]
+	#Range: 0 ~ 100
+	luckyblockchance = 1
+	#The minimum level a Town Hall has to be to allow teleportation to allied colonies. [Default: 3, min: 0, max: 5]
+	#Range: 0 ~ 5
+	minthleveltoteleport = 3
+	#Food consumption modifier. [Default: 1,000000, min: 0,100000, max: 100,000000]
+	#Range: 0.1 ~ 100.0
+	foodmodifier = 1.0
+	#How common diseases are. 1 = Very common, 100 = extremely rare. [Default: 5, min: 1, max: 100]
+	#Range: 1 ~ 100
+	diseasemodifier = 5
+	#If part of the colony is loaded by an owner/officer, should the colony be kept loaded? (Set how many chunks are loaded with the "Colony Chunk Loading Strictness" option.) [Default: true]
+	forceloadcolony = true
+	#Set how long chunks stay loaded after player leaves, does not persist through restarts. Default: 10min [Default: 10, min: 1, max: 1440]
+	#Range: 1 ~ 1440
+	loadtime = 10
+	#This controls how many chunks are loaded with the "Chunk Load Colony" option. The higher this value, the fewer chunks will be loaded. (The innermost chunks will be loaded first.) 1 = load all claimed chunks. [Default: 3, min: 1, max: 15]
+	#Range: 1 ~ 15
+	colonyloadstrictness = 3
+	#Max log count in one tree for the Forester to check during their tree search. [Default: 400, min: 1, max: 1000]
+	#Range: 1 ~ 1000
+	maxtreesize = 400
+	#Disables supply camp placing restrictions, intended for skyworlds and similar [Default: false]
+	nosupplyplacementrestrictions = false
+	#Raiders will spawn in the sky if this is enabled [Default: false]
+	skyraiders = false
+
+#All configurations related to the research system
+[research]
+	#Allows automatic and (near) instant completion of research for players in creative mode. If false, creative players will still be able to begin researches, but will have normal progress rates. [Default: true]
+	researchcreativecompletion = true
+	#Significantly increases the amount of information related to research datapacks that is logged during the world load. [Default: false]
+	researchdebuglog = false
+	#A list of items to charge players when undoing an already-completed research. 
+	researchresetcost = ["minecolonies:ancienttome:1"]
+
+#All configurations related to the MineColonies commands
+[commands]
+	#Should players be allowed to use the /mc rtp command? [Default: false]
+	canplayerusertpcommand = false
+	#Should players be allowed to use the /mc colony teleport command? [Default: false]
+	canplayerusecolonytpcommand = false
+	#Can players teleport to allied colonies? [Default: true]
+	canplayeruseallytownhallteleport = true
+	#Should players be allowed to use the /mc home command? Note: Only owners of the colony can use this command. [Default: false]
+	canplayerusehometpcommand = false
+	#Should players be allowed to use the /mc colony info command? [Default: true]
+	canplayeruseshowcolonyinfocommand = true
+	#Should players be allowed to use the /mc citizens kill command? [Default: false]
+	canplayerusekillcitizenscommand = false
+	#Should players be allowed to use the /mc colony addOfficer command? [Default: true]
+	canplayeruseaddofficercommand = true
+	#Should players be allowed to use the /mc colony delete command? [Default: false]
+	canplayerusedeletecolonycommand = false
+	#Should players be allowed to use the /mc colony requestsystem-reset command? [Default: false]
+	canplayeruseresetcommand = false
+
+#All configuration related to colony claims
+[claims]
+	#Maximum claim range for a colony. This is the radius, measured in chunks. [Default: 20, min: 1, max: 250]
+	#Range: 1 ~ 250
+	maxColonySize = 20
+	#The minimum distance (in chunks) between colonies. [Default: 8, min: 1, max: 200]
+	#Range: 1 ~ 200
+	minColonyDistance = 8
+	#Initial claim size for a colony. This is the radius, measured in chunks. [Default: 4, min: 1, max: 15]
+	#Range: 1 ~ 15
+	initialColonySize = 4
+	#Max distance (in blocks) from world spawn for a colony. [Default: 30000, min: 1000, max: 2147483647]
+	#Range: > 1000
+	maxdistancefromworldspawn = 30000
+	#Min distance (in blocks) from world spawn for a colony. [Default: 0, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	mindistancefromworldspawn = 0
+
+#All configuration items related to the combat elements of MineColonies
+[combat]
+	#minecolonies.config.dobarbariansspawn.comment [Default: true]
+	dobarbariansspawn = true
+	#minecolonies.config.barbarianhordedifficulty.comment [Default: 5, min: 0, max: 10]
+	#Range: 0 ~ 10
+	barbarianhordedifficulty = 5
+	#minecolonies.config.maxbarbariansize.comment [Default: 80, min: 6, max: 400]
+	#Range: 6 ~ 400
+	maxBarbarianSize = 80
+	#minecolonies.config.dobarbariansbreakthroughwalls.comment [Default: true]
+	dobarbariansbreakthroughwalls = true
+	#The average number of nights between raids. [Default: 14, min: 1, max: 50]
+	#Range: 1 ~ 50
+	averagenumberofnightsbetweenraids = 14
+	#The minimum number of nights between raids. [Default: 10, min: 1, max: 30]
+	#Range: 1 ~ 30
+	minimumnumberofnightsbetweenraids = 10
+	#Should mobs attack citizens? [Default: true]
+	mobattackcitizens = true
+	#minecolonies.config.shouldraiderbreakdoors.comment [Default: true]
+	shouldraiderbreakdoors = true
+	#minecolonies.config.guarddamagemultiplier.comment [Default: 1,000000, min: 0,100000, max: 15,000000]
+	#Range: 0.1 ~ 15.0
+	guardDamageMultiplier = 1.0
+	#Health multiplier for all Guards. [Default: 1,000000, min: 0,100000, max: 5,000000]
+	#Range: 0.1 ~ 5.0
+	guardhealthmult = 1.0
+	#Turn on MineColonies PVP mode (colonies can be destroyed and griefed under certain conditions). [Default: false]
+	pvp_mode = false
+
+#All permission configuration options
+[permissions]
+	#Should colony protection be enabled? [Default: true]
+	enablecolonyprotection = true
+	#Independent from the colony protection, should explosions be turned off inside colonies? DAMAGE_NOTHING prevents explosions completely. DAMAGE_PLAYERS, allows explosions to damage players and hostile mobs, but not blocks or neutral or friendly mobs. DAMAGE_ENTITIES allows damage to all entities. DAMAGE_EVERYTHING allows explosions to damage entities and blocks. 
+	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
+	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
+	#Blocks players should be able to interact with in any colony (ex: vending machines) 
+	freetointeractblocks = ["dirt", "0 0 0"]
+
+#All configuration related to mod compatibility
+[compatibility]
+	#Items consumed by citizens in the Library. 
+	configliststudyitems = ["minecraft:paper;400;100", "minecraft:book;600;10"]
+	#Items requested by Tavern visitors. 
+	configlistrecruitmentitems = ["minecraft:hay_block;3", "minecraft:book;2", "minecraft:enchanted_book;9", "minecraft:diamond;9", "minecraft:emerald;8", "minecraft:baked_potato;1", "minecraft:gold_ingot;2", "minecraft:redstone;2", "minecraft:lapis_lazuli;2", "minecraft:cake;11", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;3"]
+	#List of ore blocks rarely found magically by Miners (see "Ore Chance"). Includes the block and its chance, separated by exclamation marks. 
+	luckyores = ["minecraft:coal_ore!64", "minecraft:copper_ore!48", "minecraft:iron_ore!32", "minecraft:gold_ore!16", "minecraft:redstone_ore!8", "minecraft:lapis_ore!4", "minecraft:diamond_ore!2", "minecraft:emerald_ore!1"]
+	#All diseases citizens can get. The name, how common it is, and all ingredients to cure it. 
+	diseases = ["Influenza,100,minecraft:carrot,minecraft:potato", "Measles,10,minecraft:dandelion,minecraft:kelp,minecraft:poppy", "Smallpox,1,minecraft:honey_bottle,minecraft:golden_apple"]
+	#When loading recipes, generate audit CSV files to help debug datapacks or extra mods. [Default: false]
+	auditcraftingtags = false
+	#Enable inventory debugging. [Default: false]
+	debuginventories = false
+	#Turn this on if you're using this world for blueprint building and scanning. [Default: false]
+	blueprintbuildmode = false
+
+#All configurations related to pathfinding
+[pathfinding]
+	#Verbosity of pathfinding debug messages. [Default: 0, min: 0, max: 10]
+	#Range: 0 ~ 10
+	pathfindingdebugverbosity = 0
+	#Minimum number of consecutive rails for citizens to use them. [Default: 8, min: 5, max: 100]
+	#Range: 5 ~ 100
+	minimumrailstopath = 8
+	#Amount of additional threads to be used for pathfinding. [Default: 2, min: 1, max: 10]
+	#Range: 1 ~ 10
+	pathfindingmaxthreadcount = 2
+
+#All configurations related to the request system
+[requestSystem]
+	#Should the request system creatively resolve (if possible) when the player is required to resolve a request? This is a debugging tool and can take a very long time to resolve a request. [Default: false]
+	creativeresolve = false
+```
+{% /version %}
+
+{% version name="1.19.2" before=true %}
+### Client-Side Config
+
+#### Gameplay Configuration
+
+| Setting                   | Default | Description                                                                                                                                                                                                      |
+| ------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enablecitizenvoices       | true    | Citizens will talk. Set to false to turn off citizens talking.                                                                                                                                                   |
+| neighborbuildingrendering | true    | By default, when placing a schematic near other buildings, the already-placed buildings will show as if they were at level 5 and have a blue outline around them. You can disable that by setting this to false. |
+| colonyteamborders         | true    | The colony border will be the same as the colony's team color (set in the {% building name="townhall" /%}). Setting this to false will set your town border to white, and all other town borders to red.         |
+
+### Server-Side Config
+
+#### Name Configuration
+
+| Setting                                         | Default   | Description                                                                                                                                                                                                        |
+| ----------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| usemiddleinitial                                | true      | If this is set to false, citizen names won't have a middle initial. For example, "John Smith" instead of "John D. Smith".                                                                                          |
+| useeasternnameorder                             | false     | If this is set to true, citizen names will have the last name first. For example, "SmithJohn" instead of "John D. Smith" (it's recommended that if you enable this, also change the actual names to Eastern ones). |
+| malefirstnames<br>femalefirstnames<br>lastnames | (various) | Lists of names to be used for colonists. Comes pre-filled with English ones, but you can change it to whatever you like. We have some templates [here](/wiki/misc/customcitizennames).                             |
+
+#### Gameplay Configuration
+
+| Setting                       | Default | Description                                                                                                                                                                                                                                                                                                                                                                                              |
+| ----------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| initialcitizenamount          | 4       | The number of citizens you get when you first start your colony. If the number of your citizens ever goes below this, more citizens will spawn until it's at this number again.                                                                                                                                                                                                                          |
+| builderplaceconstructiontape  | true    | If this is set to false, no construction tape will be placed around buildings being built or upgraded.                                                                                                                                                                                                                                                                                                   |
+| allowinfinitesupplychests     | false   | By default, players can only place one (crafted) supply camp/ship. (However, supply camps/ships found in loot chests can be placed infinitely.) With this enabled, players can place an infinite number of crafted supply ships/camps.                                                                                                                                                                   |
+| allowinfinitecolonies         | false   | Allows players to abandon their colony to start a new one. **Note:** This is buggy!                                                                                                                                                                                                                                                                                                                      |
+| allowotherdimcolonies         | true    | This allows you to create colonies in the Nether, the End, and modded dimensions.                                                                                                                                                                                                                                                                                                                        |
+| citizenrespawninterval        | 60      | Changes the amount of time (ticks) before a new citizen spawns. This only applies when a colony is under the initial citizen number, however.                                                                                                                                                                                                                                                            |
+| maxcitizenpercolony           | 250     | The maximum limit of citizens that can exist in each colony. If you're below this limit and you can't get more citizens, you probably need to complete the [research](/wiki/systems/research) in the {% building name="university" /%} .                                                                                                                                                                 |
+| builderbuildblockdelay        | 15      | The delay (ticks) for placing blocks. Applies to Builders, Miners, and other colonists that place blocks.                                                                                                                                                                                                                                                                                                |
+| blockminingdelaymodifier      | 500     | The delay (ticks) for breaking blocks. Applies to Builders, Miners, and other colonists that mine blocks.                                                                                                                                                                                                                                                                                                |
+| enableindevelopmentfeatures   | false   | Enables some features geared toward developers.                                                                                                                                                                                                                                                                                                                                                          |
+| alwaysrendernametag           | true    | If disabled, citizen names will only show in the citizen GUI and not above their head.                                                                                                                                                                                                                                                                                                                   |
+| workersalwaysworkinrain       | false   | Workers won't normally work if it's raining. Enabling this option or completing the Rainman [research](/wiki/systems/research) causes them to continue working in rain.                                                                                                                                                                                                                                  |
+| sendenteringleavingmessages   | true    | Players entering or leaving a colony where they don't have the Receive Messages permission in, players will be send a message notifying them that they have entered/left the colony. Players that *do* have the Receive Messages permission in that colony will also be informed of this. If you disable this config option, neither type of player will get that message. This applies to all colonies. |
+| allowglobalnamechanges        | 1       | Sets if players can rename citizens with name tags. To set which players can change the names, see "Special Permissions Group" below.                                                                                                                                                                                                                                                                    |
+| holidayfeatures               | true    | Citizens get some special looks around holidays. Turn off this option to disable that.                                                                                                                                                                                                                                                                                                                   |
+| updaterate                    | 1       | Basically, how fast citizens think. Increasing it decreases how fast they "think", but improves performance. If you increase it too much, your citizens will take hours to do anything!                                                                                                                                                                                                                  |
+| dirtfromcompost               | 1       | How many dirt blocks the {% worker name="composter" /%} can get from filling one {% item name="compost_barrel" /%}.                                                                                                                                                                                                                                                                                      |
+| luckyblockchance              | 1       | The Miner has a chance to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). Change this to change their chance. This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".)                                                                                                                                    |
+| restrictbuilderunderground    | true    | By default, the Builder works slower when building underground. Disable this to make them work at the same rate both above and belowground. This can be useful for underground colonies.                                                                                                                                                                                                                 |
+| minthleveltoteleport          | 3       | By default, you can teleport to allied colonies from your {% building name="townhall" /%}. However, it requires a certain Town Hall level or higher (default 3). Here, you can change level.                                                                                                                                                                                                             |
+| suggestbuildtoolplacement     | true    | By default, when trying to place a hut without the {% item name="build_tool" /%}, a window will pop up suggesting you use it. Disabling this option will disable that window.                                                                                                                                                                                                                            |
+| foodmodifier                  | 1.0     | The multiplier for when citizens eat food.  Increasing this makes the citizens require more food.                                                                                                                                                                                                                                                                                                        |
+| diseasemodifier               | 5       | How common diseases are. Increasing this makes citizens get sick less often.                                                                                                                                                                                                                                                                                                                             |
+| forceloadcolony               | false   | If an owner/officer is inside the colony and this is enabled, some of the rest of the colony chunks will be kept loaded. Useful for large colonies. Set how many chunks are loaded with the below option.                                                                                                                                                                                                |
+| colonyloadstrictness          | 3       | Only takes effect if the above option is enabled. Set this higher to decrease the number of loaded chunks (the innermost chunks will be loaded first). Set to 1 to load all chunks.                                                                                                                                                                                                                      |
+| badvisitorchance              | 2       | Sometimes, a {% building name="tavern" /%} visitor will run off with the resources you give them instead of joining your colony. This option sets the percentage chance for them to do that.                                                                                                                                                                                                             |
+| generatesupplyloot            | true    | By default, {% item name="supply_camp_and_ship" /%} will generate in loot chests. You can disable that by setting this to false.                                                                                                                                                                                                                                                                         |
+| maxtreesize                   | 400     | The maximum logs in one tree for the {% building name="lumberjack" /%} to detect it as a tree.                                                                                                                                                                                                                                                                                                           |
+| nosupplyplacementrestrictions | false   | Disables supply camp placing restrictions.  This is intended for skyworlds and similar worldgen.                                                                                                                                                                                                                                                                                                         |
+| skyraiders                    | false   | Raiders will spawn in the sky if this is enabled. This is intended for skyworlds and similar worldgen.                                                                                                                                                                                                                                                                                                   |
+
+#### Research System Configuration
+
+| Setting                    | Default                         | Description                                                                                                                                                                                      |
+| -------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| researchcreativecompletion | true                            | Allows automatic and (near) instant completion of research for players in creative mode. If false, creative players will still be able to begin researches, but will have normal progress rates. |
+| researchdebuglog           | false                           | If true, this significantly increases the amount of information related to research datapacks that is logged during the world load.                                                              |
+| researchresetcost          | {% item name="ancient_tome" /%} | A list of items to charge players when undoing an already-completed research                                                                                                                     |
+
+#### Command Configuration
+
+| Setting                           | Default | Description                                                                                                                                                                        |
+| --------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| canplayerusertpcommand            | false   | Sets whether players can use the /mc rtp [command](/wiki/systems/command).                                                                                                         |
+| canplayerusecolonytpcommand       | false   | Sets whether players can use the /mc colony teleport command.                                                                                                                      |
+| canplayeruseallytownhallteleport  | true    | By default, players can teleport from their Town Hall to an allied colony. Turn off this option to disable that.                                                                   |
+| canplayerusehometpcommand         | false   | Sets whether players can use the /mc home command. However, even with this enabled, only owners of the colony can use this command, as you can be an officer in multiple colonies. |
+| canplayeruseshowcolonyinfocommand | true    | Sets whether players can use the /mc colony info command.                                                                                                                          |
+| canplayerusekillcitizenscommand   | false   | Sets whether players can use the /mc citizens kill command.                                                                                                                        |
+| canplayeruseaddofficercommand     | true    | Sets whether players can use the /mc colony addOfficer command.                                                                                                                    |
+| canplayerusedeletecolonycommand   | true    | Sets whether players can use the /mc colony delete command.                                                                                                                        |
+| numberofattemptsforsafetp         | 4       | when using /mc rtp, MineColonies will try several locations to see if they're safe and not within a colony before teleporting you. This sets the number of locations it will try.  |
+
+#### Claims Configuration
+
+| Setting                     | Default | Description                                                                                                                                                                              |
+| --------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| maxColonySize               | 20      | The max number of chunks that can be within a colony's [border](/wiki/systems/border).                                                                                                   |
+| minColonyDistance           | 8       | The minimum distance between two Town Halls, measured in chunks.                                                                                                                         |
+| initialColonySize           | 4       | The number of chunks (in radius) claimed when starting a new colony.                                                                                                                     |
+| restrictcolonyplacement     | false   | Should the min/max distance from spawn also affect colony placement? Enabling this sets whether the below two options have any effect.                                                   |
+| maxdistancefromworldspawn   | 8000    | Sets the maximum distance (in blocks) from spawn a colony can be started at. Only takes effect if the previous option is set to true.                                                    |
+| mindistancefromworldspawn   | 512     | Sets the minimum distance (in blocks) from spawn a colony can be started at. Only takes effect if "Should the min/max distance from spawn also affect colony placement?" is set to true. |
+| officersreceiveadvancements | true    | Sets if officers of a colony will receive advancements for things done in that colony. Disabling this means that only the colony owner will receive advancements.                        |
+
+#### Combat Configuration
+
+| Setting                           | Default | Description                                                                                                                                                                                                                                  |
+| --------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dobarbariansspawn                 | true    | Disable this setting to turn off raids.                                                                                                                                                                                                      |
+| barbarianhordedifficulty          | 5       | The difficulty setting for raiders. The higher the number, the higher the difficulty.                                                                                                                                                        |
+| spawnbarbariansize                | 5       | The minimum size (percentage) of a raider horde. By default, this is 5 (or 50%).  If the game decides to spawn 10 raiders, by default only 5 will spawn.                                                                                     |
+| maxBarbarianSize                  | 80      | The maximum total size of a raider horde.                                                                                                                                                                                                    |
+| dobarbariansbreakthroughwalls     | true    | Whether or not raiders can break, scale, and bridge obstacles.                                                                                                                                                                               |
+| averagenumberofnightsbetweenraids | 14      | The average number of nights between raids.                                                                                                                                                                                                  |
+| minimumnumberofnightsbetweenraids | 10      | The minimum number of nights between raids.                                                                                                                                                                                                  |
+| mobattackcitizens                 | true    | By default mobs will attack citizens.                                                                                                                                                                                                        |
+| shouldraiderbreakdoors            | true    | Whether or not raiders can break through doors.                                                                                                                                                                                              |
+| citizencallforhelp                | true    | By default, citizens will call for nearby guards if attacked                                                                                                                                                                                 |
+| rangerdamagemult                  | 1.0     | Attack damage multiplier for {% worker name="archer" /%}.                                                                                                                                                                                    |
+| knightdamagemult                  | 1.0     | Attack damage multiplier for {% worker name="knight" /%}.                                                                                                                                                                                    |
+| guardhealthmult                   | 1.0     | Health multiplier for all Guards.                                                                                                                                                                                                            |
+| pvp_mode                          | false   | Enabling this option turns on MineColonies PvP mode. Colonies can be destroyed and griefed under certain conditions, which can be set in the Enemies permission settings in the Town Hall.  **Note:** PvP mode has not been fleshed out yet. |
+| daysuntilpirateshipsdespawn       | 3       | Days until the pirate ships despawn                                                                                                                                                                                                          |
+| maxyforbarbarians                 | 200     | Max Y level (height) for raiders to spawn.                                                                                                                                                                                                   |
+
+#### Permission Configuration
+
+| Setting                          | Default           | Description                                                                                                                                       |
+| -------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enablecolonyprotection           | true              | By default, colony protection is on. This enables the Permission system in the Town Hall.                                                         |
+| maxkeptbackups                   | 50                | Sets the maximum amount of backups kept.                                                                                                          |
+| turnoffexplosionsincolonies      | "DAMAGE_ENTITIES" | By default, explosions within colony borders only affect players & citizens, not blocks.  This can be changed to nothing, players, or everything. |
+| specialpermgroup                 | ["_Raycoms_"]     | Players who have special permissions to change citizen names (see "Name Changes" above).                                                          |
+| freetointeractblocks             | ["dirt", "0 0 0"] | Blocks players should be able to interact with in any colony. You can list a type of block or specific locations.                                 |
+| secondsBetweenPermissionMessages | 30                | Seconds between each permission message.                                                                                                          |
+
+#### Mod Compatibility Configuration
+
+| Setting                       | Default     | Description                                                                                                                                                                                                                                                                                                                 |
+| ----------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enabledmodtags                | (various)   | List of recognized and enabled tags.                                                                                                                                                                                                                                                                                        |
+| configliststudyitems          | Paper, book | Items consumed by citizens in the Library. The first value is item name, the second value is skillchance (between 100 and 1000), and the third value is breakchance (between 100 and 0).                                                                                                                                    |
+| configlistrecruitmentitems    | (various)   | Items requested by Tavern visitors. The first value is the item, the second value is the quantity.                                                                                                                                                                                                                          |
+| luckyores                     | (various)   | List of ore blocks rarely found magically by Miners (see "Ore Chance"). The first value is the block and the second value its chance.                                                                                                                                                                                       |
+| enchanterexperiencemultiplier | 2.0         | Experience multiplier of the enchanter (how much more experience do they get from a citizen than they drain).                                                                                                                                                                                                               |
+| dynamictreeharvestsize        | 5           | Forester harvest trunk size for dynamic trees                                                                                                                                                                                                                                                                               |
+| fishingroddurabilityadjustt2  | 6           | Offset for the maximum durability unenchanted rod a T2 Fishing Hut can use, compared to iron tools (250). Thermal Foundation Iron requires +6. T3 huts can use unenchanted rods of any durability level, so long as they can take damage at all. Anything below -250 will only allow vanilla rods, except as allowed by T1. |
+| fishingroddurabilityadjustt1  | 22          | Offset for the maximum durability unenchanted rod a T1 Fishing Hut can use, compared to other wooden tools (59). Vanilla rods always work, but equivalents would need +6. Default value allows up to Thermal Foundation Silver  Anything below -59 will only allow vanilla rods.                                            |
+| diseases                      | (various)   | All diseases citizens can get. The name, how common it is, and all ingredients to cure it.                                                                                                                                                                                                                                  |
+| debuginventories              | false       | Enable inventory debugging.                                                                                                                                                                                                                                                                                                 |
+| auditcraftingtags             | false       | Generate crafting_audit.csv on loading recipes to verify tags.                                                                                                                                                                                                                                                              |
+
+#### Pathfinding Configuration
+
+| Setting                   | Default | Description                                                                            |
+| ------------------------- | ------- | -------------------------------------------------------------------------------------- |
+| pathfindingdebugverbosity | 0       | Increasing this value makes longer pathfinding debug messages.                         |
+| minimumrailstopath        | 8       | The minimum number of consecutive rails to be detected as a path for a citizen to use. |
+| pathfindingmaxthreadcount | 2       | Amount of additional threads to be used for pathfinding. Affects performance.          |
+
+#### Request System Configuration
+
+| Setting                  | Default | Description                                                                                                                             |
+| ------------------------ | ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| enabledebuglogging       | false   | Enabling this setting puts request system debug information in the debug.log                                                            |
+| maximalretries           | 3       | The maximum amount of tries that the request system will perform for retryable requests. Increasing this number increases server load.  |
+| delaybetweenretries      | 1200    | The amount of ticks between retries of the request system for retryable requests. Decreasing this number increases server load.         |
+| creativeresolve          | false   | Enable only when debugging.  The request system will creatively resolve (if possible) when the player is required to resolve a request. |
+| canplayeruseresetcommand | false   | Sets whether players can use the /mc colony requestsystem-reset command.                                                                |
+{% /version %}

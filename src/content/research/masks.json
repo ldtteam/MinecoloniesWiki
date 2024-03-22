@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"firstaid2","name":"Masks","requirements":[{"type":"building","building":"library","level":3},{"type":"item","items":["minecraft/white_wool"],"quantity":32}],"effects":{"masks":1},"researchLevel":3}

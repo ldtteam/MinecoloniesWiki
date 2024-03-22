@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: minecraft/iron_ingot
+  item2: minecraft/iron_ingot
+  item3: minecraft/iron_ingot
+row2:
+  item1: minecraft/iron_nugget
+  item2:
+  item3: minecraft/iron_nugget
+row3:
+  item1: minecraft/iron_nugget
+  item2:
+  item3: minecraft/iron_nugget
+output: minecraft/chainmail_leggings

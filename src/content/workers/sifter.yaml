@@ -1,0 +1,11 @@
+name: Sifter
+plural: Sifters
+type: gatherer
+traits:
+  primary: Focus
+  secondary: Strength
+effects:
+  primary: Better quality items found
+  secondary: Faster sifting
+buildings:
+  - sifter

@@ -1,0 +1,18 @@
+name: Crusher's Hut
+plural: Crusher Huts
+workers:
+  - crusher
+recipes:
+  - minecolonies/blockhutcrusher
+settings:
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+  - name: Item
+    description: Here you can set what item you want the Crusher to make. (See the above lists.)
+  - name: Daily Limit
+    description: This setting allows you to further limit the number of blocks that can be crushed in a day. The maximum is set by the hut level (see above).

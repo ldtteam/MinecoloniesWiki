@@ -1,0 +1,44 @@
+type: shaped
+row1:
+  item1:
+  item2:
+  item3:
+row2:
+  item1:
+    - minecraft/oak_boat
+    - minecraft/spruce_boat
+    - minecraft/birch_boat
+    - minecraft/jungle_boat
+    - minecraft/acacia_boat
+    - minecraft/dark_oak_boat
+  item2:
+  item3:
+    - minecraft/oak_boat
+    - minecraft/spruce_boat
+    - minecraft/birch_boat
+    - minecraft/jungle_boat
+    - minecraft/acacia_boat
+    - minecraft/dark_oak_boat
+row3:
+  item1:
+    - minecraft/oak_boat
+    - minecraft/spruce_boat
+    - minecraft/birch_boat
+    - minecraft/jungle_boat
+    - minecraft/acacia_boat
+    - minecraft/dark_oak_boat
+  item2:
+    - minecraft/oak_boat
+    - minecraft/spruce_boat
+    - minecraft/birch_boat
+    - minecraft/jungle_boat
+    - minecraft/acacia_boat
+    - minecraft/dark_oak_boat
+  item3:
+    - minecraft/oak_boat
+    - minecraft/spruce_boat
+    - minecraft/birch_boat
+    - minecraft/jungle_boat
+    - minecraft/acacia_boat
+    - minecraft/dark_oak_boat
+output: minecolonies/supply_ship

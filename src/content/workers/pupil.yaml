@@ -1,0 +1,11 @@
+name: Pupil
+plural: Pupils
+type: other
+traits:
+  primary: Intelligence & Knowledge
+  secondary: Mana
+effects:
+  primary: Pupil stats increase faster
+  secondary: Quicker switching between pupils
+buildings:
+  - school

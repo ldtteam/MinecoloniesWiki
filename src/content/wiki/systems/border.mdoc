@@ -1,0 +1,56 @@
+---
+type: page
+title: Colony Border System
+---
+
+Colonies have an area of claimed chunks (16x16 block areas) around them. Upon colony creation, a colony claims chunks in a square around it. The radius is set with the [config](/wiki/misc/configfile) setting *initialColonySize*, which has a default of 4 chunks (not including the chunk the Town Hall is in).
+
+Those claims are protected from modification through other players. See the [Colony Protection System](/wiki/systems/protection) page for more information.
+
+Extending your claim area can be done by building huts. Huts claim a square area around them after they are built, expanding all sides from the chunk the hutblock is located in. How much they claim depends on the building. They won't claim over the max range, set with the [config](/wiki/misc/configfile) setting *maxColonySize*, which has a default radius of 20 chunks from the chunk the Town Hall is in. 
+
+Deconstructing a building *will* remove the chunks it claimed. If you want to delete the colony, check the {% building name="townhall" /%} page.
+
+### Building Claim Areas:
+
+#### {% building name="townhall" /%}
+
+| Level | Additional Chunks |
+| ----- | ----------------- |
+| 1     | 1 Chunk Radius    |
+| 2     | 1 Chunk Radius    |
+| 3     | 2 Chunk Radius    |
+| 4     | 3 Chunk Radius    |
+| 5     | 5 Chunk Radius    |
+
+#### {% building name="guardtower" /%}
+
+| Level | Additional Chunks |
+| ----- | ----------------- |
+| 1     | 2 Chunk Radius    |
+| 2     | 3 Chunk Radius    |
+| 3     | 3 Chunk Radius    |
+| 4     | 4 Chunk Radius    |
+| 5     | 5 Chunk Radius    |
+
+#### {% building name="barracks" /%}
+
+| Level | Additional Chunks |
+| ----- | ----------------- |
+| 1     | 2 Chunk Radius    |
+| 2     | 2 Chunk Radius    |
+| 3     | 2 Chunk Radius    |
+| 4     | 2 Chunk Radius    |
+| 5     | 2 Chunk Radius    |
+
+> When the barracks is level 4, and all it's towers are level 4 as well, the radius is increased to **3 Chunks**.
+
+#### Other buildings
+
+| Level | Additional Chunks |
+| ----- | ----------------- |
+| 1     | 1 Chunk Radius    |
+| 2     | 1 Chunk Radius    |
+| 3     | 1 Chunk Radius    |
+| 4     | 2 Chunk Radius    |
+| 5     | 2 Chunk Radius    |

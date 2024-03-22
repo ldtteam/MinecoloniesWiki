@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"rainbowheaven","name":"Honey Pot","requirements":[{"type":"building","building":"beekeeper","level":3},{"type":"item","items":["minecraft/beehive"],"quantity":16}],"effects":{"beekeep2unlock":1},"researchLevel":4}

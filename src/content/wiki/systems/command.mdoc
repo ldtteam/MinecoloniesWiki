@@ -1,0 +1,101 @@
+---
+type: page
+title: Command System
+---
+
+These are the in-game commands currently available. Most require that a user have operator privileges to work and that a singleplayer world has cheats enabled.
+
+**Warning:** These commands are not intended for normal gameplay use and should only be used when debugging. Some have the potential to delete your colony or break it!
+
+- [Base Commands](#base-commands)
+- [Colony Commands](#colony-commands)
+- [Citizens Commands](#citizens-commands)
+- [Kill Commands](#kill-commands)
+
+**Command Syntax**
+
+| If you see this...  | Then...                                                 |
+| ------------------- | ------------------------------------------------------- |
+| `plaintext`         | Enter this exactly as shown                             |
+| `<angle brackets>`  | This is a **required** argument                         |
+| `[square brackets]` | This is an **optional** argument                        |
+| `x - y - z`         | Pick one of these options (can be optional or required) |
+
+## Base Commands
+
+| Command                                    | Permissions | Command Description                                                                                                   |
+| ------------------------------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------- |
+| `/mc backup`                               | OP          | Makes a backup of all colony data.                                                                                    |
+| `/mc help`                                 | ALL         | Lists the wiki and the [Discord](https://discord.minecolonies.com) links in the chat.                                 |
+| `/mc home`                                 | ALL         | Teleports a colony owner back to the {% building name="townhall" /%}of their colony.                                  |
+| `/mc raid-All <now - tonight> <raid type>` | OP          | Schedules a raid for every colony. You can choose if it starts now or the next Minecraft night, as well as its type.  |
+| `/mc resetsupplies <player>`               | OP          | Resets the ability to place a supply camp or ship.                                                                    |
+| `/mc rtp`                                  | ALL         | Randomly teleports you. Will place you outside the range of someone else's colony.                                    |
+| `/mc whereami`                             | ALL         | Outputs how far away the player is from a colony (if they are near one) or that there are no colonies nearby.         |
+| `/mc whoami`                               | ALL         | Outputs your name, the name of your colony, your colony ID number, and the coordinates for the center of your colony. |
+
+## Colony Commands
+
+{% version name="1.19" after=true %}
+| Command                                                          | Permissions | Command Description                                                                                                                                                 |
+| ---------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/mc colony addOfficer <colony ID> <player>`                     | ALL         | Adds an officer to a colony. For more information on officers, visit the {% building name="townhall" /%} page and look at the Permissions section of the GUI.       |
+| `/mc colony canSpawnRaiders <colony ID> <canSpawn>`              | OP          | Adds or removes the ability to spawn raiders in a colony.                                                                                                           |
+| `/mc colony claim <colony ID> [number of chunks] [true - false]` | OP          | Claims a specified number of chunks for a colony (or removes claimed chunks) based off the player's location.                                                       |
+| `/mc colony delete <colony ID> [true - false] [true - false]`    | ALL         | Deletes a colony and optionally delete all buildings (as long as the hut block is still placed).                                                                    |
+| `/mc colony info <colony ID>`                                    | ALL         | Shows some basic information about the colony specified (ID, name, mayor, citizens, coordinates, last contact with mayor, and if the colony can be deleted or not). |
+| `/mc colony list [page]`                                         | ALL         | Shows a list of all the colonies in this world and their ID, name, and coordinates.                                                                                 |
+| `/mc colony loadAllColoniesFromBackup`                           | OP          | Loads all colonies from a backup.                                                                                                                                   |
+| `/mc colony loadBackup <colony ID>`                              | OP          | Loads an individual colony from a backup.                                                                                                                           |
+| `/mc colony raid <now - tonight> <colony ID> <raid type>`        | OP          | Schedules a raid for the specified colony. You can choose if it starts now or the next Minecraft night, as well as its type.                                        |
+| `/mc colony requestsystem-reset <colony ID>`                     | ALL         | Refreshes a specified colony's request system, making all workers resubmit requests.                                                                                |
+| `/mc colony requestsystem-reset-all`                             | OP          | Refreshes all colonies' request systems, making all workers in all colonies resubmit requests.                                                                      |
+| `/mc colony setAbandoned <colony ID>`                            | ALL         | Sets a colony to abandoned and without a mayor.                                                                                                                     |
+| `/mc colony setDeletable <colony ID>`                            | OP          | Sets whether a colony can be marked for auto-deletion or not.                                                                                                       |
+| `/mc colony setowner <colony ID> <player>`                       | ALL         | Changes the owner of a colony                                                                                                                                       |
+| `/mc colony teleport <colony ID>`                                | ALL         | Teleports the player to the specified colony.                                                                                                                       |
+{% /version %}
+
+{% version name="1.18.2" before=true %}
+| Command                                                          | Permissions | Command Description                                                                                                                                                 |
+| ---------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/mc colony addOfficer <colony ID> <player>`                     | ALL         | Adds an officer to a colony. For more information on officers, visit the {% building name="townhall" /%} page and look at the Permissions section of the GUI.       |
+| `/mc colony canSpawnRaiders <colony ID> <canSpawn>`              | OP          | Adds or removes the ability to spawn raiders in a colony.                                                                                                           |
+| `/mc colony claim <colony ID> [number of chunks] [true - false]` | OP          | Claims a specified number of chunks for a colony (or removes claimed chunks) based off the player's location.                                                       |
+| `/mc colony delete <colony ID> [delete Buildings]`               | ALL         | Deletes a colony and optionally delete all buildings (as long as the hut block is still placed).                                                                    |
+| `/mc colony info <colony ID>`                                    | ALL         | Shows some basic information about the colony specified (ID, name, mayor, citizens, coordinates, last contact with mayor, and if the colony can be deleted or not). |
+| `/mc colony list [page]`                                         | ALL         | Shows a list of all the colonies in this world and their ID, name, and coordinates.                                                                                 |
+| `/mc colony loadAllColoniesFromBackup`                           | OP          | Loads all colonies from a backup.                                                                                                                                   |
+| `/mc colony loadBackup <colony ID>`                              | OP          | Loads an individual colony from a backup.                                                                                                                           |
+| `/mc colony raid <now - tonight> <colony ID> <raid type>`        | OP          | Schedules a raid for the specified colony. You can choose if it starts now or the next Minecraft night, as well as its type.                                        |
+| `/mc colony requestsystem-reset <colony ID>`                     | ALL         | Refreshes a specified colony's request system, making all workers resubmit requests.                                                                                |
+| `/mc colony requestsystem-reset-all`                             | OP          | Refreshes all colonies' request systems, making all workers in all colonies resubmit requests.                                                                      |
+| `/mc colony setAbandoned <colony ID>`                            | ALL         | Sets a colony to abandoned and without a mayor.                                                                                                                     |
+| `/mc colony setDeletable <colony ID>`                            | OP          | Sets whether a colony can be marked for auto-deletion or not.                                                                                                       |
+| `/mc colony setowner <colony ID> <player>`                       | ALL         | Changes the owner of a colony                                                                                                                                       |
+| `/mc colony teleport <colony ID>`                                | ALL         | Teleports the player to the specified colony.                                                                                                                       |
+{% /version %}
+
+## Citizens Commands
+
+| Command                                                     | Permissions | Command Description                                                                      |
+| ----------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------- |
+| `/mc citizens info <colony ID> <citizen ID>`                | ALL         | Gives basic information about a specified citizen in a colony such as their ID and name. |
+| `/mc citizens kill <colony ID> <citizen ID>`                | ALL         | Kills a specified citizen in a colony.                                                   |
+| `/mc citizens list <colony ID> [page]`                      | ALL         | Lists all citizens in a colony with each citizen's ID and name (9 results per page).     |
+| `/mc citizens reload <colony ID> <citizen ID>`              | ALL         | Reloads a specified citizen in a colony.                                                 |
+| `/mc citizens spawnNew <colony ID>`                         | ALL         | Spawns a new citizen in a colony.                                                        |
+| `/mc citizens teleport <colony ID> <citizen ID> <location>` | ALL         | Teleports a specified citizen to a given location.                                       |
+| `/mc citizens walk <colony ID> <citizen ID> <location>`     | ALL         | Tells a specified citizen to walk to a given location.                                   |
+
+## Kill Commands
+
+| Command            | Permissions | Command Description                                                                        |
+| ------------------ | ----------- | ------------------------------------------------------------------------------------------ |
+| `/mc kill raider`  | OP          | Kills all raiders (barbarians, pirates, vikings, or egyptian raiders) inside all colonies. |
+| `/mc kill animals` | OP          | Kills all animals (peaceful mobs) inside all colonies.                                     |
+| `/mc kill monster` | OP          | Kills all monsters (hostile mobs) inside all colonies.                                     |
+| `/mc kill chicken` | OP          | Kills all chickens inside all colonies.                                                    |
+| `/mc kill cow`     | OP          | Kills all cows inside all colonies.                                                        |
+| `/mc kill pig`     | OP          | Kills all pigs inside all colonies.                                                        |
+| `/mc kill sheep`   | OP          | Kills all sheep inside all colonies.                                                       |

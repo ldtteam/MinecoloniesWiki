@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"steelbracing","name":"Diamond Coated","requirements":[{"type":"item","items":["minecraft/diamond"],"quantity":128}],"effects":{"tooldurabilitymultiplier":5},"researchLevel":6}

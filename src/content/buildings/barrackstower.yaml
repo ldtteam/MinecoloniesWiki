@@ -1,0 +1,29 @@
+name: Barracks Tower
+plural: Barracks Towers
+workers:
+  - archer
+  - druid
+  - knight
+settings:
+  - name: Task
+    description: This is where you can choose if you want the Guard to patrol, follow, or guard.
+    options:
+      - name: Patrol
+        description: The guard will patrol an area you designate in **Patrol Settings**.
+      - name: Guard
+        description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate the guard location.
+      - name: Follow
+        description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
+  - name: Retreat on low health
+    description: Here you can choose if the Guard will attempt to retreat when they have low health.
+  - name: Hire Trainee
+    description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility ({% building name="archery" /%} for {% worker name="archer" plural=true /%} and {% building name="combatacademy" /%} for {% worker name="knight" plural=true /%}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building name="townhall" /%} GUI.
+  - name: Patrol Mode
+    description: This is where you can choose how you want the Guard to patrol.
+    options:
+      - name: Automatic
+        description: The Guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
+      - name: Manual
+        description: You can set the patrol route when you click on **Set Positions**. You will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
+  - name: Follow Mode
+    description: This is where you can choose how you want the Guard to follow you. Only available when the **Task** is set to **Follow**. If you choose **Loose Grouping**, the Guard will stay close to you, but not as close as if you choose **Tight Grouping**.

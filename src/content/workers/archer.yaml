@@ -1,0 +1,13 @@
+name: Archer
+plural: Archers
+type: guard
+traits:
+  primary: Agility
+  secondary: Adaptability
+effects:
+  primary: More damage
+  secondary: Greater range
+buildings:
+  - archery
+  - barrackstower
+  - guardtower

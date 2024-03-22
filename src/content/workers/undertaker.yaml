@@ -1,0 +1,11 @@
+name: Undertaker
+plural: Undertakers
+type: other
+traits:
+  primary: Strength
+  secondary: Mana
+effects:
+  primary: Faster grave digging
+  secondary: Increases chance to revive dead citizens
+buildings:
+  - graveyard

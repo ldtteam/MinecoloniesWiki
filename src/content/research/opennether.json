@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"morescrolls","name":"Open the Nether","requirements":[{"type":"item","items":["minecraft/gilded_blackstone"],"quantity":3}],"effects":{"blockhutnetherworker":1},"researchLevel":2}

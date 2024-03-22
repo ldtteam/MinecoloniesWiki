@@ -1,0 +1,29 @@
+---
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+
+import type { BaseBuildingContentBlockProps } from '../types';
+
+interface Props extends BaseBuildingContentBlockProps {
+  header: string;
+  imageKey: string;
+  imageAlt: string;
+  defaultOn: boolean;
+}
+
+const { defaultOn, ...rest } = Astro.props;
+---
+
+<BuildingContentBlock {...rest}>
+  <slot />
+
+  <p>
+    Each row contains a button to toggle the usage of this item on or off. By default this is <b
+      >{defaultOn ? 'on' : 'off'}</b
+    > for all items.
+  </p>
+  <p>There are also two controls on the page:</p>
+  <ul>
+    <li>The black box at the top is a search field.</li>
+    <li>Reset to default allows you to reset everything to <b>${defaultOn ? 'on' : 'off'}</b></li>
+  </ul>
+</BuildingContentBlock>

@@ -1,0 +1,11 @@
+name: Florist
+plural: Florists
+type: gatherer
+traits:
+  primary: Dexterity
+  secondary: Agility
+effects:
+  primary: Greater chance to successfully harvest flowers
+  secondary: Decreases flower growth time
+buildings:
+  - florist

@@ -1,0 +1,7 @@
+name: Restaurant
+plural: Restaurants
+workers:
+  - cook
+  - assistantcook
+recipes:
+  - minecolonies/blockhutcook

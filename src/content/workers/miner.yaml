@@ -1,0 +1,11 @@
+name: Miner
+plural: Miners
+type: gatherer
+traits:
+  primary: Strength
+  secondary: Stamina
+effects:
+  primary: Faster block breaking
+  secondary: Faster block placing
+buildings:
+  - miner

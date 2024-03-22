@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"stonecake","name":"Rocking Roll","requirements":[{"type":"building","building":"stonemason","level":1},{"type":"item","items":["minecraft/stone"],"quantity":64}],"effects":{"blockhutcrusher":1},"researchLevel":2}

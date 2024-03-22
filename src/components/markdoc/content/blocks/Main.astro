@@ -1,0 +1,68 @@
+---
+import BuildingName from '@components/markdoc/BuildingName.astro';
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import WorkerName from '@components/markdoc/WorkerName.astro';
+
+import type { BaseBuildingContentBlockProps } from '../types';
+
+type Props = BaseBuildingContentBlockProps;
+---
+
+<BuildingContentBlock {...Astro.props} header="main interface" imageKey="main" imageAlt="Main interface">
+  <ul>
+    <li><b>Header:</b></li>
+    <ul>
+      <li><b>Building Name:</b> Shows the name of the building, including the level of the building.</li>
+      <li>
+        <b>Pencil:</b> Allows you to rename the building. The level of the building will always be listed after the
+        name.
+      </li>
+      <li><b>Assigned Workers:</b> Tells you the workers assigned to this building.</li>
+    </ul>
+    <li><b>Controls:</b></li>
+    <ul>
+      <li>
+        <b>Manage Workers:</b> Lets you change which workers are assigned to work at this hut. <b>Note:</b> this only
+        works if you have turned the worker hiring mode, in the <BuildingName {...Astro.props} name="townhall" /> or in
+        the hut itself, to manual, otherwise citizens will be hired automatically.
+      </li>
+      <li>
+        <b>Recall Workers:</b> Recalls the workers at this building to the building. You might use it if they are stuck
+        somewhere, you want to see what they have, or want to give them something directly.
+      </li>
+      <li>
+        <b>Build Options:</b> Lets you create a build, upgrade, or repair build order for this hut. To learn more about
+        the building system, please visit the <WorkerName name="builder" /> page.
+      </li>
+    </ul>
+    <li><b>Request System:</b></li>
+    <ul>
+      <li>
+        <b>Pickup Priority:</b> You can set the priority that a <WorkerName name="courier" /> will visit this hut and
+        pick up items (when the worker at this hut issues a request), or you can tell <WorkerName
+          name="courier"
+          plural
+        /> to <i>never</i> visit this hut to pick up items. (For the pickup priority, 10 is the highest.)
+      </li>
+      <li>
+        <b>Request Pickup Now:</b> You can click this button in order to tell any available <WorkerName
+          name="courier"
+        /> to come and pick up all the items from the building
+      </li>
+    </ul>
+    <li><b>Footer:</b></li>
+    <ul>
+      <li><b>Info Button:</b> Some huts have an in-game guide. Press the ? button to access it.</li>
+      <li>
+        <b>Inventory:</b> Here you can access the hut block's storage, where the worker at this hut takes and deposits
+        materials. They will also use any <a href="/wiki/items/rack">racks</a> that were placed in the hut when it was
+        built or upgraded, so be sure to check those as well!
+      </li>
+      <li>
+        <b>Chest Icon:</b> Click this button to see all the items in the hut's storage (including the hut block's
+        inventory and any racks that came with the hut). Clicking the ? button next to an item's count will highlight
+        the storage container it's in.
+      </li>
+    </ul>
+  </ul>
+</BuildingContentBlock>

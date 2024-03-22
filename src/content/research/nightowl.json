@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"circus","name":"Night Owl","requirements":[{"type":"building","building":"library","level":2},{"type":"item","items":["minecraft/golden_carrot"],"quantity":25}],"effects":{"workingdayhaddition":1},"researchLevel":3}

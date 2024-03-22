@@ -1,0 +1,34 @@
+---
+import Card from '@components/ui/Card.astro';
+import type { ArrayElement } from '@utils/util';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  member: ArrayElement<CollectionEntry<'team'>['data']>;
+}
+
+const { member } = Astro.props;
+---
+
+<li>
+  <Card class="p-4">
+    {
+      member.uuid && (
+        <img
+          src={`https://crafatar.com/renders/body/${member.uuid}?overlay=true&scale=4`}
+          class="float-md-left pt-3"
+          alt={`Minecraft skin for ${member.username}`}
+        />
+      )
+    }
+
+    <h3 class="pt-3">{member.username}</h3>
+    <p class={member.joinedYear ? 'mb-0' : ''}>{member.realName}</p>
+    {member.joinedYear !== undefined && <p class="mb-2">Joined: {member.joinedYear}</p>}
+    <p style={{ whiteSpace: 'pre' }}>{member.sub.join('\n')}</p>
+    <p>
+      <em>{member.tagline}</em>
+    </p>
+    <div class="clearfix"></div>
+  </Card>
+</li>

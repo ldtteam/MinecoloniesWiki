@@ -1,0 +1,26 @@
+---
+import Card from '@components/ui/Card.astro';
+
+interface Props {
+  expand?: boolean;
+  class?: string;
+}
+
+const { expand = false, class: cssClass } = Astro.props;
+---
+
+<div class={cssClass}>
+  <Card padding={2} class={expand ? 'h-100' : ''}>
+    {
+      Astro.slots.has('title') && (
+        <h2 class="text-center">
+          <slot name="title" />
+        </h2>
+      )
+    }
+
+    <hr />
+
+    <slot />
+  </Card>
+</div>

@@ -1,0 +1,29 @@
+---
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+
+import type { BuildingCraftingContentBlockProps } from '../types';
+
+type Props = BuildingCraftingContentBlockProps;
+
+const { noRemove, noTeach, ...rest } = Astro.props;
+---
+
+<BuildingContentBlock {...rest} header="brewing recipes" imageKey="brewing-recipes" imageAlt="Brewing recipes">
+  <p>Here you can see all the brewing recipes this building knows.</p>
+
+  <p>
+    The arrows allow you to move them up or down in priority. You are also able to disable {noRemove ? '' : 'or remove'}
+     specific recipes.
+  </p>
+
+  {
+    noTeach && (
+      <ul>
+        <li>
+          <b>Teach Recipe:</b> When clicking teach recipe, it opens a brewing grid which allows you to teach this hut
+          brewing recipes (not the worker).
+        </li>
+      </ul>
+    )
+  }
+</BuildingContentBlock>

@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"remembrance","name":"Undertaker Emergency","requirements":[{"type":"building","building":"graveyard","level":2},{"type":"item","items":["minecraft/iron_boots"],"quantity":1}],"effects":{"undertakerrun":1},"researchLevel":2}

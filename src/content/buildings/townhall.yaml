@@ -1,0 +1,5 @@
+name: Town Hall
+plural: Town Halls
+singular: true
+recipes:
+  - minecolonies/blockhuttownhall

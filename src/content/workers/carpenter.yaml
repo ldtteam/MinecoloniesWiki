@@ -1,0 +1,11 @@
+name: Carpenter
+plural: Carpenters
+type: crafter
+traits:
+  primary: Knowledge
+  secondary: Dexterity
+effects:
+  primary: Increases chance of decreasing materials needed
+  secondary: Faster crafting
+buildings:
+  - sawmill

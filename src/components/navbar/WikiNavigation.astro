@@ -1,0 +1,55 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import VersionSelector from '@components/version/VersionSelector.astro';
+import { getCollection } from 'astro:content';
+
+import { getWikiPages } from '../../util/wiki';
+import Navlink from './Navlink.astro';
+
+const versions = await getCollection('versions');
+const wikiPagesPerVersion = await Promise.all(
+  versions.map(async (version) => ({
+    version,
+    wikiPages: await getWikiPages(version)
+  }))
+);
+---
+
+<nav class="navbar navbar-expand-lg navbar-light ribbon ribbon-secondary m-0">
+  <div class="container">
+    <div class="navbar-collapse collapse">
+      {
+        wikiPagesPerVersion.map(({ version, wikiPages }) => (
+          <VersionContent versions={[version]}>
+            <ul class="navbar-nav">
+              <Navlink href="/wiki" name="Wiki Home" root thin />
+
+              {Object.entries(wikiPages).map(([category, categoryInfo]) => (
+                <Navlink name={categoryInfo.type.data.name} root thin href={`/wiki/${category}`} exact={false}>
+                  {categoryInfo.pages.map((page) => {
+                    if (page.type === 'page') {
+                      return <Navlink name={page.name} href={`/wiki/${page.slug}`} />;
+                    } else if (page.type === 'subcategory') {
+                      return (
+                        <Navlink name={page.name}>
+                          {page.pages.map((subPage) => (
+                            <Navlink name={subPage.name} href={`/wiki/${subPage.slug}`} />
+                          ))}
+                        </Navlink>
+                      );
+                    }
+
+                    return undefined;
+                  })}
+                </Navlink>
+              ))}
+            </ul>
+          </VersionContent>
+        ))
+      }
+      <ul class="ms-auto navbar-nav">
+        <VersionSelector />
+      </ul>
+    </div>
+  </div>
+</nav>

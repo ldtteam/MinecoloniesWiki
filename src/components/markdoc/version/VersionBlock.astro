@@ -1,0 +1,28 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import { getEntry } from 'astro:content';
+
+import { getVersionNumbers } from '../../../util/version';
+
+interface Props {
+  name: string;
+  before: boolean;
+  after: boolean;
+  inline: boolean;
+}
+
+const { name, before, after, inline } = Astro.props;
+
+const currentVersion = await getEntry('versions', name);
+if (currentVersion === undefined) {
+  throw Error(
+    `Provided version "${name}" does not exist. Either pick a different version or configure the version in the versions list.`
+  );
+}
+
+const versions = await getVersionNumbers(currentVersion, before, after);
+---
+
+<VersionContent versions={versions} inline={inline}>
+  <slot />
+</VersionContent>

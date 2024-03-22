@@ -1,0 +1,11 @@
+name: Swineherd
+plural: Swineherds
+type: animals
+traits:
+  primary: Strength
+  secondary: Athletics
+effects:
+  primary: More damage per attack
+  secondary: Faster pig growth
+buildings:
+  - swineherd

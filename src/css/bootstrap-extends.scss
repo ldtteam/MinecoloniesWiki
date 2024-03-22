@@ -1,0 +1,82 @@
+@use 'sass:color';
+
+.nav-link {
+  color: inherit !important;
+  text-decoration: none;
+
+  &.active,
+  &:hover,
+  &:focus {
+    text-shadow: 0 0 0.5em;
+  }
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: var(--background-color);
+  border: 3px solid #e0d2ae;
+}
+
+.dropdown-item {
+  background-color: var(--background-color);
+  color: var(--text-color) !important;
+
+  &:hover,
+  &:active,
+  &.active {
+    background-color: #faeed0 !important;
+  }
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+}
+
+.dropdown-submenu a::after {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.dark {
+  & .dropdown-menu {
+    background-color: var(--bs-dark);
+    border: 3px solid var(--bs-light);
+  }
+
+  & .dropdown-item {
+    background-color: var(--bs-dark) !important;
+
+    &:hover,
+    &:active,
+    &.active {
+      background-color: #1e2022 !important;
+    }
+  }
+
+  .table {
+    @extend .table-dark;
+  }
+}
+
+.blockquote-border {
+  padding: 0.5em;
+  box-shadow:
+    0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+
+  & > *:last-child {
+    margin-bottom: 0 !important;
+  }
+}

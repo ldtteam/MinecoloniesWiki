@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"opera","name":"Theater","requirements":[{"type":"item","items":["minecraft/enchanted_golden_apple"],"quantity":16}],"effects":{"happinessmultiplier":5},"researchLevel":6}

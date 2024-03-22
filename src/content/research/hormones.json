@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"nurture","name":"Hormones","requirements":[{"type":"building","building":"school","level":3},{"type":"item","items":["minecraft/cooked_chicken"],"quantity":64}],"effects":{"growthmultiplier":2},"researchLevel":3}

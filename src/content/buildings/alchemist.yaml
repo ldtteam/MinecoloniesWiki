@@ -1,0 +1,6 @@
+name: Alchemist Laboratory
+plural: Alchemist Laboratories
+workers:
+  - alchemist
+recipes:
+  - minecolonies/blockhutalchemist

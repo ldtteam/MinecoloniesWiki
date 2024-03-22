@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+import { formatForgeString, toTitleCase } from '../../../util/string';
+import BuildingName from '../BuildingName.astro';
+
+interface Props {
+  effect: string;
+  level: number;
+}
+
+const { effect, level } = Astro.props;
+
+const effectData = await getEntry('research_effect', effect);
+if (effectData === undefined) {
+  throw new Error(`Unknown research effect '${effect}'.`);
+}
+
+function parseFormatString(format: string, effectStrength: number = 0, absoluteEffectStrength: number = 0): string {
+  // Forge format specifiers
+  format = formatForgeString(
+    format,
+    effectStrength.toString(),
+    absoluteEffectStrength.toString(),
+    Math.round(effectStrength * 100).toString(),
+    Math.round(absoluteEffectStrength * 100).toString()
+  );
+
+  return toTitleCase(format);
+}
+
+function parseRegularEffectFormat(
+  effectData: Extract<CollectionEntry<'research_effect'>['data'], { type: 'regular' }>
+) {
+  const format = effectData.format;
+  if (effectData.levels) {
+    const currentLevel = effectData.levels[level - 1];
+    const previousLevel = level === 1 ? 0 : effectData.levels[level - 2];
+    const effectStrength = currentLevel - previousLevel;
+    return parseFormatString(format, effectStrength, currentLevel);
+  }
+
+  return parseFormatString(format, undefined);
+}
+---
+
+{effectData.data.type === 'regular' && parseRegularEffectFormat(effectData.data)}
+{
+  effectData.data.type === 'building' && (
+    <span>
+      Unlocks <BuildingName name={effectData.data.building.id} />
+    </span>
+  )
+}

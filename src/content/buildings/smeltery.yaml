@@ -1,0 +1,6 @@
+name: Smeltery
+plural: Smelteries
+workers:
+  - smelter
+recipes:
+  - minecolonies/blockhutsmeltery

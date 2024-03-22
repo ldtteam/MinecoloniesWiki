@@ -1,5 +1,5 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "wiki.fullname" . -}}
+{{- $fullName := include "website.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
 {{- if semverCompare ">=1.19-0" .Capabilities.KubeVersion.GitVersion -}}
 apiVersion: networking.k8s.io/v1
@@ -12,7 +12,7 @@ kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    {{- include "wiki.labels" . | nindent 4 }}
+    {{- include "website.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
@@ -23,7 +23,7 @@ spec:
         {{- range .Values.ingress.hosts }}
         - {{ . | quote }}
         {{- end }}
-      secretName: "minecolonies-wiki-tls"
+      secretName: "minecolonies-website-tls"
   rules:
     {{- range .Values.ingress.hosts }}
     - host: {{ . | quote }}

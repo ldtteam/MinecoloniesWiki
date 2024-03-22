@@ -1,0 +1,11 @@
+name: Assistant Cook
+plural: Assistant Cooks
+type: crafter
+traits:
+  primary: Creativity
+  secondary: Knowledge
+effects:
+  primary: Faster cook time
+  secondary: Increases chance of decreasing materials needed
+buildings:
+  - cook

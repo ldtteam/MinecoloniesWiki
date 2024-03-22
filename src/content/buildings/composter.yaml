@@ -1,0 +1,11 @@
+name: Composter's Hut
+plural: Composter Huts
+workers:
+  - composter
+recipes:
+  - minecolonies/blockhutcomposter
+settings:
+  - name: Produce Dirt
+    description: Turning this on will make dirt instead of compost. It also occassionally produces podzol.
+  - name: Min Warehouse Stock
+    description: This is the minimum number of an item to be left in the warehouse before the hut will request and compost other items. The default is 16.

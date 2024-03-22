@@ -1,0 +1,9 @@
+type: custom
+items:
+  - item: minecraft/flint
+output: minecolonies/flint_mesh
+conditions:
+  - type: building
+    building: stonemason
+  - type: research
+    research: flintmesh

@@ -1,0 +1,42 @@
+---
+import WikiNavigation from '@components/navbar/WikiNavigation.astro';
+import Layout, { type TitleVersion } from '@layouts/Default.astro';
+import { getCollection } from 'astro:content';
+
+import { getWikiTitle } from '../../util/wiki';
+
+export async function getStaticPaths() {
+  const collection = await getCollection('wiki');
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { slug } = Astro.params;
+
+const versions = await getCollection('versions');
+const titleVersions = await Promise.all<TitleVersion>(
+  versions.map(async (version) => ({
+    version,
+    title: await getWikiTitle(version, entry)
+  }))
+);
+const { Content } = await entry.render();
+---
+
+<Layout title={titleVersions} titleAffix="MineColonies Wiki">
+  <WikiNavigation slot="after-nav" />
+
+  <Content frontmatter={entry.data} />
+
+  <hr />
+  <p class="text-center">
+    If changes are needed or you think there is content missing, feel free to
+    <a href={`https://github.com/ldtteam/MinecoloniesWiki/edit/main/src/content/wiki/${slug}.mdoc`}>edit</a>
+     this page (the button at the top right) or submit an
+    <a href="https://github.com/ldtteam/MinecoloniesWiki/issues/new/choose"> issue</a>
+     for us to make edits. - MineColonies Wiki Team
+  </p>
+</Layout>

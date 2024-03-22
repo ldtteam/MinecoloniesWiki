@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"enhanced_gates1","name":"Enhanced Gates II","requirements":[{"type":"item","items":["minecolonies/gate_iron"],"quantity":64},{"type":"item","items":["minecolonies/ancienttome"],"quantity":2},{"type":"item","items":["minecraft/obsidian"],"quantity":32}],"effects":{"enhancesgatedurabilityaddition":2},"researchLevel":4}

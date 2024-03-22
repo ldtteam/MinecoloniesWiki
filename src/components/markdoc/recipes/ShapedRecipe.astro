@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import RecipeSlot from './RecipeSlot.astro';
+
+interface Props {
+  recipe: Extract<CollectionEntry<'recipes'>['data'], { type: 'shaped' }>;
+}
+
+const { recipe } = Astro.props;
+---
+
+<div class="inputs">
+  <RecipeSlot items={recipe.row1.item1} />
+  <RecipeSlot items={recipe.row1.item2} />
+  <RecipeSlot items={recipe.row1.item3} />
+  <RecipeSlot items={recipe.row2.item1} />
+  <RecipeSlot items={recipe.row2.item2} />
+  <RecipeSlot items={recipe.row2.item3} />
+  <RecipeSlot items={recipe.row3.item1} />
+  <RecipeSlot items={recipe.row3.item2} />
+  <RecipeSlot items={recipe.row3.item3} />
+</div>
+<div class="output">
+  <RecipeSlot items={recipe.output} amount={recipe.amount} large />
+</div>
+
+<style>
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 2em);
+    grid-template-rows: repeat(3, 2em);
+  }
+
+  .output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>

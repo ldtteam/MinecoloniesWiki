@@ -1,0 +1,11 @@
+name: Cook
+plural: Cooks
+type: crafter
+traits:
+  primary: Adaptability
+  secondary: Knowledge
+effects:
+  primary: Faster cook time
+  secondary: Increases chance of decreasing materials needed
+buildings:
+  - cook

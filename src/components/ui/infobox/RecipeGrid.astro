@@ -1,0 +1,41 @@
+---
+import Recipe from '@components/markdoc/recipes/Recipe.astro';
+
+interface Props {
+  recipes: string[];
+}
+
+const { recipes } = Astro.props;
+---
+
+{
+  recipes.length !== 0 && (
+    <>
+      <hr />
+      <div class="recipe-grid">
+        <p class="m-0">
+          <b>{recipes.length > 1 ? 'Recipes:' : 'Recipe:'}</b>
+        </p>
+        <div class="recipe-list">
+          {recipes.map((recipe) => (
+            <Recipe recipe={recipe} />
+          ))}
+        </div>
+      </div>
+    </>
+  )
+}
+
+<style>
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: auto max-content;
+    gap: 0.5em;
+  }
+
+  .recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+</style>

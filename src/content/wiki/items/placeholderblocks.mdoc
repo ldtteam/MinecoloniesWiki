@@ -1,0 +1,58 @@
+---
+type: item-combined
+title: Placeholder Blocks
+items:
+  - structurize/blocksubstitution
+  - structurize/blocksolidsubstitution
+  - structurize/blockfluidsubstitution
+---
+The placeholder blocks (also called substitution blocks) are tan, brown, and blue. The tan block is the placeholder block, the brown is the solid placeholder block, and the blue is the fluid placeholder block. Each serves its own function. 
+
+All kinds of placeholder blocks can be crafted at the {% building name="sawmill" /%}.
+
+You can make and use these blocks in survival, but they are mainly used to scan schematics.
+
+{% item_infobox item="structurize/blocksubstitution" %}
+## Placeholder
+
+The regular placeholder is the most common placeholder block, it is essentially a "keep what is already here" placeholder.
+
+- If the original block is air, keep it as air.
+- If the original block is a non solid block, keep the same block.
+- If the original block is a solid block, keep the same block.
+- If the original block is a fluid, keep the same fluid.
+
+> ![Placeholder Example](@assets/images/wiki/misc/example_placeholder.png)
+{% /item_infobox %}
+
+{% item_infobox item="structurize/blocksolidsubstitution" %}
+## Solid Placeholder
+
+The solid placeholder is mostly used for foundations of buildings, these will place a solid block in case there is a non solid block there.
+
+- If the original block is air, place a solid block.
+- If the original block is a non solid block, replace with a solid block.
+- If the original block is a solid block, keep the same block.
+- If the original block is a fluid, replace with a solid block.
+
+> When the {% worker name="builder" /%} is responsible for placing a solid block, it will use the Fill Block defined in the {% building name="builder" /%} it's GUI.
+
+> ![Solid Placeholder Example](@assets/images/wiki/misc/example_solid_placeholder.png)
+{% /item_infobox %}
+
+{% item_infobox item="structurize/blockfluidsubstitution" %}
+## Fluid Placeholder
+
+The fluid placeholder is intended for setting up fluid in schematics. The fluid placeholder will place the preferred fluid for the given dimension (i.e. water in overworld, lava in the nether, etc.).
+If there are already blocks in place of the fluid placeholder, they will stay there.
+
+- If the original block is air, place a fluid.
+- If the original block is a non solid block, replace with a fluid.
+- If the original block is a solid block, keep the same block.
+- If the original block is a fluid, keep the same fluid.
+
+> Be careful when using fluid placeholders next to waterlogged blocks when schematics are intended to be placed in the nether.
+> This can cause the waterlogged blocks to come into contact with lava and create cobblestone/stone/obsidian.
+
+> ![Fluid Placeholder Example](@assets/images/wiki/misc/example_fluid_placeholder.png)
+{% /item_infobox %}

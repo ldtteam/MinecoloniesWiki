@@ -1,0 +1,1 @@
+{"tree":"technology","parent":"memoryaid","name":"Builder Modes","requirements":[{"type":"building","building":"builder","level":3},{"type":"item","items":["minecraft/diamond_axe"],"quantity":1}],"effects":{"buildermodeunlock":1},"researchLevel":3}

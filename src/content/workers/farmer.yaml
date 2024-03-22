@@ -1,0 +1,11 @@
+name: Farmer
+plural: Farmers
+type: gatherer
+traits:
+  primary: Stamina
+  secondary: Athletics
+effects:
+  primary: Less time cycling between planting and harvesting
+  secondary: Faster planting and harvesting
+buildings:
+  - farmer

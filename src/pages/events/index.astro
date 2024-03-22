@@ -1,0 +1,11 @@
+---
+import EventList from '@components/EventList.svelte';
+import Layout from '@layouts/Default.astro';
+import { getCollection } from 'astro:content';
+
+const eventsRaw = await getCollection('events');
+---
+
+<Layout title="Events">
+  <EventList events={eventsRaw} />
+</Layout>

@@ -1,0 +1,35 @@
+---
+import BuildingName from '@components/markdoc/BuildingName.astro';
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+
+import type { BuildingCraftingContentBlockProps } from '../types';
+
+type Props = BuildingCraftingContentBlockProps;
+
+const { noRemove, noTeach, ...rest } = Astro.props;
+---
+
+<BuildingContentBlock {...rest} header="crafting recipes" imageKey="crafting-recipes" imageAlt="Crafting recipes">
+  <p>
+    Here you can see all the <a href="../dependencies/domumornamentum">Domum Ornamentum</a> this building knows. These
+    are crafted just like you were using an Architects cutter.
+  </p>
+
+  <p>
+    The arrows allow you to move them up or down in priority. You are also able to disable {noRemove ? '' : 'or remove'}
+     specific recipes.
+  </p>
+
+  {
+    noTeach && (
+      <ul>
+        <li>
+          <b>Teach Recipe:</b> When clicking teach recipe, it opens a crafting menu for the Architects Cutter. It will
+          show multiple inputs, similar to the amount of inputs in the Architects Cutter. When you have put the items in
+          the slots, you will see various items below the input slots, the <BuildingName {...rest} /> can create
+          <b>ALL</b> of those items from the recipe you have input.
+        </li>
+      </ul>
+    )
+  }
+</BuildingContentBlock>

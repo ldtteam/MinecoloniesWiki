@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  versions: CollectionEntry<'versions'>[];
+  inline?: boolean;
+}
+
+const { versions, inline = false } = Astro.props;
+const versionNumbers = versions.map((version) => version.data.order).join(',');
+---
+
+{
+  inline ? (
+    <span data-versions={versionNumbers}>
+      <slot />
+    </span>
+  ) : (
+    <div data-versions={versionNumbers}>
+      <slot />
+    </div>
+  )
+}

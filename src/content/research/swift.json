@@ -1,0 +1,1 @@
+{"tree":"civilian","parent":"agile","name":"Swift","requirements":[{"type":"building","building":"townhall","level":5},{"type":"item","items":["minecraft/rabbit_foot"],"quantity":32}],"effects":{"walkingmultiplier":3},"researchLevel":5}

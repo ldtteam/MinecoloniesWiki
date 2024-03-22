@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"regeneration","name":"Avoid","requirements":[{"type":"building","building":"guardtower","level":4},{"type":"item","items":["minecraft/emerald"],"quantity":8}],"effects":{"fleeingspeedaddition":1},"researchLevel":3}

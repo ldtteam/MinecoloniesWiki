@@ -1,0 +1,1 @@
+{"tree":"unlockable","parent":"stringmesh","name":"Flint Mesh","requirements":[{"type":"building","building":"sifter","level":3}],"effects":{"sifterflintunlock":1},"researchLevel":2}

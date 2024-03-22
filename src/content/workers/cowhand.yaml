@@ -1,0 +1,11 @@
+name: Cowhand
+plural: Cowhands
+type: animals
+traits:
+  primary: Athletics
+  secondary: Stamina
+effects:
+  primary: More damage per attack
+  secondary: Cows grow up faster
+buildings:
+  - cowhand

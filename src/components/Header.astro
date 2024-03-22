@@ -1,0 +1,20 @@
+---
+import RegularLogo from '@assets/images/minecolonies_logo_medium.png';
+import WikiLogo from '@assets/images/minecolonies_logo_wiki_medium.png';
+import { Image } from 'astro:assets';
+
+interface Props {
+  isWiki: boolean;
+}
+
+const { isWiki = false } = Astro.props;
+---
+
+<div class="text-center">
+  <Image
+    src={isWiki ? WikiLogo : RegularLogo}
+    alt="Minecolonies Logo"
+    style={{ maxWidth: '100%', height: 'auto' }}
+    loading="eager"
+  />
+</div>

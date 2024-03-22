@@ -1,0 +1,18 @@
+---
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+
+import type { BaseBuildingContentBlockProps } from '../types';
+
+type Props = BaseBuildingContentBlockProps;
+---
+
+<BuildingContentBlock {...Astro.props} header="hostiles" imageKey="hostiles" imageAlt="Hostiles list">
+  <p>
+    You can tell the Guard which mobs to attack and which ones to ignore. All hostile mobs are set to **on** by default.
+  </p>
+  <p>There are also two controls on the page:</p>
+  <ul>
+    <li>The black box at the top is a search field.</li>
+    <li>Reset to default allows you to reset everything to <b>on</b></li>
+  </ul>
+</BuildingContentBlock>

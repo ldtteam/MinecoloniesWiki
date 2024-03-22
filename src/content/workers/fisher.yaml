@@ -1,0 +1,11 @@
+name: Fisher
+plural: Fishers
+type: gatherer
+traits:
+  primary: Focus
+  secondary: Agility
+effects:
+  primary: Less time to catch something
+  secondary: Less time to catch something
+buildings:
+  - fisherman

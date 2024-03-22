@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+$bg-color-light: #fffaee;
+$bg-color-dark: #080a0f;
+$color-light: #212529;
+$color-dark: #e0dbd1;
+
+:root {
+  --background-color-light: #{$bg-color-light};
+  --background-color-dark: #{$bg-color-dark};
+  --color-light: #{$color-light};
+  --color-dark: #{$color-dark};
+  --text-color: var(--color-light);
+  --background-color: var(--background-color-light);
+}
+
+@import './bootstrap-vars.scss';
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import './bootstrap-extends.scss';
+@import './mixins.scss';
+
+@import './ribbon.scss';
+@import './codeblock.scss';
+
+.dark {
+  --text-color: var(--color-dark);
+  --background-color: var(--background-color-dark);
+}
+
+// Core styles
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Fondamento';
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:target {
+  scroll-margin-top: 5em;
+}
+
+.page_root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 1em;
+
+  & > * {
+    flex: 0;
+  }
+}
+
+.page_content {
+  flex-grow: 1;
+}
+
+/* BACKGROUND STYLES  */
+.modal-content {
+  border: 1px solid var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* GLOBAL STYLES */
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  text-align: center;
+  overflow: hidden;
+  opacity: initial;
+}
+
+.dark hr {
+  background: #ccc;
+  background-image: linear-gradient(to right, #333, #ccc, #333);
+}
+
+.bghome {
+  & .page_header {
+    color: var(--color-dark);
+  }
+
+  & hr {
+    background-color: var(--color-dark);
+    background-image: none;
+  }
+}
+
+.sidenav {
+  background:
+    url('/images/bg_right.png') right center repeat-y,
+    linear-gradient(to right, var(--background-color) 95%, transparent 95%);
+  padding-right: 36px;
+  border: unset;
+}
+
+.dark .sidenav {
+  background:
+    url('/images/bg_dark_right.jpg') right center repeat-y,
+    linear-gradient(to right, var(--background-color) 95%, transparent 95%);
+}
+
+.sidenav a,
+.sidenav a:focus,
+.sidenav a:hover {
+  color: var(--color);
+}
+
+.dark .btn-close {
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0dbd1'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+}

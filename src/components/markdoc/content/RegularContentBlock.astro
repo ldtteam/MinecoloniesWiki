@@ -1,0 +1,16 @@
+---
+import ContentBlock from '@components/ui/content/ContentBlock.astro';
+
+interface Props {
+  image: string;
+  image_alt?: string;
+  cols?: number;
+}
+
+const { image, image_alt: imageAlt = '', cols = 4 } = Astro.props;
+---
+
+<ContentBlock cols={cols}>
+  <img slot="left" src={image} alt={imageAlt} />
+  <slot />
+</ContentBlock>

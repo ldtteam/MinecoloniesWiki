@@ -1,0 +1,11 @@
+name: Chicken Farmer
+plural: Chicken Farmers
+type: animals
+traits:
+  primary: Adaptability
+  secondary: Agility
+effects:
+  primary: Greater chance to pick up eggs/meat/feathers
+  secondary: Greater chance to successfully hit chicken
+buildings:
+  - chickenfarmer

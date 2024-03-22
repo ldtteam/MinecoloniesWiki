@@ -1,0 +1,9 @@
+name: Library Student
+plural: Library Students
+type: other
+traits:
+  primary: Intelligence
+effects:
+  primary: Affects leveling speed of other skills
+buildings:
+  - library

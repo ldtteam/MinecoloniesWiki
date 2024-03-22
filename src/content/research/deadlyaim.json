@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"woundingshot","name":"Deadly Aim","requirements":[{"type":"item","items":["minecraft/flint"],"quantity":256}],"effects":{"archerdamageaddition":5},"researchLevel":6}
