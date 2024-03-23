@@ -66,12 +66,23 @@ const itemData = await Promise.all(
               >
                 {item.icons.map((icon, index) => (
                   <swiper-slide>
-                    <Image
-                      data-pagefind-meta={index === 0 ? 'image[src], image_alt[alt]' : ''}
-                      src={icon}
-                      alt={item.name}
-                      width={300}
-                    />
+                    {typeof icon === 'string' ? (
+                      <img
+                        src={icon}
+                        alt={item.name}
+                        loading="lazy"
+                        decoding="async"
+                        width={300}
+                        data-pagefind-meta={index === 0 ? 'image[src], image_alt[alt]' : ''}
+                      />
+                    ) : (
+                      <Image
+                        src={icon}
+                        alt={item.name}
+                        width={300}
+                        data-pagefind-meta={index === 0 ? 'image[src], image_alt[alt]' : ''}
+                      />
+                    )}
                   </swiper-slide>
                 ))}
               </swiper-container>

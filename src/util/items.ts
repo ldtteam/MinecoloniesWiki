@@ -10,7 +10,7 @@ interface ParsedItemId {
 
 interface ItemFetcherResponse {
   name: string;
-  icons: ImageMetadata[];
+  icons: Array<string | ImageMetadata>;
   link: string | undefined;
 }
 
@@ -23,7 +23,7 @@ type ItemFetcher = (
 interface ItemVersionData extends ParsedItemId {
   name: string;
   link: string | undefined;
-  icons: ImageMetadata[];
+  icons: Array<string | ImageMetadata>;
   versions: CollectionEntry<'versions'>[];
 }
 
@@ -100,11 +100,22 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
     const parsedItemName = itemData.displayName.replaceAll(' ', '_');
 
     if (requireImages) {
+      const extension = imageExtensionOverrides[item.id] ?? "png";
+      const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
+
+      if (extension == "gif") {
+        // Gifs are not optimizable by Squoosh, so we have to forward them as raw images
+        return {
+          name: itemData.displayName,
+          icons: [url],
+          link: `https://minecraft.wiki/w/${parsedItemName}`
+        };
+      }
+
       const image = await getImage({
-        src: `https://minecraft.wiki/images/Invicon_${parsedItemName}.${imageExtensionOverrides[item.id] ?? 'png'}`,
+        src: url,
         width: 32,
-        height: 32,
-        format: ''
+        height: 32
       });
 
       return {
