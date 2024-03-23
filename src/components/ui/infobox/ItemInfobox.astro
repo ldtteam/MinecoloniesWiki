@@ -49,7 +49,11 @@ const recipeData = await getEntry('recipes', item);
           >
             {item.icons.map((icon) => (
               <swiper-slide>
-                <Image src={icon} alt="" width={150} />
+                {typeof icon === 'string' ? (
+                  <img src={icon} alt={item.name} loading="lazy" decoding="async" width={150} />
+                ) : (
+                  <Image src={icon} alt={item.name} width={150} />
+                )}
               </swiper-slide>
             ))}
           </swiper-container>
