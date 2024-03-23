@@ -32,7 +32,7 @@
     "date-fns": "^2.30.0",
     "minecraft-data": "^3.55.0",
     "pagefind": "^1.0.4",
-    "sharp": "^0.33.1",
+    "sharp": "^0.33.3",
     "svelte": "^4.2.8",
     "swiper": "^11.0.6",
     "vite": "^5.0.12"
