@@ -2,18 +2,18 @@
 interface Props {
   class?: string;
   padding?: number;
+  autoSize?: boolean;
 }
 
-const { class: cssClass, padding = 1.5 } = Astro.props;
+const { class: cssClass, padding = 1.5, autoSize = false } = Astro.props;
 ---
 
-<div class:list={['box', cssClass]} style={{ padding: `${padding}em` }}>
+<div class:list={['box', autoSize ? '' : 'box-min', cssClass]} style={{ padding: `${padding}em` }}>
   <slot />
 </div>
 
 <style>
   .box {
-    width: min-content;
     background:
       url('/images/card/card_top_left.png') top left/16px 16px no-repeat,
       url('/images/card/card_top_right.png') top right no-repeat,
@@ -23,6 +23,10 @@ const { class: cssClass, padding = 1.5 } = Astro.props;
       url('/images/card/card_right.png') right center repeat-y,
       url('/images/card/card_top.png') top center repeat-x,
       url('/images/card/card_bottom.png') bottom center repeat-x;
+  }
+
+  .box-min {
+    width: min-content;
   }
 
   :global(.dark) .box {

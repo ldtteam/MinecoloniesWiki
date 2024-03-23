@@ -11,7 +11,7 @@ interface Props {
 const { sponsor } = Astro.props;
 ---
 
-<Card class="d-flex">
+<Card class="d-flex" autoSize>
   <a href={sponsor.link} class="m-auto">
     <img src={sponsor.image} class="m-auto d-block" alt={sponsor.imageAlt} style={{ width: '100%' }} />
   </a>

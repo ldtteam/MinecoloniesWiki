@@ -10,7 +10,7 @@ interface Props {
 const { supporter } = Astro.props;
 ---
 
-<Card class="text-center p-4">
+<Card class="text-center p-4" autoSize>
   <h3>{supporter.name}</h3>
   <img
     src={`https://crafatar.com/renders/body/${

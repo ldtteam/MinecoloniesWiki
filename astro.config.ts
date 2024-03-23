@@ -1,7 +1,7 @@
 import markdoc from '@astrojs/markdoc';
 import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
-import { defineConfig } from 'astro/config';
+import { defineConfig , squooshImageService } from 'astro/config';
 import icon from 'astro-icon';
 import { register } from 'swiper/element/bundle';
 
@@ -15,7 +15,8 @@ export default defineConfig({
   output: 'static',
   site: 'https://minecolonies.com',
   image: {
-    domains: ['minecraft.wiki']
+    domains: ['minecraft.wiki'],
+    service: squooshImageService(),
   },
   redirects: {
     '/source/[...slug]': '/wiki/[...slug]'
