@@ -5,11 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: container.ldtteam.com/ldtteam/minecolonies/website
+  repository: harbor.cluster.ldtteam.com/website/main:latest
   pullPolicy: Always
   tag: latest
-
-imagePullSecrets: [{ name: "regcred" }]
 
 ingress:
   enabled: true
