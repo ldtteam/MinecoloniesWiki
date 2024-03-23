@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: harbor.cluster.ldtteam.com/website/main:latest
+  repository: harbor.cluster.ldtteam.com/website/main
   pullPolicy: Always
   tag: latest
 
