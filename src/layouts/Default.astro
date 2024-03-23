@@ -99,7 +99,6 @@ const headerText =
       }
 
       document.addEventListener('astro:page-load', setup);
-      document.addEventListener('DOMContentLoaded', setup);
     </script>
 
     <ViewTransitions />
@@ -108,8 +107,7 @@ const headerText =
     <PageRoot isHome={isHome}>
       <div class="page_root p-5">
         <Header isWiki={isWikiPage} />
-        <Navigation />
-        <slot name="after-nav" />
+        <Navigation isWiki={isWikiPage} />
 
         <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
           <h1 data-pagefind-meta="title" class="page_header text-center">

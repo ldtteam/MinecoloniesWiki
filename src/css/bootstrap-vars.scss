@@ -3,6 +3,9 @@ $table-bg: transparent;
 $enable-grid-classes: false;
 $enable-cssgrid: true;
 
+$offcanvas-bg-color: var(--background-color);
+$offcanvas-color: var(--text-color);
+
 @import '/node_modules/bootstrap/scss/functions';
 @import '/node_modules/bootstrap/scss/variables';
 @import '/node_modules/bootstrap/scss/variables-dark';

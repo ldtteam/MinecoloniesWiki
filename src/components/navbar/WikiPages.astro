@@ -1,0 +1,51 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import { getWikiPages } from '@utils/wiki';
+import { getCollection } from 'astro:content';
+
+import Navlink from './Navlink.astro';
+
+interface Props {
+  isAppbar?: boolean;
+}
+
+const { isAppbar = false } = Astro.props;
+
+const versions = await getCollection('versions');
+const wikiPagesPerVersion = await Promise.all(
+  versions.map(async (version) => ({
+    version,
+    wikiPages: await getWikiPages(version)
+  }))
+);
+---
+
+{
+  wikiPagesPerVersion.map(({ version, wikiPages }) => (
+    <VersionContent versions={[version]}>
+      <ul class="navbar-nav">
+        <Navlink href="/wiki" name="Wiki Home" root thin={isAppbar} />
+
+        {Object.entries(wikiPages).map(([category, categoryInfo]) => (
+          <Navlink name={categoryInfo.type.data.name} root thin={isAppbar} href={`/wiki/${category}`} exact={false}>
+            {categoryInfo.pages.map((page) => {
+              if (page.type === 'page') {
+                return <Navlink name={page.name} href={`/wiki/${page.slug}`} />;
+              } else if (page.type === 'subcategory') {
+                return (
+                  <Navlink name={page.name}>
+                    {page.pages.map((subPage) => (
+                      <Navlink name={subPage.name} href={`/wiki/${subPage.slug}`} />
+                    ))}
+                  </Navlink>
+                );
+              }
+
+              return undefined;
+            })}
+          </Navlink>
+        ))}
+      </ul>
+    </VersionContent>
+  ))
+}

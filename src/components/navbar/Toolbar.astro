@@ -1,0 +1,82 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<li class="nav-item">
+  <a href="https://www.patreon.com/minecolonies" class="nav-link" aria-label="Patreon link">
+    <Icon name="fa6-brands:patreon" color="#f96854" />
+  </a>
+</li>
+<li class="nav-item">
+  <a href="https://www.youtube.com/user/MrPMardle" class="nav-link" aria-label="Youtube link">
+    <Icon name="fa6-brands:youtube" color="#ff0000" />
+  </a>
+</li>
+<li class="nav-item">
+  <a href="https://discord.minecolonies.com" class="nav-link" aria-label="Discord link">
+    <Icon name="fa6-brands:discord" color="#7289da" />
+  </a>
+</li>
+<li class="nav-item">
+  <a href="https://twitter.com/minecoloniesmod" class="nav-link" aria-label="Twitter link">
+    <Icon name="fa6-brands:twitter" color="#1da1f2" />
+  </a>
+</li>
+<li class="nav-item">
+  <a href="https://reddit.com/r/minecolonies" class="nav-link" aria-label="Reddit link">
+    <Icon name="fa6-brands:reddit" color="#ff4500" />
+  </a>
+</li>
+<li class="nav-item">
+  <button class="theme-switcher mx-2 btn btn-outline-dark">
+    <Icon class="select-theme-light" name="fa6-solid:sun" color="yellow" />
+    <Icon class="select-theme-dark" name="fa6-solid:moon" color="yellow" />
+  </button>
+</li>
+
+<script>
+  function toggleTheme() {
+    const value = localStorage.getItem('theme');
+    if (value === 'light') {
+      updateTheme('dark');
+    } else {
+      updateTheme('light');
+    }
+  }
+
+  function updateTheme(value: string) {
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const theme = value === 'system' ? systemTheme : value;
+    document.documentElement.classList.remove('light', 'dark');
+    document.documentElement.classList.add(theme);
+    localStorage.setItem('theme', value);
+  }
+
+  function setup() {
+    const buttons = document.getElementsByClassName('theme-switcher');
+
+    for (const button of buttons) {
+      button.addEventListener('click', toggleTheme);
+    }
+
+    updateTheme(localStorage.getItem('theme') ?? 'system');
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>
+
+<style>
+  :global(.light) .select-theme-light {
+    color-scheme: dark;
+    display: initial;
+  }
+
+  :global(.dark) .select-theme-dark {
+    display: initial;
+  }
+
+  .select-theme-light,
+  .select-theme-dark {
+    display: none;
+  }
+</style>

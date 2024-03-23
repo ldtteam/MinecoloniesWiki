@@ -17,11 +17,11 @@ const dropdownId = `navbarDropdown${name.replaceAll(/\W/g, '_')}`;
 const hasChildren = Astro.slots.has('default');
 ---
 
-<li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
+<li class:list={['nav-item', root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
   {
     hasChildren ? (
       <>
-        <span
+        <button
           class:list={[
             root ? 'nav-link' : 'dropdown-item',
             hasChildren ? 'dropdown-toggle' : '',
@@ -29,11 +29,12 @@ const hasChildren = Astro.slots.has('default');
             thin ? 'py-0' : ''
           ]}
           id={dropdownId}
+          type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
           {name}
-        </span>
+        </button>
         <ul class="dropdown-menu" aria-labelledby={dropdownId}>
           <slot />
         </ul>
@@ -53,15 +54,17 @@ const hasChildren = Astro.slots.has('default');
         event.preventDefault();
         event.stopPropagation();
 
-        if (elem.parentElement?.parentElement) {
-          for (const listItem of elem.parentElement.parentElement.children) {
-            listItem.querySelector('a')?.classList.remove('show');
-            listItem.querySelector('.dropdown-menu')?.classList.remove('show');
-          }
-        }
-
-        elem.classList.add('show');
-        elem.nextElementSibling?.classList.add('show');
+        // if (elem.parentElement?.parentElement) {
+        //   for (const listItem of elem.parentElement.parentElement.children) {
+        //     if (listItem === elem.parentElement) {
+        //       // listItem
+        //       //   .querySelector('.dropdown-menu')
+        //       //   ?.classList.toggle('show', listItem.querySelector('a')?.classList.contains('show'));
+        //     } else {
+        //       // listItem.querySelector('.dropdown-menu')?.classList.remove('show');
+        //     }
+        //   }
+        // }
       });
     });
   }

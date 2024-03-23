@@ -1,22 +1,23 @@
 ---
+import type { HTMLAttributes } from 'astro/types';
 import type { CollectionEntry } from 'astro:content';
 
-interface Props {
+interface Props extends HTMLAttributes<'div'> {
   versions: CollectionEntry<'versions'>[];
   inline?: boolean;
 }
 
-const { versions, inline = false } = Astro.props;
+const { versions, inline = false, ...rest } = Astro.props;
 const versionNumbers = versions.map((version) => version.data.order).join(',');
 ---
 
 {
   inline ? (
-    <span data-versions={versionNumbers}>
+    <span data-versions={versionNumbers} {...rest}>
       <slot />
     </span>
   ) : (
-    <div data-versions={versionNumbers}>
+    <div data-versions={versionNumbers} {...rest}>
       <slot />
     </div>
   )

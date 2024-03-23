@@ -64,6 +64,10 @@
     }
   }
 
+  & .btn-outline-dark {
+    @extend .btn-outline-light;
+  }
+
   .table {
     @extend .table-dark;
   }

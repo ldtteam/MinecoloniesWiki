@@ -15,10 +15,10 @@ const wikiPagesPerVersion = await Promise.all(
 
 {
   wikiPagesPerVersion.map(({ version, wikiPages }) => (
-    <VersionContent versions={[version]}>
-      <div class="grid" style={`--bs-columns: ${Object.entries(wikiPages).length}`}>
+    <VersionContent versions={[version]} class="w-100">
+      <div class="pages-grid">
         {Object.entries(wikiPages).map(([_, categoryInfo]) => (
-          <div class="col col-md col-sm-12 text-center d-flex flex-column py-1">
+          <div class="text-center d-flex flex-column">
             <Button text={categoryInfo.type.data.name} class="text-nowrap mb-2" component="h3" />
             {categoryInfo.pages.map((page, idx) => {
               if (page.type === 'page') {
@@ -42,3 +42,45 @@ const wikiPagesPerVersion = await Promise.all(
     </VersionContent>
   ))
 }
+
+<style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+
+  .pages-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    gap: 1em;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    .pages-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .pages-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .pages-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .pages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1em;
+
+    & > div {
+      width: min-content;
+    }
+  }
+</style>
