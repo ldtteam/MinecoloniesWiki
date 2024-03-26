@@ -1,12 +1,11 @@
 import markdoc from '@astrojs/markdoc';
 import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
-import { defineConfig , squooshImageService } from 'astro/config';
+import { defineConfig, squooshImageService } from 'astro/config';
 import icon from 'astro-icon';
 import { register } from 'swiper/element/bundle';
 
-import { downloadResearch } from './integrations/download-research';
-import { minecoloniesSubmodule } from './integrations/submodule';
+import { minecoloniesSubmodule } from './integrations/minecolonies';
 
 register();
 
@@ -16,10 +15,7 @@ export default defineConfig({
   site: 'https://minecolonies.com',
   image: {
     domains: ['minecraft.wiki'],
-    service: squooshImageService(),
-  },
-  redirects: {
-    '/source/[...slug]': '/wiki/[...slug]'
+    service: squooshImageService()
   },
   integrations: [
     svelte(),
@@ -33,7 +29,6 @@ export default defineConfig({
     }),
     markdoc(),
     sitemap(),
-    minecoloniesSubmodule(),
-    downloadResearch()
+    minecoloniesSubmodule()
   ]
 });

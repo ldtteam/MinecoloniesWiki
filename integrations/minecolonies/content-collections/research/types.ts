@@ -1,10 +1,3 @@
-export type Translations = Record<string, string>;
-
-export interface FileInfo<T> {
-  filename: string;
-  content: T;
-}
-
 export interface ResearchTree {
   'branch-name': string;
 }

@@ -21,10 +21,11 @@ interface Props {
   title: TitleVersion[] | string;
   titleAffix?: string;
   header?: string;
+  showHeader?: boolean;
   fluid?: boolean;
 }
 
-const { title, titleAffix = 'MineColonies', header = title, fluid = false } = Astro.props;
+const { title, titleAffix = 'MineColonies', header = title, showHeader = true, fluid = false } = Astro.props;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
@@ -110,16 +111,20 @@ const headerText =
         <Navigation isWiki={isWikiPage} />
 
         <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
-          <h1 data-pagefind-meta="title" class="page_header text-center">
-            {
-              typeof headerText === 'string'
-                ? headerText
-                : Object.entries(headerText).map(([header, versions]) => (
-                    <VersionContent versions={versions}>{header}</VersionContent>
-                  ))
-            }
-          </h1>
-          <hr />
+          {
+            showHeader && (
+              <>
+                <h1 data-pagefind-meta="title" class="page_header text-center">
+                  {typeof headerText === 'string'
+                    ? headerText
+                    : Object.entries(headerText).map(([header, versions]) => (
+                        <VersionContent versions={versions}>{header}</VersionContent>
+                      ))}
+                </h1>
+                <hr />
+              </>
+            )
+          }
 
           <slot data-pagefind-body />
         </main>
