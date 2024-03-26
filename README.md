@@ -10,7 +10,7 @@ We want to avoid having to change a bazillion occurences all over the wiki in ca
 You can use these by doing `{% building /%}` (only directly in the building source page) OR `{% building name="<key>" %}` (when referring to a building outside of the building page itself). This setup is identical for the worker (by using `{% worker name="<key>" /%}`).
 
 ### Links
-We have a lot of links in the website referring to other documentation pages, a lot of them are still configured with a manually written name + path, for example: `[Apiary](/source/buildings/apiary)`.
+We have a lot of links in the website referring to other documentation pages, a lot of them are still configured with a manually written name + path, for example: `[Apiary](/wiki/buildings/apiary)`.
 
 Going forwards we are using link templates, these are created using Markdoc tags.
 
