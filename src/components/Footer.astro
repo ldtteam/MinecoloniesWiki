@@ -1,7 +1,9 @@
 ---
 import Ribbon from '@components/ui/Ribbon.astro';
+
+const year = new Date().getFullYear();
 ---
 
 <footer id="footer">
-  <Ribbon title="© Minecolonies 2021" />
+  <Ribbon title={`© Minecolonies ${year}`} />
 </footer>
