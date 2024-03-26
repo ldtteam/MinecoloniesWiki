@@ -3,10 +3,11 @@ import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlo
 import { getBuildingData } from '@utils/building';
 
 import type { BaseBuildingContentBlockProps } from '../types';
+import SettingProcessor from './SettingProcessor.astro';
 
 type Props = BaseBuildingContentBlockProps;
 
-const { name } = Astro.props;
+const { name, buildingId } = Astro.props;
 
 const buildingData = await getBuildingData(name);
 ---
@@ -18,13 +19,13 @@ const buildingData = await getBuildingData(name);
         {buildingData.data.settings.map((setting) => (
           <>
             <li>
-              <b>{setting.name}</b>: {setting.description}
+              <SettingProcessor buildingId={buildingId} setting={setting} />
             </li>
             {setting.options && (
               <ul>
                 {setting.options.map((option) => (
                   <li>
-                    <b>{option.name}</b>: {option.description}
+                    <SettingProcessor buildingId={buildingId} setting={option} />
                   </li>
                 ))}
               </ul>
