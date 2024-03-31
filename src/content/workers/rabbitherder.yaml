@@ -1,5 +1,7 @@
 name: Rabbit Herder
 plural: Rabbit Herders
+description: The Rabbit Herder is responsible for herding your rabbits.
+icon: "@assets/images/wiki/workers/rabbitherder/male/default-a.png"
 type: animals
 traits:
   primary: Agility

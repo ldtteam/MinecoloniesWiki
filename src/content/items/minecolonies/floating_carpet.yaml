@@ -1,4 +1,5 @@
 name: Floating Carpet
+description: Floating Carpet are a special carpet that can float mid-air, not requiring any kind of supporting blocks.
 icons:
   - "@assets/images/wiki/items/minecolonies/floating_carpet_red.png"
   - "@assets/images/wiki/items/minecolonies/floating_carpet_orange.png"

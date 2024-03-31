@@ -1,4 +1,6 @@
 ---
+import Container from './Container.astro';
+
 interface Props {
   title: string;
   center?: boolean;
@@ -8,9 +10,9 @@ const { center = false } = Astro.props;
 ---
 
 <div class="ribbon ribbon-secondary">
-  <div class="container">
+  <Container>
     <p class:list={[center ? 'text-center' : 'text-start', 'm-0', 'py-1']}>
       {Astro.props.title}
     </p>
-  </div>
+  </Container>
 </div>

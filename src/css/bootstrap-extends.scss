@@ -64,8 +64,8 @@
     }
   }
 
-  & .btn-outline-dark {
-    @extend .btn-outline-light;
+  & .btn-light {
+    @extend .btn-dark;
   }
 
   .table {

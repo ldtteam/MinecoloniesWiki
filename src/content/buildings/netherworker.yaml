@@ -1,5 +1,7 @@
 name: Nether Mine
 plural: Nether Mines
+description: The Nether Miner is a dangerous job, this worker will venture to the Nether to gather special items that can only be found in the Nether.
+icon: "@assets/images/wiki/items/minecolonies/blockhutnetherworker.png"
 workers:
   - netherminer
 recipes:

@@ -1,5 +1,7 @@
 name: Library Student
 plural: Library Students
+description: Library Students will come to study in your Library, increasing their intelligence. This will make them more efficient learning other skills.
+icon: "@assets/images/wiki/workers/librarystudent/male/default-1a.png"
 type: other
 traits:
   primary: Intelligence

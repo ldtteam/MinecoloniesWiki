@@ -1,5 +1,7 @@
 name: Restaurant
 plural: Restaurants
+description: The Restaurant will ensure that your citizens are well fed, make sure you keep them supplied with food so that they can keep your colonist fed.
+icon: "@assets/images/wiki/items/minecolonies/blockhutcook.png"
 workers:
   - cook
   - assistantcook

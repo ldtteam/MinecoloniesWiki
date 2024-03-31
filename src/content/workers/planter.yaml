@@ -1,5 +1,7 @@
 name: Planter
 plural: Planters
+description: The Planter will grow and harvest any plants or non-farmland food that your colony may need.
+icon: "@assets/images/wiki/workers/planter/male/default-a.png"
 type: gatherer
 traits:
   primary: Agility

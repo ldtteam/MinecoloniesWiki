@@ -1,5 +1,7 @@
 name: Plantation
 plural: Plantations
+description: The Plantation is the place to go for any plants or non-farmland food that your colony may need.
+icon: "@assets/images/wiki/items/minecolonies/blockhutplantation.png"
 workers:
   - planter
 recipes:

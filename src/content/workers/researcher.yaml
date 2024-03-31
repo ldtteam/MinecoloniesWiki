@@ -1,5 +1,7 @@
 name: Researcher
 plural: Researchers
+description: Researchers work in the University to research the technologies that you want them to research.
+icon: "@assets/images/wiki/workers/researcher/male/default-1a.png"
 type: other
 traits:
   primary: Knowledge

@@ -41,3 +41,31 @@ export async function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
   const results = await getSortedVersions();
   return results[0];
 }
+
+interface TitleVersionEntry {
+  title: string;
+  version: CollectionEntry<'versions'>;
+}
+
+interface TitleVersionItem {
+  title: string;
+  versions: CollectionEntry<'versions'>[];
+}
+
+export type TitleVersions = TitleVersionItem[];
+
+export function combineVersionedTitles(array: TitleVersionEntry[]): TitleVersions {
+  const cache: Record<string, number> = {};
+
+  return array.reduce<TitleVersions>((prev, curr) => {
+    if (cache[curr.title] === undefined) {
+      const index = prev.push({
+        title: curr.title,
+        versions: []
+      });
+      cache[curr.title] = index - 1;
+    }
+    prev[cache[curr.title]].versions.push(curr.version);
+    return prev;
+  }, []);
+}

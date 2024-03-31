@@ -1,5 +1,7 @@
 name: Mechanic's Hut
 plural: Mechanic Huts
+description: The Mechanic is the master of redstone, because the Mechanic is so smart, he will also be able to make things that no one else in the colony could.
+icon: "@assets/images/wiki/items/minecolonies/blockhutmechanic.png"
 workers:
   - mechanic
 recipes:

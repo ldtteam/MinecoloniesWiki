@@ -1,5 +1,7 @@
 name: Knight
 plural: Knights
+description: The Knight is your primary melee guard, they require a sword, and optionally a shield and armor.
+icon: "@assets/images/wiki/workers/knight/male/default-a.png"
 type: guard
 traits:
   primary: Adaptability

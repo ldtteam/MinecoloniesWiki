@@ -1,3 +1,4 @@
 name: Compost Barrel
+description: The Compost Barrel is used in the Composter to create compost.
 icons:
   - "@assets/images/wiki/items/minecolonies/compost_barrel.png"

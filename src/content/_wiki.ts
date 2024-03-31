@@ -1,10 +1,31 @@
 import { z } from 'astro/zod';
-import { defineCollection, reference } from 'astro:content';
+import { defineCollection, type ImageFunction, reference } from 'astro:content';
 
-const regularPage = z.object({
-  type: z.literal('page'),
-  title: z.string()
-});
+const regularPage = (image: ImageFunction) =>
+  z.object({
+    type: z.literal('page'),
+    title: z.string(),
+    image: image().optional(),
+    excerpt: z.string().optional()
+  });
+
+const sectionGroupPage = (image: ImageFunction) =>
+  z.object({
+    type: z.literal('section-group'),
+    title: z.string(),
+    excerpt: z.string().optional(),
+    image: image().optional(),
+    initialSection: reference('wiki')
+  });
+
+const sectionPage = (image: ImageFunction) =>
+  z.object({
+    type: z.literal('section'),
+    title: z.string(),
+    excerpt: z.string().optional(),
+    image: image().optional(),
+    group: reference('wiki')
+  });
 
 const itemPage = z.object({
   type: z.literal('item'),
@@ -14,6 +35,7 @@ const itemPage = z.object({
 const itemCombinedPage = z.object({
   type: z.literal('item-combined'),
   title: z.string(),
+  excerpt: z.string().optional(),
   items: z.array(reference('items'))
 });
 
@@ -29,7 +51,16 @@ const workerPage = z.object({
 
 export const wikiCollection = defineCollection({
   type: 'content',
-  schema: z.discriminatedUnion('type', [regularPage, itemPage, itemCombinedPage, buildingPage, workerPage])
+  schema: ({ image }) =>
+    z.discriminatedUnion('type', [
+      regularPage(image),
+      sectionGroupPage(image),
+      sectionPage(image),
+      itemPage,
+      itemCombinedPage,
+      buildingPage,
+      workerPage
+    ])
 });
 
 export const wikiCategories = defineCollection({
@@ -40,76 +71,88 @@ export const wikiCategories = defineCollection({
   })
 });
 
-const buildingInfo = z.object({
-  name: z.string(),
-  plural: z.string(),
-  workers: reference('workers').array().optional(),
-  recipes: z.array(z.string()).optional(),
-  settings: z
-    .array(
+const buildingInfo = (image: ImageFunction) =>
+  z.object({
+    name: z.string(),
+    plural: z.string(),
+    description: z.string(),
+    icon: image(),
+    workers: reference('workers').array().optional(),
+    recipes: z.array(z.string()).optional(),
+    settings: z
+      .array(
+        z.object({
+          name: z.string(),
+          description: z.string(),
+          options: z
+            .array(
+              z.object({
+                name: z.string(),
+                description: z.string()
+              })
+            )
+            .optional()
+        })
+      )
+      .optional()
+  });
+
+export const buildingsCollection = defineCollection({
+  type: 'data',
+  schema: ({ image }) =>
+    buildingInfo(image).and(
       z.object({
-        name: z.string(),
-        description: z.string(),
-        options: z
+        overrides: z
           .array(
-            z.object({
-              name: z.string(),
-              description: z.string()
-            })
+            buildingInfo(image)
+              .partial()
+              .and(
+                z.object({
+                  version: reference('versions')
+                })
+              )
           )
           .optional()
       })
     )
-    .optional()
 });
 
-export const buildingsCollection = defineCollection({
-  type: 'data',
-  schema: buildingInfo.and(
-    z.object({
-      overrides: z
-        .array(
-          buildingInfo.partial().and(
-            z.object({
-              version: reference('versions')
-            })
-          )
-        )
-        .optional()
-    })
-  )
-});
-
-const workerInfo = z.object({
-  name: z.string(),
-  plural: z.string(),
-  type: z.enum(['animals', 'crafter', 'gatherer', 'guard', 'other']),
-  traits: z.object({
-    primary: z.string().optional(),
-    secondary: z.string().optional()
-  }),
-  effects: z.object({
-    primary: z.string().optional(),
-    secondary: z.string().optional()
-  }),
-  buildings: reference('buildings').array().optional()
-});
+const workerInfo = (image: ImageFunction) =>
+  z.object({
+    name: z.string(),
+    plural: z.string(),
+    description: z.string(),
+    icon: image(),
+    type: z.enum(['animals', 'crafter', 'gatherer', 'guard', 'other']),
+    traits: z.object({
+      primary: z.string().optional(),
+      secondary: z.string().optional()
+    }),
+    effects: z.object({
+      primary: z.string().optional(),
+      secondary: z.string().optional()
+    }),
+    buildings: reference('buildings').array().optional()
+  });
 
 export const workersCollection = defineCollection({
   type: 'data',
-  schema: workerInfo.and(
-    z.object({
-      overrides: z
-        .array(
-          workerInfo.partial().and(
-            z.object({
-              version: reference('versions')
-            })
+  schema: ({ image }) =>
+    workerInfo(image).and(
+      z.object({
+        overrides: z
+          .array(
+            workerInfo(image)
+              .partial()
+              .and(
+                z.object({
+                  version: reference('versions')
+                })
+              )
           )
-        )
-        .optional()
-    })
-  )
+          .optional()
+      })
+    )
 });
 
 export const itemsCollection = defineCollection({
@@ -117,6 +160,7 @@ export const itemsCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
       name: z.string(),
+      description: z.string(),
       icons: z.array(image())
     })
 });

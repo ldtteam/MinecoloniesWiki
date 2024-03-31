@@ -1,5 +1,7 @@
 name: Healer
 plural: Healers
+description: The Healer works in your Hospital to treat patients coming to the Hospital.
+icon: "@assets/images/wiki/workers/healer/male/default-a.png"
 type: other
 traits:
   primary: Mana

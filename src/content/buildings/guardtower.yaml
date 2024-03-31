@@ -1,5 +1,7 @@
 name: Guard tower
 plural: Guard towers
+description: The Guard Tower is your primary defense, every tower will employ a single Guard and can greatly expand your colony claim radius.
+icon: "@assets/images/wiki/items/minecolonies/blockhutguardtower.png"
 workers:
   - archer
   - druid
@@ -17,7 +19,7 @@ settings:
       - name: Follow
         description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
       - name: Patrol Mine
-        description: The Guard will patrol the level of a {building:mine}. You must also assign that level in the Mine GUI.
+        description: The Guard will patrol the level of a {building:miner}. You must also assign that level in the Mine GUI.
   - name: Retreat on low health
     description: Here you can choose if the Guard will attempt to retreat when they have low health.
   - name: Hire Trainee

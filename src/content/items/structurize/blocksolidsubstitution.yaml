@@ -1,3 +1,4 @@
 name: Solid Placeholder
+description: The Solid Placeholder is a placeholder block that will ensure a place within your schematic is filled with a solid block.
 icons:
   - "@assets/images/wiki/items/structurize/blocksolidsubstitution.png"

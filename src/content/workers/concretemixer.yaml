@@ -1,5 +1,7 @@
 name: Concrete Mixer
 plural: Concrete Mixers
+description: The Concrete Mixer is responsible for creating concrete powder and concrete in your colony.
+icon: "@assets/images/wiki/workers/concretemixer/male/default-a.png"
 type: crafter
 traits:
   primary: Stamina

@@ -1,5 +1,7 @@
 name: Courier
 plural: Couriers
+description: The Courier is a vital worker for the automation of your colony, Couriers are employed by the Warehouse to ensure items are brought around your colony.
+icon: "@assets/images/wiki/workers/courier/male/default-a.png"
 type: other
 traits:
   primary: Agility

@@ -1,5 +1,7 @@
 name: Fletcher
 plural: Fletchers
+description: The Fletcher is your master bowmaker, they will craft bows and arrows. But also anything else to do with string, like fishing rods.
+icon: "@assets/images/wiki/workers/fletcher/male/default-a.png"
 type: crafter
 traits:
   primary: Dexterity

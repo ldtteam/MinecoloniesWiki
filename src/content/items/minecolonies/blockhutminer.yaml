@@ -1,3 +1,4 @@
 name: Mine Hut Block
+description: The Hut Block for the Mine.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutminer.png"

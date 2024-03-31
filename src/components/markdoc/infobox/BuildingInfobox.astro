@@ -2,12 +2,9 @@
 import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
-import VersionContent from '@components/version/VersionContent.astro';
 import { getBuildingData, type MarkdocBuildingComponent } from '@utils/building';
-import { getItemData } from '@utils/items';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import { getEntry } from 'astro:content';
 
 import BuildingName from '../BuildingName.astro';
 import WorkerName from '../WorkerName.astro';
@@ -27,16 +24,6 @@ const research = (
 
 const workers = buildingData.data.workers ?? [];
 const recipes = buildingData.data.recipes ?? [];
-
-const itemData = await Promise.all(
-  recipes.map(async (recipe) => {
-    const recipeData = await getEntry('recipes', recipe);
-    if (recipeData === undefined) {
-      throw new Error(`Recipe '${recipe}' not found`);
-    }
-    return await getItemData(recipeData.data.output, true);
-  })
-);
 ---
 
 <Wrapper class="mb-3">
@@ -46,49 +33,7 @@ const itemData = await Promise.all(
     <BuildingName slot="title" {...Astro.props} />
 
     <div class="text-center">
-      {
-        itemData
-          .flatMap((item) => item.data)
-          .map((item) => (
-            <VersionContent versions={item.versions}>
-              <swiper-container
-                autoplay={item.icons.length > 1}
-                autoplay-delay="2000"
-                autoplay-pause-on-mouse-enter
-                autoplay-disable-on-interaction="false"
-                loop={item.icons.length > 1}
-                no-swiping
-                no-swiping-selector="*"
-                width="300"
-                style={{
-                  width: '300px'
-                }}
-              >
-                {item.icons.map((icon, index) => (
-                  <swiper-slide>
-                    {typeof icon === 'string' ? (
-                      <img
-                        src={icon}
-                        alt={item.name}
-                        loading="lazy"
-                        decoding="async"
-                        width={300}
-                        data-pagefind-meta={index === 0 ? 'image[src], image_alt[alt]' : ''}
-                      />
-                    ) : (
-                      <Image
-                        src={icon}
-                        alt={item.name}
-                        width={300}
-                        data-pagefind-meta={index === 0 ? 'image[src], image_alt[alt]' : ''}
-                      />
-                    )}
-                  </swiper-slide>
-                ))}
-              </swiper-container>
-            </VersionContent>
-          ))
-      }
+      <Image src={buildingData.data.icon} alt={buildingData.data.name} width={300} />
     </div>
 
     {

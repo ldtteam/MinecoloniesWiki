@@ -1,5 +1,7 @@
 name: Crusher
 plural: Crushers
+description: The Crusher will crush certain blocks into other blocks, like cobblestone into gravel, allowing your colony access to new materials.
+icon: "@assets/images/wiki/workers/crusher/male/default-a.png"
 type: crafter
 traits:
   primary: Stamina

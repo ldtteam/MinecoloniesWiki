@@ -1,5 +1,7 @@
 name: Quarrier
 plural: Quarriers
+description: Quarriers are hired at the Mine and then have to go and work in Quarries to completely mine these areas out, gathering a large amount of resources.
+icon: "@assets/images/wiki/workers/quarrier/male/default-a.png"
 type: gatherer
 traits:
   primary: Strength

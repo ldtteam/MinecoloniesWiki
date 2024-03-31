@@ -1,5 +1,7 @@
 name: Farmer
 plural: Farmers
+description: The Farm is one of the main sources of food production for your colony, farms are able to grow any root crop that has to be placed on farmland.
+icon: "@assets/images/wiki/workers/farmer/male/default-a.png"
 type: gatherer
 traits:
   primary: Stamina

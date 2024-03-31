@@ -1,5 +1,7 @@
 name: Cook
 plural: Cooks
+description: The Cook is responsible for cooking food for the customers in the Restaurant.
+icon: "@assets/images/wiki/workers/cook/male/default-a.png"
 type: crafter
 traits:
   primary: Adaptability

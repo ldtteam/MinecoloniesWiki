@@ -1,5 +1,7 @@
 name: Undertaker
 plural: Undertakers
+description: The Undertaker will travel around your colony, making sure that citizens who died are laid to rest at the Graveyard.
+icon: "@assets/images/wiki/workers/undertaker/male/default-a.png"
 type: other
 traits:
   primary: Strength

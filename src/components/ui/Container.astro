@@ -1,0 +1,24 @@
+---
+const hasLeft = Astro.slots.has('left');
+const hasRight = Astro.slots.has('left');
+---
+
+<div class="grid w-100" style="--bs-columns: 7;">
+  {
+    hasLeft && (
+      <div class="g-col-12 g-col-lg-1">
+        <slot name="left" />
+      </div>
+    )
+  }
+  <div class:list={['g-col-12', 'g-col-lg-5', hasLeft ? '' : 'g-start-lg-2']}>
+    <slot />
+  </div>
+  {
+    hasRight && (
+      <div class="g-col-12 g-col-lg-1">
+        <slot name="right" />
+      </div>
+    )
+  }
+</div>

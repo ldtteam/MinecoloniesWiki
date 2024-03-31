@@ -1,3 +1,4 @@
 name: Rack
+description: Racks are the storage blocks used in every building. They hold 27 slots of items, just like regular chests.
 icons:
   - "@assets/images/wiki/items/minecolonies/rack.png"

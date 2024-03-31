@@ -1,5 +1,7 @@
 name: Glassblower's Hut
 plural: Glassblower Huts
+description: The Glassblower creates glass and other created using glass.
+icon: "@assets/images/wiki/items/minecolonies/blockhutglassblower.png"
 workers:
   - glassblower
 recipes:

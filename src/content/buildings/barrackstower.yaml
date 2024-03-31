@@ -1,5 +1,7 @@
 name: Barracks Tower
 plural: Barracks Towers
+description: The Barracks Towers are part of the Barracks and can employ up to 5 Guards.
+icon: "@assets/images/wiki/items/minecolonies/blockhutbarrackstower.png"
 workers:
   - archer
   - druid

@@ -1,3 +1,4 @@
 name: Postbox
+description: The Postbox can be used to request something from your colony.
 icons:
   - "@assets/images/wiki/items/minecolonies/postbox.png"

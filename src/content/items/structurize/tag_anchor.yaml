@@ -1,3 +1,4 @@
 name: Tag Anchor
+description: The Tag Anchor can be used as an anchor block in schematics which is replaced by it's replace block.
 icons:
   - "@assets/images/wiki/items/structurize/tag_anchor.png"

@@ -1,3 +1,4 @@
 name: Iron Gate
+description: Iron Gates are multiblock gates that act as doors, but are great at keeping enemies out.
 icons:
   - "@assets/images/wiki/items/minecolonies/gate_iron.png"

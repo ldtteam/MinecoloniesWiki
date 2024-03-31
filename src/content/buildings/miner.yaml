@@ -1,5 +1,7 @@
 name: Mine
 plural: Mines
+description: The Miner will gather stone and ores from the depths below, they will make a vast tunnel network underground to gather all of your valuables.
+icon: "@assets/images/wiki/items/minecolonies/blockhutminer.png"
 workers:
   - miner
 recipes:
@@ -15,6 +17,6 @@ settings:
   - name: Fill Block
     description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine. The default is the cobblestone block.
   - name: Max Depth
-    description: Here you can overide the default maximum depth of the {building:mine}, if you don't want the {worker:miner} to dig as deep as the {building:mine} level allows. The default is -100.
+    description: Here you can overide the default maximum depth of the {building:miner}, if you don't want the {worker:miner} to dig as deep as the {building:miner} level allows. The default is -100.
   - name: Use Shears
     description: Whether the {worker:miner} will use shears to break certain blocks.

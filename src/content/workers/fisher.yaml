@@ -1,5 +1,7 @@
 name: Fisher
 plural: Fishers
+description: The Fisher will catch fish and treasure from the vast oceans in your world.
+icon: "@assets/images/wiki/workers/fisher/male/default-a.png"
 type: gatherer
 traits:
   primary: Focus

@@ -1,3 +1,4 @@
 name: Scan Tool
+description: The Scan Tool is a tool that you can use to create schematics of an area in your world, allowing them to be built later on using the Build Tool.
 icons:
   - "@assets/images/wiki/items/structurize/scan_tool.png"

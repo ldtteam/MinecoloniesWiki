@@ -1,3 +1,4 @@
 name: Warehouse Hut Block
+description: The Hut Block for the Warehouse.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutwarehouse.png"

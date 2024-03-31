@@ -1,5 +1,6 @@
 ---
 import Header from '@components/Header.astro';
+import Container from '@components/ui/Container.astro';
 import VersionSelector from '@components/version/VersionSelector.astro';
 import { Icon } from 'astro-icon/components';
 
@@ -15,7 +16,7 @@ const { isWiki } = Astro.props;
 ---
 
 <nav class="navbar navbar-expand-lg navbar-light ribbon ribbon-main">
-  <div class="container">
+  <Container>
     <button
       class="d-lg-none btn btn-outline-light"
       type="button"
@@ -68,20 +69,20 @@ const { isWiki } = Astro.props;
         </ul>
       </div>
     </div>
-  </div>
+  </Container>
 </nav>
 
 {
   isWiki && (
-    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block ribbon ribbon-secondary m-0">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block ribbon ribbon-secondary">
+      <Container>
         <div class="navbar-collapse collapse">
           <WikiPages isAppbar />
           <ul class="ms-auto navbar-nav">
             <VersionSelector />
           </ul>
         </div>
-      </div>
+      </Container>
     </nav>
   )
 }

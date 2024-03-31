@@ -7,25 +7,20 @@ import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
-import VersionContent from '@components/version/VersionContent.astro';
+import Container from '@components/ui/Container.astro';
+import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import { getNewestVersion } from '@utils/version';
-import type { CollectionEntry } from 'astro:content';
+import type { Title } from '@utils/wiki';
 import { ViewTransitions } from 'astro:transitions';
 
-export interface TitleVersion {
-  version: CollectionEntry<'versions'>;
-  title: string;
-}
-
 interface Props {
-  title: TitleVersion[] | string;
+  title: Title;
   titleAffix?: string;
   header?: string;
   showHeader?: boolean;
-  fluid?: boolean;
 }
 
-const { title, titleAffix = 'MineColonies', header = title, showHeader = true, fluid = false } = Astro.props;
+const { title, titleAffix = 'MineColonies', header = title, showHeader = true } = Astro.props;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
@@ -35,23 +30,19 @@ const newestVersion = await getNewestVersion();
 let versionTitleData: Record<string, string>;
 if (typeof title === 'object') {
   versionTitleData = title.reduce<Record<string, string>>((previousValue, currentValue) => {
-    previousValue['data-title-version-' + currentValue.version.data.order] = currentValue.title;
+    for (const version of currentValue.versions) {
+      previousValue['data-title-version-' + version.data.order] = currentValue.title;
+    }
     return previousValue;
   }, {});
 } else {
   versionTitleData = { 'data-title-version-all': title };
 }
 
-const headerText =
-  typeof header === 'string'
-    ? header
-    : header.reduce<Record<string, CollectionEntry<'versions'>[]>>((previousValue, currentValue) => {
-        if (previousValue[currentValue.title] === undefined) {
-          previousValue[currentValue.title] = [];
-        }
-        previousValue[currentValue.title].push(currentValue.version);
-        return previousValue;
-      }, {});
+const initialTitle =
+  typeof title === 'string'
+    ? title
+    : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | ' + titleAffix;
 ---
 
 <!doctype html>
@@ -68,10 +59,12 @@ const headerText =
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <title property="og-title,twitter:title">
-      {typeof title === 'string' ? title : title.find((f) => f.version.id === newestVersion.id)?.title} | {titleAffix}
+      {initialTitle}
     </title>
 
-    <Meta isWiki={isWikiPage} />
+    <slot name="meta">
+      <Meta isWiki={isWikiPage} title={initialTitle} />
+    </slot>
 
     <script is:inline>
       function updateTitle(version) {
@@ -110,24 +103,24 @@ const headerText =
         <Header isWiki={isWikiPage} />
         <Navigation isWiki={isWikiPage} />
 
-        <main transition:animate="fade" class:list={['page_content', 'container', fluid ? 'container-fluid' : '']}>
+        <div transition:animate="fade" class="page_content">
           {
             showHeader && (
               <>
-                <h1 data-pagefind-meta="title" class="page_header text-center">
-                  {typeof headerText === 'string'
-                    ? headerText
-                    : Object.entries(headerText).map(([header, versions]) => (
-                        <VersionContent versions={versions}>{header}</VersionContent>
-                      ))}
+                <h1 class="page_header text-center m-0">
+                  <PageTitleRender title={header} />
                 </h1>
-                <hr />
               </>
             )
           }
 
-          <slot data-pagefind-body />
-        </main>
+          <Container>
+            <slot slot="left" name="left" />
+            <hr />
+            <slot />
+            <slot slot="right" name="right" />
+          </Container>
+        </div>
         <Footer />
       </div>
     </PageRoot>

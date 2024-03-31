@@ -1,5 +1,7 @@
 name: Builder
 plural: Builders
+description: The Builder is the most vital worker in your colony, the Builder will construct any other building and is the first building you need in your colony.
+icon: "@assets/images/wiki/workers/builder/male/default-a.png"
 type: other
 traits:
   primary: Adaptability

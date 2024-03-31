@@ -8,36 +8,6 @@ interface Props {
 const { class: cssClass, padding = 1.5, autoSize = false } = Astro.props;
 ---
 
-<div class:list={['box', autoSize ? '' : 'box-min', cssClass]} style={{ padding: `${padding}em` }}>
+<div class:list={['app-card', autoSize ? '' : 'app-card-min', cssClass]} style={{ padding: `${padding}em` }}>
   <slot />
 </div>
-
-<style>
-  .box {
-    background:
-      url('/images/card/card_top_left.png') top left/16px 16px no-repeat,
-      url('/images/card/card_top_right.png') top right no-repeat,
-      url('/images/card/card_bottom_left.png') bottom left no-repeat,
-      url('/images/card/card_bottom_right.png') bottom right no-repeat,
-      url('/images/card/card_left.png') 0px 16px repeat-y,
-      url('/images/card/card_right.png') right center repeat-y,
-      url('/images/card/card_top.png') top center repeat-x,
-      url('/images/card/card_bottom.png') bottom center repeat-x;
-  }
-
-  .box-min {
-    width: min-content;
-  }
-
-  :global(.dark) .box {
-    background:
-      url('/images/card/card_dark_top_left.png') top left/16px 16px no-repeat,
-      url('/images/card/card_dark_top_right.png') top right no-repeat,
-      url('/images/card/card_dark_bottom_left.png') bottom left no-repeat,
-      url('/images/card/card_dark_bottom_right.png') bottom right no-repeat,
-      url('/images/card/card_dark_left.png') 0px 16px repeat-y,
-      url('/images/card/card_dark_right.png') right center repeat-y,
-      url('/images/card/card_dark_top.png') top center repeat-x,
-      url('/images/card/card_dark_bottom.png') bottom center repeat-x;
-  }
-</style>

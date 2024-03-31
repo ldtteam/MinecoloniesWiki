@@ -1,5 +1,7 @@
 name: Miner
 plural: Miners
+description: The Miner will gather stone and ores from the depths below, they will make a vast tunnel network underground to gather all of your valuables.
+icon: "@assets/images/wiki/workers/miner/male/default-a.png"
 type: gatherer
 traits:
   primary: Strength

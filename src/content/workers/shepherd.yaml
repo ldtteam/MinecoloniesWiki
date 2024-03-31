@@ -1,5 +1,7 @@
 name: Shepherd
 plural: Shepherds
+description: The Shepherd is responsible for herding your sheep.
+icon: "@assets/images/wiki/workers/shepherd/male/default-a.png"
 type: animals
 traits:
   primary: Focus

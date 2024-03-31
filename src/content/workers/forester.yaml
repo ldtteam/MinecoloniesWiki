@@ -1,5 +1,7 @@
 name: Forester
 plural: Foresters
+description: The Forester will cut down trees in your colony, you can tell them what trees to cut down and even in what area they're allowed to cut trees down.
+icon: "@assets/images/wiki/workers/forester/male/default-a.png"
 type: gatherer
 traits:
   primary: Strength

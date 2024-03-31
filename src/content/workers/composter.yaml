@@ -1,5 +1,7 @@
 name: Composter
 plural: Composters
+description: The Composter is responsible for recycling organic materials into compost, which can be used by Farms, Plantations and Florists to more efficiently work.
+icon: "@assets/images/wiki/workers/composter/male/default-a.png"
 type: gatherer
 traits:
   primary: Stamina

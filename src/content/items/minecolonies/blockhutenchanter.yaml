@@ -1,3 +1,4 @@
 name: Enchanter Hut Block
+description: The Hut Block for the Enchanter.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutenchanter.png"

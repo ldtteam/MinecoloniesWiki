@@ -1,5 +1,7 @@
 name: Composter's Hut
 plural: Composter Huts
+description: The Composter is responsible for recycling organic materials into compost, which can be used by Farms, Plantations and Florists to more efficiently work.
+icon: "@assets/images/wiki/items/minecolonies/blockhutcomposter.png"
 workers:
   - composter
 recipes:

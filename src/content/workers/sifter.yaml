@@ -1,5 +1,7 @@
 name: Sifter
 plural: Sifters
+description: The Sifter can turn "useless" materials into valuable materials, by seeing what comes out from sieving them through a mesh.
+icon: "@assets/images/wiki/workers/sifter/male/default-a.png"
 type: gatherer
 traits:
   primary: Focus

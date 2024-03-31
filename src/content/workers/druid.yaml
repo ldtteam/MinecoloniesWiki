@@ -1,12 +1,14 @@
-  name: Druid
-  plural: Druids
-  type: guard
-  traits:
-    primary: Mana
-    secondary: Focus
-  effects:
-    primary: Increases potion duration
-    secondary: Increases throwing accuracy
-  buildings:
-    - barrackstower
-    - guardtower
+name: Druid
+plural: Druids
+description: The Druid is your support guard, they need potions that they will throw to their fellow guards to improve their statistics.
+icon: "@assets/images/wiki/workers/druid/male/default-a.png"
+type: guard
+traits:
+  primary: Mana
+  secondary: Focus
+effects:
+  primary: Increases potion duration
+  secondary: Increases throwing accuracy
+buildings:
+  - barrackstower
+  - guardtower

@@ -1,0 +1,22 @@
+---
+type: section
+title: Citizen Names
+group: tutorials/datapacks
+---
+
+## Citizen names
+
+Citizen names can be changed via a datapack. For the ones already in the mod, you can look it [on Github](https://github.com/ldtteam/minecolonies/blob/version/main/src/main/resources/data/minecolonies/citizennames).
+The default.json file is loaded by default, patreons have a button in the town hall to change to any of the other ones in data packs in the `citizennames` data location.
+
+There are also sample data packs on the [citizen names](/wiki/misc/custom_citizen_names) page
+
+The citizen name files have the following components:
+
+| Key Name           | Type             | Description                                                                          |
+| ------------------ | ---------------- | ------------------------------------------------------------------------------------ |
+| `parts`            | Integer          | `2` or `3`. This determines whether a middle letter is used in the name (if it is 3) |
+| `order`            | String           | `"WESTERN"` or `"EASTERN"`. In case of EASTERN, the surname is shown first           |
+| `male_firstname`   | Array of Strings | A list of the male first names                                                       |
+| `female_firstname` | Array of Strings | A list of the female first names                                                     |
+| `surnames`         | Array of Strings | A list of the surnames for the citizens                                              |

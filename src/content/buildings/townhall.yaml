@@ -1,5 +1,7 @@
 name: Town Hall
 plural: Town Halls
+description: The Townhall is the starting point of your colony, from here you can manage everything regarding your colony.
+icon: "@assets/images/wiki/items/minecolonies/blockhuttownhall.png"
 singular: true
 recipes:
   - minecolonies/blockhuttownhall

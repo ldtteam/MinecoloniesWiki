@@ -1,3 +1,4 @@
 name: Blacksmith Hut Block
+description: The Hut Block for the Blacksmith.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutblacksmith.png"

@@ -1,5 +1,7 @@
 name: Stonemason
 plural: Stonemasons
+description: The Stonemason is where all your stone produts are sculped into other stone products! Stonemasons can craft nearly all stone materials there are.
+icon: "@assets/images/wiki/workers/stonemason/male/default-a.png"
 type: crafter
 traits:
   primary: Creativity

@@ -1,5 +1,7 @@
 name: Dyer's Hut
 plural: Dyer Huts
+description: The Dyer is able to turn blocks like wool into their dyed variants.
+icon: "@assets/images/wiki/items/minecolonies/blockhutdyer.png"
 workers:
   - dyer
 recipes:

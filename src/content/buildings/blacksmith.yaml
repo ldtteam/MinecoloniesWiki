@@ -1,5 +1,7 @@
 name: Blacksmith's Hut
 plural: Blacksmith Huts
+description: The Blacksmith is responsible for creating tools and armor of any material for your colonists.
+icon: "@assets/images/wiki/items/minecolonies/blockhutblacksmith.png"
 workers:
   - blacksmith
 recipes:

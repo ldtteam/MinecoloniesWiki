@@ -1,3 +1,4 @@
 name: Supply Ship
+description: The Supply Ship is the start of your colony, place it down to create a supply ship. Supply ships give you the necessary equipment to found a colony.
 icons:
   - "@assets/images/wiki/items/minecolonies/supply_ship.png"

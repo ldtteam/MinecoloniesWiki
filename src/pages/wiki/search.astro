@@ -1,9 +1,20 @@
 ---
+import Meta from '@components/Meta.astro';
 import Layout from '@layouts/Default.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Search" titleAffix="MineColonies Wiki">
-  <!-- <SearchComp uiOptions={{ showImages: true, showSubResults: true, resetStyles: false }} /> -->
+  <Meta slot="meta" title="Search" isWiki />
+
+  <div class="input-group flex-nowrap mb-3">
+    <span class="input-group-text">
+      <Icon name="fa6-solid:magnifying-glass" />
+    </span>
+    <input id="search_input" type="text" class="form-control" placeholder="Search for pages on the wiki..." />
+  </div>
+
+  <div id="search_output"></div>
 
   <hr />
   <p class="text-center">
@@ -14,3 +25,91 @@ import Layout from '@layouts/Default.astro';
     for us to make edits. - MineColonies Wiki Team
   </p>
 </Layout>
+
+<script is:inline data-astro-rerun>
+  function filterPage(entry, filter, version) {
+    if (typeof entry.name === 'string') {
+      if (entry.name.toLowerCase().includes(filter)) {
+        return 1;
+      }
+    } else {
+      const titleVersion = entry.name.find((item) => item.versions.find((v) => v === version));
+      if (titleVersion?.title.toLowerCase().includes(filter)) {
+        return 1;
+      }
+    }
+
+    if (entry.excerpt.toLowerCase().includes(filter)) {
+      return 2;
+    }
+
+    if (entry.body.toLowerCase().includes(filter)) {
+      return 3;
+    }
+
+    return 0;
+  }
+
+  async function load() {
+    const response = await fetch('/wiki/search.json');
+    const pages = await response.json();
+
+    function itemTemplate(page, version) {
+      const title =
+        typeof page.name === 'string'
+          ? page.name
+          : page.name.find((item) => item.versions.find((v) => v === version)).title;
+
+      return `<div class="app-card app-card-min w-100 d-flex gap-3 p-4 mb-3">
+                <img src="${page.image}" alt="${title} page icon" loading="lazy" decoding="async" height="100" width="100" class="card-image" />
+                <div>
+                  <h2>${title}</h2>
+                  <p>${page.excerpt}</p>
+                  <a href="${page.slug}">Go to Page</a>
+                </div>
+              </div>`;
+    }
+
+    document.getElementById('search_input').addEventListener('change', function (ev) {
+      const version = Number.parseInt(document.body.dataset['version'] ?? '0');
+      const query = ev.target.value;
+      if (query.length > 3) {
+        const filters = query.split(' ');
+
+        let results = structuredClone(pages).map((page) => ({
+          page,
+          order: 0
+        }));
+        for (const filter of filters) {
+          results = results
+            .map((page) => ({
+              page: page.page,
+              order: filterPage(page.page, filter.toLowerCase(), version)
+            }))
+            .filter((page) => page.order > 0)
+            .sort((a, b) => a.order - b.order);
+        }
+
+        const outputHtml = results.map((page) => itemTemplate(page.page, version)).join('');
+        document.getElementById('search_output').innerHTML = outputHtml;
+      } else if (query.length > 0) {
+        document.getElementById('search_output').innerHTML =
+          '<div class="alert alert-warning" role="alert">Please type in at least 3 characters</div>';
+        return;
+      } else {
+        document.getElementById('search_output').innerHTML = '';
+        return;
+      }
+    });
+  }
+
+  load();
+</script>
+
+<style>
+  :global(.card-image) {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain;
+  }
+</style>

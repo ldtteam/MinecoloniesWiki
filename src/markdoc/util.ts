@@ -2,11 +2,6 @@ import { component } from '@astrojs/markdoc/config';
 
 import type { Tag } from './types';
 
-export const pages_overview: Tag = {
-  render: component('@components/markdoc/PagesOverview.astro'),
-  selfClosing: true
-};
-
 export const citizen_name_pack_list: Tag = {
   render: component('@components/markdoc/CitizenNamePackList.astro'),
   selfClosing: true

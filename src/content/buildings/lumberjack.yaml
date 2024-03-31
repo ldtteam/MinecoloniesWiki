@@ -1,5 +1,7 @@
 name: Forester's Hut
 plural: Forester's Huts
+description: The Forester will cut down trees in your colony, you can tell them what trees to cut down and even in what area they're allowed to cut trees down.
+icon: "@assets/images/wiki/items/minecolonies/blockhutlumberjack.png"
 workers:
   - forester
 recipes:

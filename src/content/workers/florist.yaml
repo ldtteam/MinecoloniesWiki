@@ -1,5 +1,7 @@
 name: Florist
 plural: Florists
+description: The Florist will grow flowers for you, they need compost from the Composter to be able to do this.
+icon: "@assets/images/wiki/workers/florist/male/default-a.png"
 type: gatherer
 traits:
   primary: Dexterity

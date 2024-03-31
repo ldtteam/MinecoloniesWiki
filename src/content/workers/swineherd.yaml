@@ -1,5 +1,7 @@
 name: Swineherd
-plural: Swineherds
+plural: Swineherders
+description: The Swineherders are responsible for herding your pigs.
+icon: "@assets/images/wiki/workers/swineherd/male/default-a.png"
 type: animals
 traits:
   primary: Strength

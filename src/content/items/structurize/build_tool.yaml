@@ -1,3 +1,4 @@
 name: Build Tool
+description: The Build Tool is a tool that you can use to place schematics down, either fully pasted for creative use-cases, or you can assign work order to builders in case of survival with Minecolonies.
 icons:
   - "@assets/images/wiki/items/structurize/build_tool.png"

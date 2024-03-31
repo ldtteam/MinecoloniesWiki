@@ -1,4 +1,6 @@
 name: Mystical Site
 plural: Mystical Sites
+description: The Mystical Site is a place where your citizens can come and pray, which will make them a little bit happier.
+icon: "@assets/images/wiki/items/minecolonies/blockhutmysticalsite.png"
 recipes:
   - minecolonies/blockhutmysticalsite

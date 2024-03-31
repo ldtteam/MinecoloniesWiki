@@ -1,5 +1,7 @@
 name: Crusher's Hut
 plural: Crusher Huts
+description: The Crusher will crush certain blocks into other blocks, like cobblestone into gravel, allowing your colony access to new materials.
+icon: "@assets/images/wiki/items/minecolonies/blockhutcrusher.png"
 workers:
   - crusher
 recipes:

@@ -1,5 +1,7 @@
 name: Archer
 plural: Archers
+description: The Archer is your primary ranged guard, they require a bow, and optionally arrows and armor.
+icon: "@assets/images/wiki/workers/archer/male/default-a.png"
 type: guard
 traits:
   primary: Agility

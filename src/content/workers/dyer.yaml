@@ -1,5 +1,7 @@
 name: Dyer
 plural: Dyers
+description: The Dyer is able to turn blocks like wool into their dyed variants.
+icon: "@assets/images/wiki/workers/dyer/male/default-a.png"
 type: crafter
 traits:
   primary: Creativity

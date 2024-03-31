@@ -1,18 +1,22 @@
 ---
+import PageTitleRender from '@components/wiki/PageTitleRender.astro';
+import type { Title } from '@utils/wiki';
+
 interface Props {
-  name: string;
+  id: string;
+  name: Title;
   href?: string;
   root?: boolean;
   thin?: boolean;
   exact?: boolean;
 }
 
-const { name, href, root = false, thin = false, exact = true } = Astro.props;
+const { id, name, href, root = false, thin = false, exact = true } = Astro.props;
 
 const pathName = Astro.url.pathname;
 const active = exact ? pathName === href : href ? pathName.startsWith(href) : false;
 
-const dropdownId = `navbarDropdown${name.replaceAll(/\W/g, '_')}`;
+const dropdownId = `navbarDropdown${id}`;
 
 const hasChildren = Astro.slots.has('default');
 ---
@@ -33,7 +37,7 @@ const hasChildren = Astro.slots.has('default');
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          {name}
+          <PageTitleRender title={name} />
         </button>
         <ul class="dropdown-menu" aria-labelledby={dropdownId}>
           <slot />
@@ -41,7 +45,7 @@ const hasChildren = Astro.slots.has('default');
       </>
     ) : (
       <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
-        {name}
+        <PageTitleRender title={name} />
       </a>
     )
   }
@@ -53,18 +57,6 @@ const hasChildren = Astro.slots.has('default');
       elem.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
-
-        // if (elem.parentElement?.parentElement) {
-        //   for (const listItem of elem.parentElement.parentElement.children) {
-        //     if (listItem === elem.parentElement) {
-        //       // listItem
-        //       //   .querySelector('.dropdown-menu')
-        //       //   ?.classList.toggle('show', listItem.querySelector('a')?.classList.contains('show'));
-        //     } else {
-        //       // listItem.querySelector('.dropdown-menu')?.classList.remove('show');
-        //     }
-        //   }
-        // }
       });
     });
   }

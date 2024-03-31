@@ -1,0 +1,18 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import type { Title } from '@utils/wiki';
+
+interface Props {
+  title: Title;
+}
+
+const { title } = Astro.props;
+---
+
+{
+  typeof title === 'string'
+    ? title
+    : title.map((titleVersion) => (
+        <VersionContent versions={titleVersion.versions}>{titleVersion.title}</VersionContent>
+      ))
+}

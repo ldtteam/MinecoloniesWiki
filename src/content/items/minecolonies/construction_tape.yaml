@@ -1,3 +1,4 @@
 name: Construction Tape
+description: Construction Tape is a simple block that is placed around buildings during their construction, allowing you to see their dimensions.
 icons:
   - "@assets/images/wiki/items/minecolonies/construction_tape.png"

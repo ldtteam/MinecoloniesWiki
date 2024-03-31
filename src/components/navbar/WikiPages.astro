@@ -1,7 +1,5 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
 import { getWikiPages } from '@utils/wiki';
-import { getCollection } from 'astro:content';
 
 import Navlink from './Navlink.astro';
 
@@ -11,41 +9,40 @@ interface Props {
 
 const { isAppbar = false } = Astro.props;
 
-const versions = await getCollection('versions');
-const wikiPagesPerVersion = await Promise.all(
-  versions.map(async (version) => ({
-    version,
-    wikiPages: await getWikiPages(version)
-  }))
-);
+const pages = await getWikiPages();
 ---
 
-{
-  wikiPagesPerVersion.map(({ version, wikiPages }) => (
-    <VersionContent versions={[version]}>
-      <ul class="navbar-nav">
-        <Navlink href="/wiki" name="Wiki Home" root thin={isAppbar} />
+<ul class="navbar-nav">
+  <Navlink id="wiki" name="Wiki Home" href="/wiki" root thin={isAppbar} />
 
-        {Object.entries(wikiPages).map(([category, categoryInfo]) => (
-          <Navlink name={categoryInfo.type.data.name} root thin={isAppbar} href={`/wiki/${category}`} exact={false}>
-            {categoryInfo.pages.map((page) => {
-              if (page.type === 'page') {
-                return <Navlink name={page.name} href={`/wiki/${page.slug}`} />;
-              } else if (page.type === 'subcategory') {
-                return (
-                  <Navlink name={page.name}>
-                    {page.pages.map((subPage) => (
-                      <Navlink name={subPage.name} href={`/wiki/${subPage.slug}`} />
-                    ))}
-                  </Navlink>
-                );
-              }
+  {
+    Object.entries(pages).map(([category, categoryInfo]) => (
+      <Navlink
+        id={'wiki/' + categoryInfo.type.id}
+        name={categoryInfo.type.data.name}
+        href={`/wiki/${category}`}
+        root
+        thin={isAppbar}
+        exact={false}
+      >
+        {categoryInfo.pages.map((page) => {
+          if (page.type === 'page') {
+            return <Navlink id={page.slug} name={page.name} href={`/wiki/${page.slug}`} />;
+          } else if (page.type === 'subcategory') {
+            return (
+              <Navlink id={'subCategory' + page.name} name={page.name}>
+                {page.pages.map((subPage) => (
+                  <Navlink id={subPage.slug} name={subPage.name} href={`/wiki/${subPage.slug}`} />
+                ))}
+              </Navlink>
+            );
+          }
 
-              return undefined;
-            })}
-          </Navlink>
-        ))}
-      </ul>
-    </VersionContent>
-  ))
-}
+          return undefined;
+        })}
+      </Navlink>
+    ))
+  }
+
+  <Navlink id="search" name="Search" href="/wiki/search" root thin={isAppbar} />
+</ul>

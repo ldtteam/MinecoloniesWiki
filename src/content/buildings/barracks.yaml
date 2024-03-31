@@ -1,5 +1,7 @@
 name: Barracks
 plural: Barracks
+description: The Barracks is the ultimate protection for your colony. The Barracks consists of multiple towers that house up to 5 Guards, allowing you to get your military up and running fast.
+icon: "@assets/images/wiki/items/minecolonies/blockhutbarracks.png"
 workers:
   - archer
   - druid

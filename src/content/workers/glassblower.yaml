@@ -1,5 +1,7 @@
 name: Glassblower
 plural: Glassblowers
+description: The Glassblower creates glass and other created using glass.
+icon: "@assets/images/wiki/workers/glassblower/male/default-a.png"
 type: crafter
 traits:
   primary: Creativity

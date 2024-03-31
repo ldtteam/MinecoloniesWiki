@@ -1,3 +1,4 @@
 name: Plantation Hut Block
+description: The Hut Block for the Plantation.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutplantation.png"

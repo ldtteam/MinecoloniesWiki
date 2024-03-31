@@ -1,3 +1,4 @@
 name: Plate Armor Chestplate
+description: Plate Armor is a special armor that your guards can wear. This armor is better than iron armor, but worse than diamond, however it makes up for it by having great durability.
 icons:
   - "@assets/images/wiki/items/minecolonies/plate_armor_chest.png"

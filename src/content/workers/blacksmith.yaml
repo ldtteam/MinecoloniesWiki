@@ -1,5 +1,7 @@
 name: Blacksmith
 plural: Blacksmiths
+description: The Blacksmith is responsible for creating tools and armor of any material for your colonists.
+icon: "@assets/images/wiki/workers/blacksmith/male/default-a.png"
 type: crafter
 traits:
   primary: Strength

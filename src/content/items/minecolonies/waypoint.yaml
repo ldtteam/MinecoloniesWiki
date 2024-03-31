@@ -1,3 +1,4 @@
 name: Waypoint
+description: Waypoints are used in pathfinding to tell citizens to attempt to path via Waypoints as much as possible.
 icons:
   - "@assets/images/wiki/items/minecolonies/waypoint.png"

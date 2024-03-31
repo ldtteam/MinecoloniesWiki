@@ -1,5 +1,7 @@
 name: Sawmill
 plural: Sawmills
+description: The Sawmill is where all your wood is transformed into more useful wood! Carpenters can craft nearly all wooden materials there are.
+icon: "@assets/images/wiki/items/minecolonies/blockhutsawmill.png"
 workers:
   - carpenter
 recipes:

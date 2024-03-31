@@ -1,5 +1,7 @@
 name: Mechanic
 plural: Mechanics
+description: The Mechanic is the master of redstone, because the Mechanic is so smart, he will also be able to make things that no one else in the colony could.
+icon: "@assets/images/wiki/workers/mechanic/male/default-a.png"
 type: crafter
 traits:
   primary: Knowledge

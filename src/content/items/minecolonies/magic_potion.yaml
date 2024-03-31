@@ -1,3 +1,4 @@
 name: Magic Potion
+description: Magic Potions can be used by Druids to improve the strength and duration of their potions.
 icons:
   - "@assets/images/wiki/items/minecolonies/magic_potion.png"

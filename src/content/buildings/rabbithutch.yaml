@@ -1,5 +1,7 @@
 name: Rabbit Hutch
 plural: Rabbit Hutches
+description: The Rabbit Hutch is responsible for herding your rabbits.
+icon: "@assets/images/wiki/items/minecolonies/blockhutrabbithutch.png"
 workers:
   - rabbitherder
 recipes:

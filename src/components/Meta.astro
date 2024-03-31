@@ -3,17 +3,30 @@ import { getImage } from 'astro:assets';
 
 interface Props {
   isWiki: boolean;
+  title: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
-const { isWiki } = Astro.props;
+const { isWiki, title, description, image, imageAlt, imageWidth, imageHeight } = Astro.props;
 
-const image = await getImage({
+const defaultImage = await getImage({
   src: isWiki
     ? (await import('../assets/images/minecolonies_logo_wiki_medium.png')).default
     : (await import('../assets/images/minecolonies_logo_medium.png')).default
 });
 
-const desc = 'Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft!';
+const finalImage = image ?? defaultImage.src;
+const finalImageAlt = imageAlt ?? isWiki ? 'Minecolonies Wiki Logo' : 'Minecolonies Logo';
+const finalImageWidth = imageWidth ?? defaultImage.options.width;
+const finalImageHeight = imageHeight ?? defaultImage.options.height;
+
+const desc =
+  description ??
+  'Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft!';
 ---
 
 <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
@@ -30,14 +43,15 @@ const desc = 'Minecolonies is a town building mod that allows you to create your
 <meta name="msapplication-TileColor" content="#da532c" />
 
 <!-- Facebook Meta Tags -->
-<meta property="og:description" content={desc} />
 <meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={desc} />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:image" content={Astro.url.href + image.src} />
+<meta property="og:site_name" content={isWiki ? 'Minecolonies Wiki' : 'Minecolonies'} />
+<meta property="og:image" content={new URL(finalImage, Astro.url.href)} />
+<meta property="og:image:alt" content={finalImageAlt} />
+{finalImageWidth && <meta property="og:image:width" content={finalImageWidth.toString()} />}
+{finalImageHeight && <meta property="og:image:height" content={finalImageHeight.toString()} />}
 
 <!-- Twitter Meta Tags -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:domain" content={Astro.url.host} />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:description" content={desc} />
-<meta property="twitter:image" content={Astro.url.href + image.src} />
+<meta property="twitter:card" content="summary" />

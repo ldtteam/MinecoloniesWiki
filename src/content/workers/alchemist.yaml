@@ -1,5 +1,7 @@
 name: Alchemist
 plural: Alchemists
+description: The Alchemist will brew potions, harvest netherwart and harvest mistletoe.
+icon: "@assets/images/wiki/workers/alchemist/male/default-a.png"
 type: crafter
 traits:
   primary: Dexterity

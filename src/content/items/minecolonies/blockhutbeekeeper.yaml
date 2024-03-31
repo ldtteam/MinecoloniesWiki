@@ -1,3 +1,4 @@
 name: Beekeeper Hut Block
+description: The Hut Block for the Beekeeper.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutbeekeeper.png"

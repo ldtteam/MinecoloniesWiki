@@ -1,11 +1,23 @@
 ---
-import Layout, { type TitleVersion } from '@layouts/Default.astro';
-import { getCollection } from 'astro:content';
+import Meta from '@components/Meta.astro';
+import Layout from '@layouts/Default.astro';
+import { getNewestVersion } from '@utils/version';
+import type { AstroComponentFactory } from 'astro/runtime/server/render/index.js';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
-import { getWikiTitle } from '../../util/wiki';
+import { getSectionTitle, getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
+
+interface SectionGroupData {
+  data: Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
+  initialSection: { title: string; slug: string };
+  sections: { title: string; slug: string }[];
+  hasContent: boolean;
+  Content: (props: Record<string, any>) => AstroComponentFactory;
+}
 
 export async function getStaticPaths() {
-  const collection = await getCollection('wiki');
+  const collection = await getCollection('wiki', (page) => page.data.type !== 'section-group');
   return collection.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry }
@@ -15,17 +27,96 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { slug } = Astro.params;
 
-const versions = await getCollection('versions');
-const titleVersions = await Promise.all<TitleVersion>(
-  versions.map(async (version) => ({
-    version,
-    title: await getWikiTitle(version, entry)
-  }))
-);
+const title = await getWikiTitle(entry);
+const image = await getWikiImage(entry);
 const { Content } = await entry.render();
+
+let groupData: SectionGroupData | undefined = undefined;
+if (entry.data.type === 'section') {
+  const foundEntry = await getEntry(entry.data.group);
+  if (foundEntry.data.type !== 'section-group') {
+    throw new Error(
+      `Section '${entry.id}' is referring to group '${foundEntry.id}' which is not of type 'section-group'. Found type is '${foundEntry.data.type}'.`
+    );
+  }
+  const foundEntryData = foundEntry.data as Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
+
+  const sections = await getCollection(
+    'wiki',
+    (page) => page.data.type === 'section' && page.data.group.slug === foundEntry.slug
+  );
+  const initialSection = sections.splice(
+    sections.findIndex((section) => foundEntryData.initialSection.slug === section.slug),
+    1
+  )[0];
+
+  const { Content: GroupContent } = await foundEntry.render();
+
+  groupData = {
+    data: foundEntryData,
+    initialSection: {
+      title: await getSectionTitle(initialSection, false),
+      slug: initialSection.slug
+    },
+    sections: await Promise.all(
+      sections.map(async (section) => ({ title: await getSectionTitle(section, false), slug: section.slug }))
+    ),
+    hasContent: foundEntry.body.trim() !== '',
+    Content: GroupContent
+  };
+}
+
+const newestVersion = await getNewestVersion();
+const initialTitle =
+  typeof title === 'string'
+    ? title
+    : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | MineColonies Wiki';
+
+const description = await getWikiDescription(entry);
 ---
 
-<Layout title={titleVersions} titleAffix="MineColonies Wiki">
+<Layout title={title} titleAffix="MineColonies Wiki">
+  <Meta slot="meta" title={initialTitle} isWiki image={image} description={description} />
+
+  {
+    groupData && (
+      <>
+        <groupData.Content frontmatter={groupData.data} />
+        {groupData.hasContent && <hr />}
+      </>
+    )
+  }
+
+  {
+    groupData && (
+      <aside slot="left">
+        <hr />
+        <ul class="dropdown-menu d-block position-relative">
+          <li>
+            <h6 class="dropdown-header">Sections:</h6>
+          </li>
+          <li>
+            <a class="dropdown-item" href={`/wiki/${groupData.initialSection.slug}`}>
+              {groupData.initialSection.title}
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          {groupData.sections
+            .filter((section) => groupData!.data.initialSection.slug !== section.slug)
+            .map(async (section) => (
+              <li>
+                <a class="dropdown-item" href={`/wiki/${section.slug}`}>
+                  {section.title}
+                </a>
+              </li>
+            ))}
+        </ul>
+      </aside>
+    )
+  }
+
   <Content frontmatter={entry.data} />
 
   <hr />
@@ -37,3 +128,15 @@ const { Content } = await entry.render();
     for us to make edits. - MineColonies Wiki Team
   </p>
 </Layout>
+
+<style>
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  aside > * {
+    width: 100%;
+  }
+</style>

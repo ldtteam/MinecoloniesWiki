@@ -1,5 +1,7 @@
 name: Builder's Hut
 plural: Builder Huts
+description: The Builder is the most vital building in your colony, the Builder will construct any other building and is the first building you need in your colony.
+icon: "@assets/images/wiki/items/minecolonies/blockhutbuilder.png"
 workers:
   - builder
 recipes:

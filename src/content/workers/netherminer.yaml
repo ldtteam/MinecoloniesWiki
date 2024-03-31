@@ -1,5 +1,7 @@
 name: Nether Miner
 plural: Nether Miners
+description: The Nether Miner is a dangerous job, this worker will venture to the Nether to gather special items that can only be found in the Nether.
+icon: "@assets/images/wiki/workers/netherminer/male/default-a.png"
 type: gatherer
 traits:
   primary: Adaptability

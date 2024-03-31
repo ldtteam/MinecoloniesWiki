@@ -1,3 +1,4 @@
 name: Tag Tool
+description: The Tag Tool is a tool that you can use to assign tags to an anchor block. This is mostly used to configure additional functionality within schematics.
 icons:
   - "@assets/images/wiki/items/structurize/tag_tool.png"

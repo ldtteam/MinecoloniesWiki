@@ -1,5 +1,7 @@
 name: Enchanter
 plural: Enchanters
+description: The Enchanter will create enchanted books using ancient tomes and experience. The Enchanter automatically goes around your colony collecting experience from other citizens.
+icon: "@assets/images/wiki/workers/enchanter/male/default-a.png"
 type: other
 traits:
   primary: Mana

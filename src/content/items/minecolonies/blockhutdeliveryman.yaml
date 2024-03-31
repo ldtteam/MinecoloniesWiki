@@ -1,3 +1,4 @@
 name: Courier Hut Block
+description: The Hut Block for the Courier.
 icons:
   - "@assets/images/wiki/items/minecolonies/blockhutdeliveryman.png"

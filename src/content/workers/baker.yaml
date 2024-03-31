@@ -1,5 +1,7 @@
 name: Baker
 plural: Bakers
+description: The Baker will make several products like bread, cookies, pastries, pies and so forth.
+icon: "@assets/images/wiki/workers/baker/male/default-a.png"
 type: crafter
 traits:
   primary: Knowledge

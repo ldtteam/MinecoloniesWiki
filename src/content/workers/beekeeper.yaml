@@ -1,5 +1,7 @@
 name: Beekeeper
 plural: Beekeepers
+description: The Beekeeper looks after your bees, they are responsible for breeding your bees whilst also harvesting their honey and honeycombs.
+icon: "@assets/images/wiki/workers/beekeeper/male/default-a.png"
 type: animals
 traits:
   primary: Dexterity

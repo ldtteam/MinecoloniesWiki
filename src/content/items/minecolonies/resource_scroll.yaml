@@ -1,3 +1,4 @@
 name: Resource Scroll
+description: The Clipboard is a tool that can be used to track the status of your Builders their progress on the buildings they are making.
 icons:
   - "@assets/images/wiki/items/minecolonies/resource_scroll.png"

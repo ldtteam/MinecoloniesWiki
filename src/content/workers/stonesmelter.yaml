@@ -1,5 +1,7 @@
 name: Stone Smelter
 plural: Stone Smelters
+description: The Stone Smelter is your general smelter for your colony, they can smelt things like cobblestone into stone, sand into sandstone and so forth.
+icon: "@assets/images/wiki/workers/stonesmelter/male/default-a.png"
 type: crafter
 traits:
   primary: Athletics

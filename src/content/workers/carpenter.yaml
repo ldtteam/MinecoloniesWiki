@@ -1,5 +1,7 @@
 name: Carpenter
 plural: Carpenters
+description: The Carpenter can craft nearly all wooden materials there are.
+icon: "@assets/images/wiki/workers/carpenter/male/default-a.png"
 type: crafter
 traits:
   primary: Knowledge

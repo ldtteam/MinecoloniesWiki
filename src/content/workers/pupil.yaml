@@ -1,5 +1,7 @@
 name: Pupil
 plural: Pupils
+description: Pupils have to go to school where they can learn from their Teachers. They can level up their intelligence before growing up, and heading off to work.
+icon: "@assets/images/wiki/workers/pupil/male/default-a.png"
 type: other
 traits:
   primary: Intelligence & Knowledge
