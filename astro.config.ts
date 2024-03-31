@@ -12,9 +12,6 @@ register();
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  build: {
-    format: 'file'
-  },
   site: 'https://minecolonies.com',
   image: {
     domains: ['minecraft.wiki'],
