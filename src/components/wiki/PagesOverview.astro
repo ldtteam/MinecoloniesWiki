@@ -2,6 +2,8 @@
 import Button from '@components/ui/Button.astro';
 import { getWikiPages } from '@utils/wiki';
 
+import PageTitleRender from './PageTitleRender.astro';
+
 const wikiPages = await getWikiPages();
 ---
 
@@ -13,7 +15,11 @@ const wikiPages = await getWikiPages();
           <Button text={categoryInfo.type.data.name} class="text-nowrap mb-2" component="h3" />
           {categoryInfo.pages.map((page, idx) => {
             if (page.type === 'page') {
-              return <a href={`/wiki/${page.slug}`}>{page.name}</a>;
+              return (
+                <a href={`/wiki/${page.slug}`}>
+                  <PageTitleRender title={page.name} />
+                </a>
+              );
             } else if (page.type === 'subcategory') {
               return (
                 <>
