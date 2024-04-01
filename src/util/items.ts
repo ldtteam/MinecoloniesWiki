@@ -55,14 +55,14 @@ const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
       return {
         name: itemData.data.name,
         icons: requireImages ? itemData.data.icons : [],
-        link: '/wiki/items/' + item
+        link: '/wiki/items/' + item.id
       };
     } else if (page.data.type === 'item-combined') {
       const item = page.data.items.find((f) => f.id === itemPath)!;
       return {
         name: itemData.data.name,
         icons: requireImages ? itemData.data.icons : [],
-        link: '/wiki/items/' + item
+        link: '/wiki/items/' + item.id
       };
     }
   } else {
@@ -100,10 +100,10 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
     const parsedItemName = itemData.displayName.replaceAll(' ', '_');
 
     if (requireImages) {
-      const extension = imageExtensionOverrides[item.id] ?? "png";
+      const extension = imageExtensionOverrides[item.id] ?? 'png';
       const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
 
-      if (extension == "gif") {
+      if (extension == 'gif') {
         // Gifs are not optimizable by Squoosh, so we have to forward them as raw images
         return {
           name: itemData.displayName,

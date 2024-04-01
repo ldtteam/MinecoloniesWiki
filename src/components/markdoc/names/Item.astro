@@ -1,5 +1,5 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
+import VersionedItemName from '@components/markdoc/ItemName.astro';
 import { getItemData, type ItemData } from '@utils/items';
 import { getEntry } from 'astro:content';
 
@@ -42,10 +42,6 @@ if (itemData === undefined) {
       <span>{itemData.name}</span>
     )
   ) : (
-    itemData.data.map(async (item) => (
-      <VersionContent versions={item.versions} inline>
-        {itemId !== name && item.link ? <a href={item.link}>{item.name}</a> : <span>{item.name}</span>}
-      </VersionContent>
-    ))
+    <VersionedItemName data={itemData} link={itemId !== itemData.id} />
   )
 }
