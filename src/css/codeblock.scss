@@ -21,10 +21,10 @@
     content: counter(step);
     counter-increment: step;
     display: inline-block;
-    margin-right: 1rem;
+    width: 3em;
+    margin-right: 1em;
     padding-left: 0.5em;
     padding-right: 1em;
-    text-align: right;
     color: var(--astro-code-color-text);
     border-right: 1px solid;
     border-color: var(--astro-code-color-text);

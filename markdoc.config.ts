@@ -56,8 +56,7 @@ export const config: AstroMarkdocConfig = {
   extends: [
     shiki({
       theme: 'css-variables',
-      wrap: true,
-      langs: []
+      wrap: true
     })
   ]
 };
