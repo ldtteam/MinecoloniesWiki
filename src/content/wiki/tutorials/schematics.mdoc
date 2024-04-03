@@ -511,7 +511,7 @@ The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
 {% version name="1.19" after=true %}
 The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/mineshafts/*.
 
-It's recommended that you use the {% item name="tag_tool" /%} to make the mineshafts `invisible`.  Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
+It's recommended that you use the {% item name="tag_anchor" /%} to make the mineshafts `invisible`. Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
 {% /version %}
 
 ### How to make custom quarries in style packs?
@@ -519,7 +519,7 @@ The {% building name="quarry" /%} is split into a "top part" and a "bottom part"
 
 The top part is constructed by the Builder and is the part outside of the quarry pit -- decorative walls, fences, cranes, racks, etc. This contains the actual quarry hut block itself, which should pretty much always be on the second y level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up), although with some caveats this is not absolutely required.
 
-The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a {% item name="tag_tool" /%}. The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.
+The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a {% item name="tag_anchor" /%}. The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.
 
 {% version name="1.18.2" before=true %}
 The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresponding bottom parts are `simplequarryshaft1` and `mediumquarryshaft1`.
@@ -572,7 +572,7 @@ Another option is called "auto-levelling". This is where instead of making and p
 
 With auto-levelling, the builder will upgrade the child at the same time as upgrading the parent, instead of the player needing to explicitly build or upgrade one after the other. While this may sound simpler, there are some downsides: the biggest is that won't work well for child buildings that have required functional blocks (such as beds, furnaces, racks, etc), although purely decorative ones are fine. You also should not use this where the child is locked behind research, unless you can be absolutely certain that it's already unlocked (e.g. if the parent is unlocked after the child -- though still be careful of loops). The "level 0" method doesn't have these issues.
 
-Since you can have multiple alternates of buildings (in the same or separate folders), it's possible to make a particular building type have both a standalone version as well as a version embedded as a child. It's strongly recommended to use the {% item name="tag_tool" /%} to mark any blueprint intended for use only as a child (in the child schematic itself) as `invisible` so that it doesn't show up for building standalone -- especially as child versions are often simpler or cheaper and may be missing walls or other things intended to be provided by the parent, so won't look good on their own or might break game balance. It's also possible to have each child of a parent be its own unique blueprint -- but that requires even more scans and more care when pasting to use the right alternate.
+Since you can have multiple alternates of buildings (in the same or separate folders), it's possible to make a particular building type have both a standalone version as well as a version embedded as a child. It's strongly recommended to use the {% item name="tag_anchor" /%} to mark any blueprint intended for use only as a child (in the child schematic itself) as `invisible` so that it doesn't show up for building standalone -- especially as child versions are often simpler or cheaper and may be missing walls or other things intended to be provided by the parent, so won't look good on their own or might break game balance. It's also possible to have each child of a parent be its own unique blueprint -- but that requires even more scans and more care when pasting to use the right alternate.
 {% /version %}
 
 ## What if I have another question?
