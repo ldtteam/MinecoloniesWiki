@@ -42,6 +42,7 @@ Schematics are files containing block and entity information of a certain area a
     - [How to create upgradable decoration schematics?](#how-to-create-upgradable-decoration-schematics)
     - [How to use custom mineshafts in style packs?](#how-to-use-custom-mineshafts-in-style-packs)
     - [How to make custom quarries in style packs?](#how-to-make-custom-quarries-in-style-packs)
+    - [Can I make dedicated buildings for specific jobs within the same building type?](#can-i-make-dedicated-buildings-for-specific-jobs-within-the-same-building-type)
     - [How to create parent/child buildings or decorations?](#how-to-create-parentchild-buildings-or-decorations)
   - [What if I have another question?](#what-if-i-have-another-question)
 
@@ -462,6 +463,8 @@ Simply create a schematic file with the same style/name. For instance, to overri
 
 {% version name="1.19" after=true %}
 Unfortunately, this is not possible, unless you override the entire style (make a style pack with the same name as an existing style pack, in that case).
+
+However, you can create an "addon pack" with only a few buildings and/or decorations, intended to be used with the original pack; players will be able to mix'n'match from all packs.
 {% /version %}
 
 ### How to use custom huts?
@@ -496,6 +499,8 @@ Add the {% item name="deco_controller" /%} somewhere in the schematic with the n
 
 {% version name="1.19" after=true %}
 Put the {% item name="deco_controller" /%} somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
+
+Contrary to the image below, you don't need to enter anything into the deco controller's GUI before scanning any more -- but the rest of that image is still useful.
 {% /version %}
 
 ![Upgradable Decos](@assets/images/wiki/tutorial/upgradabledecos.png)
@@ -519,21 +524,36 @@ The {% building name="quarry" /%} is split into a "top part" and a "bottom part"
 
 The top part is constructed by the Builder and is the part outside of the quarry pit -- decorative walls, fences, cranes, racks, etc. This contains the actual quarry hut block itself, which should pretty much always be on the second y level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up), although with some caveats this is not absolutely required.
 
-The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a {% item name="tag_anchor" /%}. The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.
+The bottom part is constructed by the Quarrier and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a {% item name="tag_anchor" /%}. The anchor should normally be at the very top layer, although with some caveats it can be elsewhere. You should usually tag the bottom part as `invisible`.
 
 {% version name="1.18.2" before=true %}
 The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresponding bottom parts are `simplequarryshaft1` and `mediumquarryshaft1`.
 {% /version %}
 
 {% version name="1.19" after=true %}
-The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. (For reasons, it's currently best to avoid using different names.)
+The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`.
 
-The bottom part can only be `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`, regardless of what or where the top part was. As such, you can only make one of each per style pack.
+The bottom part should usually be in the same folder and with the matching name but with `shaft` before the number -- e.g. `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`.
+
+Alternatively, you can put a `shaft=` tag on the top part's quarry block to specify a different name -- e.g. `shaft=bighole1` to look for `bighole1` in the same folder as the quarry, or `shaft=decorations/quarrypit1` to look in a different folder.
 {% /version %}
 
 Importantly: when built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing.
 
 It is permitted for the quarry to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobble or other stone.
+
+### Can I make dedicated buildings for specific jobs within the same building type?
+
+{% version name="1.18.2" before=true %}
+Nope.
+{% /version %}
+
+{% version name="1.19" after=true %}
+Using the {% item name="tag_tool" /%}, you can place one or more `job=` tags on the hut block to limit which jobs can actually work there. Currently, the only sensible combinations are:
+
+* {% building name="guardtower" /%}: one or more of `job=knight`, `job=ranger`, `job=druid`. You can use these if you want to decorate your towers with specific themes (e.g. archery motifs).
+* {% building name="mine" /%}: one of `job=miner` or `job=quarrier`. You can use this if you want to make a large building with a mineshaft for the {% worker name="miner" /%} and a smaller one without for the {% worker name="quarrier" /%}.
+{% /version %}
 
 ### How to create parent/child buildings or decorations?
 
@@ -577,4 +597,4 @@ Since you can have multiple alternates of buildings (in the same or separate fol
 
 ## What if I have another question?
 
-There's a channel in the [Discord server](https://discord.minecolonies.com/) specifically for asking questions about designing your own schematics.
+The `#schematics-design` channel in the [Discord server](https://discord.minecolonies.com/) is for asking questions about designing your own schematics.
