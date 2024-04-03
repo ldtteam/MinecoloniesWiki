@@ -1,6 +1,7 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import { getItemData } from '@utils/items';
+import { getItemData, type ItemVersionData } from '@utils/items';
+import { getSortedVersions } from '@utils/version';
 import { Image } from 'astro:assets';
 
 interface Props {
@@ -11,70 +12,117 @@ interface Props {
 
 const { items, amount = 1, large = false } = Astro.props;
 
-const parsedItems = Array.isArray(items) ? items : items !== undefined && items !== null ? [items] : [];
+const versions = await getSortedVersions();
 
+const parsedItems = Array.isArray(items) ? items : items !== undefined && items !== null ? [items] : [];
 const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item, true)));
 ---
 
 {
   (
     <div class:list={['invslot', large ? 'invslot-large' : '']}>
-      <swiper-container
-        autoplay
-        autoplay-delay="1000"
-        autoplay-disable-on-interaction="false"
-        loop={itemResults.length > 1}
-        slides-per-view="1"
-        slides-per-group="1"
-        no-swiping
-        no-swiping-selector="*"
-        width="2em"
-        class="invslot-item"
-      >
-        {itemResults.map((itemResult) => (
-          <swiper-slide>
-            {itemResult.data.map((item) => (
-              <VersionContent versions={item.versions}>
-                {item.icons.map((icon) => (
-                  <div class="invslot-wrapper">
-                    {typeof icon === 'string' ? (
-                      <img
-                        src={icon}
-                        alt={item.name}
-                        loading="lazy"
-                        decoding="async"
-                        width={32}
-                        height={32}
-                        class="inv-sprite"
-                        data-bs-toggle="tooltip"
-                        title={item.name}
-                      />
-                    ) : (
-                      <Image
-                        src={icon}
-                        alt={item.name}
-                        width={32}
-                        height={32}
-                        class="inv-sprite"
-                        data-bs-toggle="tooltip"
-                        title={item.name}
-                      />
-                    )}
-                  </div>
-                ))}
-              </VersionContent>
-            ))}
-          </swiper-slide>
-        ))}
-        {amount > 1 && (
-          <div class="invslot-stacksize">
-            <span>{amount}</span>
-          </div>
-        )}
-      </swiper-container>
+      {versions.map((version) => {
+        const itemData = itemResults
+          .map((itemResult) =>
+            itemResult.data.find((f) => f.versions.map((v) => v.data.order).includes(version.data.order))
+          )
+          .filter((f): f is ItemVersionData => f !== undefined);
+
+        return (
+          <VersionContent versions={[version]} class="w-100">
+            <swiper-container
+              init="false"
+              autoplay
+              autoplay-delay="1000"
+              autoplay-pause-on-mouse-enter
+              effect="fade"
+              loop={itemData.length > 1}
+              no-swiping
+              no-swiping-selector="*"
+              class="invslot-item"
+              data-recipe-slot
+              data-recipe-version={version.data.order}
+            >
+              {itemData.map((item) => (
+                <swiper-slide>
+                  {item.icons.map((icon) => (
+                    <div class="invslot-wrapper">
+                      {typeof icon === 'string' ? (
+                        <img
+                          src={icon}
+                          alt={item.name}
+                          loading="lazy"
+                          decoding="async"
+                          width={32}
+                          height={32}
+                          class="inv-sprite"
+                          data-bs-toggle="tooltip"
+                          title={item.name}
+                        />
+                      ) : (
+                        <Image
+                          src={icon}
+                          alt={item.name}
+                          width={32}
+                          height={32}
+                          class="inv-sprite"
+                          data-bs-toggle="tooltip"
+                          title={item.name}
+                        />
+                      )}
+                    </div>
+                  ))}
+                </swiper-slide>
+              ))}
+            </swiper-container>
+          </VersionContent>
+        );
+      })}
+      {amount > 1 && (
+        <div class="invslot-stacksize">
+          <span>{amount}</span>
+        </div>
+      )}
     </div>
   )
 }
+
+<script>
+  import type { SwiperContainer } from 'swiper/element';
+
+  function updateSwipers(version: string) {
+    const swipers = document.querySelectorAll<SwiperContainer>('swiper-container[data-recipe-slot]');
+    swipers.forEach((swiper) => {
+      swiper.initialize();
+      if (swiper.dataset.recipeVersion === version) {
+        swiper.swiper.enable();
+      } else {
+        swiper.swiper.disable();
+      }
+    });
+  }
+
+  function update(mutations: MutationRecord[]) {
+    for (const mutation of mutations) {
+      if (
+        mutation.type === 'attributes' &&
+        mutation.attributeName === 'data-version' &&
+        mutation.target instanceof HTMLElement
+      ) {
+        updateSwipers(mutation.target.dataset.version!);
+      }
+    }
+  }
+
+  const versionObserver = new MutationObserver(update);
+
+  function setup() {
+    versionObserver.observe(document.body, { attributes: true });
+    updateSwipers(document.body.dataset.version!);
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>
 
 <style style="scss">
   img {

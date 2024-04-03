@@ -20,7 +20,7 @@ type ItemFetcher = (
   requireImages: boolean
 ) => Promise<ItemFetcherResponse | undefined>;
 
-interface ItemVersionData extends ParsedItemId {
+export interface ItemVersionData extends ParsedItemId {
   name: string;
   link: string | undefined;
   icons: Array<string | ImageMetadata>;
