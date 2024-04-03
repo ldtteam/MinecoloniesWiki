@@ -1,0 +1,12 @@
+---
+import { socials } from '@utils/social';
+
+interface Props {
+  name: keyof typeof socials;
+}
+
+const { name } = Astro.props;
+const social = socials[name];
+---
+
+<a href={social.link}>{social.name}</a>

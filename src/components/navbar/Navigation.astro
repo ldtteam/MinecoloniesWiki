@@ -31,9 +31,7 @@ const { isWiki } = Astro.props;
         <MainPages />
       </ul>
 
-      <ul class="ms-auto navbar-nav">
-        <Toolbar />
-      </ul>
+      <Toolbar class="ms-auto" />
     </div>
 
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
@@ -64,9 +62,7 @@ const { isWiki } = Astro.props;
           }
         </div>
 
-        <ul class="navbar-nav flex-row gap-2">
-          <Toolbar />
-        </ul>
+        <Toolbar class="flex-row gap-2" />
       </div>
     </div>
   </Container>

@@ -1,5 +1,6 @@
 ---
 import BuildingName from '@components/markdoc/BuildingName.astro';
+import SocialLink from '@components/markdoc/SocialLink.astro';
 import WorkerName from '@components/markdoc/WorkerName.astro';
 import Meta from '@components/Meta.astro';
 import PagesOverview from '@components/wiki/PagesOverview.astro';
@@ -12,7 +13,7 @@ import Layout from '@layouts/Default.astro';
   <p>
     MineColonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It
     lets your leadership skills soar by providing you with everything you need to build your kingdom. MineColonies gives
-    you the flexibility to create a colony as unique as every player. With so many options, you‘ll create a different
+    you the flexibility to create a colony as unique as every player. With so many options, you'll create a different
     colony every time, adapt it to any biome, build inside a mountain, on top of one, under the ocean, or in the sky.
   </p>
   <p>The limit is your imagination!</p>
@@ -46,15 +47,16 @@ import Layout from '@layouts/Default.astro';
   <hr />
   <p>
     MineColonies is a free and open-source mod developed by Let's Dev Together (LDT), a non-profit community. The source
-    code is available on [GitHub](https://github.com/ldtteam/minecolonies). Our developers are a hard-working,
-    well-integrated coding team, continuously adding more content to make the MineColonies experience even greater.
-    However, we are always looking for more people to contribute to the mod, whether as a coder, builder, artist, voice
-    actor, wiki editor, tester, or simply supporting us on [Patreon](https://www.patreon.com/minecolonies)!
+    code is available on <SocialLink name="github" />. Our developers are a hard-working, well-integrated coding team,
+    continuously adding more content to make the MineColonies experience even greater. However, we are always looking
+    for more people to contribute to the mod, whether as a coder, builder, artist, voice actor, wiki editor, tester, or
+    simply supporting us on <SocialLink name="patreon" />!
   </p>
   <p>
-    Found a bug? Report it as an [issue](https://github.com/ldtteam/minecolonies/issues/new/choose) to help us give you
-    the best gaming experience. If you require any help or just want to join the conversation, check us out on
-    [Discord](https://discord.minecolonies.com)!
+    Found a bug? Report it as an <a href="https://github.com/ldtteam/minecolonies/issues/new/choose">issue</a> to help us
+    give you the best gaming experience. If you require any help or just want to join the conversation, check us out on <SocialLink
+      name="discord"
+    />!
   </p>
   <hr />
   <p class="text-center">

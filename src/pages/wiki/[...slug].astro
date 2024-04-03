@@ -68,15 +68,13 @@ if (entry.data.type === 'section') {
 
 const newestVersion = await getNewestVersion();
 const initialTitle =
-  typeof title === 'string'
-    ? title
-    : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | MineColonies Wiki';
+  typeof title === 'string' ? title : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title;
 
 const description = await getWikiDescription(entry);
 ---
 
 <Layout title={title} titleAffix="MineColonies Wiki">
-  <Meta slot="meta" title={initialTitle} isWiki image={image} description={description} />
+  <Meta slot="meta" title={initialTitle + ' | MineColonies Wiki'} isWiki image={image} description={description} />
 
   {
     groupData && (

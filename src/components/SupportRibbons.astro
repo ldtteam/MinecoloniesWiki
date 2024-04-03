@@ -1,4 +1,5 @@
 ---
+import { socials } from '@utils/social';
 import { Icon } from 'astro-icon/components';
 
 interface Props {
@@ -10,25 +11,25 @@ const { class: cssClass = '' } = Astro.props;
 
 <div class:list={['text-center', 'd-flex', 'justify-content-center', 'gap-3', cssClass]}>
   <div class="ribbon-patreon">
-    <a href="https://www.patreon.com/bePatron?u=3239371">
+    <a href={socials.patreon.link}>
       <Icon name="fa6-brands:patreon" class="me-2" />
       <span>Become a Patron</span>
     </a>
   </div>
   <div class="ribbon-discord">
-    <a href="https://www.paypal.me/ldtteam">
+    <a href={socials.discord.link}>
       <Icon name="fa6-brands:discord" class="me-2" />
       <span>Join our Discord</span>
     </a>
   </div>
   <div class="ribbon-twitch">
-    <a href="https://www.twitch.tv/minecoloniesteam">
+    <a href={socials.twitch.link}>
       <Icon name="fa6-brands:twitch" class="me-2" />
       <span>Subscribe on Twitch</span>
     </a>
   </div>
   <div class="ribbon-paypal">
-    <a href="https://www.paypal.me/ldtteam">
+    <a href={socials.paypal.link}>
       <Icon name="fa6-brands:paypal" class="me-2" />
       <span>Donate via PayPal</span>
     </a>

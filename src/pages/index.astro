@@ -1,6 +1,7 @@
 ---
 import Button from '@components/ui/Button.astro';
 import Layout from '@layouts/Default.astro';
+import { socials } from '@utils/social';
 import { Icon } from 'astro-icon/components';
 ---
 
@@ -10,16 +11,16 @@ import { Icon } from 'astro-icon/components';
     features including many NPC workers, buildings, a fantastic building tool and a robust permissions system in
     multiplayer, you can have the Colony of your dreams!
   </p>
-  <!-- <DownloadDialog /> -->
+
   <Button text="Learn More" class="button-info" />
   <div class:list={['social', 'pb-3']}>
     <div class:list={['banner', 'patreon']}>
-      <a href="https://www.patreon.com/bePatron?u=3239371">
+      <a href={socials.patreon.link}>
         <Icon name="fa6-brands:patreon" /> Become a Patron
       </a>
     </div>
     <div class:list={['banner', 'discord']}>
-      <a href="https://discord.gg/gA7T6ma">
+      <a href={socials.discord.link}>
         <Icon name="fa6-brands:discord" /> Join Our Discord
       </a>
     </div>
@@ -89,3 +90,4 @@ import { Icon } from 'astro-icon/components';
     color: #fff !important;
   }
 </style>
+@utils/social
