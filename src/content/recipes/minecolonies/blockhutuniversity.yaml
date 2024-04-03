@@ -49,7 +49,7 @@ row3:
     - minecraft/dark_oak_planks
     - minecraft/crimson_planks
     - minecraft/warped_planks
-  item2: minecraft/book_normal
+  item2: minecraft/book
   item3:
     - minecraft/oak_planks
     - minecraft/spruce_planks
