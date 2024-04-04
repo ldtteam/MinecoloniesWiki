@@ -1,4 +1,4 @@
-type SocialKeys = 'discord' | 'github' | 'patreon' | 'paypal' | 'reddit' | 'twitch' | 'twitter' | 'youtube';
+export type SocialKeys = 'discord' | 'github' | 'patreon' | 'paypal' | 'reddit' | 'twitch' | 'twitter' | 'youtube';
 
 type Socials = Record<
   SocialKeys,

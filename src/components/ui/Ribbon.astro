@@ -1,18 +1,65 @@
 ---
-import Container from './Container.astro';
+type ImageKey = 'left' | 'center' | 'right';
 
-interface Props {
-  title: string;
-  center?: boolean;
+export interface Props {
+  image?: (key: ImageKey) => string;
+  textColor?: string;
+  class?: string;
+  outer?: boolean;
+  as?: string;
 }
 
-const { center = false } = Astro.props;
+const {
+  image = (key: ImageKey) => `/images/ribbon/navbar_modular_${key}.png`,
+  textColor = 'white',
+  class: cssClass,
+  outer = false,
+  as = 'div'
+} = Astro.props;
+
+const vars = {
+  'path-left': `url('${image('left')}')`,
+  'path-center': `url('${image('center')}')`,
+  'path-right': `url('${image('right')}')`,
+  margin: outer ? '0' : '1em'
+};
+
+const Tag = as;
 ---
 
-<div class="ribbon ribbon-secondary">
-  <Container>
-    <p class:list={[center ? 'text-center' : 'text-start', 'm-0', 'py-1']}>
-      {Astro.props.title}
-    </p>
-  </Container>
+<div>
+  <Tag class:list={['ribbon', cssClass]} style={{ color: textColor }}>
+    <slot />
+  </Tag>
 </div>
+
+<style define:vars={vars}>
+  .ribbon {
+    position: relative;
+    background: var(--path-center) center/100% repeat-x;
+    background-size: contain;
+    margin: 0 var(--margin);
+  }
+
+  .ribbon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: var(--path-left) right/100% no-repeat;
+    height: 100%;
+    right: 100%;
+    top: 0;
+    aspect-ratio: 0.5;
+  }
+
+  .ribbon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: var(--path-right) left/100% no-repeat;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    aspect-ratio: 0.5;
+  }
+</style>

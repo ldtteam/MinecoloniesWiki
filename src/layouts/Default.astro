@@ -116,7 +116,7 @@ const initialTitle =
 
           <Container>
             <slot slot="left" name="left" />
-            <hr />
+            {showHeader && <hr />}
             <slot />
             <slot slot="right" name="right" />
           </Container>

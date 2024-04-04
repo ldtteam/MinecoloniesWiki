@@ -17,7 +17,7 @@ interface SectionGroupData {
 }
 
 export async function getStaticPaths() {
-  const collection = await getCollection('wiki', (page) => page.data.type !== 'section-group');
+  const collection = await getCollection('wiki');
   return collection.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry }
@@ -26,6 +26,10 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { slug } = Astro.params;
+
+if (entry.data.type === 'section-group') {
+  return Astro.redirect('/wiki/' + entry.data.initialSection.slug);
+}
 
 const title = await getWikiTitle(entry);
 const image = await getWikiImage(entry);

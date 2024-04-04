@@ -2,8 +2,8 @@
 import SponsorRow from '@components/SponsorRow.astro';
 import SupporterRow from '@components/SupporterRow.astro';
 import SupportRibbons from '@components/SupportRibbons.astro';
+import Banner from '@components/ui/Banner.astro';
 import Card from '@components/ui/Card.astro';
-import Ribbon from '@components/ui/Ribbon.astro';
 import Layout from '@layouts/Default.astro';
 import { getEntry } from 'astro:content';
 
@@ -24,7 +24,7 @@ const supporters = await getEntry('supporters', 'supporters');
   <hr />
   <SupportRibbons class="mb-3" />
 
-  <Ribbon title="Sponsors" center />
+  <Banner center>Sponsors</Banner>
 
   <div class="sponsors-grid my-3">
     {sponsors.data.map((sponsor) => <SponsorRow sponsor={sponsor} />)}
@@ -33,7 +33,7 @@ const supporters = await getEntry('supporters', 'supporters');
     </Card>
   </div>
 
-  <Ribbon title="Our Top Supporters" center />
+  <Banner center>Our Top Supporters</Banner>
 
   <div class="support-grid my-3">
     {supporters.data.map((supporter) => <SupporterRow supporter={supporter} />)}

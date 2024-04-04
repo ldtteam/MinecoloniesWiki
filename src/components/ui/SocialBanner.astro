@@ -1,0 +1,21 @@
+---
+import { type SocialKeys, socials } from '@utils/social';
+import { Icon } from 'astro-icon/components';
+
+import type { Props as BannerProps } from './Banner.astro';
+import Banner from './Banner.astro';
+
+interface Props extends Omit<BannerProps, 'image'> {
+  social: SocialKeys;
+}
+
+const { social, textColor = 'white', ...rest } = Astro.props;
+const socialData = socials[social];
+---
+
+<Banner {...rest} {textColor} image={(key) => `/images/ribbon/social/${social}_ribbon_${key}.png`}>
+  <a href={socialData.link} style={{ color: textColor }}>
+    <Icon name={`fa6-brands:${social}`} />
+    <slot />
+  </a>
+</Banner>

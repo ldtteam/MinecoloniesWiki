@@ -1,8 +1,8 @@
 ---
-import { socials } from '@utils/social';
+import { type SocialKeys, socials } from '@utils/social';
 
 interface Props {
-  name: keyof typeof socials;
+  name: SocialKeys;
 }
 
 const { name } = Astro.props;
