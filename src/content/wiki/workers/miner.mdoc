@@ -12,13 +12,24 @@ If the Miner is not working and just stands by their hut block, check to make su
 
 The level of the Mine will dictate how deep the Miner will mine:
 
-| Building Level |
-| -------------- | ------- | ------- |
-|                | 1.16    | 1.18+   |
-| 1              | 50      | 40      |
-| 2              | 30      | 20      |
-| 3              | Bedrock | 0       |
-| 4              |         | Bedrock |
+{% version name="1.16.5" before=true %}
+| Building Level | Shaft Y Level |
+| -------------- | ------------- |
+| 1              | 50            |
+| 2              | 30            |
+| 3              | Bedrock       |
+| 4              | "             |
+| 5              | "             |
+{% /version %}
+{% version name="1.17" after=true %}
+| Building Level | Shaft Y Level |
+| -------------- | ------------- |
+| 1              | 40            |
+| 2              | 20            |
+| 3              | 0             |
+| 4              | Bedrock       |
+| 5              | "             |
+{% /version %}
 
 The Miner will only mine blocks according to the level of their pickaxe and will only be able to use a tool according to the level of their hut (check the [worker](/wiki/systems/worker) system page).
 
