@@ -2,14 +2,14 @@ import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getBuildingData, getBuildingName } from './building';
 import { getItemData } from './items';
-import { combineVersionedTitles, type TitleVersions } from './version';
+import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
 import { getWorkerData, getWorkerName } from './workers';
 
 export type Title = string | TitleVersions;
 
 interface WikiPageEntry {
   type: 'page';
-  name: Title;
+  name: string | TitleVersionItem;
   slug: string;
 }
 
@@ -19,13 +19,9 @@ interface WikiSubCategoryEntry {
   pages: WikiPageEntry[];
 }
 
-type WikiPages = Record<
-  string,
-  {
-    type: CollectionEntry<'wiki_categories'>;
-    pages: (WikiSubCategoryEntry | WikiPageEntry)[];
-  }
->;
+type WikiPage = WikiSubCategoryEntry | WikiPageEntry;
+
+type WikiPages = Map<CollectionEntry<'wiki_categories'>, WikiPage[]>;
 
 const WorkerPageTypes: Record<CollectionEntry<'workers'>['data']['type'], string> = {
   animals: 'Animals',
@@ -143,17 +139,30 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
   }
 }
 
+async function extractPageTitles(entry: CollectionEntry<'wiki'>): Promise<WikiPageEntry[]> {
+  const title = await getWikiTitle(entry);
+  if (typeof title === 'string') {
+    return [
+      {
+        type: 'page',
+        name: title,
+        slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
+      }
+    ];
+  }
+
+  return title.map((titleVersion) => ({
+    type: 'page',
+    name: titleVersion,
+    slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
+  }));
+}
+
 export async function getWikiPages(): Promise<WikiPages> {
   const wikiPages = await getCollection('wiki', (page) => page.slug.indexOf('/') > 0 && page.data.type !== 'section');
   const wikiCategories = (await getCollection('wiki_categories')).sort((a, b) => a.data.order - b.data.order);
 
-  const distributedPages: WikiPages = {};
-  wikiCategories.forEach((category) => {
-    distributedPages[category.id] = {
-      type: category,
-      pages: []
-    };
-  });
+  const distributedPages = wikiCategories.reduce<WikiPages>((prev, curr) => prev.set(curr, []), new Map());
 
   for (const entry of wikiPages) {
     const categoryString = entry.slug.substring(0, entry.slug.indexOf('/'));
@@ -170,7 +179,8 @@ export async function getWikiPages(): Promise<WikiPages> {
       const workerData = await getEntry('workers', entry.data.worker.id);
       if (workerData !== undefined) {
         const subCategoryName = WorkerPageTypes[workerData.data.type];
-        let subCategory = distributedPages[category.id].pages
+        let subCategory = distributedPages
+          .get(category)!
           .filter(isSubCategory)
           .find((f) => f.name === subCategoryName);
 
@@ -180,7 +190,7 @@ export async function getWikiPages(): Promise<WikiPages> {
             name: WorkerPageTypes[workerData.data.type],
             pages: []
           };
-          distributedPages[category.id].pages.push(subCategory);
+          distributedPages.get(category)!.push(subCategory);
         }
 
         subCategory.pages.push({
@@ -190,12 +200,16 @@ export async function getWikiPages(): Promise<WikiPages> {
         });
       }
     } else {
-      distributedPages[category.id].pages.push({
-        type: 'page',
-        name: await getWikiTitle(entry),
-        slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
-      });
+      distributedPages.get(category)!.push(...(await extractPageTitles(entry)));
     }
+  }
+
+  for (const pages of distributedPages.values()) {
+    pages.sort((a, b) =>
+      (typeof a.name === 'string' ? a.name : a.name.title).localeCompare(
+        typeof b.name === 'string' ? b.name : b.name.title
+      )
+    );
   }
 
   return distributedPages;

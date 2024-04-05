@@ -10,14 +10,14 @@ const wikiPages = await getWikiPages();
 {
   (
     <div class="pages-grid">
-      {Object.entries(wikiPages).map(([_, categoryInfo]) => (
+      {Array.from(wikiPages).map(([category, pages]) => (
         <div class="text-center d-flex flex-column">
-          <Button text={categoryInfo.type.data.name} class="text-nowrap mb-2" component="h3" />
-          {categoryInfo.pages.map((page, idx) => {
+          <Button text={category.data.name} class="text-nowrap mb-2" component="h3" />
+          {pages.map((page, idx) => {
             if (page.type === 'page') {
               return (
                 <a href={`/wiki/${page.slug}`}>
-                  <PageTitleRender title={page.name} />
+                  <PageTitleRender title={typeof page.name === 'string' ? page.name : [page.name]} />
                 </a>
               );
             } else if (page.type === 'subcategory') {

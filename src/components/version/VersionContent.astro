@@ -1,24 +1,21 @@
 ---
-import type { HTMLAttributes } from 'astro/types';
+import type { JSX } from 'astro/jsx-runtime';
+import type { HTMLTag } from 'astro/types';
 import type { CollectionEntry } from 'astro:content';
 
-interface Props extends HTMLAttributes<'div'> {
+interface Props extends JSX.DOMAttributes {
   versions: CollectionEntry<'versions'>[];
   inline?: boolean;
+  as?: HTMLTag;
+  class?: string;
 }
 
-const { versions, inline = false, ...rest } = Astro.props;
+const { versions, inline = false, as, class: cssClass } = Astro.props;
 const versionNumbers = versions.map((version) => version.data.order).join(',');
+
+const Tag = as ?? (inline ? 'span' : 'div');
 ---
 
-{
-  inline ? (
-    <span data-versions={versionNumbers} {...rest}>
-      <slot />
-    </span>
-  ) : (
-    <div data-versions={versionNumbers} {...rest}>
-      <slot />
-    </div>
-  )
-}
+<Tag class={cssClass} data-versions={versionNumbers}>
+  <slot />
+</Tag>

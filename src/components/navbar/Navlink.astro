@@ -1,10 +1,11 @@
 ---
-import PageTitleRender from '@components/wiki/PageTitleRender.astro';
-import type { Title } from '@utils/wiki';
+import VersionContent from '@components/version/VersionContent.astro';
+import type { TitleVersionItem } from '@utils/version';
+import { getCollection } from 'astro:content';
 
 interface Props {
   id: string;
-  name: Title;
+  name: string | TitleVersionItem;
   href?: string;
   root?: boolean;
   thin?: boolean;
@@ -19,9 +20,15 @@ const active = exact ? pathName === href : href ? pathName.startsWith(href) : fa
 const dropdownId = `navbarDropdown${id}`;
 
 const hasChildren = Astro.slots.has('default');
+
+const allVersions = await getCollection('versions');
 ---
 
-<li class:list={['nav-item', root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
+<VersionContent
+  versions={typeof name === 'string' ? allVersions : name.versions}
+  as="li"
+  class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
+>
   {
     hasChildren ? (
       <>
@@ -37,7 +44,7 @@ const hasChildren = Astro.slots.has('default');
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <PageTitleRender title={name} />
+          {typeof name === 'string' ? name : name.title}
         </button>
         <ul class="dropdown-menu" aria-labelledby={dropdownId}>
           <slot />
@@ -45,11 +52,11 @@ const hasChildren = Astro.slots.has('default');
       </>
     ) : (
       <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
-        <PageTitleRender title={name} />
+        {typeof name === 'string' ? name : name.title}
       </a>
     )
   }
-</li>
+</VersionContent>
 
 <script>
   function onLoad() {
@@ -57,6 +64,16 @@ const hasChildren = Astro.slots.has('default');
       elem.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
+
+        if (elem.parentElement?.parentElement) {
+          for (const listItem of elem.parentElement.parentElement.children) {
+            listItem.querySelector('a')?.classList.remove('show');
+            listItem.querySelector('.dropdown-menu')?.classList.remove('show');
+          }
+        }
+
+        elem.classList.add('show');
+        elem.nextElementSibling?.classList.add('show');
       });
     });
   }

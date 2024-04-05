@@ -47,7 +47,7 @@ interface TitleVersionEntry {
   version: CollectionEntry<'versions'>;
 }
 
-interface TitleVersionItem {
+export interface TitleVersionItem {
   title: string;
   versions: CollectionEntry<'versions'>[];
 }
