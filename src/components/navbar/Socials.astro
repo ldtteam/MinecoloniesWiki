@@ -1,0 +1,34 @@
+---
+import { socials } from '@utils/social';
+import { Icon } from 'astro-icon/components';
+---
+
+{
+  Object.entries(socials).map(([key, social]) => (
+    <li class="nav-item social-icon bg-light mx-1">
+      <a href={social.link} class="nav-link" aria-label={social.name + ' link'}>
+        <Icon name={`fa6-brands:${key}`} color={social.color} />
+      </a>
+    </li>
+  ))
+}
+
+<style>
+  .social-icon {
+    padding: 4px;
+    border-radius: 1em;
+    width: 28px;
+    height: 28px;
+  }
+
+  .social-icon a {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+</style>

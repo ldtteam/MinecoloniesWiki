@@ -1,33 +1,11 @@
 ---
-import { socials } from '@utils/social';
 import { Icon } from 'astro-icon/components';
-
-interface Props {
-  class?: string;
-}
-
-const { class: cssClass } = Astro.props;
 ---
 
-<ul class:list={['navbar-nav btn-group', cssClass]}>
-  {
-    Object.entries(socials).map(([key, social]) => (
-      <li class="nav-item btn btn-sm bg-light">
-        <a href={social.link} class="nav-link p-0" aria-label={social.name + ' link'}>
-          <Icon name={`fa6-brands:${key}`} color={social.color} />
-        </a>
-      </li>
-    ))
-  }
-</ul>
-<ul class:list={['navbar-nav']}>
-  <li class="nav-item">
-    <button class="theme-switcher mx-2 btn btn-secondary">
-      <Icon class="select-theme-light" name="fa6-solid:sun" color="yellow" />
-      <Icon class="select-theme-dark" name="fa6-solid:moon" color="yellow" />
-    </button>
-  </li>
-</ul>
+<button class="theme-switcher mx-2 btn btn-secondary">
+  <Icon class="select-theme-light" name="fa6-solid:sun" color="yellow" />
+  <Icon class="select-theme-dark" name="fa6-solid:moon" color="yellow" />
+</button>
 
 <script>
   function toggleTheme() {

@@ -1,5 +1,4 @@
 ---
-import Container from './Container.astro';
 import type { Props as RibbonProps } from './Ribbon.astro';
 import Ribbon from './Ribbon.astro';
 
@@ -11,9 +10,9 @@ const { center = true, ...rest } = Astro.props;
 ---
 
 <Ribbon {...rest}>
-  <Container>
+  <div class="container">
     <div class:list={[center ? 'text-center' : 'text-start', 'm-0', 'py-1']}>
       <slot />
     </div>
-  </Container>
+  </div>
 </Ribbon>

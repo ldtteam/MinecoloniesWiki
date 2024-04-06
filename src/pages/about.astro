@@ -1,6 +1,6 @@
 ---
 import SocialLink from '@components/markdoc/SocialLink.astro';
-import Ribbon from '@components/ui/Ribbon.astro';
+import Banner from '@components/ui/Banner.astro';
 import Layout from '@layouts/Default.astro';
 export const screenshots: number[] = [...Array(32)];
 ---
@@ -49,7 +49,7 @@ export const screenshots: number[] = [...Array(32)];
     <SocialLink name="discord" />
   </p>
 
-  <Ribbon title="Images" center />
+  <Banner center>Images</Banner>
 
   <section class="container pt-3">
     <div class="grid">

@@ -1,9 +1,16 @@
 ---
-const hasLeft = Astro.slots.has('left');
-const hasRight = Astro.slots.has('left');
+const leftContent = await Astro.slots.render('left');
+const rightContent = await Astro.slots.render('right');
+
+const hasLeft = leftContent.trim().length > 0;
+const hasRight = rightContent.trim().length > 0;
+
+console.log(rightContent);
+
+const remainingCols = 7 - (hasLeft ? 1 : 0) - (hasRight ? 1 : 0);
 ---
 
-<div class="grid w-100" style="--bs-columns: 7;">
+<div class="container grid w-100" style="--bs-columns: 7;">
   {
     hasLeft && (
       <div class="g-col-12 g-col-lg-1">
@@ -11,7 +18,7 @@ const hasRight = Astro.slots.has('left');
       </div>
     )
   }
-  <div class:list={['g-col-12', 'g-col-lg-5', hasLeft ? '' : 'g-start-lg-2']}>
+  <div class:list={['g-col-12', `g-col-lg-${remainingCols}`]}>
     <slot />
   </div>
   {
