@@ -7,7 +7,6 @@ import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
-import Container from '@components/ui/Container.astro';
 import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import { getNewestVersion } from '@utils/version';
 import type { Title } from '@utils/wiki';
@@ -43,6 +42,12 @@ const initialTitle =
   typeof title === 'string'
     ? title
     : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | ' + titleAffix;
+
+const hasLeftSlot = Astro.slots.has('left');
+const hasRightSlot = Astro.slots.has('right');
+
+const totalColumns = 7;
+const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
 ---
 
 <!doctype html>
@@ -114,12 +119,26 @@ const initialTitle =
             )
           }
 
-          <Container>
-            <slot slot="left" name="left" />
-            {showHeader && <hr />}
-            <slot />
-            <slot slot="right" name="right" />
-          </Container>
+          <div class="container grid w-100" style={`--bs-columns: ${totalColumns};`}>
+            {
+              hasLeftSlot && (
+                <div class="g-col-12 g-col-lg-1">
+                  <slot name="left" />
+                </div>
+              )
+            }
+            <div class:list={['g-col-12', `g-col-lg-${remainingColumns}`]}>
+              {showHeader && <hr />}
+              <slot />
+            </div>
+            {
+              hasRightSlot && (
+                <div class="g-col-12 g-col-lg-1">
+                  <slot name="right" />
+                </div>
+              )
+            }
+          </div>
         </div>
         <Footer />
       </div>
