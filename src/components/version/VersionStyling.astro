@@ -7,8 +7,12 @@ let allVersions = (await getSortedVersions())
   .map(
     (version) =>
       sass.compileString(`body[data-version='${version.data.order}'] [data-versions*='${version.data.order}'] {
-    display: initial;
-  }`).css
+        display: inline-block;
+
+        .dropdown-menu > li {
+          display: block;
+        }
+      }`).css
   )
   .join('\n');
 
