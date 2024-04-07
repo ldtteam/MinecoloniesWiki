@@ -1,9 +1,7 @@
 ---
-import Ribbon from '@components/ui/Ribbon.astro';
+import Banner from './ui/Banner.astro';
 
 const year = new Date().getFullYear();
 ---
 
-<footer id="footer">
-  <Ribbon title={`© Minecolonies ${year}`} />
-</footer>
+<Banner as="footer">&copy; Minecolonies {year}</Banner>

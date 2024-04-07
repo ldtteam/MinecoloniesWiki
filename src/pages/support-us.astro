@@ -11,22 +11,24 @@ const sponsors = await getEntry('sponsors', 'sponsors');
 const supporters = await getEntry('supporters', 'supporters');
 ---
 
-<Layout title="Support Us" header="Why should you support us?">
-  <p>
-    MineColonies is being developed by a passionate group of people in their free time, taking up considerable resources
-    to maintain and improve almost on a daily basis.
-  </p>
-  <p>
-    Please consider supporting us via one of the options below since that is basically the only source of income this
-    project is able to generate. We appreciate all support we can get and are incredibly thankful to our amazing
-    community and all the awesome active donors.
-  </p>
-  <hr />
-  <SupportRibbons class="mb-3" />
+<Layout title="Support Us" header="Why should you support us?" fluid>
+  <div class="container">
+    <p>
+      MineColonies is being developed by a passionate group of people in their free time, taking up considerable
+      resources to maintain and improve almost on a daily basis.
+    </p>
+    <p>
+      Please consider supporting us via one of the options below since that is basically the only source of income this
+      project is able to generate. We appreciate all support we can get and are incredibly thankful to our amazing
+      community and all the awesome active donors.
+    </p>
+    <hr />
+    <SupportRibbons class="mb-3" />
+  </div>
 
   <Banner center>Sponsors</Banner>
 
-  <div class="sponsors-grid my-3">
+  <div class="container sponsors-grid my-3">
     {sponsors.data.map((sponsor) => <SponsorRow sponsor={sponsor} />)}
     <Card class="d-flex" autoSize>
       <p class="m-auto lead">Your company could be here!</p>
@@ -35,7 +37,7 @@ const supporters = await getEntry('supporters', 'supporters');
 
   <Banner center>Our Top Supporters</Banner>
 
-  <div class="support-grid my-3">
+  <div class="container support-grid my-3">
     {supporters.data.map((supporter) => <SupporterRow supporter={supporter} />)}
   </div>
 </Layout>

@@ -52,6 +52,7 @@ const itemCombinedTransform: Tag['transform'] = (node, config) => {
 
 export const item: Tag = {
   render: component('@components/markdoc/names/Item.astro'),
+  selfClosing: true,
   attributes: {
     name: {
       type: String,

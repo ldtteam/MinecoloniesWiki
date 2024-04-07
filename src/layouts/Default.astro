@@ -17,9 +17,10 @@ interface Props {
   titleAffix?: string;
   header?: string;
   showHeader?: boolean;
+  fluid?: boolean;
 }
 
-const { title, titleAffix = 'MineColonies', header = title, showHeader = true } = Astro.props;
+const { title, titleAffix = 'MineColonies', header = title, showHeader = true, fluid = false } = Astro.props;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
@@ -43,8 +44,8 @@ const initialTitle =
     ? title
     : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | ' + titleAffix;
 
-const hasLeftSlot = Astro.slots.has('left');
-const hasRightSlot = Astro.slots.has('right');
+const hasLeftSlot = await Astro.slots.render('left').then((slot) => (slot ?? '').trim() !== '');
+const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '').trim() !== '');
 
 const totalColumns = 7;
 const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
@@ -104,44 +105,45 @@ const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
   </head>
   <body data-latest-version={newestVersion.data.order} {...versionTitleData} data-title-affix={titleAffix}>
     <PageRoot isHome={isHome}>
-      <div class="page_root p-5">
-        <Header isWiki={isWikiPage} />
-        <Navigation isWiki={isWikiPage} />
+      <Header isWiki={isWikiPage} />
+      <Navigation isWiki={isWikiPage} />
 
-        <div transition:animate="fade" class="page_content">
+      <div transition:animate="fade" class="page-content">
+        {
+          showHeader && (
+            <h1 class="page_header text-center m-0">
+              <PageTitleRender title={header} />
+            </h1>
+          )
+        }
+
+        <div
+          class:list={[fluid ? 'container-fluid' : 'container', 'grid w-100']}
+          style={`--bs-columns: ${totalColumns};`}
+        >
           {
-            showHeader && (
-              <>
-                <h1 class="page_header text-center m-0">
-                  <PageTitleRender title={header} />
-                </h1>
-              </>
+            hasLeftSlot && (
+              <div class="g-col-12 g-col-lg-1">
+                <slot name="left" />
+              </div>
             )
           }
-
-          <div class="container grid w-100" style={`--bs-columns: ${totalColumns};`}>
-            {
-              hasLeftSlot && (
-                <div class="g-col-12 g-col-lg-1">
-                  <slot name="left" />
-                </div>
-              )
-            }
-            <div class:list={['g-col-12', `g-col-lg-${remainingColumns}`]}>
+          <div class:list={['g-col-12', `g-col-lg-${remainingColumns}`]}>
+            <div class="container">
               {showHeader && <hr />}
-              <slot />
             </div>
-            {
-              hasRightSlot && (
-                <div class="g-col-12 g-col-lg-1">
-                  <slot name="right" />
-                </div>
-              )
-            }
+            <slot />
           </div>
+          {
+            hasRightSlot && (
+              <div class="g-col-12 g-col-lg-1">
+                <slot name="right" />
+              </div>
+            )
+          }
         </div>
-        <Footer />
       </div>
+      <Footer />
     </PageRoot>
   </body>
 </html>

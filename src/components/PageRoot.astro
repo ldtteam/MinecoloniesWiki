@@ -23,7 +23,9 @@ for (const [fullPath, image] of Object.entries(images)) {
 
 <div class:list={['bgscroll', Astro.props.isHome ? 'bghome' : '']}>
   <VersionStyling />
-  <slot />
+  <div class="page-root">
+    <slot />
+  </div>
 </div>
 
 <style define:vars={imageSources}>
@@ -78,6 +80,18 @@ for (const [fullPath, image] of Object.entries(images)) {
         var(--bg-dark-right) right center repeat-y,
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         var(--bg-home) center center/cover no-repeat;
+    }
+  }
+
+  .page-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1em;
+    padding: 3em 1em;
+
+    & > * {
+      flex: 0;
     }
   }
 </style>

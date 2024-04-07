@@ -1,41 +1,101 @@
 ---
+import Banner from '@components/ui/Banner.astro';
 import SocialBanner from '@components/ui/SocialBanner.astro';
 import Layout from '@layouts/Default.astro';
 ---
 
 <Layout title="Home" showHeader={false}>
-  <div class="background">
-    <h1 class="text-center">Welcome to MineColonies!</h1>
-    <p>
-      Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft! With
-      features including many NPC workers, buildings, a fantastic building tool and a robust permissions system in
-      multiplayer, you can have the Colony of your dreams!
-    </p>
+  <h1 class="text-center">Welcome to MineColonies!</h1>
+  <p>
+    Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft! With
+    features including many NPC workers, buildings, a fantastic building tool and a robust permissions system in
+    multiplayer, you can have the Colony of your dreams!
+  </p>
 
-    <p>
-      To install the mod, please view the installation instructions <a href="/wiki/installation/installation">here</a>.
-    </p>
-
-    <div class="social pt-5">
-      <SocialBanner social="patreon" center class="fs-5">Become a Patron</SocialBanner>
-      <SocialBanner social="discord" center class="fs-5">Join our Discord</SocialBanner>
+  <div class="mt-5 main-container">
+    <div class="d-flex flex-column gap-3">
+      <Banner class="fs-3" image={(key) => `/images/ribbon/curse_ribbon_${key}.png`}>
+        <img
+          class="curse-logo px-3"
+          src="/images/logo/curseforge.png"
+          alt="CurseForge logo"
+          loading="eager"
+          decoding="async"
+        />
+        <a href="https://www.curseforge.com/minecraft/modpacks/minecolonies-official">Download our modpack</a>
+        <img
+          class="curse-logo px-3"
+          src="/images/logo/curseforge.png"
+          alt="CurseForge logo"
+          loading="eager"
+          decoding="async"
+        />
+      </Banner>
+      <Banner class="fs-3" image={(key) => `/images/ribbon/curse_ribbon_${key}.png`}>
+        <img
+          class="curse-logo px-3"
+          src="/images/logo/curseforge.png"
+          alt="CurseForge logo"
+          loading="eager"
+          decoding="async"
+        />
+        <a href="https://www.curseforge.com/minecraft/mc-mods/minecolonies">Download our mod</a>
+        <img
+          class="curse-logo px-3"
+          src="/images/logo/curseforge.png"
+          alt="CurseForge logo"
+          loading="eager"
+          decoding="async"
+        />
+      </Banner>
+      <Banner class="fs-6">
+        <a href="/wiki/installation/installation">
+          Or check out our installation instructions for more detailed instructions
+        </a>
+      </Banner>
+    </div>
+    <div class="social-container">
+      <div class="social">
+        <SocialBanner social="patreon" class="fs-5">Become a Patron</SocialBanner>
+        <SocialBanner social="discord" class="fs-5">Join our Discord</SocialBanner>
+      </div>
     </div>
   </div>
 </Layout>
 
 <style>
-  .background {
-    background-color: var(--background-color);
-    padding: 1em;
-    border-radius: 1em;
+  * {
+    color: white;
   }
 
   p {
     font-size: 1.25em;
   }
 
-  .social {
+  .main-container {
     display: flex;
     justify-content: space-evenly;
+    gap: 1em;
+    width: 100%;
+  }
+
+  .main-container > * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .download > :global(*) {
+    flex: 1 1 0px;
+  }
+
+  .curse-logo {
+    height: 24px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
   }
 </style>

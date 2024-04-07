@@ -44,25 +44,14 @@ img {
   scroll-margin-top: 5em;
 }
 
-.page_root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  gap: 1em;
-
-  & > * {
-    flex: 0;
-  }
-}
-
-.page_content {
+.page-content {
   flex-grow: 1;
 }
 
-/* BACKGROUND STYLES  */
-.modal-content {
-  border: 1px solid var(--text-color);
-  background-color: var(--background-color);
+.container,
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* GLOBAL STYLES */
