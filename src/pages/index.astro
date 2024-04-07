@@ -12,9 +12,15 @@ import Layout from '@layouts/Default.astro';
     multiplayer, you can have the Colony of your dreams!
   </p>
 
+  <p>
+    <a class="text-decoration-underline" href="/wiki/tutorials/getting-started">
+      Learn how to start playing with the mod
+    </a>
+  </p>
+
   <div class="mt-5 main-container">
-    <div class="d-flex flex-column gap-3">
-      <Banner class="fs-3" image={(key) => `/images/ribbon/curse_ribbon_${key}.png`}>
+    <div>
+      <Banner class="fs-4" image={(key) => `/images/ribbon/curse_ribbon_${key}.png`}>
         <img
           class="curse-logo px-3"
           src="/images/logo/curseforge.png"
@@ -31,7 +37,9 @@ import Layout from '@layouts/Default.astro';
           decoding="async"
         />
       </Banner>
-      <Banner class="fs-3" image={(key) => `/images/ribbon/curse_ribbon_${key}.png`}>
+    </div>
+    <div>
+      <Banner class="fs-4" image={(key) => `/images/ribbon/curse_ribbon_${key}.png`}>
         <img
           class="curse-logo px-3"
           src="/images/logo/curseforge.png"
@@ -48,22 +56,19 @@ import Layout from '@layouts/Default.astro';
           decoding="async"
         />
       </Banner>
-      <Banner class="fs-6">
-        <a href="/wiki/installation/installation">
-          Or check out our installation instructions for more detailed instructions
-        </a>
-      </Banner>
     </div>
-    <div class="social-container">
-      <div class="social">
-        <SocialBanner social="patreon" class="fs-5">Become a Patron</SocialBanner>
-        <SocialBanner social="discord" class="fs-5">Join our Discord</SocialBanner>
-      </div>
+    <div>
+      <SocialBanner social="patreon" class="fs-5">Become a Patron</SocialBanner>
+    </div>
+    <div>
+      <SocialBanner social="discord" class="fs-5">Join our Discord</SocialBanner>
     </div>
   </div>
 </Layout>
 
-<style>
+<style lang="scss">
+  @import '../css/bootstrap-vars.scss';
+
   * {
     color: white;
   }
@@ -73,29 +78,19 @@ import Layout from '@layouts/Default.astro';
   }
 
   .main-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1em;
-    width: 100%;
   }
 
-  .main-container > * {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-
-  .download > :global(*) {
-    flex: 1 1 0px;
+  @include media-breakpoint-up(lg) {
+    .main-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3em;
+    }
   }
 
   .curse-logo {
     height: 24px;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
   }
 </style>
