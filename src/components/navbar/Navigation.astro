@@ -17,62 +17,64 @@ const { isWiki } = Astro.props;
 ---
 
 <Ribbon class="navbar navbar-expand-lg navbar-light" as="nav">
-  <div class="container">
-    <button
-      class="d-lg-none btn btn-outline-light"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#mobileMenu"
-    >
-      <Icon name="fa6-solid:bars" />
-    </button>
+  <div class="mx-5 w-100">
+    <div class="container d-flex justify-content-between">
+      <button
+        class="d-lg-none btn btn-outline-light"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu"
+      >
+        <Icon name="fa6-solid:bars" />
+      </button>
 
-    <div class="navbar-collapse collapse justify-content-between">
-      <ul class="navbar-nav">
-        <MainPages />
-      </ul>
-      <ul class="navbar-nav flex-row align-items-center">
-        <Socials />
-      </ul>
-    </div>
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <ThemeSwitcher />
-      </li>
-    </ul>
-
-    <div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
-      <div class="offcanvas-header d-flex justify-content-between align-items-start">
-        <h5 class="offcanvas-title w-75" id="mobileMenuLabel">
-          <Header isWiki={false} />
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="navbar-collapse collapse justify-content-between">
+        <ul class="navbar-nav">
+          <MainPages />
+        </ul>
+        <ul class="navbar-nav flex-row align-items-center">
+          <Socials />
+        </ul>
       </div>
-      <div class="offcanvas-body d-flex flex-column">
-        <div class="flex-grow-1 overflow-scroll gap-1">
-          <ul class="navbar-nav">
-            <MainPages />
-          </ul>
 
-          {
-            isWiki && (
-              <>
-                <hr />
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <ThemeSwitcher />
+        </li>
+      </ul>
 
-                <div class="mb-3">
-                  <VersionSelector />
-                </div>
+      <div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
+        <div class="offcanvas-header d-flex justify-content-between align-items-start">
+          <h5 class="offcanvas-title w-75" id="mobileMenuLabel">
+            <Header isWiki={false} />
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <div class="flex-grow-1 overflow-scroll gap-1">
+            <ul class="navbar-nav">
+              <MainPages />
+            </ul>
 
-                <WikiPages />
-              </>
-            )
-          }
+            {
+              isWiki && (
+                <>
+                  <hr />
 
-          <hr />
-          <ul class="nav">
-            <Socials />
-          </ul>
+                  <div class="mb-3">
+                    <VersionSelector />
+                  </div>
+
+                  <WikiPages />
+                </>
+              )
+            }
+
+            <hr />
+            <ul class="nav">
+              <Socials />
+            </ul>
+          </div>
         </div>
       </div>
     </div>
