@@ -1,5 +1,5 @@
 ---
-import { getWikiPageForItem } from '@utils/items';
+import { getWikiPageForItem, parseItemId } from '@utils/items';
 
 import CombinedItem from './CombinedItem.astro';
 import CombinedSelfItem from './CombinedSelfItem.astro';
@@ -12,9 +12,10 @@ interface Props {
 
 const { currentPage, name } = Astro.props;
 
-const itemPage = await getWikiPageForItem(name);
+const itemId = parseItemId(name);
+const itemPage = await getWikiPageForItem(itemId);
 if (itemPage === undefined) {
-  throw new Error(`Wiki page for item '${name}' does not exist.`);
+  throw new Error(`Wiki page for item '${itemId.namespace}/${itemId.id}' does not exist.`);
 }
 ---
 
