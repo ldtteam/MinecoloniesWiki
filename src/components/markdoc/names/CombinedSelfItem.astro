@@ -1,0 +1,18 @@
+---
+import type { WikiItemPageCombinedSelf } from '@utils/items';
+
+interface Props {
+  currentPage: string;
+  page: WikiItemPageCombinedSelf;
+}
+
+const { currentPage, page } = Astro.props;
+---
+
+{
+  currentPage === page.page.slug ? (
+    <span>{page.page.data.title}</span>
+  ) : (
+    <a href={page.page.slug}>{page.page.data.title}</a>
+  )
+}

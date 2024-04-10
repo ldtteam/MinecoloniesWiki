@@ -5,22 +5,27 @@ import type { CollectionEntry } from 'astro:content';
 import type { Tag } from './types';
 
 function getItemAttributes(attributes: ReturnType<Node['transformAttributes']>, config: Config) {
+  const slug = config.variables?.slug as string;
   const frontmatter = config.variables?.frontmatter as CollectionEntry<'wiki'>['data'] | undefined;
   if (frontmatter?.type === 'item') {
     if (Object.keys(attributes).includes('item')) {
       return {
         ...attributes,
-        itemId: frontmatter.item.id
+        currentPage: slug
       };
     }
 
     return {
       ...attributes,
-      itemId: frontmatter.item.id,
+      currentPage: slug,
       item: frontmatter.item.id
     };
   }
-  return attributes;
+
+  return {
+    currentPage: slug,
+    ...attributes
+  };
 }
 
 const itemTransform: Tag['transform'] = (node, config) => {
@@ -52,6 +57,18 @@ const itemCombinedTransform: Tag['transform'] = (node, config) => {
 
 export const item: Tag = {
   render: component('@components/markdoc/names/Item.astro'),
+  selfClosing: true,
+  attributes: {
+    name: {
+      type: String,
+      required: false
+    }
+  },
+  transform: itemTransform
+};
+
+export const item_page: Tag = {
+  render: component('@components/markdoc/names/ItemPage.astro'),
   selfClosing: true,
   attributes: {
     name: {

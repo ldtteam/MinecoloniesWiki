@@ -3,6 +3,8 @@ import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import minecraftData, { type Item } from 'minecraft-data';
 
+import { isWikiPageOfType, type WikiPageEntry } from './util';
+
 interface ParsedItemId {
   namespace: string;
   id: string;
@@ -20,6 +22,25 @@ type ItemFetcher = (
   requireImages: boolean
 ) => Promise<ItemFetcherResponse | undefined>;
 
+export interface WikiItemPageDirect {
+  type: 'direct';
+  page: WikiPageEntry<'item'>;
+  item: CollectionEntry<'items'>;
+}
+
+export interface WikiItemPageCombined {
+  type: 'combined';
+  page: WikiPageEntry<'item-combined'>;
+  item: CollectionEntry<'items'>;
+}
+
+export interface WikiItemPageCombinedSelf {
+  type: 'combined-self';
+  page: WikiPageEntry<'item-combined'>;
+}
+
+type WikiItemPage = WikiItemPageDirect | WikiItemPageCombined | WikiItemPageCombinedSelf;
+
 export interface ItemVersionData extends ParsedItemId {
   name: string;
   link: string | undefined;
@@ -32,45 +53,65 @@ export interface ItemData extends ParsedItemId {
   data: ItemVersionData[];
 }
 
-const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
-  const itemPath = item.namespace + '/' + item.id;
-  const itemData = await getEntry('items', itemPath);
-  if (itemData === undefined) {
-    return undefined;
+async function extractWikiPageData(page: CollectionEntry<'wiki'>, name: string): Promise<WikiItemPage | undefined> {
+  if (isWikiPageOfType(page, 'item') && page.data.item.id.split('/')[1] === name) {
+    const itemData = await getEntry('items', page.data.item.id);
+    return {
+      type: 'direct',
+      page,
+      item: itemData
+    };
+  }
+  if (isWikiPageOfType(page, 'item-combined') && page.slug === 'items/' + name) {
+    return {
+      type: 'combined-self',
+      page
+    };
+  }
+  if (isWikiPageOfType(page, 'item-combined')) {
+    const subItem = page.data.items.find((item) => item.id.split('/')[1] === name);
+    if (subItem !== undefined) {
+      const itemData = await getEntry('items', subItem.id);
+      return {
+        type: 'combined',
+        page,
+        item: itemData
+      };
+    }
+  }
+}
+
+export async function getWikiPageForItem(name: string): Promise<WikiItemPage | undefined> {
+  const pages = await getCollection('wiki');
+  const itemPages = await Promise.all(pages.map((page) => extractWikiPageData(page, name)));
+  const filteredPages = itemPages.filter((f) => f !== undefined);
+
+  if (filteredPages.length > 1) {
+    throw new Error(
+      `Multiple pages refer to item '${name}', make sure only one page shows information for this given item.`
+    );
   }
 
-  const itemPage = await getCollection('wiki', (page) => {
-    if (page.data.type === 'item' && page.data.item.id === itemPath) {
-      return true;
-    }
-    if (page.data.type === 'item-combined' && page.data.items.findIndex((item) => item.id === itemPath) >= 0) {
-      return true;
-    }
-    return false;
-  });
+  return filteredPages.length > 0 ? filteredPages[0] : undefined;
+}
 
-  if (itemPage.length > 0) {
-    const page = itemPage[0];
-    if (page.data.type === 'item') {
+const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
+  const itemPage = await getWikiPageForItem(item.id);
+
+  if (itemPage !== undefined) {
+    if (itemPage.type === 'direct') {
       return {
-        name: itemData.data.name,
-        icons: requireImages ? itemData.data.icons : [],
-        link: '/wiki/items/' + item.id
+        name: itemPage.item.data.name,
+        icons: requireImages ? itemPage.item.data.icons : [],
+        link: '/wiki/' + itemPage.page.slug
       };
-    } else if (page.data.type === 'item-combined') {
-      const item = page.data.items.find((f) => f.id === itemPath)!;
+    } else if (itemPage.type === 'combined') {
       return {
-        name: itemData.data.name,
-        icons: requireImages ? itemData.data.icons : [],
-        link: '/wiki/items/' + item.id
+        name: itemPage.item.data.name,
+        icons: requireImages ? itemPage.item.data.icons : [],
+        link: '/wiki/' + itemPage.page.slug
       };
     }
-  } else {
-    return {
-      name: itemData.data.name,
-      icons: requireImages ? itemData.data.icons : [],
-      link: undefined
-    };
   }
 };
 

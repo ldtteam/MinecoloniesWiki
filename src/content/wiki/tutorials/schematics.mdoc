@@ -4,7 +4,7 @@ title: Schematics
 ---
 # Schematics
 
-Schematics are files containing block and entity information of a certain area a player scanned with the {% item name="scan_tool" /%} in-game. You can use the scan tool and scan ANY building or structure you like in singleplayer or multiplayer and then have your {% worker name="builder" /%} build it for you (provided that you give them all the materials needed, of course).
+Schematics are files containing block and entity information of a certain area a player scanned with the {% item name="scan_tool" /%} in-game. You can use the {% item name="scan_tool" /%} and scan ANY building or structure you like in singleplayer or multiplayer and then have your {% worker name="builder" /%} build it for you (provided that you give them all the materials needed, of course).
 
 - [Schematics](#schematics)
   - [Scanning a New Structure](#scanning-a-new-structure)
@@ -87,7 +87,7 @@ Once you have scanned a structure, you can use the {% item name="scan_tool" /%} 
 ![Schematic](@assets/images/wiki/tutorial/schematic.png)
 
 {% version name="1.19" after=true %}
-The scanned structure can be found in the {% item name="scan_tool" /%} under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the scan tool") -> "scans". 
+The scanned structure can be found in the {% item name="scan_tool" /%} under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the {% item name="scan_tool" /%}") -> "scans". 
 {% /version %}
 
 {% version name="1.19" after=true %}
@@ -140,7 +140,7 @@ The style pack goes in the "blueprints" folder. If that folder doesn't exist, ju
 
 #### What and where is the scans folder?
 
-The scans folder is where the schematics are saved after performing a scan using the scan tool in MineColonies.
+The scans folder is where the schematics are saved after performing a scan using the {% item name="scan_tool" /%} in MineColonies.
 {% version name="1.18.2" before=true %}
 This is a client-side-only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in-game. (If they aren't there, look in `*/minecolonies/scans/new`.) This directory is shared between all your singleplayer games and multiplayer games.
 {% /version %}

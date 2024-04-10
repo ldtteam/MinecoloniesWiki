@@ -9,6 +9,7 @@ import { getCollection, getEntry } from 'astro:content';
 import { getSectionTitle, getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
 
 interface SectionGroupData {
+  slug: CollectionEntry<'wiki'>['slug'];
   data: Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
   initialSection: { title: string; slug: string };
   sections: { title: string; slug: string }[];
@@ -57,6 +58,7 @@ if (entry.data.type === 'section') {
   const { Content: GroupContent } = await foundEntry.render();
 
   groupData = {
+    slug: foundEntry.slug,
     data: foundEntryData,
     initialSection: {
       title: await getSectionTitle(initialSection, false),
@@ -83,7 +85,7 @@ const description = await getWikiDescription(entry);
   {
     groupData && (
       <>
-        <groupData.Content frontmatter={groupData.data} />
+        <groupData.Content slug={groupData.slug} frontmatter={groupData.data} />
         {groupData.hasContent && <hr />}
       </>
     )
@@ -119,7 +121,7 @@ const description = await getWikiDescription(entry);
     )
   }
 
-  <Content frontmatter={entry.data} />
+  <Content slug={entry.slug} frontmatter={entry.data} />
 
   <hr />
   <p class="text-center">
