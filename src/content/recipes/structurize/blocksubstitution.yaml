@@ -1,14 +1,6 @@
 type: shaped
 row1:
-  item1:
-    - minecraft/oak_log
-    - minecraft/spruce_log
-    - minecraft/birch_log
-    - minecraft/jungle_log
-    - minecraft/acacia_log
-    - minecraft/dark_oak_log
-    - minecraft/crimson_stem
-    - minecraft/warped_stem
+  item1: tags/logs
   item2: minecraft/stick
   item3:
 row2:
@@ -18,14 +10,6 @@ row2:
 row3:
   item1:
   item2: minecraft/stick
-  item3:
-    - minecraft/oak_log
-    - minecraft/spruce_log
-    - minecraft/birch_log
-    - minecraft/jungle_log
-    - minecraft/acacia_log
-    - minecraft/dark_oak_log
-    - minecraft/crimson_stem
-    - minecraft/warped_stem
+  item3: tags/logs
 output: structurize/blocksubstitution
 amount: 32

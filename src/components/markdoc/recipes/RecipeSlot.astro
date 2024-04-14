@@ -3,9 +3,11 @@ import VersionContent from '@components/version/VersionContent.astro';
 import { getItemData, type ItemVersionData } from '@utils/items';
 import { getSortedVersions } from '@utils/version';
 import { Image } from 'astro:assets';
+import { getEntry } from 'astro:content';
+import type { RecipeItemEntry } from 'src/content/_wiki';
 
 interface Props {
-  items: string | string[] | null | undefined;
+  items: RecipeItemEntry;
   amount?: number;
   large?: boolean;
 }
@@ -14,7 +16,17 @@ const { items, amount = 1, large = false } = Astro.props;
 
 const versions = await getSortedVersions();
 
-const parsedItems = Array.isArray(items) ? items : items !== undefined && items !== null ? [items] : [];
+let parsedItems: string[];
+if (items === undefined || items === null) {
+  parsedItems = [];
+} else if (Array.isArray(items)) {
+  parsedItems = items;
+} else if (items.startsWith('tags/')) {
+  const tag = await getEntry('tags', items.split('/', 2)[1]);
+  parsedItems = tag ? tag.data : [];
+} else {
+  parsedItems = [items];
+}
 const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item, true)));
 ---
 

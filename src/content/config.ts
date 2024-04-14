@@ -6,6 +6,7 @@ import {
   citizenNamesCollection,
   itemsCollection,
   recipesCollection,
+  tagsCollection,
   wikiCategories,
   wikiCollection,
   workersCollection
@@ -16,6 +17,7 @@ export const collections = {
   wiki_categories: wikiCategories,
   buildings: buildingsCollection,
   workers: workersCollection,
+  tags: tagsCollection,
   items: itemsCollection,
   recipes: recipesCollection,
   research_tree: researchTreeCollection,

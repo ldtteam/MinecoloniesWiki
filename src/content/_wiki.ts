@@ -176,8 +176,15 @@ const researchCraftingCondition = z.object({
   research: reference('research')
 });
 
+export const tagsCollection = defineCollection({
+  type: 'data',
+  schema: z.array(z.string())
+});
+
 const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
 const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
+
+export type RecipeItemEntry = Zod.infer<typeof itemOrArray>;
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),
