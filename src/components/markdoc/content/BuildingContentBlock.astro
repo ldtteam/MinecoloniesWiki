@@ -24,6 +24,6 @@ const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${
 
 <ContentBlock cols={cols}>
   <Image slot="left" src={importedImage} alt={`${imageAlt} tab of the ${buildingData.data.name} it's GUI`} />
-   The {TAB_INDEXES[order - 1]} tab of the GUI is the <b>{header}</b>.
+  <p>The {TAB_INDEXES[order - 1]} tab of the GUI is the <b>{header}</b>.</p>
   <slot />
 </ContentBlock>
