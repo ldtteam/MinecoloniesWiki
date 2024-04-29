@@ -96,7 +96,7 @@ async function extractWikiPageData(
       };
     }
   }
-  if (isWikiPageOfType(page, 'building') && name.id.endsWith(page.data.building.id)) {
+  if (isWikiPageOfType(page, 'building') && name.id === 'blockhut' + page.data.building.id) {
     const itemData = await getEntry('items', name.namespace + '/' + name.id);
     if (itemData !== undefined) {
       return {
