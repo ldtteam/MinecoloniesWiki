@@ -6,10 +6,32 @@ building: miner
 {% building_infobox %}
 The Mine is where you can hire a {% worker name="miner" /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
 
-At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward to a specific depth depending on the level of the Mine.  Once the main shaft is completed, the Miner will then branch out.
+{% version name="1.20.1" after=true %}
+At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward. Once they have made the first platform (five Y-levels under the building), they check what Y-level they are at. If they are not at a threshold yet, they dig further down and create new platforms until they are at the threshold.
+When the mine is upgraded, they dig further down to the next threshold, if they were not at bedrock level yet.
+There are four mining level thresholds:
+| Shaft Y level |
+| ------------- |
+| 48            |
+| 16            |
+| -16           |
+| bedrock       |
+
+E.g. when a mine is built at Y-level 60, they will stop going downwards at Y-level 48 at level 1, and will go downwards again to Y-level 16 at level 2, etc.
+When a mine is built at Y-level 0, they will go down to Y -16 at level 1, and to bedrock when the mine is upgraded to level 2.
+
+Once the main shaft is completed, the Miner will then branch out.
+{% /version %}
+{% version name="1.19.2" before=true %}
+At the Mine, the Miner will mine for ores and materials. Once they are hired, the Miner will first create a shaft downward to a specific depth depending on the level of the Mine. Once the main shaft is completed, the Miner will then branch out.
+{% /version %}
+The miner will never dig further down than the Y-level specified in the "maximum depth" setting of the mine. It is by default set to -100, which effectively means bedrock level.
+
 
 While mining, sometimes the Miner will get lucky and get an ore block instead of a basic stone block. The chance of getting "Lucky Ores" is set in the [config](/wiki/misc/configfile).
 
+**Note:** When the miner encounters air whilst building the shaft downwards, they don't make platforms there, as they think they encountered a cave. In particular, that means you should not help them with mining. Even though they skip platforms, they still check the Y-level against the depth threshold and stop digging down if they aren't allowed to dig down further.
+{% version name="1.19.2" before=true %}
 **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the Miner not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
 
 {% version name="1.16.5" before=true %}
@@ -29,6 +51,7 @@ While mining, sometimes the Miner will get lucky and get an ore block instead of
 | 3              | 0             |
 | 4              | Bedrock       |
 | 5              | "             |
+{% /version %}
 {% /version %}
 {% /building_infobox %}
 
