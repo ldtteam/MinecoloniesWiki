@@ -39,3 +39,13 @@ export const content_block: Tag = {
 export const image_row: Tag = {
   render: component('@components/markdoc/util/ImageRow.astro')
 };
+
+export const meta: Tag = {
+  render: component('@components/markdoc/util/Meta.astro'),
+  attributes: {
+    key: {
+      type: String,
+      required: true
+    }
+  }
+};
