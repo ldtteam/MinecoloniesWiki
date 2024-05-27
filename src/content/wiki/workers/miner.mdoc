@@ -10,6 +10,10 @@ The Miner works by digging a shaft down. Once there, they will build a network o
 
 If the Miner is not working and just stands by their hut block, check to make sure they have all the materials they need, especially cobblestone, a pickaxe, a shovel, planks, fences/walls, and torches. If they're still making the shaft down, also make sure they have slabs, ladders, and signs. They might need lots and lots of cobblestone to fill in caves/water/lava/sand/gravel that they find along the way.
 
+{% version name="1.20.1" after=true %}
+The level the {% building name="miner" /%} was built at, and the level of the mine dictate how deep the Miner will mine. You can find the details on the wiki page of the Mine.
+{% /version %}
+{% version name="1.20" before=true %}
 The level of the Mine will dictate how deep the Miner will mine:
 
 {% version name="1.16.5" before=true %}
@@ -29,6 +33,7 @@ The level of the Mine will dictate how deep the Miner will mine:
 | 3              | 0             |
 | 4              | Bedrock       |
 | 5              | "             |
+{% /version %}
 {% /version %}
 
 The Miner will only mine blocks according to the level of their pickaxe and will only be able to use a tool according to the level of their hut (check the [worker](/wiki/systems/worker) system page).
