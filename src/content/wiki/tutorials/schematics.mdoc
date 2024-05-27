@@ -81,7 +81,12 @@ Then click in the air to see the entire structure.
 
 Once you have the full area set, you can press Escape and the white outline of the scan area will stay in place. Go around it to double-check that everything you want is in the scan area. When you are ready, you can right-click in the air again to get the GUI to display where you can enter your scan name. Then press the green checkmark to save the scan.
 
-SPECIAL NOTE: Do not rename the file after scanning. It MUST be scanned with the correct name.
+> Special note:
+> 
+> 1. Do not rename the file after scanning. It **must** be scanned with the correct name.  
+> 2. If you include two or more of anchor blocks in your structure you **must** set which will be your anchor for the schematic by sneak left clicking on the desired anchor block.
+> 3. Hut buildings use the associated hut block as the anchor, upgradable decorations should use the {% item name="deco_controller" /%} as the anchor and non upgradable decorations should use the {% item name="tag_anchor" /%} block as the anchor.
+>    * If you want non upgradeable decorations acting as leisure sites, you must use a {% item name="deco_controller" /%} as only those sites are selected to be leisure sites.
 
 {% version name="1.18.2" before=true %}
 Scans are saved in `../minecolonies/scan/new/...`.
