@@ -243,3 +243,13 @@ export const citizenNamesCollection = defineCollection({
     })
   })
 });
+
+export const metaCollection = defineCollection({
+  type: 'data',
+  schema: z.array(
+    z.object({
+      key: z.string(),
+      value: z.string()
+    })
+  )
+});

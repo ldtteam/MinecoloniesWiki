@@ -13,10 +13,10 @@
     "upgrade": "pnpm dlx @astrojs/upgrade"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
+    "@astrojs/check": "^0.7.0",
     "@astrojs/markdoc": "^0.11.0",
     "@astrojs/markdown-remark": "^5.1.0",
-    "@astrojs/sitemap": "^3.1.4",
+    "@astrojs/sitemap": "^3.1.5",
     "@astrojs/svelte": "^5.4.0",
     "@fontsource/fondamento": "^5.0.11",
     "@iconify-json/fa6-brands": "^1.1.13",
@@ -25,7 +25,7 @@
     "@iconify/json": "^2.2.112",
     "@markdoc/markdoc": "^0.4.0",
     "archiver": "^7.0.1",
-    "astro": "^4.6.4",
+    "astro": "^4.9.1",
     "astro-icon": "^1.0.0-next.2",
     "bootstrap": "^5.3.3",
     "date-fns": "^2.30.0",
