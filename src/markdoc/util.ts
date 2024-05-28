@@ -14,7 +14,7 @@ export const social_link: Tag = {
 };
 
 export const citizen_name_pack_list: Tag = {
-  render: component('@components/markdoc/CitizenNamePackList.astro'),
+  render: component('@components/markdoc/util/CitizenNamePackList.astro'),
   selfClosing: true
 };
 

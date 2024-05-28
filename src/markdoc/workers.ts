@@ -21,5 +21,5 @@ export const worker: Tag = {
 };
 
 export const workers_table: Tag = {
-  render: component('@components/markdoc/WorkersTable.astro')
+  render: component('@components/markdoc/util/WorkersTable.astro')
 };
