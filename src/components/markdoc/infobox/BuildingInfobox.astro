@@ -2,7 +2,7 @@
 import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
-import { getBuildingData, type MarkdocBuildingComponent } from '@utils/building';
+import { getBuildingData, getBuildingIdFromFrontmatter, type MarkdocBuildingComponent } from '@utils/building';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
@@ -11,13 +11,15 @@ import WorkerName from '../WorkerName.astro';
 
 type Props = MarkdocBuildingComponent;
 
-const { buildingId } = Astro.props;
+const { frontmatter, name } = Astro.props;
+
+const buildingId = await getBuildingIdFromFrontmatter(frontmatter, true);
 const buildingData = await getBuildingData(buildingId ?? '');
 
 const research = (
   await getCollection('research', (filter) =>
     filter.data.effects
-      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === buildingId)
+      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === name)
       : false
   )
 ).slice(0, 1)[0];
@@ -47,7 +49,7 @@ const recipes = buildingData.data.recipes ?? [];
             <div>
               {workers.map((worker) => (
                 <p class="m-0">
-                  <WorkerName name={worker.id} />
+                  <WorkerName frontmatter={frontmatter} name={worker.id} />
                 </p>
               ))}
             </div>

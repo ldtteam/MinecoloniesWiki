@@ -10,4 +10,5 @@ effects:
   primary: Faster block breaking
   secondary: Faster block placing
 buildings:
+  - miner
   - quarry

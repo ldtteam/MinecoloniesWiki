@@ -4,7 +4,7 @@ worker: sifter
 ---
 
 {% worker_infobox %}
-The Sifter is a part of your colony's production line. The Sifter will sift through materials to find hidden ores, seeds, and other useful items and ingredients. When they do this, the materials they are sifting will disappear.
+The {% worker /%} is a part of your colony's production line. The {% worker /%} will sift through materials to find hidden ores, seeds, and other useful items and ingredients. When they do this, the materials they are sifting will disappear.
 
 The default materials that can be sifted are:
 
@@ -15,7 +15,7 @@ The default materials that can be sifted are:
 
 However, you can change this in the [config file](/wiki/misc/configfile). This also works with modded items. Anything can be added here, it is up to the player (or the server owner).
 
-The Sifter can only sift a certain amount of materials per day, depending on their hut level. The higher the Sifter's Strength level, the faster they'll sift.
+The {% worker /%} can only sift a certain amount of materials per day, depending on their hut level. The higher the {% worker /%} its Strength level, the faster they'll sift.
 
 | Building Level | Daily Max |
 | -------------- | --------- |
@@ -25,14 +25,14 @@ The Sifter can only sift a certain amount of materials per day, depending on the
 | 4              | 1024      |
 | 5              | Unlimited |
 
-The Sifter can use 4 different meshes. The higher levels of meshes will find more items of better quality, as will a higher Focus level of the Sifter. Meshes are only made by other workers.
+The {% worker /%} can use 4 different meshes. The higher levels of meshes will find more items of better quality, as will a higher Focus level of the {% worker /%}. Meshes are only made by other workers.
 
-| Mesh    | Worker     |
-| ------- | ---------- |
-| String  | Fletcher   |
-| Flint   | Stonemason |
-| Iron    | Blacksmith |
-| Diamond | Mechanic   |
+| Mesh    | Worker                            |
+| ------- | --------------------------------- |
+| String  | {% building name="fletcher" /%}   |
+| Flint   | {% building name="stonemason" /%} |
+| Iron    | {% building name="blacksmith" /%} |
+| Diamond | {% building name="mechanic" /%}   |
 
-**Note:** Meshes and blocks to be sifted must be added to the Minimum Stock tab in the Sifter's Hut in order for the Sifter to work.
+> **Note:** Meshes and blocks to be sifted must be added to the Minimum Stock tab in the {% building /%} in order for the {% worker /%} to work.
 {% /worker_infobox %}

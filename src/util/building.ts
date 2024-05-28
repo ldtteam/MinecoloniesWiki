@@ -3,8 +3,24 @@ import { type CollectionEntry, getEntry } from 'astro:content';
 import { isVersionHigherOrSame } from './version';
 
 export interface MarkdocBuildingComponent {
-  buildingId?: string;
-  name: string;
+  frontmatter?: CollectionEntry<'wiki'>['data'];
+  name?: string;
+}
+
+export async function getBuildingIdFromFrontmatter(
+  frontmatter: CollectionEntry<'wiki'>['data'] | undefined,
+  buildingOnly = false
+) {
+  let buildingId: CollectionEntry<'buildings'>['id'] | undefined;
+  if (frontmatter?.type === 'building') {
+    buildingId = frontmatter.building.id;
+  } else if (!buildingOnly && frontmatter?.type === 'worker') {
+    const worker = await getEntry('workers', frontmatter.worker.id);
+    if (worker.data.buildings?.length === 1) {
+      buildingId = worker.data.buildings[0].id;
+    }
+  }
+  return buildingId;
 }
 
 /**

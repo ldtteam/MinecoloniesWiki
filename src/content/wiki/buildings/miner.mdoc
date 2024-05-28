@@ -13,7 +13,7 @@ The {% worker name="miner" /%} digs their shaft down until to the first mining l
 
 These mining levels are based on the ores you can find there most:
 | Ore     | Y-level |
-| ------  | ------- |
+| ------- | ------- |
 | Copper  | 48      |
 | Iron    | 16      |
 | Gold    | -16     |
@@ -41,9 +41,9 @@ The miner will never dig further down than the Y-level specified in the "maximum
 
 While mining, sometimes the {% worker name="miner" /%} will get lucky and get an ore block instead of a basic stone block. The chance of getting "Lucky Ores" is set in the [config](/wiki/misc/configfile).
 
-**Note:** When the miner encounters air whilst building the shaft downwards, they don't make platforms there, as they think they encountered a cave. In particular, that means you should not help them with mining. Even though they skip platforms, they still check the Y-level against the depth threshold and stop digging down if they aren't allowed to dig down further.
+> **Note:** When the miner encounters air whilst building the shaft downwards, they don't make platforms there, as they think they encountered a cave. In particular, that means you should not help them with mining. Even though they skip platforms, they still check the Y-level against the depth threshold and stop digging down if they aren't allowed to dig down further.
 {% version name="1.20" before=true %}
-**Note:** Placing the Mine hut below the maximum Y level it can mine will cause the {% worker name="miner" /%} not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
+> **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the {% worker name="miner" /%} not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
 
 {% version name="1.16.5" before=true %}
 | Building Level | Shaft Y Level |

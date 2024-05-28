@@ -1,34 +1,7 @@
-import { component, Markdoc } from '@astrojs/markdoc/config';
-import type { Config, Node } from '@markdoc/markdoc';
-import type { MarkdocBuildingComponent } from '@utils/building';
+import { component } from '@astrojs/markdoc/config';
 
+import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
-
-function getBuildingAttributes(
-  attributes: ReturnType<Node['transformAttributes']>,
-  config: Config
-): MarkdocBuildingComponent {
-  const buildingId = config.variables?.frontmatter?.building?.id;
-  if (Object.keys(attributes).includes('name')) {
-    return {
-      ...attributes,
-      buildingId,
-      name: attributes.name
-    };
-  } else {
-    return {
-      ...attributes,
-      buildingId,
-      name: buildingId ?? ''
-    };
-  }
-}
-
-const buildingTransform: Tag['transform'] = (node, config) => {
-  const attributes = getBuildingAttributes(node.transformAttributes(config), config);
-  const children = node.transformChildren(config);
-  return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
-};
 
 export const building: Tag = {
   render: component('@components/markdoc/BuildingName.astro'),
@@ -44,12 +17,12 @@ export const building: Tag = {
       required: false
     }
   },
-  transform: buildingTransform
+  transform: injectFrontmatter
 };
 
 export const building_infobox: Tag = {
   render: component('@components/markdoc/infobox/BuildingInfobox.astro'),
-  transform: buildingTransform
+  transform: injectFrontmatter
 };
 
 const defaultContentBlockAttributes: Tag['attributes'] = {
@@ -112,42 +85,42 @@ export const contentBlocks: Record<string, Tag> = {
     render: component('@components/markdoc/content/blocks/BrewingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   crafting_recipes: {
     render: component('@components/markdoc/content/blocks/CraftingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   custom: {
     render: component('@components/markdoc/content/blocks/Custom.astro'),
     attributes: customContentAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   do_recipes: {
     render: component('@components/markdoc/content/blocks/DoRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   fields: {
     render: component('@components/markdoc/content/blocks/Fields.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   fuel: {
     render: component('@components/markdoc/content/blocks/Fuel.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   hostiles: {
     render: component('@components/markdoc/content/blocks/Hostiles.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   item_list: {
     render: component('@components/markdoc/content/blocks/ItemList.astro'),
@@ -159,54 +132,54 @@ export const contentBlocks: Record<string, Tag> = {
         default: false
       }
     },
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   main: {
     render: component('@components/markdoc/content/blocks/Main.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   main_residential: {
     render: component('@components/markdoc/content/blocks/MainResidential.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   required_resources: {
     render: component('@components/markdoc/content/blocks/RequiredResources.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   settings: {
     render: component('@components/markdoc/content/blocks/Settings.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   smelting_recipes: {
     render: component('@components/markdoc/content/blocks/SmeltingRecipes.astro'),
     selfClosing: true,
     attributes: craftingContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   stock: {
     render: component('@components/markdoc/content/blocks/Stock.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   tasks: {
     render: component('@components/markdoc/content/blocks/Tasks.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   },
   work_orders: {
     render: component('@components/markdoc/content/blocks/WorkOrders.astro'),
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
-    transform: buildingTransform
+    transform: injectFrontmatter
   }
 };

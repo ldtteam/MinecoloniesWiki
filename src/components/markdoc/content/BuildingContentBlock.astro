@@ -1,6 +1,6 @@
 ---
 import ContentBlock from '@components/ui/content/ContentBlock.astro';
-import { getBuildingData } from '@utils/building';
+import { getBuildingData, getBuildingIdFromFrontmatter } from '@utils/building';
 import { Image } from 'astro:assets';
 
 import type { BaseBuildingContentBlockProps } from './types';
@@ -13,8 +13,9 @@ interface Props extends BaseBuildingContentBlockProps {
 
 const TAB_INDEXES = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eight', 'ninth', 'tenth'];
 
-const { buildingId, order = 1, cols, header, imageKey, imageAlt } = Astro.props;
+const { frontmatter, order = 1, cols, header, imageKey, imageAlt } = Astro.props;
 
+const buildingId = await getBuildingIdFromFrontmatter(frontmatter, true);
 const buildingData = await getBuildingData(buildingId ?? '');
 
 const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`).then(

@@ -1,15 +1,16 @@
 ---
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import { getBuildingData } from '@utils/building';
+import { getBuildingData, getBuildingIdFromFrontmatter } from '@utils/building';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 import SettingProcessor from './SettingProcessor.astro';
 
 type Props = BaseBuildingContentBlockProps;
 
-const { name, buildingId } = Astro.props;
+const { frontmatter, name } = Astro.props;
 
-const buildingData = await getBuildingData(name);
+const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
+const buildingData = await getBuildingData(name ?? buildingId ?? '');
 ---
 
 {
@@ -19,13 +20,13 @@ const buildingData = await getBuildingData(name);
         {buildingData.data.settings.map((setting) => (
           <>
             <li>
-              <SettingProcessor buildingId={buildingId} setting={setting} />
+              <SettingProcessor buildingId={buildingId ?? ''} setting={setting} />
             </li>
             {setting.options && (
               <ul>
                 {setting.options.map((option) => (
                   <li>
-                    <SettingProcessor buildingId={buildingId} setting={option} />
+                    <SettingProcessor buildingId={buildingId ?? ''} setting={option} />
                   </li>
                 ))}
               </ul>

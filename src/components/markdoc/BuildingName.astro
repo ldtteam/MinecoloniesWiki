@@ -1,6 +1,12 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import { getBuildingData, getBuildingLink, getBuildingName, type MarkdocBuildingComponent } from '@utils/building';
+import {
+  getBuildingData,
+  getBuildingIdFromFrontmatter,
+  getBuildingLink,
+  getBuildingName,
+  type MarkdocBuildingComponent
+} from '@utils/building';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
@@ -8,9 +14,10 @@ interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
 }
 
-const { buildingId, name, plural = false } = Astro.props;
+const { frontmatter, name, plural = false } = Astro.props;
 
-const buildingData = await getBuildingData(name);
+const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
+const buildingData = await getBuildingData(name ?? buildingId ?? '');
 const versions = await getCollection('versions');
 
 const link = getBuildingLink(buildingData);
@@ -35,7 +42,11 @@ const versionedContentReduced = versionedContent.reduce<Record<string, Collectio
 {
   Object.entries(versionedContentReduced).map(async ([name, versions]) => (
     <VersionContent versions={versions} inline>
-      {buildingId !== buildingData.id ? <a href={link}>{name}</a> : <span>{name}</span>}
+      {frontmatter?.type !== 'building' || buildingId !== buildingData.id ? (
+        <a href={link}>{name}</a>
+      ) : (
+        <span>{name}</span>
+      )}
     </VersionContent>
   ))
 }

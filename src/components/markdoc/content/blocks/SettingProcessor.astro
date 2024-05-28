@@ -2,9 +2,10 @@
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import BuildingName from '@components/markdoc/BuildingName.astro';
 import WorkerName from '@components/markdoc/WorkerName.astro';
+import { getBuildingData } from '@utils/building';
 
 interface Props {
-  buildingId: string | undefined;
+  buildingId: string;
   setting: {
     name: string;
     description: string;
@@ -19,6 +20,7 @@ type Ast = Array<
 
 const { buildingId, setting } = Astro.props;
 
+const building = await getBuildingData(buildingId);
 const processor = await createMarkdownProcessor();
 const content = (await processor.render(setting.description)).code;
 
@@ -68,7 +70,19 @@ ast = ast.reduce<Ast>((prev, curr) => {
           return <Fragment set:html={astItem.text} />;
         }
         if (astItem.type === 'building') {
-          return <BuildingName buildingId={buildingId} name={astItem.building} plural={astItem.plural} />;
+          return (
+            <BuildingName
+              frontmatter={{
+                type: 'building',
+                building: {
+                  collection: 'buildings',
+                  id: building.id
+                }
+              }}
+              name={astItem.building}
+              plural={astItem.plural}
+            />
+          );
         }
         if (astItem.type === 'worker') {
           return <WorkerName name={astItem.worker} plural={astItem.plural} />;

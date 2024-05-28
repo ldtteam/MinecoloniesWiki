@@ -1,6 +1,6 @@
 ---
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
-import { getWorkerData, type MarkdocWorkerComponent } from '@utils/workers';
+import { getWorkerData, getWorkerIdFromFrontmatter, type MarkdocWorkerComponent } from '@utils/workers';
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import path from 'path';
@@ -11,8 +11,10 @@ import WorkerName from '../WorkerName.astro';
 
 type Props = MarkdocWorkerComponent;
 
-const { workerId } = Astro.props;
-const workerData = await getWorkerData(workerId ?? '');
+const { frontmatter, name } = Astro.props;
+
+const workerId = await getWorkerIdFromFrontmatter(frontmatter);
+const workerData = await getWorkerData(name ?? workerId ?? '');
 
 function sortImages(s1: string, s2: string): number {
   const file1 = path.parse(s1);
@@ -103,7 +105,7 @@ const buildings = workerData.data.buildings ?? [];
             <div>
               {buildings.map((building) => (
                 <p class="m-0">
-                  <BuildingName name={building.id} />
+                  <BuildingName frontmatter={frontmatter} name={building.id} />
                 </p>
               ))}
             </div>

@@ -4,9 +4,9 @@ worker: courier
 ---
 
 {% worker_infobox %}
-The Courier is a crucial part of the bloodline of your colony. They will run from worker's hut to {% building name="warehouse" /%} to worker's hut, visiting all your workers and delivering the tools and materials they need as well as taking their production to the Warehouse.
+The {% worker /%} is a crucial part of the bloodline of your colony. They will run from worker's hut to {% building name="warehouse" /%} to worker's hut, visiting all your workers and delivering the tools and materials they need as well as taking their production to the Warehouse.
 
-The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
+The level of the {% building name="deliveryman" /%} will dictate how many items the {% worker /%} can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 
 | Building Level | Max Stacks Carried |
 | -------------- | ------------------ |
@@ -16,10 +16,9 @@ The level of the Courier's Hut will dictate how many items the Courier can deliv
 | 4              | 5                  |
 | 5              | Unlimited          |
 
+The greater a {% worker /%} its Agility skill, the faster they'll run. The greater their Adaptability skill, the more huts they can visit before going back to the Warehouse.
 
-The greater a Courier's Agility skill, the faster they'll run. The greater their Adaptability skill, the more huts they can visit before going back to the Warehouse.
-
-**Note:** You MUST build the Warehouse to at least level 1 so the Courier can do their work.
-
-**Note:** You can have up to 10 Couriers per Warehouse (2 per Warehouse level, up to 10 at a level 5 Warehouse). Couriers will only see the items in the Warehouse they are assigned to.
+> **Notes:** 
+> - You **must** build the {% building name="warehouse" /%} to at least level 1 so the {% worker /%} can do their work.
+> - You can have up to 10 {% worker plural=true /%} per Warehouse (2 per Warehouse level, up to 10 at a level 5 Warehouse). {% worker plural=true /%} will only see the items in the Warehouse they are assigned to.
 {% /worker_infobox %}

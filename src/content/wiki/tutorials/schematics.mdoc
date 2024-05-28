@@ -63,7 +63,7 @@ If you're a Patreon, you have access to the official schematic server, and can r
 
 Once you have a structure or area you want to scan to have your Builder build, you need to determine the exact area that needs to be scanned. 
 
-If the area you want to scan contains multiple anchor blocks (hut blocks, {% item name="tag_anchor" /%}, or {% item name="deco_controller" /%}; also including some special blocks like the {% item name="stash" /%}) you should shift-left-click the correct anchor block (e.g. the barracks hut block in a barracks schematic) first, before selecting corners.
+If the area you want to scan contains multiple anchor blocks (hut blocks, {% item name="tag_anchor" /%}, or {% item name="deco_controller" /%}; also including some special blocks like the {% item name="stash" /%}) you should shift-left-click the correct anchor block (e.g. the {% building name="barracks" /%} hut block in a {% building name="barracks" /%} schematic) first, before selecting corners.
 
 ![TestBuilding](@assets/images/wiki/tutorial/testbuilding.png)
 
@@ -144,7 +144,7 @@ An overview with which buildings go into which folders can also be found [here](
 
 With a few specific exceptions, you don't *have* to strictly follow the standard folder structure -- but it's recommended to stick to it when possible to make it easier for others to find specific buildings and decorations. But you're free to make extra folders to help group separate but related sets together, especially if you don't want them to appear directly as alternate buildings. E.g. if you have two styles of roads, one for early game and one for later game, you could put them in infrastructure/roads/simple/ and infrastructure/roads/nice/.
 
-**Note:** It's strongly recommended to have each folder only contain files or subfolders, but not both. While it is possible to mix them, the build tool doesn't display it as nicely.
+> **Note:** It's strongly recommended to have each folder only contain files or subfolders, but not both. While it is possible to mix them, the build tool doesn't display it as nicely.
 {% /version %}
 
 ## FAQ
@@ -225,7 +225,7 @@ Alternative designs can be placed under a style name like "myownalternative", or
 
 Once ready, move the `myown` folder into the blueprints folder and start your game. You should be able to see it with the the build tool.
 
-**Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
+> **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
 {% version name="1.19" after=true %}
 The naming for the buildings is not strict anymore. The only things that are important are that they are named consistently, that their names end with the hut level, and that you only use lowercase letters in the hut names (avoid capitals, spaces, or other punctuation).
@@ -328,13 +328,13 @@ You should always apply a `groundlevel` tag using the {% item name="tag_tool" /%
 
 | Building                             | Requirements                                                                                                               | Suggested                                                                                                                                  |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| {% building name="archery" /%}       | 1 archery dummy (a target block); 1 bed per level                                                                          | at least 1 standing position per level (a glowstone block, or any block tagged with `work`)                                                |
+| {% building name="archery" /%}       | 1 practice dummy (a target block); 1 bed per level                                                                         | at least 1 standing position per level (a glowstone block, or any block tagged with `work`)                                                |
 | {% building name="alchemist" /%}     | 1 brewing stand per level; 2 soul sand per level starting at level 2 (with 4 soul sand); leaves next to logs, i.e. "trees" |                                                                                                                                            |
 | {% building name="baker" /%}         | 1 furnace                                                                                                                  |                                                                                                                                            |
 | {% building name="barracks" /%}      | 1 {% building name="barrackstower" /%} per level (up to level 4)                                                           |                                                                                                                                            |
 | {% building name="barrackstower" /%} |                                                                                                                            | 1 bed per level                                                                                                                            |
 | {% building name="builder" /%}       |                                                                                                                            | 1 rack per level                                                                                                                           |
-| {% building name="combatacademy" /%} | 1 combat dummy per level (a pumpkin on top of a bale of hay); 1 bed per level                                              |                                                                                                                                            |
+| {% building name="combatacademy" /%} | 1 practice dummy per level (a pumpkin on top of a bale of hay); 1 bed per level                                            |                                                                                                                                            |
 | {% building name="composter" /%}     | 1 {% item name="compost_barrel" /%} per level                                                                              |                                                                                                                                            |
 | {% building name="concretemixer" /%} | 3 blocks of flowing water with solid blocks below and air blocks above, which the worker can stand next to                 |                                                                                                                                            |
 | {% building name="dyer" /%}          | 1 furnace                                                                                                                  |                                                                                                                                            |
@@ -593,7 +593,7 @@ Using the {% item name="tag_tool" /%}, you can place one or more `job=` tags on 
 
 ### How to create parent/child buildings or decorations?
 
-The {% building name="barracks" /%} and {% building name="barrackstower" /%} always have a parent/child relationship (i.e. the towers are embedded within the barracks, not directly built separately with the build tool). It's also possible to do the same with other buildings -- either putting one or more buildings into a containing decoration (e.g. a "district" of related buildings) or even embedding buildings within other buildings.
+The {% building name="barracks" /%} and {% building name="barrackstower" /%} always have a parent/child relationship (i.e. the {% building name="barrackstower" plural=true /%} are embedded within the {% building name="barracks" /%}, not directly built separately with the build tool). It's also possible to do the same with other buildings -- either putting one or more buildings into a containing decoration (e.g. a "district" of related buildings) or even embedding buildings within other buildings.
 
 Some popular combinations are to embed couriers within the warehouse, and fields within the farmer. Other combinations are possible, depending on your goals for the style -- but don't go too overboard! Some players like combination buildings since they fit nicely together, but others don't like them since they can take away flexibility and creativity when building a colony.
 

@@ -1,15 +1,22 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import { getWorkerData, getWorkerLink, getWorkerName, type MarkdocWorkerComponent } from '@utils/workers';
+import {
+  getWorkerData,
+  getWorkerIdFromFrontmatter,
+  getWorkerLink,
+  getWorkerName,
+  type MarkdocWorkerComponent
+} from '@utils/workers';
 import { getCollection } from 'astro:content';
 
 interface Props extends MarkdocWorkerComponent {
   plural?: boolean;
 }
 
-const { workerId, name, plural = false } = Astro.props;
+const { frontmatter, name, plural = false } = Astro.props;
 
-const workerData = await getWorkerData(name);
+const workerId = await getWorkerIdFromFrontmatter(frontmatter);
+const workerData = await getWorkerData(name ?? workerId ?? '');
 const versions = await getCollection('versions');
 
 const link = getWorkerLink(workerData);
@@ -24,7 +31,11 @@ const versionedContent = await Promise.all(
 {
   versionedContent.map(async (version) => (
     <VersionContent versions={[version.version]} inline>
-      {workerId !== workerData.id ? <a href={link}>{version.name}</a> : <span>{version.name}</span>}
+      {frontmatter?.type !== 'worker' || workerId !== workerData.id ? (
+        <a href={link}>{version.name}</a>
+      ) : (
+        <span>{version.name}</span>
+      )}
     </VersionContent>
   ))
 }
