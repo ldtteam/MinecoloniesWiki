@@ -4,10 +4,9 @@ description: The Concrete Mixer is responsible for creating concrete powder and 
 icon: "@assets/images/wiki/workers/concretemixer/male/default-a.png"
 type: crafter
 traits:
-  primary: Stamina
-  secondary: Dexterity
-effects:
-  primary: Faster concrete harvesting
-  secondary: Faster concrete crafting
-buildings:
-  - concretemixer
+  primary:
+    name: Stamina
+    effect: Faster concrete harvesting
+  secondary:
+    name: Dexterity
+    effect: Faster concrete crafting

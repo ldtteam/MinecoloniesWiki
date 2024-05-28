@@ -4,10 +4,9 @@ description: The Shepherd is responsible for herding your sheep.
 icon: "@assets/images/wiki/workers/shepherd/male/default-a.png"
 type: animals
 traits:
-  primary: Focus
-  secondary: Strength
-effects:
-  primary: More wool collected
-  secondary: More damage per attack
-buildings:
-  - shepherd
+  primary:
+    name: Focus
+    effect: More wool collected
+  secondary:
+    name: Strength
+    effect: More damage per attack

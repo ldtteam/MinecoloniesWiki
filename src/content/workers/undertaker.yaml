@@ -4,10 +4,9 @@ description: The Undertaker will travel around your colony, making sure that cit
 icon: "@assets/images/wiki/workers/undertaker/male/default-a.png"
 type: other
 traits:
-  primary: Strength
-  secondary: Mana
-effects:
-  primary: Faster grave digging
-  secondary: Increases chance to revive dead citizens
-buildings:
-  - graveyard
+  primary:
+    name: Strength
+    effect: Faster grave digging
+  secondary:
+    name: Mana
+    effect: Increases chance to revive dead citizens

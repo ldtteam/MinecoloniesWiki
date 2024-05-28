@@ -1,7 +1,7 @@
 ---
-import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import WorkerName from '@components/markdoc/WorkerName.astro';
+import BuildingName from '@components/markdoc/names/BuildingName.astro';
+import WorkerName from '@components/markdoc/names/WorkerName.astro';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
@@ -14,24 +14,23 @@ type Props = BaseBuildingContentBlockProps;
     <ul>
       <li><b>Building Name:</b> Shows the name of the building, including the level of the building.</li>
       <li>
-        <b>Pencil:</b> Allows you to rename the building. The level of the building will always be listed after the
-        name.
+        <b>Pencil:</b> Allows you to rename the building. The level of the building will always be listed after the name.
       </li>
       <li>
-        <b>Assigned Citizens:</b> This will show you how many citizens are assigned to this hut, it also displays their
-        name, and occupation (if employed).
+        <b>Assigned Citizens:</b> This will show you how many citizens are assigned to this hut, it also displays their name,
+        and occupation (if employed).
       </li>
     </ul>
     <li><b>Controls:</b></li>
     <ul>
       <li>
-        <b>Manage Housing:</b> This lets you change which citizens are assigned to this hut. <b>Note:</b> this only
-        works if you have turned the housing assignment mode in the <BuildingName {...Astro.props} name="townhall" /> or
-        in the hut itself, to manual, otherwise citizens will be housed automatically.
+        <b>Manage Housing:</b> This lets you change which citizens are assigned to this hut. <b>Note:</b> this only works
+        if you have turned the housing assignment mode in the <BuildingName {...Astro.props} name="townhall" /> or in the
+        hut itself, to manual, otherwise citizens will be housed automatically.
       </li>
       <li>
-        <b>Build Options:</b> Lets you create a build, upgrade, or repair build order for this hut. To learn more about
-        the building system, please visit the <WorkerName name="builder" /> page.
+        <b>Build Options:</b> Lets you create a build, upgrade, or repair build order for this hut. To learn more about the
+        building system, please visit the <WorkerName name="builder" /> page.
       </li>
       <li>
         <b>Recall Citizens:</b> Teleports all the citizens housed here to the building.
@@ -41,14 +40,14 @@ type Props = BaseBuildingContentBlockProps;
     <ul>
       <li><b>Info Button:</b> Some huts have an in-game guide. Press the ? button to access it.</li>
       <li>
-        <b>Inventory:</b> Here you can access the hut block's storage, where the worker at this hut takes and deposits
-        materials. They will also use any <a href="/wiki/items/rack">racks</a> that were placed in the hut when it was
-        built or upgraded, so be sure to check those as well!
+        <b>Inventory:</b> Here you can access the hut block's storage, where the worker at this hut takes and deposits materials.
+        They will also use any <a href="/wiki/items/rack">racks</a> that were placed in the hut when it was built or upgraded,
+        so be sure to check those as well!
       </li>
       <li>
-        <b>Chest Icon:</b> Click this button to see all the items in the hut's storage (including the hut block's
-        inventory and any racks that came with the hut). Clicking the ? button next to an item's count will highlight
-        the storage container it's in.
+        <b>Chest Icon:</b> Click this button to see all the items in the hut's storage (including the hut block's inventory
+        and any racks that came with the hut). Clicking the ? button next to an item's count will highlight the storage container
+        it's in.
       </li>
     </ul>
   </ul>

@@ -4,10 +4,9 @@ description: The Swineherders are responsible for herding your pigs.
 icon: "@assets/images/wiki/workers/swineherd/male/default-a.png"
 type: animals
 traits:
-  primary: Strength
-  secondary: Athletics
-effects:
-  primary: More damage per attack
-  secondary: Faster pig growth
-buildings:
-  - swineherd
+  primary:
+    name: Strength
+    effect: More damage per attack
+  secondary:
+    name: Athletics
+    effect: Faster pig growth

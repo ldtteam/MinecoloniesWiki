@@ -1,7 +1,7 @@
 ---
-import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import WorkerName from '@components/markdoc/WorkerName.astro';
+import BuildingName from '@components/markdoc/names/BuildingName.astro';
+import WorkerName from '@components/markdoc/names/WorkerName.astro';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
@@ -12,8 +12,7 @@ type Props = BaseBuildingContentBlockProps;
   <p>Listed here are items that can be used by the <BuildingName {...Astro.props} /> as fuel in their furnaces.</p>
   <p>
     Simply turn on any that you want your <BuildingName {...Astro.props} /> to use, and a <WorkerName name="courier" />
-     will deliver those items to the <BuildingName {...Astro.props} /> when they need fuel. All items are <b>off</b> by
-    default.
+    will deliver those items to the <BuildingName {...Astro.props} /> when they need fuel. All items are <b>off</b> by default.
   </p>
   <p>There are also two controls on the page:</p>
   <ul>

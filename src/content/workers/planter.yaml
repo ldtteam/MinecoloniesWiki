@@ -4,10 +4,9 @@ description: The Planter will grow and harvest any plants or non-farmland food t
 icon: "@assets/images/wiki/workers/planter/male/default-a.png"
 type: gatherer
 traits:
-  primary: Agility
-  secondary: Dexterity
-effects:
-  primary: Increases chance of decreasing materials needed
-  secondary: Faster crafting
-buildings:
-  - plantation
+  primary:
+    name: Agility
+    effect: Increases chance of decreasing materials needed
+  secondary:
+    name: Dexterity
+    effect: Faster crafting

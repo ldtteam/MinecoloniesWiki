@@ -4,10 +4,9 @@ description: Researchers work in the University to research the technologies tha
 icon: "@assets/images/wiki/workers/researcher/male/default-1a.png"
 type: other
 traits:
-  primary: Knowledge
-  secondary: Mana
-effects:
-  primary: Affects research time while offline
-  secondary: Affects max amount of research time they get
-buildings:
-  - university
+  primary:
+    name: Knowledge
+    effect: Affects research time while offline
+  secondary:
+    name: Mana
+    effect: Affects max amount of research time they get

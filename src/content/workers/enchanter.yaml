@@ -4,10 +4,9 @@ description: The Enchanter will create enchanted books using ancient tomes and e
 icon: "@assets/images/wiki/workers/enchanter/male/default-a.png"
 type: other
 traits:
-  primary: Mana
-  secondary: Knowledge
-effects:
-  primary: More XP collected per trip
-  secondary: Higher level of enchanted books
-buildings:
-  - enchanter
+  primary:
+    name: Mana
+    effect: More XP collected per trip
+  secondary:
+    name: Knowledge
+    effect: Higher level of enchanted books

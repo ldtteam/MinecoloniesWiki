@@ -56,19 +56,7 @@ const itemCombinedTransform: Tag['transform'] = (node, config) => {
 };
 
 export const item: Tag = {
-  render: component('@components/markdoc/names/Item.astro'),
-  selfClosing: true,
-  attributes: {
-    name: {
-      type: String,
-      required: false
-    }
-  },
-  transform: itemTransform
-};
-
-export const item_page: Tag = {
-  render: component('@components/markdoc/names/ItemPage.astro'),
+  render: component('@components/markdoc/names/items/Item.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -99,8 +87,7 @@ export const item_combined_infobox: Tag = {
     },
     cols: {
       type: Number,
-      required: false,
-      default: 2
+      required: false
     }
   },
   transform: itemCombinedTransform

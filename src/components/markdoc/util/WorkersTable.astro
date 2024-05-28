@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-import WorkerName from './WorkerName.astro';
+import WorkerName from '../names/WorkerName.astro';
 
 const workers = await getCollection('workers');
 ---
@@ -23,10 +23,10 @@ const workers = await getCollection('workers');
           <td>
             <WorkerName name={worker.id} />
           </td>
-          <td>{worker.data.traits.primary ?? '-'}</td>
-          <td>{worker.data.effects.primary ?? '-'}</td>
-          <td>{worker.data.traits.secondary ?? '-'}</td>
-          <td>{worker.data.effects.secondary ?? '-'}</td>
+          <td>{worker.data.traits.primary?.name ?? '-'}</td>
+          <td>{worker.data.traits.primary?.effect ?? '-'}</td>
+          <td>{worker.data.traits.secondary?.name ?? '-'}</td>
+          <td>{worker.data.traits.secondary?.effect ?? '-'}</td>
         </tr>
       ))
     }

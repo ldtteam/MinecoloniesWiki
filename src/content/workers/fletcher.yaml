@@ -4,10 +4,9 @@ description: The Fletcher is your master bowmaker, they will craft bows and arro
 icon: "@assets/images/wiki/workers/fletcher/male/default-a.png"
 type: crafter
 traits:
-  primary: Dexterity
-  secondary: Creativity
-effects:
-  primary: Faster crafting
-  secondary: Increases chance of decreasing materials needed
-buildings:
-  - fletcher
+  primary:
+    name: Dexterity
+    effect: Faster crafting
+  secondary:
+    name: Creativity
+    effect: Increases chance of decreasing materials needed

@@ -1,12 +1,12 @@
 ---
-import ItemName from '@components/markdoc/ItemName.astro';
+import ItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import VersionContent from '@components/version/VersionContent.astro';
 import { getItemData } from '@utils/items';
 import { Image } from 'astro:assets';
 import { getEntry } from 'astro:content';
 
-import Infobox from './Infobox.astro';
-import RecipeGrid from './RecipeGrid.astro';
+import Infobox from '../../ui/infobox/Infobox.astro';
+import RecipeGrid from '../../ui/infobox/RecipeGrid.astro';
 
 interface Props {
   item: string;

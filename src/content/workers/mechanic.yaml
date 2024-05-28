@@ -4,10 +4,9 @@ description: The Mechanic is the master of redstone, because the Mechanic is so 
 icon: "@assets/images/wiki/workers/mechanic/male/default-a.png"
 type: crafter
 traits:
-  primary: Knowledge
-  secondary: Agility
-effects:
-  primary: Increases chance of decreasing materials needed
-  secondary: Faster crafting
-buildings:
-  - mechanic
+  primary:
+    name: Knowledge
+    effect: Increases chance of decreasing materials needed
+  secondary:
+    name: Agility
+    effect: Faster crafting

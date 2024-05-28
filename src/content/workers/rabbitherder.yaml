@@ -4,10 +4,9 @@ description: The Rabbit Herder is responsible for herding your rabbits.
 icon: "@assets/images/wiki/workers/rabbitherder/male/default-a.png"
 type: animals
 traits:
-  primary: Agility
-  secondary: Athletics
-effects:
-  primary: Higher chance to successfully hit a rabbit
-  secondary: Faster rabbit growth
-buildings:
-  - rabbithutch
+  primary:
+    name: Agility
+    effect: Higher chance to successfully hit a rabbit
+  secondary:
+    name: Athletics
+    effect: Faster rabbit growth

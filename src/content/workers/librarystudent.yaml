@@ -4,8 +4,6 @@ description: Library Students will come to study in your Library, increasing the
 icon: "@assets/images/wiki/workers/librarystudent/male/default-1a.png"
 type: other
 traits:
-  primary: Intelligence
-effects:
-  primary: Affects leveling speed of other skills
-buildings:
-  - library
+  primary:
+    name: Intelligence
+    effect: Affects leveling speed of other skills

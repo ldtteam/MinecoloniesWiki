@@ -4,10 +4,9 @@ description: The Forester will cut down trees in your colony, you can tell them 
 icon: "@assets/images/wiki/workers/forester/male/default-a.png"
 type: gatherer
 traits:
-  primary: Strength
-  secondary: Focus
-effects:
-  primary: Faster log breaking
-  secondary: Faster walking
-buildings:
-  - lumberjack
+  primary:
+    name: Strength
+    effect: Faster log breaking
+  secondary:
+    name: Focus
+    effect: Faster walking

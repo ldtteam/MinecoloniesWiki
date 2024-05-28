@@ -1,6 +1,5 @@
 ---
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import WorkerName from '@components/markdoc/WorkerName.astro';
 
 import type { BuildingCraftingContentBlockProps } from '../types';
 
@@ -14,7 +13,7 @@ const { noRemove, noTeach, ...rest } = Astro.props;
 
   <p>
     The arrows allow you to move them up or down in priority. You are also able to disable {noRemove ? '' : 'or remove'}
-     specific recipes.
+    specific recipes.
   </p>
 
   {
@@ -23,7 +22,7 @@ const { noRemove, noTeach, ...rest } = Astro.props;
         <li>
           <b>Teach Recipe:</b> When clicking teach recipe, it opens a furnace grid which allows you to teach this hut
           smelting recipes (not the worker). Place the item to smelt in the upper slot. You do not need to put anything
-          in the fuel slot. The <WorkerName {...rest} /> will automatically pick any fuel.'
+          in the fuel slot. The worker will automatically pick any fuel.'
         </li>
       </ul>
     )

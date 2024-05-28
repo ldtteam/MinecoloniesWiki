@@ -4,10 +4,9 @@ description: The Fisher will catch fish and treasure from the vast oceans in you
 icon: "@assets/images/wiki/workers/fisher/male/default-a.png"
 type: gatherer
 traits:
-  primary: Focus
-  secondary: Agility
-effects:
-  primary: Less time to catch something
-  secondary: Less time to catch something
-buildings:
-  - fisherman
+  primary:
+    name: Focus
+    effect: Less time to catch something
+  secondary:
+    name: Agility
+    effect: Less time to catch something

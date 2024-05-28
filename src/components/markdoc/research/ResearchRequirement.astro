@@ -1,9 +1,9 @@
 ---
-import VersionedItemName from '@components/markdoc/ItemName.astro';
+import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import { getItemData } from '@utils/items';
 import type { CollectionEntry } from 'astro:content';
 
-import BuildingName from '../BuildingName.astro';
+import BuildingName from '../names/BuildingName.astro';
 
 interface Props {
   requirement: NonNullable<CollectionEntry<'research'>['data']['requirements']>[number];

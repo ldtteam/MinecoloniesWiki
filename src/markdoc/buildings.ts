@@ -4,7 +4,7 @@ import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
 
 export const building: Tag = {
-  render: component('@components/markdoc/BuildingName.astro'),
+  render: component('@components/markdoc/names/BuildingName.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -17,11 +17,6 @@ export const building: Tag = {
       required: false
     }
   },
-  transform: injectFrontmatter
-};
-
-export const building_infobox: Tag = {
-  render: component('@components/markdoc/infobox/BuildingInfobox.astro'),
   transform: injectFrontmatter
 };
 

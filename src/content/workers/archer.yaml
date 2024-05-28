@@ -4,12 +4,9 @@ description: The Archer is your primary ranged guard, they require a bow, and op
 icon: "@assets/images/wiki/workers/archer/male/default-a.png"
 type: guard
 traits:
-  primary: Agility
-  secondary: Adaptability
-effects:
-  primary: More damage
-  secondary: Greater range
-buildings:
-  - archery
-  - barrackstower
-  - guardtower
+  primary:
+    name: Agility
+    effect: More damage
+  secondary:
+    name: Adaptability
+    effect: Greater range

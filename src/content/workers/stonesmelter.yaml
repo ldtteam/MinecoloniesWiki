@@ -4,10 +4,9 @@ description: The Stone Smelter is your general smelter for your colony, they can
 icon: "@assets/images/wiki/workers/stonesmelter/male/default-a.png"
 type: crafter
 traits:
-  primary: Athletics
-  secondary: Dexterity
-effects:
-  primary: Increases number of furnaces used
-  secondary: Faster smelting
-buildings:
-  - stonesmeltery
+  primary:
+    name: Athletics
+    effect: Increases number of furnaces used
+  secondary:
+    name: Dexterity
+    effect: Faster smelting

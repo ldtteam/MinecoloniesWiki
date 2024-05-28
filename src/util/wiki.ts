@@ -3,7 +3,6 @@ import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import { getBuildingData, getBuildingName } from './building';
 import { getItemData } from './items';
 import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
-import { getWorkerData, getWorkerName } from './workers';
 
 export type Title = string | TitleVersions;
 
@@ -22,18 +21,6 @@ interface WikiSubCategoryEntry {
 type WikiPage = WikiSubCategoryEntry | WikiPageEntry;
 
 type WikiPages = Map<CollectionEntry<'wiki_categories'>, WikiPage[]>;
-
-const WorkerPageTypes: Record<CollectionEntry<'workers'>['data']['type'], string> = {
-  animals: 'Animals',
-  crafter: 'Crafters',
-  gatherer: 'Gatherers',
-  guard: 'Guards',
-  other: 'Other'
-};
-
-function isSubCategory(entry: WikiSubCategoryEntry | WikiPageEntry): entry is WikiSubCategoryEntry {
-  return entry.type === 'subcategory';
-}
 
 export async function getSectionTitle(entry: CollectionEntry<'wiki'>, includeGroup: boolean): Promise<string> {
   if (entry.data.type === 'section') {
@@ -73,17 +60,6 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
         }))
       )
     );
-  } else if (entry.data.type === 'worker') {
-    const workerData = await getWorkerData(entry.data.worker.id);
-
-    return combineVersionedTitles(
-      await Promise.all(
-        versions.map(async (version) => ({
-          version,
-          title: await getWorkerName(version, workerData)
-        }))
-      )
-    );
   }
 
   return entry.id;
@@ -103,9 +79,6 @@ export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promis
   } else if (entry.data.type === 'building') {
     const buildingData = await getEntry(entry.data.building);
     return buildingData.data.description;
-  } else if (entry.data.type === 'worker') {
-    const workerData = await getEntry(entry.data.worker);
-    return workerData.data.description;
   }
 
   return undefined;
@@ -133,9 +106,6 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
   } else if (entry.data.type === 'building') {
     const buildingData = await getBuildingData(entry.data.building.id);
     return buildingData.data.icon.src;
-  } else if (entry.data.type === 'worker') {
-    const workerData = await getWorkerData(entry.data.worker.id);
-    return workerData.data.icon.src;
   }
 }
 
@@ -175,33 +145,7 @@ export async function getWikiPages(): Promise<WikiPages> {
       );
     }
 
-    if (categoryString === 'workers' && entry.data.type === 'worker') {
-      const workerData = await getEntry('workers', entry.data.worker.id);
-      if (workerData !== undefined) {
-        const subCategoryName = WorkerPageTypes[workerData.data.type];
-        let subCategory = distributedPages
-          .get(category)!
-          .filter(isSubCategory)
-          .find((f) => f.name === subCategoryName);
-
-        if (subCategory === undefined) {
-          subCategory = {
-            type: 'subcategory',
-            name: WorkerPageTypes[workerData.data.type],
-            pages: []
-          };
-          distributedPages.get(category)!.push(subCategory);
-        }
-
-        subCategory.pages.push({
-          name: workerData.data.name,
-          slug: entry.slug,
-          type: 'page'
-        });
-      }
-    } else {
-      distributedPages.get(category)!.push(...(await extractPageTitles(entry)));
-    }
+    distributedPages.get(category)!.push(...(await extractPageTitles(entry)));
   }
 
   for (const pages of distributedPages.values()) {

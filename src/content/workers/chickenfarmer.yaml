@@ -4,10 +4,9 @@ description: The Chicken Farmer is responsible for herding your chickens.
 icon: "@assets/images/wiki/workers/chickenfarmer/male/default-a.png"
 type: animals
 traits:
-  primary: Adaptability
-  secondary: Agility
-effects:
-  primary: Greater chance to pick up eggs/meat/feathers
-  secondary: Greater chance to successfully hit chicken
-buildings:
-  - chickenfarmer
+  primary:
+    name: Adaptability
+    effect: Greater chance to pick up eggs/meat/feathers
+  secondary:
+    name: Agility
+    effect: Greater chance to successfully hit chicken

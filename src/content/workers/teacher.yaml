@@ -4,10 +4,9 @@ description: The Teacher will teach your Pupils at the School.
 icon: "@assets/images/wiki/workers/teacher/male/default-a.png"
 type: other
 traits:
-  primary: Knowledge
-  secondary: Mana
-effects:
-  primary: Pupil stats increase faster
-  secondary: Quicker switching between pupils
-buildings:
-  - school
+  primary:
+    name: Knowledge
+    effect: Pupil stats increase faster
+  secondary:
+    name: Mana
+    effect: Quicker switching between pupils

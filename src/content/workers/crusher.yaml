@@ -4,10 +4,9 @@ description: The Crusher will crush certain blocks into other blocks, like cobbl
 icon: "@assets/images/wiki/workers/crusher/male/default-a.png"
 type: crafter
 traits:
-  primary: Stamina
-  secondary: Strength
-effects:
-  primary: Decreases chance of sickness
-  secondary: Faster work speed
-buildings:
-  - crusher
+  primary:
+    name: Stamina
+    effect: Decreases chance of sickness
+  secondary:
+    name: Strength
+    effect: Faster work speed

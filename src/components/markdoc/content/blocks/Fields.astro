@@ -1,6 +1,6 @@
 ---
-import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import BuildingName from '@components/markdoc/names/BuildingName.astro';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
@@ -10,12 +10,12 @@ type Props = BaseBuildingContentBlockProps;
 <BuildingContentBlock {...Astro.props} header="fields" imageKey="fields" imageAlt="Fields">
   <ul>
     <li>
-      <b>Assign fields to worker:</b> Automatic by default. Here you can define if you prefer to manually assign the
-      fields for this <BuildingName {...Astro.props} />.
+      <b>Assign fields to worker:</b> Automatic by default. Here you can define if you prefer to manually assign the fields
+      for this <BuildingName {...Astro.props} />.
     </li>
     <li>
-      <b>Fields:</b> This is the list of recognized fields (recognizable by the crop in its GUI and its distance). This
-      button can show in multiple different ways:
+      <b>Fields:</b> This is the list of recognized fields (recognizable by the crop in its GUI and its distance). This button
+      can show in multiple different ways:
     </li>
     <ul>
       <li>
