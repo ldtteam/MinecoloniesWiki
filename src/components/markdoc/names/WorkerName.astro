@@ -16,7 +16,8 @@ const workerTarget = name ?? workerId ?? '';
 const workerData = await getWorkerData(workerTarget);
 const versions = await getCollection('versions');
 
-let referenceBuilding = building ?? (await getBuildingIdFromFrontmatter(frontmatter));
+let referenceBuilding =
+  building ?? (await getBuildingIdFromFrontmatter(frontmatter)) ?? workerData.data.primaryBuilding.id;
 if (!referenceBuilding) {
   const allBuildings = await getCollection('buildings', (building) =>
     building.data.workers?.map<string>((m) => m.id).includes(workerTarget)
