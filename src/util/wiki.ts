@@ -1,6 +1,6 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getBuildingData, getBuildingLink, getBuildingName } from './building';
+import { getBuildingData, getBuildingName } from './building';
 import { getItemData } from './items';
 import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
 
