@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Strength
     effect: Faster work speed
+primaryBuilding: crusher

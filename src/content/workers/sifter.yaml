@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Strength
     effect: Faster sifting
+primaryBuilding: sifter

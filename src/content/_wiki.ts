@@ -142,7 +142,8 @@ const workerInfo = (image: ImageFunction) =>
           effect: z.string()
         })
         .optional()
-    })
+    }),
+    primaryBuilding: reference('buildings')
   });
 
 export const workersCollection = defineCollection({

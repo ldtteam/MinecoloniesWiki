@@ -1,17 +1,35 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
+import { getBuildingData, getBuildingIdFromFrontmatter, getBuildingLink } from '@utils/building';
 import { getWorkerData, getWorkerIdFromFrontmatter, getWorkerName, type MarkdocWorkerComponent } from '@utils/workers';
-import { getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 
 interface Props extends MarkdocWorkerComponent {
+  building?: string;
   plural?: boolean;
 }
 
-const { frontmatter, name, plural = false } = Astro.props;
+const { frontmatter, name, building, plural = false } = Astro.props;
 
 const workerId = await getWorkerIdFromFrontmatter(frontmatter);
-const workerData = await getWorkerData(name ?? workerId ?? '');
+const workerTarget = name ?? workerId ?? '';
+const workerData = await getWorkerData(workerTarget);
 const versions = await getCollection('versions');
+
+let referenceBuilding = building ?? (await getBuildingIdFromFrontmatter(frontmatter));
+if (!referenceBuilding) {
+  const allBuildings = await getCollection('buildings', (building) =>
+    building.data.workers?.map<string>((m) => m.id).includes(workerTarget)
+  );
+  if (allBuildings.length !== 1) {
+    throw new Error(
+      `Worker name for ${workerTarget} requires a building argument because this worker is referenced in none or multiple buildings.`
+    );
+  }
+  referenceBuilding = allBuildings[0].id;
+}
+const buildingData = await getBuildingData(referenceBuilding);
+const buildingLink = getBuildingLink(buildingData);
 
 const versionedContent = await Promise.all(
   versions.map(async (version) => ({
@@ -19,12 +37,26 @@ const versionedContent = await Promise.all(
     name: await getWorkerName(version, workerData, plural)
   }))
 );
+const versionedContentReduced = versionedContent.reduce<Record<string, CollectionEntry<'versions'>[]>>(
+  (previousValue, currentValue) => {
+    if (previousValue[currentValue.name] === undefined) {
+      previousValue[currentValue.name] = [];
+    }
+    previousValue[currentValue.name].push(currentValue.version);
+    return previousValue;
+  },
+  {}
+);
 ---
 
 {
-  versionedContent.map(async (version) => (
-    <VersionContent versions={[version.version]} inline>
-      <span>{version.name}</span>
+  Object.entries(versionedContentReduced).map(async ([name, versions]) => (
+    <VersionContent versions={versions} inline>
+      {frontmatter?.type !== 'building' || workerId !== workerData.id ? (
+        <a href={buildingLink}>{name}</a>
+      ) : (
+        <span>{name}</span>
+      )}
     </VersionContent>
   ))
 }

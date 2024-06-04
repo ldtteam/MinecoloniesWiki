@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Focus
     effect: Increases chance of decreasing materials needed
+primaryBuilding: blacksmith

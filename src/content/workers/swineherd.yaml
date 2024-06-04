@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Athletics
     effect: Faster pig growth
+primaryBuilding: swineherd

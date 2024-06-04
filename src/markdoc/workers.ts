@@ -11,6 +11,10 @@ export const worker: Tag = {
       type: String,
       required: false
     },
+    building: {
+      type: String,
+      required: false
+    },
     plural: {
       type: Boolean,
       default: false,

@@ -72,7 +72,7 @@ const recipes = buildingData.data.recipes ?? [];
           <hr />
           {workers.map((worker, idx) => (
             <>
-              <BuildingInfoboxWorker workerId={worker.id} />
+              <BuildingInfoboxWorker buildingId={buildingData.id} workerId={worker.id} />
               {idx !== workers.length - 1 && <hr />}
             </>
           ))}

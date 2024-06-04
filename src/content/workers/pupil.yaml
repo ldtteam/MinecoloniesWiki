@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Mana
     effect: Quicker switching between pupils
+primaryBuilding: school

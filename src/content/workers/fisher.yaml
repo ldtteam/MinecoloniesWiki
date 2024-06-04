@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Agility
     effect: Less time to catch something
+primaryBuilding: fisherman

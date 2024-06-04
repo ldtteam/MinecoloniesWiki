@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Strength
     effect: Chance and quality of loot
+primaryBuilding: netherworker

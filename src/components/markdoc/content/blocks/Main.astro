@@ -1,11 +1,15 @@
 ---
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
 import BuildingName from '@components/markdoc/names/BuildingName.astro';
+import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import WorkerName from '@components/markdoc/names/WorkerName.astro';
+import { getItemData } from '@utils/items';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
+
+const rackData = await getItemData('rack');
 ---
 
 <BuildingContentBlock {...Astro.props} header="main interface" imageKey="main" imageAlt="Main interface">
@@ -37,13 +41,18 @@ type Props = BaseBuildingContentBlockProps;
     <li><b>Request System:</b></li>
     <ul>
       <li>
-        <b>Pickup Priority:</b> You can set the priority that a <WorkerName name="courier" /> will visit this hut and pick
-        up items (when the worker at this hut issues a request), or you can tell <WorkerName name="courier" plural /> to
+        <b>Pickup Priority:</b> You can set the priority that a <WorkerName name="courier" building="deliveryman" /> will
+        visit this hut and pick up items (when the worker at this hut issues a request), or you can tell <WorkerName
+          name="courier"
+          building="deliveryman"
+          plural
+        /> to
         <i>never</i> visit this hut to pick up items. (For the pickup priority, 10 is the highest.)
       </li>
       <li>
         <b>Request Pickup Now:</b> You can click this button in order to tell any available <WorkerName
           name="courier"
+          building="deliveryman"
         /> to come and pick up all the items from the building
       </li>
     </ul>
@@ -52,7 +61,7 @@ type Props = BaseBuildingContentBlockProps;
       <li><b>Info Button:</b> Some huts have an in-game guide. Press the ? button to access it.</li>
       <li>
         <b>Inventory:</b> Here you can access the hut block's storage, where the worker at this hut takes and deposits materials.
-        They will also use any <a href="/wiki/items/rack">racks</a> that were placed in the hut when it was built or upgraded,
+        They will also use any <VersionedItemName data={rackData} /> that were placed in the hut when it was built or upgraded,
         so be sure to check those as well!
       </li>
       <li>

@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Agility
     effect: Decreases flower growth time
+primaryBuilding: florist

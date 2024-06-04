@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Focus
     effect: Increases throwing accuracy
+primaryBuilding: guardtower

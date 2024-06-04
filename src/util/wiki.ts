@@ -1,6 +1,6 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getBuildingData, getBuildingName } from './building';
+import { getBuildingData, getBuildingLink, getBuildingName } from './building';
 import { getItemData } from './items';
 import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
 
@@ -146,6 +146,18 @@ export async function getWikiPages(): Promise<WikiPages> {
     }
 
     distributedPages.get(category)!.push(...(await extractPageTitles(entry)));
+  }
+
+  for (const worker of await getCollection('workers')) {
+    const category = wikiCategories.find((f) => f.id === 'workers');
+    const building = await getEntry('buildings', worker.data.primaryBuilding.id);
+    if (category !== undefined) {
+      distributedPages.get(category)!.push({
+        type: 'page',
+        name: worker.data.name,
+        slug: 'buildings/' + building.id
+      });
+    }
   }
 
   for (const pages of distributedPages.values()) {

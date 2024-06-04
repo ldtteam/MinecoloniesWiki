@@ -10,3 +10,4 @@ traits:
   secondary:
     name: Mana
     effect: Able to use more brewing stands
+primaryBuilding: alchemist

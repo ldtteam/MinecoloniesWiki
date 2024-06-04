@@ -8,10 +8,11 @@ import path from 'path';
 import WorkerName from '../names/WorkerName.astro';
 
 interface Props {
+  buildingId: CollectionEntry<'buildings'>['id'];
   workerId: CollectionEntry<'workers'>['id'];
 }
 
-const { workerId } = Astro.props;
+const { buildingId, workerId } = Astro.props;
 const workerData = await getWorkerData(workerId);
 
 function sortImages(s1: string, s2: string): number {
@@ -55,7 +56,18 @@ const filteredImages = await Promise.all(
 
 <p>
   <b>Worker:</b>
-  <WorkerName slot="title" name={workerId} />
+  <WorkerName
+    slot="title"
+    name={workerId}
+    building={buildingId}
+    frontmatter={{
+      type: 'building',
+      building: {
+        collection: 'buildings',
+        id: buildingId
+      }
+    }}
+  />
 </p>
 <div class="grid mb-3" style="--bs-columns: 2; --bs-gap: 0.5rem;">
   <b>Skills:</b>
