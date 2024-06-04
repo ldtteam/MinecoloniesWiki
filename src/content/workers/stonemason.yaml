@@ -4,10 +4,10 @@ description: The Stonemason is where all your stone produts are sculped into oth
 icon: "@assets/images/wiki/workers/stonemason/male/default-a.png"
 type: crafter
 traits:
-  primary: Creativity
-  secondary: Dexterity
-effects:
-  primary: Increases chance of decreasing materials needed
-  secondary: Faster crafting
-buildings:
-  - stonemason
+  primary:
+    name: Creativity
+    effect: Increases chance of decreasing materials needed
+  secondary:
+    name: Dexterity
+    effect: Faster crafting
+primaryBuilding: stonemason

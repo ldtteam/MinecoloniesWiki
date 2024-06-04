@@ -4,11 +4,10 @@ description: The Druid is your support guard, they need potions that they will t
 icon: "@assets/images/wiki/workers/druid/male/default-a.png"
 type: guard
 traits:
-  primary: Mana
-  secondary: Focus
-effects:
-  primary: Increases potion duration
-  secondary: Increases throwing accuracy
-buildings:
-  - barrackstower
-  - guardtower
+  primary:
+    name: Mana
+    effect: Increases potion duration
+  secondary:
+    name: Focus
+    effect: Increases throwing accuracy
+primaryBuilding: guardtower

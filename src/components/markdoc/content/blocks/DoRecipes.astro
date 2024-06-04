@@ -1,6 +1,6 @@
 ---
-import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import BuildingName from '@components/markdoc/names/BuildingName.astro';
 
 import type { BuildingCraftingContentBlockProps } from '../types';
 
@@ -11,13 +11,13 @@ const { noRemove, noTeach, ...rest } = Astro.props;
 
 <BuildingContentBlock {...rest} header="crafting recipes" imageKey="crafting-recipes" imageAlt="Crafting recipes">
   <p>
-    Here you can see all the <a href="../dependencies/domumornamentum">Domum Ornamentum</a> this building knows. These
-    are crafted just like you were using an Architects cutter.
+    Here you can see all the <a href="../dependencies/domumornamentum">Domum Ornamentum</a> this building knows. These are
+    crafted just like you were using an Architects cutter.
   </p>
 
   <p>
     The arrows allow you to move them up or down in priority. You are also able to disable {noRemove ? '' : 'or remove'}
-     specific recipes.
+    specific recipes.
   </p>
 
   {

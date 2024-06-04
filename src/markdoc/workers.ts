@@ -4,10 +4,14 @@ import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
 
 export const worker: Tag = {
-  render: component('@components/markdoc/WorkerName.astro'),
+  render: component('@components/markdoc/names/WorkerName.astro'),
   selfClosing: true,
   attributes: {
     name: {
+      type: String,
+      required: false
+    },
+    building: {
       type: String,
       required: false
     },
@@ -20,11 +24,6 @@ export const worker: Tag = {
   transform: injectFrontmatter
 };
 
-export const worker_infobox: Tag = {
-  render: component('@components/markdoc/infobox/WorkerInfobox.astro'),
-  transform: injectFrontmatter
-};
-
 export const workers_table: Tag = {
-  render: component('@components/markdoc/WorkersTable.astro')
+  render: component('@components/markdoc/util/WorkersTable.astro')
 };

@@ -15,7 +15,7 @@ const TAB_INDEXES = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'se
 
 const { frontmatter, order = 1, cols, header, imageKey, imageAlt } = Astro.props;
 
-const buildingId = await getBuildingIdFromFrontmatter(frontmatter, true);
+const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
 const buildingData = await getBuildingData(buildingId ?? '');
 
 const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${buildingData.id}/${imageKey}.png`).then(

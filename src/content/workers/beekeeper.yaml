@@ -4,10 +4,10 @@ description: The Beekeeper looks after your bees, they are responsible for breed
 icon: "@assets/images/wiki/workers/beekeeper/male/default-a.png"
 type: animals
 traits:
-  primary: Dexterity
-  secondary: Adaptability
-effects:
-  primary: Determines chance of *beeing* stung
-  secondary: Affects wait time between checking hives
-buildings:
-  - beekeeper
+  primary:
+    name: Dexterity
+    effect: Determines chance of being stung
+  secondary:
+    name: Adaptability
+    effect: Affects wait time between checking hives
+primaryBuilding: beekeeper

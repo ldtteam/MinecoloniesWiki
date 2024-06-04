@@ -4,10 +4,10 @@ description: The Farm is one of the main sources of food production for your col
 icon: "@assets/images/wiki/workers/farmer/male/default-a.png"
 type: gatherer
 traits:
-  primary: Stamina
-  secondary: Athletics
-effects:
-  primary: Less time cycling between planting and harvesting
-  secondary: Faster planting and harvesting
-buildings:
-  - farmer
+  primary:
+    name: Stamina
+    effect: Less time cycling between planting and harvesting
+  secondary:
+    name: Athletics
+    effect: Faster planting and harvesting
+primaryBuilding: farmer

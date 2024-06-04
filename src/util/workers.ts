@@ -9,9 +9,7 @@ export interface MarkdocWorkerComponent {
 
 export async function getWorkerIdFromFrontmatter(frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
   let workerId: CollectionEntry<'workers'>['id'] | undefined;
-  if (frontmatter?.type === 'worker') {
-    workerId = frontmatter.worker.id;
-  } else if (frontmatter?.type === 'building') {
+  if (frontmatter?.type === 'building') {
     const building = await getEntry('buildings', frontmatter.building.id);
     if (building.data.workers?.length === 1) {
       workerId = building.data.workers[0].id;
@@ -57,8 +55,4 @@ export async function getWorkerName(
     }
   }
   return name;
-}
-
-export function getWorkerLink(worker: CollectionEntry<'workers'>) {
-  return `/wiki/workers/${worker.id}`;
 }

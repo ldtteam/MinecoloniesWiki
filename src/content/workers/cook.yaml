@@ -4,10 +4,10 @@ description: The Cook is responsible for cooking food for the customers in the R
 icon: "@assets/images/wiki/workers/cook/male/default-a.png"
 type: crafter
 traits:
-  primary: Adaptability
-  secondary: Knowledge
-effects:
-  primary: Faster cook time
-  secondary: Increases chance of decreasing materials needed
-buildings:
-  - cook
+  primary:
+    name: Adaptability
+    effect: Faster cook time
+  secondary:
+    name: Knowledge
+    effect: Increases chance of decreasing materials needed
+primaryBuilding: cook

@@ -1,0 +1,39 @@
+---
+import BuildingInfobox from '@components/markdoc/infobox/BuildingInfobox.astro';
+import ItemCombinedInfobox from '@components/markdoc/infobox/ItemCombinedInfobox.astro';
+import ItemInfobox from '@components/markdoc/infobox/ItemInfobox.astro';
+import Wrapper from '@components/ui/infobox/Wrapper.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  page: CollectionEntry<'wiki'>;
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+{
+  page.data.type === 'building' ? (
+    <Wrapper>
+      <BuildingInfobox slot="infobox" building={page.data.building.id} />
+      <Content slug={page.slug} frontmatter={page.data} />
+    </Wrapper>
+  ) : page.data.type === 'item' && (page.data.infobox?.show ?? true) ? (
+    <Wrapper>
+      <ItemInfobox slot="infobox" item={page.data.item.id} />
+      <Content slug={page.slug} frontmatter={page.data} />
+    </Wrapper>
+  ) : page.data.type === 'item-combined' && (page.data.infobox?.show ?? true) ? (
+    <Wrapper>
+      <ItemCombinedInfobox
+        slot="infobox"
+        items={page.data.items.map((item) => item.id)}
+        cols={page.data.infobox?.cols ?? 2}
+      />
+      <Content slug={page.slug} frontmatter={page.data} />
+    </Wrapper>
+  ) : (
+    <Content slug={page.slug} frontmatter={page.data} />
+  )
+}

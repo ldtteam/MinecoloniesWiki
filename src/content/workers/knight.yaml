@@ -4,12 +4,10 @@ description: The Knight is your primary melee guard, they require a sword, and o
 icon: "@assets/images/wiki/workers/knight/male/default-a.png"
 type: guard
 traits:
-  primary: Adaptability
-  secondary: Stamina
-effects:
-  primary: Faster attack speed
-  secondary: Increased health
-buildings:
-  - combatacademy
-  - barrackstower
-  - guardtower
+  primary:
+    name: Adaptability
+    effect: Faster attack speed
+  secondary:
+    name: Stamina
+    effect: Increased health
+primaryBuilding: guardtower

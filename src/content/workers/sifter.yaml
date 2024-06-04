@@ -4,10 +4,10 @@ description: The Sifter can turn "useless" materials into valuable materials, by
 icon: "@assets/images/wiki/workers/sifter/male/default-a.png"
 type: gatherer
 traits:
-  primary: Focus
-  secondary: Strength
-effects:
-  primary: Better quality items found
-  secondary: Faster sifting
-buildings:
-  - sifter
+  primary:
+    name: Focus
+    effect: Better quality items found
+  secondary:
+    name: Strength
+    effect: Faster sifting
+primaryBuilding: sifter

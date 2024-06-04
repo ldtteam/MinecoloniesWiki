@@ -4,10 +4,10 @@ description: The Miner will gather stone and ores from the depths below, they wi
 icon: "@assets/images/wiki/workers/miner/male/default-a.png"
 type: gatherer
 traits:
-  primary: Strength
-  secondary: Stamina
-effects:
-  primary: Faster block breaking
-  secondary: Faster block placing
-buildings:
-  - miner
+  primary:
+    name: Strength
+    effect: Faster block breaking
+  secondary:
+    name: Stamina
+    effect: Faster block placing
+primaryBuilding: miner

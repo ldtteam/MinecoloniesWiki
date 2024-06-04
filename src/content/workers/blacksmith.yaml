@@ -4,10 +4,10 @@ description: The Blacksmith is responsible for creating tools and armor of any m
 icon: "@assets/images/wiki/workers/blacksmith/male/default-a.png"
 type: crafter
 traits:
-  primary: Strength
-  secondary: Focus
-effects:
-  primary: Faster crafting
-  secondary: Increases chance of decreasing materials needed
-buildings:
-  - blacksmith
+  primary:
+    name: Strength
+    effect: Faster crafting
+  secondary:
+    name: Focus
+    effect: Increases chance of decreasing materials needed
+primaryBuilding: blacksmith

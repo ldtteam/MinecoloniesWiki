@@ -4,11 +4,10 @@ description: Quarriers are hired at the Mine and then have to go and work in Qua
 icon: "@assets/images/wiki/workers/quarrier/male/default-a.png"
 type: gatherer
 traits:
-  primary: Strength
-  secondary: Stamina
-effects:
-  primary: Faster block breaking
-  secondary: Faster block placing
-buildings:
-  - miner
-  - quarry
+  primary:
+    name: Strength
+    effect: Faster block breaking
+  secondary:
+    name: Stamina
+    effect: Faster block placing
+primaryBuilding: quarry

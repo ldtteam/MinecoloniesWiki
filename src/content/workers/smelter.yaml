@@ -4,10 +4,10 @@ description: The Smelter can turn all of your ores into ingots, higher level Sme
 icon: "@assets/images/wiki/workers/smelter/male/default-a.png"
 type: gatherer
 traits:
-  primary: Athletics
-  secondary: Strength
-effects:
-  primary: Faster smelting
-  secondary: Increases chance of doubling or tripling ores
-buildings:
-  - smeltery
+  primary:
+    name: Athletics
+    effect: Faster smelting
+  secondary:
+    name: Strength
+    effect: Increases chance of doubling or tripling ores
+primaryBuilding: smeltery

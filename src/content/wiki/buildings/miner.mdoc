@@ -3,7 +3,6 @@ type: building
 building: miner
 ---
 
-{% building_infobox %}
 The Mine is where you can hire a {% worker name="miner" /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
 
 {% version name="1.20.1" after=true %}
@@ -64,9 +63,8 @@ While mining, sometimes the {% worker name="miner" /%} will get lucky and get an
 | 5              | "             |
 {% /version %}
 {% /version %}
-{% /building_infobox %}
 
-## {% building /%} GUI
+## Interface
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_crafting_recipes order=2 /%}

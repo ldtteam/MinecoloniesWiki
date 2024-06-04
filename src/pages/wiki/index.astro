@@ -1,7 +1,7 @@
 ---
-import BuildingName from '@components/markdoc/BuildingName.astro';
-import SocialLink from '@components/markdoc/SocialLink.astro';
-import WorkerName from '@components/markdoc/WorkerName.astro';
+import BuildingName from '@components/markdoc/names/BuildingName.astro';
+import WorkerName from '@components/markdoc/names/WorkerName.astro';
+import SocialLink from '@components/markdoc/util/SocialLink.astro';
 import Meta from '@components/Meta.astro';
 import PagesOverview from '@components/wiki/PagesOverview.astro';
 import Layout from '@layouts/Default.astro';
@@ -24,10 +24,9 @@ import Layout from '@layouts/Default.astro';
     />, <WorkerName name="forester" plural />, <WorkerName name="miner" plural />, <WorkerName name="smelter" plural />, <WorkerName
       name="baker"
       plural
-    />, <WorkerName name="cook" plural />, <WorkerName name="courier" plural />, five types of animal herders, <WorkerName
-      name="composter"
-      plural
-    />, and many more, with even more being developed and added as the mod grows.
+    />, <WorkerName name="cook" plural />, <WorkerName name="courier" building="deliveryman" plural />, five types of
+    animal herders, <WorkerName name="composter" plural />, and many more, with even more being developed and added as
+    the mod grows.
   </p>
   <p>
     It also includes specialized buildings such as the <BuildingName name="warehouse" plural />, <BuildingName

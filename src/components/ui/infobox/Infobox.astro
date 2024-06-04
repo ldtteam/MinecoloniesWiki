@@ -9,7 +9,7 @@ interface Props {
 const { expand = false, class: cssClass } = Astro.props;
 ---
 
-<div class={cssClass}>
+<div class:list={['test', cssClass]}>
   <Card padding={2} class={expand ? 'h-100' : ''}>
     {
       Astro.slots.has('title') && (
@@ -24,3 +24,10 @@ const { expand = false, class: cssClass } = Astro.props;
     <slot />
   </Card>
 </div>
+
+<style>
+  .test {
+    float: right;
+    clear: both;
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-import ItemInfoboxInternal from '@components/ui/infobox/ItemInfobox.astro';
+import ItemInfoboxInternal from '@components/markdoc/infobox/ItemInfoboxCommon.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 const { item } = Astro.props;
 ---
 
-<Wrapper class="mb-3">
+<Wrapper>
   <slot />
 
   <ItemInfoboxInternal slot="infobox" item={item} />

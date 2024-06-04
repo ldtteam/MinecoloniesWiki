@@ -1,5 +1,6 @@
 ---
 import Meta from '@components/Meta.astro';
+import PageContent from '@components/wiki/PageContent.astro';
 import Layout from '@layouts/Default.astro';
 import { getNewestVersion } from '@utils/version';
 import type { AstroComponentFactory } from 'astro/runtime/server/render/index.js';
@@ -34,7 +35,6 @@ if (entry.data.type === 'section-group') {
 
 const title = await getWikiTitle(entry);
 const image = await getWikiImage(entry);
-const { Content } = await entry.render();
 
 let groupData: SectionGroupData | undefined = undefined;
 if (entry.data.type === 'section') {
@@ -121,7 +121,9 @@ const description = await getWikiDescription(entry);
     )
   }
 
-  <Content slug={entry.slug} frontmatter={entry.data} />
+  <div class="clearfix">
+    <PageContent page={entry} />
+  </div>
 
   <hr />
   <p class="text-center">
