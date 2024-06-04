@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"hot","name":"The Flintstones","requirements":[{"type":"building","building":"smeltery","level":3},{"type":"item","items":["minecraft/stone_bricks"],"quantity":64}],"effects":{"blockhutstonesmeltery":1},"researchLevel":2}
+{"tree":"technology","parent":"stonecake","name":"The Flintstones","requirements":[{"type":"building","building":"stonemason","level":1},{"type":"item","items":["minecraft/brick"],"quantity":64}],"effects":{"blockhutstonesmeltery":1},"researchLevel":2}
