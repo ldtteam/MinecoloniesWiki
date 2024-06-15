@@ -51,6 +51,8 @@ const recipeData = await getEntry('recipes', item);
               <swiper-slide>
                 {typeof icon === 'string' ? (
                   <img src={icon} alt={item.name} loading="lazy" decoding="async" width={150} />
+                ) : icon.format === 'gif' ? (
+                  <img src={icon.src} alt={item.name} loading="lazy" decoding="async" width={150} />
                 ) : (
                   <Image src={icon} alt={item.name} width={150} />
                 )}

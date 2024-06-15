@@ -24,23 +24,26 @@ importers:
         specifier: ^5.5.0
         version: 5.5.0(astro@4.10.2(@types/node@20.8.9)(sass@1.72.0)(typescript@5.4.3))(svelte@4.2.8)(typescript@5.4.3)(vite@5.0.13(@types/node@20.8.9)(sass@1.72.0))
       '@fontsource/fondamento':
-        specifier: ^5.0.11
+        specifier: ^5.0.17
         version: 5.0.17
       '@iconify-json/fa6-brands':
-        specifier: ^1.1.13
+        specifier: ^1.1.18
         version: 1.1.18
       '@iconify-json/fa6-regular':
-        specifier: ^1.1.13
+        specifier: ^1.1.18
         version: 1.1.18
       '@iconify-json/fa6-solid':
-        specifier: ^1.1.15
+        specifier: ^1.1.20
         version: 1.1.20
       '@iconify/json':
-        specifier: ^2.2.112
+        specifier: ^2.2.159
         version: 2.2.159
       '@markdoc/markdoc':
         specifier: ^0.4.0
         version: 0.4.0
+      '@types/shelljs':
+        specifier: ^0.8.15
+        version: 0.8.15
       archiver:
         specifier: ^7.0.1
         version: 7.0.1
@@ -48,7 +51,7 @@ importers:
         specifier: ^4.10.2
         version: 4.10.2(@types/node@20.8.9)(sass@1.72.0)(typescript@5.4.3)
       astro-icon:
-        specifier: ^1.0.0-next.2
+        specifier: 1.0.0-next.2
         version: 1.0.0-next.2
       bootstrap:
         specifier: ^5.3.3
@@ -59,6 +62,9 @@ importers:
       minecraft-data:
         specifier: ^3.55.0
         version: 3.55.0
+      shelljs:
+        specifier: ^0.8.5
+        version: 0.8.5
       svelte:
         specifier: ^4.2.8
         version: 4.2.8
@@ -72,18 +78,12 @@ importers:
       '@astrojs/upgrade':
         specifier: ^0.2.1
         version: 0.2.1
-      '@octokit/types':
-        specifier: ^12.1.1
-        version: 12.1.1
       '@types/archiver':
         specifier: ^6.0.2
         version: 6.0.2
       '@types/bootstrap':
         specifier: ^5.2.8
         version: 5.2.8
-      '@types/shelljs':
-        specifier: ^0.8.15
-        version: 0.8.15
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.4.0
         version: 7.4.0(@typescript-eslint/parser@7.4.0(eslint@8.57.0)(typescript@5.4.3))(eslint@8.57.0)(typescript@5.4.3)
@@ -114,9 +114,6 @@ importers:
       sass:
         specifier: ^1.72.0
         version: 1.72.0
-      shelljs:
-        specifier: ^0.8.5
-        version: 0.8.5
       typescript:
         specifier: ^5.4.3
         version: 5.4.3
@@ -980,12 +977,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@octokit/openapi-types@19.0.2':
-    resolution: {integrity: sha512-8li32fUDUeml/ACRp/njCWTsk5t17cfTM1jp9n08pBrqs5cDFJubtjsSnuz56r5Tad6jdEPJld7LxNp9dNcyjQ==}
-
-  '@octokit/types@12.1.1':
-    resolution: {integrity: sha512-qnJTldJ1NyGT5MTsCg/Zi+y2IFHZ1Jo5+njNCjJ9FcainV7LjuHgmB697kA0g4MjZeDAJsM3B45iqCVsCLVFZg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -2209,6 +2200,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -2349,6 +2341,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -4658,12 +4651,6 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
-
-  '@octokit/openapi-types@19.0.2': {}
-
-  '@octokit/types@12.1.1':
-    dependencies:
-      '@octokit/openapi-types': 19.0.2
 
   '@pkgjs/parseargs@0.11.0':
     optional: true

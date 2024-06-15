@@ -1,4 +1,4 @@
-import { AstroIntegration } from 'astro';
+import { type AstroIntegration } from 'astro';
 import shelljs from 'shelljs';
 
 import { processResearch } from './content-collections';

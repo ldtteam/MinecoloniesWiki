@@ -12,5 +12,5 @@ export default async function getTranslations(): Promise<Translations | undefine
     return undefined;
   }
 
-  return Object.assign({}, modTranslations, researchTranslations);
+  return { ...modTranslations, ...researchTranslations };
 }
