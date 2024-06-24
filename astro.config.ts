@@ -3,11 +3,8 @@ import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
 import { defineConfig, squooshImageService } from 'astro/config';
 import icon from 'astro-icon';
-import { register } from 'swiper/element/bundle';
 
 import { minecoloniesSubmodule } from './integrations/minecolonies';
-
-register();
 
 // https://astro.build/config
 export default defineConfig({

@@ -62,9 +62,6 @@ importers:
       svelte:
         specifier: ^4.2.8
         version: 4.2.8
-      swiper:
-        specifier: ^11.1.0
-        version: 11.1.0
       vite:
         specifier: ^5.0.13
         version: 5.0.13(@types/node@20.8.9)(sass@1.72.0)
@@ -3457,10 +3454,6 @@ packages:
     resolution: {integrity: sha512-X4UZvLhOglD5Xrp834HzGHf8RKUW0Ahigg/08yRO1no9t2NxffOkMiQ0WmaMIbaGlVTlSst2zWANsdhz5ybXgA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
-
-  swiper@11.1.0:
-    resolution: {integrity: sha512-Pm78CgU7Wvg+w/MgIL/1NwMSLgx0XqFof25EnVyX8iZFCYJv5CppH7LHkBj43qW2k5Cp3Iz7FcdBxrox7XX2AQ==}
-    engines: {node: '>= 4.7.0'}
 
   synckit@0.8.5:
     resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}
@@ -7801,8 +7794,6 @@ snapshots:
       css-tree: 2.3.1
       csso: 5.0.5
       picocolors: 1.0.0
-
-  swiper@11.1.0: {}
 
   synckit@0.8.5:
     dependencies:
