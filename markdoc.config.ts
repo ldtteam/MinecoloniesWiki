@@ -62,7 +62,9 @@ export const config: AstroMarkdocConfig = {
 };
 
 for (const [name, buildingContentBlockTag] of Object.entries(buildingContentBlocks)) {
-  config.tags![`building_gui_content_block_${name.toLocaleLowerCase()}`] = buildingContentBlockTag;
+  if (config.tags) {
+    config.tags[`building_gui_content_block_${name.toLocaleLowerCase()}`] = buildingContentBlockTag;
+  }
 }
 
 export default defineMarkdocConfig(config);

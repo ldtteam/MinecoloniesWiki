@@ -1,59 +1,7 @@
-import { component, Markdoc } from '@astrojs/markdoc/config';
-import type { Config, Node } from '@markdoc/markdoc';
-import type { CollectionEntry } from 'astro:content';
+import { component } from '@astrojs/markdoc/config';
 
+import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
-
-function getItemAttributes(attributes: ReturnType<Node['transformAttributes']>, config: Config) {
-  const slug = config.variables?.slug as string;
-  const frontmatter = config.variables?.frontmatter as CollectionEntry<'wiki'>['data'] | undefined;
-  if (frontmatter?.type === 'item') {
-    if (Object.keys(attributes).includes('item')) {
-      return {
-        ...attributes,
-        currentPage: slug
-      };
-    }
-
-    return {
-      ...attributes,
-      currentPage: slug,
-      item: frontmatter.item.id
-    };
-  }
-
-  return {
-    currentPage: slug,
-    ...attributes
-  };
-}
-
-const itemTransform: Tag['transform'] = (node, config) => {
-  const attributes = getItemAttributes(node.transformAttributes(config), config);
-  const children = node.transformChildren(config);
-  return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
-};
-
-function getItemCombinedAttributes(attributes: ReturnType<Node['transformAttributes']>, config: Config) {
-  if (Object.keys(attributes).includes('items')) {
-    return attributes;
-  }
-
-  const frontmatter = config.variables?.frontmatter as CollectionEntry<'wiki'>['data'] | undefined;
-  if (frontmatter?.type === 'item-combined') {
-    return {
-      ...attributes,
-      items: frontmatter.items.map((item) => item.id)
-    };
-  }
-  return attributes;
-}
-
-const itemCombinedTransform: Tag['transform'] = (node, config) => {
-  const attributes = getItemCombinedAttributes(node.transformAttributes(config), config);
-  const children = node.transformChildren(config);
-  return new Markdoc.Tag(config.tags![node.tag!].render, attributes, children);
-};
 
 export const item: Tag = {
   render: component('@components/markdoc/names/items/Item.astro'),
@@ -64,7 +12,7 @@ export const item: Tag = {
       required: false
     }
   },
-  transform: itemTransform
+  transform: injectFrontmatter
 };
 
 export const item_infobox: Tag = {
@@ -75,7 +23,7 @@ export const item_infobox: Tag = {
       required: false
     }
   },
-  transform: itemTransform
+  transform: injectFrontmatter
 };
 
 export const item_combined_infobox: Tag = {
@@ -90,5 +38,5 @@ export const item_combined_infobox: Tag = {
       required: false
     }
   },
-  transform: itemCombinedTransform
+  transform: injectFrontmatter
 };

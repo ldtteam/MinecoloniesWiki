@@ -15,7 +15,7 @@ interface SectionGroupData {
   initialSection: { title: string; slug: string };
   sections: { title: string; slug: string }[];
   hasContent: boolean;
-  Content: (props: Record<string, any>) => AstroComponentFactory;
+  Content: (props: Record<string, unknown>) => AstroComponentFactory;
 }
 
 export async function getStaticPaths() {
@@ -108,7 +108,7 @@ const description = await getWikiDescription(entry);
             <hr class="dropdown-divider" />
           </li>
           {groupData.sections
-            .filter((section) => groupData!.data.initialSection.slug !== section.slug)
+            .filter((section) => groupData.data.initialSection.slug !== section.slug)
             .map(async (section) => (
               <li>
                 <a class="dropdown-item" href={`/wiki/${section.slug}`}>

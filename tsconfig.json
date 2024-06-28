@@ -12,6 +12,6 @@
     },
     "types": ["vite/client"]
   },
-  "include": ["src"],
-  "exclude": ["dist", "integrations"]
+  "include": ["src", "integrations", "astro.config.ts", "eslint.config.js", "markdoc.config.ts", "svelte.config.js"],
+  "exclude": [".astro", "dist", "minecolonies"]
 }

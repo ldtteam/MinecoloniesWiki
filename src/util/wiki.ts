@@ -145,18 +145,24 @@ export async function getWikiPages(): Promise<WikiPages> {
       );
     }
 
-    distributedPages.get(category)!.push(...(await extractPageTitles(entry)));
+    const pages = distributedPages.get(category);
+    if (pages !== undefined) {
+      pages.push(...(await extractPageTitles(entry)));
+    }
   }
 
   for (const worker of await getCollection('workers')) {
     const category = wikiCategories.find((f) => f.id === 'workers');
     const building = await getEntry('buildings', worker.data.primaryBuilding.id);
     if (category !== undefined) {
-      distributedPages.get(category)!.push({
-        type: 'page',
-        name: worker.data.name,
-        slug: 'buildings/' + building.id
-      });
+      const pages = distributedPages.get(category);
+      if (pages !== undefined) {
+        pages.push({
+          type: 'page',
+          name: worker.data.name,
+          slug: 'buildings/' + building.id
+        });
+      }
     }
   }
 

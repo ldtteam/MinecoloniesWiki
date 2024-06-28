@@ -32,7 +32,7 @@ ast = ast.reduce<Ast>((prev, curr) => {
     for (const splitItem of splitContent) {
       const match = /building:(?<building>\w+):?(?<plural>plural)?/g.exec(splitItem);
       if (match !== null && match.groups?.building !== undefined) {
-        prev.push({ type: 'building', building: match.groups!.building, plural: match.groups?.plural === 'plural' });
+        prev.push({ type: 'building', building: match.groups.building, plural: match.groups?.plural === 'plural' });
       } else {
         prev.push({ type: 'text', text: splitItem });
       }
@@ -49,7 +49,7 @@ ast = ast.reduce<Ast>((prev, curr) => {
     for (const splitItem of splitContent) {
       const match = /worker:(?<worker>\w+):?(?<plural>plural)?/g.exec(splitItem);
       if (match !== null && match.groups?.worker !== undefined) {
-        prev.push({ type: 'worker', worker: match.groups!.worker, plural: match.groups?.plural === 'plural' });
+        prev.push({ type: 'worker', worker: match.groups.worker, plural: match.groups?.plural === 'plural' });
       } else {
         prev.push({ type: 'text', text: splitItem });
       }

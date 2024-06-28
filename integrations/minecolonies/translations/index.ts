@@ -1,5 +1,5 @@
 import { getJsonFile } from '../file-manager';
-import { Translations } from './types';
+import type { Translations } from './types';
 
 export default async function getTranslations(): Promise<Translations | undefined> {
   const modTranslations = await getJsonFile<Translations>(
