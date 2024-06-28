@@ -9,8 +9,6 @@ interface Props {
 
 const { currentPage, page } = Astro.props;
 const itemData = await getItemData(page.item.id);
-
-console.log(currentPage);
 ---
 
 <VersionedItemName data={itemData} link={currentPage !== page.page.slug} />
