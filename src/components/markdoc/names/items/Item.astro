@@ -17,7 +17,6 @@ const itemPage = await getWikiPageForItem(itemId);
 if (itemPage === undefined) {
   throw new Error(`Wiki page for item '${itemId.namespace}/${itemId.id}' does not exist.`);
 }
-console.log(itemPage.type);
 ---
 
 {itemPage.type === 'direct' && <DirectItem currentPage={currentPage} page={itemPage} />}
