@@ -10,11 +10,7 @@
 
   const startDate = fromUnixTime(event.data.start);
   const endDate = fromUnixTime(event.data.end);
-
-  const hi = 'xss';
 </script>
-
-{@html hi}
 
 {#if clickable}
   <a href={`/events/${event.slug}`}>
