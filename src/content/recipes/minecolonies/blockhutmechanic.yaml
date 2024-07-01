@@ -29,7 +29,7 @@ row2:
     - minecraft/dark_oak_planks
     - minecraft/crimson_planks
     - minecraft/warped_planks
-  item2: minecraft/redstoneblock
+  item2: minecraft/redstone_block
   item3:
     - minecraft/oak_planks
     - minecraft/spruce_planks
