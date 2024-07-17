@@ -46,7 +46,7 @@ export const config: AstroMarkdocConfig = {
     },
     table: {
       ...nodes.table,
-      transform: extendNodeClasses('table', 'table-hover', 'table-fit')
+      transform: extendNodeClasses('table', 'table-hover')
     },
     blockquote: {
       ...nodes.blockquote,

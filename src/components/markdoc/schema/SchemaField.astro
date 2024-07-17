@@ -1,0 +1,28 @@
+---
+import { processDataText } from '@utils/processor';
+import { toTitleCase } from '@utils/string';
+import type { CollectionEntry } from 'astro:content';
+import type { SchemaFieldDefinition } from 'src/content/_wiki';
+
+interface Props {
+  field: string;
+  definition: SchemaFieldDefinition;
+  frontmatter: CollectionEntry<'wiki'>['data'];
+}
+
+const { field, definition, frontmatter } = Astro.props;
+const type =
+  typeof definition.type === 'string'
+    ? toTitleCase(definition.type)
+    : definition.type.map((type) => toTitleCase(type)).join(', ');
+
+const text = await processDataText(definition.description, frontmatter);
+---
+
+<tr>
+  <td style={{ whiteSpace: 'nowrap' }}><code>{field}</code></td>
+  <td>{type}</td>
+  <td>{definition.optional ? 'No' : 'Yes'}</td>
+  <td><code>{definition.default}</code></td>
+  <td><Fragment set:html={text} /></td>
+</tr>

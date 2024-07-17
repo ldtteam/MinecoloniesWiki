@@ -1,99 +1,26 @@
 ---
-import { createMarkdownProcessor } from '@astrojs/markdown-remark';
-import BuildingName from '@components/markdoc/names/BuildingName.astro';
-import WorkerName from '@components/markdoc/names/WorkerName.astro';
-import { getBuildingData } from '@utils/building';
+import { processDataText } from '@utils/processor';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  buildingId: string;
+  buildingId: CollectionEntry<'buildings'>['id'];
   setting: {
     name: string;
     description: string;
   };
 }
 
-type Ast = Array<
-  | { type: 'text'; text: string }
-  | { type: 'building'; building: string; plural: boolean }
-  | { type: 'worker'; worker: string; plural: boolean }
->;
-
 const { buildingId, setting } = Astro.props;
 
-const building = await getBuildingData(buildingId);
-const processor = await createMarkdownProcessor();
-const content = (await processor.render(setting.description)).code;
-
-let ast: Ast = [{ type: 'text', text: content }];
-
-ast = ast.reduce<Ast>((prev, curr) => {
-  if (curr.type === 'text') {
-    const splitContent = curr.text.split(/{(building:\w+:?(?:plural)?)}/g);
-    for (const splitItem of splitContent) {
-      const match = /building:(?<building>\w+):?(?<plural>plural)?/g.exec(splitItem);
-      if (match !== null && match.groups?.building !== undefined) {
-        prev.push({ type: 'building', building: match.groups.building, plural: match.groups?.plural === 'plural' });
-      } else {
-        prev.push({ type: 'text', text: splitItem });
-      }
-    }
-  } else {
-    prev.push(curr);
+const description = processDataText(setting.description, {
+  type: 'building',
+  building: {
+    id: buildingId,
+    collection: 'buildings'
   }
-  return prev;
-}, []);
-
-ast = ast.reduce<Ast>((prev, curr) => {
-  if (curr.type === 'text') {
-    const splitContent = curr.text.split(/{(worker:\w+:?(?:plural)?)}/g);
-    for (const splitItem of splitContent) {
-      const match = /worker:(?<worker>\w+):?(?<plural>plural)?/g.exec(splitItem);
-      if (match !== null && match.groups?.worker !== undefined) {
-        prev.push({ type: 'worker', worker: match.groups.worker, plural: match.groups?.plural === 'plural' });
-      } else {
-        prev.push({ type: 'text', text: splitItem });
-      }
-    }
-  } else {
-    prev.push(curr);
-  }
-  return prev;
-}, []);
+});
 ---
 
 <span>
-  <b>{setting.name}</b>:&nbsp;
-  <span class="description">
-    {
-      ast.map((astItem) => {
-        if (astItem.type === 'text') {
-          return <Fragment set:html={astItem.text} />;
-        }
-        if (astItem.type === 'building') {
-          return (
-            <BuildingName
-              frontmatter={{
-                type: 'building',
-                building: {
-                  collection: 'buildings',
-                  id: building.id
-                }
-              }}
-              name={astItem.building}
-              plural={astItem.plural}
-            />
-          );
-        }
-        if (astItem.type === 'worker') {
-          return <WorkerName name={astItem.worker} plural={astItem.plural} />;
-        }
-      })
-    }
-  </span>
-
-  <style>
-    .description > :global(p) {
-      display: inline;
-    }
-  </style>
+  <b>{setting.name}</b>: <Fragment set:html={description} />
 </span>

@@ -69,3 +69,22 @@ export function combineVersionedTitles(array: TitleVersionEntry[]): TitleVersion
     return prev;
   }, []);
 }
+
+type VersionedItems<T> = { item: T; versions: CollectionEntry<'versions'>[] }[];
+
+export async function groupDataByVersion<T>(
+  items: T[],
+  versionGetter: (item: T) => CollectionEntry<'versions'>
+): Promise<VersionedItems<T>> {
+  const map = items.reduce((prev, curr) => {
+    if (!prev.has(curr)) {
+      prev.set(curr, []);
+    }
+    prev.get(curr)?.push(versionGetter(curr));
+    return prev;
+  }, new Map<T, CollectionEntry<'versions'>[]>());
+  return Array.from(map.entries(), ([item, versions]) => ({
+    item,
+    versions
+  }));
+}

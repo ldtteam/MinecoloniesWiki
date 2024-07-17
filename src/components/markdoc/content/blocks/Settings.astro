@@ -20,13 +20,13 @@ const buildingData = await getBuildingData(name ?? buildingId ?? '');
         {buildingData.data.settings.map((setting) => (
           <>
             <li>
-              <SettingProcessor buildingId={buildingId ?? ''} setting={setting} />
+              <SettingProcessor buildingId={buildingData.id} setting={setting} />
             </li>
             {setting.options && (
               <ul>
                 {setting.options.map((option) => (
                   <li>
-                    <SettingProcessor buildingId={buildingId ?? ''} setting={option} />
+                    <SettingProcessor buildingId={buildingData.id} setting={option} />
                   </li>
                 ))}
               </ul>

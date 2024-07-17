@@ -4,11 +4,9 @@ import {
   getBuildingData,
   getBuildingIdFromFrontmatter,
   getBuildingLink,
-  getBuildingName,
+  groupBuildingDataByVersion,
   type MarkdocBuildingComponent
 } from '@utils/building';
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
 
 interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
@@ -18,34 +16,17 @@ const { frontmatter, name, plural = false } = Astro.props;
 
 const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
 const buildingData = await getBuildingData(name ?? buildingId ?? '');
-const versions = await getCollection('versions');
-
+const buildingNames = await groupBuildingDataByVersion(buildingData, (data) => (plural ? data.plural : data.name));
 const link = getBuildingLink(buildingData);
-const versionedContent = await Promise.all(
-  versions.map(async (version) => ({
-    version,
-    name: await getBuildingName(version, buildingData, plural)
-  }))
-);
-const versionedContentReduced = versionedContent.reduce<Record<string, CollectionEntry<'versions'>[]>>(
-  (previousValue, currentValue) => {
-    if (previousValue[currentValue.name] === undefined) {
-      previousValue[currentValue.name] = [];
-    }
-    previousValue[currentValue.name].push(currentValue.version);
-    return previousValue;
-  },
-  {}
-);
 ---
 
 {
-  Object.entries(versionedContentReduced).map(async ([name, versions]) => (
-    <VersionContent versions={versions} inline>
+  buildingNames.map(async (buildingName) => (
+    <VersionContent versions={buildingName.versions} inline>
       {frontmatter?.type !== 'building' || buildingId !== buildingData.id ? (
-        <a href={link}>{name}</a>
+        <a href={link}>{buildingName.item.data}</a>
       ) : (
-        <span>{name}</span>
+        <span>{buildingName.item.data}</span>
       )}
     </VersionContent>
   ))

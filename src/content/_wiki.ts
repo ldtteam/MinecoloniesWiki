@@ -264,3 +264,31 @@ export const metaCollection = defineCollection({
     })
   )
 });
+
+const schemaFieldTypeCore = z.enum(['string', 'integer', 'double', 'boolean', 'array']);
+const schemaFieldType = schemaFieldTypeCore.or(z.array(schemaFieldTypeCore));
+
+export type SchemaFieldTypeDefinition = z.infer<typeof schemaFieldType>;
+
+const schemaField = z.object({
+  type: schemaFieldType,
+  description: z.string(),
+  example: z.string(),
+  optional: z.boolean().default(false),
+  default: z.string().optional()
+});
+
+const schemaFieldWithChildren = schemaField.extend({
+  children: schemaField.array().optional()
+});
+
+export type SchemaFieldDefinition = z.infer<typeof schemaFieldWithChildren>;
+
+export const schemasCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    name: z.string(),
+    path: z.string(),
+    shape: z.record(schemaFieldWithChildren)
+  })
+});
