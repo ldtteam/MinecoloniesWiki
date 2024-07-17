@@ -29,6 +29,10 @@ const versions = await getSortedVersions();
 </div>
 
 <style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+  @import '../../../node_modules/bootstrap/scss/forms/_input-group.scss';
+  @import '../../../node_modules/bootstrap/scss/forms/_form-select.scss';
+
   select:has(option:checked.unsupported) {
     color: red;
   }

@@ -50,6 +50,9 @@ importers:
       astro-icon:
         specifier: 1.1.0
         version: 1.1.0
+      astro-purgecss:
+        specifier: ^4.1.1
+        version: 4.1.1(astro@4.11.3(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.2))(purgecss@6.0.0)
       bootstrap:
         specifier: ^5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
@@ -59,6 +62,9 @@ importers:
       minecraft-data:
         specifier: ^3.66.0
         version: 3.66.0
+      purgecss:
+        specifier: ^6.0.0
+        version: 6.0.0
       svelte:
         specifier: ^4.2.18
         version: 4.2.18
@@ -78,9 +84,6 @@ importers:
       '@types/archiver':
         specifier: ^6.0.2
         version: 6.0.2
-      '@types/bootstrap':
-        specifier: ^5.2.10
-        version: 5.2.10
       '@types/eslint-plugin-markdown':
         specifier: ^2.0.2
         version: 2.0.2
@@ -932,9 +935,6 @@ packages:
   '@types/babel__traverse@7.20.3':
     resolution: {integrity: sha512-Lsh766rGEFbaxMIDH7Qa+Yha8cMVI3qAK6CHt3OR0YfxOIn5Z54iHiyDRycHrBqeIiqGa20Kpsv1cavfBKkRSw==}
 
-  '@types/bootstrap@5.2.10':
-    resolution: {integrity: sha512-F2X+cd6551tep0MvVZ6nM8v7XgGN/twpdNDjqS1TUM7YFNEtQYWk+dKAnH+T1gr6QgCoGMPl487xw/9hXooa2g==}
-
   '@types/cheerio@0.22.35':
     resolution: {integrity: sha512-yD57BchKRvTV+JD53UZ6PD8KWY5g5rvvMLRnZR3EQBCZXiDT/HR+pKpMzFGlWNhFrXlo7VPZXtKvIEwZkAWOIA==}
 
@@ -1240,6 +1240,12 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
+  astro-purgecss@4.1.1:
+    resolution: {integrity: sha512-Lrtd+8iwznjQUBW1aqgdEYyc5xSgRa+Ir97EMsX17WvI6aVXGLoEWsVxQD9qtcGfLU5Qoq1hQOUKzVbCJSHcAg==}
+    peerDependencies:
+      astro: ^4.0.0
+      purgecss: ^6.0.0
+
   astro@4.11.3:
     resolution: {integrity: sha512-SuZbB/71XVn+WqWNCe7XOfHuqhS+k4gj8+A3wluTZQrORGaHUFRn/f8F9Tu5yESQZB1q8UKhahvHwkTV3AdVsg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
@@ -1451,6 +1457,10 @@ packages:
   commander@10.0.1:
     resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
     engines: {node: '>=14'}
+
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
 
   commander@7.2.0:
     resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
@@ -3010,6 +3020,10 @@ packages:
   pupa@3.1.0:
     resolution: {integrity: sha512-FLpr4flz5xZTSJxSeaheeMKN/EDzMdK7b8PTOC6a5PYFKTucWbdqjgqaEyH0shFiSJrVB1+Qqi4Tk19ccU6Aug==}
     engines: {node: '>=12.20'}
+
+  purgecss@6.0.0:
+    resolution: {integrity: sha512-s3EBxg5RSWmpqd0KGzNqPiaBbWDz1/As+2MzoYVGMqgDqRTLBhJW6sywfTBek7OwNfoS/6pS0xdtvChNhFj2cw==}
+    hasBin: true
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -4668,10 +4682,6 @@ snapshots:
     dependencies:
       '@babel/types': 7.24.7
 
-  '@types/bootstrap@5.2.10':
-    dependencies:
-      '@popperjs/core': 2.11.8
-
   '@types/cheerio@0.22.35':
     dependencies:
       '@types/node': 20.14.9
@@ -5075,6 +5085,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  astro-purgecss@4.1.1(astro@4.11.3(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.2))(purgecss@6.0.0):
+    dependencies:
+      astro: 4.11.3(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.2)
+      purgecss: 6.0.0
+
   astro@4.11.3(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.2):
     dependencies:
       '@astrojs/compiler': 2.8.1
@@ -5398,6 +5413,8 @@ snapshots:
   comma-separated-tokens@2.0.3: {}
 
   commander@10.0.1: {}
+
+  commander@12.1.0: {}
 
   commander@7.2.0: {}
 
@@ -5906,8 +5923,8 @@ snapshots:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 2.3.6
-      minimatch: 9.0.3
-      minipass: 5.0.0
+      minimatch: 9.0.5
+      minipass: 7.1.2
       path-scurry: 1.10.1
 
   glob@7.2.3:
@@ -6138,7 +6155,7 @@ snapshots:
 
   ignore-walk@6.0.5:
     dependencies:
-      minimatch: 9.0.3
+      minimatch: 9.0.5
 
   ignore@5.2.4: {}
 
@@ -7153,7 +7170,7 @@ snapshots:
   path-scurry@1.10.1:
     dependencies:
       lru-cache: 10.2.0
-      minipass: 5.0.0
+      minipass: 7.1.2
 
   path-to-regexp@6.2.2: {}
 
@@ -7256,6 +7273,13 @@ snapshots:
   pupa@3.1.0:
     dependencies:
       escape-goat: 4.0.0
+
+  purgecss@6.0.0:
+    dependencies:
+      commander: 12.1.0
+      glob: 10.3.10
+      postcss: 8.4.38
+      postcss-selector-parser: 6.1.0
 
   queue-microtask@1.2.3: {}
 

@@ -47,7 +47,7 @@ const recipes = buildingData.data.recipes ?? [];
     />
 
     <div class="text-center">
-      <Image src={buildingData.data.icon} alt={buildingData.data.name} width={300} />
+      <Image src={buildingData.data.icon} alt={buildingData.data.name} width={300} loading="eager" />
     </div>
 
     <RecipeGrid recipes={recipes} />
