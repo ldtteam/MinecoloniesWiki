@@ -2,7 +2,6 @@
 import BuildingInfobox from '@components/markdoc/infobox/BuildingInfobox.astro';
 import ItemCombinedInfobox from '@components/markdoc/infobox/ItemCombinedInfobox.astro';
 import ItemInfobox from '@components/markdoc/infobox/ItemInfobox.astro';
-import Wrapper from '@components/ui/infobox/Wrapper.astro';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -15,24 +14,21 @@ const { Content } = await page.render();
 
 {
   page.data.type === 'building' ? (
-    <Wrapper>
-      <BuildingInfobox slot="infobox" building={page.data.building.id} />
+    <BuildingInfobox building={page.data.building.id}>
       <Content slug={page.slug} frontmatter={page.data} />
-    </Wrapper>
+    </BuildingInfobox>
   ) : page.data.type === 'item' && (page.data.infobox?.show ?? true) ? (
-    <Wrapper>
-      <ItemInfobox slot="infobox" item={page.data.item.id} />
+    <ItemInfobox slot="infobox" item={page.data.item.id}>
       <Content slug={page.slug} frontmatter={page.data} />
-    </Wrapper>
+    </ItemInfobox>
   ) : page.data.type === 'item-combined' && (page.data.infobox?.show ?? true) ? (
-    <Wrapper>
-      <ItemCombinedInfobox
-        slot="infobox"
-        items={page.data.items.map((item) => item.id)}
-        cols={page.data.infobox?.cols ?? 2}
-      />
+    <ItemCombinedInfobox
+      slot="infobox"
+      items={page.data.items.map((item) => item.id)}
+      cols={page.data.infobox?.cols ?? 2}
+    >
       <Content slug={page.slug} frontmatter={page.data} />
-    </Wrapper>
+    </ItemCombinedInfobox>
   ) : (
     <Content slug={page.slug} frontmatter={page.data} />
   )

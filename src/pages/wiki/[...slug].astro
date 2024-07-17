@@ -1,4 +1,6 @@
 ---
+import '../../css/codeblock.scss';
+
 import Meta from '@components/Meta.astro';
 import PageContent from '@components/wiki/PageContent.astro';
 import Layout from '@layouts/Default.astro';
@@ -121,9 +123,7 @@ const description = await getWikiDescription(entry);
     )
   }
 
-  <div class="clearfix">
-    <PageContent page={entry} />
-  </div>
+  <PageContent page={entry} />
 
   <hr />
   <p class="text-center">
