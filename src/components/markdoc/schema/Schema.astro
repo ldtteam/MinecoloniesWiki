@@ -84,7 +84,6 @@ const json = await buildJson(schema, frontmatter);
 <script>
   function onLoad() {
     const schemas = document.getElementsByClassName('schema-parent');
-    console.log(schemas);
     for (const schema of schemas) {
       schema.querySelectorAll<HTMLInputElement>("input[name^='toggle']").forEach((input) => {
         input.addEventListener('change', () => swapContent(schema));
@@ -97,7 +96,6 @@ const json = await buildJson(schema, frontmatter);
     const checked = schema.querySelector<HTMLInputElement>('input:checked');
     schema.querySelectorAll('.content').forEach((element) => element.classList.remove('show'));
     schema.querySelector(`.content-${checked!.value}`)?.classList.add('show');
-    console.log(checked?.value);
   }
 
   document.addEventListener('astro:page-load', onLoad);

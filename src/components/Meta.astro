@@ -17,7 +17,7 @@ const { isWiki, title, description, image, imageAlt, imageWidth, imageHeight } =
 const defaultImage = isWiki ? WikiLogo : RegularLogo;
 
 const finalImage = image ?? defaultImage.src;
-const finalImageAlt = imageAlt ?? isWiki ? 'Minecolonies Wiki Logo' : 'Minecolonies Logo';
+const finalImageAlt = (imageAlt ?? isWiki) ? 'Minecolonies Wiki Logo' : 'Minecolonies Logo';
 const finalImageWidth = imageWidth ?? defaultImage.width;
 const finalImageHeight = imageHeight ?? defaultImage.height;
 

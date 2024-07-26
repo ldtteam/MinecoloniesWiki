@@ -8,6 +8,7 @@ import { workerPlugin } from './worker';
 export async function processDataText(text: string, frontmatter: CollectionEntry<'wiki'>['data']) {
   const processor = await createMarkdownProcessor({
     remarkPlugins: [remarkDirective, buildingPlugin(frontmatter), workerPlugin(frontmatter)],
+    syntaxHighlight: 'shiki',
     shikiConfig: {
       theme: 'css-variables',
       wrap: true
