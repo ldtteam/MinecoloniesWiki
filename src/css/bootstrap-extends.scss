@@ -81,7 +81,8 @@
     0px 1px 8px 0px #e0d2ae;
   border: 2px solid #e0d2ae;
 
-  & > *:last-child {
+  & p:last-child {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
