@@ -54,39 +54,25 @@ export async function getWorkerData(worker: string) {
   return workerData;
 }
 
-export async function getWorkerName(
-  workerData: CollectionEntry<'workers'>,
-  version: CollectionEntry<'versions'>,
-  plural = false
-) {
-  return await getWorkerDataForVersion(workerData, version, (data) => (plural ? data.plural : data.name));
-}
-
-type WorkerDataMinimal = Omit<CollectionEntry<'workers'>['data'], 'overrides'>;
-
-export async function groupWorkerDataByVersion<T>(
-  buildingData: CollectionEntry<'workers'>,
-  fieldGetter: (data: WorkerDataMinimal) => T
-) {
+export async function groupWorkerDataByVersion(buildingData: CollectionEntry<'workers'>) {
   const versions = await getCollection('versions');
   return groupDataByVersion(
     await Promise.all(
       versions.map(async (version) => ({
         version,
-        data: await getWorkerDataForVersion(buildingData, version, fieldGetter)
+        data: await getWorkerDataForVersion(buildingData, version)
       }))
     ),
-    (name) => name.version
+    (item) => item.id
   );
 }
 
-export async function getWorkerDataForVersion<T>(
+export async function getWorkerDataForVersion(
   workerData: CollectionEntry<'workers'>,
-  version: CollectionEntry<'versions'>,
-  fieldGetter: (data: WorkerDataMinimal) => T
-) {
+  version: CollectionEntry<'versions'>
+): Promise<CollectionEntry<'workers'>> {
   if (!workerData.data.overrides) {
-    return fieldGetter(workerData.data);
+    return workerData;
   }
 
   let overrides: Partial<CollectionEntry<'workers'>['data']> | undefined = undefined;
@@ -98,10 +84,11 @@ export async function getWorkerDataForVersion<T>(
     overrides = versionData;
   }
 
-  const splicedData: WorkerDataMinimal = {
-    ...workerData.data,
-    ...overrides
+  return {
+    ...workerData,
+    data: {
+      ...workerData.data,
+      ...overrides
+    }
   };
-
-  return fieldGetter(splicedData);
 }

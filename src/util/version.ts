@@ -42,49 +42,40 @@ export async function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
   return results[0];
 }
 
-interface TitleVersionEntry {
-  title: string;
-  version: CollectionEntry<'versions'>;
-}
-
-export interface TitleVersionItem {
-  title: string;
+interface VersionedItem<T> {
+  item: T;
   versions: CollectionEntry<'versions'>[];
 }
 
-export type TitleVersions = TitleVersionItem[];
+type VersionedItems<T> = VersionedItem<T>[];
 
-export function combineVersionedTitles(array: TitleVersionEntry[]): TitleVersions {
-  const cache: Record<string, number> = {};
-
-  return array.reduce<TitleVersions>((prev, curr) => {
-    if (cache[curr.title] === undefined) {
-      const index = prev.push({
-        title: curr.title,
-        versions: []
-      });
-      cache[curr.title] = index - 1;
-    }
-    prev[cache[curr.title]].versions.push(curr.version);
-    return prev;
-  }, []);
+export interface VersionObjectEntry<T> {
+  version: CollectionEntry<'versions'>;
+  data: T;
 }
 
-type VersionedItems<T> = { item: T; versions: CollectionEntry<'versions'>[] }[];
-
-export async function groupDataByVersion<T>(
-  items: T[],
-  versionGetter: (item: T) => CollectionEntry<'versions'>
-): Promise<VersionedItems<T>> {
-  const map = items.reduce((prev, curr) => {
-    if (!prev.has(curr)) {
-      prev.set(curr, []);
+/**
+ * Groups data depending on a custom equality token. When data is considered equal, their versions are merged.
+ * @param items the array of items.
+ * @param getEqualityToken a function to return a hash of the object, used for checking equality
+ * @returns
+ */
+export function groupDataByVersion<T>(items: VersionObjectEntry<T>[], getHash: (item: T) => string): VersionedItems<T> {
+  const indexes = new Map<string, number>();
+  return items.reduce<VersionedItems<T>>((prev, curr) => {
+    const id = getHash(curr.data);
+    if (!indexes.has(id)) {
+      const index = prev.push({
+        item: curr.data,
+        versions: []
+      });
+      indexes.set(id, index - 1);
     }
-    prev.get(curr)?.push(versionGetter(curr));
+
+    const index = indexes.get(id);
+    if (index !== undefined) {
+      prev[index].versions.push(curr.version);
+    }
     return prev;
-  }, new Map<T, CollectionEntry<'versions'>[]>());
-  return Array.from(map.entries(), ([item, versions]) => ({
-    item,
-    versions
-  }));
+  }, []);
 }

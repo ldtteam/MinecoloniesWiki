@@ -16,17 +16,17 @@ const { frontmatter, name, plural = false } = Astro.props;
 
 const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
 const buildingData = await getBuildingData(name ?? buildingId ?? '');
-const buildingNames = await groupBuildingDataByVersion(buildingData, (data) => (plural ? data.plural : data.name));
+const buildingDataPerVersion = await groupBuildingDataByVersion(buildingData);
 const link = getBuildingLink(buildingData);
 ---
 
 {
-  buildingNames.map(async (buildingName) => (
-    <VersionContent versions={buildingName.versions} inline>
+  buildingDataPerVersion.map(async (building) => (
+    <VersionContent versions={building.versions} inline>
       {frontmatter?.type !== 'building' || buildingId !== buildingData.id ? (
-        <a href={link}>{buildingName.item.data}</a>
+        <a href={link}>{plural ? building.item.data.plural : building.item.data.name}</a>
       ) : (
-        <span>{buildingName.item.data}</span>
+        <span>{plural ? building.item.data.plural : building.item.data.name}</span>
       )}
     </VersionContent>
   ))

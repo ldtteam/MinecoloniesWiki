@@ -20,7 +20,7 @@ async function processWorker(frontmatter: CollectionEntry<'wiki'>['data'], node:
 
   const workerId = await getWorkerIdFromFrontmatter(frontmatter);
   const workerData = await getWorkerData(name);
-  const WorkerNames = await groupWorkerDataByVersion(workerData, (data) => (plural ? data.plural : data.name));
+  const workerDataPerVersion = await groupWorkerDataByVersion(workerData);
   const referenceBuilding = await getWorkerReferenceBuilding(building, frontmatter, workerData);
 
   data.hName = frontmatter?.type !== 'building' || workerId !== workerData.id ? 'a' : 'span';
@@ -29,17 +29,17 @@ async function processWorker(frontmatter: CollectionEntry<'wiki'>['data'], node:
       href: getBuildingLink(referenceBuilding)
     };
   }
-  data.hChildren = WorkerNames.map((buildingName) => ({
+  data.hChildren = workerDataPerVersion.map((worker) => ({
     type: 'element',
     tagName: 'span',
     children: [
       {
         type: 'text',
-        value: buildingName.item.data
+        value: plural ? worker.item.data.plural : worker.item.data.name
       }
     ],
     properties: {
-      'data-versions': buildingName.versions.map((version) => version.data.order).join(',')
+      'data-versions': worker.versions.map((version) => version.data.order).join(',')
     }
   }));
 }

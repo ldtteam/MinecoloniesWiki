@@ -87,7 +87,7 @@ const json = await buildJson(schema, frontmatter);
     console.log(schemas);
     for (const schema of schemas) {
       schema.querySelectorAll<HTMLInputElement>("input[name^='toggle']").forEach((input) => {
-        input.addEventListener('change', (ev) => swapContent(schema));
+        input.addEventListener('change', () => swapContent(schema));
       });
       swapContent(schema);
     }

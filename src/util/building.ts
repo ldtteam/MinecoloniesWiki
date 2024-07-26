@@ -32,31 +32,25 @@ export function getBuildingLink(building: CollectionEntry<'buildings'>) {
   return `/wiki/buildings/${building.id}`;
 }
 
-type BuildingDataMinimal = Omit<CollectionEntry<'buildings'>['data'], 'overrides'>;
-
-export async function groupBuildingDataByVersion<T>(
-  buildingData: CollectionEntry<'buildings'>,
-  fieldGetter: (data: BuildingDataMinimal) => T
-) {
+export async function groupBuildingDataByVersion(buildingData: CollectionEntry<'buildings'>) {
   const versions = await getCollection('versions');
   return groupDataByVersion(
     await Promise.all(
       versions.map(async (version) => ({
         version,
-        data: await getBuildingDataForVersion(buildingData, version, fieldGetter)
+        data: await getBuildingDataForVersion(buildingData, version)
       }))
     ),
-    (name) => name.version
+    (item) => item.id
   );
 }
 
-export async function getBuildingDataForVersion<T>(
+export async function getBuildingDataForVersion(
   buildingData: CollectionEntry<'buildings'>,
-  version: CollectionEntry<'versions'>,
-  fieldGetter: (data: BuildingDataMinimal) => T
-) {
+  version: CollectionEntry<'versions'>
+): Promise<CollectionEntry<'buildings'>> {
   if (!buildingData.data.overrides) {
-    return fieldGetter(buildingData.data);
+    return buildingData;
   }
 
   let overrides: Partial<CollectionEntry<'buildings'>['data']> | undefined = undefined;
@@ -68,10 +62,11 @@ export async function getBuildingDataForVersion<T>(
     overrides = versionData;
   }
 
-  const splicedData: BuildingDataMinimal = {
-    ...buildingData.data,
-    ...overrides
+  return {
+    ...buildingData,
+    data: {
+      ...buildingData.data,
+      ...overrides
+    }
   };
-
-  return fieldGetter(splicedData);
 }

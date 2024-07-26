@@ -2,7 +2,14 @@ import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getBuildingData, getBuildingDataForVersion } from './building';
 import { getItemData } from './items';
-import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
+import { groupDataByVersion } from './version';
+
+export interface TitleVersionItem {
+  title: string;
+  versions: CollectionEntry<'versions'>[];
+}
+
+type TitleVersions = TitleVersionItem[];
 
 export type Title = string | TitleVersions;
 
@@ -51,15 +58,16 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
     return await getSectionTitle(entry, true);
   } else if (entry.data.type === 'building') {
     const buildingData = await getBuildingData(entry.data.building.id);
-
-    return combineVersionedTitles(
-      await Promise.all(
-        versions.map(async (version) => ({
-          version,
-          title: await getBuildingDataForVersion(buildingData, version, (data) => data.name)
-        }))
-      )
+    const buildingNames = await Promise.all(
+      versions.map(async (version) => ({
+        version,
+        data: (await getBuildingDataForVersion(buildingData, version)).data.name
+      }))
     );
+    return groupDataByVersion(buildingNames, (item) => item).map((item) => ({
+      title: item.item,
+      versions: item.versions
+    }));
   }
 
   return entry.id;

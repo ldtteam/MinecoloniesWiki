@@ -18,7 +18,7 @@ async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], nod
 
   const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
   const buildingData = await getBuildingData(name);
-  const buildingNames = await groupBuildingDataByVersion(buildingData, (data) => (plural ? data.plural : data.name));
+  const buildingDataPerVersion = await groupBuildingDataByVersion(buildingData);
 
   data.hName = frontmatter?.type !== 'building' || buildingId !== buildingData.id ? 'a' : 'span';
   if (data.hName === 'a') {
@@ -26,17 +26,17 @@ async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], nod
       href: getBuildingLink(buildingData)
     };
   }
-  data.hChildren = buildingNames.map((buildingName) => ({
+  data.hChildren = buildingDataPerVersion.map((building) => ({
     type: 'element',
     tagName: 'span',
     children: [
       {
         type: 'text',
-        value: buildingName.item.data
+        value: plural ? building.item.data.plural : building.item.data.name
       }
     ],
     properties: {
-      'data-versions': buildingName.versions.map((version) => version.data.order).join(',')
+      'data-versions': building.versions.map((version) => version.data.order).join(',')
     }
   }));
 }

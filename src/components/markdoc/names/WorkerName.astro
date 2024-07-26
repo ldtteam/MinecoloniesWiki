@@ -19,18 +19,18 @@ const { frontmatter, name, building, plural = false } = Astro.props;
 const workerId = await getWorkerIdFromFrontmatter(frontmatter);
 const workerTarget = name ?? workerId ?? '';
 const workerData = await getWorkerData(workerTarget);
-const workerNames = await groupWorkerDataByVersion(workerData, (data) => (plural ? data.plural : data.name));
+const workerDataPerVersion = await groupWorkerDataByVersion(workerData);
 const buildingData = await getWorkerReferenceBuilding(building, frontmatter, workerData);
 const buildingLink = getBuildingLink(buildingData);
 ---
 
 {
-  workerNames.map(async (workerName) => (
-    <VersionContent versions={workerName.versions} inline>
+  workerDataPerVersion.map(async (worker) => (
+    <VersionContent versions={worker.versions} inline>
       {frontmatter?.type !== 'building' || workerId !== workerData.id ? (
-        <a href={buildingLink}>{workerName.item.data}</a>
+        <a href={buildingLink}>{plural ? worker.item.data.plural : worker.item.data.name}</a>
       ) : (
-        <span>{workerName.item.data}</span>
+        <span>{plural ? worker.item.data.plural : worker.item.data.name}</span>
       )}
     </VersionContent>
   ))
