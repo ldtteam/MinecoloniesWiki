@@ -1,24 +1,18 @@
 ---
 import { processDataText } from '@utils/processor';
-import type { CollectionEntry } from 'astro:content';
+import type { WikiPageData } from '@utils/wiki';
 
 interface Props {
-  buildingId: CollectionEntry<'buildings'>['id'];
+  building: WikiPageData<'building'>;
   setting: {
     name: string;
     description: string;
   };
 }
 
-const { buildingId, setting } = Astro.props;
+const { building, setting } = Astro.props;
 
-const description = processDataText(setting.description, {
-  type: 'building',
-  building: {
-    id: buildingId,
-    collection: 'buildings'
-  }
-});
+const description = processDataText(setting.description, building);
 ---
 
 <span>

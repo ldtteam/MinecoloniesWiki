@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"avoid","name":"Evade","requirements":[{"type":"building","building":"guardtower","level":8},{"type":"item","items":["minecraft/emerald"],"quantity":16}],"effects":{"fleeingspeedaddition":2},"researchLevel":4}
+{"tree":"combat","parent":"avoid","name":"Evade","requirements":[{"type":"building","building":"buildings/guardtower","level":8},{"type":"item","items":["minecraft/emerald"],"quantity":16}],"effects":{"fleeingspeedaddition":2},"researchLevel":4}

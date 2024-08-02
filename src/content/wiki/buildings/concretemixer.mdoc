@@ -1,6 +1,22 @@
 ---
 type: building
-building: concretemixer
+id: concretemixer
+name: Concrete Mixer's Hut
+plural: Concrete Mixer Huts
+description: The Concrete Mixer is responsible for creating concrete powder and concrete in your colony.
+icon: "@assets/images/wiki/items/minecolonies/blockhutconcretemixer.png"
+workers:
+  - concretemixer
+recipes:
+  - minecolonies/blockhutconcretemixer
+settings:
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 ---
 
 The {% building /%} will craft all types of concrete powder and place them in flowing water (built in to their hut), then mine the resulting concrete. The {% building /%} will only make concrete and concrete powder when they receive a request for a block and have the needed materials. (All their recipes are pretaught.)

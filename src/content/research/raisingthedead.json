@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"resurrectchance2","name":"Raising The Dead","requirements":[{"type":"building","building":"graveyard","level":5},{"type":"item","items":["minecraft/totem_of_undying"],"quantity":1}],"effects":{"usetotemunlock":1},"researchLevel":4}
+{"tree":"civilian","parent":"resurrectchance2","name":"Raising The Dead","requirements":[{"type":"building","building":"buildings/graveyard","level":5},{"type":"item","items":["minecraft/totem_of_undying"],"quantity":1}],"effects":{"usetotemunlock":1},"researchLevel":4}

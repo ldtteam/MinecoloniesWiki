@@ -3,7 +3,7 @@ import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import minecraftData, { type Item } from 'minecraft-data';
 
-import { isWikiPageOfType, type WikiPageEntry } from './util';
+import { isWikiPageOfType, type WikiPageEntry } from './wiki';
 
 interface ParsedItemId {
   namespace: string;
@@ -96,7 +96,7 @@ async function extractWikiPageData(
       };
     }
   }
-  if (isWikiPageOfType(page, 'building') && name.id === 'blockhut' + page.data.building.id) {
+  if (isWikiPageOfType(page, 'building') && name.id === 'blockhut' + page.data.id) {
     const itemData = await getEntry('items', name.namespace + '/' + name.id);
     if (itemData !== undefined) {
       return {

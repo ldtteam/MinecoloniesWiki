@@ -1,1 +1,1 @@
-{"tree":"technology","name":"Woodwork","requirements":[{"type":"building","building":"lumberjack","level":3},{"type":"item","items":["Any Planks"],"quantity":64}],"effects":{"blockhutsawmill":1},"researchLevel":1}
+{"tree":"technology","name":"Woodwork","requirements":[{"type":"building","building":"buildings/lumberjack","level":3},{"type":"item","items":["Any Planks"],"quantity":64}],"effects":{"blockhutsawmill":1},"researchLevel":1}

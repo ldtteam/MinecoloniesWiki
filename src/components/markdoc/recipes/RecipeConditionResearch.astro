@@ -1,0 +1,15 @@
+---
+import type { CraftingConditionResearch } from 'src/content/_wiki';
+
+import ResearchLink from '../research/ResearchLink.astro';
+
+interface Props {
+  condition: CraftingConditionResearch;
+}
+
+const { condition } = Astro.props;
+---
+
+<li>
+  Requires research <ResearchLink name={condition.research.id} />
+</li>

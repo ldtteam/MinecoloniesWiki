@@ -1,31 +1,14 @@
-import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 
 import { groupDataByVersion, isVersionHigherOrSame } from './version';
-import { getWikiPage, type WikiPageEntry } from './wiki';
+import { type WikiPageData, type WikiPageEntry } from './wiki';
 
 export interface MarkdocBuildingComponent {
-  frontmatter?: CollectionEntry<'wiki'>['data'];
+  frontmatter: CollectionEntry<'wiki'>['data'];
   name?: string;
 }
 
-/**
- * Obtain the building data based on the building key, if the building does not exist, throw an error.
- * @param building the building key.
- * @returns the building data.
- */
-export async function getBuildingData(building: string) {
-  const buildingData = await getWikiPage('building', 'buildings', building);
-  if (buildingData === undefined) {
-    throw Error(`Building entry "${building}" does not exist.`);
-  }
-  return buildingData;
-}
-
-export function getBuildingLink(building: CollectionEntry<'buildings'>) {
-  return `/wiki/buildings/${building.id}`;
-}
-
-export async function groupBuildingDataByVersion(buildingData: CollectionEntry<'buildings'>) {
+export async function groupBuildingDataByVersion(buildingData: WikiPageData<'building'>) {
   const versions = await getCollection('versions');
   return groupDataByVersion(
     await Promise.all(
@@ -39,15 +22,15 @@ export async function groupBuildingDataByVersion(buildingData: CollectionEntry<'
 }
 
 export async function getBuildingDataForVersion(
-  buildingData: CollectionEntry<'buildings'>,
+  buildingData: WikiPageData<'building'>,
   version: CollectionEntry<'versions'>
-): Promise<CollectionEntry<'buildings'>> {
-  if (!buildingData.data.overrides) {
+): Promise<WikiPageData<'building'>> {
+  if (!buildingData.overrides) {
     return buildingData;
   }
 
-  let overrides: Partial<CollectionEntry<'buildings'>['data']> | undefined = undefined;
-  for (const versionData of buildingData.data.overrides) {
+  let overrides: Partial<WikiPageEntry<'building'>['data']> | undefined = undefined;
+  for (const versionData of buildingData.overrides) {
     if (!(await isVersionHigherOrSame(version, versionData.version.id))) {
       break;
     }
@@ -57,9 +40,6 @@ export async function getBuildingDataForVersion(
 
   return {
     ...buildingData,
-    data: {
-      ...buildingData.data,
-      ...overrides
-    }
+    ...overrides
   };
 }

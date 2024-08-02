@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Athletics
     effect: Faster planting and harvesting
-primaryBuilding: farmer
+primaryBuilding: buildings/farmer

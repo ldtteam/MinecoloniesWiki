@@ -1,0 +1,17 @@
+---
+import BuildingName from '@components/wiki/BuildingName.astro';
+import { getWikiPage } from '@utils/wiki';
+import type { ResearchEffectBuilding } from 'src/content/_research';
+
+interface Props {
+  effect: ResearchEffectBuilding;
+}
+
+const { effect } = Astro.props;
+
+const building = await getWikiPage('building', effect.building.slug);
+---
+
+<span>
+  Unlocks <BuildingName building={building} />
+</span>

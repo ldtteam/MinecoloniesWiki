@@ -1,1 +1,1 @@
-{"tree":"civilian","name":"Higher Learning","requirements":[{"type":"building","building":"residence","level":3},{"type":"item","items":["minecraft/book"],"quantity":3}],"effects":{"blockhutschool":1},"researchLevel":1}
+{"tree":"civilian","name":"Higher Learning","requirements":[{"type":"building","building":"buildings/residence","level":3},{"type":"item","items":["minecraft/book"],"quantity":3}],"effects":{"blockhutschool":1},"researchLevel":1}

@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Dexterity
     effect: Faster crafting and smelting
-primaryBuilding: baker
+primaryBuilding: buildings/baker

@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Adaptability
     effect: Affects wait time between checking hives
-primaryBuilding: beekeeper
+primaryBuilding: buildings/beekeeper

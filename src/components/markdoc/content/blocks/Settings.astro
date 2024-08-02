@@ -1,6 +1,6 @@
 ---
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import { getBuildingData, getBuildingIdFromFrontmatter } from '@utils/building';
+import { getWikiPage, isWikiDataOfType } from '@utils/wiki';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 import SettingProcessor from './SettingProcessor.astro';
@@ -9,24 +9,27 @@ type Props = BaseBuildingContentBlockProps;
 
 const { frontmatter, name } = Astro.props;
 
-const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
-const buildingData = await getBuildingData(name ?? buildingId ?? '');
+const buildingId = isWikiDataOfType(frontmatter, 'building') ? frontmatter.id : name;
+const buildingPage = await getWikiPage('building', 'buildings/' + buildingId);
+if (buildingPage === undefined) {
+  throw Error(`Building id ${buildingId} does not exist.`);
+}
 ---
 
 {
-  buildingData.data.settings && (
+  buildingPage.data.settings && (
     <BuildingContentBlock {...Astro.props} header="settings" imageKey="settings" imageAlt="Settings">
       <ul>
-        {buildingData.data.settings.map((setting) => (
+        {buildingPage.data.settings.map((setting) => (
           <>
             <li>
-              <SettingProcessor buildingId={buildingData.id} setting={setting} />
+              <SettingProcessor building={buildingPage.data} setting={setting} />
             </li>
             {setting.options && (
               <ul>
                 {setting.options.map((option) => (
                   <li>
-                    <SettingProcessor buildingId={buildingData.id} setting={option} />
+                    <SettingProcessor building={buildingPage.data} setting={option} />
                   </li>
                 ))}
               </ul>

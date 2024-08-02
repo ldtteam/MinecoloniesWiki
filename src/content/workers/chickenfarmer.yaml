@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Agility
     effect: Greater chance to successfully hit chicken
-primaryBuilding: chickenfarmer
+primaryBuilding: buildings/chickenfarmer

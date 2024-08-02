@@ -1,8 +1,12 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import { getBuildingData, getBuildingLink } from '@utils/building';
-import { getWorkerData, getWorkerIdFromFrontmatter, getWorkerName, type MarkdocWorkerComponent } from '@utils/workers';
-import { type CollectionEntry, getCollection } from 'astro:content';
+import {
+  getWorkerData,
+  getWorkerIdFromFrontmatter,
+  getWorkerReferenceBuilding,
+  groupWorkerDataByVersion,
+  type MarkdocWorkerComponent
+} from '@utils/workers';
 
 interface Props extends MarkdocWorkerComponent {
   building?: string;
@@ -15,15 +19,14 @@ const workerId = await getWorkerIdFromFrontmatter(frontmatter);
 const workerTarget = name ?? workerId ?? '';
 const workerData = await getWorkerData(workerTarget);
 const workerDataPerVersion = await groupWorkerDataByVersion(workerData);
-const buildingData = await getWorkerReferenceBuilding(building, frontmatter, workerData);
-const buildingLink = getBuildingLink(buildingData);
+const buildingData = await getWorkerReferenceBuilding(building, workerData);
 ---
 
 {
   workerDataPerVersion.map(async (worker) => (
     <VersionContent versions={worker.versions} inline>
       {frontmatter?.type !== 'building' || workerId !== workerData.id ? (
-        <a href={buildingLink}>{plural ? worker.item.data.plural : worker.item.data.name}</a>
+        <a href={'/wiki/' + buildingData.slug}>{plural ? worker.item.data.plural : worker.item.data.name}</a>
       ) : (
         <span>{plural ? worker.item.data.plural : worker.item.data.name}</span>
       )}

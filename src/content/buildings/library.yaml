@@ -1,8 +1,0 @@
-name: Library
-plural: Libraries
-description: The Library is where your citizens can come to study, increasing their intelligence. This will make them more efficient learning other skills.
-icon: "@assets/images/wiki/items/minecolonies/blockhutlibrary.png"
-workers:
-  - librarystudent
-recipes:
-  - minecolonies/blockhutlibrary

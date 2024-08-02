@@ -1,10 +1,6 @@
 import type { RemarkPlugin } from '@astrojs/markdown-remark';
-import {
-  getBuildingData,
-  getBuildingIdFromFrontmatter,
-  getBuildingLink,
-  groupBuildingDataByVersion
-} from '@utils/building';
+import { groupBuildingDataByVersion } from '@utils/building';
+import { getWikiPage } from '@utils/wiki';
 import type { CollectionEntry } from 'astro:content';
 import type { TextDirective } from 'mdast-util-directive';
 import type { LeafDirective } from 'node_modules/mdast-util-directive/lib';
@@ -16,14 +12,16 @@ async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], nod
   const name = attributes.name ?? '';
   const plural = Boolean(attributes.plural ?? false);
 
-  const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
-  const buildingData = await getBuildingData(name);
-  const buildingDataPerVersion = await groupBuildingDataByVersion(buildingData);
+  const buildingData = await getWikiPage('building', 'buildings/' + name);
+  if (buildingData === undefined) {
+    throw Error(`Building with id ${name} does not exist.`);
+  }
+  const buildingDataPerVersion = await groupBuildingDataByVersion(buildingData.data);
 
-  data.hName = frontmatter?.type !== 'building' || buildingId !== buildingData.id ? 'a' : 'span';
+  data.hName = frontmatter.type !== 'building' || frontmatter.id !== buildingData.id ? 'a' : 'span';
   if (data.hName === 'a') {
     data.hProperties = {
-      href: getBuildingLink(buildingData)
+      href: '/wiki/' + buildingData.slug
     };
   }
   data.hChildren = buildingDataPerVersion.map((building) => ({
@@ -32,7 +30,7 @@ async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], nod
     children: [
       {
         type: 'text',
-        value: plural ? building.item.data.plural : building.item.data.name
+        value: plural ? building.item.plural : building.item.name
       }
     ],
     properties: {

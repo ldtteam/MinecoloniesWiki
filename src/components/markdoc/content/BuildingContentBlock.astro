@@ -1,6 +1,6 @@
 ---
 import ContentBlock from '@components/ui/content/ContentBlock.astro';
-import { getBuildingIdFromFrontmatter } from '@utils/building';
+import { isWikiDataOfType } from '@utils/wiki';
 import { Image } from 'astro:assets';
 
 import type { BaseBuildingContentBlockProps } from './types';
@@ -15,9 +15,11 @@ const TAB_INDEXES = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'se
 
 const { frontmatter, order = 1, cols, header, imageKey, imageAlt } = Astro.props;
 
-const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
+if (!isWikiDataOfType(frontmatter, 'building')) {
+  throw Error('Building content block attempted to be used in a non building page, this is not possible.');
+}
 
-const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${buildingId}/${imageKey}.png`).then(
+const importedImage = await import(`../../../assets/images/wiki/gui/buildings/${frontmatter.id}/${imageKey}.png`).then(
   (f) => f.default
 );
 ---

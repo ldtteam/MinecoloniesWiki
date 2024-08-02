@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"biodegradable","name":"Flower Power","requirements":[{"type":"building","building":"composter","level":3},{"type":"item","items":["minecolonies/compost"],"quantity":64}],"effects":{"blockhutflorist":1},"researchLevel":2}
+{"tree":"technology","parent":"biodegradable","name":"Flower Power","requirements":[{"type":"building","building":"buildings/composter","level":3},{"type":"item","items":["minecolonies/compost"],"quantity":64}],"effects":{"blockhutflorist":1},"researchLevel":2}

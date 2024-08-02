@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"duelist","name":"Provost","requirements":[{"type":"building","building":"combatacademy","level":5},{"type":"item","items":["minecraft/diamond"],"quantity":16}],"effects":{"meleearmormultiplier":4},"researchLevel":5}
+{"tree":"combat","parent":"duelist","name":"Provost","requirements":[{"type":"building","building":"buildings/combatacademy","level":5},{"type":"item","items":["minecraft/diamond"],"quantity":16}],"effects":{"meleearmormultiplier":4},"researchLevel":5}

@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"parry","name":"Riposte","requirements":[{"type":"building","building":"combatacademy","level":1},{"type":"item","items":["minecraft/iron_ingot"],"quantity":32}],"effects":{"meleearmormultiplier":2},"researchLevel":3}
+{"tree":"combat","parent":"parry","name":"Riposte","requirements":[{"type":"building","building":"buildings/combatacademy","level":1},{"type":"item","items":["minecraft/iron_ingot"],"quantity":32}],"effects":{"meleearmormultiplier":2},"researchLevel":3}

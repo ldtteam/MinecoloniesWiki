@@ -1,8 +1,0 @@
-name: Cookery
-plural: Cookeries
-description: The Cookery is where food for your colonists will be cooked.
-icon: "@assets/images/wiki/items/minecolonies/blockhutkitchen.png"
-workers:
-  - chef
-recipes:
-  - minecolonies/blockhutkitchen

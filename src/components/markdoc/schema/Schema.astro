@@ -13,10 +13,19 @@ const id = uuidv4();
 const fields = Object.entries(schema.data.shape);
 const frontmatter: CollectionEntry<'wiki'>['data'] = {
   type: 'building',
-  building: {
-    id: 'alchemist',
-    collection: 'buildings'
-  }
+  id: 'alchemist',
+  name: 'Alchemist Laboratory',
+  plural: 'Alchemist Laboratories',
+  description:
+    'The Alchemist Laboratory is where your workers can brew potions, harvest netherwart and harvest mistletoe.',
+  icon: {
+    src: '@assets/images/wiki/items/minecolonies/blockhutalchemist.png',
+    width: 1,
+    height: 1,
+    format: 'png'
+  },
+  workers: [{ collection: 'workers', id: 'alchemist' }],
+  recipes: ['minecolonies/blockhutalchemist']
 };
 
 const json = await buildJson(schema, frontmatter);

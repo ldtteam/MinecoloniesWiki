@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"rockingroll","name":"Knowledge of the Depth","requirements":[{"type":"building","building":"crusher","level":3},{"type":"item","items":["minecraft/deepslate"],"quantity":64}],"effects":{"knowledgeofthedepthsunlock":1},"researchLevel":3}
+{"tree":"technology","parent":"rockingroll","name":"Knowledge of the Depth","requirements":[{"type":"building","building":"buildings/crusher","level":3},{"type":"item","items":["minecraft/deepslate"],"quantity":64}],"effects":{"knowledgeofthedepthsunlock":1},"researchLevel":3}

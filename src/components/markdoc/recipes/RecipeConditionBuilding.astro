@@ -1,0 +1,25 @@
+---
+import BuildingName from '@components/wiki/BuildingName.astro';
+import { getWikiPage } from '@utils/wiki';
+import type { CraftingConditionBuilding } from 'src/content/_wiki';
+
+interface Props {
+  condition: CraftingConditionBuilding;
+}
+
+const { condition } = Astro.props;
+
+const building = await getWikiPage('building', condition.building.slug);
+---
+
+{
+  condition.level ? (
+    <li>
+      Requires a <BuildingName building={building} /> level {condition.level}
+    </li>
+  ) : (
+    <li>
+      Requires a <BuildingName building={building} />
+    </li>
+  )
+}

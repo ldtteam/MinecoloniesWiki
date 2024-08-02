@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"village","name":"City","requirements":[{"type":"building","building":"townhall","level":5},{"type":"item","items":["minecraft/cooked_beef"],"quantity":512}],"effects":{"citizencapaddition":5},"researchLevel":5}
+{"tree":"civilian","parent":"village","name":"City","requirements":[{"type":"building","building":"buildings/townhall","level":5},{"type":"item","items":["minecraft/cooked_beef"],"quantity":512}],"effects":{"citizencapaddition":5},"researchLevel":5}

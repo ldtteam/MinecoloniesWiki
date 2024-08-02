@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Stamina
     effect: Cows grow up faster
-primaryBuilding: cowhand
+primaryBuilding: buildings/cowhand

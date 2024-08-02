@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Stamina
     effect: Faster block placing
-primaryBuilding: quarry
+primaryBuilding: buildings/quarry

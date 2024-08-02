@@ -1,6 +1,14 @@
 ---
 type: building
-building: deliveryman
+id: deliveryman
+name: Courier's Hut
+plural: Courier Huts
+description: The Courier is a vital building to the automation of your colony, Couriers are employed by the Warehouse to ensure items are brought around your colony.
+icon: "@assets/images/wiki/items/minecolonies/blockhutdeliveryman.png"
+workers:
+  - courier
+recipes:
+  - minecolonies/blockhutdeliveryman
 ---
 
 The {% worker /%} runs back and forth from the {% building name="warehouse" /%} to all the worker huts in your colony, delivering materials to workers and putting finished products in the {% building name="warehouse" /%}. Each {% worker /%} needs their own hut, and you can have up to 10 {% worker plural=true /%} per {% building name="warehouse" /%}, depending on the {% building name="warehouse" /%} its level (2 per {% building name="warehouse" /%} level).

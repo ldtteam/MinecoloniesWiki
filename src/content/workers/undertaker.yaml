@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Mana
     effect: Increases chance to revive dead citizens
-primaryBuilding: graveyard
+primaryBuilding: buildings/graveyard

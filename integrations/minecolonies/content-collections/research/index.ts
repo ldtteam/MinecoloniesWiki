@@ -132,13 +132,13 @@ function parseRequirement(requirement: ResearchRequirement, translations: Transl
   if (isBuildingRequirement(requirement)) {
     return {
       type: 'building',
-      building: requirement.building,
+      building: 'buildings/' + requirement.building,
       level: requirement.level
     };
   } else if (isMandatoryBuildingRequirement(requirement)) {
     return {
       type: 'building',
-      building: requirement['mandatory-building'],
+      building: 'buildings/' + requirement['mandatory-building'],
       level: requirement.level
     };
   } else if (isItemListRequirement(requirement)) {

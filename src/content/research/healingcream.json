@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"bandaid","name":"Healing Cream","requirements":[{"type":"building","building":"library","level":3},{"type":"item","items":["minecraft/golden_carrot"],"quantity":8}],"effects":{"regenerationmultiplier":2},"researchLevel":3}
+{"tree":"civilian","parent":"bandaid","name":"Healing Cream","requirements":[{"type":"building","building":"buildings/library","level":3},{"type":"item","items":["minecraft/golden_carrot"],"quantity":8}],"effects":{"regenerationmultiplier":2},"researchLevel":3}

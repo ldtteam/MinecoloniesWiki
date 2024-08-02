@@ -1,6 +1,12 @@
-import { type CollectionEntry, getCollection, getEntry, type InferEntrySchema } from 'astro:content';
+import {
+  type CollectionEntry,
+  getCollection,
+  getEntry,
+  type InferEntrySchema,
+  type ValidContentEntrySlug
+} from 'astro:content';
 
-import { getBuildingData, getBuildingDataForVersion } from './building';
+import { getBuildingDataForVersion } from './building';
 import { getItemData } from './items';
 import { groupDataByVersion } from './version';
 
@@ -60,12 +66,11 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
     return itemData.data.name;
   } else if (isWikiPageOfType(entry, 'section')) {
     return await getSectionTitle(entry, true);
-  } else if (entry.data.type === 'building') {
-    const buildingData = await getBuildingData(entry.data.building.id);
+  } else if (isWikiPageOfType(entry, 'building')) {
     const buildingNames = await Promise.all(
       versions.map(async (version) => ({
         version,
-        data: (await getBuildingDataForVersion(buildingData, version)).data.name
+        data: await getBuildingDataForVersion(entry.data, version).then((data) => data.name)
       }))
     );
     return groupDataByVersion(buildingNames, (item) => item).map((item) => ({
@@ -163,14 +168,13 @@ export async function getAllWikiPages(): Promise<WikiPages> {
 
   for (const worker of await getCollection('workers')) {
     const category = wikiCategories.find((f) => f.id === 'workers');
-    const building = await getEntry('buildings', worker.data.primaryBuilding.id);
     if (category !== undefined) {
       const pages = distributedPages.get(category);
       if (pages !== undefined) {
         pages.push({
           type: 'page',
           name: worker.data.name,
-          slug: 'buildings/' + building.id
+          slug: worker.data.primaryBuilding.slug
         });
       }
     }
@@ -193,30 +197,43 @@ export type WikiPageEntry<T extends WikiPageTypes> = Omit<CollectionEntry<'wiki'
   data: Extract<CollectionEntry<'wiki'>['data'], { type: T }>;
 };
 
+export type WikiPageData<T extends WikiPageTypes> = WikiPageEntry<T>['data'];
+
+export function isWikiDataOfType<T extends WikiPageTypes>(
+  data: CollectionEntry<'wiki'>['data'],
+  type: T
+): data is WikiPageEntry<T>['data'] {
+  return data.type === type;
+}
+
 export function isWikiPageOfType<T extends WikiPageTypes>(
   page: Omit<CollectionEntry<'wiki'>, 'id'> & { id: string },
   type: T
 ): page is WikiPageEntry<T> {
-  return page.data.type === type;
+  return isWikiDataOfType(page.data, type);
 }
 
 export function getWikiPages<T extends WikiPageTypes>(type: T): Promise<WikiPageEntry<T>[]> {
   return getCollection('wiki', (page) => isWikiPageOfType(page, type));
 }
 
-export async function getWikiPage<T extends WikiPageTypes>(
+type GetWikiPageResult<T extends WikiPageTypes, E extends string> =
+  E extends ValidContentEntrySlug<'wiki'> ? WikiPageEntry<T> : WikiPageEntry<T> | undefined;
+
+export async function getWikiPage<T extends WikiPageTypes, E extends string>(
   type: T,
-  folder: string,
-  name: string
-): Promise<WikiPageEntry<T>> {
-  const page = await getEntry('wiki', folder + '/' + name + '.mdoc');
+  name: E
+): Promise<GetWikiPageResult<T, E>> {
+  const page = await getEntry('wiki', name);
   if (page === undefined) {
-    throw Error(`Page ${name} for type ${type} does not exist.`);
+    return undefined as GetWikiPageResult<T, E>;
   }
 
-  if (isWikiPageOfType(page, type)) {
-    return page;
+  if (!isWikiPageOfType(page, type)) {
+    throw Error(
+      `Page ${name} for type ${type} is not of correct type, type provided in the file is ${page.data.type}.`
+    );
   }
 
-  throw Error(`Page ${name} for type ${type} is not of correct type, type provided in the file is ${page.data.type}.`);
+  return page;
 }

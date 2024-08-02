@@ -7,11 +7,18 @@ import type { AstroComponentFactory } from 'astro/runtime/server/render/index.js
 import type { CollectionEntry } from 'astro:content';
 import { getCollection, getEntry } from 'astro:content';
 
-import { getSectionTitle, getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
+import {
+  getSectionTitle,
+  getWikiDescription,
+  getWikiImage,
+  getWikiTitle,
+  isWikiPageOfType,
+  type WikiPageData
+} from '../../util/wiki';
 
 interface SectionGroupData {
   slug: CollectionEntry<'wiki'>['slug'];
-  data: Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
+  data: WikiPageData<'section-group'>;
   initialSection: { title: string; slug: string };
   sections: { title: string; slug: string }[];
   hasContent: boolean;
@@ -29,7 +36,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { slug } = Astro.params;
 
-if (entry.data.type === 'section-group') {
+if (isWikiPageOfType(entry, 'section-group')) {
   return Astro.redirect('/wiki/' + entry.data.initialSection.slug);
 }
 
@@ -37,14 +44,14 @@ const title = await getWikiTitle(entry);
 const image = await getWikiImage(entry);
 
 let groupData: SectionGroupData | undefined = undefined;
-if (entry.data.type === 'section') {
+if (isWikiPageOfType(entry, 'section')) {
   const foundEntry = await getEntry(entry.data.group);
   if (foundEntry.data.type !== 'section-group') {
     throw new Error(
       `Section '${entry.id}' is referring to group '${foundEntry.id}' which is not of type 'section-group'. Found type is '${foundEntry.data.type}'.`
     );
   }
-  const foundEntryData = foundEntry.data as Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
+  const foundEntryData = foundEntry.data;
 
   const sections = await getCollection(
     'wiki',
@@ -108,7 +115,7 @@ const description = await getWikiDescription(entry);
             <hr class="dropdown-divider" />
           </li>
           {groupData.sections
-            .filter((section) => groupData.data.initialSection.slug !== section.slug)
+            .filter((section) => groupData.initialSection.slug !== section.slug)
             .map(async (section) => (
               <li>
                 <a class="dropdown-item" href={`/wiki/${section.slug}`}>

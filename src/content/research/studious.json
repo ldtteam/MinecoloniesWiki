@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"diligent","name":"Studious","requirements":[{"type":"building","building":"library","level":3},{"type":"item","items":["minecraft/book"],"quantity":12}],"effects":{"levelingmultiplier":2},"researchLevel":3}
+{"tree":"civilian","parent":"diligent","name":"Studious","requirements":[{"type":"building","building":"buildings/library","level":3},{"type":"item","items":["minecraft/book"],"quantity":12}],"effects":{"levelingmultiplier":2},"researchLevel":3}

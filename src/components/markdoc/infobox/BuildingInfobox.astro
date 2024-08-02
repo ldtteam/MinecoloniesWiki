@@ -2,52 +2,39 @@
 import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
-import { getBuildingData } from '@utils/building';
+import type { WikiPageEntry } from '@utils/wiki';
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
 import BuildingName from '../names/BuildingName.astro';
 import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
 
 interface Props {
-  building: CollectionEntry<'buildings'>['id'];
+  building: WikiPageEntry<'building'>;
 }
 
 const { building } = Astro.props;
 
-const buildingData = await getBuildingData(building);
-
 const research = (
   await getCollection('research', (filter) =>
     filter.data.effects
-      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === building)
+      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === building.data.id)
       : false
   )
 ).slice(0, 1)[0];
 
-const workers = buildingData.data.workers ?? [];
-const recipes = buildingData.data.recipes ?? [];
+const workers = building.data.workers ?? [];
+const recipes = building.data.recipes ?? [];
 ---
 
 <Wrapper>
   <slot />
 
   <Infobox slot="infobox" class="flex-shrink-1">
-    <BuildingName
-      slot="title"
-      frontmatter={{
-        type: 'building',
-        building: {
-          collection: 'buildings',
-          id: building
-        }
-      }}
-      name={building}
-    />
+    <BuildingName slot="title" frontmatter={building.data} />
 
     <div class="text-center">
-      <Image src={buildingData.data.icon} alt={buildingData.data.name} width={300} loading="eager" />
+      <Image src={building.data.icon} alt={building.data.name} width={300} loading="eager" />
     </div>
 
     <RecipeGrid recipes={recipes} />
@@ -72,7 +59,7 @@ const recipes = buildingData.data.recipes ?? [];
           <hr />
           {workers.map((worker, idx) => (
             <>
-              <BuildingInfoboxWorker buildingId={buildingData.id} workerId={worker.id} />
+              <BuildingInfoboxWorker building={building} workerId={worker.id} />
               {idx !== workers.length - 1 && <hr />}
             </>
           ))}

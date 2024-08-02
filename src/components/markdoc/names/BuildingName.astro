@@ -1,12 +1,7 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import {
-  getBuildingData,
-  getBuildingIdFromFrontmatter,
-  getBuildingLink,
-  groupBuildingDataByVersion,
-  type MarkdocBuildingComponent
-} from '@utils/building';
+import BuildingNameInternal from '@components/wiki/BuildingName.astro';
+import { type MarkdocBuildingComponent } from '@utils/building';
+import { getWikiPage, isWikiDataOfType } from '@utils/wiki';
 
 interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
@@ -14,20 +9,15 @@ interface Props extends MarkdocBuildingComponent {
 
 const { frontmatter, name, plural = false } = Astro.props;
 
-const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
-const buildingData = await getBuildingData(name ?? buildingId ?? '');
-const buildingDataPerVersion = await groupBuildingDataByVersion(buildingData);
-const link = getBuildingLink(buildingData);
+const buildingId = isWikiDataOfType(frontmatter, 'building') ? frontmatter.id : name;
+const buildingPage = await getWikiPage('building', 'buildings/' + buildingId);
+if (buildingPage === undefined) {
+  throw Error(`Building id ${buildingId} does not exist.`);
+}
 ---
 
-{
-  buildingDataPerVersion.map(async (building) => (
-    <VersionContent versions={building.versions} inline>
-      {frontmatter?.type !== 'building' || buildingId !== buildingData.id ? (
-        <a href={link}>{plural ? building.item.data.plural : building.item.data.name}</a>
-      ) : (
-        <span>{plural ? building.item.data.plural : building.item.data.name}</span>
-      )}
-    </VersionContent>
-  ))
-}
+<BuildingNameInternal
+  building={buildingPage}
+  plural={plural}
+  link={frontmatter.type !== 'building' || frontmatter.id !== buildingPage.data.id}
+/>

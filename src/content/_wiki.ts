@@ -78,7 +78,7 @@ const buildingInfo = (image: ImageFunction) =>
 
 const buildingPage = (image: ImageFunction) =>
   z
-    .object({ type: z.literal('building') })
+    .object({ type: z.literal('building'), id: z.string() })
     .and(buildingInfo(image))
     .and(
       z.object({
@@ -138,7 +138,7 @@ const workerInfo = (image: ImageFunction) =>
         })
         .optional()
     }),
-    primaryBuilding: reference('buildings')
+    primaryBuilding: reference('wiki')
   });
 
 export const workersCollection = defineCollection({
@@ -173,7 +173,7 @@ export const itemsCollection = defineCollection({
 
 const buildingCraftingCondition = z.object({
   type: z.literal('building'),
-  building: reference('buildings'),
+  building: reference('wiki'),
   level: z.number().optional()
 });
 
@@ -182,15 +182,19 @@ const researchCraftingCondition = z.object({
   research: reference('research')
 });
 
+const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
+
+export type CraftingCondition = z.infer<typeof craftingConditions>;
+export type CraftingConditionBuilding = z.infer<typeof buildingCraftingCondition>;
+export type CraftingConditionResearch = z.infer<typeof researchCraftingCondition>;
+
 export const tagsCollection = defineCollection({
   type: 'data',
   schema: z.array(z.string())
 });
-
-const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
 const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
 
-export type RecipeItemEntry = Zod.infer<typeof itemOrArray>;
+export type RecipeItemEntry = z.infer<typeof itemOrArray>;
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),

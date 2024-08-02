@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Focus
     effect: Faster walking
-primaryBuilding: lumberjack
+primaryBuilding: buildings/lumberjack

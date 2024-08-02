@@ -1,0 +1,27 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import { groupBuildingDataByVersion } from '@utils/building';
+import { type WikiPageEntry } from '@utils/wiki';
+
+interface Props {
+  building: WikiPageEntry<'building'>;
+  plural?: boolean;
+  link?: boolean;
+}
+
+const { building, plural = false, link = false } = Astro.props;
+
+const buildingDataPerVersion = await groupBuildingDataByVersion(building.data);
+---
+
+{
+  buildingDataPerVersion.map(async (buildingVersion) => (
+    <VersionContent versions={buildingVersion.versions} inline>
+      {link ? (
+        <a href={'/wiki/' + building.slug}>{plural ? buildingVersion.item.plural : buildingVersion.item.name}</a>
+      ) : (
+        <span>{plural ? buildingVersion.item.plural : buildingVersion.item.name}</span>
+      )}
+    </VersionContent>
+  ))
+}

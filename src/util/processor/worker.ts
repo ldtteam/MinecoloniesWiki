@@ -1,5 +1,4 @@
 import type { RemarkPlugin } from '@astrojs/markdown-remark';
-import { getBuildingLink } from '@utils/building';
 import {
   getWorkerData,
   getWorkerIdFromFrontmatter,
@@ -21,12 +20,12 @@ async function processWorker(frontmatter: CollectionEntry<'wiki'>['data'], node:
   const workerId = await getWorkerIdFromFrontmatter(frontmatter);
   const workerData = await getWorkerData(name);
   const workerDataPerVersion = await groupWorkerDataByVersion(workerData);
-  const referenceBuilding = await getWorkerReferenceBuilding(building, frontmatter, workerData);
+  const referenceBuilding = await getWorkerReferenceBuilding(building, workerData);
 
-  data.hName = frontmatter?.type !== 'building' || workerId !== workerData.id ? 'a' : 'span';
+  data.hName = frontmatter.type !== 'building' || workerId !== workerData.id ? 'a' : 'span';
   if (data.hName === 'a') {
     data.hProperties = {
-      href: getBuildingLink(referenceBuilding)
+      href: '/wiki/' + referenceBuilding.slug
     };
   }
   data.hChildren = workerDataPerVersion.map((worker) => ({

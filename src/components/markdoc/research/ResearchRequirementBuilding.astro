@@ -1,0 +1,17 @@
+---
+import BuildingName from '@components/wiki/BuildingName.astro';
+import { getWikiPage } from '@utils/wiki';
+import type { ResearchRequirementBuilding } from 'src/content/_research';
+
+interface Props {
+  requirement: ResearchRequirementBuilding;
+}
+
+const { requirement } = Astro.props;
+
+const building = await getWikiPage('building', requirement.building.slug);
+---
+
+<span>One or multiple&nbsp;</span>
+<BuildingName building={building} plural />
+<span>&nbsp;totaling at least {requirement.level} levels</span>

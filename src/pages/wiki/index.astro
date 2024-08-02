@@ -1,10 +1,19 @@
 ---
-import BuildingName from '@components/markdoc/names/BuildingName.astro';
 import WorkerName from '@components/markdoc/names/WorkerName.astro';
 import SocialLink from '@components/markdoc/util/SocialLink.astro';
 import Meta from '@components/Meta.astro';
+import BuildingName from '@components/wiki/BuildingName.astro';
 import PagesOverview from '@components/wiki/PagesOverview.astro';
 import Layout from '@layouts/Default.astro';
+import { getWikiPage } from '@utils/wiki';
+
+const warehouse = await getWikiPage('building', 'buildings/warehouse');
+const residence = await getWikiPage('building', 'buildings/residence');
+const townhall = await getWikiPage('building', 'buildings/townhall');
+const barracks = await getWikiPage('building', 'buildings/barracks');
+const library = await getWikiPage('building', 'buildings/library');
+const university = await getWikiPage('building', 'buildings/university');
+const school = await getWikiPage('building', 'buildings/school');
 ---
 
 <Layout title="Wiki Home" titleAffix="MineColonies Wiki" header="Welcome to the MineColonies Wiki!">
@@ -29,13 +38,13 @@ import Layout from '@layouts/Default.astro';
     the mod grows.
   </p>
   <p>
-    It also includes specialized buildings such as the <BuildingName name="warehouse" plural />, <BuildingName
-      name="residence"
+    It also includes specialized buildings such as the <BuildingName building={warehouse} plural />, <BuildingName
+      building={residence}
       plural
-    />, <BuildingName name="townhall" plural />, <BuildingName name="barracks" plural />, <BuildingName
-      name="library"
+    />, <BuildingName building={townhall} plural />, <BuildingName building={barracks} plural />, <BuildingName
+      building={library}
       plural
-    />, <BuildingName name="university" plural />, and even the <BuildingName name="school" plural />.
+    />, <BuildingName building={university} plural />, and even the <BuildingName building={school} plural />.
   </p>
   <h3>
     Please note that the wiki is a work in progress and will usually refer to the latest 1.19.2 and/or 1.20.1 alpha

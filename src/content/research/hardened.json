@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"strong","name":"Hardened","requirements":[{"type":"building","building":"blacksmith","level":2},{"type":"item","items":["minecraft/diamond"],"quantity":16}],"effects":{"tooldurabilitymultiplier":2},"researchLevel":3}
+{"tree":"technology","parent":"strong","name":"Hardened","requirements":[{"type":"building","building":"buildings/blacksmith","level":2},{"type":"item","items":["minecraft/diamond"],"quantity":16}],"effects":{"tooldurabilitymultiplier":2},"researchLevel":3}

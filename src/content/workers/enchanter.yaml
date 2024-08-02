@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Knowledge
     effect: Higher level of enchanted books
-primaryBuilding: enchanter
+primaryBuilding: buildings/enchanter
