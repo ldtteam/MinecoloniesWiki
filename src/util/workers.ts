@@ -8,6 +8,28 @@ export interface MarkdocWorkerComponent {
   name?: string;
 }
 
+/**
+ * Obtain the building reference for a given worker.
+ * @param worker the input worker id.
+ * @param building the input building id.
+ * @returns the building id.
+ */
+export async function getReferenceBuildingId(worker: string, building?: string): Promise<string> {
+  const buildings = await getWikiPages('building');
+
+  if (building && buildings) {
+    return building;
+  }
+
+  if (buildings.length !== 1) {
+    throw new Error(
+      `Worker name for ${workerTarget} requires a building argument because this worker is referenced in none or multiple buildings.`
+    );
+  }
+
+  return 'buildings/alchemist.mdoc';
+}
+
 export async function getWorkerIdFromFrontmatter(frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
   let workerId: CollectionEntry<'workers'>['id'] | undefined;
   if (frontmatter?.type === 'building') {

@@ -1,18 +1,11 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { groupDataByVersion, isVersionHigherOrSame } from './version';
+import { getWikiPage, type WikiPageEntry } from './wiki';
 
 export interface MarkdocBuildingComponent {
   frontmatter?: CollectionEntry<'wiki'>['data'];
   name?: string;
-}
-
-export async function getBuildingIdFromFrontmatter(frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
-  let buildingId: CollectionEntry<'buildings'>['id'] | undefined;
-  if (frontmatter?.type === 'building') {
-    buildingId = frontmatter.building.id;
-  }
-  return buildingId;
 }
 
 /**
@@ -21,7 +14,7 @@ export async function getBuildingIdFromFrontmatter(frontmatter: CollectionEntry<
  * @returns the building data.
  */
 export async function getBuildingData(building: string) {
-  const buildingData = await getEntry('buildings', building);
+  const buildingData = await getWikiPage('building', 'buildings', building);
   if (buildingData === undefined) {
     throw Error(`Building entry "${building}" does not exist.`);
   }

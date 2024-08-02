@@ -2,7 +2,6 @@ import { researchCollection, researchEffectCollection, researchTreeCollection } 
 import { eventCollection, sponsorCollection, supporterCollection, teamCollection } from './_site';
 import { versionsCollection } from './_version';
 import {
-  buildingsCollection,
   citizenNamesCollection,
   itemsCollection,
   metaCollection,
@@ -17,7 +16,6 @@ import {
 export const collections = {
   wiki: wikiCollection,
   wiki_categories: wikiCategories,
-  buildings: buildingsCollection,
   workers: workersCollection,
   tags: tagsCollection,
   items: itemsCollection,
