@@ -50,32 +50,6 @@ const itemCombinedPage = z.object({
     .optional()
 });
 
-const buildingPage = z.object({
-  type: z.literal('building'),
-  building: reference('buildings')
-});
-
-export const wikiCollection = defineCollection({
-  type: 'content',
-  schema: ({ image }) =>
-    z.discriminatedUnion('type', [
-      regularPage(image),
-      sectionGroupPage(image),
-      sectionPage(image),
-      itemPage,
-      itemCombinedPage,
-      buildingPage
-    ])
-});
-
-export const wikiCategories = defineCollection({
-  type: 'data',
-  schema: z.object({
-    name: z.string(),
-    order: z.number()
-  })
-});
-
 const buildingInfo = (image: ImageFunction) =>
   z.object({
     name: z.string(),
@@ -102,10 +76,11 @@ const buildingInfo = (image: ImageFunction) =>
       .optional()
   });
 
-export const buildingsCollection = defineCollection({
-  type: 'data',
-  schema: ({ image }) =>
-    buildingInfo(image).and(
+const buildingPage = (image: ImageFunction) =>
+  z
+    .object({ type: z.literal('building') })
+    .and(buildingInfo(image))
+    .and(
       z.object({
         overrides: z
           .array(
@@ -119,7 +94,27 @@ export const buildingsCollection = defineCollection({
           )
           .optional()
       })
-    )
+    );
+
+export const wikiCollection = defineCollection({
+  type: 'content',
+  schema: ({ image }) =>
+    z.union([
+      regularPage(image),
+      sectionGroupPage(image),
+      sectionPage(image),
+      itemPage,
+      itemCombinedPage,
+      buildingPage(image)
+    ])
+});
+
+export const wikiCategories = defineCollection({
+  type: 'data',
+  schema: z.object({
+    name: z.string(),
+    order: z.number()
+  })
 });
 
 const workerInfo = (image: ImageFunction) =>

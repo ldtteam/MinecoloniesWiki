@@ -1,5 +1,5 @@
 ---
-import { getWikiPages } from '@utils/wiki';
+import { getAllWikiPages } from '@utils/wiki';
 
 import Navlink from './Navlink.astro';
 
@@ -9,7 +9,7 @@ interface Props {
 
 const { isAppbar = false } = Astro.props;
 
-const pages = await getWikiPages();
+const pages = await getAllWikiPages();
 ---
 
 <ul class="navbar-nav">
