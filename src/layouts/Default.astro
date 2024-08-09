@@ -1,6 +1,7 @@
 ---
 import '../css/bootstrap.scss';
 import '../css/globals.scss';
+import '@fontsource/fondamento';
 
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
@@ -8,7 +9,6 @@ import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
 import PageTitleRender from '@components/wiki/PageTitleRender.astro';
-import fondamentoWoff2 from '@fontsource/fondamento/files/fondamento-latin-400-normal.woff2?url';
 import { getNewestVersion } from '@utils/version';
 import type { Title } from '@utils/wiki';
 import { ViewTransitions } from 'astro:transitions';
@@ -63,9 +63,13 @@ const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 
-    <link rel="preload" as="font" type="font/woff2" href={fondamentoWoff2} crossorigin />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <style>
+      * {
+        font-family: Fondamento, sans-serif;
+      }
+    </style>
 
     <title property="og-title,twitter:title">
       {initialTitle}
