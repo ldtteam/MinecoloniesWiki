@@ -1,1 +1,0 @@
-{"tree":"combat","name":"Improved Leather","requirements":[{"type":"building","building":"buildings/townhall","level":1},{"type":"item","items":["minecraft/leather"],"quantity":32}],"effects":{"armordurabilitymultiplier":1},"researchLevel":1}

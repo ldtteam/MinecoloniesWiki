@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"deeppockets","name":"Loaded","requirements":[{"type":"building","building":"buildings/library","level":5},{"type":"item","items":["minecraft/emerald"],"quantity":128}],"effects":{"citizeninvslotsaddition":2},"researchLevel":5}

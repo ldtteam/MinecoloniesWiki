@@ -29,5 +29,8 @@ export default defineConfig({
     sitemap(),
     purgecss(),
     minecoloniesSubmodule()
-  ]
+  ],
+  experimental: {
+    contentLayer: true
+  }
 });

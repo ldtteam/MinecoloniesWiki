@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"hamlet","name":"Village","requirements":[{"type":"building","building":"buildings/townhall","level":4},{"type":"item","items":["minecraft/cooked_beef"],"quantity":256}],"effects":{"citizencapaddition":4},"researchLevel":4}

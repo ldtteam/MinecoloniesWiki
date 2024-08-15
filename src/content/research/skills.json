@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"ability","name":"Skills","requirements":[{"type":"building","building":"buildings/miner","level":2},{"type":"item","items":["minecraft/iron_ingot"],"quantity":128}],"effects":{"blockplacespeedmultiplier":2},"researchLevel":3}

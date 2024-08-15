@@ -1,60 +1,71 @@
 import { defineCollection, reference, z } from 'astro:content';
+import { researchLoader } from 'src/loaders/research';
+import { researchEffectLoader } from 'src/loaders/research_effect';
+import { researchTreeLoader } from 'src/loaders/research_tree';
 
-const buildingRequirement = z.object({
+const researchTreeSchema = z.object({
+  name: z.string()
+});
+
+export const researchTreeCollection = defineCollection({
+  type: 'content_layer',
+  loader: researchTreeLoader,
+  schema: researchTreeSchema
+});
+
+const buildingRequirementSchema = z.object({
   type: z.literal('building'),
   building: reference('wiki'),
   level: z.number().default(1)
 });
 
-const itemRequirement = z.object({
+const itemRequirementSchema = z.object({
   type: z.literal('item'),
   items: z.string().array(),
   quantity: z.number().default(1)
 });
 
-const requirements = z.discriminatedUnion('type', [buildingRequirement, itemRequirement]);
+const requirementSchema = z.discriminatedUnion('type', [buildingRequirementSchema, itemRequirementSchema]);
 
-export type ResearchRequirement = z.infer<typeof requirements>;
-export type ResearchRequirementBuilding = z.infer<typeof buildingRequirement>;
-export type ResearchRequirementItem = z.infer<typeof itemRequirement>;
-
-export const researchTreeCollection = defineCollection({
-  type: 'data',
-  schema: z.object({
-    name: z.string()
-  })
+const researchSchema = z.object({
+  tree: reference('research_tree'),
+  parent: reference('research').optional(),
+  name: z.string(),
+  requirements: z.array(requirementSchema).optional(),
+  effects: z.record(z.string(), z.number()).optional(),
+  researchLevel: z.number()
 });
 
 export const researchCollection = defineCollection({
-  type: 'data',
-  schema: z.object({
-    tree: reference('research_tree'),
-    parent: reference('research').optional(),
-    name: z.string(),
-    requirements: z.array(requirements).optional(),
-    effects: z.record(z.string(), z.number()).optional(),
-    researchLevel: z.number()
-  })
+  type: 'content_layer',
+  loader: researchLoader,
+  schema: researchSchema
 });
 
-const regularResearchEffect = z.object({
+const regularResearchEffectSchema = z.object({
   type: z.literal('regular'),
   format: z.string(),
   levels: z.array(z.number()).optional()
 });
 
-const buildingResearchEffect = z.object({
+const buildingResearchEffectSchema = z.object({
   type: z.literal('building'),
   building: reference('wiki')
 });
 
-const researchEffects = z.discriminatedUnion('type', [regularResearchEffect, buildingResearchEffect]);
+const researchEffectSchema = z.discriminatedUnion('type', [regularResearchEffectSchema, buildingResearchEffectSchema]);
 
 export const researchEffectCollection = defineCollection({
-  type: 'data',
-  schema: researchEffects
+  type: 'content_layer',
+  loader: researchEffectLoader,
+  schema: researchEffectSchema
 });
 
-export type ResearchEffect = z.infer<typeof researchEffects>;
-export type ResearchEffectRegular = z.infer<typeof regularResearchEffect>;
-export type ResearchEffectBuilding = z.infer<typeof buildingResearchEffect>;
+export type ResearchTree = { id: string } & z.infer<typeof researchTreeSchema>;
+export type Research = { id: string } & z.infer<typeof researchSchema>;
+export type ResearchRequirement = z.infer<typeof requirementSchema>;
+export type ResearchRequirementBuilding = z.infer<typeof buildingRequirementSchema>;
+export type ResearchRequirementItem = z.infer<typeof itemRequirementSchema>;
+export type ResearchEffect = { id: string } & z.infer<typeof researchEffectSchema>;
+export type ResearchEffectRegular = z.infer<typeof regularResearchEffectSchema>;
+export type ResearchEffectBuilding = z.infer<typeof buildingResearchEffectSchema>;

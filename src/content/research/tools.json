@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"skills","name":"Tools","requirements":[{"type":"building","building":"buildings/blacksmith","level":4},{"type":"item","items":["minecraft/iron_ingot"],"quantity":256}],"effects":{"blockplacespeedmultiplier":3},"researchLevel":4}

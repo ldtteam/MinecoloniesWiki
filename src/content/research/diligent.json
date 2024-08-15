@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"keen","name":"Diligent","requirements":[{"type":"building","building":"buildings/library","level":2},{"type":"item","items":["minecraft/book"],"quantity":6}],"effects":{"levelingmultiplier":1},"researchLevel":2}

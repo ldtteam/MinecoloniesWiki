@@ -1,1 +1,0 @@
-{"tree":"unlockable","name":"String Mesh","requirements":[{"type":"building","building":"buildings/sifter","level":1}],"effects":{"sifterstringunlock":1},"researchLevel":1}

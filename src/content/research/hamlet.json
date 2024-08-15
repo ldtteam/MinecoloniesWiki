@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"outpost","name":"Hamlet","requirements":[{"type":"building","building":"buildings/residence","level":5},{"type":"item","items":["minecraft/cooked_beef"],"quantity":128}],"effects":{"citizencapaddition":3},"researchLevel":3}

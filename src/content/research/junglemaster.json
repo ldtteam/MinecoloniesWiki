@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"letitgrow","name":"Jungle Master","requirements":[{"type":"building","building":"buildings/plantation","level":2},{"type":"item","items":["minecraft/bamboo"],"quantity":16},{"type":"item","items":["minecraft/cocoa_beans"],"quantity":16},{"type":"item","items":["minecraft/vine"],"quantity":16}],"effects":{"plantationjungle":1},"researchLevel":3}

@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"biodegradable","name":"Rainbow Heaven","requirements":[{"type":"building","building":"buildings/composter","level":3},{"type":"item","items":["minecraft/poppy"],"quantity":64}],"effects":{"blockhutdyer":1},"researchLevel":2}

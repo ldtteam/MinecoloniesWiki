@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"rails","name":"Nimble","requirements":[{"type":"building","building":"buildings/townhall","level":3},{"type":"item","items":["minecraft/rabbit_foot"],"quantity":1}],"effects":{"walkingmultiplier":1},"researchLevel":3}

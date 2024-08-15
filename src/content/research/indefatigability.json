@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"fortitude","name":"Indefatigability","requirements":[{"type":"item","items":["minecraft/golden_apple"],"quantity":64}],"effects":{"healingsaturationlimitaddition":5},"researchLevel":6}

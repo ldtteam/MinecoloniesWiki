@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"goodveins","name":"Rich Veins","requirements":[{"type":"building","building":"buildings/blacksmith","level":4},{"type":"item","items":["Any Gold Ore"],"quantity":32}],"effects":{"moreoresmultiplier":3},"researchLevel":4}

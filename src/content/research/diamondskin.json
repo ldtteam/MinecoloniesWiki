@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"steelarmor","name":"Diamond Skin","requirements":[{"type":"item","items":["minecraft/diamond"],"quantity":64}],"effects":{"armordurabilitymultiplier":6},"researchLevel":6}

@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"trickshot","name":"Multishot","requirements":[{"type":"building","building":"buildings/archery","level":4},{"type":"item","items":["minecraft/bow"],"quantity":9}],"effects":{"doublearrowsmultiplier":2},"researchLevel":4}

@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"podzolchance","name":"Podzol Chance II","requirements":[{"type":"building","building":"buildings/composter","level":3},{"type":"item","items":["minecraft/podzol"],"quantity":32}],"effects":{"podzolchancemultiplier":2},"researchLevel":3}

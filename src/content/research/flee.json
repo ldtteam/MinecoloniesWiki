@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"evade","name":"Flee","requirements":[{"type":"building","building":"buildings/guardtower","level":12},{"type":"item","items":["minecraft/emerald"],"quantity":32}],"effects":{"fleeingspeedaddition":3},"researchLevel":5}

@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"vitality","name":"Fortitude","requirements":[{"type":"building","building":"buildings/cook","level":5},{"type":"item","items":["minecraft/golden_apple"],"quantity":32}],"effects":{"healingsaturationlimitaddition":4},"researchLevel":5}

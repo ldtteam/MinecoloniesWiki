@@ -1,1 +1,0 @@
-{"tree":"technology","name":"Hot!","requirements":[{"type":"building","building":"buildings/miner","level":2},{"type":"item","items":["minecraft/lava_bucket"],"quantity":4}],"effects":{"blockhutsmeltery":1},"researchLevel":1}

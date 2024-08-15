@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"firstaid","name":"Gourmand","requirements":[{"type":"building","building":"buildings/cook","level":2},{"type":"item","items":["minecraft/cookie"],"quantity":32}],"effects":{"saturationmultiplier":1},"researchLevel":2}

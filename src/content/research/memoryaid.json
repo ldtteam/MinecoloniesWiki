@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"woodwork","name":"Memory Aid","requirements":[{"type":"building","building":"buildings/sawmill","level":1},{"type":"item","items":["minecraft/paper"],"quantity":32}],"effects":{"recipesmultiplier":1},"researchLevel":2}

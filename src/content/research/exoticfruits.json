@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"letitgrow","name":"Exotic Fruits","requirements":[{"type":"building","building":"buildings/plantation","level":3},{"type":"item","items":["minecraft/glow_berries"],"quantity":32}],"effects":{"plantationexotic":1},"researchLevel":3}

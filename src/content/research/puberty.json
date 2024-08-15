@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"hormones","name":"Puberty","requirements":[{"type":"building","building":"buildings/library","level":3},{"type":"item","items":["minecraft/cooked_chicken"],"quantity":128}],"effects":{"growthmultiplier":3},"researchLevel":4}

@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"compost","name":"Fertilizer","requirements":[{"type":"building","building":"buildings/smeltery","level":3},{"type":"item","items":["minecraft/wheat_seeds"],"quantity":512}],"effects":{"farmingmultiplier":4},"researchLevel":5}

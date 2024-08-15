@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"retreat","name":"Full Retreat","requirements":[{"type":"item","items":["minecraft/emerald"],"quantity":64}],"effects":{"fleeingdamagemultiplier":4},"researchLevel":6}

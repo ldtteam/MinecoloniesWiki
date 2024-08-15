@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"memoryaid","name":"Warehouse Master","requirements":[{"type":"building","building":"buildings/sawmill","level":3},{"type":"item","items":["minecolonies/blockminecoloniesrack"],"quantity":3}],"effects":{"recipemodeunlock":1},"researchLevel":3}

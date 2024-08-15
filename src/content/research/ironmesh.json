@@ -1,1 +1,0 @@
-{"tree":"unlockable","parent":"flintmesh","name":"Iron Mesh","requirements":[{"type":"building","building":"buildings/sifter","level":4}],"effects":{"sifterironunlock":1},"researchLevel":3}

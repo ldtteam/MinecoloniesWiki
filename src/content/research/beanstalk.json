@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"growth","name":"Beanstalk","requirements":[{"type":"item","items":["minecraft/cooked_chicken"],"quantity":512}],"effects":{"growthmultiplier":5},"researchLevel":6}

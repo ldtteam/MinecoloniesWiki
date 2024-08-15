@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"healingcream","name":"Bandages","requirements":[{"type":"building","building":"buildings/library","level":4},{"type":"item","items":["minecraft/golden_carrot"],"quantity":16}],"effects":{"regenerationmultiplier":3},"researchLevel":4}

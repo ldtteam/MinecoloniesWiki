@@ -1,9 +1,6 @@
 import { type AstroIntegration } from 'astro';
 import shelljs from 'shelljs';
 
-import { processResearch } from './content-collections';
-import getTranslations from './translations';
-
 export function minecoloniesSubmodule(): AstroIntegration {
   let shouldRun = false;
 
@@ -22,24 +19,11 @@ export function minecoloniesSubmodule(): AstroIntegration {
 
         logger.info('Updating Minecolonies submodule...');
         const response = shelljs.exec('git submodule update --init --remote --merge minecolonies');
-        logger.info('Minecolonies submodule successfully updated');
 
-        if (response.code !== 0) {
-          throw new Error('Failure updating submodule.');
-        }
-
-        try {
-          const translations = await getTranslations();
-          if (translations === undefined) {
-            logger.warn('Could not load translation data, aborting file update.');
-            return;
-          }
-
-          await processResearch({ logger, translations });
-
-          logger.info('Finished updating info from Minecolonies submodule.');
-        } catch (ex) {
-          logger.error('Stopped updating info, unknown error occured:\n' + ex);
+        if (response.code === 0) {
+          logger.info('Minecolonies submodule successfully updated.');
+        } else {
+          logger.warn('Minecolonies submodule failed to update.');
         }
       }
     }

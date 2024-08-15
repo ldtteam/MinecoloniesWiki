@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"ironarmor","name":"Plate Armor","requirements":[{"type":"building","building":"buildings/blacksmith","level":4},{"type":"item","items":["minecraft/iron_ingot"],"quantity":32}],"effects":{"platearmorunlock":1},"researchLevel":5}

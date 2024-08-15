@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"woodwork","name":"Stringwork","requirements":[{"type":"building","building":"buildings/sawmill","level":1},{"type":"item","items":["minecraft/string"],"quantity":16}],"effects":{"blockhutfletcher":1},"researchLevel":2}

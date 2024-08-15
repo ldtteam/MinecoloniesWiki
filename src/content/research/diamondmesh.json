@@ -1,1 +1,0 @@
-{"tree":"unlockable","parent":"ironmesh","name":"Diamond Mesh","requirements":[{"type":"building","building":"buildings/sifter","level":5}],"effects":{"sifterdiamondunlock":1},"researchLevel":4}
