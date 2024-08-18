@@ -31,10 +31,10 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/ldtteam/minecolonieswiki:${{ github.sha }},ghcr.io/ldtteam/minecolonieswiki:latest
+          tags: ghcr.io/${{ github.repository }}:${{ github.sha }},ghcr.io/${{ github.repository }}:latest
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1
         with:
-          subject-name: ghcr.io/ldtteam/minecolonieswiki:${{ github.sha }}
+          subject-name: ghcr.io/${{ github.repository }}:${{ github.sha }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
