@@ -10,6 +10,10 @@ The scan tool is a very useful tool. With the scan tool, you can scan any struct
 
 **Hint:** There are three placeholder blocks that help in building schematics, read more about them {% item name="placeholderblocks" /%}.
 
+### Step Zero
+
+Optionally, shift-left-click the "anchor block" (see below for more info). Usually you can skip this, but sometimes it needs to be selected manually.
+
 ### Step One
 
 Then left-click a lower front corner (left or right makes no difference) at the ground level of the structure.
@@ -35,7 +39,13 @@ You can click on the Show Resources button to see all the blocks that are in you
 * Remove, to remove any of the blocks you see in your scan that you don't want in there.
 * Replace, to replace that block with any other block you prefer for that scan.
 
-You can also shift + left-click on a block to set the anchor position. (You can set it to a block outside of the scan, but that won't work for obvious reasons.) The anchor position is where the scan will rotate around when placing it with the {% item name="deco_controller" /%}. **Do not** change the anchor block in this case, as if you do, the decoration won't be upgradable!
+# Anchor Block
+
+Every blueprint needs an "anchor". This is shown as a red box when scanning and building, and is the block that the blueprint will rotate around. Most importantly, though, it's the block that defines what kind of blueprint this is.
+
+For regular buildings, the hut block for the building must be the anchor. For upgradable decorations, the {% item name="deco_controller" /%} must be the anchor. For other decorations, you can either use a {% item name="tag_anchor" /%} (if you want to use the {% item name="tag_tool" /%}) or any other block (otherwise).
+
+You can select the anchor for your scan explicitly, by shift-left-clicking the desired block. If you don't do this, the scan tool will try to guess -- most of the time this works, but if you have more than one possible anchor inside your scan box then it won't be able to figure it out and you'll get an error message in chat. In that case you will have to set it manually. (Having more than one possible anchor is normal if you're scanning a building that has child buildings, or if you've included certain blocks like the {% item name="stash" /%} -- other times it might be because you've added a {% item name="tag_anchor" /%} when you shouldn't have.)
 
 {% version name="1.19" after=true %}
 # Multiple Scan Slots
