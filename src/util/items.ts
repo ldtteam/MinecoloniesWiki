@@ -170,15 +170,6 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
       const extension = imageExtensionOverrides[item.id] ?? 'png';
       const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
 
-      if (extension == 'gif') {
-        // Gifs are not optimizable by Squoosh, so we have to forward them as raw images
-        return {
-          name: itemData.displayName,
-          icons: [url],
-          link: `https://minecraft.wiki/w/${parsedItemName}`
-        };
-      }
-
       const image = await getImage({
         src: url,
         width: 32,
