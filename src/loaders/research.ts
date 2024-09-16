@@ -58,7 +58,6 @@ export async function researchLoader(): Promise<Research[]> {
     const treeResearches = await parseTreeResearches(tree, translations);
     researches.push(...treeResearches);
   }
-  console.log(researches.filter((f) => f.id === 'reflective' || f.id === 'academic'));
   return researches;
 }
 
@@ -83,16 +82,8 @@ async function parseTreeResearches(tree: ResearchTree, translations: Translation
     const researchLevel = research.researchLevel;
     return {
       id: researchKey,
-      tree: {
-        collection: 'research_tree',
-        id: tree.id
-      },
-      parent: research.parentResearch
-        ? {
-            collection: 'research',
-            id: research.parentResearch.split('/')[1]
-          }
-        : undefined,
+      tree: tree.id,
+      parent: research.parentResearch?.split('/')[1],
       name: translations[`com.minecolonies.research.${tree.id}.${researchKey}.name`],
       requirements,
       effects,

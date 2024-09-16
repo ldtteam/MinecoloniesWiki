@@ -16,13 +16,13 @@ interface Props {
 const { tree, name, depth, terminal = false } = Astro.props;
 
 const researches = (
-  await getCollection('research', (filter) => filter.data.tree.id == tree.id && filter.data.researchLevel === depth)
+  await getCollection('research', (filter) => filter.data.tree == tree.id && filter.data.researchLevel === depth)
 ).sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const researchesWithParent = await Promise.all(
   researches.map(async (research) => {
     if (research.data.parent) {
-      const parent = await getEntry('research', research.data.parent.id);
+      const parent = await getEntry('research', research.data.parent);
       return {
         ...research,
         parentResearch: parent
