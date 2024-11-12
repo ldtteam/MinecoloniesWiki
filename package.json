@@ -25,7 +25,7 @@
     "@iconify/json": "^2.2.223",
     "@markdoc/markdoc": "^0.4.0",
     "archiver": "^7.0.1",
-    "astro": "^4.15.2",
+    "astro": "^4.16.1",
     "astro-icon": "1.1.1",
     "astro-purgecss": "^4.1.1",
     "bootstrap": "^5.3.3",
