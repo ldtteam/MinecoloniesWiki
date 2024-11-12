@@ -57,13 +57,16 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Process repository name
+        run: echo "IMAGE_PATH=${REGISTRY}/${IMAGE_NAME@L}" >> $GITHUB_ENV
+
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.IMAGE_PATH }}
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
@@ -73,7 +76,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ needs.tag.outputs.tag }}
+          tags: ${{ env.IMAGE_PATH }}:${{ needs.tag.outputs.tag }}
           labels: ${{ steps.meta.outputs.labels }}
 
   chart:
@@ -101,7 +104,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Update Helm Chart Version
-        working-directory: Charts/ldtteam-authentication-server
+        working-directory: chart/wiki
         run: |
           # The current version is stored in inputs.tag, we need to rewrite the charts.yaml file with the new version
           # However we can only replace the version: property if it is at the start of a line
@@ -115,7 +118,7 @@ jobs:
         run: helm repo add bitnami https://charts.bitnami.com/bitnami
 
       - name: Install chart dependencies
-        run: helm dependency update Charts/ldtteam-authentication-server
+        run: helm dependency update chart/wiki
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
