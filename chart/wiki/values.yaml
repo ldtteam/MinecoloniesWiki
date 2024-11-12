@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: harbor.cluster.ldtteam.com/website/main
+  repository: ghcr.io/ldtteam/minecolonieswiki
   pullPolicy: Always
-  tag: latest
+  #tag: latest
 
 ingress:
   enabled: true
@@ -42,7 +42,7 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
-  # targetMemoryUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
 
