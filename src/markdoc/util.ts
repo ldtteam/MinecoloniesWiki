@@ -3,7 +3,7 @@ import { component } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const social_link: Tag = {
-  render: component('@components/markdoc/SocialLink.astro'),
+  render: component('@components/markdoc/util/SocialLink.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -14,7 +14,7 @@ export const social_link: Tag = {
 };
 
 export const citizen_name_pack_list: Tag = {
-  render: component('@components/markdoc/CitizenNamePackList.astro'),
+  render: component('@components/markdoc/util/CitizenNamePackList.astro'),
   selfClosing: true
 };
 
@@ -38,4 +38,14 @@ export const content_block: Tag = {
 
 export const image_row: Tag = {
   render: component('@components/markdoc/util/ImageRow.astro')
+};
+
+export const meta: Tag = {
+  render: component('@components/markdoc/util/Meta.astro'),
+  attributes: {
+    key: {
+      type: String,
+      required: true
+    }
+  }
 };

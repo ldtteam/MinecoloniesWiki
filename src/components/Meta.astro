@@ -1,5 +1,6 @@
 ---
-import { getImage } from 'astro:assets';
+import RegularLogo from '@assets/images/minecolonies_logo_medium.png';
+import WikiLogo from '@assets/images/minecolonies_logo_wiki_medium.png';
 
 interface Props {
   isWiki: boolean;
@@ -13,16 +14,12 @@ interface Props {
 
 const { isWiki, title, description, image, imageAlt, imageWidth, imageHeight } = Astro.props;
 
-const defaultImage = await getImage({
-  src: isWiki
-    ? (await import('../assets/images/minecolonies_logo_wiki_medium.png')).default
-    : (await import('../assets/images/minecolonies_logo_medium.png')).default
-});
+const defaultImage = isWiki ? WikiLogo : RegularLogo;
 
 const finalImage = image ?? defaultImage.src;
 const finalImageAlt = imageAlt ?? isWiki ? 'Minecolonies Wiki Logo' : 'Minecolonies Logo';
-const finalImageWidth = imageWidth ?? defaultImage.options.width;
-const finalImageHeight = imageHeight ?? defaultImage.options.height;
+const finalImageWidth = imageWidth ?? defaultImage.width;
+const finalImageHeight = imageHeight ?? defaultImage.height;
 
 const desc =
   description ??

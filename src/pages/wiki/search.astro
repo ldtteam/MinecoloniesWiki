@@ -106,7 +106,10 @@ import { Icon } from 'astro-icon/components';
   load();
 </script>
 
-<style>
+<style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+  @import '../../../node_modules/bootstrap/scss/forms/_form-control.scss';
+
   :global(.card-image) {
     width: 100px !important;
     height: 100px !important;

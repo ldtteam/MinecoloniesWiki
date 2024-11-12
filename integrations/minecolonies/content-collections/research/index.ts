@@ -1,8 +1,8 @@
-import { AstroIntegrationLogger } from 'astro';
+import { type AstroIntegrationLogger } from 'astro';
 
 import { getAllJsonFiles, writeContentCollectionFile } from '../../file-manager';
-import { Translations } from '../../translations/types';
-import {
+import type { Translations } from '../../translations/types';
+import type {
   BuildingRequirement,
   ItemListRequirement,
   ItemTagRequirement,

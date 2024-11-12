@@ -35,7 +35,7 @@
   position: relative;
 }
 
-.dropdown-submenu > .dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;
 }
@@ -81,7 +81,21 @@
     0px 1px 8px 0px #e0d2ae;
   border: 2px solid #e0d2ae;
 
-  & > *:last-child {
+  &>*:last-child {
     margin-bottom: 0 !important;
+  }
+}
+
+.table-fit {
+  width: fit-content;
+
+  td {
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+
+  td:last-child {
+    white-space: wrap;
+    word-wrap: break-word;
   }
 }

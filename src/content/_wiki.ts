@@ -29,24 +29,30 @@ const sectionPage = (image: ImageFunction) =>
 
 const itemPage = z.object({
   type: z.literal('item'),
-  item: reference('items')
+  item: reference('items'),
+  infobox: z
+    .object({
+      show: z.boolean().optional()
+    })
+    .optional()
 });
 
 const itemCombinedPage = z.object({
   type: z.literal('item-combined'),
   title: z.string(),
   excerpt: z.string().optional(),
-  items: z.array(reference('items'))
+  items: z.array(reference('items')),
+  infobox: z
+    .object({
+      show: z.boolean().optional(),
+      cols: z.number().optional()
+    })
+    .optional()
 });
 
 const buildingPage = z.object({
   type: z.literal('building'),
   building: reference('buildings')
-});
-
-const workerPage = z.object({
-  type: z.literal('worker'),
-  worker: reference('workers')
 });
 
 export const wikiCollection = defineCollection({
@@ -58,8 +64,7 @@ export const wikiCollection = defineCollection({
       sectionPage(image),
       itemPage,
       itemCombinedPage,
-      buildingPage,
-      workerPage
+      buildingPage
     ])
 });
 
@@ -125,14 +130,20 @@ const workerInfo = (image: ImageFunction) =>
     icon: image(),
     type: z.enum(['animals', 'crafter', 'gatherer', 'guard', 'other']),
     traits: z.object({
-      primary: z.string().optional(),
-      secondary: z.string().optional()
+      primary: z
+        .object({
+          name: z.string(),
+          effect: z.string()
+        })
+        .optional(),
+      secondary: z
+        .object({
+          name: z.string(),
+          effect: z.string()
+        })
+        .optional()
     }),
-    effects: z.object({
-      primary: z.string().optional(),
-      secondary: z.string().optional()
-    }),
-    buildings: reference('buildings').array().optional()
+    primaryBuilding: reference('buildings')
   });
 
 export const workersCollection = defineCollection({
@@ -176,8 +187,15 @@ const researchCraftingCondition = z.object({
   research: reference('research')
 });
 
+export const tagsCollection = defineCollection({
+  type: 'data',
+  schema: z.array(z.string())
+});
+
 const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
 const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
+
+export type RecipeItemEntry = Zod.infer<typeof itemOrArray>;
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),
@@ -235,4 +253,14 @@ export const citizenNamesCollection = defineCollection({
       surnames: z.array(z.string())
     })
   })
+});
+
+export const metaCollection = defineCollection({
+  type: 'data',
+  schema: z.array(
+    z.object({
+      key: z.string(),
+      value: z.string()
+    })
+  )
 });

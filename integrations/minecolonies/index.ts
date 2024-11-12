@@ -1,4 +1,4 @@
-import { AstroIntegration } from 'astro';
+import { type AstroIntegration } from 'astro';
 import shelljs from 'shelljs';
 
 import { processResearch } from './content-collections';
@@ -21,7 +21,7 @@ export function minecoloniesSubmodule(): AstroIntegration {
         }
 
         logger.info('Updating Minecolonies submodule...');
-        const response = shelljs.exec('git submodule update --init minecolonies');
+        const response = shelljs.exec('git submodule update --init --remote --merge minecolonies');
         logger.info('Minecolonies submodule successfully updated');
 
         if (response.code !== 0) {

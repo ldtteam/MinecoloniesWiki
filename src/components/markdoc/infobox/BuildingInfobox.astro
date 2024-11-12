@@ -2,22 +2,26 @@
 import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
-import { getBuildingData, type MarkdocBuildingComponent } from '@utils/building';
+import { getBuildingData } from '@utils/building';
 import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
-import BuildingName from '../BuildingName.astro';
-import WorkerName from '../WorkerName.astro';
+import BuildingName from '../names/BuildingName.astro';
+import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
 
-type Props = MarkdocBuildingComponent;
+interface Props {
+  building: CollectionEntry<'buildings'>['id'];
+}
 
-const { buildingId } = Astro.props;
-const buildingData = await getBuildingData(buildingId ?? '');
+const { building } = Astro.props;
+
+const buildingData = await getBuildingData(building);
 
 const research = (
   await getCollection('research', (filter) =>
     filter.data.effects
-      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === buildingId)
+      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === building)
       : false
   )
 ).slice(0, 1)[0];
@@ -26,35 +30,25 @@ const workers = buildingData.data.workers ?? [];
 const recipes = buildingData.data.recipes ?? [];
 ---
 
-<Wrapper class="mb-3">
+<Wrapper>
   <slot />
 
   <Infobox slot="infobox" class="flex-shrink-1">
-    <BuildingName slot="title" {...Astro.props} />
+    <BuildingName
+      slot="title"
+      frontmatter={{
+        type: 'building',
+        building: {
+          collection: 'buildings',
+          id: building
+        }
+      }}
+      name={building}
+    />
 
     <div class="text-center">
-      <Image src={buildingData.data.icon} alt={buildingData.data.name} width={300} />
+      <Image src={buildingData.data.icon} alt={buildingData.data.name} width={300} loading="eager" />
     </div>
-
-    {
-      workers.length !== 0 && (
-        <>
-          <hr />
-          <div class="grid" style="--bs-columns: 2;">
-            <p class="m-0">
-              <b>{workers.length > 1 ? 'Workers:' : 'Worker:'}</b>
-            </p>
-            <div>
-              {workers.map((worker) => (
-                <p class="m-0">
-                  <WorkerName name={worker.id} />
-                </p>
-              ))}
-            </div>
-          </div>
-        </>
-      )
-    }
 
     <RecipeGrid recipes={recipes} />
 
@@ -71,5 +65,19 @@ const recipes = buildingData.data.recipes ?? [];
         )
       }
     </p>
+
+    {
+      workers.length !== 0 && (
+        <>
+          <hr />
+          {workers.map((worker, idx) => (
+            <>
+              <BuildingInfoboxWorker buildingId={buildingData.id} workerId={worker.id} />
+              {idx !== workers.length - 1 && <hr />}
+            </>
+          ))}
+        </>
+      )
+    }
   </Infobox>
 </Wrapper>

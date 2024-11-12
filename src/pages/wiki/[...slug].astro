@@ -1,5 +1,8 @@
 ---
+import '../../css/codeblock.scss';
+
 import Meta from '@components/Meta.astro';
+import PageContent from '@components/wiki/PageContent.astro';
 import Layout from '@layouts/Default.astro';
 import { getNewestVersion } from '@utils/version';
 import type { AstroComponentFactory } from 'astro/runtime/server/render/index.js';
@@ -9,11 +12,12 @@ import { getCollection, getEntry } from 'astro:content';
 import { getSectionTitle, getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
 
 interface SectionGroupData {
+  slug: CollectionEntry<'wiki'>['slug'];
   data: Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
   initialSection: { title: string; slug: string };
   sections: { title: string; slug: string }[];
   hasContent: boolean;
-  Content: (props: Record<string, any>) => AstroComponentFactory;
+  Content: (props: Record<string, unknown>) => AstroComponentFactory;
 }
 
 export async function getStaticPaths() {
@@ -33,7 +37,6 @@ if (entry.data.type === 'section-group') {
 
 const title = await getWikiTitle(entry);
 const image = await getWikiImage(entry);
-const { Content } = await entry.render();
 
 let groupData: SectionGroupData | undefined = undefined;
 if (entry.data.type === 'section') {
@@ -57,6 +60,7 @@ if (entry.data.type === 'section') {
   const { Content: GroupContent } = await foundEntry.render();
 
   groupData = {
+    slug: foundEntry.slug,
     data: foundEntryData,
     initialSection: {
       title: await getSectionTitle(initialSection, false),
@@ -83,7 +87,7 @@ const description = await getWikiDescription(entry);
   {
     groupData && (
       <>
-        <groupData.Content frontmatter={groupData.data} />
+        <groupData.Content slug={groupData.slug} frontmatter={groupData.data} />
         {groupData.hasContent && <hr />}
       </>
     )
@@ -106,7 +110,7 @@ const description = await getWikiDescription(entry);
             <hr class="dropdown-divider" />
           </li>
           {groupData.sections
-            .filter((section) => groupData!.data.initialSection.slug !== section.slug)
+            .filter((section) => groupData.data.initialSection.slug !== section.slug)
             .map(async (section) => (
               <li>
                 <a class="dropdown-item" href={`/wiki/${section.slug}`}>
@@ -119,7 +123,7 @@ const description = await getWikiDescription(entry);
     )
   }
 
-  <Content frontmatter={entry.data} />
+  <PageContent page={entry} />
 
   <hr />
   <p class="text-center">

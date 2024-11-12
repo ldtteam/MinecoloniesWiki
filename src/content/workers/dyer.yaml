@@ -4,10 +4,10 @@ description: The Dyer is able to turn blocks like wool into their dyed variants.
 icon: "@assets/images/wiki/workers/dyer/male/default-a.png"
 type: crafter
 traits:
-  primary: Creativity
-  secondary: Dexterity
-effects:
-  primary: Increases chance of decreasing materials needed
-  secondary: Faster crafting
-buildings:
-  - dyer
+  primary:
+    name: Creativity
+    effect: Increases chance of decreasing materials needed
+  secondary:
+    name: Dexterity
+    effect: Faster crafting
+primaryBuilding: dyer

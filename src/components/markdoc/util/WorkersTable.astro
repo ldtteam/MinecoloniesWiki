@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+
+import WorkerName from '../names/WorkerName.astro';
+
+const workers = await getCollection('workers');
+---
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Worker</th>
+      <th>Primary Skill</th>
+      <th>Primary Skill Effect</th>
+      <th>Secondary Skill</th>
+      <th>Secondary Skill Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      workers.map((worker) => (
+        <tr>
+          <td>
+            <WorkerName name={worker.id} />
+          </td>
+          <td>{worker.data.traits.primary?.name ?? '-'}</td>
+          <td>{worker.data.traits.primary?.effect ?? '-'}</td>
+          <td>{worker.data.traits.secondary?.name ?? '-'}</td>
+          <td>{worker.data.traits.secondary?.effect ?? '-'}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>

@@ -42,9 +42,7 @@ export const GET: APIRoute = async ({ params }) => {
       resolve(new Response(archive.read()));
     });
 
-    archive.on('error', function (err) {
-      reject(err);
-    });
+    archive.on('error', reject);
 
     archive.append(packMcMetaTemplate(data.data.name), {
       name: 'pack.mcmeta'

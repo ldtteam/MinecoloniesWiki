@@ -4,33 +4,9 @@ row1:
   item2: minecraft/stick
   item3: minecraft/stick
 row2:
-  item1:
-    - minecraft/oak_planks
-    - minecraft/spruce_planks
-    - minecraft/birch_planks
-    - minecraft/jungle_planks
-    - minecraft/acacia_planks
-    - minecraft/dark_oak_planks
-    - minecraft/crimson_planks
-    - minecraft/warped_planks
-  item2:
-    - minecraft/oak_planks
-    - minecraft/spruce_planks
-    - minecraft/birch_planks
-    - minecraft/jungle_planks
-    - minecraft/acacia_planks
-    - minecraft/dark_oak_planks
-    - minecraft/crimson_planks
-    - minecraft/warped_planks
-  item3:
-    - minecraft/oak_planks
-    - minecraft/spruce_planks
-    - minecraft/birch_planks
-    - minecraft/jungle_planks
-    - minecraft/acacia_planks
-    - minecraft/dark_oak_planks
-    - minecraft/crimson_planks
-    - minecraft/warped_planks
+  item1: tags/planks
+  item2: tags/planks
+  item3: tags/planks
 row3:
   item1: minecraft/stick
   item2: minecraft/stick

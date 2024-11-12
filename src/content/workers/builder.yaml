@@ -4,10 +4,10 @@ description: The Builder is the most vital worker in your colony, the Builder wi
 icon: "@assets/images/wiki/workers/builder/male/default-a.png"
 type: other
 traits:
-  primary: Adaptability
-  secondary: Athletics
-effects:
-  primary: Faster block placing
-  secondary: Faster block breaking
-buildings:
-  - builder
+  primary:
+    name: Adaptability
+    effect: Faster block placing
+  secondary:
+    name: Athletics
+    effect: Faster block breaking
+primaryBuilding: builder

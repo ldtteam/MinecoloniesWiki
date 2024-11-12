@@ -4,11 +4,10 @@ description: The Courier is a vital worker for the automation of your colony, Co
 icon: "@assets/images/wiki/workers/courier/male/default-a.png"
 type: other
 traits:
-  primary: Agility
-  secondary: Adaptability
-effects:
-  primary: Faster run speed
-  secondary: More huts visited on each trip
-buildings:
-  - deliveryman
-  - warehouse
+  primary:
+    name: Agility
+    effect: Faster run speed
+  secondary:
+    name: Adaptability
+    effect: More huts visited on each trip
+primaryBuilding: deliveryman

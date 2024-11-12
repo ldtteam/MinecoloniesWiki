@@ -4,6 +4,5 @@ description: The Restaurant will ensure that your citizens are well fed, make su
 icon: "@assets/images/wiki/items/minecolonies/blockhutcook.png"
 workers:
   - cook
-  - assistantcook
 recipes:
   - minecolonies/blockhutcook

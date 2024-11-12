@@ -4,10 +4,10 @@ description: The Cowhand is responsible for herding your cows.
 icon: "@assets/images/wiki/workers/cowhand/male/default-a.png"
 type: animals
 traits:
-  primary: Athletics
-  secondary: Stamina
-effects:
-  primary: More damage per attack
-  secondary: Cows grow up faster
-buildings:
-  - cowhand
+  primary:
+    name: Athletics
+    effect: More damage per attack
+  secondary:
+    name: Stamina
+    effect: Cows grow up faster
+primaryBuilding: cowhand

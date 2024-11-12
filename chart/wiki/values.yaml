@@ -19,6 +19,7 @@ ingress:
     - wiki.minecolonies.com
     - minecolonies.ldtteam.com
     - minecolonies.com
+    - www.minecolonies.com
 
 service:
   type: ClusterIP

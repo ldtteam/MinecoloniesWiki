@@ -8,25 +8,7 @@ row2:
   item2: minecraft/stone_slab
   item3: minecraft/stone_slab
 row3:
-  item1:
-    - minecraft/oak_log
-    - minecraft/spruce_log
-    - minecraft/birch_log
-    - minecraft/jungle_log
-    - minecraft/acacia_log
-    - minecraft/dark_oak_log
-  item2:
-    - minecraft/oak_log
-    - minecraft/spruce_log
-    - minecraft/birch_log
-    - minecraft/jungle_log
-    - minecraft/acacia_log
-    - minecraft/dark_oak_log
-  item3:
-    - minecraft/oak_log
-    - minecraft/spruce_log
-    - minecraft/birch_log
-    - minecraft/jungle_log
-    - minecraft/acacia_log
-    - minecraft/dark_oak_log
+  item1: tags/logs
+  item2: tags/logs
+  item3: tags/logs
 output: domum_ornamentum/architects_cutter

@@ -3,15 +3,13 @@ type: building
 building: mysticalsite
 ---
 
-{% building_infobox %}
 The Mystical Site is a simple building that increase a colony's overall [happiness](/wiki/systems/happinessandsaturation) level. It has no worker and increases colonists' happiness just by existing.
 
 The happiness bonus does not stack - only the highest level of Mystical Site in the colony will provide a bonus. While there is no benefit to building multiple Mysical Sites, one is not prevented from doing so should they wish.
 
-The {% worker name="undertaker" /%} will visit the Mystical Site when there are no colonists to bury. Doing so will increase their Mana skill and, as such, their chance of resurrecting a killed citizen.
-{% /building_infobox %}
+The {% building /%} also gives a bonus to the maximum resurrection chance of the {% worker name="undertaker" /%}
 
-## {% building /%} GUI
+## Interface
 
 {% building_gui_content_block_custom order=1 header="main interface" imageKey="main" imageAlt="Main" %}
 - Header:

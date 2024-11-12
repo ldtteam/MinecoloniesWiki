@@ -3,7 +3,6 @@ type: item
 item: structurize/tag_tool
 ---
 
-{% item_infobox %}
 The Tag Tool is a creative-only item used to help build custom [schematics](/wiki/tutorials/schematics). It allows "tags" (specific words or phrases) to be attached to specific blocks in the schematic. Any tag can be attached to any block, but only specific ones will do something. Some building types require specific tags in order to function correctly, while others are optional.
 
 ## Using the Tag Tool
@@ -61,17 +60,21 @@ The following tags are currently implemented (more may be added from time to tim
 
     The following tags are only used by specific building types:
 
-    | Tag      | Used By                             | Amount      | Description                                                                                                               |
-    | -------- | ----------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-    | `sit`    | {% building name="cook" /%}         | 0-many      | A "chair" where colonists will sit to eat their food                                                                      |
-    | `sit`    | {% building name="tavern" /%}       | 0-many (~4) | A "chair" where visitors will occasionally sit                                                                            |
-    | `sit`    | (leisure)                           | 0-many      | A "chair" where colonists will occasionally sit                                                                           |
-    | `cobble` | {% building name="miner" /%}        | Always 1    | The block behind the top-most ladder at the start of the mineshaft (traditionally cobblestone, but may be something else) |
-    | `ladder` | {% building name="miner" /%}        | Always 1    | The top-most ladder at the start of the mineshaft                                                                         |
-    | `bamboo` | {% building name="plantation" /%}   | level-based | A block that bamboo can be planted on ([legacy](/wiki/tutorials/schematics#plantation-fields))                            |
-    | `cactus` | {% building name="plantation" /%}   | level-based | A block that cactus can be planted on ([legacy](/wiki/tutorials/schematics#plantation-fields))                            |
-    | `sugar`  | {% building name="plantation" /%}   | level-based | A block that sugarcane can be planted on ([legacy](/wiki/tutorials/schematics#plantation-fields))                         |
-    | `portal` | {% building name="netherworker" /%} | Always 1    | An obsidian block in the bottom of the nether portal (with air above)                                                     |
-    | `vault`  | {% building name="netherworker" /%} | 0-1         | A block in an enclosed room that the nether miner can stand on while "away"                                               |
-    | `work`   | {% building name="archery" /%}      | level-based | The block the archer squire stands on to shoot at targets (Note: If no tags are used, they look for glowstone.)           |
-{% /item_infobox %}
+    | Tag            | Used By                             | Amount      | Description                                                                                                                               |
+    | ---------------| ----------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+    | `sit`          | {% building name="cook" /%}         | 0-many      | A "chair" where colonists will sit to eat their food                                                                                      |
+    | `sit`          | {% building name="tavern" /%}       | 0-many (~4) | A "chair" where visitors will occasionally sit                                                                                            |
+    | `sit`          | (leisure)                           | 0-many      | A "chair" where colonists will occasionally sit                                                                                           |
+    | `cobble`       | {% building name="miner" /%}        | Always 1    | The block behind the top-most ladder at the start of the mineshaft (traditionally cobblestone, but may be something else)                 |
+    | `ladder`       | {% building name="miner" /%}        | Always 1    | The top-most ladder at the start of the mineshaft                                                                                         |
+    | `bamboo`       | {% building name="plantation" /%}   | level-based | A block that bamboo can be planted on ([legacy](/wiki/tutorials/schematics#plantation-fields))                                            |
+    | `cactus`       | {% building name="plantation" /%}   | level-based | A block that cactus can be planted on ([legacy](/wiki/tutorials/schematics#plantation-fields))                                            |
+    | `sugar`        | {% building name="plantation" /%}   | level-based | A block that sugarcane can be planted on ([legacy](/wiki/tutorials/schematics#plantation-fields))                                         |
+    | `portal`       | {% building name="netherworker" /%} | Always 1    | An obsidian block in the bottom of the nether portal (with air above)                                                                     |
+    | `vault`        | {% building name="netherworker" /%} | 0-1         | A block in an enclosed room that the nether miner can stand on while "away"                                                               |
+    | `work`         | {% building name="archery" /%}      | level-based | The block the {% worker name="archer" /%} in Training stands on to shoot at targets (Note: If no tags are used, they look for glowstone.) |
+    | `job=miner`    | {% building name="miner" /%}        | Always 1    | Sets the mine's worker to be only {% worker name="miner" /%}                                                                              |
+    | `job=quarrier` | {% building name="miner" /%}        | Always 1    | Sets the mine's worker to be only {% worker name="quarrier" /%}                                                                           |
+    | `job=knight`   | {% building name="guardtower" /%}   | Always 1    | Sets the Guard Tower's worker to be only {% worker name="knight" /%}                                                                      |
+    | `job=ranger`   | {% building name="guardtower" /%}   | Always 1    | Sets the Guard Tower's worker to be only {% worker name="archer" /%}                                                                      |
+    | `job=druid`    | {% building name="guardtower" /%}   | Always 1    | Sets the Guard Tower's worker to be only {% worker name="druid" /%}                                                                       |

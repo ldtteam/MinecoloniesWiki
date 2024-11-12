@@ -3,8 +3,16 @@ import { type CollectionEntry, getEntry } from 'astro:content';
 import { isVersionHigherOrSame } from './version';
 
 export interface MarkdocBuildingComponent {
-  buildingId?: string;
-  name: string;
+  frontmatter?: CollectionEntry<'wiki'>['data'];
+  name?: string;
+}
+
+export async function getBuildingIdFromFrontmatter(frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
+  let buildingId: CollectionEntry<'buildings'>['id'] | undefined;
+  if (frontmatter?.type === 'building') {
+    buildingId = frontmatter.building.id;
+  }
+  return buildingId;
 }
 
 /**

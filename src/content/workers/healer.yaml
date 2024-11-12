@@ -1,13 +1,13 @@
-name: Healer
-plural: Healers
-description: The Healer works in your Hospital to treat patients coming to the Hospital.
+name: Doctor
+plural: Doctors
+description: The Doctor works in your Hospital to treat patients coming to the Hospital.
 icon: "@assets/images/wiki/workers/healer/male/default-a.png"
 type: other
 traits:
-  primary: Mana
-  secondary: Knowledge
-effects:
-  primary: Faster walking between beds
-  secondary: Increases chance of decreasing materials needed
-buildings:
-  - hospital
+  primary:
+    name: Mana
+    effect: Faster walking between beds
+  secondary:
+    name: Knowledge
+    effect: Increases chance of decreasing materials needed
+primaryBuilding: hospital

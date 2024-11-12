@@ -4,10 +4,10 @@ description: The Florist will grow flowers for you, they need compost from the C
 icon: "@assets/images/wiki/workers/florist/male/default-a.png"
 type: gatherer
 traits:
-  primary: Dexterity
-  secondary: Agility
-effects:
-  primary: Greater chance to successfully harvest flowers
-  secondary: Decreases flower growth time
-buildings:
-  - florist
+  primary:
+    name: Dexterity
+    effect: Greater chance to successfully harvest flowers
+  secondary:
+    name: Agility
+    effect: Decreases flower growth time
+primaryBuilding: florist

@@ -4,10 +4,10 @@ description: The Baker will make several products like bread, cookies, pastries,
 icon: "@assets/images/wiki/workers/baker/male/default-a.png"
 type: crafter
 traits:
-  primary: Knowledge
-  secondary: Dexterity
-effects:
-  primary: Increases chance of decreasing materials needed
-  secondary: Faster crafting and smelting
-buildings:
-  - baker
+  primary:
+    name: Knowledge
+    effect: Increases chance of decreasing materials needed
+  secondary:
+    name: Dexterity
+    effect: Faster crafting and smelting
+primaryBuilding: baker

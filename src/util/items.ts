@@ -3,6 +3,8 @@ import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import minecraftData, { type Item } from 'minecraft-data';
 
+import { isWikiPageOfType, type WikiPageEntry } from './util';
+
 interface ParsedItemId {
   namespace: string;
   id: string;
@@ -20,6 +22,25 @@ type ItemFetcher = (
   requireImages: boolean
 ) => Promise<ItemFetcherResponse | undefined>;
 
+export interface WikiItemPageDirect {
+  type: 'direct';
+  page?: WikiPageEntry<'item'>;
+  item: CollectionEntry<'items'>;
+}
+
+export interface WikiItemPageCombined {
+  type: 'combined';
+  page: WikiPageEntry<'item-combined'>;
+  item: CollectionEntry<'items'>;
+}
+
+export interface WikiItemPageCombinedSelf {
+  type: 'combined-self';
+  page: WikiPageEntry<'item-combined'>;
+}
+
+type WikiItemPage = WikiItemPageDirect | WikiItemPageCombined | WikiItemPageCombinedSelf;
+
 export interface ItemVersionData extends ParsedItemId {
   name: string;
   link: string | undefined;
@@ -32,45 +53,91 @@ export interface ItemData extends ParsedItemId {
   data: ItemVersionData[];
 }
 
-const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
-  const itemPath = item.namespace + '/' + item.id;
-  const itemData = await getEntry('items', itemPath);
-  if (itemData === undefined) {
-    return undefined;
+export function parseItemId(name: string, defaultNamespace = 'minecraft'): ParsedItemId {
+  if (name.includes('/')) {
+    const [namespace, id] = name.split('/', 2);
+    return {
+      namespace,
+      id
+    };
+  }
+  return {
+    namespace: defaultNamespace,
+    id: name
+  };
+}
+
+async function extractWikiPageData(
+  page: CollectionEntry<'wiki'>,
+  name: ParsedItemId
+): Promise<WikiItemPage | undefined> {
+  if (isWikiPageOfType(page, 'item') && page.data.item.id.split('/')[1] === name.id) {
+    const itemData = await getEntry('items', page.data.item.id);
+    return {
+      type: 'direct',
+      page,
+      item: itemData
+    };
+  }
+  if (isWikiPageOfType(page, 'item-combined') && page.slug === 'items/' + name.id) {
+    return {
+      type: 'combined-self',
+      page
+    };
+  }
+  if (isWikiPageOfType(page, 'item-combined')) {
+    const subItem = page.data.items.find((item) => item.id.split('/')[1] === name.id);
+    if (subItem !== undefined) {
+      const itemData = await getEntry('items', subItem.id);
+      return {
+        type: 'combined',
+        page,
+        item: itemData
+      };
+    }
+  }
+  if (isWikiPageOfType(page, 'building') && name.id === 'blockhut' + page.data.building.id) {
+    const itemData = await getEntry('items', name.namespace + '/' + name.id);
+    if (itemData !== undefined) {
+      return {
+        type: 'direct',
+        item: itemData
+      };
+    }
+  }
+}
+
+export async function getWikiPageForItem(name: ParsedItemId): Promise<WikiItemPage | undefined> {
+  const pages = await getCollection('wiki');
+  const itemPages = await Promise.all(pages.map((page) => extractWikiPageData(page, name)));
+  const filteredPages = itemPages.filter((f) => f !== undefined);
+
+  if (filteredPages.length > 1) {
+    throw new Error(
+      `Multiple pages refer to item '${name.id}', make sure only one page shows information for this given item.`
+    );
   }
 
-  const itemPage = await getCollection('wiki', (page) => {
-    if (page.data.type === 'item' && page.data.item.id === itemPath) {
-      return true;
-    }
-    if (page.data.type === 'item-combined' && page.data.items.findIndex((item) => item.id === itemPath) >= 0) {
-      return true;
-    }
-    return false;
-  });
+  return filteredPages.length > 0 ? filteredPages[0] : undefined;
+}
 
-  if (itemPage.length > 0) {
-    const page = itemPage[0];
-    if (page.data.type === 'item') {
+const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
+  const itemPage = await getWikiPageForItem(item);
+
+  if (itemPage !== undefined) {
+    if (itemPage.type === 'direct') {
       return {
-        name: itemData.data.name,
-        icons: requireImages ? itemData.data.icons : [],
-        link: '/wiki/items/' + item.id
+        name: itemPage.item.data.name,
+        icons: requireImages ? itemPage.item.data.icons : [],
+        link: itemPage.page ? '/wiki/' + itemPage.page.slug : undefined
       };
-    } else if (page.data.type === 'item-combined') {
-      const item = page.data.items.find((f) => f.id === itemPath)!;
+    } else if (itemPage.type === 'combined') {
       return {
-        name: itemData.data.name,
-        icons: requireImages ? itemData.data.icons : [],
-        link: '/wiki/items/' + item.id
+        name: itemPage.item.data.name,
+        icons: requireImages ? itemPage.item.data.icons : [],
+        link: '/wiki/' + itemPage.page.slug
       };
     }
-  } else {
-    return {
-      name: itemData.data.name,
-      icons: requireImages ? itemData.data.icons : [],
-      link: undefined
-    };
   }
 };
 
@@ -103,15 +170,6 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
       const extension = imageExtensionOverrides[item.id] ?? 'png';
       const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
 
-      if (extension == 'gif') {
-        // Gifs are not optimizable by Squoosh, so we have to forward them as raw images
-        return {
-          name: itemData.displayName,
-          icons: [url],
-          link: `https://minecraft.wiki/w/${parsedItemName}`
-        };
-      }
-
       const image = await getImage({
         src: url,
         width: 32,
@@ -140,11 +198,10 @@ const fetchersByNamespace: Record<string, ItemFetcher> = {
 export async function getItemData(item: string, requireImages = false): Promise<ItemData> {
   const versions = await getCollection('versions');
 
-  const [namespace, id] = item.split('/');
+  const itemId = parseItemId(item);
 
   const results: ItemData = {
-    namespace,
-    id,
+    ...itemId,
     defaultName: '',
     data: []
   };
@@ -152,29 +209,28 @@ export async function getItemData(item: string, requireImages = false): Promise<
   let highestVersionName = '';
   let highestVersionOrder = 0;
   for (const version of versions) {
-    const fetcher = fetchersByNamespace[namespace];
+    const fetcher = fetchersByNamespace[itemId.namespace];
 
     if (fetcher === undefined) {
-      throw new Error(`Data fetcher for namespace '${namespace}' does not exist.`);
+      throw new Error(`Data fetcher for namespace '${itemId.namespace}' does not exist.`);
     }
 
     try {
-      const existingResult = results.data.find((f) => f.namespace === namespace && f.id === id);
+      const existingResult = results.data.find((f) => f.namespace === itemId.namespace && f.id === itemId.id);
 
       let versionName: string;
       if (existingResult) {
         existingResult.versions.push(version);
         versionName = existingResult.name;
       } else {
-        const data = await fetcher(version, { namespace, id }, requireImages);
+        const data = await fetcher(version, itemId, requireImages);
         if (data === undefined) {
           continue;
         }
 
         results.data.push({
           ...data,
-          namespace,
-          id,
+          ...itemId,
           versions: [version]
         });
 

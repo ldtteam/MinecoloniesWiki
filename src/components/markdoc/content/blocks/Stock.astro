@@ -1,6 +1,6 @@
 ---
-import BuildingName from '@components/markdoc/BuildingName.astro';
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+import BuildingName from '@components/markdoc/names/BuildingName.astro';
 
 import type { BaseBuildingContentBlockProps } from '../types';
 
@@ -9,7 +9,7 @@ type Props = BaseBuildingContentBlockProps;
 
 <BuildingContentBlock {...Astro.props} header="minimum stock" imageKey="stock" imageAlt="Minimum stock">
   <p>
-    Use this button to tell the <BuildingName {...Astro.props} /> to keep a minimum stock on hand. Set items will be
-    displayed above the button.
+    Use this button to tell the <BuildingName {...Astro.props} /> to keep a minimum stock on hand. Set items will be displayed
+    above the button.
   </p>
 </BuildingContentBlock>

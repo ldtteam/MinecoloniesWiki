@@ -4,10 +4,10 @@ description: The Composter is responsible for recycling organic materials into c
 icon: "@assets/images/wiki/workers/composter/male/default-a.png"
 type: gatherer
 traits:
-  primary: Stamina
-  secondary: Athletics
-effects:
-  primary: Faster composting
-  secondary: Faster barrel filling
-buildings:
-  - composter
+  primary:
+    name: Stamina
+    effect: Faster composting
+  secondary:
+    name: Athletics
+    effect: Faster barrel filling
+primaryBuilding: composter

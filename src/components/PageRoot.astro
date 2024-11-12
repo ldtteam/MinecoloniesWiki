@@ -28,6 +28,11 @@ for (const [fullPath, image] of Object.entries(images)) {
   </div>
 </div>
 
+<script>
+  import 'bootstrap/js/dist/offcanvas';
+  import 'bootstrap/js/dist/dropdown';
+</script>
+
 <style define:vars={imageSources}>
   .bgscroll {
     background:
@@ -95,13 +100,3 @@ for (const [fullPath, image] of Object.entries(images)) {
     }
   }
 </style>
-
-<script>
-  import * as bootstrap from 'bootstrap';
-
-  function loadTooltips() {
-    const tooltipList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    tooltipList.forEach((element) => new bootstrap.Tooltip(element));
-  }
-  document.addEventListener('astro:page-load', loadTooltips);
-</script>

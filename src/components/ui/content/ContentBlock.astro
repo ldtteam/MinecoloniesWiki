@@ -8,7 +8,7 @@ const totalColCount = 12;
 const { cols = 4 } = Astro.props;
 ---
 
-<div class="grid py-3">
+<div class="grid py-3" style="--bs-columns: 12;">
   <div class={`g-col-md-${cols} g-col-12`}>
     <slot name="left" />
   </div>
@@ -16,3 +16,8 @@ const { cols = 4 } = Astro.props;
     <slot />
   </div>
 </div>
+
+<style lang="scss">
+  @import '../../../css/bootstrap-vars.scss';
+  @import '../../../../node_modules/bootstrap/scss/_grid.scss';
+</style>

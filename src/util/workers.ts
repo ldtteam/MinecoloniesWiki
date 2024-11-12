@@ -1,10 +1,21 @@
-import type { CollectionEntry } from 'astro:content';
+import { type CollectionEntry, getEntry } from 'astro:content';
 
 import { isVersionHigherOrSame } from './version';
 
 export interface MarkdocWorkerComponent {
-  workerId?: string;
-  name: string;
+  frontmatter?: CollectionEntry<'wiki'>['data'];
+  name?: string;
+}
+
+export async function getWorkerIdFromFrontmatter(frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
+  let workerId: CollectionEntry<'workers'>['id'] | undefined;
+  if (frontmatter?.type === 'building') {
+    const building = await getEntry('buildings', frontmatter.building.id);
+    if (building.data.workers?.length === 1) {
+      workerId = building.data.workers[0].id;
+    }
+  }
+  return workerId;
 }
 
 /**
@@ -44,8 +55,4 @@ export async function getWorkerName(
     }
   }
   return name;
-}
-
-export function getWorkerLink(worker: CollectionEntry<'workers'>) {
-  return `/wiki/workers/${worker.id}`;
 }

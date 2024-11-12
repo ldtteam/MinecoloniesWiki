@@ -1,0 +1,14 @@
+---
+import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
+import { getItemData, type WikiItemPageDirect } from '@utils/items';
+
+interface Props {
+  currentPage: string;
+  page: WikiItemPageDirect;
+}
+
+const { currentPage, page } = Astro.props;
+const itemData = await getItemData(page.item.id);
+---
+
+<VersionedItemName data={itemData} link={currentPage !== page.page?.slug} />

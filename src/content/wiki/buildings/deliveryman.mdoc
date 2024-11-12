@@ -3,10 +3,9 @@ type: building
 building: deliveryman
 ---
 
-{% building_infobox %}
-The Courier runs back and forth from the {% building name="warehouse" /%} to all the worker huts in your colony, delivering materials to workers and putting finished products in the Warehouse. Each Courier needs their own hut, and you can have up to 10 Couriers per Warehouse, depending on the Warehouse's level (2 per Warehouse level).
+The {% worker /%} runs back and forth from the {% building name="warehouse" /%} to all the worker huts in your colony, delivering materials to workers and putting finished products in the {% building name="warehouse" /%}. Each {% worker /%} needs their own hut, and you can have up to 10 {% worker plural=true /%} per {% building name="warehouse" /%}, depending on the {% building name="warehouse" /%} its level (2 per {% building name="warehouse" /%} level).
 
-The level of the Courier's Hut will dictate how many items the Courier can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
+The level of the {% building /%} will dictate how many items the {% worker /%} can deliver, so if you want them to carry more materials/tools, upgrade their hut. Upgrading the hut will also increase the amount of requests they can keep track of at a time.
 
 | Building Level | Max Stacks Carried |
 | -------------- | ------------------ |
@@ -14,17 +13,16 @@ The level of the Courier's Hut will dictate how many items the Courier can deliv
 | 2              | 3                  |
 | 3              | 4                  |
 | 4              | 5                  |
-| 5              | unlimited          |
+| 5              | Unlimited          |
 
 
-The greater a Courier's Agility skill, the faster they'll run. The greater their Adaptability skill, the more huts they can visit before going back to the Warehouse.
+The greater a {% worker /%} its Agility skill, the faster they'll run. The greater their Adaptability skill, the more huts they can visit before going back to the {% building name="warehouse" /%}.
 
-**Note:** You MUST build the Warehouse to at least level 1 so the Courier can do their work.
+> **Note:** You **must** build the {% building name="warehouse" /%} to at least level 1 so the {% worker /%} can do their work.
 
-**Note:** If you have multiple Warehouses, Couriers will only see the items in the Warehouse they are assigned to.
-{% /building_infobox %}
+> **Note:** If you have multiple {% building name="warehouse" plural=true /%}, {% worker plural=true /%} will only see the items in the {% building name="warehouse" /%} they are assigned to.
 
-## {% building /%} GUI
+## Interface
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_tasks order=2 /%}
