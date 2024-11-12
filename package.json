@@ -34,7 +34,7 @@
     "minecraft-data": "^3.66.0",
     "purgecss": "^6.0.0",
     "sharp": "^0.33.5",
-    "svelte": "^4.2.18",
+    "svelte": "^4.2.19",
     "swiper": "^11.1.4",
     "vite": "^5.3.2"
   },
