@@ -82,6 +82,7 @@ jobs:
   chart:
     needs:
       - tag
+      - publish
     permissions:
       contents: write
       packages: write
