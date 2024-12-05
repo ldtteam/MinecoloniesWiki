@@ -1,32 +1,30 @@
 // @ts-check
 import path from 'path';
 import { fileURLToPath } from 'url';
-
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import eslintPluginAstro from 'eslint-plugin-astro';
-
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default ts.config(
   js.configs.recommended,
-  eslintPluginPrettierRecommended,
+  ts.configs.eslintRecommended,
   ...ts.configs.strict,
   ...eslintPluginAstro.configs.recommended,
+  eslintPluginPrettierRecommended,
   {
     name: 'Ignore patterns',
-    ignores: ['.astro', '.vscode', 'dist', 'minecolonies', 'node_modules', 'public']
+    ignores: ['.astro', '.vscode', 'chart', 'dist', 'minecolonies', 'node_modules', 'public', 'pnpm-lock.yaml']
   },
   {
     name: 'Application rules (Astro)',
     files: ['**/*.astro'],
     plugins: {
-      '@typescript-eslint': typescriptPlugin,
+      '@typescript-eslint': ts.plugin,
       'simple-import-sort': simpleImportSort
     },
     rules: {
@@ -52,7 +50,7 @@ export default ts.config(
       }
     },
     plugins: {
-      '@typescript-eslint': typescriptPlugin,
+      '@typescript-eslint': ts.plugin,
       'simple-import-sort': simpleImportSort
     },
     rules: {
