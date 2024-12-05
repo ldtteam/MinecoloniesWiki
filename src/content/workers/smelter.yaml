@@ -6,7 +6,7 @@ type: gatherer
 traits:
   primary:
     name: Athletics
-    effect: Amount of furnaces that can be used
+    effect: Faster smelting
   secondary:
     name: Strength
     effect: Increases chance of doubling or tripling ores
@@ -14,5 +14,7 @@ primaryBuilding: smeltery
 overrides:
   - version: "1.19"
     traits:
+      primary:
+        effect: Amount of furnaces that can be used
       secondary:
         effect: Faster smelting
