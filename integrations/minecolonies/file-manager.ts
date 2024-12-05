@@ -50,10 +50,15 @@ export async function getAllJsonFiles<T extends object>(directory: string): Prom
  */
 export async function writeContentCollectionFile(key: string, name: string, content: string): Promise<boolean> {
   const fullPath = path.resolve(`src/content/${key}/${name}`);
-  const currentContent = await fs.readFile(fullPath, 'utf-8');
-  if (currentContent === content) {
-    return false;
+  try {
+    const currentContent = await fs.readFile(fullPath, 'utf-8');
+    if (currentContent === content) {
+      return false;
+    }
+  } catch {
+    // Ignore error
+  } finally {
+    await fs.writeFile(fullPath, content);
   }
-  await fs.writeFile(fullPath, content);
   return true;
 }
