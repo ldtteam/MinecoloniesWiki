@@ -1,0 +1,1 @@
+{"tree":"combat","parent":"tactictraining","name":"Coffee","requirements":[{"type":"item","items":["minecraft/golden_carrot"],"quantity":4}],"effects":{"sleeplessmultiplier":1},"researchLevel":2}
