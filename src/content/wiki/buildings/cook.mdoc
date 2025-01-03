@@ -10,12 +10,14 @@ The {% building /%} is where the Cook will cook food, provided they have the nec
 ## Interface
 
 {% building_gui_content_block_main order=1 /%}
-{% building_gui_content_block_crafting_recipes order=2 /%}
-{% building_gui_content_block_smelting_recipes order=3 /%}
-{% building_gui_content_block_stock order=4 /%}
-{% building_gui_content_block_fuel order=5 /%}
-{% building_gui_content_block_item_list order=6 header="food" imageKey="food" imageAlt="Food list" defaultOn=true %}
+{% building_gui_content_block_fuel order=2 /%}
+{% building_gui_content_block_item_list order=3 header="food" imageKey="food" imageAlt="Food list" defaultOn=true %}
 Listed here are food items that will be handed out by the {% worker name="cook" /%}. Disable any you don't want to be handed out or produced.
 However, if a colonist finds a disabled item, they'll still eat it - the {% worker name="cook" /%} just won't hand it out.
+
+Foods are sorted by what level of residence they are prefered. Aditionaly the background color indicates the quality of the food. 
+White is normal, bronze is better. Silver even better and Gold is the best food served.
+
+The cook in the {% building /%} is only able to cook the most basic foods. The more advanced recipies can be baked by the {% worker name="baker" /%}. For the best food items you will need to build a {% building name="kitchen" /%}
 {% /building_gui_content_block_item_list %}
-{% building_gui_content_block_tasks order=7 /%}
+{% building_gui_content_block_stock order=4 /%}
