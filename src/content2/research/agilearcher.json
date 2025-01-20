@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"improvedevasion","name":"Agile Archer","requirements":[{"type":"item","items":["minecraft/diamond"],"quantity":64}],"effects":{"archerarmormultiplier":5},"researchLevel":6}
+{"tree":"combat","parent":"improvedevasion","name":"Agile Archer","requirements":[],"effects":{"archerarmormultiplier":5},"researchLevel":6}

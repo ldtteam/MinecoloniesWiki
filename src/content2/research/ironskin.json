@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"boiledleather","name":"Iron Skin","requirements":[{"type":"building","building":"townhall","level":3},{"type":"item","items":["minecraft/iron_ingot"],"quantity":16}],"effects":{"armordurabilitymultiplier":3},"researchLevel":3}
+{"tree":"combat","parent":"boiledleather","name":"Iron Skin","requirements":[{"type":"building","building":"townhall","level":3}],"effects":{"armordurabilitymultiplier":3},"researchLevel":3}

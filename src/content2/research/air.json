@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"ambition","name":"Scuba","requirements":[{"type":"item","items":["minecraft/heart_of_the_sea"],"quantity":1}],"effects":{"air":1},"researchLevel":2}
+{"tree":"civilian","parent":"ambition","name":"Scuba","requirements":[],"effects":{"air":1},"researchLevel":2}

@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"improvedswords","name":"Squire Training","requirements":[{"type":"building","building":"combatacademy","level":3},{"type":"item","items":["minecraft/shield"],"quantity":4}],"effects":{"blockattacksmultiplier":1},"researchLevel":3}
+{"tree":"combat","parent":"improvedswords","name":"Squire Training","requirements":[{"type":"building","building":"combatacademy","level":3}],"effects":{"blockattacksmultiplier":1},"researchLevel":3}

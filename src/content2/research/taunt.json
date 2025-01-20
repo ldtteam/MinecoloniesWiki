@@ -1,1 +1,1 @@
-{"tree":"combat","name":"Taunt","requirements":[{"type":"building","building":"guardtower","level":1},{"type":"item","items":["minecraft/rotten_flesh"],"quantity":8},{"type":"item","items":["minecraft/bone"],"quantity":8},{"type":"item","items":["minecraft/spider_eye"],"quantity":8}],"effects":{"knighttauntmobsunlock":1},"researchLevel":1}
+{"tree":"combat","name":"Taunt","requirements":[{"type":"building","building":"guardtower","level":1}],"effects":{"knighttauntmobsunlock":1},"researchLevel":1}

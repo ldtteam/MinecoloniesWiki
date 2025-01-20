@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"studious","name":"Scholarly","requirements":[{"type":"building","building":"library","level":4},{"type":"item","items":["minecraft/book"],"quantity":24}],"effects":{"levelingmultiplier":3},"researchLevel":4}
+{"tree":"civilian","parent":"studious","name":"Scholarly","requirements":[{"type":"building","building":"library","level":4}],"effects":{"levelingmultiplier":3},"researchLevel":4}

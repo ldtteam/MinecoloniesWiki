@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"compress","name":"Cast","requirements":[{"type":"item","items":["minecraft/golden_carrot"],"quantity":64}],"effects":{"regenerationmultiplier":5},"researchLevel":6}
+{"tree":"civilian","parent":"compress","name":"Cast","requirements":[],"effects":{"regenerationmultiplier":5},"researchLevel":6}

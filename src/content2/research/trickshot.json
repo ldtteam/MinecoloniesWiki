@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"improvedbows","name":"Trick Shot","requirements":[{"type":"building","building":"archery","level":3},{"type":"item","items":["minecraft/bow"],"quantity":5}],"effects":{"doublearrowsmultiplier":1},"researchLevel":3}
+{"tree":"combat","parent":"improvedbows","name":"Trick Shot","requirements":[{"type":"building","building":"archery","level":3}],"effects":{"doublearrowsmultiplier":1},"researchLevel":3}

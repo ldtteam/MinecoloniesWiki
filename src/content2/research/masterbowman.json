@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"rapidshot","name":"Master Bowman","requirements":[{"type":"item","items":["minecraft/bow"],"quantity":27}],"effects":{"doublearrowsmultiplier":4},"researchLevel":6}
+{"tree":"combat","parent":"rapidshot","name":"Master Bowman","requirements":[],"effects":{"doublearrowsmultiplier":4},"researchLevel":6}

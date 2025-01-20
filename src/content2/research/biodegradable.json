@@ -1,1 +1,1 @@
-{"tree":"technology","name":"Biodegradable","requirements":[{"type":"building","building":"farmer","level":3},{"type":"item","items":["minecraft/bone_meal"],"quantity":64}],"effects":{"blockhutcomposter":1},"researchLevel":1}
+{"tree":"technology","name":"Biodegradable","requirements":[{"type":"building","building":"farmer","level":3}],"effects":{"blockhutcomposter":1},"researchLevel":1}

@@ -1,1 +1,1 @@
-{"tree":"civilian","name":"Stamina","requirements":[{"type":"item","items":["minecraft/carrot"],"quantity":1}],"effects":{"blockhuthospital":1},"researchLevel":1}
+{"tree":"civilian","name":"Stamina","requirements":[],"effects":{"blockhuthospital":1},"researchLevel":1}

@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"stamina","name":"Band Aid","requirements":[{"type":"building","building":"library","level":2},{"type":"item","items":["minecraft/golden_carrot"],"quantity":1}],"effects":{"regenerationmultiplier":1},"researchLevel":2}
+{"tree":"civilian","parent":"stamina","name":"Band Aid","requirements":[{"type":"building","building":"library","level":2}],"effects":{"regenerationmultiplier":1},"researchLevel":2}
