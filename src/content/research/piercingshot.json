@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"penetratingshot","name":"Piercing Shot","requirements":[{"type":"building","building":"guardtower","level":10},{"type":"item","items":["minecraft/flint"],"quantity":64}],"effects":{"archerdamageaddition":3},"researchLevel":4}
+{"tree":"combat","parent":"penetratingshot","name":"Piercing Shot","requirements":[{"type":"building","building":"guardtower","level":10}],"effects":{"archerdamageaddition":3},"researchLevel":4}

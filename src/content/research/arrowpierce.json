@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"arrowuse","name":"Arrow Piercing","requirements":[{"type":"building","building":"archery","level":1},{"type":"item","items":["minecraft/arrow"],"quantity":64},{"type":"item","items":["minecraft/redstone"],"quantity":64}],"effects":{"piercingarrowsunlock":1},"researchLevel":3}
+{"tree":"combat","parent":"arrowuse","name":"Arrow Piercing","requirements":[{"type":"building","building":"archery","level":1}],"effects":{"piercingarrowsunlock":1},"researchLevel":3}

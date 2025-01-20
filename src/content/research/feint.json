@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"regeneration","name":"Feint","requirements":[{"type":"building","building":"guardtower","level":4},{"type":"item","items":["minecraft/emerald"],"quantity":8}],"effects":{"fleeingdamagemultiplier":1},"researchLevel":3}
+{"tree":"combat","parent":"regeneration","name":"Feint","requirements":[{"type":"building","building":"guardtower","level":4}],"effects":{"fleeingdamagemultiplier":1},"researchLevel":3}

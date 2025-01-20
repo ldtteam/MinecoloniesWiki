@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"guardianangel","name":"Guardian Angel II","requirements":[{"type":"item","items":["minecraft/hay_block"],"quantity":256}],"effects":{"healthaddition":6},"researchLevel":6}
+{"tree":"civilian","parent":"guardianangel","name":"Guardian Angel II","requirements":[],"effects":{"healthaddition":6},"researchLevel":6}

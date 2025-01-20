@@ -1,1 +1,1 @@
-{"tree":"civilian","parent":"nimble","name":"Agile","requirements":[{"type":"building","building":"townhall","level":4},{"type":"item","items":["minecraft/rabbit_foot"],"quantity":10}],"effects":{"walkingmultiplier":2},"researchLevel":4}
+{"tree":"civilian","parent":"nimble","name":"Agile","requirements":[{"type":"building","building":"townhall","level":4}],"effects":{"walkingmultiplier":2},"researchLevel":4}

@@ -1,1 +1,1 @@
-{"tree":"combat","parent":"feint","name":"Fear","requirements":[{"type":"building","building":"guardtower","level":8},{"type":"item","items":["minecraft/emerald"],"quantity":16}],"effects":{"fleeingdamagemultiplier":2},"researchLevel":4}
+{"tree":"combat","parent":"feint","name":"Fear","requirements":[{"type":"building","building":"guardtower","level":8}],"effects":{"fleeingdamagemultiplier":2},"researchLevel":4}

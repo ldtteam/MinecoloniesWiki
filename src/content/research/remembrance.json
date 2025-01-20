@@ -1,1 +1,1 @@
-{"tree":"civilian","name":"Remembrance","requirements":[{"type":"building","building":"townhall","level":2},{"type":"item","items":["minecraft/bone"],"quantity":8}],"effects":{"blockhutgraveyard":1},"researchLevel":1}
+{"tree":"civilian","name":"Remembrance","requirements":[{"type":"building","building":"townhall","level":2}],"effects":{"blockhutgraveyard":1},"researchLevel":1}

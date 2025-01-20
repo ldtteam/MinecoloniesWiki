@@ -1,1 +1,1 @@
-{"tree":"civilian","name":"Ambition","requirements":[{"type":"item","items":["minecraft/diamond"],"quantity":1}],"effects":{"blockhutmysticalsite":1},"researchLevel":1}
+{"tree":"civilian","name":"Ambition","requirements":[],"effects":{"blockhutmysticalsite":1},"researchLevel":1}

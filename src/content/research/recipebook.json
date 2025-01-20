@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"cheatsheet","name":"Recipe Book","requirements":[{"type":"building","building":"sawmill","level":3},{"type":"item","items":["minecraft/paper"],"quantity":128}],"effects":{"recipesmultiplier":3},"researchLevel":4}
+{"tree":"technology","parent":"cheatsheet","name":"Recipe Book","requirements":[{"type":"building","building":"sawmill","level":3}],"effects":{"recipesmultiplier":3},"researchLevel":4}

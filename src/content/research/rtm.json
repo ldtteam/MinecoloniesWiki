@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"recipebook","name":"RTM","requirements":[{"type":"building","building":"sawmill","level":4},{"type":"item","items":["minecraft/paper"],"quantity":256}],"effects":{"recipesmultiplier":4},"researchLevel":5}
+{"tree":"technology","parent":"recipebook","name":"RTM","requirements":[{"type":"building","building":"sawmill","level":4}],"effects":{"recipesmultiplier":4},"researchLevel":5}

@@ -1,1 +1,1 @@
-{"tree":"technology","parent":"sieving","name":"Space","requirements":[{"type":"building","building":"miner","level":3},{"type":"item","items":["minecolonies/blockminecoloniesrack"],"quantity":16}],"effects":{"minimumstockmultiplier":1},"researchLevel":3}
+{"tree":"technology","parent":"sieving","name":"Space","requirements":[{"type":"building","building":"miner","level":3}],"effects":{"minimumstockmultiplier":1},"researchLevel":3}
