@@ -1,5 +1,63 @@
-import { z } from 'astro/zod';
-import { defineCollection, type ImageFunction, reference } from 'astro:content';
+import { file, glob } from 'astro/loaders';
+import { defineCollection, type ImageFunction, reference, z } from 'astro:content';
+
+import { researchLoader, researchSchema } from './loaders/research-loader';
+
+// |------|
+// | SITE |
+// |------|
+
+const teamCollection = defineCollection({
+  loader: file('./src/data/site/team.yaml'),
+  schema: z.object({
+    realName: z.string(),
+    uuid: z.string().optional(),
+    tagline: z.string().optional(),
+    role: z.enum(['lead', 'dev', 'art', 'voice', 'web']),
+    sub: z.array(z.string()),
+    inactive: z.boolean(),
+    joinedYear: z.number().optional()
+  })
+});
+
+const sponsorCollection = defineCollection({
+  loader: file('./src/data/site/sponsors.yaml'),
+  schema: z.object({
+    link: z.string(),
+    image: z.string(),
+    imageAlt: z.string()
+  })
+});
+
+const supporterCollection = defineCollection({
+  loader: file('./src/data/site/supporters.yaml'),
+  schema: z.object({
+    id: z.string(),
+    name: z.string()
+  })
+});
+
+const eventCollection = defineCollection({
+  loader: glob({ pattern: '**/*.mdoc', base: './src/content2/events' }),
+  schema: z.object({
+    name: z.string(),
+    description: z.string(),
+    start: z.number(),
+    end: z.number()
+  })
+});
+
+// |------|
+// | WIKI |
+// |------|
+
+const versionsCollection = defineCollection({
+  loader: file('./src/data/wiki/versions.yaml'),
+  schema: z.object({
+    order: z.number(),
+    supported: z.boolean().default(false)
+  })
+});
 
 const regularPage = (image: ImageFunction) =>
   z.object({
@@ -55,8 +113,8 @@ const buildingPage = z.object({
   building: reference('buildings')
 });
 
-export const wikiCollection = defineCollection({
-  type: 'content',
+const wikiCollection = defineCollection({
+  loader: glob({ pattern: '**/*.mdoc', base: './src/content2/wiki' }),
   schema: ({ image }) =>
     z.discriminatedUnion('type', [
       regularPage(image),
@@ -68,8 +126,8 @@ export const wikiCollection = defineCollection({
     ])
 });
 
-export const wikiCategories = defineCollection({
-  type: 'data',
+const wikiCategories = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content2/wiki_categories' }),
   schema: z.object({
     name: z.string(),
     order: z.number()
@@ -83,7 +141,7 @@ const buildingInfo = (image: ImageFunction) =>
     description: z.string(),
     icon: image(),
     workers: reference('workers').array().optional(),
-    recipes: z.array(z.string()).optional(),
+    recipes: reference('recipes').array().optional(),
     settings: z
       .array(
         z.object({
@@ -102,8 +160,8 @@ const buildingInfo = (image: ImageFunction) =>
       .optional()
   });
 
-export const buildingsCollection = defineCollection({
-  type: 'data',
+const buildingsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content2/buildings' }),
   schema: ({ image }) =>
     buildingInfo(image).and(
       z.object({
@@ -146,8 +204,8 @@ const workerInfo = (image: ImageFunction) =>
     primaryBuilding: reference('buildings')
   });
 
-export const workersCollection = defineCollection({
-  type: 'data',
+const workersCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content2/workers' }),
   schema: ({ image }) =>
     workerInfo(image).and(
       z.object({
@@ -166,8 +224,8 @@ export const workersCollection = defineCollection({
     )
 });
 
-export const itemsCollection = defineCollection({
-  type: 'data',
+const itemsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content2/items' }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -187,15 +245,15 @@ const researchCraftingCondition = z.object({
   research: reference('research')
 });
 
-export const tagsCollection = defineCollection({
-  type: 'data',
+const tagsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content2/tags' }),
   schema: z.array(z.string())
 });
 
 const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
 const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
 
-export type RecipeItemEntry = Zod.infer<typeof itemOrArray>;
+export type RecipeItemEntry = z.infer<typeof itemOrArray>;
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),
@@ -228,8 +286,8 @@ const customRecipe = z.object({
     .max(9)
 });
 
-export const recipesCollection = defineCollection({
-  type: 'data',
+const recipesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content2/recipes' }),
   schema: z.discriminatedUnion('type', [shapedRecipe, customRecipe]).and(
     z.object({
       output: z.string(),
@@ -239,8 +297,8 @@ export const recipesCollection = defineCollection({
   )
 });
 
-export const citizenNamesCollection = defineCollection({
-  type: 'data',
+const citizenNamesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/citizen_name_packs' }),
   schema: z.object({
     name: z.string(),
     filename: z.string(),
@@ -255,12 +313,60 @@ export const citizenNamesCollection = defineCollection({
   })
 });
 
-export const metaCollection = defineCollection({
-  type: 'data',
-  schema: z.array(
-    z.object({
-      key: z.string(),
-      value: z.string()
-    })
-  )
+const metaCollection = defineCollection({
+  loader: file('./src/data/wiki/meta.yaml'),
+  schema: z.object({
+    value: z.string()
+  })
 });
+
+// |----------|
+// | RESEARCH |
+// |----------|
+
+const researchTreeCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content2/researc_tree' }),
+  schema: z.object({
+    name: z.string()
+  })
+});
+
+const researchEffectCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content2/research_effect' }),
+  schema: z.discriminatedUnion('type', [
+    z.object({
+      type: z.literal('regular'),
+      format: z.string(),
+      levels: z.array(z.number()).optional()
+    }),
+    z.object({
+      type: z.literal('building'),
+      building: reference('buildings')
+    })
+  ])
+});
+
+const researchCollection = defineCollection({
+  loader: researchLoader,
+  schema: researchSchema
+});
+
+export const collections = {
+  wiki: wikiCollection,
+  wiki_categories: wikiCategories,
+  buildings: buildingsCollection,
+  workers: workersCollection,
+  tags: tagsCollection,
+  items: itemsCollection,
+  recipes: recipesCollection,
+  research_tree: researchTreeCollection,
+  research_effect: researchEffectCollection,
+  research: researchCollection,
+  versions: versionsCollection,
+  citizen_name_packs: citizenNamesCollection,
+  meta: metaCollection,
+  team: teamCollection,
+  sponsors: sponsorCollection,
+  supporters: supporterCollection,
+  events: eventCollection
+};

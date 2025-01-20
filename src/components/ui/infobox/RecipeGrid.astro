@@ -1,8 +1,9 @@
 ---
 import Recipe from '@components/markdoc/recipes/Recipe.astro';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  recipes: string[];
+  recipes: CollectionEntry;
 }
 
 const { recipes } = Astro.props;

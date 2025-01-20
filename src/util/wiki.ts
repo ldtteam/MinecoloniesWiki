@@ -9,7 +9,7 @@ export type Title = string | TitleVersions;
 interface WikiPageEntry {
   type: 'page';
   name: string | TitleVersionItem;
-  slug: string;
+  id: string;
 }
 
 interface WikiSubCategoryEntry {
@@ -45,8 +45,8 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
   if (entry.data.type === 'page' || entry.data.type === 'item-combined' || entry.data.type === 'section-group') {
     return entry.data.title;
   } else if (entry.data.type === 'item') {
-    const itemData = await getEntry('items', entry.data.item.id);
-    return itemData.data.name;
+    const itemData = await getItemData(entry.data.item.id);
+    return itemData.defaultName;
   } else if (entry.data.type === 'section') {
     return await getSectionTitle(entry, true);
   } else if (entry.data.type === 'building') {
@@ -116,7 +116,7 @@ async function extractPageTitles(entry: CollectionEntry<'wiki'>): Promise<WikiPa
       {
         type: 'page',
         name: title,
-        slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
+        id: entry.data.type === 'section-group' ? entry.data.initialSection.id : entry.id
       }
     ];
   }
@@ -124,18 +124,18 @@ async function extractPageTitles(entry: CollectionEntry<'wiki'>): Promise<WikiPa
   return title.map((titleVersion) => ({
     type: 'page',
     name: titleVersion,
-    slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
+    id: entry.data.type === 'section-group' ? entry.data.initialSection.id : entry.id
   }));
 }
 
 export async function getWikiPages(): Promise<WikiPages> {
-  const wikiPages = await getCollection('wiki', (page) => page.slug.indexOf('/') > 0 && page.data.type !== 'section');
+  const wikiPages = await getCollection('wiki', (page) => page.id.indexOf('/') > 0 && page.data.type !== 'section');
   const wikiCategories = (await getCollection('wiki_categories')).sort((a, b) => a.data.order - b.data.order);
 
   const distributedPages = wikiCategories.reduce<WikiPages>((prev, curr) => prev.set(curr, []), new Map());
 
   for (const entry of wikiPages) {
-    const categoryString = entry.slug.substring(0, entry.slug.indexOf('/'));
+    const categoryString = entry.id.substring(0, entry.id.indexOf('/'));
     const category = wikiCategories.find((f) => f.id === categoryString);
     if (category === undefined) {
       throw new Error(
@@ -153,14 +153,14 @@ export async function getWikiPages(): Promise<WikiPages> {
 
   for (const worker of await getCollection('workers')) {
     const category = wikiCategories.find((f) => f.id === 'workers');
-    const building = await getEntry('buildings', worker.data.primaryBuilding.id);
+    const building = await getEntry(worker.data.primaryBuilding);
     if (category !== undefined) {
       const pages = distributedPages.get(category);
       if (pages !== undefined) {
         pages.push({
           type: 'page',
           name: worker.data.name,
-          slug: 'buildings/' + building.id
+          id: 'buildings/' + building.id
         });
       }
     }

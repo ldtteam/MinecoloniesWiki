@@ -26,9 +26,9 @@ export function getStaticPaths() {
 }
 
 export const GET: APIRoute = async ({ params }) => {
-  const data = citizenNamePacks.find((citizenNamePack) => citizenNamePack.data.filename === params.slug);
+  const data = citizenNamePacks.find((citizenNamePack) => citizenNamePack.data.filename === params.id);
   if (data === undefined) {
-    throw new Error(`Citizen name pack with slug '${params.slug}' does not exist.`);
+    throw new Error(`Citizen name pack with slug '${params.id}' does not exist.`);
   }
 
   return new Promise<Response>((resolve, reject) => {

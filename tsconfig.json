@@ -3,15 +3,15 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noErrorTruncation": true,
+    "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@assets/*": ["src/assets/*"],
       "@utils/*": ["src/util/*"]
-    },
-    "types": ["vite/client"]
+    }
   },
-  "include": ["src", "integrations", "astro.config.ts", "eslint.config.js", "markdoc.config.ts", "svelte.config.js"],
-  "exclude": [".astro", "dist", "minecolonies"]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "minecolonies"]
 }

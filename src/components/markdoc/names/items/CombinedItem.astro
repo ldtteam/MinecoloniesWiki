@@ -11,4 +11,4 @@ const { currentPage, page } = Astro.props;
 const itemData = await getItemData(page.item.id);
 ---
 
-<VersionedItemName data={itemData} link={currentPage !== page.page.slug} />
+<VersionedItemName data={itemData} link={currentPage !== page.page.id} />

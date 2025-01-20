@@ -1,211 +1,211 @@
-- username: Drew Shulman
+- id: Drew Shulman
   realName: Drew Shulman
   sub: []
-  tagline: ''
+  tagline: ""
   role: voice
   inactive: false
-- username: Kaine Crooks
+- id: Kaine Crooks
   realName: Kaine Crooks
   sub: []
-  tagline: ''
+  tagline: ""
   role: voice
   inactive: false
-- username: Matthew Kriner
+- id: Matthew Kriner
   realName: Matthew Kriner
   sub: []
-  tagline: ''
+  tagline: ""
   role: voice
   inactive: false
-- username: Kostronor
+- id: Kostronor
   realName: Marvin Hofmann
   sub:
-  - Programming
-  - Management
+    - Programming
+    - Management
   tagline: The cool Ghost Rider.
   uuid: 180ecd0e-2848-46d3-847f-4d357802aba0
   role: lead
   inactive: true
 - joinedYear: 2017
-  username: PoroUsedSnax
+  id: PoroUsedSnax
   realName: Mark Fisher
   sub:
-  - Web Developer
-  - A bit of Everything
+    - Web Developer
+    - A bit of Everything
   tagline: Got any Snax?
   uuid: 2abe5404-4a2f-4e30-b3ff-671696227a90
   role: web
   inactive: false
-- username: ImriLaoi
+- id: ImriLaoi
   realName: Tasha Wells
   sub:
-  - Static Modelling
-  - Texturing
+    - Static Modelling
+    - Texturing
   tagline: They aren't furry ears, honest!
   uuid: 2d77af5b-215c-48fb-b9a8-669eb0b6a094
   role: art
   inactive: false
-- username: Nightenom
-  realName: ''
+- id: Nightenom
+  realName: ""
   sub:
-  - Structurize
-  tagline: ''
+    - Structurize
+  tagline: ""
   uuid: 2d7c57ca-7bd2-4c52-bd50-f7f3fc5ba204
   role: dev
   inactive: false
-- username: Fireruner97
+- id: Fireruner97
   realName: Daniel Fuego
   sub:
-  - Programming
+    - Programming
   tagline: Our Spanish Toureiro.
   uuid: 2e76646a-2be2-4fcb-807a-ea742af4e283
   role: dev
   inactive: true
-- username: pmardle
+- id: pmardle
   realName: Peter Mardle
   sub:
-  - Founder
-  - Management
+    - Founder
+    - Management
   tagline: Our posh gentleman.
   uuid: 3137a21b-e8e2-40ca-8640-c744042d5564
   role: lead
   inactive: true
-- username: Xavierh
+- id: Xavierh
   realName: Xavier Hervy
   sub:
-  - Programming
+    - Programming
   tagline: Legolas, is that you?
   uuid: 4a1f1614-ac51-46a1-8ca6-d8cf3168f3ee
   role: dev
   inactive: true
-- username: OrionOnline
+- id: OrionOnline
   realName: Marc Hermans
   sub:
-  - Programming
-  - Management
-  - Build System Admin
+    - Programming
+    - Management
+    - Build System Admin
   tagline: "§k #2:&5%401."
   uuid: 4f99426f-43ad-418b-8b5a-ad91443f9374
   role: lead
   inactive: false
-- username: Odd Robbia
-  realName: ''
+- id: Odd Robbia
+  realName: ""
   sub:
-  - Animated/Static modelling
-  - Texturing
-  tagline: ''
+    - Animated/Static modelling
+    - Texturing
+  tagline: ""
   uuid: 546f4ea8-84ce-443f-b488-fbc685cdcbbc
   role: art
   inactive: false
-- username: flaminyogurt
+- id: flaminyogurt
   realName: Colton Schlosser
   sub:
-  - Programming
-  - Management
+    - Programming
+    - Management
   tagline: The Doc.
   uuid: 8667ba71-b85a-4004-af54-457a9734eed7
   role: lead
   inactive: true
-- username: Asherslab
+- id: Asherslab
   realName: Asher Parry
   sub:
-  - Programming
+    - Programming
   tagline: Raycom's dev AI.
   uuid: 9186b2cf-ae1f-4d69-aa67-81a7cb69008d
   role: lead
   inactive: false
-- username: Raydamri
+- id: Raydamri
   realName: "@pixelmanz2"
   sub:
-  - Texture artist
-  tagline: 'Life''s sponsored by raid: shadow legends'
+    - Texture artist
+  tagline: "Life's sponsored by raid: shadow legends"
   uuid: 971780d8-3372-404a-87ef-ebdb3bec7fe7
   role: art
   inactive: false
-- username: Zyxifrash
-  realName: ''
+- id: Zyxifrash
+  realName: ""
   sub:
-  - Programming
+    - Programming
   tagline: Om Nom Nom.
   uuid: 98ec3a31-42ee-47eb-a4dc-1a3cd7fab0af
   role: dev
   inactive: true
-- username: MineShadow7
+- id: MineShadow7
   realName: Andrey Karagodin
   sub:
-  - Programming
+    - Programming
   tagline: Slowly building an empire.
   uuid: 9a09ca06-403e-4539-ad28-b731ab026671
   role: dev
   inactive: true
-- username: Wissi
+- id: Wissi
   realName: Luis Muñoz
   sub:
-  - Wiki Editor
-  - Modpack Creator
+    - Wiki Editor
+    - Modpack Creator
   tagline: Our Loyal Adventurer.
   uuid: b5a93d5b-38fc-4df2-98a7-0b3c7cd7cd0c
   role: web
   inactive: false
-- username: Ridanisaurus
-  realName: ''
+- id: Ridanisaurus
+  realName: ""
   sub:
-  - Logo Creator
+    - Logo Creator
   tagline: Fixing the world 1 pixel at a time
   uuid: b5b426a8-d4f5-47cd-89b2-cde515a207d3
   role: art
   inactive: false
-- username: TheYoxy
+- id: TheYoxy
   realName: Floryan Simar
   sub:
-  - Programming
+    - Programming
   tagline: Sheep can look smart too.
   uuid: ba375a7f-fbb1-4497-b42e-f7b92b9afdb3
   role: dev
   inactive: true
-- username: Pixblockus
+- id: Pixblockus
   realName: Someaddons
   sub:
-  - Programming
+    - Programming
   tagline: One feature has no end.
   uuid: c1a5dd12-a6d1-40ec-aacf-ae047ba842f3
   role: lead
   inactive: false
-- username: carlansor
+- id: carlansor
   realName: carlos
   sub:
-  - Texture Designer
-  - Builder
-  - Audio Management
-  tagline: ''
+    - Texture Designer
+    - Builder
+    - Audio Management
+  tagline: ""
   uuid: d404bf6e4cdd45c8a43224ff317c98ef
   role: art
   inactive: false
-- username: D3miurge
+- id: D3miurge
   realName: Rafael de Castro Pamplona
   sub:
-  - Static Modelling
-  - Texturing
-  - Concept art
-  - Building Design
+    - Static Modelling
+    - Texturing
+    - Concept art
+    - Building Design
   tagline: Metroidvania Vampire.
   uuid: f82f921f-8242-49a7-a436-76c0a297b122
   role: art
   inactive: false
-- username: Khranos
+- id: Khranos
   realName: Khranos Lucror
   sub:
-  - Animated/Static modelling
-  - Texturing
+    - Animated/Static modelling
+    - Texturing
   tagline: The Terminator!
   uuid: fb422c77-522d-4241-b553-6d67fb2697f0
   role: art
   inactive: false
-- username: _Raycoms_ (H3Lay)
+- id: _Raycoms_ (H3Lay)
   realName: Ray Neiheiser
   sub:
-  - Programming
-  - Management
-  - Everything
+    - Programming
+    - Management
+    - Everything
   tagline: Our nice Capoerista.
   uuid: fefb153f-4ffc-4f5c-acd2-3291e73bdd4d
   role: lead

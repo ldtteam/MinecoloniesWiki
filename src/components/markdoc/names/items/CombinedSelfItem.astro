@@ -10,9 +10,9 @@ const { currentPage, page } = Astro.props;
 ---
 
 {
-  currentPage === page.page.slug ? (
+  currentPage === page.page.id ? (
     <span>{page.page.data.title}</span>
   ) : (
-    <a href={'/wiki/' + page.page.slug}>{page.page.data.title}</a>
+    <a href={'/wiki/' + page.page.id}>{page.page.data.title}</a>
   )
 }

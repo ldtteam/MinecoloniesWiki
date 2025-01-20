@@ -27,7 +27,7 @@ These link templates will automatically generate the path to the worker aswell a
 ## Testing locally
 The project can be ran locally to test if your changes work as expected. You need the following installed to be able to run it.
 
-- Nodejs (https://nodejs.org/en/download)
+- Nodejs (https://nodejs.org/en/download) 23 or above
 - Pnpm (https://pnpm.io/installation)
 
 ### Preparing the project

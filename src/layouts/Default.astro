@@ -8,10 +8,11 @@ import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
+import VersionStyling from '@components/version/VersionStyling.astro';
 import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import { getNewestVersion } from '@utils/version';
 import type { Title } from '@utils/wiki';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title: Title;
@@ -108,7 +109,8 @@ const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
       document.addEventListener('astro:page-load', setup);
     </script>
 
-    <ViewTransitions />
+    <ClientRouter />
+    <VersionStyling />
   </head>
   <body data-latest-version={newestVersion.data.order} {...versionTitleData} data-title-affix={titleAffix}>
     <PageRoot isHome={isHome}>

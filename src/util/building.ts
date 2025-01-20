@@ -37,7 +37,7 @@ export async function getBuildingName(
   if (building.data.overrides) {
     for (const versionName of building.data.overrides) {
       if (versionName.name || versionName.plural) {
-        if (await isVersionHigherOrSame(version, versionName.version.id)) {
+        if (await isVersionHigherOrSame(version, versionName.version)) {
           if (!plural && versionName.name) {
             name = versionName.name;
             break;

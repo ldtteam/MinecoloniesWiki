@@ -72,14 +72,14 @@ async function extractWikiPageData(
   name: ParsedItemId
 ): Promise<WikiItemPage | undefined> {
   if (isWikiPageOfType(page, 'item') && page.data.item.id.split('/')[1] === name.id) {
-    const itemData = await getEntry('items', page.data.item.id);
+    const itemData = await getEntry(page.data.item);
     return {
       type: 'direct',
       page,
       item: itemData
     };
   }
-  if (isWikiPageOfType(page, 'item-combined') && page.slug === 'items/' + name.id) {
+  if (isWikiPageOfType(page, 'item-combined') && page.id === 'items/' + name.id) {
     return {
       type: 'combined-self',
       page
@@ -88,7 +88,7 @@ async function extractWikiPageData(
   if (isWikiPageOfType(page, 'item-combined')) {
     const subItem = page.data.items.find((item) => item.id.split('/')[1] === name.id);
     if (subItem !== undefined) {
-      const itemData = await getEntry('items', subItem.id);
+      const itemData = await getEntry(subItem);
       return {
         type: 'combined',
         page,
@@ -129,13 +129,13 @@ const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
       return {
         name: itemPage.item.data.name,
         icons: requireImages ? itemPage.item.data.icons : [],
-        link: itemPage.page ? '/wiki/' + itemPage.page.slug : undefined
+        link: itemPage.page ? '/wiki/' + itemPage.page.id : undefined
       };
     } else if (itemPage.type === 'combined') {
       return {
         name: itemPage.item.data.name,
         icons: requireImages ? itemPage.item.data.icons : [],
-        link: '/wiki/' + itemPage.page.slug
+        link: '/wiki/' + itemPage.page.id
       };
     }
   }

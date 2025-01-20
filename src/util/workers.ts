@@ -10,7 +10,7 @@ export interface MarkdocWorkerComponent {
 export async function getWorkerIdFromFrontmatter(frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
   let workerId: CollectionEntry<'workers'>['id'] | undefined;
   if (frontmatter?.type === 'building') {
-    const building = await getEntry('buildings', frontmatter.building.id);
+    const building = await getEntry(frontmatter.building);
     if (building.data.workers?.length === 1) {
       workerId = building.data.workers[0].id;
     }
@@ -41,7 +41,7 @@ export async function getWorkerName(
   if (worker.data.overrides) {
     for (const versionName of worker.data.overrides) {
       if (versionName.name || versionName.plural) {
-        if (await isVersionHigherOrSame(version, versionName.version.id)) {
+        if (await isVersionHigherOrSame(version, versionName.version)) {
           if (!plural && versionName.name) {
             name = versionName.name;
             break;
