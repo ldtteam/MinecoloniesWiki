@@ -54,6 +54,17 @@ const recipes = building.data.recipes ?? [];
     </p>
 
     {
+      building.data.singular && (
+        <>
+          <hr />
+          <p class="m-0">
+            <b>Note:</b> you can only build a single <BuildingName building={building} />
+          </p>
+        </>
+      )
+    }
+
+    {
       workers.length !== 0 && (
         <>
           <hr />
