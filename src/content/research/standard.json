@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"telescope","name":"Standard","requirements":[{"type":"building","building":"barracks","level":4}],"effects":{"standard":1},"researchLevel":5}

@@ -1,0 +1,29 @@
+type: shaped
+row1:
+  item1:
+  item2: structurize/build_tool
+  item3:
+row2:
+  item1:
+  item2:
+    - carpet_black
+    - carpet_blue
+    - carpet_brown
+    - carpet_cyan
+    - carpet_gray
+    - carpet_green
+    - carpet_lightblue
+    - carpet_lightgray
+    - carpet_limegreen
+    - carpet_magenta
+    - carpet_orange
+    - carpet_pink
+    - carpet_purple
+    - carpet_red
+    - carpet_yellow
+  item3:
+row3:
+  item1:
+  item2: string
+  item3:
+output: minecolonies/floating_carpet

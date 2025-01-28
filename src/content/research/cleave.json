@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"powerattack","name":"Cleave","requirements":[{"type":"building","building":"guardtower","level":10}],"effects":{"meleedamageaddition":3},"researchLevel":4}

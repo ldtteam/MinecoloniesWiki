@@ -1,23 +1,22 @@
 ---
 import Card from '@components/ui/Card.astro';
-import type { ArrayElement } from '@utils/util';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  supporter: ArrayElement<CollectionEntry<'supporters'>['data']>;
+  supporter: CollectionEntry<'supporters'>;
 }
 
 const { supporter } = Astro.props;
 ---
 
 <Card class="text-center p-4" autoSize>
-  <h3>{supporter.name}</h3>
+  <h3>{supporter.data.name}</h3>
   <img
     src={`https://crafatar.com/renders/body/${
       supporter.id ?? '00000000-0000-0000-0000-000000000000'
     }?overlay=true&scale=4`}
     class="float-md-left"
-    alt={`Minecraft skin for ${supporter.name}`}
+    alt={`Minecraft skin for ${supporter.data.name}`}
   />
   <div class="clearfix"></div>
 </Card>

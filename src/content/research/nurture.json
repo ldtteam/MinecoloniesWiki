@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"higherlearning","name":"Nurture","requirements":[{"type":"building","building":"school","level":1}],"effects":{"growthmultiplier":1},"researchLevel":2}

@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"quickdraw","name":"Power Attack","requirements":[{"type":"building","building":"combatacademy","level":3}],"effects":{"meleedamageaddition":2},"researchLevel":3}

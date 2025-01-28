@@ -1,0 +1,120 @@
+---
+import type { PartialCollectionEntry } from '@utils/util';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import path from 'path';
+
+import WorkerName from '../names/WorkerName.astro';
+
+interface Props {
+  building: CollectionEntry<'buildings'>;
+  worker: PartialCollectionEntry<'workers'>;
+}
+
+const { building, worker } = Astro.props;
+const workerData = await getEntry(worker);
+
+function sortImages(s1: string, s2: string): number {
+  const file1 = path.parse(s1);
+  const file2 = path.parse(s2);
+
+  const gender1 = path.basename(file1.dir);
+  const gender2 = path.basename(file2.dir);
+
+  const [_1, style1, variant1] = file1.name.match(/(\w+)-(\w+)/) ?? [];
+  const [_2, style2, variant2] = file2.name.match(/(\w+)-(\w+)/) ?? [];
+
+  const styleCompare = style1.localeCompare(style2);
+  if (styleCompare !== 0) {
+    return styleCompare;
+  }
+
+  const variantCompare = variant1.localeCompare(variant2);
+  if (variantCompare !== 0) {
+    return variantCompare;
+  }
+
+  const genderCompare = gender2.localeCompare(gender1);
+  if (genderCompare !== 0) {
+    return genderCompare;
+  }
+
+  return 0;
+}
+
+const importedImages = import.meta.glob<false, string, { default: ImageMetadata }>(
+  '../../../assets/images/wiki/workers/**/*.png'
+);
+const filteredImages = await Promise.all(
+  Object.entries(importedImages)
+    .filter(([key]) => key.includes('/' + worker.id + '/'))
+    .sort(([s1], [s2]) => sortImages(s1, s2))
+    .map((m) => m[1]())
+);
+---
+
+<p>
+  <b>Worker:</b>
+  <WorkerName slot="title" building={building} worker={workerData} />
+</p>
+<div class="grid mb-3" style="--bs-columns: 2; --bs-gap: 0.5rem;">
+  <b>Skills:</b>
+  <div>
+    {
+      workerData.data.traits.primary && (
+        <>
+          <span class="badge text-bg-success w-100">
+            {workerData.data.traits.primary.name}: {workerData.data.traits.primary.effect}
+          </span>
+        </>
+      )
+    }
+    {
+      workerData.data.traits.secondary && (
+        <>
+          <span class="badge text-bg-warning w-100">
+            {workerData.data.traits.secondary.name}: {workerData.data.traits.secondary.effect}
+          </span>
+        </>
+      )
+    }
+  </div>
+</div>
+<div class="text-center mb-3">
+  <swiper-container
+    pagination
+    pagination-dynamic-bullets
+    autoplay
+    autoplay-delay="2000"
+    autoplay-pause-on-mouse-enter
+    autoplay-disable-on-interaction="false"
+    loop
+    loop-add-blank-slides
+    slides-per-view="2"
+    slides-per-group="2"
+    no-swiping
+    no-swiping-selector="*"
+    width="300"
+    space-between="20"
+    style={{
+      width: '300px',
+      '--swiper-pagination-bottom': 0
+    }}
+  >
+    {
+      filteredImages.map((image) => (
+        <swiper-slide>
+          <Image src={image.default} alt="" width={150} />
+        </swiper-slide>
+      ))
+    }
+  </swiper-container>
+</div>
+
+<style lang="scss">
+  @import '../../../css/bootstrap-vars.scss';
+  @import '../../../../node_modules/bootstrap/scss/_grid.scss';
+  @import '../../../../node_modules/bootstrap/scss/_badge.scss';
+</style>

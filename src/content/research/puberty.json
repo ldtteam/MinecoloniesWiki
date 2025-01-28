@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"hormones","name":"Puberty","requirements":[{"type":"building","building":"library","level":3}],"effects":{"growthmultiplier":3},"researchLevel":4}

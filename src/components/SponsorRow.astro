@@ -1,18 +1,17 @@
 ---
-import type { ArrayElement } from '@utils/util';
 import type { CollectionEntry } from 'astro:content';
 
 import Card from './ui/Card.astro';
 
 interface Props {
-  sponsor: ArrayElement<CollectionEntry<'sponsors'>['data']>;
+  sponsor: CollectionEntry<'sponsors'>;
 }
 
 const { sponsor } = Astro.props;
 ---
 
 <Card class="d-flex" autoSize>
-  <a href={sponsor.link} class="m-auto">
-    <img src={sponsor.image} class="m-auto d-block" alt={sponsor.imageAlt} style={{ width: '100%' }} />
+  <a href={sponsor.data.link} class="m-auto">
+    <img src={sponsor.data.image} class="m-auto d-block" alt={sponsor.data.imageAlt} style={{ width: '100%' }} />
   </a>
 </Card>

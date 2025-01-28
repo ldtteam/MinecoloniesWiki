@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: iron_ingot
+  item2:
+  item3: iron_ingot
+row2:
+  item1: iron_nugget
+  item2: iron_nugget
+  item3: iron_nugget
+row3:
+  item1: iron_nugget
+  item2: iron_nugget
+  item3: iron_nugget
+output: chainmail_chestplate

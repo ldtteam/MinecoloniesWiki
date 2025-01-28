@@ -27,12 +27,12 @@ const pages = await getWikiPages();
       >
         {categoryInfo.map((page) => {
           if (page.type === 'page') {
-            return <Navlink id={page.slug} name={page.name} href={`/wiki/${page.slug}`} />;
+            return <Navlink id={page.id} name={page.name} href={`/wiki/${page.id}`} />;
           } else if (page.type === 'subcategory') {
             return (
               <Navlink id={'subCategory' + page.name} name={page.name}>
                 {page.pages.map((subPage) => (
-                  <Navlink id={subPage.slug} name={subPage.name} href={`/wiki/${subPage.slug}`} />
+                  <Navlink id={subPage.id} name={subPage.name} href={`/wiki/${subPage.id}`} />
                 ))}
               </Navlink>
             );

@@ -1,0 +1,15 @@
+type: shaped
+row1:
+  item1: wheat
+  item2:
+  item3: wheat
+row2:
+  item1:
+  item2: wheat
+  item3:
+row3:
+  item1: wheat
+  item2:
+  item3: wheat
+output: domum_ornamentum/wheat_extra
+amount: 4

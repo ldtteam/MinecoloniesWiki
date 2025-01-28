@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"bonemeal","name":"Dung","requirements":[{"type":"building","building":"miner","level":4}],"effects":{"farmingmultiplier":2},"researchLevel":3}

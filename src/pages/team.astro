@@ -2,27 +2,28 @@
 import TeamMember from '@components/TeamMember.astro';
 import Button from '@components/ui/Button.astro';
 import Layout from '@layouts/Default.astro';
-import { type CollectionEntry, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import { type CollectionEntry } from 'astro:content';
 
-const members = await getEntry('team', 'team');
+const members = await getCollection('team');
 
-const leads = members.data.filter((m) => m.role === 'lead');
-const devs = members.data.filter((m) => m.role === 'dev');
-const arts = members.data.filter((m) => m.role === 'art');
-const voices = members.data.filter((m) => m.role === 'voice');
-const webs = members.data.filter((m) => m.role === 'web');
+const leads = members.filter((m) => m.data.role === 'lead');
+const devs = members.filter((m) => m.data.role === 'dev');
+const arts = members.filter((m) => m.data.role === 'art');
+const voices = members.filter((m) => m.data.role === 'voice');
+const webs = members.filter((m) => m.data.role === 'web');
 
-const activeLeads = leads.filter((m) => !m.inactive);
-const inactiveLeads = leads.filter((m) => m.inactive);
-const activeDevs = devs.filter((m) => !m.inactive);
-const inactiveDevs = devs.filter((m) => m.inactive);
-const activeArts = arts.filter((m) => !m.inactive);
-const inactiveArts = arts.filter((m) => m.inactive);
+const activeLeads = leads.filter((m) => !m.data.inactive);
+const inactiveLeads = leads.filter((m) => m.data.inactive);
+const activeDevs = devs.filter((m) => !m.data.inactive);
+const inactiveDevs = devs.filter((m) => m.data.inactive);
+const activeArts = arts.filter((m) => !m.data.inactive);
+const inactiveArts = arts.filter((m) => m.data.inactive);
 
-const sortMembers = (members: CollectionEntry<'team'>['data']) => {
+const sortMembers = (members: CollectionEntry<'team'>[]) => {
   return members.sort((a, b) => {
-    if (a.joinedYear && b.joinedYear) return b.joinedYear - a.joinedYear;
-    return a.username.localeCompare(b.username);
+    if (a.data.joinedYear && b.data.joinedYear) return b.data.joinedYear - a.data.joinedYear;
+    return a.id.localeCompare(b.id);
   });
 };
 ---

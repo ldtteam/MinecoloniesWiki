@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: planks
+  item2: planks
+  item3: planks
+row2:
+  item1: iron_nugget
+  item2: structurize/build_tool
+  item3: iron_nugget
+row3:
+  item1: planks
+  item2: planks
+  item3: planks
+output: minecolonies/rack

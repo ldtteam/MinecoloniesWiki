@@ -1,0 +1,15 @@
+type: shaped
+row1:
+  item1: cactus
+  item2:
+  item3: cactus
+row2:
+  item1:
+  item2: cactus
+  item3:
+row3:
+  item1: cactus
+  item2:
+  item3: cactus
+output: domum_ornamentum/cactus_extra
+amount: 4

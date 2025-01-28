@@ -13,7 +13,7 @@
 </script>
 
 {#if clickable}
-  <a href={`/events/${event.slug}`}>
+  <a href={`/events/${event.id}`}>
     <h2>{event.data.name}</h2>
   </a>
 {:else}

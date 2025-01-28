@@ -1,8 +1,0 @@
-name: Courier's Hut
-plural: Courier Huts
-description: The Courier is a vital building to the automation of your colony, Couriers are employed by the Warehouse to ensure items are brought around your colony.
-icon: "@assets/images/wiki/items/minecolonies/blockhutdeliveryman.png"
-workers:
-  - courier
-recipes:
-  - minecolonies/blockhutdeliveryman

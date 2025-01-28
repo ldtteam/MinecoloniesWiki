@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1:
+  item2: iron_ingot
+  item3:
+row2:
+  item1: stone_slab
+  item2: stone_slab
+  item3: stone_slab
+row3:
+  item1: tags/logs
+  item2: tags/logs
+  item3: tags/logs
+output: domum_ornamentum/architects_cutter

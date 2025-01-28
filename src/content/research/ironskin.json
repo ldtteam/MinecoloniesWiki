@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"boiledleather","name":"Iron Skin","requirements":[{"type":"building","building":"townhall","level":3}],"effects":{"armordurabilitymultiplier":3},"researchLevel":3}

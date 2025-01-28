@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"vitality","name":"Fortitude","requirements":[{"type":"building","building":"cook","level":5}],"effects":{"healingsaturationlimitaddition":4},"researchLevel":5}

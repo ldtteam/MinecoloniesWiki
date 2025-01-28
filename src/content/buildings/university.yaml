@@ -1,8 +1,0 @@
-name: University
-plural: Universities
-description: The University is where you research new technologies, unlocking new buildings, bonuses for your citizens or other new features. This is an essential building to have.
-icon: "@assets/images/wiki/items/minecolonies/blockhutuniversity.png"
-workers:
-  - researcher
-recipes:
-  - minecolonies/blockhutuniversity

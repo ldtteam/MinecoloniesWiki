@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"capacity","name":"Full Stock!","requirements":[{"type":"building","building":"miner","level":5}],"effects":{"minimumstockmultiplier":3},"researchLevel":5}

@@ -1,0 +1,9 @@
+type: custom
+items:
+  - item: iron_ingot
+output: minecolonies/iron_mesh
+conditions:
+  - type: building
+    building: blacksmith
+  - type: research
+    research: ironmesh

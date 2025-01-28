@@ -1,7 +1,13 @@
 import { component } from '@astrojs/markdoc/config';
+import type { CollectionEntry } from 'astro:content';
 
 import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
+
+export interface MarkdocWorkerComponent {
+  frontmatter?: CollectionEntry<'wiki'>['data'];
+  name?: string;
+}
 
 export const worker: Tag = {
   render: component('@components/markdoc/names/WorkerName.astro'),

@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"bookworm","name":"Bachelor","requirements":[{"type":"building","building":"library","level":3}],"effects":{"teachingmultiplier":3},"researchLevel":4}

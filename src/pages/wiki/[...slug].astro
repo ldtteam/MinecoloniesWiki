@@ -7,23 +7,23 @@ import Layout from '@layouts/Default.astro';
 import { getNewestVersion } from '@utils/version';
 import type { AstroComponentFactory } from 'astro/runtime/server/render/index.js';
 import type { CollectionEntry } from 'astro:content';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 import { getSectionTitle, getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
 
 interface SectionGroupData {
-  slug: CollectionEntry<'wiki'>['slug'];
+  id: CollectionEntry<'wiki'>['id'];
   data: Extract<CollectionEntry<'wiki'>['data'], { type: 'section-group' }>;
-  initialSection: { title: string; slug: string };
-  sections: { title: string; slug: string }[];
+  initialSection: { title: string; id: string };
+  sections: { title: string; id: string }[];
   hasContent: boolean;
-  Content: (props: Record<string, unknown>) => AstroComponentFactory;
+  Content: AstroComponentFactory;
 }
 
 export async function getStaticPaths() {
   const collection = await getCollection('wiki');
   return collection.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry }
   }));
 }
@@ -32,7 +32,7 @@ const { entry } = Astro.props;
 const { slug } = Astro.params;
 
 if (entry.data.type === 'section-group') {
-  return Astro.redirect('/wiki/' + entry.data.initialSection.slug);
+  return Astro.redirect('/wiki/' + entry.data.initialSection.id);
 }
 
 const title = await getWikiTitle(entry);
@@ -50,26 +50,26 @@ if (entry.data.type === 'section') {
 
   const sections = await getCollection(
     'wiki',
-    (page) => page.data.type === 'section' && page.data.group.slug === foundEntry.slug
+    (page) => page.data.type === 'section' && page.data.group.id === foundEntry.id
   );
   const initialSection = sections.splice(
-    sections.findIndex((section) => foundEntryData.initialSection.slug === section.slug),
+    sections.findIndex((section) => foundEntryData.initialSection.id === section.id),
     1
   )[0];
 
-  const { Content: GroupContent } = await foundEntry.render();
+  const { Content: GroupContent } = await render(foundEntry);
 
   groupData = {
-    slug: foundEntry.slug,
+    id: foundEntry.id,
     data: foundEntryData,
     initialSection: {
       title: await getSectionTitle(initialSection, false),
-      slug: initialSection.slug
+      id: initialSection.id
     },
     sections: await Promise.all(
-      sections.map(async (section) => ({ title: await getSectionTitle(section, false), slug: section.slug }))
+      sections.map(async (section) => ({ title: await getSectionTitle(section, false), id: section.id }))
     ),
-    hasContent: foundEntry.body.trim() !== '',
+    hasContent: foundEntry.body !== undefined && foundEntry.body.trim() !== '',
     Content: GroupContent
   };
 }
@@ -87,7 +87,7 @@ const description = await getWikiDescription(entry);
   {
     groupData && (
       <>
-        <groupData.Content slug={groupData.slug} frontmatter={groupData.data} />
+        <groupData.Content slug={groupData.id} frontmatter={groupData.data} />
         {groupData.hasContent && <hr />}
       </>
     )
@@ -102,7 +102,7 @@ const description = await getWikiDescription(entry);
             <h6 class="dropdown-header">Sections:</h6>
           </li>
           <li>
-            <a class="dropdown-item" href={`/wiki/${groupData.initialSection.slug}`}>
+            <a class="dropdown-item" href={`/wiki/${groupData.initialSection.id}`}>
               {groupData.initialSection.title}
             </a>
           </li>
@@ -110,10 +110,10 @@ const description = await getWikiDescription(entry);
             <hr class="dropdown-divider" />
           </li>
           {groupData.sections
-            .filter((section) => groupData.data.initialSection.slug !== section.slug)
+            .filter((section) => groupData.data.initialSection.id !== section.id)
             .map(async (section) => (
               <li>
-                <a class="dropdown-item" href={`/wiki/${section.slug}`}>
+                <a class="dropdown-item" href={`/wiki/${section.id}`}>
                   {section.title}
                 </a>
               </li>

@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"gravedecaybonus1","name":"Grave Decay II","requirements":[{"type":"building","building":"graveyard","level":5}],"effects":{"gravedecaybonus":2},"researchLevel":3}

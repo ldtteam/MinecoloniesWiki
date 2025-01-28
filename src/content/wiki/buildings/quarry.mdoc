@@ -1,6 +1,15 @@
 ---
 type: building
-building: quarry
+id: quarry
+name: Quarry
+plural: Quarries
+description: The Quarry is the big brother of the Mine, need a whole load of stone? Build a Quarry, they will be digging enormous holes to gather vast amounts of materials. Quarries come in different sizes.
+icon: "@assets/images/wiki/items/minecolonies/blockhutmediumquarry.png"
+workers:
+  - quarrier
+recipes:
+  - minecolonies/blockhutsimplequarry
+  - minecolonies/blockhutmediumquarry
 ---
 
 The Quarry is where you can hire a {% worker name="quarrier" /%} to dig the quarry. The Quarry will be a pit of varied size (simple quarry is 1 x 1 chunks, medium is 2 x 2) to collect larger amounts of stone type blocks.  The Quarry will only produce the blocks it digs out.  It will not produce additional ore blocks like the {% building name="miner" /%}.

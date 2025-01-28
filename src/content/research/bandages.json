@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"healingcream","name":"Bandages","requirements":[{"type":"building","building":"library","level":4}],"effects":{"regenerationmultiplier":3},"researchLevel":4}

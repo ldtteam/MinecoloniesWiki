@@ -1,8 +1,0 @@
-name: Sifter's Hut
-plural: Sifter Huts
-description: The Sifter can turn "useless" materials into valuable materials, by seeing what comes out from sieving them through a mesh.
-icon: "@assets/images/wiki/items/minecolonies/blockhutsifter.png"
-workers:
-  - sifter
-recipes:
-  - minecolonies/blockhutsifter

@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"croprotation","name":"Gargamel","requirements":[{"type":"building","building":"plantation","level":3},{"type":"building","building":"netherworker","level":3}],"effects":{"plantationnether":1},"researchLevel":4}

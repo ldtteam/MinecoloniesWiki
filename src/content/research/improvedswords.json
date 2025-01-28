@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"tactictraining","name":"Improved Swords","requirements":[{"type":"building","building":"barracks","level":3}],"effects":{"blockhutcombatacademy":1},"researchLevel":2}

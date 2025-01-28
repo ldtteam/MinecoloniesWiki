@@ -1,9 +1,0 @@
-name: Quarry
-plural: Quarries
-description: The Quarry is the big brother of the Mine, need a whole load of stone? Build a Quarry, they will be digging enormous holes to gather vast amounts of materials. Quarries come in different sizes.
-icon: "@assets/images/wiki/items/minecolonies/blockhutmediumquarry.png"
-workers:
-  - quarrier
-recipes:
-  - minecolonies/blockhutsimplequarry
-  - minecolonies/blockhutmediumquarry

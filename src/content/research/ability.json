@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"hittingiron","name":"Ability","requirements":[{"type":"building","building":"miner","level":1}],"effects":{"blockplacespeedmultiplier":1},"researchLevel":2}

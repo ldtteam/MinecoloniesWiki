@@ -1,6 +1,28 @@
 ---
 type: building
-building: miner
+id: miner
+name: Mine
+plural: Mines
+description: The Miner will gather stone and ores from the depths below, they will make a vast tunnel network underground to gather all of your valuables.
+icon: "@assets/images/wiki/items/minecolonies/blockhutminer.png"
+workers:
+  - miner
+recipes:
+  - minecolonies/blockhutminer
+settings:
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+  - name: Fill Block
+    description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine. The default is the cobblestone block.
+  - name: Max Depth
+    description: Here you can overide the default maximum depth of the {building:miner}, if you don't want the {worker:miner} to dig as deep as the {building:miner} level allows. The default is -100.
+  - name: Use Shears
+    description: Whether the {worker:miner} will use shears to break certain blocks.
 ---
 
 The Mine is where you can hire a {% worker name="miner" /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 

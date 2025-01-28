@@ -1,20 +1,21 @@
-import type { CollectionEntry, InferEntrySchema } from 'astro:content';
-
-export type ArrayElement<ArrayType extends readonly unknown[]> = ArrayType extends readonly (infer ElementType)[]
-  ? ElementType
-  : never;
+import type { CollectionEntry, CollectionKey } from 'astro:content';
 
 export type EventRelative = 'start' | 'end' | undefined;
 
-type WikiPageType = InferEntrySchema<'wiki'>['type'];
+export type PartialCollectionEntry<C extends CollectionKey> =
+  | CollectionEntry<C>
+  | {
+      collection: C;
+      id: string;
+    };
 
-export type WikiPageEntry<T extends WikiPageType> = Omit<CollectionEntry<'wiki'>, 'data'> & {
-  data: Extract<CollectionEntry<'wiki'>['data'], { type: T }>;
-};
+export function isFullEntry<C extends CollectionKey>(entry: PartialCollectionEntry<C>): entry is CollectionEntry<C> {
+  return 'data' in entry;
+}
 
-export function isWikiPageOfType<T extends WikiPageType>(
-  page: Omit<CollectionEntry<'wiki'>, 'id'> & { id: string },
-  type: T
-): page is WikiPageEntry<T> {
-  return page.data.type === type;
+export function isCollectionEntry<C extends CollectionKey>(
+  entry: PartialCollectionEntry<CollectionKey>,
+  collection: C
+): entry is PartialCollectionEntry<C> {
+  return entry.collection === collection;
 }

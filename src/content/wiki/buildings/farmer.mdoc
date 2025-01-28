@@ -1,6 +1,25 @@
 ---
 type: building
-building: farmer
+id: farmer
+name: Farmer's Hut
+plural: Farmer's Huts
+description: The Farm is one of the main sources of food production for your colony, farms are able to grow any root crop that has to be placed on farmland.
+icon: "@assets/images/wiki/items/minecolonies/blockhutfarmer.png"
+workers:
+  - farmer
+recipes:
+  - minecolonies/blockhutfarmer
+  - minecolonies/field
+settings:
+  - name: Request Fertilizer
+    description: On by default. This lets you choose whether the Farmer will request fertilizer.
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 ---
 
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods (as long as they have normal growth behavior). Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 

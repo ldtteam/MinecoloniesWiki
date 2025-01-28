@@ -1,8 +1,0 @@
-name: Enchanter's Tower
-plural: Enchanter Towers
-description: The Enchanter will create enchanted books using ancient tomes and experience. The Enchanter automatically goes around your colony collecting experience from other citizens.
-icon: "@assets/images/wiki/items/minecolonies/blockhutenchanter.png"
-workers:
-  - enchanter
-recipes:
-  - minecolonies/blockhutenchanter

@@ -2,20 +2,20 @@
 import EventHeader from '@components/EventHeader.svelte';
 import Layout from '@layouts/Default.astro';
 import type { EventRelative } from '@utils/util';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { fromUnixTime, isBefore } from 'date-fns';
 
 export async function getStaticPaths() {
   const collection = await getCollection('events');
   return collection.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry }
   }));
 }
 
 const entry = Astro.props.entry;
 const now = new Date();
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 const startDate = fromUnixTime(entry.data.start);
 const endDate = fromUnixTime(entry.data.end);

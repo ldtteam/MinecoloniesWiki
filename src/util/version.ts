@@ -1,10 +1,13 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-type VersionRef = CollectionEntry<'versions'> | CollectionEntry<'versions'>['id'];
+import { isFullEntry, type PartialCollectionEntry } from './util';
 
-export async function isVersionHigherOrSame(version1: VersionRef, version2: VersionRef) {
-  const version1Data = typeof version1 === 'string' ? await getEntry('versions', version1) : version1;
-  const version2Data = typeof version2 === 'string' ? await getEntry('versions', version2) : version2;
+export async function isVersionHigherOrSame(
+  version1: PartialCollectionEntry<'versions'>,
+  version2: PartialCollectionEntry<'versions'>
+) {
+  const version1Data = isFullEntry(version1) ? version1 : await getEntry(version1);
+  const version2Data = isFullEntry(version2) ? version2 : await getEntry(version2);
 
   return version1Data.data.order >= version2Data.data.order;
 }
@@ -38,7 +41,7 @@ export async function getSortedVersions(): Promise<CollectionEntry<'versions'>[]
 }
 
 export async function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
-  const results = await getSortedVersions();
+  const results = (await getSortedVersions()).filter((f) => f.data.supported);
   return results[0];
 }
 

@@ -3,7 +3,7 @@ import { Markdoc } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const injectFrontmatter: Tag['transform'] = (node, config) => {
-  const currentPage = config.variables?.slug as string;
+  const currentPage = config.variables?.id as string;
   const frontmatter = config.variables?.frontmatter;
   const attributes = {
     currentPage,

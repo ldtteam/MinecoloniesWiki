@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: tags/planks
+  item2: structurize/build_tool
+  item3: tags/planks
+row2:
+  item1: tags/planks
+  item2: smoker
+  item3: tags/planks
+row3:
+  item1: tags/planks
+  item2: tags/planks
+  item3: tags/planks
+output: minecolonies/blockhutkitchen

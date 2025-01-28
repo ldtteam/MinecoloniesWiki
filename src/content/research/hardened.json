@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"strong","name":"Hardened","requirements":[{"type":"building","building":"blacksmith","level":2}],"effects":{"tooldurabilitymultiplier":2},"researchLevel":3}

@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"puberty","name":"Growth","requirements":[{"type":"building","building":"library","level":5}],"effects":{"growthmultiplier":4},"researchLevel":5}

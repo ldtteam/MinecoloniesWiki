@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"taunt","name":"Consume Arrows","requirements":[{"type":"building","building":"guardtower","level":2}],"effects":{"consumearrowsunlock":1},"researchLevel":2}

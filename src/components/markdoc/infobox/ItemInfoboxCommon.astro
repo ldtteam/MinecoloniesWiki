@@ -15,7 +15,8 @@ interface Props {
 
 const { item, expand = false } = Astro.props;
 
-const itemData = await getItemData(item, true);
+const itemEntry = await getEntry('items', item);
+const itemData = itemEntry ? await getItemData(itemEntry, true) : await getItemData(item, true);
 
 const recipeData = await getEntry('recipes', item);
 ---
@@ -62,7 +63,7 @@ const recipeData = await getEntry('recipes', item);
     }
   </div>
 
-  {recipeData !== undefined && <RecipeGrid recipes={[item]} />}
+  {recipeData !== undefined && <RecipeGrid recipes={[recipeData]} />}
 </Infobox>
 
 <style>

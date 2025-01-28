@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: dirt
+  item2: dirt
+  item3: dirt
+row2:
+  item1: dirt
+  item2: minecolonies/compost
+  item3: dirt
+row3:
+  item1: dirt
+  item2: dirt
+  item3: dirt
+output: minecolonies/composted_dirt

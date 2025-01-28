@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"avoidance","name":"Dodge","requirements":[{"type":"building","building":"smeltery","level":1}],"effects":{"archerarmormultiplier":1},"researchLevel":2}

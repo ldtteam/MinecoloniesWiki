@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"regeneration","name":"Avoid","requirements":[{"type":"building","building":"guardtower","level":4}],"effects":{"fleeingspeedaddition":1},"researchLevel":3}
