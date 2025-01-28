@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"arrowuse","name":"Arrow Piercing","requirements":[{"type":"building","building":"archery","level":1}],"effects":{"piercingarrowsunlock":1},"researchLevel":3}

@@ -3,143 +3,72 @@ import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import minecraftData, { type Item } from 'minecraft-data';
 
-import { isWikiPageOfType, type WikiPageEntry } from './util';
+import type { PartialCollectionEntry } from './util';
+import { getSortedVersions } from './version';
 
-interface ParsedItemId {
-  namespace: string;
-  id: string;
-}
-
-interface ItemFetcherResponse {
-  name: string;
-  icons: Array<string | ImageMetadata>;
-  link: string | undefined;
-}
-
-type ItemFetcher = (
-  version: CollectionEntry<'versions'>,
-  item: ParsedItemId,
-  requireImages: boolean
-) => Promise<ItemFetcherResponse | undefined>;
-
-export interface WikiItemPageDirect {
-  type: 'direct';
-  page?: WikiPageEntry<'item'>;
+export interface WikiItemPage {
+  page?: CollectionEntry<'wiki'>;
   item: CollectionEntry<'items'>;
 }
 
-export interface WikiItemPageCombined {
-  type: 'combined';
-  page: WikiPageEntry<'item-combined'>;
-  item: CollectionEntry<'items'>;
-}
-
-export interface WikiItemPageCombinedSelf {
-  type: 'combined-self';
-  page: WikiPageEntry<'item-combined'>;
-}
-
-type WikiItemPage = WikiItemPageDirect | WikiItemPageCombined | WikiItemPageCombinedSelf;
-
-export interface ItemVersionData extends ParsedItemId {
+export interface ItemVersionData {
   name: string;
-  link: string | undefined;
   icons: Array<string | ImageMetadata>;
   versions: CollectionEntry<'versions'>[];
 }
 
-export interface ItemData extends ParsedItemId {
+export interface ResultItemData {
   defaultName: string;
+  link: string | undefined;
   data: ItemVersionData[];
 }
 
-export function parseItemId(name: string, defaultNamespace = 'minecraft'): ParsedItemId {
-  if (name.includes('/')) {
-    const [namespace, id] = name.split('/', 2);
-    return {
-      namespace,
-      id
-    };
-  }
-  return {
-    namespace: defaultNamespace,
-    id: name
-  };
-}
+export type ItemReference = string | CollectionEntry<'items'>;
 
 async function extractWikiPageData(
   page: CollectionEntry<'wiki'>,
-  name: ParsedItemId
+  item: PartialCollectionEntry<'items'>
 ): Promise<WikiItemPage | undefined> {
-  if (isWikiPageOfType(page, 'item') && page.data.item.id.split('/')[1] === name.id) {
+  if (page.data.type === 'item' && page.data.item.id === item.id) {
     const itemData = await getEntry(page.data.item);
     return {
-      type: 'direct',
       page,
       item: itemData
     };
   }
-  if (isWikiPageOfType(page, 'item-combined') && page.id === 'items/' + name.id) {
-    return {
-      type: 'combined-self',
-      page
-    };
-  }
-  if (isWikiPageOfType(page, 'item-combined')) {
-    const subItem = page.data.items.find((item) => item.id.split('/')[1] === name.id);
+  if (page.data.type === 'item-combined') {
+    const subItem = page.data.items.find((i) => i.id === item.id);
     if (subItem !== undefined) {
       const itemData = await getEntry(subItem);
       return {
-        type: 'combined',
         page,
         item: itemData
       };
     }
   }
-  if (isWikiPageOfType(page, 'building') && name.id === 'blockhut' + page.data.building.id) {
-    const itemData = await getEntry('items', name.namespace + '/' + name.id);
+  if (page.data.type === 'building' && 'minecolonies/blockhut' + page.data.id === item.id) {
+    const itemData = await getEntry('items', `minecolonies/blockhut${page.data.id}`);
     if (itemData !== undefined) {
       return {
-        type: 'direct',
         item: itemData
       };
     }
   }
 }
 
-export async function getWikiPageForItem(name: ParsedItemId): Promise<WikiItemPage | undefined> {
+async function getWikiPageForItem(item: PartialCollectionEntry<'items'>): Promise<WikiItemPage | undefined> {
   const pages = await getCollection('wiki');
-  const itemPages = await Promise.all(pages.map((page) => extractWikiPageData(page, name)));
+  const itemPages = await Promise.all(pages.map((page) => extractWikiPageData(page, item)));
   const filteredPages = itemPages.filter((f) => f !== undefined);
 
   if (filteredPages.length > 1) {
     throw new Error(
-      `Multiple pages refer to item '${name.id}', make sure only one page shows information for this given item.`
+      `Multiple pages refer to item '${item.id}', make sure only one page shows information for this given item.`
     );
   }
 
   return filteredPages.length > 0 ? filteredPages[0] : undefined;
 }
-
-const fromWikiFetcher: ItemFetcher = async (_version, item, requireImages) => {
-  const itemPage = await getWikiPageForItem(item);
-
-  if (itemPage !== undefined) {
-    if (itemPage.type === 'direct') {
-      return {
-        name: itemPage.item.data.name,
-        icons: requireImages ? itemPage.item.data.icons : [],
-        link: itemPage.page ? '/wiki/' + itemPage.page.id : undefined
-      };
-    } else if (itemPage.type === 'combined') {
-      return {
-        name: itemPage.item.data.name,
-        icons: requireImages ? itemPage.item.data.icons : [],
-        link: '/wiki/' + itemPage.page.id
-      };
-    }
-  }
-};
 
 const unavailableMcItems: Record<string, Item> = {
   water_bottle: {
@@ -156,90 +85,93 @@ const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
   compass: 'gif'
 };
 
-const fetchersByNamespace: Record<string, ItemFetcher> = {
-  minecraft: async (version, item, requireImages) => {
-    const data = minecraftData(version.id);
-    const itemData = data.itemsByName[item.id] ?? unavailableMcItems[item.id];
-    if (!itemData) {
-      return undefined;
-    }
+const fetchMinecraftData = async (version: CollectionEntry<'versions'>, item: string, requireImages: boolean) => {
+  const data = minecraftData(version.id);
+  const itemData = data?.itemsByName[item] ?? unavailableMcItems[item];
+  if (!itemData) {
+    return undefined;
+  }
 
-    const parsedItemName = itemData.displayName.replaceAll(' ', '_');
+  const parsedItemName = itemData.displayName.replaceAll(' ', '_');
 
-    if (requireImages) {
-      const extension = imageExtensionOverrides[item.id] ?? 'png';
-      const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
+  if (requireImages) {
+    const extension = imageExtensionOverrides[item] ?? 'png';
+    const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
 
-      const image = await getImage({
-        src: url,
-        width: 32,
-        height: 32
-      });
+    const image = await getImage({
+      src: url,
+      width: 32,
+      height: 32
+    });
 
-      return {
-        name: itemData.displayName,
-        icons: [image.options.src as ImageMetadata],
-        link: `https://minecraft.wiki/w/${parsedItemName}`
-      };
-    } else {
-      return {
-        name: itemData.displayName,
-        icons: [],
-        link: `https://minecraft.wiki/w/${parsedItemName}`
-      };
-    }
-  },
-  minecolonies: fromWikiFetcher,
-  structurize: fromWikiFetcher,
-  domum_ornamentum: fromWikiFetcher,
-  multipiston: fromWikiFetcher
+    return {
+      name: itemData.displayName,
+      icons: [image.options.src as ImageMetadata],
+      link: `https://minecraft.wiki/w/${parsedItemName}`
+    };
+  } else {
+    return {
+      name: itemData.displayName,
+      icons: [],
+      link: `https://minecraft.wiki/w/${parsedItemName}`
+    };
+  }
 };
 
-export async function getItemData(item: string, requireImages = false): Promise<ItemData> {
-  const versions = await getCollection('versions');
+export async function getItemReference(item: string): Promise<CollectionEntry<'tags'> | ItemReference> {
+  const tagData = await getEntry('tags', item);
+  if (tagData) {
+    return tagData;
+  }
+  const itemData = await getEntry('items', item);
+  if (itemData) {
+    return itemData;
+  }
+  return item;
+}
 
-  const itemId = parseItemId(item);
-
-  const results: ItemData = {
-    ...itemId,
+export async function getItemData(item: ItemReference, requireImages = false): Promise<ResultItemData> {
+  const result: ResultItemData = {
     defaultName: '',
+    link: undefined,
     data: []
   };
 
-  let highestVersionName = '';
-  let highestVersionOrder = 0;
-  for (const version of versions) {
-    const fetcher = fetchersByNamespace[itemId.namespace];
+  for (const version of await getSortedVersions()) {
+    let data: Omit<ItemVersionData, 'versions'> | undefined = undefined;
+    if (typeof item === 'string') {
+      const mcData = await fetchMinecraftData(version, item, requireImages);
+      if (mcData === undefined) {
+        continue;
+      }
+      data = mcData;
+    } else {
+      const itemPage = await getWikiPageForItem(item);
+      if (itemPage !== undefined) {
+        data = {
+          name: itemPage.item.data.name,
+          icons: requireImages ? itemPage.item.data.icons : []
+        };
+        result.link = itemPage.page ? '/wiki/' + itemPage.page.id : undefined;
+      }
+    }
 
-    if (fetcher === undefined) {
-      throw new Error(`Data fetcher for namespace '${itemId.namespace}' does not exist.`);
+    if (data === undefined) {
+      continue;
     }
 
     try {
-      const existingResult = results.data.find((f) => f.namespace === itemId.namespace && f.id === itemId.id);
+      const existingResult = result.data.find((f) => f.name === data.name);
 
-      let versionName: string;
       if (existingResult) {
         existingResult.versions.push(version);
-        versionName = existingResult.name;
+        result.defaultName = existingResult.name;
       } else {
-        const data = await fetcher(version, itemId, requireImages);
-        if (data === undefined) {
-          continue;
-        }
-
-        results.data.push({
+        result.data.push({
           ...data,
-          ...itemId,
           versions: [version]
         });
-
-        versionName = data.name;
-      }
-
-      if (version.data.order > highestVersionOrder) {
-        highestVersionOrder = version.data.order;
-        highestVersionName = versionName;
+        result.defaultName = data.name;
       }
     } catch (ex) {
       console.warn(ex);
@@ -247,6 +179,5 @@ export async function getItemData(item: string, requireImages = false): Promise<
     }
   }
 
-  results.defaultName = highestVersionName;
-  return results;
+  return result;
 }

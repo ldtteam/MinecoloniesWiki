@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"hittingiron","name":"Strong","requirements":[{"type":"building","building":"blacksmith","level":1}],"effects":{"tooldurabilitymultiplier":1},"researchLevel":2}

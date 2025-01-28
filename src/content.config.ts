@@ -1,7 +1,13 @@
 import { file, glob } from 'astro/loaders';
 import { defineCollection, type ImageFunction, reference, z } from 'astro:content';
 
-import { researchLoader, researchSchema } from './loaders/research-loader';
+import { buildingLoader } from './loaders/building-loader';
+import { researchEffectsLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
+import { buildingSchema } from './schemas/building';
+import { itemSchema, tagSchema } from './schemas/item';
+import { recipeSchema } from './schemas/recipe';
+import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
+import { workerSchema } from './schemas/workers';
 
 // |------|
 // | SITE |
@@ -38,7 +44,7 @@ const supporterCollection = defineCollection({
 });
 
 const eventCollection = defineCollection({
-  loader: glob({ pattern: '**/*.mdoc', base: './src/content2/events' }),
+  loader: glob({ pattern: '**/*.mdoc', base: './src/content/events' }),
   schema: z.object({
     name: z.string(),
     description: z.string(),
@@ -108,197 +114,54 @@ const itemCombinedPage = z.object({
     .optional()
 });
 
-const buildingPage = z.object({
-  type: z.literal('building'),
-  building: reference('buildings')
-});
-
 const wikiCollection = defineCollection({
-  loader: glob({ pattern: '**/*.mdoc', base: './src/content2/wiki' }),
+  loader: glob({ pattern: '**/*.mdoc', base: './src/content/wiki' }),
   schema: ({ image }) =>
     z.discriminatedUnion('type', [
       regularPage(image),
       sectionGroupPage(image),
       sectionPage(image),
+      buildingSchema(image).extend({ type: z.literal('building') }),
       itemPage,
-      itemCombinedPage,
-      buildingPage
+      itemCombinedPage
     ])
 });
 
 const wikiCategories = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content2/wiki_categories' }),
+  loader: file('./src/data/wiki/categories.yaml'),
   schema: z.object({
     name: z.string(),
     order: z.number()
   })
 });
 
-const buildingInfo = (image: ImageFunction) =>
-  z.object({
-    name: z.string(),
-    plural: z.string(),
-    description: z.string(),
-    icon: image(),
-    workers: reference('workers').array().optional(),
-    recipes: reference('recipes').array().optional(),
-    settings: z
-      .array(
-        z.object({
-          name: z.string(),
-          description: z.string(),
-          options: z
-            .array(
-              z.object({
-                name: z.string(),
-                description: z.string()
-              })
-            )
-            .optional()
-        })
-      )
-      .optional()
-  });
-
 const buildingsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content2/buildings' }),
-  schema: ({ image }) =>
-    buildingInfo(image).and(
-      z.object({
-        overrides: z
-          .array(
-            buildingInfo(image)
-              .partial()
-              .and(
-                z.object({
-                  version: reference('versions')
-                })
-              )
-          )
-          .optional()
-      })
-    )
+  loader: buildingLoader,
+  schema: ({ image }) => buildingSchema(image)
 });
 
-const workerInfo = (image: ImageFunction) =>
-  z.object({
-    name: z.string(),
-    plural: z.string(),
-    description: z.string(),
-    icon: image(),
-    type: z.enum(['animals', 'crafter', 'gatherer', 'guard', 'other']),
-    traits: z.object({
-      primary: z
-        .object({
-          name: z.string(),
-          effect: z.string()
-        })
-        .optional(),
-      secondary: z
-        .object({
-          name: z.string(),
-          effect: z.string()
-        })
-        .optional()
-    }),
-    primaryBuilding: reference('buildings')
-  });
-
 const workersCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content2/workers' }),
-  schema: ({ image }) =>
-    workerInfo(image).and(
-      z.object({
-        overrides: z
-          .array(
-            workerInfo(image)
-              .partial()
-              .and(
-                z.object({
-                  version: reference('versions')
-                })
-              )
-          )
-          .optional()
-      })
-    )
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/workers' }),
+  schema: ({ image }) => workerSchema(image)
 });
 
 const itemsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content2/items' }),
-  schema: ({ image }) =>
-    z.object({
-      name: z.string(),
-      description: z.string(),
-      icons: z.array(image())
-    })
-});
-
-const buildingCraftingCondition = z.object({
-  type: z.literal('building'),
-  building: reference('buildings'),
-  level: z.number().optional()
-});
-
-const researchCraftingCondition = z.object({
-  type: z.literal('research'),
-  research: reference('research')
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/items' }),
+  schema: ({ image }) => itemSchema(image)
 });
 
 const tagsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content2/tags' }),
-  schema: z.array(z.string())
-});
-
-const craftingConditions = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
-const itemOrArray = z.undefined().or(z.null()).or(z.string()).or(z.array(z.string()));
-
-export type RecipeItemEntry = z.infer<typeof itemOrArray>;
-
-const shapedRecipe = z.object({
-  type: z.literal('shaped'),
-  row1: z.object({
-    item1: itemOrArray,
-    item2: itemOrArray,
-    item3: itemOrArray
-  }),
-  row2: z.object({
-    item1: itemOrArray,
-    item2: itemOrArray,
-    item3: itemOrArray
-  }),
-  row3: z.object({
-    item1: itemOrArray,
-    item2: itemOrArray,
-    item3: itemOrArray
-  })
-});
-
-const customRecipe = z.object({
-  type: z.literal('custom'),
-  items: z
-    .array(
-      z.object({
-        item: itemOrArray,
-        amount: z.number().default(1)
-      })
-    )
-    .max(9)
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/tags' }),
+  schema: tagSchema
 });
 
 const recipesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content2/recipes' }),
-  schema: z.discriminatedUnion('type', [shapedRecipe, customRecipe]).and(
-    z.object({
-      output: z.string(),
-      amount: z.number().default(1),
-      conditions: z.array(craftingConditions).default([])
-    })
-  )
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/recipes' }),
+  schema: recipeSchema
 });
 
 const citizenNamesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/citizen_name_packs' }),
+  loader: glob({ pattern: '**/*.json', base: './src/data/wiki/citizen_name_packs' }),
   schema: z.object({
     name: z.string(),
     filename: z.string(),
@@ -325,25 +188,13 @@ const metaCollection = defineCollection({
 // |----------|
 
 const researchTreeCollection = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content2/researc_tree' }),
-  schema: z.object({
-    name: z.string()
-  })
+  loader: researchTreesLoader,
+  schema: researchTreeSchema
 });
 
 const researchEffectCollection = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content2/research_effect' }),
-  schema: z.discriminatedUnion('type', [
-    z.object({
-      type: z.literal('regular'),
-      format: z.string(),
-      levels: z.array(z.number()).optional()
-    }),
-    z.object({
-      type: z.literal('building'),
-      building: reference('buildings')
-    })
-  ])
+  loader: researchEffectsLoader,
+  schema: researchEffectsSchema
 });
 
 const researchCollection = defineCollection({

@@ -1,9 +1,0 @@
-type: custom
-items:
-  - item: minecraft/iron_ingot
-output: minecolonies/iron_mesh
-conditions:
-  - type: building
-    building: blacksmith
-  - type: research
-    research: ironmesh

@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1:
+  item2:
+  item3:
+row2:
+  item1: chest
+  item2:
+  item3: chest
+row3:
+  item1: chest
+  item2: chest
+  item3: chest
+output: minecolonies/supply_camp

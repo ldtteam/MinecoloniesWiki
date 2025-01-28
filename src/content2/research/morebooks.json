@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"higherlearning","name":"More Books","requirements":[{"type":"building","building":"school","level":1}],"effects":{"teachingmultiplier":1},"researchLevel":2}

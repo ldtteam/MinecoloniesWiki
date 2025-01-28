@@ -1,8 +1,10 @@
 ---
-import BuildingInfobox from '@components/markdoc/infobox/BuildingInfobox.astro';
 import ItemCombinedInfobox from '@components/markdoc/infobox/ItemCombinedInfobox.astro';
 import ItemInfobox from '@components/markdoc/infobox/ItemInfobox.astro';
 import { type CollectionEntry, render } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+import BuildingInfobox from './infobox/BuildingInfobox.astro';
 
 interface Props {
   page: CollectionEntry<'wiki'>;
@@ -10,11 +12,19 @@ interface Props {
 
 const { page } = Astro.props;
 const { Content } = await render(page);
+
+async function getBuildingData(id: string) {
+  const buildingData = await getEntry('buildings', id);
+  if (buildingData === undefined) {
+    throw new Error(`Building with id ${id} does not exist.`);
+  }
+  return buildingData;
+}
 ---
 
 {
   page.data.type === 'building' ? (
-    <BuildingInfobox building={page.data.building.id}>
+    <BuildingInfobox building={await getBuildingData(page.data.id)}>
       <Content slug={page.id} frontmatter={page.data} />
     </BuildingInfobox>
   ) : page.data.type === 'item' && (page.data.infobox?.show ?? true) ? (

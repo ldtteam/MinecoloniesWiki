@@ -1,5 +1,6 @@
-import { reference, z } from 'astro:content';
+import { getEntry, z } from 'astro:content';
 import path from 'path';
+import type { researchEffectsSchema, researchSchema, researchTreeSchema } from 'src/schemas/research';
 
 import { getAllJsonFiles, getAllJsonFilesInDirectory } from './file-utils';
 
@@ -59,30 +60,32 @@ const researchSchemaInternal = z.object({
   )
 });
 
-export const researchSchema = z.object({
-  id: z.string(),
-  tree: reference('research_tree'),
-  parent: reference('research').optional(),
-  name: z.string(),
-  requirements: z
-    .array(
-      z.discriminatedUnion('type', [
-        z.object({
-          type: z.literal('building'),
-          building: reference('buildings'),
-          level: z.number().default(1)
-        }),
-        z.object({
-          type: z.literal('item'),
-          items: z.string().array(),
-          quantity: z.number().default(1)
-        })
-      ])
-    )
-    .optional(),
-  effects: z.record(z.string(), z.number()).optional(),
-  researchLevel: z.number()
+const effectSchemaInternal = z.object({
+  ['effect']: z.boolean(),
+  ['levels']: z.array(z.number()).optional()
 });
+
+export async function researchTreesLoader() {
+  const values: z.infer<typeof researchTreeSchema>[] = [];
+
+  const translations = await getTranslations();
+
+  const trees = await getAllJsonFilesInDirectory(
+    treeSchemaInternal,
+    'minecolonies/src/datagen/generated/minecolonies/data/minecolonies/researches'
+  );
+
+  for (const [treeFileName, treeData] of Object.entries(trees)) {
+    const treeKey = path.parse(treeFileName).name;
+    values.push({
+      id: treeKey,
+      name: translations[`com.minecolonies.research.${treeKey}.name`],
+      sortOrder: treeData.sortOrder
+    });
+  }
+
+  return values;
+}
 
 export async function researchLoader() {
   const values: z.infer<typeof researchSchema>[] = [];
@@ -116,8 +119,8 @@ export async function researchLoader() {
               id: parent
             }
           : undefined,
-        effects: {},
-        requirements: []
+        requirements: await parseRequirements(researchData, translations),
+        effects: await parseEffects(researchData)
       });
     }
   }
@@ -125,7 +128,118 @@ export async function researchLoader() {
   return values;
 }
 
-async function getTranslations() {
+export async function researchEffectsLoader() {
+  const values: z.infer<typeof researchEffectsSchema>[] = [];
+
+  const translations = await getTranslations();
+
+  const effects = await getAllJsonFilesInDirectory(
+    effectSchemaInternal,
+    'minecolonies/src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
+  );
+  for (const [effectFileName, effectData] of Object.entries(effects)) {
+    const effectKey = path.parse(effectFileName).name;
+
+    if (effectKey.startsWith('blockhut')) {
+      values.push({
+        id: effectKey,
+        type: 'building',
+        building: {
+          collection: 'buildings',
+          id: effectKey.replace('blockhut', '')
+        }
+      });
+    } else {
+      values.push({
+        id: effectKey,
+        type: 'regular',
+        format: translations[`com.minecolonies.research.effects.${effectKey}.description`],
+        levels: effectData.levels ?? [0, 1]
+      });
+    }
+  }
+
+  return values;
+}
+
+async function parseRequirements(
+  researchData: z.infer<typeof researchSchemaInternal>,
+  translations: Record<string, string>
+): Promise<z.infer<typeof researchSchema>['requirements']> {
+  const values: z.infer<typeof researchSchema>['requirements'] = [];
+  for (const requirement of researchData.requirements) {
+    switch (requirement.type) {
+      case 'minecolonies:building':
+      case 'minecolonies:alternate-building':
+        values.push({
+          type: 'building',
+          building: {
+            collection: 'buildings',
+            id: requirement.building
+          },
+          level: requirement.level
+        });
+        break;
+      case 'minecolonies:mandatory-building':
+        values.push({
+          type: 'building',
+          building: {
+            collection: 'buildings',
+            id: requirement['mandatory-building']
+          },
+          level: requirement.level
+        });
+        break;
+      case 'minecolonies:item_simple':
+        values.push({
+          type: 'item',
+          items: [requirement.item.replace(/\w+:/g, '')],
+          quantity: requirement.quantity
+        });
+        break;
+      case 'minecolonies:item_list':
+        values.push({
+          type: 'item',
+          items: requirement.item.items.map((m) => m.replace(/\w+:/g, '')),
+          quantity: requirement.quantity
+        });
+        break;
+      case 'minecolonies:item_tag': {
+        const tagData = await getEntry('tags', requirement.item.tag.replace(/\w+:/g, ''));
+        if (tagData) {
+          values.push({
+            type: 'item_tag',
+            name: translations[`com.minecolonies.coremod.research.tags.${requirement.item.tag}`],
+            quantity: requirement.quantity
+          });
+        }
+        break;
+      }
+    }
+  }
+  return values;
+}
+
+async function parseEffects(
+  researchData: z.infer<typeof researchSchemaInternal>
+): Promise<z.infer<typeof researchSchema>['effects']> {
+  const values: z.infer<typeof researchSchema>['effects'] = [];
+  for (const effect of researchData.effects) {
+    for (const [effectKey, effectLevel] of Object.entries(effect)) {
+      values.push({
+        effect: {
+          collection: 'research_effect',
+          id: effectKey.replace('minecolonies:effects/', '')
+        },
+        level: effectLevel
+      });
+    }
+  }
+
+  return values;
+}
+
+export async function getTranslations() {
   const translations = await getAllJsonFiles(translationsSchema, [
     'minecolonies/src/main/resources/assets/minecolonies/lang/manual_en_us.json',
     'minecolonies/src/datagen/generated/minecolonies/assets/minecolonies/lang/default.json'

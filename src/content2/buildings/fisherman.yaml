@@ -1,8 +1,0 @@
-name: Fisher's Hut
-plural: Fisher Huts
-description: The Fisher will catch fish and treasure from the vast oceans in your world.
-icon: "@assets/images/wiki/items/minecolonies/blockhutfisherman.png"
-workers:
-  - fisher
-recipes:
-  - minecolonies/blockhutfisherman

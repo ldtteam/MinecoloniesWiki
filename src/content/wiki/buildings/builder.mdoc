@@ -1,0 +1,68 @@
+---
+type: building
+id: builder
+name: Builder's Hut
+plural: Builder Huts
+description: The Builder is the most vital building in your colony, the Builder will construct any other building and is the first building you need in your colony.
+icon: "@assets/images/wiki/items/minecolonies/blockhutbuilder.png"
+workers:
+  - builder
+recipes:
+  - minecolonies/blockhutbuilder
+settings:
+  - name: Builder Mode
+    description: Here you can set your Builder to Manual or Automatic mode (Automatic by default). In Automatic, the builder chooses which build order they'll complete next themselves (based on the order of the build requests in the {building:townhall} GUI's work orders tab). In Manual, you choose their next build order yourself by clicking Select next to the build order's name.
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+  - name: Build Method
+    description: This is unlocked by researching Builder Modes in the University. This allows you to change how the builder builds, reducing pathfinding and speeding up builds (especially large builds). Any one of these can be set in the structurize config, but once the "Builder Modes" research is done in the university, the one set here takes precedence.
+    options:
+      - name: Default
+        description: The default row-by-row pattern.
+      - name: inwardcircle
+        description: Blocks are placed like a square spiral from the outside in.
+      - name: inwardcircleheight#1-4
+        description: This will also make spirals from the outside in, but each spiral gets built upward 1 to 4 times, before the builder will start the next square inward.
+      - name: hilbert
+        description: Hilbert does [this pattern](https://en.wikipedia.org/wiki/Hilbert_curve), with a little difference to work for rectangular areas.
+      - name: random
+        description: Blocks are placed in an entirely random order. Note that this slows down builds.
+  - name: Use Shears
+    description: Whether the {worker:builder} will use shears to harvest certain blocks like leaves or grass.
+  - name: Fill Block
+    description: Here you can select what block the builder uses to fill in holes/gaps in the schematic. The default is the dirt block.
+---
+
+### Before you build *any* other building, you must build the {% building /%}. If the {% building /%} is not built, the {% worker name="builder" /%} cannot build other buildings.
+
+Before you choose a place to build the {% building /%}, take into account the distances among the other possible building sites and obstacles like water, trees, caves, mountains, lava sources, etc. After you have selected a place for the hut, you have to craft the {% building /%} block and place it with your {% item name="build_tool" /%}. Once the hut is placed, the {% worker name="builder" /%} will be automatically assigned (or you can manually assign one with the best [traits](/wiki/systems/worker) for a {% worker name="builder" /%} if you changed this in the settings tab in the {% building name="townhall" /%}).
+
+Now you will have to issue the build assignment so the {% worker name="builder" /%} can build their own hut first. The {% worker name="builder" /%} will ask for the materials they need. Make sure to check the {% item name="resource_scroll" /%} or the Required Resources tab of the {% building /%} GUI to see what materials the {% worker name="builder" /%} is requesting for any build/upgrade. Any material in the list that is still missing will be in red letters.
+
+Once the {% building /%} is built you can now build anything you want, like worker huts, buildings, decorations, or your own schematics.
+
+- **Note:** The {% worker name="builder" /%} can only build or upgrade any other hut up to the level of their own hut. So, in order for the {% worker name="builder" /%} to upgrade any building, the {% building /%} must be upgraded first. Then the {% worker name="builder" /%} will be able to upgrade any other building(s).
+
+### Hints and Tips
+
+For the placement of the {% building /%}, you should consider having the hut in the middle of where you plan to have the rest of your buildings so that the {% worker name="builder" /%} has less of a distance to walk between their hut and the build sites.
+
+The {% worker name="builder" /%} will not start another build assignment until they have finished the current one.
+
+You can go into the {% building name="townhall" /%} it's GUI and click on the work orders tab to cancel builds as well as arrange the priorities of the other build orders you have there. If you cancel a work order and it was being built already, if you assign the build order again, the {% worker name="builder" /%} will continue where they left off.
+
+If the {% worker name="builder" /%} removes a block while building and/or upgrading, they will keep it in their inventory and dump any items in their inventory at the end of a build into the {% building /%} inventory.
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_stock order=2 /%}
+{% building_gui_content_block_settings order=3 /%}
+{% building_gui_content_block_crafting_recipes order=4 /%}
+{% building_gui_content_block_work_orders order=5 /%}
+{% building_gui_content_block_required_resources order=6 /%}

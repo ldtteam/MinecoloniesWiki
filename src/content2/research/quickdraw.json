@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"accuracy","name":"Quick Draw","requirements":[{"type":"building","building":"barracks","level":3}],"effects":{"meleedamageaddition":1},"researchLevel":2}

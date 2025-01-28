@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: stone
+  item2: stone
+  item3: stone
+row2:
+  item1: redstoneblock
+  item2: structurize/build_tool
+  item3: redstoneblock
+row3:
+  item1: piston
+  item2: piston
+  item3: piston
+output: multipiston/multipiston

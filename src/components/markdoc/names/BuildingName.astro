@@ -1,14 +1,7 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import {
-  getBuildingData,
-  getBuildingIdFromFrontmatter,
-  getBuildingLink,
-  getBuildingName,
-  type MarkdocBuildingComponent
-} from '@utils/building';
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
+import BuildingNameInternal from '@components/wiki/names/BuildingName.astro';
+import { getEntry } from 'astro:content';
+import type { MarkdocBuildingComponent } from 'src/markdoc/buildings';
 
 interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
@@ -16,37 +9,13 @@ interface Props extends MarkdocBuildingComponent {
 
 const { frontmatter, name, plural = false } = Astro.props;
 
-const buildingId = await getBuildingIdFromFrontmatter(frontmatter);
-const buildingData = await getBuildingData(name ?? buildingId ?? '');
-const versions = await getCollection('versions');
+const buildingIdFrontmatter = frontmatter?.type === 'building' ? frontmatter.id : undefined;
 
-const link = getBuildingLink(buildingData);
-const versionedContent = await Promise.all(
-  versions.map(async (version) => ({
-    version,
-    name: await getBuildingName(version, buildingData, plural)
-  }))
-);
-const versionedContentReduced = versionedContent.reduce<Record<string, CollectionEntry<'versions'>[]>>(
-  (previousValue, currentValue) => {
-    if (previousValue[currentValue.name] === undefined) {
-      previousValue[currentValue.name] = [];
-    }
-    previousValue[currentValue.name].push(currentValue.version);
-    return previousValue;
-  },
-  {}
-);
+const buildingTarget = name ?? buildingIdFrontmatter ?? '';
+const buildingData = await getEntry('buildings', buildingTarget);
+if (buildingData === undefined) {
+  throw new Error(`Building with id ${buildingTarget} does not exist.`);
+}
 ---
 
-{
-  Object.entries(versionedContentReduced).map(async ([name, versions]) => (
-    <VersionContent versions={versions} inline>
-      {frontmatter?.type !== 'building' || buildingId !== buildingData.id ? (
-        <a href={link}>{name}</a>
-      ) : (
-        <span>{name}</span>
-      )}
-    </VersionContent>
-  ))
-}
+<BuildingNameInternal building={buildingData} link={buildingIdFrontmatter !== buildingData.id} plural={plural} />

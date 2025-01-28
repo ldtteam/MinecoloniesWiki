@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: stone
+  item2: structurize/build_tool
+  item3: stone
+row2:
+  item1: stone
+  item2: bone
+  item3: stone
+row3:
+  item1: stone
+  item2: stone
+  item3: stone
+output: minecolonies/blockhutgraveyard

@@ -1,4 +1,4 @@
-import type { CollectionEntry, CollectionKey, InferEntrySchema } from 'astro:content';
+import type { CollectionEntry, CollectionKey } from 'astro:content';
 
 export type EventRelative = 'start' | 'end' | undefined;
 
@@ -9,21 +9,13 @@ export type PartialCollectionEntry<C extends CollectionKey> =
       id: string;
     };
 
-export function isFullEntry<C extends CollectionKey>(
-  version: PartialCollectionEntry<C>
-): version is CollectionEntry<C> {
-  return 'data' in version;
+export function isFullEntry<C extends CollectionKey>(entry: PartialCollectionEntry<C>): entry is CollectionEntry<C> {
+  return 'data' in entry;
 }
 
-type WikiPageType = InferEntrySchema<'wiki'>['type'];
-
-export type WikiPageEntry<T extends WikiPageType> = Omit<CollectionEntry<'wiki'>, 'data'> & {
-  data: Extract<CollectionEntry<'wiki'>['data'], { type: T }>;
-};
-
-export function isWikiPageOfType<T extends WikiPageType>(
-  page: Omit<CollectionEntry<'wiki'>, 'id'> & { id: string },
-  type: T
-): page is WikiPageEntry<T> {
-  return page.data.type === type;
+export function isCollectionEntry<C extends CollectionKey>(
+  entry: PartialCollectionEntry<CollectionKey>,
+  collection: C
+): entry is PartialCollectionEntry<C> {
+  return entry.collection === collection;
 }

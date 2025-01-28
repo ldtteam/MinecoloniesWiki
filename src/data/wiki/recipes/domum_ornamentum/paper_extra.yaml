@@ -1,0 +1,15 @@
+type: shaped
+row1:
+  item1: paper
+  item2:
+  item3: paper
+row2:
+  item1:
+  item2: paper
+  item3:
+row3:
+  item1: paper
+  item2:
+  item3: paper
+output: domum_ornamentum/paper_extra
+amount: 4

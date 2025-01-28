@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"piercingshot","name":"Wounding Shot","requirements":[{"type":"building","building":"barracks","level":5}],"effects":{"archerdamageaddition":4},"researchLevel":5}

@@ -1,1 +1,0 @@
-{"tree":"civilian","name":"First Aid","requirements":[{"type":"building","building":"townhall","level":1}],"effects":{"healthaddition":1},"researchLevel":1}

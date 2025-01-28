@@ -1,24 +1,22 @@
 ---
+import BuildingName from '@components/wiki/names/BuildingName.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
 import { formatForgeString, toTitleCase } from '../../../util/string';
-import BuildingName from '../names/BuildingName.astro';
 
 interface Props {
-  effect: string;
-  level: number;
+  effect: CollectionEntry<'research'>['data']['effects'][number];
 }
 
-const { effect, level } = Astro.props;
+const { effect } = Astro.props;
 
-const effectData = await getEntry('research_effect', effect);
+const effectData = await getEntry(effect.effect);
 if (effectData === undefined) {
   throw new Error(`Unknown research effect '${effect}'.`);
 }
 
-function parseFormatString(format: string, effectStrength: number = 0, absoluteEffectStrength: number = 0): string {
-  // Forge format specifiers
+function parseFormatString(format: string, effectStrength: number, absoluteEffectStrength: number): string {
   format = formatForgeString(
     format,
     effectStrength.toString(),
@@ -34,14 +32,10 @@ function parseRegularEffectFormat(
   effectData: Extract<CollectionEntry<'research_effect'>['data'], { type: 'regular' }>
 ) {
   const format = effectData.format;
-  if (effectData.levels) {
-    const currentLevel = effectData.levels[level - 1];
-    const previousLevel = level === 1 ? 0 : effectData.levels[level - 2];
-    const effectStrength = currentLevel - previousLevel;
-    return parseFormatString(format, effectStrength, currentLevel);
-  }
-
-  return parseFormatString(format, undefined);
+  const currentLevel = effectData.levels[effect.level - 1];
+  const previousLevel = effect.level === 1 ? 0 : effectData.levels[effect.level - 2];
+  const effectStrength = currentLevel - previousLevel;
+  return parseFormatString(format, effectStrength, currentLevel);
 }
 ---
 
@@ -49,7 +43,7 @@ function parseRegularEffectFormat(
 {
   effectData.data.type === 'building' && (
     <span>
-      Unlocks <BuildingName name={effectData.data.building.id} />
+      Unlocks <BuildingName building={await getEntry(effectData.data.building)} link />
     </span>
   )
 }

@@ -1,12 +1,12 @@
 ---
 import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
+import BuildingName from '@components/wiki/names/BuildingName.astro';
 import { getItemData } from '@utils/items';
 import type { CollectionEntry } from 'astro:content';
-
-import BuildingName from '../names/BuildingName.astro';
+import { getEntry } from 'astro:content';
 
 interface Props {
-  requirement: NonNullable<CollectionEntry<'research'>['data']['requirements']>[number];
+  requirement: CollectionEntry<'research'>['data']['requirements'][number];
 }
 
 const { requirement } = Astro.props;
@@ -16,7 +16,7 @@ const { requirement } = Astro.props;
   requirement.type === 'building' && (
     <li>
       <span>One or multiple&nbsp;</span>
-      <BuildingName name={requirement.building.id} plural />
+      <BuildingName building={await getEntry(requirement.building)} plural link />
       <span>&nbsp;totaling at least {requirement.level} levels</span>
     </li>
   )
@@ -32,10 +32,20 @@ const { requirement } = Astro.props;
             const names = await getItemData(item);
             return <VersionedItemName data={names} />;
           } catch {
+            console.warn(`Unable to get item data for "${item}", falling back to raw string.`);
             return <p>{item}</p>;
           }
         })}
       </span>
+    </li>
+  )
+}
+
+{
+  requirement.type === 'item_tag' && (
+    <li>
+      <b>{requirement.quantity}</b>x&nbsp;
+      <span>{requirement.name}</span>
     </li>
   )
 }

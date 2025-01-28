@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"biodegradable","name":"Flower Power","requirements":[{"type":"building","building":"composter","level":3}],"effects":{"blockhutflorist":1},"researchLevel":2}

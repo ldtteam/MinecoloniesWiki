@@ -1,9 +1,9 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import type { ItemData } from '@utils/items';
+import type { ResultItemData } from '@utils/items';
 
 interface Props {
-  data: ItemData;
+  data: ResultItemData;
   link?: boolean;
 }
 
@@ -13,7 +13,7 @@ const { data, link = true } = Astro.props;
 {
   data.data.map((name) => (
     <VersionContent versions={name.versions} inline>
-      {link && name.link ? <a href={name.link}>{name.name}</a> : <span>{name.name}</span>}
+      {link && data.link ? <a href={data.link}>{name.name}</a> : <span>{name.name}</span>}
     </VersionContent>
   ))
 }

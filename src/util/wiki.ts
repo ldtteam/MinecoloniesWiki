@@ -1,6 +1,6 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getBuildingData, getBuildingName } from './building';
+import { getBuildingName } from './building';
 import { getItemData } from './items';
 import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
 
@@ -45,18 +45,21 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
   if (entry.data.type === 'page' || entry.data.type === 'item-combined' || entry.data.type === 'section-group') {
     return entry.data.title;
   } else if (entry.data.type === 'item') {
-    const itemData = await getItemData(entry.data.item.id);
+    const item = await getEntry(entry.data.item);
+    const itemData = await getItemData(item);
     return itemData.defaultName;
   } else if (entry.data.type === 'section') {
     return await getSectionTitle(entry, true);
   } else if (entry.data.type === 'building') {
-    const buildingData = await getBuildingData(entry.data.building.id);
-
+    const building = await getEntry('buildings', entry.data.id);
+    if (building === undefined) {
+      return entry.id;
+    }
     return combineVersionedTitles(
       await Promise.all(
         versions.map(async (version) => ({
           version,
-          title: await getBuildingName(version, buildingData)
+          title: await getBuildingName(version, building)
         }))
       )
     );
@@ -77,8 +80,7 @@ export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promis
     const itemData = await getEntry(entry.data.item);
     return itemData.data.description;
   } else if (entry.data.type === 'building') {
-    const buildingData = await getEntry(entry.data.building);
-    return buildingData.data.description;
+    return entry.data.description;
   }
 
   return undefined;
@@ -88,7 +90,8 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
   if (entry.data.type === 'page' || entry.data.type === 'section-group' || entry.data.type === 'section') {
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
-    const itemData = await getItemData(entry.data.item.id, true);
+    const item = await getEntry(entry.data.item);
+    const itemData = await getItemData(item, true);
     return itemData.data
       .flatMap((m) => m.icons)
       .map((m) => (typeof m === 'object' ? m.src : m))
@@ -98,14 +101,14 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
       return undefined;
     }
 
-    const itemData = await getItemData(entry.data.items[0].id, true);
+    const item = await getEntry(entry.data.items[0]);
+    const itemData = await getItemData(item, true);
     return itemData.data
       .flatMap((m) => m.icons)
       .map((m) => (typeof m === 'object' ? m.src : m))
       .find((_) => true);
   } else if (entry.data.type === 'building') {
-    const buildingData = await getBuildingData(entry.data.building.id);
-    return buildingData.data.icon.src;
+    return entry.data.icon.src;
   }
 }
 

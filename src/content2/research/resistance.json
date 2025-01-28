@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"stamina","name":"Resistance","requirements":[{"type":"building","building":"cook","level":2}],"effects":{"healingsaturationlimitaddition":1},"researchLevel":2}

@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"riposte","name":"Duelist","requirements":[{"type":"building","building":"smeltery","level":3}],"effects":{"meleearmormultiplier":3},"researchLevel":4}

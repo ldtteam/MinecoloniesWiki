@@ -1,0 +1,34 @@
+---
+type: building
+id: residence
+name: House
+plural: Houses
+description: The Residence, the place to call home for your citizens, your citizens will live and sleep here. Every citizen wants a roof above their head so they can be as efficient as possible.
+icon: "@assets/images/wiki/items/minecolonies/blockhutresidence.png"
+recipes:
+  - minecolonies/blockhutresidence
+overrides:
+  - version: "1.19"
+    name: Residence
+    plural: Residences
+---
+
+Citizens will go to the {% building /%} they are assigned to at night to sleep. The {% building /%} is also a way to get more citizens for your colony.
+
+Each level of the {% building /%} will house one citizen. So: 
+
+| Building Level | Citizens Housed |
+| -------------- | --------------- |
+| 1              | 1               |
+| 2              | 2               |
+| 3              | 3               |
+| 4              | 4               |
+| 5              | 5               |
+
+For additional citizens to spawn, you first have to have enough space in your {% building plural=true /%} to house your first four citizens. After you have created enough space for your initial four citizens, you have two options for your colony to grow. The first way is to have a free bed in your colony. You can also make space for a new citizen, go to the {% building name="tavern" /%}, wait for a traveler to show up, and then give them the items they request to recruit them.
+
+### Note: To have over 25 citizens, you must first complete the research in the {% building name="university" /%}.
+
+## Interface
+
+{% building_gui_content_block_main_residential order=1 /%}

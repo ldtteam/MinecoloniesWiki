@@ -1,0 +1,30 @@
+---
+type: building
+id: school
+name: School
+plural: Schools
+description: The School is where your children come to learn from their teachers. They can level up their intelligence before growing up, and heading off to work.
+icon: "@assets/images/wiki/items/minecolonies/blockhutschool.png"
+workers:
+  - teacher
+  - pupil
+recipes:
+  - minecolonies/blockhutschool
+---
+
+The School is where the Teacher will level up the Pupils' (children) Intelligence skill. Paper will increase the leveling speed of the Pupils. 
+
+The level of the School determines how many Pupils can be taught at a time.
+
+| Building Level | Pupils Taught |
+| -------------- | ------------- |
+| 1              | 2             |
+| 2              | 4             |
+| 3              | 6             |
+| 4              | 8             |
+| 5              | 10            |
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_stock order=2 /%}

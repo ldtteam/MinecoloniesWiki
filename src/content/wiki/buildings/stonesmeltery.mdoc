@@ -1,0 +1,44 @@
+---
+type: building
+id: stonesmeltery
+name: Stone Smeltery
+plural: Stone Smelteries
+description: The Stone Smeltery is your general smelter for your colony, they can smelt things like cobblestone into stone, sand into sandstone and so forth.
+icon: "@assets/images/wiki/items/minecolonies/blockhutstonesmeltery.png"
+workers:
+  - stonesmelter
+recipes:
+  - minecolonies/blockhutstonesmeltery
+settings:
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+---
+
+The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, terracotta into glazed terracotta, all types of stone into all types of smooth stone, and logs into charcoal. They can also pop chorus fruits! The Stone Smelter will only work when they have been taught the recipe, receive a request from another worker, and have the needed materials. 
+
+**Special Note: Charcoal cannot be used as a fuel for making charcoal in the stone smeltery.**
+
+**Hint:** The higher the level of the Stone Smeltery, the more furnaces the Stone Smelter will have available. The number of furnaces they *use* depends on their Athletics level. So:
+
+| Building Level | Furnaces |
+| -------------- | -------- |
+| 1              | 1        |
+| 2              | 2        |
+| 3              | 3        |
+| 4              | 4        |
+| 5              | 5        |
+
+**Hint:** The higher the Stone Smelter's Dexterity level, the faster things will smelt. At high levels, they can go *much* faster than the player!
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_smelting_recipes order=2 /%}
+{% building_gui_content_block_fuel order=3 /%}
+{% building_gui_content_block_tasks order=4 /%}
+{% building_gui_content_block_settings order=5 /%}

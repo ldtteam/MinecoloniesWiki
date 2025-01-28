@@ -1,0 +1,40 @@
+---
+type: building
+id: enchanter
+name: Enchanter's Tower
+plural: Enchanter Towers
+description: The Enchanter will create enchanted books using ancient tomes and experience. The Enchanter automatically goes around your colony collecting experience from other citizens.
+icon: "@assets/images/wiki/items/minecolonies/blockhutenchanter.png"
+workers:
+  - enchanter
+recipes:
+  - minecolonies/blockhutenchanter
+---
+
+The Enchanter's Tower is where the Enchanter will create enchanted books, as long as they have {% item name="ancient_tome" /%}. The Enchanter will observe other workers throughout their daily routines in order to collect experience to create enchanted books. The higher their Mana level, the more XP they will collect per trip. They will *not* apply the enchanted books to tools and armor, you must do that yourself. Enchanters do not take XP from workers, they simply gain it by observing.
+
+The higher the level of the Enchanter's Tower, the higher the level of the enchanted books the Enchanter will produce (the Enchanter's Knowledge level also contributes to this). So:
+
+| Building Level | Enchantment Level | Odds |
+| -------------- | ----------------- | ---- |
+| 1              | 1                 | 50   |
+| 2              | 2                 | 25   |
+| 3              | 3                 | 15   |
+| 4              | 4                 | 5    |
+| 5              | 5                 | 1    |
+
+The Enchanter can also craft some magical {% item name="scrolls" /%} upon request:
+
+- The Ultrasafe Colony Teleport Scroll, crafted with 3 paper, a compass, and the {% item name="build_tool" /%}. (Outputs 3 scrolls.)
+- The Ultrasafe Colony Group Teleport Scroll, crafted with 3 Ultrasafe Colony Teleport Scrolls. The Enchanter's Tower must be at least level 2 for the Enchanter to craft this scroll.
+- The Spatial Guard Reinforcements Scroll, crafted with 1 Ultrasafe Colony Teleport Scroll, 5 lapis lazuli, 1 ender pearl, and 1 paper. (Outputs 2 scrolls.) The More Scrolls [research](/wiki/systems/research) in the {% building name="university" /%} must be completed for the Enchanter to craft this scroll.
+- The Worker-Where-Are-You Scroll, crafted with 1 Ultrasafe Colony Teleport Scroll, 6 glowstone dust, and 2 paper. (Outputs 5 scrolls.) The More Scrolls research in the {% building name="university" /%} must be completed for the Enchanter to craft this scroll.
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
+{% building_gui_content_block_stock order=3 /%}
+{% building_gui_content_block_custom order=4 header="gather targets" imageKey="targets" imageAlt="Gather targets" %}
+Here you can set which workers the Enchanter will collect XP from, and how far that worker is from the tower.
+{% /building_gui_content_block_custom %}

@@ -1,0 +1,24 @@
+---
+type: building
+id: kitchen
+name: Cookery
+plural: Cookeries
+description: The Cookery is where food for your colonists will be cooked.
+icon: "@assets/images/wiki/items/minecolonies/blockhutkitchen.png"
+workers:
+  - chef
+recipes:
+  - minecolonies/blockhutkitchen
+---
+
+The {% building /%} is where the {% worker /%} will create food for your citizens.
+Food will be cooked when buildings request is, use this conjunction with your {% building name="cook" plural=true /%} to automatically keep your {% building name="cook" plural=true /%} stocked with food.
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_smelting_recipes order=2 /%}
+{% building_gui_content_block_tasks order=3 /%}
+{% building_gui_content_block_fuel order=4 /%}
+{% building_gui_content_block_stock order=5 /%}
+{% building_gui_content_block_crafting_recipes order=6 /%}

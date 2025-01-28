@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"ironarmor","name":"Plate Armor","requirements":[{"type":"building","building":"blacksmith","level":4}],"effects":{"platearmorunlock":1},"researchLevel":5}

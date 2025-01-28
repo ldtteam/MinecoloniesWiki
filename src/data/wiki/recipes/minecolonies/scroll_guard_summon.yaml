@@ -1,0 +1,14 @@
+type: custom
+items:
+  - item: minecolonies/scroll_tp
+  - item: lapis_lazuli
+    amount: 5
+  - item: ender_pearl
+  - item: paper
+output: minecolonies/scroll_guard_summon
+amount: 2
+conditions:
+  - type: building
+    building: enchanter
+  - type: research
+    research: morescrolls

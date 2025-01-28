@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"remembrance","name":"Grave Decay I","requirements":[{"type":"building","building":"graveyard","level":3}],"effects":{"gravedecaybonus":1},"researchLevel":2}

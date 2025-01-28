@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"biodegradable","name":"Let It Grow","requirements":[{"type":"building","building":"farmer","level":3}],"effects":{"blockhutplantation":1},"researchLevel":2}

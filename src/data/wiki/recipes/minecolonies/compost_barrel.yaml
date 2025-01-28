@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: planks
+  item2: structurize/build_tool
+  item3: planks
+row2:
+  item1: planks
+  item2: dirt
+  item3: planks
+row3:
+  item1: planks
+  item2: iron_ingot
+  item3: planks
+output: minecolonies/compost_barrel

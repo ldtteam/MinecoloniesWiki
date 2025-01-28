@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"multishot","name":"Rapid Shot","requirements":[{"type":"building","building":"archery","level":5}],"effects":{"doublearrowsmultiplier":3},"researchLevel":5}

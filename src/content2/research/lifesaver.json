@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"firstaid2","name":"Lifesaver","requirements":[{"type":"building","building":"townhall","level":3}],"effects":{"healthaddition":3},"researchLevel":3}

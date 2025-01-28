@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"tools","name":"Seems Automatic","requirements":[{"type":"building","building":"blacksmith","level":5}],"effects":{"blockplacespeedmultiplier":4},"researchLevel":5}

@@ -4,12 +4,11 @@ import BuildingName from '@components/markdoc/names/BuildingName.astro';
 import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import WorkerName from '@components/markdoc/names/WorkerName.astro';
 import { getItemData } from '@utils/items';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
-import type { BaseBuildingContentBlockProps } from '../types';
-
-type Props = BaseBuildingContentBlockProps;
-
-const rackData = await getItemData('rack');
+const rackEntry = (await getEntry('items', 'minecolonies/rack')) as CollectionEntry<'items'>;
+const rackData = await getItemData(rackEntry);
 ---
 
 <BuildingContentBlock {...Astro.props} header="main interface" imageKey="main" imageAlt="Main interface">

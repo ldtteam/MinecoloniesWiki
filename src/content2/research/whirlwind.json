@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"arrowpierce","name":"Whirlwind","requirements":[{"type":"building","building":"barracks","level":4}],"effects":{"whirlwindabilityunlock":1},"researchLevel":4}

@@ -1,1 +1,0 @@
-{"tree":"technology","parent":"ability","name":"Skills","requirements":[{"type":"building","building":"miner","level":2}],"effects":{"blockplacespeedmultiplier":2},"researchLevel":3}

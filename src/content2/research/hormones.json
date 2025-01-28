@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"nurture","name":"Hormones","requirements":[{"type":"building","building":"school","level":3}],"effects":{"growthmultiplier":2},"researchLevel":3}

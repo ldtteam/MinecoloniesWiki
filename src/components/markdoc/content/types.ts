@@ -1,4 +1,4 @@
-import type { MarkdocBuildingComponent } from '@utils/building';
+import type { MarkdocBuildingComponent } from 'src/markdoc/buildings';
 
 export interface BaseBuildingContentBlockProps extends MarkdocBuildingComponent {
   order?: number;

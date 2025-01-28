@@ -1,0 +1,32 @@
+---
+type: building
+id: florist
+name: Flowershop
+plural: Flowershops
+description: The Florist will grow flowers for you, they need compost from the Composter to be able to do this.
+icon: "@assets/images/wiki/items/minecolonies/blockhutflorist.png"
+workers:
+  - florist
+recipes:
+  - minecolonies/blockhutflorist
+---
+
+The Flower Shop is where your Florist will grow flowers for your colony, if given {% item name="compost" /%} and an axe.
+
+**Hint:** The higher the level of the Flower Shop, the more daily output the Florist can handle. So:
+
+| Building Level | Number of Plants |
+| -------------- | ---------------- |
+| 1              | 4                |
+| 2              | 8                |
+| 3              | 12               |
+| 4              | 16               |
+| 5              | 20               |
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_item_list order=2 header="plantables" imageKey="plantables" imageAlt="Plantables list" defaultOn=true %}
+This shows a list of items the {% worker name="florist" /%} can plant. As the {% building /%} is leveled up, your {% building /%} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
+{% /building_gui_content_block_item_list %}
+{% building_gui_content_block_stock order=3 /%}

@@ -1,0 +1,14 @@
+type: custom
+items:
+  - item: iron_ingot
+    amount: 7
+  - item: leather
+  - item: coal
+    amount: 3
+output: minecolonies/plate_armor_chest
+conditions:
+  - type: building
+    building: blacksmith
+    level: 4
+  - type: research
+    research: platearmor

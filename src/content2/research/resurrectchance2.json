@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"resurrectchance1","name":"Resurrection Chance II","requirements":[{"type":"building","building":"graveyard","level":5}],"effects":{"resurrectchanceaddition":2},"researchLevel":3}

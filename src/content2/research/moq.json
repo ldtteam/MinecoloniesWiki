@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"rails","name":"Minimum Order Quantity","requirements":[{"type":"building","building":"deliveryman","level":9}],"effects":{"min_order":1},"researchLevel":3}

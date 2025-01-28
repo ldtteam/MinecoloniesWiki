@@ -1,1 +1,0 @@
-{"tree":"combat","parent":"avoidance","name":"Parry","requirements":[{"type":"building","building":"smeltery","level":1}],"effects":{"meleearmormultiplier":1},"researchLevel":2}

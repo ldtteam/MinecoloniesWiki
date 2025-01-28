@@ -1,4 +1,5 @@
 ---
+import type { PartialCollectionEntry } from '@utils/util';
 import { getEntry } from 'astro:content';
 
 import CustomRecipe from './CustomRecipe.astro';
@@ -6,15 +7,11 @@ import RecipeConditions from './RecipeConditions.astro';
 import ShapedRecipe from './ShapedRecipe.astro';
 
 interface Props {
-  recipe: string;
+  recipe: PartialCollectionEntry<'recipes'>;
 }
 
 const { recipe } = Astro.props;
-
-const recipeData = await getEntry('recipes', recipe);
-if (recipeData === undefined) {
-  throw new Error(`Recipe "${recipe}" does not exist.`);
-}
+const recipeData = await getEntry(recipe);
 ---
 
 <div class="recipe-box">

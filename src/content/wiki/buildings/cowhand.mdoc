@@ -1,0 +1,42 @@
+---
+type: building
+id: cowhand
+name: Cowhand's Hut
+plural: Cowhand Huts
+description: The Cowhand is responsible for herding your cows.
+icon: "@assets/images/wiki/items/minecolonies/blockhutcowhand.png"
+workers:
+  - cowhand
+recipes:
+  - minecolonies/blockhutcowhand
+settings:
+  - name: Breeding
+    description: On by default. Here you can choose if the {worker:cowhand} will breed (and consequently kill) cows.
+  - name: Feeding
+    description: On by default. Here you can choose if the {worker:cowhand} will feed baby animals, to let them grow up faster.
+  - name: Milk attempts
+    description: How often, per the given amount of days, the {worker:cowhand} will be allowed to milk cows.
+  - name: Stew attempts
+    description: How often, per the given amount of days, the {worker:cowhand} will be allowed to milk mooshrooms for mushroom stew.
+  - name: Per days
+    description: Per how many days the above 2 values should reset.
+---
+
+The Cowhand's Hut is where the Cowhand will breed, butcher, and milk (if you have the option enabled) cows for food and leather. You will have to capture and bring in two cows to the Cowhand's Hut, as the Cowhand will not catch and bring in any cows.
+
+> **Note:** The Cowhand will only keep two cows alive per hut level, so at level 5 they will have ten cows in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and leather. So:
+
+
+| Building Level | Cows Housed |
+| -------------- | ----------- |
+| 1              | 2           |
+| 2              | 4           |
+| 3              | 6           |
+| 4              | 8           |
+| 5              | 10          |
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_stock order=2 /%}
+{% building_gui_content_block_settings order=3 /%}

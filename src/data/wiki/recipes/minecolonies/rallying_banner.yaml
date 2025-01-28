@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: iron_sword
+  item2: iron_sword
+  item3: iron_sword
+row2:
+  item1: minecolonies/blockhutguardtower
+  item2: yellow_banner
+  item3: minecolonies/blockhutguardtower
+row3:
+  item1: bow
+  item2: bow
+  item3: bow
+output: minecolonies/rallying_banner

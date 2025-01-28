@@ -1,0 +1,47 @@
+---
+type: building
+id: lumberjack
+name: Forester's Hut
+plural: Forester's Huts
+description: The Forester will cut down trees in your colony, you can tell them what trees to cut down and even in what area they're allowed to cut trees down.
+icon: "@assets/images/wiki/items/minecolonies/blockhutlumberjack.png"
+workers:
+  - forester
+recipes:
+  - minecolonies/blockhutlumberjack
+settings:
+  - name: Replanting
+    description: Where you can select if you want the {worker:forester} to replant trees that are chopped down. They will only do this if they have enough saplings.
+  - name: Zoning Mode
+    description: This lets you turn on or off if you want the {worker:forester} to be restricted to a certain area when chopping trees. To choose the area, use the Obtain Tool button on the next tab.
+  - name: Break Leaves
+    description: This lets you decide whether you want the {worker:forester} to also remove all of the leaves of the tree, else he will only cut those which are in their way.
+  - name: Recipe Mode
+    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
+    options:
+      - name: Priority
+        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+      - name: Warehouse Stock
+        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+  - name: Use Shears
+    description: Whether the {worker:forester} will use shears or a hoe to cut down the leaves.
+---
+
+The {% building /%} is where the {% worker name="forester" /%} will go in between chopping down trees. The {% worker name="forester" /%} will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it. Or you can optionally configure a specific chopping zone that they will use instead.
+
+> **Note:** In addition to axes for chopping down trees, {% worker name="forester" /%} require hoes for breaking leaves.
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
+{% building_gui_content_block_item_list order=3 header="saplings" imageKey="saplings" imageAlt="Saplings list" defaultOn=true %}
+It shows a list of recognized saplings the {% worker name="forester" /%} can work with, even modded ones (if coded correctly).
+Here you can turn on or off which type of trees the {% worker name="forester" /%} will chop down.
+{% /building_gui_content_block_item_list %}
+{% building_gui_content_block_tasks order=4 /%}
+{% building_gui_content_block_settings order=5 /%}
+{% building_gui_content_block_custom order=6 header="zoning tool" imageKey="zonetool" imageAlt="Zoning tool" %}
+This tool will let you define an area for the {% worker name="forester" /%} to work. Right click one corner of the area you want, then left click the opposite corner, and this will set a box inside which the {% worker name="forester" /%} will search for trees. Vertical coordinates are important as well -- for best results, ensure that your box contains the base of the trees as well as at least some of the leaf blocks. It's not necessary to contain the entire tree, but it won't hurt. Defining a zone is optional, but recommended if you want a dedicated tree farm area.
+{% /building_gui_content_block_custom %}
+{% building_gui_content_block_stock order=7 /%}

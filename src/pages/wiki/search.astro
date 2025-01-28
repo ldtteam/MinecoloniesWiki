@@ -70,10 +70,10 @@ import { Icon } from 'astro-icon/components';
               </div>`;
     }
 
-    document.getElementById('search_input').addEventListener('change', function (ev) {
+    function search(ev) {
       const version = Number.parseInt(document.body.dataset['version'] ?? '0');
-      const query = ev.target.value;
-      if (query.length > 3) {
+      const query = ev.currentTarget.value;
+      if (query.length >= 3) {
         const filters = query.split(' ');
 
         let results = structuredClone(pages).map((page) => ({
@@ -100,7 +100,10 @@ import { Icon } from 'astro-icon/components';
         document.getElementById('search_output').innerHTML = '';
         return;
       }
-    });
+    }
+
+    document.getElementById('search_input').addEventListener('keyup', search);
+    document.getElementById('search_input').addEventListener('change', search);
   }
 
   load();

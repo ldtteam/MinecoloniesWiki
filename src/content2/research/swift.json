@@ -1,1 +1,0 @@
-{"tree":"civilian","parent":"agile","name":"Swift","requirements":[{"type":"building","building":"townhall","level":5}],"effects":{"walkingmultiplier":3},"researchLevel":5}
