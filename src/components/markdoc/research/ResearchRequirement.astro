@@ -1,9 +1,9 @@
 ---
-import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
-import BuildingName from '@components/wiki/names/BuildingName.astro';
-import { getItemData } from '@utils/items';
 import type { CollectionEntry } from 'astro:content';
-import { getEntry } from 'astro:content';
+
+import ResearchRequirementBuilding from './ResearchRequirementBuilding.astro';
+import ResearchRequirementItem from './ResearchRequirementItem.astro';
+import ResearchRequirementTag from './ResearchRequirementTag.astro';
 
 interface Props {
   requirement: CollectionEntry<'research'>['data']['requirements'][number];
@@ -12,40 +12,6 @@ interface Props {
 const { requirement } = Astro.props;
 ---
 
-{
-  requirement.type === 'building' && (
-    <li>
-      <span>One or multiple&nbsp;</span>
-      <BuildingName building={await getEntry(requirement.building)} plural link />
-      <span>&nbsp;totaling at least {requirement.level} levels</span>
-    </li>
-  )
-}
-
-{
-  requirement.type === 'item' && (
-    <li>
-      <b>{requirement.quantity}</b>x&nbsp;
-      <span>
-        {requirement.items.map(async (item) => {
-          try {
-            const names = await getItemData(item);
-            return <VersionedItemName data={names} />;
-          } catch {
-            console.warn(`Unable to get item data for "${item}", falling back to raw string.`);
-            return <p>{item}</p>;
-          }
-        })}
-      </span>
-    </li>
-  )
-}
-
-{
-  requirement.type === 'item_tag' && (
-    <li>
-      <b>{requirement.quantity}</b>x&nbsp;
-      <span>{requirement.name}</span>
-    </li>
-  )
-}
+{requirement.type === 'building' && <ResearchRequirementBuilding requirement={requirement} />}
+{requirement.type === 'item' && <ResearchRequirementItem requirement={requirement} />}
+{requirement.type === 'item_tag' && <ResearchRequirementTag requirement={requirement} />}

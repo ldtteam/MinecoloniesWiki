@@ -9,6 +9,7 @@ const buildingInfo = (image: ImageFunction) =>
     icon: image(),
     workers: reference('workers').array().optional(),
     recipes: reference('recipes').array().optional(),
+    singular: z.boolean().default(false),
     settings: z
       .array(
         z.object({

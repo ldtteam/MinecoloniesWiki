@@ -1,0 +1,28 @@
+---
+import { getItemData } from '@utils/items';
+import { type CollectionEntry } from 'astro:content';
+import VersionedItemName from '../names/items/VersionedItemName.astro';
+
+interface Props {
+  requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'item' }>;
+}
+
+const { requirement } = Astro.props;
+---
+
+<li>
+  <b>{requirement.quantity}</b>x
+  <span>
+    {
+      requirement.items.map(async (item) => {
+        try {
+          const names = await getItemData(item);
+          return <VersionedItemName data={names} />;
+        } catch {
+          console.warn(`Unable to get item data for "${item}", falling back to raw string.`);
+          return <p>{item}</p>;
+        }
+      })
+    }
+  </span>
+</li>
