@@ -26,8 +26,6 @@
     "@astrojs/markdown-remark": "^6.0.2",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/svelte": "^7.0.4",
-    "@fontsource/fondamento": "^5.1.1",
-    "@fontsource/neucha": "^5.1.1",
     "@iconify-json/fa6-brands": "^1.2.5",
     "@iconify-json/fa6-regular": "^1.2.3",
     "@iconify-json/fa6-solid": "^1.2.3",

@@ -23,12 +23,6 @@ importers:
       '@astrojs/svelte':
         specifier: ^7.0.4
         version: 7.0.4(@types/node@20.14.9)(astro@5.1.10(@types/node@20.14.9)(rollup@4.28.0)(sass@1.77.6)(typescript@5.7.3)(yaml@2.6.1))(sass@1.77.6)(svelte@5.19.4)(typescript@5.7.3)(yaml@2.6.1)
-      '@fontsource/fondamento':
-        specifier: ^5.1.1
-        version: 5.1.1
-      '@fontsource/neucha':
-        specifier: ^5.1.1
-        version: 5.1.1
       '@iconify-json/fa6-brands':
         specifier: ^1.2.5
         version: 1.2.5
@@ -445,12 +439,6 @@ packages:
   '@eslint/plugin-kit@0.2.5':
     resolution: {integrity: sha512-lB05FkqEdUg2AA0xEbUz0SnkXT1LcCTa438W4IWTUh4hdOnVbQyOJ81OrDXsJk/LSiJHubgGEFoR5EHq1NsH1A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@fontsource/fondamento@5.1.1':
-    resolution: {integrity: sha512-EMrdsNIOd0pw1bY3Da535YjQV9xQ9BTmbEAYGZ4qslJyjlYAdqUjjCgmt8U7Nuit3XqyPdp6+xEBSI/i3qYr4g==}
-
-  '@fontsource/neucha@5.1.1':
-    resolution: {integrity: sha512-D/73o89mIXhkk31pXtqaPTiglFiKzuNccumHXuGodta9xtjM7Ls3sQfo1Tddw1TPTZd/mavO01X9IsFrJ38P9w==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -3781,10 +3769,6 @@ snapshots:
     dependencies:
       '@eslint/core': 0.10.0
       levn: 0.4.1
-
-  '@fontsource/fondamento@5.1.1': {}
-
-  '@fontsource/neucha@5.1.1': {}
 
   '@humanfs/core@0.19.1': {}
 
