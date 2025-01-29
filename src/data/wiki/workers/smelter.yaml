@@ -11,3 +11,10 @@ traits:
     name: Strength
     effect: Increases chance of doubling or tripling ores
 primaryBuilding: smeltery
+overrides:
+  - version: "1.19"
+    traits:
+      primary:
+        effect: Amount of furnaces that can be used
+      secondary:
+        effect: Faster smelting

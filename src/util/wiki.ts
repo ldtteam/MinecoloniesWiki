@@ -1,7 +1,7 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getBuildingName } from './building';
 import { getItemData } from './items';
+import { getOverrideValue } from './override';
 import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
 
 export type Title = string | TitleVersions;
@@ -59,7 +59,7 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
       await Promise.all(
         versions.map(async (version) => ({
           version,
-          title: await getBuildingName(version, building)
+          title: (await getOverrideValue(building.data, (v) => v.name, version)) ?? ''
         }))
       )
     );

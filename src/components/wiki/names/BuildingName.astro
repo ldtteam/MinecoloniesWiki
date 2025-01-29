@@ -1,8 +1,6 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import { getBuildingLink, getBuildingName } from '@utils/building';
+import VersionOverride from '@components/version/VersionOverride.astro';
 import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
 
 interface Props {
   building: CollectionEntry<'buildings'>;
@@ -11,31 +9,14 @@ interface Props {
 }
 
 const { building, link = false, plural = false } = Astro.props;
-
-const versions = await getCollection('versions');
-
-const versionedContent = await Promise.all(
-  versions.map(async (version) => ({
-    version,
-    name: await getBuildingName(version, building, plural)
-  }))
-);
-const versionedContentReduced = versionedContent.reduce<Record<string, CollectionEntry<'versions'>[]>>(
-  (previousValue, currentValue) => {
-    if (previousValue[currentValue.name] === undefined) {
-      previousValue[currentValue.name] = [];
-    }
-    previousValue[currentValue.name].push(currentValue.version);
-    return previousValue;
-  },
-  {}
-);
 ---
 
 {
-  Object.entries(versionedContentReduced).map(async ([name, versions]) => (
-    <VersionContent versions={versions} inline>
-      {link ? <a href={getBuildingLink(building)}>{name}</a> : <span>{name}</span>}
-    </VersionContent>
-  ))
+  link ? (
+    <a href={`/wiki/buildings/${building.id}`}>
+      <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+    </a>
+  ) : (
+    <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+  )
 }
