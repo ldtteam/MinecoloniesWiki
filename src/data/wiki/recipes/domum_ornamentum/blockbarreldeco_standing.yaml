@@ -1,14 +1,14 @@
 type: shaped
 row1:
   item1: stick
-  item2: tags/planks
+  item2: planks
   item3: stick
 row2:
   item1: stick
-  item2: tags/planks
+  item2: planks
   item3: stick
 row3:
   item1: stick
-  item2: tags/planks
+  item2: planks
   item3: stick
 output: domum_ornamentum/blockbarreldeco_standing

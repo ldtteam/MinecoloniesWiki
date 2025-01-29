@@ -8,7 +8,7 @@ row2:
   item2: stone_slab
   item3: stone_slab
 row3:
-  item1: tags/logs
-  item2: tags/logs
-  item3: tags/logs
+  item1: logs
+  item2: logs
+  item3: logs
 output: domum_ornamentum/architects_cutter

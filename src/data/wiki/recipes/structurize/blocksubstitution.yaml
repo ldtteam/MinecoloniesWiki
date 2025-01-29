@@ -1,6 +1,6 @@
 type: shaped
 row1:
-  item1: tags/logs
+  item1: logs
   item2: stick
   item3:
 row2:
@@ -10,6 +10,6 @@ row2:
 row3:
   item1:
   item2: stick
-  item3: tags/logs
+  item3: logs
 output: structurize/blocksubstitution
 amount: 32
