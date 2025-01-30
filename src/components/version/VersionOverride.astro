@@ -9,9 +9,10 @@ import VersionContent from './VersionContent.astro';
 interface Props<V, O extends Overrideable<V>> {
   value: O;
   fieldGetter: OverrideableFieldGetter<O>;
+  inline?: boolean;
 }
 
-const { value, fieldGetter } = Astro.props as Props<unknown, Overrideable<unknown>>;
+const { value, fieldGetter, inline = true } = Astro.props as Props<unknown, Overrideable<unknown>>;
 
 const versions = await getCollection('versions');
 
@@ -29,4 +30,10 @@ for (const version of versions) {
 }
 ---
 
-{values.entries().map(async ([value, versions]) => <VersionContent versions={versions}>{value}</VersionContent>)}
+{
+  values.entries().map(async ([value, versions]) => (
+    <VersionContent versions={versions} inline={inline}>
+      {value}
+    </VersionContent>
+  ))
+}
