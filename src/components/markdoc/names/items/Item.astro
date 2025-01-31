@@ -13,9 +13,9 @@ const { currentPage, name } = Astro.props;
 
 const itemEntry = await getEntry('items', name);
 const itemData = itemEntry ? await getItemData(itemEntry) : await getItemData(name);
-if (itemData === undefined) {
-  throw new Error(`Wiki page for item '${name}' does not exist.`);
+if (itemData.data.length === 0) {
+  throw new Error(`Item '${name}' does not exist.`);
 }
 ---
 
-<VersionedItemName data={itemData} link={currentPage !== itemData.link} />
+<VersionedItemName data={itemData} link={'/wiki/' + currentPage !== itemData.link} />

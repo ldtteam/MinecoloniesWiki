@@ -1,15 +1,15 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getItemData } from './items';
-import { getOverrideValues } from './override';
-import { type VersionedResult } from './version';
+import { getOverrideValue } from './override';
+import { combineVersionedTitles, type TitleVersions } from './version';
 
 export type Title = string | VersionedResult;
 
 interface WikiPageEntry {
   type: 'page';
-  name: Title;
   id: string;
+  name: Title;
 }
 
 interface WikiSubCategoryEntry {
@@ -84,7 +84,12 @@ export async function isSection(page: CollectionEntry<'wiki'>) {
   if (page.id === 'tutorials/datapacks/citizen_names') {
     console.log(res);
   }
-  return res;
+
+  return title.map((titleVersion) => ({
+    type: 'page',
+    id: entry.data.type === 'section-group' ? entry.data.initialSection.id : entry.id
+    name: titleVersion,
+  }));
 }
 
 export async function getWikiPages(): Promise<WikiPages> {

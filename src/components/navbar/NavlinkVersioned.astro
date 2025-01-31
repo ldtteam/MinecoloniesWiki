@@ -1,10 +1,10 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import type { Title } from '@utils/wiki';
+import type { TitleVersionItem } from '@utils/version';
 
 interface Props {
   id: string;
-  name: Title;
+  name: string | TitleVersionItem;
   href?: string;
   root?: boolean;
   thin?: boolean;
@@ -21,6 +21,7 @@ const dropdownId = `navbarDropdown${id}`;
 const hasChildren = Astro.slots.has('default');
 ---
 
+    <li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
 {
   typeof name === 'string' ? (
       {hasChildren ? (
@@ -50,44 +51,37 @@ const hasChildren = Astro.slots.has('default');
       )}
     </li>
   ) : (
-    <>
-      {name.values.map((value) => (
-        <VersionContent
-          versions={value.versions}
-          as="li"
-          class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
-        >
-          {hasChildren ? (
-            <>
-              <button
-                class:list={[
-                  root ? 'nav-link' : 'dropdown-item',
-                  hasChildren ? 'dropdown-toggle' : '',
-                  active ? 'active' : '',
-                  thin ? 'py-0' : ''
-                ]}
-                id={dropdownId}
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                {value.value}
-              </button>
-              <ul class="dropdown-menu" aria-labelledby={dropdownId}>
-                <slot />
-              </ul>
-            </>
-          ) : (
-            <a
-              class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']}
-              href={href}
-            >
-              {value.value}
-            </a>
-          )}
-        </VersionContent>
-      ))}
-    </>
+    <VersionContent
+      versions={name.versions}
+      as="li"
+      class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
+    >
+      {hasChildren ? (
+        <>
+          <button
+            class:list={[
+              root ? 'nav-link' : 'dropdown-item',
+              hasChildren ? 'dropdown-toggle' : '',
+              active ? 'active' : '',
+              thin ? 'py-0' : ''
+            ]}
+            id={dropdownId}
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {name.title}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+            <slot />
+          </ul>
+        </>
+      ) : (
+        <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
+          {name.title}
+        </a>
+      )}
+    </VersionContent>
   )
 }
 </li>
