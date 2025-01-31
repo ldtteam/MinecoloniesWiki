@@ -2,6 +2,16 @@ import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { isFullEntry, type PartialCollectionEntry } from './util';
 
+export interface DataForVersions {
+  value: string;
+  versions: CollectionEntry<'versions'>[];
+}
+
+export interface VersionedResult {
+  highestValue: string;
+  values: DataForVersions[];
+}
+
 export async function isVersionHigherOrSame(
   version1: PartialCollectionEntry<'versions'>,
   version2: PartialCollectionEntry<'versions'>
@@ -43,32 +53,4 @@ export async function getSortedVersions(): Promise<CollectionEntry<'versions'>[]
 export async function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
   const results = (await getSortedVersions()).filter((f) => f.data.supported);
   return results[0];
-}
-
-interface TitleVersionEntry {
-  title: string;
-  version: CollectionEntry<'versions'>;
-}
-
-export interface TitleVersionItem {
-  title: string;
-  versions: CollectionEntry<'versions'>[];
-}
-
-export type TitleVersions = TitleVersionItem[];
-
-export function combineVersionedTitles(array: TitleVersionEntry[]): TitleVersions {
-  const cache: Record<string, number> = {};
-
-  return array.reduce<TitleVersions>((prev, curr) => {
-    if (cache[curr.title] === undefined) {
-      const index = prev.push({
-        title: curr.title,
-        versions: []
-      });
-      cache[curr.title] = index - 1;
-    }
-    prev[cache[curr.title]].versions.push(curr.version);
-    return prev;
-  }, []);
 }

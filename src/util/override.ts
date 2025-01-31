@@ -9,6 +9,7 @@ import type {
 import { type CollectionEntry, getEntry, reference, z } from 'astro:content';
 
 import type { DeepPartial, PartialCollectionEntry } from './util';
+import { getSortedVersions, type VersionedResult } from './version';
 import { deepPartial } from './zod';
 
 export type Overrideable<V> = V & {
@@ -36,6 +37,37 @@ export function overrideSchema<
       )
       .optional()
   });
+}
+
+export async function getOverrideValues<V, O extends Overrideable<V>>(
+  value: O,
+  fieldGetter: OverrideableFieldGetter<O>
+): Promise<VersionedResult> {
+  const versions = await getSortedVersions();
+  const values = new Map<string, CollectionEntry<'versions'>[]>();
+  let highestValue = '';
+  for (const version of versions) {
+    const versionedValue = await getOverrideValue(value, fieldGetter, version);
+    if (versionedValue === undefined) {
+      continue;
+    }
+
+    if (!values.has(versionedValue)) {
+      values.set(versionedValue, []);
+    }
+    values.get(versionedValue)?.push(version);
+    highestValue = versionedValue;
+  }
+  return values.entries().reduce<VersionedResult>(
+    (prev, [value, versions]) => {
+      prev.values.push({
+        value,
+        versions
+      });
+      return prev;
+    },
+    { highestValue, values: [] }
+  );
 }
 
 export async function getOverrideValue<V, O extends Overrideable<V>>(

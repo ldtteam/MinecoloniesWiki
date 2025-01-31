@@ -29,21 +29,18 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
 const newestVersion = await getNewestVersion();
 
 let versionTitleData: Record<string, string>;
-if (typeof title === 'object') {
-  versionTitleData = title.reduce<Record<string, string>>((previousValue, currentValue) => {
+if (typeof title === 'string') {
+  versionTitleData = { 'data-title-version-all': title };
+} else {
+  versionTitleData = title.values.reduce<Record<string, string>>((previousValue, currentValue) => {
     for (const version of currentValue.versions) {
-      previousValue['data-title-version-' + version.data.order] = currentValue.title;
+      previousValue['data-title-version-' + version.data.order] = currentValue.value;
     }
     return previousValue;
   }, {});
-} else {
-  versionTitleData = { 'data-title-version-all': title };
 }
 
-const initialTitle =
-  typeof title === 'string'
-    ? title
-    : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | ' + titleAffix;
+const initialTitle = typeof title === 'string' ? title : title.highestValue + ' | ' + titleAffix;
 
 const hasLeftSlot = await Astro.slots.render('left').then((slot) => (slot ?? '').trim() !== '');
 const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '').trim() !== '');

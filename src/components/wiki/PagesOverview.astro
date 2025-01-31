@@ -17,7 +17,7 @@ const wikiPages = await getWikiPages();
             if (page.type === 'page') {
               return (
                 <a href={`/wiki/${page.id}`}>
-                  <PageTitleRender title={typeof page.name === 'string' ? page.name : [page.name]} />
+                  <PageTitleRender title={page.name} />
                 </a>
               );
             } else if (page.type === 'subcategory') {
