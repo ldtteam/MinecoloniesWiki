@@ -21,6 +21,7 @@ const dropdownId = `navbarDropdown${id}`;
 const hasChildren = Astro.slots.has('default');
 ---
 
+    <li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
 {
   typeof name === 'string' ? (
       {hasChildren ? (

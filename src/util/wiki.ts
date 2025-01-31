@@ -2,19 +2,19 @@ import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getItemData } from './items';
 import { getOverrideValue } from './override';
-import { combineVersionedTitles, type TitleVersionItem, type TitleVersions } from './version';
+import { combineVersionedTitles, type TitleVersions } from './version';
 
 export type Title = string | TitleVersions;
 
 interface WikiPageEntry {
   type: 'page';
-  name: string | TitleVersionItem;
   id: string;
+  name: Title;
 }
 
 interface WikiSubCategoryEntry {
   type: 'subcategory';
-  name: string;
+  name: Title;
   pages: WikiPageEntry[];
 }
 
@@ -126,8 +126,8 @@ async function extractPageTitles(entry: CollectionEntry<'wiki'>): Promise<WikiPa
 
   return title.map((titleVersion) => ({
     type: 'page',
-    name: titleVersion,
     id: entry.data.type === 'section-group' ? entry.data.initialSection.id : entry.id
+    name: titleVersion,
   }));
 }
 
