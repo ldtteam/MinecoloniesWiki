@@ -1,8 +1,8 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getItemData } from './items';
-import { getOverrideValue } from './override';
-import { combineVersionedTitles, type TitleVersions } from './version';
+import { getOverrideValues } from './override';
+import type { VersionedResult } from './version';
 
 export type Title = string | VersionedResult;
 
@@ -80,16 +80,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
 }
 
 export async function isSection(page: CollectionEntry<'wiki'>) {
-  const res = (await getCollection('wiki', (p) => p.data.sections?.some((s) => s.id === page.id))).length > 0;
-  if (page.id === 'tutorials/datapacks/citizen_names') {
-    console.log(res);
-  }
-
-  return title.map((titleVersion) => ({
-    type: 'page',
-    id: entry.data.type === 'section-group' ? entry.data.initialSection.id : entry.id
-    name: titleVersion,
-  }));
+  return (await getCollection('wiki', (p) => p.data.sections?.some((s) => s.id === page.id))).length > 0;
 }
 
 export async function getWikiPages(): Promise<WikiPages> {

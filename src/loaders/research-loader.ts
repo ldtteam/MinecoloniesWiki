@@ -2,7 +2,7 @@ import { getEntry, z } from 'astro:content';
 import path from 'path';
 import type { researchEffectsSchema, researchSchema, researchTreeSchema } from 'src/schemas/research';
 
-import { getAllJsonFiles, getAllJsonFilesInDirectory } from './file-utils';
+import { getAllFilesInDirectory, getAllJsonFiles } from './file-utils';
 
 const translationsSchema = z.record(z.string(), z.string());
 
@@ -70,7 +70,7 @@ export async function researchTreesLoader() {
 
   const translations = await getTranslations();
 
-  const trees = await getAllJsonFilesInDirectory(
+  const trees = await getAllFilesInDirectory(
     treeSchemaInternal,
     'minecolonies/src/datagen/generated/minecolonies/data/minecolonies/researches'
   );
@@ -92,13 +92,13 @@ export async function researchLoader() {
 
   const translations = await getTranslations();
 
-  const trees = await getAllJsonFilesInDirectory(
+  const trees = await getAllFilesInDirectory(
     treeSchemaInternal,
     'minecolonies/src/datagen/generated/minecolonies/data/minecolonies/researches'
   );
   for (const treeFileName of Object.keys(trees)) {
     const treeKey = path.parse(treeFileName).name;
-    const researches = await getAllJsonFilesInDirectory(
+    const researches = await getAllFilesInDirectory(
       researchSchemaInternal,
       'minecolonies/src/datagen/generated/minecolonies/data/minecolonies/researches/' + treeKey
     );
@@ -133,7 +133,7 @@ export async function researchEffectsLoader() {
 
   const translations = await getTranslations();
 
-  const effects = await getAllJsonFilesInDirectory(
+  const effects = await getAllFilesInDirectory(
     effectSchemaInternal,
     'minecolonies/src/datagen/generated/minecolonies/data/minecolonies/researches/effects'
   );

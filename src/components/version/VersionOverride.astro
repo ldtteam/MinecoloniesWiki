@@ -15,9 +15,9 @@ const values = await getOverrideValues(value, fieldGetter);
 ---
 
 {
-  values.entries().map(async ([value, versions]) => (
-    <VersionContent versions={versions} inline={inline}>
-      {value}
+  values.values.values().map(async (value) => (
+    <VersionContent versions={value.versions} inline={inline}>
+      {value.value}
     </VersionContent>
   ))
 }

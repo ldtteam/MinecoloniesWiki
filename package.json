@@ -43,7 +43,8 @@
     "sharp": "^0.33.5",
     "svelte": "^5.19.4",
     "swiper": "^11.2.1",
-    "vite": "^6.0.11"
+    "vite": "^6.0.11",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
     "@astrojs/upgrade": "^0.4.3",

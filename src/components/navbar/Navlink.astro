@@ -23,6 +23,7 @@ const hasChildren = Astro.slots.has('default');
 
 {
   typeof name === 'string' ? (
+    <li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
       {hasChildren ? (
         <>
           <button
@@ -90,7 +91,6 @@ const hasChildren = Astro.slots.has('default');
     </>
   )
 }
-</li>
 
 <script>
   function onLoad() {
