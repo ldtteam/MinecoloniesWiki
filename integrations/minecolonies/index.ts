@@ -7,7 +7,7 @@ export function minecoloniesSubmodule(): AstroIntegration {
     name: 'minecolonies-submodule',
     hooks: {
       'astro:config:setup': async ({command}) => {
-        if (command === "dev" || command === "build") {
+        if (command === "dev") {
           shouldRun = true;
         }
       },
@@ -17,7 +17,7 @@ export function minecoloniesSubmodule(): AstroIntegration {
         }
 
         logger.info('Updating Minecolonies submodule...');
-        const response = shelljs.exec('git submodule update --init --remote --merge minecolonies');
+        const response = shelljs.exec('pnpm run update:submodule');
         logger.info('Minecolonies submodule successfully updated');
 
         if (response.code !== 0) {
