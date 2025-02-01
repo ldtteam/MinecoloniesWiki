@@ -7,13 +7,13 @@ title: Troubleshooting
 
 Always check if updates for [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all) and [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all) are available and update to the latest version if you are not running the latest.
 
-## Missing Graphics, Issues with the {% item name="build_tool" /%} Preview, And/Or Citizen GUIs Not Opening
+## Missing Graphics, Issues with the {% item name="structurize/build_tool" /%} Preview, And/Or Citizen GUIs Not Opening
 
 If you experience missing textures for hut blocks, your build tool previews are messed up, and/or the citizen GUIs aren't opening when you right-click them, try updating MineColonies. As of the writing of this section, 1.16.5 and 1.18.1 versions are compatible, but not 1.18.2 yet.
 
 ## Crashes when Placing Structures
 
-If your game crashes placing a structure (e.g. a {% item name="supply_camp_and_ship" /%}), your MineColonies and Structurize versions are probably incompatible. Update both to the latest versions.
+If your game crashes placing a structure (e.g. a {% item_page name="supply_camp_and_ship" /%}), your MineColonies and Structurize versions are probably incompatible. Update both to the latest versions.
 
 ### CHECKLIST: Identifying why a citizen is not working
 
@@ -40,8 +40,8 @@ If none of these apply, go on to the next troubleshooting checklists.
 5. {%worker name="baker" /%}: Set which fuel you want them to use and which recipe you want them to bake.
 6. {%worker name="smelter" /%}: Set which fuel you want them to use and which ore you want them to smelt.
 7. {%worker name="farmer" /%}: Assign the farmer to a field. Make sure each scarecrow has a seed and make sure all tilled soil is hydrated.
-8. {%worker name="composter" /%}: Set which items you want them to convert into {% item name="compost" /%}.
-9. Crafter ({%worker name="carpenter" /%}, {%worker name="blacksmith" /%}, {%worker name="mechanic" /%}, etc): The request for items must be made after the crafter is hired and the colony must have a {%worker name="courier" /%}. Cancel the request at the original NPC to generate a new request, or make a new request from the {% item name="postbox" /%}. Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
+8. {%worker name="composter" /%}: Set which items you want them to convert into {% item name="minecolonies/compost" /%}.
+9. Crafter ({%worker name="carpenter" /%}, {%worker name="blacksmith" /%}, {%worker name="mechanic" /%}, etc): The request for items must be made after the crafter is hired and the colony must have a {%worker name="courier" /%}. Cancel the request at the original NPC to generate a new request, or make a new request from the {% item name="minecolonies/postbox" /%}. Also remember to teach them the recipes they're allowed to craft and make sure afterwards that the recipes were saved.
 10. {%worker name="stonesmelter" /%}: Set which fuel you want them to use. (They know their recipes already.)  
 
 ### CHECKLIST: Troubleshooting a Citizen not working for unknown reason
@@ -64,7 +64,7 @@ If none of these apply, go on to the next troubleshooting checklists.
 10.  Fire worker, empty out their personal and workhut inventories, wait for them to actually get into bed at night, after sunrise, hire the same worker.
 11. Punch them with an empty hand (taking damage resynchronizes them with world). Never punch a guard, fire them first then punch then rehire them.
 12. Use the /mc colony requestsystem-reset [command](/wiki/systems/command).
-13. Repair their work hut. Some workers will stop working if required elements are not present. Only the {%worker name="builder" /%} can place beds, crafting tables, furnaces, chests, {% item name="compost_barrel" /%}. If you broke any of those, create a repair build order for the building.
+13. Repair their work hut. Some workers will stop working if required elements are not present. Only the {%worker name="builder" /%} can place beds, crafting tables, furnaces, chests, {% item name="minecolonies/compost_barrel" /%}. If you broke any of those, create a repair build order for the building.
 14. Fire worker, wait a few minutes, then hire a different worker (you will lose advantage of the experience the first worker had accumulated at this career).
 
 ## Upgrading to a newer Minecraft version

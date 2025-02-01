@@ -133,7 +133,7 @@ export async function getItemReference(item: string): Promise<CollectionEntry<'t
 export async function getItemData(item: ItemReference, requireImages = false): Promise<ResultItemData> {
   const result: ResultItemData = {
     defaultName: '',
-    link: undefined,
+    link: '',
     data: []
   };
 
@@ -144,6 +144,7 @@ export async function getItemData(item: ItemReference, requireImages = false): P
       if (mcData === undefined) {
         continue;
       }
+      result.link = mcData.link;
       data = mcData;
     } else {
       const itemPage = await getWikiPageForItem(item);

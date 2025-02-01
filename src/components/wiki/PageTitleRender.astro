@@ -12,7 +12,7 @@ const { title } = Astro.props;
 {
   typeof title === 'string'
     ? title
-    : title.map((titleVersion) => (
-        <VersionContent versions={titleVersion.versions}>{titleVersion.title}</VersionContent>
+    : title.values.map((titleVersion) => (
+        <VersionContent versions={titleVersion.versions}>{titleVersion.value}</VersionContent>
       ))
 }

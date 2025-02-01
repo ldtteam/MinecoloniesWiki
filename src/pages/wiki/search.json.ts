@@ -24,13 +24,7 @@ async function createSearchEntry(page: CollectionEntry<'wiki'>): Promise<SearchE
   });
 
   return {
-    name:
-      typeof title === 'string'
-        ? title
-        : title.map((item) => ({
-            title: item.title,
-            versions: item.versions.map((version) => version.data.order)
-          })),
+    name: typeof title === 'string' ? title : title.highestValue,
     slug: page.id,
     excerpt: (await getWikiDescription(page)) ?? '',
     body: body.replace(/(<([^>]+)>)/gi, ''),

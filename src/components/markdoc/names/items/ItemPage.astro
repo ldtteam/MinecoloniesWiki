@@ -1,0 +1,19 @@
+---
+import { getEntry } from 'astro:content';
+
+interface Props {
+  currentPage: string;
+  name: string;
+}
+
+const { currentPage, name } = Astro.props;
+
+const itemPage = await getEntry('wiki', 'items/' + name);
+if (itemPage === undefined || itemPage.data.type === 'building' || itemPage.data.type === 'page') {
+  throw new Error(`Item page '${name}' does not exist.`);
+}
+
+const title = itemPage.data.type === 'item' ? (await getEntry(itemPage.data.item)).data.name : itemPage.data.title;
+---
+
+{'/wiki/' + currentPage !== itemPage.id ? <a href={itemPage.id}>{title}</a> : <span>{title}</span>}

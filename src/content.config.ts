@@ -73,24 +73,6 @@ const regularPage = (image: ImageFunction) =>
     excerpt: z.string().optional()
   });
 
-const sectionGroupPage = (image: ImageFunction) =>
-  z.object({
-    type: z.literal('section-group'),
-    title: z.string(),
-    excerpt: z.string().optional(),
-    image: image().optional(),
-    initialSection: reference('wiki')
-  });
-
-const sectionPage = (image: ImageFunction) =>
-  z.object({
-    type: z.literal('section'),
-    title: z.string(),
-    excerpt: z.string().optional(),
-    image: image().optional(),
-    group: reference('wiki')
-  });
-
 const itemPage = z.object({
   type: z.literal('item'),
   item: reference('items'),
@@ -117,14 +99,19 @@ const itemCombinedPage = z.object({
 const wikiCollection = defineCollection({
   loader: glob({ pattern: '**/*.mdoc', base: './src/content/wiki' }),
   schema: ({ image }) =>
-    z.discriminatedUnion('type', [
-      regularPage(image),
-      sectionGroupPage(image),
-      sectionPage(image),
-      buildingSchema(image).extend({ type: z.literal('building') }),
-      itemPage,
-      itemCombinedPage
-    ])
+    z
+      .discriminatedUnion('type', [
+        regularPage(image),
+        buildingSchema(image).extend({ type: z.literal('building') }),
+        itemPage,
+        itemCombinedPage
+      ])
+      .and(
+        z.object({
+          sections: z.array(reference('wiki')).optional(),
+          sectionMenuName: z.string().optional()
+        })
+      )
 });
 
 const wikiCategories = defineCollection({

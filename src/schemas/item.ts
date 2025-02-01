@@ -7,4 +7,16 @@ export const itemSchema = (image: ImageFunction) =>
     icons: z.array(image())
   });
 
+// export const itemSchema = (image: ImageFunction) =>
+//   z.object({
+//     id: z.string(),
+//     versions: z.array(
+//       z.object({
+//         version: reference('versions'),
+//         name: z.string(),
+//         icons: z.array(image())
+//       })
+//     )
+//   });
+
 export const tagSchema = z.array(z.string());

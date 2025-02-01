@@ -1,10 +1,10 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import type { TitleVersionItem } from '@utils/version';
+import type { Title } from '@utils/wiki';
 
 interface Props {
   id: string;
-  name: string | TitleVersionItem;
+  name: Title;
   href?: string;
   root?: boolean;
   thin?: boolean;
@@ -51,37 +51,44 @@ const hasChildren = Astro.slots.has('default');
       )}
     </li>
   ) : (
-    <VersionContent
-      versions={name.versions}
-      as="li"
-      class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
-    >
-      {hasChildren ? (
-        <>
-          <button
-            class:list={[
-              root ? 'nav-link' : 'dropdown-item',
-              hasChildren ? 'dropdown-toggle' : '',
-              active ? 'active' : '',
-              thin ? 'py-0' : ''
-            ]}
-            id={dropdownId}
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            {typeof name === 'string' ? name : name.title}
-          </button>
-          <ul class="dropdown-menu" aria-labelledby={dropdownId}>
-            <slot />
-          </ul>
-        </>
-      ) : (
-        <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
-          {typeof name === 'string' ? name : name.title}
-        </a>
-      )}
-    </VersionContent>
+    <>
+      {name.values.map((value) => (
+        <VersionContent
+          versions={value.versions}
+          as="li"
+          class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
+        >
+          {hasChildren ? (
+            <>
+              <button
+                class:list={[
+                  root ? 'nav-link' : 'dropdown-item',
+                  hasChildren ? 'dropdown-toggle' : '',
+                  active ? 'active' : '',
+                  thin ? 'py-0' : ''
+                ]}
+                id={dropdownId}
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {value.value}
+              </button>
+              <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+                <slot />
+              </ul>
+            </>
+          ) : (
+            <a
+              class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']}
+              href={href}
+            >
+              {value.value}
+            </a>
+          )}
+        </VersionContent>
+      ))}
+    </>
   )
 }
 

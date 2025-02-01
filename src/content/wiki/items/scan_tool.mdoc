@@ -2,13 +2,13 @@
 type: item
 item: structurize/scan_tool
 ---
-The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your {% worker name="builder" /%} build it for you! So if you build a house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a {% item name="build_tool" /%} over what you want the Builder to clear-they'll clear that area away, leaving only air! Watch a short video of how it works here:
+The scan tool is a very useful tool. With the scan tool, you can scan any structure you like and have your {% worker name="builder" /%} build it for you! So if you build a house, wall, bridge, tower, shop or any other structure that you want in your colony, you can scan it. You can scan a structure in Singleplayer or Multiplayer (even on a server). The scanned structure will be in a {% item name="structurize/build_tool" /%} over what you want the Builder to clear-they'll clear that area away, leaving only air! Watch a short video of how it works here:
 
 ## Scan Tool Video
 
 [![Watch the video](https://img.youtube.com/vi/UO4ePh0N4Mc/hqdefault.jpg)](https://youtu.be/UO4ePh0N4Mc)
 
-**Hint:** There are three placeholder blocks that help in building schematics, read more about them {% item name="placeholderblocks" /%}.
+**Hint:** There are three placeholder blocks that help in building schematics, read more about them {% item_page name="placeholderblocks" /%}.
 
 ### Step Zero
 
@@ -22,7 +22,7 @@ Then left-click a lower front corner (left or right makes no difference) at the 
 
 ### Step Two
 
-Right-click on the top opposite corner of the structure (you can use a {% item name="placeholderblocks" /%} for this), leaving the entire structure inside this imaginary box.
+Right-click on the top opposite corner of the structure (you can use a {% item_page name="placeholderblocks" /%} for this), leaving the entire structure inside this imaginary box.
 
 ![Point 2](@assets/images/wiki/tutorial/scan2.png)
 
@@ -48,9 +48,9 @@ WARNING: these buttons will delete actual blocks or entities in your world. It m
 
 Every blueprint needs an "anchor". This is shown as a red box when scanning and building, and is the block that the blueprint will rotate around. Most importantly, though, it's the block that defines what kind of blueprint this is.
 
-For regular buildings, the hut block for the building must be the anchor. For upgradable decorations, the {% item name="deco_controller" /%} must be the anchor. For other decorations, you can either use a {% item name="tag_anchor" /%} (if you want to use the {% item name="tag_tool" /%}) or any other block (otherwise; including air blocks).
+For regular buildings, the hut block for the building must be the anchor. For upgradable decorations, the {% item name="minecolonies/deco_controller" /%} must be the anchor. For other decorations, you can either use a {% item name="structurize/tag_anchor" /%} (if you want to use the {% item name="structurize/tag_tool" /%}) or any other block (otherwise; including air blocks).
 
-You can select the anchor for your scan explicitly, by shift-left-clicking the desired block. If you don't do this, the scan tool will try to guess -- most of the time this works, but if you have more than one possible anchor inside your scan box then it won't be able to figure it out and you'll get an error message in chat. In that case you will have to set it manually. (Having more than one possible anchor is normal if you're scanning a building that has child buildings, or if you've included certain blocks like the {% item name="stash" /%} -- other times it might be because you've added a {% item name="tag_anchor" /%} when you shouldn't have.)
+You can select the anchor for your scan explicitly, by shift-left-clicking the desired block. If you don't do this, the scan tool will try to guess -- most of the time this works, but if you have more than one possible anchor inside your scan box then it won't be able to figure it out and you'll get an error message in chat. In that case you will have to set it manually. (Having more than one possible anchor is normal if you're scanning a building that has child buildings, or if you've included certain blocks like the {% item name="minecolonies/stash" /%} -- other times it might be because you've added a {% item name="structurize/tag_anchor" /%} when you shouldn't have.)
 
 {% version name="1.19" after=true %}
 # Multiple Scan Slots
