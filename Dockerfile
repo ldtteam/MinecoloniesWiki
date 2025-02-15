@@ -1,4 +1,4 @@
-FROM node:lts AS build
+FROM node:23 AS build
 WORKDIR /app
 RUN npm install -g pnpm
 COPY package*.json ./

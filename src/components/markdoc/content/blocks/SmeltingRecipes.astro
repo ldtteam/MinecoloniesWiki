@@ -17,7 +17,7 @@ const { noRemove, noTeach, ...rest } = Astro.props;
   </p>
 
   {
-    noTeach && (
+    !noTeach && (
       <ul>
         <li>
           <b>Teach Recipe:</b> When clicking teach recipe, it opens a furnace grid which allows you to teach this hut

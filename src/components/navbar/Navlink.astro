@@ -1,11 +1,10 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import type { TitleVersionItem } from '@utils/wiki';
-import { getCollection } from 'astro:content';
+import type { Title } from '@utils/wiki';
 
 interface Props {
   id: string;
-  name: string | TitleVersionItem;
+  name: Title;
   href?: string;
   root?: boolean;
   thin?: boolean;
@@ -20,43 +19,78 @@ const active = exact ? pathName === href : href ? pathName.startsWith(href) : fa
 const dropdownId = `navbarDropdown${id}`;
 
 const hasChildren = Astro.slots.has('default');
-
-const allVersions = await getCollection('versions');
 ---
 
-<VersionContent
-  versions={typeof name === 'string' ? allVersions : name.versions}
-  as="li"
-  class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
->
-  {
-    hasChildren ? (
-      <>
-        <button
-          class:list={[
-            root ? 'nav-link' : 'dropdown-item',
-            hasChildren ? 'dropdown-toggle' : '',
-            active ? 'active' : '',
-            thin ? 'py-0' : ''
-          ]}
-          id={dropdownId}
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
+{
+  typeof name === 'string' ? (
+    <li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
+      {hasChildren ? (
+        <>
+          <button
+            class:list={[
+              root ? 'nav-link' : 'dropdown-item',
+              hasChildren ? 'dropdown-toggle' : '',
+              active ? 'active' : '',
+              thin ? 'py-0' : ''
+            ]}
+            id={dropdownId}
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {name}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+            <slot />
+          </ul>
+        </>
+      ) : (
+        <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
+          {name}
+        </a>
+      )}
+    </li>
+  ) : (
+    <>
+      {name.values.map((value) => (
+        <VersionContent
+          versions={value.versions}
+          as="li"
+          class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
         >
-          {typeof name === 'string' ? name : name.title}
-        </button>
-        <ul class="dropdown-menu" aria-labelledby={dropdownId}>
-          <slot />
-        </ul>
-      </>
-    ) : (
-      <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
-        {typeof name === 'string' ? name : name.title}
-      </a>
-    )
-  }
-</VersionContent>
+          {hasChildren ? (
+            <>
+              <button
+                class:list={[
+                  root ? 'nav-link' : 'dropdown-item',
+                  hasChildren ? 'dropdown-toggle' : '',
+                  active ? 'active' : '',
+                  thin ? 'py-0' : ''
+                ]}
+                id={dropdownId}
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {value.value}
+              </button>
+              <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+                <slot />
+              </ul>
+            </>
+          ) : (
+            <a
+              class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']}
+              href={href}
+            >
+              {value.value}
+            </a>
+          )}
+        </VersionContent>
+      ))}
+    </>
+  )
+}
 
 <script>
   function onLoad() {

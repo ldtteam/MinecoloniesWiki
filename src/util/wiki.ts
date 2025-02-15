@@ -6,89 +6,48 @@ import {
   type ValidContentEntrySlug
 } from 'astro:content';
 
-import { getBuildingDataForVersion } from './building';
 import { getItemData } from './items';
-import { groupDataByVersion } from './version';
+import { getOverrideValues } from './override';
+import type { VersionedResult } from './version';
 
-export interface TitleVersionItem {
-  title: string;
-  versions: CollectionEntry<'versions'>[];
-}
-
-type TitleVersions = TitleVersionItem[];
-
-export type Title = string | TitleVersions;
+export type Title = string | VersionedResult;
 
 interface WikiPageType {
   type: 'page';
-  name: string | TitleVersionItem;
-  slug: string;
+  id: string;
+  name: Title;
 }
 
 interface WikiSubCategoryType {
   type: 'subcategory';
-  name: string;
-  pages: WikiPageType[];
+  name: Title;
+  pages: WikiPageEntry[];
 }
 
 type WikiPage = WikiSubCategoryType | WikiPageType;
 
 type WikiPages = Map<CollectionEntry<'wiki_categories'>, WikiPage[]>;
 
-export async function getSectionTitle(entry: CollectionEntry<'wiki'>, includeGroup: boolean): Promise<string> {
-  if (entry.data.type === 'section') {
-    if (includeGroup) {
-      const groupEntry = await getEntry(entry.data.group);
-      if (groupEntry?.data.type === 'section-group') {
-        return `${groupEntry.data.title} - ${entry.data.title}`;
-      }
-      throw new Error(
-        `Section '${entry.id}' is referring to group '${groupEntry?.id}' which is not of type 'section-group'. Found type is '${groupEntry?.data.type}'.`
-      );
-    } else {
-      return entry.data.title;
-    }
-  }
-  return entry.id;
-}
-
 export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Title> {
-  const versions = await getCollection('versions');
-
-  if (
-    isWikiPageOfType(entry, 'page') ||
-    isWikiPageOfType(entry, 'item-combined') ||
-    isWikiPageOfType(entry, 'section-group')
-  ) {
+  if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
     return entry.data.title;
-  } else if (isWikiPageOfType(entry, 'item')) {
-    const itemData = await getEntry('items', entry.data.item.id);
-    return itemData.data.name;
-  } else if (isWikiPageOfType(entry, 'section')) {
-    return await getSectionTitle(entry, true);
-  } else if (isWikiPageOfType(entry, 'building')) {
-    const buildingNames = await Promise.all(
-      versions.map(async (version) => ({
-        version,
-        data: await getBuildingDataForVersion(entry.data, version).then((data) => data.name)
-      }))
-    );
-    return groupDataByVersion(buildingNames, (item) => item).map((item) => ({
-      title: item.item,
-      versions: item.versions
-    }));
+  } else if (entry.data.type === 'item') {
+    const item = await getEntry(entry.data.item);
+    const itemData = await getItemData(item);
+    return itemData.defaultName;
+  } else if (entry.data.type === 'building') {
+    const building = await getEntry('buildings', entry.data.id);
+    if (building === undefined) {
+      return entry.id;
+    }
+    return await getOverrideValues(building.data, (v) => v.name);
   }
 
   return entry.id;
 }
 
 export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
-  if (
-    entry.data.type === 'page' ||
-    entry.data.type === 'section-group' ||
-    entry.data.type === 'section' ||
-    entry.data.type === 'item-combined'
-  ) {
+  if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
     return entry.data.excerpt;
   } else if (entry.data.type === 'item') {
     const itemData = await getEntry(entry.data.item);
@@ -101,10 +60,11 @@ export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promis
 }
 
 export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
-  if (entry.data.type === 'page' || entry.data.type === 'section-group' || entry.data.type === 'section') {
+  if (entry.data.type === 'page') {
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
-    const itemData = await getItemData(entry.data.item.id, true);
+    const item = await getEntry(entry.data.item);
+    const itemData = await getItemData(item, true);
     return itemData.data
       .flatMap((m) => m.icons)
       .map((m) => (typeof m === 'object' ? m.src : m))
@@ -114,7 +74,8 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
       return undefined;
     }
 
-    const itemData = await getItemData(entry.data.items[0].id, true);
+    const item = await getEntry(entry.data.items[0]);
+    const itemData = await getItemData(item, true);
     return itemData.data
       .flatMap((m) => m.icons)
       .map((m) => (typeof m === 'object' ? m.src : m))
@@ -124,33 +85,26 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
   }
 }
 
-async function extractPageTitles(entry: CollectionEntry<'wiki'>): Promise<WikiPageType[]> {
-  const title = await getWikiTitle(entry);
-  if (typeof title === 'string') {
-    return [
-      {
-        type: 'page',
-        name: title,
-        slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
-      }
-    ];
-  }
-
-  return title.map((titleVersion) => ({
-    type: 'page',
-    name: titleVersion,
-    slug: entry.data.type === 'section-group' ? entry.data.initialSection.slug : entry.slug
-  }));
+export async function getSectionRoot(page: CollectionEntry<'wiki'>) {
+  return (await getCollection('wiki', (p) => p.data.sections?.some((s) => s.id === page.id))).shift();
 }
 
-export async function getAllWikiPages(): Promise<WikiPages> {
-  const wikiPages = await getCollection('wiki', (page) => page.slug.indexOf('/') > 0 && page.data.type !== 'section');
+export async function isSection(page: CollectionEntry<'wiki'>) {
+  return (await getSectionRoot(page)) !== undefined;
+}
+
+export async function getWikiPages(): Promise<WikiPages> {
+  const wikiPages = await getCollection('wiki', async (page) => page.id.indexOf('/') > 0 && isSection(page));
   const wikiCategories = (await getCollection('wiki_categories')).sort((a, b) => a.data.order - b.data.order);
 
   const distributedPages = wikiCategories.reduce<WikiPages>((prev, curr) => prev.set(curr, []), new Map());
 
   for (const entry of wikiPages) {
-    const categoryString = entry.slug.substring(0, entry.slug.indexOf('/'));
+    if (await isSection(entry)) {
+      continue;
+    }
+
+    const categoryString = entry.id.substring(0, entry.id.indexOf('/'));
     const category = wikiCategories.find((f) => f.id === categoryString);
     if (category === undefined) {
       throw new Error(
@@ -162,19 +116,25 @@ export async function getAllWikiPages(): Promise<WikiPages> {
 
     const pages = distributedPages.get(category);
     if (pages !== undefined) {
-      pages.push(...(await extractPageTitles(entry)));
+      const title = await getWikiTitle(entry);
+      pages.push({
+        type: 'page',
+        id: entry.id,
+        name: title
+      });
     }
   }
 
   for (const worker of await getCollection('workers')) {
     const category = wikiCategories.find((f) => f.id === 'workers');
+    const building = await getEntry(worker.data.primaryBuilding);
     if (category !== undefined) {
       const pages = distributedPages.get(category);
       if (pages !== undefined) {
         pages.push({
           type: 'page',
           name: worker.data.name,
-          slug: worker.data.primaryBuilding.slug
+          id: 'buildings/' + building.id
         });
       }
     }
@@ -182,8 +142,8 @@ export async function getAllWikiPages(): Promise<WikiPages> {
 
   for (const pages of distributedPages.values()) {
     pages.sort((a, b) =>
-      (typeof a.name === 'string' ? a.name : a.name.title).localeCompare(
-        typeof b.name === 'string' ? b.name : b.name.title
+      (typeof a.name === 'string' ? a.name : a.name.highestValue).localeCompare(
+        typeof b.name === 'string' ? b.name : b.name.highestValue
       )
     );
   }

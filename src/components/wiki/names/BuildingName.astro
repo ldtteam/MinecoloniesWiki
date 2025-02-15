@@ -1,0 +1,22 @@
+---
+import VersionOverride from '@components/version/VersionOverride.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  building: CollectionEntry<'buildings'>;
+  link?: boolean;
+  plural?: boolean;
+}
+
+const { building, link = false, plural = false } = Astro.props;
+---
+
+{
+  link ? (
+    <a href={`/wiki/buildings/${building.id}`}>
+      <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+    </a>
+  ) : (
+    <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+  )
+}

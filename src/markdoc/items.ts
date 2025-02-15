@@ -15,6 +15,18 @@ export const item: Tag = {
   transform: injectFrontmatter
 };
 
+export const item_page: Tag = {
+  render: component('@components/markdoc/names/items/ItemPage.astro'),
+  selfClosing: true,
+  attributes: {
+    name: {
+      type: String,
+      required: false
+    }
+  },
+  transform: injectFrontmatter
+};
+
 export const item_infobox: Tag = {
   render: component('@components/markdoc/infobox/ItemInfobox.astro'),
   attributes: {

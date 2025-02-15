@@ -24,7 +24,7 @@ html,
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: 'Fondamento', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -80,9 +80,7 @@ hr {
 }
 
 .dark .btn-close {
-  background: transparent
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0dbd1'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
-    center/1em auto no-repeat;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0dbd1'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
 
 .astro-code {
@@ -130,4 +128,20 @@ hr {
   --astro-code-token-string-expression: #ff79c6;
   --astro-code-token-punctuation: #f8f8f2;
   --astro-code-token-link: #8be9fd;
+}
+
+.app-card-min {
+  width: min-content;
+}
+
+.app-card .box {
+  background:
+    url('/images/card/card_dark_top_left.png') top left/16px 16px no-repeat,
+    url('/images/card/card_dark_top_right.png') top right no-repeat,
+    url('/images/card/card_dark_bottom_left.png') bottom left no-repeat,
+    url('/images/card/card_dark_bottom_right.png') bottom right no-repeat,
+    url('/images/card/card_dark_left.png') 0px 16px repeat-y,
+    url('/images/card/card_dark_right.png') right center repeat-y,
+    url('/images/card/card_dark_top.png') top center repeat-x,
+    url('/images/card/card_dark_bottom.png') bottom center repeat-x;
 }

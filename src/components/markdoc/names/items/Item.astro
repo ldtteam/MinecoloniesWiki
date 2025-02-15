@@ -1,9 +1,8 @@
 ---
-import { getWikiPageForItem, parseItemId } from '@utils/items';
+import { getItemData } from '@utils/items';
+import { getEntry } from 'astro:content';
 
-import CombinedItem from './CombinedItem.astro';
-import CombinedSelfItem from './CombinedSelfItem.astro';
-import DirectItem from './DirectItem.astro';
+import VersionedItemName from './VersionedItemName.astro';
 
 interface Props {
   currentPage: string;
@@ -12,13 +11,11 @@ interface Props {
 
 const { currentPage, name } = Astro.props;
 
-const itemId = parseItemId(name);
-const itemPage = await getWikiPageForItem(itemId);
-if (itemPage === undefined) {
-  throw new Error(`Wiki page for item '${itemId.namespace}/${itemId.id}' does not exist.`);
+const itemEntry = await getEntry('items', name);
+const itemData = itemEntry ? await getItemData(itemEntry) : await getItemData(name);
+if (itemData.data.length === 0) {
+  throw new Error(`Item '${name}' does not exist.`);
 }
 ---
 
-{itemPage.type === 'direct' && <DirectItem currentPage={currentPage} page={itemPage} />}
-{itemPage.type === 'combined' && <CombinedItem currentPage={currentPage} page={itemPage} />}
-{itemPage.type === 'combined-self' && <CombinedSelfItem currentPage={currentPage} page={itemPage} />}
+<VersionedItemName data={itemData} link={'/wiki/' + currentPage !== itemData.link} />

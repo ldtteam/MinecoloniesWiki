@@ -11,7 +11,7 @@ const versions = await getSortedVersions();
       {
         versions
           .filter((f) => f.data.supported)
-          .map((version) => <option value={version.data.order}>{version.data.name}</option>)
+          .map((version) => <option value={version.data.order}>{version.id}</option>)
       }
     </optgroup>
     <optgroup label="Unsupported versions" class="unsupported">
@@ -20,7 +20,7 @@ const versions = await getSortedVersions();
           .filter((f) => !f.data.supported)
           .map((version) => (
             <option class="unsupported" value={version.data.order}>
-              {version.data.name}
+              {version.id}
             </option>
           ))
       }

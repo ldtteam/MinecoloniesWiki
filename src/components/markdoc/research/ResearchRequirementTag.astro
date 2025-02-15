@@ -1,0 +1,14 @@
+---
+import { type CollectionEntry } from 'astro:content';
+
+interface Props {
+  requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'item_tag' }>;
+}
+
+const { requirement } = Astro.props;
+---
+
+<li>
+  <b>{requirement.quantity}</b>x&nbsp;
+  <span>{requirement.name}</span>
+</li>

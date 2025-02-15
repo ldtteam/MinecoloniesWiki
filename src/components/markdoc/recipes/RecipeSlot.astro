@@ -1,13 +1,13 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
-import { getItemData, type ItemVersionData } from '@utils/items';
+import { getItemData, getItemReference, type ItemReference, type ItemVersionData } from '@utils/items';
+import { isCollectionEntry } from '@utils/util';
 import { getSortedVersions } from '@utils/version';
 import { Image } from 'astro:assets';
-import { getEntry } from 'astro:content';
-import type { RecipeItemEntry } from 'src/content/_wiki';
+import type { RecipeItems } from 'src/schemas/recipe';
 
 interface Props {
-  items: RecipeItemEntry;
+  items: RecipeItems;
   amount?: number;
   large?: boolean;
 }
@@ -16,18 +16,22 @@ const { items, amount = 1, large = false } = Astro.props;
 
 const versions = await getSortedVersions();
 
-let parsedItems: string[];
-if (items === undefined || items === null) {
+let parsedItems: ItemReference[];
+if (items === null) {
   parsedItems = [];
 } else if (Array.isArray(items)) {
   parsedItems = items;
-} else if (items.startsWith('tags/')) {
-  const tag = await getEntry('tags', items.split('/', 2)[1]);
-  parsedItems = tag ? tag.data : [];
 } else {
-  parsedItems = [items];
+  const reference = await getItemReference(items);
+  if (typeof reference === 'string') {
+    parsedItems = [reference];
+  } else if (isCollectionEntry(reference, 'items')) {
+    parsedItems = [reference];
+  } else {
+    parsedItems = reference.data;
+  }
 }
-const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item, true)));
+const itemResults = await Promise.all(parsedItems.filter((f) => f !== null).map((item) => getItemData(item, true)));
 ---
 
 {
@@ -44,11 +48,11 @@ const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item
           <VersionContent versions={[version]} class="w-100">
             <swiper-container
               init="false"
+              loop={itemData.length > 1}
               autoplay
               autoplay-delay="1000"
               autoplay-pause-on-mouse-enter
               effect="fade"
-              loop={itemData.length > 1}
               no-swiping
               no-swiping-selector="*"
               class="invslot-item"
@@ -185,6 +189,7 @@ const itemResults = await Promise.all(parsedItems.map((item) => getItemData(item
       color: #fff !important;
       text-shadow: 2px 2px 0 #3f3f3f;
       filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+      z-index: 1;
     }
 
     .inv-sprite {

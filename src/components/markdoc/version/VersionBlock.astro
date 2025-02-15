@@ -15,7 +15,7 @@ const { name, before, after, inline } = Astro.props;
 
 const currentVersion = await getEntry('versions', name);
 if (currentVersion === undefined) {
-  throw Error(
+  throw new Error(
     `Provided version "${name}" does not exist. Either pick a different version or configure the version in the versions list.`
   );
 }

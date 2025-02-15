@@ -1,0 +1,23 @@
+---
+import type { Overrideable, OverrideableFieldGetter } from '@utils/override';
+import { getOverrideValues } from '@utils/override';
+
+import VersionContent from './VersionContent.astro';
+
+interface Props<V, O extends Overrideable<V>> {
+  value: O;
+  fieldGetter: OverrideableFieldGetter<O>;
+  inline?: boolean;
+}
+
+const { value, fieldGetter, inline = true } = Astro.props as Props<unknown, Overrideable<unknown>>;
+const values = await getOverrideValues(value, fieldGetter);
+---
+
+{
+  values.values.values().map(async (value) => (
+    <VersionContent versions={value.versions} inline={inline}>
+      {value.value}
+    </VersionContent>
+  ))
+}

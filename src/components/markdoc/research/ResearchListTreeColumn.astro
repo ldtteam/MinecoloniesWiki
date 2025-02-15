@@ -71,7 +71,7 @@ const researchesWithParent = await Promise.all(
                 )}
               </td>
               <td>
-                {research.data.requirements ? (
+                {research.data.requirements.length > 0 ? (
                   <ul>
                     {research.data.requirements.map((requirement) => (
                       <ResearchRequirement requirement={requirement} />
@@ -82,11 +82,11 @@ const researchesWithParent = await Promise.all(
                 )}
               </td>
               <td>
-                {research.data.effects ? (
+                {research.data.effects.length > 0 ? (
                   <ul>
-                    {Object.entries(research.data.effects).map(([effect, level]) => (
+                    {research.data.effects.map((effect) => (
                       <li>
-                        <ResearchEffect effect={effect} level={level} />
+                        <ResearchEffect effect={effect} />
                       </li>
                     ))}
                   </ul>
@@ -120,7 +120,7 @@ const researchesWithParent = await Promise.all(
   }
 
   tr.active {
-    animation: bg 1s linear forwards;
+    animation: bg 2s linear forwards;
   }
 </style>
 
@@ -129,12 +129,12 @@ const researchesWithParent = await Promise.all(
     const activeResearch = document.getElementById(window.location.hash.slice(1));
     if (activeResearch !== null) {
       activeResearch.classList.add('active');
-      setTimeout(() => activeResearch.classList.remove('active'), 1000);
+      setTimeout(() => activeResearch.classList.remove('active'), 2000);
     }
   }
 
   function setup() {
-    window.addEventListener('hashchange', updateHighlight);
+    window.addEventListener('popstate', updateHighlight);
     updateHighlight();
   }
 

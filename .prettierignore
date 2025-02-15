@@ -1,4 +1,8 @@
-dist
+.astro
+.vscode
 chart
+dist
+minecolonies
 node_modules
+public
 pnpm-lock.yaml

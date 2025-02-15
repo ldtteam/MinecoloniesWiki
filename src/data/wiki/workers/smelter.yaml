@@ -1,0 +1,20 @@
+name: Smelter
+plural: Smelters
+description: The Smelter can turn all of your ores into ingots, higher level Smelteries can utilize more furnaces.
+icon: "@assets/images/wiki/workers/smelter/male/default-a.png"
+type: gatherer
+traits:
+  primary:
+    name: Athletics
+    effect: Faster smelting
+  secondary:
+    name: Strength
+    effect: Increases chance of doubling or tripling ores
+primaryBuilding: smeltery
+overrides:
+  - version: "1.19"
+    traits:
+      primary:
+        effect: Amount of furnaces that can be used
+      secondary:
+        effect: Faster smelting

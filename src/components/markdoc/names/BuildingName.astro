@@ -1,7 +1,7 @@
 ---
-import BuildingNameInternal from '@components/wiki/BuildingName.astro';
-import { type MarkdocBuildingComponent } from '@utils/building';
-import { getWikiPage, isWikiDataOfType } from '@utils/wiki';
+import BuildingNameInternal from '@components/wiki/names/BuildingName.astro';
+import { getEntry } from 'astro:content';
+import type { MarkdocBuildingComponent } from 'src/markdoc/buildings';
 
 interface Props extends MarkdocBuildingComponent {
   plural?: boolean;
@@ -9,15 +9,13 @@ interface Props extends MarkdocBuildingComponent {
 
 const { frontmatter, name, plural = false } = Astro.props;
 
-const buildingId = isWikiDataOfType(frontmatter, 'building') ? frontmatter.id : name;
-const buildingPage = await getWikiPage('building', 'buildings/' + buildingId);
-if (buildingPage === undefined) {
-  throw Error(`Building id ${buildingId} does not exist.`);
+const buildingIdFrontmatter = frontmatter?.type === 'building' ? frontmatter.id : undefined;
+
+const buildingTarget = name ?? buildingIdFrontmatter ?? '';
+const buildingData = await getEntry('buildings', buildingTarget);
+if (buildingData === undefined) {
+  throw new Error(`Building with id ${buildingTarget} does not exist.`);
 }
 ---
 
-<BuildingNameInternal
-  building={buildingPage}
-  plural={plural}
-  link={frontmatter.type !== 'building' || frontmatter.id !== buildingPage.data.id}
-/>
+<BuildingNameInternal building={buildingData} link={buildingIdFrontmatter !== buildingData.id} plural={plural} />

@@ -1,0 +1,129 @@
+name: Publish to Github Packages
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    outputs:
+      tag: ${{ steps.tag.outputs.new_tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          fetch-depth: '0'
+
+      - name: Bump version and push tag
+        id: tag
+        uses: anothrNick/github-tag-action@1.71.0 # Don't use @master or @v1 unless you're happy to test the latest version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          DEFAULT_BUMP: patch
+          GIT_API_TAGGING: false
+
+  publish:
+    needs:
+      - tag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          fetch-depth: '0'
+
+      # Login against a Docker registry except on PR
+      # https://github.com/docker/login-action
+      - name: Log into registry ${{ env.REGISTRY }}
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Process repository name
+        run: echo "IMAGE_PATH=${REGISTRY}/${IMAGE_NAME@L}" >> $GITHUB_ENV
+
+      # Extract metadata (tags, labels) for Docker
+      # https://github.com/docker/metadata-action
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE_PATH }}
+
+      # Build and push Docker image with Buildx (don't push on PR)
+      # https://github.com/docker/build-push-action
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ env.IMAGE_PATH }}:${{ needs.tag.outputs.tag }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+  chart:
+    needs:
+      - tag
+      - publish
+    permissions:
+      contents: write
+      packages: write
+      statuses: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Install Helm
+        uses: azure/setup-helm@v4
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Update Helm Chart Version
+        working-directory: chart/wiki
+        run: |
+          # The current version is stored in inputs.tag, we need to rewrite the charts.yaml file with the new version
+          # However we can only replace the version: property if it is at the start of a line
+          echo "Updating Chart.yaml version to ${{ needs.tag.outputs.tag }}"
+          sed -i "s/^version: \(.*\)/version: ${{ needs.tag.outputs.tag }}/g" Chart.yaml
+          
+          # Now this inserted a version with a v prefix, we need to remove only that initial v
+          sed -i "1s/version: v\(.*\)/version: \1/g" Chart.yaml
+
+      - name: Add Bitnami chart repository
+        run: helm repo add bitnami https://charts.bitnami.com/bitnami
+
+      - name: Install chart dependencies
+        run: helm dependency update chart/wiki
+
+      - name: Run chart-releaser
+        uses: helm/chart-releaser-action@v1.6.0
+        with:
+          charts_dir: 'chart'
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

@@ -1,0 +1,14 @@
+type: shaped
+row1:
+  item1: planks
+  item2: structurize/build_tool
+  item3: planks
+row2:
+  item1: planks
+  item2: diamond_pickaxe
+  item3: planks
+row3:
+  item1: planks
+  item2: barrel
+  item3: planks
+output: minecolonies/blockhutmediumquarry

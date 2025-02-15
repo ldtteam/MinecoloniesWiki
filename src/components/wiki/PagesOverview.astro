@@ -16,8 +16,8 @@ const wikiPages = await getAllWikiPages();
           {pages.map((page, idx) => {
             if (page.type === 'page') {
               return (
-                <a href={`/wiki/${page.slug}`}>
-                  <PageTitleRender title={typeof page.name === 'string' ? page.name : [page.name]} />
+                <a href={`/wiki/${page.id}`}>
+                  <PageTitleRender title={page.name} />
                 </a>
               );
             } else if (page.type === 'subcategory') {
@@ -25,7 +25,7 @@ const wikiPages = await getAllWikiPages();
                 <>
                   <p class:list={['m-0', idx === 0 ? '' : 'mt-3']}>{page.name}</p>
                   {page.pages.map((subPage) => (
-                    <a href={`/wiki/${subPage.slug}`}>{subPage.name}</a>
+                    <a href={`/wiki/${subPage.id}`}>{subPage.name}</a>
                   ))}
                 </>
               );

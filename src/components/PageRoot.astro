@@ -3,8 +3,6 @@ import type { ImageMetadata } from 'astro';
 import { getImage } from 'astro:assets';
 import path from 'path';
 
-import VersionStyling from './version/VersionStyling.astro';
-
 interface Props {
   isHome: boolean;
 }
@@ -22,7 +20,6 @@ for (const [fullPath, image] of Object.entries(images)) {
 ---
 
 <div class:list={['bgscroll', Astro.props.isHome ? 'bghome' : '']}>
-  <VersionStyling />
   <div class="page-root">
     <slot />
   </div>

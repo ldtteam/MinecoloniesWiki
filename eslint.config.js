@@ -1,32 +1,36 @@
 // @ts-check
 import path from 'path';
 import { fileURLToPath } from 'url';
-
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import eslintPluginAstro from 'eslint-plugin-astro';
-
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import typescriptPlugin from '@typescript-eslint/eslint-plugin';
+import astroEslintParser from 'astro-eslint-parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default ts.config(
   js.configs.recommended,
-  eslintPluginPrettierRecommended,
+  ts.configs.eslintRecommended,
   ...ts.configs.strict,
+  eslintPluginPrettierRecommended,
   ...eslintPluginAstro.configs.recommended,
-  {
-    name: 'Ignore patterns',
-    ignores: ['.astro', '.vscode', 'dist', 'minecolonies', 'node_modules', 'public']
-  },
   {
     name: 'Application rules (Astro)',
     files: ['**/*.astro'],
+    languageOptions: {
+      parser: astroEslintParser,
+      parserOptions: {
+        parser: ts.parser,
+        project: './tsconfig.json',
+        tsconfigRootDir: __dirname,
+        extraFileExtensions: ['.astro']
+      }
+    },
     plugins: {
-      '@typescript-eslint': typescriptPlugin,
+      '@typescript-eslint': ts.plugin,
       'simple-import-sort': simpleImportSort
     },
     rules: {
@@ -43,7 +47,7 @@ export default ts.config(
   },
   {
     name: 'Application rules (Typescript)',
-    files: ['**/*.ts'],
+    files: ['**/*.ts', '**/*.astro/*.js'],
     languageOptions: {
       parser: ts.parser,
       parserOptions: {
@@ -52,7 +56,7 @@ export default ts.config(
       }
     },
     plugins: {
-      '@typescript-eslint': typescriptPlugin,
+      '@typescript-eslint': ts.plugin,
       'simple-import-sort': simpleImportSort
     },
     rules: {
@@ -68,10 +72,7 @@ export default ts.config(
     }
   },
   {
-    name: 'Disable triple slash reference for auto-generated env.d.ts',
-    files: ['src/env.d.ts'],
-    rules: {
-      '@typescript-eslint/triple-slash-reference': 'off'
-    }
+    name: 'Ignore patterns',
+    ignores: ['.astro', '.vscode', 'chart', 'dist', 'minecolonies', 'node_modules', 'public', 'pnpm-lock.yaml']
   }
 );

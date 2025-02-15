@@ -1,12 +1,8 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import {
-  getWorkerData,
-  getWorkerIdFromFrontmatter,
-  getWorkerReferenceBuilding,
-  groupWorkerDataByVersion,
-  type MarkdocWorkerComponent
-} from '@utils/workers';
+import WorkerNameInternal from '@components/wiki/names/WorkerName.astro';
+import { getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import type { MarkdocWorkerComponent } from 'src/markdoc/workers';
 
 interface Props extends MarkdocWorkerComponent {
   building?: string;
@@ -15,21 +11,37 @@ interface Props extends MarkdocWorkerComponent {
 
 const { frontmatter, name, building, plural = false } = Astro.props;
 
-const workerId = await getWorkerIdFromFrontmatter(frontmatter);
-const workerTarget = name ?? workerId ?? '';
-const workerData = await getWorkerData(workerTarget);
-const workerDataPerVersion = await groupWorkerDataByVersion(workerData);
-const buildingData = await getWorkerReferenceBuilding(building, workerData);
+const buildingIdFrontmatter = frontmatter?.type === 'building' ? frontmatter.id : undefined;
+const workerIdFrontmatter =
+  frontmatter?.type === 'building' && frontmatter.workers?.length === 1 ? frontmatter.workers[0].id : undefined;
+
+const workerTarget = name ?? workerIdFrontmatter ?? '';
+const workerData = await getEntry('workers', workerTarget);
+if (workerData === undefined) {
+  throw new Error(`Worker with id ${workerTarget} does not exist.`);
+}
+
+let referenceBuilding = building ?? buildingIdFrontmatter ?? workerData.data.primaryBuilding.id;
+if (!referenceBuilding) {
+  const allBuildings = await getCollection('buildings', (building) =>
+    building.data.workers?.map<string>((m) => m.id).includes(workerTarget)
+  );
+  if (allBuildings.length !== 1) {
+    throw new Error(
+      `Worker name for ${workerTarget} requires a building argument because this worker is referenced in none or multiple buildings.`
+    );
+  }
+  referenceBuilding = allBuildings[0].id;
+}
+const buildingData = await getEntry('buildings', referenceBuilding);
+if (buildingData === undefined) {
+  throw new Error(`Building with id ${referenceBuilding} does not exist.`);
+}
 ---
 
-{
-  workerDataPerVersion.map(async (worker) => (
-    <VersionContent versions={worker.versions} inline>
-      {frontmatter?.type !== 'building' || workerId !== workerData.id ? (
-        <a href={'/wiki/' + buildingData.slug}>{plural ? worker.item.data.plural : worker.item.data.name}</a>
-      ) : (
-        <span>{plural ? worker.item.data.plural : worker.item.data.name}</span>
-      )}
-    </VersionContent>
-  ))
-}
+<WorkerNameInternal
+  building={buildingData}
+  worker={workerData}
+  link={workerIdFrontmatter !== workerTarget}
+  plural={plural}
+/>

@@ -1,17 +1,17 @@
 ---
 import '../css/bootstrap.scss';
 import '../css/globals.scss';
-import '@fontsource/fondamento';
 
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
+import VersionStyling from '@components/version/VersionStyling.astro';
 import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import { getNewestVersion } from '@utils/version';
 import type { Title } from '@utils/wiki';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title: Title;
@@ -29,21 +29,18 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
 const newestVersion = await getNewestVersion();
 
 let versionTitleData: Record<string, string>;
-if (typeof title === 'object') {
-  versionTitleData = title.reduce<Record<string, string>>((previousValue, currentValue) => {
+if (typeof title === 'string') {
+  versionTitleData = { 'data-title-version-all': title };
+} else {
+  versionTitleData = title.values.reduce<Record<string, string>>((previousValue, currentValue) => {
     for (const version of currentValue.versions) {
-      previousValue['data-title-version-' + version.data.order] = currentValue.title;
+      previousValue['data-title-version-' + version.data.order] = currentValue.value;
     }
     return previousValue;
   }, {});
-} else {
-  versionTitleData = { 'data-title-version-all': title };
 }
 
-const initialTitle =
-  typeof title === 'string'
-    ? title
-    : title.find((f) => f.versions.map((v) => v.id).includes(newestVersion.id))?.title + ' | ' + titleAffix;
+const initialTitle = typeof title === 'string' ? title : title.highestValue + ' | ' + titleAffix;
 
 const hasLeftSlot = await Astro.slots.render('left').then((slot) => (slot ?? '').trim() !== '');
 const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '').trim() !== '');
@@ -64,12 +61,6 @@ const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-    <style>
-      * {
-        font-family: Fondamento, sans-serif;
-      }
-    </style>
 
     <title property="og-title,twitter:title">
       {initialTitle}
@@ -108,7 +99,8 @@ const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
       document.addEventListener('astro:page-load', setup);
     </script>
 
-    <ViewTransitions />
+    <ClientRouter />
+    <VersionStyling />
   </head>
   <body data-latest-version={newestVersion.data.order} {...versionTitleData} data-title-affix={titleAffix}>
     <PageRoot isHome={isHome}>

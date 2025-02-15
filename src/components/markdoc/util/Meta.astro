@@ -6,8 +6,7 @@ interface Props {
 }
 
 const { key } = Astro.props;
-const meta = await getEntry('meta', 'meta');
-const metadata = meta.data.find((entry) => entry.key === key);
+const metadata = await getEntry('meta', key);
 ---
 
-<span>{metadata?.value}</span>
+<span>{metadata?.data.value}</span>

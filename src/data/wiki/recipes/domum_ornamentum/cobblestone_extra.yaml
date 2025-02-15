@@ -1,0 +1,15 @@
+type: shaped
+row1:
+  item1: cobblestone
+  item2:
+  item3: cobblestone
+row2:
+  item1:
+  item2: cobblestone
+  item3:
+row3:
+  item1: cobblestone
+  item2:
+  item3: cobblestone
+output: domum_ornamentum/cobblestone_extra
+amount: 4

@@ -5,8 +5,6 @@ import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
 import purgecss from 'astro-purgecss';
 
-import { minecoloniesSubmodule } from './integrations/minecolonies';
-
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
@@ -26,10 +24,6 @@ export default defineConfig({
     }),
     markdoc(),
     sitemap(),
-    purgecss(),
-    minecoloniesSubmodule()
-  ],
-  experimental: {
-    contentLayer: true
-  }
+    purgecss()
+  ]
 });

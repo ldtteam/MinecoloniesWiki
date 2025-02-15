@@ -1,0 +1,15 @@
+type: shaped
+row1:
+  item1:
+  item2: logs
+  item3: stick
+row2:
+  item1: logs
+  item2: bucket_empty
+  item3: logs
+row3:
+  item1: stick
+  item2: logs
+  item3:
+output: structurize/blockfluidsubstitution
+amount: 32

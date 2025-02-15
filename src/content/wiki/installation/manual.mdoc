@@ -1,71 +1,86 @@
 ---
-type: section
+type: page
 group: installation/installation
-title: Manual
+title: Manual Installation
 ---
-
-- [Installing MineColonies Mod on your original Minecraft Launcher](#installing-minecolonies-mod-on-your-original-minecraft-launcher)
-  - [Download Forge](#download-forge)
-  - [Run Forge Installer](#run-forge-installer)
-  - [Download MineColonies](#download-minecolonies)
-  - [Navigate to Mods Folder](#navigate-to-mods-folder)
-  - [Copy MineColonies to Mods](#copy-minecolonies-to-mods)
-  - [Do the Same Thing for Structurize](#do-the-same-thing-for-structurize)
-    - [Cannot Add Modpack Without External Installer](#cannot-add-modpack-without-external-installer)
-  - [Run Minecraft and Select Profile](#run-minecraft-and-select-profile)
 
 ## Installing MineColonies Mod on your original Minecraft Launcher
 
-- This process is for installing only the MineColonies mod in your original Minecraft launcher. You will *not* be able to connect to the **MineColonies Official Servers** due to the servers having a balanced variety of other mods as well.
+- This process is for installing only the MineColonies mod in your original Minecraft launcher. This is not a modpack installation guide.
+- Installation of the MineColonies mod is very simple. It does require Forge to be able to integrate mods into the Minecraft game, though.
 
-- For connecting to the official server, install [GDLauncher](/wiki/installation/gdlauncher) or the [Curseforge Launcher](/wiki/installation/curseforge). You can visit the [CurseForge](https://www.curseforge.com/minecraft/modpacks/minecolonies-official) site for a zip file containing all mods (with the correct versions) we are currently using on the official server, as well as all the appropriate configs, scripts, and the server.dat file for our modpack official server. If all these additional mods, configs, scripts, and the server.dat are downloaded and installed manually, you will be able to connect to our official server. 
-
-- Installation of the MineColonies mod is very simple. It does require Minecraft Forge to be able to integrate mods into the Minecraft game, though.
-
-> We cannot offer support on the installation of Minecraft Forge, however, there are many excellent (and more in-depth) tutorials online. Just Google 'how to install minecraft forge' to find some.
+{% version name="1.20.6" before=true %}
+> **Note:** We cannot offer support on the installation of Forge, however, there are many excellent (and more in-depth) tutorials online. Just Google 'how to install Minecraft Forge' to find some.
+{% /version %}
+{% version name="1.21" after=true %}
+> **Note:** We cannot offer support on the installation of NeoForge, however, there are many excellent (and more in-depth) tutorials online. Just Google 'how to install Minecraft NeoForge' to find some.
+{% /version %}
 
 ---
 
-### Download Forge
+{% version name="1.20.6" before=true %}
+## Step 1: Download Forge
 
-Go to the [Minecraft Forge Download page](http://files.minecraftforge.net) and download the latest version's *installer* (not the recommended version).
+Go to the [Forge Download page](http://files.minecraftforge.net) and download the **installer** for your Minecraft version.
 
-### Run Forge Installer
+## Step 2: Run Forge Installer
 
-Run the downloaded version and make sure it's on Install Client (or Server if you plan to run a Minecraft server). The installation path is preset according to Minecraft's standard installation path. If you have it installed in a different directory, change the installation directory. When it's done installing, you will see a complete message.
+Run the downloaded version and make sure it's on Install Client (or Server if you plan to run a Minecraft server). The installation path is preset according to Minecraft's default installation path (`C:/Users/<user>/AppData/Roaming/.minecraft`). If you have it installed in a different directory, change the installation directory.
+When it's done installing, you will see a notification the installation has successfully completed (image 2).
 
-![Forge installer](@assets/images/wiki/installation/forge/forge_1.png)
+![Forge installer main menu](@assets/images/wiki/installation/manual/forge_1.png)
 
-![Forge installed](@assets/images/wiki/installation/forge/forge_2.png) 
+![Forge installed notification](@assets/images/wiki/installation/manual/forge_2.png) 
+{% /version %}
+{% version name="1.21" after=true %}
+## Step 1: Download NeoForge
 
-### Download MineColonies
+Go to the [NeoForge Download page](https://projects.neoforged.net/neoforged/neoforge) and download the **installer** for your Minecraft version.
 
-Go to the [MineColonies CurseForge Download page](https://curseforge.com/minecraft/mc-mods/minecolonies/files/all) site and download the latest 1.16.5 alpha version of MineColonies.
+## Step 2: Run NeoForge Installer
 
-### Navigate to Mods Folder
+Run the downloaded version and make sure it's on Install Client (or Server if you plan to run a Minecraft server). The installation path is preset according to Minecraft's default installation path (`C:/Users/<user>/AppData/Roaming/.minecraft`). If you have it installed in a different directory, change the installation directory.
+When it's done installing, you will see a notification the installation has successfully completed (image 2).
 
-On your computer, go to the **.minecraft/mods** folder. To be able to find this folder, just click on the start button and in the search box type: *%appdata%* and hit "search". It will open the folder where you can find the **.minecraft** folder. Open this folder and inside you will find the **mods** folder.
+![NeoForge installer main menu](@assets/images/wiki/installation/manual/neo_1.png)
 
-### Copy MineColonies to Mods
+![NeoForge installed notification](@assets/images/wiki/installation/manual/neo_2.png) 
+{% /version %}
 
-Once you are in the **.minecraft/mods** folder, copy the downloaded MineColonies file you downloaded in the *Download MineColonies* step and paste it here. **Note:** DO NOT extract the file if the option appears. Just put the .jar file in here without extracting its contents.
+## Step 3: Download MineColonies
 
-### Do the Same Thing for Structurize
+Go to the [MineColonies CurseForge Download page](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/all?showAlphaFiles=show) site and download the latest version of MineColonies for the correct Minecraft version.
 
-Follow the last three steps, except for Structurize (which MineColonies needs to work). Find the download page for Structurize [here](https://www.curseforge.com/minecraft/mc-mods/structurize/files/all).
+## Step 4: Download Dependencies
 
-MineColonies doesn't always accept the latest version of Structurize. To ensure you have the required version, first, click on the MineColonies file name (on the Curseforge website). You'll be taken to the changelog, where it should say the accepted Structurize version at the top. Download that exact version.
+Do the same as step 3 above, but for all of the dependencies for MineColonies for your current Minecraft version. These are:
+{% version name="1.16.5" before=true %}
+- [Structurize](/wiki/dependencies/structurize)
+{% /version %}
+{% version name="1.17" after=true %}
+- [Structurize](/wiki/dependencies/structurize)
+- [Domum Ornamentum](/wiki/dependencies/domumornamentum)
+- [BlockUI](/wiki/dependencies/blockui)
+- [Multipiston](/wiki/dependencies/multipiston)
+{% /version %}
 
-#### Cannot Add Modpack Without External Installer
+## Step 5: Copy the jar files to the mods folder
 
-If you are adding the entire modpack to be able to play on the official server, you will require an external launcher to download the pack. The [Curseforge launcher](/wiki/installation/curseforge) works on Windows or macOS. Other options include [GDlauncher](/wiki/installation/gdlauncher) or [MultiMC](https://multimc.org/#Download), both offering Windows, macOS and Linux support. Finally, if you can not or do not wish to 'install' a launcher you can use [CMPDL](https://github.com/Vazkii/CMPDL) that will run a small Java program to download the required modpack. 
+Open the folder `C:/Users/<user>/AppData/Roaming/.minecraft/mods`, you can either go to this folder directly, or type `%appdata%` in the Windows start menu.
+This will bring you directly to the `C:/Users/<user>/AppData/Roaming` folder on your computer. Then open the `.minecraft/mods` folder.
 
-Unfortunately, manually 'installing' modpacks is no longer an option as Curseforge no longer distributes mods in the downloaded zip files for modpacks due to licensing issues.
+Once you are in the mods folder, copy all of the jars you downloaded in step 3 and 4 into this folder.
 
-### Run Minecraft and Select Profile
+> **Note:** **DO NOT extract the files** if the option appears. Just put the .jar file in here without extracting its contents.
 
-Run your original Minecraft launcher. Make sure you have the **Forge** profile loaded and hit play. (You might need to go to Installations and create a new installation first.)
+## Step 6: Start Minecraft
 
-![Minecraft Launcher](@assets/images/wiki/installation/forge/forge_3.png) 
+Run your original Minecraft launcher. Make sure you have the {% version name="1.21" after=true inline=true %}**NeoForge**{% /version %}{% version name="1.20.6" before=true inline=true %}**Forge**{% /version %} profile loaded and hit play. (You might need to go to Installations and create a new installation first.)
+
+![Minecraft Launcher](@assets/images/wiki/installation/manual/launcher.png) 
 
 That's it. If you followed these steps, you are ready to play MineColonies!
+
+## Step 7: Troubleshooting
+
+If your game does not start up correctly, you are getting some error on startup and unsure of what to do, join our {% social_link name="discord" /%} server and ask in our help channels what is wrong!

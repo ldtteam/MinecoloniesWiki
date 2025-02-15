@@ -1,0 +1,80 @@
+---
+import Infobox from '@components/ui/infobox/Infobox.astro';
+import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
+import Wrapper from '@components/ui/infobox/Wrapper.astro';
+import BuildingName from '@components/wiki/names/BuildingName.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
+
+interface Props {
+  building: CollectionEntry<'buildings'>;
+}
+
+const { building } = Astro.props;
+
+const research = (
+  await getCollection('research', (filter) =>
+    filter.data.effects
+      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === building.id)
+      : false
+  )
+).slice(0, 1)[0];
+
+const workers = building.data.workers ?? [];
+const recipes = building.data.recipes ?? [];
+---
+
+<Wrapper>
+  <slot />
+
+  <Infobox slot="infobox" class="flex-shrink-1">
+    <BuildingName slot="title" building={building} />
+
+    <div class="text-center">
+      <Image src={building.data.icon} alt={building.data.name} width={300} loading="eager" />
+    </div>
+
+    <RecipeGrid recipes={recipes} />
+
+    <hr />
+    <p class="m-0">
+      <b>Research:&nbsp;</b>
+      {
+        research !== undefined ? (
+          <span
+            set:html={`You must research "<a href="/wiki/systems/research#research_${research.id}">${research.data.name}</a>" to unlock this building!`}
+          />
+        ) : (
+          <>No research is required for this building.</>
+        )
+      }
+    </p>
+
+    {
+      building.data.singular && (
+        <>
+          <hr />
+          <p class="m-0">
+            <b>Note:</b> you can only build a single <BuildingName building={building} />
+          </p>
+        </>
+      )
+    }
+
+    {
+      workers.length !== 0 && (
+        <>
+          <hr />
+          {workers.map((worker, idx) => (
+            <>
+              <BuildingInfoboxWorker building={building} worker={worker} />
+              {idx !== workers.length - 1 && <hr />}
+            </>
+          ))}
+        </>
+      )
+    }
+  </Infobox>
+</Wrapper>
