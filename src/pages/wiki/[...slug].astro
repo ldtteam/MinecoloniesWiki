@@ -3,8 +3,11 @@ import '../../css/codeblock.scss';
 
 import Meta from '@components/Meta.astro';
 import PageContent from '@components/wiki/PageContent.astro';
+import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import Layout from '@layouts/Default.astro';
+import { getSectionRoot } from '@utils/wiki';
 import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 import { getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
 
@@ -24,40 +27,42 @@ const description = await getWikiDescription(entry);
 const image = await getWikiImage(entry);
 
 const initialTitle = typeof title === 'string' ? title : title.highestValue;
+
+const primarySection = entry.data.sections ? entry : await getSectionRoot(entry);
+const primarySectionTitle = primarySection ? await getWikiTitle(primarySection) : undefined;
 ---
 
 <Layout title={title} titleAffix="MineColonies Wiki">
   <Meta slot="meta" title={initialTitle + ' | MineColonies Wiki'} isWiki image={image} description={description} />
 
-  <!-- {
-    entry.data.sections && (
-      // <aside slot="left">
-      //   <hr />
-      //   <ul class="dropdown-menu d-block position-relative">
-      //     <li>
-      //       <h6 class="dropdown-header">Sections:</h6>
-      //     </li>
-      //     <li>
-      //       <a class="dropdown-item" href={`/wiki/${groupData.initialSection.id}`}>
-      //         {groupData.initialSection.title}
-      //       </a>
-      //     </li>
-      //     <li>
-      //       <hr class="dropdown-divider" />
-      //     </li>
-      //     {groupData.sections
-      //       .filter((section) => groupData.data.initialSection.id !== section.id)
-      //       .map(async (section) => (
-      //         <li>
-      //           <a class="dropdown-item" href={`/wiki/${section.id}`}>
-      //             {section.title}
-      //           </a>
-      //         </li>
-      //       ))}
-      //   </ul>
-      // </aside>
-  //   )
-  // } -->
+  {
+    primarySection && (
+      <aside slot="left">
+        <hr />
+        <ul class="dropdown-menu d-block position-relative">
+          <li>
+            <h6 class="dropdown-header">Sections:</h6>
+          </li>
+          <li>
+            <a class="dropdown-item" href={`/wiki/${primarySection.id}`}>
+              <PageTitleRender title={primarySectionTitle ?? ''} />
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          {primarySection.data.sections &&
+            primarySection.data.sections.map(async (section) => (
+              <li>
+                <a class="dropdown-item" href={`/wiki/${section.id}`}>
+                  <PageTitleRender title={(await getWikiTitle(await getEntry(section))) ?? ''} />
+                </a>
+              </li>
+            ))}
+        </ul>
+      </aside>
+    )
+  }
 
   <PageContent page={entry} />
 

@@ -79,8 +79,12 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
   }
 }
 
+export async function getSectionRoot(page: CollectionEntry<'wiki'>) {
+  return (await getCollection('wiki', (p) => p.data.sections?.some((s) => s.id === page.id))).shift();
+}
+
 export async function isSection(page: CollectionEntry<'wiki'>) {
-  return (await getCollection('wiki', (p) => p.data.sections?.some((s) => s.id === page.id))).length > 0;
+  return (await getSectionRoot(page)) !== undefined;
 }
 
 export async function getWikiPages(): Promise<WikiPages> {
@@ -90,6 +94,10 @@ export async function getWikiPages(): Promise<WikiPages> {
   const distributedPages = wikiCategories.reduce<WikiPages>((prev, curr) => prev.set(curr, []), new Map());
 
   for (const entry of wikiPages) {
+    if (await isSection(entry)) {
+      continue;
+    }
+
     const categoryString = entry.id.substring(0, entry.id.indexOf('/'));
     const category = wikiCategories.find((f) => f.id === categoryString);
     if (category === undefined) {
