@@ -21,7 +21,7 @@ const { noRemove, noTeach, ...rest } = Astro.props;
   </p>
 
   {
-    noTeach && (
+    !noTeach && (
       <ul>
         <li>
           <b>Teach Recipe:</b> When clicking teach recipe, it opens a crafting menu for the Architects Cutter. It will
