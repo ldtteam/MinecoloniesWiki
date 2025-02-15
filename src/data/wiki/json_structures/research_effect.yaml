@@ -1,0 +1,37 @@
+name: Research Effect
+path: "<namespace>/researches/effects/<effect-id>.json"
+fields:
+  - key: effect
+    type: primitive
+    primitive:
+      - boolean
+    description: Required to treat the file as a research effect. Can be any value, usually `true`.
+    example: true
+  - key: name
+    type: primitive
+    primitive:
+      - string
+    description: The display name of the effect, shown on mouseover. May be a translation key.
+    example: Settle outposts
+    default: com.<namespace>.research.<path>.description
+  - key: subtitle
+    type: primitive
+    primitive:
+      - string
+    description: The subtitle of the effect, shown on mouseover. May be a translation key.
+    example: Unlocks the ability to settle outposts
+    default: com.<namespace>.research.<path>.description
+  - key: levels
+    type: array_primitive
+    primitive:
+      - double
+    description: The effect strengths of the research, by level.
+    example:
+      - 0
+      - 0.25
+      - 0.5
+      - 0.75
+      - 1
+    default:
+      - 0
+      - 1

@@ -1,7 +1,8 @@
 ---
+import BuildingName from '@components/wiki/names/BuildingName.astro';
 import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
-import BuildingName from '../names/BuildingName.astro';
 import ResearchLink from '../research/ResearchLink.astro';
 
 interface Props {
@@ -15,21 +16,21 @@ const { conditions } = Astro.props;
   conditions.length > 0 &&
     conditions.map(async (condition) => {
       if (condition.type === 'building') {
+        const buildingData = await getEntry(condition.building);
         if (condition.level) {
           return (
             <li>
-              Requires a <BuildingName name={condition.building.id} /> level {condition.level}
+              Requires a <BuildingName building={buildingData} /> level {condition.level}
             </li>
           );
         } else {
           return (
             <li>
-              Requires a <BuildingName name={condition.building.id} />
+              Requires a <BuildingName building={buildingData} />
             </li>
           );
         }
       }
-
       if (condition.type === 'research') {
         return (
           <li>

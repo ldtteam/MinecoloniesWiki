@@ -1,0 +1,153 @@
+name: Research
+path: "<namespace>/researches/<branch>/<research-id>.json"
+fields:
+  - key: name
+    type: primitive
+    primitive:
+      - string
+    description: The displayed name of the research, presented to the user. May be a translation key.
+    example: Outposts
+    default: com.<namespace>.research.<path>.name
+  - key: subtitle
+    type: primitive
+    primitive:
+      - string
+    description: A subtitle for the research, displayed on mouse over. May be a translation key.
+    example: Unlock the ability to settle outposts
+    optional: true
+  - key: branch
+    type: primitive
+    primitive:
+      - string
+    description: A Resource Location that indicates which branch the research belongs in.
+    example: minecolonies:civilian
+  - key: parentResearch
+    type: primitive
+    primitive:
+      - string
+    description: The Resource Location for a parent research, which must be completed before this research may be unlocked. Required for research of a level greater than 1. Must be on the same branch.
+    example: minecolonies:civilian/outposts
+    optional: true
+  - key: researchLevel
+    type: primitive
+    primitive:
+      - integer
+    description: 'The Research Level of the research. Unless the branch is set to `"branch-type": "unlockables"`, requires a :building{name="university"} of equal or greater level to begin researches of levels 1 through 5, and only allows one level 6 research to be completed at a time. If above level 1, must have a valid parent one level lower.'
+    example: 3
+    default: 1
+  - key: sortOrder
+    type: primitive
+    primitive:
+      - integer
+    description: Controls the vertical position of the branch on the Research Tree GUI. Lowers numbers are placed higher up, while higer numbers are placed closer to the bottom. Only applies to research with siblings.
+    example: 2
+    default: 0
+  - key: exclusiveChildResearch
+    type: primitive
+    primitive:
+      - boolean
+    description: If true and the research has more than one descendant research, allows completion of only one of those researches at a time.
+    example: false
+    default: false
+  - key: no-reset
+    type: primitive
+    primitive:
+      - boolean
+    description: If true, prevents undoing the research. Has no effect if the research is already unresettable.
+    example: false
+    default: false
+  - key: hidden
+    type: primitive
+    primitive:
+      - boolean
+    description: If true, does not display the research until its requirements are fulfilled. Has no effect if the research has no requirements or only has item costs.
+    example: false
+    default: false
+  - key: autostart
+    type: primitive
+    primitive:
+      - boolean
+    description: If true, and the research has no item costs, begins the research automatically once its requirements are fulfilled. If the research has item costs, notifies logged-in players that it is available to begin.
+    example: false
+    default: false
+  - key: instant
+    type: primitive
+    primitive:
+      - boolean
+    description: If true, attempts to instantly (or within 30 seconds) complete the research after it has been begun.
+    example: false
+    default: false
+  - key: requirements
+    type: array
+    description: If true, attempts to instantly (or within 30 seconds) complete the research after it has been begun.
+    optional: true
+    children:
+      - key: item
+        type: primitive
+        primitive:
+          - string
+        description: A Resource Location of an item consumed to begin the research. Multiple items are supported, though having more than 5 may display poorly on some monitors. Optionally pairs with `quantity`. Items without NBT data match any NBT variant, but do require the item to be undamaged.
+        example: minecraft:book
+        optional: true
+      - key: quantity
+        type: primitive
+        primitive:
+          - integer
+        description: A number of items to be consumed. Pairs with `item`.
+        example: 16
+        default: 1
+      - key: building
+        type: primitive
+        primitive:
+          - string
+        description: A specific building that must be present in the colony. Normal building requirements combine the levels from multiple of the same building type. Optionally pairs with `level`.
+        example: library
+        optional: true
+      - key: mandatory-building
+        type: primitive
+        primitive:
+          - string
+        description: A specific building that must be present in the colony, with at least one occurence at least at the specifed level. Optionally pairs with `level`.
+        example: library
+        optional: true
+      - key: alternate-building
+        type: primitive
+        primitive:
+          - string
+        description: A specific building to be added to the list of alternate-buildings. At least one of the alternate-buildings must be present in the colony to begin research. Optionally pairs with `level`. Acts like `building` if only one alternate-building object is present.
+        example: library
+        optional: true
+      - key: level
+        type: primitive
+        primitive:
+          - integer
+        description: Specifies a building level. Pairs with `building`, `mandatory-building`, and `alternate-building`, otherwise has no effect.
+        example: 1
+        default: 1
+      - key: research
+        type: primitive
+        primitive:
+          - string
+        description: A specific research by Resource Location that must be completed to unlock this research. Unlike, `parentResearch`, can be on another branch, or of any research level.
+        example: "minecolonies:civilian/outposts"
+        optional: true
+  - key: effects
+    type: array
+    description: Contains all of the effects of the research. Can be empty, either for research with no effects or for research that only unlocks crafterrecipes, or contain one or more objects.
+    optional: true
+    children:
+      - key: "<effect key>"
+        type: primitive
+        primitive:
+          - integer
+        description: The Research Effect identifier as a Resource Location, followed by the level of the effect as an Integer. If the level exceeds the maximum level of the effect, defaults to the maximum level. If no matching effect is found, applies a default strength of 6, enough to unlock a building completely.
+        example: 3
+        default: 1
+  - key: remove
+    type: primitive
+    primitive:
+      - string
+      - boolean
+    description: "Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world.\n - String: Removes any research matching the Resource Location in that String.\n - Boolean (true): Removes research matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs."
+    example: true
+    optional: true

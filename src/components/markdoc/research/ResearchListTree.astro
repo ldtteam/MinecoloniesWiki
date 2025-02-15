@@ -7,7 +7,7 @@ interface Props {
   tree: CollectionEntry<'research_tree'>;
 }
 
-const tree = Astro.props.tree;
+const { tree } = Astro.props;
 ---
 
 <h3 id={tree.id}>{tree.data.name}</h3>

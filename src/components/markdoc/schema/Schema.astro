@@ -1,0 +1,101 @@
+---
+import { type CollectionEntry, getEntry } from 'astro:content';
+import { v4 as uuidv4 } from 'uuid';
+
+import SchemaField from './SchemaField.astro';
+import { buildJson } from './util';
+
+interface Props {
+  frontmatter: CollectionEntry<'wiki'>['data'];
+  name: string;
+}
+
+const { frontmatter, name: schemaName } = Astro.props;
+
+const schema = await getEntry('json_structures', schemaName);
+if (schema === undefined) {
+  throw new Error(`Schema with id '${schemaName}' does not exist.`);
+}
+
+const id = uuidv4();
+const json = await buildJson(schema, frontmatter);
+---
+
+<div class="schema-parent">
+  <blockquote class="blockquote-border">
+    <div class="d-flex justify-content-between">
+      <h4><b>Schema: {schema.data.name}</b></h4>
+      <div>
+        <label>
+          <input type="radio" class="d-none" name={'toggle' + id} value="table" checked />
+          <div class="btn">Fields</div>
+        </label>
+        <label>
+          <input type="radio" class="d-none" name={'toggle' + id} value="json" />
+          <div class="btn">Example JSON</div>
+        </label>
+      </div>
+    </div>
+    <p>Example path: <code>{schema.data.path}</code></p>
+    <div class="content content-table">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Default value</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {schema.data.fields.map((field) => <SchemaField field={field} frontmatter={frontmatter} />)}
+        </tbody>
+      </table>
+      <span>* = Required field</span>
+    </div>
+    <div class="content content-json">
+      <Fragment set:html={json} />
+    </div>
+  </blockquote>
+</div>
+
+<style lang="scss">
+  @import '../../../css/bootstrap-vars.scss';
+  @import '../../../../node_modules/bootstrap/scss/_buttons.scss';
+
+  input[type='radio'] + div {
+    @extend .btn-outline-secondary;
+  }
+
+  input[type='radio']:checked + div {
+    @extend .btn-secondary;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .show {
+    display: initial !important;
+  }
+</style>
+
+<script>
+  function onLoad() {
+    const schemas = document.getElementsByClassName('schema-parent');
+    for (const schema of schemas) {
+      schema.querySelectorAll<HTMLInputElement>("input[name^='toggle']").forEach((input) => {
+        input.addEventListener('change', () => swapContent(schema));
+      });
+      swapContent(schema);
+    }
+  }
+
+  function swapContent(schema: Element) {
+    const checked = schema.querySelector<HTMLInputElement>('input:checked');
+    schema.querySelectorAll('.content').forEach((element) => element.classList.remove('show'));
+    schema.querySelector(`.content-${checked!.value}`)?.classList.add('show');
+  }
+
+  document.addEventListener('astro:page-load', onLoad);
+</script>

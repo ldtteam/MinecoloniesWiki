@@ -5,6 +5,7 @@ import { buildingLoader } from './loaders/building-loader';
 import { researchEffectsLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
 import { buildingSchema } from './schemas/building';
 import { itemSchema, tagSchema } from './schemas/item';
+import { jsonStructureSchema } from './schemas/json_structures';
 import { recipeSchema } from './schemas/recipe';
 import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
 import { workerSchema } from './schemas/workers';
@@ -188,6 +189,15 @@ const researchCollection = defineCollection({
   schema: researchSchema
 });
 
+// |---------|
+// | SCHEMAS |
+// |---------|
+
+const jsonStructuresCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/json_structures' }),
+  schema: jsonStructureSchema
+});
+
 export const collections = {
   wiki: wikiCollection,
   wiki_categories: wikiCategories,
@@ -205,5 +215,6 @@ export const collections = {
   team: teamCollection,
   sponsors: sponsorCollection,
   supporters: supporterCollection,
-  events: eventCollection
+  events: eventCollection,
+  json_structures: jsonStructuresCollection
 };

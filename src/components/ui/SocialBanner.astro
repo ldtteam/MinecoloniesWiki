@@ -15,7 +15,7 @@ const socialData = socials[social];
 
 <Banner {...rest} {textColor} image={(key) => `/images/ribbon/social/${social}_ribbon_${key}.png`}>
   <a href={socialData.link} style={{ color: textColor }}>
-    <Icon name={`fa6-brands:${social}`} />
+    <Icon name={`cib:${social}`} />
     <slot />
   </a>
 </Banner>
