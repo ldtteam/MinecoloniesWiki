@@ -108,8 +108,7 @@ const wikiCollection = defineCollection({
       ])
       .and(
         z.object({
-          sections: z.array(reference('wiki')).optional(),
-          sectionMenuName: z.string().optional()
+          sections: z.array(reference('wiki')).optional()
         })
       )
 });

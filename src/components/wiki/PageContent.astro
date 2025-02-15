@@ -28,15 +28,11 @@ async function getBuildingData(id: string) {
       <Content id={page.id} frontmatter={page.data} />
     </BuildingInfobox>
   ) : page.data.type === 'item' && (page.data.infobox?.show ?? true) ? (
-    <ItemInfobox slot="infobox" item={page.data.item.id}>
+    <ItemInfobox item={page.data.item.id}>
       <Content id={page.id} frontmatter={page.data} />
     </ItemInfobox>
   ) : page.data.type === 'item-combined' && (page.data.infobox?.show ?? true) ? (
-    <ItemCombinedInfobox
-      slot="infobox"
-      items={page.data.items.map((item) => item.id)}
-      cols={page.data.infobox?.cols ?? 2}
-    >
+    <ItemCombinedInfobox items={page.data.items.map((item) => item.id)} cols={page.data.infobox?.cols ?? 2}>
       <Content id={page.id} frontmatter={page.data} />
     </ItemCombinedInfobox>
   ) : (
