@@ -1,5 +1,6 @@
 import { type AstroMarkdocConfig, defineMarkdocConfig, Markdoc, nodes } from '@astrojs/markdoc/config';
 import shiki from '@astrojs/markdoc/shiki';
+import { schema } from 'src/markdoc/schema';
 
 import { building, contentBlocks as buildingContentBlocks } from './src/markdoc/buildings';
 import { item, item_combined_infobox, item_infobox, item_page } from './src/markdoc/items';
@@ -38,7 +39,8 @@ export const config: AstroMarkdocConfig = {
     citizen_name_pack_list,
     content_block,
     image_row,
-    meta
+    meta,
+    schema
   },
   nodes: {
     document: {

@@ -1,5 +1,4 @@
 ---
-import Schema from '@components/markdoc/schema/Schema.astro';
 import TeamMember from '@components/TeamMember.astro';
 import Button from '@components/ui/Button.astro';
 import Layout from '@layouts/Default.astro';
@@ -30,9 +29,6 @@ const sortMembers = (members: CollectionEntry<'team'>[]) => {
 ---
 
 <Layout title="Our Team">
-  <Schema />
-  <Schema />
-
   <ol class="team-chart pb-5">
     <li>
       <ol>

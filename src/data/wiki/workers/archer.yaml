@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Adaptability
     effect: Greater range
-primaryBuilding: buildings/guardtower
+primaryBuilding: guardtower

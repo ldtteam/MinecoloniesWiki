@@ -9,7 +9,6 @@ interface Props {
 const { currentPage, name } = Astro.props;
 
 const itemPage = await getEntry('wiki', 'items/' + name);
-console.log(itemPage?.id);
 if (itemPage === undefined || itemPage.data.type === 'building' || itemPage.data.type === 'page') {
   throw new Error(`Item page '${name}' does not exist.`);
 }

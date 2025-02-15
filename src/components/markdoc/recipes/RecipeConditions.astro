@@ -1,11 +1,12 @@
 ---
-import type { CraftingCondition } from 'src/content/_wiki';
+import BuildingName from '@components/wiki/names/BuildingName.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
-import RecipeConditionBuilding from './RecipeConditionBuilding.astro';
-import RecipeConditionResearch from './RecipeConditionResearch.astro';
+import ResearchLink from '../research/ResearchLink.astro';
 
 interface Props {
-  conditions: CraftingCondition[];
+  conditions: CollectionEntry<'recipes'>['data']['conditions'];
 }
 
 const { conditions } = Astro.props;
@@ -15,11 +16,27 @@ const { conditions } = Astro.props;
   conditions.length > 0 &&
     conditions.map(async (condition) => {
       if (condition.type === 'building') {
-        return <RecipeConditionBuilding condition={condition} />;
+        const buildingData = await getEntry(condition.building);
+        if (condition.level) {
+          return (
+            <li>
+              Requires a <BuildingName building={buildingData} /> level {condition.level}
+            </li>
+          );
+        } else {
+          return (
+            <li>
+              Requires a <BuildingName building={buildingData} />
+            </li>
+          );
+        }
       }
-
       if (condition.type === 'research') {
-        return <RecipeConditionResearch condition={condition} />;
+        return (
+          <li>
+            Requires research <ResearchLink name={condition.research.id} />
+          </li>
+        );
       }
 
       return undefined;

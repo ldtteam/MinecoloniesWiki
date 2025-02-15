@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Creativity
     effect: Increases chance of decreasing materials needed
-primaryBuilding: buildings/fletcher
+primaryBuilding: fletcher

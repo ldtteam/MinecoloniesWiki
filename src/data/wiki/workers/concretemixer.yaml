@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Dexterity
     effect: Faster concrete crafting
-primaryBuilding: buildings/concretemixer
+primaryBuilding: concretemixer

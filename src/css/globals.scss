@@ -129,19 +129,3 @@ hr {
   --astro-code-token-punctuation: #f8f8f2;
   --astro-code-token-link: #8be9fd;
 }
-
-.app-card-min {
-  width: min-content;
-}
-
-.app-card .box {
-  background:
-    url('/images/card/card_dark_top_left.png') top left/16px 16px no-repeat,
-    url('/images/card/card_dark_top_right.png') top right no-repeat,
-    url('/images/card/card_dark_bottom_left.png') bottom left no-repeat,
-    url('/images/card/card_dark_bottom_right.png') bottom right no-repeat,
-    url('/images/card/card_dark_left.png') 0px 16px repeat-y,
-    url('/images/card/card_dark_right.png') right center repeat-y,
-    url('/images/card/card_dark_top.png') top center repeat-x,
-    url('/images/card/card_dark_bottom.png') bottom center repeat-x;
-}

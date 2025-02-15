@@ -7,4 +7,4 @@ traits:
   primary:
     name: Intelligence
     effect: Affects leveling speed of other skills
-primaryBuilding: buildings/library
+primaryBuilding: library

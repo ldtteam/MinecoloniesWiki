@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Mana
     effect: Affects max amount of research time they get
-primaryBuilding: buildings/university
+primaryBuilding: university

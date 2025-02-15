@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Athletics
     effect: Faster rabbit growth
-primaryBuilding: buildings/rabbithutch
+primaryBuilding: rabbithutch

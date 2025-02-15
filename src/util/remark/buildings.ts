@@ -1,40 +1,39 @@
 import type { RemarkPlugin } from '@astrojs/markdown-remark';
-import { groupBuildingDataByVersion } from '@utils/building';
-import { getWikiPage } from '@utils/wiki';
-import type { CollectionEntry } from 'astro:content';
+import { getOverrideValues } from '@utils/override';
+import { type CollectionEntry, getEntry } from 'astro:content';
 import type { TextDirective } from 'mdast-util-directive';
-import type { LeafDirective } from 'node_modules/mdast-util-directive/lib';
 import { visit } from 'unist-util-visit';
 
-async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], node: LeafDirective | TextDirective) {
+async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], node: TextDirective) {
   const data = node.data || (node.data = {});
   const attributes = node.attributes || {};
   const name = attributes.name ?? '';
   const plural = Boolean(attributes.plural ?? false);
 
-  const buildingData = await getWikiPage('building', 'buildings/' + name);
+  const buildingData = await getEntry('buildings', name);
   if (buildingData === undefined) {
-    throw Error(`Building with id ${name} does not exist.`);
+    throw new Error(`Building with id ${name} does not exist.`);
   }
-  const buildingDataPerVersion = await groupBuildingDataByVersion(buildingData.data);
+
+  const namePerVersion = await getOverrideValues(buildingData.data, (v) => (plural ? v.plural : v.name));
 
   data.hName = frontmatter.type !== 'building' || frontmatter.id !== buildingData.id ? 'a' : 'span';
   if (data.hName === 'a') {
     data.hProperties = {
-      href: '/wiki/' + buildingData.slug
+      href: '/wiki/buildings/' + buildingData.id
     };
   }
-  data.hChildren = buildingDataPerVersion.map((building) => ({
+  data.hChildren = namePerVersion.values.map((buildingName) => ({
     type: 'element',
     tagName: 'span',
     children: [
       {
         type: 'text',
-        value: plural ? building.item.plural : building.item.name
+        value: buildingName.value
       }
     ],
     properties: {
-      'data-versions': building.versions.map((version) => version.data.order).join(',')
+      'data-versions': buildingName.versions.map((version) => version.data.order).join(',')
     }
   }));
 }
@@ -43,8 +42,8 @@ export const buildingPlugin: (frontmatter: CollectionEntry<'wiki'>['data']) => R
   (frontmatter) => () => async (tree) => {
     const promises: Promise<void>[] = [];
 
-    visit(tree, (node) => {
-      if ((node.type === 'leafDirective' || node.type === 'textDirective') && node.name === 'building') {
+    visit(tree, 'textDirective', (node) => {
+      if (node.name === 'building') {
         promises.push(processBuilding(frontmatter, node));
       }
     });

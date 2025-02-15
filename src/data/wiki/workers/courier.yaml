@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Adaptability
     effect: More huts visited on each trip
-primaryBuilding: buildings/deliveryman
+primaryBuilding: deliveryman

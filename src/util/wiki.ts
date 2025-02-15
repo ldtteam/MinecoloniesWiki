@@ -1,10 +1,4 @@
-import {
-  type CollectionEntry,
-  getCollection,
-  getEntry,
-  type InferEntrySchema,
-  type ValidContentEntrySlug
-} from 'astro:content';
+import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getItemData } from './items';
 import { getOverrideValues } from './override';
@@ -12,19 +6,19 @@ import type { VersionedResult } from './version';
 
 export type Title = string | VersionedResult;
 
-interface WikiPageType {
+interface WikiPageEntry {
   type: 'page';
   id: string;
   name: Title;
 }
 
-interface WikiSubCategoryType {
+interface WikiSubCategoryEntry {
   type: 'subcategory';
   name: Title;
   pages: WikiPageEntry[];
 }
 
-type WikiPage = WikiSubCategoryType | WikiPageType;
+type WikiPage = WikiSubCategoryEntry | WikiPageEntry;
 
 type WikiPages = Map<CollectionEntry<'wiki_categories'>, WikiPage[]>;
 
@@ -149,51 +143,4 @@ export async function getWikiPages(): Promise<WikiPages> {
   }
 
   return distributedPages;
-}
-
-type WikiPageTypes = InferEntrySchema<'wiki'>['type'];
-
-export type WikiPageEntry<T extends WikiPageTypes> = Omit<CollectionEntry<'wiki'>, 'data'> & {
-  data: Extract<CollectionEntry<'wiki'>['data'], { type: T }>;
-};
-
-export type WikiPageData<T extends WikiPageTypes> = WikiPageEntry<T>['data'];
-
-export function isWikiDataOfType<T extends WikiPageTypes>(
-  data: CollectionEntry<'wiki'>['data'],
-  type: T
-): data is WikiPageEntry<T>['data'] {
-  return data.type === type;
-}
-
-export function isWikiPageOfType<T extends WikiPageTypes>(
-  page: Omit<CollectionEntry<'wiki'>, 'id'> & { id: string },
-  type: T
-): page is WikiPageEntry<T> {
-  return isWikiDataOfType(page.data, type);
-}
-
-export function getWikiPages<T extends WikiPageTypes>(type: T): Promise<WikiPageEntry<T>[]> {
-  return getCollection('wiki', (page) => isWikiPageOfType(page, type));
-}
-
-type GetWikiPageResult<T extends WikiPageTypes, E extends string> =
-  E extends ValidContentEntrySlug<'wiki'> ? WikiPageEntry<T> : WikiPageEntry<T> | undefined;
-
-export async function getWikiPage<T extends WikiPageTypes, E extends string>(
-  type: T,
-  name: E
-): Promise<GetWikiPageResult<T, E>> {
-  const page = await getEntry('wiki', name);
-  if (page === undefined) {
-    return undefined as GetWikiPageResult<T, E>;
-  }
-
-  if (!isWikiPageOfType(page, type)) {
-    throw Error(
-      `Page ${name} for type ${type} is not of correct type, type provided in the file is ${page.data.type}.`
-    );
-  }
-
-  return page;
 }

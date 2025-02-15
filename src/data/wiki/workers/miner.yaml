@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Stamina
     effect: Faster block placing
-primaryBuilding: buildings/miner
+primaryBuilding: miner

@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Stamina
     effect: Increased health
-primaryBuilding: buildings/guardtower
+primaryBuilding: guardtower

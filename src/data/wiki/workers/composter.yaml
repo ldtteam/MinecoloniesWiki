@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Athletics
     effect: Faster barrel filling
-primaryBuilding: buildings/composter
+primaryBuilding: composter

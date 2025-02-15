@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Strength
     effect: More damage per attack
-primaryBuilding: buildings/shepherd
+primaryBuilding: shepherd

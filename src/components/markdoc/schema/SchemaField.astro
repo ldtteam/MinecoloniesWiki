@@ -1,28 +1,66 @@
 ---
-import { processDataText } from '@utils/processor';
 import { toTitleCase } from '@utils/string';
 import type { CollectionEntry } from 'astro:content';
-import type { SchemaFieldDefinition } from 'src/content/_wiki';
+import { Icon } from 'astro-icon/components';
+
+import { formatText } from './util';
 
 interface Props {
-  field: string;
-  definition: SchemaFieldDefinition;
+  field: CollectionEntry<'json_structures'>['data']['fields'][number];
   frontmatter: CollectionEntry<'wiki'>['data'];
+  depth?: number;
 }
 
-const { field, definition, frontmatter } = Astro.props;
-const type =
-  typeof definition.type === 'string'
-    ? toTitleCase(definition.type)
-    : definition.type.map((type) => toTitleCase(type)).join(', ');
+const { field, frontmatter, depth = 0 } = Astro.props;
 
-const text = await processDataText(definition.description, frontmatter);
+let key: string;
+if (field.type === 'array' || field.type === 'array_primitive') {
+  key = `${field.key}[]`;
+} else {
+  key = field.key;
+}
+
+let type: string;
+if (field.type === 'primitive') {
+  type = field.primitive.map((type) => toTitleCase(type)).join(', ');
+} else if (field.type === 'object') {
+  type = 'Object';
+} else if (field.type === 'array') {
+  type = 'Array (Objects)';
+} else {
+  type = `Array (${field.primitive.map((type) => toTitleCase(type) + 's').join(', ')})`;
+}
+
+let def: string | number | boolean | undefined;
+if (field.type === 'primitive') {
+  def = field.default;
+} else if (field.type === 'array_primitive') {
+  def = field.default ? `[${field.default?.join(', ')}]` : undefined;
+}
+
+const optional = def !== undefined ? true : field.optional;
+
+const description = await formatText(field.description, frontmatter);
 ---
 
 <tr>
-  <td style={{ whiteSpace: 'nowrap' }}><code>{field}</code></td>
+  <td style={{ whiteSpace: 'nowrap' }}>
+    {
+      Array.from({ length: depth }, (_, i) => (
+        <Icon
+          name="material-symbols-light:subdirectory-arrow-right-rounded"
+          color={i === depth - 1 ? undefined : 'transparent'}
+        />
+      ))
+    }
+    <code>{key} {!optional && '*'}</code>
+  </td>
   <td>{type}</td>
-  <td>{definition.optional ? 'No' : 'Yes'}</td>
-  <td><code>{definition.default}</code></td>
-  <td><Fragment set:html={text} /></td>
+  <td>{def !== undefined && <code>{def.toString()}</code>}</td>
+  <td><Fragment set:html={description} /></td>
 </tr>
+
+{
+  'children' in field &&
+    field.children.map((subField) => <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 1} />)
+}

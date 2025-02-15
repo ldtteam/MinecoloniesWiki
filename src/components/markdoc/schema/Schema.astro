@@ -1,33 +1,23 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { getEntry } from 'astro:content';
+import { type CollectionEntry, getEntry } from 'astro:content';
 import { v4 as uuidv4 } from 'uuid';
 
 import SchemaField from './SchemaField.astro';
 import { buildJson } from './util';
 
-const schema = await getEntry('schemas', 'research-branch');
+interface Props {
+  frontmatter: CollectionEntry<'wiki'>['data'];
+  name: string;
+}
+
+const { frontmatter, name: schemaName } = Astro.props;
+
+const schema = await getEntry('json_structures', schemaName);
+if (schema === undefined) {
+  throw new Error(`Schema with id '${schemaName}' does not exist.`);
+}
 
 const id = uuidv4();
-
-const fields = Object.entries(schema.data.shape);
-const frontmatter: CollectionEntry<'wiki'>['data'] = {
-  type: 'building',
-  id: 'alchemist',
-  name: 'Alchemist Laboratory',
-  plural: 'Alchemist Laboratories',
-  description:
-    'The Alchemist Laboratory is where your workers can brew potions, harvest netherwart and harvest mistletoe.',
-  icon: {
-    src: '@assets/images/wiki/items/minecolonies/blockhutalchemist.png',
-    width: 1,
-    height: 1,
-    format: 'png'
-  },
-  workers: [{ collection: 'workers', id: 'alchemist' }],
-  recipes: ['minecolonies/blockhutalchemist']
-};
-
 const json = await buildJson(schema, frontmatter);
 ---
 
@@ -53,15 +43,15 @@ const json = await buildJson(schema, frontmatter);
           <tr>
             <th>Field</th>
             <th>Type</th>
-            <th>Required</th>
             <th>Default value</th>
             <th>Description</th>
           </tr>
         </thead>
         <tbody>
-          {fields.map(([field, def]) => <SchemaField field={field} definition={def} frontmatter={frontmatter} />)}
+          {schema.data.fields.map((field) => <SchemaField field={field} frontmatter={frontmatter} />)}
         </tbody>
       </table>
+      <span>* = Required field</span>
     </div>
     <div class="content content-json">
       <Fragment set:html={json} />

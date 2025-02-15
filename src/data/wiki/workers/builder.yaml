@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Athletics
     effect: Faster block breaking
-primaryBuilding: buildings/builder
+primaryBuilding: builder

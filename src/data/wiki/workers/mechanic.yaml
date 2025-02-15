@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Agility
     effect: Faster crafting
-primaryBuilding: buildings/mechanic
+primaryBuilding: mechanic

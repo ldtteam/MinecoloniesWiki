@@ -12,7 +12,6 @@ interface SearchEntry {
 }
 
 const pages = await getCollection('wiki');
-const container = await AstroContainer.create();
 
 async function createSearchEntry(page: CollectionEntry<'wiki'>): Promise<SearchEntry> {
   const title = await getWikiTitle(page);

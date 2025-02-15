@@ -10,4 +10,4 @@ traits:
   secondary:
     name: Focus
     effect: Faster crafting
-primaryBuilding: buildings/glassblower
+primaryBuilding: glassblower
