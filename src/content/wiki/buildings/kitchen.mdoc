@@ -14,6 +14,16 @@ recipes:
 The {% building /%} is where the {% worker /%} will create food for your citizens.
 Food will be cooked when buildings request is, use this conjunction with your {% building name="cook" plural=true /%} to automatically keep your {% building name="cook" plural=true /%} stocked with food.
 
+> **Note:** The number of recipes you can teach the {% building /%} doubles per building level. So:
+
+| Building Level | Number of Recipes |
+| -------------- | ----------------- |
+| 1              | 10                |
+| 2              | 20                |
+| 3              | 40                |
+| 4              | 80                |
+| 5              | 160               |
+
 ## Interface
 
 {% building_gui_content_block_main order=1 /%}

@@ -1,7 +1,6 @@
 ---
 import WorkerNameInternal from '@components/wiki/names/WorkerName.astro';
 import { getEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
 import type { MarkdocWorkerComponent } from 'src/markdoc/workers';
 
 interface Props extends MarkdocWorkerComponent {
@@ -11,7 +10,6 @@ interface Props extends MarkdocWorkerComponent {
 
 const { frontmatter, name, building, plural = false } = Astro.props;
 
-const buildingIdFrontmatter = frontmatter?.type === 'building' ? frontmatter.id : undefined;
 const workerIdFrontmatter =
   frontmatter?.type === 'building' && frontmatter.workers?.length === 1 ? frontmatter.workers[0].id : undefined;
 
@@ -21,18 +19,7 @@ if (workerData === undefined) {
   throw new Error(`Worker with id ${workerTarget} does not exist.`);
 }
 
-let referenceBuilding = building ?? buildingIdFrontmatter ?? workerData.data.primaryBuilding.id;
-if (!referenceBuilding) {
-  const allBuildings = await getCollection('buildings', (building) =>
-    building.data.workers?.map<string>((m) => m.id).includes(workerTarget)
-  );
-  if (allBuildings.length !== 1) {
-    throw new Error(
-      `Worker name for ${workerTarget} requires a building argument because this worker is referenced in none or multiple buildings.`
-    );
-  }
-  referenceBuilding = allBuildings[0].id;
-}
+const referenceBuilding = building ?? workerData.data.primaryBuilding.id;
 const buildingData = await getEntry('buildings', referenceBuilding);
 if (buildingData === undefined) {
   throw new Error(`Building with id ${referenceBuilding} does not exist.`);
