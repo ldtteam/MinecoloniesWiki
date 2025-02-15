@@ -1,4 +1,4 @@
-name: Research Branch
+name: Research Effect
 path: "<namespace>/researches/effects/<effect-id>.json"
 fields:
   - key: effect
