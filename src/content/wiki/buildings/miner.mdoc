@@ -9,28 +9,14 @@ workers:
   - miner
 recipes:
   - minecolonies/blockhutminer
-settings:
-  - name: Recipe Mode
-    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
-    options:
-      - name: Priority
-        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
-      - name: Warehouse Stock
-        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
-  - name: Fill Block
-    description: Here you can select what block the Miner uses to fill in holes/gaps in the Mine. The default is the cobblestone block.
-  - name: Max Depth
-    description: Here you can overide the default maximum depth of the {building:miner}, if you don't want the {worker:miner} to dig as deep as the {building:miner} level allows. The default is -100.
-  - name: Use Shears
-    description: Whether the {worker:miner} will use shears to break certain blocks.
 ---
 
-The Mine is where you can hire a {% worker name="miner" /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
+The Mine is where you can hire a {% worker /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
 
 {% version name="1.20.1" after=true %}
-At the {% building /%}, the {% worker name="miner" /%} will mine for ores and materials. Once they are hired, they will first create a shaft downward.
+At the {% building /%}, the {% worker /%} will mine for ores and materials. Once they are hired, they will first create a shaft downward.
 
-The {% worker name="miner" /%} digs their shaft down until to the first mining level below it, increasing one further for each building level past 1.
+The {% worker /%} digs their shaft down until to the first mining level below it, increasing one further for each building level past 1.
 
 These mining levels are based on the ores you can find there most:
 | Ore     | Y-level |
@@ -52,19 +38,19 @@ If the miner builds their first platform between Y 48 and Y 16:
 - Level 2 can dig down to Y -16
 - Level 3 can dig down to bedrock
 
-Once the main shaft is completed, the {% worker name="miner" /%} will then branch out.
+Once the main shaft is completed, the {% worker /%} will then branch out.
 {% /version %}
 {% version name="1.20" before=true %}
-At the {% building /%}, the {% worker name="miner" /%} will mine for ores and materials. Once they are hired, they will first create a shaft downward to a specific depth depending on the level of the {% building /%}. Once the main shaft is completed, the {% worker name="miner" /%} will then branch out.
+At the {% building /%}, the {% worker /%} will mine for ores and materials. Once they are hired, they will first create a shaft downward to a specific depth depending on the level of the {% building /%}. Once the main shaft is completed, the {% worker /%} will then branch out.
 {% /version %}
 The miner will never dig further down than the Y-level specified in the "maximum depth" setting of the mine. It is by default set to -100, which effectively means bedrock level.
 
 
-While mining, sometimes the {% worker name="miner" /%} will get lucky and get an ore block instead of a basic stone block. The chance of getting "Lucky Ores" is set in the [config](/wiki/misc/configfile).
+While mining, sometimes the {% worker /%} will get lucky and get an ore block instead of a basic stone block. The chance of getting "Lucky Ores" is set in the [config](/wiki/misc/configfile).
 
 > **Note:** When the miner encounters air whilst building the shaft downwards, they don't make platforms there, as they think they encountered a cave. In particular, that means you should not help them with mining. Even though they skip platforms, they still check the Y-level against the depth threshold and stop digging down if they aren't allowed to dig down further.
 {% version name="1.20" before=true %}
-> **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the {% worker name="miner" /%} not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
+> **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the {% worker /%} not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1).  If you want your mine to be lower, you will need to upgrade it before the miner will work.
 
 {% version name="1.16.5" before=true %}
 | Building Level | Shaft Y Level |
@@ -93,14 +79,21 @@ While mining, sometimes the {% worker name="miner" /%} will get lucky and get an
 {% building_gui_content_block_stock order=3 /%}
 {% building_gui_content_block_required_resources order=4 /%}
 {% building_gui_content_block_custom order=5 header="levels" imageKey="levels" imageAlt="Levels" %}
-The level refers to the platforms the {% worker name="miner" /%} will place every 3 blocks down. Here you can assign what level of the {% building /%} the {% worker name="miner" /%} will create their mineshafts (nodes).
-If a level has a red number next to it, that means the {% worker name="miner" /%} is currently mining that level.
-The {% worker name="miner" /%} will ignore orders to mine at a specific level until the entire mineshaft is completed to the maximum depth their hut's level allows.
-You can also click Repair, to tell the {% worker name="miner" /%} to restore that level to its original state. This can be useful if a fire breaks out in the mineshaft.
+The level refers to the platforms the {% worker /%} will place every 3 blocks down. Here you can assign what level of the {% building /%} the {% worker /%} will create their mineshafts (nodes).
+If a level has a red number next to it, that means the {% worker /%} is currently mining that level.
+The {% worker /%} will ignore orders to mine at a specific level until the entire mineshaft is completed to the maximum depth their hut's level allows.
+You can also click Repair, to tell the {% worker /%} to restore that level to its original state. This can be useful if a fire breaks out in the mineshaft.
 {% /building_gui_content_block_custom %}
-{% building_gui_content_block_settings order=6 /%}
+{% building_gui_content_block_settings order=6 %}
+- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+  - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+  - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+- **Fill Block:** Here you can select what block the {% worker /%} uses to fill in holes/gaps in the schematic. The default is the dirt block.
+- **Max Depth:** Here you can overide the default maximum depth of the {% building /%}, if you don't want the {% worker /%} to dig as deep as the {% building /%} level allows. The default is -100.
+- **Use Shears:** Whether the {% worker /%} will use shears to break certain blocks.
+{% /building_gui_content_block_settings %}
 {% building_gui_content_block_custom order=7 header="guards" imageKey="guards" imageAlt="Guards" %}
-Here is where you can assign guards to patrol this {% building /%}. If assigned, they will patrol the level the {% worker name="miner" /%} is currently mining at, to help protect them from hostile mobs.
+Here is where you can assign guards to patrol this {% building /%}. If assigned, they will patrol the level the {% worker /%} is currently mining at, to help protect them from hostile mobs.
 Only guards set to the Patrol Mine task will show up here; tasks can be set in the {% building name="guardtower" /%} it's GUI ({% building name="barrackstower" plural=true /%} do not have the Patrol Mine task).
 
 The amount of guards you can assign to the mine changes based on the {% building /%} it's level.

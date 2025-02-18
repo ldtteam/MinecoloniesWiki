@@ -9,21 +9,9 @@ workers:
   - crusher
 recipes:
   - minecolonies/blockhutcrusher
-settings:
-  - name: Recipe Mode
-    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
-    options:
-      - name: Priority
-        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
-      - name: Warehouse Stock
-        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
-  - name: Item
-    description: Here you can set what item you want the Crusher to make. (See the above lists.)
-  - name: Daily Limit
-    description: This setting allows you to further limit the number of blocks that can be crushed in a day. The maximum is set by the hut level (see above).
 ---
 
-The Crusher's Hut is where the Crusher will take items and crush them into other blocks. The defaults are: 
+The {% building /%} is where the {% worker /%} will take items and crush them into other blocks. The defaults are: 
 
 | Starting Item | Created Item                 |
 | ------------- | ---------------------------- |
@@ -34,9 +22,9 @@ The Crusher's Hut is where the Crusher will take items and crush them into other
 | Gravel        | Sand                         |
 | Sand          | Clay                         |
 
-Note: By default the Crusher's ratio is 2:1, but there is a [research](/wiki/systems/research) in the {% building name="university" /%} to make them work on a 1:1 ratio.
+> **Note:** By default the {% worker /%} their ratio is 2:1, but by unlocking the {% research_link name="gildedhammer" /%} research in the {% building name="university" /%} you can make them work on a 1:1 ratio.
 
-The higher the level of the Crusher's Hut, the more daily output the Crusher can handle. So:
+The higher the level of the {% building /%}, the more daily output the {% worker /%} can handle. So:
 
 | Building Level | Daily Max |
 | -------------- | --------- |
@@ -51,4 +39,10 @@ The higher the level of the Crusher's Hut, the more daily output the Crusher can
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
 {% building_gui_content_block_tasks order=3 /%}
-{% building_gui_content_block_settings order=4 /%}
+{% building_gui_content_block_settings order=4 %}
+- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+  - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+  - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+- **Item:** Here you can set what item you want the {% worker /%} to make. (See the above lists.)
+- **Daily Limit:** This setting allows you to further limit the number of blocks that can be crushed in a day. The maximum value is set by the hut level (see above).
+{% /building_gui_content_block_settings %}

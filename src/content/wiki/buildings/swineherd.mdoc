@@ -9,16 +9,11 @@ workers:
   - swineherd
 recipes:
   - minecolonies/blockhutswineherd
-settings:
-  - name: Breeding
-    description: On by default. Here you can choose if the Swineherd will breed (and consequently kill) pigs.
-  - name: Feeding
-    description: On by default. Here you can choose if the Swineherd will feed baby animals, to let them grow up faster.
 ---
 
-The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food. You will have to capture and bring in two pigs to the Swineherd's Hut, as the Swineherd will not catch and bring in any pigs.
+The {% building /%} is where the {% worker /%} will breed and butcher pigs for food. You will have to capture and bring in two pigs to the {% building /%}, as the {% worker /%} will not catch and bring in any pigs.
 
-> **Note:** The Swineherd will only keep two pigs alive per hut level, so at level 5 they will have ten pigs in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat. So:
+> **Note:** The {% worker /%} will only keep two pigs alive per hut level, so at level 5 they will have ten pigs in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat. So:
 
 | Building Level | Pigs Housed |
 | -------------- | ----------- |
@@ -32,4 +27,7 @@ The Swineherd's Hut is where the Swineherd will breed and butcher pigs for food.
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_stock order=2 /%}
-{% building_gui_content_block_settings order=3 /%}
+{% building_gui_content_block_settings order=3 %}
+- **Breeding:** On by default. Here you can choose if the {% worker /%} will breed (and consequently kill) pigs.
+- **Feeding:** On by default. Here you can choose if the {% worker /%} will feed baby animals, to let them grow up faster.
+{% /building_gui_content_block_settings %}

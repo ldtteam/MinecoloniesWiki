@@ -9,20 +9,11 @@ workers:
   - shepherd
 recipes:
   - minecolonies/blockhutshepherd
-settings:
-  - name: Breeding
-    description: On by default. Here you can choose if the Shepherd will breed (and consequently kill) sheep.
-  - name: Feeding
-    description: On by default. Here you can choose if the Shepherd will feed baby animals, to let them grow up faster.
-  - name: Dyeing
-    description: On by default. Here you choose if the Shepherd will dye sheep random colors to get differently colored wool. (They do not require dye to do this.)
-  - name: Shearing
-    description: On by default. Here you can choose if the Shepherd will shear the sheep or not.
 ---
 
-The {% building /%} is where the {% worker name="shepherd" /%} will breed and butcher sheep for food and wool. You will have to capture and bring in two sheep to the {% building /%}, as the {% worker name="shepherd" /%} will not catch and bring in any sheep.
+The {% building /%} is where the {% worker /%} will breed and butcher sheep for food and wool. You will have to capture and bring in two sheep to the {% building /%}, as the {% worker /%} will not catch and bring in any sheep.
 
-> **Note:** The {% worker name="shepherd" /%} will only keep two sheep alive per hut level, so at level 5 they will have ten sheep in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and wool. So:
+> **Note:** The {% worker /%} will only keep two sheep alive per hut level, so at level 5 they will have ten sheep in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and wool. So:
 
 | Building Level | Sheep Housed |
 | -------------- | ------------ |
@@ -36,4 +27,9 @@ The {% building /%} is where the {% worker name="shepherd" /%} will breed and bu
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_stock order=2 /%}
-{% building_gui_content_block_settings order=3 /%}
+{% building_gui_content_block_settings order=3 %}
+- **Breeding:** On by default. Here you can choose if the {% worker /%} will breed (and consequently kill) sheep.
+- **Feeding:** On by default. Here you can choose if the {% worker /%} will feed baby animals, to let them grow up faster.
+- **Dyeing**: On by default. Here you choose if the {% worker /%} will dye sheep random colors to get differently colored wool. (They do not require dye to do this.)
+- **Shearing**: On by default. Here you can choose if the {% worker /%} will shear the sheep or not.
+{% /building_gui_content_block_settings %}

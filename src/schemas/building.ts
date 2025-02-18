@@ -11,22 +11,6 @@ export const buildingSchema = (image: ImageFunction) =>
       icon: image(),
       workers: reference('workers').array().optional(),
       recipes: reference('recipes').array().optional(),
-      singular: z.boolean().default(false),
-      settings: z
-        .array(
-          z.object({
-            name: z.string(),
-            description: z.string(),
-            options: z
-              .array(
-                z.object({
-                  name: z.string(),
-                  description: z.string()
-                })
-              )
-              .optional()
-          })
-        )
-        .optional()
+      singular: z.boolean().default(false)
     })
   );

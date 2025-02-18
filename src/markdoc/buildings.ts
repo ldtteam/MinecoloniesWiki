@@ -156,7 +156,7 @@ export const contentBlocks: Record<string, Tag> = {
   },
   settings: {
     render: component('@components/markdoc/content/blocks/Settings.astro'),
-    selfClosing: true,
+    selfClosing: false,
     attributes: defaultContentBlockAttributes,
     transform: injectFrontmatter
   },

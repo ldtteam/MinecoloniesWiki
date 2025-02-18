@@ -22,7 +22,7 @@ function extendNodeClasses(...extraClasses: string[]): Tag['transform'] {
   return result;
 }
 
-export const config: AstroMarkdocConfig = {
+const config: AstroMarkdocConfig = {
   tags: {
     building,
     worker,

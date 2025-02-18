@@ -9,24 +9,19 @@ workers:
   - composter
 recipes:
   - minecolonies/blockhutcomposter
-settings:
-  - name: Produce Dirt
-    description: Turning this on will make dirt instead of compost. It also occassionally produces podzol.
-  - name: Min Warehouse Stock
-    description: This is the minimum number of an item to be left in the warehouse before the hut will request and compost other items. The default is 16.
 ---
 
-The {% building /%} is where the {% worker name="composter" /%} will turn organic materials into {% item name="minecolonies/compost_barrel" /%} to make compost or dirt.
+The {% building /%} is where the {% worker /%} will turn organic materials into {% item name="minecolonies/compost_barrel" /%} to make {% item name="minecolonies/compost" /%} or dirt.
 
-**Note:** The higher the level of the {% building /%}, the more compost barrels the {% worker name="composter" /%} will be able to use. So:
+> **Note:** The higher the level of the {% building /%}, the more compost barrels the {% worker /%} will be able to use. So:
 
-| Building Level | Compost Barrels |
-| -------------- | --------------- |
-| 1              | 1               |
-| 2              | 2               |
-| 3              | 3               |
-| 4              | 4               |
-| 5              | 5               |
+| Building Level | {% item name="minecolonies/compost_barrel" /%} |
+| -------------- | ---------------------------------------------- |
+| 1              | 1                                              |
+| 2              | 2                                              |
+| 3              | 3                                              |
+| 4              | 4                                              |
+| 5              | 5                                              |
 
 ## Interface
 
@@ -34,4 +29,7 @@ The {% building /%} is where the {% worker name="composter" /%} will turn organi
 {% building_gui_content_block_item_list order=2 header="items to compost" imageKey="compost" imageAlt="Items to compost" %}
 Here you will see a list of all the items that were recognized for the {% building /%} to use, including modded items.
 {% /building_gui_content_block_item_list %}
-{% building_gui_content_block_settings order=3 /%}
+{% building_gui_content_block_settings order=3 %}
+- **Produce Dirt:** Turning this on will make {% item name="dirt" /%} instead of {% item name="minecolonies/compost" /%}. It also occassionally produces {% item name="podzol" /%}.
+- **Min Warehouse Stock:** This is the minimum number of an item to be left in the {% building name="warehouse" /%} before the hut will request and compost other items. The default is 16.
+{% /building_gui_content_block_settings %}

@@ -9,19 +9,11 @@ workers:
   - glassblower
 recipes:
   - minecolonies/blockhutglassblower
-settings:
-  - name: Recipe Mode
-    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
-    options:
-      - name: Priority
-        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
-      - name: Warehouse Stock
-        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 ---
 
 The Glassblower's Hut is where the Glassblower will smelt sand into glass and make glass panes from glass blocks. For the Glassblower to work, they must receive a request from another worker and have the necessary materials, including fuel if they're smelting sand into glass. The Glassblower's Hut must also have been taught the crafting recipe for glass panes.
 
-**Note:** The number of recipes you can teach the Glassblower's Hut doubles per building level. So:
+> **Note:** The number of recipes you can teach the Glassblower's Hut doubles per building level. So:
 
 | Building Level | Number of Recipes |
 | -------------- | ----------------- |
@@ -31,7 +23,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 | 4              | 80                |
 | 5              | 160               |
 
-**Note:** The higher the level of the Glassblower's Hut, the more furnaces the Glassblower will have available. The number of furnaces they *use* depends on their Creativity level. So:
+> **Note:** The higher the level of the Glassblower's Hut, the more furnaces the Glassblower will have available. The number of furnaces they *use* depends on their Creativity level. So:
 
 | Building Level | Furnaces |
 | -------------- | -------- |
@@ -41,7 +33,7 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 | 4              | 4        |
 | 5              | 5        |
 
-**Note:** The higher the Glassblower's Focus level, the faster things will smelt. At high levels, they can go *much* faster than the player!
+> **Note:** The higher the Glassblower's Focus level, the faster things will smelt. At high levels, they can go *much* faster than the player!
 
 ## Interface
 
@@ -51,4 +43,8 @@ The Glassblower's Hut is where the Glassblower will smelt sand into glass and ma
 {% building_gui_content_block_do_recipes order=4 /%}
 {% building_gui_content_block_fuel order=5 /%}
 {% building_gui_content_block_tasks order=6 /%}
-{% building_gui_content_block_settings order=7 /%}
+{% building_gui_content_block_settings order=7 %}
+- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+  - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+  - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+{% /building_gui_content_block_settings %}

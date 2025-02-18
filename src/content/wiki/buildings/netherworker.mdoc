@@ -9,19 +9,9 @@ workers:
   - netherminer
 recipes:
   - minecolonies/blockhutnetherworker
-settings:
-  - name: Recipe Mode
-    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
-    options:
-      - name: Priority
-        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
-      - name: Warehouse Stock
-        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
-  - name: Close portal on return
-    description: Tells the Nether Miner whether to close the portal or not when they return. Default is On.
 ---
 
-The Nether Mine is where the {% worker name="netherminer" /%} works. The Nether Miner travels into the Nether and mines resources found there.  The level of the hut determines what items Nether Miner brings back.
+The {% building /%} is where the {% worker /%} works. The {% worker /%} travels into [The Nether](https://minecraft.wiki/w/The_Nether) and mines resources found there. The level of the hut determines what items {% worker /%} brings back.
 
 - **Level 1:**  blaze rod, ender pearl, ghast tear, gold ingot, gold nugget, gravel, gunpowder, leather, magma cream, nether quartz ore, netherrack, porkchop, rotten flesh, soul sand, soul_soil.
 - **Level 2:**  All items from previous levels, plus brown mushroom, crimson fungus, crimson nylium, crimson stem, glowstone, nether wart, red mushroom.
@@ -29,16 +19,21 @@ The Nether Mine is where the {% worker name="netherminer" /%} works. The Nether 
 - **Level 4:**  All items from previous levels, plus blackstone, nether gold ore.
 - **Level 5:**  All items from previous levels, plus ancient debris.
 
-The Nether Miner can also craft lava buckets.
+The {% worker /%} can also craft {% item name="lava_bucket" /%}.
 
-> **Note:** The portal in the Nether Mine will transport players to the Nether. However, the Nether Miner does not actually travel into the Nether, nor do they actually mine any blocks in the Nether.
+> **Note:** The portal in the {% building /%} will transport players to the Nether. However, the {% worker /%} does not actually travel into the Nether, nor do they actually mine any blocks in the Nether.
 
 ## Interface
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_crafting_recipes order=2 noTeach=true noRemove=true /%}
 {% building_gui_content_block_stock order=3 /%}
-{% building_gui_content_block_settings order=4 /%}
+{% building_gui_content_block_settings order=4 %}
+- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+  - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+  - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+- **Close portal on return:** Tells the {% worker / %} whether to close the portal or not when they return. Default is On.
+{% /building_gui_content_block_settings %}
 {% building_gui_content_block_item_list order=5 header="food" imageKey="food" imageAlt="Food list" defaultOn=true %}
 Listed here are items that can be used by the {% worker name="netherminer" /%} as food while they are traveling in the nether.
 Simply turn on any that you want your {% worker name="netherminer" /%} to eat, and a {% worker name="courier" /%} will deliver those items when they need food.

@@ -10,16 +10,6 @@ workers:
 recipes:
   - minecolonies/blockhutfarmer
   - minecolonies/field
-settings:
-  - name: Request Fertilizer
-    description: On by default. This lets you choose whether the Farmer will request fertilizer.
-  - name: Recipe Mode
-    description: This is unlocked by researching Warehouse Master in the University. This changes how multiple recipes for the same item are prioritized.
-    options:
-      - name: Priority
-        description: This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
-      - name: Warehouse Stock
-        description: The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 ---
 
 The Farm is where the Farmer will grow crops for your colony. The crops the Farmer currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods (as long as they have normal growth behavior). Before the Farmer can start, you will have to give the Farmer a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
@@ -59,6 +49,11 @@ You can click on the arrows to increase the size of the area the Farmer will far
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_crafting_recipes order=2 /%}
 {% building_gui_content_block_tasks order=3 /%}
-{% building_gui_content_block_settings order=4 /%}
+{% building_gui_content_block_settings order=4 %}
+- **Request Fertilizer:** On by default. This lets you choose whether the {% worker /%} will request fertilizer.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+  - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
+  - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
+{% /building_gui_content_block_settings %}
 {% building_gui_content_block_fields order=5 /%}
 {% building_gui_content_block_stock order=6 /%}

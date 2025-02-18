@@ -9,16 +9,11 @@ workers:
   - rabbitherder
 recipes:
   - minecolonies/blockhutrabbithutch
-settings:
-  - name: Breeding
-    description: On by default. Here you can choose if the Rabbit Herder will breed (and consequently kill) rabbits.
-  - name: Feeding
-    description: On by default. Here you can choose if the Rabbit Herder will feed baby animals, to let them grow up faster.
 ---
 
-The Rabbit Hutch is where the Rabbit Herder will raise and butcher rabbits. You will have to capture and bring in two rabbits to the Rabbit Hutch, as the Rabbit Herder will not catch and bring in any rabbits.
+The {% building /%} is where the {% worker /%} will raise and butcher rabbits. You will have to capture and bring in two rabbits to the {% building /%}, as the {% worker /%} will not catch and bring in any rabbits.
 
-> **Note:** The Rabbit Herder will only keep two rabbits alive per hut level, so at level 5 they will have ten rabbits in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and other drops.
+> **Note:** The {% worker /%} will only keep two rabbits alive per hut level, so at level 5 they will have ten rabbits in their holding pens to breed and butcher. This means they will be faster at producing and collecting meat and other drops.
 
 | Building Level | Rabbits Housed |
 | -------------- | -------------- |
@@ -32,4 +27,7 @@ The Rabbit Hutch is where the Rabbit Herder will raise and butcher rabbits. You 
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_stock order=2 /%}
-{% building_gui_content_block_settings order=3 /%}
+{% building_gui_content_block_settings order=3 %}
+- **Breeding:** On by default. Here you can choose if the {% worker /%} will breed (and consequently kill) rabbits.
+- **Feeding:** On by default. Here you can choose if the {% worker /%} will feed baby animals, to let them grow up faster.
+{% /building_gui_content_block_settings %}

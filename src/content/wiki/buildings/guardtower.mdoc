@@ -11,31 +11,6 @@ workers:
   - knight
 recipes:
   - minecolonies/blockhutguardtower
-settings:
-  - name: Task
-    description: This is where you can choose if you want the Guard to patrol, follow, or guard.
-    options:
-      - name: Patrol
-        description: The guard will patrol an area you designate in **Patrol Settings**.
-      - name: Guard
-        description: You can set one area for the Guard to stay in. When you click "Set Target", you will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate the guard location.
-      - name: Follow
-        description: The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
-      - name: Patrol Mine
-        description: The Guard will patrol the level of a {building:miner}. You must also assign that level in the Mine GUI.
-  - name: Retreat on low health
-    description: Here you can choose if the Guard will attempt to retreat when they have low health.
-  - name: Hire Trainee
-    description: If there is a vacancy at this tower, a new Knight or Archer can be hired from the respective training facility ({building:archery} for {worker:archer:plural} and {building:combatacademy} for {worker:knight:plural}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {building:townhall} GUI.
-  - name: Patrol Mode
-    description: This is where you can choose how you want the Guard to patrol.
-    options:
-      - name: Automatic
-        description: The Guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
-      - name: Manual
-        description: You can set the patrol route when you click on **Set Positions**. You will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate patrol positions for the Guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
-  - name: Follow Mode
-    description: This is where you can choose how you want the Guard to follow you. If you choose **Loose Grouping**, the Guard will stay close to you, but not as close as if you choose **Tight Grouping**.
 ---
 
 The Guard Tower will employ and house one Guard to protect your colony. The new Guard will need a bed in a house in order to spawn. However, once they are hired at the Guard Tower, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit). Colonists like feeling safe, so building Guard Towers close to colonists' work and homes can improve their [happiness](/wiki/systems/happinessandsaturation). Additionally, if you place Guard Towers near your colony border and level them up, your border will [expand](/wiki/systems/border).
@@ -58,4 +33,17 @@ The Guard will patrol a set distance around their tower, which is based on their
 Click the **Obtain Tools** button to get the Guard Scepter. Right-clicking on a block with the Guard Scepter will set it as a guard spot or a patrol point.
 {% /building_gui_content_block_custom %}
 {% building_gui_content_block_hostiles order=4 /%}
-{% building_gui_content_block_settings order=5 /%}
+{% building_gui_content_block_settings order=5 %}
+- **Task:** This is where you can choose if you want the guard to patrol, follow, or guard.
+  - **Patrol:** The guard will patrol an area you designate in **Patrol Settings**.
+  - **Guard:** You can set one area for the guard to stay in. When you click "Set Target", you will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate the guard location.
+  - **Follow:** The guard will follow you around as your personal bodyguard, protecting you or fighting alongside you. They will even go outside the colony when following! You can designate how they follow you in **Follow Settings**.
+- **Retreat on low health:** Here you can choose if the Guard will attempt to retreat when they have low health.
+- **Hire Trainee:** If there is a vacancy at this tower, a new {% worker name="knight" /%} or {% worker name="archer" /%} can be hired from the respective training facility ({% building name="combatacademy" /%} for {% worker name="knight" plural=true /%} and {% building name="archery" /%} for {% worker name="archer" /%}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building name="townhall" /%} GUI.
+- **Patrol Mode:** This is where you can choose how you want the guard to patrol. Only available when the **Task** is set to **Patrol**.
+  - **Automatic:** The guard will patrol from hut to hut and back to their tower. They will only patrol huts within the patrol range of their tower.
+  - **Manual:** You can set the patrol route when you click on **Set Positions**. You will be taken to the **Selection Tools** tab, where you can get the the Guard Scepter and designate patrol positions for the guard to patrol between. To delete patrol positions, simply get a new Guard Scepter and click a new patrol position. The old ones should disappear.
+- **Follow Mode:** This is where you can choose how you want the guard to follow you. Only available when the **Task** is set to **Follow**.
+  - **Loose Grouping:** The guard will stay a decent range away from you.
+  - **Tight Grouping:** The guard will stay relatively close to you.
+{% /building_gui_content_block_settings %}
