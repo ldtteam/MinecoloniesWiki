@@ -3,6 +3,16 @@ entries:
   website:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-02-18T13:51:09.879672613Z"
+    description: The helm chart for deploying the minecolonies website.
+    digest: 62665051b8c52d1eed77a525d6815bb5b3b7f9e4f046acd2d885f1a8050d12bb
+    name: website
+    type: application
+    urls:
+    - https://github.com/ldtteam/MinecoloniesWiki/releases/download/website-v0.0.28/website-v0.0.28.tgz
+    version: v0.0.28
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-02-18T13:46:40.000597431Z"
     description: The helm chart for deploying the minecolonies website.
     digest: 6a8304702e20a0d6e4d13a2dcda5a16d38b20a28adf7097cdc22765f7468751b
@@ -171,4 +181,4 @@ entries:
     urls:
     - https://github.com/ldtteam/MinecoloniesWiki/releases/download/website-v0.0.2/website-v0.0.2.tgz
     version: v0.0.2
-generated: "2025-02-18T13:46:40.000724529Z"
+generated: "2025-02-18T13:51:09.879794179Z"
