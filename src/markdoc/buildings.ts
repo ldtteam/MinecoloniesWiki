@@ -183,5 +183,11 @@ export const contentBlocks: Record<string, Tag> = {
     selfClosing: true,
     attributes: defaultContentBlockAttributes,
     transform: injectFrontmatter
+  },
+  statistics: {
+    render: component('@components/markdoc/content/blocks/Statistics.astro'),
+    selfClosing: true,
+    attributes: defaultContentBlockAttributes,
+    transform: injectFrontmatter
   }
 };

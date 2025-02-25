@@ -1,0 +1,17 @@
+---
+import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
+
+import type { BaseBuildingContentBlockProps } from '../types';
+
+type Props = BaseBuildingContentBlockProps;
+---
+
+<BuildingContentBlock {...Astro.props} header="statistics" imageKey="statistics" imageAlt="Building statistics">
+  Statistics are simple values like "X fish caught", "Y logs cut", "Z blocks mined", etc. You can switch between
+  <ul>
+    <li>Yesterday</li>
+    <li>Last week</li>
+    <li>Last 100 days</li>
+    <li>All time</li>
+  </ul>
+</BuildingContentBlock>
