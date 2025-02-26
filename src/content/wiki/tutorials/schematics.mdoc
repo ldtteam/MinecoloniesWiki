@@ -355,9 +355,9 @@ You should always apply a `groundlevel` tag using the {% item name="structurize/
 | {% building name="stonesmeltery" /%} | 1 furnace per level                                                                                                        |                                                                                                                                            |
 | {% building name="tavern" /%}        | 4 beds and a dining room                                                                                                   | {% item_page name="barrels" /%}                                                                                                            |
 | {% building name="university" /%}    | Bookshelves                                                                                                                |                                                                                                                                            |
-| {% building name="warehouse" /%}     | {% item name="minecolonies/rack" /%} (more each level)                                                                     |                                                                                                                                            |
+| {% building name="warehouse" /%}     | {% item name="minecolonies/blockminecoloniesrack" /%} (more each level)                                                    |                                                                                                                                            |
 
-It's usually recommended to include a few {% item name="minecolonies/rack" /%}s in the various crafter's huts (and more in the {% building name="builder" /%}). A rough guide might be to include 0-1 at level 1, then add 1-2 per level — but you can vary this quite a bit based on your design, layout, and playtesting.
+It's usually recommended to include a few {% item name="minecolonies/blockminecoloniesrack" /%}s in the various crafter's huts (and more in the {% building name="builder" /%}). A rough guide might be to include 0-1 at level 1, then add 1-2 per level — but you can vary this quite a bit based on your design, layout, and playtesting.
 
 ## Level Requirements for Overworld Styles
 
@@ -471,7 +471,7 @@ Percentage based harvesting fields will attempt to place a minimum percentage of
 
 - Make all levels of a hut have the same footprint for x, y, and z
 - Place the hut block in the same location with the same rotation
-- Make sure all {% item name="minecolonies/rack" /%} and furnaces are in the same location through all levels (to prevent the contents spilling out when they're getting moved)
+- Make sure all {% item name="minecolonies/blockminecoloniesrack" /%} and furnaces are in the same location through all levels (to prevent the contents spilling out when they're getting moved)
 - Use {% item_page name="placeholderblocks" /%} where you want to keep any existing block (including from level to level), like the {% building name="barrackstower" /%} in the {% building name="barracks" /%} schematic
 - Use {% item_page name="placeholderblocks" /%} at or below ground level
 - Place a `groundlevel` tag at ground level if your hut isn't sitting directly on the ground.

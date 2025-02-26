@@ -2,14 +2,14 @@ import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { isFullEntry, type PartialCollectionEntry } from './util';
 
-export interface DataForVersions {
-  value: string;
+export interface DataForVersions<T> {
+  value: T;
   versions: CollectionEntry<'versions'>[];
 }
 
-export interface VersionedResult {
-  highestValue: string;
-  values: DataForVersions[];
+export interface VersionedResult<T> {
+  highestValue: T;
+  values: DataForVersions<T>[];
 }
 
 export async function isVersionHigherOrSame(

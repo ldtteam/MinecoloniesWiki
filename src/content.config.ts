@@ -2,6 +2,7 @@ import { file, glob } from 'astro/loaders';
 import { defineCollection, type ImageFunction, reference, z } from 'astro:content';
 
 import { buildingLoader } from './loaders/building-loader';
+import { itemLoader } from './loaders/item-loader';
 import { researchEffectsLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
 import { buildingSchema } from './schemas/building';
 import { itemSchema, tagSchema } from './schemas/item';
@@ -133,7 +134,7 @@ const workersCollection = defineCollection({
 });
 
 const itemsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/items' }),
+  loader: itemLoader(),
   schema: ({ image }) => itemSchema(image)
 });
 

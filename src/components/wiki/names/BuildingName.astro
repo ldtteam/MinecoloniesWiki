@@ -14,9 +14,9 @@ const { building, link = false, plural = false } = Astro.props;
 {
   link ? (
     <a href={`/wiki/buildings/${building.id}`}>
-      <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+      <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} default="" />
     </a>
   ) : (
-    <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+    <VersionOverride value={building.data} fieldGetter={(v) => (plural ? v.plural : v.name)} default="" />
   )
 }

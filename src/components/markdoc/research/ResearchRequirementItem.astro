@@ -1,6 +1,6 @@
 ---
-import { getItemData } from '@utils/items';
 import { type CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 import VersionedItemName from '../names/items/VersionedItemName.astro';
 
@@ -9,21 +9,13 @@ interface Props {
 }
 
 const { requirement } = Astro.props;
+
+const items = await Promise.all(requirement.items.map((item) => getEntry(item)));
 ---
 
 <li>
   <b>{requirement.quantity}</b>x
   <span>
-    {
-      requirement.items.map(async (item) => {
-        try {
-          const names = await getItemData(item);
-          return <VersionedItemName data={names} />;
-        } catch {
-          console.warn(`Unable to get item data for "${item}", falling back to raw string.`);
-          return <p>{item}</p>;
-        }
-      })
-    }
+    {items.map(async (item) => <VersionedItemName item={item} />)}
   </span>
 </li>

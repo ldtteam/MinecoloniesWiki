@@ -193,14 +193,19 @@ async function parseRequirements(
       case 'minecolonies:item_simple':
         values.push({
           type: 'item',
-          items: [requirement.item.replace(/\w+:/g, '')],
+          items: [
+            {
+              collection: 'items',
+              id: requirement.item.replace(':', '/')
+            }
+          ],
           quantity: requirement.quantity
         });
         break;
       case 'minecolonies:item_list':
         values.push({
           type: 'item',
-          items: requirement.item.items.map((m) => m.replace(/\w+:/g, '')),
+          items: requirement.item.items.map((m) => ({ collection: 'items', id: m.replace(':', '/') })),
           quantity: requirement.quantity
         });
         break;

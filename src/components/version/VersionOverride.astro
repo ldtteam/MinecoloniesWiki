@@ -4,14 +4,20 @@ import { getOverrideValues } from '@utils/override';
 
 import VersionContent from './VersionContent.astro';
 
-interface Props<V, O extends Overrideable<V>> {
+interface Props<V, O extends Overrideable<V>, T> {
   value: O;
-  fieldGetter: OverrideableFieldGetter<O>;
+  fieldGetter: OverrideableFieldGetter<O, T>;
+  default: T;
   inline?: boolean;
 }
 
-const { value, fieldGetter, inline = true } = Astro.props as Props<unknown, Overrideable<unknown>>;
-const values = await getOverrideValues(value, fieldGetter);
+const {
+  value,
+  fieldGetter,
+  default: def,
+  inline = true
+} = Astro.props as Props<unknown, Overrideable<unknown>, unknown>;
+const values = await getOverrideValues(value, fieldGetter, def);
 ---
 
 {

@@ -20,7 +20,7 @@ export const researchSchema = z.object({
       }),
       z.object({
         type: z.literal('item'),
-        items: z.string().array(),
+        items: reference('items').array(),
         quantity: z.number().default(1)
       }),
       z.object({

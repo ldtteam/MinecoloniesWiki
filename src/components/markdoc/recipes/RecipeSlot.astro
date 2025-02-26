@@ -1,10 +1,10 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import { getItemData, getItemReference, type ItemReference, type ItemVersionData } from '@utils/items';
 import { isCollectionEntry } from '@utils/util';
-import { getSortedVersions } from '@utils/version';
-import { Image } from 'astro:assets';
+import type { ReferenceDataEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 import type { RecipeItems } from 'src/schemas/recipe';
+
+import RecipeSlotIcon from './RecipeSlotIcon.astro';
 
 interface Props {
   items: RecipeItems;
@@ -14,77 +14,29 @@ interface Props {
 
 const { items, amount = 1, large = false } = Astro.props;
 
-const versions = await getSortedVersions();
-
-let parsedItems: ItemReference[];
+let parsedItems: ReferenceDataEntry<'items'>[];
 if (items === null) {
   parsedItems = [];
 } else if (Array.isArray(items)) {
   parsedItems = items;
 } else {
-  const reference = await getItemReference(items);
-  if (typeof reference === 'string') {
-    parsedItems = [reference];
-  } else if (isCollectionEntry(reference, 'items')) {
-    parsedItems = [reference];
+  if (isCollectionEntry(items, 'items')) {
+    parsedItems = [items];
   } else {
-    parsedItems = reference.data;
+    const tag = await getEntry(items);
+    parsedItems = tag.data;
   }
 }
-const itemResults = await Promise.all(parsedItems.filter((f) => f !== null).map((item) => getItemData(item, true)));
+
+const itemResults = await Promise.all(parsedItems.filter((f) => f !== null).map((item) => getEntry(item)));
 ---
 
 {
   (
     <div class:list={['invslot', large ? 'invslot-large' : '']}>
-      {versions.map((version) => {
-        const itemData = itemResults
-          .map((itemResult) =>
-            itemResult.data.find((f) => f.versions.map((v) => v.data.order).includes(version.data.order))
-          )
-          .filter((f): f is ItemVersionData => f !== undefined);
-
-        return (
-          <VersionContent versions={[version]} class="w-100">
-            <swiper-container
-              init="false"
-              loop={itemData.length > 1}
-              autoplay
-              autoplay-delay="1000"
-              autoplay-pause-on-mouse-enter
-              effect="fade"
-              no-swiping
-              no-swiping-selector="*"
-              class="invslot-item"
-              data-recipe-slot
-              data-recipe-version={version.data.order}
-            >
-              {itemData.map((item) => (
-                <swiper-slide>
-                  {item.icons.map((icon) => (
-                    <div class="invslot-wrapper">
-                      {typeof icon === 'string' ? (
-                        <img
-                          src={icon}
-                          alt={item.name}
-                          loading="lazy"
-                          decoding="async"
-                          width={32}
-                          height={32}
-                          class="inv-sprite"
-                          title={item.name}
-                        />
-                      ) : (
-                        <Image src={icon} alt={item.name} width={32} height={32} class="inv-sprite" title={item.name} />
-                      )}
-                    </div>
-                  ))}
-                </swiper-slide>
-              ))}
-            </swiper-container>
-          </VersionContent>
-        );
-      })}
+      {itemResults.map((item) => (
+        <RecipeSlotIcon item={item} />
+      ))}
       {amount > 1 && (
         <div class="invslot-stacksize">
           <span>{amount}</span>

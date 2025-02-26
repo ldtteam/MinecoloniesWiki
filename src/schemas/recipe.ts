@@ -1,6 +1,9 @@
 import { reference, z } from 'astro:content';
 
-const recipeItems = z.string().or(z.array(z.string())).or(z.null());
+const recipeItems = reference('tags')
+  .or(reference('items'))
+  .or(z.array(reference('items')))
+  .or(z.null());
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),
@@ -49,7 +52,7 @@ const craftingConditionTypes = z.discriminatedUnion('type', [buildingCraftingCon
 
 export const recipeSchema = recipeTypes.and(
   z.object({
-    output: z.string(),
+    output: reference('items'),
     amount: z.number().default(1),
     conditions: z.array(craftingConditionTypes).default([])
   })

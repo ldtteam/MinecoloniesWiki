@@ -1,108 +1,93 @@
-// import type { ImageOutputFormat } from 'astro';
-// import { z } from 'astro/zod';
-// import { getImage } from 'astro:assets';
-// import { getCollection } from 'astro:content';
-// import minecraftData, { type Item } from 'minecraft-data';
-// import path from 'path';
-// import type { itemSchema } from 'src/schemas/item';
+import { getSortedVersions } from '@utils/version';
+import type { ImageOutputFormat } from 'astro';
+import { glob, type Loader } from 'astro/loaders';
+import { z } from 'astro/zod';
+import { getImage } from 'astro:assets';
+import minecraftData, { type Item } from 'minecraft-data';
+import type { itemSchema } from 'src/schemas/item';
 
-// import { getAllFilesInDirectory, parseYaml } from './file-utils';
+const unavailableMcItems: Item[] = [
+  {
+    id: -1,
+    name: 'water_bottle',
+    displayName: 'Water Bottle',
+    stackSize: 1
+  }
+];
 
-// const itemSchemaInternal = z.object({
-//   name: z.string(),
-//   icons: z.array(z.string())
-// });
+const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
+  crimson_stem: 'gif',
+  warped_stem: 'gif',
+  compass: 'gif'
+};
 
-// const unavailableMcItems: Item[] = [
-//   {
-//     id: -1,
-//     name: 'water_bottle',
-//     displayName: 'Water Bottle',
-//     stackSize: 1
-//   }
-// ];
+type RawItem = z.infer<ReturnType<typeof itemSchema>>;
 
-// const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
-//   crimson_stem: 'gif',
-//   warped_stem: 'gif',
-//   compass: 'gif'
-// };
+export function itemLoader(): Loader {
+  const globLoader = glob({ base: './src/data/wiki/items', pattern: '**/*.yaml' });
 
-// export async function itemLoaderMc() {
-//   const values: z.infer<ReturnType<typeof itemSchema>>[] = [];
+  return {
+    name: 'item-loader',
+    load: async (context) => {
+      context.store.clear();
 
-//   // Minecraft items
-//   const versions = await getCollection('versions');
-//   const mcDataValues = new Map<string, z.infer<ReturnType<typeof itemSchema>>['versions']>();
-//   for (const version of versions) {
-//     const mcData = minecraftData(version.id);
-//     if (mcData === null) {
-//       console.warn(`Version data for ${version.id} does not exist`);
-//       continue;
-//     }
-//     for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
-//       const itemId = 'minecraft/' + item.name;
-//       if (!mcDataValues.has(itemId)) {
-//         mcDataValues.set(itemId, []);
-//       }
+      // Mod items
+      await globLoader.load(context);
 
-//       const parsedItemName = item.displayName.replaceAll(' ', '_');
-//       const extension = imageExtensionOverrides[item.id] ?? 'png';
-//       const url = `https://minecraft.wiki/images/Invicon_${parsedItemName}.${extension}`;
+      // Minecraft items
+      const versions = await getSortedVersions().then((a) => a.toReversed());
+      for (const version of versions) {
+        const mcData = minecraftData(version.id);
+        if (mcData === null) {
+          console.warn(`Version data for ${version.id} does not exist`);
+          continue;
+        }
+        for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
+          const id = 'minecraft/' + item.name;
 
-//       const image = await getImage({
-//         src: url,
-//         width: 32,
-//         height: 32
-//       });
+          const image = await getImage({
+            src: `https://minecraft.wiki/images/Invicon_${item.displayName.replaceAll(' ', '_')}.${imageExtensionOverrides[item.id] ?? 'png'}`,
+            width: 32,
+            height: 32
+          });
 
-//       mcDataValues.get(itemId)?.push({
-//         name: item.displayName,
-//         icons: [image.options.src as ImageMetadata],
-//         version
-//       });
-//     }
-//   }
-//   values.push(
-//     ...mcDataValues.entries().map(([id, versions]) => ({
-//       id,
-//       versions
-//     }))
-//   );
+          const data = await context.parseData<RawItem>({
+            id,
+            data: {
+              id,
+              name: item.displayName,
+              description: '',
+              icons: [image.src]
+            }
+          });
 
-//   // Mod items
-//   const modItems = await getAllFilesInDirectory(itemSchemaInternal, './src/data/wiki/items', true, parseYaml);
-//   for (const [fileName, item] of Object.entries(modItems)) {
-//     const id = path.parse(fileName).name;
+          if (context.store.has(id)) {
+            const current = context.store.get<RawItem>(id);
+            if (current) {
+              if (current.data.overrides === undefined) {
+                current.data.overrides = [];
+              }
+              current.data.overrides.push({
+                ...data,
+                version
+              });
 
-//     const icons = await Promise.all(
-//       item.icons.map(
-//         async (icon) =>
-//           await getImage({
-//             src: icon,
-//             width: 32,
-//             height: 32
-//           }).then((img) => img.options.src as ImageMetadata)
-//       )
-//     );
-
-//     values.push({
-//       id,
-//       versions: [
-//         ...versions.map((version) => ({
-//           id,
-//           name: item.name,
-//           icons,
-//           version
-//         }))
-//       ]
-//     });
-//   }
-
-//   return values;
-// }
-
-// export const itemLoader = combine(
-//   simpleLoader('item-loader-mc')(itemLoaderMc),
-//   glob({ base: './src/data/wiki/items', pattern: '*.yaml' })
-// );
+              const digest = context.generateDigest(current.data);
+              context.store.set({
+                ...current,
+                digest
+              });
+            }
+          } else {
+            const digest = context.generateDigest(data);
+            context.store.set({
+              id,
+              data,
+              digest
+            });
+          }
+        }
+      }
+    }
+  };
+}

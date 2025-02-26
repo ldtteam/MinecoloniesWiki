@@ -19,7 +19,7 @@ export type Overrideable<V> = V & {
     }
   >;
 };
-export type OverrideableFieldGetter<V> = (value: Omit<V, 'overrides'>) => string | undefined;
+export type OverrideableFieldGetter<V, T> = (value: Omit<V, 'overrides'>) => T | undefined;
 
 export function overrideSchema<
   T extends ZodRawShape,
@@ -39,13 +39,14 @@ export function overrideSchema<
   });
 }
 
-export async function getOverrideValues<V, O extends Overrideable<V>>(
+export async function getOverrideValues<V, O extends Overrideable<V>, T>(
   value: O,
-  fieldGetter: OverrideableFieldGetter<O>
-): Promise<VersionedResult> {
+  fieldGetter: OverrideableFieldGetter<O, T>,
+  defaultValue: T
+): Promise<VersionedResult<T>> {
   const versions = await getSortedVersions();
-  const values = new Map<string, CollectionEntry<'versions'>[]>();
-  let highestValue = '';
+  const values = new Map<T, CollectionEntry<'versions'>[]>();
+  let highestValue = fieldGetter(value) ?? defaultValue;
   for (const version of versions) {
     const versionedValue = await getOverrideValue(value, fieldGetter, version);
     if (versionedValue === undefined) {
@@ -58,7 +59,7 @@ export async function getOverrideValues<V, O extends Overrideable<V>>(
     values.get(versionedValue)?.push(version);
     highestValue = versionedValue;
   }
-  return values.entries().reduce<VersionedResult>(
+  return values.entries().reduce<VersionedResult<T>>(
     (prev, [value, versions]) => {
       prev.values.push({
         value,
@@ -70,11 +71,11 @@ export async function getOverrideValues<V, O extends Overrideable<V>>(
   );
 }
 
-export async function getOverrideValue<V, O extends Overrideable<V>>(
+export async function getOverrideValue<V, O extends Overrideable<V>, T>(
   value: O,
-  fieldGetter: OverrideableFieldGetter<O>,
+  fieldGetter: OverrideableFieldGetter<O, T>,
   version: CollectionEntry<'versions'>
-): Promise<string | undefined> {
+): Promise<T | undefined> {
   let targetValue = fieldGetter(value);
   if (value.overrides) {
     for (const override of value.overrides) {

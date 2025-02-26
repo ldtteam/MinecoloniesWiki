@@ -1,7 +1,7 @@
 ---
 import ItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import VersionContent from '@components/version/VersionContent.astro';
-import { getItemData } from '@utils/items';
+import { getOverrideValues } from '@utils/override';
 import { Image } from 'astro:assets';
 import { getEntry } from 'astro:content';
 
@@ -13,32 +13,35 @@ interface Props {
   expand?: boolean;
 }
 
-const { item, expand = false } = Astro.props;
+const { item: itemId, expand = false } = Astro.props;
 
-const itemEntry = await getEntry('items', item);
-const itemData = itemEntry ? await getItemData(itemEntry, true) : await getItemData(item, true);
+const item = await getEntry('items', itemId);
+if (item === undefined) {
+  throw new Error(`Item '${itemId}' does not exist.`);
+}
 
-const recipeData = await getEntry('recipes', item);
+const recipeData = await getEntry('recipes', itemId);
+const iconsPerVersion = await getOverrideValues(item.data, (i) => i.icons, []);
 ---
 
 <Infobox class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
-  <ItemName slot="title" data={itemData} link={false} />
+  <ItemName slot="title" item={item} link={false} />
 
   <div class="text-center">
     {
-      itemData.data.map((item) => (
-        <VersionContent versions={item.versions}>
+      iconsPerVersion.values.map((icons) => (
+        <VersionContent versions={icons.versions}>
           <swiper-container
             pagination
             pagination-dynamic-bullets
-            autoplay={item.icons.length > 2}
+            autoplay={icons.value.length > 2}
             autoplay-delay="2000"
             autoplay-pause-on-mouse-enter
             autoplay-disable-on-interaction="false"
-            loop={item.icons.length > 1}
+            loop={icons.value.length > 1}
             loop-add-blank-slides
-            slides-per-view={item.icons.length > 1 ? '2' : '1'}
-            slides-per-group={item.icons.length > 1 ? '2' : '1'}
+            slides-per-view={icons.value.length > 1 ? '2' : '1'}
+            slides-per-group={icons.value.length > 1 ? '2' : '1'}
             no-swiping
             no-swiping-selector="*"
             width="300"
@@ -48,12 +51,12 @@ const recipeData = await getEntry('recipes', item);
               '--swiper-pagination-bottom': 0
             }}
           >
-            {item.icons.map((icon) => (
+            {icons.value.map((icon) => (
               <swiper-slide>
                 {typeof icon === 'string' ? (
-                  <img src={icon} alt={item.name} loading="lazy" decoding="async" width={150} />
+                  <img src={icon} alt={item.data.name + ' icon'} loading="lazy" decoding="async" width={150} />
                 ) : (
-                  <Image src={icon} alt={item.name} width={150} />
+                  <Image src={icon} alt={item.data.name + ' icon'} width={150} />
                 )}
               </swiper-slide>
             ))}

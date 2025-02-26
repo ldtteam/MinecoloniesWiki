@@ -1,10 +1,9 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getItemData } from './items';
 import { getOverrideValues } from './override';
 import type { VersionedResult } from './version';
 
-export type Title = string | VersionedResult;
+export type Title = string | VersionedResult<string>;
 
 interface WikiPageEntry {
   type: 'page';
@@ -27,14 +26,13 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
     return entry.data.title;
   } else if (entry.data.type === 'item') {
     const item = await getEntry(entry.data.item);
-    const itemData = await getItemData(item);
-    return itemData.defaultName;
+    return await getOverrideValues(item.data, (i) => i.name, '');
   } else if (entry.data.type === 'building') {
     const building = await getEntry('buildings', entry.data.id);
     if (building === undefined) {
       return entry.id;
     }
-    return await getOverrideValues(building.data, (v) => v.name);
+    return await getOverrideValues(building.data, (v) => v.name, '');
   }
 
   return entry.id;
@@ -58,22 +56,14 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
     const item = await getEntry(entry.data.item);
-    const itemData = await getItemData(item, true);
-    return itemData.data
-      .flatMap((m) => m.icons)
-      .map((m) => (typeof m === 'object' ? m.src : m))
-      .find((_) => true);
+    return item.data.icons.map((m) => (typeof m === 'object' ? m.src : m)).find(() => true);
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
     }
 
     const item = await getEntry(entry.data.items[0]);
-    const itemData = await getItemData(item, true);
-    return itemData.data
-      .flatMap((m) => m.icons)
-      .map((m) => (typeof m === 'object' ? m.src : m))
-      .find((_) => true);
+    return item.data.icons.map((m) => (typeof m === 'object' ? m.src : m)).find(() => true);
   } else if (entry.data.type === 'building') {
     return entry.data.icon.src;
   }

@@ -1,3 +1,4 @@
+id: field
 name: Scarecrow
 description: The Scarecrow is used to mark a farmland area for the Farmer. They can create farmland up to 5 blocks in every direction from the Scarecrow.
 icons:

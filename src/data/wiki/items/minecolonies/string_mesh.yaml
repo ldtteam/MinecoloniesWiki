@@ -1,3 +1,4 @@
+id: string_mesh
 name: String Mesh
 description: The String Mesh is used in the Sifter to allow the Sifter to gather certain materials from the input blocks.
 icons:

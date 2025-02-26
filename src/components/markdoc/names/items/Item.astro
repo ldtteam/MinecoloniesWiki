@@ -1,5 +1,5 @@
 ---
-import { getItemData } from '@utils/items';
+import { getItemLink } from '@utils/items';
 import { getEntry } from 'astro:content';
 
 import VersionedItemName from './VersionedItemName.astro';
@@ -11,11 +11,12 @@ interface Props {
 
 const { currentPage, name } = Astro.props;
 
-const itemEntry = await getEntry('items', name);
-const itemData = itemEntry ? await getItemData(itemEntry) : await getItemData(name);
-if (itemData.data.length === 0) {
+const item = await getEntry('items', name);
+if (item === undefined) {
   throw new Error(`Item '${name}' does not exist.`);
 }
+
+const itemLink = await getItemLink(item);
 ---
 
-<VersionedItemName data={itemData} link={'/wiki/' + currentPage !== itemData.link} />
+<VersionedItemName item={item} link={itemLink !== '/wiki/' + currentPage} />

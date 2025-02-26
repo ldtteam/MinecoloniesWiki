@@ -1,19 +1,22 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import type { ResultItemData } from '@utils/items';
+import VersionOverride from '@components/version/VersionOverride.astro';
+import { getItemLink } from '@utils/items';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  data: ResultItemData;
+  item: CollectionEntry<'items'>;
   link?: boolean;
 }
 
-const { data, link = true } = Astro.props;
+const { item, link = true } = Astro.props;
 ---
 
 {
-  data.data.map((name) => (
-    <VersionContent versions={name.versions} inline>
-      {link && data.link ? <a href={data.link}>{name.name}</a> : <span>{name.name}</span>}
-    </VersionContent>
-  ))
+  link ? (
+    <a href={await getItemLink(item)}>
+      <VersionOverride value={item.data} fieldGetter={(i) => i.name} default="" />
+    </a>
+  ) : (
+    <VersionOverride value={item.data} fieldGetter={(i) => i.name} default="" />
+  )
 }

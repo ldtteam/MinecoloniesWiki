@@ -1,4 +1,4 @@
-import type { CollectionEntry, CollectionKey } from 'astro:content';
+import type { CollectionEntry, CollectionKey, ReferenceDataEntry } from 'astro:content';
 
 export type EventRelative = 'start' | 'end' | undefined;
 
@@ -8,12 +8,7 @@ export type DeepPartial<T> = T extends object
     }
   : T;
 
-export type PartialCollectionEntry<C extends CollectionKey> =
-  | CollectionEntry<C>
-  | {
-      collection: C;
-      id: string;
-    };
+export type PartialCollectionEntry<C extends CollectionKey> = CollectionEntry<C> | ReferenceDataEntry<C>;
 
 export function isFullEntry<C extends CollectionKey>(entry: PartialCollectionEntry<C>): entry is CollectionEntry<C> {
   return 'data' in entry;

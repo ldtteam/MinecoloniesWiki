@@ -17,9 +17,9 @@ const buildingData = building ?? (await getEntry(worker.data.primaryBuilding));
 {
   link ? (
     <a href={`/wiki/buildings/${buildingData.id}`}>
-      <VersionOverride value={worker.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+      <VersionOverride value={worker.data} fieldGetter={(v) => (plural ? v.plural : v.name)} default="" />
     </a>
   ) : (
-    <VersionOverride value={worker.data} fieldGetter={(v) => (plural ? v.plural : v.name)} />
+    <VersionOverride value={worker.data} fieldGetter={(v) => (plural ? v.plural : v.name)} default="" />
   )
 }

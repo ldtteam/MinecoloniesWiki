@@ -15,7 +15,7 @@ async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], nod
     throw new Error(`Building with id ${name} does not exist.`);
   }
 
-  const namePerVersion = await getOverrideValues(buildingData.data, (v) => (plural ? v.plural : v.name));
+  const namePerVersion = await getOverrideValues(buildingData.data, (v) => (plural ? v.plural : v.name), '');
 
   data.hName = frontmatter.type !== 'building' || frontmatter.id !== buildingData.id ? 'a' : 'span';
   if (data.hName === 'a') {
