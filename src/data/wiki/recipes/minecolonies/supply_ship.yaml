@@ -1,44 +1,9 @@
 type: shaped
-row1:
-  item1:
-  item2:
-  item3:
 row2:
-  item1:
-    - oak_boat
-    - spruce_boat
-    - birch_boat
-    - jungle_boat
-    - acacia_boat
-    - dark_oak_boat
-  item2:
-  item3:
-    - oak_boat
-    - spruce_boat
-    - birch_boat
-    - jungle_boat
-    - acacia_boat
-    - dark_oak_boat
+  tag1: boats
+  tag3: boats
 row3:
-  item1:
-    - oak_boat
-    - spruce_boat
-    - birch_boat
-    - jungle_boat
-    - acacia_boat
-    - dark_oak_boat
-  item2:
-    - oak_boat
-    - spruce_boat
-    - birch_boat
-    - jungle_boat
-    - acacia_boat
-    - dark_oak_boat
-  item3:
-    - oak_boat
-    - spruce_boat
-    - birch_boat
-    - jungle_boat
-    - acacia_boat
-    - dark_oak_boat
+  tag1: boats
+  tag2: boats
+  tag3: boats
 output: minecolonies/supply_ship

@@ -2,4 +2,4 @@ id: scroll_guard_summon
 name: Spatial guard reinforcement scroll
 description: Special scroll that quickly summons guards to your location.
 icons:
-  - "@assets/images/wiki/items/minecolonies/scroll_guard_summon.png"
+  - minecolonies/scroll_guard_summon

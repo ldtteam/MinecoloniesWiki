@@ -2,4 +2,4 @@ id: blockhutalchemist
 name: Alchemist Hut Block
 description: The Hut Block for the Alchemist.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutalchemist.png"
+  - minecolonies/blockhutalchemist

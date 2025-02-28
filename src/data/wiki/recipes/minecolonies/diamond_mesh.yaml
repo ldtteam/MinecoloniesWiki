@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: diamond
+  - item: minecraft/diamond
 output: minecolonies/diamond_mesh
 conditions:
   - type: building

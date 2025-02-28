@@ -2,4 +2,4 @@ id: blockhuttavern
 name: Tavern Hut Block
 description: The Hut Block for the Tavern.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhuttavern.png"
+  - minecolonies/blockhuttavern

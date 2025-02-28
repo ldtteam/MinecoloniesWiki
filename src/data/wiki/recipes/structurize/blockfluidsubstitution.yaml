@@ -1,15 +1,13 @@
 type: shaped
 row1:
-  item1:
-  item2: logs
-  item3: stick
+  tag2: logs
+  item3: minecraft/stick
 row2:
-  item1: logs
-  item2: bucket_empty
-  item3: logs
+  tag1: logs
+  item2: minecraft/bucket
+  tag3: logs
 row3:
-  item1: stick
-  item2: logs
-  item3:
+  item1: minecraft/stick
+  tag2: logs
 output: structurize/blockfluidsubstitution
 amount: 32

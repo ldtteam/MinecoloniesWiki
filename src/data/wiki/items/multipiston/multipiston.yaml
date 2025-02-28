@@ -2,4 +2,4 @@ id: multipiston
 name: Multi Piston
 description: The Multi Piston is a special piston block that extend multiple blocks long in any of the 6 given directions.
 icons:
-  - "@assets/images/wiki/items/multipiston/multipiston.png"
+  - multipiston/multipiston

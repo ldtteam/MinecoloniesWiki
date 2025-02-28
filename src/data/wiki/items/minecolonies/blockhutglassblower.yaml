@@ -2,4 +2,4 @@ id: blockhutglassblower
 name: Glassblower Hut Block
 description: The Hut Block for the Glassblower.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutglassblower.png"
+  - minecolonies/blockhutglassblower

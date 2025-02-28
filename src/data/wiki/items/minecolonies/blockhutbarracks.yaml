@@ -2,4 +2,4 @@ id: blockhutbarracks
 name: Barracks Hut Block
 description: The Hut Block for the Barracks.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutbarracks.png"
+  - minecolonies/blockhutbarracks

@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: flint
+  - item: minecraft/flint
 output: minecolonies/flint_mesh
 conditions:
   - type: building

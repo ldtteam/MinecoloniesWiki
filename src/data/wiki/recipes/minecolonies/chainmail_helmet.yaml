@@ -1,14 +1,10 @@
 type: shaped
-row1:
-  item1:
-  item2:
-  item3:
 row2:
-  item1: iron_nugget
-  item2: iron_nugget
-  item3: iron_nugget
+  item1: minecraft/iron_nugget
+  item2: minecraft/iron_nugget
+  item3: minecraft/iron_nugget
 row3:
-  item1: iron_nugget
-  item2: iron_ingot
-  item3: iron_nugget
+  item1: minecraft/iron_nugget
+  item2: minecraft/iron_ingot
+  item3: minecraft/iron_nugget
 output: chainmail_helmet

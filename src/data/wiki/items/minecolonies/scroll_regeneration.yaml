@@ -2,4 +2,4 @@ id: scroll_regeneration
 name: Sacred Scroll of Regeneration
 description: Special scroll that gives you temporary extra regeneration.
 icons:
-  - "@assets/images/wiki/items/minecolonies/scroll_regeneration.png"
+  - minecolonies/scroll_regeneration

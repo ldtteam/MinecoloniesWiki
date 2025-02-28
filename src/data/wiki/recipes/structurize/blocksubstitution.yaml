@@ -1,15 +1,13 @@
 type: shaped
 row1:
-  item1: logs
-  item2: stick
-  item3:
+  tag1: logs
+  item2: minecraft/stick
 row2:
-  item1: stick
-  item2: iron_ingot
-  item3: stick
+  item1: minecraft/stick
+  item2: minecraft/iron_ingot
+  item3: minecraft/stick
 row3:
-  item1:
-  item2: stick
-  item3: logs
+  item2: minecraft/stick
+  tag3: logs
 output: structurize/blocksubstitution
 amount: 32

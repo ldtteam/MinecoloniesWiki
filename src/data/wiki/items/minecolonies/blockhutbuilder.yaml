@@ -2,4 +2,4 @@ id: blockhutbuilder
 name: Builder Hut Block
 description: The Hut Block for the Builder.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutbuilder.png"
+  - minecolonies/blockhutbuilder

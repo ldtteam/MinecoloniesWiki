@@ -1,9 +1,9 @@
 type: custom
 items:
-  - item: iron_ingot
+  - item: minecraft/iron_ingot
     amount: 6
-  - item: leather
-  - item: coal
+  - item: minecraft/leather
+  - item: minecraft/coal
     amount: 4
 output: minecolonies/plate_armor_legs
 conditions:

@@ -2,4 +2,4 @@ id: blockhutarchery
 name: Archery Hut Block
 description: The Hut Block for the Archery.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutarchery.png"
+  - minecolonies/blockhutarchery

@@ -2,4 +2,4 @@ id: blockhutconcretemixer
 name: Concrete Mixer's Hut Block
 description: The Hut Block for the Concrete Mixer's.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutconcretemixer.png"
+  - minecolonies/blockhutconcretemixer

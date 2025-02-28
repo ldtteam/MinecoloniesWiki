@@ -1,27 +1,40 @@
 import { reference, z } from 'astro:content';
 
-const recipeItems = reference('tags')
-  .or(reference('items'))
-  .or(z.array(reference('items')))
-  .or(z.null());
+const recipeItem = reference('items').or(reference('items').array());
+const recipeTag = reference('tags');
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),
-  row1: z.object({
-    item1: recipeItems,
-    item2: recipeItems,
-    item3: recipeItems
-  }),
-  row2: z.object({
-    item1: recipeItems,
-    item2: recipeItems,
-    item3: recipeItems
-  }),
-  row3: z.object({
-    item1: recipeItems,
-    item2: recipeItems,
-    item3: recipeItems
-  })
+  row1: z
+    .object({
+      item1: recipeItem.optional(),
+      item2: recipeItem.optional(),
+      item3: recipeItem.optional(),
+      tag1: recipeTag.optional(),
+      tag2: recipeTag.optional(),
+      tag3: recipeTag.optional()
+    })
+    .optional(),
+  row2: z
+    .object({
+      item1: recipeItem.optional(),
+      item2: recipeItem.optional(),
+      item3: recipeItem.optional(),
+      tag1: recipeTag.optional(),
+      tag2: recipeTag.optional(),
+      tag3: recipeTag.optional()
+    })
+    .optional(),
+  row3: z
+    .object({
+      item1: recipeItem.optional(),
+      item2: recipeItem.optional(),
+      item3: recipeItem.optional(),
+      tag1: recipeTag.optional(),
+      tag2: recipeTag.optional(),
+      tag3: recipeTag.optional()
+    })
+    .optional()
 });
 
 const customRecipe = z.object({
@@ -29,7 +42,8 @@ const customRecipe = z.object({
   items: z
     .array(
       z.object({
-        item: recipeItems,
+        item: recipeItem.optional(),
+        tag: recipeTag.optional(),
         amount: z.number().default(1)
       })
     )
@@ -58,4 +72,5 @@ export const recipeSchema = recipeTypes.and(
   })
 );
 
-export type RecipeItems = z.infer<typeof recipeItems>;
+export type RecipeTag = z.infer<typeof recipeTag>;
+export type RecipeItem = z.infer<typeof recipeItem>;

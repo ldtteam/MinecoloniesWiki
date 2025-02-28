@@ -1,22 +1,14 @@
 type: shaped
 row1:
-  item1: planks
+  tag1: planks
   item2: structurize/build_tool
-  item3: planks
+  tag3: planks
 row2:
-  item1: planks
-  item2:
-    - oak_door
-    - spruce_door
-    - birch_door
-    - jungle_door
-    - acacia_door
-    - dark_oak_door
-    - crimson_door
-    - warped_door
-  item3: planks
+  tag1: planks
+  tag2: wooden_doors
+  tag3: planks
 row3:
-  item1: planks
-  item2: planks
-  item3: planks
+  tag1: planks
+  tag2: planks
+  tag3: planks
 output: minecolonies/blockhutbuilder

@@ -2,4 +2,4 @@ id: deco_controller
 name: Decoration Controller
 description: The Decoration Controller is used to create decoration schematics.
 icons:
-  - "@assets/images/wiki/items/minecolonies/deco_controller.png"
+  - minecolonies/deco_controller

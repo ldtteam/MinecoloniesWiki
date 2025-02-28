@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: oak_log
+  - item: minecraft/oak_log
     amount: 5
 output: minecolonies/gate_wood
 conditions:

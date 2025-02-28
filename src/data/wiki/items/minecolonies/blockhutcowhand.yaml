@@ -2,4 +2,4 @@ id: blockhutcowhand
 name: Cowhand Hut Block
 description: The Hut Block for the Cowhand.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutcowhand.png"
+  - minecolonies/blockhutcowhand

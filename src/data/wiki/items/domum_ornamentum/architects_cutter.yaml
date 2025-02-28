@@ -2,4 +2,4 @@ id: architects_cutter
 name: Architects Cutter
 description: The Architects Cutter is where you create all of the custom blocks introduced by Domum Ornamentum.
 icons:
-  - "@assets/images/wiki/items/domum_ornamentum/architects_cutter.png"
+  - domum_ornamentum/architects_cutter

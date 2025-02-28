@@ -2,4 +2,4 @@ id: blockhutcomposter
 name: Composter Hut Block
 description: The Hut Block for the Composter.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutcomposter.png"
+  - minecolonies/blockhutcomposter

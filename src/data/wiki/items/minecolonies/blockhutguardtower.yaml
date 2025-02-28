@@ -2,4 +2,4 @@ id: blockhutguardtower
 name: Guard Tower Hut Block
 description: The Hut Block for the Guard Tower.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutguardtower.png"
+  - minecolonies/blockhutguardtower

@@ -2,4 +2,4 @@ id: blockhutmysticalsite
 name: Mystical Site Hut Block
 description: The Hut Block for the Mystical Site.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutmysticalsite.png"
+  - minecolonies/blockhutmysticalsite

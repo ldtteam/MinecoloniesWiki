@@ -1,15 +1,11 @@
 type: shaped
 row1:
-  item1: mossy_cobblestone
-  item2:
-  item3: mossy_cobblestone
+  item1: minecraft/mossy_cobblestone
+  item3: minecraft/mossy_cobblestone
 row2:
-  item1:
-  item2: mossy_cobblestone
-  item3:
+  item2: minecraft/mossy_cobblestone
 row3:
-  item1: mossy_cobblestone
-  item2:
-  item3: mossy_cobblestone
+  item1: minecraft/mossy_cobblestone
+  item3: minecraft/mossy_cobblestone
 output: domum_ornamentum/mossy_cobblestone_extra
 amount: 4

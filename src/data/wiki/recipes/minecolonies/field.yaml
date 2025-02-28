@@ -1,16 +1,12 @@
 type: shaped
 row1:
-  item1:
   item2:
-    - hay_block
-    - pumpkin
-  item3:
+    - minecraft/hay_block
+    - minecraft/pumpkin
 row2:
-  item1: stick
-  item2: leather
-  item3: stick
+  item1: minecraft/stick
+  item2: minecraft/leather
+  item3: minecraft/stick
 row3:
-  item1:
-  item2: stick
-  item3:
+  item2: minecraft/stick
 output: minecolonies/field

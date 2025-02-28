@@ -1,13 +1,21 @@
 ---
-import { isCollectionEntry } from '@utils/util';
-import type { ReferenceDataEntry } from 'astro:content';
-import { getEntry } from 'astro:content';
-import type { RecipeItems } from 'src/schemas/recipe';
+import VersionContent from '@components/version/VersionContent.astro';
+import ItemImage from '@components/wiki/items/ItemImage.astro';
+import { getOverrideValue } from '@utils/override';
+import { getSortedVersions } from '@utils/version';
+import { type CollectionEntry, getEntry, type ReferenceDataEntry } from 'astro:content';
+import type { RecipeItem, RecipeTag } from 'src/schemas/recipe';
 
-import RecipeSlotIcon from './RecipeSlotIcon.astro';
+interface ResultItem {
+  version: CollectionEntry<'versions'>;
+  items: Array<{
+    item: CollectionEntry<'items'>;
+    icon: string;
+  }>;
+}
 
 interface Props {
-  items: RecipeItems;
+  items: RecipeItem | RecipeTag | undefined;
   amount?: number;
   large?: boolean;
 }
@@ -15,28 +23,66 @@ interface Props {
 const { items, amount = 1, large = false } = Astro.props;
 
 let parsedItems: ReferenceDataEntry<'items'>[];
-if (items === null) {
+if (items === undefined) {
   parsedItems = [];
 } else if (Array.isArray(items)) {
   parsedItems = items;
+} else if ('collection' in items && items.collection === 'tags') {
+  const tag = await getEntry(items);
+  parsedItems = tag.data;
 } else {
-  if (isCollectionEntry(items, 'items')) {
-    parsedItems = [items];
-  } else {
-    const tag = await getEntry(items);
-    parsedItems = tag.data;
-  }
+  parsedItems = [items];
 }
 
-const itemResults = await Promise.all(parsedItems.filter((f) => f !== null).map((item) => getEntry(item)));
+const allItems = await Promise.all(parsedItems.filter((f) => f !== null).map((item) => getEntry(item)));
+
+const versions = await getSortedVersions();
+const results: ResultItem[] = [];
+for (const version of versions) {
+  const itemResults: ResultItem['items'] = [];
+  for (const itemResult of allItems) {
+    const icons = (await getOverrideValue(itemResult.data, (f) => f.icons, version)) ?? [];
+    for (const icon of icons) {
+      itemResults.push({
+        item: itemResult,
+        icon
+      });
+    }
+  }
+  results.push({
+    version,
+    items: itemResults
+  });
+}
 ---
 
 {
   (
     <div class:list={['invslot', large ? 'invslot-large' : '']}>
-      {itemResults.map((item) => (
-        <RecipeSlotIcon item={item} />
+      {results.map((result) => (
+        <VersionContent versions={[result.version]} class="w-100">
+          <swiper-container
+            loop={result.items.length > 1}
+            autoplay
+            autoplay-delay="1000"
+            effect="fade"
+            no-swiping
+            no-swiping-selector="*"
+            class="invslot-item"
+            data-recipe-slot
+            data-recipe-version={result.version.data.order}
+          >
+            {result.items.map((item) => (
+              <swiper-slide lazy="true">
+                <div class="invslot-wrapper">
+                  <ItemImage icon={item.icon} alt={item.item.data.name + ' icon'} width={32} height={32} />
+                </div>
+              </swiper-slide>
+            ))}
+          </swiper-container>
+        </VersionContent>
       ))}
+
       {amount > 1 && (
         <div class="invslot-stacksize">
           <span>{amount}</span>
@@ -45,15 +91,13 @@ const itemResults = await Promise.all(parsedItems.filter((f) => f !== null).map(
     </div>
   )
 }
-
 <script>
   import type { SwiperContainer } from 'swiper/element';
 
   function updateSwipers(version: string) {
     const swipers = document.querySelectorAll<SwiperContainer>('swiper-container[data-recipe-slot]');
     swipers.forEach((swiper) => {
-      swiper.initialize();
-      if (swiper.dataset.recipeVersion === version) {
+      if (swiper.dataset.recipeVersion?.toString() === version.toString()) {
         swiper.swiper.enable();
       } else {
         swiper.swiper.disable();

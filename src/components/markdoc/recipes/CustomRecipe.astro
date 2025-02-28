@@ -11,7 +11,7 @@ const { recipe } = Astro.props;
 ---
 
 <div class="inputs">
-  {recipe.items.map((item) => <RecipeSlot items={item.item} amount={item.amount} />)}
+  {recipe.items.map((item) => <RecipeSlot items={item.tag ?? item.item} amount={item.amount} />)}
 </div>
 <div class="output">
   <RecipeSlot items={recipe.output} amount={recipe.amount} large />

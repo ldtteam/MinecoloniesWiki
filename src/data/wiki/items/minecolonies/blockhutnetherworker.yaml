@@ -2,4 +2,4 @@ id: blockhutnetherworker
 name: Nether Mine Hut Block
 description: The Hut Block for the Nether Mine.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutnetherworker.png"
+  - minecolonies/blockhutnetherworker

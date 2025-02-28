@@ -2,4 +2,4 @@ id: colony_banner
 name: Colony Banner
 description: The Colony Banner is a decorational block that will show your Colony its flag on it when placed down.
 icons:
-  - "@assets/images/wiki/items/minecolonies/colony_banner.png"
+  - minecolonies/colony_banner

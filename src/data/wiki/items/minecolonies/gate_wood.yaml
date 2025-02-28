@@ -2,4 +2,4 @@ id: gate_wood
 name: Wooden Gate
 description: Wooden Gates are multiblock gates that act as doors, but are great at keeping enemies out.
 icons:
-  - "@assets/images/wiki/items/minecolonies/gate_wood.png"
+  - minecolonies/gate_wood

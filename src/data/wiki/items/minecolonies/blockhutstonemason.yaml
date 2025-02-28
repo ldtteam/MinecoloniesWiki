@@ -2,4 +2,4 @@ id: blockhutstonemason
 name: Stonemason Hut Block
 description: The Hut Block for the Stonemason.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutstonemason.png"
+  - minecolonies/blockhutstonemason

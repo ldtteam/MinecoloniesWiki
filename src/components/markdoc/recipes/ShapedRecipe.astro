@@ -11,15 +11,15 @@ const { recipe } = Astro.props;
 ---
 
 <div class="inputs">
-  <RecipeSlot items={recipe.row1.item1} />
-  <RecipeSlot items={recipe.row1.item2} />
-  <RecipeSlot items={recipe.row1.item3} />
-  <RecipeSlot items={recipe.row2.item1} />
-  <RecipeSlot items={recipe.row2.item2} />
-  <RecipeSlot items={recipe.row2.item3} />
-  <RecipeSlot items={recipe.row3.item1} />
-  <RecipeSlot items={recipe.row3.item2} />
-  <RecipeSlot items={recipe.row3.item3} />
+  <RecipeSlot items={recipe.row1?.tag1 ?? recipe.row1?.item1} />
+  <RecipeSlot items={recipe.row1?.tag2 ?? recipe.row1?.item2} />
+  <RecipeSlot items={recipe.row1?.tag3 ?? recipe.row1?.item3} />
+  <RecipeSlot items={recipe.row2?.tag1 ?? recipe.row2?.item1} />
+  <RecipeSlot items={recipe.row2?.tag2 ?? recipe.row2?.item2} />
+  <RecipeSlot items={recipe.row2?.tag3 ?? recipe.row2?.item3} />
+  <RecipeSlot items={recipe.row3?.tag1 ?? recipe.row3?.item1} />
+  <RecipeSlot items={recipe.row3?.tag2 ?? recipe.row3?.item2} />
+  <RecipeSlot items={recipe.row3?.tag3 ?? recipe.row3?.item3} />
 </div>
 <div class="output">
   <RecipeSlot items={recipe.output} amount={recipe.amount} large />

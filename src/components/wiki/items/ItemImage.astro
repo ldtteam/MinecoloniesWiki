@@ -1,0 +1,38 @@
+---
+import { isUrl } from '@utils/util';
+import { getImage } from 'astro:assets';
+
+interface Props {
+  icon: string;
+  alt?: string;
+  width: number;
+  height?: number;
+}
+
+const { icon, alt, width, height } = Astro.props;
+
+let src: string;
+if (isUrl(icon)) {
+  src = await getImage({
+    src: icon,
+    width,
+    height
+  }).then((d) => d.src);
+} else {
+  const [modId, fileNameWithExtension] = icon.split('/', 2);
+  const [fileName, ext] = fileNameWithExtension.split('.', 2);
+  let imageFile;
+  if (ext === 'gif') {
+    imageFile = await import(`../../../assets/images/wiki/items/${modId}/${fileName}.gif`).then((f) => f.default);
+  } else {
+    imageFile = await import(`../../../assets/images/wiki/items/${modId}/${fileName}.png`).then((f) => f.default);
+  }
+  src = await getImage({
+    src: imageFile,
+    width,
+    height
+  }).then((d) => d.src);
+}
+---
+
+<img src={src} alt={alt} loading="lazy" decoding="async" width={width} />

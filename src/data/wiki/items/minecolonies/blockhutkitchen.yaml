@@ -2,4 +2,4 @@ id: blockhutkitchen
 name: Cookery Hut Block
 description: The Hut Block for the Cookery.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutkitchen.png"
+  - minecolonies/blockhutkitchen

@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: iron_nugget
+  - item: minecraft/iron_nugget
     amount: 5
 output: minecolonies/gate_iron
 conditions:

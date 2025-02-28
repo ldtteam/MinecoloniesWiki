@@ -2,4 +2,4 @@ id: scroll_worker_locator
 name: Worker-where-are-you scroll
 description: Special scroll that allows finding a linked citizen.
 icons:
-  - "@assets/images/wiki/items/minecolonies/scroll_worker_locator.png"
+  - minecolonies/scroll_worker_locator

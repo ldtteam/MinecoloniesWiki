@@ -2,4 +2,4 @@ id: blockhutfarmer
 name: Farmer Hut Block
 description: The Hut Block for the Farmer.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutfarmer.png"
+  - minecolonies/blockhutfarmer

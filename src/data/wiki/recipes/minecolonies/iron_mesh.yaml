@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: iron_ingot
+  - item: minecraft/iron_ingot
 output: minecolonies/iron_mesh
 conditions:
   - type: building

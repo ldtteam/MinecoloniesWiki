@@ -9,6 +9,7 @@ import { itemSchema, tagSchema } from './schemas/item';
 import { jsonStructureSchema } from './schemas/json_structures';
 import { recipeSchema } from './schemas/recipe';
 import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
+import { versionSchema } from './schemas/version';
 import { workerSchema } from './schemas/workers';
 
 // |------|
@@ -61,10 +62,7 @@ const eventCollection = defineCollection({
 
 const versionsCollection = defineCollection({
   loader: file('./src/data/wiki/versions.yaml'),
-  schema: z.object({
-    order: z.number(),
-    supported: z.boolean().default(false)
-  })
+  schema: versionSchema
 });
 
 const regularPage = (image: ImageFunction) =>
@@ -135,7 +133,7 @@ const workersCollection = defineCollection({
 
 const itemsCollection = defineCollection({
   loader: itemLoader(),
-  schema: ({ image }) => itemSchema(image)
+  schema: itemSchema
 });
 
 const tagsCollection = defineCollection({

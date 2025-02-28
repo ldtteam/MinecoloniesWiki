@@ -56,14 +56,14 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
     const item = await getEntry(entry.data.item);
-    return item.data.icons.map((m) => (typeof m === 'object' ? m.src : m)).find(() => true);
+    return item.data.icons.find(() => true);
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
     }
 
     const item = await getEntry(entry.data.items[0]);
-    return item.data.icons.map((m) => (typeof m === 'object' ? m.src : m)).find(() => true);
+    return item.data.icons.find(() => true);
   } else if (entry.data.type === 'building') {
     return entry.data.icon.src;
   }

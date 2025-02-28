@@ -2,4 +2,4 @@ id: compost
 name: Compost
 description: Compost is produced by a Composter which can be used by Farmers, Plantations and Florists to boost production.
 icons:
-  - "@assets/images/wiki/items/minecolonies/compost.png"
+  - minecolonies/compost

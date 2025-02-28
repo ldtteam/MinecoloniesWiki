@@ -1,15 +1,11 @@
 type: shaped
 row1:
-  item1: wheat
-  item2:
-  item3: wheat
+  item1: minecraft/wheat
+  item3: minecraft/wheat
 row2:
-  item1:
-  item2: wheat
-  item3:
+  item2: minecraft/wheat
 row3:
-  item1: wheat
-  item2:
-  item3: wheat
+  item1: minecraft/wheat
+  item3: minecraft/wheat
 output: domum_ornamentum/wheat_extra
 amount: 4

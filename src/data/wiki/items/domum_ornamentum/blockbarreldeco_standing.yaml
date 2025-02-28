@@ -2,4 +2,4 @@ id: blockbarreldeco_standing
 name: Vertical Barrel
 description: The Horizontal and Vertical barrels are decorational blocks primarily used within schematics.
 icons:
-  - "@assets/images/wiki/items/domum_ornamentum/blockbarreldeco_standing.png"
+  - domum_ornamentum/blockbarreldeco_standing

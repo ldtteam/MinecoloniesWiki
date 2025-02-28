@@ -2,4 +2,4 @@ id: resource_scroll
 name: Resource Scroll
 description: The Resource Scroll is a tool that can be used to track what your Builders are currently making, and what resources they have and still need to make the buildings.
 icons:
-  - "@assets/images/wiki/items/minecolonies/resource_scroll.png"
+  - minecolonies/resource_scroll

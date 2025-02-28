@@ -2,4 +2,4 @@ id: blockhutbaker
 name: Bakery Hut Block
 description: The Hut Block for the Bakery.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutbaker.png"
+  - minecolonies/blockhutbaker

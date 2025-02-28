@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: water_bottle
+  - item: minecraft/water_bottle
   - item: minecolonies/mistletoe
 output: minecolonies/magic_potion
 conditions:

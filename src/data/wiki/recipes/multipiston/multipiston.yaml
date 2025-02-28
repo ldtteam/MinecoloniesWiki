@@ -1,14 +1,14 @@
 type: shaped
 row1:
-  item1: stone
-  item2: stone
-  item3: stone
+  item1: minecraft/stone
+  item2: minecraft/stone
+  item3: minecraft/stone
 row2:
-  item1: redstoneblock
+  item1: minecraft/redstone_block
   item2: structurize/build_tool
-  item3: redstoneblock
+  item3: minecraft/redstone_block
 row3:
-  item1: piston
-  item2: piston
-  item3: piston
+  item1: minecraft/piston
+  item2: minecraft/piston
+  item3: minecraft/piston
 output: multipiston/multipiston

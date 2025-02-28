@@ -14,9 +14,11 @@ export function isFullEntry<C extends CollectionKey>(entry: PartialCollectionEnt
   return 'data' in entry;
 }
 
-export function isCollectionEntry<C extends CollectionKey>(
-  entry: PartialCollectionEntry<CollectionKey>,
-  collection: C
-): entry is PartialCollectionEntry<C> {
-  return entry.collection === collection;
+export function isUrl(value: string) {
+  try {
+    new URL(value);
+    return true;
+  } catch {
+    return false;
+  }
 }

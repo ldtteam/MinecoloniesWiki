@@ -1,8 +1,8 @@
 ---
 import ItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import VersionContent from '@components/version/VersionContent.astro';
+import ItemImage from '@components/wiki/items/ItemImage.astro';
 import { getOverrideValues } from '@utils/override';
-import { Image } from 'astro:assets';
 import { getEntry } from 'astro:content';
 
 import Infobox from '../../ui/infobox/Infobox.astro';
@@ -53,11 +53,7 @@ const iconsPerVersion = await getOverrideValues(item.data, (i) => i.icons, []);
           >
             {icons.value.map((icon) => (
               <swiper-slide>
-                {typeof icon === 'string' ? (
-                  <img src={icon} alt={item.data.name + ' icon'} loading="lazy" decoding="async" width={150} />
-                ) : (
-                  <Image src={icon} alt={item.data.name + ' icon'} width={150} />
-                )}
+                <ItemImage icon={icon} alt={item.data.name + ' icon'} width={150} />
               </swiper-slide>
             ))}
           </swiper-container>

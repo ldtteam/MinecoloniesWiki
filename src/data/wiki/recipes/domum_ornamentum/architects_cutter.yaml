@@ -1,14 +1,12 @@
 type: shaped
 row1:
-  item1:
-  item2: iron_ingot
-  item3:
+  item2: minecraft/iron_ingot
 row2:
-  item1: stone_slab
-  item2: stone_slab
-  item3: stone_slab
+  item1: minecraft/stone_slab
+  item2: minecraft/stone_slab
+  item3: minecraft/stone_slab
 row3:
-  item1: logs
-  item2: logs
-  item3: logs
+  tag1: logs
+  tag2: logs
+  tag3: logs
 output: domum_ornamentum/architects_cutter

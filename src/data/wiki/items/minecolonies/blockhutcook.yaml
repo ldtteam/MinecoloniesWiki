@@ -2,4 +2,4 @@ id: blockhutcook
 name: Restaurant Hut Block
 description: The Hut Block for the Restaurant.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutcook.png"
+  - minecolonies/blockhutcook

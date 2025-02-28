@@ -2,4 +2,4 @@ id: scroll_area_tp
 name: Ultrasafe colony group-teleport scroll
 description: Special scroll that allows teleporting you and anyone in a small area around you to your home colony.
 icons:
-  - "@assets/images/wiki/items/minecolonies/scroll_area_tp.png"
+  - minecolonies/scroll_area_tp

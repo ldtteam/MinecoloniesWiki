@@ -2,4 +2,4 @@ id: blockhutuniversity
 name: University Hut Block
 description: The Hut Block for the University.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutuniversity.png"
+  - minecolonies/blockhutuniversity

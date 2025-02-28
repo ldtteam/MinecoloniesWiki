@@ -1,14 +1,14 @@
 type: shaped
 row1:
-  item1: planks
+  tag1: planks
   item2: structurize/build_tool
-  item3: planks
+  tag3: planks
 row2:
-  item1: iron_sword
-  item2: iron_sword
-  item3: iron_sword
+  item1: minecraft/iron_sword
+  item2: minecraft/iron_sword
+  item3: minecraft/iron_sword
 row3:
-  item1: planks
-  item2: planks
-  item3: planks
+  tag1: planks
+  tag2: planks
+  tag3: planks
 output: minecolonies/blockhutcombatacademy

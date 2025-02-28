@@ -2,4 +2,4 @@ id: blockhutlumberjack
 name: Forester Hut Block
 description: The Hut Block for the Forester.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutlumberjack.png"
+  - minecolonies/blockhutlumberjack

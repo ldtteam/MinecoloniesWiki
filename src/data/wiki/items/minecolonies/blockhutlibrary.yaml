@@ -2,4 +2,4 @@ id: blockhutlibrary
 name: Library Hut Block
 description: The Hut Block for the Library.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutlibrary.png"
+  - minecolonies/blockhutlibrary

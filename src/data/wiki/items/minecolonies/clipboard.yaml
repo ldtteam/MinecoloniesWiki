@@ -2,4 +2,4 @@ id: clipboard
 name: Clipboard
 description: The Clipboard is a tool that can be used to track different requests going around your colony.
 icons:
-  - "@assets/images/wiki/items/minecolonies/clipboard.png"
+  - minecolonies/clipboard

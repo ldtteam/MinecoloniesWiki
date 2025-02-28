@@ -1,10 +1,11 @@
-import { getSortedVersions } from '@utils/version';
 import type { ImageOutputFormat } from 'astro';
 import { glob, type Loader } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { getImage } from 'astro:assets';
 import minecraftData, { type Item } from 'minecraft-data';
 import type { itemSchema } from 'src/schemas/item';
+import { versionSchema } from 'src/schemas/version';
+
+import { getJsonFile, parseYaml } from './file-utils';
 
 const unavailableMcItems: Item[] = [
   {
@@ -21,7 +22,7 @@ const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
   compass: 'gif'
 };
 
-type RawItem = z.infer<ReturnType<typeof itemSchema>>;
+type RawItem = z.infer<typeof itemSchema>;
 
 export function itemLoader(): Loader {
   const globLoader = glob({ base: './src/data/wiki/items', pattern: '**/*.yaml' });
@@ -35,8 +36,8 @@ export function itemLoader(): Loader {
       await globLoader.load(context);
 
       // Minecraft items
-      const versions = await getSortedVersions().then((a) => a.toReversed());
-      for (const version of versions) {
+      const versions = await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml);
+      for (const version of Object.values(versions)) {
         const mcData = minecraftData(version.id);
         if (mcData === null) {
           console.warn(`Version data for ${version.id} does not exist`);
@@ -45,31 +46,35 @@ export function itemLoader(): Loader {
         for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
           const id = 'minecraft/' + item.name;
 
-          const image = await getImage({
-            src: `https://minecraft.wiki/images/Invicon_${item.displayName.replaceAll(' ', '_')}.${imageExtensionOverrides[item.id] ?? 'png'}`,
-            width: 32,
-            height: 32
-          });
-
           const data = await context.parseData<RawItem>({
             id,
             data: {
               id,
               name: item.displayName,
               description: '',
-              icons: [image.src]
+              icons: [
+                `https://minecraft.wiki/images/Invicon_${item.displayName.replaceAll(' ', '_')}.${imageExtensionOverrides[item.name] ?? 'png'}`
+              ]
             }
           });
 
           if (context.store.has(id)) {
             const current = context.store.get<RawItem>(id);
             if (current) {
+              const currentName = current.data.overrides?.findLast(() => true)?.name ?? current.data.name;
+              if (currentName === data.name) {
+                continue;
+              }
+
               if (current.data.overrides === undefined) {
                 current.data.overrides = [];
               }
               current.data.overrides.push({
                 ...data,
-                version
+                version: {
+                  collection: 'versions',
+                  id: version.id
+                }
               });
 
               const digest = context.generateDigest(current.data);

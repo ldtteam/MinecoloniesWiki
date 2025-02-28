@@ -2,4 +2,4 @@ id: blockhutflorist
 name: Flowershop Hut Block
 description: The Hut Block for the Flowershop.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutflorist.png"
+  - minecolonies/blockhutflorist

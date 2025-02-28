@@ -2,9 +2,9 @@ type: custom
 items:
   - item: minecolonies/scroll_tp
     amount: 3
-  - item: glowstone_dust
+  - item: minecraft/glowstone_dust
     amount: 6
-  - item: paper
+  - item: minecraft/paper
     amount: 2
 output: minecolonies/scroll_worker_locator
 amount: 5

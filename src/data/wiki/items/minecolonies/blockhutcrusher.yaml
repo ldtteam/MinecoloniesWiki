@@ -2,4 +2,4 @@ id: blockhutcrusher
 name: Crusher Hut Block
 description: The Hut Block for the Crusher.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutcrusher.png"
+  - minecolonies/blockhutcrusher

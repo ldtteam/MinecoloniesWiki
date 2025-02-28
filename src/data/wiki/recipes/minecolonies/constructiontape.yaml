@@ -1,14 +1,12 @@
 type: shaped
 row1:
-  item1: stick
-  item2: wool
-  item3: stick
+  item1: minecraft/stick
+  tag2: wool
+  item3: minecraft/stick
 row2:
-  item1: stick
-  item2:
-  item3: stick
+  item1: minecraft/stick
+  item3: minecraft/stick
 row3:
-  item1: stick
-  item2:
-  item3: stick
+  item1: minecraft/stick
+  item3: minecraft/stick
 output: minecolonies/construction_tape

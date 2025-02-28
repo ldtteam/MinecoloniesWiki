@@ -1,6 +1,6 @@
 type: custom
 items:
-  - item: string
+  - item: minecraft/string
 output: minecolonies/string_mesh
 conditions:
   - type: building

@@ -2,4 +2,4 @@ id: stash
 name: Stash
 description: The Stash can be used to drop items in, allowing your Couriers to pick them up and bringing them to the Warehouse.
 icons:
-  - "@assets/images/wiki/items/minecolonies/stash.png"
+  - minecolonies/stash

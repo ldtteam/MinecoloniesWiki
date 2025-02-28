@@ -2,4 +2,4 @@ id: blockfluidsubstitution
 name: Fluid Placeholder
 description: The Fluid Placeholder is a placeholder block that will ensure a place within your schematic is either filled with a solid block or contains a liquid.
 icons:
-  - "@assets/images/wiki/items/structurize/blockfluidsubstitution.png"
+  - structurize/blockfluidsubstitution

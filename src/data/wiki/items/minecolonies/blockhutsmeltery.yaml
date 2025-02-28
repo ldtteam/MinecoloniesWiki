@@ -2,4 +2,4 @@ id: blockhutsmeltery
 name: Smeltery Hut Block
 description: The Hut Block for the Smeltery.
 icons:
-  - "@assets/images/wiki/items/minecolonies/blockhutsmeltery.png"
+  - minecolonies/blockhutsmeltery

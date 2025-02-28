@@ -2,4 +2,4 @@ id: blocksubstitution
 name: Placeholder
 description: The Placeholder is a placeholder block that will ensure a place within your schematic is always kept what with is already there.
 icons:
-  - "@assets/images/wiki/items/structurize/blocksubstitution.png"
+  - structurize/blocksubstitution

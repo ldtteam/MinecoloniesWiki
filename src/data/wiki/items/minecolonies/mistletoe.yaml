@@ -2,4 +2,4 @@ id: mistletoe
 name: Mistletoe
 description: Mistletoe is gathered by Alchemists, they can use Mistletoe to create Magic Potions.
 icons:
-  - "@assets/images/wiki/items/minecolonies/mistletoe.png"
+  - minecolonies/mistletoe

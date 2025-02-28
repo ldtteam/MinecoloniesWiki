@@ -2,4 +2,4 @@ id: scroll_tp
 name: Ultrasafe colony teleport scroll
 description: Special scroll that allows teleporting you to your home colony.
 icons:
-  - "@assets/images/wiki/items/minecolonies/scroll_tp.png"
+  - minecolonies/scroll_tp

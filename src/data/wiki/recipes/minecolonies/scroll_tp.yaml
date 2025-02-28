@@ -1,8 +1,8 @@
 type: custom
 items:
-  - item: paper
+  - item: minecraft/paper
     amount: 3
-  - item: compass
+  - item: minecraft/compass
   - item: structurize/build_tool
 output: minecolonies/scroll_tp
 amount: 3

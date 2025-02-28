@@ -2,19 +2,19 @@ id: floating_carpet_red
 name: Floating Carpet
 description: Floating Carpet are a special carpet that can float mid-air, not requiring any kind of supporting blocks.
 icons:
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_red.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_orange.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_yellow.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_green.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_lime.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_blue.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_cyan.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_light_blue.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_purple.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_magenta.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_pink.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_brown.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_gray.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_light_gray.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_white.png"
-  - "@assets/images/wiki/items/minecolonies/floating_carpet_black.png"
+  - minecolonies/floating_carpet_red
+  - minecolonies/floating_carpet_orange
+  - minecolonies/floating_carpet_yellow
+  - minecolonies/floating_carpet_green
+  - minecolonies/floating_carpet_lime
+  - minecolonies/floating_carpet_blue
+  - minecolonies/floating_carpet_cyan
+  - minecolonies/floating_carpet_light_blue
+  - minecolonies/floating_carpet_purple
+  - minecolonies/floating_carpet_magenta
+  - minecolonies/floating_carpet_pink
+  - minecolonies/floating_carpet_brown
+  - minecolonies/floating_carpet_gray
+  - minecolonies/floating_carpet_light_gray
+  - minecolonies/floating_carpet_white
+  - minecolonies/floating_carpet_black
