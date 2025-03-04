@@ -1,0 +1,9 @@
+---
+import Layout from '@layouts/Default.astro';
+import { getCollection } from 'astro:content';
+
+const schematics = await getCollection('schematics');
+schematics.map((m) => m.data.schematics[0].type === 'building' && m.data.schematics[0].building);
+---
+
+<Layout title="Schematics" fluid />

@@ -1,0 +1,1145 @@
+id: nordic
+displayName: Nordic Spruce
+authors:
+  - Luna
+  - John Reiher
+schematics:
+  - id: bamboo
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 10
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/bamboo/front.jpg"
+  - id: cacao
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 7
+      y: 9
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/cacao/front.jpg"
+  - id: cactus
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 12
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/cactus/front.jpg"
+  - id: glowberries
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 9
+      y: 9
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/glowberries/front.jpg"
+  - id: kelp
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 12
+      y: 14
+      z: 8
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/kelp/front.jpg"
+  - id: niflheim_crimson_fungus
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 7
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/niflheim_crimson_fungus/front.jpg"
+  - id: niflheim_crimson_vine
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 9
+      y: 13
+      z: 9
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/niflheim_crimson_vine/front.jpg"
+  - id: niflheim_warped_fungus
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 7
+      y: 9
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/niflheim_warped_fungus/front.jpg"
+  - id: niflheim_warped_vines
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 9
+      y: 12
+      z: 9
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/niflheim_warped_vines/front.jpg"
+  - id: sea_grass
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 6
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/sea_grass/front.jpg"
+  - id: sea_pickles
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 6
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/sea_pickles/front.jpg"
+  - id: sugarcane
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 11
+      y: 7
+      z: 14
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/sugarcane/front.jpg"
+  - id: vines
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 5
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/nordic/agriculture/fields/vines/front.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 21
+      y: 15
+      z: 22
+    images:
+      - "@assets/images/schematics/nordic/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/horticulture/composter/back.jpg"
+  - id: farmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 15
+      y: 18
+      z: 23
+    images:
+      - "@assets/images/schematics/nordic/agriculture/horticulture/farmer/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/horticulture/farmer/back.jpg"
+  - id: florist
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 16
+      y: 13
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/agriculture/horticulture/florist/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/horticulture/florist/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 25
+      y: 17
+      z: 26
+    images:
+      - "@assets/images/schematics/nordic/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/horticulture/plantation/back.jpg"
+  - id: beekeeper
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 21
+      y: 21
+      z: 23
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/beekeeper/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/beekeeper/back.jpg"
+  - id: chickenherder
+    type: building
+    building: chickenherder
+    path: agriculture/husbandry
+    size:
+      x: 16
+      y: 16
+      z: 19
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowboy
+    type: building
+    building: cowboy
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 20
+      z: 21
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/cowboy/back.jpg"
+  - id: fisherman
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 24
+      y: 20
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/fisherman/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/fisherman/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 16
+      y: 15
+      z: 19
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 18
+      y: 20
+      z: 23
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/shepherd/back.jpg"
+  - id: swineherder
+    type: building
+    building: swineherder
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 16
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/nordic/agriculture/husbandry/swineherder/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 21
+      y: 15
+      z: 20
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 19
+      y: 22
+      z: 18
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: craftsmanship/luxury
+    size:
+      x: 15
+      y: 17
+      z: 25
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/alchemist/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/alchemist/back.jpg"
+  - id: baker
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 15
+      y: 20
+      z: 21
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/baker/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/baker/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 17
+      y: 22
+      z: 19
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: cookery
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 12
+      z: 19
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/cookery/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/cookery/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 22
+      y: 15
+      z: 20
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: glassblower
+    path: craftsmanship/luxury
+    size:
+      x: 27
+      y: 16
+      z: 19
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/luxury/glassblower/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 17
+      y: 21
+      z: 16
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/crusher/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 18
+      y: 16
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 22
+      y: 21
+      z: 16
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 21
+      y: 20
+      z: 11
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/masonry/stonesmeltery/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 14
+      y: 16
+      z: 14
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/metallurgy
+    size:
+      x: 19
+      y: 16
+      z: 21
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/metallurgy/mechanic/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/metallurgy/mechanic/back.jpg"
+  - id: smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 9
+      y: 17
+      z: 21
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/metallurgy/smeltery/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/metallurgy/smeltery/back.jpg"
+  - id: deliveryman
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 15
+      y: 22
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/storage/deliveryman/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/storage/deliveryman/back.jpg"
+  - id: warehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 22
+      y: 23
+      z: 31
+    images:
+      - "@assets/images/schematics/nordic/craftsmanship/storage/warehouse/front.jpg"
+      - "@assets/images/schematics/nordic/craftsmanship/storage/warehouse/back.jpg"
+  - id: old_stone_park
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 13
+      y: 8
+      z: 12
+    images:
+      - "@assets/images/schematics/nordic/decorations/parks/old_stone_park/front.jpg"
+  - id: skadi's_rest
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 15
+      y: 13
+      z: 16
+    images:
+      - "@assets/images/schematics/nordic/decorations/parks/skadi's_rest/front.jpg"
+  - id: waterside_park
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 8
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/nordic/decorations/parks/waterside_park/front.jpg"
+  - id: camp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 16
+      y: 8
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/decorations/supplies/camp/front.jpg"
+      - "@assets/images/schematics/nordic/decorations/supplies/camp/back.jpg"
+  - id: ship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 17
+      y: 35
+      z: 42
+    images:
+      - "@assets/images/schematics/nordic/decorations/supplies/ship/front.jpg"
+      - "@assets/images/schematics/nordic/decorations/supplies/ship/back.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 31
+      y: 22
+      z: 31
+    images:
+      - "@assets/images/schematics/nordic/education/library/front.jpg"
+      - "@assets/images/schematics/nordic/education/library/back.jpg"
+  - id: school
+    type: building
+    building: school
+    path: education
+    size:
+      x: 23
+      y: 15
+      z: 21
+    images:
+      - "@assets/images/schematics/nordic/education/school/front.jpg"
+      - "@assets/images/schematics/nordic/education/school/back.jpg"
+  - id: university
+    type: building
+    building: university
+    path: education
+    size:
+      x: 29
+      y: 29
+      z: 22
+    images:
+      - "@assets/images/schematics/nordic/education/university/front.jpg"
+      - "@assets/images/schematics/nordic/education/university/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 18
+      y: 24
+      z: 12
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/builder/back.jpg"
+  - id: cook
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 23
+      y: 18
+      z: 21
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/cook/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/cook/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 15
+      y: 19
+      z: 17
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/hospital/back.jpg"
+  - id: lumberjack
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 14
+      y: 19
+      z: 18
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/lumberjack/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/lumberjack/back.jpg"
+  - id: miner
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 19
+      y: 27
+      z: 20
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/miner/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/miner/back.jpg"
+  - id: residence
+    type: building
+    building: citizen
+    path: fundamentals
+    size:
+      x: 15
+      y: 24
+      z: 11
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/residence/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/residence/back.jpg"
+  - id: residencealt
+    type: building
+    building: citizen
+    path: fundamentals
+    size:
+      x: 13
+      y: 13
+      z: 23
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/residencealt/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/residencealt/back.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 23
+      y: 20
+      z: 25
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 28
+      y: 28
+      z: 26
+    images:
+      - "@assets/images/schematics/nordic/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/nordic/fundamentals/townhall/back.jpg"
+  - id: bridgeintersection
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 6
+      y: 10
+      z: 8
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/bridgeintersection/front.jpg"
+  - id: bridgestairs
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 4
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/bridgestairs/front.jpg"
+  - id: bridgestraight
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 4
+      y: 10
+      z: 6
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/bridgestraight/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 6
+      y: 16
+      z: 9
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/intersection/front.jpg"
+  - id: plug_pillar
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 1
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/plug_pillar/front.jpg"
+  - id: plug_straight
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 1
+      y: 9
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/plug_straight/front.jpg"
+  - id: stairs
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 7
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/stairs/front.jpg"
+      - "@assets/images/schematics/nordic/infrastructure/bridge/stairs/back.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/bridge
+    size:
+      x: 4
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/bridge/straight/front.jpg"
+  - id: basicfield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 9
+      y: 5
+      z: 9
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/fields/basicfield/front.jpg"
+  - id: curvedhillfield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 13
+      y: 7
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/fields/curvedhillfield/front.jpg"
+  - id: largefield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 13
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/fields/largefield/front.jpg"
+  - id: straighthillfield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 12
+      y: 7
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/fields/straighthillfield/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/corner/front.jpg"
+  - id: crossing
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 6
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/crossing/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 7
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/intersection/front.jpg"
+  - id: long_powered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 8
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/long_powered/front.jpg"
+  - id: long_unpowered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 8
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/long_unpowered/front.jpg"
+  - id: railend
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 4
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/railend/front.jpg"
+  - id: short_powered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 4
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/short_powered/front.jpg"
+  - id: short_unpowered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 4
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/short_unpowered/front.jpg"
+  - id: slopelong_powered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 8
+      y: 10
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/slopelong_powered/front.jpg"
+  - id: slopelong_unpowered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 8
+      y: 10
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/slopelong_unpowered/front.jpg"
+  - id: slopeshort_powered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 4
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/slopeshort_powered/front.jpg"
+  - id: slopeshort_unpowered
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 4
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/rails/slopeshort_unpowered/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/inland
+    size:
+      x: 2
+      y: 5
+      z: 3
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/inland/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/roads/inland
+    size:
+      x: 4
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/inland/intersection/front.jpg"
+  - id: longstraight
+    type: decoration
+    path: infrastructure/roads/inland
+    size:
+      x: 5
+      y: 6
+      z: 3
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/inland/longstraight/front.jpg"
+  - id: shortstraight
+    type: decoration
+    path: infrastructure/roads/inland
+    size:
+      x: 3
+      y: 6
+      z: 3
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/inland/shortstraight/front.jpg"
+  - id: tjunction
+    type: decoration
+    path: infrastructure/roads/inland
+    size:
+      x: 3
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/inland/tjunction/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/waterfront
+    size:
+      x: 7
+      y: 9
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/waterfront/corner/front.jpg"
+  - id: curve
+    type: decoration
+    path: infrastructure/roads/waterfront
+    size:
+      x: 11
+      y: 9
+      z: 10
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/waterfront/curve/front.jpg"
+  - id: dock
+    type: decoration
+    path: infrastructure/roads/waterfront
+    size:
+      x: 11
+      y: 11
+      z: 10
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/waterfront/dock/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/roads/waterfront
+    size:
+      x: 8
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/nordic/infrastructure/roads/waterfront/straight/front.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 20
+      y: 15
+      z: 29
+    images:
+      - "@assets/images/schematics/nordic/military/archery/front.jpg"
+      - "@assets/images/schematics/nordic/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 30
+      y: 18
+      z: 29
+    images:
+      - "@assets/images/schematics/nordic/military/barracks/front.jpg"
+      - "@assets/images/schematics/nordic/military/barracks/back.jpg"
+  - id: barrackstower
+    type: building
+    building: barrackstower
+    path: military
+    size:
+      x: 9
+      y: 15
+      z: 9
+    images:
+      - "@assets/images/schematics/nordic/military/barrackstower/front.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 16
+      y: 18
+      z: 29
+    images:
+      - "@assets/images/schematics/nordic/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/nordic/military/combatacademy/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 13
+      y: 24
+      z: 11
+    images:
+      - "@assets/images/schematics/nordic/military/guardtower/front.jpg"
+      - "@assets/images/schematics/nordic/military/guardtower/back.jpg"
+  - id: barracksfull
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 30
+      y: 18
+      z: 29
+    images:
+      - "@assets/images/schematics/nordic/military/barracksfull/front.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 16
+      y: 37
+      z: 18
+    images:
+      - "@assets/images/schematics/nordic/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/nordic/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 29
+      y: 31
+      z: 26
+    images:
+      - "@assets/images/schematics/nordic/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/nordic/mystic/graveyard/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 32
+      y: 35
+      z: 32
+    images:
+      - "@assets/images/schematics/nordic/mystic/mysticalsite/front.jpg"
+      - "@assets/images/schematics/nordic/mystic/mysticalsite/back.jpg"
+  - id: netherworker
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 16
+      y: 15
+      z: 16
+    images:
+      - "@assets/images/schematics/nordic/mystic/netherworker/front.jpg"
+      - "@assets/images/schematics/nordic/mystic/netherworker/back.jpg"
+  - id: fancy_gate
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 11
+      y: 28
+      z: 12
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_gate/front.jpg"
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_gate/back.jpg"
+  - id: fancy_round_barbican
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 21
+      y: 30
+      z: 12
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_round_barbican/front.jpg"
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_round_barbican/back.jpg"
+  - id: fancy_round_corner
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 13
+      y: 25
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_round_corner/front.jpg"
+  - id: fancy_round_tower
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 7
+      y: 24
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_round_tower/front.jpg"
+  - id: fancy_segment_large
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 13
+      y: 17
+      z: 12
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_segment_large/front.jpg"
+  - id: fancy_segment_small
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 7
+      y: 13
+      z: 12
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_segment_small/front.jpg"
+  - id: fancy_square_barbican
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 23
+      y: 31
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_square_barbican/front.jpg"
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_square_barbican/back.jpg"
+  - id: fancy_square_corner
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 14
+      y: 25
+      z: 14
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_square_corner/front.jpg"
+  - id: fancy_square_tower
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 8
+      y: 23
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_square_tower/front.jpg"
+  - id: fancy_stairs
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 9
+      y: 21
+      z: 13
+    images:
+      - "@assets/images/schematics/nordic/walls/fancy/fancy_stairs/front.jpg"
+  - id: palisade_corner
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 7
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/walls/palisade/palisade_corner/front.jpg"
+  - id: palisade_gate
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/walls/palisade/palisade_gate/front.jpg"
+  - id: palisade_platform
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 6
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/walls/palisade/palisade_platform/front.jpg"
+  - id: palisade_wall
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 6
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/nordic/walls/palisade/palisade_wall/front.jpg"

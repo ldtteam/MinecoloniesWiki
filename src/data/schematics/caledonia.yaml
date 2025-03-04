@@ -1,0 +1,1492 @@
+id: caledonia
+displayName: Caledonia
+authors:
+  - Thaylar
+schematics:
+  - id: alfarmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 39
+      y: 10
+      z: 26
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/alfarmer/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/alfarmer/back.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 13
+      y: 8
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/composter/back.jpg"
+  - id: farmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/farmer/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/farmer/back.jpg"
+  - id: florist
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 13
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/florist/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/florist/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 19
+      y: 16
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/horticulture/plantation/back.jpg"
+  - id: beekeeper
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 14
+      z: 12
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/beekeeper/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/beekeeper/back.jpg"
+  - id: chickenherder
+    type: building
+    building: chickenherder
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowboy
+    type: building
+    building: cowboy
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/cowboy/back.jpg"
+  - id: fisherman
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 14
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/fisherman/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/fisherman/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/shepherd/back.jpg"
+  - id: swineherder
+    type: building
+    building: swineherder
+    path: agriculture/husbandry
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/caledonia/agriculture/husbandry/swineherder/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 19
+      y: 17
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 13
+      y: 18
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: craftsmanship/luxury
+    size:
+      x: 19
+      y: 16
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/alchemist/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/alchemist/back.jpg"
+  - id: baker
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 14
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/baker/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/baker/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 14
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 19
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: glassblower
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/glassblower/back.jpg"
+  - id: kitchen
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 14
+      y: 14
+      z: 15
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/kitchen/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/luxury/kitchen/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 13
+      y: 19
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/crusher/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 13
+      y: 14
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 13
+      y: 14
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 19
+      y: 21
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/masonry/stonesmeltery/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 19
+      y: 14
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/metallurgy
+    size:
+      x: 13
+      y: 23
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/metallurgy/mechanic/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/metallurgy/mechanic/back.jpg"
+  - id: smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 13
+      y: 13
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/metallurgy/smeltery/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/metallurgy/smeltery/back.jpg"
+  - id: deliveryman
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 13
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/storage/deliveryman/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/storage/deliveryman/back.jpg"
+  - id: warehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 19
+      y: 17
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/craftsmanship/storage/warehouse/front.jpg"
+      - "@assets/images/schematics/caledonia/craftsmanship/storage/warehouse/back.jpg"
+  - id: double
+    type: decoration
+    path: decorations/arches
+    size:
+      x: 9
+      y: 18
+      z: 29
+    images:
+      - "@assets/images/schematics/caledonia/decorations/arches/double/front.jpg"
+  - id: single
+    type: decoration
+    path: decorations/arches
+    size:
+      x: 9
+      y: 18
+      z: 21
+    images:
+      - "@assets/images/schematics/caledonia/decorations/arches/single/front.jpg"
+  - id: windmill
+    type: decoration
+    path: decorations/decorative
+    size:
+      x: 13
+      y: 27
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/decorations/decorative/windmill/front.jpg"
+      - "@assets/images/schematics/caledonia/decorations/decorative/windmill/back.jpg"
+  - id: barracks
+    type: decoration
+    path: decorations/planning
+    size:
+      x: 39
+      y: 11
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/decorations/planning/barracks/front.jpg"
+  - id: large
+    type: decoration
+    path: decorations/planning
+    size:
+      x: 19
+      y: 11
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/decorations/planning/large/front.jpg"
+  - id: medium
+    type: decoration
+    path: decorations/planning
+    size:
+      x: 19
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/planning/medium/front.jpg"
+  - id: small
+    type: decoration
+    path: decorations/planning
+    size:
+      x: 13
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/planning/small/front.jpg"
+  - id: diorite_lrg
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 19
+      y: 17
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/diorite_lrg/front.jpg"
+  - id: diorite_med
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 19
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/diorite_med/front.jpg"
+  - id: diorite_sml
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 13
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/diorite_sml/front.jpg"
+  - id: garden_tower
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 19
+      y: 34
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/garden_tower/front.jpg"
+  - id: lamp_plaza
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 13
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/lamp_plaza/front.jpg"
+  - id: market_plaza
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 19
+      y: 21
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/market_plaza/front.jpg"
+  - id: sitting_plaza
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 18
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/sitting_plaza/front.jpg"
+  - id: waystone
+    type: decoration
+    path: decorations/plaza
+    size:
+      x: 13
+      y: 32
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/plaza/waystone/front.jpg"
+  - id: camp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 39
+      y: 50
+      z: 31
+    images:
+      - "@assets/images/schematics/caledonia/decorations/supplies/camp/front.jpg"
+  - id: ship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 39
+      y: 52
+      z: 31
+    images:
+      - "@assets/images/schematics/caledonia/decorations/supplies/ship/front.jpg"
+  - id: supplycamp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 39
+      y: 50
+      z: 31
+    images:
+      - "@assets/images/schematics/caledonia/decorations/supplies/supplycamp/front.jpg"
+  - id: supplyship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 39
+      y: 52
+      z: 31
+    images:
+      - "@assets/images/schematics/caledonia/decorations/supplies/supplyship/front.jpg"
+  - id: auto_smelter
+    type: decoration
+    path: decorations/utility
+    size:
+      x: 13
+      y: 14
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/utility/auto_smelter/front.jpg"
+  - id: concrete_machine
+    type: decoration
+    path: decorations/utility
+    size:
+      x: 13
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/utility/concrete_machine/front.jpg"
+  - id: greenhouse_a
+    type: decoration
+    path: decorations/utility
+    size:
+      x: 13
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/utility/greenhouse_a/front.jpg"
+      - "@assets/images/schematics/caledonia/decorations/utility/greenhouse_a/back.jpg"
+  - id: greenhouse_b
+    type: decoration
+    path: decorations/utility
+    size:
+      x: 13
+      y: 11
+      z: 12
+    images:
+      - "@assets/images/schematics/caledonia/decorations/utility/greenhouse_b/front.jpg"
+      - "@assets/images/schematics/caledonia/decorations/utility/greenhouse_b/back.jpg"
+  - id: meat_grinder
+    type: decoration
+    path: decorations/utility
+    size:
+      x: 13
+      y: 13
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/decorations/utility/meat_grinder/front.jpg"
+      - "@assets/images/schematics/caledonia/decorations/utility/meat_grinder/back.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 19
+      y: 34
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/education/library/front.jpg"
+      - "@assets/images/schematics/caledonia/education/library/back.jpg"
+  - id: school
+    type: building
+    building: school
+    path: education
+    size:
+      x: 13
+      y: 17
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/education/school/front.jpg"
+      - "@assets/images/schematics/caledonia/education/school/back.jpg"
+  - id: university
+    type: building
+    building: university
+    path: education
+    size:
+      x: 19
+      y: 32
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/education/university/front.jpg"
+      - "@assets/images/schematics/caledonia/education/university/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 13
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/builder/back.jpg"
+  - id: cook
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 19
+      y: 15
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/cook/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/cook/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 19
+      y: 21
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/hospital/back.jpg"
+  - id: lumberjack
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 12
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/lumberjack/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/lumberjack/back.jpg"
+  - id: miner
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 19
+      y: 23
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/miner/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/miner/back.jpg"
+  - id: residence
+    type: building
+    building: citizen
+    path: fundamentals
+    size:
+      x: 19
+      y: 16
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/residence/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/residence/back.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 13
+      y: 17
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 19
+      y: 36
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/caledonia/fundamentals/townhall/back.jpg"
+  - id: cross
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/cross/front.jpg"
+  - id: down_a
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 5
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/down_a/front.jpg"
+  - id: down_b
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 5
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/down_b/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 13
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/long/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 7
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/short/front.jpg"
+  - id: tee
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/tee/front.jpg"
+  - id: trans_nature
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 7
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/trans_nature/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/alleys
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/alleys/turn/front.jpg"
+  - id: cross
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 13
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/cross/front.jpg"
+  - id: down_a
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 5
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/down_a/front.jpg"
+  - id: down_b
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 5
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/down_b/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 13
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/long/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 7
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/short/front.jpg"
+  - id: tee
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 13
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/tee/front.jpg"
+  - id: trans_alley
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 7
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/trans_alley/front.jpg"
+  - id: trans_nature
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 7
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/trans_nature/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/avenues
+    size:
+      x: 13
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/avenues/turn/front.jpg"
+  - id: cross
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 13
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/cross/front.jpg"
+  - id: down_a
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 5
+      y: 12
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/down_a/front.jpg"
+  - id: down_b
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 5
+      y: 14
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/down_b/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 13
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/long/front.jpg"
+  - id: plub_b
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 1
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/plub_b/front.jpg"
+  - id: plug_a
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 1
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/plug_a/front.jpg"
+  - id: plug_c
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 1
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/plug_c/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 7
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/short/front.jpg"
+  - id: station
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 13
+      y: 13
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/station/front.jpg"
+  - id: tee
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 13
+      y: 12
+      z: 10
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/tee/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/birail
+    size:
+      x: 10
+      y: 11
+      z: 10
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/birail/turn/front.jpg"
+  - id: field_big
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 39
+      y: 5
+      z: 26
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/fields/field_big/front.jpg"
+  - id: cross
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 13
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/cross/front.jpg"
+  - id: down_a
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 5
+      y: 13
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/down_a/front.jpg"
+  - id: down_b
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 5
+      y: 14
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/down_b/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 11
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/long/front.jpg"
+  - id: plub_b
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 1
+      y: 11
+      z: 4
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/plub_b/front.jpg"
+  - id: plug_a
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 1
+      y: 7
+      z: 4
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/plug_a/front.jpg"
+  - id: plug_c
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 1
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/plug_c/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 7
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/short/front.jpg"
+  - id: station
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 12
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/station/front.jpg"
+  - id: tee
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 13
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/tee/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/monorail
+    size:
+      x: 9
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/monorail/turn/front.jpg"
+  - id: large
+    type: decoration
+    path: infrastructure/plaza
+    size:
+      x: 19
+      y: 2
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/plaza/large/front.jpg"
+  - id: medium
+    type: decoration
+    path: infrastructure/plaza
+    size:
+      x: 19
+      y: 2
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/plaza/medium/front.jpg"
+  - id: small
+    type: decoration
+    path: infrastructure/plaza
+    size:
+      x: 7
+      y: 3
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/plaza/small/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/corner/front.jpg"
+  - id: cross
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/cross/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 19
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/long/front.jpg"
+  - id: long_stair
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 19
+      y: 18
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/long_stair/front.jpg"
+  - id: medium
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 13
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/medium/front.jpg"
+  - id: medium_stair
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 13
+      y: 18
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/medium_stair/front.jpg"
+  - id: plug_a
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 3
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/plug_a/front.jpg"
+  - id: plug_b
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 1
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/plug_b/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/short/front.jpg"
+  - id: short_stair_a
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 17
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/short_stair_a/front.jpg"
+  - id: short_stair_b
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 17
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/short_stair_b/front.jpg"
+  - id: station_long
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 19
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/station_long/front.jpg"
+  - id: station_med
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 13
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/station_med/front.jpg"
+  - id: station_short
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/station_short/front.jpg"
+  - id: station_stair_l
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 19
+      y: 18
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/station_stair_l/front.jpg"
+  - id: station_stair_m
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 13
+      y: 18
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/station_stair_m/front.jpg"
+  - id: tee
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/infrastructure/roads/tee/front.jpg"
+  - id: altguardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 13
+      y: 24
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/military/altguardtower/front.jpg"
+      - "@assets/images/schematics/caledonia/military/altguardtower/back.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 13
+      y: 21
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/military/archery/front.jpg"
+      - "@assets/images/schematics/caledonia/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 19
+      y: 29
+      z: 39
+    images:
+      - "@assets/images/schematics/caledonia/military/barracks/front.jpg"
+      - "@assets/images/schematics/caledonia/military/barracks/back.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 13
+      y: 21
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/caledonia/military/combatacademy/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 13
+      y: 42
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/military/guardtower/front.jpg"
+      - "@assets/images/schematics/caledonia/military/guardtower/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 13
+      y: 40
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/caledonia/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 13
+      y: 25
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/caledonia/mystic/graveyard/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 21
+      y: 18
+      z: 13
+    images:
+      - "@assets/images/schematics/caledonia/mystic/mysticalsite/front.jpg"
+  - id: netherworker
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 13
+      y: 19
+      z: 19
+    images:
+      - "@assets/images/schematics/caledonia/mystic/netherworker/front.jpg"
+      - "@assets/images/schematics/caledonia/mystic/netherworker/back.jpg"
+  - id: corner_a
+    type: decoration
+    path: walls/corners
+    size:
+      x: 6
+      y: 11
+      z: 6
+    images:
+      - "@assets/images/schematics/caledonia/walls/corners/corner_a/front.jpg"
+  - id: corner_b
+    type: decoration
+    path: walls/corners
+    size:
+      x: 12
+      y: 11
+      z: 12
+    images:
+      - "@assets/images/schematics/caledonia/walls/corners/corner_b/front.jpg"
+  - id: tower
+    type: decoration
+    path: walls/corners
+    size:
+      x: 9
+      y: 23
+      z: 9
+    images:
+      - "@assets/images/schematics/caledonia/walls/corners/tower/front.jpg"
+  - id: double
+    type: decoration
+    path: walls/gates
+    size:
+      x: 19
+      y: 12
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/gates/double/front.jpg"
+  - id: double_house
+    type: decoration
+    path: walls/gates
+    size:
+      x: 19
+      y: 23
+      z: 9
+    images:
+      - "@assets/images/schematics/caledonia/walls/gates/double_house/front.jpg"
+  - id: single
+    type: decoration
+    path: walls/gates
+    size:
+      x: 19
+      y: 12
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/gates/single/front.jpg"
+  - id: single_house
+    type: decoration
+    path: walls/gates
+    size:
+      x: 19
+      y: 23
+      z: 9
+    images:
+      - "@assets/images/schematics/caledonia/walls/gates/single_house/front.jpg"
+  - id: cross
+    type: decoration
+    path: walls/misc
+    size:
+      x: 5
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/walls/misc/cross/front.jpg"
+  - id: diagonal
+    type: decoration
+    path: walls/misc
+    size:
+      x: 7
+      y: 11
+      z: 11
+    images:
+      - "@assets/images/schematics/caledonia/walls/misc/diagonal/front.jpg"
+  - id: end_tower
+    type: decoration
+    path: walls/misc
+    size:
+      x: 9
+      y: 23
+      z: 9
+    images:
+      - "@assets/images/schematics/caledonia/walls/misc/end_tower/front.jpg"
+  - id: end
+    type: decoration
+    path: walls/stairs
+    size:
+      x: 11
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/stairs/end/front.jpg"
+  - id: side
+    type: decoration
+    path: walls/stairs
+    size:
+      x: 15
+      y: 10
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/walls/stairs/side/front.jpg"
+  - id: down_a
+    type: decoration
+    path: walls/walls
+    size:
+      x: 5
+      y: 14
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/down_a/front.jpg"
+  - id: down_b
+    type: decoration
+    path: walls/walls
+    size:
+      x: 5
+      y: 13
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/down_b/front.jpg"
+  - id: end
+    type: decoration
+    path: walls/walls
+    size:
+      x: 5
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/end/front.jpg"
+  - id: long
+    type: decoration
+    path: walls/walls
+    size:
+      x: 19
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/long/front.jpg"
+  - id: medium
+    type: decoration
+    path: walls/walls
+    size:
+      x: 13
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/medium/front.jpg"
+  - id: plug_a
+    type: decoration
+    path: walls/walls
+    size:
+      x: 1
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/plug_a/front.jpg"
+  - id: plug_b
+    type: decoration
+    path: walls/walls
+    size:
+      x: 1
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/plug_b/front.jpg"
+  - id: short
+    type: decoration
+    path: walls/walls
+    size:
+      x: 5
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/short/front.jpg"
+  - id: tee
+    type: decoration
+    path: walls/walls
+    size:
+      x: 5
+      y: 11
+      z: 6
+    images:
+      - "@assets/images/schematics/caledonia/walls/walls/tee/front.jpg"

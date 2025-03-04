@@ -1,0 +1,6050 @@
+id: shogun
+displayName: Shogun
+authors:
+  - Spumantii
+schematics:
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 14
+      y: 15
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/horticulture/composter/back.jpg"
+  - id: dormi
+    type: building
+    building: citizen
+    path: agriculture/horticulture
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/dormi/front.jpg"
+  - id: farm
+    type: building
+    building: deliveryman
+    path: agriculture/horticulture
+    size:
+      x: 20
+      y: 19
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/farm/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/horticulture/farm/back.jpg"
+  - id: farmdorm
+    type: building
+    building: citizen
+    path: agriculture/horticulture
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/farmdorm/front.jpg"
+  - id: flowers
+    type: building
+    building: beekeeper
+    path: agriculture/horticulture
+    size:
+      x: 18
+      y: 15
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/flowers/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/horticulture/flowers/back.jpg"
+  - id: plantation
+    type: building
+    building: citizen
+    path: agriculture/horticulture
+    size:
+      x: 15
+      y: 17
+      z: 22
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/horticulture/plantation/back.jpg"
+  - id: rickshaw
+    type: building
+    building: deliveryman
+    path: agriculture/horticulture
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/rickshaw/front.jpg"
+  - id: subapiary
+    type: building
+    building: beekeeper
+    path: agriculture/horticulture
+    size:
+      x: 9
+      y: 8
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/subapiary/front.jpg"
+  - id: subfarm
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/subfarm/front.jpg"
+  - id: subflowers
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 3
+      y: 3
+      z: 14
+    images:
+      - "@assets/images/schematics/shogun/agriculture/horticulture/subflowers/front.jpg"
+  - id: chickens
+    type: building
+    building: chickenherder
+    path: agriculture/husbandry
+    size:
+      x: 11
+      y: 11
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/chickens/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/husbandry/chickens/back.jpg"
+  - id: fish
+    type: building
+    building: citizen
+    path: agriculture/husbandry
+    size:
+      x: 20
+      y: 26
+      z: 19
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/fish/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/husbandry/fish/back.jpg"
+  - id: hamcart
+    type: building
+    building: deliveryman
+    path: agriculture/husbandry
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/hamcart/front.jpg"
+  - id: hamguard
+    type: building
+    building: guardtower
+    path: agriculture/husbandry
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/hamguard/front.jpg"
+  - id: husdorm
+    type: building
+    building: citizen
+    path: agriculture/husbandry
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/husdorm/front.jpg"
+  - id: morpheus
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 40
+      y: 39
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/morpheus/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/husbandry/morpheus/back.jpg"
+  - id: pasture
+    type: building
+    building: cowboy
+    path: agriculture/husbandry
+    size:
+      x: 37
+      y: 19
+      z: 49
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/pasture/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/husbandry/pasture/back.jpg"
+  - id: pigs
+    type: building
+    building: swineherder
+    path: agriculture/husbandry
+    size:
+      x: 30
+      y: 11
+      z: 45
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/pigs/front.jpg"
+  - id: rabbits
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 9
+      y: 11
+      z: 14
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/rabbits/front.jpg"
+      - "@assets/images/schematics/shogun/agriculture/husbandry/rabbits/back.jpg"
+  - id: sheep
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 30
+      y: 11
+      z: 33
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/sheep/front.jpg"
+  - id: submorpheus
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 2
+      y: 4
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/agriculture/husbandry/submorpheus/front.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 24
+      y: 16
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 14
+      y: 13
+      z: 22
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: cookery
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 18
+      y: 21
+      z: 23
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/cookery/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/cookery/back.jpg"
+  - id: enchantdorm
+    type: building
+    building: citizen
+    path: craftsmanship/luxury
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/enchantdorm/front.jpg"
+  - id: enchanter
+    type: building
+    building: citizen
+    path: craftsmanship/luxury
+    size:
+      x: 27
+      y: 32
+      z: 27
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/enchanter/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/enchanter/back.jpg"
+  - id: enchantplant
+    type: building
+    building: plantation
+    path: craftsmanship/luxury
+    size:
+      x: 7
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/enchantplant/front.jpg"
+  - id: silkworks
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 41
+      y: 21
+      z: 32
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/silkworks/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/silkworks/back.jpg"
+  - id: subfletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/luxury
+    size:
+      x: 2
+      y: 2
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/subfletcher/front.jpg"
+  - id: subschool
+    type: building
+    building: school
+    path: craftsmanship/luxury
+    size:
+      x: 3
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/luxury/subschool/front.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 17
+      y: 13
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/crusher/back.jpg"
+  - id: masonguard
+    type: building
+    building: guardtower
+    path: craftsmanship/masonry
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/masonguard/front.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 15
+      y: 18
+      z: 22
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: guardtower
+    path: craftsmanship/masonry
+    size:
+      x: 20
+      y: 26
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmelter
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 15
+      y: 14
+      z: 31
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/stonesmelter/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/masonry/stonesmelter/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 17
+      y: 23
+      z: 20
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: smelter
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 25
+      y: 13
+      z: 20
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/metallurgy/smelter/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/metallurgy/smelter/back.jpg"
+  - id: landwhouse
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 17
+      y: 19
+      z: 32
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/storage/landwhouse/front.jpg"
+      - "@assets/images/schematics/shogun/craftsmanship/storage/landwhouse/back.jpg"
+  - id: stuffcart
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/storage/stuffcart/front.jpg"
+  - id: whousecart
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/craftsmanship/storage/whousecart/front.jpg"
+  - id: islandbig
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 10
+      y: 3
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/islandbig/front.jpg"
+  - id: islandsmall
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/islandsmall/front.jpg"
+  - id: plaingravelfull
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 16
+      y: 3
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/plaingravelfull/front.jpg"
+  - id: plaingravelhalf
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 8
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/plaingravelhalf/front.jpg"
+  - id: pondbrush
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 10
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/pondbrush/front.jpg"
+  - id: stepcurve
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 3
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepcurve/front.jpg"
+  - id: stepdiag
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 9
+      y: 2
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepdiag/front.jpg"
+  - id: stepflat
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 1
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepflat/front.jpg"
+  - id: stepoffset
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 6
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepoffset/front.jpg"
+  - id: stepoffsetmore
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 6
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepoffsetmore/front.jpg"
+  - id: stepsunkbay
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 11
+      y: 3
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepsunkbay/front.jpg"
+  - id: stepturnineight
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 9
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepturnineight/front.jpg"
+  - id: stepturninsix
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepturninsix/front.jpg"
+  - id: stepturnouteight
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 9
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepturnouteight/front.jpg"
+  - id: stepturnoutsix
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepturnoutsix/front.jpg"
+  - id: stepwiggle
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 7
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepwiggle/front.jpg"
+  - id: stepwiggleout
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 7
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/stepwiggleout/front.jpg"
+  - id: streamend
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 8
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/streamend/front.jpg"
+  - id: streamstraight
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 8
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/streamstraight/front.jpg"
+  - id: streamturn
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 8
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/streamturn/front.jpg"
+  - id: streamxfour
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 8
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/streamxfour/front.jpg"
+  - id: streamxthree
+    type: decoration
+    path: decorations/gardens/chunks
+    size:
+      x: 8
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/gardens/chunks/streamxthree/front.jpg"
+  - id: azaleas_f
+    type: decoration
+    path: decorations/greens/planters
+    size:
+      x: 3
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/planters/azaleas_f/front.jpg"
+  - id: bamboo
+    type: decoration
+    path: decorations/greens/planters
+    size:
+      x: 3
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/planters/bamboo/front.jpg"
+  - id: cherrybush
+    type: decoration
+    path: decorations/greens/planters
+    size:
+      x: 6
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/planters/cherrybush/front.jpg"
+  - id: largefern
+    type: decoration
+    path: decorations/greens/planters
+    size:
+      x: 6
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/planters/largefern/front.jpg"
+  - id: sweetberry
+    type: decoration
+    path: decorations/greens/planters
+    size:
+      x: 3
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/planters/sweetberry/front.jpg"
+  - id: torchflowers
+    type: decoration
+    path: decorations/greens/planters
+    size:
+      x: 3
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/planters/torchflowers/front.jpg"
+  - id: pond
+    type: decoration
+    path: decorations/greens/pond
+    size:
+      x: 18
+      y: 2
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/pond/pond/front.jpg"
+  - id: mossy_a
+    type: decoration
+    path: decorations/greens/rock
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/rock/mossy_a/front.jpg"
+  - id: mossy_b
+    type: decoration
+    path: decorations/greens/rock
+    size:
+      x: 5
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/rock/mossy_b/front.jpg"
+  - id: mossy_c
+    type: decoration
+    path: decorations/greens/rock
+    size:
+      x: 7
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/rock/mossy_c/front.jpg"
+  - id: mossy_d
+    type: decoration
+    path: decorations/greens/rock
+    size:
+      x: 10
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/rock/mossy_d/front.jpg"
+  - id: mossy_e
+    type: decoration
+    path: decorations/greens/rock
+    size:
+      x: 13
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/rock/mossy_e/front.jpg"
+  - id: mossy_f
+    type: decoration
+    path: decorations/greens/rock
+    size:
+      x: 20
+      y: 8
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/greens/rock/mossy_f/front.jpg"
+  - id: harborstuff
+    type: decoration
+    path: decorations/harbor
+    size:
+      x: 4
+      y: 2
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/decorations/harbor/harborstuff/front.jpg"
+  - id: ropeloader
+    type: decoration
+    path: decorations/harbor
+    size:
+      x: 14
+      y: 7
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/decorations/harbor/ropeloader/front.jpg"
+  - id: lampstand_d
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/lampstand_d/front.jpg"
+  - id: lanternstandard
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/lanternstandard/front.jpg"
+  - id: lanternstd_ave
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 7
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/lanternstd_ave/front.jpg"
+  - id: lanternstd_avebanners
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 7
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/lanternstd_avebanners/front.jpg"
+  - id: lantern_paper
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/lantern_paper/front.jpg"
+  - id: lantern_red
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/lantern_red/front.jpg"
+  - id: shed
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 6
+      y: 5
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/shed/front.jpg"
+  - id: sjinguard
+    type: building
+    building: guardtower
+    path: decorations/misc
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/sjinguard/front.jpg"
+  - id: sjinto_wayshrine
+    type: building
+    building: guardtower
+    path: decorations/misc
+    size:
+      x: 44
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/sjinto_wayshrine/front.jpg"
+  - id: stand
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 7
+      y: 6
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/stand/front.jpg"
+  - id: stuff
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 3
+      y: 1
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/stuff/front.jpg"
+  - id: torii_bigbirch
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 5
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/decorations/misc/torii_bigbirch/front.jpg"
+  - id: cottage
+    type: building
+    building: guardtower
+    path: decorations/playerhouse
+    size:
+      x: 20
+      y: 18
+      z: 19
+    images:
+      - "@assets/images/schematics/shogun/decorations/playerhouse/cottage/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/playerhouse/cottage/back.jpg"
+  - id: houseguard
+    type: building
+    building: guardtower
+    path: decorations/playerhouse
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/playerhouse/houseguard/front.jpg"
+  - id: merchant
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 33
+      y: 27
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/ships/merchant/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/ships/merchant/back.jpg"
+  - id: playerexplorer
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 43
+      y: 44
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/decorations/ships/playerexplorer/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/ships/playerexplorer/back.jpg"
+  - id: rowboat
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 8
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/ships/rowboat/front.jpg"
+  - id: gokenin
+    type: building
+    building: guardtower
+    path: decorations/supplies
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/supplies/gokenin/front.jpg"
+  - id: hq
+    type: building
+    building: guardtower
+    path: decorations/supplies
+    size:
+      x: 19
+      y: 25
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/decorations/supplies/hq/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/supplies/hq/back.jpg"
+  - id: supplycamp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 16
+      y: 19
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/decorations/supplies/supplycamp/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/supplies/supplycamp/back.jpg"
+  - id: supplyship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 31
+      y: 31
+      z: 19
+    images:
+      - "@assets/images/schematics/shogun/decorations/supplies/supplyship/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/supplies/supplyship/back.jpg"
+  - id: az_big
+    type: decoration
+    path: decorations/trees/azalea
+    size:
+      x: 16
+      y: 14
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/azalea/az_big/front.jpg"
+  - id: az_big_corner
+    type: decoration
+    path: decorations/trees/azalea
+    size:
+      x: 16
+      y: 14
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/azalea/az_big_corner/front.jpg"
+  - id: az_mg_spr
+    type: decoration
+    path: decorations/trees/azalea
+    size:
+      x: 14
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/azalea/az_mg_spr/front.jpg"
+  - id: az_spr_a
+    type: decoration
+    path: decorations/trees/azalea
+    size:
+      x: 5
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/azalea/az_spr_a/front.jpg"
+  - id: az_spr_b
+    type: decoration
+    path: decorations/trees/azalea
+    size:
+      x: 4
+      y: 13
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/azalea/az_spr_b/front.jpg"
+  - id: az_a
+    type: decoration
+    path: decorations/trees/bonsai
+    size:
+      x: 5
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/bonsai/az_a/front.jpg"
+  - id: az_b
+    type: decoration
+    path: decorations/trees/bonsai
+    size:
+      x: 5
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/bonsai/az_b/front.jpg"
+  - id: ch_a
+    type: decoration
+    path: decorations/trees/bonsai
+    size:
+      x: 4
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/bonsai/ch_a/front.jpg"
+  - id: ch_b
+    type: decoration
+    path: decorations/trees/bonsai
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/bonsai/ch_b/front.jpg"
+  - id: moss_a
+    type: decoration
+    path: decorations/trees/bonsai
+    size:
+      x: 6
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/bonsai/moss_a/front.jpg"
+  - id: bigfir
+    type: decoration
+    path: decorations/trees/conifer
+    size:
+      x: 11
+      y: 25
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/conifer/bigfir/front.jpg"
+  - id: bigfir_corner
+    type: decoration
+    path: decorations/trees/conifer
+    size:
+      x: 11
+      y: 25
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/conifer/bigfir_corner/front.jpg"
+  - id: bobross_spr_a
+    type: decoration
+    path: decorations/trees/conifer
+    size:
+      x: 7
+      y: 12
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/conifer/bobross_spr_a/front.jpg"
+  - id: bobross_spr_b
+    type: decoration
+    path: decorations/trees/conifer
+    size:
+      x: 7
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/conifer/bobross_spr_b/front.jpg"
+  - id: jung_spr_fa_a
+    type: decoration
+    path: decorations/trees/jungle
+    size:
+      x: 5
+      y: 10
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/jungle/jung_spr_fa_a/front.jpg"
+  - id: jung_spr_fa_b
+    type: decoration
+    path: decorations/trees/jungle
+    size:
+      x: 8
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/jungle/jung_spr_fa_b/front.jpg"
+  - id: moss_a
+    type: decoration
+    path: decorations/trees/moss
+    size:
+      x: 13
+      y: 18
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/moss/moss_a/front.jpg"
+  - id: ch_big_corner
+    type: decoration
+    path: decorations/trees/sakura
+    size:
+      x: 15
+      y: 17
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/sakura/ch_big_corner/front.jpg"
+  - id: ch_spr_a
+    type: decoration
+    path: decorations/trees/sakura
+    size:
+      x: 4
+      y: 10
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/sakura/ch_spr_a/front.jpg"
+  - id: ch_spr_b
+    type: decoration
+    path: decorations/trees/sakura
+    size:
+      x: 8
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/decorations/trees/sakura/ch_spr_b/front.jpg"
+  - id: extraramp
+    type: decoration
+    path: decorations/wonders
+    size:
+      x: 18
+      y: 12
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/extraramp/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/wonders/extraramp/back.jpg"
+  - id: extrarampthin
+    type: decoration
+    path: decorations/wonders
+    size:
+      x: 18
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/extrarampthin/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/wonders/extrarampthin/back.jpg"
+  - id: palace
+    type: building
+    building: barracks
+    path: decorations/wonders
+    size:
+      x: 70
+      y: 50
+      z: 123
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palace/front.jpg"
+      - "@assets/images/schematics/shogun/decorations/wonders/palace/back.jpg"
+  - id: palaceacademy
+    type: building
+    building: combatacademy
+    path: decorations/wonders
+    size:
+      x: 16
+      y: 2
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palaceacademy/front.jpg"
+  - id: palacearchery
+    type: building
+    building: archery
+    path: decorations/wonders
+    size:
+      x: 14
+      y: 2
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacearchery/front.jpg"
+  - id: palacebaker
+    type: building
+    building: baker
+    path: decorations/wonders
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacebaker/front.jpg"
+  - id: palacebarracks
+    type: building
+    building: barrackstower
+    path: decorations/wonders
+    size:
+      x: 24
+      y: 14
+      z: 27
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacebarracks/front.jpg"
+  - id: palacebartower
+    type: building
+    building: barrackstower
+    path: decorations/wonders
+    size:
+      x: 3
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacebartower/front.jpg"
+  - id: palacecourier
+    type: building
+    building: deliveryman
+    path: decorations/wonders
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacecourier/front.jpg"
+  - id: palacedoorguard
+    type: building
+    building: guardtower
+    path: decorations/wonders
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacedoorguard/front.jpg"
+  - id: palacekukuri
+    type: building
+    building: kitchen
+    path: decorations/wonders
+    size:
+      x: 11
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacekukuri/front.jpg"
+  - id: palaceres
+    type: building
+    building: citizen
+    path: decorations/wonders
+    size:
+      x: 3
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palaceres/front.jpg"
+  - id: palacewarehouse
+    type: building
+    building: warehouse
+    path: decorations/wonders
+    size:
+      x: 11
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/decorations/wonders/palacewarehouse/front.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 17
+      y: 20
+      z: 35
+    images:
+      - "@assets/images/schematics/shogun/education/library/front.jpg"
+      - "@assets/images/schematics/shogun/education/library/back.jpg"
+  - id: uniacademy
+    type: building
+    building: combatacademy
+    path: education
+    size:
+      x: 7
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/education/uniacademy/front.jpg"
+  - id: uniguard
+    type: building
+    building: guardtower
+    path: education
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/education/uniguard/front.jpg"
+  - id: unilibrary
+    type: building
+    building: library
+    path: education
+    size:
+      x: 5
+      y: 10
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/education/unilibrary/front.jpg"
+  - id: unischool
+    type: building
+    building: school
+    path: education
+    size:
+      x: 6
+      y: 6
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/education/unischool/front.jpg"
+  - id: university
+    type: building
+    building: guardtower
+    path: education
+    size:
+      x: 56
+      y: 27
+      z: 32
+    images:
+      - "@assets/images/schematics/shogun/education/university/front.jpg"
+      - "@assets/images/schematics/shogun/education/university/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals/builder
+    size:
+      x: 9
+      y: 14
+      z: 20
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/builder/builder/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/builder/builder/back.jpg"
+  - id: baker
+    type: building
+    building: baker
+    path: fundamentals/estates
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/baker/front.jpg"
+  - id: bakerestate
+    type: building
+    building: citizen
+    path: fundamentals/estates
+    size:
+      x: 16
+      y: 19
+      z: 32
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/bakerestate/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/estates/bakerestate/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: fundamentals/estates
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/dyer/front.jpg"
+  - id: dyerestate
+    type: building
+    building: citizen
+    path: fundamentals/estates
+    size:
+      x: 16
+      y: 19
+      z: 32
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/dyerestate/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/estates/dyerestate/back.jpg"
+  - id: glass
+    type: building
+    building: glassblower
+    path: fundamentals/estates
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/glass/front.jpg"
+  - id: glassestate
+    type: building
+    building: glassblower
+    path: fundamentals/estates
+    size:
+      x: 16
+      y: 19
+      z: 32
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/glassestate/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/estates/glassestate/back.jpg"
+  - id: guest
+    type: building
+    building: citizen
+    path: fundamentals/estates
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/estates/guest/front.jpg"
+  - id: hospital
+    type: building
+    building: guardtower
+    path: fundamentals/hospital
+    size:
+      x: 21
+      y: 43
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/hospital/hospital/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/hospital/hospital/back.jpg"
+  - id: hospitalguard
+    type: building
+    building: guardtower
+    path: fundamentals/hospital
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/hospital/hospitalguard/front.jpg"
+  - id: dockhouse
+    type: building
+    building: citizen
+    path: fundamentals/house
+    size:
+      x: 14
+      y: 17
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/dockhouse/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/house/dockhouse/back.jpg"
+  - id: dormi
+    type: building
+    building: citizen
+    path: fundamentals/house
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/dormi/front.jpg"
+  - id: dormo
+    type: building
+    building: citizen
+    path: fundamentals/house
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/dormo/front.jpg"
+  - id: houseguard
+    type: building
+    building: guardtower
+    path: fundamentals/house
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/houseguard/front.jpg"
+  - id: single_a
+    type: building
+    building: citizen
+    path: fundamentals/house
+    size:
+      x: 17
+      y: 15
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/single_a/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/house/single_a/back.jpg"
+  - id: single_b
+    type: building
+    building: citizen
+    path: fundamentals/house
+    size:
+      x: 17
+      y: 13
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/single_b/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/house/single_b/back.jpg"
+  - id: triplex_a
+    type: building
+    building: guardtower
+    path: fundamentals/house
+    size:
+      x: 17
+      y: 20
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/triplex_a/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/house/triplex_a/back.jpg"
+  - id: triplex_b
+    type: building
+    building: guardtower
+    path: fundamentals/house
+    size:
+      x: 18
+      y: 17
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/house/triplex_b/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/house/triplex_b/back.jpg"
+  - id: courier
+    type: building
+    building: citizen
+    path: fundamentals/machiya/end
+    size:
+      x: 12
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/courier/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/courier/back.jpg"
+  - id: dormi
+    type: building
+    building: citizen
+    path: fundamentals/machiya/end
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/dormi/front.jpg"
+  - id: dormo
+    type: building
+    building: citizen
+    path: fundamentals/machiya/end
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/dormo/front.jpg"
+  - id: dormu
+    type: building
+    building: citizen
+    path: fundamentals/machiya/end
+    size:
+      x: 4
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/dormu/front.jpg"
+  - id: enchant
+    type: building
+    building: citizen
+    path: fundamentals/machiya/end
+    size:
+      x: 12
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/enchant/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/enchant/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: fundamentals/machiya/end
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/enchanter/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/enchanter/back.jpg"
+  - id: stuffcart
+    type: building
+    building: deliveryman
+    path: fundamentals/machiya/end
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/stuffcart/front.jpg"
+  - id: triplexend
+    type: building
+    building: citizen
+    path: fundamentals/machiya/end
+    size:
+      x: 12
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/triplexend/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/end/triplexend/back.jpg"
+  - id: dormi
+    type: building
+    building: citizen
+    path: fundamentals/machiya/main
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/dormi/front.jpg"
+  - id: dormo
+    type: building
+    building: citizen
+    path: fundamentals/machiya/main
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/dormo/front.jpg"
+  - id: dormu
+    type: building
+    building: citizen
+    path: fundamentals/machiya/main
+    size:
+      x: 4
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/dormu/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/dormu/back.jpg"
+  - id: fourplex
+    type: building
+    building: citizen
+    path: fundamentals/machiya/main
+    size:
+      x: 11
+      y: 19
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/fourplex/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/fourplex/back.jpg"
+  - id: triplex
+    type: building
+    building: citizen
+    path: fundamentals/machiya/main
+    size:
+      x: 11
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/triplex/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/main/triplex/back.jpg"
+  - id: cook
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/cook/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/cook/back.jpg"
+  - id: cookery
+    type: building
+    building: kitchen
+    path: fundamentals/machiya/mid
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/cookery/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/cookery/back.jpg"
+  - id: dormi
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/dormi/front.jpg"
+  - id: dormo
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/dormo/front.jpg"
+  - id: dormu
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 4
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/dormu/front.jpg"
+  - id: fletch
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/fletch/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/fletch/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: fundamentals/machiya/mid
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/fletcher/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/fletcher/back.jpg"
+  - id: mech
+    type: building
+    building: mechanic
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/mech/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/mech/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: fundamentals/machiya/mid
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/mechanic/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/mechanic/back.jpg"
+  - id: plexmid_a
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_a/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_a/back.jpg"
+  - id: plexmid_b
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_b/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_b/back.jpg"
+  - id: plexmid_c
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_c/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_c/back.jpg"
+  - id: plexmid_d
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_d/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/plexmid_d/back.jpg"
+  - id: sift
+    type: building
+    building: citizen
+    path: fundamentals/machiya/mid
+    size:
+      x: 7
+      y: 18
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/sift/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/sift/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: fundamentals/machiya/mid
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/sifter/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/machiya/mid/sifter/back.jpg"
+  - id: forester
+    type: building
+    building: lumberjack
+    path: fundamentals/resources
+    size:
+      x: 21
+      y: 17
+      z: 27
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/forester/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/resources/forester/back.jpg"
+  - id: forestersub
+    type: building
+    building: lumberjack
+    path: fundamentals/resources
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/forestersub/front.jpg"
+  - id: mine
+    type: building
+    building: guardtower
+    path: fundamentals/resources
+    size:
+      x: 24
+      y: 25
+      z: 25
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/mine/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/resources/mine/back.jpg"
+  - id: minecourier
+    type: building
+    building: deliveryman
+    path: fundamentals/resources
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/minecourier/front.jpg"
+  - id: mineguard
+    type: building
+    building: guardtower
+    path: fundamentals/resources
+    size:
+      x: 3
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/mineguard/front.jpg"
+  - id: nethermine
+    type: building
+    building: netherworker
+    path: fundamentals/resources
+    size:
+      x: 5
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/nethermine/front.jpg"
+  - id: vault
+    type: decoration
+    path: fundamentals/resources
+    size:
+      x: 32
+      y: 10
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/vault/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/resources/vault/back.jpg"
+  - id: mediumquarrywithshaft
+    type: decoration
+    path: fundamentals/resources
+    size:
+      x: 49
+      y: 53
+      z: 34
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/resources/mediumquarrywithshaft/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/resources/mediumquarrywithshaft/back.jpg"
+  - id: restaurant
+    type: building
+    building: cook
+    path: fundamentals/restaurant
+    size:
+      x: 29
+      y: 19
+      z: 24
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/restaurant/restaurant/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/restaurant/restaurant/back.jpg"
+  - id: bouncer
+    type: building
+    building: guardtower
+    path: fundamentals/tavern
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/tavern/bouncer/front.jpg"
+  - id: tavern
+    type: building
+    building: guardtower
+    path: fundamentals/tavern
+    size:
+      x: 27
+      y: 19
+      z: 22
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/tavern/tavern/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/tavern/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals/town_hall
+    size:
+      x: 27
+      y: 25
+      z: 20
+    images:
+      - "@assets/images/schematics/shogun/fundamentals/town_hall/townhall/front.jpg"
+      - "@assets/images/schematics/shogun/fundamentals/town_hall/townhall/back.jpg"
+  - id: crossfour
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/crossfour/front.jpg"
+  - id: crossthree
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/crossthree/front.jpg"
+  - id: curve
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 9
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/curve/front.jpg"
+  - id: diag
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 18
+      y: 3
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/diag/front.jpg"
+  - id: diagshort
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 14
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/diagshort/front.jpg"
+  - id: end
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/end/front.jpg"
+  - id: endofbag
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 11
+      y: 3
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/endofbag/front.jpg"
+  - id: ess
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 11
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/ess/front.jpg"
+  - id: offset
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 10
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offset/front.jpg"
+  - id: offsetlong
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 10
+      y: 3
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offsetlong/front.jpg"
+  - id: offsetlongxfour
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 8
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offsetlongxfour/front.jpg"
+  - id: offsetlongxthree
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 8
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offsetlongxthree/front.jpg"
+  - id: offsetshort
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 9
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offsetshort/front.jpg"
+  - id: offsetxfour
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 9
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offsetxfour/front.jpg"
+  - id: offsetxthree
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 9
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/offsetxthree/front.jpg"
+  - id: shim
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 2
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/shim/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/short/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/straight/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turn/front.jpg"
+  - id: turncorner
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turncorner/front.jpg"
+  - id: turnfive
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 12
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turnfive/front.jpg"
+  - id: turnfiveupthree
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 12
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turnfiveupthree/front.jpg"
+  - id: turnnine
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 16
+      y: 3
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turnnine/front.jpg"
+  - id: turnnineupfive
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 16
+      y: 8
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turnnineupfive/front.jpg"
+  - id: turnthree
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 10
+      y: 3
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turnthree/front.jpg"
+  - id: turnthreeuptwo
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 10
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/turnthreeuptwo/front.jpg"
+  - id: upone
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/upone/front.jpg"
+  - id: uponelong
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uponelong/front.jpg"
+  - id: uponeoffset
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 9
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uponeoffset/front.jpg"
+  - id: uponestair
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 1
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uponestair/front.jpg"
+  - id: uponesteep
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 2
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uponesteep/front.jpg"
+  - id: upthree
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 5
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/upthree/front.jpg"
+  - id: upthreestair
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/upthreestair/front.jpg"
+  - id: uptwo
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uptwo/front.jpg"
+  - id: uptwolong
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 4
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uptwolong/front.jpg"
+  - id: uptwooffset
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 9
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uptwooffset/front.jpg"
+  - id: uptwostair
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 2
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uptwostair/front.jpg"
+  - id: uptwosteep
+    type: decoration
+    path: infrastructure/avenue
+    size:
+      x: 7
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/avenue/uptwosteep/front.jpg"
+  - id: avenueendwall
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 3
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/avenueendwall/front.jpg"
+  - id: flat
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/flat/front.jpg"
+  - id: flatlamps
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/flatlamps/front.jpg"
+  - id: ramparch
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 14
+      y: 9
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/ramparch/front.jpg"
+  - id: rampone
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/rampone/front.jpg"
+  - id: rampsix
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 7
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/rampsix/front.jpg"
+  - id: ramptwo
+    type: decoration
+    path: infrastructure/bridge/avenue/mangrove
+    size:
+      x: 7
+      y: 4
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/mangrove/ramptwo/front.jpg"
+  - id: guardpier
+    type: building
+    building: guardtower
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 15
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/guardpier/front.jpg"
+  - id: pier_guard
+    type: building
+    building: guardtower
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/pier_guard/front.jpg"
+  - id: stonebottom
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 9
+      y: 4
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonebottom/front.jpg"
+  - id: stonebottom_rfour
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 9
+      y: 4
+      z: 19
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonebottom_rfour/front.jpg"
+  - id: stonecobbletoptomid
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 2
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonecobbletoptomid/front.jpg"
+  - id: stonecobbletop_rfour
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 3
+      y: 4
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonecobbletop_rfour/front.jpg"
+  - id: stonemangrovetop
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonemangrovetop/front.jpg"
+  - id: stonemid
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 4
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonemid/front.jpg"
+  - id: stonemid_rfour
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 7
+      y: 4
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonemid_rfour/front.jpg"
+  - id: stonesprucetop
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonesprucetop/front.jpg"
+  - id: stonetop
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 8
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonetop/front.jpg"
+  - id: stonetoplowerfoot
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 3
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonetoplowerfoot/front.jpg"
+  - id: stonetop_rfour
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 5
+      y: 4
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stonetop_rfour/front.jpg"
+  - id: stone_rmid
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 2
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stone_rmid/front.jpg"
+  - id: stone_rside
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 3
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/stone_rside/front.jpg"
+  - id: woodbottom
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 3
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/woodbottom/front.jpg"
+  - id: woodbottom_r
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 1
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/woodbottom_r/front.jpg"
+  - id: woodbottom_rside
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 1
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/woodbottom_rside/front.jpg"
+  - id: woodmid
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 3
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/woodmid/front.jpg"
+  - id: woodtop
+    type: decoration
+    path: infrastructure/bridge/avenue/pier
+    size:
+      x: 3
+      y: 5
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/pier/woodtop/front.jpg"
+  - id: avenueendwall
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 3
+      y: 5
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/avenueendwall/front.jpg"
+  - id: bridgestart
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 3
+      y: 6
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/bridgestart/front.jpg"
+  - id: flat
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 7
+      y: 2
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/flat/front.jpg"
+  - id: flatlamps
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/flatlamps/front.jpg"
+  - id: ramparch
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 14
+      y: 9
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/ramparch/front.jpg"
+  - id: rampone
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/rampone/front.jpg"
+  - id: rampsix
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 7
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/rampsix/front.jpg"
+  - id: ramptwo
+    type: decoration
+    path: infrastructure/bridge/avenue/spruce
+    size:
+      x: 7
+      y: 4
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/spruce/ramptwo/front.jpg"
+  - id: span
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 13
+      y: 6
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/span/front.jpg"
+  - id: spanlong
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 23
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/spanlong/front.jpg"
+  - id: spanslopeone
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 13
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/spanslopeone/front.jpg"
+  - id: spanslopethree
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 13
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/spanslopethree/front.jpg"
+  - id: spanslopetwo
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 13
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/spanslopetwo/front.jpg"
+  - id: startraisedflat
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 9
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/startraisedflat/front.jpg"
+  - id: startramp
+    type: decoration
+    path: infrastructure/bridge/avenue/stone
+    size:
+      x: 13
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/avenue/stone/startramp/front.jpg"
+  - id: flat
+    type: decoration
+    path: infrastructure/bridge/road/spruce
+    size:
+      x: 6
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/road/spruce/flat/front.jpg"
+  - id: pier
+    type: decoration
+    path: infrastructure/bridge/road/spruce
+    size:
+      x: 3
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/road/spruce/pier/front.jpg"
+  - id: pier_rzag
+    type: decoration
+    path: infrastructure/bridge/road/spruce
+    size:
+      x: 3
+      y: 7
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/road/spruce/pier_rzag/front.jpg"
+  - id: rampone
+    type: decoration
+    path: infrastructure/bridge/road/spruce
+    size:
+      x: 6
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/road/spruce/rampone/front.jpg"
+  - id: ramptwo
+    type: decoration
+    path: infrastructure/bridge/road/spruce
+    size:
+      x: 6
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/bridge/road/spruce/ramptwo/front.jpg"
+  - id: floodedfield
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 4
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/floodedfield/front.jpg"
+  - id: rickshaw
+    type: building
+    building: deliveryman
+    path: infrastructure/fields/farm
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/rickshaw/front.jpg"
+  - id: simpledouble
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 5
+      z: 25
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/simpledouble/front.jpg"
+  - id: simpledoubleslope
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 7
+      z: 25
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/simpledoubleslope/front.jpg"
+  - id: simplesingle
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 6
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/simplesingle/front.jpg"
+  - id: simpletriple
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 8
+      z: 37
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/simpletriple/front.jpg"
+  - id: simpletripleslope
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 9
+      z: 37
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/simpletripleslope/front.jpg"
+  - id: terracedouble
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 24
+      y: 7
+      z: 22
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/terracedouble/front.jpg"
+  - id: terracesingle
+    type: decoration
+    path: infrastructure/fields/farm
+    size:
+      x: 13
+      y: 7
+      z: 17
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/terracesingle/front.jpg"
+  - id: terracetriple
+    type: building
+    building: deliveryman
+    path: infrastructure/fields/farm
+    size:
+      x: 41
+      y: 7
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/farm/terracetriple/front.jpg"
+  - id: bamboo
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 15
+      y: 7
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/bamboo/front.jpg"
+  - id: cactus
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 16
+      y: 6
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/cactus/front.jpg"
+  - id: cocoa_vine
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 15
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/cocoa_vine/front.jpg"
+  - id: glowberries
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 16
+      y: 11
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/glowberries/front.jpg"
+  - id: nether
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 15
+      y: 14
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/nether/front.jpg"
+  - id: ocean
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 16
+      y: 14
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/ocean/front.jpg"
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/ocean/back.jpg"
+  - id: sugar
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 15
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/sugar/front.jpg"
+  - id: sugaralt
+    type: decoration
+    path: infrastructure/fields/plantation
+    size:
+      x: 14
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/fields/plantation/sugaralt/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 5
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/corner/front.jpg"
+  - id: crossfour
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 6
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/crossfour/front.jpg"
+  - id: crossfourwood
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/crossfourwood/front.jpg"
+  - id: crossthree
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 6
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/crossthree/front.jpg"
+  - id: end
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 2
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/end/front.jpg"
+  - id: gate
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 6
+      y: 10
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/gate/front.jpg"
+  - id: shim
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 1
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/shim/front.jpg"
+  - id: shimlantern
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 4
+      y: 9
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/shimlantern/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 4
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/short/front.jpg"
+  - id: shortopen
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 4
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/shortopen/front.jpg"
+  - id: shortwood
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 3
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/shortwood/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 4
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/straight/front.jpg"
+  - id: straightwood
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 3
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/straightwood/front.jpg"
+  - id: wharf
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 10
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/wharf/front.jpg"
+  - id: wharfend
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 10
+      y: 11
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/wharfend/front.jpg"
+  - id: wood_rfour
+    type: decoration
+    path: infrastructure/harbor/pier
+    size:
+      x: 4
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/pier/wood_rfour/front.jpg"
+  - id: cornerdiagin
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 11
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/cornerdiagin/front.jpg"
+  - id: cornerdiagout
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 10
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/cornerdiagout/front.jpg"
+  - id: cornerin
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 11
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/cornerin/front.jpg"
+  - id: cornerinsteps
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 11
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/cornerinsteps/front.jpg"
+  - id: cornerout
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 10
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/cornerout/front.jpg"
+  - id: corneroutsteps
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 10
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/corneroutsteps/front.jpg"
+  - id: dredge_brush
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 13
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/dredge_brush/front.jpg"
+  - id: end
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 7
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/end/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 11
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/long/front.jpg"
+  - id: piertee
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 12
+      y: 13
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/piertee/front.jpg"
+  - id: ramp
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 6
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/ramp/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 4
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/short/front.jpg"
+  - id: wharftee
+    type: decoration
+    path: infrastructure/harbor/seawall
+    size:
+      x: 10
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/harbor/seawall/wharftee/front.jpg"
+  - id: aveupone
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 1
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/aveupone/front.jpg"
+  - id: aveuponelong
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 1
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/aveuponelong/front.jpg"
+  - id: aveuptwo
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 1
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/aveuptwo/front.jpg"
+  - id: aveuptwolong
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 1
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/aveuptwolong/front.jpg"
+  - id: roadfive
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 5
+      y: 6
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/roadfive/front.jpg"
+  - id: roadfour
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 4
+      y: 5
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/roadfour/front.jpg"
+  - id: roadsix
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 6
+      y: 7
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/roadsix/front.jpg"
+  - id: roadthree
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 3
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/roadthree/front.jpg"
+  - id: roadtwo
+    type: decoration
+    path: infrastructure/retainingwall/incline
+    size:
+      x: 2
+      y: 3
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/incline/roadtwo/front.jpg"
+  - id: bottom_rise
+    type: decoration
+    path: infrastructure/retainingwall/sideramp
+    size:
+      x: 8
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/sideramp/bottom_rise/front.jpg"
+  - id: bottom_run
+    type: decoration
+    path: infrastructure/retainingwall/sideramp
+    size:
+      x: 8
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/sideramp/bottom_run/front.jpg"
+  - id: mid_rise
+    type: decoration
+    path: infrastructure/retainingwall/sideramp
+    size:
+      x: 9
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/sideramp/mid_rise/front.jpg"
+  - id: mid_run
+    type: decoration
+    path: infrastructure/retainingwall/sideramp
+    size:
+      x: 8
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/sideramp/mid_run/front.jpg"
+  - id: top
+    type: decoration
+    path: infrastructure/retainingwall/sideramp
+    size:
+      x: 9
+      y: 6
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/sideramp/top/front.jpg"
+  - id: bottomoffset_reight
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 10
+      y: 9
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/bottomoffset_reight/front.jpg"
+  - id: bottomoffset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 6
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/bottomoffset_rfour/front.jpg"
+  - id: bottom_reight
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 10
+      y: 9
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/bottom_reight/front.jpg"
+  - id: bottom_rfour
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 6
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/bottom_rfour/front.jpg"
+  - id: midoffset_reight
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 8
+      y: 9
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/midoffset_reight/front.jpg"
+  - id: midoffset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 4
+      y: 5
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/midoffset_rfour/front.jpg"
+  - id: mid_rfour
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 4
+      y: 5
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/mid_rfour/front.jpg"
+  - id: risermid
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 4
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/risermid/front.jpg"
+  - id: risermidoffset
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 4
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/risermidoffset/front.jpg"
+  - id: risermidstair
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 4
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/risermidstair/front.jpg"
+  - id: riserthin
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 2
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/riserthin/front.jpg"
+  - id: risertop
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 2
+      y: 8
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/risertop/front.jpg"
+  - id: top
+    type: decoration
+    path: infrastructure/retainingwall/stair
+    size:
+      x: 3
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/stair/top/front.jpg"
+  - id: bottom_in_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 5
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/bottom_in_reight/front.jpg"
+  - id: bottom_in_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/bottom_in_rfour/front.jpg"
+  - id: bottom_out_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 5
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/bottom_out_reight/front.jpg"
+  - id: bottom_out_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/bottom_out_rfour/front.jpg"
+  - id: ess_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 4
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/ess_reight/front.jpg"
+  - id: ess_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 4
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/ess_rfour/front.jpg"
+  - id: mid_in_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 5
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/mid_in_reight/front.jpg"
+  - id: mid_in_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/mid_in_rfour/front.jpg"
+  - id: mid_out_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 4
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/mid_out_reight/front.jpg"
+  - id: mid_out_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 3
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/mid_out_rfour/front.jpg"
+  - id: top_in_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 6
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/top_in_plain/front.jpg"
+  - id: top_in_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 6
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/top_in_shingle/front.jpg"
+  - id: top_in_tall_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 6
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/top_in_tall_shingle/front.jpg"
+  - id: top_out_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 2
+      y: 3
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/top_out_plain/front.jpg"
+  - id: top_out_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 2
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/top_out_shingle/front.jpg"
+  - id: top_out_tall_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/corner
+    size:
+      x: 2
+      y: 5
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/corner/top_out_tall_shingle/front.jpg"
+  - id: bottom_diag_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_diag_reight/front.jpg"
+  - id: bottom_diag_reight_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_diag_reight_m/front.jpg"
+  - id: bottom_diag_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 4
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_diag_rfour/front.jpg"
+  - id: bottom_diag_rfour_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 4
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_diag_rfour_m/front.jpg"
+  - id: bottom_offset_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 12
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_offset_reight/front.jpg"
+  - id: bottom_offset_reight_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 12
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_offset_reight_m/front.jpg"
+  - id: bottom_offset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 12
+      y: 4
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_offset_rfour/front.jpg"
+  - id: bottom_offset_rfour_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 12
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_offset_rfour_m/front.jpg"
+  - id: bottom_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 11
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_reight/front.jpg"
+  - id: bottom_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 11
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/bottom_rfour/front.jpg"
+  - id: mid_diag_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 8
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_diag_reight/front.jpg"
+  - id: mid_diag_reight_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 8
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_diag_reight_m/front.jpg"
+  - id: mid_diag_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_diag_rfour/front.jpg"
+  - id: mid_diag_rfour_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 8
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_diag_rfour_m/front.jpg"
+  - id: mid_offset_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 12
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_offset_reight/front.jpg"
+  - id: mid_offset_reight_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 11
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_offset_reight_m/front.jpg"
+  - id: mid_offset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 12
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_offset_rfour/front.jpg"
+  - id: mid_offset_rfour_m
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 11
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_offset_rfour_m/front.jpg"
+  - id: mid_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 11
+      y: 8
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_reight/front.jpg"
+  - id: mid_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/footrise
+    size:
+      x: 11
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/footrise/mid_rfour/front.jpg"
+  - id: bottom_diag_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 8
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/bottom_diag_reight/front.jpg"
+  - id: bottom_diag_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 8
+      y: 4
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/bottom_diag_rfour/front.jpg"
+  - id: bottom_offset_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/bottom_offset_reight/front.jpg"
+  - id: bottom_offset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 4
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/bottom_offset_rfour/front.jpg"
+  - id: bottom_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 11
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/bottom_reight/front.jpg"
+  - id: bottom_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 11
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/bottom_rfour/front.jpg"
+  - id: flatedge
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 1
+      y: 4
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/flatedge/front.jpg"
+  - id: mid_diag_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 8
+      y: 8
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/mid_diag_reight/front.jpg"
+  - id: mid_diag_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 8
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/mid_diag_rfour/front.jpg"
+  - id: mid_offset_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/mid_offset_reight/front.jpg"
+  - id: mid_offset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/mid_offset_rfour/front.jpg"
+  - id: mid_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 8
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/mid_reight/front.jpg"
+  - id: mid_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/mid_rfour/front.jpg"
+  - id: top_diag_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 11
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_diag_plain/front.jpg"
+  - id: top_diag_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 11
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_diag_shingle/front.jpg"
+  - id: top_offset_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_offset_plain/front.jpg"
+  - id: top_offset_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_offset_shingle/front.jpg"
+  - id: top_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 3
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_plain/front.jpg"
+  - id: top_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_shingle/front.jpg"
+  - id: top_shingle_hang
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 5
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_shingle_hang/front.jpg"
+  - id: top_tall_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/long
+    size:
+      x: 12
+      y: 5
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/long/top_tall_shingle/front.jpg"
+  - id: bottom_diag_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/bottom_diag_reight/front.jpg"
+  - id: bottom_diag_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/bottom_diag_rfour/front.jpg"
+  - id: bottom_offset_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/bottom_offset_reight/front.jpg"
+  - id: bottom_offset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/bottom_offset_rfour/front.jpg"
+  - id: bottom_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/bottom_reight/front.jpg"
+  - id: flatedge
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 1
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/flatedge/front.jpg"
+  - id: mid_diag_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/mid_diag_reight/front.jpg"
+  - id: mid_diag_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/mid_diag_rfour/front.jpg"
+  - id: mid_offset_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/mid_offset_reight/front.jpg"
+  - id: mid_offset_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/mid_offset_rfour/front.jpg"
+  - id: mid_reight
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 8
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/mid_reight/front.jpg"
+  - id: mid_rfour
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/mid_rfour/front.jpg"
+  - id: top_diag_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 7
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_diag_plain/front.jpg"
+  - id: top_diag_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 7
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_diag_shingle/front.jpg"
+  - id: top_offset_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_offset_plain/front.jpg"
+  - id: top_offset_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_offset_shingle/front.jpg"
+  - id: top_plain
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 3
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_plain/front.jpg"
+  - id: top_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_shingle/front.jpg"
+  - id: top_shingle_lamp
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_shingle_lamp/front.jpg"
+  - id: top_tall_shingle
+    type: decoration
+    path: infrastructure/retainingwall/wall/short
+    size:
+      x: 4
+      y: 5
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/retainingwall/wall/short/top_tall_shingle/front.jpg"
+  - id: bend
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 12
+      y: 1
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/bend/front.jpg"
+  - id: bend_short
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 6
+      y: 1
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/bend_short/front.jpg"
+  - id: crossfour
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/crossfour/front.jpg"
+  - id: crossthree
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/crossthree/front.jpg"
+  - id: curve
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 10
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/curve/front.jpg"
+  - id: diag
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 8
+      y: 1
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/diag/front.jpg"
+  - id: diagshort
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 2
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/diagshort/front.jpg"
+  - id: halfincline
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 2
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/halfincline/front.jpg"
+  - id: halfinclinethree
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 6
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/halfinclinethree/front.jpg"
+  - id: halfinclinetwo
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/halfinclinetwo/front.jpg"
+  - id: offset
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 12
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/offset/front.jpg"
+  - id: offset_short
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 6
+      y: 1
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/offset_short/front.jpg"
+  - id: quartercline
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/quartercline/front.jpg"
+  - id: quarterclinetwo
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 8
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/quarterclinetwo/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/short/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 1
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/stair/front.jpg"
+  - id: stairfive
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 5
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/stairfive/front.jpg"
+  - id: stairfour
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/stairfour/front.jpg"
+  - id: stairsix
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 6
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/stairsix/front.jpg"
+  - id: stairthree
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 3
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/stairthree/front.jpg"
+  - id: stairtwo
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 2
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/stairtwo/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 12
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/straight/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/turn/front.jpg"
+  - id: turnwide
+    type: decoration
+    path: infrastructure/road/dark
+    size:
+      x: 7
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/dark/turnwide/front.jpg"
+  - id: bend
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 12
+      y: 1
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/bend/front.jpg"
+  - id: bend_short
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 6
+      y: 1
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/bend_short/front.jpg"
+  - id: crossfour
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/crossfour/front.jpg"
+  - id: crossthree
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/crossthree/front.jpg"
+  - id: diag
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 8
+      y: 1
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/diag/front.jpg"
+  - id: diagshort
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 2
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/diagshort/front.jpg"
+  - id: halfincline
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 2
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/halfincline/front.jpg"
+  - id: halfinclinethree
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 6
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/halfinclinethree/front.jpg"
+  - id: halfinclinetwo
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/halfinclinetwo/front.jpg"
+  - id: offset
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 12
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/offset/front.jpg"
+  - id: offset_short
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 6
+      y: 1
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/offset_short/front.jpg"
+  - id: quartercline
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/quartercline/front.jpg"
+  - id: quarterclinetwo
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 8
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/quarterclinetwo/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/short/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 1
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/stair/front.jpg"
+  - id: stairfive
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 5
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/stairfive/front.jpg"
+  - id: stairfour
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/stairfour/front.jpg"
+  - id: stairsix
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 6
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/stairsix/front.jpg"
+  - id: stairthree
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 3
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/stairthree/front.jpg"
+  - id: stairtwo
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 2
+      y: 2
+      z: 1
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/stairtwo/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 12
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/straight/front.jpg"
+  - id: turn
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 4
+      y: 1
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/turn/front.jpg"
+  - id: turnwide
+    type: decoration
+    path: infrastructure/road/light
+    size:
+      x: 7
+      y: 1
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/road/light/turnwide/front.jpg"
+  - id: bulge
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 14
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/bulge/front.jpg"
+  - id: diag
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 8
+      y: 5
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/diag/front.jpg"
+  - id: offset_a
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/offset_a/front.jpg"
+  - id: offset_b
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/offset_b/front.jpg"
+  - id: pinch
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/pinch/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 6
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/short/front.jpg"
+  - id: stairsetin
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 3
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/stairsetin/front.jpg"
+  - id: stairsetout
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 4
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/stairsetout/front.jpg"
+  - id: stairsetside
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 5
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/stairsetside/front.jpg"
+  - id: steps
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 10
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/steps/front.jpg"
+  - id: steps_u
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 9
+      y: 7
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/steps_u/front.jpg"
+  - id: straight_a
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/straight_a/front.jpg"
+  - id: straight_b
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/straight_b/front.jpg"
+  - id: straight_c
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/straight_c/front.jpg"
+  - id: taper
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 11
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/taper/front.jpg"
+  - id: turnin
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 12
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/turnin/front.jpg"
+  - id: turnout
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 14
+      y: 5
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/turnout/front.jpg"
+  - id: turnshortin
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 9
+      y: 5
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/turnshortin/front.jpg"
+  - id: turnshortout
+    type: decoration
+    path: infrastructure/terrace/shallow
+    size:
+      x: 8
+      y: 5
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/terrace/shallow/turnshortout/front.jpg"
+  - id: bridge
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 4
+      y: 3
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/bridge/front.jpg"
+  - id: diag
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 14
+      y: 3
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/diag/front.jpg"
+  - id: diagadapt
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/diagadapt/front.jpg"
+  - id: diagshort
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 9
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/diagshort/front.jpg"
+  - id: ess
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 9
+      y: 4
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/ess/front.jpg"
+  - id: offset
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 6
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/offset/front.jpg"
+  - id: offsetshort
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/offsetshort/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 4
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/short/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 4
+      y: 3
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/straight/front.jpg"
+  - id: turneleven
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 14
+      y: 4
+      z: 15
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/turneleven/front.jpg"
+  - id: turnfive
+    type: decoration
+    path: infrastructure/waterway/flat
+    size:
+      x: 9
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/flat/turnfive/front.jpg"
+  - id: offsetfourp
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 6
+      y: 7
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/offsetfourp/front.jpg"
+  - id: offsetoneup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 6
+      y: 4
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/offsetoneup/front.jpg"
+  - id: offsetthreeup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 6
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/offsetthreeup/front.jpg"
+  - id: offsettwoup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 6
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/offsettwoup/front.jpg"
+  - id: shortfourth
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/shortfourth/front.jpg"
+  - id: shorthalf
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/shorthalf/front.jpg"
+  - id: shortthird
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/shortthird/front.jpg"
+  - id: straightfourup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 7
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/straightfourup/front.jpg"
+  - id: straightoneup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 4
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/straightoneup/front.jpg"
+  - id: straightsixup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 9
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/straightsixup/front.jpg"
+  - id: straightthreeup
+    type: decoration
+    path: infrastructure/waterway/slope
+    size:
+      x: 4
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/slope/straightthreeup/front.jpg"
+  - id: bigwide
+    type: decoration
+    path: infrastructure/waterway/wheels
+    size:
+      x: 4
+      y: 9
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/wheels/bigwide/front.jpg"
+  - id: midwide
+    type: decoration
+    path: infrastructure/waterway/wheels
+    size:
+      x: 4
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/wheels/midwide/front.jpg"
+  - id: smallwide
+    type: decoration
+    path: infrastructure/waterway/wheels
+    size:
+      x: 4
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/infrastructure/waterway/wheels/smallwide/front.jpg"
+  - id: auxcastle
+    type: building
+    building: combatacademy
+    path: military/castle
+    size:
+      x: 38
+      y: 22
+      z: 19
+    images:
+      - "@assets/images/schematics/shogun/military/castle/auxcastle/front.jpg"
+      - "@assets/images/schematics/shogun/military/castle/auxcastle/back.jpg"
+  - id: castle
+    type: building
+    building: combatacademy
+    path: military/castle
+    size:
+      x: 34
+      y: 37
+      z: 30
+    images:
+      - "@assets/images/schematics/shogun/military/castle/castle/front.jpg"
+      - "@assets/images/schematics/shogun/military/castle/castle/back.jpg"
+  - id: castleacademy
+    type: building
+    building: combatacademy
+    path: military/castle
+    size:
+      x: 2
+      y: 2
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/military/castle/castleacademy/front.jpg"
+  - id: castlearchery
+    type: building
+    building: archery
+    path: military/castle
+    size:
+      x: 18
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/military/castle/castlearchery/front.jpg"
+  - id: castlearchery_m
+    type: building
+    building: archery
+    path: military/castle
+    size:
+      x: 18
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/military/castle/castlearchery_m/front.jpg"
+  - id: castledorm
+    type: building
+    building: citizen
+    path: military/castle
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/military/castle/castledorm/front.jpg"
+  - id: castletower
+    type: building
+    building: barrackstower
+    path: military/castle
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/military/castle/castletower/front.jpg"
+  - id: longhouse
+    type: building
+    building: barrackstower
+    path: military/castle
+    size:
+      x: 37
+      y: 18
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/military/castle/longhouse/front.jpg"
+      - "@assets/images/schematics/shogun/military/castle/longhouse/back.jpg"
+  - id: multitower
+    type: building
+    building: guardtower
+    path: military/castle
+    size:
+      x: 18
+      y: 36
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/military/castle/multitower/front.jpg"
+      - "@assets/images/schematics/shogun/military/castle/multitower/back.jpg"
+  - id: multitowershort
+    type: building
+    building: guardtower
+    path: military/castle
+    size:
+      x: 18
+      y: 31
+      z: 18
+    images:
+      - "@assets/images/schematics/shogun/military/castle/multitowershort/front.jpg"
+      - "@assets/images/schematics/shogun/military/castle/multitowershort/back.jpg"
+  - id: towerguard
+    type: building
+    building: guardtower
+    path: military/castle
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/military/castle/towerguard/front.jpg"
+  - id: fieldtower
+    type: building
+    building: guardtower
+    path: military/field_tower
+    size:
+      x: 9
+      y: 28
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/military/field_tower/fieldtower/front.jpg"
+  - id: sekibune
+    type: building
+    building: guardtower
+    path: military/ship
+    size:
+      x: 36
+      y: 31
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/military/ship/sekibune/front.jpg"
+      - "@assets/images/schematics/shogun/military/ship/sekibune/back.jpg"
+  - id: shipguard
+    type: building
+    building: guardtower
+    path: military/ship
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/military/ship/shipguard/front.jpg"
+  - id: dogoonsen_no_mirror
+    type: building
+    building: hospital
+    path: mystic
+    size:
+      x: 36
+      y: 27
+      z: 43
+    images:
+      - "@assets/images/schematics/shogun/mystic/dogoonsen_no_mirror/front.jpg"
+      - "@assets/images/schematics/shogun/mystic/dogoonsen_no_mirror/back.jpg"
+  - id: graveguard
+    type: building
+    building: guardtower
+    path: mystic
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/mystic/graveguard/front.jpg"
+  - id: graveyard
+    type: building
+    building: guardtower
+    path: mystic
+    size:
+      x: 19
+      y: 18
+      z: 35
+    images:
+      - "@assets/images/schematics/shogun/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/shogun/mystic/graveyard/back.jpg"
+  - id: koyagraveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 44
+      y: 10
+      z: 84
+    images:
+      - "@assets/images/schematics/shogun/mystic/koyagraveyard/front.jpg"
+  - id: koyakitchen
+    type: building
+    building: cook
+    path: mystic
+    size:
+      x: 22
+      y: 10
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/mystic/koyakitchen/front.jpg"
+  - id: mountkoya
+    type: building
+    building: cook
+    path: mystic
+    size:
+      x: 85
+      y: 48
+      z: 85
+    images:
+      - "@assets/images/schematics/shogun/mystic/mountkoya/front.jpg"
+      - "@assets/images/schematics/shogun/mystic/mountkoya/back.jpg"
+  - id: smalldorm
+    type: building
+    building: citizen
+    path: mystic
+    size:
+      x: 5
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/mystic/smalldorm/front.jpg"
+  - id: subalchemist
+    type: building
+    building: alchemist
+    path: mystic
+    size:
+      x: 33
+      y: 18
+      z: 42
+    images:
+      - "@assets/images/schematics/shogun/mystic/subalchemist/front.jpg"
+  - id: subflowers
+    type: building
+    building: florist
+    path: mystic
+    size:
+      x: 9
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/mystic/subflowers/front.jpg"
+      - "@assets/images/schematics/shogun/mystic/subflowers/back.jpg"
+  - id: subhospital
+    type: building
+    building: hospital
+    path: mystic
+    size:
+      x: 5
+      y: 2
+      z: 19
+    images:
+      - "@assets/images/schematics/shogun/mystic/subhospital/front.jpg"
+  - id: subrickshaw
+    type: building
+    building: deliveryman
+    path: mystic
+    size:
+      x: 3
+      y: 2
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/mystic/subrickshaw/front.jpg"
+  - id: subtopfloor
+    type: building
+    building: citizen
+    path: mystic
+    size:
+      x: 9
+      y: 2
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/mystic/subtopfloor/front.jpg"
+  - id: cornerin
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 6
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/cornerin/front.jpg"
+  - id: cornerout
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 6
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/cornerout/front.jpg"
+  - id: double
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 16
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/double/front.jpg"
+  - id: endcap
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 8
+      y: 8
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/endcap/front.jpg"
+  - id: shim
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 1
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/shim/front.jpg"
+  - id: short
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 4
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/short/front.jpg"
+  - id: straight
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 9
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/straight/front.jpg"
+  - id: towngate
+    type: decoration
+    path: walls/castle/early
+    size:
+      x: 9
+      y: 10
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/early/towngate/front.jpg"
+  - id: cornerin
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 6
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/cornerin/front.jpg"
+  - id: cornerout
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 6
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/cornerout/front.jpg"
+  - id: double
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 16
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/double/front.jpg"
+  - id: endcap
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 8
+      y: 8
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/endcap/front.jpg"
+  - id: shim
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 1
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/shim/front.jpg"
+  - id: short
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 4
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/short/front.jpg"
+  - id: straight
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 9
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/straight/front.jpg"
+  - id: towngate
+    type: decoration
+    path: walls/castle/late
+    size:
+      x: 9
+      y: 10
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/castle/late/towngate/front.jpg"
+  - id: cornerinround
+    type: decoration
+    path: walls/city_flat/corner
+    size:
+      x: 8
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/corner/cornerinround/front.jpg"
+  - id: cornerinsquare
+    type: decoration
+    path: walls/city_flat/corner
+    size:
+      x: 8
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/corner/cornerinsquare/front.jpg"
+  - id: corneroutround
+    type: decoration
+    path: walls/city_flat/corner
+    size:
+      x: 8
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/corner/corneroutround/front.jpg"
+  - id: corneroutsquare
+    type: decoration
+    path: walls/city_flat/corner
+    size:
+      x: 8
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/corner/corneroutsquare/front.jpg"
+  - id: diag
+    type: decoration
+    path: walls/city_flat/diag
+    size:
+      x: 22
+      y: 12
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/diag/diag/front.jpg"
+  - id: diagadaptin
+    type: decoration
+    path: walls/city_flat/diag
+    size:
+      x: 14
+      y: 12
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/diag/diagadaptin/front.jpg"
+  - id: diagadaptout
+    type: decoration
+    path: walls/city_flat/diag
+    size:
+      x: 14
+      y: 12
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/diag/diagadaptout/front.jpg"
+  - id: diagshort
+    type: decoration
+    path: walls/city_flat/diag
+    size:
+      x: 16
+      y: 12
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/diag/diagshort/front.jpg"
+  - id: diagwedge
+    type: decoration
+    path: walls/city_flat/diag
+    size:
+      x: 8
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/diag/diagwedge/front.jpg"
+  - id: offset
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 12
+      y: 12
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/offset/front.jpg"
+  - id: offsetadaptstraight
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 9
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/offsetadaptstraight/front.jpg"
+  - id: offsetadaptstr_inverse
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 9
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/offsetadaptstr_inverse/front.jpg"
+  - id: offsetflatsides
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 12
+      y: 12
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/offsetflatsides/front.jpg"
+  - id: offsetshort
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 10
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/offsetshort/front.jpg"
+  - id: offsetshortflatsides
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 10
+      y: 12
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/offsetshortflatsides/front.jpg"
+  - id: staircase
+    type: decoration
+    path: walls/city_flat/offset
+    size:
+      x: 12
+      y: 12
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/offset/staircase/front.jpg"
+  - id: intersectadapt
+    type: decoration
+    path: walls/city_flat/straight
+    size:
+      x: 4
+      y: 12
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/straight/intersectadapt/front.jpg"
+  - id: staircase
+    type: decoration
+    path: walls/city_flat/straight
+    size:
+      x: 10
+      y: 12
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/straight/staircase/front.jpg"
+  - id: straight
+    type: decoration
+    path: walls/city_flat/straight
+    size:
+      x: 8
+      y: 12
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/straight/straight/front.jpg"
+  - id: straightshort
+    type: decoration
+    path: walls/city_flat/straight
+    size:
+      x: 8
+      y: 12
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_flat/straight/straightshort/front.jpg"
+  - id: gatepost
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 2
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/gatepost/front.jpg"
+  - id: houseofpain
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 19
+      y: 20
+      z: 35
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/houseofpain/front.jpg"
+      - "@assets/images/schematics/shogun/walls/city_gate/houseofpain/back.jpg"
+  - id: offsetavearch
+    type: decoration
+    path: walls/city_gate
+    size:
+      x: 12
+      y: 12
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/offsetavearch/front.jpg"
+  - id: offsetavearchgate
+    type: decoration
+    path: walls/city_gate
+    size:
+      x: 12
+      y: 12
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/offsetavearchgate/front.jpg"
+  - id: offsetroadarch
+    type: decoration
+    path: walls/city_gate
+    size:
+      x: 12
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/offsetroadarch/front.jpg"
+  - id: offsetroadarchgate
+    type: decoration
+    path: walls/city_gate
+    size:
+      x: 12
+      y: 12
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/offsetroadarchgate/front.jpg"
+  - id: paintower
+    type: building
+    building: barrackstower
+    path: walls/city_gate
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/paintower/front.jpg"
+  - id: straightavearchgateguards
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 8
+      y: 14
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightavearchgateguards/front.jpg"
+  - id: straightavearchguards
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 8
+      y: 14
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightavearchguards/front.jpg"
+  - id: straightavewood
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 9
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightavewood/front.jpg"
+  - id: straightavewoodgate
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 9
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightavewoodgate/front.jpg"
+  - id: straightavewoodgateguards
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 9
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightavewoodgateguards/front.jpg"
+  - id: straightavewoodguards
+    type: building
+    building: guardtower
+    path: walls/city_gate
+    size:
+      x: 9
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightavewoodguards/front.jpg"
+  - id: straightroadarch
+    type: decoration
+    path: walls/city_gate
+    size:
+      x: 8
+      y: 13
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightroadarch/front.jpg"
+  - id: straightroadarchgate
+    type: decoration
+    path: walls/city_gate
+    size:
+      x: 8
+      y: 13
+      z: 10
+    images:
+      - "@assets/images/schematics/shogun/walls/city_gate/straightroadarchgate/front.jpg"
+  - id: slopeone
+    type: decoration
+    path: walls/city_incline/diag
+    size:
+      x: 16
+      y: 13
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/diag/slopeone/front.jpg"
+  - id: slopeonequad
+    type: decoration
+    path: walls/city_incline/diag
+    size:
+      x: 24
+      y: 15
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/diag/slopeonequad/front.jpg"
+  - id: slopetwo
+    type: decoration
+    path: walls/city_incline/diag
+    size:
+      x: 16
+      y: 16
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/diag/slopetwo/front.jpg"
+  - id: slopetwobottom
+    type: decoration
+    path: walls/city_incline/diag
+    size:
+      x: 14
+      y: 13
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/diag/slopetwobottom/front.jpg"
+  - id: slopetwoquad
+    type: decoration
+    path: walls/city_incline/diag
+    size:
+      x: 28
+      y: 27
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/diag/slopetwoquad/front.jpg"
+  - id: slopetwotop
+    type: decoration
+    path: walls/city_incline/diag
+    size:
+      x: 14
+      y: 13
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/diag/slopetwotop/front.jpg"
+  - id: slopeone
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 10
+      y: 13
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopeone/front.jpg"
+  - id: slopeonequad
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 13
+      y: 16
+      z: 20
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopeonequad/front.jpg"
+  - id: slopeonetotwo
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 11
+      y: 18
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopeonetotwo/front.jpg"
+  - id: slopetwo
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 10
+      y: 18
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopetwo/front.jpg"
+  - id: slopetwobottom
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 10
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopetwobottom/front.jpg"
+  - id: slopetwoquad
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 13
+      y: 30
+      z: 20
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopetwoquad/front.jpg"
+  - id: slopetwotop
+    type: decoration
+    path: walls/city_incline/offset
+    size:
+      x: 10
+      y: 15
+      z: 8
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/offset/slopetwotop/front.jpg"
+  - id: slopehalf
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 13
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopehalf/front.jpg"
+  - id: slopehalfquad
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 16
+      z: 24
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopehalfquad/front.jpg"
+  - id: slopeone
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 14
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopeone/front.jpg"
+  - id: slopeonebottom
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 13
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopeonebottom/front.jpg"
+  - id: slopeonequad
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 20
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopeonequad/front.jpg"
+  - id: slopeonetop
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 13
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopeonetop/front.jpg"
+  - id: slopeonetotwo
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 15
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopeonetotwo/front.jpg"
+  - id: slopetwo
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 18
+      z: 4
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopetwo/front.jpg"
+  - id: slopetwobottom
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 15
+      z: 2
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopetwobottom/front.jpg"
+  - id: slopetwoquad
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 29
+      z: 16
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopetwoquad/front.jpg"
+  - id: slopetwotop
+    type: decoration
+    path: walls/city_incline/straight
+    size:
+      x: 8
+      y: 17
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/city_incline/straight/slopetwotop/front.jpg"
+  - id: bigendtower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 11
+      y: 16
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/bigendtower/front.jpg"
+  - id: biginwalltower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 11
+      y: 16
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/biginwalltower/front.jpg"
+  - id: biglonetower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 11
+      y: 16
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/biglonetower/front.jpg"
+  - id: bigtowertop
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 9
+      y: 17
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/bigtowertop/front.jpg"
+  - id: bigtowertopchild
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 2
+      y: 1
+      z: 3
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/bigtowertopchild/front.jpg"
+  - id: endtower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 9
+      y: 15
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/endtower/front.jpg"
+  - id: extendedtower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 11
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/extendedtower/front.jpg"
+  - id: inwallallroundtower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 9
+      y: 15
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/inwallallroundtower/front.jpg"
+  - id: inwalltower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 8
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/inwalltower/front.jpg"
+  - id: lonetower
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 9
+      y: 15
+      z: 9
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/lonetower/front.jpg"
+  - id: towertop
+    type: building
+    building: guardtower
+    path: walls/city_walltower
+    size:
+      x: 7
+      y: 12
+      z: 7
+    images:
+      - "@assets/images/schematics/shogun/walls/city_walltower/towertop/front.jpg"
+  - id: diag
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 17
+      y: 6
+      z: 21
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/diag/front.jpg"
+  - id: incline
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 8
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/incline/front.jpg"
+  - id: insideturn
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 12
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/insideturn/front.jpg"
+  - id: long
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 23
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/long/front.jpg"
+  - id: lookout
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 6
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/lookout/front.jpg"
+  - id: outsideturn
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 13
+      y: 6
+      z: 13
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/outsideturn/front.jpg"
+  - id: short
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 8
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/short/front.jpg"
+  - id: stair
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 8
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/stair/front.jpg"
+  - id: temp
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 10
+      y: 6
+      z: 11
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/temp/front.jpg"
+  - id: tower
+    type: decoration
+    path: walls/palisades
+    size:
+      x: 6
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/shogun/walls/palisades/tower/front.jpg"
