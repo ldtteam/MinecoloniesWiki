@@ -1,4 +1,5 @@
 ---
+import ResearchLink from '@components/markdoc/research/ResearchLink.astro';
 import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
@@ -17,7 +18,7 @@ const { building } = Astro.props;
 const research = (
   await getCollection('research', (filter) =>
     filter.data.effects
-      ? Object.keys(filter.data.effects).find((effect) => effect.replace('blockhut', '') === building.id)
+      ? filter.data.effects.find((effect) => effect.effect.id.replace('blockhut', '') === building.id)
       : false
   )
 ).slice(0, 1)[0];
@@ -43,9 +44,9 @@ const recipes = building.data.recipes ?? [];
       <b>Research:&nbsp;</b>
       {
         research !== undefined ? (
-          <span
-            set:html={`You must research "<a href="/wiki/systems/research#research_${research.id}">${research.data.name}</a>" to unlock this building!`}
-          />
+          <span>
+            You must research <ResearchLink name={research.id} /> to unlock this building!
+          </span>
         ) : (
           <>No research is required for this building.</>
         )
