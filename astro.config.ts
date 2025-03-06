@@ -12,18 +12,5 @@ export default defineConfig({
   image: {
     domains: ['minecraft.wiki']
   },
-  integrations: [
-    svelte(),
-    icon({
-      iconDir: 'src/assets/icons',
-      include: {
-        'fa6-solid': ['*'],
-        'fa6-regular': ['*'],
-        'fa6-brands': ['*']
-      }
-    }),
-    markdoc(),
-    sitemap(),
-    purgecss()
-  ]
+  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss()]
 });

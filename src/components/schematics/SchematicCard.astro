@@ -1,0 +1,39 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import { getEntry } from 'astro:content';
+import VersionOverride from '@components/version/VersionOverride.astro';
+
+export type Schematic = CollectionEntry<'schematics'>['data']['schematics'][number];
+
+interface Props {
+  schematic: Schematic;
+}
+
+const { schematic } = Astro.props;
+
+const building = schematic.type === 'building' ? await getEntry(schematic.building) : undefined;
+---
+
+<div class="schematic-card card" data-filter-id={schematic.id} data-filter-building={building?.id}>
+  <Image src={schematic.images[0]} alt={schematic.id + ' schematic'} width={250} class="card-img-top" />
+  <div class="card-body">
+    <b>
+      {
+        building ? (
+          <p class="card-title">
+            <>
+              <VersionOverride value={building.data} fieldGetter={(b) => b.name} default="" />
+              <span>({schematic.id})</span>
+            </>
+          </p>
+        ) : (
+          <p class="card-title">{schematic.id}</p>
+        )
+      }
+    </b>
+    <p class="card-text text-secondary small">
+      Size: {schematic.size.x + 'x' + schematic.size.y + 'x' + schematic.size.z}
+    </p>
+  </div>
+</div>

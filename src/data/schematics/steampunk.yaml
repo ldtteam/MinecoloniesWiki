@@ -100,7 +100,7 @@ schematics:
       - "@assets/images/schematics/steampunk/agriculture/horticulture/farmer/back.jpg"
   - id: farmeralt
     type: building
-    building: citizen
+    building: residence
     path: agriculture/horticulture
     size:
       x: 59
@@ -623,7 +623,7 @@ schematics:
       - "@assets/images/schematics/steampunk/education/university/back.jpg"
   - id: abominacion
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 21
@@ -645,7 +645,7 @@ schematics:
       - "@assets/images/schematics/steampunk/fundamentals/builder/back.jpg"
   - id: citizen
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 24
@@ -678,7 +678,7 @@ schematics:
       - "@assets/images/schematics/steampunk/fundamentals/hospital/back.jpg"
   - id: housealt
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 18

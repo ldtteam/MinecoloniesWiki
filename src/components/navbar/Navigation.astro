@@ -1,7 +1,6 @@
 ---
 import Header from '@components/Header.astro';
 import Ribbon from '@components/ui/Ribbon.astro';
-import VersionSelector from '@components/version/VersionSelector.astro';
 import { Icon } from 'astro-icon/components';
 
 import MainPages from './MainPages.astro';
@@ -61,10 +60,6 @@ const { isWiki } = Astro.props;
                 <>
                   <hr />
 
-                  <div class="mb-3">
-                    <VersionSelector />
-                  </div>
-
                   <WikiPages />
                 </>
               )
@@ -87,9 +82,6 @@ const { isWiki } = Astro.props;
       <div class="container">
         <div class="navbar-collapse collapse">
           <WikiPages isAppbar />
-          <ul class="ms-auto navbar-nav">
-            <VersionSelector />
-          </ul>
         </div>
       </div>
     </Ribbon>

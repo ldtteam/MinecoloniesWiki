@@ -136,7 +136,7 @@ schematics:
       - "@assets/images/schematics/colonial/agriculture/husbandry/apiary/back.jpg"
   - id: chickenfarmer
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 22
@@ -147,7 +147,7 @@ schematics:
       - "@assets/images/schematics/colonial/agriculture/husbandry/chickenfarmer/back.jpg"
   - id: cowhand
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 26
@@ -202,7 +202,7 @@ schematics:
       - "@assets/images/schematics/colonial/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherd
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 22
@@ -641,7 +641,7 @@ schematics:
       - "@assets/images/schematics/colonial/fundamentals/altbuilder/back.jpg"
   - id: althouse
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 13
@@ -652,7 +652,7 @@ schematics:
       - "@assets/images/schematics/colonial/fundamentals/althouse/back.jpg"
   - id: bricks_house
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 13
@@ -674,7 +674,7 @@ schematics:
       - "@assets/images/schematics/colonial/fundamentals/builder/back.jpg"
   - id: diorite_house
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 13
@@ -707,7 +707,7 @@ schematics:
       - "@assets/images/schematics/colonial/fundamentals/hospital/back.jpg"
   - id: house
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 13

@@ -61,7 +61,7 @@ schematics:
       - "@assets/images/schematics/darkoak/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 12
@@ -72,7 +72,7 @@ schematics:
       - "@assets/images/schematics/darkoak/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 21
@@ -116,7 +116,7 @@ schematics:
       - "@assets/images/schematics/darkoak/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 21
@@ -411,7 +411,7 @@ schematics:
       - "@assets/images/schematics/darkoak/fundamentals/miner/back.jpg"
   - id: residence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 19

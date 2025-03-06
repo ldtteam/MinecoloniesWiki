@@ -1,9 +1,89 @@
 ---
+import SchematicPack from '@components/schematics/SchematicPack.astro';
+import SchematicsFilterStyling from '@components/schematics/SchematicsFilterStyling.astro';
+import VersionOverride from '@components/version/VersionOverride.astro';
 import Layout from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
+import { Icon } from 'astro-icon/components';
 
-const schematics = await getCollection('schematics');
-schematics.map((m) => m.data.schematics[0].type === 'building' && m.data.schematics[0].building);
+const packs = (await getCollection('schematics')).toSorted((a, b) =>
+  a.data.displayName.localeCompare(b.data.displayName)
+);
+
+const buildings = await getCollection('buildings');
 ---
 
-<Layout title="Schematics" fluid />
+<Layout title="Schematics" fluid columns={5}>
+  <div slot="left">
+    <hr />
+
+    <p class="h5 text-center">Filters</p>
+
+    <div class="input-group flex-nowrap mb-3">
+      <span class="input-group-text">
+        <Icon name="material-symbols-light:search" />
+      </span>
+      <input id="filter-id" type="text" class="form-control" placeholder="Search for schematics..." />
+    </div>
+
+    <div class="input-group flex-nowrap mb-3">
+      <span class="input-group-text">
+        <Icon name="material-symbols-light:home-outline" />
+      </span>
+      <select id="filter-building" class="form-select">
+        <option selected>Search for buildings...</option>
+        {
+          buildings.map((building) => (
+            <option value={building.id}>
+              <VersionOverride value={building.data} fieldGetter={(b) => b.name} default="" />
+            </option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="mb-3 d-flex align-items-center gap-2">
+      <label for="filter-size-x" class="form-label flex-shrink-1 mb-0">Max Size</label>
+      <input id="filter-size-x" type="number" class="form-control flex-grow-1" placeholder="X" />
+      <input id="filter-size-y" type="number" class="form-control flex-grow-1" placeholder="Y" />
+      <input id="filter-size-z" type="number" class="form-control flex-grow-1" placeholder="Z" />
+    </div>
+
+    <hr />
+
+    <p class="h5 text-center">Schematic Packs</p>
+    {
+      packs.map((pack) => (
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id={`checkboxFilterPack${pack.id}`} />
+          <label class="form-check-label" for={`checkboxFilterPack${pack.id}`}>
+            {pack.data.displayName}
+            <small class="text-secondary">({pack.data.authors.join(', ')})</small>
+          </label>
+        </div>
+      ))
+    }
+  </div>
+
+  <div id="filter-list">
+    {packs.map((pack) => <SchematicPack pack={pack} />)}
+  </div>
+
+  <SchematicsFilterStyling />
+</Layout>
+
+<style>
+  label[for='inputSizeX'] {
+    white-space: nowrap;
+  }
+</style>
+
+<script>
+  function setup() {
+    const filterList = document.getElementById('filter-list')!;
+
+    document.getElementById('filter-id')?.addEventListener('change', (ev) => {});
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

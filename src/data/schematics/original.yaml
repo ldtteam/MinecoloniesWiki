@@ -144,7 +144,7 @@ schematics:
       - "@assets/images/schematics/original/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 18
@@ -155,7 +155,7 @@ schematics:
       - "@assets/images/schematics/original/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 16
@@ -210,7 +210,7 @@ schematics:
       - "@assets/images/schematics/original/agriculture/husbandry/shepherdalt/back.jpg"
   - id: swineherder
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 22
@@ -874,7 +874,7 @@ schematics:
       - "@assets/images/schematics/original/education/university/back.jpg"
   - id: altresidence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 14
@@ -940,7 +940,7 @@ schematics:
       - "@assets/images/schematics/original/fundamentals/miner/back.jpg"
   - id: residence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 13

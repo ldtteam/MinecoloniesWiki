@@ -71,7 +71,7 @@ schematics:
       - "@assets/images/schematics/caledonia/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 13
@@ -82,7 +82,7 @@ schematics:
       - "@assets/images/schematics/caledonia/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 13
@@ -126,7 +126,7 @@ schematics:
       - "@assets/images/schematics/caledonia/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 13
@@ -632,7 +632,7 @@ schematics:
       - "@assets/images/schematics/caledonia/fundamentals/miner/back.jpg"
   - id: residence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 19

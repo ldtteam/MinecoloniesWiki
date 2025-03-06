@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import type { Schematic } from './SchematicCard.astro';
+import SchematicFolder from './SchematicFolder.astro';
+
+interface Props {
+  pack: CollectionEntry<'schematics'>;
+}
+
+const { pack } = Astro.props;
+
+const schematicsPerPath = pack.data.schematics.reduce<Map<string, Schematic[]>>((prev, curr) => {
+  if (!prev.has(curr.path)) {
+    prev.set(curr.path, []);
+  }
+  prev.get(curr.path)?.push(curr);
+  return prev;
+}, new Map());
+---
+
+<div data-filter-pack={pack.id}>
+  <h2 class="d-flex align-items-center">
+    {pack.data.displayName}
+  </h2>
+  <div class="image-grid">
+    {schematicsPerPath.entries().map(([path, schematics]) => <SchematicFolder path={path} schematics={schematics} />)}
+  </div>
+</div>

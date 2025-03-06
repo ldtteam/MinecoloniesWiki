@@ -7,6 +7,7 @@ import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
 import Navigation from '@components/navbar/Navigation.astro';
 import PageRoot from '@components/PageRoot.astro';
+import VersionSelector from '@components/version/VersionSelector.astro';
 import VersionStyling from '@components/version/VersionStyling.astro';
 import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import { getNewestVersion } from '@utils/version';
@@ -19,9 +20,21 @@ interface Props {
   header?: string;
   showHeader?: boolean;
   fluid?: boolean;
+  columns?: number;
+  leftColumns?: number;
+  rightColumns?: number;
 }
 
-const { title, titleAffix = 'MineColonies', header = title, showHeader = true, fluid = false } = Astro.props;
+const {
+  title,
+  titleAffix = 'MineColonies',
+  header = title,
+  showHeader = true,
+  fluid = false,
+  columns = 7,
+  leftColumns = 1,
+  rightColumns = 1
+} = Astro.props;
 
 const isHome = Astro.url.pathname === '/';
 const isWikiPage = Astro.url.pathname.startsWith('/wiki');
@@ -44,9 +57,6 @@ const initialTitle = typeof title === 'string' ? title : title.highestValue + ' 
 
 const hasLeftSlot = await Astro.slots.render('left').then((slot) => (slot ?? '').trim() !== '');
 const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '').trim() !== '');
-
-const totalColumns = 7;
-const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
 ---
 
 <!doctype html>
@@ -110,32 +120,40 @@ const remainingColumns = 7 - (hasLeftSlot ? 1 : 0) - (hasRightSlot ? 1 : 0);
       <div transition:animate="fade" class="page-content px-5">
         {
           showHeader && (
-            <h1 class="page_header text-center m-0">
-              <PageTitleRender title={header} />
-            </h1>
+            <div class={fluid ? 'container-fluid' : 'container'}>
+              <div class="d-flex justify-content-between">
+                <span class="equal" />
+                <h1 class="page_header text-center equal m-0">
+                  <PageTitleRender title={header} />
+                </h1>
+                <div class="equal d-flex align-items-baseline justify-content-end">
+                  <VersionSelector />
+                </div>
+              </div>
+            </div>
           )
         }
 
-        <div
-          class:list={[fluid ? 'container-fluid' : 'container', 'grid w-100']}
-          style={`--bs-columns: ${totalColumns};`}
-        >
+        <div class:list={[fluid ? 'container-fluid' : 'container', 'grid w-100']} style={`--bs-columns: ${columns};`}>
           {
             hasLeftSlot && (
-              <div class="g-col-12 g-col-lg-1">
+              <div class={`g-col-12 g-col-lg-${leftColumns}`}>
                 <slot name="left" />
               </div>
             )
           }
-          <div class:list={['g-col-12', `g-col-lg-${remainingColumns}`]}>
-            <div class="container">
-              {showHeader && <hr />}
-            </div>
+          <div
+            class:list={[
+              'g-col-12',
+              `g-col-lg-${columns - (hasLeftSlot ? leftColumns : 0) - (hasRightSlot ? rightColumns : 0)}`
+            ]}
+          >
+            {showHeader && <hr />}
             <slot />
           </div>
           {
             hasRightSlot && (
-              <div class="g-col-12 g-col-lg-1">
+              <div class={`g-col-12 g-col-lg-${rightColumns}`}>
                 <slot name="right" />
               </div>
             )

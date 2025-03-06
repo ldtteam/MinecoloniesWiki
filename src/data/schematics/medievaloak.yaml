@@ -60,7 +60,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/horticulture/plantation/back.jpg"
   - id: altchickenherder
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 18
@@ -71,7 +71,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/altchickenherder/back.jpg"
   - id: altcowboy
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 17
@@ -93,7 +93,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/altfisherman/back.jpg"
   - id: altswineherder
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 18
@@ -115,7 +115,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 16
@@ -126,7 +126,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 18
@@ -170,7 +170,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 15
@@ -734,7 +734,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/fundamentals/altminer/back.jpg"
   - id: altresidence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 14
@@ -778,7 +778,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/fundamentals/cook/back.jpg"
   - id: grachtenpand
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 18
@@ -822,7 +822,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/fundamentals/miner/back.jpg"
   - id: residence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 14

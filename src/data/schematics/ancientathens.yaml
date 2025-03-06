@@ -154,7 +154,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenfarmer
     type: building
-    building: chickenherder
+    building: chickenfarmer
     path: agriculture/husbandry
     size:
       x: 21
@@ -165,7 +165,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/agriculture/husbandry/chickenfarmer/back.jpg"
   - id: cowhand
     type: building
-    building: cowboy
+    building: cowhand
     path: agriculture/husbandry
     size:
       x: 22
@@ -220,7 +220,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherder
+    building: swineherd
     path: agriculture/husbandry
     size:
       x: 19
@@ -1356,7 +1356,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/fundamentals/builder/back.jpg"
   - id: estate
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 18
@@ -1400,7 +1400,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/fundamentals/mine/back.jpg"
   - id: residence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 17
@@ -1433,7 +1433,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/fundamentals/ruralbuilder/back.jpg"
   - id: rural_residence
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 22
@@ -1466,7 +1466,7 @@ schematics:
       - "@assets/images/schematics/ancientathens/fundamentals/townhall/back.jpg"
   - id: villa
     type: building
-    building: citizen
+    building: residence
     path: fundamentals
     size:
       x: 14
