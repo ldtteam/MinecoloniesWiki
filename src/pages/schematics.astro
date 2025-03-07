@@ -41,7 +41,7 @@ const newestVersion = await getNewestVersion();
       </select>
     </div>
 
-    <div class="mb-3 d-flex align-items-center gap-2">
+    <div class="filters-size">
       <label for="filter-size-x" class="form-label flex-shrink-1 mb-0">Max Size</label>
       <input id="filter-size-x" type="number" class="form-control flex-grow-1" placeholder="X" />
       <input id="filter-size-y" type="number" class="form-control flex-grow-1" placeholder="Y" />
@@ -92,9 +92,26 @@ const newestVersion = await getNewestVersion();
   </div>
 </Layout>
 
-<style>
-  label[for='filter-size-x'] {
-    white-space: nowrap;
+<style lang="scss">
+  @use 'sass:map';
+  @import '../css/bootstrap-vars.scss';
+
+  .filters-size {
+    display: flex;
+    align-items: center;
+    gap: map.get($spacers, 2);
+    margin-bottom: map.get($spacers, 3);
+
+    label {
+      white-space: nowrap;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .filters-size {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 </style>
 

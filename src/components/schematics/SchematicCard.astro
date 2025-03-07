@@ -27,8 +27,14 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
   <swiper-container loop={schematic.images.length > 1} navigation effect="fade" class="card-img-top">
     {
       schematic.images.map((image, idx) => (
-        <swiper-slide lazy="true">
-          <Image src={image} alt={schematic.id + ' schematic icon ' + idx} width={250} class="rounded-top" />
+        <swiper-slide lazy="true" class="w-100">
+          <Image
+            src={image}
+            alt={schematic.id + ' schematic icon ' + idx}
+            width={250}
+            class="rounded-top"
+            class="w-100"
+          />
         </swiper-slide>
       ))
     }

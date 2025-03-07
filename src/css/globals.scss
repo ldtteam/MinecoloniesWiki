@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "./bootstrap-vars.scss";
 
 $bg-color-light: #fffaee;
 $bg-color-dark: #080a0f;
@@ -46,6 +47,10 @@ img {
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
 }
 
 /* GLOBAL STYLES */
@@ -130,6 +135,7 @@ hr {
   --astro-code-token-link: #8be9fd;
 }
 
+/* HEADER STYLES */
 .header {
   display: flex;
 
@@ -140,6 +146,12 @@ hr {
 
     .version-selector {
       align-self: flex-end;
+    }
+
+    @include media-breakpoint-down(lg) {
+      .version-selector {
+        display: none;
+      }
     }
   }
 
