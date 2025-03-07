@@ -20,14 +20,14 @@ const buildings = await getCollection('buildings');
 
     <div class="input-group flex-nowrap mb-3">
       <span class="input-group-text">
-        <Icon name="material-symbols-light:search" />
+        <Icon name="material-symbols-light:search" is:inline />
       </span>
       <input id="filter-id" type="text" class="form-control" placeholder="Search for schematics..." />
     </div>
 
     <div class="input-group flex-nowrap mb-3">
       <span class="input-group-text">
-        <Icon name="material-symbols-light:home-outline" />
+        <Icon name="material-symbols-light:home-outline" is:inline />
       </span>
       <select id="filter-building" class="form-select">
         <option selected value="">Search for buildings...</option>
@@ -69,6 +69,13 @@ const buildings = await getCollection('buildings');
         ))
       }
     </div>
+
+    <hr />
+
+    <p class="text-secondary small">
+      Special thanks to <b><a href="https://github.com/tomp2/minecolonies-style-explorer">tomp2</a></b> on Github for starting
+      the project and contributing all the images.
+    </p>
   </div>
 
   <div
