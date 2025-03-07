@@ -3,7 +3,7 @@ import { component } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const social_link: Tag = {
-  render: component('@components/markdoc/util/SocialLink.astro'),
+  render: component('@components/markdoc/util/Social.astro'),
   selfClosing: true,
   attributes: {
     name: {

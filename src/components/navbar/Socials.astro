@@ -1,34 +1,25 @@
 ---
-import { socials } from '@utils/social';
-import { Icon } from 'astro-icon/components';
+import Social from '@components/markdoc/util/Social.astro';
+import { getCollection } from 'astro:content';
+
+const socials = await getCollection('socials');
 ---
 
 {
-  Object.entries(socials).map(([key, social]) => (
-    <li class="nav-item social-icon bg-light mx-1">
-      <a href={social.link} class="nav-link" aria-label={social.name + ' link'}>
-        <Icon name={`cib:${key}`} color={social.color} />
-      </a>
+  socials.map((social) => (
+    <li class="nav-item bg-light mx-1">
+      <Social id={social.id} icon />
     </li>
   ))
 }
 
 <style>
-  .social-icon {
-    padding: 4px;
-    border-radius: 1em;
+  .nav-item {
+    display: flex;
+    align-items: center;
     width: 28px;
     height: 28px;
-  }
-
-  .social-icon a {
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-  }
-
-  .social-icon svg {
-    width: 20px;
-    height: 20px;
+    padding: 5px;
+    border-radius: 100%;
   }
 </style>

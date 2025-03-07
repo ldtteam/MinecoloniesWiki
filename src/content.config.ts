@@ -47,6 +47,16 @@ const supporterCollection = defineCollection({
   })
 });
 
+const socialsCollection = defineCollection({
+  loader: file('./src/data/site/socials.yaml'),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    link: z.string(),
+    color: z.string()
+  })
+});
+
 const eventCollection = defineCollection({
   loader: glob({ pattern: '**/*.mdoc', base: './src/content/events' }),
   schema: z.object({
@@ -224,6 +234,7 @@ export const collections = {
   team: teamCollection,
   sponsors: sponsorCollection,
   supporters: supporterCollection,
+  socials: socialsCollection,
   events: eventCollection,
   json_structures: jsonStructuresCollection,
   schematics: schematicsCollection
