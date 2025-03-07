@@ -1,8 +1,8 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { Image } from 'astro:assets';
-import { getEntry } from 'astro:content';
 import VersionOverride from '@components/version/VersionOverride.astro';
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 export type Schematic = CollectionEntry<'schematics'>['data']['schematics'][number];
 
@@ -15,7 +15,15 @@ const { schematic } = Astro.props;
 const building = schematic.type === 'building' ? await getEntry(schematic.building) : undefined;
 ---
 
-<div class="schematic-card card" data-filter-id={schematic.id} data-filter-building={building?.id}>
+<div
+  class="schematic-card card"
+  data-filter-id={schematic.id}
+  data-filter-building={building?.id}
+  data-filter-size-x={schematic.size.x}
+  data-filter-size-y={schematic.size.y}
+  data-filter-size-z={schematic.size.z}
+  data-filter-invisible={schematic.invisible}
+>
   <Image src={schematic.images[0]} alt={schematic.id + ' schematic'} width={250} class="card-img-top" />
   <div class="card-body">
     <b>
@@ -35,5 +43,18 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
     <p class="card-text text-secondary small">
       Size: {schematic.size.x + 'x' + schematic.size.y + 'x' + schematic.size.z}
     </p>
+    {
+      schematic.invisible && (
+        <p class="card-text text-secondary small">
+          <b>Note: This schematic is invisible, it will only show up in creative mode</b>
+        </p>
+      )
+    }
   </div>
 </div>
+
+<style>
+  .hide {
+    display: none;
+  }
+</style>

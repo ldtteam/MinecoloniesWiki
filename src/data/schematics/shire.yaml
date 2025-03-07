@@ -1319,6 +1319,7 @@ schematics:
   - id: barracks
     type: building
     building: barrackstower
+    invisible: true
     path: military
     size:
       x: 31

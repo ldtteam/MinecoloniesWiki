@@ -12,23 +12,25 @@ interface Props {
 const { path, schematics } = Astro.props;
 ---
 
-<h3 class="d-flex align-items-center">
-  {path.split('/').map(toTitleCase).join(' > ')}
-</h3>
+<div class="schematic-folder">
+  <h3 class="d-flex align-items-center">
+    {path.split('/').map(toTitleCase).join(' > ')}
+  </h3>
 
-<div class="image-grid mb-4">
-  {schematics.map((schematic) => <SchematicCard schematic={schematic} />)}
+  <div class="image-grid mb-4">
+    {schematics.map((schematic) => <SchematicCard schematic={schematic} />)}
+  </div>
 </div>
 
 <style lang="scss">
   @import '../../css/bootstrap-vars.scss';
 
-  h3:has(+ .image-grid:empty) {
-    display: none !important;
+  .schematic-folder {
+    display: none;
   }
 
-  .image-grid:empty {
-    color: red;
+  .schematic-folder:has(.schematic-card:not(.hide)) {
+    display: block;
   }
 
   .image-grid {

@@ -4,6 +4,7 @@ const schematicTypeDecoration = (image: ImageFunction) =>
   z.object({
     id: z.string(),
     type: z.literal('decoration'),
+    invisible: z.boolean().default(false),
     path: z.string(),
     size: z.object({
       x: z.number(),

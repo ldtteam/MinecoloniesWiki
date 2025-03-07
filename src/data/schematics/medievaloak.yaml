@@ -923,6 +923,7 @@ schematics:
   - id: altbarrackstower
     type: building
     building: barrackstower
+    invisible: true
     path: military
     size:
       x: 7
@@ -966,6 +967,7 @@ schematics:
   - id: barracks
     type: building
     building: barrackstower
+    invisible: true
     path: military
     size:
       x: 21
@@ -977,6 +979,7 @@ schematics:
   - id: barrackstower
     type: building
     building: barrackstower
+    invisible: true
     path: military
     size:
       x: 7

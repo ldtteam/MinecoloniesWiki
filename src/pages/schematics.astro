@@ -1,6 +1,5 @@
 ---
 import SchematicPack from '@components/schematics/SchematicPack.astro';
-import SchematicsFilterStyling from '@components/schematics/SchematicsFilterStyling.astro';
 import VersionOverride from '@components/version/VersionOverride.astro';
 import Layout from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
@@ -31,7 +30,7 @@ const buildings = await getCollection('buildings');
         <Icon name="material-symbols-light:home-outline" />
       </span>
       <select id="filter-building" class="form-select">
-        <option selected>Search for buildings...</option>
+        <option selected value="">Search for buildings...</option>
         {
           buildings.map((building) => (
             <option value={building.id}>
@@ -49,40 +48,155 @@ const buildings = await getCollection('buildings');
       <input id="filter-size-z" type="number" class="form-control flex-grow-1" placeholder="Z" />
     </div>
 
+    <div class="form-check mb-3">
+      <input id="filter-invisible" type="checkbox" class="form-check-input" />
+      <label for="filter-invisible" class="form-check-label">Show invisible schematics</label>
+    </div>
+
     <hr />
 
     <p class="h5 text-center">Schematic Packs</p>
-    {
-      packs.map((pack) => (
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" id={`checkboxFilterPack${pack.id}`} />
-          <label class="form-check-label" for={`checkboxFilterPack${pack.id}`}>
-            {pack.data.displayName}
-            <small class="text-secondary">({pack.data.authors.join(', ')})</small>
-          </label>
-        </div>
-      ))
-    }
+    <div id="filter-pack">
+      {
+        packs.map((pack) => (
+          <div class="form-check mb-3">
+            <input id={`filter-pack-${pack.id}`} type="checkbox" class="form-check-input" data-pack-id={pack.id} />
+            <label for={`filter-pack-${pack.id}`} class="form-check-label">
+              {pack.data.displayName}
+              <small class="text-secondary">({pack.data.authors.join(', ')})</small>
+            </label>
+          </div>
+        ))
+      }
+    </div>
   </div>
 
-  <div id="filter-list">
+  <div
+    id="filter-list"
+    data-filter-id=""
+    data-filter-building=""
+    data-filter-size-x=""
+    data-filter-size-y=""
+    data-filter-size-z=""
+    data-filter-invisible="false"
+    data-filter-pack=""
+  >
     {packs.map((pack) => <SchematicPack pack={pack} />)}
   </div>
-
-  <SchematicsFilterStyling />
 </Layout>
 
 <style>
-  label[for='inputSizeX'] {
+  label[for='filter-size-x'] {
     white-space: nowrap;
   }
 </style>
 
 <script>
-  function setup() {
-    const filterList = document.getElementById('filter-list')!;
+  function trimToEmpty(value: string | undefined) {
+    return value && value.trim().length > 0 ? value.trim() : undefined;
+  }
 
-    document.getElementById('filter-id')?.addEventListener('change', (ev) => {});
+  function updateFilterList() {
+    const filterList = document.getElementById('filter-list')!;
+    const filterId = trimToEmpty(filterList.dataset.filterId);
+    const filterBuilding = trimToEmpty(filterList.dataset.filterBuilding);
+    const filterSizeX = trimToEmpty(filterList.dataset.filterSizeX);
+    const filterSizeY = trimToEmpty(filterList.dataset.filterSizeY);
+    const filterSizeZ = trimToEmpty(filterList.dataset.filterSizeZ);
+    const filterInvisible = filterList.dataset.filterInvisible === 'true';
+    const filterPack = trimToEmpty(filterList.dataset.filterPack)?.split(',') ?? [];
+
+    const cards = document.getElementsByClassName('schematic-card') as HTMLCollectionOf<HTMLDivElement>;
+    for (const card of cards) {
+      let matches = true;
+      if (filterId !== undefined && !card.dataset.filterId!.includes(filterId)) {
+        matches = false;
+      }
+
+      if (filterBuilding !== undefined && card.dataset.filterBuilding !== filterBuilding) {
+        matches = false;
+      }
+
+      if (filterSizeX !== undefined && parseInt(card.dataset.filterSizeX!, 10) > parseInt(filterSizeX, 10)) {
+        matches = false;
+      }
+
+      if (filterSizeY !== undefined && parseInt(card.dataset.filterSizeY!, 10) > parseInt(filterSizeY, 10)) {
+        matches = false;
+      }
+
+      if (filterSizeZ !== undefined && parseInt(card.dataset.filterSizeZ!, 10) > parseInt(filterSizeZ, 10)) {
+        matches = false;
+      }
+
+      if (filterInvisible === false && card.dataset.filterInvisible === 'true') {
+        matches = false;
+      }
+
+      const pack = card.closest('.schematic-pack') as HTMLDivElement;
+
+      if (filterPack.length > 0 && !filterPack.includes(pack.dataset.filterPack!)) {
+        matches = false;
+      }
+
+      if (matches) {
+        card.classList.remove('hide');
+      } else {
+        card.classList.add('hide');
+      }
+    }
+  }
+
+  function setup() {
+    document.getElementById('filter-id')?.addEventListener('change', (ev) => {
+      document.getElementById('filter-list')!.dataset.filterId = (ev.target as HTMLInputElement).value;
+      updateFilterList();
+    });
+
+    document.getElementById('filter-building')?.addEventListener('change', (ev) => {
+      document.getElementById('filter-list')!.dataset.filterBuilding = (ev.target as HTMLInputElement).value;
+      updateFilterList();
+    });
+
+    document.getElementById('filter-size-x')?.addEventListener('change', (ev) => {
+      document.getElementById('filter-list')!.dataset.filterSizeX = (ev.target as HTMLInputElement).value;
+      updateFilterList();
+    });
+
+    document.getElementById('filter-size-y')?.addEventListener('change', (ev) => {
+      document.getElementById('filter-list')!.dataset.filterSizeY = (ev.target as HTMLInputElement).value;
+      updateFilterList();
+    });
+
+    document.getElementById('filter-size-z')?.addEventListener('change', (ev) => {
+      document.getElementById('filter-list')!.dataset.filterSizeZ = (ev.target as HTMLInputElement).value;
+      updateFilterList();
+    });
+
+    document.getElementById('filter-invisible')?.addEventListener('change', (ev) => {
+      document.getElementById('filter-list')!.dataset.filterInvisible = '' + (ev.target as HTMLInputElement).checked;
+      updateFilterList();
+    });
+
+    for (const checkbox of document.getElementById('filter-pack')?.getElementsByClassName('form-check') ?? []) {
+      checkbox.addEventListener('change', (ev) => {
+        const checked = (ev.target as HTMLInputElement).checked;
+        const packId = (ev.target as HTMLInputElement).dataset.packId!;
+        const filterList = document.getElementById('filter-list')!;
+        if (checked) {
+          filterList.dataset.filterPack = filterList.dataset.filterPack?.split(',').concat(packId).join(',') ?? packId;
+        } else {
+          filterList.dataset.filterPack =
+            filterList.dataset.filterPack
+              ?.split(',')
+              .filter((f) => f !== packId)
+              .join(',') ?? '';
+        }
+        updateFilterList();
+      });
+    }
+
+    updateFilterList();
   }
 
   document.addEventListener('astro:page-load', setup);

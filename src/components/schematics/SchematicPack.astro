@@ -19,7 +19,7 @@ const schematicsPerPath = pack.data.schematics.reduce<Map<string, Schematic[]>>(
 }, new Map());
 ---
 
-<div data-filter-pack={pack.id}>
+<div class="schematic-pack" data-filter-pack={pack.id}>
   <h2 class="d-flex align-items-center">
     {pack.data.displayName}
   </h2>
@@ -27,3 +27,13 @@ const schematicsPerPath = pack.data.schematics.reduce<Map<string, Schematic[]>>(
     {schematicsPerPath.entries().map(([path, schematics]) => <SchematicFolder path={path} schematics={schematics} />)}
   </div>
 </div>
+
+<style>
+  .schematic-pack {
+    display: none;
+  }
+
+  .schematic-pack:has(.schematic-card:not(.hide)) {
+    display: block;
+  }
+</style>
