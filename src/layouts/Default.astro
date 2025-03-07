@@ -121,12 +121,12 @@ const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '
         {
           showHeader && (
             <div class={fluid ? 'container-fluid' : 'container'}>
-              <div class="d-flex justify-content-between">
-                <span class="equal" />
-                <h1 class="page_header text-center equal m-0">
+              <div class="header">
+                <div />
+                <h1 class="page_header">
                   <PageTitleRender title={header} />
                 </h1>
-                <div class="equal d-flex align-items-baseline justify-content-end">
+                <div>
                   <VersionSelector />
                 </div>
               </div>

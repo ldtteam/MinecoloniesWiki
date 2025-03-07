@@ -24,7 +24,15 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
   data-filter-size-z={schematic.size.z}
   data-filter-invisible={schematic.invisible}
 >
-  <Image src={schematic.images[0]} alt={schematic.id + ' schematic'} width={250} class="card-img-top" />
+  <swiper-container loop={schematic.images.length > 1} navigation effect="fade" class="card-img-top">
+    {
+      schematic.images.map((image, idx) => (
+        <swiper-slide lazy="true">
+          <Image src={image} alt={schematic.id + ' schematic icon ' + idx} width={250} class="rounded-top" />
+        </swiper-slide>
+      ))
+    }
+  </swiper-container>
   <div class="card-body">
     <b>
       {
@@ -53,8 +61,17 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
   </div>
 </div>
 
-<style>
+<style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+
   .hide {
     display: none;
+  }
+
+  swiper-container {
+    --swiper-navigation-size: '22px';
+    --swiper-navigation-color: $text-secondary;
+    min-width: 100%;
+    overflow: hidden;
   }
 </style>

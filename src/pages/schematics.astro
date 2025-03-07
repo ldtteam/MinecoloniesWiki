@@ -1,7 +1,8 @@
 ---
 import SchematicPack from '@components/schematics/SchematicPack.astro';
-import VersionOverride from '@components/version/VersionOverride.astro';
 import Layout from '@layouts/Default.astro';
+import { getOverrideValue } from '@utils/override';
+import { getNewestVersion } from '@utils/version';
 import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 
@@ -10,6 +11,7 @@ const packs = (await getCollection('schematics')).toSorted((a, b) =>
 );
 
 const buildings = await getCollection('buildings');
+const newestVersion = await getNewestVersion();
 ---
 
 <Layout title="Schematics" fluid columns={5}>
@@ -32,10 +34,8 @@ const buildings = await getCollection('buildings');
       <select id="filter-building" class="form-select">
         <option selected value="">Search for buildings...</option>
         {
-          buildings.map((building) => (
-            <option value={building.id}>
-              <VersionOverride value={building.data} fieldGetter={(b) => b.name} default="" />
-            </option>
+          buildings.map(async (building) => (
+            <option value={building.id}>{await getOverrideValue(building.data, (f) => f.name, newestVersion)}</option>
           ))
         }
       </select>

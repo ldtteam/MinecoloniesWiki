@@ -41,12 +41,14 @@ const recipes = building.data.recipes ?? [];
 
     <hr />
     <p class="m-0">
-      <b>Research:&nbsp;</b>
+      <b>Research:</b>
       {
         research !== undefined ? (
-          <span>
-            You must research <ResearchLink name={research.id} /> to unlock this building!
-          </span>
+          <>
+            <span>You must research</span>
+            <ResearchLink name={research.id} />
+            <span>to unlock this building!</span>
+          </>
         ) : (
           <>No research is required for this building.</>
         )

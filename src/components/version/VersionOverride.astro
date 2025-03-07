@@ -1,6 +1,7 @@
 ---
 import type { Overrideable, OverrideableFieldGetter } from '@utils/override';
 import { getOverrideValues } from '@utils/override';
+import type { HTMLTag } from 'astro/types';
 
 import VersionContent from './VersionContent.astro';
 
@@ -9,20 +10,22 @@ interface Props<V, O extends Overrideable<V>, T> {
   fieldGetter: OverrideableFieldGetter<O, T>;
   default: T;
   inline?: boolean;
+  as?: HTMLTag;
 }
 
 const {
   value,
   fieldGetter,
   default: def,
-  inline = true
+  inline = true,
+  as
 } = Astro.props as Props<unknown, Overrideable<unknown>, unknown>;
 const values = await getOverrideValues(value, fieldGetter, def);
 ---
 
 {
   values.values.values().map(async (value) => (
-    <VersionContent versions={value.versions} inline={inline}>
+    <VersionContent versions={value.versions} inline={inline} as={as}>
       {value.value}
     </VersionContent>
   ))

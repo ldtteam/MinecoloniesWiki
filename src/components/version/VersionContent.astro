@@ -1,9 +1,8 @@
 ---
-import type { JSX } from 'astro/jsx-runtime';
 import type { HTMLTag } from 'astro/types';
 import type { CollectionEntry } from 'astro:content';
 
-interface Props extends JSX.DOMAttributes {
+interface Props {
   versions: CollectionEntry<'versions'>[];
   inline?: boolean;
   as?: HTMLTag;

@@ -130,7 +130,22 @@ hr {
   --astro-code-token-link: #8be9fd;
 }
 
-.equal {
-  flex-basis: 0;
-  flex-grow: 1;
+.header {
+  display: flex;
+
+  &>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .version-selector {
+      align-self: flex-end;
+    }
+  }
+
+  .page_header {
+    white-space: nowrap;
+    flex: 0;
+    margin: 0;
+  }
 }
