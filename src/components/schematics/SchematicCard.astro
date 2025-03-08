@@ -1,0 +1,83 @@
+---
+import VersionOverride from '@components/version/VersionOverride.astro';
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+export type Schematic = CollectionEntry<'schematics'>['data']['schematics'][number];
+
+interface Props {
+  schematic: Schematic;
+}
+
+const { schematic } = Astro.props;
+
+const building = schematic.type === 'building' ? await getEntry(schematic.building) : undefined;
+---
+
+<div
+  class="schematic-card card"
+  data-filter-id={schematic.id}
+  data-filter-building={building?.id}
+  data-filter-size-x={schematic.size.x}
+  data-filter-size-y={schematic.size.y}
+  data-filter-size-z={schematic.size.z}
+  data-filter-invisible={schematic.invisible}
+>
+  <swiper-container loop={schematic.images.length > 1} navigation effect="fade" class="card-img-top">
+    {
+      schematic.images.map((image, idx) => (
+        <swiper-slide lazy="true" class="w-100">
+          <Image
+            src={image}
+            alt={schematic.id + ' schematic icon ' + idx}
+            width={250}
+            class="rounded-top"
+            class="w-100"
+          />
+        </swiper-slide>
+      ))
+    }
+  </swiper-container>
+  <div class="card-body">
+    <b>
+      {
+        building ? (
+          <p class="card-title">
+            <>
+              <VersionOverride value={building.data} fieldGetter={(b) => b.name} default="" />
+              <span>({schematic.id})</span>
+            </>
+          </p>
+        ) : (
+          <p class="card-title">{schematic.id}</p>
+        )
+      }
+    </b>
+    <p class="card-text text-secondary small">
+      Size: {schematic.size.x + 'x' + schematic.size.y + 'x' + schematic.size.z}
+    </p>
+    {
+      schematic.invisible && (
+        <p class="card-text text-secondary small">
+          <b>Note: This schematic is invisible, it will only show up in creative mode</b>
+        </p>
+      )
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+
+  .hide {
+    display: none;
+  }
+
+  swiper-container {
+    --swiper-navigation-size: '22px';
+    --swiper-navigation-color: $text-secondary;
+    min-width: 100%;
+    overflow: hidden;
+  }
+</style>

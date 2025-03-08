@@ -14,13 +14,15 @@ interface Props {
 }
 
 const { isWiki } = Astro.props;
+
+const expand = 'lg';
 ---
 
-<Ribbon class="navbar navbar-expand-lg navbar-light" as="nav">
+<Ribbon class={`navbar navbar-expand-${expand} navbar-light`} as="nav">
   <div class="mx-5 w-100">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex justify-content-between align-items-center">
       <button
-        class="d-lg-none btn btn-outline-light"
+        class={`d-${expand}-none btn btn-outline-light`}
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#mobileMenu"
@@ -43,7 +45,7 @@ const { isWiki } = Astro.props;
         </li>
       </ul>
 
-      <div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
+      <div class={`offcanvas offcanvas-start d-${expand}-none`} id="mobileMenu">
         <div class="offcanvas-header d-flex justify-content-between align-items-start">
           <h5 class="offcanvas-title w-75" id="mobileMenuLabel">
             <Header isWiki={false} />
@@ -61,16 +63,15 @@ const { isWiki } = Astro.props;
                 <>
                   <hr />
 
-                  <div class="mb-3">
-                    <VersionSelector />
-                  </div>
-
                   <WikiPages />
                 </>
               )
             }
 
             <hr />
+            <VersionSelector />
+            <hr />
+
             <ul class="nav">
               <Socials />
             </ul>
@@ -83,13 +84,10 @@ const { isWiki } = Astro.props;
 
 {
   isWiki && (
-    <Ribbon class="navbar navbar-expand-lg navbar-light d-none d-lg-flex" as="nav">
+    <Ribbon class={`navbar navbar-expand-${expand} navbar-light d-none d-${expand}-flex`} as="nav">
       <div class="container">
         <div class="navbar-collapse collapse">
           <WikiPages isAppbar />
-          <ul class="ms-auto navbar-nav">
-            <VersionSelector />
-          </ul>
         </div>
       </div>
     </Ribbon>

@@ -1,0 +1,940 @@
+id: medievalspruce
+displayName: Medieval Spruce
+authors:
+  - Carlansor
+schematics:
+  - id: altfarmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 15
+      y: 14
+      z: 18
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/altfarmer/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/altfarmer/back.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 25
+      y: 17
+      z: 25
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/composter/back.jpg"
+  - id: farmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 21
+      y: 24
+      z: 23
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/farmer/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/farmer/back.jpg"
+  - id: florist
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 16
+      y: 15
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/florist/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/florist/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 32
+      y: 16
+      z: 24
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/horticulture/plantation/back.jpg"
+  - id: altchickenherder
+    type: building
+    building: chickenfarmer
+    path: agriculture/husbandry
+    size:
+      x: 18
+      y: 16
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altchickenherder/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altchickenherder/back.jpg"
+  - id: altcowboy
+    type: building
+    building: cowhand
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 17
+      z: 21
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altcowboy/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altcowboy/back.jpg"
+  - id: altfisherman
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 19
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altfisherman/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altfisherman/back.jpg"
+  - id: altswineherder
+    type: building
+    building: swineherd
+    path: agriculture/husbandry
+    size:
+      x: 18
+      y: 15
+      z: 16
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altswineherder/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/altswineherder/back.jpg"
+  - id: beekeeper
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 19
+      y: 14
+      z: 10
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/beekeeper/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/beekeeper/back.jpg"
+  - id: chickenherder
+    type: building
+    building: chickenfarmer
+    path: agriculture/husbandry
+    size:
+      x: 16
+      y: 16
+      z: 18
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowboy
+    type: building
+    building: cowhand
+    path: agriculture/husbandry
+    size:
+      x: 18
+      y: 13
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/cowboy/back.jpg"
+  - id: fisherman
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 18
+      y: 21
+      z: 26
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/fisherman/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/fisherman/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 16
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 13
+      z: 23
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/shepherd/back.jpg"
+  - id: swineherder
+    type: building
+    building: swineherd
+    path: agriculture/husbandry
+    size:
+      x: 15
+      y: 13
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/medievalspruce/agriculture/husbandry/swineherder/back.jpg"
+  - id: altsawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 17
+      y: 14
+      z: 11
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/carpentry/altsawmill/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/carpentry/altsawmill/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 11
+      y: 17
+      z: 13
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 18
+      y: 16
+      z: 22
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: craftsmanship/luxury
+    size:
+      x: 18
+      y: 34
+      z: 19
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/alchemist/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/alchemist/back.jpg"
+  - id: altbaker
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 20
+      y: 16
+      z: 13
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/altbaker/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/altbaker/back.jpg"
+  - id: baker
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 21
+      z: 17
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/baker/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/baker/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: cookery
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 16
+      z: 13
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/cookery/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/cookery/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 9
+      y: 16
+      z: 19
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: glassblower
+    path: craftsmanship/luxury
+    size:
+      x: 19
+      y: 11
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/luxury/glassblower/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 16
+      y: 28
+      z: 14
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/crusher/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 11
+      y: 17
+      z: 18
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 16
+      y: 16
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 21
+      y: 16
+      z: 12
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/masonry/stonesmeltery/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 20
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/metallurgy
+    size:
+      x: 12
+      y: 23
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/metallurgy/mechanic/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/metallurgy/mechanic/back.jpg"
+  - id: smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 17
+      y: 15
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/metallurgy/smeltery/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/metallurgy/smeltery/back.jpg"
+  - id: altdeliveryman
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 17
+      y: 16
+      z: 13
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/altdeliveryman/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/altdeliveryman/back.jpg"
+  - id: altwarehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 21
+      y: 19
+      z: 29
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/altwarehouse/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/altwarehouse/back.jpg"
+  - id: deliveryman
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 13
+      y: 18
+      z: 9
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/deliveryman/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/deliveryman/back.jpg"
+  - id: warehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 24
+      y: 27
+      z: 23
+    images:
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/warehouse/front.jpg"
+      - "@assets/images/schematics/medievalspruce/craftsmanship/storage/warehouse/back.jpg"
+  - id: bigwell
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 9
+      y: 13
+      z: 9
+    images:
+      - "@assets/images/schematics/medievalspruce/decorations/misc/bigwell/front.jpg"
+  - id: smallwell
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 8
+      y: 9
+      z: 8
+    images:
+      - "@assets/images/schematics/medievalspruce/decorations/misc/smallwell/front.jpg"
+  - id: small_stable
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 13
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/medievalspruce/decorations/misc/small_stable/front.jpg"
+  - id: camp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 11
+      y: 10
+      z: 12
+    images:
+      - "@assets/images/schematics/medievalspruce/decorations/supplies/camp/front.jpg"
+  - id: ship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 17
+      y: 35
+      z: 32
+    images:
+      - "@assets/images/schematics/medievalspruce/decorations/supplies/ship/front.jpg"
+      - "@assets/images/schematics/medievalspruce/decorations/supplies/ship/back.jpg"
+  - id: altlibrary
+    type: building
+    building: library
+    path: education
+    size:
+      x: 41
+      y: 33
+      z: 36
+    images:
+      - "@assets/images/schematics/medievalspruce/education/altlibrary/front.jpg"
+      - "@assets/images/schematics/medievalspruce/education/altlibrary/back.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 41
+      y: 36
+      z: 17
+    images:
+      - "@assets/images/schematics/medievalspruce/education/library/front.jpg"
+      - "@assets/images/schematics/medievalspruce/education/library/back.jpg"
+  - id: school
+    type: building
+    building: school
+    path: education
+    size:
+      x: 20
+      y: 25
+      z: 25
+    images:
+      - "@assets/images/schematics/medievalspruce/education/school/front.jpg"
+      - "@assets/images/schematics/medievalspruce/education/school/back.jpg"
+  - id: university
+    type: building
+    building: university
+    path: education
+    size:
+      x: 41
+      y: 20
+      z: 24
+    images:
+      - "@assets/images/schematics/medievalspruce/education/university/front.jpg"
+      - "@assets/images/schematics/medievalspruce/education/university/back.jpg"
+  - id: universityfull
+    type: building
+    building: library
+    path: education
+    size:
+      x: 41
+      y: 36
+      z: 17
+    images:
+      - "@assets/images/schematics/medievalspruce/education/universityfull/front.jpg"
+      - "@assets/images/schematics/medievalspruce/education/universityfull/back.jpg"
+  - id: altbuilder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 17
+      y: 22
+      z: 16
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/altbuilder/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/altbuilder/back.jpg"
+  - id: altcook
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 19
+      y: 16
+      z: 17
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/altcook/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/altcook/back.jpg"
+  - id: altlumberjack
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 17
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/altlumberjack/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/altlumberjack/back.jpg"
+  - id: altminer
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 17
+      y: 19
+      z: 18
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/altminer/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/altminer/back.jpg"
+  - id: altresidence
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 14
+      y: 17
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/altresidence/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/altresidence/back.jpg"
+  - id: alttownhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 35
+      y: 34
+      z: 36
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/alttownhall/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/alttownhall/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 11
+      y: 19
+      z: 14
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/builder/back.jpg"
+  - id: cook
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 25
+      y: 20
+      z: 25
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/cook/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/cook/back.jpg"
+  - id: highlander
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 15
+      y: 17
+      z: 18
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/highlander/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/highlander/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 21
+      y: 20
+      z: 22
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/hospital/back.jpg"
+  - id: lumberjack
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 14
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/lumberjack/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/lumberjack/back.jpg"
+  - id: miner
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 17
+      y: 18
+      z: 18
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/miner/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/miner/back.jpg"
+  - id: residence
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 14
+      y: 19
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/residence/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/residence/back.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 13
+      y: 20
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 15
+      y: 29
+      z: 22
+    images:
+      - "@assets/images/schematics/medievalspruce/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/medievalspruce/fundamentals/townhall/back.jpg"
+  - id: canal_bridge
+    type: decoration
+    path: infrastructure/canal
+    size:
+      x: 9
+      y: 11
+      z: 16
+    images:
+      - "@assets/images/schematics/medievalspruce/infrastructure/canal/canal_bridge/front.jpg"
+  - id: canal_corner
+    type: decoration
+    path: infrastructure/canal
+    size:
+      x: 9
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/medievalspruce/infrastructure/canal/canal_corner/front.jpg"
+  - id: canal_innercorner
+    type: decoration
+    path: infrastructure/canal
+    size:
+      x: 7
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/infrastructure/canal/canal_innercorner/front.jpg"
+  - id: canal_straight
+    type: decoration
+    path: infrastructure/canal
+    size:
+      x: 8
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/medievalspruce/infrastructure/canal/canal_straight/front.jpg"
+  - id: altarchery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 15
+      y: 18
+      z: 25
+    images:
+      - "@assets/images/schematics/medievalspruce/military/altarchery/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/altarchery/back.jpg"
+  - id: altbarracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 27
+      y: 26
+      z: 27
+    images:
+      - "@assets/images/schematics/medievalspruce/military/altbarracks/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/altbarracks/back.jpg"
+  - id: altbarrackstower
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 7
+      y: 19
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/military/altbarrackstower/front.jpg"
+  - id: altcombatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 13
+      y: 16
+      z: 25
+    images:
+      - "@assets/images/schematics/medievalspruce/military/altcombatacademy/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/altcombatacademy/back.jpg"
+  - id: altguardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 11
+      y: 29
+      z: 11
+    images:
+      - "@assets/images/schematics/medievalspruce/military/altguardtower/front.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 23
+      y: 24
+      z: 15
+    images:
+      - "@assets/images/schematics/medievalspruce/military/archery/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 21
+      y: 20
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/military/barracks/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/barracks/back.jpg"
+  - id: barrackstower
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 7
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/military/barrackstower/front.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 18
+      y: 18
+      z: 14
+    images:
+      - "@assets/images/schematics/medievalspruce/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/combatacademy/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 7
+      y: 27
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/military/guardtower/front.jpg"
+  - id: altbarracksfull
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 27
+      y: 26
+      z: 27
+    images:
+      - "@assets/images/schematics/medievalspruce/military/altbarracksfull/front.jpg"
+  - id: barracksfull
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 21
+      y: 20
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/military/barracksfull/front.jpg"
+      - "@assets/images/schematics/medievalspruce/military/barracksfull/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 16
+      y: 17
+      z: 23
+    images:
+      - "@assets/images/schematics/medievalspruce/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/medievalspruce/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 21
+      y: 16
+      z: 21
+    images:
+      - "@assets/images/schematics/medievalspruce/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/medievalspruce/mystic/graveyard/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 20
+      y: 22
+      z: 20
+    images:
+      - "@assets/images/schematics/medievalspruce/mystic/mysticalsite/front.jpg"
+  - id: netherworker
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 25
+      y: 25
+      z: 22
+    images:
+      - "@assets/images/schematics/medievalspruce/mystic/netherworker/front.jpg"
+      - "@assets/images/schematics/medievalspruce/mystic/netherworker/back.jpg"
+  - id: corner
+    type: decoration
+    path: walls/corner
+    size:
+      x: 7
+      y: 20
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/walls/corner/corner/front.jpg"
+  - id: innercorner
+    type: decoration
+    path: walls/corner
+    size:
+      x: 7
+      y: 15
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/walls/corner/innercorner/front.jpg"
+  - id: tcorner
+    type: decoration
+    path: walls/corner
+    size:
+      x: 9
+      y: 15
+      z: 8
+    images:
+      - "@assets/images/schematics/medievalspruce/walls/corner/tcorner/front.jpg"
+  - id: gate
+    type: decoration
+    path: walls/gate
+    size:
+      x: 7
+      y: 24
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/walls/gate/gate/front.jpg"
+  - id: segment
+    type: decoration
+    path: walls/segment
+    size:
+      x: 6
+      y: 15
+      z: 9
+    images:
+      - "@assets/images/schematics/medievalspruce/walls/segment/segment/front.jpg"
+  - id: tower
+    type: decoration
+    path: walls/tower
+    size:
+      x: 7
+      y: 22
+      z: 7
+    images:
+      - "@assets/images/schematics/medievalspruce/walls/tower/tower/front.jpg"

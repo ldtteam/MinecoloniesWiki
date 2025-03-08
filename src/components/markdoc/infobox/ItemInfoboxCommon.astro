@@ -33,7 +33,6 @@ const iconsPerVersion = await getOverrideValues(item.data, (i) => i.icons, []);
         <VersionContent versions={icons.versions}>
           <swiper-container
             pagination
-            pagination-dynamic-bullets
             autoplay={icons.value.length > 2}
             autoplay-delay="2000"
             autoplay-pause-on-mouse-enter

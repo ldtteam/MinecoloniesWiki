@@ -1,0 +1,2148 @@
+id: ancientathens
+displayName: Ancient Athens
+authors:
+  - John Reiher
+  - Pixblockus
+  - _Raycoms_
+  - Thodor12
+schematics:
+  - id: field
+    type: decoration
+    path: agriculture/fields/farm
+    size:
+      x: 15
+      y: 4
+      z: 15
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/farm/field/front.jpg"
+  - id: field_sloped
+    type: decoration
+    path: agriculture/fields/farm
+    size:
+      x: 15
+      y: 6
+      z: 15
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/farm/field_sloped/front.jpg"
+  - id: bamboo
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 10
+      y: 8
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/bamboo/front.jpg"
+  - id: cactus
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 14
+      y: 6
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/cactus/front.jpg"
+  - id: cocoa_and_vines
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 15
+      y: 8
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/cocoa_and_vines/front.jpg"
+  - id: glowberries
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 11
+      y: 9
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/glowberries/front.jpg"
+  - id: kelp
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 13
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/kelp/front.jpg"
+  - id: nether_crops
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 26
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/nether_crops/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/nether_crops/back.jpg"
+  - id: seagrass_and_sea_pickles
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 10
+      y: 7
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/seagrass_and_sea_pickles/front.jpg"
+  - id: sugar_cane
+    type: decoration
+    path: agriculture/fields/plantation
+    size:
+      x: 10
+      y: 6
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/fields/plantation/sugar_cane/front.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 19
+      y: 10
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/composter/back.jpg"
+  - id: farm
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 22
+      y: 10
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/farm/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/farm/back.jpg"
+  - id: florist
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 22
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/florist/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/florist/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 22
+      y: 11
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/horticulture/plantation/back.jpg"
+  - id: beekeeper
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 19
+      y: 11
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/beekeeper/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/beekeeper/back.jpg"
+  - id: chickenfarmer
+    type: building
+    building: chickenfarmer
+    path: agriculture/husbandry
+    size:
+      x: 21
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/chickenfarmer/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/chickenfarmer/back.jpg"
+  - id: cowhand
+    type: building
+    building: cowhand
+    path: agriculture/husbandry
+    size:
+      x: 22
+      y: 9
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/cowhand/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/cowhand/back.jpg"
+  - id: fisher
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 22
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/fisher/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/fisher/back.jpg"
+  - id: harborfisher
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 10
+      y: 10
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/harborfisher/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/harborfisher/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 21
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 19
+      y: 10
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/shepherd/back.jpg"
+  - id: swineherder
+    type: building
+    building: swineherd
+    path: agriculture/husbandry
+    size:
+      x: 19
+      y: 10
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/ancientathens/agriculture/husbandry/swineherder/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 8
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 14
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: craftsmanship/luxury
+    size:
+      x: 11
+      y: 15
+      z: 19
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/alchemist/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/alchemist/back.jpg"
+  - id: bakery
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 11
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/bakery/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/bakery/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 13
+      y: 10
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 14
+      y: 9
+      z: 14
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: glassblower
+    path: craftsmanship/luxury
+    size:
+      x: 15
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/glassblower/back.jpg"
+  - id: kitchen
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 12
+      y: 10
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/kitchen/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/kitchen/back.jpg"
+  - id: rural_dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 19
+      y: 11
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/rural_dyer/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/luxury/rural_dyer/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 15
+      y: 8
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/crusher/back.jpg"
+  - id: rural_sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 19
+      y: 10
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/rural_sifter/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/rural_sifter/back.jpg"
+  - id: rural_stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 22
+      y: 10
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/rural_stonesmeltery/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/rural_stonesmeltery/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 14
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 16
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 13
+      y: 8
+      z: 15
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/masonry/stonesmeltery/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 18
+      y: 10
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/metallurgy
+    size:
+      x: 10
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/mechanic/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/mechanic/back.jpg"
+  - id: rural_smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 22
+      y: 10
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/rural_smeltery/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/rural_smeltery/back.jpg"
+  - id: smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 13
+      y: 9
+      z: 15
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/smeltery/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/metallurgy/smeltery/back.jpg"
+  - id: courier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 9
+      y: 10
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/courier/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/courier/back.jpg"
+  - id: courier_offices
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 14
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/courier_offices/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/courier_offices/back.jpg"
+  - id: harborcourier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 21
+      y: 14
+      z: 25
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/harborcourier/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/harborcourier/back.jpg"
+  - id: harborwarehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 33
+      y: 21
+      z: 25
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/harborwarehouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/harborwarehouse/back.jpg"
+  - id: integratedcourier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 3
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/integratedcourier/front.jpg"
+  - id: rural_warehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 25
+      y: 17
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/rural_warehouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/rural_warehouse/back.jpg"
+  - id: warehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 23
+      y: 14
+      z: 16
+    images:
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/warehouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/craftsmanship/storage/warehouse/back.jpg"
+  - id: stall_cloth
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 8
+      y: 5
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_cloth/front.jpg"
+  - id: stall_dye
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 8
+      y: 5
+      z: 16
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_dye/front.jpg"
+  - id: stall_fish
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 11
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_fish/front.jpg"
+  - id: stall_food
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 7
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_food/front.jpg"
+  - id: stall_general
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 7
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_general/front.jpg"
+  - id: stall_meat_one
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 6
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_meat_one/front.jpg"
+  - id: stall_meat_two
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 7
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_meat_two/front.jpg"
+  - id: stall_pottery_one
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 7
+      y: 5
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_pottery_one/front.jpg"
+  - id: stall_pottery_two
+    type: decoration
+    path: decorations/agora
+    size:
+      x: 7
+      y: 5
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/agora/stall_pottery_two/front.jpg"
+  - id: buoy
+    type: decoration
+    path: decorations/harbor/other
+    size:
+      x: 3
+      y: 7
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/other/buoy/front.jpg"
+  - id: long
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 3
+      z: 15
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/long/front.jpg"
+  - id: long_raised
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 4
+      z: 15
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/long_raised/front.jpg"
+  - id: medium
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 3
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/medium/front.jpg"
+  - id: medium_raised
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/medium_raised/front.jpg"
+  - id: short
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/short/front.jpg"
+  - id: short_raised
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/short_raised/front.jpg"
+  - id: stair
+    type: decoration
+    path: decorations/harbor/paths
+    size:
+      x: 5
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/paths/stair/front.jpg"
+  - id: jetty
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 22
+      y: 9
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/jetty/front.jpg"
+  - id: large
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 47
+      y: 22
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/large/front.jpg"
+  - id: large_military
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 48
+      y: 13
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/large_military/front.jpg"
+  - id: medium
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 39
+      y: 22
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/medium/front.jpg"
+  - id: medium_military
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 39
+      y: 12
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/medium_military/front.jpg"
+  - id: small
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 28
+      y: 9
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/small/front.jpg"
+  - id: small_roofed
+    type: decoration
+    path: decorations/harbor/piers
+    size:
+      x: 28
+      y: 11
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/piers/small_roofed/front.jpg"
+  - id: section
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section/front.jpg"
+  - id: section_claw_crane
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_claw_crane/front.jpg"
+  - id: section_crane
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 15
+      y: 21
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_crane/front.jpg"
+  - id: section_diagonal
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 5
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_diagonal/front.jpg"
+  - id: section_diagonal_large
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 9
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_diagonal_large/front.jpg"
+  - id: section_dock
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 8
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_dock/front.jpg"
+  - id: section_inner_corner
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 9
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_inner_corner/front.jpg"
+  - id: section_large
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 8
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_large/front.jpg"
+  - id: section_outer_corner
+    type: decoration
+    path: decorations/harbor/seawall/short
+    size:
+      x: 10
+      y: 8
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/short/section_outer_corner/front.jpg"
+  - id: section
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 10
+      y: 10
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section/front.jpg"
+  - id: section_diagonal
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 5
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section_diagonal/front.jpg"
+  - id: section_diagonal_large
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 10
+      y: 11
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section_diagonal_large/front.jpg"
+  - id: section_dock
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 10
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section_dock/front.jpg"
+  - id: section_inner_corner
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 10
+      y: 11
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section_inner_corner/front.jpg"
+  - id: section_large
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 10
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section_large/front.jpg"
+  - id: section_outer_corner
+    type: decoration
+    path: decorations/harbor/seawall/tall
+    size:
+      x: 10
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/seawall/tall/section_outer_corner/front.jpg"
+  - id: bireme
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 31
+      y: 20
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/bireme/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/bireme/back.jpg"
+  - id: bireme_docked
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 28
+      y: 20
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/bireme_docked/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/bireme_docked/back.jpg"
+  - id: cargo
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 22
+      y: 18
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo/back.jpg"
+  - id: cargo_docked
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 22
+      y: 14
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo_docked/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo_docked/back.jpg"
+  - id: cargo_large
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 25
+      y: 17
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo_large/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo_large/back.jpg"
+  - id: cargo_large_docked
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 24
+      y: 17
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo_large_docked/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/cargo_large_docked/back.jpg"
+  - id: trireme
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 36
+      y: 23
+      z: 19
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/trireme/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/trireme/back.jpg"
+  - id: trireme_docked
+    type: decoration
+    path: decorations/harbor/ships/athenian
+    size:
+      x: 35
+      y: 23
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/trireme_docked/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/athenian/trireme_docked/back.jpg"
+  - id: bireme
+    type: decoration
+    path: decorations/harbor/ships/mycanean
+    size:
+      x: 28
+      y: 20
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/mycanean/bireme/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/mycanean/bireme/back.jpg"
+  - id: bireme_docked
+    type: decoration
+    path: decorations/harbor/ships/mycanean
+    size:
+      x: 26
+      y: 20
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/mycanean/bireme_docked/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/mycanean/bireme_docked/back.jpg"
+  - id: trireme
+    type: decoration
+    path: decorations/harbor/ships/spartan
+    size:
+      x: 35
+      y: 23
+      z: 19
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/spartan/trireme/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/spartan/trireme/back.jpg"
+  - id: trireme_docked
+    type: decoration
+    path: decorations/harbor/ships/spartan
+    size:
+      x: 34
+      y: 22
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/spartan/trireme_docked/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/ships/spartan/trireme_docked/back.jpg"
+  - id: section
+    type: decoration
+    path: decorations/harbor/shoal
+    size:
+      x: 15
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/shoal/section/front.jpg"
+  - id: section_large
+    type: decoration
+    path: decorations/harbor/shoal
+    size:
+      x: 15
+      y: 9
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/shoal/section_large/front.jpg"
+  - id: crane
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 11
+      y: 18
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/crane/front.jpg"
+  - id: shipwright
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 41
+      y: 17
+      z: 25
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/shipwright/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/shipwright/back.jpg"
+  - id: ship_construction
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 24
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/ship_construction/front.jpg"
+  - id: ship_construction_large
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 30
+      y: 13
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/ship_construction_large/front.jpg"
+  - id: storage_shed
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 10
+      y: 9
+      z: 10
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/storage_shed/front.jpg"
+  - id: warehouse
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 25
+      y: 12
+      z: 22
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/warehouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/warehouse/back.jpg"
+  - id: warehouse_large
+    type: decoration
+    path: decorations/harbor/structures
+    size:
+      x: 25
+      y: 15
+      z: 35
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/warehouse_large/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/harbor/structures/warehouse_large/back.jpg"
+  - id: grand_lamp_pot
+    type: decoration
+    path: decorations/lights
+    size:
+      x: 3
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/lights/grand_lamp_pot/front.jpg"
+  - id: rural_lantern
+    type: decoration
+    path: decorations/lights
+    size:
+      x: 1
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/lights/rural_lantern/front.jpg"
+  - id: rural_lantern_tall
+    type: decoration
+    path: decorations/lights
+    size:
+      x: 1
+      y: 5
+      z: 1
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/lights/rural_lantern_tall/front.jpg"
+  - id: rural_light
+    type: decoration
+    path: decorations/lights
+    size:
+      x: 1
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/lights/rural_light/front.jpg"
+  - id: rural_light_tall
+    type: decoration
+    path: decorations/lights
+    size:
+      x: 1
+      y: 5
+      z: 1
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/lights/rural_light_tall/front.jpg"
+  - id: urban_lantern
+    type: decoration
+    path: decorations/lights
+    size:
+      x: 1
+      y: 5
+      z: 1
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/lights/urban_lantern/front.jpg"
+  - id: fountain
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 6
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/fountain/front.jpg"
+  - id: garden_of_poseidon
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 30
+      y: 15
+      z: 31
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/garden_of_poseidon/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/parks/garden_of_poseidon/back.jpg"
+  - id: seating_area_rural
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 8
+      y: 7
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/seating_area_rural/front.jpg"
+  - id: seating_area_urban
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 9
+      y: 9
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/seating_area_urban/front.jpg"
+  - id: small_park
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 8
+      y: 7
+      z: 11
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/small_park/front.jpg"
+  - id: trees
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 3
+      y: 9
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/trees/front.jpg"
+  - id: well
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 7
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/parks/well/front.jpg"
+  - id: bathhouse
+    type: decoration
+    path: decorations/structures
+    size:
+      x: 19
+      y: 21
+      z: 37
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/structures/bathhouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/structures/bathhouse/back.jpg"
+  - id: playerhouse
+    type: decoration
+    path: decorations/structures
+    size:
+      x: 34
+      y: 20
+      z: 19
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/structures/playerhouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/structures/playerhouse/back.jpg"
+  - id: temple_of_zeus
+    type: decoration
+    path: decorations/structures
+    size:
+      x: 20
+      y: 15
+      z: 26
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/structures/temple_of_zeus/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/structures/temple_of_zeus/back.jpg"
+  - id: camp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 17
+      y: 11
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/supplies/camp/front.jpg"
+  - id: ship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 35
+      y: 23
+      z: 19
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/supplies/ship/front.jpg"
+      - "@assets/images/schematics/ancientathens/decorations/supplies/ship/back.jpg"
+  - id: bush_large
+    type: decoration
+    path: decorations/vegetation
+    size:
+      x: 3
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/vegetation/bush_large/front.jpg"
+  - id: bush_medium
+    type: decoration
+    path: decorations/vegetation
+    size:
+      x: 3
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/vegetation/bush_medium/front.jpg"
+  - id: bush_seat
+    type: decoration
+    path: decorations/vegetation
+    size:
+      x: 2
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/vegetation/bush_seat/front.jpg"
+  - id: bush_small
+    type: decoration
+    path: decorations/vegetation
+    size:
+      x: 3
+      y: 3
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/vegetation/bush_small/front.jpg"
+  - id: tree_large
+    type: decoration
+    path: decorations/vegetation
+    size:
+      x: 3
+      y: 6
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/vegetation/tree_large/front.jpg"
+  - id: tree_small
+    type: decoration
+    path: decorations/vegetation
+    size:
+      x: 1
+      y: 4
+      z: 1
+    images:
+      - "@assets/images/schematics/ancientathens/decorations/vegetation/tree_small/front.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 22
+      y: 16
+      z: 30
+    images:
+      - "@assets/images/schematics/ancientathens/education/library/front.jpg"
+      - "@assets/images/schematics/ancientathens/education/library/back.jpg"
+  - id: school
+    type: building
+    building: school
+    path: education
+    size:
+      x: 13
+      y: 9
+      z: 14
+    images:
+      - "@assets/images/schematics/ancientathens/education/school/front.jpg"
+      - "@assets/images/schematics/ancientathens/education/school/back.jpg"
+  - id: university
+    type: building
+    building: university
+    path: education
+    size:
+      x: 34
+      y: 14
+      z: 24
+    images:
+      - "@assets/images/schematics/ancientathens/education/university/front.jpg"
+      - "@assets/images/schematics/ancientathens/education/university/back.jpg"
+  - id: alt_restaurant
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 11
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/alt_restaurant/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/alt_restaurant/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 12
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/builder/back.jpg"
+  - id: estate
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 18
+      y: 13
+      z: 16
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/estate/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/estate/back.jpg"
+  - id: forester
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 14
+      y: 11
+      z: 12
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/forester/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/forester/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 15
+      y: 8
+      z: 14
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/hospital/back.jpg"
+  - id: mine
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 19
+      y: 11
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/mine/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/mine/back.jpg"
+  - id: residence
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 17
+      y: 11
+      z: 18
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/residence/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/residence/back.jpg"
+  - id: restaurant
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 11
+      y: 10
+      z: 19
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/restaurant/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/restaurant/back.jpg"
+  - id: ruralbuilder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 19
+      y: 11
+      z: 17
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/ruralbuilder/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/ruralbuilder/back.jpg"
+  - id: rural_residence
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 22
+      y: 15
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/rural_residence/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/rural_residence/back.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 16
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 33
+      y: 13
+      z: 27
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/townhall/back.jpg"
+  - id: villa
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 14
+      y: 13
+      z: 18
+    images:
+      - "@assets/images/schematics/ancientathens/fundamentals/villa/front.jpg"
+      - "@assets/images/schematics/ancientathens/fundamentals/villa/back.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/aquaducts
+    size:
+      x: 7
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/aquaducts/corner/front.jpg"
+  - id: slope
+    type: decoration
+    path: infrastructure/aquaducts
+    size:
+      x: 4
+      y: 9
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/aquaducts/slope/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/aquaducts
+    size:
+      x: 4
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/aquaducts/straight/front.jpg"
+  - id: t-junction
+    type: decoration
+    path: infrastructure/aquaducts
+    size:
+      x: 7
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/aquaducts/t-junction/front.jpg"
+  - id: short_span
+    type: decoration
+    path: infrastructure/bridges/rural
+    size:
+      x: 3
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/bridges/rural/short_span/front.jpg"
+  - id: span
+    type: decoration
+    path: infrastructure/bridges/rural
+    size:
+      x: 9
+      y: 11
+      z: 4
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/bridges/rural/span/front.jpg"
+  - id: stairs
+    type: decoration
+    path: infrastructure/bridges/rural
+    size:
+      x: 6
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/bridges/rural/stairs/front.jpg"
+  - id: short_span
+    type: decoration
+    path: infrastructure/bridges/urban
+    size:
+      x: 3
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/bridges/urban/short_span/front.jpg"
+  - id: span
+    type: decoration
+    path: infrastructure/bridges/urban
+    size:
+      x: 9
+      y: 13
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/bridges/urban/span/front.jpg"
+  - id: stairs
+    type: decoration
+    path: infrastructure/bridges/urban
+    size:
+      x: 6
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/bridges/urban/stairs/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 9
+      y: 7
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/corner/front.jpg"
+  - id: junction
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 9
+      y: 7
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/junction/front.jpg"
+  - id: long_tree
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 9
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/long_tree/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 2
+      y: 2
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/short/front.jpg"
+  - id: short_bench
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 6
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/short_bench/front.jpg"
+  - id: short_bush
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 4
+      y: 3
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/short_bush/front.jpg"
+  - id: short_light
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 3
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/short_light/front.jpg"
+  - id: short_tree
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 5
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/short_tree/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 5
+      y: 8
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/stair/front.jpg"
+  - id: stair_steep
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 4
+      y: 10
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/stair_steep/front.jpg"
+  - id: t-junction
+    type: decoration
+    path: infrastructure/roads/grand_processional
+    size:
+      x: 9
+      y: 7
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/grand_processional/t-junction/front.jpg"
+  - id: connector
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 8
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/connector/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 6
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/corner/front.jpg"
+  - id: junction
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 6
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/junction/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 4
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/stair/front.jpg"
+  - id: stair_long
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 6
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/stair_long/front.jpg"
+  - id: stair_short
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 3
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/stair_short/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 4
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/straight/front.jpg"
+  - id: straight_long
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 8
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/straight_long/front.jpg"
+  - id: straight_small
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 3
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/straight_small/front.jpg"
+  - id: t-junction
+    type: decoration
+    path: infrastructure/roads/rural
+    size:
+      x: 6
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/rural/t-junction/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/roads/urban/alley
+    size:
+      x: 3
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/alley/stair/front.jpg"
+  - id: stair_slope
+    type: decoration
+    path: infrastructure/roads/urban/alley
+    size:
+      x: 5
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/alley/stair_slope/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/roads/urban/alley
+    size:
+      x: 3
+      y: 2
+      z: 2
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/alley/straight/front.jpg"
+  - id: straight_long
+    type: decoration
+    path: infrastructure/roads/urban/alley
+    size:
+      x: 5
+      y: 2
+      z: 2
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/alley/straight_long/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/roads/urban/path
+    size:
+      x: 3
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/path/stair/front.jpg"
+  - id: stair_slope
+    type: decoration
+    path: infrastructure/roads/urban/path
+    size:
+      x: 5
+      y: 4
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/path/stair_slope/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/roads/urban/path
+    size:
+      x: 3
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/path/straight/front.jpg"
+  - id: straight_long
+    type: decoration
+    path: infrastructure/roads/urban/path
+    size:
+      x: 5
+      y: 2
+      z: 3
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/path/straight_long/front.jpg"
+  - id: connector
+    type: decoration
+    path: infrastructure/roads/urban/road
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/road/connector/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/urban/road
+    size:
+      x: 3
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/road/corner/front.jpg"
+  - id: junction
+    type: decoration
+    path: infrastructure/roads/urban/road
+    size:
+      x: 3
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/road/junction/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/roads/urban/road
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/road/stair/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/roads/urban/road
+    size:
+      x: 3
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/road/straight/front.jpg"
+  - id: t-junction
+    type: decoration
+    path: infrastructure/roads/urban/road
+    size:
+      x: 3
+      y: 2
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/infrastructure/roads/urban/road/t-junction/front.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 30
+      y: 15
+      z: 20
+    images:
+      - "@assets/images/schematics/ancientathens/military/archery/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 30
+      y: 18
+      z: 30
+    images:
+      - "@assets/images/schematics/ancientathens/military/barracks/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/barracks/back.jpg"
+  - id: barrackstowerleft
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 5
+      y: 18
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/military/barrackstowerleft/front.jpg"
+  - id: barrackstowerlower
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 7
+      y: 7
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/military/barrackstowerlower/front.jpg"
+  - id: barrackstowerright
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 5
+      y: 16
+      z: 5
+    images:
+      - "@assets/images/schematics/ancientathens/military/barrackstowerright/front.jpg"
+  - id: barrackstowerupper
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 7
+      y: 6
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/military/barrackstowerupper/front.jpg"
+  - id: citytower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 9
+      y: 16
+      z: 9
+    images:
+      - "@assets/images/schematics/ancientathens/military/citytower/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/citytower/back.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 30
+      y: 15
+      z: 30
+    images:
+      - "@assets/images/schematics/ancientathens/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/combatacademy/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 7
+      y: 19
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/military/guardtower/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/guardtower/back.jpg"
+  - id: lighthouse
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 13
+      y: 27
+      z: 18
+    images:
+      - "@assets/images/schematics/ancientathens/military/lighthouse/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/lighthouse/back.jpg"
+  - id: walltower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 7
+      y: 19
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/military/walltower/front.jpg"
+      - "@assets/images/schematics/ancientathens/military/walltower/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 23
+      y: 13
+      z: 27
+    images:
+      - "@assets/images/schematics/ancientathens/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/ancientathens/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 30
+      y: 12
+      z: 30
+    images:
+      - "@assets/images/schematics/ancientathens/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/ancientathens/mystic/graveyard/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 40
+      y: 18
+      z: 43
+    images:
+      - "@assets/images/schematics/ancientathens/mystic/mysticalsite/front.jpg"
+      - "@assets/images/schematics/ancientathens/mystic/mysticalsite/back.jpg"
+  - id: nethermine
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 21
+      y: 14
+      z: 30
+    images:
+      - "@assets/images/schematics/ancientathens/mystic/nethermine/front.jpg"
+      - "@assets/images/schematics/ancientathens/mystic/nethermine/back.jpg"
+  - id: rural_graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 30
+      y: 14
+      z: 30
+    images:
+      - "@assets/images/schematics/ancientathens/mystic/rural_graveyard/front.jpg"
+      - "@assets/images/schematics/ancientathens/mystic/rural_graveyard/back.jpg"
+  - id: corner_inner
+    type: decoration
+    path: walls/city
+    size:
+      x: 7
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/walls/city/corner_inner/front.jpg"
+  - id: corner_outer
+    type: decoration
+    path: walls/city
+    size:
+      x: 5
+      y: 8
+      z: 6
+    images:
+      - "@assets/images/schematics/ancientathens/walls/city/corner_outer/front.jpg"
+  - id: gate
+    type: decoration
+    path: walls/city
+    size:
+      x: 3
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/walls/city/gate/front.jpg"
+  - id: straight
+    type: decoration
+    path: walls/city
+    size:
+      x: 3
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/walls/city/straight/front.jpg"
+  - id: straight_pillar
+    type: decoration
+    path: walls/city
+    size:
+      x: 3
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/walls/city/straight_pillar/front.jpg"
+  - id: corner_inner
+    type: decoration
+    path: walls/fortress
+    size:
+      x: 7
+      y: 7
+      z: 4
+    images:
+      - "@assets/images/schematics/ancientathens/walls/fortress/corner_inner/front.jpg"
+  - id: corner_outer
+    type: decoration
+    path: walls/fortress
+    size:
+      x: 8
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/ancientathens/walls/fortress/corner_outer/front.jpg"
+  - id: gate
+    type: decoration
+    path: walls/fortress
+    size:
+      x: 4
+      y: 7
+      z: 13
+    images:
+      - "@assets/images/schematics/ancientathens/walls/fortress/gate/front.jpg"
+  - id: straight
+    type: decoration
+    path: walls/fortress
+    size:
+      x: 4
+      y: 7
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/walls/fortress/straight/front.jpg"
+  - id: straight_stair
+    type: decoration
+    path: walls/fortress
+    size:
+      x: 4
+      y: 7
+      z: 8
+    images:
+      - "@assets/images/schematics/ancientathens/walls/fortress/straight_stair/front.jpg"

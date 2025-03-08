@@ -3,11 +3,12 @@ import Navlink from './Navlink.astro';
 ---
 
 <Navlink id="home" href="/" name="Home" root />
-<Navlink id="shop" href="https://store.minecolonies.com" name="Shop" root />
-<Navlink id="about" href="/about" name="About the Mod" root />
+<!-- <Navlink id="shop" href="https://store.minecolonies.com" name="Shop" root /> -->
+<Navlink id="about" href="/about" name="About" root />
+<Navlink id="wiki" href="/wiki" name="Wiki" root exact={false} />
+<Navlink id="schematics" href="/schematics" name="Schematics" root />
 <Navlink id="events" href="/events" name="Events" root />
 <Navlink id="team" href="/team" name="Team" root />
-<Navlink id="wiki" href="/wiki" name="Wiki" root exact={false} />
 <Navlink id="support-us" href="/support-us" name="Support Us" root />
 <Navlink id="translate" href="https://crowdin.com/project/minecolonies" name="Translate" root />
 <Navlink id="report" href="https://github.com/ldtteam/minecolonies/issues/new/choose" name="Report a Bug" root />

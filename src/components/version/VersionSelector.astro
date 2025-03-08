@@ -4,7 +4,7 @@ import { getSortedVersions } from '@utils/version';
 const versions = await getSortedVersions();
 ---
 
-<div class="input-group input-group-sm flex-nowrap">
+<div class="version-selector input-group input-group-sm">
   <span class="input-group-text">Version</span>
   <select class="version-switch form-select">
     <optgroup label="Supported versions">
@@ -32,6 +32,10 @@ const versions = await getSortedVersions();
   @import '../../css/bootstrap-vars.scss';
   @import '../../../node_modules/bootstrap/scss/forms/_input-group.scss';
   @import '../../../node_modules/bootstrap/scss/forms/_form-select.scss';
+
+  .version-selector {
+    width: fit-content !important;
+  }
 
   select:has(option:checked.unsupported) {
     color: red;

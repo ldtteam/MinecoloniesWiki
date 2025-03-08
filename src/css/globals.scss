@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "./bootstrap-vars.scss";
 
 $bg-color-light: #fffaee;
 $bg-color-dark: #080a0f;
@@ -46,6 +47,10 @@ img {
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
 }
 
 /* GLOBAL STYLES */
@@ -128,4 +133,31 @@ hr {
   --astro-code-token-string-expression: #ff79c6;
   --astro-code-token-punctuation: #f8f8f2;
   --astro-code-token-link: #8be9fd;
+}
+
+/* HEADER STYLES */
+.header {
+  display: flex;
+
+  &>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .version-selector {
+      align-self: flex-end;
+    }
+
+    @include media-breakpoint-down(lg) {
+      .version-selector {
+        display: none;
+      }
+    }
+  }
+
+  .page_header {
+    white-space: nowrap;
+    flex: 0;
+    margin: 0;
+  }
 }

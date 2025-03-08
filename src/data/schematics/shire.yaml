@@ -1,0 +1,1407 @@
+id: shire
+displayName: Shire
+authors:
+  - Daddy_P1G
+  - JohnReiher
+  - and others
+schematics:
+  - id: bamboo
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 15
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/bamboo/front.jpg"
+  - id: cactus
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 12
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/cactus/front.jpg"
+  - id: cocoa_vines
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 11
+      y: 6
+      z: 7
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/cocoa_vines/front.jpg"
+  - id: kelp
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 17
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/kelp/front.jpg"
+  - id: nether_fungus
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 17
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/nether_fungus/front.jpg"
+  - id: nether_vines
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 11
+      y: 10
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/nether_vines/front.jpg"
+  - id: seapickles_seagrass
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 10
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/seapickles_seagrass/front.jpg"
+  - id: sugarcane
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 14
+      y: 5
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/agriculture/fields/sugarcane/front.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 12
+      y: 10
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/horticulture/composter/back.jpg"
+  - id: farm
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 22
+      y: 11
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/agriculture/horticulture/farm/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/horticulture/farm/back.jpg"
+  - id: flowershop
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 24
+      y: 10
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/agriculture/horticulture/flowershop/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/horticulture/flowershop/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 22
+      y: 15
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/horticulture/plantation/back.jpg"
+  - id: apiary
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 21
+      y: 8
+      z: 11
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/apiary/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/apiary/back.jpg"
+  - id: chickenherder
+    type: building
+    building: chickenfarmer
+    path: agriculture/husbandry
+    size:
+      x: 22
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowhand
+    type: building
+    building: cowhand
+    path: agriculture/husbandry
+    size:
+      x: 23
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/cowhand/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/cowhand/back.jpg"
+  - id: fisher
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 20
+      y: 16
+      z: 19
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/fisher/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/fisher/back.jpg"
+  - id: fisheralt
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 19
+      y: 12
+      z: 17
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/fisheralt/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/fisheralt/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 25
+      y: 10
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/shepherd/back.jpg"
+  - id: swineherder
+    type: building
+    building: swineherd
+    path: agriculture/husbandry
+    size:
+      x: 12
+      y: 11
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/swineherder/back.jpg"
+  - id: carpenter
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 15
+      y: 9
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/carpentry/carpenter/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/carpentry/carpenter/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 15
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: craftsmanship/luxury
+    size:
+      x: 28
+      y: 14
+      z: 21
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/luxury/alchemist/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/luxury/alchemist/back.jpg"
+  - id: bakery
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 11
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/luxury/bakery/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/luxury/bakery/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 21
+      y: 12
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: cookery
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 9
+      y: 7
+      z: 12
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/luxury/cookery/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/luxury/cookery/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 22
+      y: 11
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: glassblower
+    path: craftsmanship/luxury
+    size:
+      x: 18
+      y: 9
+      z: 16
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/luxury/glassblower/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 17
+      y: 15
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/masonry/crusher/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 13
+      y: 10
+      z: 17
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 18
+      y: 11
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 17
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/masonry/stonesmeltery/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 18
+      y: 9
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/metallurgy
+    size:
+      x: 12
+      y: 8
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/metallurgy/mechanic/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/metallurgy/mechanic/back.jpg"
+  - id: smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 17
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/metallurgy/smeltery/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/metallurgy/smeltery/back.jpg"
+  - id: ccourier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 3
+      y: 3
+      z: 2
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/storage/ccourier/front.jpg"
+  - id: courier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 19
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/storage/courier/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/storage/courier/back.jpg"
+  - id: courieralt
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 9
+      y: 10
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/storage/courieralt/front.jpg"
+      - "@assets/images/schematics/shire/craftsmanship/storage/courieralt/back.jpg"
+  - id: warehouse
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 23
+      y: 15
+      z: 20
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/storage/warehouse/front.jpg"
+  - id: warehousecourier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 13
+      y: 10
+      z: 9
+    images:
+      - "@assets/images/schematics/shire/craftsmanship/storage/warehousecourier/front.jpg"
+  - id: brandybuck_cafe
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 6
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/decorations/misc/brandybuck_cafe/front.jpg"
+  - id: hole_in_the_wall
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 6
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/shire/decorations/misc/hole_in_the_wall/front.jpg"
+  - id: statue
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 6
+      y: 9
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/decorations/misc/statue/front.jpg"
+  - id: large
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 16
+      y: 10
+      z: 16
+    images:
+      - "@assets/images/schematics/shire/decorations/parks/large/front.jpg"
+  - id: parkway
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 12
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/decorations/parks/parkway/front.jpg"
+  - id: small
+    type: decoration
+    path: decorations/parks
+    size:
+      x: 8
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/decorations/parks/small/front.jpg"
+  - id: bag_end
+    type: decoration
+    path: decorations/playerhouse
+    size:
+      x: 44
+      y: 29
+      z: 59
+    images:
+      - "@assets/images/schematics/shire/decorations/playerhouse/bag_end/front.jpg"
+      - "@assets/images/schematics/shire/decorations/playerhouse/bag_end/back.jpg"
+  - id: camp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 15
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/decorations/supplies/camp/front.jpg"
+  - id: ship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 12
+      y: 9
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/decorations/supplies/ship/front.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 15
+      y: 13
+      z: 22
+    images:
+      - "@assets/images/schematics/shire/education/library/front.jpg"
+      - "@assets/images/schematics/shire/education/library/back.jpg"
+  - id: school
+    type: building
+    building: school
+    path: education
+    size:
+      x: 24
+      y: 5
+      z: 12
+    images:
+      - "@assets/images/schematics/shire/education/school/front.jpg"
+  - id: university
+    type: building
+    building: school
+    path: education
+    size:
+      x: 25
+      y: 27
+      z: 24
+    images:
+      - "@assets/images/schematics/shire/education/university/front.jpg"
+      - "@assets/images/schematics/shire/education/university/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 17
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/builder/back.jpg"
+  - id: builderalt
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 12
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/fundamentals/builderalt/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/builderalt/back.jpg"
+  - id: forester
+    type: building
+    building: sawmill
+    path: fundamentals
+    size:
+      x: 24
+      y: 11
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/fundamentals/forester/front.jpg"
+  - id: foresteralt
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 14
+      y: 20
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/fundamentals/foresteralt/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/foresteralt/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 16
+      y: 11
+      z: 24
+    images:
+      - "@assets/images/schematics/shire/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/hospital/back.jpg"
+  - id: house
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 24
+      y: 13
+      z: 16
+    images:
+      - "@assets/images/schematics/shire/fundamentals/house/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/house/back.jpg"
+  - id: housealt
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 17
+      y: 12
+      z: 16
+    images:
+      - "@assets/images/schematics/shire/fundamentals/housealt/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/housealt/back.jpg"
+  - id: mine
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 13
+      y: 14
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/fundamentals/mine/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/mine/back.jpg"
+  - id: restaurant
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 9
+      y: 11
+      z: 16
+    images:
+      - "@assets/images/schematics/shire/fundamentals/restaurant/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/restaurant/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: fundamentals
+    size:
+      x: 12
+      y: 10
+      z: 18
+    images:
+      - "@assets/images/schematics/shire/fundamentals/sawmill/front.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 32
+      y: 11
+      z: 22
+    images:
+      - "@assets/images/schematics/shire/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/tavern/back.jpg"
+  - id: tavernalt
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 28
+      y: 9
+      z: 21
+    images:
+      - "@assets/images/schematics/shire/fundamentals/tavernalt/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/tavernalt/back.jpg"
+  - id: tavernrestaurant
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 11
+      y: 14
+      z: 26
+    images:
+      - "@assets/images/schematics/shire/fundamentals/tavernrestaurant/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/tavernrestaurant/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 23
+      y: 16
+      z: 16
+    images:
+      - "@assets/images/schematics/shire/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/shire/fundamentals/townhall/back.jpg"
+  - id: floating
+    type: decoration
+    path: infrastructure/bridge/planks
+    size:
+      x: 4
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/planks/floating/front.jpg"
+  - id: head
+    type: decoration
+    path: infrastructure/bridge/planks
+    size:
+      x: 9
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/planks/head/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/bridge/planks
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/planks/long/front.jpg"
+  - id: long_pillar
+    type: decoration
+    path: infrastructure/bridge/planks
+    size:
+      x: 7
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/planks/long_pillar/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/bridge/planks
+    size:
+      x: 2
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/planks/short/front.jpg"
+  - id: short_pillar
+    type: decoration
+    path: infrastructure/bridge/planks
+    size:
+      x: 3
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/planks/short_pillar/front.jpg"
+  - id: floating
+    type: decoration
+    path: infrastructure/bridge/stone
+    size:
+      x: 4
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/stone/floating/front.jpg"
+  - id: head
+    type: decoration
+    path: infrastructure/bridge/stone
+    size:
+      x: 9
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/stone/head/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/bridge/stone
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/stone/long/front.jpg"
+  - id: long_pillar
+    type: decoration
+    path: infrastructure/bridge/stone
+    size:
+      x: 7
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/stone/long_pillar/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/bridge/stone
+    size:
+      x: 2
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/stone/short/front.jpg"
+  - id: short_pillar
+    type: decoration
+    path: infrastructure/bridge/stone
+    size:
+      x: 3
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/stone/short_pillar/front.jpg"
+  - id: head
+    type: decoration
+    path: infrastructure/bridge/wood
+    size:
+      x: 9
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/wood/head/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/bridge/wood
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/wood/long/front.jpg"
+  - id: long_pillar
+    type: decoration
+    path: infrastructure/bridge/wood
+    size:
+      x: 7
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/wood/long_pillar/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/bridge/wood
+    size:
+      x: 2
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/wood/short/front.jpg"
+  - id: short_pillar
+    type: decoration
+    path: infrastructure/bridge/wood
+    size:
+      x: 3
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/bridge/wood/short_pillar/front.jpg"
+  - id: flat
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 12
+      y: 5
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/infrastructure/fields/flat/front.jpg"
+  - id: sloped
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 14
+      y: 7
+      z: 13
+    images:
+      - "@assets/images/schematics/shire/infrastructure/fields/sloped/front.jpg"
+  - id: long_ladders
+    type: decoration
+    path: infrastructure/jetty
+    size:
+      x: 6
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/jetty/long_ladders/front.jpg"
+  - id: road_high
+    type: decoration
+    path: infrastructure/jetty
+    size:
+      x: 6
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/jetty/road_high/front.jpg"
+  - id: road_low
+    type: decoration
+    path: infrastructure/jetty
+    size:
+      x: 7
+      y: 7
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/jetty/road_low/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/jetty
+    size:
+      x: 5
+      y: 7
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/jetty/short/front.jpg"
+  - id: short_ladders
+    type: decoration
+    path: infrastructure/jetty
+    size:
+      x: 5
+      y: 7
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/jetty/short_ladders/front.jpg"
+  - id: mediumquarry
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 32
+      y: 21
+      z: 44
+    images:
+      - "@assets/images/schematics/shire/infrastructure/mineshafts/mediumquarry/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/mineshafts/mediumquarry/back.jpg"
+  - id: simplequarry
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 16
+      y: 8
+      z: 24
+    images:
+      - "@assets/images/schematics/shire/infrastructure/mineshafts/simplequarry/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/mineshafts/simplequarry/back.jpg"
+  - id: bridge
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/bridge/front.jpg"
+  - id: bridge_powered
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/bridge_powered/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 7
+      y: 3
+      z: 7
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/intersection/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/long/front.jpg"
+  - id: long_powered
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/long_powered/front.jpg"
+  - id: ramp
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/ramp/front.jpg"
+  - id: ramp_powered
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/ramp_powered/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/short/front.jpg"
+  - id: short_powered
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/short_powered/front.jpg"
+  - id: stepup
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 4
+      z: 2
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/stepup/front.jpg"
+  - id: tjunction
+    type: decoration
+    path: infrastructure/rails/overground
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/overground/tjunction/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 6
+      y: 4
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/corner/front.jpg"
+  - id: entrance
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 9
+      y: 10
+      z: 12
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/entrance/front.jpg"
+  - id: entrance_powered
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 9
+      y: 10
+      z: 12
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/entrance_powered/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 6
+      z: 7
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/intersection/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/intersection/back.jpg"
+  - id: longramp
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 12
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/longramp/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/longramp/back.jpg"
+  - id: longramp_powered
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 12
+      z: 14
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/longramp_powered/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/longramp_powered/back.jpg"
+  - id: shortramp
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 7
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/shortramp/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/shortramp/back.jpg"
+  - id: shortramp_powered
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 7
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/shortramp_powered/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/shortramp_powered/back.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/straight/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/straight/back.jpg"
+  - id: straight_powered
+    type: decoration
+    path: infrastructure/rails/tunnel
+    size:
+      x: 7
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnel/straight_powered/front.jpg"
+  - id: groundlevel
+    type: decoration
+    path: infrastructure/rails/tunnelexit
+    size:
+      x: 7
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/groundlevel/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/groundlevel/back.jpg"
+  - id: subway
+    type: decoration
+    path: infrastructure/rails/tunnelexit
+    size:
+      x: 7
+      y: 8
+      z: 8
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/subway/front.jpg"
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/subway/back.jpg"
+  - id: vertical_bottom
+    type: decoration
+    path: infrastructure/rails/tunnelexit
+    size:
+      x: 5
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/vertical_bottom/front.jpg"
+  - id: vertical_middle
+    type: decoration
+    path: infrastructure/rails/tunnelexit
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/vertical_middle/front.jpg"
+  - id: vertical_top
+    type: decoration
+    path: infrastructure/rails/tunnelexit
+    size:
+      x: 6
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/infrastructure/rails/tunnelexit/vertical_top/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 4
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/intersection/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 8
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/long/front.jpg"
+  - id: longstairs
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 4
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/longstairs/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 4
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/short/front.jpg"
+  - id: shortstairs
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 2
+      y: 4
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/shortstairs/front.jpg"
+  - id: tjunction
+    type: decoration
+    path: infrastructure/roads/narrow
+    size:
+      x: 3
+      y: 3
+      z: 4
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/narrow/tjunction/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 6
+      y: 3
+      z: 6
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 5
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/intersection/front.jpg"
+  - id: long
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 8
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/long/front.jpg"
+  - id: longstairs
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 4
+      y: 6
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/longstairs/front.jpg"
+  - id: short
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/short/front.jpg"
+  - id: shortstairs
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 2
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/shortstairs/front.jpg"
+  - id: tjunction
+    type: decoration
+    path: infrastructure/roads/wide
+    size:
+      x: 4
+      y: 3
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/infrastructure/roads/wide/tjunction/front.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 22
+      y: 13
+      z: 15
+    images:
+      - "@assets/images/schematics/shire/military/archery/front.jpg"
+      - "@assets/images/schematics/shire/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 31
+      y: 22
+      z: 31
+    images:
+      - "@assets/images/schematics/shire/military/barracks/front.jpg"
+      - "@assets/images/schematics/shire/military/barracks/back.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 15
+      y: 13
+      z: 23
+    images:
+      - "@assets/images/schematics/shire/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/shire/military/combatacademy/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 9
+      y: 17
+      z: 5
+    images:
+      - "@assets/images/schematics/shire/military/guardtower/front.jpg"
+      - "@assets/images/schematics/shire/military/guardtower/back.jpg"
+  - id: guardtoweralt
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 9
+      y: 19
+      z: 9
+    images:
+      - "@assets/images/schematics/shire/military/guardtoweralt/front.jpg"
+      - "@assets/images/schematics/shire/military/guardtoweralt/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 26
+      y: 25
+      z: 21
+    images:
+      - "@assets/images/schematics/shire/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/shire/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 24
+      y: 14
+      z: 31
+    images:
+      - "@assets/images/schematics/shire/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/shire/mystic/graveyard/back.jpg"
+  - id: mountdoom
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 32
+      y: 45
+      z: 32
+    images:
+      - "@assets/images/schematics/shire/mystic/mountdoom/front.jpg"
+      - "@assets/images/schematics/shire/mystic/mountdoom/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 24
+      y: 13
+      z: 23
+    images:
+      - "@assets/images/schematics/shire/mystic/mysticalsite/front.jpg"
+      - "@assets/images/schematics/shire/mystic/mysticalsite/back.jpg"

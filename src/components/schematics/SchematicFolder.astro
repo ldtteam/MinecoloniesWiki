@@ -1,0 +1,59 @@
+---
+import { toTitleCase } from '@utils/string';
+
+import type { Schematic } from './SchematicCard.astro';
+import SchematicCard from './SchematicCard.astro';
+
+interface Props {
+  path: string;
+  schematics: Schematic[];
+}
+
+const { path, schematics } = Astro.props;
+---
+
+<div class="schematic-folder">
+  <h3 class="d-flex align-items-center">
+    {path.split('/').map(toTitleCase).join(' > ')}
+  </h3>
+
+  <div class="image-grid mb-4">
+    {schematics.map((schematic) => <SchematicCard schematic={schematic} />)}
+  </div>
+</div>
+
+<style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+
+  .schematic-folder {
+    display: none;
+  }
+
+  .schematic-folder:has(.schematic-card:not(.hide)) {
+    display: block;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    .image-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .image-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>

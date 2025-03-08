@@ -18,7 +18,9 @@ let allVersions = (await getSortedVersions())
   )
   .join('\n');
 
-allVersions += '[data-versions] { display: none; }';
+allVersions += `\n\n[data-versions] { 
+  display: none;
+}`;
 ---
 
 <style set:html={allVersions}></style>

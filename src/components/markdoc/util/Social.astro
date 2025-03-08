@@ -1,0 +1,27 @@
+---
+import { Icon } from 'astro-icon/components';
+import { getEntry } from 'astro:content';
+
+interface Props {
+  id: string;
+  icon?: boolean;
+  class?: string;
+}
+
+const { id, icon = false, class: cssClass } = Astro.props;
+
+const social = await getEntry('socials', id);
+if (social === undefined) {
+  throw new Error(`Social with '${social}' does not exist.`);
+}
+---
+
+<a href={social.data.link} class:list={[cssClass, 'social-icon']} aria-label={social.data.name + ' link'}>
+  {icon ? <Icon name={`cib:${social.id}`} color={social.data.color} size={18} /> : social.data.name}
+</a>
+
+<style>
+  .social-icon {
+    display: inline-block;
+  }
+</style>

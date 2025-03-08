@@ -1,0 +1,1948 @@
+id: original
+displayName: Minecolonies Original
+authors:
+  - many
+schematics:
+  - id: bamboo
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 14
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/bamboo/front.jpg"
+  - id: cactus
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 12
+      y: 5
+      z: 14
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/cactus/front.jpg"
+  - id: cocoa_vines
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 10
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/cocoa_vines/front.jpg"
+  - id: glowberries
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 12
+      y: 8
+      z: 7
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/glowberries/front.jpg"
+      - "@assets/images/schematics/original/agriculture/fields/glowberries/back.jpg"
+  - id: kelp
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 11
+      y: 13
+      z: 10
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/kelp/front.jpg"
+  - id: nether_fungi
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 16
+      y: 9
+      z: 14
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/nether_fungi/front.jpg"
+      - "@assets/images/schematics/original/agriculture/fields/nether_fungi/back.jpg"
+  - id: nether_vines
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 11
+      y: 12
+      z: 14
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/nether_vines/front.jpg"
+      - "@assets/images/schematics/original/agriculture/fields/nether_vines/back.jpg"
+  - id: sea_pickles_grass
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 7
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/sea_pickles_grass/front.jpg"
+  - id: sugar
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 13
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/original/agriculture/fields/sugar/front.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 11
+      y: 10
+      z: 13
+    images:
+      - "@assets/images/schematics/original/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/original/agriculture/horticulture/composter/back.jpg"
+  - id: farmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 11
+      y: 15
+      z: 15
+    images:
+      - "@assets/images/schematics/original/agriculture/horticulture/farmer/front.jpg"
+      - "@assets/images/schematics/original/agriculture/horticulture/farmer/back.jpg"
+  - id: florist
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 16
+      y: 12
+      z: 17
+    images:
+      - "@assets/images/schematics/original/agriculture/horticulture/florist/front.jpg"
+      - "@assets/images/schematics/original/agriculture/horticulture/florist/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 22
+      y: 11
+      z: 22
+    images:
+      - "@assets/images/schematics/original/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/original/agriculture/horticulture/plantation/back.jpg"
+  - id: beekeeper
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 14
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/beekeeper/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/beekeeper/back.jpg"
+  - id: chickenherder
+    type: building
+    building: chickenfarmer
+    path: agriculture/husbandry
+    size:
+      x: 18
+      y: 15
+      z: 17
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowboy
+    type: building
+    building: cowhand
+    path: agriculture/husbandry
+    size:
+      x: 16
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/cowboy/back.jpg"
+  - id: fisherman
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 11
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/fisherman/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/fisherman/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 23
+      y: 13
+      z: 13
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 16
+      y: 14
+      z: 14
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/shepherd/back.jpg"
+  - id: shepherdalt
+    type: building
+    building: shepherd
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 14
+      z: 22
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/shepherdalt/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/shepherdalt/back.jpg"
+  - id: swineherder
+    type: building
+    building: swineherd
+    path: agriculture/husbandry
+    size:
+      x: 22
+      y: 14
+      z: 16
+    images:
+      - "@assets/images/schematics/original/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/original/agriculture/husbandry/swineherder/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 14
+      y: 10
+      z: 16
+    images:
+      - "@assets/images/schematics/original/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 16
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/original/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: craftsmanship/luxury
+    size:
+      x: 18
+      y: 26
+      z: 18
+    images:
+      - "@assets/images/schematics/original/craftsmanship/luxury/alchemist/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/luxury/alchemist/back.jpg"
+  - id: baker
+    type: building
+    building: baker
+    path: craftsmanship/luxury
+    size:
+      x: 14
+      y: 18
+      z: 12
+    images:
+      - "@assets/images/schematics/original/craftsmanship/luxury/baker/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/luxury/baker/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 15
+      y: 10
+      z: 21
+    images:
+      - "@assets/images/schematics/original/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: cookery
+    type: building
+    building: kitchen
+    path: craftsmanship/luxury
+    size:
+      x: 16
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/original/craftsmanship/luxury/cookery/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/luxury/cookery/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 9
+      y: 8
+      z: 14
+    images:
+      - "@assets/images/schematics/original/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: glassblower
+    path: craftsmanship/luxury
+    size:
+      x: 18
+      y: 16
+      z: 14
+    images:
+      - "@assets/images/schematics/original/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/luxury/glassblower/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 18
+      y: 15
+      z: 15
+    images:
+      - "@assets/images/schematics/original/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/masonry/crusher/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 15
+      y: 13
+      z: 12
+    images:
+      - "@assets/images/schematics/original/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/masonry/sifter/back.jpg"
+  - id: stonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 18
+      y: 16
+      z: 17
+    images:
+      - "@assets/images/schematics/original/craftsmanship/masonry/stonemason/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/masonry/stonemason/back.jpg"
+  - id: stonesmeltery
+    type: building
+    building: stonesmeltery
+    path: craftsmanship/masonry
+    size:
+      x: 15
+      y: 14
+      z: 12
+    images:
+      - "@assets/images/schematics/original/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/masonry/stonesmeltery/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 17
+      y: 16
+      z: 14
+    images:
+      - "@assets/images/schematics/original/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/metallurgy
+    size:
+      x: 19
+      y: 12
+      z: 14
+    images:
+      - "@assets/images/schematics/original/craftsmanship/metallurgy/mechanic/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/metallurgy/mechanic/back.jpg"
+  - id: smeltery
+    type: building
+    building: smeltery
+    path: craftsmanship/metallurgy
+    size:
+      x: 12
+      y: 19
+      z: 15
+    images:
+      - "@assets/images/schematics/original/craftsmanship/metallurgy/smeltery/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/metallurgy/smeltery/back.jpg"
+  - id: deliveryman
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 11
+      y: 10
+      z: 10
+    images:
+      - "@assets/images/schematics/original/craftsmanship/storage/deliveryman/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/storage/deliveryman/back.jpg"
+  - id: deliverymanalt
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 9
+      y: 5
+      z: 6
+    images:
+      - "@assets/images/schematics/original/craftsmanship/storage/deliverymanalt/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/storage/deliverymanalt/back.jpg"
+  - id: warehouse
+    type: building
+    building: warehouse
+    path: craftsmanship/storage
+    size:
+      x: 16
+      y: 16
+      z: 23
+    images:
+      - "@assets/images/schematics/original/craftsmanship/storage/warehouse/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/storage/warehouse/back.jpg"
+  - id: warehousealt
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 16
+      y: 20
+      z: 23
+    images:
+      - "@assets/images/schematics/original/craftsmanship/storage/warehousealt/front.jpg"
+      - "@assets/images/schematics/original/craftsmanship/storage/warehousealt/back.jpg"
+  - id: bayou
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 32
+      y: 21
+      z: 32
+    images:
+      - "@assets/images/schematics/original/decorations/housing/bayou/front.jpg"
+      - "@assets/images/schematics/original/decorations/housing/bayou/back.jpg"
+  - id: blackstonekeep
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 33
+      y: 33
+      z: 32
+    images:
+      - "@assets/images/schematics/original/decorations/housing/blackstonekeep/front.jpg"
+      - "@assets/images/schematics/original/decorations/housing/blackstonekeep/back.jpg"
+  - id: fancykeep
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 33
+      y: 33
+      z: 32
+    images:
+      - "@assets/images/schematics/original/decorations/housing/fancykeep/front.jpg"
+      - "@assets/images/schematics/original/decorations/housing/fancykeep/back.jpg"
+  - id: playermansion
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 25
+      y: 17
+      z: 17
+    images:
+      - "@assets/images/schematics/original/decorations/housing/playermansion/front.jpg"
+      - "@assets/images/schematics/original/decorations/housing/playermansion/back.jpg"
+  - id: windyhill
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 32
+      y: 30
+      z: 32
+    images:
+      - "@assets/images/schematics/original/decorations/housing/windyhill/front.jpg"
+      - "@assets/images/schematics/original/decorations/housing/windyhill/back.jpg"
+  - id: wooden
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 30
+      y: 31
+      z: 32
+    images:
+      - "@assets/images/schematics/original/decorations/housing/wooden/front.jpg"
+      - "@assets/images/schematics/original/decorations/housing/wooden/back.jpg"
+  - id: blueminimarket
+    type: decoration
+    path: decorations/markets
+    size:
+      x: 6
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/original/decorations/markets/blueminimarket/front.jpg"
+  - id: apiary
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 5
+      y: 8
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/misc/apiary/front.jpg"
+  - id: apiarygreenhouse
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 10
+      y: 9
+      z: 13
+    images:
+      - "@assets/images/schematics/original/decorations/misc/apiarygreenhouse/front.jpg"
+  - id: apiaryopenair
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 8
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/original/decorations/misc/apiaryopenair/front.jpg"
+  - id: beach
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 16
+      y: 7
+      z: 17
+    images:
+      - "@assets/images/schematics/original/decorations/misc/beach/front.jpg"
+  - id: garden
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 14
+      y: 7
+      z: 12
+    images:
+      - "@assets/images/schematics/original/decorations/misc/garden/front.jpg"
+  - id: simplefountain
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 7
+      y: 4
+      z: 7
+    images:
+      - "@assets/images/schematics/original/decorations/misc/simplefountain/front.jpg"
+  - id: stable
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 11
+      y: 14
+      z: 23
+    images:
+      - "@assets/images/schematics/original/decorations/misc/stable/front.jpg"
+      - "@assets/images/schematics/original/decorations/misc/stable/back.jpg"
+  - id: townlibrary
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 24
+      y: 15
+      z: 18
+    images:
+      - "@assets/images/schematics/original/decorations/misc/townlibrary/front.jpg"
+      - "@assets/images/schematics/original/decorations/misc/townlibrary/back.jpg"
+  - id: well
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 5
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/misc/well/front.jpg"
+  - id: big_norsemen_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 17
+      y: 35
+      z: 42
+    images:
+      - "@assets/images/schematics/original/decorations/ships/big_norsemen_ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/ships/big_norsemen_ship/back.jpg"
+  - id: big_pirate_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 17
+      y: 50
+      z: 45
+    images:
+      - "@assets/images/schematics/original/decorations/ships/big_pirate_ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/ships/big_pirate_ship/back.jpg"
+  - id: big_sunk_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 17
+      y: 29
+      z: 42
+    images:
+      - "@assets/images/schematics/original/decorations/ships/big_sunk_ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/ships/big_sunk_ship/back.jpg"
+  - id: medium_norsemen_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 13
+      y: 34
+      z: 29
+    images:
+      - "@assets/images/schematics/original/decorations/ships/medium_norsemen_ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/ships/medium_norsemen_ship/back.jpg"
+  - id: medium_pirate_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 13
+      y: 36
+      z: 29
+    images:
+      - "@assets/images/schematics/original/decorations/ships/medium_pirate_ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/ships/medium_pirate_ship/back.jpg"
+  - id: medium_sunk_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 13
+      y: 28
+      z: 29
+    images:
+      - "@assets/images/schematics/original/decorations/ships/medium_sunk_ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/ships/medium_sunk_ship/back.jpg"
+  - id: small_norsemen_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 7
+      y: 25
+      z: 15
+    images:
+      - "@assets/images/schematics/original/decorations/ships/small_norsemen_ship/front.jpg"
+  - id: small_pirate_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 7
+      y: 25
+      z: 15
+    images:
+      - "@assets/images/schematics/original/decorations/ships/small_pirate_ship/front.jpg"
+  - id: small_sunk_ship
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 7
+      y: 16
+      z: 15
+    images:
+      - "@assets/images/schematics/original/decorations/ships/small_sunk_ship/front.jpg"
+  - id: endstatue
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 5
+      y: 14
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/statues/endstatue/front.jpg"
+  - id: netherstatue
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 5
+      y: 15
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/statues/netherstatue/front.jpg"
+  - id: pedastal_gold
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 7
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/original/decorations/statues/pedastal_gold/front.jpg"
+  - id: pedastal_iron
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 7
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/original/decorations/statues/pedastal_iron/front.jpg"
+  - id: pedastal_oak
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 7
+      y: 3
+      z: 8
+    images:
+      - "@assets/images/schematics/original/decorations/statues/pedastal_oak/front.jpg"
+  - id: pillar
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 3
+      y: 5
+      z: 3
+    images:
+      - "@assets/images/schematics/original/decorations/statues/pillar/front.jpg"
+  - id: quartzstatue
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 5
+      y: 16
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/statues/quartzstatue/front.jpg"
+  - id: statuearmsraised
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 6
+      y: 7
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statuearmsraised/front.jpg"
+  - id: statuechair
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 4
+      y: 7
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statuechair/front.jpg"
+  - id: statueflower
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 4
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statueflower/front.jpg"
+  - id: statueposeidon
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 5
+      y: 9
+      z: 5
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statueposeidon/front.jpg"
+  - id: statuepresent
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 5
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statuepresent/front.jpg"
+  - id: statuestaff
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 4
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statuestaff/front.jpg"
+  - id: statueswordshield
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 5
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statueswordshield/front.jpg"
+  - id: statueweight
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 7
+      y: 7
+      z: 6
+    images:
+      - "@assets/images/schematics/original/decorations/statues/statueweight/front.jpg"
+  - id: stone_lion
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 7
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/original/decorations/statues/stone_lion/front.jpg"
+  - id: stone_lion_b
+    type: decoration
+    path: decorations/statues
+    size:
+      x: 7
+      y: 12
+      z: 13
+    images:
+      - "@assets/images/schematics/original/decorations/statues/stone_lion_b/front.jpg"
+  - id: camp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 16
+      y: 7
+      z: 17
+    images:
+      - "@assets/images/schematics/original/decorations/supplies/camp/front.jpg"
+  - id: ship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 32
+      y: 26
+      z: 17
+    images:
+      - "@assets/images/schematics/original/decorations/supplies/ship/front.jpg"
+      - "@assets/images/schematics/original/decorations/supplies/ship/back.jpg"
+  - id: library
+    type: building
+    building: library
+    path: education
+    size:
+      x: 20
+      y: 15
+      z: 22
+    images:
+      - "@assets/images/schematics/original/education/library/front.jpg"
+      - "@assets/images/schematics/original/education/library/back.jpg"
+  - id: school
+    type: building
+    building: school
+    path: education
+    size:
+      x: 14
+      y: 12
+      z: 20
+    images:
+      - "@assets/images/schematics/original/education/school/front.jpg"
+      - "@assets/images/schematics/original/education/school/back.jpg"
+  - id: university
+    type: building
+    building: university
+    path: education
+    size:
+      x: 33
+      y: 22
+      z: 37
+    images:
+      - "@assets/images/schematics/original/education/university/front.jpg"
+      - "@assets/images/schematics/original/education/university/back.jpg"
+  - id: altresidence
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 14
+      y: 15
+      z: 11
+    images:
+      - "@assets/images/schematics/original/fundamentals/altresidence/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/altresidence/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 15
+      y: 8
+      z: 13
+    images:
+      - "@assets/images/schematics/original/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/builder/back.jpg"
+  - id: cook
+    type: building
+    building: cook
+    path: fundamentals
+    size:
+      x: 15
+      y: 17
+      z: 18
+    images:
+      - "@assets/images/schematics/original/fundamentals/cook/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/cook/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 17
+      y: 16
+      z: 15
+    images:
+      - "@assets/images/schematics/original/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/hospital/back.jpg"
+  - id: lumberjack
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 12
+      y: 9
+      z: 15
+    images:
+      - "@assets/images/schematics/original/fundamentals/lumberjack/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/lumberjack/back.jpg"
+  - id: miner
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 11
+      y: 12
+      z: 16
+    images:
+      - "@assets/images/schematics/original/fundamentals/miner/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/miner/back.jpg"
+  - id: residence
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 13
+      y: 18
+      z: 12
+    images:
+      - "@assets/images/schematics/original/fundamentals/residence/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/residence/back.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 13
+      y: 13
+      z: 15
+    images:
+      - "@assets/images/schematics/original/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 24
+      y: 22
+      z: 18
+    images:
+      - "@assets/images/schematics/original/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/original/fundamentals/townhall/back.jpg"
+  - id: basicfield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 11
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/original/infrastructure/fields/basicfield/front.jpg"
+  - id: fancyfield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 9
+      y: 6
+      z: 9
+    images:
+      - "@assets/images/schematics/original/infrastructure/fields/fancyfield/front.jpg"
+  - id: largefield
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 13
+      y: 4
+      z: 13
+    images:
+      - "@assets/images/schematics/original/infrastructure/fields/largefield/front.jpg"
+  - id: blueminimarket
+    type: decoration
+    path: infrastructure/markets
+    size:
+      x: 6
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/markets/blueminimarket/front.jpg"
+  - id: mediumquarry
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 34
+      y: 18
+      z: 41
+    images:
+      - "@assets/images/schematics/original/infrastructure/mineshafts/mediumquarry/front.jpg"
+  - id: mediumquarryshaft1
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 34
+      y: 57
+      z: 41
+    images:
+      - "@assets/images/schematics/original/infrastructure/mineshafts/mediumquarryshaft1/front.jpg"
+  - id: simplequarry
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 18
+      y: 7
+      z: 23
+    images:
+      - "@assets/images/schematics/original/infrastructure/mineshafts/simplequarry/front.jpg"
+  - id: simplequarryshaft1
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 18
+      y: 26
+      z: 23
+    images:
+      - "@assets/images/schematics/original/infrastructure/mineshafts/simplequarryshaft1/front.jpg"
+  - id: mediumquarrywithshaft
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 34
+      y: 57
+      z: 41
+    images:
+      - "@assets/images/schematics/original/infrastructure/mineshafts/mediumquarrywithshaft/front.jpg"
+  - id: simplequarrywithshaft
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 18
+      y: 26
+      z: 23
+    images:
+      - "@assets/images/schematics/original/infrastructure/mineshafts/simplequarrywithshaft/front.jpg"
+  - id: hedgemaze
+    type: decoration
+    path: infrastructure/parks
+    size:
+      x: 53
+      y: 11
+      z: 53
+    images:
+      - "@assets/images/schematics/original/infrastructure/parks/hedgemaze/front.jpg"
+  - id: icerink
+    type: decoration
+    path: infrastructure/parks
+    size:
+      x: 27
+      y: 13
+      z: 33
+    images:
+      - "@assets/images/schematics/original/infrastructure/parks/icerink/front.jpg"
+  - id: ivycoveredbenches
+    type: decoration
+    path: infrastructure/parks
+    size:
+      x: 11
+      y: 6
+      z: 13
+    images:
+      - "@assets/images/schematics/original/infrastructure/parks/ivycoveredbenches/front.jpg"
+  - id: playground
+    type: decoration
+    path: infrastructure/parks
+    size:
+      x: 34
+      y: 7
+      z: 22
+    images:
+      - "@assets/images/schematics/original/infrastructure/parks/playground/front.jpg"
+  - id: playset
+    type: decoration
+    path: infrastructure/parks
+    size:
+      x: 14
+      y: 6
+      z: 11
+    images:
+      - "@assets/images/schematics/original/infrastructure/parks/playset/front.jpg"
+  - id: volleyballcourt
+    type: decoration
+    path: infrastructure/parks
+    size:
+      x: 23
+      y: 5
+      z: 15
+    images:
+      - "@assets/images/schematics/original/infrastructure/parks/volleyballcourt/front.jpg"
+  - id: railbasicbridge
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railbasicbridge/front.jpg"
+  - id: railcorner
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 7
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railcorner/front.jpg"
+  - id: railfancybridge
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 7
+      z: 12
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railfancybridge/front.jpg"
+  - id: railgroundcorner
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 10
+      y: 6
+      z: 10
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railgroundcorner/front.jpg"
+  - id: railgroundenter
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 7
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railgroundenter/front.jpg"
+  - id: railgroundreturn
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 7
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railgroundreturn/front.jpg"
+  - id: railgroundstraight
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 7
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railgroundstraight/front.jpg"
+  - id: railnicebridge
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 6
+      z: 12
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railnicebridge/front.jpg"
+  - id: railraisedcenter
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 6
+      z: 9
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railraisedcenter/front.jpg"
+  - id: railraisedend
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railraisedend/front.jpg"
+  - id: railreturn
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 6
+      z: 6
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railreturn/front.jpg"
+  - id: railstairs
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 11
+      z: 5
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railstairs/front.jpg"
+  - id: railstop
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 7
+      z: 7
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railstop/front.jpg"
+  - id: railstraight
+    type: decoration
+    path: infrastructure/rails
+    size:
+      x: 5
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/rails/railstraight/front.jpg"
+  - id: fancycornerodd
+    type: decoration
+    path: infrastructure/roads/fancy
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/fancy/fancycornerodd/front.jpg"
+  - id: fancyintersectionodd
+    type: decoration
+    path: infrastructure/roads/fancy
+    size:
+      x: 11
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/fancy/fancyintersectionodd/front.jpg"
+  - id: fancypathodd
+    type: decoration
+    path: infrastructure/roads/fancy
+    size:
+      x: 5
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/fancy/fancypathodd/front.jpg"
+  - id: fancytjunctionodd
+    type: decoration
+    path: infrastructure/roads/fancy
+    size:
+      x: 11
+      y: 4
+      z: 9
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/fancy/fancytjunctionodd/front.jpg"
+  - id: fancy
+    type: decoration
+    path: infrastructure/roads/lampposts
+    size:
+      x: 3
+      y: 6
+      z: 1
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/lampposts/fancy/front.jpg"
+  - id: nice
+    type: decoration
+    path: infrastructure/roads/lampposts
+    size:
+      x: 3
+      y: 6
+      z: 1
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/lampposts/nice/front.jpg"
+  - id: poor
+    type: decoration
+    path: infrastructure/roads/lampposts
+    size:
+      x: 3
+      y: 6
+      z: 1
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/lampposts/poor/front.jpg"
+  - id: simple
+    type: decoration
+    path: infrastructure/roads/lampposts
+    size:
+      x: 2
+      y: 5
+      z: 1
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/lampposts/simple/front.jpg"
+  - id: nicecornerodd
+    type: decoration
+    path: infrastructure/roads/nice
+    size:
+      x: 5
+      y: 4
+      z: 5
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/nice/nicecornerodd/front.jpg"
+  - id: niceintersectionodd
+    type: decoration
+    path: infrastructure/roads/nice
+    size:
+      x: 11
+      y: 4
+      z: 11
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/nice/niceintersectionodd/front.jpg"
+  - id: nicepathodd
+    type: decoration
+    path: infrastructure/roads/nice
+    size:
+      x: 5
+      y: 4
+      z: 12
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/nice/nicepathodd/front.jpg"
+  - id: nicetjunctionodd
+    type: decoration
+    path: infrastructure/roads/nice
+    size:
+      x: 11
+      y: 4
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/nice/nicetjunctionodd/front.jpg"
+  - id: poorcornerodd
+    type: decoration
+    path: infrastructure/roads/poor
+    size:
+      x: 5
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/poor/poorcornerodd/front.jpg"
+  - id: poorintersectionodd
+    type: decoration
+    path: infrastructure/roads/poor
+    size:
+      x: 11
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/poor/poorintersectionodd/front.jpg"
+  - id: poorpathodd
+    type: decoration
+    path: infrastructure/roads/poor
+    size:
+      x: 4
+      y: 5
+      z: 10
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/poor/poorpathodd/front.jpg"
+  - id: poortjunctionodd
+    type: decoration
+    path: infrastructure/roads/poor
+    size:
+      x: 11
+      y: 5
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/poor/poortjunctionodd/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/corner/front.jpg"
+  - id: four_block_road
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/four_block_road/front.jpg"
+  - id: four_up_stairs
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 9
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/four_up_stairs/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 10
+      y: 6
+      z: 10
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/intersection/front.jpg"
+  - id: one_up_stairs
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 6
+      z: 1
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/one_up_stairs/front.jpg"
+  - id: single_block_road
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 6
+      z: 1
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/single_block_road/front.jpg"
+  - id: six_up_stairs
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 11
+      z: 6
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/six_up_stairs/front.jpg"
+  - id: straight
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 6
+      z: 10
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/straight/front.jpg"
+  - id: three_block_road
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 6
+      z: 3
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/three_block_road/front.jpg"
+  - id: two_block_road
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 6
+      z: 2
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/two_block_road/front.jpg"
+  - id: two_up_stairs
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 4
+      y: 7
+      z: 2
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/two_up_stairs/front.jpg"
+  - id: t_intersection
+    type: decoration
+    path: infrastructure/roads/roads
+    size:
+      x: 10
+      y: 6
+      z: 8
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/roads/t_intersection/front.jpg"
+  - id: simplecornerodd
+    type: decoration
+    path: infrastructure/roads/simple
+    size:
+      x: 5
+      y: 5
+      z: 5
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/simple/simplecornerodd/front.jpg"
+  - id: simpleintersectionodd
+    type: decoration
+    path: infrastructure/roads/simple
+    size:
+      x: 11
+      y: 5
+      z: 11
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/simple/simpleintersectionodd/front.jpg"
+  - id: simplepathodd
+    type: decoration
+    path: infrastructure/roads/simple
+    size:
+      x: 5
+      y: 4
+      z: 10
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/simple/simplepathodd/front.jpg"
+  - id: simpletjunctionodd
+    type: decoration
+    path: infrastructure/roads/simple
+    size:
+      x: 11
+      y: 5
+      z: 9
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/simple/simpletjunctionodd/front.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 4
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 4
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/intersection/front.jpg"
+  - id: largestairs
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 4
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/largestairs/front.jpg"
+  - id: longroad
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 7
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/longroad/front.jpg"
+  - id: shortroad
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 3
+      y: 8
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/shortroad/front.jpg"
+  - id: smallstairs
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 2
+      y: 6
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/smallstairs/front.jpg"
+  - id: tjunction
+    type: decoration
+    path: infrastructure/roads/streets
+    size:
+      x: 4
+      y: 5
+      z: 4
+    images:
+      - "@assets/images/schematics/original/infrastructure/roads/streets/tjunction/front.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 19
+      y: 17
+      z: 18
+    images:
+      - "@assets/images/schematics/original/military/archery/front.jpg"
+      - "@assets/images/schematics/original/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 23
+      y: 23
+      z: 23
+    images:
+      - "@assets/images/schematics/original/military/barracks/front.jpg"
+  - id: barrackstower
+    type: building
+    building: barrackstower
+    invisible: true
+    path: military
+    size:
+      x: 8
+      y: 17
+      z: 8
+    images:
+      - "@assets/images/schematics/original/military/barrackstower/front.jpg"
+      - "@assets/images/schematics/original/military/barrackstower/back.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 27
+      y: 19
+      z: 23
+    images:
+      - "@assets/images/schematics/original/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/original/military/combatacademy/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 9
+      y: 17
+      z: 8
+    images:
+      - "@assets/images/schematics/original/military/guardtower/front.jpg"
+      - "@assets/images/schematics/original/military/guardtower/back.jpg"
+  - id: barracksfull
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 23
+      y: 23
+      z: 23
+    images:
+      - "@assets/images/schematics/original/military/barracksfull/front.jpg"
+  - id: altmysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 17
+      y: 21
+      z: 17
+    images:
+      - "@assets/images/schematics/original/mystic/altmysticalsite/front.jpg"
+      - "@assets/images/schematics/original/mystic/altmysticalsite/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 16
+      y: 36
+      z: 25
+    images:
+      - "@assets/images/schematics/original/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/original/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 26
+      y: 8
+      z: 16
+    images:
+      - "@assets/images/schematics/original/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/original/mystic/graveyard/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 9
+      y: 9
+      z: 9
+    images:
+      - "@assets/images/schematics/original/mystic/mysticalsite/front.jpg"
+  - id: netherworker
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 17
+      y: 18
+      z: 14
+    images:
+      - "@assets/images/schematics/original/mystic/netherworker/front.jpg"
+      - "@assets/images/schematics/original/mystic/netherworker/back.jpg"
+  - id: cobble_corner
+    type: decoration
+    path: walls/cobble
+    size:
+      x: 10
+      y: 19
+      z: 10
+    images:
+      - "@assets/images/schematics/original/walls/cobble/cobble_corner/front.jpg"
+  - id: cobble_gate
+    type: decoration
+    path: walls/cobble
+    size:
+      x: 10
+      y: 22
+      z: 9
+    images:
+      - "@assets/images/schematics/original/walls/cobble/cobble_gate/front.jpg"
+  - id: cobble_segment_large
+    type: decoration
+    path: walls/cobble
+    size:
+      x: 9
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/original/walls/cobble/cobble_segment_large/front.jpg"
+  - id: cobble_segment_small
+    type: decoration
+    path: walls/cobble
+    size:
+      x: 5
+      y: 11
+      z: 9
+    images:
+      - "@assets/images/schematics/original/walls/cobble/cobble_segment_small/front.jpg"
+  - id: cobble_stairs
+    type: decoration
+    path: walls/cobble
+    size:
+      x: 5
+      y: 12
+      z: 10
+    images:
+      - "@assets/images/schematics/original/walls/cobble/cobble_stairs/front.jpg"
+  - id: cobble_tower
+    type: decoration
+    path: walls/cobble
+    size:
+      x: 7
+      y: 24
+      z: 9
+    images:
+      - "@assets/images/schematics/original/walls/cobble/cobble_tower/front.jpg"
+  - id: fancy_gate
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 11
+      y: 28
+      z: 12
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_gate/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_gate/back.jpg"
+  - id: fancy_round_barbican
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 21
+      y: 30
+      z: 12
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_round_barbican/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_round_barbican/back.jpg"
+  - id: fancy_round_corner
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 13
+      y: 25
+      z: 13
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_round_corner/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_round_corner/back.jpg"
+  - id: fancy_round_tower
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 7
+      y: 24
+      z: 13
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_round_tower/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_round_tower/back.jpg"
+  - id: fancy_segment_large
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 13
+      y: 17
+      z: 12
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_segment_large/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_segment_large/back.jpg"
+  - id: fancy_segment_small
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 7
+      y: 13
+      z: 12
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_segment_small/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_segment_small/back.jpg"
+  - id: fancy_square_barbican
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 23
+      y: 31
+      z: 13
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_square_barbican/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_square_barbican/back.jpg"
+  - id: fancy_square_corner
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 14
+      y: 25
+      z: 14
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_square_corner/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_square_corner/back.jpg"
+  - id: fancy_square_tower
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 8
+      y: 23
+      z: 13
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_square_tower/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_square_tower/back.jpg"
+  - id: fancy_stairs
+    type: decoration
+    path: walls/fancy
+    size:
+      x: 9
+      y: 21
+      z: 13
+    images:
+      - "@assets/images/schematics/original/walls/fancy/fancy_stairs/front.jpg"
+      - "@assets/images/schematics/original/walls/fancy/fancy_stairs/back.jpg"
+  - id: oakwallcorner
+    type: decoration
+    path: walls/oak
+    size:
+      x: 9
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/original/walls/oak/oakwallcorner/front.jpg"
+  - id: oakwallgate
+    type: decoration
+    path: walls/oak
+    size:
+      x: 14
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/original/walls/oak/oakwallgate/front.jpg"
+  - id: oakwallincorner
+    type: decoration
+    path: walls/oak
+    size:
+      x: 8
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/original/walls/oak/oakwallincorner/front.jpg"
+  - id: oakwallsegment
+    type: decoration
+    path: walls/oak
+    size:
+      x: 8
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/original/walls/oak/oakwallsegment/front.jpg"
+  - id: oakwallstairs
+    type: decoration
+    path: walls/oak
+    size:
+      x: 8
+      y: 11
+      z: 8
+    images:
+      - "@assets/images/schematics/original/walls/oak/oakwallstairs/front.jpg"
+  - id: palisade_corner
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 7
+      y: 11
+      z: 7
+    images:
+      - "@assets/images/schematics/original/walls/palisade/palisade_corner/front.jpg"
+  - id: palisade_gate
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 7
+      y: 16
+      z: 7
+    images:
+      - "@assets/images/schematics/original/walls/palisade/palisade_gate/front.jpg"
+  - id: palisade_platform
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 6
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/original/walls/palisade/palisade_platform/front.jpg"
+  - id: palisade_wall
+    type: decoration
+    path: walls/palisade
+    size:
+      x: 6
+      y: 10
+      z: 7
+    images:
+      - "@assets/images/schematics/original/walls/palisade/palisade_wall/front.jpg"

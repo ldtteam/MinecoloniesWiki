@@ -1,0 +1,1083 @@
+id: steampunk
+displayName: Steampunk
+authors:
+  - "m00b13n, MotionlessTrain, Yalokivi"
+schematics:
+  - id: aquaghouse
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 26
+      y: 15
+      z: 21
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/fields/aquaghouse/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/fields/aquaghouse/back.jpg"
+  - id: balloonfield
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 15
+      y: 50
+      z: 20
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/fields/balloonfield/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/fields/balloonfield/back.jpg"
+  - id: forestrytower
+    type: building
+    building: lumberjack
+    path: agriculture/fields
+    size:
+      x: 72
+      y: 45
+      z: 72
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/fields/forestrytower/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/fields/forestrytower/back.jpg"
+  - id: ghousefield
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 15
+      y: 14
+      z: 16
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/fields/ghousefield/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/fields/ghousefield/back.jpg"
+  - id: lumberjack
+    type: building
+    building: lumberjack
+    path: agriculture/fields
+    size:
+      x: 12
+      y: 16
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/fields/lumberjack/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/fields/lumberjack/back.jpg"
+  - id: terraghouse
+    type: decoration
+    path: agriculture/fields
+    size:
+      x: 26
+      y: 14
+      z: 19
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/fields/terraghouse/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/fields/terraghouse/back.jpg"
+  - id: composter
+    type: building
+    building: composter
+    path: agriculture/horticulture
+    size:
+      x: 17
+      y: 18
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/composter/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/composter/back.jpg"
+  - id: farmb
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 16
+      y: 19
+      z: 18
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/farmb/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/farmb/back.jpg"
+  - id: farmer
+    type: building
+    building: farmer
+    path: agriculture/horticulture
+    size:
+      x: 59
+      y: 31
+      z: 39
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/farmer/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/farmer/back.jpg"
+  - id: farmeralt
+    type: building
+    building: residence
+    path: agriculture/horticulture
+    size:
+      x: 59
+      y: 36
+      z: 39
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/farmeralt/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/farmeralt/back.jpg"
+  - id: florist
+    type: building
+    building: florist
+    path: agriculture/horticulture
+    size:
+      x: 19
+      y: 15
+      z: 16
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/florist/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/florist/back.jpg"
+  - id: greenhouse
+    type: decoration
+    path: agriculture/horticulture
+    size:
+      x: 16
+      y: 13
+      z: 16
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/greenhouse/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/greenhouse/back.jpg"
+  - id: plantation
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 45
+      y: 56
+      z: 28
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/plantation/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/plantation/back.jpg"
+  - id: planteralt
+    type: building
+    building: plantation
+    path: agriculture/horticulture
+    size:
+      x: 14
+      y: 21
+      z: 28
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/planteralt/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/horticulture/planteralt/back.jpg"
+  - id: apiary
+    type: decoration
+    path: agriculture/husbandry
+    size:
+      x: 26
+      y: 15
+      z: 19
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/apiary/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/apiary/back.jpg"
+  - id: beekeeper
+    type: building
+    building: beekeeper
+    path: agriculture/husbandry
+    size:
+      x: 19
+      y: 15
+      z: 16
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/beekeeper/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/beekeeper/back.jpg"
+  - id: chickenherder
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 32
+      y: 30
+      z: 32
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowboy
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 32
+      y: 30
+      z: 32
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/cowboy/back.jpg"
+  - id: fisherb
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 17
+      y: 16
+      z: 21
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/fisherb/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/fisherb/back.jpg"
+  - id: fisherman
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 14
+      y: 23
+      z: 41
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/fisherman/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/fisherman/back.jpg"
+  - id: fishermanalt
+    type: building
+    building: fisherman
+    path: agriculture/husbandry
+    size:
+      x: 14
+      y: 26
+      z: 40
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/fishermanalt/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/fishermanalt/back.jpg"
+  - id: rabbithutch
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 32
+      y: 30
+      z: 32
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/rabbithutch/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/rabbithutch/back.jpg"
+  - id: shepherd
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 32
+      y: 31
+      z: 32
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/shepherd/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/shepherd/back.jpg"
+  - id: swineherder
+    type: building
+    building: rabbithutch
+    path: agriculture/husbandry
+    size:
+      x: 32
+      y: 30
+      z: 32
+    images:
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/steampunk/agriculture/husbandry/swineherder/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 13
+      y: 11
+      z: 15
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/carpentry/fletcher/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/carpentry/fletcher/back.jpg"
+  - id: sawmill
+    type: building
+    building: sawmill
+    path: craftsmanship/carpentry
+    size:
+      x: 16
+      y: 21
+      z: 19
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/carpentry/sawmill/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/carpentry/sawmill/back.jpg"
+  - id: spfletcher
+    type: building
+    building: fletcher
+    path: craftsmanship/carpentry
+    size:
+      x: 12
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/carpentry/spfletcher/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/carpentry/spfletcher/back.jpg"
+  - id: concretemixer
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 32
+      y: 20
+      z: 26
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/concretemixer/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/concretemixer/back.jpg"
+  - id: dyer
+    type: building
+    building: dyer
+    path: craftsmanship/luxury
+    size:
+      x: 15
+      y: 27
+      z: 26
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/dyer/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/dyer/back.jpg"
+  - id: glassblower
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 32
+      y: 20
+      z: 26
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/glassblower/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/glassblower/back.jpg"
+  - id: mechanic
+    type: building
+    building: mechanic
+    path: craftsmanship/luxury
+    size:
+      x: 32
+      y: 21
+      z: 32
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/mechanic/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/mechanic/back.jpg"
+  - id: concretemixer_and_glassblower
+    type: building
+    building: concretemixer
+    path: craftsmanship/luxury
+    size:
+      x: 32
+      y: 20
+      z: 26
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/concretemixer_and_glassblower/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/luxury/concretemixer_and_glassblower/back.jpg"
+  - id: crusher
+    type: building
+    building: crusher
+    path: craftsmanship/masonry
+    size:
+      x: 19
+      y: 19
+      z: 23
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/masonry/crusher/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/masonry/crusher/back.jpg"
+  - id: sifter
+    type: building
+    building: sifter
+    path: craftsmanship/masonry
+    size:
+      x: 19
+      y: 19
+      z: 23
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/masonry/sifter/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/masonry/sifter/back.jpg"
+  - id: spstonemason
+    type: building
+    building: stonemason
+    path: craftsmanship/masonry
+    size:
+      x: 7
+      y: 11
+      z: 10
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/masonry/spstonemason/front.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: craftsmanship/metallurgy
+    size:
+      x: 11
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/metallurgy/blacksmith/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/metallurgy/blacksmith/back.jpg"
+  - id: ascourier
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 17
+      y: 26
+      z: 38
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/ascourier/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/ascourier/back.jpg"
+  - id: deliveryman
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 7
+      y: 10
+      z: 8
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/deliveryman/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/deliveryman/back.jpg"
+  - id: warehouse
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 21
+      y: 52
+      z: 29
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/warehouse/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/warehouse/back.jpg"
+  - id: warehousealta
+    type: building
+    building: deliveryman
+    path: craftsmanship/storage
+    size:
+      x: 21
+      y: 52
+      z: 29
+    images:
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/warehousealta/front.jpg"
+      - "@assets/images/schematics/steampunk/craftsmanship/storage/warehousealta/back.jpg"
+  - id: abominatus
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 21
+      y: 41
+      z: 24
+    images:
+      - "@assets/images/schematics/steampunk/decorations/housing/abominatus/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/housing/abominatus/back.jpg"
+  - id: carlansor
+    type: decoration
+    path: decorations/housing
+    size:
+      x: 43
+      y: 28
+      z: 94
+    images:
+      - "@assets/images/schematics/steampunk/decorations/housing/carlansor/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/housing/carlansor/back.jpg"
+  - id: streetlight
+    type: decoration
+    path: decorations/lighting
+    size:
+      x: 3
+      y: 6
+      z: 3
+    images:
+      - "@assets/images/schematics/steampunk/decorations/lighting/streetlight/front.jpg"
+  - id: apiary
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 26
+      y: 15
+      z: 19
+    images:
+      - "@assets/images/schematics/steampunk/decorations/misc/apiary/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/misc/apiary/back.jpg"
+  - id: bench
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 4
+      y: 3
+      z: 2
+    images:
+      - "@assets/images/schematics/steampunk/decorations/misc/bench/front.jpg"
+  - id: oxidizer
+    type: decoration
+    path: decorations/misc
+    size:
+      x: 24
+      y: 29
+      z: 39
+    images:
+      - "@assets/images/schematics/steampunk/decorations/misc/oxidizer/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/misc/oxidizer/back.jpg"
+  - id: corner
+    type: decoration
+    path: decorations/roads
+    size:
+      x: 11
+      y: 9
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/decorations/roads/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: decorations/roads
+    size:
+      x: 11
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/decorations/roads/intersection/front.jpg"
+  - id: junction
+    type: decoration
+    path: decorations/roads
+    size:
+      x: 11
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/decorations/roads/junction/front.jpg"
+  - id: road
+    type: decoration
+    path: decorations/roads
+    size:
+      x: 9
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/decorations/roads/road/front.jpg"
+  - id: stair
+    type: decoration
+    path: decorations/roads
+    size:
+      x: 9
+      y: 13
+      z: 7
+    images:
+      - "@assets/images/schematics/steampunk/decorations/roads/stair/front.jpg"
+  - id: zeppelin
+    type: decoration
+    path: decorations/ships
+    size:
+      x: 43
+      y: 28
+      z: 90
+    images:
+      - "@assets/images/schematics/steampunk/decorations/ships/zeppelin/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/ships/zeppelin/back.jpg"
+  - id: supplycamp
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 37
+      y: 39
+      z: 38
+    images:
+      - "@assets/images/schematics/steampunk/decorations/supplies/supplycamp/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/supplies/supplycamp/back.jpg"
+  - id: supplyship
+    type: decoration
+    path: decorations/supplies
+    size:
+      x: 37
+      y: 39
+      z: 38
+    images:
+      - "@assets/images/schematics/steampunk/decorations/supplies/supplyship/front.jpg"
+      - "@assets/images/schematics/steampunk/decorations/supplies/supplyship/back.jpg"
+  - id: libraryalt
+    type: building
+    building: library
+    path: education
+    size:
+      x: 32
+      y: 46
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/education/libraryalt/front.jpg"
+      - "@assets/images/schematics/steampunk/education/libraryalt/back.jpg"
+  - id: schoolalt
+    type: building
+    building: school
+    path: education
+    size:
+      x: 32
+      y: 37
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/education/schoolalt/front.jpg"
+  - id: splibrary
+    type: building
+    building: library
+    path: education
+    size:
+      x: 27
+      y: 26
+      z: 24
+    images:
+      - "@assets/images/schematics/steampunk/education/splibrary/front.jpg"
+  - id: spschool
+    type: building
+    building: school
+    path: education
+    size:
+      x: 28
+      y: 23
+      z: 24
+    images:
+      - "@assets/images/schematics/steampunk/education/spschool/front.jpg"
+  - id: university
+    type: building
+    building: university
+    path: education
+    size:
+      x: 29
+      y: 32
+      z: 24
+    images:
+      - "@assets/images/schematics/steampunk/education/university/front.jpg"
+      - "@assets/images/schematics/steampunk/education/university/back.jpg"
+  - id: abominacion
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 21
+      y: 41
+      z: 24
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/abominacion/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/abominacion/back.jpg"
+  - id: builder
+    type: building
+    building: builder
+    path: fundamentals
+    size:
+      x: 13
+      y: 21
+      z: 23
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/builder/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/builder/back.jpg"
+  - id: citizen
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 24
+      y: 40
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/citizen/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/citizen/back.jpg"
+  - id: cookb
+    type: building
+    building: baker
+    path: fundamentals
+    size:
+      x: 19
+      y: 30
+      z: 18
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/cookb/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/cookb/back.jpg"
+  - id: hospital
+    type: building
+    building: hospital
+    path: fundamentals
+    size:
+      x: 38
+      y: 56
+      z: 43
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/hospital/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/hospital/back.jpg"
+  - id: housealt
+    type: building
+    building: residence
+    path: fundamentals
+    size:
+      x: 18
+      y: 35
+      z: 23
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/housealt/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/housealt/back.jpg"
+  - id: lumberjack
+    type: building
+    building: lumberjack
+    path: fundamentals
+    size:
+      x: 12
+      y: 16
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/lumberjack/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/lumberjack/back.jpg"
+  - id: miner
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 32
+      y: 41
+      z: 35
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/miner/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/miner/back.jpg"
+  - id: quarrier
+    type: building
+    building: miner
+    path: fundamentals
+    size:
+      x: 7
+      y: 10
+      z: 8
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/quarrier/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/quarrier/back.jpg"
+  - id: spstonemason
+    type: building
+    building: stonemason
+    path: fundamentals
+    size:
+      x: 7
+      y: 11
+      z: 10
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/spstonemason/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/spstonemason/back.jpg"
+  - id: tavern
+    type: building
+    building: tavern
+    path: fundamentals
+    size:
+      x: 17
+      y: 23
+      z: 18
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/tavern/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/tavern/back.jpg"
+  - id: townhall
+    type: building
+    building: townhall
+    path: fundamentals
+    size:
+      x: 37
+      y: 52
+      z: 38
+    images:
+      - "@assets/images/schematics/steampunk/fundamentals/townhall/front.jpg"
+      - "@assets/images/schematics/steampunk/fundamentals/townhall/back.jpg"
+  - id: greenhouse
+    type: decoration
+    path: infrastructure/fields
+    size:
+      x: 16
+      y: 13
+      z: 16
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/fields/greenhouse/front.jpg"
+      - "@assets/images/schematics/steampunk/infrastructure/fields/greenhouse/back.jpg"
+  - id: mediumquarry
+    type: decoration
+    path: infrastructure/mineshafts
+    size:
+      x: 32
+      y: 15
+      z: 41
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/mineshafts/mediumquarry/front.jpg"
+      - "@assets/images/schematics/steampunk/infrastructure/mineshafts/mediumquarry/back.jpg"
+  - id: mtquarrier
+    type: building
+    building: miner
+    path: infrastructure/mineshafts
+    size:
+      x: 12
+      y: 20
+      z: 17
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/mineshafts/mtquarrier/front.jpg"
+      - "@assets/images/schematics/steampunk/infrastructure/mineshafts/mtquarrier/back.jpg"
+  - id: corner
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 11
+      y: 9
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/roads/corner/front.jpg"
+  - id: intersection
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 11
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/roads/intersection/front.jpg"
+  - id: junction
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 11
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/roads/junction/front.jpg"
+  - id: road
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 9
+      y: 10
+      z: 11
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/roads/road/front.jpg"
+  - id: stair
+    type: decoration
+    path: infrastructure/roads
+    size:
+      x: 9
+      y: 13
+      z: 7
+    images:
+      - "@assets/images/schematics/steampunk/infrastructure/roads/stair/front.jpg"
+  - id: archery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 10
+      y: 11
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/military/archery/front.jpg"
+      - "@assets/images/schematics/steampunk/military/archery/back.jpg"
+  - id: barracks
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 31
+      y: 33
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/military/barracks/front.jpg"
+      - "@assets/images/schematics/steampunk/military/barracks/back.jpg"
+  - id: barracksalt
+    type: building
+    building: barracks
+    path: military
+    size:
+      x: 55
+      y: 49
+      z: 79
+    images:
+      - "@assets/images/schematics/steampunk/military/barracksalt/front.jpg"
+      - "@assets/images/schematics/steampunk/military/barracksalt/back.jpg"
+  - id: blacksmith
+    type: building
+    building: blacksmith
+    path: military
+    size:
+      x: 11
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/military/blacksmith/front.jpg"
+  - id: combatacademy
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 10
+      y: 11
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/military/combatacademy/front.jpg"
+      - "@assets/images/schematics/steampunk/military/combatacademy/back.jpg"
+  - id: fletcher
+    type: building
+    building: fletcher
+    path: military
+    size:
+      x: 13
+      y: 11
+      z: 15
+    images:
+      - "@assets/images/schematics/steampunk/military/fletcher/front.jpg"
+      - "@assets/images/schematics/steampunk/military/fletcher/back.jpg"
+  - id: guardtower
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 9
+      y: 21
+      z: 9
+    images:
+      - "@assets/images/schematics/steampunk/military/guardtower/front.jpg"
+      - "@assets/images/schematics/steampunk/military/guardtower/back.jpg"
+  - id: guardtoweralt
+    type: building
+    building: guardtower
+    path: military
+    size:
+      x: 9
+      y: 38
+      z: 9
+    images:
+      - "@assets/images/schematics/steampunk/military/guardtoweralt/front.jpg"
+      - "@assets/images/schematics/steampunk/military/guardtoweralt/back.jpg"
+  - id: spbarchery
+    type: building
+    building: archery
+    path: military
+    size:
+      x: 15
+      y: 14
+      z: 28
+    images:
+      - "@assets/images/schematics/steampunk/military/spbarchery/front.jpg"
+  - id: spbcombat
+    type: building
+    building: combatacademy
+    path: military
+    size:
+      x: 15
+      y: 14
+      z: 28
+    images:
+      - "@assets/images/schematics/steampunk/military/spbcombat/front.jpg"
+  - id: spbcook
+    type: building
+    building: cook
+    path: military
+    size:
+      x: 15
+      y: 10
+      z: 25
+    images:
+      - "@assets/images/schematics/steampunk/military/spbcook/front.jpg"
+  - id: spblacksmith
+    type: building
+    building: blacksmith
+    path: military
+    size:
+      x: 11
+      y: 13
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/military/spblacksmith/front.jpg"
+  - id: spfletcher
+    type: building
+    building: fletcher
+    path: military
+    size:
+      x: 12
+      y: 11
+      z: 13
+    images:
+      - "@assets/images/schematics/steampunk/military/spfletcher/front.jpg"
+  - id: alchemist
+    type: building
+    building: alchemist
+    path: mystic
+    size:
+      x: 23
+      y: 67
+      z: 24
+    images:
+      - "@assets/images/schematics/steampunk/mystic/alchemist/front.jpg"
+      - "@assets/images/schematics/steampunk/mystic/alchemist/back.jpg"
+  - id: enchanter
+    type: building
+    building: enchanter
+    path: mystic
+    size:
+      x: 13
+      y: 38
+      z: 19
+    images:
+      - "@assets/images/schematics/steampunk/mystic/enchanter/front.jpg"
+      - "@assets/images/schematics/steampunk/mystic/enchanter/back.jpg"
+  - id: graveyard
+    type: building
+    building: graveyard
+    path: mystic
+    size:
+      x: 17
+      y: 36
+      z: 22
+    images:
+      - "@assets/images/schematics/steampunk/mystic/graveyard/front.jpg"
+      - "@assets/images/schematics/steampunk/mystic/graveyard/back.jpg"
+  - id: mysticalsite
+    type: building
+    building: mysticalsite
+    path: mystic
+    size:
+      x: 59
+      y: 39
+      z: 98
+    images:
+      - "@assets/images/schematics/steampunk/mystic/mysticalsite/front.jpg"
+      - "@assets/images/schematics/steampunk/mystic/mysticalsite/back.jpg"
+  - id: netherworker
+    type: building
+    building: netherworker
+    path: mystic
+    size:
+      x: 21
+      y: 19
+      z: 27
+    images:
+      - "@assets/images/schematics/steampunk/mystic/netherworker/front.jpg"
+      - "@assets/images/schematics/steampunk/mystic/netherworker/back.jpg"
+  - id: zeppelin
+    type: decoration
+    path: mystic
+    size:
+      x: 43
+      y: 28
+      z: 90
+    images:
+      - "@assets/images/schematics/steampunk/mystic/zeppelin/front.jpg"
+      - "@assets/images/schematics/steampunk/mystic/zeppelin/back.jpg"
+  - id: gate
+    type: decoration
+    path: walls
+    size:
+      x: 11
+      y: 15
+      z: 10
+    images:
+      - "@assets/images/schematics/steampunk/walls/gate/front.jpg"
+      - "@assets/images/schematics/steampunk/walls/gate/back.jpg"
+  - id: icorner
+    type: decoration
+    path: walls
+    size:
+      x: 14
+      y: 15
+      z: 14
+    images:
+      - "@assets/images/schematics/steampunk/walls/icorner/front.jpg"
+      - "@assets/images/schematics/steampunk/walls/icorner/back.jpg"
+  - id: ocorner
+    type: decoration
+    path: walls
+    size:
+      x: 16
+      y: 15
+      z: 16
+    images:
+      - "@assets/images/schematics/steampunk/walls/ocorner/front.jpg"
+      - "@assets/images/schematics/steampunk/walls/ocorner/back.jpg"
+  - id: step
+    type: decoration
+    path: walls
+    size:
+      x: 11
+      y: 17
+      z: 10
+    images:
+      - "@assets/images/schematics/steampunk/walls/step/front.jpg"
+      - "@assets/images/schematics/steampunk/walls/step/back.jpg"
+  - id: wall
+    type: decoration
+    path: walls
+    size:
+      x: 11
+      y: 15
+      z: 10
+    images:
+      - "@assets/images/schematics/steampunk/walls/wall/front.jpg"
+      - "@assets/images/schematics/steampunk/walls/wall/back.jpg"

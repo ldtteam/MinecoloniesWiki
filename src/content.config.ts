@@ -9,6 +9,7 @@ import { itemSchema, tagSchema } from './schemas/item';
 import { jsonStructureSchema } from './schemas/json_structures';
 import { recipeSchema } from './schemas/recipe';
 import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
+import { schematicSchema } from './schemas/schematics';
 import { versionSchema } from './schemas/version';
 import { workerSchema } from './schemas/workers';
 
@@ -43,6 +44,16 @@ const supporterCollection = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string()
+  })
+});
+
+const socialsCollection = defineCollection({
+  loader: file('./src/data/site/socials.yaml'),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    link: z.string(),
+    color: z.string()
   })
 });
 
@@ -197,6 +208,15 @@ const jsonStructuresCollection = defineCollection({
   schema: jsonStructureSchema
 });
 
+// |---------|
+// | SCHEMATICS |
+// |---------|
+
+const schematicsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/data/schematics' }),
+  schema: ({ image }) => schematicSchema(image)
+});
+
 export const collections = {
   wiki: wikiCollection,
   wiki_categories: wikiCategories,
@@ -214,6 +234,8 @@ export const collections = {
   team: teamCollection,
   sponsors: sponsorCollection,
   supporters: supporterCollection,
+  socials: socialsCollection,
   events: eventCollection,
-  json_structures: jsonStructuresCollection
+  json_structures: jsonStructuresCollection,
+  schematics: schematicsCollection
 };
