@@ -6,7 +6,7 @@ export const social_link: Tag = {
   render: component('@components/markdoc/util/Social.astro'),
   selfClosing: true,
   attributes: {
-    name: {
+    id: {
       type: String,
       required: true
     }
