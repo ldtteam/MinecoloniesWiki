@@ -1,23 +1,29 @@
 ---
-import { type SocialKeys, socials } from '@utils/social';
-import { Icon } from 'astro-icon/components';
+import Social from '@components/markdoc/util/Social.astro';
+import { getEntry } from 'astro:content';
 
 import type { Props as BannerProps } from './Banner.astro';
 import Banner from './Banner.astro';
 
 interface Props extends Omit<BannerProps, 'image'> {
-  social: SocialKeys;
+  id: string;
 }
 
-const { social, textColor = 'white', ...rest } = Astro.props;
-const socialData = socials[social];
+const { id, ...rest } = Astro.props;
+const textColor = rest.textColor ?? 'white';
+
+const social = await getEntry('socials', id);
+if (social === undefined) {
+  throw new Error(`Social with '${social}' does not exist.`);
+}
 ---
 
-<Banner {...rest} {textColor} image={(key) => `/images/ribbon/social/${social}_ribbon_${key}.png`}>
-  <a href={socialData.link} style={{ color: textColor }}>
-    <Icon name={`cib:${social}`} />
-    <slot />
-  </a>
+<Banner {...rest} image={(key) => `/images/ribbon/social/${social.id}_ribbon_${key}.png`}>
+  <Social id={id} icon color={textColor}>
+    <span style={{ color: textColor }}>
+      <slot />
+    </span>
+  </Social>
 </Banner>
 
 <style>

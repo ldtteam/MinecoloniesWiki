@@ -1,14 +1,15 @@
 ---
-import { Icon } from 'astro-icon/components';
 import { getEntry } from 'astro:content';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   id: string;
   icon?: boolean;
+  color?: string;
   class?: string;
 }
 
-const { id, icon = false, class: cssClass } = Astro.props;
+const { id, icon = false, color, class: cssClass } = Astro.props;
 
 const social = await getEntry('socials', id);
 if (social === undefined) {
@@ -16,8 +17,9 @@ if (social === undefined) {
 }
 ---
 
-<a href={social.data.link} class:list={[cssClass, 'social-icon']} aria-label={social.data.name + ' link'}>
-  {icon ? <Icon name={`cib:${social.id}`} color={social.data.color} size={18} /> : social.data.name}
+<a href={social.data.link} class:list={[cssClass, icon ? 'social-icon' : '']} aria-label={social.data.name + ' link'}>
+  {icon ? <Icon name={`cib:${social.id}`} color={color ?? social.data.color} size={18} /> : social.data.name}
+  <slot />
 </a>
 
 <style>
