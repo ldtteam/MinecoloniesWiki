@@ -52,7 +52,7 @@ For regular buildings, the hut block for the building must be the anchor. For up
 
 You can select the anchor for your scan explicitly, by shift-left-clicking the desired block. If you don't do this, the scan tool will try to guess -- most of the time this works, but if you have more than one possible anchor inside your scan box then it won't be able to figure it out and you'll get an error message in chat. In that case you will have to set it manually. (Having more than one possible anchor is normal if you're scanning a building that has child buildings, or if you've included certain blocks like the {% item name="minecolonies/stash" /%} -- other times it might be because you've added a {% item name="structurize/tag_anchor" /%} when you shouldn't have.)
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 # Multiple Scan Slots
 
 The scan tool has 10 separate slots that can hold scan coordinates and names. You can use these however you like, but one example is to scan each level of a single building to a separate slot, with some extra slots used for temporary boxes (such as using the replace function).

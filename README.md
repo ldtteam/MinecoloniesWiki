@@ -24,6 +24,24 @@ In order to write a worker link you have to write: `{% worker name="<key>" /%}` 
 
 These link templates will automatically generate the path to the worker aswell as use the proper name defined the in `src/content/workers`.
 
+#### Versioned content
+In order to write something that only applies to given Minecraft versions, you may use version blocks to state certain content is only visible on selected Minecraft versions.
+
+The way you write version blocks is like this:
+```
+{% version range="<range>" %}
+Content
+{% /version %}
+```
+
+The range determines what Minecraft versions are selected and can be written in several ways:
+- `1.21` - A direct Minecraft version number
+- `1.21--` - Any version above or equal to 1.21
+- `--1.21` - Any version below or equal to 1.21
+- `1.20--1.21` - Any version between 1.20 and 1.21 (including 1.20 and 1.21 itself)
+
+> Note: Every version number must match the `id` of any version defined in `versions.yaml`.
+
 ## Testing locally
 The project can be ran locally to test if your changes work as expected. You need the following installed to be able to run it.
 

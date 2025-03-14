@@ -53,7 +53,7 @@ While you can build and scan schematics in any world, it's strongly recommended 
 
 If you're designing a full style pack, then on the [Discord server](https://discord.minecolonies.com/) you can find a player-created world download that contains build "pads" for most of the building types, along with a command-block-based auto-scanning system to help speed things up -- though of course you can do things a different way if you prefer.
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 It's recommended to enable the `blueprintbuildmode` setting in the MineColonies server config file; this makes it a bit easier to do certain things without creating a colony.
 {% /version %}
 
@@ -88,13 +88,13 @@ Once you have the full area set, you can press Escape and the white outline of t
 > 3. Hut buildings use the associated hut block as the anchor, upgradable decorations should use the {% item name="minecolonies/deco_controller" /%} as the anchor and non upgradable decorations should use the {% item name="structurize/tag_anchor" /%} block as the anchor.
 >    * If you want non upgradeable decorations acting as leisure sites, you must use a {% item name="minecolonies/deco_controller" /%} as only those sites are selected to be leisure sites.
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Scans are saved in `../minecolonies/scan/new/...`.
 
 Once the scans are saved, they need to be moved to the `../structurize/schematics/(folder)/file` if they are a [custom hut](#how-to-create-custom-huts).
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 Scans are saved in `*/blueprints/<yourplayername>/scans`.
 
 Once the scans are saved, they need to be placed in a style pack, preferably in the correct folder. See the [style packs](#style-packs) chapter for more details.
@@ -102,17 +102,17 @@ Once the scans are saved, they need to be placed in a style pack, preferably in 
 
 ## Placing a Schematic.
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Once you have scanned a structure, you can use the {%item name="structurize/build_tool" /%} to have your {% worker name="builder" /%} build it for you. Once you right-click with the build tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
 
 ![Schematic](@assets/images/wiki/tutorial/schematic.png)
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The scanned structure can be found in the {% item name="structurize/build_tool" /%} under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the {% item name="structurize/scan_tool" /%}) -> "scans". 
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 ## Style packs
 Styles are now structured in so-called style packs. This is similar to a resource pack or data pack, in that it has a file with some metadata about the style (the name, a description, optionally a link to an image, etc.), and a folder structure with the actual files.
 
@@ -152,46 +152,46 @@ With a few specific exceptions, you don't *have* to strictly follow the standard
 This is a FAQ section to answer common questions regarding schematics in MineColonies.
 
 #### How do I install custom schematics I just downloaded?
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Those custom schematics go in `*/structurize/schematics`. Unzip the zip you downloaded, and put all subfolders in the schematics folder. That folder should contain folders like &lt;stylename&gt;, decorations, walls, supplycamps etc. (depending on which style you installed)
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The style pack goes in the "blueprints" folder. Unzip the zip, and find the folder containing the pack.json (either the unzipped folder, or a folder directly under it, depending on how the zip was made). This folder needs to be placed in `*/blueprints` directly, not any subfolder thereof -- i.e. you should have "blueprints/onestyle/pack.json", "blueprints/anotherstyle/pack.json", etc.
 {% /version %}
 
 #### What and where is the scans folder?
 
 The scans folder is where the schematics are saved after performing a scan using the {% item name="structurize/scan_tool" /%} in MineColonies.
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 This is a client-side-only directory which is located in Minecraft's folder under: `*/structurize/scans/`. Freshly scanned schematics can be found in `*/structurize/scans/new/` unless they have been renamed in-game. (If they aren't there, look in `*/minecolonies/scans/new`.) This directory is shared between all your singleplayer games and multiplayer games.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 This is located in your own style pack in Minecraft's folder under: `*/blueprints/<yourplayername>/scans/`. This folder is shared between all your singleylayer and multiplayer games.
 {% /version %}
 
 #### Where is the schematic folder?
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Custom schematics need to be copied inside the schematic folder. For both singleplayer and multiplayer games, the folder is under `*/structurize/schematics/`.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 Custom schematics need to be placed in a (custom) [style pack](#style-packs). For more information about that, look there.
 {% /version %}
 
 #### I have a "*/minecolonies/01e6a291-8a01-4763-bcae-f3a8797b1d52/cache/" folder, what is that for?
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 When playing on a server, the server needs to send the schematics to the players so that the build tool's preview works. Those schematics are saved in Minecraft's directory under `*/structurize/{ServerUUID}/cache/`, where ServerUUID is the unique identifier of the server. Those directories can be safely removed as they are automatically created by the server when needed.
 {% /version %}
 
-{% version name="1.19.2" after=true %}
+{% version range="1.19.2--" %}
 This was previously used to save schematics from a server and was automatically created as needed. However, this is no longer needed in 1.19.2 and later, so this folder can be removed safely.
 {% /version %}
 
-{% version name="1.19.2" after=true %}
+{% version range="1.19.2--" %}
 #### I have a "*/blueprints/clients/*" folder, what is that for?
 
 On a server, this folder holds a cached copy of the decorations and shapes used by your players -- possibly even including entire style packs that they've installed themselves (though note that for game balance purposes they won't be able to make functional buildings this way; these must be installed "properly" on the server to be usable).
@@ -209,7 +209,7 @@ To create new schematics, there are some guidelines that you must follow: the sc
 
 Ensure you are building your custom hut outside of any colony borders. When placing the hut block inside the custom schematic, shift+right click to place it without activating it. Then you can scan and save the schematic.
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 The scans' filenames need to follow the naming convention: {StyleName}/{HutName}{HutLevel}.blueprint. For example, for the {% building name="builder" /%} with the MyOwn style, we would have:
 
 *myown/builder1.blueprint*
@@ -227,7 +227,7 @@ Once ready, move the `myown` folder into the blueprints folder and start your ga
 
 > **Note:** Remember that you need the appropriate hut in your inventory to be able to see the schematics in the build tool.
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The naming for the buildings is not strict anymore. The only things that are important are that they are named consistently, that their names end with the hut level, and that you only use lowercase letters in the hut names (avoid capitals, spaces, or other punctuation).
 Alternate designs can just have a different name than the primary one. E.g. if you named the level 1 {% building name="builder" /%} "builder1", an alternative version could be called "altbuilder1" or "builderalt1" or even something completely different ("constructionworker1").
 Don't use numbers anywhere in the name except right at the end for the level. E.g. "alt1builder1" won't work as expected.
@@ -240,7 +240,7 @@ The schematics are visible in the build tool without the hut block, but you can'
 
 Here is a full list, up-to-date as of 14 October 2022, of the building names. Please note *do not use capital letters in hut names*.
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 As previously noted, you don't need to stick to these names if you have something better, as long as you're consistent at each level.
 {% /version %}
 
@@ -299,7 +299,7 @@ As previously noted, you don't need to stick to these names if you have somethin
 
 The process for custom {% item_page name="supply_camp_and_ship" /%} is slightly different: 
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 | Camp or Ship | File Name and Path                                |
 | ------------ | ------------------------------------------------- |
 | Camp         | structurize/schematics/supplycamp/myownsupplycamp |
@@ -308,7 +308,7 @@ The process for custom {% item_page name="supply_camp_and_ship" /%} is slightly 
 So, for example, the path would be `structurize/schematics/wildwest/builder1` for the {% building name="builder" /%} level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 | Camp or Ship | File Name and Path                                      |
 | ------------ | ------------------------------------------------------- |
 | Camp         | blueprints/<myownstyle>/decorations/supplies/supplycamp |
@@ -379,7 +379,7 @@ It's usually recommended to include a few {% item name="minecolonies/blockmineco
 | Level 4 | Difficult - Ocean    |
 | Level 5 | Very Difficult - End |
 
-{% version name="1.19.2" after=true %}
+{% version range="1.19.2--" %}
 ## Plantation Fields
 
 In 1.19.2 and beyond, the plantation has been changed to include fields, just like the {% worker name="farmer" /%}. However, unlike the {% worker name="farmer" /%}, these fields can be completely free-form and created by the style designers. Each field has certain requirements for the {% worker name="planter" /%} to do their work successfully.
@@ -493,11 +493,11 @@ Percentage based harvesting fields will attempt to place a minimum percentage of
 
 ### How to override some built-in schematics?
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Simply create a schematic file with the same style/name. For instance, to override the {% building name="builder" /%} wooden level 1, create a schematic file name called wooden/builder1.blueprint.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 Unfortunately, this is not possible, unless you override the entire style (make a style pack with the same name as an existing style pack, in that case).
 
 However, you can create an "addon pack" with only a few buildings and/or decorations, intended to be used with the original pack; players will be able to mix'n'match from all packs.
@@ -505,11 +505,11 @@ However, you can create an "addon pack" with only a few buildings and/or decorat
 
 ### How to use custom huts?
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 The custom huts need to be copied in the schematics folder.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The custom huts need to be copied into a style pack.
 {% /version %}
 
@@ -529,11 +529,11 @@ Edit the Structurize configuration file at `minecraft/config/structurize-common.
 
 ### How to create upgradable decoration schematics?
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Add the {% item name="minecolonies/deco_controller" /%} somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning - don't include the path in the scan name.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 Put the {% item name="minecolonies/deco_controller" /%} somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
 
 Contrary to the image below, you don't need to enter anything into the deco controller's GUI before scanning any more -- but the rest of that image is still useful.
@@ -545,11 +545,11 @@ Contrary to the image below, you don't need to enter anything into the deco cont
 
 The size must be 9 x 4 x 9 blocks. They must be named and oriented exactly the same (i.e. do not rotate at all) as in the default style pack (careful: the names aren't entirely consistent with the layout, so make careful note which is which!) Use an existing style pack as a template along with the {% item name="structurize/scan_tool" /%} to create the blueprints.
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/mineshafts/*.
 
 It's recommended that you use the {% item name="structurize/tag_anchor" /%} to make the mineshafts `invisible`. Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
@@ -562,11 +562,11 @@ The top part is constructed by the {% worker name="builder" /%} and is the part 
 
 The bottom part is constructed by the {% worker name="quarrier" /%} and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can also set the anchor manually, it's recommended to use a {% item name="structurize/tag_anchor" /%}. The anchor should normally be at the very top layer, although with some caveats it can be elsewhere.It's also recommended to tag this as `invisible` to avoid cluttering the build menu -- it usually doesn't make sense to let it be built as a decoration.
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresponding bottom parts are `simplequarryshaft1` and `mediumquarryshaft1`.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The top part can be in any folder and name that you like (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. Players will usually expect to find them in this folder.
 
 The bottom part should usually be in the same folder and with the matching name but with `shaft` before the number -- e.g. `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`.
@@ -580,11 +580,11 @@ It is permitted for the quarry to be a slightly different size from the default 
 
 ### Can I make dedicated buildings for specific jobs within the same building type?
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Nope.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 Using the {% item name="structurize/tag_tool" /%}, you can place one or more `job=` tags on the hut block to limit which jobs can actually work there. Currently, the only sensible combinations are:
 
 * {% building name="guardtower" /%}: one or more of `job=knight`, `job=ranger`, `job=druid`. You can use these if you want to decorate your towers with specific themes (e.g. archery motifs).
@@ -607,13 +607,13 @@ Be careful of "research loops" -- if the player needs to build a child before th
 
 Since the parent will contain multiple hut blocks, you will always need to explicitly specify the anchor block (the main parent hut block if a building, or a {% item name="structurize/tag_anchor" /%}), otherwise you'll get an error that the anchor was ambiguous and it will not work correctly.
 
-{% version name="1.18.2" before=true %}
+{% version range="--1.18.2" %}
 Since you can only have one version of each building in each folder, combinations should be used very sparingly. The parent and child need to be in the same folder.
 
 To place the child hut in the parent, you can simply shift-click it, just like when placing it in the child itself. Be sure to get the location and rotation correct -- the child hut will be built with the matching orientation relative to that.
 {% /version %}
 
-{% version name="1.19" after=true %}
+{% version range="1.19--" %}
 The parent and child need to be in the same folder. This doesn't mean that you can't combine buildings that are normally in different folders -- just that the version that's intended to be the child must be in the same folder as the parent. You may still have another version of the child (to be used by itself, not as a child) in the original folder if you like.
 
 It's not supported to have a child contain additional children of its own -- you're limited to just the two layers (though the parent can contain multiple children of either the same or different types).

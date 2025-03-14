@@ -1,28 +1,48 @@
 ---
 import VersionContent from '@components/version/VersionContent.astro';
+import { trimToEmpty } from '@utils/string';
+import { getSortedVersions } from '@utils/version';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import { getEntry } from 'astro:content';
 
-import { getVersionNumbers } from '../../../util/version';
-
 interface Props {
-  name: string;
-  before: boolean;
-  after: boolean;
+  range: string;
   inline: boolean;
 }
 
-const { name, before, after, inline } = Astro.props;
+const { range, inline } = Astro.props;
 
-const currentVersion = await getEntry('versions', name);
-if (currentVersion === undefined) {
+let minimumVersion: CollectionEntry<'versions'> | undefined;
+let maximumVersion: CollectionEntry<'versions'> | undefined;
+
+const versionRange = /(?<min>[\d.]*)--(?<max>[\d.]*)/g.exec(range)?.groups;
+if (versionRange) {
+  minimumVersion =
+    trimToEmpty(versionRange['min']) !== undefined
+      ? await getEntry('versions', versionRange['min'])
+      : await getSortedVersions().then((versions) => versions.at(-1));
+  maximumVersion =
+    trimToEmpty(versionRange['max']) !== undefined
+      ? await getEntry('versions', versionRange['max'])
+      : await getSortedVersions().then((versions) => versions.at(0));
+} else {
+  minimumVersion = await getEntry('versions', range);
+  maximumVersion = minimumVersion;
+}
+
+if (minimumVersion === undefined || maximumVersion === undefined) {
   throw new Error(
-    `Provided version "${name}" does not exist. Either pick a different version or configure the version in the versions list.`
+    `Minimum or maximum version could not be determined for version range '${range}', minimum version: ${minimumVersion?.id}, maximum version: ${maximumVersion?.id}, please confirm the range is in the correct format.`
   );
 }
 
-const versions = await getVersionNumbers(currentVersion, before, after);
+const allVersions = await getCollection(
+  'versions',
+  (v) => v.data.order >= minimumVersion?.data.order && v.data.order <= maximumVersion.data.order
+);
 ---
 
-<VersionContent versions={versions} inline={inline}>
+<VersionContent versions={allVersions} inline={inline}>
   <slot />
 </VersionContent>

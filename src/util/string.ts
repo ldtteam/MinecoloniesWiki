@@ -52,6 +52,15 @@ export function toTitleCase(text: string) {
 }
 
 /**
+ * Trim a string down to undefined if empty.
+ * @param value the input value.
+ * @returns the output string or undefined.
+ */
+export function trimToEmpty(value: string | undefined) {
+  return value && value.trim().length > 0 ? value.trim() : undefined;
+}
+
+/**
  * Formats a string according to MC Forge it's TranslatableContents format specifiers.
  * @param format the format string.
  * @param args the list of format arguments.

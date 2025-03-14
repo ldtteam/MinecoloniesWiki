@@ -9,16 +9,16 @@ title: Manual Installation
 - This process is for installing only the MineColonies mod in your original Minecraft launcher. This is not a modpack installation guide.
 - Installation of the MineColonies mod is very simple. It does require Forge to be able to integrate mods into the Minecraft game, though.
 
-{% version name="1.20.6" before=true %}
+{% version range="--1.20.6" %}
 > **Note:** We cannot offer support on the installation of Forge, however, there are many excellent (and more in-depth) tutorials online. Just Google 'how to install Minecraft Forge' to find some.
 {% /version %}
-{% version name="1.21" after=true %}
+{% version range="1.21--" %}
 > **Note:** We cannot offer support on the installation of NeoForge, however, there are many excellent (and more in-depth) tutorials online. Just Google 'how to install Minecraft NeoForge' to find some.
 {% /version %}
 
 ---
 
-{% version name="1.20.6" before=true %}
+{% version range="--1.20.6" %}
 ## Step 1: Download Forge
 
 Go to the [Forge Download page](http://files.minecraftforge.net) and download the **installer** for your Minecraft version.
@@ -32,7 +32,7 @@ When it's done installing, you will see a notification the installation has succ
 
 ![Forge installed notification](@assets/images/wiki/installation/manual/forge_2.png) 
 {% /version %}
-{% version name="1.21" after=true %}
+{% version range="1.21--" %}
 ## Step 1: Download NeoForge
 
 Go to the [NeoForge Download page](https://projects.neoforged.net/neoforged/neoforge) and download the **installer** for your Minecraft version.
@@ -54,10 +54,10 @@ Go to the [MineColonies CurseForge Download page](https://www.curseforge.com/min
 ## Step 4: Download Dependencies
 
 Do the same as step 3 above, but for all of the dependencies for MineColonies for your current Minecraft version. These are:
-{% version name="1.16.5" before=true %}
+{% version range="--1.16.5" %}
 - [Structurize](/wiki/dependencies/structurize)
 {% /version %}
-{% version name="1.17" after=true %}
+{% version range="1.17--" %}
 - [Structurize](/wiki/dependencies/structurize)
 - [Domum Ornamentum](/wiki/dependencies/domumornamentum)
 - [BlockUI](/wiki/dependencies/blockui)
@@ -75,7 +75,7 @@ Once you are in the mods folder, copy all of the jars you downloaded in step 3 a
 
 ## Step 6: Start Minecraft
 
-Run your original Minecraft launcher. Make sure you have the {% version name="1.21" after=true inline=true %}**NeoForge**{% /version %}{% version name="1.20.6" before=true inline=true %}**Forge**{% /version %} profile loaded and hit play. (You might need to go to Installations and create a new installation first.)
+Run your original Minecraft launcher. Make sure you have the {% version range="1.21--" inline=true %}**NeoForge**{% /version %}{% version range="--1.20.6" inline=true %}**Forge**{% /version %} profile loaded and hit play. (You might need to go to Installations and create a new installation first.)
 
 ![Minecraft Launcher](@assets/images/wiki/installation/manual/launcher.png) 
 
