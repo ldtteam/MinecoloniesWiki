@@ -1,0 +1,59 @@
+---
+import Card from '@components/ui/Card.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  member: CollectionEntry<'team'>;
+}
+
+const { member } = Astro.props;
+---
+
+<Card class="member-card" autoSize>
+  {
+    member.data.uuid && (
+      <img
+        src={`https://crafatar.com/renders/body/${member.data.uuid}?overlay=true&scale=4`}
+        class="member-image"
+        alt={`Minecraft skin for ${member.id}`}
+        loading="lazy"
+        decoding="async"
+      />
+    )
+  }
+
+  <div class="member-details">
+    <h3 class="pt-3">{member.id}</h3>
+    {member.data.realName && <p>{member.data.realName}</p>}
+    {member.data.joinedYear !== undefined && <p>Joined: {member.data.joinedYear}</p>}
+    {
+      member.data.sub !== undefined && (
+        <p>
+          {member.data.sub.map((sub) => (
+            <>
+              <span>{sub}</span>
+              <br />
+            </>
+          ))}
+        </p>
+      )
+    }
+    <p><i>{member.data.tagline}</i></p>
+  </div>
+</Card>
+
+<style>
+  :global(.member-card) {
+    display: flex;
+    gap: 1em;
+  }
+
+  .member-image {
+    flex: 0;
+    height: min-content;
+  }
+
+  .member-details {
+    flex: 1;
+  }
+</style>

@@ -11,6 +11,9 @@ export const researchSchema = z.object({
   tree: reference('research_tree'),
   parent: reference('research').optional(),
   name: z.string(),
+  subtitle: z.string().optional(),
+  researchLevel: z.number(),
+  sortOrder: z.number().default(1),
   requirements: z
     .discriminatedUnion('type', [
       z.object({
@@ -35,8 +38,7 @@ export const researchSchema = z.object({
       level: z.number(),
       effect: reference('research_effect')
     })
-  ),
-  researchLevel: z.number()
+  )
 });
 
 export const researchEffectsSchema = z

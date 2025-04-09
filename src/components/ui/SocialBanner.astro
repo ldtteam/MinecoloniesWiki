@@ -18,7 +18,7 @@ if (social === undefined) {
 }
 ---
 
-<Banner {...rest} image={(key) => `/images/ribbon/social/${social.id}_ribbon_${key}.png`}>
+<Banner {...rest} offset={20} image={`/images/banner/${social.id}.png`}>
   <Social id={id} icon color={textColor}>
     <span style={{ color: textColor }}>
       <slot />

@@ -1,0 +1,107 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+import ResearchBox from './ResearchBox.astro';
+import type { ResearchWithChildren } from './types';
+
+interface Props {
+  tree: CollectionEntry<'research_tree'>;
+}
+
+const { tree } = Astro.props;
+
+const researches = await getCollection('research', (research) => research.data.tree.id === tree.id).then((researches) =>
+  researches
+    .map<ResearchWithChildren>((m) => ({ ...m.data, children: [] }))
+    .toSorted((a, b) => a.researchLevel - b.researchLevel)
+);
+const researchIdMap: Record<string, ResearchWithChildren> = {};
+const researchChains: ResearchWithChildren[] = [];
+
+researches.forEach((research) => {
+  researchIdMap[research.id] = research;
+
+  if (research.parent) {
+    const parent = researchIdMap[research.parent.id];
+    parent?.children.push(research);
+  } else {
+    researchChains.push(research);
+  }
+});
+---
+
+<div class="research-tree-image-container">
+  <div class="research-tree-image-content">
+    <div class="research-tree-image-columns">
+      <p>First Column</p>
+      <p>Second Column</p>
+      <p>Third Column</p>
+      <p>Fourth Column</p>
+      <p>Fifth Column</p>
+      <p>Sixth Column</p>
+    </div>
+    {researchChains.map((researchChain) => <ResearchBox research={researchChain} />)}
+  </div>
+</div>
+
+<style lang="scss">
+  @import '../../../../css/bootstrap-vars.scss';
+
+  .research-tree-image-container {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .research-tree-image-columns {
+    display: flex;
+    gap: calc(3em + 2px);
+
+    * {
+      flex: 1 0 300px;
+      text-align: center;
+      font-size: $h5-font-size;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .research-tree-image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    overflow-x: auto;
+    touch-action: pan-x;
+  }
+</style>
+
+<script>
+  function setupPannable(viewport: Element) {
+    let isPan = false;
+
+    viewport.addEventListener('pointerdown', (ev) => {
+      console.log(ev);
+      ev.preventDefault();
+      isPan = true;
+    });
+    addEventListener('pointermove', (ev) => {
+      if (!isPan) {
+        return;
+      }
+      viewport.scrollTo(viewport.scrollLeft - ev.movementX, viewport.scrollTop - ev.movementY);
+    });
+    addEventListener('pointerup', () => {
+      isPan = false;
+    });
+  }
+
+  function setup() {
+    document.querySelectorAll('.research-tree-image-content').forEach(setupPannable);
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

@@ -53,6 +53,7 @@
     "@astrojs/upgrade": "^0.5.1",
     "@eslint/js": "^9.24.0",
     "@types/archiver": "^6.0.3",
+    "@types/bootstrap": "^5.2.10",
     "@types/eslint-plugin-markdown": "^2.0.2",
     "astro-eslint-parser": "^1.2.2",
     "eslint": "^9.24.0",

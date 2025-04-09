@@ -7,6 +7,8 @@ $enable-dark-mode: false;
 $offcanvas-bg-color: var(--background-color);
 $offcanvas-color: var(--text-color);
 
+$font-family-base: 'Roboto', sans-serif;
+
 @import '/node_modules/bootstrap/scss/functions';
 @import '/node_modules/bootstrap/scss/variables';
 @import '/node_modules/bootstrap/scss/maps';

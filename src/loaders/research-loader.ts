@@ -107,18 +107,20 @@ export async function researchLoader() {
       const parent = researchData.parentResearch?.split('/').pop();
       values.push({
         id: researchKey,
-        name: translations[`com.minecolonies.research.${treeKey}.${researchKey}.name`],
         tree: {
           collection: 'research_tree',
           id: treeKey
         },
-        researchLevel: researchData.researchLevel,
         parent: parent
           ? {
               collection: 'research',
               id: parent
             }
           : undefined,
+        name: translations[`com.minecolonies.research.${treeKey}.${researchKey}.name`],
+        subtitle: translations[`com.minecolonies.research.${treeKey}.${researchKey}.subtitle`],
+        researchLevel: researchData.researchLevel,
+        sortOrder: researchData.sortOrder,
         requirements: await parseRequirements(researchData, translations),
         effects: await parseEffects(researchData)
       });

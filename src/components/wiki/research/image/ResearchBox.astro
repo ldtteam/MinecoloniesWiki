@@ -1,0 +1,207 @@
+---
+import { experimental_AstroContainer as AstroContainer } from 'astro/container';
+
+import ResearchEffect from '../common/ResearchEffect.astro';
+import ResearchRequirement from '../common/ResearchRequirement.astro';
+import type { ResearchWithChildren } from './types';
+
+interface Props {
+  research: ResearchWithChildren;
+}
+
+const { research } = Astro.props;
+
+let template = `<p class="fs-5 mb-0">${research.name}</p>`;
+if (research.subtitle) {
+  template += `<p class="text-secondary small">${research.subtitle}</p>`;
+}
+
+const container = await AstroContainer.create();
+
+if (research.requirements.length > 0) {
+  template += '<p class="mb-0">Requirements</p><ul>';
+  for (const requirement of research.requirements) {
+    template += await container.renderToString(ResearchRequirement, {
+      props: {
+        requirement
+      }
+    });
+  }
+  template += '</ul>';
+}
+
+if (research.effects.length > 0) {
+  template += '<p class="mb-0">Effects</p><ul>';
+  for (const effect of research.effects) {
+    template += await container
+      .renderToString(ResearchEffect, {
+        props: {
+          effect
+        }
+      })
+      .then((res) => `<li>${res}</li>`);
+  }
+  template += '</ul>';
+}
+---
+
+<div id={`research_${research.id}`} class="research-outer-wrapper">
+  <div class="research-card-line-wrapper">
+    <div class="research-card-wrapper">
+      {
+        research.parent && (
+          <div class="research-lines-vertical">
+            <div class="line-vertical line-vertical-top" />
+            <div class="line-vertical line-vertical-fill" />
+            <div class="line-vertical line-vertical-bottom" />
+          </div>
+        )
+      }
+      {research.parent && <hr class="line-horizontal" />}
+      <div
+        class="research-card card"
+        data-bs-title={template}
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-custom-class="research-card-tooltip"
+        data-bs-html="true"
+      >
+        <div class="card-body">
+          <p class="card-title" title={research.name}>
+            {research.name}
+          </p>
+          <p class="card-subtitle text-body-secondary" title={research.subtitle}>
+            {research.subtitle}&nbsp;
+          </p>
+        </div>
+      </div>
+      {research.children.length > 0 && <div class="line-horizontal" />}
+    </div>
+    {research.parent && <div class="line-vertical line-vertical-overflow" />}
+  </div>
+
+  <div class="research-children-wrapper">
+    {
+      research.children
+        .toSorted((a, b) => a.sortOrder - b.sortOrder)
+        .map((child) => (
+          <div class="research-child-wrapper">
+            <Astro.self research={child} />
+          </div>
+        ))
+    }
+  </div>
+</div>
+
+<style is:global lang="scss">
+  @import '../../../../css/bootstrap-vars.scss';
+  @import '../../../../../node_modules/bootstrap/scss/tooltip';
+
+  /* Tooltip styling */
+  .research-card-tooltip {
+    --bs-tooltip-max-width: fit-content;
+    --bs-tooltip-bg: white;
+    --bs-tooltip-color: black;
+    --bs-tooltip-opacity: 1;
+
+    .tooltip-arrow {
+      --bs-tooltip-bg: #{$secondary-border-subtle};
+    }
+
+    .tooltip-inner {
+      border: 1px solid $secondary-border-subtle;
+      text-align: start;
+    }
+  }
+</style>
+
+<style lang="scss">
+  @import '../../../../css/bootstrap-vars.scss';
+
+  /* Positioning styles */
+  .research-outer-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .research-card-line-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .research-children-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .research-card-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .line-horizontal {
+    width: 1.5em;
+    border: 1px solid gray;
+  }
+
+  .research-lines-vertical {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .line-vertical {
+    flex: 1;
+    border: 1px solid gray;
+  }
+
+  .line-vertical-fill {
+    flex-grow: 0;
+    flex-basis: 2px;
+  }
+
+  .line-vertical-overflow {
+    width: 2px;
+  }
+
+  /* Display styles */
+  .research-card {
+    --bs-card-spacer-y: 0.5em;
+    width: 300px;
+    margin: 0.5em 0;
+
+    .card-title,
+    .card-subtitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-title {
+      margin-bottom: 0;
+    }
+
+    .card-subtitle {
+      font-size: 0.75em;
+    }
+  }
+
+  /* Do not touch these rules, it ensures that the correct pieces of the connector lines get hidden */
+  .research-child-wrapper:first-child
+    > .research-outer-wrapper
+    > .research-card-line-wrapper
+    > .research-card-wrapper
+    > .research-lines-vertical
+    > .line-vertical-top,
+  .research-child-wrapper:last-child
+    > .research-outer-wrapper
+    > .research-card-line-wrapper
+    > .research-card-wrapper
+    > .research-lines-vertical
+    > .line-vertical-bottom,
+  .research-child-wrapper:last-child > .research-outer-wrapper > .research-card-line-wrapper > .line-vertical-overflow {
+    visibility: hidden;
+  }
+</style>

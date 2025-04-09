@@ -1,8 +1,12 @@
 ---
-import type { Props as RibbonProps } from './Ribbon.astro';
 import Ribbon from './Ribbon.astro';
 
-export interface Props extends RibbonProps {
+export interface Props {
+  image?: string;
+  offset?: number;
+  textColor?: string;
+  class?: string;
+  as?: string;
   center?: boolean;
 }
 

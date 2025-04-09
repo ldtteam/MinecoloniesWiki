@@ -1,0 +1,72 @@
+---
+import Header from './Header.astro';
+import Navigation from './navbar/Navigation.astro';
+import Banner from './ui/Banner.astro';
+import Card from './ui/Card.astro';
+
+interface Props {
+  isHome: boolean;
+  isWiki: boolean;
+}
+
+const { isHome, isWiki } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<Card class="page-wrapper" padding={0}>
+  <div class:list={['page-layout', isHome && 'bg-home']}>
+    <div class="page-root">
+      <Header isWiki={isWiki} />
+      <Navigation isWiki={isWiki} />
+
+      <div transition:animate="fade">
+        <slot />
+      </div>
+
+      <Banner as="footer">&copy; Minecolonies {year}</Banner>
+    </div>
+  </div>
+</Card>
+
+<style lang="scss">
+  :global(.page-wrapper) {
+    display: flow-root;
+    min-height: calc(100vh - 1em);
+    margin: 0.5em;
+  }
+
+  .page-layout {
+    display: flow-root;
+    min-height: calc(100vh - 1em - 28px);
+    margin: 14px;
+    padding: 0.5em;
+  }
+
+  .page-root {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & > * {
+      flex: 0;
+    }
+  }
+
+  .bg-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/bg-home.jpg');
+    background-size: cover;
+    color: var(--color-dark);
+  }
+</style>
+
+<script>
+  import 'bootstrap/js/dist/offcanvas';
+  import 'bootstrap/js/dist/dropdown';
+  import Tooltip from 'bootstrap/js/dist/tooltip';
+
+  function setup() {
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((elem) => new Tooltip(elem));
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

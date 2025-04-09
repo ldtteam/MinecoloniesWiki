@@ -12,32 +12,19 @@ const { class: cssClass, padding = 1.5, autoSize = false } = Astro.props;
   <slot />
 </div>
 
-<style>
+<style lang="scss">
   .app-card {
-    background:
-      url('/images/card/card_top_left.png') top left/16px 16px no-repeat,
-      url('/images/card/card_top_right.png') top right no-repeat,
-      url('/images/card/card_bottom_left.png') bottom left no-repeat,
-      url('/images/card/card_bottom_right.png') bottom right no-repeat,
-      url('/images/card/card_left.png') 0px 16px repeat-y,
-      url('/images/card/card_right.png') right center repeat-y,
-      url('/images/card/card_top.png') top center repeat-x,
-      url('/images/card/card_bottom.png') bottom center repeat-x;
+    border-image-source: url('/images/card/light.png');
+    border-image-slice: 16 16 fill;
+    border-image-width: 16px 16px;
+    border-image-repeat: round;
+
+    .app-card-min {
+      width: min-content;
+    }
   }
 
-  .app-card-min {
-    width: min-content;
-  }
-
-  .app-card .box {
-    background:
-      url('/images/card/card_dark_top_left.png') top left/16px 16px no-repeat,
-      url('/images/card/card_dark_top_right.png') top right no-repeat,
-      url('/images/card/card_dark_bottom_left.png') bottom left no-repeat,
-      url('/images/card/card_dark_bottom_right.png') bottom right no-repeat,
-      url('/images/card/card_dark_left.png') 0px 16px repeat-y,
-      url('/images/card/card_dark_right.png') right center repeat-y,
-      url('/images/card/card_dark_top.png') top center repeat-x,
-      url('/images/card/card_dark_bottom.png') bottom center repeat-x;
+  :global(.dark) .app-card {
+    border-image-source: url('/images/card/dark.png');
   }
 </style>

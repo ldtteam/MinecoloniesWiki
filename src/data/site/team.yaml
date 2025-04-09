@@ -1,21 +1,41 @@
-- id: Drew Shulman
-  realName: Drew Shulman
-  sub: []
-  tagline: ""
-  role: voice
-  inactive: false
-- id: Kaine Crooks
-  realName: Kaine Crooks
-  sub: []
-  tagline: ""
-  role: voice
-  inactive: false
-- id: Matthew Kriner
-  realName: Matthew Kriner
-  sub: []
-  tagline: ""
-  role: voice
-  inactive: false
+# Leads
+
+- id: Raycoms (H3Lay)
+  realName: Ray Neiheiser
+  sub:
+    - Programming
+    - Management
+    - Everything
+  tagline: Our nice Capoerista.
+  uuid: fefb153f-4ffc-4f5c-acd2-3291e73bdd4d
+  role: lead
+  sort: 1
+- id: Pixblockus
+  realName: Someaddons
+  sub:
+    - Programming
+  tagline: One feature has no end.
+  uuid: c1a5dd12-a6d1-40ec-aacf-ae047ba842f3
+  role: lead
+  sort: 2
+- id: OrionOnline
+  realName: Marc Hermans
+  sub:
+    - Programming
+    - Management
+    - Build System Admin
+  tagline: "§k #2:&5%401."
+  uuid: 4f99426f-43ad-418b-8b5a-ad91443f9374
+  role: lead
+  sort: 3
+- id: Wissi
+  realName: Luis Muñoz
+  sub:
+    - Wiki Editor
+    - Modpack Creator
+  tagline: Our Loyal Adventurer.
+  uuid: b5a93d5b-38fc-4df2-98a7-0b3c7cd7cd0c
+  role: lead
 - id: Kostronor
   realName: Marvin Hofmann
   sub:
@@ -24,41 +44,6 @@
   tagline: The cool Ghost Rider.
   uuid: 180ecd0e-2848-46d3-847f-4d357802aba0
   role: lead
-  inactive: true
-- joinedYear: 2017
-  id: PoroUsedSnax
-  realName: Mark Fisher
-  sub:
-    - Web Developer
-    - A bit of Everything
-  tagline: Got any Snax?
-  uuid: 2abe5404-4a2f-4e30-b3ff-671696227a90
-  role: web
-  inactive: false
-- id: ImriLaoi
-  realName: Tasha Wells
-  sub:
-    - Static Modelling
-    - Texturing
-  tagline: They aren't furry ears, honest!
-  uuid: 2d77af5b-215c-48fb-b9a8-669eb0b6a094
-  role: art
-  inactive: false
-- id: Nightenom
-  realName: ""
-  sub:
-    - Structurize
-  tagline: ""
-  uuid: 2d7c57ca-7bd2-4c52-bd50-f7f3fc5ba204
-  role: dev
-  inactive: false
-- id: Fireruner97
-  realName: Daniel Fuego
-  sub:
-    - Programming
-  tagline: Our Spanish Toureiro.
-  uuid: 2e76646a-2be2-4fcb-807a-ea742af4e283
-  role: dev
   inactive: true
 - id: pmardle
   realName: Peter Mardle
@@ -69,33 +54,6 @@
   uuid: 3137a21b-e8e2-40ca-8640-c744042d5564
   role: lead
   inactive: true
-- id: Xavierh
-  realName: Xavier Hervy
-  sub:
-    - Programming
-  tagline: Legolas, is that you?
-  uuid: 4a1f1614-ac51-46a1-8ca6-d8cf3168f3ee
-  role: dev
-  inactive: true
-- id: OrionOnline
-  realName: Marc Hermans
-  sub:
-    - Programming
-    - Management
-    - Build System Admin
-  tagline: "§k #2:&5%401."
-  uuid: 4f99426f-43ad-418b-8b5a-ad91443f9374
-  role: lead
-  inactive: false
-- id: Odd Robbia
-  realName: ""
-  sub:
-    - Animated/Static modelling
-    - Texturing
-  tagline: ""
-  uuid: 546f4ea8-84ce-443f-b488-fbc685cdcbbc
-  role: art
-  inactive: false
 - id: flaminyogurt
   realName: Colton Schlosser
   sub:
@@ -105,24 +63,50 @@
   uuid: 8667ba71-b85a-4004-af54-457a9734eed7
   role: lead
   inactive: true
-- id: Asherslab
-  realName: Asher Parry
+
+# Devs
+
+- id: Nightenom
+  sub:
+    - Structurize
+  uuid: 2d7c57ca-7bd2-4c52-bd50-f7f3fc5ba204
+  role: dev
+  sort: 1
+- id: Thodor12
+  realName: Thom van den Akker
+  sub:
+    - Mod development
+    - Web development
+  joinedYear: 2023
+  uuid: 1582ed22-e011-4c94-981a-aafb04a4fff2
+  role: dev
+  sort: 2
+- id: Fireruner97
+  realName: Daniel Fuego
   sub:
     - Programming
-  tagline: Raycom's dev AI.
-  uuid: 9186b2cf-ae1f-4d69-aa67-81a7cb69008d
-  role: lead
-  inactive: false
-- id: Raydamri
-  realName: "@pixelmanz2"
+  tagline: Our Spanish Toureiro.
+  uuid: 2e76646a-2be2-4fcb-807a-ea742af4e283
+  role: dev
+  inactive: true
+- id: PoroUsedSnax
+  realName: Mark Fisher
+  joinedYear: 2017
   sub:
-    - Texture artist
-  tagline: "Life's sponsored by raid: shadow legends"
-  uuid: 971780d8-3372-404a-87ef-ebdb3bec7fe7
-  role: art
-  inactive: false
+    - Web Developer
+    - A bit of Everything
+  tagline: Got any Snax?
+  uuid: 2abe5404-4a2f-4e30-b3ff-671696227a90
+  role: dev
+- id: Xavierh
+  realName: Xavier Hervy
+  sub:
+    - Programming
+  tagline: Legolas, is that you?
+  uuid: 4a1f1614-ac51-46a1-8ca6-d8cf3168f3ee
+  role: dev
+  inactive: true
 - id: Zyxifrash
-  realName: ""
   sub:
     - Programming
   tagline: Om Nom Nom.
@@ -137,23 +121,6 @@
   uuid: 9a09ca06-403e-4539-ad28-b731ab026671
   role: dev
   inactive: true
-- id: Wissi
-  realName: Luis Muñoz
-  sub:
-    - Wiki Editor
-    - Modpack Creator
-  tagline: Our Loyal Adventurer.
-  uuid: b5a93d5b-38fc-4df2-98a7-0b3c7cd7cd0c
-  role: web
-  inactive: false
-- id: Ridanisaurus
-  realName: ""
-  sub:
-    - Logo Creator
-  tagline: Fixing the world 1 pixel at a time
-  uuid: b5b426a8-d4f5-47cd-89b2-cde515a207d3
-  role: art
-  inactive: false
 - id: TheYoxy
   realName: Floryan Simar
   sub:
@@ -162,24 +129,51 @@
   uuid: ba375a7f-fbb1-4497-b42e-f7b92b9afdb3
   role: dev
   inactive: true
-- id: Pixblockus
-  realName: Someaddons
+
+# Assets (art)
+
+- id: ImriLaoi
+  realName: Tasha Wells
+  sub:
+    - Static Modelling
+    - Texturing
+  tagline: They aren't furry ears, honest!
+  uuid: 2d77af5b-215c-48fb-b9a8-669eb0b6a094
+  role: art
+- id: Odd Robbia
+  sub:
+    - Animated/Static modelling
+    - Texturing
+  uuid: 546f4ea8-84ce-443f-b488-fbc685cdcbbc
+  role: art
+- id: Asherslab
+  realName: Asher Parry
   sub:
     - Programming
-  tagline: One feature has no end.
-  uuid: c1a5dd12-a6d1-40ec-aacf-ae047ba842f3
+  tagline: Raycom's dev AI.
+  uuid: 9186b2cf-ae1f-4d69-aa67-81a7cb69008d
   role: lead
-  inactive: false
+- id: Raydamri
+  realName: "@pixelmanz2"
+  sub:
+    - Texture artist
+  tagline: "Life's sponsored by raid: shadow legends"
+  uuid: 971780d8-3372-404a-87ef-ebdb3bec7fe7
+  role: art
+- id: Ridanisaurus
+  sub:
+    - Logo Creator
+  tagline: Fixing the world 1 pixel at a time
+  uuid: b5b426a8-d4f5-47cd-89b2-cde515a207d3
+  role: art
 - id: carlansor
   realName: carlos
   sub:
     - Texture Designer
     - Builder
     - Audio Management
-  tagline: ""
   uuid: d404bf6e4cdd45c8a43224ff317c98ef
   role: art
-  inactive: false
 - id: D3miurge
   realName: Rafael de Castro Pamplona
   sub:
@@ -190,7 +184,6 @@
   tagline: Metroidvania Vampire.
   uuid: f82f921f-8242-49a7-a436-76c0a297b122
   role: art
-  inactive: false
 - id: Khranos
   realName: Khranos Lucror
   sub:
@@ -199,14 +192,12 @@
   tagline: The Terminator!
   uuid: fb422c77-522d-4241-b553-6d67fb2697f0
   role: art
-  inactive: false
-- id: _Raycoms_ (H3Lay)
-  realName: Ray Neiheiser
-  sub:
-    - Programming
-    - Management
-    - Everything
-  tagline: Our nice Capoerista.
-  uuid: fefb153f-4ffc-4f5c-acd2-3291e73bdd4d
-  role: lead
-  inactive: false
+
+# Assets (voice)
+
+- id: Drew Shulman
+  role: voice
+- id: Kaine Crooks
+  role: voice
+- id: Matthew Kriner
+  role: voice

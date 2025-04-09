@@ -1,63 +1,30 @@
 ---
-type ImageKey = 'left' | 'center' | 'right';
-
 export interface Props {
-  image?: (key: ImageKey) => string;
+  image?: string;
+  offset?: number;
   textColor?: string;
   class?: string;
   as?: string;
 }
 
 const {
-  image = (key: ImageKey) => `/images/ribbon/navbar_modular_${key}.png`,
+  image = '/images/banner/navbar.png',
+  offset = 35,
   textColor = 'white',
   class: cssClass,
-  as = 'div'
+  as: Tag = 'div'
 } = Astro.props;
-
-const vars = { 'path-center': `url('${image('center')}')` };
-
-const Tag = as;
 ---
 
-<div>
-  <Tag class:list={['ribbon', cssClass]} style={{ color: textColor }}>
-    <div class="background">
-      <img class="left" src={image('left')} alt="" />
-      <div class="center"></div>
-      <img class="right" src={image('right')} alt="" />
-    </div>
-    <slot />
-  </Tag>
-</div>
-
-<style define:vars={vars}>
-  .ribbon {
-    position: relative;
-    display: flex;
-  }
-
-  .ribbon > :global(*:not(.background)) {
-    position: relative;
-  }
-
-  .background {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-
-  .background .left,
-  .background .right {
-    flex: 0;
-  }
-
-  .background .center {
-    flex: 1;
-    background-image: var(--path-center);
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
-</style>
+<Tag
+  class={cssClass}
+  style={{
+    'border-image-source': `url('${image}')`,
+    'border-image-slice': `0 ${offset} fill`,
+    'border-image-width': `0px ${offset}px`,
+    'border-image-repeat': 'round',
+    color: textColor
+  }}
+>
+  <slot />
+</Tag>

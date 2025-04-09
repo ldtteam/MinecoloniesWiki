@@ -1,0 +1,144 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+import ResearchEffect from '../common/ResearchEffect.astro';
+import ResearchRequirement from '../common/ResearchRequirement.astro';
+
+interface Props {
+  tree: CollectionEntry<'research_tree'>;
+  name: string;
+  depth: number;
+  terminal?: boolean;
+}
+
+const { tree, name, depth, terminal = false } = Astro.props;
+
+const researches = (
+  await getCollection('research', (filter) => filter.data.tree.id == tree.id && filter.data.researchLevel === depth)
+).sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const researchesWithParent = await Promise.all(
+  researches.map(async (research) => {
+    if (research.data.parent) {
+      const parent = await getEntry('research', research.data.parent.id);
+      return {
+        ...research,
+        parentResearch: parent
+      };
+    }
+    return {
+      ...research,
+      parentResearch: undefined
+    };
+  })
+);
+---
+
+{
+  researches.length > 0 && (
+    <>
+      <h4>{name}</h4>
+      {terminal && (
+        <p>
+          <b>All of these researches below are mutually exclusive, you can only pick one!</b>
+        </p>
+      )}
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="col-2">Name</th>
+            <th class="col-2">Prerequisite</th>
+            <th class="col-4">Requirements</th>
+            <th class="col-4">Effects</th>
+          </tr>
+        </thead>
+        <tbody>
+          {researchesWithParent.map((research) => (
+            <tr id={`research_${research.id}_list`}>
+              <td>
+                <a class="link-primary" href={`#research_${research.id}_list`}>
+                  {research.data.name}
+                </a>
+              </td>
+              <td>
+                {research.parentResearch !== undefined ? (
+                  <a href={`#research_${research.parentResearch.id}_list`}>{research.parentResearch.data.name}</a>
+                ) : (
+                  '-'
+                )}
+              </td>
+              <td>
+                {research.data.requirements.length > 0 ? (
+                  <ul>
+                    {research.data.requirements.map((requirement) => (
+                      <li>
+                        <ResearchRequirement requirement={requirement} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  '-'
+                )}
+              </td>
+              <td>
+                {research.data.effects.length > 0 ? (
+                  <ul>
+                    {research.data.effects.map((effect) => (
+                      <li>
+                        <ResearchEffect effect={effect} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  '-'
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )
+}
+
+<style>
+  @keyframes bg {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #faeed0;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  tr {
+    background-color: transparent;
+  }
+
+  tr.active {
+    animation: bg 2s linear forwards;
+  }
+</style>
+
+<script>
+  function updateHighlight() {
+    const activeResearch = document.getElementById(window.location.hash.slice(1));
+    if (activeResearch !== null) {
+      activeResearch.classList.add('active');
+      setTimeout(() => activeResearch.classList.remove('active'), 2000);
+    }
+  }
+
+  function setup() {
+    window.addEventListener('popstate', updateHighlight);
+    updateHighlight();
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

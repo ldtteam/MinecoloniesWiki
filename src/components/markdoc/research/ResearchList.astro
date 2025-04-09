@@ -1,9 +1,78 @@
 ---
+import type { ResearchTabs } from '@components/wiki/research/common/types';
+import ResearchTreeImage from '@components/wiki/research/image/ResearchTree.astro';
+import ResearchListTree from '@components/wiki/research/table/ResearchTree.astro';
 import { getCollection } from 'astro:content';
 
-import ResearchListTree from './ResearchListTree.astro';
-
 const trees = await getCollection('research_tree');
+
+const tabs: ResearchTabs[] = [
+  {
+    name: 'Image',
+    component: ResearchTreeImage
+  },
+  {
+    name: 'List',
+    component: ResearchListTree
+  }
+];
 ---
 
-{trees.map((tree) => <ResearchListTree tree={tree} />)}
+<h3 id="research-tree">Research Tree</h3>
+
+<div class="nav nav-tabs" role="tablist">
+  {
+    tabs.map((tab, idx) => {
+      const id = tab.name.toLocaleLowerCase();
+      return (
+        <button
+          class:list={['nav-link', idx === 0 && 'active']}
+          data-bs-toggle="tab"
+          data-bs-target={`${id}-tab-pane`}
+          type="button"
+          role="tab"
+        >
+          {tab.name}
+        </button>
+      );
+    })
+  }
+</div>
+<div class="tab-content">
+  {
+    tabs.map((tab, idx) => {
+      const id = tab.name.toLocaleLowerCase();
+      const Component = tab.component;
+      return (
+        <div id={`${id}-tab-pane`} class:list={['tab-pane', idx === 0 && 'active show']} role="tabpanel">
+          {trees.map((tree) => (
+            <>
+              <h3 id={tree.id}>{tree.data.name}</h3>
+              <p>
+                <a href="#research-tree">Back to top</a>
+              </p>
+              <Component tree={tree} />
+            </>
+          ))}
+        </div>
+      );
+    })
+  }
+</div>
+
+<style>
+  .nav-link {
+    text-shadow: none;
+    background-color: transparent !important;
+  }
+
+  .tab-content {
+    margin-top: 1em;
+  }
+</style>
+
+<script>
+  function setup() {}
+
+  document.addEventListener('astro:page-load', setup);
+</script>

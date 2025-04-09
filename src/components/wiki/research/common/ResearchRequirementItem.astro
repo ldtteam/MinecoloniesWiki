@@ -1,0 +1,18 @@
+---
+import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
+import { type CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+interface Props {
+  requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'item' }>;
+}
+
+const { requirement } = Astro.props;
+
+const items = await Promise.all(requirement.items.map((item) => getEntry(item)));
+---
+
+<b>{requirement.quantity}</b>x
+<span>
+  {items.map(async (item) => <VersionedItemName item={item} />)}
+</span>

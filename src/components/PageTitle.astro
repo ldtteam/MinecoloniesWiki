@@ -1,0 +1,49 @@
+---
+import type { Title } from '@utils/wiki';
+
+import VersionSelector from './version/VersionSelector.astro';
+import PageTitleRender from './wiki/PageTitleRender.astro';
+
+interface Props {
+  fluid: boolean;
+  header: Title;
+}
+
+const { fluid, header } = Astro.props;
+---
+
+<div class={fluid ? 'container-fluid' : 'container'}>
+  <div class="header">
+    <div></div>
+    <h1 class="page-header">
+      <PageTitleRender title={header} />
+    </h1>
+    <div>
+      <VersionSelector />
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  @import '../css/bootstrap-vars.scss';
+
+  .header {
+    display: flex;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      :global(.version-selector) {
+        align-self: flex-end;
+      }
+
+      @include media-breakpoint-down(lg) {
+        .version-selector {
+          display: none;
+        }
+      }
+    }
+  }
+</style>

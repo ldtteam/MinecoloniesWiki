@@ -2,14 +2,10 @@
 import '../css/bootstrap.scss';
 import '../css/globals.scss';
 
-import Footer from '@components/Footer.astro';
-import Header from '@components/Header.astro';
 import Meta from '@components/Meta.astro';
-import Navigation from '@components/navbar/Navigation.astro';
-import PageRoot from '@components/PageRoot.astro';
-import VersionSelector from '@components/version/VersionSelector.astro';
+import PageTitle from '@components/PageTitle.astro';
+import PageWrapper from '@components/PageWrapper.astro';
 import VersionStyling from '@components/version/VersionStyling.astro';
-import PageTitleRender from '@components/wiki/PageTitleRender.astro';
 import { getNewestVersion } from '@utils/version';
 import type { Title } from '@utils/wiki';
 import { ClientRouter } from 'astro:transitions';
@@ -113,54 +109,34 @@ const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '
     <VersionStyling />
   </head>
   <body data-latest-version={newestVersion.data.order} {...versionTitleData} data-title-affix={titleAffix}>
-    <PageRoot isHome={isHome}>
-      <Header isWiki={isWikiPage} />
-      <Navigation isWiki={isWikiPage} />
+    <PageWrapper isHome={isHome} isWiki={isWikiPage}>
+      {showHeader && <PageTitle fluid={fluid} header={header} />}
 
-      <div transition:animate="fade" class="page-content px-5">
+      <div class:list={[fluid ? 'container-fluid' : 'container', 'grid w-100']} style={`--bs-columns: ${columns};`}>
         {
-          showHeader && (
-            <div class={fluid ? 'container-fluid' : 'container'}>
-              <div class="header">
-                <div />
-                <h1 class="page_header">
-                  <PageTitleRender title={header} />
-                </h1>
-                <div>
-                  <VersionSelector />
-                </div>
-              </div>
+          hasLeftSlot && (
+            <div class={`g-col-12 g-col-lg-${leftColumns}`}>
+              <slot name="left" />
             </div>
           )
         }
-
-        <div class:list={[fluid ? 'container-fluid' : 'container', 'grid w-100']} style={`--bs-columns: ${columns};`}>
-          {
-            hasLeftSlot && (
-              <div class={`g-col-12 g-col-lg-${leftColumns}`}>
-                <slot name="left" />
-              </div>
-            )
-          }
-          <div
-            class:list={[
-              'g-col-12',
-              `g-col-lg-${columns - (hasLeftSlot ? leftColumns : 0) - (hasRightSlot ? rightColumns : 0)}`
-            ]}
-          >
-            {showHeader && <hr />}
-            <slot />
-          </div>
-          {
-            hasRightSlot && (
-              <div class={`g-col-12 g-col-lg-${rightColumns}`}>
-                <slot name="right" />
-              </div>
-            )
-          }
+        <div
+          class:list={[
+            'g-col-12',
+            `g-col-lg-${columns - (hasLeftSlot ? leftColumns : 0) - (hasRightSlot ? rightColumns : 0)}`
+          ]}
+        >
+          {showHeader && <hr />}
+          <slot />
         </div>
+        {
+          hasRightSlot && (
+            <div class={`g-col-12 g-col-lg-${rightColumns}`}>
+              <slot name="right" />
+            </div>
+          )
+        }
       </div>
-      <Footer />
-    </PageRoot>
+    </PageWrapper>
   </body>
 </html>

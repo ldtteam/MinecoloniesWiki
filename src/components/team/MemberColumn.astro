@@ -1,0 +1,46 @@
+---
+import Button from '@components/ui/Button.astro';
+import type { CollectionEntry } from 'astro:content';
+
+import Member from './Member.astro';
+
+interface Props {
+  title: string;
+  activeMembers: CollectionEntry<'team'>[];
+  inactiveMembers: CollectionEntry<'team'>[];
+}
+
+const { title, activeMembers, inactiveMembers } = Astro.props;
+---
+
+{
+  (activeMembers.length > 0 || inactiveMembers.length > 0) && (
+    <div class="member-column">
+      {activeMembers.length > 0 && (
+        <>
+          <Button text={title} sewn class="fs-4 px-4" />
+          {activeMembers.map((m) => (
+            <Member member={m} />
+          ))}
+        </>
+      )}
+
+      {inactiveMembers.length > 0 && (
+        <>
+          <Button text={`${title} (Inactive)`} class="fs-4 px-4" />
+          {inactiveMembers.map((m) => (
+            <Member member={m} />
+          ))}
+        </>
+      )}
+    </div>
+  )
+}
+
+<style>
+  .member-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+</style>

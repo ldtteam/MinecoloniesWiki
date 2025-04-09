@@ -1,437 +1,69 @@
 ---
-import TeamMember from '@components/TeamMember.astro';
-import Button from '@components/ui/Button.astro';
+import MemberColumn from '@components/team/MemberColumn.astro';
 import Layout from '@layouts/Default.astro';
-import { getCollection } from 'astro:content';
-import { type CollectionEntry } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 
-const members = await getCollection('team');
+type AllMembers = Record<
+  CollectionEntry<'team'>['data']['role'],
+  {
+    active: CollectionEntry<'team'>[];
+    inactive: CollectionEntry<'team'>[];
+  }
+>;
 
-const leads = members.filter((m) => m.data.role === 'lead');
-const devs = members.filter((m) => m.data.role === 'dev');
-const arts = members.filter((m) => m.data.role === 'art');
-const voices = members.filter((m) => m.data.role === 'voice');
-const webs = members.filter((m) => m.data.role === 'web');
-
-const activeLeads = leads.filter((m) => !m.data.inactive);
-const inactiveLeads = leads.filter((m) => m.data.inactive);
-const activeDevs = devs.filter((m) => !m.data.inactive);
-const inactiveDevs = devs.filter((m) => m.data.inactive);
-const activeArts = arts.filter((m) => !m.data.inactive);
-const inactiveArts = arts.filter((m) => m.data.inactive);
-
-const sortMembers = (members: CollectionEntry<'team'>[]) => {
-  return members.sort((a, b) => {
-    if (a.data.joinedYear && b.data.joinedYear) return b.data.joinedYear - a.data.joinedYear;
-    return a.id.localeCompare(b.id);
-  });
-};
+const members = await getCollection('team').then((members) =>
+  members
+    .toSorted((a, b) => a.data.sort - b.data.sort || a.id.localeCompare(b.id))
+    .reduce<AllMembers>(
+      (prev, curr) => {
+        if (curr.data.inactive) {
+          prev[curr.data.role].inactive.push(curr);
+        } else {
+          prev[curr.data.role].active.push(curr);
+        }
+        return prev;
+      },
+      {
+        lead: { active: [], inactive: [] },
+        dev: { active: [], inactive: [] },
+        art: { active: [], inactive: [] },
+        voice: { active: [], inactive: [] }
+      }
+    )
+);
 ---
 
 <Layout title="Our Team">
-  <ol class="team-chart pb-5">
-    <li>
-      <ol>
-        {
-          (leads.length > 0 || devs.length > 0) && (
-            <li>
-              <Button text="Programmers" component="h2" sewn />
-              <ol>
-                {activeLeads.length > 0 && (
-                  <li>
-                    <Button text="Lead Devs" component="h3" />
-                    <ol>
-                      {sortMembers(activeLeads).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-                {inactiveLeads.length > 0 && (
-                  <li>
-                    <Button text="Lead Devs (Inactive)" component="h3" />
-                    <ol>
-                      {sortMembers(inactiveLeads).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-                {activeDevs.length > 0 && (
-                  <li>
-                    <Button text="Coders" component="h3" />
-                    <ol>
-                      {sortMembers(activeDevs).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-                {inactiveLeads.length > 0 && (
-                  <li>
-                    <Button text="Coders (Inactive)" component="h3" />
-                    <ol>
-                      {sortMembers(inactiveDevs).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-              </ol>
-            </li>
-          )
-        }
-
-        {
-          (arts.length > 0 || voices.length > 0) && (
-            <li>
-              <Button text="Assets Team" component="h2" sewn />
-              <ol>
-                {activeArts.length > 0 && (
-                  <li>
-                    <Button text="Art Team" component="h3" />
-                    <ol>
-                      {sortMembers(activeArts).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-                {inactiveArts.length > 0 && (
-                  <li>
-                    <Button text="Art Team (Inactive)" component="h3" />
-                    <ol>
-                      {sortMembers(inactiveArts).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-                {voices.length > 0 && (
-                  <li>
-                    <Button text="Voice Team" component="h3" />
-                    <ol>
-                      {sortMembers(voices).map((m) => (
-                        <TeamMember member={m} />
-                      ))}
-                    </ol>
-                  </li>
-                )}
-              </ol>
-            </li>
-          )
-        }
-
-        {
-          webs.length > 0 && (
-            <li>
-              <Button text="Website" component="h2" sewn />
-              <ol>
-                {sortMembers(webs).map((m) => (
-                  <TeamMember member={m} />
-                ))}
-              </ol>
-            </li>
-          )
-        }
-      </ol>
-    </li>
-  </ol>
+  <div class="team-grid grid">
+    <div class="team-column g-col-lg-1 g-col-3">
+      <MemberColumn
+        title="Lead Developers"
+        activeMembers={members.lead.active}
+        inactiveMembers={members.lead.inactive}
+      />
+    </div>
+    <div class="team-column g-col-lg-1 g-col-3">
+      <MemberColumn title="Developers" activeMembers={members.dev.active} inactiveMembers={members.dev.inactive} />
+    </div>
+    <div class="team-column g-col-lg-1 g-col-3">
+      <MemberColumn title="Artists" activeMembers={members.art.active} inactiveMembers={members.art.inactive} />
+      <MemberColumn
+        title="Voice Actors"
+        activeMembers={members.voice.active}
+        inactiveMembers={members.voice.inactive}
+      />
+    </div>
+  </div>
 </Layout>
 
 <style>
-  ol.team-chart,
-  ol.team-chart ol,
-  ol.team-chart li,
-  ol.team-chart li > div {
-    position: relative;
+  .team-grid {
+    --bs-columns: 3;
   }
 
-  ol.team-chart,
-  ol.team-chart ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  ol.team-chart {
-    text-align: center;
-  }
-
-  ol.team-chart ol {
-    padding-top: 1em;
-  }
-
-  ol.team-chart ol:before,
-  ol.team-chart ol:after,
-  ol.team-chart li:before,
-  ol.team-chart li:after,
-  ol.team-chart > li > div:before,
-  ol.team-chart > li > div:after {
-    content: '';
-    position: absolute;
-  }
-
-  ol.team-chart ol > li {
-    padding: 1em 0 0 1em;
-  }
-
-  ol.team-chart > li ol:before {
-    height: 1em;
-    left: 50%;
-    top: 0;
-    width: 3px;
-  }
-
-  ol.team-chart > li ol:after {
-    height: 3px;
-    left: 3px;
-    top: 1em;
-    width: 50%;
-  }
-
-  ol.team-chart > li ol > li:not(:last-of-type):before {
-    height: 3px;
-    left: 0;
-    top: 2em;
-    width: 2em;
-  }
-
-  ol.team-chart > li ol > li:not(:last-of-type):after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 3px;
-  }
-
-  ol.team-chart > li ol > li:last-of-type:before {
-    height: 3px;
-    left: 0;
-    top: 2em;
-    width: 2em;
-  }
-
-  ol.team-chart > li ol > li:last-of-type:after {
-    height: 2em;
-    left: 0;
-    top: 0;
-    width: 3px;
-  }
-
-  ol.team-chart li > div {
-    min-height: 2em;
-    padding: 0.25em;
-  }
-
-  ol.team-chart li > div h1,
-  ol.team-chart li > div h2,
-  ol.team-chart li > div h3,
-  ol.team-chart li > div h4,
-  ol.team-chart li > div h5,
-  ol.team-chart li > div h6 {
-    margin: 2px 0;
-    padding: 0;
-  }
-
-  div.align-img {
-    display: inline-block;
-    height: 100%;
-  }
-
-  /*** PRIMARY ***/
-  ol.team-chart > li > div {
-    margin-right: 1em;
-  }
-
-  ol.team-chart > li > div:before {
-    bottom: 2em;
-    height: 3px;
-    right: -1em;
-    width: 1em;
-  }
-
-  ol.team-chart > li > div:first-of-type:after {
-    bottom: 0;
-    height: 2em;
-    right: -1em;
-    width: 3px;
-  }
-
-  ol.team-chart > li > div + div {
-    margin-top: 1em;
-  }
-
-  ol.team-chart > li > div + div:after {
-    height: calc(100% + 1em);
-    right: -1em;
-    top: -1em;
-    width: 3px;
-  }
-
-  /*** SECONDARY ***/
-  ol.team-chart > li > ol:before {
-    left: inherit;
-    right: 0;
-  }
-
-  ol.team-chart > li > ol:after {
-    left: 0;
-    width: 100%;
-  }
-
-  /*** MEDIA QUERIES ***/
-  @media only screen and (min-width: 64em) {
-    ol.team-chart {
-      margin-left: -1em;
-      margin-right: -1em;
-    }
-
-    /* PRIMARY */
-    ol.team-chart > li > div {
-      display: inline-block;
-      float: none;
-      margin: 0 1em 1em 1em;
-      vertical-align: bottom;
-    }
-
-    ol.team-chart > li > div:only-of-type {
-      margin-bottom: 0;
-      width: calc((100% / 1) - 2em - 4px);
-    }
-
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(2),
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(2) ~ div {
-      width: calc((100% / 2) - 2em - 4px);
-    }
-
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(3),
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(3) ~ div {
-      width: calc((100% / 3) - 2em - 4px);
-    }
-
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(4),
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(4) ~ div {
-      width: calc((100% / 4) - 2em - 4px);
-    }
-
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(5),
-    ol.team-chart > li > div:first-of-type:nth-last-of-type(5) ~ div {
-      width: calc((100% / 5) - 2em - 4px);
-    }
-
-    ol.team-chart > li > div:before,
-    ol.team-chart > li > div:after {
-      bottom: -1em !important;
-      top: inherit !important;
-    }
-
-    ol.team-chart > li > div:before {
-      height: 1em !important;
-      left: 50% !important;
-      width: 3px !important;
-    }
-
-    ol.team-chart > li > div:only-of-type:after {
-      display: none;
-    }
-
-    ol.team-chart > li > div:first-of-type:not(:only-of-type):after,
-    ol.team-chart > li > div:last-of-type:not(:only-of-type):after {
-      bottom: -1em;
-      height: 3px;
-      width: calc(50% + 1em + 3px);
-    }
-
-    ol.team-chart > li > div:first-of-type:not(:only-of-type):after {
-      left: calc(50% + 3px);
-    }
-
-    ol.team-chart > li > div:last-of-type:not(:only-of-type):after {
-      left: calc(-1em - 3px);
-    }
-
-    ol.team-chart > li > div + div:not(:last-of-type):after {
-      height: 3px;
-      left: -2em;
-      width: calc(100% + 4em);
-    }
-
-    /* SECONDARY */
-    ol.team-chart > li > ol {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-
-    ol.team-chart > li > ol:before,
-    ol.team-chart > li > ol > li:before {
-      height: 1em !important;
-      left: 50% !important;
-      top: 0 !important;
-      width: 3px !important;
-    }
-
-    ol.team-chart > li > ol:after {
-      display: none;
-    }
-
-    ol.team-chart > li > ol > li {
-      flex-grow: 1;
-      padding-left: 1em;
-      padding-right: 1em;
-      padding-top: 1em;
-    }
-
-    ol.team-chart > li > ol > li:only-of-type {
-      padding-top: 0;
-    }
-
-    ol.team-chart > li > ol > li:only-of-type:before,
-    ol.team-chart > li > ol > li:only-of-type:after {
-      display: none;
-    }
-
-    ol.team-chart > li > ol > li:first-of-type:not(:only-of-type):after,
-    ol.team-chart > li > ol > li:last-of-type:not(:only-of-type):after {
-      height: 3px;
-      top: 0;
-      width: 50%;
-    }
-
-    ol.team-chart > li > ol > li:first-of-type:not(:only-of-type):after {
-      left: 50%;
-    }
-
-    ol.team-chart > li > ol > li:last-of-type:not(:only-of-type):after {
-      left: 0;
-    }
-
-    ol.team-chart > li > ol > li + li:not(:last-of-type):after {
-      height: 3px;
-      left: 0;
-      top: 0;
-      width: 100%;
-    }
-  }
-
-  @media (min-width: 1024px) and (max-width: 1500px) {
-    .float-md-left {
-      float: none !important;
-    }
-  }
-
-  /* COLORS & BGS */
-
-  /** Flow Lines **/
-  ol.team-chart ol:before,
-  ol.team-chart ol:after,
-  ol.team-chart li:before,
-  ol.team-chart li:after,
-  ol.team-chart > li > div:before,
-  ol.team-chart > li > div:after {
-    background-color: #4a18a7;
-  }
-
-  ol.team-chart > li > ol > li > ol > li > ol > li > div.voice {
-    min-height: 80px;
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
   }
 </style>

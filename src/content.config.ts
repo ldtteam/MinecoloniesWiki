@@ -20,13 +20,14 @@ import { workerSchema } from './schemas/workers';
 const teamCollection = defineCollection({
   loader: file('./src/data/site/team.yaml'),
   schema: z.object({
-    realName: z.string(),
     uuid: z.string().optional(),
+    realName: z.string().optional(),
+    joinedYear: z.number().optional(),
+    role: z.enum(['lead', 'dev', 'art', 'voice']),
+    sub: z.array(z.string()).optional(),
     tagline: z.string().optional(),
-    role: z.enum(['lead', 'dev', 'art', 'voice', 'web']),
-    sub: z.array(z.string()),
-    inactive: z.boolean(),
-    joinedYear: z.number().optional()
+    inactive: z.boolean().default(false),
+    sort: z.number().default(1000)
   })
 });
 
