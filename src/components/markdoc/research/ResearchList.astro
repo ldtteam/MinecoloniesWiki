@@ -25,13 +25,7 @@ const tabs: ResearchTabs[] = [
     tabs.map((tab, idx) => {
       const id = tab.name.toLocaleLowerCase();
       return (
-        <button
-          class:list={['nav-link', idx === 0 && 'active']}
-          data-bs-toggle="tab"
-          data-bs-target={`${id}-tab-pane`}
-          type="button"
-          role="tab"
-        >
+        <button id={`${id}-tab`} class:list={['nav-link', idx === 0 && 'active']} type="button" role="tab">
           {tab.name}
         </button>
       );
@@ -72,7 +66,19 @@ const tabs: ResearchTabs[] = [
 </style>
 
 <script>
-  function setup() {}
+  function setup() {
+    document.querySelectorAll<HTMLButtonElement>("[role='tab']").forEach((tabPage) => {
+      tabPage.onclick = () => {
+        const id = tabPage.id;
+        document.querySelectorAll<HTMLButtonElement>("[role='tab']").forEach((pane) => pane.classList.remove('active'));
+        document.querySelector<HTMLButtonElement>(`[role='tab'][id='${id}']`)?.classList.add('active');
+        document
+          .querySelectorAll<HTMLDivElement>("[role='tabpanel']")
+          .forEach((pane) => pane.classList.remove('active', 'show'));
+        document.querySelector<HTMLDivElement>(`[role='tabpanel'][id='${id}-pane']`)?.classList.add('active', 'show');
+      };
+    });
+  }
 
   document.addEventListener('astro:page-load', setup);
 </script>
