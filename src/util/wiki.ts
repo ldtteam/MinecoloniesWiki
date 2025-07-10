@@ -1,5 +1,6 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
+import { getItemImage } from './items';
 import { getOverrideValues } from './override';
 import type { VersionedResult } from './version';
 
@@ -56,14 +57,22 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
     const item = await getEntry(entry.data.item);
-    return item.data.icons.find(() => true);
+    const icon = item.data.icons.at(0);
+    if (icon === undefined) {
+      return undefined;
+    }
+    return await getItemImage(icon, 100, 100);
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
     }
 
     const item = await getEntry(entry.data.items[0]);
-    return item.data.icons.find(() => true);
+    const icon = item.data.icons.at(0);
+    if (icon === undefined) {
+      return undefined;
+    }
+    return await getItemImage(icon, 100, 100);
   } else if (entry.data.type === 'building') {
     return entry.data.icon.src;
   }

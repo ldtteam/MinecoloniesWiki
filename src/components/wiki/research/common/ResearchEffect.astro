@@ -11,9 +11,6 @@ interface Props {
 const { effect } = Astro.props;
 
 const effectData = await getEntry(effect.effect);
-if (effectData === undefined) {
-  throw new Error(`Unknown research effect '${effect}'.`);
-}
 
 function parseFormatString(format: string, effectStrength: number, absoluteEffectStrength: number): string {
   format = formatForgeString(

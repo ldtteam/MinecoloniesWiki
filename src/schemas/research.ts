@@ -35,8 +35,8 @@ export const researchSchema = z.object({
     .array(),
   effects: z.array(
     z.object({
-      level: z.number(),
-      effect: reference('research_effect')
+      effect: reference('research_effect'),
+      level: z.number()
     })
   )
 });

@@ -1,3 +1,5 @@
+import { isUrl } from '@utils/util';
+import { getImage } from 'astro:assets';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import type { PartialCollectionEntry } from './util';
@@ -58,4 +60,30 @@ export async function getItemLink(item: CollectionEntry<'items'>) {
   }
 
   return await getWikiPageForItem(item).then((p) => (p?.page ? '/wiki/' + p.page.id : undefined));
+}
+
+export async function getItemImage(icon: string, width: number, height?: number) {
+  let src: string;
+  if (isUrl(icon)) {
+    src = await getImage({
+      src: icon,
+      width,
+      height
+    }).then((d) => d.src);
+  } else {
+    const [modId, fileNameWithExtension] = icon.split('/', 2);
+    const [fileName, ext] = fileNameWithExtension.split('.', 2);
+    let imageFile;
+    if (ext === 'gif') {
+      imageFile = await import(`../assets/images/wiki/items/${modId}/${fileName}.gif`).then((f) => f.default);
+    } else {
+      imageFile = await import(`../assets/images/wiki/items/${modId}/${fileName}.png`).then((f) => f.default);
+    }
+    src = await getImage({
+      src: imageFile,
+      width,
+      height
+    }).then((d) => d.src);
+  }
+  return src;
 }

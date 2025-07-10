@@ -19,45 +19,54 @@ const researchSchemaInternal = z.object({
   parentResearch: z.string().optional(),
   researchLevel: z.number(),
   sortOrder: z.number().default(1),
-  effects: z.array(z.record(z.string(), z.number())),
-  requirements: z.array(
-    z.discriminatedUnion('type', [
-      z.object({
-        type: z.literal('minecolonies:item_simple'),
-        item: z.string(),
-        quantity: z.number().default(1)
-      }),
-      z.object({
-        type: z.literal('minecolonies:item_list'),
-        item: z.object({
-          items: z.array(z.string())
+  requirements: z
+    .array(
+      z.discriminatedUnion('type', [
+        z.object({
+          type: z.literal('minecolonies:item_simple'),
+          item: z.string(),
+          quantity: z.number().default(1)
         }),
-        quantity: z.number().default(1)
-      }),
-      z.object({
-        type: z.literal('minecolonies:item_tag'),
-        item: z.object({
-          tag: z.string()
+        z.object({
+          type: z.literal('minecolonies:item_list'),
+          item: z.object({
+            items: z.array(z.string())
+          }),
+          quantity: z.number().default(1)
         }),
-        quantity: z.number().default(1)
-      }),
+        z.object({
+          type: z.literal('minecolonies:item_tag'),
+          item: z.object({
+            tag: z.string()
+          }),
+          quantity: z.number().default(1)
+        }),
+        z.object({
+          type: z.literal('minecolonies:building'),
+          building: z.string(),
+          level: z.number().default(1)
+        }),
+        z.object({
+          type: z.literal('minecolonies:mandatory-building'),
+          ['mandatory-building']: z.string(),
+          level: z.number().default(1)
+        }),
+        z.object({
+          type: z.literal('minecolonies:alternate-building'),
+          building: z.string(),
+          level: z.number().default(1)
+        })
+      ])
+    )
+    .optional(),
+  effects: z
+    .array(
       z.object({
-        type: z.literal('minecolonies:building'),
-        building: z.string(),
-        level: z.number().default(1)
-      }),
-      z.object({
-        type: z.literal('minecolonies:mandatory-building'),
-        ['mandatory-building']: z.string(),
-        level: z.number().default(1)
-      }),
-      z.object({
-        type: z.literal('minecolonies:alternate-building'),
-        building: z.string(),
-        level: z.number().default(1)
+        id: z.string(),
+        level: z.number()
       })
-    ])
-  )
+    )
+    .optional()
 });
 
 const effectSchemaInternal = z.object({
@@ -169,7 +178,7 @@ async function parseRequirements(
   translations: Record<string, string>
 ): Promise<z.infer<typeof researchSchema>['requirements']> {
   const values: z.infer<typeof researchSchema>['requirements'] = [];
-  for (const requirement of researchData.requirements) {
+  for (const requirement of researchData.requirements ?? []) {
     switch (requirement.type) {
       case 'minecolonies:building':
       case 'minecolonies:alternate-building':
@@ -231,16 +240,14 @@ async function parseEffects(
   researchData: z.infer<typeof researchSchemaInternal>
 ): Promise<z.infer<typeof researchSchema>['effects']> {
   const values: z.infer<typeof researchSchema>['effects'] = [];
-  for (const effect of researchData.effects) {
-    for (const [effectKey, effectLevel] of Object.entries(effect)) {
-      values.push({
-        effect: {
-          collection: 'research_effect',
-          id: effectKey.replace('minecolonies:effects/', '')
-        },
-        level: effectLevel
-      });
-    }
+  for (const effect of researchData.effects ?? []) {
+    values.push({
+      effect: {
+        collection: 'research_effect',
+        id: effect.id.replace('minecolonies:effects/', '')
+      },
+      level: effect.level
+    });
   }
 
   return values;
