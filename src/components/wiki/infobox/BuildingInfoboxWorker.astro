@@ -64,21 +64,21 @@ const filteredImages = await Promise.all(
   <b>Skills:</b>
   <div>
     {
-      workerData.data.traits.primary && (
+      workerData.data.traits?.primary && (
         <>
           <span class="badge text-bg-success w-100">
-            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits.primary?.name} default="" />:
-            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits.primary?.effect} default="" />
+            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits?.primary?.name} default="" />:
+            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits?.primary?.effect} default="" />
           </span>
         </>
       )
     }
     {
-      workerData.data.traits.secondary && (
+      workerData.data.traits?.secondary && (
         <>
           <span class="badge text-bg-warning w-100">
-            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits.secondary?.name} default="" />:
-            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits.secondary?.effect} default="" />
+            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits?.secondary?.name} default="" />:
+            <VersionOverride value={workerData.data} fieldGetter={(v) => v.traits?.secondary?.effect} default="" />
           </span>
         </>
       )

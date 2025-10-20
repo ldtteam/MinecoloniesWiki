@@ -11,3 +11,8 @@ traits:
     name: Dexterity
     effect: Faster smelting
 primaryBuilding: stonesmeltery
+overrides:
+  - version: "1.20"
+    name: Brickmaker
+    plural: Brickmakers
+    description: The Brickmaker is your general smelter for your colony, they can smelt things like cobblestone into stone, sand into sandstone and so forth.

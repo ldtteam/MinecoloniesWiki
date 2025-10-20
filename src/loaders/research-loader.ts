@@ -47,13 +47,13 @@ const researchSchemaInternal = z.object({
           level: z.number().default(1)
         }),
         z.object({
-          type: z.literal('minecolonies:mandatory-building'),
-          ['mandatory-building']: z.string(),
+          type: z.literal('minecolonies:single-building'),
+          building: z.string(),
           level: z.number().default(1)
         }),
         z.object({
           type: z.literal('minecolonies:alternate-building'),
-          building: z.string(),
+          ['alternate-buildings']: z.string().array(),
           level: z.number().default(1)
         })
       ])
@@ -181,25 +181,27 @@ async function parseRequirements(
   for (const requirement of researchData.requirements ?? []) {
     switch (requirement.type) {
       case 'minecolonies:building':
-      case 'minecolonies:alternate-building':
+      case 'minecolonies:single-building':
         values.push({
           type: 'building',
           building: {
             collection: 'buildings',
-            id: requirement.building
+            id: requirement.building.replace('minecolonies:', '')
           },
           level: requirement.level
         });
         break;
-      case 'minecolonies:mandatory-building':
-        values.push({
-          type: 'building',
-          building: {
-            collection: 'buildings',
-            id: requirement['mandatory-building']
-          },
-          level: requirement.level
-        });
+      case 'minecolonies:alternate-building':
+        for (const building of requirement['alternate-buildings']) {
+          values.push({
+            type: 'building',
+            building: {
+              collection: 'buildings',
+              id: building.replace('minecolonies:', '')
+            },
+            level: requirement.level
+          });
+        }
         break;
       case 'minecolonies:item_simple':
         values.push({

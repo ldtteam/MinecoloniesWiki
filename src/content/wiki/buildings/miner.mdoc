@@ -11,7 +11,7 @@ recipes:
   - minecolonies/blockhutminer
 ---
 
-The Mine is where you can hire a {% worker /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this Mine. 
+The {% building /%} is where you can hire a {% worker /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this {% building /%}. 
 
 {% version range="1.20.1--" %}
 At the {% building /%}, the {% worker /%} will mine for ores and materials. Once they are hired, they will first create a shaft downward.
@@ -43,14 +43,14 @@ Once the main shaft is completed, the {% worker /%} will then branch out.
 {% version range="--1.20" %}
 At the {% building /%}, the {% worker /%} will mine for ores and materials. Once they are hired, they will first create a shaft downward to a specific depth depending on the level of the {% building /%}. Once the main shaft is completed, the {% worker /%} will then branch out.
 {% /version %}
-The {% worker /%} will never dig further down than the Y-level specified in the "maximum depth" setting of the mine. It is by default set to -100, which effectively means bedrock level.
+The {% worker /%} will never dig further down than the Y-level specified in the "maximum depth" setting of the building. It is by default set to -100, which effectively means bedrock level.
 
 
 While mining, sometimes the {% worker /%} will get lucky and get an ore block instead of a basic stone block. The chance of getting "Lucky Ores" is set in the [config](/wiki/misc/configfile).
 
 > **Note:** When the {% worker /%} encounters air whilst building the shaft downwards, they don't make platforms there, as they think they encountered a cave. In particular, that means you should not help them with mining. Even though they skip platforms, they still check the Y-level against the depth threshold and stop digging down if they aren't allowed to dig down further.
 {% version range="--1.20" %}
-> **Note:** Placing the Mine hut below the maximum Y level it can mine will cause the {% worker /%} not work and complain the hut needs to be upgraded.  To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1). If you want your mine to be lower, you will need to upgrade it before the {% worker /%} will work.
+> **Note:** Placing the {% building /%} hut below the maximum Y level it can mine will cause the {% worker /%} not work and complain the hut needs to be upgraded. To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1). If you want your {% building /%} to be lower, you will need to upgrade it before the {% worker /%} will work.
 
 {% version range="--1.16.5" %}
 | Building Level | Shaft Y Level |
@@ -92,9 +92,9 @@ You can also click Repair, to tell the {% worker /%} to restore that level to it
 {% /building_gui_content_block_settings %}
 {% building_gui_content_block_custom order=5 header="guards" imageKey="guards" imageAlt="Guards" %}
 Here is where you can assign guards to patrol this {% building /%}. If assigned, they will patrol the level the {% worker /%} is currently mining at, to help protect them from hostile mobs.
-Only guards set to the Patrol Mine task will show up here; tasks can be set in the {% building name="guardtower" /%} it's GUI ({% building name="barrackstower" plural=true /%} do not have the Patrol Mine task).
+Only guards set to the `Patrol Mine` task will show up here; tasks can be set in the {% building name="guardtower" /%} it's GUI ({% building name="barrackstower" plural=true /%} do not have the Patrol Mine task).
 
-The amount of guards you can assign to the mine changes based on the {% building /%} it's level.
+The amount of guards you can assign to the {% building /%} changes based on the building it's level.
 
 | Building Level | Amount of guards |
 | -------------- | ---------------- |

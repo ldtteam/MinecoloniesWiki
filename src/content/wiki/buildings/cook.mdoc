@@ -9,18 +9,23 @@ workers:
   - cook
 recipes:
   - minecolonies/blockhutcook
+overrides:
+  - version: "1.20"
+    name: Dining Hall
+    plural: Dining Halls
+    description: The Dining Hall will ensure that your citizens are well fed, make sure you keep them supplied with food so that they can keep your colonist fed.
 ---
 
-The {% building /%} is where the {% worker name="cook" /%} will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the {% building /%} and the {% worker name="cook" /%} will give them food.
-The {% worker name="cook" /%} is only able to smelt food into it's cooked form. The {% worker name="chef" /%} is responsible for crafting ingredients and dishes in the {% building name="kitchen" /%}.
+The {% building /%} is where the {% worker /%} will cook food, provided they have the necessary ingredients and fuel. When citizens are hungry, they will come to the {% building /%} and the {% worker /%} will give them food.
+The {% worker /%} is only able to smelt food into it's cooked form. The {% worker name="chef" /%} is responsible for crafting ingredients and dishes in the {% building name="kitchen" /%}.
 
 ## Interface
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_fuel order=2 /%}
 {% building_gui_content_block_item_list order=3 header="food" imageKey="food" imageAlt="Food list" defaultOn=true %}
-Listed here are food items that will be handed out by the {% worker name="cook" /%}. Disable any you don't want to be handed out or produced.
-However, if a colonist finds a disabled item, they'll still eat it - the {% worker name="cook" /%} just won't hand it out.
+Listed here are food items that will be handed out by the {% worker /%}. Disable any you don't want to be handed out or produced.
+However, if a colonist finds a disabled item, they'll still eat it - the {% worker /%} just won't hand it out.
 
 The background color indicates the quality of the food. Gold is the best food served for the colonists, silver is the next best followed by bronze. Food with a white background is non minecolonies food and has a negative impact on happiness and gives worse nutrition.
 

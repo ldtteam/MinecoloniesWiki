@@ -11,9 +11,9 @@ recipes:
   - minecolonies/blockhutflorist
 ---
 
-The Flower Shop is where your Florist will grow flowers for your colony, if given {% item name="minecolonies/compost" /%} and an axe.
+The {% building /%} is where your {% worker /%} will grow flowers for your colony, if given {% item name="minecolonies/compost" /%} and an axe.
 
-> **Note:** The higher the level of the Flower Shop, the more daily output the Florist can handle. So:
+> **Note:** The higher the level of the building, the more daily output the {% worker /%} can handle. So:
 
 | Building Level | Number of Plants |
 | -------------- | ---------------- |
@@ -27,6 +27,6 @@ The Flower Shop is where your Florist will grow flowers for your colony, if give
 
 {% building_gui_content_block_main order=1 /%}
 {% building_gui_content_block_item_list order=2 header="plantables" imageKey="plantables" imageAlt="Plantables list" defaultOn=true %}
-This shows a list of items the {% worker name="florist" /%} can plant. As the {% building /%} is leveled up, your {% building /%} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
+This shows a list of items the {% worker /%} can plant. As the {% building /%} is leveled up, your {% building /%} will be able to grow more types of flowers. At level 3 or higher, you will be able to select which flowers you want to use, before that it can only grow poppies and dandelions.
 {% /building_gui_content_block_item_list %}
 {% building_gui_content_block_stock order=3 /%}

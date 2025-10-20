@@ -103,7 +103,7 @@ fields:
         description: A specific building that must be present in the colony. Normal building requirements combine the levels from multiple of the same building type. Optionally pairs with `level`.
         example: library
         optional: true
-      - key: mandatory-building
+      - key: single-building
         type: primitive
         primitive:
           - string

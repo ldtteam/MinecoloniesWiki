@@ -19,6 +19,7 @@ async function createSearchEntry(page: CollectionEntry<'wiki'>): Promise<SearchE
   const container = await AstroContainer.create();
   const body = await container.renderToString(Content, {
     props: {
+      id: page.id,
       frontmatter: page.data
     }
   });

@@ -9,12 +9,17 @@ workers:
   - chef
 recipes:
   - minecolonies/blockhutkitchen
+overrides:
+  - version: "1.20"
+    name: Chef's Kitchen
+    plural: Chef's Kitchens
+    description: The Chef's Kitchen is where food for your colonists will be cooked.
 ---
 
 The {% building /%} is where the {% worker /%} will create food for your citizens.
 Food will be cooked when buildings request is, use this conjunction with your {% building name="cook" plural=true /%} to automatically keep your {% building name="cook" plural=true /%} stocked with food.
 
-> **Note:** The number of recipes you can teach the {% building /%} doubles per building level. So:
+> **Note:** Upgrading the {% building /%} lets you teach it more recipes. So:
 
 | Building Level | Number of Recipes |
 | -------------- | ----------------- |

@@ -11,7 +11,9 @@ recipes:
   - minecolonies/blockhuthospital
 ---
 
-The Hospital is where injured or sick citizens go. The Healer will heal them with various items. The possible diseases can be changed in the [config file](/wiki/misc/configfile), however, these are the defaults:
+The {% building /%} is where injured or sick citizens go. The Healer will heal them with various items. {% version range="--1.19.4" inline=true %}The possible diseases can be changed in the [config file](/wiki/misc/configfile).{% /version %}{% version range="1.20--" inline=true %}The possible diseases can be changed through [datapacks](http://localhost:4321/wiki/tutorials/datapacks).{% /version %}
+
+These are the defaults diseases:
 
 | Disease             | Items Needed to Cure          |
 | ------------------- | ----------------------------- |
@@ -19,7 +21,7 @@ The Hospital is where injured or sick citizens go. The Healer will heal them wit
 | Measles             | Dandelion, Kelp, and Poppy    |
 | Smallpox            | Honey Bottle and Golden Apple |
 
-The higher the level of the Hospital, the more people can be healed at a time. So:
+The higher the level of the {% building /%}, the more people can be healed at a time. So:
 
 | Building Level | Number of Beds |
 | -------------- | -------------- |
