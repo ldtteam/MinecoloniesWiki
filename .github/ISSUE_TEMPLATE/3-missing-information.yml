@@ -1,5 +1,5 @@
 name: "[🚨] 3. Missing Information"
-description: If you think information on the wiki is missing
+description: If you think information on the wiki is missing. Use this if information is missing on an existing page.
 labels:
   - Missing Info
 body:
