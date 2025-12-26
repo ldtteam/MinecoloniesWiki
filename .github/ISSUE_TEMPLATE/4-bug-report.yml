@@ -1,0 +1,54 @@
+name: Bug Report
+about: If you find a bug with the wiki (broken links, previously working information gone, etc)
+title:
+labels: Bug
+assignees:
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: Affected version(s)
+      description: "Which version(s) are affected by this bug? (Hint: View the version selector in the top-right)"
+      default: 16
+      options:
+        - "1.18"
+        - "1.18.1"
+        - "1.18.2"
+        - "1.19"
+        - "1.19.1"
+        - "1.19.2"
+        - "1.19.3"
+        - "1.19.4"
+        - "1.20"
+        - "1.20.1"
+        - "1.20.2"
+        - "1.20.3"
+        - "1.20.4"
+        - "1.20.5"
+        - "1.20.6"
+        - "1.21"
+        - "1.21.1"
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Affected page(s)
+      description: Which page(s) are affected by this bug?
+      placeholder: https://wiki.minecolonies.com/systems/research
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Describe the expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Describe what is actually happening
+    validations:
+      required: true

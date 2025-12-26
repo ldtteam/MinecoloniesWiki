@@ -2,6 +2,30 @@
 
 A wiki for the Minecraft mod [MineColonies](https://github.com/ldtteam/minecolonies). Read it [here](https://wiki.minecolonies.ldtteam.com/)!
 
+## Supported versions
+
+The wiki currently supports the following versions:
+
+- 1.18
+- 1.18.1
+- 1.18.2
+- 1.19
+- 1.19.1
+- 1.19.2
+- 1.19.3
+- 1.19.4
+- 1.20
+- 1.20.1
+- 1.20.2
+- 1.20.3
+- 1.20.4
+- 1.20.5
+- 1.20.6
+- 1.21
+- 1.21.1
+
+It is however not a guarantee that information for all versions is correct.
+
 ## Guidelines to pages
 
 ### Worker/building names

@@ -1,0 +1,10 @@
+name: Other Issue
+about: If you have an issue with the wiki that doesn't fit into the other templates
+body:
+  - type: textarea
+    id: text
+    attributes:
+      label: Description
+      description: Describe the issue you're facing
+    validations:
+      required: true
