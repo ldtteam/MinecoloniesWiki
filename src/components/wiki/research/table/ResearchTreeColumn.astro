@@ -3,8 +3,9 @@ import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
-import ResearchEffect from '../common/ResearchEffect.astro';
-import ResearchRequirement from '../common/ResearchRequirement.astro';
+import ResearchCost from '../common/costs/ResearchCost.astro';
+import ResearchEffect from '../common/effects/ResearchEffect.astro';
+import ResearchRequirement from '../common/requirements/ResearchRequirement.astro';
 
 interface Props {
   tree: CollectionEntry<'research_tree'>;
@@ -71,11 +72,16 @@ const researchesWithParent = await Promise.all(
                 )}
               </td>
               <td>
-                {research.data.requirements.length > 0 ? (
+                {research.data.requirements.length > 0 || research.data.costs.length > 0 ? (
                   <ul>
                     {research.data.requirements.map((requirement) => (
                       <li>
                         <ResearchRequirement requirement={requirement} />
+                      </li>
+                    ))}
+                    {research.data.costs.map((cost) => (
+                      <li>
+                        <ResearchCost cost={cost} />
                       </li>
                     ))}
                   </ul>

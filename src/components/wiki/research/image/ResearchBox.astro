@@ -1,8 +1,9 @@
 ---
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
 
-import ResearchEffect from '../common/ResearchEffect.astro';
-import ResearchRequirement from '../common/ResearchRequirement.astro';
+import ResearchCost from '../common/costs/ResearchCost.astro';
+import ResearchEffect from '../common/effects/ResearchEffect.astro';
+import ResearchRequirement from '../common/requirements/ResearchRequirement.astro';
 import type { ResearchWithChildren } from './types';
 
 interface Props {
@@ -18,14 +19,25 @@ if (research.subtitle) {
 
 const container = await AstroContainer.create();
 
-if (research.requirements.length > 0) {
+if (research.requirements.length > 0 || research.costs.length > 0) {
   template += '<p class="mb-0">Requirements</p><ul>';
   for (const requirement of research.requirements) {
-    template += await container.renderToString(ResearchRequirement, {
-      props: {
-        requirement
-      }
-    });
+    template += await container
+      .renderToString(ResearchRequirement, {
+        props: {
+          requirement
+        }
+      })
+      .then((res) => `<li>${res}</li>`);
+  }
+  for (const cost of research.costs) {
+    template += await container
+      .renderToString(ResearchCost, {
+        props: {
+          cost
+        }
+      })
+      .then((res) => `<li>${res}</li>`);
   }
   template += '</ul>';
 }

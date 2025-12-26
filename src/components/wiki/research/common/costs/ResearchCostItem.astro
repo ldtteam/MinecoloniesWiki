@@ -4,15 +4,15 @@ import { type CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
 interface Props {
-  requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'item' }>;
+  cost: Extract<CollectionEntry<'research'>['data']['costs'][number], { type: 'item' }>;
 }
 
-const { requirement } = Astro.props;
+const { cost } = Astro.props;
 
-const items = await Promise.all(requirement.items.map((item) => getEntry(item)));
+const items = await Promise.all(cost.items.map((item) => getEntry(item)));
 ---
 
-<b>{requirement.quantity}</b>x
+<span>{cost.quantity}</span>
 <span>
   {items.map(async (item) => <VersionedItemName item={item} />)}
 </span>

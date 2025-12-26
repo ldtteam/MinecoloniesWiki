@@ -2,8 +2,6 @@
 import type { CollectionEntry } from 'astro:content';
 
 import ResearchRequirementBuilding from './ResearchRequirementBuilding.astro';
-import ResearchRequirementItem from './ResearchRequirementItem.astro';
-import ResearchRequirementTag from './ResearchRequirementTag.astro';
 
 interface Props {
   requirement: CollectionEntry<'research'>['data']['requirements'][number];
@@ -13,5 +11,4 @@ const { requirement } = Astro.props;
 ---
 
 {requirement.type === 'building' && <ResearchRequirementBuilding requirement={requirement} />}
-{requirement.type === 'item' && <ResearchRequirementItem requirement={requirement} />}
-{requirement.type === 'item_tag' && <ResearchRequirementTag requirement={requirement} />}
+<!-- {requirement.type === 'buildings_alternate' && <ResearchRequirementBuilding requirement={requirement} />} -->

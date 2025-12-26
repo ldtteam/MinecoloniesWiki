@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ResearchCostItem from './ResearchCostItem.astro';
+import ResearchCostTag from './ResearchCostTag.astro';
+
+interface Props {
+  cost: CollectionEntry<'research'>['data']['costs'][number];
+}
+
+const { cost } = Astro.props;
+---
+
+{cost.type === 'item' && <ResearchCostItem cost={cost} />}
+{cost.type === 'item_tag' && <ResearchCostTag cost={cost} />}

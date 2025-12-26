@@ -23,25 +23,6 @@ const researchSchemaInternal = z.object({
     .array(
       z.discriminatedUnion('type', [
         z.object({
-          type: z.literal('minecolonies:item_simple'),
-          item: z.string(),
-          quantity: z.number().default(1)
-        }),
-        z.object({
-          type: z.literal('minecolonies:item_list'),
-          item: z.object({
-            items: z.array(z.string())
-          }),
-          quantity: z.number().default(1)
-        }),
-        z.object({
-          type: z.literal('minecolonies:item_tag'),
-          item: z.object({
-            tag: z.string()
-          }),
-          quantity: z.number().default(1)
-        }),
-        z.object({
           type: z.literal('minecolonies:building'),
           building: z.string(),
           level: z.number().default(1)
@@ -55,6 +36,27 @@ const researchSchemaInternal = z.object({
           type: z.literal('minecolonies:alternate-building'),
           ['alternate-buildings']: z.string().array(),
           level: z.number().default(1)
+        })
+      ])
+    )
+    .optional(),
+  costs: z
+    .array(
+      z.discriminatedUnion('type', [
+        z.object({
+          type: z.literal('minecolonies:item_simple'),
+          item: z.string(),
+          quantity: z.number().default(1)
+        }),
+        z.object({
+          type: z.literal('minecolonies:item_list'),
+          items: z.array(z.string()),
+          quantity: z.number().default(1)
+        }),
+        z.object({
+          type: z.literal('minecolonies:item_tag'),
+          tag: z.string(),
+          quantity: z.number().default(1)
         })
       ])
     )
@@ -130,7 +132,8 @@ export async function researchLoader() {
         subtitle: translations[`com.minecolonies.research.${treeKey}.${researchKey}.subtitle`],
         researchLevel: researchData.researchLevel,
         sortOrder: researchData.sortOrder,
-        requirements: await parseRequirements(researchData, translations),
+        requirements: await parseRequirements(researchData),
+        costs: await parseCosts(researchData, translations),
         effects: await parseEffects(researchData)
       });
     }
@@ -174,8 +177,7 @@ export async function researchEffectsLoader() {
 }
 
 async function parseRequirements(
-  researchData: z.infer<typeof researchSchemaInternal>,
-  translations: Record<string, string>
+  researchData: z.infer<typeof researchSchemaInternal>
 ): Promise<z.infer<typeof researchSchema>['requirements']> {
   const values: z.infer<typeof researchSchema>['requirements'] = [];
   for (const requirement of researchData.requirements ?? []) {
@@ -188,21 +190,32 @@ async function parseRequirements(
             collection: 'buildings',
             id: requirement.building.replace('minecolonies:', '')
           },
+          single: requirement.type === 'minecolonies:single-building',
           level: requirement.level
         });
         break;
       case 'minecolonies:alternate-building':
-        for (const building of requirement['alternate-buildings']) {
-          values.push({
-            type: 'building',
-            building: {
-              collection: 'buildings',
-              id: building.replace('minecolonies:', '')
-            },
-            level: requirement.level
-          });
-        }
+        values.push({
+          type: 'buildings_alternate',
+          buildings: requirement['alternate-buildings'].map((building) => ({
+            collection: 'buildings',
+            id: building.replace('minecolonies:', '')
+          })),
+          level: requirement.level
+        });
         break;
+    }
+  }
+  return values;
+}
+
+async function parseCosts(
+  researchData: z.infer<typeof researchSchemaInternal>,
+  translations: Record<string, string>
+): Promise<z.infer<typeof researchSchema>['costs']> {
+  const values: z.infer<typeof researchSchema>['costs'] = [];
+  for (const requirement of researchData.costs ?? []) {
+    switch (requirement.type) {
       case 'minecolonies:item_simple':
         values.push({
           type: 'item',
@@ -218,16 +231,16 @@ async function parseRequirements(
       case 'minecolonies:item_list':
         values.push({
           type: 'item',
-          items: requirement.item.items.map((m) => ({ collection: 'items', id: m.replace(':', '/') })),
+          items: requirement.items.map((m) => ({ collection: 'items', id: m.replace(':', '/') })),
           quantity: requirement.quantity
         });
         break;
       case 'minecolonies:item_tag': {
-        const tagData = await getEntry('tags', requirement.item.tag.replace(/\w+:/g, ''));
+        const tagData = await getEntry('tags', requirement.tag.replace(/\w+:/g, ''));
         if (tagData) {
           values.push({
             type: 'item_tag',
-            name: translations[`com.minecolonies.coremod.research.tags.${requirement.item.tag}`],
+            name: translations[`com.minecolonies.coremod.research.tags.${requirement.tag}`],
             quantity: requirement.quantity
           });
         }
