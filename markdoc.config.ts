@@ -6,7 +6,14 @@ import { building, contentBlocks as buildingContentBlocks } from './src/markdoc/
 import { item, item_combined_infobox, item_infobox, item_page } from './src/markdoc/items';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import type { Tag } from './src/markdoc/types';
-import { citizen_name_pack_list, content_block, image_row, meta, social_link } from './src/markdoc/util';
+import {
+  citizen_name_pack_list,
+  content_block,
+  image_row,
+  meta,
+  official_citizen_name_pack_list,
+  social_link
+} from './src/markdoc/util';
 import { version } from './src/markdoc/version';
 import { worker, workers_table } from './src/markdoc/workers';
 
@@ -36,6 +43,7 @@ const config: AstroMarkdocConfig = {
     research_link,
     version,
     social_link,
+    official_citizen_name_pack_list,
     citizen_name_pack_list,
     content_block,
     image_row,

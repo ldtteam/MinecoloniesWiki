@@ -5,6 +5,7 @@ import { buildingLoader } from './loaders/building-loader';
 import { itemLoader } from './loaders/item-loader';
 import { researchEffectsLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
 import { buildingSchema } from './schemas/building';
+import { citizenNamesSchema, citizenNamesWithAuthorSchema } from './schemas/citizen_names';
 import { itemSchema, tagSchema } from './schemas/item';
 import { jsonStructureSchema } from './schemas/json_structures';
 import { recipeSchema } from './schemas/recipe';
@@ -158,20 +159,14 @@ const recipesCollection = defineCollection({
   schema: recipeSchema
 });
 
+const officialCitizenNamesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './minecolonies/src/main/resources/data/minecolonies/citizennames' }),
+  schema: citizenNamesSchema
+});
+
 const citizenNamesCollection = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/data/wiki/citizen_name_packs' }),
-  schema: z.object({
-    name: z.string(),
-    filename: z.string(),
-    credits: z.string(),
-    data: z.object({
-      parts: z.number().min(1).max(3),
-      order: z.enum(['WESTERN', 'EASTERN']),
-      male_firstname: z.array(z.string()),
-      female_firstname: z.array(z.string()),
-      surnames: z.array(z.string())
-    })
-  })
+  schema: citizenNamesWithAuthorSchema
 });
 
 const metaCollection = defineCollection({
@@ -230,6 +225,7 @@ export const collections = {
   research_effect: researchEffectCollection,
   research: researchCollection,
   versions: versionsCollection,
+  official_citizen_name_packs: officialCitizenNamesCollection,
   citizen_name_packs: citizenNamesCollection,
   meta: metaCollection,
   team: teamCollection,

@@ -1,0 +1,9 @@
+---
+import { getCollection } from 'astro:content';
+
+import PackList from './PackList.astro';
+
+const officialCitizenNamePacks = await getCollection('official_citizen_name_packs');
+---
+
+<PackList packs={officialCitizenNamePacks.map((pack) => ({ ...pack.data, id: pack.id }))} />

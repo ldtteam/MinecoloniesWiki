@@ -1,0 +1,23 @@
+---
+import { type CitizenNamesPack, getCitizenNamesPackWithAuthor } from '@utils/citizen_names';
+
+interface Props {
+  packs: CitizenNamesPack[];
+}
+
+const packs = Astro.props.packs.map((pack) => getCitizenNamesPackWithAuthor(pack.id, pack));
+---
+
+{
+  packs.map((pack) => (
+    <>
+      <h4>{pack.name}</h4>
+      <p>
+        <a href={`/citizen_names/${pack.filename}.zip`}>Download {pack.name} Datapack</a>
+      </p>
+      <p>
+        <i>Credits to: {pack.credits}</i>
+      </p>
+    </>
+  ))
+}

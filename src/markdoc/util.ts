@@ -13,8 +13,13 @@ export const social_link: Tag = {
   }
 };
 
+export const official_citizen_name_pack_list: Tag = {
+  render: component('@components/markdoc/citizen_name_packs/OfficialCitizenNamePackList.astro'),
+  selfClosing: true
+};
+
 export const citizen_name_pack_list: Tag = {
-  render: component('@components/markdoc/util/CitizenNamePackList.astro'),
+  render: component('@components/markdoc/citizen_name_packs/CitizenNamePackList.astro'),
   selfClosing: true
 };
 

@@ -1,0 +1,25 @@
+---
+import BuildingName from '@components/wiki/names/BuildingName.astro';
+import { type CollectionEntry, getEntries } from 'astro:content';
+
+interface Props {
+  requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'buildings_alternate' }>;
+}
+
+const { requirement } = Astro.props;
+
+const buildings = await getEntries(requirement.buildings);
+---
+
+{
+  buildings.map((building, index) => (
+    <>
+      <span>One or multiple </span>
+      <span>
+        <BuildingName building={building} plural link />
+      </span>
+      <span> totaling at least {requirement.level} levels</span>
+      {index !== buildings.length && <span> or </span>}
+    </>
+  ))
+}
