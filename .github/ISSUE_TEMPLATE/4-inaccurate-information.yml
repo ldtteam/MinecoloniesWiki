@@ -1,5 +1,6 @@
 name: "[🚨] 4. Inaccurate Information"
 description: If you think information on the wiki is inaccurate. Use this if the information exists, but is wrong.
+type: task
 labels:
   - Inaccurate Info
 body:

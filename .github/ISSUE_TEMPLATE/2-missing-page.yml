@@ -1,5 +1,6 @@
 name: "[🚨] 2. Missing Page"
 description: If you think a page of information on the wiki is missing. Use this if you want to open an entire topic of information on a new page.
+type: task
 labels:
   - Missing Page
 body:

@@ -1,5 +1,6 @@
 name: "[🚨] 3. Missing Information"
 description: If you think information on the wiki is missing. Use this if information is missing on an existing page.
+type: task
 labels:
   - Missing Info
 body:
