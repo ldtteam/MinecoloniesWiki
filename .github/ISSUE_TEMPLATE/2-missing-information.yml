@@ -1,8 +1,7 @@
 name: Missing Information
-about: If you think information on the wiki is missing
-title:
-labels: Missing Info
-assignees:
+description: If you think information on the wiki is missing
+labels:
+  - Missing Info
 body:
   - type: dropdown
     id: version

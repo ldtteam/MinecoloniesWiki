@@ -1,8 +1,7 @@
 name: Bug Report
-about: If you find a bug with the wiki (broken links, previously working information gone, etc)
-title:
-labels: Bug
-assignees:
+description: If you find a bug with the wiki (broken links, previously working information gone, etc)
+labels:
+  - Bug
 body:
   - type: dropdown
     id: version

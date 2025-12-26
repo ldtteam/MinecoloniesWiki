@@ -1,8 +1,7 @@
 name: Inaccurate Information
-about: If you think information on the wiki is inaccurate
-title:
-labels: Inaccurate Info
-assignees:
+description: If you think information on the wiki is inaccurate
+labels:
+  - Inaccurate Info
 body:
   - type: dropdown
     id: version

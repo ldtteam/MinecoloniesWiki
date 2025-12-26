@@ -1,8 +1,7 @@
 name: New Page
-about: If you would like a page to be added
-title:
-labels: New Page
-assignees:
+description: If you would like a page to be added
+labels:
+  - New Page
 body:
   - type: dropdown
     id: version
