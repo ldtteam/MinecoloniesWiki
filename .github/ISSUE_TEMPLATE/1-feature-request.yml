@@ -1,8 +1,6 @@
 name: "[📝] 1. Feature Request"
 description: If you would like something new implemented on the wiki
 type: feature
-labels:
-  - Feature Request
 assignees:
   - Thodor12
 body:
