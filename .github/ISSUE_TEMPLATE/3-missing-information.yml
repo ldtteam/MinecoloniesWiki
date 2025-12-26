@@ -1,7 +1,7 @@
-name: Bug Report
-description: If you find a bug with the wiki (broken links, previously working information gone, etc)
+name: "[🚨] Missing Information"
+description: If you think information on the wiki is missing
 labels:
-  - Bug
+  - Missing Info
 body:
   - type: dropdown
     id: version
@@ -9,6 +9,7 @@ body:
       label: Affected version(s)
       description: "Which version(s) are affected by this bug? (Hint: View the version selector in the top-right)"
       default: 16
+      multiple: true
       options:
         - "1.18"
         - "1.18.1"
@@ -38,16 +39,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expected
+    id: content
     attributes:
-      label: Expected behaviour
-      description: Describe the expected behaviour
-    validations:
-      required: true
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual behaviour
-      description: Describe what is actually happening
+      label: Missing Content
+      description: Describe what you think is missing from the given page(s) on the given version(s)
     validations:
       required: true

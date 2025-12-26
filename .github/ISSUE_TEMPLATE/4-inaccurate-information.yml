@@ -1,7 +1,7 @@
-name: New Page
-description: If you would like a page to be added
+name: "[🚨] Inaccurate Information"
+description: If you think information on the wiki is inaccurate
 labels:
-  - New Page
+  - Inaccurate Info
 body:
   - type: dropdown
     id: version
@@ -9,6 +9,7 @@ body:
       label: Affected version(s)
       description: "Which version(s) are affected by this bug? (Hint: View the version selector in the top-right)"
       default: 16
+      multiple: true
       options:
         - "1.18"
         - "1.18.1"
@@ -29,10 +30,18 @@ body:
         - "1.21.1"
     validations:
       required: true
-  - type: textarea
-    id: content
+  - type: input
+    id: page
     attributes:
-      label: Missing Content
-      description: Describe what you think requires a new page to be added, and why
+      label: Affected page(s)
+      description: Which page(s) are affected by this bug?
+      placeholder: https://wiki.minecolonies.com/systems/research
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for Inaccuracy
+      description: Why do you think the information on the wiki is wrong for the given version(s)?
     validations:
       required: true
