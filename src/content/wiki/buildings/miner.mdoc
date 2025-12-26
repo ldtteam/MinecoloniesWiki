@@ -50,18 +50,9 @@ While mining, sometimes the {% worker /%} will get lucky and get an ore block in
 
 > **Note:** When the {% worker /%} encounters air whilst building the shaft downwards, they don't make platforms there, as they think they encountered a cave. In particular, that means you should not help them with mining. Even though they skip platforms, they still check the Y-level against the depth threshold and stop digging down if they aren't allowed to dig down further.
 {% version range="--1.20" %}
-> **Note:** Placing the {% building /%} hut below the maximum Y level it can mine will cause the {% worker /%} not work and complain the hut needs to be upgraded. To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level (above Y=54 for 1.16 or Y=44 for 1.18 level 1). If you want your {% building /%} to be lower, you will need to upgrade it before the {% worker /%} will work.
-
-{% version range="--1.16.5" %}
-| Building Level | Shaft Y Level |
-| -------------- | ------------- |
-| 1              | 50            |
-| 2              | 30            |
-| 3              | Bedrock       |
-| 4              | "             |
-| 5              | "             |
+> **Note:** Placing the {% building /%} hut below the maximum Y level it can mine will cause the {% worker /%} not work and complain the hut needs to be upgraded. To avoid this error, place the hut at least 4 blocks above the maximum depth for the hut level. If you want your {% building /%} to be lower, you will need to upgrade it before the {% worker /%} will work.
 {% /version %}
-{% version range="1.17--" %}
+
 | Building Level | Shaft Y Level |
 | -------------- | ------------- |
 | 1              | 40            |
@@ -69,8 +60,6 @@ While mining, sometimes the {% worker /%} will get lucky and get an ore block in
 | 3              | 0             |
 | 4              | Bedrock       |
 | 5              | "             |
-{% /version %}
-{% /version %}
 
 ## Interface
 

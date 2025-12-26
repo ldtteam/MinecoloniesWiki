@@ -36,7 +36,9 @@ export function itemLoader(): Loader {
       await globLoader.load(context);
 
       // Minecraft items
-      const versions = await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml);
+      const versions = (await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml)).toSorted(
+        (a, b) => a.order - b.order
+      );
       for (const version of Object.values(versions)) {
         const mcData = minecraftData(version.id);
         if (mcData === null) {
