@@ -1,0 +1,337 @@
+---
+import Layout from '@layouts/Default.astro';
+import { getOverrideValue } from '@utils/override';
+import { getNewestVersion } from '@utils/version';
+import { getCollection } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+
+const packs = (await getCollection('schematics')).toSorted((a, b) =>
+  a.data.displayName.localeCompare(b.data.displayName)
+);
+
+const buildings = await getCollection('buildings');
+const newestVersion = await getNewestVersion();
+---
+
+<Layout title="Schematics" fluid columns={5}>
+  <div slot="left">
+    <hr />
+
+    <p class="h5 text-center">Filters</p>
+
+    <div class="input-group flex-nowrap mb-3">
+      <span class="input-group-text">
+        <Icon name="material-symbols-light:search" is:inline size={20} />
+      </span>
+      <input id="filter-id" type="text" class="form-control" placeholder="Search for schematics..." />
+    </div>
+
+    <div class="input-group flex-nowrap mb-3">
+      <span class="input-group-text">
+        <Icon name="material-symbols-light:home-outline" is:inline size={20} />
+      </span>
+      <select id="filter-building" class="form-select">
+        <option selected value="">Search for buildings...</option>
+        {
+          buildings.map(async (building) => (
+            <option value={building.id}>{await getOverrideValue(building.data, (f) => f.name, newestVersion)}</option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="filters-size">
+      <label for="filter-size-x" class="form-label flex-shrink-1 mb-0">Max Size</label>
+      <input id="filter-size-x" type="number" class="form-control flex-grow-1" placeholder="X" />
+      <input id="filter-size-y" type="number" class="form-control flex-grow-1" placeholder="Y" />
+      <input id="filter-size-z" type="number" class="form-control flex-grow-1" placeholder="Z" />
+    </div>
+
+    <div class="form-check mb-3">
+      <input id="filter-invisible" type="checkbox" class="form-check-input" />
+      <label for="filter-invisible" class="form-check-label">Show invisible schematics</label>
+    </div>
+
+    <hr />
+
+    <p class="h5 text-center">Schematic Packs</p>
+    <div id="filter-pack">
+      {
+        packs.map((pack) => (
+          <div class="form-check mb-3">
+            <input id={`filter-pack-${pack.id}`} type="checkbox" class="form-check-input" data-pack-id={pack.id} />
+            <label for={`filter-pack-${pack.id}`} class="form-check-label">
+              {pack.data.displayName}
+              <small class="text-secondary">({pack.data.authors.join(', ')})</small>
+            </label>
+          </div>
+        ))
+      }
+    </div>
+
+    <hr />
+
+    <p class="text-secondary small">
+      Special thanks to <b><a href="https://github.com/tomp2/minecolonies-style-explorer">tomp2</a></b> on Github for starting
+      the project and contributing all the images.
+    </p>
+
+    <hr />
+
+    <p class="text-secondary small">
+      Disclaimer: These images don't have to reflect the most up-to-date schematics in their respective mods. As these
+      schematics can update way faster than we can keep track of them in the website.
+    </p>
+  </div>
+
+  <div id="filter-list">
+    <div id="loading-indicator" class="text-center p-5">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-3">Loading schematics...</p>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  @use 'sass:map';
+  @import '../../css/bootstrap-vars.scss';
+
+  .filters-size {
+    display: flex;
+    align-items: center;
+    gap: map.get($spacers, 2);
+    margin-bottom: map.get($spacers, 3);
+
+    label {
+      white-space: nowrap;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .filters-size {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<style lang="scss" is:global>
+  @use 'sass:map';
+  @import '../../css/bootstrap-vars.scss';
+
+  .schematic-pack {
+    display: none;
+  }
+
+  .schematic-pack:has(.schematic-card:not(.hide)) {
+    display: block;
+  }
+
+  .schematic-folder {
+    display: none;
+  }
+
+  .schematic-folder:has(.schematic-card:not(.hide)) {
+    display: block;
+  }
+
+  .schematic-folder > .image-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    .schematic-folder > .image-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .schematic-folder > .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .schematic-folder > .image-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  swiper-container {
+    --swiper-navigation-size: '22px';
+    --swiper-navigation-color: $text-secondary;
+    min-width: 100%;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  const FILTER_ID_PACK = 'pack';
+  const FILTER_ID_NAME = 'name';
+  const FILTER_ID_BUILDING = 'building';
+  const FILTER_ID_SIZE_X = 'size_x';
+  const FILTER_ID_SIZE_Y = 'size_y';
+  const FILTER_ID_SIZE_Z = 'size_z';
+  const FILTER_ID_INVISIBLE = 'invisible';
+
+  function trimToEmpty(value: string | undefined) {
+    return value && value.trim().length > 0 ? value.trim() : undefined;
+  }
+
+  function toTitleCase(str: string) {
+    return str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase());
+  }
+
+  function setup() {
+    document.getElementById('filter-id')?.addEventListener('change', updateFilterList);
+    document.getElementById('filter-building')?.addEventListener('change', updateFilterList);
+    document.getElementById('filter-size-x')?.addEventListener('change', updateFilterList);
+    document.getElementById('filter-size-y')?.addEventListener('change', updateFilterList);
+    document.getElementById('filter-size-z')?.addEventListener('change', updateFilterList);
+    document.getElementById('filter-invisible')?.addEventListener('change', updateFilterList);
+
+    for (const checkbox of document.getElementById('filter-pack')?.getElementsByClassName('form-check') ?? []) {
+      checkbox.addEventListener('change', updateFilterList);
+    }
+
+    updateFilterList();
+  }
+
+  async function updateFilterList() {
+    const params = new URLSearchParams();
+    const loadingIndicator = document.getElementById('loading-indicator')!;
+    const filterList = document.getElementById('filter-list')!;
+
+    // Get selected packs
+    const packCheckboxes = document.getElementById('filter-pack')?.querySelectorAll('input[type="checkbox"]');
+    packCheckboxes?.forEach((checkbox) => {
+      if ((checkbox as HTMLInputElement).checked) {
+        params.append(FILTER_ID_PACK, (checkbox as HTMLInputElement).dataset.packId!);
+      }
+    });
+
+    // Get other filters
+    const filterId = trimToEmpty((document.getElementById('filter-id') as HTMLInputElement)?.value);
+    const filterBuilding = trimToEmpty((document.getElementById('filter-building') as HTMLSelectElement)?.value);
+    const filterSizeX = trimToEmpty((document.getElementById('filter-size-x') as HTMLInputElement)?.value);
+    const filterSizeY = trimToEmpty((document.getElementById('filter-size-y') as HTMLInputElement)?.value);
+    const filterSizeZ = trimToEmpty((document.getElementById('filter-size-z') as HTMLInputElement)?.value);
+    const filterInvisible = (document.getElementById('filter-invisible') as HTMLInputElement)?.checked;
+
+    if (filterId) params.append(FILTER_ID_NAME, filterId);
+    if (filterBuilding) params.append(FILTER_ID_BUILDING, filterBuilding);
+    if (filterSizeX) params.append(FILTER_ID_SIZE_X, filterSizeX);
+    if (filterSizeY) params.append(FILTER_ID_SIZE_Y, filterSizeY);
+    if (filterSizeZ) params.append(FILTER_ID_SIZE_Z, filterSizeZ);
+    if (filterInvisible) params.append(FILTER_ID_INVISIBLE, 'true');
+
+    loadingIndicator.style.display = 'block';
+
+    try {
+      const response = await fetch(`/schematics/search.json?${params.toString()}`);
+      const data = await response.json();
+
+      loadingIndicator.style.display = 'none';
+
+      if (!data.success) {
+        filterList.innerHTML =
+          '<div id="loading-indicator"></div><div class="text-center p-5"><p class="text-muted">Please select at least one schematic pack to view results.</p></div>';
+        return;
+      }
+
+      if (data.packs.length === 0) {
+        filterList.innerHTML =
+          '<div id="loading-indicator"></div><div class="text-center p-5"><p class="text-muted">No schematics found. Try adjusting your filters.</p></div>';
+        return;
+      }
+
+      // Render packs
+      let html = '<div id="loading-indicator" style="display: none;"></div>';
+      for (const pack of data.packs) {
+        html += `<div class="schematic-pack" data-filter-pack="${pack.id}">`;
+        html += `<h2 class="d-flex align-items-center">${pack.displayName}</h2>`;
+        html += `<div class="image-grid">`;
+
+        // Group schematics by path
+        const schematicsByPath = new Map();
+        for (const schematic of pack.schematics) {
+          if (!schematicsByPath.has(schematic.path)) {
+            schematicsByPath.set(schematic.path, []);
+          }
+          schematicsByPath.get(schematic.path).push(schematic);
+        }
+
+        // Render folders
+        for (const [path, schematics] of schematicsByPath.entries()) {
+          html += `<div class="schematic-folder">`;
+          html += `<h3 class="d-flex align-items-center">${path.split('/').map(toTitleCase).join(' > ')}</h3>`;
+          html += `<div class="image-grid mb-4">`;
+
+          // Render schematic cards
+          for (const schematic of schematics) {
+            const buildingId = schematic.type === 'building' ? schematic.building.id : '';
+            html += `
+              <div class="schematic-card card"
+                data-filter-id="${schematic.id}"
+                data-filter-building="${buildingId}"
+                data-filter-size-x="${schematic.size.x}"
+                data-filter-size-y="${schematic.size.y}"
+                data-filter-size-z="${schematic.size.z}"
+                data-filter-invisible="${schematic.invisible}">
+                <swiper-container ${schematic.images.length > 1 ? 'loop="true"' : ''} navigation="true" effect="fade" class="card-img-top">
+            `;
+
+            for (let i = 0; i < schematic.images.length; i++) {
+              const image = schematic.images[i];
+              const imageSrc = typeof image === 'string' ? image : image.src;
+              html += `
+                <swiper-slide lazy="true" class="w-100">
+                  <img src="${imageSrc}" alt="${schematic.id} schematic icon ${i}" width="250" class="rounded-top w-100" />
+                </swiper-slide>
+              `;
+            }
+
+            html += `</swiper-container><div class="card-body"><b>`;
+
+            if (schematic.type === 'building') {
+              // For building type, show building name if available
+              html += `<p class="card-title">${schematic.id}</p>`;
+            } else {
+              html += `<p class="card-title">${schematic.id}</p>`;
+            }
+
+            html += `</b>`;
+            html += `<p class="card-text text-secondary small">Size: ${schematic.size.x}x${schematic.size.y}x${schematic.size.z}</p>`;
+
+            if (schematic.invisible) {
+              html += `<p class="card-text text-secondary small"><b>Note: This schematic is invisible, it will only show up in creative mode</b></p>`;
+            }
+
+            html += `</div></div>`;
+          }
+
+          html += `</div></div>`;
+        }
+
+        html += `</div></div>`;
+      }
+
+      filterList.innerHTML = html;
+    } catch (error) {
+      console.error('Error fetching schematics:', error);
+      loadingIndicator.style.display = 'none';
+      filterList.innerHTML =
+        '<div id="loading-indicator"></div><div class="alert alert-danger">Error loading schematics. Please try again.</div>';
+    }
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

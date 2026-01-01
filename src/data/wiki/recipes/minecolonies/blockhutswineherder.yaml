@@ -5,10 +5,10 @@ row1:
   tag3: planks
 row2:
   tag1: planks
-  item2: minecraft/egg
+  item2: minecraft/porkchop
   tag3: planks
 row3:
   tag1: planks
   tag2: planks
   tag3: planks
-output: minecolonies/blockhutchickenfarmer
+output: minecolonies/blockhutswineherder

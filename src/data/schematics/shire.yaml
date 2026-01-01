@@ -134,7 +134,7 @@ schematics:
       - "@assets/images/schematics/shire/agriculture/husbandry/apiary/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenfarmer
+    building: chickenherder
     path: agriculture/husbandry
     size:
       x: 22
@@ -143,17 +143,17 @@ schematics:
     images:
       - "@assets/images/schematics/shire/agriculture/husbandry/chickenherder/front.jpg"
       - "@assets/images/schematics/shire/agriculture/husbandry/chickenherder/back.jpg"
-  - id: cowhand
+  - id: cowboy
     type: building
-    building: cowhand
+    building: cowboy
     path: agriculture/husbandry
     size:
       x: 23
       y: 10
       z: 13
     images:
-      - "@assets/images/schematics/shire/agriculture/husbandry/cowhand/front.jpg"
-      - "@assets/images/schematics/shire/agriculture/husbandry/cowhand/back.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/shire/agriculture/husbandry/cowboy/back.jpg"
   - id: fisher
     type: building
     building: fisherman
@@ -200,7 +200,7 @@ schematics:
       - "@assets/images/schematics/shire/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherd
+    building: swineherder
     path: agriculture/husbandry
     size:
       x: 12

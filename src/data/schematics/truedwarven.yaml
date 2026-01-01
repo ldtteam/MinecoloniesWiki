@@ -57,7 +57,7 @@ schematics:
       - "@assets/images/schematics/truedwarven/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenfarmer
+    building: chickenherder
     path: agriculture/husbandry
     size:
       x: 16
@@ -68,7 +68,7 @@ schematics:
       - "@assets/images/schematics/truedwarven/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowhand
+    building: cowboy
     path: agriculture/husbandry
     size:
       x: 16
@@ -112,7 +112,7 @@ schematics:
       - "@assets/images/schematics/truedwarven/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherd
+    building: swineherder
     path: agriculture/husbandry
     size:
       x: 16

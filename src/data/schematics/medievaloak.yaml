@@ -60,7 +60,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/horticulture/plantation/back.jpg"
   - id: altchickenherder
     type: building
-    building: chickenfarmer
+    building: chickenherder
     path: agriculture/husbandry
     size:
       x: 18
@@ -71,7 +71,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/altchickenherder/back.jpg"
   - id: altcowboy
     type: building
-    building: cowhand
+    building: cowboy
     path: agriculture/husbandry
     size:
       x: 17
@@ -93,7 +93,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/altfisherman/back.jpg"
   - id: altswineherder
     type: building
-    building: swineherd
+    building: swineherder
     path: agriculture/husbandry
     size:
       x: 18
@@ -115,7 +115,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenfarmer
+    building: chickenherder
     path: agriculture/husbandry
     size:
       x: 16
@@ -126,7 +126,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowhand
+    building: cowboy
     path: agriculture/husbandry
     size:
       x: 18
@@ -170,7 +170,7 @@ schematics:
       - "@assets/images/schematics/medievaloak/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherd
+    building: swineherder
     path: agriculture/husbandry
     size:
       x: 15

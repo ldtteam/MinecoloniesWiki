@@ -11,6 +11,7 @@ export const buildingSchema = (image: ImageFunction) =>
       icon: image(),
       workers: reference('workers').array().optional(),
       recipes: reference('recipes').array().optional(),
-      singular: z.boolean().default(false)
+      singular: z.boolean().default(false),
+      rotation: z.number().optional()
     })
   );

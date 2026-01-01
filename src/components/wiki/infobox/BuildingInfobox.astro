@@ -1,10 +1,11 @@
 ---
 import ResearchLink from '@components/markdoc/research/ResearchLink.astro';
+import BlockImage from '@components/ui/BlockImage.astro';
 import Infobox from '@components/ui/infobox/Infobox.astro';
 import RecipeGrid from '@components/ui/infobox/RecipeGrid.astro';
 import Wrapper from '@components/ui/infobox/Wrapper.astro';
 import BuildingName from '@components/wiki/names/BuildingName.astro';
-import { Image } from 'astro:assets';
+import { getNewestVersion } from '@utils/version';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
 import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
@@ -23,8 +24,23 @@ const research = (
   )
 ).slice(0, 1)[0];
 
+const newestVersion = await getNewestVersion();
+
 const workers = building.data.workers ?? [];
 const recipes = building.data.recipes ?? [];
+
+let blockImageId: string | undefined = undefined;
+switch (building.id) {
+  case 'residence':
+    blockImageId = 'minecolonies:blockhutcitizen';
+    break;
+  case 'quarry':
+    blockImageId = 'minecolonies:mediumquarry';
+    break;
+  default:
+    blockImageId = `minecolonies:blockhut${building.id}`;
+    break;
+}
 ---
 
 <Wrapper>
@@ -34,7 +50,26 @@ const recipes = building.data.recipes ?? [];
     <BuildingName slot="title" building={building} />
 
     <div class="text-center">
-      <Image src={building.data.icon} alt={building.data.name} width={300} loading="eager" />
+      <swiper-container navigation slides-per-view="1" slides-per-group="1">
+        <swiper-slide lazy="true">
+          <BlockImage
+            blockId={blockImageId}
+            version={newestVersion}
+            width={300}
+            angle="front"
+            rotation={building.data.rotation}
+          />
+        </swiper-slide>
+        <swiper-slide lazy="true">
+          <BlockImage
+            blockId={blockImageId}
+            version={newestVersion}
+            width={300}
+            angle="back"
+            rotation={building.data.rotation}
+          />
+        </swiper-slide>
+      </swiper-container>
     </div>
 
     <RecipeGrid recipes={recipes} />
@@ -81,3 +116,13 @@ const recipes = building.data.recipes ?? [];
     }
   </Infobox>
 </Wrapper>
+
+<style lang="scss">
+  swiper-container {
+    --swiper-navigation-size: 22px;
+  }
+
+  swiper-slide {
+    width: 100% !important;
+  }
+</style>

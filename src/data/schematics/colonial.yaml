@@ -134,28 +134,28 @@ schematics:
     images:
       - "@assets/images/schematics/colonial/agriculture/husbandry/apiary/front.jpg"
       - "@assets/images/schematics/colonial/agriculture/husbandry/apiary/back.jpg"
-  - id: chickenfarmer
+  - id: chickenherder
     type: building
-    building: chickenfarmer
+    building: chickenherder
     path: agriculture/husbandry
     size:
       x: 22
       y: 11
       z: 11
     images:
-      - "@assets/images/schematics/colonial/agriculture/husbandry/chickenfarmer/front.jpg"
-      - "@assets/images/schematics/colonial/agriculture/husbandry/chickenfarmer/back.jpg"
-  - id: cowhand
+      - "@assets/images/schematics/colonial/agriculture/husbandry/chickenherder/front.jpg"
+      - "@assets/images/schematics/colonial/agriculture/husbandry/chickenherder/back.jpg"
+  - id: cowboy
     type: building
-    building: cowhand
+    building: cowboy
     path: agriculture/husbandry
     size:
       x: 26
       y: 14
       z: 19
     images:
-      - "@assets/images/schematics/colonial/agriculture/husbandry/cowhand/front.jpg"
-      - "@assets/images/schematics/colonial/agriculture/husbandry/cowhand/back.jpg"
+      - "@assets/images/schematics/colonial/agriculture/husbandry/cowboy/front.jpg"
+      - "@assets/images/schematics/colonial/agriculture/husbandry/cowboy/back.jpg"
   - id: dock
     type: building
     building: fisherman
@@ -200,17 +200,17 @@ schematics:
     images:
       - "@assets/images/schematics/colonial/agriculture/husbandry/shepherd/front.jpg"
       - "@assets/images/schematics/colonial/agriculture/husbandry/shepherd/back.jpg"
-  - id: swineherd
+  - id: swineherder
     type: building
-    building: swineherd
+    building: swineherder
     path: agriculture/husbandry
     size:
       x: 22
       y: 11
       z: 21
     images:
-      - "@assets/images/schematics/colonial/agriculture/husbandry/swineherd/front.jpg"
-      - "@assets/images/schematics/colonial/agriculture/husbandry/swineherd/back.jpg"
+      - "@assets/images/schematics/colonial/agriculture/husbandry/swineherder/front.jpg"
+      - "@assets/images/schematics/colonial/agriculture/husbandry/swineherder/back.jpg"
   - id: fletcher
     type: building
     building: fletcher

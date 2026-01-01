@@ -59,7 +59,7 @@ schematics:
       - "@assets/images/schematics/pagoda/agriculture/husbandry/beekeeper/back.jpg"
   - id: chickenherder
     type: building
-    building: chickenfarmer
+    building: chickenherder
     path: agriculture/husbandry
     size:
       x: 13
@@ -70,7 +70,7 @@ schematics:
       - "@assets/images/schematics/pagoda/agriculture/husbandry/chickenherder/back.jpg"
   - id: cowboy
     type: building
-    building: cowhand
+    building: cowboy
     path: agriculture/husbandry
     size:
       x: 13
@@ -114,7 +114,7 @@ schematics:
       - "@assets/images/schematics/pagoda/agriculture/husbandry/shepherd/back.jpg"
   - id: swineherder
     type: building
-    building: swineherd
+    building: swineherder
     path: agriculture/husbandry
     size:
       x: 13

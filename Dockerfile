@@ -7,7 +7,11 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm run build
 
-FROM nginx:alpine AS runtime
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /app/dist /usr/share/nginx/html
+FROM node:23-alpine AS runtime
+COPY --from=build /app/dist ./dist
+COPY deploy/nginx.conf /etc/nginx/nginx.conf
+COPY deploy/start.sh /start.sh
+
+RUN chmod +x /start.sh && mkdir -p /run/nginx
+
 EXPOSE 80
