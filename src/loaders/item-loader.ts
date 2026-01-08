@@ -1,11 +1,12 @@
-import type { ImageOutputFormat } from 'astro';
-import { glob, type Loader } from 'astro/loaders';
-import { z } from 'astro/zod';
+import type { Loader } from 'astro/loaders';
+import { z } from 'astro:content';
 import minecraftData, { type Item } from 'minecraft-data';
-import type { itemSchema } from 'src/schemas/item';
+import path from 'path';
+import { itemSchema, itemSchemaWithoutVersionData } from 'src/schemas/item';
 import { versionSchema } from 'src/schemas/version';
 
-import { getJsonFile, parseYaml } from './file-utils';
+import { getVersionCollectionId } from '../util/version';
+import { getAllFilesInDirectory, getJsonFile, parseYaml } from './file-utils';
 
 const unavailableMcItems: Item[] = [
   {
@@ -16,83 +17,87 @@ const unavailableMcItems: Item[] = [
   }
 ];
 
-const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
-  crimson_stem: 'gif',
-  warped_stem: 'gif',
-  compass: 'gif'
-};
-
-type RawItem = z.infer<typeof itemSchema>;
-
 export function itemLoader(): Loader {
-  const globLoader = glob({ base: './src/data/wiki/items', pattern: '**/*.yaml' });
-
   return {
     name: 'item-loader',
+    schema: itemSchema,
     load: async (context) => {
       context.store.clear();
 
-      // Mod items
-      await globLoader.load(context);
-
-      // Minecraft items
       const versions = (await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml)).toSorted(
         (a, b) => a.order - b.order
       );
+
+      // Load mod items from YAML files (only from namespace subdirectories)
+      const modItems = await getAllFilesInDirectory(
+        itemSchemaWithoutVersionData,
+        './src/data/wiki/items',
+        true,
+        parseYaml
+      );
+
+      // Create version-aware entries for mod items
+      for (const [filePath, itemData] of Object.entries(modItems)) {
+        const relativePath = path.relative('./src/data/wiki/items', filePath);
+        const parsedPath = path.parse(relativePath);
+        const baseId = `${parsedPath.dir}/${parsedPath.name}`.replace(/\\/g, '/');
+
+        for (const version of versions) {
+          const id = getVersionCollectionId(baseId, version);
+          const data = await context.parseData<z.infer<typeof itemSchema>>({
+            id,
+            data: {
+              ...itemData,
+              baseId,
+              version: {
+                id: version.id,
+                collection: 'versions'
+              }
+            }
+          });
+
+          const digest = context.generateDigest(data);
+          context.store.set({
+            id,
+            data,
+            digest
+          });
+        }
+      }
+
+      // Minecraft items
       for (const version of Object.values(versions)) {
         const mcData = minecraftData(version.id);
         if (mcData === null) {
           console.warn(`Version data for ${version.id} does not exist`);
           continue;
         }
-        for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
-          const id = 'minecraft/' + item.name;
 
-          const data = await context.parseData<RawItem>({
+        for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
+          const baseId = 'minecraft/' + item.name;
+          const id = getVersionCollectionId(baseId, version);
+          const isBlock = mcData.blocksByName[item.name] !== undefined;
+
+          const data = await context.parseData<z.infer<typeof itemSchema>>({
             id,
             data: {
-              id,
+              baseId,
+              version: {
+                id: version.id,
+                collection: 'versions'
+              },
               name: item.displayName,
               description: '',
-              icons: [
-                `https://minecraft.wiki/images/Invicon_${item.displayName.replaceAll(' ', '_')}.${imageExtensionOverrides[item.name] ?? 'png'}`
-              ]
+              isBlock
             }
           });
 
-          if (context.store.has(id)) {
-            const current = context.store.get<RawItem>(id);
-            if (current) {
-              const currentName = current.data.overrides?.findLast(() => true)?.name ?? current.data.name;
-              if (currentName === data.name) {
-                continue;
-              }
-
-              if (current.data.overrides === undefined) {
-                current.data.overrides = [];
-              }
-              current.data.overrides.push({
-                ...data,
-                version: {
-                  collection: 'versions',
-                  id: version.id
-                }
-              });
-
-              const digest = context.generateDigest(current.data);
-              context.store.set({
-                ...current,
-                digest
-              });
-            }
-          } else {
-            const digest = context.generateDigest(data);
-            context.store.set({
-              id,
-              data,
-              digest
-            });
-          }
+          const digest = context.generateDigest(data);
+          context.store.set({
+            id,
+            data,
+            digest
+          });
         }
       }
     }

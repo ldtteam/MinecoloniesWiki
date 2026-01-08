@@ -1,5 +1,4 @@
 id: blockhutsawmill
 name: Sawmill Hut Block
 description: The Hut Block for the Sawmill.
-icons:
-  - minecolonies/blockhutsawmill
+isBlock: true

@@ -1,8 +1,8 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getItemImage } from './items';
 import { getOverrideValues } from './override';
-import type { VersionedResult } from './version';
+import { renderItemOrBlockDataUrl } from './renderers';
+import { getNewestVersion, getVersionedEntry, type VersionedResult } from './version';
 
 export type Title = string | VersionedResult<string>;
 
@@ -23,11 +23,13 @@ type WikiPage = WikiSubCategoryEntry | WikiPageEntry;
 type WikiPages = Map<CollectionEntry<'wiki_categories'>, WikiPage[]>;
 
 export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Title> {
+  const latestVersion = await getNewestVersion();
+
   if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
     return entry.data.title;
   } else if (entry.data.type === 'item') {
-    const item = await getEntry(entry.data.item);
-    return await getOverrideValues(item.data, (i) => i.name, '');
+    const item = await getVersionedEntry('items', latestVersion, entry.data.item);
+    return item?.data.name ?? entry.id;
   } else if (entry.data.type === 'building') {
     const building = await getEntry('buildings', entry.data.id);
     if (building === undefined) {
@@ -40,11 +42,13 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
 }
 
 export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
+  const latestVersion = await getNewestVersion();
+
   if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
     return entry.data.excerpt;
   } else if (entry.data.type === 'item') {
-    const itemData = await getEntry(entry.data.item);
-    return itemData.data.description;
+    const item = await getVersionedEntry('items', latestVersion, entry.data.item);
+    return item?.data.name;
   } else if (entry.data.type === 'building') {
     return entry.data.description;
   }
@@ -53,28 +57,58 @@ export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promis
 }
 
 export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
+  const latestVersion = await getNewestVersion();
+
   if (entry.data.type === 'page') {
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
-    const item = await getEntry(entry.data.item);
-    const icon = item.data.icons.at(0);
-    if (icon === undefined) {
+    const item = await getVersionedEntry('items', latestVersion, entry.data.item);
+    if (item === undefined) {
       return undefined;
     }
-    return await getItemImage(icon, 100, 100);
+    return await renderItemOrBlockDataUrl(item, latestVersion, {
+      width: 100,
+      height: 100,
+      angle: 'front'
+    });
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
     }
 
-    const item = await getEntry(entry.data.items[0]);
-    const icon = item.data.icons.at(0);
-    if (icon === undefined) {
+    const item = await getVersionedEntry('items', latestVersion, entry.data.items[0]);
+    if (item === undefined) {
       return undefined;
     }
-    return await getItemImage(icon, 100, 100);
+    return await renderItemOrBlockDataUrl(item, latestVersion, {
+      width: 100,
+      height: 100,
+      angle: 'front'
+    });
   } else if (entry.data.type === 'building') {
-    return entry.data.icon.src;
+    let blockItemId: string;
+    switch (entry.data.id) {
+      case 'residence':
+        blockItemId = 'minecolonies/blockhutcitizen';
+        break;
+      case 'quarry':
+        blockItemId = 'minecolonies/mediumquarry';
+        break;
+      default:
+        blockItemId = `minecolonies/blockhut${entry.data.id}`;
+        break;
+    }
+
+    const blockItem = await getVersionedEntry('items', latestVersion, blockItemId);
+    if (!blockItem) {
+      return undefined;
+    }
+
+    return await renderItemOrBlockDataUrl(blockItem, latestVersion, {
+      width: 100,
+      height: 100,
+      angle: 'front'
+    });
   }
 }
 

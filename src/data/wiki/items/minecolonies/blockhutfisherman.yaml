@@ -1,5 +1,4 @@
 id: blockhutfisherman
 name: Fisher Hut Block
 description: The Hut Block for the Fisher.
-icons:
-  - minecolonies/blockhutfisherman
+isBlock: true

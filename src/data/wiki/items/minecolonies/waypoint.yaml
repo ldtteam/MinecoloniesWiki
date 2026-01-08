@@ -1,5 +1,6 @@
 id: waypoint
 name: Waypoint
-description: Waypoints are used in pathfinding to tell citizens to attempt to path via Waypoints as much as possible.
-icons:
-  - minecolonies/waypoint
+description: Waypoints are used in pathfinding to tell citizens to attempt to path
+  via Waypoints as much as possible.
+isBlock: true
+modelPath: blockwaypoint

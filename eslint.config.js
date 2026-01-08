@@ -19,6 +19,11 @@ export default defineConfig(
   eslintPluginPrettierRecommended,
   ...eslintPluginAstro.configs.recommended,
   {
+    rules: {
+      curly: ['error', 'all']
+    }
+  },
+  {
     name: 'Application rules (Astro)',
     files: ['**/*.astro'],
     languageOptions: {

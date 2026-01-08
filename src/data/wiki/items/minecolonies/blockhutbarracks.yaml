@@ -1,5 +1,4 @@
 id: blockhutbarracks
 name: Barracks Hut Block
 description: The Hut Block for the Barracks.
-icons:
-  - minecolonies/blockhutbarracks
+isBlock: true

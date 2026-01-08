@@ -1,5 +1,5 @@
 id: flint_mesh
 name: Flint Mesh
-description: The Flint Mesh is used in the Sifter to allow the Sifter to gather certain materials from the input blocks.
-icons:
-  - minecolonies/flint_mesh
+description: The Flint Mesh is used in the Sifter to allow the Sifter to gather certain
+  materials from the input blocks.
+modelPath: sifter_mesh_flint

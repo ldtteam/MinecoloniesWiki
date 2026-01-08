@@ -23,6 +23,7 @@ Schematics are files containing block and entity information of a certain area a
       - [How to create custom huts?](#how-to-create-custom-huts)
   - [\[1.18\] Custom Hut Filenames](#118-custom-hut-filenames)
   - [Custom Supply Ships and Camps](#custom-supply-ships-and-camps)
+  - [Supplycamp/ship Content Requirements](#supplycampship-content-requirements)
   - [Hut Requirements](#hut-requirements)
   - [Level Requirements for Overworld Styles](#level-requirements-for-overworld-styles)
   - [Level Requirements for Nether Styles](#level-requirements-for-nether-styles)
@@ -63,7 +64,7 @@ If you're a Patreon, you have access to the official schematic server, and can r
 
 Once you have a structure or area you want to scan to have your Builder build, you need to determine the exact area that needs to be scanned. 
 
-If the area you want to scan contains multiple anchor blocks (hut blocks, {% item name="structurize/tag_anchor" /%}, or {% item name="minecolonies/deco_controller" /%}; also including some special blocks like the {% item name="minecolonies/stash" /%}) you should shift-left-click the correct anchor block (e.g. the {% building name="barracks" /%} hut block in a {% building name="barracks" /%} schematic) first, before selecting corners.
+If the area you want to scan contains multiple anchor blocks (hut blocks, {% item name="structurize/tag_anchor" /%}, or {% item name="minecolonies/decorationcontroller" /%}; also including some special blocks like the {% item name="minecolonies/stash" /%}) you should shift-left-click the correct anchor block (e.g. the {% building name="barracks" /%} hut block in a {% building name="barracks" /%} schematic) first, before selecting corners.
 
 ![TestBuilding](@assets/images/wiki/tutorial/testbuilding.png)
 
@@ -85,8 +86,8 @@ Once you have the full area set, you can press Escape and the white outline of t
 > 
 > 1. Do not rename the file after scanning. It **must** be scanned with the correct name.  
 > 2. If you include two or more of anchor blocks in your structure you **must** set which will be your anchor for the schematic by sneak left clicking on the desired anchor block.
-> 3. Hut buildings use the associated hut block as the anchor, upgradable decorations should use the {% item name="minecolonies/deco_controller" /%} as the anchor and non upgradable decorations should use the {% item name="structurize/tag_anchor" /%} block as the anchor.
->    * If you want non upgradeable decorations acting as leisure sites, you must use a {% item name="minecolonies/deco_controller" /%} as only those sites are selected to be leisure sites.
+> 3. Hut buildings use the associated hut block as the anchor, upgradable decorations should use the {% item name="minecolonies/decorationcontroller" /%} as the anchor and non upgradable decorations should use the {% item name="structurize/tag_anchor" /%} block as the anchor.
+>    * If you want non upgradeable decorations acting as leisure sites, you must use a {% item name="minecolonies/decorationcontroller" /%} as only those sites are selected to be leisure sites.
 
 {% version range="--1.18.2" %}
 Scans are saved in `../minecolonies/scan/new/...`.
@@ -103,13 +104,13 @@ Once the scans are saved, they need to be placed in a style pack, preferably in 
 ## Placing a Schematic.
 
 {% version range="--1.18.2" %}
-Once you have scanned a structure, you can use the {%item name="structurize/build_tool" /%} to have your {% worker name="builder" /%} build it for you. Once you right-click with the build tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
+Once you have scanned a structure, you can use the {%item name="structurize/sceptergold" /%} to have your {% worker name="builder" /%} build it for you. Once you right-click with the build tool, you will have to select "My Schematics" (in the left dropdown menu) and on the right dropdown menu you will see the scans that you have made. There is also a Rename button where you can change the name of the scan. You can also delete any of your saved scans.
 
 ![Schematic](@assets/images/wiki/tutorial/schematic.png)
 {% /version %}
 
 {% version range="1.19--" %}
-The scanned structure can be found in the {% item name="structurize/build_tool" /%} under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the {% item name="structurize/scan_tool" /%}) -> "scans". 
+The scanned structure can be found in the {% item name="structurize/sceptergold" /%} under the style pack with your own name. Click "Switch Pack" -> "&lt;yourplayername&gt;" (icon looks like the {% item name="structurize/scan_tool" /%}) -> "scans". 
 {% /version %}
 
 {% version range="1.19--" %}
@@ -218,7 +219,7 @@ The scans' filenames need to follow the naming convention: {StyleName}/{HutName}
 *myown/builder4.blueprint*
 *myown/builder5.blueprint*
 
-- **Note:** In the {% item name="structurize/build_tool" /%}, the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5 (except for the {% building name="tavern" /%}; its max level is 3).
+- **Note:** In the {% item name="structurize/sceptergold" /%}, the extension is hidden. HutName can be any of the listed huts below. The maximum level is 5 (except for the {% building name="tavern" /%}; its max level is 3).
 
 Alternative designs can be placed under a style name like "myownalternative", or a subfolder like `myown/alt/*`.
 {% /version %}
@@ -541,7 +542,7 @@ The custom huts need to be copied in the schematics folder.
 The custom huts need to be copied into a style pack.
 {% /version %}
 
-Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the {% item name="structurize/build_tool" /%} (if you have the hut block in your inventory).
+Once copied, you can start your singleplayer or multiplayer game as usual. You should see them in the {% item name="structurize/sceptergold" /%} (if you have the hut block in your inventory).
 
 ### How to allow my players to use their own huts' schematics on my server?
 
@@ -558,11 +559,11 @@ Edit the Structurize configuration file at `minecraft/config/structurize-common.
 ### How to create upgradable decoration schematics?
 
 {% version range="--1.18.2" %}
-Add the {% item name="minecolonies/deco_controller" /%} somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning - don't include the path in the scan name.
+Add the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning - don't include the path in the scan name.
 {% /version %}
 
 {% version range="1.19--" %}
-Put the {% item name="minecolonies/deco_controller" /%} somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
+Put the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
 
 Contrary to the image below, you don't need to enter anything into the deco controller's GUI before scanning any more -- but the rest of that image is still useful.
 {% /version %}

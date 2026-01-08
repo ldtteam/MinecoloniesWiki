@@ -2,11 +2,13 @@ import { file, glob } from 'astro/loaders';
 import { defineCollection, type ImageFunction, reference, z } from 'astro:content';
 
 import { buildingLoader } from './loaders/building-loader';
+import { citizenNamesLoader } from './loaders/citizennames-loader';
 import { itemLoader } from './loaders/item-loader';
-import { researchEffectsLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
+import { recipeLoader } from './loaders/recipes/loader';
+import { researchEffectLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
 import { buildingSchema } from './schemas/building';
-import { citizenNamesSchema, citizenNamesWithAuthorSchema } from './schemas/citizen_names';
-import { itemSchema, tagSchema } from './schemas/item';
+import { citizenNamesPackSchema } from './schemas/citizen_names';
+import { itemSchema } from './schemas/item';
 import { jsonStructureSchema } from './schemas/json_structures';
 import { recipeSchema } from './schemas/recipe';
 import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
@@ -88,7 +90,7 @@ const regularPage = (image: ImageFunction) =>
 
 const itemPage = z.object({
   type: z.literal('item'),
-  item: reference('items'),
+  item: z.string(),
   infobox: z
     .object({
       show: z.boolean().optional()
@@ -100,7 +102,7 @@ const itemCombinedPage = z.object({
   type: z.literal('item-combined'),
   title: z.string(),
   excerpt: z.string().optional(),
-  items: z.array(reference('items')),
+  items: z.array(z.string()),
   infobox: z
     .object({
       show: z.boolean().optional(),
@@ -115,7 +117,7 @@ const wikiCollection = defineCollection({
     z
       .discriminatedUnion('type', [
         regularPage(image),
-        buildingSchema(image).extend({ type: z.literal('building') }),
+        buildingSchema.extend({ type: z.literal('building') }),
         itemPage,
         itemCombinedPage
       ])
@@ -136,7 +138,7 @@ const wikiCategories = defineCollection({
 
 const buildingsCollection = defineCollection({
   loader: buildingLoader,
-  schema: ({ image }) => buildingSchema(image)
+  schema: buildingSchema
 });
 
 const workersCollection = defineCollection({
@@ -149,24 +151,14 @@ const itemsCollection = defineCollection({
   schema: itemSchema
 });
 
-const tagsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/tags' }),
-  schema: tagSchema
-});
-
 const recipesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/recipes' }),
+  loader: recipeLoader(),
   schema: recipeSchema
 });
 
-const officialCitizenNamesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './minecolonies/src/main/resources/data/minecolonies/citizennames' }),
-  schema: citizenNamesSchema
-});
-
 const citizenNamesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/data/wiki/citizen_name_packs' }),
-  schema: citizenNamesWithAuthorSchema
+  loader: citizenNamesLoader(),
+  schema: citizenNamesPackSchema
 });
 
 const metaCollection = defineCollection({
@@ -181,17 +173,17 @@ const metaCollection = defineCollection({
 // |----------|
 
 const researchTreeCollection = defineCollection({
-  loader: researchTreesLoader,
+  loader: researchTreesLoader(),
   schema: researchTreeSchema
 });
 
 const researchEffectCollection = defineCollection({
-  loader: researchEffectsLoader,
+  loader: researchEffectLoader(),
   schema: researchEffectsSchema
 });
 
 const researchCollection = defineCollection({
-  loader: researchLoader,
+  loader: researchLoader(),
   schema: researchSchema
 });
 
@@ -218,14 +210,12 @@ export const collections = {
   wiki_categories: wikiCategories,
   buildings: buildingsCollection,
   workers: workersCollection,
-  tags: tagsCollection,
   items: itemsCollection,
   recipes: recipesCollection,
   research_tree: researchTreeCollection,
   research_effect: researchEffectCollection,
   research: researchCollection,
   versions: versionsCollection,
-  official_citizen_name_packs: officialCitizenNamesCollection,
   citizen_name_packs: citizenNamesCollection,
   meta: metaCollection,
   team: teamCollection,

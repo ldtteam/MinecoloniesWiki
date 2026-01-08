@@ -1,0 +1,130 @@
+---
+import Infobox from '@components/core/infobox/Infobox.astro';
+import RecipeGrid from '@components/core/infobox/RecipeGrid.astro';
+import ResearchLinkInternal from '@components/markdoc/research/ResearchLinkInternal.astro';
+import ItemImage from '@components/wiki/items/ItemImage.astro';
+import BuildingName from '@components/wiki/names/BuildingName.astro';
+import { getVersionedEntry } from '@utils/version';
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
+
+interface Props {
+  building: CollectionEntry<'buildings'>;
+  version: CollectionEntry<'versions'>;
+}
+
+const { building, version } = Astro.props;
+
+const researchEffect = (
+  await getCollection(
+    'research_effect',
+    (effect) =>
+      effect.data.type === 'building' &&
+      effect.data.building.id === building.id &&
+      effect.data.version.id === version.id
+  )
+)[0];
+
+const research = researchEffect
+  ? (
+      await getCollection(
+        'research',
+        (r) => r.data.version.id === version.id && r.data.effects.some((e) => e.effect.id === researchEffect.id)
+      )
+    )[0]
+  : undefined;
+
+const workers = building.data.workers ?? [];
+const recipes = building.data.recipes
+  ? await Promise.all(building.data.recipes.map((recipe) => getVersionedEntry('recipes', version, recipe))).then(
+      (items) => items.filter((f) => f !== undefined)
+    )
+  : [];
+
+let blockItemId: string;
+switch (building.id) {
+  case 'residence':
+    blockItemId = 'minecolonies/blockhutcitizen';
+    break;
+  case 'quarry':
+    blockItemId = 'minecolonies/mediumquarry';
+    break;
+  default:
+    blockItemId = `minecolonies/blockhut${building.id}`;
+    break;
+}
+
+const blockItem = await getVersionedEntry('items', version, blockItemId);
+if (!blockItem) {
+  throw new Error(`Blockhut item not found: ${blockItemId}`);
+}
+---
+
+<Infobox class="flex-shrink-1">
+  <BuildingName slot="title" building={building} />
+
+  <div class="text-center">
+    <swiper-container navigation slides-per-view="1" slides-per-group="1">
+      <swiper-slide>
+        <ItemImage item={blockItem} version={version} size={300} angle="front" rotation={building.data.rotation} />
+      </swiper-slide>
+      <swiper-slide>
+        <ItemImage item={blockItem} version={version} size={300} angle="back" rotation={building.data.rotation} />
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <RecipeGrid recipes={recipes} />
+
+  <hr />
+  <p class="m-0">
+    <b>Research:</b>
+    {
+      research !== undefined ? (
+        <>
+          <span>You must research</span>
+          <ResearchLinkInternal research={research} />
+          <span>to unlock this building!</span>
+        </>
+      ) : (
+        <>No research is required for this building.</>
+      )
+    }
+  </p>
+
+  {
+    building.data.singular && (
+      <>
+        <hr />
+        <p class="m-0">
+          <b>Note:</b> you can only build a single <BuildingName building={building} />
+        </p>
+      </>
+    )
+  }
+
+  {
+    workers.length !== 0 && (
+      <>
+        <hr />
+        {workers.map((worker, idx) => (
+          <>
+            <BuildingInfoboxWorker building={building} worker={worker} />
+            {idx !== workers.length - 1 && <hr />}
+          </>
+        ))}
+      </>
+    )
+  }
+</Infobox>
+
+<style lang="scss">
+  swiper-container {
+    --swiper-navigation-size: 22px;
+  }
+
+  swiper-slide {
+    width: 100% !important;
+  }
+</style>

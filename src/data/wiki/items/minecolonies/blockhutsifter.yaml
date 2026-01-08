@@ -1,5 +1,4 @@
 id: blockhutsifter
 name: Sifter Hut Block
 description: The Hut Block for the Sifter.
-icons:
-  - minecolonies/blockhutsifter
+isBlock: true

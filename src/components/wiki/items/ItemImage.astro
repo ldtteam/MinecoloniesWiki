@@ -1,16 +1,37 @@
 ---
-import { getItemImage } from '@utils/items';
+import { type CameraAngle, renderItemOrBlockDataUrl } from '@utils/renderers';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  icon: string;
+  item: CollectionEntry<'items'>;
+  version: CollectionEntry<'versions'>;
   alt?: string;
-  width: number;
-  height?: number;
+  size: number;
+  angle?: CameraAngle;
+  rotation?: number;
+  class?: string;
 }
 
-const { icon, alt, width, height } = Astro.props;
+const { item, version, alt, size, angle, rotation, class: className } = Astro.props;
 
-const src = await getItemImage(icon, width, height);
+const src = await renderItemOrBlockDataUrl(item, version, {
+  width: size,
+  height: size,
+  angle,
+  rotation
+});
 ---
 
-<img src={src} alt={alt} loading="lazy" decoding="async" width={width} />
+{
+  src && (
+    <img
+      src={src}
+      alt={alt || item.data.name}
+      loading="lazy"
+      decoding="async"
+      width={size}
+      height={size}
+      class={className}
+    />
+  )
+}

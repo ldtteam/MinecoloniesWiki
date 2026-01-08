@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  version: CollectionEntry<'versions'>;
+  class?: string;
+}
+
+const { item, version, class: className } = Astro.props;
+
+const itemIdParts = item.id.split('/');
+const namespace = itemIdParts[0];
+const itemName = itemIdParts[1];
+
+const imagePath = `/images/wiki/items/${namespace}_${itemName}_${version.id}.png`;
+---
+
+<div class:list={['recipe-item-image', className]} style={{ backgroundImage: `url('${imagePath}')` }}></div>
+
+<style>
+  .recipe-item-image {
+    width: 32px;
+    height: 32px;
+  }
+</style>

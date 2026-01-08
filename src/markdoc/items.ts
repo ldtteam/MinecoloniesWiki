@@ -28,25 +28,10 @@ export const item_page: Tag = {
 };
 
 export const item_infobox: Tag = {
-  render: component('@components/markdoc/infobox/ItemInfobox.astro'),
+  render: component('@components/markdoc/infobox/MarkdocItemInfobox.astro'),
   attributes: {
     item: {
       type: String,
-      required: false
-    }
-  },
-  transform: injectFrontmatter
-};
-
-export const item_combined_infobox: Tag = {
-  render: component('@components/markdoc/infobox/ItemCombinedInfobox.astro'),
-  attributes: {
-    items: {
-      type: String,
-      required: false
-    },
-    cols: {
-      type: Number,
       required: false
     }
   },

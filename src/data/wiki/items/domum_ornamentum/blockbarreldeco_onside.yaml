@@ -1,5 +1,6 @@
 id: blockbarreldeco_onside
 name: Horizontal Barrel
-description: The Horizontal and Vertical barrels are decorational blocks primarily used within schematics.
-icons:
-  - domum_ornamentum/blockbarreldeco_onside
+description: The Horizontal and Vertical barrels are decorational blocks primarily
+  used within schematics.
+isBlock: true
+modelPath: barrel_dec/barreldeco_onside

@@ -1,6 +1,8 @@
 import { z } from 'astro:content';
 
-export const citizenNamesSchema = z.object({
+import { versionedObjectSchema } from './version';
+
+export const citizenNamesDataSchema = z.object({
   parts: z.number().min(1).max(3),
   order: z.enum(['WESTERN', 'EASTERN']),
   male_firstname: z.array(z.string()),
@@ -8,9 +10,20 @@ export const citizenNamesSchema = z.object({
   surnames: z.array(z.string())
 });
 
-export const citizenNamesWithAuthorSchema = z.object({
+export const citizenNamesPackFileSchema = z.object({
   name: z.string(),
   filename: z.string(),
   credits: z.string(),
-  data: citizenNamesSchema
+  data: citizenNamesDataSchema
 });
+
+export const citizenNamesPackSchema = z
+  .object({
+    name: z.string(),
+    filename: z.string(),
+    credits: z.string(),
+    official: z.boolean(),
+    packFormat: z.number(),
+    data: citizenNamesDataSchema
+  })
+  .and(versionedObjectSchema);

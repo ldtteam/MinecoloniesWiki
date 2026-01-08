@@ -1,5 +1,5 @@
 id: blocksolidsubstitution
 name: Solid Placeholder
-description: The Solid Placeholder is a placeholder block that will ensure a place within your schematic is filled with a solid block.
-icons:
-  - structurize/blocksolidsubstitution
+description: The Solid Placeholder is a placeholder block that will ensure a place
+  within your schematic is filled with a solid block.
+isBlock: true

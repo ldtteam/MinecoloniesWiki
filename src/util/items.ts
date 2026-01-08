@@ -1,8 +1,7 @@
-import { isUrl } from '@utils/util';
-import { getImage } from 'astro:assets';
-import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
+import { type CollectionEntry, getCollection, getEntry, z } from 'astro:content';
+import { getJsonFile, parseYaml } from 'src/loaders/file-utils';
 
-import type { PartialCollectionEntry } from './util';
+import { parseResourceLocation, type ResourceLocation, resourceLocationToWikiReference } from './resourcelocation';
 
 interface WikiItemPage {
   page?: CollectionEntry<'wiki'>;
@@ -11,26 +10,23 @@ interface WikiItemPage {
 
 async function extractWikiPageData(
   page: CollectionEntry<'wiki'>,
-  item: PartialCollectionEntry<'items'>
+  item: CollectionEntry<'items'>
 ): Promise<WikiItemPage | undefined> {
-  if (page.data.type === 'item' && page.data.item.id === item.id) {
-    const itemData = await getEntry(page.data.item);
+  const itemData = await getEntry(item);
+  if (page.data.type === 'item' && page.data.item === itemData.data.baseId) {
     return {
       page,
       item: itemData
     };
-  }
-  if (page.data.type === 'item-combined') {
-    const subItem = page.data.items.find((i) => i.id === item.id);
+  } else if (page.data.type === 'item-combined') {
+    const subItem = page.data.items.find((pageItem) => pageItem === itemData.data.baseId);
     if (subItem !== undefined) {
-      const itemData = await getEntry(subItem);
       return {
         page,
         item: itemData
       };
     }
-  }
-  if (page.data.type === 'building' && 'minecolonies/blockhut' + page.data.id === item.id) {
+  } else if (page.data.type === 'building' && 'minecolonies/blockhut' + page.data.id === item.id) {
     const itemData = await getEntry('items', `minecolonies/blockhut${page.data.id}`);
     if (itemData !== undefined) {
       return {
@@ -40,10 +36,11 @@ async function extractWikiPageData(
   }
 }
 
-async function getWikiPageForItem(item: PartialCollectionEntry<'items'>): Promise<WikiItemPage | undefined> {
+async function getWikiPageForItem(item: CollectionEntry<'items'>): Promise<WikiItemPage | undefined> {
   const pages = await getCollection('wiki');
-  const itemPages = await Promise.all(pages.map((page) => extractWikiPageData(page, item)));
-  const filteredPages = itemPages.filter((f) => f !== undefined);
+  const filteredPages = await Promise.all(pages.map((page) => extractWikiPageData(page, item))).then((res) =>
+    res.filter((f) => f !== undefined)
+  );
 
   if (filteredPages.length > 1) {
     throw new Error(
@@ -55,35 +52,18 @@ async function getWikiPageForItem(item: PartialCollectionEntry<'items'>): Promis
 }
 
 export async function getItemLink(item: CollectionEntry<'items'>) {
-  if (item.id.startsWith('minecraft')) {
+  if (item.data.baseId.startsWith('minecraft')) {
     return `https://minecraft.wiki/${item.data.name.replace(' ', '_')}`;
   }
 
   return await getWikiPageForItem(item).then((p) => (p?.page ? '/wiki/' + p.page.id : undefined));
 }
 
-export async function getItemImage(icon: string, width: number, height?: number) {
-  let src: string;
-  if (isUrl(icon)) {
-    src = await getImage({
-      src: icon,
-      width,
-      height
-    }).then((d) => d.src);
-  } else {
-    const [modId, fileNameWithExtension] = icon.split('/', 2);
-    const [fileName, ext] = fileNameWithExtension.split('.', 2);
-    let imageFile;
-    if (ext === 'gif') {
-      imageFile = await import(`../assets/images/wiki/items/${modId}/${fileName}.gif`).then((f) => f.default);
-    } else {
-      imageFile = await import(`../assets/images/wiki/items/${modId}/${fileName}.png`).then((f) => f.default);
-    }
-    src = await getImage({
-      src: imageFile,
-      width,
-      height
-    }).then((d) => d.src);
-  }
-  return src;
+export async function getItemsFromTag(tag: ResourceLocation, version: CollectionEntry<'versions'>['data']) {
+  const tagData = await getJsonFile(
+    z.array(z.string()),
+    `./src/data/wiki/tags/${tag.namespace}/${tag.path}.yaml`,
+    parseYaml
+  );
+  return tagData.map((item) => resourceLocationToWikiReference(parseResourceLocation(item), version, 'items'));
 }

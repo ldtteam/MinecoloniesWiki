@@ -1,9 +1,0 @@
-type: shaped
-row2:
-  tag1: boats
-  tag3: boats
-row3:
-  tag1: boats
-  tag2: boats
-  tag3: boats
-output: minecolonies/supply_ship

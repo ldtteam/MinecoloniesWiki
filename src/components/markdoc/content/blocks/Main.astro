@@ -1,11 +1,8 @@
 ---
 import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
 import BuildingName from '@components/markdoc/names/BuildingName.astro';
-import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
 import WorkerName from '@components/markdoc/names/WorkerName.astro';
-import { getEntry } from 'astro:content';
-
-const rack = await getEntry({ collection: 'items', id: 'minecolonies/blockminecoloniesrack' });
+import ItemNameAllVersions from '@components/wiki/names/items/ItemNameAllVersions.astro';
 ---
 
 <BuildingContentBlock {...Astro.props} header="main interface" imageKey="main" imageAlt="Main interface">
@@ -57,8 +54,8 @@ const rack = await getEntry({ collection: 'items', id: 'minecolonies/blockmineco
       <li><b>Info Button:</b> Some huts have an in-game guide. Press the ? button to access it.</li>
       <li>
         <b>Inventory:</b> Here you can access the hut block's storage, where the worker at this hut takes and deposits materials.
-        They will also use any <VersionedItemName item={rack} /> that were placed in the hut when it was built or upgraded,
-        so be sure to check those as well!
+        They will also use any <ItemNameAllVersions item="minecolonies/blockminecoloniesrack" /> that were placed in the hut
+        when it was built or upgraded, so be sure to check those as well!
       </li>
       <li>
         <b>Chest Icon:</b> Click this button to see all the items in the hut's storage (including the hut block's inventory

@@ -1,5 +1,4 @@
 id: blockhutstonesmeltery
 name: Stone Smeltery Hut Block
 description: The Hut Block for the Stone Smeltery.
-icons:
-  - minecolonies/blockhutstonesmeltery
+isBlock: true

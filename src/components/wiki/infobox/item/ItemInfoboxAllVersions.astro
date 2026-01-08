@@ -1,0 +1,31 @@
+---
+import VersionContent from '@components/version/VersionContent.astro';
+import { getSortedVersions, getVersionedEntry } from '@utils/version';
+
+import ItemInfobox from './ItemInfobox.astro';
+
+interface Props {
+  id: string;
+  expand?: boolean;
+}
+
+const { id } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions
+    .map(async (version) => {
+      const item = await getVersionedEntry('items', version, id);
+      if (item === undefined) {
+        return undefined;
+      }
+      return (
+        <VersionContent versions={[version]}>
+          <ItemInfobox item={item} />
+        </VersionContent>
+      );
+    })
+    .filter((f) => f !== undefined)
+}

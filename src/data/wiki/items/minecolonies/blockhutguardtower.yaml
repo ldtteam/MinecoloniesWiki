@@ -1,5 +1,4 @@
 id: blockhutguardtower
 name: Guard Tower Hut Block
 description: The Hut Block for the Guard Tower.
-icons:
-  - minecolonies/blockhutguardtower
+isBlock: true

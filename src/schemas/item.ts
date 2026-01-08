@@ -1,13 +1,13 @@
-import { overrideSchema } from '@utils/override';
-import { reference, z } from 'astro:content';
+import { z } from 'astro:content';
 
-export const itemSchema = overrideSchema(
-  z.object({
-    id: z.string(),
-    name: z.string(),
-    description: z.string(),
-    icons: z.array(z.string())
-  })
-);
+import { versionedObjectSchema } from './version';
 
-export const tagSchema = z.array(reference('items'));
+export const itemSchemaWithoutVersionData = z.object({
+  name: z.string(),
+  description: z.string(),
+  isBlock: z.boolean().default(false),
+  modelPath: z.string().optional(),
+  modelNamespace: z.string().optional()
+});
+
+export const itemSchema = itemSchemaWithoutVersionData.and(versionedObjectSchema);

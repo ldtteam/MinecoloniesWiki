@@ -1,0 +1,22 @@
+---
+import ItemNameAllVersions from '@components/wiki/names/items/ItemNameAllVersions.astro';
+import { getItemLink } from '@utils/items';
+import { getNewestVersion, getVersionedEntry } from '@utils/version';
+
+interface Props {
+  currentPage: string;
+  name: string;
+}
+
+const { currentPage, name } = Astro.props;
+
+const latestVersion = await getNewestVersion();
+const item = await getVersionedEntry('items', latestVersion, name);
+if (item === undefined) {
+  throw new Error(`Item ${name} does not exist for version ${latestVersion.id}.`);
+}
+
+const itemLink = await getItemLink(item);
+---
+
+<ItemNameAllVersions item={name} link={itemLink !== '/wiki/' + currentPage} />

@@ -1,6 +1,4 @@
 id: ancienttome
 name: Ancient Tome
-description: The Ancient Tome is an item dropped by raiders that allows your Enchanter to make enchanted books.
-icons:
-  - minecolonies/ancienttome.gif
-  - minecolonies/ancienttome_glowing.gif
+description: The Ancient Tome is an item dropped by raiders that allows your Enchanter
+  to make enchanted books.

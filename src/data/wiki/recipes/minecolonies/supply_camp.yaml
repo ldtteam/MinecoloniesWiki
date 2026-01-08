@@ -1,9 +1,0 @@
-type: shaped
-row2:
-  tag1: chests
-  tag3: chests
-row3:
-  tag1: chests
-  tag2: chests
-  tag3: chests
-output: minecolonies/supply_camp

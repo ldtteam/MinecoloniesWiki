@@ -1,5 +1,4 @@
 id: blockhutmechanic
 name: Mechanic Hut Block
 description: The Hut Block for the Mechanic.
-icons:
-  - minecolonies/blockhutmechanic
+isBlock: true

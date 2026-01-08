@@ -1,5 +1,4 @@
 id: blockhutlumberjack
 name: Forester Hut Block
 description: The Hut Block for the Forester.
-icons:
-  - minecolonies/blockhutlumberjack
+isBlock: true

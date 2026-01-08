@@ -1,0 +1,13 @@
+---
+import { getItemLink } from '@utils/items';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  link?: boolean;
+}
+
+const { item, link = true } = Astro.props;
+---
+
+{link ? <a href={await getItemLink(item)}>{item.data.name}</a> : item.data.name}

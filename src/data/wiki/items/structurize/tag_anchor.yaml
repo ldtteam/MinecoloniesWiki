@@ -1,5 +1,0 @@
-id: tag_anchor
-name: Tag Anchor
-description: The Tag Anchor can be used as an anchor block in schematics which is replaced by it's replace block.
-icons:
-  - structurize/tag_anchor

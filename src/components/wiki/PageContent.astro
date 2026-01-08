@@ -1,10 +1,9 @@
 ---
-import ItemCombinedInfobox from '@components/markdoc/infobox/ItemCombinedInfobox.astro';
-import ItemInfobox from '@components/markdoc/infobox/ItemInfobox.astro';
-import { type CollectionEntry, render } from 'astro:content';
-import { getEntry } from 'astro:content';
+import Wrapper from '@components/core/infobox/Wrapper.astro';
+import { type CollectionEntry, getEntry, render } from 'astro:content';
 
-import BuildingInfobox from './infobox/BuildingInfobox.astro';
+import BuildingInfoboxAllVersions from './infobox/building/BuildingInfoboxAllVersions.astro';
+import ItemInfoboxAllVersions from './infobox/item/ItemInfoboxAllVersions.astro';
 
 interface Props {
   page: CollectionEntry<'wiki'>;
@@ -24,18 +23,46 @@ async function getBuildingData(id: string) {
 
 {
   page.data.type === 'building' ? (
-    <BuildingInfobox building={await getBuildingData(page.data.id)}>
-      <Content id={page.id} frontmatter={page.data} />
-    </BuildingInfobox>
+    <Wrapper>
+      <Content id={page.data.id} frontmatter={page.data} />
+
+      <BuildingInfoboxAllVersions building={await getBuildingData(page.data.id)} slot="infobox" />
+    </Wrapper>
   ) : page.data.type === 'item' && (page.data.infobox?.show ?? true) ? (
-    <ItemInfobox item={page.data.item.id}>
+    <Wrapper>
       <Content id={page.id} frontmatter={page.data} />
-    </ItemInfobox>
+
+      <ItemInfoboxAllVersions id={page.data.item} slot="infobox" />
+    </Wrapper>
   ) : page.data.type === 'item-combined' && (page.data.infobox?.show ?? true) ? (
-    <ItemCombinedInfobox items={page.data.items.map((item) => item.id)} cols={page.data.infobox?.cols ?? 2}>
+    <Wrapper>
       <Content id={page.id} frontmatter={page.data} />
-    </ItemCombinedInfobox>
+
+      <div class="grid item-infobox-container" slot="infobox" style={{ '--bs-columns': page.data.infobox?.cols ?? 2 }}>
+        {page.data.items.map((item) => (
+          <ItemInfoboxAllVersions id={item} expand />
+        ))}
+      </div>
+    </Wrapper>
   ) : (
     <Content id={page.id} frontmatter={page.data} />
   )
 }
+
+<style lang="scss">
+  .item-infobox-container {
+    --bs-gap: 1em;
+    direction: rtl;
+    height: min-content;
+    float: right;
+
+    :global(*) {
+      direction: initial;
+    }
+  }
+</style>
+
+<style lang="scss">
+  @import '../../css/bootstrap-vars.scss';
+  @import '../../../node_modules/bootstrap/scss/_grid.scss';
+</style>

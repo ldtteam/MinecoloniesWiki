@@ -1,5 +1,5 @@
 id: rallying_banner
 name: Rallying Banner
-description: The Rallying Banner can be used to quickly tell Guards to move to your location to reinforce you.
-icons:
-  - minecolonies/rallying_banner
+description: The Rallying Banner can be used to quickly tell Guards to move to your
+  location to reinforce you.
+modelPath: banner_rally_guards

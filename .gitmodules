@@ -1,5 +1,32 @@
-[submodule "minecolonies"]
-	path = minecolonies
+[submodule "submodules/minecolonies-12000"]
+	path = submodules/minecolonies-12000
 	url = https://github.com/ldtteam/minecolonies.git
-	ignore = all
 	branch = version/main
+[submodule "submodules/minecolonies-12100"]
+	path = submodules/minecolonies-12100
+	url = https://github.com/ldtteam/minecolonies.git
+	branch = version/1.21
+[submodule "submodules/structurize-12000"]
+	path = submodules/structurize-12000
+	url = https://github.com/ldtteam/Structurize.git
+	branch = version/main
+[submodule "submodules/structurize-12100"]
+	path = submodules/structurize-12100
+	url = https://github.com/ldtteam/Structurize.git
+	branch = version/1.21
+[submodule "submodules/domum_ornamentum-12000"]
+	path = submodules/domum_ornamentum-12000
+	url = https://github.com/ldtteam/Domum-Ornamentum.git
+	branch = version/latest
+[submodule "submodules/domum_ornamentum-12100"]
+	path = submodules/domum_ornamentum-12100
+	url = https://github.com/ldtteam/Domum-Ornamentum.git
+	branch = version/1.21
+[submodule "submodules/multipiston-12000"]
+	path = submodules/multipiston-12000
+	url = https://github.com/ldtteam/Piston-Unlimited.git
+	branch = version/main
+[submodule "submodules/multipiston-12100"]
+	path = submodules/multipiston-12100
+	url = https://github.com/ldtteam/Piston-Unlimited.git
+	branch = version/1.21

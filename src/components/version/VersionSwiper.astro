@@ -1,0 +1,66 @@
+---
+import { toKebabCase } from '@utils/string';
+import type { CollectionEntry } from 'astro:content';
+import type { SwiperOptions } from 'swiper/types';
+
+interface Props extends SwiperOptions {
+  version: CollectionEntry<'versions'>;
+  class?: string;
+}
+
+const { version, class: className, ...props } = Astro.props;
+
+function convertKeys(prefix: string, object: object, results: Record<string, string>) {
+  Object.entries(object).forEach(([key, value]) => {
+    const newKey = prefix + toKebabCase(key);
+    if (typeof value === 'object') {
+      convertKeys(newKey + '-', value, results);
+    } else if (value) {
+      results[newKey] = value.toString();
+    }
+  });
+}
+
+const containerProps: Record<string, string> = {};
+convertKeys('', props, containerProps);
+---
+
+<swiper-container data-swiper-versioned data-version={version.data.order} class={className} {...containerProps}>
+  <slot />
+</swiper-container>
+
+<script>
+  import type { SwiperContainer } from 'swiper/element';
+
+  function updateSwipers(version: string) {
+    const swipers = document.querySelectorAll<SwiperContainer>('swiper-container[data-swiper-versioned]');
+    swipers.forEach((swiper) => {
+      if (swiper.dataset.recipeVersion?.toString() === version.toString()) {
+        swiper.swiper.enable();
+      } else {
+        swiper.swiper.disable();
+      }
+    });
+  }
+
+  function update(mutations: MutationRecord[]) {
+    for (const mutation of mutations) {
+      if (
+        mutation.type === 'attributes' &&
+        mutation.attributeName === 'data-version' &&
+        mutation.target instanceof HTMLElement
+      ) {
+        updateSwipers(mutation.target.dataset.version!);
+      }
+    }
+  }
+
+  const versionObserver = new MutationObserver(update);
+
+  function setup() {
+    versionObserver.observe(document.body, { attributes: true });
+    updateSwipers(document.body.dataset.version!);
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

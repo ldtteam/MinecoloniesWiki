@@ -1,0 +1,6 @@
+id: blocktagsubstitution
+name: Tag Anchor
+description:
+  The Tag Anchor can be used as an anchor block in schematics which is
+  replaced by it's replace block.
+isBlock: true

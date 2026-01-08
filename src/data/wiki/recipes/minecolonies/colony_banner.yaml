@@ -1,8 +1,0 @@
-type: shaped
-row1:
-  tag2: wool
-row2:
-  tag2: wool
-row3:
-  item2: structurize/build_tool
-output: minecolonies/colony_banner

@@ -1,5 +1,7 @@
 id: brick_extra
 name: Brick Extra
-description: Extra Blocks are special blocks made from a given input material and a single dye in an X shape.
-icons:
-  - domum_ornamentum/brick_extra
+description:
+  Extra Blocks are special blocks made from a given input material and
+  a single dye in an X shape.
+isBlock: true
+modelPath: extra/brick/brick_extra

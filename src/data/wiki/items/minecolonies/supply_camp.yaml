@@ -1,5 +1,5 @@
 id: supply_camp
 name: Supply Camp
-description: The Supply Camp is the start of your colony, place it down to create a supply camp. Supply camps give you the necessary equipment to found a colony.
-icons:
-  - minecolonies/supply_camp
+description: The Supply Camp is the start of your colony, place it down to create
+  a supply camp. Supply camps give you the necessary equipment to found a colony.
+modelPath: supplycampdeployer

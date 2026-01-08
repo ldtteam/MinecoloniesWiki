@@ -1,38 +1,72 @@
 - id: "1.18"
   order: 11800
+  submodule: "12000"
+  packFormat: 8
 - id: "1.18.1"
   order: 11801
+  submodule: "12000"
+  packFormat: 8
 - id: "1.18.2"
   order: 11802
+  submodule: "12000"
+  packFormat: 9
 - id: "1.19"
   order: 11900
+  submodule: "12000"
+  packFormat: 10
 - id: "1.19.1"
   order: 11901
+  submodule: "12000"
+  packFormat: 10
 - id: "1.19.2"
   order: 11902
+  submodule: "12000"
+  packFormat: 10
 - id: "1.19.3"
   order: 11903
+  submodule: "12000"
+  packFormat: 10
 - id: "1.19.4"
   order: 11904
+  submodule: "12000"
+  packFormat: 12
 - id: "1.20"
   order: 12000
   supported: true
+  submodule: "12000"
+  packFormat: 15
 - id: "1.20.1"
   order: 12001
   supported: true
+  submodule: "12000"
+  packFormat: 15
 - id: "1.20.2"
   order: 12002
+  submodule: "12000"
+  packFormat: 18
 - id: "1.20.3"
   order: 12003
+  submodule: "12000"
+  packFormat: 26
 - id: "1.20.4"
   order: 12004
+  submodule: "12000"
+  packFormat: 26
 - id: "1.20.5"
   order: 12005
+  submodule: "12000"
+  packFormat: 41
 - id: "1.20.6"
   order: 12006
+  submodule: "12000"
+  packFormat: 41
 - id: "1.21"
   order: 12100
   supported: true
+  submodule: "12100"
+  packFormat: 48
 - id: "1.21.1"
   order: 12101
   supported: true
+  submodule: "12100"
+  packFormat: 48

@@ -1,22 +1,22 @@
 ---
-import { type CitizenNamesPack, getCitizenNamesPackWithAuthor } from '@utils/citizen_names';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  packs: CitizenNamesPack[];
+  packs: CollectionEntry<'citizen_name_packs'>[];
 }
 
-const packs = Astro.props.packs.map((pack) => getCitizenNamesPackWithAuthor(pack.id, pack));
+const { packs } = Astro.props;
 ---
 
 {
   packs.map((pack) => (
     <>
-      <h4>{pack.name}</h4>
+      <h4>{pack.data.name}</h4>
       <p>
-        <a href={`/citizen_names/${pack.filename}.zip`}>Download {pack.name} Datapack</a>
+        <a href={`/citizen_names/${pack.data.filename}.zip`}>Download {pack.data.name} Datapack</a>
       </p>
       <p>
-        <i>Credits to: {pack.credits}</i>
+        <i>Credits to: {pack.data.credits}</i>
       </p>
     </>
   ))

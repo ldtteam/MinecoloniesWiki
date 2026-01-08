@@ -1,5 +1,4 @@
 id: blockhutshepherd
 name: Shepherd Hut Block
 description: The Hut Block for the Shepherd.
-icons:
-  - minecolonies/blockhutshepherd
+isBlock: true

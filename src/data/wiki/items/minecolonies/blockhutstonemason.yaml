@@ -1,5 +1,4 @@
 id: blockhutstonemason
 name: Stonemason Hut Block
 description: The Hut Block for the Stonemason.
-icons:
-  - minecolonies/blockhutstonemason
+isBlock: true

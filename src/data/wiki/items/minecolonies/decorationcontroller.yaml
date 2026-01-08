@@ -1,0 +1,4 @@
+id: decorationcontroller
+name: Decoration Controller
+description: The Decoration Controller is used to create decoration schematics.
+isBlock: true

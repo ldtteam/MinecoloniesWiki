@@ -3,7 +3,7 @@ import shiki from '@astrojs/markdoc/shiki';
 import { schema } from 'src/markdoc/schema';
 
 import { building, contentBlocks as buildingContentBlocks } from './src/markdoc/buildings';
-import { item, item_combined_infobox, item_infobox, item_page } from './src/markdoc/items';
+import { item, item_infobox, item_page } from './src/markdoc/items';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import type { Tag } from './src/markdoc/types';
 import {
@@ -37,7 +37,6 @@ const config: AstroMarkdocConfig = {
     item,
     item_page,
     item_infobox,
-    item_combined_infobox,
     research_trees,
     research_list,
     research_link,

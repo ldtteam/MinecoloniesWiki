@@ -1,5 +1,4 @@
 id: blockhutbarrackstower
 name: Barracks Tower Hut Block
 description: The Hut Block for the Barracks Tower.
-icons:
-  - minecolonies/blockhutbarrackstower
+isBlock: true

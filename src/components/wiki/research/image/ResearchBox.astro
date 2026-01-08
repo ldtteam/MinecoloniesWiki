@@ -12,16 +12,16 @@ interface Props {
 
 const { research } = Astro.props;
 
-let template = `<p class="fs-5 mb-0">${research.name}</p>`;
-if (research.subtitle) {
-  template += `<p class="text-secondary small">${research.subtitle}</p>`;
+let template = `<p class="fs-5 mb-0">${research.data.name}</p>`;
+if (research.data.subtitle) {
+  template += `<p class="text-secondary small">${research.data.subtitle}</p>`;
 }
 
 const container = await AstroContainer.create();
 
-if (research.requirements.length > 0 || research.costs.length > 0) {
+if (research.data.requirements.length > 0 || research.data.costs.length > 0) {
   template += '<p class="mb-0">Requirements</p><ul>';
-  for (const requirement of research.requirements) {
+  for (const requirement of research.data.requirements) {
     template += await container
       .renderToString(ResearchRequirement, {
         props: {
@@ -30,7 +30,7 @@ if (research.requirements.length > 0 || research.costs.length > 0) {
       })
       .then((res) => `<li>${res}</li>`);
   }
-  for (const cost of research.costs) {
+  for (const cost of research.data.costs) {
     template += await container
       .renderToString(ResearchCost, {
         props: {
@@ -42,9 +42,9 @@ if (research.requirements.length > 0 || research.costs.length > 0) {
   template += '</ul>';
 }
 
-if (research.effects.length > 0) {
+if (research.data.effects.length > 0) {
   template += '<p class="mb-0">Effects</p><ul>';
-  for (const effect of research.effects) {
+  for (const effect of research.data.effects) {
     template += await container
       .renderToString(ResearchEffect, {
         props: {
@@ -61,7 +61,7 @@ if (research.effects.length > 0) {
   <div class="research-card-line-wrapper">
     <div class="research-card-wrapper">
       {
-        research.parent && (
+        research.data.parent && (
           <div class="research-lines-vertical">
             <div class="line-vertical line-vertical-top" />
             <div class="line-vertical line-vertical-fill" />
@@ -69,33 +69,27 @@ if (research.effects.length > 0) {
           </div>
         )
       }
-      {research.parent && <hr class="line-horizontal" />}
-      <div
-        class="research-card card"
-        data-bs-title={template}
-        data-bs-toggle="tooltip"
-        data-bs-placement="bottom"
-        data-bs-custom-class="research-card-tooltip"
-        data-bs-html="true"
-      >
+      {research.data.parent && <hr class="line-horizontal" />}
+      <div class="research-card card">
         <div class="card-body">
-          <p class="card-title" title={research.name}>
-            {research.name}
+          <p class="card-title" title={research.data.name}>
+            {research.data.name}
           </p>
-          <p class="card-subtitle text-body-secondary" title={research.subtitle}>
-            {research.subtitle}&nbsp;
+          <p class="card-subtitle text-body-secondary" title={research.data.subtitle}>
+            {research.data.subtitle}&nbsp;
           </p>
         </div>
+        <div class="research-tooltip" set:html={template} />
       </div>
       {research.children.length > 0 && <div class="line-horizontal" />}
     </div>
-    {research.parent && <div class="line-vertical line-vertical-overflow" />}
+    {research.data.parent && <div class="line-vertical line-vertical-overflow" />}
   </div>
 
   <div class="research-children-wrapper">
     {
       research.children
-        .toSorted((a, b) => a.sortOrder - b.sortOrder)
+        .toSorted((a, b) => a.data.sortOrder - b.data.sortOrder)
         .map((child) => (
           <div class="research-child-wrapper">
             <Astro.self research={child} />
@@ -105,24 +99,57 @@ if (research.effects.length > 0) {
   </div>
 </div>
 
-<style is:global lang="scss">
+<style lang="scss">
   @import '../../../../css/bootstrap-vars.scss';
-  @import '../../../../../node_modules/bootstrap/scss/tooltip';
 
-  /* Tooltip styling */
-  .research-card-tooltip {
-    --bs-tooltip-max-width: fit-content;
-    --bs-tooltip-bg: white;
-    --bs-tooltip-color: black;
-    --bs-tooltip-opacity: 1;
+  .research-tooltip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
 
-    .tooltip-arrow {
-      --bs-tooltip-bg: #{$secondary-border-subtle};
+    min-width: 200px;
+    max-width: 400px;
+    width: max-content;
+
+    padding: 0.5rem 0.75rem;
+    background: white;
+    color: black;
+    border: 1px solid $secondary-border-subtle;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+    text-align: start;
+    font-size: 0.875rem;
+    line-height: 1.5;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.15s ease-in-out,
+      visibility 0.15s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-bottom-color: $secondary-border-subtle;
     }
 
-    .tooltip-inner {
-      border: 1px solid $secondary-border-subtle;
-      text-align: start;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-bottom-color: white;
+      margin-bottom: -1px;
     }
   }
 </style>
@@ -183,6 +210,7 @@ if (research.effects.length > 0) {
     --bs-card-spacer-y: 0.5em;
     width: 300px;
     margin: 0.5em 0;
+    position: relative;
 
     .card-title,
     .card-subtitle {
@@ -197,6 +225,11 @@ if (research.effects.length > 0) {
 
     .card-subtitle {
       font-size: 0.75em;
+    }
+
+    &:hover .research-tooltip {
+      opacity: 1;
+      visibility: visible;
     }
   }
 

@@ -1,22 +1,30 @@
 ---
-import type { PartialCollectionEntry } from '@utils/util';
+import { isFullEntry, type PartialCollectionEntry } from '@utils/util';
 import { getEntry } from 'astro:content';
 
-import CustomRecipe from './CustomRecipe.astro';
+import CrafterRecipe from './CrafterRecipe.astro';
 import RecipeConditions from './RecipeConditions.astro';
 import ShapedRecipe from './ShapedRecipe.astro';
+import ShapelessRecipe from './ShapelessRecipe.astro';
+import SmeltingRecipe from './SmeltingRecipe.astro';
 
 interface Props {
   recipe: PartialCollectionEntry<'recipes'>;
 }
 
 const { recipe } = Astro.props;
-const recipeData = await getEntry(recipe);
+const recipeData = isFullEntry(recipe) ? recipe : await getEntry(recipe);
+
+if (!recipeData) {
+  throw new Error(`Could not find recipe with id ${recipe.id}`);
+}
 ---
 
 <div class="recipe-box">
   {recipeData.data.type === 'shaped' && <ShapedRecipe recipe={recipeData.data} />}
-  {recipeData.data.type === 'custom' && <CustomRecipe recipe={recipeData.data} />}
+  {recipeData.data.type === 'shapeless' && <ShapelessRecipe recipe={recipeData.data} />}
+  {recipeData.data.type === 'crafter' && <CrafterRecipe recipe={recipeData.data} />}
+  {recipeData.data.type === 'smelting' && <SmeltingRecipe recipe={recipeData.data} />}
 </div>
 
 <RecipeConditions conditions={recipeData.data.conditions} />

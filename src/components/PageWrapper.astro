@@ -1,8 +1,8 @@
 ---
+import Banner from './core/Banner.astro';
+import Card from './core/Card.astro';
 import Header from './Header.astro';
 import Navigation from './navbar/Navigation.astro';
-import Banner from './ui/Banner.astro';
-import Card from './ui/Card.astro';
 
 interface Props {
   isHome: boolean;
@@ -62,11 +62,4 @@ const year = new Date().getFullYear();
 <script>
   import 'bootstrap/js/dist/offcanvas';
   import 'bootstrap/js/dist/dropdown';
-  import Tooltip from 'bootstrap/js/dist/tooltip';
-
-  function setup() {
-    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((elem) => new Tooltip(elem));
-  }
-
-  document.addEventListener('astro:page-load', setup);
 </script>

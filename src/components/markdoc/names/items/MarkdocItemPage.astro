@@ -1,0 +1,24 @@
+---
+import { getNewestVersion, getVersionedEntry } from '@utils/version';
+import { getEntry } from 'astro:content';
+
+interface Props {
+  currentPage: string;
+  name: string;
+}
+
+const { currentPage, name } = Astro.props;
+
+const itemPage = await getEntry('wiki', 'items/' + name);
+if (itemPage === undefined || itemPage.data.type === 'building' || itemPage.data.type === 'page') {
+  throw new Error(`Item page '${name}' does not exist.`);
+}
+
+const latestVersion = await getNewestVersion();
+const title =
+  itemPage.data.type === 'item'
+    ? (await getVersionedEntry('items', latestVersion, itemPage.data.item))?.data.name
+    : itemPage.data.title;
+---
+
+{'/wiki/' + currentPage !== itemPage.id ? <a href={'/wiki/' + itemPage.id}>{title}</a> : <span>{title}</span>}

@@ -5,20 +5,26 @@ import yaml from 'yaml';
 
 type Parser = (value: string) => unknown;
 
+type Options = {
+  suppressWarnings?: boolean;
+};
+
 /**
  * Read a JSON file in UTF-8 encoding.
  * @param schema the zod schema to parse the files in.
  * @param file the target file path.
  * @param parser how to initially parse the file. Defaults to JSON parsing.
+ * @param options additional configuration options.
  * @returns the output JSON object.
  */
 export async function getJsonFile<T extends z.ZodSchema>(
   schema: T,
   file: string,
-  parser: Parser = parseJson
+  parser: Parser = parseJson,
+  options: Options = {}
 ): Promise<z.infer<T>> {
   const content = await fs.readFile(file, 'utf-8');
-  return parseZodSchema(schema, content, parser);
+  return parseZodSchema(schema, content, parser, options);
 }
 
 /**
@@ -26,12 +32,14 @@ export async function getJsonFile<T extends z.ZodSchema>(
  * @param schema the zod schema to parse the files in.
  * @param files the array of files to read.
  * @param parser how to initially parse the file. Defaults to JSON parsing.
+ * @param options additional configuration options.
  * @returns an object containing filenames and their content.
  */
 export async function getAllJsonFiles<T extends z.ZodSchema>(
   schema: T,
   files: string[],
-  parser: Parser = parseJson
+  parser: Parser = parseJson,
+  options: Options = {}
 ): Promise<Record<string, z.infer<T>>> {
   const contents = await Promise.all(
     files.map(async (file) => ({
@@ -40,7 +48,7 @@ export async function getAllJsonFiles<T extends z.ZodSchema>(
     }))
   );
   return contents.reduce<Record<string, z.infer<T>>>((previousValue, currentValue) => {
-    previousValue[currentValue.file] = parseZodSchema(schema, currentValue.output, parser);
+    previousValue[currentValue.file] = parseZodSchema(schema, currentValue.output, parser, options);
     return previousValue;
   }, {});
 }
@@ -51,13 +59,15 @@ export async function getAllJsonFiles<T extends z.ZodSchema>(
  * @param directory the directory to read all the files from.
  * @param recursive whether to load all files recursively. Defaults to false.
  * @param parser how to initially parse the file. Defaults to JSON parsing.
+ * @param options additional configuration options.
  * @returns an object containing filenames and their content.
  */
 export async function getAllFilesInDirectory<T extends z.ZodSchema>(
   schema: T,
   directory: string,
   recursive: boolean = false,
-  parser: Parser = parseJson
+  parser: Parser = parseJson,
+  options: Options = {}
 ): Promise<Record<string, z.infer<T>>> {
   const files = await fs.readdir(directory, {
     encoding: 'utf-8',
@@ -67,7 +77,8 @@ export async function getAllFilesInDirectory<T extends z.ZodSchema>(
   return await getAllJsonFiles(
     schema,
     files.filter((file) => file.isFile()).map((file) => path.resolve(file.parentPath, file.name)),
-    parser
+    parser,
+    options
   );
 }
 
@@ -75,17 +86,21 @@ export async function getAllFilesInDirectory<T extends z.ZodSchema>(
  * Internal parse function.
  * @param schema the zod schema to parse the files in.
  * @param value the raw string value.
+ * @param parser how to initially parse the file. Defaults to JSON parsing.
+ * @param options additional configuration options.
  * @returns the parsed item following the schema.
  */
-function parseZodSchema<T extends z.ZodSchema>(schema: T, value: string, parser: Parser) {
+function parseZodSchema<T extends z.ZodSchema>(schema: T, value: string, parser: Parser, options: Options = {}) {
+  const raw = parser(value);
   try {
-    return schema.parse(parser(value));
+    return schema.parse(raw);
   } catch (ex) {
-    if (ex instanceof z.ZodError) {
+    if (ex instanceof z.ZodError && !(options.suppressWarnings ?? false)) {
       console.error('Issues parsing object:');
       console.error(value);
       console.error(ex.issues);
     }
+    console.log(raw);
     throw ex;
   }
 }

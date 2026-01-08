@@ -1,0 +1,16 @@
+---
+import Wrapper from '@components/core/infobox/Wrapper.astro';
+import ItemInfoboxAllVersions from '@components/wiki/infobox/item/ItemInfoboxAllVersions.astro';
+
+interface Props {
+  item: string;
+}
+
+const { item } = Astro.props;
+---
+
+<Wrapper>
+  <slot />
+
+  <ItemInfoboxAllVersions id={item} slot="infobox" />
+</Wrapper>

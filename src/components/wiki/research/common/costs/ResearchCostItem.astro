@@ -1,5 +1,5 @@
 ---
-import VersionedItemName from '@components/markdoc/names/items/VersionedItemName.astro';
+import ItemName from '@components/wiki/names/items/ItemName.astro';
 import { type CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
@@ -14,5 +14,5 @@ const items = await Promise.all(cost.items.map((item) => getEntry(item)));
 
 <span>{cost.quantity}</span>
 <span>
-  {items.map(async (item) => <VersionedItemName item={item} />)}
+  {items.map(async (item) => <ItemName item={item} />)}
 </span>

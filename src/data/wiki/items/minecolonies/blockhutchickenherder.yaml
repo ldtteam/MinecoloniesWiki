@@ -1,5 +1,4 @@
 id: blockhutchickenherder
 name: Chicken Farmer's Hut Block
 description: The Hut Block for the Chicken Farmer's.
-icons:
-  - minecolonies/blockhutchickenherder
+isBlock: true

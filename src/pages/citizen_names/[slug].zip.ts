@@ -1,16 +1,16 @@
-import { type CitizenNamesPackWithAuthor, getCitizenNamesPackWithAuthor } from '@utils/citizen_names';
 import archiver from 'archiver';
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 
-const officialCitizenNamePacks = await getCollection('official_citizen_name_packs');
+type CitizenNamesPack = CollectionEntry<'citizen_name_packs'>['data'] & { id: string };
+
 const citizenNamePacks = await getCollection('citizen_name_packs');
 
-function packMcMetaTemplate(name: string) {
+function packMcMetaTemplate(name: string, packFormat: number) {
   return JSON.stringify(
     {
       pack: {
-        pack_format: 9,
+        pack_format: packFormat,
         description: `${name} names for Minecolonies citizens.`
       }
     },
@@ -20,19 +20,11 @@ function packMcMetaTemplate(name: string) {
 }
 
 export function getStaticPaths() {
-  return officialCitizenNamePacks
-    .map((pack) => ({
-      params: {
-        slug: getCitizenNamesPackWithAuthor(pack.id, { ...pack.data, id: pack.id }).filename
-      }
-    }))
-    .concat(
-      citizenNamePacks.map((pack) => ({
-        params: {
-          slug: pack.data.filename
-        }
-      }))
-    );
+  return citizenNamePacks.map((pack) => ({
+    params: {
+      slug: pack.data.filename
+    }
+  }));
 }
 
 export const GET: APIRoute = async ({ params }) => {
@@ -54,7 +46,7 @@ export const GET: APIRoute = async ({ params }) => {
 
     archive.on('error', reject);
 
-    archive.append(packMcMetaTemplate(data.name), {
+    archive.append(packMcMetaTemplate(data.name, data.packFormat), {
       name: 'pack.mcmeta'
     });
 
@@ -66,11 +58,6 @@ export const GET: APIRoute = async ({ params }) => {
   });
 };
 
-function getPackFromSlug(slug: string): CitizenNamesPackWithAuthor | undefined {
-  return (
-    officialCitizenNamePacks
-      .map((pack) => getCitizenNamesPackWithAuthor(pack.id, { ...pack.data, id: pack.id }))
-      .find((pack) => pack.filename === slug) ??
-    citizenNamePacks.map((pack) => ({ ...pack.data, id: pack.id })).find((pack) => pack.filename === slug)
-  );
+function getPackFromSlug(slug: string): CitizenNamesPack | undefined {
+  return citizenNamePacks.map((pack) => ({ ...pack.data, id: pack.id })).find((pack) => pack.filename === slug);
 }

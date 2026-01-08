@@ -1,5 +1,4 @@
 id: blockhutminer
 name: Mine Hut Block
 description: The Hut Block for the Mine.
-icons:
-  - minecolonies/blockhutminer
+isBlock: true

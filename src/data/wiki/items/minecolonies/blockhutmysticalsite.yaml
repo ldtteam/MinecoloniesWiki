@@ -1,5 +1,4 @@
 id: blockhutmysticalsite
 name: Mystical Site Hut Block
 description: The Hut Block for the Mystical Site.
-icons:
-  - minecolonies/blockhutmysticalsite
+isBlock: true

@@ -1,5 +1,4 @@
 id: blockhutblacksmith
 name: Blacksmith Hut Block
 description: The Hut Block for the Blacksmith.
-icons:
-  - minecolonies/blockhutblacksmith
+isBlock: true

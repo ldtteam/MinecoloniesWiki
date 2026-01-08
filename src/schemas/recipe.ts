@@ -1,53 +1,50 @@
 import { reference, z } from 'astro:content';
 
-const recipeItem = reference('items').or(reference('items').array());
-const recipeTag = reference('tags');
+import { versionedObjectSchema } from './version';
+
+const recipeItems = reference('items').array();
 
 const shapedRecipe = z.object({
   type: z.literal('shaped'),
-  row1: z
-    .object({
-      item1: recipeItem.optional(),
-      item2: recipeItem.optional(),
-      item3: recipeItem.optional(),
-      tag1: recipeTag.optional(),
-      tag2: recipeTag.optional(),
-      tag3: recipeTag.optional()
-    })
-    .optional(),
-  row2: z
-    .object({
-      item1: recipeItem.optional(),
-      item2: recipeItem.optional(),
-      item3: recipeItem.optional(),
-      tag1: recipeTag.optional(),
-      tag2: recipeTag.optional(),
-      tag3: recipeTag.optional()
-    })
-    .optional(),
-  row3: z
-    .object({
-      item1: recipeItem.optional(),
-      item2: recipeItem.optional(),
-      item3: recipeItem.optional(),
-      tag1: recipeTag.optional(),
-      tag2: recipeTag.optional(),
-      tag3: recipeTag.optional()
-    })
-    .optional()
+  items: z.array(z.array(recipeItems.or(z.undefined())).max(3)).max(3)
 });
 
-const customRecipe = z.object({
-  type: z.literal('custom'),
-  items: z
+const shapelessRecipe = z.object({
+  type: z.literal('shapeless'),
+  items: z.array(
+    z.object({
+      item: recipeItems
+    })
+  )
+});
+
+const crafterRecipe = z.object({
+  type: z.literal('crafter'),
+  crafter: z.string(),
+  inputs: z.array(
+    z.object({
+      item: recipeItems,
+      count: z.number().default(1)
+    })
+  ),
+  intermediate: reference('items'),
+  minBuildingLevel: z.number().optional(),
+  additionalOutput: z
     .array(
       z.object({
-        item: recipeItem.optional(),
-        tag: recipeTag.optional(),
-        amount: z.number().default(1)
+        item: recipeItems,
+        count: z.number().default(1)
       })
     )
-    .max(9)
+    .optional(),
+  tool: z.string().optional()
+});
+
+const smeltingRecipe = z.object({
+  type: z.literal('smelting'),
+  item: recipeItems.max(1),
+  cookingTime: z.number().default(200),
+  experience: z.number().default(0)
 });
 
 const buildingCraftingCondition = z.object({
@@ -61,16 +58,18 @@ const researchCraftingCondition = z.object({
   research: reference('research')
 });
 
-const recipeTypes = z.discriminatedUnion('type', [shapedRecipe, customRecipe]);
 const craftingConditionTypes = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);
 
-export const recipeSchema = recipeTypes.and(
-  z.object({
+const recipeTypes = z.discriminatedUnion('type', [shapedRecipe, shapelessRecipe, crafterRecipe, smeltingRecipe]);
+
+export const recipeSchema = z
+  .object({
     output: reference('items'),
     amount: z.number().default(1),
     conditions: z.array(craftingConditionTypes).default([])
   })
-);
+  .and(versionedObjectSchema)
+  .and(recipeTypes);
 
-export type RecipeTag = z.infer<typeof recipeTag>;
-export type RecipeItem = z.infer<typeof recipeItem>;
+export type RecipeItem = z.infer<typeof recipeItems>;
+export type RecipeConditions = z.infer<typeof craftingConditionTypes>;

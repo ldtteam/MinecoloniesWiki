@@ -1,0 +1,36 @@
+---
+import Infobox from '@components/core/infobox/Infobox.astro';
+import RecipeGrid from '@components/core/infobox/RecipeGrid.astro';
+import ItemImage from '@components/wiki/items/ItemImage.astro';
+import ItemName from '@components/wiki/names/items/ItemName.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  expand?: boolean;
+}
+
+const { item, expand = false } = Astro.props;
+
+const version = await getEntry(item.data.version);
+const recipes = await getCollection('recipes');
+---
+
+<Infobox class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
+  <ItemName slot="title" item={item} link={false} />
+
+  <div class="text-center">
+    <ItemImage item={item} version={version} alt={item.data.name + ' icon'} size={150} />
+  </div>
+
+  <RecipeGrid recipes={recipes} />
+</Infobox>
+
+<style>
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: auto max-content;
+    gap: 0.5em;
+  }
+</style>

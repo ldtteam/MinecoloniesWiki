@@ -1,0 +1,12 @@
+---
+import { getResearchId } from '@utils/research';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  research: CollectionEntry<'research'>;
+}
+
+const { research } = Astro.props;
+---
+
+<a href={`/wiki/systems/research#${await getResearchId(research)}`}>{research.data.name}</a>
