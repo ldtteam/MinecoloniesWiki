@@ -10,24 +10,22 @@ export { renderItemBuffer, renderItemDataUrl } from './item';
 
 export async function renderItemOrBlockDataUrl(
   item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
   options?: RenderBlockOptions
 ): Promise<string | undefined> {
   if (item.data.isBlock) {
-    return renderBlockDataUrl(item, version, options);
+    return renderBlockDataUrl(item, options);
   } else {
-    return renderItemDataUrl(item, version, options);
+    return renderItemDataUrl(item, options);
   }
 }
 
 export async function renderItemOrBlockBuffer(
   item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
   options?: RenderBlockOptions
 ): Promise<Buffer | undefined> {
   if (item.data.isBlock) {
-    return renderBlockBuffer(item, version, options);
+    return renderBlockBuffer(item, options);
   } else {
-    return renderItemBuffer(item, version, options);
+    return renderItemBuffer(item, options);
   }
 }

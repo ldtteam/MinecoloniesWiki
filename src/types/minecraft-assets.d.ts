@@ -5,6 +5,8 @@ declare module 'minecraft-assets' {
   }
 
   export interface BlockTextureData extends TextureData {
+    blockState: string;
+    model: string | null;
     variations?: Array<{
       metadata: number;
       texture: string;
@@ -13,9 +15,27 @@ declare module 'minecraft-assets' {
 
   export type ItemTextureData = TextureData;
 
+  export interface BlockStateVariant {
+    model: string;
+    x?: number;
+    y?: number;
+    uvlock?: boolean;
+    weight?: number;
+  }
+
+  export interface BlockStateMultipartCondition {
+    OR?: Record<string, string>[];
+    [key: string]: string | Record<string, string>[] | undefined;
+  }
+
+  export interface BlockStateMultipartCase {
+    apply: BlockStateVariant | BlockStateVariant[];
+    when?: BlockStateMultipartCondition;
+  }
+
   export interface BlockState {
-    variants?: Record<string, unknown>;
-    multipart?: unknown[];
+    variants?: Record<string, BlockStateVariant | BlockStateVariant[]>;
+    multipart?: BlockStateMultipartCase[];
   }
 
   export interface ModelElement {

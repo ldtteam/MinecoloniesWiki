@@ -2,7 +2,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Canvas } from 'canvas';
 import { createCanvas, Image } from 'canvas';
 import fs from 'fs/promises';
-import type { BlockModel } from 'minecraft-assets';
+import type { BlockModel, BlockState, BlockStateVariant } from 'minecraft-assets';
 import mcAssets from 'minecraft-assets';
 import path from 'path';
 import * as THREE from 'three';
@@ -15,11 +15,21 @@ import { parseResourceLocation, type ResourceLocation } from '../resourcelocatio
 
 export type CameraAngle = 'front' | 'back';
 
+export type BlockStateInput = Record<string, string>;
+
+export interface ResolvedModel {
+  modelId: string;
+  x?: number;
+  y?: number;
+  uvlock?: boolean;
+}
+
 export interface RenderBlockOptions {
   width?: number;
   height?: number;
   angle?: CameraAngle;
   rotation?: number;
+  blockState?: BlockStateInput;
 }
 
 // ============================================================================
@@ -56,10 +66,178 @@ export function getAssetPaths(version: CollectionEntry<'versions'>, namespace?: 
 }
 
 // ============================================================================
+// Blockstate Resolution
+// ============================================================================
+
+function parseBlockStateKey(key: string): BlockStateInput {
+  if (key === '') {
+    return {};
+  }
+  const result: BlockStateInput = {};
+  for (const part of key.split(',')) {
+    const [name, value] = part.split('=');
+    if (name && value !== undefined) {
+      result[name] = value;
+    }
+  }
+  return result;
+}
+
+function blockStateMatches(pattern: BlockStateInput, input: BlockStateInput): boolean {
+  for (const [key, value] of Object.entries(pattern)) {
+    if (input[key] !== value) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function selectVariant(variant: BlockStateVariant | BlockStateVariant[]): BlockStateVariant {
+  if (Array.isArray(variant)) {
+    const totalWeight = variant.reduce((sum, v) => sum + (v.weight ?? 1), 0);
+    let random = Math.random() * totalWeight;
+    for (const v of variant) {
+      random -= v.weight ?? 1;
+      if (random <= 0) {
+        return v;
+      }
+    }
+    return variant[0];
+  }
+  return variant;
+}
+
+function resolveVariantsBlockState(
+  variants: Record<string, BlockStateVariant | BlockStateVariant[]>,
+  inputState?: BlockStateInput,
+  defaultModel?: string | null
+): ResolvedModel {
+  const keys = Object.keys(variants);
+
+  if (!inputState || Object.keys(inputState).length === 0) {
+    if (defaultModel) {
+      return { modelId: defaultModel };
+    }
+    const firstVariant = selectVariant(variants[keys[0]]);
+    return {
+      modelId: firstVariant.model,
+      x: firstVariant.x,
+      y: firstVariant.y,
+      uvlock: firstVariant.uvlock
+    };
+  }
+
+  for (const key of keys) {
+    const pattern = parseBlockStateKey(key);
+    if (blockStateMatches(pattern, inputState)) {
+      const variant = selectVariant(variants[key]);
+      return {
+        modelId: variant.model,
+        x: variant.x,
+        y: variant.y,
+        uvlock: variant.uvlock
+      };
+    }
+  }
+
+  throw new Error(`No matching blockstate variant found for input: ${JSON.stringify(inputState)}`);
+}
+
+function matchesMultipartCondition(
+  condition: Record<string, string | Record<string, string>[] | undefined>,
+  inputState: BlockStateInput
+): boolean {
+  if (condition.OR && Array.isArray(condition.OR)) {
+    return condition.OR.some((orCondition) => matchesMultipartCondition(orCondition, inputState));
+  }
+
+  for (const [key, value] of Object.entries(condition)) {
+    if (key === 'OR') {
+      continue;
+    }
+    if (typeof value !== 'string') {
+      continue;
+    }
+
+    const allowedValues = value.split('|');
+    const inputValue = inputState[key];
+    if (!allowedValues.includes(inputValue ?? '')) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function resolveMultipartBlockState(
+  multipart: Array<{ apply: BlockStateVariant | BlockStateVariant[]; when?: Record<string, unknown> }>,
+  inputState?: BlockStateInput
+): ResolvedModel[] {
+  const resolvedModels: ResolvedModel[] = [];
+  const state = inputState ?? {};
+
+  for (const part of multipart) {
+    let shouldApply = true;
+
+    if (part.when) {
+      shouldApply = matchesMultipartCondition(
+        part.when as Record<string, string | Record<string, string>[] | undefined>,
+        state
+      );
+    }
+
+    if (shouldApply) {
+      const variant = selectVariant(part.apply);
+      resolvedModels.push({
+        modelId: variant.model,
+        x: variant.x,
+        y: variant.y,
+        uvlock: variant.uvlock
+      });
+    }
+  }
+
+  if (resolvedModels.length === 0) {
+    const firstVariant = selectVariant(multipart[0].apply);
+    return [
+      {
+        modelId: firstVariant.model,
+        x: firstVariant.x,
+        y: firstVariant.y,
+        uvlock: firstVariant.uvlock
+      }
+    ];
+  }
+
+  return resolvedModels;
+}
+
+export function resolveBlockState(
+  blockState: BlockState,
+  inputState?: BlockStateInput,
+  defaultModel?: string | null
+): ResolvedModel[] {
+  if (blockState.variants) {
+    return [resolveVariantsBlockState(blockState.variants, inputState, defaultModel)];
+  }
+
+  if (blockState.multipart) {
+    return resolveMultipartBlockState(blockState.multipart, inputState);
+  }
+
+  throw new Error('Invalid blockstate: no variants or multipart defined');
+}
+
+// ============================================================================
 // Asset Loaders
 // ============================================================================
 
 export interface AssetLoader {
+  getDefaultModel: (blockPath: string, version: CollectionEntry<'versions'>, namespace: string) => string | null;
+  loadBlockState: (
+    blockPath: string,
+    version: CollectionEntry<'versions'>,
+    namespace: string
+  ) => Promise<BlockState | null>;
   loadBlockModel: (blockPath: string, version: CollectionEntry<'versions'>, namespace: string) => Promise<BlockModel>;
   loadItemTexture: (itemPath: string, version: CollectionEntry<'versions'>, namespace: string) => Promise<Buffer>;
   loadTexture: (
@@ -71,6 +249,28 @@ export interface AssetLoader {
 }
 
 const vanillaAssetLoader: AssetLoader = {
+  getDefaultModel(blockPath: string, version: CollectionEntry<'versions'>, _namespace: string): string | null {
+    const minecraftAssets = mcAssets(version.id);
+    const cleanPath = blockPath.replace(/^block\//, '');
+    const blockData = minecraftAssets.blocks[cleanPath];
+    if (!blockData?.model) {
+      return null;
+    }
+    // Normalize format: minecraft:blocks/name -> minecraft:block/name
+    return blockData.model.replace(':blocks/', ':block/');
+  },
+
+  async loadBlockState(
+    blockPath: string,
+    version: CollectionEntry<'versions'>,
+    _namespace: string
+  ): Promise<BlockState | null> {
+    const minecraftAssets = mcAssets(version.id);
+    const cleanPath = blockPath.replace(/^block\//, '');
+    const blockState = minecraftAssets.blocksStates[cleanPath];
+    return blockState ?? null;
+  },
+
   async loadBlockModel(
     blockPath: string,
     version: CollectionEntry<'versions'>,
@@ -127,6 +327,32 @@ const vanillaAssetLoader: AssetLoader = {
 };
 
 const modAssetLoader: AssetLoader = {
+  getDefaultModel(_blockPath: string, _version: CollectionEntry<'versions'>, _namespace: string): string | null {
+    // Mod assets don't have a default model registry like vanilla
+    return null;
+  },
+
+  async loadBlockState(
+    blockPath: string,
+    version: CollectionEntry<'versions'>,
+    namespace: string
+  ): Promise<BlockState | null> {
+    const assetPaths = getAssetPaths(version, namespace);
+    const cleanPath = blockPath.replace(/^block\//, '');
+
+    for (const assetPath of assetPaths) {
+      try {
+        const blockStatePath = path.join(assetPath, 'blockstates', `${cleanPath}.json`);
+        const data = await fs.readFile(blockStatePath, 'utf-8');
+        return JSON.parse(data);
+      } catch {
+        continue;
+      }
+    }
+
+    return null;
+  },
+
   async loadBlockModel(
     blockPath: string,
     version: CollectionEntry<'versions'>,

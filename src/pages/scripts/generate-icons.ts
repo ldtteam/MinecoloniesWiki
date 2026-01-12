@@ -24,9 +24,6 @@ async function generateIcons() {
   console.log('Starting icon generation...');
 
   try {
-    const versions = await getCollection('versions');
-    const sortedVersions = versions.sort((a, b) => a.data.order - b.data.order);
-
     // Collect all unique item IDs that are actually used
     const itemIdsNeeded = await collectUsedItemIds();
 
@@ -36,15 +33,16 @@ async function generateIcons() {
     const allItems = await getCollection('items');
     const itemsToRender = allItems.filter((item) => itemIdsNeeded.has(item.id));
 
-    console.log(`Generating icons for ${itemsToRender.length} items across ${sortedVersions.length} versions`);
+    console.log(`Generating icons for ${itemsToRender.length} items`);
 
     // Ensure output directory exists
     const outputDir = './public/images/wiki/items';
+    await fs.rm(outputDir, { force: true, recursive: true });
     await fs.mkdir(outputDir, { recursive: true });
 
     // Generate icons with concurrency control
     const limit = pLimit(ICON_GENERATION_CONCCURRENCY);
-    const total = itemsToRender.length * sortedVersions.length;
+    const total = itemsToRender.length;
 
     console.log(`Rendering icons with concurrency of ${limit.concurrency}...`);
 
@@ -56,9 +54,7 @@ async function generateIcons() {
     const promises: Promise<void>[] = [];
 
     for (const item of itemsToRender) {
-      for (const version of sortedVersions) {
-        promises.push(limit(() => generateIcon(item, version, outputDir)));
-      }
+      promises.push(limit(() => generateIcon(item, outputDir)));
     }
 
     const results = await Promise.allSettled(promises);
@@ -147,19 +143,15 @@ async function collectUsedItemIds(): Promise<Set<string>> {
 /**
  * Generates a single icon and saves it to the output directory
  */
-async function generateIcon(
-  item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
-  outputDir: string
-): Promise<void> {
-  const itemIdParts = item.id.split('/');
+async function generateIcon(item: CollectionEntry<'items'>, outputDir: string): Promise<void> {
+  const itemIdParts = item.data.baseId.split('/');
   const namespace = itemIdParts[0];
   const itemName = itemIdParts[1];
-  const fileName = `${namespace}_${itemName}_${version.id}.png`;
+  const fileName = `${namespace}_${itemName}_${item.data.version.id}.png`;
   const filePath = path.join(outputDir, fileName);
 
   // Render the icon directly to buffer
-  const buffer = await renderItemOrBlockBuffer(item, version, {
+  const buffer = await renderItemOrBlockBuffer(item, {
     width: 32,
     height: 32
   });

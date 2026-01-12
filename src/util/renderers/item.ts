@@ -1,4 +1,4 @@
-import type { CollectionEntry } from 'astro:content';
+import { type CollectionEntry, getEntry } from 'astro:content';
 import { createCanvas, Image } from 'canvas';
 
 import { getAssetLoader, parseItemId, toResourceLocation } from './common';
@@ -18,10 +18,9 @@ async function renderTextureToBuffer(textureData: Buffer, width: number, height:
 
 export async function renderItemDataUrl(
   item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
   options?: { width?: number; height?: number }
 ): Promise<string | undefined> {
-  const buffer = await renderItemBuffer(item, version, options);
+  const buffer = await renderItemBuffer(item, options);
   if (!buffer) {
     return undefined;
   }
@@ -32,9 +31,9 @@ export async function renderItemDataUrl(
 
 export async function renderItemBuffer(
   item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
   options?: { width?: number; height?: number }
 ): Promise<Buffer | undefined> {
+  const version = await getEntry(item.data.version);
   const errors: { text: string; error?: unknown }[] = [];
 
   const targetWidth = options?.width || 100;

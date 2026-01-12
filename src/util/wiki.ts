@@ -48,7 +48,7 @@ export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promis
     return entry.data.excerpt;
   } else if (entry.data.type === 'item') {
     const item = await getVersionedEntry('items', latestVersion, entry.data.item);
-    return item?.data.name;
+    return item?.data.description;
   } else if (entry.data.type === 'building') {
     return entry.data.description;
   }
@@ -66,7 +66,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     if (item === undefined) {
       return undefined;
     }
-    return await renderItemOrBlockDataUrl(item, latestVersion, {
+    return await renderItemOrBlockDataUrl(item, {
       width: 100,
       height: 100,
       angle: 'front'
@@ -80,7 +80,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     if (item === undefined) {
       return undefined;
     }
-    return await renderItemOrBlockDataUrl(item, latestVersion, {
+    return await renderItemOrBlockDataUrl(item, {
       width: 100,
       height: 100,
       angle: 'front'
@@ -104,7 +104,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
       return undefined;
     }
 
-    return await renderItemOrBlockDataUrl(blockItem, latestVersion, {
+    return await renderItemOrBlockDataUrl(blockItem, {
       width: 100,
       height: 100,
       angle: 'front'

@@ -4,7 +4,6 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   item: CollectionEntry<'items'>;
-  version: CollectionEntry<'versions'>;
   alt?: string;
   size: number;
   angle?: CameraAngle;
@@ -12,9 +11,9 @@ interface Props {
   class?: string;
 }
 
-const { item, version, alt, size, angle, rotation, class: className } = Astro.props;
+const { item, alt, size, angle, rotation, class: className } = Astro.props;
 
-const src = await renderItemOrBlockDataUrl(item, version, {
+const src = await renderItemOrBlockDataUrl(item, {
   width: size,
   height: size,
   angle,

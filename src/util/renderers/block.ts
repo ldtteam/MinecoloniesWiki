@@ -1,14 +1,18 @@
-/**
- * 3D Block Model Renderer
- */
-
-import type { CollectionEntry } from 'astro:content';
+import { type CollectionEntry, getEntry } from 'astro:content';
 import { createCanvas } from 'canvas';
 import gl from 'gl';
 import type { BlockModel, ModelElement } from 'minecraft-assets';
 import * as THREE from 'three';
 
-import { getAssetLoader, getAssetPaths, parseItemId, type RenderBlockOptions, toResourceLocation } from './common';
+import {
+  getAssetLoader,
+  getAssetPaths,
+  parseItemId,
+  resolveBlockState,
+  type ResolvedModel,
+  type RenderBlockOptions,
+  toResourceLocation
+} from './common';
 
 function mergeModels(parent: BlockModel, child: BlockModel): BlockModel {
   return {
@@ -17,6 +21,29 @@ function mergeModels(parent: BlockModel, child: BlockModel): BlockModel {
     elements: child.elements || parent.elements,
     children: child.children || parent.children
   };
+}
+
+async function resolveModelsForBlock(
+  blockId: string,
+  version: CollectionEntry<'versions'>,
+  blockStateInput?: Record<string, string>
+): Promise<ResolvedModel[]> {
+  const { namespace, path: blockPath } = parseItemId(blockId);
+  const loader = getAssetLoader(namespace);
+
+  const blockState = await loader.loadBlockState(blockPath, version, namespace);
+
+  if (blockState) {
+    const defaultModel = loader.getDefaultModel(blockPath, version, namespace);
+    return resolveBlockState(blockState, blockStateInput, defaultModel);
+  }
+
+  try {
+    await loader.loadBlockModel(blockPath, version, namespace);
+    return [{ modelId: blockId }];
+  } catch {
+    throw new Error(`Cannot render block ${blockId}: no blockstate or model found`);
+  }
 }
 
 async function loadModelById(
@@ -333,9 +360,9 @@ async function createMesh(
 
 export async function renderBlockBuffer(
   item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
   options?: RenderBlockOptions
 ): Promise<Buffer | undefined> {
+  const version = await getEntry(item.data.version);
   const errors: { text: string; error?: unknown }[] = [];
 
   const targetWidth = options?.width || 512;
@@ -398,194 +425,217 @@ export async function renderBlockBuffer(
 
   const assetPaths = getAssetPaths(version, namespace);
 
-  for (const assetPath of assetPaths) {
-    try {
-      const model = await loadModelById(blockId, assetPath, version, modelCache);
+  try {
+    const resolvedModels = await resolveModelsForBlock(blockId, version, options?.blockState);
 
-      const modelGroup = new THREE.Group();
+    const modelGroup = new THREE.Group();
 
-      if (model.children) {
-        for (const childModel of Object.values(model.children)) {
-          if (childModel.elements) {
-            const childTextures = { ...model.textures, ...childModel.textures };
-            for (const element of childModel.elements) {
-              const mesh = await createMesh(element, childTextures, assetPath, version, textureCache);
-              modelGroup.add(mesh);
+    for (const resolvedModel of resolvedModels) {
+      const modelSubGroup = new THREE.Group();
+
+      for (const assetPath of assetPaths) {
+        try {
+          const model = await loadModelById(resolvedModel.modelId, assetPath, version, modelCache);
+
+          if (model.children) {
+            for (const childModel of Object.values(model.children)) {
+              if (childModel.elements) {
+                const childTextures = { ...model.textures, ...childModel.textures };
+                for (const element of childModel.elements) {
+                  const mesh = await createMesh(element, childTextures, assetPath, version, textureCache);
+                  modelSubGroup.add(mesh);
+                }
+              }
+            }
+          } else if (model.elements) {
+            for (const element of model.elements) {
+              const mesh = await createMesh(element, model.textures || {}, assetPath, version, textureCache);
+              modelSubGroup.add(mesh);
             }
           }
-        }
-      } else if (model.elements) {
-        for (const element of model.elements) {
-          const mesh = await createMesh(element, model.textures || {}, assetPath, version, textureCache);
-          modelGroup.add(mesh);
-        }
-      }
 
-      if (modelGroup.children.length === 0) {
-        errors.push({ text: `Model ${blockId} has no elements to render` });
-        continue;
-      }
-
-      scene.add(modelGroup);
-
-      const prRotationBox = new THREE.Box3().setFromObject(modelGroup);
-      const modelCenter = prRotationBox.getCenter(new THREE.Vector3());
-
-      if (options?.rotation !== undefined && options.rotation !== 0) {
-        const rotationRadians = (options.rotation * Math.PI) / 180;
-
-        modelGroup.position.set(-modelCenter.x, -modelCenter.y, -modelCenter.z);
-        modelGroup.rotation.y = rotationRadians;
-
-        const rotatedCenter = modelCenter.clone().applyAxisAngle(new THREE.Vector3(0, 1, 0), rotationRadians);
-        modelGroup.position.add(rotatedCenter);
-      }
-
-      modelGroup.updateMatrixWorld(true);
-      const box = new THREE.Box3().setFromObject(modelGroup);
-
-      if (box.isEmpty()) {
-        errors.push({ text: `No meshes found in model ${blockId}` });
-        continue;
-      }
-
-      const sphere = new THREE.Sphere();
-      box.getBoundingSphere(sphere);
-      const center = sphere.center;
-      const radius = sphere.radius;
-
-      const fov = 35;
-      const aspect = width / height;
-      const camera = new THREE.PerspectiveCamera(fov, aspect, 0.1, 1000);
-
-      const angle = options?.angle || 'front';
-      const direction =
-        angle === 'front' ? new THREE.Vector3(2, 1.2, 1).normalize() : new THREE.Vector3(-2, 1.2, -1).normalize();
-
-      const fovRadians = (fov * Math.PI) / 180;
-      const tanHalfFov = Math.tan(fovRadians / 2);
-
-      const distanceY = radius / tanHalfFov;
-      const distanceX = radius / (tanHalfFov * aspect);
-      const distance = Math.max(distanceX, distanceY);
-
-      camera.position.copy(center).add(direction.clone().multiplyScalar(distance));
-      camera.lookAt(center);
-      camera.updateMatrixWorld();
-      camera.updateProjectionMatrix();
-
-      renderer.render(scene, camera);
-
-      const frameBufferPixels = new Uint8Array(width * height * 4);
-      glContext.readPixels(0, 0, width, height, glContext.RGBA, glContext.UNSIGNED_BYTE, frameBufferPixels);
-
-      const canvas = createCanvas(width, height);
-      const ctx = canvas.getContext('2d');
-      const imageData = ctx.createImageData(width, height);
-
-      for (let fbRow = 0; fbRow < height; fbRow++) {
-        const rowData = frameBufferPixels.subarray(fbRow * width * 4, (fbRow + 1) * width * 4);
-        const imgRow = height - fbRow - 1;
-        imageData.data.set(rowData, imgRow * width * 4);
-      }
-
-      ctx.putImageData(imageData, 0, 0);
-
-      let cropMinX = width;
-      let cropMinY = height;
-      let cropMaxX = 0;
-      let cropMaxY = 0;
-
-      for (let y = 0; y < height; y++) {
-        for (let x = 0; x < width; x++) {
-          const idx = (y * width + x) * 4;
-          const alpha = imageData.data[idx + 3];
-
-          if (alpha > 5) {
-            cropMinX = Math.min(cropMinX, x);
-            cropMinY = Math.min(cropMinY, y);
-            cropMaxX = Math.max(cropMaxX, x);
-            cropMaxY = Math.max(cropMaxY, y);
+          if (modelSubGroup.children.length > 0) {
+            break;
           }
-        }
-      }
-
-      if (cropMaxX > cropMinX && cropMaxY > cropMinY) {
-        const cropWidth = cropMaxX - cropMinX + 1;
-        const cropHeight = cropMaxY - cropMinY + 1;
-
-        const croppedCanvas = createCanvas(cropWidth, cropHeight);
-        const croppedCtx = croppedCanvas.getContext('2d');
-        croppedCtx.drawImage(canvas, cropMinX, cropMinY, cropWidth, cropHeight, 0, 0, cropWidth, cropHeight);
-
-        const scaleX = targetWidth / cropWidth;
-        const scaleY = targetHeight / cropHeight;
-        const scale = Math.min(scaleX, scaleY);
-
-        const scaledWidth = Math.round(cropWidth * scale);
-        const scaledHeight = Math.round(cropHeight * scale);
-
-        const downsampledCanvas = createCanvas(targetWidth, targetHeight);
-        const downsampledCtx = downsampledCanvas.getContext('2d');
-
-        const offsetX = Math.round((targetWidth - scaledWidth) / 2);
-        const offsetY = Math.round((targetHeight - scaledHeight) / 2);
-
-        downsampledCtx.drawImage(
-          croppedCanvas,
-          0,
-          0,
-          cropWidth,
-          cropHeight,
-          offsetX,
-          offsetY,
-          scaledWidth,
-          scaledHeight
-        );
-
-        textureCache.forEach((t) => t.dispose());
-
-        try {
-          renderer.dispose();
         } catch {
-          // Ignore disposal errors in headless mode
+          continue;
         }
-
-        const buffer = downsampledCanvas.toBuffer('image/png');
-        return buffer;
       }
+
+      if (modelSubGroup.children.length > 0) {
+        if (resolvedModel.x || resolvedModel.y) {
+          const pivot = new THREE.Vector3(0.5, 0.5, 0.5);
+          modelSubGroup.position.sub(pivot);
+
+          if (resolvedModel.x) {
+            modelSubGroup.rotation.x = (-resolvedModel.x * Math.PI) / 180;
+          }
+          if (resolvedModel.y) {
+            modelSubGroup.rotation.y = (-resolvedModel.y * Math.PI) / 180;
+          }
+
+          const wrapper = new THREE.Group();
+          wrapper.position.add(pivot);
+          wrapper.add(modelSubGroup);
+          modelGroup.add(wrapper);
+        } else {
+          modelGroup.add(modelSubGroup);
+        }
+      }
+    }
+
+    if (modelGroup.children.length === 0) {
+      errors.push({ text: `Model ${blockId} has no elements to render` });
+      errors.forEach((error) => console.warn(error.text, error.error));
+      return undefined;
+    }
+
+    scene.add(modelGroup);
+
+    const prRotationBox = new THREE.Box3().setFromObject(modelGroup);
+    const modelCenter = prRotationBox.getCenter(new THREE.Vector3());
+
+    if (options?.rotation !== undefined && options.rotation !== 0) {
+      const rotationRadians = (options.rotation * Math.PI) / 180;
+
+      modelGroup.position.set(-modelCenter.x, -modelCenter.y, -modelCenter.z);
+      modelGroup.rotation.y = rotationRadians;
+
+      const rotatedCenter = modelCenter.clone().applyAxisAngle(new THREE.Vector3(0, 1, 0), rotationRadians);
+      modelGroup.position.add(rotatedCenter);
+    }
+
+    modelGroup.updateMatrixWorld(true);
+    const box = new THREE.Box3().setFromObject(modelGroup);
+
+    if (box.isEmpty()) {
+      errors.push({ text: `No meshes found in model ${blockId}` });
+      errors.forEach((error) => console.warn(error.text, error.error));
+      return undefined;
+    }
+
+    const sphere = new THREE.Sphere();
+    box.getBoundingSphere(sphere);
+    const center = sphere.center;
+    const radius = sphere.radius;
+
+    const fov = 35;
+    const aspect = width / height;
+    const camera = new THREE.PerspectiveCamera(fov, aspect, 0.1, 1000);
+
+    const angle = options?.angle || 'front';
+    const direction =
+      angle === 'front' ? new THREE.Vector3(2, 1.2, 1).normalize() : new THREE.Vector3(-2, 1.2, -1).normalize();
+
+    const fovRadians = (fov * Math.PI) / 180;
+    const tanHalfFov = Math.tan(fovRadians / 2);
+
+    const distanceY = radius / tanHalfFov;
+    const distanceX = radius / (tanHalfFov * aspect);
+    const distance = Math.max(distanceX, distanceY);
+
+    camera.position.copy(center).add(direction.clone().multiplyScalar(distance));
+    camera.lookAt(center);
+    camera.updateMatrixWorld();
+    camera.updateProjectionMatrix();
+
+    renderer.render(scene, camera);
+
+    const frameBufferPixels = new Uint8Array(width * height * 4);
+    glContext.readPixels(0, 0, width, height, glContext.RGBA, glContext.UNSIGNED_BYTE, frameBufferPixels);
+
+    const canvas = createCanvas(width, height);
+    const ctx = canvas.getContext('2d');
+    const imageData = ctx.createImageData(width, height);
+
+    for (let fbRow = 0; fbRow < height; fbRow++) {
+      const rowData = frameBufferPixels.subarray(fbRow * width * 4, (fbRow + 1) * width * 4);
+      const imgRow = height - fbRow - 1;
+      imageData.data.set(rowData, imgRow * width * 4);
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+
+    let cropMinX = width;
+    let cropMinY = height;
+    let cropMaxX = 0;
+    let cropMaxY = 0;
+
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const idx = (y * width + x) * 4;
+        const alpha = imageData.data[idx + 3];
+
+        if (alpha > 5) {
+          cropMinX = Math.min(cropMinX, x);
+          cropMinY = Math.min(cropMinY, y);
+          cropMaxX = Math.max(cropMaxX, x);
+          cropMaxY = Math.max(cropMaxY, y);
+        }
+      }
+    }
+
+    textureCache.forEach((t) => t.dispose());
+
+    try {
+      renderer.dispose();
+    } catch {
+      // Ignore disposal errors in headless mode
+    }
+
+    if (cropMaxX > cropMinX && cropMaxY > cropMinY) {
+      const cropWidth = cropMaxX - cropMinX + 1;
+      const cropHeight = cropMaxY - cropMinY + 1;
+
+      const croppedCanvas = createCanvas(cropWidth, cropHeight);
+      const croppedCtx = croppedCanvas.getContext('2d');
+      croppedCtx.drawImage(canvas, cropMinX, cropMinY, cropWidth, cropHeight, 0, 0, cropWidth, cropHeight);
+
+      const scaleX = targetWidth / cropWidth;
+      const scaleY = targetHeight / cropHeight;
+      const scale = Math.min(scaleX, scaleY);
+
+      const scaledWidth = Math.round(cropWidth * scale);
+      const scaledHeight = Math.round(cropHeight * scale);
 
       const downsampledCanvas = createCanvas(targetWidth, targetHeight);
       const downsampledCtx = downsampledCanvas.getContext('2d');
-      downsampledCtx.drawImage(canvas, 0, 0, width, height, 0, 0, targetWidth, targetHeight);
 
-      textureCache.forEach((t) => t.dispose());
+      const offsetX = Math.round((targetWidth - scaledWidth) / 2);
+      const offsetY = Math.round((targetHeight - scaledHeight) / 2);
 
-      try {
-        renderer.dispose();
-      } catch {
-        // Ignore disposal errors in headless mode
-      }
+      downsampledCtx.drawImage(
+        croppedCanvas,
+        0,
+        0,
+        cropWidth,
+        cropHeight,
+        offsetX,
+        offsetY,
+        scaledWidth,
+        scaledHeight
+      );
 
-      const buffer = downsampledCanvas.toBuffer('image/png');
-      return buffer;
-    } catch (error) {
-      errors.push({ text: `Failed to render block ${item.data.baseId} for version ${version.id}:`, error });
-      continue;
+      return downsampledCanvas.toBuffer('image/png');
     }
+
+    const downsampledCanvas = createCanvas(targetWidth, targetHeight);
+    const downsampledCtx = downsampledCanvas.getContext('2d');
+    downsampledCtx.drawImage(canvas, 0, 0, width, height, 0, 0, targetWidth, targetHeight);
+
+    return downsampledCanvas.toBuffer('image/png');
+  } catch (error) {
+    errors.push({ text: `Failed to render block ${item.data.baseId} for version ${version.id}:`, error });
+    errors.forEach((err) => console.warn(err.text, err.error));
+    return undefined;
   }
-
-  errors.forEach((error) => console.warn(error.text, error.error));
-
-  return undefined;
 }
 
 export async function renderBlockDataUrl(
   item: CollectionEntry<'items'>,
-  version: CollectionEntry<'versions'>,
   options?: RenderBlockOptions
 ): Promise<string | undefined> {
-  const buffer = await renderBlockBuffer(item, version, options);
+  const buffer = await renderBlockBuffer(item, options);
   if (!buffer) {
     return undefined;
   }
