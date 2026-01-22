@@ -4,14 +4,14 @@
     "allowSyntheticDefaultImports": true,
     "noErrorTruncation": true,
     "verbatimModuleSyntax": true,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@assets/*": ["src/assets/*"],
-      "@utils/*": ["src/util/*"]
-    }
+    "baseUrl": "."
   },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "minecolonies"]
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist",
+    "minecolonies"
+  ]
 }

@@ -1,7 +1,6 @@
 ---
-import Button from '@components/core/Button.astro';
-import { getWikiPages } from '@utils/wiki';
-
+import { getWikiPages } from '../../util/wiki';
+import Button from '../core/Button.astro';
 import PageTitleRender from './PageTitleRender.astro';
 
 const wikiPages = await getWikiPages();

@@ -6,6 +6,8 @@ import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
 import purgecss from 'astro-purgecss';
 
+import symlinkBuilder from './src/integration/symlink-builder';
+
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
@@ -16,5 +18,5 @@ export default defineConfig({
   image: {
     domains: ['minecraft.wiki']
   },
-  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss()]
+  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder()]
 });

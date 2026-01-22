@@ -1,6 +1,7 @@
-import { reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { reference } from 'astro:content';
 
-import { versionedObjectSchema } from './version';
+import { versionedObjectSchema } from './version-object';
 
 const recipeItems = reference('items').array();
 
@@ -42,7 +43,7 @@ const crafterRecipe = z.object({
 
 const smeltingRecipe = z.object({
   type: z.literal('smelting'),
-  item: recipeItems.max(1),
+  item: recipeItems,
   cookingTime: z.number().default(200),
   experience: z.number().default(0)
 });
@@ -55,7 +56,7 @@ const buildingCraftingCondition = z.object({
 
 const researchCraftingCondition = z.object({
   type: z.literal('research'),
-  research: reference('research')
+  research: reference('research_effect')
 });
 
 const craftingConditionTypes = z.discriminatedUnion('type', [buildingCraftingCondition, researchCraftingCondition]);

@@ -1,5 +1,7 @@
-import { overrideSchema } from '@utils/override';
-import { reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { reference } from 'astro:content';
+
+import { overrideSchema } from '../util/override';
 
 export const buildingSchema = overrideSchema(
   z.object({

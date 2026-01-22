@@ -1,13 +1,10 @@
-import { z } from 'astro:content';
+import { z } from 'astro/zod';
 
-import { versionedObjectSchema } from './version';
+import { versionedObjectSchema } from './version-object';
 
 export const itemSchemaWithoutVersionData = z.object({
   name: z.string(),
-  description: z.string(),
-  isBlock: z.boolean().default(false),
-  modelPath: z.string().optional(),
-  modelNamespace: z.string().optional()
+  isBlock: z.boolean().default(false)
 });
 
 export const itemSchema = itemSchemaWithoutVersionData.and(versionedObjectSchema);

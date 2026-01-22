@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
+
 import {
   FILTER_ID_BUILDING,
   FILTER_ID_INVISIBLE,
@@ -9,7 +10,7 @@ import {
   FILTER_ID_SIZE_Y,
   FILTER_ID_SIZE_Z,
   type SchematicsResponse
-} from 'src/schemas/schematics';
+} from '../../schemas/schematics';
 
 export const prerender = false;
 

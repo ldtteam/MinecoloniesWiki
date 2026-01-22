@@ -11,7 +11,7 @@ recipes:
 rotation: 270
 ---
 
-The {% building /%} will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the {% worker name="cook" /%}, the {% item name="minecolonies/postbox" /%}, or as a minimum stock in the {% building name="warehouse" /%}.
+The {% building /%} will craft bread dough, cookie dough, cake dough, and raw pumpkin pie, then bake these in a furnace to create bread, cookies, cakes, and pumpkin pies. They will only do this upon request, whether from the {% worker name="cook" /%}, the {% item name="minecolonies/blockpostbox" /%}, or as a minimum stock in the {% building name="warehouse" /%}.
 
 The {% worker /%} can also craft some non-vanilla breads:
 
@@ -29,7 +29,7 @@ The {% worker /%} can also craft some non-vanilla breads:
 {% building_gui_content_block_fuel order=5 /%}
 {% building_gui_content_block_tasks order=6 /%}
 {% building_gui_content_block_settings order=7 %}
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

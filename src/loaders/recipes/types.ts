@@ -1,7 +1,9 @@
-import type { CollectionEntry, z } from 'astro:content';
+import { z } from 'astro/zod';
+import type { CollectionEntry } from 'astro:content';
 import type { ZodDiscriminatedUnion, ZodDiscriminatedUnionOption } from 'astro:schema';
-import type { recipeSchema } from 'src/schemas/recipe';
-import type { SupportedSubmodules } from 'src/schemas/version';
+
+import type { recipeSchema } from '../../schemas/recipe';
+import type { SupportedSubmodules } from '../../schemas/version';
 
 export type StoredRecipeData = z.infer<typeof recipeSchema>;
 

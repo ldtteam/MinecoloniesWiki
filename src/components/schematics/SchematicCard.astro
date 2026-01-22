@@ -1,8 +1,9 @@
 ---
-import VersionOverride from '@components/version/VersionOverride.astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
+
+import VersionOverride from '../version/VersionOverride.astro';
 
 export type Schematic = CollectionEntry<'schematics'>['data']['schematics'][number];
 

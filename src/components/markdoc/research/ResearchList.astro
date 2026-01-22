@@ -1,9 +1,10 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import type { ResearchTabs } from '@components/wiki/research/common/types';
-import ResearchTreeImage from '@components/wiki/research/image/ResearchTree.astro';
-import ResearchListTree from '@components/wiki/research/table/ResearchTree.astro';
 import { getCollection } from 'astro:content';
+
+import VersionContent from '../../version/VersionContent.astro';
+import type { ResearchTabs } from '../../wiki/research/common/types';
+import ResearchTreeImage from '../../wiki/research/image/ResearchTree.astro';
+import ResearchListTree from '../../wiki/research/table/ResearchTree.astro';
 
 const versions = await getCollection('versions');
 const allTrees = await getCollection('research_tree');

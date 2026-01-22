@@ -3,7 +3,7 @@ import { component } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const social_link: Tag = {
-  render: component('@components/markdoc/util/Social.astro'),
+  render: component('./src/components/markdoc/util/Social.astro'),
   selfClosing: true,
   attributes: {
     id: {
@@ -14,17 +14,17 @@ export const social_link: Tag = {
 };
 
 export const official_citizen_name_pack_list: Tag = {
-  render: component('@components/markdoc/citizen_name_packs/OfficialCitizenNamePackList.astro'),
+  render: component('./src/components/markdoc/citizen_name_packs/OfficialCitizenNamePackList.astro'),
   selfClosing: true
 };
 
 export const citizen_name_pack_list: Tag = {
-  render: component('@components/markdoc/citizen_name_packs/CitizenNamePackList.astro'),
+  render: component('./src/components/markdoc/citizen_name_packs/CitizenNamePackList.astro'),
   selfClosing: true
 };
 
 export const content_block: Tag = {
-  render: component('@components/markdoc/content/RegularContentBlock.astro'),
+  render: component('./src/components/markdoc/content/RegularContentBlock.astro'),
   attributes: {
     image: {
       type: String,
@@ -42,11 +42,11 @@ export const content_block: Tag = {
 };
 
 export const image_row: Tag = {
-  render: component('@components/markdoc/util/ImageRow.astro')
+  render: component('./src/components/markdoc/util/ImageRow.astro')
 };
 
 export const meta: Tag = {
-  render: component('@components/markdoc/util/Meta.astro'),
+  render: component('./src/components/markdoc/util/Meta.astro'),
   attributes: {
     key: {
       type: String,

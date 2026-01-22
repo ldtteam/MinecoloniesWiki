@@ -1,9 +1,10 @@
 ---
-import Layout from '@layouts/Default.astro';
-import { getOverrideValue } from '@utils/override';
-import { getNewestVersion } from '@utils/version';
 import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon/components';
+
+import Layout from '../../layouts/Default.astro';
+import { getOverrideValue } from '../../util/override';
+import { getNewestVersion } from '../../util/version';
 
 const packs = (await getCollection('schematics')).toSorted((a, b) =>
   a.data.displayName.localeCompare(b.data.displayName)

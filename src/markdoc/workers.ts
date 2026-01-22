@@ -10,7 +10,7 @@ export interface MarkdocWorkerComponent {
 }
 
 export const worker: Tag = {
-  render: component('@components/markdoc/names/WorkerName.astro'),
+  render: component('./src/components/markdoc/names/WorkerName.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -31,5 +31,5 @@ export const worker: Tag = {
 };
 
 export const workers_table: Tag = {
-  render: component('@components/markdoc/util/WorkersTable.astro')
+  render: component('./src/components/markdoc/util/WorkersTable.astro')
 };

@@ -1,7 +1,8 @@
 ---
-import { toKebabCase } from '@utils/string';
 import type { CollectionEntry } from 'astro:content';
 import type { SwiperOptions } from 'swiper/types';
+
+import { toKebabCase } from '../../util/string';
 
 interface Props extends SwiperOptions {
   version: CollectionEntry<'versions'>;

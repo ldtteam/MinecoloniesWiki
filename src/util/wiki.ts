@@ -1,7 +1,7 @@
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
+import fs from 'fs/promises';
 
 import { getOverrideValues } from './override';
-import { renderItemOrBlockDataUrl } from './renderers';
 import { getNewestVersion, getVersionedEntry, type VersionedResult } from './version';
 
 export type Title = string | VersionedResult<string>;
@@ -41,19 +41,33 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
   return entry.id;
 }
 
-export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
-  const latestVersion = await getNewestVersion();
+async function getItemImageDataUrl(item: CollectionEntry<'items'>): Promise<string | undefined> {
+  const version = await getEntry(item.data.version);
+  const [namespace, itemPath] = item.data.baseId.split('/');
 
-  if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
-    return entry.data.excerpt;
-  } else if (entry.data.type === 'item') {
-    const item = await getVersionedEntry('items', latestVersion, entry.data.item);
-    return item?.data.description;
-  } else if (entry.data.type === 'building') {
-    return entry.data.description;
+  if (item.data.isBlock) {
+    const blockStatePath = `./generator/versions/${version.data.submodule}/output/block_states/${namespace}/${itemPath}.json`;
+    try {
+      const data = await fs.readFile(blockStatePath, 'utf-8');
+      const blockState = JSON.parse(data);
+      const imageId = blockState.blockstates?.[0]?.imageid;
+      if (imageId) {
+        const imagePath = `./generator/versions/${version.data.submodule}/output/block_images/${namespace}/${itemPath}/${imageId}.png`;
+        const buffer = await fs.readFile(imagePath);
+        return `data:image/png;base64,${buffer.toString('base64')}`;
+      }
+    } catch {
+      return undefined;
+    }
+  } else {
+    const imagePath = `./generator/versions/${version.data.submodule}/output/item_images/${namespace}/${itemPath}.png`;
+    try {
+      const buffer = await fs.readFile(imagePath);
+      return `data:image/png;base64,${buffer.toString('base64')}`;
+    } catch {
+      return undefined;
+    }
   }
-
-  return undefined;
 }
 
 export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
@@ -66,11 +80,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     if (item === undefined) {
       return undefined;
     }
-    return await renderItemOrBlockDataUrl(item, {
-      width: 100,
-      height: 100,
-      angle: 'front'
-    });
+    return await getItemImageDataUrl(item);
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
@@ -80,11 +90,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     if (item === undefined) {
       return undefined;
     }
-    return await renderItemOrBlockDataUrl(item, {
-      width: 100,
-      height: 100,
-      angle: 'front'
-    });
+    return await getItemImageDataUrl(item);
   } else if (entry.data.type === 'building') {
     let blockItemId: string;
     switch (entry.data.id) {
@@ -104,11 +110,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
       return undefined;
     }
 
-    return await renderItemOrBlockDataUrl(blockItem, {
-      width: 100,
-      height: 100,
-      angle: 'front'
-    });
+    return await getItemImageDataUrl(blockItem);
   }
 }
 

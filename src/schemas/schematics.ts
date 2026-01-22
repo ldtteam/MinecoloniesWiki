@@ -1,4 +1,5 @@
-import { type CollectionEntry, type ImageFunction, reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { type CollectionEntry, type ImageFunction, reference } from 'astro:content';
 
 const schematicTypeDecoration = (image: ImageFunction) =>
   z.object({

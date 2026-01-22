@@ -1,6 +1,7 @@
-import { reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { reference } from 'astro:content';
 
-import { versionedObjectSchema } from './version';
+import { versionedObjectSchema } from './version-object';
 
 export const researchTreeSchema = z
   .object({

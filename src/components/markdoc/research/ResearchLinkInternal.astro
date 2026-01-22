@@ -1,12 +1,18 @@
 ---
-import { getResearchId } from '@utils/research';
 import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+import { getResearchId } from '../../../util/research';
 
 interface Props {
-  research: CollectionEntry<'research'>;
+  researchEffect: CollectionEntry<'research_effect'>;
 }
 
-const { research } = Astro.props;
+const { researchEffect } = Astro.props;
+
+const research = await getCollection('research', (research) =>
+  research.data.effects.map((m) => m.effect.id).includes(researchEffect.id)
+).then((res) => res.at(0));
 ---
 
-<a href={`/wiki/systems/research#${await getResearchId(research)}`}>{research.data.name}</a>
+{research && <a href={`/wiki/systems/research#${await getResearchId(research)}`}>{research.data.name}</a>}

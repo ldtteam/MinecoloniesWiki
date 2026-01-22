@@ -1,9 +1,9 @@
 ---
-import { getResearchId } from '@utils/research';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
+import { getResearchId } from '../../../../util/research';
 import ResearchCost from '../common/costs/ResearchCost.astro';
 import ResearchEffect from '../common/effects/ResearchEffect.astro';
 import ResearchRequirement from '../common/requirements/ResearchRequirement.astro';
@@ -18,7 +18,7 @@ interface Props {
 const { tree, name, depth, terminal = false } = Astro.props;
 
 const researches = (
-  await getCollection('research', (filter) => filter.data.tree.id == tree.id && filter.data.researchLevel === depth)
+  await getCollection('research', (filter) => filter.data.tree.id === tree.id && filter.data.researchLevel === depth)
 ).sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const researchesWithParent = await Promise.all(

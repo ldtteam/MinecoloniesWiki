@@ -1,6 +1,7 @@
-import { type CollectionEntry, type CollectionKey, type DataEntryMap, getCollection, getEntry, z } from 'astro:content';
-import type { versionedObjectSchema } from 'src/schemas/version';
+import { z } from 'astro/zod';
+import { type CollectionEntry, type CollectionKey, type DataEntryMap, getCollection, getEntry } from 'astro:content';
 
+import type { versionedObjectSchema } from '../schemas/version-object';
 import { isFullEntry, type PartialCollectionEntry } from './util';
 
 export interface DataForVersions<T> {

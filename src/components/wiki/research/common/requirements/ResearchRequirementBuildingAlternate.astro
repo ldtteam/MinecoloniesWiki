@@ -1,6 +1,7 @@
 ---
-import BuildingName from '@components/wiki/names/BuildingName.astro';
 import { type CollectionEntry, getEntries } from 'astro:content';
+
+import BuildingName from '../../../names/BuildingName.astro';
 
 interface Props {
   requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'buildings_alternate' }>;

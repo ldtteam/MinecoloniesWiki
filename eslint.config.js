@@ -20,7 +20,20 @@ export default defineConfig(
   ...eslintPluginAstro.configs.recommended,
   {
     rules: {
-      curly: ['error', 'all']
+      curly: ['error', 'all'],
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: ['src/*'],
+          paths: [
+            {
+              name: 'astro:content',
+              importNames: ['z'],
+              message: 'Import z from "astro/zod" instead to avoid virtual module issues.'
+            }
+          ]
+        }
+      ]
     }
   },
   {

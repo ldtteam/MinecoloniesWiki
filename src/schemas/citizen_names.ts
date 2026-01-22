@@ -1,6 +1,6 @@
-import { z } from 'astro:content';
+import { z } from 'astro/zod';
 
-import { versionedObjectSchema } from './version';
+import { versionedObjectSchema } from './version-object';
 
 export const citizenNamesDataSchema = z.object({
   parts: z.number().min(1).max(3),

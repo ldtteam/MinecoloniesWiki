@@ -1,8 +1,8 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import { getSortedVersions } from '@utils/version';
 import type { CollectionEntry } from 'astro:content';
 
+import { getSortedVersions } from '../../../../util/version';
+import VersionContent from '../../../version/VersionContent.astro';
 import BuildingInfobox from './BuildingInfobox.astro';
 
 interface Props {

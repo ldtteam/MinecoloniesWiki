@@ -1,7 +1,8 @@
-import { getItemsFromTag } from '@utils/items';
-import { parseResourceLocation, resourceLocationToWikiReference } from '@utils/resourcelocation';
 import { z } from 'astro/zod';
 import type { CollectionEntry, ReferenceDataEntry } from 'astro:content';
+
+import { getItemsFromTag } from '../../util/items';
+import { parseResourceLocation, resourceLocationToWikiReference } from '../../util/resourcelocation';
 
 // Ingredient logic
 export type IngredientSchema = z.infer<typeof ingredientSchema>;

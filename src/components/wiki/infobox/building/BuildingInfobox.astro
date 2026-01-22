@@ -1,12 +1,12 @@
 ---
-import Infobox from '@components/core/infobox/Infobox.astro';
-import RecipeGrid from '@components/core/infobox/RecipeGrid.astro';
-import ResearchLinkInternal from '@components/markdoc/research/ResearchLinkInternal.astro';
-import ItemImage from '@components/wiki/items/ItemImage.astro';
-import BuildingName from '@components/wiki/names/BuildingName.astro';
-import { getVersionedEntry } from '@utils/version';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
+import { getVersionedEntry } from '../../../../util/version';
+import Infobox from '../../../core/infobox/Infobox.astro';
+import RecipeGrid from '../../../core/infobox/RecipeGrid.astro';
+import ResearchLinkInternal from '../../../markdoc/research/ResearchLinkInternal.astro';
+import ItemImage from '../../items/ItemImage.astro';
+import BuildingName from '../../names/BuildingName.astro';
 import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
 
 interface Props {
@@ -25,15 +25,6 @@ const researchEffect = (
       effect.data.version.id === version.id
   )
 )[0];
-
-const research = researchEffect
-  ? (
-      await getCollection(
-        'research',
-        (r) => r.data.version.id === version.id && r.data.effects.some((e) => e.effect.id === researchEffect.id)
-      )
-    )[0]
-  : undefined;
 
 const workers = building.data.workers ?? [];
 const recipes = building.data.recipes
@@ -81,10 +72,10 @@ if (!blockItem) {
   <p class="m-0">
     <b>Research:</b>
     {
-      research !== undefined ? (
+      researchEffect !== undefined ? (
         <>
           <span>You must research</span>
-          <ResearchLinkInternal research={research} />
+          <ResearchLinkInternal researchEffect={researchEffect} />
           <span>to unlock this building!</span>
         </>
       ) : (

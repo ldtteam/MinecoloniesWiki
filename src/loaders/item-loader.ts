@@ -1,20 +1,20 @@
 import type { Loader } from 'astro/loaders';
-import { z } from 'astro:content';
-import minecraftData, { type Item } from 'minecraft-data';
+import { z } from 'astro/zod';
 import path from 'path';
-import { itemSchema, itemSchemaWithoutVersionData } from 'src/schemas/item';
-import { versionSchema } from 'src/schemas/version';
 
+import { itemSchema } from '../schemas/item';
+import { getAllNamespacesInFolder, getVersionsFromFile } from '../util/file-loaders';
+import { exists, getAllFilesInDirectory } from '../util/files';
+import { parseResourceLocationFromAbsolutePath, resourceLocationToWikiId } from '../util/resourcelocation';
 import { getVersionCollectionId } from '../util/version';
-import { getAllFilesInDirectory, getJsonFile, parseYaml } from './file-utils';
 
-const unavailableMcItems: Item[] = [
-  {
-    id: -1,
-    name: 'water_bottle',
-    displayName: 'Water Bottle',
-    stackSize: 1
-  }
+const generatorItemSchema = z.object({
+  name: z.string(),
+  'block-id': z.string().optional()
+});
+
+const unavailableItems = [
+  { namespace: 'minecraft', name: 'water_bottle', displayName: 'Water Bottle', isBlock: false }
 ];
 
 export function itemLoader(): Loader {
@@ -24,59 +24,53 @@ export function itemLoader(): Loader {
     load: async (context) => {
       context.store.clear();
 
-      const versions = (await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml)).toSorted(
-        (a, b) => a.order - b.order
-      );
+      const versions = await getVersionsFromFile();
 
-      // Load mod items from YAML files (only from namespace subdirectories)
-      const modItems = await getAllFilesInDirectory(
-        itemSchemaWithoutVersionData,
-        './src/data/wiki/items',
-        true,
-        parseYaml
-      );
+      for (const version of versions) {
+        const generatorItemsPath = `./generator/versions/${version.submodule}/output/items`;
 
-      // Create version-aware entries for mod items
-      for (const [filePath, itemData] of Object.entries(modItems)) {
-        const relativePath = path.relative('./src/data/wiki/items', filePath);
-        const parsedPath = path.parse(relativePath);
-        const baseId = `${parsedPath.dir}/${parsedPath.name}`.replace(/\\/g, '/');
-
-        for (const version of versions) {
-          const id = getVersionCollectionId(baseId, version);
-          const data = await context.parseData<z.infer<typeof itemSchema>>({
-            id,
-            data: {
-              ...itemData,
-              baseId,
-              version: {
-                id: version.id,
-                collection: 'versions'
-              }
-            }
-          });
-
-          const digest = context.generateDigest(data);
-          context.store.set({
-            id,
-            data,
-            digest
-          });
-        }
-      }
-
-      // Minecraft items
-      for (const version of Object.values(versions)) {
-        const mcData = minecraftData(version.id);
-        if (mcData === null) {
-          console.warn(`Version data for ${version.id} does not exist`);
+        if (!(await exists(generatorItemsPath))) {
+          context.logger.warn(`Generator items path does not exist for version ${version.id}: ${generatorItemsPath}`);
           continue;
         }
 
-        for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
-          const baseId = 'minecraft/' + item.name;
+        const namespaces = await getAllNamespacesInFolder(generatorItemsPath);
+
+        for (const namespace of namespaces) {
+          const namespacePath = path.join(generatorItemsPath, namespace);
+
+          const generatorItems = await getAllFilesInDirectory(generatorItemSchema, namespacePath, true);
+
+          for (const [itemPath, itemData] of Object.entries(generatorItems)) {
+            const itemId = parseResourceLocationFromAbsolutePath(generatorItemsPath, itemPath);
+            const baseId = resourceLocationToWikiId(itemId);
+            const id = getVersionCollectionId(baseId, version);
+
+            const data = await context.parseData<z.infer<typeof itemSchema>>({
+              id,
+              data: {
+                baseId,
+                version: {
+                  id: version.id,
+                  collection: 'versions'
+                },
+                name: itemData.name,
+                isBlock: itemData['block-id'] !== undefined
+              }
+            });
+
+            const digest = context.generateDigest(data);
+            context.store.set({
+              id,
+              data,
+              digest
+            });
+          }
+        }
+
+        for (const item of unavailableItems) {
+          const baseId = `${item.namespace}/${item.name}`;
           const id = getVersionCollectionId(baseId, version);
-          const isBlock = mcData.blocksByName[item.name] !== undefined;
 
           const data = await context.parseData<z.infer<typeof itemSchema>>({
             id,
@@ -87,8 +81,7 @@ export function itemLoader(): Loader {
                 collection: 'versions'
               },
               name: item.displayName,
-              description: '',
-              isBlock
+              isBlock: item.isBlock
             }
           });
 
@@ -100,6 +93,8 @@ export function itemLoader(): Loader {
           });
         }
       }
+
+      context.logger.info(`Loaded ${context.store.keys().length} items`);
     }
   };
 }

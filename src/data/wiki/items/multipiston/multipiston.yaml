@@ -1,6 +1,0 @@
-id: multipiston
-name: Multi Piston
-description: The Multi Piston is a special piston block that extend multiple blocks
-  long in any of the 6 given directions.
-isBlock: true
-modelPath: multipistonblock

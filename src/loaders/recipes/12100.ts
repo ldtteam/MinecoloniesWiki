@@ -1,12 +1,13 @@
+import { z } from 'astro/zod';
+import { type CollectionEntry, type ReferenceDataEntry } from 'astro:content';
+
+import type { RecipeConditions } from '../../schemas/recipe';
 import {
   parseResourceLocation,
   resourceLocationToWikiId,
   resourceLocationToWikiReference
-} from '@utils/resourcelocation';
-import { getVersionCollectionId } from '@utils/version';
-import { type CollectionEntry, type ReferenceDataEntry, z } from 'astro:content';
-import type { RecipeConditions } from 'src/schemas/recipe';
-
+} from '../../util/resourcelocation';
+import { getVersionCollectionId } from '../../util/version';
 import { convertIngredientToItemArray, ingredientSchema } from './common';
 import type { RecipeConverterModule, StoredRecipeData } from './types';
 
@@ -22,14 +23,14 @@ const minecraftShapedRecipeSchema = z.object({
 const minecraftShapelessRecipeSchema = z.object({
   type: z.literal('minecraft:crafting_shapeless'),
   category: z.string().optional(),
-  ingredients: z.array(ingredientSchema),
+  ingredients: z.array(ingredientSchema.or(z.array(ingredientSchema))),
   result: z.object({ id: z.string(), count: z.number().optional() })
 });
 
 const minecraftSmeltingRecipeSchema = z.object({
   type: z.literal('minecraft:smelting'),
   category: z.string().optional(),
-  ingredient: ingredientSchema,
+  ingredient: ingredientSchema.or(z.array(ingredientSchema)),
   result: z.object({ id: z.string(), count: z.number().optional() }),
   cookingtime: z.number().optional(),
   experience: z.number().optional()
@@ -38,7 +39,7 @@ const minecraftSmeltingRecipeSchema = z.object({
 const minecraftBlastingRecipeSchema = z.object({
   type: z.literal('minecraft:blasting'),
   category: z.string().optional(),
-  ingredient: ingredientSchema,
+  ingredient: ingredientSchema.or(z.array(ingredientSchema)),
   result: z.object({ id: z.string(), count: z.number().optional() }),
   cookingtime: z.number().optional(),
   experience: z.number().optional()
@@ -47,7 +48,7 @@ const minecraftBlastingRecipeSchema = z.object({
 const minecraftSmokingRecipeSchema = z.object({
   type: z.literal('minecraft:smoking'),
   category: z.string().optional(),
-  ingredient: ingredientSchema,
+  ingredient: ingredientSchema.or(z.array(ingredientSchema)),
   result: z.object({ id: z.string(), count: z.number().optional() }),
   cookingtime: z.number().optional(),
   experience: z.number().optional()
@@ -56,10 +57,78 @@ const minecraftSmokingRecipeSchema = z.object({
 const minecraftCampfireCookingRecipeSchema = z.object({
   type: z.literal('minecraft:campfire_cooking'),
   category: z.string().optional(),
-  ingredient: ingredientSchema,
+  ingredient: ingredientSchema.or(z.array(ingredientSchema)),
   result: z.object({ id: z.string(), count: z.number().optional() }),
   cookingtime: z.number().optional(),
   experience: z.number().optional()
+});
+
+const minecraftStongCuttingRecipeSchema = z.object({
+  type: z.literal('minecraft:stonecutting')
+});
+
+const minecraftArmorDyeRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_armordye')
+});
+
+const minecraftBannerDuplicateRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_bannerduplicate')
+});
+
+const minecraftBookCloningRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_bookcloning')
+});
+
+const minecraftFireworkRocketRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_firework_rocket')
+});
+
+const minecraftFireworkStarRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_firework_star')
+});
+
+const minecraftFireworkStarFadeRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_firework_star_fade')
+});
+
+const minecraftMapCloningRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_mapcloning')
+});
+
+const minecraftMapExtendingRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_mapextending')
+});
+
+const minecraftRepairItemRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_repairitem')
+});
+
+const minecraftShieldDecorationRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_shielddecoration')
+});
+
+const minecraftShulkerBoxColoringRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_shulkerboxcoloring')
+});
+
+const minecraftSuspiciousStewRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_suspiciousstew')
+});
+
+const minecraftTippedArrowRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_special_tippedarrow')
+});
+
+const minecraftSmithingTrimRecipeSchema = z.object({
+  type: z.literal('minecraft:smithing_trim')
+});
+
+const minecraftSmithingTransformRecipeSchema = z.object({
+  type: z.literal('minecraft:smithing_transform')
+});
+
+const minecraftDecoratedPotRecipeSchema = z.object({
+  type: z.literal('minecraft:crafting_decorated_pot')
 });
 
 const minecoloniesCrafterRecipeSchema = z.object({
@@ -92,6 +161,10 @@ const minecoloniesCrafterRecipeSchema = z.object({
   ['show-tooltip']: z.boolean().optional()
 });
 
+const minecoloniesCrafterRecipeTemplateSchema = z.object({
+  type: z.literal('recipe-template')
+});
+
 const minecoloniesCompostingRecipeSchema = z.object({
   type: z.literal('minecolonies:composting')
 });
@@ -111,7 +184,25 @@ const anyRecipeSchema = z.discriminatedUnion('type', [
   minecraftBlastingRecipeSchema,
   minecraftSmokingRecipeSchema,
   minecraftCampfireCookingRecipeSchema,
+  minecraftStongCuttingRecipeSchema,
+  minecraftArmorDyeRecipeSchema,
+  minecraftBannerDuplicateRecipeSchema,
+  minecraftBookCloningRecipeSchema,
+  minecraftFireworkRocketRecipeSchema,
+  minecraftFireworkStarRecipeSchema,
+  minecraftFireworkStarFadeRecipeSchema,
+  minecraftMapCloningRecipeSchema,
+  minecraftMapExtendingRecipeSchema,
+  minecraftRepairItemRecipeSchema,
+  minecraftShieldDecorationRecipeSchema,
+  minecraftShulkerBoxColoringRecipeSchema,
+  minecraftSuspiciousStewRecipeSchema,
+  minecraftTippedArrowRecipeSchema,
+  minecraftSmithingTrimRecipeSchema,
+  minecraftSmithingTransformRecipeSchema,
+  minecraftDecoratedPotRecipeSchema,
   minecoloniesCrafterRecipeSchema,
+  minecoloniesCrafterRecipeTemplateSchema,
   minecoloniesCompostingRecipeSchema,
   minecoloniesZeroWasteRecipeSchema,
   domumOrnamentumArchitectsCutterRecipeSchema
@@ -171,9 +262,13 @@ async function convertShapelessRecipe(
   version: CollectionEntry<'versions'>['data']
 ): Promise<StoredRecipeData> {
   const items = await Promise.all(
-    recipe.ingredients.map(async (ingredient) => ({
-      item: await convertIngredientToItemArray(ingredient, version)
-    }))
+    recipe.ingredients.map(async (ingredient) => {
+      if (Array.isArray(ingredient)) {
+        const allItems = await Promise.all(ingredient.map((ing) => convertIngredientToItemArray(ing, version)));
+        return { item: allItems.flat() };
+      }
+      return { item: await convertIngredientToItemArray(ingredient, version) };
+    })
   );
 
   return {
@@ -195,6 +290,14 @@ async function convertSmeltingRecipe(
   recipe: z.infer<typeof minecraftSmeltingRecipeSchema>,
   version: CollectionEntry<'versions'>['data']
 ): Promise<StoredRecipeData> {
+  let item;
+  if (Array.isArray(recipe.ingredient)) {
+    const allItems = await Promise.all(recipe.ingredient.map((ing) => convertIngredientToItemArray(ing, version)));
+    item = allItems.flat();
+  } else {
+    item = await convertIngredientToItemArray(recipe.ingredient, version);
+  }
+
   return {
     type: 'smelting',
     baseId,
@@ -202,7 +305,7 @@ async function convertSmeltingRecipe(
       id: version.id,
       collection: 'versions'
     },
-    item: await convertIngredientToItemArray(recipe.ingredient, version),
+    item,
     cookingTime: recipe.cookingtime ?? 200,
     experience: recipe.experience ?? 0,
     output: resourceLocationToWikiReference(parseResourceLocation(recipe.result.id), version, 'items'),
@@ -241,7 +344,7 @@ async function convertCrafterRecipe(
       .map<RecipeConditions>((researchId) => ({
         type: 'research',
         research: {
-          collection: 'research',
+          collection: 'research_effect',
           id: getVersionCollectionId(
             resourceLocationToWikiId(parseResourceLocation(researchId)),
             version.order
@@ -253,7 +356,7 @@ async function convertCrafterRecipe(
     conditions.push({
       type: 'research',
       research: {
-        collection: 'research',
+        collection: 'research_effect',
         id: getVersionCollectionId(
           resourceLocationToWikiId(parseResourceLocation(recipe['research-id'])),
           version.order

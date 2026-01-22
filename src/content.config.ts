@@ -1,5 +1,6 @@
 import { file, glob } from 'astro/loaders';
-import { defineCollection, type ImageFunction, reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { defineCollection, type ImageFunction, reference } from 'astro:content';
 
 import { buildingLoader } from './loaders/building-loader';
 import { citizenNamesLoader } from './loaders/citizennames-loader';
@@ -84,8 +85,7 @@ const regularPage = (image: ImageFunction) =>
   z.object({
     type: z.literal('page'),
     title: z.string(),
-    image: image().optional(),
-    excerpt: z.string().optional()
+    image: image().optional()
   });
 
 const itemPage = z.object({
@@ -101,7 +101,6 @@ const itemPage = z.object({
 const itemCombinedPage = z.object({
   type: z.literal('item-combined'),
   title: z.string(),
-  excerpt: z.string().optional(),
   items: z.array(z.string()),
   infobox: z
     .object({
@@ -123,6 +122,7 @@ const wikiCollection = defineCollection({
       ])
       .and(
         z.object({
+          description: z.string().optional(),
           sections: z.array(reference('wiki')).optional()
         })
       )

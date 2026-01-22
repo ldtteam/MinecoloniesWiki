@@ -1,15 +1,21 @@
-import { getItemsFromTag } from '@utils/items';
-import { parseResourceLocation, resourceLocationToWikiReference } from '@utils/resourcelocation';
-import { getVersionCollectionId } from '@utils/version';
 import type { Loader } from 'astro/loaders';
-import { type CollectionEntry, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { type CollectionEntry } from 'astro:content';
 import path from 'path';
-import { researchEffectsSchema, researchSchema, researchTreeSchema } from 'src/schemas/research';
-import { versionSchema } from 'src/schemas/version';
 
-import { getAllFilesInDirectory, getAllJsonFiles, getJsonFile, parseYaml } from './file-utils';
-
-const translationsSchema = z.record(z.string(), z.string());
+import { researchEffectsSchema, researchSchema, researchTreeSchema } from '../schemas/research';
+import type { Translations } from '../schemas/translations';
+import { versionSchema } from '../schemas/version';
+import { getAllNamespacesInFolder, getTranslations, getVersionsFromFile } from '../util/file-loaders';
+import { exists, getAllFilesInDirectory } from '../util/files';
+import { getItemsFromTag } from '../util/items';
+import {
+  parseResourceLocation,
+  parseResourceLocationFromAbsolutePath,
+  resourceLocationToWikiId,
+  resourceLocationToWikiReference
+} from '../util/resourcelocation';
+import { getVersionCollectionId } from '../util/version';
 
 const treeSchemaInternal = z.object({
   ['base-time']: z.number(),
@@ -95,42 +101,58 @@ export function researchTreesLoader(): Loader {
     load: async (context) => {
       context.store.clear();
 
-      const versions = await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml);
+      const versions = await getVersionsFromFile();
 
       for (const version of versions) {
         const submodule = version.submodule;
         const translations = await getTranslations(submodule);
 
-        const trees = await getAllFilesInDirectory(
-          treeSchemaInternal,
-          `submodules/minecolonies-${submodule}/src/datagen/generated/minecolonies/data/minecolonies/researches`
-        );
+        const treesBasePath = `./generator/versions/${submodule}/output/research_trees`;
+        if (!(await exists(treesBasePath))) {
+          context.logger.warn(`Research trees path does not exist for version ${version.id}: ${treesBasePath}`);
+          continue;
+        }
 
-        for (const [treeFileName, treeData] of Object.entries(trees)) {
-          const baseId = path.parse(treeFileName).name;
-          const id = getVersionCollectionId(baseId, version);
+        const namespaces = await getAllNamespacesInFolder(treesBasePath);
 
-          const data = await context.parseData<z.infer<typeof researchTreeSchema>>({
-            id,
-            data: {
-              baseId,
-              version: {
-                collection: 'versions',
-                id: version.id
-              },
-              name: translations[`com.minecolonies.research.${baseId}.name`],
-              sortOrder: treeData.sortOrder
-            }
-          });
+        for (const namespace of namespaces) {
+          const namespacePath = path.join(treesBasePath, namespace);
+          const trees = await getAllFilesInDirectory(treeSchemaInternal, namespacePath, true);
 
-          const digest = context.generateDigest(data);
-          context.store.set({
-            id,
-            data,
-            digest
-          });
+          for (const [treePath, treeData] of Object.entries(trees)) {
+            const treeId = parseResourceLocationFromAbsolutePath(treesBasePath, treePath);
+            const baseId = resourceLocationToWikiId(treeId);
+            const id = getVersionCollectionId(baseId, version);
+
+            const name = getRequiredTranslation(
+              translations,
+              `com.${treeId.namespace}.research.${treeId.path.replaceAll('/', '.')}.name`
+            );
+
+            const data = await context.parseData<z.infer<typeof researchTreeSchema>>({
+              id,
+              data: {
+                baseId,
+                version: {
+                  collection: 'versions',
+                  id: version.id
+                },
+                name,
+                sortOrder: treeData.sortOrder
+              }
+            });
+
+            const digest = context.generateDigest(data);
+            context.store.set({
+              id,
+              data,
+              digest
+            });
+          }
         }
       }
+
+      context.logger.info(`Loaded ${context.store.keys().length} research trees`);
     }
   };
 }
@@ -142,26 +164,35 @@ export function researchLoader(): Loader {
     load: async (context) => {
       context.store.clear();
 
-      const versions = await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml);
+      const versions = await getVersionsFromFile();
 
       for (const version of versions) {
         const submodule = version.submodule;
         const translations = await getTranslations(submodule);
 
-        const trees = await getAllFilesInDirectory(
-          treeSchemaInternal,
-          `submodules/minecolonies-${submodule}/src/datagen/generated/minecolonies/data/minecolonies/researches`
-        );
-        for (const treeFileName of Object.keys(trees)) {
-          const treeKey = path.parse(treeFileName).name;
-          const researches = await getAllFilesInDirectory(
-            researchSchemaInternal,
-            `submodules/minecolonies-${submodule}/src/datagen/generated/minecolonies/data/minecolonies/researches/${treeKey}`
-          );
-          for (const [researchFileName, researchData] of Object.entries(researches)) {
-            const baseId = path.parse(researchFileName).name;
+        const researchBasePath = `./generator/versions/${submodule}/output/research`;
+        if (!(await exists(researchBasePath))) {
+          context.logger.warn(`Research path does not exist for version ${version.id}: ${researchBasePath}`);
+          continue;
+        }
+
+        const namespaces = await getAllNamespacesInFolder(researchBasePath);
+
+        for (const namespace of namespaces) {
+          const namespacePath = path.join(researchBasePath, namespace);
+          const researches = await getAllFilesInDirectory(researchSchemaInternal, namespacePath, true);
+
+          for (const [researchPath, researchData] of Object.entries(researches)) {
+            const researchId = parseResourceLocationFromAbsolutePath(researchBasePath, researchPath);
+            const baseId = resourceLocationToWikiId(researchId);
             const id = getVersionCollectionId(baseId, version);
-            const parent = researchData.parentResearch?.split('/').pop();
+
+            const name = getRequiredTranslation(
+              translations,
+              `com.${researchId.namespace}.research.${researchId.path.replaceAll('/', '.')}.name`
+            );
+            const subtitle =
+              translations[`com.${researchId.namespace}.research.${researchId.path.replaceAll('/', '.')}.subtitle`];
 
             const data = await context.parseData<z.infer<typeof researchSchema>>({
               id,
@@ -171,18 +202,20 @@ export function researchLoader(): Loader {
                   collection: 'versions',
                   id: version.id
                 },
-                tree: {
-                  collection: 'research_tree',
-                  id: getVersionCollectionId(treeKey, version)
-                },
-                parent: parent
-                  ? {
-                      collection: 'research',
-                      id: getVersionCollectionId(parent, version)
-                    }
+                tree: resourceLocationToWikiReference(
+                  parseResourceLocation(researchData.branch),
+                  version,
+                  'research_tree'
+                ),
+                parent: researchData.parentResearch
+                  ? resourceLocationToWikiReference(
+                      parseResourceLocation(researchData.parentResearch),
+                      version,
+                      'research'
+                    )
                   : undefined,
-                name: translations[`com.minecolonies.research.${treeKey}.${baseId}.name`],
-                subtitle: translations[`com.minecolonies.research.${treeKey}.${baseId}.subtitle`],
+                name,
+                subtitle,
                 researchLevel: researchData.researchLevel,
                 sortOrder: researchData.sortOrder,
                 requirements: await parseRequirements(researchData),
@@ -200,6 +233,8 @@ export function researchLoader(): Loader {
           }
         }
       }
+
+      context.logger.info(`Loaded ${context.store.keys().length} research`);
     }
   };
 }
@@ -211,67 +246,82 @@ export function researchEffectLoader(): Loader {
     load: async (context) => {
       context.store.clear();
 
-      const versions = await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml);
+      const versions = await getVersionsFromFile();
 
       for (const version of versions) {
         const submodule = version.submodule;
         const translations = await getTranslations(submodule);
 
-        const effects = await getAllFilesInDirectory(
-          effectSchemaInternal,
-          `submodules/minecolonies-${submodule}/src/datagen/generated/minecolonies/data/minecolonies/researches/effects`
-        );
-        for (const [effectFileName, effectData] of Object.entries(effects)) {
-          const baseId = path.parse(effectFileName).name;
-          const id = getVersionCollectionId(baseId, version);
+        const effectsBasePath = `./generator/versions/${submodule}/output/research_effects`;
+        if (!(await exists(effectsBasePath))) {
+          context.logger.warn(`Research effects path does not exist for version ${version.id}: ${effectsBasePath}`);
+          continue;
+        }
 
-          if (baseId.startsWith('blockhut')) {
-            const data = await context.parseData<z.infer<typeof researchEffectsSchema>>({
-              id,
-              data: {
-                baseId,
-                version: {
-                  collection: 'versions',
-                  id: version.id
-                },
-                type: 'building',
-                building: {
-                  collection: 'buildings',
-                  id: baseId.replace('blockhut', '')
+        const namespaces = await getAllNamespacesInFolder(effectsBasePath);
+
+        for (const namespace of namespaces) {
+          const namespacePath = path.join(effectsBasePath, namespace);
+          const effects = await getAllFilesInDirectory(effectSchemaInternal, namespacePath, true);
+
+          for (const [effectPath, effectData] of Object.entries(effects)) {
+            const effectId = parseResourceLocationFromAbsolutePath(effectsBasePath, effectPath);
+            const baseId = resourceLocationToWikiId(effectId);
+            const id = getVersionCollectionId(baseId, version);
+
+            if (baseId.startsWith('blockhut')) {
+              const data = await context.parseData<z.infer<typeof researchEffectsSchema>>({
+                id,
+                data: {
+                  baseId,
+                  version: {
+                    collection: 'versions',
+                    id: version.id
+                  },
+                  type: 'building',
+                  building: {
+                    collection: 'buildings',
+                    id: baseId.replace('blockhut', '')
+                  }
                 }
-              }
-            });
+              });
 
-            const digest = context.generateDigest(data);
-            context.store.set({
-              id,
-              data,
-              digest
-            });
-          } else {
-            const data = await context.parseData<z.infer<typeof researchEffectsSchema>>({
-              id,
-              data: {
-                baseId,
-                version: {
-                  collection: 'versions',
-                  id: version.id
-                },
-                type: 'regular',
-                format: translations[`com.minecolonies.research.effects.${baseId}.description`],
-                levels: effectData.levels ?? [0, 1]
-              }
-            });
+              const digest = context.generateDigest(data);
+              context.store.set({
+                id,
+                data,
+                digest
+              });
+            } else {
+              const data = await context.parseData<z.infer<typeof researchEffectsSchema>>({
+                id,
+                data: {
+                  baseId,
+                  version: {
+                    collection: 'versions',
+                    id: version.id
+                  },
+                  type: 'regular',
+                  format: getRequiredTranslation(
+                    translations,
+                    `com.${effectId.namespace}.research.${effectId.path.replaceAll('/', '.')}.description`
+                  ),
+                  levels: effectData.levels ?? [0, 1]
+                }
+              });
 
-            const digest = context.generateDigest(data);
-            context.store.set({
-              id,
-              data,
-              digest
-            });
+              const digest = context.generateDigest(data);
+              context.store.set({
+                id,
+                data,
+                digest
+              });
+            }
           }
         }
       }
+
+      context.logger.info(`Loaded ${context.store.keys().length} research effects`);
     }
   };
 }
@@ -312,7 +362,7 @@ async function parseRequirements(
 async function parseCosts(
   researchData: z.infer<typeof researchSchemaInternal>,
   version: CollectionEntry<'versions'>['data'],
-  translations: Record<string, string>
+  translations: Translations
 ): Promise<z.infer<typeof researchSchema>['costs']> {
   const values: z.infer<typeof researchSchema>['costs'] = [];
   for (const requirement of researchData.costs ?? []) {
@@ -376,10 +426,7 @@ async function parseEffects(
   const values: z.infer<typeof researchSchema>['effects'] = [];
   for (const effect of researchData.effects ?? []) {
     values.push({
-      effect: {
-        collection: 'research_effect',
-        id: getVersionCollectionId(effect.id.replace('minecolonies:effects/', ''), version)
-      },
+      effect: resourceLocationToWikiReference(parseResourceLocation(effect.id), version, 'research_effect'),
       level: effect.level
     });
   }
@@ -387,16 +434,10 @@ async function parseEffects(
   return values;
 }
 
-export async function getTranslations(submodule: string) {
-  const translations = await getAllJsonFiles(translationsSchema, [
-    `submodules/minecolonies-${submodule}/src/main/resources/assets/minecolonies/lang/manual_en_us.json`,
-    `submodules/minecolonies-${submodule}/src/datagen/generated/minecolonies/assets/minecolonies/lang/default.json`
-  ]);
-
-  return Object.values(translations).reduce((prev, curr) => {
-    for (const [key, value] of Object.entries(curr)) {
-      prev[key] = value;
-    }
-    return prev;
-  }, {});
+function getRequiredTranslation(translations: Translations, key: string) {
+  const value = translations[key];
+  if (!value) {
+    throw new Error(`Missing translation key: ${key}`);
+  }
+  return value;
 }

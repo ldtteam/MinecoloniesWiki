@@ -1,6 +1,0 @@
-id: gate_wood
-name: Wooden Gate
-description: Wooden Gates are multiblock gates that act as doors, but are great at
-  keeping enemies out.
-isBlock: true
-modelPath: gate/gate_wood

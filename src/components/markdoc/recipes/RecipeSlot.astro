@@ -1,9 +1,10 @@
 ---
-import VersionSwiper from '@components/version/VersionSwiper.astro';
-import RecipeItemImage from '@components/wiki/items/RecipeItemImage.astro';
 import { getEntries } from 'astro:content';
 import { type CollectionEntry } from 'astro:content';
-import type { RecipeItem } from 'src/schemas/recipe';
+
+import type { RecipeItem } from '../../../schemas/recipe';
+import VersionSwiper from '../../version/VersionSwiper.astro';
+import RecipeItemImage from '../../wiki/items/RecipeItemImage.astro';
 
 interface Props {
   items: RecipeItem | undefined;

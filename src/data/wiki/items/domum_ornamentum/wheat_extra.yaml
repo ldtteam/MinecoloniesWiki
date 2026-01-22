@@ -1,7 +1,0 @@
-id: wheat_extra
-name: Wheat Extra
-description:
-  Extra Blocks are special blocks made from a given input material and
-  a single dye in an X shape.
-isBlock: true
-modelPath: extra/thatched/wheat_extra

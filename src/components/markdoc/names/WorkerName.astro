@@ -1,7 +1,8 @@
 ---
-import WorkerNameInternal from '@components/wiki/names/WorkerName.astro';
 import { getEntry } from 'astro:content';
-import type { MarkdocWorkerComponent } from 'src/markdoc/workers';
+
+import type { MarkdocWorkerComponent } from '../../../markdoc/workers';
+import WorkerNameInternal from '../../wiki/names/WorkerName.astro';
 
 interface Props extends MarkdocWorkerComponent {
   building?: string;

@@ -1,5 +1,0 @@
-id: iron_mesh
-name: Iron Mesh
-description: The Iron Mesh is used in the Sifter to allow the Sifter to gather certain
-  materials from the input blocks.
-modelPath: sifter_mesh_iron

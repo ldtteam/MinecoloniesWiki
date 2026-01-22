@@ -1,6 +1,7 @@
-import { type CollectionEntry, getCollection, getEntry, z } from 'astro:content';
-import { getJsonFile, parseYaml } from 'src/loaders/file-utils';
+import { z } from 'astro/zod';
+import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
+import { getJsonFile } from '../util//files';
 import { parseResourceLocation, type ResourceLocation, resourceLocationToWikiReference } from './resourcelocation';
 
 interface WikiItemPage {
@@ -62,8 +63,7 @@ export async function getItemLink(item: CollectionEntry<'items'>) {
 export async function getItemsFromTag(tag: ResourceLocation, version: CollectionEntry<'versions'>['data']) {
   const tagData = await getJsonFile(
     z.array(z.string()),
-    `./src/data/wiki/tags/${tag.namespace}/${tag.path}.yaml`,
-    parseYaml
+    `./generator/versions/${version.submodule}/output/item_tags/${tag.namespace}/${tag.path}.json`
   );
   return tagData.map((item) => resourceLocationToWikiReference(parseResourceLocation(item), version, 'items'));
 }

@@ -1,8 +1,9 @@
 ---
-import BuildingName from '@components/wiki/names/BuildingName.astro';
-import { formatForgeString, toTitleCase } from '@utils/string';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
+
+import { formatForgeString, toTitleCase } from '../../../../../util/string';
+import BuildingName from '../../../names/BuildingName.astro';
 
 interface Props {
   effect: CollectionEntry<'research'>['data']['effects'][number];

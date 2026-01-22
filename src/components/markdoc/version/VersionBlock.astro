@@ -1,10 +1,11 @@
 ---
-import VersionContent from '@components/version/VersionContent.astro';
-import { trimToEmpty } from '@utils/string';
-import { getSortedVersions } from '@utils/version';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import { getEntry } from 'astro:content';
+
+import { trimToEmpty } from '../../../util/string';
+import { getSortedVersions } from '../../../util/version';
+import VersionContent from '../../version/VersionContent.astro';
 
 interface Props {
   range: string;

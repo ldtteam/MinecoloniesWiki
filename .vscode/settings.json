@@ -1,5 +1,9 @@
 {
-  "eslint.validate": ["javascript", "astro", "typescript"],
+  "eslint.validate": [
+    "javascript",
+    "astro",
+    "typescript"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "files.associations": {

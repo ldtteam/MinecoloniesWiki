@@ -1,8 +1,8 @@
 ---
-import type { Overrideable, OverrideableFieldGetter } from '@utils/override';
-import { getOverrideValues } from '@utils/override';
 import type { HTMLTag } from 'astro/types';
 
+import type { Overrideable, OverrideableFieldGetter } from '../../util/override';
+import { getOverrideValues } from '../../util/override';
 import VersionContent from './VersionContent.astro';
 
 interface Props<V, O extends Overrideable<V>, T> {

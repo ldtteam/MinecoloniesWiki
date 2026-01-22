@@ -1,12 +1,13 @@
 ---
-import VersionOverride from '@components/version/VersionOverride.astro';
-import WorkerName from '@components/wiki/names/WorkerName.astro';
-import type { PartialCollectionEntry } from '@utils/util';
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 import path from 'path';
+
+import type { PartialCollectionEntry } from '../../../../util/util';
+import VersionOverride from '../../../version/VersionOverride.astro';
+import WorkerName from '../../names/WorkerName.astro';
 
 interface Props {
   building: CollectionEntry<'buildings'>;
