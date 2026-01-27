@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+export PORT=4321
+export HOST=0.0.0.0
+
 echo "[start.sh] Starting Astro SSR..."
 
 # Node logs prefixed and timestamped
