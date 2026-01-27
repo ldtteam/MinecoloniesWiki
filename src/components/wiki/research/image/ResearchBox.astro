@@ -161,7 +161,13 @@ if (research.data.effects.length > 0) {
   .research-outer-wrapper {
     display: flex;
     align-items: flex-start;
-    overflow: hidden;
+    // overflow-y: clip;
+    contain: layout;
+    position: relative;
+  }
+
+  .research-outer-wrapper:has(.research-card:hover) {
+    z-index: 1;
   }
 
   .research-card-line-wrapper {

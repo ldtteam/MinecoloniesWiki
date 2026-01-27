@@ -67,7 +67,7 @@ async function getItemImageUrl(item: CollectionEntry<'items'>): Promise<string |
   const version = await getEntry(item.data.version);
   const [namespace, itemPath] = item.data.baseId.split('/');
 
-  if (item.data.isBlock) {
+  if (item.data.blockId !== undefined) {
     const blockStatePath = `./generator/versions/${version.data.submodule}/output/block_states/${namespace}/${itemPath}.json`;
     try {
       const blockState = await getJsonFile(blockStateSchema, blockStatePath);
