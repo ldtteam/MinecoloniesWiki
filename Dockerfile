@@ -8,10 +8,12 @@ COPY . .
 RUN pnpm run build
 
 FROM node:23-alpine AS runtime
-COPY --from=build /app/dist ./dist
+COPY --from=build /app/dist /app/dist
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/start.sh /start.sh
 
 RUN chmod +x /start.sh && mkdir -p /run/nginx
 
 EXPOSE 80
+
+ENTRYPOINT ["/start.sh"]
