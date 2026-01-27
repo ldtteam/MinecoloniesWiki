@@ -3,6 +3,7 @@ set -e
 
 export PORT=4321
 export HOST=0.0.0.0
+export NODE_ENV=production
 
 echo "[start.sh] Starting Astro SSR..."
 
