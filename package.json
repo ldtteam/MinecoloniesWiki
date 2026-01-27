@@ -39,7 +39,6 @@
     "date-fns": "^4.1.0",
     "iconify": "^1.4.0",
     "mdast-util-directive": "^3.1.0",
-    "p-limit": "^7.2.0",
     "remark-directive": "^4.0.0",
     "sharp": "^0.34.5",
     "svelte": "^5.47.1",

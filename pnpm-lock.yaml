@@ -59,9 +59,6 @@ importers:
       mdast-util-directive:
         specifier: ^3.1.0
         version: 3.1.0
-      p-limit:
-        specifier: ^7.2.0
-        version: 7.2.0
       remark-directive:
         specifier: ^4.0.0
         version: 4.0.0
@@ -2592,10 +2589,6 @@ packages:
   p-limit@6.2.0:
     resolution: {integrity: sha512-kuUqqHNUqoIWp/c467RI4X6mmyuojY5jGutNU0wVTmEOOfcuwLqyMVoAi9MKi2Ak+5i9+nhmrK4ufZE8069kHA==}
     engines: {node: '>=18'}
-
-  p-limit@7.2.0:
-    resolution: {integrity: sha512-ATHLtwoTNDloHRFFxFJdHnG6n2WUeFjaR8XQMFdKIv0xkXjrER8/iG9iu265jOM95zXHAfv9oTkqhrfbIzosrQ==}
-    engines: {node: '>=20'}
 
   p-locate@5.0.0:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
@@ -6429,10 +6422,6 @@ snapshots:
       yocto-queue: 0.1.0
 
   p-limit@6.2.0:
-    dependencies:
-      yocto-queue: 1.2.2
-
-  p-limit@7.2.0:
     dependencies:
       yocto-queue: 1.2.2
 
