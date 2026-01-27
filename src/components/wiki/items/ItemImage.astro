@@ -1,103 +1,20 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
-import fs from 'fs/promises';
-
-type CameraAngle = 'front' | 'back';
 
 interface Props {
   item: CollectionEntry<'items'>;
   alt?: string;
   size: number;
-  angle?: CameraAngle;
-  rotation?: number;
   class?: string;
 }
 
-const { item, alt, size, rotation, class: className } = Astro.props;
+const { item, alt, size, class: className } = Astro.props;
 
 const version = await getEntry(item.data.version);
-const [namespace, itemPath] = item.data.baseId.split('/');
+const [namespace, ...itemPath] = item.data.baseId.split('/');
 
-async function getBlockImageId(
-  blockStatePath: string,
-  blockStateInput?: Record<string, string>
-): Promise<string | undefined> {
-  try {
-    const data = await fs.readFile(blockStatePath, 'utf-8');
-    const blockState = JSON.parse(data);
-
-    if (!blockStateInput || Object.keys(blockStateInput).length === 0) {
-      return blockState.blockstates?.[0]?.imageid;
-    }
-
-    for (const state of blockState.blockstates) {
-      const stateValues: Record<string, string> = {};
-      for (const v of state.values) {
-        stateValues[v.property.toLowerCase()] = v.value.toLowerCase();
-      }
-
-      let matches = true;
-      for (const [key, value] of Object.entries(blockStateInput)) {
-        if (stateValues[key.toLowerCase()] !== value.toLowerCase()) {
-          matches = false;
-          break;
-        }
-      }
-
-      if (matches) {
-        return state.imageid;
-      }
-    }
-
-    return blockState.blockstates?.[0]?.imageid;
-  } catch {
-    return undefined;
-  }
-}
-
-let src: string | undefined;
-
-if (item.data.isBlock) {
-  const blockStatePath = `./generator/versions/${version.data.submodule}/output/block_states/${namespace}/${itemPath}.json`;
-
-  // Build blockstate input from angle and rotation
-  const blockStateInput: Record<string, string> = {};
-  if (rotation !== undefined) {
-    // Map rotation to facing direction
-    const facingMap: Record<number, string> = {
-      0: 'south',
-      90: 'west',
-      180: 'north',
-      270: 'east'
-    };
-    const facing = facingMap[rotation % 360];
-    if (facing) {
-      blockStateInput['facing'] = facing;
-    }
-  }
-
-  const imageId = await getBlockImageId(blockStatePath, blockStateInput);
-  if (imageId) {
-    const imagePath = `./generator/versions/${version.data.submodule}/output/block_images/${namespace}/${itemPath}/${imageId}.png`;
-    try {
-      const buffer = await fs.readFile(imagePath);
-      src = `data:image/png;base64,${buffer.toString('base64')}`;
-    } catch {
-      console.warn(`Block image not found: ${imagePath}`);
-    }
-  } else {
-    console.warn(`Block state not found for: ${item.data.baseId}`);
-  }
-} else {
-  const imagePath = `./generator/versions/${version.data.submodule}/output/item_images/${namespace}/${itemPath}.png`;
-  try {
-    const buffer = await fs.readFile(imagePath);
-    src = `data:image/png;base64,${buffer.toString('base64')}`;
-  } catch {
-    console.warn(`Item image not found: ${imagePath}`);
-  }
-}
+const src = `/images/wiki/items/${version.data.submodule}/${namespace}/${itemPath.join('/')}.png`;
 ---
 
 {

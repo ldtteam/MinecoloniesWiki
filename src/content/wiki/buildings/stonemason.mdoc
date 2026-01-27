@@ -6,8 +6,6 @@ plural: Stonemason Huts
 description: The Stonemason is where all your stone produts are sculped into other stone products! Stonemasons can craft nearly all stone materials there are.
 workers:
   - stonemason
-recipes:
-  - minecolonies/blockhutstonemason
 rotation: 270
 ---
 
@@ -30,7 +28,7 @@ The {% building /%} is where the {% worker /%} will craft 3x3 recipes made entir
 {% building_gui_content_block_do_recipes order=3 /%}
 {% building_gui_content_block_tasks order=4 /%}
 {% building_gui_content_block_settings order=5 %}
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

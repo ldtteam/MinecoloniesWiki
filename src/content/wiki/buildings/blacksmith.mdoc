@@ -6,8 +6,6 @@ plural: Blacksmith Huts
 description: The Blacksmith is responsible for creating tools and armor of any material for your colonists.
 workers:
   - blacksmith
-recipes:
-  - minecolonies/blockhutblacksmith
 rotation: 270
 ---
 
@@ -33,7 +31,7 @@ When a colonist is requesting a tool from the {% building /%} with multiple acce
 {% building_gui_content_block_crafting_recipes order=2 /%}
 {% building_gui_content_block_tasks order=3 /%}
 {% building_gui_content_block_settings order=4 %}
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

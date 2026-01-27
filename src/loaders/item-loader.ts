@@ -4,9 +4,12 @@ import path from 'path';
 
 import { itemSchema } from '../schemas/item';
 import { getAllNamespacesInFolder, getVersionsFromFile } from '../util/file-loaders';
-import { exists, getAllFilesInDirectory } from '../util/files';
+import { exists, getAllFilesInDirectory, parseJson } from '../util/files';
 import { parseResourceLocationFromAbsolutePath, resourceLocationToWikiId } from '../util/resourcelocation';
 import { getVersionCollectionId } from '../util/version';
+import { parserModule12000 } from './recipes/12000';
+import { parserModule12100 } from './recipes/12100';
+import type { StoredRecipeData, VersionSchemaMap } from './recipes/common';
 
 const generatorItemSchema = z.object({
   name: z.string(),
@@ -14,8 +17,17 @@ const generatorItemSchema = z.object({
 });
 
 const unavailableItems = [
-  { namespace: 'minecraft', name: 'water_bottle', displayName: 'Water Bottle', isBlock: false }
+  {
+    namespace: 'minecraft',
+    name: 'water_bottle',
+    displayName: 'Water Bottle'
+  }
 ];
+
+const versionSchemaMap: VersionSchemaMap = {
+  '12000': parserModule12000,
+  '12100': parserModule12100
+};
 
 export function itemLoader(): Loader {
   return {
@@ -27,6 +39,72 @@ export function itemLoader(): Loader {
       const versions = await getVersionsFromFile();
 
       for (const version of versions) {
+        const recipesByOutputItem = new Map<string, StoredRecipeData[]>();
+
+        const anyRecipeSchema = versionSchemaMap[version.submodule].fullSchema;
+
+        const recipesPath = `./generator/versions/${version.submodule}/output/recipes`;
+        if (await exists(recipesPath)) {
+          const recipeNamespaces = await getAllNamespacesInFolder(recipesPath);
+
+          for (const namespace of recipeNamespaces) {
+            const namespacePath = path.join(recipesPath, namespace);
+
+            try {
+              const recipes = await getAllFilesInDirectory(anyRecipeSchema, namespacePath, true, parseJson, {
+                suppressWarnings: true
+              });
+
+              for (const recipeData of Object.values(recipes)) {
+                const convertedRecipe = await versionSchemaMap[version.submodule].convert(recipeData, version);
+
+                if (!convertedRecipe) {
+                  continue;
+                }
+
+                if (!recipesByOutputItem.has(convertedRecipe.output.id)) {
+                  recipesByOutputItem.set(convertedRecipe.output.id, []);
+                }
+                recipesByOutputItem.get(convertedRecipe.output.id)?.push(convertedRecipe);
+              }
+            } catch (error) {
+              console.warn(`Error loading recipes for ${namespace} version ${version.id}`, error);
+              continue;
+            }
+          }
+        }
+
+        const crafterRecipesPath = `./generator/versions/${version.submodule}/output/crafter_recipes`;
+        if (await exists(crafterRecipesPath)) {
+          const crafterNamespaces = await getAllNamespacesInFolder(crafterRecipesPath);
+
+          for (const namespace of crafterNamespaces) {
+            const namespacePath = path.join(crafterRecipesPath, namespace);
+
+            try {
+              const recipes = await getAllFilesInDirectory(anyRecipeSchema, namespacePath, true, parseJson, {
+                suppressWarnings: true
+              });
+
+              for (const recipeData of Object.values(recipes)) {
+                const convertedRecipe = await versionSchemaMap[version.submodule].convert(recipeData, version);
+
+                if (!convertedRecipe) {
+                  continue;
+                }
+
+                if (!recipesByOutputItem.has(convertedRecipe.output.id)) {
+                  recipesByOutputItem.set(convertedRecipe.output.id, []);
+                }
+                recipesByOutputItem.get(convertedRecipe.output.id)?.push(convertedRecipe);
+              }
+            } catch (error) {
+              console.warn(`Error loading crafter recipes for ${namespace} version ${version.id}`, error);
+              continue;
+            }
+          }
+        }
+
         const generatorItemsPath = `./generator/versions/${version.submodule}/output/items`;
 
         if (!(await exists(generatorItemsPath))) {
@@ -46,6 +124,8 @@ export function itemLoader(): Loader {
             const baseId = resourceLocationToWikiId(itemId);
             const id = getVersionCollectionId(baseId, version);
 
+            const recipes = recipesByOutputItem.get(id) ?? [];
+
             const data = await context.parseData<z.infer<typeof itemSchema>>({
               id,
               data: {
@@ -55,7 +135,8 @@ export function itemLoader(): Loader {
                   collection: 'versions'
                 },
                 name: itemData.name,
-                isBlock: itemData['block-id'] !== undefined
+                blockId: itemData['block-id'],
+                recipes
               }
             });
 
@@ -72,6 +153,8 @@ export function itemLoader(): Loader {
           const baseId = `${item.namespace}/${item.name}`;
           const id = getVersionCollectionId(baseId, version);
 
+          const recipes = recipesByOutputItem.get(id) ?? [];
+
           const data = await context.parseData<z.infer<typeof itemSchema>>({
             id,
             data: {
@@ -81,7 +164,7 @@ export function itemLoader(): Loader {
                 collection: 'versions'
               },
               name: item.displayName,
-              isBlock: item.isBlock
+              recipes
             }
           });
 

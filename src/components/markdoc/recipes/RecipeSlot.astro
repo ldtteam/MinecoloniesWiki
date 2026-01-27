@@ -2,9 +2,9 @@
 import { getEntries } from 'astro:content';
 import { type CollectionEntry } from 'astro:content';
 
-import type { RecipeItem } from '../../../schemas/recipe';
+import ItemImage from '../../../components/wiki/items/ItemImage.astro';
+import type { RecipeItem } from '../../../schemas/item';
 import VersionSwiper from '../../version/VersionSwiper.astro';
-import RecipeItemImage from '../../wiki/items/RecipeItemImage.astro';
 
 interface Props {
   items: RecipeItem | undefined;
@@ -35,7 +35,7 @@ const allItems = items ? await getEntries(items) : [];
         {allItems.map((item) => (
           <swiper-slide>
             <div class="invslot-wrapper">
-              <RecipeItemImage item={item} version={version} />
+              <ItemImage item={item} size={32} />
             </div>
           </swiper-slide>
         ))}

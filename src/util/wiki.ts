@@ -1,8 +1,30 @@
+import { z } from 'astro/zod';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
-import fs from 'fs/promises';
 
+import { getJsonFile } from './files';
 import { getOverrideValues } from './override';
 import { getNewestVersion, getVersionedEntry, type VersionedResult } from './version';
+
+const blockStateSchema = z.object({
+  properties: z.array(
+    z.object({
+      property: z.string(),
+      type: z.string(),
+      values: z.array(z.string())
+    })
+  ),
+  blockstates: z.array(
+    z.object({
+      values: z.array(
+        z.object({
+          property: z.string(),
+          value: z.string()
+        })
+      ),
+      imageid: z.string()
+    })
+  )
+});
 
 export type Title = string | VersionedResult<string>;
 
@@ -41,32 +63,23 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
   return entry.id;
 }
 
-async function getItemImageDataUrl(item: CollectionEntry<'items'>): Promise<string | undefined> {
+async function getItemImageUrl(item: CollectionEntry<'items'>): Promise<string | undefined> {
   const version = await getEntry(item.data.version);
   const [namespace, itemPath] = item.data.baseId.split('/');
 
   if (item.data.isBlock) {
     const blockStatePath = `./generator/versions/${version.data.submodule}/output/block_states/${namespace}/${itemPath}.json`;
     try {
-      const data = await fs.readFile(blockStatePath, 'utf-8');
-      const blockState = JSON.parse(data);
-      const imageId = blockState.blockstates?.[0]?.imageid;
+      const blockState = await getJsonFile(blockStateSchema, blockStatePath);
+      const imageId = blockState.blockstates[0]?.imageid;
       if (imageId) {
-        const imagePath = `./generator/versions/${version.data.submodule}/output/block_images/${namespace}/${itemPath}/${imageId}.png`;
-        const buffer = await fs.readFile(imagePath);
-        return `data:image/png;base64,${buffer.toString('base64')}`;
+        return `/images/wiki/blocks/${version.data.submodule}/${namespace}/${itemPath}/${imageId}.png`;
       }
     } catch {
       return undefined;
     }
   } else {
-    const imagePath = `./generator/versions/${version.data.submodule}/output/item_images/${namespace}/${itemPath}.png`;
-    try {
-      const buffer = await fs.readFile(imagePath);
-      return `data:image/png;base64,${buffer.toString('base64')}`;
-    } catch {
-      return undefined;
-    }
+    return `/images/wiki/items/${version.data.submodule}/${namespace}/${itemPath}.png`;
   }
 }
 
@@ -80,7 +93,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     if (item === undefined) {
       return undefined;
     }
-    return await getItemImageDataUrl(item);
+    return await getItemImageUrl(item);
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
@@ -90,7 +103,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
     if (item === undefined) {
       return undefined;
     }
-    return await getItemImageDataUrl(item);
+    return await getItemImageUrl(item);
   } else if (entry.data.type === 'building') {
     let blockItemId: string;
     switch (entry.data.id) {
@@ -110,7 +123,7 @@ export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<stri
       return undefined;
     }
 
-    return await getItemImageDataUrl(blockItem);
+    return await getItemImageUrl(blockItem);
   }
 }
 

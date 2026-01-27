@@ -1,14 +1,15 @@
 ---
-import { type CollectionEntry, getEntry } from 'astro:content';
+import { type CollectionEntry } from 'astro:content';
 
+import type { RecipeSchema } from '../../../schemas/item';
 import RecipeSlot from './RecipeSlot.astro';
 
 interface Props {
-  recipe: Extract<CollectionEntry<'recipes'>['data'], { type: 'smelting' }>;
+  recipe: Extract<RecipeSchema, { type: 'smelting' }>;
+  version: CollectionEntry<'versions'>;
 }
 
-const { recipe } = Astro.props;
-const version = await getEntry(recipe.version);
+const { recipe, version } = Astro.props;
 ---
 
 <div class="input">

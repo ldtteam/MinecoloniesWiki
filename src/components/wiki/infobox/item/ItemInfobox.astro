@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 import Infobox from '../../../core/infobox/Infobox.astro';
 import RecipeGrid from '../../../core/infobox/RecipeGrid.astro';
@@ -13,8 +13,7 @@ interface Props {
 }
 
 const { item, expand = false } = Astro.props;
-
-const recipes = await getCollection('recipes', (recipe) => recipe.data.output.id === item.id);
+const version = await getEntry(item.data.version);
 ---
 
 <Infobox class:list={['w-auto', 'flex-shrink-1', expand ? 'h-100' : '']} expand={expand}>
@@ -24,7 +23,7 @@ const recipes = await getCollection('recipes', (recipe) => recipe.data.output.id
     <ItemImage item={item} alt={item.data.name + ' icon'} size={150} />
   </div>
 
-  <RecipeGrid recipes={recipes} />
+  <RecipeGrid recipes={item.data.recipes} version={version} />
 </Infobox>
 
 <style>

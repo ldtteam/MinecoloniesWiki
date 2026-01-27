@@ -6,9 +6,6 @@ plural: Farmer's Huts
 description: The Farm is one of the main sources of food production for your colony, farms are able to grow any root crop that has to be placed on farmland.
 workers:
   - farmer
-recipes:
-  - minecolonies/blockhutfarmer
-  - minecolonies/blockhutfield
 rotation: 0
 ---
 
@@ -51,7 +48,7 @@ You can click on the arrows to increase the size of the area the {% worker /%} w
 {% building_gui_content_block_tasks order=3 /%}
 {% building_gui_content_block_settings order=4 %}
 - **Request Fertilizer:** On by default. This lets you choose whether the {% worker /%} will request fertilizer.
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

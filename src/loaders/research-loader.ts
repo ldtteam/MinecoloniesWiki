@@ -268,8 +268,9 @@ export function researchEffectLoader(): Loader {
             const effectId = parseResourceLocationFromAbsolutePath(effectsBasePath, effectPath);
             const baseId = resourceLocationToWikiId(effectId);
             const id = getVersionCollectionId(baseId, version);
+            const fileId = path.parse(effectPath).name;
 
-            if (baseId.startsWith('blockhut')) {
+            if (fileId.startsWith('blockhut')) {
               const data = await context.parseData<z.infer<typeof researchEffectsSchema>>({
                 id,
                 data: {
@@ -281,7 +282,7 @@ export function researchEffectLoader(): Loader {
                   type: 'building',
                   building: {
                     collection: 'buildings',
-                    id: baseId.replace('blockhut', '')
+                    id: fileId.replace('blockhut', '')
                   }
                 }
               });

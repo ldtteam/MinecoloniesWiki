@@ -6,8 +6,6 @@ plural: Mines
 description: The Miner will gather stone and ores from the depths below, they will make a vast tunnel network underground to gather all of your valuables.
 workers:
   - miner
-recipes:
-  - minecolonies/blockhutminer
 rotation: 270
 ---
 
@@ -72,7 +70,7 @@ The {% worker /%} will ignore orders to mine at a specific level until the entir
 You can also click Repair, to tell the {% worker /%} to restore that level to its original state. This can be useful if a fire breaks out in the mineshaft.
 {% /building_gui_content_block_custom %}
 {% building_gui_content_block_settings order=4 %}
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 - **Fill Block:** Here you can select what block the {% worker /%} uses to fill in holes/gaps in the schematic. The default is the dirt block.

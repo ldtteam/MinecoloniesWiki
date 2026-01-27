@@ -35,7 +35,7 @@ async function createSymlinks(logger: AstroIntegrationLogger) {
 
   // Block images symlinks
   logger.info('Creating symlinks for block images...');
-  await resetDirectory('./public/images/wiki/blocks');
+  await prepareDirectory('./public/images/wiki/blocks');
   for (const submodule of submodules) {
     await fs.symlink(
       path.resolve(`./generator/versions/${submodule}/output/block_images`),
@@ -46,7 +46,7 @@ async function createSymlinks(logger: AstroIntegrationLogger) {
 
   // Item images symlinks
   logger.info('Creating symlinks for item images...');
-  await resetDirectory('./public/images/wiki/items');
+  await prepareDirectory('./public/images/wiki/items');
   for (const submodule of submodules) {
     await fs.symlink(
       path.resolve(`./generator/versions/${submodule}/output/item_images`),
@@ -56,7 +56,8 @@ async function createSymlinks(logger: AstroIntegrationLogger) {
   }
 }
 
-async function resetDirectory(directory: string) {
+async function prepareDirectory(directory: string) {
   await fs.rm(directory, { recursive: true, force: true });
   await fs.mkdir(directory);
+  await fs.writeFile(path.resolve(directory, '.gitignore'), '*\n!.gitignore');
 }

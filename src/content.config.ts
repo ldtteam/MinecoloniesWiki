@@ -5,13 +5,11 @@ import { defineCollection, type ImageFunction, reference } from 'astro:content';
 import { buildingLoader } from './loaders/building-loader';
 import { citizenNamesLoader } from './loaders/citizennames-loader';
 import { itemLoader } from './loaders/item-loader';
-import { recipeLoader } from './loaders/recipes/loader';
 import { researchEffectLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
 import { buildingSchema } from './schemas/building';
 import { citizenNamesPackSchema } from './schemas/citizen_names';
 import { itemSchema } from './schemas/item';
 import { jsonStructureSchema } from './schemas/json_structures';
-import { recipeSchema } from './schemas/recipe';
 import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
 import { schematicSchema } from './schemas/schematics';
 import { versionSchema } from './schemas/version';
@@ -151,11 +149,6 @@ const itemsCollection = defineCollection({
   schema: itemSchema
 });
 
-const recipesCollection = defineCollection({
-  loader: recipeLoader(),
-  schema: recipeSchema
-});
-
 const citizenNamesCollection = defineCollection({
   loader: citizenNamesLoader(),
   schema: citizenNamesPackSchema
@@ -211,7 +204,6 @@ export const collections = {
   buildings: buildingsCollection,
   workers: workersCollection,
   items: itemsCollection,
-  recipes: recipesCollection,
   research_tree: researchTreeCollection,
   research_effect: researchEffectCollection,
   research: researchCollection,

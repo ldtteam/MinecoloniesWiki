@@ -1,15 +1,19 @@
 import { z } from 'astro/zod';
 import { type CollectionEntry, type ReferenceDataEntry } from 'astro:content';
 
-import type { RecipeConditions } from '../../schemas/recipe';
+import type { RecipeCondition } from '../../schemas/item';
 import {
   parseResourceLocation,
   resourceLocationToWikiId,
   resourceLocationToWikiReference
 } from '../../util/resourcelocation';
 import { getVersionCollectionId } from '../../util/version';
-import { convertIngredientToItemArray, ingredientSchema } from './common';
-import type { RecipeConverterModule, StoredRecipeData } from './types';
+import {
+  convertIngredientToItemArray,
+  ingredientSchema,
+  type RecipeConverterModule,
+  type StoredRecipeData
+} from './common';
 
 // Schema definitions
 const minecraftShapedRecipeSchema = z.object({
@@ -211,7 +215,6 @@ const anyRecipeSchema = z.discriminatedUnion('type', [
 
 // Converter functions
 async function convertShapedRecipe(
-  baseId: string,
   recipe: z.infer<typeof minecraftShapedRecipeSchema>,
   version: CollectionEntry<'versions'>['data']
 ): Promise<StoredRecipeData> {
@@ -245,11 +248,6 @@ async function convertShapedRecipe(
 
   return {
     type: 'shaped',
-    baseId,
-    version: {
-      id: version.id,
-      collection: 'versions'
-    },
     items,
     output: resourceLocationToWikiReference(parseResourceLocation(recipe.result.item), version, 'items'),
     amount: recipe.result.count ?? 1,
@@ -258,7 +256,6 @@ async function convertShapedRecipe(
 }
 
 async function convertShapelessRecipe(
-  baseId: string,
   recipe: z.infer<typeof minecraftShapelessRecipeSchema>,
   version: CollectionEntry<'versions'>['data']
 ): Promise<StoredRecipeData> {
@@ -274,11 +271,6 @@ async function convertShapelessRecipe(
 
   return {
     type: 'shapeless',
-    baseId,
-    version: {
-      id: version.id,
-      collection: 'versions'
-    },
     items,
     output: resourceLocationToWikiReference(parseResourceLocation(recipe.result.item), version, 'items'),
     amount: recipe.result.count ?? 1,
@@ -287,7 +279,6 @@ async function convertShapelessRecipe(
 }
 
 async function convertSmeltingRecipe(
-  baseId: string,
   recipe: z.infer<typeof minecraftSmeltingRecipeSchema>,
   version: CollectionEntry<'versions'>['data']
 ): Promise<StoredRecipeData> {
@@ -301,11 +292,6 @@ async function convertSmeltingRecipe(
 
   return {
     type: 'smelting',
-    baseId,
-    version: {
-      id: version.id,
-      collection: 'versions'
-    },
     item,
     cookingTime: recipe.cookingtime ?? 200,
     experience: recipe.experience ?? 0,
@@ -316,7 +302,6 @@ async function convertSmeltingRecipe(
 }
 
 async function convertCrafterRecipe(
-  baseId: string,
   recipe: z.infer<typeof minecoloniesCrafterRecipeSchema>,
   version: CollectionEntry<'versions'>['data']
 ): Promise<StoredRecipeData | undefined> {
@@ -338,11 +323,11 @@ async function convertCrafterRecipe(
       count: input.count
     }));
 
-  const conditions: RecipeConditions[] = [];
+  const conditions: RecipeCondition[] = [];
 
   if (Array.isArray(recipe['research-id'])) {
     recipe['research-id']
-      .map<RecipeConditions>((researchId) => ({
+      .map<RecipeCondition>((researchId) => ({
         type: 'research',
         research: {
           collection: 'research_effect',
@@ -368,11 +353,6 @@ async function convertCrafterRecipe(
 
   return {
     type: 'crafter',
-    baseId,
-    version: {
-      id: version.id,
-      collection: 'versions'
-    },
     crafter: recipe.crafter,
     inputs,
     intermediate: resourceLocationToWikiReference(parseResourceLocation(recipe.intermediate), version, 'items'),
@@ -394,15 +374,15 @@ async function convertCrafterRecipe(
 // Module creation
 export const parserModule12000: RecipeConverterModule<typeof anyRecipeSchema> = {
   fullSchema: anyRecipeSchema,
-  convert: async (baseId, recipe, version) => {
+  convert: async (recipe, version) => {
     if (recipe.type === 'minecraft:crafting_shaped') {
-      return await convertShapedRecipe(baseId, recipe, version);
+      return await convertShapedRecipe(recipe, version);
     } else if (recipe.type === 'minecraft:crafting_shapeless') {
-      return await convertShapelessRecipe(baseId, recipe, version);
+      return await convertShapelessRecipe(recipe, version);
     } else if (recipe.type === 'minecraft:smelting') {
-      return await convertSmeltingRecipe(baseId, recipe, version);
+      return await convertSmeltingRecipe(recipe, version);
     } else if (recipe.type === 'recipe') {
-      return await convertCrafterRecipe(baseId, recipe, version);
+      return await convertCrafterRecipe(recipe, version);
     }
     return undefined;
   }

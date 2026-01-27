@@ -10,8 +10,8 @@ export const buildingSchema = overrideSchema(
     plural: z.string(),
     description: z.string(),
     workers: reference('workers').array().optional(),
-    recipes: z.string().array().optional(),
     singular: z.boolean().default(false),
+    blockhutname: z.string().optional().or(z.string().array().optional()),
     rotation: z.number().optional()
   })
 );
