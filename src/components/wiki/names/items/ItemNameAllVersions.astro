@@ -6,9 +6,10 @@ import ItemName from './ItemName.astro';
 interface Props {
   item: string;
   link?: boolean;
+  inline?: boolean;
 }
 
-const { item, link = true } = Astro.props;
+const { item, link = true, inline = false } = Astro.props;
 
 const versions = await getSortedVersions();
 ---
@@ -21,7 +22,7 @@ const versions = await getSortedVersions();
         return undefined;
       }
       return (
-        <VersionContent versions={[version]}>
+        <VersionContent versions={[version]} inline={inline}>
           <ItemName item={itemData} link={link} />
         </VersionContent>
       );

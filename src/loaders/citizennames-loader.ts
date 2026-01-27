@@ -18,9 +18,10 @@ export function citizenNamesLoader(): Loader {
 
       const versions = await getVersionsFromFile();
 
+      const unoficialPacksBasePath = './src/data/wiki/citizen_name_packs';
       const unofficialPacks = await getAllFilesInDirectory(
         citizenNamesPackFileSchema,
-        './src/data/wiki/citizen_name_packs',
+        unoficialPacksBasePath,
         false,
         parseJson
       );
@@ -73,7 +74,7 @@ export function citizenNamesLoader(): Loader {
         }
 
         for (const [citizenNamePath, packData] of Object.entries(unofficialPacks)) {
-          const citizenNameId = parseResourceLocationFromAbsolutePath(citizenNamesBasePath, citizenNamePath);
+          const citizenNameId = parseResourceLocationFromAbsolutePath(unoficialPacksBasePath, citizenNamePath);
           const baseId = resourceLocationToWikiId(citizenNameId);
           const id = getVersionCollectionId(baseId, version);
 

@@ -1,9 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-
-import PackList from './PackList.astro';
-
-const officialCitizenNamePacks = await getCollection('citizen_name_packs', (pack) => pack.data.official === true);
+import PackListAllVersions from './PackListAllVersions.astro';
 ---
 
-<PackList packs={officialCitizenNamePacks} />
+<PackListAllVersions condition={(pack) => pack.data.official === true} />
