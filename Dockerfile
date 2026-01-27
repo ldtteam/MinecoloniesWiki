@@ -12,7 +12,7 @@ COPY --from=build /app/dist /app/dist
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/start.sh /start.sh
 
-RUN chmod +x /start.sh && mkdir -p /run/nginx
+RUN apk add --no-cache nginx && chmod +x /start.sh && mkdir -p /run/nginx
 
 EXPOSE 80
 

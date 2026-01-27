@@ -4,7 +4,7 @@ set -e
 echo "[start.sh] Starting Astro SSR..."
 
 # Node logs prefixed and timestamped
-node /dist/server/entry.mjs 2>&1 | awk '{ print strftime("[%Y-%m-%d %H:%M:%S]"), "[NODE]", $0 }' > /proc/1/fd/1 2>/proc/1/fd/2 &
+node /app/dist/server/entry.mjs 2>&1 | awk '{ print strftime("[%Y-%m-%d %H:%M:%S]"), "[NODE]", $0 }' > /proc/1/fd/1 2>/proc/1/fd/2 &
 NODE_PID=$!
 
 echo "[start.sh] Starting Nginx..."
