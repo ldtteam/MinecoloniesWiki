@@ -1,4 +1,14 @@
 {
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "pnpm-lock.yaml, .ncurc.json, .npmrc",
+    "astro.config.ts": "svelte.config.js, markdoc.config.ts",
+    "README.md": "CLA.md, LICENSE",
+    "Dockerfile": ".dockerignore",
+    ".gitignore": ".gitattributes, .gitmodules",
+    "tsconfig.json": "eslint.config.js, .prettierrc, .prettierrc.*, prettier.config.*, .prettierignore"
+  },
+  "prettier.useEditorConfig": false,
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "files.associations": {
     "*.mdoc": "markdown"
@@ -31,13 +41,4 @@
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.useEditorConfig": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    "package.json": "pnpm-lock.yaml, .ncurc.json, .npmrc, tsconfig.json, eslint.config.js, .prettierrc, .prettierrc.*, prettier.config.*, .prettierignore",
-    "astro.config.ts": "svelte.config.js, markdoc.config.ts",
-    "README.md": "CLA.md, LICENSE",
-    "Dockerfile": ".dockerignore",
-    ".gitignore": ".gitattributes, .gitmodules"
-  }
 }
