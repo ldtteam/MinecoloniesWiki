@@ -7,8 +7,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "pnpm run update:submodule && pnpm run lint && astro build",
-    "generate:icons": "tsx scripts/generate-icons.ts",
+    "build": "astro build",
     "lint": "pnpm run --parallel \"/^lint:.*/\"",
     "lint:astro": "astro check",
     "lint:eslint": "eslint .",
@@ -20,7 +19,8 @@
     "preview": "astro preview",
     "start": "pnpm run update:submodule && astro dev",
     "sync": "astro sync",
-    "upgrade": "pnpm run upgrade:astro && pnpm run upgrade:deps",
+    "upgrade": "pnpm run --workspace-concurrency=1 \"/upgrade:.*/\"",
+    "upgrade:pnpm": "pnpm self-update",
     "upgrade:astro": "pnpm dlx @astrojs/upgrade",
     "upgrade:deps": "ncu -u -x sass,vite && pnpm install",
     "update:submodule": "git submodule update --init --remote --recursive --merge"
@@ -70,7 +70,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-yaml": "^1.1.2",
     "purgecss": "^8.0.0",
-    "sass": "^1.77.6",
+    "sass": "1.77.6",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "8.56.0"

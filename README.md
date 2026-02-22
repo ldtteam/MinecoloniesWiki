@@ -77,7 +77,7 @@ The range determines what Minecraft versions are selected and can be written in 
 
 The project can be ran locally to test if your changes work as expected. You need the following installed to be able to run it.
 
-- Nodejs (https://nodejs.org/en/download) 23 or above
+- Nodejs (https://nodejs.org/en/download) 25 or above
 - Pnpm (https://pnpm.io/installation)
 
 ### Preparing the project
