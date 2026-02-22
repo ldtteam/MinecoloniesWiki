@@ -1,4 +1,4 @@
-FROM node:23 AS build
+FROM node:25 AS build
 WORKDIR /app
 RUN npm install -g pnpm
 COPY package*.json ./
@@ -7,7 +7,13 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm run build
 
-FROM nginx:alpine AS runtime
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /app/dist /usr/share/nginx/html
+FROM node:25-alpine AS runtime
+COPY --from=build /app/dist /app/dist
+COPY deploy/nginx.conf /etc/nginx/nginx.conf
+COPY deploy/start.sh /start.sh
+
+RUN apk add --no-cache nginx && chmod +x /start.sh && mkdir -p /run/nginx
+
 EXPOSE 80
+
+ENTRYPOINT ["/start.sh"]

@@ -3,8 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
-import ResearchEffect from '../common/ResearchEffect.astro';
-import ResearchRequirement from '../common/ResearchRequirement.astro';
+import { getResearchId } from '../../../../util/research';
+import ResearchCost from '../common/costs/ResearchCost.astro';
+import ResearchEffect from '../common/effects/ResearchEffect.astro';
+import ResearchRequirement from '../common/requirements/ResearchRequirement.astro';
 
 interface Props {
   tree: CollectionEntry<'research_tree'>;
@@ -16,7 +18,7 @@ interface Props {
 const { tree, name, depth, terminal = false } = Astro.props;
 
 const researches = (
-  await getCollection('research', (filter) => filter.data.tree.id == tree.id && filter.data.researchLevel === depth)
+  await getCollection('research', (filter) => filter.data.tree.id === tree.id && filter.data.researchLevel === depth)
 ).sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const researchesWithParent = await Promise.all(
@@ -56,48 +58,56 @@ const researchesWithParent = await Promise.all(
           </tr>
         </thead>
         <tbody>
-          {researchesWithParent.map((research) => (
-            <tr id={`research_${research.id}_list`}>
-              <td>
-                <a class="link-primary" href={`#research_${research.id}_list`}>
-                  {research.data.name}
-                </a>
-              </td>
-              <td>
-                {research.parentResearch !== undefined ? (
-                  <a href={`#research_${research.parentResearch.id}_list`}>{research.parentResearch.data.name}</a>
-                ) : (
-                  '-'
-                )}
-              </td>
-              <td>
-                {research.data.requirements.length > 0 ? (
-                  <ul>
-                    {research.data.requirements.map((requirement) => (
-                      <li>
-                        <ResearchRequirement requirement={requirement} />
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  '-'
-                )}
-              </td>
-              <td>
-                {research.data.effects.length > 0 ? (
-                  <ul>
-                    {research.data.effects.map((effect) => (
-                      <li>
-                        <ResearchEffect effect={effect} />
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  '-'
-                )}
-              </td>
-            </tr>
-          ))}
+          {researchesWithParent.map(async (research) => {
+            const version = await getEntry(research.data.version);
+            return (
+              <tr id={`research_${research.id}_${version.data.order}_list`}>
+                <td>
+                  <a class="link-primary" href={`#${await getResearchId(research)}`}>
+                    {research.data.name}
+                  </a>
+                </td>
+                <td>
+                  {research.parentResearch !== undefined ? (
+                    <a href={`#${await getResearchId(research.parentResearch)}`}>{research.parentResearch.data.name}</a>
+                  ) : (
+                    '-'
+                  )}
+                </td>
+                <td>
+                  {research.data.requirements.length > 0 || research.data.costs.length > 0 ? (
+                    <ul>
+                      {research.data.requirements.map((requirement) => (
+                        <li>
+                          <ResearchRequirement requirement={requirement} />
+                        </li>
+                      ))}
+                      {research.data.costs.map((cost) => (
+                        <li>
+                          <ResearchCost cost={cost} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    '-'
+                  )}
+                </td>
+                <td>
+                  {research.data.effects.length > 0 ? (
+                    <ul>
+                      {research.data.effects.map((effect) => (
+                        <li>
+                          <ResearchEffect effect={effect} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    '-'
+                  )}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </>

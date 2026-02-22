@@ -1,0 +1,32 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: clazz } = Astro.props;
+---
+
+<div class:list={['infobox-wrapper', clazz]}>
+  <div class="flex-fill">
+    <slot />
+  </div>
+
+  <slot name="infobox" />
+</div>
+
+<style lang="scss">
+  @import '../../../css/bootstrap-vars';
+
+  .infobox-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  @include media-breakpoint-down(md) {
+    .infobox-wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+</style>

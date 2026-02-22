@@ -1,0 +1,12 @@
+---
+import { type CollectionEntry } from 'astro:content';
+
+interface Props {
+  cost: Extract<CollectionEntry<'research'>['data']['costs'][number], { type: 'item_tag' }>;
+}
+
+const { cost } = Astro.props;
+---
+
+<b>{cost.quantity}</b>x
+<span>{cost.name}</span>

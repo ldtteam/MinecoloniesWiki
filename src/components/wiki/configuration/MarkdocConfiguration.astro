@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+
+import ConfigurationAllVersions from './ConfigurationAllVersions.astro';
+
+const modNames = await getCollection('configuration').then((values) => [
+  ...new Set(values.map((value) => value.data.baseId))
+]);
+---
+
+<div class="config-card-root">
+  {modNames.map((modName) => <ConfigurationAllVersions modName={modName} />)}
+</div>
+
+<style>
+  .config-card-root {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+</style>

@@ -24,7 +24,7 @@
     - Programming
     - Management
     - Build System Admin
-  tagline: "§k #2:&5%401."
+  tagline: '§k #2:&5%401.'
   uuid: 4f99426f-43ad-418b-8b5a-ad91443f9374
   role: lead
   sort: 3
@@ -154,7 +154,7 @@
   uuid: 9186b2cf-ae1f-4d69-aa67-81a7cb69008d
   role: lead
 - id: Raydamri
-  realName: "@pixelmanz2"
+  realName: '@pixelmanz2'
   sub:
     - Texture artist
   tagline: "Life's sponsored by raid: shadow legends"

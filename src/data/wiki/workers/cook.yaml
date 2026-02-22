@@ -1,7 +1,7 @@
 name: Cook
 plural: Cooks
 description: The Cook is responsible for cooking food for the customers in the Restaurant.
-icon: "@assets/images/wiki/workers/cook/male/default-a.png"
+icon: ../../../assets/images/wiki/workers/cook/male/default-a.png
 type: crafter
 traits:
   primary:
@@ -12,7 +12,7 @@ traits:
     effect: Increases chance of decreasing materials needed
 primaryBuilding: cook
 overrides:
-  - version: "1.20"
+  - version: '1.20'
     name: Waiter
     plural: Waiters
     description: The Waiter is responsible for cooking food for the customers in the Dining Hall.

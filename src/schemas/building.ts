@@ -1,16 +1,17 @@
-import { overrideSchema } from '@utils/override';
-import { type ImageFunction, reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { reference } from 'astro:content';
 
-export const buildingSchema = (image: ImageFunction) =>
-  overrideSchema(
-    z.object({
-      id: z.string(),
-      name: z.string(),
-      plural: z.string(),
-      description: z.string(),
-      icon: image(),
-      workers: reference('workers').array().optional(),
-      recipes: reference('recipes').array().optional(),
-      singular: z.boolean().default(false)
-    })
-  );
+import { overrideSchema } from '../util/override';
+
+export const buildingSchema = overrideSchema(
+  z.object({
+    id: z.string(),
+    name: z.string(),
+    plural: z.string(),
+    description: z.string(),
+    workers: reference('workers').array().optional(),
+    singular: z.boolean().default(false),
+    blockhutname: z.string().optional().or(z.string().array().optional()),
+    rotation: z.number().optional()
+  })
+);

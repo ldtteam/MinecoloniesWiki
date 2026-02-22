@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import BlockImage from './BlockImage.astro';
+import ItemImage from './ItemImage.astro';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  alt?: string;
+  size: number;
+  rotation?: number;
+  class?: string;
+}
+
+const { item, alt, size, rotation, class: className } = Astro.props;
+
+const isBlock = item.data.blockId !== undefined;
+---
+
+{
+  isBlock ? (
+    <BlockImage item={item} alt={alt} size={size} rotation={rotation} class={className} />
+  ) : (
+    <ItemImage item={item} alt={alt} size={size} class={className} />
+  )
+}

@@ -1,0 +1,19 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+import ItemName from '../../../names/items/ItemName.astro';
+
+interface Props {
+  cost: Extract<CollectionEntry<'research'>['data']['costs'][number], { type: 'item' }>;
+}
+
+const { cost } = Astro.props;
+
+const items = await Promise.all(cost.items.map((item) => getEntry(item)));
+---
+
+<span>{cost.quantity}</span>
+<span>
+  {items.map(async (item) => <ItemName item={item} />)}
+</span>

@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+import Card from '../../../components/core/Card.astro';
+import ConfigurationType from './ConfigurationType.astro';
+
+interface Props {
+  configuration: CollectionEntry<'configuration'>;
+}
+
+const { configuration } = Astro.props;
+
+const order = ['COMMON', 'SERVER', 'CLIENT'] as const;
+const version = await getEntry(configuration.data.version);
+---
+
+<Card class="w-100">
+  <h2>{configuration.data.name}</h2>
+  <hr />
+
+  <div class="vstack gap-3">
+    {
+      configuration.data.types
+        .toSorted((a, b) => order.indexOf(a.type) - order.indexOf(b.type))
+        .map((type) => <ConfigurationType modId={configuration.data.modId} type={type} version={version} />)
+    }
+  </div>
+</Card>

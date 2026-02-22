@@ -4,11 +4,9 @@ id: lumberjack
 name: Forester's Hut
 plural: Forester's Huts
 description: The Forester will cut down trees in your colony, you can tell them what trees to cut down and even in what area they're allowed to cut trees down.
-icon: "@assets/images/wiki/items/minecolonies/blockhutlumberjack.png"
 workers:
   - forester
-recipes:
-  - minecolonies/blockhutlumberjack
+rotation: 180
 ---
 
 The {% building /%} is where the {% worker /%} will go in between chopping down trees. The {% worker /%} will cut down any tree in an approximate 150 block area (from themselves) that is not in a hut schematic and doesn't have cobblestone placed beneath it. Or you can optionally configure a specific chopping zone that they will use instead.
@@ -28,7 +26,7 @@ Here you can turn on or off which type of trees the {% worker /%} will chop down
 - **Replanting:** Where you can select if you want the {% worker /%} to replant trees that are chopped down. They will only do this if they have enough saplings.
 - **Zoning Mode:** This lets you turn on or off if you want the {% worker /%} to be restricted to a certain area when chopping trees. To choose the area, use the Obtain Tool button on the next tab.
 - **Break Leaves:** This lets you decide whether you want the {% worker /%} to also remove all of the leaves of the tree, else he will only cut those which are in their way.
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 - **Use Shears:** Whether the {% worker /%} will use shears or a hoe to cut down the leaves.

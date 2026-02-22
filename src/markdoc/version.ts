@@ -3,7 +3,7 @@ import { component } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const version: Tag = {
-  render: component('@components/markdoc/version/VersionBlock.astro'),
+  render: component('./src/components/markdoc/version/VersionBlock.astro'),
   attributes: {
     range: {
       type: String,

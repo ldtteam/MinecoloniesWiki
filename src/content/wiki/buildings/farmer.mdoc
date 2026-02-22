@@ -4,12 +4,9 @@ id: farmer
 name: Farmer's Hut
 plural: Farmer's Huts
 description: The Farm is one of the main sources of food production for your colony, farms are able to grow any root crop that has to be placed on farmland.
-icon: "@assets/images/wiki/items/minecolonies/blockhutfarmer.png"
 workers:
   - farmer
-recipes:
-  - minecolonies/blockhutfarmer
-  - minecolonies/field
+rotation: 0
 ---
 
 The {% building /%} is where the {% worker /%} will grow crops for your colony. The crops the {% worker /%} currently cultivates are wheat, carrots, potatoes, beets, melons, pumpkins, and most crops from other mods (as long as they have normal growth behavior). Before the {% worker /%} can start, you will have to give the {% worker /%} a hoe, an axe (for harvesting crops), and the crop you want to cultivate. 
@@ -28,8 +25,8 @@ The {% worker /%} will also craft seeds, carved pumpkins, hay bales and coarse d
 
 For the {% worker /%} to start, you will also need to place fields. Place the Field block (it looks like a scarecrow) in the plot of farmland you want the {% worker /%} to work on and right-click on it to access its GUI. Here you will place the seed of the crop you want this specific field to cultivate. (For potatoes, carrots, and other plants without seeds, just put the raw potato/carrot/etc in the Field.) If you decide later to change the type of crop you want cultivated in that farmland, just go into the Field's GUI and switch the seed there.
 
-![Field](@assets/images/wiki/misc/field.png)
-![Field GUI](@assets/images/wiki/misc/fieldgui.png)
+![Field](../../../assets/images/wiki/misc/field.png)
+![Field GUI](../../../assets/images/wiki/misc/fieldgui.png)
 
 You can click on the arrows to increase the size of the area the {% worker /%} will farm. (Right-clicking will decrease the area.) The max size is 5 blocks in each direction from the Field block, or 11x11 total.
 
@@ -51,7 +48,7 @@ You can click on the arrows to increase the size of the area the {% worker /%} w
 {% building_gui_content_block_tasks order=3 /%}
 {% building_gui_content_block_settings order=4 %}
 - **Request Fertilizer:** On by default. This lets you choose whether the {% worker /%} will request fertilizer.
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

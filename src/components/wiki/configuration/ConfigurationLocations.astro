@@ -1,0 +1,24 @@
+---
+export interface Location {
+  path: string;
+  note?: string;
+}
+
+interface Props {
+  locations: Location[];
+}
+
+const { locations } = Astro.props;
+---
+
+<b>Locations:</b>
+<ul>
+  {
+    locations.map((location) => (
+      <li>
+        <code>{location.path}</code>
+        {location.note ? <span> - {location.note}</span> : undefined}
+      </li>
+    ))
+  }
+</ul>

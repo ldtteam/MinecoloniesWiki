@@ -2,13 +2,14 @@
 import '../css/bootstrap.scss';
 import '../css/globals.scss';
 
-import Meta from '@components/Meta.astro';
-import PageTitle from '@components/PageTitle.astro';
-import PageWrapper from '@components/PageWrapper.astro';
-import VersionStyling from '@components/version/VersionStyling.astro';
-import { getNewestVersion } from '@utils/version';
-import type { Title } from '@utils/wiki';
 import { ClientRouter } from 'astro:transitions';
+
+import Meta from '../components/Meta.astro';
+import PageTitle from '../components/PageTitle.astro';
+import PageWrapper from '../components/PageWrapper.astro';
+import VersionStyling from '../components/version/VersionStyling.astro';
+import { getNewestVersion } from '../util/version';
+import type { Title } from '../util/wiki';
 
 interface Props {
   title: Title;

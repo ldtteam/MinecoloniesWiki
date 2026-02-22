@@ -1,13 +1,13 @@
 ---
-import Meta from '@components/Meta.astro';
-import PageContent from '@components/wiki/PageContent.astro';
-import PageTitleRender from '@components/wiki/PageTitleRender.astro';
-import Layout from '@layouts/Default.astro';
-import { getSectionRoot } from '@utils/wiki';
 import { getCollection } from 'astro:content';
 import { getEntry } from 'astro:content';
 
-import { getWikiDescription, getWikiImage, getWikiTitle } from '../../util/wiki';
+import Meta from '../../components/Meta.astro';
+import PageContent from '../../components/wiki/PageContent.astro';
+import PageTitleRender from '../../components/wiki/PageTitleRender.astro';
+import Layout from '../../layouts/Default.astro';
+import { getSectionRoot } from '../../util/wiki';
+import { getWikiImage, getWikiTitle } from '../../util/wiki';
 
 export async function getStaticPaths() {
   const collection = await getCollection('wiki');
@@ -21,7 +21,7 @@ const { entry } = Astro.props;
 const { slug } = Astro.params;
 
 const title = await getWikiTitle(entry);
-const description = await getWikiDescription(entry);
+const description = entry.data.description;
 const image = await getWikiImage(entry);
 
 const initialTitle = typeof title === 'string' ? title : title.highestValue;

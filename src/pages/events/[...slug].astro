@@ -1,9 +1,10 @@
 ---
-import EventHeader from '@components/EventHeader.svelte';
-import Layout from '@layouts/Default.astro';
-import type { EventRelative } from '@utils/util';
 import { getCollection, render } from 'astro:content';
 import { fromUnixTime, isBefore } from 'date-fns';
+
+import EventHeader from '../../components/EventHeader.svelte';
+import Layout from '../../layouts/Default.astro';
+import type { EventRelative } from '../../util/util';
 
 export async function getStaticPaths() {
   const collection = await getCollection('events');

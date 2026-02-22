@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  packs: CollectionEntry<'citizen_name_packs'>[];
+}
+
+const { packs } = Astro.props;
+---
+
+{
+  packs.map((pack) => (
+    <>
+      <h4>{pack.data.name}</h4>
+      <p>
+        <a href={`/citizen_names/${pack.data.filename}.zip`}>Download {pack.data.name} Datapack</a>
+      </p>
+      <p>
+        <i>Credits to: {pack.data.credits}</i>
+      </p>
+    </>
+  ))
+}

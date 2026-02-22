@@ -1,5 +1,7 @@
-import { overrideSchema } from '@utils/override';
-import { type ImageFunction, reference, z } from 'astro:content';
+import { z } from 'astro/zod';
+import { type ImageFunction, reference } from 'astro:content';
+
+import { overrideSchema } from '../util/override';
 
 export const workerSchema = (image: ImageFunction) =>
   overrideSchema(

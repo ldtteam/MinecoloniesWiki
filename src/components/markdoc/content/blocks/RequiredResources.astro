@@ -1,7 +1,6 @@
 ---
-import BuildingContentBlock from '@components/markdoc/content/BuildingContentBlock.astro';
-import BuildingName from '@components/markdoc/names/BuildingName.astro';
-
+import BuildingName from '../../names/BuildingName.astro';
+import BuildingContentBlock from '../BuildingContentBlock.astro';
 import type { BaseBuildingContentBlockProps } from '../types';
 
 type Props = BaseBuildingContentBlockProps;
@@ -24,8 +23,8 @@ type Props = BaseBuildingContentBlockProps;
     </li>
     <li>
       <b>Items:</b> Each needed item is displayed, along with how many of that item is in inventory, and how many are needed.
-      These amounts will change as they place blocks and will show only what blocks the worker still needs to place. The
-      block in black are in their inventory. The blocks in red are the ones neither you nor the <BuildingName
+      These amounts will change as they place blocks and will show only what blocks the worker still needs to place. The block
+      in black are in their inventory. The blocks in red are the ones neither you nor the <BuildingName
         {...Astro.props}
       /> has in their inventory. The blocks in green are ones you have in inventory but the builder needs. Clicking the up
       arrow next to the item will automatically remove that item from your inventory and place it into the <BuildingName

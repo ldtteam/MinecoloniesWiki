@@ -1,12 +1,12 @@
 ---
-import BuildingName from '@components/wiki/names/BuildingName.astro';
-import type { CollectionEntry } from 'astro:content';
-import { getEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
-import ResearchLink from '../research/ResearchLink.astro';
+import type { RecipeCondition } from '../../../schemas/item';
+import BuildingName from '../../wiki/names/BuildingName.astro';
+import ResearchLinkInternal from '../research/ResearchLinkInternal.astro';
 
 interface Props {
-  conditions: CollectionEntry<'recipes'>['data']['conditions'];
+  conditions: RecipeCondition[];
 }
 
 const { conditions } = Astro.props;
@@ -32,9 +32,12 @@ const { conditions } = Astro.props;
         }
       }
       if (condition.type === 'research') {
+        const research = await getCollection('research', (research) =>
+          research.data.effects.map((m) => m.effect.id).includes(condition.research.id)
+        ).then((res) => res[0]);
         return (
           <li>
-            Requires research <ResearchLink name={condition.research.id} />
+            Requires research <ResearchLinkInternal research={research} />
           </li>
         );
       }

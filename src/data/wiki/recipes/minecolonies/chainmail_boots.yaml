@@ -1,8 +1,0 @@
-type: shaped
-row2:
-  item1: minecraft/iron_ingot
-  item3: minecraft/iron_ingot
-row3:
-  item1: minecraft/iron_nugget
-  item3: minecraft/iron_nugget
-output: chainmail_boots
