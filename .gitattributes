@@ -14,7 +14,7 @@
 pnpm-lock.yaml -diff
 
 # Linguist - treat .mdoc as Markdown (otherwise detected as Roff/Unix man pages)
-*.mdoc linguist-language=Markdown
+*.mdoc linguist-language=Markdown linguist-detectable=true
 
 # Linguist - exclude generated/content/vendor from language stats
 generator/** linguist-generated
