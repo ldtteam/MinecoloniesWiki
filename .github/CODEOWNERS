@@ -1,1 +1,3 @@
-* @ldtteam/wiki-admin
+* @ldtteam/minecolonies-wiki-admin @ldtteam/minecolonies-wiki-contributor
+
+src/content/** @ldtteam/minecolonies-wiki-reviewer @ldtteam/minecolonies-wiki-admin @ldtteam/minecolonies-wiki-contributor
