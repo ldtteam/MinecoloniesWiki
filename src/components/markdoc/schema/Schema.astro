@@ -25,15 +25,11 @@ const json = await buildJson(schema, frontmatter);
   <blockquote class="blockquote-border">
     <div class="d-flex justify-content-between">
       <h4><b>Schema: {schema.data.name}</b></h4>
-      <div>
-        <label>
-          <input type="radio" class="d-none" name={'toggle' + id} value="table" checked />
-          <div class="btn">Fields</div>
-        </label>
-        <label>
-          <input type="radio" class="d-none" name={'toggle' + id} value="json" />
-          <div class="btn">Example JSON</div>
-        </label>
+      <div class="btn-group">
+        <input type="radio" class="btn-check" name={'toggle' + id} id={`toggleFields${id}`} value="table" checked />
+        <label class="btn btn-outline-secondary" for={`toggleFields${id}`}>Fields</label>
+        <input type="radio" class="btn-check" name={'toggle' + id} id={`toggleJson${id}`} value="json" />
+        <label class="btn btn-outline-secondary" for={`toggleJson${id}`}>Example JSON</label>
       </div>
     </div>
     <p>Example path: <code>{schema.data.path}</code></p>
@@ -59,17 +55,7 @@ const json = await buildJson(schema, frontmatter);
   </blockquote>
 </div>
 
-<style lang="scss">
-  @import '../../../css/bootstrap-vars';
-
-  input[type='radio'] + div {
-    @extend .btn-outline-secondary;
-  }
-
-  input[type='radio']:checked + div {
-    @extend .btn-secondary;
-  }
-
+<style>
   .content {
     display: none;
   }
