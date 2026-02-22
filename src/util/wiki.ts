@@ -1,8 +1,30 @@
+import { z } from 'astro/zod';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
-import { getItemImage } from './items';
+import { getJsonFile } from './files';
 import { getOverrideValues } from './override';
-import type { VersionedResult } from './version';
+import { getNewestVersion, getVersionedEntry, type VersionedResult } from './version';
+
+const blockStateSchema = z.object({
+  properties: z.array(
+    z.object({
+      property: z.string(),
+      type: z.string(),
+      values: z.array(z.string())
+    })
+  ),
+  blockstates: z.array(
+    z.object({
+      values: z.array(
+        z.object({
+          property: z.string(),
+          value: z.string()
+        })
+      ),
+      imageid: z.string()
+    })
+  )
+});
 
 export type Title = string | VersionedResult<string>;
 
@@ -23,11 +45,13 @@ type WikiPage = WikiSubCategoryEntry | WikiPageEntry;
 type WikiPages = Map<CollectionEntry<'wiki_categories'>, WikiPage[]>;
 
 export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Title> {
+  const latestVersion = await getNewestVersion();
+
   if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
     return entry.data.title;
   } else if (entry.data.type === 'item') {
-    const item = await getEntry(entry.data.item);
-    return await getOverrideValues(item.data, (i) => i.name, '');
+    const item = await getVersionedEntry('items', latestVersion, entry.data.item);
+    return item?.data.name ?? entry.id;
   } else if (entry.data.type === 'building') {
     const building = await getEntry('buildings', entry.data.id);
     if (building === undefined) {
@@ -39,42 +63,67 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
   return entry.id;
 }
 
-export async function getWikiDescription(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
-  if (entry.data.type === 'page' || entry.data.type === 'item-combined') {
-    return entry.data.excerpt;
-  } else if (entry.data.type === 'item') {
-    const itemData = await getEntry(entry.data.item);
-    return itemData.data.description;
-  } else if (entry.data.type === 'building') {
-    return entry.data.description;
-  }
+async function getItemImageUrl(item: CollectionEntry<'items'>): Promise<string | undefined> {
+  const version = await getEntry(item.data.version);
+  const [namespace, itemPath] = item.data.baseId.split('/');
 
-  return undefined;
+  if (item.data.blockId !== undefined) {
+    const blockStatePath = `./generator/versions/${version.data.submodule}/output/block_states/${namespace}/${itemPath}.json`;
+    try {
+      const blockState = await getJsonFile(blockStateSchema, blockStatePath);
+      const imageId = blockState.blockstates[0]?.imageid;
+      if (imageId) {
+        return `/images/wiki/blocks/${version.data.submodule}/${namespace}/${itemPath}/${imageId}.png`;
+      }
+    } catch {
+      return undefined;
+    }
+  } else {
+    return `/images/wiki/items/${version.data.submodule}/${namespace}/${itemPath}.png`;
+  }
 }
 
 export async function getWikiImage(entry: CollectionEntry<'wiki'>): Promise<string | undefined> {
+  const latestVersion = await getNewestVersion();
+
   if (entry.data.type === 'page') {
     return entry.data.image?.src;
   } else if (entry.data.type === 'item') {
-    const item = await getEntry(entry.data.item);
-    const icon = item.data.icons.at(0);
-    if (icon === undefined) {
+    const item = await getVersionedEntry('items', latestVersion, entry.data.item);
+    if (item === undefined) {
       return undefined;
     }
-    return await getItemImage(icon, 100, 100);
+    return await getItemImageUrl(item);
   } else if (entry.data.type === 'item-combined') {
     if (entry.data.items.length === 0) {
       return undefined;
     }
 
-    const item = await getEntry(entry.data.items[0]);
-    const icon = item.data.icons.at(0);
-    if (icon === undefined) {
+    const item = await getVersionedEntry('items', latestVersion, entry.data.items[0]);
+    if (item === undefined) {
       return undefined;
     }
-    return await getItemImage(icon, 100, 100);
+    return await getItemImageUrl(item);
   } else if (entry.data.type === 'building') {
-    return entry.data.icon.src;
+    let blockItemId: string;
+    switch (entry.data.id) {
+      case 'residence':
+        blockItemId = 'minecolonies/blockhutcitizen';
+        break;
+      case 'quarry':
+        blockItemId = 'minecolonies/mediumquarry';
+        break;
+      default:
+        blockItemId = `minecolonies/blockhut${entry.data.id}`;
+        break;
+    }
+
+    const blockItem = await getVersionedEntry('items', latestVersion, blockItemId);
+    if (!blockItem) {
+      return undefined;
+    }
+
+    return await getItemImageUrl(blockItem);
   }
 }
 

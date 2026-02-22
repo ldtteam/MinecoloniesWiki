@@ -1,89 +1,145 @@
-import type { ImageOutputFormat } from 'astro';
-import { glob, type Loader } from 'astro/loaders';
+import type { Loader } from 'astro/loaders';
 import { z } from 'astro/zod';
-import minecraftData, { type Item } from 'minecraft-data';
-import type { itemSchema } from 'src/schemas/item';
-import { versionSchema } from 'src/schemas/version';
+import path from 'path';
 
-import { getJsonFile, parseYaml } from './file-utils';
+import { itemSchema } from '../schemas/item';
+import { getAllNamespacesInFolder, getVersionsFromFile } from '../util/file-loaders';
+import { exists, getAllFilesInDirectory, parseJson } from '../util/files';
+import { parseResourceLocationFromAbsolutePath, resourceLocationToWikiId } from '../util/resourcelocation';
+import { getVersionCollectionId } from '../util/version';
+import { parserModule12000 } from './recipes/12000';
+import { parserModule12100 } from './recipes/12100';
+import type { StoredRecipeData, VersionSchemaMap } from './recipes/common';
 
-const unavailableMcItems: Item[] = [
+const generatorItemSchema = z.object({
+  name: z.string(),
+  'block-id': z.string().optional()
+});
+
+const unavailableItems = [
   {
-    id: -1,
+    namespace: 'minecraft',
     name: 'water_bottle',
-    displayName: 'Water Bottle',
-    stackSize: 1
+    displayName: 'Water Bottle'
   }
 ];
 
-const imageExtensionOverrides: Record<string, ImageOutputFormat> = {
-  crimson_stem: 'gif',
-  warped_stem: 'gif',
-  compass: 'gif'
+const versionSchemaMap: VersionSchemaMap = {
+  '12000': parserModule12000,
+  '12100': parserModule12100
 };
 
-type RawItem = z.infer<typeof itemSchema>;
-
 export function itemLoader(): Loader {
-  const globLoader = glob({ base: './src/data/wiki/items', pattern: '**/*.yaml' });
-
   return {
     name: 'item-loader',
+    schema: itemSchema,
     load: async (context) => {
       context.store.clear();
 
-      // Mod items
-      await globLoader.load(context);
+      const versions = await getVersionsFromFile();
 
-      // Minecraft items
-      const versions = await getJsonFile(versionSchema.array(), './src/data/wiki/versions.yaml', parseYaml);
-      for (const version of Object.values(versions)) {
-        const mcData = minecraftData(version.id);
-        if (mcData === null) {
-          console.warn(`Version data for ${version.id} does not exist`);
+      for (const version of versions) {
+        const recipesByOutputItem = new Map<string, StoredRecipeData[]>();
+
+        const anyRecipeSchema = versionSchemaMap[version.submodule].fullSchema;
+
+        const recipesPath = `./generator/versions/${version.submodule}/output/recipes`;
+        if (await exists(recipesPath)) {
+          const recipeNamespaces = await getAllNamespacesInFolder(recipesPath);
+
+          for (const namespace of recipeNamespaces) {
+            const namespacePath = path.join(recipesPath, namespace);
+
+            try {
+              const recipes = await getAllFilesInDirectory(anyRecipeSchema, namespacePath, true, parseJson, {
+                suppressWarnings: true
+              });
+
+              for (const recipeData of Object.values(recipes)) {
+                const convertedRecipe = await versionSchemaMap[version.submodule].convert(recipeData, version);
+
+                if (!convertedRecipe) {
+                  continue;
+                }
+
+                if (!recipesByOutputItem.has(convertedRecipe.output.id)) {
+                  recipesByOutputItem.set(convertedRecipe.output.id, []);
+                }
+                recipesByOutputItem.get(convertedRecipe.output.id)?.push(convertedRecipe);
+              }
+            } catch (error) {
+              console.warn(`Error loading recipes for ${namespace} version ${version.id}`, error);
+              continue;
+            }
+          }
+        }
+
+        const crafterRecipesPath = `./generator/versions/${version.submodule}/output/crafter_recipes`;
+        if (await exists(crafterRecipesPath)) {
+          const crafterNamespaces = await getAllNamespacesInFolder(crafterRecipesPath);
+
+          for (const namespace of crafterNamespaces) {
+            const namespacePath = path.join(crafterRecipesPath, namespace);
+
+            try {
+              const recipes = await getAllFilesInDirectory(anyRecipeSchema, namespacePath, true, parseJson, {
+                suppressWarnings: true
+              });
+
+              for (const recipeData of Object.values(recipes)) {
+                const convertedRecipe = await versionSchemaMap[version.submodule].convert(recipeData, version);
+
+                if (!convertedRecipe) {
+                  continue;
+                }
+
+                if (!recipesByOutputItem.has(convertedRecipe.output.id)) {
+                  recipesByOutputItem.set(convertedRecipe.output.id, []);
+                }
+                recipesByOutputItem.get(convertedRecipe.output.id)?.push(convertedRecipe);
+              }
+            } catch (error) {
+              console.warn(`Error loading crafter recipes for ${namespace} version ${version.id}`, error);
+              continue;
+            }
+          }
+        }
+
+        const generatorItemsPath = `./generator/versions/${version.submodule}/output/items`;
+
+        if (!(await exists(generatorItemsPath))) {
+          context.logger.warn(`Generator items path does not exist for version ${version.id}: ${generatorItemsPath}`);
           continue;
         }
-        for (const item of mcData.itemsArray.concat(unavailableMcItems)) {
-          const id = 'minecraft/' + item.name;
 
-          const data = await context.parseData<RawItem>({
-            id,
-            data: {
+        const namespaces = await getAllNamespacesInFolder(generatorItemsPath);
+
+        for (const namespace of namespaces) {
+          const namespacePath = path.join(generatorItemsPath, namespace);
+
+          const generatorItems = await getAllFilesInDirectory(generatorItemSchema, namespacePath, true);
+
+          for (const [itemPath, itemData] of Object.entries(generatorItems)) {
+            const itemId = parseResourceLocationFromAbsolutePath(generatorItemsPath, itemPath);
+            const baseId = resourceLocationToWikiId(itemId);
+            const id = getVersionCollectionId(baseId, version);
+
+            const recipes = recipesByOutputItem.get(id) ?? [];
+
+            const data = await context.parseData<z.infer<typeof itemSchema>>({
               id,
-              name: item.displayName,
-              description: '',
-              icons: [
-                `https://minecraft.wiki/images/Invicon_${item.displayName.replaceAll(' ', '_')}.${imageExtensionOverrides[item.name] ?? 'png'}`
-              ]
-            }
-          });
-
-          if (context.store.has(id)) {
-            const current = context.store.get<RawItem>(id);
-            if (current) {
-              const currentName = current.data.overrides?.findLast(() => true)?.name ?? current.data.name;
-              if (currentName === data.name) {
-                continue;
-              }
-
-              if (current.data.overrides === undefined) {
-                current.data.overrides = [];
-              }
-              current.data.overrides.push({
-                ...data,
+              data: {
+                baseId,
                 version: {
-                  collection: 'versions',
-                  id: version.id
-                }
-              });
+                  id: version.id,
+                  collection: 'versions'
+                },
+                name: itemData.name,
+                blockId: itemData['block-id'],
+                recipes
+              }
+            });
 
-              const digest = context.generateDigest(current.data);
-              context.store.set({
-                ...current,
-                digest
-              });
-            }
-          } else {
             const digest = context.generateDigest(data);
             context.store.set({
               id,
@@ -92,7 +148,36 @@ export function itemLoader(): Loader {
             });
           }
         }
+
+        for (const item of unavailableItems) {
+          const baseId = `${item.namespace}/${item.name}`;
+          const id = getVersionCollectionId(baseId, version);
+
+          const recipes = recipesByOutputItem.get(id) ?? [];
+
+          const data = await context.parseData<z.infer<typeof itemSchema>>({
+            id,
+            data: {
+              baseId,
+              version: {
+                id: version.id,
+                collection: 'versions'
+              },
+              name: item.displayName,
+              recipes
+            }
+          });
+
+          const digest = context.generateDigest(data);
+          context.store.set({
+            id,
+            data,
+            digest
+          });
+        }
       }
+
+      context.logger.info(`Loaded ${context.store.keys().length} items`);
     }
   };
 }

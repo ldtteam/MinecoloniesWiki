@@ -1,0 +1,145 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import type { ConfigurationTypeValue } from '../../../schemas/configuration';
+import { toTitleCase } from '../../../util/string';
+import Card from '../../core/Card.astro';
+import ConfigurationLocations, { type Location } from './ConfigurationLocations.astro';
+import type { TypeDetail } from './types';
+
+interface Props {
+  modId: string;
+  type: TypeDetail;
+  version: CollectionEntry<'versions'>;
+}
+
+type GroupedValues = Record<string, Extract<ConfigurationTypeValue, { type: 'config' }>[]>;
+
+const { modId, type, version } = Astro.props;
+
+function getLocations(): Location[] {
+  switch (type.type) {
+    case 'COMMON':
+      return [
+        { path: `<minecraft folder>/config/${modId}-common.toml`, note: 'Singleplayer' },
+        { path: `<minecraft folder>/config/${modId}-common.toml`, note: 'Multiplayer (dedicated server)' }
+      ];
+    case 'SERVER':
+      return version.data.order >= 12100
+        ? [
+            { path: `<minecraft folder>/config/${modId}-server.toml`, note: 'Singleplayer (default)' },
+            { path: `<minecraft folder>/world/serverconfig/${modId}-server.toml`, note: 'Singleplayer (per-world)' },
+            {
+              path: `<minecraft folder>/config/${modId}-server.toml`,
+              note: 'Multiplayer (dedicated server) (default)'
+            },
+            {
+              path: `<minecraft folder>/world/serverconfig/${modId}-server.toml`,
+              note: 'Multiplayer (dedicated server) (per-world)'
+            }
+          ]
+        : [
+            { path: `<minecraft folder>/world/serverconfig/${modId}-server.toml`, note: 'Client side' },
+            {
+              path: `<minecraft folder>/config/${modId}-server.toml`,
+              note: 'Multiplayer (dedicated server) (default)'
+            },
+            {
+              path: `<minecraft folder>/world/serverconfig/${modId}-server.toml`,
+              note: 'Multiplayer (dedicated server) (per-world)'
+            }
+          ];
+    case 'CLIENT':
+      return [{ path: `<minecraft folder>/config/${modId}-client.toml` }];
+  }
+}
+
+function getDisplayValues(value: Extract<ConfigurationTypeValue, { type: 'config' }>): string {
+  switch (value['value-type']) {
+    case 'boolean':
+      return '<code>true</code> / <code>false</code>';
+    case 'number':
+      if (value.min && value.max) {
+        return `Number between <code>${value.min}</code> and <code>${value.max}</code>`;
+      } else if (value.min) {
+        return `Any number above <code>${value.min}</code>`;
+      } else if (value.max) {
+        return `Any number below <code>${value.max}</code>`;
+      } else {
+        return 'Any number';
+      }
+    case 'enum':
+      return value.enum ? `Any of the following: ${value.enum.map((val) => `<code>${val}</code>`).join('<br/>')}` : '';
+    case 'string':
+      return 'Any string';
+    default:
+      return '';
+  }
+}
+
+function collectValues(
+  rootPath: string[],
+  values: ConfigurationTypeValue[],
+  add: (path: string, value: Extract<ConfigurationTypeValue, { type: 'config' }>) => void
+) {
+  for (const value of values) {
+    if (value.type === 'config') {
+      add(rootPath.join(' / '), value);
+    } else {
+      collectValues(rootPath.concat([value.name]), value.children, add);
+    }
+  }
+}
+
+const groupedValues: GroupedValues = {};
+collectValues([], type.values, (path, value) => {
+  if (!groupedValues[path]) {
+    groupedValues[path] = [];
+  }
+  groupedValues[path].push(value);
+});
+---
+
+<Card class="w-100 vstack gap-3">
+  <div class="vstack">
+    <span><b>Type:</b> {toTitleCase(type.type)} configuration</span>
+    <ConfigurationLocations locations={getLocations()} />
+  </div>
+
+  {
+    Object.entries(groupedValues).map(([path, values]) => (
+      <>
+        <b>Category: {path}</b>
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Setting</th>
+              <th>Default</th>
+              <th>Values</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {values.map((value) => (
+              <tr>
+                <td class="w-25">{value.name}</td>
+                <td class="w-15">
+                  <code>{value.defaultValue.toString()}</code>
+                </td>
+                <td class="w-15" set:html={getDisplayValues(value)} />
+                <td>{value.comment}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    ))
+  }
+</Card>
+
+<style>
+  code {
+    word-break: break-all;
+  }
+</style>

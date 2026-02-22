@@ -1,6 +1,7 @@
 ---
-import Social from '@components/markdoc/util/Social.astro';
 import { getCollection } from 'astro:content';
+
+import Social from '../markdoc/util/Social.astro';
 
 const socials = await getCollection('socials');
 ---

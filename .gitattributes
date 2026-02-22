@@ -1,0 +1,21 @@
+# Line endings
+* text=auto eol=lf
+*.bat text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+
+# Lock files - don't show diffs
+pnpm-lock.yaml -diff
+
+# Linguist - treat .mdoc as Markdown (otherwise detected as Roff/Unix man pages)
+*.mdoc linguist-language=Markdown linguist-detectable=true
+
+# Linguist - exclude generated/content/vendor from language stats
+generator/** linguist-generated
+public/** linguist-vendored

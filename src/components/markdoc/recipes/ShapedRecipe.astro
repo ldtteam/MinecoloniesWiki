@@ -1,28 +1,30 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
+import type { RecipeSchema } from '../../../schemas/item';
 import RecipeSlot from './RecipeSlot.astro';
 
 interface Props {
-  recipe: Extract<CollectionEntry<'recipes'>['data'], { type: 'shaped' }>;
+  recipe: Extract<RecipeSchema, { type: 'shaped' }>;
+  version: CollectionEntry<'versions'>;
 }
 
-const { recipe } = Astro.props;
+const { recipe, version } = Astro.props;
 ---
 
 <div class="inputs">
-  <RecipeSlot items={recipe.row1?.tag1 ?? recipe.row1?.item1} />
-  <RecipeSlot items={recipe.row1?.tag2 ?? recipe.row1?.item2} />
-  <RecipeSlot items={recipe.row1?.tag3 ?? recipe.row1?.item3} />
-  <RecipeSlot items={recipe.row2?.tag1 ?? recipe.row2?.item1} />
-  <RecipeSlot items={recipe.row2?.tag2 ?? recipe.row2?.item2} />
-  <RecipeSlot items={recipe.row2?.tag3 ?? recipe.row2?.item3} />
-  <RecipeSlot items={recipe.row3?.tag1 ?? recipe.row3?.item1} />
-  <RecipeSlot items={recipe.row3?.tag2 ?? recipe.row3?.item2} />
-  <RecipeSlot items={recipe.row3?.tag3 ?? recipe.row3?.item3} />
+  <RecipeSlot items={recipe.items.at(0)?.at(0)} version={version} />
+  <RecipeSlot items={recipe.items.at(0)?.at(1)} version={version} />
+  <RecipeSlot items={recipe.items.at(0)?.at(2)} version={version} />
+  <RecipeSlot items={recipe.items.at(1)?.at(0)} version={version} />
+  <RecipeSlot items={recipe.items.at(1)?.at(1)} version={version} />
+  <RecipeSlot items={recipe.items.at(1)?.at(2)} version={version} />
+  <RecipeSlot items={recipe.items.at(2)?.at(0)} version={version} />
+  <RecipeSlot items={recipe.items.at(2)?.at(1)} version={version} />
+  <RecipeSlot items={recipe.items.at(2)?.at(2)} version={version} />
 </div>
 <div class="output">
-  <RecipeSlot items={recipe.output} amount={recipe.amount} large />
+  <RecipeSlot items={[recipe.output]} amount={recipe.amount} large version={version} />
 </div>
 
 <style>

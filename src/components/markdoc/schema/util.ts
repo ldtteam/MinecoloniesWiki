@@ -1,8 +1,9 @@
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
-import { buildingPlugin } from '@utils/remark/buildings';
 import type { CollectionEntry } from 'astro:content';
 import remarkDirective from 'remark-directive';
-import type { AnyField } from 'src/schemas/json_structures';
+
+import type { AnyField } from '../../../schemas/json_structures';
+import { buildingPlugin } from '../../../util/remark/buildings';
 
 export async function formatText(text: string, frontmatter: CollectionEntry<'wiki'>['data']) {
   const processor = await createMarkdownProcessor({

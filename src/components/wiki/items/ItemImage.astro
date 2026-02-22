@@ -1,16 +1,32 @@
 ---
-import { getItemImage } from '@utils/items';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 interface Props {
-  icon: string;
+  item: CollectionEntry<'items'>;
   alt?: string;
-  width: number;
-  height?: number;
+  size: number;
+  class?: string;
 }
 
-const { icon, alt, width, height } = Astro.props;
+const { item, alt, size, class: className } = Astro.props;
 
-const src = await getItemImage(icon, width, height);
+const version = await getEntry(item.data.version);
+const [namespace, ...itemPath] = item.data.baseId.split('/');
+
+const src = `/images/wiki/items/${version.data.submodule}/${namespace}/${itemPath.join('/')}.png`;
 ---
 
-<img src={src} alt={alt} loading="lazy" decoding="async" width={width} />
+{
+  src && (
+    <img
+      src={src}
+      alt={alt || item.data.name}
+      loading="lazy"
+      decoding="async"
+      width={size}
+      height={size}
+      class={className}
+    />
+  )
+}

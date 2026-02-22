@@ -1,6 +1,5 @@
 ---
-import { toTitleCase } from '@utils/string';
-
+import { toTitleCase } from '../../util/string';
 import type { Schematic } from './SchematicCard.astro';
 import SchematicCard from './SchematicCard.astro';
 
@@ -23,7 +22,7 @@ const { path, schematics } = Astro.props;
 </div>
 
 <style lang="scss">
-  @import '../../css/bootstrap-vars.scss';
+  @import '../../css/bootstrap-vars';
 
   .schematic-folder {
     display: none;

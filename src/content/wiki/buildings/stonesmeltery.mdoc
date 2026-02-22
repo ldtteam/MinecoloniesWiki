@@ -4,14 +4,17 @@ id: stonesmeltery
 name: Stone Smeltery
 plural: Stone Smelteries
 description: The Stone Smeltery is your general smelter for your colony, they can smelt things like cobblestone into stone, sand into sandstone and so forth.
-icon: "@assets/images/wiki/items/minecolonies/blockhutstonesmeltery.png"
 workers:
   - stonesmelter
-recipes:
-  - minecolonies/blockhutstonesmeltery
+rotation: 270
+overrides:
+  - version: "1.20"
+    name: Brick Yard
+    plural: Brick Yards
+    description: The Brick Yard is your general smelter for your colony, they can smelt things like cobblestone into stone, sand into sandstone and so forth.
 ---
 
-The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, terracotta into glazed terracotta, all types of stone into all types of smooth stone, and logs into charcoal. They can also pop chorus fruits! The Stone Smelter will only work when they have been taught the recipe, receive a request from another worker, and have the needed materials. 
+The {% building /%} is where the {% worker /%} will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, terracotta into glazed terracotta, all types of stone into all types of smooth stone, and logs into charcoal. They can also pop chorus fruits! The Stone Smelter will only work when they have been taught the recipe, receive a request from another worker, and have the needed materials. 
 
 **Special Note: Charcoal cannot be used as a fuel for making charcoal in the stone smeltery.**
 
@@ -34,7 +37,7 @@ The Stone Smeltery is where the Stone Smelter will smelt cobblestone into stone,
 {% building_gui_content_block_fuel order=3 /%}
 {% building_gui_content_block_tasks order=4 /%}
 {% building_gui_content_block_settings order=5 %}
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

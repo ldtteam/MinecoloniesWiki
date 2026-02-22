@@ -6,3 +6,5 @@ minecolonies
 node_modules
 public
 pnpm-lock.yaml
+generator
+src/assets/images

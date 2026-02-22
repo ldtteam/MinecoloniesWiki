@@ -1,9 +1,0 @@
-type: custom
-items:
-  - item: minecraft/diamond
-output: minecolonies/diamond_mesh
-conditions:
-  - type: building
-    building: mechanic
-  - type: research
-    research: diamondmesh

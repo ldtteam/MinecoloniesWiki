@@ -4,16 +4,14 @@ id: sawmill
 name: Sawmill
 plural: Sawmills
 description: The Sawmill is where all your wood is transformed into more useful wood! Carpenters can craft nearly all wooden materials there are.
-icon: "@assets/images/wiki/items/minecolonies/blockhutsawmill.png"
 workers:
   - carpenter
-recipes:
-  - minecolonies/blockhutsawmill
+rotation: 270
 ---
 
 The {% building /%} is where the {% worker /%} will craft any items made of at least 75% wood that do not include ingots, stone, redstone (or produce a redstone signal), or string. The {% worker /%} will also craft a few other items, including {% item name="minecolonies/blockminecoloniesrack" /%}, as well as [Domum Ornamentum](/wiki/dependencies/domumornamentum) blocks that include wood. For them to do this, you must teach the {% building /%} the recipes and the {% worker /%} must receive a request for an item from another worker.
 
-> **Note:** The number of recipes you can teach the {% building /%} doubles per building level. So:
+> **Note:** Upgrading the {% building /%} lets you teach it more recipes. So:
 
 | Building Level | Number of Recipes |
 | -------------- | ----------------- |
@@ -30,7 +28,7 @@ The {% building /%} is where the {% worker /%} will craft any items made of at l
 {% building_gui_content_block_do_recipes order=3 /%}
 {% building_gui_content_block_tasks order=4 /%}
 {% building_gui_content_block_settings order=5 %}
-- **Recipe Mode:** This is unlocked by researching {% research_link name="warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
+- **Recipe Mode:** This is unlocked by researching {% research_link name="minecolonies/technology/warehousemaster" /%} in the {% building name="university" /%}. This changes how multiple recipes for the same item are prioritized.
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 {% /building_gui_content_block_settings %}

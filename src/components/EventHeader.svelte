@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { EventRelative } from '@utils/util';
+  import type { EventRelative } from 'src/util/util';
   import type { CollectionEntry } from 'astro:content';
   import { format, formatDistance, fromUnixTime } from 'date-fns';
 

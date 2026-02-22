@@ -1,7 +1,8 @@
 ---
-import MemberColumn from '@components/team/MemberColumn.astro';
-import Layout from '@layouts/Default.astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
+
+import MemberColumn from '../components/team/MemberColumn.astro';
+import Layout from '../layouts/Default.astro';
 
 type AllMembers = Record<
   CollectionEntry<'team'>['data']['role'],

@@ -1,7 +1,6 @@
 ---
-import Button from '@components/ui/Button.astro';
-import { getWikiPages } from '@utils/wiki';
-
+import { getWikiPages } from '../../util/wiki';
+import Button from '../core/Button.astro';
 import PageTitleRender from './PageTitleRender.astro';
 
 const wikiPages = await getWikiPages();
@@ -40,7 +39,7 @@ const wikiPages = await getWikiPages();
 }
 
 <style lang="scss">
-  @import '../../css/bootstrap-vars.scss';
+  @import '../../css/bootstrap-vars';
 
   .pages-grid {
     display: grid;

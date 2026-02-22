@@ -1,6 +1,7 @@
 // @ts-check
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { defineConfig } from 'eslint/config';
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
@@ -11,12 +12,30 @@ import astroEslintParser from 'astro-eslint-parser';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default ts.config(
+export default defineConfig(
   js.configs.recommended,
   ts.configs.eslintRecommended,
   ...ts.configs.strict,
   eslintPluginPrettierRecommended,
   ...eslintPluginAstro.configs.recommended,
+  {
+    rules: {
+      curly: ['error', 'all'],
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: ['src/*'],
+          paths: [
+            {
+              name: 'astro:content',
+              importNames: ['z'],
+              message: 'Import z from "astro/zod" instead to avoid virtual module issues.'
+            }
+          ]
+        }
+      ]
+    }
+  },
   {
     name: 'Application rules (Astro)',
     files: ['**/*.astro'],
