@@ -1,4 +1,4 @@
-name: "[🚨] 2. Missing Page"
+name: '[🚨] 2. Missing Page'
 description: If you think a page of information on the wiki is missing. Use this if you want to open an entire topic of information on a new page.
 type: task
 labels:
@@ -8,27 +8,27 @@ body:
     id: version
     attributes:
       label: Affected version(s)
-      description: "Which version(s) are affected by this bug? (Hint: View the version selector in the top-right)"
+      description: 'Which version(s) are affected by this bug? (Hint: View the version selector in the top-right)'
       default: 16
       multiple: true
       options:
-        - "1.18"
-        - "1.18.1"
-        - "1.18.2"
-        - "1.19"
-        - "1.19.1"
-        - "1.19.2"
-        - "1.19.3"
-        - "1.19.4"
-        - "1.20"
-        - "1.20.1"
-        - "1.20.2"
-        - "1.20.3"
-        - "1.20.4"
-        - "1.20.5"
-        - "1.20.6"
-        - "1.21"
-        - "1.21.1"
+        - '1.18'
+        - 1.18.1
+        - 1.18.2
+        - '1.19'
+        - 1.19.1
+        - 1.19.2
+        - 1.19.3
+        - 1.19.4
+        - '1.20'
+        - 1.20.1
+        - 1.20.2
+        - 1.20.3
+        - 1.20.4
+        - 1.20.5
+        - 1.20.6
+        - '1.21'
+        - 1.21.1
     validations:
       required: true
   - type: textarea

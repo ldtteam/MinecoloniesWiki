@@ -4,10 +4,12 @@ import { defineCollection, type ImageFunction, reference } from 'astro:content';
 
 import { buildingLoader } from './loaders/building-loader';
 import { citizenNamesLoader } from './loaders/citizennames-loader';
+import { configurationLoader } from './loaders/configuration-loader';
 import { itemLoader } from './loaders/item-loader';
 import { researchEffectLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
 import { buildingSchema } from './schemas/building';
 import { citizenNamesPackSchema } from './schemas/citizen_names';
+import { configurationSchema } from './schemas/configuration';
 import { itemSchema } from './schemas/item';
 import { jsonStructureSchema } from './schemas/json_structures';
 import { researchEffectsSchema, researchSchema, researchTreeSchema } from './schemas/research';
@@ -161,6 +163,11 @@ const metaCollection = defineCollection({
   })
 });
 
+const configurationCollection = defineCollection({
+  loader: configurationLoader(),
+  schema: configurationSchema
+});
+
 // |----------|
 // | RESEARCH |
 // |----------|
@@ -189,9 +196,9 @@ const jsonStructuresCollection = defineCollection({
   schema: jsonStructureSchema
 });
 
-// |---------|
+// |------------|
 // | SCHEMATICS |
-// |---------|
+// |------------|
 
 const schematicsCollection = defineCollection({
   loader: glob({ pattern: '**/*.yaml', base: './src/data/schematics' }),
@@ -209,6 +216,7 @@ export const collections = {
   research: researchCollection,
   versions: versionsCollection,
   citizen_name_packs: citizenNamesCollection,
+  configuration: configurationCollection,
   meta: metaCollection,
   team: teamCollection,
   sponsors: sponsorCollection,

@@ -1,7 +1,7 @@
 name: Chef
 plural: Chefs
 description: The Chef will create food in the Cookery that can be sent to Restaurants to feed your citizens.
-icon: "../../../assets/images/wiki/workers/chef/male/default-a.png"
+icon: ../../../assets/images/wiki/workers/chef/male/default-a.png
 type: crafter
 traits:
   primary:

@@ -12,7 +12,7 @@ schematics:
       y: 19
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/horticulture/composter/front.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/horticulture/composter/front.jpg
   - id: farmer
     type: building
     building: farmer
@@ -22,8 +22,8 @@ schematics:
       y: 18
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/horticulture/farmer/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/horticulture/farmer/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/horticulture/farmer/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/horticulture/farmer/back.jpg
   - id: florist
     type: building
     building: florist
@@ -33,7 +33,7 @@ schematics:
       y: 18
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/horticulture/florist/front.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/horticulture/florist/front.jpg
   - id: plantation
     type: building
     building: plantation
@@ -43,7 +43,7 @@ schematics:
       y: 16
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/horticulture/plantation/front.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/horticulture/plantation/front.jpg
   - id: beekeeper
     type: building
     building: beekeeper
@@ -53,8 +53,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/beekeeper/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/beekeeper/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/beekeeper/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/beekeeper/back.jpg
   - id: chickenherder
     type: building
     building: chickenherder
@@ -64,8 +64,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/chickenherder/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/chickenherder/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/chickenherder/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/chickenherder/back.jpg
   - id: cowboy
     type: building
     building: cowboy
@@ -75,8 +75,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/cowboy/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/cowboy/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/cowboy/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/cowboy/back.jpg
   - id: fisherman
     type: building
     building: fisherman
@@ -86,8 +86,8 @@ schematics:
       y: 22
       z: 14
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/fisherman/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/fisherman/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/fisherman/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/fisherman/back.jpg
   - id: rabbithutch
     type: building
     building: rabbithutch
@@ -97,8 +97,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/rabbithutch/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/rabbithutch/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/rabbithutch/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/rabbithutch/back.jpg
   - id: shepherd
     type: building
     building: shepherd
@@ -108,8 +108,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/shepherd/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/shepherd/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/shepherd/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/shepherd/back.jpg
   - id: swineherder
     type: building
     building: swineherder
@@ -119,8 +119,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/swineherder/front.jpg"
-      - "../../assets/images/schematics/truedwarven/agriculture/husbandry/swineherder/back.jpg"
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/swineherder/front.jpg
+      - ../../assets/images/schematics/truedwarven/agriculture/husbandry/swineherder/back.jpg
   - id: fletcher
     type: building
     building: fletcher
@@ -130,8 +130,8 @@ schematics:
       y: 19
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/carpentry/fletcher/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/carpentry/fletcher/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/carpentry/fletcher/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/carpentry/fletcher/back.jpg
   - id: sawmill
     type: building
     building: sawmill
@@ -141,8 +141,8 @@ schematics:
       y: 18
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/carpentry/sawmill/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/carpentry/sawmill/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/carpentry/sawmill/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/carpentry/sawmill/back.jpg
   - id: baker
     type: building
     building: baker
@@ -152,8 +152,8 @@ schematics:
       y: 21
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/luxury/baker/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/luxury/baker/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/luxury/baker/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/luxury/baker/back.jpg
   - id: concretemixer
     type: building
     building: concretemixer
@@ -163,8 +163,8 @@ schematics:
       y: 18
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/luxury/concretemixer/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/luxury/concretemixer/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/luxury/concretemixer/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/luxury/concretemixer/back.jpg
   - id: dyer
     type: building
     building: dyer
@@ -174,7 +174,7 @@ schematics:
       y: 19
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/luxury/dyer/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/luxury/dyer/front.jpg
   - id: glassblower
     type: building
     building: glassblower
@@ -184,7 +184,7 @@ schematics:
       y: 22
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/luxury/glassblower/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/luxury/glassblower/front.jpg
   - id: crusher
     type: building
     building: crusher
@@ -194,7 +194,7 @@ schematics:
       y: 18
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/masonry/crusher/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/masonry/crusher/front.jpg
   - id: sifter
     type: building
     building: sifter
@@ -204,8 +204,8 @@ schematics:
       y: 20
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/masonry/sifter/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/masonry/sifter/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/masonry/sifter/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/masonry/sifter/back.jpg
   - id: stonemason
     type: building
     building: stonemason
@@ -215,7 +215,7 @@ schematics:
       y: 22
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/masonry/stonemason/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/masonry/stonemason/front.jpg
   - id: stonesmeltery
     type: building
     building: stonesmeltery
@@ -225,7 +225,7 @@ schematics:
       y: 19
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/masonry/stonesmeltery/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/masonry/stonesmeltery/front.jpg
   - id: blacksmith
     type: building
     building: blacksmith
@@ -235,8 +235,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/blacksmith/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/blacksmith/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/blacksmith/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/blacksmith/back.jpg
   - id: mechanic
     type: building
     building: mechanic
@@ -246,8 +246,8 @@ schematics:
       y: 23
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/mechanic/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/mechanic/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/mechanic/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/mechanic/back.jpg
   - id: smeltery
     type: building
     building: smeltery
@@ -257,7 +257,7 @@ schematics:
       y: 19
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/smeltery/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/metallurgy/smeltery/front.jpg
   - id: deliveryman
     type: building
     building: deliveryman
@@ -267,7 +267,7 @@ schematics:
       y: 6
       z: 8
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/storage/deliveryman/front.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/storage/deliveryman/front.jpg
   - id: warehouse
     type: building
     building: deliveryman
@@ -277,8 +277,8 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/craftsmanship/storage/warehouse/front.jpg"
-      - "../../assets/images/schematics/truedwarven/craftsmanship/storage/warehouse/back.jpg"
+      - ../../assets/images/schematics/truedwarven/craftsmanship/storage/warehouse/front.jpg
+      - ../../assets/images/schematics/truedwarven/craftsmanship/storage/warehouse/back.jpg
   - id: 1by1empty
     type: decoration
     path: decorations/deco
@@ -287,7 +287,7 @@ schematics:
       y: 13
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/decorations/deco/1by1empty/front.jpg"
+      - ../../assets/images/schematics/truedwarven/decorations/deco/1by1empty/front.jpg
   - id: 1by1flowergarden
     type: decoration
     path: decorations/deco
@@ -296,7 +296,7 @@ schematics:
       y: 13
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/decorations/deco/1by1flowergarden/front.jpg"
+      - ../../assets/images/schematics/truedwarven/decorations/deco/1by1flowergarden/front.jpg
   - id: 2by2empty
     type: decoration
     path: decorations/deco
@@ -305,7 +305,7 @@ schematics:
       y: 13
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/decorations/deco/2by2empty/front.jpg"
+      - ../../assets/images/schematics/truedwarven/decorations/deco/2by2empty/front.jpg
   - id: pond
     type: decoration
     path: decorations/deco
@@ -314,7 +314,7 @@ schematics:
       y: 15
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/decorations/deco/pond/front.jpg"
+      - ../../assets/images/schematics/truedwarven/decorations/deco/pond/front.jpg
   - id: camp
     type: decoration
     path: decorations/supplies
@@ -323,7 +323,7 @@ schematics:
       y: 9
       z: 24
     images:
-      - "../../assets/images/schematics/truedwarven/decorations/supplies/camp/front.jpg"
+      - ../../assets/images/schematics/truedwarven/decorations/supplies/camp/front.jpg
   - id: ship
     type: decoration
     path: decorations/supplies
@@ -332,7 +332,7 @@ schematics:
       y: 20
       z: 34
     images:
-      - "../../assets/images/schematics/truedwarven/decorations/supplies/ship/front.jpg"
+      - ../../assets/images/schematics/truedwarven/decorations/supplies/ship/front.jpg
   - id: library
     type: building
     building: library
@@ -342,8 +342,8 @@ schematics:
       y: 18
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/education/library/front.jpg"
-      - "../../assets/images/schematics/truedwarven/education/library/back.jpg"
+      - ../../assets/images/schematics/truedwarven/education/library/front.jpg
+      - ../../assets/images/schematics/truedwarven/education/library/back.jpg
   - id: school
     type: building
     building: school
@@ -353,8 +353,8 @@ schematics:
       y: 18
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/education/school/front.jpg"
-      - "../../assets/images/schematics/truedwarven/education/school/back.jpg"
+      - ../../assets/images/schematics/truedwarven/education/school/front.jpg
+      - ../../assets/images/schematics/truedwarven/education/school/back.jpg
   - id: university
     type: building
     building: library
@@ -364,8 +364,8 @@ schematics:
       y: 21
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/education/university/front.jpg"
-      - "../../assets/images/schematics/truedwarven/education/university/back.jpg"
+      - ../../assets/images/schematics/truedwarven/education/university/front.jpg
+      - ../../assets/images/schematics/truedwarven/education/university/back.jpg
   - id: builder
     type: building
     building: builder
@@ -375,8 +375,8 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/builder/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/builder/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/builder/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/builder/back.jpg
   - id: cook
     type: building
     building: cook
@@ -386,8 +386,8 @@ schematics:
       y: 23
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/cook/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/cook/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/cook/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/cook/back.jpg
   - id: hospital
     type: building
     building: hospital
@@ -397,7 +397,7 @@ schematics:
       y: 15
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/hospital/front.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/hospital/front.jpg
   - id: lumberjack
     type: building
     building: lumberjack
@@ -407,8 +407,8 @@ schematics:
       y: 19
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/lumberjack/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/lumberjack/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/lumberjack/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/lumberjack/back.jpg
   - id: miner
     type: building
     building: miner
@@ -418,8 +418,8 @@ schematics:
       y: 24
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/miner/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/miner/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/miner/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/miner/back.jpg
   - id: residence
     type: building
     building: residence
@@ -429,8 +429,8 @@ schematics:
       y: 25
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/residence/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/residence/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/residence/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/residence/back.jpg
   - id: tavern
     type: building
     building: tavern
@@ -440,8 +440,8 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/tavern/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/tavern/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/tavern/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/tavern/back.jpg
   - id: townhall
     type: building
     building: townhall
@@ -451,8 +451,8 @@ schematics:
       y: 20
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/fundamentals/townhall/front.jpg"
-      - "../../assets/images/schematics/truedwarven/fundamentals/townhall/back.jpg"
+      - ../../assets/images/schematics/truedwarven/fundamentals/townhall/front.jpg
+      - ../../assets/images/schematics/truedwarven/fundamentals/townhall/back.jpg
   - id: 1by1incornerstairs
     type: decoration
     path: infrastructure
@@ -461,7 +461,7 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/1by1incornerstairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/1by1incornerstairs/front.jpg
   - id: 1by1outcornerstairs
     type: decoration
     path: infrastructure
@@ -470,7 +470,7 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/1by1outcornerstairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/1by1outcornerstairs/front.jpg
   - id: 1by1stairs
     type: decoration
     path: infrastructure
@@ -479,7 +479,7 @@ schematics:
       y: 15
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/1by1stairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/1by1stairs/front.jpg
   - id: 1road
     type: decoration
     path: infrastructure
@@ -488,7 +488,7 @@ schematics:
       y: 12
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/1road/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/1road/front.jpg
   - id: 2parallelroads
     type: decoration
     path: infrastructure
@@ -497,7 +497,7 @@ schematics:
       y: 12
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/2parallelroads/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/2parallelroads/front.jpg
   - id: 2perpendicularroads
     type: decoration
     path: infrastructure
@@ -506,7 +506,7 @@ schematics:
       y: 12
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/2perpendicularroads/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/2perpendicularroads/front.jpg
   - id: 3ushapedroads
     type: decoration
     path: infrastructure
@@ -515,7 +515,7 @@ schematics:
       y: 12
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/3ushapedroads/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/3ushapedroads/front.jpg
   - id: 4roads
     type: decoration
     path: infrastructure
@@ -524,7 +524,7 @@ schematics:
       y: 12
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/4roads/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/4roads/front.jpg
   - id: intersection
     type: decoration
     path: infrastructure
@@ -533,7 +533,7 @@ schematics:
       y: 13
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/intersection/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/intersection/front.jpg
   - id: steepinstairs
     type: decoration
     path: infrastructure
@@ -542,7 +542,7 @@ schematics:
       y: 27
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/steepinstairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/steepinstairs/front.jpg
   - id: steepoutstairs
     type: decoration
     path: infrastructure
@@ -551,7 +551,7 @@ schematics:
       y: 27
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/steepoutstairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/steepoutstairs/front.jpg
   - id: steepstairs
     type: decoration
     path: infrastructure
@@ -560,7 +560,7 @@ schematics:
       y: 27
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/steepstairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/steepstairs/front.jpg
   - id: stonebridgespan
     type: decoration
     path: infrastructure
@@ -569,7 +569,7 @@ schematics:
       y: 11
       z: 11
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/stonebridgespan/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/stonebridgespan/front.jpg
   - id: stonebridgestairs
     type: decoration
     path: infrastructure
@@ -578,7 +578,7 @@ schematics:
       y: 9
       z: 9
     images:
-      - "../../assets/images/schematics/truedwarven/infrastructure/stonebridgestairs/front.jpg"
+      - ../../assets/images/schematics/truedwarven/infrastructure/stonebridgestairs/front.jpg
   - id: archery
     type: building
     building: archery
@@ -588,7 +588,7 @@ schematics:
       y: 14
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/military/archery/front.jpg"
+      - ../../assets/images/schematics/truedwarven/military/archery/front.jpg
   - id: barracks
     type: building
     building: barracks
@@ -598,7 +598,7 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/military/barracks/front.jpg"
+      - ../../assets/images/schematics/truedwarven/military/barracks/front.jpg
   - id: barrackstower
     type: building
     building: barrackstower
@@ -609,7 +609,7 @@ schematics:
       y: 21
       z: 12
     images:
-      - "../../assets/images/schematics/truedwarven/military/barrackstower/front.jpg"
+      - ../../assets/images/schematics/truedwarven/military/barrackstower/front.jpg
   - id: combatacademy
     type: building
     building: combatacademy
@@ -619,7 +619,7 @@ schematics:
       y: 19
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/military/combatacademy/front.jpg"
+      - ../../assets/images/schematics/truedwarven/military/combatacademy/front.jpg
   - id: guardtower
     type: building
     building: guardtower
@@ -629,7 +629,7 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/military/guardtower/front.jpg"
+      - ../../assets/images/schematics/truedwarven/military/guardtower/front.jpg
   - id: barracksfull
     type: building
     building: barracks
@@ -639,7 +639,7 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/truedwarven/military/barracksfull/front.jpg"
+      - ../../assets/images/schematics/truedwarven/military/barracksfull/front.jpg
   - id: enchanter
     type: building
     building: enchanter
@@ -649,5 +649,5 @@ schematics:
       y: 21
       z: 16
     images:
-      - "../../assets/images/schematics/truedwarven/mystic/enchanter/front.jpg"
-      - "../../assets/images/schematics/truedwarven/mystic/enchanter/back.jpg"
+      - ../../assets/images/schematics/truedwarven/mystic/enchanter/front.jpg
+      - ../../assets/images/schematics/truedwarven/mystic/enchanter/back.jpg

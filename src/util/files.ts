@@ -98,7 +98,7 @@ function parseZodSchema<T extends z.ZodSchema>(schema: T, value: string, parser:
     if (ex instanceof z.ZodError && !(options.suppressWarnings ?? false)) {
       console.error('Issues parsing object:');
       console.error(value);
-      console.error(ex.issues);
+      console.error(JSON.stringify(ex.issues));
     }
     throw ex;
   }

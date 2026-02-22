@@ -54,14 +54,13 @@ const json = await buildJson(schema, frontmatter);
       <span>* = Required field</span>
     </div>
     <div class="content content-json">
-      <Fragment set:html={json} />
+      <!-- <Fragment set:html={json} /> -->
     </div>
   </blockquote>
 </div>
 
 <style lang="scss">
-  @import '../../../css/bootstrap-vars.scss';
-  @import '../../../../node_modules/bootstrap/scss/_buttons.scss';
+  @import '../../../css/bootstrap-vars';
 
   input[type='radio'] + div {
     @extend .btn-outline-secondary;

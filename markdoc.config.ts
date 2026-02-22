@@ -8,6 +8,7 @@ import { schema } from './src/markdoc/schema';
 import type { Tag } from './src/markdoc/types';
 import {
   citizen_name_pack_list,
+  configuration_list,
   content_block,
   image_row,
   meta,
@@ -47,7 +48,8 @@ const config: AstroMarkdocConfig = {
     content_block,
     image_row,
     meta,
-    schema
+    schema,
+    configuration_list
   },
   nodes: {
     document: {

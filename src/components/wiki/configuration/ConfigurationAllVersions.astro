@@ -1,0 +1,29 @@
+---
+import VersionContent from '../../../components/version/VersionContent.astro';
+import { getSortedVersions, getVersionedEntry } from '../../../util/version';
+import Configuration from './Configuration.astro';
+
+interface Props {
+  modName: string;
+}
+
+const { modName } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions
+    .map(async (version) => {
+      const configurationData = await getVersionedEntry('configuration', version, modName);
+      if (configurationData === undefined) {
+        return undefined;
+      }
+      return (
+        <VersionContent versions={[version]}>
+          <Configuration configuration={configurationData} />
+        </VersionContent>
+      );
+    })
+    .filter((f) => f !== undefined)
+}

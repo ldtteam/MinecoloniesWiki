@@ -14,7 +14,7 @@ schematics:
       y: 7
       z: 12
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Bamboo field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Bamboo field/front.jpg
   - id: Cactus field
     type: decoration
     path: agriculture/fields
@@ -23,7 +23,7 @@ schematics:
       y: 9
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Cactus field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Cactus field/front.jpg
   - id: Glowberries field
     type: decoration
     path: agriculture/fields
@@ -32,7 +32,7 @@ schematics:
       y: 21
       z: 12
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Glowberries field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Glowberries field/front.jpg
   - id: Kelp & Sea field
     type: decoration
     path: agriculture/fields
@@ -41,8 +41,8 @@ schematics:
       y: 14
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Kelp & Sea field/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/fields/Kelp & Sea field/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Kelp & Sea field/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/fields/Kelp & Sea field/back.jpg
   - id: Sugarcane field
     type: decoration
     path: agriculture/fields
@@ -51,7 +51,7 @@ schematics:
       y: 9
       z: 15
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Sugarcane field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Sugarcane field/front.jpg
   - id: Twisting vines field
     type: decoration
     path: agriculture/fields
@@ -60,7 +60,7 @@ schematics:
       y: 7
       z: 12
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Twisting vines field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Twisting vines field/front.jpg
   - id: Vine & Cocoa field
     type: decoration
     path: agriculture/fields
@@ -69,7 +69,7 @@ schematics:
       y: 9
       z: 15
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Vine & Cocoa field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Vine & Cocoa field/front.jpg
   - id: Weeping vines field
     type: decoration
     path: agriculture/fields
@@ -78,7 +78,7 @@ schematics:
       y: 13
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/agriculture/fields/Weeping vines field/front.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/fields/Weeping vines field/front.jpg
   - id: composter
     type: building
     building: composter
@@ -88,8 +88,8 @@ schematics:
       y: 9
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/composter/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/composter/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/composter/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/composter/back.jpg
   - id: farm
     type: building
     building: farmer
@@ -99,8 +99,8 @@ schematics:
       y: 14
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/farm/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/farm/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/farm/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/farm/back.jpg
   - id: flowershop
     type: building
     building: florist
@@ -110,8 +110,8 @@ schematics:
       y: 17
       z: 26
     images:
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/flowershop/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/flowershop/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/flowershop/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/flowershop/back.jpg
   - id: plantation
     type: building
     building: plantation
@@ -121,8 +121,8 @@ schematics:
       y: 14
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/plantation/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/horticulture/plantation/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/plantation/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/horticulture/plantation/back.jpg
   - id: apiary
     type: building
     building: beekeeper
@@ -132,8 +132,8 @@ schematics:
       y: 13
       z: 11
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/apiary/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/apiary/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/apiary/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/apiary/back.jpg
   - id: chickenherder
     type: building
     building: chickenherder
@@ -143,8 +143,8 @@ schematics:
       y: 11
       z: 11
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/chickenherder/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/chickenherder/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/chickenherder/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/chickenherder/back.jpg
   - id: cowboy
     type: building
     building: cowboy
@@ -154,8 +154,8 @@ schematics:
       y: 14
       z: 19
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/cowboy/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/cowboy/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/cowboy/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/cowboy/back.jpg
   - id: dock
     type: building
     building: fisherman
@@ -165,8 +165,8 @@ schematics:
       y: 12
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/dock/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/dock/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/dock/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/dock/back.jpg
   - id: fisher
     type: building
     building: fisherman
@@ -176,8 +176,8 @@ schematics:
       y: 11
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/fisher/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/fisher/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/fisher/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/fisher/back.jpg
   - id: rabbithutch
     type: building
     building: rabbithutch
@@ -187,8 +187,8 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/rabbithutch/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/rabbithutch/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/rabbithutch/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/rabbithutch/back.jpg
   - id: shepherd
     type: building
     building: shepherd
@@ -198,8 +198,8 @@ schematics:
       y: 12
       z: 21
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/shepherd/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/shepherd/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/shepherd/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/shepherd/back.jpg
   - id: swineherder
     type: building
     building: swineherder
@@ -209,8 +209,8 @@ schematics:
       y: 11
       z: 21
     images:
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/swineherder/front.jpg"
-      - "../../assets/images/schematics/colonial/agriculture/husbandry/swineherder/back.jpg"
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/swineherder/front.jpg
+      - ../../assets/images/schematics/colonial/agriculture/husbandry/swineherder/back.jpg
   - id: fletcher
     type: building
     building: fletcher
@@ -220,8 +220,8 @@ schematics:
       y: 15
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/carpentry/fletcher/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/carpentry/fletcher/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/carpentry/fletcher/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/carpentry/fletcher/back.jpg
   - id: sawmill
     type: building
     building: sawmill
@@ -231,8 +231,8 @@ schematics:
       y: 13
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/carpentry/sawmill/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/carpentry/sawmill/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/carpentry/sawmill/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/carpentry/sawmill/back.jpg
   - id: sewer
     type: building
     building: fletcher
@@ -242,8 +242,8 @@ schematics:
       y: 15
       z: 18
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/carpentry/sewer/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/carpentry/sewer/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/carpentry/sewer/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/carpentry/sewer/back.jpg
   - id: alchemisttower
     type: building
     building: alchemist
@@ -253,8 +253,8 @@ schematics:
       y: 26
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/alchemisttower/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/alchemisttower/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/alchemisttower/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/alchemisttower/back.jpg
   - id: altbakery
     type: building
     building: baker
@@ -264,8 +264,8 @@ schematics:
       y: 20
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/altbakery/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/altbakery/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/altbakery/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/altbakery/back.jpg
   - id: bakery
     type: building
     building: baker
@@ -275,8 +275,8 @@ schematics:
       y: 14
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/bakery/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/bakery/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/bakery/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/bakery/back.jpg
   - id: concretemixer
     type: building
     building: concretemixer
@@ -286,8 +286,8 @@ schematics:
       y: 15
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/concretemixer/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/concretemixer/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/concretemixer/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/concretemixer/back.jpg
   - id: cookery
     type: building
     building: kitchen
@@ -297,8 +297,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/cookery/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/cookery/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/cookery/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/cookery/back.jpg
   - id: dyer
     type: building
     building: dyer
@@ -308,8 +308,8 @@ schematics:
       y: 20
       z: 26
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/dyer/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/dyer/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/dyer/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/dyer/back.jpg
   - id: flourmill
     type: building
     building: baker
@@ -319,8 +319,8 @@ schematics:
       y: 17
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/flourmill/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/flourmill/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/flourmill/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/flourmill/back.jpg
   - id: glassblower
     type: building
     building: glassblower
@@ -330,8 +330,8 @@ schematics:
       y: 14
       z: 26
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/glassblower/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/luxury/glassblower/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/glassblower/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/luxury/glassblower/back.jpg
   - id: crusher
     type: building
     building: crusher
@@ -341,8 +341,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/crusher/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/crusher/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/crusher/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/crusher/back.jpg
   - id: sifter
     type: building
     building: sifter
@@ -352,8 +352,8 @@ schematics:
       y: 15
       z: 28
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/sifter/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/sifter/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/sifter/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/sifter/back.jpg
   - id: stonemason
     type: building
     building: stonemason
@@ -363,8 +363,8 @@ schematics:
       y: 11
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/stonemason/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/stonemason/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/stonemason/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/stonemason/back.jpg
   - id: stonesmeltery
     type: building
     building: stonesmeltery
@@ -374,8 +374,8 @@ schematics:
       y: 23
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/stonesmeltery/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/masonry/stonesmeltery/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/stonesmeltery/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/masonry/stonesmeltery/back.jpg
   - id: blacksmith
     type: building
     building: blacksmith
@@ -385,8 +385,8 @@ schematics:
       y: 26
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/metallurgy/blacksmith/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/metallurgy/blacksmith/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/metallurgy/blacksmith/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/metallurgy/blacksmith/back.jpg
   - id: mechanic
     type: building
     building: mechanic
@@ -396,8 +396,8 @@ schematics:
       y: 14
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/metallurgy/mechanic/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/metallurgy/mechanic/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/metallurgy/mechanic/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/metallurgy/mechanic/back.jpg
   - id: smeltery
     type: building
     building: smeltery
@@ -407,8 +407,8 @@ schematics:
       y: 22
       z: 21
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/metallurgy/smeltery/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/metallurgy/smeltery/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/metallurgy/smeltery/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/metallurgy/smeltery/back.jpg
   - id: courier
     type: building
     building: deliveryman
@@ -418,7 +418,7 @@ schematics:
       y: 7
       z: 2
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/storage/courier/front.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/storage/courier/front.jpg
   - id: warehouse
     type: building
     building: deliveryman
@@ -428,8 +428,8 @@ schematics:
       y: 17
       z: 24
     images:
-      - "../../assets/images/schematics/colonial/craftsmanship/storage/warehouse/front.jpg"
-      - "../../assets/images/schematics/colonial/craftsmanship/storage/warehouse/back.jpg"
+      - ../../assets/images/schematics/colonial/craftsmanship/storage/warehouse/front.jpg
+      - ../../assets/images/schematics/colonial/craftsmanship/storage/warehouse/back.jpg
   - id: playerhouse
     type: decoration
     path: decorations/housing
@@ -438,8 +438,8 @@ schematics:
       y: 20
       z: 18
     images:
-      - "../../assets/images/schematics/colonial/decorations/housing/playerhouse/front.jpg"
-      - "../../assets/images/schematics/colonial/decorations/housing/playerhouse/back.jpg"
+      - ../../assets/images/schematics/colonial/decorations/housing/playerhouse/front.jpg
+      - ../../assets/images/schematics/colonial/decorations/housing/playerhouse/back.jpg
   - id: fountain
     type: decoration
     path: decorations/parks
@@ -448,7 +448,7 @@ schematics:
       y: 11
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/decorations/parks/fountain/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/parks/fountain/front.jpg
   - id: park
     type: decoration
     path: decorations/parks
@@ -457,7 +457,7 @@ schematics:
       y: 17
       z: 25
     images:
-      - "../../assets/images/schematics/colonial/decorations/parks/park/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/parks/park/front.jpg
   - id: parkway
     type: decoration
     path: decorations/parks
@@ -466,7 +466,7 @@ schematics:
       y: 7
       z: 11
     images:
-      - "../../assets/images/schematics/colonial/decorations/parks/parkway/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/parks/parkway/front.jpg
   - id: birch
     type: decoration
     path: decorations/ships
@@ -475,7 +475,7 @@ schematics:
       y: 6
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/birch/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/birch/front.jpg
   - id: blue
     type: decoration
     path: decorations/ships
@@ -484,7 +484,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/blue/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/blue/front.jpg
   - id: cargo_hay
     type: decoration
     path: decorations/ships
@@ -493,7 +493,7 @@ schematics:
       y: 6
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/cargo_hay/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/cargo_hay/front.jpg
   - id: cargo_wood
     type: decoration
     path: decorations/ships
@@ -502,7 +502,7 @@ schematics:
       y: 6
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/cargo_wood/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/cargo_wood/front.jpg
   - id: green
     type: decoration
     path: decorations/ships
@@ -511,7 +511,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/green/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/green/front.jpg
   - id: green_open
     type: decoration
     path: decorations/ships
@@ -520,7 +520,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/green_open/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/green_open/front.jpg
   - id: oak
     type: decoration
     path: decorations/ships
@@ -529,7 +529,7 @@ schematics:
       y: 6
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/oak/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/oak/front.jpg
   - id: purple
     type: decoration
     path: decorations/ships
@@ -538,7 +538,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/purple/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/purple/front.jpg
   - id: red
     type: decoration
     path: decorations/ships
@@ -547,7 +547,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/red/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/red/front.jpg
   - id: spruce
     type: decoration
     path: decorations/ships
@@ -556,7 +556,7 @@ schematics:
       y: 6
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/spruce/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/spruce/front.jpg
   - id: yellow
     type: decoration
     path: decorations/ships
@@ -565,7 +565,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/decorations/ships/yellow/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/ships/yellow/front.jpg
   - id: camp
     type: decoration
     path: decorations/supplies
@@ -574,7 +574,7 @@ schematics:
       y: 9
       z: 15
     images:
-      - "../../assets/images/schematics/colonial/decorations/supplies/camp/front.jpg"
+      - ../../assets/images/schematics/colonial/decorations/supplies/camp/front.jpg
   - id: ship
     type: decoration
     path: decorations/supplies
@@ -583,8 +583,8 @@ schematics:
       y: 38
       z: 32
     images:
-      - "../../assets/images/schematics/colonial/decorations/supplies/ship/front.jpg"
-      - "../../assets/images/schematics/colonial/decorations/supplies/ship/back.jpg"
+      - ../../assets/images/schematics/colonial/decorations/supplies/ship/front.jpg
+      - ../../assets/images/schematics/colonial/decorations/supplies/ship/back.jpg
   - id: library
     type: building
     building: library
@@ -594,8 +594,8 @@ schematics:
       y: 21
       z: 21
     images:
-      - "../../assets/images/schematics/colonial/education/library/front.jpg"
-      - "../../assets/images/schematics/colonial/education/library/back.jpg"
+      - ../../assets/images/schematics/colonial/education/library/front.jpg
+      - ../../assets/images/schematics/colonial/education/library/back.jpg
   - id: school
     type: building
     building: school
@@ -605,8 +605,8 @@ schematics:
       y: 14
       z: 31
     images:
-      - "../../assets/images/schematics/colonial/education/school/front.jpg"
-      - "../../assets/images/schematics/colonial/education/school/back.jpg"
+      - ../../assets/images/schematics/colonial/education/school/front.jpg
+      - ../../assets/images/schematics/colonial/education/school/back.jpg
   - id: unischool
     type: building
     building: school
@@ -616,7 +616,7 @@ schematics:
       y: 7
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/education/unischool/front.jpg"
+      - ../../assets/images/schematics/colonial/education/unischool/front.jpg
   - id: university
     type: building
     building: university
@@ -626,8 +626,8 @@ schematics:
       y: 44
       z: 32
     images:
-      - "../../assets/images/schematics/colonial/education/university/front.jpg"
-      - "../../assets/images/schematics/colonial/education/university/back.jpg"
+      - ../../assets/images/schematics/colonial/education/university/front.jpg
+      - ../../assets/images/schematics/colonial/education/university/back.jpg
   - id: altbuilder
     type: building
     building: builder
@@ -637,8 +637,8 @@ schematics:
       y: 17
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/altbuilder/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/altbuilder/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/altbuilder/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/altbuilder/back.jpg
   - id: althouse
     type: building
     building: residence
@@ -648,8 +648,8 @@ schematics:
       y: 17
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/althouse/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/althouse/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/althouse/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/althouse/back.jpg
   - id: bricks_house
     type: building
     building: residence
@@ -659,8 +659,8 @@ schematics:
       y: 15
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/bricks_house/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/bricks_house/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/bricks_house/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/bricks_house/back.jpg
   - id: builder
     type: building
     building: builder
@@ -670,8 +670,8 @@ schematics:
       y: 21
       z: 11
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/builder/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/builder/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/builder/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/builder/back.jpg
   - id: diorite_house
     type: building
     building: residence
@@ -681,8 +681,8 @@ schematics:
       y: 15
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/diorite_house/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/diorite_house/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/diorite_house/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/diorite_house/back.jpg
   - id: forester
     type: building
     building: lumberjack
@@ -692,8 +692,8 @@ schematics:
       y: 14
       z: 19
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/forester/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/forester/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/forester/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/forester/back.jpg
   - id: hospital
     type: building
     building: hospital
@@ -703,8 +703,8 @@ schematics:
       y: 14
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/hospital/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/hospital/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/hospital/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/hospital/back.jpg
   - id: house
     type: building
     building: residence
@@ -714,8 +714,8 @@ schematics:
       y: 17
       z: 15
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/house/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/house/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/house/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/house/back.jpg
   - id: mine
     type: building
     building: miner
@@ -725,8 +725,8 @@ schematics:
       y: 25
       z: 22
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/mine/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/mine/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/mine/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/mine/back.jpg
   - id: restaurant
     type: building
     building: cook
@@ -736,8 +736,8 @@ schematics:
       y: 17
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/restaurant/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/restaurant/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/restaurant/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/restaurant/back.jpg
   - id: tavern
     type: building
     building: tavern
@@ -747,8 +747,8 @@ schematics:
       y: 14
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/tavern/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/tavern/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/tavern/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/tavern/back.jpg
   - id: townhall
     type: building
     building: townhall
@@ -758,8 +758,8 @@ schematics:
       y: 27
       z: 33
     images:
-      - "../../assets/images/schematics/colonial/fundamentals/townhall/front.jpg"
-      - "../../assets/images/schematics/colonial/fundamentals/townhall/back.jpg"
+      - ../../assets/images/schematics/colonial/fundamentals/townhall/front.jpg
+      - ../../assets/images/schematics/colonial/fundamentals/townhall/back.jpg
   - id: large_lock
     type: decoration
     path: infrastructure/canal/deep
@@ -768,7 +768,7 @@ schematics:
       y: 11
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/large_lock/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/large_lock/front.jpg
   - id: small_lock
     type: decoration
     path: infrastructure/canal/deep
@@ -777,7 +777,7 @@ schematics:
       y: 9
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/small_lock/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/small_lock/front.jpg
   - id: solid_corner
     type: decoration
     path: infrastructure/canal/deep
@@ -786,7 +786,7 @@ schematics:
       y: 7
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/solid_corner/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/solid_corner/front.jpg
   - id: solid_straight
     type: decoration
     path: infrastructure/canal/deep
@@ -795,7 +795,7 @@ schematics:
       y: 7
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/solid_straight/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/solid_straight/front.jpg
   - id: stone_bridge
     type: decoration
     path: infrastructure/canal/deep
@@ -804,7 +804,7 @@ schematics:
       y: 11
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/stone_bridge/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/stone_bridge/front.jpg
   - id: stone_corner
     type: decoration
     path: infrastructure/canal/deep
@@ -813,7 +813,7 @@ schematics:
       y: 8
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/stone_corner/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/stone_corner/front.jpg
   - id: stone_straight
     type: decoration
     path: infrastructure/canal/deep
@@ -822,7 +822,7 @@ schematics:
       y: 7
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/stone_straight/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/stone_straight/front.jpg
   - id: wood_bridge
     type: decoration
     path: infrastructure/canal/deep
@@ -831,7 +831,7 @@ schematics:
       y: 12
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/deep/wood_bridge/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/deep/wood_bridge/front.jpg
   - id: large_lock
     type: decoration
     path: infrastructure/canal/shoal
@@ -840,7 +840,7 @@ schematics:
       y: 10
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/large_lock/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/large_lock/front.jpg
   - id: small_lock
     type: decoration
     path: infrastructure/canal/shoal
@@ -849,7 +849,7 @@ schematics:
       y: 8
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/small_lock/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/small_lock/front.jpg
   - id: solid_corner
     type: decoration
     path: infrastructure/canal/shoal
@@ -858,7 +858,7 @@ schematics:
       y: 6
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/solid_corner/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/solid_corner/front.jpg
   - id: solid_straight
     type: decoration
     path: infrastructure/canal/shoal
@@ -867,7 +867,7 @@ schematics:
       y: 6
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/solid_straight/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/solid_straight/front.jpg
   - id: stone_bridge
     type: decoration
     path: infrastructure/canal/shoal
@@ -876,7 +876,7 @@ schematics:
       y: 10
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/stone_bridge/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/stone_bridge/front.jpg
   - id: stone_corner
     type: decoration
     path: infrastructure/canal/shoal
@@ -885,7 +885,7 @@ schematics:
       y: 7
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/stone_corner/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/stone_corner/front.jpg
   - id: stone_straight
     type: decoration
     path: infrastructure/canal/shoal
@@ -894,7 +894,7 @@ schematics:
       y: 6
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/stone_straight/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/stone_straight/front.jpg
   - id: wood_bridge
     type: decoration
     path: infrastructure/canal/shoal
@@ -903,7 +903,7 @@ schematics:
       y: 11
       z: 14
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/canal/shoal/wood_bridge/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/canal/shoal/wood_bridge/front.jpg
   - id: hive
     type: decoration
     path: infrastructure/fields
@@ -912,7 +912,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/fields/hive/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/fields/hive/front.jpg
   - id: large
     type: decoration
     path: infrastructure/fields
@@ -921,7 +921,7 @@ schematics:
       y: 5
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/fields/large/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/fields/large/front.jpg
   - id: sloped
     type: decoration
     path: infrastructure/fields
@@ -930,7 +930,7 @@ schematics:
       y: 6
       z: 13
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/fields/sloped/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/fields/sloped/front.jpg
   - id: small
     type: decoration
     path: infrastructure/fields
@@ -939,7 +939,7 @@ schematics:
       y: 4
       z: 11
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/fields/small/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/fields/small/front.jpg
   - id: corner
     type: decoration
     path: infrastructure/roads
@@ -948,7 +948,7 @@ schematics:
       y: 7
       z: 6
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/corner/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/corner/front.jpg
   - id: gradual_stairs_long
     type: decoration
     path: infrastructure/roads
@@ -957,7 +957,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/gradual_stairs_long/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/gradual_stairs_long/front.jpg
   - id: gradual_stairs_short
     type: decoration
     path: infrastructure/roads
@@ -966,7 +966,7 @@ schematics:
       y: 6
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/gradual_stairs_short/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/gradual_stairs_short/front.jpg
   - id: intersection
     type: decoration
     path: infrastructure/roads
@@ -975,7 +975,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/intersection/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/intersection/front.jpg
   - id: junction
     type: decoration
     path: infrastructure/roads
@@ -984,7 +984,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/junction/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/junction/front.jpg
   - id: steep_stairs_long
     type: decoration
     path: infrastructure/roads
@@ -993,7 +993,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/steep_stairs_long/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/steep_stairs_long/front.jpg
   - id: steep_stairs_short
     type: decoration
     path: infrastructure/roads
@@ -1002,7 +1002,7 @@ schematics:
       y: 6
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/steep_stairs_short/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/steep_stairs_short/front.jpg
   - id: straight_long
     type: decoration
     path: infrastructure/roads
@@ -1011,7 +1011,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/straight_long/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/straight_long/front.jpg
   - id: straight_short
     type: decoration
     path: infrastructure/roads
@@ -1020,7 +1020,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/roads/straight_short/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/roads/straight_short/front.jpg
   - id: hatch
     type: decoration
     path: infrastructure/sewage
@@ -1029,7 +1029,7 @@ schematics:
       y: 7
       z: 4
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/hatch/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/hatch/front.jpg
   - id: intersection
     type: decoration
     path: infrastructure/sewage
@@ -1038,7 +1038,7 @@ schematics:
       y: 9
       z: 8
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/intersection/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/intersection/front.jpg
   - id: junction
     type: decoration
     path: infrastructure/sewage
@@ -1047,7 +1047,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/junction/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/junction/front.jpg
   - id: road_hatch
     type: decoration
     path: infrastructure/sewage
@@ -1056,7 +1056,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_hatch/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_hatch/front.jpg
   - id: road_hatch_ladder
     type: decoration
     path: infrastructure/sewage
@@ -1065,7 +1065,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_hatch_ladder/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_hatch_ladder/front.jpg
   - id: road_inner_corner
     type: decoration
     path: infrastructure/sewage
@@ -1074,7 +1074,7 @@ schematics:
       y: 12
       z: 8
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_inner_corner/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_inner_corner/front.jpg
   - id: road_junctiona
     type: decoration
     path: infrastructure/sewage
@@ -1083,7 +1083,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_junctiona/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_junctiona/front.jpg
   - id: road_junctionb
     type: decoration
     path: infrastructure/sewage
@@ -1092,7 +1092,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_junctionb/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_junctionb/front.jpg
   - id: road_ladder
     type: decoration
     path: infrastructure/sewage
@@ -1101,8 +1101,8 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_ladder/front.jpg"
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_ladder/back.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_ladder/front.jpg
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_ladder/back.jpg
   - id: road_outer_corner
     type: decoration
     path: infrastructure/sewage
@@ -1111,8 +1111,8 @@ schematics:
       y: 12
       z: 8
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_outer_corner/front.jpg"
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_outer_corner/back.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_outer_corner/front.jpg
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_outer_corner/back.jpg
   - id: road_straight
     type: decoration
     path: infrastructure/sewage
@@ -1121,7 +1121,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/road_straight/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/road_straight/front.jpg
   - id: straight
     type: decoration
     path: infrastructure/sewage
@@ -1130,7 +1130,7 @@ schematics:
       y: 7
       z: 4
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/sewage/straight/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/sewage/straight/front.jpg
   - id: junctiona
     type: decoration
     path: infrastructure/streets
@@ -1139,7 +1139,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/junctiona/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/junctiona/front.jpg
   - id: junctionb
     type: decoration
     path: infrastructure/streets
@@ -1148,8 +1148,8 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/junctionb/front.jpg"
-      - "../../assets/images/schematics/colonial/infrastructure/streets/junctionb/back.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/junctionb/front.jpg
+      - ../../assets/images/schematics/colonial/infrastructure/streets/junctionb/back.jpg
   - id: junctionc
     type: decoration
     path: infrastructure/streets
@@ -1158,7 +1158,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/junctionc/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/junctionc/front.jpg
   - id: light
     type: decoration
     path: infrastructure/streets
@@ -1167,7 +1167,7 @@ schematics:
       y: 5
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/light/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/light/front.jpg
   - id: stairsa
     type: decoration
     path: infrastructure/streets
@@ -1176,7 +1176,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/stairsa/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/stairsa/front.jpg
   - id: stairsb
     type: decoration
     path: infrastructure/streets
@@ -1185,7 +1185,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/stairsb/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/stairsb/front.jpg
   - id: stairsc
     type: decoration
     path: infrastructure/streets
@@ -1194,7 +1194,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/stairsc/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/stairsc/front.jpg
   - id: straighta
     type: decoration
     path: infrastructure/streets
@@ -1203,7 +1203,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/straighta/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/straighta/front.jpg
   - id: straightb
     type: decoration
     path: infrastructure/streets
@@ -1212,7 +1212,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/straightb/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/straightb/front.jpg
   - id: straightc
     type: decoration
     path: infrastructure/streets
@@ -1221,7 +1221,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/colonial/infrastructure/streets/straightc/front.jpg"
+      - ../../assets/images/schematics/colonial/infrastructure/streets/straightc/front.jpg
   - id: altguardtower
     type: building
     building: guardtower
@@ -1231,8 +1231,8 @@ schematics:
       y: 17
       z: 16
     images:
-      - "../../assets/images/schematics/colonial/military/altguardtower/front.jpg"
-      - "../../assets/images/schematics/colonial/military/altguardtower/back.jpg"
+      - ../../assets/images/schematics/colonial/military/altguardtower/front.jpg
+      - ../../assets/images/schematics/colonial/military/altguardtower/back.jpg
   - id: archacademy
     type: building
     building: combatacademy
@@ -1242,8 +1242,8 @@ schematics:
       y: 12
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/military/archacademy/front.jpg"
-      - "../../assets/images/schematics/colonial/military/archacademy/back.jpg"
+      - ../../assets/images/schematics/colonial/military/archacademy/front.jpg
+      - ../../assets/images/schematics/colonial/military/archacademy/back.jpg
   - id: archery
     type: building
     building: archery
@@ -1253,8 +1253,8 @@ schematics:
       y: 11
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/military/archery/front.jpg"
-      - "../../assets/images/schematics/colonial/military/archery/back.jpg"
+      - ../../assets/images/schematics/colonial/military/archery/front.jpg
+      - ../../assets/images/schematics/colonial/military/archery/back.jpg
   - id: barracks
     type: building
     building: barracks
@@ -1264,8 +1264,8 @@ schematics:
       y: 19
       z: 25
     images:
-      - "../../assets/images/schematics/colonial/military/barracks/front.jpg"
-      - "../../assets/images/schematics/colonial/military/barracks/back.jpg"
+      - ../../assets/images/schematics/colonial/military/barracks/front.jpg
+      - ../../assets/images/schematics/colonial/military/barracks/back.jpg
   - id: barrackstower
     type: building
     building: barrackstower
@@ -1276,7 +1276,7 @@ schematics:
       y: 5
       z: 6
     images:
-      - "../../assets/images/schematics/colonial/military/barrackstower/front.jpg"
+      - ../../assets/images/schematics/colonial/military/barrackstower/front.jpg
   - id: combatacademy
     type: building
     building: combatacademy
@@ -1286,8 +1286,8 @@ schematics:
       y: 12
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/military/combatacademy/front.jpg"
-      - "../../assets/images/schematics/colonial/military/combatacademy/back.jpg"
+      - ../../assets/images/schematics/colonial/military/combatacademy/front.jpg
+      - ../../assets/images/schematics/colonial/military/combatacademy/back.jpg
   - id: combatery
     type: building
     building: archery
@@ -1297,8 +1297,8 @@ schematics:
       y: 11
       z: 17
     images:
-      - "../../assets/images/schematics/colonial/military/combatery/front.jpg"
-      - "../../assets/images/schematics/colonial/military/combatery/back.jpg"
+      - ../../assets/images/schematics/colonial/military/combatery/front.jpg
+      - ../../assets/images/schematics/colonial/military/combatery/back.jpg
   - id: guardtower
     type: building
     building: guardtower
@@ -1308,8 +1308,8 @@ schematics:
       y: 14
       z: 10
     images:
-      - "../../assets/images/schematics/colonial/military/guardtower/front.jpg"
-      - "../../assets/images/schematics/colonial/military/guardtower/back.jpg"
+      - ../../assets/images/schematics/colonial/military/guardtower/front.jpg
+      - ../../assets/images/schematics/colonial/military/guardtower/back.jpg
   - id: enchanterstower
     type: building
     building: enchanter
@@ -1319,8 +1319,8 @@ schematics:
       y: 35
       z: 25
     images:
-      - "../../assets/images/schematics/colonial/mystic/enchanterstower/front.jpg"
-      - "../../assets/images/schematics/colonial/mystic/enchanterstower/back.jpg"
+      - ../../assets/images/schematics/colonial/mystic/enchanterstower/front.jpg
+      - ../../assets/images/schematics/colonial/mystic/enchanterstower/back.jpg
   - id: graveyard
     type: building
     building: graveyard
@@ -1330,8 +1330,8 @@ schematics:
       y: 24
       z: 24
     images:
-      - "../../assets/images/schematics/colonial/mystic/graveyard/front.jpg"
-      - "../../assets/images/schematics/colonial/mystic/graveyard/back.jpg"
+      - ../../assets/images/schematics/colonial/mystic/graveyard/front.jpg
+      - ../../assets/images/schematics/colonial/mystic/graveyard/back.jpg
   - id: mysticalsite
     type: building
     building: mysticalsite
@@ -1341,8 +1341,8 @@ schematics:
       y: 20
       z: 20
     images:
-      - "../../assets/images/schematics/colonial/mystic/mysticalsite/front.jpg"
-      - "../../assets/images/schematics/colonial/mystic/mysticalsite/back.jpg"
+      - ../../assets/images/schematics/colonial/mystic/mysticalsite/front.jpg
+      - ../../assets/images/schematics/colonial/mystic/mysticalsite/back.jpg
   - id: nethermine
     type: building
     building: netherworker
@@ -1352,8 +1352,8 @@ schematics:
       y: 11
       z: 22
     images:
-      - "../../assets/images/schematics/colonial/mystic/nethermine/front.jpg"
-      - "../../assets/images/schematics/colonial/mystic/nethermine/back.jpg"
+      - ../../assets/images/schematics/colonial/mystic/nethermine/front.jpg
+      - ../../assets/images/schematics/colonial/mystic/nethermine/back.jpg
   - id: corner
     type: decoration
     path: walls
@@ -1362,8 +1362,8 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/colonial/walls/corner/front.jpg"
-      - "../../assets/images/schematics/colonial/walls/corner/back.jpg"
+      - ../../assets/images/schematics/colonial/walls/corner/front.jpg
+      - ../../assets/images/schematics/colonial/walls/corner/back.jpg
   - id: gate
     type: decoration
     path: walls
@@ -1372,8 +1372,8 @@ schematics:
       y: 17
       z: 25
     images:
-      - "../../assets/images/schematics/colonial/walls/gate/front.jpg"
-      - "../../assets/images/schematics/colonial/walls/gate/back.jpg"
+      - ../../assets/images/schematics/colonial/walls/gate/front.jpg
+      - ../../assets/images/schematics/colonial/walls/gate/back.jpg
   - id: stairs
     type: decoration
     path: walls
@@ -1382,7 +1382,7 @@ schematics:
       y: 8
       z: 6
     images:
-      - "../../assets/images/schematics/colonial/walls/stairs/front.jpg"
+      - ../../assets/images/schematics/colonial/walls/stairs/front.jpg
   - id: straight
     type: decoration
     path: walls
@@ -1391,5 +1391,5 @@ schematics:
       y: 8
       z: 6
     images:
-      - "../../assets/images/schematics/colonial/walls/straight/front.jpg"
-      - "../../assets/images/schematics/colonial/walls/straight/back.jpg"
+      - ../../assets/images/schematics/colonial/walls/straight/front.jpg
+      - ../../assets/images/schematics/colonial/walls/straight/back.jpg

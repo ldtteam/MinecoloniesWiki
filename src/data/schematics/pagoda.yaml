@@ -12,7 +12,7 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/composter/front.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/composter/front.jpg
   - id: farmer
     type: building
     building: farmer
@@ -22,8 +22,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/farmer/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/farmer/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/farmer/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/farmer/back.jpg
   - id: florist
     type: building
     building: florist
@@ -33,8 +33,8 @@ schematics:
       y: 22
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/florist/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/florist/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/florist/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/florist/back.jpg
   - id: plantation
     type: building
     building: plantation
@@ -44,8 +44,8 @@ schematics:
       y: 15
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/plantation/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/horticulture/plantation/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/plantation/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/horticulture/plantation/back.jpg
   - id: beekeeper
     type: building
     building: beekeeper
@@ -55,8 +55,8 @@ schematics:
       y: 11
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/beekeeper/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/beekeeper/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/beekeeper/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/beekeeper/back.jpg
   - id: chickenherder
     type: building
     building: chickenherder
@@ -66,8 +66,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/chickenherder/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/chickenherder/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/chickenherder/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/chickenherder/back.jpg
   - id: cowboy
     type: building
     building: cowboy
@@ -77,8 +77,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/cowboy/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/cowboy/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/cowboy/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/cowboy/back.jpg
   - id: fisherman
     type: building
     building: fisherman
@@ -88,8 +88,8 @@ schematics:
       y: 15
       z: 12
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/fisherman/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/fisherman/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/fisherman/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/fisherman/back.jpg
   - id: rabbithutch
     type: building
     building: rabbithutch
@@ -99,8 +99,8 @@ schematics:
       y: 15
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/rabbithutch/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/rabbithutch/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/rabbithutch/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/rabbithutch/back.jpg
   - id: shepherd
     type: building
     building: shepherd
@@ -110,8 +110,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/shepherd/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/shepherd/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/shepherd/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/shepherd/back.jpg
   - id: swineherder
     type: building
     building: swineherder
@@ -121,8 +121,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/swineherder/front.jpg"
-      - "../../assets/images/schematics/pagoda/agriculture/husbandry/swineherder/back.jpg"
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/swineherder/front.jpg
+      - ../../assets/images/schematics/pagoda/agriculture/husbandry/swineherder/back.jpg
   - id: fletcher
     type: building
     building: fletcher
@@ -132,8 +132,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/carpentry/fletcher/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/carpentry/fletcher/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/carpentry/fletcher/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/carpentry/fletcher/back.jpg
   - id: sawmill
     type: building
     building: sawmill
@@ -143,8 +143,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/carpentry/sawmill/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/carpentry/sawmill/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/carpentry/sawmill/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/carpentry/sawmill/back.jpg
   - id: alchemist
     type: building
     building: alchemist
@@ -154,8 +154,8 @@ schematics:
       y: 30
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/alchemist/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/alchemist/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/alchemist/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/alchemist/back.jpg
   - id: baker
     type: building
     building: baker
@@ -165,8 +165,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/baker/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/baker/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/baker/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/baker/back.jpg
   - id: concretemixer
     type: building
     building: concretemixer
@@ -176,8 +176,8 @@ schematics:
       y: 15
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/concretemixer/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/concretemixer/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/concretemixer/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/concretemixer/back.jpg
   - id: dyer
     type: building
     building: dyer
@@ -187,8 +187,8 @@ schematics:
       y: 18
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/dyer/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/dyer/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/dyer/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/dyer/back.jpg
   - id: glassblower
     type: building
     building: glassblower
@@ -198,8 +198,8 @@ schematics:
       y: 17
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/glassblower/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/glassblower/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/glassblower/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/glassblower/back.jpg
   - id: kitchen
     type: building
     building: kitchen
@@ -209,8 +209,8 @@ schematics:
       y: 19
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/kitchen/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/luxury/kitchen/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/kitchen/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/luxury/kitchen/back.jpg
   - id: crusher
     type: building
     building: crusher
@@ -220,8 +220,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/crusher/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/crusher/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/crusher/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/crusher/back.jpg
   - id: sifter
     type: building
     building: sifter
@@ -231,8 +231,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/sifter/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/sifter/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/sifter/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/sifter/back.jpg
   - id: stonemason
     type: building
     building: stonemason
@@ -242,8 +242,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/stonemason/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/stonemason/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/stonemason/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/stonemason/back.jpg
   - id: stonesmeltery
     type: building
     building: stonesmeltery
@@ -253,8 +253,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/stonesmeltery/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/masonry/stonesmeltery/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/stonesmeltery/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/masonry/stonesmeltery/back.jpg
   - id: blacksmith
     type: building
     building: blacksmith
@@ -264,8 +264,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/metallurgy/blacksmith/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/metallurgy/blacksmith/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/metallurgy/blacksmith/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/metallurgy/blacksmith/back.jpg
   - id: mechanic
     type: building
     building: mechanic
@@ -275,8 +275,8 @@ schematics:
       y: 16
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/metallurgy/mechanic/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/metallurgy/mechanic/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/metallurgy/mechanic/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/metallurgy/mechanic/back.jpg
   - id: smeltery
     type: building
     building: smeltery
@@ -286,8 +286,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/metallurgy/smeltery/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/metallurgy/smeltery/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/metallurgy/smeltery/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/metallurgy/smeltery/back.jpg
   - id: altwarehouse
     type: building
     building: warehouse
@@ -297,7 +297,7 @@ schematics:
       y: 15
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/storage/altwarehouse/front.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/storage/altwarehouse/front.jpg
   - id: deliveryman
     type: building
     building: deliveryman
@@ -307,8 +307,8 @@ schematics:
       y: 18
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/storage/deliveryman/front.jpg"
-      - "../../assets/images/schematics/pagoda/craftsmanship/storage/deliveryman/back.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/storage/deliveryman/front.jpg
+      - ../../assets/images/schematics/pagoda/craftsmanship/storage/deliveryman/back.jpg
   - id: warehouse
     type: building
     building: warehouse
@@ -318,7 +318,7 @@ schematics:
       y: 17
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/craftsmanship/storage/warehouse/front.jpg"
+      - ../../assets/images/schematics/pagoda/craftsmanship/storage/warehouse/front.jpg
   - id: bathhouse
     type: decoration
     path: decorations/decorative
@@ -327,8 +327,8 @@ schematics:
       y: 20
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/bathhouse/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/decorative/bathhouse/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/bathhouse/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/decorative/bathhouse/back.jpg
   - id: grave_a
     type: decoration
     path: decorations/decorative
@@ -337,7 +337,7 @@ schematics:
       y: 3
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/grave_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/grave_a/front.jpg
   - id: grave_b
     type: decoration
     path: decorations/decorative
@@ -346,7 +346,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/grave_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/grave_b/front.jpg
   - id: grave_c
     type: decoration
     path: decorations/decorative
@@ -355,7 +355,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/grave_c/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/grave_c/front.jpg
   - id: grave_d
     type: decoration
     path: decorations/decorative
@@ -364,7 +364,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/grave_d/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/grave_d/front.jpg
   - id: kongming_blue
     type: decoration
     path: decorations/decorative
@@ -373,7 +373,7 @@ schematics:
       y: 3
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/kongming_blue/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/kongming_blue/front.jpg
   - id: kongming_group
     type: decoration
     path: decorations/decorative
@@ -382,7 +382,7 @@ schematics:
       y: 15
       z: 11
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/kongming_group/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/kongming_group/front.jpg
   - id: pillar_a
     type: decoration
     path: decorations/decorative
@@ -391,7 +391,7 @@ schematics:
       y: 7
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/pillar_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/pillar_a/front.jpg
   - id: pillar_b
     type: decoration
     path: decorations/decorative
@@ -400,7 +400,7 @@ schematics:
       y: 7
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/pillar_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/pillar_b/front.jpg
   - id: pillar_c
     type: decoration
     path: decorations/decorative
@@ -409,7 +409,7 @@ schematics:
       y: 6
       z: 2
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/pillar_c/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/pillar_c/front.jpg
   - id: pillar_d
     type: decoration
     path: decorations/decorative
@@ -418,7 +418,7 @@ schematics:
       y: 6
       z: 2
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/pillar_d/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/pillar_d/front.jpg
   - id: purification_shrine
     type: decoration
     path: decorations/decorative
@@ -427,8 +427,8 @@ schematics:
       y: 9
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/purification_shrine/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/decorative/purification_shrine/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/purification_shrine/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/decorative/purification_shrine/back.jpg
   - id: ship
     type: decoration
     path: decorations/decorative
@@ -437,8 +437,8 @@ schematics:
       y: 31
       z: 29
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/ship/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/decorative/ship/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/ship/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/decorative/ship/back.jpg
   - id: small_cart_a
     type: decoration
     path: decorations/decorative
@@ -447,7 +447,7 @@ schematics:
       y: 2
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/small_cart_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/small_cart_a/front.jpg
   - id: small_cart_b
     type: decoration
     path: decorations/decorative
@@ -456,7 +456,7 @@ schematics:
       y: 2
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/small_cart_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/small_cart_b/front.jpg
   - id: supply_camp
     type: decoration
     path: decorations/decorative
@@ -465,7 +465,7 @@ schematics:
       y: 9
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/supply_camp/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/supply_camp/front.jpg
   - id: waystone
     type: decoration
     path: decorations/decorative
@@ -474,7 +474,7 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/waystone/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/waystone/front.jpg
   - id: well_a
     type: decoration
     path: decorations/decorative
@@ -483,7 +483,7 @@ schematics:
       y: 12
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/well_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/well_a/front.jpg
   - id: well_b
     type: decoration
     path: decorations/decorative
@@ -492,7 +492,7 @@ schematics:
       y: 12
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/well_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/well_b/front.jpg
   - id: yinyang_bw
     type: decoration
     path: decorations/decorative
@@ -501,7 +501,7 @@ schematics:
       y: 1
       z: 12
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/yinyang_bw/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/yinyang_bw/front.jpg
   - id: yinyang_yr
     type: decoration
     path: decorations/decorative
@@ -510,7 +510,7 @@ schematics:
       y: 1
       z: 12
     images:
-      - "../../assets/images/schematics/pagoda/decorations/decorative/yinyang_yr/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/decorative/yinyang_yr/front.jpg
   - id: honored_grave
     type: decoration
     path: decorations/gardens
@@ -519,7 +519,7 @@ schematics:
       y: 12
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/gardens/honored_grave/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/gardens/honored_grave/front.jpg
   - id: small
     type: decoration
     path: decorations/gardens
@@ -528,7 +528,7 @@ schematics:
       y: 12
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/gardens/small/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/gardens/small/front.jpg
   - id: tiny
     type: decoration
     path: decorations/gardens
@@ -537,7 +537,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/decorations/gardens/tiny/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/gardens/tiny/front.jpg
   - id: wisteria
     type: decoration
     path: decorations/gardens
@@ -546,7 +546,7 @@ schematics:
       y: 14
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/decorations/gardens/wisteria/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/gardens/wisteria/front.jpg
   - id: andesite
     type: decoration
     path: decorations/lanterns
@@ -555,7 +555,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/lanterns/andesite/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/lanterns/andesite/front.jpg
   - id: cobblestone
     type: decoration
     path: decorations/lanterns
@@ -564,7 +564,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/lanterns/cobblestone/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/lanterns/cobblestone/front.jpg
   - id: mossy_cobble
     type: decoration
     path: decorations/lanterns
@@ -573,7 +573,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/lanterns/mossy_cobble/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/lanterns/mossy_cobble/front.jpg
   - id: stone
     type: decoration
     path: decorations/lanterns
@@ -582,7 +582,7 @@ schematics:
       y: 4
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/decorations/lanterns/stone/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/lanterns/stone/front.jpg
   - id: fountain
     type: decoration
     path: decorations/pagodas
@@ -591,7 +591,7 @@ schematics:
       y: 26
       z: 15
     images:
-      - "../../assets/images/schematics/pagoda/decorations/pagodas/fountain/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/pagodas/fountain/front.jpg
   - id: barracks
     type: decoration
     path: decorations/planning
@@ -600,7 +600,7 @@ schematics:
       y: 11
       z: 31
     images:
-      - "../../assets/images/schematics/pagoda/decorations/planning/barracks/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/planning/barracks/front.jpg
   - id: large
     type: decoration
     path: decorations/planning
@@ -609,7 +609,7 @@ schematics:
       y: 12
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/decorations/planning/large/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/planning/large/front.jpg
   - id: medium
     type: decoration
     path: decorations/planning
@@ -618,7 +618,7 @@ schematics:
       y: 12
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/decorations/planning/medium/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/planning/medium/front.jpg
   - id: small
     type: decoration
     path: decorations/planning
@@ -627,7 +627,7 @@ schematics:
       y: 12
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/planning/small/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/planning/small/front.jpg
   - id: wall
     type: decoration
     path: decorations/planning
@@ -636,7 +636,7 @@ schematics:
       y: 11
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/decorations/planning/wall/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/planning/wall/front.jpg
   - id: pagoda
     type: decoration
     path: decorations/playerhome
@@ -645,8 +645,8 @@ schematics:
       y: 25
       z: 31
     images:
-      - "../../assets/images/schematics/pagoda/decorations/playerhome/pagoda/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/playerhome/pagoda/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/playerhome/pagoda/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/playerhome/pagoda/back.jpg
   - id: barracks_bricks
     type: decoration
     path: decorations/retaining_wall
@@ -655,7 +655,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/barracks_bricks/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/barracks_bricks/front.jpg
   - id: barracks_cobble
     type: decoration
     path: decorations/retaining_wall
@@ -664,7 +664,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/barracks_cobble/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/barracks_cobble/front.jpg
   - id: large_bricks
     type: decoration
     path: decorations/retaining_wall
@@ -673,7 +673,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/large_bricks/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/large_bricks/front.jpg
   - id: large_cobble
     type: decoration
     path: decorations/retaining_wall
@@ -682,7 +682,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/large_cobble/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/large_cobble/front.jpg
   - id: medium_bricks
     type: decoration
     path: decorations/retaining_wall
@@ -691,7 +691,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/medium_bricks/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/medium_bricks/front.jpg
   - id: medium_cobble
     type: decoration
     path: decorations/retaining_wall
@@ -700,7 +700,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/medium_cobble/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/medium_cobble/front.jpg
   - id: small_bricks
     type: decoration
     path: decorations/retaining_wall
@@ -709,7 +709,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/small_bricks/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/small_bricks/front.jpg
   - id: small_cobble
     type: decoration
     path: decorations/retaining_wall
@@ -718,7 +718,7 @@ schematics:
       y: 3
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/decorations/retaining_wall/small_cobble/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/retaining_wall/small_cobble/front.jpg
   - id: buddha_acacia
     type: decoration
     path: decorations/statues
@@ -727,7 +727,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_acacia/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_acacia/front.jpg
   - id: buddha_andesite
     type: decoration
     path: decorations/statues
@@ -736,7 +736,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_andesite/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_andesite/front.jpg
   - id: buddha_birch
     type: decoration
     path: decorations/statues
@@ -745,7 +745,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_birch/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_birch/front.jpg
   - id: buddha_darkoak
     type: decoration
     path: decorations/statues
@@ -754,7 +754,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_darkoak/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_darkoak/front.jpg
   - id: buddha_diorite
     type: decoration
     path: decorations/statues
@@ -763,7 +763,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_diorite/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_diorite/front.jpg
   - id: buddha_jungle
     type: decoration
     path: decorations/statues
@@ -772,7 +772,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_jungle/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_jungle/front.jpg
   - id: buddha_oak
     type: decoration
     path: decorations/statues
@@ -781,7 +781,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_oak/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_oak/front.jpg
   - id: buddha_quartz
     type: decoration
     path: decorations/statues
@@ -790,7 +790,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_quartz/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_quartz/front.jpg
   - id: buddha_spruce
     type: decoration
     path: decorations/statues
@@ -799,7 +799,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_spruce/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_spruce/front.jpg
   - id: buddha_stone
     type: decoration
     path: decorations/statues
@@ -808,7 +808,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/buddha_stone/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/buddha_stone/front.jpg
   - id: pedestal_gold
     type: decoration
     path: decorations/statues
@@ -817,7 +817,7 @@ schematics:
       y: 3
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/pedestal_gold/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/pedestal_gold/front.jpg
   - id: pedestal_iron
     type: decoration
     path: decorations/statues
@@ -826,7 +826,7 @@ schematics:
       y: 3
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/pedestal_iron/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/pedestal_iron/front.jpg
   - id: pedestal_oak
     type: decoration
     path: decorations/statues
@@ -835,7 +835,7 @@ schematics:
       y: 3
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/pedestal_oak/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/pedestal_oak/front.jpg
   - id: stone_lion_c
     type: decoration
     path: decorations/statues
@@ -844,7 +844,7 @@ schematics:
       y: 12
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/stone_lion_c/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/stone_lion_c/front.jpg
   - id: stone_lion_l
     type: decoration
     path: decorations/statues
@@ -853,7 +853,7 @@ schematics:
       y: 12
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/stone_lion_l/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/stone_lion_l/front.jpg
   - id: stone_lion_p
     type: decoration
     path: decorations/statues
@@ -862,7 +862,7 @@ schematics:
       y: 12
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/statues/stone_lion_p/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/statues/stone_lion_p/front.jpg
   - id: supplycamp
     type: decoration
     path: decorations/supplies
@@ -871,7 +871,7 @@ schematics:
       y: 9
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/decorations/supplies/supplycamp/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/supplies/supplycamp/front.jpg
   - id: supplyship
     type: decoration
     path: decorations/supplies
@@ -880,8 +880,8 @@ schematics:
       y: 31
       z: 29
     images:
-      - "../../assets/images/schematics/pagoda/decorations/supplies/supplyship/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/supplies/supplyship/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/supplies/supplyship/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/supplies/supplyship/back.jpg
   - id: concrete_machine
     type: decoration
     path: decorations/utility
@@ -890,7 +890,7 @@ schematics:
       y: 15
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/utility/concrete_machine/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/utility/concrete_machine/front.jpg
   - id: kelp_farm
     type: decoration
     path: decorations/utility
@@ -899,7 +899,7 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/utility/kelp_farm/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/utility/kelp_farm/front.jpg
   - id: nether_gate
     type: decoration
     path: decorations/utility
@@ -908,7 +908,7 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/utility/nether_gate/front.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/utility/nether_gate/front.jpg
   - id: home_lrg
     type: decoration
     path: decorations/villager
@@ -917,8 +917,8 @@ schematics:
       y: 11
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/decorations/villager/home_lrg/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/villager/home_lrg/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/villager/home_lrg/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/villager/home_lrg/back.jpg
   - id: home_med
     type: decoration
     path: decorations/villager
@@ -927,8 +927,8 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/decorations/villager/home_med/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/villager/home_med/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/villager/home_med/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/villager/home_med/back.jpg
   - id: home_sml
     type: decoration
     path: decorations/villager
@@ -937,8 +937,8 @@ schematics:
       y: 8
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/decorations/villager/home_sml/front.jpg"
-      - "../../assets/images/schematics/pagoda/decorations/villager/home_sml/back.jpg"
+      - ../../assets/images/schematics/pagoda/decorations/villager/home_sml/front.jpg
+      - ../../assets/images/schematics/pagoda/decorations/villager/home_sml/back.jpg
   - id: library
     type: building
     building: library
@@ -948,8 +948,8 @@ schematics:
       y: 27
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/education/library/front.jpg"
-      - "../../assets/images/schematics/pagoda/education/library/back.jpg"
+      - ../../assets/images/schematics/pagoda/education/library/front.jpg
+      - ../../assets/images/schematics/pagoda/education/library/back.jpg
   - id: school
     type: building
     building: school
@@ -959,8 +959,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/education/school/front.jpg"
-      - "../../assets/images/schematics/pagoda/education/school/back.jpg"
+      - ../../assets/images/schematics/pagoda/education/school/front.jpg
+      - ../../assets/images/schematics/pagoda/education/school/back.jpg
   - id: university
     type: building
     building: university
@@ -970,8 +970,8 @@ schematics:
       y: 10
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/education/university/front.jpg"
-      - "../../assets/images/schematics/pagoda/education/university/back.jpg"
+      - ../../assets/images/schematics/pagoda/education/university/front.jpg
+      - ../../assets/images/schematics/pagoda/education/university/back.jpg
   - id: altresidence
     type: building
     building: residence
@@ -981,8 +981,8 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/altresidence/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/altresidence/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/altresidence/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/altresidence/back.jpg
   - id: builder
     type: building
     building: builder
@@ -992,8 +992,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/builder/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/builder/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/builder/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/builder/back.jpg
   - id: cook
     type: building
     building: cook
@@ -1003,8 +1003,8 @@ schematics:
       y: 19
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/cook/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/cook/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/cook/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/cook/back.jpg
   - id: hospital
     type: building
     building: hospital
@@ -1014,8 +1014,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/hospital/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/hospital/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/hospital/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/hospital/back.jpg
   - id: lumberjack
     type: building
     building: lumberjack
@@ -1025,8 +1025,8 @@ schematics:
       y: 17
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/lumberjack/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/lumberjack/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/lumberjack/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/lumberjack/back.jpg
   - id: miner
     type: building
     building: miner
@@ -1036,8 +1036,8 @@ schematics:
       y: 17
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/miner/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/miner/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/miner/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/miner/back.jpg
   - id: residence
     type: building
     building: residence
@@ -1047,8 +1047,8 @@ schematics:
       y: 19
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/residence/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/residence/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/residence/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/residence/back.jpg
   - id: tavern
     type: building
     building: tavern
@@ -1058,8 +1058,8 @@ schematics:
       y: 19
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/tavern/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/tavern/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/tavern/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/tavern/back.jpg
   - id: townhall
     type: building
     building: townhall
@@ -1069,8 +1069,8 @@ schematics:
       y: 38
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/fundamentals/townhall/front.jpg"
-      - "../../assets/images/schematics/pagoda/fundamentals/townhall/back.jpg"
+      - ../../assets/images/schematics/pagoda/fundamentals/townhall/front.jpg
+      - ../../assets/images/schematics/pagoda/fundamentals/townhall/back.jpg
   - id: covered_end
     type: decoration
     path: infrastructure/bridges
@@ -1079,7 +1079,7 @@ schematics:
       y: 15
       z: 10
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_end/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_end/front.jpg
   - id: covered_endcap
     type: decoration
     path: infrastructure/bridges
@@ -1088,7 +1088,7 @@ schematics:
       y: 16
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_endcap/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_endcap/front.jpg
   - id: covered_footing_a1
     type: decoration
     path: infrastructure/bridges
@@ -1097,7 +1097,7 @@ schematics:
       y: 7
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_a1/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_a1/front.jpg
   - id: covered_footing_a2
     type: decoration
     path: infrastructure/bridges
@@ -1106,7 +1106,7 @@ schematics:
       y: 7
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_a2/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_a2/front.jpg
   - id: covered_footing_a3
     type: decoration
     path: infrastructure/bridges
@@ -1115,7 +1115,7 @@ schematics:
       y: 7
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_a3/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_a3/front.jpg
   - id: covered_footing_b1
     type: decoration
     path: infrastructure/bridges
@@ -1124,7 +1124,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_b1/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_b1/front.jpg
   - id: covered_footing_b2
     type: decoration
     path: infrastructure/bridges
@@ -1133,7 +1133,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_b2/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_b2/front.jpg
   - id: covered_footing_b3
     type: decoration
     path: infrastructure/bridges
@@ -1142,7 +1142,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_b3/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_footing_b3/front.jpg
   - id: covered_mid_a
     type: decoration
     path: infrastructure/bridges
@@ -1151,7 +1151,7 @@ schematics:
       y: 20
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_a/front.jpg
   - id: covered_mid_b
     type: decoration
     path: infrastructure/bridges
@@ -1160,7 +1160,7 @@ schematics:
       y: 16
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_b/front.jpg
   - id: covered_mid_c
     type: decoration
     path: infrastructure/bridges
@@ -1169,7 +1169,7 @@ schematics:
       y: 14
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_c/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_c/front.jpg
   - id: covered_mid_d
     type: decoration
     path: infrastructure/bridges
@@ -1178,7 +1178,7 @@ schematics:
       y: 23
       z: 15
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_d/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_d/front.jpg
   - id: covered_mid_e
     type: decoration
     path: infrastructure/bridges
@@ -1187,7 +1187,7 @@ schematics:
       y: 16
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_e/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_e/front.jpg
   - id: covered_mid_f
     type: decoration
     path: infrastructure/bridges
@@ -1196,7 +1196,7 @@ schematics:
       y: 15
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_f/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/covered_mid_f/front.jpg
   - id: small_end_a
     type: decoration
     path: infrastructure/bridges
@@ -1205,7 +1205,7 @@ schematics:
       y: 8
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/small_end_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/small_end_a/front.jpg
   - id: small_end_b
     type: decoration
     path: infrastructure/bridges
@@ -1214,7 +1214,7 @@ schematics:
       y: 8
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/small_end_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/small_end_b/front.jpg
   - id: small_span_a
     type: decoration
     path: infrastructure/bridges
@@ -1223,7 +1223,7 @@ schematics:
       y: 10
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/small_span_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/small_span_a/front.jpg
   - id: small_span_b
     type: decoration
     path: infrastructure/bridges
@@ -1232,7 +1232,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/bridges/small_span_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/bridges/small_span_b/front.jpg
   - id: fancy_gate
     type: decoration
     path: infrastructure/gates
@@ -1241,7 +1241,7 @@ schematics:
       y: 13
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/infrastructure/gates/fancy_gate/front.jpg"
+      - ../../assets/images/schematics/pagoda/infrastructure/gates/fancy_gate/front.jpg
   - id: altguardtower
     type: building
     building: guardtower
@@ -1251,8 +1251,8 @@ schematics:
       y: 26
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/military/altguardtower/front.jpg"
-      - "../../assets/images/schematics/pagoda/military/altguardtower/back.jpg"
+      - ../../assets/images/schematics/pagoda/military/altguardtower/front.jpg
+      - ../../assets/images/schematics/pagoda/military/altguardtower/back.jpg
   - id: archery
     type: building
     building: archery
@@ -1262,8 +1262,8 @@ schematics:
       y: 16
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/military/archery/front.jpg"
-      - "../../assets/images/schematics/pagoda/military/archery/back.jpg"
+      - ../../assets/images/schematics/pagoda/military/archery/front.jpg
+      - ../../assets/images/schematics/pagoda/military/archery/back.jpg
   - id: barracks
     type: building
     building: barracks
@@ -1273,8 +1273,8 @@ schematics:
       y: 25
       z: 31
     images:
-      - "../../assets/images/schematics/pagoda/military/barracks/front.jpg"
-      - "../../assets/images/schematics/pagoda/military/barracks/back.jpg"
+      - ../../assets/images/schematics/pagoda/military/barracks/front.jpg
+      - ../../assets/images/schematics/pagoda/military/barracks/back.jpg
   - id: barrackstower
     type: building
     building: barrackstower
@@ -1285,7 +1285,7 @@ schematics:
       y: 19
       z: 11
     images:
-      - "../../assets/images/schematics/pagoda/military/barrackstower/front.jpg"
+      - ../../assets/images/schematics/pagoda/military/barrackstower/front.jpg
   - id: combatacademy
     type: building
     building: combatacademy
@@ -1295,8 +1295,8 @@ schematics:
       y: 17
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/military/combatacademy/front.jpg"
-      - "../../assets/images/schematics/pagoda/military/combatacademy/back.jpg"
+      - ../../assets/images/schematics/pagoda/military/combatacademy/front.jpg
+      - ../../assets/images/schematics/pagoda/military/combatacademy/back.jpg
   - id: guardtower
     type: building
     building: guardtower
@@ -1306,8 +1306,8 @@ schematics:
       y: 20
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/military/guardtower/front.jpg"
-      - "../../assets/images/schematics/pagoda/military/guardtower/back.jpg"
+      - ../../assets/images/schematics/pagoda/military/guardtower/front.jpg
+      - ../../assets/images/schematics/pagoda/military/guardtower/back.jpg
   - id: barracksfull
     type: building
     building: barracks
@@ -1317,8 +1317,8 @@ schematics:
       y: 25
       z: 31
     images:
-      - "../../assets/images/schematics/pagoda/military/barracksfull/front.jpg"
-      - "../../assets/images/schematics/pagoda/military/barracksfull/back.jpg"
+      - ../../assets/images/schematics/pagoda/military/barracksfull/front.jpg
+      - ../../assets/images/schematics/pagoda/military/barracksfull/back.jpg
   - id: enchanter
     type: building
     building: enchanter
@@ -1328,8 +1328,8 @@ schematics:
       y: 68
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/mystic/enchanter/front.jpg"
-      - "../../assets/images/schematics/pagoda/mystic/enchanter/back.jpg"
+      - ../../assets/images/schematics/pagoda/mystic/enchanter/front.jpg
+      - ../../assets/images/schematics/pagoda/mystic/enchanter/back.jpg
   - id: graveyard
     type: building
     building: graveyard
@@ -1339,8 +1339,8 @@ schematics:
       y: 31
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/mystic/graveyard/front.jpg"
-      - "../../assets/images/schematics/pagoda/mystic/graveyard/back.jpg"
+      - ../../assets/images/schematics/pagoda/mystic/graveyard/front.jpg
+      - ../../assets/images/schematics/pagoda/mystic/graveyard/back.jpg
   - id: mysticalsite
     type: building
     building: mysticalsite
@@ -1350,8 +1350,8 @@ schematics:
       y: 54
       z: 25
     images:
-      - "../../assets/images/schematics/pagoda/mystic/mysticalsite/front.jpg"
-      - "../../assets/images/schematics/pagoda/mystic/mysticalsite/back.jpg"
+      - ../../assets/images/schematics/pagoda/mystic/mysticalsite/front.jpg
+      - ../../assets/images/schematics/pagoda/mystic/mysticalsite/back.jpg
   - id: netherworker
     type: building
     building: netherworker
@@ -1361,8 +1361,8 @@ schematics:
       y: 37
       z: 19
     images:
-      - "../../assets/images/schematics/pagoda/mystic/netherworker/front.jpg"
-      - "../../assets/images/schematics/pagoda/mystic/netherworker/back.jpg"
+      - ../../assets/images/schematics/pagoda/mystic/netherworker/front.jpg
+      - ../../assets/images/schematics/pagoda/mystic/netherworker/back.jpg
   - id: big_medal_bw
     type: decoration
     path: walls/big_walls
@@ -1371,7 +1371,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/big_medal_bw/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/big_medal_bw/front.jpg
   - id: big_medal_ry
     type: decoration
     path: walls/big_walls
@@ -1380,7 +1380,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/big_medal_ry/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/big_medal_ry/front.jpg
   - id: corner
     type: decoration
     path: walls/big_walls
@@ -1389,7 +1389,7 @@ schematics:
       y: 15
       z: 6
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/corner/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/corner/front.jpg
   - id: corner_tower
     type: decoration
     path: walls/big_walls
@@ -1398,7 +1398,7 @@ schematics:
       y: 15
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/corner_tower/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/corner_tower/front.jpg
   - id: cross
     type: decoration
     path: walls/big_walls
@@ -1407,7 +1407,7 @@ schematics:
       y: 14
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/cross/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/cross/front.jpg
   - id: down_a
     type: decoration
     path: walls/big_walls
@@ -1416,7 +1416,7 @@ schematics:
       y: 14
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/down_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/down_a/front.jpg
   - id: down_b
     type: decoration
     path: walls/big_walls
@@ -1425,7 +1425,7 @@ schematics:
       y: 14
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/down_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/down_b/front.jpg
   - id: gatehouse
     type: decoration
     path: walls/big_walls
@@ -1434,8 +1434,8 @@ schematics:
       y: 33
       z: 27
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/gatehouse/front.jpg"
-      - "../../assets/images/schematics/pagoda/walls/big_walls/gatehouse/back.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/gatehouse/front.jpg
+      - ../../assets/images/schematics/pagoda/walls/big_walls/gatehouse/back.jpg
   - id: long
     type: decoration
     path: walls/big_walls
@@ -1444,7 +1444,7 @@ schematics:
       y: 14
       z: 21
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/long/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/long/front.jpg
   - id: medal_bw
     type: decoration
     path: walls/big_walls
@@ -1453,7 +1453,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/medal_bw/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/medal_bw/front.jpg
   - id: medal_ry
     type: decoration
     path: walls/big_walls
@@ -1462,7 +1462,7 @@ schematics:
       y: 5
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/medal_ry/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/medal_ry/front.jpg
   - id: short
     type: decoration
     path: walls/big_walls
@@ -1471,7 +1471,7 @@ schematics:
       y: 14
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/short/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/short/front.jpg
   - id: stair
     type: decoration
     path: walls/big_walls
@@ -1480,7 +1480,7 @@ schematics:
       y: 15
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/stair/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/stair/front.jpg
   - id: straight_tower
     type: decoration
     path: walls/big_walls
@@ -1489,7 +1489,7 @@ schematics:
       y: 15
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/straight_tower/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/straight_tower/front.jpg
   - id: tee
     type: decoration
     path: walls/big_walls
@@ -1498,7 +1498,7 @@ schematics:
       y: 14
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/tee/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/tee/front.jpg
   - id: tower
     type: decoration
     path: walls/big_walls
@@ -1507,8 +1507,8 @@ schematics:
       y: 33
       z: 17
     images:
-      - "../../assets/images/schematics/pagoda/walls/big_walls/tower/front.jpg"
-      - "../../assets/images/schematics/pagoda/walls/big_walls/tower/back.jpg"
+      - ../../assets/images/schematics/pagoda/walls/big_walls/tower/front.jpg
+      - ../../assets/images/schematics/pagoda/walls/big_walls/tower/back.jpg
   - id: corner
     type: decoration
     path: walls/corners
@@ -1517,7 +1517,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/corners/corner/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/corners/corner/front.jpg
   - id: inverted
     type: decoration
     path: walls/corners
@@ -1526,7 +1526,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/corners/inverted/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/corners/inverted/front.jpg
   - id: tower
     type: decoration
     path: walls/corners
@@ -1535,7 +1535,7 @@ schematics:
       y: 18
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/walls/corners/tower/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/corners/tower/front.jpg
   - id: fancy_a
     type: decoration
     path: walls/fences
@@ -1544,7 +1544,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_a/front.jpg
   - id: fancy_b
     type: decoration
     path: walls/fences
@@ -1553,7 +1553,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_b/front.jpg
   - id: fancy_gate
     type: decoration
     path: walls/fences
@@ -1562,7 +1562,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_gate/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_gate/front.jpg
   - id: fancy_lamp
     type: decoration
     path: walls/fences
@@ -1571,7 +1571,7 @@ schematics:
       y: 5
       z: 2
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_lamp/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_lamp/front.jpg
   - id: fancy_plug_a
     type: decoration
     path: walls/fences
@@ -1580,7 +1580,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_plug_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_plug_a/front.jpg
   - id: fancy_plug_b
     type: decoration
     path: walls/fences
@@ -1589,7 +1589,7 @@ schematics:
       y: 6
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_plug_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_plug_b/front.jpg
   - id: fancy_plug_c
     type: decoration
     path: walls/fences
@@ -1598,7 +1598,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_plug_c/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_plug_c/front.jpg
   - id: fancy_short
     type: decoration
     path: walls/fences
@@ -1607,7 +1607,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fancy_short/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fancy_short/front.jpg
   - id: fence_a
     type: decoration
     path: walls/fences
@@ -1616,7 +1616,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_a/front.jpg
   - id: fence_b
     type: decoration
     path: walls/fences
@@ -1625,7 +1625,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_b/front.jpg
   - id: fence_gate
     type: decoration
     path: walls/fences
@@ -1634,7 +1634,7 @@ schematics:
       y: 10
       z: 5
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_gate/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_gate/front.jpg
   - id: fence_lamp
     type: decoration
     path: walls/fences
@@ -1643,7 +1643,7 @@ schematics:
       y: 4
       z: 2
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_lamp/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_lamp/front.jpg
   - id: fence_plug_a
     type: decoration
     path: walls/fences
@@ -1652,7 +1652,7 @@ schematics:
       y: 5
       z: 3
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_plug_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_plug_a/front.jpg
   - id: fence_plug_b
     type: decoration
     path: walls/fences
@@ -1661,7 +1661,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_plug_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_plug_b/front.jpg
   - id: fence_short
     type: decoration
     path: walls/fences
@@ -1670,7 +1670,7 @@ schematics:
       y: 5
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/fences/fence_short/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/fences/fence_short/front.jpg
   - id: gatehouse
     type: decoration
     path: walls/gates
@@ -1679,8 +1679,8 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/pagoda/walls/gates/gatehouse/front.jpg"
-      - "../../assets/images/schematics/pagoda/walls/gates/gatehouse/back.jpg"
+      - ../../assets/images/schematics/pagoda/walls/gates/gatehouse/front.jpg
+      - ../../assets/images/schematics/pagoda/walls/gates/gatehouse/back.jpg
   - id: base_a
     type: decoration
     path: walls/walls
@@ -1689,7 +1689,7 @@ schematics:
       y: 4
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/base_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/base_a/front.jpg
   - id: base_b
     type: decoration
     path: walls/walls
@@ -1698,7 +1698,7 @@ schematics:
       y: 4
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/base_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/base_b/front.jpg
   - id: down
     type: decoration
     path: walls/walls
@@ -1707,7 +1707,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/down/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/down/front.jpg
   - id: panel_a
     type: decoration
     path: walls/walls
@@ -1716,7 +1716,7 @@ schematics:
       y: 6
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/panel_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/panel_a/front.jpg
   - id: panel_b
     type: decoration
     path: walls/walls
@@ -1725,7 +1725,7 @@ schematics:
       y: 7
       z: 1
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/panel_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/panel_b/front.jpg
   - id: redoubt
     type: decoration
     path: walls/walls
@@ -1734,7 +1734,7 @@ schematics:
       y: 7
       z: 9
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/redoubt/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/redoubt/front.jpg
   - id: tower
     type: decoration
     path: walls/walls
@@ -1743,7 +1743,7 @@ schematics:
       y: 18
       z: 8
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/tower/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/tower/front.jpg
   - id: wall_a
     type: decoration
     path: walls/walls
@@ -1752,7 +1752,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/wall_a/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/wall_a/front.jpg
   - id: wall_b
     type: decoration
     path: walls/walls
@@ -1761,7 +1761,7 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/wall_b/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/wall_b/front.jpg
   - id: wall_c
     type: decoration
     path: walls/walls
@@ -1770,4 +1770,4 @@ schematics:
       y: 7
       z: 7
     images:
-      - "../../assets/images/schematics/pagoda/walls/walls/wall_c/front.jpg"
+      - ../../assets/images/schematics/pagoda/walls/walls/wall_c/front.jpg

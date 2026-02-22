@@ -1,5 +1,5 @@
 name: Research Effect
-path: "<namespace>/researches/effects/<effect-id>.json"
+path: <namespace>/researches/effects/<effect-id>.json
 fields:
   - key: effect
     type: primitive

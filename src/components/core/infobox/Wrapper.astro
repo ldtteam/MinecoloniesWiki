@@ -1,4 +1,12 @@
-<div class:list={['infobox-wrapper', Astro.props.class]}>
+---
+interface Props {
+  class?: string;
+}
+
+const { class: clazz } = Astro.props;
+---
+
+<div class:list={['infobox-wrapper', clazz]}>
   <div class="flex-fill">
     <slot />
   </div>
@@ -7,7 +15,7 @@
 </div>
 
 <style lang="scss">
-  @import '../../../css/bootstrap-vars.scss';
+  @import '../../../css/bootstrap-vars';
 
   .infobox-wrapper {
     display: flex;

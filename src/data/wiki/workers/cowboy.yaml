@@ -1,7 +1,7 @@
 name: Cowhand
 plural: Cowhands
 description: The Cowhand is responsible for herding your cows.
-icon: "../../../assets/images/wiki/workers/cowboy/male/default-a.png"
+icon: ../../../assets/images/wiki/workers/cowboy/male/default-a.png
 type: animals
 traits:
   primary:

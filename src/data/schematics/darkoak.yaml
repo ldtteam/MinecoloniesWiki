@@ -13,8 +13,8 @@ schematics:
       y: 13
       z: 15
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/composter/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/composter/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/composter/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/composter/back.jpg
   - id: farmer
     type: building
     building: farmer
@@ -24,8 +24,8 @@ schematics:
       y: 17
       z: 17
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/farmer/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/farmer/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/farmer/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/farmer/back.jpg
   - id: florist
     type: building
     building: florist
@@ -35,8 +35,8 @@ schematics:
       y: 13
       z: 17
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/florist/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/florist/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/florist/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/florist/back.jpg
   - id: plantation
     type: building
     building: plantation
@@ -46,8 +46,8 @@ schematics:
       y: 17
       z: 18
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/plantation/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/horticulture/plantation/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/plantation/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/horticulture/plantation/back.jpg
   - id: beekeeper
     type: building
     building: beekeeper
@@ -57,8 +57,8 @@ schematics:
       y: 17
       z: 18
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/beekeeper/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/beekeeper/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/beekeeper/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/beekeeper/back.jpg
   - id: chickenherder
     type: building
     building: chickenherder
@@ -68,8 +68,8 @@ schematics:
       y: 13
       z: 21
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/chickenherder/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/chickenherder/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/chickenherder/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/chickenherder/back.jpg
   - id: cowboy
     type: building
     building: cowboy
@@ -79,8 +79,8 @@ schematics:
       y: 14
       z: 29
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/cowboy/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/cowboy/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/cowboy/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/cowboy/back.jpg
   - id: fisherman
     type: building
     building: fisherman
@@ -90,8 +90,8 @@ schematics:
       y: 15
       z: 21
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/fisherman/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/fisherman/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/fisherman/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/fisherman/back.jpg
   - id: rabbithutch
     type: building
     building: rabbithutch
@@ -101,8 +101,8 @@ schematics:
       y: 13
       z: 20
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/rabbithutch/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/rabbithutch/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/rabbithutch/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/rabbithutch/back.jpg
   - id: shepherd
     type: building
     building: shepherd
@@ -112,8 +112,8 @@ schematics:
       y: 15
       z: 29
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/shepherd/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/shepherd/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/shepherd/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/shepherd/back.jpg
   - id: swineherder
     type: building
     building: swineherder
@@ -123,8 +123,8 @@ schematics:
       y: 14
       z: 29
     images:
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/swineherder/front.jpg"
-      - "../../assets/images/schematics/darkoak/agriculture/husbandry/swineherder/back.jpg"
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/swineherder/front.jpg
+      - ../../assets/images/schematics/darkoak/agriculture/husbandry/swineherder/back.jpg
   - id: fletcher
     type: building
     building: fletcher
@@ -134,8 +134,8 @@ schematics:
       y: 14
       z: 25
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/carpentry/fletcher/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/carpentry/fletcher/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/carpentry/fletcher/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/carpentry/fletcher/back.jpg
   - id: sawmill
     type: building
     building: sawmill
@@ -145,8 +145,8 @@ schematics:
       y: 15
       z: 29
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/carpentry/sawmill/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/carpentry/sawmill/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/carpentry/sawmill/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/carpentry/sawmill/back.jpg
   - id: alchemist
     type: building
     building: alchemist
@@ -156,8 +156,8 @@ schematics:
       y: 15
       z: 22
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/alchemist/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/alchemist/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/alchemist/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/alchemist/back.jpg
   - id: baker
     type: building
     building: baker
@@ -167,8 +167,8 @@ schematics:
       y: 15
       z: 15
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/baker/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/baker/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/baker/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/baker/back.jpg
   - id: concretemixer
     type: building
     building: concretemixer
@@ -178,8 +178,8 @@ schematics:
       y: 14
       z: 15
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/concretemixer/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/concretemixer/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/concretemixer/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/concretemixer/back.jpg
   - id: dyer
     type: building
     building: dyer
@@ -189,8 +189,8 @@ schematics:
       y: 12
       z: 15
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/dyer/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/dyer/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/dyer/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/dyer/back.jpg
   - id: glassblower
     type: building
     building: glassblower
@@ -200,8 +200,8 @@ schematics:
       y: 11
       z: 11
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/glassblower/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/luxury/glassblower/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/glassblower/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/luxury/glassblower/back.jpg
   - id: crusher
     type: building
     building: crusher
@@ -211,8 +211,8 @@ schematics:
       y: 17
       z: 16
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/crusher/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/crusher/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/crusher/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/crusher/back.jpg
   - id: sifter
     type: building
     building: sifter
@@ -222,8 +222,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/sifter/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/sifter/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/sifter/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/sifter/back.jpg
   - id: stonemason
     type: building
     building: stonemason
@@ -233,8 +233,8 @@ schematics:
       y: 12
       z: 29
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/stonemason/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/stonemason/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/stonemason/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/stonemason/back.jpg
   - id: stonesmeltery
     type: building
     building: stonesmeltery
@@ -244,8 +244,8 @@ schematics:
       y: 16
       z: 16
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/stonesmeltery/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/masonry/stonesmeltery/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/stonesmeltery/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/masonry/stonesmeltery/back.jpg
   - id: blacksmith
     type: building
     building: blacksmith
@@ -255,8 +255,8 @@ schematics:
       y: 15
       z: 14
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/metallurgy/blacksmith/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/metallurgy/blacksmith/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/metallurgy/blacksmith/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/metallurgy/blacksmith/back.jpg
   - id: mechanic
     type: building
     building: mechanic
@@ -266,8 +266,8 @@ schematics:
       y: 15
       z: 12
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/metallurgy/mechanic/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/metallurgy/mechanic/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/metallurgy/mechanic/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/metallurgy/mechanic/back.jpg
   - id: smeltery
     type: building
     building: smeltery
@@ -277,8 +277,8 @@ schematics:
       y: 15
       z: 15
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/metallurgy/smeltery/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/metallurgy/smeltery/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/metallurgy/smeltery/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/metallurgy/smeltery/back.jpg
   - id: deliveryman
     type: building
     building: deliveryman
@@ -288,8 +288,8 @@ schematics:
       y: 14
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/storage/deliveryman/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/storage/deliveryman/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/storage/deliveryman/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/storage/deliveryman/back.jpg
   - id: warehouse
     type: building
     building: warehouse
@@ -299,8 +299,8 @@ schematics:
       y: 17
       z: 21
     images:
-      - "../../assets/images/schematics/darkoak/craftsmanship/storage/warehouse/front.jpg"
-      - "../../assets/images/schematics/darkoak/craftsmanship/storage/warehouse/back.jpg"
+      - ../../assets/images/schematics/darkoak/craftsmanship/storage/warehouse/front.jpg
+      - ../../assets/images/schematics/darkoak/craftsmanship/storage/warehouse/back.jpg
   - id: camp
     type: decoration
     path: decorations/supplies
@@ -309,8 +309,8 @@ schematics:
       y: 13
       z: 16
     images:
-      - "../../assets/images/schematics/darkoak/decorations/supplies/camp/front.jpg"
-      - "../../assets/images/schematics/darkoak/decorations/supplies/camp/back.jpg"
+      - ../../assets/images/schematics/darkoak/decorations/supplies/camp/front.jpg
+      - ../../assets/images/schematics/darkoak/decorations/supplies/camp/back.jpg
   - id: ship
     type: decoration
     path: decorations/supplies
@@ -319,8 +319,8 @@ schematics:
       y: 26
       z: 19
     images:
-      - "../../assets/images/schematics/darkoak/decorations/supplies/ship/front.jpg"
-      - "../../assets/images/schematics/darkoak/decorations/supplies/ship/back.jpg"
+      - ../../assets/images/schematics/darkoak/decorations/supplies/ship/front.jpg
+      - ../../assets/images/schematics/darkoak/decorations/supplies/ship/back.jpg
   - id: library
     type: building
     building: library
@@ -330,8 +330,8 @@ schematics:
       y: 22
       z: 32
     images:
-      - "../../assets/images/schematics/darkoak/education/library/front.jpg"
-      - "../../assets/images/schematics/darkoak/education/library/back.jpg"
+      - ../../assets/images/schematics/darkoak/education/library/front.jpg
+      - ../../assets/images/schematics/darkoak/education/library/back.jpg
   - id: school
     type: building
     building: school
@@ -341,8 +341,8 @@ schematics:
       y: 18
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/education/school/front.jpg"
-      - "../../assets/images/schematics/darkoak/education/school/back.jpg"
+      - ../../assets/images/schematics/darkoak/education/school/front.jpg
+      - ../../assets/images/schematics/darkoak/education/school/back.jpg
   - id: university
     type: building
     building: university
@@ -352,8 +352,8 @@ schematics:
       y: 15
       z: 32
     images:
-      - "../../assets/images/schematics/darkoak/education/university/front.jpg"
-      - "../../assets/images/schematics/darkoak/education/university/back.jpg"
+      - ../../assets/images/schematics/darkoak/education/university/front.jpg
+      - ../../assets/images/schematics/darkoak/education/university/back.jpg
   - id: builder
     type: building
     building: builder
@@ -363,8 +363,8 @@ schematics:
       y: 14
       z: 15
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/builder/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/builder/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/builder/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/builder/back.jpg
   - id: cook
     type: building
     building: cook
@@ -374,8 +374,8 @@ schematics:
       y: 17
       z: 18
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/cook/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/cook/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/cook/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/cook/back.jpg
   - id: hospital
     type: building
     building: hospital
@@ -385,8 +385,8 @@ schematics:
       y: 20
       z: 26
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/hospital/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/hospital/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/hospital/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/hospital/back.jpg
   - id: lumberjack
     type: building
     building: lumberjack
@@ -396,8 +396,8 @@ schematics:
       y: 13
       z: 21
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/lumberjack/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/lumberjack/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/lumberjack/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/lumberjack/back.jpg
   - id: miner
     type: building
     building: miner
@@ -407,8 +407,8 @@ schematics:
       y: 13
       z: 21
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/miner/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/miner/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/miner/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/miner/back.jpg
   - id: residence
     type: building
     building: residence
@@ -418,8 +418,8 @@ schematics:
       y: 16
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/residence/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/residence/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/residence/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/residence/back.jpg
   - id: tavern
     type: building
     building: tavern
@@ -429,8 +429,8 @@ schematics:
       y: 21
       z: 26
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/tavern/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/tavern/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/tavern/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/tavern/back.jpg
   - id: townhall
     type: building
     building: townhall
@@ -440,8 +440,8 @@ schematics:
       y: 21
       z: 24
     images:
-      - "../../assets/images/schematics/darkoak/fundamentals/townhall/front.jpg"
-      - "../../assets/images/schematics/darkoak/fundamentals/townhall/back.jpg"
+      - ../../assets/images/schematics/darkoak/fundamentals/townhall/front.jpg
+      - ../../assets/images/schematics/darkoak/fundamentals/townhall/back.jpg
   - id: alternativefield
     type: decoration
     path: infrastructure/fields
@@ -450,7 +450,7 @@ schematics:
       y: 8
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/fields/alternativefield/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/fields/alternativefield/front.jpg
   - id: largetreeplot
     type: decoration
     path: infrastructure/fields
@@ -459,7 +459,7 @@ schematics:
       y: 8
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/fields/largetreeplot/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/fields/largetreeplot/front.jpg
   - id: smallfield
     type: decoration
     path: infrastructure/fields
@@ -468,7 +468,7 @@ schematics:
       y: 10
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/fields/smallfield/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/fields/smallfield/front.jpg
   - id: smalltreeplot
     type: decoration
     path: infrastructure/fields
@@ -477,7 +477,7 @@ schematics:
       y: 8
       z: 7
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/fields/smalltreeplot/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/fields/smalltreeplot/front.jpg
   - id: cornertrack
     type: decoration
     path: infrastructure/rail
@@ -486,7 +486,7 @@ schematics:
       y: 8
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/cornertrack/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/cornertrack/front.jpg
   - id: inclinetrack
     type: decoration
     path: infrastructure/rail
@@ -495,7 +495,7 @@ schematics:
       y: 12
       z: 3
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/inclinetrack/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/inclinetrack/front.jpg
   - id: longtrack
     type: decoration
     path: infrastructure/rail
@@ -504,7 +504,7 @@ schematics:
       y: 8
       z: 3
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/longtrack/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/longtrack/front.jpg
   - id: shorttrack
     type: decoration
     path: infrastructure/rail
@@ -513,7 +513,7 @@ schematics:
       y: 8
       z: 3
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/shorttrack/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/shorttrack/front.jpg
   - id: spiraltrack
     type: decoration
     path: infrastructure/rail
@@ -522,7 +522,7 @@ schematics:
       y: 9
       z: 5
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/spiraltrack/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/spiraltrack/front.jpg
   - id: stepuptrack
     type: decoration
     path: infrastructure/rail
@@ -531,7 +531,7 @@ schematics:
       y: 9
       z: 3
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/stepuptrack/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/stepuptrack/front.jpg
   - id: walkwaytrackone
     type: decoration
     path: infrastructure/rail
@@ -540,7 +540,7 @@ schematics:
       y: 8
       z: 5
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/walkwaytrackone/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/walkwaytrackone/front.jpg
   - id: walkwaytracktwo
     type: decoration
     path: infrastructure/rail
@@ -549,7 +549,7 @@ schematics:
       y: 8
       z: 8
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/rail/walkwaytracktwo/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/rail/walkwaytracktwo/front.jpg
   - id: cornerwalkway
     type: decoration
     path: infrastructure/roads
@@ -558,7 +558,7 @@ schematics:
       y: 7
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/cornerwalkway/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/cornerwalkway/front.jpg
   - id: intersection
     type: decoration
     path: infrastructure/roads
@@ -567,7 +567,7 @@ schematics:
       y: 7
       z: 8
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/intersection/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/intersection/front.jpg
   - id: longwalkway
     type: decoration
     path: infrastructure/roads
@@ -576,7 +576,7 @@ schematics:
       y: 7
       z: 4
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/longwalkway/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/longwalkway/front.jpg
   - id: shortwalkway
     type: decoration
     path: infrastructure/roads
@@ -585,7 +585,7 @@ schematics:
       y: 7
       z: 4
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/shortwalkway/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/shortwalkway/front.jpg
   - id: staircaseone
     type: decoration
     path: infrastructure/roads
@@ -594,7 +594,7 @@ schematics:
       y: 7
       z: 5
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/staircaseone/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/staircaseone/front.jpg
   - id: staircasetwo
     type: decoration
     path: infrastructure/roads
@@ -603,7 +603,7 @@ schematics:
       y: 7
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/staircasetwo/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/staircasetwo/front.jpg
   - id: stepup
     type: decoration
     path: infrastructure/roads
@@ -612,7 +612,7 @@ schematics:
       y: 8
       z: 4
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/stepup/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/stepup/front.jpg
   - id: tjunction
     type: decoration
     path: infrastructure/roads
@@ -621,7 +621,7 @@ schematics:
       y: 7
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/infrastructure/roads/tjunction/front.jpg"
+      - ../../assets/images/schematics/darkoak/infrastructure/roads/tjunction/front.jpg
   - id: archery
     type: building
     building: archery
@@ -631,8 +631,8 @@ schematics:
       y: 18
       z: 18
     images:
-      - "../../assets/images/schematics/darkoak/military/archery/front.jpg"
-      - "../../assets/images/schematics/darkoak/military/archery/back.jpg"
+      - ../../assets/images/schematics/darkoak/military/archery/front.jpg
+      - ../../assets/images/schematics/darkoak/military/archery/back.jpg
   - id: barracks
     type: building
     building: barrackstower
@@ -643,7 +643,7 @@ schematics:
       y: 26
       z: 26
     images:
-      - "../../assets/images/schematics/darkoak/military/barracks/front.jpg"
+      - ../../assets/images/schematics/darkoak/military/barracks/front.jpg
   - id: barrackstower
     type: building
     building: barrackstower
@@ -654,8 +654,8 @@ schematics:
       y: 20
       z: 10
     images:
-      - "../../assets/images/schematics/darkoak/military/barrackstower/front.jpg"
-      - "../../assets/images/schematics/darkoak/military/barrackstower/back.jpg"
+      - ../../assets/images/schematics/darkoak/military/barrackstower/front.jpg
+      - ../../assets/images/schematics/darkoak/military/barrackstower/back.jpg
   - id: combatacademy
     type: building
     building: combatacademy
@@ -665,8 +665,8 @@ schematics:
       y: 18
       z: 18
     images:
-      - "../../assets/images/schematics/darkoak/military/combatacademy/front.jpg"
-      - "../../assets/images/schematics/darkoak/military/combatacademy/back.jpg"
+      - ../../assets/images/schematics/darkoak/military/combatacademy/front.jpg
+      - ../../assets/images/schematics/darkoak/military/combatacademy/back.jpg
   - id: guardtower
     type: building
     building: guardtower
@@ -676,8 +676,8 @@ schematics:
       y: 18
       z: 13
     images:
-      - "../../assets/images/schematics/darkoak/military/guardtower/front.jpg"
-      - "../../assets/images/schematics/darkoak/military/guardtower/back.jpg"
+      - ../../assets/images/schematics/darkoak/military/guardtower/front.jpg
+      - ../../assets/images/schematics/darkoak/military/guardtower/back.jpg
   - id: barracksfull
     type: building
     building: barrackstower
@@ -688,7 +688,7 @@ schematics:
       y: 26
       z: 26
     images:
-      - "../../assets/images/schematics/darkoak/military/barracksfull/front.jpg"
+      - ../../assets/images/schematics/darkoak/military/barracksfull/front.jpg
   - id: enchanter
     type: building
     building: enchanter
@@ -698,8 +698,8 @@ schematics:
       y: 14
       z: 23
     images:
-      - "../../assets/images/schematics/darkoak/mystic/enchanter/front.jpg"
-      - "../../assets/images/schematics/darkoak/mystic/enchanter/back.jpg"
+      - ../../assets/images/schematics/darkoak/mystic/enchanter/front.jpg
+      - ../../assets/images/schematics/darkoak/mystic/enchanter/back.jpg
   - id: graveyard
     type: building
     building: graveyard
@@ -709,8 +709,8 @@ schematics:
       y: 25
       z: 20
     images:
-      - "../../assets/images/schematics/darkoak/mystic/graveyard/front.jpg"
-      - "../../assets/images/schematics/darkoak/mystic/graveyard/back.jpg"
+      - ../../assets/images/schematics/darkoak/mystic/graveyard/front.jpg
+      - ../../assets/images/schematics/darkoak/mystic/graveyard/back.jpg
   - id: mysticalsite
     type: building
     building: mysticalsite
@@ -720,8 +720,8 @@ schematics:
       y: 20
       z: 28
     images:
-      - "../../assets/images/schematics/darkoak/mystic/mysticalsite/front.jpg"
-      - "../../assets/images/schematics/darkoak/mystic/mysticalsite/back.jpg"
+      - ../../assets/images/schematics/darkoak/mystic/mysticalsite/front.jpg
+      - ../../assets/images/schematics/darkoak/mystic/mysticalsite/back.jpg
   - id: netherworker
     type: building
     building: netherworker
@@ -731,8 +731,8 @@ schematics:
       y: 17
       z: 12
     images:
-      - "../../assets/images/schematics/darkoak/mystic/netherworker/front.jpg"
-      - "../../assets/images/schematics/darkoak/mystic/netherworker/back.jpg"
+      - ../../assets/images/schematics/darkoak/mystic/netherworker/front.jpg
+      - ../../assets/images/schematics/darkoak/mystic/netherworker/back.jpg
   - id: wallcorner
     type: decoration
     path: walls
@@ -741,7 +741,7 @@ schematics:
       y: 10
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/walls/wallcorner/front.jpg"
+      - ../../assets/images/schematics/darkoak/walls/wallcorner/front.jpg
   - id: wallgate
     type: decoration
     path: walls
@@ -750,7 +750,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/darkoak/walls/wallgate/front.jpg"
+      - ../../assets/images/schematics/darkoak/walls/wallgate/front.jpg
   - id: wallincorner
     type: decoration
     path: walls
@@ -759,7 +759,7 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/darkoak/walls/wallincorner/front.jpg"
+      - ../../assets/images/schematics/darkoak/walls/wallincorner/front.jpg
   - id: wallstair
     type: decoration
     path: walls
@@ -768,7 +768,7 @@ schematics:
       y: 10
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/walls/wallstair/front.jpg"
+      - ../../assets/images/schematics/darkoak/walls/wallstair/front.jpg
   - id: wallstraight
     type: decoration
     path: walls
@@ -777,7 +777,7 @@ schematics:
       y: 10
       z: 6
     images:
-      - "../../assets/images/schematics/darkoak/walls/wallstraight/front.jpg"
+      - ../../assets/images/schematics/darkoak/walls/wallstraight/front.jpg
   - id: walltower
     type: decoration
     path: walls
@@ -786,4 +786,4 @@ schematics:
       y: 10
       z: 7
     images:
-      - "../../assets/images/schematics/darkoak/walls/walltower/front.jpg"
+      - ../../assets/images/schematics/darkoak/walls/walltower/front.jpg

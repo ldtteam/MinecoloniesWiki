@@ -23,6 +23,11 @@ export const citizen_name_pack_list: Tag = {
   selfClosing: true
 };
 
+export const configuration_list: Tag = {
+  render: component('./src/components/wiki/configuration/MarkdocConfiguration.astro'),
+  selfClosing: true
+};
+
 export const content_block: Tag = {
   render: component('./src/components/markdoc/content/RegularContentBlock.astro'),
   attributes: {

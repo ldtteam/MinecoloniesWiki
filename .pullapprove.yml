@@ -6,12 +6,12 @@ group_defaults:
   always_pending:
     explanation: This PR is a work in progress...
     labels:
-    - In Progress
+      - In Progress
     title_regex: (WIP|wip)
   always_rejected:
     explanation: This PR is not ready for code review...
     labels:
-    - Not Ready
+      - Not Ready
   approve_by_comment:
     approve_regex: (Approved|:shipit:|:\+1:|LGTM)
     enabled: true
