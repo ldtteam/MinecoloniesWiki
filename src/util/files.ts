@@ -1,6 +1,7 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
 import { z } from 'astro/zod';
-import fs from 'fs/promises';
-import path from 'path';
 import yaml from 'yaml';
 
 type Parser = (value: string) => unknown;
@@ -70,7 +71,6 @@ export async function getAllFilesInDirectory<T extends z.ZodSchema>(
   options: Options = {}
 ): Promise<Record<string, z.infer<T>>> {
   const files = await fs.readdir(directory, {
-    encoding: 'utf-8',
     recursive,
     withFileTypes: true
   });
