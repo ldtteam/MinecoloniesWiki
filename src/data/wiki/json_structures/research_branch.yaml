@@ -1,5 +1,5 @@
 name: Research Branch
-path: "<namespace>/researches/<branch-id>.json"
+path: <namespace>/researches/<branch-id>.json
 fields:
   - key: branch-name
     type: primitive
@@ -41,6 +41,9 @@ fields:
     primitive:
       - string
       - boolean
-    description: "Removes a research, regardless of the source. May cause data loss if applied to an existing world.\n - String: Removes all research with a branch of the Resource Location in that String.\n - Boolean (true): Removes all Researches with branches matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs."
+    description: |-
+      Removes a research, regardless of the source. May cause data loss if applied to an existing world.
+       - String: Removes all research with a branch of the Resource Location in that String.
+       - Boolean (true): Removes all Researches with branches matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs.
     example: true
     optional: true

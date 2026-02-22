@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import { getSortedVersions } from '../../../../util/version';
+import VersionContent from '../../../version/VersionContent.astro';
+import BuildingInfobox from './BuildingInfobox.astro';
+
+interface Props {
+  building: CollectionEntry<'buildings'>;
+}
+
+const { building } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions.map((version) => (
+    <VersionContent versions={[version]} slot="infobox">
+      <BuildingInfobox building={building} version={version} />
+    </VersionContent>
+  ))
+}

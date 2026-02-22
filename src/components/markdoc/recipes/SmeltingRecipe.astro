@@ -1,0 +1,42 @@
+---
+import { type CollectionEntry } from 'astro:content';
+
+import type { RecipeSchema } from '../../../schemas/item';
+import RecipeSlot from './RecipeSlot.astro';
+
+interface Props {
+  recipe: Extract<RecipeSchema, { type: 'smelting' }>;
+  version: CollectionEntry<'versions'>;
+}
+
+const { recipe, version } = Astro.props;
+---
+
+<div class="input">
+  <RecipeSlot items={recipe.item} version={version} />
+</div>
+<div class="furnace">🔥</div>
+<div class="output">
+  <RecipeSlot items={[recipe.output]} amount={recipe.amount} large version={version} />
+</div>
+
+<style>
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .furnace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2em;
+  }
+
+  .output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>

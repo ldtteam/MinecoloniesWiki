@@ -1,6 +1,5 @@
 ---
-import type { Title } from '@utils/wiki';
-
+import type { Title } from '../util/wiki';
 import VersionSelector from './version/VersionSelector.astro';
 import PageTitleRender from './wiki/PageTitleRender.astro';
 
@@ -25,7 +24,7 @@ const { fluid, header } = Astro.props;
 </div>
 
 <style lang="scss">
-  @import '../css/bootstrap-vars.scss';
+  @import '../css/bootstrap-vars';
 
   .header {
     display: flex;

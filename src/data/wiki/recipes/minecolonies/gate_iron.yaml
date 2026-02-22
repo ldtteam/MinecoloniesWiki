@@ -1,8 +1,0 @@
-type: custom
-items:
-  - item: minecraft/iron_nugget
-    amount: 5
-output: minecolonies/gate_iron
-conditions:
-  - type: building
-    building: mechanic

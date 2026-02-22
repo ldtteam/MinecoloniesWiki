@@ -1,0 +1,31 @@
+---
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
+import VersionContent from '../../../version/VersionContent.astro';
+import ItemName from './ItemName.astro';
+
+interface Props {
+  item: string;
+  link?: boolean;
+  inline?: boolean;
+}
+
+const { item, link = true, inline = false } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions
+    .map(async (version) => {
+      const itemData = await getVersionedEntry('items', version, item);
+      if (itemData === undefined) {
+        return undefined;
+      }
+      return (
+        <VersionContent versions={[version]} inline={inline}>
+          <ItemName item={itemData} link={link} />
+        </VersionContent>
+      );
+    })
+    .filter((f) => f !== undefined)
+}

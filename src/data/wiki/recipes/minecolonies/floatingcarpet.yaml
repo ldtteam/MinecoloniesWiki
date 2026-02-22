@@ -1,8 +1,0 @@
-type: shaped
-row1:
-  item2: structurize/build_tool
-row2:
-  tag2: carpet
-row3:
-  item2: minecraft/string
-output: minecolonies/floating_carpet

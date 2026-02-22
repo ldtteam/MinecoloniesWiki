@@ -1,4 +1,4 @@
-import { z } from 'astro:content';
+import { z } from 'astro/zod';
 
 const primitives = z.enum(['string', 'boolean', 'integer', 'double']).array();
 

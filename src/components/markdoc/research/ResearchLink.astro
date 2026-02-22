@@ -1,5 +1,7 @@
 ---
-import { getEntry } from 'astro:content';
+import { getSortedVersions, getVersionedEntry } from '../../../util/version';
+import VersionContent from '../../version/VersionContent.astro';
+import ResearchLinkInternal from './ResearchLinkInternal.astro';
 
 interface Props {
   name: string;
@@ -7,10 +9,19 @@ interface Props {
 
 const { name } = Astro.props;
 
-const research = await getEntry('research', name);
-if (research === undefined) {
-  throw new Error(`Research with given id "${name}" does not exist.`);
-}
+const versions = await getSortedVersions();
 ---
 
-<a href={`/wiki/systems/research#research_${research.id}`}>{research.data.name}</a>
+{
+  versions.map(async (version) => {
+    const research = await getVersionedEntry('research', version, name);
+    if (research === undefined) {
+      throw new Error(`Research with given id "${name}" does not exist.`);
+    }
+    return (
+      <VersionContent versions={[version]}>
+        <ResearchLinkInternal research={research} />
+      </VersionContent>
+    );
+  })
+}

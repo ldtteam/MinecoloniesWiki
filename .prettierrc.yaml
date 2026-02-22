@@ -4,11 +4,14 @@ trailingComma: none
 arrowParens: always
 endOfLine: lf
 useTabs: false
+tabWidth: 2
 printWidth: 120
 
 plugins:
-  - 'prettier-plugin-astro'
+  - prettier-plugin-astro
+  - prettier-plugin-yaml
+
 overrides:
   - files: '*.astro'
     options:
-      parser: 'astro'
+      parser: astro

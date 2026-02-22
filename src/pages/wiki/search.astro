@@ -1,7 +1,8 @@
 ---
-import Meta from '@components/Meta.astro';
-import Layout from '@layouts/Default.astro';
 import { Icon } from 'astro-icon/components';
+
+import Meta from '../../components/Meta.astro';
+import Layout from '../../layouts/Default.astro';
 ---
 
 <Layout title="Search" titleAffix="MineColonies Wiki">
@@ -110,8 +111,7 @@ import { Icon } from 'astro-icon/components';
 </script>
 
 <style lang="scss">
-  @import '../../css/bootstrap-vars.scss';
-  @import '../../../node_modules/bootstrap/scss/forms/_form-control.scss';
+  @import '../../css/bootstrap-vars ';
 
   :global(.card-image) {
     width: 100px !important;

@@ -1,5 +1,7 @@
-import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
+import { z } from 'astro/zod';
+import { type CollectionEntry, type CollectionKey, type DataEntryMap, getCollection, getEntry } from 'astro:content';
 
+import type { versionedObjectSchema } from '../schemas/version-object';
 import { isFullEntry, type PartialCollectionEntry } from './util';
 
 export interface DataForVersions<T> {
@@ -11,6 +13,10 @@ export interface VersionedResult<T> {
   highestValue: T;
   values: DataForVersions<T>[];
 }
+
+export type CollectionKeyWithVersion = {
+  [K in CollectionKey]: DataEntryMap[K][string]['data'] extends z.infer<typeof versionedObjectSchema> ? K : never;
+}[CollectionKey];
 
 export async function isVersionHigherOrSame(
   version1: PartialCollectionEntry<'versions'>,
@@ -30,4 +36,17 @@ export async function getSortedVersions(): Promise<CollectionEntry<'versions'>[]
 export async function getNewestVersion(): Promise<CollectionEntry<'versions'>> {
   const results = (await getSortedVersions()).filter((f) => f.data.supported);
   return results[0];
+}
+
+export function getVersionCollectionId(id: string, version: number | CollectionEntry<'versions'>['data']) {
+  return typeof version === 'number' ? `${version}_${id}` : `${version.order}_${id}`;
+}
+
+export async function getVersionedEntry<C extends CollectionKeyWithVersion>(
+  collection: C,
+  version: PartialCollectionEntry<'versions'>,
+  id: string
+) {
+  const versionData = isFullEntry(version) ? version : await getEntry(version);
+  return getEntry(collection, getVersionCollectionId(id, versionData.data));
 }

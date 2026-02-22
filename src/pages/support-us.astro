@@ -1,11 +1,12 @@
 ---
-import SponsorRow from '@components/SponsorRow.astro';
-import SupporterRow from '@components/SupporterRow.astro';
-import Banner from '@components/ui/Banner.astro';
-import Card from '@components/ui/Card.astro';
-import SocialBanner from '@components/ui/SocialBanner.astro';
-import Layout from '@layouts/Default.astro';
 import { getCollection } from 'astro:content';
+
+import Banner from '../components/core/Banner.astro';
+import Card from '../components/core/Card.astro';
+import SocialBanner from '../components/core/SocialBanner.astro';
+import SponsorRow from '../components/SponsorRow.astro';
+import SupporterRow from '../components/SupporterRow.astro';
+import Layout from '../layouts/Default.astro';
 
 const sponsors = await getCollection('sponsors');
 const supporters = await getCollection('supporters');
@@ -49,7 +50,7 @@ const supporters = await getCollection('supporters');
 </Layout>
 
 <style lang="scss">
-  @import '../css/bootstrap-vars.scss';
+  @import '../css/bootstrap-vars';
 
   .socials-grid {
     display: grid;

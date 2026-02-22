@@ -1,7 +1,7 @@
 ---
-import Social from '@components/markdoc/util/Social.astro';
-import Banner from '@components/ui/Banner.astro';
-import Layout from '@layouts/Default.astro';
+import Banner from '../components/core/Banner.astro';
+import Social from '../components/markdoc/util/Social.astro';
+import Layout from '../layouts/Default.astro';
 export const screenshots: number[] = [...Array(32)];
 ---
 
@@ -68,7 +68,7 @@ export const screenshots: number[] = [...Array(32)];
 </Layout>
 
 <style lang="scss">
-  @import '../css/bootstrap-vars.scss';
+  @import '../css/bootstrap-vars';
 
   .screenshots {
     display: grid;

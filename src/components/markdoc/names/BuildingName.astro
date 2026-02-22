@@ -1,7 +1,8 @@
 ---
-import BuildingNameInternal from '@components/wiki/names/BuildingName.astro';
 import { getEntry } from 'astro:content';
-import type { MarkdocBuildingComponent } from 'src/markdoc/buildings';
+
+import type { MarkdocBuildingComponent } from '../../../markdoc/buildings';
+import BuildingNameInternal from '../../wiki/names/BuildingName.astro';
 
 interface Props extends MarkdocBuildingComponent {
   plural?: boolean;

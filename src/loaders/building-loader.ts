@@ -1,14 +1,13 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
 import { parseFrontmatter } from '@astrojs/markdown-remark';
-import fs from 'fs/promises';
-import path from 'path';
 
 export async function buildingLoader() {
   const values = [];
 
   const baseDir = 'src/content/wiki/buildings';
   const allFiles = await fs.readdir(baseDir, {
-    encoding: 'utf-8',
-    recursive: false,
     withFileTypes: true
   });
   const buildings = await Promise.all(

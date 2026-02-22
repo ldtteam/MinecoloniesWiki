@@ -1,8 +1,9 @@
 import type { RemarkPlugin } from '@astrojs/markdown-remark';
-import { getOverrideValues } from '@utils/override';
 import { type CollectionEntry, getEntry } from 'astro:content';
 import type { TextDirective } from 'mdast-util-directive';
 import { visit } from 'unist-util-visit';
+
+import { getOverrideValues } from '../../util//override';
 
 async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], node: TextDirective) {
   const data = node.data || (node.data = {});

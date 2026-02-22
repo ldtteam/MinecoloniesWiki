@@ -77,3 +77,12 @@ export function formatForgeString(format: string, ...args: string[]) {
     }
   });
 }
+
+/**
+ * Turns a string into its kebab-case variant.
+ * @param string the input string.
+ * @returns the output string formatted in kebab-case.
+ */
+export function toKebabCase(string: string) {
+  return string.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? '-' : '') + $.toLowerCase());
+}

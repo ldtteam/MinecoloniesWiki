@@ -7,10 +7,24 @@ interface Props {
 
 const format = Astro.props.format;
 
-const trees = await getCollection('research_tree');
+const allTrees = await getCollection('research_tree');
+
+const treesByName = new Map<string, typeof allTrees>();
+allTrees.forEach((tree) => {
+  const baseName = tree.id.replace(/^[^_]+_/, '');
+  if (!treesByName.has(baseName)) {
+    treesByName.set(baseName, []);
+  }
+  const group = treesByName.get(baseName);
+  if (group) {
+    group.push(tree);
+  }
+});
+
+const uniqueTrees = Array.from(treesByName.values()).map((trees) => trees[0]);
 
 function getTreeJoin() {
-  const names = trees.map((tree) => `<b>${tree.data.name}</b>`);
+  const names = uniqueTrees.map((tree) => `<b>${tree.data.name}</b>`);
   return names.slice(0, -1).join(', ') + ' and ' + names.slice(-1);
 }
 ---
@@ -19,7 +33,7 @@ function getTreeJoin() {
 {
   format === 'list' && (
     <ul>
-      {trees.map((tree) => (
+      {uniqueTrees.map((tree) => (
         <li>
           <a href={`#${tree.id}`}>{tree.data.name}</a>
         </li>

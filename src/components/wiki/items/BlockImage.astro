@@ -1,0 +1,100 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import fs from 'fs/promises';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  alt?: string;
+  size: number;
+  rotation?: number;
+  class?: string;
+}
+
+const { item, alt, size, rotation, class: className } = Astro.props;
+
+async function getBlockImageId(
+  blockStatePath: string,
+  blockStateInput?: Record<string, string>
+): Promise<string | undefined> {
+  try {
+    const data = await fs.readFile(blockStatePath, 'utf-8');
+    const blockState = JSON.parse(data);
+
+    if (!blockStateInput || Object.keys(blockStateInput).length === 0) {
+      return blockState.blockstates?.[0]?.imageid;
+    }
+
+    for (const state of blockState.blockstates) {
+      const stateValues: Record<string, string> = {};
+      for (const v of state.values) {
+        stateValues[v.property.toLowerCase()] = v.value.toLowerCase();
+      }
+
+      let matches = true;
+      for (const [key, value] of Object.entries(blockStateInput)) {
+        if (stateValues[key.toLowerCase()] !== value.toLowerCase()) {
+          matches = false;
+          break;
+        }
+      }
+
+      if (matches) {
+        return state.imageid;
+      }
+    }
+
+    return blockState.blockstates?.[0]?.imageid;
+  } catch {
+    return undefined;
+  }
+}
+
+const version = await getEntry(item.data.version);
+const blockId = item.data.blockId;
+
+if (!blockId) {
+  throw new Error(`BlockImage requires an item with a blockId, but ${item.data.name} has none`);
+}
+
+const [namespace, ...blockPath] = blockId.split(':');
+
+const blockStatePath = `./generator/versions/${version.data.submodule}/output/block_states/${namespace}/${blockPath.join('/')}.json`;
+
+const blockStateInput: Record<string, string> = {};
+if (rotation !== undefined) {
+  const facingMap: Record<number, string> = {
+    0: 'south',
+    90: 'west',
+    180: 'north',
+    270: 'east'
+  };
+  const facing = facingMap[rotation % 360];
+  if (facing) {
+    blockStateInput['facing'] = facing;
+  }
+}
+
+const imageId = await getBlockImageId(blockStatePath, blockStateInput);
+const src = imageId
+  ? `/images/wiki/blocks/${version.data.submodule}/${namespace}/${blockPath.join('/')}/${imageId}.png`
+  : undefined;
+
+if (!src) {
+  console.warn(`Block state not found for: ${blockId}`);
+}
+---
+
+{
+  src && (
+    <img
+      src={src}
+      alt={alt || item.data.name}
+      loading="lazy"
+      decoding="async"
+      width={size}
+      height={size}
+      class={className}
+    />
+  )
+}

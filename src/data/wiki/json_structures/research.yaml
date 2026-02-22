@@ -1,5 +1,5 @@
 name: Research
-path: "<namespace>/researches/<branch>/<research-id>.json"
+path: <namespace>/researches/<branch>/<research-id>.json
 fields:
   - key: name
     type: primitive
@@ -129,14 +129,14 @@ fields:
         primitive:
           - string
         description: A specific research by Resource Location that must be completed to unlock this research. Unlike, `parentResearch`, can be on another branch, or of any research level.
-        example: "minecolonies:civilian/outposts"
+        example: minecolonies:civilian/outposts
         optional: true
   - key: effects
     type: array
     description: Contains all of the effects of the research. Can be empty, either for research with no effects or for research that only unlocks crafterrecipes, or contain one or more objects.
     optional: true
     children:
-      - key: "<effect key>"
+      - key: <effect key>
         type: primitive
         primitive:
           - integer
@@ -148,6 +148,9 @@ fields:
     primitive:
       - string
       - boolean
-    description: "Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world.\n - String: Removes any research matching the Resource Location in that String.\n - Boolean (true): Removes research matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs."
+    description: |-
+      Removes a research branch, and all research on that branch, regardless of the source. May cause data loss if applied to an existing world.
+       - String: Removes any research matching the Resource Location in that String.
+       - Boolean (true): Removes research matching the Resource Location of the JSON itself; this form is discouraged for cases where other data packs may apply, as it may be conflicted by those other data packs.
     example: true
     optional: true

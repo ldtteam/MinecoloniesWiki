@@ -1,14 +1,16 @@
 import archiver from 'archiver';
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+type CitizenNamesPack = CollectionEntry<'citizen_name_packs'>['data'] & { id: string };
 
 const citizenNamePacks = await getCollection('citizen_name_packs');
 
-function packMcMetaTemplate(name: string) {
+function packMcMetaTemplate(name: string, packFormat: number) {
   return JSON.stringify(
     {
       pack: {
-        pack_format: 9,
+        pack_format: packFormat,
         description: `${name} names for Minecolonies citizens.`
       }
     },
@@ -18,15 +20,15 @@ function packMcMetaTemplate(name: string) {
 }
 
 export function getStaticPaths() {
-  return citizenNamePacks.map((citizenNamePack) => ({
+  return citizenNamePacks.map((pack) => ({
     params: {
-      slug: citizenNamePack.data.filename
+      slug: pack.data.filename
     }
   }));
 }
 
 export const GET: APIRoute = async ({ params }) => {
-  const data = citizenNamePacks.find((citizenNamePack) => citizenNamePack.data.filename === params.slug);
+  const data = getPackFromSlug(params.slug ?? '');
   if (data === undefined) {
     throw new Error(`Citizen name pack with slug '${params.slug}' does not exist.`);
   }
@@ -44,14 +46,18 @@ export const GET: APIRoute = async ({ params }) => {
 
     archive.on('error', reject);
 
-    archive.append(packMcMetaTemplate(data.data.name), {
+    archive.append(packMcMetaTemplate(data.name, data.packFormat), {
       name: 'pack.mcmeta'
     });
 
-    archive.append(JSON.stringify(data.data.data, undefined, 4), {
+    archive.append(JSON.stringify(data.data, undefined, 4), {
       name: 'data/minecolonies/citizennames/default.json'
     });
 
     archive.finalize();
   });
 };
+
+function getPackFromSlug(slug: string): CitizenNamesPack | undefined {
+  return citizenNamePacks.map((pack) => ({ ...pack.data, id: pack.id })).find((pack) => pack.filename === slug);
+}

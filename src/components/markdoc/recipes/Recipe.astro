@@ -1,25 +1,29 @@
 ---
-import type { PartialCollectionEntry } from '@utils/util';
-import { getEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
-import CustomRecipe from './CustomRecipe.astro';
+import type { RecipeSchema } from '../../../schemas/item';
+import CrafterRecipe from './CrafterRecipe.astro';
 import RecipeConditions from './RecipeConditions.astro';
 import ShapedRecipe from './ShapedRecipe.astro';
+import ShapelessRecipe from './ShapelessRecipe.astro';
+import SmeltingRecipe from './SmeltingRecipe.astro';
 
 interface Props {
-  recipe: PartialCollectionEntry<'recipes'>;
+  recipe: RecipeSchema;
+  version: CollectionEntry<'versions'>;
 }
 
-const { recipe } = Astro.props;
-const recipeData = await getEntry(recipe);
+const { recipe, version } = Astro.props;
 ---
 
 <div class="recipe-box">
-  {recipeData.data.type === 'shaped' && <ShapedRecipe recipe={recipeData.data} />}
-  {recipeData.data.type === 'custom' && <CustomRecipe recipe={recipeData.data} />}
+  {recipe.type === 'shaped' && <ShapedRecipe recipe={recipe} version={version} />}
+  {recipe.type === 'shapeless' && <ShapelessRecipe recipe={recipe} version={version} />}
+  {recipe.type === 'crafter' && <CrafterRecipe recipe={recipe} version={version} />}
+  {recipe.type === 'smelting' && <SmeltingRecipe recipe={recipe} version={version} />}
 </div>
 
-<RecipeConditions conditions={recipeData.data.conditions} />
+<RecipeConditions conditions={recipe.conditions} />
 
 <style>
   .recipe-box {

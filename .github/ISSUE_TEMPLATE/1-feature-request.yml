@@ -1,0 +1,40 @@
+name: '[📝] 1. Feature Request'
+description: If you would like something new implemented on the wiki
+type: feature
+assignees:
+  - Thodor12
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: Affected version(s)
+      description: 'Which version(s) are affected by this bug? (Hint: View the version selector in the top-right)'
+      default: 16
+      multiple: true
+      options:
+        - '1.18'
+        - 1.18.1
+        - 1.18.2
+        - '1.19'
+        - 1.19.1
+        - 1.19.2
+        - 1.19.3
+        - 1.19.4
+        - '1.20'
+        - 1.20.1
+        - 1.20.2
+        - 1.20.3
+        - 1.20.4
+        - 1.20.5
+        - 1.20.6
+        - '1.21'
+        - 1.21.1
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Feature Request
+      description: Describe your feature request
+    validations:
+      required: true

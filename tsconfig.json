@@ -3,15 +3,8 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noErrorTruncation": true,
-    "verbatimModuleSyntax": true,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@assets/*": ["src/assets/*"],
-      "@utils/*": ["src/util/*"]
-    }
+    "verbatimModuleSyntax": true
   },
-  "include": [".astro/types.d.ts", "**/*"],
+  "include": [".astro/types.d.ts", "**/*.ts", "**/*.astro"],
   "exclude": ["dist", "minecolonies"]
 }

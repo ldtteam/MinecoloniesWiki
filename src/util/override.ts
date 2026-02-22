@@ -1,12 +1,13 @@
-import type {
-  objectInputType,
-  objectOutputType,
-  UnknownKeysParam,
-  ZodObject,
-  ZodRawShape,
-  ZodTypeAny
+import {
+  type objectInputType,
+  type objectOutputType,
+  type UnknownKeysParam,
+  z,
+  type ZodObject,
+  type ZodRawShape,
+  type ZodTypeAny
 } from 'astro/zod';
-import { type CollectionEntry, getEntry, reference, z } from 'astro:content';
+import { type CollectionEntry, getEntry, reference } from 'astro:content';
 
 import type { DeepPartial, PartialCollectionEntry } from './util';
 import { getSortedVersions, type VersionedResult } from './version';

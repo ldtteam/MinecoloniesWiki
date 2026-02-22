@@ -1,7 +1,7 @@
 ---
-import Banner from '@components/ui/Banner.astro';
-import SocialBanner from '@components/ui/SocialBanner.astro';
-import Layout from '@layouts/Default.astro';
+import Banner from '../components/core/Banner.astro';
+import SocialBanner from '../components/core/SocialBanner.astro';
+import Layout from '../layouts/Default.astro';
 ---
 
 <Layout title="Home" showHeader={false}>
@@ -67,7 +67,7 @@ import Layout from '@layouts/Default.astro';
 </Layout>
 
 <style lang="scss">
-  @import '../css/bootstrap-vars.scss';
+  @import '../css/bootstrap-vars';
 
   * {
     color: white;
