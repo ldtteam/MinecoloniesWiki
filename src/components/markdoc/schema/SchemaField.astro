@@ -20,21 +20,24 @@ if (field.type === 'array' || field.type === 'array_primitive') {
   key = field.key;
 }
 
-let type: string;
-if (field.type === 'primitive') {
-  type = field.primitive.map((type) => toTitleCase(type)).join(', ');
-} else if (field.type === 'object') {
-  type = 'Object';
-} else if (field.type === 'array') {
-  type = 'Array (Objects)';
-} else {
-  type = `Array (${field.primitive.map((type) => toTitleCase(type) + 's').join(', ')})`;
-}
-
+let allowedValuesPrefix: string | undefined;
+let allowedValues: string[];
 let def: string | number | boolean | undefined;
 if (field.type === 'primitive') {
+  allowedValuesPrefix = 'Any of:';
+  allowedValues = field.primitive.map(toTitleCase);
   def = field.default;
-} else if (field.type === 'array_primitive') {
+} else if (field.type === 'enum') {
+  allowedValuesPrefix = 'Any of:';
+  allowedValues = field.values;
+  def = field.default;
+} else if (field.type === 'object') {
+  allowedValues = [];
+} else if (field.type === 'array') {
+  allowedValues = [];
+} else {
+  allowedValuesPrefix = 'Array of:';
+  allowedValues = field.primitive.map((type) => toTitleCase(type) + 's');
   def = field.default ? `[${field.default?.join(', ')}]` : undefined;
 }
 
@@ -55,9 +58,14 @@ const description = await formatText(field.description, frontmatter);
     }
     <code>{key} {!optional && '*'}</code>
   </td>
-  <td>{type}</td>
-  <td>{def !== undefined && <code>{def.toString()}</code>}</td>
-  <td><Fragment set:html={description} /></td>
+  <td>
+    <span>{allowedValuesPrefix}</span>
+    <ul>
+      {allowedValues.map((value) => <li>{value}</li>)}
+    </ul>
+  </td>
+  <td>{def ? <code>{def.toString()}</code> : '-'}</td>
+  <td set:html={description} />
 </tr>
 
 {

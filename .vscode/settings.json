@@ -8,6 +8,7 @@
     ".gitignore": ".gitattributes, .gitmodules",
     "tsconfig.json": "eslint.config.js, .prettierrc, .prettierrc.*, prettier.config.*, .prettierignore"
   },
+  "explorer.fileNesting.expand": false,
   "prettier.useEditorConfig": false,
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "files.associations": {

@@ -18,7 +18,7 @@ export async function formatText(text: string, frontmatter: CollectionEntry<'wik
 }
 
 async function buildTree(field: AnyField, object: Record<string, unknown>) {
-  if (field.type === 'primitive' || field.type === 'array_primitive') {
+  if (field.type === 'primitive' || field.type === 'enum' || field.type === 'array_primitive') {
     object[field.key] = field.example;
   } else if (field.type === 'object') {
     const childObj: Record<string, unknown> = {};

@@ -18,13 +18,13 @@ fields:
   - key: branch
     type: primitive
     primitive:
-      - string
+      - resourcelocation
     description: A Resource Location that indicates which branch the research belongs in.
     example: minecolonies:civilian
   - key: parentResearch
     type: primitive
     primitive:
-      - string
+      - resourcelocation
     description: The Resource Location for a parent research, which must be completed before this research may be unlocked. Required for research of a level greater than 1. Must be on the same branch.
     example: minecolonies:civilian/outposts
     optional: true
@@ -85,7 +85,7 @@ fields:
       - key: item
         type: primitive
         primitive:
-          - string
+          - resourcelocation
         description: A Resource Location of an item consumed to begin the research. Multiple items are supported, though having more than 5 may display poorly on some monitors. Optionally pairs with `quantity`. Items without NBT data match any NBT variant, but do require the item to be undamaged.
         example: minecraft:book
         optional: true
@@ -127,7 +127,7 @@ fields:
       - key: research
         type: primitive
         primitive:
-          - string
+          - resourcelocation
         description: A specific research by Resource Location that must be completed to unlock this research. Unlike, `parentResearch`, can be on another branch, or of any research level.
         example: minecolonies:civilian/outposts
         optional: true
@@ -136,11 +136,17 @@ fields:
     description: Contains all of the effects of the research. Can be empty, either for research with no effects or for research that only unlocks crafterrecipes, or contain one or more objects.
     optional: true
     children:
-      - key: <effect key>
+      - key: id
+        type: primitive
+        primitive:
+          - resourcelocation
+        description: The research effect identifier as a Resource Location.
+        example: minecolonies:effects/regenerationmultiplier
+      - key: level
         type: primitive
         primitive:
           - integer
-        description: The Research Effect identifier as a Resource Location, followed by the level of the effect as an Integer. If the level exceeds the maximum level of the effect, defaults to the maximum level. If no matching effect is found, applies a default strength of 6, enough to unlock a building completely.
+        description: The strength of the research effect. If the level exceeds the maximum level of the effect, it defaults to the maximum level.
         example: 3
         default: 1
   - key: remove
