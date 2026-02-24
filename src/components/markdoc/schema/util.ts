@@ -17,21 +17,29 @@ export async function formatText(text: string, frontmatter: CollectionEntry<'wik
   return (await processor.render(text)).code;
 }
 
-async function buildTree(field: AnyField, object: Record<string, unknown>) {
+function cartesian(arrays: Record<string, unknown>[][]): Record<string, unknown>[] {
+  return arrays.reduce((acc, curr) => acc.flatMap((a) => curr.map((b) => ({ ...a, ...b }))), [{}] as Record<
+    string,
+    unknown
+  >[]);
+}
+
+function buildTree(field: AnyField): Record<string, unknown>[] {
   if (field.type === 'primitive' || field.type === 'enum' || field.type === 'array_primitive') {
-    object[field.key] = field.example;
+    return [{ [field.key]: field.example }];
   } else if (field.type === 'object') {
-    const childObj: Record<string, unknown> = {};
-    for (const child of field.children) {
-      buildTree(child, childObj);
-    }
-    object[field.key] = childObj;
+    const childResults = field.children.map(buildTree);
+    return cartesian(childResults).map((obj) => ({ [field.key]: obj }));
   } else if (field.type === 'array') {
-    const childObj: Record<string, unknown> = {};
-    for (const child of field.children) {
-      buildTree(child, childObj);
-    }
-    object[field.key] = [childObj];
+    const childResults = field.children.map(buildTree);
+    const allVariants = cartesian(childResults);
+    return [{ [field.key]: allVariants }];
+  } else {
+    return field.variants.flatMap((variant) => {
+      const variantChildResults = variant.children.map(buildTree);
+      const variantObjects = cartesian(variantChildResults);
+      return variantObjects.map((obj) => ({ [field.key]: variant.value, ...obj }));
+    });
   }
 }
 
@@ -39,11 +47,10 @@ export async function buildJson(
   schema: CollectionEntry<'json_structures'>,
   frontmatter: CollectionEntry<'wiki'>['data']
 ) {
-  const jsonObject: Record<string, unknown> = {};
+  const fieldResults = schema.data.fields.map(buildTree);
+  const examples = cartesian(fieldResults);
 
-  for (const field of schema.data.fields) {
-    buildTree(field, jsonObject);
-  }
+  const blocks = examples.map((example) => `\`\`\`json\n${JSON.stringify(example, null, 4)}\n\`\`\``).join('\n\n');
 
-  return formatText(`\`\`\`json\n${JSON.stringify(jsonObject, null, 4)}\n\`\`\``, frontmatter);
+  return formatText(blocks, frontmatter);
 }

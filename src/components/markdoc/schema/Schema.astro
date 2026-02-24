@@ -63,6 +63,16 @@ const json = await buildJson(schema, frontmatter);
   .show {
     display: initial !important;
   }
+
+  .content-table {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .content-table :global(table) {
+    width: 100%;
+    word-break: break-word;
+  }
 </style>
 
 <script>

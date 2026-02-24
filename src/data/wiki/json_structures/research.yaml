@@ -79,58 +79,107 @@ fields:
     default: false
   - key: requirements
     type: array
-    description: If true, attempts to instantly (or within 30 seconds) complete the research after it has been begun.
+    description: An array of requirements for the research before it may be researched.
+    optional: true
+    children:
+      - key: type
+        type: union
+        description: |-
+          The type of requirement, see the options below for the kind of requirements that exist.
+
+          **Note:** Custom requirements can be made available because requirements are a registry. Custom requirements will not be listed here.
+        example: minecolonies:building
+        variants:
+          - value: minecolonies:building
+            description: The requirement type for a building where one or multiple buildings can create a total of levels. For example 1 building of level 3, 1 building of level 4, will equate to a total of 7 levels.
+            children:
+              - key: building
+                type: primitive
+                primitive:
+                  - resourcelocation
+                description: The resource location of the building to refer to.
+                example: minecolonies:builder
+              - key: level
+                type: primitive
+                primitive:
+                  - integer
+                description: The target level all buildings should total.
+                example: 5
+          - value: minecolonies:single-building
+            description: The requirement type for a building where a single building must reach the given level.
+            children:
+              - key: building
+                type: primitive
+                primitive:
+                  - resourcelocation
+                description: The resource location of the building to refer to.
+                example: minecolonies:builder
+              - key: level
+                type: primitive
+                primitive:
+                  - integer
+                description: |-
+                  The target level a single building should be.
+
+                  **Note:** This should never be more than 5, because a building can never level up past level 5.
+                example: 5
+          - value: minecolonies:alternate-building
+            description: The requirement type for a building where one of several buildings can be matched against the level requirement. This works similar as `minecolonies:building`. However the total levels must not be shared between buildings.
+            children:
+              - key: alternate-buildings
+                type: array_primitive
+                primitive:
+                  - resourcelocation
+                description: The array of buildings to refer to.
+                example:
+                  - minecolonies:guardtower
+                  - minecolonies:barracks
+                  - minecolonies:barracktower
+                  - minecolonies:gatehouse
+              - key: level
+                type: primitive
+                primitive:
+                  - integer
+                description: The target level all buildings should total.
+                example: 5
+          - value: minecolonies:research
+            description: |-
+              The requirement type for requiring a different research elsewhere down the research tree.
+
+              **Note:** There is no protection against a research being out of the tree somewhere. So make sure the research can actually happen before the current research.
+            children:
+              - key: research
+                type: primitive
+                primitive:
+                  - resourcelocation
+                description: The research id to refer to.
+                example: minecolonies:citizen/outposts
+  - key: costs
+    type: array
+    description: Contains all the item costs for the research. All items must be provided by the player so that a research may be started. All cost items are "Ingredients", see https://docs.neoforged.net/docs/resources/server/recipes/ingredients/ for more information about ingredients.
     optional: true
     children:
       - key: item
         type: primitive
         primitive:
           - resourcelocation
-        description: A Resource Location of an item consumed to begin the research. Multiple items are supported, though having more than 5 may display poorly on some monitors. Optionally pairs with `quantity`. Items without NBT data match any NBT variant, but do require the item to be undamaged.
-        example: minecraft:book
+        description: The item id to refer to. Either this or `tag` has to be provided.
+        example: minecraft:stone
         optional: true
-      - key: quantity
-        type: primitive
-        primitive:
-          - integer
-        description: A number of items to be consumed. Pairs with `item`.
-        example: 16
-        default: 1
-      - key: building
-        type: primitive
-        primitive:
-          - string
-        description: A specific building that must be present in the colony. Normal building requirements combine the levels from multiple of the same building type. Optionally pairs with `level`.
-        example: library
-        optional: true
-      - key: single-building
-        type: primitive
-        primitive:
-          - string
-        description: A specific building that must be present in the colony, with at least one occurence at least at the specifed level. Optionally pairs with `level`.
-        example: library
-        optional: true
-      - key: alternate-building
-        type: primitive
-        primitive:
-          - string
-        description: A specific building to be added to the list of alternate-buildings. At least one of the alternate-buildings must be present in the colony to begin research. Optionally pairs with `level`. Acts like `building` if only one alternate-building object is present.
-        example: library
-        optional: true
-      - key: level
-        type: primitive
-        primitive:
-          - integer
-        description: Specifies a building level. Pairs with `building`, `mandatory-building`, and `alternate-building`, otherwise has no effect.
-        example: 1
-        default: 1
-      - key: research
+      - key: tag
         type: primitive
         primitive:
           - resourcelocation
-        description: A specific research by Resource Location that must be completed to unlock this research. Unlike, `parentResearch`, can be on another branch, or of any research level.
-        example: minecolonies:civilian/outposts
+        description: The tag to refer to. Either this or `item` has to be provided.
+        example: c:ores
         optional: true
+      - key: count
+        type: primitive
+        primitive:
+          - integer
+        description: How many of said `item` or `tag` to need.
+        example: 2
+        default: 1
   - key: effects
     type: array
     description: Contains all of the effects of the research. Can be empty, either for research with no effects or for research that only unlocks crafterrecipes, or contain one or more objects.
