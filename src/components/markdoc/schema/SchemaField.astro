@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 
 import { toTitleCase } from '../../../util/string';
-import { formatText } from './util';
+import { formatText, sortFields } from './util';
 
 interface Props {
   field: CollectionEntry<'json_structures'>['data']['fields'][number];
@@ -74,7 +74,9 @@ const description = await formatText(field.description, frontmatter);
 
 {
   (field.type === 'object' || field.type === 'array') &&
-    field.children.map((subField) => <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 1} />)
+    sortFields(field.children).map((subField) => (
+      <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 1} />
+    ))
 }
 
 {
@@ -96,7 +98,7 @@ const description = await formatText(field.description, frontmatter);
           <td>-</td>
           <td set:html={formatText(variant.description, frontmatter)} />
         </tr>
-        {variant.children.map((subField) => (
+        {sortFields(variant.children).map((subField) => (
           <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 2} />
         ))}
       </>

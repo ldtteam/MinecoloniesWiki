@@ -3,7 +3,7 @@ import { type CollectionEntry, getEntry } from 'astro:content';
 import { v4 as uuidv4 } from 'uuid';
 
 import SchemaField from './SchemaField.astro';
-import { buildJson } from './util';
+import { buildJson, sortFields } from './util';
 
 interface Props {
   frontmatter: CollectionEntry<'wiki'>['data'];
@@ -44,7 +44,7 @@ const json = await buildJson(schema, frontmatter);
           </tr>
         </thead>
         <tbody>
-          {schema.data.fields.map((field) => <SchemaField field={field} frontmatter={frontmatter} />)}
+          {sortFields(schema.data.fields).map((field) => <SchemaField field={field} frontmatter={frontmatter} />)}
         </tbody>
       </table>
       <span>* = Required field</span>

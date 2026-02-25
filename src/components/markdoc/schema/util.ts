@@ -5,6 +5,17 @@ import remarkDirective from 'remark-directive';
 import type { AnyField } from '../../../schemas/json_structures';
 import { buildingPlugin } from '../../../util/remark/buildings';
 
+export function sortFields<T extends AnyField>(fields: T[]): T[] {
+  return [...fields].sort((a, b) => {
+    const aOptional = a.optional || ('default' in a && a.default !== undefined);
+    const bOptional = b.optional || ('default' in b && b.default !== undefined);
+    if (aOptional !== bOptional) {
+      return aOptional ? 1 : -1;
+    }
+    return a.key.localeCompare(b.key);
+  });
+}
+
 export async function formatText(text: string, frontmatter: CollectionEntry<'wiki'>['data']) {
   const processor = await createMarkdownProcessor({
     remarkPlugins: [remarkDirective, buildingPlugin(frontmatter)],
@@ -28,10 +39,10 @@ function buildTree(field: AnyField): Record<string, unknown>[] {
   if (field.type === 'primitive' || field.type === 'enum' || field.type === 'array_primitive') {
     return [{ [field.key]: field.example }];
   } else if (field.type === 'object') {
-    const childResults = field.children.map(buildTree);
+    const childResults = sortFields(field.children).map(buildTree);
     return cartesian(childResults).map((obj) => ({ [field.key]: obj }));
   } else if (field.type === 'array') {
-    const childResults = field.children.map(buildTree);
+    const childResults = sortFields(field.children).map(buildTree);
     const allVariants = cartesian(childResults);
     return [{ [field.key]: allVariants }];
   } else {
@@ -47,7 +58,7 @@ export async function buildJson(
   schema: CollectionEntry<'json_structures'>,
   frontmatter: CollectionEntry<'wiki'>['data']
 ) {
-  const fieldResults = schema.data.fields.map(buildTree);
+  const fieldResults = sortFields(schema.data.fields).map(buildTree);
   const examples = cartesian(fieldResults);
 
   const blocks = examples.map((example) => `\`\`\`json\n${JSON.stringify(example, null, 4)}\n\`\`\``).join('\n\n');
