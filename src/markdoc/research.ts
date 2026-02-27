@@ -3,7 +3,7 @@ import { component } from '@astrojs/markdoc/config';
 import type { Tag } from './types';
 
 export const research_trees: Tag = {
-  render: component('./src/components/markdoc/research/ResearchTrees.astro'),
+  render: component('./src/components/wiki/research/MarkdocResearchTrees.astro'),
   selfClosing: true,
   attributes: {
     format: {
@@ -16,12 +16,12 @@ export const research_trees: Tag = {
 };
 
 export const research_list: Tag = {
-  render: component('./src/components/markdoc/research/ResearchList.astro'),
+  render: component('./src/components/wiki/research/MarkdocResearchList.astro'),
   selfClosing: true
 };
 
 export const research_link: Tag = {
-  render: component('./src/components/markdoc/research/ResearchLink.astro'),
+  render: component('./src/components/wiki/research/names/MarkdocResearchName.astro'),
   selfClosing: true,
   attributes: {
     name: {

@@ -1,0 +1,54 @@
+---
+import RegularLogo from '../../../assets/images/minecolonies_logo_medium.png';
+import WikiLogo from '../../../assets/images/minecolonies_logo_wiki_medium.png';
+
+interface Props {
+  isWiki: boolean;
+  title: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+}
+
+const { isWiki, title, description, image, imageAlt, imageWidth, imageHeight } = Astro.props;
+
+const defaultImage = isWiki ? WikiLogo : RegularLogo;
+
+const finalImage = image ?? defaultImage.src;
+const finalImageAlt = (imageAlt ?? isWiki) ? 'Minecolonies Wiki Logo' : 'Minecolonies Logo';
+const finalImageWidth = imageWidth ?? defaultImage.width;
+const finalImageHeight = imageHeight ?? defaultImage.height;
+
+const desc =
+  description ??
+  'Minecolonies is a town building mod that allows you to create your own thriving Colony within Minecraft!';
+---
+
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+<!-- SEO tags -->
+<meta charset="utf-8" />
+<meta name="description" content={desc} />
+<meta
+  name="keywords"
+  content="minecolonies,minecraft,minecraft mod,minecraft schematics,schematics minecraft,minecraft buildings,minecraft forge,minecraft server,minecraft mods,town building,minecraft colony,minecraft colonies,colony,colonies"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="theme-color" content="#4715A7" />
+<meta name="msapplication-TileColor" content="#da532c" />
+
+<!-- Facebook Meta Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={desc} />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:site_name" content={isWiki ? 'Minecolonies Wiki' : 'Minecolonies'} />
+<meta property="og:image" content={new URL(finalImage, Astro.url.href)} />
+<meta property="og:image:alt" content={finalImageAlt} />
+{finalImageWidth && <meta property="og:image:width" content={finalImageWidth.toString()} />}
+{finalImageHeight && <meta property="og:image:height" content={finalImageHeight.toString()} />}
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:card" content="summary" />

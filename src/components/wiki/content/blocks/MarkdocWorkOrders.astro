@@ -1,0 +1,14 @@
+---
+import MarkdocBuildingName from '../../building/names/MarkdocBuildingName.astro';
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { BaseBuildingContentBlockProps } from '../types';
+
+type Props = BaseBuildingContentBlockProps;
+---
+
+<BuildingContentBlock {...Astro.props} header="workorders" imageKey="workorders" imageAlt="Work orders">
+  <p>
+    This page shows you what work orders have been assigned to this <MarkdocBuildingName {...Astro.props} />, along with
+    the distance away from the building. You can assign or cancel work orders here.
+  </p>
+</BuildingContentBlock>
