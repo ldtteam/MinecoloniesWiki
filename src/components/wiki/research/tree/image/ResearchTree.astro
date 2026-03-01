@@ -1,0 +1,153 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+import ResearchBox from './ResearchBox.astro';
+import type { ResearchWithChildren } from './types';
+
+interface Props {
+  tree: CollectionEntry<'research_tree'>;
+}
+
+const { tree } = Astro.props;
+
+const researches = await getCollection('research', (research) => research.data.tree.id === tree.id).then((researches) =>
+  researches
+    .map<ResearchWithChildren>((m) => ({ ...m, children: [] }))
+    .toSorted((a, b) => a.data.researchLevel - b.data.researchLevel)
+);
+const researchIdMap: Record<string, ResearchWithChildren> = {};
+const researchChains: ResearchWithChildren[] = [];
+
+researches.forEach((research) => {
+  researchIdMap[research.id] = research;
+
+  if (research.data.parent) {
+    const parent = researchIdMap[research.data.parent.id];
+    parent?.children.push(research);
+  } else {
+    researchChains.push(research);
+  }
+});
+---
+
+<div class="research-tree-image-container">
+  <div class="research-tree-image-content">
+    <div class="research-tree-image-columns">
+      <p>First Column</p>
+      <p>Second Column</p>
+      <p>Third Column</p>
+      <p>Fourth Column</p>
+      <p>Fifth Column</p>
+      <p>Sixth Column</p>
+    </div>
+    {researchChains.map((researchChain) => <ResearchBox research={researchChain} />)}
+  </div>
+</div>
+
+<style lang="scss">
+  @import '../../../../../css/bootstrap-vars';
+
+  .research-tree-image-container {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .research-tree-image-columns {
+    display: flex;
+    gap: calc(3em + 2px);
+
+    * {
+      flex: 1 0 300px;
+      text-align: center;
+      font-size: $h5-font-size;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .research-tree-image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    overflow-x: auto;
+    touch-action: pan-x;
+  }
+</style>
+
+<script>
+  const listenerCleanup = new Map<Element, () => void>();
+
+  function setupPannable(viewport: Element) {
+    let isPan = false;
+
+    const onPointerMove = (ev: PointerEvent) => {
+      if (!isPan) {
+        return;
+      }
+      viewport.scrollTo(viewport.scrollLeft - ev.movementX, viewport.scrollTop - ev.movementY);
+    };
+
+    const onPointerUp = () => {
+      isPan = false;
+      document.removeEventListener('pointermove', onPointerMove);
+      document.removeEventListener('pointerup', onPointerUp);
+    };
+
+    const onPointerDown = (ev: Event) => {
+      ev.preventDefault();
+      isPan = true;
+      document.addEventListener('pointermove', onPointerMove);
+      document.addEventListener('pointerup', onPointerUp);
+    };
+
+    viewport.addEventListener('pointerdown', onPointerDown);
+
+    return () => {
+      viewport.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('pointermove', onPointerMove);
+      document.removeEventListener('pointerup', onPointerUp);
+    };
+  }
+
+  function updatePannableListeners() {
+    const body = document.body;
+    const currentVersion = body.getAttribute('data-version');
+
+    if (!currentVersion) {
+      return;
+    }
+
+    listenerCleanup.forEach((cleanup) => cleanup());
+    listenerCleanup.clear();
+
+    document.querySelectorAll<HTMLElement>('[data-versions]').forEach((versionBlock) => {
+      const versions = versionBlock.getAttribute('data-versions')?.split(',') || [];
+      if (versions.includes(currentVersion)) {
+        versionBlock.querySelectorAll('.research-tree-image-content').forEach((container) => {
+          const cleanup = setupPannable(container);
+          listenerCleanup.set(container, cleanup);
+        });
+      }
+    });
+  }
+
+  function setup() {
+    updatePannableListeners();
+
+    const observer = new MutationObserver(() => {
+      updatePannableListeners();
+    });
+
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['data-version']
+    });
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

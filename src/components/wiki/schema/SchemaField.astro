@@ -1,0 +1,113 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+
+import { formatText, sortFields } from '../../../util/schema';
+import { toTitleCase } from '../../../util/string';
+
+interface Props {
+  field: CollectionEntry<'json_structures'>['data']['fields'][number];
+  frontmatter: CollectionEntry<'wiki'>['data'];
+  depth?: number;
+}
+
+const { field, frontmatter, depth = 0 } = Astro.props;
+
+let key: string;
+if (field.type === 'array' || field.type === 'array_primitive') {
+  key = `${field.key}[]`;
+} else {
+  key = field.key;
+}
+
+let allowedValuesPrefix: string | undefined;
+let allowedValues: string[];
+let def: string | number | boolean | undefined;
+if (field.type === 'primitive') {
+  allowedValuesPrefix = 'Any of:';
+  allowedValues = field.primitive.map(toTitleCase);
+  def = field.default;
+} else if (field.type === 'enum') {
+  allowedValuesPrefix = 'Any of:';
+  allowedValues = field.values;
+  def = field.default;
+} else if (field.type === 'union') {
+  allowedValuesPrefix = 'Any of:';
+  allowedValues = field.variants.map((variant) => variant.value);
+  def = field.default;
+} else if (field.type === 'object') {
+  allowedValues = [];
+} else if (field.type === 'array') {
+  allowedValues = [];
+} else {
+  allowedValuesPrefix = 'Array of:';
+  allowedValues = field.primitive.map((type) => toTitleCase(type) + 's');
+  def = field.default ? `[${field.default?.join(', ')}]` : undefined;
+}
+
+const optional = def !== undefined ? true : field.optional;
+
+const description = await formatText(field.description, frontmatter);
+---
+
+<tr>
+  <td style={{ whiteSpace: 'nowrap' }}>
+    {
+      Array.from({ length: depth }, (_, i) => (
+        <Icon
+          name="material-symbols-light:subdirectory-arrow-right-rounded"
+          color={i === depth - 1 ? undefined : 'transparent'}
+        />
+      ))
+    }
+    <code>{key} {!optional && '*'}</code>
+  </td>
+  <td>
+    <span>{allowedValuesPrefix}</span>
+    <ul>
+      {allowedValues.map((value) => <li>{value}</li>)}
+    </ul>
+  </td>
+  <td>{def ? <code>{def.toString()}</code> : '-'}</td>
+  <td set:html={description} />
+</tr>
+
+{
+  (field.type === 'object' || field.type === 'array') &&
+    sortFields(field.children).map((subField) => (
+      <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 1} />
+    ))
+}
+
+{
+  field.type === 'union' &&
+    field.variants.map((variant) => (
+      <>
+        <tr>
+          <td colspan="2" style={{ whiteSpace: 'nowrap' }}>
+            {Array.from({ length: depth + 1 }, (_, i) => (
+              <Icon
+                name="material-symbols-light:subdirectory-arrow-right-rounded"
+                color={i === depth ? undefined : 'transparent'}
+              />
+            ))}
+            <code>
+              {key}: {variant.value}
+            </code>
+          </td>
+          <td>-</td>
+          <td set:html={formatText(variant.description, frontmatter)} />
+        </tr>
+        {sortFields(variant.children).map((subField) => (
+          <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 2} />
+        ))}
+      </>
+    ))
+}
+
+<style>
+  td > :global(:last-child) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+</style>

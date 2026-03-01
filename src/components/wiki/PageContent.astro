@@ -1,9 +1,9 @@
 ---
 import { type CollectionEntry, getEntry, render } from 'astro:content';
 
-import Wrapper from '../core/infobox/Wrapper.astro';
-import BuildingInfoboxAllVersions from './infobox/building/BuildingInfoboxAllVersions.astro';
-import ItemInfoboxAllVersions from './infobox/item/ItemInfoboxAllVersions.astro';
+import InfoboxWrapper from '../common/infobox/InfoboxWrapper.astro';
+import BuildingInfoboxAllVersions from './building/infobox/BuildingInfoboxAllVersions.astro';
+import ItemInfoboxAllVersions from './items/infobox/ItemInfoboxAllVersions.astro';
 
 interface Props {
   page: CollectionEntry<'wiki'>;
@@ -23,19 +23,19 @@ async function getBuildingData(id: string) {
 
 {
   page.data.type === 'building' ? (
-    <Wrapper>
+    <InfoboxWrapper>
       <Content id={page.data.id} frontmatter={page.data} />
 
       <BuildingInfoboxAllVersions building={await getBuildingData(page.data.id)} slot="infobox" />
-    </Wrapper>
+    </InfoboxWrapper>
   ) : page.data.type === 'item' && (page.data.infobox?.show ?? true) ? (
-    <Wrapper>
+    <InfoboxWrapper>
       <Content id={page.id} frontmatter={page.data} />
 
       <ItemInfoboxAllVersions id={page.data.item} slot="infobox" />
-    </Wrapper>
+    </InfoboxWrapper>
   ) : page.data.type === 'item-combined' && (page.data.infobox?.show ?? true) ? (
-    <Wrapper>
+    <InfoboxWrapper>
       <Content id={page.id} frontmatter={page.data} />
 
       <div class="grid item-infobox-container" slot="infobox" style={{ '--bs-columns': page.data.infobox?.cols ?? 2 }}>
@@ -43,7 +43,7 @@ async function getBuildingData(id: string) {
           <ItemInfoboxAllVersions id={item} expand />
         ))}
       </div>
-    </Wrapper>
+    </InfoboxWrapper>
   ) : (
     <Content id={page.id} frontmatter={page.data} />
   )

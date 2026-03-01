@@ -1,0 +1,119 @@
+---
+import { getEntries } from 'astro:content';
+import { type CollectionEntry } from 'astro:content';
+
+import type { RecipeItem } from '../../../schemas/item';
+import VersionSwiper from '../../common/version/VersionSwiper.astro';
+import ItemImage from '../images/ItemImage.astro';
+
+interface Props {
+  items: RecipeItem | undefined;
+  version: CollectionEntry<'versions'>;
+  amount?: number;
+  large?: boolean;
+}
+
+const { items, version, amount = 1, large = false } = Astro.props;
+
+const allItems = items ? await getEntries(items) : [];
+---
+
+{
+  (
+    <div class:list={['invslot', large ? 'invslot-large' : '']}>
+      <VersionSwiper
+        version={version}
+        loop={allItems.length > 1}
+        autoplay={{
+          delay: 1000
+        }}
+        effect="fade"
+        noSwiping
+        noSwipingSelector="*"
+        class="invslot-item"
+      >
+        {allItems.map((item) => (
+          <swiper-slide>
+            <div class="invslot-wrapper">
+              <ItemImage item={item} size={32} />
+            </div>
+          </swiper-slide>
+        ))}
+      </VersionSwiper>
+
+      {amount > 1 && (
+        <div class="invslot-stacksize">
+          <span>{amount}</span>
+        </div>
+      )}
+    </div>
+  )
+}
+
+<style style="scss">
+  img {
+    max-width: none;
+  }
+
+  .invslot {
+    --invslot-size: 2em;
+    display: inline-block;
+    position: relative;
+    width: var(--invslot-size);
+    height: var(--invslot-size);
+    background: #8b8b8b;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+
+    &.invslot-large {
+      --invslot-size: 3em;
+    }
+
+    &::before,
+    &::after {
+      background-color: #8b8b8b;
+      content: '';
+      height: 2px;
+      position: absolute;
+      width: 2px;
+    }
+
+    &::before {
+      bottom: -2px;
+      left: -2px;
+    }
+
+    &::after {
+      right: -2px;
+      top: -2px;
+    }
+
+    .invslot-item {
+      width: 100%;
+      height: 100%;
+    }
+
+    .invslot-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(var(--invslot-size) - 4px);
+      height: calc(var(--invslot-size) - 4px);
+    }
+
+    .invslot-stacksize {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #fff !important;
+      text-shadow: 2px 2px 0 #3f3f3f;
+      filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+      z-index: 1;
+    }
+
+    .inv-sprite {
+      width: calc(2em - 4px);
+      height: calc(2em - 4px);
+    }
+  }
+</style>

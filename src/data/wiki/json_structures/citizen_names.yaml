@@ -1,0 +1,47 @@
+name: Citizen Names
+path: <namespace>/citizennames/<citizen_name_pack_id>.json
+fields:
+  - key: male_firstname
+    type: array_primitive
+    primitive:
+      - string
+    description: The array of male first names that can be randomly picked from. The more names you have, the more possible variety.
+    example:
+      - Johathan
+      - Michael
+  - key: female_firstnames
+    type: array_primitive
+    primitive:
+      - string
+    description: The array of female first names that can be randomly picked from. The more names you have, the more possible variety.
+    example:
+      - Melissa
+      - Anna
+  - key: surnames
+    type: array_primitive
+    primitive:
+      - string
+    description: The array of last names that can be randomly picked from. The more names you have, the more possible variety.
+    example:
+      - Jones
+      - Adams
+  - key: parts
+    type: primitive
+    primitive:
+      - integer
+    description: |-
+      Possible options:
+       - **3**: Generates a name with 3 parts, a first name (picked from male or female first names), a middle initial (a random single letter), and their surname.
+       - **2**: Generates a name with 2 parts, a first name and surname.
+       - **Anything else**: Only generates a first name, do not use this option, generally recommended to use options 2 and 3. Most commonly used is 2.
+    example: 2
+  - key: order
+    type: enum
+    values:
+      - WESTERN
+      - EASTERN
+    description: |-
+      The way the names are ordered.
+       - **WESTERN**: Names are formatted along the description provided in `parts`.
+       - **EASTERN**: Last name always precedes first name, `parts` of **3** is not supported in this format.
+    example: WESTERN

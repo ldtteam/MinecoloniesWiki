@@ -1,0 +1,27 @@
+---
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
+import VersionContent from '../../../common/version/VersionContent.astro';
+import ResearchName from './ResearchName.astro';
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions.map(async (version) => {
+    const research = await getVersionedEntry('research', version, name);
+    if (research === undefined) {
+      throw new Error(`Research with given id "${name}" does not exist.`);
+    }
+    return (
+      <VersionContent versions={[version]}>
+        <ResearchName research={research} />
+      </VersionContent>
+    );
+  })
+}

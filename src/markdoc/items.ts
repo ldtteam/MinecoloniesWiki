@@ -4,7 +4,7 @@ import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
 
 export const item: Tag = {
-  render: component('./src/components/markdoc/names/items/MarkdocItem.astro'),
+  render: component('./src/components/wiki/items/names/MarkdocItem.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -16,7 +16,7 @@ export const item: Tag = {
 };
 
 export const item_page: Tag = {
-  render: component('./src/components/markdoc/names/items/MarkdocItemPage.astro'),
+  render: component('./src/components/wiki/items/names/MarkdocItemPage.astro'),
   selfClosing: true,
   attributes: {
     name: {
@@ -28,7 +28,7 @@ export const item_page: Tag = {
 };
 
 export const item_infobox: Tag = {
-  render: component('./src/components/markdoc/infobox/MarkdocItemInfobox.astro'),
+  render: component('./src/components/wiki/items/infobox/MarkdocItemInfobox.astro'),
   attributes: {
     item: {
       type: String,

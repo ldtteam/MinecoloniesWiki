@@ -1,0 +1,32 @@
+---
+import { type CollectionEntry, getEntry } from 'astro:content';
+
+import BuildingNameAllVersions from '../../../../../wiki/building/names/BuildingNameAllVersions.astro';
+
+interface Props {
+  requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'building' }>;
+}
+
+const { requirement } = Astro.props;
+
+const building = await getEntry(requirement.building);
+---
+
+{
+  requirement.single ? (
+    <>
+      <span>
+        <BuildingNameAllVersions building={building} link />
+      </span>
+      <span> level {requirement.level}</span>
+    </>
+  ) : (
+    <>
+      <span>One or multiple </span>
+      <span>
+        <BuildingNameAllVersions building={building} plural link />
+      </span>
+      <span> totaling at least {requirement.level} levels</span>
+    </>
+  )
+}

@@ -1,0 +1,107 @@
+name: Custom Visitors
+path: <namespace>/visitors/<visitor_id>.json
+fields:
+  - key: texture
+    type: primitive
+    primitive:
+      - string
+    description: Any user their UUID, you can find this through a website like https://mcuuid.net/
+    example: 1582ed22-e011-4c94-981a-aafb04a4fff2
+  - key: name
+    type: primitive
+    primitive:
+      - string
+    description: The display name of the visitor when spawned in. This name will be kept when they are hired. When omitted, a random name will be generated along your chosen visitor name pack.
+    example: _Raycoms
+    optional: true
+  - key: storylangkey
+    type: primitive
+    primitive:
+      - string
+    description: A translation key, or text, containing the background story you see when attempting to hire the visitor. When providing a language key, that language key must exist in your translation files. When making a datapack this requires an additional resource pack. When omitted, you will receive a randomized backstory.
+    example: com.minecolonies.coremod.gui.chat.visitor_id
+    optional: true
+  - key: chance
+    type: primitive
+    primitive:
+      - double
+    description: |-
+      The chance that this custom visitor will be picked.
+
+      **Note:** Try to keep this value low, because this is a global chance that is checked for every custom visitor. Making it too high can result into (near) every visitor becoming a custom visitor.
+    example: 0.001
+  - key: citizensuffix
+    type: enum
+    values:
+      - _a
+      - _b
+      - _d
+      - _w
+    description: The skin suffix to use when your visitor has been hired and turned into a citizen. Each skin has these 4 different variants that determine the skin color your citizen is going to get. When omitted, a random skin suffix will be selected.
+    example: _w
+    optional: true
+  - key: recruitcost
+    type: primitive
+    primitive:
+      - resourcelocation
+      - string
+    description: |-
+      A resource location/string that determines the item(s) it's going to cost the player to hire this custom visitor. It can be written like: `minecraft:stone` for a simple item, or `minecraft:stone{nbt_data}` for items that need extra NBT data/components present. When omitted, a random recruitment cost will be chosen.
+    example: minecraft:stone
+    optional: true
+  - key: recruitcostcount
+    type: primitive
+    primitive:
+      - integer
+    description: The count of items for the `recruitcost`. Only works if you have the `recruitcost` set. When omitted, the count will automatically scale based on the skill level of the visitor.
+    example: 2
+    default: 1
+  - key: voiceprofile
+    type: primitive
+    primitive:
+      - string
+    description: A number between **0** and **3**, it defines the accent your citizen will use when speaking their voice lines. Both males and females have 4 different voice profiles. When omitted, a random voice profile will be chosen.
+    example: 0
+    optional: true
+  - key: primaryskill
+    type: enum
+    values:
+      - Adaptability
+      - Agility
+      - Athletics
+      - Creativity
+      - Dexterity
+      - Focus
+      - Intelligence
+      - Knowledge
+      - Mana
+      - Stamina
+      - Strength
+    description: The primary skill that the citizen will automatically be greater at. The skill in question will automatically be increased with a random amount of levels between 1 and 20. When omitted, no skill will be increased.
+    example: Adaptibility
+    optional: true
+  - key: secondaryskill
+    type: enum
+    values:
+      - Adaptability
+      - Agility
+      - Athletics
+      - Creativity
+      - Dexterity
+      - Focus
+      - Intelligence
+      - Knowledge
+      - Mana
+      - Stamina
+      - Strength
+    description: Identical to `primaryskill`.
+    example: Knowledge
+    optional: true
+  - key: gender
+    type: enum
+    values:
+      - m
+      - f
+    description: The gender the visitor will have. **m** for male visitors. **f** for female visitors. When omitted, a random gender will be picked.
+    example: m
+    optional: true
