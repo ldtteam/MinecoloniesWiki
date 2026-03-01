@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+import VersionContent from '../../../components/common/version/VersionContent.astro';
+import { getSortedVersions } from '../../../util/version';
+import PackList from './PackList.astro';
+
+interface Props {
+  condition: (pack: CollectionEntry<'citizen_name_packs'>) => boolean;
+}
+
+const { condition } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions.map(async (version) => {
+    const packs = await getCollection(
+      'citizen_name_packs',
+      (pack) => pack.data.version.id === version.id && condition(pack)
+    );
+    return (
+      <VersionContent versions={[version]}>
+        <PackList packs={packs} />
+      </VersionContent>
+    );
+  })
+}

@@ -1,0 +1,116 @@
+---
+import type { Title } from '../../../util/wiki';
+import VersionContent from '../version/VersionContent.astro';
+
+interface Props {
+  id: string;
+  name: Title;
+  href?: string;
+  root?: boolean;
+  thin?: boolean;
+  exact?: boolean;
+}
+
+const { id, name, href, root = false, thin = false, exact = true } = Astro.props;
+
+const pathName = Astro.url.pathname;
+const active = exact ? pathName === href : href ? pathName.startsWith(href) : false;
+
+const dropdownId = `navbarDropdown${id}`;
+
+const hasChildren = Astro.slots.has('default');
+---
+
+{
+  typeof name === 'string' ? (
+    <li class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}>
+      {hasChildren ? (
+        <>
+          <button
+            class:list={[
+              root ? 'nav-link' : 'dropdown-item',
+              hasChildren ? 'dropdown-toggle' : '',
+              active ? 'active' : '',
+              thin ? 'py-0' : ''
+            ]}
+            id={dropdownId}
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {name}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+            <slot />
+          </ul>
+        </>
+      ) : (
+        <a class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']} href={href}>
+          {name}
+        </a>
+      )}
+    </li>
+  ) : (
+    <>
+      {name.values.map((value) => (
+        <VersionContent
+          versions={value.versions}
+          as="li"
+          class:list={[root && hasChildren ? 'dropdown' : '', !root && hasChildren ? 'dropdown-submenu' : '']}
+        >
+          {hasChildren ? (
+            <>
+              <button
+                class:list={[
+                  root ? 'nav-link' : 'dropdown-item',
+                  hasChildren ? 'dropdown-toggle' : '',
+                  active ? 'active' : '',
+                  thin ? 'py-0' : ''
+                ]}
+                id={dropdownId}
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {value.value}
+              </button>
+              <ul class="dropdown-menu" aria-labelledby={dropdownId}>
+                <slot />
+              </ul>
+            </>
+          ) : (
+            <a
+              class:list={[root ? 'nav-link' : 'dropdown-item', active ? 'active' : '', thin ? 'py-0' : '']}
+              href={href}
+            >
+              {value.value}
+            </a>
+          )}
+        </VersionContent>
+      ))}
+    </>
+  )
+}
+
+<script>
+  function onLoad() {
+    document.querySelectorAll('ul.dropdown-menu [data-bs-toggle=dropdown]').forEach((elem) => {
+      elem.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (elem.parentElement?.parentElement) {
+          for (const listItem of elem.parentElement.parentElement.children) {
+            listItem.querySelector('a')?.classList.remove('show');
+            listItem.querySelector('.dropdown-menu')?.classList.remove('show');
+          }
+        }
+
+        elem.classList.add('show');
+        elem.nextElementSibling?.classList.add('show');
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', onLoad);
+</script>

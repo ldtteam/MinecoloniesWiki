@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import { getSortedVersions } from '../../../../util/version';
+import VersionContent from '../../../common/version/VersionContent.astro';
+import WorkerName from './WorkerName.astro';
+
+interface Props {
+  building: CollectionEntry<'buildings'>;
+  worker: CollectionEntry<'workers'>;
+  link?: boolean;
+  plural?: boolean;
+}
+
+const { building, worker, link = false, plural = false } = Astro.props;
+
+const versions = await getSortedVersions();
+---
+
+{
+  versions.map((version) => (
+    <VersionContent versions={[version]}>
+      <WorkerName version={version} building={building} worker={worker} link={link} plural={plural} />
+    </VersionContent>
+  ))
+}

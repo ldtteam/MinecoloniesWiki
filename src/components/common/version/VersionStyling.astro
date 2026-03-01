@@ -1,0 +1,26 @@
+---
+import * as sass from 'sass';
+
+import { getSortedVersions } from '../../../util/version';
+
+let allVersions = (await getSortedVersions())
+  .map(
+    (version) =>
+      sass.compileString(`body[data-version='${version.data.order}'] {
+        [data-versions*='${version.data.order}'] {
+          display: inline-block;
+        }
+
+        .dropdown-menu > li[data-versions*='${version.data.order}'] {
+          display: block;
+        }
+      }`).css
+  )
+  .join('\n');
+
+allVersions += `\n\n[data-versions] { 
+  display: none;
+}`;
+---
+
+<style set:html={allVersions}></style>

@@ -1,8 +1,14 @@
 import { z } from 'astro/zod';
 
-const primitives = z.enum(['string', 'boolean', 'integer', 'double']).array();
+const primitives = z.enum(['string', 'boolean', 'integer', 'double', 'resourcelocation']).array();
 
 const primitiveValue = z.union([z.string(), z.number(), z.boolean()]);
+
+const unionVariant = z.object({
+  value: z.string(),
+  description: z.string(),
+  children: z.lazy(() => allFieldTypes.array())
+});
 
 const baseFieldSchema = z.object({
   key: z.string(),
@@ -17,6 +23,20 @@ interface PrimitiveField extends BaseField {
   example: z.infer<typeof primitiveValue>;
   default?: z.infer<typeof primitiveValue>;
   primitive: z.infer<typeof primitives>;
+}
+
+interface EnumField extends BaseField {
+  type: 'enum';
+  example: string;
+  values: string[];
+  default?: string;
+}
+
+interface UnionField extends BaseField {
+  type: 'union';
+  variants: z.infer<typeof unionVariant>[];
+  example: string;
+  default?: string;
 }
 
 interface ObjectField extends BaseField {
@@ -36,13 +56,27 @@ interface ArrayPrimitiveField extends BaseField {
   primitive: z.infer<typeof primitives>;
 }
 
-export type AnyField = PrimitiveField | ObjectField | ArrayField | ArrayPrimitiveField;
+export type AnyField = PrimitiveField | EnumField | UnionField | ObjectField | ArrayField | ArrayPrimitiveField;
 
 const primitiveFieldSchema: z.ZodType<PrimitiveField> = baseFieldSchema.extend({
   type: z.literal('primitive'),
   example: primitiveValue,
   default: primitiveValue.optional(),
   primitive: primitives
+});
+
+const enumFieldSchema: z.ZodType<EnumField> = baseFieldSchema.extend({
+  type: z.literal('enum'),
+  example: z.string(),
+  values: z.string().array(),
+  default: z.string().optional()
+});
+
+const unionFieldSchema: z.ZodType<UnionField> = baseFieldSchema.extend({
+  type: z.literal('union'),
+  variants: unionVariant.array(),
+  example: z.string(),
+  default: z.string().optional()
 });
 
 const objectFieldSchema: z.ZodType<ObjectField> = baseFieldSchema.extend({
@@ -62,7 +96,14 @@ const arrayPrimitiveFieldSchema: z.ZodType<ArrayPrimitiveField> = baseFieldSchem
   primitive: primitives
 });
 
-const allFieldTypes = z.union([primitiveFieldSchema, objectFieldSchema, arrayFieldSchema, arrayPrimitiveFieldSchema]);
+const allFieldTypes = z.union([
+  primitiveFieldSchema,
+  enumFieldSchema,
+  unionFieldSchema,
+  objectFieldSchema,
+  arrayFieldSchema,
+  arrayPrimitiveFieldSchema
+]);
 
 export const jsonStructureSchema = z.object({
   name: z.string(),

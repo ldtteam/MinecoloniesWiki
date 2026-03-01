@@ -1,0 +1,259 @@
+---
+import { experimental_AstroContainer as AstroContainer } from 'astro/container';
+
+import ResearchCost from '../common/costs/ResearchCost.astro';
+import ResearchEffect from '../common/effects/ResearchEffect.astro';
+import ResearchRequirement from '../common/requirements/ResearchRequirement.astro';
+import type { ResearchWithChildren } from './types';
+
+interface Props {
+  research: ResearchWithChildren;
+}
+
+const { research } = Astro.props;
+
+let template = `<p class="fs-5 mb-0">${research.data.name}</p>`;
+if (research.data.subtitle) {
+  template += `<p class="text-secondary small">${research.data.subtitle}</p>`;
+}
+
+const container = await AstroContainer.create();
+
+if (research.data.requirements.length > 0 || research.data.costs.length > 0) {
+  template += '<p class="mb-0">Requirements</p><ul>';
+  for (const requirement of research.data.requirements) {
+    template += await container
+      .renderToString(ResearchRequirement, {
+        props: {
+          requirement
+        }
+      })
+      .then((res) => `<li>${res}</li>`);
+  }
+  for (const cost of research.data.costs) {
+    template += await container
+      .renderToString(ResearchCost, {
+        props: {
+          cost
+        }
+      })
+      .then((res) => `<li>${res}</li>`);
+  }
+  template += '</ul>';
+}
+
+if (research.data.effects.length > 0) {
+  template += '<p class="mb-0">Effects</p><ul>';
+  for (const effect of research.data.effects) {
+    template += await container
+      .renderToString(ResearchEffect, {
+        props: {
+          effect
+        }
+      })
+      .then((res) => `<li>${res}</li>`);
+  }
+  template += '</ul>';
+}
+---
+
+<div id={`research_${research.id}`} class="research-outer-wrapper">
+  <div class="research-card-line-wrapper">
+    <div class="research-card-wrapper">
+      {
+        research.data.parent && (
+          <div class="research-lines-vertical">
+            <div class="line-vertical line-vertical-top" />
+            <div class="line-vertical line-vertical-fill" />
+            <div class="line-vertical line-vertical-bottom" />
+          </div>
+        )
+      }
+      {research.data.parent && <hr class="line-horizontal" />}
+      <div class="research-card card">
+        <div class="card-body">
+          <p class="card-title" title={research.data.name}>
+            {research.data.name}
+          </p>
+          <p class="card-subtitle text-body-secondary" title={research.data.subtitle}>
+            {research.data.subtitle}&nbsp;
+          </p>
+        </div>
+        <div class="research-tooltip" set:html={template} />
+      </div>
+      {research.children.length > 0 && <div class="line-horizontal" />}
+    </div>
+    {research.data.parent && <div class="line-vertical line-vertical-overflow" />}
+  </div>
+
+  <div class="research-children-wrapper">
+    {
+      research.children
+        .toSorted((a, b) => a.data.sortOrder - b.data.sortOrder)
+        .map((child) => (
+          <div class="research-child-wrapper">
+            <Astro.self research={child} />
+          </div>
+        ))
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  @import '../../../../../css/bootstrap-vars';
+
+  .research-tooltip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    min-width: 200px;
+    max-width: 400px;
+    width: max-content;
+
+    padding: 0.5rem 0.75rem;
+    background: white;
+    color: black;
+    border: 1px solid $secondary-border-subtle;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+    text-align: start;
+    font-size: 0.875rem;
+    line-height: 1.5;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.15s ease-in-out,
+      visibility 0.15s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-bottom-color: $secondary-border-subtle;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-bottom-color: white;
+      margin-bottom: -1px;
+    }
+  }
+</style>
+
+<style lang="scss">
+  @import '../../../../../css/bootstrap-vars';
+
+  /* Positioning styles */
+  .research-outer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    // overflow-y: clip;
+    contain: layout;
+    position: relative;
+  }
+
+  .research-outer-wrapper:has(.research-card:hover) {
+    z-index: 1;
+  }
+
+  .research-card-line-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .research-children-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .research-card-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .line-horizontal {
+    width: 1.5em;
+    border: 1px solid gray;
+  }
+
+  .research-lines-vertical {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .line-vertical {
+    flex: 1;
+    border: 1px solid gray;
+  }
+
+  .line-vertical-fill {
+    flex-grow: 0;
+    flex-basis: 2px;
+  }
+
+  .line-vertical-overflow {
+    width: 2px;
+  }
+
+  /* Display styles */
+  .research-card {
+    --bs-card-spacer-y: 0.5em;
+    width: 300px;
+    margin: 0.5em 0;
+    position: relative;
+
+    .card-title,
+    .card-subtitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-title {
+      margin-bottom: 0;
+    }
+
+    .card-subtitle {
+      font-size: 0.75em;
+    }
+
+    &:hover .research-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  /* Do not touch these rules, it ensures that the correct pieces of the connector lines get hidden */
+  .research-child-wrapper:first-child
+    > .research-outer-wrapper
+    > .research-card-line-wrapper
+    > .research-card-wrapper
+    > .research-lines-vertical
+    > .line-vertical-top,
+  .research-child-wrapper:last-child
+    > .research-outer-wrapper
+    > .research-card-line-wrapper
+    > .research-card-wrapper
+    > .research-lines-vertical
+    > .line-vertical-bottom,
+  .research-child-wrapper:last-child > .research-outer-wrapper > .research-card-line-wrapper > .line-vertical-overflow {
+    visibility: hidden;
+  }
+</style>

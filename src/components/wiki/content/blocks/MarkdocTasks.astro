@@ -1,0 +1,13 @@
+---
+import MarkdocBuildingName from '../../building/names/MarkdocBuildingName.astro';
+import BuildingContentBlock from '../BuildingContentBlock.astro';
+import type { BaseBuildingContentBlockProps } from '../types';
+
+type Props = BaseBuildingContentBlockProps;
+---
+
+<BuildingContentBlock {...Astro.props} header="tasks" imageKey="tasks" imageAlt="Tasks">
+  <p>
+    This tab shows you any requests the <MarkdocBuildingName {...Astro.props} /> is working on, and where it is going.
+  </p>
+</BuildingContentBlock>

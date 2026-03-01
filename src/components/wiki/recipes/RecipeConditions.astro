@@ -1,0 +1,52 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
+
+import type { RecipeCondition } from '../../../schemas/item';
+import BuildingName from '../building/names/BuildingName.astro';
+import ResearchName from '../research/names/ResearchName.astro';
+
+interface Props {
+  version: CollectionEntry<'versions'>;
+  conditions: RecipeCondition[];
+}
+
+const { version, conditions } = Astro.props;
+---
+
+{
+  conditions.length > 0 &&
+    conditions.map(async (condition) => {
+      if (condition.type === 'building') {
+        const buildingData = await getEntry(condition.building);
+        if (condition.level) {
+          return (
+            <li>
+              Requires a <BuildingName version={version} building={buildingData} /> level {condition.level}
+            </li>
+          );
+        } else {
+          return (
+            <li>
+              Requires a <BuildingName version={version} building={buildingData} />
+            </li>
+          );
+        }
+      }
+      if (condition.type === 'research') {
+        const research = await getCollection('research', (research) =>
+          research.data.effects.map((m) => m.effect.id).includes(condition.research.id)
+        ).then((res) => res[0]);
+        if (research === undefined) {
+          return undefined;
+        }
+        return (
+          <li>
+            Requires research <ResearchName research={research} />
+          </li>
+        );
+      }
+
+      return undefined;
+    })
+}

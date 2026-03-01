@@ -2,9 +2,9 @@
 import { getCollection } from 'astro:content';
 import { getEntry } from 'astro:content';
 
-import Meta from '../../components/Meta.astro';
+import Meta from '../../components/common/core/Meta.astro';
+import PageTitleRender from '../../components/common/core/PageTitleRender.astro';
 import PageContent from '../../components/wiki/PageContent.astro';
-import PageTitleRender from '../../components/wiki/PageTitleRender.astro';
 import Layout from '../../layouts/Default.astro';
 import { getSectionRoot } from '../../util/wiki';
 import { getWikiImage, getWikiTitle } from '../../util/wiki';

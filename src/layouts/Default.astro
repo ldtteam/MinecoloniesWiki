@@ -4,10 +4,10 @@ import '../css/globals.scss';
 
 import { ClientRouter } from 'astro:transitions';
 
-import Meta from '../components/Meta.astro';
-import PageTitle from '../components/PageTitle.astro';
+import Meta from '../components/common/core/Meta.astro';
+import PageTitle from '../components/common/core/PageTitle.astro';
+import VersionStyling from '../components/common/version/VersionStyling.astro';
 import PageWrapper from '../components/PageWrapper.astro';
-import VersionStyling from '../components/version/VersionStyling.astro';
 import { getNewestVersion } from '../util/version';
 import type { Title } from '../util/wiki';
 
