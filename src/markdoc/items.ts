@@ -1,6 +1,5 @@
 import { component } from '@astrojs/markdoc/config';
 
-import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
 
 export const item: Tag = {
@@ -11,8 +10,7 @@ export const item: Tag = {
       type: String,
       required: false
     }
-  },
-  transform: injectFrontmatter
+  }
 };
 
 export const item_page: Tag = {
@@ -23,8 +21,7 @@ export const item_page: Tag = {
       type: String,
       required: false
     }
-  },
-  transform: injectFrontmatter
+  }
 };
 
 export const item_infobox: Tag = {
@@ -34,6 +31,5 @@ export const item_infobox: Tag = {
       type: String,
       required: false
     }
-  },
-  transform: injectFrontmatter
+  }
 };

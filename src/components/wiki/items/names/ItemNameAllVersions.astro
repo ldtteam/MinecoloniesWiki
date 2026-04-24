@@ -12,20 +12,24 @@ interface Props {
 const { item, link = true, inline = false } = Astro.props;
 
 const versions = await getSortedVersions();
+const entries = (
+  await Promise.all(
+    versions.map(async (version) => {
+      const itemData = await getVersionedEntry('items', version, item);
+      return itemData ? { version, itemData } : undefined;
+    })
+  )
+).filter((e) => e !== undefined);
+
+if (entries.length === 0) {
+  throw new Error(`Item ${item} does not exist in any version.`);
+}
 ---
 
 {
-  versions
-    .map(async (version) => {
-      const itemData = await getVersionedEntry('items', version, item);
-      if (itemData === undefined) {
-        return undefined;
-      }
-      return (
-        <VersionContent versions={[version]} inline={inline}>
-          <ItemName item={itemData} link={link} />
-        </VersionContent>
-      );
-    })
-    .filter((f) => f !== undefined)
+  entries.map(({ version, itemData }) => (
+    <VersionContent versions={[version]} inline={inline}>
+      <ItemName item={itemData} link={link} />
+    </VersionContent>
+  ))
 }

@@ -25,8 +25,8 @@ $color-dark: #e0dbd1;
 // Core styles
 html,
 body {
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--text-color) !important;
+  background-color: var(--background-color) !important;
 }
 
 :target {

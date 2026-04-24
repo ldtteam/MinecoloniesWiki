@@ -2,9 +2,9 @@
 import { getCollection } from 'astro:content';
 
 import VersionContent from '../../common/version/VersionContent.astro';
-import type { ResearchTabs } from './tree/common/types';
 import ResearchTreeImage from '../research/tree/image/ResearchTree.astro';
 import ResearchListTree from '../research/tree/table/ResearchTree.astro';
+import type { ResearchTabs } from './tree/common/types';
 
 const versions = await getCollection('versions');
 const allTrees = await getCollection('research_tree');

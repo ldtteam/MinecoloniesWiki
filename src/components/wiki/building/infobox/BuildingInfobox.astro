@@ -21,7 +21,7 @@ const researchEffect = (
     'research_effect',
     (effect) =>
       effect.data.type === 'building' &&
-      effect.data.building.id === building.id &&
+      effect.data.building.id === building.data.baseId &&
       effect.data.version.id === version.id
   )
 ).at(0);
@@ -36,7 +36,7 @@ const workers = building.data.workers ?? [];
 
 const blockhutItemIds =
   building.data.blockhutname === undefined
-    ? ['minecolonies/blockhut' + building.id]
+    ? ['minecolonies/blockhut' + building.data.baseId]
     : Array.isArray(building.data.blockhutname)
       ? building.data.blockhutname
       : [building.data.blockhutname];
@@ -63,7 +63,7 @@ switch (building.data.rotation ?? 0) {
 ---
 
 <Infobox class="flex-shrink-1">
-  <BuildingName slot="title" version={version} building={building} />
+  <BuildingName slot="title" building={building} />
 
   <div class="text-center">
     <swiper-container navigation slides-per-view="1" slides-per-group="1">
@@ -105,7 +105,7 @@ switch (building.data.rotation ?? 0) {
       <>
         <hr />
         <p class="m-0">
-          <b>Note:</b> you can only build a single <BuildingName version={version} building={building} />
+          <b>Note:</b> you can only build a single <BuildingName building={building} />
         </p>
       </>
     )
@@ -117,7 +117,7 @@ switch (building.data.rotation ?? 0) {
         <hr />
         {workers.map((worker, idx) => (
           <>
-            <BuildingInfoboxWorker version={version} building={building} worker={worker} />
+            <BuildingInfoboxWorker building={building} worker={worker} />
             {idx !== workers.length - 1 && <hr />}
           </>
         ))}

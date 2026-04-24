@@ -1,7 +1,7 @@
 import { type AstroMarkdocConfig, defineMarkdocConfig, Markdoc, nodes } from '@astrojs/markdoc/config';
 import shiki from '@astrojs/markdoc/shiki';
 
-import { building, contentBlocks as buildingContentBlocks } from './src/markdoc/buildings';
+import { building, building_requirements_table, contentBlocks as buildingContentBlocks } from './src/markdoc/buildings';
 import { item, item_infobox, item_page } from './src/markdoc/items';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import { schema } from './src/markdoc/schema';
@@ -33,6 +33,7 @@ function extendNodeClasses(...extraClasses: string[]): Tag['transform'] {
 const config: AstroMarkdocConfig = {
   tags: {
     building,
+    building_requirements_table,
     worker,
     workers_table,
     item,

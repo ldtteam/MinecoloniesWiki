@@ -1,17 +1,25 @@
-import {
-  type objectInputType,
-  type objectOutputType,
-  type UnknownKeysParam,
-  z,
-  type ZodObject,
-  type ZodRawShape,
-  type ZodTypeAny
-} from 'astro/zod';
+import { z, type ZodObject } from 'astro/zod';
 import { type CollectionEntry, getEntry, reference } from 'astro:content';
 
 import type { DeepPartial, PartialCollectionEntry } from './util';
 import { getSortedVersions, type VersionedResult } from './version';
-import { deepPartial } from './zod';
+
+function deepPartialValue(value: z.ZodTypeAny): z.ZodTypeAny {
+  if (value instanceof z.ZodObject) {
+    return deepPartial(value).optional();
+  } else if (value instanceof z.ZodOptional && value.def.innerType instanceof z.ZodObject) {
+    return deepPartial(value.def.innerType).optional();
+  }
+  return value.optional();
+}
+
+function deepPartial(schema: z.ZodObject<z.ZodRawShape>): z.ZodObject<z.ZodRawShape> {
+  const partialShape: Record<string, z.ZodTypeAny> = {};
+  for (const [key, value] of Object.entries(schema.shape) as [string, z.ZodTypeAny][]) {
+    partialShape[key] = deepPartialValue(value);
+  }
+  return z.object(partialShape);
+}
 
 export type Overrideable<V> = V & {
   overrides?: Array<
@@ -22,13 +30,9 @@ export type Overrideable<V> = V & {
 };
 export type OverrideableFieldGetter<V, T> = (value: Omit<V, 'overrides'>) => T | undefined;
 
-export function overrideSchema<
-  T extends ZodRawShape,
-  UnknownKeys extends UnknownKeysParam = UnknownKeysParam,
-  Catchall extends ZodTypeAny = ZodTypeAny,
-  Output = objectOutputType<T, Catchall, UnknownKeys>,
-  Input = objectInputType<T, Catchall, UnknownKeys>
->(schema: ZodObject<T, UnknownKeys, Catchall, Output, Input>) {
+export function overrideSchema<Shape extends z.core.$ZodShape, Config extends z.core.$ZodObjectConfig>(
+  schema: ZodObject<Shape, Config>
+) {
   return schema.extend({
     overrides: z
       .array(

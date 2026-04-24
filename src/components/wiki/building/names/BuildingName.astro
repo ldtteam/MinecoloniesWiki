@@ -1,18 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
-import { getOverrideValue } from '../../../../util/override';
-
 interface Props {
-  version: CollectionEntry<'versions'>;
   building: CollectionEntry<'buildings'>;
   link?: boolean;
   plural?: boolean;
 }
 
-const { version, building, link = false, plural = false } = Astro.props;
+const { building, link = false, plural = false } = Astro.props;
 
-const name = await getOverrideValue(building.data, (data) => (plural ? data.plural : data.name), version);
+const name = plural ? building.data.plural : building.data.name;
 ---
 
-{link ? <a href={`/wiki/buildings/${building.id}`}>{name}</a> : name}
+{link ? <a href={`/wiki/buildings/${building.data.baseId}`}>{name}</a> : name}

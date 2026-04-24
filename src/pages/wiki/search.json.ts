@@ -19,10 +19,7 @@ async function createSearchEntry(page: CollectionEntry<'wiki'>): Promise<SearchE
   const { Content } = await render(page);
   const container = await AstroContainer.create();
   const body = await container.renderToString(Content, {
-    props: {
-      id: page.id,
-      frontmatter: page.data
-    }
+    locals: { wikiPage: page }
   });
 
   return {
@@ -34,7 +31,7 @@ async function createSearchEntry(page: CollectionEntry<'wiki'>): Promise<SearchE
   };
 }
 
-const isBuild = true; // import.meta.env.MODE === 'production';
+const isBuild = import.meta.env.MODE === 'production';
 
 export const GET: APIRoute = async () => {
   const pageResults: SearchEntry[] = [];

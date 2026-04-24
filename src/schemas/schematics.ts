@@ -1,36 +1,58 @@
 import { z } from 'astro/zod';
 import { type CollectionEntry, type ImageFunction, reference } from 'astro:content';
 
-const schematicTypeDecoration = (image: ImageFunction) =>
-  z.object({
-    id: z.string(),
-    type: z.literal('decoration'),
-    invisible: z.boolean().default(false),
-    path: z.string(),
-    size: z.object({
-      x: z.number(),
-      y: z.number(),
-      z: z.number()
-    }),
-    images: image().array()
-  });
+import { versionedObjectSchema } from './version-object';
 
-const schematicTypeBuilding = (image: ImageFunction) =>
-  schematicTypeDecoration(image).extend({
-    type: z.literal('building'),
-    building: reference('buildings')
-  });
+const schematicTypeDecorationBase = z.object({
+  id: z.string(),
+  type: z.literal('decoration'),
+  invisible: z.boolean().default(false),
+  path: z.string(),
+  size: z.object({
+    x: z.number(),
+    y: z.number(),
+    z: z.number()
+  })
+});
+
+const schematicTypeBuildingBase = schematicTypeDecorationBase.extend({
+  type: z.literal('building'),
+  building: reference('buildings')
+});
+
+export const rawSchematicTypeDecoration = schematicTypeDecorationBase.extend({
+  images: z.string().array()
+});
+
+export const rawSchematicTypeBuilding = schematicTypeBuildingBase.extend({
+  images: z.string().array()
+});
+
+export const rawSchematicTypes = z.discriminatedUnion('type', [rawSchematicTypeDecoration, rawSchematicTypeBuilding]);
+
+export const rawSchematicPackSchema = z.object({
+  id: z.string(),
+  displayName: z.string(),
+  authors: z.string().array(),
+  schematics: rawSchematicTypes.array()
+});
+
+const schematicTypeDecoration = (image: ImageFunction) =>
+  schematicTypeDecorationBase.extend({ images: image().array() });
+
+const schematicTypeBuilding = (image: ImageFunction) => schematicTypeBuildingBase.extend({ images: image().array() });
 
 const schematicTypes = (image: ImageFunction) =>
   z.discriminatedUnion('type', [schematicTypeDecoration(image), schematicTypeBuilding(image)]);
 
 export const schematicSchema = (image: ImageFunction) =>
-  z.object({
-    id: z.string(),
-    displayName: z.string(),
-    authors: z.string().array(),
-    schematics: schematicTypes(image).array()
-  });
+  z
+    .object({
+      displayName: z.string(),
+      authors: z.string().array(),
+      schematics: schematicTypes(image).array()
+    })
+    .and(versionedObjectSchema);
 
 export const FILTER_ID_PACK = 'pack';
 export const FILTER_ID_NAME = 'name';

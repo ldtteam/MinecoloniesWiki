@@ -59,6 +59,10 @@ const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '
 <!doctype html>
 <html lang="en" transition:persist>
   <head>
+    <style is:inline transition:persist>
+      @layer bootstrap;
+    </style>
+
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

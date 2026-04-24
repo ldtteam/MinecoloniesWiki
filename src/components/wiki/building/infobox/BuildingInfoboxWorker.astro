@@ -5,17 +5,15 @@ import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 import path from 'path';
 
-import { getOverrideValue } from '../../../../util/override';
 import type { PartialCollectionEntry } from '../../../../util/util';
 import WorkerName from '../../workers/names/WorkerName.astro';
 
 interface Props {
-  version: CollectionEntry<'versions'>;
   building: CollectionEntry<'buildings'>;
   worker: PartialCollectionEntry<'workers'>;
 }
 
-const { version, building, worker } = Astro.props;
+const { building, worker } = Astro.props;
 const workerData = await getEntry(worker);
 
 function sortImages(s1: string, s2: string): number {
@@ -51,20 +49,20 @@ const importedImages = import.meta.glob<false, string, { default: ImageMetadata 
 );
 const filteredImages = await Promise.all(
   Object.entries(importedImages)
-    .filter(([key]) => key.includes('/' + worker.id + '/'))
+    .filter(([key]) => key.includes('/' + workerData.data.baseId + '/'))
     .sort(([s1], [s2]) => sortImages(s1, s2))
     .map((m) => m[1]())
 );
 
-const primaryTrait = await getOverrideValue(workerData.data, (data) => data.traits?.primary?.name, version);
-const primaryEffect = await getOverrideValue(workerData.data, (data) => data.traits?.primary?.effect, version);
-const secondaryTrait = await getOverrideValue(workerData.data, (data) => data.traits?.secondary?.name, version);
-const secondaryEffect = await getOverrideValue(workerData.data, (data) => data.traits?.secondary?.effect, version);
+const primaryTrait = workerData.data.traits?.primary?.name;
+const primaryEffect = workerData.data.traits?.primary?.effect;
+const secondaryTrait = workerData.data.traits?.secondary?.name;
+const secondaryEffect = workerData.data.traits?.secondary?.effect;
 ---
 
 <p>
   <b>Worker:</b>
-  <WorkerName slot="title" version={version} building={building} worker={workerData} />
+  <WorkerName slot="title" building={building} worker={workerData} />
 </p>
 <div class="grid mb-3" style="--bs-columns: 2; --bs-gap: 0.5rem;">
   <b>Skills:</b>

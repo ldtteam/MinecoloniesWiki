@@ -1,29 +1,16 @@
 ---
 import { type CollectionEntry } from 'astro:content';
 
-import { getOverrideValue } from '../../../../util/override';
-import VersionOverride from '../../../common/version/VersionOverride.astro';
-
 interface Props {
-  version: CollectionEntry<'versions'>;
   building: CollectionEntry<'buildings'>;
   worker: CollectionEntry<'workers'>;
   link?: boolean;
   plural?: boolean;
 }
 
-const { version, building, worker, link = false, plural = false } = Astro.props;
+const { building, worker, link = false, plural = false } = Astro.props;
 
-const name = await getOverrideValue(worker.data, (data) => (plural ? data.plural : data.name), version);
+const name = plural ? worker.data.plural : worker.data.name;
 ---
 
-{
-  link ? (
-    <a href={`/wiki/buildings/${building.id}`}>
-      {name}
-      <VersionOverride value={worker.data} fieldGetter={(v) => (plural ? v.plural : v.name)} default="" />
-    </a>
-  ) : (
-    name
-  )
-}
+{link ? <a href={`/wiki/buildings/${building.data.baseId}`}>{name}</a> : name}

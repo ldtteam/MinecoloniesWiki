@@ -7,6 +7,20 @@ description: The Archery is where your Archers in training will train to become 
 workers:
   - archer
 rotation: 270
+requirements:
+  mandatory:
+    - type: block
+      item: minecraft/target
+      note: shooting target
+    - type: block
+      item: minecraft/white_bed
+      note: per level
+    - type: block
+      item: minecraft/glowstone
+      note: archer standing position (either this or the work tag is required)
+    - type: tag
+      name: work
+      note: archer standing position (preferred over glowstone; either this or glowstone is required)
 ---
 
 The {% building /%} is where your {% worker plural=true /%} in Training will train to become {% worker /%}.

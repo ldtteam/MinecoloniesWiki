@@ -16,7 +16,7 @@ export function sortFields<T extends AnyField>(fields: T[]): T[] {
   });
 }
 
-export async function formatText(text: string, frontmatter: CollectionEntry<'wiki'>['data']) {
+export async function formatText(text: string, frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
   const processor = await createMarkdownProcessor({
     remarkPlugins: [remarkDirective, buildingPlugin(frontmatter)],
     syntaxHighlight: 'shiki',
@@ -56,7 +56,7 @@ function buildTree(field: AnyField): Record<string, unknown>[] {
 
 export async function buildJson(
   schema: CollectionEntry<'json_structures'>,
-  frontmatter: CollectionEntry<'wiki'>['data']
+  frontmatter: CollectionEntry<'wiki'>['data'] | undefined
 ) {
   const fieldResults = sortFields(schema.data.fields).map(buildTree);
   const examples = cartesian(fieldResults);

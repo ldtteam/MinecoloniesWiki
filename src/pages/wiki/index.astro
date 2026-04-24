@@ -1,41 +1,10 @@
 ---
-import { getEntry } from 'astro:content';
-
 import Meta from '../../components/common/core/Meta.astro';
 import BuildingNameAllVersions from '../../components/wiki/building/names/BuildingNameAllVersions.astro';
 import PagesOverview from '../../components/wiki/PagesOverview.astro';
 import Social from '../../components/wiki/util/MarkdocSocialLink.astro';
 import WorkerNameAllVersions from '../../components/wiki/workers/names/WorkerNameAllVersions.astro';
 import Layout from '../../layouts/Default.astro';
-
-const buildingBuilder = await getEntry({ id: 'builder', collection: 'buildings' });
-const buildingFarmer = await getEntry({ id: 'farmer', collection: 'buildings' });
-const buildingFisherman = await getEntry({ id: 'fisherman', collection: 'buildings' });
-const buildingLumberjack = await getEntry({ id: 'lumberjack', collection: 'buildings' });
-const buildingMiner = await getEntry({ id: 'miner', collection: 'buildings' });
-const buildingSmeltery = await getEntry({ id: 'smeltery', collection: 'buildings' });
-const buildingBaker = await getEntry({ id: 'baker', collection: 'buildings' });
-const buildingCook = await getEntry({ id: 'cook', collection: 'buildings' });
-const buildingCourier = await getEntry({ id: 'deliveryman', collection: 'buildings' });
-const buildingComposter = await getEntry({ id: 'composter', collection: 'buildings' });
-const buildingWarehouse = await getEntry({ id: 'warehouse', collection: 'buildings' });
-const buildingResidence = await getEntry({ id: 'residence', collection: 'buildings' });
-const buildingTownhall = await getEntry({ id: 'townhall', collection: 'buildings' });
-const buildingBarracks = await getEntry({ id: 'barracks', collection: 'buildings' });
-const buildingLibrary = await getEntry({ id: 'library', collection: 'buildings' });
-const buildingUniversity = await getEntry({ id: 'university', collection: 'buildings' });
-const buildingSchool = await getEntry({ id: 'school', collection: 'buildings' });
-
-const workerBuilder = await getEntry({ id: 'builder', collection: 'workers' });
-const workerFarmer = await getEntry({ id: 'farmer', collection: 'workers' });
-const workerFisher = await getEntry({ id: 'fisher', collection: 'workers' });
-const workerForester = await getEntry({ id: 'forester', collection: 'workers' });
-const workerMiner = await getEntry({ id: 'miner', collection: 'workers' });
-const workerSmelter = await getEntry({ id: 'smelter', collection: 'workers' });
-const workerBaker = await getEntry({ id: 'baker', collection: 'workers' });
-const workerCook = await getEntry({ id: 'cook', collection: 'workers' });
-const workerCourier = await getEntry({ id: 'courier', collection: 'workers' });
-const workerComposter = await getEntry({ id: 'composter', collection: 'workers' });
 ---
 
 <Layout title="Wiki Home" titleAffix="MineColonies Wiki" header="Welcome to the MineColonies Wiki!">
@@ -50,41 +19,54 @@ const workerComposter = await getEntry({ id: 'composter', collection: 'workers' 
   <p>The limit is your imagination!</p>
   <p>
     MineColonies features NPC workers such as <WorkerNameAllVersions
-      building={buildingBuilder}
-      worker={workerBuilder}
+      buildingBaseId="builder"
+      workerBaseId="builder"
       plural
-    />, <WorkerNameAllVersions building={buildingFarmer} worker={workerFarmer} plural />, <WorkerNameAllVersions
-      building={buildingFisherman}
-      worker={workerFisher}
+      link
+    />, <WorkerNameAllVersions buildingBaseId="farmer" workerBaseId="farmer" plural link />, <WorkerNameAllVersions
+      buildingBaseId="fisherman"
+      workerBaseId="fisher"
       plural
-    />, <WorkerNameAllVersions building={buildingLumberjack} worker={workerForester} plural />, <WorkerNameAllVersions
-      building={buildingMiner}
-      worker={workerMiner}
+      link
+    />, <WorkerNameAllVersions buildingBaseId="lumberjack" workerBaseId="forester" plural link />, <WorkerNameAllVersions
+      buildingBaseId="miner"
+      workerBaseId="miner"
       plural
-    />, <WorkerNameAllVersions building={buildingSmeltery} worker={workerSmelter} plural />, <WorkerNameAllVersions
-      building={buildingBaker}
-      worker={workerBaker}
+      link
+    />, <WorkerNameAllVersions buildingBaseId="smeltery" workerBaseId="smelter" plural link />, <WorkerNameAllVersions
+      buildingBaseId="baker"
+      workerBaseId="baker"
       plural
-    />, <WorkerNameAllVersions building={buildingCook} worker={workerCook} plural />, <WorkerNameAllVersions
-      building={buildingCourier}
-      worker={workerCourier}
+      link
+    />, <WorkerNameAllVersions buildingBaseId="cook" workerBaseId="cook" plural link />, <WorkerNameAllVersions
+      buildingBaseId="deliveryman"
+      workerBaseId="courier"
       plural
+      link
     />, five types of animal herders, <WorkerNameAllVersions
-      building={buildingComposter}
-      worker={workerComposter}
+      buildingBaseId="composter"
+      workerBaseId="composter"
       plural
+      link
     />, and many more, with even more being developed and added as the mod grows.
   </p>
   <p>
-    It also includes specialized buildings such as the <BuildingNameAllVersions building={buildingWarehouse} plural />, <BuildingNameAllVersions
-      building={buildingResidence}
-    />, <BuildingNameAllVersions building={buildingTownhall} />, <BuildingNameAllVersions
-      building={buildingBarracks}
+    It also includes specialized buildings such as the <BuildingNameAllVersions
+      buildingBaseId="warehouse"
       plural
-    />, <BuildingNameAllVersions building={buildingLibrary} plural />, <BuildingNameAllVersions
-      building={buildingUniversity}
+      link
+    />, <BuildingNameAllVersions buildingBaseId="residence" link />, <BuildingNameAllVersions
+      buildingBaseId="townhall"
+      link
+    />, <BuildingNameAllVersions buildingBaseId="barracks" plural link />, <BuildingNameAllVersions
+      buildingBaseId="library"
       plural
-    />, and even the <BuildingNameAllVersions building={buildingSchool} plural />.
+      link
+    />, <BuildingNameAllVersions buildingBaseId="university" plural link />, and even the <BuildingNameAllVersions
+      buildingBaseId="school"
+      plural
+      link
+    />.
   </p>
   <h3>
     Please note that the wiki is a work in progress and will usually refer to the latest 1.20.1 and/or 1.21.1 version of

@@ -7,6 +7,13 @@ description: The Restaurant will ensure that your citizens are well fed, make su
 workers:
   - cook
 rotation: 270
+requirements:
+  mandatory:
+    - type: block
+      item: minecraft/furnace
+    - type: tag
+      name: sit
+      note: seating positions for citizens eating at the restaurant
 overrides:
   - version: "1.20"
     name: Dining Hall

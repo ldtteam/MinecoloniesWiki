@@ -1,55 +1,22 @@
 import { z } from 'astro/zod';
-import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 
 import { getJsonFile } from '../util//files';
 import { parseResourceLocation, type ResourceLocation, resourceLocationToWikiReference } from './resourcelocation';
 
-interface WikiItemPage {
-  page?: CollectionEntry<'wiki'>;
-  item: CollectionEntry<'items'>;
-}
-
-async function extractWikiPageData(
-  page: CollectionEntry<'wiki'>,
-  item: CollectionEntry<'items'>
-): Promise<WikiItemPage | undefined> {
-  const itemData = await getEntry(item);
-  if (page.data.type === 'item' && page.data.item === itemData.data.baseId) {
-    return {
-      page,
-      item: itemData
-    };
-  } else if (page.data.type === 'item-combined') {
-    const subItem = page.data.items.find((pageItem) => pageItem === itemData.data.baseId);
-    if (subItem !== undefined) {
-      return {
-        page,
-        item: itemData
-      };
-    }
-  } else if (page.data.type === 'building' && 'minecolonies/blockhut' + page.data.id === item.id) {
-    const itemData = await getEntry('items', `minecolonies/blockhut${page.data.id}`);
-    if (itemData !== undefined) {
-      return {
-        item: itemData
-      };
-    }
-  }
-}
-
-async function getWikiPageForItem(item: CollectionEntry<'items'>): Promise<WikiItemPage | undefined> {
+async function getWikiPageForItem(item: CollectionEntry<'items'>): Promise<CollectionEntry<'wiki'> | undefined> {
   const pages = await getCollection('wiki');
-  const filteredPages = await Promise.all(pages.map((page) => extractWikiPageData(page, item))).then((res) =>
-    res.filter((f) => f !== undefined)
-  );
 
-  if (filteredPages.length > 1) {
-    throw new Error(
-      `Multiple pages refer to item '${item.id}', make sure only one page shows information for this given item.`
-    );
-  }
-
-  return filteredPages.length > 0 ? filteredPages[0] : undefined;
+  return pages.find((page) => {
+    if (page.data.type === 'item') {
+      return page.data.item === item.data.baseId;
+    } else if (page.data.type === 'item-combined') {
+      return page.data.items.includes(item.data.baseId);
+    } else if (page.data.type === 'building') {
+      return 'minecolonies/blockhut' + page.data.id === item.data.baseId;
+    }
+    return false;
+  });
 }
 
 export async function getItemLink(item: CollectionEntry<'items'>) {
@@ -57,7 +24,23 @@ export async function getItemLink(item: CollectionEntry<'items'>) {
     return `https://minecraft.wiki/${item.data.name.replace(' ', '_')}`;
   }
 
-  return await getWikiPageForItem(item).then((p) => (p?.page ? '/wiki/' + p.page.id : undefined));
+  const page = await getWikiPageForItem(item);
+  return page?.data.type !== 'building' && page !== undefined ? '/wiki/' + page.id : undefined;
+}
+
+export async function getItemLinkByBaseId(baseId: string): Promise<string | undefined> {
+  const pages = await getCollection('wiki');
+  const page = pages.find((page) => {
+    if (page.data.type === 'item') {
+      return page.data.item === baseId;
+    } else if (page.data.type === 'item-combined') {
+      return page.data.items.includes(baseId);
+    } else if (page.data.type === 'building') {
+      return 'minecolonies/blockhut' + page.data.id === baseId;
+    }
+    return false;
+  });
+  return page?.data.type !== 'building' && page !== undefined ? '/wiki/' + page.id : undefined;
 }
 
 export async function getItemsFromTag(tag: ResourceLocation, version: CollectionEntry<'versions'>['data']) {

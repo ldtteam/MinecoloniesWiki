@@ -3,15 +3,14 @@ import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 
 import Layout from '../../layouts/Default.astro';
-import { getOverrideValue } from '../../util/override';
 import { getNewestVersion } from '../../util/version';
 
-const packs = (await getCollection('schematics')).toSorted((a, b) =>
+const newestVersion = await getNewestVersion();
+
+const packs = (await getCollection('schematics', (p) => p.data.version.id === newestVersion.id)).toSorted((a, b) =>
   a.data.displayName.localeCompare(b.data.displayName)
 );
-
-const buildings = await getCollection('buildings');
-const newestVersion = await getNewestVersion();
+const buildings = await getCollection('buildings', (b) => b.data.version.id === newestVersion.id);
 ---
 
 <Layout title="Schematics" fluid columns={5}>
@@ -33,11 +32,7 @@ const newestVersion = await getNewestVersion();
       </span>
       <select id="filter-building" class="form-select">
         <option selected value="">Search for buildings...</option>
-        {
-          buildings.map(async (building) => (
-            <option value={building.id}>{await getOverrideValue(building.data, (f) => f.name, newestVersion)}</option>
-          ))
-        }
+        {buildings.map(async (building) => <option value={building.data.baseId}>{building.data.name}</option>)}
       </select>
     </div>
 
@@ -60,7 +55,12 @@ const newestVersion = await getNewestVersion();
       {
         packs.map((pack) => (
           <div class="form-check mb-3">
-            <input id={`filter-pack-${pack.id}`} type="checkbox" class="form-check-input" data-pack-id={pack.id} />
+            <input
+              id={`filter-pack-${pack.id}`}
+              type="checkbox"
+              class="form-check-input"
+              data-pack-id={pack.data.baseId}
+            />
             <label for={`filter-pack-${pack.id}`} class="form-check-label">
               {pack.data.displayName}
               <small class="text-secondary">({pack.data.authors.join(', ')})</small>

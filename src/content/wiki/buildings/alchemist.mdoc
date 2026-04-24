@@ -7,6 +7,15 @@ description: The Alchemist Laboratory is where your workers can brew potions, ha
 workers:
   - alchemist
 rotation: 90
+requirements:
+  mandatory:
+    - type: block
+      item: minecraft/brewing_stand
+    - type: block
+      item: minecraft/soul_sand
+      note: for nether wart growing
+    - type: custom
+      text: leaf blocks next to log blocks (for mistletoe harvesting)
 ---
 
 The {% building /%} is where the {% worker /%} works. The {% worker /%} brews [potions](https://minecraft.wiki/w/Potion), harvests Nether Wart and {% item name="minecolonies/mistletoe" /%}.

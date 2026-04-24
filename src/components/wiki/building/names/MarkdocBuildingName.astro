@@ -1,22 +1,15 @@
 ---
-import { getEntry } from 'astro:content';
-
-import type { MarkdocBuildingComponent } from '../../../../markdoc/buildings';
 import BuildingNameAllVersions from './BuildingNameAllVersions.astro';
 
-interface Props extends MarkdocBuildingComponent {
+interface Props {
+  name?: string;
   plural?: boolean;
 }
 
-const { frontmatter, name, plural = false } = Astro.props;
+const { name, plural = false } = Astro.props;
 
-const buildingIdFrontmatter = frontmatter?.type === 'building' ? frontmatter.id : undefined;
-
-const buildingTarget = name ?? buildingIdFrontmatter ?? '';
-const buildingData = await getEntry('buildings', buildingTarget);
-if (buildingData === undefined) {
-  throw new Error(`Building with id ${buildingTarget} does not exist.`);
-}
+const currentBuilding = Astro.locals.wikiPage?.data?.type === 'building' ? Astro.locals.wikiPage?.data.id : undefined;
+const buildingBaseId = name ?? currentBuilding ?? '';
 ---
 
-<BuildingNameAllVersions building={buildingData} link={buildingIdFrontmatter !== buildingData.id} plural={plural} />
+<BuildingNameAllVersions buildingBaseId={buildingBaseId} link={currentBuilding !== buildingBaseId} plural={plural} />

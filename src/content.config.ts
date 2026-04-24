@@ -7,7 +7,9 @@ import { citizenNamesLoader } from './loaders/citizennames-loader';
 import { configurationLoader } from './loaders/configuration-loader';
 import { itemLoader } from './loaders/item-loader';
 import { researchEffectLoader, researchLoader, researchTreesLoader } from './loaders/research-loader';
-import { buildingSchema } from './schemas/building';
+import { schematicLoader } from './loaders/schematic-loader';
+import { workerLoader } from './loaders/worker-loader';
+import { buildingBaseSchema, buildingSchema } from './schemas/building';
 import { citizenNamesPackSchema } from './schemas/citizen_names';
 import { configurationSchema } from './schemas/configuration';
 import { itemSchema } from './schemas/item';
@@ -116,7 +118,7 @@ const wikiCollection = defineCollection({
     z
       .discriminatedUnion('type', [
         regularPage(image),
-        buildingSchema.extend({ type: z.literal('building') }),
+        buildingBaseSchema.extend({ type: z.literal('building') }),
         itemPage,
         itemCombinedPage
       ])
@@ -137,12 +139,12 @@ const wikiCategories = defineCollection({
 });
 
 const buildingsCollection = defineCollection({
-  loader: buildingLoader,
+  loader: buildingLoader(),
   schema: buildingSchema
 });
 
 const workersCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/data/wiki/workers' }),
+  loader: workerLoader(),
   schema: ({ image }) => workerSchema(image)
 });
 
@@ -201,7 +203,7 @@ const jsonStructuresCollection = defineCollection({
 // |------------|
 
 const schematicsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/data/schematics' }),
+  loader: schematicLoader(),
   schema: ({ image }) => schematicSchema(image)
 });
 

@@ -1,12 +1,8 @@
 import { component } from '@astrojs/markdoc/config';
-import type { CollectionEntry } from 'astro:content';
 
-import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
 
 export interface MarkdocBuildingComponent {
-  currentPage?: string;
-  frontmatter?: CollectionEntry<'wiki'>['data'];
   name?: string;
 }
 
@@ -23,8 +19,7 @@ export const building: Tag = {
       default: false,
       required: false
     }
-  },
-  transform: injectFrontmatter
+  }
 };
 
 const defaultContentBlockAttributes: Tag['attributes'] = {
@@ -86,43 +81,36 @@ export const contentBlocks: Record<string, Tag> = {
   brewing_recipes: {
     render: component('./src/components/wiki/content/blocks/MarkdocBrewingRecipes.astro'),
     selfClosing: true,
-    attributes: craftingContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: craftingContentBlockAttributes
   },
   crafting_recipes: {
     render: component('./src/components/wiki/content/blocks/MarkdocCraftingRecipes.astro'),
     selfClosing: true,
-    attributes: craftingContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: craftingContentBlockAttributes
   },
   custom: {
     render: component('./src/components/wiki/content/blocks/MarkdocCustom.astro'),
-    attributes: customContentAttributes,
-    transform: injectFrontmatter
+    attributes: customContentAttributes
   },
   do_recipes: {
     render: component('./src/components/wiki/content/blocks/MarkdocDoRecipes.astro'),
     selfClosing: true,
-    attributes: craftingContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: craftingContentBlockAttributes
   },
   fields: {
     render: component('./src/components/wiki/content/blocks/MarkdocFields.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   fuel: {
     render: component('./src/components/wiki/content/blocks/MarkdocFuel.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   hostiles: {
     render: component('./src/components/wiki/content/blocks/MarkdocHostiles.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   item_list: {
     render: component('./src/components/wiki/content/blocks/MarkdocItemList.astro'),
@@ -133,61 +121,56 @@ export const contentBlocks: Record<string, Tag> = {
         required: false,
         default: false
       }
-    },
-    transform: injectFrontmatter
+    }
   },
   main: {
     render: component('./src/components/wiki/content/blocks/MarkdocMain.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   main_residential: {
     render: component('./src/components/wiki/content/blocks/MarkdocMainResidential.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   required_resources: {
     render: component('./src/components/wiki/content/blocks/MarkdocRequiredResources.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   settings: {
     render: component('./src/components/wiki/content/blocks/MarkdocSettings.astro'),
     selfClosing: false,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   smelting_recipes: {
     render: component('./src/components/wiki/content/blocks/MarkdocSmeltingRecipes.astro'),
     selfClosing: true,
-    attributes: craftingContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: craftingContentBlockAttributes
   },
   stock: {
     render: component('./src/components/wiki/content/blocks/MarkdocStock.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   tasks: {
     render: component('./src/components/wiki/content/blocks/MarkdocTasks.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   work_orders: {
     render: component('./src/components/wiki/content/blocks/MarkdocWorkOrders.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   },
   statistics: {
     render: component('./src/components/wiki/content/blocks/MarkdocStatistics.astro'),
     selfClosing: true,
-    attributes: defaultContentBlockAttributes,
-    transform: injectFrontmatter
+    attributes: defaultContentBlockAttributes
   }
+};
+
+export const building_requirements_table: Tag = {
+  render: component('./src/components/wiki/building/BuildingRequirementsTable.astro'),
+  selfClosing: true
 };

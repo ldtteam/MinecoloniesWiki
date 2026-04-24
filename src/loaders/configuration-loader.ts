@@ -23,7 +23,7 @@ function parseDescription(value: ConfigurationTypeValue, translations: Translati
   }
 }
 
-export function configurationLoader(): Loader {
+export function configurationLoader() {
   return {
     name: 'configuration-loader',
     schema: citizenNamesPackSchema,
@@ -84,5 +84,5 @@ export function configurationLoader(): Loader {
 
       context.logger.info(`Loaded ${context.store.keys().length} configuration files`);
     }
-  };
+  } satisfies Loader;
 }

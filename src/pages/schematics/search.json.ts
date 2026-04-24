@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import {
   FILTER_ID_BUILDING,
@@ -11,6 +11,7 @@ import {
   FILTER_ID_SIZE_Z,
   type SchematicsResponse
 } from '../../schemas/schematics';
+import { getNewestVersion } from '../../util/version';
 
 export const prerender = false;
 
@@ -25,56 +26,64 @@ export const GET: APIRoute = async ({ url }) => {
   }
 
   const allowedPacks = filters.getAll(FILTER_ID_PACK);
+  const newestVersion = await getNewestVersion();
 
-  const packs = await getCollection('schematics', (entry) => {
-    if (!allowedPacks.includes(entry.id)) {
-      return false;
-    }
+  const packs = await getCollection(
+    'schematics',
+    (entry) => entry.data.version.id === newestVersion.id && allowedPacks.includes(entry.data.baseId)
+  );
 
-    return true;
-  });
-
-  return createResponse({
-    success: true,
-    packs: packs.map((pack) => ({
+  const filteredPacks = await Promise.all(
+    packs.map(async (pack) => ({
       ...pack.data,
-      schematics: pack.data.schematics.filter((schematic) => filterSchematic(schematic, filters))
+      schematics: await filterSchematics(pack.data.schematics, filters)
     }))
-  });
+  );
+
+  return createResponse({ success: true, packs: filteredPacks });
 };
 
-function filterSchematic(
-  schematic: CollectionEntry<'schematics'>['data']['schematics'][number],
+async function filterSchematics(
+  schematics: CollectionEntry<'schematics'>['data']['schematics'],
   filters: URLSearchParams
 ) {
-  if (filters.has(FILTER_ID_NAME) && !schematic.id.includes(filters.get(FILTER_ID_NAME) ?? '')) {
-    return false;
-  }
+  const results = await Promise.all(
+    schematics.map(async (schematic) => {
+      if (filters.has(FILTER_ID_NAME) && !schematic.id.includes(filters.get(FILTER_ID_NAME) ?? '')) {
+        return null;
+      }
 
-  if (
-    filters.has(FILTER_ID_BUILDING) &&
-    !(schematic.type === 'building' && schematic.building.id === filters.get(FILTER_ID_BUILDING))
-  ) {
-    return false;
-  }
+      if (filters.has(FILTER_ID_BUILDING)) {
+        if (schematic.type !== 'building') {
+          return null;
+        }
+        const building = await getEntry(schematic.building);
+        if (building?.data.baseId !== filters.get(FILTER_ID_BUILDING)) {
+          return null;
+        }
+      }
 
-  if (filters.has(FILTER_ID_SIZE_X) && schematic.size.x > parseInt(filters.get(FILTER_ID_SIZE_X) ?? '', 10)) {
-    return false;
-  }
+      if (filters.has(FILTER_ID_SIZE_X) && schematic.size.x > parseInt(filters.get(FILTER_ID_SIZE_X) ?? '', 10)) {
+        return null;
+      }
 
-  if (filters.has(FILTER_ID_SIZE_Y) && schematic.size.y > parseInt(filters.get(FILTER_ID_SIZE_Y) ?? '', 10)) {
-    return false;
-  }
+      if (filters.has(FILTER_ID_SIZE_Y) && schematic.size.y > parseInt(filters.get(FILTER_ID_SIZE_Y) ?? '', 10)) {
+        return null;
+      }
 
-  if (filters.has(FILTER_ID_SIZE_Z) && schematic.size.z > parseInt(filters.get(FILTER_ID_SIZE_Z) ?? '', 10)) {
-    return false;
-  }
+      if (filters.has(FILTER_ID_SIZE_Z) && schematic.size.z > parseInt(filters.get(FILTER_ID_SIZE_Z) ?? '', 10)) {
+        return null;
+      }
 
-  if (filters.get(FILTER_ID_INVISIBLE) !== 'true' && schematic.invisible) {
-    return false;
-  }
+      if (filters.get(FILTER_ID_INVISIBLE) !== 'true' && schematic.invisible) {
+        return null;
+      }
 
-  return true;
+      return schematic;
+    })
+  );
+
+  return results.filter((s): s is NonNullable<typeof s> => s !== null);
 }
 
 function createResponse(content: SchematicsResponse) {

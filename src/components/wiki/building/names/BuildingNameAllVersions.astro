@@ -1,25 +1,36 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-
-import { getSortedVersions } from '../../../../util/version';
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
 import VersionContent from '../../../common/version/VersionContent.astro';
 import BuildingName from './BuildingName.astro';
 
 interface Props {
-  building: CollectionEntry<'buildings'>;
+  buildingBaseId: string;
   link?: boolean;
   plural?: boolean;
+  inline?: boolean;
 }
 
-const { building, link = false, plural = false } = Astro.props;
+const { buildingBaseId, link = false, plural = false, inline = true } = Astro.props;
 
 const versions = await getSortedVersions();
+const entries = (
+  await Promise.all(
+    versions.map(async (version) => {
+      const building = await getVersionedEntry('buildings', version, buildingBaseId);
+      return building ? { version, building } : undefined;
+    })
+  )
+).filter((e) => e !== undefined);
+
+if (entries.length === 0) {
+  throw new Error(`Building with id ${buildingBaseId} does not exist in any version.`);
+}
 ---
 
 {
-  versions.map((version) => (
-    <VersionContent versions={[version]}>
-      <BuildingName version={version} building={building} link={link} plural={plural} />
+  entries.map(({ version, building }) => (
+    <VersionContent versions={[version]} inline={inline}>
+      <BuildingName building={building} link={link} plural={plural} />
     </VersionContent>
   ))
 }

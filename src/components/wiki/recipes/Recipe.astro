@@ -23,7 +23,7 @@ const { recipe, version } = Astro.props;
   {recipe.type === 'smelting' && <SmeltingRecipe recipe={recipe} version={version} />}
 </div>
 
-<RecipeConditions version={version} conditions={recipe.conditions} />
+<RecipeConditions conditions={recipe.conditions} />
 
 <style>
   .recipe-box {

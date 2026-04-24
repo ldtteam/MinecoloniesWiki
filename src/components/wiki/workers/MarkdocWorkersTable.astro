@@ -1,9 +1,11 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 
+import { getNewestVersion } from '../../../util/version';
 import WorkerNameAllVersions from './names/WorkerNameAllVersions.astro';
 
-const workers = await getCollection('workers');
+const newestVersion = await getNewestVersion();
+const workers = await getCollection('workers', (w) => w.data.version.id === newestVersion.id);
 ---
 
 <table class="table table-hover">
@@ -23,7 +25,7 @@ const workers = await getCollection('workers');
         return (
           <tr>
             <td>
-              <WorkerNameAllVersions building={building} worker={worker} />
+              <WorkerNameAllVersions buildingBaseId={building.data.baseId} workerBaseId={worker.data.baseId} />
             </td>
             <td>{worker.data.traits.primary?.name ?? '-'}</td>
             <td>{worker.data.traits.primary?.effect ?? '-'}</td>

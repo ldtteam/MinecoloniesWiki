@@ -1,16 +1,16 @@
 ---
-import { type CollectionEntry, getEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 import { v4 as uuidv4 } from 'uuid';
 
 import { buildJson, sortFields } from '../../../util/schema';
 import SchemaField from './SchemaField.astro';
 
 interface Props {
-  frontmatter: CollectionEntry<'wiki'>['data'];
   name: string;
 }
 
-const { frontmatter, name: schemaName } = Astro.props;
+const { name: schemaName } = Astro.props;
+const frontmatter = Astro.locals.wikiPage?.data;
 
 const schema = await getEntry('json_structures', schemaName);
 if (schema === undefined) {
@@ -44,7 +44,7 @@ const json = await buildJson(schema, frontmatter);
           </tr>
         </thead>
         <tbody>
-          {sortFields(schema.data.fields).map((field) => <SchemaField field={field} frontmatter={frontmatter} />)}
+          {sortFields(schema.data.fields).map((field) => <SchemaField field={field} />)}
         </tbody>
       </table>
       <span>* = Required field</span>

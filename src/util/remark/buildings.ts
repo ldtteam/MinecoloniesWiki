@@ -1,45 +1,57 @@
 import type { RemarkPlugin } from '@astrojs/markdown-remark';
-import { type CollectionEntry, getEntry } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 import type { TextDirective } from 'mdast-util-directive';
 import { visit } from 'unist-util-visit';
 
-import { getOverrideValues } from '../../util//override';
+import { getSortedVersions } from '../../util/version';
 
-async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'], node: TextDirective) {
+async function processBuilding(frontmatter: CollectionEntry<'wiki'>['data'] | undefined, node: TextDirective) {
   const data = node.data || (node.data = {});
   const attributes = node.attributes || {};
-  const name = attributes.name ?? '';
+  const baseId = attributes.name ?? '';
   const plural = Boolean(attributes.plural ?? false);
 
-  const buildingData = await getEntry('buildings', name);
-  if (buildingData === undefined) {
-    throw new Error(`Building with id ${name} does not exist.`);
+  const versions = await getSortedVersions();
+  const allVersionedBuildings = await getCollection('buildings', (b) => b.data.baseId === baseId);
+
+  if (allVersionedBuildings.length === 0) {
+    throw new Error(`Building with id ${baseId} does not exist.`);
   }
 
-  const namePerVersion = await getOverrideValues(buildingData.data, (v) => (plural ? v.plural : v.name), '');
-
-  data.hName = frontmatter.type !== 'building' || frontmatter.id !== buildingData.id ? 'a' : 'span';
+  data.hName = frontmatter?.type !== 'building' || frontmatter.id !== baseId ? 'a' : 'span';
   if (data.hName === 'a') {
     data.hProperties = {
-      href: '/wiki/buildings/' + buildingData.id
+      href: '/wiki/buildings/' + baseId
     };
   }
-  data.hChildren = namePerVersion.values.map((buildingName) => ({
+
+  const namesByValue = new Map<string, CollectionEntry<'versions'>[]>();
+  for (const version of versions) {
+    const entry = allVersionedBuildings.find((b) => b.data.version.id === version.id);
+    if (entry === undefined) {
+      continue;
+    }
+    const value = plural ? entry.data.plural : entry.data.name;
+    if (!namesByValue.has(value)) {
+      namesByValue.set(value, []);
+    }
+    const versions = namesByValue.get(value);
+    if (versions) {
+      versions.push(version);
+    }
+  }
+
+  data.hChildren = [...namesByValue.entries()].map(([value, versionList]) => ({
     type: 'element',
     tagName: 'span',
-    children: [
-      {
-        type: 'text',
-        value: buildingName.value
-      }
-    ],
+    children: [{ type: 'text', value }],
     properties: {
-      'data-versions': buildingName.versions.map((version) => version.data.order).join(',')
+      'data-versions': versionList.map((v) => v.data.order).join(',')
     }
   }));
 }
 
-export const buildingPlugin: (frontmatter: CollectionEntry<'wiki'>['data']) => RemarkPlugin =
+export const buildingPlugin: (frontmatter: CollectionEntry<'wiki'>['data'] | undefined) => RemarkPlugin =
   (frontmatter) => () => async (tree) => {
     const promises: Promise<void>[] = [];
 

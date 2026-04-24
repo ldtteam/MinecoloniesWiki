@@ -10,18 +10,24 @@ interface Props {
 const { name } = Astro.props;
 
 const versions = await getSortedVersions();
+const entries = (
+  await Promise.all(
+    versions.map(async (version) => {
+      const research = await getVersionedEntry('research', version, name);
+      return research ? { version, research } : undefined;
+    })
+  )
+).filter((e) => e !== undefined);
+
+if (entries.length === 0) {
+  throw new Error(`Research with id "${name}" does not exist in any version.`);
+}
 ---
 
 {
-  versions.map(async (version) => {
-    const research = await getVersionedEntry('research', version, name);
-    if (research === undefined) {
-      throw new Error(`Research with given id "${name}" does not exist.`);
-    }
-    return (
-      <VersionContent versions={[version]}>
-        <ResearchName research={research} />
-      </VersionContent>
-    );
-  })
+  entries.map(({ version, research }) => (
+    <VersionContent versions={[version]}>
+      <ResearchName research={research} />
+    </VersionContent>
+  ))
 }

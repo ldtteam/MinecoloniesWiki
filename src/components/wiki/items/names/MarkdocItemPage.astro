@@ -1,25 +1,38 @@
 ---
 import { getEntry } from 'astro:content';
 
-import { getNewestVersion, getVersionedEntry } from '../../../../util/version';
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
 
 interface Props {
-  currentPage: string;
   name: string;
 }
 
-const { currentPage, name } = Astro.props;
+const { name } = Astro.props;
 
 const itemPage = await getEntry('wiki', 'items/' + name);
 if (itemPage === undefined || itemPage.data.type === 'building' || itemPage.data.type === 'page') {
   throw new Error(`Item page '${name}' does not exist.`);
 }
 
-const latestVersion = await getNewestVersion();
-const title =
-  itemPage.data.type === 'item'
-    ? (await getVersionedEntry('items', latestVersion, itemPage.data.item))?.data.name
-    : itemPage.data.title;
+let title: string | undefined;
+if (itemPage.data.type === 'item') {
+  const versions = await getSortedVersions();
+  for (const version of versions) {
+    const itemData = await getVersionedEntry('items', version, itemPage.data.item);
+    if (itemData !== undefined) {
+      title = itemData.data.name;
+      break;
+    }
+  }
+} else {
+  title = itemPage.data.title;
+}
 ---
 
-{'/wiki/' + currentPage !== itemPage.id ? <a href={'/wiki/' + itemPage.id}>{title}</a> : <span>{title}</span>}
+{
+  '/wiki/' + Astro.locals.wikiPage?.id !== itemPage.id ? (
+    <a href={'/wiki/' + itemPage.id}>{title}</a>
+  ) : (
+    <span>{title}</span>
+  )
+}

@@ -3,8 +3,6 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
-import VersionOverride from '../common/version/VersionOverride.astro';
-
 export type Schematic = CollectionEntry<'schematics'>['data']['schematics'][number];
 
 interface Props {
@@ -19,7 +17,7 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
 <div
   class="schematic-card card"
   data-filter-id={schematic.id}
-  data-filter-building={building?.id}
+  data-filter-building={building?.data.baseId}
   data-filter-size-x={schematic.size.x}
   data-filter-size-y={schematic.size.y}
   data-filter-size-z={schematic.size.z}
@@ -46,7 +44,7 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
         building ? (
           <p class="card-title">
             <>
-              <VersionOverride value={building.data} fieldGetter={(b) => b.name} default="" />
+              <span>{building.data.name}</span>
               <span>({schematic.id})</span>
             </>
           </p>

@@ -20,6 +20,8 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { slug } = Astro.params;
 
+Astro.locals.wikiPage = entry;
+
 const title = await getWikiTitle(entry);
 const description = entry.data.description;
 const image = await getWikiImage(entry);

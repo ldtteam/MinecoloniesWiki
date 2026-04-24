@@ -7,6 +7,14 @@ description: The Miner will gather stone and ores from the depths below, they wi
 workers:
   - miner
 rotation: 270
+requirements:
+  mandatory:
+    - type: tag
+      name: cobble
+      note: starting ladder shaft blocks
+    - type: tag
+      name: ladder
+      note: starting ladder shaft blocks
 ---
 
 The {% building /%} is where you can hire a {% worker /%} to work the mine, or a {% worker name="quarrier" /%} to work the {% building name="quarry" /%}. If you hire a Quarrier, there will be no Miner at this {% building /%}. 

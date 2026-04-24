@@ -1,26 +1,38 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-
-import { getSortedVersions } from '../../../../util/version';
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
 import VersionContent from '../../../common/version/VersionContent.astro';
 import WorkerName from './WorkerName.astro';
 
 interface Props {
-  building: CollectionEntry<'buildings'>;
-  worker: CollectionEntry<'workers'>;
+  workerBaseId: string;
+  buildingBaseId: string;
   link?: boolean;
   plural?: boolean;
+  inline?: boolean;
 }
 
-const { building, worker, link = false, plural = false } = Astro.props;
+const { workerBaseId, buildingBaseId, link = false, plural = false, inline = true } = Astro.props;
 
 const versions = await getSortedVersions();
+const entries = (
+  await Promise.all(
+    versions.map(async (version) => {
+      const worker = await getVersionedEntry('workers', version, workerBaseId);
+      const building = await getVersionedEntry('buildings', version, buildingBaseId);
+      return worker && building ? { version, worker, building } : undefined;
+    })
+  )
+).filter((e) => e !== undefined);
+
+if (entries.length === 0) {
+  throw new Error(`Worker ${workerBaseId} does not exist in any version.`);
+}
 ---
 
 {
-  versions.map((version) => (
-    <VersionContent versions={[version]}>
-      <WorkerName version={version} building={building} worker={worker} link={link} plural={plural} />
+  entries.map(({ version, worker, building }) => (
+    <VersionContent versions={[version]} inline={inline}>
+      <WorkerName building={building} worker={worker} link={link} plural={plural} />
     </VersionContent>
   ))
 }

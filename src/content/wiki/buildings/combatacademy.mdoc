@@ -7,6 +7,17 @@ description: The Combat Academy is where your Knights in training will train to 
 workers:
   - knight
 rotation: 270
+requirements:
+  mandatory:
+    - type: block
+      item: minecraft/carved_pumpkin
+      note: top block of the practice dummy (place on top of a hay bale)
+    - type: block
+      item: minecraft/hay_block
+      note: bottom block of the practice dummy (place a carved pumpkin on top)
+    - type: block
+      item: minecraft/white_bed
+      note: per level
 ---
 
 The {% building /%} is where your {% worker plural=true /%} in Training will train to become {% worker /%}. This also allows them to level up without a risk of dying to mobs. A new Knight in Training will need a bed in a house in order to spawn. However, once they are hired at the {% building /%}, that becomes their new residence and the bed in the house will open up for another new citizen (child or recruit).

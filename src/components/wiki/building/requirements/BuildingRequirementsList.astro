@@ -1,0 +1,37 @@
+---
+import type { BuildingRequirements } from '../../../../schemas/building';
+import ItemNameAllVersions from '../../items/names/ItemNameAllVersions.astro';
+
+interface Props {
+  requirements: BuildingRequirements[];
+}
+
+const { requirements } = Astro.props;
+
+const typeOrder: Record<BuildingRequirements['type'], number> = { block: 0, tag: 1, custom: 2 };
+const sorted = [...requirements].sort((a, b) => typeOrder[a.type] - typeOrder[b.type]);
+---
+
+{
+  sorted.length ? (
+    <ul>
+      {sorted.map((req) =>
+        req.type === 'block' ? (
+          <li>
+            <span>At least {req.minAmount}&nbsp;</span>
+            <ItemNameAllVersions item={req.item} />
+            {req.note ? ` - ${req.note}` : ''}
+          </li>
+        ) : req.type === 'tag' ? (
+          <li>
+            <code>{req.name}</code> tag{req.note ? ` - ${req.note}` : ''}
+          </li>
+        ) : (
+          <li>{req.text}</li>
+        )
+      )}
+    </ul>
+  ) : (
+    '-'
+  )
+}

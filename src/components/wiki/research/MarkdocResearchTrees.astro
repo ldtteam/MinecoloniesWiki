@@ -11,11 +11,10 @@ const allTrees = await getCollection('research_tree');
 
 const treesByName = new Map<string, typeof allTrees>();
 allTrees.forEach((tree) => {
-  const baseName = tree.id.replace(/^[^_]+_/, '');
-  if (!treesByName.has(baseName)) {
-    treesByName.set(baseName, []);
+  if (!treesByName.has(tree.data.baseId)) {
+    treesByName.set(tree.data.baseId, []);
   }
-  const group = treesByName.get(baseName);
+  const group = treesByName.get(tree.data.baseId);
   if (group) {
     group.push(tree);
   }

@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+
+import { getSortedVersions, getVersionedEntry } from '../../../util/version';
+import VersionContent from '../../common/version/VersionContent.astro';
+import BuildingName from './names/BuildingName.astro';
+import BuildingRequirementsList from './requirements/BuildingRequirementsList.astro';
+
+const allBuildings = await getCollection('buildings');
+const baseIds = [...new Set(allBuildings.map((b) => b.data.baseId))];
+
+const versions = await getSortedVersions();
+
+const versionedTables = await Promise.all(
+  versions.map(async (version) => {
+    const entries = (
+      await Promise.all(
+        baseIds.map(async (baseId) => {
+          const building = await getVersionedEntry('buildings', version, baseId);
+          if (!building?.data.requirements?.mandatory?.length && !building?.data.requirements?.optional?.length) {
+            return undefined;
+          }
+          return building;
+        })
+      )
+    ).filter((e) => e !== undefined);
+
+    entries.sort((a, b) => a.data.name.localeCompare(b.data.name));
+    return { version, entries };
+  })
+);
+---
+
+{
+  versionedTables.map(({ version, entries }) => (
+    <VersionContent versions={[version]}>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Building</th>
+            <th>Mandatory Requirements</th>
+            <th>Optional Requirements</th>
+          </tr>
+        </thead>
+        <tbody>
+          {entries.map((building) => (
+            <tr>
+              <td>
+                <BuildingName building={building} link />
+              </td>
+              <td>
+                <BuildingRequirementsList requirements={building.data.requirements?.mandatory ?? []} />
+              </td>
+              <td>
+                <BuildingRequirementsList requirements={building.data.requirements?.optional ?? []} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </VersionContent>
+  ))
+}

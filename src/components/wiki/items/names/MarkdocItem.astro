@@ -1,22 +1,14 @@
 ---
-import { getItemLink } from '../../../../util/items';
-import { getNewestVersion, getVersionedEntry } from '../../../../util/version';
+import { getItemLinkByBaseId } from '../../../../util/items';
 import ItemNameAllVersions from './ItemNameAllVersions.astro';
 
 interface Props {
-  currentPage: string;
   name: string;
 }
 
-const { currentPage, name } = Astro.props;
+const { name } = Astro.props;
 
-const latestVersion = await getNewestVersion();
-const item = await getVersionedEntry('items', latestVersion, name);
-if (item === undefined) {
-  throw new Error(`Item ${name} does not exist for version ${latestVersion.id}.`);
-}
-
-const itemLink = await getItemLink(item);
+const itemLink = await getItemLinkByBaseId(name);
 ---
 
-<ItemNameAllVersions item={name} link={itemLink !== '/wiki/' + currentPage} inline />
+<ItemNameAllVersions item={name} link={itemLink !== '/wiki/' + Astro.locals.wikiPage?.id} inline />

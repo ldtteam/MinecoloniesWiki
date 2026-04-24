@@ -7,11 +7,11 @@ import { toTitleCase } from '../../../util/string';
 
 interface Props {
   field: CollectionEntry<'json_structures'>['data']['fields'][number];
-  frontmatter: CollectionEntry<'wiki'>['data'];
   depth?: number;
 }
 
-const { field, frontmatter, depth = 0 } = Astro.props;
+const { field, depth = 0 } = Astro.props;
+const frontmatter = Astro.locals.wikiPage?.data;
 
 let key: string;
 if (field.type === 'array' || field.type === 'array_primitive') {
@@ -74,9 +74,7 @@ const description = await formatText(field.description, frontmatter);
 
 {
   (field.type === 'object' || field.type === 'array') &&
-    sortFields(field.children).map((subField) => (
-      <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 1} />
-    ))
+    sortFields(field.children).map((subField) => <Astro.self field={subField} depth={depth + 1} />)
 }
 
 {
@@ -99,7 +97,7 @@ const description = await formatText(field.description, frontmatter);
           <td set:html={formatText(variant.description, frontmatter)} />
         </tr>
         {sortFields(variant.children).map((subField) => (
-          <Astro.self field={subField} frontmatter={frontmatter} depth={depth + 2} />
+          <Astro.self field={subField} depth={depth + 2} />
         ))}
       </>
     ))

@@ -40,7 +40,7 @@ function parseRegularEffectFormat(
 {
   effectData.data.type === 'building' && (
     <span>
-      Unlocks <BuildingNameAllVersions building={await getEntry(effectData.data.building)} link />
+      Unlocks <BuildingNameAllVersions buildingBaseId={(await getEntry(effectData.data.building)).data.baseId} link />
     </span>
   )
 }

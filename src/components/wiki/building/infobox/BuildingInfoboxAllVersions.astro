@@ -1,21 +1,31 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-
-import { getSortedVersions } from '../../../../util/version';
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
 import VersionContent from '../../../common/version/VersionContent.astro';
 import BuildingInfobox from './BuildingInfobox.astro';
 
 interface Props {
-  building: CollectionEntry<'buildings'>;
+  buildingBaseId: string;
 }
 
-const { building } = Astro.props;
+const { buildingBaseId } = Astro.props;
 
 const versions = await getSortedVersions();
+const entries = (
+  await Promise.all(
+    versions.map(async (version) => {
+      const building = await getVersionedEntry('buildings', version, buildingBaseId);
+      return building ? { version, building } : undefined;
+    })
+  )
+).filter((e) => e !== undefined);
+
+if (entries.length === 0) {
+  throw new Error(`Building with id ${buildingBaseId} does not exist in any version.`);
+}
 ---
 
 {
-  versions.map((version) => (
+  entries.map(({ version, building }) => (
     <VersionContent versions={[version]} slot="infobox">
       <BuildingInfobox building={building} version={version} />
     </VersionContent>

@@ -1,35 +1,39 @@
 ---
 import { getEntry } from 'astro:content';
 
-import type { MarkdocWorkerComponent } from '../../../../markdoc/workers';
+import { getSortedVersions, getVersionedEntry } from '../../../../util/version';
 import WorkerNameAllVersions from './WorkerNameAllVersions.astro';
 
-interface Props extends MarkdocWorkerComponent {
+interface Props {
+  name?: string;
   building?: string;
   plural?: boolean;
 }
 
-const { frontmatter, name, building, plural = false } = Astro.props;
+const { name, building, plural = false } = Astro.props;
 
-const workerIdFrontmatter =
+const frontmatter = Astro.locals.wikiPage?.data;
+const workerIdFromPage =
   frontmatter?.type === 'building' && frontmatter.workers?.length === 1 ? frontmatter.workers[0].id : undefined;
+const workerBaseId = name ?? workerIdFromPage ?? '';
 
-const workerTarget = name ?? workerIdFrontmatter ?? '';
-const workerData = await getEntry('workers', workerTarget);
-if (workerData === undefined) {
-  throw new Error(`Worker with id ${workerTarget} does not exist.`);
-}
-
-const referenceBuilding = building ?? workerData.data.primaryBuilding.id;
-const buildingData = await getEntry('buildings', referenceBuilding);
-if (buildingData === undefined) {
-  throw new Error(`Building with id ${referenceBuilding} does not exist.`);
+let buildingBaseId = building;
+if (buildingBaseId === undefined) {
+  const versions = await getSortedVersions();
+  for (const version of versions) {
+    const workerData = await getVersionedEntry('workers', version, workerBaseId);
+    if (workerData !== undefined) {
+      buildingBaseId = (await getEntry(workerData.data.primaryBuilding))?.data.baseId ?? workerBaseId;
+      break;
+    }
+  }
+  buildingBaseId ??= workerBaseId;
 }
 ---
 
 <WorkerNameAllVersions
-  building={buildingData}
-  worker={workerData}
-  link={workerIdFrontmatter !== workerTarget}
+  buildingBaseId={buildingBaseId}
+  workerBaseId={workerBaseId}
+  link={workerIdFromPage !== workerBaseId}
   plural={plural}
 />

@@ -17,7 +17,7 @@ const buildings = await getEntries(requirement.buildings);
     <>
       <span>One or multiple </span>
       <span>
-        <BuildingNameAllVersions building={building} plural link />
+        <BuildingNameAllVersions buildingBaseId={building.data.baseId} plural link />
       </span>
       <span> totaling at least {requirement.level} levels</span>
       {index !== buildings.length && <span> or </span>}

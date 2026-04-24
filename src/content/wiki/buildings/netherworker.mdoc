@@ -7,6 +7,21 @@ description: The Nether Miner is a dangerous job, this worker will venture to th
 workers:
   - netherminer
 rotation: 270
+requirements:
+  mandatory:
+    - type: tag
+      name: portal
+      note: a position where the nether portal will appear at
+    - type: tag
+      name: vault
+      note: a position where the netherworker will hide while away in the nether
+overrides:
+  - version: "1.20"
+    requirements:
+      mandatory:
+        - type: tag
+          name: portal
+          note: a position where the nether portal will appear at
 ---
 
 The {% building /%} is where the {% worker /%} works. The {% worker /%} travels into [The Nether](https://minecraft.wiki/w/The_Nether) and mines resources found there. The level of the hut determines what items {% worker /%} brings back.

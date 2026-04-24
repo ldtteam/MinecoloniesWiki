@@ -16,7 +16,7 @@ const building = await getEntry(requirement.building);
   requirement.single ? (
     <>
       <span>
-        <BuildingNameAllVersions building={building} link />
+        <BuildingNameAllVersions buildingBaseId={building.data.baseId} link />
       </span>
       <span> level {requirement.level}</span>
     </>
@@ -24,7 +24,7 @@ const building = await getEntry(requirement.building);
     <>
       <span>One or multiple </span>
       <span>
-        <BuildingNameAllVersions building={building} plural link />
+        <BuildingNameAllVersions buildingBaseId={building.data.baseId} plural link />
       </span>
       <span> totaling at least {requirement.level} levels</span>
     </>

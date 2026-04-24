@@ -7,6 +7,10 @@ description: The Dyer is able to turn blocks like wool into their dyed variants.
 workers:
   - dyer
 rotation: 180
+requirements:
+  mandatory:
+    - type: block
+      item: minecraft/furnace
 ---
 
 The {% building /%} is where the {% worker /%} will craft dyes and dye other items, including red nether bricks and dark prismarine. They won't dye concrete or concrete powder, though. The {% worker /%} will only do this if they receive a request from another worker and have the necessary materials. The {% building /%} automatically knows how to make green dye and red sand, but you must teach it the recipes for the other dyes and the dyed items.

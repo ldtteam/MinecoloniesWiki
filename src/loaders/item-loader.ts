@@ -29,7 +29,7 @@ const versionSchemaMap: VersionSchemaMap = {
   '12100': parserModule12100
 };
 
-export function itemLoader(): Loader {
+export function itemLoader() {
   return {
     name: 'item-loader',
     schema: itemSchema,
@@ -179,5 +179,5 @@ export function itemLoader(): Loader {
 
       context.logger.info(`Loaded ${context.store.keys().length} items`);
     }
-  };
+  } satisfies Loader;
 }

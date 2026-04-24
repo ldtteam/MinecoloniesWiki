@@ -24,7 +24,9 @@ Schematics are files containing block and entity information of a certain area a
   - [\[1.18\] Custom Hut Filenames](#118-custom-hut-filenames)
   - [Custom Supply Ships and Camps](#custom-supply-ships-and-camps)
   - [Supplycamp/ship Content Requirements](#supplycampship-content-requirements)
-  - [Hut Requirements](#hut-requirements)
+  - [Building Requirements](#building-requirements)
+    - [Common requirements](#common-requirements)
+    - [Per-building requirements](#per-building-requirements)
   - [Level Requirements for Overworld Styles](#level-requirements-for-overworld-styles)
   - [Level Requirements for Nether Styles](#level-requirements-for-nether-styles)
   - [Plantation Fields](#plantation-fields)
@@ -335,11 +337,11 @@ Materials:
 - Hide 1 gold (or raw gold) and 1 coal block in the camp (not visible)
 
 Utilities:
-- Add an Architects Cutter
-- Add a Crafting Table
-- Add a Bed
+- Add an {% item name="domum_ornamentum/architectscutter" /%}
+- Add a {% item name="minecraft/crafting_table" /%}
+- Add a {% item name="minecraft/white_bed" /%}
 - Add wooden tools 
-- Add buildtool and townhall item into one of the storage blocks
+- Add {% item name="structurize/sceptergold" /%} and {% building name="townhall" /%} item into one of the storage blocks
 
 Saplings: Two different variants, for the main wooden material of the lower levels. (6-8 saplings each)
 Crops: Only wheat/wheat seeds, can mix in (1-2) durum
@@ -351,42 +353,26 @@ Food:
 
 Apply a `groundlevel` tag using the {% item name="structurize/sceptertag" /%} on the floor level (any block).
 
-## Hut Requirements
+## Building Requirements
 
-**Some buildings may also require tags to be set on certain blocks using the {% item name="structurize/sceptertag" /%}.**
+Any building can have a certain amount of requirements within the schematic, all requirements will be listed below.
 
-| Building                             | Requirements                                                                                                               | Suggested                                                                                                                                  |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| {% building name="archery" /%}       | 1 practice dummy (a target block); 1 bed per level                                                                         | at least 1 standing position per level (a glowstone block, or any block tagged with `work`)                                                |
-| {% building name="alchemist" /%}     | 1 brewing stand per level; 2 soul sand per level starting at level 2 (with 4 soul sand); leaves next to logs, i.e. "trees" |                                                                                                                                            |
-| {% building name="baker" /%}         | 1 furnace                                                                                                                  |                                                                                                                                            |
-| {% building name="barracks" /%}      | 1 {% building name="barrackstower" /%} per level (up to level 4)                                                           |                                                                                                                                            |
-| {% building name="barrackstower" /%} |                                                                                                                            | 1 bed per level                                                                                                                            |
-| {% building name="builder" /%}       |                                                                                                                            | 1 rack per level                                                                                                                           |
-| {% building name="combatacademy" /%} | 1 practice dummy per level (a carved pumpkin on top of a hay bale); 1 bed per level                                        |                                                                                                                                            |
-| {% building name="composter" /%}     | 1 {% item name="minecolonies/barrel_block" /%} per level                                                                   |                                                                                                                                            |
-| {% building name="concretemixer" /%} | 3 blocks of flowing water with solid blocks below and air blocks above, which the worker can stand next to                 |                                                                                                                                            |
-| {% building name="dyer" /%}          | 1 furnace                                                                                                                  |                                                                                                                                            |
-| {% building name="fisherman" /%}     |                                                                                                                            | At least {% meta key="fisher_pond_size" /%} unobstructed body of water if integrating fishing location in the schematic                    |
-| {% building name="florist" /%}       | 4 {% item name="minecolonies/compost" /%} per level                                                                        |                                                                                                                                            |
-| {% building name="glassblower" /%}   | 1 furnace per level                                                                                                        |                                                                                                                                            |
-| {% building name="graveyard" /%}     | Named Graves, with the amount increasing per level                                                                         | 14 named graves at level 1, 18 named graves at level 2, 27 named graves at level 3, 36 named graves at level 4, 50 named graves at level 5 |
-| {% building name="guardtower" /%}    |                                                                                                                            | 1 bed for aesthetics                                                                                                                       |
-| {% building name="hospital" /%}      | 1 bed per level                                                                                                            |                                                                                                                                            |
-| {% building name="residence" /%}     | 1 bed per level                                                                                                            |                                                                                                                                            |
-| {% building name="library" /%}       | Bookshelves                                                                                                                |                                                                                                                                            |
-| {% building name="miner" /%}         | A few starting ladders where the shaft's ladders will go with the tags [cobble] and [ladder]                               |                                                                                                                                            |
-| {% building name="netherworker" /%}  | A nether portal, and an enclosed 1x1x2 room                                                                                |                                                                                                                                            |
-| {% building name="plantation" /%}    | 12 per level, 4 for each of sugar cane, cactus and bamboo                                                                  |                                                                                                                                            |
-| {% building name="cook" /%}          | 1 furnace per level                                                                                                        |                                                                                                                                            |
-| {% building name="school" /%}        | 2 carpets per level                                                                                                        | 4 carpets per level                                                                                                                        |
-| {% building name="smeltery" /%}      | 1 furnace per level                                                                                                        |                                                                                                                                            |
-| {% building name="stonesmeltery" /%} | 1 furnace per level                                                                                                        |                                                                                                                                            |
-| {% building name="tavern" /%}        | 4 beds and a dining room                                                                                                   | {% item_page name="barrels" /%}                                                                                                            |
-| {% building name="university" /%}    | Bookshelves                                                                                                                |                                                                                                                                            |
-| {% building name="warehouse" /%}     | {% item name="minecolonies/blockminecoloniesrack" /%} (more each level)                                                    |                                                                                                                                            |
+### Common requirements
 
-It's usually recommended to include a few {% item name="minecolonies/blockminecoloniesrack" /%}s in the various crafter's huts (and more in the {% building name="builder" /%}). A rough guide might be to include 0-1 at level 1, then add 1-2 per level — but you can vary this quite a bit based on your design, layout, and playtesting.
+Blocks:
+- Any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks for additional storage
+
+Tags:
+- Any number of `sit_in` tags for **indoor** sitting positions for leisure time. Commonly on stairs or slabs.
+- Any number of `sit_out` tags for **outdoor** sitting positions for leisure time. Commonly on stairs or slabs.
+- Any number of `stand_in` tags for **indoor** standing positions for leisure time.
+- Any number of `stand_out` tags for **outdoor** standing positions for leisure time.
+
+### Per-building requirements
+
+{% building_requirements_table /%}
+
+All buildings may include any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks to act as additional storage to the building. The amount you include varies per building and level.
 
 ## Level Requirements for Overworld Styles
 

@@ -1,5 +1,4 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import { getCollection, getEntry } from 'astro:content';
 
 import type { RecipeCondition } from '../../../schemas/item';
@@ -7,11 +6,10 @@ import BuildingName from '../building/names/BuildingName.astro';
 import ResearchName from '../research/names/ResearchName.astro';
 
 interface Props {
-  version: CollectionEntry<'versions'>;
   conditions: RecipeCondition[];
 }
 
-const { version, conditions } = Astro.props;
+const { conditions } = Astro.props;
 ---
 
 {
@@ -22,13 +20,13 @@ const { version, conditions } = Astro.props;
         if (condition.level) {
           return (
             <li>
-              Requires a <BuildingName version={version} building={buildingData} /> level {condition.level}
+              Requires a <BuildingName building={buildingData} /> level {condition.level}
             </li>
           );
         } else {
           return (
             <li>
-              Requires a <BuildingName version={version} building={buildingData} />
+              Requires a <BuildingName building={buildingData} />
             </li>
           );
         }

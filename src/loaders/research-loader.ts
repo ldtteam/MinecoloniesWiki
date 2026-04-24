@@ -94,7 +94,7 @@ const effectSchemaInternal = z.object({
   ['levels']: z.array(z.number()).optional()
 });
 
-export function researchTreesLoader(): Loader {
+export function researchTreesLoader() {
   return {
     name: 'research-trees-loader',
     schema: researchTreeSchema,
@@ -154,10 +154,10 @@ export function researchTreesLoader(): Loader {
 
       context.logger.info(`Loaded ${context.store.keys().length} research trees`);
     }
-  };
+  } satisfies Loader;
 }
 
-export function researchLoader(): Loader {
+export function researchLoader() {
   return {
     name: 'research-loader',
     schema: researchSchema,
@@ -218,7 +218,7 @@ export function researchLoader(): Loader {
                 subtitle,
                 researchLevel: researchData.researchLevel,
                 sortOrder: researchData.sortOrder,
-                requirements: await parseRequirements(researchData),
+                requirements: await parseRequirements(researchData, version),
                 costs: await parseCosts(researchData, version, translations),
                 effects: await parseEffects(researchData, version)
               }
@@ -236,10 +236,10 @@ export function researchLoader(): Loader {
 
       context.logger.info(`Loaded ${context.store.keys().length} research`);
     }
-  };
+  } satisfies Loader;
 }
 
-export function researchEffectLoader(): Loader {
+export function researchEffectLoader() {
   return {
     name: 'research-effect-loader',
     schema: researchEffectsSchema,
@@ -282,7 +282,7 @@ export function researchEffectLoader(): Loader {
                   type: 'building',
                   building: {
                     collection: 'buildings',
-                    id: fileId.replace('blockhut', '')
+                    id: getVersionCollectionId(fileId.replace('blockhut', ''), version)
                   }
                 }
               });
@@ -324,11 +324,12 @@ export function researchEffectLoader(): Loader {
 
       context.logger.info(`Loaded ${context.store.keys().length} research effects`);
     }
-  };
+  } satisfies Loader;
 }
 
 async function parseRequirements(
-  researchData: z.infer<typeof researchSchemaInternal>
+  researchData: z.infer<typeof researchSchemaInternal>,
+  version: CollectionEntry<'versions'>['data']
 ): Promise<z.infer<typeof researchSchema>['requirements']> {
   const values: z.infer<typeof researchSchema>['requirements'] = [];
   for (const requirement of researchData.requirements ?? []) {
@@ -339,7 +340,7 @@ async function parseRequirements(
           type: 'building',
           building: {
             collection: 'buildings',
-            id: requirement.building.replace('minecolonies:', '')
+            id: getVersionCollectionId(requirement.building.replace('minecolonies:', ''), version)
           },
           single: requirement.type === 'minecolonies:single-building',
           level: requirement.level
@@ -350,7 +351,7 @@ async function parseRequirements(
           type: 'buildings_alternate',
           buildings: requirement['alternate-buildings'].map((building) => ({
             collection: 'buildings',
-            id: building.replace('minecolonies:', '')
+            id: getVersionCollectionId(building.replace('minecolonies:', ''), version)
           })),
           level: requirement.level
         });

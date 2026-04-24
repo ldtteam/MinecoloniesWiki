@@ -1,6 +1,5 @@
-import { z } from 'astro/zod';
+import { z, type ZodDiscriminatedUnion } from 'astro/zod';
 import type { CollectionEntry, ReferenceDataEntry } from 'astro:content';
-import type { ZodDiscriminatedUnion, ZodDiscriminatedUnionOption } from 'astro:schema';
 
 import type { recipeSchema } from '../../schemas/item';
 import type { SupportedSubmodules } from '../../schemas/version';
@@ -10,8 +9,8 @@ import { parseResourceLocation, resourceLocationToWikiReference } from '../../ut
 export type StoredRecipeData = z.infer<typeof recipeSchema>;
 
 type RequiredZodUnion = ZodDiscriminatedUnion<
-  'type',
-  readonly [ZodDiscriminatedUnionOption<'type'>, ...ZodDiscriminatedUnionOption<'type'>[]]
+  readonly [z.core.$ZodTypeDiscriminable, ...z.core.$ZodTypeDiscriminable[]],
+  'type'
 >;
 
 export interface RecipeConverterModule<Union extends RequiredZodUnion> {

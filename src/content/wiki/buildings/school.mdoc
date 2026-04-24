@@ -8,6 +8,11 @@ workers:
   - teacher
   - pupil
 rotation: 270
+requirements:
+  mandatory:
+    - type: block
+      item: minecraft/white_carpet
+      note: carpets for the children to sit on (any carpet like block should be valid)
 ---
 
 The {% building /%} is where the {% worker name="teacher" /%} will level up the {% worker name="pupil" plural=true /%} (children) their Intelligence skill. Paper will increase the leveling speed of the {% worker name="pupil" plural=true /%}. 

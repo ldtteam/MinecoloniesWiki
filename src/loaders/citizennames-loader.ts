@@ -9,7 +9,7 @@ import { parseResourceLocationFromAbsolutePath, resourceLocationToWikiId } from 
 import { toTitleCase } from '../util/string';
 import { getVersionCollectionId } from '../util/version';
 
-export function citizenNamesLoader(): Loader {
+export function citizenNamesLoader() {
   return {
     name: 'citizennames-loader',
     schema: citizenNamesPackSchema,
@@ -103,5 +103,5 @@ export function citizenNamesLoader(): Loader {
 
       context.logger.info(`Loaded ${context.store.keys().length} citizen name packs`);
     }
-  };
+  } satisfies Loader;
 }

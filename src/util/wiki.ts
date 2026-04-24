@@ -2,7 +2,6 @@ import { z } from 'astro/zod';
 import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 
 import { getJsonFile } from './files';
-import { getOverrideValues } from './override';
 import { getNewestVersion, getVersionedEntry, type VersionedResult } from './version';
 
 const blockStateSchema = z.object({
@@ -53,11 +52,11 @@ export async function getWikiTitle(entry: CollectionEntry<'wiki'>): Promise<Titl
     const item = await getVersionedEntry('items', latestVersion, entry.data.item);
     return item?.data.name ?? entry.id;
   } else if (entry.data.type === 'building') {
-    const building = await getEntry('buildings', entry.data.id);
+    const building = await getVersionedEntry('buildings', latestVersion, entry.data.id);
     if (building === undefined) {
       return entry.id;
     }
-    return await getOverrideValues(building.data, (v) => v.name, '');
+    return building.data.name;
   }
 
   return entry.id;
@@ -167,7 +166,8 @@ export async function getWikiPages(): Promise<WikiPages> {
     }
   }
 
-  for (const worker of await getCollection('workers')) {
+  const newestVersionForWorkers = await getNewestVersion();
+  for (const worker of await getCollection('workers', (w) => w.data.version.id === newestVersionForWorkers.id)) {
     const category = wikiCategories.find((f) => f.id === 'workers');
     const building = await getEntry(worker.data.primaryBuilding);
     if (category !== undefined) {
@@ -176,7 +176,7 @@ export async function getWikiPages(): Promise<WikiPages> {
         pages.push({
           type: 'page',
           name: worker.data.name,
-          id: 'buildings/' + building.id
+          id: 'buildings/' + building.data.baseId
         });
       }
     }

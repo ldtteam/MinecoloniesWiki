@@ -1,6 +1,5 @@
 import { component } from '@astrojs/markdoc/config';
 
-import { injectFrontmatter } from './mixin';
 import type { Tag } from './types';
 
 export const schema: Tag = {
@@ -11,6 +10,5 @@ export const schema: Tag = {
       type: String,
       required: true
     }
-  },
-  transform: injectFrontmatter
+  }
 };
