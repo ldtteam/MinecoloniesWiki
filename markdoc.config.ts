@@ -16,7 +16,7 @@ import {
   social_link
 } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
-import { worker, workers_table } from './src/markdoc/workers';
+import { worker, worker_jobs_table, workers_table } from './src/markdoc/workers';
 
 function extendNodeClasses(...extraClasses: string[]): Tag['transform'] {
   const result: Tag['transform'] = (node, config) => {
@@ -36,6 +36,7 @@ const config: AstroMarkdocConfig = {
     building_requirements_table,
     worker,
     workers_table,
+    worker_jobs_table,
     item,
     item_page,
     item_infobox,

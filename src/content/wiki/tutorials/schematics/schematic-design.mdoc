@@ -1,0 +1,364 @@
+---
+type: page
+title: Schematic Design
+---
+# Schematic Design
+
+This page covers the rules and conventions for designing schematics for style packs, including hut naming, supply camps and ships, building requirements, plantation fields, mineshafts, and quarries.
+
+## Custom Huts
+
+To create new hut schematics, there are some rules you must follow:
+
+- The scans **must** have the same footprint (x, y, and z) for each level of the hut.
+- The scans must contain the hut's block (e.g. the {% building name="builder" /%} block for a {% building name="builder" /%} hut).
+- The hut block must be in exactly the same position and have the same rotation across all levels.
+
+Ensure you are building your custom hut outside of any colony borders. When placing the hut block inside the custom schematic, shift+right-click to place it without activating it. Then you can scan and save the schematic.
+
+{% version range="--1.18.2" %}
+The scan filenames must follow the naming convention `{StyleName}/{HutName}{HutLevel}.blueprint`. For example, for the {% building name="builder" /%} with the MyOwn style:
+
+*myown/builder1.blueprint*
+*myown/builder2.blueprint*
+*myown/builder3.blueprint*
+*myown/builder4.blueprint*
+*myown/builder5.blueprint*
+
+- **Note:** In the {% item name="structurize/sceptergold" /%}, the extension is hidden. The maximum level is 5 (except for the {% building name="tavern" /%}, whose max level is 3).
+
+Alternative designs can be placed under a style name like "myownalternative", or a subfolder like `myown/alt/*`.
+
+Once ready, move the `myown` folder into the blueprints folder and start your game. You should be able to see it with the build tool.
+{% /version %}
+
+{% version range="1.19--" %}
+The naming for buildings is not strict anymore. The only requirements are that names are consistent, end with the hut level number, and use only lowercase letters (avoid capitals, spaces, or other punctuation). Alternate designs can have a different name entirely -- e.g. if you named the level 1 {% building name="builder" /%} "builder1", an alternative could be called "altbuilder1" or "builderalt1" or even "constructionworker1".
+
+Don't put numbers anywhere in the name except right at the end for the level. For example, "alt1builder1" won't work as expected.
+
+Once ready, you need to package them into a [style pack](style-packs). The schematics are visible in the build tool without the hut block, but you can't view them in survival mode (their button is greyed out with an error message indicating you need to have the hut block).
+{% /version %}
+
+> **Note:** Remember that you need the appropriate hut block in your inventory to be able to see the schematics in the build tool.
+
+## Hut Filenames
+
+{% version range="--1.18.2" %}
+Here is a full list of the building names. Please note: *do not use capital letters in hut names*.
+{% /version %}
+
+{% version range="1.19--" %}
+The table below lists the default building names. As previously noted, you don't need to stick to these names as long as you're consistent at each level.
+{% /version %}
+
+| Level 1        | Level 2        | Level 3        | Level 4        | Level 5        |
+| :------------- | :------------- | :------------- | :------------- | :------------- |
+| archery1       | archery2       | archery3       | archery4       | archery5       |
+| alchemist1     | alchemist2     | alchemist3     | alchemist4     | alchemist5     |
+| baker1         | baker2         | baker3         | baker4         | baker5         |
+| barracks1      | barracks2      | barracks3      | barracks4      | barracks5      |
+| barrackstower1 | barrackstower2 | barrackstower3 | barrackstower4 | barrackstower5 |
+| beekeeper1     | beekeeper2     | beekeeper3     | beekeeper4     | beekeeper5     |
+| blacksmith1    | blacksmith2    | blacksmith3    | blacksmith4    | blacksmith5    |
+| builder1       | builder2       | builder3       | builder4       | builder5       |
+| chickenherder1 | chickenherder2 | chickenherder3 | chickenherder4 | chickenherder5 |
+| citizen1       | citizen2       | citizen3       | citizen4       | citizen5       |
+| combatacademy1 | combatacademy2 | combatacademy3 | combatacademy4 | combatacademy5 |
+| composter1     | composter2     | composter3     | composter4     | composter5     |
+| concretemixer1 | concretemixer2 | concretemixer3 | concretemixer4 | concretemixer5 |
+| cook1          | cook2          | cook3          | cook4          | cook5          |
+| cowboy1        | cowboy2        | cowboy3        | cowboy4        | cowboy5        |
+| crusher1       | crusher2       | crusher3       | crusher4       | crusher5       |
+| deliveryman1   | deliveryman2   | deliveryman3   | deliveryman4   | deliveryman5   |
+| dyer1          | dyer2          | dyer3          | dyer4          | dyer5          |
+| enchanter1     | enchanter2     | enchanter3     | enchanter4     | enchanter5     |
+| farmer1        | farmer2        | farmer3        | farmer4        | farmer5        |
+| fisherman1     | fisherman2     | fisherman3     | fisherman4     | fisherman5     |
+| fletcher1      | fletcher2      | fletcher3      | fletcher4      | fletcher5      |
+| florist1       | florist2       | florist3       | florist4       | florist5       |
+| glassblower1   | glassblower2   | glassblower3   | glassblower4   | glassblower5   |
+| graveyard1     | graveyard2     | graveyard3     | graveyard4     | graveyard5     |
+| guardtower1    | guardtower2    | guardtower3    | guardtower4    | guardtower5    |
+| hospital1      | hospital2      | hospital3      | hospital4      | hospital5      |
+| library1       | library2       | library3       | library4       | library5       |
+| lumberjack1    | lumberjack2    | lumberjack3    | lumberjack4    | lumberjack5    |
+| mechanic1      | mechanic2      | mechanic3      | mechanic4      | mechanic5      |
+| miner1         | miner2         | miner3         | miner4         | miner5         |
+| mysticalsite1  | mysticalsite2  | mysticalsite3  | mysticalsite4  | mysticalsite5  |
+| netherworker1  | netherworker2  | netherworker3  | netherworker4  | netherworker5  |
+| plantation1    | plantation2    | plantation3    | plantation4    | plantation5    |
+| rabbithutch1   | rabbithutch2   | rabbithutch3   | rabbithutch4   | rabbithutch5   |
+| sawmill1       | sawmill2       | sawmill3       | sawmill4       | sawmill5       |
+| school1        | school2        | school3        | school4        | school5        |
+| shepherd1      | shepherd2      | shepherd3      | shepherd4      | shepherd5      |
+| sifter1        | sifter2        | sifter3        | sifter4        | sifter5        |
+| smeltery1      | smeltery2      | smeltery3      | smeltery4      | smeltery5      |
+| stonemason1    | stonemason2    | stonemason3    | stonemason4    | stonemason5    |
+| stonesmeltery1 | stonesmeltery2 | stonesmeltery3 | stonesmeltery4 | stonesmeltery5 |
+| swineherder1   | swineherder2   | swineherder3   | swineherder4   | swineherder5   |
+| tavern1        | tavern2        | tavern3        | N/A            | N/A            |
+| townhall1      | townhall2      | townhall3      | townhall4      | townhall5      |
+| university1    | university2    | university3    | university4    | university5    |
+| warehouse1     | warehouse2     | warehouse3     | warehouse4     | warehouse5     |
+
+## Custom Supply Ships and Camps
+
+The process for custom {% item_page name="supply_camp_and_ship" /%} is slightly different:
+
+{% version range="--1.18.2" %}
+| Camp or Ship | File Name and Path                                |
+| ------------ | ------------------------------------------------- |
+| Camp         | structurize/schematics/supplycamp/myownsupplycamp |
+| Ship         | structurize/schematics/supplyship/myownsupplyship |
+
+So, for example, the path would be `structurize/schematics/wildwest/builder1` for the {% building name="builder" /%} level 1 and `structurize/schematics/supplycamp/wildwestsupplycamp` for the supply camp.
+{% /version %}
+
+{% version range="1.19--" %}
+| Camp or Ship | File Name and Path                                      |
+| ------------ | ------------------------------------------------------- |
+| Camp         | blueprints/<myownstyle>/decorations/supplies/supplycamp |
+| Ship         | blueprints/<myownstyle>/decorations/supplies/supplyship |
+| Nether Ship  | blueprints/<myownstyle>/decorations/supplies/nethership |
+
+So, for example, the path would be `blueprints/wildwest/fundamentals/builder1` for the {% building name="builder" /%} level 1 and `blueprints/wildwest/decorations/supplies/supplycamp` for the supply camp.
+
+Because these have fixed names, you can't have more than one per style and type.
+{% /version %}
+
+### Supply Camp/Ship Content Requirements
+
+Supply camps and ships have a set of rules they must adhere to, as their placement is free in the world:
+
+**Size:** Maximum 32x32 blocks
+
+**Materials:**
+- Place up to two stacks (in total) of the two or three most used materials in lower building levels, e.g. Cobblestone, Oak logs and Diorite.
+- 12 White wool for beds
+- Other low-level materials are fine; keep their amount in moderation (less than 32), or use blocks made in the Architect's Cutter instead
+- No high-end/valuable materials (nether/end/prismarine/sea lanterns/diamonds/iron)
+- No unique blocks like bells, sponges, or enchanted books
+- More valuable blocks like bookshelves are allowed, but keep them in small amounts (<=4)
+- Hide 1 gold (or raw gold) and 1 coal block in the camp (not visible)
+
+**Utilities:**
+- Add an {% item name="domum_ornamentum/architectscutter" /%}
+- Add a {% item name="minecraft/crafting_table" /%}
+- Add a {% item name="minecraft/white_bed" /%}
+- Add wooden tools
+- Add {% item name="structurize/sceptergold" /%} and {% building name="townhall" /%} item into one of the storage blocks
+
+**Saplings:** Two different variants, for the main wooden material of the lower levels (6-8 saplings each)
+
+**Crops:** Only wheat/wheat seeds; can mix in 1-2 durum
+
+**Food:**
+- 32 {% item name="minecraft/bread" /%}
+- 16 {% item name="minecraft/cooked_porkchop" /%} OR 8 of some tier 1 MineColonies food items
+- 16 {% item name="minecraft/baked_potato" /%}
+- 16 {% item name="minecraft/cooked_beef" /%}
+
+Apply a `groundlevel` tag using the {% item name="structurize/sceptertag" /%} on the floor level (any block).
+
+## Building Requirements
+
+Any building can have a certain amount of requirements within the schematic.
+
+### Common Requirements
+
+**Blocks:**
+- Any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks for additional storage
+
+**Tags:**
+- Any number of `sit_in` tags for **indoor** sitting positions for leisure time. Commonly on stairs or slabs.
+- Any number of `sit_out` tags for **outdoor** sitting positions for leisure time. Commonly on stairs or slabs.
+- Any number of `stand_in` tags for **indoor** standing positions for leisure time.
+- Any number of `stand_out` tags for **outdoor** standing positions for leisure time.
+
+### Per-Building Requirements
+
+{% building_requirements_table /%}
+
+All buildings may include any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks to act as additional storage. The amount you include varies per building and level.
+
+## Level Requirements
+
+### Overworld Styles
+
+| Level   | Requirements         |
+| ------- | -------------------- |
+| Level 1 | Very Easy - Wooden   |
+| Level 2 | Easy - Iron          |
+| Level 3 | Medium - Nether      |
+| Level 4 | Difficult - Ocean    |
+| Level 5 | Very Difficult - End |
+
+### Nether Styles
+
+| Level   | Requirements         |
+| ------- | -------------------- |
+| Level 1 | Very Easy - Nether   |
+| Level 2 | Easy - Rarer Nether  |
+| Level 3 | Medium - Overworld   |
+| Level 4 | Difficult - Ocean    |
+| Level 5 | Very Difficult - End |
+
+## Upgradable Decoration Schematics
+
+{% version range="--1.18.2" %}
+Add the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning -- don't include the path in the scan name.
+{% /version %}
+
+{% version range="1.19--" %}
+Put the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
+
+Contrary to the image below, you don't need to enter anything into the decoration controller's GUI before scanning anymore -- but the rest of the image is still useful.
+{% /version %}
+
+![Upgradable Decos](../../../../assets/images/wiki/tutorial/upgradabledecos.png)
+
+## Custom Mineshafts
+
+The size must be 9 x 4 x 9 blocks. They must be named and oriented exactly the same (i.e. do not rotate at all) as in the default style pack -- careful, the names aren't entirely consistent with the layout, so make careful note of which is which. Use an existing style pack as a template along with the {% item name="structurize/sceptersteel" /%} to create the blueprints.
+
+{% version range="--1.18.2" %}
+The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
+{% /version %}
+
+{% version range="1.19--" %}
+The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/mineshafts/`.
+
+It's recommended to use the {% item name="structurize/blocktagsubstitution" /%} to make the mineshafts `invisible`. Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
+{% /version %}
+
+## Custom Quarries
+
+The {% building name="quarry" /%} is split into a "top part" and a "bottom part". Both parts only have one level each (but unlike decorations, are expected to still include the level number in the filename).
+
+The **top part** is constructed by the {% worker name="builder" /%} and is the part outside of the quarry pit -- decorative walls, fences, cranes, racks, etc. This contains the actual {% building name="quarry" /%} hut block itself, which should almost always be on the second y-level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up).
+
+The **bottom part** is constructed by the {% worker name="quarrier" /%} and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can set the anchor manually, it's recommended to use a {% item name="structurize/blocktagsubstitution" /%}. The anchor should normally be at the very top layer. It's also recommended to tag this as `invisible` to avoid cluttering the build menu, since it usually doesn't make sense to let it be built as a standalone decoration.
+
+{% version range="--1.18.2" %}
+The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresponding bottom parts are `simplequarryshaft1` and `mediumquarryshaft1`.
+{% /version %}
+
+{% version range="1.19--" %}
+The top part can be in any folder and under any name (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. Players will usually expect to find them in this folder.
+
+The bottom part should usually be in the same folder with the matching name but with `shaft` before the number -- e.g. `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`.
+
+Alternatively, you can put a `shaft=` tag on the top part's {% building name="quarry" /%} block to specify a different name -- e.g. `shaft=bighole1` to look for `bighole1` in the same folder as the quarry, or `shaft=decorations/quarrypit1` to look in a different folder.
+{% /version %}
+
+When built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing. It may be helpful to build them directly on top of each other and simply scan them as two separate parts.
+
+It is permitted for the quarry to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobblestone or other stone.
+
+{% version range="1.19.2--" %}
+## Plantation Fields
+
+In 1.19.2 and beyond, the plantation has been changed to include fields, just like the {% worker name="farmer" /%}. However, unlike the {% worker name="farmer" /%}, these fields can be completely free-form and created by the style designer. Each field has certain requirements for the {% worker name="planter" /%} to work successfully.
+
+Each plant has 2 separate tags: a field tag and a work tag. Field tags are given to the plantation field block to define what plants this field handles. The work tag is given to positions based on the implementation of the field.
+
+A field can have as many field tags as you want, but not two of the same.
+
+| Plant          | Field tag       | Work tag        | Maximum work tags                         |
+| -------------- | --------------- | --------------- | ----------------------------------------- |
+| Sugar cane     | sugar_field     | sugar           | 20                                        |
+| Cactus         | cactus_field    | cactus          | 20                                        |
+| Bamboo         | bamboo_field    | bamboo          | 20                                        |
+| Cocoa          | cocoa_field     | cocoa           | 5 (totalling 20 positions; details below) |
+| Vine           | vine_field      | vine            | 20                                        |
+| Kelp           | kelp_field      | kelp            | 20                                        |
+| Seagrass       | seagrass_field  | seagrass        | 121 (11 x 11 area)                        |
+| Sea Pickles    | seapickle_field | seapickle       | 10                                        |
+| Glow Berries   | glowb_field     | glowb_vine      | 20                                        |
+| Weeping Vines  | weepv_field     | weepv_vine      | 20                                        |
+| Twisting Vines | twistv_field    | twistv_vine     | 20                                        |
+| Crimson Plants | crimsonp_field  | crimsonp_ground | 121 (11 x 11 area)                        |
+| Warped Plants  | warpedp_field   | warpedp_ground  | 121 (11 x 11 area)                        |
+
+The {% worker name="planter" /%} will always attempt to walk to any adjacent air block around the planting position. If none of the adjacent positions are air, the planter will attempt to walk to the block itself. This prevents the {% worker name="planter" /%} from standing on the block itself whilst placing a block like cactus, after which the {% worker name="planter" /%} would be standing inside of the plant.
+
+> **Note:** Make sure that the {% worker name="planter" /%} can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
+
+> **Note:** Kelp is an exception to this behaviour. To prevent planters from diving into the water, the planter will walk to the first air block above the work-tagged block and look up 26 blocks from the work-tagged block. If this is not possible, they will not be able to harvest this plant, so ensure there is air above the water above the work-tagged block.
+>
+> ![Kelp field movement explanation](../../../../assets/images/wiki/misc/planter_kelp_explanation.png)
+>
+> - The red X is the position where the planter will walk to in the example image.
+> - The blue X is the position where the work tag of the block is.
+
+For downwards-growing plants, the planter will attempt to stand above the work-tagged block and harvest below them. Make sure the planter can reach the top of the stem.
+
+### Vertically Growing Plants (Upwards and Downwards)
+
+A "vertically growing plant" is a plant that grows in a single line, either upwards or downwards; for example, Sugar Cane grows upwards. These plants always break fully when their root blocks are broken. The planter will break them at the second block from the root.
+
+Each of these plants has a minimum and sometimes a maximum growth height. The planter can only harvest them when they reach the minimum. If plants have a maximum height, the planter will have an increasingly higher chance to harvest the taller the plant gets. Plants are only required to grow to the minimum height within the bounds of the schematic.
+
+| Plant          | Minimum height | Maximum height |
+| -------------- | -------------- | -------------- |
+| Sugar cane     | 3              | N/A            |
+| Cactus         | 3              | N/A            |
+| Bamboo         | 6              | 16             |
+| Kelp           | 2              | 25             |
+| Glowberries    | 3              | N/A            |
+| Weeping vines  | 2              | 25             |
+| Twisting vines | 2              | 25             |
+
+### Treeside Plants
+
+Treeside plants grow directly on the sides of trees. For these plants, you only need to tag the tree's stem; the working positions will automatically be set to every horizontally adjacent block of the tagged stem. Currently this is only used for Cocoa beans.
+
+Note that this means the number of tags you can place is the number of working positions divided by 4.
+
+### Bonemealed Fields
+
+Bonemealed fields tell the planter to use bonemeal somewhere on the ground to grow plants as if the player had used bonemeal.
+
+The number of planting positions on these fields is usually unlimited because bonemealing the ground has a set area of effect. However, it is suggested not to make the fields too large; an area around 7x7 is recommended.
+
+| Plant          | Work tag location                                                                                                                                                                                                                                        |                                                                                                   |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Seagrass       | The block directly below the water should be tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks tagged with the work tag.                                              | ![Seagrass explanation](../../../../assets/images/wiki/misc/planter_seagrass_explanation.png)     |
+| Sea pickles    | The block directly below the water should be tagged. The planter will initially place the pickles, then bonemeal them to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks tagged with the work tag.              | ![Sea Pickle explanation](../../../../assets/images/wiki/misc/planter_seapickles_explanation.png) |
+| Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
+| Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
+
+### Percentage-based Harvesting
+
+Percentage-based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants -- such as vines -- then naturally spread to their surroundings without the player's help. The planter has no involvement in this spreading process.
+
+| Plant | Tag location                                                                                                    |
+| ----- | --------------------------------------------------------------------------------------------------------------- |
+| Vine  | Tag all the positions where the vines themselves can spread to, NOT the blocks where the vines are attached to. |
+{% /version %}
+
+## Tips on Building
+
+### Do
+
+- Make all levels of a hut have the same footprint for x, y, and z
+- Place the hut block in the same location with the same rotation
+- Make sure all {% item name="minecolonies/blockminecoloniesrack" /%} and furnaces are in the same location through all levels (to prevent their contents spilling out when they're moved)
+- Use {% item_page name="placeholderblocks" /%} where you want to keep any existing block (including from level to level), like the {% building name="barrackstower" /%} in the {% building name="barracks" /%} schematic
+- Use {% item_page name="placeholderblocks" /%} at or below ground level
+- Place a `groundlevel` tag at ground level if your hut isn't sitting directly on the ground
+- Use only vanilla blocks or Structurize blocks (for official styles)
+- Use a Written Book on a lectern if you want to include some instructions -- keep a copy of the original book and quill elsewhere so you can edit it for pack updates
+- If you do use blocks from additional mods and your buildings would look wrong if those blocks simply vanished, list the mod's id in your pack.json
+
+### Don't
+
+- Use unobtainable items in builds (no command blocks, petrified wood, infested blocks, or mob heads including player heads)
+- Change someone else's style (officially) unless specifically asked to do so
+- Rename schematics after scanning
+- Rename, move, or delete existing buildings after a style pack has been released (it will cause problems for existing colonies)
+- Use capital letters, punctuation, or spaces in your schematic names; all lower-case is preferred
+- Put a number anywhere in the schematic name except right at the end to indicate level
+- Put a unique item (something with special data, such as a written book or a patterned banner) into an item frame, chest, or other container (lecterns are ok); also avoid putting complex-dyed armor anywhere -- single-dyed is ok but remember that the player will have to figure out and duplicate it
+- Use Tag Anchor blocks in schematics that have a Decoration Controller or a Hut Block

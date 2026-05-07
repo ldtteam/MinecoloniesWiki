@@ -91,6 +91,11 @@
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
+
+  & p:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 .table-fit {

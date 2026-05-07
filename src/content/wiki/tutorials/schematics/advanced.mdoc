@@ -1,0 +1,73 @@
+---
+type: page
+title: Advanced Topics
+---
+# Advanced Topics
+
+{% version range="1.19--" %}
+## Job-Specific Buildings
+
+Using the {% item name="structurize/sceptertag" /%}, you can place one or more `job=` tags on a hut block to restrict which workers can actually work in that building. This can be used to create thematic variants of a building type -- for example, a guard tower decorated with archery motifs that only accepts rangers.
+
+The job ID is the same as the worker's ID. A full list of all job IDs is shown below:
+
+{% worker_jobs_table /%}
+
+Some sensible combinations include:
+
+- {% building name="guardtower" /%}: one or more of `job=knight`, `job=ranger`, `job=druid`
+- {% building name="miner" /%}: one of `job=miner` or `job=quarrier`, useful if you want to make a dedicated mineshaft building for the {% worker name="miner" /%} and a smaller surface building for the {% worker name="quarrier" /%}
+
+You can combine multiple `job=` tags on the same hut block to allow more than one worker type. If no `job=` tag is present, any compatible worker can use the building as normal.
+{% /version %}
+
+## Parent/Child Buildings
+
+The {% building name="barracks" /%} and {% building name="barrackstower" /%} are the most well-known example of a parent/child relationship, where the {% building name="barrackstower" plural=true /%} are embedded within the {% building name="barracks" /%} rather than being placed separately with the build tool. It's possible to do the same with any buildings or decorations -- for example, embedding couriers within a warehouse, or fields within a farmer.
+
+Some players like combination buildings since they fit together nicely, but others prefer standalone buildings for the flexibility and creativity they allow. Don't go overboard.
+
+### How It Works
+
+Child buildings work by having the child's hut block pre-filled with the correct schematic pack and path in its block data. Normally, Structurize sets this data when a player places a hut block and selects a schematic. For child buildings, this data is already present in the hut block when the parent schematic is scanned, so the game can immediately trigger the child building process with the correct schematic selected -- without any player input.
+
+This means that simply placing a hut block by hand into a parent schematic won't work correctly; the block needs to carry the right data before scanning.
+
+### Embedding a Child Hut Block
+
+The recommended approach is:
+
+1. Build and scan the child schematic as normal, then paste it into a temporary location in your design world using the {% item name="structurize/sceptergold" /%}. This paste must come from your actual style pack (not your scans folder), so the data is correct.
+2. Pick up a copy of the child's hut block from the pasted structure.
+3. Place that hut block into the parent schematic at the correct position and rotation. Because it was copied from a built structure, it already carries the correct schematic pack and path data.
+4. Scan the parent schematic. Do this for every level of the parent.
+
+> **Note:** The child building can't be upgraded to a higher level than the parent. This limit does not apply if the parent is a non-upgradeable decoration.
+
+> **Note:** Since the parent contains multiple hut blocks, you must explicitly set the anchor block (the main parent hut block, or a {% item name="structurize/blocktagsubstitution" /%} for decorations), otherwise you'll get an ambiguous anchor error.
+
+### Using Placeholder Blocks
+
+The parent schematic needs {% item_page name="placeholderblocks" /%} wherever the child's blocks will go, and the child schematic needs {% item_page name="placeholderblocks" /%} wherever the parent's blocks will go. It can help to build both structures on top of each other during design and then split them into two separate scans.
+
+While it's technically only required to include the child hut block at the level where it's first introduced, it's strongly recommended to include it in every level of the parent. This ensures that moving or repairing the parent, or upgrading it by skipping levels, all work correctly.
+
+{% version range="1.19--" %}
+### Folder Requirements
+
+The child's blueprint must be in the same folder as the parent. This doesn't prevent you from combining buildings that are normally in different folders -- it just means the version intended to be a child must be placed in the parent's folder. You can still keep a separate standalone version of the child in its original folder.
+
+It's not supported for a child to contain its own children -- the nesting is limited to two layers. However, a parent can contain multiple children of the same or different types.
+
+It's strongly recommended to tag any blueprint intended for use only as a child (in the child schematic itself) as `invisible` using the {% item name="structurize/sceptertag" /%}. Child versions are often missing walls or other elements supplied by the parent, so they won't look right or may break game balance if built standalone.
+
+### Auto-Levelling
+
+An alternative to embedding a fixed child level in every parent level is called "auto-levelling": instead of using the same child hut block in every parent level, you paste the matching child level into each parent level (level 1 child into level 1 parent, level 2 into level 2, etc.). With auto-levelling, the builder upgrades the child automatically when upgrading the parent.
+
+The main downside is that auto-levelling doesn't work well for child buildings that have required functional blocks (beds, furnaces, racks, etc.) -- it's best suited to purely decorative children. You should also avoid it where the child is locked behind research that may not yet be unlocked.
+{% /version %}
+
+### Research Loops
+
+Be careful not to create a situation where a player needs to build a child building before they can unlock the parent, and the parent is required to build the child standalone. If you do use a child that is locked behind research, make sure an alternate standalone version also exists.

@@ -1,0 +1,37 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+
+import { getNewestVersion } from '../../../util/version';
+import WorkerNameAllVersions from './names/WorkerNameAllVersions.astro';
+
+const newestVersion = await getNewestVersion();
+
+const workers = await getCollection('workers', (w) => w.data.version.id === newestVersion.id);
+workers.sort((a, b) => a.data.baseId.localeCompare(b.data.baseId));
+---
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Job ID</th>
+      <th>Worker</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      workers.map(async (worker) => {
+        const building = await getEntry(worker.data.primaryBuilding);
+        return (
+          <tr>
+            <td>
+              <code>{worker.data.baseId}</code>
+            </td>
+            <td>
+              <WorkerNameAllVersions buildingBaseId={building.data.baseId} workerBaseId={worker.data.baseId} link />
+            </td>
+          </tr>
+        );
+      })
+    }
+  </tbody>
+</table>

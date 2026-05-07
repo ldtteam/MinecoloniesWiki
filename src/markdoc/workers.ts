@@ -29,3 +29,8 @@ export const worker: Tag = {
 export const workers_table: Tag = {
   render: component('./src/components/wiki/workers/MarkdocWorkersTable.astro')
 };
+
+export const worker_jobs_table: Tag = {
+  render: component('./src/components/wiki/workers/MarkdocWorkerJobsTable.astro'),
+  selfClosing: true
+};

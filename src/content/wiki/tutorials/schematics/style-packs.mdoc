@@ -1,0 +1,43 @@
+---
+type: page
+title: Style Packs
+---
+# Style Packs
+
+{% version range="1.19--" %}
+Styles are structured in so-called style packs. This is similar to a resource pack or data pack, in that it has a file with some metadata about the style (the name, a description, optionally a link to an image, etc.), and a folder structure with the actual files.
+
+Style packs live in the `blueprints` folder within your Minecraft folder. This folder already contains one style pack with your player's name, which holds your scanned files and can be used to test schematics. To create a new style, you need to make a new style pack folder.
+
+## The pack.json
+
+This JSON file contains metadata describing the style:
+
+| Key Name        | Type             | Description                                                                                                            |
+| --------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `"version"`     | number           | Pack version, start at 1, increase it whenever you make a new version of the pack                                      |
+| `"pack-format"` | number           | Descriptor for the pack format, needs to be 1 at the moment                                                            |
+| `"desc"`        | string           | Description of the style. This will be visible in the build tool to explain what your style is about                   |
+| `"authors"`     | array of strings | Names of the authors, in order to credit them. This is visible in the build tool                                       |
+| `"mods"`        | array of strings | Names of used mods (ids). The style is not visible if one of those mods is not installed, to prevent broken schematics |
+| `"name"`        | string           | The name of the style pack                                                                                             |
+| `"icon"`        | string           | The name of the file with an icon which is shown in the style packs selection screen                                   |
+
+You have to increase the version number whenever you release your pack for others to use. You don't need to increase it when testing changes purely in single-player. In particular, whenever the pack is installed on a server, it must have a higher version than what other players already have, or they won't be sent the updates automatically.
+
+## The Folder Structure
+
+There are several folders separating the buildings and decorations into categories. Each of the folders at the highest level can have a couple of icons, named `icon.png` and `icon_disabled.png`, which are shown in the button bar right above the hotbar.
+
+You can download a template folder structure from [GitHub](https://github.com/ldtteam/minecolonies/tree/version/1.19/src/main/resources/blueprints/minecolonies) (template.zip), which contains the icons used for the official styles already. That page also contains examples of how different styles are structured. An overview of which buildings go into which folders can be found [here](https://airtable.com/shruNNUKhTNk0saz5).
+
+With a few specific exceptions, you don't *have* to strictly follow the standard folder structure -- but it's recommended to stick to it when possible to make it easier for others to find specific buildings and decorations. You're free to make extra folders to help group separate but related sets together, especially if you don't want them to appear directly as alternate buildings. For example, if you have two styles of roads, one for early game and one for later game, you could put them in `infrastructure/roads/simple/` and `infrastructure/roads/nice/`.
+
+> **Note:** It's strongly recommended to have each folder contain only files or only subfolders, but not both. While it is possible to mix them, the build tool doesn't display it as nicely. Also, style pack folder names MUST be unique and style names MUST be unique.
+{% /version %}
+
+{% version range="--1.18.2" %}
+## Installing Custom Schematics
+
+Custom schematics go in `*/structurize/schematics`. Unzip the file you downloaded, and put all subfolders in the schematics folder. That folder should contain folders like &lt;stylename&gt;, decorations, walls, supplycamps etc. (depending on which style you installed).
+{% /version %}
