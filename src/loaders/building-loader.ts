@@ -12,7 +12,12 @@ import { getJsonFile, parseYaml } from '../util/files';
 import { getVersionCollectionId } from '../util/version';
 
 const requirementSchema = z.discriminatedUnion('type', [
-  z.object({ type: z.literal('block'), item: z.string(), minAmount: z.number().default(1), note: z.string().optional() }),
+  z.object({
+    type: z.literal('block'),
+    item: z.string(),
+    minAmount: z.number().default(1),
+    note: z.string().optional()
+  }),
   z.object({ type: z.literal('tag'), name: z.string(), note: z.string().optional() }),
   z.object({ type: z.literal('custom'), text: z.string() })
 ]);
