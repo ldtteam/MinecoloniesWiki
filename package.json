@@ -7,7 +7,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "node --max-old-space-size=8192 ./node_modules/astro/bin/astro.mjs build",
+    "build": "node ./node_modules/astro/bin/astro.mjs build",
     "lint": "pnpm run --parallel \"/^lint:.*/\"",
     "lint:astro": "astro check",
     "lint:eslint": "eslint .",

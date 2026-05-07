@@ -5,7 +5,7 @@ COPY package*.json ./
 COPY pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
-RUN NODE_OPTIONS="--optimize-for-size" pnpm run build
+RUN pnpm run build
 
 FROM node:25-alpine AS runtime
 COPY --from=build /app/dist /app/dist
