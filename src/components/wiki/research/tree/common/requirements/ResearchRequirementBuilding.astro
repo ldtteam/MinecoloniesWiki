@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getEntry } from 'astro:content';
 
-import BuildingNameAllVersions from '../../../../../wiki/building/names/BuildingNameAllVersions.astro';
+import BuildingName from '../../../../../wiki/building/names/BuildingName.astro';
 
 interface Props {
   requirement: Extract<CollectionEntry<'research'>['data']['requirements'][number], { type: 'building' }>;
@@ -16,7 +16,7 @@ const building = await getEntry(requirement.building);
   requirement.single ? (
     <>
       <span>
-        <BuildingNameAllVersions buildingBaseId={building.data.baseId} link />
+        <BuildingName building={building} link />
       </span>
       <span> level {requirement.level}</span>
     </>
@@ -24,7 +24,7 @@ const building = await getEntry(requirement.building);
     <>
       <span>One or multiple </span>
       <span>
-        <BuildingNameAllVersions buildingBaseId={building.data.baseId} plural link />
+        <BuildingName building={building} plural link />
       </span>
       <span> totaling at least {requirement.level} levels</span>
     </>

@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
 import { formatForgeString, toTitleCase } from '../../../../../../util/string';
-import BuildingNameAllVersions from '../../../../building/names/BuildingNameAllVersions.astro';
+import BuildingName from '../../../../building/names/BuildingName.astro';
 
 interface Props {
   effect: CollectionEntry<'research'>['data']['effects'][number];
@@ -40,7 +40,7 @@ function parseRegularEffectFormat(
 {
   effectData.data.type === 'building' && (
     <span>
-      Unlocks <BuildingNameAllVersions buildingBaseId={(await getEntry(effectData.data.building)).data.baseId} link />
+      Unlocks <BuildingName building={await getEntry(effectData.data.building)} link />
     </span>
   )
 }
