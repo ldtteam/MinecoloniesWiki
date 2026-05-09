@@ -18,12 +18,8 @@ export default defineConfig({
   image: {
     domains: ['minecraft.wiki']
   },
-  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder()],
-  experimental: {
-    queuedRendering: {
-      enabled: true,
-      poolSize: 4096,
-      contentCache: true
-    }
-  }
+  build: {
+    concurrency: 1
+  },
+  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder()]
 });
