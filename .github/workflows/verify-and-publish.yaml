@@ -1,22 +1,43 @@
-name: Publish to Github Packages
+name: Verify and Publish
 
 on:
-  workflow_run:
-    workflows:
-      - Verify linter
-    branches:
-      - main
-    types:
-      - completed
+  push:
+  pull_request:
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  tag:
+  lint:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Configure NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 25.x
+          check-latest: false
+
+      - name: Configure pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm run lint
+
+  tag:
+    needs:
+      - lint
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       packages: write
@@ -52,7 +73,6 @@ jobs:
           submodules: recursive
 
       - name: Log into registry ${{ env.REGISTRY }}
-        if: github.event_name != 'pull_request'
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
           registry: ${{ env.REGISTRY }}
@@ -73,7 +93,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          push: ${{ github.event_name != 'pull_request' }}
+          push: true
           tags: ${{ env.IMAGE_PATH }}:${{ needs.tag.outputs.tag }}
           labels: ${{ steps.meta.outputs.labels }}
 
