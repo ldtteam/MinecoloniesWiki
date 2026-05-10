@@ -6,6 +6,7 @@ import { getEntry } from 'astro:content';
 import path from 'path';
 
 import type { PartialCollectionEntry } from '../../../../util/util';
+import Slideshow from '../../../common/slideshow/Slideshow.astro';
 import WorkerName from '../../workers/names/WorkerName.astro';
 
 interface Props {
@@ -45,7 +46,7 @@ function sortImages(s1: string, s2: string): number {
 }
 
 const importedImages = import.meta.glob<false, string, { default: ImageMetadata }>(
-  '../../../assets/images/wiki/workers/**/*.png'
+  '../../../../assets/images/wiki/workers/**/*.png'
 );
 const filteredImages = await Promise.all(
   Object.entries(importedImages)
@@ -58,6 +59,12 @@ const primaryTrait = workerData.data.traits?.primary?.name;
 const primaryEffect = workerData.data.traits?.primary?.effect;
 const secondaryTrait = workerData.data.traits?.secondary?.name;
 const secondaryEffect = workerData.data.traits?.secondary?.effect;
+
+const slideshowGroup = `worker-${Math.random().toString(36).slice(2)}`;
+const imagePairs: { default: ImageMetadata }[][] = [];
+for (let i = 0; i < filteredImages.length; i += 2) {
+  imagePairs.push(filteredImages.slice(i, i + 2));
+}
 ---
 
 <p>
@@ -88,31 +95,28 @@ const secondaryEffect = workerData.data.traits?.secondary?.effect;
   </div>
 </div>
 <div class="text-center mb-3">
-  <swiper-container
-    pagination
-    autoplay
-    autoplay-delay="2000"
-    autoplay-pause-on-mouse-enter
-    autoplay-disable-on-interaction="false"
-    loop
-    loop-add-blank-slides
-    slides-per-view="2"
-    slides-per-group="2"
-    no-swiping
-    no-swiping-selector="*"
-    width="300"
-    space-between="20"
-    style={{
-      width: '300px',
-      '--swiper-pagination-bottom': 0
-    }}
-  >
+  <Slideshow group={slideshowGroup} autoplay={2000} navigation pagination class="w-100">
     {
-      filteredImages.map((image) => (
-        <swiper-slide>
-          <Image src={image.default} alt="" width={150} />
-        </swiper-slide>
+      imagePairs.map((pair) => (
+        <div data-slide class="image-pair">
+          {pair.map((image) => (
+            <Image src={image.default} alt="" width={150} />
+          ))}
+        </div>
       ))
     }
-  </swiper-container>
+  </Slideshow>
 </div>
+
+<style>
+  .image-pair {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .image-pair :global(img) {
+    flex: 1;
+    min-width: 0;
+    height: auto;
+  }
+</style>

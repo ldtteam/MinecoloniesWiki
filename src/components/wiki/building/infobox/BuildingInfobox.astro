@@ -4,10 +4,13 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import { getVersionedEntry } from '../../../../util/version';
 import Infobox from '../../../common/infobox/Infobox.astro';
 import RecipeGrid from '../../../common/infobox/RecipeGrid.astro';
+import Slideshow from '../../../common/slideshow/Slideshow.astro';
 import BlockImage from '../../images/BlockImage.astro';
 import ResearchName from '../../research/names/ResearchName.astro';
 import BuildingName from '../names/BuildingName.astro';
 import BuildingInfoboxWorker from './BuildingInfoboxWorker.astro';
+
+const slideshowGroup = `building-${Math.random().toString(36).slice(2)}`;
 
 interface Props {
   building: CollectionEntry<'buildings'>;
@@ -66,20 +69,20 @@ switch (building.data.rotation ?? 0) {
   <BuildingName slot="title" building={building} />
 
   <div class="text-center">
-    <swiper-container navigation slides-per-view="1" slides-per-group="1">
+    <Slideshow group={slideshowGroup} navigation>
       {
         blockhutItems.map((blockhutItem) => (
           <>
-            <swiper-slide>
+            <div data-slide>
               <BlockImage item={blockhutItem} size={300} rotation={building.data.rotation} />
-            </swiper-slide>
-            <swiper-slide>
+            </div>
+            <div data-slide>
               <BlockImage item={blockhutItem} size={300} rotation={oppositeRotation} />
-            </swiper-slide>
+            </div>
           </>
         ))
       }
-    </swiper-container>
+    </Slideshow>
   </div>
 
   <RecipeGrid recipes={recipes} version={version} />
@@ -125,13 +128,3 @@ switch (building.data.rotation ?? 0) {
     )
   }
 </Infobox>
-
-<style lang="scss">
-  swiper-container {
-    --swiper-navigation-size: 22px;
-  }
-
-  swiper-slide {
-    width: 100% !important;
-  }
-</style>

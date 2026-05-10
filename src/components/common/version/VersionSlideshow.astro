@@ -1,0 +1,141 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  version: CollectionEntry<'versions'>;
+  group: string;
+  delay?: number;
+  class?: string;
+}
+
+const { version, group, delay = 2000, class: className } = Astro.props;
+---
+
+<div
+  class:list={[className]}
+  data-slideshow-versioned
+  data-slideshow-group={group}
+  data-version={version.data.order}
+  data-delay={delay}
+  style="display: contents;"
+>
+  <slot />
+</div>
+
+<script>
+  interface GroupState {
+    timer: ReturnType<typeof setInterval> | undefined;
+    index: number;
+    frameCount: number;
+  }
+
+  const groups = new Map<string, GroupState>();
+
+  function getSlots(group: string): HTMLElement[] {
+    const container = document.querySelector(`[data-slideshow-versioned][data-slideshow-group="${group}"]`);
+    if (!container) {
+      return [];
+    }
+    return Array.from(container.querySelectorAll<HTMLElement>('[data-slideshow-slot]'));
+  }
+
+  function getFrames(slot: HTMLElement): HTMLElement[] {
+    return Array.from(slot.querySelectorAll<HTMLElement>(':scope > [data-item-id]'));
+  }
+
+  function goToIndex(group: string, state: GroupState, nextIndex: number) {
+    const slots = getSlots(group);
+    const pairs: [HTMLElement, HTMLElement][] = [];
+    slots.forEach((slot) => {
+      const frames = getFrames(slot);
+      const current = frames[state.index];
+      const next = frames[nextIndex];
+      if (current && next) {
+        pairs.push([current, next]);
+      }
+    });
+
+    pairs.forEach(([, next]) => {
+      next.style.opacity = '1';
+    });
+
+    setTimeout(() => {
+      pairs.forEach(([current]) => {
+        current.style.transition = 'none';
+        current.style.opacity = '0';
+        requestAnimationFrame(() => {
+          current.style.transition = '';
+        });
+      });
+    }, 300);
+
+    state.index = nextIndex;
+  }
+
+  function startGroup(group: string, delay: number) {
+    if (groups.has(group)) {
+      return;
+    }
+    const slots = getSlots(group);
+    if (slots.length === 0) {
+      return;
+    }
+    const frameCount = getFrames(slots[0]).length;
+    if (frameCount <= 1) {
+      return;
+    }
+    const state: GroupState = { index: 0, frameCount, timer: undefined };
+    state.timer = setInterval(() => {
+      goToIndex(group, state, (state.index + 1) % state.frameCount);
+    }, delay);
+    groups.set(group, state);
+  }
+
+  function stopGroup(group: string) {
+    const state = groups.get(group);
+    if (state) {
+      if (state.timer !== undefined) {
+        clearInterval(state.timer);
+      }
+      groups.delete(group);
+    }
+  }
+
+  function updateSlideshows(version: string) {
+    const containers = document.querySelectorAll<HTMLElement>('[data-slideshow-versioned]');
+    containers.forEach((container) => {
+      const group = container.dataset.slideshowGroup!;
+      const delay = Number(container.dataset.delay ?? 2000);
+      if (container.dataset.version?.toString() === version.toString()) {
+        startGroup(group, delay);
+      } else {
+        stopGroup(group);
+      }
+    });
+  }
+
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      if (
+        mutation.type === 'attributes' &&
+        mutation.attributeName === 'data-version' &&
+        mutation.target instanceof HTMLElement
+      ) {
+        updateSlideshows(mutation.target.dataset.version!);
+      }
+    }
+  });
+
+  function setup() {
+    groups.forEach((state) => {
+      if (state.timer !== undefined) {
+        clearInterval(state.timer);
+      }
+    });
+    groups.clear();
+    observer.observe(document.body, { attributes: true });
+    updateSlideshows(document.body.dataset.version!);
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

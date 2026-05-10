@@ -165,13 +165,6 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
   .hide {
     display: none;
   }
-
-  swiper-container {
-    --swiper-navigation-size: '22px';
-    --swiper-navigation-color: $text-secondary;
-    min-width: 100%;
-    overflow: hidden;
-  }
 </style>
 
 <script>
@@ -287,20 +280,22 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
                 data-filter-size-y="${schematic.size.y}"
                 data-filter-size-z="${schematic.size.z}"
                 data-filter-invisible="${schematic.invisible}">
-                <swiper-container ${schematic.images.length > 1 ? 'loop="true"' : ''} navigation="true" effect="fade" class="card-img-top">
+                <div class="slideshow card-img-top w-100" data-slideshow-group="schematic-${schematic.id.replace(/[^a-z0-9]/gi, '-')}">
+                  <button class="slideshow-prev" data-slideshow-prev aria-label="Previous">&#8249;</button>
+                  <div class="slideshow-track" data-slideshow-track>
             `;
 
             for (let i = 0; i < schematic.images.length; i++) {
               const image = schematic.images[i];
               const imageSrc = typeof image === 'string' ? image : image.src;
-              html += `
-                <swiper-slide lazy="true" class="w-100">
-                  <img src="${imageSrc}" alt="${schematic.id} schematic icon ${i}" width="250" class="rounded-top w-100" />
-                </swiper-slide>
-              `;
+              html += `<div data-slide><img src="${imageSrc}" alt="${schematic.id} schematic icon ${i}" width="250" class="rounded-top w-100" /></div>`;
             }
 
-            html += `</swiper-container><div class="card-body"><b>`;
+            html += `
+                  </div>
+                  <button class="slideshow-next" data-slideshow-next aria-label="Next">&#8250;</button>
+                </div>
+                <div class="card-body"><b>`;
 
             if (schematic.type === 'building') {
               // For building type, show building name if available
@@ -326,6 +321,7 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
       }
 
       filterList.innerHTML = html;
+      document.dispatchEvent(new CustomEvent('slideshow:setup'));
     } catch (error) {
       console.error('Error fetching schematics:', error);
       loadingIndicator.style.display = 'none';

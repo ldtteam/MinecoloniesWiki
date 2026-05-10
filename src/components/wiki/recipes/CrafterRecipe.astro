@@ -1,7 +1,10 @@
 ---
+import { getEntry } from 'astro:content';
 import { type CollectionEntry } from 'astro:content';
 
 import type { RecipeSchema } from '../../../schemas/item';
+import { resolveSlots } from '../../../util/recipe';
+import VersionSlideshow from '../../common/version/VersionSlideshow.astro';
 import RecipeSlot from './RecipeSlot.astro';
 
 interface Props {
@@ -10,20 +13,44 @@ interface Props {
 }
 
 const { recipe, version } = Astro.props;
+
+const inputSlots = recipe.inputs.map((input) => input.item);
+const inputCounts = recipe.inputs.map((input) => input.count);
+const isAir = recipe.intermediate.id.endsWith('minecraft/air');
+const intermediate = isAir ? undefined : await getEntry(recipe.intermediate);
+const output = await getEntry(recipe.output);
+const { frames } = await resolveSlots(inputSlots);
+
+
+const group = `crafter-${Math.random().toString(36).slice(2)}`;
+const slotColumns = inputSlots.map((_, i) => frames.map((frame) => frame[i]));
 ---
 
-<div class="inputs">
-  {recipe.inputs.map((input) => <RecipeSlot items={input.item} amount={input.count} version={version} />)}
-</div>
-<div class="intermediate">
-  <RecipeSlot items={[recipe.intermediate]} version={version} />
-  {recipe.tool && <div class="tool">{recipe.tool}</div>}
-</div>
-<div class="output">
-  <RecipeSlot items={[recipe.output]} amount={recipe.amount} large version={version} />
-</div>
+<VersionSlideshow version={version} group={group}>
+  <div class="recipe-frame">
+    <div class="inputs">
+      {slotColumns.map((items, i) => <RecipeSlot items={items} amount={inputCounts[i]} />)}
+    </div>
+    {(intermediate || recipe.tool) && (
+      <div class="intermediate">
+        {intermediate && <RecipeSlot items={[intermediate]} />}
+        {recipe.tool && <div class="tool">{recipe.tool}</div>}
+      </div>
+    )}
+    <div class="output">
+      <RecipeSlot items={[output]} amount={recipe.amount} large />
+    </div>
+  </div>
+</VersionSlideshow>
 
 <style>
+  .recipe-frame {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+  }
+
   .inputs {
     display: grid;
     grid-template-columns: repeat(3, 2em);

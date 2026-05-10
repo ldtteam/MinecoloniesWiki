@@ -1,56 +1,44 @@
 ---
-import { getEntries } from 'astro:content';
-import { type CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
-import type { RecipeItem } from '../../../schemas/item';
-import VersionSwiper from '../../common/version/VersionSwiper.astro';
 import ItemImage from '../images/ItemImage.astro';
 
 interface Props {
-  items: RecipeItem | undefined;
-  version: CollectionEntry<'versions'>;
+  items: (CollectionEntry<'items'> | undefined)[];
   amount?: number;
   large?: boolean;
 }
 
-const { items, version, amount = 1, large = false } = Astro.props;
-
-const allItems = items ? await getEntries(items) : [];
+const { items, amount = 1, large = false } = Astro.props;
 ---
 
-{
-  (
-    <div class:list={['invslot', large ? 'invslot-large' : '']}>
-      <VersionSwiper
-        version={version}
-        loop={allItems.length > 1}
-        autoplay={{
-          delay: 1000
-        }}
-        effect="fade"
-        noSwiping
-        noSwipingSelector="*"
+<div class:list={['invslot', large ? 'invslot-large' : '']} data-slideshow-slot>
+  {
+    items.map((item, i) => (
+      <div
         class="invslot-item"
+        data-item-id={item?.id ?? ''}
+        style={
+          i > 0
+            ? 'position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease;'
+            : 'transition: opacity 0.3s ease;'
+        }
       >
-        {allItems.map((item) => (
-          <swiper-slide>
-            <div class="invslot-wrapper">
-              <ItemImage item={item} size={32} />
-            </div>
-          </swiper-slide>
-        ))}
-      </VersionSwiper>
+        <div class="invslot-wrapper">{item && <ItemImage item={item} size={32} />}</div>
+      </div>
+    ))
+  }
 
-      {amount > 1 && (
-        <div class="invslot-stacksize">
-          <span>{amount}</span>
-        </div>
-      )}
-    </div>
-  )
-}
+  {
+    amount > 1 && (
+      <div class="invslot-stacksize">
+        <span>{amount}</span>
+      </div>
+    )
+  }
+</div>
 
-<style style="scss">
+<style lang="scss">
   img {
     max-width: none;
   }

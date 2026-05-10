@@ -24,7 +24,8 @@ export const workerBaseSchema = (image: ImageFunction) =>
         })
         .optional()
     }),
-    primaryBuilding: reference('buildings')
+    primaryBuilding: reference('buildings'),
+    baseId: z.string()
   });
 
 export const workerSchema = (image: ImageFunction) => workerBaseSchema(image).and(versionedObjectSchema);

@@ -141,6 +141,7 @@ const minecoloniesCrafterRecipeSchema = z.object({
   inputs: z.array(
     z.object({
       item: z.string().optional(),
+      id: z.string().optional(),
       count: z.number().default(1)
     })
   ),
@@ -156,6 +157,7 @@ const minecoloniesCrafterRecipeSchema = z.object({
     .array(
       z.object({
         item: z.string().optional(),
+        id: z.string().optional(),
         count: z.number().default(1)
       })
     )
@@ -316,9 +318,9 @@ async function convertCrafterRecipe(
   const outputCount = (typeof recipe.result === 'object' ? recipe.result.count : recipe.count) ?? 1;
 
   const inputs = recipe.inputs
-    .filter((f) => f.item)
+    .filter((f) => f.item ?? f.id)
     .map((input) => ({
-      item: [resourceLocationToWikiReference(parseResourceLocation(input.item ?? ''), version, 'items')],
+      item: [resourceLocationToWikiReference(parseResourceLocation(input.item ?? input.id ?? ''), version, 'items')],
       count: input.count
     }));
 
@@ -359,9 +361,9 @@ async function convertCrafterRecipe(
     conditions,
     additionalOutput:
       recipe['additional-output']
-        ?.filter((f) => f.item)
+        ?.filter((f) => f.item ?? f.id)
         .map((out) => ({
-          item: [resourceLocationToWikiReference(parseResourceLocation(out.item ?? ''), version, 'items')],
+          item: [resourceLocationToWikiReference(parseResourceLocation(out.item ?? out.id ?? ''), version, 'items')],
           count: out.count
         })) ?? [],
     tool: recipe.tool,

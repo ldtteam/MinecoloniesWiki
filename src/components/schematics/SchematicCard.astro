@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
+import Slideshow from '../common/slideshow/Slideshow.astro';
+
 export type Schematic = CollectionEntry<'schematics'>['data']['schematics'][number];
 
 interface Props {
@@ -12,6 +14,7 @@ interface Props {
 const { schematic } = Astro.props;
 
 const building = schematic.type === 'building' ? await getEntry(schematic.building) : undefined;
+const slideshowGroup = `schematic-${Math.random().toString(36).slice(2)}`;
 ---
 
 <div
@@ -23,21 +26,15 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
   data-filter-size-z={schematic.size.z}
   data-filter-invisible={schematic.invisible}
 >
-  <swiper-container loop={schematic.images.length > 1} navigation effect="fade" class="card-img-top">
+  <Slideshow group={slideshowGroup} navigation class="card-img-top w-100">
     {
       schematic.images.map((image, idx) => (
-        <swiper-slide lazy="true" class="w-100">
-          <Image
-            src={image}
-            alt={schematic.id + ' schematic icon ' + idx}
-            width={250}
-            class="rounded-top"
-            class="w-100"
-          />
-        </swiper-slide>
+        <div data-slide>
+          <Image src={image} alt={schematic.id + ' schematic icon ' + idx} width={250} class="rounded-top w-100" />
+        </div>
       ))
     }
-  </swiper-container>
+  </Slideshow>
   <div class="card-body">
     <b>
       {
@@ -71,12 +68,5 @@ const building = schematic.type === 'building' ? await getEntry(schematic.buildi
 
   .hide {
     display: none;
-  }
-
-  swiper-container {
-    --swiper-navigation-size: '22px';
-    --swiper-navigation-color: $text-secondary;
-    min-width: 100%;
-    overflow: hidden;
   }
 </style>

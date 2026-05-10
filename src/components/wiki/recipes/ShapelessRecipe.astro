@@ -1,7 +1,10 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 import type { RecipeSchema } from '../../../schemas/item';
+import { resolveSlots } from '../../../util/recipe';
+import VersionSlideshow from '../../common/version/VersionSlideshow.astro';
 import RecipeSlot from './RecipeSlot.astro';
 
 interface Props {
@@ -10,16 +13,34 @@ interface Props {
 }
 
 const { recipe, version } = Astro.props;
+
+const inputSlots = recipe.items.map((item) => item.item);
+const output = await getEntry(recipe.output);
+const { frames } = await resolveSlots(inputSlots);
+
+const group = `shapeless-${Math.random().toString(36).slice(2)}`;
+const slotColumns = inputSlots.map((_, i) => frames.map((frame) => frame[i]));
 ---
 
-<div class="inputs">
-  {recipe.items.map((item) => <RecipeSlot items={item.item} version={version} />)}
-</div>
-<div class="output">
-  <RecipeSlot items={[recipe.output]} amount={recipe.amount} large version={version} />
-</div>
+<VersionSlideshow version={version} group={group}>
+  <div class="recipe-frame">
+    <div class="inputs">
+      {slotColumns.map((items) => <RecipeSlot items={items} />)}
+    </div>
+    <div class="output">
+      <RecipeSlot items={[output]} amount={recipe.amount} large />
+    </div>
+  </div>
+</VersionSlideshow>
 
 <style>
+  .recipe-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
   .inputs {
     display: grid;
     grid-template-columns: repeat(3, 2em);
