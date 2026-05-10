@@ -12,211 +12,34 @@ const { group, autoplay, navigation = false, pagination = false, class: classNam
 
 <div class:list={['slideshow-wrapper', className]} data-slideshow-group={group} data-autoplay={autoplay}>
   <div class="slideshow">
-    {
-      navigation && (
-        <button class="slideshow-prev" data-slideshow-prev aria-label="Previous">
-          &#8249;
-        </button>
-      )
-    }
     <div class="slideshow-track" data-slideshow-track>
       <slot />
+      {
+        navigation && (
+          <button class="slideshow-prev" data-slideshow-prev aria-label="Previous" tabindex="-1">
+            &#8249;
+          </button>
+        )
+      }
+      {
+        navigation && (
+          <button class="slideshow-next" data-slideshow-next aria-label="Next" tabindex="-1">
+            &#8250;
+          </button>
+        )
+      }
     </div>
-    {
-      navigation && (
-        <button class="slideshow-next" data-slideshow-next aria-label="Next">
-          &#8250;
-        </button>
-      )
-    }
   </div>
   {pagination && <div class="slideshow-dots" data-slideshow-dots />}
 </div>
 
 <script>
-  interface GroupState {
-    timer: ReturnType<typeof setInterval> | undefined;
-    index: number;
-    frameCount: number;
-  }
-
-  const groups = new Map<string, GroupState>();
-
-  function getSlides(slideshowEl: HTMLElement): HTMLElement[] {
-    const track = slideshowEl.querySelector<HTMLElement>('[data-slideshow-track]');
-    if (!track) {
-      return [];
-    }
-    return Array.from(track.querySelectorAll<HTMLElement>(':scope > [data-slide]'));
-  }
-
-  function goToIndex(slideshowEl: HTMLElement, state: GroupState, nextIndex: number) {
-    const slides = getSlides(slideshowEl);
-    const current = slides[state.index];
-    const next = slides[nextIndex];
-    if (!current || !next) {
-      return;
-    }
-
-    next.style.opacity = '1';
-    current.style.opacity = '0';
-    setTimeout(() => {
-      current.style.transition = 'none';
-      requestAnimationFrame(() => {
-        current.style.transition = '';
-      });
-    }, 300);
-
-    state.index = nextIndex;
-
-    slideshowEl.querySelectorAll<HTMLElement>('[data-slideshow-dot]').forEach((dot, i) => {
-      dot.classList.toggle('active', i === nextIndex);
-    });
-  }
-
-  function resetAutoplay(slideshowEl: HTMLElement, state: GroupState, autoplay: number | undefined) {
-    if (state.timer !== undefined) {
-      clearInterval(state.timer);
-      state.timer = undefined;
-    }
-    if (autoplay !== undefined && state.frameCount > 1) {
-      state.timer = setInterval(() => {
-        goToIndex(slideshowEl, state, (state.index + 1) % state.frameCount);
-      }, autoplay);
-    }
-  }
-
-  function setupSlideshow(slideshowEl: HTMLElement) {
-    const group = slideshowEl.dataset.slideshowGroup!;
-    const slides = getSlides(slideshowEl);
-
-    slides.forEach((slide, i) => {
-      slide.style.transition = 'opacity 0.3s ease';
-      if (i > 0) {
-        slide.style.opacity = '0';
-      }
-    });
-
-    const dotsEl = slideshowEl.querySelector('[data-slideshow-dots]');
-    if (dotsEl) {
-      dotsEl.innerHTML = slides
-        .map(
-          (_, i) =>
-            `<button class="slideshow-dot${i === 0 ? ' active' : ''}" data-slideshow-dot aria-label="Go to slide ${i + 1}"></button>`
-        )
-        .join('');
-    }
-
-    const state: GroupState = { index: 0, frameCount: slides.length, timer: undefined };
-    groups.set(group, state);
-
-    slideshowEl.querySelector('[data-slideshow-prev]')?.addEventListener('click', () => {
-      resetAutoplay(slideshowEl, state, autoplay);
-      goToIndex(slideshowEl, state, (state.index - 1 + state.frameCount) % state.frameCount);
-    });
-
-    slideshowEl.querySelector('[data-slideshow-next]')?.addEventListener('click', () => {
-      resetAutoplay(slideshowEl, state, autoplay);
-      goToIndex(slideshowEl, state, (state.index + 1) % state.frameCount);
-    });
-
-    dotsEl?.querySelectorAll<HTMLElement>('[data-slideshow-dot]').forEach((dot, i) => {
-      dot.addEventListener('click', () => goToIndex(slideshowEl, state, i));
-    });
-
-    const autoplay = slideshowEl.dataset.autoplay ? Number(slideshowEl.dataset.autoplay) : undefined;
-    if (autoplay !== undefined && slides.length > 1) {
-      state.timer = setInterval(() => {
-        goToIndex(slideshowEl, state, (state.index + 1) % state.frameCount);
-      }, autoplay);
-    }
-  }
-
-  function setup() {
-    groups.forEach((state) => {
-      if (state.timer !== undefined) {
-        clearInterval(state.timer);
-      }
-    });
-    groups.clear();
-
-    document.querySelectorAll<HTMLElement>('[data-slideshow-group]').forEach((el) => {
-      if (!el.dataset.slideshowVersioned) {
-        setupSlideshow(el);
-      }
-    });
-  }
-
-  function setupNew() {
-    document.querySelectorAll<HTMLElement>('[data-slideshow-group]').forEach((el) => {
-      if (!el.dataset.slideshowVersioned && !groups.has(el.dataset.slideshowGroup!)) {
-        setupSlideshow(el);
-      }
-    });
-  }
+  import { setup, setupNew } from '../../../scripts/slideshow';
 
   document.addEventListener('astro:page-load', setup);
   document.addEventListener('slideshow:setup', setupNew);
 </script>
 
-<style>
-  .slideshow-wrapper {
-    display: inline-block;
-  }
-
-  .slideshow {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  .slideshow-track {
-    display: grid;
-    flex: 1;
-  }
-
-  .slideshow-track > :global([data-slide]) {
-    grid-area: 1 / 1;
-  }
-
-  .slideshow-prev,
-  .slideshow-next {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2em;
-    line-height: 1;
-    padding: 0 0.1em;
-    color: inherit;
-    opacity: 0.5;
-    user-select: none;
-    flex-shrink: 0;
-  }
-
-  .slideshow-prev:hover,
-  .slideshow-next:hover {
-    opacity: 1;
-  }
-
-  .slideshow-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.3em;
-    margin-top: 0.4em;
-  }
-
-  .slideshow-dots > :global(.slideshow-dot) {
-    width: 0.45em;
-    height: 0.45em;
-    border-radius: 50%;
-    border: none;
-    background: currentColor;
-    opacity: 0.3;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  .slideshow-dots > :global(.slideshow-dot.active) {
-    opacity: 1;
-  }
+<style is:global>
+  @import '../../../css/slideshow.scss';
 </style>

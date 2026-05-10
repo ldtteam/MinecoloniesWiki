@@ -121,6 +121,7 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
 <style lang="scss" is:global>
   @use 'sass:map';
   @import '../../css/bootstrap-vars';
+  @import '../../css/slideshow.scss';
 
   .schematic-pack {
     display: none;
@@ -168,6 +169,8 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
 </style>
 
 <script>
+  import { setupNew, clearGroups } from '../../scripts/slideshow';
+
   const FILTER_ID_PACK = 'pack';
   const FILTER_ID_NAME = 'name';
   const FILTER_ID_BUILDING = 'building';
@@ -280,9 +283,9 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
                 data-filter-size-y="${schematic.size.y}"
                 data-filter-size-z="${schematic.size.z}"
                 data-filter-invisible="${schematic.invisible}">
-                <div class="slideshow card-img-top w-100" data-slideshow-group="schematic-${schematic.id.replace(/[^a-z0-9]/gi, '-')}">
-                  <button class="slideshow-prev" data-slideshow-prev aria-label="Previous">&#8249;</button>
-                  <div class="slideshow-track" data-slideshow-track>
+                <div class="slideshow-wrapper card-img-top w-100" data-slideshow-group="schematic-${schematic.id.replace(/[^a-z0-9]/gi, '-')}">
+                  <div class="slideshow">
+                    <div class="slideshow-track" data-slideshow-track>
             `;
 
             for (let i = 0; i < schematic.images.length; i++) {
@@ -292,8 +295,10 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
             }
 
             html += `
+                      <button class="slideshow-prev" data-slideshow-prev aria-label="Previous" tabindex="-1">&#8249;</button>
+                      <button class="slideshow-next" data-slideshow-next aria-label="Next" tabindex="-1">&#8250;</button>
+                    </div>
                   </div>
-                  <button class="slideshow-next" data-slideshow-next aria-label="Next">&#8250;</button>
                 </div>
                 <div class="card-body"><b>`;
 
@@ -320,8 +325,9 @@ const buildings = await getCollection('buildings', (b) => b.data.version.id === 
         html += `</div></div>`;
       }
 
+      clearGroups(filterList);
       filterList.innerHTML = html;
-      document.dispatchEvent(new CustomEvent('slideshow:setup'));
+      setupNew();
     } catch (error) {
       console.error('Error fetching schematics:', error);
       loadingIndicator.style.display = 'none';
