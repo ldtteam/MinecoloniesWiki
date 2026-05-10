@@ -6,6 +6,7 @@ import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
 import purgecss from 'astro-purgecss';
 
+import imagePruner from './src/integration/image-pruner';
 import symlinkBuilder from './src/integration/symlink-builder';
 
 // https://astro.build/config
@@ -21,5 +22,5 @@ export default defineConfig({
   build: {
     concurrency: 1
   },
-  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder()]
+  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder(), imagePruner()]
 });
