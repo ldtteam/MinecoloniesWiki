@@ -21,7 +21,6 @@ const intermediate = isAir ? undefined : await getEntry(recipe.intermediate);
 const output = await getEntry(recipe.output);
 const { frames } = await resolveSlots(inputSlots);
 
-
 const group = `crafter-${Math.random().toString(36).slice(2)}`;
 const slotColumns = inputSlots.map((_, i) => frames.map((frame) => frame[i]));
 ---
@@ -31,12 +30,14 @@ const slotColumns = inputSlots.map((_, i) => frames.map((frame) => frame[i]));
     <div class="inputs">
       {slotColumns.map((items, i) => <RecipeSlot items={items} amount={inputCounts[i]} />)}
     </div>
-    {(intermediate || recipe.tool) && (
-      <div class="intermediate">
-        {intermediate && <RecipeSlot items={[intermediate]} />}
-        {recipe.tool && <div class="tool">{recipe.tool}</div>}
-      </div>
-    )}
+    {
+      (intermediate || recipe.tool) && (
+        <div class="intermediate">
+          {intermediate && <RecipeSlot items={[intermediate]} />}
+          {recipe.tool && <div class="tool">{recipe.tool}</div>}
+        </div>
+      )
+    }
     <div class="output">
       <RecipeSlot items={[output]} amount={recipe.amount} large />
     </div>
