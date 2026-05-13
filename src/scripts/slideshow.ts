@@ -51,7 +51,10 @@ function resetAutoplay(slideshowEl: HTMLElement, state: GroupState, autoplay: nu
 }
 
 function setupSlideshow(slideshowEl: HTMLElement) {
-  const group = slideshowEl.dataset.slideshowGroup!;
+  const group = slideshowEl.dataset.slideshowGroup ?? '';
+  if (!group) {
+    return;
+  }
   const slides = getSlides(slideshowEl);
 
   slides.forEach((slide, i) => {
@@ -119,7 +122,7 @@ export function setup() {
 
 export function setupNew() {
   document.querySelectorAll<HTMLElement>('[data-slideshow-group]').forEach((el) => {
-    if (!el.dataset.slideshowVersioned && !groups.has(el.dataset.slideshowGroup!)) {
+    if (!el.dataset.slideshowVersioned && !groups.has(el.dataset.slideshowGroup ?? '')) {
       setupSlideshow(el);
     }
   });
@@ -131,8 +134,8 @@ export function clearGroups(container: HTMLElement) {
     if (!el || !container.contains(el)) {
       continue;
     }
-    const state = groups.get(key)!;
-    if (state.timer !== undefined) {
+    const state = groups.get(key);
+    if (state?.timer !== undefined) {
       clearInterval(state.timer);
     }
     groups.delete(key);
