@@ -1,3 +1,8 @@
-* @ldtteam/minecolonies-wiki-admin @ldtteam/minecolonies-wiki-contributor
+# Default ownership
+* @ldtteam/minecolonies-wiki-admin
 
-src/content/** @ldtteam/minecolonies-wiki-reviewer @ldtteam/minecolonies-wiki-admin @ldtteam/minecolonies-wiki-contributor
+# Technical wiki implementation
+src/** @ldtteam/minecolonies-wiki-contributor @ldtteam/minecolonies-wiki-admin
+
+# Content/pages/docs
+src/content/** @ldtteam/minecolonies-wiki-editor @ldtteam/minecolonies-wiki-contributor @ldtteam/minecolonies-wiki-admin
