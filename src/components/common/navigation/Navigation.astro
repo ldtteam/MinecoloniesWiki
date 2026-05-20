@@ -35,6 +35,16 @@ const expand = 'lg';
           <MainPages />
         </ul>
         <ul class="navbar-nav flex-row align-items-center">
+          <li class="nav-item d-none d-lg-block">
+            <a
+              class="nav-link report-bug-link"
+              href="https://github.com/ldtteam/minecolonies/issues/new/choose"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Report a Bug <Icon name="material-symbols-light:open-in-new" size={14} />
+            </a>
+          </li>
           <Socials />
         </ul>
       </div>
@@ -75,12 +85,29 @@ const expand = 'lg';
             <ul class="nav">
               <Socials />
             </ul>
+            <hr />
+            <a
+              class="report-bug-link"
+              href="https://github.com/ldtteam/minecolonies/issues/new/choose"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Report a Bug <Icon name="material-symbols-light:open-in-new" size={14} />
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </Ribbon>
+
+<style>
+  .report-bug-link {
+    font-size: 0.85em;
+    white-space: nowrap;
+    color: inherit;
+  }
+</style>
 
 {
   isWiki && (

@@ -1,0 +1,151 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+import Banner from '../components/common/basic/Banner.astro';
+import SocialBanner from '../components/common/SocialBanner.astro';
+import SponsorRow from '../components/SponsorRow.astro';
+import SupporterRow from '../components/SupporterRow.astro';
+import MemberColumn from '../components/team/MemberColumn.astro';
+import Layout from '../layouts/Default.astro';
+
+type AllMembers = Record<
+  CollectionEntry<'team'>['data']['role'],
+  {
+    active: CollectionEntry<'team'>[];
+    inactive: CollectionEntry<'team'>[];
+  }
+>;
+
+const members = await getCollection('team').then((members) =>
+  members
+    .toSorted((a, b) => a.data.sort - b.data.sort || a.id.localeCompare(b.id))
+    .reduce<AllMembers>(
+      (prev, curr) => {
+        if (curr.data.inactive) {
+          prev[curr.data.role].inactive.push(curr);
+        } else {
+          prev[curr.data.role].active.push(curr);
+        }
+        return prev;
+      },
+      {
+        lead: { active: [], inactive: [] },
+        dev: { active: [], inactive: [] },
+        art: { active: [], inactive: [] },
+        voice: { active: [], inactive: [] }
+      }
+    )
+);
+
+const sponsors = await getCollection('sponsors');
+const supporters = await getCollection('supporters');
+---
+
+<Layout title="Community" header="Community" fluid>
+  <div class="container">
+    <p>
+      MineColonies is developed and maintained by a passionate community of volunteers. If you enjoy the mod, consider
+      supporting us — it helps keep development going!
+    </p>
+
+    <div class="socials-grid mb-3">
+      <SocialBanner id="patreon" center>Become a Patron</SocialBanner>
+      <SocialBanner id="discord" center>Join our Discord</SocialBanner>
+      <SocialBanner id="twitch" center>Subscribe on Twitch</SocialBanner>
+      <SocialBanner id="paypal" center>Donate via PayPal</SocialBanner>
+    </div>
+  </div>
+
+  <Banner center>Sponsors</Banner>
+
+  <div class="container sponsors-grid my-3">
+    {sponsors.map((sponsor) => <SponsorRow sponsor={sponsor} />)}
+  </div>
+
+  <Banner center>Our Top Supporters</Banner>
+
+  <div class="container support-grid my-3">
+    {supporters.map((supporter) => <SupporterRow supporter={supporter} />)}
+  </div>
+
+  <Banner center>Our Team</Banner>
+
+  <div class="container my-3">
+    <div class="team-grid grid">
+      <div class="team-column g-col-lg-1 g-col-3">
+        <MemberColumn
+          title="Lead Developers"
+          activeMembers={members.lead.active}
+          inactiveMembers={members.lead.inactive}
+        />
+      </div>
+      <div class="team-column g-col-lg-1 g-col-3">
+        <MemberColumn title="Developers" activeMembers={members.dev.active} inactiveMembers={members.dev.inactive} />
+      </div>
+      <div class="team-column g-col-lg-1 g-col-3">
+        <MemberColumn title="Artists" activeMembers={members.art.active} inactiveMembers={members.art.inactive} />
+        <MemberColumn
+          title="Voice Actors"
+          activeMembers={members.voice.active}
+          inactiveMembers={members.voice.inactive}
+        />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  @import '../css/bootstrap-vars';
+
+  .socials-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1em;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .socials-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1em;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .sponsors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .support-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1em;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .support-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .team-grid {
+    --bs-columns: 3;
+  }
+
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+</style>

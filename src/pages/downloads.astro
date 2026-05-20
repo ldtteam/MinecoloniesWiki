@@ -1,0 +1,149 @@
+---
+import Banner from '../components/common/basic/Banner.astro';
+import Layout from '../layouts/Default.astro';
+
+interface CurseForgeEntry {
+  title: string;
+  path: string;
+}
+
+interface Mod extends CurseForgeEntry {
+  description: string;
+  optional?: boolean;
+  wiki?: string;
+  fullWidth?: boolean;
+}
+
+const modpacks: CurseForgeEntry[] = [
+  { title: 'MineColonies Official Modpack', path: '250424' },
+  { title: 'MineColonies Special Events Modpack', path: '307986' }
+];
+
+const mods: Mod[] = [
+  { title: 'MineColonies', path: '245506', description: 'The main town-building mod.', fullWidth: true },
+  {
+    title: 'Structurize',
+    path: '298744',
+    wiki: '/wiki/dependencies/structurize',
+    description: 'Handles schematic placement and construction.'
+  },
+  {
+    title: 'Domum Ornamentum',
+    path: '527361',
+    wiki: '/wiki/dependencies/domumornamentum',
+    description: 'Adds combinatorial ornamental blocks used in colony buildings.'
+  },
+  {
+    title: 'BlockUI',
+    path: '522992',
+    wiki: '/wiki/dependencies/blockui',
+    description: 'XML-based UI framework used by MineColonies.'
+  },
+  {
+    title: 'Multi-Piston',
+    path: '303278',
+    wiki: '/wiki/dependencies/multipiston',
+    description: 'Adds configurable multi-directional piston blocks.'
+  },
+  {
+    title: 'TownTalk',
+    path: '900364',
+    optional: true,
+    description: 'Adds new voice lines for your colonists.'
+  },
+  {
+    title: 'StyleColonies',
+    path: '827507',
+    optional: true,
+    description: 'Adds extra building style packs for your colony.'
+  }
+];
+---
+
+<Layout title="Downloads" header="Downloads" fluid>
+  <div class="container">
+    <p>
+      Download MineColonies and its related mods and modpacks from CurseForge. Dependency mods are bundled automatically
+      when installing via a launcher, but you can also download them individually below. For step-by-step setup help,
+      see the <a href="/wiki/installation/installation">installation guide</a>.
+    </p>
+  </div>
+
+  <Banner center>Modpacks</Banner>
+
+  <div class="container download-grid my-3">
+    {
+      modpacks.map((pack) => (
+        <div>
+          <iframe src={`https://cfwidget.com/${pack.path}`} width="100%" style="border: none;" title={pack.title} />
+        </div>
+      ))
+    }
+  </div>
+
+  <Banner center>Mods</Banner>
+
+  <div class="container download-grid my-3">
+    {
+      mods.map((mod) => (
+        <div class:list={[mod.fullWidth && 'full-width']}>
+          <div class="mod-meta">
+            {mod.description && <p class="mod-description">{mod.description}</p>}
+            <div class="mod-meta-row">
+              {mod.optional && <span class="badge-optional">Optional</span>}
+              {mod.wiki && <a href={mod.wiki}>Read more on the wiki →</a>}
+            </div>
+          </div>
+          <iframe src={`https://cfwidget.com/${mod.path}`} width="100%" style="border: none;" title={mod.title} />
+        </div>
+      ))
+    }
+  </div>
+</Layout>
+
+<style lang="scss">
+  @import '../css/bootstrap-vars';
+
+  .download-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .download-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+  }
+
+  .mod-description {
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  .mod-meta {
+    margin-top: 0.4em;
+    margin-bottom: 0.75em;
+    font-size: 0.9em;
+  }
+
+  .mod-meta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+  }
+
+  .badge-optional {
+    background-color: #555;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+  }
+</style>

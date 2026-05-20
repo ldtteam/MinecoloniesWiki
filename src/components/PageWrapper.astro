@@ -1,6 +1,6 @@
 ---
-import Banner from './common/basic/Banner.astro';
 import Card from './common/basic/Card.astro';
+import Footer from './common/core/Footer.astro';
 import Header from './common/core/Header.astro';
 import Navigation from './common/navigation/Navigation.astro';
 
@@ -10,7 +10,6 @@ interface Props {
 }
 
 const { isHome, isWiki } = Astro.props;
-const year = new Date().getFullYear();
 ---
 
 <Card class="page-wrapper" padding={0}>
@@ -23,7 +22,7 @@ const year = new Date().getFullYear();
         <slot />
       </div>
 
-      <Banner as="footer">&copy; Minecolonies {year}</Banner>
+      <Footer />
     </div>
   </div>
 </Card>
@@ -55,6 +54,8 @@ const year = new Date().getFullYear();
   .bg-home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/bg-home.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: var(--color-dark);
   }
 </style>

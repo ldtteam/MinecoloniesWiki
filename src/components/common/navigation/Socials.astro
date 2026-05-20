@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 import Social from '../../wiki/util/MarkdocSocialLink.astro';
 
-const socials = await getCollection('socials');
+const socials = await getCollection('socials').then((s) => s.toSorted((a, b) => a.data.order - b.data.order));
 ---
 
 {

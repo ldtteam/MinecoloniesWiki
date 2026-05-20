@@ -2,6 +2,8 @@
 import Banner from '../components/common/basic/Banner.astro';
 import SocialBanner from '../components/common/SocialBanner.astro';
 import Layout from '../layouts/Default.astro';
+
+export const screenshots: number[] = [...Array(32)];
 ---
 
 <Layout title="Home" showHeader={false}>
@@ -19,7 +21,7 @@ import Layout from '../layouts/Default.astro';
   </p>
 
   <div class="mt-5 main-container">
-    <div>
+    <div class="download-banner">
       <Banner class="fs-4" offset={20} image="/images/banner/curse.png">
         <img
           class="curse-logo px-3"
@@ -28,7 +30,7 @@ import Layout from '../layouts/Default.astro';
           loading="eager"
           decoding="async"
         />
-        <a href="https://www.curseforge.com/minecraft/modpacks/minecolonies-official">Download our modpack</a>
+        <a href="/downloads">Download Modpacks &amp; Mods</a>
         <img
           class="curse-logo px-3"
           src="/images/logo/curseforge.png"
@@ -37,32 +39,51 @@ import Layout from '../layouts/Default.astro';
           decoding="async"
         />
       </Banner>
-    </div>
-    <div>
-      <Banner class="fs-4" offset={20} image="/images/banner/curse.png">
-        <img
-          class="curse-logo px-3"
-          src="/images/logo/curseforge.png"
-          alt="CurseForge logo"
-          loading="eager"
-          decoding="async"
-        />
-        <a href="https://www.curseforge.com/minecraft/mc-mods/minecolonies">Download our mod</a>
-        <img
-          class="curse-logo px-3"
-          src="/images/logo/curseforge.png"
-          alt="CurseForge logo"
-          loading="eager"
-          decoding="async"
-        />
-      </Banner>
-    </div>
-    <div>
-      <SocialBanner id="patreon" class="fs-5">Become a Patron</SocialBanner>
     </div>
     <div>
       <SocialBanner id="discord" class="fs-5">Join our Discord</SocialBanner>
     </div>
+    <div>
+      <SocialBanner id="patreon" class="fs-5">Become a Patron</SocialBanner>
+    </div>
+  </div>
+
+  <h2>Governance</h2>
+  <p>
+    You have full control over how to build your town. You decide how many workers you need, what type they are, where
+    they live, and you can hire or fire them as you see fit — all at your own pace. MineColonies puts you in the role of
+    designer, administrator, and boss of a colony that grows exactly the way you envision it.
+  </p>
+
+  <h2>Security &amp; Replenishment</h2>
+  <p>
+    Your colony deserves the best protection you can provide. Strategically place Guard Towers or Barracks to defend
+    against hostile mobs and barbarian raids that strike on random nights. Equip your guards with the best weapons and
+    armour your colony can offer. Keep your farmers busy supplying your bakers and cooks so no colonist goes hungry —
+    well-fed colonists work and fight better.
+  </p>
+
+  <h2>Multiplayer</h2>
+  <p>
+    MineColonies has a powerful multiplayer system with a robust permissions framework. Assign roles such as Officer,
+    Friend, Neutral, or Hostile to other players within your colony. Compete with or collaborate alongside other
+    colonies on the same server, each protected by a strong anti-griefing system. Whether you're building a shared
+    empire or a rival settlement, MineColonies makes it fun for everyone.
+  </p>
+
+  <Banner center>Screenshots</Banner>
+  <div class="screenshots">
+    {
+      screenshots.map((_, idx) => (
+        <img
+          src={`/images/screenshots/screenshot${idx + 1}.jpg`}
+          style={{ width: '100%', objectFit: 'cover' }}
+          alt="MineColonies screenshot"
+          loading="lazy"
+          decoding="async"
+        />
+      ))
+    }
   </div>
 </Layout>
 
@@ -81,6 +102,7 @@ import Layout from '../layouts/Default.astro';
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1em;
+    margin-bottom: 2em;
   }
 
   @include media-breakpoint-up(lg) {
@@ -88,9 +110,32 @@ import Layout from '../layouts/Default.astro';
       grid-template-columns: repeat(2, 1fr);
       gap: 3em;
     }
+
+    .download-banner {
+      grid-column: span 2;
+    }
   }
 
   .curse-logo {
     height: 24px;
+  }
+
+  .screenshots {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    padding-top: 1em;
+  }
+
+  @include media-breakpoint-up(md) {
+    .screenshots {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .screenshots {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 </style>
