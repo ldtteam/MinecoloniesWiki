@@ -3,7 +3,6 @@ import Banner from '../components/common/basic/Banner.astro';
 import Layout from '../layouts/Default.astro';
 
 interface CurseForgeEntry {
-  title: string;
   path: string;
 }
 
@@ -14,45 +13,36 @@ interface Mod extends CurseForgeEntry {
   fullWidth?: boolean;
 }
 
-const modpacks: CurseForgeEntry[] = [
-  { title: 'MineColonies Official Modpack', path: '250424' },
-  { title: 'MineColonies Special Events Modpack', path: '307986' }
-];
+const modpacks: CurseForgeEntry[] = [{ path: '250424' }, { path: '307986' }, { path: '365535' }];
 
 const mods: Mod[] = [
-  { title: 'MineColonies', path: '245506', description: 'The main town-building mod.', fullWidth: true },
+  { path: '245506', description: 'The main town-building mod.', fullWidth: true },
   {
-    title: 'Structurize',
     path: '298744',
     wiki: '/wiki/dependencies/structurize',
     description: 'Handles schematic placement and construction.'
   },
   {
-    title: 'Domum Ornamentum',
     path: '527361',
     wiki: '/wiki/dependencies/domumornamentum',
     description: 'Adds combinatorial ornamental blocks used in colony buildings.'
   },
   {
-    title: 'BlockUI',
     path: '522992',
     wiki: '/wiki/dependencies/blockui',
     description: 'XML-based UI framework used by MineColonies.'
   },
   {
-    title: 'Multi-Piston',
     path: '303278',
     wiki: '/wiki/dependencies/multipiston',
     description: 'Adds configurable multi-directional piston blocks.'
   },
   {
-    title: 'TownTalk',
     path: '900364',
     optional: true,
     description: 'Adds new voice lines for your colonists.'
   },
   {
-    title: 'StyleColonies',
     path: '827507',
     optional: true,
     description: 'Adds extra building style packs for your colony.'
@@ -75,7 +65,7 @@ const mods: Mod[] = [
     {
       modpacks.map((pack) => (
         <div>
-          <iframe src={`https://cfwidget.com/${pack.path}`} width="100%" style="border: none;" title={pack.title} />
+          <iframe src={`https://cfwidget.com/${pack.path}`} width="100%" style="border: none;" />
         </div>
       ))
     }
@@ -94,7 +84,7 @@ const mods: Mod[] = [
               {mod.wiki && <a href={mod.wiki}>Read more on the wiki →</a>}
             </div>
           </div>
-          <iframe src={`https://cfwidget.com/${mod.path}`} width="100%" style="border: none;" title={mod.title} />
+          <iframe src={`https://cfwidget.com/${mod.path}`} width="100%" style="border: none;" />
         </div>
       ))
     }
