@@ -120,7 +120,7 @@ const thirdPartyMods: ThirdPartyMod[] = [
 ];
 ---
 
-<Layout title="Downloads" header="Downloads" fluid>
+<Layout title="Downloads" header="Downloads" fluid showVersionSelector={false}>
   <div class="container">
     <p>
       Download MineColonies and its related mods and modpacks from CurseForge. Dependency mods are bundled automatically
@@ -130,6 +130,14 @@ const thirdPartyMods: ThirdPartyMod[] = [
   </div>
 
   <Banner center>Modpacks</Banner>
+
+  <div class="container my-3">
+    <blockquote class="blockquote-border">
+      <strong>Note:</strong> Support for these modpacks may vary. A pack may not have been updated recently, its Minecraft
+      version may no longer be actively supported, or it may include an outdated version of MineColonies. Check the pack's
+      last update date and included mod versions before reporting issues.
+    </blockquote>
+  </div>
 
   <div class="container download-grid my-3">
     {
@@ -211,6 +219,13 @@ const thirdPartyMods: ThirdPartyMod[] = [
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const iframe = entry.target as HTMLIFrameElement;
+            iframe.addEventListener(
+              'load',
+              () => {
+                iframe.closest<HTMLElement>('.iframe-wrapper')?.classList.add('loaded');
+              },
+              { once: true }
+            );
             iframe.src = iframe.dataset.src!;
             observer.unobserve(iframe);
           }
@@ -221,16 +236,6 @@ const thirdPartyMods: ThirdPartyMod[] = [
 
     document.querySelectorAll<HTMLIFrameElement>('iframe[data-src]').forEach((iframe) => {
       observer.observe(iframe);
-    });
-
-    document.querySelectorAll<HTMLIFrameElement>('iframe[data-src]').forEach((iframe) => {
-      iframe.addEventListener(
-        'load',
-        () => {
-          iframe.closest<HTMLElement>('.iframe-wrapper')?.classList.add('loaded');
-        },
-        { once: true }
-      );
     });
 
     window.addEventListener('message', (event) => {

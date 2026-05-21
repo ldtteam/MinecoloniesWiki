@@ -16,6 +16,7 @@ interface Props {
   titleAffix?: string;
   header?: string;
   showHeader?: boolean;
+  showVersionSelector?: boolean;
   fluid?: boolean;
   columns?: number;
   leftColumns?: number;
@@ -27,6 +28,7 @@ const {
   titleAffix = 'MineColonies',
   header = title,
   showHeader = true,
+  showVersionSelector = true,
   fluid = false,
   columns = 7,
   leftColumns = 1,
@@ -112,8 +114,8 @@ const hasRightSlot = await Astro.slots.render('right').then((slot) => (slot ?? '
     <VersionStyling />
   </head>
   <body data-latest-version={newestVersion.data.order} {...versionTitleData} data-title-affix={titleAffix}>
-    <PageWrapper isHome={isHome} isWiki={isWikiPage}>
-      {showHeader && <PageTitle fluid={fluid} header={header} />}
+    <PageWrapper isHome={isHome} isWiki={isWikiPage} showVersionSelector={showVersionSelector}>
+      {showHeader && <PageTitle fluid={fluid} header={header} showVersionSelector={showVersionSelector} />}
 
       <div class:list={[fluid ? 'container-fluid' : 'container', 'grid w-100']} style={`--bs-columns: ${columns};`}>
         {

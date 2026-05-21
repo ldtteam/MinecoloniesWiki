@@ -6,9 +6,10 @@ import PageTitleRender from './PageTitleRender.astro';
 interface Props {
   fluid: boolean;
   header: Title;
+  showVersionSelector: boolean;
 }
 
-const { fluid, header } = Astro.props;
+const { fluid, header, showVersionSelector } = Astro.props;
 ---
 
 <div class={fluid ? 'container-fluid' : 'container'}>
@@ -18,7 +19,7 @@ const { fluid, header } = Astro.props;
       <PageTitleRender title={header} />
     </h1>
     <div>
-      <VersionSelector />
+      {showVersionSelector && <VersionSelector />}
     </div>
   </div>
 </div>

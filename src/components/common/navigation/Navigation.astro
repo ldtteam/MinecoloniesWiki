@@ -11,9 +11,10 @@ import WikiPages from './WikiPages.astro';
 
 interface Props {
   isWiki: boolean;
+  showVersionSelector: boolean;
 }
 
-const { isWiki } = Astro.props;
+const { isWiki, showVersionSelector } = Astro.props;
 
 const expand = 'lg';
 ---
@@ -78,8 +79,8 @@ const expand = 'lg';
               )
             }
 
-            <hr />
-            <VersionSelector />
+            {showVersionSelector && <hr />}
+            {showVersionSelector && <VersionSelector />}
             <hr />
 
             <ul class="nav">
