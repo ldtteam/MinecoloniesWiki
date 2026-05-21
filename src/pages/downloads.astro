@@ -19,7 +19,16 @@ interface ThirdPartyMod extends CurseForgeEntry {
   supportUrl: string;
 }
 
-const modpacks: CurseForgeEntry[] = [{ path: 250424 }, { path: 307986 }, { path: 365535 }];
+// Find projects back by going to https://www.curseforge.com/projects/PROJECT_ID
+
+const modpacks: CurseForgeEntry[] = [
+  { path: 250424 },
+  { path: 307986 },
+  { path: 406852 },
+  { path: 365535 },
+  { path: 255088 },
+  { path: 315352 }
+];
 
 const mods: Mod[] = [
   { path: 245506, description: 'The main town-building mod.', fullWidth: true },
@@ -126,7 +135,13 @@ const thirdPartyMods: ThirdPartyMod[] = [
     {
       modpacks.map((pack) => (
         <Card autoSize class="modpack-card">
-          <iframe data-src={`https://dev.cfwidget.com/${pack.path}?background=transparent&border=none`} width="100%" />
+          <div class="iframe-wrapper">
+            <div class="iframe-spinner" />
+            <iframe
+              data-src={`https://dev.cfwidget.com/${pack.path}?background=transparent&border=none`}
+              width="100%"
+            />
+          </div>
         </Card>
       ))
     }
@@ -145,7 +160,10 @@ const thirdPartyMods: ThirdPartyMod[] = [
               {mod.wiki && <a href={mod.wiki}>Read more on the wiki →</a>}
             </div>
           </div>
-          <iframe data-src={`https://dev.cfwidget.com/${mod.path}?background=transparent&border=none`} width="100%" />
+          <div class="iframe-wrapper">
+            <div class="iframe-spinner" />
+            <iframe data-src={`https://dev.cfwidget.com/${mod.path}?background=transparent&border=none`} width="100%" />
+          </div>
         </Card>
       ))
     }
@@ -172,7 +190,10 @@ const thirdPartyMods: ThirdPartyMod[] = [
               </a>
             </div>
           </div>
-          <iframe data-src={`https://dev.cfwidget.com/${mod.path}?background=transparent&border=none`} width="100%" />
+          <div class="iframe-wrapper">
+            <div class="iframe-spinner" />
+            <iframe data-src={`https://dev.cfwidget.com/${mod.path}?background=transparent&border=none`} width="100%" />
+          </div>
         </Card>
       ))
     }
@@ -200,6 +221,16 @@ const thirdPartyMods: ThirdPartyMod[] = [
 
     document.querySelectorAll<HTMLIFrameElement>('iframe[data-src]').forEach((iframe) => {
       observer.observe(iframe);
+    });
+
+    document.querySelectorAll<HTMLIFrameElement>('iframe[data-src]').forEach((iframe) => {
+      iframe.addEventListener(
+        'load',
+        () => {
+          iframe.closest<HTMLElement>('.iframe-wrapper')?.classList.add('loaded');
+        },
+        { once: true }
+      );
     });
 
     window.addEventListener('message', (event) => {
@@ -231,18 +262,57 @@ const thirdPartyMods: ThirdPartyMod[] = [
       flex-direction: column;
     }
 
+    :global(.iframe-wrapper) {
+      position: relative;
+      margin-top: auto;
+      min-height: 60px;
+    }
+
+    :global(.iframe-spinner) {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: '';
+        width: 28px;
+        height: 28px;
+        border: 3px solid rgba(128, 128, 128, 0.25);
+        border-top-color: rgba(128, 128, 128, 0.8);
+        border-radius: 50%;
+        animation: iframe-spin 0.7s linear infinite;
+      }
+    }
+
+    :global(.iframe-wrapper.loaded .iframe-spinner) {
+      display: none;
+    }
+
     :global(iframe) {
       border: none;
       display: block;
-      margin-top: auto;
       margin-left: calc(var(--iframe-bleed) * -1);
       margin-bottom: -23px;
       width: calc(100% + var(--iframe-bleed));
       height: auto;
+      opacity: 0;
+      transition: opacity 0.2s ease;
     }
 
-    :global(.modpack-card iframe) {
+    :global(.iframe-wrapper.loaded iframe) {
+      opacity: 1;
+    }
+
+    :global(.modpack-card .iframe-wrapper) {
       margin-top: -12px;
+    }
+  }
+
+  @keyframes iframe-spin {
+    to {
+      transform: rotate(360deg);
     }
   }
 
