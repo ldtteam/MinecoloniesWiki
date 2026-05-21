@@ -19,7 +19,7 @@ First, find the town hall and click "Create new colony." This is equivalent to p
 
 From there, go to each hut block in the colony and click "Reactivate" to reclaim the building and register it with the town hall. You can also repair each building to restore it to its original condition.
 
-That's it — you've claimed the colony and can start expanding it as normal.
+You've now claimed the colony and can start expanding it as normal.
 
 ## Creating Your Own World Generation Colonies Style
 
@@ -27,14 +27,14 @@ First, you need to design and build your own [schematic](schematics). Once your 
 
 ### Tagging and Prepping
 
-The most important thing to ensure that colonies register as abandoned — and can be restored — is to use the tag tool to tag the hut block appropriately.
+The most important thing to ensure that colonies register as abandoned and can be restored is to use the tag tool to tag the hut block appropriately.
 
 1. Tag the hut block with its style name (e.g., "medieval_oak" for the Medieval Oak style). The name must match the style's folder name in the MineColonies.jar file or resource pack.
 2. Add the tag "abandoned" to the hut block. If you right-click the building with an empty hand, it should now say that the building is abandoned and tell you to seek out the town hall.
 
 ### Adding Jigsaw Blocks
 
-Place jigsaw blocks where a structure would naturally connect to a road or — if creating a road — where it would connect to a structure. Make sure the block is placed at the edge of the structure facing toward a connecting block.
+Place jigsaw blocks where a structure would naturally connect to a road, or where a road would connect to a structure. Make sure the block is placed at the edge of the structure facing toward a connecting block.
 
 Each jigsaw block has the following properties:
 
@@ -42,7 +42,7 @@ Each jigsaw block has the following properties:
 - `target`: the name of the jigsaw block on the next structure to connect to. The target of a placed structure must match the name of the next one to be placed.
 - `pool`: restricts which structures can be placed next. MineColonies uses three dedicated pools for each colony style: "<stylename>/roads", "<stylename>/buildings", and "<stylename>/terminators".
 
-The table below shows the expected values for each jigsaw block type. The examples use the Medieval Oak style — replace "medieval_oak" with your style's name.
+The table below shows the expected values for each jigsaw block type. The examples use the Medieval Oak style, so replace "medieval_oak" with your style's name.
 
 - Buildings
     - `name`: "minecolonies:building_entrance"

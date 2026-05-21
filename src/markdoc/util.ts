@@ -50,6 +50,21 @@ export const image_row: Tag = {
   render: component('./src/components/wiki/images/MarkdocImageRow.astro')
 };
 
+export const youtube: Tag = {
+  render: component('./src/components/wiki/util/YoutubeEmbed.astro'),
+  selfClosing: true,
+  attributes: {
+    id: {
+      type: String,
+      required: true
+    },
+    width: {
+      type: Number,
+      required: false
+    }
+  }
+};
+
 export const meta: Tag = {
   render: component('./src/components/wiki/util/MarkdocMetaTag.astro'),
   attributes: {

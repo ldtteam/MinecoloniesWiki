@@ -13,7 +13,8 @@ import {
   image_row,
   meta,
   official_citizen_name_pack_list,
-  social_link
+  social_link,
+  youtube
 } from './src/markdoc/util';
 import { version } from './src/markdoc/version';
 import { worker, worker_jobs_table, workers_table } from './src/markdoc/workers';
@@ -51,7 +52,8 @@ const config: AstroMarkdocConfig = {
     image_row,
     meta,
     schema,
-    configuration_list
+    configuration_list,
+    youtube
   },
   nodes: {
     document: {

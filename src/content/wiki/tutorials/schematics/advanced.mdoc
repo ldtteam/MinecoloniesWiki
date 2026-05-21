@@ -7,7 +7,7 @@ title: Advanced Topics
 {% version range="1.19--" %}
 ## Job-Specific Buildings
 
-Using the {% item name="structurize/sceptertag" /%}, you can place one or more `job=` tags on a hut block to restrict which workers can actually work in that building. This can be used to create thematic variants of a building type -- for example, a guard tower decorated with archery motifs that only accepts rangers.
+Using the {% item name="structurize/sceptertag" /%}, you can place one or more `job=` tags on a hut block to restrict which workers can actually work in that building. This can be used to create thematic variants of a building type, for example a guard tower decorated with archery motifs that only accepts rangers.
 
 The job ID is the same as the worker's ID. A full list of all job IDs is shown below:
 
@@ -23,13 +23,13 @@ You can combine multiple `job=` tags on the same hut block to allow more than on
 
 ## Parent/Child Buildings
 
-The {% building name="barracks" /%} and {% building name="barrackstower" /%} are the most well-known example of a parent/child relationship, where the {% building name="barrackstower" plural=true /%} are embedded within the {% building name="barracks" /%} rather than being placed separately with the build tool. It's possible to do the same with any buildings or decorations -- for example, embedding couriers within a warehouse, or fields within a farmer.
+The {% building name="barracks" /%} and {% building name="barrackstower" /%} are the most well-known example of a parent/child relationship, where the {% building name="barrackstower" plural=true /%} are embedded within the {% building name="barracks" /%} rather than being placed separately with the build tool. It's possible to do the same with any buildings or decorations, for example embedding couriers within a warehouse, or fields within a farmer.
 
 Some players like combination buildings since they fit together nicely, but others prefer standalone buildings for the flexibility and creativity they allow. Don't go overboard.
 
 ### How It Works
 
-Child buildings work by having the child's hut block pre-filled with the correct schematic pack and path in its block data. Normally, Structurize sets this data when a player places a hut block and selects a schematic. For child buildings, this data is already present in the hut block when the parent schematic is scanned, so the game can immediately trigger the child building process with the correct schematic selected -- without any player input.
+Child buildings work by having the child's hut block pre-filled with the correct schematic pack and path in its block data. Normally, Structurize sets this data when a player places a hut block and selects a schematic. For child buildings, this data is already present in the hut block when the parent schematic is scanned, so the game can immediately trigger the child building process with the correct schematic selected, without any player input.
 
 This means that simply placing a hut block by hand into a parent schematic won't work correctly; the block needs to carry the right data before scanning.
 
@@ -55,9 +55,9 @@ While it's technically only required to include the child hut block at the level
 {% version range="1.19--" %}
 ### Folder Requirements
 
-The child's blueprint must be in the same folder as the parent. This doesn't prevent you from combining buildings that are normally in different folders -- it just means the version intended to be a child must be placed in the parent's folder. You can still keep a separate standalone version of the child in its original folder.
+The child's blueprint must be in the same folder as the parent. This doesn't prevent you from combining buildings that are normally in different folders. It just means the version intended to be a child must be placed in the parent's folder. You can still keep a separate standalone version of the child in its original folder.
 
-It's not supported for a child to contain its own children -- the nesting is limited to two layers. However, a parent can contain multiple children of the same or different types.
+It's not supported for a child to contain its own children. The nesting is limited to two layers. However, a parent can contain multiple children of the same or different types.
 
 It's strongly recommended to tag any blueprint intended for use only as a child (in the child schematic itself) as `invisible` using the {% item name="structurize/sceptertag" /%}. Child versions are often missing walls or other elements supplied by the parent, so they won't look right or may break game balance if built standalone.
 
@@ -65,7 +65,7 @@ It's strongly recommended to tag any blueprint intended for use only as a child 
 
 An alternative to embedding a fixed child level in every parent level is called "auto-levelling": instead of using the same child hut block in every parent level, you paste the matching child level into each parent level (level 1 child into level 1 parent, level 2 into level 2, etc.). With auto-levelling, the builder upgrades the child automatically when upgrading the parent.
 
-The main downside is that auto-levelling doesn't work well for child buildings that have required functional blocks (beds, furnaces, racks, etc.) -- it's best suited to purely decorative children. You should also avoid it where the child is locked behind research that may not yet be unlocked.
+The main downside is that auto-levelling doesn't work well for child buildings that have required functional blocks (beds, furnaces, racks, etc.), so it's best suited to purely decorative children. You should also avoid it where the child is locked behind research that may not yet be unlocked.
 {% /version %}
 
 ### Research Loops

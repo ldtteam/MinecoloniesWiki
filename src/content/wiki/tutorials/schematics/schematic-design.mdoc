@@ -33,7 +33,7 @@ Once ready, move the `myown` folder into the blueprints folder and start your ga
 {% /version %}
 
 {% version range="1.19--" %}
-The naming for buildings is not strict anymore. The only requirements are that names are consistent, end with the hut level number, and use only lowercase letters (avoid capitals, spaces, or other punctuation). Alternate designs can have a different name entirely -- e.g. if you named the level 1 {% building name="builder" /%} "builder1", an alternative could be called "altbuilder1" or "builderalt1" or even "constructionworker1".
+The naming for buildings is not strict anymore. The only requirements are that names are consistent, end with the hut level number, and use only lowercase letters (avoid capitals, spaces, or other punctuation). Alternate designs can have a different name entirely. For example, if you named the level 1 {% building name="builder" /%} "builder1", an alternative could be called "altbuilder1" or "builderalt1" or even "constructionworker1".
 
 Don't put numbers anywhere in the name except right at the end for the level. For example, "alt1builder1" won't work as expected.
 
@@ -207,20 +207,20 @@ All buildings may include any number of {% item name="minecolonies/blockminecolo
 ## Upgradable Decoration Schematics
 
 {% version range="--1.18.2" %}
-Add the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning -- don't include the path in the scan name.
+Add the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic with the name of the schematic, where you'll put it in the file directory, and its level. Make sure to actually put the decoration in that file path, but only after scanning. Don't include the path in the scan name.
 {% /version %}
 
 {% version range="1.19--" %}
 Put the {% item name="minecolonies/decorationcontroller" /%} somewhere in the schematic, and make sure the name of the schematic ends with a number while scanning. The decoration controller will automatically find the decoration in the same folder with the next number.
 
-Contrary to the image below, you don't need to enter anything into the decoration controller's GUI before scanning anymore -- but the rest of the image is still useful.
+Contrary to the image below, you don't need to enter anything into the decoration controller's GUI before scanning anymore, but the rest of the image is still useful.
 {% /version %}
 
 ![Upgradable Decos](../../../../assets/images/wiki/tutorial/upgradabledecos.png)
 
 ## Custom Mineshafts
 
-The size must be 9 x 4 x 9 blocks. They must be named and oriented exactly the same (i.e. do not rotate at all) as in the default style pack -- careful, the names aren't entirely consistent with the layout, so make careful note of which is which. Use an existing style pack as a template along with the {% item name="structurize/sceptersteel" /%} to create the blueprints.
+The size must be 9 x 4 x 9 blocks. They must be named and oriented exactly the same (i.e. do not rotate at all) as in the default style pack. Be careful, the names aren't entirely consistent with the layout, so make careful note of which is which. Use an existing style pack as a template along with the {% item name="structurize/sceptersteel" /%} to create the blueprints.
 
 {% version range="--1.18.2" %}
 The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
@@ -229,14 +229,14 @@ The custom mineshafts need to be at `schematics/yourstyle/miner/*`.
 {% version range="1.19--" %}
 The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/mineshafts/`.
 
-It's recommended to use the {% item name="structurize/blocktagsubstitution" /%} to make the mineshafts `invisible`. Take care that the anchor is in the same position as in the original mineshafts -- the very center bottom block.
+It's recommended to use the {% item name="structurize/blocktagsubstitution" /%} to make the mineshafts `invisible`. Take care that the anchor is in the same position as in the original mineshafts, at the very center bottom block.
 {% /version %}
 
 ## Custom Quarries
 
 The {% building name="quarry" /%} is split into a "top part" and a "bottom part". Both parts only have one level each (but unlike decorations, are expected to still include the level number in the filename).
 
-The **top part** is constructed by the {% worker name="builder" /%} and is the part outside of the quarry pit -- decorative walls, fences, cranes, racks, etc. This contains the actual {% building name="quarry" /%} hut block itself, which should almost always be on the second y-level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up).
+The **top part** is constructed by the {% worker name="builder" /%} and is the part outside of the quarry pit, including decorative walls, fences, cranes, racks, etc. This contains the actual {% building name="quarry" /%} hut block itself, which should almost always be on the second y-level up from the bottom (i.e. the bottom layer is the ground level, then the hut is on the next layer up).
 
 The **bottom part** is constructed by the {% worker name="quarrier" /%} and is the actual quarry pit itself, consisting mostly of placeholders, air blocks, and decorative elements. While you can set the anchor manually, it's recommended to use a {% item name="structurize/blocktagsubstitution" /%}. The anchor should normally be at the very top layer. It's also recommended to tag this as `invisible` to avoid cluttering the build menu, since it usually doesn't make sense to let it be built as a standalone decoration.
 
@@ -247,9 +247,9 @@ The top parts must be named `simplequarry1` and `mediumquarry1`, and the corresp
 {% version range="1.19--" %}
 The top part can be in any folder and under any name (and you can have more than one alternate), but the canonical names are `infrastructure/mineshafts/simplequarry1` and `infrastructure/mineshafts/mediumquarry1`. Players will usually expect to find them in this folder.
 
-The bottom part should usually be in the same folder with the matching name but with `shaft` before the number -- e.g. `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`.
+The bottom part should usually be in the same folder with the matching name but with `shaft` before the number, e.g. `infrastructure/mineshafts/simplequarryshaft1` and `infrastructure/mineshafts/mediumquarryshaft1`.
 
-Alternatively, you can put a `shaft=` tag on the top part's {% building name="quarry" /%} block to specify a different name -- e.g. `shaft=bighole1` to look for `bighole1` in the same folder as the quarry, or `shaft=decorations/quarrypit1` to look in a different folder.
+Alternatively, you can put a `shaft=` tag on the top part's {% building name="quarry" /%} block to specify a different name, e.g. `shaft=bighole1` to look for `bighole1` in the same folder as the quarry, or `shaft=decorations/quarrypit1` to look in a different folder.
 {% /version %}
 
 When built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing. It may be helpful to build them directly on top of each other and simply scan them as two separate parts.
@@ -331,7 +331,7 @@ The number of planting positions on these fields is usually unlimited because bo
 
 ### Percentage-based Harvesting
 
-Percentage-based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants -- such as vines -- then naturally spread to their surroundings without the player's help. The planter has no involvement in this spreading process.
+Percentage-based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants, such as vines, then naturally spread to their surroundings without the player's help. The planter has no involvement in this spreading process.
 
 | Plant | Tag location                                                                                                    |
 | ----- | --------------------------------------------------------------------------------------------------------------- |
@@ -349,7 +349,7 @@ Percentage-based harvesting fields will attempt to place a minimum percentage of
 - Use {% item_page name="placeholderblocks" /%} at or below ground level
 - Place a `groundlevel` tag at ground level if your hut isn't sitting directly on the ground
 - Use only vanilla blocks or Structurize blocks (for official styles)
-- Use a Written Book on a lectern if you want to include some instructions -- keep a copy of the original book and quill elsewhere so you can edit it for pack updates
+- Use a Written Book on a lectern if you want to include some instructions. Keep a copy of the original book and quill elsewhere so you can edit it for pack updates.
 - If you do use blocks from additional mods and your buildings would look wrong if those blocks simply vanished, list the mod's id in your pack.json
 
 ### Don't
@@ -360,5 +360,5 @@ Percentage-based harvesting fields will attempt to place a minimum percentage of
 - Rename, move, or delete existing buildings after a style pack has been released (it will cause problems for existing colonies)
 - Use capital letters, punctuation, or spaces in your schematic names; all lower-case is preferred
 - Put a number anywhere in the schematic name except right at the end to indicate level
-- Put a unique item (something with special data, such as a written book or a patterned banner) into an item frame, chest, or other container (lecterns are ok); also avoid putting complex-dyed armor anywhere -- single-dyed is ok but remember that the player will have to figure out and duplicate it
+- Put a unique item (something with special data, such as a written book or a patterned banner) into an item frame, chest, or other container (lecterns are ok). Also avoid putting complex-dyed armor anywhere. Single-dyed is ok but remember that the player will have to figure out and duplicate it.
 - Use Tag Anchor blocks in schematics that have a Decoration Controller or a Hut Block
