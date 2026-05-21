@@ -26,7 +26,7 @@ if (entries.length === 0) {
 
 {
   entries.map(({ version, research }) => (
-    <VersionContent versions={[version]}>
+    <VersionContent versions={[version]} inline>
       <ResearchName research={research} />
     </VersionContent>
   ))
