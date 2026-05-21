@@ -90,6 +90,8 @@ The scanned structure can be found in the {% item name="structurize/sceptergold"
 >
 > {% version range="1.19--" %}
 > **A:** The style pack goes in the `blueprints` folder. Unzip the file and find the folder containing `pack.json` (either the unzipped folder itself, or a folder directly under it, depending on how the zip was made). Place that folder directly inside `blueprints`, not in any subfolder. You should end up with paths like `blueprints/onestyle/pack.json`, `blueprints/anotherstyle/pack.json`, etc.
+>
+> In singleplayer this is sufficient. On a multiplayer server, it depends on the `allowPlayerSchematics` Structurize config option. If it is enabled, the server will accept schematics uploaded by clients and a client-side installation is enough. If it is disabled (the default), the pack must be installed in the server's `blueprints` folder by the server admin. Installing only on the client when this option is off means you will see the schematic in the build tool, but the builder will not be able to build it.
 > {% /version %}
 
 > **Q: What and where is the scans folder?**
