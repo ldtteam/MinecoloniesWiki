@@ -76,8 +76,13 @@ const { isHome, isWiki, showVersionSelector } = Astro.props;
     if (!menu) {
       return;
     }
+    const pageRoot = document.querySelector<HTMLElement>('.page-root')!;
+    pageRoot.style.minHeight = '';
     const bottom = menu.getBoundingClientRect().bottom + window.scrollY;
-    document.querySelector<HTMLElement>('.page-root')!.style.minHeight = `${bottom + 16}px`;
+    const naturalHeight = pageRoot.scrollHeight;
+    if (bottom + 16 > naturalHeight) {
+      pageRoot.style.minHeight = `${bottom + 16}px`;
+    }
   });
 
   document.addEventListener('hidden.bs.dropdown', () => {
