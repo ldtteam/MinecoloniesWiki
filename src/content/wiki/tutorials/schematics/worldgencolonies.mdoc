@@ -1,0 +1,103 @@
+---
+type: page
+title: World Generation Colonies
+---
+
+As you explore the world, you'll notice abandoned colonies left behind by their former residents. Moving into one of these is a quick way to get a head start on your own colony.
+
+{% version range="1.18--" %}
+> **Note:** Vanilla villages will still spawn as normal. If you wish to turn off world generation colonies, you will need to install a datapack that removes them.
+{% /version %}
+
+## Getting Started
+
+World generation colonies spawn randomly throughout the world in one of several styles. Currently only a subset of official styles can spawn naturally, but more will be added in the future.
+
+Most buildings will be level 1, though some may be level 2, and occasionally multiple buildings of the same type will appear. Only a subset of all possible building types will be present.
+
+First, find the town hall and click "Create new colony." This is equivalent to placing a town hall from the supply camp.
+
+From there, go to each hut block in the colony and click "Reactivate" to reclaim the building and register it with the town hall. You can also repair each building to restore it to its original condition.
+
+That's it — you've claimed the colony and can start expanding it as normal.
+
+## Creating Your Own World Generation Colonies Style
+
+First, you need to design and build your own [schematic](schematics). Once your style is ready, add jigsaw block connectors at the appropriate connection points and export each structure as a `.nbt` file so Minecraft knows how to assemble the colony during world generation.
+
+### Tagging and Prepping
+
+The most important thing to ensure that colonies register as abandoned — and can be restored — is to use the tag tool to tag the hut block appropriately.
+
+1. Tag the hut block with its style name (e.g., "medieval_oak" for the Medieval Oak style). The name must match the style's folder name in the MineColonies.jar file or resource pack.
+2. Add the tag "abandoned" to the hut block. If you right-click the building with an empty hand, it should now say that the building is abandoned and tell you to seek out the town hall.
+
+### Adding Jigsaw Blocks
+
+Place jigsaw blocks where a structure would naturally connect to a road or — if creating a road — where it would connect to a structure. Make sure the block is placed at the edge of the structure facing toward a connecting block.
+
+Each jigsaw block has the following properties:
+
+- `name`: the name of this jigsaw block. The name can be unique or generic. For the styles in MineColonies, all buildings have the name "minecolonies:building_entrance" and all roads "minecolonies:street". Some styles will also use "minecolonies:field"; this is used exclusively to connect a field to a farmer building when the farmer building does not include a field as part of the level 1 structure.
+- `target`: the name of the jigsaw block on the next structure to connect to. The target of a placed structure must match the name of the next one to be placed.
+- `pool`: restricts which structures can be placed next. MineColonies uses three dedicated pools for each colony style: "<stylename>/roads", "<stylename>/buildings", and "<stylename>/terminators".
+
+The table below shows the expected values for each jigsaw block type. The examples use the Medieval Oak style — replace "medieval_oak" with your style's name.
+
+- Buildings
+    - `name`: "minecolonies:building_entrance"
+    - `pool`: "minecolonies:medieval_oak/roads"
+    - `target`: "minecolonies:building_entrance"
+    - `turns into`: "minecraft:structure_void"
+- Roads (Connecting to buildings)
+    - `name`: "minecolonies:street"
+    - `pool`: "minecolonies:medieval_oak/buildings"
+    - `target`: "minecolonies:building_entrance"
+    - `turns into`: "minecraft:structure_void"
+- Roads (Connecting to roads)
+    - `name`: "minecolonies:street"
+    - `pool`: "minecolonies:medieval_oak/roads"
+    - `target`: "minecolonies:street"
+    - `turns into`: "minecraft:structure_void"
+- Terminators (to end roads more decoratively and as fallback structures for roads and buildings)
+    - `name`: "minecolonies:street"
+    - `turns into`: "minecraft:structure_void"
+
+### Processors
+
+Processors alter a structure's blocks during world generation. MineColonies uses a different processor file depending on the type of structure being placed. There are three processor files for each style.
+
+#### street.json
+
+Road processors are defined in "<stylename>/street.json". The main purpose of this processor is to replace porous materials like dirt, dirt paths, and gravel with wooden planks when the road is in water. It also adds minor decay in the form of grass blocks instead of dirt paths.
+
+#### decoration.json
+
+Park processors are defined in "<stylename>/decoration.json". This processor adds decay to parks by turning some stone brick into weathered variants like mossy or cracked stone bricks, or replacing some dirt blocks with coarse dirt.
+
+#### placeholder_replacement.json
+
+Building processors are defined in "<stylename>/placeholder_replacement.json". Similar to how zombie villages decay, this processor removes various building blocks or replaces them with cobweb. Which blocks are affected and how often depends on the style. In addition to decay, this processor also converts Structurize placeholder blocks into suitable in-world blocks, similar to how a builder handles them when constructing a building.
+
+- "structurize:blocksolidsubstitution" turns into dirt, which may be further converted by a later rule in the same file.
+- "structurize:blocksubstitution" is ignored, meaning existing blocks in the world remain in place when the structure generates.
+
+##### Decay Example
+
+The rule below replaces oak logs with cobwebs at a 4% probability. That probability may be appropriate for one style but too high or too low for another.
+
+```json
+{
+  "output_state": {
+    "Name": "minecraft:cobweb"
+  },
+  "input_predicate": {
+    "block": "minecraft:oak_log",
+    "probability": 0.04,
+    "predicate_type": "minecraft:random_block_match"
+  },
+  "location_predicate": {
+    "predicate_type": "minecraft:always_true"
+  }
+}
+```
