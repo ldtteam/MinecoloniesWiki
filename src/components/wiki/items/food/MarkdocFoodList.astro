@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+
+import type { FoodSchema } from '../../../../schemas/item';
+import { getSortedVersions } from '../../../../util/version';
+import VersionContent from '../../../common/version/VersionContent.astro';
+import FoodInfobox from '../infobox/FoodInfobox.astro';
+
+const versions = await getSortedVersions();
+const allItems = await getCollection('items');
+
+const foodByVersion = versions.map((version) => {
+  const versionPrefix = `${version.data.order}_`;
+
+  const foodItems = allItems.filter(
+    (item): item is typeof item & { data: { food: FoodSchema } } =>
+      item.id.startsWith(versionPrefix) && item.data.food !== undefined
+  );
+
+  const tierMap = new Map<number, typeof foodItems>();
+  for (const item of foodItems) {
+    const bucket = tierMap.get(item.data.food.tier) ?? [];
+    bucket.push(item);
+    tierMap.set(item.data.food.tier, bucket);
+  }
+
+  const sortedTiers = Array.from(tierMap.entries()).sort(([a], [b]) => a - b);
+
+  return { version, tiers: sortedTiers };
+});
+---
+
+{
+  foodByVersion.map(({ version, tiers }) => (
+    <VersionContent versions={[version]}>
+      {tiers.map(([tier, items]) => (
+        <section class="food-tier-section">
+          <h3>Tier {tier}</h3>
+          <div class="food-grid">
+            {items.map((item) => (
+              <FoodInfobox item={item} expand />
+            ))}
+          </div>
+        </section>
+      ))}
+      {tiers.length === 0 && <p>No food data available for this version yet.</p>}
+    </VersionContent>
+  ))
+}
+
+<style lang="scss">
+  @import '../../../../css/bootstrap-vars';
+
+  .food-tier-section {
+    margin-bottom: 2rem;
+  }
+
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

@@ -2,6 +2,11 @@ import { component } from '@astrojs/markdoc/config';
 
 import type { Tag } from './types';
 
+export const food_list: Tag = {
+  render: component('./src/components/wiki/items/food/MarkdocFoodList.astro'),
+  selfClosing: true
+};
+
 export const item: Tag = {
   render: component('./src/components/wiki/items/names/MarkdocItem.astro'),
   selfClosing: true,

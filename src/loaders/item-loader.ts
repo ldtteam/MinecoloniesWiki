@@ -11,9 +11,15 @@ import { parserModule12000 } from './recipes/12000';
 import { parserModule12100 } from './recipes/12100';
 import type { StoredRecipeData, VersionSchemaMap } from './recipes/common';
 
+const generatorFoodSchema = z.object({
+  tier: z.number().int(),
+  saturation: z.number()
+});
+
 const generatorItemSchema = z.object({
   name: z.string(),
-  'block-id': z.string().optional()
+  'block-id': z.string().optional(),
+  food: generatorFoodSchema.optional()
 });
 
 const unavailableItems = [
@@ -136,7 +142,8 @@ export function itemLoader() {
                 },
                 name: itemData.name,
                 blockId: itemData['block-id'],
-                recipes
+                recipes,
+                food: itemData.food
               }
             });
 

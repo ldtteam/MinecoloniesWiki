@@ -1,0 +1,109 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+import shankEmpty from '../../../../assets/images/wiki/food/shank_empty.png';
+import shankFull from '../../../../assets/images/wiki/food/shank_full.png';
+import shankHalf from '../../../../assets/images/wiki/food/shank_half.png';
+import Infobox from '../../../common/infobox/Infobox.astro';
+import RecipeGrid from '../../../common/infobox/RecipeGrid.astro';
+import ItemImage from '../../images/ItemImage.astro';
+import ItemName from '../names/ItemName.astro';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  expand?: boolean;
+}
+
+const { item, expand = false } = Astro.props;
+const version = await getEntry(item.data.version);
+const food = item.data.food;
+
+const MAX_SHANKS = 10;
+
+function buildShanks(saturation: number): Array<'full' | 'half' | 'empty'> {
+  const shanks: Array<'full' | 'half' | 'empty'> = [];
+  const halfUnits = Math.round(saturation * 2);
+  for (let i = 0; i < MAX_SHANKS; i++) {
+    const filled = halfUnits - i * 2;
+    if (filled >= 2) {
+      shanks.push('full');
+    } else if (filled === 1) {
+      shanks.push('half');
+    } else {
+      shanks.push('empty');
+    }
+  }
+  return shanks;
+}
+
+const shanks = food ? buildShanks(food.saturation) : [];
+---
+
+<Infobox class:list={['w-100', expand ? 'h-100' : '']} expand={expand} fullWidth>
+  <ItemName slot="title" item={item} link={false} />
+
+  <div class="text-center">
+    <ItemImage item={item} alt={item.data.name + ' icon'} size={150} />
+  </div>
+
+  {
+    food && (
+      <div class="food-stats">
+        <hr />
+        <div class="food-stat-row">
+          <div class="shank-bar">
+            {shanks.map((type) => (
+              <img
+                src={type === 'full' ? shankFull.src : type === 'half' ? shankHalf.src : shankEmpty.src}
+                alt={type}
+                class="shank-icon"
+              />
+            ))}
+          </div>
+          <span class="shank-separator">&mdash;</span>
+          <span class="shank-count">{food.saturation}</span>
+        </div>
+      </div>
+    )
+  }
+
+  <RecipeGrid recipes={item.data.recipes} version={version} />
+</Infobox>
+
+<style>
+  .food-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .food-stat-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .shank-bar {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 max-content;
+  }
+
+  .shank-icon {
+    width: min(18px, 10%);
+    height: auto;
+    flex: 1;
+    image-rendering: pixelated;
+  }
+
+  .shank-separator {
+    flex: 1;
+    text-align: center;
+  }
+
+  .shank-count {
+    white-space: nowrap;
+  }
+</style>
