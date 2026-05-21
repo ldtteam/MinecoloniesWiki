@@ -22,6 +22,7 @@ The {% building /%} is where the {% worker /%} will take items and crush them in
 
 > **Note:** By default the {% worker /%} their ratio is 2:1, but by unlocking the {% research_link name="minecolonies/technology/gildedhammer" /%} research in the {% building name="university" /%} you can make them work on a 1:1 ratio.
 
+{% version range="--1.20" %}
 The higher the level of the {% building /%}, the more daily output the {% worker /%} can handle. So:
 
 | Building Level | Daily Max |
@@ -31,6 +32,11 @@ The higher the level of the {% building /%}, the more daily output the {% worker
 | 3              | 144       |
 | 4              | 256       |
 | 5              | 999       |
+{% /version %}
+
+{% version range="1.20.1--" %}
+The {% worker /%} works similarly to a crafter, producing items on request. You can optionally configure a daily output limit, which defaults to 0 (unlimited).
+{% /version %}
 
 ## Interface
 
@@ -42,5 +48,6 @@ The higher the level of the {% building /%}, the more daily output the {% worker
   - **Priority:** This is the default setting. The hut will try to use recipes that are higher up in their recipe list first.
   - **Warehouse Stock:** The hut will look in the warehouse first to see what resource you have more of before deciding what recipe it will use.
 - **Item:** Here you can set what item you want the {% worker /%} to make. (See the above lists.)
-- **Daily Limit:** This setting allows you to further limit the number of blocks that can be crushed in a day. The maximum value is set by the hut level (see above).
+{% version range="--1.20" %}- **Daily Limit:** This setting allows you to further limit the number of blocks that can be crushed in a day. The maximum value is set by the hut level (see above).{% /version %}
+{% version range="1.20.1--" %}- **Daily Limit:** This setting allows you to set an optional daily output limit. Defaults to 0 (unlimited).{% /version %}
 {% /building_gui_content_block_settings %}
