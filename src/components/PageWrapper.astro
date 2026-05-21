@@ -1,29 +1,29 @@
 ---
-import Banner from './common/basic/Banner.astro';
 import Card from './common/basic/Card.astro';
+import Footer from './common/core/Footer.astro';
 import Header from './common/core/Header.astro';
 import Navigation from './common/navigation/Navigation.astro';
 
 interface Props {
   isHome: boolean;
   isWiki: boolean;
+  showVersionSelector: boolean;
 }
 
-const { isHome, isWiki } = Astro.props;
-const year = new Date().getFullYear();
+const { isHome, isWiki, showVersionSelector } = Astro.props;
 ---
 
 <Card class="page-wrapper" padding={0}>
   <div class:list={['page-layout', isHome && 'bg-home']}>
     <div class="page-root">
       <Header isWiki={isWiki} />
-      <Navigation isWiki={isWiki} />
+      <Navigation isWiki={isWiki} showVersionSelector={showVersionSelector} />
 
-      <div transition:animate="fade">
+      <div transition:animate="fade" class="page-content">
         <slot />
       </div>
 
-      <Banner as="footer">&copy; Minecolonies {year}</Banner>
+      <Footer />
     </div>
   </div>
 </Card>
@@ -45,16 +45,23 @@ const year = new Date().getFullYear();
   .page-root {
     display: flex;
     flex-direction: column;
+    min-height: calc(100vh - 1em - 28px - 1em);
     gap: 1em;
 
     & > * {
       flex: 0;
+    }
+
+    .page-content {
+      flex: 1;
     }
   }
 
   .bg-home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/bg-home.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: var(--color-dark);
   }
 </style>
@@ -62,4 +69,21 @@ const year = new Date().getFullYear();
 <script>
   import 'bootstrap/js/dist/offcanvas';
   import 'bootstrap/js/dist/dropdown';
+
+  document.addEventListener('shown.bs.dropdown', (e) => {
+    const toggle = e.target as HTMLElement;
+    const menu = toggle.closest('.dropdown, .dropdown-submenu')?.querySelector<HTMLElement>('.dropdown-menu.show');
+    if (!menu) {
+      return;
+    }
+    const bottom = menu.getBoundingClientRect().bottom + window.scrollY;
+    document.querySelector<HTMLElement>('.page-root')!.style.minHeight = `${bottom + 16}px`;
+  });
+
+  document.addEventListener('hidden.bs.dropdown', () => {
+    if (document.querySelector('.dropdown-menu.show')) {
+      return;
+    }
+    document.querySelector<HTMLElement>('.page-root')!.style.minHeight = '';
+  });
 </script>

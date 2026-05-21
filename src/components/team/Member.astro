@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 
 import Card from '../common/basic/Card.astro';
+import MinecraftSkin from '../common/MinecraftSkin.astro';
 
 interface Props {
   member: CollectionEntry<'team'>;
@@ -11,22 +12,12 @@ const { member } = Astro.props;
 ---
 
 <Card class="member-card" autoSize>
-  {
-    member.data.uuid && (
-      <img
-        src={`https://avatars.cloudhaven.gg/renders/body/${member.data.uuid}?overlay=true&scale=4`}
-        class="member-image"
-        alt={`Minecraft skin for ${member.id}`}
-        loading="lazy"
-        decoding="async"
-      />
-    )
-  }
+  {member.data.uuid && <MinecraftSkin uuid={member.data.uuid} name={member.id} class="member-image" />}
 
   <div class="member-details">
     <h3 class="pt-3">{member.id}</h3>
-    {member.data.realName && <p>{member.data.realName}</p>}
     {member.data.joinedYear !== undefined && <p>Joined: {member.data.joinedYear}</p>}
+
     {
       member.data.sub !== undefined && (
         <p>

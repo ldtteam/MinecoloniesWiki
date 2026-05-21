@@ -1,0 +1,363 @@
+---
+import Banner from '../components/common/basic/Banner.astro';
+import Card from '../components/common/basic/Card.astro';
+import Layout from '../layouts/Default.astro';
+
+interface CurseForgeEntry {
+  path: number;
+}
+
+interface Mod extends CurseForgeEntry {
+  description: string;
+  optional?: boolean;
+  wiki?: string;
+  fullWidth?: boolean;
+}
+
+interface ThirdPartyMod extends CurseForgeEntry {
+  description: string;
+  supportUrl: string;
+}
+
+// Find projects back by going to https://www.curseforge.com/projects/PROJECT_ID
+
+const modpacks: CurseForgeEntry[] = [
+  { path: 250424 },
+  { path: 307986 },
+  { path: 406852 },
+  { path: 365535 },
+  { path: 255088 },
+  { path: 315352 }
+];
+
+const mods: Mod[] = [
+  { path: 245506, description: 'The main town-building mod.', fullWidth: true },
+  {
+    path: 298744,
+    wiki: '/wiki/dependencies/structurize',
+    description: 'Handles schematic placement and construction.'
+  },
+  {
+    path: 527361,
+    wiki: '/wiki/dependencies/domumornamentum',
+    description: 'Adds combinatorial ornamental blocks used in colony buildings.'
+  },
+  {
+    path: 522992,
+    wiki: '/wiki/dependencies/blockui',
+    description: 'XML-based UI framework used by MineColonies.'
+  },
+  {
+    path: 303278,
+    wiki: '/wiki/dependencies/multipiston',
+    description: 'Adds configurable multi-directional piston blocks.'
+  },
+  {
+    path: 900364,
+    optional: true,
+    description: 'Adds new voice lines for your colonists.'
+  },
+  {
+    path: 827507,
+    optional: true,
+    description: 'Adds extra building style packs for your colony.'
+  }
+];
+
+const thirdPartyMods: ThirdPartyMod[] = [
+  {
+    path: 483682,
+    description: 'A simple but powerful storage mod inspired by the rack storage system in MineColonies.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 445290,
+    description:
+      'Provides a ComputerCraft peripheral to read colony data and automate colony management via Lua scripts.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 882310,
+    description: 'A Jade addon that adds tooltips for MineColonies buildings and Domum Ornamentum blocks.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 906255,
+    description: 'A building style pack for MineColonies inspired by the Direwolf20 modpack aesthetic.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 1335961,
+    description: 'Displays MineColonies colony borders and information as markers on your BlueMap web map.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 1337173,
+    description: 'Renders Domum Ornamentum custom blocks correctly on BlueMap.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 1332665,
+    description: 'A compatibility mod between Create and MineColonies/Structurize.',
+    supportUrl: 'https://discord.minecolonies.com'
+  },
+  {
+    path: 1288791,
+    description: 'Adds new buildings and jobs to MineColonies, including inter-colony trading via a Train Station.',
+    supportUrl: 'https://discord.gg/KU2e96v3XQ'
+  },
+  {
+    path: 1535902,
+    description:
+      'Adds a Greenhouse building where a Horticulturist controls the environment to allow farmers to grow biome-specific crops.',
+    supportUrl: 'https://discord.gg/KU2e96v3XQ'
+  },
+  {
+    path: 1506343,
+    description: 'Adds a crafting module to the warehouse, letting you craft items directly from your colony stock.',
+    supportUrl: 'https://discord.gg/KU2e96v3XQ'
+  }
+];
+---
+
+<Layout title="Downloads" header="Downloads" fluid showVersionSelector={false}>
+  <div class="container">
+    <p>
+      Download MineColonies and its related mods and modpacks from CurseForge. Dependency mods are bundled automatically
+      when installing via a launcher, but you can also download them individually below. For step-by-step setup help,
+      see the <a href="/wiki/installation/installation">installation guide</a>.
+    </p>
+  </div>
+
+  <Banner center>Modpacks</Banner>
+
+  <div class="container my-3">
+    <blockquote class="blockquote-border">
+      <strong>Note:</strong> Support for these modpacks may vary. A pack may not have been updated recently, its Minecraft
+      version may no longer be actively supported, or it may include an outdated version of MineColonies. Check the pack's
+      last update date and included mod versions before reporting issues.
+    </blockquote>
+  </div>
+
+  <div class="container download-grid my-3">
+    {
+      modpacks.map((pack) => (
+        <Card autoSize class="modpack-card">
+          <div class="iframe-wrapper">
+            <div class="iframe-spinner" />
+            <iframe
+              data-src={`https://dev.cfwidget.com/${pack.path}?background=transparent&border=none`}
+              width="100%"
+            />
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+
+  <Banner center>Mods</Banner>
+
+  <div class="container download-grid my-3">
+    {
+      mods.map((mod) => (
+        <Card autoSize class:list={[mod.fullWidth && 'full-width']}>
+          <div class="mod-meta">
+            {mod.description && <p class="mod-description">{mod.description}</p>}
+            <div class="mod-meta-row">
+              {mod.optional && <span class="badge-optional">Optional</span>}
+              {mod.wiki && <a href={mod.wiki}>Read more on the wiki →</a>}
+            </div>
+          </div>
+          <div class="iframe-wrapper">
+            <div class="iframe-spinner" />
+            <iframe data-src={`https://dev.cfwidget.com/${mod.path}?background=transparent&border=none`} width="100%" />
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+
+  <Banner center>Third Party Mods</Banner>
+
+  <div class="container py-3">
+    <p>
+      Addon mods for Minecolonies that extend functionality, support is not guaranteed by the authors of Minecolonies
+      and may differ, check the support links of each mod for more information.
+    </p>
+  </div>
+
+  <div class="container download-grid my-3">
+    {
+      thirdPartyMods.map((mod) => (
+        <Card autoSize>
+          <div class="mod-meta">
+            {mod.description && <p class="mod-description">{mod.description}</p>}
+            <div class="mod-meta-row">
+              <a href={mod.supportUrl} target="_blank">
+                Support →
+              </a>
+            </div>
+          </div>
+          <div class="iframe-wrapper">
+            <div class="iframe-spinner" />
+            <iframe data-src={`https://dev.cfwidget.com/${mod.path}?background=transparent&border=none`} width="100%" />
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+
+  <div class="container attribution">
+    <p>Mod widgets provided by <a href="https://cfwidget.com" target="_blank">CFWidget</a>.</p>
+  </div>
+</Layout>
+
+<script>
+  function initLazyIframes() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const iframe = entry.target as HTMLIFrameElement;
+            iframe.addEventListener(
+              'load',
+              () => {
+                iframe.closest<HTMLElement>('.iframe-wrapper')?.classList.add('loaded');
+              },
+              { once: true }
+            );
+            iframe.src = iframe.dataset.src!;
+            observer.unobserve(iframe);
+          }
+        });
+      },
+      { rootMargin: '200px' }
+    );
+
+    document.querySelectorAll<HTMLIFrameElement>('iframe[data-src]').forEach((iframe) => {
+      observer.observe(iframe);
+    });
+
+    window.addEventListener('message', (event) => {
+      if (typeof event.data?.cfwidgetHeight === 'number') {
+        document.querySelectorAll<HTMLIFrameElement>('iframe').forEach((iframe) => {
+          if (iframe.contentWindow === event.source) {
+            iframe.style.height = `${event.data.cfwidgetHeight}px`;
+          }
+        });
+      }
+    });
+  }
+
+  document.addEventListener('astro:page-load', initLazyIframes);
+</script>
+
+<style lang="scss">
+  @import '../css/bootstrap-vars';
+
+  .download-grid {
+    --iframe-bleed: 46px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    width: 100%;
+
+    :global(> div) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    :global(.iframe-wrapper) {
+      position: relative;
+      margin-top: auto;
+      min-height: 60px;
+    }
+
+    :global(.iframe-spinner) {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: '';
+        width: 28px;
+        height: 28px;
+        border: 3px solid rgba(128, 128, 128, 0.25);
+        border-top-color: rgba(128, 128, 128, 0.8);
+        border-radius: 50%;
+        animation: iframe-spin 0.7s linear infinite;
+      }
+    }
+
+    :global(.iframe-wrapper.loaded .iframe-spinner) {
+      display: none;
+    }
+
+    :global(iframe) {
+      border: none;
+      display: block;
+      margin-left: calc(var(--iframe-bleed) * -1);
+      margin-bottom: -23px;
+      width: calc(100% + var(--iframe-bleed));
+      height: auto;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    :global(.iframe-wrapper.loaded iframe) {
+      opacity: 1;
+    }
+
+    :global(.modpack-card .iframe-wrapper) {
+      margin-top: -12px;
+    }
+  }
+
+  @keyframes iframe-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .download-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    :global(.full-width) {
+      grid-column: span 2;
+    }
+  }
+
+  .mod-description {
+    margin: 0;
+  }
+
+  .mod-meta {
+    margin-top: 0.4em;
+    margin-bottom: 0.75em;
+  }
+
+  .mod-meta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+  }
+
+  .attribution {
+    margin-top: 1em;
+    font-size: 0.8em;
+    opacity: 0.6;
+  }
+
+  .badge-optional {
+    background-color: #555;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+  }
+</style>

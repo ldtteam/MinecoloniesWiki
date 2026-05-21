@@ -1,7 +1,6 @@
 # Leads
 
 - id: Raycoms (H3Lay)
-  realName: Ray Neiheiser
   sub:
     - Programming
     - Management
@@ -11,7 +10,6 @@
   role: lead
   sort: 1
 - id: Pixblockus
-  realName: Someaddons
   sub:
     - Programming
   tagline: One feature has no end.
@@ -19,7 +17,6 @@
   role: lead
   sort: 2
 - id: OrionOnline
-  realName: Marc Hermans
   sub:
     - Programming
     - Management
@@ -29,7 +26,6 @@
   role: lead
   sort: 3
 - id: Wissi
-  realName: Luis Muñoz
   sub:
     - Wiki Editor
     - Modpack Creator
@@ -37,7 +33,6 @@
   uuid: b5a93d5b-38fc-4df2-98a7-0b3c7cd7cd0c
   role: lead
 - id: Kostronor
-  realName: Marvin Hofmann
   sub:
     - Programming
     - Management
@@ -46,7 +41,6 @@
   role: lead
   inactive: true
 - id: pmardle
-  realName: Peter Mardle
   sub:
     - Founder
     - Management
@@ -55,7 +49,6 @@
   role: lead
   inactive: true
 - id: flaminyogurt
-  realName: Colton Schlosser
   sub:
     - Programming
     - Management
@@ -72,8 +65,8 @@
   uuid: 2d7c57ca-7bd2-4c52-bd50-f7f3fc5ba204
   role: dev
   sort: 1
+  inactive: true
 - id: Thodor12
-  realName: Thom van den Akker
   sub:
     - Mod development
     - Web development
@@ -82,7 +75,6 @@
   role: dev
   sort: 2
 - id: Fireruner97
-  realName: Daniel Fuego
   sub:
     - Programming
   tagline: Our Spanish Toureiro.
@@ -90,7 +82,6 @@
   role: dev
   inactive: true
 - id: PoroUsedSnax
-  realName: Mark Fisher
   joinedYear: 2017
   sub:
     - Web Developer
@@ -99,7 +90,6 @@
   uuid: 2abe5404-4a2f-4e30-b3ff-671696227a90
   role: dev
 - id: Xavierh
-  realName: Xavier Hervy
   sub:
     - Programming
   tagline: Legolas, is that you?
@@ -114,7 +104,6 @@
   role: dev
   inactive: true
 - id: MineShadow7
-  realName: Andrey Karagodin
   sub:
     - Programming
   tagline: Slowly building an empire.
@@ -122,7 +111,6 @@
   role: dev
   inactive: true
 - id: TheYoxy
-  realName: Floryan Simar
   sub:
     - Programming
   tagline: Sheep can look smart too.
@@ -133,7 +121,6 @@
 # Assets (art)
 
 - id: ImriLaoi
-  realName: Tasha Wells
   sub:
     - Static Modelling
     - Texturing
@@ -147,14 +134,12 @@
   uuid: 546f4ea8-84ce-443f-b488-fbc685cdcbbc
   role: art
 - id: Asherslab
-  realName: Asher Parry
   sub:
     - Programming
   tagline: Raycom's dev AI.
   uuid: 9186b2cf-ae1f-4d69-aa67-81a7cb69008d
   role: lead
 - id: Raydamri
-  realName: '@pixelmanz2'
   sub:
     - Texture artist
   tagline: "Life's sponsored by raid: shadow legends"
@@ -167,7 +152,6 @@
   uuid: b5b426a8-d4f5-47cd-89b2-cde515a207d3
   role: art
 - id: carlansor
-  realName: carlos
   sub:
     - Texture Designer
     - Builder
@@ -175,7 +159,6 @@
   uuid: d404bf6e4cdd45c8a43224ff317c98ef
   role: art
 - id: D3miurge
-  realName: Rafael de Castro Pamplona
   sub:
     - Static Modelling
     - Texturing
@@ -185,7 +168,6 @@
   uuid: f82f921f-8242-49a7-a436-76c0a297b122
   role: art
 - id: Khranos
-  realName: Khranos Lucror
   sub:
     - Animated/Static modelling
     - Texturing

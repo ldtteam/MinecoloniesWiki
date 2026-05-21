@@ -27,7 +27,6 @@ const teamCollection = defineCollection({
   loader: file('./src/data/site/team.yaml'),
   schema: z.object({
     uuid: z.string().optional(),
-    realName: z.string().optional(),
     joinedYear: z.number().optional(),
     role: z.enum(['lead', 'dev', 'art', 'voice']),
     sub: z.array(z.string()).optional(),
@@ -60,7 +59,8 @@ const socialsCollection = defineCollection({
     id: z.string(),
     name: z.string(),
     link: z.string(),
-    color: z.string()
+    color: z.string(),
+    order: z.number()
   })
 });
 

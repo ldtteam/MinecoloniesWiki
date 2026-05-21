@@ -18,12 +18,19 @@ if (social === undefined) {
 ---
 
 <a href={social.data.link} class:list={[cssClass, icon ? 'social-icon' : '']} aria-label={social.data.name + ' link'}>
-  {icon ? <Icon name={`cib:${social.id}`} color={color ?? social.data.color} size={18} /> : social.data.name}
-  <slot />
+  <span>
+    {icon ? <Icon name={`cib:${social.id}`} color={color ?? social.data.color} size={18} /> : social.data.name}
+  </span>
 </a>
 
 <style>
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+  }
+
   .social-icon {
-    display: inline-block;
+    display: inline-flex;
   }
 </style>

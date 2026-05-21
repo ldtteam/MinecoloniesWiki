@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 
 import Card from './common/basic/Card.astro';
+import MinecraftSkin from './common/MinecraftSkin.astro';
 
 interface Props {
   supporter: CollectionEntry<'supporters'>;
@@ -12,12 +13,6 @@ const { supporter } = Astro.props;
 
 <Card class="text-center p-4" autoSize>
   <h3>{supporter.data.name}</h3>
-  <img
-    src={`https://crafatar.com/renders/body/${
-      supporter.id ?? '00000000-0000-0000-0000-000000000000'
-    }?overlay=true&scale=4`}
-    class="float-md-left"
-    alt={`Minecraft skin for ${supporter.data.name}`}
-  />
+  <MinecraftSkin uuid={supporter.id} name={supporter.data.name} />
   <div class="clearfix"></div>
 </Card>

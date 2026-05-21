@@ -1,9 +1,7 @@
 ---
 import Meta from '../../components/common/core/Meta.astro';
-import BuildingNameAllVersions from '../../components/wiki/building/names/BuildingNameAllVersions.astro';
 import PagesOverview from '../../components/wiki/PagesOverview.astro';
 import Social from '../../components/wiki/util/MarkdocSocialLink.astro';
-import WorkerNameAllVersions from '../../components/wiki/workers/names/WorkerNameAllVersions.astro';
 import Layout from '../../layouts/Default.astro';
 ---
 
@@ -11,67 +9,10 @@ import Layout from '../../layouts/Default.astro';
   <Meta slot="meta" title="Wiki Home" isWiki />
 
   <p>
-    MineColonies is an interactive building mod that allows you to create your own thriving town within Minecraft. It
-    lets your leadership skills soar by providing you with everything you need to build your kingdom. MineColonies gives
-    you the flexibility to create a colony as unique as every player. With so many options, you'll create a different
-    colony every time, adapt it to any biome, build inside a mountain, on top of one, under the ocean, or in the sky.
+    New to MineColonies? Start with the <a href="/wiki/tutorials/getting-started">Getting Started guide</a> or check the <a
+      href="/wiki/installation/installation">installation instructions</a
+    >. Browse buildings, workers, and more in the full list of pages below.
   </p>
-  <p>The limit is your imagination!</p>
-  <p>
-    MineColonies features NPC workers such as <WorkerNameAllVersions
-      buildingBaseId="builder"
-      workerBaseId="builder"
-      plural
-      link
-    />, <WorkerNameAllVersions buildingBaseId="farmer" workerBaseId="farmer" plural link />, <WorkerNameAllVersions
-      buildingBaseId="fisherman"
-      workerBaseId="fisher"
-      plural
-      link
-    />, <WorkerNameAllVersions buildingBaseId="lumberjack" workerBaseId="forester" plural link />, <WorkerNameAllVersions
-      buildingBaseId="miner"
-      workerBaseId="miner"
-      plural
-      link
-    />, <WorkerNameAllVersions buildingBaseId="smeltery" workerBaseId="smelter" plural link />, <WorkerNameAllVersions
-      buildingBaseId="baker"
-      workerBaseId="baker"
-      plural
-      link
-    />, <WorkerNameAllVersions buildingBaseId="cook" workerBaseId="cook" plural link />, <WorkerNameAllVersions
-      buildingBaseId="deliveryman"
-      workerBaseId="courier"
-      plural
-      link
-    />, five types of animal herders, <WorkerNameAllVersions
-      buildingBaseId="composter"
-      workerBaseId="composter"
-      plural
-      link
-    />, and many more, with even more being developed and added as the mod grows.
-  </p>
-  <p>
-    It also includes specialized buildings such as the <BuildingNameAllVersions
-      buildingBaseId="warehouse"
-      plural
-      link
-    />, <BuildingNameAllVersions buildingBaseId="residence" link />, <BuildingNameAllVersions
-      buildingBaseId="townhall"
-      link
-    />, <BuildingNameAllVersions buildingBaseId="barracks" plural link />, <BuildingNameAllVersions
-      buildingBaseId="library"
-      plural
-      link
-    />, <BuildingNameAllVersions buildingBaseId="university" plural link />, and even the <BuildingNameAllVersions
-      buildingBaseId="school"
-      plural
-      link
-    />.
-  </p>
-  <h3>
-    Please note that the wiki is a work in progress and will usually refer to the latest 1.20.1 and/or 1.21.1 version of
-    MineColonies!
-  </h3>
   <hr />
   <PagesOverview />
   <hr />
@@ -93,7 +34,7 @@ import Layout from '../../layouts/Default.astro';
     If changes are needed or you think there is content missing, feel free to
     <a href="https://github.com/ldtteam/MinecoloniesWiki/edit/main/src/content/wiki/index.mdoc">edit</a>
     this page or submit an
-    <a href="https://github.com/ldtteam/MinecoloniesWiki/issues/new/choose"> issue</a>
+    <a href="https://github.com/ldtteam/MinecoloniesWiki/issues/new/choose">issue</a>
     for us to make edits. - MineColonies Wiki Team
   </p>
 </Layout>

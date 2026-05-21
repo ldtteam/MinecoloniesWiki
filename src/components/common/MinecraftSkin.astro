@@ -1,0 +1,27 @@
+---
+interface Props {
+  uuid: string;
+  name: string;
+  size?: number;
+  class?: string;
+}
+
+const { uuid, name, size = 128, class: cssClass } = Astro.props;
+---
+
+<img
+  src={`https://mc-heads.net/head/${uuid}`}
+  alt={`Minecraft skin for ${name}`}
+  class={cssClass}
+  style={`--size: ${size}px`}
+  loading="lazy"
+  decoding="async"
+/>
+
+<style>
+  img {
+    width: var(--size);
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+</style>
