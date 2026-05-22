@@ -1,13 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { getEntry } from 'astro:content';
+import { getEntries, getEntry } from 'astro:content';
 
 import shankEmpty from '../../../../assets/images/wiki/food/shank_empty.png';
 import shankFull from '../../../../assets/images/wiki/food/shank_full.png';
 import shankHalf from '../../../../assets/images/wiki/food/shank_half.png';
+import type { RecipeSchema } from '../../../../schemas/item';
 import Infobox from '../../../common/infobox/Infobox.astro';
 import RecipeGrid from '../../../common/infobox/RecipeGrid.astro';
 import ItemImage from '../../images/ItemImage.astro';
+import BiomeBadge from '../food/BiomeBadge.astro';
 import ItemName from '../names/ItemName.astro';
 
 interface Props {
@@ -18,6 +20,37 @@ interface Props {
 const { item, expand = false } = Astro.props;
 const version = await getEntry(item.data.version);
 const food = item.data.food;
+
+function getIngredientRefs(recipe: RecipeSchema) {
+  if (recipe.type === 'shaped') {
+    return recipe.items
+      .flat()
+      .flat()
+      .filter((r) => r !== undefined);
+  } else if (recipe.type === 'shapeless') {
+    return recipe.items.flatMap((i) => i.item);
+  } else if (recipe.type === 'crafter') {
+    return recipe.inputs.flatMap((i) => i.item);
+  } else if (recipe.type === 'smelting') {
+    return recipe.item;
+  }
+  return [];
+}
+
+const allIngredientRefs = item.data.recipes.flatMap(getIngredientRefs);
+const allIngredients = await getEntries(allIngredientRefs);
+
+const biomeBadges = Array.from(
+  new Map(
+    allIngredients.flatMap((i) => {
+      const { biomeKey, biomeName } = i.data.crop ?? {};
+      if (!biomeKey || !biomeName) {
+        return [];
+      }
+      return [[biomeKey, { biomeKey, biomeName }]];
+    })
+  ).values()
+).sort((a, b) => a.biomeName.localeCompare(b.biomeName));
 
 const MAX_SHANKS = 10;
 
@@ -68,10 +101,53 @@ const shanks = food ? buildShanks(food.saturation) : [];
     )
   }
 
+  <div class="biome-badges">
+    <hr />
+    <div class="biome-badges-row">
+      <span class="biome-badges-label">Required Biomes</span>
+      <div class="biome-badges-list">
+        {
+          biomeBadges.length === 0 ? (
+            <BiomeBadge />
+          ) : (
+            biomeBadges.map((b) => <BiomeBadge biomeKey={b.biomeKey} biomeName={b.biomeName} />)
+          )
+        }
+      </div>
+    </div>
+  </div>
+
   <RecipeGrid recipes={item.data.recipes} version={version} />
 </Infobox>
 
 <style>
+  .biome-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .biome-badges-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .biome-badges-label {
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 0.5em;
+  }
+
+  .biome-badges-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .food-stats {
     display: flex;
     flex-direction: column;

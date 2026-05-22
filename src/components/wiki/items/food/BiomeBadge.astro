@@ -1,0 +1,19 @@
+---
+const biomeColors: Record<string, string> = {
+  coldbiomes: '#5b9bd5',
+  temperatebiomes: '#4caf50',
+  humidbiomes: '#2e7d32',
+  drybiomes: '#c8a400'
+};
+
+interface Props {
+  biomeKey?: string;
+  biomeName?: string;
+}
+
+const { biomeKey, biomeName } = Astro.props;
+const color = biomeKey ? (biomeColors[biomeKey] ?? '#6c757d') : '#6c757d';
+const label = biomeName ?? 'Any Biome';
+---
+
+<span class="badge" style={`background-color: ${color};`}>{label}</span>

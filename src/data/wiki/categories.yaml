@@ -1,24 +1,27 @@
 - id: installation
   name: Installation
   order: 1
-- id: tutorials
-  name: Tutorials
-  order: 2
-- id: systems
-  name: Systems
-  order: 3
 - id: dependencies
   name: Dependencies
-  order: 4
+  order: 2
+- id: tutorials
+  name: Tutorials
+  order: 3
 - id: items
   name: Blocks / Items
-  order: 5
+  order: 4
 - id: buildings
   name: Buildings
-  order: 6
+  order: 5
 - id: workers
   name: Workers
+  order: 6
+- id: systems
+  name: Systems
   order: 7
+- id: needs
+  name: Needs
+  order: 8
 - id: misc
   name: Misc
-  order: 8
+  order: 9

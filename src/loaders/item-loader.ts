@@ -3,9 +3,13 @@ import { z } from 'astro/zod';
 import path from 'path';
 
 import { itemSchema } from '../schemas/item';
-import { getAllNamespacesInFolder, getVersionsFromFile } from '../util/file-loaders';
+import { getAllNamespacesInFolder, getTranslations, getVersionsFromFile } from '../util/file-loaders';
 import { exists, getAllFilesInDirectory, parseJson } from '../util/files';
-import { parseResourceLocationFromAbsolutePath, resourceLocationToWikiId } from '../util/resourcelocation';
+import {
+  parseResourceLocation,
+  parseResourceLocationFromAbsolutePath,
+  resourceLocationToWikiId
+} from '../util/resourcelocation';
 import { getVersionCollectionId } from '../util/version';
 import { parserModule12000 } from './recipes/12000';
 import { parserModule12100 } from './recipes/12100';
@@ -16,10 +20,16 @@ const generatorFoodSchema = z.object({
   saturation: z.number()
 });
 
+const generatorCropSchema = z.object({
+  'biome-tag': z.string().optional(),
+  'dropped-from': z.array(z.string()).optional()
+});
+
 const generatorItemSchema = z.object({
   name: z.string(),
   'block-id': z.string().optional(),
-  food: generatorFoodSchema.optional()
+  food: generatorFoodSchema.optional(),
+  crop: generatorCropSchema.optional()
 });
 
 const unavailableItems = [
@@ -45,6 +55,7 @@ export function itemLoader() {
       const versions = await getVersionsFromFile();
 
       for (const version of versions) {
+        const translations = await getTranslations(version.submodule);
         const recipesByOutputItem = new Map<string, StoredRecipeData[]>();
 
         const anyRecipeSchema = versionSchemaMap[version.submodule].fullSchema;
@@ -143,7 +154,22 @@ export function itemLoader() {
                 name: itemData.name,
                 blockId: itemData['block-id'],
                 recipes,
-                food: itemData.food
+                food: itemData.food,
+                crop: itemData.crop
+                  ? (() => {
+                      const biomeTag = itemData.crop['biome-tag'];
+                      const biomeKey = biomeTag ? parseResourceLocation(biomeTag).path : undefined;
+                      return {
+                        biomeKey,
+                        biomeName: biomeKey
+                          ? translations[`com.minecolonies.core.tag.crop.biome.${biomeKey}`]
+                          : undefined,
+                        droppedFrom: itemData.crop['dropped-from']?.map((b) =>
+                          resourceLocationToWikiId(parseResourceLocation(b))
+                        )
+                      };
+                    })()
+                  : undefined
               }
             });
 
