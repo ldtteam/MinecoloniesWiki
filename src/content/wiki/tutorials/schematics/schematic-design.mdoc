@@ -161,26 +161,43 @@ Supply camps and ships have a set of rules they must adhere to, as their placeme
 
 Apply a `groundlevel` tag using the {% item name="structurize/sceptertag" /%} on the floor level (any block).
 
-## Building Requirements
-
-Any building can have a certain amount of requirements within the schematic.
+## Schematic Requirements
 
 ### Common Requirements
+
+These apply to both huts and decorations.
+
+**Tags:**
+- `groundlevel` on exactly one block at the nominal ground level of the schematic. This affects how the {% item name="structurize/sceptergold" /%} aligns the schematic when placed. If not specified, the block directly below the anchor block is assumed to be the ground level. It is recommended to always specify this explicitly.
+- `invisible` directly on the anchor block. Marks the schematic as invisible to normal players in survival mode. Intended for schematics that are only meant to be built as children of another building or decoration.
+
+### Hut Requirements
+
+These apply to hut schematics only.
 
 **Blocks:**
 - Any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks for additional storage
 
 **Tags:**
+- `building_sign` on any sign-compatible block. The block will display the building's name and updates automatically.
+- `job=<jobid>` directly on the hut block. Restricts the building to only accept a worker of the specified job ID. For example, `job=miner` or `job=quarrier` on a {% building name="miner" /%} block.
 - Any number of `sit_in` tags for **indoor** sitting positions for leisure time. Commonly on stairs or slabs.
 - Any number of `sit_out` tags for **outdoor** sitting positions for leisure time. Commonly on stairs or slabs.
 - Any number of `stand_in` tags for **indoor** standing positions for leisure time.
 - Any number of `stand_out` tags for **outdoor** standing positions for leisure time.
 
-### Per-Building Requirements
+### Per-Hut Requirements
 
 {% building_requirements_table /%}
 
-All buildings may include any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks to act as additional storage. The amount you include varies per building and level.
+All huts may include any number of {% item name="minecolonies/blockminecoloniesrack" /%} blocks to act as additional storage. The amount you include varies per building and level.
+
+### Decoration Requirements
+
+These apply to decoration schematics only.
+
+**Tags:**
+- `leisure` directly on the {% item name="minecolonies/decorationcontroller" /%}. Marks the decoration as a leisure site that colonists will visit when idle. Colonists will wander around and optionally use any `sit_in`, `sit_out`, `stand_in`, and `stand_out` tags present.
 
 ## Level Requirements
 
