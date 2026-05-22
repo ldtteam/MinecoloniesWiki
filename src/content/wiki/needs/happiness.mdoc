@@ -1,13 +1,7 @@
 ---
 type: page
-title: Happiness and Saturation Systems
+title: Happiness
 ---
-
-The Saturation and Happiness systems for the citizens are locked in to each other, which means that the citizens require food to increase their happiness.
-
-The citizens, however, will NOT die if their saturation goes down to 0, they will simply stop leveling, request food in chat regularly, and gain the slowness effect. The workers will stop working. This will affect the overall happiness of each citizen as well as the entire colony.
-
-## Happiness System
 
 There is an **overall** colony happiness and an **individual** citizen happiness. Higher colony happiness increases the initial level and skills of new colonists. Higher citizen happiness increases the maximum possible Intelligence when studying at a {% building name="library" /%}.
 
@@ -26,13 +20,3 @@ Every night, colonists will also become less happy if they are sick, homeless, u
 Surviving a raid without losing any colonists provides a colony-wide happiness boost.
 
 Colonists also like to have Guards near their homes and work places. Each {% building name="guardtower" /%} will provide a feeling of protection to the colonists based on how far it expands your [borders](/wiki/systems/border). However, sometimes colonists may not recognize a newly placed Guard Tower until you tell them that their concerns for their safety have to do for now.
-
-## Hunger/Saturation System
-
-The citizen saturation system works similarly to the player hunger system. If saturation reaches 0, the citizen won't level anymore, won't work anymore, will request food in chat regularly, and will have the slowness effect. Below a certain saturation level, the citizen won't heal. At full saturation, the citizen will have a double healing speed. They increase their saturation by eating, just like the player. Saturation is displayed with the saturation bar in each citizen's GUI (it looks like the hunger bar in the player's HUD).
-
-Every time a citizen goes to sleep (starts the walk back to their {% building name="residence" /%} or {% building name="tavern" /%}), they will decrease their saturation based on their worker hut level. They will also decrease their saturation while working.
-
-Citizens will demand higher levels of food based on their workplace level. **They will not eat food that doesn't meet (or exceed) their requirements.**
-
-When a citizen's hunger level gets low enough, they will head to the {% building name="cook" /%} to get food from the {% worker name="cook" /%}. If there is no Cook, they will request in their GUI that you build them a {% building name="cook" /%} or provide them with food manually.

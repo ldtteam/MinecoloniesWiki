@@ -2,7 +2,7 @@ import { type AstroMarkdocConfig, defineMarkdocConfig, Markdoc, nodes } from '@a
 import shiki from '@astrojs/markdoc/shiki';
 
 import { building, building_requirements_table, contentBlocks as buildingContentBlocks } from './src/markdoc/buildings';
-import { item, item_infobox, item_page } from './src/markdoc/items';
+import { food_list, item, item_infobox, item_page } from './src/markdoc/items';
 import { research_link, research_list, research_trees } from './src/markdoc/research';
 import { schema } from './src/markdoc/schema';
 import type { Tag } from './src/markdoc/types';
@@ -41,6 +41,7 @@ const config: AstroMarkdocConfig = {
     item,
     item_page,
     item_infobox,
+    food_list,
     research_trees,
     research_list,
     research_link,

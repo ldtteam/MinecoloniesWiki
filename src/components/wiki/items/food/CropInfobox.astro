@@ -1,0 +1,88 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+import { getVersionCollectionId } from '../../../../util/version';
+import Infobox from '../../../common/infobox/Infobox.astro';
+import RecipeGrid from '../../../common/infobox/RecipeGrid.astro';
+import VersionSlideshow from '../../../common/version/VersionSlideshow.astro';
+import ItemImage from '../../images/ItemImage.astro';
+import RecipeSlot from '../../recipes/RecipeSlot.astro';
+import ItemName from '../names/ItemName.astro';
+import BiomeBadge from './BiomeBadge.astro';
+
+interface Props {
+  item: CollectionEntry<'items'>;
+  expand?: boolean;
+}
+
+const { item, expand = false } = Astro.props;
+const version = await getEntry(item.data.version);
+const crop = item.data.crop;
+
+const droppedFromItems = await Promise.all(
+  (crop?.droppedFrom ?? []).map((wikiId) => getEntry('items', getVersionCollectionId(wikiId, version.data)))
+);
+const resolvedDroppedFrom = droppedFromItems.filter((i) => i !== undefined);
+
+const slideshowGroup = `crop-dropped-${item.id}`;
+---
+
+<Infobox class:list={['w-100', expand ? 'h-100' : '']} expand={expand} fullWidth>
+  <ItemName slot="title" item={item} link={false} />
+
+  <div class="text-center">
+    <ItemImage item={item} alt={item.data.name + ' icon'} size={150} />
+  </div>
+
+  <div class="crop-stats">
+    <hr />
+    <div class="crop-stat-row">
+      <span class="crop-stat-label">Preferred Biome</span>
+      <BiomeBadge biomeKey={crop?.biomeKey} biomeName={crop?.biomeName} />
+    </div>
+  </div>
+
+  {
+    resolvedDroppedFrom.length > 0 && (
+      <div class="crop-dropped-from">
+        <hr />
+        <div class="crop-stat-row">
+          <span class="crop-stat-label">Dropped From</span>
+          <VersionSlideshow version={version} group={slideshowGroup}>
+            <RecipeSlot items={resolvedDroppedFrom} />
+          </VersionSlideshow>
+        </div>
+      </div>
+    )
+  }
+
+  <RecipeGrid recipes={item.data.recipes} version={version} />
+</Infobox>
+
+<style>
+  .crop-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .crop-stat-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .crop-stat-label {
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 0.5em;
+  }
+
+  .crop-dropped-from {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+</style>

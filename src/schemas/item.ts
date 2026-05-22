@@ -69,10 +69,23 @@ export const recipeSchema = z
   })
   .and(z.discriminatedUnion('type', [shapedRecipe, shapelessRecipe, crafterRecipe, smeltingRecipe]));
 
+export const foodSchema = z.object({
+  tier: z.number().int(),
+  saturation: z.number()
+});
+
+export const cropSchema = z.object({
+  biomeKey: z.string().optional(),
+  biomeName: z.string().optional(),
+  droppedFrom: z.array(z.string()).optional()
+});
+
 export const itemSchemaWithoutVersionData = z.object({
   name: z.string(),
   blockId: z.string().optional(),
-  recipes: recipeSchema.array()
+  recipes: recipeSchema.array(),
+  food: foodSchema.optional(),
+  crop: cropSchema.optional()
 });
 
 export const itemSchema = itemSchemaWithoutVersionData.and(versionedObjectSchema);
@@ -80,3 +93,5 @@ export const itemSchema = itemSchemaWithoutVersionData.and(versionedObjectSchema
 export type RecipeSchema = z.infer<typeof recipeSchema>;
 export type RecipeItem = z.infer<typeof recipeItems>;
 export type RecipeCondition = z.infer<typeof craftingConditionTypes>;
+export type FoodSchema = z.infer<typeof foodSchema>;
+export type CropSchema = z.infer<typeof cropSchema>;

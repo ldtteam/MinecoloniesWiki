@@ -27,17 +27,19 @@ const slotColumns = inputSlots.map((_, i) => frames.map((frame) => frame[i]));
 
 <VersionSlideshow version={version} group={group}>
   <div class="recipe-frame">
-    <div class="inputs">
-      {slotColumns.map((items, i) => <RecipeSlot items={items} amount={inputCounts[i]} />)}
+    <div class="inputs-column">
+      <div class:list={['inputs', !intermediate && !recipe.tool ? 'inputs-fixed' : '']}>
+        {slotColumns.map((items, i) => <RecipeSlot items={items} amount={inputCounts[i]} />)}
+      </div>
+      {
+        (intermediate || recipe.tool) && (
+          <div class="intermediate">
+            {intermediate && <RecipeSlot items={[intermediate]} />}
+            {recipe.tool && <div class="tool">{recipe.tool}</div>}
+          </div>
+        )
+      }
     </div>
-    {
-      (intermediate || recipe.tool) && (
-        <div class="intermediate">
-          {intermediate && <RecipeSlot items={[intermediate]} />}
-          {recipe.tool && <div class="tool">{recipe.tool}</div>}
-        </div>
-      )
-    }
     <div class="output">
       <RecipeSlot items={[output]} amount={recipe.amount} large />
     </div>
@@ -52,18 +54,27 @@ const slotColumns = inputSlots.map((_, i) => frames.map((frame) => frame[i]));
     align-items: center;
   }
 
+  .inputs-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
   .inputs {
     display: grid;
     grid-template-columns: repeat(3, 2em);
+  }
+
+  .inputs-fixed {
     grid-template-rows: repeat(3, 2em);
   }
 
   .intermediate {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     gap: 0.25em;
+    margin-top: 0.5em;
   }
 
   .tool {

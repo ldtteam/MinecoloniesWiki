@@ -55,19 +55,10 @@ const { version, group, delay = 2000, class: className } = Astro.props;
       }
     });
 
-    pairs.forEach(([, next]) => {
+    pairs.forEach(([current, next]) => {
+      current.style.opacity = '0';
       next.style.opacity = '1';
     });
-
-    setTimeout(() => {
-      pairs.forEach(([current]) => {
-        current.style.transition = 'none';
-        current.style.opacity = '0';
-        requestAnimationFrame(() => {
-          current.style.transition = '';
-        });
-      });
-    }, 300);
 
     state.index = nextIndex;
   }

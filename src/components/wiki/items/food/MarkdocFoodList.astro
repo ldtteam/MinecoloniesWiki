@@ -1,0 +1,159 @@
+---
+import { getCollection, getEntries } from 'astro:content';
+
+import type { CropSchema, FoodSchema, RecipeSchema } from '../../../../schemas/item';
+import { getSortedVersions } from '../../../../util/version';
+import VersionContent from '../../../common/version/VersionContent.astro';
+import FoodInfobox from '../infobox/FoodInfobox.astro';
+import CropInfobox from './CropInfobox.astro';
+
+function getIngredientRefs(recipe: RecipeSchema) {
+  if (recipe.type === 'shaped') {
+    return recipe.items
+      .flat()
+      .flat()
+      .filter((r) => r !== undefined);
+  } else if (recipe.type === 'shapeless') {
+    return recipe.items.flatMap((i) => i.item);
+  } else if (recipe.type === 'crafter') {
+    return recipe.inputs.flatMap((i) => i.item);
+  } else if (recipe.type === 'smelting') {
+    return recipe.item;
+  }
+  return [];
+}
+
+const versions = await getSortedVersions();
+const allItems = await getCollection('items');
+
+const dataByVersion = await Promise.all(
+  versions.map(async (version) => {
+    const foodItems = allItems.filter(
+      (item): item is typeof item & { data: { food: FoodSchema } } =>
+        item.data.version.id === version.id && item.data.food !== undefined
+    );
+
+    const cropItems = allItems
+      .filter(
+        (item): item is typeof item & { data: { crop: CropSchema } } =>
+          item.data.version.id === version.id && item.data.crop !== undefined
+      )
+      .sort((a, b) => {
+        const aName = a.data.crop.biomeName;
+        const bName = b.data.crop.biomeName;
+        if (aName !== bName) {
+          if (!aName) {
+            return -1;
+          }
+          if (!bName) {
+            return 1;
+          }
+          return aName.localeCompare(bName);
+        }
+        return a.data.name.localeCompare(b.data.name);
+      });
+
+    const foodWithBiomes = await Promise.all(
+      foodItems.map(async (item) => {
+        const allIngredientRefs = item.data.recipes.flatMap(getIngredientRefs);
+        const ingredients = await getEntries(allIngredientRefs);
+        const biomes = Array.from(
+          new Map(
+            ingredients.flatMap((i) => {
+              const { biomeKey, biomeName } = i.data.crop ?? {};
+              if (!biomeKey || !biomeName) {
+                return [];
+              }
+              return [[biomeKey, { biomeKey, biomeName }]] as const;
+            })
+          ).values()
+        ).sort((a, b) => a.biomeName.localeCompare(b.biomeName));
+        return { item, biomes };
+      })
+    );
+
+    const tierMap = new Map<number, typeof foodWithBiomes>();
+    for (const entry of foodWithBiomes) {
+      const tier = entry.item.data.food.tier;
+      const bucket = tierMap.get(tier) ?? [];
+      bucket.push(entry);
+      tierMap.set(tier, bucket);
+    }
+
+    const sortedTiers = Array.from(tierMap.entries())
+      .sort(([a], [b]) => a - b)
+      .map(([tier, entries]) => ({
+        tier,
+        items: entries.sort((a, b) => {
+          const aBiomeNames = a.biomes.map((b) => b.biomeName).join(',');
+          const bBiomeNames = b.biomes.map((b) => b.biomeName).join(',');
+          if (aBiomeNames !== bBiomeNames) {
+            return aBiomeNames.localeCompare(bBiomeNames);
+          }
+          if (a.item.data.food.saturation !== b.item.data.food.saturation) {
+            return a.item.data.food.saturation - b.item.data.food.saturation;
+          }
+          return a.item.data.name.localeCompare(b.item.data.name);
+        })
+      }));
+
+    return { version, tiers: sortedTiers, cropItems };
+  })
+);
+---
+
+{
+  dataByVersion.map(({ version, tiers, cropItems }) => (
+    <VersionContent versions={[version]}>
+      {tiers.map(({ tier, items }) => (
+        <section class="food-tier-section">
+          <h3>Tier {tier}</h3>
+          <div class="food-grid">
+            {items.map(({ item }) => (
+              <FoodInfobox item={item} expand />
+            ))}
+          </div>
+        </section>
+      ))}
+      {tiers.length === 0 && <p>No food data available for this version yet.</p>}
+      <section class="food-tier-section">
+        <h3 id="crops">Crops</h3>
+        {cropItems.length === 0 ? (
+          <p>No crop data available for this version yet.</p>
+        ) : (
+          <div class="food-grid">
+            {cropItems.map((item) => (
+              <CropInfobox item={item} expand />
+            ))}
+          </div>
+        )}
+      </section>
+    </VersionContent>
+  ))
+}
+
+<style lang="scss">
+  @import '../../../../css/bootstrap-vars';
+
+  .food-tier-section {
+    margin-bottom: 2rem;
+  }
+
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
