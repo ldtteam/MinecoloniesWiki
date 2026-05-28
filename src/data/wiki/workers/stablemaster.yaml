@@ -1,0 +1,13 @@
+name: Stablemaster
+plural: Stablemasters
+description: The Stablemaster raises horses, trains them into Cavalry Horses, and keeps mounts ready for combat.
+icon: ../../../assets/images/wiki/workers/stablemaster/male/default-a.png
+type: other
+traits:
+  primary:
+    name: Athletics
+    effect: More effective combat readiness preparations
+  secondary:
+    name: Stamina
+    effect: Horses trained faster
+primaryBuilding: stable
