@@ -1,0 +1,13 @@
+name: Cavalry
+plural: Cavalry
+description: Cavalry are mounted fighters, fast and tough but vulnerable to ranged attacks.
+icon: ../../../assets/images/wiki/workers/cavalry/male/default-a.png
+type: guard
+traits:
+  primary:
+    name: Adaptability
+    effect: Increased health and resilience
+  secondary:
+    name: Athletics
+    effect: Faster attack speed
+primaryBuilding: stable
