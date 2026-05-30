@@ -22,6 +22,11 @@ export const worker: Tag = {
       type: Boolean,
       default: false,
       required: false
+    },
+    link: {
+      type: Boolean,
+      default: true,
+      required: false
     }
   }
 };

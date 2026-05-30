@@ -8,9 +8,10 @@ interface Props {
   name?: string;
   building?: string;
   plural?: boolean;
+  link?: boolean;
 }
 
-const { name, building, plural = false } = Astro.props;
+const { name, building, plural = false, link } = Astro.props;
 
 const frontmatter = Astro.locals.wikiPage?.data;
 const workerIdFromPage =
@@ -34,6 +35,6 @@ if (buildingBaseId === undefined) {
 <WorkerNameAllVersions
   buildingBaseId={buildingBaseId}
   workerBaseId={workerBaseId}
-  link={workerIdFromPage !== workerBaseId}
+  link={link !== false && workerIdFromPage !== workerBaseId}
   plural={plural}
 />

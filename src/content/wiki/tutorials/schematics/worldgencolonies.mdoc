@@ -14,7 +14,7 @@ First, you need to design and build your own [schematic](schematics). Once your 
 The most important thing to ensure that colonies register as abandoned and can be restored is to use the tag tool to tag the hut block appropriately.
 
 1. Tag the hut block with its style name (e.g., "medieval_oak" for the Medieval Oak style). The name must match the style's folder name in the MineColonies.jar file or resource pack.
-2. Add the tag "abandoned" to the hut block. If you right-click the building with an empty hand, it should now say that the building is abandoned and tell you to seek out the town hall.
+2. Add the tag "abandoned" to the hut block. If you right-click the building with an empty hand, it should now say that the building is abandoned and tell you to seek out the {% building name="townhall" link=false /%}.
 
 ### Adding Jigsaw Blocks
 
@@ -61,7 +61,7 @@ Park processors are defined in "<stylename>/decoration.json". This processor add
 
 #### placeholder_replacement.json
 
-Building processors are defined in "<stylename>/placeholder_replacement.json". Similar to how zombie villages decay, this processor removes various building blocks or replaces them with cobweb. Which blocks are affected and how often depends on the style. In addition to decay, this processor also converts Structurize placeholder blocks into suitable in-world blocks, similar to how a builder handles them when constructing a building.
+Building processors are defined in "<stylename>/placeholder_replacement.json". Similar to how zombie villages decay, this processor removes various building blocks or replaces them with cobweb. Which blocks are affected and how often depends on the style. In addition to decay, this processor also converts Structurize placeholder blocks into suitable in-world blocks, similar to how a {% worker name="builder" /%} handles them when constructing a building.
 
 - "structurize:blocksolidsubstitution" turns into dirt, which may be further converted by a later rule in the same file.
 - "structurize:blocksubstitution" is ignored, meaning existing blocks in the world remain in place when the structure generates.

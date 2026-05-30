@@ -4,7 +4,7 @@ title: Schematic Design
 ---
 # Schematic Design
 
-This page covers the rules and conventions for designing schematics for style packs, including hut naming, supply camps and ships, building requirements, plantation fields, mineshafts, and quarries.
+This page covers the rules and conventions for designing schematics for style packs, including hut naming, supply camps and ships, building requirements, {% building name="plantation" link=false /%} fields, mineshafts, and quarries.
 
 ## Custom Huts
 
@@ -249,7 +249,7 @@ The custom mineshafts need to be at `blueprints/yourstyle/infrastructure/minesha
 It's recommended to use the {% item name="structurize/blocktagsubstitution" /%} to make the mineshafts `invisible`. Take care that the anchor is in the same position as in the original mineshafts, at the very center bottom block.
 {% /version %}
 
-## Custom Quarries
+## Custom {% building name="quarry" link=false plural=true /%}
 
 The {% building name="quarry" /%} is split into a "top part" and a "bottom part". Both parts only have one level each (but unlike decorations, are expected to still include the level number in the filename).
 
@@ -271,10 +271,10 @@ Alternatively, you can put a `shaft=` tag on the top part's {% building name="qu
 
 When built, the two schematics are aligned such that the anchor of the bottom part is exactly two blocks below the anchor of the top part. You should carefully align them when designing. It may be helpful to build them directly on top of each other and simply scan them as two separate parts.
 
-It is permitted for the quarry to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobblestone or other stone.
+It is permitted for the {% building name="quarry" /%} to be a slightly different size from the default versions, but it's strongly encouraged (for game balance reasons) to make each one approximately the same size as the originals, and in particular to have the same amount of air blocks in the bottom part, since this affects the final yield of cobblestone or other stone.
 
 {% version range="1.19.2--" %}
-## Plantation Fields
+## {% building name="plantation" link=false /%} Fields
 
 In 1.19.2 and beyond, the plantation has been changed to include fields, just like the {% worker name="farmer" /%}. However, unlike the {% worker name="farmer" /%}, these fields can be completely free-form and created by the style designer. Each field has certain requirements for the {% worker name="planter" /%} to work successfully.
 
@@ -302,20 +302,20 @@ The {% worker name="planter" /%} will always attempt to walk to any adjacent air
 
 > **Note:** Make sure that the {% worker name="planter" /%} can always get within about 4 blocks of the desired position. If not, they will teleport around to reach the position, which may not always work.
 
-> **Note:** Kelp is an exception to this behaviour. To prevent planters from diving into the water, the planter will walk to the first air block above the work-tagged block and look up 26 blocks from the work-tagged block. If this is not possible, they will not be able to harvest this plant, so ensure there is air above the water above the work-tagged block.
+> **Note:** Kelp is an exception to this behaviour. To prevent {% worker name="planter" plural=true /%} from diving into the water, the {% worker name="planter" /%} will walk to the first air block above the work-tagged block and look up 26 blocks from the work-tagged block. If this is not possible, they will not be able to harvest this plant, so ensure there is air above the water above the work-tagged block.
 >
 > ![Kelp field movement explanation](../../../../assets/images/wiki/misc/planter_kelp_explanation.png)
 >
-> - The red X is the position where the planter will walk to in the example image.
+> - The red X is the position where the {% worker name="planter" /%} will walk to in the example image.
 > - The blue X is the position where the work tag of the block is.
 
-For downwards-growing plants, the planter will attempt to stand above the work-tagged block and harvest below them. Make sure the planter can reach the top of the stem.
+For downwards-growing plants, the {% worker name="planter" /%} will attempt to stand above the work-tagged block and harvest below them. Make sure the {% worker name="planter" /%} can reach the top of the stem.
 
 ### Vertically Growing Plants (Upwards and Downwards)
 
-A "vertically growing plant" is a plant that grows in a single line, either upwards or downwards; for example, Sugar Cane grows upwards. These plants always break fully when their root blocks are broken. The planter will break them at the second block from the root.
+A "vertically growing plant" is a plant that grows in a single line, either upwards or downwards; for example, Sugar Cane grows upwards. These plants always break fully when their root blocks are broken. The {% worker name="planter" /%} will break them at the second block from the root.
 
-Each of these plants has a minimum and sometimes a maximum growth height. The planter can only harvest them when they reach the minimum. If plants have a maximum height, the planter will have an increasingly higher chance to harvest the taller the plant gets. Plants are only required to grow to the minimum height within the bounds of the schematic.
+Each of these plants has a minimum and sometimes a maximum growth height. The {% worker name="planter" /%} can only harvest them when they reach the minimum. If plants have a maximum height, the {% worker name="planter" /%} will have an increasingly higher chance to harvest the taller the plant gets. Plants are only required to grow to the minimum height within the bounds of the schematic.
 
 | Plant          | Minimum height | Maximum height |
 | -------------- | -------------- | -------------- |
@@ -335,20 +335,20 @@ Note that this means the number of tags you can place is the number of working p
 
 ### Bonemealed Fields
 
-Bonemealed fields tell the planter to use bonemeal somewhere on the ground to grow plants as if the player had used bonemeal.
+Bonemealed fields tell the {% worker name="planter" /%} to use bonemeal somewhere on the ground to grow plants as if the player had used bonemeal.
 
 The number of planting positions on these fields is usually unlimited because bonemealing the ground has a set area of effect. However, it is suggested not to make the fields too large; an area around 7x7 is recommended.
 
 | Plant          | Work tag location                                                                                                                                                                                                                                        |                                                                                                   |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Seagrass       | The block directly below the water should be tagged; the planter will bonemeal the tagged block itself. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks tagged with the work tag.                                              | ![Seagrass explanation](../../../../assets/images/wiki/misc/planter_seagrass_explanation.png)     |
-| Sea pickles    | The block directly below the water should be tagged. The planter will initially place the pickles, then bonemeal them to let them grow. Red Xs are where the planter will attempt to walk. Blue Xs are the blocks tagged with the work tag.              | ![Sea Pickle explanation](../../../../assets/images/wiki/misc/planter_seapickles_explanation.png) |
+| Seagrass       | The block directly below the water should be tagged; the {% worker name="planter" /%} will bonemeal the tagged block itself. Red Xs are where the {% worker name="planter" /%} will attempt to walk. Blue Xs are the blocks tagged with the work tag.   | ![Seagrass explanation](../../../../assets/images/wiki/misc/planter_seagrass_explanation.png)     |
+| Sea pickles    | The block directly below the water should be tagged. The {% worker name="planter" /%} will initially place the pickles, then bonemeal them to let them grow. Red Xs are where the {% worker name="planter" /%} will attempt to walk. Blue Xs are the blocks tagged with the work tag. | ![Sea Pickle explanation](../../../../assets/images/wiki/misc/planter_seapickles_explanation.png) |
 | Crimson plants | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
 | Warped plants  | Tag all the nylium ground blocks where the plants are supposed to grow.                                                                                                                                                                                  |                                                                                                   |
 
 ### Percentage-based Harvesting
 
-Percentage-based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants, such as vines, then naturally spread to their surroundings without the player's help. The planter has no involvement in this spreading process.
+Percentage-based harvesting fields will attempt to place a minimum percentage of plants down on given spots. These plants, such as vines, then naturally spread to their surroundings without the player's help. The {% worker name="planter" /%} has no involvement in this spreading process.
 
 | Plant | Tag location                                                                                                    |
 | ----- | --------------------------------------------------------------------------------------------------------------- |

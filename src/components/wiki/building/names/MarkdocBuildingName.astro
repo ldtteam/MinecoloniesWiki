@@ -4,12 +4,13 @@ import BuildingNameAllVersions from './BuildingNameAllVersions.astro';
 interface Props {
   name?: string;
   plural?: boolean;
+  link?: boolean;
 }
 
-const { name, plural = false } = Astro.props;
+const { name, plural = false, link } = Astro.props;
 
 const currentBuilding = Astro.locals.wikiPage?.data?.type === 'building' ? Astro.locals.wikiPage?.data.id : undefined;
 const buildingBaseId = name ?? currentBuilding ?? '';
 ---
 
-<BuildingNameAllVersions buildingBaseId={buildingBaseId} link={currentBuilding !== buildingBaseId} plural={plural} />
+<BuildingNameAllVersions buildingBaseId={buildingBaseId} link={link !== false && currentBuilding !== buildingBaseId} plural={plural} />
