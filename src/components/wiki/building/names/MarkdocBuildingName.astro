@@ -13,4 +13,8 @@ const currentBuilding = Astro.locals.wikiPage?.data?.type === 'building' ? Astro
 const buildingBaseId = name ?? currentBuilding ?? '';
 ---
 
-<BuildingNameAllVersions buildingBaseId={buildingBaseId} link={link !== false && currentBuilding !== buildingBaseId} plural={plural} />
+<BuildingNameAllVersions
+  buildingBaseId={buildingBaseId}
+  link={link !== false && currentBuilding !== buildingBaseId}
+  plural={plural}
+/>
