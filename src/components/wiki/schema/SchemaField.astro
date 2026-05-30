@@ -94,7 +94,7 @@ const description = await formatMarkdownText(field.description);
             </code>
           </td>
           <td>-</td>
-          <td set:html={formatMarkdownText(variant.description)} />
+          <td set:html={await formatMarkdownText(variant.description)} />
         </tr>
         {sortFields(variant.children).map((subField) => (
           <Astro.self field={subField} depth={depth + 2} />

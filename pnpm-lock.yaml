@@ -123,6 +123,9 @@ importers:
       eslint-plugin-simple-import-sort:
         specifier: ^13.0.0
         version: 13.0.0(eslint@10.4.1)
+      mdast-util-to-hast:
+        specifier: ^13.2.1
+        version: 13.2.1
       npm-check-updates:
         specifier: ^22.2.1
         version: 22.2.1
