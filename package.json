@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "engines": {
-    "node": ">=25.0.0"
+    "node": ">=26.0.0"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",

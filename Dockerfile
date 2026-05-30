@@ -1,4 +1,4 @@
-FROM node:25 AS build
+FROM node:26 AS build
 WORKDIR /app
 RUN npm install -g pnpm
 COPY package*.json ./
@@ -7,7 +7,7 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm run build
 
-FROM node:25-alpine AS runtime
+FROM node:26-alpine AS runtime
 COPY --from=build /app/dist /app/dist
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/start.sh /start.sh
