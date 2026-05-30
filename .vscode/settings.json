@@ -1,7 +1,7 @@
 {
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "package.json": "pnpm-lock.yaml, .ncurc.json, .npmrc",
+    "package.json": "pnpm-workspace.yaml, pnpm-lock.yaml, .ncurc.json, .npmrc",
     "astro.config.ts": "svelte.config.js, markdoc.config.ts",
     "README.md": "CLA.md, LICENSE",
     "Dockerfile": ".dockerignore",
