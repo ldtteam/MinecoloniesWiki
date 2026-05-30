@@ -31,12 +31,5 @@ export default defineConfig({
   build: {
     concurrency: 1
   },
-  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder(), imagePruner()],
-  vite: {
-    server: {
-      hmr: {
-        timeout: 120000
-      }
-    }
-  }
+  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder(), imagePruner()]
 });
