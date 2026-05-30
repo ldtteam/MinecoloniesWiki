@@ -1,0 +1,61 @@
+---
+type: building
+id: stable
+name: Stable
+plural: Stables
+description: The Stable is where the Stablemaster trains horses into Cavalry Horses and prepares mounted units for combat.
+workers:
+  - stablemaster
+  - cavalry
+rotation: 270
+requirements:
+  mandatory:
+    - type: tag
+      name: stall
+      note: 2 per building level, designates horse stalls
+  optional:
+    - type: block
+      item: minecraft/white_bed
+      note: for aesthetics
+---
+
+The {% building /%} is where the {% worker name="stablemaster" /%} trains horses into Cavalry Horses and keeps them ready for mounted combat. Each {% building /%} employs one {% worker name="stablemaster" /%} and one {% worker name="cavalry" /%} per building level.
+
+The {% worker name="stablemaster" /%} will train horses into Cavalry Horses, feed horses, retrieve wandering horses, and repair mount equipment so it is ready for combat. Mount equipment must be periodically repaired by the {% worker name="stablemaster" /%} before a Cavalry Horse can be ridden again.
+
+The {% worker name="cavalry" plural=true /%} function similarly to guards at a {% building name="guardtower" /%}, with assignable tasks such as patrol and guard. However, {% worker name="cavalry" plural=true /%} only patrol between {% building plural=true /%} and [Gatehouses](/wiki/buildings/gatehouse).
+
+> **Note:** Mounted units can open gates but cannot open doors. If your {% building /%} is enclosed, make sure it is accessible via a gate rather than a door.
+
+The building requires 2 blocks tagged with `stall` per building level to designate horse stalls.
+
+| Building Level | Cavalry Units |
+| -------------- | ------------- |
+| 1              | 1             |
+| 2              | 2             |
+| 3              | 3             |
+| 4              | 4             |
+| 5              | 5             |
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_hostiles order=2 /%}
+{% building_gui_content_block_settings order=3 %}
+- **Breeding:** Here you can choose if the {% worker name="stablemaster" /%} will breed horses.
+- **Task:** This is where you can choose if you want the {% worker name="cavalry" /%} to patrol, follow, or guard.
+  - **Patrol:** The {% worker name="cavalry" /%} will patrol between gatehouses and stables.
+  - **Guard:** You can set one area for the {% worker name="cavalry" /%} to stay in. When you click "Set Target", you will be taken to the **Selection Tools** tab, where you can get the Guard Scepter and designate the guard location.
+  - **Follow:** The {% worker name="cavalry" /%} will follow you as your personal mounted bodyguard.
+- **Retreat on low health:** Here you can choose if the {% worker name="cavalry" /%} will attempt to retreat when they have low health.
+- **Hire Trainee:** If there is a vacancy, a new {% worker name="cavalry" /%} can be hired from an appropriate training facility instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building name="townhall" /%} GUI.
+- **Patrol Mode:** This is where you can choose how you want the {% worker name="cavalry" /%} to patrol. Only available when the **Task** is set to **Patrol**.
+  - **Automatic:** The {% worker name="cavalry" /%} will patrol between gatehouses and stables within patrol range.
+  - **Manual:** You can set the patrol route when you click on **Set Positions**. You will be taken to the **Selection Tools** tab, where you can get the Guard Scepter and designate patrol positions.
+- **Patrol Interval:** How long the {% worker name="cavalry" /%} waits before starting a new patrol. Only available when the **Task** is set to **Patrol**.
+- **Follow Mode:** This is where you can choose how you want the {% worker name="cavalry" /%} to follow you. Only available when the **Task** is set to **Follow**.
+  - **Loose Grouping:** The {% worker name="cavalry" /%} will stay a decent range away from you.
+  - **Tight Grouping:** The {% worker name="cavalry" /%} will stay relatively close to you.
+{% /building_gui_content_block_settings %}
+{% building_gui_content_block_stock order=4 /%}
+{% building_gui_content_block_statistics order=5 /%}

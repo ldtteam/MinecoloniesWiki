@@ -1,0 +1,49 @@
+---
+type: building
+id: gatehouse
+name: Gatehouse
+plural: Gatehouses
+description: The Gatehouse stations two guards at fixed positions to defend your colony's entrance and enables colony connections to other colonies.
+workers:
+  - archer
+  - knight
+rotation: 270
+requirements:
+  mandatory:
+    - type: tag
+      name: gate
+      note: defines the walking position when passing through the gate
+    - type: tag
+      name: knight
+      note: the two positions where knight guards will station themselves
+    - type: tag
+      name: archer
+      note: the two positions where archer guards will station themselves
+---
+
+The {% building /%} stations two guards at fixed positions in the structure to defend your colony's entrance. Unlike the {% building name="guardtower" /%} or {% building name="barracks" /%}, guards at the {% building /%} do not patrol. They remain at their designated positions at all times but will fight back when engaged by hostile mobs.
+
+You may hire any combination of two guards: two {% worker name="knight" plural=true /%}, two {% worker name="archer" plural=true /%}, or one of each.
+
+> **Note:** The {% building /%} can only be upgraded to level 3, not level 5.
+
+The {% building /%} also enables colony connections. By placing colony signs in the world, you can create connections between your colony and other colonies. These connections are the foundation for future trading, diplomacy, and inter-colony mechanics.
+
+## Interface
+
+{% building_gui_content_block_main order=1 /%}
+{% building_gui_content_block_hostiles order=2 /%}
+{% building_gui_content_block_settings order=3 %}
+- **Retreat on low health:** Here you can choose if the guards will attempt to retreat when they have low health.
+- **Hire Trainee:** If there is a vacancy at the {% building /%}, a new {% worker name="knight" /%} or {% worker name="archer" /%} can be hired from the respective training facility ({% building name="combatacademy" /%} for {% worker name="knight" plural=true /%} and {% building name="archery" /%} for {% worker name="archer" /%}) instead of an unemployed colonist. This setting only matters if Assign Colonists to Jobs is turned to Automatic in the {% building name="townhall" /%} GUI.
+{% /building_gui_content_block_settings %}
+{% building_gui_content_block_stock order=4 /%}
+{% building_gui_content_block_statistics order=5 /%}
+{% building_gui_content_block_custom order=6 header="connections" imageKey="connections" imageAlt="Connections" %}
+This tab shows all active colony connections to your colony. Connections are established by placing colony signs in the world.
+
+- **Direct connections** are your immediate neighbouring colonies.
+- **Indirect connections** are colonies connected to yours through the connections of your allied colonies.
+
+All listed colonies show their distance from yours and their current diplomatic status: allied, neutral, or enemy. Allied colonies have a travel button that teleports you directly to their {% building /%}.
+{% /building_gui_content_block_custom %}
