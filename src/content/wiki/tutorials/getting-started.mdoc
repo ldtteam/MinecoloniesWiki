@@ -5,7 +5,25 @@ title: Getting Started
 
 This guide assumes you have already installed the mod or modpack. If not, see the [Installation](/wiki/installation/installation) page.
 
-## Step 1: Supply Camp or Supply Ship
+There are two ways to found a colony. Choose one of the options below. Once your colony is founded, the remaining steps are the same regardless of which route you took.
+
+- [Founding Your Colony](#founding-your-colony)
+  - [Option A: Supply Camp or Supply Ship](#option-a-supply-camp-or-supply-ship)
+    - [Town Hall](#town-hall)
+      - [Build Tool Video](#build-tool-video)
+  - [Option B: World Generation Colony](#option-b-world-generation-colony)
+- [Building Your Colony](#building-your-colony)
+  - [Step 1: Builder's Hut](#step-1-builders-hut)
+  - [Step 2: Housing](#step-2-housing)
+  - [Step 3: Food](#step-3-food)
+  - [Step 4: Forester](#step-4-forester)
+  - [Step 5: Miner](#step-5-miner)
+  - [Step 6: Warehouse and Courier](#step-6-warehouse-and-courier)
+  - [Step 7: Grow Your Colony](#step-7-grow-your-colony)
+
+## Founding Your Colony
+
+### Option A: Supply Camp or Supply Ship
 
 We recommend starting with a {% item_page name="supply_camp_and_ship" /%}. It's not strictly required, as you can craft a {% building name="townhall" /%} block and a {% item name="structurize/sceptergold" /%} directly, but the supply camp gives you both for free along with a head start on resources.
 
@@ -15,7 +33,7 @@ To place one, craft it and right-click directly on the ground or water (**do not
 
 > **Note:** If the structure won't place, try shifting one block at a time in different directions. The area must be completely clear.
 
-## Step 2: Town Hall
+#### Town Hall
 
 Before you place your {% building name="townhall" /%}, scout a good location. You need a large, reasonably flat area of at least 8x8 chunks. The chunk where you place the Town Hall becomes the permanent center of your colony's 4-chunk protected radius, and this cannot be changed later. Also gather resources before you start building: wood, cobblestone, coal, iron, string, leather, wool, saplings, flowers, and food. Your {% worker name="builder" /%} will need most of these early on.
 
@@ -31,11 +49,31 @@ If someone else's colony is too close, you won't be able to settle there at all.
 
 ![Other colony nearby](../../../assets/images/wiki/tutorial/existing_other_colony.png)
 
-#### Build Tool Video
+##### Build Tool Video
 
 {% youtube id="DVGGDUXbTOY" width=50 /%}
 
-## Step 3: Builder's Hut
+### Option B: World Generation Colony
+
+As you explore the world, you may come across abandoned colonies left behind by their former residents. Claiming one skips the need for a supply camp and lets you skip scouting a location, as the colony is already laid out for you.
+
+World generation colonies spawn randomly throughout the world in one of several styles. Most buildings will be level 1, though some may be level 2, and occasionally multiple buildings of the same type will appear. Only a subset of all possible building types will be present.
+
+Find the town hall and click "Create new colony." This is equivalent to placing a town hall from the supply camp.
+
+From there, go to each hut block in the colony and click "Reactivate" to reclaim the building and register it with the town hall. You can also repair each building to restore it to its original condition.
+
+{% version range="1.18--" %}
+> **Note:** Vanilla villages will still spawn as normal. If you wish to turn off world generation colonies, you will need to install a datapack that removes them.
+{% /version %}
+
+---
+
+## Building Your Colony
+
+From this point on, both routes are the same. You now have a founded colony with a town hall and your first four citizens.
+
+### Step 1: Builder's Hut
 
 No buildings can be constructed until you have a {% worker name="builder" /%}. Craft the {% building name="builder" /%} block and place it with the build tool.
 
@@ -47,36 +85,36 @@ The Builder will ask for materials while working. Right-click them when they hav
 
 > **Note:** Upgrade the Builder's Hut to level 2 as soon as possible so the Builder can upgrade other buildings.
 
-## Step 4: Housing
+### Step 2: Housing
 
 Your citizens need somewhere to sleep. Build a {% building name="tavern" /%} for housing. The Tavern also attracts visitors, who you can recruit as permanent citizens.
 
 Once your initial four citizens are housed, placing {% building name="residence" /%} blocks will increase your citizen cap. Each level of a Residence provides one additional citizen slot.
 
-## Step 5: Food
+### Step 3: Food
 
 Build a {% building name="fisherman" /%} for the fastest early food supply. A {% building name="farmer" /%} or animal herder works too, but is slower to get going. If you don't want to feed citizens manually, also build a {% building name="cook" /%} to handle cooking and distribution.
 
-## Step 6: Forester
+### Step 4: Forester
 
 Build a {% building name="lumberjack" /%} so your {% worker name="forester" /%} can keep your colony supplied with wood for construction and tools.
 
-## Step 7: Miner
+### Step 5: Miner
 
 Build a {% building name="miner" /%} to supply stone and ores. These are essential for most building upgrades.
 
-## Step 8: Warehouse and Courier
+### Step 6: Warehouse and Courier
 
 Once resources are coming in from multiple workers, manually moving everything becomes tedious. Build a {% building name="warehouse" /%} and {% building name="deliveryman" /%}. {% worker name="courier" plural=true /%} automatically transport items between the Warehouse and all workplaces.
 
 The {% item name="minecolonies/resourcescroll" /%} can help you track what each Builder needs.
 
-## Step 9: Grow Your Colony
+### Step 7: Grow Your Colony
 
 From here, the direction is yours. A few things to keep in mind:
 
 - Raiders may attack your colony. Consider building a {% building name="guardtower" /%} sooner rather than later.
 - Citizens can get sick. A {% building name="hospital" /%} handles that.
 - A {% building name="sawmill" /%} lets workers craft many of the items they need.
-- More Miners, Foresters, Farmers, and Builders are always useful, as you can only assign one worker per hut.
+- More {% building name="miner" plural=true /%}, {% building name="lumberjack" plural=true /%}, {% building name="farmer" plural=true /%}, and {% building name="builder" plural=true /%} are always useful, as you can only assign one worker per hut.
 - Upgrade huts to level 5 where possible to increase worker speed.
