@@ -10,7 +10,6 @@ interface Props {
 }
 
 const { name: schemaName } = Astro.props;
-const frontmatter = Astro.locals.wikiPage?.data;
 
 const schema = await getEntry('json_structures', schemaName);
 if (schema === undefined) {
@@ -18,7 +17,7 @@ if (schema === undefined) {
 }
 
 const id = uuidv4();
-const json = await buildJson(schema, frontmatter);
+const json = await buildJson(schema);
 ---
 
 <div class="schema-parent">

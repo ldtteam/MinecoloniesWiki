@@ -1,4 +1,5 @@
 import markdoc from '@astrojs/markdoc';
+import { unified } from '@astrojs/markdown-remark';
 import node from '@astrojs/node';
 import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
@@ -16,11 +17,26 @@ export default defineConfig({
     mode: 'standalone'
   }),
   site: 'https://minecolonies.com',
+  markdown: {
+    processor: unified(),
+    syntaxHighlight: 'shiki',
+    shikiConfig: {
+      theme: 'css-variables',
+      wrap: true
+    }
+  },
   image: {
     domains: ['minecraft.wiki']
   },
   build: {
     concurrency: 1
   },
-  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder(), imagePruner()]
+  integrations: [svelte(), icon(), markdoc(), sitemap(), purgecss(), symlinkBuilder(), imagePruner()],
+  vite: {
+    server: {
+      hmr: {
+        timeout: 120000
+      }
+    }
+  }
 });

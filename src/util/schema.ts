@@ -1,9 +1,7 @@
-import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import type { CollectionEntry } from 'astro:content';
-import remarkDirective from 'remark-directive';
 
 import type { AnyField } from '../schemas/json_structures';
-import { buildingPlugin } from './remark/buildings';
+import { formatMarkdownText } from './markdown';
 
 export function sortFields<T extends AnyField>(fields: T[]): T[] {
   return [...fields].sort((a, b) => {
@@ -14,18 +12,6 @@ export function sortFields<T extends AnyField>(fields: T[]): T[] {
     }
     return a.key.localeCompare(b.key);
   });
-}
-
-export async function formatText(text: string, frontmatter: CollectionEntry<'wiki'>['data'] | undefined) {
-  const processor = await createMarkdownProcessor({
-    remarkPlugins: [remarkDirective, buildingPlugin(frontmatter)],
-    syntaxHighlight: 'shiki',
-    shikiConfig: {
-      theme: 'css-variables',
-      wrap: true
-    }
-  });
-  return (await processor.render(text)).code;
 }
 
 function cartesian(arrays: Record<string, unknown>[][]): Record<string, unknown>[] {
@@ -54,14 +40,11 @@ function buildTree(field: AnyField): Record<string, unknown>[] {
   }
 }
 
-export async function buildJson(
-  schema: CollectionEntry<'json_structures'>,
-  frontmatter: CollectionEntry<'wiki'>['data'] | undefined
-) {
+export async function buildJson(schema: CollectionEntry<'json_structures'>) {
   const fieldResults = sortFields(schema.data.fields).map(buildTree);
   const examples = cartesian(fieldResults);
 
   const blocks = examples.map((example) => `\`\`\`json\n${JSON.stringify(example, null, 4)}\n\`\`\``).join('\n\n');
 
-  return formatText(blocks, frontmatter);
+  return formatMarkdownText(blocks);
 }
