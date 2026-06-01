@@ -79,7 +79,7 @@ const description = await formatMarkdownText(field.description);
 
 {
   field.type === 'union' &&
-    field.variants.map((variant) => (
+    field.variants.map(async (variant) => (
       <>
         <tr>
           <td colspan="2" style={{ whiteSpace: 'nowrap' }}>
