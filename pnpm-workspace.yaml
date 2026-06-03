@@ -6,3 +6,4 @@ updateConfig:
   ignoreDependencies:
     - sass
     - '@types/node'
+    - archiver
