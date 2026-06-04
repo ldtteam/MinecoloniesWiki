@@ -24,7 +24,7 @@ const researchEffect = (
     'research_effect',
     (effect) =>
       effect.data.type === 'building' &&
-      effect.data.building.id === building.data.baseId &&
+      effect.data.building.id === building.id &&
       effect.data.version.id === version.id
   )
 ).at(0);
