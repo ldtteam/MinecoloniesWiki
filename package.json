@@ -23,7 +23,7 @@
     "upgrade:pnpm": "pnpm self-update",
     "upgrade:astro": "pnpm dlx @astrojs/upgrade",
     "upgrade:deps": "pnpm up --latest",
-    "update:submodule": "git submodule update --init --remote --recursive --merge"
+    "update:submodule": "git submodule update --init --remote --recursive --checkout"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
