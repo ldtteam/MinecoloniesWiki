@@ -35,7 +35,7 @@ body:
     id: debug
     attributes:
       label: Debug information
-      description: 'Visit the [debug page](https://minecolonies.com/debug#browser-information){:target="_blank"}, click the "Browser information" block to copy it, and paste the output here. This helps us identify device and browser related issues.'
+      description: 'Visit the [debug page](https://minecolonies.com/debug#browser-information), click the "Browser information" block to copy it, and paste the output here. This helps us identify device and browser related issues.'
   - type: textarea
     id: content
     attributes:
