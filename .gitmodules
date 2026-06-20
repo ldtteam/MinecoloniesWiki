@@ -1,3 +1,4 @@
 [submodule "generator"]
 	path = generator
 	url = https://github.com/ldtteam/minecolonies-wiki-generator.git
+    branch = publish
