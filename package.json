@@ -41,6 +41,7 @@
     "astro-icon": "1.1.5",
     "bootstrap": "^5.3.8",
     "date-fns": "^4.4.0",
+    "globals": "^17.6.0",
     "iconify": "^1.4.0",
     "mdast-util-directive": "^3.1.0",
     "remark-directive": "^4.0.0",

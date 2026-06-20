@@ -8,6 +8,7 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import eslintPluginAstro from 'eslint-plugin-astro';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import astroEslintParser from 'astro-eslint-parser';
+import globals from 'globals';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -88,6 +89,13 @@ export default defineConfig(
           destructuredArrayIgnorePattern: '^_'
         }
       ]
+    }
+  },
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser
+      }
     }
   },
   {

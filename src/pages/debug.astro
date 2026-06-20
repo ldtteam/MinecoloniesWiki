@@ -1,0 +1,159 @@
+---
+import Layout from '../layouts/Default.astro';
+---
+
+<Layout title="Debug Information" showVersionSelector={false}>
+  <p>Copy the information below and include it when reporting a bug or asking for support.</p>
+  <h3 id="browser-information">Browser information</h3>
+  <div class="code-block">
+    <button id="copy-btn" class="copy-btn" title="Copy">
+      <span class="copy-label">Copy</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+        ></path>
+        <path
+          d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+        ></path>
+      </svg>
+    </button>
+    <pre id="device-info"></pre>
+  </div>
+</Layout>
+
+<style>
+  .code-block {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: var(--bs-dark, #1e1e1e);
+    border: 1px solid var(--bs-border-color, #444);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  .code-block pre {
+    margin: 0;
+    color: var(--bs-light, #e8e8e8);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--bs-secondary, #888);
+    padding: 4px 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition:
+      opacity 0.15s,
+      color 0.15s,
+      border-color 0.15s;
+    line-height: 1;
+  }
+
+  .code-block:hover .copy-btn {
+    opacity: 1;
+  }
+
+  .copy-btn:hover {
+    color: var(--bs-light, #e8e8e8);
+    border-color: var(--bs-border-color, #666);
+  }
+
+  .copy-label {
+    font-size: 0.75rem;
+    vertical-align: middle;
+  }
+
+  .copy-btn.copied {
+    color: #4caf50;
+    border-color: #4caf50;
+  }
+
+  .code-block {
+    transition: box-shadow 0.5s;
+  }
+
+  .code-block.highlighted {
+    box-shadow:
+      0 0 0 3px #4caf50,
+      0 0 20px 4px rgba(76, 175, 80, 0.6);
+  }
+</style>
+
+<script>
+  function getDeviceName(): string {
+    const ua = navigator.userAgent;
+
+    if (/iPhone/.test(ua)) return 'iPhone';
+    if (/iPad/.test(ua)) return 'iPad';
+    if (/Android/.test(ua)) {
+      const model = ua.match(/;\s*([^;)]+)\sBuild\//);
+      return model ? model[1].trim() : 'Android Device';
+    }
+    if (/Mac OS X/.test(ua)) return 'Mac';
+    if (/Windows NT 10/.test(ua)) return 'Windows 11/10';
+    if (/Windows NT 6\.3/.test(ua)) return 'Windows 8.1';
+    if (/Linux/.test(ua)) return 'Linux';
+
+    return 'Unknown Device';
+  }
+
+  function getDeviceInfo(): Record<string, string | number> {
+    return {
+      'Device name': getDeviceName(),
+      Width: screen.width,
+      Height: screen.height,
+      'Device pixel ratio': window.devicePixelRatio,
+      'User agent string': navigator.userAgent
+    };
+  }
+
+  function setup() {
+    const info = getDeviceInfo();
+    const entries = Object.entries(info);
+    const maxKeyLength = Math.max(...entries.map(([key]) => key.length));
+    const lines = entries
+      .map(([key, value]) => `${key}:${' '.repeat(maxKeyLength - key.length + 1)}${value}`)
+      .join('\n');
+    const text = `\`\`\`\n${lines}\n\`\`\``;
+
+    const pre = document.getElementById('device-info') as HTMLPreElement;
+    pre.textContent = lines;
+
+    const hash = location.hash.slice(1);
+    if (hash) {
+      const heading = document.getElementById(hash);
+      if (heading) {
+        const block = heading.nextElementSibling as HTMLElement | null;
+        if (block?.classList.contains('code-block')) {
+          block.classList.add('highlighted');
+          setTimeout(() => block.classList.remove('highlighted'), 2000);
+        }
+      }
+    }
+
+    for (const block of document.querySelectorAll('.code-block')) {
+      block.addEventListener('click', () => {
+        const btn = block.querySelector('.copy-btn') as HTMLButtonElement;
+        navigator.clipboard.writeText(text).then(() => {
+          const label = btn.querySelector('.copy-label') as HTMLSpanElement;
+          btn.classList.add('copied');
+          label.textContent = 'Copied!';
+          setTimeout(() => {
+            btn.classList.remove('copied');
+            label.textContent = 'Copy';
+          }, 1500);
+        });
+      });
+    }
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

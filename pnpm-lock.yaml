@@ -53,6 +53,9 @@ importers:
       date-fns:
         specifier: ^4.4.0
         version: 4.4.0
+      globals:
+        specifier: ^17.6.0
+        version: 17.6.0
       iconify:
         specifier: ^1.4.0
         version: 1.4.0
@@ -2134,6 +2137,10 @@ packages:
 
   globals@16.5.0:
     resolution: {integrity: sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==}
+    engines: {node: '>=18'}
+
+  globals@17.6.0:
+    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
     engines: {node: '>=18'}
 
   gopd@1.2.0:
@@ -5654,6 +5661,8 @@ snapshots:
   globals@15.15.0: {}
 
   globals@16.5.0: {}
+
+  globals@17.6.0: {}
 
   gopd@1.2.0: {}
 

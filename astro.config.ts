@@ -16,6 +16,9 @@ export default defineConfig({
   adapter: node({
     mode: 'standalone'
   }),
+  server: {
+    port: 5173
+  },
   site: 'https://minecolonies.com',
   markdown: {
     processor: unified(),
