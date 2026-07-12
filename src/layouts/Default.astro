@@ -40,17 +40,17 @@ const isWikiPage = Astro.url.pathname.startsWith('/wiki');
 
 const newestVersion = await getNewestVersion();
 
-let versionTitleData: Record<string, string>;
-if (typeof title === 'string') {
-  versionTitleData = { 'data-title-version-all': title };
-} else {
-  versionTitleData = title.values.reduce<Record<string, string>>((previousValue, currentValue) => {
-    for (const version of currentValue.versions) {
-      previousValue['data-title-version-' + version.data.order] = currentValue.value;
-    }
-    return previousValue;
-  }, {});
-}
+  let versionTitleData: Record<string, string>;
+  if (typeof title === 'string') {
+    versionTitleData = { 'data-title-version-all': title };
+  } else {
+    versionTitleData = title.values.reduce<Record<string, string>>((previousValue, currentValue) => {
+      for (const version of currentValue.versions) {
+        previousValue['data-title-version-' + version.data.order] = currentValue.value;
+      }
+      return previousValue;
+    }, {});
+  }
 
 const initialTitle = typeof title === 'string' ? title : title.highestValue + ' | ' + titleAffix;
 
