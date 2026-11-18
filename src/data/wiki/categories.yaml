@@ -1,5 +1,5 @@
-- id: installation
-  name: Installation
+- id: setup
+  name: Setup
   order: 1
 - id: dependencies
   name: Dependencies
@@ -13,15 +13,12 @@
 - id: buildings
   name: Buildings
   order: 5
-- id: workers
-  name: Workers
-  order: 6
 - id: systems
   name: Systems
-  order: 7
+  order: 6
 - id: needs
   name: Needs
-  order: 8
+  order: 7
 - id: misc
-  name: Misc
-  order: 9
+  name: Miscellaneous
+  order: 8

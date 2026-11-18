@@ -25,7 +25,13 @@ export const citizen_name_pack_list: Tag = {
 
 export const configuration_list: Tag = {
   render: component('./src/components/wiki/configuration/MarkdocConfiguration.astro'),
-  selfClosing: true
+  selfClosing: true,
+  attributes: {
+    mod: {
+      type: String,
+      required: true
+    }
+  }
 };
 
 export const content_block: Tag = {
