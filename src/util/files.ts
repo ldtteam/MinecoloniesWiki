@@ -18,7 +18,7 @@ type Options = {
  * @param options additional configuration options.
  * @returns the output JSON object.
  */
-export async function getJsonFile<T extends z.ZodSchema>(
+export async function getJsonFile<T extends z.ZodType>(
   schema: T,
   file: string,
   parser: Parser = parseJson,
@@ -36,7 +36,7 @@ export async function getJsonFile<T extends z.ZodSchema>(
  * @param options additional configuration options.
  * @returns an object containing filenames and their content.
  */
-export async function getAllJsonFiles<T extends z.ZodSchema>(
+export async function getAllJsonFiles<T extends z.ZodType>(
   schema: T,
   files: string[],
   parser: Parser = parseJson,
@@ -63,7 +63,7 @@ export async function getAllJsonFiles<T extends z.ZodSchema>(
  * @param options additional configuration options.
  * @returns an object containing filenames and their content.
  */
-export async function getAllFilesInDirectory<T extends z.ZodSchema>(
+export async function getAllFilesInDirectory<T extends z.ZodType>(
   schema: T,
   directory: string,
   recursive: boolean = false,
@@ -90,7 +90,7 @@ export async function getAllFilesInDirectory<T extends z.ZodSchema>(
  * @param options additional configuration options.
  * @returns the parsed item following the schema.
  */
-function parseZodSchema<T extends z.ZodSchema>(schema: T, value: string, parser: Parser, options: Options = {}) {
+function parseZodSchema<T extends z.ZodType>(schema: T, value: string, parser: Parser, options: Options = {}) {
   const raw = parser(value);
   try {
     return schema.parse(raw);

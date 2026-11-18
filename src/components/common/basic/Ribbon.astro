@@ -1,10 +1,12 @@
 ---
+import type { HTMLTag } from 'astro/types';
+
 export interface Props {
   image?: string;
   offset?: number;
   textColor?: string;
   class?: string;
-  as?: string;
+  as?: HTMLTag;
 }
 
 const {

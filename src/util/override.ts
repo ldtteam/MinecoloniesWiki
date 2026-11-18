@@ -4,7 +4,7 @@ import { type CollectionEntry, getEntry, reference } from 'astro:content';
 import type { DeepPartial, PartialCollectionEntry } from './util';
 import { getSortedVersions, type VersionedResult } from './version';
 
-function deepPartialValue(value: z.ZodTypeAny): z.ZodTypeAny {
+function deepPartialValue(value: z.ZodType): z.ZodType {
   if (value instanceof z.ZodObject) {
     return deepPartial(value).optional();
   } else if (value instanceof z.ZodOptional && value.def.innerType instanceof z.ZodObject) {
@@ -14,8 +14,8 @@ function deepPartialValue(value: z.ZodTypeAny): z.ZodTypeAny {
 }
 
 function deepPartial(schema: z.ZodObject<z.ZodRawShape>): z.ZodObject<z.ZodRawShape> {
-  const partialShape: Record<string, z.ZodTypeAny> = {};
-  for (const [key, value] of Object.entries(schema.shape) as [string, z.ZodTypeAny][]) {
+  const partialShape: Record<string, z.ZodType> = {};
+  for (const [key, value] of Object.entries(schema.shape) as [string, z.ZodType][]) {
     partialShape[key] = deepPartialValue(value);
   }
   return z.object(partialShape);
